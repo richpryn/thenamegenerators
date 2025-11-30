@@ -413,6 +413,9 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="format-detection" content="telephone=no">
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="477280238" />
+    
     <!-- Content Security Policy (CSP) - Note: Some headers need server configuration -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com;">
     
