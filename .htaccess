@@ -1,0 +1,67 @@
+# Apache .htaccess for redirects and security headers
+# Note: GitHub Pages doesn't support .htaccess, but this is useful for other hosting
+
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Force HTTPS (if not already)
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirect old URLs to new URLs
+Redirect 301 /orc-name-generator-skyrim/ /posts/skyrim-orc-name-generator.html
+Redirect 301 /orc-name-generator-warhammer/ /posts/warhammer-orc-name-generator.html
+Redirect 301 /orc-name-generator-world-of-warcraft/ /posts/wow-orc-name-generator.html
+Redirect 301 /orc-name-generator-lord-of-the-rings/ /posts/lotr-orc-name-generator.html
+Redirect 301 /half-orc-name-generator/ /posts/half-orc-name-generator.html
+Redirect 301 /dungeon-synth-name-generator/ /posts/dungeon-synth-name-generator.html
+Redirect 301 /swamp-witch-name-generator/ /posts/swamp-witch-name-generator.html
+Redirect 301 /dnd-fantasy-name-generator/ /posts/dnd-fantasy-name-generator.html
+Redirect 301 /witch-name-generator-path-of-exhile/ /posts/path-of-exile-witch-name-generator.html
+Redirect 301 /witch-name-generator-harry-potter/ /posts/harry-potter-witch-name-generator.html
+Redirect 301 /witch-name-generator-hogwarts-legacy/ /posts/hogwarts-legacy-witch-name-generator.html
+Redirect 301 /wizard-name-generator-hogwarts-legacy/ /posts/hogwarts-legacy-wizard-name-generator.html
+Redirect 301 /funny-wizard-name-generator/ /posts/funny-wizard-name-generator.html
+Redirect 301 /wizard-name-generator-lord-of-the-rings/ /posts/lotr-wizard-name-generator.html
+
+# Security Headers
+<IfModule mod_headers.c>
+    # Prevent MIME type sniffing
+    Header set X-Content-Type-Options "nosniff"
+    
+    # Prevent clickjacking
+    Header set X-Frame-Options "SAMEORIGIN"
+    
+    # XSS Protection
+    Header set X-XSS-Protection "1; mode=block"
+    
+    # Referrer Policy
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # Permissions Policy
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+    
+    # Content Security Policy
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self';"
+    
+    # Strict Transport Security (HSTS) - only if using HTTPS
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+</IfModule>
+
+# Compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Browser Caching
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting... | The Name Generators</title>
+    <meta http-equiv="refresh" content="0; url=/">
+    <link rel="canonical" href="https://thenamegenerators.com/">
+    <script>
+        // Redirect mapping for old URLs
+        const redirects = {
+            '/orc-name-generator-skyrim/': '/posts/skyrim-orc-name-generator.html',
+            '/orc-name-generator-warhammer/': '/posts/warhammer-orc-name-generator.html',
+            '/orc-name-generator-world-of-warcraft/': '/posts/wow-orc-name-generator.html',
+            '/orc-name-generator-lord-of-the-rings/': '/posts/lotr-orc-name-generator.html',
+            '/half-orc-name-generator/': '/posts/half-orc-name-generator.html',
+            '/dungeon-synth-name-generator/': '/posts/dungeon-synth-name-generator.html',
+            '/swamp-witch-name-generator/': '/posts/swamp-witch-name-generator.html',
+            '/dnd-fantasy-name-generator/': '/posts/dnd-fantasy-name-generator.html',
+            '/witch-name-generator-path-of-exhile/': '/posts/path-of-exile-witch-name-generator.html',
+            '/witch-name-generator-harry-potter/': '/posts/harry-potter-witch-name-generator.html',
+            '/witch-name-generator-hogwarts-legacy/': '/posts/hogwarts-legacy-witch-name-generator.html',
+            '/wizard-name-generator-hogwarts-legacy/': '/posts/hogwarts-legacy-wizard-name-generator.html',
+            '/funny-wizard-name-generator/': '/posts/funny-wizard-name-generator.html',
+            '/wizard-name-generator-lord-of-the-rings/': '/posts/lotr-wizard-name-generator.html'
+        };
+
+        // Get current path
+        const currentPath = window.location.pathname;
+        
+        // Check if we have a redirect for this path
+        if (redirects[currentPath]) {
+            // Use 301 redirect (permanent) via meta refresh and location
+            window.location.replace(redirects[currentPath]);
+        } else {
+            // Default redirect to homepage
+            window.location.replace('/');
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+    <p>If you are not redirected automatically, <a href="/">click here</a>.</p>
+</body>
+</html>
+

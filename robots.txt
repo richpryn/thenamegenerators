@@ -1,0 +1,42 @@
+User-agent: *
+Allow: /
+
+# AI/LLM Crawlers - Explicitly allow
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Sitemap
+Sitemap: https://thenamegenerators.com/sitemap.xml
+
+# Disallow admin/private areas (if any)
+Disallow: /scripts/
+Disallow: /data/
+Disallow: /*.json$
+
+# Allow all public pages
+Allow: /index.html
+Allow: /all-generators.html
+Allow: /posts/
+Allow: /categories/
+

@@ -1,0 +1,56 @@
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables (if you add any later)
+.env
+.env.local
+.env.*.local
+
+# Build artifacts (if you add any build tools)
+node_modules/
+dist/
+build/
+.cache/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Sensitive data (if you add any)
+secrets.json
+config.json
+credentials.json
+
+# Test files (optional - remove if you want to keep test files)
+test-*.html
+*-test.html
+

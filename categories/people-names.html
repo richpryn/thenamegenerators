@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>People Name Generators - Free Online Tools | The Name Generators</title>
+    <meta name="title" content="People Name Generators - Free Online Tools | The Name Generators">
+    <meta name="description" content="Generate authentic names for people from different cultures, ethnicities, and time periods. Perfect for characters, stories, and creative writing.">
+    <meta name="keywords" content="people names, people name generator, people name generators">
+    <meta name="author" content="The Name Generators">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thenamegenerators.com/categories/people-names.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thenamegenerators.com/categories/people-names.html">
+    <meta property="og:title" content="People Name Generators - Free Online Tools | The Name Generators">
+    <meta property="og:description" content="Generate authentic names for people from different cultures, ethnicities, and time periods. Perfect for characters, stories, and creative writing.">
+    <meta property="og:image" content="https://thenamegenerators.com/images/categories/people.jpg">
+    <meta property="og:site_name" content="The Name Generators">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://thenamegenerators.com/categories/people-names.html">
+    <meta property="twitter:title" content="People Name Generators - Free Online Tools | The Name Generators">
+    <meta property="twitter:description" content="Generate authentic names for people from different cultures, ethnicities, and time periods. Perfect for characters, stories, and creative writing.">
+    <meta property="twitter:image" content="https://thenamegenerators.com/images/categories/people.jpg">
+    
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/blog.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../all-generators.html">All Generators</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-dropdown-toggle">Categories</a>
+                    <div class="nav-dropdown-menu" id="category-dropdown">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="hero">
+            <h1>👥 People</h1>
+            <p>Name generators for real-world names from different cultures and time periods</p>
+            <p class="generator-count">1 generator available</p>
+        </header>
+
+        <main>
+            <div class="generators-grid">
+                
+    <a href="../posts/epithet-generator.html" class="generator-card">
+      <h3>🏷️ Epithet Generator</h3>
+      <p>Generate fantasy epithets to add to character names. Choose from physical descriptors, personality traits, deeds, reputation, origin, magical, weapon, time-based, and more categories.</p>
+    </a>
+  
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2025 The Name Generators. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="../lib/generator.js"></script>
+    <script>
+        // Populate category dropdown
+        (async () => {
+            const categories = await window.nameGenerator.getCategories();
+            const dropdown = document.getElementById('category-dropdown');
+            categories.forEach(cat => {
+                const link = document.createElement('a');
+                link.href = `../categories/${cat.slug}-names.html`;
+                link.textContent = `${cat.icon} ${cat.navLabel}`;
+                dropdown.appendChild(link);
+            });
+        })();
+    </script>
+</body>
+</html>

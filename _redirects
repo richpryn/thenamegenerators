@@ -1,0 +1,18 @@
+# Netlify Redirects
+# For GitHub Pages, use 404.html instead
+
+/orc-name-generator-skyrim/ /posts/skyrim-orc-name-generator.html 301
+/orc-name-generator-warhammer/ /posts/warhammer-orc-name-generator.html 301
+/orc-name-generator-world-of-warcraft/ /posts/wow-orc-name-generator.html 301
+/orc-name-generator-lord-of-the-rings/ /posts/lotr-orc-name-generator.html 301
+/half-orc-name-generator/ /posts/half-orc-name-generator.html 301
+/dungeon-synth-name-generator/ /posts/dungeon-synth-name-generator.html 301
+/swamp-witch-name-generator/ /posts/swamp-witch-name-generator.html 301
+/dnd-fantasy-name-generator/ /posts/dnd-fantasy-name-generator.html 301
+/witch-name-generator-path-of-exhile/ /posts/path-of-exile-witch-name-generator.html 301
+/witch-name-generator-harry-potter/ /posts/harry-potter-witch-name-generator.html 301
+/witch-name-generator-hogwarts-legacy/ /posts/hogwarts-legacy-witch-name-generator.html 301
+/wizard-name-generator-hogwarts-legacy/ /posts/hogwarts-legacy-wizard-name-generator.html 301
+/funny-wizard-name-generator/ /posts/funny-wizard-name-generator.html 301
+/wizard-name-generator-lord-of-the-rings/ /posts/lotr-wizard-name-generator.html 301
+

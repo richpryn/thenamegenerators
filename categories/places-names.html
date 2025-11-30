@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Places Name Generators - Free Online Tools | The Name Generators</title>
+    <meta name="title" content="Places Name Generators - Free Online Tools | The Name Generators">
+    <meta name="description" content="Generate names for places, cities, towns, countries, and locations. Perfect for worldbuilding, writing, and creative geography projects.">
+    <meta name="keywords" content="places names, places name generator, places name generators">
+    <meta name="author" content="The Name Generators">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thenamegenerators.com/categories/places-names.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thenamegenerators.com/categories/places-names.html">
+    <meta property="og:title" content="Places Name Generators - Free Online Tools | The Name Generators">
+    <meta property="og:description" content="Generate names for places, cities, towns, countries, and locations. Perfect for worldbuilding, writing, and creative geography projects.">
+    <meta property="og:image" content="https://thenamegenerators.com/images/categories/places.jpg">
+    <meta property="og:site_name" content="The Name Generators">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://thenamegenerators.com/categories/places-names.html">
+    <meta property="twitter:title" content="Places Name Generators - Free Online Tools | The Name Generators">
+    <meta property="twitter:description" content="Generate names for places, cities, towns, countries, and locations. Perfect for worldbuilding, writing, and creative geography projects.">
+    <meta property="twitter:image" content="https://thenamegenerators.com/images/categories/places.jpg">
+    
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/blog.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../all-generators.html">All Generators</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-dropdown-toggle">Categories</a>
+                    <div class="nav-dropdown-menu" id="category-dropdown">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="hero">
+            <h1>🗺️ Places</h1>
+            <p>Name generators for cities, towns, countries, and locations</p>
+            <p class="generator-count">2 generators available</p>
+        </header>
+
+        <main>
+            <div class="generators-grid">
+                
+    <a href="../posts/fantasy-town-name-generator.html" class="generator-card">
+      <h3>🏘️ Fantasy Town Name Generator</h3>
+      <p>Generate authentic fantasy town names for agricultural, coastal, mining, forest, magical, scholarly, trade, defensive, artisan, and riverside towns. Perfect for D&D worldbuilding, fantasy writing, and map creation.</p>
+    </a>
+  
+    
+    <a href="../posts/fantasy-country-name-generator.html" class="generator-card">
+      <h3>🗺️ Fantasy Country Name Generator</h3>
+      <p>Generate authentic fantasy country names inspired by Tolkien, Game of Thrones, Elder Scrolls, Witcher, and more. Perfect for D&D worldbuilding, fantasy writing, and map creation.</p>
+    </a>
+  
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2025 The Name Generators. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="../lib/generator.js"></script>
+    <script>
+        // Populate category dropdown
+        (async () => {
+            const categories = await window.nameGenerator.getCategories();
+            const dropdown = document.getElementById('category-dropdown');
+            categories.forEach(cat => {
+                const link = document.createElement('a');
+                link.href = `../categories/${cat.slug}-names.html`;
+                link.textContent = `${cat.icon} ${cat.navLabel}`;
+                dropdown.appendChild(link);
+            });
+        })();
+    </script>
+</body>
+</html>

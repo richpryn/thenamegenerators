@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>All Name Generators - Complete List of Free Name Generators</title>
+    <meta name="title" content="All Name Generators - Complete List of Free Name Generators">
+    <meta name="description" content="Browse all name generators. Find the perfect name generator for your fantasy characters, places, people, and creative projects. Free online tools.">
+    <meta name="keywords" content="all name generators, name generator list, complete name generators, fantasy name generators, dnd name generators">
+    <meta name="author" content="The Name Generators">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thenamegenerators.com/all-generators.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thenamegenerators.com/all-generators.html">
+    <meta property="og:title" content="All Name Generators - Complete List">
+    <meta property="og:description" content="Browse all name generators. Find the perfect name generator for your fantasy characters, places, people, and creative projects.">
+    <meta property="og:image" content="https://thenamegenerators.com/images/all-generators.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://thenamegenerators.com/all-generators.html">
+    <meta property="twitter:title" content="All Name Generators - Complete List">
+    <meta property="twitter:description" content="Browse all name generators. Find the perfect name generator for your fantasy characters, places, people, and creative projects.">
+    <meta property="twitter:image" content="https://thenamegenerators.com/images/all-generators.jpg">
+    
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/blog.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="all-generators.html">All Generators</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-dropdown-toggle">Categories</a>
+                    <div class="nav-dropdown-menu" id="category-dropdown">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="hero">
+            <h1>All Name Generators</h1>
+            <p>Browse our complete collection of name generators</p>
+        </header>
+
+        <main>
+            <div id="generators-list">
+                <!-- Populated by JavaScript -->
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; <span id="current-year"></span> The Name Generators. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="lib/generator.js"></script>
+    <script>
+        // Set current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Load all generators
+        (async () => {
+            const generator = window.nameGenerator;
+            const categories = await generator.getCategories();
+            const generatorsList = document.getElementById('generators-list');
+            
+            // Populate category dropdown
+            const navDropdown = document.getElementById('category-dropdown');
+            categories.forEach(cat => {
+                const link = document.createElement('a');
+                link.href = `categories/${cat.slug}-names.html`;
+                link.textContent = `${cat.icon} ${cat.navLabel}`;
+                navDropdown.appendChild(link);
+            });
+            
+            // Group generators by category
+            for (const category of categories) {
+                try {
+                    const generators = await generator.getGenerators(category.slug);
+                    const generatorsArray = Object.entries(generators).map(([key, gen]) => ({
+                        key,
+                        ...gen
+                    }));
+                    
+                    if (generatorsArray.length === 0) continue;
+                    
+                    // Create category section
+                    const categorySection = document.createElement('section');
+                    categorySection.className = 'category-section';
+                    categorySection.innerHTML = `
+                        <h2>${category.icon} ${category.name}</h2>
+                        <div class="generators-grid">
+                            ${generatorsArray.map(gen => `
+                                <a href="posts/${gen.slug}.html" class="generator-card">
+                                    <h3>${gen.icon} ${gen.title}</h3>
+                                    <p>${gen.description}</p>
+                                </a>
+                            `).join('')}
+                        </div>
+                    `;
+                    generatorsList.appendChild(categorySection);
+                } catch (e) {
+                    console.error(`Error loading category ${category.slug}:`, e);
+                }
+            }
+        })();
+    </script>
+</body>
+</html>
+
