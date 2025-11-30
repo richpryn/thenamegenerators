@@ -84,6 +84,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Generator: Blog Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/blog-name-generator.html</loc>
+    <lastmod>2025-11-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Elf Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/elf-name-generator.html</loc>
