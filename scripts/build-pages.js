@@ -535,7 +535,7 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
             ).join('\n            ') : ''}
             
             try {
-                ${generatorKey === 'dnd_fantasy' ? `
+                ${(generatorKey === 'dnd_fantasy' || generatorKey === 'high_elf' || generatorKey === 'wood_elf' || generatorKey === 'dark_elf') ? `
                 // Special handling for D&D fantasy generator - combine first and last names
                 const generator = await window.nameGenerator.getGenerator(categorySlug, generatorKey);
                 const gender = filters.gender || 'male';
