@@ -51,6 +51,10 @@
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="477280238" />
     
+    <!-- Security Headers -->
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+    <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp">
+    
     <!-- Content Security Policy (CSP) - Note: Some headers need server configuration -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com;">
     
@@ -87,8 +91,8 @@
       "url": "https://thenamegenerators.com/logo.png"
     }
   },
-  "datePublished": "2025-11-30T23:17:11.647Z",
-  "dateModified": "2025-11-30T23:17:11.649Z",
+  "datePublished": "2025-11-30T23:19:53.589Z",
+  "dateModified": "2025-11-30T23:19:53.592Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://thenamegenerators.com/posts/elf-name-generator.html"
@@ -433,7 +437,10 @@
                     '</ul>';
                 
             } catch (error) {
-                console.error('Generation error:', error);
+                // Log error for debugging (remove in production if desired)
+                if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+                    console.error('Generation error:', error);
+                }
                 document.getElementById('results').innerHTML = '<p class="error">Error generating names. Please try again.</p>';
             }
         });

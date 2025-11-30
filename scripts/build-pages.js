@@ -416,6 +416,10 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="477280238" />
     
+    <!-- Security Headers -->
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+    <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp">
+    
     <!-- Content Security Policy (CSP) - Note: Some headers need server configuration -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com;">
     
@@ -539,12 +543,16 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
                 
                 // Validate data is loaded correctly
                 if (!firstNames || !Array.isArray(firstNames) || firstNames.length === 0) {
-                    console.error('First names not found or invalid:', firstNames);
+                    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+                        console.error('First names not found or invalid:', firstNames);
+                    }
                     throw new Error('First names data not available');
                 }
                 if (!lastNames || !Array.isArray(lastNames) || lastNames.length === 0) {
-                    console.error('Last names not found or invalid:', lastNames);
-                    console.error('Available keys:', Object.keys(generator.data[gender]));
+                    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+                        console.error('Last names not found or invalid:', lastNames);
+                        console.error('Available keys:', Object.keys(generator.data[gender]));
+                    }
                     throw new Error('Last names data not available');
                 }
                 
@@ -590,7 +598,9 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
                     
                     // Ensure both parts exist
                     if (!firstName || !lastName) {
-                        console.error('Missing name parts:', { firstName, lastName, firstIndex, lastIndex, firstShuffledLength: firstShuffled.length, lastShuffledLength: lastShuffled.length });
+                        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+                            console.error('Missing name parts:', { firstName, lastName, firstIndex, lastIndex, firstShuffledLength: firstShuffled.length, lastShuffledLength: lastShuffled.length });
+                        }
                         continue; // Skip this iteration if name parts are missing
                     }
                     
@@ -664,7 +674,10 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
                     '</ul>';
                 `}
             } catch (error) {
-                console.error('Generation error:', error);
+                // Log error for debugging (remove in production if desired)
+                if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+                    console.error('Generation error:', error);
+                }
                 document.getElementById('results').innerHTML = '<p class="error">Error generating names. Please try again.</p>';
             }
         });
