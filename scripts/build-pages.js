@@ -512,6 +512,8 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
         (async () => {
             const categories = await window.nameGenerator.getCategories();
             const dropdown = document.getElementById('category-dropdown');
+            // Clear any existing items first to prevent duplicates
+            dropdown.innerHTML = '';
             categories.forEach(cat => {
                 const link = document.createElement('a');
                 link.href = \`../categories/\${cat.slug}-names.html\`;
@@ -803,6 +805,8 @@ function generateCategoryPage(category, categorySlug) {
         (async () => {
             const categories = await window.nameGenerator.getCategories();
             const dropdown = document.getElementById('category-dropdown');
+            // Clear any existing items first to prevent duplicates
+            dropdown.innerHTML = '';
             categories.forEach(cat => {
                 const link = document.createElement('a');
                 link.href = \`../categories/\${cat.slug}-names.html\`;

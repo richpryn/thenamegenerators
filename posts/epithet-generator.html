@@ -91,8 +91,8 @@
       "url": "https://thenamegenerators.com/logo.png"
     }
   },
-  "datePublished": "2025-11-30T23:19:53.613Z",
-  "dateModified": "2025-11-30T23:19:53.613Z",
+  "datePublished": "2025-11-30T23:22:26.684Z",
+  "dateModified": "2025-11-30T23:22:26.684Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://thenamegenerators.com/posts/epithet-generator.html"
@@ -483,6 +483,8 @@
         (async () => {
             const categories = await window.nameGenerator.getCategories();
             const dropdown = document.getElementById('category-dropdown');
+            // Clear any existing items first to prevent duplicates
+            dropdown.innerHTML = '';
             categories.forEach(cat => {
                 const link = document.createElement('a');
                 link.href = `../categories/${cat.slug}-names.html`;

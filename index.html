@@ -116,17 +116,7 @@
                 <div class="nav-dropdown">
                     <a href="#" class="nav-dropdown-toggle">Categories</a>
                     <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="categories/concepts-names.html">💭 Concept Names</a>
-        <a href="categories/events-names.html">🎉 Event Names</a>
-        <a href="categories/fantasy-names.html">⚔️ Fantasy Names</a>
-        <a href="categories/folklore-names.html">📜 Folklore Names</a>
-        <a href="categories/music-names.html">🎵 Music Names</a>
-        <a href="categories/objects-names.html">⚔️ Object Names</a>
-        <a href="categories/organizations-names.html">🏛️ Organization Names</a>
-        <a href="categories/people-names.html">👥 People Names</a>
-        <a href="categories/places-names.html">🗺️ Place Names</a>
-        <a href="categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                        <!-- Populated by update-homepage.js or JavaScript -->
+                        <!-- Populated by JavaScript -->
                     </div>
                 </div>
             </div>
@@ -213,6 +203,8 @@
             
             // Populate category dropdown in nav
             const navDropdown = document.getElementById('category-dropdown');
+            // Clear any existing items first to prevent duplicates
+            navDropdown.innerHTML = '';
             categories.forEach(cat => {
                 const link = document.createElement('a');
                 link.href = `categories/${cat.slug}-names.html`;
