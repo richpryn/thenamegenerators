@@ -279,7 +279,7 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
     nameInputHTML = `
           <div class="filter-group">
             <label for="character-name">Character Name:</label>
-            <input type="text" id="character-name" name="character-name" placeholder="Enter your character's name" class="name-input">
+            <input type="text" id="character-name" name="character-name" placeholder="Enter your character's name" class="name-input" maxlength="50" pattern="[^<>]*" title="Character name cannot contain < or >">
           </div>`;
   }
   
@@ -414,7 +414,16 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="format-detection" content="telephone=no">
     <!-- Content Security Policy (CSP) - Note: Some headers need server configuration -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com;">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R34WKHG3SR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-R34WKHG3SR');
+    </script>
     
     <!-- Schema.org JSON-LD -->
     ${schemaScripts}
@@ -606,15 +615,23 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
                 // Special handling for epithet generator - combine with user's name
                 const characterName = document.getElementById('character-name')?.value?.trim() || 'Your Character';
                 
+                // Sanitize user input to prevent XSS
+                const escapeHtml = (text) => {
+                    const div = document.createElement('div');
+                    div.textContent = text;
+                    return div.innerHTML;
+                };
+                const sanitizedName = escapeHtml(characterName);
+                
                 // Format epithets based on type
                 const formattedNames = epithets.map(epithet => {
                     // Epithets that already start with "the" should keep it
                     if (epithet.startsWith('the ')) {
-                        return \`\${characterName} \${epithet}\`;
+                        return \`\${sanitizedName} \${escapeHtml(epithet)}\`;
                     }
                     // Epithets that start with "of" don't need "the"
                     if (epithet.startsWith('of ')) {
-                        return \`\${characterName} \${epithet}\`;
+                        return \`\${sanitizedName} \${escapeHtml(epithet)}\`;
                     }
                     // Compound words (slayer, bane, born, etc.) don't need "the"
                     if (epithet.includes('slayer') || epithet.includes('bane') || epithet.includes('born') || 
@@ -627,10 +644,10 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
                         epithet.includes('feller') || epithet.includes('saver') || epithet.includes('maker') ||
                         epithet.includes('creator') || epithet.includes('founder') || epithet.includes('architect') ||
                         epithet.includes('negotiator') || epithet.includes('diplomat') || epithet.includes('mediator')) {
-                        return \`\${characterName} \${epithet}\`;
+                        return \`\${sanitizedName} \${escapeHtml(epithet)}\`;
                     }
                     // Most other epithets use "the" prefix
-                    return \`\${characterName} the \${epithet}\`;
+                    return \`\${sanitizedName} the \${escapeHtml(epithet)}\`;
                 });
                 
                 resultsDiv.innerHTML = '<ul class="name-results">' + 

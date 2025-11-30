@@ -49,7 +49,16 @@
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="format-detection" content="telephone=no">
     <!-- Content Security Policy (CSP) - Note: Some headers need server configuration -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com;">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R34WKHG3SR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-R34WKHG3SR');
+    </script>
     
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -75,8 +84,8 @@
       "url": "https://thenamegenerators.com/logo.png"
     }
   },
-  "datePublished": "2025-11-30T22:45:04.338Z",
-  "dateModified": "2025-11-30T22:45:04.338Z",
+  "datePublished": "2025-11-30T23:14:33.130Z",
+  "dateModified": "2025-11-30T23:14:33.130Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://thenamegenerators.com/posts/funny-wizard-name-generator.html"

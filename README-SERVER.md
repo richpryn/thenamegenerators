@@ -8,7 +8,7 @@
 
 ### Option 1: Use the Start Script (Easiest)
 ```bash
-./START-SERVER.sh
+
 ```
 
 ### Option 2: Manual Start
