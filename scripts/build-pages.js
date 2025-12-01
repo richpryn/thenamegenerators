@@ -790,10 +790,31 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
             }
         });
         
-        // Load related generators
+        // Load related generators (show 6 total)
         ${generator.relatedGenerators ? `(async () => {
-            const related = await window.nameGenerator.getRelatedGenerators(categorySlug, generatorKey);
+            let related = await window.nameGenerator.getRelatedGenerators(categorySlug, generatorKey);
             const relatedDiv = document.getElementById('related-generators');
+            
+            // If we have fewer than 6, supplement with popular generators from the same category
+            if (related.length < 6) {
+                const popular = await window.nameGenerator.getPopularGenerators();
+                const currentSlug = \`\${categorySlug}:\${generatorKey}\`;
+                const relatedSlugs = new Set(related.map(gen => \`\${gen.categorySlug}:\${gen.generatorKey}\`));
+                
+                // Add popular generators from same category first, then others
+                for (const pop of popular) {
+                    if (related.length >= 6) break;
+                    const popSlug = \`\${pop.categorySlug}:\${pop.generatorKey}\`;
+                    if (popSlug !== currentSlug && !relatedSlugs.has(popSlug)) {
+                        related.push(pop);
+                        relatedSlugs.add(popSlug);
+                    }
+                }
+            }
+            
+            // Limit to 6
+            related = related.slice(0, 6);
+            
             if (relatedDiv && related.length > 0) {
                 relatedDiv.innerHTML = related.map(gen => 
                     \`<a href="../posts/\${gen.slug}.html" class="related-card">
