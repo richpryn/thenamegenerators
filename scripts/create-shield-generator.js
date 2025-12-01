@@ -1,0 +1,118 @@
+#!/usr/bin/env node
+
+const fs = require('fs');
+const path = require('path');
+
+// Shield name data from the provided JSON
+const shieldData = {
+  "Shield_Names": [
+    "Ablution", "Aegis", "Aeolian", "Aeternus", "Aethel", "Aether", "Anathema", "Apex", "Arbalest", "Arcanum",
+    "Archon", "Argus", "Ariel", "Aska", "Astra", "Astro", "Atlas", "Aura", "Aurelian", "Aurora",
+    "Auster", "Axiom", "Baron", "Basilisk", "Bastion", "Bellator", "Blizzard", "Blodorn", "Breeze", "Brigandine",
+    "Buckler", "Cadence", "Caduceus", "Caelus", "Cairn", "Caltrop", "Catharsis", "Chalice", "Chaos", "Chieftain",
+    "Chrysalis", "Cinder", "Cipher", "Claymore", "Clove", "Comet", "Cosmos", "Covenant", "Crest", "Crossbow",
+    "Crown", "Crux", "Cryptic", "Crystal", "Cuirass", "Cynosure", "Diadem", "Dignity", "Dirk", "Dominion",
+    "Draconian", "Drekar", "Drengr", "Drift", "Duke", "Ebon", "Eclogue", "Edict", "Eld", "Elegy",
+    "Ember", "Empire", "Ephemeral", "Epigraph", "Epoch", "Equinox", "Erlking", "Eulogy", "Falchion", "Fallow",
+    "Fealty", "Fell", "Ferox", "Fjord", "Flail", "Flint", "Fortitude", "Frostbite", "Fylgja", "Garnet",
+    "Gauntlet", "Geode", "Geyser", "Gjallar", "Glacier", "Glaive", "Gleipnir", "Glimmer", "Goliath", "Gorget",
+    "Gorgon", "Halberd", "Harkon", "Harrow", "Hearth", "Heath", "Hecate", "Herald", "Hovel", "Hreidmar",
+    "Hrim", "Hydrus", "Iconoclast", "Imperator", "Inception", "Inertia", "Innuendo", "Invictus", "Ironside", "Ithaca",
+    "Jarl", "Javelin", "Jotun", "Katana", "Kite", "Kratos", "Krig", "Krom", "Kyrios", "Lance",
+    "Legate", "Locus", "Loom", "Lumin", "Lunar", "Mace", "Magma", "Magnus", "Marquis", "Meteor",
+    "Miasma", "Mien", "Monarch", "Moor", "Nebula", "Nemesis", "Nostos", "Obelisk", "Obsidian", "Odeum",
+    "Olympus", "Onyx", "Opal", "Overlord", "Paladin", "Paramount", "Pardus", "Penumbra", "Phalanx", "Phantasm",
+    "Pike", "Pommel", "Praetor", "Prefect", "Prism", "Pylon", "Pyre", "Quasar", "Quiescence", "Quill",
+    "Quillion", "Ragnarok", "Rapier", "Rapture", "Regent", "Reliquary", "Requiem", "Rexus", "Rime", "Riven",
+    "Rune", "Sabaton", "Sable", "Saga", "Scepter", "Scimitar", "Scroll", "Scutum", "Sentinel", "Sepulchre",
+    "Shard", "Silentium", "Skjold", "Skofnung", "Skoll", "Sling", "Sol", "Solstice", "Sovereign", "Sparth",
+    "Spaulder", "Squire", "Stratum", "Stygian", "Styx", "Suzerain", "Sylvan", "Targe", "Tempest", "Terra",
+    "Thane", "Thralldom", "Threnody", "Throne", "Tidal", "Titan", "Token", "Tribune", "Triton", "Tryst",
+    "Ulfr", "Umbra", "Vail", "Vambrace", "Veil", "Vellum", "Veridian", "Vestige", "Vexillum", "Victor",
+    "Vigil", "Vindex", "Visage", "Viscount", "Vorpal", "Vortex", "Warlord", "Weal", "Whisper", "Wisp",
+    "Woad", "Wyrd", "Wyrm", "Zeitgeist", "Zenith", "Zephyr"
+  ]
+};
+
+// Format all names as "The [name] Shield"
+const formattedShieldNames = shieldData.Shield_Names.map(name => `The ${name} Shield`);
+
+// Read the objects.json file
+const objectsFile = path.join(__dirname, '../data/objects.json');
+const objectsData = JSON.parse(fs.readFileSync(objectsFile, 'utf8'));
+
+// Add the shield generator
+objectsData.generators.shield = {
+  "title": "Shield Name Generator",
+  "slug": "shield-name-generator",
+  "description": "Generate powerful and legendary shield names. All shields are formatted as 'The [name] Shield', perfect for fantasy writing, D&D, and gaming.",
+  "seoKeywords": "shield names, shield name generator, fantasy shield names, legendary shield names, D&D shield names, gaming shield names",
+  "icon": "🛡️",
+  "isPopular": true,
+  "popularRank": 1,
+  "filters": {},
+  "data": formattedShieldNames,
+  "article": {
+    "hero": {
+      "title": "🛡️ Shield Name Generator",
+      "tagline": "Generate powerful and legendary shield names. All shields are formatted as 'The [name] Shield', perfect for fantasy writing, D&D, and gaming."
+    },
+    "intro": "Shield names carry the weight of legend, protection, and honor. From the mythical Aegis of Zeus to the legendary shields of fantasy heroes, a well-chosen shield name can define a character's identity and tell stories of battles won and lives protected. Our **Shield Name Generator** creates powerful shield names in the format 'The [name] Shield', drawing from mythology, history, and fantasy to create names that resonate with power and protection.",
+    "sections": [
+      {
+        "heading": "The Power of Shield Names",
+        "content": "<p>Shield names serve multiple purposes in fantasy worlds: they identify legendary artifacts, establish a character's identity, create memorable equipment, and tell stories of protection and valor. A well-chosen shield name can instantly convey whether a shield is divine (The Aegis Shield), elemental (The Tempest Shield), or legendary (The Ragnarok Shield).</p><p>Our generator creates shield names in the format 'The [name] Shield', drawing from a rich vocabulary of mythological, historical, and fantasy terms. Names like 'The Aegis Shield', 'The Bastion Shield', and 'The Sentinel Shield' suggest protection and defense, while names like 'The Tempest Shield', 'The Inferno Shield', and 'The Glacier Shield' suggest elemental power.</p>"
+      },
+      {
+        "heading": "Shield Name Categories",
+        "content": "<p>The generator provides shield names across various thematic categories:</p><ul><li><strong>Mythological Shields:</strong> Names like Aegis (Zeus's shield), Gleipnir (the binding of Fenrir), and Ragnarok (the end of the world) draw from mythology to create names with deep cultural and historical resonance.</li><li><strong>Elemental Shields:</strong> Names like Tempest, Blizzard, Magma, and Glacier suggest elemental power and connection to natural forces.</li><li><strong>Protective Shields:</strong> Names like Bastion, Sentinel, Fortitude, and Vigil emphasize the shield's role as a protector and defender.</li><li><strong>Noble and Royal Shields:</strong> Names like Crown, Diadem, Sovereign, and Monarch suggest regal power and noble heritage.</li><li><strong>Mystical and Arcane Shields:</strong> Names like Arcanum, Aether, Phantasm, and Nebula suggest magical power and otherworldly protection.</li><li><strong>Weapon and Combat Shields:</strong> Names like Claymore, Halberd, Rapier, and Scimitar reference weapons, suggesting the shield's role in combat and warfare.</li></ul>"
+      },
+      {
+        "heading": "How to Use Shield Names",
+        "content": "<p>Shield names work excellently for:</p><ul><li><strong>D&D Campaigns:</strong> Name legendary shields for player characters or important NPCs</li><li><strong>Fantasy Writing:</strong> Create memorable shield names for characters in novels or short stories</li><li><strong>Gaming:</strong> Perfect for MMORPGs, video games, or tabletop RPGs where shields are important equipment</li><li><strong>Worldbuilding:</strong> Establish consistent naming conventions for legendary artifacts in your fantasy world</li><li><strong>Character Development:</strong> Use shield names to reflect a character's personality, background, or achievements</li></ul><p>When choosing shield names, consider the shield's history, the character who wields it, and the shield's magical properties or legendary status. A shield named 'The Aegis Shield' suggests divine protection, while 'The Tempest Shield' might grant storm-based powers.</p>"
+      },
+      {
+        "heading": "Well-Known Shields in Literature and Media",
+        "content": "<p>Shield names have been immortalized through mythology, literature, games, and media. These iconic shields demonstrate the power of well-chosen shield names:</p><ul><li><strong>Aegis (Greek Mythology):</strong> The legendary shield of Zeus and Athena, the Aegis is one of the most famous shields in mythology. Its name means 'goatskin' and it was said to bear the head of Medusa, creating terror in enemies. The Aegis represents divine protection and power.</li><li><strong>Captain America's Shield (Marvel Comics):</strong> While not named with 'The [name] Shield' format, Captain America's vibranium shield is one of the most iconic shields in popular culture, representing protection, justice, and American values.</li><li><strong>Shield of the White Tree (The Lord of the Rings):</strong> The shield of Gondor, bearing the White Tree, represents the kingdom's heritage and protection. While not explicitly named in the format, it demonstrates how shield names can reflect cultural identity.</li><li><strong>Various D&D Shields:</strong> Dungeons & Dragons features numerous legendary shields like the Shield of the Hidden Lord, Shield of Missile Attraction, and Shield of the Silver Dragon, demonstrating how shield names can reflect magical properties and legendary status.</li><li><strong>Shield of the Sun (Various Fantasy):</strong> Many fantasy works feature shields with elemental or celestial names, like the Shield of the Sun or Shield of the Moon, demonstrating how shield names can reflect power sources and magical properties.</li><li><strong>Gjallarhorn (Norse Mythology):</strong> While technically a horn, Gjallarhorn demonstrates how Norse mythology influences shield naming, with names that reference legendary artifacts and mythological events.</li></ul><p>These iconic shields demonstrate the range of shield naming conventions: from mythological references (Aegis) to elemental names (Tempest, Blizzard) to descriptive names that reflect properties or heritage. When creating your own shield names, consider what the shield represents, its magical properties, and how the name reflects its legendary status.</p>"
+      },
+      {
+        "heading": "The Meaning and Derivation of Shield Names",
+        "content": "<p>Understanding the etymology and symbolism behind shield names adds depth to character creation and worldbuilding. Many shield names draw from specific linguistic roots, mythological references, and symbolic meanings:</p><ul><li><strong>Mythological Roots:</strong> Many shield names come from mythology: 'Aegis' (Greek, meaning goatskin, Zeus's shield), 'Gleipnir' (Norse, the binding of Fenrir), 'Ragnarok' (Norse, the end of the world). These names connect shields to ancient legends and divine power.</li><li><strong>Latin and Classical Roots:</strong> Names frequently draw from Latin and classical languages: 'Aegis' (Latin/Greek), 'Bastion' (from Latin 'bastire', to build), 'Sentinel' (from Latin 'sentire', to feel), 'Fortitude' (from Latin 'fortis', strong). These names suggest strength, protection, and classical heritage.</li><li><strong>Elemental and Natural References:</strong> Shield names often reference natural forces: 'Tempest' (storm), 'Blizzard' (snowstorm), 'Magma' (molten rock), 'Glacier' (ice), 'Aurora' (northern lights). These names suggest elemental power and connection to nature.</li><li><strong>Protective and Defensive Concepts:</strong> Names emphasize protection: 'Bastion' (fortress), 'Sentinel' (guard), 'Vigil' (watch), 'Fortitude' (strength), 'Aegis' (protection). These names directly reference the shield's primary function.</li><li><strong>Noble and Royal Titles:</strong> Names reference nobility: 'Crown', 'Diadem', 'Sovereign', 'Monarch', 'Baron', 'Duke', 'Marquis'. These names suggest regal power and noble heritage.</li><li><strong>Weapon and Combat Terms:</strong> Names reference weapons and combat: 'Claymore', 'Halberd', 'Rapier', 'Scimitar', 'Lance', 'Mace'. These names suggest the shield's role in warfare and combat.</li><li><strong>Mystical and Arcane Terms:</strong> Names suggest magic: 'Arcanum' (secret knowledge), 'Aether' (upper air), 'Phantasm' (illusion), 'Nebula' (cloud), 'Prism' (light refraction). These names suggest magical properties and otherworldly power.</li><li><strong>Norse and Germanic Roots:</strong> Many names draw from Norse and Germanic sources: 'Gjallar' (Norse, relating to Gjallarhorn), 'Jarl' (Norse, chieftain), 'Drengr' (Norse, warrior), 'Skjold' (Norse, shield). These names suggest Viking heritage and warrior culture.</li><li><strong>Greek and Roman References:</strong> Names reference classical antiquity: 'Archon' (Greek ruler), 'Praetor' (Roman magistrate), 'Legate' (Roman officer), 'Tribune' (Roman official). These names suggest ancient power and classical heritage.</li><li><strong>Abstract and Conceptual Terms:</strong> Names use abstract concepts: 'Axiom' (self-evident truth), 'Covenant' (agreement), 'Dominion' (rule), 'Empire' (realm). These names suggest power, authority, and conceptual strength.</li></ul><p>When creating shield names, consider what each element means and how it contributes to the shield's identity. A name like 'The Aegis Shield' immediately suggests divine protection (Aegis being Zeus's shield), while 'The Tempest Shield' suggests storm-based power and elemental force. 'The Bastion Shield' suggests unbreakable defense, while 'The Ragnarok Shield' suggests apocalyptic power and Norse mythology.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Why are all shield names formatted as 'The [name] Shield'?",
+        "answer": "The 'The [name] Shield' format creates a consistent, memorable naming convention that works well in fantasy settings. This format is common in fantasy literature and games, making shields feel like legendary artifacts with proper names, similar to how swords are often named 'The [name] Sword' or 'The [name] Blade'."
+      },
+      {
+        "question": "Can I use these names for other types of shields?",
+        "answer": "Absolutely! While designed for shields, these names can work for other protective items like bucklers, tower shields, or even magical barriers. The naming format is flexible and can be adapted to different shield types or protective equipment."
+      },
+      {
+        "question": "How many unique shield names does the generator provide?",
+        "answer": "The generator provides over 250 unique shield names, each formatted as 'The [name] Shield'. These names draw from mythology, history, fantasy, and various linguistic traditions to create a diverse collection of memorable shield names."
+      },
+      {
+        "question": "Can I use these names for player characters' shields?",
+        "answer": "Yes! These names are perfect for player characters' shields in D&D, tabletop RPGs, or fantasy writing. The names work well for both starting equipment and legendary artifacts that characters might acquire during their adventures."
+      }
+    ]
+  },
+  "relatedGenerators": [
+    "dwarf",
+    "elf",
+    "wizard",
+    "orc"
+  ]
+};
+
+// Write the updated data back to the file
+fs.writeFileSync(objectsFile, JSON.stringify(objectsData, null, 2));
+
+console.log('✅ Successfully created Shield Name Generator!');
+console.log(`📊 Total shield names: ${formattedShieldNames.length}`);
+console.log(`✨ All names formatted as: "The [name] Shield"`);
+console.log(`\n📋 Example names:`);
+formattedShieldNames.slice(0, 10).forEach(name => console.log(`   - ${name}`));
+
