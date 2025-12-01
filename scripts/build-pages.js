@@ -535,7 +535,94 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
             ).join('\n            ') : ''}
             
             try {
-                ${(generatorKey === 'dnd_fantasy' || generatorKey === 'high_elf' || generatorKey === 'wood_elf' || generatorKey === 'dark_elf') ? `
+                ${generatorKey === 'clan' ? `
+                // Special handling for Clan generator - combine title formats with clan names
+                const generator = await window.nameGenerator.getGenerator(categorySlug, generatorKey);
+                const type = filters.type || 'animal';
+                
+                const titles = generator.data.titles;
+                const clanNames = generator.data[type];
+                
+                // Validate data is loaded correctly
+                if (!titles || !Array.isArray(titles) || titles.length === 0) {
+                    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+                        console.error('Titles not found or invalid:', titles);
+                    }
+                    throw new Error('Titles data not available');
+                }
+                if (!clanNames || !Array.isArray(clanNames) || clanNames.length === 0) {
+                    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+                        console.error('Clan names not found or invalid:', clanNames);
+                        console.error('Available types:', Object.keys(generator.data).filter(k => k !== 'titles'));
+                    }
+                    throw new Error('Clan names data not available');
+                }
+                
+                // Create shuffled pools for titles and clan names
+                const titlePoolKey = \`\${categorySlug}:\${generatorKey}:titles\`;
+                const namePoolKey = \`\${categorySlug}:\${generatorKey}:names:\${type}\`;
+                
+                let titleShuffled = window.nameGenerator.namePools.get(titlePoolKey);
+                let titleIndex = window.nameGenerator.nameIndices.get(titlePoolKey) || 0;
+                let nameShuffled = window.nameGenerator.namePools.get(namePoolKey);
+                let nameIndex = window.nameGenerator.nameIndices.get(namePoolKey) || 0;
+                
+                // Initialize pools if needed
+                if (!titleShuffled || titleIndex >= titleShuffled.length) {
+                    titleShuffled = window.nameGenerator.shuffleArray([...titles]);
+                    window.nameGenerator.namePools.set(titlePoolKey, titleShuffled);
+                    titleIndex = 0;
+                }
+                if (!nameShuffled || nameIndex >= nameShuffled.length) {
+                    nameShuffled = window.nameGenerator.shuffleArray([...clanNames]);
+                    window.nameGenerator.namePools.set(namePoolKey, nameShuffled);
+                    nameIndex = 0;
+                }
+                
+                // Generate combined names
+                const results = [];
+                for (let i = 0; i < count; i++) {
+                    // If we've exhausted titles, reshuffle
+                    if (titleIndex >= titleShuffled.length) {
+                        titleShuffled = window.nameGenerator.shuffleArray([...titles]);
+                        window.nameGenerator.namePools.set(titlePoolKey, titleShuffled);
+                        titleIndex = 0;
+                    }
+                    // If we've exhausted clan names, reshuffle
+                    if (nameIndex >= nameShuffled.length) {
+                        nameShuffled = window.nameGenerator.shuffleArray([...clanNames]);
+                        window.nameGenerator.namePools.set(namePoolKey, nameShuffled);
+                        nameIndex = 0;
+                    }
+                    
+                    const titleFormat = titleShuffled[titleIndex];
+                    const clanName = nameShuffled[nameIndex];
+                    
+                    // Ensure both parts exist
+                    if (!titleFormat || !clanName) {
+                        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+                            console.error('Missing name parts:', { titleFormat, clanName, titleIndex, nameIndex });
+                        }
+                        continue; // Skip this iteration if name parts are missing
+                    }
+                    
+                    // Replace [Name] in title format with clan name
+                    const fullName = String(titleFormat).replace(/\\[Name\\]/g, String(clanName).trim());
+                    results.push(fullName);
+                    
+                    titleIndex++;
+                    nameIndex++;
+                }
+                
+                // Update indices
+                window.nameGenerator.nameIndices.set(titlePoolKey, titleIndex);
+                window.nameGenerator.nameIndices.set(namePoolKey, nameIndex);
+                
+                const resultsDiv = document.getElementById('results');
+                resultsDiv.innerHTML = '<ul class="name-results">' + 
+                    results.map(name => \`<li>\${name}</li>\`).join('') + 
+                    '</ul>';
+                ` : (generatorKey === 'dnd_fantasy' || generatorKey === 'high_elf' || generatorKey === 'wood_elf' || generatorKey === 'dark_elf') ? `
                 // Special handling for D&D fantasy generator - combine first and last names
                 const generator = await window.nameGenerator.getGenerator(categorySlug, generatorKey);
                 const gender = filters.gender || 'male';
