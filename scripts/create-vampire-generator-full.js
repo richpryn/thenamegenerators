@@ -82,10 +82,27 @@ function processVampireData(vampireData) {
   console.log(`Unique Female First Names: ${femaleFirstNames.length}`);
   console.log(`Unique Non-Binary First Names: ${nonBinaryFirstNames.length}`);
 
-  // Add to people.json
+  // Update people.json
   const peopleFile = path.join(__dirname, '../data/people.json');
   const peopleData = JSON.parse(fs.readFileSync(peopleFile, 'utf8'));
 
+  // If vampire generator already exists, just update the data
+  if (peopleData.generators.vampire) {
+    peopleData.generators.vampire.data = {
+      male: maleNames,
+      female: femaleNames,
+      non_binary: nonBinaryNames
+    };
+    fs.writeFileSync(peopleFile, JSON.stringify(peopleData, null, 2));
+    console.log('✅ Updated vampire generator with all names');
+    console.log(`\nSummary:`);
+    console.log(`- Male names: ${maleNames.length} total, ${maleFirstNames.length} unique first names`);
+    console.log(`- Female names: ${femaleNames.length} total, ${femaleFirstNames.length} unique first names`);
+    console.log(`- Non-binary names: ${nonBinaryNames.length} total, ${nonBinaryFirstNames.length} unique first names`);
+    return;
+  }
+
+  // Otherwise, create the full generator structure
   peopleData.generators.vampire = {
     "title": "Vampire Name Generator",
     "slug": "vampire-name-generator",
