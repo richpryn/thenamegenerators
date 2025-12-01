@@ -334,8 +334,8 @@
                     group.innerHTML = `
                         <label for="filter-${key}">${filter.label}:</label>
                         <select id="filter-${key}" name="${key}">
-                            ${filter.options.map(opt => 
-                                `<option value="${opt}">${opt.charAt(0).toUpperCase() + opt.slice(1)}</option>`
+                            ${filter.options.map((opt, idx) => 
+                                `<option value="${opt}" ${idx === 0 ? 'selected' : ''}>${opt.charAt(0).toUpperCase() + opt.slice(1).replace(/_/g, ' ')}</option>`
                             ).join('')}
                         </select>
                     `;
