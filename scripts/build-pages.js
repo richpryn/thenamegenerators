@@ -274,12 +274,13 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
   let filterHTML = '';
   let nameInputHTML = '';
   
-  // Special handling for epithet generator - needs name input
-  if (generatorKey === 'epithet') {
+  // Special handling for epithet generators - needs name input
+  if (generatorKey === 'epithet' || generatorKey === 'demon_epithet') {
+    const placeholder = generatorKey === 'demon_epithet' ? 'Enter your demon\'s name' : 'Enter your character\'s name';
     nameInputHTML = `
           <div class="filter-group">
-            <label for="character-name">Character Name:</label>
-            <input type="text" id="character-name" name="character-name" placeholder="Enter your character's name" class="name-input" maxlength="50" pattern="[^<>]*" title="Character name cannot contain < or >">
+            <label for="character-name">${generatorKey === 'demon_epithet' ? 'Demon' : 'Character'} Name:</label>
+            <input type="text" id="character-name" name="character-name" placeholder="${placeholder}" class="name-input" maxlength="50" pattern="[^<>]*" title="Character name cannot contain < or >">
           </div>`;
   }
   
@@ -294,7 +295,14 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
             .replace('Alignment ', 'Alignment: ').replace('Reputation ', 'Reputation: ')
             .replace('Origin ', 'Origin: ').replace('Magical ', 'Magical: ')
             .replace('Weapon ', 'Weapon: ').replace('Time ', 'Time: ')
-            .replace('Misc ', 'Misc: ');
+            .replace('Misc ', 'Misc: ')
+            .replace('Power ', 'Power & ').replace('Sin ', 'Sin & ').replace('Destruction ', 'Destruction & ')
+            .replace('Death ', 'Death & ').replace('Elemental ', 'Elemental & ').replace('Physical ', 'Physical ')
+            .replace('Behavioral', 'Behavioral').replace('Special ', 'Special & ');
+        }
+        // Special formatting for domain names (demon generator)
+        if (key === 'domain') {
+          label = label.charAt(0).toUpperCase() + label.slice(1);
         }
         return `<option value="${opt}">${label}</option>`;
       }).join('\n            ');
@@ -709,7 +717,7 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
                 resultsDiv.innerHTML = '<ul class="name-results">' + 
                     results.map(name => \`<li>\${name}</li>\`).join('') + 
                     '</ul>';
-                ` : generatorKey === 'epithet' ? `
+                ` : (generatorKey === 'epithet' || generatorKey === 'demon_epithet') ? `
                 const epithets = await window.nameGenerator.generateNames(categorySlug, generatorKey, filters, count);
                 const resultsDiv = document.getElementById('results');
                 
