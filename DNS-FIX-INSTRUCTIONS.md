@@ -130,3 +130,4 @@ dig www.thenamegenerators.com +short
 4. Wait for DNS propagation (15-60 minutes)
 5. Wait for SSL certificate (24-48 hours)
 
+

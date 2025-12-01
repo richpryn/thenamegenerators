@@ -91,8 +91,8 @@
       "url": "https://thenamegenerators.com/logo.png"
     }
   },
-  "datePublished": "2025-12-01T00:21:18.217Z",
-  "dateModified": "2025-12-01T00:21:18.217Z",
+  "datePublished": "2025-12-01T11:45:00.550Z",
+  "dateModified": "2025-12-01T11:45:00.555Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://thenamegenerators.com/posts/blog-name-generator.html"
@@ -294,7 +294,12 @@
     <nav class="main-nav">
         <div class="nav-container">
             <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <div class="nav-links">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links" id="nav-links">
                 <a href="../index.html">Home</a>
                 <a href="../all-generators.html">All Generators</a>
                 <div class="nav-dropdown">
@@ -445,6 +450,37 @@
 
     <script src="../lib/generator.js"></script>
     <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+        const categoryDropdown = document.querySelector('.nav-dropdown');
+        
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+            
+            // Close menu when clicking on a link
+            navLinks.addEventListener('click', (e) => {
+                if (e.target.tagName === 'A' && !e.target.classList.contains('nav-dropdown-toggle')) {
+                    menuToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                }
+            });
+            
+            // Handle dropdown toggle on mobile
+            const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
+            if (dropdownToggle) {
+                dropdownToggle.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        categoryDropdown.classList.toggle('active');
+                    }
+                });
+            }
+        }
+        
         // Initialize generator for this specific generator
         const categorySlug = 'concepts';
         const generatorKey = 'blog';
