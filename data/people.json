@@ -1796,7 +1796,7 @@
           "title": "🗡️ Assassin Name Generator",
           "tagline": "Generate deadly assassin names perfect for rogues, shadow operatives, and dark fantasy characters. Combine modern, fantasy, and ethnic components or choose powerful single-word aliases."
         },
-        "intro": "Assassin names capture the essence of shadow, death, and precision. From modern operatives like 'Agent Shadow' to fantasy dark assassins like 'Nightshade' or ethnic thematic names like 'Kael Blackwood', assassin names tell stories of stealth, skill, and deadly purpose. Our **assassin name generator** combines components from six distinct categories to create unique compound names or powerful single-word aliases perfect for assassins, rogues, and shadow operatives.",
+        "intro": "Assassin names capture the essence of shadow, death, and precision. From modern operatives like 'Agent Shadow' to fantasy dark assassins like 'Nightshade' or ethnic thematic names like 'Kael Blackwood', assassin names tell stories of stealth, skill, and deadly purpose. Our **assassin name generator** combines components from three main categories—Modern, Fantasy Dark, and Ethnic Thematic—plus powerful Single Aliases to create unique compound names or memorable monikers perfect for assassins, rogues, and shadow operatives.",
         "sections": [
           {
             "heading": "The Power of Assassin Names",
@@ -1808,7 +1808,7 @@
           },
           {
             "heading": "How Assassin Names Work",
-            "content": "<p>The generator creates names using intelligent combination logic:</p><ul><li><strong>Compound Names:</strong> Combines prefixes and suffixes. If the prefix is a single word (like 'Knox') and the suffix is a surname (like 'Grimshaw'), it inserts a space: 'Knox Grimshaw'. If the suffix starts with lowercase (like 'shade'), it concatenates and capitalizes: 'Nightshade'. Otherwise, it creates single-word combinations: 'Shadowblade'.</li><li><strong>Alias Names:</strong> Selects a powerful single-word alias from the SINGLE_ALIASES list, perfect for assassins who operate under one memorable name.</li></ul><p>This creates authentic, memorable names that feel integrated into your world, whether you're writing modern thrillers, dark fantasy, or creating characters for tabletop RPGs.</p>"
+            "content": "<p>The generator creates names using intelligent combination logic:</p><ul><li><strong>Compound Names:</strong> Combines prefixes and suffixes from the three main categories. If the prefix contains a space (like 'Subject Thirty-One'), it always adds a space before the suffix: 'Subject Thirty-One Wolfe'. If the prefix is a single word (like 'Knox' or 'Grim') and the suffix is a capitalized surname (like 'Grimshaw' or 'March'), it inserts a space: 'Knox Grimshaw', 'Grim March'. If the suffix starts with lowercase (like 'shade'), it concatenates and capitalizes: 'Nightshade'. Otherwise, it creates single-word combinations: 'Shadowblade'.</li><li><strong>Alias Names:</strong> Selects a powerful single-word alias from the Single Aliases list, perfect for assassins who operate under one memorable name like 'Oblivion', 'Vengeance', or 'Phantom'.</li></ul><p>This creates authentic, memorable names that feel integrated into your world, whether you're writing modern thrillers, dark fantasy, or creating characters for tabletop RPGs.</p>"
           },
           {
             "heading": "How to Use Assassin Names",
@@ -1822,7 +1822,7 @@
           },
           {
             "question": "How does the name combination logic work?",
-            "answer": "The generator intelligently combines prefixes and suffixes: if the prefix is a single word and the suffix is a capitalized surname, it adds a space ('Knox Grimshaw'). If the suffix starts with lowercase, it concatenates and capitalizes ('Nightshade'). Otherwise, it creates single-word combinations ('Shadowblade')."
+            "answer": "The generator intelligently combines prefixes and suffixes: if the prefix contains a space (like 'Subject Thirty-One'), it always adds a space before the suffix ('Subject Thirty-One Wolfe'). If the prefix is a single word and the suffix is a capitalized surname, it adds a space ('Knox Grimshaw', 'Grim March'). If the suffix starts with lowercase, it concatenates and capitalizes ('Nightshade'). Otherwise, it creates single-word combinations ('Shadowblade')."
           },
           {
             "question": "Can I use these names for any setting?",
