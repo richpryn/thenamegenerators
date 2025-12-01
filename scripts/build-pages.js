@@ -735,29 +735,40 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
                 
                 // Format epithets based on type
                 const formattedNames = epithets.map(epithet => {
+                    const ep = String(epithet).trim();
+                    
                     // Epithets that already start with "the" should keep it
-                    if (epithet.startsWith('the ')) {
-                        return \`\${sanitizedName} \${escapeHtml(epithet)}\`;
+                    if (ep.startsWith('the ')) {
+                        return \`\${sanitizedName} \${escapeHtml(ep)}\`;
                     }
                     // Epithets that start with "of" don't need "the"
-                    if (epithet.startsWith('of ')) {
-                        return \`\${sanitizedName} \${escapeHtml(epithet)}\`;
+                    if (ep.startsWith('of ')) {
+                        return \`\${sanitizedName} \${escapeHtml(ep)}\`;
+                    }
+                    // Titles (Lord, Prince, Duke, Master, King, Father, etc.) use comma format
+                    if (/^(Lord|Prince|Duke|Master|King|Father|Mother|Baron|Bringer|Herald|Agent|Dealer|Walker|Lurker|Dweller|Incarnate|Embodied|Manifest|Personified|Given Form|Unleashed|Mass|Serial|Genocide|Slaughter|Once|Former|Ex|Lost|Before|Pre|Dawn|Origin|Made|Born|Forged|Shaped)/i.test(ep)) {
+                        return \`\${sanitizedName}, \${escapeHtml(ep)}\`;
                     }
                     // Compound words (slayer, bane, born, etc.) don't need "the"
-                    if (epithet.includes('slayer') || epithet.includes('bane') || epithet.includes('born') || 
-                        epithet.includes('breaker') || epithet.includes('hunter') || epithet.includes('killer') ||
-                        epithet.includes('wielder') || epithet.includes('master') || epithet.includes('keeper') ||
-                        epithet.includes('weaver') || epithet.includes('binder') || epithet.includes('reader') ||
-                        epithet.includes('seer') || epithet.includes('walker') || epithet.includes('defender') ||
-                        epithet.includes('singer') || epithet.includes('chanter') || epithet.includes('speaker') ||
-                        epithet.includes('caller') || epithet.includes('whisperer') || epithet.includes('prophet') ||
-                        epithet.includes('feller') || epithet.includes('saver') || epithet.includes('maker') ||
-                        epithet.includes('creator') || epithet.includes('founder') || epithet.includes('architect') ||
-                        epithet.includes('negotiator') || epithet.includes('diplomat') || epithet.includes('mediator')) {
-                        return \`\${sanitizedName} \${escapeHtml(epithet)}\`;
+                    if (ep.includes('slayer') || ep.includes('bane') || ep.includes('born') || 
+                        ep.includes('breaker') || ep.includes('hunter') || ep.includes('killer') ||
+                        ep.includes('wielder') || ep.includes('keeper') ||
+                        ep.includes('weaver') || ep.includes('binder') || ep.includes('reader') ||
+                        ep.includes('seer') || ep.includes('walker') || ep.includes('defender') ||
+                        ep.includes('singer') || ep.includes('chanter') || ep.includes('speaker') ||
+                        ep.includes('caller') || ep.includes('whisperer') || ep.includes('prophet') ||
+                        ep.includes('feller') || ep.includes('saver') || ep.includes('maker') ||
+                        ep.includes('creator') || ep.includes('founder') || ep.includes('architect') ||
+                        ep.includes('negotiator') || ep.includes('diplomat') || ep.includes('mediator') ||
+                        ep.includes('destroyer') || ep.includes('annihilator') || ep.includes('obliterator') ||
+                        ep.includes('reaper') || ep.includes('harvester') || ep.includes('collector') ||
+                        ep.includes('torturer') || ep.includes('tormentor') || ep.includes('dealer') ||
+                        ep.includes('bringer') || ep.includes('spreader') || ep.includes('source') ||
+                        ep.includes('murderer') || ep.includes('incarnate')) {
+                        return \`\${sanitizedName} \${escapeHtml(ep)}\`;
                     }
                     // Most other epithets use "the" prefix
-                    return \`\${sanitizedName} the \${escapeHtml(epithet)}\`;
+                    return \`\${sanitizedName} the \${escapeHtml(ep)}\`;
                 });
                 
                 resultsDiv.innerHTML = '<ul class="name-results">' + 
