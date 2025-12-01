@@ -288,6 +288,10 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
     const filterInputs = Object.entries(generator.filters).map(([key, filter]) => {
       // Format option labels better
       const options = filter.options.map(opt => {
+        // Check if there's a custom label for this option
+        if (filter.optionLabels && filter.optionLabels[opt]) {
+          return `<option value="${opt}">${filter.optionLabels[opt]}</option>`;
+        }
         let label = opt.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
         // Special formatting for category names
         if (key === 'category') {
