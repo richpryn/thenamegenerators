@@ -841,11 +841,13 @@
       "isPopular": true,
       "popularRank": 11,
       "filters": {
-        "style": {
-          "label": "Name Style",
+        "category": {
+          "label": "Category",
           "options": [
-            "compound",
-            "alias"
+            "modern",
+            "fantasy_dark",
+            "ethnic_thematic",
+            "single_aliases"
           ]
         }
       },
@@ -1812,13 +1814,13 @@
           },
           {
             "heading": "How to Use Assassin Names",
-            "content": "<p>Assassin names work excellently for:</p><ul><li><strong>Tabletop RPGs:</strong> Create memorable assassin characters for D&D, Pathfinder, or other games</li><li><strong>Creative Writing:</strong> Name assassins, rogues, and shadow operatives in your stories</li><li><strong>Game Development:</strong> Generate assassin names for video games and interactive fiction</li><li><strong>Worldbuilding:</strong> Populate your world with shadow organizations and deadly operatives</li></ul><p>Choose 'compound' for full names that combine prefixes and suffixes, or 'alias' for powerful single-word names that work as complete identities.</p>"
+            "content": "<p>Assassin names work excellently for:</p><ul><li><strong>Tabletop RPGs:</strong> Create memorable assassin characters for D&D, Pathfinder, or other games</li><li><strong>Creative Writing:</strong> Name assassins, rogues, and shadow operatives in your stories</li><li><strong>Game Development:</strong> Generate assassin names for video games and interactive fiction</li><li><strong>Worldbuilding:</strong> Populate your world with shadow organizations and deadly operatives</li></ul><p>Choose a category to match your setting: <strong>Modern</strong> for contemporary operatives, <strong>Fantasy Dark</strong> for gothic and dark fantasy, <strong>Ethnic Thematic</strong> for culturally diverse names, or <strong>Single Aliases</strong> for powerful standalone monikers.</p>"
           }
         ],
         "faqs": [
           {
-            "question": "What's the difference between compound and alias names?",
-            "answer": "Compound names combine prefixes and suffixes to create full names (like 'Agent Shadow' or 'Nightshade'). Alias names are powerful single words that work as complete identities (like 'Oblivion' or 'Phantom'). Choose compound for full names, or alias for memorable monikers."
+            "question": "What's the difference between the categories?",
+            "answer": "Modern names (Agent, Cipher, Shadow, Kane, Mercer) are perfect for contemporary settings, spy thrillers, and cyberpunk. Fantasy Dark names (Night, Void, Ghost, shade, blade, fang) evoke mystical darkness and shadow magic for dark fantasy and gothic settings. Ethnic Thematic names (Kael, Morrigan, Theron, Azrael) draw from various cultures including Greek, Japanese, Norse, and Latin for diverse, culturally rich names. Single Aliases (Oblivion, Vengeance, Phantom, Eclipse) are powerful standalone names that work as complete identities."
           },
           {
             "question": "How does the name combination logic work?",
