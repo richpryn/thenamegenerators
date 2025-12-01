@@ -54,8 +54,18 @@
         </header>
 
         <main>
+            <div class="search-container">
+                <input type="text" id="generator-search" placeholder="Search generators by name, description, or category..." autocomplete="off">
+                <span class="search-icon">🔍</span>
+                <div id="search-results-count" class="search-results-count"></div>
+            </div>
+            
             <div id="generators-list">
                 <!-- Populated by JavaScript -->
+            </div>
+            
+            <div id="no-results" class="no-results" style="display: none;">
+                <p>No generators found matching your search.</p>
             </div>
         </main>
 
@@ -68,6 +78,9 @@
     <script>
         // Set current year
         document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Store all generators data for search
+        let allGeneratorsData = [];
         
         // Load all generators
         (async () => {
@@ -92,19 +105,26 @@
                     const generators = await generator.getGenerators(category.slug);
                     const generatorsArray = Object.entries(generators).map(([key, gen]) => ({
                         key,
+                        categorySlug: category.slug,
+                        categoryName: category.name,
+                        categoryIcon: category.icon,
                         ...gen
                     }));
                     
                     if (generatorsArray.length === 0) continue;
                     
+                    // Store for search
+                    allGeneratorsData.push(...generatorsArray);
+                    
                     // Create category section
                     const categorySection = document.createElement('section');
                     categorySection.className = 'category-section';
+                    categorySection.setAttribute('data-category', category.slug);
                     categorySection.innerHTML = `
                         <h2>${category.icon} ${category.name}</h2>
                         <div class="generators-grid">
                             ${generatorsArray.map(gen => `
-                                <a href="posts/${gen.slug}.html" class="generator-card">
+                                <a href="posts/${gen.slug}.html" class="generator-card" data-title="${gen.title.toLowerCase()}" data-description="${gen.description.toLowerCase()}" data-category="${category.name.toLowerCase()}">
                                     <h3>${gen.icon} ${gen.title}</h3>
                                     <p>${gen.description}</p>
                                 </a>
@@ -113,10 +133,74 @@
                     `;
                     generatorsList.appendChild(categorySection);
                 } catch (e) {
-                    console.error(`Error loading category ${category.slug}:`, e);
+                    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+                        console.error(`Error loading category ${category.slug}:`, e);
+                    }
                 }
             }
         })();
+        
+        // Search functionality
+        const searchInput = document.getElementById('generator-search');
+        const generatorsList = document.getElementById('generators-list');
+        const noResults = document.getElementById('no-results');
+        const resultsCount = document.getElementById('search-results-count');
+        
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            
+            if (query === '') {
+                // Show all generators
+                document.querySelectorAll('.category-section').forEach(section => {
+                    section.style.display = '';
+                });
+                document.querySelectorAll('.generator-card').forEach(card => {
+                    card.style.display = '';
+                });
+                noResults.style.display = 'none';
+                resultsCount.textContent = '';
+                return;
+            }
+            
+            // Filter generators
+            let visibleCount = 0;
+            const categorySections = document.querySelectorAll('.category-section');
+            
+            categorySections.forEach(section => {
+                const cards = section.querySelectorAll('.generator-card');
+                let categoryVisibleCount = 0;
+                
+                cards.forEach(card => {
+                    const title = card.getAttribute('data-title') || '';
+                    const description = card.getAttribute('data-description') || '';
+                    const category = card.getAttribute('data-category') || '';
+                    
+                    if (title.includes(query) || description.includes(query) || category.includes(query)) {
+                        card.style.display = '';
+                        categoryVisibleCount++;
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                
+                // Show/hide category section based on visible cards
+                if (categoryVisibleCount > 0) {
+                    section.style.display = '';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+            
+            // Show/hide no results message
+            if (visibleCount === 0) {
+                noResults.style.display = 'block';
+                resultsCount.textContent = '';
+            } else {
+                noResults.style.display = 'none';
+                resultsCount.textContent = `${visibleCount} generator${visibleCount !== 1 ? 's' : ''} found`;
+            }
+        });
     </script>
 </body>
 </html>
