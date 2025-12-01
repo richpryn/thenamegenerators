@@ -179,6 +179,27 @@ body {
     transform: translateY(-1px);
 }
 
+/* Loading Indicator */
+.loading-indicator {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--text-light);
+}
+
+.loading-indicator p {
+    font-size: 1.125rem;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
 .search-container .search-icon {
     position: absolute;
     left: 1.25rem;
