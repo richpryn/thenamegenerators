@@ -242,3 +242,4 @@ peopleData.generators.fantasy_npc = {
 fs.writeFileSync(peopleFile, JSON.stringify(peopleData, null, 2));
 console.log('✅ Added fantasy NPC generator to people.json');
 
+

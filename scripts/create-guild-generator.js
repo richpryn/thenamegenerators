@@ -164,3 +164,4 @@ orgData.generators.guild = {
 fs.writeFileSync(orgFile, JSON.stringify(orgData, null, 2));
 console.log('\n✅ Added guild generator to organizations.json');
 
+

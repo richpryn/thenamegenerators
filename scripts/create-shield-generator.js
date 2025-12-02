@@ -116,3 +116,4 @@ console.log(`✨ All names formatted as: "The [name] Shield"`);
 console.log(`\n📋 Example names:`);
 formattedShieldNames.slice(0, 10).forEach(name => console.log(`   - ${name}`));
 
+

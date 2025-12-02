@@ -129,3 +129,4 @@ fs.writeFileSync('/tmp/city_parsed.json', JSON.stringify(cityNames.slice(0, 50),
 
 console.log('\nParsed data written to /tmp/company_parsed.json and /tmp/city_parsed.json');
 
+

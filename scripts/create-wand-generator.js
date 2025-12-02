@@ -146,3 +146,4 @@ console.log(`   Template 1: Glacial Spire, Arcane Focus`);
 console.log(`   Template 2: Arcanum, Finger of Fate`);
 console.log(`   Template 3: Elderwood Staff, Voice of the Silent Gods`);
 
+

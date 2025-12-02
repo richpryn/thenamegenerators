@@ -131,3 +131,4 @@ dig www.thenamegenerators.com +short
 5. Wait for SSL certificate (24-48 hours)
 
 
+

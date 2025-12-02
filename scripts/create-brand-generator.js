@@ -421,3 +421,4 @@ orgData.generators.brand = brandGenerator;
 fs.writeFileSync(orgFile, JSON.stringify(orgData, null, 2));
 console.log('✅ Added brand generator to organizations.json');
 
+

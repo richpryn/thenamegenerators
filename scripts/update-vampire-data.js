@@ -77,3 +77,4 @@ console.log(`- Male: ${vampireData.Male_First_Names.length * vampireData.Last_Na
 console.log(`- Female: ${vampireData.Female_First_Names.length * vampireData.Last_Names_Titles.length} combinations`);
 console.log(`- Non-binary: ${vampireData.Non_Binary_First_Names.length * vampireData.Last_Names_Titles.length} combinations`);
 
+

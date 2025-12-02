@@ -146,3 +146,4 @@ console.log(`   Template 1: Sacred Anvil, Thundering Maul`);
 console.log(`   Template 2: Righteous, Fist of the Sky-Father`);
 console.log(`   Template 3: Star-Iron Warhammer, Breaker of Chains`);
 
+

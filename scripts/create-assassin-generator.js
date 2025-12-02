@@ -199,3 +199,4 @@ peopleData.generators.assassin = {
 fs.writeFileSync(peopleFile, JSON.stringify(peopleData, null, 2));
 console.log('\n✅ Added assassin generator to people.json');
 
+

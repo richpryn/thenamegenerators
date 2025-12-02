@@ -146,3 +146,4 @@ console.log(`   Template 1: Shadow Edge, Diamond Rapier`);
 console.log(`   Template 2: Striker, of Visions`);
 console.log(`   Template 3: Emerald Shortsword, Weight of Vows`);
 
+

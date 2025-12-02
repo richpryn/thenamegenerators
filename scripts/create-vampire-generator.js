@@ -244,3 +244,4 @@ peopleData.generators.vampire = {
 fs.writeFileSync(peopleFile, JSON.stringify(peopleData, null, 2));
 console.log('✅ Added vampire generator to people.json');
 
+
