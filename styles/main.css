@@ -87,9 +87,20 @@ body {
     cursor: pointer;
 }
 
-.nav-dropdown-menu {
+/* Create invisible bridge to prevent hover gap */
+.nav-dropdown::before {
+    content: '';
     position: absolute;
     top: 100%;
+    right: 0;
+    left: 0;
+    height: 0.5rem;
+    background: transparent;
+}
+
+.nav-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 0.5rem);
     right: 0;
     background: var(--bg-color);
     border: 1px solid var(--border-color);
@@ -97,12 +108,13 @@ body {
     box-shadow: var(--shadow-hover);
     min-width: 200px;
     padding: 0.5rem 0;
-    margin-top: 0.5rem;
     display: none;
     flex-direction: column;
+    z-index: 1001;
 }
 
-.nav-dropdown:hover .nav-dropdown-menu {
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:hover::before {
     display: flex;
 }
 
