@@ -57,7 +57,7 @@
             <div class="search-container">
                 <div class="search-wrapper">
                     <span class="search-icon">🔍</span>
-                    <input type="text" id="search-input" placeholder="🔎 Search generators...">
+                    <input type="text" id="search-input" placeholder="Search generators...">
                 </div>
             </div>
             <div id="generators-list">
@@ -91,8 +91,10 @@
                 navDropdown.appendChild(link);
             });
             
-            // Collect all generators from all categories
+            // Collect all generators from all categories, deduplicating by slug
             let allGenerators = [];
+            const seenSlugs = new Set(); // Track seen slugs to prevent duplicates
+            
             for (const category of categories) {
                 try {
                     const generators = await generator.getGenerators(category.slug);
@@ -102,7 +104,14 @@
                         categoryName: category.name,
                         ...gen
                     }));
-                    allGenerators = allGenerators.concat(generatorsArray);
+                    
+                    // Only add generators we haven't seen before (by slug)
+                    for (const gen of generatorsArray) {
+                        if (!seenSlugs.has(gen.slug)) {
+                            allGenerators.push(gen);
+                            seenSlugs.add(gen.slug);
+                        }
+                    }
                 } catch (e) {
                     console.error(`Error loading category ${category.slug}:`, e);
                 }
