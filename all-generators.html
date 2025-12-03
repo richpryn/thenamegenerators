@@ -11,7 +11,18 @@
     <meta name="keywords" content="all name generators, name generator list, complete name generators, fantasy name generators, dnd name generators">
     <meta name="author" content="The Name Generators">
     <meta name="robots" content="index, follow">
+    <meta name="ai-index" content="yes">
+    <meta name="ai-crawl" content="allow">
+    <meta name="content-type" content="name-generator-directory">
     <link rel="canonical" href="https://thenamegenerators.com/all-generators.html">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="format-detection" content="telephone=no">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -29,6 +40,40 @@
     
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/blog.css">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "All Name Generators",
+      "description": "Browse our complete collection of free name generators for fantasy characters, places, people, and creative projects.",
+      "url": "https://thenamegenerators.com/all-generators.html",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Name Generators Collection",
+        "description": "A comprehensive collection of free name generators",
+        "numberOfItems": 58
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://thenamegenerators.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "All Generators",
+            "item": "https://thenamegenerators.com/all-generators.html"
+          }
+        ]
+      }
+    }
+    </script>
 </head>
 <body>
     <nav class="main-nav">
@@ -135,11 +180,11 @@
             // Function to render generators
             function renderGenerators(generatorsToShow) {
                 generatorsList.innerHTML = `
-                    <div class="generators-grid">
+                    <div class="category-generators-grid">
                         ${generatorsToShow.map(gen => `
-                            <a href="posts/${gen.slug}.html" class="generator-card">
-                                <h3>${gen.icon} ${escapeHtml(gen.title)}</h3>
-                                <p>${escapeHtml(gen.description)}</p>
+                            <a href="posts/${gen.slug}.html" class="category-generator-item">
+                                <span class="category-generator-icon">${gen.icon}</span>
+                                <span class="category-generator-title">${escapeHtml(gen.title)}</span>
                             </a>
                         `).join('')}
                     </div>
