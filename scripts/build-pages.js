@@ -311,18 +311,14 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
     filterHTML = `<div class="filters">${nameInputHTML}</div>`;
   }
 
-  // Build related generators HTML
-  let relatedHTML = '';
-  if (generator.relatedGenerators && generator.relatedGenerators.length > 0) {
-    // This will be populated by JavaScript on the client side
-    relatedHTML = `
+  // Build related generators HTML (always show, populated dynamically)
+  const relatedHTML = `
       <section class="related-section">
         <h2>Related Name Generators</h2>
         <div class="related-grid" id="related-generators">
           <!-- Populated by JavaScript -->
         </div>
       </section>`;
-  }
 
   // Build article sections HTML
   let sectionsHTML = '';
@@ -649,8 +645,8 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
             }
         });
         
-        // Load related generators
-        ${generator.relatedGenerators ? `(async () => {
+        // Load related generators (always show, dynamically calculated)
+        (async () => {
             const related = await window.nameGenerator.getRelatedGenerators(categorySlug, generatorKey);
             const relatedDiv = document.getElementById('related-generators');
             if (relatedDiv && related.length > 0) {
@@ -660,8 +656,10 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
                         <p>\${gen.description}</p>
                     </a>\`
                 ).join('');
+            } else if (relatedDiv) {
+                relatedDiv.innerHTML = '<p>No related generators found.</p>';
             }
-        })();` : ''}
+        })();
     </script>
 </body>
 </html>`;

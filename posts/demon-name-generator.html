@@ -75,8 +75,8 @@
       "url": "https://thenamegenerators.com/logo.png"
     }
   },
-  "datePublished": "2025-12-03T10:51:05.324Z",
-  "dateModified": "2025-12-03T10:51:05.324Z",
+  "datePublished": "2025-12-03T10:51:41.991Z",
+  "dateModified": "2025-12-03T10:51:41.991Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://thenamegenerators.com/posts/demon-name-generator.html"
@@ -434,7 +434,7 @@
             }
         });
         
-        // Load related generators
+        // Load related generators (always show, dynamically calculated)
         (async () => {
             const related = await window.nameGenerator.getRelatedGenerators(categorySlug, generatorKey);
             const relatedDiv = document.getElementById('related-generators');
@@ -445,6 +445,8 @@
                         <p>${gen.description}</p>
                     </a>`
                 ).join('');
+            } else if (relatedDiv) {
+                relatedDiv.innerHTML = '<p>No related generators found.</p>';
             }
         })();
     </script>

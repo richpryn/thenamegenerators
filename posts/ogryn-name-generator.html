@@ -75,8 +75,8 @@
       "url": "https://thenamegenerators.com/logo.png"
     }
   },
-  "datePublished": "2025-12-03T10:51:05.335Z",
-  "dateModified": "2025-12-03T10:51:05.335Z",
+  "datePublished": "2025-12-03T10:51:42.023Z",
+  "dateModified": "2025-12-03T10:51:42.023Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://thenamegenerators.com/posts/ogryn-name-generator.html"
@@ -413,6 +413,12 @@
         </div>
       </section>
             
+      <section class="related-section">
+        <h2>Related Name Generators</h2>
+        <div class="related-grid" id="related-generators">
+          <!-- Populated by JavaScript -->
+        </div>
+      </section>
         </main>
 
         <footer class="site-footer">
@@ -462,7 +468,7 @@
             }
         });
         
-        // Load related generators
+        // Load related generators (always show, dynamically calculated)
         (async () => {
             const related = await window.nameGenerator.getRelatedGenerators(categorySlug, generatorKey);
             const relatedDiv = document.getElementById('related-generators');
@@ -473,6 +479,8 @@
                         <p>${gen.description}</p>
                     </a>`
                 ).join('');
+            } else if (relatedDiv) {
+                relatedDiv.innerHTML = '<p>No related generators found.</p>';
             }
         })();
     </script>
