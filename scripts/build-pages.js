@@ -334,6 +334,15 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
           <!-- Populated by JavaScript -->
         </div>
       </section>`;
+  
+  // Build category generators grid HTML (always show, populated dynamically)
+  const categoryGeneratorsHTML = `
+      <section class="category-generators-section">
+        <h2>All ${category.name} Name Generators</h2>
+        <div class="category-generators-grid" id="category-generators">
+          <!-- Populated by JavaScript -->
+        </div>
+      </section>`;
 
   // Build article sections HTML
   let sectionsHTML = '';
@@ -490,6 +499,7 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
 
             ${faqsHTML}
             ${relatedHTML}
+            ${categoryGeneratorsHTML}
         </main>
 
         <footer class="site-footer">
@@ -681,6 +691,41 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
                 ).join('');
             } else if (relatedDiv) {
                 relatedDiv.innerHTML = '<p>No related generators found.</p>';
+            }
+        })();
+        
+        // Load category generators grid
+        (async () => {
+            // Helper function to escape HTML
+            const escapeHtml = (text) => {
+                if (!text) return '';
+                const div = document.createElement('div');
+                div.textContent = text;
+                return div.innerHTML;
+            };
+            
+            try {
+                const generators = await window.nameGenerator.getGenerators(categorySlug);
+                const generatorsArray = Object.entries(generators)
+                    .map(([key, gen]) => ({
+                        key,
+                        ...gen
+                    }))
+                    .filter(gen => gen.key !== generatorKey); // Exclude current generator
+                
+                const categoryGeneratorsDiv = document.getElementById('category-generators');
+                if (categoryGeneratorsDiv && generatorsArray.length > 0) {
+                    categoryGeneratorsDiv.innerHTML = generatorsArray.map(gen => 
+                        \`<a href="../posts/\${gen.slug}.html" class="category-generator-item">
+                            <span class="category-generator-icon">\${gen.icon}</span>
+                            <span class="category-generator-title">\${escapeHtml(gen.title)}</span>
+                        </a>\`
+                    ).join('');
+                } else if (categoryGeneratorsDiv) {
+                    categoryGeneratorsDiv.innerHTML = '<p>No other generators in this category.</p>';
+                }
+            } catch (error) {
+                console.error('Error loading category generators:', error);
             }
         })();
     </script>

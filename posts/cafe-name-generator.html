@@ -75,8 +75,8 @@
       "url": "https://thenamegenerators.com/logo.png"
     }
   },
-  "datePublished": "2025-12-03T10:55:33.144Z",
-  "dateModified": "2025-12-03T10:55:33.144Z",
+  "datePublished": "2025-12-03T10:58:54.485Z",
+  "dateModified": "2025-12-03T10:58:54.485Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://thenamegenerators.com/posts/cafe-name-generator.html"
@@ -418,6 +418,13 @@
           <!-- Populated by JavaScript -->
         </div>
       </section>
+            
+      <section class="category-generators-section">
+        <h2>All Places Name Generators</h2>
+        <div class="category-generators-grid" id="category-generators">
+          <!-- Populated by JavaScript -->
+        </div>
+      </section>
         </main>
 
         <footer class="site-footer">
@@ -488,6 +495,41 @@
                 ).join('');
             } else if (relatedDiv) {
                 relatedDiv.innerHTML = '<p>No related generators found.</p>';
+            }
+        })();
+        
+        // Load category generators grid
+        (async () => {
+            // Helper function to escape HTML
+            const escapeHtml = (text) => {
+                if (!text) return '';
+                const div = document.createElement('div');
+                div.textContent = text;
+                return div.innerHTML;
+            };
+            
+            try {
+                const generators = await window.nameGenerator.getGenerators(categorySlug);
+                const generatorsArray = Object.entries(generators)
+                    .map(([key, gen]) => ({
+                        key,
+                        ...gen
+                    }))
+                    .filter(gen => gen.key !== generatorKey); // Exclude current generator
+                
+                const categoryGeneratorsDiv = document.getElementById('category-generators');
+                if (categoryGeneratorsDiv && generatorsArray.length > 0) {
+                    categoryGeneratorsDiv.innerHTML = generatorsArray.map(gen => 
+                        `<a href="../posts/${gen.slug}.html" class="category-generator-item">
+                            <span class="category-generator-icon">${gen.icon}</span>
+                            <span class="category-generator-title">${escapeHtml(gen.title)}</span>
+                        </a>`
+                    ).join('');
+                } else if (categoryGeneratorsDiv) {
+                    categoryGeneratorsDiv.innerHTML = '<p>No other generators in this category.</p>';
+                }
+            } catch (error) {
+                console.error('Error loading category generators:', error);
             }
         })();
     </script>
