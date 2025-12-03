@@ -134,6 +134,8 @@
             
             // Populate category dropdown
             const navDropdown = document.getElementById('category-dropdown');
+            // Clear any existing items first to prevent duplicates
+            navDropdown.innerHTML = '';
             categories.forEach(cat => {
                 const link = document.createElement('a');
                 link.href = `categories/${cat.slug}-names.html`;

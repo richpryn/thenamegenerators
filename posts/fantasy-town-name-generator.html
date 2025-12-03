@@ -75,8 +75,8 @@
       "url": "https://thenamegenerators.com/logo.png"
     }
   },
-  "datePublished": "2025-12-03T15:21:58.482Z",
-  "dateModified": "2025-12-03T15:21:58.482Z",
+  "datePublished": "2025-12-03T15:34:54.384Z",
+  "dateModified": "2025-12-03T15:34:54.384Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://thenamegenerators.com/posts/fantasy-town-name-generator.html"
@@ -451,6 +451,8 @@
         (async () => {
             const categories = await window.nameGenerator.getCategories();
             const dropdown = document.getElementById('category-dropdown');
+            // Clear any existing items first to prevent duplicates
+            dropdown.innerHTML = '';
             categories.forEach(cat => {
                 const link = document.createElement('a');
                 link.href = `../categories/${cat.slug}-names.html`;
