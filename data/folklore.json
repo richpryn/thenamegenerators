@@ -7,7 +7,78 @@
     "seoDescription": "Generate authentic names from folklore, mythology, and legends. Perfect for mythical creatures, legendary heroes, and folkloric characters.",
     "navLabel": "Folklore Names"
   },
-  "generators": {}
+  "generators": {
+    "fairy": {
+      "title": "Fairy Name Generator",
+      "slug": "fairy-name-generator",
+      "description": "Generate enchanting fairy names with gender filters and format options. Create first names, full names, or full names with epithets perfect for fantasy writing, D&D, and folklore-inspired characters.",
+      "seoKeywords": "fairy names, fairy name generator, fae names, sidhe names, fairy character names, fantasy fairy names, dnd fairy names, folklore names",
+      "icon": "🧚",
+      "isPopular": true,
+      "popularRank": 9,
+      "filters": {
+        "gender": {
+          "label": "Gender",
+          "options": [
+            "male",
+            "female",
+            "non_binary"
+          ]
+        },
+        "format": {
+          "label": "Name Format",
+          "options": [
+            "first_name",
+            "full_name",
+            "full_name_epithet"
+          ],
+          "optionLabels": {
+            "first_name": "First Name Only (e.g., Lorcan, Lunara, Leafsong)",
+            "full_name": "Full Name (e.g., Lorcan Moonwhisper, Lunara Starfall)",
+            "full_name_epithet": "Full Name with Epithet (e.g., Lorcan Moonwhisper, Keeper of the First Thistle)"
+          }
+        }
+      },
+      "data": {
+        "_reference": "fantasy:fairy"
+      },
+      "article": {
+        "hero": {
+          "title": "🧚 Fairy Name Generator",
+          "tagline": "Generate enchanting fairy names with gender filters and format options. Create first names, full names, or full names with epithets perfect for fantasy writing, D&D, and folklore-inspired characters."
+        },
+        "intro": "Fairy names carry the magic of the enchanted woods, the mystery of the Sidhe, and the ethereal beauty of the Fae. From the lyrical 'Lunara' to the epic 'Lorcan Moonwhisper, Keeper of the First Thistle', fairy names tell stories of magical beings who dance in moonlit glades and guard ancient secrets. Our **Fairy Name Generator** creates authentic fairy names using three distinct formats: First Names Only (Lorcan, Lunara, Leafsong), Full Names (Lorcan Moonwhisper, Lunara Starfall), and Full Names with Epithets (Lorcan Moonwhisper, Keeper of the First Thistle), with gender filters for Male, Female, and Non-Binary fairies, drawing from Celtic, Nordic, and naturalistic folklore traditions to create names that resonate with enchantment and otherworldly beauty.",
+        "sections": [],
+        "faqs": []
+      },
+      "relatedGenerators": [
+        "fairy_town"
+      ]
+    },
+    "fairy_town": {
+      "title": "Fairy Town Name Generator",
+      "slug": "fairy-town-name-generator",
+      "description": "Generate enchanting fairy town names perfect for fantasy worldbuilding, D&D campaigns, and folklore-inspired settings. Create magical place names that capture the essence of the Fae realm.",
+      "seoKeywords": "fairy town names, fae town names, fairy place names, fantasy town names, fairy village names, sidhe town names",
+      "icon": "🧚‍♀️",
+      "isPopular": false,
+      "data": {
+        "_reference": "fantasy:fairy_town"
+      },
+      "article": {
+        "hero": {
+          "title": "🧚‍♀️ Fairy Town Name Generator",
+          "tagline": "Generate enchanting fairy town names perfect for fantasy worldbuilding, D&D campaigns, and folklore-inspired settings."
+        },
+        "intro": "Fairy town names capture the magic and mystery of the Fae realm. From 'Moonwhisper' to 'Silvermist', these names evoke enchanted glades, mystical forests, and otherworldly settlements where fairies dance under moonlit skies. Our **Fairy Town Name Generator** creates authentic fairy place names that blend Celtic, Nordic, and naturalistic folklore traditions, perfect for creating magical settlements in your fantasy world.",
+        "sections": [],
+        "faqs": []
+      },
+      "relatedGenerators": [
+        "fairy"
+      ]
+    }
+  }
 }
 
 

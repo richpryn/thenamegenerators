@@ -54,6 +54,9 @@
         </header>
 
         <main>
+            <div class="search-container" style="margin-bottom: 2rem;">
+                <input type="text" id="search-input" placeholder="Search generators..." style="width: 100%; padding: 0.75rem; font-size: 1rem; border: 2px solid #ddd; border-radius: 4px;">
+            </div>
             <div id="generators-list">
                 <!-- Populated by JavaScript -->
             </div>
@@ -74,6 +77,7 @@
             const generator = window.nameGenerator;
             const categories = await generator.getCategories();
             const generatorsList = document.getElementById('generators-list');
+            const searchInput = document.getElementById('search-input');
             
             // Populate category dropdown
             const navDropdown = document.getElementById('category-dropdown');
@@ -84,36 +88,72 @@
                 navDropdown.appendChild(link);
             });
             
-            // Group generators by category
+            // Collect all generators from all categories
+            let allGenerators = [];
             for (const category of categories) {
                 try {
                     const generators = await generator.getGenerators(category.slug);
                     const generatorsArray = Object.entries(generators).map(([key, gen]) => ({
                         key,
+                        categorySlug: category.slug,
+                        categoryName: category.name,
                         ...gen
                     }));
-                    
-                    if (generatorsArray.length === 0) continue;
-                    
-                    // Create category section
-                    const categorySection = document.createElement('section');
-                    categorySection.className = 'category-section';
-                    categorySection.innerHTML = `
-                        <h2>${category.icon} ${category.name}</h2>
-                        <div class="generators-grid">
-                            ${generatorsArray.map(gen => `
-                                <a href="posts/${gen.slug}.html" class="generator-card">
-                                    <h3>${gen.icon} ${gen.title}</h3>
-                                    <p>${gen.description}</p>
-                                </a>
-                            `).join('')}
-                        </div>
-                    `;
-                    generatorsList.appendChild(categorySection);
+                    allGenerators = allGenerators.concat(generatorsArray);
                 } catch (e) {
                     console.error(`Error loading category ${category.slug}:`, e);
                 }
             }
+            
+            // Sort generators alphabetically by title
+            allGenerators.sort((a, b) => {
+                // Remove emoji and compare titles
+                const titleA = a.title.replace(/[^\w\s]/g, '').trim().toLowerCase();
+                const titleB = b.title.replace(/[^\w\s]/g, '').trim().toLowerCase();
+                return titleA.localeCompare(titleB);
+            });
+            
+            // Function to render generators
+            function renderGenerators(generatorsToShow) {
+                generatorsList.innerHTML = `
+                    <div class="generators-grid">
+                        ${generatorsToShow.map(gen => `
+                            <a href="posts/${gen.slug}.html" class="generator-card">
+                                <h3>${gen.icon} ${gen.title}</h3>
+                                <p>${gen.description}</p>
+                            </a>
+                        `).join('')}
+                    </div>
+                `;
+            }
+            
+            // Initial render
+            renderGenerators(allGenerators);
+            
+            // Search functionality
+            searchInput.addEventListener('input', (e) => {
+                const searchTerm = e.target.value.toLowerCase().trim();
+                
+                if (searchTerm === '') {
+                    renderGenerators(allGenerators);
+                    return;
+                }
+                
+                // Filter generators by title, description, or keywords
+                const filtered = allGenerators.filter(gen => {
+                    const title = gen.title.toLowerCase();
+                    const description = gen.description.toLowerCase();
+                    const keywords = (gen.seoKeywords || '').toLowerCase();
+                    const category = gen.categoryName.toLowerCase();
+                    
+                    return title.includes(searchTerm) || 
+                           description.includes(searchTerm) || 
+                           keywords.includes(searchTerm) ||
+                           category.includes(searchTerm);
+                });
+                
+                renderGenerators(filtered);
+            });
         })();
     </script>
 </body>
