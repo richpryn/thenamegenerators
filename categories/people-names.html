@@ -35,7 +35,12 @@
     <nav class="main-nav">
         <div class="nav-container">
             <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <div class="nav-links">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links" id="nav-links">
                 <a href="../index.html">Home</a>
                 <a href="../all-generators.html">All Generators</a>
                 <div class="nav-dropdown">
@@ -52,7 +57,7 @@
         <header class="hero">
             <h1>👥 People</h1>
             <p>Name generators for real-world names from different cultures and time periods</p>
-            <p class="generator-count">2 generators available</p>
+            <p class="generator-count">3 generators available</p>
         </header>
 
         <main>
@@ -67,6 +72,12 @@
     <a href="../posts/assassin-name-generator.html" class="generator-card">
       <h3>🗡️ Assassin Name Generator</h3>
       <p>Generate deadly assassin names by combining modern, fantasy dark, and ethnic thematic components. Create compound names or powerful single-word aliases perfect for assassins, rogues, and shadow operatives.</p>
+    </a>
+  
+    
+    <a href="../posts/vampire-name-generator.html" class="generator-card">
+      <h3>🧛 Vampire Name Generator</h3>
+      <p>Generate elegant and dark vampire names perfect for fantasy writing, D&amp;D, and gothic stories. Choose from male, female, or non-binary names with traditional vampire naming conventions.</p>
     </a>
   
             </div>
@@ -90,6 +101,37 @@
                 dropdown.appendChild(link);
             });
         })();
+        
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+        const categoryDropdown = document.querySelector('.nav-dropdown');
+        
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+            
+            // Close menu when clicking on a link
+            navLinks.addEventListener('click', (e) => {
+                if (e.target.tagName === 'A' && !e.target.classList.contains('nav-dropdown-toggle')) {
+                    menuToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                }
+            });
+            
+            // Handle dropdown toggle on mobile
+            const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
+            if (dropdownToggle) {
+                dropdownToggle.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        categoryDropdown.classList.toggle('active');
+                    }
+                });
+            }
+        }
     </script>
 </body>
 </html>

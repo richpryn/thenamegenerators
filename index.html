@@ -94,7 +94,12 @@
     <nav class="main-nav">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <div class="nav-links">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links" id="nav-links">
                 <a href="index.html">Home</a>
                 <a href="all-generators.html">All Generators</a>
                 <div class="nav-dropdown">
@@ -371,6 +376,37 @@
                 resultsDiv.innerHTML = '<p class="error">Error generating names. Please try again.</p>';
             }
         });
+        
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+        const categoryDropdown = document.querySelector('.nav-dropdown');
+        
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+            
+            // Close menu when clicking on a link
+            navLinks.addEventListener('click', (e) => {
+                if (e.target.tagName === 'A' && !e.target.classList.contains('nav-dropdown-toggle')) {
+                    menuToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                }
+            });
+            
+            // Handle dropdown toggle on mobile
+            const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
+            if (dropdownToggle) {
+                dropdownToggle.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        categoryDropdown.classList.toggle('active');
+                    }
+                });
+            }
+        }
     </script>
 </body>
 </html>
