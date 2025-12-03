@@ -34,12 +34,7 @@
     <nav class="main-nav">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
+            <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="all-generators.html">All Generators</a>
                 <div class="nav-dropdown">
@@ -59,20 +54,8 @@
         </header>
 
         <main>
-            <div class="search-container">
-                <input type="text" id="generator-search" placeholder="Search generators by name, description, or category..." autocomplete="off" maxlength="100" aria-label="Search generators">
-                <span class="search-icon" aria-hidden="true">🔍</span>
-                <div id="search-results-count" class="search-results-count" aria-live="polite" aria-atomic="true"></div>
-            </div>
-            
             <div id="generators-list">
-                <div id="loading-indicator" class="loading-indicator">
-                    <p>Loading generators...</p>
-                </div>
-            </div>
-            
-            <div id="no-results" class="no-results" style="display: none;">
-                <p>No generators found matching your search.</p>
+                <!-- Populated by JavaScript -->
             </div>
         </main>
 
@@ -83,337 +66,55 @@
 
     <script src="lib/generator.js"></script>
     <script>
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.getElementById('nav-links');
-        const categoryDropdown = document.querySelector('.nav-dropdown');
-        
-        if (menuToggle) {
-            menuToggle.addEventListener('click', () => {
-                menuToggle.classList.toggle('active');
-                navLinks.classList.toggle('active');
-            });
-            
-            // Close menu when clicking on a link
-            navLinks.addEventListener('click', (e) => {
-                if (e.target.tagName === 'A' && !e.target.classList.contains('nav-dropdown-toggle')) {
-                    menuToggle.classList.remove('active');
-                    navLinks.classList.remove('active');
-                }
-            });
-            
-            // Handle dropdown toggle on mobile
-            const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
-            if (dropdownToggle) {
-                dropdownToggle.addEventListener('click', (e) => {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        categoryDropdown.classList.toggle('active');
-                    }
-                });
-            }
-        }
-        
         // Set current year
         document.getElementById('current-year').textContent = new Date().getFullYear();
         
-        // Store all generators data for search
-        let allGeneratorsData = [];
-        
-        // HTML escape function for security
-        const escapeHtml = (text) => {
-            if (typeof text !== 'string') return '';
-            const div = document.createElement('div');
-            div.textContent = text;
-            return div.innerHTML;
-        };
-        
         // Load all generators
         (async () => {
-            try {
-                const generator = window.nameGenerator;
-                if (!generator) {
-                    throw new Error('Name generator library not loaded');
-                }
-                
-                const categories = await generator.getCategories();
-                if (!categories || !Array.isArray(categories)) {
-                    throw new Error('Invalid categories data');
-                }
-                
-                const generatorsList = document.getElementById('generators-list');
-                if (!generatorsList) {
-                    throw new Error('Generators list element not found');
-                }
-                
-                // Populate category dropdown
-                const navDropdown = document.getElementById('category-dropdown');
-                if (navDropdown) {
-                    // Clear any existing items first to prevent duplicates
-                    navDropdown.innerHTML = '';
-                    categories.forEach(cat => {
-                        const link = document.createElement('a');
-                        link.href = `categories/${escapeHtml(cat.slug)}-names.html`;
-                        link.textContent = `${cat.icon || ''} ${escapeHtml(cat.navLabel || cat.name || '')}`;
-                        navDropdown.appendChild(link);
-                    });
-                }
-                
-                // Load all categories in parallel for better performance
-                const categoryPromises = categories.map(async (category) => {
-                    try {
-                        const generators = await generator.getGenerators(category.slug);
-                        if (!generators || typeof generators !== 'object') {
-                            return null;
-                        }
-                        
-                        const generatorsArray = Object.entries(generators).map(([key, gen]) => ({
-                            key: escapeHtml(key),
-                            categorySlug: escapeHtml(category.slug),
-                            categoryName: escapeHtml(category.name || ''),
-                            categoryIcon: category.icon || '',
-                            title: escapeHtml(gen.title || ''),
-                            description: escapeHtml(gen.description || ''),
-                            slug: escapeHtml(gen.slug || key),
-                            icon: gen.icon || ''
-                        }));
-                        
-                        if (generatorsArray.length === 0) return null;
-                        
-                        return {
-                            category: category,
-                            generators: generatorsArray
-                        };
-                    } catch (e) {
-                        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-                            console.error(`Error loading category ${category.slug}:`, e);
-                        }
-                        return null;
-                    }
-                });
-                
-                // Wait for all categories to load in parallel
-                const categoryResults = await Promise.all(categoryPromises);
-                
-                // Use DocumentFragment to batch DOM updates for better performance
-                const fragment = document.createDocumentFragment();
-                
-                // Process all loaded categories
-                categoryResults.forEach(result => {
-                    if (!result) return;
+            const generator = window.nameGenerator;
+            const categories = await generator.getCategories();
+            const generatorsList = document.getElementById('generators-list');
+            
+            // Populate category dropdown
+            const navDropdown = document.getElementById('category-dropdown');
+            categories.forEach(cat => {
+                const link = document.createElement('a');
+                link.href = `categories/${cat.slug}-names.html`;
+                link.textContent = `${cat.icon} ${cat.navLabel}`;
+                navDropdown.appendChild(link);
+            });
+            
+            // Group generators by category
+            for (const category of categories) {
+                try {
+                    const generators = await generator.getGenerators(category.slug);
+                    const generatorsArray = Object.entries(generators).map(([key, gen]) => ({
+                        key,
+                        ...gen
+                    }));
                     
-                    const { category, generators } = result;
+                    if (generatorsArray.length === 0) continue;
                     
-                    // Store for search
-                    allGeneratorsData.push(...generators);
-                    
-                    // Create category section using safe DOM methods
+                    // Create category section
                     const categorySection = document.createElement('section');
                     categorySection.className = 'category-section';
-                    categorySection.setAttribute('data-category', category.slug);
-                    
-                    const h2 = document.createElement('h2');
-                    h2.textContent = `${category.icon || ''} ${category.name || ''}`;
-                    categorySection.appendChild(h2);
-                    
-                    const grid = document.createElement('div');
-                    grid.className = 'generators-grid';
-                    
-                    generators.forEach(gen => {
-                        const card = document.createElement('a');
-                        card.href = `posts/${gen.slug}.html`;
-                        card.className = 'generator-card';
-                        card.setAttribute('data-title', (gen.title || '').toLowerCase());
-                        card.setAttribute('data-description', (gen.description || '').toLowerCase());
-                        card.setAttribute('data-category', (gen.categoryName || '').toLowerCase());
-                        
-                        const h3 = document.createElement('h3');
-                        h3.textContent = `${gen.icon || ''} ${gen.title || ''}`;
-                        card.appendChild(h3);
-                        
-                        const p = document.createElement('p');
-                        p.textContent = gen.description || '';
-                        card.appendChild(p);
-                        
-                        grid.appendChild(card);
-                    });
-                    
-                    categorySection.appendChild(grid);
-                    fragment.appendChild(categorySection);
-                });
-                
-                // Remove loading indicator
-                const loadingIndicator = document.getElementById('loading-indicator');
-                if (loadingIndicator) {
-                    loadingIndicator.remove();
-                }
-                
-                // Append all at once to minimize reflows
-                generatorsList.appendChild(fragment);
-            } catch (e) {
-                if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-                    console.error('Error loading generators:', e);
-                }
-                const generatorsList = document.getElementById('generators-list');
-                if (generatorsList) {
-                    generatorsList.innerHTML = '<p class="error">Error loading generators. Please refresh the page.</p>';
+                    categorySection.innerHTML = `
+                        <h2>${category.icon} ${category.name}</h2>
+                        <div class="generators-grid">
+                            ${generatorsArray.map(gen => `
+                                <a href="posts/${gen.slug}.html" class="generator-card">
+                                    <h3>${gen.icon} ${gen.title}</h3>
+                                    <p>${gen.description}</p>
+                                </a>
+                            `).join('')}
+                        </div>
+                    `;
+                    generatorsList.appendChild(categorySection);
+                } catch (e) {
+                    console.error(`Error loading category ${category.slug}:`, e);
                 }
             }
         })();
-        
-        // Search functionality with security and error handling
-        const searchInput = document.getElementById('generator-search');
-        const generatorsList = document.getElementById('generators-list');
-        const noResults = document.getElementById('no-results');
-        const resultsCount = document.getElementById('search-results-count');
-        
-        // Validate elements exist
-        if (!searchInput || !generatorsList) {
-            if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-                console.error('Search elements not found');
-            }
-        } else {
-            // Add input validation - max length to prevent abuse
-            searchInput.setAttribute('maxlength', '100');
-            
-            // Debounce function to limit search frequency
-            let searchTimeout;
-            const debounceSearch = (callback, delay = 150) => {
-                clearTimeout(searchTimeout);
-                searchTimeout = setTimeout(callback, delay);
-            };
-            
-            searchInput.addEventListener('input', (e) => {
-                if (!e || !e.target) return;
-                
-                // Sanitize and validate input
-                let query = String(e.target.value || '').trim();
-                
-                // Remove potentially dangerous characters (defense in depth)
-                query = query.replace(/[<>]/g, '');
-                
-                // Limit length
-                if (query.length > 100) {
-                    query = query.substring(0, 100);
-                    e.target.value = query;
-                }
-                
-                // Normalize to lowercase for search
-                query = query.toLowerCase();
-                
-                // Debounce the search for performance
-                debounceSearch(() => {
-                    try {
-                        if (query === '') {
-                            // Show all generators
-                            const sections = document.querySelectorAll('.category-section');
-                            const cards = document.querySelectorAll('.generator-card');
-                            
-                            sections.forEach(section => {
-                                if (section && section.style) {
-                                    section.style.display = '';
-                                }
-                            });
-                            
-                            cards.forEach(card => {
-                                if (card && card.style) {
-                                    card.style.display = '';
-                                }
-                            });
-                            
-                            if (noResults && noResults.style) {
-                                noResults.style.display = 'none';
-                            }
-                            
-                            if (resultsCount) {
-                                resultsCount.textContent = '';
-                            }
-                            return;
-                        }
-                        
-                        // Filter generators
-                        let visibleCount = 0;
-                        const categorySections = document.querySelectorAll('.category-section');
-                        
-                        if (!categorySections || categorySections.length === 0) {
-                            return;
-                        }
-                        
-                        categorySections.forEach(section => {
-                            if (!section) return;
-                            
-                            const cards = section.querySelectorAll('.generator-card');
-                            if (!cards || cards.length === 0) return;
-                            
-                            let categoryVisibleCount = 0;
-                            
-                            cards.forEach(card => {
-                                if (!card) return;
-                                
-                                const title = String(card.getAttribute('data-title') || '').toLowerCase();
-                                const description = String(card.getAttribute('data-description') || '').toLowerCase();
-                                const category = String(card.getAttribute('data-category') || '').toLowerCase();
-                                
-                                // Safe string matching
-                                const matches = title.includes(query) || 
-                                               description.includes(query) || 
-                                               category.includes(query);
-                                
-                                if (matches) {
-                                    if (card.style) {
-                                        card.style.display = '';
-                                    }
-                                    categoryVisibleCount++;
-                                    visibleCount++;
-                                } else {
-                                    if (card.style) {
-                                        card.style.display = 'none';
-                                    }
-                                }
-                            });
-                            
-                            // Show/hide category section based on visible cards
-                            if (section.style) {
-                                section.style.display = categoryVisibleCount > 0 ? '' : 'none';
-                            }
-                        });
-                        
-                        // Show/hide no results message
-                        if (noResults && noResults.style) {
-                            noResults.style.display = visibleCount === 0 ? 'block' : 'none';
-                        }
-                        
-                        // Update results count safely
-                        if (resultsCount) {
-                            if (visibleCount === 0) {
-                                resultsCount.textContent = '';
-                            } else {
-                                const countText = `${visibleCount} generator${visibleCount !== 1 ? 's' : ''} found`;
-                                resultsCount.textContent = countText;
-                            }
-                        }
-                    } catch (error) {
-                        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-                            console.error('Search error:', error);
-                        }
-                        // Fail gracefully - show all generators on error
-                        if (generatorsList) {
-                            const sections = document.querySelectorAll('.category-section');
-                            const cards = document.querySelectorAll('.generator-card');
-                            sections.forEach(s => s.style && (s.style.display = ''));
-                            cards.forEach(c => c.style && (c.style.display = ''));
-                        }
-                    }
-                });
-            });
-            
-            // Prevent form submission on Enter key
-            searchInput.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter') {
-                    e.preventDefault();
-                }
-            });
-        }
     </script>
 </body>
 </html>

@@ -48,24 +48,8 @@
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="format-detection" content="telephone=no">
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="477280238" />
-    
-    <!-- Security Headers -->
-    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
-    <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp">
-    
     <!-- Content Security Policy (CSP) - Note: Some headers need server configuration -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com;">
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R34WKHG3SR"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-R34WKHG3SR');
-    </script>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self';">
     
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -91,8 +75,8 @@
       "url": "https://thenamegenerators.com/logo.png"
     }
   },
-  "datePublished": "2025-12-02T16:39:21.917Z",
-  "dateModified": "2025-12-02T16:39:21.917Z",
+  "datePublished": "2025-12-03T10:43:21.654Z",
+  "dateModified": "2025-12-03T10:43:21.654Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://thenamegenerators.com/posts/demon-epithet-generator.html"
@@ -286,12 +270,7 @@
     <nav class="main-nav">
         <div class="nav-container">
             <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
+            <div class="nav-links">
                 <a href="../index.html">Home</a>
                 <a href="../all-generators.html">All Generators</a>
                 <div class="nav-dropdown">
@@ -319,20 +298,16 @@
                     <div class="simple-generator">
                         <div class="filters">
           <div class="filter-group">
-            <label for="character-name">Demon Name:</label>
-            <input type="text" id="character-name" name="character-name" placeholder="Enter your demon's name" class="name-input" maxlength="50" pattern="[^<>]*" title="Character name cannot contain < or >">
-          </div>
-          <div class="filter-group">
             <label for="filter-category">Epithet Category:</label>
             <select id="filter-category" name="category">
-              <option value="power_status">Power & Status</option>
-            <option value="sin_vice">Sin & Vice</option>
-            <option value="destruction_violence">Destruction & Violence</option>
-            <option value="death_darkness">Death & Darkness</option>
-            <option value="elemental_domain">Elemental & Domain</option>
+              <option value="power_status">Power Status</option>
+            <option value="sin_vice">Sin Vice</option>
+            <option value="destruction_violence">Destruction Violence</option>
+            <option value="death_darkness">Death Darkness</option>
+            <option value="elemental_domain">Elemental Domain</option>
             <option value="physical_description">Physical Description</option>
             <option value="behavioral">Behavioral</option>
-            <option value="special_unique">Special & Unique</option>
+            <option value="special_unique">Special Unique</option>
             </select>
           </div></div>
                         <div class="generator-controls">
@@ -434,37 +409,6 @@
 
     <script src="../lib/generator.js"></script>
     <script>
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.getElementById('nav-links');
-        const categoryDropdown = document.querySelector('.nav-dropdown');
-        
-        if (menuToggle) {
-            menuToggle.addEventListener('click', () => {
-                menuToggle.classList.toggle('active');
-                navLinks.classList.toggle('active');
-            });
-            
-            // Close menu when clicking on a link
-            navLinks.addEventListener('click', (e) => {
-                if (e.target.tagName === 'A' && !e.target.classList.contains('nav-dropdown-toggle')) {
-                    menuToggle.classList.remove('active');
-                    navLinks.classList.remove('active');
-                }
-            });
-            
-            // Handle dropdown toggle on mobile
-            const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
-            if (dropdownToggle) {
-                dropdownToggle.addEventListener('click', (e) => {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        categoryDropdown.classList.toggle('active');
-                    }
-                });
-            }
-        }
-        
         // Initialize generator for this specific generator
         const categorySlug = 'fantasy';
         const generatorKey = 'demon_epithet';
@@ -473,8 +417,6 @@
         (async () => {
             const categories = await window.nameGenerator.getCategories();
             const dropdown = document.getElementById('category-dropdown');
-            // Clear any existing items first to prevent duplicates
-            dropdown.innerHTML = '';
             categories.forEach(cat => {
                 const link = document.createElement('a');
                 link.href = `../categories/${cat.slug}-names.html`;
@@ -495,97 +437,22 @@
             
             try {
                 
-                const epithets = await window.nameGenerator.generateNames(categorySlug, generatorKey, filters, count);
+                const names = await window.nameGenerator.generateNames(categorySlug, generatorKey, filters, count);
                 const resultsDiv = document.getElementById('results');
-                
-                // Special handling for epithet generator - combine with user's name
-                // Special handling for epithet generator - combine with user's name
-                const characterName = document.getElementById('character-name')?.value?.trim() || 'Your Character';
-                
-                // Sanitize user input to prevent XSS
-                const escapeHtml = (text) => {
-                    const div = document.createElement('div');
-                    div.textContent = text;
-                    return div.innerHTML;
-                };
-                const sanitizedName = escapeHtml(characterName);
-                
-                // Format epithets based on type
-                const formattedNames = epithets.map(epithet => {
-                    const ep = String(epithet).trim();
-                    
-                    // Epithets that already start with "the" should keep it
-                    if (ep.startsWith('the ')) {
-                        return `${sanitizedName} ${escapeHtml(ep)}`;
-                    }
-                    // Epithets that start with "of" don't need "the"
-                    if (ep.startsWith('of ')) {
-                        return `${sanitizedName} ${escapeHtml(ep)}`;
-                    }
-                    // Titles (Lord, Prince, Duke, Master, King, Father, etc.) use comma format
-                    if (/^(Lord|Prince|Duke|Master|King|Father|Mother|Baron|Bringer|Herald|Agent|Dealer|Walker|Lurker|Dweller|Incarnate|Embodied|Manifest|Personified|Given Form|Unleashed|Mass|Serial|Genocide|Slaughter|Once|Former|Ex|Lost|Before|Pre|Dawn|Origin|Made|Born|Forged|Shaped)/i.test(ep)) {
-                        return `${sanitizedName}, ${escapeHtml(ep)}`;
-                    }
-                    // Compound words (slayer, bane, born, etc.) don't need "the"
-                    if (ep.includes('slayer') || ep.includes('bane') || ep.includes('born') || 
-                        ep.includes('breaker') || ep.includes('hunter') || ep.includes('killer') ||
-                        ep.includes('wielder') || ep.includes('keeper') ||
-                        ep.includes('weaver') || ep.includes('binder') || ep.includes('reader') ||
-                        ep.includes('seer') || ep.includes('walker') || ep.includes('defender') ||
-                        ep.includes('singer') || ep.includes('chanter') || ep.includes('speaker') ||
-                        ep.includes('caller') || ep.includes('whisperer') || ep.includes('prophet') ||
-                        ep.includes('feller') || ep.includes('saver') || ep.includes('maker') ||
-                        ep.includes('creator') || ep.includes('founder') || ep.includes('architect') ||
-                        ep.includes('negotiator') || ep.includes('diplomat') || ep.includes('mediator') ||
-                        ep.includes('destroyer') || ep.includes('annihilator') || ep.includes('obliterator') ||
-                        ep.includes('reaper') || ep.includes('harvester') || ep.includes('collector') ||
-                        ep.includes('torturer') || ep.includes('tormentor') || ep.includes('dealer') ||
-                        ep.includes('bringer') || ep.includes('spreader') || ep.includes('source') ||
-                        ep.includes('murderer') || ep.includes('incarnate')) {
-                        return `${sanitizedName} ${escapeHtml(ep)}`;
-                    }
-                    // Most other epithets use "the" prefix
-                    return `${sanitizedName} the ${escapeHtml(ep)}`;
-                });
-                
                 resultsDiv.innerHTML = '<ul class="name-results">' + 
-                    formattedNames.map(name => `<li>${name}</li>`).join('') + 
+                    names.map(name => `<li>${name}</li>`).join('') + 
                     '</ul>';
                 
             } catch (error) {
-                // Log error for debugging (remove in production if desired)
-                if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-                    console.error('Generation error:', error);
-                }
+                console.error('Generation error:', error);
                 document.getElementById('results').innerHTML = '<p class="error">Error generating names. Please try again.</p>';
             }
         });
         
-        // Load related generators (show 6 total)
+        // Load related generators
         (async () => {
-            let related = await window.nameGenerator.getRelatedGenerators(categorySlug, generatorKey);
+            const related = await window.nameGenerator.getRelatedGenerators(categorySlug, generatorKey);
             const relatedDiv = document.getElementById('related-generators');
-            
-            // If we have fewer than 6, supplement with popular generators from the same category
-            if (related.length < 6) {
-                const popular = await window.nameGenerator.getPopularGenerators();
-                const currentSlug = `${categorySlug}:${generatorKey}`;
-                const relatedSlugs = new Set(related.map(gen => `${gen.categorySlug}:${gen.generatorKey}`));
-                
-                // Add popular generators from same category first, then others
-                for (const pop of popular) {
-                    if (related.length >= 6) break;
-                    const popSlug = `${pop.categorySlug}:${pop.generatorKey}`;
-                    if (popSlug !== currentSlug && !relatedSlugs.has(popSlug)) {
-                        related.push(pop);
-                        relatedSlugs.add(popSlug);
-                    }
-                }
-            }
-            
-            // Limit to 6
-            related = related.slice(0, 6);
-            
             if (relatedDiv && related.length > 0) {
                 relatedDiv.innerHTML = related.map(gen => 
                     `<a href="../posts/${gen.slug}.html" class="related-card">

@@ -274,13 +274,12 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
   let filterHTML = '';
   let nameInputHTML = '';
   
-  // Special handling for epithet generators - needs name input
-  if (generatorKey === 'epithet' || generatorKey === 'demon_epithet') {
-    const placeholder = generatorKey === 'demon_epithet' ? 'Enter your demon\'s name' : 'Enter your character\'s name';
+  // Special handling for epithet generator - needs name input
+  if (generatorKey === 'epithet') {
     nameInputHTML = `
           <div class="filter-group">
-            <label for="character-name">${generatorKey === 'demon_epithet' ? 'Demon' : 'Character'} Name:</label>
-            <input type="text" id="character-name" name="character-name" placeholder="${placeholder}" class="name-input" maxlength="50" pattern="[^<>]*" title="Character name cannot contain < or >">
+            <label for="character-name">Character Name:</label>
+            <input type="text" id="character-name" name="character-name" placeholder="Enter your character's name" class="name-input">
           </div>`;
   }
   
@@ -288,10 +287,6 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
     const filterInputs = Object.entries(generator.filters).map(([key, filter]) => {
       // Format option labels better
       const options = filter.options.map(opt => {
-        // Check if there's a custom label for this option
-        if (filter.optionLabels && filter.optionLabels[opt]) {
-          return `<option value="${opt}">${filter.optionLabels[opt]}</option>`;
-        }
         let label = opt.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
         // Special formatting for category names
         if (key === 'category') {
@@ -299,14 +294,7 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
             .replace('Alignment ', 'Alignment: ').replace('Reputation ', 'Reputation: ')
             .replace('Origin ', 'Origin: ').replace('Magical ', 'Magical: ')
             .replace('Weapon ', 'Weapon: ').replace('Time ', 'Time: ')
-            .replace('Misc ', 'Misc: ')
-            .replace('Power ', 'Power & ').replace('Sin ', 'Sin & ').replace('Destruction ', 'Destruction & ')
-            .replace('Death ', 'Death & ').replace('Elemental ', 'Elemental & ').replace('Physical ', 'Physical ')
-            .replace('Behavioral', 'Behavioral').replace('Special ', 'Special & ');
-        }
-        // Special formatting for domain names (demon generator)
-        if (key === 'domain') {
-          label = label.charAt(0).toUpperCase() + label.slice(1);
+            .replace('Misc ', 'Misc: ');
         }
         return `<option value="${opt}">${label}</option>`;
       }).join('\n            ');
@@ -425,24 +413,8 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="format-detection" content="telephone=no">
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="477280238" />
-    
-    <!-- Security Headers -->
-    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
-    <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp">
-    
     <!-- Content Security Policy (CSP) - Note: Some headers need server configuration -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com;">
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R34WKHG3SR"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-R34WKHG3SR');
-    </script>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self';">
     
     <!-- Schema.org JSON-LD -->
     ${schemaScripts}
@@ -454,12 +426,7 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
     <nav class="main-nav">
         <div class="nav-container">
             <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
+            <div class="nav-links">
                 <a href="../index.html">Home</a>
                 <a href="../all-generators.html">All Generators</a>
                 <div class="nav-dropdown">
@@ -521,37 +488,6 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
 
     <script src="../lib/generator.js"></script>
     <script>
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.getElementById('nav-links');
-        const categoryDropdown = document.querySelector('.nav-dropdown');
-        
-        if (menuToggle) {
-            menuToggle.addEventListener('click', () => {
-                menuToggle.classList.toggle('active');
-                navLinks.classList.toggle('active');
-            });
-            
-            // Close menu when clicking on a link
-            navLinks.addEventListener('click', (e) => {
-                if (e.target.tagName === 'A' && !e.target.classList.contains('nav-dropdown-toggle')) {
-                    menuToggle.classList.remove('active');
-                    navLinks.classList.remove('active');
-                }
-            });
-            
-            // Handle dropdown toggle on mobile
-            const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
-            if (dropdownToggle) {
-                dropdownToggle.addEventListener('click', (e) => {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        categoryDropdown.classList.toggle('active');
-                    }
-                });
-            }
-        }
-        
         // Initialize generator for this specific generator
         const categorySlug = '${categorySlug}';
         const generatorKey = '${generatorKey}';
@@ -560,8 +496,6 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
         (async () => {
             const categories = await window.nameGenerator.getCategories();
             const dropdown = document.getElementById('category-dropdown');
-            // Clear any existing items first to prevent duplicates
-            dropdown.innerHTML = '';
             categories.forEach(cat => {
                 const link = document.createElement('a');
                 link.href = \`../categories/\${cat.slug}-names.html\`;
@@ -583,94 +517,7 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
             ).join('\n            ') : ''}
             
             try {
-                ${generatorKey === 'clan' ? `
-                // Special handling for Clan generator - combine title formats with clan names
-                const generator = await window.nameGenerator.getGenerator(categorySlug, generatorKey);
-                const type = filters.type || 'animal';
-                
-                const titles = generator.data.titles;
-                const clanNames = generator.data[type];
-                
-                // Validate data is loaded correctly
-                if (!titles || !Array.isArray(titles) || titles.length === 0) {
-                    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-                        console.error('Titles not found or invalid:', titles);
-                    }
-                    throw new Error('Titles data not available');
-                }
-                if (!clanNames || !Array.isArray(clanNames) || clanNames.length === 0) {
-                    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-                        console.error('Clan names not found or invalid:', clanNames);
-                        console.error('Available types:', Object.keys(generator.data).filter(k => k !== 'titles'));
-                    }
-                    throw new Error('Clan names data not available');
-                }
-                
-                // Create shuffled pools for titles and clan names
-                const titlePoolKey = \`\${categorySlug}:\${generatorKey}:titles\`;
-                const namePoolKey = \`\${categorySlug}:\${generatorKey}:names:\${type}\`;
-                
-                let titleShuffled = window.nameGenerator.namePools.get(titlePoolKey);
-                let titleIndex = window.nameGenerator.nameIndices.get(titlePoolKey) || 0;
-                let nameShuffled = window.nameGenerator.namePools.get(namePoolKey);
-                let nameIndex = window.nameGenerator.nameIndices.get(namePoolKey) || 0;
-                
-                // Initialize pools if needed
-                if (!titleShuffled || titleIndex >= titleShuffled.length) {
-                    titleShuffled = window.nameGenerator.shuffleArray([...titles]);
-                    window.nameGenerator.namePools.set(titlePoolKey, titleShuffled);
-                    titleIndex = 0;
-                }
-                if (!nameShuffled || nameIndex >= nameShuffled.length) {
-                    nameShuffled = window.nameGenerator.shuffleArray([...clanNames]);
-                    window.nameGenerator.namePools.set(namePoolKey, nameShuffled);
-                    nameIndex = 0;
-                }
-                
-                // Generate combined names
-                const results = [];
-                for (let i = 0; i < count; i++) {
-                    // If we've exhausted titles, reshuffle
-                    if (titleIndex >= titleShuffled.length) {
-                        titleShuffled = window.nameGenerator.shuffleArray([...titles]);
-                        window.nameGenerator.namePools.set(titlePoolKey, titleShuffled);
-                        titleIndex = 0;
-                    }
-                    // If we've exhausted clan names, reshuffle
-                    if (nameIndex >= nameShuffled.length) {
-                        nameShuffled = window.nameGenerator.shuffleArray([...clanNames]);
-                        window.nameGenerator.namePools.set(namePoolKey, nameShuffled);
-                        nameIndex = 0;
-                    }
-                    
-                    const titleFormat = titleShuffled[titleIndex];
-                    const clanName = nameShuffled[nameIndex];
-                    
-                    // Ensure both parts exist
-                    if (!titleFormat || !clanName) {
-                        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-                            console.error('Missing name parts:', { titleFormat, clanName, titleIndex, nameIndex });
-                        }
-                        continue; // Skip this iteration if name parts are missing
-                    }
-                    
-                    // Replace [Name] in title format with clan name
-                    const fullName = String(titleFormat).replace(/\\[Name\\]/g, String(clanName).trim());
-                    results.push(fullName);
-                    
-                    titleIndex++;
-                    nameIndex++;
-                }
-                
-                // Update indices
-                window.nameGenerator.nameIndices.set(titlePoolKey, titleIndex);
-                window.nameGenerator.nameIndices.set(namePoolKey, nameIndex);
-                
-                const resultsDiv = document.getElementById('results');
-                resultsDiv.innerHTML = '<ul class="name-results">' + 
-                    results.map(name => \`<li>\${name}</li>\`).join('') + 
-                    '</ul>';
-                ` : (generatorKey === 'dnd_fantasy' || generatorKey === 'high_elf' || generatorKey === 'wood_elf' || generatorKey === 'dark_elf') ? `
+                ${generatorKey === 'dnd_fantasy' ? `
                 // Special handling for D&D fantasy generator - combine first and last names
                 const generator = await window.nameGenerator.getGenerator(categorySlug, generatorKey);
                 const gender = filters.gender || 'male';
@@ -680,16 +527,12 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
                 
                 // Validate data is loaded correctly
                 if (!firstNames || !Array.isArray(firstNames) || firstNames.length === 0) {
-                    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-                        console.error('First names not found or invalid:', firstNames);
-                    }
+                    console.error('First names not found or invalid:', firstNames);
                     throw new Error('First names data not available');
                 }
                 if (!lastNames || !Array.isArray(lastNames) || lastNames.length === 0) {
-                    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-                        console.error('Last names not found or invalid:', lastNames);
-                        console.error('Available keys:', Object.keys(generator.data[gender]));
-                    }
+                    console.error('Last names not found or invalid:', lastNames);
+                    console.error('Available keys:', Object.keys(generator.data[gender]));
                     throw new Error('Last names data not available');
                 }
                 
@@ -735,9 +578,7 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
                     
                     // Ensure both parts exist
                     if (!firstName || !lastName) {
-                        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-                            console.error('Missing name parts:', { firstName, lastName, firstIndex, lastIndex, firstShuffledLength: firstShuffled.length, lastShuffledLength: lastShuffled.length });
-                        }
+                        console.error('Missing name parts:', { firstName, lastName, firstIndex, lastIndex, firstShuffledLength: firstShuffled.length, lastShuffledLength: lastShuffled.length });
                         continue; // Skip this iteration if name parts are missing
                     }
                     
@@ -757,7 +598,7 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
                 resultsDiv.innerHTML = '<ul class="name-results">' + 
                     results.map(name => \`<li>\${name}</li>\`).join('') + 
                     '</ul>';
-                ` : (generatorKey === 'epithet' || generatorKey === 'demon_epithet') ? `
+                ` : generatorKey === 'epithet' ? `
                 const epithets = await window.nameGenerator.generateNames(categorySlug, generatorKey, filters, count);
                 const resultsDiv = document.getElementById('results');
                 
@@ -765,50 +606,31 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
                 // Special handling for epithet generator - combine with user's name
                 const characterName = document.getElementById('character-name')?.value?.trim() || 'Your Character';
                 
-                // Sanitize user input to prevent XSS
-                const escapeHtml = (text) => {
-                    const div = document.createElement('div');
-                    div.textContent = text;
-                    return div.innerHTML;
-                };
-                const sanitizedName = escapeHtml(characterName);
-                
                 // Format epithets based on type
                 const formattedNames = epithets.map(epithet => {
-                    const ep = String(epithet).trim();
-                    
                     // Epithets that already start with "the" should keep it
-                    if (ep.startsWith('the ')) {
-                        return \`\${sanitizedName} \${escapeHtml(ep)}\`;
+                    if (epithet.startsWith('the ')) {
+                        return \`\${characterName} \${epithet}\`;
                     }
                     // Epithets that start with "of" don't need "the"
-                    if (ep.startsWith('of ')) {
-                        return \`\${sanitizedName} \${escapeHtml(ep)}\`;
-                    }
-                    // Titles (Lord, Prince, Duke, Master, King, Father, etc.) use comma format
-                    if (/^(Lord|Prince|Duke|Master|King|Father|Mother|Baron|Bringer|Herald|Agent|Dealer|Walker|Lurker|Dweller|Incarnate|Embodied|Manifest|Personified|Given Form|Unleashed|Mass|Serial|Genocide|Slaughter|Once|Former|Ex|Lost|Before|Pre|Dawn|Origin|Made|Born|Forged|Shaped)/i.test(ep)) {
-                        return \`\${sanitizedName}, \${escapeHtml(ep)}\`;
+                    if (epithet.startsWith('of ')) {
+                        return \`\${characterName} \${epithet}\`;
                     }
                     // Compound words (slayer, bane, born, etc.) don't need "the"
-                    if (ep.includes('slayer') || ep.includes('bane') || ep.includes('born') || 
-                        ep.includes('breaker') || ep.includes('hunter') || ep.includes('killer') ||
-                        ep.includes('wielder') || ep.includes('keeper') ||
-                        ep.includes('weaver') || ep.includes('binder') || ep.includes('reader') ||
-                        ep.includes('seer') || ep.includes('walker') || ep.includes('defender') ||
-                        ep.includes('singer') || ep.includes('chanter') || ep.includes('speaker') ||
-                        ep.includes('caller') || ep.includes('whisperer') || ep.includes('prophet') ||
-                        ep.includes('feller') || ep.includes('saver') || ep.includes('maker') ||
-                        ep.includes('creator') || ep.includes('founder') || ep.includes('architect') ||
-                        ep.includes('negotiator') || ep.includes('diplomat') || ep.includes('mediator') ||
-                        ep.includes('destroyer') || ep.includes('annihilator') || ep.includes('obliterator') ||
-                        ep.includes('reaper') || ep.includes('harvester') || ep.includes('collector') ||
-                        ep.includes('torturer') || ep.includes('tormentor') || ep.includes('dealer') ||
-                        ep.includes('bringer') || ep.includes('spreader') || ep.includes('source') ||
-                        ep.includes('murderer') || ep.includes('incarnate')) {
-                        return \`\${sanitizedName} \${escapeHtml(ep)}\`;
+                    if (epithet.includes('slayer') || epithet.includes('bane') || epithet.includes('born') || 
+                        epithet.includes('breaker') || epithet.includes('hunter') || epithet.includes('killer') ||
+                        epithet.includes('wielder') || epithet.includes('master') || epithet.includes('keeper') ||
+                        epithet.includes('weaver') || epithet.includes('binder') || epithet.includes('reader') ||
+                        epithet.includes('seer') || epithet.includes('walker') || epithet.includes('defender') ||
+                        epithet.includes('singer') || epithet.includes('chanter') || epithet.includes('speaker') ||
+                        epithet.includes('caller') || epithet.includes('whisperer') || epithet.includes('prophet') ||
+                        epithet.includes('feller') || epithet.includes('saver') || epithet.includes('maker') ||
+                        epithet.includes('creator') || epithet.includes('founder') || epithet.includes('architect') ||
+                        epithet.includes('negotiator') || epithet.includes('diplomat') || epithet.includes('mediator')) {
+                        return \`\${characterName} \${epithet}\`;
                     }
                     // Most other epithets use "the" prefix
-                    return \`\${sanitizedName} the \${escapeHtml(ep)}\`;
+                    return \`\${characterName} the \${epithet}\`;
                 });
                 
                 resultsDiv.innerHTML = '<ul class="name-results">' + 
@@ -822,39 +644,15 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
                     '</ul>';
                 `}
             } catch (error) {
-                // Log error for debugging (remove in production if desired)
-                if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-                    console.error('Generation error:', error);
-                }
+                console.error('Generation error:', error);
                 document.getElementById('results').innerHTML = '<p class="error">Error generating names. Please try again.</p>';
             }
         });
         
-        // Load related generators (show 6 total)
+        // Load related generators
         ${generator.relatedGenerators ? `(async () => {
-            let related = await window.nameGenerator.getRelatedGenerators(categorySlug, generatorKey);
+            const related = await window.nameGenerator.getRelatedGenerators(categorySlug, generatorKey);
             const relatedDiv = document.getElementById('related-generators');
-            
-            // If we have fewer than 6, supplement with popular generators from the same category
-            if (related.length < 6) {
-                const popular = await window.nameGenerator.getPopularGenerators();
-                const currentSlug = \`\${categorySlug}:\${generatorKey}\`;
-                const relatedSlugs = new Set(related.map(gen => \`\${gen.categorySlug}:\${gen.generatorKey}\`));
-                
-                // Add popular generators from same category first, then others
-                for (const pop of popular) {
-                    if (related.length >= 6) break;
-                    const popSlug = \`\${pop.categorySlug}:\${pop.generatorKey}\`;
-                    if (popSlug !== currentSlug && !relatedSlugs.has(popSlug)) {
-                        related.push(pop);
-                        relatedSlugs.add(popSlug);
-                    }
-                }
-            }
-            
-            // Limit to 6
-            related = related.slice(0, 6);
-            
             if (relatedDiv && related.length > 0) {
                 relatedDiv.innerHTML = related.map(gen => 
                     \`<a href="../posts/\${gen.slug}.html" class="related-card">
@@ -935,12 +733,7 @@ function generateCategoryPage(category, categorySlug) {
     <nav class="main-nav">
         <div class="nav-container">
             <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
+            <div class="nav-links">
                 <a href="../index.html">Home</a>
                 <a href="../all-generators.html">All Generators</a>
                 <div class="nav-dropdown">
@@ -973,43 +766,10 @@ function generateCategoryPage(category, categorySlug) {
 
     <script src="../lib/generator.js"></script>
     <script>
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.getElementById('nav-links');
-        const categoryDropdown = document.querySelector('.nav-dropdown');
-        
-        if (menuToggle) {
-            menuToggle.addEventListener('click', () => {
-                menuToggle.classList.toggle('active');
-                navLinks.classList.toggle('active');
-            });
-            
-            // Close menu when clicking on a link
-            navLinks.addEventListener('click', (e) => {
-                if (e.target.tagName === 'A' && !e.target.classList.contains('nav-dropdown-toggle')) {
-                    menuToggle.classList.remove('active');
-                    navLinks.classList.remove('active');
-                }
-            });
-            
-            // Handle dropdown toggle on mobile
-            const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
-            if (dropdownToggle) {
-                dropdownToggle.addEventListener('click', (e) => {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        categoryDropdown.classList.toggle('active');
-                    }
-                });
-            }
-        }
-        
         // Populate category dropdown
         (async () => {
             const categories = await window.nameGenerator.getCategories();
             const dropdown = document.getElementById('category-dropdown');
-            // Clear any existing items first to prevent duplicates
-            dropdown.innerHTML = '';
             categories.forEach(cat => {
                 const link = document.createElement('a');
                 link.href = \`../categories/\${cat.slug}-names.html\`;

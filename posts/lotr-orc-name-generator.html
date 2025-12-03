@@ -48,24 +48,8 @@
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="format-detection" content="telephone=no">
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="477280238" />
-    
-    <!-- Security Headers -->
-    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
-    <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp">
-    
     <!-- Content Security Policy (CSP) - Note: Some headers need server configuration -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com;">
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R34WKHG3SR"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-R34WKHG3SR');
-    </script>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self';">
     
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -91,8 +75,8 @@
       "url": "https://thenamegenerators.com/logo.png"
     }
   },
-  "datePublished": "2025-12-02T16:39:21.926Z",
-  "dateModified": "2025-12-02T16:39:21.926Z",
+  "datePublished": "2025-12-03T10:43:21.663Z",
+  "dateModified": "2025-12-03T10:43:21.663Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://thenamegenerators.com/posts/lotr-orc-name-generator.html"
@@ -290,12 +274,7 @@
     <nav class="main-nav">
         <div class="nav-container">
             <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
+            <div class="nav-links">
                 <a href="../index.html">Home</a>
                 <a href="../all-generators.html">All Generators</a>
                 <div class="nav-dropdown">
@@ -421,37 +400,6 @@
 
     <script src="../lib/generator.js"></script>
     <script>
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.getElementById('nav-links');
-        const categoryDropdown = document.querySelector('.nav-dropdown');
-        
-        if (menuToggle) {
-            menuToggle.addEventListener('click', () => {
-                menuToggle.classList.toggle('active');
-                navLinks.classList.toggle('active');
-            });
-            
-            // Close menu when clicking on a link
-            navLinks.addEventListener('click', (e) => {
-                if (e.target.tagName === 'A' && !e.target.classList.contains('nav-dropdown-toggle')) {
-                    menuToggle.classList.remove('active');
-                    navLinks.classList.remove('active');
-                }
-            });
-            
-            // Handle dropdown toggle on mobile
-            const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
-            if (dropdownToggle) {
-                dropdownToggle.addEventListener('click', (e) => {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        categoryDropdown.classList.toggle('active');
-                    }
-                });
-            }
-        }
-        
         // Initialize generator for this specific generator
         const categorySlug = 'pop_culture';
         const generatorKey = 'lotr_orc';
@@ -460,8 +408,6 @@
         (async () => {
             const categories = await window.nameGenerator.getCategories();
             const dropdown = document.getElementById('category-dropdown');
-            // Clear any existing items first to prevent duplicates
-            dropdown.innerHTML = '';
             categories.forEach(cat => {
                 const link = document.createElement('a');
                 link.href = `../categories/${cat.slug}-names.html`;
@@ -487,39 +433,15 @@
                     '</ul>';
                 
             } catch (error) {
-                // Log error for debugging (remove in production if desired)
-                if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-                    console.error('Generation error:', error);
-                }
+                console.error('Generation error:', error);
                 document.getElementById('results').innerHTML = '<p class="error">Error generating names. Please try again.</p>';
             }
         });
         
-        // Load related generators (show 6 total)
+        // Load related generators
         (async () => {
-            let related = await window.nameGenerator.getRelatedGenerators(categorySlug, generatorKey);
+            const related = await window.nameGenerator.getRelatedGenerators(categorySlug, generatorKey);
             const relatedDiv = document.getElementById('related-generators');
-            
-            // If we have fewer than 6, supplement with popular generators from the same category
-            if (related.length < 6) {
-                const popular = await window.nameGenerator.getPopularGenerators();
-                const currentSlug = `${categorySlug}:${generatorKey}`;
-                const relatedSlugs = new Set(related.map(gen => `${gen.categorySlug}:${gen.generatorKey}`));
-                
-                // Add popular generators from same category first, then others
-                for (const pop of popular) {
-                    if (related.length >= 6) break;
-                    const popSlug = `${pop.categorySlug}:${pop.generatorKey}`;
-                    if (popSlug !== currentSlug && !relatedSlugs.has(popSlug)) {
-                        related.push(pop);
-                        relatedSlugs.add(popSlug);
-                    }
-                }
-            }
-            
-            // Limit to 6
-            related = related.slice(0, 6);
-            
             if (relatedDiv && related.length > 0) {
                 relatedDiv.innerHTML = related.map(gen => 
                     `<a href="../posts/${gen.slug}.html" class="related-card">

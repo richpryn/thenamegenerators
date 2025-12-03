@@ -38,24 +38,8 @@
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="format-detection" content="telephone=no">
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="477280238" />
-    
-    <!-- Security Headers -->
-    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
-    <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp">
-    
     <!-- Content Security Policy (CSP) - Note: Some headers need server configuration -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com;">
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R34WKHG3SR"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-R34WKHG3SR');
-    </script>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self';">
     
     <!-- Schema.org JSON-LD for Homepage (AI-friendly) -->
     <script type="application/ld+json">
@@ -110,18 +94,23 @@
     <nav class="main-nav">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
+            <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="all-generators.html">All Generators</a>
                 <div class="nav-dropdown">
                     <a href="#" class="nav-dropdown-toggle">Categories</a>
                     <div class="nav-dropdown-menu" id="category-dropdown">
-                        <!-- Populated by JavaScript -->
+                        <a href="categories/concepts-names.html">💭 Concept Names</a>
+        <a href="categories/events-names.html">🎉 Event Names</a>
+        <a href="categories/fantasy-names.html">⚔️ Fantasy Names</a>
+        <a href="categories/folklore-names.html">📜 Folklore Names</a>
+        <a href="categories/music-names.html">🎵 Music Names</a>
+        <a href="categories/objects-names.html">⚔️ Object Names</a>
+        <a href="categories/organizations-names.html">🏛️ Organization Names</a>
+        <a href="categories/people-names.html">👥 People Names</a>
+        <a href="categories/places-names.html">🗺️ Place Names</a>
+        <a href="categories/pop_culture-names.html">🎬 Pop Culture Names</a>
+                        <!-- Populated by update-homepage.js or JavaScript -->
                     </div>
                 </div>
             </div>
@@ -129,7 +118,6 @@
     </nav>
 
     <div class="container">
-        <main>
         <!-- Hero Section with Main Generator -->
         <header class="hero">
             <h1>Random Name Generator</h1>
@@ -190,7 +178,6 @@
             </div>
         </section>
 
-        </main>
         <footer class="site-footer">
             <p>&copy; <span id="current-year"></span> The Name Generators. All rights reserved.</p>
         </footer>
@@ -198,37 +185,6 @@
 
     <script src="lib/generator.js"></script>
     <script>
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.getElementById('nav-links');
-        const categoryDropdown = document.querySelector('.nav-dropdown');
-        
-        if (menuToggle) {
-            menuToggle.addEventListener('click', () => {
-                menuToggle.classList.toggle('active');
-                navLinks.classList.toggle('active');
-            });
-            
-            // Close menu when clicking on a link
-            navLinks.addEventListener('click', (e) => {
-                if (e.target.tagName === 'A' && !e.target.classList.contains('nav-dropdown-toggle')) {
-                    menuToggle.classList.remove('active');
-                    navLinks.classList.remove('active');
-                }
-            });
-            
-            // Handle dropdown toggle on mobile
-            const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
-            if (dropdownToggle) {
-                dropdownToggle.addEventListener('click', (e) => {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        categoryDropdown.classList.toggle('active');
-                    }
-                });
-            }
-        }
-        
         // Set current year
         document.getElementById('current-year').textContent = new Date().getFullYear();
         
@@ -239,8 +195,6 @@
             
             // Populate category dropdown in nav
             const navDropdown = document.getElementById('category-dropdown');
-            // Clear any existing items first to prevent duplicates
-            navDropdown.innerHTML = '';
             categories.forEach(cat => {
                 const link = document.createElement('a');
                 link.href = `categories/${cat.slug}-names.html`;
@@ -370,8 +324,8 @@
                     group.innerHTML = `
                         <label for="filter-${key}">${filter.label}:</label>
                         <select id="filter-${key}" name="${key}">
-                            ${filter.options.map((opt, idx) => 
-                                `<option value="${opt}" ${idx === 0 ? 'selected' : ''}>${opt.charAt(0).toUpperCase() + opt.slice(1).replace(/_/g, ' ')}</option>`
+                            ${filter.options.map(opt => 
+                                `<option value="${opt}">${opt.charAt(0).toUpperCase() + opt.slice(1)}</option>`
                             ).join('')}
                         </select>
                     `;
@@ -405,10 +359,7 @@
                     names.map(name => `<li>${name}</li>`).join('') + 
                     '</ul>';
             } catch (error) {
-                // Log error for debugging (only in development)
-                if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-                    console.error('Generation error:', error);
-                }
+                console.error('Generation error:', error);
                 resultsDiv.innerHTML = '<p class="error">Error generating names. Please try again.</p>';
             }
         });
