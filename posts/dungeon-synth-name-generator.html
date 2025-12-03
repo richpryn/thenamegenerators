@@ -75,8 +75,8 @@
       "url": "https://thenamegenerators.com/logo.png"
     }
   },
-  "datePublished": "2025-12-03T10:54:59.098Z",
-  "dateModified": "2025-12-03T10:54:59.098Z",
+  "datePublished": "2025-12-03T10:55:33.139Z",
+  "dateModified": "2025-12-03T10:55:33.139Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://thenamegenerators.com/posts/dungeon-synth-name-generator.html"
@@ -430,6 +430,14 @@
         
         // Load related generators (always show, dynamically calculated)
         (async () => {
+            // Helper function to escape HTML
+            const escapeHtml = (text) => {
+                if (!text) return '';
+                const div = document.createElement('div');
+                div.textContent = text;
+                return div.innerHTML;
+            };
+            
             const related = await window.nameGenerator.getRelatedGenerators(categorySlug, generatorKey);
             const relatedDiv = document.getElementById('related-generators');
             if (relatedDiv && related.length > 0) {

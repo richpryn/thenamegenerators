@@ -256,6 +256,14 @@
                 return true;
             });
             
+            // Helper function to escape HTML
+            const escapeHtml = (text) => {
+                if (!text) return '';
+                const div = document.createElement('div');
+                div.textContent = text;
+                return div.innerHTML;
+            };
+            
             uniqueGenerators.slice(0, 20).forEach(gen => {
                 const card = document.createElement('a');
                 card.href = `posts/${gen.slug}.html`;
@@ -263,9 +271,9 @@
                 card.innerHTML = `
                     <span class="generator-icon">${gen.icon}</span>
                     <div class="generator-info">
-                        <h3>${gen.title}</h3>
-                        <p>${gen.description}</p>
-                        <span class="category-badge">${gen.categoryIcon} ${gen.categoryName}</span>
+                        <h3>${escapeHtml(gen.title)}</h3>
+                        <p>${escapeHtml(gen.description)}</p>
+                        <span class="category-badge">${gen.categoryIcon} ${escapeHtml(gen.categoryName)}</span>
                     </div>
                 `;
                 popularGrid.appendChild(card);

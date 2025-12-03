@@ -662,6 +662,14 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
         
         // Load related generators (always show, dynamically calculated)
         (async () => {
+            // Helper function to escape HTML
+            const escapeHtml = (text) => {
+                if (!text) return '';
+                const div = document.createElement('div');
+                div.textContent = text;
+                return div.innerHTML;
+            };
+            
             const related = await window.nameGenerator.getRelatedGenerators(categorySlug, generatorKey);
             const relatedDiv = document.getElementById('related-generators');
             if (relatedDiv && related.length > 0) {
