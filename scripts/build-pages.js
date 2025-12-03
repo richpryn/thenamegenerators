@@ -12,6 +12,21 @@ const DATA_DIR = path.join(__dirname, '../data');
 const POSTS_DIR = path.join(__dirname, '../posts');
 const CATEGORIES_DIR = path.join(__dirname, '../categories');
 
+/**
+ * Escape HTML to prevent XSS and fix &amp; issues
+ * @param {string} text - Text to escape
+ * @returns {string} Escaped HTML
+ */
+function escapeHtml(text) {
+  if (!text) return '';
+  return String(text)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
 // Ensure output directories exist
 [POSTS_DIR, CATEGORIES_DIR].forEach(dir => {
   if (!fs.existsSync(dir)) {
@@ -652,8 +667,8 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
             if (relatedDiv && related.length > 0) {
                 relatedDiv.innerHTML = related.map(gen => 
                     \`<a href="../posts/\${gen.slug}.html" class="related-card">
-                        <h3>\${gen.icon} \${gen.title}</h3>
-                        <p>\${gen.description}</p>
+                        <h3>\${gen.icon} \${escapeHtml(gen.title)}</h3>
+                        <p>\${escapeHtml(gen.description)}</p>
                     </a>\`
                 ).join('');
             } else if (relatedDiv) {
@@ -678,8 +693,8 @@ function generateCategoryPage(category, categorySlug) {
 
   const generatorsHTML = generators.map(gen => `
     <a href="../posts/${gen.slug}.html" class="generator-card">
-      <h3>${gen.icon} ${gen.title}</h3>
-      <p>${gen.description}</p>
+      <h3>${gen.icon} ${escapeHtml(gen.title)}</h3>
+      <p>${escapeHtml(gen.description)}</p>
     </a>
   `).join('\n    ');
 

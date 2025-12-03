@@ -75,8 +75,8 @@
       "url": "https://thenamegenerators.com/logo.png"
     }
   },
-  "datePublished": "2025-12-03T10:51:42.023Z",
-  "dateModified": "2025-12-03T10:51:42.023Z",
+  "datePublished": "2025-12-03T10:54:59.104Z",
+  "dateModified": "2025-12-03T10:54:59.104Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://thenamegenerators.com/posts/warhammer-orc-name-generator.html"
@@ -435,8 +435,8 @@
             if (relatedDiv && related.length > 0) {
                 relatedDiv.innerHTML = related.map(gen => 
                     `<a href="../posts/${gen.slug}.html" class="related-card">
-                        <h3>${gen.icon} ${gen.title}</h3>
-                        <p>${gen.description}</p>
+                        <h3>${gen.icon} ${escapeHtml(gen.title)}</h3>
+                        <p>${escapeHtml(gen.description)}</p>
                     </a>`
                 ).join('');
             } else if (relatedDiv) {
