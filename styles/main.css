@@ -96,6 +96,7 @@ body {
     left: 0;
     height: 0.5rem;
     background: transparent;
+    display: none;
 }
 
 .nav-dropdown-menu {
@@ -113,9 +114,12 @@ body {
     z-index: 1001;
 }
 
-.nav-dropdown:hover .nav-dropdown-menu,
-.nav-dropdown:hover::before {
+.nav-dropdown:hover .nav-dropdown-menu {
     display: flex;
+}
+
+.nav-dropdown:hover::before {
+    display: block;
 }
 
 .nav-dropdown-menu a {
