@@ -965,6 +965,9 @@ function build() {
   // Generate sitemap.xml
   generateSitemap(allGenerators, categories);
   
+  // Generate HTML sitemap page
+  generateHtmlSitemap(allGenerators, categories);
+  
   console.log(`\n✨ Build complete! Generated ${allGenerators.length} generator pages and ${Object.keys(categories).length} category pages.`);
   
   return { categories, allGenerators };
@@ -992,6 +995,13 @@ function generateSitemap(allGenerators, categories) {
     <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <!-- HTML Sitemap -->
+  <url>
+    <loc>${baseUrl}/sitemap.html</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 `;
 
@@ -1024,6 +1034,146 @@ function generateSitemap(allGenerators, categories) {
   const sitemapPath = path.join(__dirname, '../sitemap.xml');
   fs.writeFileSync(sitemapPath, sitemap);
   console.log(`  ✅ Created: sitemap.xml`);
+}
+
+/**
+ * Generate HTML sitemap page for better SEO and crawling
+ */
+function generateHtmlSitemap(allGenerators, categories) {
+  const baseUrl = "https://thenamegenerators.com";
+  
+  let html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Map - All Pages | The Name Generators</title>
+    <meta name="description" content="Complete site map listing all name generator pages, categories, and resources.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="${baseUrl}/sitemap.html">
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        .sitemap-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .sitemap-section {
+            margin-bottom: 3rem;
+        }
+        .sitemap-section h2 {
+            color: #333;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .sitemap-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .sitemap-links a {
+            display: block;
+            padding: 0.5rem;
+            color: #4a90e2;
+            text-decoration: none;
+            border-left: 3px solid #4a90e2;
+            padding-left: 1rem;
+            transition: all 0.3s;
+        }
+        .sitemap-links a:hover {
+            background-color: #f5f5f5;
+            padding-left: 1.5rem;
+        }
+        .sitemap-category {
+            margin-top: 2rem;
+        }
+        .sitemap-category h3 {
+            color: #666;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="all-generators.html">All Generators</a>
+                <a href="sitemap.html">Site Map</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sitemap-container">
+        <header>
+            <h1>Site Map</h1>
+            <p>Complete listing of all pages on The Name Generators</p>
+        </header>
+
+        <div class="sitemap-section">
+            <h2>Main Pages</h2>
+            <div class="sitemap-links">
+                <a href="${baseUrl}/">Home</a>
+                <a href="${baseUrl}/all-generators.html">All Generators</a>
+                <a href="${baseUrl}/sitemap.html">Site Map</a>
+            </div>
+        </div>
+
+        <div class="sitemap-section">
+            <h2>Category Pages</h2>
+            <div class="sitemap-links">
+`;
+
+  // Add category pages
+  for (const [categorySlug, category] of Object.entries(categories)) {
+    html += `                <a href="${baseUrl}/categories/${categorySlug}-names.html">${category.categoryInfo.icon} ${category.categoryInfo.name}</a>\n`;
+  }
+
+  html += `            </div>
+        </div>
+
+        <div class="sitemap-section">
+            <h2>Name Generators</h2>
+`;
+
+  // Group generators by category
+  const generatorsByCategory = {};
+  for (const generator of allGenerators) {
+    if (!generatorsByCategory[generator.categoryName]) {
+      generatorsByCategory[generator.categoryName] = [];
+    }
+    generatorsByCategory[generator.categoryName].push(generator);
+  }
+
+  // Add generators grouped by category
+  for (const [categoryName, generators] of Object.entries(generatorsByCategory)) {
+    html += `            <div class="sitemap-category">
+                <h3>${categoryName}</h3>
+                <div class="sitemap-links">
+`;
+    for (const generator of generators) {
+      html += `                    <a href="${baseUrl}/posts/${generator.slug}.html">${generator.icon || '⚔️'} ${generator.title}</a>\n`;
+    }
+    html += `                </div>
+            </div>
+`;
+  }
+
+  html += `        </div>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; ${new Date().getFullYear()} The Name Generators. All rights reserved.</p>
+    </footer>
+</body>
+</html>`;
+
+  const sitemapHtmlPath = path.join(__dirname, '../sitemap.html');
+  fs.writeFileSync(sitemapHtmlPath, html);
+  console.log(`  ✅ Created: sitemap.html`);
 }
 
 // Run if called directly
