@@ -511,7 +511,7 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
         </main>
 
         <footer class="site-footer">
-            <p>&copy; ${new Date().getFullYear()} The Name Generators. All rights reserved.</p>
+            <p>&copy; ${new Date().getFullYear()} The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
         </footer>
     </div>
 
@@ -875,7 +875,7 @@ function generateCategoryPage(category, categorySlug) {
         </main>
 
         <footer class="site-footer">
-            <p>&copy; ${new Date().getFullYear()} The Name Generators. All rights reserved.</p>
+            <p>&copy; ${new Date().getFullYear()} The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
         </footer>
     </div>
 
@@ -1001,6 +1001,13 @@ function generateSitemap(allGenerators, categories) {
     <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <!-- About Page -->
+  <url>
+    <loc>${baseUrl}/about.html</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <!-- HTML Sitemap -->
   <url>
@@ -1128,6 +1135,7 @@ function generateHtmlSitemap(allGenerators, categories) {
             <div class="sitemap-links">
                 <a href="${baseUrl}/">Home</a>
                 <a href="${baseUrl}/all-generators.html">All Generators</a>
+                <a href="${baseUrl}/about.html">About</a>
                 <a href="${baseUrl}/sitemap.html">Site Map</a>
             </div>
         </div>
@@ -1176,7 +1184,7 @@ function generateHtmlSitemap(allGenerators, categories) {
     </div>
 
     <footer class="site-footer">
-        <p>&copy; ${new Date().getFullYear()} The Name Generators. All rights reserved.</p>
+        <p>&copy; ${new Date().getFullYear()} The Name Generators. All rights reserved. | <a href="sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="about.html" style="color: #4a90e2;">About</a></p>
     </footer>
 </body>
 </html>`;

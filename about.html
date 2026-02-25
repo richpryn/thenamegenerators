@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Mediavine Grow -->
+    <script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTo2YmQ3YzdiOS00MDgwLTQ5MmYtOGEyZi0yZWE3YmU2N2E5ZTU=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>About | The Name Generators</title>
+    <meta name="title" content="About | The Name Generators">
+    <meta name="description" content="Why The Name Generators exists: built out of a need for names for music projects and creative ideas. Free name generators for everyone.">
+    <meta name="author" content="The Name Generators">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thenamegenerators.com/about.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thenamegenerators.com/about.html">
+    <meta property="og:title" content="About | The Name Generators">
+    <meta property="og:description" content="Why The Name Generators exists: built out of a need for names for music projects and creative ideas.">
+    <meta property="og:site_name" content="The Name Generators">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://thenamegenerators.com/about.html">
+    <meta property="twitter:title" content="About | The Name Generators">
+    <meta property="twitter:description" content="Why The Name Generators exists: built out of a need for names for music projects and creative ideas.">
+    
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/blog.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="all-generators.html">All Generators</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-dropdown-toggle">Categories</a>
+                    <div class="nav-dropdown-menu" id="category-dropdown">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="blog-hero">
+            <h1>About The Name Generators</h1>
+            <p>Why this site exists</p>
+        </header>
+
+        <main>
+            <article class="blog-content">
+                <p>I make a lot of music and have more ideas than I can keep track of—band names, album titles, project names, character names for stories. I kept needing something to help me come up with names quickly, and I couldn’t find one place that did exactly what I wanted.</p>
+                <p>So I built this site to scratch my own itch. The Name Generators is the tool I wanted: free, simple, and focused on generating names for creative projects—whether that’s D&amp;D characters, fantasy worlds, businesses, or music. I kept adding more generators as I needed them, and eventually decided to put it all online so others could use it too.</p>
+                <p>Everything here is free to use. I hope it helps you name your next project, character, or idea.</p>
+            </article>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; <span id="current-year"></span> The Name Generators. All rights reserved. | <a href="sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="about.html" style="color: #4a90e2;">About</a></p>
+        </footer>
+    </div>
+
+    <script src="lib/generator.js"></script>
+    <script>
+        // Set current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Populate category dropdown
+        (async () => {
+            const navDropdown = document.getElementById('category-dropdown');
+            if (!navDropdown) return;
+            try {
+                const generator = window.nameGenerator;
+                const categories = await generator.getCategories();
+                navDropdown.innerHTML = '';
+                categories.forEach(cat => {
+                    const link = document.createElement('a');
+                    link.href = `categories/${cat.slug}-names.html`;
+                    link.textContent = `${cat.icon} ${cat.navLabel}`;
+                    navDropdown.appendChild(link);
+                });
+            } catch (e) {
+                console.error('Error loading categories:', e);
+            }
+        })();
+        
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+        const categoryDropdown = document.querySelector('.nav-dropdown');
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+            navLinks.addEventListener('click', (e) => {
+                if (e.target.tagName === 'A' && !e.target.classList.contains('nav-dropdown-toggle')) {
+                    menuToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                }
+            });
+            const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
+            if (dropdownToggle) {
+                dropdownToggle.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        categoryDropdown.classList.toggle('active');
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>
