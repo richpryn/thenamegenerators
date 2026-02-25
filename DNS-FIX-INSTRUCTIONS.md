@@ -82,6 +82,28 @@ Here's what your DNS should look like:
 - ❌ **FIX THIS**: CNAME | www | 178.128.137.126 → **DELETE**
 - ✅ **ADD THIS**: CNAME | www | richpryn.github.io | 4 Hours
 
+## Google Search Console verification (TXT)
+
+To verify **thenamegenerators.com** in Google Search Console, add this TXT record in Bluehost:
+
+| Type | Host Record | Value (TXT) |
+|------|-------------|-------------|
+| TXT  | `@`         | `google-site-verification=356Jtg-JUJ1tD-yRQ7ecaQq-8ObeyUVAIZEtmwJE6wI` |
+
+**Steps:**
+1. In Bluehost: **Domains** → **DNS/Zone Editor** (or **Manage** → **DNS**).
+2. Add record: **Type** = TXT, **Host** = `@` (or leave blank for apex), **TXT Value** = `google-site-verification=356Jtg-JUJ1tD-yRQ7ecaQq-8ObeyUVAIZEtmwJE6wI`.
+3. Save. Wait 5–30 minutes for DNS to update.
+4. In [Google Search Console](https://search.google.com/search-console), open your property and click **Verify**.
+
+**Check TXT record:**
+```bash
+dig thenamegenerators.com TXT +short
+```
+You should see the `google-site-verification=...` string in the output.
+
+---
+
 ## What to Keep
 
 **Keep these records** (they're for email/hosting):
@@ -129,6 +151,7 @@ dig www.thenamegenerators.com +short
 3. Verify custom domain in GitHub Pages settings
 4. Wait for DNS propagation (15-60 minutes)
 5. Wait for SSL certificate (24-48 hours)
+
 
 
 
