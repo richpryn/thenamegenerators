@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vampire Name Generator</title>
+  <meta name="description" content="Generate elegant and dark vampire names perfect for fantasy writing, D&amp;D, and gothic stories. Choose from male, female, or non-binary names with traditional vampire naming conventions.">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 1rem; color: #222; }
+    h1 { margin-bottom: .25rem; }
+    .lead { color: #666; margin-top: 0; }
+    .controls { display: flex; flex-wrap: wrap; gap: 1rem; align-items: end; margin: 1.5rem 0; }
+    label { display: flex; flex-direction: column; font-size: .85rem; gap: .25rem; }
+    select, input { padding: .4rem .5rem; font-size: 1rem; }
+    button { padding: .6rem 1.2rem; font-size: 1rem; cursor: pointer; background: #4a90e2; color: #fff; border: 0; border-radius: 6px; }
+    ul { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: .4rem; }
+    li { background: #f4f6f9; padding: .5rem .75rem; border-radius: 6px; }
+    .note { margin-top: 2rem; font-size: .8rem; color: #888; border-top: 1px solid #eee; padding-top: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>Vampire Name Generator</h1>
+  <p class="lead">Generate elegant and dark vampire names perfect for fantasy writing, D&amp;D, and gothic stories. Choose from male, female, or non-binary names with traditional vampire naming conventions.</p>
+
+  <div class="controls">
+      <label>Gender
+        <select id="f-gender" name="gender"><option value="male">Male</option><option value="female">Female</option><option value="non_binary">Non Binary</option></select>
+      </label>
+      <label>Count
+        <input type="number" id="count" value="10" min="1" max="50">
+      </label>
+      <button id="go">Generate Names</button>
+  </div>
+
+  <ul id="results"><li>Click “Generate Names”.</li></ul>
+
+  <p class="note">Self-contained page. Engine + data are inlined below — no fetches, no shared global generator.</p>
+
+  <!-- Shared engine, inlined -->
+  <script>/**
+ * Recipe Engine (prototype)
+ * ------------------------------------------------------------------
+ * One small, generic engine that builds names by FOLLOWING the recipe
+ * declared in each generator's own config. It knows nothing about
+ * "elves" or "vampires" — those rules live in the data, not here.
+ *
+ * Compare with lib/generator.js, where generateNames() is ~1,000 lines
+ * of `if (generatorKey === 'vampire') { ... }` special cases. Adding a
+ * generator there means editing the engine; here it means writing a
+ * JSON file.
+ *
+ * Supported recipes (enough to cover the whole current site):
+ *   - "pick":    choose one name from a single list.
+ *                { recipe:"pick", from:"{gender}.{origin}" }
+ *   - "combine": take one item from each part and join them.
+ *                { recipe:"combine", parts:["{gender}","surnames"], join:" " }
+ *   - "template":fill [slots] in a string with items from lists.
+ *                { recipe:"template", template:"{prefix} {suffix}" }
+ *
+ * Each recipe draws without repeats (a shuffled pool per list, reshuffled
+ * when exhausted) — same anti-repetition behaviour the current site has,
+ * but implemented once instead of per generator.
+ */
+(function (global) {
+  'use strict';
+
+  function shuffle(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  // "a.b" -> obj.a.b
+  function resolve(obj, path) {
+    return path.split('.').reduce((node, key) => (node == null ? node : node[key]), obj);
+  }
+
+  // "{gender}.{origin}" + {gender:"male",origin:"dnd"} -> "male.dnd"
+  function interpolate(path, filters) {
+    return path.replace(/\{(\w+)\}/g, (_, name) => filters[name]);
+  }
+
+  function createGenerator(config) {
+    const pools = new Map(); // resolved list path -> { shuffled, index }
+
+    // Draw one non-repeating item from the list at `key`.
+    function drawFrom(key) {
+      const list = resolve(config.data, key);
+      if (!Array.isArray(list) || list.length === 0) {
+        throw new Error(`No name list found at "${key}" for ${config.slug}`);
+      }
+      let pool = pools.get(key);
+      if (!pool || pool.index >= pool.shuffled.length) {
+        pool = { shuffled: shuffle(list), index: 0 };
+        pools.set(key, pool);
+      }
+      return String(pool.shuffled[pool.index++]).trim();
+    }
+
+    function buildOne(filters) {
+      switch (config.recipe) {
+        case 'pick':
+          return drawFrom(interpolate(config.from, filters));
+
+        case 'combine':
+          return config.parts
+            .map((part) => drawFrom(interpolate(part, filters)))
+            .join(config.join || ' ');
+
+        case 'template':
+          // Replace each {listName} token with a draw from that list.
+          return config.template.replace(/\{(\w+)\}/g, (_, listName) =>
+            drawFrom(interpolate(listName, filters))
+          );
+
+        default:
+          throw new Error(`Unknown recipe "${config.recipe}" for ${config.slug}`);
+      }
+    }
+
+    return {
+      title: config.title,
+      description: config.description,
+      filters: config.filters || {},
+      generate(filters = {}, count = 10) {
+        const out = [];
+        for (let i = 0; i < count; i++) out.push(buildOne(filters));
+        return out;
+      },
+    };
+  }
+
+  global.RecipeEngine = { createGenerator };
+})(typeof window !== 'undefined' ? window : this);
+</script>
+
+  <!-- This generator's own config + data, inlined -->
+  <script>
+    const CONFIG = {"title":"Vampire Name Generator","slug":"vampire-name-generator","description":"Generate elegant and dark vampire names perfect for fantasy writing, D&D, and gothic stories. Choose from male, female, or non-binary names with traditional vampire naming conventions.","recipe":"combine","parts":["{gender}","surnames"],"join":" ","filters":{"gender":{"label":"Gender","options":["male","female","non_binary"]}},"data":{"male":["Alistair","Armand","Balthazar","Caelen","Cain","Casimir","Corvin","Damian","Dante","Dimitri","Dorian","Draco","Elias","Gideon","Julien","Kaelen","Leandros","Lorenzo","Lucien","Lysander","Malachi","Marcus","Marius","Nicodemus","Orion","Ragnar","Rurik","Seraph","Severin","Silas","Sterling","Thorne","Valerius","Vance","Varian","Vlad"],"female":["Adelina","Amethyst","Anastasia","Aurora","Azriel","Belladonna","Bianca","Carmilla","Cassandra","Dahlia","Elara","Elowen","Esmeralda","Evangeline","Genevieve","Isabella","Isolde","Lenore","Lilith","Lucrezia","Lysandra","Morwen","Nyx","Ophelia","Persephone","Ravenna","Rowan","Selene","Seraphina","Sybella","Valeria","Vespera","Victoria","Viola","Vivienne","Zara"],"non_binary":["Ash","Aura","Bellamy","Blaze","Caelen","Dread","Echo","Eris","Faelan","Glimmer","Halo","Indigo","Jael","Kael","Lyra","Nyx","Orion","Pax","Raven","Rune","Seraph","Shadow","Silver","Slate","Sterling","Storm","Thorne","Vesper","Wren","Zephyr"],"surnames":["Blackwood","Nightshade","Shadowmere","Bloodwick","Crimson","Sanguine","Obsidian","Onyx","Raven","Ravenna","Strix","Corvus","de Bathory","von Bloodwick","de Shadowsong","Dracul","Tepes","Bathory","de Blackwood","von Dracul","Van Bane","Graves","Crypte","Mort","Morte","Noir","Shadow","Aether","Void","Vesper","Echo","Aura","Glimmer","Ironfall","Slate","Stone","Iron"]}};
+    const gen = RecipeEngine.createGenerator(CONFIG);
+    const results = document.getElementById('results');
+    const escape = (t) => { const d = document.createElement('div'); d.textContent = t; return d.innerHTML; };
+
+    document.getElementById('go').addEventListener('click', () => {
+      const filters = {};
+      Object.keys(CONFIG.filters || {}).forEach((k) => {
+        const el = document.getElementById('f-' + k);
+        if (el) filters[k] = el.value;
+      });
+      const count = Math.min(50, Math.max(1, parseInt(document.getElementById('count').value, 10) || 10));
+      try {
+        const names = gen.generate(filters, count);
+        results.innerHTML = names.map((n) => '<li>' + escape(n) + '</li>').join('');
+      } catch (e) {
+        results.innerHTML = '<li style="background:#fdd">' + escape(e.message) + '</li>';
+      }
+    });
+  </script>
+</body>
+</html>

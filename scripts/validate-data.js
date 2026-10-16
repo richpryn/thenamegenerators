@@ -91,18 +91,20 @@ function validateCategory(categorySlug, categoryData) {
     }
 
     // Validate data structure and count names
-    if (generator.data) {
+    // Skip generators that reference data in another category file; their
+    // data is resolved at runtime, so counting names here would be a false 0.
+    if (generator.data && !generator.data._reference) {
       const nameCount = countNames(generator.data);
       if (nameCount < 100) {
-        issues.push({ 
-          type: 'warning', 
-          message: `Generator '${generatorKey}' has only ${nameCount} names (minimum recommended: 100)` 
+        issues.push({
+          type: 'warning',
+          message: `Generator '${generatorKey}' has only ${nameCount} names (minimum recommended: 100)`
         });
       }
       if (nameCount === 0) {
-        issues.push({ 
-          type: 'error', 
-          message: `Generator '${generatorKey}' has no names in data` 
+        issues.push({
+          type: 'error',
+          message: `Generator '${generatorKey}' has no names in data`
         });
       }
     }

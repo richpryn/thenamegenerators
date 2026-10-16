@@ -49,6 +49,10 @@ build/
 secrets.json
 config.json
 credentials.json
+*Personal Access Token*
+*token*.html
+*.pem
+*.key
 
 # Test files (optional - remove if you want to keep test files)
 test-*.html

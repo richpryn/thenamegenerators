@@ -191,11 +191,6 @@ function generateSchemas(generator, category) {
       "price": "0",
       "priceCurrency": "USD"
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "ratingCount": "1000"
-    },
     "featureList": [
       "Generate random names",
       "Filter by category",
@@ -281,8 +276,10 @@ function generateSchemas(generator, category) {
  */
 function generateGeneratorPage(generator, category, categorySlug, generatorKey) {
   const schemas = generateSchemas(generator, category);
-  const schemaScripts = schemas.map(s => 
-    `<script type="application/ld+json">\n${JSON.stringify(s, null, 2)}\n</script>`
+  // Escape "<" as \u003c so a stray "</script>" in any data string cannot
+  // break out of the JSON-LD block. Valid JSON, understood by all parsers.
+  const schemaScripts = schemas.map(s =>
+    `<script type="application/ld+json">\n${JSON.stringify(s, null, 2).replace(/</g, '\\u003c')}\n</script>`
   ).join('\n    ');
 
   // Build filter HTML if filters exist
@@ -379,9 +376,22 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
   const imageUrl = `${baseUrl}/images/${generator.slug}.jpg`;
 
   // Enhanced meta description (150-160 characters optimal)
-  const metaDescription = generator.description.length > 160 
+  const metaDescription = generator.description.length > 160
     ? generator.description.substring(0, 157) + '...'
     : generator.description;
+
+  // HTML-escaped values for safe injection into attributes and plain-text
+  // headings. (Article intro/section content is intentional HTML and is NOT
+  // escaped here.)
+  const escTitle = escapeHtml(seoTitle);
+  const escDesc = escapeHtml(metaDescription);
+  const escKeywords = escapeHtml(generator.seoKeywords);
+  const escGenTitle = escapeHtml(generator.title);
+  const escGenDesc = escapeHtml(generator.description);
+  const escTopic = escapeHtml(generator.title.replace(' Generator', ''));
+  const escCategoryName = escapeHtml(category.name);
+  const escHeroTitle = escapeHtml(generator.article.hero.title);
+  const escHeroTagline = escapeHtml(generator.article.hero.tagline);
 
   const html = `<!DOCTYPE html>
 <html lang="en">
@@ -393,10 +403,10 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
     <script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTo2YmQ3YzdiOS00MDgwLTQ5MmYtOGEyZi0yZWE3YmU2N2E5ZTU=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
     
     <!-- Primary SEO Meta Tags -->
-    <title>${seoTitle}</title>
-    <meta name="title" content="${seoTitle}">
-    <meta name="description" content="${metaDescription}">
-    <meta name="keywords" content="${generator.seoKeywords}">
+    <title>${escTitle}</title>
+    <meta name="title" content="${escTitle}">
+    <meta name="description" content="${escDesc}">
+    <meta name="keywords" content="${escKeywords}">
     <meta name="author" content="The Name Generators">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
@@ -406,8 +416,8 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="${pageUrl}">
-    <meta property="og:title" content="${seoTitle}">
-    <meta property="og:description" content="${metaDescription}">
+    <meta property="og:title" content="${escTitle}">
+    <meta property="og:description" content="${escDesc}">
     <meta property="og:image" content="${imageUrl}">
     <meta property="og:site_name" content="The Name Generators">
     <meta property="og:locale" content="en_US">
@@ -415,16 +425,16 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="${pageUrl}">
-    <meta property="twitter:title" content="${seoTitle}">
-    <meta property="twitter:description" content="${metaDescription}">
+    <meta property="twitter:title" content="${escTitle}">
+    <meta property="twitter:description" content="${escDesc}">
     <meta property="twitter:image" content="${imageUrl}">
-    
+
     <!-- Additional Meta Tags -->
     <meta name="generators" content="${generator.slug}">
-    <meta name="categories" content="${category.name}">
-    
+    <meta name="categories" content="${escCategoryName}">
+
     <!-- AI/LLM Friendly Meta Tags -->
-    <meta name="topic" content="${generator.title.replace(' Generator', '')}">
+    <meta name="topic" content="${escTopic}">
     <meta name="content-type" content="name-generator">
     <meta name="ai-index" content="yes">
     <meta name="ai-crawl" content="allow">
@@ -469,15 +479,15 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
 
     <div class="container">
         <header class="blog-hero">
-            <h1>${generator.article.hero.title}</h1>
-            <p class="tagline">${generator.article.hero.tagline}</p>
+            <h1>${escHeroTitle}</h1>
+            <p class="tagline">${escHeroTagline}</p>
         </header>
 
         <main>
             <section class="embedded-generator">
                 <div class="generator-card">
-                    <h2>Generate Your ${generator.title}</h2>
-                    <p class="generator-description">${generator.description}</p>
+                    <h2>Generate Your ${escGenTitle}</h2>
+                    <p class="generator-description">${escGenDesc}</p>
                     
                     <div class="simple-generator">
                         ${filterHTML}
@@ -497,8 +507,8 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
             </section>
 
             <article class="blog-content" itemscope itemtype="https://schema.org/Article">
-                <meta itemprop="headline" content="${generator.title}">
-                <meta itemprop="description" content="${generator.description}">
+                <meta itemprop="headline" content="${escGenTitle}">
+                <meta itemprop="description" content="${escGenDesc}">
                 <section itemprop="articleBody">
                     <p>${generator.article.intro}</p>
                 </section>
@@ -803,6 +813,13 @@ function generateCategoryPage(category, categorySlug) {
     ? category.categoryInfo.seoDescription.substring(0, 157) + '...'
     : category.categoryInfo.seoDescription;
 
+  // HTML-escaped values for safe attribute/plain-text injection
+  const escCatTitle = escapeHtml(categorySEOTitle);
+  const escCatDesc = escapeHtml(categoryMetaDesc);
+  const escCatName = escapeHtml(category.categoryInfo.name);
+  const escCatDescription = escapeHtml(category.categoryInfo.description);
+  const escCatKeywords = escapeHtml(`${category.categoryInfo.name.toLowerCase()} names, ${category.categoryInfo.name.toLowerCase()} name generator, ${category.categoryInfo.name.toLowerCase()} name generators`);
+
   const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -813,10 +830,10 @@ function generateCategoryPage(category, categorySlug) {
     <script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTo2YmQ3YzdiOS00MDgwLTQ5MmYtOGEyZi0yZWE3YmU2N2E5ZTU=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
     
     <!-- Primary SEO Meta Tags -->
-    <title>${categorySEOTitle}</title>
-    <meta name="title" content="${categorySEOTitle}">
-    <meta name="description" content="${categoryMetaDesc}">
-    <meta name="keywords" content="${category.categoryInfo.name.toLowerCase()} names, ${category.categoryInfo.name.toLowerCase()} name generator, ${category.categoryInfo.name.toLowerCase()} name generators">
+    <title>${escCatTitle}</title>
+    <meta name="title" content="${escCatTitle}">
+    <meta name="description" content="${escCatDesc}">
+    <meta name="keywords" content="${escCatKeywords}">
     <meta name="author" content="The Name Generators">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="${categoryUrl}">
@@ -824,16 +841,16 @@ function generateCategoryPage(category, categorySlug) {
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="${categoryUrl}">
-    <meta property="og:title" content="${categorySEOTitle}">
-    <meta property="og:description" content="${categoryMetaDesc}">
+    <meta property="og:title" content="${escCatTitle}">
+    <meta property="og:description" content="${escCatDesc}">
     <meta property="og:image" content="${categoryImageUrl}">
     <meta property="og:site_name" content="The Name Generators">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="${categoryUrl}">
-    <meta property="twitter:title" content="${categorySEOTitle}">
-    <meta property="twitter:description" content="${categoryMetaDesc}">
+    <meta property="twitter:title" content="${escCatTitle}">
+    <meta property="twitter:description" content="${escCatDesc}">
     <meta property="twitter:image" content="${categoryImageUrl}">
     
     <link rel="stylesheet" href="../styles/main.css">
@@ -863,8 +880,8 @@ function generateCategoryPage(category, categorySlug) {
 
     <div class="container">
         <header class="hero">
-            <h1>${category.categoryInfo.icon} ${category.categoryInfo.name}</h1>
-            <p>${category.categoryInfo.description}</p>
+            <h1>${category.categoryInfo.icon} ${escCatName}</h1>
+            <p>${escCatDescription}</p>
             <p class="generator-count">${generators.length} generator${generators.length !== 1 ? 's' : ''} available</p>
         </header>
 
