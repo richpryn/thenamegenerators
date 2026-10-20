@@ -26,6 +26,7 @@ New and rewritten pages. Read them on the live site; reply in any session with c
 - [ ] Elven Sword (rebuilt: every name now has a real Sindarin or Quenya meaning)
 - [ ] Dungeon Synth (rewritten without your notes; your notes would make it better)
 - [ ] Company and Brand (rewritten; Brand's word lists rebuilt by hand, with a "with a product word" option)
+- [ ] Orc (rebuilt: harsh names with a deed-name, nickname or clan; famous orcs removed)
 - [ ] Wizard (rebuilt: four name formats, epithets by D&D school of magic, male and female)
 - [ ] Dwarf (rebuilt: Norse-style names, mountain or hill clan, or "son of"; Tolkien and D&D names removed)
 - [ ] Dragon (rebuilt: seven kinds, harsh or sleek, optional epithets; famous dragons removed)
