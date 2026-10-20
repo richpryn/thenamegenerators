@@ -1,0 +1,214 @@
+{
+  "title": "World of Warcraft Troll Name Generator",
+  "slug": "wow-troll-name-generator",
+  "icon": "🗿",
+  "category": "warcraft",
+  "published": "2026-10-20",
+  "description": "Warcraft troll names in the style of Vol'jin, Zul'jin and Talanji, with an optional tribe: Darkspear, Zandalari, Amani, Gurubashi and more.",
+  "seoKeywords": "wow troll names, troll name generator, warcraft troll names, darkspear troll names, zandalari troll names, female troll names wow",
+  "isPopular": false,
+  "filters": {
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "name",
+        "tribe"
+      ],
+      "optionLabels": {
+        "name": "Name only",
+        "tribe": "With a tribe"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "name": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": "[names]"
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[names.{gender}]"
+      }
+    },
+    "tribe": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": "[names] of the [tribes]"
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[names.{gender}] of the [tribes]"
+      }
+    }
+  },
+  "data": {
+    "names": {
+      "male": [
+        "Zal'tik",
+        "Jin'rakh",
+        "Ro'kesh",
+        "Vaz'jin",
+        "Zun'tak",
+        "Ma'zul",
+        "Ka'jin",
+        "Tal'rok",
+        "Raz'ji",
+        "Zek'tar",
+        "Gor'jin",
+        "Ul'zan",
+        "Jak'tha",
+        "Ruk'ji",
+        "Zan'gor",
+        "Sha'tek",
+        "Mok'zul",
+        "Dro'zan",
+        "Hak'jin",
+        "Vul'tar",
+        "Zir'mok",
+        "Bwonsa",
+        "Kozzul",
+        "Rakjin",
+        "Tazuk",
+        "Zulmah",
+        "Jinxu",
+        "Raktu",
+        "Voshu",
+        "Zamboro",
+        "Bo'zak",
+        "Dak'ru",
+        "Fen'jin",
+        "Gaz'tu",
+        "Ja'rokh",
+        "Kel'zun",
+        "Lo'tak",
+        "Ne'zuk",
+        "Om'jin",
+        "Pa'zul",
+        "Quz'ja",
+        "Ru'mak",
+        "Se'zok",
+        "Tu'gan",
+        "Wo'zen",
+        "Ya'tak",
+        "Zo'ruk",
+        "Bazjin"
+      ],
+      "female": [
+        "Zen'ara",
+        "Jin'tari",
+        "Sha'ji",
+        "Mal'zara",
+        "Tal'ya",
+        "Zu'nari",
+        "Ki'jara",
+        "Ra'zula",
+        "Vash'ti",
+        "Ze'lani",
+        "Jo'tai",
+        "Ya'zeni",
+        "Na'jin",
+        "Su'zara",
+        "Za'beta",
+        "Wen'ji",
+        "Ma'kesa",
+        "Lo'tana",
+        "Ti'zura",
+        "Ja'mira",
+        "Zaya",
+        "Jinara",
+        "Shazeni",
+        "Talzi",
+        "Rajeena",
+        "Vozalla",
+        "Kizara",
+        "Zunya",
+        "Mabeza",
+        "Tajira",
+        "A'zuli",
+        "Bi'jani",
+        "Do'rasa",
+        "Fe'zira",
+        "Ha'tani",
+        "Ki'mara",
+        "Lu'zeya",
+        "Mo'jani",
+        "Ne'rika",
+        "Pu'zeta",
+        "Ri'jasa",
+        "Sa'nuzi",
+        "Ta'kira",
+        "Vo'jala",
+        "Ze'tuna",
+        "Yazul"
+      ]
+    },
+    "tribes": [
+      "Darkspear",
+      "Zandalari",
+      "Amani",
+      "Gurubashi",
+      "Drakkari",
+      "Sandfury",
+      "Bloodscalp",
+      "Witherbark",
+      "Smolderthorn"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🗿 World of Warcraft Troll Name Generator",
+      "tagline": "Troll names with the snap of Vol'jin and Zul'jin, and a tribe to call home."
+    },
+    "intro": "Warcraft's trolls have names you can hear in your head: Vol'jin, Sen'jin, Zul'jin, Rastakhan, Talanji. Many are two short parts joined by an apostrophe, and \"jin\" turns up again and again. This **World of Warcraft troll name generator** builds names in that style, and can add one of Azeroth's troll tribes.",
+    "sections": [
+      {
+        "heading": "How troll names work",
+        "content": "<ul><li><strong>Two parts and an apostrophe:</strong> Vol'jin, Sen'jin, Zul'jin. The second part is often short and repeated across names, especially <em>-jin</em>.</li><li><strong>Or one strong word:</strong> Rastakhan, Talanji, Zalazane, Rokhan.</li><li><strong>Hard, clipped sounds:</strong> z, j, k and r, with open vowels.</li></ul><p>The generator mixes both kinds, so you get names like Zal'tik and Kozzul. All are new names, not ones from the game.</p>"
+      },
+      {
+        "heading": "The troll tribes",
+        "content": "<ul><li><strong>Darkspear:</strong> the tribe of Sen'jin and Vol'jin, who joined the Horde.</li><li><strong>Zandalari:</strong> the ancient troll empire, ruled by King Rastakhan and later Queen Talanji; playable since Battle for Azeroth.</li><li><strong>Amani:</strong> the forest trolls of Zul'Aman, Zul'jin's people, long-time enemies of the elves.</li><li><strong>Gurubashi:</strong> the jungle trolls of Stranglethorn and Zul'Gurub.</li><li><strong>Drakkari:</strong> the ice trolls of Northrend.</li></ul><p>The <em>With a tribe</em> format adds one of these or other troll tribes from the games, like the Sandfury, Bloodscalp, Witherbark and Smolderthorn.</p>"
+      },
+      {
+        "heading": "Getting a free name in WoW",
+        "content": "<p>WoW names are one word with no apostrophes, so Zal'tik becomes Zaltik in game. Most trolls worship the loa, the spirit-gods of the troll empires, and a troll character's chosen loa makes a good starting point for their story.</p><p>For other Warcraft races, see the <a href=\"night-elf-name-generator.html\">Night Elf</a>, <a href=\"blood-elf-name-generator.html\">Blood Elf</a> and <a href=\"wow-orc-name-generator.html\">Orc</a> name generators.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are some good WoW troll names?",
+        "answer": "Two short parts with an apostrophe, like Vol'jin or Zul'jin, or a single strong word like Rastakhan. In game you'll need to drop the apostrophe."
+      },
+      {
+        "question": "What troll tribes are there in Warcraft?",
+        "answer": "The best known are the Darkspear, Zandalari, Amani, Gurubashi and Drakkari, plus smaller tribes like the Sandfury and Bloodscalp."
+      },
+      {
+        "question": "Are these names from the game?",
+        "answer": "No. They're new names in the same style."
+      }
+    ]
+  }
+}

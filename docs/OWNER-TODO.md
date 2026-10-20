@@ -21,7 +21,7 @@ New and rewritten pages. Read them on the live site; reply in any session with c
 - [ ] Vampire (rewritten)
 - [ ] Category pages and homepage hero
 - [ ] Hammer (renamed), and the Business / Company / Brand split
-- [ ] D&D hub (`categories/dnd-names.html`) and the Tiefling, Tavern, Dragonborn, Halfling, Gnome, Half-Elf, Goblin, Kobold, Lizardfolk, Githyanki, Knight, Paladin, Baldur's Gate 3 and Fantasy Shop generators; the Elder Scrolls hub with Nord, Khajiit, Dunmer, Altmer and Argonian: also request indexing for these
+- [ ] D&D hub (`categories/dnd-names.html`) and the Tiefling, Tavern, Dragonborn, Halfling, Gnome, Half-Elf, Goblin, Kobold, Lizardfolk, Githyanki, Knight, Paladin, Baldur's Gate 3 and Fantasy Shop generators; the Elder Scrolls hub with Nord, Khajiit, Dunmer, Altmer and Argonian; the Warcraft hub with Night Elf, Blood Elf and Troll: also request indexing for these
 - [ ] Path of Exile Witch (rewritten: epithets by Ascendancy)
 - [ ] Elven Sword (rebuilt: every name now has a real Sindarin or Quenya meaning)
 - [ ] Dungeon Synth (rewritten without your notes; your notes would make it better)
