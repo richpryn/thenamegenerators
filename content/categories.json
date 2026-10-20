@@ -160,6 +160,8 @@
       "orc",
       "dragon",
       "wizard",
+      "paladin",
+      "knight",
       "demon",
       "angel",
       "fairy",
@@ -323,7 +325,9 @@
     "generators": [
       "epithet",
       "assassin",
-      "vampire"
+      "vampire",
+      "knight",
+      "paladin"
     ]
   },
   {
