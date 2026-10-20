@@ -17,6 +17,7 @@ What's done, what's left, and what to keep an eye on. Replaces the old SEO, Bing
 - [x] Usage note on every page and in About: free to use, no credit needed, check availability before using a name commercially
 - [x] Proper 404 page (old addresses from the previous site still forward)
 - [x] `llms.txt`: a plain-text map of the site for AI tools, rebuilt on every build
+- [x] Favicon: `favicon.svg` (the source), `favicon.ico` and `apple-touch-icon.png`, linked from every page
 
 ## To do
 
@@ -32,14 +33,11 @@ Every page points at an image that doesn't exist, so links shared on social medi
 
 Either add the images, or point the build at one shared image until there are per-page ones. Once there's a logo, add it to the schema `publisher` in `scripts/build-pages.js`.
 
-### 3. Favicon
-There isn't one. Add `favicon.ico` (and ideally `favicon.svg` and `apple-touch-icon.png`) with `<link rel="icon">` tags in the page templates.
-
-### 4. Check the pages
+### 3. Check the pages
 - Run a few generator pages through https://pagespeed.web.dev (mobile).
 - Run one generator page through https://search.google.com/test/rich-results to check the FAQ and breadcrumb data.
 
-### 5. Optional, later
+### 4. Optional, later
 - Visible breadcrumbs on generator pages (the schema has them; the page doesn't show them)
 - Drop the meta tags search engines ignore (`keywords`, `revisit-after`, `ai-index`, `ai-crawl`)
 - Social sharing buttons
