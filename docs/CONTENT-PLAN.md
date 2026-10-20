@@ -180,7 +180,7 @@ Every fact in these pages needs checking against the source (see the accuracy ru
 
 ### Phase 3: Music & Creators, Rich's moat (weeks 10–18)
 
-**Status:** Band (by genre), Album, Song Title, Rapper, Stage Name and Wu-Tang are live in the Music category. Still to come: Rich's own notes on the Band page (see OWNER-TODO), DJ, Metal/Black Metal, Podcast and YouTube Channel.
+**Status:** Band (by genre), Album, Song Title, Rapper, Stage Name and Wu-Tang are live in the Music category. DJ and Podcast are live too. Still to come: Rich's own notes on the Band page (see OWNER-TODO) and YouTube Channel. Metal is a genre option on Band rather than its own page, to avoid two pages competing.
 
 This is where the site has expertise nobody else can copy. Each page gets notes from Rich (what makes a name work live, on streaming and in a search, and checking for existing bands on Bandcamp, Spotify and Discogs).
 

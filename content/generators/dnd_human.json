@@ -1,0 +1,383 @@
+{
+  "title": "D&D Human Name Generator",
+  "slug": "dnd-human-name-generator",
+  "icon": "🧑",
+  "category": "dnd",
+  "published": "2026-10-20",
+  "description": "Human names for D&D's Forgotten Realms in three regional styles: Chondathan and Tethyrian names of the Sword Coast, Illuskan names of the cold north, and Damaran names.",
+  "seoKeywords": "dnd human names, d&d human name generator, human name generator dnd, forgotten realms human names, chondathan names, illuskan names, damaran names, 5e human names",
+  "isPopular": false,
+  "filters": {
+    "style": {
+      "label": "Region",
+      "options": [
+        "any",
+        "chondathan",
+        "illuskan",
+        "damaran"
+      ],
+      "optionLabels": {
+        "any": "Any style",
+        "chondathan": "Chondathan / Tethyrian (Sword Coast)",
+        "illuskan": "Illuskan (northern coast)",
+        "damaran": "Damaran (Bloodstone Lands)"
+      }
+    },
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "style",
+  "cases": {
+    "chondathan": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[chondathan.male] [chondathan.surnames]",
+            "[chondathan.female] [chondathan.surnames]"
+          ]
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[chondathan.{gender}] [chondathan.surnames]"
+      }
+    },
+    "illuskan": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[illuskan.male] [illuskan.surnames]",
+            "[illuskan.female] [illuskan.surnames]"
+          ]
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[illuskan.{gender}] [illuskan.surnames]"
+      }
+    },
+    "damaran": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[damaran.male] [damaran.surnames]",
+            "[damaran.female] [damaran.surnames]"
+          ]
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[damaran.{gender}] [damaran.surnames]"
+      }
+    },
+    "any": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[chondathan.male] [chondathan.surnames]",
+            "[chondathan.female] [chondathan.surnames]",
+            "[illuskan.male] [illuskan.surnames]",
+            "[illuskan.female] [illuskan.surnames]",
+            "[damaran.male] [damaran.surnames]",
+            "[damaran.female] [damaran.surnames]"
+          ]
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": [
+          "[chondathan.{gender}] [chondathan.surnames]",
+          "[illuskan.{gender}] [illuskan.surnames]",
+          "[damaran.{gender}] [damaran.surnames]"
+        ]
+      }
+    }
+  },
+  "data": {
+    "chondathan": {
+      "male": [
+        "Aldwin",
+        "Bram",
+        "Cedric",
+        "Davin",
+        "Edric",
+        "Fenwick",
+        "Garret",
+        "Harlan",
+        "Jory",
+        "Kellen",
+        "Lorne",
+        "Marten",
+        "Nevin",
+        "Osric",
+        "Perrin",
+        "Roland",
+        "Stefan",
+        "Tobin",
+        "Wendel",
+        "Ansel",
+        "Brennan",
+        "Corwin",
+        "Darian",
+        "Elden",
+        "Gavin"
+      ],
+      "female": [
+        "Adela",
+        "Brynn",
+        "Celeste",
+        "Delia",
+        "Elowen",
+        "Freya",
+        "Gwenna",
+        "Hester",
+        "Imogen",
+        "Jessamy",
+        "Kendra",
+        "Linnet",
+        "Marisa",
+        "Nessa",
+        "Odile",
+        "Rosalind",
+        "Selene",
+        "Tamsin",
+        "Vivian",
+        "Alys",
+        "Brielle",
+        "Corra",
+        "Dorinda",
+        "Evaine"
+      ],
+      "surnames": [
+        "Ashdown",
+        "Brightmantle",
+        "Coldwater",
+        "Dunmere",
+        "Evenford",
+        "Fairbrook",
+        "Greymantle",
+        "Hawkridge",
+        "Ironwood",
+        "Kingsbridge",
+        "Larkspur",
+        "Millbrook",
+        "Northgate",
+        "Oakhart",
+        "Redfern",
+        "Stonebridge",
+        "Thornfield",
+        "Westwater",
+        "Whitlock",
+        "Yarrow"
+      ]
+    },
+    "illuskan": {
+      "male": [
+        "Arnulf",
+        "Bjarn",
+        "Dagr",
+        "Einar",
+        "Fask",
+        "Grimr",
+        "Haldor",
+        "Ivarr",
+        "Kjeld",
+        "Lothar",
+        "Magni",
+        "Njorn",
+        "Orvar",
+        "Ragn",
+        "Sten",
+        "Torfi",
+        "Ulfr",
+        "Vali",
+        "Asgar",
+        "Brodd",
+        "Eskil",
+        "Gudmar",
+        "Hauk",
+        "Ottar",
+        "Rurik"
+      ],
+      "female": [
+        "Aslaug",
+        "Bryndis",
+        "Dagrun",
+        "Eira",
+        "Frida",
+        "Gerd",
+        "Hallveig",
+        "Inga",
+        "Jofrid",
+        "Kelda",
+        "Liv",
+        "Nanna",
+        "Oddny",
+        "Ragna",
+        "Sigga",
+        "Thyri",
+        "Una",
+        "Vigdis",
+        "Yrsa",
+        "Astra",
+        "Brenna",
+        "Edda",
+        "Gunna",
+        "Saga"
+      ],
+      "surnames": [
+        "Blackmast",
+        "Coldtide",
+        "Frostmere",
+        "Greysail",
+        "Hornwave",
+        "Icecrag",
+        "Longoar",
+        "Northwind",
+        "Ravenshield",
+        "Saltbeard",
+        "Seawolf",
+        "Stormhelm",
+        "Tidebreaker",
+        "Wavecrest",
+        "Whitecliff",
+        "Wolfhelm",
+        "Driftwood",
+        "Ironkeel",
+        "Gullfeather",
+        "Skerryman"
+      ]
+    },
+    "damaran": {
+      "male": [
+        "Andrej",
+        "Borislav",
+        "Dmitar",
+        "Fedor",
+        "Grigor",
+        "Ivo",
+        "Jaroslav",
+        "Kazimir",
+        "Lev",
+        "Miroslav",
+        "Nikolai",
+        "Oleg",
+        "Pavel",
+        "Radek",
+        "Stanislav",
+        "Tomislav",
+        "Vadim",
+        "Yaroslav",
+        "Zoran",
+        "Bogdan",
+        "Danilo",
+        "Goran",
+        "Milan",
+        "Rostislav",
+        "Vlasko"
+      ],
+      "female": [
+        "Agnieska",
+        "Bozena",
+        "Darina",
+        "Elena",
+        "Galina",
+        "Irina",
+        "Jelena",
+        "Katarina",
+        "Ludmila",
+        "Milena",
+        "Nadia",
+        "Olesya",
+        "Radka",
+        "Svetlana",
+        "Tatyana",
+        "Vesna",
+        "Yelena",
+        "Zora",
+        "Anika",
+        "Bogna",
+        "Danica",
+        "Ivanka",
+        "Mira",
+        "Sonja",
+        "Vera"
+      ],
+      "surnames": [
+        "Dravenko",
+        "Grozni",
+        "Kovarik",
+        "Lissovan",
+        "Mirovich",
+        "Novakov",
+        "Orlov",
+        "Petrovan",
+        "Radomir",
+        "Stoyan",
+        "Varenko",
+        "Vostrov",
+        "Zelenko",
+        "Dobrov",
+        "Grayskov",
+        "Horvan",
+        "Kalinov",
+        "Marinov",
+        "Rusev",
+        "Volkav"
+      ]
+    }
+  },
+  "article": {
+    "hero": {
+      "title": "🧑 D&D Human Name Generator",
+      "tagline": "Human names for the Forgotten Realms, in the styles of the Sword Coast, the north and Damara."
+    },
+    "intro": "Humans are the most varied people in D&D, and in the Forgotten Realms their names depend on where they come from. The fifth-edition Player's Handbook lists nine human ethnic groups of Faerûn, each with its own naming style. This **D&D human name generator** covers three of the most common in Sword Coast adventures: Chondathan (also used by Tethyrians), Illuskan and Damaran.",
+    "sections": [
+      {
+        "heading": "Human names in the Forgotten Realms",
+        "content": "<p>The Player's Handbook (2014) names nine human groups in Faerûn: Calishite, Chondathan, Damaran, Illuskan, Mulan, Rashemi, Shou, Tethyrian and Turami. Each has its own names, many loosely inspired by real-world languages.</p><p>This generator covers three:</p><ul><li><strong>Chondathan and Tethyrian:</strong> the most common names along the Sword Coast, in cities like Baldur's Gate and Waterdeep. They sound like English and Western European names, slightly altered.</li><li><strong>Illuskan:</strong> the seafaring people of the cold northern Sword Coast, around Luskan. Their names have a Norse feel and their surnames often come from the sea.</li><li><strong>Damaran:</strong> from Damara, in the Bloodstone Lands of north-eastern Faerûn. Their names have a Slavic sound.</li></ul><p>All the names here are new, so you won't share one with an example from the book.</p>"
+      },
+      {
+        "heading": "Choosing a name for your human",
+        "content": "<ul><li><strong>Start with where they grew up.</strong> A fisherman from Luskan and a noble from Waterdeep shouldn't sound alike.</li><li><strong>Use the surname for backstory.</strong> Illuskan sea names (Saltbeard, Tidebreaker) say \"sailor family\" at once.</li><li><strong>Mix for travellers.</strong> A human raised in a port city might have a Chondathan first name and an Illuskan surname.</li></ul><p>For the other peoples of the Realms, see the <a href=\"../categories/dnd-names.html\">D&amp;D name generators</a>, or try the <a href=\"baldurs-gate-3-name-generator.html\">Baldur's Gate 3 Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are the human ethnicities in the Forgotten Realms?",
+        "answer": "The 2014 Player's Handbook lists nine: Calishite, Chondathan, Damaran, Illuskan, Mulan, Rashemi, Shou, Tethyrian and Turami."
+      },
+      {
+        "question": "What names do humans use in Baldur's Gate?",
+        "answer": "Mostly Chondathan and Tethyrian names, the common style of the Sword Coast's cities, with Illuskan names among people from the north."
+      },
+      {
+        "question": "Why only three styles?",
+        "answer": "They're the ones you'll meet most in Sword Coast adventures. The others are tied closely to real-world cultures, and deserve more care than a quick generator can give."
+      }
+    ]
+  }
+}
