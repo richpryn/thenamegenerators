@@ -1,0 +1,211 @@
+{
+  "title": "Superhero Name Generator",
+  "slug": "superhero-name-generator",
+  "icon": "🦸",
+  "category": "people",
+  "published": "2026-10-20",
+  "description": "Superhero names in the classic comic-book shapes: an adjective and a noun, a something-Man or -Woman, a title like Captain or Doctor, or a single bold word.",
+  "seoKeywords": "superhero name generator, superhero names, hero name generator, female superhero names, super hero names, comic book names, oc superhero names",
+  "isPopular": false,
+  "filters": {
+    "format": {
+      "label": "Name format",
+      "options": [
+        "any",
+        "two_words",
+        "man_woman",
+        "title",
+        "single"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "two_words": "Two words (Crimson Comet)",
+        "man_woman": "Something-Man or -Woman",
+        "title": "With a title (Captain Nova)",
+        "single": "One word (Paradox)"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "two_words": {
+      "recipe": "template",
+      "template": "[adj] [noun]"
+    },
+    "man_woman": {
+      "recipe": "template",
+      "template": "[prefix]-[suffix]"
+    },
+    "title": {
+      "recipe": "template",
+      "template": [
+        "[titles] [single]",
+        "[titles] [noun]"
+      ]
+    },
+    "single": {
+      "recipe": "template",
+      "template": [
+        "[single]",
+        "The [noun]"
+      ]
+    },
+    "any": {
+      "recipe": "template",
+      "template": [
+        "[adj] [noun]",
+        "[prefix]-[suffix]",
+        "[titles] [single]",
+        "[single]",
+        "The [noun]"
+      ]
+    }
+  },
+  "data": {
+    "adj": [
+      "Crimson",
+      "Silver",
+      "Golden",
+      "Midnight",
+      "Solar",
+      "Quantum",
+      "Atomic",
+      "Cosmic",
+      "Electric",
+      "Shadow",
+      "Crystal",
+      "Thunder",
+      "Phantom",
+      "Blazing",
+      "Arctic",
+      "Emerald",
+      "Scarlet",
+      "Neon",
+      "Titan",
+      "Mighty",
+      "Stellar",
+      "Turbo",
+      "Frost",
+      "Nova"
+    ],
+    "noun": [
+      "Spark",
+      "Guardian",
+      "Sentinel",
+      "Bolt",
+      "Pulse",
+      "Wraith",
+      "Tempest",
+      "Ranger",
+      "Phoenix",
+      "Valkyrie",
+      "Paladin",
+      "Meteor",
+      "Vector",
+      "Prism",
+      "Specter",
+      "Aegis",
+      "Halo",
+      "Cyclone",
+      "Kestrel",
+      "Orbit",
+      "Lynx",
+      "Harrier",
+      "Bastion",
+      "Warden",
+      "Rampart",
+      "Talon",
+      "Corona",
+      "Ember"
+    ],
+    "prefix": [
+      "Fire",
+      "Storm",
+      "Steel",
+      "Shadow",
+      "Sky",
+      "Light",
+      "Frost",
+      "Volt",
+      "Stone",
+      "Wind",
+      "Moon",
+      "Rocket",
+      "Thunder",
+      "Blaze",
+      "Quake",
+      "Glass",
+      "Shield",
+      "Ember",
+      "Tide"
+    ],
+    "suffix": [
+      "Man",
+      "Woman",
+      "Girl",
+      "Boy",
+      "Kid"
+    ],
+    "titles": [
+      "Captain",
+      "Doctor",
+      "Mister",
+      "Ms.",
+      "Agent",
+      "Professor",
+      "Commander",
+      "Lady",
+      "Sir"
+    ],
+    "single": [
+      "Nebula",
+      "Kinetic",
+      "Velocity",
+      "Paradox",
+      "Infinity",
+      "Equinox",
+      "Zenith",
+      "Momentum",
+      "Solstice",
+      "Catalyst",
+      "Horizon",
+      "Radiance",
+      "Voltage",
+      "Parallax",
+      "Meridian",
+      "Aurora",
+      "Torque",
+      "Cadence",
+      "Flux",
+      "Apex"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🦸 Superhero Name Generator",
+      "tagline": "Hero names in the shapes comics have used for ninety years."
+    },
+    "intro": "Superhero names follow a handful of shapes that comics have used since the 1930s: an adjective and a noun (Green Lantern), something-Man or -Woman (Spider-Man, Wonder Woman), a title (Captain America, Doctor Strange) or one bold word (Storm). This **superhero name generator** builds names in all of them, avoiding the famous ones.",
+    "sections": [
+      {
+        "heading": "The classic shapes",
+        "content": "<ul><li><strong>Something-Man or -Woman:</strong> Superman, Batman, Spider-Man, Wonder Woman. The power or theme, then who they are.</li><li><strong>Adjective and noun:</strong> Green Lantern, Black Panther, Scarlet Witch.</li><li><strong>A title:</strong> Captain America, Doctor Strange, Mister Fantastic, Ms. Marvel. A title adds authority or a hint of the person's job.</li><li><strong>One word:</strong> Storm, Cyclops, Rogue. Short and easy to shout.</li><li><strong>The and a noun:</strong> The Flash, The Atom.</li></ul>"
+      },
+      {
+        "heading": "Making your hero's name work",
+        "content": "<ul><li><strong>Say what they do,</strong> or what they stand for. A name that hints at the power saves an explanation.</li><li><strong>Check it isn't taken.</strong> The big comic publishers have used thousands of names; search before you fall in love with one, especially if you're publishing.</li><li><strong>Think about the real name too.</strong> Comics love alliteration: Peter Parker, Bruce Banner, Wally West.</li></ul><p>Every hero needs someone to fight: try the <a href=\"villain-name-generator.html\">Villain Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I come up with a superhero name?",
+        "answer": "Start from the power or the theme, then pick a shape: something-Man or -Woman, an adjective and a noun, a title like Captain, or one bold word."
+      },
+      {
+        "question": "Can I use these names in my comic or game?",
+        "answer": "Yes, free and with no credit needed. Check the name isn't already used by a published character first, especially for anything you sell."
+      }
+    ]
+  }
+}

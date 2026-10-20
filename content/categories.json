@@ -207,7 +207,9 @@
     ],
     "generators": [
       "fairy",
-      "fairy_town"
+      "fairy_town",
+      "werewolf",
+      "zombie"
     ]
   },
   {
@@ -339,7 +341,11 @@
       "assassin",
       "vampire",
       "knight",
-      "paladin"
+      "paladin",
+      "pirate",
+      "viking",
+      "superhero",
+      "villain"
     ]
   },
   {

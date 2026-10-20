@@ -1,0 +1,188 @@
+{
+  "title": "Werewolf Name Generator",
+  "slug": "werewolf-name-generator",
+  "icon": "🐺",
+  "category": "folklore",
+  "published": "2026-10-20",
+  "description": "Werewolf names from real names that mean wolf, like Faolan (little wolf), Ylva (she-wolf) and Rudolf (famous wolf), with their meanings and a pack to run with.",
+  "seoKeywords": "werewolf name generator, werewolf names, wolf names, names that mean wolf, lycan names, female werewolf names, werewolf pack names",
+  "isPopular": false,
+  "filters": {
+    "format": {
+      "label": "Name format",
+      "options": [
+        "meaning",
+        "pack",
+        "name"
+      ],
+      "optionLabels": {
+        "meaning": "Name and its meaning",
+        "pack": "Name and pack",
+        "name": "Name only"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "meaning": {
+      "recipe": "pick",
+      "from": "withMeaning"
+    },
+    "pack": {
+      "recipe": "template",
+      "template": "[names] of [packs]"
+    },
+    "name": {
+      "recipe": "pick",
+      "from": "names"
+    }
+  },
+  "data": {
+    "names": [
+      "Wolfgang",
+      "Rudolf",
+      "Ulf",
+      "Lowell",
+      "Lyall",
+      "Faolan",
+      "Phelan",
+      "Conall",
+      "Randolph",
+      "Ralph",
+      "Ulric",
+      "Bardolph",
+      "Zev",
+      "Velvel",
+      "Vuk",
+      "Ylva",
+      "Wolfram",
+      "Adalwolf",
+      "Lupus",
+      "Lykos",
+      "Mac Tíre",
+      "Varg",
+      "Ulfhild",
+      "Gunnulf",
+      "Thorulf",
+      "Arnulf",
+      "Ingolf",
+      "Hrolf",
+      "Eadwulf",
+      "Cuthwulf",
+      "Wulfric",
+      "Lovell",
+      "Lupo",
+      "Lobo",
+      "Ulv",
+      "Rolf",
+      "Wolf",
+      "Lupa",
+      "Vukica",
+      "Louve"
+    ],
+    "withMeaning": [
+      "Wolfgang (wolf path)",
+      "Rudolf (famous wolf)",
+      "Ulf (wolf)",
+      "Lowell (little wolf)",
+      "Lyall (wolf)",
+      "Faolan (little wolf)",
+      "Phelan (wolf)",
+      "Conall (strong wolf)",
+      "Randolph (shield wolf)",
+      "Ralph (wolf counsel)",
+      "Ulric (wolf power)",
+      "Bardolph (bright wolf)",
+      "Zev (wolf)",
+      "Velvel (wolf)",
+      "Vuk (wolf)",
+      "Ylva (she-wolf)",
+      "Wolfram (wolf raven)",
+      "Adalwolf (noble wolf)",
+      "Lupus (wolf)",
+      "Lykos (wolf)",
+      "Mac Tíre (wolf (son of the land))",
+      "Varg (wolf)",
+      "Ulfhild (wolf battle)",
+      "Gunnulf (war wolf)",
+      "Thorulf (Thor's wolf)",
+      "Arnulf (eagle wolf)",
+      "Ingolf (Ing's wolf)",
+      "Hrolf (famous wolf)",
+      "Eadwulf (prosperous wolf)",
+      "Cuthwulf (famous wolf)",
+      "Wulfric (wolf power)",
+      "Lovell (little wolf)",
+      "Lupo (wolf)",
+      "Lobo (wolf)",
+      "Ulv (wolf)",
+      "Rolf (famous wolf)",
+      "Wolf (wolf)",
+      "Lupa (she-wolf)",
+      "Vukica (little she-wolf)",
+      "Louve (she-wolf)"
+    ],
+    "packs": [
+      "the Silver Pack",
+      "the Blood Moon Pack",
+      "Clan Greymane",
+      "the Ashwood Pack",
+      "the Howling Hollow",
+      "the Frostfang Pack",
+      "Clan Duskmaw",
+      "the Ironpaw Pack",
+      "the Hollow Moon",
+      "the Thornwood Pack",
+      "Clan Nightrunner",
+      "the Red Fell Pack",
+      "the Moorland Pack",
+      "the Black Fen Pack",
+      "Clan Stonejaw",
+      "the Whitefang Pack",
+      "Clan Moonhowl",
+      "the Cinder Pack",
+      "the Hollowmere Pack",
+      "the Wildwood Pack",
+      "the Gallows Hill Pack",
+      "Clan Ashmane",
+      "the Saltmarsh Pack",
+      "the Barrow Pack"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🐺 Werewolf Name Generator",
+      "tagline": "Real names that mean wolf, with their meanings, and a pack to run with."
+    },
+    "intro": "The best werewolf names hide the wolf in plain sight. Remus Lupin in Harry Potter is the famous example: Lupin comes from <em>lupus</em>, Latin for wolf. This **werewolf name generator** uses real names from around Europe that mean wolf, from the Irish Faolan to the Swedish Ylva, and shows you what each one means.",
+    "sections": [
+      {
+        "heading": "Names that mean wolf",
+        "content": "<p>Wolves were admired and feared across Europe, so many old names were built on the word for wolf:</p><ul><li><strong>Germanic and Norse:</strong> <em>wulf</em> or <em>ulf</em> appears in Rudolf (famous wolf), Ulric (wolf power) and Randolph (shield wolf), and on its own as Ulf.</li><li><strong>Irish:</strong> Faolan and Phelan both come from the Irish word for wolf.</li><li><strong>Slavic:</strong> Vuk is the Serbian and Croatian word for wolf.</li><li><strong>Hebrew and Yiddish:</strong> Zev and Velvel both mean wolf.</li><li><strong>Latin and Greek:</strong> Lupus and Lykos are simply the words for wolf.</li></ul><p>Choose <em>Name and its meaning</em> to see each name's meaning next to it.</p>"
+      },
+      {
+        "heading": "Where werewolves come from",
+        "content": "<p>The word <em>lycanthropy</em> comes from the Greek for wolf (<em>lykos</em>) and man (<em>anthropos</em>). In Greek myth, as Ovid tells it, King Lycaon served Zeus human flesh and was turned into a wolf as punishment.</p><p>Belief in werewolves was taken seriously in early modern Europe: in 1589 Peter Stumpp was tried and executed in Germany as a werewolf, and in France in the 1760s the killings by the Beast of Gévaudan were blamed by some on a werewolf.</p>"
+      },
+      {
+        "heading": "Naming your werewolf",
+        "content": "<ul><li><strong>Hide the wolf.</strong> A name that means wolf is a clue for readers who look it up, as Lupin was.</li><li><strong>Give them a pack.</strong> Werewolves in modern fiction often belong to a pack with its own name and territory.</li><li><strong>Think about the human name too.</strong> A werewolf lives most of the month as a person; Lowell or Ralph sounds ordinary until you know what it means.</li></ul><p>For other creatures of the night, see the <a href=\"vampire-name-generator.html\">Vampire Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What names mean wolf?",
+        "answer": "Many: Rudolf (famous wolf), Ulric (wolf power), Lowell (little wolf), Faolan (little wolf, Irish), Ylva (she-wolf, Swedish), Vuk (Serbian), Zev (Hebrew) and more. This generator lists them with their meanings."
+      },
+      {
+        "question": "Why is Remus Lupin a werewolf name?",
+        "answer": "Lupin comes from the Latin lupus, wolf, and Remus was one of the twins raised by a she-wolf in Roman legend."
+      },
+      {
+        "question": "What does lycanthropy mean?",
+        "answer": "Turning into a wolf. The word comes from the Greek lykos (wolf) and anthropos (man)."
+      }
+    ]
+  }
+}

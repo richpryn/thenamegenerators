@@ -192,6 +192,9 @@ This is where the site has expertise nobody else can copy. Each page gets notes 
 - Link the gig and festival options of the Event Name Generator from here.
 
 ### Phase 4: Monsters & Genres (weeks 14–22)
+
+**Status:** Pirate, Viking, Superhero and Villain (Characters) and Werewolf and Zombie (Folklore) are live. Next: Cyberpunk, Robot, Spaceship, Ghost, Witch hub.
+
 A broad audience (writers, gamers, horror fans) that still links back to fantasy.
 
 Zombie, Werewolf, Pirate (and pirate ship), Viking (crosses into Moat 7), Superhero, Villain, Cyberpunk, Robot/Android, Sci-fi character, Spaceship, Horror character, Witch hub (linking Swamp Witch, HP Witch and PoE Witch), Ghost.
