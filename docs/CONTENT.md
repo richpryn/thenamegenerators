@@ -97,7 +97,7 @@ Each category in `content/categories.json` has a `heading` (the H1), `seoTitle`,
 
 ## Progress
 
-Done to these notes: Skyrim Orc, Elf, Business, Epithet, Demon Epithet, Hogwarts Legacy Witch, Hogwarts Legacy Wizard, Event (new), Vampire. Homepage hero and all 10 category intros.
+Done to these notes: Skyrim Orc, Elf, Business, Epithet, Demon Epithet, Hogwarts Legacy Witch, Hogwarts Legacy Wizard, Event (new), Vampire, Path of Exile Witch. Homepage hero, All Generators and all 10 category intros.
 
 Order for the rest: pages with clicks or impressions first (check Search Console → Performance → Pages), then the pages flagged below.
 
@@ -105,7 +105,6 @@ Search Console, October 2026: Hogwarts Legacy Witch (4 clicks / 239 impressions)
 
 Known problems to fix when each page's turn comes:
 - **Elven Sword**: the "translations" in the name list don't match real Elvish (e.g. "Anar-falas" = "Azure-Grace"; it would mean roughly "sun-shore"). The list needs redoing.
-- **Path of Exile Witch**: no real characters named.
 - **Dungeon Synth**: no real artists named; ideal for notes from Rich.
 - **Hammer** (was Warhammer; renamed so the old address can become a Warhammer 40k character page): title, intro and keywords are new, but the sections are still the old style ("Our generator", "perfect for", unchecked video-game examples) and need a full rewrite.
 - **Business, Company, Brand**: each now has one job (Business: single words for shops, trades and services; Company: startup-style names; Brand: product names by industry) with its own keywords and a "which should I use?" FAQ. Company and Brand sections still need rewriting to these notes; keep each page to its job.
