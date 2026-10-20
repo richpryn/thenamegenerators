@@ -255,12 +255,183 @@ body {
 }
 
 .name-results li {
-    padding: 0.75rem;
+    display: flex;
+    align-items: stretch;
     background: var(--bg-color);
     border-radius: var(--border-radius);
-    text-align: center;
-    font-weight: 500;
     border: 1px solid var(--border-color);
+}
+
+/* Names are buttons: click to copy */
+.name-copy {
+    flex: 1;
+    position: relative;
+    padding: 0.75rem;
+    background: none;
+    border: none;
+    border-radius: var(--border-radius);
+    font: inherit;
+    font-weight: 500;
+    color: var(--text-color);
+    text-align: center;
+    cursor: copy;
+    transition: var(--transition);
+}
+
+.name-copy:hover,
+.name-copy:focus-visible {
+    color: var(--primary-dark);
+    background: var(--bg-light);
+}
+
+.name-copy:focus-visible,
+.name-save:focus-visible,
+.shortlist-button:focus-visible,
+.shortlist-remove:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.name-copy[data-state]::after,
+.shortlist-button[data-state]::after {
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 4px);
+    transform: translateX(-50%);
+    padding: 0.2rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+    color: white;
+    background: #2e7d32;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+.name-copy[data-state="copied"]::after,
+.shortlist-button[data-state="copied"]::after { content: 'Copied'; }
+
+.name-copy[data-state="failed"]::after,
+.shortlist-button[data-state="failed"]::after { content: 'Couldn\2019t copy'; background: #d32f2f; }
+
+.name-save {
+    flex: none;
+    width: 2.75rem;
+    background: none;
+    border: none;
+    border-left: 1px solid var(--border-color);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    font-size: 1.15rem;
+    line-height: 1;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.name-save:hover { color: #d81b60; background: var(--bg-light); }
+.name-save[aria-pressed="true"] { color: #d81b60; background: #fce4ec; }
+
+.results-hint {
+    margin-bottom: 0.75rem;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    text-align: center;
+}
+
+/* Shortlist panel (shared by every generator, kept in localStorage) */
+.shortlist {
+    margin-top: 1.5rem;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--border-color);
+    border-left: 4px solid #d81b60;
+    border-radius: var(--border-radius);
+    background: var(--bg-color);
+}
+
+.shortlist-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.shortlist-header h3 { font-size: 1.1rem; margin: 0; }
+.shortlist-count { color: var(--text-light); font-weight: 400; }
+
+.shortlist-actions { display: flex; gap: 0.5rem; }
+
+.shortlist-button {
+    position: relative;
+    padding: 0.4rem 0.9rem;
+    font: inherit;
+    font-size: 0.9rem;
+    color: var(--primary-dark);
+    background: var(--bg-color);
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.shortlist-button:hover { background: var(--primary-color); color: white; }
+
+.shortlist-items { list-style: none; }
+
+.shortlist-items li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.shortlist-items li:last-child { border-bottom: none; }
+
+.shortlist-items .name-copy { text-align: left; padding: 0.5rem 0.25rem; }
+
+.shortlist-source {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 45%;
+}
+
+.shortlist-source:hover { color: var(--primary-color); text-decoration: underline; }
+
+.shortlist-remove {
+    flex: none;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: var(--text-light);
+    background: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.shortlist-remove:hover { color: #d32f2f; background: var(--bg-light); }
+
+.shortlist-note {
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.count-group select { max-width: 12rem; }
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
 }
 
 .error {

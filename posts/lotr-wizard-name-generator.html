@@ -355,11 +355,20 @@
                     <div class="simple-generator">
                         
                         <div class="generator-controls">
+                            <div class="filter-group count-group">
+                                <label for="name-count">How many:</label>
+                                <select id="name-count">
+                                    <option value="8" selected>8 names</option>
+                                    <option value="16">16 names</option>
+                                    <option value="32">32 names</option>
+                                </select>
+                            </div>
                             <button id="generate-btn" class="generate-button">Generate Names</button>
                         </div>
                         <div class="results-area" id="results">
                             <p class="results-placeholder">Click "Generate Names" to see results</p>
                         </div>
+                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
                         <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
                     </div>
                     
@@ -552,7 +561,7 @@
         </footer>
     </div>
 
-    <script type="application/json" id="generator-config">{"slug":"lotr-wizard-name-generator","filters":{},"recipe":"pick","from":"names","data":{"names":["Aelindor","Calandil","Eldamar","Lindoriel","Mithrandan","Silvanar","Tarandil","Vorondil","Nimlothar","Alatariel","Findarion","Ithalion","Rómendil","Telperion","Yávandil","Ithilmar","Caladwen","Erestoril","Falathron","Meneldor","Aranel","Narien","Orolind","Quendil","Seregon","Vanyarion","Anduinor","Elenthar","Haliondil","Lórienar","Morindor","Noldaran","Ohtaril","Palandor","Ríanon","Tilionar","Uldorien","Valandil","Wilwarin","Yestarion","Aelorn","Calathil","Elanoril","Lindoneth","Mithrilian","Silvaneth","Tarannon","Vorondeth","Nimlothan","Alatarion","Curundil","Curumir","Curuvaen","Olorwen","Olórendil","Olorion","Mithrandor","Mithlaurë","Mithrion","Istarion","Istarandil","Istaren","Calenmir","Calenhíl","Ninquelor","Ninquendil","Carnimir","Carnion","Luinwë","Luinamir","Sulimar","Suliondil","Nenharion","Ramandor","Ramaldir","Turamaldo","Turvalion","Aiwendor","Aiwenion","Ithilnor","Hírandil","Hîrvellon","Elenmaldo","Elendor","Isilmar","Isildan","Morthannon","Mornedir","Anarmir","Anarvaen","Tindomir","Tindoril","Lómendil","Ormaldor","Ilúvandor","Taurgil","Gwaedhir","Gwathren","Rhovandir","Ernildur","Hithlormir","Thalionmir","Amonvaen","Celebrandor","Celebrimir","Galdormir","Faelithar","Lothmaldir","Nárendil","Nárion","Úrimor","Ondomir","Ondolion","Fëaldir","Silmaron","Tarmendil","Taurion","Varnimir","Vanimor","Yávenion","Yavannor","Quession","Quendaril","Lindarion","Lindimaldo","Ainuvar","Ainulindor","Nólemir","Nólendil","Erumaldor","Elvamir","Haldaven","Oiolmir","Oiolondil","Rómenhir","Andúnemir","Andúnil","Hísendil","Hísilmar","Fanuilor","Fanyamir","Menelthor","Tálimar","Tolindor","Ulmandil","Valacirion","Wilwarion","Raumondil","Raumion","Cuivion","Cuiviendil","Laurendil","Lauremir","Tinwemir","Tinwëandil"]}}</script>
+    <script type="application/json" id="generator-config">{"title":"LOTR Wizard Name Generator","slug":"lotr-wizard-name-generator","filters":{},"recipe":"pick","from":"names","data":{"names":["Aelindor","Calandil","Eldamar","Lindoriel","Mithrandan","Silvanar","Tarandil","Vorondil","Nimlothar","Alatariel","Findarion","Ithalion","Rómendil","Telperion","Yávandil","Ithilmar","Caladwen","Erestoril","Falathron","Meneldor","Aranel","Narien","Orolind","Quendil","Seregon","Vanyarion","Anduinor","Elenthar","Haliondil","Lórienar","Morindor","Noldaran","Ohtaril","Palandor","Ríanon","Tilionar","Uldorien","Valandil","Wilwarin","Yestarion","Aelorn","Calathil","Elanoril","Lindoneth","Mithrilian","Silvaneth","Tarannon","Vorondeth","Nimlothan","Alatarion","Curundil","Curumir","Curuvaen","Olorwen","Olórendil","Olorion","Mithrandor","Mithlaurë","Mithrion","Istarion","Istarandil","Istaren","Calenmir","Calenhíl","Ninquelor","Ninquendil","Carnimir","Carnion","Luinwë","Luinamir","Sulimar","Suliondil","Nenharion","Ramandor","Ramaldir","Turamaldo","Turvalion","Aiwendor","Aiwenion","Ithilnor","Hírandil","Hîrvellon","Elenmaldo","Elendor","Isilmar","Isildan","Morthannon","Mornedir","Anarmir","Anarvaen","Tindomir","Tindoril","Lómendil","Ormaldor","Ilúvandor","Taurgil","Gwaedhir","Gwathren","Rhovandir","Ernildur","Hithlormir","Thalionmir","Amonvaen","Celebrandor","Celebrimir","Galdormir","Faelithar","Lothmaldir","Nárendil","Nárion","Úrimor","Ondomir","Ondolion","Fëaldir","Silmaron","Tarmendil","Taurion","Varnimir","Vanimor","Yávenion","Yavannor","Quession","Quendaril","Lindarion","Lindimaldo","Ainuvar","Ainulindor","Nólemir","Nólendil","Erumaldor","Elvamir","Haldaven","Oiolmir","Oiolondil","Rómenhir","Andúnemir","Andúnil","Hísendil","Hísilmar","Fanuilor","Fanyamir","Menelthor","Tálimar","Tolindor","Ulmandil","Valacirion","Wilwarion","Raumondil","Raumion","Cuivion","Cuiviendil","Laurendil","Lauremir","Tinwemir","Tinwëandil"]}}</script>
     <script src="../lib/recipe-engine.js"></script>
     <script src="../lib/page.js"></script>
 </body>

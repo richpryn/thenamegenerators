@@ -330,11 +330,20 @@
             </select>
           </div></div>
                         <div class="generator-controls">
+                            <div class="filter-group count-group">
+                                <label for="name-count">How many:</label>
+                                <select id="name-count">
+                                    <option value="8" selected>8 names</option>
+                                    <option value="16">16 names</option>
+                                    <option value="32">32 names</option>
+                                </select>
+                            </div>
                             <button id="generate-btn" class="generate-button">Generate Names</button>
                         </div>
                         <div class="results-area" id="results">
                             <p class="results-placeholder">Click "Generate Names" to see results</p>
                         </div>
+                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
                         <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
                     </div>
                     
@@ -458,7 +467,7 @@
         </footer>
     </div>
 
-    <script type="application/json" id="generator-config">{"slug":"vampire-name-generator","filters":{"gender":{"label":"Gender","options":["male","female","non_binary"]}},"recipe":"combine","parts":["{gender}","surnames"],"join":" ","data":{"male":["Alistair","Armand","Balthazar","Caelen","Cain","Casimir","Corvin","Damian","Dante","Dimitri","Dorian","Draco","Elias","Gideon","Julien","Kaelen","Leandros","Lorenzo","Lucien","Lysander","Malachi","Marcus","Marius","Nicodemus","Orion","Ragnar","Rurik","Seraph","Severin","Silas","Sterling","Thorne","Valerius","Vance","Varian","Vlad"],"female":["Adelina","Amethyst","Anastasia","Aurora","Azriel","Belladonna","Bianca","Carmilla","Cassandra","Dahlia","Elara","Elowen","Esmeralda","Evangeline","Genevieve","Isabella","Isolde","Lenore","Lilith","Lucrezia","Lysandra","Morwen","Nyx","Ophelia","Persephone","Ravenna","Rowan","Selene","Seraphina","Sybella","Valeria","Vespera","Victoria","Viola","Vivienne","Zara"],"non_binary":["Ash","Aura","Bellamy","Blaze","Caelen","Dread","Echo","Eris","Faelan","Glimmer","Halo","Indigo","Jael","Kael","Lyra","Nyx","Orion","Pax","Raven","Rune","Seraph","Shadow","Silver","Slate","Sterling","Storm","Thorne","Vesper","Wren","Zephyr"],"surnames":["Blackwood","Nightshade","Shadowmere","Bloodwick","Crimson","Sanguine","Obsidian","Onyx","Raven","Ravenna","Strix","Corvus","de Bathory","von Bloodwick","de Shadowsong","Dracul","Tepes","Bathory","de Blackwood","von Dracul","Van Bane","Graves","Crypte","Mort","Morte","Noir","Shadow","Aether","Void","Vesper","Echo","Aura","Glimmer","Ironfall","Slate","Stone","Iron"]}}</script>
+    <script type="application/json" id="generator-config">{"title":"Vampire Name Generator","slug":"vampire-name-generator","filters":{"gender":{"label":"Gender","options":["male","female","non_binary"]}},"recipe":"combine","parts":["{gender}","surnames"],"join":" ","data":{"male":["Alistair","Armand","Balthazar","Caelen","Cain","Casimir","Corvin","Damian","Dante","Dimitri","Dorian","Draco","Elias","Gideon","Julien","Kaelen","Leandros","Lorenzo","Lucien","Lysander","Malachi","Marcus","Marius","Nicodemus","Orion","Ragnar","Rurik","Seraph","Severin","Silas","Sterling","Thorne","Valerius","Vance","Varian","Vlad"],"female":["Adelina","Amethyst","Anastasia","Aurora","Azriel","Belladonna","Bianca","Carmilla","Cassandra","Dahlia","Elara","Elowen","Esmeralda","Evangeline","Genevieve","Isabella","Isolde","Lenore","Lilith","Lucrezia","Lysandra","Morwen","Nyx","Ophelia","Persephone","Ravenna","Rowan","Selene","Seraphina","Sybella","Valeria","Vespera","Victoria","Viola","Vivienne","Zara"],"non_binary":["Ash","Aura","Bellamy","Blaze","Caelen","Dread","Echo","Eris","Faelan","Glimmer","Halo","Indigo","Jael","Kael","Lyra","Nyx","Orion","Pax","Raven","Rune","Seraph","Shadow","Silver","Slate","Sterling","Storm","Thorne","Vesper","Wren","Zephyr"],"surnames":["Blackwood","Nightshade","Shadowmere","Bloodwick","Crimson","Sanguine","Obsidian","Onyx","Raven","Ravenna","Strix","Corvus","de Bathory","von Bloodwick","de Shadowsong","Dracul","Tepes","Bathory","de Blackwood","von Dracul","Van Bane","Graves","Crypte","Mort","Morte","Noir","Shadow","Aether","Void","Vesper","Echo","Aura","Glimmer","Ironfall","Slate","Stone","Iron"]}}</script>
     <script src="../lib/recipe-engine.js"></script>
     <script src="../lib/page.js"></script>
 </body>

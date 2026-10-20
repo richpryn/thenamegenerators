@@ -143,6 +143,15 @@ Each generator page shows about 24 example names in its HTML, grouped by filter 
 
 Dropdowns run top to bottom: options that have no names for the choices above them are hidden. For example, dragon types that only exist for "neutral" don't appear while "male" is selected.
 
+## ♥ Using the names
+
+Built in `lib/page.js`, on every generator page and the homepage:
+
+- **Click a name to copy it** (generated names and the example names).
+- **♥ a name to save it to the shortlist**, which shows under the results. It's kept in the browser (`localStorage`) and shared by every generator, with Copy all, Clear, and a link back to the generator each name came from.
+- **How many**: 8, 16 or 32 names on generator pages; the choice is remembered.
+- **Shareable settings**: after generating, the address bar holds the choices (`?gender=female&origin=tolkien&n=16`). Opening that link sets the same choices and shows names straight away. Canonical tags point at the plain URL, so these don't count as separate pages.
+
 ## 🎨 Customization
 
 - **Styling**: `styles/main.css` (global), `styles/blog.css` (article pages)
