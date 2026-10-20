@@ -9,6 +9,17 @@
   "isPopular": true,
   "popularRank": 3,
   "filters": {
+    "sound": {
+      "label": "Sound",
+      "options": [
+        "harsh",
+        "sleek"
+      ],
+      "optionLabels": {
+        "harsh": "Harsh (Vharuzul)",
+        "sleek": "Sleek (Hrimyra)"
+      }
+    },
     "kind": {
       "label": "Kind of Dragon",
       "options": [
@@ -30,17 +41,6 @@
         "shadow": "Shadow",
         "sea": "Sea",
         "venom": "Venom and swamp"
-      }
-    },
-    "sound": {
-      "label": "Sound",
-      "options": [
-        "harsh",
-        "sleek"
-      ],
-      "optionLabels": {
-        "harsh": "Harsh (Vharuzul)",
-        "sleek": "Sleek (Hrimyra)"
       }
     },
     "format": {
