@@ -1,0 +1,315 @@
+{
+  "title": "Elden Ring Name Generator",
+  "slug": "elden-ring-name-generator",
+  "icon": "💍",
+  "category": "pop_culture",
+  "published": "2026-10-20",
+  "description": "Elden Ring names in FromSoftware's style: a Tarnished name, or a boss-worthy title like Godrick the Grafted, Starscourge Radahn or Rennala, Queen of the Full Moon.",
+  "seoKeywords": "elden ring name generator, elden ring names, elden ring character names, tarnished names, elden ring boss names, fromsoftware names, nightreign names",
+  "isPopular": false,
+  "filters": {
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "any",
+        "title",
+        "epithet",
+        "prefix",
+        "name"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "title": "Name and title (Rennala, Queen of the Full Moon)",
+        "epithet": "Name and epithet (Godrick the Grafted)",
+        "prefix": "Title first (Starscourge Radahn)",
+        "name": "Tarnished name only"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "title": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[names.male], [titles.male]",
+            "[names.male], [titles.neutral]",
+            "[names.female], [titles.female]",
+            "[names.female], [titles.neutral]"
+          ]
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": [
+          "[names.{gender}], [titles.{gender}]",
+          "[names.{gender}], [titles.neutral]"
+        ]
+      }
+    },
+    "epithet": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[names.male] [epithets]",
+            "[names.female] [epithets]"
+          ]
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": [
+          "[names.{gender}] [epithets]"
+        ]
+      }
+    },
+    "prefix": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[prefixes] [names.male]",
+            "[prefixes] [names.female]"
+          ]
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": [
+          "[prefixes] [names.{gender}]"
+        ]
+      }
+    },
+    "name": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[names.male]",
+            "[names.female]"
+          ]
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": [
+          "[names.{gender}]"
+        ]
+      }
+    },
+    "any": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[names.male], [titles.male]",
+            "[names.male], [titles.neutral]",
+            "[names.male] [epithets]",
+            "[prefixes] [names.male]",
+            "[names.female], [titles.female]",
+            "[names.female], [titles.neutral]",
+            "[names.female] [epithets]",
+            "[prefixes] [names.female]"
+          ]
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": [
+          "[names.{gender}], [titles.{gender}]",
+          "[names.{gender}], [titles.neutral]",
+          "[names.{gender}] [epithets]",
+          "[prefixes] [names.{gender}]"
+        ]
+      }
+    }
+  },
+  "data": {
+    "names": {
+      "male": [
+        "Aldric",
+        "Caedmon",
+        "Dorian",
+        "Edrin",
+        "Faramund",
+        "Gideon",
+        "Halric",
+        "Jorvik",
+        "Kael",
+        "Lucan",
+        "Neroth",
+        "Perrin",
+        "Quill",
+        "Rodric",
+        "Ulric",
+        "Wendric",
+        "Zarael",
+        "Agnar",
+        "Corvin",
+        "Desmond",
+        "Fenric",
+        "Garrow",
+        "Lysander",
+        "Oswin",
+        "Tarn",
+        "Wulfric"
+      ],
+      "female": [
+        "Belvane",
+        "Ilvane",
+        "Orsolya",
+        "Selvane",
+        "Thessaly",
+        "Vashti",
+        "Beyla",
+        "Eira",
+        "Helvane",
+        "Kestrel",
+        "Maelis",
+        "Nerys",
+        "Rhoswen",
+        "Sabeth",
+        "Vespera",
+        "Aurelith",
+        "Gwenhyr",
+        "Lunet",
+        "Odalys"
+      ]
+    },
+    "titles": {
+      "male": [
+        "Lord of Ash",
+        "Lord of Thorns",
+        "Prince of Dusk",
+        "Lord of the Barrow",
+        "King of the Hollow Throne",
+        "Lord of Withered Roots",
+        "Lord of the Drowned Bells"
+      ],
+      "female": [
+        "Queen of the Waning Moon",
+        "Lady of the Silent Tide",
+        "Lady of Blades",
+        "Bride of the Abyss",
+        "Queen of Cinders",
+        "Lady of Spiders",
+        "Mother of Grafts"
+      ],
+      "neutral": [
+        "Bearer of the Shattered Crown",
+        "Keeper of the Frenzied Flame",
+        "Knight of the Ashen Vow",
+        "the Rot Saint",
+        "Warden of the Forsaken Gate",
+        "Herald of the Fallen Star",
+        "the Unbound Ember",
+        "Sworn of the Black Flame",
+        "Keeper of the Sealed Tree",
+        "Shepherd of the Lost"
+      ]
+    },
+    "epithets": [
+      "the Grafted",
+      "the Unburnt",
+      "the Hollow-Eyed",
+      "the Rotborn",
+      "the Crowned",
+      "the Ashen",
+      "the Forsaken",
+      "the Twice-Slain",
+      "the Starless",
+      "the Bloodied",
+      "the Thorned",
+      "the Sleepless",
+      "the Hungering",
+      "the Tarnished",
+      "the Gilded",
+      "the Broken-Winged",
+      "the Silent",
+      "the Moonless",
+      "the Gaunt",
+      "the Frenzied"
+    ],
+    "prefixes": [
+      "Ashen",
+      "Rotting",
+      "Frenzied",
+      "Stormhawk",
+      "Gravewarden",
+      "Moonlit",
+      "Dragonkin",
+      "Thornbound",
+      "Grafted",
+      "Golden",
+      "Cinderborn",
+      "Lightless",
+      "Sunken",
+      "Duskborn",
+      "Starfallen",
+      "Stormborn",
+      "Hollowed",
+      "Gravebound",
+      "Mistborn",
+      "Ashbound"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "💍 Elden Ring Name Generator",
+      "tagline": "Tarnished names and boss-worthy titles, in the style of the Lands Between."
+    },
+    "intro": "Elden Ring's characters are known as much by their titles as their names: Godrick the Grafted, Starscourge Radahn, Rennala, Queen of the Full Moon, Malenia, Blade of Miquella. This **Elden Ring name generator** makes names in those patterns, from a plain Tarnished name for your character to a title worthy of a demigod's boss bar.",
+    "sections": [
+      {
+        "heading": "Three ways the Lands Between names its great ones",
+        "content": "<ul><li><strong>Name, then title:</strong> Rennala, Queen of the Full Moon; Malenia, Blade of Miquella; Rykard, Lord of Blasphemy; Morgott, the Omen King. The title says what they rule or what they are.</li><li><strong>Name and epithet:</strong> Godrick the Grafted. One word that sums up the horror or the legend.</li><li><strong>Title first:</strong> Starscourge Radahn. A title so famous it comes before the name.</li></ul><p>Your own character, a Tarnished, usually goes by a plain name. The <em>Tarnished name only</em> format gives you one; the others are for the boss you'd like to become, or the one your friends will face in co-op.</p>"
+      },
+      {
+        "heading": "What makes a name sound like Elden Ring",
+        "content": "<ul><li><strong>Old European names, slightly worn:</strong> Godfrey, Rennala, Melina, Alexander. Familiar enough to say, strange enough to feel ancient.</li><li><strong>Titles built from the setting's big ideas:</strong> the moon and stars, rot, fire, blood, grafting, the Erdtree.</li><li><strong>Grim honesty:</strong> FromSoftware titles describe exactly what went wrong. A lord of rot is rotting.</li></ul><p>All the names and titles here are new, so you won't accidentally name your character after a demigod.</p>"
+      },
+      {
+        "heading": "Naming your Tarnished",
+        "content": "<ul><li><strong>Keep it short for messages.</strong> Your name appears in summon signs and invasions, so a simple name is easier for other players to recognise.</li><li><strong>Save the title for roleplay.</strong> Build a backstory around a title like Warden of the Forsaken Gate, then let the game decide if you live up to it.</li><li><strong>Match the build.</strong> A faith build might suit a golden title; an arcane or bleed build suits something bloodier.</li></ul>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How are Elden Ring boss names made?",
+        "answer": "Usually a name plus a title (Rennala, Queen of the Full Moon), a name plus an epithet (Godrick the Grafted) or a title before the name (Starscourge Radahn)."
+      },
+      {
+        "question": "What should I name my Tarnished?",
+        "answer": "A short, old-sounding name works best, because it shows on summon signs and invasions. Set the format to \"Tarnished name only\" for a list."
+      },
+      {
+        "question": "Are these names from Elden Ring?",
+        "answer": "No. They're new names and titles in the game's style."
+      }
+    ]
+  }
+}
