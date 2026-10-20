@@ -4,8 +4,8 @@
   "icon": "🏷️",
   "category": "organizations",
   "published": "2025-12-01",
-  "description": "Generate modern, brandable brand names across 18 categories. From tech innovation to luxury premium, nature organic to bold athletic—find the perfect brand name for your business, product, or creative project.",
-  "seoKeywords": "brand names, brand name generator, business brand names, product brand names, company brand names, brandable names, modern brand names",
+  "description": "Brand and product names sorted by industry and feel, from tech and luxury to food, fashion and outdoor. 18 categories, or all of them at once.",
+  "seoKeywords": "brand name generator, brand names, product name generator, product names, brand name ideas, brandable names, clothing brand names",
   "isPopular": true,
   "popularRank": 7,
   "filters": {
@@ -2664,9 +2664,9 @@
   "article": {
     "hero": {
       "title": "🏷️ Brand Name Generator",
-      "tagline": "Generate modern, brandable brand names across 18 categories. Perfect for businesses, products, startups, and creative projects."
+      "tagline": "Names for a product or brand, sorted by industry and feel: 18 categories from luxury to outdoor."
     },
-    "intro": "Brand names are the foundation of your brand identity, communicating your company's values, personality, and market position. From tech innovation names like 'Nexus' and 'Apex' to luxury premium names like 'Regal' and 'Opulent', brand names tell stories about your business's mission, vision, and character. Our **brand name generator** offers thousands of brandable names across 18 distinct categories, helping you find the perfect name for your business, product, startup, or creative project.",
+    "intro": "A brand name has to suit what it is on: Luxe and Regal sound right on a perfume, Terra and Sage on a skincare range, Titan on trainers. This **brand name generator** sorts names by industry and feel, across 18 categories, so you start from words that already fit your product. Pick \"All categories\" for a mix.",
     "sections": [
       {
         "heading": "The Power of Brand Names",
@@ -2705,6 +2705,10 @@
       {
         "question": "What's the difference between 'All Categories' and specific categories?",
         "answer": "Choosing 'All Categories' will generate names from all 18 brand categories, providing maximum variety. Choosing a specific category (like Tech Innovation or Luxury Premium) will only generate names from that category, ensuring all names match that specific brand identity and market position."
+      },
+      {
+        "question": "Business, company or brand name generator: which should I use?",
+        "answer": "This one suggests names for a product or range, sorted by industry and feel. The <a href=\"business-name-generator.html\">Business Name Generator</a> gives you strong single words to build a shop, trade or service name around, and the <a href=\"company-name-generator.html\">Company Name Generator</a> makes startup-style names: invented words, blends and -ify/-ly endings. Whichever you use, check the name is free before you commit to it."
       }
     ]
   }

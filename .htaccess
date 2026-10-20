@@ -23,6 +23,7 @@ Redirect 301 /witch-name-generator-hogwarts-legacy/ /posts/hogwarts-legacy-witch
 Redirect 301 /wizard-name-generator-hogwarts-legacy/ /posts/hogwarts-legacy-wizard-name-generator.html
 Redirect 301 /funny-wizard-name-generator/ /posts/funny-wizard-name-generator.html
 Redirect 301 /wizard-name-generator-lord-of-the-rings/ /posts/lotr-wizard-name-generator.html
+Redirect 301 /posts/warhammer-name-generator.html /posts/hammer-name-generator.html
 
 # Security Headers
 <IfModule mod_headers.c>

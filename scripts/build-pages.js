@@ -88,6 +88,31 @@ function navDropdownHtml(categories, prefix) {
 }
 
 const SITE_NAME = 'The Name Generators';
+
+// Generator pages that changed address: old slug -> new slug (see movedPage).
+// warhammer -> hammer: "warhammer name generator" searches are for Warhammer
+// 40k characters, so the weapon page took a clearer name and the old address
+// is free for a Warhammer character page later (remove this line then).
+const MOVED_PAGES = {
+  'warhammer-name-generator': 'hammer-name-generator',
+};
+
+function movedPage(newSlug) {
+  const url = `https://thenamegenerators.com/posts/${newSlug}.html`;
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moved | ${SITE_NAME}</title>
+    <link rel="canonical" href="${url}">
+    <meta http-equiv="refresh" content="0; url=${newSlug}.html">
+</head>
+<body>
+    <p>This page has moved to <a href="${newSlug}.html">${url}</a>.</p>
+</body>
+</html>
+`;
+}
 // Favicons (absolute paths: the 404 page is served at any address)
 const ICON_LINKS = `<link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -919,6 +944,14 @@ function build() {
     fs.writeFileSync(path.join(POSTS_DIR, `${generator.slug}.html`), generateGeneratorPage(generator, category, site));
     fs.writeFileSync(path.join(RUNTIME_DIR, `${generator.key}.json`), JSON.stringify(runtimeConfig(generator)));
     console.log(`  ✅ Created: posts/${generator.slug}.html`);
+  }
+
+  // Pages that moved within the site. GitHub Pages can't send real redirects,
+  // so the old address keeps a small page that forwards at once; search
+  // engines treat an instant refresh plus a canonical link as a move.
+  for (const [oldSlug, newSlug] of Object.entries(MOVED_PAGES)) {
+    fs.writeFileSync(path.join(POSTS_DIR, `${oldSlug}.html`), movedPage(newSlug));
+    console.log(`  ↪️  Forwarding: posts/${oldSlug}.html -> posts/${newSlug}.html`);
   }
 
   // Drop runtime files for generators that no longer exist

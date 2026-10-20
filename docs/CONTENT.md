@@ -108,3 +108,5 @@ Known problems to fix when each page's turn comes:
 - **Path of Exile Witch**: no real characters named.
 - **Dungeon Synth**: no real artists named; ideal for notes from Rich.
 - **Vampire**: almost no article (48 words).
+- **Hammer** (was Warhammer; renamed so the old address can become a Warhammer 40k character page): title, intro and keywords are new, but the sections are still the old style ("Our generator", "perfect for", unchecked video-game examples) and need a full rewrite.
+- **Business, Company, Brand**: each now has one job (Business: single words for shops, trades and services; Company: startup-style names; Brand: product names by industry) with its own keywords and a "which should I use?" FAQ. Company and Brand sections still need rewriting to these notes; keep each page to its job.

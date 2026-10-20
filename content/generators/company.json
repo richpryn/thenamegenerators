@@ -4,8 +4,8 @@
   "icon": "🏢",
   "category": "organizations",
   "published": "2025-12-01",
-  "description": "Generate modern, brandable company names perfect for startups, businesses, and brands. Choose from single words, portmanteaus, trendy suffixes, invented words, or memorable combinations.",
-  "seoKeywords": "company names, company name generator, startup names, brand names, business name generator, brandable names, modern company names",
+  "description": "Startup-style company names in five styles: invented words, blends, -ify and -ly endings, real words and two-part names. Plus how to check a name is free.",
+  "seoKeywords": "company name generator, company names, startup name generator, startup names, tech company names, LLC name ideas, invented company names",
   "isPopular": true,
   "popularRank": 8,
   "filters": {
@@ -1537,9 +1537,9 @@
   "article": {
     "hero": {
       "title": "🏢 Company Name Generator",
-      "tagline": "Generate modern, brandable company names perfect for startups, businesses, and brands. From single words to memorable combinations."
+      "tagline": "Startup-style company names: invented words, blends, -ify endings and two-part names."
     },
-    "intro": "Company names are the foundation of your brand identity. A great company name is short, memorable, easy to spell and pronounce, and works as a .com domain. Our **company name generator** offers {{names}} brandable names across 5 distinct styles, helping you find the perfect name for your startup, business, or brand.",
+    "intro": "Most new tech and startup names follow a handful of patterns: an invented word (Kodak), a blend of two words (Pinterest), a trendy ending (Shopify, Calendly) or a plain word used boldly (Slack). This **company name generator** makes names in each of those styles, {{names}} in all, so you can see which shape suits your company before you check it is free to register.",
     "sections": [
       {
         "heading": "Company Name Styles",
@@ -1574,6 +1574,10 @@
       {
         "question": "Which style should I choose?",
         "answer": "Choose based on your brand personality: Single Word for simplicity, Portmanteau for creativity, Trendy Suffix for modern tech feel, Invented for uniqueness, or Combinations for descriptive flexibility."
+      },
+      {
+        "question": "Business, company or brand name generator: which should I use?",
+        "answer": "This one makes startup-style names: invented words, blends and -ify/-ly endings. The <a href=\"business-name-generator.html\">Business Name Generator</a> gives you strong single words to build a shop, trade or service name around, and the <a href=\"brand-name-generator.html\">Brand Name Generator</a> suggests names for a product or range, sorted by industry and feel. Whichever you use, check the name is free before you commit to it."
       }
     ]
   }
