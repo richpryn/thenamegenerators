@@ -197,7 +197,7 @@ function howItWorksHtml(generator) {
       return;
     }
     // A switch on this filter changes how names are built: show a sample of each
-    const shapes = generator.recipe === 'switch' && generator.on === key;
+    const shapes = generator.recipe === 'switch' && generator.on === key && f.options.length <= 8;
     if (shapes) {
       choices.push(`<li><strong>${escapeHtml(f.label)}:</strong><ul>${f.options.map(opt => {
         const [sample] = engine.generate({ ...defaults, [key]: opt }, 1);

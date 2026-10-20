@@ -185,7 +185,8 @@ function countCombinations(gen) {
     if (f.type === 'text') continue;
     combos = combos.flatMap((c) => engine.availableOptions(key, c).map((opt) => ({ ...c, [key]: opt })));
   }
-  return combos.reduce((n, c) => n + count(gen, c), 0);
+  // An "any" choice mixes the others, so it adds nothing new
+  return combos.filter((c) => !Object.values(c).includes('any')).reduce((n, c) => n + count(gen, c), 0);
 }
 
 // 2,740 -> "2,700"; 1,195 -> "1,100" (for "over {{combinations}}")
