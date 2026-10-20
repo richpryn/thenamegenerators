@@ -97,11 +97,11 @@ Each category in `content/categories.json` has a `heading` (the H1), `seoTitle`,
 
 ## Progress
 
-Done to these notes: Skyrim Orc, Elf, Business, Epithet, Demon Epithet, Hogwarts Legacy Witch, Hogwarts Legacy Wizard, Event (new), Vampire, Path of Exile Witch, Elven Sword, Dungeon Synth (notes from Rich still wanted), Hammer. Homepage hero, All Generators and all 10 category intros.
+Done to these notes: Skyrim Orc, Elf, Business, Epithet, Demon Epithet, Hogwarts Legacy Witch, Hogwarts Legacy Wizard, Event (new), Vampire, Path of Exile Witch, Elven Sword, Dungeon Synth (notes from Rich still wanted), Hammer, Company. Homepage hero, All Generators and all 10 category intros.
 
 Order for the rest: pages with clicks or impressions first (check Search Console → Performance → Pages), then the pages flagged below.
 
 Search Console, October 2026: Hogwarts Legacy Witch (4 clicks / 239 impressions) and Epithet (3 / 77) are the only generator pages with clicks. The homepage (534 impressions), Places category (229), Events category (156, with no generators in it) and All Generators (133) get most impressions, so the homepage and category pages are next.
 
 Known problems to fix when each page's turn comes:
-- **Business, Company, Brand**: each now has one job (Business: single words for shops, trades and services; Company: startup-style names; Brand: product names by industry) with its own keywords and a "which should I use?" FAQ. Company and Brand sections still need rewriting to these notes; keep each page to its job.
+- **Business, Company, Brand**: each now has one job (Business: single words for shops, trades and services; Company: startup-style names; Brand: product names by industry) with its own keywords and a "which should I use?" FAQ. Company is rewritten (five name shapes, choosing a style, checks); Brand sections still need rewriting to these notes. Keep each page to its job.
