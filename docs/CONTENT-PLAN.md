@@ -126,6 +126,9 @@ While traffic is this low, lean towards Track A: roughly one rewrite for every n
 6. SEO.md to-dos that affect sharing: share image, GA4.
 
 ### Phase 1: Own D&D (weeks 2–8)
+
+**Status:** D&D hub, Tiefling and Tavern are live. Next: Dragonborn, Halfling, Gnome, Human, Goblin, Half-Elf.
+
 Biggest searches, best fit, and most of the engine work is reuse.
 
 **New hub:** *D&D Name Generators* (category `dnd`), listing every race, class and place and linking out to all of them. Reposition `dnd-fantasy-name-generator` as the all-races page that this hub leads with, with a Race filter that draws on the race pages' lists.

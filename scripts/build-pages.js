@@ -250,7 +250,7 @@ function howItWorksHtml(generator) {
     }
   });
   if (choices.length) parts.push(`<p>The choices:</p>\n                <ul>${choices.join('')}</ul>`);
-  parts.push(`<p>Each press gives you 8 names, and you won't see the same one twice until you've been through everything for the choices you've made.</p>`);
+  parts.push(`<p>Each press gives you 8, 16 or 32 names (choose under "How many"), and you won't see the same one twice until you've been through everything for the choices you've made.</p>`);
 
   return `
             <section class="blog-content how-it-works">

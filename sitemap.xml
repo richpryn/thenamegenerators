@@ -49,6 +49,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Category: D&D -->
+  <url>
+    <loc>https://thenamegenerators.com/categories/dnd-names.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Category: Folklore -->
   <url>
     <loc>https://thenamegenerators.com/categories/folklore-names.html</loc>
@@ -423,6 +430,20 @@
   <!-- Generator: Sword Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/sword-name-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Tavern Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/tavern-name-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Tiefling Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/tiefling-name-generator.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

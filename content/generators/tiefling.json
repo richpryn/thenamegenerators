@@ -1,0 +1,345 @@
+{
+  "title": "Tiefling Name Generator",
+  "slug": "tiefling-name-generator",
+  "icon": "😈",
+  "category": "dnd",
+  "published": "2026-10-20",
+  "description": "Tiefling names the way D&D describes them: infernal names passed down through a bloodline, or virtue names like Hope and Torment that a tiefling chooses to live up to.",
+  "seoKeywords": "tiefling names, tiefling name generator, dnd tiefling names, tiefling virtue names, infernal names, 5e tiefling names, bg3 tiefling names",
+  "isPopular": false,
+  "filters": {
+    "type": {
+      "label": "Name type",
+      "options": [
+        "any",
+        "infernal",
+        "virtue"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "infernal": "Infernal name",
+        "virtue": "Virtue name"
+      }
+    },
+    "gender": {
+      "label": "Gender (infernal names)",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "type",
+  "cases": {
+    "infernal": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "pick",
+          "from": "infernal"
+        }
+      },
+      "default": {
+        "recipe": "pick",
+        "from": "infernal.{gender}"
+      }
+    },
+    "virtue": {
+      "recipe": "pick",
+      "from": "virtues"
+    },
+    "any": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[infernal]",
+            "[virtues]"
+          ]
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": [
+          "[infernal.{gender}]",
+          "[virtues]"
+        ]
+      }
+    }
+  },
+  "data": {
+    "infernal": {
+      "male": [
+        "Akzarel",
+        "Arkadon",
+        "Azrimos",
+        "Balthaz",
+        "Barzemon",
+        "Belakos",
+        "Carthos",
+        "Damarek",
+        "Daskarion",
+        "Dravos",
+        "Ekzarion",
+        "Eskaros",
+        "Ezekar",
+        "Galthos",
+        "Ithamon",
+        "Ixarion",
+        "Kazrimos",
+        "Kelthas",
+        "Korvax",
+        "Lekarion",
+        "Lucarion",
+        "Malakos",
+        "Malphion",
+        "Marekos",
+        "Melkaris",
+        "Morvekh",
+        "Nazarel",
+        "Nekros",
+        "Orzamos",
+        "Pazurek",
+        "Phelos",
+        "Raxathos",
+        "Rhakon",
+        "Sarvoth",
+        "Sekarion",
+        "Skathos",
+        "Tamorek",
+        "Tharzon",
+        "Theskar",
+        "Uzrimon",
+        "Valakos",
+        "Varekh",
+        "Vazrael",
+        "Xerothan",
+        "Xyrak",
+        "Zarakim",
+        "Zekarion",
+        "Zethos",
+        "Zorvanos",
+        "Abraxos",
+        "Andrazel",
+        "Carzeth",
+        "Demarion",
+        "Haldrakos",
+        "Ilthurek",
+        "Kastemon",
+        "Morzeth",
+        "Oskaros",
+        "Velmarek"
+      ],
+      "female": [
+        "Akeira",
+        "Akrista",
+        "Anthrasia",
+        "Arixa",
+        "Azrae",
+        "Belrissa",
+        "Bryxia",
+        "Caeria",
+        "Damrisa",
+        "Elysara",
+        "Erissa",
+        "Ezraela",
+        "Ghaelis",
+        "Ilvira",
+        "Iraxa",
+        "Kalthea",
+        "Kazria",
+        "Kerissa",
+        "Lerasha",
+        "Lilistra",
+        "Malaris",
+        "Marekka",
+        "Morrigha",
+        "Naxia",
+        "Nemyra",
+        "Orissa",
+        "Orveia",
+        "Pelthia",
+        "Phaedris",
+        "Quissara",
+        "Raxia",
+        "Rhyzaia",
+        "Sarissa",
+        "Sekaria",
+        "Seraxa",
+        "Thaelia",
+        "Thessira",
+        "Valeska",
+        "Varissa",
+        "Vexia",
+        "Xantheia",
+        "Xeris",
+        "Zaela",
+        "Zekira",
+        "Zethra",
+        "Ziraxa",
+        "Amrisa",
+        "Belkaia",
+        "Corvessa",
+        "Draxia",
+        "Elphia",
+        "Ixara",
+        "Lethia",
+        "Mazriel",
+        "Neriska",
+        "Sythia",
+        "Velaxa"
+      ]
+    },
+    "virtues": [
+      "Ambition",
+      "Anguish",
+      "Ardour",
+      "Ash",
+      "Bliss",
+      "Bravery",
+      "Candour",
+      "Chance",
+      "Charity",
+      "Cinder",
+      "Clarity",
+      "Comfort",
+      "Compassion",
+      "Courage",
+      "Dawn",
+      "Defiance",
+      "Delight",
+      "Desire",
+      "Devotion",
+      "Dirge",
+      "Discord",
+      "Dread",
+      "Dream",
+      "Dusk",
+      "Echo",
+      "Ember",
+      "Endurance",
+      "Envy",
+      "Faith",
+      "Fervour",
+      "Folly",
+      "Fortune",
+      "Freedom",
+      "Fury",
+      "Grace",
+      "Grief",
+      "Hunger",
+      "Honour",
+      "Humility",
+      "Hymn",
+      "Joy",
+      "Justice",
+      "Kindness",
+      "Lament",
+      "Liberty",
+      "Longing",
+      "Loyalty",
+      "Malice",
+      "Mercy",
+      "Mirth",
+      "Mischief",
+      "Mourning",
+      "Myth",
+      "Nightfall",
+      "Nobody",
+      "Omen",
+      "Pity",
+      "Patience",
+      "Penance",
+      "Pride",
+      "Promise",
+      "Prudence",
+      "Purpose",
+      "Question",
+      "Quiet",
+      "Rapture",
+      "Reason",
+      "Regret",
+      "Remorse",
+      "Resolve",
+      "Riddle",
+      "Ruin",
+      "Sacrifice",
+      "Serenity",
+      "Silence",
+      "Solace",
+      "Song",
+      "Spite",
+      "Story",
+      "Tempest",
+      "Tenacity",
+      "Thorn",
+      "Tithe",
+      "Triumph",
+      "Trust",
+      "Truth",
+      "Valour",
+      "Vengeance",
+      "Verse",
+      "Vigil",
+      "Virtue",
+      "Wander",
+      "Whisper",
+      "Wisdom",
+      "Wonder",
+      "Wrath",
+      "Yearning",
+      "Zeal"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "😈 Tiefling Name Generator",
+      "tagline": "Infernal names from a fiendish bloodline, or a virtue name to live up to: the two ways D&D tieflings name themselves."
+    },
+    "intro": "Tieflings carry a fiend somewhere in their family tree, and their names often show it. The Player's Handbook describes three kinds: a name from the culture they grew up in, an <strong>infernal name</strong> handed down through the bloodline, or a <strong>virtue name</strong> such as Hope or Torment that a young tiefling picks for themselves. This **tiefling name generator** gives you the last two, {{names}} names in all, or a mix of both.",
+    "sections": [
+      {
+        "heading": "Three ways a tiefling gets a name",
+        "content": "<p>The fifth-edition Player's Handbook (2014) splits tiefling names into three groups:</p><ul><li><strong>A name from the culture they were born into.</strong> A tiefling raised by humans in Waterdeep may simply be called Mara or Tomas. This generator doesn't cover these; any human name generator will do.</li><li><strong>An infernal name.</strong> Names in the style of the Infernal language, passed down through generations, that mark the family's fiendish heritage. The book's examples include Akmenos and Kallista.</li><li><strong>A virtue name.</strong> A word for a virtue or idea, chosen by tieflings trying to find their place in the world, who then try to live up to it. The book lists names like Hope, Glory, Sorrow and Torment.</li></ul><p>The three can be combined. A tiefling might keep an infernal name at home and go by a virtue name on the road, or use a human surname from the town that took them in.</p>"
+      },
+      {
+        "heading": "What infernal names sound like",
+        "content": "<p>The Player's Handbook's infernal names lean towards the sound of ancient Greek and Latin: Damakos, Pelaios and Kallista would not look out of place in a book of myths. The names in this generator follow the same patterns:</p><ul><li><strong>Male names</strong> often end in <em>-os</em>, <em>-on</em>, <em>-ek</em> or <em>-ar</em>, with hard sounds in the middle: Kazrimos, Damarek, Ithamon.</li><li><strong>Female names</strong> usually end in a vowel or <em>-is</em>: Kalthea, Belrissa, Phaedris.</li><li><strong>Z, x and th</strong> turn up more often than in human names, which gives them their fiendish edge without making them unpronounceable.</li></ul><p>All the infernal names here are new, built from those sounds, so you won't share a name with an example from the book.</p>"
+      },
+      {
+        "heading": "Choosing a virtue name",
+        "content": "<p>A virtue name says what a tiefling wants to be, or what the world expects of them. The word doesn't have to be a virtue in the strict sense: the Player's Handbook includes Despair, Fear and Torment alongside Hope and Excellence.</p><ul><li><strong>Aspirational:</strong> Mercy, Valour, Resolve. The tiefling is setting a goal, and the name becomes a promise.</li><li><strong>Defiant:</strong> Spite, Ruin, Wrath. A name that takes what people already think of them and wears it openly.</li><li><strong>Odd or poetic:</strong> Riddle, Verse, Nobody. Good for a tiefling who doesn't take the custom too seriously.</li></ul><p>For roleplay, the gap between the name and the character is the interesting part: a tiefling called Patience with a short temper has a story built in.</p>"
+      },
+      {
+        "heading": "Tieflings you may know",
+        "content": "<ul><li><strong>Karlach</strong> in Baldur's Gate 3: a tiefling from Baldur's Gate who escaped from Zariel's army in Avernus, with a short, plain name rather than an infernal or virtue one.</li><li><strong>Zevlor</strong>, also in Baldur's Gate 3, who leads the tiefling refugees at the Emerald Grove.</li><li><strong>Jester Lavorre</strong> in Critical Role's second campaign: a tiefling raised in the city of Nicodranas, with a name from the world she grew up in.</li></ul><p>Plenty of well-known tieflings don't use an infernal or virtue name at all, so it is a choice worth making on purpose.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do tieflings get their names in D&D?",
+        "answer": "In the fifth-edition Player's Handbook, a tiefling's name comes from the culture they grew up in, from the Infernal language and passed down through the family, or is a virtue name like Hope that they choose and try to live up to."
+      },
+      {
+        "question": "Do tieflings have surnames?",
+        "answer": "Infernal and virtue names are usually used alone. A tiefling raised among humans may take a family name from them, and you can always add an epithet: try the <a href=\"epithet-generator.html\">Epithet Generator</a>."
+      },
+      {
+        "question": "Are these names from the Player's Handbook?",
+        "answer": "No. The infernal names are new names in the same style. Virtue names are ordinary words, so a few (Hope, Sorrow) are also in the book's list."
+      },
+      {
+        "question": "Can I use these for Baldur's Gate 3?",
+        "answer": "Yes. Baldur's Gate 3 uses fifth-edition D&D's tieflings, so infernal and virtue names both fit, and the character creator lets you type any name."
+      }
+    ]
+  }
+}
