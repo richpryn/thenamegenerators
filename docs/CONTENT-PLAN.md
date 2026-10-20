@@ -115,6 +115,9 @@ While traffic is this low, lean towards Track A: roughly one rewrite for every n
 ## Phases
 
 ### Phase 0: Foundations (first 2–3 weeks)
+
+**Status (20 Oct 2026):** 1–4 are done: homepage and category intros, the Event Name Generator, the generator upgrades, and the Hammer rename and Business/Company/Brand split. Vampire is next in Track A.
+
 1. **Homepage and the 10 category pages** (most impressions): a real title and intro for each, the best generators first with a line on what each does, and a homepage hero that says what the site is. This is where the moat hubs begin; later phases add new hubs (D&D, Elder Scrolls, Music…) the same way.
 2. **Event Name Generator** for the empty Events category (156 impressions). A Type filter with "Any": party, festival, gig, fundraiser, tournament or raid, quiz night, hen/stag do (all in the keyword list). Gigs and festivals get notes from Rich. It can later split into Festival, Party and Hen/Stag Do pages if Search Console shows those queries.
 3. Copy-to-clipboard, shortlist, count choice and URL settings (above).
