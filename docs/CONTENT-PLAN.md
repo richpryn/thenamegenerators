@@ -161,7 +161,7 @@ Biggest searches, best fit, and most of the engine work is reuse.
 
 ### Phase 2: Finish the fandom clusters you've started (weeks 6–14)
 
-**Status:** Elder Scrolls cluster done: hub (`categories/elder_scrolls-names.html`), Skyrim Orc, Nord, Khajiit, Dunmer, Altmer, Argonian. Warcraft cluster done: hub (`categories/warcraft-names.html`), WoW Orc, Night Elf, Blood Elf, Troll. Warhammer done: hub (`categories/warhammer-names.html`) and the Warhammer 40k Name Generator at the old `warhammer-name-generator` address (Space Marines by Chapter style, Imperial Guard, Aeldari). Next: Tolkien (Hobbit), Game of Thrones characters, Elden Ring.
+**Status:** Elder Scrolls cluster done: hub (`categories/elder_scrolls-names.html`), Skyrim Orc, Nord, Khajiit, Dunmer, Altmer, Argonian. Warcraft cluster done: hub (`categories/warcraft-names.html`), WoW Orc, Night Elf, Blood Elf, Troll. Warhammer done: hub (`categories/warhammer-names.html`) and the Warhammer 40k Name Generator at the old `warhammer-name-generator` address (Space Marines by Chapter style, Imperial Guard, Aeldari). Hobbit and Game of Thrones character names are live too. Next: Elden Ring, then Phase 3 (Music & Creators) generators that do not need Rich's notes: Band, Album, Song Title, Rapper, Stage Name, Wu-Tang.
 
 Build out franchises where the site already has a page, so each becomes a small hub. **Start with Harry Potter**: Hogwarts Legacy Witch gets the site's most clicks, and its two pages are already rebuilt.
 
