@@ -1,0 +1,248 @@
+{
+  "title": "Goblin Name Generator",
+  "slug": "goblin-name-generator",
+  "icon": "👺",
+  "category": "dnd",
+  "published": "2026-10-20",
+  "description": "Goblin, hobgoblin and bugbear names for D&D: snappy goblin names with an epithet, disciplined hobgoblin names with a rank, and lumbering bugbear names.",
+  "seoKeywords": "goblin names, goblin name generator, dnd goblin names, hobgoblin names, bugbear names, funny goblin names, goblinoid names",
+  "isPopular": false,
+  "filters": {
+    "kind": {
+      "label": "Goblinoid",
+      "options": [
+        "goblin",
+        "hobgoblin",
+        "bugbear"
+      ]
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "with_title",
+        "name"
+      ],
+      "optionLabels": {
+        "with_title": "With an epithet or rank",
+        "name": "Name only"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "name": {
+      "recipe": "pick",
+      "from": "{kind}"
+    },
+    "with_title": {
+      "recipe": "switch",
+      "on": "kind",
+      "cases": {
+        "goblin": {
+          "recipe": "template",
+          "template": "[goblin] [goblinEpithets]"
+        },
+        "hobgoblin": {
+          "recipe": "template",
+          "template": "[hobgoblinRanks] [hobgoblin]"
+        },
+        "bugbear": {
+          "recipe": "template",
+          "template": "[bugbear] [goblinEpithets]"
+        }
+      }
+    }
+  },
+  "data": {
+    "goblin": [
+      "Snik",
+      "Grub",
+      "Skrit",
+      "Bogg",
+      "Zit",
+      "Gnash",
+      "Rikket",
+      "Splug",
+      "Krag",
+      "Yip",
+      "Mog",
+      "Snaggle",
+      "Dreg",
+      "Fizz",
+      "Grit",
+      "Klik",
+      "Nub",
+      "Pox",
+      "Rask",
+      "Skab",
+      "Tuk",
+      "Wort",
+      "Zog",
+      "Blik",
+      "Druk",
+      "Ekk",
+      "Gobbo",
+      "Hiss",
+      "Jink",
+      "Krik",
+      "Lug",
+      "Mudd",
+      "Nix",
+      "Pog",
+      "Quig",
+      "Rutt",
+      "Sprock",
+      "Twitch",
+      "Vex",
+      "Wiggit",
+      "Yark",
+      "Zub",
+      "Blort",
+      "Krunk",
+      "Tikka",
+      "Gribble",
+      "Fennik"
+    ],
+    "hobgoblin": [
+      "Azrak",
+      "Bargath",
+      "Corvax",
+      "Dravik",
+      "Garzhul",
+      "Irzan",
+      "Kalgor",
+      "Morzak",
+      "Narvash",
+      "Orzhul",
+      "Pazrek",
+      "Rakkor",
+      "Sargath",
+      "Tazrin",
+      "Ulgrak",
+      "Varzhan",
+      "Zarvok",
+      "Brakkus",
+      "Dorvak",
+      "Ghaztor",
+      "Kargul",
+      "Lazrok",
+      "Murgath",
+      "Rhazul",
+      "Skargor",
+      "Thraxis",
+      "Vorgath",
+      "Zhurak",
+      "Akkar"
+    ],
+    "bugbear": [
+      "Brugg",
+      "Grum",
+      "Krogg",
+      "Murrok",
+      "Ogg",
+      "Rumbo",
+      "Skulk",
+      "Thrum",
+      "Ugbert",
+      "Vlug",
+      "Brakka",
+      "Durg",
+      "Grunk",
+      "Hargo",
+      "Klunk",
+      "Lurk",
+      "Mungo",
+      "Rok",
+      "Shug",
+      "Tharg",
+      "Bumble",
+      "Gorrumph",
+      "Hrunk",
+      "Magg",
+      "Plodd",
+      "Snaggard",
+      "Trog"
+    ],
+    "goblinEpithets": [
+      "the Sneak",
+      "Two-Teeth",
+      "the Quick",
+      "Rat-Eater",
+      "Earbiter",
+      "the Lucky",
+      "Shinykeeper",
+      "Fire-Starter",
+      "the Loud",
+      "Bootstealer",
+      "Halfnose",
+      "the Clever",
+      "Back-Stabber",
+      "the Small",
+      "Muckfoot",
+      "Gutsnatcher",
+      "the Shrill",
+      "Ratcatcher",
+      "Mudcrawler",
+      "the Bold",
+      "Spikehat",
+      "Knife-Licker",
+      "Bonepicker",
+      "Puddlejumper",
+      "Copperclaw",
+      "Stinkfoot",
+      "the Sly",
+      "Rustblade",
+      "Eye-Gouger",
+      "Torchgrabber"
+    ],
+    "hobgoblinRanks": [
+      "Captain",
+      "Warlord",
+      "Sergeant",
+      "Commander",
+      "Marshal",
+      "Legionnaire",
+      "Warcaster",
+      "Overseer",
+      "Lieutenant",
+      "Centurion",
+      "General"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "👺 Goblin Name Generator",
+      "tagline": "Short, sharp goblin names, hobgoblins with a rank and bugbears with a reputation."
+    },
+    "intro": "Goblins are the first monster many D&D parties meet, and the ones they remember have names. In the starter adventure Lost Mine of Phandelver it's Yeemik the goblin and Klarg the bugbear. This **goblin name generator** covers all three goblinoids: quick, nasty goblin names with an epithet, hobgoblins with a military rank, and big, slow-sounding bugbear names.",
+    "sections": [
+      {
+        "heading": "Goblins, hobgoblins and bugbears",
+        "content": "<p>In D&D, goblins, hobgoblins and bugbears are three related peoples, often grouped as goblinoids, and they suit very different names:</p><ul><li><strong>Goblins</strong> are small, quick and cowardly in a crowd. Their names are one syllable or two, full of k, g and sk sounds: Snik, Skrit, Gribble.</li><li><strong>Hobgoblins</strong> are disciplined soldiers who organise into legions. Their names are harder and more formal (Morzak, Ghaztor), and a hobgoblin is likely to introduce themselves by rank.</li><li><strong>Bugbears</strong> are the largest and stealthiest of the three, despite their size. Their names are heavy and rumbling: Brugg, Thrum, Gorrumph.</li></ul>"
+      },
+      {
+        "heading": "Goblins in folklore and fiction",
+        "content": "<p>Goblins were mischievous spirits in European folklore long before they were monsters in games. Christina Rossetti's poem <em>Goblin Market</em> (1862) has goblin merchants selling enchanted fruit. Tolkien's <em>The Hobbit</em> has the Great Goblin under the Misty Mountains, and in <em>Labyrinth</em> (1986) David Bowie plays Jareth, the Goblin King.</p><p>D&D's goblins borrow from all of that: greedy, sneaky and funnier than they mean to be. That's why an epithet works so well. \"Snik Two-Teeth\" tells you what kind of goblin he is before he's said a word.</p>"
+      },
+      {
+        "heading": "Naming goblins at the table",
+        "content": "<ul><li><strong>Name the one who surrenders.</strong> A goblin who begs for its life is the one players will want to talk to, so it needs a name ready.</li><li><strong>Give the boss a title.</strong> Goblin bosses love grand titles they haven't earned: \"Gnash the Bold\", \"King Splug\".</li><li><strong>Keep hobgoblins formal.</strong> Rank first, name second: \"Captain Morzak\". It shows players at once this is a disciplined enemy.</li><li><strong>Let bugbears be quiet.</strong> A short, heavy name for a creature that strikes from the shadows makes a good surprise.</li></ul>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are some good D&D goblin names?",
+        "answer": "Short, sharp names with hard sounds, like Snik, Skrit or Gribble, often with an epithet: Snik Two-Teeth, Gnash the Bold. Famous examples from D&D's starter adventure are Yeemik the goblin and Klarg the bugbear."
+      },
+      {
+        "question": "How are hobgoblin names different from goblin names?",
+        "answer": "Hobgoblins are disciplined soldiers, so their names are harder and more formal, and they often use a rank: Captain Morzak, Warlord Ghaztor."
+      },
+      {
+        "question": "Are bugbears goblins?",
+        "answer": "In D&D, bugbears, goblins and hobgoblins are related goblinoids. Bugbears are the largest, and surprisingly stealthy."
+      }
+    ]
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "title": "Half-Elf Name Generator",
+  "slug": "half-elf-name-generator",
+  "icon": "🧝‍♂️",
+  "category": "dnd",
+  "published": "2026-10-20",
+  "description": "Half-elf names for D&D: an elven first name with a human surname, a human name with an elven family name, or fully one or the other, depending on who raised them.",
+  "seoKeywords": "half-elf names, half elf name generator, dnd half-elf names, half elf names male, half elf names female, 5e half-elf names",
+  "isPopular": false,
+  "filters": {
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    },
+    "mix": {
+      "label": "Raised by",
+      "options": [
+        "mixed_elf_first",
+        "mixed_human_first",
+        "elven",
+        "human"
+      ],
+      "optionLabels": {
+        "mixed_elf_first": "Humans (elven first name, human surname)",
+        "mixed_human_first": "Elves (human first name, elven family name)",
+        "elven": "Elves (fully elven name)",
+        "human": "Humans (fully human name)"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "mix",
+  "cases": {
+    "mixed_elf_first": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": "[elven.given] [human.surnames]"
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[elven.given.{gender}] [human.surnames]"
+      }
+    },
+    "mixed_human_first": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": "[human.given] [elven.family]"
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[human.given.{gender}] [elven.family]"
+      }
+    },
+    "elven": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": "[elven.given] [elven.family]"
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[elven.given.{gender}] [elven.family]"
+      }
+    },
+    "human": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": "[human.given] [human.surnames]"
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[human.given.{gender}] [human.surnames]"
+      }
+    }
+  },
+  "data": {
+    "elven": {
+      "given": {
+        "male": [
+          "Caladrel",
+          "Faelor",
+          "Galinor",
+          "Haelan",
+          "Ilyrin",
+          "Kaelith",
+          "Lorandil",
+          "Maeron",
+          "Naeril",
+          "Raelith",
+          "Saevan",
+          "Taeral",
+          "Vaelis",
+          "Aerendil",
+          "Celandor",
+          "Elarion",
+          "Ithilan",
+          "Laethor",
+          "Sylvarin",
+          "Aranel",
+          "Belandor",
+          "Daelen",
+          "Elvaris",
+          "Fenlas",
+          "Iriandor",
+          "Mythrin",
+          "Orendil",
+          "Phaelan",
+          "Quellan",
+          "Rhovan",
+          "Tirnel"
+        ],
+        "female": [
+          "Aeris",
+          "Caelynn",
+          "Elowen",
+          "Faelwen",
+          "Ilaria",
+          "Liavel",
+          "Maelis",
+          "Naerith",
+          "Saelora",
+          "Sylvaine",
+          "Thaliel",
+          "Vaelora",
+          "Ylsa",
+          "Calenwe",
+          "Eliphae",
+          "Ithrael",
+          "Miraen",
+          "Rhiannel",
+          "Taerwyn",
+          "Velaine",
+          "Aelith",
+          "Brilith",
+          "Daelwen",
+          "Elandra",
+          "Faelyn",
+          "Ilphara",
+          "Lethiel",
+          "Merethyl",
+          "Naiara",
+          "Shalendra",
+          "Tirelle"
+        ]
+      },
+      "family": [
+        "Aelindor",
+        "Caerwyn",
+        "Elaranth",
+        "Faenhal",
+        "Ilmarien",
+        "Lianthor",
+        "Maelithil",
+        "Naevarin",
+        "Rhaenor",
+        "Silvaren",
+        "Thaelindor",
+        "Vaeranth",
+        "Yllathiel",
+        "Amarethil",
+        "Brenvaril",
+        "Celenthir",
+        "Dhaerith",
+        "Ithelvar",
+        "Lothaniel",
+        "Aerethyl",
+        "Duskwhisper",
+        "Evenbrook",
+        "Faerendil",
+        "Ilvanor",
+        "Narathiel",
+        "Oakenshade",
+        "Quessaril",
+        "Starbloom",
+        "Valandril"
+      ]
+    },
+    "human": {
+      "given": {
+        "male": [
+          "Aldric",
+          "Bram",
+          "Cedric",
+          "Corwin",
+          "Darian",
+          "Edmund",
+          "Garret",
+          "Gideon",
+          "Harlan",
+          "Jasper",
+          "Kellan",
+          "Lucan",
+          "Marius",
+          "Nolan",
+          "Osric",
+          "Perrin",
+          "Quentin",
+          "Roland",
+          "Silas",
+          "Tobias",
+          "Varek",
+          "Wendel",
+          "Alaric",
+          "Benedict",
+          "Dorian",
+          "Emeric",
+          "Florian",
+          "Hugo",
+          "Leopold",
+          "Matthias"
+        ],
+        "female": [
+          "Adela",
+          "Celia",
+          "Delia",
+          "Elinor",
+          "Freya",
+          "Gwen",
+          "Helena",
+          "Isolde",
+          "Jocelyn",
+          "Katrin",
+          "Lenora",
+          "Mara",
+          "Nell",
+          "Odette",
+          "Rosamund",
+          "Sabine",
+          "Tamsin",
+          "Vivian",
+          "Wilhelmina",
+          "Alys",
+          "Beatrix",
+          "Clarice",
+          "Edith",
+          "Greta",
+          "Hester",
+          "Imogen",
+          "Linnea",
+          "Maud",
+          "Rowena"
+        ]
+      },
+      "surnames": [
+        "Ashford",
+        "Blackwell",
+        "Brightwater",
+        "Carrow",
+        "Dunmore",
+        "Fairweather",
+        "Greaves",
+        "Hallowell",
+        "Hawthorne",
+        "Kestrel",
+        "Larkin",
+        "Marlowe",
+        "Northcott",
+        "Oakley",
+        "Pembroke",
+        "Ravensworth",
+        "Selwyn",
+        "Thorne",
+        "Underwood",
+        "Vance",
+        "Whitlock",
+        "Yarrow",
+        "Ambrose",
+        "Callow",
+        "Fenwick",
+        "Holloway",
+        "Merriweather",
+        "Redfern",
+        "Sterling",
+        "Wolcott"
+      ]
+    }
+  },
+  "article": {
+    "hero": {
+      "title": "🧝‍♂️ Half-Elf Name Generator",
+      "tagline": "Elven, human or both: half-elf names that show who raised them."
+    },
+    "intro": "A half-elf's name says a lot about who raised them. In D&D, half-elves use either human or elven naming customs, and, as the Player's Handbook puts it, those raised among humans are often given elven names in honour of their heritage, and the other way round. This **half-elf name generator** builds names for all four cases, from an elven first name with a human surname to a fully elven name.",
+    "sections": [
+      {
+        "heading": "How half-elf names work",
+        "content": "<p>The fifth-edition Player's Handbook (2014) gives half-elves no naming system of their own. Instead they take the customs of whichever people raised them, with a twist: parents often reach for the other side of the family, so a half-elf raised by humans may be given an elven name, and one raised by elves a human one.</p><p>The <strong>Raised by</strong> choice covers the four results:</p><ul><li><strong>Raised by humans, elven first name:</strong> Haelan Ashford. The most common half-elf name, a nod to the elven parent.</li><li><strong>Raised by elves, human first name:</strong> Tobias Silvaren. The human parent remembered in an elven household.</li><li><strong>Fully elven</strong> or <strong>fully human:</strong> for half-elves who fit in, or who'd like to.</li></ul>"
+      },
+      {
+        "heading": "Half-elves you may know",
+        "content": "<ul><li><strong>Elrond</strong> in Tolkien's legendarium, one of the Peredhil, the \"Half-elven\". Tolkien's half-elves had to choose which kind to be; Elrond chose the elves. His name means \"star-dome\".</li><li><strong>Tanis Half-Elven</strong> in the Dragonlance novels, who wears his heritage as his surname.</li><li><strong>Jaheira</strong>, the half-elf druid of the Baldur's Gate games, from the first game through to Baldur's Gate 3.</li></ul><p>All three show the same idea: a half-elf's name is often where their divided background shows first.</p>"
+      },
+      {
+        "heading": "Choosing the right mix",
+        "content": "<ul><li><strong>Decide who raised them first.</strong> It's the most important choice, and it gives you a backstory for free.</li><li><strong>Use the clash.</strong> An elven first name with a plain human surname (Ilaria Underwood) tells people at once that this character sits between two worlds.</li><li><strong>Consider a chosen name.</strong> Some half-elves drop the name they were given. A half-elf who goes by a human nickname among elves is making a point.</li></ul><p>For more elven names, with Tolkien's real Sindarin and Quenya names and their meanings, try the <a href=\"elf-name-generator.html\">Elf Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do half-elves have elven or human names?",
+        "answer": "Either. In D&D's Player's Handbook, half-elves follow the customs of whoever raised them, and those raised by humans are often given elven names in honour of their heritage, and vice versa."
+      },
+      {
+        "question": "Do half-elves have surnames?",
+        "answer": "Usually whichever their family uses: a human surname from a human household, or an elven family name from an elven one. Some, like Tanis Half-Elven, are known by their heritage instead."
+      },
+      {
+        "question": "Are these names from the Player's Handbook?",
+        "answer": "No. They're new names in elven and human styles, built to fit D&D settings."
+      }
+    ]
+  }
+}

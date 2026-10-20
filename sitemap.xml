@@ -322,9 +322,23 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Goblin Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/goblin-name-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Guild Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/guild-name-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Half-Elf Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/half-elf-name-generator.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
