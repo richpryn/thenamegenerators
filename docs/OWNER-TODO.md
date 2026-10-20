@@ -1,5 +1,33 @@
 # Rich's to-do list
 
+## Overnight summary (20–21 October 2026)
+
+Both Claude sessions worked through `docs/CONTENT-PLAN.md` overnight. The site went from 52 generators to 108, every one of them on `main` and live.
+
+**New generators (Claude session 2):** 55 new pages in 7 new hubs.
+- **D&D hub**: Tiefling, Dragonborn, Halfling, Gnome, Half-Elf, Human, Goblin, Kobold, Lizardfolk, Githyanki, Knight, Paladin, Tavern, Fantasy Shop, Baldur's Gate 3.
+- **Game hubs**: Elder Scrolls (Nord, Khajiit, Dunmer, Altmer, Argonian), Warcraft (Night Elf, Blood Elf, Troll), Warhammer (a 40k generator at the old Warhammer address).
+- **Pop culture**: Hobbit, Game of Thrones, Elden Ring, Star Wars.
+- **Music & creators**: Band, Album, Song Title, Rapper, Stage Name, Wu-Tang, DJ, Podcast, YouTube Channel.
+- **Characters & folklore**: Pirate, Viking, Superhero, Villain, Werewolf, Zombie, Ghost, Gamertag, plus a Witch hub.
+- **Sci-Fi hub**: Cyberpunk, Robot, Spaceship. **Historical hub**: Roman, Ancient Greek, Anglo-Saxon, Medieval, Victorian, Old West.
+- **Name Combiner** (ship names), built on a new "blend" feature in the engine.
+- **Fixes**: click-to-copy, the ♥ shortlist, 8/16/32 names and shareable links are live on every page. An engine bug that hid options on the Dragon page is fixed.
+
+**Rewrites (Claude session 1):** the homepage and every category page got proper intros, and a new Event Name Generator went live. Almost every original generator was rebuilt to the content notes, with real lore, cleaned lists and new articles:
+- **Fantasy races and creatures**: Vampire, Dragon, Dwarf, all four Elf pages, every Orc page, Angel, Demon, Fairy.
+- **Places**: Fantasy Town (now also targets village searches), City, Country (now also targets kingdom searches).
+- **Items and weapons**: all the sword pages, Axe, Shield, Wand, Poison, Hammer.
+- **Everything else**: the wizard pages, the witch pages, Dungeon Synth, Clan, Guild, Brand, Company and Café.
+
+**What needs you, in order:**
+1. Send a session your Google Analytics Measurement ID (see "Now" below).
+2. In Search Console, request indexing for the hub pages (listed under "Review" below).
+3. Have a look at the new pages and say what you'd change.
+4. Answer the random picker/wheel question under "Decisions for you".
+5. Add your notes to Band and Dungeon Synth when you have time.
+
+
 Things only Rich can do. The Claude sessions add items here as they come up and tick them off when they see they're done. Newest at the bottom of each section.
 
 ## Now
@@ -33,6 +61,7 @@ New and rewritten pages. Read them on the live site; reply in any session with c
   - **Witch hub** (`categories/witch-names.html`) and **YouTube Channel** (in Blogs & Brands)
   - **Historical hub** (`categories/historical-names.html`): Roman, Ancient Greek, Anglo-Saxon, Medieval, Victorian, Old West
   - **Name Combiner** (`posts/name-combiner.html`): type two names, get ship-name blends. Try it with your own names!
+  - **Gamertag Generator** (`posts/gamertag-generator.html`)
 - [ ] Path of Exile Witch (rewritten: epithets by Ascendancy)
 - [ ] Elven Sword (rebuilt: every name now has a real Sindarin or Quenya meaning)
 - [ ] Dungeon Synth (rewritten without your notes; your notes would make it better)

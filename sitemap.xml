@@ -462,6 +462,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Gamertag Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/gamertag-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Ghost Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/ghost-name-generator.html</loc>
