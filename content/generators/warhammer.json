@@ -1,0 +1,512 @@
+{
+  "title": "Warhammer 40k Name Generator",
+  "slug": "warhammer-name-generator",
+  "icon": "💀",
+  "category": "warhammer",
+  "published": "2026-10-20",
+  "description": "Warhammer 40k character names: Space Marines in the style of their Chapter, Imperial Guard troopers and commissars with their regiment, and Aeldari of the craftworlds.",
+  "seoKeywords": "warhammer name generator, warhammer 40k name generator, space marine name generator, space marine names, imperial guard names, eldar names, aeldari names, 40k names",
+  "isPopular": false,
+  "filters": {
+    "faction": {
+      "label": "Faction",
+      "options": [
+        "ultramarines",
+        "wolves",
+        "angels",
+        "guard",
+        "aeldari"
+      ],
+      "optionLabels": {
+        "ultramarines": "Space Marine: Ultramarines style",
+        "wolves": "Space Marine: Space Wolves style",
+        "angels": "Space Marine: Blood Angels / Dark Angels style",
+        "guard": "Imperial Guard",
+        "aeldari": "Aeldari"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "full",
+        "name"
+      ],
+      "optionLabels": {
+        "full": "With rank and unit",
+        "name": "Name only"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "faction",
+  "cases": {
+    "ultramarines": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "full": {
+          "recipe": "template",
+          "template": "[marineRanks] [ultra.first] [ultra.surnames]"
+        },
+        "name": {
+          "recipe": "template",
+          "template": "[ultra.first] [ultra.surnames]"
+        }
+      }
+    },
+    "wolves": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "full": {
+          "recipe": "template",
+          "template": "[wolves.first] [wolves.epithets]"
+        },
+        "name": {
+          "recipe": "pick",
+          "from": "wolves.first"
+        }
+      }
+    },
+    "angels": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "full": {
+          "recipe": "template",
+          "template": "[marineRanks] [angels]"
+        },
+        "name": {
+          "recipe": "pick",
+          "from": "angels"
+        }
+      }
+    },
+    "guard": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "full": {
+          "recipe": "template",
+          "template": "[guard.ranks] [guard.first] [guard.surnames], [guard.regiments] [guard.numbers]"
+        },
+        "name": {
+          "recipe": "template",
+          "template": "[guard.first] [guard.surnames]"
+        }
+      }
+    },
+    "aeldari": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "full": {
+          "recipe": "template",
+          "template": "[aeldari.roles] [aeldari.names] of [aeldari.craftworlds]"
+        },
+        "name": {
+          "recipe": "pick",
+          "from": "aeldari.names"
+        }
+      }
+    }
+  },
+  "data": {
+    "marineRanks": [
+      "Brother",
+      "Sergeant",
+      "Lieutenant",
+      "Captain",
+      "Chaplain",
+      "Librarian",
+      "Apothecary",
+      "Techmarine",
+      "Ancient"
+    ],
+    "ultra": {
+      "first": [
+        "Tiberon",
+        "Maxentius",
+        "Severan",
+        "Antoninus",
+        "Valerius",
+        "Decimus",
+        "Octavus",
+        "Flavian",
+        "Lucan",
+        "Septimus",
+        "Galerius",
+        "Aquilon",
+        "Corvinus",
+        "Drusus",
+        "Fabian",
+        "Gaius",
+        "Horatius",
+        "Justinian",
+        "Marcellus",
+        "Nerva",
+        "Quintillus",
+        "Remus",
+        "Sabinus",
+        "Tarquin",
+        "Vespasian",
+        "Aetius",
+        "Cyprian",
+        "Domitius",
+        "Hadrian",
+        "Cornelius"
+      ],
+      "surnames": [
+        "Agrippan",
+        "Calvex",
+        "Damoran",
+        "Fennix",
+        "Gallus",
+        "Hestor",
+        "Invictus",
+        "Lucran",
+        "Marrus",
+        "Nonnar",
+        "Octan",
+        "Quirin",
+        "Rennor",
+        "Sevrin",
+        "Tarvo",
+        "Ultor",
+        "Mardus",
+        "Castor",
+        "Varian",
+        "Aurex",
+        "Brontus",
+        "Cassen",
+        "Dravian",
+        "Ferox",
+        "Galvan",
+        "Ionus",
+        "Kastor",
+        "Lavion",
+        "Morrus",
+        "Pellan"
+      ]
+    },
+    "wolves": {
+      "first": [
+        "Bjarki",
+        "Gunnar",
+        "Haakon",
+        "Ingvar",
+        "Knut",
+        "Olvar",
+        "Sigvald",
+        "Torvald",
+        "Vigar",
+        "Egil",
+        "Hrothgar",
+        "Rolf",
+        "Sven",
+        "Kjell",
+        "Arvid",
+        "Dag",
+        "Finn",
+        "Leif",
+        "Brand",
+        "Eirik",
+        "Grimkel",
+        "Hallvard",
+        "Ketil",
+        "Orm",
+        "Skarde",
+        "Thorolf",
+        "Ulfar",
+        "Vemund",
+        "Asbjorn",
+        "Gorm"
+      ],
+      "epithets": [
+        "Ironjaw",
+        "Frostfang",
+        "Redmane",
+        "Stormcaller",
+        "the Grim",
+        "Greyhide",
+        "Iceborn",
+        "Doomfang",
+        "Longtooth",
+        "Thunderfist",
+        "Snowpelt",
+        "Wolfsbane",
+        "Stonehowl",
+        "the Unbroken",
+        "Ironhelm",
+        "Frostbeard",
+        "Runefist",
+        "Ashmane",
+        "Bloodtooth",
+        "the Silent",
+        "Sagafell",
+        "Storm-Eye",
+        "Grimhowl",
+        "Ice-Heart",
+        "Skullsplitter"
+      ]
+    },
+    "angels": [
+      "Raziel",
+      "Zadkiel",
+      "Barachiel",
+      "Uzziel",
+      "Jophiel",
+      "Sariel",
+      "Remiel",
+      "Haniel",
+      "Ithuriel",
+      "Aurelio",
+      "Benedetto",
+      "Matteo",
+      "Raffaele",
+      "Sandro",
+      "Valerio",
+      "Severo",
+      "Adriel",
+      "Cassiel",
+      "Ezrael",
+      "Hadriel",
+      "Malachai",
+      "Nathaniel",
+      "Ophaniel",
+      "Rophael",
+      "Samaiel",
+      "Tamiel",
+      "Zuriel",
+      "Amadeo",
+      "Cesare",
+      "Fabrizio",
+      "Marcello",
+      "Orsino",
+      "Ruggero",
+      "Silvano",
+      "Tancredi"
+    ],
+    "guard": {
+      "first": [
+        "Arlen",
+        "Brask",
+        "Corwin",
+        "Dace",
+        "Edrik",
+        "Feyn",
+        "Garus",
+        "Holt",
+        "Ivan",
+        "Jerro",
+        "Kasimir",
+        "Lem",
+        "Marko",
+        "Nash",
+        "Orlo",
+        "Pavel",
+        "Rusk",
+        "Sorn",
+        "Tomas",
+        "Varl",
+        "Wes",
+        "Yuri",
+        "Zell",
+        "Ana",
+        "Bryn",
+        "Cela",
+        "Dara",
+        "Esra",
+        "Fen",
+        "Galya",
+        "Hana",
+        "Irina",
+        "Jessa",
+        "Kira",
+        "Lena",
+        "Mira",
+        "Nadia",
+        "Oska",
+        "Petra",
+        "Rhea",
+        "Sasha",
+        "Tanja",
+        "Vesna",
+        "Ulla"
+      ],
+      "surnames": [
+        "Voss",
+        "Hale",
+        "Strell",
+        "Marrok",
+        "Vane",
+        "Korsk",
+        "Lutz",
+        "Orlov",
+        "Rask",
+        "Senn",
+        "Tull",
+        "Varga",
+        "Wren",
+        "Yeager",
+        "Becker",
+        "Drago",
+        "Faulk",
+        "Grev",
+        "Holtz",
+        "Ivers",
+        "Jarek",
+        "Kade",
+        "Lorne",
+        "Mattox",
+        "Osk",
+        "Pryce",
+        "Quint",
+        "Rourke",
+        "Stavros",
+        "Thane",
+        "Udo",
+        "Brenner",
+        "Dask",
+        "Halvar",
+        "Krenn"
+      ],
+      "ranks": [
+        "Trooper",
+        "Sergeant",
+        "Lieutenant",
+        "Captain",
+        "Major",
+        "Colonel",
+        "Commissar"
+      ],
+      "regiments": [
+        "Cadian",
+        "Catachan",
+        "Valhallan",
+        "Vostroyan",
+        "Mordian",
+        "Tallarn"
+      ],
+      "numbers": [
+        "3rd",
+        "5th",
+        "8th",
+        "12th",
+        "17th",
+        "23rd",
+        "31st",
+        "42nd",
+        "56th",
+        "64th",
+        "77th",
+        "88th",
+        "101st",
+        "119th",
+        "133rd",
+        "150th",
+        "212th",
+        "303rd"
+      ]
+    },
+    "aeldari": {
+      "names": [
+        "Arhain",
+        "Belanor",
+        "Caelith",
+        "Dyrrian",
+        "Elarique",
+        "Faelan",
+        "Idranel",
+        "Kaelith",
+        "Lathriel",
+        "Maensith",
+        "Naeryth",
+        "Saelarith",
+        "Taelos",
+        "Ulthian",
+        "Vaeril",
+        "Yrlissa",
+        "Ashariel",
+        "Ellirian",
+        "Faenyra",
+        "Idrisae",
+        "Lirith",
+        "Aethyl",
+        "Caerwen",
+        "Elthariel",
+        "Ilyandra",
+        "Nymrith",
+        "Sythael",
+        "Thaerin",
+        "Vaelyr",
+        "Aurenith",
+        "Cirelle",
+        "Dythrae",
+        "Esmaine",
+        "Faroth",
+        "Ilthaen"
+      ],
+      "roles": [
+        "Farseer",
+        "Warlock",
+        "Autarch",
+        "Exarch",
+        "Ranger",
+        "Spiritseer",
+        "Bonesinger",
+        "Guardian"
+      ],
+      "craftworlds": [
+        "Ulthwé",
+        "Biel-Tan",
+        "Iyanden",
+        "Saim-Hann",
+        "Alaitoc"
+      ]
+    }
+  },
+  "article": {
+    "hero": {
+      "title": "💀 Warhammer 40k Name Generator",
+      "tagline": "Space Marines by Chapter, Imperial Guard with their regiment, and Aeldari of the craftworlds."
+    },
+    "intro": "In the grim darkness of the far future, a name tells you who someone serves. An Ultramarine sounds like a Roman legionary (Marneus Calgar, Cato Sicarius), a Space Wolf like a saga hero (Logan Grimnar, Ragnar Blackmane), and an Imperial Guard officer comes with a regiment attached. This **Warhammer 40k name generator** builds names for Space Marines in three Chapter styles, the Imperial Guard and the Aeldari.",
+    "sections": [
+      {
+        "heading": "Space Marine names by Chapter",
+        "content": "<p>Each Space Marine Chapter recruits from its own worlds and keeps its own culture, and names follow:</p><ul><li><strong>Ultramarines</strong> and similar Chapters have Roman-sounding names: Marneus Calgar, Cato Sicarius, Uriel Ventris. A first name and a surname, often with a rank in front.</li><li><strong>Space Wolves</strong> come from Fenris and have Norse names and epithets: Logan Grimnar, Ragnar Blackmane, Bjorn the Fell-Handed.</li><li><strong>Blood Angels</strong> and <strong>Dark Angels</strong> lean towards angelic and Renaissance Italian names, often used alone: Dante and Mephiston of the Blood Angels, Azrael of the Dark Angels.</li></ul><p>Ranks come first: Brother for a battle-brother, then Sergeant, Lieutenant, Captain, or a specialist role like Chaplain, Librarian, Apothecary or Techmarine.</p>"
+      },
+      {
+        "heading": "Imperial Guard names",
+        "content": "<p>The Imperial Guard, or Astra Militarum, is made of regiments raised from a single world and named after it with a number: the Cadian 8th, the Tanith First and Only from the Gaunt's Ghosts novels. A Guard name is ordinary, a little rough, and nearly always comes with a rank and a regiment.</p><p>Famous examples include Lord Castellan Ursarkar E. Creed of Cadia, Commissar Sebastian Yarrick of Armageddon, and Commissar Ciaphas Cain. The generator's regiments come from well-known Guard worlds (Cadian, Catachan, Valhallan, Vostroyan, Mordian, Tallarn) with a random number, so you get a regiment that sounds right without copying a famous one.</p>"
+      },
+      {
+        "heading": "Aeldari names",
+        "content": "<p>The Aeldari, called Eldar in older editions, live on vast craftworld ships such as Ulthwé, Biel-Tan, Iyanden, Saim-Hann and Alaitoc. Their names are long, flowing and elegant: Eldrad Ulthran, the great Farseer of Ulthwé; Prince Yriel of Iyanden; Illic Nightspear of Alaitoc.</p><p>Aeldari follow the Path, devoting themselves to one role at a time, so the <em>With rank and unit</em> format names a role (Farseer, Warlock, Autarch, Exarch, Ranger, Spiritseer) and a craftworld.</p>"
+      },
+      {
+        "heading": "Picking a name for your army",
+        "content": "<ul><li><strong>Name your characters, not every model.</strong> A named Captain and Sergeant give an army personality; the rest can be Brother this and Trooper that.</li><li><strong>Make a successor Chapter.</strong> If your Chapter is your own, pick the style of its founding Chapter, then add your own twist.</li><li><strong>Number your regiment with care.</strong> A Guard regiment with a high number suggests a world that has sent many, and lost many.</li></ul><p>For other 40k factions, try the <a href=\"warhammer-orc-name-generator.html\">Warhammer Orc</a> and <a href=\"ogryn-name-generator.html\">Ogryn</a> name generators. Looking for names for a war hammer, the weapon? See the <a href=\"hammer-name-generator.html\">Hammer Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do Space Marine names work?",
+        "answer": "A rank, then a name in the style of the Chapter's homeworld: Roman-sounding for the Ultramarines (Marneus Calgar), Norse for the Space Wolves (Ragnar Blackmane), angelic or Italian for the Blood Angels (Dante, Mephiston)."
+      },
+      {
+        "question": "How are Imperial Guard regiments named?",
+        "answer": "After the world they were raised on and a number: the Cadian 8th, the Catachan 2nd. The Tanith First and Only from Gaunt's Ghosts is a famous exception."
+      },
+      {
+        "question": "What's the difference between Eldar and Aeldari?",
+        "answer": "The same people. Games Workshop renamed the Eldar as the Aeldari in the eighth edition of Warhammer 40,000."
+      },
+      {
+        "question": "I was looking for war hammer weapon names.",
+        "answer": "They're on the <a href=\"hammer-name-generator.html\">Hammer Name Generator</a>, which used to live at this address."
+      }
+    ]
+  }
+}

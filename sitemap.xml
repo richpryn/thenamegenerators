@@ -112,6 +112,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Category: Warhammer -->
+  <url>
+    <loc>https://thenamegenerators.com/categories/warhammer-names.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Category: Pop Culture -->
   <url>
     <loc>https://thenamegenerators.com/categories/pop_culture-names.html</loc>
@@ -605,6 +612,13 @@
   <!-- Generator: Wand Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/wand-name-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Warhammer 40k Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/warhammer-name-generator.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

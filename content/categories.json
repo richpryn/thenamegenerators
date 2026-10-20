@@ -438,6 +438,36 @@
     ]
   },
   {
+    "name": "Warhammer",
+    "slug": "warhammer",
+    "icon": "💀",
+    "navLabel": "Warhammer Names",
+    "heading": "Warhammer Name Generators: 40k Characters, Orks and Ogryns",
+    "seoTitle": "Warhammer Name Generators: 40k, Orks, Ogryns",
+    "description": "Names for Warhammer 40k and Warhammer Fantasy characters: Space Marines, Imperial Guard, Aeldari, Orks and Ogryns.",
+    "seoDescription": "Warhammer name generators: Space Marines by Chapter style, Imperial Guard with regiments, Aeldari, Orks and Ogryns, each following the setting's naming styles.",
+    "intro": "<p>Warhammer names tell you who someone serves. A Space Wolf sounds like a saga hero, an Ultramarine like a Roman legionary, an Imperial Guard officer comes with a regiment, and an Ork is named for being loud and hitting things. These generators follow the setting's styles, with examples from the books and games.</p>",
+    "featured": [
+      {
+        "key": "warhammer",
+        "note": "Space Marines, Imperial Guard and Aeldari, with ranks and units."
+      },
+      {
+        "key": "warhammer_orc",
+        "note": "Ork names for 40k and orc names for Warhammer Fantasy."
+      },
+      {
+        "key": "ogryn",
+        "note": "big, simple Ogryn names and nicknames."
+      }
+    ],
+    "generators": [
+      "warhammer",
+      "warhammer_orc",
+      "ogryn"
+    ]
+  },
+  {
     "name": "Pop Culture",
     "slug": "pop_culture",
     "icon": "🎬",
@@ -472,6 +502,7 @@
       "argonian",
       "altmer",
       "dunmer",
+      "warhammer",
       "warhammer_orc",
       "wow_orc",
       "wow_troll",
