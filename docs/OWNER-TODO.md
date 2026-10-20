@@ -22,6 +22,9 @@ New and rewritten pages. Read them on the live site; reply in any session with c
 - [ ] Category pages and homepage hero
 - [ ] Hammer (renamed), and the Business / Company / Brand split
 - [ ] D&D hub (`categories/dnd-names.html`), Tiefling and Tavern generators: also request indexing for these three
+- [ ] Path of Exile Witch (rewritten: epithets by Ascendancy)
+- [ ] Elven Sword (rebuilt: every name now has a real Sindarin or Quenya meaning)
+- [ ] Dungeon Synth (rewritten without your notes; your notes would make it better)
 
 ## Notes from Rich wanted
 
