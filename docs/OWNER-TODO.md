@@ -26,6 +26,7 @@ New and rewritten pages. Read them on the live site; reply in any session with c
 - [ ] Elven Sword (rebuilt: every name now has a real Sindarin or Quenya meaning)
 - [ ] Dungeon Synth (rewritten without your notes; your notes would make it better)
 - [ ] Company and Brand (rewritten; Brand's word lists rebuilt by hand, with a "with a product word" option)
+- [ ] Dwarf (rebuilt: Norse-style names, mountain or hill clan, or "son of"; Tolkien and D&D names removed)
 - [ ] Dragon (rebuilt: seven kinds, harsh or sleek, optional epithets; famous dragons removed)
 - [ ] Harry Potter Witch (rebuilt: everyday or pure-blood first names, house surnames, no canon names)
 - [ ] Fantasy Town, Country, City and Cafe (all rebuilt: towns from real English place-name endings, countries in six language styles with optional titles, cities by kind with optional epithets, cafés in eight styles with the chain names taken out). Town and Country now also target "village" and "kingdom"
