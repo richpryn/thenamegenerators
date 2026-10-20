@@ -142,6 +142,7 @@
     ],
     "generators": [
       "tiefling",
+      "bg3",
       "dragonborn",
       "halfling",
       "gnome",
@@ -387,6 +388,7 @@
       }
     ],
     "generators": [
+      "bg3",
       "harry_potter_witch",
       "hogwarts_legacy_witch",
       "hogwarts_legacy_wizard",

@@ -104,4 +104,6 @@ Order for the rest: pages with clicks or impressions first (check Search Console
 Search Console, October 2026: Hogwarts Legacy Witch (4 clicks / 239 impressions) and Epithet (3 / 77) are the only generator pages with clicks. The homepage (534 impressions), Places category (229), Events category (156, with no generators in it) and All Generators (133) get most impressions, so the homepage and category pages are next.
 
 Known problems to fix when each page's turn comes:
+- **Dwarf**: the hill-dwarf female list is modern English names (Abigail, Alexa); the mountain lists mix Tolkien's own dwarves (and Beorn, who isn't one) with names copied from the Player's Handbook and Bruenor. Needs new lists.
+- **Dark Elf**: surnames are wood-elf nature words (Ashwood, Dewleaf); drow use noble house names (Baenre, Do'Urden). Needs new surnames.
 - **Business, Company, Brand**: each now has one job (Business: single words for shops, trades and services; Company: startup-style names; Brand: product names by industry) with its own keywords and a "which should I use?" FAQ. Company and Brand are rewritten to these notes; keep each page to its job.
