@@ -142,6 +142,7 @@
     ],
     "generators": [
       "tiefling",
+      "bg3",
       "dragonborn",
       "halfling",
       "gnome",
@@ -168,6 +169,7 @@
       "epithet",
       "demon_epithet",
       "tavern",
+      "fantasy_shop",
       "fantasy_town",
       "fantasy_city",
       "fantasy_country",
@@ -356,6 +358,7 @@
     ],
     "generators": [
       "tavern",
+      "fantasy_shop",
       "fantasy_town",
       "fantasy_country",
       "cafe",
@@ -387,6 +390,7 @@
       }
     ],
     "generators": [
+      "bg3",
       "harry_potter_witch",
       "hogwarts_legacy_witch",
       "hogwarts_legacy_wizard",

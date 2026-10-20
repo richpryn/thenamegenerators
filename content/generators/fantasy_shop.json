@@ -1,0 +1,544 @@
+{
+  "title": "Fantasy Shop Name Generator",
+  "slug": "fantasy-shop-name-generator",
+  "icon": "🏪",
+  "category": "places",
+  "published": "2026-10-20",
+  "description": "Names for magic shops, blacksmiths, potion sellers, general stores and more in your D&D town, built the way real shop signs work: an owner, a trade or a painted sign.",
+  "seoKeywords": "fantasy shop names, magic shop names, dnd shop names, magic shop name generator, blacksmith names, potion shop names, fantasy store names, apothecary names",
+  "isPopular": false,
+  "filters": {
+    "shop": {
+      "label": "Kind of shop",
+      "options": [
+        "any",
+        "magic",
+        "smith",
+        "potion",
+        "general",
+        "books",
+        "jeweller",
+        "tailor"
+      ],
+      "optionLabels": {
+        "any": "Any shop",
+        "magic": "Magic shop",
+        "smith": "Blacksmith",
+        "potion": "Potions and herbs",
+        "general": "General store",
+        "books": "Books and maps",
+        "jeweller": "Jeweller",
+        "tailor": "Tailor and clothier"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "shop",
+  "cases": {
+    "magic": {
+      "recipe": "template",
+      "template": [
+        "[owners]'s [shops.magic.goods]",
+        "The [shops.magic.adj] [shops.magic.obj]",
+        "[owners]'s [shops.magic.adj] [shops.magic.goods]",
+        "[shops.magic.adj] [shops.magic.goods]",
+        "[partners] and [partners]"
+      ]
+    },
+    "smith": {
+      "recipe": "template",
+      "template": [
+        "[owners]'s [shops.smith.goods]",
+        "The [shops.smith.adj] [shops.smith.obj]",
+        "[owners]'s [shops.smith.adj] [shops.smith.goods]",
+        "[shops.smith.adj] [shops.smith.goods]",
+        "[partners] and [partners]"
+      ]
+    },
+    "potion": {
+      "recipe": "template",
+      "template": [
+        "[owners]'s [shops.potion.goods]",
+        "The [shops.potion.adj] [shops.potion.obj]",
+        "[owners]'s [shops.potion.adj] [shops.potion.goods]",
+        "[shops.potion.adj] [shops.potion.goods]",
+        "[partners] and [partners]"
+      ]
+    },
+    "general": {
+      "recipe": "template",
+      "template": [
+        "[owners]'s [shops.general.goods]",
+        "The [shops.general.adj] [shops.general.obj]",
+        "[owners]'s [shops.general.adj] [shops.general.goods]",
+        "[shops.general.adj] [shops.general.goods]",
+        "[partners] and [partners]"
+      ]
+    },
+    "books": {
+      "recipe": "template",
+      "template": [
+        "[owners]'s [shops.books.goods]",
+        "The [shops.books.adj] [shops.books.obj]",
+        "[owners]'s [shops.books.adj] [shops.books.goods]",
+        "[shops.books.adj] [shops.books.goods]",
+        "[partners] and [partners]"
+      ]
+    },
+    "jeweller": {
+      "recipe": "template",
+      "template": [
+        "[owners]'s [shops.jeweller.goods]",
+        "The [shops.jeweller.adj] [shops.jeweller.obj]",
+        "[owners]'s [shops.jeweller.adj] [shops.jeweller.goods]",
+        "[shops.jeweller.adj] [shops.jeweller.goods]",
+        "[partners] and [partners]"
+      ]
+    },
+    "tailor": {
+      "recipe": "template",
+      "template": [
+        "[owners]'s [shops.tailor.goods]",
+        "The [shops.tailor.adj] [shops.tailor.obj]",
+        "[owners]'s [shops.tailor.adj] [shops.tailor.goods]",
+        "[shops.tailor.adj] [shops.tailor.goods]",
+        "[partners] and [partners]"
+      ]
+    },
+    "any": {
+      "recipe": "template",
+      "template": [
+        "[owners]'s [shops.magic.goods]",
+        "The [shops.magic.adj] [shops.magic.obj]",
+        "[owners]'s [shops.magic.adj] [shops.magic.goods]",
+        "[shops.magic.adj] [shops.magic.goods]",
+        "[partners] and [partners]",
+        "[owners]'s [shops.smith.goods]",
+        "The [shops.smith.adj] [shops.smith.obj]",
+        "[owners]'s [shops.smith.adj] [shops.smith.goods]",
+        "[shops.smith.adj] [shops.smith.goods]",
+        "[partners] and [partners]",
+        "[owners]'s [shops.potion.goods]",
+        "The [shops.potion.adj] [shops.potion.obj]",
+        "[owners]'s [shops.potion.adj] [shops.potion.goods]",
+        "[shops.potion.adj] [shops.potion.goods]",
+        "[partners] and [partners]",
+        "[owners]'s [shops.general.goods]",
+        "The [shops.general.adj] [shops.general.obj]",
+        "[owners]'s [shops.general.adj] [shops.general.goods]",
+        "[shops.general.adj] [shops.general.goods]",
+        "[partners] and [partners]",
+        "[owners]'s [shops.books.goods]",
+        "The [shops.books.adj] [shops.books.obj]",
+        "[owners]'s [shops.books.adj] [shops.books.goods]",
+        "[shops.books.adj] [shops.books.goods]",
+        "[partners] and [partners]",
+        "[owners]'s [shops.jeweller.goods]",
+        "The [shops.jeweller.adj] [shops.jeweller.obj]",
+        "[owners]'s [shops.jeweller.adj] [shops.jeweller.goods]",
+        "[shops.jeweller.adj] [shops.jeweller.goods]",
+        "[partners] and [partners]",
+        "[owners]'s [shops.tailor.goods]",
+        "The [shops.tailor.adj] [shops.tailor.obj]",
+        "[owners]'s [shops.tailor.adj] [shops.tailor.goods]",
+        "[shops.tailor.adj] [shops.tailor.goods]",
+        "[partners] and [partners]"
+      ]
+    }
+  },
+  "data": {
+    "owners": [
+      "Grimble",
+      "Elara",
+      "Barnaby",
+      "Thessaly",
+      "Orrin",
+      "Mirabel",
+      "Bramwell",
+      "Zephyrine",
+      "Hobb",
+      "Tamsin",
+      "Fennick",
+      "Odelia",
+      "Gorrim",
+      "Aldous",
+      "Petra",
+      "Quill",
+      "Rosalind",
+      "Dunstan",
+      "Marigold",
+      "Ezekiel",
+      "Wenna",
+      "Tobias",
+      "Isolde",
+      "Kettrick",
+      "Brindle",
+      "Ambrose",
+      "Hettie",
+      "Silas",
+      "Vesper"
+    ],
+    "shops": {
+      "magic": {
+        "goods": [
+          "Wands",
+          "Curios",
+          "Charms",
+          "Scrolls",
+          "Trinkets",
+          "Talismans",
+          "Arcana",
+          "Oddities",
+          "Wonders",
+          "Enchantments",
+          "Baubles",
+          "Relics"
+        ],
+        "adj": [
+          "Curious",
+          "Glimmering",
+          "Whispering",
+          "Wandering",
+          "Arcane",
+          "Starlit",
+          "Hidden",
+          "Enchanted",
+          "Twinkling",
+          "Wise",
+          "Peculiar",
+          "Midnight"
+        ],
+        "obj": [
+          "Wand",
+          "Orb",
+          "Grimoire",
+          "Lantern",
+          "Crystal",
+          "Familiar",
+          "Owl",
+          "Hourglass",
+          "Mirror",
+          "Star",
+          "Moon",
+          "Candle"
+        ]
+      },
+      "smith": {
+        "goods": [
+          "Arms",
+          "Steel",
+          "Blades",
+          "Ironworks",
+          "Forge",
+          "Armoury",
+          "Hammers",
+          "Shields",
+          "Ironmongery",
+          "Smithy"
+        ],
+        "adj": [
+          "Glowing",
+          "Ringing",
+          "Iron",
+          "Black",
+          "Tempered",
+          "Burning",
+          "Mighty",
+          "Dented",
+          "Honest",
+          "Red-Hot",
+          "Sturdy",
+          "Roaring"
+        ],
+        "obj": [
+          "Anvil",
+          "Hammer",
+          "Bellows",
+          "Tongs",
+          "Forge",
+          "Gauntlet",
+          "Shield",
+          "Horseshoe",
+          "Blade",
+          "Helm",
+          "Ingot",
+          "Hearth"
+        ]
+      },
+      "potion": {
+        "goods": [
+          "Potions",
+          "Tinctures",
+          "Remedies",
+          "Elixirs",
+          "Draughts",
+          "Herbs",
+          "Salves",
+          "Tonics",
+          "Cures",
+          "Philtres"
+        ],
+        "adj": [
+          "Bubbling",
+          "Green",
+          "Bitter",
+          "Healing",
+          "Fragrant",
+          "Smoking",
+          "Gentle",
+          "Mossy",
+          "Wild",
+          "Silver",
+          "Dried",
+          "Steaming"
+        ],
+        "obj": [
+          "Cauldron",
+          "Mortar",
+          "Pestle",
+          "Phial",
+          "Toadstool",
+          "Mandrake",
+          "Willow",
+          "Leech",
+          "Flask",
+          "Kettle",
+          "Nettle",
+          "Root"
+        ]
+      },
+      "general": {
+        "goods": [
+          "Provisions",
+          "Goods",
+          "Supplies",
+          "Sundries",
+          "Wares",
+          "Trading Post",
+          "Outfitters",
+          "Stores",
+          "Emporium",
+          "Bits and Bobs"
+        ],
+        "adj": [
+          "Honest",
+          "Busy",
+          "Thrifty",
+          "Lucky",
+          "Friendly",
+          "Packed",
+          "Crooked",
+          "Cheerful",
+          "Humble",
+          "Handy",
+          "Dusty",
+          "Bargain"
+        ],
+        "obj": [
+          "Barrel",
+          "Lantern",
+          "Rope",
+          "Pack",
+          "Bucket",
+          "Ladder",
+          "Crate",
+          "Basket",
+          "Pot",
+          "Sack",
+          "Coil",
+          "Wagon"
+        ]
+      },
+      "books": {
+        "goods": [
+          "Books",
+          "Tomes",
+          "Scrolls",
+          "Maps",
+          "Manuscripts",
+          "Bindery",
+          "Pages",
+          "Ink and Quill",
+          "Chronicles",
+          "Folios"
+        ],
+        "adj": [
+          "Dusty",
+          "Quiet",
+          "Inky",
+          "Learned",
+          "Leatherbound",
+          "Forgotten",
+          "Hidden",
+          "Wandering",
+          "Lost",
+          "Crumbling",
+          "Golden",
+          "Patient"
+        ],
+        "obj": [
+          "Quill",
+          "Page",
+          "Inkpot",
+          "Scroll",
+          "Lectern",
+          "Candle",
+          "Spine",
+          "Bookworm",
+          "Map",
+          "Bookmark",
+          "Compass",
+          "Owl"
+        ]
+      },
+      "jeweller": {
+        "goods": [
+          "Gems",
+          "Jewels",
+          "Rings",
+          "Trinkets",
+          "Gold",
+          "Silver",
+          "Settings",
+          "Treasures",
+          "Finery",
+          "Facets"
+        ],
+        "adj": [
+          "Glittering",
+          "Golden",
+          "Silver",
+          "Sparkling",
+          "Flawless",
+          "Gleaming",
+          "Precious",
+          "Royal",
+          "Polished",
+          "Rare",
+          "Shining",
+          "Dazzling"
+        ],
+        "obj": [
+          "Ring",
+          "Pearl",
+          "Ruby",
+          "Locket",
+          "Crown",
+          "Diamond",
+          "Brooch",
+          "Chain",
+          "Sapphire",
+          "Emerald",
+          "Circlet",
+          "Opal"
+        ]
+      },
+      "tailor": {
+        "goods": [
+          "Cloaks",
+          "Garments",
+          "Raiment",
+          "Threads",
+          "Silks",
+          "Finery",
+          "Tailoring",
+          "Fabrics",
+          "Hats",
+          "Boots"
+        ],
+        "adj": [
+          "Fine",
+          "Velvet",
+          "Dapper",
+          "Silken",
+          "Woollen",
+          "Elegant",
+          "Fashionable",
+          "Patched",
+          "Gilded",
+          "Midnight",
+          "Bold",
+          "Humble"
+        ],
+        "obj": [
+          "Needle",
+          "Thimble",
+          "Spindle",
+          "Cloak",
+          "Bobbin",
+          "Button",
+          "Loom",
+          "Ribbon",
+          "Hat",
+          "Boot",
+          "Glove",
+          "Thread"
+        ]
+      }
+    },
+    "partners": [
+      "Gorse",
+      "Pottle",
+      "Thistle",
+      "Fennel",
+      "Bellweather",
+      "Mortimer",
+      "Quarry",
+      "Ashby",
+      "Crumb",
+      "Dewhurst",
+      "Fairfax",
+      "Gimble",
+      "Hoskins",
+      "Inkwell",
+      "Jarrow",
+      "Kettle",
+      "Lumley",
+      "Marrow",
+      "Nettles",
+      "Oddbody",
+      "Quinch",
+      "Ravel",
+      "Spindle",
+      "Tumbleweed",
+      "Underwood",
+      "Vane",
+      "Wicket"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🏪 Fantasy Shop Name Generator",
+      "tagline": "Magic shops, smithies, apothecaries and general stores, named the way real shops were."
+    },
+    "intro": "Sooner or later the party goes shopping, and a shop with a name feels like a real place. Fantasy shops borrow from real ones: named after the owner (Barthen's Provisions), the trade (Ollivanders, wand-makers) or a painted sign (The Bubbling Cauldron). This **fantasy shop name generator** builds names in all those patterns for seven kinds of shop, from magic shops to tailors.",
+    "sections": [
+      {
+        "heading": "Three ways shops get their names",
+        "content": "<ul><li><strong>The owner's name:</strong> the oldest pattern and still the most common. In Phandalin, the town in D&D's starter adventure Lost Mine of Phandelver, the party can stock up at Barthen's Provisions. In Skyrim, Belethor's General Goods is in Whiterun.</li><li><strong>A painted sign:</strong> like tavern names, older shops were known by their sign: The Golden Anvil, The Bubbling Cauldron. Arcadia's Cauldron, the Whiterun apothecary, mixes both patterns.</li><li><strong>A partnership:</strong> two names joined by \"and\". In Harry Potter, Flourish and Blotts sells books and Borgin and Burkes sells dark artefacts.</li></ul><p>The generator uses all three, plus simple descriptive names (Curious Curios) for shops whose owner is happy to let the goods speak.</p>"
+      },
+      {
+        "heading": "Matching the name to the shop",
+        "content": "<ul><li><strong>Magic shops</strong> can be a little mysterious: The Whispering Orb, Grimble's Oddities. A magic shop with a plain name is a hint that the owner has something to hide.</li><li><strong>Blacksmiths</strong> sound solid and honest: The Ringing Anvil, Gorrim's Ironworks.</li><li><strong>Potion sellers and herbalists</strong> sound green and old: The Mossy Mortar, Hettie's Remedies.</li><li><strong>General stores</strong> are friendly and practical: The Lucky Barrel, Barnaby's Provisions.</li><li><strong>Jewellers and tailors</strong> show off: The Flawless Pearl, The Dapper Thimble.</li></ul>"
+      },
+      {
+        "heading": "Making the shop memorable",
+        "content": "<ul><li><strong>Give the owner a quirk.</strong> The name tells players who to ask for: someone called Grimble is behind the counter at Grimble's Wands.</li><li><strong>Let the sign say something.</strong> \"The Dented Helm\" is either a joke or a warning about the quality of the armour.</li><li><strong>Add a motto.</strong> Ollivanders' sign reads \"Makers of Fine Wands since 382 BC\". A line under the name adds history in seconds.</li></ul><p>For the inn across the street, try the <a href=\"tavern-name-generator.html\">Tavern Name Generator</a>; for the town itself, the <a href=\"fantasy-town-name-generator.html\">Fantasy Town Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good name for a D&D magic shop?",
+        "answer": "Something with a little mystery: an owner's name and their wares (Grimble's Oddities), or an adjective and an object (The Whispering Orb)."
+      },
+      {
+        "question": "How do I name a blacksmith in a fantasy town?",
+        "answer": "Use the smith's name and trade (Gorrim's Ironworks) or a sign from the forge (The Ringing Anvil). Blacksmith names should sound solid and honest."
+      },
+      {
+        "question": "Can I use these names for a real shop?",
+        "answer": "Yes, but check local businesses and trade marks first, especially for simple names like The Golden Anvil."
+      }
+    ]
+  }
+}
