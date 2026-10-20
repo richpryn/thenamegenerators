@@ -366,6 +366,43 @@
     ]
   },
   {
+    "name": "Elder Scrolls",
+    "slug": "elder_scrolls",
+    "icon": "🐉",
+    "navLabel": "Elder Scrolls Names",
+    "heading": "Elder Scrolls Name Generators: Skyrim and ESO Races",
+    "seoTitle": "Elder Scrolls Name Generators: Skyrim and ESO",
+    "description": "Names for the races of Tamriel, for Skyrim, Elder Scrolls Online and your own stories.",
+    "seoDescription": "Elder Scrolls name generators for Skyrim and ESO: Nord, Khajiit, Dunmer, Altmer, Argonian and Orc names, each following that race's naming customs.",
+    "intro": "<p>Every race in the Elder Scrolls names itself differently. Orcs add gro- or gra- and a parent's name; Khajiit wear prefixes like the J' in J'zargo; Nords have hyphenated family names like Battle-Born; Argonians may go by a description, like Scouts-Many-Marshes. These generators follow each race's customs, with examples from Skyrim, so your character sounds like they belong in Tamriel.</p><p>Each page explains how that race's names work. They suit Skyrim, Elder Scrolls Online, where names must be unique on your server, and tabletop games set in Tamriel.</p>",
+    "featured": [
+      {
+        "key": "skyrim_orc",
+        "note": "full names with gro- and gra-, built the way Skyrim builds them."
+      },
+      {
+        "key": "khajiit",
+        "note": "names with the prefixes of J'zargo and Ri'saad, or without."
+      },
+      {
+        "key": "nord",
+        "note": "Old Norse first names and family names like Battle-Born."
+      },
+      {
+        "key": "argonian",
+        "note": "Jel-style names, or descriptive ones like Scouts-Many-Marshes."
+      }
+    ],
+    "generators": [
+      "skyrim_orc",
+      "nord",
+      "khajiit",
+      "dunmer",
+      "altmer",
+      "argonian"
+    ]
+  },
+  {
     "name": "Pop Culture",
     "slug": "pop_culture",
     "icon": "🎬",
@@ -397,6 +434,9 @@
       "skyrim_orc",
       "khajiit",
       "nord",
+      "argonian",
+      "altmer",
+      "dunmer",
       "warhammer_orc",
       "wow_orc",
       "lotr_orc",

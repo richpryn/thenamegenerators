@@ -1,0 +1,186 @@
+{
+  "title": "Argonian Name Generator",
+  "slug": "argonian-name-generator",
+  "icon": "🦎",
+  "category": "pop_culture",
+  "published": "2026-10-20",
+  "description": "Argonian names for Skyrim and Elder Scrolls Online: Jel-style names like Jaree-Ra and Keerava, or descriptive names like Scouts-Many-Marshes.",
+  "seoKeywords": "argonian names, argonian name generator, skyrim argonian names, eso argonian names, argonian descriptive names, jel names, female argonian names",
+  "isPopular": false,
+  "filters": {
+    "style": {
+      "label": "Name style",
+      "options": [
+        "any",
+        "jel",
+        "descriptive"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "jel": "Jel-style name (Jaree-Ra)",
+        "descriptive": "Descriptive name (Scouts-Many-Marshes)"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "style",
+  "cases": {
+    "jel": {
+      "recipe": "pick",
+      "from": "jel"
+    },
+    "descriptive": {
+      "recipe": "pick",
+      "from": "descriptive"
+    },
+    "any": {
+      "recipe": "template",
+      "template": [
+        "[jel]",
+        "[descriptive]"
+      ]
+    }
+  },
+  "data": {
+    "jel": [
+      "Beem-Ja",
+      "Deesh",
+      "Heem-Ra",
+      "Jeerah",
+      "Kee-Wan",
+      "Meer-Tah",
+      "Nee-Jeen",
+      "Ree-Taska",
+      "Sheem",
+      "Tee-Wan",
+      "Weeska",
+      "Xeeta",
+      "Az-Kur",
+      "Beekus",
+      "Dar-Shei",
+      "Eix-Ra",
+      "Geeh-Sei",
+      "Hul-Ja",
+      "Jaxeel",
+      "Ka-Teel",
+      "Lurz",
+      "Mee-Kus",
+      "Nesh",
+      "Okeeh",
+      "Peek-Ra",
+      "Raj-Hei",
+      "Seewul",
+      "Teeba-Ja",
+      "Utsee",
+      "Vee-Lah",
+      "Wazeeh",
+      "Xil-Tah",
+      "Yeel-Ka",
+      "Zeehaj",
+      "Bur-Wan",
+      "Chuh",
+      "Dum-Ri",
+      "Hixeeh",
+      "Jee-Laz",
+      "Keema",
+      "Aleeh",
+      "Baseel",
+      "Deetum",
+      "Eeka",
+      "Haj-Sei",
+      "Jaxsee",
+      "Keelus",
+      "Meeh-Ja",
+      "Neeta",
+      "Rasha",
+      "Seeh-Kaz",
+      "Tunxeeh",
+      "Uleem",
+      "Wuleen",
+      "Zeen-Ra",
+      "Hees-Ra"
+    ],
+    "descriptive": [
+      "Wades-In-Water",
+      "Stands-In-Reeds",
+      "Sees-Through-Mist",
+      "Runs-With-Current",
+      "Hides-In-Moss",
+      "Swims-At-Night",
+      "Waits-In-Shade",
+      "Climbs-High-Roots",
+      "Counts-Many-Stars",
+      "Speaks-Softly",
+      "Listens-To-Hist",
+      "Catches-Small-Fish",
+      "Walks-Quiet",
+      "Sleeps-In-Mud",
+      "Finds-Lost-Things",
+      "Follows-Old-Paths",
+      "Sings-To-Rain",
+      "Carries-Heavy-Loads",
+      "Watches-The-Tide",
+      "Breathes-Deep-Water",
+      "Knows-Many-Roots",
+      "Bites-Twice",
+      "Hums-At-Dusk",
+      "Digs-Deep-Holes",
+      "Smiles-With-Teeth",
+      "Drifts-On-Logs",
+      "Remembers-Long",
+      "Trades-Fair",
+      "Looks-Twice",
+      "Takes-Small-Steps",
+      "Dreams-Of-Rain",
+      "Hunts-At-Dawn",
+      "Mends-Old-Nets",
+      "Paddles-Far",
+      "Reads-The-Water",
+      "Sits-By-Pools",
+      "Swallows-Stones",
+      "Tastes-The-Air",
+      "Thinks-Slowly",
+      "Wanders-Far-Marsh",
+      "Whistles-Low",
+      "Burns-Bright",
+      "Keeps-The-Eggs",
+      "Calls-The-Frogs",
+      "Shares-The-Fire"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🦎 Argonian Name Generator",
+      "tagline": "Jel-style names like Jaree-Ra, or descriptive names like Scouts-Many-Marshes."
+    },
+    "intro": "Argonians have two kinds of name. Some sound like their own language, Jel: Jaree-Ra, Keerava, Derkeethus. Others are descriptions in plain words, joined with hyphens: Scouts-Many-Marshes on the Windhelm docks is the classic example. This **Argonian name generator** gives you both, for Skyrim, Elder Scrolls Online or your own trip to Black Marsh.",
+    "sections": [
+      {
+        "heading": "Two kinds of Argonian name",
+        "content": "<ul><li><strong>Jel-style names</strong> come from the Argonians' own language. They're short, with doubled vowels (ee, aa), hyphens and sounds like j, sh and x: Jaree-Ra and his sister Deeja, Keerava who runs the Bee and Barb in Riften, Talen-Jei who works there, and Derkeethus, rescued from Darkwater Pass.</li><li><strong>Descriptive names</strong> are translations: a few hyphenated words describing the Argonian, or something they do. Scouts-Many-Marshes and Neetrenaza both work on Windhelm's docks; only one has a name you can read.</li></ul><p>An Argonian may use either, or both, depending on who they're talking to.</p>"
+      },
+      {
+        "heading": "Black Marsh and the Hist",
+        "content": "<p>Argonians come from Black Marsh, the swampland in the south-east of Tamriel. Their lives are bound to the Hist, the great sentient trees of the marsh; hatchlings lick the sap of the Hist, which shapes who they become.</p><p>That's one reason descriptive names suit Argonians so well. A name like Listens-To-Hist or Knows-Many-Roots puts the swamp and the trees right in the name.</p>"
+      },
+      {
+        "heading": "Choosing a name",
+        "content": "<ul><li><strong>Descriptive names make a great hook.</strong> Someone will always ask why a character is called Bites-Twice.</li><li><strong>Jel names suit Argonians who keep to their own kind,</strong> or who don't care whether outsiders can say their name.</li><li><strong>Use both.</strong> Give your Argonian a Jel name at home and a descriptive name among the other races.</li></ul><p>For other races of Tamriel, see the <a href=\"khajiit-name-generator.html\">Khajiit</a>, <a href=\"dunmer-name-generator.html\">Dunmer</a> and <a href=\"nord-name-generator.html\">Nord</a> name generators.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Why do some Argonians have names like Scouts-Many-Marshes?",
+        "answer": "They're descriptive names: plain words describing the Argonian or something they do, joined with hyphens. Others use names from their own language, Jel, like Jaree-Ra."
+      },
+      {
+        "question": "Are Argonian names gendered?",
+        "answer": "Not in any obvious way, so the generator doesn't split them. Use any name for any Argonian."
+      },
+      {
+        "question": "Are these names from Skyrim?",
+        "answer": "No. They're new names in the same two styles, so your character won't share one with someone in the game."
+      }
+    ]
+  }
+}
