@@ -127,7 +127,7 @@ While traffic is this low, lean towards Track A: roughly one rewrite for every n
 
 ### Phase 1: Own D&D (weeks 2–8)
 
-**Status:** D&D hub, Tiefling, Tavern, Dragonborn, Halfling, Gnome, Half-Elf, Goblin, Kobold, Lizardfolk, Githyanki, Knight, Paladin and Baldur's Gate 3 are live. Next: the other Phase 1 places (Kingdom, Village, Fantasy World, Magic Shop), then Human (Forgotten Realms ethnicities).
+**Status:** D&D hub, Tiefling, Tavern, Dragonborn, Halfling, Gnome, Half-Elf, Goblin, Kobold, Lizardfolk, Githyanki, Knight, Paladin and Baldur's Gate 3 are live. Fantasy Shop (magic shops, smiths, apothecaries) is live too. **Village and Kingdom are not separate pages**: Fantasy Town already covers villages and Fantasy Country already targets kingdom names, so new pages would compete with them. Instead, when those two are next rewritten, add "village" and "kingdom" to their titles, keywords and FAQs. Next: Fantasy World, Island, then Human (Forgotten Realms ethnicities), then Phase 4.
 
 Biggest searches, best fit, and most of the engine work is reuse.
 

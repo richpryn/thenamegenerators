@@ -169,6 +169,7 @@
       "epithet",
       "demon_epithet",
       "tavern",
+      "fantasy_shop",
       "fantasy_town",
       "fantasy_city",
       "fantasy_country",
@@ -357,6 +358,7 @@
     ],
     "generators": [
       "tavern",
+      "fantasy_shop",
       "fantasy_town",
       "fantasy_country",
       "cafe",
