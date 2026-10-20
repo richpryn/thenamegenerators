@@ -76,7 +76,7 @@ function scriptJson(value, indent) {
 
 /** The fields the in-browser engine needs, without the article text. */
 function runtimeConfig(gen) {
-  const { title, icon, description, seoKeywords, isPopular, popularRank, category, published, updated, article, key, ...config } = gen;
+  const { icon, description, seoKeywords, isPopular, popularRank, category, published, updated, article, key, ...config } = gen;
   return config;
 }
 
@@ -546,11 +546,20 @@ function generateGeneratorPage(generator, category, site) {
                     <div class="simple-generator">
                         ${filterHTML}
                         <div class="generator-controls">
+                            <div class="filter-group count-group">
+                                <label for="name-count">How many:</label>
+                                <select id="name-count">
+                                    <option value="8" selected>8 names</option>
+                                    <option value="16">16 names</option>
+                                    <option value="32">32 names</option>
+                                </select>
+                            </div>
                             <button id="generate-btn" class="generate-button">Generate Names</button>
                         </div>
                         <div class="results-area" id="results">
                             <p class="results-placeholder">Click "Generate Names" to see results</p>
                         </div>
+                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
                         <p class="usage-note">${escapeHtml(USAGE_NOTE)}</p>
                     </div>
                     

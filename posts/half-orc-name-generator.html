@@ -362,11 +362,20 @@
             </select>
           </div></div>
                         <div class="generator-controls">
+                            <div class="filter-group count-group">
+                                <label for="name-count">How many:</label>
+                                <select id="name-count">
+                                    <option value="8" selected>8 names</option>
+                                    <option value="16">16 names</option>
+                                    <option value="32">32 names</option>
+                                </select>
+                            </div>
                             <button id="generate-btn" class="generate-button">Generate Names</button>
                         </div>
                         <div class="results-area" id="results">
                             <p class="results-placeholder">Click "Generate Names" to see results</p>
                         </div>
+                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
                         <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
                     </div>
                     
@@ -639,7 +648,7 @@
         </footer>
     </div>
 
-    <script type="application/json" id="generator-config">{"slug":"half-orc-name-generator","filters":{"gender":{"label":"Gender","options":["male","female"]}},"recipe":"pick","from":"{gender}","data":{"male":["Tharen","Brukar","Zorath","Darnok","Krelvan","Varlek","Tovrin","Milgar","Thalric","Harok","Kordin","Zarnith","Bromar","Lorthan","Ralkin","Voltak","Drelgar","Morvak","Togar","Brynnok","Zalthar","Karnath","Droven","Tharin","Vorlen","Marrek","Halvak","Dargan","Varnok","Falthor","Tarnak","Kolmir","Vostin","Dalrak","Harthon","Zorlek","Bronnor","Thovik","Malkar","Veldrin","Grakkar","Kargath","Vrothok","Durnak","Tharkar","Gorvath","Dragorr","Zarnok","Kragath","Bralthor","Gorrash","Vorthak","Thurnok","Kralkar","Brogarn","Grudnar","Throzgar","Korvath","Durnath","Voktar","Zrugor","Brakkath","Krelgor","Thargok","Garrok","Mordak","Krulgar","Ragnok","Zalthorr","Harnok","Gralvok","Krodar","Vorath","Dargoth","Malruk","Grathor","Thoknar","Brokthar","Dragnar","Grukkath"],"female":["Thasya","Vorka","Drasira","Zorana","Malzara","Kelgra","Thalina","Marza","Gralsha","Ruvira","Vorla","Dorna","Zarsha","Karella","Luthara","Thazira","Varrika","Tazra","Brylka","Orlanna","Grella","Dorneth","Vashira","Krasha","Lornia","Marith","Thorna","Zalria","Vellara","Drazia","Votha","Thirna","Kolsha","Razira","Dalva","Syrna","Brasha","Morna","Trelka","Zyltha","Grathia","Thornaak","Malrath","Vrasha","Kalthara","Zorvith","Drukra","Thralna","Zarka","Mornath","Thazgira","Vrakka","Gronnith","Drazka","Zulkara","Brashka","Morgra","Vrosha","Kratha","Thragna","Zardra","Volska","Grulka","Durnasha","Thazka","Vrashaak","Korvasha","Vargra","Zarnaak","Thazria","Braskira","Maldra","Grorla","Dornakra","Kalthara","Krathaak","Vorkra","Thaldra","Zarasha","Brylkra"]}}</script>
+    <script type="application/json" id="generator-config">{"title":"Half-Orc Name Generator","slug":"half-orc-name-generator","filters":{"gender":{"label":"Gender","options":["male","female"]}},"recipe":"pick","from":"{gender}","data":{"male":["Tharen","Brukar","Zorath","Darnok","Krelvan","Varlek","Tovrin","Milgar","Thalric","Harok","Kordin","Zarnith","Bromar","Lorthan","Ralkin","Voltak","Drelgar","Morvak","Togar","Brynnok","Zalthar","Karnath","Droven","Tharin","Vorlen","Marrek","Halvak","Dargan","Varnok","Falthor","Tarnak","Kolmir","Vostin","Dalrak","Harthon","Zorlek","Bronnor","Thovik","Malkar","Veldrin","Grakkar","Kargath","Vrothok","Durnak","Tharkar","Gorvath","Dragorr","Zarnok","Kragath","Bralthor","Gorrash","Vorthak","Thurnok","Kralkar","Brogarn","Grudnar","Throzgar","Korvath","Durnath","Voktar","Zrugor","Brakkath","Krelgor","Thargok","Garrok","Mordak","Krulgar","Ragnok","Zalthorr","Harnok","Gralvok","Krodar","Vorath","Dargoth","Malruk","Grathor","Thoknar","Brokthar","Dragnar","Grukkath"],"female":["Thasya","Vorka","Drasira","Zorana","Malzara","Kelgra","Thalina","Marza","Gralsha","Ruvira","Vorla","Dorna","Zarsha","Karella","Luthara","Thazira","Varrika","Tazra","Brylka","Orlanna","Grella","Dorneth","Vashira","Krasha","Lornia","Marith","Thorna","Zalria","Vellara","Drazia","Votha","Thirna","Kolsha","Razira","Dalva","Syrna","Brasha","Morna","Trelka","Zyltha","Grathia","Thornaak","Malrath","Vrasha","Kalthara","Zorvith","Drukra","Thralna","Zarka","Mornath","Thazgira","Vrakka","Gronnith","Drazka","Zulkara","Brashka","Morgra","Vrosha","Kratha","Thragna","Zardra","Volska","Grulka","Durnasha","Thazka","Vrashaak","Korvasha","Vargra","Zarnaak","Thazria","Braskira","Maldra","Grorla","Dornakra","Kalthara","Krathaak","Vorkra","Thaldra","Zarasha","Brylkra"]}}</script>
     <script src="../lib/recipe-engine.js"></script>
     <script src="../lib/page.js"></script>
 </body>

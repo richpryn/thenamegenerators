@@ -355,11 +355,20 @@
                     <div class="simple-generator">
                         
                         <div class="generator-controls">
+                            <div class="filter-group count-group">
+                                <label for="name-count">How many:</label>
+                                <select id="name-count">
+                                    <option value="8" selected>8 names</option>
+                                    <option value="16">16 names</option>
+                                    <option value="32">32 names</option>
+                                </select>
+                            </div>
                             <button id="generate-btn" class="generate-button">Generate Names</button>
                         </div>
                         <div class="results-area" id="results">
                             <p class="results-placeholder">Click "Generate Names" to see results</p>
                         </div>
+                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
                         <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
                     </div>
                     
@@ -558,7 +567,7 @@
         </footer>
     </div>
 
-    <script type="application/json" id="generator-config">{"slug":"lotr-orc-name-generator","filters":{},"recipe":"pick","from":"names","data":{"names":["Grash","Mork","Thrug","Goruk","Krash","Zugul","Bragn","Lurg","Drak","Snaga","Rugth","Ulgash","Throk","Zurg","Glob","Krûg","Grashnak","Durg","Bolg","Ugluk","Ghash","Thrak","Boruk","Grumn","Varg","Skorg","Zrag","Trugg","Shagûl","Drog","Nazg","Ulburz","Morgash","Krulg","Gharn","Rakth","Grublak","Zrorz","Bork","Thrûm","Gluth","Dragn","Zhurg","Grulk","Skarn","Drakth","Glug","Krog","Zûrn","Morg","Gashn","Ugnok","Broth","Thrung","Kharn","Skulg","Drûg","Brulk","Gnath","Zorûk","Klugh","Bûrn","Mugrak","Tragh","Krugh","Snûrk","Gluz","Vrokn","Skrok","Zrun","Gurg","Thranz","Bronz","Skarth","Grublûm","Zragth","Snurgh","Vrash","Mûlt","Drozg","Grûsh","Kragth","Snakh","Grolk","Tharg","Shruk","Blurg","Mogth","Zarl","Durn","Thrugor","Skroth","Glarn","Blazk","Zrug","Kraz","Drorg","Grûlt","Ulnok","Bralûm","Gralth","Vroknash","Krugmar","Thralz","Snurgath","Dragnok","Bolgrak","Graknor","Zarnûk","Krulgathor","Blagnash","Mugzrak","Thrûnok","Zogron","Skarnog","Drulgar","Brulgath","Grorlok","Snagral","Thronzak","Ghrunak","Zorgral","Krulnar","Skothrak","Zulgrak","Thrulgash","Mugnor","Gronmuk","Blornak","Vralgash","Skurnok","Kralthûk","Drozgar","Grûlnak","Shargnok","Zolgrak","Thrunkor","Glurzag","Dralkûm","Snorlag","Brulkath","Gorathûk","Thrûlnor","Muglok","Zarnash","Skorzûk","Krugthol","Brulnak","Grorzak","Thulgrok","Zulmuk","Skornag","Thrulgor","Snargol","Krulmoth","Blurnak","Dronmûk","Gorblak","Snorvok","Vraznor","Grarkûm","Mugrath","Tholnûk","Skornor","Kralkor","Zurgnok","Grûnzak","Blorgral","Drulmar","Thrugnash","Gorvlok","Mugralg","Zarnok","Skorgral","Bralthûk","Grubnash","Zulkor","Thrulgrok","Snorzak","Mugnorak","Zarkûm","Skarblak","Drolgar","Blagnor","Krulzrak","Gralnuk","Thrulgath","Gorvlath","Thrûlak","Blarnûk","Drokzral","Skargor","Mugthor","Zulgrath","Gorvnok","Snolgar","Bralgrak","Krul","Uraz","Zeth","Korz","Grak","Morl","Thra","Skul","Zarn","Droth","Blok","Ghol","Snur","Brul","Thol","Draz","Vrok","Snor","Krum","Murg"]}}</script>
+    <script type="application/json" id="generator-config">{"title":"LOTR Orc Name Generator","slug":"lotr-orc-name-generator","filters":{},"recipe":"pick","from":"names","data":{"names":["Grash","Mork","Thrug","Goruk","Krash","Zugul","Bragn","Lurg","Drak","Snaga","Rugth","Ulgash","Throk","Zurg","Glob","Krûg","Grashnak","Durg","Bolg","Ugluk","Ghash","Thrak","Boruk","Grumn","Varg","Skorg","Zrag","Trugg","Shagûl","Drog","Nazg","Ulburz","Morgash","Krulg","Gharn","Rakth","Grublak","Zrorz","Bork","Thrûm","Gluth","Dragn","Zhurg","Grulk","Skarn","Drakth","Glug","Krog","Zûrn","Morg","Gashn","Ugnok","Broth","Thrung","Kharn","Skulg","Drûg","Brulk","Gnath","Zorûk","Klugh","Bûrn","Mugrak","Tragh","Krugh","Snûrk","Gluz","Vrokn","Skrok","Zrun","Gurg","Thranz","Bronz","Skarth","Grublûm","Zragth","Snurgh","Vrash","Mûlt","Drozg","Grûsh","Kragth","Snakh","Grolk","Tharg","Shruk","Blurg","Mogth","Zarl","Durn","Thrugor","Skroth","Glarn","Blazk","Zrug","Kraz","Drorg","Grûlt","Ulnok","Bralûm","Gralth","Vroknash","Krugmar","Thralz","Snurgath","Dragnok","Bolgrak","Graknor","Zarnûk","Krulgathor","Blagnash","Mugzrak","Thrûnok","Zogron","Skarnog","Drulgar","Brulgath","Grorlok","Snagral","Thronzak","Ghrunak","Zorgral","Krulnar","Skothrak","Zulgrak","Thrulgash","Mugnor","Gronmuk","Blornak","Vralgash","Skurnok","Kralthûk","Drozgar","Grûlnak","Shargnok","Zolgrak","Thrunkor","Glurzag","Dralkûm","Snorlag","Brulkath","Gorathûk","Thrûlnor","Muglok","Zarnash","Skorzûk","Krugthol","Brulnak","Grorzak","Thulgrok","Zulmuk","Skornag","Thrulgor","Snargol","Krulmoth","Blurnak","Dronmûk","Gorblak","Snorvok","Vraznor","Grarkûm","Mugrath","Tholnûk","Skornor","Kralkor","Zurgnok","Grûnzak","Blorgral","Drulmar","Thrugnash","Gorvlok","Mugralg","Zarnok","Skorgral","Bralthûk","Grubnash","Zulkor","Thrulgrok","Snorzak","Mugnorak","Zarkûm","Skarblak","Drolgar","Blagnor","Krulzrak","Gralnuk","Thrulgath","Gorvlath","Thrûlak","Blarnûk","Drokzral","Skargor","Mugthor","Zulgrath","Gorvnok","Snolgar","Bralgrak","Krul","Uraz","Zeth","Korz","Grak","Morl","Thra","Skul","Zarn","Droth","Blok","Ghol","Snur","Brul","Thol","Draz","Vrok","Snor","Krum","Murg"]}}</script>
     <script src="../lib/recipe-engine.js"></script>
     <script src="../lib/page.js"></script>
 </body>
