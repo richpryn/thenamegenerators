@@ -84,15 +84,15 @@
         "any": {
           "recipe": "template",
           "template": [
-            "[names.heroic], a [adjectives.heroic] [types]",
-            "[names.dark], a [adjectives.dark] [types]",
-            "[names.old], a [adjectives.old] [types]"
+            "[names.heroic], [adjectives.heroic] [types]",
+            "[names.dark], [adjectives.dark] [types]",
+            "[names.old], [adjectives.old] [types]"
           ]
         }
       },
       "default": {
         "recipe": "template",
-        "template": "[names.{mood}], a [adjectives.{mood}] [types]"
+        "template": "[names.{mood}], [adjectives.{mood}] [types]"
       }
     }
   },
@@ -534,34 +534,34 @@
     },
     "adjectives": {
       "heroic": [
-        "star-iron",
-        "silver-hilted",
-        "gold-chased",
-        "bright",
-        "rune-etched",
-        "white-steel",
-        "sun-forged",
-        "lion-pommelled"
+        "a star-iron",
+        "a silver-hilted",
+        "a gold-chased",
+        "a bright",
+        "a rune-etched",
+        "a white-steel",
+        "a sun-forged",
+        "a lion-pommelled"
       ],
       "dark": [
-        "black",
-        "notched",
-        "cold-forged",
-        "blood-grooved",
-        "rust-red",
-        "moon-pale",
-        "shadow-tempered",
-        "bone-hilted"
+        "a black",
+        "a notched",
+        "a cold-forged",
+        "a blood-grooved",
+        "a rust-red",
+        "a moon-pale",
+        "a shadow-tempered",
+        "a bone-hilted"
       ],
       "old": [
-        "pattern-welded",
-        "ring-hilted",
-        "barrow-found",
-        "grey",
-        "notched",
-        "ancient",
-        "gold-inlaid",
-        "wave-patterned"
+        "a pattern-welded",
+        "a ring-hilted",
+        "a barrow-found",
+        "a grey",
+        "a notched",
+        "an ancient",
+        "a gold-inlaid",
+        "a wave-patterned"
       ]
     },
     "types": [
