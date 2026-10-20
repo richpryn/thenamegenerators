@@ -1,0 +1,302 @@
+{
+  "title": "Hobbit Name Generator",
+  "slug": "hobbit-name-generator",
+  "icon": "🏡",
+  "category": "pop_culture",
+  "published": "2026-10-20",
+  "description": "Hobbit names in Tolkien's style: plain Shire names ending in -o, grand Took-style names, Buckland names in the pattern of Meriadoc, and flower and jewel names for hobbit girls.",
+  "seoKeywords": "hobbit names, hobbit name generator, lord of the rings hobbit names, lotr name generator, shire names, female hobbit names, hobbit last names, tolkien names",
+  "isPopular": false,
+  "filters": {
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    },
+    "family": {
+      "label": "Family",
+      "options": [
+        "shire",
+        "took",
+        "buckland"
+      ],
+      "optionLabels": {
+        "shire": "Ordinary Shire family",
+        "took": "A Took (grand old names)",
+        "buckland": "A Brandybuck of Buckland"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "family",
+  "cases": {
+    "shire": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "male": {
+          "recipe": "template",
+          "template": "[male.shire] [surnames]"
+        },
+        "female": {
+          "recipe": "template",
+          "template": "[female] [surnames]"
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[male.shire] [surnames]",
+            "[female] [surnames]"
+          ]
+        }
+      }
+    },
+    "took": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "male": {
+          "recipe": "template",
+          "template": "[male.took] Took"
+        },
+        "female": {
+          "recipe": "template",
+          "template": "[female] Took"
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[male.took] Took",
+            "[female] Took"
+          ]
+        }
+      }
+    },
+    "buckland": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "male": {
+          "recipe": "template",
+          "template": "[male.buckland] Brandybuck"
+        },
+        "female": {
+          "recipe": "template",
+          "template": "[female] Brandybuck"
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[male.buckland] Brandybuck",
+            "[female] Brandybuck"
+          ]
+        }
+      }
+    }
+  },
+  "data": {
+    "male": {
+      "shire": [
+        "Bardo",
+        "Benno",
+        "Dando",
+        "Gundo",
+        "Nibo",
+        "Pando",
+        "Sando",
+        "Tobo",
+        "Wilo",
+        "Ambo",
+        "Cobbo",
+        "Dobbo",
+        "Ferdo",
+        "Halbo",
+        "Nobbo",
+        "Podo",
+        "Ruffo",
+        "Tando",
+        "Wido",
+        "Ebbo",
+        "Fenno",
+        "Lonno",
+        "Merro",
+        "Rudo",
+        "Sabbo",
+        "Torbo",
+        "Ulbo",
+        "Gubbo",
+        "Haldo",
+        "Lobo",
+        "Mardo",
+        "Osbo",
+        "Riddo",
+        "Tibbo",
+        "Wando"
+      ],
+      "took": [
+        "Ermengrim",
+        "Fortibald",
+        "Galabras",
+        "Hadubrand",
+        "Isolfrid",
+        "Lanfrancus",
+        "Odomar",
+        "Rambras",
+        "Sigebras",
+        "Theodobras",
+        "Wilibras",
+        "Ulfgrim",
+        "Ambrosias",
+        "Bellegrim",
+        "Ferrandus",
+        "Gundabras",
+        "Hugobald",
+        "Odobras",
+        "Reginbras",
+        "Tancrebald"
+      ],
+      "buckland": [
+        "Eridoc",
+        "Fallodoc",
+        "Garadoc",
+        "Hammadoc",
+        "Mardoc",
+        "Tarradoc",
+        "Fennimac",
+        "Dunnadoc",
+        "Ollimac",
+        "Bramadoc",
+        "Corradoc",
+        "Lirradoc",
+        "Berrimac",
+        "Gelladoc",
+        "Pellimac",
+        "Tollimac",
+        "Wennadoc",
+        "Harrimac",
+        "Sorradoc",
+        "Balladoc"
+      ]
+    },
+    "female": [
+      "Amaryllis",
+      "Bluebell",
+      "Clematis",
+      "Garnet",
+      "Hyacinth",
+      "Iris",
+      "Jasmine",
+      "Larkspur",
+      "Lavender",
+      "Opal",
+      "Periwinkle",
+      "Saffron",
+      "Snapdragon",
+      "Sorrel",
+      "Tansy",
+      "Violet",
+      "Yarrow",
+      "Amber",
+      "Beryl",
+      "Coral",
+      "Agate",
+      "Columbine",
+      "Foxglove",
+      "Honeysuckle",
+      "Meadowsweet",
+      "Rosemary",
+      "Speedwell",
+      "Starwort",
+      "Cowslip",
+      "Harebell",
+      "Heather",
+      "Hazel",
+      "Jonquil",
+      "Marjoram",
+      "Peridot",
+      "Topaz",
+      "Verbena",
+      "Zinnia",
+      "Bryony",
+      "Clover"
+    ],
+    "surnames": [
+      "Barrowfield",
+      "Bramblehill",
+      "Burrowell",
+      "Cobbleway",
+      "Fernhollow",
+      "Greenholm",
+      "Haybarrow",
+      "Kettlewell",
+      "Longhill",
+      "Mossbank",
+      "Nettlehurst",
+      "Oakbottle",
+      "Rushwick",
+      "Sandybank",
+      "Thistlewood",
+      "Underbank",
+      "Applehay",
+      "Brockbank",
+      "Cherryholt",
+      "Dunbarrow",
+      "Elderbank",
+      "Furrowell",
+      "Goodwell",
+      "Hollowhill",
+      "Lightburrow",
+      "Merriwell",
+      "Overbank",
+      "Pipewell",
+      "Quickbank",
+      "Tunnelby",
+      "Barleycombe",
+      "Hedgerow",
+      "Millbank",
+      "Puddlebrook",
+      "Smallburrow"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🏡 Hobbit Name Generator",
+      "tagline": "Shire names in Tolkien's style, from plain Bardo Kettlewell to a grand Took or a Buckland -doc."
+    },
+    "intro": "Tolkien's hobbits have some of the most comfortable names in fantasy: Bilbo, Frodo and Samwise, Baggins, Took and Gamgee. They follow clear patterns, and Tolkien explained several of them himself. This **hobbit name generator** builds new names in those patterns: plain Shire names, grand old Took names, Buckland names like Meriadoc's, and the flower and jewel names hobbits gave their daughters.",
+    "sections": [
+      {
+        "heading": "How hobbit names work",
+        "content": "<ul><li><strong>Male names</strong> are often short and end in <em>-o</em>: Bilbo, Frodo, Drogo, Otho, Lotho. They sound homely and a bit old-fashioned.</li><li><strong>Female names</strong> are often flowers or jewels. In the appendices to <em>The Lord of the Rings</em>, Tolkien notes that hobbit girls were commonly given such names: Belladonna, Lobelia, Primula, Rose, Pearl.</li><li><strong>Family names</strong> are plain English-sounding words, often about the land or the home: Baggins (from Bag End), Proudfoot, Burrows, Hornblower, Brandybuck.</li></ul><p>All the names in this generator are new. None belong to a hobbit in Tolkien's books, so your character won't turn up in a family tree.</p>"
+      },
+      {
+        "heading": "Tooks and Brandybucks",
+        "content": "<p>Two great families break the pattern, and the generator's <strong>Family</strong> choice follows them:</p><ul><li><strong>The Tooks</strong> were the Shire's grandest and most adventurous family, and they gave their sons grand, old-sounding names: Bandobras, Fortinbras, Isengrim, Ferumbras. The <em>Took</em> option makes a new Took with a name like those.</li><li><strong>The Brandybucks</strong> of Buckland, across the Brandywine river, had names that sound different from the rest of the Shire: Meriadoc, Gorbadoc, Marmadoc, Saradoc, Rorimac. The <em>Brandybuck</em> option makes a new Brandybuck in that -doc and -mac style.</li></ul><p>A Took name says your hobbit comes from an old family with a taste for adventure; a Buckland name says they're from the edge of the Shire, by the river and the Old Forest.</p>"
+      },
+      {
+        "heading": "Naming your own hobbit",
+        "content": "<ul><li><strong>Match the family to the character.</strong> A cautious, respectable hobbit has a plain Shire name; a Took is expected to wander off.</li><li><strong>Use a nickname.</strong> Hobbits shorten names all the time: Peregrin is Pippin, Meriadoc is Merry, Samwise is Sam.</li><li><strong>Give the surname a place.</strong> Many Shire family names come from where the family lived: a hill, a burrow, a bank by the river.</li></ul><p>For D&amp;D's halflings, which began as a stand-in for hobbits, see the <a href=\"halfling-name-generator.html\">Halfling Name Generator</a>. For more Middle-earth, try the <a href=\"lotr-wizard-name-generator.html\">LOTR Wizard</a>, <a href=\"lotr-orc-name-generator.html\">LOTR Orc</a> and <a href=\"elf-name-generator.html\">Elf</a> generators.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Why do so many hobbit names end in -o?",
+        "answer": "It's the commonest pattern for male hobbits in Tolkien's books (Bilbo, Frodo, Drogo, Otho), and gives them a homely, old-fashioned sound."
+      },
+      {
+        "question": "How did hobbits name their daughters?",
+        "answer": "Often after flowers or jewels, as Tolkien notes in the appendices to The Lord of the Rings: Belladonna, Lobelia, Primula, Rose, Pearl."
+      },
+      {
+        "question": "Are these names from The Lord of the Rings?",
+        "answer": "No. They're new names in Tolkien's patterns, chosen so none of them belongs to a hobbit in the books."
+      }
+    ]
+  }
+}

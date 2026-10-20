@@ -1,0 +1,1220 @@
+{
+  "title": "Game of Thrones Name Generator",
+  "slug": "game-of-thrones-name-generator",
+  "icon": "👑",
+  "category": "pop_culture",
+  "published": "2026-10-20",
+  "description": "Game of Thrones character names by region of Westeros: a noble name with a new house, a bastard with the right regional surname (Snow, Sand, Rivers…), or a Valyrian or Free Folk name.",
+  "seoKeywords": "game of thrones name generator, got name generator, game of thrones names, westeros names, bastard surnames game of thrones, valyrian names, a song of ice and fire names",
+  "isPopular": false,
+  "filters": {
+    "region": {
+      "label": "Region",
+      "options": [
+        "north",
+        "west",
+        "reach",
+        "dorne",
+        "iron",
+        "vale",
+        "river",
+        "storm",
+        "valyrian",
+        "freefolk"
+      ],
+      "optionLabels": {
+        "north": "The North",
+        "west": "The Westerlands",
+        "reach": "The Reach",
+        "dorne": "Dorne",
+        "iron": "The Iron Islands",
+        "vale": "The Vale",
+        "river": "The Riverlands",
+        "storm": "The Stormlands",
+        "valyrian": "Valyrian (Targaryen-style)",
+        "freefolk": "Free Folk (beyond the Wall)"
+      }
+    },
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "noble",
+        "bastard",
+        "first"
+      ],
+      "optionLabels": {
+        "noble": "Noble (with a house)",
+        "bastard": "Bastard (regional surname)",
+        "first": "First name only"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "region",
+  "cases": {
+    "north": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "noble": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[north.male] [north.houses]",
+                "[north.female] [north.houses]"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[north.{gender}] [north.houses]"
+          }
+        },
+        "bastard": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[north.male] Snow",
+                "[north.female] Snow"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[north.{gender}] Snow"
+          }
+        },
+        "first": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[north.male]",
+                "[north.female]"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[north.{gender}]"
+          }
+        }
+      }
+    },
+    "west": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "noble": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[west.male] [west.houses]",
+                "[west.female] [west.houses]"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[west.{gender}] [west.houses]"
+          }
+        },
+        "bastard": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[west.male] Hill",
+                "[west.female] Hill"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[west.{gender}] Hill"
+          }
+        },
+        "first": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[west.male]",
+                "[west.female]"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[west.{gender}]"
+          }
+        }
+      }
+    },
+    "reach": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "noble": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[reach.male] [reach.houses]",
+                "[reach.female] [reach.houses]"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[reach.{gender}] [reach.houses]"
+          }
+        },
+        "bastard": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[reach.male] Flowers",
+                "[reach.female] Flowers"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[reach.{gender}] Flowers"
+          }
+        },
+        "first": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[reach.male]",
+                "[reach.female]"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[reach.{gender}]"
+          }
+        }
+      }
+    },
+    "dorne": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "noble": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[dorne.male] [dorne.houses]",
+                "[dorne.female] [dorne.houses]"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[dorne.{gender}] [dorne.houses]"
+          }
+        },
+        "bastard": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[dorne.male] Sand",
+                "[dorne.female] Sand"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[dorne.{gender}] Sand"
+          }
+        },
+        "first": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[dorne.male]",
+                "[dorne.female]"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[dorne.{gender}]"
+          }
+        }
+      }
+    },
+    "iron": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "noble": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[iron.male] [iron.houses]",
+                "[iron.female] [iron.houses]"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[iron.{gender}] [iron.houses]"
+          }
+        },
+        "bastard": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[iron.male] Pyke",
+                "[iron.female] Pyke"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[iron.{gender}] Pyke"
+          }
+        },
+        "first": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[iron.male]",
+                "[iron.female]"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[iron.{gender}]"
+          }
+        }
+      }
+    },
+    "vale": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "noble": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[vale.male] [vale.houses]",
+                "[vale.female] [vale.houses]"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[vale.{gender}] [vale.houses]"
+          }
+        },
+        "bastard": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[vale.male] Stone",
+                "[vale.female] Stone"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[vale.{gender}] Stone"
+          }
+        },
+        "first": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[vale.male]",
+                "[vale.female]"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[vale.{gender}]"
+          }
+        }
+      }
+    },
+    "river": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "noble": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[river.male] [river.houses]",
+                "[river.female] [river.houses]"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[river.{gender}] [river.houses]"
+          }
+        },
+        "bastard": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[river.male] Rivers",
+                "[river.female] Rivers"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[river.{gender}] Rivers"
+          }
+        },
+        "first": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[river.male]",
+                "[river.female]"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[river.{gender}]"
+          }
+        }
+      }
+    },
+    "storm": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "noble": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[storm.male] [storm.houses]",
+                "[storm.female] [storm.houses]"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[storm.{gender}] [storm.houses]"
+          }
+        },
+        "bastard": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[storm.male] Storm",
+                "[storm.female] Storm"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[storm.{gender}] Storm"
+          }
+        },
+        "first": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[storm.male]",
+                "[storm.female]"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[storm.{gender}]"
+          }
+        }
+      }
+    },
+    "valyrian": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "noble": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[valyrian.male] [valyrian.houses]",
+                "[valyrian.female] [valyrian.houses]"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[valyrian.{gender}] [valyrian.houses]"
+          }
+        },
+        "bastard": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[valyrian.male] Waters",
+                "[valyrian.female] Waters"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[valyrian.{gender}] Waters"
+          }
+        },
+        "first": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[valyrian.male]",
+                "[valyrian.female]"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[valyrian.{gender}]"
+          }
+        }
+      }
+    },
+    "freefolk": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "noble": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[freefolk.male] [freefolk.epithets]",
+                "[freefolk.female] [freefolk.epithets]"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[freefolk.{gender}] [freefolk.epithets]"
+          }
+        },
+        "bastard": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[freefolk.male] [freefolk.epithets]",
+                "[freefolk.female] [freefolk.epithets]"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[freefolk.{gender}] [freefolk.epithets]"
+          }
+        },
+        "first": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[freefolk.male]",
+                "[freefolk.female]"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[freefolk.{gender}]"
+          }
+        }
+      }
+    }
+  },
+  "data": {
+    "north": {
+      "male": [
+        "Duncard",
+        "Kyle",
+        "Brandel",
+        "Halbert",
+        "Brann",
+        "Dorran",
+        "Eddrick",
+        "Gavin",
+        "Hallis",
+        "Kennet",
+        "Ormund",
+        "Rorik",
+        "Tobin",
+        "Ulric",
+        "Wilbert"
+      ],
+      "female": [
+        "Cerise",
+        "Danyra",
+        "Edda",
+        "Gerta",
+        "Brynne",
+        "Lyanne",
+        "Torra",
+        "Aleyne",
+        "Bryna",
+        "Cella",
+        "Ellyn",
+        "Gwenna",
+        "Hesta",
+        "Lyssa",
+        "Maryn",
+        "Rhonwen",
+        "Sela",
+        "Tarla",
+        "Ysolde"
+      ],
+      "houses": [
+        "Ashwood",
+        "Blackpool",
+        "Frostmark",
+        "Greystark",
+        "Holtwood",
+        "Ironhill",
+        "Northmoor",
+        "Rillwater",
+        "Stonebarrow",
+        "Thorne",
+        "Wolfsden",
+        "Coldwell"
+      ]
+    },
+    "west": {
+      "male": [
+        "Adric",
+        "Gerold",
+        "Rodric",
+        "Dafyd",
+        "Ferrel",
+        "Harlen",
+        "Joffard",
+        "Tygar",
+        "Aubrey",
+        "Darrick",
+        "Garrick",
+        "Hallard",
+        "Lucion",
+        "Marlon",
+        "Reynard",
+        "Wardell"
+      ],
+      "female": [
+        "Cerelle",
+        "Jeyna",
+        "Lyra",
+        "Mellara",
+        "Cyrenna",
+        "Darlessa",
+        "Gemma",
+        "Lanna",
+        "Marla",
+        "Myrielle",
+        "Sarelle",
+        "Tyanne",
+        "Alyssa",
+        "Brella",
+        "Celyne",
+        "Dorothea",
+        "Ella",
+        "Gwenys",
+        "Maris",
+        "Odelia",
+        "Rhiannon",
+        "Teora",
+        "Vessa"
+      ],
+      "houses": [
+        "Goldhollow",
+        "Brightcliff",
+        "Crakefell",
+        "Redwater",
+        "Sarsbury",
+        "Westerholt",
+        "Goldbrook",
+        "Kingsgold"
+      ]
+    },
+    "reach": {
+      "male": [
+        "Hobert",
+        "Arlan",
+        "Bennard",
+        "Desmond",
+        "Theo",
+        "Aldric",
+        "Benedict",
+        "Corwyn",
+        "Dunstan",
+        "Elwood",
+        "Florian",
+        "Gawen",
+        "Humfrey",
+        "Ivor",
+        "Lorimer",
+        "Merrick",
+        "Osmund",
+        "Percival"
+      ],
+      "female": [
+        "Rosamund",
+        "Bethany",
+        "Elyse",
+        "Merry",
+        "Rowena",
+        "Lia",
+        "Bryony",
+        "Adela",
+        "Blanche",
+        "Celandine",
+        "Delphine",
+        "Evaline",
+        "Fiora",
+        "Gisela",
+        "Isolde",
+        "Maribel",
+        "Odette",
+        "Primrose",
+        "Sabine"
+      ],
+      "houses": [
+        "Ashford",
+        "Bramblewood",
+        "Fairmarket",
+        "Greenhedge",
+        "Highbloom",
+        "Oldflowers",
+        "Rosemoor",
+        "Sunfield",
+        "Thornfield",
+        "Willowmere",
+        "Applewood"
+      ]
+    },
+    "dorne": {
+      "male": [
+        "Gerold",
+        "Perros",
+        "Sylvo",
+        "Valen",
+        "Ahmos",
+        "Bashar",
+        "Cyran",
+        "Dameon",
+        "Estevan",
+        "Faro",
+        "Idris",
+        "Javan",
+        "Kemal",
+        "Lucan",
+        "Marek",
+        "Nasir",
+        "Rafiq",
+        "Soren"
+      ],
+      "female": [
+        "Allyria",
+        "Delonne",
+        "Lyessa",
+        "Zahra",
+        "Amaya",
+        "Delia",
+        "Esha",
+        "Farah",
+        "Inara",
+        "Jalila",
+        "Kamira",
+        "Leyla",
+        "Mirela",
+        "Nadira",
+        "Rasha",
+        "Selina",
+        "Talia"
+      ],
+      "houses": [
+        "Sandshadow",
+        "Saltspear",
+        "Redsand",
+        "Dustwell",
+        "Brightwater",
+        "Scorpionsand",
+        "Goldspring",
+        "Palehill",
+        "Salthaven"
+      ]
+    },
+    "iron": {
+      "male": [
+        "Alton",
+        "Asgar",
+        "Brandr",
+        "Drask",
+        "Erik",
+        "Gunthor",
+        "Hrogar",
+        "Kjell",
+        "Orm",
+        "Rolf",
+        "Stygg",
+        "Ulf",
+        "Vigar",
+        "Wulf"
+      ],
+      "female": [
+        "Gylora",
+        "Ragna",
+        "Hagra",
+        "Myla",
+        "Vala",
+        "Yrna",
+        "Sigrid",
+        "Thora",
+        "Alyra",
+        "Brenna",
+        "Kerra",
+        "Gunna",
+        "Agna",
+        "Bodil",
+        "Eira",
+        "Freyda",
+        "Groa",
+        "Hilde",
+        "Inga",
+        "Kara",
+        "Lif",
+        "Sif",
+        "Thyra",
+        "Una"
+      ],
+      "houses": [
+        "Stonehouse",
+        "Saltwater",
+        "Greyiron",
+        "Wavecrest",
+        "Ironwood"
+      ]
+    },
+    "vale": {
+      "male": [
+        "Donnel",
+        "Elbert",
+        "Ronnel",
+        "Hugh",
+        "Willam",
+        "Alder",
+        "Brennan",
+        "Cedric",
+        "Edwin",
+        "Gareth",
+        "Hugo",
+        "Ivo",
+        "Malcolm",
+        "Tristan",
+        "Ulfric"
+      ],
+      "female": [
+        "Anya",
+        "Bethany",
+        "Elys",
+        "Ermesande",
+        "Jonquil",
+        "Mellara",
+        "Sabitha",
+        "Wyna",
+        "Aveline",
+        "Briony",
+        "Cecily",
+        "Dulcie",
+        "Elspeth",
+        "Gwendolyn",
+        "Imogen",
+        "Linnet",
+        "Mirabel",
+        "Rosalind",
+        "Sybil"
+      ],
+      "houses": [
+        "Stonehelm",
+        "Moonbrook",
+        "Falconwell",
+        "Highcrag",
+        "Snowcrest",
+        "Skyhaven",
+        "Graybarrow",
+        "Waynwell"
+      ]
+    },
+    "river": {
+      "male": [
+        "Desmond",
+        "Gerold",
+        "Aldous",
+        "Barret",
+        "Corin",
+        "Ellis",
+        "Fergus",
+        "Godwin",
+        "Hamond",
+        "Ivon",
+        "Mattias",
+        "Nolan",
+        "Osgood",
+        "Piers"
+      ],
+      "female": [
+        "Bethany",
+        "Cerenna",
+        "Alyce",
+        "Arwyn",
+        "Danelle",
+        "Marianne",
+        "Morya",
+        "Sallei",
+        "Tyta",
+        "Agnes",
+        "Briar",
+        "Clarice",
+        "Della",
+        "Edith",
+        "Florence",
+        "Harriet",
+        "Ida",
+        "Lorna",
+        "Mabel",
+        "Nell",
+        "Rhona",
+        "Tamsin"
+      ],
+      "houses": [
+        "Brackenford",
+        "Darrywell",
+        "Swiftwater",
+        "Tullwood",
+        "Blackmont",
+        "Greenwater",
+        "Oakenford",
+        "Redford",
+        "Stillbrook",
+        "Willowford"
+      ]
+    },
+    "storm": {
+      "male": [
+        "Arlan",
+        "Cassor",
+        "Durran",
+        "Elwood",
+        "Lomas",
+        "Aldwin",
+        "Bertram",
+        "Conrad",
+        "Durstan",
+        "Emeric",
+        "Fulke",
+        "Hadric",
+        "Jarvis",
+        "Morgan",
+        "Rufus",
+        "Simeon"
+      ],
+      "female": [
+        "Lyonne",
+        "Bethany",
+        "Edyth",
+        "Jocelyn",
+        "Lyria",
+        "Marya",
+        "Nella",
+        "Renna",
+        "Tanselle",
+        "Adelind",
+        "Bryony",
+        "Eda",
+        "Gwen",
+        "Hester",
+        "Ivy",
+        "Juliana",
+        "Lettice",
+        "Maud",
+        "Petra",
+        "Rowena"
+      ],
+      "houses": [
+        "Stormwatch",
+        "Thundercliff",
+        "Raingate",
+        "Greenstone",
+        "Highstorm",
+        "Blackhaven",
+        "Crowsnest",
+        "Mistwood",
+        "Rainwood",
+        "Stonedance",
+        "Tempestfall",
+        "Windmere"
+      ]
+    },
+    "valyrian": {
+      "male": [
+        "Rhaenar",
+        "Vaelor",
+        "Daemion",
+        "Valaerys",
+        "Jaehaenor",
+        "Rhaelor",
+        "Daerion",
+        "Haelor",
+        "Rhaenon",
+        "Aelyx",
+        "Daemar",
+        "Laemon",
+        "Aelor",
+        "Baelyx",
+        "Daemaryn",
+        "Haelon",
+        "Jaerys",
+        "Rhaelyx",
+        "Vaenor",
+        "Aeryx",
+        "Laenon"
+      ],
+      "female": [
+        "Aelora",
+        "Daenyra",
+        "Haelyx",
+        "Laerys",
+        "Maelora",
+        "Saelyra",
+        "Vaelinor",
+        "Visera",
+        "Aelyna",
+        "Jaelora",
+        "Aerya",
+        "Baelora",
+        "Haenys",
+        "Laelora",
+        "Naerya",
+        "Saenys",
+        "Vaerys",
+        "Zhaela"
+      ],
+      "houses": [
+        "Belaerys",
+        "Maelaris",
+        "Vaelyr",
+        "Aerax",
+        "Celtaryon",
+        "Daenaros",
+        "Qoraelys",
+        "Velmaron"
+      ]
+    },
+    "freefolk": {
+      "male": [
+        "Tormar",
+        "Haldis",
+        "Styrmund",
+        "Varn",
+        "Dyrk",
+        "Brog",
+        "Hrolf",
+        "Kolvar",
+        "Ulfgar",
+        "Rask",
+        "Hakon",
+        "Grigg",
+        "Torbjorn",
+        "Ketter",
+        "Fenn",
+        "Alfyn",
+        "Bjorn",
+        "Grimm",
+        "Halvar",
+        "Sten",
+        "Torvar",
+        "Uthor"
+      ],
+      "female": [
+        "Frenya",
+        "Hildra",
+        "Ysa",
+        "Rorga",
+        "Thessa",
+        "Vala",
+        "Brynna",
+        "Gilla",
+        "Ostra",
+        "Wenna",
+        "Sigga",
+        "Hala",
+        "Dalwyn",
+        "Kerra",
+        "Tova",
+        "Elka",
+        "Frida",
+        "Gerda",
+        "Sigrun",
+        "Thora"
+      ],
+      "epithets": [
+        "Thunderfist",
+        "the Bold",
+        "Ice-Eye",
+        "Bearhide",
+        "Wolfwalker",
+        "Frostfinger",
+        "Longspear",
+        "Crow-Killer",
+        "Skinchanger",
+        "Snowbeard",
+        "the Silent",
+        "Redaxe",
+        "Hornblower"
+      ]
+    }
+  },
+  "article": {
+    "hero": {
+      "title": "👑 Game of Thrones Name Generator",
+      "tagline": "Names from every corner of Westeros, with a house of your own or the right bastard surname."
+    },
+    "intro": "George R. R. Martin builds most Westerosi names from real medieval English ones with a letter changed: Eddard for Edward, Jaime for James, Petyr for Peter. Each region has its own flavour, Targaryens sound Valyrian, and bastards get a surname that tells you where they were born. This **Game of Thrones name generator** builds names for eight regions of Westeros, plus Valyrian and Free Folk names, as a noble with a new house, a bastard or a first name alone.",
+    "sections": [
+      {
+        "heading": "Bastard surnames by region",
+        "content": "<p>In Westeros, a highborn bastard can't use their father's name. They take a surname from the region they were born in, which is why Jon is a Snow and Ellaria is a Sand:</p><ul><li><strong>Snow:</strong> the North</li><li><strong>Sand:</strong> Dorne</li><li><strong>Rivers:</strong> the Riverlands</li><li><strong>Stone:</strong> the Vale</li><li><strong>Hill:</strong> the Westerlands</li><li><strong>Flowers:</strong> the Reach</li><li><strong>Storm:</strong> the Stormlands</li><li><strong>Pyke:</strong> the Iron Islands</li><li><strong>Waters:</strong> the Crownlands, around King's Landing</li></ul><p>The generator's <em>Bastard</em> format gives each region its right surname. Valyrian names get Waters, as a Targaryen bastard born near King's Landing would.</p>"
+      },
+      {
+        "heading": "How each region sounds",
+        "content": "<ul><li><strong>The North:</strong> plain and old: Rickard, Benjen, Lyanna. Northern houses sound cold and hard.</li><li><strong>The Westerlands:</strong> polished and proud, the Lannisters' country: Tywin, Kevan, Cersei.</li><li><strong>The Reach:</strong> courtly and flowery, home of the Tyrells: Mace, Loras, Margaery.</li><li><strong>Dorne:</strong> a different flavour altogether, after the Rhoynar who settled there: Oberyn, Doran, Arianne, Nymeria.</li><li><strong>The Iron Islands:</strong> harsh and salty: Balon, Euron, Asha.</li><li><strong>Valyrian:</strong> the Targaryens' names, full of ae and y: Aegon, Rhaegar, Daenerys, Viserys.</li><li><strong>The Free Folk:</strong> one name, often with an epithet earned beyond the Wall: Tormund Giantsbane.</li></ul>"
+      },
+      {
+        "heading": "Making your character's name",
+        "content": "<ul><li><strong>Take a real name and change a letter.</strong> It's Martin's own trick: Walter becomes Walder, Robert stays Robert, Edward becomes Eddard.</li><li><strong>Choose a house with a sigil in mind.</strong> A house name like Frostmark or Saltspear suggests its own banner.</li><li><strong>Decide if they're legitimate.</strong> A bastard's surname follows them everywhere, and changes the story.</li></ul><p>All the first names and houses here are new, chosen so they don't belong to a major character. For their sword, try the <a href=\"game-of-thrones-sword-name-generator.html\">Game of Thrones Sword Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are the bastard surnames in Game of Thrones?",
+        "answer": "Each region has one: Snow (the North), Sand (Dorne), Rivers (Riverlands), Stone (Vale), Hill (Westerlands), Flowers (Reach), Storm (Stormlands), Pyke (Iron Islands) and Waters (Crownlands)."
+      },
+      {
+        "question": "How does George R. R. Martin come up with names?",
+        "answer": "Many are real medieval English names with a letter changed or a spelling twisted: Eddard (Edward), Jaime (James), Petyr (Peter), Walder (Walter)."
+      },
+      {
+        "question": "Are these names from the books or the show?",
+        "answer": "The bastard surnames are; the first names and houses are new, so your character won't belong to a family in the books."
+      }
+    ]
+  }
+}
