@@ -1,0 +1,192 @@
+{
+  "title": "Kobold Name Generator",
+  "slug": "kobold-name-generator",
+  "icon": "🦎",
+  "category": "dnd",
+  "published": "2026-10-20",
+  "description": "Kobold names for D&D: short, yippy names like Ixik and Snarf, with an optional job title for the trap-setter or dragon-feeder of the tribe.",
+  "seoKeywords": "kobold names, kobold name generator, dnd kobold names, funny kobold names, kobold player names, 5e kobold names",
+  "isPopular": false,
+  "filters": {
+    "format": {
+      "label": "Name format",
+      "options": [
+        "with_title",
+        "name"
+      ],
+      "optionLabels": {
+        "with_title": "With a job title",
+        "name": "Name only"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "name": {
+      "recipe": "pick",
+      "from": "names"
+    },
+    "with_title": {
+      "recipe": "template",
+      "template": "[names] the [titles]"
+    }
+  },
+  "data": {
+    "names": [
+      "Ixik",
+      "Snarf",
+      "Tikka",
+      "Rik",
+      "Mekk",
+      "Zix",
+      "Yarp",
+      "Kibbik",
+      "Skeev",
+      "Drik",
+      "Ekko",
+      "Fip",
+      "Gekk",
+      "Hisk",
+      "Irk",
+      "Jix",
+      "Kekk",
+      "Lix",
+      "Mip",
+      "Nikk",
+      "Opp",
+      "Pik",
+      "Quix",
+      "Rizz",
+      "Sekk",
+      "Tikk",
+      "Ukk",
+      "Vix",
+      "Wikk",
+      "Yip",
+      "Zekk",
+      "Arix",
+      "Biz",
+      "Kurrik",
+      "Nix",
+      "Plik",
+      "Sizzik",
+      "Tazz",
+      "Vrik",
+      "Yekka",
+      "Skrix",
+      "Zibbik",
+      "Krikket",
+      "Darrik",
+      "Esk",
+      "Ripsik",
+      "Sniv",
+      "Bekk",
+      "Chik",
+      "Dazz",
+      "Eek",
+      "Frik",
+      "Grix",
+      "Hekka",
+      "Isk",
+      "Jekk",
+      "Kazz",
+      "Lekk",
+      "Mekka",
+      "Nazz",
+      "Oxik",
+      "Pazz",
+      "Rekk",
+      "Sikka",
+      "Tizz",
+      "Uzz",
+      "Vekk",
+      "Wix",
+      "Yazz",
+      "Zikka",
+      "Brix",
+      "Kipp",
+      "Tekka",
+      "Rix",
+      "Skazz",
+      "Akk",
+      "Blik",
+      "Driz",
+      "Fazz",
+      "Gikk",
+      "Kix",
+      "Mazz",
+      "Pekk",
+      "Rikka",
+      "Tix",
+      "Zazz"
+    ],
+    "titles": [
+      "Trapmaker",
+      "Dragonwatcher",
+      "Tunnel-Digger",
+      "Egg-Keeper",
+      "Scale-Polisher",
+      "Gem-Counter",
+      "Stonesniffer",
+      "Spear-Shaker",
+      "Shiny-Finder",
+      "Fire-Licker",
+      "Rockdropper",
+      "Pit-Watcher",
+      "Coin-Counter",
+      "Dragon-Feeder",
+      "Dark-Eye",
+      "Tail-Biter",
+      "Bone-Gnawer",
+      "Torch-Snuffer",
+      "Wire-Setter",
+      "Hoardkeeper",
+      "Lair-Sweeper",
+      "Dragon-Singer",
+      "Ore-Sorter",
+      "Rope-Climber",
+      "Smoke-Maker",
+      "Shiny-Hoarder",
+      "Gnome-Hater",
+      "Door-Guard",
+      "Rat-Herder",
+      "Cave-Painter"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🦎 Kobold Name Generator",
+      "tagline": "Short, quick kobold names, with a title for the tribe's trapmaker or dragon-feeder."
+    },
+    "intro": "Kobolds are small, scaly and proud of it. In D&D they're draconic creatures who worship the god Kurtulmak and, given the chance, serve a real dragon. Their names are short and quick, like the kobolds themselves. This **kobold name generator** gives you names like Ixik and Krikket, and can add a title for the job each kobold does in the tribe.",
+    "sections": [
+      {
+        "heading": "What kobold names sound like",
+        "content": "<p>Kobolds speak Draconic, and their names sound like it squeezed into something small: one or two syllables, sharp consonants (k, x, z) and short vowels. Ixik, Zekk, Tazz. A name you could yip.</p><p>Two famous kobolds show the range. <strong>Meepo</strong>, from the third-edition adventure <em>The Sunless Citadel</em>, is the kobold who has lost his tribe's pet dragon and wants it back. <strong>Deekin Scalesinger</strong>, the kobold bard of the Neverwinter Nights expansions, follows the hero around planning to write a book about them.</p>"
+      },
+      {
+        "heading": "Kobolds and their jobs",
+        "content": "<p>A kobold tribe survives by working together: digging tunnels, setting traps and, if they're lucky, looking after a dragon's hoard. A title for a kobold's job does two things at once: it tells the players what the kobold is good at, and it gives the kobold something to be proud of.</p><ul><li><strong>Ixik the Trapmaker</strong> is the one to talk to before walking down that corridor.</li><li><strong>Snarf the Dragon-Feeder</strong> knows where the dragon sleeps.</li><li><strong>Zekk the Egg-Keeper</strong> will fight harder than anyone else in the tribe.</li></ul>"
+      },
+      {
+        "heading": "Kobolds as player characters",
+        "content": "<p>Kobolds became a playable race in <em>Volo's Guide to Monsters</em>, and players love them. A few ideas for a kobold character's name:</p><ul><li><strong>Keep the tribe name small.</strong> A short name like Tikka is a good base for an adventurer's grand new title.</li><li><strong>Let them rename themselves.</strong> A kobold who has left the tribe might add \"Dragonslayer\" to their name before they've seen a dragon.</li><li><strong>Use the title as a backstory.</strong> A former Egg-Keeper has a reason to protect the party's weakest member.</li></ul><p>For more, add an epithet with the <a href=\"epithet-generator.html\">Epithet Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good kobold names?",
+        "answer": "Short, sharp names you can say quickly, like Ixik, Snarf or Tazz. Famous kobolds include Meepo from The Sunless Citadel and Deekin Scalesinger from Neverwinter Nights."
+      },
+      {
+        "question": "What language do kobolds speak?",
+        "answer": "Draconic, the language of dragons, which is why their names have hard, hissing sounds."
+      },
+      {
+        "question": "Can I play a kobold in D&D?",
+        "answer": "Yes. Kobolds became a playable race in Volo's Guide to Monsters, and are in later books too."
+      }
+    ]
+  }
+}

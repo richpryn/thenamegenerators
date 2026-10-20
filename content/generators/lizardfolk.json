@@ -1,0 +1,194 @@
+{
+  "title": "Lizardfolk Name Generator",
+  "slug": "lizardfolk-name-generator",
+  "icon": "🐊",
+  "category": "dnd",
+  "published": "2026-10-20",
+  "description": "Lizardfolk names for D&D: hissing Draconic-style names, or the plain descriptive names a tribe gives for a deed or trait, like Swims-Deep or Stormeye.",
+  "seoKeywords": "lizardfolk names, lizardfolk name generator, dnd lizardfolk names, lizardfolk descriptive names, 5e lizardfolk names, lizard names",
+  "isPopular": false,
+  "filters": {
+    "format": {
+      "label": "Name format",
+      "options": [
+        "any",
+        "draconic",
+        "descriptive",
+        "both"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "draconic": "Draconic-style name",
+        "descriptive": "Descriptive name",
+        "both": "Both (name and descriptive name)"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "draconic": {
+      "recipe": "pick",
+      "from": "draconic"
+    },
+    "descriptive": {
+      "recipe": "pick",
+      "from": "descriptive"
+    },
+    "both": {
+      "recipe": "template",
+      "template": "[draconic] “[descriptive]”"
+    },
+    "any": {
+      "recipe": "template",
+      "template": [
+        "[draconic]",
+        "[descriptive]",
+        "[draconic] “[descriptive]”"
+      ]
+    }
+  },
+  "data": {
+    "draconic": [
+      "Akhrass",
+      "Barsk",
+      "Chessk",
+      "Drakkth",
+      "Gharsk",
+      "Hissra",
+      "Irrth",
+      "Jhessk",
+      "Kaarth",
+      "Kressk",
+      "Lurrth",
+      "Mossk",
+      "Nhassa",
+      "Orrsk",
+      "Ptharr",
+      "Rasskar",
+      "Sarrth",
+      "Thessk",
+      "Ussarth",
+      "Xarrth",
+      "Yssk",
+      "Zhurrk",
+      "Achessk",
+      "Brath",
+      "Dhurrsk",
+      "Grassth",
+      "Hessar",
+      "Kurrth",
+      "Lassk",
+      "Nurrth",
+      "Ossarth",
+      "Sskar",
+      "Thurrsk",
+      "Varrth",
+      "Vessk",
+      "Zarsk",
+      "Kethrass",
+      "Mirrsk",
+      "Arrsk",
+      "Bhassk",
+      "Drussk",
+      "Ghessar",
+      "Hurrth",
+      "Kassth",
+      "Murrsk",
+      "Nessar",
+      "Rhussk",
+      "Sorrth",
+      "Tassk",
+      "Urrsk",
+      "Vhassar",
+      "Xussk",
+      "Zessk",
+      "Krathss"
+    ],
+    "descriptive": [
+      "Swims-Deep",
+      "Stormeye",
+      "Sharptooth",
+      "Ironhide",
+      "Coldblood",
+      "Bone-Breaker",
+      "Mud-Walker",
+      "Long-Tail",
+      "Still-Water",
+      "Reed-Hunter",
+      "Green-Scale",
+      "Spear-Thrower",
+      "Fang-Smile",
+      "Night-Watcher",
+      "Many-Teeth",
+      "Stone-Skin",
+      "Croc-Rider",
+      "Eel-Catcher",
+      "Quick-Strike",
+      "Patient-Hunter",
+      "Black-Water",
+      "Moss-Back",
+      "Sun-Basker",
+      "Shell-Cracker",
+      "Fog-Strider",
+      "Deep-Diver",
+      "Snake-Friend",
+      "Frog-Eater",
+      "Thunder-Roar",
+      "Silent-Swim",
+      "Two-Spears",
+      "Slow-Blink",
+      "Broken-Tooth",
+      "Warm-Stone",
+      "Bird-Snatcher",
+      "Cold-Eye",
+      "Mud-Sleeper",
+      "Old-Scar",
+      "Tide-Walker",
+      "River-Born",
+      "Hunger-Never-Ends",
+      "Swallow-Whole",
+      "Shed-Twice",
+      "Red-Throat",
+      "Hide-In-Reeds",
+      "Fish-Thief",
+      "Green-Shadow",
+      "Still-Hunter"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🐊 Lizardfolk Name Generator",
+      "tagline": "Hissing Draconic names and plain descriptive ones, earned by deed or trait."
+    },
+    "intro": "Lizardfolk see the world in practical terms, and their names do too. In D&D's <em>Volo's Guide to Monsters</em>, lizardfolk take their names from Draconic, and the name is a simple description given by the tribe for something the lizardfolk did or is known for. This **lizardfolk name generator** gives you hissing Draconic-style names, plain descriptive names in Common, or both together.",
+    "sections": [
+      {
+        "heading": "How lizardfolk get their names",
+        "content": "<p>A lizardfolk's name isn't chosen for how it sounds. It's a description, earned through a deed or a trait the tribe has noticed. A lizardfolk might be renamed if they do something more notable later.</p><p>Because the names are Draconic words, outsiders often only hear the sound. Ask a lizardfolk what their name means and you'll get a plain answer: \"Swims-Deep\", \"Stormeye\", \"Patient-Hunter\". The <strong>Both</strong> format gives you the two side by side.</p><p>The Draconic-style names in this generator are invented to sound right, not real Draconic words, so they don't have fixed meanings. Pair one with a descriptive name to decide what it means for your character.</p>"
+      },
+      {
+        "heading": "What the names sound like",
+        "content": "<ul><li><strong>Hissing and rolling sounds:</strong> ss, sk, rr and th. Kressk, Ussarth, Zhurrk.</li><li><strong>Short:</strong> one or two syllables, said with a flick of the tongue.</li><li><strong>Descriptive names are blunt.</strong> They describe the body (Green-Scale), a skill (Eel-Catcher) or a habit (Sun-Basker). Lizardfolk don't flatter.</li></ul>"
+      },
+      {
+        "heading": "Playing a lizardfolk",
+        "content": "<p>Lizardfolk player characters are fun because they think so differently from the rest of the party. The name can show that:</p><ul><li><strong>Ask for the party's names in the same style.</strong> A lizardfolk might call the wizard \"Talks-Too-Much\" and mean it as a simple fact.</li><li><strong>Change the name when it's earned.</strong> After a great deed, the tribe, or the lizardfolk themselves, may give a new descriptive name.</li><li><strong>Keep it practical.</strong> A lizardfolk named Frog-Eater isn't embarrassed. That's just what they eat.</li></ul>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do lizardfolk names work in D&D?",
+        "answer": "In Volo's Guide to Monsters, lizardfolk names come from Draconic and are simple descriptions given by the tribe, based on a notable deed or trait."
+      },
+      {
+        "question": "What does my lizardfolk's Draconic name mean?",
+        "answer": "The Draconic-style names here are invented to sound right rather than real Draconic words, so you can decide. Use the Both format to pair each one with a descriptive name."
+      },
+      {
+        "question": "Can a lizardfolk change their name?",
+        "answer": "Yes. Because the name describes something they've done or are known for, a lizardfolk may earn a new one after a more notable deed."
+      }
+    ]
+  }
+}
