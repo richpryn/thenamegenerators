@@ -492,6 +492,7 @@
       }
     ],
     "generators": [
+      "elden_ring",
       "bg3",
       "harry_potter_witch",
       "hogwarts_legacy_witch",
