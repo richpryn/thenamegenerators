@@ -1,0 +1,268 @@
+{
+  "title": "Gnome Name Generator",
+  "slug": "gnome-name-generator",
+  "icon": "🍄",
+  "category": "dnd",
+  "published": "2026-10-20",
+  "description": "Gnome names for D&D: a bouncy personal name, a clan name and a nickname, the three names gnomes use with outsiders, chosen because they're the most fun to say.",
+  "seoKeywords": "gnome names, gnome name generator, dnd gnome names, gnome last names, rock gnome names, forest gnome names, 5e gnome names, funny gnome names",
+  "isPopular": false,
+  "filters": {
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "three_names",
+        "full_name",
+        "personal",
+        "nickname"
+      ],
+      "optionLabels": {
+        "three_names": "All three (personal, nickname, clan)",
+        "full_name": "Personal + clan",
+        "personal": "Personal name only",
+        "nickname": "Nickname only"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "three_names": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": "[personal] “[nicknames]” [clans]"
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[personal.{gender}] “[nicknames]” [clans]"
+      }
+    },
+    "full_name": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": "[personal] [clans]"
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[personal.{gender}] [clans]"
+      }
+    },
+    "personal": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "pick",
+          "from": "personal"
+        }
+      },
+      "default": {
+        "recipe": "pick",
+        "from": "personal.{gender}"
+      }
+    },
+    "nickname": {
+      "recipe": "pick",
+      "from": "nicknames"
+    }
+  },
+  "data": {
+    "personal": {
+      "male": [
+        "Alby",
+        "Bandle",
+        "Bibbin",
+        "Dabbock",
+        "Fennick",
+        "Fizwick",
+        "Gabble",
+        "Gilliby",
+        "Jinkle",
+        "Kibbet",
+        "Nackwin",
+        "Nimbo",
+        "Orrick",
+        "Pemble",
+        "Quillin",
+        "Ribbock",
+        "Snorbin",
+        "Tibble",
+        "Tobbin",
+        "Wimbly",
+        "Zibbit",
+        "Zandock",
+        "Boddle",
+        "Dimwick",
+        "Fonzel",
+        "Gerrin",
+        "Jebbit",
+        "Kelvo",
+        "Morrible",
+        "Pockett",
+        "Bartleby",
+        "Cobbin",
+        "Dorrick",
+        "Flick"
+      ],
+      "female": [
+        "Bimsy",
+        "Caramee",
+        "Dazzlewick",
+        "Ellabell",
+        "Fizzy",
+        "Glimmerella",
+        "Jessimip",
+        "Lillibee",
+        "Loopanna",
+        "Mabble",
+        "Nissabel",
+        "Oriwick",
+        "Pipsa",
+        "Quibbin",
+        "Rillyjoy",
+        "Shimmy",
+        "Tansabel",
+        "Tinsel",
+        "Winnabel",
+        "Zannadee",
+        "Bellamip",
+        "Corrabel",
+        "Dottie",
+        "Effiwick",
+        "Gemmabel",
+        "Hollimop",
+        "Isobee",
+        "Jinny",
+        "Kettiwick",
+        "Lollamip",
+        "Mirabel",
+        "Nimmi",
+        "Ottiline",
+        "Pennywick",
+        "Zibby"
+      ]
+    },
+    "clans": [
+      "Abbelkin",
+      "Bramwick",
+      "Dunnick",
+      "Feldspar",
+      "Gimbrel",
+      "Hollock",
+      "Kettleby",
+      "Nimbleton",
+      "Pibbin",
+      "Quartzel",
+      "Rundle",
+      "Spindleworth",
+      "Tumbleby",
+      "Wobbin",
+      "Brindle",
+      "Copperkettle",
+      "Fiddlewick",
+      "Garnet",
+      "Hobblestone",
+      "Jinglebrook",
+      "Lanternby",
+      "Mossworth",
+      "Nackleby",
+      "Pottle",
+      "Ripplecog",
+      "Thimbleby",
+      "Tinkerton",
+      "Wickersham",
+      "Zinnick",
+      "Brassbottle"
+    ],
+    "nicknames": [
+      "Gearspin",
+      "Twofingers",
+      "Puddlejump",
+      "Boomer",
+      "Sparks",
+      "Bellows",
+      "Fizzpop",
+      "Nosey",
+      "Halfwick",
+      "Clatter",
+      "Tinker",
+      "Wobble",
+      "Jinx",
+      "Patch",
+      "Squint",
+      "Fiddlesticks",
+      "Teacup",
+      "Quickfingers",
+      "Ticktock",
+      "Whistle",
+      "Mudlark",
+      "Buttons",
+      "Dazzle",
+      "Oneboot",
+      "Kaboom",
+      "Inkblot",
+      "Gizmo",
+      "Sootface",
+      "Hiccup",
+      "Riddles"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🍄 Gnome Name Generator",
+      "tagline": "Personal name, clan name and nickname: the three names a gnome picks because they're the most fun to say."
+    },
+    "intro": "Gnomes collect names the way other people collect buttons. In D&D a gnome gets a name from their mother, their father, a clan elder and assorted aunts and uncles, plus nicknames from everyone else, and ends up with half a dozen or more. With outsiders they settle on three. This **gnome name generator** gives you those three: a personal name, a clan name and a nickname, like Fizwick “Ticktock” Spindleworth.",
+    "sections": [
+      {
+        "heading": "Why gnomes have so many names",
+        "content": "<p>The fifth-edition Player's Handbook (2014) says gnomes love names. Each relative gives a newborn gnome a name, usually a variation on the name of an ancestor or distant relative, though some are brand new inventions. Nicknames from everyone else may or may not stick.</p><p>Other peoples find this exhausting, so when dealing with humans and others who are \"stuffy\" about names, a gnome uses no more than three: a <strong>personal name</strong>, a <strong>clan name</strong> and a <strong>nickname</strong>, picking the one in each category that is the most fun to say. That last rule is the best guide to a good gnome name.</p>"
+      },
+      {
+        "heading": "What gnome names sound like",
+        "content": "<ul><li><strong>Personal names bounce.</strong> Doubled consonants and light endings: <em>-bble</em>, <em>-wick</em>, <em>-bin</em>, <em>-bel</em>, <em>-mip</em>. Say Tibble, Lillibee or Quibbin and it's hard not to smile.</li><li><strong>Clan names sound like a family workshop:</strong> Copperkettle, Spindleworth, Tinkerton. Rock gnomes, D&D's tinkerers, suit the clockwork-sounding ones; forest gnomes suit Mossworth or Jinglebrook.</li><li><strong>Nicknames are short and earned:</strong> Kaboom, Sootface, Twofingers. For a rock gnome inventor, the nickname is often a warning.</li></ul><p>All the names here are new, built from those sounds rather than copied from the Player's Handbook.</p>"
+      },
+      {
+        "heading": "Giving your gnome more names",
+        "content": "<p>The three-name format is the polite version. At the table it's fun to let the rest slip out:</p><ul><li><strong>Give the full list once.</strong> When the gnome first introduces themselves to someone important, let them rattle off six names, then say \"but you can call me Pemble.\"</li><li><strong>Change the nickname.</strong> Nicknames come and go. A gnome who blew up the party's cart can arrive at the next town as \"Kaboom\".</li><li><strong>Ask who gave which name.</strong> A name from a disapproving aunt is a story in itself.</li></ul><p>Press Generate a few times with \"Personal name only\" to collect a whole family's worth of names.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many names does a gnome have in D&D?",
+        "answer": "Usually half a dozen or more, given by parents, the clan elder, aunts, uncles and friends. With outsiders, a gnome uses three: a personal name, a clan name and a nickname."
+      },
+      {
+        "question": "What's the difference between rock gnome and forest gnome names?",
+        "answer": "The Player's Handbook gives both the same kind of name. For flavour, rock gnome tinkerers suit workshop-sounding clan names like Copperkettle, and forest gnomes suit names from nature, like Mossworth."
+      },
+      {
+        "question": "Are these names from the Player's Handbook?",
+        "answer": "No. They're new names built in the same style, so your gnome won't share a name with an example from the book."
+      },
+      {
+        "question": "Do deep gnomes use the same names?",
+        "answer": "Deep gnomes, or svirfneblin, are a separate people who live in the Underdark, with their own culture. These bouncy names suit rock and forest gnomes best; for a deep gnome, pick the plainer ones."
+      }
+    ]
+  }
+}

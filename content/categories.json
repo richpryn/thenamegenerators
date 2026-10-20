@@ -74,6 +74,9 @@
     ],
     "generators": [
       "tiefling",
+      "dragonborn",
+      "halfling",
+      "gnome",
       "elf",
       "dwarf",
       "dragon",
@@ -134,6 +137,9 @@
     ],
     "generators": [
       "tiefling",
+      "dragonborn",
+      "halfling",
+      "gnome",
       "dnd_fantasy",
       "elf",
       "high_elf",

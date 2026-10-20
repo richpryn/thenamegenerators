@@ -1,0 +1,299 @@
+{
+  "title": "Dragonborn Name Generator",
+  "slug": "dragonborn-name-generator",
+  "icon": "🐲",
+  "category": "dnd",
+  "published": "2026-10-20",
+  "description": "Dragonborn names the D&D way: the clan name first as a mark of honour, then the personal name, plus the childhood names dragonborn use among their clutchmates.",
+  "seoKeywords": "dragonborn names, dragonborn name generator, dnd dragonborn names, dragonborn clan names, 5e dragonborn names, female dragonborn names, bg3 dragonborn names",
+  "isPopular": false,
+  "filters": {
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "full_name",
+        "personal",
+        "clan",
+        "childhood"
+      ],
+      "optionLabels": {
+        "full_name": "Full name (clan first)",
+        "personal": "Personal name only",
+        "clan": "Clan name only",
+        "childhood": "Childhood name"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "full_name": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": "[clans] [personal]"
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[clans] [personal.{gender}]"
+      }
+    },
+    "personal": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "pick",
+          "from": "personal"
+        }
+      },
+      "default": {
+        "recipe": "pick",
+        "from": "personal.{gender}"
+      }
+    },
+    "clan": {
+      "recipe": "pick",
+      "from": "clans"
+    },
+    "childhood": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": "[personal] “[childhood]”"
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[personal.{gender}] “[childhood]”"
+      }
+    }
+  },
+  "data": {
+    "personal": {
+      "male": [
+        "Balthak",
+        "Dorrash",
+        "Ghazrin",
+        "Kerrak",
+        "Medrok",
+        "Nazhar",
+        "Rhazkar",
+        "Torvash",
+        "Vorrin",
+        "Zhakar",
+        "Brannash",
+        "Daskar",
+        "Gurrash",
+        "Hazvorr",
+        "Irzhak",
+        "Jhazir",
+        "Kalvash",
+        "Korrak",
+        "Morzhan",
+        "Nadrik",
+        "Oskarr",
+        "Pharzhan",
+        "Qorrash",
+        "Rakhan",
+        "Sarzhin",
+        "Tazrak",
+        "Uzhar",
+        "Varrak",
+        "Zorvash",
+        "Arkhash",
+        "Bhazrin",
+        "Draxar",
+        "Ghorvan",
+        "Hazrith",
+        "Kezzar",
+        "Lorvash",
+        "Mazrak",
+        "Rhessar",
+        "Thurvan",
+        "Vazhrin"
+      ],
+      "female": [
+        "Akhira",
+        "Bryzia",
+        "Dravi",
+        "Erisha",
+        "Ghora",
+        "Hessa",
+        "Ixira",
+        "Jhessa",
+        "Kalira",
+        "Mirrah",
+        "Nashi",
+        "Orrha",
+        "Pashra",
+        "Rhiza",
+        "Sarrah",
+        "Thessi",
+        "Uzhara",
+        "Vashra",
+        "Zorra",
+        "Azhira",
+        "Dhaliri",
+        "Irrha",
+        "Jhavi",
+        "Korrah",
+        "Leshra",
+        "Mezzira",
+        "Nazhi",
+        "Qessa",
+        "Rhavi",
+        "Sorrha",
+        "Tazzi",
+        "Velira",
+        "Yzhara",
+        "Zhessa",
+        "Brannah",
+        "Dazhra",
+        "Falira",
+        "Hazzra",
+        "Kethra",
+        "Surrah"
+      ]
+    },
+    "clans": [
+      "Arkenthuldrax",
+      "Brexanthiul",
+      "Corvathrinnor",
+      "Dhaerazhinal",
+      "Esthrakkamir",
+      "Fulvranthesk",
+      "Ghorrathiul",
+      "Haldrakkenvar",
+      "Irrixanthul",
+      "Jhessakandor",
+      "Kalthrenniax",
+      "Lorvanthesk",
+      "Morrikathul",
+      "Naxxarendion",
+      "Orrathinsk",
+      "Pyrranthollor",
+      "Qaldrekkiax",
+      "Rhazzindorath",
+      "Sarthenkavrix",
+      "Tharvoskendar",
+      "Ulkranthiir",
+      "Vaskendrathul",
+      "Xorrinthalak",
+      "Yrrazhennor",
+      "Zhalvathrisk",
+      "Anthrexiul",
+      "Bharrakendor",
+      "Calderhazzin",
+      "Dravenkathul",
+      "Ezzrakkonir",
+      "Ghessenthuul",
+      "Kharrandiax",
+      "Mirrivanthesk",
+      "Nazzaravor",
+      "Orvathrekkir",
+      "Rhovalinthar",
+      "Skarrendaxis",
+      "Thuldrevaxin",
+      "Vorrakandiul",
+      "Zanthrikkenor"
+    ],
+    "childhood": [
+      "Brawler",
+      "Clawsharp",
+      "Dawnwaker",
+      "Eggcracker",
+      "Firecough",
+      "Gravel",
+      "Ironhide",
+      "Loudmouth",
+      "Quickclaw",
+      "Runt",
+      "Scalebright",
+      "Snapper",
+      "Sparkspit",
+      "Stubborn",
+      "Tumbler",
+      "Whistler",
+      "Bold",
+      "Questioner",
+      "Smoky",
+      "Thunderfoot",
+      "Ember",
+      "Sleeper",
+      "Tailchaser",
+      "Firstborn",
+      "Lastborn",
+      "Bookworm",
+      "Rockbiter",
+      "Swift",
+      "Watcher",
+      "Brightscale",
+      "Hothead",
+      "Pebble",
+      "Daydreamer",
+      "Stomper",
+      "Hatchling",
+      "Patient",
+      "Climbtail",
+      "Grinner",
+      "Spitfire",
+      "Wanderer"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🐲 Dragonborn Name Generator",
+      "tagline": "Clan name first, personal name second: dragonborn names built the way D&D describes them."
+    },
+    "intro": "Dragonborn put their clan before themselves, and their names show it. In D&D a dragonborn has a personal name given at birth, but puts the clan name first as a mark of honour, so a dragonborn introduces themselves by family before self. This **dragonborn name generator** builds full names in that order, or gives you a personal name, a clan name or a childhood nickname on its own.",
+    "sections": [
+      {
+        "heading": "How dragonborn names work",
+        "content": "<p>The fifth-edition Player's Handbook (2014) gives dragonborn three kinds of name:</p><ul><li><strong>A clan name</strong>, said first. Dragonborn society is built around clans, and a dragonborn's standing depends on the clan's honour, so putting it first is a statement of loyalty.</li><li><strong>A personal name</strong>, given at birth.</li><li><strong>A childhood name</strong>, a nickname used among clutchmates, either describing them or said with affection. Some stick for life.</li></ul><p>So where a human would say \"Aldric Thorne\", a dragonborn says the equivalent of \"Thorne Aldric\". The generator's full names follow that order: <em>Morrikathul Kerrak</em> is Kerrak of clan Morrikathul.</p>"
+      },
+      {
+        "heading": "What the names sound like",
+        "content": "<ul><li><strong>Clan names are long</strong>, often four or five syllables, with rolling and hissing sounds: <em>-thul</em>, <em>-andor</em>, <em>-iax</em>, <em>-esk</em>. They sound old, because they are.</li><li><strong>Personal names are short and hard</strong>, usually two syllables built on <em>rr</em>, <em>zh</em>, <em>kh</em> and <em>sh</em>: Rhazkar, Torvash, Jhessa.</li><li><strong>Female names</strong> tend to end in a vowel (Kalira, Rhiza, Uzhara); <strong>male names</strong> in a consonant (Ghazrin, Zorvash).</li><li><strong>Childhood names are plain words</strong>, often in Common: Quickclaw, Bookworm, Runt. They describe a habit or a moment from the egg-clutch years.</li></ul><p>All the names here are new, built from those patterns, rather than copied from the Player's Handbook.</p>"
+      },
+      {
+        "heading": "Using the clan in your story",
+        "content": "<p>The clan name is the most useful part of a dragonborn's name for roleplay. A dragonborn who has dishonoured their clan, or been cast out of it, has a decision to make every time they introduce themselves: say the clan name, hide it or drop it.</p><ul><li><strong>Proud:</strong> uses the full name every time, and expects others to know the clan.</li><li><strong>Exiled:</strong> goes by the personal name or childhood name alone, and changes the subject when asked.</li><li><strong>Clanless:</strong> some dragonborn, raised away from other dragonborn, never learned a clan name at all. Use \"Personal name only\" and let the party wonder.</li></ul><p>Draconic ancestry (red, gold, silver and so on) doesn't change how the name is built, but it's a good guide to sound: a red-blooded clan might favour harsher names than a silver one.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Why do dragonborn say their clan name first?",
+        "answer": "In D&D's Player's Handbook, dragonborn put their clan name before their personal name as a mark of honour, because a dragonborn's place in the world depends on their clan."
+      },
+      {
+        "question": "What is a dragonborn childhood name?",
+        "answer": "A nickname used among clutchmates, the dragonborn they grew up with. It's usually a plain descriptive word, like Quickclaw or Bookworm, and some dragonborn keep it as adults."
+      },
+      {
+        "question": "Are these names from the Player's Handbook?",
+        "answer": "No. They're new names in the same style, so your dragonborn won't share a name with an example from the book."
+      },
+      {
+        "question": "Can I use these in Baldur's Gate 3?",
+        "answer": "Yes. BG3 uses fifth-edition dragonborn, and you can type any name in the character creator. Clan-first full names can be long, so a personal name alone may fit the name box better."
+      }
+    ]
+  }
+}
