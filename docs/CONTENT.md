@@ -97,7 +97,7 @@ Each category in `content/categories.json` has a `heading` (the H1), `seoTitle`,
 
 ## Progress
 
-Done to these notes: Skyrim Orc, Elf, Business, Epithet, Demon Epithet, Hogwarts Legacy Witch, Hogwarts Legacy Wizard, Event (new), Vampire, Path of Exile Witch, Elven Sword, Dungeon Synth (notes from Rich still wanted), Hammer, Company, Brand, Fantasy Town, Fantasy Country, Fantasy City, Cafe, Harry Potter Witch, Dragon, Dwarf, Wizard, Orc, LOTR Orc, WoW Orc. Homepage hero, All Generators and all 10 category intros.
+Done to these notes: Skyrim Orc, Elf, Business, Epithet, Demon Epithet, Hogwarts Legacy Witch, Hogwarts Legacy Wizard, Event (new), Vampire, Path of Exile Witch, Elven Sword, Dungeon Synth (notes from Rich still wanted), Hammer, Company, Brand, Fantasy Town, Fantasy Country, Fantasy City, Cafe, Harry Potter Witch, Dragon, Dwarf, Wizard, Orc, LOTR Orc, WoW Orc, Warhammer Orc. Homepage hero, All Generators and all 10 category intros.
 
 Order for the rest: pages with clicks or impressions first (check Search Console → Performance → Pages), then the pages flagged below.
 

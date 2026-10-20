@@ -26,6 +26,7 @@ New and rewritten pages. Read them on the live site; reply in any session with c
 - [ ] Elven Sword (rebuilt: every name now has a real Sindarin or Quenya meaning)
 - [ ] Dungeon Synth (rewritten without your notes; your notes would make it better)
 - [ ] Company and Brand (rewritten; Brand's word lists rebuilt by hand, with a "with a product word" option)
+- [ ] Warhammer Orc (rebuilt: 40K Orks or fantasy Orcs, with titles, real 40K clans and Ork-speak nicknames)
 - [ ] WoW Orc (rebuilt: names that fit the game's rules, with earned surnames or real clans)
 - [ ] LOTR Orc (rebuilt: Black Speech-style names by kind, with rank or place)
 - [ ] Orc (rebuilt: harsh names with a deed-name, nickname or clan; famous orcs removed)
