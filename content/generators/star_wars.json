@@ -1,0 +1,290 @@
+{
+  "title": "Star Wars Name Generator",
+  "slug": "star-wars-name-generator",
+  "icon": "⚔️",
+  "category": "pop_culture",
+  "published": "2026-10-20",
+  "description": "Star Wars names for Jedi, Sith Lords, Mandalorians and smugglers, following the patterns of the films and shows: hyphenated Jedi names, Darth titles and Mandalorian clans.",
+  "seoKeywords": "star wars name generator, jedi name generator, sith name generator, mandalorian name generator, star wars names, darth name generator, star wars character names",
+  "isPopular": false,
+  "filters": {
+    "type": {
+      "label": "Character",
+      "options": [
+        "jedi",
+        "sith",
+        "mando",
+        "rebel"
+      ],
+      "optionLabels": {
+        "jedi": "Jedi",
+        "sith": "Sith Lord",
+        "mando": "Mandalorian",
+        "rebel": "Smuggler or rebel"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "type",
+  "cases": {
+    "jedi": {
+      "recipe": "template",
+      "template": "[jedi.first] [jedi.last]"
+    },
+    "sith": {
+      "recipe": "template",
+      "template": "Darth [sith]"
+    },
+    "mando": {
+      "recipe": "template",
+      "template": [
+        "[mando.first] of Clan [mando.clans]",
+        "[mando.first] [mando.clans]"
+      ]
+    },
+    "rebel": {
+      "recipe": "template",
+      "template": "[rebel.first] [rebel.last]"
+    }
+  },
+  "data": {
+    "jedi": {
+      "first": [
+        "Ral-Dan",
+        "Kae-Lin",
+        "Tor-Vael",
+        "Ise-Rho",
+        "Bren-Tal",
+        "Ven-Asi",
+        "Oro-Kel",
+        "Sha-Rin",
+        "Jor-Tess",
+        "Ky-Lun",
+        "Dax-Ora",
+        "Mira-Tel",
+        "Quin-Sar",
+        "Eli-Vos",
+        "Taro-Ken",
+        "Ana-Ser",
+        "Bel-Iri",
+        "Coru",
+        "Dessa",
+        "Eiran",
+        "Faro",
+        "Gali",
+        "Hesk",
+        "Ilo",
+        "Jessa",
+        "Koru",
+        "Lysa",
+        "Mavo",
+        "Nessa",
+        "Oran",
+        "Pell",
+        "Reva",
+        "Sorn",
+        "Tavi",
+        "Vela",
+        "Wyn",
+        "Yari",
+        "Zeth",
+        "Aulo",
+        "Breeva"
+      ],
+      "last": [
+        "Taneth",
+        "Vosari",
+        "Korrin",
+        "Dallo",
+        "Seyl",
+        "Marrok",
+        "Quell",
+        "Tahn",
+        "Vessar",
+        "Lisko",
+        "Durant",
+        "Fenn",
+        "Jhar",
+        "Kallo",
+        "Moradi",
+        "Navess",
+        "Orlis",
+        "Prell",
+        "Rhone",
+        "Savin",
+        "Tolle",
+        "Uvar",
+        "Vantos",
+        "Yalis",
+        "Zorran",
+        "Belis",
+        "Corrin"
+      ]
+    },
+    "sith": [
+      "Vexis",
+      "Kraith",
+      "Morrus",
+      "Scorne",
+      "Vaelor",
+      "Grieva",
+      "Severance",
+      "Malice",
+      "Abyssus",
+      "Carnis",
+      "Dolor",
+      "Exitus",
+      "Feral",
+      "Gravis",
+      "Hostis",
+      "Infernus",
+      "Lacerus",
+      "Necros",
+      "Obscura",
+      "Pallor",
+      "Spectus",
+      "Tenebris",
+      "Wrath",
+      "Ashka",
+      "Cinder",
+      "Dread",
+      "Erebus",
+      "Fumos",
+      "Gloom",
+      "Morvex",
+      "Sablis",
+      "Tormenta"
+    ],
+    "mando": {
+      "first": [
+        "Rho",
+        "Brek",
+        "Ordis",
+        "Vhett",
+        "Jaro",
+        "Dyr",
+        "Arla",
+        "Tor",
+        "Mirr",
+        "Vek",
+        "Ilsa",
+        "Ruus",
+        "Syn",
+        "Tarre",
+        "Ven",
+        "Ganna",
+        "Reev",
+        "Orrin",
+        "Varra",
+        "Jhen",
+        "Dorrik"
+      ],
+      "clans": [
+        "Tarrak",
+        "Skarre",
+        "Ordin",
+        "Kaldar",
+        "Brask",
+        "Veyl",
+        "Rhovan",
+        "Durro",
+        "Jassik",
+        "Kastor",
+        "Tyrrus",
+        "Varad",
+        "Gavri",
+        "Sorran",
+        "Haldis",
+        "Okaru",
+        "Zeltan",
+        "Fennar"
+      ]
+    },
+    "rebel": {
+      "first": [
+        "Rina",
+        "Cass",
+        "Tobin",
+        "Vex",
+        "Lyra",
+        "Kira",
+        "Nell",
+        "Brix",
+        "Zev",
+        "Jory",
+        "Pell",
+        "Shae",
+        "Kade",
+        "Ivo",
+        "Tess",
+        "Rhett",
+        "Flynn",
+        "Gia",
+        "Ash",
+        "Teo",
+        "Juno",
+        "Dov",
+        "Marek",
+        "Ozzie"
+      ],
+      "last": [
+        "Varro",
+        "Kestrel",
+        "Dune",
+        "Calloway",
+        "Rusk",
+        "Tarrant",
+        "Voss",
+        "Holt",
+        "Mercer",
+        "Strand",
+        "Ashby",
+        "Quarry",
+        "Hale",
+        "Drayven",
+        "Orlo",
+        "Pike",
+        "Thorne"
+      ]
+    }
+  },
+  "article": {
+    "hero": {
+      "title": "⚔️ Star Wars Name Generator",
+      "tagline": "Jedi, Sith Lords, Mandalorians and smugglers, named the way a galaxy far, far away names them."
+    },
+    "intro": "Star Wars names are instantly recognisable: hyphenated Jedi like Obi-Wan Kenobi and Qui-Gon Jinn, Sith Lords who take the title Darth, Mandalorians who belong to a clan, and smugglers with short, sharp names like Han Solo. This **Star Wars name generator** builds names in each of those patterns.",
+    "sections": [
+      {
+        "heading": "Jedi names",
+        "content": "<p>Jedi names often sound slightly unfamiliar, and many first names are two short parts joined by a hyphen: Obi-Wan Kenobi, Qui-Gon Jinn, Ki-Adi-Mundi. Others are short and simple: Mace Windu, Kit Fisto, Plo Koon. The generator mixes both, with a surname that could belong to any world in the galaxy.</p>"
+      },
+      {
+        "heading": "Sith names",
+        "content": "<p>A Sith apprentice takes a new name with the title <strong>Darth</strong>, often a single dark word, and leaves their old name behind: Anakin Skywalker became Darth Vader, Count Dooku became Darth Tyranus, and Palpatine was Darth Sidious. Other Sith names are short and brutal, like Darth Maul, or sound ancient, like Darth Plagueis.</p><p>The generator's Sith names lean on Latin-sounding words and dark ideas, the way many real Sith names do, and none are names already used in Star Wars.</p>"
+      },
+      {
+        "heading": "Mandalorian names",
+        "content": "<p>Mandalorians identify strongly with their clan: Bo-Katan Kryze of Clan Kryze, Sabine of Clan Wren. Din Djarin, the Mandalorian of the series, was a foundling adopted into the Mandalorian way of life. The generator gives a Mandalorian a first name and a clan, either as \"of Clan\" or as a surname.</p>"
+      },
+      {
+        "heading": "Smugglers and rebels",
+        "content": "<p>The galaxy's ordinary heroes have the plainest names: Han Solo, Lando Calrissian, Cassian Andor, Jyn Erso. A short first name and a surname that sounds tough is the classic smuggler name. Use the <em>Smuggler or rebel</em> option for pilots, bounty hunters and anyone without a lightsaber.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do Sith get their names?",
+        "answer": "An apprentice is given the title Darth and a new name by their master, usually a single dark word: Vader, Maul, Sidious, Tyranus."
+      },
+      {
+        "question": "Why do Jedi names have hyphens?",
+        "answer": "Several famous Jedi have two-part first names, like Obi-Wan and Qui-Gon, which became one of the most recognisable Star Wars naming patterns."
+      },
+      {
+        "question": "Are these names from Star Wars?",
+        "answer": "No. They're new names in the same patterns; the generator avoids names already used in the films and shows."
+      }
+    ]
+  }
+}

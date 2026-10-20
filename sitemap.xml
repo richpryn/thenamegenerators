@@ -630,6 +630,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Star Wars Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/star-wars-name-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Swamp Witch Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/swamp-witch-name-generator.html</loc>
