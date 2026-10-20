@@ -76,7 +76,7 @@ function scriptJson(value, indent) {
 
 /** The fields the in-browser engine needs, without the article text. */
 function runtimeConfig(gen) {
-  const { icon, description, seoKeywords, isPopular, popularRank, category, published, updated, article, key, ...config } = gen;
+  const { icon, description, seoKeywords, isPopular, popularRank, category, published, updated, article, key, examplePairs, noun, ...config } = gen;
   return config;
 }
 
@@ -132,6 +132,7 @@ function generateSEOTitle(generator) {
 
 /** "Elf Name Generator" -> "Elf Names", "Epithet Generator" -> "Epithets" */
 function pluralNoun(generator) {
+  if (generator.noun) return generator.noun; // e.g. "Combined Names" when the title isn't "X Generator"
   return generator.title.replace(/\s+Generator$/i, '') + 's';
 }
 
@@ -182,6 +183,14 @@ function exampleNames(generator) {
     combos = Array.from({ length: MAX_GROUPS }, (_, i) => combos[Math.floor(i * step)]);
   }
 
+  // Generators that blend typed names show a few example pairs instead
+  if (generator.examplePairs) {
+    return generator.examplePairs.map(pair => ({
+      label: Object.values(pair).join(' + '),
+      names: engine.generate({ ...textValues, ...pair }, 4),
+    }));
+  }
+
   const perGroup = Math.max(4, Math.ceil(TOTAL / combos.length));
   return combos.map(combo => ({
     label: selectKeys
@@ -204,6 +213,17 @@ function howItWorksHtml(generator) {
   const label = (f, opt) => optionLabel(f, opt).replace(/\s*\(.*\)\s*$/, '');
   const defaults = {};
   for (const [k, f] of Object.entries(filters)) defaults[k] = f.type === 'text' ? (f.example || f.default || '') : f.options[0];
+
+  if (generator.recipe === 'blend') {
+    const [a, b] = generator.inputs.map(k => filters[k].example || filters[k].default || '');
+    const sample = engine.generate(defaults, 3).join(', ');
+    return `
+            <section class="blog-content how-it-works">
+                <h2>How the ${escapeHtml(generator.title)} Works</h2>
+                <p>Type two names and it joins the start of one to the end of the other, at points where the join reads naturally: a vowel meeting a consonant, with a vowel kept on each side. It skips results that just repeat one of the names, keeps the best-sounding ten (closest to the names' average length), and gives them to you in a random order. Very short names are also simply joined end to end.</p>
+                <p>For example, ${escapeHtml(a)} and ${escapeHtml(b)} give ${escapeHtml(sample)}. Only the first word of each box is used.</p>
+            </section>`;
+  }
 
   // "names", or "epithets" for the Epithet Generator
   const noun = /\bNames?\b/.test(generator.title) ? 'names' : pluralNoun(generator).split(' ').pop().toLowerCase();

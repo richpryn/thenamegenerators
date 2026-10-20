@@ -32,6 +32,7 @@ New and rewritten pages. Read them on the live site; reply in any session with c
   - **Sci-Fi hub** (`categories/scifi-names.html`): Cyberpunk, Robot, Spaceship (with Alien and Star Wars)
   - **Witch hub** (`categories/witch-names.html`) and **YouTube Channel** (in Blogs & Brands)
   - **Historical hub** (`categories/historical-names.html`): Roman, Ancient Greek, Anglo-Saxon, Medieval, Victorian, Old West
+  - **Name Combiner** (`posts/name-combiner.html`): type two names, get ship-name blends. Try it with your own names!
 - [ ] Path of Exile Witch (rewritten: epithets by Ascendancy)
 - [ ] Elven Sword (rebuilt: every name now has a real Sindarin or Quenya meaning)
 - [ ] Dungeon Synth (rewritten without your notes; your notes would make it better)
@@ -62,6 +63,10 @@ Pages that get better with your own experience. A few lines each, in any session
 - [ ] **Dungeon Synth**: artists and albums you rate, and what makes a project name work.
 - [ ] **Event Name Generator, gigs and festivals**: what makes a good gig or festival name.
 - [ ] **Band Name Generator** (now live): your band-naming lessons and any story about naming your own projects. A short section from you would make it the best band-name page out there.
+
+## Decisions for you
+
+- [ ] **Random name picker / wheel** ("spin the wheel", raffles, classroom picks): huge search volume, but it's a utility for a different audience (teachers, raffles) who won't use the rest of the site, and it competes with well-known wheel sites. Build it, or skip it?
 
 ## Later
 

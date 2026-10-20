@@ -101,8 +101,12 @@ function validate({ categories, generators, homepage = { popular: [] } }) {
 
     // Recipe shape
     for (const r of recipesIn(gen)) {
-      if (!['pick', 'combine', 'template'].includes(r.recipe)) {
-        errors.push(`${file}: unknown recipe "${r.recipe}" (use pick, combine, template or switch)`);
+      if (!['pick', 'combine', 'template', 'blend'].includes(r.recipe)) {
+        errors.push(`${file}: unknown recipe "${r.recipe}" (use pick, combine, template, blend or switch)`);
+      }
+      if (r.recipe === 'blend' && !(Array.isArray(r.inputs) && r.inputs.length === 2 &&
+          r.inputs.every((k) => (gen.filters || {})[k] && gen.filters[k].type === 'text'))) {
+        errors.push(`${file}: a "blend" recipe needs "inputs": the keys of two text filters`);
       }
       if (r.recipe === 'pick' && typeof r.from !== 'string') errors.push(`${file}: a "pick" recipe needs "from"`);
       if (r.recipe === 'combine' && !Array.isArray(r.parts)) errors.push(`${file}: a "combine" recipe needs "parts"`);
@@ -150,7 +154,10 @@ function validate({ categories, generators, homepage = { popular: [] } }) {
         walk(i + 1, { ...values, [key]: opt });
       }
     };
-    walk(0, {});
+    // Text boxes get their example values, so blends and templates have something to work on
+    const typed = Object.fromEntries(Object.entries(gen.filters || {})
+      .filter(([, f]) => f.type === 'text').map(([k, f]) => [k, f.example || f.default || '']));
+    walk(0, typed);
     for (const k of selectKeys) {
       const never = gen.filters[k].options.filter((o) => !everAvailable[k].has(o));
       if (never.length) errors.push(`${file}: filter "${k}" option(s) ${never.join(', ')} never find any names`);
@@ -164,7 +171,8 @@ function validate({ categories, generators, homepage = { popular: [] } }) {
     }
     for (const at of emptyLists(gen.data)) warnings.push(`${file}: list "${at}" is empty`);
     const total = countNames(gen.data);
-    if (total < MIN_NAMES) warnings.push(`${file}: only ${total} names (aim for at least ${MIN_NAMES})`);
+    const blendsTyped = recipesIn(gen).some((r) => r.recipe === 'blend');
+    if (total < MIN_NAMES && !blendsTyped) warnings.push(`${file}: only ${total} names (aim for at least ${MIN_NAMES})`);
   }
 
   return { errors, warnings };

@@ -1,0 +1,94 @@
+{
+  "title": "Name Combiner",
+  "noun": "Combined Names",
+  "slug": "name-combiner",
+  "icon": "💞",
+  "category": "people",
+  "published": "2026-10-20",
+  "description": "Combine two names into one: ship names for couples and characters (Romeo + Juliet = Romiet), baby name blends, and mash-ups of any two names you type.",
+  "seoKeywords": "name combiner, ship name generator, combine names, couple name generator, mix two names, name mixer, ship name maker, blend two names",
+  "isPopular": false,
+  "filters": {
+    "name1": {
+      "type": "text",
+      "label": "First name",
+      "placeholder": "e.g. Romeo",
+      "default": "",
+      "example": "Romeo"
+    },
+    "name2": {
+      "type": "text",
+      "label": "Second name",
+      "placeholder": "e.g. Juliet",
+      "default": "",
+      "example": "Juliet"
+    }
+  },
+  "recipe": "blend",
+  "inputs": [
+    "name1",
+    "name2"
+  ],
+  "data": {},
+  "examplePairs": [
+    {
+      "name1": "Romeo",
+      "name2": "Juliet"
+    },
+    {
+      "name1": "Elizabeth",
+      "name2": "Darcy"
+    },
+    {
+      "name1": "Jack",
+      "name2": "Rose"
+    },
+    {
+      "name1": "Sam",
+      "name2": "Alex"
+    },
+    {
+      "name1": "Oliver",
+      "name2": "Amelia"
+    },
+    {
+      "name1": "Leo",
+      "name2": "Mia"
+    }
+  ],
+  "article": {
+    "hero": {
+      "title": "💞 Name Combiner",
+      "tagline": "Blend two names into one: ship names, couple names and baby name ideas."
+    },
+    "intro": "Fans have been blending names for years: Ron and Hermione become Romione, and the press turned Ben Affleck and Jennifer Lopez into Bennifer. This **name combiner** does the same with any two names you type, as a ship name for a couple or characters, a joint name for a wedding hashtag, or a starting point for a baby name made from both parents' names.",
+    "sections": [
+      {
+        "heading": "How a good ship name works",
+        "content": "<p>The best blends keep the start of one name and the end of the other, joined where the sounds flow: Ron + Hermione keeps \"Ro\" and \"mione\" for Romione. Joins that put a vowel next to a consonant read naturally; two vowels or three consonants in a row usually trip the tongue.</p><p>Every pair gives a different set of blends, and the order of the names matters: try them both ways round. The generator already does, but a blend that starts with the other name often feels like a different couple.</p>"
+      },
+      {
+        "heading": "Uses for a combined name",
+        "content": "<ul><li><strong>Ship names</strong> for fictional couples, in fan fiction, fan art and forums.</li><li><strong>Couple names</strong> for wedding hashtags, joint social accounts or a shared house name.</li><li><strong>Baby names</strong>: a blend of both parents' names can be a starting point. Check the result is a name you'd actually like to call across a playground.</li><li><strong>Business or band names</strong> for two founders or two members.</li></ul>"
+      },
+      {
+        "heading": "Tips for better blends",
+        "content": "<ul><li><strong>Try nicknames.</strong> Sam and Alex give different blends from Samuel and Alexandra.</li><li><strong>Say it out loud.</strong> A blend that looks good can sound odd, and the other way round.</li><li><strong>Check what it spells.</strong> Some blends turn into real words, occasionally unfortunate ones.</li></ul><p>For a new name rather than a blend, try the <a href=\"stage-name-generator.html\">Stage Name Generator</a>, or the <a href=\"band-name-generator.html\">Band Name Generator</a> for a duo.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do you make a ship name?",
+        "answer": "Take the start of one name and the end of the other, joined where the sounds flow: Ron + Hermione = Romione. Type two names into the combiner to see the options."
+      },
+      {
+        "question": "Can I combine two names for a baby name?",
+        "answer": "Yes: type both parents' names and look for a blend you like, or use it as inspiration for a real name with a similar sound."
+      },
+      {
+        "question": "Does it work with any names?",
+        "answer": "Yes, with any two names or words. It uses the first word of each box, and very short names are also simply joined end to end."
+      }
+    ]
+  }
+}

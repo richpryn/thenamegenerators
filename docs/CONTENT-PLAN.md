@@ -208,6 +208,9 @@ This fills the People category with what its description promises, framed for wr
 Medieval English, Viking/Norse (with patronymics: -son/-dóttir), Old English/Anglo-Saxon, Victorian, Roman (praenomen–nomen–cognomen), Ancient Greek, Japanese (historical, with kanji meanings), Old West. Each page says where its names come from.
 
 ### Phase 6: Name tools (when the engine supports it)
+
+**Status:** The Name Combiner (`name-combiner.html`) is live, using a new `blend` recipe in the engine (documented in the README). It targets name combiner, ship name, couple name and "mix two names" searches. Gamertag/Username and Random Picker are still to do; the picker is a different kind of tool and needs Rich's go-ahead.
+
 High demand, but each needs a new recipe type and competes with established tools. Build one, measure it, then decide.
 
 1. **Name Combiner / Ship Name Generator**: two text boxes, blended by syllables (also targets "couple name", "mix two names", "combine names"). New `blend` recipe.

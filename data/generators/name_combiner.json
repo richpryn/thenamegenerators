@@ -1,0 +1,1 @@
+{"title":"Name Combiner","slug":"name-combiner","filters":{"name1":{"type":"text","label":"First name","placeholder":"e.g. Romeo","default":"","example":"Romeo"},"name2":{"type":"text","label":"Second name","placeholder":"e.g. Juliet","default":"","example":"Juliet"}},"recipe":"blend","inputs":["name1","name2"],"data":{}}
