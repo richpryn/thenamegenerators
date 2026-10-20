@@ -90,11 +90,9 @@ function navDropdownHtml(categories, prefix) {
 const SITE_NAME = 'The Name Generators';
 
 // Generator pages that changed address: old slug -> new slug (see movedPage).
-// warhammer -> hammer: "warhammer name generator" searches are for Warhammer
-// 40k characters, so the weapon page took a clearer name and the old address
-// is free for a Warhammer character page later (remove this line then).
+// (The old warhammer -> hammer entry was removed once the address became the
+// Warhammer 40k character page.)
 const MOVED_PAGES = {
-  'warhammer-name-generator': 'hammer-name-generator',
 };
 
 function movedPage(newSlug) {
