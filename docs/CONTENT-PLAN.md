@@ -127,7 +127,7 @@ While traffic is this low, lean towards Track A: roughly one rewrite for every n
 
 ### Phase 1: Own D&D (weeks 2–8)
 
-**Status:** D&D hub, Tiefling, Tavern, Dragonborn, Halfling, Gnome, Half-Elf and Goblin are live. Next: Human (Forgotten Realms ethnicities), Githyanki, Kobold, Lizardfolk, then Knight and Paladin.
+**Status:** D&D hub, Tiefling, Tavern, Dragonborn, Halfling, Gnome, Half-Elf, Goblin, Kobold, Lizardfolk and Githyanki are live. Next: Human (Forgotten Realms ethnicities), Knight, Paladin, then the other Phase 1 places (Kingdom, Village, Fantasy World) and the BG3 page.
 
 Biggest searches, best fit, and most of the engine work is reuse.
 
