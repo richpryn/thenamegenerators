@@ -14,17 +14,13 @@ Both Claude sessions worked through `docs/CONTENT-PLAN.md` overnight. The site w
 - **Name Combiner** (ship names), built on a new "blend" feature in the engine.
 - **Fixes**: click-to-copy, the ♥ shortlist, 8/16/32 names and shareable links are live on every page. An engine bug that hid options on the Dragon page is fixed.
 
-**Rewrites (Claude session 1):** the homepage and every category page got proper intros, and a new Event Name Generator went live. Almost every original generator was rebuilt to the content notes, with real lore, cleaned lists and new articles:
-- **Fantasy races and creatures**: Vampire, Dragon, Dwarf, all four Elf pages, every Orc page, Angel, Demon, Fairy.
-- **Places**: Fantasy Town (now also targets village searches), City, Country (now also targets kingdom searches).
-- **Items and weapons**: all the sword pages, Axe, Shield, Wand, Poison, Hammer.
-- **Everything else**: the wizard pages, the witch pages, Dungeon Synth, Clan, Guild, Brand, Company and Café.
+**Rewrites (Claude session 1):** the homepage and every category page got proper intros, and a new Event Name Generator went live. Track A is finished: every page that still had old boilerplate, about 55 in all, was rewritten and its name data rebuilt. That covers the fantasy races and creatures, the places, all the weapons and items, the wizard and witch pages, Clan, Guild, Alien, Assassin, Blog, Ogryn, Company, Brand and Café. Filler words, famous characters and chain names are gone. Many names are now built from real words with their meanings: Quenya and Sindarin elf family names, Japanese sword names, English place-name endings, heraldry. Fantasy Town and Fantasy Country now also target "village" and "kingdom" searches.
 
 **What needs you, in order:**
 1. Send a session your Google Analytics Measurement ID (see "Now" below).
 2. In Search Console, request indexing for the hub pages (listed under "Review" below).
 3. Have a look at the new pages and say what you'd change.
-4. Answer the random picker/wheel question under "Decisions for you".
+4. Answer the questions under "Decisions for you": the random picker/wheel, and two judgement calls from the rewrites.
 5. Add your notes to Band and Dungeon Synth when you have time.
 
 
@@ -98,6 +94,9 @@ Pages that get better with your own experience. A few lines each, in any session
 - [ ] **Band Name Generator** (now live): your band-naming lessons and any story about naming your own projects. A short section from you would make it the best band-name page out there.
 
 ## Decisions for you
+
+- [ ] **Swamp Witch:** the old "Voodoo" style was removed, because it treated a real religion as a costume. OK to leave it out?
+- [ ] **D&D Fantasy** is now "any race or a random party", built from the race generators' lists. Happy with that change of job?
 
 - [ ] **Random name picker / wheel** ("spin the wheel", raffles, classroom picks): huge search volume, but it's a utility for a different audience (teachers, raffles) who won't use the rest of the site, and it competes with well-known wheel sites. Build it, or skip it?
 
