@@ -342,6 +342,7 @@
       }
     ],
     "generators": [
+      "name_combiner",
       "epithet",
       "assassin",
       "vampire",

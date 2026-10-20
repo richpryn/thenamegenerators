@@ -96,6 +96,7 @@ If a path stops at a group of lists, names come from every list in the group. `"
 | `combine` | One item from each list, joined | `"recipe": "combine", "parts": ["{gender}", "surnames"], "join": " "` |
 | `template` | Fill a pattern: `[path]` draws from a list, `{filter}` inserts a choice or typed text | `"recipe": "template", "template": "The [baseNames] Shield"` |
 | `switch` | Use a different recipe for each option of one filter | see below |
+| `blend` | Blend two typed names into ship-name style results (Romeo + Juliet → Romiet) | `"recipe": "blend", "inputs": ["name1", "name2"]` |
 
 Extras:
 
@@ -117,6 +118,8 @@ Extras:
 ```
 
 Add `"default": { ... }` for options not listed in `cases` (see `brand.json`).
+
+`blend` (see `name_combiner.json`) needs two text filters, named in `"inputs"`, and an empty `"data": {}`. It joins the start of one name to the end of the other where a vowel meets a consonant, keeps the ten best (closest to the names' average length) and serves them in random order. Add `"examplePairs"` (a list of `{ "name1": …, "name2": … }`) for the example names on the page, and `"noun"` (e.g. `"Combined Names"`) when the title doesn't end in "Generator".
 
 ## 🎛️ Filters
 
