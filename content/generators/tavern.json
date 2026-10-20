@@ -1,0 +1,446 @@
+{
+  "title": "Tavern Name Generator",
+  "slug": "tavern-name-generator",
+  "icon": "🍺",
+  "category": "places",
+  "published": "2026-10-20",
+  "description": "Tavern and inn names for D&D and fantasy towns, built the way real pub names are: The Red Lion, The Fox and Hounds, The Prancing Pony. Six styles, from classic to dockside dive.",
+  "seoKeywords": "tavern names, tavern name generator, inn names, inn name generator, dnd tavern names, fantasy tavern names, pub name generator, funny tavern names",
+  "isPopular": false,
+  "filters": {
+    "style": {
+      "label": "Style",
+      "options": [
+        "any",
+        "classic",
+        "pair",
+        "fantasy",
+        "dockside",
+        "upmarket",
+        "funny"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "classic": "Classic (The Red Lion)",
+        "pair": "Pairs (The Fox and Hounds)",
+        "fantasy": "Fantasy (The Prancing Pony)",
+        "dockside": "Dockside dive",
+        "upmarket": "Upmarket",
+        "funny": "Funny"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "style",
+  "cases": {
+    "classic": {
+      "recipe": "template",
+      "template": [
+        "The [colours] [beasts]",
+        "The [colours] [beasts]",
+        "The [heads] Head",
+        "The [arms] Arms",
+        "The [signs]"
+      ]
+    },
+    "pair": {
+      "recipe": "template",
+      "template": [
+        "The [pairsA] and [pairsB]"
+      ]
+    },
+    "fantasy": {
+      "recipe": "template",
+      "template": [
+        "The [fantasyAdj] [fantasyNoun]"
+      ]
+    },
+    "dockside": {
+      "recipe": "template",
+      "template": [
+        "The [dockAdj] [dockNoun]"
+      ]
+    },
+    "upmarket": {
+      "recipe": "template",
+      "template": [
+        "The [fineAdj] [fineNoun]"
+      ]
+    },
+    "funny": {
+      "recipe": "pick",
+      "from": "funny"
+    },
+    "any": {
+      "recipe": "template",
+      "template": [
+        "The [colours] [beasts]",
+        "The [colours] [beasts]",
+        "The [heads] Head",
+        "The [arms] Arms",
+        "The [signs]",
+        "The [pairsA] and [pairsB]",
+        "The [fantasyAdj] [fantasyNoun]",
+        "The [fantasyAdj] [fantasyNoun]",
+        "The [dockAdj] [dockNoun]",
+        "The [fineAdj] [fineNoun]",
+        "[funny]"
+      ]
+    }
+  },
+  "data": {
+    "colours": [
+      "Red",
+      "White",
+      "Black",
+      "Golden",
+      "Green",
+      "Blue",
+      "Silver",
+      "Grey",
+      "Copper",
+      "Scarlet"
+    ],
+    "beasts": [
+      "Lion",
+      "Hart",
+      "Boar",
+      "Bull",
+      "Swan",
+      "Stag",
+      "Horse",
+      "Hound",
+      "Bear",
+      "Dragon",
+      "Griffin",
+      "Eagle",
+      "Unicorn",
+      "Ram",
+      "Fox",
+      "Falcon",
+      "Raven",
+      "Wolf",
+      "Hind",
+      "Lamb",
+      "Cockerel",
+      "Salmon"
+    ],
+    "heads": [
+      "King's",
+      "Queen's",
+      "Bishop's",
+      "Duke's",
+      "Miller's",
+      "Ferryman's",
+      "Giant's",
+      "Huntsman's",
+      "Knight's",
+      "Abbot's",
+      "Wizard's",
+      "Dragon's"
+    ],
+    "arms": [
+      "Masons",
+      "Smiths",
+      "Carpenters",
+      "Bakers",
+      "Weavers",
+      "Coopers",
+      "Brewers",
+      "Archers",
+      "Ashford",
+      "Blackwood",
+      "Harrow",
+      "Thornbury",
+      "Greymoor",
+      "Oakhart"
+    ],
+    "signs": [
+      "Plough",
+      "Anchor",
+      "Bell",
+      "Crown",
+      "Wheatsheaf",
+      "Mitre",
+      "Ship",
+      "Globe",
+      "Feathers",
+      "Harrow",
+      "Lantern",
+      "Cartwheel",
+      "Bugle",
+      "Compasses",
+      "Chequers",
+      "Sun",
+      "Star",
+      "Moon",
+      "Shears",
+      "Barley Mow"
+    ],
+    "pairsA": [
+      "Rose",
+      "Fox",
+      "Lamb",
+      "Hare",
+      "Bell",
+      "Sword",
+      "Anchor",
+      "Plough",
+      "Swan",
+      "Stag",
+      "Owl",
+      "Moon",
+      "Kettle",
+      "Lantern",
+      "Crook"
+    ],
+    "pairsB": [
+      "Crown",
+      "Hounds",
+      "Flag",
+      "Tabor",
+      "Book",
+      "Shield",
+      "Hope",
+      "Harrow",
+      "Cygnet",
+      "Hunter",
+      "Ivy",
+      "Stars",
+      "Drum",
+      "Key",
+      "Barrel"
+    ],
+    "fantasyAdj": [
+      "Prancing",
+      "Drunken",
+      "Sleeping",
+      "Laughing",
+      "Rusty",
+      "Wandering",
+      "Dancing",
+      "Winking",
+      "Grinning",
+      "Howling",
+      "Crooked",
+      "One-Eyed",
+      "Hungry",
+      "Lucky",
+      "Thirsty",
+      "Snoring",
+      "Singing",
+      "Restless",
+      "Weary",
+      "Merry",
+      "Broken",
+      "Lost",
+      "Burning",
+      "Frozen",
+      "Hidden",
+      "Jolly",
+      "Stubborn",
+      "Toothless",
+      "Wise",
+      "Golden"
+    ],
+    "fantasyNoun": [
+      "Pony",
+      "Dragon",
+      "Giant",
+      "Griffin",
+      "Goblin",
+      "Troll",
+      "Wyvern",
+      "Owlbear",
+      "Gnome",
+      "Dwarf",
+      "Mermaid",
+      "Unicorn",
+      "Wizard",
+      "Knight",
+      "Bard",
+      "Basilisk",
+      "Hydra",
+      "Manticore",
+      "Ogre",
+      "Kraken",
+      "Gauntlet",
+      "Tankard",
+      "Flagon",
+      "Cauldron",
+      "Lantern",
+      "Anvil",
+      "Shield",
+      "Barrel",
+      "Kettle",
+      "Candle",
+      "Boot",
+      "Wand"
+    ],
+    "dockAdj": [
+      "Rusty",
+      "Drowned",
+      "Leaky",
+      "Rotten",
+      "Crooked",
+      "Broken",
+      "Sunken",
+      "Black",
+      "Salty",
+      "Gutter",
+      "Sorry",
+      "Last",
+      "Tarred",
+      "Soggy"
+    ],
+    "dockNoun": [
+      "Hook",
+      "Rat",
+      "Anchor",
+      "Barrel",
+      "Lantern",
+      "Cutlass",
+      "Oar",
+      "Bucket",
+      "Net",
+      "Eel",
+      "Gull",
+      "Mast",
+      "Plank",
+      "Chain",
+      "Sailor",
+      "Kraken",
+      "Bilge Rat",
+      "Lobster"
+    ],
+    "fineAdj": [
+      "Gilded",
+      "Silver",
+      "Velvet",
+      "Ivory",
+      "Crystal",
+      "Golden",
+      "Royal",
+      "Amber",
+      "Pearl",
+      "Marble",
+      "Sapphire",
+      "Emerald",
+      "Copper",
+      "Moonlit"
+    ],
+    "fineNoun": [
+      "Swan",
+      "Chalice",
+      "Lantern",
+      "Rose",
+      "Peacock",
+      "Lily",
+      "Harp",
+      "Crown",
+      "Feather",
+      "Garden",
+      "Fountain",
+      "Mirror",
+      "Lyre",
+      "Stag",
+      "Unicorn",
+      "Goblet"
+    ],
+    "funny": [
+      "The Critical Fail",
+      "The Natural Twenty",
+      "The Nat One",
+      "The Mimic's Mouth",
+      "The Tipsy Kobold",
+      "The Sober Paladin",
+      "The Last Resort",
+      "The Polite Orc",
+      "The Honest Bard",
+      "The Bottomless Tankard",
+      "The Goblin's Tab",
+      "The Unpaid Bard",
+      "The Tipsy Treant",
+      "The Grumpy Gnome",
+      "The Hungover Hydra",
+      "The Retired Adventurer",
+      "The Wandering Mimic",
+      "The Mild Dragon",
+      "The Slightly Haunted Inn",
+      "The Second-Best Inn",
+      "The Bard's Excuse",
+      "The Missing Party",
+      "The Short Rest",
+      "The Long Rest",
+      "The Saving Throw",
+      "The Quest Board",
+      "The Silent Bard",
+      "The Cursed Spoon",
+      "The Lazy Lich",
+      "The Damp Dragon",
+      "The Sleepy Sentry",
+      "The Clumsy Thief",
+      "The Overdressed Owlbear",
+      "The Confused Cleric",
+      "The Barrel Roll",
+      "The Wrong Turn",
+      "The Lucky Guess",
+      "The Patient Ogre",
+      "The Fussy Phoenix",
+      "The Moody Minotaur",
+      "The Tavern at the End of the Dungeon",
+      "The Spilled Potion",
+      "The Lost Map",
+      "The Nervous Necromancer",
+      "The Rogue's Alibi",
+      "The Wizard's Hat Stand",
+      "The Dwarf Who Never Left",
+      "The Troll Toll",
+      "The Shy Giant",
+      "The Dragon's Overdraft"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🍺 Tavern Name Generator",
+      "tagline": "Tavern and inn names built like real pub names, from The White Hart to The Drunken Owlbear."
+    },
+    "intro": "Every adventure seems to start in a tavern, and the best fantasy taverns borrow their names from real English pubs: an animal, a colour, a trade or two things joined with \"and\". This **tavern name generator** builds names in six styles, from classic signs like The Red Lion to dockside dives and a few jokes for the table, over {{combinations}} names in all.",
+    "sections": [
+      {
+        "heading": "Why tavern names sound the way they do",
+        "content": "<p>Medieval drinkers mostly couldn't read, so an alehouse was known by its painted sign. In 1393 Richard II made it compulsory for anyone brewing ale to hang one, and the picture on the sign became the name. That's why so many pub names are things you can paint:</p><ul><li><strong>An animal and a colour.</strong> The Red Lion is the most common pub name in England. The White Hart was Richard II's own badge.</li><li><strong>Arms.</strong> \"The Masons Arms\" or \"The Kings Arms\" comes from a coat of arms: a guild, a trade or the local landowner.</li><li><strong>A Head.</strong> The King's Head, the Queen's Head: a portrait on the sign.</li><li><strong>A single object.</strong> The Plough, The Anchor, The Bell, The Wheatsheaf. Often a hint at the trade nearby or what drinkers did for a living.</li><li><strong>Two things joined with \"and\".</strong> The Rose and Crown, The Fox and Hounds, The Lamb and Flag: a symbol, a little scene or a pun.</li></ul><p>The <em>Classic</em> and <em>Pairs</em> styles follow these patterns, so their names would pass for a real village pub.</p>"
+      },
+      {
+        "heading": "Famous fantasy taverns",
+        "content": "<ul><li><strong>The Prancing Pony</strong> in Bree, from The Lord of the Rings, run by Barliman Butterbur. Adjective plus animal: the classic fantasy pattern.</li><li><strong>The Green Dragon</strong> in Bywater, the hobbits' local in the Shire. A pure English pub name with a dragon on the sign.</li><li><strong>The Yawning Portal</strong> in Waterdeep, D&D's most famous tavern, run by Durnan and built over the well that leads down into Undermountain. The name tells you what's in the cellar.</li><li><strong>The Elfsong Tavern</strong> in Baldur's Gate, named for the ghostly elf's song heard there, and visited in Baldur's Gate 3.</li><li><strong>The Bannered Mare</strong> in Whiterun, Skyrim, and <strong>The Leaky Cauldron</strong> in Harry Potter: one a heraldic sign, the other a joke at the building's expense.</li></ul>"
+      },
+      {
+        "heading": "Matching the name to the place",
+        "content": "<ul><li><strong>Village inn:</strong> Classic or Pairs. A farming village drinks at The Plough or The Wheatsheaf.</li><li><strong>Port or river town:</strong> Dockside. The Drowned Sailor and The Rusty Hook tell the party to keep their purses close.</li><li><strong>Noble quarter:</strong> Upmarket. The Gilded Swan has a doorman and expensive wine.</li><li><strong>Adventurers' haunt:</strong> Fantasy, or Funny if your table likes a joke. A tavern called The Critical Fail tells players what kind of game this is.</li></ul><p>The name is also a quick hook. A tavern called The One-Eyed Griffin invites the question \"why one eye?\", and the barkeep can answer with a rumour.</p>"
+      },
+      {
+        "heading": "Making the name yours",
+        "content": "<ul><li><strong>Give the sign a story.</strong> Who painted it, and what really happened to the griffin's eye?</li><li><strong>Add \"Inn\" or \"Tavern\" if it fits.</strong> An inn has rooms; a tavern only serves drink and food. The Red Lion Inn tells travellers they can stay the night.</li><li><strong>Use the regulars' nickname.</strong> Locals shorten names: The Fox and Hounds becomes \"the Fox\". It makes a town feel lived in.</li><li><strong>Check it in a sentence.</strong> \"Meet me at the Drunken Owlbear\" should be easy to say out loud at the table.</li></ul>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good name for a D&D tavern?",
+        "answer": "One the players remember and can say easily: an adjective and a creature (The Prancing Pony, The Drunken Owlbear) or a classic pub pattern like The Red Lion. Pick a style that fits the town, then give the sign a story."
+      },
+      {
+        "question": "What's the difference between a tavern and an inn?",
+        "answer": "Traditionally an inn offers rooms for travellers, while a tavern serves drink and food but has no beds. In most fantasy games the words are used loosely, so use whichever sounds right."
+      },
+      {
+        "question": "Why are so many pubs called The Red Lion?",
+        "answer": "It's a heraldic sign, linked to royal and noble coats of arms, and it's the most common pub name in England. Red and white beasts on signs date from when most customers couldn't read."
+      },
+      {
+        "question": "Can I use these names for a real pub or bar?",
+        "answer": "Yes, but classic names like The Red Lion are used by many real pubs, so check local businesses and trade marks before you choose one."
+      }
+    ]
+  }
+}

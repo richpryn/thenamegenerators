@@ -21,6 +21,7 @@ New and rewritten pages. Read them on the live site; reply in any session with c
 - [ ] Vampire (rewritten)
 - [ ] Category pages and homepage hero
 - [ ] Hammer (renamed), and the Business / Company / Brand split
+- [ ] D&D hub (`categories/dnd-names.html`), Tiefling and Tavern generators: also request indexing for these three
 
 ## Notes from Rich wanted
 

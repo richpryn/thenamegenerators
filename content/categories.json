@@ -73,6 +73,7 @@
       }
     ],
     "generators": [
+      "tiefling",
       "elf",
       "dwarf",
       "dragon",
@@ -101,6 +102,67 @@
       "fairy",
       "fairy_town",
       "elven_sword"
+    ]
+  },
+  {
+    "name": "D&D",
+    "slug": "dnd",
+    "icon": "🎲",
+    "navLabel": "D&D Names",
+    "heading": "D&D Name Generators: Races, Taverns, Towns and Magic Items",
+    "seoTitle": "D&D Name Generators: Races, Taverns, Towns, Items",
+    "description": "Names for D&D characters of every race, plus taverns, towns, guilds and magic items for your campaign.",
+    "seoDescription": "D&D name generators for every race (tiefling, elf, dwarf, half-orc and more), plus taverns, towns, guilds, epithets and magic weapons, with each race's naming rules explained.",
+    "intro": "<p>Every D&amp;D race has its own naming customs. Tieflings take infernal or virtue names, dwarves carry a clan name, and elves use a child name until they come of age. These generators follow the rules from the Player's Handbook and the wider lore, and each page explains them, so a name fits your character's background instead of just sounding fantasy.</p><p>A campaign needs more than characters. Name the tavern where the party meets with the <a href=\"../posts/tavern-name-generator.html\">Tavern Name Generator</a>, their hometown with the <a href=\"places-names.html\">place name generators</a>, and the loot with the <a href=\"objects-names.html\">weapon and item generators</a>.</p>",
+    "featured": [
+      {
+        "key": "tiefling",
+        "note": "infernal names and virtue names, as the Player's Handbook describes them."
+      },
+      {
+        "key": "tavern",
+        "note": "inn and tavern names, from The Red Lion to The Drunken Owlbear."
+      },
+      {
+        "key": "elf",
+        "note": "D&D-style elf names, plus real Tolkien elves with their meanings."
+      },
+      {
+        "key": "epithet",
+        "note": "add a title to any character: the Bold, Dragonslayer, of the North."
+      }
+    ],
+    "generators": [
+      "tiefling",
+      "dnd_fantasy",
+      "elf",
+      "high_elf",
+      "wood_elf",
+      "dark_elf",
+      "dwarf",
+      "half_orc",
+      "orc",
+      "dragon",
+      "wizard",
+      "demon",
+      "angel",
+      "fairy",
+      "epithet",
+      "demon_epithet",
+      "tavern",
+      "fantasy_town",
+      "fantasy_city",
+      "fantasy_country",
+      "clan",
+      "guild",
+      "sword",
+      "axe",
+      "hammer",
+      "shield",
+      "wand",
+      "poison",
+      "assassin",
+      "swamp_witch"
     ]
   },
   {
@@ -273,6 +335,7 @@
       }
     ],
     "generators": [
+      "tavern",
       "fantasy_town",
       "fantasy_country",
       "cafe",
