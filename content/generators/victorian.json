@@ -88,17 +88,25 @@
       "cases": {
         "male": {
           "recipe": "template",
-          "template": "[first.male] [surnames], [jobs]"
+          "template": [
+            "[first.male] [surnames], [jobs.male]",
+            "[first.male] [surnames], [jobs.shared]"
+          ]
         },
         "female": {
           "recipe": "template",
-          "template": "[first.female] [surnames], [jobs]"
+          "template": [
+            "[first.female] [surnames], [jobs.female]",
+            "[first.female] [surnames], [jobs.shared]"
+          ]
         },
         "any": {
           "recipe": "template",
           "template": [
-            "[first.male] [surnames], [jobs]",
-            "[first.female] [surnames], [jobs]"
+            "[first.male] [surnames], [jobs.male]",
+            "[first.male] [surnames], [jobs.shared]",
+            "[first.female] [surnames], [jobs.female]",
+            "[first.female] [surnames], [jobs.shared]"
           ]
         }
       }
@@ -202,28 +210,41 @@
       "Featherstone",
       "Gosling"
     ],
-    "jobs": [
-      "lamplighter",
-      "crossing sweeper",
-      "mudlark",
-      "chimney sweep",
-      "costermonger",
-      "rag-and-bone man",
-      "governess",
-      "milliner",
-      "match girl",
-      "telegraph boy",
-      "knocker-upper",
-      "lady's maid",
-      "clerk",
-      "bootblack",
-      "flower seller",
-      "lighterman",
-      "seamstress",
-      "butler",
-      "scullery maid",
-      "cabman"
-    ]
+    "jobs": {
+      "male": [
+        "butler",
+        "rag-and-bone man",
+        "telegraph boy",
+        "chimney sweep",
+        "lamplighter",
+        "cabman",
+        "lighterman",
+        "bootblack",
+        "clerk",
+        "footman",
+        "navvy"
+      ],
+      "female": [
+        "governess",
+        "milliner",
+        "match girl",
+        "lady's maid",
+        "scullery maid",
+        "seamstress",
+        "flower seller",
+        "laundress",
+        "nursemaid",
+        "dressmaker"
+      ],
+      "shared": [
+        "crossing sweeper",
+        "mudlark",
+        "costermonger",
+        "knocker-upper",
+        "cook",
+        "shopkeeper"
+      ]
+    }
   },
   "article": {
     "hero": {
