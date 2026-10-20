@@ -1,0 +1,333 @@
+{
+  "title": "Pirate Name Generator",
+  "slug": "pirate-name-generator",
+  "icon": "🏴‍☠️",
+  "category": "people",
+  "published": "2026-10-20",
+  "description": "Pirate names in the style of the Golden Age of Piracy, with a nickname like Blackbeard's or Calico Jack's, plus pirate ship names.",
+  "seoKeywords": "pirate name generator, pirate names, pirate ship name generator, pirate ship names, female pirate names, funny pirate names, pirate captain names",
+  "isPopular": false,
+  "filters": {
+    "what": {
+      "label": "Name for",
+      "options": [
+        "pirate",
+        "ship"
+      ],
+      "optionLabels": {
+        "pirate": "A pirate",
+        "ship": "A pirate ship"
+      }
+    },
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    },
+    "format": {
+      "label": "Pirate name format",
+      "options": [
+        "any",
+        "nickname_first",
+        "nickname_middle",
+        "captain"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "nickname_first": "Nickname first (Red Silas)",
+        "nickname_middle": "Nickname in the middle (Silas “Red” Thatch)",
+        "captain": "Captain and surname"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "what",
+  "cases": {
+    "ship": {
+      "recipe": "template",
+      "template": [
+        "The [shipAdj] [shipNoun]",
+        "The [shipNoun]'s Revenge",
+        "The [shipAdj] [shipNoun]",
+        "[first.female]'s Revenge",
+        "The [shipNoun] of [first.female]"
+      ]
+    },
+    "pirate": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "nickname_first": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": "[nick] [first]"
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[nick] [first.{gender}]"
+          }
+        },
+        "nickname_middle": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": "[first] “[nick]” [surnames]"
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[first.{gender}] “[nick]” [surnames]"
+          }
+        },
+        "captain": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": "Captain [first] [surnames]"
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "Captain [first.{gender}] [surnames]"
+          }
+        },
+        "any": {
+          "recipe": "switch",
+          "on": "gender",
+          "cases": {
+            "any": {
+              "recipe": "template",
+              "template": [
+                "[nick] [first]",
+                "[first] “[nick]” [surnames]",
+                "Captain [first] [surnames]"
+              ]
+            }
+          },
+          "default": {
+            "recipe": "template",
+            "template": [
+              "[nick] [first.{gender}]",
+              "[first.{gender}] “[nick]” [surnames]",
+              "Captain [first.{gender}] [surnames]"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "data": {
+    "first": {
+      "male": [
+        "Silas",
+        "Jonah",
+        "Ezekiel",
+        "Tobias",
+        "Barnaby",
+        "Jasper",
+        "Elias",
+        "Abel",
+        "Gideon",
+        "Josiah",
+        "Ambrose",
+        "Caleb",
+        "Edmund",
+        "Hosea",
+        "Isaac",
+        "Lemuel",
+        "Nathaniel",
+        "Obadiah",
+        "Reuben",
+        "Thaddeus",
+        "William",
+        "Thomas",
+        "Samuel",
+        "Henry",
+        "Walter",
+        "Roger",
+        "Ned",
+        "Will",
+        "Kit",
+        "Davy"
+      ],
+      "female": [
+        "Grace",
+        "Molly",
+        "Bess",
+        "Charlotte",
+        "Hester",
+        "Ruth",
+        "Martha",
+        "Polly",
+        "Sarah",
+        "Nell",
+        "Abigail",
+        "Maud",
+        "Jenny",
+        "Agnes",
+        "Eliza",
+        "Peg",
+        "Kate",
+        "Lettie",
+        "Hannah",
+        "Temperance",
+        "Patience",
+        "Prudence",
+        "Sal",
+        "Meg",
+        "Bridget",
+        "Liza",
+        "Rose",
+        "Constance",
+        "Judith",
+        "Tabitha"
+      ]
+    },
+    "surnames": [
+      "Thatch",
+      "Blackwell",
+      "Crane",
+      "Hawkins",
+      "Salt",
+      "Morrow",
+      "Lowe",
+      "Drake",
+      "Gallow",
+      "Rook",
+      "Teague",
+      "Quill",
+      "Harrow",
+      "Pike",
+      "Marlowe",
+      "Grimes",
+      "Sterne",
+      "Coffin",
+      "Carver",
+      "Strand",
+      "Wick",
+      "Brine",
+      "Danger",
+      "Mallet",
+      "Tarr",
+      "Hollis"
+    ],
+    "nick": [
+      "Red",
+      "One-Eye",
+      "Peg-Leg",
+      "Black",
+      "Mad",
+      "Bloody",
+      "Grinning",
+      "Iron-Hook",
+      "Silver",
+      "Salty",
+      "Lucky",
+      "Gentleman",
+      "Barefoot",
+      "Scarface",
+      "Rum-Soaked",
+      "Long",
+      "Quick",
+      "Cutlass",
+      "Stormy",
+      "Laughing",
+      "Toothless",
+      "Gunpowder",
+      "Patch",
+      "Whistling"
+    ],
+    "shipAdj": [
+      "Black",
+      "Crimson",
+      "Silver",
+      "Golden",
+      "Drunken",
+      "Wicked",
+      "Howling",
+      "Restless",
+      "Midnight",
+      "Rusted",
+      "Laughing",
+      "Bloody",
+      "Salt",
+      "Cursed",
+      "Wandering",
+      "Damned",
+      "Grey",
+      "Lucky",
+      "Sea",
+      "Storm"
+    ],
+    "shipNoun": [
+      "Gull",
+      "Serpent",
+      "Widow",
+      "Shark",
+      "Kraken",
+      "Lantern",
+      "Raven",
+      "Fortune",
+      "Mermaid",
+      "Siren",
+      "Cutlass",
+      "Revenge",
+      "Wolf",
+      "Ghost",
+      "Dagger",
+      "Tide",
+      "Rose",
+      "Hound",
+      "Maiden"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🏴‍☠️ Pirate Name Generator",
+      "tagline": "Pirate names with a nickname to fear, and a ship to sail in."
+    },
+    "intro": "The pirates people remember had nicknames as famous as their crimes: Blackbeard, Black Bart, Calico Jack. This **pirate name generator** gives you a pirate name in the same style, with a nickname, a surname or a captain's title, and can name your ship too.",
+    "sections": [
+      {
+        "heading": "Real pirates and their nicknames",
+        "content": "<p>The Golden Age of Piracy, roughly the 1650s to the 1730s, gave us most of the pirates in popular memory, and their nicknames usually came from how they looked or dressed:</p><ul><li><strong>Blackbeard</strong>, Edward Teach (or Thatch), for his huge black beard.</li><li><strong>Calico Jack</strong>, John Rackham, for his brightly coloured calico clothes.</li><li><strong>Black Bart</strong>, Bartholomew Roberts, one of the most successful pirates of the age.</li><li><strong>Black Sam</strong>, Samuel Bellamy, captain of the <em>Whydah</em>.</li></ul><p>Women sailed as pirates too: Anne Bonny and Mary Read served with Calico Jack's crew.</p>"
+      },
+      {
+        "heading": "Naming a pirate ship",
+        "content": "<p>Real pirate ships were often captured and renamed by their new owners, and the names could be grand or defiant: Blackbeard's <em>Queen Anne's Revenge</em>, Bartholomew Roberts' <em>Royal Fortune</em>, William Kidd's <em>Adventure Galley</em>. A \"Revenge\" was a popular choice. The generator's ship names mix the classic patterns: an adjective and a creature, a Revenge, or a ship named after someone.</p>"
+      },
+      {
+        "heading": "Making your pirate memorable",
+        "content": "<ul><li><strong>Give the nickname a reason.</strong> Every good pirate nickname has a story: how did Peg-Leg lose the leg?</li><li><strong>Match the name to the role.</strong> A captain needs a name the crew will fear; a ship's cook can be Salty Ned.</li><li><strong>Use it for fun:</strong> fancy dress, a pirate party, Talk Like a Pirate Day on 19 September, or a tabletop campaign on the high seas.</li></ul>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How did pirates get their nicknames?",
+        "answer": "Usually from their looks or clothes: Blackbeard's beard, Calico Jack's calico clothes. Some came from their deeds or their reputation."
+      },
+      {
+        "question": "Were there real female pirates?",
+        "answer": "Yes. Anne Bonny and Mary Read sailed with Calico Jack Rackham in the early 18th century."
+      },
+      {
+        "question": "What are some famous pirate ship names?",
+        "answer": "Queen Anne's Revenge (Blackbeard), Royal Fortune (Bartholomew Roberts), Whydah (Samuel Bellamy) and Adventure Galley (William Kidd)."
+      }
+    ]
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "title": "Villain Name Generator",
+  "slug": "villain-name-generator",
+  "icon": "🦹",
+  "category": "people",
+  "published": "2026-10-20",
+  "description": "Villain names for stories, games and comics: a sinister title (Doctor, Baron, Countess), an unsettling name like The Clockmaker, or a name with a dark epithet.",
+  "seoKeywords": "villain name generator, villain names, evil name generator, supervillain name generator, bad guy names, female villain names, evil names",
+  "isPopular": false,
+  "filters": {
+    "format": {
+      "label": "Name format",
+      "options": [
+        "any",
+        "title",
+        "the",
+        "epithet"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "title": "Title and name (Baron Malice)",
+        "the": "The ... (The Clockmaker)",
+        "epithet": "Name and epithet (Vex the Undying)"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "title": {
+      "recipe": "template",
+      "template": "[titles] [names]"
+    },
+    "the": {
+      "recipe": "template",
+      "template": [
+        "The [adj] [occupations]",
+        "The [occupations]"
+      ]
+    },
+    "epithet": {
+      "recipe": "template",
+      "template": "[names] [epithets]"
+    },
+    "any": {
+      "recipe": "template",
+      "template": [
+        "[titles] [names]",
+        "The [adj] [occupations]",
+        "The [occupations]",
+        "[names] [epithets]"
+      ]
+    }
+  },
+  "data": {
+    "titles": [
+      "Doctor",
+      "Baron",
+      "Lord",
+      "Lady",
+      "Count",
+      "Countess",
+      "Professor",
+      "General",
+      "Madame",
+      "Duke",
+      "Mister",
+      "Queen",
+      "King",
+      "Overlord",
+      "Marquis",
+      "Archduke"
+    ],
+    "names": [
+      "Malice",
+      "Vex",
+      "Dread",
+      "Ruin",
+      "Hex",
+      "Gloom",
+      "Wither",
+      "Sorrow",
+      "Havoc",
+      "Scourge",
+      "Blight",
+      "Mortem",
+      "Grimm",
+      "Shade",
+      "Torment",
+      "Cinder",
+      "Rook",
+      "Grieve",
+      "Sable",
+      "Vesper",
+      "Mordant",
+      "Wrath",
+      "Rancid"
+    ],
+    "adj": [
+      "Black",
+      "Crimson",
+      "Iron",
+      "Silent",
+      "Hollow",
+      "Grim",
+      "Pale",
+      "Rotten",
+      "Twisted",
+      "Burning",
+      "Frozen",
+      "Broken",
+      "Wicked",
+      "Ashen",
+      "Venomous",
+      "Dark",
+      "Bitter",
+      "Cruel",
+      "Shadow",
+      "Vile"
+    ],
+    "occupations": [
+      "Serpent",
+      "Jester",
+      "Shepherd",
+      "Puppeteer",
+      "Butcher",
+      "Architect",
+      "Hangman",
+      "Surgeon",
+      "Watcher",
+      "Gardener",
+      "Clockmaker",
+      "Alchemist",
+      "Magpie",
+      "Ferryman",
+      "Locust",
+      "Moth",
+      "Taxidermist",
+      "Undertaker",
+      "Lamplighter",
+      "Choirmaster",
+      "Weaver",
+      "Lockkeeper",
+      "Beekeeper",
+      "Cartographer",
+      "Locksmith",
+      "Tailor"
+    ],
+    "epithets": [
+      "the Merciless",
+      "the Undying",
+      "the Defiler",
+      "the Usurper",
+      "the Betrayer",
+      "the Unforgiven",
+      "of the Black Hand",
+      "the Devourer",
+      "the Hollow King",
+      "the Last",
+      "the Unseen",
+      "the Nameless",
+      "the Smiling",
+      "the Patient",
+      "the Hungering"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🦹 Villain Name Generator",
+      "tagline": "Sinister titles, unsettling nicknames and dark epithets for the bad guy."
+    },
+    "intro": "A villain's name should make the audience uneasy before the villain does anything. Some use a grand title (Doctor Doom, Baron Zemo, Lord Voldemort), some an ordinary word made sinister (The Joker, The Riddler), and some a name with an epithet. This **villain name generator** makes all three, for stories, games, comics and campaigns.",
+    "sections": [
+      {
+        "heading": "What makes a villain name work",
+        "content": "<ul><li><strong>A title claims power.</strong> Doctor, Baron, Lord, Countess: the villain thinks they deserve respect, and wants you to know it.</li><li><strong>An ordinary job made sinister</strong> is unsettling: The Gardener, The Clockmaker, The Collector. The audience wonders what exactly they collect.</li><li><strong>Hard sounds help:</strong> k, x, v and z appear in a lot of villain names for a reason.</li><li><strong>An epithet tells the legend:</strong> the Undying, the Usurper. Good for fantasy villains with a history.</li></ul>"
+      },
+      {
+        "heading": "Naming the villain for your story",
+        "content": "<ul><li><strong>Who gave them the name?</strong> A name the villain chose (Lord Voldemort, an anagram of Tom Marvolo Riddle's name) tells you about their ego; a name the newspapers gave them tells you about their crimes.</li><li><strong>Match the hero.</strong> A villain's name often mirrors the hero's: light and shadow, order and chaos.</li><li><strong>Save the real name for the reveal.</strong> The name everyone knows can hide a more ordinary person underneath.</li></ul><p>For the heroes, try the <a href=\"superhero-name-generator.html\">Superhero Name Generator</a>; for a demonic villain, the <a href=\"demon-name-generator.html\">Demon Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I name a villain?",
+        "answer": "Pick a shape: a grand title and a name (Baron Malice), an ordinary job made sinister (The Clockmaker), or a name with a dark epithet (Vex the Undying). Then decide who gave them the name, and why."
+      },
+      {
+        "question": "Can I use these villain names in my book or game?",
+        "answer": "Yes, free and with no credit needed. Check a name isn't already a well-known character before you publish."
+      }
+    ]
+  }
+}

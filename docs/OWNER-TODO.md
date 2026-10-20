@@ -21,7 +21,14 @@ New and rewritten pages. Read them on the live site; reply in any session with c
 - [ ] Vampire (rewritten)
 - [ ] Category pages and homepage hero
 - [ ] Hammer (renamed), and the Business / Company / Brand split
-- [ ] D&D hub (`categories/dnd-names.html`) and the Tiefling, Tavern, Dragonborn, Halfling, Gnome, Half-Elf, Goblin, Kobold, Lizardfolk, Githyanki, Knight, Paladin, Baldur's Gate 3 and Fantasy Shop generators; the Elder Scrolls hub with Nord, Khajiit, Dunmer, Altmer and Argonian; the Warcraft hub with Night Elf, Blood Elf and Troll; the Warhammer hub and Warhammer 40k generator; Hobbit; Game of Thrones; Elden Ring; Star Wars; music: Band, Album, Song Title, Rapper, Stage Name, Wu-Tang: also request indexing for these
+- [ ] **New pages from the overnight run** (request indexing for the hubs first; Google finds the rest through them):
+  - **D&D hub** (`categories/dnd-names.html`): Tiefling, Dragonborn, Halfling, Gnome, Half-Elf, Goblin, Kobold, Lizardfolk, Githyanki, Knight, Paladin, Tavern, Fantasy Shop, Baldur's Gate 3
+  - **Elder Scrolls hub**: Nord, Khajiit, Dunmer, Altmer, Argonian
+  - **Warcraft hub**: Night Elf, Blood Elf, Troll
+  - **Warhammer hub**: Warhammer 40k (at the old Warhammer address)
+  - **Pop culture**: Hobbit, Game of Thrones, Elden Ring, Star Wars
+  - **Music**: Band, Album, Song Title, Rapper, Stage Name, Wu-Tang
+  - **Characters and folklore**: Pirate, Viking, Superhero, Villain, Werewolf, Zombie
 - [ ] Path of Exile Witch (rewritten: epithets by Ascendancy)
 - [ ] Elven Sword (rebuilt: every name now has a real Sindarin or Quenya meaning)
 - [ ] Dungeon Synth (rewritten without your notes; your notes would make it better)
