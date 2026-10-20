@@ -25,6 +25,8 @@ New and rewritten pages. Read them on the live site; reply in any session with c
 - [ ] Path of Exile Witch (rewritten: epithets by Ascendancy)
 - [ ] Elven Sword (rebuilt: every name now has a real Sindarin or Quenya meaning)
 - [ ] Dungeon Synth (rewritten without your notes; your notes would make it better)
+- [ ] Company and Brand (rewritten; Brand's word lists rebuilt by hand, with a "with a product word" option)
+- [ ] Fantasy Town, Country and City (all three rebuilt: towns from real English place-name endings, countries in six language styles with optional titles, cities by kind with optional epithets). Town and Country now also target "village" and "kingdom"
 
 ## Notes from Rich wanted
 
