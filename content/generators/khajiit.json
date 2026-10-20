@@ -1,0 +1,332 @@
+{
+  "title": "Khajiit Name Generator",
+  "slug": "khajiit-name-generator",
+  "icon": "🐱",
+  "category": "pop_culture",
+  "published": "2026-10-20",
+  "description": "Khajiit names for Skyrim, Elder Scrolls Online and your own Tamriel stories, with or without the apostrophe prefixes of names like J'zargo, Ri'saad and M'aiq.",
+  "seoKeywords": "khajiit names, khajiit name generator, skyrim khajiit names, eso khajiit names, elder scrolls khajiit names, female khajiit names, khajiit name prefixes",
+  "isPopular": false,
+  "filters": {
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "any",
+        "prefix",
+        "name"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "prefix": "With a prefix (Ri'dashirr)",
+        "name": "Name only"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "prefix": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": "[prefixes][afterPrefix]"
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[prefixes][afterPrefix.{gender}]"
+      }
+    },
+    "name": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "pick",
+          "from": "names"
+        }
+      },
+      "default": {
+        "recipe": "pick",
+        "from": "names.{gender}"
+      }
+    },
+    "any": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[prefixes][afterPrefix]",
+            "[names]"
+          ]
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": [
+          "[prefixes][afterPrefix.{gender}]",
+          "[names.{gender}]"
+        ]
+      }
+    }
+  },
+  "data": {
+    "prefixes": [
+      "J'",
+      "M'",
+      "Ri'",
+      "Ra'",
+      "Ma'",
+      "Do'",
+      "Dro'",
+      "Ja'",
+      "S'"
+    ],
+    "names": {
+      "male": [
+        "Ahzirr",
+        "Bazhar",
+        "Dashirr",
+        "Ghazri",
+        "Hadjirr",
+        "Jhazbar",
+        "Kahjirr",
+        "Mahzir",
+        "Qadri",
+        "Rahjin",
+        "Tazharr",
+        "Urzan",
+        "Dazhar",
+        "Ahjirr",
+        "Kurzha",
+        "Zharim",
+        "Bhakar",
+        "Dravirr",
+        "Fahjar",
+        "Izhar",
+        "Jodhar",
+        "Khazim",
+        "Moshir",
+        "Nahrim",
+        "Shazhar",
+        "Varjirr",
+        "Zahjo",
+        "Ajhirr",
+        "Dhazir",
+        "Rozhar",
+        "Ezhar",
+        "Hazim",
+        "Kezhar",
+        "Mazhir",
+        "Sabjirr",
+        "Zhadirr",
+        "Tirzhar",
+        "Jurrim",
+        "Khirr",
+        "Bahzir",
+        "Dhirr",
+        "Jazhar",
+        "Khavirr",
+        "Rajhin",
+        "Zhurr"
+      ],
+      "female": [
+        "Ahzira",
+        "Bahzra",
+        "Ezzira",
+        "Fahzi",
+        "Haddara",
+        "Inzirra",
+        "Jhanni",
+        "Khazra",
+        "Laddra",
+        "Mazhi",
+        "Nazhra",
+        "Rassa",
+        "Shazra",
+        "Tahri",
+        "Vashni",
+        "Zahri",
+        "Zirra",
+        "Aazhi",
+        "Bhirra",
+        "Dahvi",
+        "Jahdi",
+        "Razhi",
+        "Zhanna",
+        "Ahrissa",
+        "Dazhi",
+        "Kahzia",
+        "Naddhi",
+        "Qazhra",
+        "Sahzi",
+        "Tarrhi",
+        "Zazhira",
+        "Ishazi",
+        "Mahrra",
+        "Jazhi",
+        "Khalira",
+        "Zinni",
+        "Ahnazi",
+        "Shirri",
+        "Rahzi",
+        "Ahzhi",
+        "Dhazra",
+        "Ezhinni",
+        "Khajra",
+        "Rhazzi",
+        "Tazhira"
+      ]
+    },
+    "afterPrefix": {
+      "male": [
+        "ahzirr",
+        "bazhar",
+        "dashirr",
+        "ghazri",
+        "hadjirr",
+        "jhazbar",
+        "kahjirr",
+        "mahzir",
+        "qadri",
+        "rahjin",
+        "tazharr",
+        "urzan",
+        "dazhar",
+        "ahjirr",
+        "kurzha",
+        "zharim",
+        "bhakar",
+        "dravirr",
+        "fahjar",
+        "izhar",
+        "jodhar",
+        "khazim",
+        "moshir",
+        "nahrim",
+        "shazhar",
+        "varjirr",
+        "zahjo",
+        "ajhirr",
+        "dhazir",
+        "rozhar",
+        "ezhar",
+        "hazim",
+        "kezhar",
+        "mazhir",
+        "sabjirr",
+        "zhadirr",
+        "tirzhar",
+        "jurrim",
+        "khirr",
+        "bahzir",
+        "dhirr",
+        "jazhar",
+        "khavirr",
+        "rajhin",
+        "zhurr"
+      ],
+      "female": [
+        "ahzira",
+        "bahzra",
+        "ezzira",
+        "fahzi",
+        "haddara",
+        "inzirra",
+        "jhanni",
+        "khazra",
+        "laddra",
+        "mazhi",
+        "nazhra",
+        "rassa",
+        "shazra",
+        "tahri",
+        "vashni",
+        "zahri",
+        "zirra",
+        "aazhi",
+        "bhirra",
+        "dahvi",
+        "jahdi",
+        "razhi",
+        "zhanna",
+        "ahrissa",
+        "dazhi",
+        "kahzia",
+        "naddhi",
+        "qazhra",
+        "sahzi",
+        "tarrhi",
+        "zazhira",
+        "ishazi",
+        "mahrra",
+        "jazhi",
+        "khalira",
+        "zinni",
+        "ahnazi",
+        "shirri",
+        "rahzi",
+        "ahzhi",
+        "dhazra",
+        "ezhinni",
+        "khajra",
+        "rhazzi",
+        "tazhira"
+      ]
+    }
+  },
+  "article": {
+    "hero": {
+      "title": "🐱 Khajiit Name Generator",
+      "tagline": "Khajiit names for Skyrim and Elder Scrolls Online, with the apostrophe prefixes of J'zargo and Ri'saad."
+    },
+    "intro": "Khajiit has wares, if you have coin, and Khajiit also has a name you'll recognise from a mile away. The cat-folk of Elsweyr often wear a short prefix and an apostrophe at the front of their names, like J'zargo, M'aiq the Liar and the caravan leader Ri'saad in Skyrim. This **Khajiit name generator** builds names in that style, with or without a prefix, for Skyrim, Elder Scrolls Online or your own Tamriel stories.",
+    "sections": [
+      {
+        "heading": "How Khajiit names work",
+        "content": "<p>The Khajiit you meet in Skyrim show the pattern well:</p><ul><li><strong>With a prefix:</strong> J'zargo at the College of Winterhold, M'aiq the Liar, Ri'saad and Ma'dran who lead the trade caravans, Ra'zhinda in Ri'saad's caravan, and Dro'marash in Ma'dran's.</li><li><strong>Without one:</strong> Kharjo, Ahkari, Zaynabi and Atahbah, also caravan Khajiit.</li></ul><p>Elder Scrolls lore treats the prefixes as titles rather than part of the birth name, connected to a Khajiit's age, standing or deeds, so the same Khajiit can carry a different prefix at different points in life. The generator's prefixes are ones used by named Khajiit in the games: J', M', Ri', Ra', Ma', Do', Dro', Ja' and S'.</p>"
+      },
+      {
+        "heading": "What the names sound like",
+        "content": "<ul><li><strong>Soft and rolling:</strong> lots of h, z, j and rr. Dashirr, Mazhi, Khazra.</li><li><strong>Two syllables, sometimes three.</strong> The prefix adds a beat at the front, so the name after it is usually short.</li><li><strong>Female names</strong> often end in a vowel (Ahkari, Zaynabi in Skyrim; Fahzi, Inzirra here). Male names often end in a consonant.</li></ul><p>All the names in the generator are new, so your character won't share a name with someone you'll meet in Tamriel.</p>"
+      },
+      {
+        "heading": "Speaking like a Khajiit",
+        "content": "<p>Khajiit in the games often speak about themselves in the third person (\"Khajiit has wares\", \"This one is pleased\"). That's a good reason to pick a name that sounds good in a sentence: \"J'zargo will be the greatest mage\" works because the name is short and punchy.</p><ul><li><strong>Try it in the third person.</strong> \"Ri'Dashirr does not like this plan.\" If it rolls off the tongue, it's a keeper.</li><li><strong>Let the prefix change.</strong> A young Khajiit might gain a new prefix after a great deed, which is a fun way to mark progress in a campaign.</li></ul><p>For orcs from the same world, try the <a href=\"skyrim-orc-name-generator.html\">Skyrim Orc Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What does the apostrophe mean in Khajiit names?",
+        "answer": "It separates a prefix, like J' in J'zargo or Ri' in Ri'saad, from the name. Elder Scrolls lore treats these prefixes as titles connected to age, standing or deeds rather than part of the birth name."
+      },
+      {
+        "question": "Do all Khajiit have a prefix?",
+        "answer": "No. Plenty of Khajiit in Skyrim don't, such as Kharjo, Ahkari and Zaynabi. Set Name Format to \"Name only\" for names without one."
+      },
+      {
+        "question": "Are these names from Skyrim?",
+        "answer": "No. They're new names in the same style; the prefixes are ones used in the games."
+      },
+      {
+        "question": "Can I use these in Elder Scrolls Online?",
+        "answer": "Yes. ESO names must be unique on your server and allow apostrophes, so a prefixed name is a good way to find one that's free."
+      }
+    ]
+  }
+}

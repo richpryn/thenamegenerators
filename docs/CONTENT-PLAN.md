@@ -160,6 +160,9 @@ Biggest searches, best fit, and most of the engine work is reuse.
 **Baldur's Gate 3 Name Generator**: a fandom page that pulls the D&D race lists through one Race filter, with an article on BG3's origin characters. It is cheap to build because it reuses Phase 1 work.
 
 ### Phase 2: Finish the fandom clusters you've started (weeks 6–14)
+
+**Status:** Elder Scrolls: Khajiit and Nord are live (with Skyrim Orc). Next: Dunmer, Altmer, Argonian, then an Elder Scrolls hub; then Warcraft (Night Elf, Blood Elf, Troll).
+
 Build out franchises where the site already has a page, so each becomes a small hub. **Start with Harry Potter**: Hogwarts Legacy Witch gets the site's most clicks, and its two pages are already rebuilt.
 
 | Franchise hub | Have | Add |
