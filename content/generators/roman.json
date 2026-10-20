@@ -27,60 +27,55 @@
       ],
       "optionLabels": {
         "full": "Full name",
-        "meaning": "Full name, with the cognomen's meaning"
+        "meaning": "Full name, with the cognomen's meaning (men only)"
       }
     }
   },
   "recipe": "switch",
-  "on": "format",
+  "on": "gender",
   "cases": {
-    "full": {
+    "male": {
       "recipe": "switch",
-      "on": "gender",
+      "on": "format",
       "cases": {
-        "male": {
+        "full": {
           "recipe": "template",
           "template": "[praenomina] [nomina.male] [cognomina]"
         },
-        "female": {
+        "meaning": {
+          "recipe": "template",
+          "template": "[praenomina] [nomina.male] [cognominaMeaning]"
+        }
+      }
+    },
+    "female": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "full": {
           "recipe": "template",
           "template": [
-            "[nomina.female]",
-            "[nomina.female] [femaleSuffix]"
-          ]
-        },
-        "any": {
-          "recipe": "template",
-          "template": [
-            "[praenomina] [nomina.male] [cognomina]",
             "[nomina.female]",
             "[nomina.female] [femaleSuffix]"
           ]
         }
       }
     },
-    "meaning": {
+    "any": {
       "recipe": "switch",
-      "on": "gender",
+      "on": "format",
       "cases": {
-        "male": {
+        "full": {
+          "recipe": "template",
+          "template": [
+            "[praenomina] [nomina.male] [cognomina]",
+            "[nomina.female]",
+            "[nomina.female] [femaleSuffix]"
+          ]
+        },
+        "meaning": {
           "recipe": "template",
           "template": "[praenomina] [nomina.male] [cognominaMeaning]"
-        },
-        "female": {
-          "recipe": "template",
-          "template": [
-            "[nomina.female]",
-            "[nomina.female] [femaleSuffix]"
-          ]
-        },
-        "any": {
-          "recipe": "template",
-          "template": [
-            "[praenomina] [nomina.male] [cognominaMeaning]",
-            "[nomina.female]",
-            "[nomina.female] [femaleSuffix]"
-          ]
         }
       }
     }
