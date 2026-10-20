@@ -31,6 +31,7 @@ project/
 │   ├── validate-data.js            # Checks content/ without building
 │   └── content.js                  # Loading + checks shared by both
 ├── styles/                         # main.css, blog.css
+├── docs/SEO.md                     # SEO checklist: done, to do, and what to watch
 ├── index.html                      # Homepage (hand-written; marked sections filled by the build)
 ├── all-generators.html             # Hand-written; generator list filled by the build
 ├── about.html                      # Hand-written; menu filled by the build
