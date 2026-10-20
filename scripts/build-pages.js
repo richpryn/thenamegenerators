@@ -13,6 +13,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { execFileSync } = require('child_process');
 const { loadContent, validate } = require('./content');
 const { filtersHtml } = require('../lib/page.js');
 
@@ -36,6 +37,24 @@ function escapeHtml(text) {
     .replace(/'/g, '&#039;');
 }
 
+/**
+ * When a file last changed, as YYYY-MM-DD: today if it has edits not yet
+ * committed, otherwise the date of the last commit that touched it. Null if
+ * git isn't available. Keeps dates stable from one build to the next.
+ */
+const TODAY = new Date().toISOString().split('T')[0];
+function lastChanged(file) {
+  try {
+    const git = (...args) => execFileSync('git', args, { cwd: ROOT, stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim();
+    if (git('status', '--porcelain', '--', file)) return TODAY;
+    return git('log', '-1', '--format=%cs', '--', file) || TODAY;
+  } catch (e) {
+    return null;
+  }
+}
+
+const latest = (dates) => dates.filter(Boolean).sort().pop() || TODAY;
+
 // Article text may use **bold**; turn it into HTML (or drop it for plain text).
 function markdownBold(html) {
   return String(html || '').replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
@@ -51,7 +70,7 @@ function scriptJson(value, indent) {
 
 /** The fields the in-browser engine needs, without the article text. */
 function runtimeConfig(gen) {
-  const { title, icon, description, seoKeywords, isPopular, popularRank, category, article, key, ...config } = gen;
+  const { title, icon, description, seoKeywords, isPopular, popularRank, category, published, updated, article, key, ...config } = gen;
   return config;
 }
 
@@ -141,8 +160,8 @@ function generateSchemas(generator, category) {
         "url": `${baseUrl}/logo.png`
       }
     },
-    "datePublished": new Date().toISOString(),
-    "dateModified": new Date().toISOString(),
+    "datePublished": generator.published,
+    "dateModified": generator.updated,
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": pageUrl
@@ -771,6 +790,11 @@ function build() {
     process.exit(1);
   }
 
+  // Last updated = last change to the generator's file (never before it was published)
+  for (const gen of Object.values(content.generators)) {
+    gen.updated = latest([gen.published, lastChanged(`content/generators/${gen.key}.json`)]);
+  }
+
   const site = makeSite(content);
   for (const dir of [POSTS_DIR, CATEGORIES_DIR, RUNTIME_DIR]) fs.mkdirSync(dir, { recursive: true });
 
@@ -804,35 +828,39 @@ function build() {
  */
 function generateSitemap(site) {
   const baseUrl = "https://thenamegenerators.com";
-  const currentDate = new Date().toISOString().split('T')[0];
+  // lastmod: a generator's last update; a category's newest generator (or
+  // categories.json); the site-wide pages the newest change of all.
+  const categoriesFile = lastChanged('content/categories.json');
+  const categoryDate = (cat) => latest([categoriesFile, ...site.inCategory(cat.slug).map(g => g.updated)]);
+  const siteDate = latest([categoriesFile, ...site.all.map(g => g.updated)]);
   
   let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
   <url>
     <loc>${baseUrl}/</loc>
-    <lastmod>${currentDate}</lastmod>
+    <lastmod>${siteDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <!-- All Generators Page -->
   <url>
     <loc>${baseUrl}/all-generators.html</loc>
-    <lastmod>${currentDate}</lastmod>
+    <lastmod>${siteDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <!-- About Page -->
   <url>
     <loc>${baseUrl}/about.html</loc>
-    <lastmod>${currentDate}</lastmod>
+    <lastmod>${latest([lastChanged('about.html')])}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <!-- HTML Sitemap -->
   <url>
     <loc>${baseUrl}/sitemap.html</loc>
-    <lastmod>${currentDate}</lastmod>
+    <lastmod>${siteDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -843,7 +871,7 @@ function generateSitemap(site) {
     sitemap += `  <!-- Category: ${category.name} -->
   <url>
     <loc>${baseUrl}/categories/${category.slug}-names.html</loc>
-    <lastmod>${currentDate}</lastmod>
+    <lastmod>${categoryDate(category)}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -855,7 +883,7 @@ function generateSitemap(site) {
     sitemap += `  <!-- Generator: ${generator.title} -->
   <url>
     <loc>${baseUrl}/posts/${generator.slug}.html</loc>
-    <lastmod>${currentDate}</lastmod>
+    <lastmod>${generator.updated}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

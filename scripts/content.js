@@ -67,8 +67,11 @@ function validate({ categories, generators }) {
   const slugs = {};
   for (const [key, gen] of Object.entries(generators)) {
     const file = `generators/${key}.json`;
-    for (const field of ['title', 'slug', 'icon', 'category', 'description', 'seoKeywords', 'recipe', 'data']) {
+    for (const field of ['title', 'slug', 'icon', 'category', 'published', 'description', 'seoKeywords', 'recipe', 'data']) {
       if (!gen[field]) errors.push(`${file}: missing "${field}"`);
+    }
+    if (gen.published && !/^\d{4}-\d{2}-\d{2}$/.test(gen.published)) {
+      errors.push(`${file}: "published" should be a date like 2026-10-20`);
     }
     if (!gen.article || !gen.article.hero || !gen.article.hero.title || !gen.article.intro) {
       errors.push(`${file}: needs article.hero.title, article.hero.tagline and article.intro`);

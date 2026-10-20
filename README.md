@@ -72,7 +72,8 @@ Then run the build.
 ### Adding a new generator
 
 1. Copy a similar file in `content/generators/` (e.g. `elf.json` → `goblin.json`). The file name is the generator's key.
-2. Change the title, slug, icon, description, keywords, article, filters, recipe and names.
+2. Change the title, slug, icon, description, keywords, article, filters, recipe and names, and set `"published"` to today's date (e.g. `"2026-10-20"`).
+   The "last updated" date on the page comes from git: the last commit that changed the file.
 3. Set `"category"` to its home category (used for the breadcrumb), and add `"goblin"` to that category's `generators` list in `content/categories.json`. Add it to other categories' lists too if it belongs there.
 4. Run the build.
 
