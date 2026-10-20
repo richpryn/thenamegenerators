@@ -1,0 +1,314 @@
+{
+  "title": "Paladin Name Generator",
+  "slug": "paladin-name-generator",
+  "icon": "✨",
+  "category": "dnd",
+  "published": "2026-10-20",
+  "description": "Paladin names for D&D, shaped by the oath: a noble first name and an epithet that suits Devotion, Vengeance, the Ancients, Glory or even an Oathbreaker.",
+  "seoKeywords": "paladin names, paladin name generator, dnd paladin names, female paladin names, oath of vengeance names, oathbreaker names, holy knight names",
+  "isPopular": false,
+  "filters": {
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    },
+    "oath": {
+      "label": "Oath",
+      "options": [
+        "any",
+        "devotion",
+        "ancients",
+        "vengeance",
+        "glory",
+        "redemption",
+        "watchers",
+        "conquest",
+        "oathbreaker"
+      ],
+      "optionLabels": {
+        "any": "Any oath",
+        "devotion": "Oath of Devotion",
+        "ancients": "Oath of the Ancients",
+        "vengeance": "Oath of Vengeance",
+        "glory": "Oath of Glory",
+        "redemption": "Oath of Redemption",
+        "watchers": "Oath of the Watchers",
+        "conquest": "Oath of Conquest",
+        "oathbreaker": "Oathbreaker"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "oath",
+  "cases": {
+    "any": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": "[given] [epithets]"
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[given.{gender}] [epithets]"
+      }
+    }
+  },
+  "default": {
+    "recipe": "switch",
+    "on": "gender",
+    "cases": {
+      "any": {
+        "recipe": "template",
+        "template": "[given] [epithets.{oath}]"
+      }
+    },
+    "default": {
+      "recipe": "template",
+      "template": "[given.{gender}] [epithets.{oath}]"
+    }
+  },
+  "data": {
+    "given": {
+      "male": [
+        "Aldous",
+        "Ambrose",
+        "Anselm",
+        "Benedict",
+        "Cedric",
+        "Clement",
+        "Corwin",
+        "Darian",
+        "Edmund",
+        "Elias",
+        "Gabriel",
+        "Gareth",
+        "Gideon",
+        "Hadrian",
+        "Ignatius",
+        "Joachim",
+        "Lucan",
+        "Lucius",
+        "Marcus",
+        "Mathias",
+        "Octavian",
+        "Orrin",
+        "Percival",
+        "Quintus",
+        "Raphael",
+        "Roderic",
+        "Seraphin",
+        "Tobias",
+        "Valerian",
+        "Uriel",
+        "Alaric",
+        "Constantine",
+        "Evander",
+        "Florian",
+        "Leander",
+        "Silvan",
+        "Thaddeus",
+        "Aurelian"
+      ],
+      "female": [
+        "Adelaide",
+        "Aurelia",
+        "Beatrix",
+        "Celestine",
+        "Clara",
+        "Constance",
+        "Elspeth",
+        "Evangeline",
+        "Felicity",
+        "Gwendolyn",
+        "Honora",
+        "Imogen",
+        "Isolde",
+        "Johanna",
+        "Leonora",
+        "Lucia",
+        "Marguerite",
+        "Mercy",
+        "Odette",
+        "Ophelia",
+        "Perpetua",
+        "Rosalind",
+        "Seraphine",
+        "Solenne",
+        "Theodora",
+        "Valeria",
+        "Verity",
+        "Vivienne",
+        "Winifred",
+        "Aveline",
+        "Bryony",
+        "Elowen",
+        "Galiena",
+        "Honoria",
+        "Liora",
+        "Marisol",
+        "Phillipa",
+        "Rowena",
+        "Sabine"
+      ]
+    },
+    "epithets": {
+      "devotion": [
+        "the Pure",
+        "the Faithful",
+        "the Merciful",
+        "Dawnbringer",
+        "the Shining",
+        "Lightbearer",
+        "the Just",
+        "the Gentle",
+        "Truthsworn",
+        "the Honest",
+        "Heartward",
+        "the Steadfast"
+      ],
+      "ancients": [
+        "of the Green",
+        "Oakheart",
+        "the Evergreen",
+        "Springwarden",
+        "Lightkeeper",
+        "the Joyful",
+        "Thornshield",
+        "Leafsworn",
+        "the Bright",
+        "Wildwarden",
+        "the Undimmed",
+        "Hopebringer"
+      ],
+      "vengeance": [
+        "the Relentless",
+        "the Avenger",
+        "Grimblade",
+        "Oathfire",
+        "the Unforgiving",
+        "Doomseeker",
+        "the Hunter",
+        "Wrathsworn",
+        "the Tyrant-Slayer",
+        "the Reckoning",
+        "Ashenblade",
+        "the Pitiless"
+      ],
+      "glory": [
+        "the Glorious",
+        "Gloryhand",
+        "the Champion",
+        "Victorsworn",
+        "the Radiant",
+        "the Peerless",
+        "Laurelcrown",
+        "the Triumphant",
+        "the Golden",
+        "the Unbeaten",
+        "Heroheart",
+        "the Magnificent"
+      ],
+      "redemption": [
+        "the Peacemaker",
+        "the Kind",
+        "Mercyhand",
+        "the Forgiving",
+        "Second-Chance",
+        "the Patient",
+        "Mendheart",
+        "the Penitent",
+        "the Quiet Hand",
+        "Gentleblade",
+        "the Reconciler",
+        "the Hopeful"
+      ],
+      "watchers": [
+        "the Vigilant",
+        "the Gatewarden",
+        "the Sentinel",
+        "Starwatch",
+        "the Ever-Watchful",
+        "Wardkeeper",
+        "the Sleepless",
+        "Dawneye",
+        "Veilguard",
+        "the Watchful",
+        "Gatekeeper",
+        "the Unblinking"
+      ],
+      "conquest": [
+        "the Conqueror",
+        "Ironfist",
+        "the Dread",
+        "Tyrantsbane",
+        "the Iron Will",
+        "Crownbreaker",
+        "the Unyielding",
+        "Dominion",
+        "the Fearsome",
+        "Warbringer",
+        "the Iron",
+        "the Overlord"
+      ],
+      "oathbreaker": [
+        "the Fallen",
+        "the Forsworn",
+        "Oathbreaker",
+        "the Betrayer",
+        "Blackheart",
+        "the Damned",
+        "Ashensworn",
+        "the Hollow",
+        "the Faithless",
+        "the Lost",
+        "the Dread Knight",
+        "the Abandoned"
+      ]
+    }
+  },
+  "article": {
+    "hero": {
+      "title": "✨ Paladin Name Generator",
+      "tagline": "A noble name and an epithet that shows which oath your paladin swore."
+    },
+    "intro": "A paladin is defined by their oath, so their name should be too. In D&D a paladin of Devotion and a paladin of Vengeance might both be called Gideon, but one is Gideon the Merciful and the other Gideon Grimblade. This **paladin name generator** pairs a noble first name with an epithet shaped by the oath you choose, from the Player's Handbook's three to later ones like Glory and the Watchers, and the Oathbreaker.",
+    "sections": [
+      {
+        "heading": "Where paladins come from",
+        "content": "<p>The word comes from the Paladins of Charlemagne, the twelve peers of medieval legend and of the <em>Song of Roland</em>. Roland and his friend Oliver were the most famous, and Roland is still the archetypal paladin's name.</p><p>D&amp;D took the idea and tied it to a sacred oath rather than a king. In fifth edition, the oath matters more than the god: a paladin's power comes from their commitment to their ideals.</p>"
+      },
+      {
+        "heading": "Names for each oath",
+        "content": "<ul><li><strong>Devotion</strong> (Player's Handbook): honesty, mercy and courage. Bright, gentle epithets: the Merciful, Lightbearer.</li><li><strong>Ancients</strong> (Player's Handbook): protecting light and life. Green and joyful: Oakheart, Springwarden.</li><li><strong>Vengeance</strong> (Player's Handbook): punishing great evil. Hard and grim: the Relentless, Grimblade.</li><li><strong>Conquest</strong> and <strong>Redemption</strong> (Xanathar's Guide to Everything): one rules through fear, the other seeks peace. The Conqueror; the Peacemaker.</li><li><strong>Glory</strong> and <strong>the Watchers</strong> (Tasha's Cauldron of Everything): heroism, and guarding the world from threats beyond it. The Champion; the Vigilant.</li><li><strong>Oathbreaker</strong> (Dungeon Master's Guide): a paladin who has broken their oath for darker power. The Fallen, the Forsworn.</li></ul>"
+      },
+      {
+        "heading": "Picking a first name",
+        "content": "<p>The first names here lean towards Latin and saints' names (Anselm, Clement, Perpetua, Seraphine), because paladins sound best with a little ceremony.</p><ul><li><strong>Match the setting's religion.</strong> A paladin of a sun god might suit Aurelian or Celestine; a nature paladin might prefer Elowen or Silvan.</li><li><strong>Use the epithet as the story.</strong> An Oathbreaker who was once \"the Pure\" might still use the old name, and wince at it.</li><li><strong>Keep it sayable.</strong> Paladins give speeches. The name should sound good shouted across a battlefield.</li></ul><p>For a knight without the divine magic, try the <a href=\"knight-name-generator.html\">Knight Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good name for a D&D paladin?",
+        "answer": "A noble first name with an epithet that matches the oath: Gideon the Merciful for Devotion, Valeria Grimblade for Vengeance, Lucan Oakheart for the Ancients."
+      },
+      {
+        "question": "Which paladin oaths are there in D&D fifth edition?",
+        "answer": "The Player's Handbook (2014) has Devotion, the Ancients and Vengeance; Xanathar's Guide adds Conquest and Redemption; Tasha's adds Glory and the Watchers; the Dungeon Master's Guide has the Oathbreaker. Setting books add more."
+      },
+      {
+        "question": "Where does the word paladin come from?",
+        "answer": "From the Paladins of Charlemagne, the twelve peers of medieval legend, as in the Song of Roland. Roland and Oliver are the best known."
+      }
+    ]
+  }
+}

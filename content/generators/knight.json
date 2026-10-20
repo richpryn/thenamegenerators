@@ -1,0 +1,356 @@
+{
+  "title": "Knight Name Generator",
+  "slug": "knight-name-generator",
+  "icon": "🛡️",
+  "category": "dnd",
+  "published": "2026-10-20",
+  "description": "Knight names built the medieval way: Sir or Dame, a period first name, and a place, an epithet or a knightly order, from Sir Ralph of Blackmoor to Dame Isabel the Unbowed.",
+  "seoKeywords": "knight names, knight name generator, medieval knight names, fantasy knight names, female knight names, dnd knight names, knight titles",
+  "isPopular": false,
+  "filters": {
+    "gender": {
+      "label": "Title",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any",
+        "male": "Sir",
+        "female": "Dame"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "any",
+        "place",
+        "epithet",
+        "order",
+        "name"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "place": "Of a place (Sir Ralph of Blackmoor)",
+        "epithet": "With an epithet (Sir Ralph the Bold)",
+        "order": "Of an order (Knight of the Silver Rose)",
+        "name": "Title and name only"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "gender",
+  "cases": {
+    "male": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "place": {
+          "recipe": "template",
+          "template": "Sir [male] of [places]"
+        },
+        "epithet": {
+          "recipe": "template",
+          "template": "Sir [male] [epithets]"
+        },
+        "order": {
+          "recipe": "template",
+          "template": "Sir [male], Knight of [orders]"
+        },
+        "name": {
+          "recipe": "template",
+          "template": "Sir [male]"
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "Sir [male] of [places]",
+            "Sir [male] [epithets]",
+            "Sir [male], Knight of [orders]"
+          ]
+        }
+      }
+    },
+    "female": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "place": {
+          "recipe": "template",
+          "template": "Dame [female] of [places]"
+        },
+        "epithet": {
+          "recipe": "template",
+          "template": "Dame [female] [epithets]"
+        },
+        "order": {
+          "recipe": "template",
+          "template": "Dame [female], Knight of [orders]"
+        },
+        "name": {
+          "recipe": "template",
+          "template": "Dame [female]"
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "Dame [female] of [places]",
+            "Dame [female] [epithets]",
+            "Dame [female], Knight of [orders]"
+          ]
+        }
+      }
+    },
+    "any": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "place": {
+          "recipe": "template",
+          "template": [
+            "Sir [male] of [places]",
+            "Dame [female] of [places]"
+          ]
+        },
+        "epithet": {
+          "recipe": "template",
+          "template": [
+            "Sir [male] [epithets]",
+            "Dame [female] [epithets]"
+          ]
+        },
+        "order": {
+          "recipe": "template",
+          "template": [
+            "Sir [male], Knight of [orders]",
+            "Dame [female], Knight of [orders]"
+          ]
+        },
+        "name": {
+          "recipe": "template",
+          "template": [
+            "Sir [male]",
+            "Dame [female]"
+          ]
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "Sir [male] of [places]",
+            "Sir [male] [epithets]",
+            "Sir [male], Knight of [orders]",
+            "Dame [female] of [places]",
+            "Dame [female] [epithets]",
+            "Dame [female], Knight of [orders]"
+          ]
+        }
+      }
+    }
+  },
+  "data": {
+    "male": [
+      "Adam",
+      "Alan",
+      "Baldwin",
+      "Bertrand",
+      "Geoffrey",
+      "Gilbert",
+      "Godfrey",
+      "Hugh",
+      "Humphrey",
+      "Ivo",
+      "Jocelin",
+      "Lambert",
+      "Miles",
+      "Nigel",
+      "Osbert",
+      "Payne",
+      "Ralph",
+      "Reginald",
+      "Richard",
+      "Robert",
+      "Roger",
+      "Simon",
+      "Stephen",
+      "Theobald",
+      "Walter",
+      "Warin",
+      "William",
+      "Aymer",
+      "Brian",
+      "Fulk",
+      "Guy",
+      "Hamo",
+      "Henry",
+      "John",
+      "Peter",
+      "Thomas",
+      "Gervase",
+      "Eustace",
+      "Roland",
+      "Raymond"
+    ],
+    "female": [
+      "Adela",
+      "Agnes",
+      "Alice",
+      "Amice",
+      "Avice",
+      "Beatrice",
+      "Cecily",
+      "Constance",
+      "Edith",
+      "Eleanor",
+      "Ela",
+      "Emma",
+      "Isabel",
+      "Joan",
+      "Juliana",
+      "Mabel",
+      "Margery",
+      "Matilda",
+      "Maud",
+      "Nicola",
+      "Petronilla",
+      "Rohese",
+      "Sybil",
+      "Alys",
+      "Clemence",
+      "Denise",
+      "Ermengarde",
+      "Hawise",
+      "Idonea",
+      "Lucy"
+    ],
+    "places": [
+      "Ashcombe",
+      "Blackmoor",
+      "Thornfield",
+      "Ravensworth",
+      "Greyhaven",
+      "Oakhurst",
+      "Stonebridge",
+      "Wyvernmoor",
+      "Highcliff",
+      "Eastmarch",
+      "Coldwater",
+      "Redcastle",
+      "Hollowell",
+      "Dunmere",
+      "Brackenford",
+      "Ironwood",
+      "Westerholt",
+      "Lionsgate",
+      "Kingsbury",
+      "Marrowdale",
+      "Northwold",
+      "Silverbrook",
+      "Hartley",
+      "Whitehall Keep",
+      "Stormhaven",
+      "Ambergate",
+      "Fallowmere",
+      "Wolfsden",
+      "Crowmarsh",
+      "Glenholm"
+    ],
+    "epithets": [
+      "the Bold",
+      "the Black",
+      "the Valiant",
+      "the Just",
+      "the Steadfast",
+      "Ironside",
+      "the Lionhearted",
+      "the Unbowed",
+      "the Red",
+      "the Fair",
+      "the Grim",
+      "the Pious",
+      "the Younger",
+      "the Elder",
+      "Strongbow",
+      "the Silent",
+      "the Faithful",
+      "the Brave",
+      "Longsword",
+      "the Merciful",
+      "the Unyielding",
+      "Shieldbreaker",
+      "the Wanderer",
+      "the White",
+      "the Stern",
+      "Oathkeeper",
+      "Dragonbane",
+      "the Lame",
+      "the Proud",
+      "Greymantle"
+    ],
+    "orders": [
+      "the Silver Rose",
+      "the Gauntlet",
+      "the Dawn",
+      "the White Hart",
+      "the Golden Spur",
+      "the Iron Crown",
+      "the Burning Heart",
+      "the Broken Chain",
+      "the Morning Star",
+      "the Azure Shield",
+      "the Thorn",
+      "the Lantern",
+      "the Grey Wolf",
+      "the Crimson Oak",
+      "the Sacred Flame",
+      "the Watchful Eye",
+      "the Last Light",
+      "the Twin Swords",
+      "the Bridge",
+      "the Hearth"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🛡️ Knight Name Generator",
+      "tagline": "Sir or Dame, a medieval first name, and the place, deed or order they're known by."
+    },
+    "intro": "A knight's name is a short story: a title, a first name, and something that says where they're from or what they've done. Sir Lancelot du Lac is Lancelot \"of the Lake\"; William Marshal was named for his family's office at court. This **knight name generator** builds names the same way, with real medieval first names and a place, an epithet or a knightly order.",
+    "sections": [
+      {
+        "heading": "How knights were named",
+        "content": "<p>Medieval knights rarely had fixed surnames the way we do. They were known by a <strong>byname</strong> that set them apart from all the other Williams and Roberts:</p><ul><li><strong>A place:</strong> where they held land or came from. Rodrigo Díaz de Vivar, El Cid, was from Vivar near Burgos.</li><li><strong>An epithet:</strong> a nickname for a deed or trait. Edmund Ironside, Richard the Lionheart.</li><li><strong>An office or family:</strong> William Marshal, the knight who served five English kings, was named for the marshal's office his father held.</li></ul><p>The first names in this generator are real names used in England and Normandy in the twelfth and thirteenth centuries, from Geoffrey and Fulk to Matilda and Petronilla.</p>"
+      },
+      {
+        "heading": "Sir and Dame",
+        "content": "<p>\"Sir\" is the title for a knight, used with the first name: Sir Ralph, not Sir Blackmoor. Its female equivalent today is <strong>Dame</strong>, the title for women given the same honour in the British system, and it's the natural choice for a fantasy female knight.</p><p>Real medieval women did hold castles and fight. Nicola de la Haye defended Lincoln Castle through two sieges, the second in 1217, and the Order of the Garter admitted women as Ladies of the Garter in its early years.</p>"
+      },
+      {
+        "heading": "Knights of legend and fantasy",
+        "content": "<ul><li><strong>The Round Table:</strong> Sir Gawain, Sir Galahad, Sir Percival and Sir Bedivere, each with a name still used for knights in fiction today.</li><li><strong>Knightly orders:</strong> the Knights Templar, the Hospitallers and the Order of the Garter (founded 1348) gave knights a second name: their order.</li><li><strong>D&amp;D and fantasy:</strong> the Knights of Solamnia in Dragonlance, and the Order of the Gauntlet in the Forgotten Realms. The <em>Of an order</em> format gives your knight an order of their own.</li></ul>"
+      },
+      {
+        "heading": "Making a knight's name yours",
+        "content": "<ul><li><strong>Pick the byname that tells the story.</strong> A knight known by their home is tied to it; a knight known by an epithet has a reputation to live up to, or down.</li><li><strong>Let it change.</strong> A young knight starts as Sir Hugh of Ashcombe and becomes Sir Hugh Dragonbane after the right adventure.</li><li><strong>Add heraldry.</strong> A coat of arms, a colour and an animal (a white hart, a red lion) completes the name, and gives a tavern something to be called.</li></ul><p>For a holy warrior, try the <a href=\"paladin-name-generator.html\">Paladin Name Generator</a>; for more epithets, the <a href=\"epithet-generator.html\">Epithet Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is a female knight called?",
+        "answer": "Today a woman given a knighthood in the British system is a Dame, so \"Dame\" is the usual title for a female knight in fantasy. Historically, a few women were admitted to orders like the Garter as Ladies of the order."
+      },
+      {
+        "question": "Did medieval knights have surnames?",
+        "answer": "Mostly not fixed ones. They were known by bynames: a place (of Blackmoor), an epithet (the Bold) or an office (Marshal), some of which later became family names."
+      },
+      {
+        "question": "Do you use Sir with the first name or the last name?",
+        "answer": "The first name: Sir Ralph, or Sir Ralph of Blackmoor, never Sir Blackmoor."
+      },
+      {
+        "question": "Are the first names real?",
+        "answer": "Yes. They're names used in England and Normandy in the twelfth and thirteenth centuries. The places and orders are invented."
+      }
+    ]
+  }
+}

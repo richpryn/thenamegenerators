@@ -406,6 +406,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Knight Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/knight-name-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Kobold Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/kobold-name-generator.html</loc>
@@ -444,6 +451,13 @@
   <!-- Generator: Orc Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/orc-name-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Paladin Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/paladin-name-generator.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
