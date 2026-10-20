@@ -4,7 +4,7 @@
   "icon": "💼",
   "category": "organizations",
   "published": "2025-11-30",
-  "description": "Generate powerful and memorable business names from a curated word bank. Perfect for startups, companies, and brand naming.",
+  "description": "Strong one-word starting points for a business name, in 10 themes from aspirational to tech, plus how to turn one into a name and check it's free to use.",
   "seoKeywords": "business names, business name generator, company names, startup names, brand names, business name ideas, company name generator",
   "isPopular": true,
   "popularRank": 9,
@@ -2033,47 +2033,43 @@
   "article": {
     "hero": {
       "title": "💼 Business Name Generator",
-      "tagline": "Craft your brand identity with powerful words that inspire, connect, and resonate. From aspirational heights to natural elegance, find the perfect name for your business."
+      "tagline": "Strong one-word starting points for your business name, and how to check they're free to use."
     },
-    "intro": "Business names are the foundation of your brand identity, communicating your company's values, personality, and market position in just one word. From the aspirational power of \"Apex\" to the natural elegance of \"Ember\" or the mythological strength of \"Phoenix,\" business names tell stories about your company's mission, vision, and character. Our **business name generator** offers nearly 2,000 powerful words across 10 distinct categories, helping you find the perfect name for your startup, company, or brand.",
+    "intro": "A good business name usually starts with one strong word. This **business name generator** gives you those words: {{names}} of them across 10 themes, from Summit and Ember to Pixel and Velvet. Few will be your finished name on their own. Think of them as the root you build on, then check the result is free to use before you print anything.",
     "sections": [
       {
-        "heading": "The Power and Meaning of Business Names",
-        "content": "<p>Business names function as brand identifiers, communicating your company's values, personality, and market position in just one word. <strong>Aspirational & Upward</strong> words (Apex, Zenith, Summit, Pinnacle) suggest ambition, achievement, and excellence. <strong>Nature & Elements</strong> words (Ember, Flame, Crystal, Diamond) evoke natural beauty, strength, and elemental power. <strong>Powerful & Dynamic</strong> words (Thunder, Lightning, Storm, Surge) communicate energy, force, and momentum.</p><p><strong>Mythological & Legendary</strong> words (Phoenix, Dragon, Griffin, Atlas) suggest legendary status, transformation, and mythical power. <strong>Abstract & Conceptual</strong> words (Axiom, Paradox, Enigma, Quantum) indicate innovation, complexity, and intellectual depth. <strong>Modern & Tech-Inspired</strong> words (Pixel, Vector, Matrix, Neural) suggest technology, innovation, and digital expertise. <strong>Animals & Creatures</strong> words (Wolf, Bear, Eagle, Raven) communicate strength, wisdom, and natural power. <strong>Celestial & Cosmic</strong> words (Nebula, Galaxy, Cosmos, Supernova) suggest vastness, wonder, and cosmic scale. <strong>Movement & Flow</strong> words (Glide, Stream, Flow, Pulse) indicate motion, progress, and dynamic energy. <strong>Materials & Textures</strong> words (Silk, Velvet, Marble, Steel) suggest quality, luxury, and material excellence.</p>"
+        "heading": "Turning a word into a business name",
+        "content": "<p>Single dictionary words are almost always registered by someone, somewhere. Building on them makes your name both available and memorable:</p><ul><li><strong>Word + what you do</strong>: Summit Plumbing, Ember Bakery. Clear and easy to find, but harder to protect.</li><li><strong>Two words together</strong>: Emberlane, Wolfstone, Tideworks. Distinctive, and often easier to get as a domain.</li><li><strong>Word + word</strong>: Ember &amp; Oak, Velvet &amp; Vine. Warm and crafted; popular with food, interiors and gifts.</li><li><strong>Place + word</strong>: Severn Summit, Northgate Pixel. Local, and you're less likely to clash with a business elsewhere.</li><li><strong>The word, a little changed</strong>: Summitly, Pixelry, Flowe. Brandable, but check people can spell it after hearing it once.</li></ul>"
       },
       {
-        "heading": "Business Name Categories and Their Appeal",
-        "content": "<p>Each category offers distinct naming opportunities that communicate specific brand values and market positions. <strong>Aspirational & Upward</strong> names emphasize achievement, excellence, and reaching the top (Apex, Zenith, Summit, Pinnacle). <strong>Nature & Elements</strong> names focus on natural beauty, elemental power, and organic quality (Ember, Flame, Crystal, Diamond). <strong>Powerful & Dynamic</strong> names communicate energy, force, and momentum (Thunder, Lightning, Storm, Surge).</p><p><strong>Mythological & Legendary</strong> names suggest legendary status, transformation, and mythical power (Phoenix, Dragon, Griffin, Atlas). <strong>Abstract & Conceptual</strong> names indicate innovation, complexity, and intellectual depth (Axiom, Paradox, Enigma, Quantum). <strong>Modern & Tech-Inspired</strong> names suggest technology, innovation, and digital expertise (Pixel, Vector, Matrix, Neural). <strong>Animals & Creatures</strong> names communicate strength, wisdom, and natural power (Wolf, Bear, Eagle, Raven). <strong>Celestial & Cosmic</strong> names suggest vastness, wonder, and cosmic scale (Nebula, Galaxy, Cosmos, Supernova). <strong>Movement & Flow</strong> names indicate motion, progress, and dynamic energy (Glide, Stream, Flow, Pulse). <strong>Materials & Textures</strong> names suggest quality, luxury, and material excellence (Silk, Velvet, Marble, Steel).</p>"
+        "heading": "Which theme suits your business?",
+        "content": "<ul><li><strong>Aspirational</strong> (Apex, Summit, Ascend): coaching, consulting, finance, education</li><li><strong>Nature and elements</strong> (Ember, Spark, Ash): food and drink, crafts, energy</li><li><strong>Powerful and dynamic</strong> (Thunder, Surge, Tempest): fitness, sport, marketing</li><li><strong>Myths and legends</strong> (Phoenix, Griffin, Kraken): games, creative studios, events</li><li><strong>Abstract</strong> (Axiom, Cipher, Enigma): software, security, research</li><li><strong>Modern tech</strong> (Pixel, Vector, Circuit): tech, digital agencies, design</li><li><strong>Animals</strong> (Wolf, Lynx, Jaguar): outdoors, pets, sportswear</li><li><strong>Celestial</strong> (Nebula, Quasar, Pulsar): wellness, science, creative tech</li><li><strong>Movement and flow</strong> (Glide, Drift, Current): travel, logistics, wellbeing</li><li><strong>Materials and textures</strong> (Silk, Velvet, Linen): fashion, interiors, beauty</li></ul>"
       },
       {
-        "heading": "How to Use Business Names",
-        "content": "<p>Business names work excellently for:</p><ul><li><strong>Startups:</strong> Find a memorable, brandable name that stands out in the competitive market</li><li><strong>Companies:</strong> Choose a powerful name that reflects your company's values, mission, and market position</li><li><strong>Brand Naming:</strong> Select a name that works well for logos, marketing materials, and brand identity</li><li><strong>Creative Projects:</strong> Name businesses in stories, games, or creative writing projects</li></ul><p>When choosing a name, consider your industry, target audience, brand values, and market position. Category-specific names work well for niche markets, while broader names suit diverse businesses. The generator prevents similar words from appearing together, ensuring variety in your results.</p>"
+        "heading": "Check it's free before you fall for it",
+        "content": "<p>The names here are free to use, but that doesn't mean nobody else is using them. Before you commit, run through these checks:</p><ul><li><strong>Company register.</strong> In the UK, Companies House has a free company name availability checker. You can't register a name that's the \"same as\" an existing one, and some words (like Royal, Bank, British and Charity) need permission. In the US, check your state's business register.</li><li><strong>Trade marks.</strong> Search the UK IPO, USPTO (US) or EUIPO (EU) trade mark databases. Trade marks are registered for particular goods and services, so a name taken by a software company might be fine for a bakery. Search the classes you'll trade in.</li><li><strong>Domain and social handles.</strong> See if the .com (or .co.uk) and the handles you need are free. If not, a small change to the name is easier now than later.</li><li><strong>A quick search.</strong> Search the name with your industry and town. If a business nearby does the same thing under a similar name, keep looking.</li></ul><p>This is a starting point, not legal advice. If the name will carry a big investment, a trade mark attorney can check it properly.</p>"
       },
       {
-        "heading": "Well-Known Business Names in Literature and Media",
-        "content": "<p>Business names have been immortalized through real-world companies and brands. These iconic businesses demonstrate the power of well-chosen business names:</p><ul><li><strong>Apple:</strong> The tech giant, Apple's name demonstrates how business names can be simple, memorable, and distinctive, with a name that's both accessible and iconic.</li><li><strong>Amazon:</strong> The e-commerce giant, Amazon's name suggests scale and power, with a name that's both memorable and evocative of the company's vast reach.</li><li><strong>Various Successful Businesses:</strong> Successful businesses typically have names that are memorable, distinctive, and reflective of their brand identity and values.</li></ul><p>These iconic names demonstrate business naming conventions: names that are memorable and distinctive, names that reflect brand identity, and names that work across different markets and contexts. When creating your own business names, consider your brand identity, target market, and how the name reflects your business's values and purpose.</p>"
+        "heading": "What makes a name work",
+        "content": "<ul><li><strong>It passes the phone test.</strong> Can someone spell it after hearing it once?</li><li><strong>It's short.</strong> One to three syllables fits on a sign, a van and an app icon.</li><li><strong>It leaves room to grow.</strong> \"Summit Cakes\" is tied to cakes; \"Summit Kitchen\" can sell anything you bake or cook.</li><li><strong>It's distinctive.</strong> Purely descriptive names (\"Best Plumbing\") are hard to remember and hard to protect as a trade mark.</li></ul>"
       }
     ],
     "faqs": [
       {
-        "question": "How does the similarity avoidance work?",
-        "answer": "The generator prevents similar business names from appearing in the same batch by checking if words start with the same 3-4 characters. This ensures that words like 'Apex' and 'Acme' or 'Phoenix' and 'Phoebe' don't appear together, providing variety and preventing confusion."
+        "question": "Can I use these names for my business?",
+        "answer": "Yes, they're free to use and you don't need to credit the site. Just check the name you settle on isn't already taken or trademarked in your area and industry."
       },
       {
-        "question": "How do I choose the right category?",
-        "answer": "Choose based on your brand values and market position: Aspirational & Upward for achievement-focused brands, Nature & Elements for natural/organic brands, Powerful & Dynamic for energy/force brands, Mythological & Legendary for transformative brands, Abstract & Conceptual for innovative brands, Modern & Tech-Inspired for technology brands, Animals & Creatures for strength/wisdom brands, Celestial & Cosmic for vastness/wonder brands, Movement & Flow for dynamic/progressive brands, or Materials & Textures for quality/luxury brands."
+        "question": "How do I check a business name is available?",
+        "answer": "In the UK, use the Companies House name availability checker, then search the UK IPO trade mark database. In the US, check your state's business register and the USPTO trade mark search. Then check the domain and social handles."
       },
       {
-        "question": "What makes a good business name?",
-        "answer": "A good business name is memorable, easy to pronounce, reflects your brand values and market position, appeals to your target audience, works well for branding and marketing, and stands out in the competitive market. It should communicate your company's personality and character in just one word."
+        "question": "Why are the names single words?",
+        "answer": "Single words are the strongest starting point. Add what you do, a second word or a place, and you get a name that is both distinctive and more likely to be available."
       },
       {
-        "question": "Can I use these names for my actual business?",
-        "answer": "Yes, but always check trademark availability, domain availability, and business registration availability before using any name for your actual business. These names are provided as inspiration and starting points for your own creative naming process."
-      },
-      {
-        "question": "Can I combine these words with industry terms?",
-        "answer": "Yes! These words work excellently when combined with industry terms. For example, 'Apex Solutions', 'Phoenix Consulting', 'Ember & Stone', or 'Quantum Flux'. The words are designed to be versatile and work across all industries."
+        "question": "Should my business name say what I do?",
+        "answer": "It's a trade-off. A descriptive name tells customers what you do straight away but is harder to trade mark and to stand out with. An abstract name needs more explaining but is easier to own. Many businesses split the difference: a distinctive word plus a plain one, like Ember Bakery."
       }
     ]
   }

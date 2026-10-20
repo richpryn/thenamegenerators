@@ -230,7 +230,7 @@
       "title": "⚔️ Guild Name Generator",
       "tagline": "Generate fantasy guild names perfect for D&D, worldbuilding, and fantasy writing. Combine thematic components with organizational titles or choose simple iconic names."
     },
-    "intro": "Guild names define the identity, purpose, and power of organizations in fantasy worlds. From the legendary 'Order of the Dragon' to the mysterious 'Guild of Shadows', guild names tell stories about their members, missions, and traditions. Our **guild name generator** combines over 150 thematic prefixes with 20 organizational title formats, plus powerful single-word aliases, creating authentic and memorable guild names for any fantasy setting.",
+    "intro": "Guild names define the identity, purpose, and power of organizations in fantasy worlds. From the legendary 'Order of the Dragon' to the mysterious 'Guild of Shadows', guild names tell stories about their members, missions, and traditions. Our **guild name generator** combines {{count:prefixes}} thematic prefixes with {{count:suffixes}} title formats, plus powerful single-word aliases, creating authentic and memorable guild names for any fantasy setting.",
     "sections": [
       {
         "heading": "The Power of Guild Names",
@@ -238,11 +238,11 @@
       },
       {
         "heading": "Guild Name Categories",
-        "content": "<p>The generator includes over 150 thematic prefixes across multiple categories:</p><ul><li><strong>Animals & Mythic:</strong> Wolf, Dragon, Eagle, Griffin, Phoenix, Basilisk, Hydra, Wyvern, and more. Perfect for guilds that identify with powerful creatures.</li><li><strong>Nature & Elemental:</strong> Oak, Storm, Thunder, Frost, River, Ocean, Blaze, Void, and more. Ideal for guilds connected to natural forces.</li><li><strong>Weapons & Combat:</strong> Sword, Blade, Shield, Aegis, Hammer, Spear, and more. Great for warrior guilds and military orders.</li><li><strong>Virtues & Values:</strong> Honor, Valor, Courage, Justice, Faith, Wisdom, Loyalty, and more. Perfect for noble orders and righteous organizations.</li><li><strong>Colors & Materials:</strong> Crimson, Azure, Emerald, Iron, Steel, Mithril, Diamond, and more. Ideal for craft guilds and material-focused organizations.</li><li><strong>Time & Abstract:</strong> Dawn, Dusk, Eclipse, Dream, Oath, Destiny, Balance, Chaos, Order, and more. Great for mystical and philosophical guilds.</li></ul>"
+        "content": "<p>The generator includes {{count:prefixes}} thematic prefixes across multiple categories:</p><ul><li><strong>Animals & Mythic:</strong> Wolf, Dragon, Eagle, Griffin, Phoenix, Basilisk, Hydra, Wyvern, and more. Perfect for guilds that identify with powerful creatures.</li><li><strong>Nature & Elemental:</strong> Oak, Storm, Thunder, Frost, River, Ocean, Blaze, Void, and more. Ideal for guilds connected to natural forces.</li><li><strong>Weapons & Combat:</strong> Sword, Blade, Shield, Aegis, Hammer, Spear, and more. Great for warrior guilds and military orders.</li><li><strong>Virtues & Values:</strong> Honor, Valor, Courage, Justice, Faith, Wisdom, Loyalty, and more. Perfect for noble orders and righteous organizations.</li><li><strong>Colors & Materials:</strong> Crimson, Azure, Emerald, Iron, Steel, Mithril, Diamond, and more. Ideal for craft guilds and material-focused organizations.</li><li><strong>Time & Abstract:</strong> Dawn, Dusk, Eclipse, Dream, Oath, Destiny, Balance, Chaos, Order, and more. Great for mystical and philosophical guilds.</li></ul>"
       },
       {
         "heading": "How Guild Names Work",
-        "content": "<p>The generator creates names using two distinct methods:</p><ul><li><strong>Compound Names:</strong> Combines a thematic prefix with an organizational title format. The prefix replaces '[Name]' in the title format, creating names like 'Order of the Dragon', 'Guild of Shadows', 'Brotherhood of the Valiant', or 'The Crimson Syndicate'. This creates authentic, traditional guild names that feel integrated into fantasy worlds.</li><li><strong>Simple Names:</strong> Selects a powerful single-word alias from the list. 50% of simple names are prefixed with 'The' (like 'The Sentinel' or 'The Vanguard'), while others stand alone (like 'Arcanum' or 'Legion'). These names work excellently for iconic, minimalist guild identities.</li></ul><p>With 20 organizational title formats and over 150 prefixes, the generator can create thousands of unique compound names, ensuring variety and authenticity in your worldbuilding.</p>"
+        "content": "<p>The generator creates names using two distinct methods:</p><ul><li><strong>Compound Names:</strong> Combines a thematic prefix with an organizational title format. The prefix replaces '[Name]' in the title format, creating names like 'Order of the Dragon', 'Guild of Shadows', 'Brotherhood of the Valiant', or 'The Crimson Syndicate'. This creates authentic, traditional guild names that feel integrated into fantasy worlds.</li><li><strong>Simple Names:</strong> Selects a powerful single-word alias from the list. 50% of simple names are prefixed with 'The' (like 'The Sentinel' or 'The Vanguard'), while others stand alone (like 'Arcanum' or 'Legion'). These names work excellently for iconic, minimalist guild identities.</li></ul><p>With {{count:suffixes}} title formats and {{count:prefixes}} prefixes, the generator can create over {{combinations}} different names, ensuring variety and authenticity in your worldbuilding.</p>"
       },
       {
         "heading": "How to Use Guild Names",
@@ -264,7 +264,7 @@
       },
       {
         "question": "How many unique guild names can be generated?",
-        "answer": "With over 150 prefixes and 20 organizational title formats, the generator can create over 3,000 unique compound names. Combined with 25 single-word aliases, you have access to thousands of unique guild names for your fantasy world."
+        "answer": "Over {{combinations}} in total: {{count:prefixes}} prefixes paired with {{count:suffixes}} title formats, plus {{count:single_aliases}} single-word names that can appear with or without 'The'."
       },
       {
         "question": "Can I use these names for any fantasy setting?",

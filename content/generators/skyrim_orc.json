@@ -4,7 +4,7 @@
   "icon": "🧌",
   "category": "pop_culture",
   "published": "2025-11-30",
-  "description": "Generate authentic Skyrim orc names from The Elder Scrolls V: Skyrim. Perfect for creating Orsimer characters, NPCs, and worldbuilding in Tamriel.",
+  "description": "Generate Skyrim orc names the way the game builds them: a first name plus gro- (son of) or gra- (daughter of) and a parent's name, like Urag gro-Shub.",
   "seoKeywords": "skyrim orc names, elder scrolls orc names, orsimer names, skyrim name generator, tes orc names, skyrim character names",
   "isPopular": true,
   "popularRank": 4,
@@ -15,10 +15,41 @@
         "male",
         "female"
       ]
+    },
+    "format": {
+      "label": "Name Format",
+      "options": [
+        "full_name",
+        "first_name"
+      ],
+      "optionLabels": {
+        "full_name": "Full name (with gro-/gra-)",
+        "first_name": "First name only"
+      }
     }
   },
-  "recipe": "pick",
-  "from": "{gender}",
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "full_name": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "male": {
+          "recipe": "template",
+          "template": "[male] gro-[male]"
+        },
+        "female": {
+          "recipe": "template",
+          "template": "[female] gra-[male]"
+        }
+      }
+    },
+    "first_name": {
+      "recipe": "pick",
+      "from": "{gender}"
+    }
+  },
   "data": {
     "male": [
       "Ghorzug",
@@ -316,43 +347,43 @@
   "article": {
     "hero": {
       "title": "⚔️ Skyrim Orc Name Generator",
-      "tagline": "Generate authentic Skyrim orc names from The Elder Scrolls V: Skyrim. Perfect for creating Orsimer characters, NPCs, and worldbuilding in Tamriel."
+      "tagline": "Orc names built the way Skyrim builds them, from Urag gro-Shub to Ghorza gra-Bagol."
     },
-    "intro": "The Orsimer, known as Orcs in the common tongue, are one of the most distinctive races in Tamriel. Their names reflect the harsh, honor-bound culture of the strongholds scattered across Skyrim and beyond. Our **Skyrim orc name generator** draws directly from the naming conventions established in The Elder Scrolls V: Skyrim, creating authentic Orsimer names that feel like they belong in the world of Tamriel.",
+    "intro": "Every orc you meet in Skyrim has the same kind of name: a short, hard-edged first name, then <strong>gro-</strong> or <strong>gra-</strong> and the name of a parent. Once you know the pattern you'll spot it everywhere, from the librarian at the College of Winterhold to the smiths of Markarth. This **Skyrim orc name generator** builds full names that way, or gives you just the first name if you'd rather add the rest yourself.",
     "sections": [
       {
-        "heading": "The Culture and Meaning of Skyrim Orc Names",
-        "content": "<p>Skyrim orc names reflect the unique cultural identity of the Orsimer, a race that has carved out a place in Tamriel through strength, honor, and tradition. Unlike generic fantasy orcs, Skyrim's Orsimer have a distinct naming system that emphasizes guttural consonants, hard sounds, and tribal identity. Male names typically end in harsh consonants like <em>-k</em>, <em>-g</em>, <em>-th</em>, or <em>-sh</em> (Ghorzug, Mornak, Durzoth), while female names often incorporate similar sounds but may add softer endings like <em>-a</em>, <em>-ra</em>, or <em>-sha</em> (Bolarza, Urzoga, Ghorza).</p><p>The naming patterns reflect the Orsimer's stronghold culture, where honor, strength, and loyalty to the clan are paramount. Names like <em>Urag gro-Shub</em> (the librarian at the College of Winterhold) and <em>Ghorza gra-Bagol</em> (the blacksmith in Markarth) demonstrate the traditional naming structure: personal name followed by the clan identifier (<em>gro-</em> for males, <em>gra-</em> for females).</p>"
+        "heading": "What gro- and gra- mean",
+        "content": "<p>The second half of a Skyrim orc's name is about family. <strong>gro-</strong> means \"son of\" and <strong>gra-</strong> means \"daughter of\", and the name that follows is a parent's, most often the father's. So <em>Urag gro-Shub</em>, who looks after the Arcanaeum at the College of Winterhold, is Urag, son of Shub.</p><p>You can see both halves of the pattern side by side in Markarth, where the smiths <em>Moth gro-Bagol</em> and <em>Ghorza gra-Bagol</em> share the same family name with a different prefix.</p><p>The prefix is lower case and joined to the parent's name with a hyphen. In the generator, full names follow the same rule: men get gro-, women get gra-, and the parent's name comes from the list of male first names.</p>"
       },
       {
-        "heading": "Male and Female Skyrim Orc Names",
-        "content": "<p>Male Skyrim orc names emphasize strength and power through harsh, guttural sounds. Names like <strong>Ghorzug</strong>, <strong>Mornak</strong>, and <strong>Durzoth</strong> use hard consonants to convey the warrior culture of the Orsimer. These names work well for stronghold chiefs, warriors, blacksmiths, and any Orsimer character who embodies traditional values.</p><p>Female Skyrim orc names maintain the powerful, guttural quality while incorporating softer endings. Names like <strong>Bolarza</strong>, <strong>Urzoga</strong>, and <strong>Ghorza</strong> reflect the strength and independence of Orsimer women, who are equal partners in stronghold life. These names work for warriors, crafters, merchants, and clan leaders.</p><p>Both male and female names in Skyrim follow consistent phonetic patterns that make them instantly recognizable as Orsimer. The use of <em>z</em>, <em>g</em>, <em>k</em>, <em>r</em>, and <em>th</em> sounds creates a distinctive linguistic identity that sets Skyrim orcs apart from other fantasy orc traditions.</p>"
+        "heading": "Names in the orc strongholds",
+        "content": "<p>Most of Skyrim's orcs live in four strongholds, each run by a chief: Dushnikh Yal and Mor Khazgur in the Reach, Largashbur in the Rift, and Narzulbur in Eastmarch. Life there follows the Code of Malacath, the Daedric Prince the orcs worship.</p><p>Stronghold names come with roles attached. There's the chief, his wives, a forge-wife who keeps the smithy (Gharol at Dushnikh Yal, for example) and a wise-woman who speaks for Malacath. If you're naming a character from a stronghold, it's worth deciding their role too, since it says as much about them as the name does.</p><p>Some orcs also earn an epithet. Borgakh the Steel Heart, the chief's daughter at Mor Khazgur who can become your follower, goes by her deed-name rather than a gro-/gra- surname. An epithet suits a character with a reputation: a champion, an exile, a famous smith.</p>"
       },
       {
-        "heading": "How to Use Skyrim Orc Names",
-        "content": "<p>When creating Skyrim orc characters, consider their role in Orsimer society. <strong>Stronghold orcs</strong> typically use traditional names that emphasize clan identity and honor. <strong>City orcs</strong> (those who have left the strongholds) may still use traditional names but might be more open to interaction with other races. <strong>Warriors</strong> often have names that sound particularly fierce (Ghorzug, Tharzok, Kragnak), while <strong>crafters and merchants</strong> might have slightly softer-sounding names (Urag, Lurbuk, Ghorza).</p><p>For worldbuilding, remember that Orsimer names are often followed by clan identifiers. A full name might be <em>Ghorzug gro-Maknul</em> (male) or <em>Ghorza gra-Bagol</em> (female), where the clan name reflects the stronghold or family lineage. This naming convention reinforces the importance of clan identity in Orsimer culture.</p>"
+        "heading": "How the first names sound",
+        "content": "<p>Skyrim orc first names are short, usually one or two syllables, and lean on hard sounds: g, k, z, sh and rough vowels like u and o.</p><ul><li><strong>Male names</strong> mostly end in a hard consonant: <em>-ash</em>, <em>-ak</em>, <em>-uk</em>, <em>-ag</em>, <em>-og</em>, as in Durgash, Makrag and Lurbuk.</li><li><strong>Female names</strong> nearly always end in <em>-a</em>, especially <em>-ra</em> and <em>-ha</em>, as in Bolarza, Urzoga and Magzura. Same sounds, softer ending.</li></ul><p>A few names in the generator, like Urag and Ghorza, appear in the game itself. The rest are new names built from the same sounds, so they'll fit in without belonging to anyone you'll meet in Tamriel.</p>"
       },
       {
-        "heading": "Well-Known Skyrim orc Names in Literature and Media",
-        "content": "<p>Skyrim orc names have been immortalized through The Elder Scrolls V: Skyrim and the broader Elder Scrolls universe. These iconic characters demonstrate the power of well-chosen Skyrim orc names:</p><ul><li><strong>Urag gro-Shub (Skyrim):</strong> The orc librarian at the College of Winterhold, Urag's name follows Skyrim's orc naming conventions with the 'gro-' prefix indicating clan affiliation. His surname 'Shub' reflects his scholarly nature.</li><li><strong>Gharol (Skyrim):</strong> A female orc blacksmith in Markarth, Gharol's name demonstrates how Skyrim orc names can be strong yet accessible, fitting the game's accessible naming style.</li><li><strong>Borgakh the Steel Heart (Skyrim):</strong> A potential follower, Borgakh's name combines a strong first name with an epithet that reflects her warrior nature and unbreakable spirit.</li><li><strong>Lob (Skyrim):</strong> The orc chief of Largashbur, Lob's short, punchy name reflects the direct, no-nonsense nature of orc leadership in Skyrim.</li><li><strong>Gat gro-Shargakh (Skyrim):</strong> An orc found in various locations, Gat's name shows the 'gro-' clan prefix system that Skyrim uses for orc surnames.</li><li><strong>Moth gro-Bagol (Skyrim):</strong> The orc blacksmith in Markarth, Moth's name demonstrates the variety in Skyrim orc naming while maintaining the clan prefix system.</li></ul><p>These iconic names demonstrate Skyrim's orc naming conventions: the 'gro-' prefix system for clan surnames, strong first names, and epithets that reflect deeds or characteristics. When creating your own Skyrim-style orc names, consider the clan system and how names reflect the orc's role in their stronghold community.</p>"
+        "heading": "Putting a name together",
+        "content": "<ul><li><strong>Start with the first name.</strong> Say it out loud: Skyrim orc names are meant to be barked across a stronghold, not whispered.</li><li><strong>Pick the parent.</strong> The parent's name hints at family history. A character named after a famous chief carries that reputation with them, for better or worse.</li><li><strong>Add an epithet if they've earned one.</strong> \"the Steel Heart\", \"the Unbroken\", \"Ironhand\": short and about something they did or are known for.</li><li><strong>Think about where they live.</strong> An orc raised in a city, like Urag in Winterhold, still uses gro-/gra-, but a stronghold orc's name tells you which chief they answer to.</li></ul>"
       }
     ],
     "faqs": [
       {
-        "question": "What's the difference between Skyrim orc names and other fantasy orc names?",
-        "answer": "Skyrim orc names follow the specific naming conventions of The Elder Scrolls universe, emphasizing guttural consonants and hard sounds that reflect Orsimer culture. They're designed to feel authentic to Tamriel and the Elder Scrolls lore, rather than generic fantasy orc names."
+        "question": "What does gro- mean in Skyrim orc names?",
+        "answer": "\"Son of.\" Its female form, gra-, means \"daughter of\". The name after it is a parent's, most often the father's, so Urag gro-Shub is Urag, son of Shub."
       },
       {
-        "question": "How do I use clan names with Skyrim orc names?",
-        "answer": "Traditional Orsimer names include a clan identifier: <em>gro-</em> for males (e.g., Urag gro-Shub) and <em>gra-</em> for females (e.g., Ghorza gra-Bagol). The clan name typically reflects the stronghold or family lineage. You can combine generated names with clan identifiers for full, authentic Skyrim orc names."
+        "question": "Do I have to use gro- or gra-?",
+        "answer": "No. Almost every orc in Skyrim has one, so it's the most authentic choice, but an orc known by a deed-name (like Borgakh the Steel Heart) can drop it. Set Name Format to \"First name only\" if you want to build the rest yourself."
       },
       {
-        "question": "Can I use these names for other Elder Scrolls games?",
-        "answer": "Yes! While these names are specifically from Skyrim, the naming conventions are consistent across Elder Scrolls games. These names will work well for Orsimer characters in Oblivion, Morrowind, ESO, or any Elder Scrolls setting."
+        "question": "Are these names from the game?",
+        "answer": "A few first names, such as Urag and Ghorza, are. Most are new names made from the same sounds, so you can use them without borrowing a character the player has already met."
       },
       {
-        "question": "What makes a Skyrim orc name authentic?",
-        "answer": "Authentic Skyrim orc names feature guttural consonants (g, k, z, r, th), hard sounds, and consistent phonetic patterns. Male names typically end in harsh consonants, while female names may add softer endings while maintaining power. The names should feel like they belong in the world of Tamriel and reflect Orsimer culture."
+        "question": "Can I use these names in other Elder Scrolls games?",
+        "answer": "Yes. The gro-/gra- pattern is how orcs are named across the Elder Scrolls series, so the names work just as well for Oblivion, Elder Scrolls Online or your own Tamriel campaign."
       }
     ]
   }

@@ -507,7 +507,7 @@
       "title": "☕ Cafe Name Generator",
       "tagline": "Generate unique cafe names in various styles: short & punchy, French inspired, Italian inspired, creative & unique, cozy & homey, nature inspired, whimsical & playful, and modern & trendy. Perfect for opening a coffee shop, business naming, or creative projects."
     },
-    "intro": "Cafe names capture the essence of atmosphere, culture, and experience in just a few words. From the elegant simplicity of \"Cuppa\" to the sophisticated charm of \"Café Lumière,\" cafe names tell stories about the space, the coffee, and the community they serve. Our **cafe name generator** offers 500 unique names across 8 distinct styles, helping you find the perfect name for your coffee shop, whether you're opening a cozy neighborhood spot or a trendy urban cafe.",
+    "intro": "Cafe names capture the essence of atmosphere, culture, and experience in just a few words. From the elegant simplicity of \"Cuppa\" to the sophisticated charm of \"Café Lumière,\" cafe names tell stories about the space, the coffee, and the community they serve. Our **cafe name generator** offers {{names}} names across 8 styles, helping you find the perfect name for your coffee shop, whether you're opening a cozy neighborhood spot or a trendy urban cafe.",
     "sections": [
       {
         "heading": "The Power and Meaning of Cafe Names",

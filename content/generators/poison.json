@@ -325,7 +325,7 @@
       },
       {
         "question": "How many unique poison names does the generator provide?",
-        "answer": "The generator provides over 200 base names and 80 descriptors, creating thousands of unique poison name combinations. Each combination follows the '[name], [descriptor]' format, ensuring variety and memorability."
+        "answer": "{{count:baseNames}} base names and {{count:descriptors}} descriptors, combined as '[name], [descriptor]', give over {{combinations}} different poison names."
       },
       {
         "question": "Can I use these names for player characters' poisons?",

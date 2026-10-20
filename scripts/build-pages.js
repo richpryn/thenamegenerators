@@ -14,7 +14,7 @@
 const fs = require('fs');
 const path = require('path');
 const { execFileSync } = require('child_process');
-const { loadContent, validate } = require('./content');
+const { loadContent, validate, withCounts, countNames, countCombinations } = require('./content');
 const { filtersHtml, optionLabel } = require('../lib/page.js');
 const RecipeEngine = require('../lib/recipe-engine.js');
 
@@ -56,12 +56,17 @@ function lastChanged(file) {
 
 const latest = (dates) => dates.filter(Boolean).sort().pop() || TODAY;
 
-// Article text may use **bold**; turn it into HTML (or drop it for plain text).
+// Article text may use **bold** and *italic*; turn them into HTML (or drop
+// them for plain text).
+const ITALIC = /(^|[^*\w])\*(?!\*)([^*\s][^*]*?)\*(?!\*)/g;
 function markdownBold(html) {
-  return String(html || '').replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  return String(html || '')
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(ITALIC, '$1<em>$2</em>');
 }
 function plainText(text) {
-  return String(text || '').replace(/\*\*/g, '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+  return String(text || '').replace(/\*\*/g, '').replace(ITALIC, '$1$2')
+    .replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
 // JSON for a <script> block: "<" escaped so data can't close the tag.
@@ -160,6 +165,80 @@ function exampleNames(generator) {
       .join(' · '),
     names: engine.generate({ ...textValues, ...combo }, perGroup),
   }));
+}
+
+/**
+ * "How the X works": written from the generator's own filters and lists, so
+ * it's always accurate. Shows each dropdown's choices, with a sample name for
+ * each format when the format changes how names are built.
+ */
+function howItWorksHtml(generator) {
+  const filters = generator.filters || {};
+  const engine = RecipeEngine.createGenerator(generator, { random: seededRandom(generator.slug + ':how') });
+  const names = countNames(generator.data);
+  const combinations = countCombinations(generator);
+  const label = (f, opt) => optionLabel(f, opt).replace(/\s*\(.*\)\s*$/, '');
+  const defaults = {};
+  for (const [k, f] of Object.entries(filters)) defaults[k] = f.type === 'text' ? (f.example || f.default || '') : f.options[0];
+
+  // "names", or "epithets" for the Epithet Generator
+  const noun = /\bNames?\b/.test(generator.title) ? 'names' : pluralNoun(generator).split(' ').pop().toLowerCase();
+  const parts = [];
+  parts.push(combinations > names
+    ? `<p>It works from ${names.toLocaleString('en-GB')} hand-picked ${noun} and name parts, which combine into over ${roundDownNumber(combinations)} possible results.</p>`
+    : `<p>It picks from a list of ${names.toLocaleString('en-GB')} hand-picked ${noun}.</p>`);
+
+  const choices = [];
+  const keys = Object.keys(filters);
+  keys.forEach((key, i) => {
+    const f = filters[key];
+    if (f.type === 'text') {
+      choices.push(`<li><strong>${escapeHtml(f.label)}:</strong> type a name and it's built into every result${f.default ? ` (leave it blank to get "${escapeHtml(f.default)}")` : ''}.</li>`);
+      return;
+    }
+    // A switch on this filter changes how names are built: show a sample of each
+    const shapes = generator.recipe === 'switch' && generator.on === key;
+    if (shapes) {
+      choices.push(`<li><strong>${escapeHtml(f.label)}:</strong><ul>${f.options.map(opt => {
+        const [sample] = engine.generate({ ...defaults, [key]: opt }, 1);
+        return `<li>${escapeHtml(label(f, opt))}, e.g. <em>${escapeHtml(sample)}</em></li>`;
+      }).join('')}</ul></li>`);
+    } else {
+      choices.push(`<li><strong>${escapeHtml(f.label)}:</strong> ${f.options.map(o => escapeHtml(label(f, o))).join(', ')}.</li>`);
+    }
+    // Options that only exist for some earlier choices, grouped:
+    // "Male and Female: Fire, Ice...; Neutral: Primordial..."
+    const earlier = keys[i - 1];
+    if (i > 0 && filters[earlier].type !== 'text') {
+      const ef = filters[earlier];
+      const groups = new Map();
+      for (const opt of ef.options) {
+        const avail = engine.availableOptions(key, { ...defaults, [earlier]: opt }).map(o => label(f, o)).join(', ');
+        groups.set(avail, (groups.get(avail) || []).concat(label(ef, opt)));
+      }
+      if (groups.size > 1) {
+        const and = (list) => list.length > 1 ? list.slice(0, -1).join(', ') + ' and ' + list[list.length - 1] : list[0];
+        if (!shapes) choices.pop(); // replace the flat list with the grouped one
+        choices.push(`<li><strong>${escapeHtml(f.label)}:</strong> depends on the ${escapeHtml(ef.label.toLowerCase())}:<ul>${
+          [...groups].map(([avail, opts]) => `<li>${escapeHtml(and(opts))}: ${escapeHtml(avail)}</li>`).join('')}</ul></li>`);
+      }
+    }
+  });
+  if (choices.length) parts.push(`<p>The choices:</p>\n                <ul>${choices.join('')}</ul>`);
+  parts.push(`<p>Each press gives you 8 names, and you won't see the same one twice until you've been through everything for the choices you've made.</p>`);
+
+  return `
+            <section class="blog-content how-it-works">
+                <h2>How the ${escapeHtml(generator.title)} Works</h2>
+                ${parts.join('\n                ')}
+            </section>`;
+}
+
+// 2,740 -> "2,700"
+function roundDownNumber(n) {
+  if (n < 100) return String(n);
+  const digits = Math.pow(10, String(Math.floor(n)).length - 2);
+  return (Math.floor(n / digits) * digits).toLocaleString('en-GB');
 }
 
 /**
@@ -482,6 +561,7 @@ function generateGeneratorPage(generator, category, site) {
                 </div>
             </section>
 ${examplesHTML}
+${howItWorksHtml(generator)}
 
             <article class="blog-content" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="${escGenTitle}">
@@ -768,8 +848,9 @@ function build() {
   }
 
   // Last updated = last change to the generator's file (never before it was published)
-  for (const gen of Object.values(content.generators)) {
+  for (const [key, gen] of Object.entries(content.generators)) {
     gen.updated = latest([gen.published, lastChanged(`content/generators/${gen.key}.json`)]);
+    content.generators[key] = withCounts(gen); // {{names}} etc. -> real numbers
   }
 
   const site = makeSite(content);

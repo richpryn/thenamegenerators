@@ -1391,7 +1391,7 @@
       "title": "⚔️ Clan Name Generator",
       "tagline": "Forge your clan's identity with powerful names that command respect. From noble houses to fierce tribes, create names that echo through the ages."
     },
-    "intro": "Clan names define the identity, heritage, and power of groups in fantasy worlds. Whether you're creating a noble house, a warrior tribe, a mystical order, or a shadowy guild, the right name can capture the essence of your organization. Our **clan name generator** combines 187 organizational title formats with over 1,000 themed names across 12 categories, creating authentic and memorable clan names for any fantasy setting.",
+    "intro": "Clan names define the identity, heritage, and power of groups in fantasy worlds. Whether you're creating a noble house, a warrior tribe, a mystical order, or a shadowy guild, the right name can capture the essence of your organization. Our **clan name generator** combines {{count:titles}} title formats with themed names from 12 categories, creating authentic and memorable clan names for any fantasy setting.",
     "sections": [
       {
         "heading": "The Power of Clan Names",
@@ -1429,7 +1429,7 @@
       },
       {
         "question": "How many unique combinations are possible?",
-        "answer": "With 187 title formats and over 1,000 clan names across 12 categories, the generator can create tens of thousands of unique combinations. Each category has between 46 and 174 names, ensuring plenty of variety for your worldbuilding needs."
+        "answer": "The generator pairs {{count:titles}} title formats, from 'House of [Name]' to '[Name] Dynasty', with themed names from 12 categories. That gives over {{combinations}} different clan names."
       }
     ]
   }

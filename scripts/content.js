@@ -145,6 +145,12 @@ function validate({ categories, generators }) {
       if (never.length) errors.push(`${file}: filter "${k}" option(s) ${never.join(', ')} never find any names`);
     }
 
+    const unknownTokens = (JSON.stringify(gen.article || {}) + (gen.description || ''))
+      .match(/\{\{(?!names\}\}|combinations\}\}|count:)[^}]*\}\}/g);
+    if (unknownTokens) errors.push(`${file}: unknown placeholder(s) ${[...new Set(unknownTokens)].join(', ')}`);
+    for (const m of (JSON.stringify(gen.article || {})).matchAll(/\{\{count:([^}]+)\}\}/g)) {
+      if (!RecipeEngine.resolveList(gen.data, m[1]).length || !m[1].split('.').every(Boolean)) errors.push(`${file}: {{count:${m[1]}}} doesn't match a list`);
+    }
     for (const at of emptyLists(gen.data)) warnings.push(`${file}: list "${at}" is empty`);
     const total = countNames(gen.data);
     if (total < MIN_NAMES) warnings.push(`${file}: only ${total} names (aim for at least ${MIN_NAMES})`);
@@ -153,4 +159,64 @@ function validate({ categories, generators }) {
   return { errors, warnings };
 }
 
-module.exports = { loadContent, validate, countNames };
+/**
+ * How many different names a generator can produce, across every filter
+ * combination: a list counts its entries; combining lists multiplies them.
+ */
+function countCombinations(gen) {
+  const engine = RecipeEngine.createGenerator(gen);
+  const size = (p, values) => RecipeEngine.resolveList(gen.data, p.replace(/\{(\w+)\}/g, (_, k) => values[k] || '')).length;
+  const slotFactor = (r, values) => Object.values(r.slots || {}).reduce((n, p) => n * size(p, values), 1);
+  const count = (r, values) => {
+    if (r.recipe === 'switch') {
+      const choice = r.cases[values[r.on]] || r.default;
+      return choice ? count(choice, values) : 0;
+    }
+    if (r.recipe === 'pick') return size(r.from, values) * slotFactor(r, values);
+    if (r.recipe === 'combine') return r.parts.reduce((n, p) => n * size(p, values), 1) * slotFactor(r, values);
+    if (r.recipe === 'template') {
+      return [].concat(r.template).reduce((sum, t) =>
+        sum + [...t.matchAll(/\[([^\]]+)\]/g)].reduce((n, m) => n * size(m[1], values), 1), 0) * slotFactor(r, values);
+    }
+    return 0;
+  };
+  let combos = [{}];
+  for (const [key, f] of Object.entries(gen.filters || {})) {
+    if (f.type === 'text') continue;
+    combos = combos.flatMap((c) => engine.availableOptions(key, c).map((opt) => ({ ...c, [key]: opt })));
+  }
+  return combos.reduce((n, c) => n + count(gen, c), 0);
+}
+
+// 2,740 -> "2,700"; 1,195 -> "1,100" (for "over {{combinations}}")
+function roundDown(n) {
+  if (n < 100) return String(n);
+  const digits = Math.pow(10, String(Math.floor(n)).length - 2);
+  return (Math.floor(n / digits) * digits).toLocaleString('en-GB');
+}
+
+/**
+ * Fill count placeholders in article text, so numbers stay right as names
+ * are added:
+ *   {{names}}          every entry in every list, e.g. "1,195"
+ *   {{combinations}}   different names it can make, rounded down ("over {{combinations}}")
+ *   {{count:surnames}} entries in one list (a path, as in recipes)
+ */
+function fillCounts(gen, text) {
+  return String(text).replace(/\{\{(names|combinations|count:([^}]+))\}\}/g, (match, what, listPath) => {
+    if (what === 'names') return countNames(gen.data).toLocaleString('en-GB');
+    if (what === 'combinations') return roundDown(countCombinations(gen));
+    return RecipeEngine.resolveList(gen.data, listPath).length.toLocaleString('en-GB');
+  });
+}
+
+/** A copy of the generator with placeholders filled in throughout its article. */
+function withCounts(gen) {
+  const fill = (v) => typeof v === 'string' ? fillCounts(gen, v)
+    : Array.isArray(v) ? v.map(fill)
+    : v && typeof v === 'object' ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, fill(x)]))
+    : v;
+  return { ...gen, description: fill(gen.description), article: fill(gen.article) };
+}
+
+module.exports = { loadContent, validate, countNames, countCombinations, withCounts };

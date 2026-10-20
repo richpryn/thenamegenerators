@@ -263,7 +263,7 @@
       },
       {
         "question": "How many unique wand names does the generator provide?",
-        "answer": "The generator provides thousands of unique wand name combinations across all three templates. With 60 base names, 62 descriptors, and 47 epithets, the generator can create over 10,000 unique combinations, ensuring maximum variety for your fantasy world."
+        "answer": "It draws on {{count:baseNames}} base names, {{count:descriptors}} descriptors, {{count:epithets}} epithets and {{count:weaponTypes}} weapon types. Across the three templates, that adds up to over {{combinations}} different wand names."
       },
       {
         "question": "Can I use these names for player characters' wands?",

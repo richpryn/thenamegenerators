@@ -1539,7 +1539,7 @@
       "title": "🏢 Company Name Generator",
       "tagline": "Generate modern, brandable company names perfect for startups, businesses, and brands. From single words to memorable combinations."
     },
-    "intro": "Company names are the foundation of your brand identity. A great company name is short, memorable, easy to spell and pronounce, and works as a .com domain. Our **company name generator** offers 1,500+ brandable names across 5 distinct styles, helping you find the perfect name for your startup, business, or brand.",
+    "intro": "Company names are the foundation of your brand identity. A great company name is short, memorable, easy to spell and pronounce, and works as a .com domain. Our **company name generator** offers {{names}} brandable names across 5 distinct styles, helping you find the perfect name for your startup, business, or brand.",
     "sections": [
       {
         "heading": "Company Name Styles",

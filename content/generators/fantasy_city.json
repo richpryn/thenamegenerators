@@ -4,7 +4,7 @@
   "icon": "🏰",
   "category": "places",
   "published": "2025-12-01",
-  "description": "Generate 500 unique fantasy city names perfect for worldbuilding, D&D campaigns, fantasy writing, and map creation. Epic names like Thornhaven, Silvermere, and Dragonkeep.",
+  "description": "Generate fantasy city names for worldbuilding, D&D campaigns, fantasy writing, and map creation. Epic names like Thornhaven, Silvermere, and Dragonkeep.",
   "seoKeywords": "fantasy city names, city name generator, fantasy place names, dnd city names, worldbuilding city names, fantasy location names",
   "isPopular": true,
   "popularRank": 6,
@@ -515,9 +515,9 @@
   "article": {
     "hero": {
       "title": "🏰 Fantasy City Name Generator",
-      "tagline": "Generate epic fantasy city names perfect for worldbuilding, D&D campaigns, and fantasy writing. 500 unique names from Thornhaven to Dragonkeep."
+      "tagline": "Generate epic fantasy city names perfect for worldbuilding, D&D campaigns, and fantasy writing. {{names}} names, from Thornhaven to Dragonkeep."
     },
-    "intro": "Fantasy city names capture the essence of epic locations in fantasy worlds. From the mystical Thornhaven to the majestic Dragonkeep, city names tell stories about their history, culture, and character. Our **fantasy city name generator** offers 500 unique names perfect for worldbuilding, D&D campaigns, fantasy writing, and map creation.",
+    "intro": "Fantasy city names capture the essence of epic locations in fantasy worlds. From the mystical Thornhaven to the majestic Dragonkeep, city names tell stories about their history, culture, and character. Our **fantasy city name generator** offers {{names}} names for worldbuilding, D&D campaigns, fantasy writing, and map creation.",
     "sections": [
       {
         "heading": "The Power of Fantasy City Names",
