@@ -1,11 +1,12 @@
 {
   "title": "Fantasy Town Name Generator",
+  "seoTitle": "Fantasy Town and Village Name Generator | The Name Generators",
   "slug": "fantasy-town-name-generator",
   "icon": "🏘️",
   "category": "places",
   "published": "2025-11-30",
-  "description": "Fantasy town names built the way real English place names are, for farming villages, fishing ports, mining towns, abbeys, market towns and more.",
-  "seoKeywords": "fantasy town names, town name generator, fantasy place names, dnd town names, fantasy city names, worldbuilding town names",
+  "description": "Fantasy town and village names built the way real English place names are, for farming villages, fishing ports, mining towns, abbeys, market towns and more.",
+  "seoKeywords": "fantasy town names, fantasy village names, town name generator, village name generator, fantasy place names, dnd town names, worldbuilding town names",
   "isPopular": true,
   "popularRank": 5,
   "filters": {
@@ -2848,6 +2849,10 @@
       {
         "question": "What does -wick mean in a place name?",
         "answer": "It comes from Old English wīc, borrowed from the Latin vicus. It meant a specialised settlement: often a dairy farm, sometimes a trading place or a salt works, as in Nantwich and Droitwich."
+      },
+      {
+        "question": "Does it work for village names?",
+        "answer": "Yes. The names suit anything from a hamlet to a market town. For a village, try the farming, forest or river kinds, and look out for the Little, Nether and Upper names, which real maps give to the smaller of two places."
       },
       {
         "question": "What's the difference between a town, a village and a city name?",

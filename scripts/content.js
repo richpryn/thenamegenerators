@@ -80,6 +80,7 @@ function validate({ categories, generators, homepage = { popular: [] } }) {
     for (const field of ['title', 'slug', 'icon', 'category', 'published', 'description', 'seoKeywords', 'recipe', 'data']) {
       if (!gen[field]) errors.push(`${file}: missing "${field}"`);
     }
+    if (gen.seoTitle && gen.seoTitle.length > 65) warnings.push(`${file}: seoTitle is ${gen.seoTitle.length} characters (aim for 60 or fewer)`);
     if (gen.published && !/^\d{4}-\d{2}-\d{2}$/.test(gen.published)) {
       errors.push(`${file}: "published" should be a date like 2026-10-20`);
     }

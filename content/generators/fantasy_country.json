@@ -1,5 +1,6 @@
 {
   "title": "Fantasy Country Name Generator",
+  "seoTitle": "Fantasy Country and Kingdom Name Generator",
   "slug": "fantasy-country-name-generator",
   "icon": "🗺️",
   "category": "places",
@@ -1330,6 +1331,10 @@
       {
         "question": "What's the difference between the styles?",
         "answer": "Each uses the sounds of a different language: flowing elvish names, Norse names ending in -heim and -gard, Latin names ending in -ia and -ium, Old English kingdoms like Mercia, harsh names for dark lands, and island names ending in -holm and -ey."
+      },
+      {
+        "question": "Can I use it as a kingdom name generator?",
+        "answer": "Yes. Choose \"With a title\" to get kingdoms, empires, grand duchies and more, or use a name on its own and add your own title. The style decides how the kingdom sounds; the title decides how it is ruled."
       },
       {
         "question": "How do I name the people of a fantasy country?",

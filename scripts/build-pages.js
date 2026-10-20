@@ -125,6 +125,7 @@ const USAGE_NOTE = "Free to use, no credit needed. If you're naming a business, 
  * "Free Online Tool" when it still fits in ~60 characters.
  */
 function generateSEOTitle(generator) {
+  if (generator.seoTitle) return generator.seoTitle;
   const withTool = `${generator.title} - Free Online Tool | ${SITE_NAME}`;
   if (withTool.length <= 60) return withTool;
   const withSite = `${generator.title} | ${SITE_NAME}`;
