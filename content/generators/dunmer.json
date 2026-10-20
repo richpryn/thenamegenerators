@@ -1,0 +1,231 @@
+{
+  "title": "Dunmer Name Generator",
+  "slug": "dunmer-name-generator",
+  "icon": "🌋",
+  "category": "pop_culture",
+  "published": "2026-10-20",
+  "description": "Dunmer (dark elf) names for Skyrim, Morrowind and Elder Scrolls Online: a first name and family name in the style of Revyn Sadri and Brelyna Maryon, with an optional Great House.",
+  "seoKeywords": "dunmer names, dunmer name generator, dark elf names skyrim, morrowind names, eso dunmer names, female dunmer names, dunmer last names",
+  "isPopular": false,
+  "filters": {
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "full",
+        "house",
+        "first"
+      ],
+      "optionLabels": {
+        "full": "First and family name",
+        "house": "With a Great House",
+        "first": "First name only"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "full": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": "[first] [family]"
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[first.{gender}] [family]"
+      }
+    },
+    "house": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": "[first] [family] of [houses]"
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[first.{gender}] [family] of [houses]"
+      }
+    },
+    "first": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "pick",
+          "from": "first"
+        }
+      },
+      "default": {
+        "recipe": "pick",
+        "from": "first.{gender}"
+      }
+    }
+  },
+  "data": {
+    "first": {
+      "male": [
+        "Aldyn",
+        "Brelvys",
+        "Dalvyn",
+        "Dreyvas",
+        "Enar",
+        "Faldrys",
+        "Garyn",
+        "Ilvyn",
+        "Llaren",
+        "Merys",
+        "Nalvos",
+        "Orvas",
+        "Raleth",
+        "Sevyn",
+        "Tarvyn",
+        "Ulyn",
+        "Vaval",
+        "Athyn",
+        "Bolvyn",
+        "Dravyn",
+        "Felas",
+        "Gildan",
+        "Mavus",
+        "Nevos",
+        "Relyn",
+        "Sarvas",
+        "Telvyn",
+        "Uvren",
+        "Varyn",
+        "Fethis"
+      ],
+      "female": [
+        "Adrisa",
+        "Bralyna",
+        "Delvera",
+        "Elmyra",
+        "Fenara",
+        "Galsa",
+        "Ildrisa",
+        "Llavisa",
+        "Melvasa",
+        "Narysa",
+        "Ondrasa",
+        "Ravyna",
+        "Sereni",
+        "Talvesa",
+        "Ulvara",
+        "Vedyna",
+        "Aleri",
+        "Drelasa",
+        "Faryna",
+        "Ilvasa",
+        "Malsi",
+        "Nelyna",
+        "Rolasa",
+        "Savyna",
+        "Tirasa",
+        "Varsa",
+        "Dralsi",
+        "Edryna",
+        "Mevasa",
+        "Saldrisa"
+      ]
+    },
+    "family": [
+      "Andalen",
+      "Belvayn",
+      "Dalvilu",
+      "Dreloth",
+      "Ethrys",
+      "Faryon",
+      "Gilvoth",
+      "Hlervu",
+      "Ilnith",
+      "Llendu",
+      "Marvani",
+      "Nerano",
+      "Omalen",
+      "Raloth",
+      "Salvani",
+      "Telvuron",
+      "Uvalen",
+      "Vandril",
+      "Aryon",
+      "Berano",
+      "Drevayn",
+      "Fendyn",
+      "Indaren",
+      "Llether",
+      "Mavrin",
+      "Orethi",
+      "Ravel",
+      "Thalas",
+      "Varvur",
+      "Arvel",
+      "Darys",
+      "Hlarvys",
+      "Menith",
+      "Sethri",
+      "Velas",
+      "Romori",
+      "Drothan"
+    ],
+    "houses": [
+      "House Hlaalu",
+      "House Redoran",
+      "House Telvanni",
+      "House Indoril",
+      "House Dres"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🌋 Dunmer Name Generator",
+      "tagline": "Dark elf names from Morrowind to Skyrim: a sharp first name, a family name and, if you like, a Great House."
+    },
+    "intro": "Dunmer names are short, sharp and full of v, r and l sounds: Revyn Sadri, the trader in Windhelm; Brelyna Maryon at the College of Winterhold; Teldryn Sero, the sellsword on Solstheim. This **Dunmer name generator** builds names in that style, a first name and a family name, and can add one of Morrowind's Great Houses.",
+    "sections": [
+      {
+        "heading": "How Dunmer names work",
+        "content": "<p>Most Dunmer in the games have a first name and a family name. In Skyrim you'll meet <strong>Revyn Sadri</strong> and <strong>Aval Atheron</strong> in Windhelm, <strong>Drevis Neloren</strong> and <strong>Brelyna Maryon</strong> at the College of Winterhold, and <strong>Ambarys Rendar</strong> running the New Gnisis Cornerclub.</p><p>Some important Dunmer go by one name. <strong>Neloth</strong>, the Telvanni wizard on Solstheim, is the best-known example. The Ashlanders, the nomadic tribes of Morrowind's wastes, keep their own traditions too.</p>"
+      },
+      {
+        "heading": "The Great Houses",
+        "content": "<p>Dunmer society in Morrowind was organised around Great Houses. The ones you meet most often are:</p><ul><li><strong>House Redoran:</strong> warriors, devoted to duty and honour.</li><li><strong>House Hlaalu:</strong> traders and politicians, comfortable with the Empire.</li><li><strong>House Telvanni:</strong> powerful, reclusive wizards like Neloth.</li></ul><p>House Indoril and House Dres were Great Houses too. The <em>With a Great House</em> format adds a house to the name. It's a quick way to give a character a background: a Redoran and a Telvanni would not get on.</p>"
+      },
+      {
+        "heading": "What the names sound like",
+        "content": "<ul><li><strong>Male first names</strong> often end in <em>-yn</em>, <em>-ys</em> or <em>-as</em>: Revyn, Ambarys, Drevis. Short and clipped.</li><li><strong>Female first names</strong> usually end in <em>-a</em> or <em>-i</em>: Brelyna, Ravyna, Malsi.</li><li><strong>Family names</strong> are two or three syllables, often ending in <em>-en</em>, <em>-on</em> or <em>-i</em>: Sadri, Atheron, Neloren.</li></ul><p>All the names in this generator are new, so your character won't share a name with one from the games.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do Dunmer have last names?",
+        "answer": "Most do: Revyn Sadri, Brelyna Maryon and Teldryn Sero in Skyrim all have a first and family name. Some, like the wizard Neloth, go by one name."
+      },
+      {
+        "question": "What are the Dunmer Great Houses?",
+        "answer": "The political houses of Morrowind. The best-known are Redoran (warriors), Hlaalu (traders) and Telvanni (wizards); Indoril and Dres were Great Houses too."
+      },
+      {
+        "question": "Are Dunmer the same as D&D drow?",
+        "answer": "Both are dark elves, but they're different peoples from different worlds. For D&D drow, see the Baldur's Gate 3 and Dark Elf name generators."
+      }
+    ]
+  }
+}

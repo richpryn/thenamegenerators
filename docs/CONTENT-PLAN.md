@@ -161,7 +161,7 @@ Biggest searches, best fit, and most of the engine work is reuse.
 
 ### Phase 2: Finish the fandom clusters you've started (weeks 6–14)
 
-**Status:** Elder Scrolls: Khajiit and Nord are live (with Skyrim Orc). Next: Dunmer, Altmer, Argonian, then an Elder Scrolls hub; then Warcraft (Night Elf, Blood Elf, Troll).
+**Status:** Elder Scrolls cluster done: hub (`categories/elder_scrolls-names.html`), Skyrim Orc, Nord, Khajiit, Dunmer, Altmer, Argonian. Next: Warcraft (Night Elf, Blood Elf, Troll) and a Warcraft hub.
 
 Build out franchises where the site already has a page, so each becomes a small hub. **Start with Harry Potter**: Hogwarts Legacy Witch gets the site's most clicks, and its two pages are already rebuilt.
 

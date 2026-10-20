@@ -98,6 +98,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Category: Elder Scrolls -->
+  <url>
+    <loc>https://thenamegenerators.com/categories/elder_scrolls-names.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Category: Pop Culture -->
   <url>
     <loc>https://thenamegenerators.com/categories/pop_culture-names.html</loc>
@@ -112,9 +119,23 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Altmer Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/altmer-name-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Angel Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/angel-name-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Argonian Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/argonian-name-generator.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -227,6 +248,13 @@
   <!-- Generator: Dungeon Synth Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/dungeon-synth-name-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Dunmer Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/dunmer-name-generator.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

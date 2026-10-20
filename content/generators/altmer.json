@@ -1,0 +1,181 @@
+{
+  "title": "Altmer Name Generator",
+  "slug": "altmer-name-generator",
+  "icon": "🌞",
+  "category": "pop_culture",
+  "published": "2026-10-20",
+  "description": "Altmer (high elf) names for Skyrim and Elder Scrolls Online, long and elegant like Ancano, Elenwen and Ondolemar, the names of the Summerset Isles.",
+  "seoKeywords": "altmer names, altmer name generator, high elf names skyrim, thalmor names, eso altmer names, female altmer names, summerset names",
+  "isPopular": false,
+  "filters": {
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "gender",
+  "cases": {
+    "any": {
+      "recipe": "pick",
+      "from": "names"
+    }
+  },
+  "default": {
+    "recipe": "pick",
+    "from": "names.{gender}"
+  },
+  "data": {
+    "names": {
+      "male": [
+        "Aicantar",
+        "Calcamo",
+        "Erundil",
+        "Faranwe",
+        "Herminor",
+        "Imion",
+        "Laurendil",
+        "Maenor",
+        "Ondilmo",
+        "Pelorin",
+        "Quaranir",
+        "Rilmeno",
+        "Seranil",
+        "Taronwe",
+        "Tharandil",
+        "Vanyaril",
+        "Aranwe",
+        "Endilmo",
+        "Ilmarion",
+        "Lanacar",
+        "Melindil",
+        "Orlenno",
+        "Saravar",
+        "Telenmo",
+        "Vanormo",
+        "Corinmo",
+        "Lithandor",
+        "Teranil",
+        "Arandil",
+        "Calindil",
+        "Eldamo",
+        "Firinor",
+        "Halimo",
+        "Ilcano",
+        "Larandir",
+        "Merenil",
+        "Norimo",
+        "Palandil",
+        "Quelamir",
+        "Sorondil",
+        "Tarnamo",
+        "Ulimar",
+        "Valandir",
+        "Arcano",
+        "Elerion",
+        "Henamo",
+        "Lirandil",
+        "Oromar",
+        "Teldamo",
+        "Vilandir",
+        "Ystamo"
+      ],
+      "female": [
+        "Aranya",
+        "Calenwe",
+        "Elanwe",
+        "Faralwen",
+        "Ilmaria",
+        "Larwen",
+        "Mirelda",
+        "Nirelwe",
+        "Orinwe",
+        "Pelaria",
+        "Riwenna",
+        "Sarenya",
+        "Tanalwe",
+        "Ulenwe",
+        "Valaria",
+        "Amarwen",
+        "Celanye",
+        "Erinya",
+        "Halinwe",
+        "Indarie",
+        "Lirelda",
+        "Melawen",
+        "Nirinwe",
+        "Senwe",
+        "Tirinya",
+        "Valmire",
+        "Yaranwe",
+        "Elaria",
+        "Aelwen",
+        "Calinde",
+        "Elrena",
+        "Faranye",
+        "Halrwen",
+        "Ilmawe",
+        "Laurenya",
+        "Meranwe",
+        "Norelda",
+        "Palawen",
+        "Quelinde",
+        "Rilanye",
+        "Sorinwe",
+        "Taurenya",
+        "Ulwenna",
+        "Varinde",
+        "Alinwe",
+        "Celawen",
+        "Endarie",
+        "Faralye",
+        "Ilwena",
+        "Lorinde",
+        "Neralda",
+        "Telarie"
+      ]
+    }
+  },
+  "article": {
+    "hero": {
+      "title": "🌞 Altmer Name Generator",
+      "tagline": "Long, graceful high elf names from the Summerset Isles, in the style of Ancano and Elenwen."
+    },
+    "intro": "The Altmer, or high elves, of the Summerset Isles think very highly of themselves, and their names sound like it: long, flowing and formal. In Skyrim you meet them as Ancano at the College of Winterhold and as the Thalmor's Elenwen and Ondolemar. This **Altmer name generator** gives you names in the same style, for Skyrim, Elder Scrolls Online or your own Tamriel story.",
+    "sections": [
+      {
+        "heading": "What Altmer names sound like",
+        "content": "<ul><li><strong>Long:</strong> three or four syllables is normal. Ondolemar, Ancarion.</li><li><strong>Soft consonants</strong> (l, n, r, m) and open vowels, with few harsh sounds.</li><li><strong>Male names</strong> often end in <em>-o</em>, <em>-ar</em> or <em>-il</em>: Ancano, Estormo and Ondolemar in Skyrim.</li><li><strong>Female names</strong> often end in <em>-we</em>, <em>-wen</em> or <em>-a</em>: Elenwen, Nirya and Faralda.</li></ul><p>Altmer names are usually used alone. That suits a people who believe they're descended from the gods and don't feel the need to explain their family.</p>"
+      },
+      {
+        "heading": "Altmer in Skyrim",
+        "content": "<p>Most Altmer in Skyrim belong to the Thalmor, the government of the Aldmeri Dominion. <strong>Elenwen</strong> is the Thalmor ambassador, <strong>Ondolemar</strong> commands the Thalmor in Markarth, and <strong>Ancano</strong> is the Thalmor adviser who causes trouble at the College of Winterhold.</p><p>Not every Altmer is Thalmor. <strong>Faralda</strong> and <strong>Nirya</strong> teach at the College, and <strong>Ancarion</strong> lives in Solitude. An Altmer character who isn't Thalmor has an easy source of tension in any Nord town.</p>"
+      },
+      {
+        "heading": "Using the names",
+        "content": "<ul><li><strong>Let it be long.</strong> An Altmer won't shorten their name for anyone, which says a lot about them.</li><li><strong>Add a title if they're important:</strong> Justiciar, First Emissary, Magister.</li><li><strong>Elder Scrolls Online</strong> needs unique names, and a long Altmer name is more likely to be free.</li></ul><p>For other races of Tamriel, see the <a href=\"dunmer-name-generator.html\">Dunmer</a>, <a href=\"khajiit-name-generator.html\">Khajiit</a> and <a href=\"nord-name-generator.html\">Nord</a> name generators.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do Altmer have last names?",
+        "answer": "Usually not in Skyrim: Ancano, Elenwen and Ondolemar all go by one name. Titles, like Justiciar, are more common than surnames."
+      },
+      {
+        "question": "Who are the Thalmor?",
+        "answer": "The ruling government of the Aldmeri Dominion, led by the Altmer. In Skyrim they enforce the ban on worshipping Talos."
+      },
+      {
+        "question": "Are these names from the games?",
+        "answer": "No. They're new names in the same style, so your character won't share a name with someone in Tamriel."
+      }
+    ]
+  }
+}
