@@ -1,0 +1,160 @@
+{
+  "title": "Song Title Generator",
+  "slug": "song-title-generator",
+  "icon": "🎵",
+  "category": "music",
+  "published": "2026-10-20",
+  "description": "Song titles to spark your next track: a single striking word, a line that tells a story, or a place, with tips on titles that stick.",
+  "seoKeywords": "song title generator, song name generator, song title ideas, song names, random song title, song lyric title ideas",
+  "isPopular": false,
+  "filters": {},
+  "recipe": "template",
+  "template": [
+    "[noun]",
+    "[verbing] [obj]",
+    "[verbing] [obj] [time]",
+    "[noun] [time]",
+    "Last Dance on the [place]",
+    "[noun] on the [place]",
+    "[place] [noun]"
+  ],
+  "data": {
+    "verbing": [
+      "Chasing",
+      "Counting",
+      "Burning",
+      "Holding",
+      "Waiting for",
+      "Dancing with",
+      "Talking to",
+      "Running from",
+      "Building",
+      "Drawing",
+      "Missing",
+      "Following",
+      "Losing",
+      "Finding",
+      "Leaving",
+      "Painting",
+      "Saving",
+      "Breaking",
+      "Hiding from",
+      "Dreaming of",
+      "Singing to",
+      "Wishing on",
+      "Swimming in"
+    ],
+    "obj": [
+      "Satellites",
+      "the Tide",
+      "Ghosts",
+      "Paper Planes",
+      "the Last Train",
+      "Strangers",
+      "Fireworks",
+      "the Weather",
+      "Lightning",
+      "Your Shadow",
+      "Headlights",
+      "Old Photographs",
+      "the Northern Lights",
+      "Wildflowers",
+      "Thunder",
+      "the Moon",
+      "Static",
+      "Small Hours",
+      "the City",
+      "Seaglass",
+      "the Undertow",
+      "Lost Weekends"
+    ],
+    "time": [
+      "Tonight",
+      "in the Morning",
+      "After Midnight",
+      "This Summer",
+      "Before the Rain",
+      "All Winter",
+      "at Dawn",
+      "on Sunday",
+      "for a While",
+      "Forever"
+    ],
+    "noun": [
+      "Heartbeat",
+      "Silver",
+      "Static",
+      "Daylight",
+      "Lullaby",
+      "Wildfire",
+      "Avalanche",
+      "Gravity",
+      "Echo",
+      "Harbour",
+      "Firefly",
+      "Undertow",
+      "Overture",
+      "Paper Moon",
+      "Riverbed",
+      "Afterglow",
+      "Monochrome",
+      "Neon",
+      "Cathedral",
+      "Driftwood",
+      "Carousel",
+      "Halcyon",
+      "Lighthouse",
+      "Glasshouse",
+      "Paperweight",
+      "Wavelength",
+      "Blue Hour",
+      "Saltwater",
+      "Skyline",
+      "Moonbeam"
+    ],
+    "place": [
+      "Highway",
+      "Kitchen Floor",
+      "Rooftop",
+      "Station",
+      "Seafront",
+      "Back Seat",
+      "Dance Floor",
+      "Ferris Wheel",
+      "Last Bus",
+      "Car Park",
+      "Corner Shop",
+      "Motel",
+      "Pier",
+      "Fire Escape",
+      "Bridge"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🎵 Song Title Generator",
+      "tagline": "Song titles to start from: one striking word, a line with a story, or a place."
+    },
+    "intro": "A song title is a hook before anyone has heard a note. This **song title generator** gives you titles in the shapes songwriters use most: a single striking word, an action with a story in it (\"Chasing Satellites\"), or a place (\"Rooftop Lullaby\"). Use one as a title, or as a prompt to write from.",
+    "sections": [
+      {
+        "heading": "Titles that stick",
+        "content": "<ul><li><strong>Use the hook.</strong> Most memorable titles are the line people sing back: if the chorus repeats a phrase, that's often your title.</li><li><strong>One word can carry a song</strong> if it's vivid: Static, Undertow, Wildfire.</li><li><strong>A small story beats a big idea.</strong> \"Waiting for the Last Train\" says more than \"Loneliness\".</li><li><strong>Search it.</strong> Titles aren't protected, but a title shared by a huge hit will bury yours in search results.</li></ul>"
+      },
+      {
+        "heading": "Using a title as a prompt",
+        "content": "<p>Songwriters often start from a title and write towards it. Generate a few, pick the one that makes you ask a question (who is chasing satellites, and why?), and answer it in the verses.</p><p>For the record they'll end up on, try the <a href=\"album-name-generator.html\">Album Name Generator</a>; for the band, the <a href=\"band-name-generator.html\">Band Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can song titles be copyrighted?",
+        "answer": "Generally no: titles are too short to be protected by copyright, which is why many songs share a title. A famous title may still bury yours in search results, so check first. This isn't legal advice."
+      },
+      {
+        "question": "Should the title be in the lyrics?",
+        "answer": "Usually, yes. Listeners remember songs by the words they sing, so a title that matches the hook is easier to find."
+      }
+    ]
+  }
+}

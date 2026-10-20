@@ -179,6 +179,9 @@ Build out franchises where the site already has a page, so each becomes a small 
 Every fact in these pages needs checking against the source (see the accuracy rules in `CONTENT.md`).
 
 ### Phase 3: Music & Creators, Rich's moat (weeks 10–18)
+
+**Status:** Band (by genre), Album, Song Title, Rapper, Stage Name and Wu-Tang are live in the Music category. Still to come: Rich's own notes on the Band page (see OWNER-TODO), DJ, Metal/Black Metal, Podcast and YouTube Channel.
+
 This is where the site has expertise nobody else can copy. Each page gets notes from Rich (what makes a name work live, on streaming and in a search, and checking for existing bands on Bandcamp, Spotify and Discogs).
 
 - **Band Name Generator** (hub) with a Genre filter: metal, punk, indie, folk, electronic, post-rock, black metal.

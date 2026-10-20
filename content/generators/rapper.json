@@ -1,0 +1,187 @@
+{
+  "title": "Rapper Name Generator",
+  "slug": "rapper-name-generator",
+  "icon": "🎤",
+  "category": "music",
+  "published": "2026-10-20",
+  "description": "Rap names in the classic shapes, from Lil and Young to MC, one-word names and stylised spellings, with the stories behind famous rap names.",
+  "seoKeywords": "rapper name generator, rap name generator, rapper names, rap names, lil name generator, mc name generator, hip hop name generator",
+  "isPopular": false,
+  "filters": {
+    "style": {
+      "label": "Style",
+      "options": [
+        "any",
+        "prefix",
+        "single",
+        "stylised"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "prefix": "With a prefix (Lil, Young, MC…)",
+        "single": "One word",
+        "stylised": "Stylised spelling"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "style",
+  "cases": {
+    "prefix": {
+      "recipe": "template",
+      "template": "[prefixes] [words]"
+    },
+    "single": {
+      "recipe": "pick",
+      "from": "words"
+    },
+    "stylised": {
+      "recipe": "pick",
+      "from": "stylised"
+    },
+    "any": {
+      "recipe": "template",
+      "template": [
+        "[prefixes] [words]",
+        "[words]",
+        "[stylised]",
+        "[prefixes] [stylised]"
+      ]
+    }
+  },
+  "data": {
+    "prefixes": [
+      "Lil",
+      "Young",
+      "MC",
+      "Big",
+      "King",
+      "Lord",
+      "Kid",
+      "Baby"
+    ],
+    "words": [
+      "Ace",
+      "Blaze",
+      "Echo",
+      "Frost",
+      "Ghost",
+      "Haze",
+      "Jinx",
+      "Ledger",
+      "Maverick",
+      "Nova",
+      "Onyx",
+      "Pharaoh",
+      "Quest",
+      "Rhyme",
+      "Saint",
+      "Tempo",
+      "Vandal",
+      "Zenith",
+      "Cipher",
+      "Dynasty",
+      "Flux",
+      "Gravity",
+      "Hustle",
+      "Icon",
+      "Jet",
+      "Legacy",
+      "Motive",
+      "Nimbus",
+      "Omen",
+      "Prophet",
+      "Riddle",
+      "Static",
+      "Thunder",
+      "Vibe",
+      "Verse",
+      "Atlas",
+      "Bishop",
+      "Comet",
+      "Drift",
+      "Fable",
+      "Cobra",
+      "Dice",
+      "Ember",
+      "Falcon",
+      "Granite",
+      "Halo",
+      "Ivory",
+      "Jaguar",
+      "Karma",
+      "Lucid",
+      "Mirage",
+      "Neon",
+      "Orbit",
+      "Pulse",
+      "Radar",
+      "Sonic",
+      "Titan",
+      "Umbra",
+      "Vortex",
+      "Wraith"
+    ],
+    "stylised": [
+      "Rhymez",
+      "Flowz",
+      "Kreed",
+      "Lyrikal",
+      "Sikk",
+      "Phantum",
+      "Mystiq",
+      "Nobl",
+      "Ryze",
+      "Vybz",
+      "Xtra",
+      "Zayde",
+      "Kasual",
+      "Profit",
+      "Logik",
+      "Kaos",
+      "Dekade",
+      "Rogz",
+      "Blayze",
+      "Dreamz",
+      "Eko",
+      "Fyre",
+      "Ghostz",
+      "Hypa",
+      "Karizma",
+      "Lyon",
+      "Majik",
+      "Nite",
+      "Platnum",
+      "Qwest",
+      "Reign",
+      "Sonik"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🎤 Rapper Name Generator",
+      "tagline": "Rap names in the classic shapes: Lil, Young and MC, one-word names and stylised spellings."
+    },
+    "intro": "A rap name is a persona as much as a label, and most fit a few shapes: a prefix like Lil, Young or MC; a single bold word; or a word spelled your own way. This **rapper name generator** builds names in all three, so you can try a persona on before you step up to the mic.",
+    "sections": [
+      {
+        "heading": "How famous rap names were made",
+        "content": "<ul><li><strong>From initials:</strong> Eminem comes from Marshall Mathers' initials, M&amp;M.</li><li><strong>From a pun:</strong> Ludacris is a play on \"ludicrous\".</li><li><strong>From a nickname:</strong> Snoop Dogg's mother called him Snoop because he looked like Snoopy. MC Hammer got \"Hammer\" from a resemblance to the baseball player Hank Aaron, \"Hammerin' Hank\".</li><li><strong>With a prefix:</strong> Lil Wayne, Lil Nas X, Young Thug. Both signal youth and confidence.</li></ul>"
+      },
+      {
+        "heading": "Choosing your rap name",
+        "content": "<ul><li><strong>Make it yours.</strong> The best rap names come from something real: a nickname, initials, where you're from.</li><li><strong>Say it in a verse.</strong> You'll rhyme with it and shout it, so it needs to sound good at speed.</li><li><strong>Make it searchable.</strong> A stylised spelling (Rhymez rather than Rhymes) is easier to find online and to claim on streaming services.</li><li><strong>Check it's free</strong> on Spotify, SoundCloud and social media before you release anything.</li></ul><p>For other performer names, try the <a href=\"stage-name-generator.html\">Stage Name Generator</a> or the <a href=\"wu-tang-name-generator.html\">Wu-Tang Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Why do so many rappers use Lil or Young?",
+        "answer": "They signal youth and confidence, and they're instantly recognisable as rap names. Today they're simply a classic shape, used by artists from Lil Wayne to Young Thug."
+      },
+      {
+        "question": "How do I check a rap name is free?",
+        "answer": "Search Spotify, Apple Music, SoundCloud and YouTube for the exact name, and check social media handles. A stylised spelling often makes a name easier to claim."
+      }
+    ]
+  }
+}

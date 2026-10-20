@@ -1,0 +1,172 @@
+{
+  "title": "Wu-Tang Name Generator",
+  "slug": "wu-tang-name-generator",
+  "icon": "🐝",
+  "category": "music",
+  "published": "2026-10-20",
+  "description": "A Wu-Tang Clan style name: two words with kung fu attitude, like the names of the Clan's nine members, from RZA and GZA to Ghostface Killah.",
+  "seoKeywords": "wu tang name generator, wu-tang clan name generator, wu tang names, wu name generator, kung fu name generator",
+  "isPopular": false,
+  "filters": {
+    "format": {
+      "label": "Name format",
+      "options": [
+        "two",
+        "title"
+      ],
+      "optionLabels": {
+        "two": "Two words (Silent Mantis)",
+        "title": "With \"the\" (the Silent Mantis)"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "two": {
+      "recipe": "template",
+      "template": "[adjectives] [nouns]"
+    },
+    "title": {
+      "recipe": "template",
+      "template": "The [adjectives] [nouns]"
+    }
+  },
+  "data": {
+    "adjectives": [
+      "Mighty",
+      "Silent",
+      "Crazy",
+      "Wise",
+      "Lone",
+      "Golden",
+      "Iron",
+      "Shadow",
+      "Ruthless",
+      "Raw",
+      "Swift",
+      "Thunder",
+      "Mystic",
+      "Deadly",
+      "Sly",
+      "Rebel",
+      "Savage",
+      "Ancient",
+      "Bold",
+      "Lucky",
+      "Furious",
+      "Hidden",
+      "Drunken",
+      "Steel",
+      "Cosmic",
+      "Midnight",
+      "Phantom",
+      "Vicious",
+      "Royal",
+      "Wandering",
+      "Blind",
+      "Crimson",
+      "Electric",
+      "Fearless",
+      "Grim",
+      "Hungry",
+      "Infinite",
+      "Jade",
+      "Killer",
+      "Lethal",
+      "Merciless",
+      "Notorious",
+      "Obscure",
+      "Prodigal",
+      "Restless",
+      "Supreme",
+      "Twisted",
+      "Unseen",
+      "Wild",
+      "Zen"
+    ],
+    "nouns": [
+      "Monk",
+      "Assassin",
+      "Tiger",
+      "Scholar",
+      "Dragon",
+      "Bandit",
+      "Philosopher",
+      "Prophet",
+      "Ninja",
+      "Warrior",
+      "Genius",
+      "Sensei",
+      "Mantis",
+      "Crane",
+      "Viper",
+      "Scientist",
+      "Master",
+      "Hustler",
+      "Swordsman",
+      "Lotus",
+      "Panther",
+      "Abbot",
+      "Chancellor",
+      "Sage",
+      "Ronin",
+      "Commander",
+      "Emperor",
+      "Disciple",
+      "Archer",
+      "Butcher",
+      "Cobra",
+      "Diplomat",
+      "Executioner",
+      "Falcon",
+      "Gambler",
+      "Hermit",
+      "Inventor",
+      "Jester",
+      "Kingpin",
+      "Librarian",
+      "Mystic",
+      "Nomad",
+      "Oracle",
+      "Professor",
+      "Raven",
+      "Strategist",
+      "Tactician",
+      "Wizard",
+      "Pilgrim",
+      "Sentinel"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🐝 Wu-Tang Name Generator",
+      "tagline": "Two words with kung fu attitude, in the spirit of the Wu-Tang Clan."
+    },
+    "intro": "The Wu-Tang Clan came out of Staten Island in the early 1990s with a sound built on hip hop and old kung fu films, and names to match: RZA, GZA, Method Man, Raekwon, Ghostface Killah, Inspectah Deck, U-God, Masta Killa and Ol' Dirty Bastard. This **Wu-Tang name generator** gives you a name with the same kung fu swagger.",
+    "sections": [
+      {
+        "heading": "Where the Wu-Tang style comes from",
+        "content": "<p>The Clan named themselves after the Wu-Tang sword style in the 1983 kung fu film <em>Shaolin and Wu Tang</em>, and called Staten Island \"Shaolin\". Their 1993 debut, <em>Enter the Wu-Tang (36 Chambers)</em>, borrowed its subtitle from the film <em>The 36th Chamber of Shaolin</em>.</p><p>The members' names mix nicknames, alter egos and kung fu references, and many have more than one: Raekwon is also known as the Chef, and Ghostface Killah as Tony Starks.</p>"
+      },
+      {
+        "heading": "Using your Wu name",
+        "content": "<ul><li><strong>Two words, one attitude.</strong> An adjective and a role (Silent Mantis, Drunken Scholar) is the classic shape.</li><li><strong>Make it a persona.</strong> Wu-Tang names are alter egos. Give yours a backstory: which temple did the Drunken Scholar leave, and why?</li><li><strong>Use it for fun:</strong> gamer tags, quiz team names, nicknames for the group chat.</li></ul><p>For a real performing name, try the <a href=\"rapper-name-generator.html\">Rapper Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Who are the members of the Wu-Tang Clan?",
+        "answer": "The original nine were RZA, GZA, Method Man, Raekwon, Ghostface Killah, Inspectah Deck, U-God, Masta Killa and Ol' Dirty Bastard. Cappadonna later became a member too."
+      },
+      {
+        "question": "Why is it called Wu-Tang?",
+        "answer": "The Clan took the name from the Wu-Tang sword style in the 1983 kung fu film Shaolin and Wu Tang."
+      },
+      {
+        "question": "Is this the official Wu-Tang name generator?",
+        "answer": "No. It's an unofficial generator inspired by the Clan's style, with names that aren't any member's."
+      }
+    ]
+  }
+}

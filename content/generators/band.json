@@ -1,0 +1,487 @@
+{
+  "title": "Band Name Generator",
+  "slug": "band-name-generator",
+  "icon": "🎸",
+  "category": "music",
+  "published": "2026-10-20",
+  "description": "Band names by genre, from rock and metal to indie, folk, punk and electronic, with the patterns real bands use and how to check a name isn't already taken.",
+  "seoKeywords": "band name generator, band names, band name ideas, metal band names, rock band names, indie band names, punk band names, cool band names",
+  "isPopular": false,
+  "filters": {
+    "genre": {
+      "label": "Genre",
+      "options": [
+        "any",
+        "rock",
+        "metal",
+        "punk",
+        "indie",
+        "folk",
+        "electronic"
+      ],
+      "optionLabels": {
+        "any": "Any genre",
+        "rock": "Rock",
+        "metal": "Metal",
+        "punk": "Punk",
+        "indie": "Indie",
+        "folk": "Folk",
+        "electronic": "Electronic"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "genre",
+  "cases": {
+    "rock": {
+      "recipe": "template",
+      "template": [
+        "The [genres.rock.noun]",
+        "[genres.rock.adj] [genres.rock.noun]",
+        "The [genres.rock.adj] [genres.rock.noun]",
+        "[genres.rock.one]"
+      ]
+    },
+    "metal": {
+      "recipe": "template",
+      "template": [
+        "The [genres.metal.noun]",
+        "[genres.metal.adj] [genres.metal.noun]",
+        "The [genres.metal.adj] [genres.metal.noun]",
+        "[genres.metal.one]"
+      ]
+    },
+    "punk": {
+      "recipe": "template",
+      "template": [
+        "The [genres.punk.noun]",
+        "[genres.punk.adj] [genres.punk.noun]",
+        "The [genres.punk.adj] [genres.punk.noun]",
+        "[genres.punk.one]"
+      ]
+    },
+    "indie": {
+      "recipe": "template",
+      "template": [
+        "The [genres.indie.noun]",
+        "[genres.indie.adj] [genres.indie.noun]",
+        "The [genres.indie.adj] [genres.indie.noun]",
+        "[genres.indie.one]"
+      ]
+    },
+    "folk": {
+      "recipe": "template",
+      "template": [
+        "The [genres.folk.noun]",
+        "[genres.folk.adj] [genres.folk.noun]",
+        "The [genres.folk.adj] [genres.folk.noun]",
+        "[genres.folk.one]"
+      ]
+    },
+    "electronic": {
+      "recipe": "template",
+      "template": [
+        "The [genres.electronic.noun]",
+        "[genres.electronic.adj] [genres.electronic.noun]",
+        "The [genres.electronic.adj] [genres.electronic.noun]",
+        "[genres.electronic.one]"
+      ]
+    },
+    "any": {
+      "recipe": "template",
+      "template": [
+        "The [genres.rock.noun]",
+        "[genres.rock.adj] [genres.rock.noun]",
+        "The [genres.rock.adj] [genres.rock.noun]",
+        "[genres.rock.one]",
+        "The [genres.metal.noun]",
+        "[genres.metal.adj] [genres.metal.noun]",
+        "The [genres.metal.adj] [genres.metal.noun]",
+        "[genres.metal.one]",
+        "The [genres.punk.noun]",
+        "[genres.punk.adj] [genres.punk.noun]",
+        "The [genres.punk.adj] [genres.punk.noun]",
+        "[genres.punk.one]",
+        "The [genres.indie.noun]",
+        "[genres.indie.adj] [genres.indie.noun]",
+        "The [genres.indie.adj] [genres.indie.noun]",
+        "[genres.indie.one]",
+        "The [genres.folk.noun]",
+        "[genres.folk.adj] [genres.folk.noun]",
+        "The [genres.folk.adj] [genres.folk.noun]",
+        "[genres.folk.one]",
+        "The [genres.electronic.noun]",
+        "[genres.electronic.adj] [genres.electronic.noun]",
+        "The [genres.electronic.adj] [genres.electronic.noun]",
+        "[genres.electronic.one]"
+      ]
+    }
+  },
+  "data": {
+    "genres": {
+      "rock": {
+        "adj": [
+          "Loud",
+          "Electric",
+          "Broken",
+          "Wild",
+          "Burning",
+          "Rolling",
+          "Midnight",
+          "Rusty",
+          "Velvet",
+          "Crooked",
+          "Neon",
+          "Restless",
+          "Howling",
+          "Lucky",
+          "Golden",
+          "Faded",
+          "Silver",
+          "Reckless"
+        ],
+        "noun": [
+          "Engines",
+          "Hearts",
+          "Wolves",
+          "Rebels",
+          "Saints",
+          "Riders",
+          "Kings",
+          "Sparks",
+          "Machines",
+          "Thieves",
+          "Highways",
+          "Ghosts",
+          "Bullets",
+          "Lions",
+          "Strangers",
+          "Dogs",
+          "Diamonds",
+          "Radios"
+        ],
+        "one": [
+          "Overdrive",
+          "Voltage",
+          "Wreckage",
+          "Amplifier",
+          "Thunderbird",
+          "Firecracker",
+          "Jukebox",
+          "Roadhouse",
+          "Riot",
+          "Highwire"
+        ]
+      },
+      "metal": {
+        "adj": [
+          "Iron",
+          "Black",
+          "Frozen",
+          "Burning",
+          "Dead",
+          "Grim",
+          "Infernal",
+          "Shattered",
+          "Eternal",
+          "Savage",
+          "Crimson",
+          "Cursed",
+          "Hollow",
+          "Dread",
+          "Molten",
+          "Ancient",
+          "Ashen",
+          "Feral"
+        ],
+        "noun": [
+          "Throne",
+          "Serpent",
+          "Tomb",
+          "Gallows",
+          "Crown",
+          "Abyss",
+          "Storm",
+          "Altar",
+          "Wolf",
+          "Pyre",
+          "Legion",
+          "Oath",
+          "Blade",
+          "Requiem",
+          "Inferno",
+          "Maw",
+          "Sepulchre",
+          "Colossus"
+        ],
+        "one": [
+          "Morgrave",
+          "Ashbringer",
+          "Ironvein",
+          "Grimfrost",
+          "Deathmarch",
+          "Hellforge",
+          "Bloodmoon",
+          "Nightfall",
+          "Stormcrow",
+          "Bonefire"
+        ]
+      },
+      "punk": {
+        "adj": [
+          "Angry",
+          "Cheap",
+          "Rotten",
+          "Useless",
+          "Bored",
+          "Broke",
+          "Dirty",
+          "Sick",
+          "Busted",
+          "Nasty",
+          "Sore",
+          "Petty",
+          "Plastic",
+          "Toxic",
+          "Rude",
+          "Spiteful",
+          "Drunk",
+          "Stupid"
+        ],
+        "noun": [
+          "Rats",
+          "Kids",
+          "Teeth",
+          "Riots",
+          "Dropouts",
+          "Lungs",
+          "Losers",
+          "Wasters",
+          "Bricks",
+          "Fists",
+          "Mutants",
+          "Pigeons",
+          "Spitters",
+          "Vandals",
+          "Strays",
+          "Leeches",
+          "Pests",
+          "Weirdos"
+        ],
+        "one": [
+          "Nosebleed",
+          "Hangover",
+          "Detention",
+          "Shrapnel",
+          "Graffiti",
+          "Bin Fire",
+          "Dole Queue",
+          "Static",
+          "Fallout",
+          "Headache"
+        ]
+      },
+      "indie": {
+        "adj": [
+          "Paper",
+          "Quiet",
+          "Tiny",
+          "Sleepy",
+          "Strange",
+          "Gentle",
+          "Pale",
+          "Soft",
+          "Lonely",
+          "Borrowed",
+          "Polite",
+          "Sunday",
+          "Secret",
+          "Distant",
+          "Little",
+          "Second-Hand",
+          "Seaside",
+          "Foreign"
+        ],
+        "noun": [
+          "Animals",
+          "Lanterns",
+          "Oceans",
+          "Postcards",
+          "Weekends",
+          "Cardigans",
+          "Satellites",
+          "Pianos",
+          "Fireflies",
+          "Bicycles",
+          "Lighthouses",
+          "Strangers",
+          "Daydreams",
+          "Photographs",
+          "Kites",
+          "Planets",
+          "Gardens",
+          "Envelopes"
+        ],
+        "one": [
+          "Wallpaper",
+          "Tidal",
+          "Polaroid",
+          "Driftwood",
+          "Paperweight",
+          "Lullaby",
+          "Seafront",
+          "Tangerine",
+          "Atlas",
+          "Junebug"
+        ]
+      },
+      "folk": {
+        "adj": [
+          "Old",
+          "Wandering",
+          "Willow",
+          "Hollow",
+          "Black",
+          "Barley",
+          "Crooked",
+          "Green",
+          "Wild",
+          "Salt",
+          "Ragged",
+          "Weary",
+          "Silver",
+          "Mossy",
+          "Winter",
+          "Hedgerow",
+          "Rambling",
+          "Lost"
+        ],
+        "noun": [
+          "Fiddlers",
+          "Ploughmen",
+          "Ravens",
+          "Hollows",
+          "Shepherds",
+          "Pilgrims",
+          "Rivers",
+          "Mariners",
+          "Harvest",
+          "Ballads",
+          "Drovers",
+          "Moors",
+          "Weavers",
+          "Hares",
+          "Brambles",
+          "Lanterns",
+          "Tinkers",
+          "Wells"
+        ],
+        "one": [
+          "Hearthsong",
+          "Wayfarer",
+          "Driftwood",
+          "Kestrel",
+          "Fernhill",
+          "Ashgrove",
+          "Thornbury",
+          "Rosehip",
+          "Saltmarsh",
+          "Starling"
+        ]
+      },
+      "electronic": {
+        "adj": [
+          "Digital",
+          "Liquid",
+          "Neon",
+          "Hyper",
+          "Analog",
+          "Crystal",
+          "Solar",
+          "Static",
+          "Infinite",
+          "Chrome",
+          "Ultra",
+          "Midnight",
+          "Synthetic",
+          "Electric",
+          "Lunar",
+          "Velvet",
+          "Glass",
+          "Quantum"
+        ],
+        "noun": [
+          "Signals",
+          "Pulse",
+          "Circuits",
+          "Waves",
+          "Echoes",
+          "Machines",
+          "Lasers",
+          "Satellites",
+          "Grid",
+          "Prism",
+          "Vectors",
+          "Frequencies",
+          "Systems",
+          "Horizons",
+          "Particles",
+          "Modules",
+          "Codes",
+          "Lights"
+        ],
+        "one": [
+          "Nightdrive",
+          "Hologram",
+          "Datastream",
+          "Lumen",
+          "Wavelength",
+          "Afterglow",
+          "Polygon",
+          "Arcade",
+          "Modular",
+          "Sequencer"
+        ]
+      }
+    }
+  },
+  "article": {
+    "hero": {
+      "title": "🎸 Band Name Generator",
+      "tagline": "Band names by genre, built on the patterns real bands use."
+    },
+    "intro": "Most band names follow a handful of shapes: <em>The</em> and a plural (The Beatles, The Strokes), an adjective and a noun (Arctic Monkeys), a single word (Nirvana, Metallica) or something stranger. Genre changes the words you reach for, not the shapes. This **band name generator** builds names in all those shapes for six genres, so you can find one that sounds like your music before you check it's free.",
+    "sections": [
+      {
+        "heading": "Where famous band names came from",
+        "content": "<ul><li><strong>The Beatles</strong>: a pun on beetles and the beat, a nod to Buddy Holly's Crickets.</li><li><strong>The Rolling Stones</strong>: from Muddy Waters' song \"Rollin' Stone\".</li><li><strong>Radiohead</strong>: from the Talking Heads song \"Radio Head\", after the band started out as On a Friday.</li><li><strong>Pink Floyd</strong>: from two blues musicians, Pink Anderson and Floyd Council.</li><li><strong>Black Sabbath</strong>: from the 1963 horror film of the same name, starring Boris Karloff.</li><li><strong>Led Zeppelin</strong>: from a joke that the band would go down like a lead balloon; the spelling was changed so people wouldn't say \"leed\".</li></ul><p>The pattern is worth noticing: a song, a joke, a film, a pun. Names that came from somewhere usually have more character than names made up to sound cool.</p>"
+      },
+      {
+        "heading": "How genre changes the name",
+        "content": "<ul><li><strong>Metal:</strong> dark, heavy and often ancient. Thrones, serpents, iron and frost.</li><li><strong>Punk:</strong> short, rude and funny. A punk name should annoy someone's parents.</li><li><strong>Indie:</strong> gentle and a little odd. Everyday objects, weather, small sad animals.</li><li><strong>Folk:</strong> landscape and work. Rivers, hedgerows, fiddlers and ploughmen.</li><li><strong>Electronic:</strong> light, signals and machines. Often one word, often invented.</li><li><strong>Rock:</strong> movement and noise. Engines, highways, wolves and hearts.</li></ul>"
+      },
+      {
+        "heading": "Check it's free before you print the T-shirts",
+        "content": "<p>Thousands of bands share names, and finding out after your first release is painful. Before you settle on one:</p><ul><li><strong>Search the streaming services</strong> (Spotify, Apple Music) and <strong>Bandcamp</strong> for the exact name.</li><li><strong>Search Discogs and MusicBrainz</strong>, which list older and smaller releases streaming may miss.</li><li><strong>Check social handles and a domain</strong>, so fans can find you.</li><li><strong>Check trade marks</strong> if you're serious about it: the UK IPO, USPTO and EUIPO all have free searches. This isn't legal advice; if in doubt, ask someone who can give it.</li></ul><p>A small twist (a different article, an unusual spelling, an extra word) can make a taken name your own.</p>"
+      },
+      {
+        "heading": "Picking the one",
+        "content": "<ul><li><strong>Say it out loud,</strong> as a gig announcement: \"Please welcome... The Paper Lanterns!\"</li><li><strong>Imagine it on a poster and a T-shirt.</strong> Long names shrink; short ones shout.</li><li><strong>Make it searchable.</strong> A common word on its own is hard to find online. Two words are easier.</li><li><strong>Live with it for a week.</strong> If you still like it, it's probably the one.</li></ul><p>For album names, try the <a href=\"album-name-generator.html\">Album Name Generator</a>; for something darker and more atmospheric, the <a href=\"dungeon-synth-name-generator.html\">Dungeon Synth Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I check if a band name is taken?",
+        "answer": "Search Spotify, Apple Music, Bandcamp, Discogs and MusicBrainz for the exact name, then check social handles and domains. For a serious project, search trade mark registers too (UK IPO, USPTO, EUIPO)."
+      },
+      {
+        "question": "Should my band name start with \"The\"?",
+        "answer": "It's a classic shape (The Beatles, The Strokes, The Cure) and works best with a plural noun. Many bands drop it later, so pick a name that works either way."
+      },
+      {
+        "question": "Can I use these names for my band?",
+        "answer": "Yes, free and with no credit needed, but check the name isn't already used by another band first."
+      }
+    ]
+  }
+}

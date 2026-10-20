@@ -1,0 +1,191 @@
+{
+  "title": "Stage Name Generator",
+  "slug": "stage-name-generator",
+  "icon": "🎭",
+  "category": "music",
+  "published": "2026-10-20",
+  "description": "Stage names for singers, performers and DJs: a memorable first name and surname, a single name, or an initial, with the stories behind famous stage names.",
+  "seoKeywords": "stage name generator, stage names, singer name generator, artist name generator, performer names, dj name generator, music artist names",
+  "isPopular": false,
+  "filters": {
+    "format": {
+      "label": "Name format",
+      "options": [
+        "any",
+        "full",
+        "single",
+        "initial"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "full": "First and last name",
+        "single": "One name",
+        "initial": "With an initial (J. Monroe)"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "full": {
+      "recipe": "template",
+      "template": "[first] [last]"
+    },
+    "single": {
+      "recipe": "template",
+      "template": [
+        "[first]",
+        "[last]"
+      ]
+    },
+    "initial": {
+      "recipe": "template",
+      "template": "[initials]. [last]"
+    },
+    "any": {
+      "recipe": "template",
+      "template": [
+        "[first] [last]",
+        "[first] [last]",
+        "[last]",
+        "[initials]. [last]"
+      ]
+    }
+  },
+  "data": {
+    "first": [
+      "Ruby",
+      "Jude",
+      "Stella",
+      "Ezra",
+      "Ivy",
+      "Felix",
+      "Nova",
+      "Rhys",
+      "Delilah",
+      "Cole",
+      "Iris",
+      "Remy",
+      "Lola",
+      "Jasper",
+      "Wren",
+      "Otis",
+      "Juno",
+      "Milo",
+      "Scarlett",
+      "Sonny",
+      "Mabel",
+      "Ellis",
+      "Hazel",
+      "Rocco",
+      "Opal",
+      "Dexter",
+      "Vesper",
+      "Arlo",
+      "Lux",
+      "Billie",
+      "August",
+      "Bea",
+      "Cass",
+      "Dove",
+      "Eden",
+      "Frankie",
+      "Gus",
+      "Indigo",
+      "Jett",
+      "Kit",
+      "Lark",
+      "Marlo",
+      "Nico",
+      "Orla"
+    ],
+    "last": [
+      "Vale",
+      "Blue",
+      "Sterling",
+      "Starling",
+      "Monroe",
+      "Wilde",
+      "Rivers",
+      "Lane",
+      "Holloway",
+      "Rome",
+      "Vance",
+      "Marlowe",
+      "Sky",
+      "Ash",
+      "Knight",
+      "Bloom",
+      "Hart",
+      "Rain",
+      "Gold",
+      "Vega",
+      "Fox",
+      "Raven",
+      "Saint",
+      "Moon",
+      "Ford",
+      "Wolfe",
+      "Crane",
+      "Lennox",
+      "Nash",
+      "Quinn",
+      "Ember",
+      "Frost",
+      "Harlow",
+      "Ivory",
+      "Jagger",
+      "Kingsley",
+      "Lowe",
+      "Mercer",
+      "Noble",
+      "Oakley",
+      "Pierce",
+      "Royal",
+      "Swift",
+      "Thorne"
+    ],
+    "initials": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "J",
+      "K",
+      "L",
+      "M",
+      "R",
+      "T",
+      "V"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🎭 Stage Name Generator",
+      "tagline": "Stage names for singers and performers: a memorable first and last name, one name, or an initial."
+    },
+    "intro": "Plenty of famous performers aren't using the name they were born with. A stage name gives you a persona, keeps your private life separate, or just sounds better on a poster. This **stage name generator** makes names in the shapes performers use most: a striking first name and surname, a single name, or an initial and a surname.",
+    "sections": [
+      {
+        "heading": "Famous stage names and where they came from",
+        "content": "<ul><li><strong>Freddie Mercury</strong> was born Farrokh Bulsara.</li><li><strong>Elton John</strong> was born Reginald Dwight, and built his stage name from two musicians he worked with, Elton Dean and Long John Baldry.</li><li><strong>David Bowie</strong> was born David Jones and changed his name to avoid confusion with Davy Jones of the Monkees.</li><li><strong>Lady Gaga</strong> took her name from Queen's song \"Radio Ga Ga\".</li><li><strong>Bruno Mars</strong> was born Peter Hernandez; \"Bruno\" was a childhood nickname.</li></ul><p>Most of these began with something real: a nickname, a hero, a song. The generator gives you raw material; your story makes it stick.</p>"
+      },
+      {
+        "heading": "Choosing a stage name",
+        "content": "<ul><li><strong>Easy to say and spell.</strong> People need to search for you after hearing your name once.</li><li><strong>Fits your music.</strong> \"Vesper Vale\" suits dream pop; \"Rocco Knight\" suits rock.</li><li><strong>Check it's free</strong> on streaming services, social media and as a domain, before you release anything.</li><li><strong>Think long-term.</strong> You may be answering to this name for years.</li></ul><p>For band names, try the <a href=\"band-name-generator.html\">Band Name Generator</a>; for rap names, the <a href=\"rapper-name-generator.html\">Rapper Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do I need to legally change my name to use a stage name?",
+        "answer": "No. Many performers use a stage name professionally without changing their legal name. For contracts and royalties, check the rules where you live; this isn't legal advice."
+      },
+      {
+        "question": "How do I know if a stage name is taken?",
+        "answer": "Search streaming services, social media and domain names for the exact name. A small change, like an initial, can make a taken name your own."
+      }
+    ]
+  }
+}

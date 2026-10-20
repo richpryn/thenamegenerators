@@ -222,6 +222,10 @@
     "intro": "<p>This site started because its maker, a musician, kept needing names: for projects, albums, songs and nights out. The music generators are where that began.</p><p>The <a href=\"../posts/dungeon-synth-name-generator.html\">Dungeon Synth Name Generator</a> names atmospheric fantasy projects and albums, and the <a href=\"../posts/event-name-generator.html\">Event Name Generator</a> has a whole section for gigs, club nights and open mics.</p>",
     "featured": [
       {
+        "key": "band",
+        "note": "band names by genre, and how to check a name is free."
+      },
+      {
         "key": "dungeon_synth",
         "note": "project and album names, from dark castles to cosy folk."
       },
@@ -231,8 +235,14 @@
       }
     ],
     "generators": [
+      "band",
       "dungeon_synth",
-      "event"
+      "event",
+      "album",
+      "song_title",
+      "rapper",
+      "stage_name",
+      "wu_tang"
     ]
   },
   {
