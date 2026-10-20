@@ -35,6 +35,7 @@ New and rewritten pages. Read them on the live site; reply in any session with c
 - [ ] Elven Sword (rebuilt: every name now has a real Sindarin or Quenya meaning)
 - [ ] Dungeon Synth (rewritten without your notes; your notes would make it better)
 - [ ] Company and Brand (rewritten; Brand's word lists rebuilt by hand, with a "with a product word" option)
+- [ ] Axe (rebuilt: Norse, dwarven, brutal and homely names, with epithets or descriptions)
 - [ ] Sword (rebuilt: heroic, dark and Old English names with epithets or descriptions; famous fantasy swords removed)
 - [ ] Fairy and Fairy Town (rebuilt from folklore: flower fairies, Seelie and Unseelie courts, household sprites; homes under the hill, in the wood, fairy rings and courts)
 - [ ] Angel and Demon (rebuilt: traditional angels with Hebrew meanings and new -el names; the 72 Goetia demons with ranks, and new demons with rank and domain)
