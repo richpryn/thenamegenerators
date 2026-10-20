@@ -1,0 +1,287 @@
+{
+  "title": "Halfling Name Generator",
+  "slug": "halfling-name-generator",
+  "icon": "🍀",
+  "category": "dnd",
+  "published": "2026-10-20",
+  "description": "Halfling names for D&D: a homely given name, a family name that started life as a nickname (Thistledown, Puddlefoot), and a personal nickname if they've earned one.",
+  "seoKeywords": "halfling names, halfling name generator, dnd halfling names, halfling last names, 5e halfling names, hobbit names, lightfoot halfling names",
+  "isPopular": false,
+  "filters": {
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "full_name",
+        "with_nickname",
+        "given",
+        "family"
+      ],
+      "optionLabels": {
+        "full_name": "Given + family name",
+        "with_nickname": "With a nickname",
+        "given": "Given name only",
+        "family": "Family name only"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "full_name": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": "[given] [family]"
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[given.{gender}] [family]"
+      }
+    },
+    "with_nickname": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": "[given] “[nicknames]” [family]"
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[given.{gender}] “[nicknames]” [family]"
+      }
+    },
+    "given": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "pick",
+          "from": "given"
+        }
+      },
+      "default": {
+        "recipe": "pick",
+        "from": "given.{gender}"
+      }
+    },
+    "family": {
+      "recipe": "pick",
+      "from": "family"
+    }
+  },
+  "data": {
+    "given": {
+      "male": [
+        "Abel",
+        "Alden",
+        "Barnaby",
+        "Bartle",
+        "Benno",
+        "Bram",
+        "Cobb",
+        "Corwin",
+        "Dalby",
+        "Dobbin",
+        "Ebbin",
+        "Edric",
+        "Fenwick",
+        "Ferris",
+        "Garvey",
+        "Gilly",
+        "Hob",
+        "Jory",
+        "Kip",
+        "Lenny",
+        "Lobb",
+        "Marten",
+        "Merrin",
+        "Ned",
+        "Nob",
+        "Ollie",
+        "Pip",
+        "Quincy",
+        "Rafe",
+        "Rollo",
+        "Rudy",
+        "Tobin",
+        "Todd",
+        "Tully",
+        "Wat",
+        "Wilby",
+        "Wendel"
+      ],
+      "female": [
+        "Adela",
+        "Amity",
+        "Bella",
+        "Briar",
+        "Bryony",
+        "Clover",
+        "Daisy",
+        "Dora",
+        "Elsie",
+        "Fern",
+        "Fia",
+        "Ginny",
+        "Hazel",
+        "Hetty",
+        "Ivy",
+        "Jessa",
+        "Kitty",
+        "Lark",
+        "Lettie",
+        "Linnet",
+        "Mabel",
+        "Marigold",
+        "Minnie",
+        "Nell",
+        "Nettie",
+        "Pansy",
+        "Peony",
+        "Poppy",
+        "Primrose",
+        "Saffi",
+        "Sorrel",
+        "Tansy",
+        "Tilly",
+        "Wren",
+        "Winnie",
+        "Bree",
+        "Juniper"
+      ]
+    },
+    "family": [
+      "Applebough",
+      "Barleyfoot",
+      "Barrowdown",
+      "Bramblewick",
+      "Butterbank",
+      "Cobbleknot",
+      "Copperkettle",
+      "Dewdrop",
+      "Fairbarrel",
+      "Fernbrook",
+      "Greenmeadow",
+      "Hearthstone",
+      "Honeypot",
+      "Kettlewhistle",
+      "Leafwhistle",
+      "Meadowsweet",
+      "Nettlebrook",
+      "Oakbarrel",
+      "Pebblefoot",
+      "Puddlefoot",
+      "Quickstep",
+      "Rosehip",
+      "Swiftwater",
+      "Tanglefoot",
+      "Thistledown",
+      "Tumblebrook",
+      "Warmhearth",
+      "Wheatfield",
+      "Willowbank",
+      "Bracken",
+      "Hillhollow",
+      "Mossbrook",
+      "Pipewood",
+      "Riverbend",
+      "Sweetwater",
+      "Teapot",
+      "Tinderbox",
+      "Brightbarrel",
+      "Goodbloom",
+      "Mapleleaf"
+    ],
+    "nicknames": [
+      "Lucky",
+      "Quickfingers",
+      "Tealeaf",
+      "Butterfingers",
+      "Shortstep",
+      "Biscuit",
+      "Two-Pies",
+      "Sneezewort",
+      "Whistle",
+      "Jinx",
+      "Pockets",
+      "Muddy",
+      "Sleepy",
+      "Crumbs",
+      "Kettle",
+      "Bounce",
+      "Hopscotch",
+      "Ladle",
+      "Pudding",
+      "Sprout",
+      "Nimble",
+      "Halfpint",
+      "Smudge",
+      "Patch",
+      "Jam",
+      "Thimble",
+      "Buttons",
+      "Pickle",
+      "Tumble",
+      "Dandelion"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🍀 Halfling Name Generator",
+      "tagline": "Homely given names, family names that began as nicknames, and nicknames that might yet stick."
+    },
+    "intro": "Halfling names sound like the people: warm, short and a little bit cheeky. In D&D a halfling has a given name, a family name and possibly a nickname, and the family name is often a nickname that stuck so well it was handed down. This **halfling name generator** builds all three, so you can meet Hetty Kettlewhistle, or her cousin Pip “Butterfingers” Puddlefoot.",
+    "sections": [
+      {
+        "heading": "Given name, family name, nickname",
+        "content": "<p>The fifth-edition Player's Handbook (2014) describes halfling names in three parts:</p><ul><li><strong>A given name.</strong> Short and friendly, often the kind of name you'd find in an English village.</li><li><strong>A family name.</strong> Often a nickname that stuck so tenaciously it was passed down the generations: a great-grandmother who was quick on her feet becomes the Quickstep family.</li><li><strong>A nickname</strong>, which halflings may or may not have. It's earned, usually by something they did or keep doing.</li></ul><p>The book also splits halflings into lightfoot (sociable wanderers) and stout (hardier, said to have dwarven blood). Both use the same kind of names.</p>"
+      },
+      {
+        "heading": "What makes a family name sound halfling",
+        "content": "<p>Halfling family names are compound words built from home and countryside:</p><ul><li><strong>Food and drink:</strong> Honeypot, Oakbarrel, Teapot.</li><li><strong>Plants and fields:</strong> Thistledown, Bramblewick, Wheatfield.</li><li><strong>Water and land:</strong> Fernbrook, Willowbank, Riverbend.</li><li><strong>Feet and moving about:</strong> Barleyfoot, Puddlefoot, Quickstep.</li></ul><p>Say the name and picture the ancestor it came from. If the picture makes you smile, it's a halfling name.</p>"
+      },
+      {
+        "heading": "Halflings and Tolkien's hobbits",
+        "content": "<p>D&D's halflings began as a stand-in for Tolkien's hobbits, and the names still show it. Tolkien gave hobbits family names like Baggins, Took, Brandybuck and Proudfoot, and hobbit girls were often named after flowers or jewels: Belladonna, Lobelia, Primula.</p><p>This generator's female names lean the same way (Marigold, Poppy, Primrose) without using Tolkien's own characters. For names from Middle-earth itself, see the <a href=\"lotr-wizard-name-generator.html\">LOTR Wizard</a> and <a href=\"lotr-orc-name-generator.html\">LOTR Orc</a> generators, or the Tolkien style in the <a href=\"elf-name-generator.html\">Elf Name Generator</a>.</p>"
+      },
+      {
+        "heading": "Picking a nickname",
+        "content": "<ul><li><strong>Make it about something they did.</strong> \"Two-Pies\" has a story behind it, and someone at the table will ask.</li><li><strong>Let it be a bit unfair.</strong> Nicknames are given by others. A careful rogue called \"Butterfingers\" has a reason to prove everyone wrong.</li><li><strong>Watch it become a family name.</strong> If your halfling becomes famous, their grandchildren might carry the nickname as a surname, the way the book describes.</li></ul>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do halfling names work in D&D?",
+        "answer": "A halfling has a given name, a family name and sometimes a nickname. In the fifth-edition Player's Handbook, family names are often old nicknames that stuck so well they were passed down."
+      },
+      {
+        "question": "Are halflings the same as hobbits?",
+        "answer": "D&D's halflings were inspired by Tolkien's hobbits, so the names sound alike, but halflings are D&D's own people with their own lore, such as the lightfoot and stout halflings."
+      },
+      {
+        "question": "What are good halfling last names?",
+        "answer": "Compound words from home and countryside: Thistledown, Kettlewhistle, Puddlefoot, Honeypot. Set Name Format to \"Family name only\" to see a list."
+      },
+      {
+        "question": "Are these names from the Player's Handbook?",
+        "answer": "No. They're new names in the same style, though a few given names, like Bree and Daisy, are ordinary English names that may appear elsewhere."
+      }
+    ]
+  }
+}

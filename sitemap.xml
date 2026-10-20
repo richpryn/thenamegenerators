@@ -210,6 +210,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Dragonborn Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/dragonborn-name-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Dungeon Synth Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/dungeon-synth-name-generator.html</loc>
@@ -308,6 +315,20 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Gnome Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/gnome-name-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Goblin Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/goblin-name-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Guild Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/guild-name-generator.html</loc>
@@ -315,9 +336,23 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Half-Elf Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/half-elf-name-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Half-Orc Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/half-orc-name-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Halfling Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/halfling-name-generator.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
