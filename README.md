@@ -1,274 +1,147 @@
 # Name Generators V2
 
-A scalable name generator website system where adding content = editing JSON only. No code changes ever needed.
+A name generator website where adding content means editing JSON only. Each generator is one file holding its names **and** the recipe for building them, so adding a generator never means touching code.
 
 ## 🏗️ Architecture
 
 ```
-JSON Files (Content)
+content/ (JSON you edit)
         ↓
-   Build Scripts (Auto-generate)
+   node scripts/build-pages.js
         ↓
-HTML Pages (Output - Never edit directly!)
+HTML pages (output - never edit directly!)
 ```
 
-**The golden rule:** Edit JSON → Run build script → Pages update automatically
+**The golden rule:** Edit JSON → Run the build → Pages update automatically
 
 ## 📁 Project Structure
 
 ```
 project/
-├── index.html                       # Homepage (dynamic)
-├── all-generators.html             # All generators list
-├── styles/
-│   ├── main.css                    # Global styles
-│   └── blog.css                    # Article/blog styles
-├── data/
-│   ├── fantasy.json                # Category data files
-│   └── [other categories].json
+├── content/                        # ← everything you edit
+│   ├── categories.json             # Categories, in menu order, and which generators each shows
+│   └── generators/
+│       ├── elf.json                # One file per generator: page text, filters, recipe, names
+│       └── ...
 ├── lib/
-│   └── generator.js                # Core generator logic
+│   ├── recipe-engine.js            # Builds names by following a generator's recipe
+│   └── page.js                     # Menu + generator widget used by every page
 ├── scripts/
-│   ├── build-pages.js              # Auto-generates all HTML pages
-│   ├── update-homepage.js          # Updates category counts on homepage
-│   └── validate-data.js            # Validates all JSON files
-├── categories/
-│   └── [auto-generated]/           # Category landing pages
-└── posts/                          # Individual generator pages
-    └── [auto-generated]/
+│   ├── build-pages.js              # Builds all pages from content/
+│   ├── validate-data.js            # Checks content/ without building
+│   └── content.js                  # Loading + checks shared by both
+├── styles/                         # main.css, blog.css
+├── index.html                      # Homepage (hand-written; marked sections filled by the build)
+├── all-generators.html             # Hand-written; generator list filled by the build
+├── about.html                      # Hand-written; menu filled by the build
+├── posts/                          # Generator pages        (built)
+├── categories/                     # Category pages         (built)
+├── data/generators/                # Names for the homepage generator (built)
+└── sitemap.xml, sitemap.html       # (built)
 ```
 
-## 🚀 Getting Started
+## 🚀 Workflow
 
-### 1. Validate Your Data
+1. **Edit** a file in `content/`
+2. **Build**: `node scripts/build-pages.js`
+   It checks everything first and stops with a clear message if something is wrong.
+3. **Test**: run `python3 -m http.server 8000` and open http://localhost:8000
+   (generator pages also work by double-clicking the file)
 
-Before building, validate your JSON files:
+`node scripts/validate-data.js` runs the same checks without building.
 
-```bash
-node scripts/validate-data.js
-```
-
-This checks for:
-- Required fields present
-- Minimum 100 names per generator (warning)
-- Valid filter structures
-- No duplicate slugs
-- Related generators exist
-- SEO fields not empty
-
-### 2. Build All Pages
-
-Generate all HTML pages from JSON:
-
-```bash
-node scripts/build-pages.js
-```
-
-This creates:
-- Individual generator pages in `/posts/`
-- Category landing pages in `/categories/`
-- Updates `all-generators.html`
-
-### 3. Update Homepage
-
-Update category counts and popular generators:
-
-```bash
-node scripts/update-homepage.js
-```
-
-Or the homepage will auto-populate via JavaScript when loaded.
+The checks catch: missing fields, duplicate slugs, generators not listed in a category, recipes pointing at lists that don't exist, filter options that never produce names, and stray brackets or "undefined" in output. They warn on empty lists and generators with fewer than 100 names.
 
 ## 📝 Adding Content
 
-### Adding Names to an Existing Generator
+### Adding names to a generator
 
-1. Edit the JSON file (e.g., `data/fantasy.json`)
-2. Add names to the appropriate `data` section:
+Open its file in `content/generators/` and add to the right list:
 
 ```json
 "data": {
   "male": {
-    "tolkien": [
-      "Legolas",
-      "Elrond",
-      "NEW_NAME_1",  // <- Just add here
-      "NEW_NAME_2",
-      // ... add more
-    ]
+    "tolkien": ["Legolas", "Elrond", "NEW_NAME_HERE"]
   }
 }
 ```
 
-3. Run `node scripts/build-pages.js` to regenerate pages
+Then run the build.
 
-### Adding a New Generator
+### Adding a new generator
 
-1. Edit the category JSON file (e.g., `data/fantasy.json`)
-2. Add a new generator object to the `generators` section:
+1. Copy a similar file in `content/generators/` (e.g. `elf.json` → `goblin.json`). The file name is the generator's key.
+2. Change the title, slug, icon, description, keywords, article, filters, recipe and names.
+3. Set `"category"` to its home category (used for the breadcrumb), and add `"goblin"` to that category's `generators` list in `content/categories.json`. Add it to other categories' lists too if it belongs there.
+4. Run the build.
+
+### Adding a new category
+
+Add an entry to `content/categories.json` (name, slug, icon, description, seoDescription, navLabel, generators) and run the build. Menus, the homepage and sitemaps pick it up automatically.
+
+## 🧪 Recipes
+
+A recipe says how to build one name. Lists are referred to by **path**: dots step into `data`, and `{filter}` is replaced by what the visitor chose. So with Gender = Male and Style = Tolkien, `"{gender}.{origin}"` means `data.male.tolkien`.
+
+If a path stops at a group of lists, names come from every list in the group. `"*"` means every list in the generator.
+
+| Recipe | What it does | Example |
+|---|---|---|
+| `pick` | One name from one list | `"recipe": "pick", "from": "{gender}.{origin}"` |
+| `combine` | One item from each list, joined | `"recipe": "combine", "parts": ["{gender}", "surnames"], "join": " "` |
+| `template` | Fill a pattern: `[path]` draws from a list, `{filter}` inserts a choice or typed text | `"recipe": "template", "template": "The [baseNames] Shield"` |
+| `switch` | Use a different recipe for each option of one filter | see below |
+
+Extras:
+
+- **`"join": "auto"`** (combine): adds a space unless the next part starts lowercase, so Night + shade = *Nightshade* but Agent + Kane = *Agent Kane*.
+- **Several templates**: give `"template"` a list and one is picked at random each time, e.g. `["The [single_aliases]", "[single_aliases]"]`.
+- **`"slots"`**: fill placeholders inside the names themselves. `"slots": { "Name": "{type}" }` turns a drawn title like `"House of [Name]"` into *House of Wolf*.
+- **`"distinct"`**: stop names in one batch from looking alike. Each rule compares the `"first"` word or the `"rest"` of the name; `"length"` compares only the first few letters, and `"alike"` lists starts that count as the same sound. See `funny_wizard.json`.
+
+`switch` example (from `angel.json`):
 
 ```json
-"generators": {
-  "elf": { ... },
-  "goblin": {  // <- New generator
-    "title": "Goblin Name Generator",
-    "slug": "goblin-name-generator",
-    "description": "...",
-    "seoKeywords": "...",
-    "icon": "👺",
-    "isPopular": false,
-    "filters": { ... },
-    "data": { ... },
-    "article": { ... },
-    "relatedGenerators": [ ... ]
-  }
+"recipe": "switch",
+"on": "format",
+"cases": {
+  "first_name":        { "recipe": "pick",     "from": "{gender}" },
+  "full_name":         { "recipe": "template", "template": "[{gender}] [surnames]" },
+  "full_name_epithet": { "recipe": "template", "template": "[{gender}] [surnames], [epithets]" }
 }
 ```
 
-3. Run `node scripts/build-pages.js`
+Add `"default": { ... }` for options not listed in `cases` (see `brand.json`).
 
-### Adding a New Category
-
-1. Create a new JSON file in `/data/` (e.g., `data/music.json`)
-2. Follow the structure from `data/fantasy.json`
-3. Run `node scripts/build-pages.js`
-4. The homepage will automatically include the new category
-
-## 📋 JSON Structure
-
-### Category File Structure
+## 🎛️ Filters
 
 ```json
-{
-  "categoryInfo": {
-    "name": "Fantasy",
-    "slug": "fantasy",
-    "icon": "⚔️",
-    "description": "...",
-    "seoDescription": "...",
-    "navLabel": "Fantasy Names"
+"filters": {
+  "gender": {
+    "label": "Gender",
+    "options": ["male", "female", "neutral"],
+    "optionLabels": { "neutral": "Gender-neutral" }
   },
-  "generators": {
-    "generatorKey": {
-      "title": "Generator Title",
-      "slug": "generator-slug",
-      "description": "...",
-      "seoKeywords": "...",
-      "icon": "🧝",
-      "isPopular": true,
-      "popularRank": 7,
-      "filters": { ... },
-      "data": { ... },
-      "article": { ... },
-      "relatedGenerators": [ ... ]
-    }
+  "characterName": {
+    "type": "text",
+    "label": "Character Name",
+    "placeholder": "Enter your character's name",
+    "default": "Your Character"
   }
 }
 ```
 
-### Generator Data Structure
+`optionLabels` is optional; without it `non_binary` shows as "Non Binary". Text boxes are used in templates as `{characterName}`.
 
-The `data` field can be structured based on your filters:
-
-**Simple (no filters):**
-```json
-"data": [
-  "Name 1",
-  "Name 2",
-  ...
-]
-```
-
-**With filters:**
-```json
-"data": {
-  "male": {
-    "tolkien": [ ... ],
-    "dnd": [ ... ]
-  },
-  "female": {
-    "tolkien": [ ... ],
-    "dnd": [ ... ]
-  }
-}
-```
-
-The structure should match your filter options exactly.
-
-## 🎯 Workflow
-
-1. **Edit JSON** → Add/update names in `data/*.json`
-2. **Validate** → `node scripts/validate-data.js`
-3. **Build** → `node scripts/build-pages.js`
-4. **Update Homepage** → `node scripts/update-homepage.js` (optional, auto-updates)
-5. **Test** → Open `index.html` in browser
-
-## 🔧 Scripts Reference
-
-### `build-pages.js`
-- Reads all JSON files in `/data/`
-- Generates individual generator pages
-- Generates category landing pages
-- Updates `all-generators.html`
-
-### `validate-data.js`
-- Validates all JSON files
-- Checks required fields
-- Warns about low name counts
-- Exits with error code if issues found
-
-### `update-homepage.js`
-- Updates category counts on homepage
-- Updates popular generators section
-- Updates category dropdown
-
-## 📦 Requirements
-
-- Node.js (for build scripts)
-- Modern web browser (for viewing)
-- No external dependencies (vanilla JavaScript)
+Dropdowns run top to bottom: options that have no names for the choices above them are hidden. For example, dragon types that only exist for "neutral" don't appear while "male" is selected.
 
 ## 🎨 Customization
 
-### Styling
-- Edit `styles/main.css` for global styles
-- Edit `styles/blog.css` for article pages
+- **Styling**: `styles/main.css` (global), `styles/blog.css` (article pages)
+- **Page templates**: `scripts/build-pages.js`
+- **Homepage, All Generators and About**: edit the HTML directly, but leave the `<!-- BUILD:... -->` sections alone, since the build rewrites them
 
-### Generator Logic
-- Edit `lib/generator.js` for core generation logic
+## 📦 Requirements
 
-### Page Templates
-- Edit `scripts/build-pages.js` to modify HTML templates
-
-## ✅ Success Criteria
-
-- ✅ Adding 100 names → Edit JSON, run build script
-- ✅ Adding new generator → Edit JSON, run build script
-- ✅ Adding new category → Create JSON file, run build script
-- ✅ No code changes needed for content updates
-
-## 📚 Example: Adding Names to Elf Generator
-
-```json
-// data/fantasy.json
-"elf": {
-  "data": {
-    "male": {
-      "tolkien": [
-        "Legolas",
-        "Elrond",
-        "NEW_NAME_HERE"  // <- Add here
-      ]
-    }
-  }
-}
-```
-
-Then run:
-```bash
-node scripts/build-pages.js
-```
-
-The page at `posts/elf-name-generator.html` will automatically update!
-
-
+- Node.js (for the build)
+- No other dependencies

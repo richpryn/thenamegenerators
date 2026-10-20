@@ -49,7 +49,16 @@
                 <div class="nav-dropdown">
                     <a href="#" class="nav-dropdown-toggle">Categories</a>
                     <div class="nav-dropdown-menu" id="category-dropdown">
-                        <!-- Populated by JavaScript -->
+                        <a href="../categories/concepts-names.html">💭 Concept Names</a>
+                        <a href="../categories/events-names.html">🎉 Event Names</a>
+                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
+                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
+                        <a href="../categories/music-names.html">🎵 Music Names</a>
+                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
+                        <a href="../categories/organizations-names.html">🏛️ Organization Names</a>
+                        <a href="../categories/people-names.html">👥 People Names</a>
+                        <a href="../categories/places-names.html">🗺️ Place Names</a>
+                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
                     </div>
                 </div>
             </div>
@@ -103,52 +112,6 @@
         </footer>
     </div>
 
-    <script src="../lib/generator.js"></script>
-    <script>
-        // Populate category dropdown
-        (async () => {
-            const categories = await window.nameGenerator.getCategories();
-            const dropdown = document.getElementById('category-dropdown');
-            // Clear any existing items first to prevent duplicates
-            dropdown.innerHTML = '';
-            categories.forEach(cat => {
-                const link = document.createElement('a');
-                link.href = `../categories/${cat.slug}-names.html`;
-                link.textContent = `${cat.icon} ${cat.navLabel}`;
-                dropdown.appendChild(link);
-            });
-        })();
-        
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.getElementById('nav-links');
-        const categoryDropdown = document.querySelector('.nav-dropdown');
-        
-        if (menuToggle) {
-            menuToggle.addEventListener('click', () => {
-                menuToggle.classList.toggle('active');
-                navLinks.classList.toggle('active');
-            });
-            
-            // Close menu when clicking on a link
-            navLinks.addEventListener('click', (e) => {
-                if (e.target.tagName === 'A' && !e.target.classList.contains('nav-dropdown-toggle')) {
-                    menuToggle.classList.remove('active');
-                    navLinks.classList.remove('active');
-                }
-            });
-            
-            // Handle dropdown toggle on mobile
-            const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
-            if (dropdownToggle) {
-                dropdownToggle.addEventListener('click', (e) => {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        categoryDropdown.classList.toggle('active');
-                    }
-                });
-            }
-        }
-    </script>
+    <script src="../lib/page.js"></script>
 </body>
 </html>

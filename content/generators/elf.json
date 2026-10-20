@@ -1,0 +1,130 @@
+{
+  "title": "Elf Name Generator",
+  "slug": "elf-name-generator",
+  "icon": "🧝",
+  "category": "fantasy",
+  "description": "Generate elegant elven names inspired by Tolkien, D&D, and fantasy literature. Perfect for high elves, wood elves, and dark elves.",
+  "seoKeywords": "elf names, elven names, fantasy elf names, tolkien elf names, dnd elf names",
+  "isPopular": true,
+  "popularRank": 7,
+  "filters": {
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "male",
+        "female",
+        "neutral"
+      ]
+    },
+    "origin": {
+      "label": "Style",
+      "options": [
+        "tolkien",
+        "dnd",
+        "generic"
+      ]
+    }
+  },
+  "recipe": "pick",
+  "from": "{gender}.{origin}",
+  "data": {
+    "male": {
+      "tolkien": [
+        "Legolas",
+        "Elrond",
+        "Celeborn",
+        "Glorfindel",
+        "Gil-galad"
+      ],
+      "dnd": [
+        "Aerin",
+        "Caelum",
+        "Theron",
+        "Eldrin",
+        "Varian"
+      ],
+      "generic": [
+        "Alvar",
+        "Eirian",
+        "Lorien",
+        "Silvanus",
+        "Thalion"
+      ]
+    },
+    "female": {
+      "tolkien": [
+        "Galadriel",
+        "Arwen",
+        "Lúthien",
+        "Idril",
+        "Aredhel"
+      ],
+      "dnd": [
+        "Aeloria",
+        "Sylvara",
+        "Naivara",
+        "Shanairra",
+        "Meriele"
+      ],
+      "generic": [
+        "Elara",
+        "Aerin",
+        "Lirael",
+        "Sylvana",
+        "Elanor"
+      ]
+    },
+    "neutral": {
+      "generic": [
+        "Ash",
+        "Raven",
+        "Storm",
+        "River",
+        "Sky"
+      ]
+    }
+  },
+  "article": {
+    "hero": {
+      "title": "🧝 Elf Name Generator",
+      "tagline": "Generate elegant elven names inspired by Tolkien, D&D, and fantasy literature. Perfect for characters, stories, and gaming."
+    },
+    "intro": "Elf names carry the grace, wisdom, and ancient magic of the Fair Folk. From the forests of Middle-earth to the realms of Dungeons & Dragons, elven names evoke images of timeless beauty, arcane knowledge, and mystical power. Our **elf name generator** draws from the rich linguistic traditions of fantasy literature, creating names that feel authentic and magical.",
+    "sections": [
+      {
+        "heading": "The Elegance of Elven Names",
+        "content": "<p>Elven naming traditions are among the most sophisticated in fantasy literature. Tolkien's elves speak Sindarin and Quenya, languages with their own grammar and phonetic rules. D&D elves have their own distinct naming patterns that reflect different subraces - High Elves, Wood Elves, and Dark Elves each have characteristic sounds and structures.</p><p>The best elf names flow like poetry, incorporating elements of nature, light, and the passage of ages. They often feature liquid consonants ('l', 'r'), soft vowels, and graceful suffixes like '-iel', '-wen', '-las', and '-dor'.</p>"
+      },
+      {
+        "heading": "How to Use Elf Names",
+        "content": "<p>Elf names work beautifully for:</p><ul><li><strong>D&D Characters:</strong> Create memorable player characters or NPCs</li><li><strong>Fantasy Writing:</strong> Name characters in your novels or short stories</li><li><strong>Gaming:</strong> Perfect for MMORPGs, video games, or tabletop RPGs</li><li><strong>Worldbuilding:</strong> Populate your fantasy world with authentic elven cultures</li></ul>"
+      },
+      {
+        "heading": "Elven Naming Traditions by Style",
+        "content": "<p><strong>Tolkien Style:</strong> Deeply rooted in Sindarin and Quenya languages. Names like Galadriel (meaning 'maiden crowned with radiant garland') carry poetic meaning and flowing sounds.</p><p><strong>D&D Style:</strong> More accessible while maintaining elven grace. These names work well at the gaming table while still feeling magical and otherworldly.</p><p><strong>Generic Fantasy:</strong> Versatile names that work across different settings, capturing the essence of elven culture without being tied to specific fictional universes.</p>"
+      },
+      {
+        "heading": "Well-Known Elf Names in Literature and Media",
+        "content": "<p>Elven names have been immortalized through classic fantasy literature, games, and media. These iconic characters demonstrate the power of well-chosen elven names:</p><ul><li><strong>Legolas (The Lord of the Rings):</strong> Created by J.R.R. Tolkien, Legolas means 'green leaves' in Sindarin. His name perfectly captures his connection to nature and his role as a Wood Elf prince.</li><li><strong>Galadriel (The Lord of the Rings):</strong> Meaning 'maiden crowned with radiant garland' in Quenya, Galadriel's name reflects her status as one of the most powerful elves in Middle-earth.</li><li><strong>Drizzt Do'Urden (Forgotten Realms):</strong> From R.A. Salvatore's novels, Drizzt is a Dark Elf (Drow) who defies his evil heritage. His name follows Drow naming conventions with the apostrophe and unique spelling.</li><li><strong>Elrond (The Lord of the Rings):</strong> Meaning 'star-dome' in Sindarin, Elrond's name reflects his wisdom and connection to the stars, fitting for the Lord of Rivendell.</li><li><strong>Arwen (The Lord of the Rings):</strong> Meaning 'noble maiden' in Sindarin, Arwen's name reflects her royal heritage and beauty.</li><li><strong>Minsc (Baldur's Gate):</strong> A memorable elven character from the Baldur's Gate video game series, Minsc demonstrates how elven names can be both accessible and memorable in gaming contexts.</li></ul><p>These iconic names demonstrate the range of elven naming conventions: from Tolkien's linguistically complex Sindarin and Quenya names to more accessible gaming names. When creating your own elven characters, consider what their name says about their heritage, role, and connection to nature and magic.</p>"
+      },
+      {
+        "heading": "The Meaning and Derivation of Elf Names",
+        "content": "<p>Understanding the etymology and symbolism behind elven names adds depth to character creation. Many elven names draw from specific linguistic roots, mythological references, and symbolic meanings:</p><ul><li><strong>Nature and Light:</strong> Names often incorporate elements of nature (leaf, star, moon, tree) and light (radiant, bright, shining), reflecting elves' connection to the natural world and their ethereal nature.</li><li><strong>Liquid Consonants:</strong> Elven names frequently feature liquid consonants like 'l' and 'r' (Legolas, Elrond, Arwen), creating flowing, melodic sounds that suggest grace and elegance.</li><li><strong>Common Suffixes:</strong> Suffixes like '-iel' (meaning 'daughter of'), '-wen' (meaning 'maiden'), '-las' (meaning 'leaf'), and '-dor' (meaning 'son of') are common in elven naming traditions, particularly in Tolkien's works.</li><li><strong>Quenya and Sindarin:</strong> Tolkien's elven languages provide rich etymological roots. Quenya (High Elven) names tend to be more formal and ancient, while Sindarin (Grey Elven) names are more commonly used and accessible.</li><li><strong>Mythological References:</strong> Many elven names draw from mythology: 'Galadriel' incorporates 'galad' (radiant) and 'riel' (crowned maiden), while 'Elrond' combines 'el' (star) with 'rond' (dome).</li><li><strong>Time and Eternity:</strong> Elven names often suggest timelessness and longevity, reflecting their immortal nature and ancient wisdom.</li></ul><p>When creating elven names, consider what each element means and how it contributes to the character's identity. A name like 'Legolas' (green leaves) immediately suggests a connection to nature, while 'Galadriel' (maiden crowned with radiant garland) suggests both beauty and power.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What makes elf names authentic?",
+        "answer": "Authentic elf names typically feature flowing syllables, nature connections, and ethereal sounds. They often incorporate liquid consonants like 'l' and 'r', soft vowels, and suffixes like '-iel', '-wen', '-las', and '-dor', reflecting their connection to nature, magic, and timeless wisdom."
+      },
+      {
+        "question": "How do I choose between Tolkien and D&D style elf names?",
+        "answer": "Tolkien names are more elaborate and linguistically complex, perfect for high fantasy literature or serious roleplay. D&D names are often simpler and more accessible, ideal for tabletop gaming where players need to remember and pronounce names easily. Choose based on your project's tone and medium."
+      },
+      {
+        "question": "Can elf names be used for both genders?",
+        "answer": "Yes! While many elf names have traditional gender associations, modern fantasy often includes gender-neutral options. Our generator includes neutral names that work for any character, and many elven cultures in fiction view names as expressions of the individual rather than strict gender markers."
+      }
+    ]
+  }
+}

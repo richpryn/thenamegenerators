@@ -2,15 +2,24 @@
 
 /**
  * Build Pages Script
- * Auto-generates all HTML pages from JSON data files
+ * Generates every page from content/ (see scripts/content.js):
+ *   posts/<slug>.html                 one page per generator
+ *   categories/<slug>-names.html      one page per category
+ *   data/generators/<key>.json        what the homepage generator loads
+ *   sitemap.xml, sitemap.html
+ * and refreshes the marked sections of index.html, all-generators.html and
+ * about.html (between <!-- BUILD:name --> and <!-- /BUILD:name -->).
  */
 
 const fs = require('fs');
 const path = require('path');
+const { loadContent, validate } = require('./content');
+const { filtersHtml } = require('../lib/page.js');
 
-const DATA_DIR = path.join(__dirname, '../data');
-const POSTS_DIR = path.join(__dirname, '../posts');
-const CATEGORIES_DIR = path.join(__dirname, '../categories');
+const ROOT = path.join(__dirname, '..');
+const POSTS_DIR = path.join(ROOT, 'posts');
+const CATEGORIES_DIR = path.join(ROOT, 'categories');
+const RUNTIME_DIR = path.join(ROOT, 'data/generators');
 
 /**
  * Escape HTML to prevent XSS and fix &amp; issues
@@ -27,28 +36,30 @@ function escapeHtml(text) {
     .replace(/'/g, '&#039;');
 }
 
-// Ensure output directories exist
-[POSTS_DIR, CATEGORIES_DIR].forEach(dir => {
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir, { recursive: true });
-  }
-});
+// Article text may use **bold**; turn it into HTML (or drop it for plain text).
+function markdownBold(html) {
+  return String(html || '').replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+}
+function plainText(text) {
+  return String(text || '').replace(/\*\*/g, '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+}
 
-/**
- * Load and parse all JSON category files
- */
-function loadAllCategories() {
-  const categories = {};
-  const files = fs.readdirSync(DATA_DIR).filter(f => f.endsWith('.json'));
+// JSON for a <script> block: "<" escaped so data can't close the tag.
+function scriptJson(value, indent) {
+  return JSON.stringify(value, null, indent).replace(/</g, '\\u003c');
+}
 
-  for (const file of files) {
-    const categorySlug = path.basename(file, '.json');
-    const filePath = path.join(DATA_DIR, file);
-    const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-    categories[categorySlug] = data;
-  }
+/** The fields the in-browser engine needs, without the article text. */
+function runtimeConfig(gen) {
+  const { title, icon, description, seoKeywords, isPopular, popularRank, category, article, key, ...config } = gen;
+  return config;
+}
 
-  return categories;
+/** Category links for the nav dropdown. `prefix` is "../" from subfolders. */
+function navDropdownHtml(categories, prefix) {
+  return categories.map(cat =>
+    `<a href="${prefix}categories/${cat.slug}-names.html">${cat.icon} ${escapeHtml(cat.navLabel)}</a>`
+  ).join('\n                        ');
 }
 
 /**
@@ -99,11 +110,11 @@ function generateSchemas(generator, category) {
   // Build article body text for LLM parsing
   let articleBody = generator.description;
   if (generator.article && generator.article.intro) {
-    articleBody += ' ' + generator.article.intro.replace(/<[^>]*>/g, ' ').trim();
+    articleBody += ' ' + plainText(generator.article.intro);
   }
   if (generator.article && generator.article.sections) {
     generator.article.sections.forEach(section => {
-      articleBody += ' ' + section.heading + ' ' + section.content.replace(/<[^>]*>/g, ' ').trim();
+      articleBody += ' ' + section.heading + ' ' + plainText(section.content);
     });
   }
 
@@ -209,7 +220,7 @@ function generateSchemas(generator, category) {
         "name": faq.question,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": faq.answer
+          "text": plainText(faq.answer)
         }
       }))
     });
@@ -225,7 +236,7 @@ function generateSchemas(generator, category) {
       {
         "@type": "HowToStep",
         "name": "Select options",
-        "text": generator.filters 
+        "text": generator.filters && Object.keys(generator.filters).length
           ? `Choose your preferred options from the available filters (${Object.keys(generator.filters).join(', ')})`
           : "Use the default settings or customize as needed"
       },
@@ -274,7 +285,7 @@ function generateSchemas(generator, category) {
 /**
  * Generate HTML for a single generator page
  */
-function generateGeneratorPage(generator, category, categorySlug, generatorKey) {
+function generateGeneratorPage(generator, category, site) {
   const schemas = generateSchemas(generator, category);
   // Escape "<" as \u003c so a stray "</script>" in any data string cannot
   // break out of the JSON-LD block. Valid JSON, understood by all parsers.
@@ -282,62 +293,33 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
     `<script type="application/ld+json">\n${JSON.stringify(s, null, 2).replace(/</g, '\\u003c')}\n</script>`
   ).join('\n    ');
 
-  // Build filter HTML if filters exist
-  let filterHTML = '';
-  let nameInputHTML = '';
-  
-  // Special handling for epithet generator - needs name input
-  if (generatorKey === 'epithet') {
-    nameInputHTML = `
-          <div class="filter-group">
-            <label for="character-name">Character Name:</label>
-            <input type="text" id="character-name" name="character-name" placeholder="Enter your character's name" class="name-input">
-          </div>`;
-  }
-  
-  if (generator.filters) {
-    const filterInputs = Object.entries(generator.filters).map(([key, filter]) => {
-      // Format option labels better
-      const options = filter.options.map(opt => {
-        let label = opt.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-        // Special formatting for category names
-        if (key === 'category') {
-          label = label.replace('Deed ', 'Deed: ').replace('Personality ', 'Personality: ')
-            .replace('Alignment ', 'Alignment: ').replace('Reputation ', 'Reputation: ')
-            .replace('Origin ', 'Origin: ').replace('Magical ', 'Magical: ')
-            .replace('Weapon ', 'Weapon: ').replace('Time ', 'Time: ')
-            .replace('Misc ', 'Misc: ');
-        }
-        return `<option value="${opt}">${label}</option>`;
-      }).join('\n            ');
-      return `
-          <div class="filter-group">
-            <label for="filter-${key}">${filter.label}:</label>
-            <select id="filter-${key}" name="${key}">
-              ${options}
-            </select>
-          </div>`;
-    }).join('\n');
-    filterHTML = `<div class="filters">${nameInputHTML}${filterInputs}</div>`;
-  } else if (nameInputHTML) {
-    filterHTML = `<div class="filters">${nameInputHTML}</div>`;
-  }
+  // Filters (dropdowns and text boxes) come straight from the generator file
+  const filterHTML = Object.keys(generator.filters || {}).length
+    ? `<div class="filters">${filtersHtml(generator.filters, 'filter-group')}</div>`
+    : '';
 
-  // Build related generators HTML (always show, populated dynamically)
   const relatedHTML = `
       <section class="related-section">
         <h2>Related Name Generators</h2>
         <div class="related-grid" id="related-generators">
-          <!-- Populated by JavaScript -->
+          ${site.related(generator).map(gen =>
+            `<a href="../posts/${gen.slug}.html" class="related-card">
+            <h3>${gen.icon} ${escapeHtml(gen.title)}</h3>
+            <p>${escapeHtml(gen.description)}</p>
+          </a>`).join('\n          ') || '<p>No related generators found.</p>'}
         </div>
       </section>`;
-  
-  // Build category generators grid HTML (always show, populated dynamically)
+
+  const sameCategory = site.inCategory(category.slug).filter(gen => gen.key !== generator.key);
   const categoryGeneratorsHTML = `
       <section class="category-generators-section">
-        <h2>All ${category.name} Name Generators</h2>
+        <h2>All ${escapeHtml(category.name)} Name Generators</h2>
         <div class="category-generators-grid" id="category-generators">
-          <!-- Populated by JavaScript -->
+          ${sameCategory.map(gen =>
+            `<a href="../posts/${gen.slug}.html" class="category-generator-item">
+            <span class="category-generator-icon">${gen.icon}</span>
+            <span class="category-generator-title">${escapeHtml(gen.title)}</span>
+          </a>`).join('\n          ') || '<p>No other generators in this category.</p>'}
         </div>
       </section>`;
 
@@ -347,7 +329,7 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
     sectionsHTML = generator.article.sections.map(section => `
       <section>
         <h2>${section.heading}</h2>
-        ${section.content}
+        ${markdownBold(section.content)}
       </section>
     `).join('\n');
   }
@@ -362,7 +344,7 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
           ${generator.article.faqs.map(faq => `
             <div class="faq-item">
               <h3 class="faq-question">${faq.question}</h3>
-              <p class="faq-answer">${faq.answer}</p>
+              <p class="faq-answer">${markdownBold(faq.answer)}</p>
             </div>
           `).join('\n          ')}
         </div>
@@ -470,7 +452,7 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
                 <div class="nav-dropdown">
                     <a href="#" class="nav-dropdown-toggle">Categories</a>
                     <div class="nav-dropdown-menu" id="category-dropdown">
-                        <!-- Populated by JavaScript -->
+                        ${site.navHtml('../')}
                     </div>
                 </div>
             </div>
@@ -510,7 +492,7 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
                 <meta itemprop="headline" content="${escGenTitle}">
                 <meta itemprop="description" content="${escGenDesc}">
                 <section itemprop="articleBody">
-                    <p>${generator.article.intro}</p>
+                    <p>${markdownBold(generator.article.intro)}</p>
                 </section>
                 ${sectionsHTML}
             </article>
@@ -525,261 +507,9 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
         </footer>
     </div>
 
-    <script src="../lib/generator.js"></script>
-    <script>
-        // Initialize generator for this specific generator
-        const categorySlug = '${categorySlug}';
-        const generatorKey = '${generatorKey}';
-        
-        // Populate category dropdown
-        (async () => {
-            const categories = await window.nameGenerator.getCategories();
-            const dropdown = document.getElementById('category-dropdown');
-            // Clear any existing items first to prevent duplicates
-            dropdown.innerHTML = '';
-            categories.forEach(cat => {
-                const link = document.createElement('a');
-                link.href = \`../categories/\${cat.slug}-names.html\`;
-                link.textContent = \`\${cat.icon} \${cat.navLabel}\`;
-                dropdown.appendChild(link);
-            });
-        })();
-        
-        // Initialize generator
-        document.getElementById('generate-btn').addEventListener('click', async () => {
-            const count = 8;
-            const filters = {};
-            
-            // Collect filter values
-            ${generator.filters ? Object.keys(generator.filters).map(key => 
-              `if (document.getElementById('filter-${key}')) {
-                filters['${key}'] = document.getElementById('filter-${key}').value;
-              }`
-            ).join('\n            ') : ''}
-            
-            try {
-                ${generatorKey === 'dnd_fantasy' ? `
-                // Special handling for D&D fantasy generator - combine first and last names
-                const generator = await window.nameGenerator.getGenerator(categorySlug, generatorKey);
-                const gender = filters.gender || 'male';
-                
-                const firstNames = generator.data[gender].firstNames;
-                const lastNames = generator.data[gender].lastNames;
-                
-                // Validate data is loaded correctly
-                if (!firstNames || !Array.isArray(firstNames) || firstNames.length === 0) {
-                    console.error('First names not found or invalid:', firstNames);
-                    throw new Error('First names data not available');
-                }
-                if (!lastNames || !Array.isArray(lastNames) || lastNames.length === 0) {
-                    console.error('Last names not found or invalid:', lastNames);
-                    console.error('Available keys:', Object.keys(generator.data[gender]));
-                    throw new Error('Last names data not available');
-                }
-                
-                // Create shuffled pools for first and last names
-                const firstPoolKey = \`\${categorySlug}:\${generatorKey}:first:\${gender}\`;
-                const lastPoolKey = \`\${categorySlug}:\${generatorKey}:last:\${gender}\`;
-                
-                let firstShuffled = window.nameGenerator.namePools.get(firstPoolKey);
-                let firstIndex = window.nameGenerator.nameIndices.get(firstPoolKey) || 0;
-                let lastShuffled = window.nameGenerator.namePools.get(lastPoolKey);
-                let lastIndex = window.nameGenerator.nameIndices.get(lastPoolKey) || 0;
-                
-                // Initialize pools if needed
-                if (!firstShuffled || firstIndex >= firstShuffled.length) {
-                    firstShuffled = window.nameGenerator.shuffleArray([...firstNames]);
-                    window.nameGenerator.namePools.set(firstPoolKey, firstShuffled);
-                    firstIndex = 0;
-                }
-                if (!lastShuffled || lastIndex >= lastShuffled.length) {
-                    lastShuffled = window.nameGenerator.shuffleArray([...lastNames]);
-                    window.nameGenerator.namePools.set(lastPoolKey, lastShuffled);
-                    lastIndex = 0;
-                }
-                
-                // Generate combined names
-                const results = [];
-                for (let i = 0; i < count; i++) {
-                    // If we've exhausted first names, reshuffle
-                    if (firstIndex >= firstShuffled.length) {
-                        firstShuffled = window.nameGenerator.shuffleArray([...firstNames]);
-                        window.nameGenerator.namePools.set(firstPoolKey, firstShuffled);
-                        firstIndex = 0;
-                    }
-                    // If we've exhausted last names, reshuffle
-                    if (lastIndex >= lastShuffled.length) {
-                        lastShuffled = window.nameGenerator.shuffleArray([...lastNames]);
-                        window.nameGenerator.namePools.set(lastPoolKey, lastShuffled);
-                        lastIndex = 0;
-                    }
-                    
-                    const firstName = firstShuffled[firstIndex];
-                    const lastName = lastShuffled[lastIndex];
-                    
-                    // Ensure both parts exist
-                    if (!firstName || !lastName) {
-                        console.error('Missing name parts:', { firstName, lastName, firstIndex, lastIndex, firstShuffledLength: firstShuffled.length, lastShuffledLength: lastShuffled.length });
-                        continue; // Skip this iteration if name parts are missing
-                    }
-                    
-                    // Combine first and last name
-                    const fullName = String(firstName).trim() + ' ' + String(lastName).trim();
-                    results.push(fullName);
-                    
-                    firstIndex++;
-                    lastIndex++;
-                }
-                
-                // Update indices
-                window.nameGenerator.nameIndices.set(firstPoolKey, firstIndex);
-                window.nameGenerator.nameIndices.set(lastPoolKey, lastIndex);
-                
-                const resultsDiv = document.getElementById('results');
-                resultsDiv.innerHTML = '<ul class="name-results">' + 
-                    results.map(name => \`<li>\${name}</li>\`).join('') + 
-                    '</ul>';
-                ` : generatorKey === 'epithet' ? `
-                const epithets = await window.nameGenerator.generateNames(categorySlug, generatorKey, filters, count);
-                const resultsDiv = document.getElementById('results');
-                
-                // Special handling for epithet generator - combine with user's name
-                // Special handling for epithet generator - combine with user's name
-                const characterName = document.getElementById('character-name')?.value?.trim() || 'Your Character';
-                
-                // Format epithets based on type
-                const formattedNames = epithets.map(epithet => {
-                    // Epithets that already start with "the" should keep it
-                    if (epithet.startsWith('the ')) {
-                        return \`\${characterName} \${epithet}\`;
-                    }
-                    // Epithets that start with "of" don't need "the"
-                    if (epithet.startsWith('of ')) {
-                        return \`\${characterName} \${epithet}\`;
-                    }
-                    // Compound words (slayer, bane, born, etc.) don't need "the"
-                    if (epithet.includes('slayer') || epithet.includes('bane') || epithet.includes('born') || 
-                        epithet.includes('breaker') || epithet.includes('hunter') || epithet.includes('killer') ||
-                        epithet.includes('wielder') || epithet.includes('master') || epithet.includes('keeper') ||
-                        epithet.includes('weaver') || epithet.includes('binder') || epithet.includes('reader') ||
-                        epithet.includes('seer') || epithet.includes('walker') || epithet.includes('defender') ||
-                        epithet.includes('singer') || epithet.includes('chanter') || epithet.includes('speaker') ||
-                        epithet.includes('caller') || epithet.includes('whisperer') || epithet.includes('prophet') ||
-                        epithet.includes('feller') || epithet.includes('saver') || epithet.includes('maker') ||
-                        epithet.includes('creator') || epithet.includes('founder') || epithet.includes('architect') ||
-                        epithet.includes('negotiator') || epithet.includes('diplomat') || epithet.includes('mediator')) {
-                        return \`\${characterName} \${epithet}\`;
-                    }
-                    // Most other epithets use "the" prefix
-                    return \`\${characterName} the \${epithet}\`;
-                });
-                
-                resultsDiv.innerHTML = '<ul class="name-results">' + 
-                    formattedNames.map(name => \`<li>\${name}</li>\`).join('') + 
-                    '</ul>';
-                ` : `
-                const names = await window.nameGenerator.generateNames(categorySlug, generatorKey, filters, count);
-                const resultsDiv = document.getElementById('results');
-                resultsDiv.innerHTML = '<ul class="name-results">' + 
-                    names.map(name => \`<li>\${name}</li>\`).join('') + 
-                    '</ul>';
-                `}
-            } catch (error) {
-                console.error('Generation error:', error);
-                document.getElementById('results').innerHTML = '<p class="error">Error generating names. Please try again.</p>';
-            }
-        });
-        
-        // Load related generators (always show, dynamically calculated)
-        (async () => {
-            // Helper function to escape HTML
-            const escapeHtml = (text) => {
-                if (!text) return '';
-                const div = document.createElement('div');
-                div.textContent = text;
-                return div.innerHTML;
-            };
-            
-            const related = await window.nameGenerator.getRelatedGenerators(categorySlug, generatorKey);
-            const relatedDiv = document.getElementById('related-generators');
-            if (relatedDiv && related.length > 0) {
-                relatedDiv.innerHTML = related.map(gen => 
-                    \`<a href="../posts/\${gen.slug}.html" class="related-card">
-                        <h3>\${gen.icon} \${escapeHtml(gen.title)}</h3>
-                        <p>\${escapeHtml(gen.description)}</p>
-                    </a>\`
-                ).join('');
-            } else if (relatedDiv) {
-                relatedDiv.innerHTML = '<p>No related generators found.</p>';
-            }
-        })();
-        
-        // Load category generators grid
-        (async () => {
-            // Helper function to escape HTML
-            const escapeHtml = (text) => {
-                if (!text) return '';
-                const div = document.createElement('div');
-                div.textContent = text;
-                return div.innerHTML;
-            };
-            
-            try {
-                const generators = await window.nameGenerator.getGenerators(categorySlug);
-                const generatorsArray = Object.entries(generators)
-                    .map(([key, gen]) => ({
-                        key,
-                        ...gen
-                    }))
-                    .filter(gen => gen.key !== generatorKey); // Exclude current generator
-                
-                const categoryGeneratorsDiv = document.getElementById('category-generators');
-                if (categoryGeneratorsDiv && generatorsArray.length > 0) {
-                    categoryGeneratorsDiv.innerHTML = generatorsArray.map(gen => 
-                        \`<a href="../posts/\${gen.slug}.html" class="category-generator-item">
-                            <span class="category-generator-icon">\${gen.icon}</span>
-                            <span class="category-generator-title">\${escapeHtml(gen.title)}</span>
-                        </a>\`
-                    ).join('');
-                } else if (categoryGeneratorsDiv) {
-                    categoryGeneratorsDiv.innerHTML = '<p>No other generators in this category.</p>';
-                }
-            } catch (error) {
-                console.error('Error loading category generators:', error);
-            }
-        })();
-        
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.getElementById('nav-links');
-        const categoryDropdown = document.querySelector('.nav-dropdown');
-        
-        if (menuToggle) {
-            menuToggle.addEventListener('click', () => {
-                menuToggle.classList.toggle('active');
-                navLinks.classList.toggle('active');
-            });
-            
-            // Close menu when clicking on a link
-            navLinks.addEventListener('click', (e) => {
-                if (e.target.tagName === 'A' && !e.target.classList.contains('nav-dropdown-toggle')) {
-                    menuToggle.classList.remove('active');
-                    navLinks.classList.remove('active');
-                }
-            });
-            
-            // Handle dropdown toggle on mobile
-            const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
-            if (dropdownToggle) {
-                dropdownToggle.addEventListener('click', (e) => {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        categoryDropdown.classList.toggle('active');
-                    }
-                });
-            }
-        }
-    </script>
+    <script type="application/json" id="generator-config">${scriptJson(runtimeConfig(generator))}</script>
+    <script src="../lib/recipe-engine.js"></script>
+    <script src="../lib/page.js"></script>
 </body>
 </html>`;
 
@@ -789,11 +519,9 @@ function generateGeneratorPage(generator, category, categorySlug, generatorKey) 
 /**
  * Generate category landing page
  */
-function generateCategoryPage(category, categorySlug) {
-  const generators = Object.entries(category.generators).map(([key, gen]) => ({
-    key,
-    ...gen
-  }));
+function generateCategoryPage(category, site) {
+  const categorySlug = category.slug;
+  const generators = site.inCategory(categorySlug);
 
   const generatorsHTML = generators.map(gen => `
     <a href="../posts/${gen.slug}.html" class="generator-card">
@@ -804,21 +532,21 @@ function generateCategoryPage(category, categorySlug) {
 
   // Generate SEO-optimized category title
   const baseUrl = "https://thenamegenerators.com";
-  const categorySEOTitle = `${category.categoryInfo.name} Name Generators - Free Online Tools | The Name Generators`;
+  const categorySEOTitle = `${category.name} Name Generators - Free Online Tools | The Name Generators`;
   const categoryUrl = `${baseUrl}/categories/${categorySlug}-names.html`;
   const categoryImageUrl = `${baseUrl}/images/categories/${categorySlug}.jpg`;
   
   // Enhanced category meta description
-  const categoryMetaDesc = category.categoryInfo.seoDescription.length > 160
-    ? category.categoryInfo.seoDescription.substring(0, 157) + '...'
-    : category.categoryInfo.seoDescription;
+  const categoryMetaDesc = category.seoDescription.length > 160
+    ? category.seoDescription.substring(0, 157) + '...'
+    : category.seoDescription;
 
   // HTML-escaped values for safe attribute/plain-text injection
   const escCatTitle = escapeHtml(categorySEOTitle);
   const escCatDesc = escapeHtml(categoryMetaDesc);
-  const escCatName = escapeHtml(category.categoryInfo.name);
-  const escCatDescription = escapeHtml(category.categoryInfo.description);
-  const escCatKeywords = escapeHtml(`${category.categoryInfo.name.toLowerCase()} names, ${category.categoryInfo.name.toLowerCase()} name generator, ${category.categoryInfo.name.toLowerCase()} name generators`);
+  const escCatName = escapeHtml(category.name);
+  const escCatDescription = escapeHtml(category.description);
+  const escCatKeywords = escapeHtml(`${category.name.toLowerCase()} names, ${category.name.toLowerCase()} name generator, ${category.name.toLowerCase()} name generators`);
 
   const html = `<!DOCTYPE html>
 <html lang="en">
@@ -871,7 +599,7 @@ function generateCategoryPage(category, categorySlug) {
                 <div class="nav-dropdown">
                     <a href="#" class="nav-dropdown-toggle">Categories</a>
                     <div class="nav-dropdown-menu" id="category-dropdown">
-                        <!-- Populated by JavaScript -->
+                        ${site.navHtml('../')}
                     </div>
                 </div>
             </div>
@@ -880,7 +608,7 @@ function generateCategoryPage(category, categorySlug) {
 
     <div class="container">
         <header class="hero">
-            <h1>${category.categoryInfo.icon} ${escCatName}</h1>
+            <h1>${category.icon} ${escCatName}</h1>
             <p>${escCatDescription}</p>
             <p class="generator-count">${generators.length} generator${generators.length !== 1 ? 's' : ''} available</p>
         </header>
@@ -896,53 +624,7 @@ function generateCategoryPage(category, categorySlug) {
         </footer>
     </div>
 
-    <script src="../lib/generator.js"></script>
-    <script>
-        // Populate category dropdown
-        (async () => {
-            const categories = await window.nameGenerator.getCategories();
-            const dropdown = document.getElementById('category-dropdown');
-            // Clear any existing items first to prevent duplicates
-            dropdown.innerHTML = '';
-            categories.forEach(cat => {
-                const link = document.createElement('a');
-                link.href = \`../categories/\${cat.slug}-names.html\`;
-                link.textContent = \`\${cat.icon} \${cat.navLabel}\`;
-                dropdown.appendChild(link);
-            });
-        })();
-        
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.getElementById('nav-links');
-        const categoryDropdown = document.querySelector('.nav-dropdown');
-        
-        if (menuToggle) {
-            menuToggle.addEventListener('click', () => {
-                menuToggle.classList.toggle('active');
-                navLinks.classList.toggle('active');
-            });
-            
-            // Close menu when clicking on a link
-            navLinks.addEventListener('click', (e) => {
-                if (e.target.tagName === 'A' && !e.target.classList.contains('nav-dropdown-toggle')) {
-                    menuToggle.classList.remove('active');
-                    navLinks.classList.remove('active');
-                }
-            });
-            
-            // Handle dropdown toggle on mobile
-            const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
-            if (dropdownToggle) {
-                dropdownToggle.addEventListener('click', (e) => {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        categoryDropdown.classList.toggle('active');
-                    }
-                });
-            }
-        }
-    </script>
+    <script src="../lib/page.js"></script>
 </body>
 </html>`;
 
@@ -950,56 +632,177 @@ function generateCategoryPage(category, categorySlug) {
 }
 
 /**
+ * Lookups shared by the page templates.
+ */
+function makeSite({ categories, generators }) {
+  const all = Object.values(generators);
+  const categoriesOf = {};
+  for (const cat of categories) {
+    for (const key of cat.generators) (categoriesOf[key] = categoriesOf[key] || []).push(cat.slug);
+  }
+
+  // Related generators: shared title words count most, then sharing a
+  // category, then popularity. Top 6.
+  const STOP = new Set(['name', 'generator', 'the', 'a', 'an', 'and', 'or', 'of', 'for', 'with', 'to', 'in', 'on', 'at', 'by']);
+  const words = (title) => title.toLowerCase().replace(/[^\w\s]/g, ' ').split(/\s+/)
+    .filter(w => w.length > 2 && !STOP.has(w));
+  function score(current, candidate) {
+    const a = words(current.title);
+    const b = words(candidate.title);
+    const exact = a.filter(w => b.includes(w));
+    let total = exact.length * 200;
+    const used = new Set(exact);
+    for (const wa of a) {
+      if (used.has(wa)) continue;
+      for (const wb of b) {
+        if (used.has(wb)) continue;
+        if ((wa.length > wb.length && wa.includes(wb)) || (wb.length > wa.length && wb.includes(wa))) {
+          total += 100;
+          used.add(wa.length > wb.length ? wb : wa);
+        }
+      }
+    }
+    if ((categoriesOf[candidate.key] || []).includes(current.category)) total += 50;
+    if (candidate.isPopular) total += 20;
+    return total;
+  }
+
+  return {
+    categories,
+    all,
+    categoriesOf,
+    inCategory: (slug) => categories.find(c => c.slug === slug).generators.map(k => generators[k]),
+    related: (current) => all
+      .filter(g => g.key !== current.key)
+      .map(g => ({ g, s: score(current, g) }))
+      .sort((x, y) => y.s - x.s || (y.g.isPopular ? 1 : 0) - (x.g.isPopular ? 1 : 0))
+      .slice(0, 6)
+      .map(x => x.g),
+    popular: () => all.filter(g => g.isPopular)
+      .sort((a, b) => (a.popularRank || 999) - (b.popularRank || 999)),
+    navHtml: (prefix) => navDropdownHtml(categories, prefix),
+  };
+}
+
+/**
+ * Replace the text between <!-- BUILD:name --> and <!-- /BUILD:name --> in a
+ * hand-written page.
+ */
+function fillMarkers(file, sections) {
+  const filePath = path.join(ROOT, file);
+  let html = fs.readFileSync(filePath, 'utf8');
+  for (const [name, content] of Object.entries(sections)) {
+    const re = new RegExp(`(<!-- BUILD:${name} -->)[\\s\\S]*?(<!-- /BUILD:${name} -->)`);
+    if (!re.test(html)) throw new Error(`${file} is missing <!-- BUILD:${name} --> ... <!-- /BUILD:${name} -->`);
+    html = html.replace(re, (_, open, close) => `${open}\n${content}\n${close}`);
+  }
+  fs.writeFileSync(filePath, html);
+  console.log(`  ✅ Updated: ${file}`);
+}
+
+function updateStaticPages(site) {
+  const nav = site.navHtml('');
+
+  const categoryCards = site.categories.map(cat => `            <a href="categories/${cat.slug}-names.html" class="category-card">
+                <span class="category-icon">${cat.icon}</span>
+                <h3>${escapeHtml(cat.name)}</h3>
+                <p>${escapeHtml(cat.description)}</p>
+                <div class="pillar-count">${cat.generators.length} Generator${cat.generators.length !== 1 ? 's' : ''}</div>
+            </a>`).join('\n');
+
+  const popularCards = site.popular().slice(0, 20).map(gen => {
+    const cat = site.categories.find(c => c.slug === gen.category);
+    return `            <a href="posts/${gen.slug}.html" class="popular-generator-card">
+                <span class="generator-icon">${gen.icon}</span>
+                <div class="generator-info">
+                    <h3>${escapeHtml(gen.title)}</h3>
+                    <p>${escapeHtml(gen.description)}</p>
+                    <span class="category-badge">${cat.icon} ${escapeHtml(cat.name)}</span>
+                </div>
+            </a>`;
+  }).join('\n');
+
+  const categoryOptions = site.categories
+    .filter(cat => cat.generators.length)
+    .map(cat => `                                <option value="${cat.slug}">${cat.icon} ${escapeHtml(cat.name)}</option>`)
+    .join('\n');
+
+  // What the homepage generator needs to fill its "Generator" dropdown
+  const homeIndex = Object.fromEntries(site.categories.map(cat => [cat.slug,
+    cat.generators.map(k => { const g = site.all.find(x => x.key === k); return { key: k, title: g.title, icon: g.icon }; })]));
+
+  fillMarkers('index.html', {
+    nav,
+    'category-options': categoryOptions,
+    'generator-index': `    <script type="application/json" id="generator-index">${scriptJson(homeIndex)}</script>`,
+    categories: categoryCards,
+    popular: popularCards,
+  });
+
+  // All generators, A to Z; the search box filters these links in place
+  const sorted = [...site.all].sort((a, b) =>
+    a.title.replace(/[^\w\s]/g, '').trim().toLowerCase().localeCompare(b.title.replace(/[^\w\s]/g, '').trim().toLowerCase()));
+  const allList = `                <div class="category-generators-grid">
+${sorted.map(gen => {
+    const search = [gen.title, gen.description, gen.seoKeywords || '',
+      ...(site.categoriesOf[gen.key] || []).map(slug => site.categories.find(c => c.slug === slug).name)].join(' ').toLowerCase();
+    return `                    <a href="posts/${gen.slug}.html" class="category-generator-item" data-search="${escapeHtml(search)}">
+                        <span class="category-generator-icon">${gen.icon}</span>
+                        <span class="category-generator-title">${escapeHtml(gen.title)}</span>
+                    </a>`;
+  }).join('\n')}
+                </div>`;
+  fillMarkers('all-generators.html', { nav, generators: allList });
+  fillMarkers('about.html', { nav });
+}
+
+/**
  * Main build function
  */
 function build() {
-  console.log('🚀 Building pages from JSON data...\n');
+  console.log('🚀 Building pages from content/...\n');
 
-  const categories = loadAllCategories();
-  const allGenerators = [];
-
-  // Generate individual generator pages
-  for (const [categorySlug, category] of Object.entries(categories)) {
-    console.log(`📁 Processing category: ${category.categoryInfo.name}`);
-
-    // Generate category landing page
-    const categoryHTML = generateCategoryPage(category, categorySlug);
-    const categoryPath = path.join(CATEGORIES_DIR, `${categorySlug}-names.html`);
-    fs.writeFileSync(categoryPath, categoryHTML);
-    console.log(`  ✅ Created: categories/${categorySlug}-names.html`);
-
-    // Generate individual generator pages
-    for (const [generatorKey, generator] of Object.entries(category.generators)) {
-      const generatorHTML = generateGeneratorPage(generator, category.categoryInfo, categorySlug, generatorKey);
-      const generatorPath = path.join(POSTS_DIR, `${generator.slug}.html`);
-      fs.writeFileSync(generatorPath, generatorHTML);
-      console.log(`  ✅ Created: posts/${generator.slug}.html`);
-
-      allGenerators.push({
-        ...generator,
-        categorySlug,
-        categoryName: category.categoryInfo.name,
-        categoryIcon: category.categoryInfo.icon,
-        generatorKey
-      });
-    }
+  const content = loadContent();
+  const { errors, warnings } = validate(content);
+  warnings.forEach(w => console.log(`  ⚠️  ${w}`));
+  if (errors.length) {
+    errors.forEach(e => console.log(`  ❌ ${e}`));
+    console.log(`\nBuild stopped: fix the ${errors.length} error(s) above first.`);
+    process.exit(1);
   }
 
-  // Generate sitemap.xml
-  generateSitemap(allGenerators, categories);
-  
-  // Generate HTML sitemap page
-  generateHtmlSitemap(allGenerators, categories);
-  
-  console.log(`\n✨ Build complete! Generated ${allGenerators.length} generator pages and ${Object.keys(categories).length} category pages.`);
-  
-  return { categories, allGenerators };
+  const site = makeSite(content);
+  for (const dir of [POSTS_DIR, CATEGORIES_DIR, RUNTIME_DIR]) fs.mkdirSync(dir, { recursive: true });
+
+  for (const category of content.categories) {
+    fs.writeFileSync(path.join(CATEGORIES_DIR, `${category.slug}-names.html`), generateCategoryPage(category, site));
+    console.log(`  ✅ Created: categories/${category.slug}-names.html`);
+  }
+
+  for (const generator of site.all) {
+    const category = content.categories.find(c => c.slug === generator.category);
+    fs.writeFileSync(path.join(POSTS_DIR, `${generator.slug}.html`), generateGeneratorPage(generator, category, site));
+    fs.writeFileSync(path.join(RUNTIME_DIR, `${generator.key}.json`), JSON.stringify(runtimeConfig(generator)));
+    console.log(`  ✅ Created: posts/${generator.slug}.html`);
+  }
+
+  // Drop runtime files for generators that no longer exist
+  for (const file of fs.readdirSync(RUNTIME_DIR)) {
+    if (!content.generators[path.basename(file, '.json')]) fs.unlinkSync(path.join(RUNTIME_DIR, file));
+  }
+
+  generateSitemap(site);
+  generateHtmlSitemap(site);
+  updateStaticPages(site);
+
+  console.log(`\n✨ Build complete! Generated ${site.all.length} generator pages and ${content.categories.length} category pages.`);
+  return site;
 }
 
 /**
  * Generate sitemap.xml for SEO
  */
-function generateSitemap(allGenerators, categories) {
+function generateSitemap(site) {
   const baseUrl = "https://thenamegenerators.com";
   const currentDate = new Date().toISOString().split('T')[0];
   
@@ -1036,10 +839,10 @@ function generateSitemap(allGenerators, categories) {
 `;
 
   // Add category pages
-  for (const [categorySlug, category] of Object.entries(categories)) {
-    sitemap += `  <!-- Category: ${category.categoryInfo.name} -->
+  for (const category of site.categories) {
+    sitemap += `  <!-- Category: ${category.name} -->
   <url>
-    <loc>${baseUrl}/categories/${categorySlug}-names.html</loc>
+    <loc>${baseUrl}/categories/${category.slug}-names.html</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1048,7 +851,7 @@ function generateSitemap(allGenerators, categories) {
   }
 
   // Add generator pages
-  for (const generator of allGenerators) {
+  for (const generator of site.all) {
     sitemap += `  <!-- Generator: ${generator.title} -->
   <url>
     <loc>${baseUrl}/posts/${generator.slug}.html</loc>
@@ -1061,7 +864,7 @@ function generateSitemap(allGenerators, categories) {
 
   sitemap += `</urlset>`;
 
-  const sitemapPath = path.join(__dirname, '../sitemap.xml');
+  const sitemapPath = path.join(ROOT, 'sitemap.xml');
   fs.writeFileSync(sitemapPath, sitemap);
   console.log(`  ✅ Created: sitemap.xml`);
 }
@@ -1069,7 +872,7 @@ function generateSitemap(allGenerators, categories) {
 /**
  * Generate HTML sitemap page for better SEO and crawling
  */
-function generateHtmlSitemap(allGenerators, categories) {
+function generateHtmlSitemap(site) {
   const baseUrl = "https://thenamegenerators.com";
   
   let html = `<!DOCTYPE html>
@@ -1163,8 +966,8 @@ function generateHtmlSitemap(allGenerators, categories) {
 `;
 
   // Add category pages
-  for (const [categorySlug, category] of Object.entries(categories)) {
-    html += `                <a href="${baseUrl}/categories/${categorySlug}-names.html">${category.categoryInfo.icon} ${category.categoryInfo.name}</a>\n`;
+  for (const category of site.categories) {
+    html += `                <a href="${baseUrl}/categories/${category.slug}-names.html">${category.icon} ${escapeHtml(category.name)}</a>\n`;
   }
 
   html += `            </div>
@@ -1174,23 +977,15 @@ function generateHtmlSitemap(allGenerators, categories) {
             <h2>Name Generators</h2>
 `;
 
-  // Group generators by category
-  const generatorsByCategory = {};
-  for (const generator of allGenerators) {
-    if (!generatorsByCategory[generator.categoryName]) {
-      generatorsByCategory[generator.categoryName] = [];
-    }
-    generatorsByCategory[generator.categoryName].push(generator);
-  }
-
-  // Add generators grouped by category
-  for (const [categoryName, generators] of Object.entries(generatorsByCategory)) {
+  // Generators grouped by category (a generator can appear in more than one)
+  for (const category of site.categories.filter(c => c.generators.length)) {
+    const generators = site.inCategory(category.slug);
     html += `            <div class="sitemap-category">
-                <h3>${categoryName}</h3>
+                <h3>${escapeHtml(category.name)}</h3>
                 <div class="sitemap-links">
 `;
     for (const generator of generators) {
-      html += `                    <a href="${baseUrl}/posts/${generator.slug}.html">${generator.icon || '⚔️'} ${generator.title}</a>\n`;
+      html += `                    <a href="${baseUrl}/posts/${generator.slug}.html">${generator.icon || '⚔️'} ${escapeHtml(generator.title)}</a>\n`;
     }
     html += `                </div>
             </div>
@@ -1206,7 +1001,7 @@ function generateHtmlSitemap(allGenerators, categories) {
 </body>
 </html>`;
 
-  const sitemapHtmlPath = path.join(__dirname, '../sitemap.html');
+  const sitemapHtmlPath = path.join(ROOT, 'sitemap.html');
   fs.writeFileSync(sitemapHtmlPath, html);
   console.log(`  ✅ Created: sitemap.html`);
 }
@@ -1216,5 +1011,5 @@ if (require.main === module) {
   build();
 }
 
-module.exports = { build, loadAllCategories };
+module.exports = { build };
 

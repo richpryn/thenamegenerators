@@ -108,17 +108,18 @@
                 <div class="nav-dropdown">
                     <a href="#" class="nav-dropdown-toggle">Categories</a>
                     <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="categories/concepts-names.html">💭 Concept Names</a>
-        <a href="categories/events-names.html">🎉 Event Names</a>
-        <a href="categories/fantasy-names.html">⚔️ Fantasy Names</a>
-        <a href="categories/folklore-names.html">📜 Folklore Names</a>
-        <a href="categories/music-names.html">🎵 Music Names</a>
-        <a href="categories/objects-names.html">⚔️ Object Names</a>
-        <a href="categories/organizations-names.html">🏛️ Organization Names</a>
-        <a href="categories/people-names.html">👥 People Names</a>
-        <a href="categories/places-names.html">🗺️ Place Names</a>
-        <a href="categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                        <!-- Populated by update-homepage.js or JavaScript -->
+                        <!-- BUILD:nav -->
+<a href="categories/concepts-names.html">💭 Concept Names</a>
+                        <a href="categories/events-names.html">🎉 Event Names</a>
+                        <a href="categories/fantasy-names.html">⚔️ Fantasy Names</a>
+                        <a href="categories/folklore-names.html">📜 Folklore Names</a>
+                        <a href="categories/music-names.html">🎵 Music Names</a>
+                        <a href="categories/objects-names.html">⚔️ Object Names</a>
+                        <a href="categories/organizations-names.html">🏛️ Organization Names</a>
+                        <a href="categories/people-names.html">👥 People Names</a>
+                        <a href="categories/places-names.html">🗺️ Place Names</a>
+                        <a href="categories/pop_culture-names.html">🎬 Pop Culture Names</a>
+<!-- /BUILD:nav -->
                     </div>
                 </div>
             </div>
@@ -141,6 +142,17 @@
                             <label for="main-category">Category:</label>
                             <select id="main-category" name="category">
                                 <option value="">Select a category...</option>
+                                <!-- BUILD:category-options -->
+                                <option value="concepts">💭 Concepts</option>
+                                <option value="fantasy">⚔️ Fantasy</option>
+                                <option value="folklore">📜 Folklore</option>
+                                <option value="music">🎵 Music</option>
+                                <option value="objects">⚔️ Objects</option>
+                                <option value="organizations">🏛️ Organizations</option>
+                                <option value="people">👥 People</option>
+                                <option value="places">🗺️ Places</option>
+                                <option value="pop_culture">🎬 Pop Culture</option>
+<!-- /BUILD:category-options -->
                             </select>
                         </div>
                         
@@ -174,7 +186,68 @@
         <section class="categories-section">
             <h2>Browse by Category</h2>
             <div class="categories-grid" id="categories-grid">
-                <!-- Populated by JavaScript -->
+            <!-- BUILD:categories -->
+            <a href="categories/concepts-names.html" class="category-card">
+                <span class="category-icon">💭</span>
+                <h3>Concepts</h3>
+                <p>Name generators for abstract concepts, ideas, and themes</p>
+                <div class="pillar-count">2 Generators</div>
+            </a>
+            <a href="categories/events-names.html" class="category-card">
+                <span class="category-icon">🎉</span>
+                <h3>Events</h3>
+                <p>Name generators for events, festivals, holidays, and celebrations</p>
+                <div class="pillar-count">0 Generators</div>
+            </a>
+            <a href="categories/fantasy-names.html" class="category-card">
+                <span class="category-icon">⚔️</span>
+                <h3>Fantasy</h3>
+                <p>Fantasy name generators for magical creatures, characters, and mythical beings</p>
+                <div class="pillar-count">28 Generators</div>
+            </a>
+            <a href="categories/folklore-names.html" class="category-card">
+                <span class="category-icon">📜</span>
+                <h3>Folklore</h3>
+                <p>Name generators inspired by myths, legends, and folklore from around the world</p>
+                <div class="pillar-count">2 Generators</div>
+            </a>
+            <a href="categories/music-names.html" class="category-card">
+                <span class="category-icon">🎵</span>
+                <h3>Music</h3>
+                <p>Name generators for bands, songs, albums, and musical projects</p>
+                <div class="pillar-count">1 Generator</div>
+            </a>
+            <a href="categories/objects-names.html" class="category-card">
+                <span class="category-icon">⚔️</span>
+                <h3>Objects</h3>
+                <p>Name generators for weapons, items, artifacts, and objects</p>
+                <div class="pillar-count">10 Generators</div>
+            </a>
+            <a href="categories/organizations-names.html" class="category-card">
+                <span class="category-icon">🏛️</span>
+                <h3>Organizations</h3>
+                <p>Name generators for companies, guilds, factions, and organizations</p>
+                <div class="pillar-count">5 Generators</div>
+            </a>
+            <a href="categories/people-names.html" class="category-card">
+                <span class="category-icon">👥</span>
+                <h3>People</h3>
+                <p>Name generators for real-world names from different cultures and time periods</p>
+                <div class="pillar-count">3 Generators</div>
+            </a>
+            <a href="categories/places-names.html" class="category-card">
+                <span class="category-icon">🗺️</span>
+                <h3>Places</h3>
+                <p>Name generators for cities, towns, countries, and locations</p>
+                <div class="pillar-count">4 Generators</div>
+            </a>
+            <a href="categories/pop_culture-names.html" class="category-card">
+                <span class="category-icon">🎬</span>
+                <h3>Pop Culture</h3>
+                <p>Name generators inspired by movies, TV shows, books, and popular culture</p>
+                <div class="pillar-count">11 Generators</div>
+            </a>
+<!-- /BUILD:categories -->
             </div>
         </section>
 
@@ -182,7 +255,168 @@
         <section class="popular-section">
             <h2>Popular Name Generators</h2>
             <div class="popular-generators-grid" id="popular-generators">
-                <!-- Populated by JavaScript -->
+            <!-- BUILD:popular -->
+            <a href="posts/dungeon-synth-name-generator.html" class="popular-generator-card">
+                <span class="generator-icon">🎵</span>
+                <div class="generator-info">
+                    <h3>Dungeon Synth Name Generator</h3>
+                    <p>Generate atmospheric dungeon synth project names. Perfect for creating dark, medieval, and fantasy-inspired music project names.</p>
+                    <span class="category-badge">🎵 Music</span>
+                </div>
+            </a>
+            <a href="posts/harry-potter-witch-name-generator.html" class="popular-generator-card">
+                <span class="generator-icon">⚡</span>
+                <div class="generator-info">
+                    <h3>Harry Potter Witch Name Generator</h3>
+                    <p>Generate authentic Harry Potter witch names filtered by house. Perfect for creating witch characters from Ravenclaw, Hufflepuff, Gryffindor, or Slytherin.</p>
+                    <span class="category-badge">🎬 Pop Culture</span>
+                </div>
+            </a>
+            <a href="posts/shield-name-generator.html" class="popular-generator-card">
+                <span class="generator-icon">🛡️</span>
+                <div class="generator-info">
+                    <h3>Shield Name Generator</h3>
+                    <p>Generate powerful and legendary shield names in multiple formats. Choose from &#039;The [name] Shield&#039;, &#039;The Shield of the [name]&#039;, or &#039;[name], Protector of [name]&#039; formats.</p>
+                    <span class="category-badge">⚔️ Objects</span>
+                </div>
+            </a>
+            <a href="posts/dnd-fantasy-name-generator.html" class="popular-generator-card">
+                <span class="generator-icon">⚔️</span>
+                <div class="generator-info">
+                    <h3>D&amp;D Fantasy Name Generator</h3>
+                    <p>Generate authentic D&amp;D fantasy names by combining first and last names. Perfect for creating memorable player characters and NPCs for your D&amp;D campaigns.</p>
+                    <span class="category-badge">⚔️ Fantasy</span>
+                </div>
+            </a>
+            <a href="posts/hogwarts-legacy-witch-name-generator.html" class="popular-generator-card">
+                <span class="generator-icon">🪄</span>
+                <div class="generator-info">
+                    <h3>Hogwarts Legacy Witch Name Generator</h3>
+                    <p>Generate authentic Hogwarts Legacy witch names filtered by house. Perfect for creating witch characters from Ravenclaw, Hufflepuff, Gryffindor, or Slytherin in the 1800s Wizarding World.</p>
+                    <span class="category-badge">🎬 Pop Culture</span>
+                </div>
+            </a>
+            <a href="posts/lotr-wizard-name-generator.html" class="popular-generator-card">
+                <span class="generator-icon">🧙</span>
+                <div class="generator-info">
+                    <h3>LOTR Wizard Name Generator</h3>
+                    <p>Generate authentic Lord of the Rings wizard names inspired by Middle-earth. Perfect for creating wizard characters in the style of Gandalf, Saruman, and Radagast.</p>
+                    <span class="category-badge">🎬 Pop Culture</span>
+                </div>
+            </a>
+            <a href="posts/poison-name-generator.html" class="popular-generator-card">
+                <span class="generator-icon">☠️</span>
+                <div class="generator-info">
+                    <h3>Poison Name Generator</h3>
+                    <p>Generate dark and deadly poison names in the format &#039;[name], [descriptor]&#039;. Perfect for fantasy writing, D&amp;D, and gaming.</p>
+                    <span class="category-badge">⚔️ Objects</span>
+                </div>
+            </a>
+            <a href="posts/wizard-name-generator.html" class="popular-generator-card">
+                <span class="generator-icon">🧙</span>
+                <div class="generator-info">
+                    <h3>Wizard Name Generator</h3>
+                    <p>Generate authentic wizard names for arcane, elemental, necromancy, divination, and more magical schools. Perfect for D&amp;D, fantasy writing, and worldbuilding.</p>
+                    <span class="category-badge">⚔️ Fantasy</span>
+                </div>
+            </a>
+            <a href="posts/dragon-name-generator.html" class="popular-generator-card">
+                <span class="generator-icon">🐉</span>
+                <div class="generator-info">
+                    <h3>Dragon Name Generator</h3>
+                    <p>Generate authentic dragon names for fire, ice, storm, earth, shadow, light, and more dragon types. Perfect for D&amp;D, fantasy writing, and worldbuilding.</p>
+                    <span class="category-badge">⚔️ Fantasy</span>
+                </div>
+            </a>
+            <a href="posts/hogwarts-legacy-wizard-name-generator.html" class="popular-generator-card">
+                <span class="generator-icon">🪄</span>
+                <div class="generator-info">
+                    <h3>Hogwarts Legacy Wizard Name Generator</h3>
+                    <p>Generate authentic Hogwarts Legacy wizard names filtered by house. Perfect for creating wizard characters from Ravenclaw, Hufflepuff, Gryffindor, or Slytherin in the 1800s Wizarding World.</p>
+                    <span class="category-badge">🎬 Pop Culture</span>
+                </div>
+            </a>
+            <a href="posts/orc-name-generator.html" class="popular-generator-card">
+                <span class="generator-icon">🧌</span>
+                <div class="generator-info">
+                    <h3>Orc Name Generator</h3>
+                    <p>Generate authentic orc names for warriors, shamans, chieftains, hunters, raiders, and more. Perfect for D&amp;D, fantasy writing, and worldbuilding.</p>
+                    <span class="category-badge">⚔️ Fantasy</span>
+                </div>
+            </a>
+            <a href="posts/sword-name-generator.html" class="popular-generator-card">
+                <span class="generator-icon">⚔️</span>
+                <div class="generator-info">
+                    <h3>Sword Name Generator</h3>
+                    <p>Generate legendary sword names using three distinct templates. Create compound artifacts, named artifacts, or complex named weapons perfect for fantasy writing, D&amp;D, and gaming.</p>
+                    <span class="category-badge">⚔️ Objects</span>
+                </div>
+            </a>
+            <a href="posts/axe-name-generator.html" class="popular-generator-card">
+                <span class="generator-icon">🪓</span>
+                <div class="generator-info">
+                    <h3>Axe Name Generator</h3>
+                    <p>Generate legendary axe names using three distinct templates. Create compound artifacts, named artifacts, or complex named weapons perfect for fantasy writing, D&amp;D, and gaming.</p>
+                    <span class="category-badge">⚔️ Objects</span>
+                </div>
+            </a>
+            <a href="posts/elven-sword-name-generator.html" class="popular-generator-card">
+                <span class="generator-icon">⚔️</span>
+                <div class="generator-info">
+                    <h3>Elven Sword Name Generator</h3>
+                    <p>Generate authentic elven sword names with English translations. From legendary blades like &#039;Glamdring&#039; and &#039;Andúril&#039; to poetic names like &#039;Elen-nár (Starfire)&#039; and &#039;Ithil-lhû (Moonwhisper)&#039;, create elven swords perfect for fantasy writing, D&amp;D, and worldbuilding.</p>
+                    <span class="category-badge">⚔️ Objects</span>
+                </div>
+            </a>
+            <a href="posts/epithet-generator.html" class="popular-generator-card">
+                <span class="generator-icon">🏷️</span>
+                <div class="generator-info">
+                    <h3>Epithet Generator</h3>
+                    <p>Generate fantasy epithets to add to character names. Choose from physical descriptors, personality traits, deeds, reputation, origin, magical, weapon, time-based, and more categories.</p>
+                    <span class="category-badge">👥 People</span>
+                </div>
+            </a>
+            <a href="posts/skyrim-orc-name-generator.html" class="popular-generator-card">
+                <span class="generator-icon">🧌</span>
+                <div class="generator-info">
+                    <h3>Skyrim Orc Name Generator</h3>
+                    <p>Generate authentic Skyrim orc names from The Elder Scrolls V: Skyrim. Perfect for creating Orsimer characters, NPCs, and worldbuilding in Tamriel.</p>
+                    <span class="category-badge">🎬 Pop Culture</span>
+                </div>
+            </a>
+            <a href="posts/dwarf-name-generator.html" class="popular-generator-card">
+                <span class="generator-icon">⛏️</span>
+                <div class="generator-info">
+                    <h3>Dwarf Name Generator</h3>
+                    <p>Generate authentic dwarf names for Mountain Dwarves and Hill Dwarves. Perfect for D&amp;D characters, fantasy writing, and worldbuilding.</p>
+                    <span class="category-badge">⚔️ Fantasy</span>
+                </div>
+            </a>
+            <a href="posts/fantasy-town-name-generator.html" class="popular-generator-card">
+                <span class="generator-icon">🏘️</span>
+                <div class="generator-info">
+                    <h3>Fantasy Town Name Generator</h3>
+                    <p>Generate authentic fantasy town names for agricultural, coastal, mining, forest, magical, scholarly, trade, defensive, artisan, and riverside towns. Perfect for D&amp;D worldbuilding, fantasy writing, and map creation.</p>
+                    <span class="category-badge">🗺️ Places</span>
+                </div>
+            </a>
+            <a href="posts/funny-minecraft-sword-name-generator.html" class="popular-generator-card">
+                <span class="generator-icon">🗡️</span>
+                <div class="generator-info">
+                    <h3>Funny Minecraft Sword Name Generator</h3>
+                    <p>Generate hilarious and creative funny Minecraft sword names perfect for PvP servers, survival worlds, and creative builds. From &#039;Bladey McBladeface&#039; to &#039;The Tickle Stick&#039;, create memorable sword names that make players laugh.</p>
+                    <span class="category-badge">🎬 Pop Culture</span>
+                </div>
+            </a>
+            <a href="posts/warhammer-name-generator.html" class="popular-generator-card">
+                <span class="generator-icon">🔨</span>
+                <div class="generator-info">
+                    <h3>Warhammer Name Generator</h3>
+                    <p>Generate legendary warhammer names using three distinct templates. Create compound artifacts, named artifacts, or complex named weapons perfect for fantasy writing, D&amp;D, and gaming.</p>
+                    <span class="category-badge">⚔️ Objects</span>
+                </div>
+            </a>
+<!-- /BUILD:popular -->
             </div>
         </section>
 
@@ -191,227 +425,55 @@
         </footer>
     </div>
 
-    <script src="lib/generator.js"></script>
+    <!-- BUILD:generator-index -->
+    <script type="application/json" id="generator-index">{"concepts":[{"key":"blog","title":"Blog Name Generator","icon":"📝"},{"key":"brand","title":"Brand Name Generator","icon":"🏷️"}],"events":[],"fantasy":[{"key":"elf","title":"Elf Name Generator","icon":"🧝"},{"key":"dwarf","title":"Dwarf Name Generator","icon":"⛏️"},{"key":"dragon","title":"Dragon Name Generator","icon":"🐉"},{"key":"wizard","title":"Wizard Name Generator","icon":"🧙"},{"key":"orc","title":"Orc Name Generator","icon":"🧌"},{"key":"skyrim_orc","title":"Skyrim Orc Name Generator","icon":"🧌"},{"key":"warhammer_orc","title":"Warhammer Orc Name Generator","icon":"🧌"},{"key":"wow_orc","title":"World of Warcraft Orc Name Generator","icon":"🧌"},{"key":"lotr_orc","title":"LOTR Orc Name Generator","icon":"🧌"},{"key":"half_orc","title":"Half-Orc Name Generator","icon":"🧌"},{"key":"fantasy_town","title":"Fantasy Town Name Generator","icon":"🏘️"},{"key":"fantasy_country","title":"Fantasy Country Name Generator","icon":"🗺️"},{"key":"swamp_witch","title":"Swamp Witch Name Generator","icon":"🧙‍♀️"},{"key":"dnd_fantasy","title":"D&D Fantasy Name Generator","icon":"⚔️"},{"key":"path_of_exile_witch","title":"Path of Exile Witch Name Generator","icon":"🔮"},{"key":"funny_wizard","title":"Funny Wizard Name Generator","icon":"🎩"},{"key":"high_elf","title":"High Elf Name Generator","icon":"👑"},{"key":"wood_elf","title":"Wood Elf Name Generator","icon":"🌲"},{"key":"dark_elf","title":"Dark Elf Name Generator","icon":"🌑"},{"key":"clan","title":"Clan Name Generator","icon":"⚔️"},{"key":"demon","title":"Demon Name Generator","icon":"😈"},{"key":"demon_epithet","title":"Demon Epithet Generator","icon":"🔥"},{"key":"fantasy_city","title":"Fantasy City Name Generator","icon":"🏰"},{"key":"angel","title":"Angel Name Generator","icon":"😇"},{"key":"alien","title":"Alien Name Generator","icon":"👽"},{"key":"fairy","title":"Fairy Name Generator","icon":"🧚"},{"key":"fairy_town","title":"Fairy Town Name Generator","icon":"🧚‍♀️"},{"key":"elven_sword","title":"Elven Sword Name Generator","icon":"⚔️"}],"folklore":[{"key":"fairy","title":"Fairy Name Generator","icon":"🧚"},{"key":"fairy_town","title":"Fairy Town Name Generator","icon":"🧚‍♀️"}],"music":[{"key":"dungeon_synth","title":"Dungeon Synth Name Generator","icon":"🎵"}],"objects":[{"key":"shield","title":"Shield Name Generator","icon":"🛡️"},{"key":"poison","title":"Poison Name Generator","icon":"☠️"},{"key":"sword","title":"Sword Name Generator","icon":"⚔️"},{"key":"axe","title":"Axe Name Generator","icon":"🪓"},{"key":"warhammer","title":"Warhammer Name Generator","icon":"🔨"},{"key":"wand","title":"Wand Name Generator","icon":"🪄"},{"key":"funny_sword","title":"Funny Minecraft Sword Name Generator","icon":"🗡️"},{"key":"elven_sword","title":"Elven Sword Name Generator","icon":"⚔️"},{"key":"japanese_sword","title":"Japanese Sword Name Generator","icon":"⚔️"},{"key":"game_of_thrones_sword","title":"Game of Thrones Sword Name Generator","icon":"⚔️"}],"organizations":[{"key":"business","title":"Business Name Generator","icon":"💼"},{"key":"clan","title":"Clan Name Generator","icon":"⚔️"},{"key":"company","title":"Company Name Generator","icon":"🏢"},{"key":"guild","title":"Guild Name Generator","icon":"⚔️"},{"key":"brand","title":"Brand Name Generator","icon":"🏷️"}],"people":[{"key":"epithet","title":"Epithet Generator","icon":"🏷️"},{"key":"assassin","title":"Assassin Name Generator","icon":"🗡️"},{"key":"vampire","title":"Vampire Name Generator","icon":"🧛"}],"places":[{"key":"fantasy_town","title":"Fantasy Town Name Generator","icon":"🏘️"},{"key":"fantasy_country","title":"Fantasy Country Name Generator","icon":"🗺️"},{"key":"cafe","title":"Cafe Name Generator","icon":"☕"},{"key":"fantasy_city","title":"Fantasy City Name Generator","icon":"🏰"}],"pop_culture":[{"key":"harry_potter_witch","title":"Harry Potter Witch Name Generator","icon":"⚡"},{"key":"hogwarts_legacy_witch","title":"Hogwarts Legacy Witch Name Generator","icon":"🪄"},{"key":"hogwarts_legacy_wizard","title":"Hogwarts Legacy Wizard Name Generator","icon":"🪄"},{"key":"skyrim_orc","title":"Skyrim Orc Name Generator","icon":"🧌"},{"key":"warhammer_orc","title":"Warhammer Orc Name Generator","icon":"🧌"},{"key":"wow_orc","title":"World of Warcraft Orc Name Generator","icon":"🧌"},{"key":"lotr_orc","title":"LOTR Orc Name Generator","icon":"🧌"},{"key":"lotr_wizard","title":"LOTR Wizard Name Generator","icon":"🧙"},{"key":"ogryn","title":"Ogryn Name Generator","icon":"🧌"},{"key":"funny_sword","title":"Funny Minecraft Sword Name Generator","icon":"🗡️"},{"key":"game_of_thrones_sword","title":"Game of Thrones Sword Name Generator","icon":"⚔️"}]}</script>
+<!-- /BUILD:generator-index -->
+    <script src="lib/recipe-engine.js"></script>
+    <script src="lib/page.js"></script>
     <script>
-        // Set current year
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-        
-        // Load categories and populate dropdowns
-        (async () => {
-            const generator = window.nameGenerator;
-            const categories = await generator.getCategories();
-            
-            // Populate category dropdown in nav
-            const navDropdown = document.getElementById('category-dropdown');
-            // Clear any existing items first to prevent duplicates
-            navDropdown.innerHTML = '';
-            categories.forEach(cat => {
-                const link = document.createElement('a');
-                link.href = `categories/${cat.slug}-names.html`;
-                link.textContent = `${cat.icon} ${cat.navLabel}`;
-                navDropdown.appendChild(link);
-            });
-            
-            // Populate main category select
-            const mainCategorySelect = document.getElementById('main-category');
-            categories.forEach(cat => {
-                const option = document.createElement('option');
-                option.value = cat.slug;
-                option.textContent = `${cat.icon} ${cat.name}`;
-                mainCategorySelect.appendChild(option);
-            });
-            
-            // Populate category cards
-            const categoriesGrid = document.getElementById('categories-grid');
-            categories.forEach(cat => {
-                const card = document.createElement('a');
-                card.href = `categories/${cat.slug}-names.html`;
-                card.className = 'category-card';
-                card.innerHTML = `
-                    <span class="category-icon">${cat.icon}</span>
-                    <h3>${cat.name}</h3>
-                    <p>${cat.description}</p>
-                    <div class="pillar-count" data-category="${cat.slug}">Loading...</div>
-                `;
-                categoriesGrid.appendChild(card);
-                
-                // Load generator count
-                (async () => {
-                    try {
-                        const gens = await generator.getGenerators(cat.slug);
-                        const count = Object.keys(gens).length;
-                        const countEl = card.querySelector('.pillar-count');
-                        countEl.textContent = `${count} Generator${count !== 1 ? 's' : ''}`;
-                    } catch (e) {
-                        const countEl = card.querySelector('.pillar-count');
-                        countEl.textContent = '3 Generators';
-                    }
-                })();
-            });
-            
-            // Populate popular generators
-            const popularGenerators = await generator.getPopularGenerators();
-            const popularGrid = document.getElementById('popular-generators');
-            
-            // Clear any existing content
-            popularGrid.innerHTML = '';
-            
-            // Deduplicate by slug to prevent duplicates
-            const seen = new Set();
-            const uniqueGenerators = popularGenerators.filter(gen => {
-                if (seen.has(gen.slug)) {
-                    return false;
-                }
-                seen.add(gen.slug);
-                return true;
-            });
-            
-            // Helper function to escape HTML
-            const escapeHtml = (text) => {
-                if (!text) return '';
-                const div = document.createElement('div');
-                div.textContent = text;
-                return div.innerHTML;
-            };
-            
-            uniqueGenerators.slice(0, 20).forEach(gen => {
-                const card = document.createElement('a');
-                card.href = `posts/${gen.slug}.html`;
-                card.className = 'popular-generator-card';
-                card.innerHTML = `
-                    <span class="generator-icon">${gen.icon}</span>
-                    <div class="generator-info">
-                        <h3>${escapeHtml(gen.title)}</h3>
-                        <p>${escapeHtml(gen.description)}</p>
-                        <span class="category-badge">${gen.categoryIcon} ${escapeHtml(gen.categoryName)}</span>
-                    </div>
-                `;
-                popularGrid.appendChild(card);
-            });
-        })();
-        
-        // Main generator functionality
+        // Ultimate Name Generator: pick a category, then a generator, whose
+        // names are loaded from data/generators/<key>.json when chosen.
+        const index = JSON.parse(document.getElementById('generator-index').textContent);
         const mainCategorySelect = document.getElementById('main-category');
         const mainGeneratorSelect = document.getElementById('main-generator');
         const filterContainer = document.getElementById('filter-container');
         const generateBtn = document.getElementById('main-generate-btn');
         const resultsDiv = document.getElementById('main-results');
-        
-        let currentCategory = null;
-        let currentGenerator = null;
-        
-        mainCategorySelect.addEventListener('change', async (e) => {
-            const categorySlug = e.target.value;
-            if (!categorySlug) {
-                mainGeneratorSelect.disabled = true;
-                mainGeneratorSelect.innerHTML = '<option value="">Select a generator...</option>';
-                generateBtn.disabled = true;
-                return;
-            }
-            
-            currentCategory = categorySlug;
-            const generators = await window.nameGenerator.getGenerators(categorySlug);
-            
-            mainGeneratorSelect.innerHTML = '<option value="">Select a generator...</option>';
-            for (const [key, gen] of Object.entries(generators)) {
-                const option = document.createElement('option');
-                option.value = key;
-                option.textContent = `${gen.icon} ${gen.title}`;
-                mainGeneratorSelect.appendChild(option);
-            }
-            mainGeneratorSelect.disabled = false;
-        });
-        
-        mainGeneratorSelect.addEventListener('change', async (e) => {
-            const generatorKey = e.target.value;
-            if (!generatorKey || !currentCategory) {
-                generateBtn.disabled = true;
-                filterContainer.innerHTML = '';
-                return;
-            }
-            
-            currentGenerator = generatorKey;
-            const generator = await window.nameGenerator.getGenerator(currentCategory, generatorKey);
-            
-            // Build filters
+        const escapeHtml = NamePage.escapeHtml;
+
+        mainCategorySelect.addEventListener('change', () => {
+            const generators = index[mainCategorySelect.value] || [];
+            mainGeneratorSelect.innerHTML = '<option value="">Select a generator...</option>' +
+                generators.map(gen => `<option value="${escapeHtml(gen.key)}">${gen.icon} ${escapeHtml(gen.title)}</option>`).join('');
+            mainGeneratorSelect.disabled = generators.length === 0;
             filterContainer.innerHTML = '';
-            if (generator.filters) {
-                for (const [key, filter] of Object.entries(generator.filters)) {
-                    const group = document.createElement('div');
-                    group.className = 'control-group';
-                    group.innerHTML = `
-                        <label for="filter-${key}">${filter.label}:</label>
-                        <select id="filter-${key}" name="${key}">
-                            ${filter.options.map(opt => 
-                                `<option value="${opt}">${opt.charAt(0).toUpperCase() + opt.slice(1)}</option>`
-                            ).join('')}
-                        </select>
-                    `;
-                    filterContainer.appendChild(group);
-                }
-            }
-            
-            generateBtn.disabled = false;
+            generateBtn.disabled = true;
         });
-        
-        generateBtn.addEventListener('click', async () => {
-            if (!currentCategory || !currentGenerator) return;
-            
-            const count = parseInt(document.getElementById('main-count').value) || 10;
-            const filters = {};
-            
-            // Collect filter values
-            filterContainer.querySelectorAll('select').forEach(select => {
-                filters[select.name] = select.value;
-            });
-            
+
+        mainGeneratorSelect.addEventListener('change', async () => {
+            const key = mainGeneratorSelect.value;
+            filterContainer.innerHTML = '';
+            generateBtn.disabled = true;
+            if (!key) return;
             try {
-                const names = await window.nameGenerator.generateNames(
-                    currentCategory,
-                    currentGenerator,
-                    filters,
-                    count
-                );
-                
-                resultsDiv.innerHTML = '<ul class="name-results">' + 
-                    names.map(name => `<li>${name}</li>`).join('') + 
-                    '</ul>';
+                const response = await fetch(`data/generators/${encodeURIComponent(key)}.json`);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                const config = await response.json();
+                if (mainGeneratorSelect.value !== key) return; // changed while loading
+                filterContainer.innerHTML = NamePage.filtersHtml(config.filters, 'control-group');
+                NamePage.mountGenerator({
+                    config,
+                    root: filterContainer,
+                    button: generateBtn,
+                    results: resultsDiv,
+                    getCount: () => Math.min(50, Math.max(1, parseInt(document.getElementById('main-count').value, 10) || 10)),
+                });
+                generateBtn.disabled = false;
             } catch (error) {
-                console.error('Generation error:', error);
-                resultsDiv.innerHTML = '<p class="error">Error generating names. Please try again.</p>';
+                console.error('Could not load generator:', error);
+                resultsDiv.innerHTML = '<p class="error">Error loading this generator. Please try again.</p>';
             }
         });
-        
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.getElementById('nav-links');
-        const categoryDropdown = document.querySelector('.nav-dropdown');
-        
-        if (menuToggle) {
-            menuToggle.addEventListener('click', () => {
-                menuToggle.classList.toggle('active');
-                navLinks.classList.toggle('active');
-            });
-            
-            // Close menu when clicking on a link
-            navLinks.addEventListener('click', (e) => {
-                if (e.target.tagName === 'A' && !e.target.classList.contains('nav-dropdown-toggle')) {
-                    menuToggle.classList.remove('active');
-                    navLinks.classList.remove('active');
-                }
-            });
-            
-            // Handle dropdown toggle on mobile
-            const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
-            if (dropdownToggle) {
-                dropdownToggle.addEventListener('click', (e) => {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        categoryDropdown.classList.toggle('active');
-                    }
-                });
-            }
-        }
     </script>
 </body>
 </html>

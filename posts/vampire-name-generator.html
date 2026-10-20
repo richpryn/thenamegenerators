@@ -78,8 +78,8 @@
       "url": "https://thenamegenerators.com/logo.png"
     }
   },
-  "datePublished": "2026-10-16T11:18:30.038Z",
-  "dateModified": "2026-10-16T11:18:30.038Z",
+  "datePublished": "2026-10-20T06:46:29.371Z",
+  "dateModified": "2026-10-20T06:46:29.371Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://thenamegenerators.com/posts/vampire-name-generator.html"
@@ -246,7 +246,16 @@
                 <div class="nav-dropdown">
                     <a href="#" class="nav-dropdown-toggle">Categories</a>
                     <div class="nav-dropdown-menu" id="category-dropdown">
-                        <!-- Populated by JavaScript -->
+                        <a href="../categories/concepts-names.html">💭 Concept Names</a>
+                        <a href="../categories/events-names.html">🎉 Event Names</a>
+                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
+                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
+                        <a href="../categories/music-names.html">🎵 Music Names</a>
+                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
+                        <a href="../categories/organizations-names.html">🏛️ Organization Names</a>
+                        <a href="../categories/people-names.html">👥 People Names</a>
+                        <a href="../categories/places-names.html">🗺️ Place Names</a>
+                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
                     </div>
                 </div>
             </div>
@@ -269,10 +278,10 @@
                         <div class="filters">
           <div class="filter-group">
             <label for="filter-gender">Gender:</label>
-            <select id="filter-gender" name="gender">
+            <select id="filter-gender" name="gender" data-filter="gender">
               <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="non_binary">Non Binary</option>
+              <option value="female">Female</option>
+              <option value="non_binary">Non Binary</option>
             </select>
           </div></div>
                         <div class="generator-controls">
@@ -310,14 +319,44 @@
       <section class="related-section">
         <h2>Related Name Generators</h2>
         <div class="related-grid" id="related-generators">
-          <!-- Populated by JavaScript -->
+          <a href="../posts/assassin-name-generator.html" class="related-card">
+            <h3>🗡️ Assassin Name Generator</h3>
+            <p>Generate deadly assassin names by combining modern, fantasy dark, and ethnic thematic components. Create compound names or powerful single-word aliases perfect for assassins, rogues, and shadow operatives.</p>
+          </a>
+          <a href="../posts/epithet-generator.html" class="related-card">
+            <h3>🏷️ Epithet Generator</h3>
+            <p>Generate fantasy epithets to add to character names. Choose from physical descriptors, personality traits, deeds, reputation, origin, magical, weapon, time-based, and more categories.</p>
+          </a>
+          <a href="../posts/alien-name-generator.html" class="related-card">
+            <h3>👽 Alien Name Generator</h3>
+            <p>Generate authentic alien names with gender filters and format options. Create first names, full names, or full names with epithets perfect for sci-fi writing, space operas, and science fiction characters.</p>
+          </a>
+          <a href="../posts/angel-name-generator.html" class="related-card">
+            <h3>😇 Angel Name Generator</h3>
+            <p>Generate authentic angel names with gender filters and format options. Create first names, full names, or full names with epithets perfect for fantasy writing, D&amp;D, and religious/mythological characters.</p>
+          </a>
+          <a href="../posts/axe-name-generator.html" class="related-card">
+            <h3>🪓 Axe Name Generator</h3>
+            <p>Generate legendary axe names using three distinct templates. Create compound artifacts, named artifacts, or complex named weapons perfect for fantasy writing, D&amp;D, and gaming.</p>
+          </a>
+          <a href="../posts/blog-name-generator.html" class="related-card">
+            <h3>📝 Blog Name Generator</h3>
+            <p>Generate unique and memorable blog names tailored to your industry. Perfect for starting a blog, business naming, or creative projects.</p>
+          </a>
         </div>
       </section>
             
       <section class="category-generators-section">
         <h2>All People Name Generators</h2>
         <div class="category-generators-grid" id="category-generators">
-          <!-- Populated by JavaScript -->
+          <a href="../posts/epithet-generator.html" class="category-generator-item">
+            <span class="category-generator-icon">🏷️</span>
+            <span class="category-generator-title">Epithet Generator</span>
+          </a>
+          <a href="../posts/assassin-name-generator.html" class="category-generator-item">
+            <span class="category-generator-icon">🗡️</span>
+            <span class="category-generator-title">Assassin Name Generator</span>
+          </a>
         </div>
       </section>
         </main>
@@ -327,139 +366,8 @@
         </footer>
     </div>
 
-    <script src="../lib/generator.js"></script>
-    <script>
-        // Initialize generator for this specific generator
-        const categorySlug = 'people';
-        const generatorKey = 'vampire';
-        
-        // Populate category dropdown
-        (async () => {
-            const categories = await window.nameGenerator.getCategories();
-            const dropdown = document.getElementById('category-dropdown');
-            // Clear any existing items first to prevent duplicates
-            dropdown.innerHTML = '';
-            categories.forEach(cat => {
-                const link = document.createElement('a');
-                link.href = `../categories/${cat.slug}-names.html`;
-                link.textContent = `${cat.icon} ${cat.navLabel}`;
-                dropdown.appendChild(link);
-            });
-        })();
-        
-        // Initialize generator
-        document.getElementById('generate-btn').addEventListener('click', async () => {
-            const count = 8;
-            const filters = {};
-            
-            // Collect filter values
-            if (document.getElementById('filter-gender')) {
-                filters['gender'] = document.getElementById('filter-gender').value;
-              }
-            
-            try {
-                
-                const names = await window.nameGenerator.generateNames(categorySlug, generatorKey, filters, count);
-                const resultsDiv = document.getElementById('results');
-                resultsDiv.innerHTML = '<ul class="name-results">' + 
-                    names.map(name => `<li>${name}</li>`).join('') + 
-                    '</ul>';
-                
-            } catch (error) {
-                console.error('Generation error:', error);
-                document.getElementById('results').innerHTML = '<p class="error">Error generating names. Please try again.</p>';
-            }
-        });
-        
-        // Load related generators (always show, dynamically calculated)
-        (async () => {
-            // Helper function to escape HTML
-            const escapeHtml = (text) => {
-                if (!text) return '';
-                const div = document.createElement('div');
-                div.textContent = text;
-                return div.innerHTML;
-            };
-            
-            const related = await window.nameGenerator.getRelatedGenerators(categorySlug, generatorKey);
-            const relatedDiv = document.getElementById('related-generators');
-            if (relatedDiv && related.length > 0) {
-                relatedDiv.innerHTML = related.map(gen => 
-                    `<a href="../posts/${gen.slug}.html" class="related-card">
-                        <h3>${gen.icon} ${escapeHtml(gen.title)}</h3>
-                        <p>${escapeHtml(gen.description)}</p>
-                    </a>`
-                ).join('');
-            } else if (relatedDiv) {
-                relatedDiv.innerHTML = '<p>No related generators found.</p>';
-            }
-        })();
-        
-        // Load category generators grid
-        (async () => {
-            // Helper function to escape HTML
-            const escapeHtml = (text) => {
-                if (!text) return '';
-                const div = document.createElement('div');
-                div.textContent = text;
-                return div.innerHTML;
-            };
-            
-            try {
-                const generators = await window.nameGenerator.getGenerators(categorySlug);
-                const generatorsArray = Object.entries(generators)
-                    .map(([key, gen]) => ({
-                        key,
-                        ...gen
-                    }))
-                    .filter(gen => gen.key !== generatorKey); // Exclude current generator
-                
-                const categoryGeneratorsDiv = document.getElementById('category-generators');
-                if (categoryGeneratorsDiv && generatorsArray.length > 0) {
-                    categoryGeneratorsDiv.innerHTML = generatorsArray.map(gen => 
-                        `<a href="../posts/${gen.slug}.html" class="category-generator-item">
-                            <span class="category-generator-icon">${gen.icon}</span>
-                            <span class="category-generator-title">${escapeHtml(gen.title)}</span>
-                        </a>`
-                    ).join('');
-                } else if (categoryGeneratorsDiv) {
-                    categoryGeneratorsDiv.innerHTML = '<p>No other generators in this category.</p>';
-                }
-            } catch (error) {
-                console.error('Error loading category generators:', error);
-            }
-        })();
-        
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.getElementById('nav-links');
-        const categoryDropdown = document.querySelector('.nav-dropdown');
-        
-        if (menuToggle) {
-            menuToggle.addEventListener('click', () => {
-                menuToggle.classList.toggle('active');
-                navLinks.classList.toggle('active');
-            });
-            
-            // Close menu when clicking on a link
-            navLinks.addEventListener('click', (e) => {
-                if (e.target.tagName === 'A' && !e.target.classList.contains('nav-dropdown-toggle')) {
-                    menuToggle.classList.remove('active');
-                    navLinks.classList.remove('active');
-                }
-            });
-            
-            // Handle dropdown toggle on mobile
-            const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
-            if (dropdownToggle) {
-                dropdownToggle.addEventListener('click', (e) => {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        categoryDropdown.classList.toggle('active');
-                    }
-                });
-            }
-        }
-    </script>
+    <script type="application/json" id="generator-config">{"slug":"vampire-name-generator","filters":{"gender":{"label":"Gender","options":["male","female","non_binary"]}},"recipe":"combine","parts":["{gender}","surnames"],"join":" ","data":{"male":["Alistair","Armand","Balthazar","Caelen","Cain","Casimir","Corvin","Damian","Dante","Dimitri","Dorian","Draco","Elias","Gideon","Julien","Kaelen","Leandros","Lorenzo","Lucien","Lysander","Malachi","Marcus","Marius","Nicodemus","Orion","Ragnar","Rurik","Seraph","Severin","Silas","Sterling","Thorne","Valerius","Vance","Varian","Vlad"],"female":["Adelina","Amethyst","Anastasia","Aurora","Azriel","Belladonna","Bianca","Carmilla","Cassandra","Dahlia","Elara","Elowen","Esmeralda","Evangeline","Genevieve","Isabella","Isolde","Lenore","Lilith","Lucrezia","Lysandra","Morwen","Nyx","Ophelia","Persephone","Ravenna","Rowan","Selene","Seraphina","Sybella","Valeria","Vespera","Victoria","Viola","Vivienne","Zara"],"non_binary":["Ash","Aura","Bellamy","Blaze","Caelen","Dread","Echo","Eris","Faelan","Glimmer","Halo","Indigo","Jael","Kael","Lyra","Nyx","Orion","Pax","Raven","Rune","Seraph","Shadow","Silver","Slate","Sterling","Storm","Thorne","Vesper","Wren","Zephyr"],"surnames":["Blackwood","Nightshade","Shadowmere","Bloodwick","Crimson","Sanguine","Obsidian","Onyx","Raven","Ravenna","Strix","Corvus","de Bathory","von Bloodwick","de Shadowsong","Dracul","Tepes","Bathory","de Blackwood","von Dracul","Van Bane","Graves","Crypte","Mort","Morte","Noir","Shadow","Aether","Void","Vesper","Echo","Aura","Glimmer","Ironfall","Slate","Stone","Iron"]}}</script>
+    <script src="../lib/recipe-engine.js"></script>
+    <script src="../lib/page.js"></script>
 </body>
 </html>

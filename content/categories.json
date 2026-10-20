@@ -1,0 +1,167 @@
+[
+  {
+    "name": "Concepts",
+    "slug": "concepts",
+    "icon": "💭",
+    "description": "Name generators for abstract concepts, ideas, and themes",
+    "seoDescription": "Generate names for concepts, ideas, themes, and abstract notions. Perfect for creative writing, philosophy, and conceptual projects.",
+    "navLabel": "Concept Names",
+    "generators": [
+      "blog",
+      "brand"
+    ]
+  },
+  {
+    "name": "Events",
+    "slug": "events",
+    "icon": "🎉",
+    "description": "Name generators for events, festivals, holidays, and celebrations",
+    "seoDescription": "Generate names for events, festivals, holidays, celebrations, and special occasions. Perfect for planning, writing, and creative projects.",
+    "navLabel": "Event Names",
+    "generators": []
+  },
+  {
+    "name": "Fantasy",
+    "slug": "fantasy",
+    "icon": "⚔️",
+    "description": "Fantasy name generators for magical creatures, characters, and mythical beings",
+    "seoDescription": "Generate authentic fantasy names for elves, orcs, wizards, dragons, and more legendary creatures. Perfect for D&D, writing, and gaming.",
+    "navLabel": "Fantasy Names",
+    "generators": [
+      "elf",
+      "dwarf",
+      "dragon",
+      "wizard",
+      "orc",
+      "skyrim_orc",
+      "warhammer_orc",
+      "wow_orc",
+      "lotr_orc",
+      "half_orc",
+      "fantasy_town",
+      "fantasy_country",
+      "swamp_witch",
+      "dnd_fantasy",
+      "path_of_exile_witch",
+      "funny_wizard",
+      "high_elf",
+      "wood_elf",
+      "dark_elf",
+      "clan",
+      "demon",
+      "demon_epithet",
+      "fantasy_city",
+      "angel",
+      "alien",
+      "fairy",
+      "fairy_town",
+      "elven_sword"
+    ]
+  },
+  {
+    "name": "Folklore",
+    "slug": "folklore",
+    "icon": "📜",
+    "description": "Name generators inspired by myths, legends, and folklore from around the world",
+    "seoDescription": "Generate authentic names from folklore, mythology, and legends. Perfect for mythical creatures, legendary heroes, and folkloric characters.",
+    "navLabel": "Folklore Names",
+    "generators": [
+      "fairy",
+      "fairy_town"
+    ]
+  },
+  {
+    "name": "Music",
+    "slug": "music",
+    "icon": "🎵",
+    "description": "Name generators for bands, songs, albums, and musical projects",
+    "seoDescription": "Generate names for bands, songs, albums, and musical projects. Perfect for musicians, artists, and creative music projects.",
+    "navLabel": "Music Names",
+    "generators": [
+      "dungeon_synth"
+    ]
+  },
+  {
+    "name": "Objects",
+    "slug": "objects",
+    "icon": "⚔️",
+    "description": "Name generators for weapons, items, artifacts, and objects",
+    "seoDescription": "Generate names for weapons, items, artifacts, magical objects, and items. Perfect for gaming, writing, and creative projects.",
+    "navLabel": "Object Names",
+    "generators": [
+      "shield",
+      "poison",
+      "sword",
+      "axe",
+      "warhammer",
+      "wand",
+      "funny_sword",
+      "elven_sword",
+      "japanese_sword",
+      "game_of_thrones_sword"
+    ]
+  },
+  {
+    "name": "Organizations",
+    "slug": "organizations",
+    "icon": "🏛️",
+    "description": "Name generators for companies, guilds, factions, and organizations",
+    "seoDescription": "Generate names for organizations, companies, guilds, factions, and groups. Perfect for worldbuilding, business, and creative projects.",
+    "navLabel": "Organization Names",
+    "generators": [
+      "business",
+      "clan",
+      "company",
+      "guild",
+      "brand"
+    ]
+  },
+  {
+    "name": "People",
+    "slug": "people",
+    "icon": "👥",
+    "description": "Name generators for real-world names from different cultures and time periods",
+    "seoDescription": "Generate authentic names for people from different cultures, ethnicities, and time periods. Perfect for characters, stories, and creative writing.",
+    "navLabel": "People Names",
+    "generators": [
+      "epithet",
+      "assassin",
+      "vampire"
+    ]
+  },
+  {
+    "name": "Places",
+    "slug": "places",
+    "icon": "🗺️",
+    "description": "Name generators for cities, towns, countries, and locations",
+    "seoDescription": "Generate names for places, cities, towns, countries, and locations. Perfect for worldbuilding, writing, and creative geography projects.",
+    "navLabel": "Place Names",
+    "generators": [
+      "fantasy_town",
+      "fantasy_country",
+      "cafe",
+      "fantasy_city"
+    ]
+  },
+  {
+    "name": "Pop Culture",
+    "slug": "pop_culture",
+    "icon": "🎬",
+    "description": "Name generators inspired by movies, TV shows, books, and popular culture",
+    "seoDescription": "Generate names inspired by pop culture, movies, TV shows, books, and entertainment. Perfect for fan fiction, parodies, and creative projects.",
+    "navLabel": "Pop Culture Names",
+    "generators": [
+      "harry_potter_witch",
+      "hogwarts_legacy_witch",
+      "hogwarts_legacy_wizard",
+      "skyrim_orc",
+      "warhammer_orc",
+      "wow_orc",
+      "lotr_orc",
+      "lotr_wizard",
+      "ogryn",
+      "funny_sword",
+      "game_of_thrones_sword"
+    ]
+  }
+]
