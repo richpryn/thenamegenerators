@@ -1,0 +1,194 @@
+{
+  "title": "Cyberpunk Name Generator",
+  "slug": "cyberpunk-name-generator",
+  "icon": "🌃",
+  "category": "scifi",
+  "published": "2026-10-20",
+  "description": "Cyberpunk names for runners, hackers and fixers: street handles like Glitch and Static, full names with a handle, and megacorporation names for the companies that own the city.",
+  "seoKeywords": "cyberpunk name generator, cyberpunk names, hacker name generator, cyberpunk 2077 names, netrunner names, cyberpunk corporation names, street names cyberpunk",
+  "isPopular": false,
+  "filters": {
+    "format": {
+      "label": "Name for",
+      "options": [
+        "handle",
+        "full",
+        "corp"
+      ],
+      "optionLabels": {
+        "handle": "A street handle (Glitch)",
+        "full": "A full name with handle",
+        "corp": "A megacorporation"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "handle": {
+      "recipe": "template",
+      "template": [
+        "[handles]",
+        "[handles] [handles]"
+      ]
+    },
+    "full": {
+      "recipe": "template",
+      "template": "[first] “[handles]” [surnames]"
+    },
+    "corp": {
+      "recipe": "template",
+      "template": [
+        "[corpA] [corpB]",
+        "[corpA]-[corpA] [corpB]"
+      ]
+    }
+  },
+  "data": {
+    "handles": [
+      "Glitch",
+      "Neon",
+      "Static",
+      "Chrome",
+      "Cipher",
+      "Hex",
+      "Razor",
+      "Ghost",
+      "Byte",
+      "Jack",
+      "Vector",
+      "Nyx",
+      "Proxy",
+      "Wire",
+      "Rook",
+      "Socket",
+      "Flux",
+      "Patch",
+      "Echo",
+      "Zero",
+      "Daemon",
+      "Vandal",
+      "Shard",
+      "Spike",
+      "Trace",
+      "Volt",
+      "Sable",
+      "Juno",
+      "Lynx"
+    ],
+    "first": [
+      "Mara",
+      "Kai",
+      "Rena",
+      "Jax",
+      "Yuki",
+      "Teo",
+      "Ines",
+      "Silas",
+      "Vera",
+      "Ravi",
+      "Lena",
+      "Marco",
+      "Aiko",
+      "Nico",
+      "Zara",
+      "Ilya",
+      "Sana",
+      "Rhys",
+      "Tova",
+      "Emil",
+      "Nadia",
+      "Oskar",
+      "Priya",
+      "Luka",
+      "Rafe"
+    ],
+    "surnames": [
+      "Vance",
+      "Okafor",
+      "Reyes",
+      "Kowalski",
+      "Tanaka",
+      "Mercer",
+      "Novak",
+      "Ashby",
+      "Sato",
+      "Lindqvist",
+      "Moreau",
+      "Kaur",
+      "Petrov",
+      "Haddad",
+      "Quinn",
+      "Varga",
+      "Osei",
+      "Hale",
+      "Ibarra",
+      "Strand"
+    ],
+    "corpA": [
+      "Helix",
+      "Vantage",
+      "Omni",
+      "Kestrel",
+      "Obsidian",
+      "Nexus",
+      "Aurora",
+      "Tessera",
+      "Halcyon",
+      "Meridian",
+      "Cobalt",
+      "Paragon",
+      "Zenith",
+      "Axiom",
+      "Sentinel",
+      "Orion",
+      "Prism",
+      "Vertex",
+      "Solace"
+    ],
+    "corpB": [
+      "Dynamics",
+      "Systems",
+      "Biotech",
+      "Industries",
+      "Holdings",
+      "Cybernetics",
+      "Neural",
+      "Logistics",
+      "Security",
+      "Pharmaceuticals",
+      "Robotics",
+      "Data",
+      "Heavy Industries",
+      "Labs",
+      "Media"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🌃 Cyberpunk Name Generator",
+      "tagline": "Street handles, full names with a handle, and the megacorps that own the city."
+    },
+    "intro": "In cyberpunk, nobody uses their real name if they can help it. Hackers, fixers and mercenaries go by handles, short and memorable, while the real power sits with megacorporations whose names sound clean and slightly sinister. This **cyberpunk name generator** gives you street handles, full names with a handle, and corporation names.",
+    "sections": [
+      {
+        "heading": "Where cyberpunk names come from",
+        "content": "<p>The genre takes its name from Bruce Bethke's 1983 short story \"Cyberpunk\", and its look from William Gibson's novel <em>Neuromancer</em> (1984) and the film <em>Blade Runner</em> (1982). Gibson's hacker is known simply as Case, and the street samurai as Molly. In <em>Cyberpunk 2077</em>, the player character goes by a single letter, V.</p><p>The pattern is the same throughout: a short handle that says something about the person, and a real name kept quiet.</p>"
+      },
+      {
+        "heading": "Handles, names and megacorps",
+        "content": "<ul><li><strong>Handles</strong> are one or two short words: a skill (Cipher, Socket), an attitude (Vandal), or a look (Chrome). They should be quick to say over comms.</li><li><strong>Full names with a handle</strong> mix cultures, because cyberpunk cities are global: Mara \"Static\" Okafor, Kai \"Wire\" Lindqvist.</li><li><strong>Megacorporations</strong> have smooth, abstract names that sound like a brochure: Helix Biotech, Meridian Dynamics. The friendlier the name, the worse the company.</li></ul><p>For the rest of your sci-fi world, see the <a href=\"robot-name-generator.html\">Robot</a> and <a href=\"spaceship-name-generator.html\">Spaceship</a> name generators.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good cyberpunk handle?",
+        "answer": "Short, sharp and personal: a skill, an attitude or a look, like Glitch, Cipher or Chrome. It should be easy to say quickly over comms."
+      },
+      {
+        "question": "Where does the word cyberpunk come from?",
+        "answer": "Bruce Bethke's 1983 short story \"Cyberpunk\". The genre's look came largely from William Gibson's Neuromancer and the film Blade Runner."
+      }
+    ]
+  }
+}

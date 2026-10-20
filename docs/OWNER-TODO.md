@@ -28,7 +28,9 @@ New and rewritten pages. Read them on the live site; reply in any session with c
   - **Warhammer hub**: Warhammer 40k (at the old Warhammer address)
   - **Pop culture**: Hobbit, Game of Thrones, Elden Ring, Star Wars
   - **Music**: Band, Album, Song Title, Rapper, Stage Name, Wu-Tang, DJ, Podcast
-  - **Characters and folklore**: Pirate, Viking, Superhero, Villain, Werewolf, Zombie
+  - **Characters and folklore**: Pirate, Viking, Superhero, Villain, Werewolf, Zombie, Ghost
+  - **Sci-Fi hub** (`categories/scifi-names.html`): Cyberpunk, Robot, Spaceship (with Alien and Star Wars)
+  - **Witch hub** (`categories/witch-names.html`) and **YouTube Channel** (in Blogs & Brands)
 - [ ] Path of Exile Witch (rewritten: epithets by Ascendancy)
 - [ ] Elven Sword (rebuilt: every name now has a real Sindarin or Quenya meaning)
 - [ ] Dungeon Synth (rewritten without your notes; your notes would make it better)

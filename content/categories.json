@@ -21,7 +21,8 @@
     ],
     "generators": [
       "blog",
-      "brand"
+      "brand",
+      "youtube"
     ]
   },
   {
@@ -210,7 +211,8 @@
       "fairy",
       "fairy_town",
       "werewolf",
-      "zombie"
+      "zombie",
+      "ghost"
     ]
   },
   {
@@ -484,6 +486,75 @@
       "warhammer",
       "warhammer_orc",
       "ogryn"
+    ]
+  },
+  {
+    "name": "Sci-Fi",
+    "slug": "scifi",
+    "icon": "🚀",
+    "navLabel": "Sci-Fi Names",
+    "heading": "Sci-Fi Name Generators: Aliens, Robots, Spaceships and Cyberpunks",
+    "seoTitle": "Sci-Fi Name Generators: Aliens, Robots, Spaceships",
+    "description": "Names for science fiction: aliens, robots and androids, spaceships, cyberpunk street names and more.",
+    "seoDescription": "Sci-fi name generators for aliens, robots and androids, spaceships and cyberpunk characters, with the naming patterns of classic science fiction.",
+    "intro": "<p>Science fiction names follow their own rules. Robots get designations like R2-D2 and HAL 9000, ships get names that say something about their crew (Serenity, Rocinante), and cyberpunk characters go by street handles. These generators follow those patterns, with examples from the books, films and games that set them.</p>",
+    "featured": [
+      {
+        "key": "spaceship",
+        "note": "ship names from heroic to Culture-style sentences."
+      },
+      {
+        "key": "robot",
+        "note": "designations, acronyms and android names."
+      },
+      {
+        "key": "cyberpunk",
+        "note": "street handles, full names and megacorps."
+      },
+      {
+        "key": "alien",
+        "note": "alien names for species and individuals."
+      }
+    ],
+    "generators": [
+      "alien",
+      "cyberpunk",
+      "robot",
+      "spaceship",
+      "star_wars"
+    ]
+  },
+  {
+    "name": "Witches",
+    "slug": "witch",
+    "icon": "🧙‍♀️",
+    "navLabel": "Witch Names",
+    "heading": "Witch Name Generators: Swamp Witches, Hogwarts Witches and More",
+    "seoTitle": "Witch Name Generators: Fantasy, Harry Potter and More",
+    "description": "Witch names for fantasy, games and Halloween: swamp witches, Harry Potter and Hogwarts Legacy witches, Path of Exile witches and more.",
+    "seoDescription": "Witch name generators: swamp witches, Harry Potter and Hogwarts Legacy witches, Path of Exile witches, and spooky names for Halloween.",
+    "intro": "<p>Witches come in many kinds, and so do their names. A swamp witch in a fairy tale sounds nothing like a student at Hogwarts, and a Path of Exile witch is named for her dark arts. These generators each follow one tradition, so you can find the right kind of witch.</p>",
+    "featured": [
+      {
+        "key": "swamp_witch",
+        "note": "hedge and swamp witches from folklore and fairy tales."
+      },
+      {
+        "key": "hogwarts_legacy_witch",
+        "note": "names in the game's 1890s style, by house."
+      },
+      {
+        "key": "harry_potter_witch",
+        "note": "witch names in the style of the books, by house."
+      }
+    ],
+    "generators": [
+      "swamp_witch",
+      "harry_potter_witch",
+      "hogwarts_legacy_witch",
+      "path_of_exile_witch",
+      "wizard",
+      "fairy"
     ]
   },
   {

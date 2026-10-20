@@ -1,0 +1,317 @@
+{
+  "title": "YouTube Channel Name Generator",
+  "slug": "youtube-channel-name-generator",
+  "icon": "▶️",
+  "category": "concepts",
+  "published": "2026-10-20",
+  "description": "YouTube channel names by topic (gaming, cooking, tech, travel, music) in the shapes that work on the platform, plus how to check the handle is free.",
+  "seoKeywords": "youtube channel name generator, youtube name generator, youtube channel names, yt channel name ideas, gaming channel names, youtube handle generator",
+  "isPopular": false,
+  "filters": {
+    "topic": {
+      "label": "Topic",
+      "options": [
+        "any",
+        "gaming",
+        "cooking",
+        "tech",
+        "travel",
+        "music"
+      ],
+      "optionLabels": {
+        "any": "Any topic",
+        "gaming": "Gaming",
+        "cooking": "Cooking",
+        "tech": "Tech",
+        "travel": "Travel",
+        "music": "Music"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "topic",
+  "cases": {
+    "gaming": {
+      "recipe": "template",
+      "template": [
+        "The [topics.gaming.adj] [topics.gaming.nouns]",
+        "[topics.gaming.adj] [topics.gaming.nouns] [suffixes]",
+        "[topics.gaming.nouns] [suffixes]",
+        "The [topics.gaming.nouns] [suffixes]",
+        "[topics.gaming.adj] [topics.gaming.nouns]"
+      ]
+    },
+    "cooking": {
+      "recipe": "template",
+      "template": [
+        "The [topics.cooking.adj] [topics.cooking.nouns]",
+        "[topics.cooking.adj] [topics.cooking.nouns] [suffixes]",
+        "[topics.cooking.nouns] [suffixes]",
+        "The [topics.cooking.nouns] [suffixes]",
+        "[topics.cooking.adj] [topics.cooking.nouns]"
+      ]
+    },
+    "tech": {
+      "recipe": "template",
+      "template": [
+        "The [topics.tech.adj] [topics.tech.nouns]",
+        "[topics.tech.adj] [topics.tech.nouns] [suffixes]",
+        "[topics.tech.nouns] [suffixes]",
+        "The [topics.tech.nouns] [suffixes]",
+        "[topics.tech.adj] [topics.tech.nouns]"
+      ]
+    },
+    "travel": {
+      "recipe": "template",
+      "template": [
+        "The [topics.travel.adj] [topics.travel.nouns]",
+        "[topics.travel.adj] [topics.travel.nouns] [suffixes]",
+        "[topics.travel.nouns] [suffixes]",
+        "The [topics.travel.nouns] [suffixes]",
+        "[topics.travel.adj] [topics.travel.nouns]"
+      ]
+    },
+    "music": {
+      "recipe": "template",
+      "template": [
+        "The [topics.music.adj] [topics.music.nouns]",
+        "[topics.music.adj] [topics.music.nouns] [suffixes]",
+        "[topics.music.nouns] [suffixes]",
+        "The [topics.music.nouns] [suffixes]",
+        "[topics.music.adj] [topics.music.nouns]"
+      ]
+    },
+    "any": {
+      "recipe": "template",
+      "template": [
+        "The [topics.gaming.adj] [topics.gaming.nouns]",
+        "[topics.gaming.adj] [topics.gaming.nouns] [suffixes]",
+        "[topics.gaming.nouns] [suffixes]",
+        "The [topics.gaming.nouns] [suffixes]",
+        "[topics.gaming.adj] [topics.gaming.nouns]",
+        "The [topics.cooking.adj] [topics.cooking.nouns]",
+        "[topics.cooking.adj] [topics.cooking.nouns] [suffixes]",
+        "[topics.cooking.nouns] [suffixes]",
+        "The [topics.cooking.nouns] [suffixes]",
+        "[topics.cooking.adj] [topics.cooking.nouns]",
+        "The [topics.tech.adj] [topics.tech.nouns]",
+        "[topics.tech.adj] [topics.tech.nouns] [suffixes]",
+        "[topics.tech.nouns] [suffixes]",
+        "The [topics.tech.nouns] [suffixes]",
+        "[topics.tech.adj] [topics.tech.nouns]",
+        "The [topics.travel.adj] [topics.travel.nouns]",
+        "[topics.travel.adj] [topics.travel.nouns] [suffixes]",
+        "[topics.travel.nouns] [suffixes]",
+        "The [topics.travel.nouns] [suffixes]",
+        "[topics.travel.adj] [topics.travel.nouns]",
+        "The [topics.music.adj] [topics.music.nouns]",
+        "[topics.music.adj] [topics.music.nouns] [suffixes]",
+        "[topics.music.nouns] [suffixes]",
+        "The [topics.music.nouns] [suffixes]",
+        "[topics.music.adj] [topics.music.nouns]"
+      ]
+    }
+  },
+  "data": {
+    "topics": {
+      "gaming": {
+        "nouns": [
+          "Pixel",
+          "Respawn",
+          "Loot",
+          "Boss",
+          "Level",
+          "Combo",
+          "Quest",
+          "Glitch",
+          "Joystick",
+          "Speedrun",
+          "Checkpoint",
+          "Controller",
+          "Arcade",
+          "Lobby",
+          "Critical"
+        ],
+        "adj": [
+          "Lazy",
+          "Casual",
+          "Retro",
+          "Clutch",
+          "Chaotic",
+          "Midnight",
+          "Sweaty",
+          "Cozy",
+          "Hardcore",
+          "Noob"
+        ]
+      },
+      "cooking": {
+        "nouns": [
+          "Kitchen",
+          "Spoon",
+          "Skillet",
+          "Pantry",
+          "Oven",
+          "Crumb",
+          "Spice",
+          "Whisk",
+          "Table",
+          "Pot",
+          "Ladle",
+          "Dough",
+          "Plate",
+          "Supper",
+          "Brunch"
+        ],
+        "adj": [
+          "Hungry",
+          "Messy",
+          "Cosy",
+          "Lazy",
+          "Little",
+          "Weeknight",
+          "Homemade",
+          "Hearty",
+          "Simple",
+          "Saucy"
+        ]
+      },
+      "tech": {
+        "nouns": [
+          "Byte",
+          "Circuit",
+          "Gadget",
+          "Code",
+          "Pixel",
+          "Signal",
+          "Stack",
+          "Bench",
+          "Chip",
+          "Kernel",
+          "Upgrade",
+          "Teardown",
+          "Unboxing",
+          "Gizmo",
+          "Desk"
+        ],
+        "adj": [
+          "Curious",
+          "Honest",
+          "Budget",
+          "Nerdy",
+          "Smart",
+          "Quick",
+          "Plain",
+          "Daily",
+          "Hands-On",
+          "Late-Night"
+        ]
+      },
+      "travel": {
+        "nouns": [
+          "Compass",
+          "Passport",
+          "Backpack",
+          "Detour",
+          "Horizon",
+          "Road",
+          "Atlas",
+          "Journey",
+          "Suitcase",
+          "Map",
+          "Trail",
+          "Postcard",
+          "Wander",
+          "Voyage",
+          "Nomad"
+        ],
+        "adj": [
+          "Wandering",
+          "Slow",
+          "Budget",
+          "Lost",
+          "Curious",
+          "Little",
+          "Far",
+          "Weekend",
+          "Restless",
+          "Solo"
+        ]
+      },
+      "music": {
+        "nouns": [
+          "Riff",
+          "Chord",
+          "Session",
+          "Tape",
+          "Vinyl",
+          "Loop",
+          "Beat",
+          "Groove",
+          "Note",
+          "Track",
+          "Encore",
+          "Amp",
+          "Stage",
+          "Verse",
+          "Chorus"
+        ],
+        "adj": [
+          "Bedroom",
+          "Late-Night",
+          "Acoustic",
+          "Loud",
+          "Quiet",
+          "Basement",
+          "Sunday",
+          "Lo-Fi",
+          "Analogue",
+          "Garage"
+        ]
+      }
+    },
+    "suffixes": [
+      "TV",
+      "Lab",
+      "Club",
+      "HQ",
+      "Show",
+      "Studio",
+      "Diaries",
+      "Corner",
+      "Life",
+      "Daily"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "▶️ YouTube Channel Name Generator",
+      "tagline": "Channel names by topic, in shapes that are easy to remember, say and search."
+    },
+    "intro": "A YouTube channel name has to work as a title, a handle and something viewers can say to a friend. This **YouTube channel name generator** builds names for five topics in the shapes that work on the platform: a mood and a subject (The Lazy Kitchen), a subject and a format (Pixel Lab), and a few in between.",
+    "sections": [
+      {
+        "heading": "What makes a channel name work",
+        "content": "<ul><li><strong>Say what the channel is about,</strong> or at least the mood of it. Viewers decide in a second whether to click.</li><li><strong>Keep it short.</strong> Since 2022 every channel has a unique @handle, and shorter handles are easier to type, say and remember.</li><li><strong>Leave room to grow.</strong> A name tied to one game or one gadget can feel narrow in a year. \"Retro Arcade TV\" can cover more than \"Minecraft Builds Daily\".</li><li><strong>Use your own name</strong> if the channel is really about you. Many of the biggest channels do.</li></ul>"
+      },
+      {
+        "heading": "Check the handle is free",
+        "content": "<p>Before you settle on a name, check that the @handle is available on YouTube, and ideally on Instagram and TikTok too, so viewers find you everywhere under the same name. If your first choice is taken, a small change (adding TV, HQ or Daily) often frees it.</p><p>Starting a podcast or a blog alongside the channel? Try the <a href=\"podcast-name-generator.html\">Podcast Name Generator</a> or the <a href=\"blog-name-generator.html\">Blog Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I choose a YouTube channel name?",
+        "answer": "Make it short, easy to say and clear about the topic or mood, then check the @handle is free on YouTube and other social platforms."
+      },
+      {
+        "question": "Can two YouTube channels have the same name?",
+        "answer": "Display names can repeat, but @handles are unique, so check the handle you want is available."
+      },
+      {
+        "question": "Can I use these names for my channel?",
+        "answer": "Yes, free and with no credit needed."
+      }
+    ]
+  }
+}

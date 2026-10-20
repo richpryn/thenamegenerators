@@ -1,0 +1,207 @@
+{
+  "title": "Spaceship Name Generator",
+  "slug": "spaceship-name-generator",
+  "icon": "🚀",
+  "category": "scifi",
+  "published": "2026-10-20",
+  "description": "Spaceship names from heroic to strange: classic ship names (The Distant Horizon), virtue names (Fortitude), ships with a registry prefix, and Culture-style sentences.",
+  "seoKeywords": "spaceship name generator, spaceship names, starship names, ship name generator sci fi, space ship names, cool spaceship names",
+  "isPopular": false,
+  "filters": {
+    "style": {
+      "label": "Style",
+      "options": [
+        "any",
+        "classic",
+        "virtue",
+        "registry",
+        "sentence"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "classic": "Classic (The Distant Horizon)",
+        "virtue": "A virtue (Fortitude)",
+        "registry": "With a registry prefix (CSV Halcyon)",
+        "sentence": "A sentence, Culture-style"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "style",
+  "cases": {
+    "classic": {
+      "recipe": "template",
+      "template": [
+        "The [adj] [noun]",
+        "[adj] [noun]"
+      ]
+    },
+    "virtue": {
+      "recipe": "pick",
+      "from": "virtues"
+    },
+    "registry": {
+      "recipe": "template",
+      "template": [
+        "[prefixes] [noun]",
+        "[prefixes] [virtues]"
+      ]
+    },
+    "sentence": {
+      "recipe": "pick",
+      "from": "sentences"
+    },
+    "any": {
+      "recipe": "template",
+      "template": [
+        "The [adj] [noun]",
+        "[virtues]",
+        "[prefixes] [noun]",
+        "[sentences]"
+      ]
+    }
+  },
+  "data": {
+    "adj": [
+      "Distant",
+      "Restless",
+      "Silent",
+      "Endless",
+      "Wandering",
+      "Last",
+      "Bright",
+      "Burning",
+      "Fearless",
+      "Lucky",
+      "Northern",
+      "Iron",
+      "Crimson",
+      "Silver",
+      "Stubborn",
+      "Midnight",
+      "Lonely",
+      "Defiant",
+      "Patient",
+      "Radiant",
+      "Quiet",
+      "Wild",
+      "Faithful",
+      "Golden",
+      "Broken",
+      "Hopeful",
+      "Brave",
+      "Far"
+    ],
+    "noun": [
+      "Horizon",
+      "Star",
+      "Comet",
+      "Wanderer",
+      "Promise",
+      "Lantern",
+      "Sparrow",
+      "Pilgrim",
+      "Valkyrie",
+      "Meridian",
+      "Courier",
+      "Nomad",
+      "Harbinger",
+      "Tempest",
+      "Halcyon",
+      "Kestrel",
+      "Albatross",
+      "Covenant",
+      "Heron",
+      "Swift",
+      "Beacon",
+      "Drifter",
+      "Corsair",
+      "Seraph",
+      "Ember",
+      "Mariner",
+      "Herald",
+      "Petrel",
+      "Reverie"
+    ],
+    "virtues": [
+      "Resolute",
+      "Providence",
+      "Tenacity",
+      "Audacity",
+      "Fortitude",
+      "Clemency",
+      "Vigilance",
+      "Constance",
+      "Temperance",
+      "Serendipity",
+      "Mercy",
+      "Prudence",
+      "Diligence",
+      "Constancy",
+      "Steadfast",
+      "Forbearance",
+      "Sincerity",
+      "Resolve",
+      "Candour",
+      "Patience"
+    ],
+    "sentences": [
+      "Reasonable Doubt",
+      "Still Thinking It Over",
+      "No Fixed Abode",
+      "Polite But Firm",
+      "Ask Again Later",
+      "Late for Dinner",
+      "Quietly Confident",
+      "Nothing to Declare",
+      "Just Passing Through",
+      "Point Taken",
+      "Fair Weather Friend",
+      "Not My Problem",
+      "Beg to Differ",
+      "Kind Regards",
+      "Small Print",
+      "Fashionably Late",
+      "Second Thoughts",
+      "On Reflection",
+      "Bit of a Detour",
+      "Under New Management",
+      "Terms and Conditions",
+      "Happy to Help"
+    ],
+    "prefixes": [
+      "CSV",
+      "UES",
+      "FTV",
+      "MSV",
+      "RSV"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🚀 Spaceship Name Generator",
+      "tagline": "Ship names that say something about the crew, from The Distant Horizon to Ask Again Later."
+    },
+    "intro": "A ship's name says who flies it. Serenity, in <em>Firefly</em>, is named after a battle its captain lost. The Rocinante, in <em>The Expanse</em>, is named after Don Quixote's horse. Iain M. Banks' Culture novels gave their sentient ships names like <em>So Much For Subtlety</em>. This **spaceship name generator** makes names in all those styles.",
+    "sections": [
+      {
+        "heading": "How famous ships were named",
+        "content": "<ul><li><strong>A story:</strong> Serenity is named for the Battle of Serenity Valley, where Mal Reynolds fought on the losing side.</li><li><strong>A literary joke:</strong> the Rocinante is Don Quixote's horse; the Nostromo in <em>Alien</em> shares its name with a Joseph Conrad novel.</li><li><strong>A registry and a name:</strong> the USS Enterprise, NCC-1701, follows naval tradition.</li><li><strong>A sentence:</strong> the Culture's ships pick their own names, like <em>Of Course I Still Love You</em>, which SpaceX later borrowed for a drone ship.</li></ul>"
+      },
+      {
+        "heading": "Choosing a name for your ship",
+        "content": "<ul><li><strong>Who named it?</strong> A navy names ships after virtues and heroes; a smuggler names a ship after a joke or a grudge.</li><li><strong>Let the crew shorten it.</strong> Nobody says the full name in an emergency.</li><li><strong>Use the registry prefix for official ships.</strong> The generator's prefixes are invented, so they won't clash with a real space agency or a famous fictional navy.</li></ul><p>For the crew, try the <a href=\"robot-name-generator.html\">Robot</a>, <a href=\"alien-name-generator.html\">Alien</a> and <a href=\"cyberpunk-name-generator.html\">Cyberpunk</a> name generators.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are some famous spaceship names?",
+        "answer": "Serenity (Firefly), the Rocinante (The Expanse), the Nostromo (Alien), the USS Enterprise (Star Trek) and the Millennium Falcon (Star Wars)."
+      },
+      {
+        "question": "What are Culture ship names?",
+        "answer": "In Iain M. Banks' Culture novels, sentient ships choose their own names, often whimsical sentences like So Much For Subtlety. The \"Sentence\" style makes names in that spirit."
+      }
+    ]
+  }
+}
