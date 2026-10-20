@@ -161,7 +161,7 @@ Biggest searches, best fit, and most of the engine work is reuse.
 
 ### Phase 2: Finish the fandom clusters you've started (weeks 6–14)
 
-**Status:** Elder Scrolls cluster done: hub (`categories/elder_scrolls-names.html`), Skyrim Orc, Nord, Khajiit, Dunmer, Altmer, Argonian. Warcraft cluster done: hub (`categories/warcraft-names.html`), WoW Orc, Night Elf, Blood Elf, Troll. Warhammer done: hub (`categories/warhammer-names.html`) and the Warhammer 40k Name Generator at the old `warhammer-name-generator` address (Space Marines by Chapter style, Imperial Guard, Aeldari). Hobbit, Game of Thrones and Elden Ring are live too. Next: Phase 3 (Music & Creators) generators that do not need Rich's notes: Band, Album, Song Title, Rapper, Stage Name, Wu-Tang.
+**Status:** Elder Scrolls cluster done: hub (`categories/elder_scrolls-names.html`), Skyrim Orc, Nord, Khajiit, Dunmer, Altmer, Argonian. Warcraft cluster done: hub (`categories/warcraft-names.html`), WoW Orc, Night Elf, Blood Elf, Troll. Warhammer done: hub (`categories/warhammer-names.html`) and the Warhammer 40k Name Generator at the old `warhammer-name-generator` address (Space Marines by Chapter style, Imperial Guard, Aeldari). Hobbit, Game of Thrones, Elden Ring and Star Wars are live too. Next: Phase 3 (Music & Creators) generators that do not need Rich's notes: Band, Album, Song Title, Rapper, Stage Name, Wu-Tang.
 
 Build out franchises where the site already has a page, so each becomes a small hub. **Start with Harry Potter**: Hogwarts Legacy Witch gets the site's most clicks, and its two pages are already rebuilt.
 
@@ -179,6 +179,9 @@ Build out franchises where the site already has a page, so each becomes a small 
 Every fact in these pages needs checking against the source (see the accuracy rules in `CONTENT.md`).
 
 ### Phase 3: Music & Creators, Rich's moat (weeks 10–18)
+
+**Status:** Band (by genre), Album, Song Title, Rapper, Stage Name and Wu-Tang are live in the Music category. Still to come: Rich's own notes on the Band page (see OWNER-TODO), DJ, Metal/Black Metal, Podcast and YouTube Channel.
+
 This is where the site has expertise nobody else can copy. Each page gets notes from Rich (what makes a name work live, on streaming and in a search, and checking for existing bands on Bandcamp, Spotify and Discogs).
 
 - **Band Name Generator** (hub) with a Genre filter: metal, punk, indie, folk, electronic, post-rock, black metal.

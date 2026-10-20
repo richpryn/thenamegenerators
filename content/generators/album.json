@@ -1,0 +1,165 @@
+{
+  "title": "Album Name Generator",
+  "slug": "album-name-generator",
+  "icon": "💿",
+  "category": "music",
+  "published": "2026-10-20",
+  "description": "Album titles in the shapes real albums use: a mood and an object, a place, a number, a dedication, with tips on choosing one that fits the record.",
+  "seoKeywords": "album name generator, album names, album title generator, album name ideas, ep name generator, mixtape name generator",
+  "isPopular": false,
+  "filters": {},
+  "recipe": "template",
+  "template": [
+    "[adj] [noun]",
+    "[adj] [noun]",
+    "Notes from [place]",
+    "[number] [noun]",
+    "Songs for [subject]",
+    "[noun] at [place]",
+    "The [noun] of [place]",
+    "[place]"
+  ],
+  "data": {
+    "adj": [
+      "Quiet",
+      "Electric",
+      "Paper",
+      "Distant",
+      "Golden",
+      "Broken",
+      "Midnight",
+      "Northern",
+      "Borrowed",
+      "Hollow",
+      "Silver",
+      "Wild",
+      "Endless",
+      "Secret",
+      "Little",
+      "Faded",
+      "Restless",
+      "Gentle",
+      "Burning",
+      "Tidal",
+      "Slow",
+      "Blue",
+      "Hidden",
+      "Open",
+      "Crooked",
+      "Sleepless",
+      "Bright",
+      "Strange",
+      "Lonely",
+      "Low",
+      "Second-Hand",
+      "Weightless"
+    ],
+    "noun": [
+      "Machines",
+      "Weather",
+      "Rooms",
+      "Satellites",
+      "Ghosts",
+      "Rivers",
+      "Fires",
+      "Gardens",
+      "Signals",
+      "Winters",
+      "Lanterns",
+      "Mirrors",
+      "Animals",
+      "Harbours",
+      "Stories",
+      "Shadows",
+      "Bridges",
+      "Seasons",
+      "Echoes",
+      "Maps",
+      "Postcards",
+      "Engines",
+      "Kingdoms",
+      "Cathedrals",
+      "Fields",
+      "Islands",
+      "Promises",
+      "Windows",
+      "Letters",
+      "Constellations",
+      "Streetlights",
+      "Horses"
+    ],
+    "place": [
+      "Low Tide",
+      "the Back Room",
+      "the Lighthouse",
+      "Hollow Lane",
+      "the Northern Line",
+      "Saltmarsh",
+      "the Last Station",
+      "the Valley",
+      "Harbour Street",
+      "the Attic",
+      "the Old Pier",
+      "Blackwater",
+      "the Orchard",
+      "the Fairground",
+      "the Motorway",
+      "the Edge of Town",
+      "the Coast Road",
+      "Room Nine",
+      "the Quiet Hour"
+    ],
+    "number": [
+      "Two",
+      "Three",
+      "Four",
+      "Seven",
+      "Nine",
+      "Eleven",
+      "Twelve",
+      "A Hundred",
+      "A Thousand"
+    ],
+    "subject": [
+      "Insomniacs",
+      "Lost Causes",
+      "Late Trains",
+      "Empty Houses",
+      "Old Friends",
+      "Rainy Days",
+      "Night Drivers",
+      "the Unsure",
+      "Quiet People",
+      "Sleepless Cities",
+      "Summer's End",
+      "the Long Way Home"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "💿 Album Name Generator",
+      "tagline": "Album titles in the shapes real records use, from a mood and an object to a place or a dedication."
+    },
+    "intro": "An album title has a different job from a band name: it has to sum up a set of songs and look right on a cover. This **album name generator** builds titles in the shapes real albums use: a mood and an object, a number, a place, or a dedication, like \"Songs for Late Trains\".",
+    "sections": [
+      {
+        "heading": "Where album titles come from",
+        "content": "<ul><li><strong>A line or idea from the music:</strong> Pink Floyd's <em>The Dark Side of the Moon</em>.</li><li><strong>A phrase borrowed from somewhere else:</strong> Radiohead's <em>OK Computer</em> came from a line in the radio series of <em>The Hitchhiker's Guide to the Galaxy</em>.</li><li><strong>A place:</strong> The Beatles' <em>Abbey Road</em> is named after the street their studio was on.</li><li><strong>The story around the record:</strong> Fleetwood Mac's <em>Rumours</em> refers to the gossip around the band while they made it.</li><li><strong>One word:</strong> Nirvana's <em>Nevermind</em>.</li></ul>"
+      },
+      {
+        "heading": "Choosing a title for your record",
+        "content": "<ul><li><strong>Listen for a line in your lyrics</strong> that sums up the record. The generator's titles are a starting point, but the best title is often already in a song.</li><li><strong>Think about the cover.</strong> Some titles suggest an image straight away: \"Notes from the Lighthouse\" practically designs itself.</li><li><strong>Use the title track.</strong> Naming the album after its strongest song is common and easy to remember.</li><li><strong>Search before you print.</strong> Album titles aren't usually protected like band names, but sharing one with a famous record makes yours hard to find.</li></ul><p>Need a band name first? Try the <a href=\"band-name-generator.html\">Band Name Generator</a>; for individual songs, the <a href=\"song-title-generator.html\">Song Title Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I name my album?",
+        "answer": "Look for a line in the lyrics that sums up the record, use the strongest song's title, or pick a place or idea connected to how it was made. The generator gives you shapes to start from."
+      },
+      {
+        "question": "Can I use these titles for my album or EP?",
+        "answer": "Yes, free and with no credit needed. Search streaming services first so yours isn't lost among records with the same title."
+      }
+    ]
+  }
+}
