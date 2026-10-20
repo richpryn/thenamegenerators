@@ -460,3 +460,18 @@
     }
 }
 
+
+/* Category pages */
+.category-intro {
+    margin-top: 1rem;
+}
+
+.featured-generators a {
+    font-weight: 600;
+}
+
+.category-all-heading {
+    max-width: 800px;
+    margin: 2rem auto 1rem;
+    font-size: 1.5rem;
+}

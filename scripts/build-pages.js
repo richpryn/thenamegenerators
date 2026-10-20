@@ -185,8 +185,8 @@ function howItWorksHtml(generator) {
   const noun = /\bNames?\b/.test(generator.title) ? 'names' : pluralNoun(generator).split(' ').pop().toLowerCase();
   const parts = [];
   parts.push(combinations > names
-    ? `<p>It works from ${names.toLocaleString('en-GB')} hand-picked ${noun} and name parts, which combine into over ${roundDownNumber(combinations)} possible results.</p>`
-    : `<p>It picks from a list of ${names.toLocaleString('en-GB')} hand-picked ${noun}.</p>`);
+    ? `<p>It works from ${names.toLocaleString('en-GB')} ${noun} and name parts, which combine into over ${roundDownNumber(combinations)} possible results.</p>`
+    : `<p>It picks from a list of ${names.toLocaleString('en-GB')} ${noun}.</p>`);
 
   const choices = [];
   const keys = Object.keys(filters);
@@ -598,6 +598,20 @@ function generateCategoryPage(category, site) {
   const categorySlug = category.slug;
   const generators = site.inCategory(categorySlug);
 
+  // "Where to start": a few of the category's best generators, with a line on each
+  const featured = (category.featured || []).map(f => {
+    const gen = generators.find(g => g.key === f.key);
+    return `<li><a href="../posts/${gen.slug}.html">${gen.icon} ${escapeHtml(gen.title)}</a>: ${f.note}</li>`;
+  }).join('\n                    ');
+  const introHTML = category.intro ? `
+        <section class="blog-content category-intro">
+            ${category.intro}
+            ${featured ? `<h2>Where to start</h2>
+                <ul class="featured-generators">
+                    ${featured}
+                </ul>` : ''}
+        </section>` : '';
+
   const generatorsHTML = generators.map(gen => `
     <a href="../posts/${gen.slug}.html" class="generator-card">
       <h3>${gen.icon} ${escapeHtml(gen.title)}</h3>
@@ -607,7 +621,7 @@ function generateCategoryPage(category, site) {
 
   // Generate SEO-optimized category title
   const baseUrl = "https://thenamegenerators.com";
-  const categorySEOTitle = `${category.name} Name Generators - Free Online Tools | The Name Generators`;
+  const categorySEOTitle = category.seoTitle || `${category.name} Name Generators - Free Online Tools | The Name Generators`;
   const categoryUrl = `${baseUrl}/categories/${categorySlug}-names.html`;
   const categoryImageUrl = `${baseUrl}/images/categories/${categorySlug}.jpg`;
   
@@ -640,6 +654,29 @@ function generateCategoryPage(category, site) {
     <meta name="author" content="The Name Generators">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="${categoryUrl}">
+    <script type="application/ld+json">
+${scriptJson({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": `${baseUrl}/` },
+    { "@type": "ListItem", "position": 2, "name": category.name, "item": categoryUrl }
+  ]
+}, 2)}
+    </script>
+    <script type="application/ld+json">
+${scriptJson({
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": category.heading || `${category.name} Name Generators`,
+  "description": categoryMetaDesc,
+  "url": categoryUrl,
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": generators.map((g, i) => ({ "@type": "ListItem", "position": i + 1, "name": g.title, "url": `${baseUrl}/posts/${g.slug}.html` }))
+  }
+}, 2)}
+    </script>
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -684,12 +721,14 @@ function generateCategoryPage(category, site) {
 
     <div class="container">
         <header class="hero">
-            <h1>${category.icon} ${escCatName}</h1>
+            <h1>${category.icon} ${escapeHtml(category.heading || category.name)}</h1>
             <p>${escCatDescription}</p>
             <p class="generator-count">${generators.length} generator${generators.length !== 1 ? 's' : ''} available</p>
         </header>
 
         <main>
+${introHTML}
+            ${generators.length ? `<h2 class="category-all-heading">All ${generators.length} ${escCatName} generators</h2>` : ''}
             <div class="generators-grid">
                 ${generatorsHTML}
             </div>
@@ -710,7 +749,7 @@ function generateCategoryPage(category, site) {
 /**
  * Lookups shared by the page templates.
  */
-function makeSite({ categories, generators }) {
+function makeSite({ categories, generators, homepage }) {
   const all = Object.values(generators);
   const categoriesOf = {};
   for (const cat of categories) {
@@ -754,8 +793,13 @@ function makeSite({ categories, generators }) {
       .sort((x, y) => y.s - x.s || (y.g.isPopular ? 1 : 0) - (x.g.isPopular ? 1 : 0))
       .slice(0, 6)
       .map(x => x.g),
-    popular: () => all.filter(g => g.isPopular)
-      .sort((a, b) => (a.popularRank || 999) - (b.popularRank || 999)),
+    // content/homepage.json lists the homepage's first picks; the rest of the
+    // generators marked isPopular follow, by popularRank
+    popular: () => {
+      const picks = homepage.popular.map(k => generators[k]);
+      return picks.concat(all.filter(g => g.isPopular && !homepage.popular.includes(g.key))
+        .sort((a, b) => (a.popularRank || 999) - (b.popularRank || 999)));
+    },
     navHtml: (prefix) => navDropdownHtml(categories, prefix),
   };
 }

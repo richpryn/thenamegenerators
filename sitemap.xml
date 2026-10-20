@@ -28,7 +28,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Category: Concepts -->
+  <!-- Category: Blogs & Brands -->
   <url>
     <loc>https://thenamegenerators.com/categories/concepts-names.html</loc>
     <lastmod>2026-10-20</lastmod>
@@ -70,14 +70,14 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Category: Organizations -->
+  <!-- Category: Organisations -->
   <url>
     <loc>https://thenamegenerators.com/categories/organizations-names.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Category: People -->
+  <!-- Category: Characters -->
   <url>
     <loc>https://thenamegenerators.com/categories/people-names.html</loc>
     <lastmod>2026-10-20</lastmod>
@@ -234,6 +234,13 @@
   <!-- Generator: Epithet Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/epithet-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Event Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/event-name-generator.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

@@ -85,6 +85,10 @@ Numbers: never type a count. Use `{{names}}`, `{{combinations}}` ("over {{combin
 - A text box when the result attaches to the user's character (epithets).
 - `optionLabels` for anything the automatic label gets wrong ("D&D", not "Dnd").
 
+## Category pages
+
+Each category in `content/categories.json` has a `heading` (the H1), `seoTitle`, a short `description` (shown on cards and under the heading), `seoDescription`, an `intro` (HTML, two short paragraphs) and `featured`: the three or four best generators to start with, each with a one-line `note`. Keep category titles different from any generator's title so they don't compete (e.g. "Event Name Ideas…" for the category, "Event Name Generator" for the generator).
+
 ## Adding a new generator
 
 1. Rich gives the name and any angle or personal notes.
@@ -93,7 +97,7 @@ Numbers: never type a count. Use `{{names}}`, `{{combinations}}` ("over {{combin
 
 ## Progress
 
-Done to these notes: Skyrim Orc, Elf, Business, Epithet, Demon Epithet, Hogwarts Legacy Witch, Hogwarts Legacy Wizard.
+Done to these notes: Skyrim Orc, Elf, Business, Epithet, Demon Epithet, Hogwarts Legacy Witch, Hogwarts Legacy Wizard, Event (new). Homepage hero and all 10 category intros.
 
 Order for the rest: pages with clicks or impressions first (check Search Console → Performance → Pages), then the pages flagged below.
 
@@ -102,6 +106,5 @@ Search Console, October 2026: Hogwarts Legacy Witch (4 clicks / 239 impressions)
 Known problems to fix when each page's turn comes:
 - **Elven Sword**: the "translations" in the name list don't match real Elvish (e.g. "Anar-falas" = "Azure-Grace"; it would mean roughly "sun-shore"). The list needs redoing.
 - **Path of Exile Witch**: no real characters named.
-- **Events category**: no generators at all, but 156 impressions.
 - **Dungeon Synth**: no real artists named; ideal for notes from Rich.
 - **Vampire**: almost no article (48 words).

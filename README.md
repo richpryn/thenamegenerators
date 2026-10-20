@@ -19,7 +19,8 @@ HTML pages (output - never edit directly!)
 ```
 project/
 ├── content/                        # ← everything you edit
-│   ├── categories.json             # Categories, in menu order, and which generators each shows
+│   ├── categories.json             # Categories: menu order, titles, intros, featured picks, generators
+│   ├── homepage.json               # The homepage's first "popular" picks, in order
 │   └── generators/
 │       ├── elf.json                # One file per generator: page text, filters, recipe, names
 │       └── ...

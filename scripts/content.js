@@ -25,7 +25,9 @@ function loadContent() {
       throw new Error(`content/generators/${file} is not valid JSON: ${e.message}`);
     }
   }
-  return { categories, generators };
+  const homepagePath = path.join(CONTENT_DIR, 'homepage.json');
+  const homepage = fs.existsSync(homepagePath) ? JSON.parse(fs.readFileSync(homepagePath, 'utf8')) : { popular: [] };
+  return { categories, generators, homepage };
 }
 
 function countNames(node) {
@@ -48,16 +50,24 @@ function recipesIn(recipe) {
 }
 
 /** Returns { errors: [], warnings: [] }, each message naming its file. */
-function validate({ categories, generators }) {
+function validate({ categories, generators, homepage = { popular: [] } }) {
   const errors = [];
   const warnings = [];
   const categorySlugs = new Set(categories.map((c) => c.slug));
+  for (const key of homepage.popular || []) {
+    if (!generators[key]) errors.push(`homepage.json: "${key}" isn't a generator`);
+  }
   const listedIn = {};
 
   for (const cat of categories) {
     for (const field of ['name', 'slug', 'icon', 'description', 'seoDescription', 'navLabel']) {
       if (!cat[field]) errors.push(`categories.json: category ${cat.slug || '?'} is missing "${field}"`);
     }
+    for (const f of cat.featured || []) {
+      if (!(cat.generators || []).includes(f.key)) errors.push(`categories.json: ${cat.slug} features "${f.key}", which isn't in its generators list`);
+      if (!f.note) errors.push(`categories.json: ${cat.slug} featured "${f.key}" needs a "note"`);
+    }
+    if (cat.seoTitle && cat.seoTitle.length > 65) warnings.push(`categories.json: ${cat.slug} seoTitle is ${cat.seoTitle.length} characters (aim for 60 or fewer)`);
     for (const key of cat.generators || []) {
       if (!generators[key]) errors.push(`categories.json: ${cat.slug} lists "${key}" but content/generators/${key}.json doesn't exist`);
       (listedIn[key] = listedIn[key] || []).push(cat.slug);
