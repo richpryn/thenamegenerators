@@ -37,6 +37,7 @@ New and rewritten pages. Read them on the live site; reply in any session with c
 - [ ] Elven Sword (rebuilt: every name now has a real Sindarin or Quenya meaning)
 - [ ] Dungeon Synth (rewritten without your notes; your notes would make it better)
 - [ ] Company and Brand (rewritten; Brand's word lists rebuilt by hand, with a "with a product word" option)
+- [ ] Alien and Swamp Witch (rebuilt: four alien kinds each with its own sound; swamp witches and hags from folklore, the Voodoo style removed)
 - [ ] Clan and Guild (rebuilt: Highland-style clans with mottos and war cries, tribes, gaming clans with tags; five kinds of guild)
 - [ ] LOTR Wizard (rebuilt: colours and Elvish names from real Sindarin, with meanings) and Funny Wizard (rewritten, rude names removed)
 - [ ] Game of Thrones Sword (rebuilt: new names by house style; canon swords removed)
