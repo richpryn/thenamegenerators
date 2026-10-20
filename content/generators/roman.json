@@ -1,0 +1,257 @@
+{
+  "title": "Roman Name Generator",
+  "slug": "roman-name-generator",
+  "icon": "🏛️",
+  "category": "historical",
+  "published": "2026-10-20",
+  "description": "Real Roman names built the Roman way: praenomen, nomen and cognomen for men (Marcus Tullius Cicero), and the family name for women, with what each cognomen meant.",
+  "seoKeywords": "roman name generator, roman names, ancient roman names, latin name generator, roman names male, roman names female, praenomen nomen cognomen",
+  "isPopular": false,
+  "filters": {
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "full",
+        "meaning"
+      ],
+      "optionLabels": {
+        "full": "Full name",
+        "meaning": "Full name, with the cognomen's meaning"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "full": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "male": {
+          "recipe": "template",
+          "template": "[praenomina] [nomina.male] [cognomina]"
+        },
+        "female": {
+          "recipe": "template",
+          "template": [
+            "[nomina.female]",
+            "[nomina.female] [femaleSuffix]"
+          ]
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[praenomina] [nomina.male] [cognomina]",
+            "[nomina.female]",
+            "[nomina.female] [femaleSuffix]"
+          ]
+        }
+      }
+    },
+    "meaning": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "male": {
+          "recipe": "template",
+          "template": "[praenomina] [nomina.male] [cognominaMeaning]"
+        },
+        "female": {
+          "recipe": "template",
+          "template": [
+            "[nomina.female]",
+            "[nomina.female] [femaleSuffix]"
+          ]
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[praenomina] [nomina.male] [cognominaMeaning]",
+            "[nomina.female]",
+            "[nomina.female] [femaleSuffix]"
+          ]
+        }
+      }
+    }
+  },
+  "data": {
+    "praenomina": [
+      "Gaius",
+      "Lucius",
+      "Marcus",
+      "Publius",
+      "Quintus",
+      "Titus",
+      "Tiberius",
+      "Sextus",
+      "Aulus",
+      "Decimus",
+      "Gnaeus",
+      "Spurius",
+      "Manius",
+      "Servius",
+      "Appius",
+      "Numerius"
+    ],
+    "nomina": {
+      "male": [
+        "Julius",
+        "Cornelius",
+        "Claudius",
+        "Aemilius",
+        "Valerius",
+        "Fabius",
+        "Junius",
+        "Licinius",
+        "Tullius",
+        "Sempronius",
+        "Antonius",
+        "Flavius",
+        "Pompeius",
+        "Calpurnius",
+        "Cassius",
+        "Domitius",
+        "Fulvius",
+        "Horatius",
+        "Livius",
+        "Manlius",
+        "Octavius",
+        "Porcius",
+        "Sulpicius",
+        "Terentius",
+        "Vettius"
+      ],
+      "female": [
+        "Julia",
+        "Cornelia",
+        "Claudia",
+        "Aemilia",
+        "Valeria",
+        "Fabia",
+        "Junia",
+        "Licinia",
+        "Tullia",
+        "Sempronia",
+        "Antonia",
+        "Flavia",
+        "Pompeia",
+        "Calpurnia",
+        "Cassia",
+        "Domitia",
+        "Fulvia",
+        "Horatia",
+        "Livia",
+        "Manlia",
+        "Octavia",
+        "Porcia",
+        "Sulpicia",
+        "Terentia",
+        "Vettia"
+      ]
+    },
+    "cognomina": [
+      "Rufus",
+      "Longus",
+      "Crassus",
+      "Naso",
+      "Magnus",
+      "Felix",
+      "Severus",
+      "Paullus",
+      "Scaevola",
+      "Calvus",
+      "Niger",
+      "Corvus",
+      "Varus",
+      "Strabo",
+      "Balbus",
+      "Brutus",
+      "Cicero",
+      "Pius",
+      "Celer",
+      "Macer",
+      "Sabinus",
+      "Albus",
+      "Lepidus",
+      "Rusticus"
+    ],
+    "cognominaMeaning": [
+      "Rufus (“red-haired”)",
+      "Longus (“tall”)",
+      "Crassus (“fat”)",
+      "Naso (“big-nosed”)",
+      "Magnus (“great”)",
+      "Felix (“lucky”)",
+      "Severus (“stern”)",
+      "Paullus (“small”)",
+      "Scaevola (“left-handed”)",
+      "Calvus (“bald”)",
+      "Niger (“dark”)",
+      "Corvus (“raven”)",
+      "Varus (“bow-legged”)",
+      "Strabo (“squinting”)",
+      "Balbus (“stammerer”)",
+      "Brutus (“dull”)",
+      "Cicero (“chickpea”)",
+      "Pius (“dutiful”)",
+      "Celer (“swift”)",
+      "Macer (“thin”)",
+      "Sabinus (“the Sabine”)",
+      "Albus (“white”)",
+      "Lepidus (“charming”)",
+      "Rusticus (“countrified”)"
+    ],
+    "femaleSuffix": [
+      "Maior",
+      "Minor",
+      "Secunda",
+      "Tertia"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🏛️ Roman Name Generator",
+      "tagline": "Praenomen, nomen and cognomen: real Roman names, built the Roman way."
+    },
+    "intro": "A Roman man of good family had three names, the <em>tria nomina</em>: Marcus Tullius Cicero, Gaius Julius Caesar. This **Roman name generator** builds names the same way, from real Roman names, and can tell you what the cognomen meant, because many were surprisingly rude.",
+    "sections": [
+      {
+        "heading": "How Roman names worked",
+        "content": "<ul><li><strong>Praenomen:</strong> the personal name. There were only a handful in common use (Gaius, Lucius, Marcus, Publius, Quintus, Titus and a few more), so they were often abbreviated: C. for Gaius, M. for Marcus.</li><li><strong>Nomen:</strong> the family, or clan, name: Julius, Cornelius, Claudius. Everyone in the clan shared it.</li><li><strong>Cognomen:</strong> a third name, often a nickname that became hereditary, telling branches of a family apart: Cicero, Caesar, Brutus.</li></ul><p>Women usually used the feminine form of the family name: Julius's daughter was Julia, Cornelius's was Cornelia. Sisters could be told apart with Maior (elder) and Minor (younger), or with numbers like Secunda and Tertia.</p>"
+      },
+      {
+        "heading": "What the cognomen meant",
+        "content": "<p>Many cognomina began as nicknames, and they weren't always kind: Rufus (red-haired), Naso (big-nosed, as in the poet Ovid, Publius Ovidius Naso), Calvus (bald), Crassus (fat), Strabo (squinting), Balbus (stammerer), Brutus (dull). Cicero comes from <em>cicer</em>, chickpea. Others were flattering: Magnus (great), Felix (lucky), Pius (dutiful).</p><p>Choose <em>with the cognomen's meaning</em> to see what your Roman's third name says about their family.</p>"
+      },
+      {
+        "heading": "Using the names",
+        "content": "<ul><li><strong>Men of good family</strong> use all three names; slaves, freedmen and foreigners might have fewer, or take their patron's names when freed.</li><li><strong>Friends used the praenomen or cognomen</strong>, so Marcus Tullius Cicero might be Marcus to family and Cicero to everyone else.</li><li><strong>All names here are real</strong>: praenomina, nomina and cognomina used by actual Romans, combined at random.</li></ul><p>For the Greeks, see the <a href=\"ancient-greek-name-generator.html\">Ancient Greek Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are the three parts of a Roman name?",
+        "answer": "Praenomen (personal name, like Marcus), nomen (clan name, like Tullius) and cognomen (family branch or nickname, like Cicero)."
+      },
+      {
+        "question": "How were Roman women named?",
+        "answer": "Usually with the feminine form of their father's nomen: Julia, Cornelia, Claudia. Sisters were told apart with Maior and Minor, or numbers like Secunda and Tertia."
+      },
+      {
+        "question": "What does Cicero mean?",
+        "answer": "Chickpea, from the Latin cicer. Many cognomina began as nicknames about looks or character."
+      }
+    ]
+  }
+}

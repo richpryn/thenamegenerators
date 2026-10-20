@@ -1,0 +1,263 @@
+{
+  "title": "Victorian Name Generator",
+  "slug": "victorian-name-generator",
+  "icon": "🎩",
+  "category": "historical",
+  "published": "2026-10-20",
+  "description": "Real Victorian first names (Ada, Florence, Septimus, Herbert) with English surnames, optionally with a title or a real Victorian job like lamplighter or knocker-upper.",
+  "seoKeywords": "victorian name generator, victorian names, victorian era names, victorian names female, victorian names male, steampunk names, 19th century names",
+  "isPopular": false,
+  "filters": {
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "full",
+        "title",
+        "job"
+      ],
+      "optionLabels": {
+        "full": "First name and surname",
+        "title": "With a title (Mr, Mrs, Miss)",
+        "job": "With a Victorian job"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "full": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "male": {
+          "recipe": "template",
+          "template": "[first.male] [surnames]"
+        },
+        "female": {
+          "recipe": "template",
+          "template": "[first.female] [surnames]"
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[first.male] [surnames]",
+            "[first.female] [surnames]"
+          ]
+        }
+      }
+    },
+    "title": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "male": {
+          "recipe": "template",
+          "template": "Mr [first.male] [surnames]"
+        },
+        "female": {
+          "recipe": "template",
+          "template": [
+            "Mrs [first.female] [surnames]",
+            "Miss [first.female] [surnames]"
+          ]
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "Mr [first.male] [surnames]",
+            "Mrs [first.female] [surnames]",
+            "Miss [first.female] [surnames]"
+          ]
+        }
+      }
+    },
+    "job": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "male": {
+          "recipe": "template",
+          "template": "[first.male] [surnames], [jobs]"
+        },
+        "female": {
+          "recipe": "template",
+          "template": "[first.female] [surnames], [jobs]"
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[first.male] [surnames], [jobs]",
+            "[first.female] [surnames], [jobs]"
+          ]
+        }
+      }
+    }
+  },
+  "data": {
+    "first": {
+      "male": [
+        "William",
+        "John",
+        "George",
+        "Thomas",
+        "James",
+        "Henry",
+        "Charles",
+        "Joseph",
+        "Frederick",
+        "Albert",
+        "Arthur",
+        "Alfred",
+        "Walter",
+        "Ernest",
+        "Herbert",
+        "Edwin",
+        "Harold",
+        "Percy",
+        "Horace",
+        "Septimus",
+        "Augustus",
+        "Edmund",
+        "Samuel",
+        "Robert",
+        "Francis",
+        "Leonard",
+        "Wilfred",
+        "Cecil",
+        "Reginald",
+        "Archibald"
+      ],
+      "female": [
+        "Mary",
+        "Elizabeth",
+        "Sarah",
+        "Ann",
+        "Emma",
+        "Florence",
+        "Ada",
+        "Edith",
+        "Alice",
+        "Annie",
+        "Ellen",
+        "Martha",
+        "Clara",
+        "Harriet",
+        "Eliza",
+        "Louisa",
+        "Beatrice",
+        "Mabel",
+        "Lilian",
+        "Ethel",
+        "Gertrude",
+        "Maud",
+        "Violet",
+        "Rose",
+        "Agnes",
+        "Emily",
+        "Charlotte",
+        "Henrietta",
+        "Lavinia",
+        "Winifred"
+      ]
+    },
+    "surnames": [
+      "Ashworth",
+      "Bramwell",
+      "Cartwright",
+      "Dawlish",
+      "Ellsworth",
+      "Fairfax",
+      "Griggs",
+      "Hargreaves",
+      "Ingram",
+      "Jessop",
+      "Kettering",
+      "Lowther",
+      "Marsh",
+      "Nettleton",
+      "Oakes",
+      "Pennyfeather",
+      "Quigley",
+      "Ravenscroft",
+      "Sowerby",
+      "Upton",
+      "Vickers",
+      "Whitlock",
+      "Yardley",
+      "Abernethy",
+      "Blythe",
+      "Cobb",
+      "Dunstable",
+      "Featherstone",
+      "Gosling"
+    ],
+    "jobs": [
+      "lamplighter",
+      "crossing sweeper",
+      "mudlark",
+      "chimney sweep",
+      "costermonger",
+      "rag-and-bone man",
+      "governess",
+      "milliner",
+      "match girl",
+      "telegraph boy",
+      "knocker-upper",
+      "lady's maid",
+      "clerk",
+      "bootblack",
+      "flower seller",
+      "lighterman",
+      "seamstress",
+      "butler",
+      "scullery maid",
+      "cabman"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🎩 Victorian Name Generator",
+      "tagline": "Real Victorian first names, with a title or a job from the streets of the 19th century."
+    },
+    "intro": "Victorian names are having a revival, from Ada and Florence to Arthur and Albert. This **Victorian name generator** uses first names that were genuinely popular in 19th-century Britain, with English surnames, and can add a title or one of the period's more surprising jobs, like knocker-upper or mudlark.",
+    "sections": [
+      {
+        "heading": "Popular Victorian names",
+        "content": "<p>The most common names stayed remarkably stable through the century: William, John, George, Thomas and James for boys; Mary, Elizabeth, Sarah and Ann for girls. Around them came fashions:</p><ul><li><strong>Royal names</strong> such as Albert, Alfred and Victoria spread after the royal family made them popular.</li><li><strong>Flower and jewel names</strong>, like Violet, Rose and Lily, became fashionable for girls later in the century.</li><li><strong>Latin number names</strong>, like Septimus (seventh), were given in large families.</li><li><strong>Florence</strong> took off after Florence Nightingale's fame in the Crimean War.</li></ul>"
+      },
+      {
+        "heading": "Victorian jobs",
+        "content": "<p>The <em>With a Victorian job</em> format adds a real occupation from the period:</p><ul><li><strong>Knocker-upper:</strong> woke workers by tapping on windows with a long pole before alarm clocks were common.</li><li><strong>Mudlark:</strong> searched the Thames mud at low tide for anything worth selling.</li><li><strong>Costermonger:</strong> sold fruit and vegetables from a barrow in the street.</li><li><strong>Crossing sweeper:</strong> swept a path across muddy streets for a tip.</li></ul><p>A job turns a name into a character straight away.</p>"
+      },
+      {
+        "heading": "Using the names",
+        "content": "<ul><li><strong>Titles mattered.</strong> Mr, Mrs and Miss were used constantly; first names were for family and close friends.</li><li><strong>For steampunk,</strong> pair a Victorian name with an inventor's job.</li><li>For earlier centuries, see the <a href=\"medieval-name-generator.html\">Medieval</a> and <a href=\"anglo-saxon-name-generator.html\">Anglo-Saxon</a> name generators.</li></ul>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What were popular Victorian names?",
+        "answer": "William, John, George, Thomas and James for boys; Mary, Elizabeth, Sarah, Ann and Emma for girls, with fashions like Florence, Ada, Albert and flower names later in the century."
+      },
+      {
+        "question": "What was a knocker-upper?",
+        "answer": "Someone paid to wake workers by tapping on their windows with a long pole, before alarm clocks were common."
+      },
+      {
+        "question": "Are these real Victorian names?",
+        "answer": "Yes, the first names were all in use in 19th-century Britain. The surnames are English surnames, combined at random."
+      }
+    ]
+  }
+}

@@ -558,6 +558,43 @@
     ]
   },
   {
+    "name": "Historical",
+    "slug": "historical",
+    "icon": "🏺",
+    "navLabel": "Historical Names",
+    "heading": "Historical Name Generators: Real Names From Rome to the Old West",
+    "seoTitle": "Historical Name Generators: Roman, Medieval, Victorian",
+    "description": "Real names from history for stories and games: Roman, Ancient Greek, Anglo-Saxon, medieval English, Victorian and Old West.",
+    "seoDescription": "Historical name generators using real names from each period: Roman, Ancient Greek, Anglo-Saxon, medieval English, Victorian and Old West, with how names worked at the time.",
+    "intro": "<p>Every period named people its own way. Romans had three names, Anglo-Saxons built names from two meaningful parts, medieval English surnames came from jobs and places, and the Old West ran on nicknames. These generators use real names from each period and explain how naming worked at the time, so your characters sound like they belong there.</p>",
+    "featured": [
+      {
+        "key": "roman",
+        "note": "praenomen, nomen and cognomen, with what the cognomen meant."
+      },
+      {
+        "key": "anglo_saxon",
+        "note": "names built from two parts, with their meanings."
+      },
+      {
+        "key": "medieval",
+        "note": "first names and surnames from jobs, places and nicknames."
+      },
+      {
+        "key": "old_west",
+        "note": "frontier names with a nickname."
+      }
+    ],
+    "generators": [
+      "roman",
+      "ancient_greek",
+      "anglo_saxon",
+      "medieval",
+      "victorian",
+      "old_west"
+    ]
+  },
+  {
     "name": "Pop Culture",
     "slug": "pop_culture",
     "icon": "🎬",

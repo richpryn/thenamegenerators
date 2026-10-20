@@ -1,0 +1,290 @@
+{
+  "title": "Old West Name Generator",
+  "slug": "old-west-name-generator",
+  "icon": "🤠",
+  "category": "historical",
+  "published": "2026-10-20",
+  "description": "Old West names for cowboys, outlaws and frontier folk: 19th-century American first names with a surname, and a nickname like Two-Gun or Deadeye.",
+  "seoKeywords": "old west name generator, cowboy name generator, western name generator, outlaw names, cowboy names, wild west names, cowgirl names",
+  "isPopular": false,
+  "filters": {
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "any",
+        "nickname_middle",
+        "the_kid",
+        "full"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "nickname_middle": "Nickname in the middle (Wade “Two-Gun” Colter)",
+        "the_kid": "First name and nickname (Lucky Etta)",
+        "full": "First name and surname"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "nickname_middle": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "male": {
+          "recipe": "template",
+          "template": "[first.male] “[nick]” [surnames]"
+        },
+        "female": {
+          "recipe": "template",
+          "template": "[first.female] “[nick]” [surnames]"
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[first.male] “[nick]” [surnames]",
+            "[first.female] “[nick]” [surnames]"
+          ]
+        }
+      }
+    },
+    "the_kid": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "male": {
+          "recipe": "template",
+          "template": [
+            "[nick] [first.male]",
+            "[first.male] the Kid"
+          ]
+        },
+        "female": {
+          "recipe": "template",
+          "template": "[nick] [first.female]"
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[nick] [first.male]",
+            "[first.male] the Kid",
+            "[nick] [first.female]"
+          ]
+        }
+      }
+    },
+    "full": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "male": {
+          "recipe": "template",
+          "template": "[first.male] [surnames]"
+        },
+        "female": {
+          "recipe": "template",
+          "template": "[first.female] [surnames]"
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[first.male] [surnames]",
+            "[first.female] [surnames]"
+          ]
+        }
+      }
+    },
+    "any": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "male": {
+          "recipe": "template",
+          "template": [
+            "[first.male] “[nick]” [surnames]",
+            "[nick] [first.male]",
+            "[first.male] [surnames]"
+          ]
+        },
+        "female": {
+          "recipe": "template",
+          "template": [
+            "[first.female] “[nick]” [surnames]",
+            "[nick] [first.female]",
+            "[first.female] [surnames]"
+          ]
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[first.male] “[nick]” [surnames]",
+            "[nick] [first.male]",
+            "[first.male] [surnames]",
+            "[first.female] “[nick]” [surnames]",
+            "[nick] [first.female]",
+            "[first.female] [surnames]"
+          ]
+        }
+      }
+    }
+  },
+  "data": {
+    "first": {
+      "male": [
+        "Abel",
+        "Amos",
+        "Boone",
+        "Caleb",
+        "Clay",
+        "Cole",
+        "Dallas",
+        "Eli",
+        "Ezra",
+        "Hank",
+        "Hiram",
+        "Jebediah",
+        "Jed",
+        "Levi",
+        "Luke",
+        "Wade",
+        "Walker",
+        "Silas",
+        "Thaddeus",
+        "Zeke",
+        "Roscoe",
+        "Josiah",
+        "Ike",
+        "Gus",
+        "Rufus",
+        "Elijah",
+        "Cyrus",
+        "Otis",
+        "Lyle"
+      ],
+      "female": [
+        "Abigail",
+        "Belle",
+        "Clara",
+        "Cora",
+        "Delilah",
+        "Etta",
+        "Hattie",
+        "Josie",
+        "Lottie",
+        "Lula",
+        "Mattie",
+        "Nell",
+        "Opal",
+        "Pearl",
+        "Ruby",
+        "Sadie",
+        "Tillie",
+        "Ada",
+        "Bessie",
+        "Della",
+        "Effie",
+        "Flora",
+        "Ida",
+        "Mae",
+        "Minnie",
+        "Nettie",
+        "Rosa",
+        "Sallie",
+        "Verna",
+        "Winnie"
+      ]
+    },
+    "surnames": [
+      "Boone",
+      "Calhoun",
+      "Dawson",
+      "Garrett",
+      "Hollister",
+      "Jennings",
+      "Kincaid",
+      "Langley",
+      "Pruitt",
+      "Reese",
+      "Slade",
+      "Tate",
+      "Wheeler",
+      "Bishop",
+      "Colter",
+      "Grady",
+      "Hayes",
+      "Lockhart",
+      "Mercer",
+      "Pike",
+      "Rawlins",
+      "Stone",
+      "Thorne",
+      "Whitaker",
+      "Yates",
+      "Crane",
+      "Brody"
+    ],
+    "nick": [
+      "Doc",
+      "Two-Gun",
+      "Lucky",
+      "Dusty",
+      "Snake-Eye",
+      "Lefty",
+      "Deadeye",
+      "Shotgun",
+      "Whiskey",
+      "Rattlesnake",
+      "Quickdraw",
+      "Tex",
+      "Dutch",
+      "Red",
+      "Smiley",
+      "Sixgun",
+      "Cactus",
+      "Mustang",
+      "Lonesome"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🤠 Old West Name Generator",
+      "tagline": "Frontier names with a nickname to match, from Wade “Two-Gun” Colter to Lucky Etta."
+    },
+    "intro": "The Old West ran on nicknames. Henry McCarty became Billy the Kid, James Butler Hickok became Wild Bill, and Martha Jane Cannary became Calamity Jane. This **Old West name generator** uses first names common in 19th-century America, with a surname and the kind of nickname that followed people from town to town.",
+    "sections": [
+      {
+        "heading": "Real names behind the legends",
+        "content": "<ul><li><strong>Billy the Kid</strong> was born Henry McCarty, and also used the name William H. Bonney.</li><li><strong>Wild Bill Hickok</strong> was James Butler Hickok.</li><li><strong>Calamity Jane</strong> was Martha Jane Cannary.</li><li><strong>Butch Cassidy</strong> was Robert LeRoy Parker; his partner, <strong>the Sundance Kid</strong>, was Harry Longabaugh, nicknamed after the jail in Sundance, Wyoming.</li><li><strong>Annie Oakley</strong>, the sharpshooter, was born Phoebe Ann Mosey.</li></ul><p>A nickname could hide a past, make a reputation or both, which is why so many outlaws had several.</p>"
+      },
+      {
+        "heading": "Making your western name",
+        "content": "<ul><li><strong>The nickname does the work.</strong> Two-Gun, Deadeye and Quickdraw make a reputation; Lefty and Dusty make a character.</li><li><strong>Plain first names fit the period:</strong> Eli, Wade and Silas; Etta, Hattie and Pearl.</li><li><strong>Give it a story.</strong> How did Lucky get the name, and is it still true?</li></ul><p>For other periods, see the <a href=\"victorian-name-generator.html\">Victorian Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What was Billy the Kid's real name?",
+        "answer": "Henry McCarty. He also used the name William H. Bonney."
+      },
+      {
+        "question": "How did the Sundance Kid get his name?",
+        "answer": "Harry Longabaugh was jailed in Sundance, Wyoming, as a young man, and the nickname stuck."
+      },
+      {
+        "question": "What are good cowboy nicknames?",
+        "answer": "Short and descriptive: Two-Gun, Deadeye, Lucky, Dusty, Lefty, Tex. Use \"First name and nickname\" for names like Lucky Etta."
+      }
+    ]
+  }
+}

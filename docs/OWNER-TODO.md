@@ -31,6 +31,7 @@ New and rewritten pages. Read them on the live site; reply in any session with c
   - **Characters and folklore**: Pirate, Viking, Superhero, Villain, Werewolf, Zombie, Ghost
   - **Sci-Fi hub** (`categories/scifi-names.html`): Cyberpunk, Robot, Spaceship (with Alien and Star Wars)
   - **Witch hub** (`categories/witch-names.html`) and **YouTube Channel** (in Blogs & Brands)
+  - **Historical hub** (`categories/historical-names.html`): Roman, Ancient Greek, Anglo-Saxon, Medieval, Victorian, Old West
 - [ ] Path of Exile Witch (rewritten: epithets by Ascendancy)
 - [ ] Elven Sword (rebuilt: every name now has a real Sindarin or Quenya meaning)
 - [ ] Dungeon Synth (rewritten without your notes; your notes would make it better)
