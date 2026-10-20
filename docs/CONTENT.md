@@ -93,12 +93,15 @@ Numbers: never type a count. Use `{{names}}`, `{{combinations}}` ("over {{combin
 
 ## Progress
 
-Done to these notes: Skyrim Orc, Elf, Business, Epithet, Demon Epithet.
+Done to these notes: Skyrim Orc, Elf, Business, Epithet, Demon Epithet, Hogwarts Legacy Witch, Hogwarts Legacy Wizard.
 
 Order for the rest: pages with clicks or impressions first (check Search Console → Performance → Pages), then the pages flagged below.
 
+Search Console, October 2026: Hogwarts Legacy Witch (4 clicks / 239 impressions) and Epithet (3 / 77) are the only generator pages with clicks. The homepage (534 impressions), Places category (229), Events category (156, with no generators in it) and All Generators (133) get most impressions, so the homepage and category pages are next.
+
 Known problems to fix when each page's turn comes:
 - **Elven Sword**: the "translations" in the name list don't match real Elvish (e.g. "Anar-falas" = "Azure-Grace"; it would mean roughly "sun-shore"). The list needs redoing.
-- **Hogwarts Legacy Witch / Wizard, Path of Exile Witch**: no real characters named.
+- **Path of Exile Witch**: no real characters named.
+- **Events category**: no generators at all, but 156 impressions.
 - **Dungeon Synth**: no real artists named; ideal for notes from Rich.
 - **Vampire**: almost no article (48 words).
