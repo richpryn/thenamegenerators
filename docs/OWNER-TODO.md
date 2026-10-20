@@ -22,12 +22,12 @@ New and rewritten pages. Read them on the live site; reply in any session with c
 - [ ] Category pages and homepage hero
 - [ ] Hammer (renamed), and the Business / Company / Brand split
 - [ ] **New pages from the overnight run** (request indexing for the hubs first; Google finds the rest through them):
-  - **D&D hub** (`categories/dnd-names.html`): Tiefling, Dragonborn, Halfling, Gnome, Half-Elf, Goblin, Kobold, Lizardfolk, Githyanki, Knight, Paladin, Tavern, Fantasy Shop, Baldur's Gate 3
+  - **D&D hub** (`categories/dnd-names.html`): Tiefling, Dragonborn, Halfling, Gnome, Half-Elf, Goblin, Kobold, Lizardfolk, Githyanki, Knight, Paladin, Human, Tavern, Fantasy Shop, Baldur's Gate 3
   - **Elder Scrolls hub**: Nord, Khajiit, Dunmer, Altmer, Argonian
   - **Warcraft hub**: Night Elf, Blood Elf, Troll
   - **Warhammer hub**: Warhammer 40k (at the old Warhammer address)
   - **Pop culture**: Hobbit, Game of Thrones, Elden Ring, Star Wars
-  - **Music**: Band, Album, Song Title, Rapper, Stage Name, Wu-Tang
+  - **Music**: Band, Album, Song Title, Rapper, Stage Name, Wu-Tang, DJ, Podcast
   - **Characters and folklore**: Pirate, Viking, Superhero, Villain, Werewolf, Zombie
 - [ ] Path of Exile Witch (rewritten: epithets by Ascendancy)
 - [ ] Elven Sword (rebuilt: every name now has a real Sindarin or Quenya meaning)

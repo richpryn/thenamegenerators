@@ -259,9 +259,23 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: DJ Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/dj-name-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: D&D Fantasy Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/dnd-fantasy-name-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: D&D Human Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/dnd-human-name-generator.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -591,6 +605,13 @@
   <!-- Generator: Pirate Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/pirate-name-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Podcast Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/podcast-name-generator.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

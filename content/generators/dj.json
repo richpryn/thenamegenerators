@@ -1,0 +1,192 @@
+{
+  "title": "DJ Name Generator",
+  "slug": "dj-name-generator",
+  "icon": "🎧",
+  "category": "music",
+  "published": "2026-10-20",
+  "description": "DJ names for house, techno, drum and bass and beyond: a striking single name, a two-word alias, or the classic DJ prefix, with tips on choosing one that works on a flyer.",
+  "seoKeywords": "dj name generator, dj names, cool dj names, dj name ideas, producer name generator, edm name generator, techno dj names",
+  "isPopular": false,
+  "filters": {
+    "format": {
+      "label": "Name format",
+      "options": [
+        "any",
+        "single",
+        "two",
+        "dj"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "single": "One name (Vesper)",
+        "two": "Two words (Neon Drift)",
+        "dj": "With DJ (DJ Kairo)"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "single": {
+      "recipe": "template",
+      "template": [
+        "[single]",
+        "[nouns]"
+      ]
+    },
+    "two": {
+      "recipe": "template",
+      "template": "[adj] [nouns]"
+    },
+    "dj": {
+      "recipe": "template",
+      "template": [
+        "DJ [single]",
+        "DJ [nouns]"
+      ]
+    },
+    "any": {
+      "recipe": "template",
+      "template": [
+        "[single]",
+        "[adj] [nouns]",
+        "DJ [single]"
+      ]
+    }
+  },
+  "data": {
+    "adj": [
+      "Neon",
+      "Midnight",
+      "Velvet",
+      "Static",
+      "Solar",
+      "Lunar",
+      "Deep",
+      "Electric",
+      "Liquid",
+      "Digital",
+      "Cosmic",
+      "Golden",
+      "Phantom",
+      "Hyper",
+      "Analog",
+      "Infinite",
+      "Ultra",
+      "Crystal",
+      "Chrome",
+      "Bass",
+      "Night",
+      "Lost",
+      "Silver",
+      "Sunset",
+      "Tidal",
+      "Feral",
+      "Arctic",
+      "Velour",
+      "Magnetic",
+      "Subsonic",
+      "Atomic",
+      "Polar"
+    ],
+    "nouns": [
+      "Pulse",
+      "Echo",
+      "Wave",
+      "Drift",
+      "Signal",
+      "Groove",
+      "Rhythm",
+      "Prism",
+      "Nova",
+      "Vibe",
+      "Frequency",
+      "Orbit",
+      "Haze",
+      "Circuit",
+      "Voltage",
+      "Tempo",
+      "Spectrum",
+      "Shift",
+      "Flux",
+      "Mirage",
+      "Motion",
+      "Static",
+      "Fade",
+      "Loop",
+      "Bloom",
+      "Glow",
+      "Current",
+      "Riot",
+      "Sequence",
+      "Dusk",
+      "Strobe",
+      "Aura"
+    ],
+    "single": [
+      "Kairo",
+      "Vexx",
+      "Nyla",
+      "Zane",
+      "Juno",
+      "Ryze",
+      "Koda",
+      "Lumi",
+      "Saxon",
+      "Aero",
+      "Blaq",
+      "Remy",
+      "Onyx",
+      "Sable",
+      "Vesper",
+      "Rio",
+      "Indigo",
+      "Lux",
+      "Cass",
+      "Zephyr",
+      "Aria",
+      "Bexx",
+      "Dax",
+      "Ekko",
+      "Fable",
+      "Halo",
+      "Iko",
+      "Jett",
+      "Kenzo",
+      "Lyric",
+      "Maze",
+      "Nyx",
+      "Oro",
+      "Pax",
+      "Quill",
+      "Rune"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🎧 DJ Name Generator",
+      "tagline": "DJ and producer names that look good on a flyer and are easy to find online."
+    },
+    "intro": "A DJ name has to work in small type on a crowded flyer, be shouted over a sound system and be easy to find on streaming services. This **DJ name generator** gives you names in the shapes DJs and producers use: a single striking name, a two-word alias, or the classic DJ prefix.",
+    "sections": [
+      {
+        "heading": "What makes a good DJ name",
+        "content": "<ul><li><strong>Short.</strong> One or two words is the norm, from single names to two-word aliases.</li><li><strong>Searchable.</strong> A common word on its own is hard to find online; an unusual spelling or a pair of words is easier.</li><li><strong>Fits the sound.</strong> \"Velvet Haze\" suggests something different from \"Bass Voltage\".</li><li><strong>Free to use.</strong> Search SoundCloud, Spotify, Mixcloud, Beatport and Resident Advisor before you print anything.</li></ul>"
+      },
+      {
+        "heading": "To DJ or not to DJ",
+        "content": "<p>Putting \"DJ\" in front of a name is a classic that never quite went away, but many electronic artists drop it, especially producers who release music as well as play it. If you might produce, pick a name that works without it.</p><p>For other music names, try the <a href=\"band-name-generator.html\">Band</a>, <a href=\"stage-name-generator.html\">Stage Name</a> and <a href=\"rapper-name-generator.html\">Rapper</a> name generators, and the <a href=\"event-name-generator.html\">Event Name Generator</a> for your club night.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I choose a DJ name?",
+        "answer": "Keep it short, make it searchable, and make it fit your sound. Then check SoundCloud, Spotify, Mixcloud and social media to make sure nobody else is using it."
+      },
+      {
+        "question": "Should my DJ name start with DJ?",
+        "answer": "It's optional. Many producers leave it off so the name works for releases as well as sets."
+      }
+    ]
+  }
+}
