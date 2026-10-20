@@ -2,7 +2,29 @@
 
 What to build next, in what order, and why. It is built from the keyword research list (the "name generator a–z" suggestions) and the site as it stands in October 2026: 52 generators, mostly fantasy, objects, places and pop culture, plus a small business and music corner.
 
-Read with `CONTENT.md` (how each page is written) and `SEO.md` (technical checklist).
+It combines two pieces of work: a keyword-research plan (moats and phases) and the Search Console review and pilot rewrites from the content-notes work (`CONTENT.md`). Read it with `CONTENT.md` (how each page is written) and `SEO.md` (technical checklist).
+
+## What Search Console says (October 2026)
+
+| Page | Clicks | Impressions |
+|---|---|---|
+| Homepage | 1 | 534 |
+| Hogwarts Legacy Witch | 4 | 239 |
+| Places category | 1 | 229 |
+| Events category (no generators) | 0 | 156 |
+| All Generators | 1 | 133 |
+| Epithet | 3 | 77 |
+| People category | 0 | 10 |
+| Objects category | 1 | 9 |
+| Brand / Blog | 0 | 6 / 4 |
+
+What this means for the plan:
+- **Traffic is tiny, so quality comes first.** Google barely shows most generator pages yet. Making each page the best answer (the `CONTENT.md` rewrites) is worth more right now than adding pages fast.
+- **The broad pages get most impressions.** Google sees the site as a hub for "name generators", "place names" and "event names" before any single generator. The homepage and category pages are where the moat structure starts, so they are the first job.
+- **Searchers want Events, and the page is empty.** Build an Event Name Generator rather than hiding the page.
+- **What does get clicks is specific and well made**: Hogwarts Legacy Witch and Epithet, both rebuilt to `CONTENT.md`. Build out from those two (see Phases 1 and 2).
+
+Check again monthly; reorder the phases when the numbers move.
 
 ## The goals this plan serves
 
@@ -28,8 +50,8 @@ The keyword list gives no search volumes. Before each phase, check demand in Sea
 |---|---|
 | **Warhammer Name Generator** is the *weapon*, but people searching "warhammer name generator" want Warhammer 40k and Fantasy character names. | Rename the weapon page to "War Hammer Name Generator" (or "Warhammer Weapon Name…"), keep its URL redirecting, and later build a real Warhammer character hub (see Phase 2). |
 | **Overlapping targets**: Business, Company and Brand all target "business name generator", "company names" and "brand names". Fantasy Town targets "fantasy city names". | Give each page one job. **Business** is small and local businesses (shops, trades, services). **Company** is startups, tech and LLCs. **Brand** is invented, brandable words for products. Each page's `seoKeywords` lists only its own terms, and the pages link to each other with one line saying what each is for. Do the same for Town vs City vs Country. |
-| **Category pages are thin and empty**: Events has 0 generators, Folklore has 2 (both fairy), Music has 1. The People category is described as "real-world names from different cultures", but it holds Epithet, Assassin and Vampire. | Hide empty categories from menus and sitemaps until they have 3+ generators. Rewrite People as **Characters** (or fill it with the historical names in Phase 5). Category `seoDescription`s use banned words ("authentic", "Perfect for…"); rewrite them in the `CONTENT.md` voice. |
-| **Thin or broken pages**: Vampire (48-word article, 139 names), LOTR Wizard (155), Half-Orc (160), and the Elven Sword translations (see `CONTENT.md`). | Already in the `CONTENT.md` progress queue. Do Vampire first, because "vampire name generator" is a big search. |
+| **Category pages are thin and empty**, yet they get most impressions (Places 229, Events 156). Events has 0 generators, Folklore has 2 (both fairy), Music has 1. The People category is described as "real-world names from different cultures", but it holds Epithet, Assassin and Vampire. | Give the category template a proper title, an intro and a line on what each of its best generators does, then write 10 short intros (one template change covers all of them). **Build an Event Name Generator** for the Events page (Phase 0). Folklore and Music fill up in Phases 3–4. Rewrite People as **Characters** (or fill it with the historical names in Phase 5). Category `seoDescription`s use banned words ("authentic", "Perfect for…"); rewrite them in the `CONTENT.md` voice. |
+| **Thin or broken pages**: Vampire (48-word article, 139 names), LOTR Wizard (155), Half-Orc (160), the Elven Sword translations, Path of Exile Witch (no real characters) and Dungeon Synth (no real artists). | In the `CONTENT.md` progress queue. Do Vampire first, because "vampire name generator" is a big search. |
 | **The homepage hero says "Ultimate Name Generator"**, which matches no search and no promise. | Make it say what the site is: e.g. "Name generators for D&D, fantasy worlds, stories and bands". Feature the hubs, not a dropdown of categories. |
 
 ---
@@ -68,8 +90,9 @@ Fit: ●●● core, ●● good, ● later or only partly.
 | 6 | **Monsters & Genres** | ●● | vampire, alien, demon, swamp witch | vampire, zombie, pirate, viking, superhero, villain, sci-fi, cyberpunk, robot, horror |
 | 7 | **Historical Character Names** | ●● | none | medieval, Viking/Norse, Old English, Victorian, Roman, Greek, Japanese, Old West |
 | 8 | **Business & Brand** | ●● | business, company, brand, blog, café | business (free), company, brand, LLC, shop, podcast, YouTube channel |
-| 9 | **Name Tools** | ● | none (needs engine work) | combine/mix two names, ship name, from letters, random picker/wheel |
-| 10 | **Gaming Handles** | ● | none | gamertag, Xbox, Discord, username, clan (have) |
+| 9 | **Events** | ●● | none (156 impressions already) | party, festival, gig, quiz team, hen do, stag do, team |
+| 10 | **Name Tools** | ● | none (needs engine work) | combine/mix two names, ship name, from letters, random picker/wheel |
+| 11 | **Gaming Handles** | ● | none | gamertag, Xbox, Discord, username, clan (have) |
 
 ### Not worth pursuing (and why)
 - **Baby names, and real names by ethnicity** (baby, boy, girl, Indian, Hispanic, African American…): dominated by Nameberry, BabyCenter and Behind the Name. This is a different audience who won't use the rest of the site, and real cultural names need care the site can't give at scale. Historical names *for fiction* (Moat 7) get the useful part of this demand.
@@ -81,16 +104,23 @@ Fit: ●●● core, ●● good, ● later or only partly.
 
 ---
 
+## Two tracks, run together
+
+**Track A: make every existing page great.** Work through the `CONTENT.md` progress queue in Search Console order (pages with clicks or impressions first, then the flagged problems). Done so far: Skyrim Orc, Elf, Business, Epithet, Demon Epithet, Hogwarts Legacy Witch and Wizard. Each rewrite also improves the generator itself, not just the article, as with Skyrim's gro-/gra- full names and Epithet's "Any category" option.
+
+**Track B: build the moats** (the phases below). New pages are written to `CONTENT.md` from day one, so they never join the rewrite queue.
+
+While traffic is this low, lean towards Track A: roughly one rewrite for every new generator. Once rewritten pages start getting clicks, shift towards Track B. Each new page follows `CONTENT.md` (≥100 names, 30+ per choice, real-source facts checked, FAQs drawn from the keyword variants).
+
 ## Phases
 
-Rough pace: 2–3 new generators a week plus one rewrite from the `CONTENT.md` queue. Each new page follows `CONTENT.md` (≥100 names, 30+ per choice, real-source facts checked, FAQs drawn from the keyword variants).
-
-### Phase 0: Foundations (first 2 weeks)
-- Copy-to-clipboard, shortlist, count choice and URL settings (above).
-- Fix the Warhammer intent clash and the Business/Company/Brand overlap.
-- Rewrite category pages as hubs, hide empty categories and rewrite the homepage hero.
-- Vampire rewrite (names and article).
-- SEO.md to-dos that affect sharing: share image, GA4.
+### Phase 0: Foundations (first 2–3 weeks)
+1. **Homepage and the 10 category pages** (most impressions): a real title and intro for each, the best generators first with a line on what each does, and a homepage hero that says what the site is. This is where the moat hubs begin; later phases add new hubs (D&D, Elder Scrolls, Music…) the same way.
+2. **Event Name Generator** for the empty Events category (156 impressions). A Type filter with "Any": party, festival, gig, fundraiser, tournament or raid, quiz night, hen/stag do (all in the keyword list). Gigs and festivals get notes from Rich. It can later split into Festival, Party and Hen/Stag Do pages if Search Console shows those queries.
+3. Copy-to-clipboard, shortlist, count choice and URL settings (above).
+4. Fix the Warhammer intent clash and the Business/Company/Brand overlap.
+5. Vampire rewrite (names and article).
+6. SEO.md to-dos that affect sharing: share image, GA4.
 
 ### Phase 1: Own D&D (weeks 2–8)
 Biggest searches, best fit, and most of the engine work is reuse.
@@ -119,17 +149,19 @@ Biggest searches, best fit, and most of the engine work is reuse.
 
 **Places for D&D** (Moat 2): **Tavern/Inn**, **Kingdom**, **Village**, **Fantasy World**, **Island**, **Empire**, **Fantasy Planet**, **Shop/Magic Shop**. Tavern goes first: it is a huge tabletop search, and the template recipe ("The [adjective] [noun]") is quick to build.
 
+**Build out from Epithet** (one of the two pages with clicks): it already attaches a title to the visitor's own character name. Siblings with the same text-box pattern: **Knight Title**, **Villain Title**, **Nickname** (for D&D characters), **Dragon Epithet**, **Royal/Noble Title**. All of them link back to Epithet and Demon Epithet, and they feed the "build a character" page.
+
 **Baldur's Gate 3 Name Generator**: a fandom page that pulls the D&D race lists through one Race filter, with an article on BG3's origin characters. It is cheap to build because it reuses Phase 1 work.
 
 ### Phase 2: Finish the fandom clusters you've started (weeks 6–14)
-Build out franchises where the site already has a page, so each becomes a small hub.
+Build out franchises where the site already has a page, so each becomes a small hub. **Start with Harry Potter**: Hogwarts Legacy Witch gets the site's most clicks, and its two pages are already rebuilt.
 
 | Franchise hub | Have | Add |
 |---|---|---|
 | **Elder Scrolls** | Skyrim Orc | Khajiit (real naming rules: Ri'/Ja'/Do' prefixes), Nord, Dunmer, Altmer, Argonian; hub "Skyrim/Elder Scrolls Name Generator" |
 | **Warcraft** | WoW Orc | Night Elf, Blood Elf, Troll (Zandalari), Undead, Dwarf; hub "WoW Name Generator" |
 | **Tolkien** | LOTR Orc, LOTR Wizard, Elf (Tolkien option) | Hobbit, Elvish/Sindarin (with real meanings), Dwarvish, Rohirrim, Gondor; hub "LOTR Name Generator" |
-| **Harry Potter** | HP Witch, Hogwarts Legacy Witch/Wizard, Wand | HP Wizard, Pure-blood family, House-elf, Patronus?; hub "Harry Potter Name Generator" |
+| **Harry Potter** | Hogwarts Legacy Witch/Wizard (rebuilt), HP Witch, Wand | Rewrite HP Witch to match the Hogwarts Legacy pages; then HP Wizard, Pure-blood family, House-elf; hub "Harry Potter Name Generator" linking all of them |
 | **Game of Thrones** | GoT Sword | GoT character names (house names, bastard surnames by region: Snow, Rivers, Sand…), Valyrian; hub |
 | **Warhammer** | Warhammer Orc, Ogryn | Space Marine, Chaos, Imperial Guard, Eldar/Aeldari; then the "Warhammer name generator" hub (see Phase 0) |
 | **Elden Ring** (new) | | Tarnished/character, weapon and boss names; strong in the keyword list |
@@ -144,7 +176,8 @@ This is where the site has expertise nobody else can copy. Each page gets notes 
 - **Album Name**, **Song Title**, **Stage Name / Artist Name**, **Rapper Name**, **DJ Name**, **Metal Band**, **Black Metal** (sibling to Dungeon Synth), **Podcast Name**.
 - **Wu-Tang Name Generator**: a well-known novelty search (adjective + title) that people share.
 - Optional: K-pop group, drag name. Only with real knowledge of the scene.
-- Move Dungeon Synth into this hub, and move Podcast, YouTube Channel and Blog here as "Creator names".
+- Move Dungeon Synth into this hub (and do its `CONTENT.md` rewrite with real artists and Rich's notes), and move Podcast, YouTube Channel and Blog here as "Creator names".
+- Link the gig and festival options of the Event Name Generator from here.
 
 ### Phase 4: Monsters & Genres (weeks 14–22)
 A broad audience (writers, gamers, horror fans) that still links back to fantasy.
@@ -200,6 +233,7 @@ After launch (check monthly in Search Console):
 | vampire, zombie, pirate, viking, superhero, villain, sci fi, cyberpunk, robot, horror, alien | Monsters & Genres |
 | medieval, norse, old english, victorian, roman, greek, japanese, old west | Historical Names |
 | business, company, brand, llc, logo, website, domain | Business moat (have three; separate their jobs) |
+| stag do, hen do, quiz team, party, festival, events | Event Name Generator (Phase 0) |
 | combine/mix two names, ship, couple, from letters, using two names | Name Combiner (Phase 6) |
 | gamertag, xbox, discord, username, instagram | Gamertag/Username (Phase 6) |
 | wheel, spinner, picker, raffle, pick a winner, secret santa | Random Picker (Phase 6, optional) |
