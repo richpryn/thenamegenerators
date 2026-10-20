@@ -1,0 +1,213 @@
+{
+  "title": "Blood Elf Name Generator",
+  "slug": "blood-elf-name-generator",
+  "icon": "🔥",
+  "category": "warcraft",
+  "published": "2026-10-20",
+  "description": "Blood elf names for World of Warcraft: elegant sin'dorei first names, some with an apostrophe like Kael'thas, and golden, fiery surnames.",
+  "seoKeywords": "blood elf names, blood elf name generator, wow blood elf names, sindorei names, female blood elf names, blood elf last names, high elf names wow",
+  "isPopular": false,
+  "filters": {
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "full",
+        "first"
+      ],
+      "optionLabels": {
+        "full": "First and family name",
+        "first": "First name only"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "full": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": "[first] [surnames]"
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[first.{gender}] [surnames]"
+      }
+    },
+    "first": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": "[first]"
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[first.{gender}]"
+      }
+    }
+  },
+  "data": {
+    "first": {
+      "male": [
+        "Aldoran",
+        "Belothar",
+        "Caelarion",
+        "Daelor",
+        "Elarion",
+        "Faloren",
+        "Halthor",
+        "Ilnoran",
+        "Kael'dorin",
+        "Lor'anthis",
+        "Maelor",
+        "Nerathor",
+        "Orethis",
+        "Quel'dras",
+        "Rhaelan",
+        "Saelorn",
+        "Vaeron",
+        "Zael'thar",
+        "Belathis",
+        "Caeron",
+        "Dorael",
+        "Elaneth",
+        "Faelin",
+        "Hal'adris",
+        "Ilrath",
+        "Laerion",
+        "Merithas",
+        "Noradin",
+        "Talendris",
+        "Velothar",
+        "Anaris",
+        "Elrinor",
+        "Ithandor"
+      ],
+      "female": [
+        "Aeldra",
+        "Belyssa",
+        "Caelia",
+        "Daelyra",
+        "Elaria",
+        "Faelenne",
+        "Haleth",
+        "Ilyssa",
+        "Kaelyth",
+        "Maeleth",
+        "Neryssa",
+        "Oriel",
+        "Quel'anna",
+        "Rhaelyn",
+        "Saeleth",
+        "Thaelia",
+        "Vaelyn",
+        "Belynna",
+        "Caelynne",
+        "Delanthra",
+        "Fayrel",
+        "Illidrae",
+        "Maeryth",
+        "Nathenne",
+        "Sylaria",
+        "Teliandra",
+        "Valeesa",
+        "Aelinne",
+        "Corinthe",
+        "Elynara",
+        "Aerandra",
+        "Saelinne",
+        "Thaleris",
+        "Ilvaena"
+      ]
+    },
+    "surnames": [
+      "Sunfire",
+      "Dawnblade",
+      "Brightspear",
+      "Spellwhisper",
+      "Sunseeker",
+      "Flameheart",
+      "Embersong",
+      "Lightweaver",
+      "Goldleaf",
+      "Dawnsorrow",
+      "Sunshard",
+      "Starflame",
+      "Phoenixcrest",
+      "Emberwing",
+      "Glimmerstrand",
+      "Sunsworn",
+      "Brightflame",
+      "Dawnweaver",
+      "Goldsong",
+      "Ashenveil",
+      "Firewhisper",
+      "Lightbloom",
+      "Suncrest",
+      "Embertide",
+      "Rubythorn",
+      "Silverspark",
+      "Dawnspire",
+      "Flamecaller",
+      "Spellbinder",
+      "Goldcrown",
+      "Sunwhisper",
+      "Magebloom",
+      "Emberlight",
+      "Sunbloom",
+      "Dawnfire"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🔥 Blood Elf Name Generator",
+      "tagline": "Elegant sin'dorei names, a few with an apostrophe, and surnames of sun, flame and gold."
+    },
+    "intro": "Blood elves, the sin'dorei, are proud, elegant and a little vain, and their names show it: Kael'thas Sunstrider, Lor'themar Theron, Lady Liadrin, Halduron Brightwing. This **blood elf name generator** gives you sin'dorei first names, some with the apostrophe of Kael'thas and Lor'themar, and surnames full of sun, flame and gold.",
+    "sections": [
+      {
+        "heading": "How blood elf names work",
+        "content": "<ul><li><strong>First names</strong> are graceful and often long. Some are split by an apostrophe: Kael'thas, Lor'themar. Others aren't: Liadrin, Rommath, Halduron.</li><li><strong>Surnames</strong> are often English compounds about light, the sun or flight: Sunstrider, Windrunner, Brightwing. Some, like Theron, are single elven words.</li></ul><p>The surnames in this generator are new compounds in that style, leaning on the sun, flame and gold that suit Silvermoon.</p>"
+      },
+      {
+        "heading": "From high elves to blood elves",
+        "content": "<p>The blood elves were once the high elves, the quel'dorei, of Quel'Thalas. After the Scourge destroyed much of their kingdom and corrupted the Sunwell, the survivors took a new name, sin'dorei, \"children of the blood\", in memory of their dead. Their city, Silvermoon, and the restored Sunwell are at the heart of their story.</p><p>That history is useful for naming: a blood elf old enough to remember Quel'Thalas before its fall might keep an older, gentler name, while one born after might choose something fiercer.</p>"
+      },
+      {
+        "heading": "Getting a free name in WoW",
+        "content": "<p>WoW names must be one word and unique on your realm, and can't include an apostrophe, so a name like Kael'dorin needs to become Kaeldorin in game. Use the full name with surname for roleplay.</p><p>For other Warcraft races, see the <a href=\"night-elf-name-generator.html\">Night Elf</a>, <a href=\"wow-troll-name-generator.html\">Troll</a> and <a href=\"wow-orc-name-generator.html\">Orc</a> name generators.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What does sin'dorei mean?",
+        "answer": "\"Children of the blood\". The high elves took the name after the fall of Quel'Thalas, in memory of those who died."
+      },
+      {
+        "question": "Can I use an apostrophe in a WoW name?",
+        "answer": "No. WoW character names are a single word of letters only, so drop the apostrophe: Kael'dorin becomes Kaeldorin."
+      },
+      {
+        "question": "Are blood elves the same as high elves?",
+        "answer": "They were the same people. Most high elves became blood elves after Quel'Thalas fell; a few kept the old name, quel'dorei."
+      }
+    ]
+  }
+}

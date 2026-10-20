@@ -1,0 +1,214 @@
+{
+  "title": "Night Elf Name Generator",
+  "slug": "night-elf-name-generator",
+  "icon": "🌙",
+  "category": "warcraft",
+  "published": "2026-10-20",
+  "description": "Night elf names for World of Warcraft: a flowing first name and a nature-and-moonlight surname, in the style of Tyrande Whisperwind and Shandris Feathermoon.",
+  "seoKeywords": "night elf names, night elf name generator, wow night elf names, kaldorei names, female night elf names, night elf last names, warcraft names",
+  "isPopular": false,
+  "filters": {
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "full",
+        "first"
+      ],
+      "optionLabels": {
+        "full": "First and family name",
+        "first": "First name only"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "full": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": "[first] [surnames]"
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[first.{gender}] [surnames]"
+      }
+    },
+    "first": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": "[first]"
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[first.{gender}]"
+      }
+    }
+  },
+  "data": {
+    "first": {
+      "male": [
+        "Aldrannis",
+        "Belarion",
+        "Caelandris",
+        "Daelthor",
+        "Elarian",
+        "Faeroth",
+        "Galandris",
+        "Iltheron",
+        "Jaelos",
+        "Kaldris",
+        "Lothanar",
+        "Maelrion",
+        "Nathrios",
+        "Orelian",
+        "Rhovanis",
+        "Saelandor",
+        "Thalorin",
+        "Valandris",
+        "Zaelor",
+        "Aeranor",
+        "Bryndor",
+        "Celarion",
+        "Dorandis",
+        "Elthanor",
+        "Fendris",
+        "Halarion",
+        "Ilyndor",
+        "Kelthos",
+        "Lorandis",
+        "Mirathor",
+        "Naeldris",
+        "Sylvaran",
+        "Tharion",
+        "Vaelthos",
+        "Ysandor"
+      ],
+      "female": [
+        "Alynthra",
+        "Belandris",
+        "Caelyra",
+        "Dalisra",
+        "Elandrie",
+        "Faelyss",
+        "Iltheria",
+        "Jaelyra",
+        "Kaelandra",
+        "Lyssandra",
+        "Maelora",
+        "Nathresa",
+        "Shalindra",
+        "Tyrinne",
+        "Valessa",
+        "Ysindra",
+        "Zalandre",
+        "Bralynne",
+        "Cyrissa",
+        "Delanthe",
+        "Fyrandre",
+        "Illyra",
+        "Kyrisse",
+        "Lunaria",
+        "Mirelle",
+        "Naevyra",
+        "Sylissa",
+        "Thalandra",
+        "Vynessa",
+        "Ashalyn",
+        "Eldriss",
+        "Isilynn",
+        "Saelyra"
+      ]
+    },
+    "surnames": [
+      "Moonshade",
+      "Starfall",
+      "Nightbloom",
+      "Silverleaf",
+      "Owlwing",
+      "Duskwhisper",
+      "Glaivebrand",
+      "Moonglade",
+      "Thornbranch",
+      "Starweaver",
+      "Leafsong",
+      "Nightsong",
+      "Mistrunner",
+      "Shadowleaf",
+      "Moonbrook",
+      "Wildthorn",
+      "Dawnglade",
+      "Silverbough",
+      "Starbreeze",
+      "Nightfeather",
+      "Duskbrook",
+      "Ravenbough",
+      "Frostbloom",
+      "Moonbranch",
+      "Stagrunner",
+      "Sablebloom",
+      "Wisptail",
+      "Moonfall",
+      "Gladesinger",
+      "Starhorn",
+      "Driftleaf",
+      "Owlsong",
+      "Nightmeadow",
+      "Silvermist",
+      "Thistlemoon"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🌙 Night Elf Name Generator",
+      "tagline": "Moonlit kaldorei names: a flowing first name and a surname from the forest and the night sky."
+    },
+    "intro": "Night elves, the kaldorei, have some of the most recognisable names in Warcraft: Tyrande Whisperwind, Malfurion Stormrage, Shandris Feathermoon, Maiev Shadowsong. A flowing first name, then a surname made of two English words about nature, the night or battle. This **night elf name generator** builds names in the same pattern for your World of Warcraft character or your own Azeroth story.",
+    "sections": [
+      {
+        "heading": "How night elf names work",
+        "content": "<ul><li><strong>First names</strong> are long and flowing, with soft sounds: Tyrande, Malfurion, Shandris, Maiev. Many end in <em>-is</em>, <em>-on</em>, <em>-e</em> or <em>-a</em>.</li><li><strong>Surnames</strong> are compounds of two English words: Whisperwind, Stormrage, Feathermoon, Shadowsong, Staghelm. They describe the family: its temper, its gifts or the forest it came from.</li></ul><p>The generator's surnames are new compounds, built from the night elves' favourite themes: the moon, stars, leaves, owls and mist.</p>"
+      },
+      {
+        "heading": "Names that fit the kaldorei",
+        "content": "<p>Night elves worship Elune, the moon goddess, and for thousands of years lived in harmony with the forests of Kalimdor, guarded by druids and Sentinels. Their names reflect that:</p><ul><li><strong>The moon and stars:</strong> Moonshade, Starfall. A priestess of Elune would carry one proudly.</li><li><strong>The forest:</strong> Silverleaf, Thornbranch. Good for a druid.</li><li><strong>The night and shadow:</strong> Duskwhisper, Shadowleaf. Good for a Sentinel, a hunter or a Warden like Maiev.</li></ul>"
+      },
+      {
+        "heading": "Getting a free name in WoW",
+        "content": "<p>World of Warcraft names must be unique on your realm and can only be one word, so you'll usually only use the first name in game. Popular names are often taken.</p><ul><li><strong>Try a few first names</strong> from the generator with \"First name only\".</li><li><strong>Keep the surname for roleplay.</strong> On roleplaying realms, many players put the full name in an addon profile.</li></ul><p>For other Warcraft races, see the <a href=\"blood-elf-name-generator.html\">Blood Elf</a>, <a href=\"wow-troll-name-generator.html\">Troll</a> and <a href=\"wow-orc-name-generator.html\">Orc</a> name generators.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do night elf surnames work in WoW?",
+        "answer": "They're two English words joined together, often about nature, the night or a family trait: Whisperwind, Stormrage, Feathermoon, Shadowsong."
+      },
+      {
+        "question": "What is the night elves' own name for themselves?",
+        "answer": "Kaldorei, which is usually translated as \"children of the stars\"."
+      },
+      {
+        "question": "Can I use a surname in World of Warcraft?",
+        "answer": "Not in the character name itself, which must be a single word. Use the first name in game and the surname for roleplay."
+      }
+    ]
+  }
+}

@@ -403,6 +403,41 @@
     ]
   },
   {
+    "name": "Warcraft",
+    "slug": "warcraft",
+    "icon": "🪓",
+    "navLabel": "Warcraft Names",
+    "heading": "World of Warcraft Name Generators: Orc, Night Elf, Blood Elf and Troll",
+    "seoTitle": "World of Warcraft Name Generators by Race",
+    "description": "Names for the races of Azeroth, for World of Warcraft characters and roleplay.",
+    "seoDescription": "World of Warcraft name generators by race: orc, night elf, blood elf and troll names, each following the naming style of the race's best-known characters.",
+    "intro": "<p>Each race in World of Warcraft has its own sound. Orcs have harsh, short names like Thrall and Grom; night elves pair a flowing first name with a surname like Whisperwind; blood elves are elegant and golden; trolls snap out names like Vol'jin. These generators follow each race's patterns, with examples from the games.</p><p>WoW names must be one word with no apostrophes and unique on your realm, so each page explains how to turn a full name into one that fits, and keep the rest for roleplay.</p>",
+    "featured": [
+      {
+        "key": "wow_orc",
+        "note": "orc names by gender and role."
+      },
+      {
+        "key": "night_elf",
+        "note": "kaldorei first names and surnames like Whisperwind."
+      },
+      {
+        "key": "blood_elf",
+        "note": "sin'dorei names with surnames of sun and flame."
+      },
+      {
+        "key": "wow_troll",
+        "note": "names in the style of Vol'jin and Zul'jin, with a tribe."
+      }
+    ],
+    "generators": [
+      "wow_orc",
+      "night_elf",
+      "blood_elf",
+      "wow_troll"
+    ]
+  },
+  {
     "name": "Pop Culture",
     "slug": "pop_culture",
     "icon": "🎬",
@@ -439,6 +474,9 @@
       "dunmer",
       "warhammer_orc",
       "wow_orc",
+      "wow_troll",
+      "blood_elf",
+      "night_elf",
       "lotr_orc",
       "lotr_wizard",
       "ogryn",
