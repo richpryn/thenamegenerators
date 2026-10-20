@@ -33,6 +33,7 @@ New and rewritten pages. Read them on the live site; reply in any session with c
 - [ ] Elven Sword (rebuilt: every name now has a real Sindarin or Quenya meaning)
 - [ ] Dungeon Synth (rewritten without your notes; your notes would make it better)
 - [ ] Company and Brand (rewritten; Brand's word lists rebuilt by hand, with a "with a product word" option)
+- [ ] Fairy and Fairy Town (rebuilt from folklore: flower fairies, Seelie and Unseelie courts, household sprites; homes under the hill, in the wood, fairy rings and courts)
 - [ ] Angel and Demon (rebuilt: traditional angels with Hebrew meanings and new -el names; the 72 Goetia demons with ranks, and new demons with rank and domain)
 - [ ] High Elf, Wood Elf and Dark Elf (rebuilt: high and wood elf family names from real Quenya and Sindarin words with meanings; drow with houses and titles)
 - [ ] Half-Orc (rebuilt: names by upbringing, among humans, among orcs or between, with surname or deed-name)
