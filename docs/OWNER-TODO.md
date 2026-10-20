@@ -35,6 +35,7 @@ New and rewritten pages. Read them on the live site; reply in any session with c
 - [ ] Elven Sword (rebuilt: every name now has a real Sindarin or Quenya meaning)
 - [ ] Dungeon Synth (rewritten without your notes; your notes would make it better)
 - [ ] Company and Brand (rewritten; Brand's word lists rebuilt by hand, with a "with a product word" option)
+- [ ] Japanese Sword (rebuilt: names from real Japanese words with meanings, in three traditional patterns)
 - [ ] Shield, Wand and Poison (rebuilt: shields with real heraldry; wands with wood, core, length and flexibility; poisons with form and effect)
 - [ ] Axe (rebuilt: Norse, dwarven, brutal and homely names, with epithets or descriptions)
 - [ ] Sword (rebuilt: heroic, dark and Old English names with epithets or descriptions; famous fantasy swords removed)
