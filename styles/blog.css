@@ -78,6 +78,32 @@
     margin-bottom: 1.5rem;
 }
 
+.byline {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.byline a {
+    color: inherit;
+}
+
+.usage-note {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    text-align: center;
+}
+
+.example-names {
+    margin: 3rem 0;
+}
+
+.example-names h3 {
+    margin: 1.5rem 0 0.75rem;
+    font-size: 1.1rem;
+}
+
 .cta-box {
     margin-top: 2rem;
     padding: 1.5rem;

@@ -23,7 +23,12 @@
         "tolkien",
         "dnd",
         "generic"
-      ]
+      ],
+      "optionLabels": {
+        "tolkien": "Tolkien",
+        "dnd": "D&D",
+        "generic": "Generic"
+      }
     }
   },
   "recipe": "pick",

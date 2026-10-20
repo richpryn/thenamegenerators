@@ -3,44 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting... | The Name Generators</title>
-    <meta http-equiv="refresh" content="0; url=/">
-    <link rel="canonical" href="https://thenamegenerators.com/">
+    <title>Page Not Found | The Name Generators</title>
+    <meta name="robots" content="noindex">
     <script>
-        // Redirect mapping for old URLs
-        const redirects = {
-            '/orc-name-generator-skyrim/': '/posts/skyrim-orc-name-generator.html',
-            '/orc-name-generator-warhammer/': '/posts/warhammer-orc-name-generator.html',
-            '/orc-name-generator-world-of-warcraft/': '/posts/wow-orc-name-generator.html',
-            '/orc-name-generator-lord-of-the-rings/': '/posts/lotr-orc-name-generator.html',
-            '/half-orc-name-generator/': '/posts/half-orc-name-generator.html',
-            '/dungeon-synth-name-generator/': '/posts/dungeon-synth-name-generator.html',
-            '/swamp-witch-name-generator/': '/posts/swamp-witch-name-generator.html',
-            '/dnd-fantasy-name-generator/': '/posts/dnd-fantasy-name-generator.html',
-            '/witch-name-generator-path-of-exhile/': '/posts/path-of-exile-witch-name-generator.html',
-            '/witch-name-generator-harry-potter/': '/posts/harry-potter-witch-name-generator.html',
-            '/witch-name-generator-hogwarts-legacy/': '/posts/hogwarts-legacy-witch-name-generator.html',
-            '/wizard-name-generator-hogwarts-legacy/': '/posts/hogwarts-legacy-wizard-name-generator.html',
-            '/funny-wizard-name-generator/': '/posts/funny-wizard-name-generator.html',
-            '/wizard-name-generator-lord-of-the-rings/': '/posts/lotr-wizard-name-generator.html'
-        };
-
-        // Get current path
-        const currentPath = window.location.pathname;
-        
-        // Check if we have a redirect for this path
-        if (redirects[currentPath]) {
-            // Use 301 redirect (permanent) via meta refresh and location
-            window.location.replace(redirects[currentPath]);
-        } else {
-            // Default redirect to homepage
-            window.location.replace('/');
-        }
+        // Addresses from the old site: send visitors to the new page
+        const oldUrls = {"/orc-name-generator-skyrim/":"/posts/skyrim-orc-name-generator.html","/orc-name-generator-warhammer/":"/posts/warhammer-orc-name-generator.html","/orc-name-generator-world-of-warcraft/":"/posts/wow-orc-name-generator.html","/orc-name-generator-lord-of-the-rings/":"/posts/lotr-orc-name-generator.html","/half-orc-name-generator/":"/posts/half-orc-name-generator.html","/dungeon-synth-name-generator/":"/posts/dungeon-synth-name-generator.html","/swamp-witch-name-generator/":"/posts/swamp-witch-name-generator.html","/dnd-fantasy-name-generator/":"/posts/dnd-fantasy-name-generator.html","/witch-name-generator-path-of-exhile/":"/posts/path-of-exile-witch-name-generator.html","/witch-name-generator-harry-potter/":"/posts/harry-potter-witch-name-generator.html","/witch-name-generator-hogwarts-legacy/":"/posts/hogwarts-legacy-witch-name-generator.html","/wizard-name-generator-hogwarts-legacy/":"/posts/hogwarts-legacy-wizard-name-generator.html","/funny-wizard-name-generator/":"/posts/funny-wizard-name-generator.html","/wizard-name-generator-lord-of-the-rings/":"/posts/lotr-wizard-name-generator.html"};
+        if (oldUrls[window.location.pathname]) window.location.replace(oldUrls[window.location.pathname]);
     </script>
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
-    <p>Redirecting...</p>
-    <p>If you are not redirected automatically, <a href="/">click here</a>.</p>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="/">Home</a>
+                <a href="/all-generators.html">All Generators</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-dropdown-toggle">Categories</a>
+                    <div class="nav-dropdown-menu" id="category-dropdown">
+                        <a href="/categories/concepts-names.html">💭 Concept Names</a>
+                        <a href="/categories/events-names.html">🎉 Event Names</a>
+                        <a href="/categories/fantasy-names.html">⚔️ Fantasy Names</a>
+                        <a href="/categories/folklore-names.html">📜 Folklore Names</a>
+                        <a href="/categories/music-names.html">🎵 Music Names</a>
+                        <a href="/categories/objects-names.html">⚔️ Object Names</a>
+                        <a href="/categories/organizations-names.html">🏛️ Organization Names</a>
+                        <a href="/categories/people-names.html">👥 People Names</a>
+                        <a href="/categories/places-names.html">🗺️ Place Names</a>
+                        <a href="/categories/pop_culture-names.html">🎬 Pop Culture Names</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="hero">
+            <h1>Page Not Found</h1>
+            <p>That page doesn't exist, or it has moved. Try one of the categories below, or <a href="/all-generators.html">browse all 52 generators</a>.</p>
+        </header>
+
+        <main>
+            <div class="categories-grid">
+                <a href="/categories/concepts-names.html" class="category-card">
+                    <span class="category-icon">💭</span>
+                    <h3>Concepts</h3>
+                    <p>Name generators for abstract concepts, ideas, and themes</p>
+                </a>
+                <a href="/categories/fantasy-names.html" class="category-card">
+                    <span class="category-icon">⚔️</span>
+                    <h3>Fantasy</h3>
+                    <p>Fantasy name generators for magical creatures, characters, and mythical beings</p>
+                </a>
+                <a href="/categories/folklore-names.html" class="category-card">
+                    <span class="category-icon">📜</span>
+                    <h3>Folklore</h3>
+                    <p>Name generators inspired by myths, legends, and folklore from around the world</p>
+                </a>
+                <a href="/categories/music-names.html" class="category-card">
+                    <span class="category-icon">🎵</span>
+                    <h3>Music</h3>
+                    <p>Name generators for bands, songs, albums, and musical projects</p>
+                </a>
+                <a href="/categories/objects-names.html" class="category-card">
+                    <span class="category-icon">⚔️</span>
+                    <h3>Objects</h3>
+                    <p>Name generators for weapons, items, artifacts, and objects</p>
+                </a>
+                <a href="/categories/organizations-names.html" class="category-card">
+                    <span class="category-icon">🏛️</span>
+                    <h3>Organizations</h3>
+                    <p>Name generators for companies, guilds, factions, and organizations</p>
+                </a>
+                <a href="/categories/people-names.html" class="category-card">
+                    <span class="category-icon">👥</span>
+                    <h3>People</h3>
+                    <p>Name generators for real-world names from different cultures and time periods</p>
+                </a>
+                <a href="/categories/places-names.html" class="category-card">
+                    <span class="category-icon">🗺️</span>
+                    <h3>Places</h3>
+                    <p>Name generators for cities, towns, countries, and locations</p>
+                </a>
+                <a href="/categories/pop_culture-names.html" class="category-card">
+                    <span class="category-icon">🎬</span>
+                    <h3>Pop Culture</h3>
+                    <p>Name generators inspired by movies, TV shows, books, and popular culture</p>
+                </a>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; <span id="current-year"></span> The Name Generators. All rights reserved. | <a href="/sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="/about.html" style="color: #4a90e2;">About</a></p>
+        </footer>
+    </div>
+
+    <script src="/lib/page.js"></script>
 </body>
 </html>
-

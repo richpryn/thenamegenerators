@@ -6,7 +6,7 @@
  *   posts/<slug>.html                 one page per generator
  *   categories/<slug>-names.html      one page per category
  *   data/generators/<key>.json        what the homepage generator loads
- *   sitemap.xml, sitemap.html
+ *   sitemap.xml, sitemap.html, 404.html, llms.txt
  * and refreshes the marked sections of index.html, all-generators.html and
  * about.html (between <!-- BUILD:name --> and <!-- /BUILD:name -->).
  */
@@ -15,7 +15,8 @@ const fs = require('fs');
 const path = require('path');
 const { execFileSync } = require('child_process');
 const { loadContent, validate } = require('./content');
-const { filtersHtml } = require('../lib/page.js');
+const { filtersHtml, optionLabel } = require('../lib/page.js');
+const RecipeEngine = require('../lib/recipe-engine.js');
 
 const ROOT = path.join(__dirname, '..');
 const POSTS_DIR = path.join(ROOT, 'posts');
@@ -81,52 +82,90 @@ function navDropdownHtml(categories, prefix) {
   ).join('\n                        ');
 }
 
+const SITE_NAME = 'The Name Generators';
+const AUTHOR = { "@type": "Person", "name": "Rich", "url": "https://thenamegenerators.com/about.html" };
+const USAGE_NOTE = "Free to use, no credit needed. If you're naming a business, brand, band or product, check the name isn't already taken or trademarked first.";
+
 /**
- * Generate SEO-optimized title
- * Format: "[Primary Keyword] Generator - Free Online Tool | Brand"
- * Target: 50-60 characters for optimal search result display
- * Uses keywords people actually search for (e.g., "dwarf name generator", "elf name generator")
+ * Page title: the generator's full title, plus the site name, plus
+ * "Free Online Tool" when it still fits in ~60 characters.
  */
-function generateSEOTitle(generator, category) {
-  // Extract the main keyword from title (e.g., "Dwarf Name Generator" -> "Dwarf Name")
-  // People search for "[thing] name generator" so we want to preserve that pattern
-  let titleWords = generator.title.split(' ');
-  
-  // Remove "Generator" if it's the last word
-  if (titleWords[titleWords.length - 1].toLowerCase() === 'generator') {
-    titleWords = titleWords.slice(0, -1);
+function generateSEOTitle(generator) {
+  const withTool = `${generator.title} - Free Online Tool | ${SITE_NAME}`;
+  if (withTool.length <= 60) return withTool;
+  const withSite = `${generator.title} | ${SITE_NAME}`;
+  return withSite.length <= 60 ? withSite : generator.title;
+}
+
+/** "Elf Name Generator" -> "Elf Names", "Epithet Generator" -> "Epithets" */
+function pluralNoun(generator) {
+  return generator.title.replace(/\s+Generator$/i, '') + 's';
+}
+
+/** "20 October 2026" */
+function longDate(iso) {
+  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  const [y, m, d] = iso.split('-').map(Number);
+  return `${d} ${months[m - 1]} ${y}`;
+}
+
+// Small seeded random number generator, so example names only change when
+// a generator's names change, not on every build.
+function seededRandom(seedText) {
+  let h = 1779033703 ^ seedText.length;
+  for (let i = 0; i < seedText.length; i++) {
+    h = Math.imul(h ^ seedText.charCodeAt(i), 3432918353);
+    h = (h << 13) | (h >>> 19);
   }
-  
-  // Get primary keyword - usually first 2 words (e.g., "Dwarf Name", "Elf Name")
-  let primaryKeyword = titleWords.slice(0, Math.min(2, titleWords.length)).join(' ');
-  
-  // Create SEO-friendly title with keywords people search for
-  // Format: "[Primary Keyword] Generator - Free Online Tool | Brand"
-  const seoTitle = `${primaryKeyword} Generator - Free Online Tool | The Name Generators`;
-  
-  // Check length (optimal is 50-60 chars for search results)
-  if (seoTitle.length > 60) {
-    // Try without "Free Online Tool" (saves 20 chars)
-    const shorter = `${primaryKeyword} Generator | The Name Generators`;
-    if (shorter.length <= 60) {
-      return shorter;
-    }
-    // If still too long, use just the full title
-    return generator.title;
+  return () => {
+    h = Math.imul(h ^ (h >>> 16), 2246822507);
+    h = Math.imul(h ^ (h >>> 13), 3266489909);
+    return ((h ^= h >>> 16) >>> 0) / 4294967296;
+  };
+}
+
+/**
+ * Sample names shown in the page's HTML, so search engines and AI tools can
+ * see what the generator makes. Grouped by filter choice (up to 6 groups).
+ */
+function exampleNames(generator) {
+  const TOTAL = 24;
+  const MAX_GROUPS = 6;
+  const engine = RecipeEngine.createGenerator(generator, { random: seededRandom(generator.slug) });
+  const filters = generator.filters || {};
+  const textValues = {};
+  const selectKeys = [];
+  for (const [key, f] of Object.entries(filters)) {
+    if (f.type === 'text') textValues[key] = f.example || f.default || '';
+    else selectKeys.push(key);
   }
-  
-  return seoTitle;
+
+  let combos = [{}];
+  for (const key of selectKeys) {
+    combos = combos.flatMap(c => engine.availableOptions(key, c).map(opt => ({ ...c, [key]: opt })));
+  }
+  if (combos.length > MAX_GROUPS) {
+    const step = combos.length / MAX_GROUPS;
+    combos = Array.from({ length: MAX_GROUPS }, (_, i) => combos[Math.floor(i * step)]);
+  }
+
+  const perGroup = Math.max(4, Math.ceil(TOTAL / combos.length));
+  return combos.map(combo => ({
+    label: selectKeys
+      .map(k => optionLabel(filters[k], combo[k]).replace(/\s*\(.*\)\s*$/, ''))
+      .join(' · '),
+    names: engine.generate({ ...textValues, ...combo }, perGroup),
+  }));
 }
 
 /**
  * Generate schema.org JSON-LD for a generator page
  */
-function generateSchemas(generator, category) {
+function generateSchemas(generator, category, examples) {
   const schemas = [];
   const baseUrl = "https://thenamegenerators.com";
   const pageUrl = `${baseUrl}/posts/${generator.slug}.html`;
 
-  // Build article body text for LLM parsing
   let articleBody = generator.description;
   if (generator.article && generator.article.intro) {
     articleBody += ' ' + plainText(generator.article.intro);
@@ -137,28 +176,18 @@ function generateSchemas(generator, category) {
     });
   }
 
-  // Article Schema (enhanced for LLM/AI parsing)
   schemas.push({
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": generator.title,
     "description": generator.description,
-    "articleBody": articleBody.substring(0, 5000), // Full text for LLMs (limit to 5000 chars)
-    "abstract": generator.description,
+    "articleBody": articleBody.substring(0, 5000),
     "url": pageUrl,
-    "author": {
-      "@type": "Organization",
-      "name": "The Name Generators",
-      "url": baseUrl
-    },
+    "author": AUTHOR,
     "publisher": {
       "@type": "Organization",
-      "name": "The Name Generators",
-      "url": baseUrl,
-      "logo": {
-        "@type": "ImageObject",
-        "url": `${baseUrl}/logo.png`
-      }
+      "name": SITE_NAME,
+      "url": baseUrl
     },
     "datePublished": generator.published,
     "dateModified": generator.updated,
@@ -167,45 +196,19 @@ function generateSchemas(generator, category) {
       "@id": pageUrl
     },
     "articleSection": category.name,
-    "keywords": generator.seoKeywords,
-    "about": {
-      "@type": "Thing",
-      "name": generator.title.replace(' Generator', ''),
-      "description": generator.description
-    },
-    "mentions": generator.seoKeywords.split(', ').map(kw => ({
-      "@type": "Thing",
-      "name": kw.trim()
-    }))
+    "keywords": generator.seoKeywords
   });
 
-  // Breadcrumb Schema
   schemas.push({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://thenamegenerators.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": category.name,
-        "item": `https://thenamegenerators.com/categories/${category.slug}-names.html`
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": generator.title,
-        "item": `https://thenamegenerators.com/posts/${generator.slug}.html`
-      }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": `${baseUrl}/` },
+      { "@type": "ListItem", "position": 2, "name": category.name, "item": `${baseUrl}/categories/${category.slug}-names.html` },
+      { "@type": "ListItem", "position": 3, "name": generator.title, "item": pageUrl }
     ]
   });
 
-  // WebApplication Schema (enhanced)
   schemas.push({
     "@context": "https://schema.org",
     "@type": "WebApplication",
@@ -215,21 +218,27 @@ function generateSchemas(generator, category) {
     "applicationCategory": "UtilityApplication",
     "operatingSystem": "Any",
     "browserRequirements": "Requires JavaScript. Requires HTML5.",
-    "softwareVersion": "1.0",
+    "isAccessibleForFree": true,
     "offers": {
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "USD"
     },
-    "featureList": [
-      "Generate random names",
-      "Filter by category",
-      "Multiple name variations",
-      "Free to use"
-    ]
+    "author": AUTHOR
   });
 
-  // FAQ Schema
+  // The example names on the page, as a list
+  schemas.push({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": `Example ${pluralNoun(generator)}`,
+    "itemListElement": examples.flatMap(g => g.names).map((name, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": name
+    }))
+  });
+
   if (generator.article && generator.article.faqs) {
     schemas.push({
       "@context": "https://schema.org",
@@ -245,59 +254,6 @@ function generateSchemas(generator, category) {
     });
   }
 
-  // HowTo Schema for the generator tool (AI-friendly)
-  schemas.push({
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    "name": `How to use ${generator.title}`,
-    "description": `Step-by-step guide to using the ${generator.title}`,
-    "step": [
-      {
-        "@type": "HowToStep",
-        "name": "Select options",
-        "text": generator.filters && Object.keys(generator.filters).length
-          ? `Choose your preferred options from the available filters (${Object.keys(generator.filters).join(', ')})`
-          : "Use the default settings or customize as needed"
-      },
-      {
-        "@type": "HowToStep",
-        "name": "Generate names",
-        "text": "Click the 'Generate Names' button to create your list of names"
-      },
-      {
-        "@type": "HowToStep",
-        "name": "Review results",
-        "text": "Review the generated names and generate more if needed"
-      }
-    ],
-    "tool": {
-      "@type": "SoftwareApplication",
-      "name": generator.title,
-      "applicationCategory": "UtilityApplication",
-      "operatingSystem": "Any"
-    }
-  });
-
-  // Dataset Schema for AI training/understanding
-  schemas.push({
-    "@context": "https://schema.org",
-    "@type": "Dataset",
-    "name": `${generator.title} - Name Database`,
-    "description": `A collection of ${generator.title.toLowerCase()} names and variations`,
-    "keywords": generator.seoKeywords,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "creator": {
-      "@type": "Organization",
-      "name": "The Name Generators",
-      "url": baseUrl
-    },
-    "distribution": {
-      "@type": "DataDownload",
-      "contentUrl": pageUrl,
-      "encodingFormat": "text/html"
-    }
-  });
-
   return schemas;
 }
 
@@ -305,7 +261,8 @@ function generateSchemas(generator, category) {
  * Generate HTML for a single generator page
  */
 function generateGeneratorPage(generator, category, site) {
-  const schemas = generateSchemas(generator, category);
+  const examples = exampleNames(generator);
+  const schemas = generateSchemas(generator, category, examples);
   // Escape "<" as \u003c so a stray "</script>" in any data string cannot
   // break out of the JSON-LD block. Valid JSON, understood by all parsers.
   const schemaScripts = schemas.map(s =>
@@ -371,7 +328,7 @@ function generateGeneratorPage(generator, category, site) {
   }
 
   // Generate SEO-optimized title
-  const seoTitle = generateSEOTitle(generator, category);
+  const seoTitle = generateSEOTitle(generator);
   const baseUrl = "https://thenamegenerators.com";
   const pageUrl = `${baseUrl}/posts/${generator.slug}.html`;
   const imageUrl = `${baseUrl}/images/${generator.slug}.jpg`;
@@ -393,6 +350,17 @@ function generateGeneratorPage(generator, category, site) {
   const escCategoryName = escapeHtml(category.name);
   const escHeroTitle = escapeHtml(generator.article.hero.title);
   const escHeroTagline = escapeHtml(generator.article.hero.tagline);
+  const escNoun = escapeHtml(pluralNoun(generator));
+
+  const examplesHTML = `
+            <section class="example-names">
+                <h2>Example ${escNoun}</h2>
+                <p>A few names this generator came up with. Press "Generate Names" above for more.</p>
+                ${examples.map(group => `${group.label ? `<h3>${escapeHtml(group.label)}</h3>
+                ` : ''}<ul class="name-results">
+                    ${group.names.map(n => `<li>${escapeHtml(n)}</li>`).join('\n                    ')}
+                </ul>`).join('\n                ')}
+            </section>`;
 
   const html = `<!DOCTYPE html>
 <html lang="en">
@@ -482,12 +450,13 @@ function generateGeneratorPage(generator, category, site) {
         <header class="blog-hero">
             <h1>${escHeroTitle}</h1>
             <p class="tagline">${escHeroTagline}</p>
+            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="${generator.updated}">${longDate(generator.updated)}</time></p>
         </header>
 
         <main>
             <section class="embedded-generator">
                 <div class="generator-card">
-                    <h2>Generate Your ${escGenTitle}</h2>
+                    <h2>Generate ${escNoun}</h2>
                     <p class="generator-description">${escGenDesc}</p>
                     
                     <div class="simple-generator">
@@ -498,6 +467,7 @@ function generateGeneratorPage(generator, category, site) {
                         <div class="results-area" id="results">
                             <p class="results-placeholder">Click "Generate Names" to see results</p>
                         </div>
+                        <p class="usage-note">${escapeHtml(USAGE_NOTE)}</p>
                     </div>
                     
                     <div class="cta-box">
@@ -506,6 +476,7 @@ function generateGeneratorPage(generator, category, site) {
                     </div>
                 </div>
             </section>
+${examplesHTML}
 
             <article class="blog-content" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="${escGenTitle}">
@@ -817,6 +788,8 @@ function build() {
 
   generateSitemap(site);
   generateHtmlSitemap(site);
+  generate404(site);
+  generateLlmsTxt(site);
   updateStaticPages(site);
 
   console.log(`\n✨ Build complete! Generated ${site.all.length} generator pages and ${content.categories.length} category pages.`);
@@ -1032,6 +1005,120 @@ function generateHtmlSitemap(site) {
   const sitemapHtmlPath = path.join(ROOT, 'sitemap.html');
   fs.writeFileSync(sitemapHtmlPath, html);
   console.log(`  ✅ Created: sitemap.html`);
+}
+
+/**
+ * 404 page. GitHub Pages serves this (with a real 404 status) for any
+ * unknown address, so every link is absolute. Old addresses from the
+ * previous site still forward to their new pages.
+ */
+function generate404(site) {
+  const OLD_URLS = {
+    '/orc-name-generator-skyrim/': '/posts/skyrim-orc-name-generator.html',
+    '/orc-name-generator-warhammer/': '/posts/warhammer-orc-name-generator.html',
+    '/orc-name-generator-world-of-warcraft/': '/posts/wow-orc-name-generator.html',
+    '/orc-name-generator-lord-of-the-rings/': '/posts/lotr-orc-name-generator.html',
+    '/half-orc-name-generator/': '/posts/half-orc-name-generator.html',
+    '/dungeon-synth-name-generator/': '/posts/dungeon-synth-name-generator.html',
+    '/swamp-witch-name-generator/': '/posts/swamp-witch-name-generator.html',
+    '/dnd-fantasy-name-generator/': '/posts/dnd-fantasy-name-generator.html',
+    '/witch-name-generator-path-of-exhile/': '/posts/path-of-exile-witch-name-generator.html',
+    '/witch-name-generator-harry-potter/': '/posts/harry-potter-witch-name-generator.html',
+    '/witch-name-generator-hogwarts-legacy/': '/posts/hogwarts-legacy-witch-name-generator.html',
+    '/wizard-name-generator-hogwarts-legacy/': '/posts/hogwarts-legacy-wizard-name-generator.html',
+    '/funny-wizard-name-generator/': '/posts/funny-wizard-name-generator.html',
+    '/wizard-name-generator-lord-of-the-rings/': '/posts/lotr-wizard-name-generator.html'
+  };
+
+  const categoryCards = site.categories.filter(c => c.generators.length).map(cat => `                <a href="/categories/${cat.slug}-names.html" class="category-card">
+                    <span class="category-icon">${cat.icon}</span>
+                    <h3>${escapeHtml(cat.name)}</h3>
+                    <p>${escapeHtml(cat.description)}</p>
+                </a>`).join('\n');
+
+  const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | ${SITE_NAME}</title>
+    <meta name="robots" content="noindex">
+    <script>
+        // Addresses from the old site: send visitors to the new page
+        const oldUrls = ${scriptJson(OLD_URLS)};
+        if (oldUrls[window.location.pathname]) window.location.replace(oldUrls[window.location.pathname]);
+    </script>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">🧑🏻‍💻 ${SITE_NAME}</a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="/">Home</a>
+                <a href="/all-generators.html">All Generators</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-dropdown-toggle">Categories</a>
+                    <div class="nav-dropdown-menu" id="category-dropdown">
+                        ${site.navHtml('/')}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="hero">
+            <h1>Page Not Found</h1>
+            <p>That page doesn't exist, or it has moved. Try one of the categories below, or <a href="/all-generators.html">browse all ${site.all.length} generators</a>.</p>
+        </header>
+
+        <main>
+            <div class="categories-grid">
+${categoryCards}
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; <span id="current-year"></span> ${SITE_NAME}. All rights reserved. | <a href="/sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="/about.html" style="color: #4a90e2;">About</a></p>
+        </footer>
+    </div>
+
+    <script src="/lib/page.js"></script>
+</body>
+</html>
+`;
+  fs.writeFileSync(path.join(ROOT, '404.html'), html);
+  console.log('  ✅ Created: 404.html');
+}
+
+/**
+ * llms.txt: a plain-text map of the site for AI tools (see llmstxt.org).
+ */
+function generateLlmsTxt(site) {
+  const baseUrl = 'https://thenamegenerators.com';
+  let text = `# ${SITE_NAME}
+
+> Free online name generators for fantasy characters, places, organisations, objects and more: for D&D and other tabletop games, writing, gaming, worldbuilding, music projects and businesses. Each generator page has the generator, example names and an article on the naming conventions behind them.
+
+Names are free to use, no credit needed. If you're naming a business, brand, band or product, check the name isn't already taken or trademarked first.
+
+Made by Rich: ${baseUrl}/about.html
+`;
+  for (const cat of site.categories.filter(c => c.generators.length)) {
+    text += `\n## ${cat.name}\n\n`;
+    text += site.inCategory(cat.slug)
+      .map(g => `- [${g.title}](${baseUrl}/posts/${g.slug}.html): ${plainText(g.description)}`)
+      .join('\n') + '\n';
+  }
+  text += `\n## Optional\n\n- [All generators](${baseUrl}/all-generators.html)\n- [Site map](${baseUrl}/sitemap.html)\n`;
+  fs.writeFileSync(path.join(ROOT, 'llms.txt'), text);
+  console.log('  ✅ Created: llms.txt');
 }
 
 // Run if called directly

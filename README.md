@@ -38,7 +38,8 @@ project/
 ├── posts/                          # Generator pages        (built)
 ├── categories/                     # Category pages         (built)
 ├── data/generators/                # Names for the homepage generator (built)
-└── sitemap.xml, sitemap.html       # (built)
+└── sitemap.xml, sitemap.html,      # (built)
+    404.html, llms.txt
 ```
 
 ## 🚀 Workflow
@@ -133,7 +134,11 @@ Add `"default": { ... }` for options not listed in `cases` (see `brand.json`).
 }
 ```
 
-`optionLabels` is optional; without it `non_binary` shows as "Non Binary". Text boxes are used in templates as `{characterName}`.
+`optionLabels` is optional; without it `non_binary` shows as "Non Binary". Text boxes are used in templates as `{characterName}`; give them an `"example"` value (e.g. `"Aldric"`) to use in the example names on the page.
+
+## 🔍 Example names
+
+Each generator page shows about 24 example names in its HTML, grouped by filter choice, so search engines and AI tools can see what the generator makes. The build picks them with a fixed random seed, so they only change when that generator's names or recipe change.
 
 Dropdowns run top to bottom: options that have no names for the choices above them are hidden. For example, dragon types that only exist for "neutral" don't appear while "male" is selected.
 
