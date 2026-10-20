@@ -1,0 +1,421 @@
+{
+  "title": "Gamertag Generator",
+  "noun": "Gamertags",
+  "slug": "gamertag-generator",
+  "icon": "🎮",
+  "category": "people",
+  "published": "2026-10-20",
+  "description": "Gamertags and usernames for Xbox, PlayStation, Discord, Steam and social media: cool, funny, fantasy or short, with your own word or name mixed in if you like.",
+  "seoKeywords": "gamertag generator, username generator, xbox gamertag generator, gamer name generator, discord username generator, cool usernames, funny gamertags, 4 letter gamertags",
+  "isPopular": false,
+  "filters": {
+    "style": {
+      "label": "Style",
+      "options": [
+        "any",
+        "cool",
+        "funny",
+        "fantasy",
+        "short"
+      ],
+      "optionLabels": {
+        "any": "Any style",
+        "cool": "Cool (ShadowViper)",
+        "funny": "Funny (CaptainSnacks)",
+        "fantasy": "Fantasy (Runeblade)",
+        "short": "Short, 4 letters (Vyke)"
+      }
+    },
+    "useWord": {
+      "label": "Include your own word",
+      "options": [
+        "no",
+        "yes"
+      ],
+      "optionLabels": {
+        "no": "No",
+        "yes": "Yes, use the word below"
+      }
+    },
+    "word": {
+      "type": "text",
+      "label": "Your word or name",
+      "placeholder": "e.g. Sam, Pizza, Fox",
+      "default": "",
+      "example": "Fox"
+    }
+  },
+  "recipe": "switch",
+  "on": "style",
+  "cases": {
+    "cool": {
+      "recipe": "switch",
+      "on": "useWord",
+      "cases": {
+        "no": {
+          "recipe": "template",
+          "template": [
+            "[styles.cool.a][styles.cool.n]",
+            "[styles.cool.a][styles.cool.n]",
+            "[styles.cool.a][styles.cool.n][digits]"
+          ]
+        },
+        "yes": {
+          "recipe": "template",
+          "template": [
+            "{word}[styles.cool.n]",
+            "[styles.cool.a]{word}",
+            "{word}[styles.cool.n][digits]"
+          ]
+        }
+      }
+    },
+    "funny": {
+      "recipe": "switch",
+      "on": "useWord",
+      "cases": {
+        "no": {
+          "recipe": "template",
+          "template": [
+            "[styles.funny.a][styles.funny.n]",
+            "[styles.funny.a][styles.funny.n]",
+            "[styles.funny.a][styles.funny.n][digits]"
+          ]
+        },
+        "yes": {
+          "recipe": "template",
+          "template": [
+            "{word}[styles.funny.n]",
+            "[styles.funny.a]{word}",
+            "{word}[styles.funny.n][digits]"
+          ]
+        }
+      }
+    },
+    "fantasy": {
+      "recipe": "switch",
+      "on": "useWord",
+      "cases": {
+        "no": {
+          "recipe": "template",
+          "template": [
+            "[styles.fantasy.a][styles.fantasy.n]",
+            "[styles.fantasy.a][styles.fantasy.n]",
+            "[styles.fantasy.a][styles.fantasy.n][digits]"
+          ]
+        },
+        "yes": {
+          "recipe": "template",
+          "template": [
+            "{word}[styles.fantasy.n]",
+            "[styles.fantasy.a]{word}",
+            "{word}[styles.fantasy.n][digits]"
+          ]
+        }
+      }
+    },
+    "short": {
+      "recipe": "switch",
+      "on": "useWord",
+      "cases": {
+        "no": {
+          "recipe": "template",
+          "template": [
+            "[short]"
+          ]
+        },
+        "yes": {
+          "recipe": "template",
+          "template": [
+            "{word}[short]",
+            "[short]{word}"
+          ]
+        }
+      }
+    },
+    "any": {
+      "recipe": "switch",
+      "on": "useWord",
+      "cases": {
+        "no": {
+          "recipe": "template",
+          "template": [
+            "[styles.cool.a][styles.cool.n]",
+            "[styles.cool.a][styles.cool.n]",
+            "[styles.cool.a][styles.cool.n][digits]",
+            "[styles.funny.a][styles.funny.n]",
+            "[styles.funny.a][styles.funny.n]",
+            "[styles.funny.a][styles.funny.n][digits]",
+            "[styles.fantasy.a][styles.fantasy.n]",
+            "[styles.fantasy.a][styles.fantasy.n]",
+            "[styles.fantasy.a][styles.fantasy.n][digits]",
+            "[short]"
+          ]
+        },
+        "yes": {
+          "recipe": "template",
+          "template": [
+            "{word}[styles.cool.n]",
+            "[styles.cool.a]{word}",
+            "{word}[styles.cool.n][digits]",
+            "{word}[styles.funny.n]",
+            "[styles.funny.a]{word}",
+            "{word}[styles.funny.n][digits]",
+            "{word}[styles.fantasy.n]",
+            "[styles.fantasy.a]{word}",
+            "{word}[styles.fantasy.n][digits]",
+            "{word}[short]",
+            "[short]{word}"
+          ]
+        }
+      }
+    }
+  },
+  "data": {
+    "styles": {
+      "cool": {
+        "a": [
+          "Shadow",
+          "Silent",
+          "Frost",
+          "Night",
+          "Iron",
+          "Void",
+          "Storm",
+          "Toxic",
+          "Neon",
+          "Phantom",
+          "Crimson",
+          "Rogue",
+          "Savage",
+          "Cyber",
+          "Lunar",
+          "Venom",
+          "Ghost",
+          "Blaze",
+          "Hyper",
+          "Steel",
+          "Dark",
+          "Rapid",
+          "Feral",
+          "Static",
+          "Omega"
+        ],
+        "n": [
+          "Viper",
+          "Reaper",
+          "Wolf",
+          "Hawk",
+          "Strike",
+          "Fang",
+          "Pulse",
+          "Raven",
+          "Blade",
+          "Spectre",
+          "Fury",
+          "Hunter",
+          "Nova",
+          "Comet",
+          "Talon",
+          "Raptor",
+          "Bolt",
+          "Cobra",
+          "Titan",
+          "Ronin",
+          "Vortex",
+          "Wraith",
+          "Sniper",
+          "Drift",
+          "Lynx"
+        ]
+      },
+      "funny": {
+        "a": [
+          "Captain",
+          "Sir",
+          "Lord",
+          "Professor",
+          "Doctor",
+          "Lady",
+          "Count",
+          "Agent",
+          "Major",
+          "Baron",
+          "Chief",
+          "Duke",
+          "Mister",
+          "Madam",
+          "General"
+        ],
+        "n": [
+          "Snacks",
+          "Napsalot",
+          "Lagsalot",
+          "Wobbles",
+          "Pancake",
+          "Noodle",
+          "Biscuit",
+          "Potato",
+          "Toaster",
+          "Nugget",
+          "Waffles",
+          "Pickles",
+          "Sprinkles",
+          "Dumpling",
+          "Crumpet",
+          "Bubbles",
+          "Muffin",
+          "Socks",
+          "Cheddar",
+          "Teapot",
+          "Meatball",
+          "Sausage",
+          "Sandwich",
+          "Spaghetti",
+          "Turnip"
+        ]
+      },
+      "fantasy": {
+        "a": [
+          "Dragon",
+          "Rune",
+          "Storm",
+          "Shadow",
+          "Frost",
+          "Iron",
+          "Star",
+          "Moon",
+          "Ember",
+          "Thorn",
+          "Grim",
+          "Raven",
+          "Ash",
+          "Wolf",
+          "Elder",
+          "Wyrm",
+          "Mithril",
+          "Arcane",
+          "Dusk",
+          "Bone"
+        ],
+        "n": [
+          "bane",
+          "blade",
+          "born",
+          "caller",
+          "forge",
+          "heart",
+          "shield",
+          "song",
+          "walker",
+          "weaver",
+          "ward",
+          "fang",
+          "binder",
+          "keeper",
+          "wing",
+          "seer",
+          "mancer",
+          "rider",
+          "slayer",
+          "crest"
+        ]
+      }
+    },
+    "short": [
+      "Vyke",
+      "Zorn",
+      "Kryx",
+      "Daxe",
+      "Vexo",
+      "Juno",
+      "Rook",
+      "Onyx",
+      "Lyra",
+      "Kael",
+      "Zeph",
+      "Nyxo",
+      "Brox",
+      "Taze",
+      "Quin",
+      "Ryze",
+      "Voxa",
+      "Jett",
+      "Kova",
+      "Drax",
+      "Zyla",
+      "Moxi",
+      "Rexo",
+      "Faye",
+      "Hexa",
+      "Lynx",
+      "Axel",
+      "Ziva",
+      "Kyro",
+      "Nova",
+      "Pyro",
+      "Vale",
+      "Wren",
+      "Echo",
+      "Ozzy",
+      "Saxo",
+      "Tyke",
+      "Ulix",
+      "Yori",
+      "Zeno"
+    ],
+    "digits": [
+      "7",
+      "9",
+      "13",
+      "21",
+      "42",
+      "64",
+      "77",
+      "88",
+      "99",
+      "101",
+      "404",
+      "777",
+      "808",
+      "999",
+      "2000",
+      "3000"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🎮 Gamertag Generator",
+      "tagline": "Gamertags and usernames: cool, funny, fantasy or short, with your own word mixed in if you like."
+    },
+    "intro": "A good gamertag is short, easy to read in a kill feed and still free on the platform you play on. This **gamertag generator** makes tags in four styles (cool, funny, fantasy and short four-letter tags) and can mix in a word or name of your own, so you end up with something that's yours.",
+    "sections": [
+      {
+        "heading": "Each platform's name rules",
+        "content": "<ul><li><strong>Xbox:</strong> gamertags can be up to 12 characters and include spaces. Since 2019, if the name you want is taken, Xbox lets you keep it with a number suffix (like #1234) shown after it.</li><li><strong>Discord:</strong> since 2023, every account has a unique username of 2 to 32 characters, using lowercase letters, numbers, underscores and full stops, plus a separate display name that can be anything.</li><li><strong>Instagram:</strong> usernames can be up to 30 characters, with letters, numbers, full stops and underscores.</li><li><strong>TikTok:</strong> usernames can be up to 24 characters, with letters, numbers, underscores and full stops.</li></ul><p>Rules change from time to time, so check the platform's own sign-up page if a name won't go through.</p>"
+      },
+      {
+        "heading": "What makes a good gamertag",
+        "content": "<ul><li><strong>Short.</strong> Teammates need to call it out in a hurry. Two parts at most.</li><li><strong>Readable.</strong> Avoid swapping letters for numbers (Sh4d0w) unless it's a joke; it's hard to say and easy to misspell.</li><li><strong>Yours.</strong> Add a word you actually like, a nickname or an in-joke, with <em>Include your own word</em>.</li><li><strong>Clean.</strong> Every name here is family-friendly, and platforms do remove offensive names.</li></ul>"
+      },
+      {
+        "heading": "If your favourite is taken",
+        "content": "<ul><li><strong>Add a number</strong> that means something to you, not a random one.</li><li><strong>Try another style.</strong> A fantasy tag (Runeblade) is less likely to be taken than a cool one (ShadowWolf).</li><li><strong>Go short.</strong> Four-letter tags are rare on old platforms but you'll often find an invented one free.</li></ul><p>For a character name rather than a tag, see the <a href=\"../categories/dnd-names.html\">D&amp;D</a> and <a href=\"../categories/pop_culture-names.html\">pop culture</a> name generators.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How long can an Xbox gamertag be?",
+        "answer": "Up to 12 characters, including spaces. If the name is already taken, Xbox adds a number suffix so you can still use it."
+      },
+      {
+        "question": "What are Discord's username rules?",
+        "answer": "Since 2023, usernames are unique, 2 to 32 characters, and use lowercase letters, numbers, underscores and full stops. Your display name can be different."
+      },
+      {
+        "question": "How do I make a gamertag with my name in it?",
+        "answer": "Choose \"Yes, use the word below\", type your name or nickname, and press Generate Names."
+      }
+    ]
+  }
+}

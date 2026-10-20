@@ -209,7 +209,7 @@ Medieval English, Viking/Norse (with patronymics: -son/-dóttir), Old English/An
 
 ### Phase 6: Name tools (when the engine supports it)
 
-**Status:** The Name Combiner (`name-combiner.html`) is live, using a new `blend` recipe in the engine (documented in the README). It targets name combiner, ship name, couple name and "mix two names" searches. Gamertag/Username and Random Picker are still to do; the picker is a different kind of tool and needs Rich's go-ahead.
+**Status:** The Name Combiner (`name-combiner.html`) is live, using a new `blend` recipe in the engine (documented in the README). It targets name combiner, ship name, couple name and "mix two names" searches. The Gamertag Generator (with an optional word of your own, and each platform's name rules) is live too. Random Picker is waiting on Rich's go-ahead (see OWNER-TODO).
 
 High demand, but each needs a new recipe type and competes with established tools. Build one, measure it, then decide.
 

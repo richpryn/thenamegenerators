@@ -343,6 +343,7 @@
     ],
     "generators": [
       "name_combiner",
+      "gamertag",
       "epithet",
       "assassin",
       "vampire",
