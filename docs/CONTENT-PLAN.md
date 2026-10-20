@@ -200,6 +200,9 @@ A broad audience (writers, gamers, horror fans) that still links back to fantasy
 Zombie, Werewolf, Pirate (and pirate ship), Viking (crosses into Moat 7), Superhero, Villain, Cyberpunk, Robot/Android, Sci-fi character, Spaceship, Horror character, Witch hub (linking Swamp Witch, HP Witch and PoE Witch), Ghost.
 
 ### Phase 5: Historical Character Names (weeks 18–26)
+
+**Status:** Done as a new Historical hub: Roman, Ancient Greek, Anglo-Saxon, Medieval, Victorian and Old West, each with real period names and (where certain) meanings. Viking is in Characters. Japanese historical names are left out for now: they need more care with kanji meanings than a quick page allows.
+
 This fills the People category with what its description promises, framed for writers and GMs: real names from the period, with meanings and sources.
 
 Medieval English, Viking/Norse (with patronymics: -son/-dóttir), Old English/Anglo-Saxon, Victorian, Roman (praenomen–nomen–cognomen), Ancient Greek, Japanese (historical, with kanji meanings), Old West. Each page says where its names come from.

@@ -1,0 +1,282 @@
+{
+  "title": "Ancient Greek Name Generator",
+  "slug": "ancient-greek-name-generator",
+  "icon": "🏺",
+  "category": "historical",
+  "published": "2026-10-20",
+  "description": "Real Ancient Greek names with their meanings (Nikias, victory; Philippos, lover of horses), as a single name, with a father's name, or with a city.",
+  "seoKeywords": "ancient greek name generator, greek name generator, ancient greek names, greek names with meanings, spartan names, athenian names, greek names female",
+  "isPopular": false,
+  "filters": {
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "meaning",
+        "father",
+        "city",
+        "name"
+      ],
+      "optionLabels": {
+        "meaning": "Name with its meaning",
+        "father": "With a father's name",
+        "city": "With a city",
+        "name": "Name only"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "meaning": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "male": {
+          "recipe": "template",
+          "template": "[male.meaning]"
+        },
+        "female": {
+          "recipe": "template",
+          "template": "[female.meaning]"
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[male.meaning]",
+            "[female.meaning]"
+          ]
+        }
+      }
+    },
+    "father": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "male": {
+          "recipe": "template",
+          "template": "[male.names], son of [male.names]"
+        },
+        "female": {
+          "recipe": "template",
+          "template": "[female.names], daughter of [male.names]"
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[male.names], son of [male.names]",
+            "[female.names], daughter of [male.names]"
+          ]
+        }
+      }
+    },
+    "city": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "male": {
+          "recipe": "template",
+          "template": "[male.names] of [cities]"
+        },
+        "female": {
+          "recipe": "template",
+          "template": "[female.names] of [cities]"
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[male.names] of [cities]",
+            "[female.names] of [cities]"
+          ]
+        }
+      }
+    },
+    "name": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "male": {
+          "recipe": "template",
+          "template": "[male.names]"
+        },
+        "female": {
+          "recipe": "template",
+          "template": "[female.names]"
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[male.names]",
+            "[female.names]"
+          ]
+        }
+      }
+    }
+  },
+  "data": {
+    "male": {
+      "names": [
+        "Alexandros",
+        "Andronikos",
+        "Aristides",
+        "Demetrios",
+        "Theodoros",
+        "Nikias",
+        "Philippos",
+        "Kallias",
+        "Xanthippos",
+        "Lysandros",
+        "Kleon",
+        "Hippokrates",
+        "Agathon",
+        "Eudoros",
+        "Diodoros",
+        "Kleisthenes",
+        "Nikandros",
+        "Polykrates",
+        "Timotheos",
+        "Menandros",
+        "Thrasyboulos",
+        "Kallimachos",
+        "Leon",
+        "Stephanos",
+        "Phokion"
+      ],
+      "meaning": [
+        "Alexandros (defender of men)",
+        "Andronikos (victory of men)",
+        "Aristides (son of the best)",
+        "Demetrios (of Demeter)",
+        "Theodoros (gift of god)",
+        "Nikias (victory)",
+        "Philippos (lover of horses)",
+        "Kallias (beauty)",
+        "Xanthippos (yellow horse)",
+        "Lysandros (freer of men)",
+        "Kleon (glory)",
+        "Hippokrates (horse power)",
+        "Agathon (good)",
+        "Eudoros (good gift)",
+        "Diodoros (gift of Zeus)",
+        "Kleisthenes (strength of glory)",
+        "Nikandros (victory of men)",
+        "Polykrates (much power)",
+        "Timotheos (honouring god)",
+        "Menandros (strength of men)",
+        "Thrasyboulos (bold counsel)",
+        "Kallimachos (beautiful battle)",
+        "Leon (lion)",
+        "Stephanos (crown)",
+        "Phokion (seal)"
+      ]
+    },
+    "female": {
+      "names": [
+        "Nikarete",
+        "Kallisto",
+        "Eudokia",
+        "Agathe",
+        "Melissa",
+        "Myrrhine",
+        "Xenia",
+        "Philomena",
+        "Theodora",
+        "Kleo",
+        "Lysistrate",
+        "Hipparete",
+        "Eirene",
+        "Chloe",
+        "Thalia",
+        "Doris",
+        "Korinna",
+        "Phila",
+        "Demetria"
+      ],
+      "meaning": [
+        "Nikarete (victory and virtue)",
+        "Kallisto (most beautiful)",
+        "Eudokia (good repute)",
+        "Agathe (good)",
+        "Melissa (bee)",
+        "Myrrhine (myrtle)",
+        "Xenia (hospitality)",
+        "Philomena (loved)",
+        "Theodora (gift of god)",
+        "Kleo (glory)",
+        "Lysistrate (freer of the army)",
+        "Hipparete (horse virtue)",
+        "Eirene (peace)",
+        "Chloe (green shoot)",
+        "Thalia (blooming)",
+        "Doris (Dorian woman)",
+        "Korinna (maiden)",
+        "Phila (dear)",
+        "Demetria (of Demeter)"
+      ]
+    },
+    "cities": [
+      "Athens",
+      "Sparta",
+      "Corinth",
+      "Thebes",
+      "Argos",
+      "Miletus",
+      "Syracuse",
+      "Rhodes",
+      "Megara",
+      "Ephesus",
+      "Samos",
+      "Chios",
+      "Halicarnassus",
+      "Delos",
+      "Elis",
+      "Epidaurus",
+      "Mytilene"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🏺 Ancient Greek Name Generator",
+      "tagline": "Real Greek names with their meanings, the way Greeks used them: one name, a father and a city."
+    },
+    "intro": "Ancient Greeks had one name, and it usually meant something: Nikias is victory, Philippos is lover of horses, Theodoros is gift of god. To tell people apart they added their father's name or their city. This **Ancient Greek name generator** uses real Greek names, shows their meanings, and builds full names the Greek way.",
+    "sections": [
+      {
+        "heading": "How Greek names worked",
+        "content": "<p>A Greek was known by a single personal name. Formally, a citizen added their father's name and, in Athens, their deme (district): the historian Thucydides introduces himself as Thucydides son of Olorus, an Athenian. Outside their city, Greeks were known by their home: Herodotus of Halicarnassus, Thales of Miletus.</p><p>Many names were built from two meaningful parts, just like Anglo-Saxon ones: <em>Nik-</em> (victory), <em>-andros</em> (man), <em>Hipp-</em> (horse), <em>Theo-</em> (god), <em>-kles</em> (glory).</p>"
+      },
+      {
+        "heading": "Reading the meanings",
+        "content": "<ul><li><strong>Horses</strong> were a sign of wealth, so aristocratic families loved names with <em>hippos</em>: Philippos, Xanthippos, Hipparete.</li><li><strong>Gods</strong> appear in names like Demetrios (of Demeter) and Diodoros (gift of Zeus).</li><li><strong>Virtues and victory</strong>: Nikias, Aristides, Agathon.</li></ul><p>Names are given in their Greek forms (Philippos rather than Philip); the meanings are the usual translations of their parts.</p>"
+      },
+      {
+        "heading": "Using the names",
+        "content": "<ul><li><strong>For a citizen</strong>, use the father's name format: it's how they'd sign a decree.</li><li><strong>For a traveller</strong>, use the city: away from home, where you came from was what mattered.</li><li>For the Romans, see the <a href=\"roman-name-generator.html\">Roman Name Generator</a>.</li></ul>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Did Ancient Greeks have surnames?",
+        "answer": "No. They had one name, and added their father's name or their city to tell people apart: Thucydides son of Olorus, Herodotus of Halicarnassus."
+      },
+      {
+        "question": "What does the Greek name Philippos mean?",
+        "answer": "Lover of horses, from philos (loving) and hippos (horse)."
+      },
+      {
+        "question": "Are these real Greek names?",
+        "answer": "Yes, all are names used in the ancient Greek world, given in their Greek spellings with their usual meanings."
+      }
+    ]
+  }
+}
