@@ -193,7 +193,7 @@ This is where the site has expertise nobody else can copy. Each page gets notes 
 
 ### Phase 4: Monsters & Genres (weeks 14–22)
 
-**Status:** Pirate, Viking, Superhero and Villain (Characters) and Werewolf and Zombie (Folklore) are live. Next: Cyberpunk, Robot, Spaceship, Ghost, Witch hub.
+**Status:** Pirate, Viking, Superhero and Villain (Characters) and Werewolf and Zombie (Folklore) are live. Cyberpunk, Robot and Spaceship (new Sci-Fi hub), Ghost, a Witch hub and YouTube Channel are live too. Phase 4 done.
 
 A broad audience (writers, gamers, horror fans) that still links back to fantasy.
 

@@ -1,0 +1,207 @@
+{
+  "title": "Robot Name Generator",
+  "slug": "robot-name-generator",
+  "icon": "🤖",
+  "category": "scifi",
+  "published": "2026-10-20",
+  "description": "Robot and android names: letter-number designations like R2-D2, friendly acronym names, model numbers with a nickname, and human names for androids.",
+  "seoKeywords": "robot name generator, robot names, android names, cool robot names, cute robot names, ai name generator, cyborg names",
+  "isPopular": false,
+  "filters": {
+    "format": {
+      "label": "Name format",
+      "options": [
+        "any",
+        "designation",
+        "acronym",
+        "nickname",
+        "android"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "designation": "Designation (XR-42)",
+        "acronym": "Acronym name (NOVA)",
+        "nickname": "Model and nickname",
+        "android": "Android with a human name"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "designation": {
+      "recipe": "template",
+      "template": [
+        "[letters]-[numbers]",
+        "[letters]-[numbers]-[letters]"
+      ]
+    },
+    "acronym": {
+      "recipe": "pick",
+      "from": "acronyms"
+    },
+    "nickname": {
+      "recipe": "template",
+      "template": "[labels] [letters]-[numbers] “[human]”"
+    },
+    "android": {
+      "recipe": "template",
+      "template": [
+        "[human]",
+        "[human]-[numbers]"
+      ]
+    },
+    "any": {
+      "recipe": "template",
+      "template": [
+        "[letters]-[numbers]",
+        "[acronyms]",
+        "[labels] [letters]-[numbers] “[human]”",
+        "[human]"
+      ]
+    }
+  },
+  "data": {
+    "labels": [
+      "Unit",
+      "Model",
+      "Series",
+      "Mark"
+    ],
+    "letters": [
+      "XR",
+      "RX",
+      "KR",
+      "VX",
+      "ZT",
+      "DX",
+      "QB",
+      "LT",
+      "JX",
+      "PK",
+      "SR",
+      "NV",
+      "AX",
+      "BT",
+      "CX",
+      "GR",
+      "HX",
+      "OR"
+    ],
+    "numbers": [
+      "7",
+      "9",
+      "12",
+      "21",
+      "42",
+      "88",
+      "101",
+      "300",
+      "404",
+      "512",
+      "616",
+      "800",
+      "909",
+      "1000",
+      "2048",
+      "3000",
+      "5",
+      "13",
+      "77",
+      "99"
+    ],
+    "acronyms": [
+      "ALICE",
+      "ORBIT",
+      "ECHO",
+      "NOVA",
+      "ATLAS",
+      "SPARK",
+      "MILO",
+      "PIXEL",
+      "VECTOR",
+      "HELIX",
+      "BOLT",
+      "CASPER",
+      "IRIS",
+      "JUNO",
+      "LUMEN",
+      "KAI",
+      "SOL",
+      "TESS",
+      "ARC",
+      "BYTE",
+      "ROVER",
+      "GADGET",
+      "TINKER",
+      "CHIRP",
+      "DOT",
+      "NIMBUS",
+      "SOCKET",
+      "ZIGGY",
+      "BLIP",
+      "COG",
+      "DYNAMO",
+      "PEBBLE"
+    ],
+    "human": [
+      "Adam",
+      "Theo",
+      "Felix",
+      "Iris",
+      "Silas",
+      "Clara",
+      "Oren",
+      "Mira",
+      "Leo",
+      "Lyra",
+      "Jonah",
+      "Elsie",
+      "Ezra",
+      "Nora",
+      "Calvin",
+      "Sadie",
+      "Otto",
+      "June",
+      "Wren",
+      "Hugo",
+      "Alma",
+      "Rufus",
+      "Cleo",
+      "Basil",
+      "Ida",
+      "Jasper"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🤖 Robot Name Generator",
+      "tagline": "Designations, acronyms and android names, in the style of science fiction's famous machines."
+    },
+    "intro": "The word robot comes from Karel Čapek's 1920 play <em>R.U.R.</em>, from the Czech <em>robota</em>, forced labour. A century later, fictional robots have a handful of naming styles: designations like R2-D2 and HAL 9000, acronyms like WALL-E, and human names for androids like Data. This **robot name generator** makes all of them.",
+    "sections": [
+      {
+        "heading": "How robots get their names",
+        "content": "<ul><li><strong>Designations:</strong> letters and numbers, like a serial number. R2-D2 and C-3PO in Star Wars, HAL 9000 in <em>2001: A Space Odyssey</em>. The crew often shortens it to a nickname.</li><li><strong>Acronyms:</strong> WALL-E stands for Waste Allocation Load Lifter: Earth-Class. A friendly-sounding acronym hides a very dull job.</li><li><strong>Human names:</strong> androids built to pass as people, or to be companions, get human names: Data in <em>Star Trek</em>, Ava in <em>Ex Machina</em>.</li></ul>"
+      },
+      {
+        "heading": "Choosing a name for your robot",
+        "content": "<ul><li><strong>Who named it?</strong> A factory gives a designation; a lonely engineer gives a name. A robot with both has a story.</li><li><strong>Let the crew shorten it.</strong> XR-42 becomes \"Forty\" by the second chapter.</li><li><strong>Match the tone.</strong> Cute robots suit soft acronyms (MILO, PIXEL); menacing ones suit bare designations.</li></ul><p>For the ship it serves on, try the <a href=\"spaceship-name-generator.html\">Spaceship Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Where does the word robot come from?",
+        "answer": "From Karel Čapek's 1920 play R.U.R. (Rossum's Universal Robots). It comes from the Czech robota, meaning forced labour; Čapek credited his brother Josef with the word."
+      },
+      {
+        "question": "What does WALL-E stand for?",
+        "answer": "Waste Allocation Load Lifter: Earth-Class."
+      },
+      {
+        "question": "What's a good name for a cute robot?",
+        "answer": "A soft acronym or a friendly human name: MILO, PIXEL, Felix or June. Choose \"Acronym name\" or \"Android with a human name\"."
+      }
+    ]
+  }
+}

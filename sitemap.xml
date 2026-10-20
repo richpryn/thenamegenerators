@@ -119,6 +119,20 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Category: Sci-Fi -->
+  <url>
+    <loc>https://thenamegenerators.com/categories/scifi-names.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Category: Witches -->
+  <url>
+    <loc>https://thenamegenerators.com/categories/witch-names.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Category: Pop Culture -->
   <url>
     <loc>https://thenamegenerators.com/categories/pop_culture-names.html</loc>
@@ -234,6 +248,13 @@
   <!-- Generator: Company Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/company-name-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Cyberpunk Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/cyberpunk-name-generator.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -416,6 +437,13 @@
   <!-- Generator: Game of Thrones Sword Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/game-of-thrones-sword-name-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Ghost Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/ghost-name-generator.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -630,6 +658,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Robot Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/robot-name-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Shield Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/shield-name-generator.html</loc>
@@ -647,6 +682,13 @@
   <!-- Generator: Song Title Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/song-title-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Spaceship Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/spaceship-name-generator.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -780,6 +822,13 @@
   <!-- Generator: Wu-Tang Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/wu-tang-name-generator.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: YouTube Channel Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/youtube-channel-name-generator.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
