@@ -1,0 +1,277 @@
+{
+  "title": "Nord Name Generator",
+  "slug": "nord-name-generator",
+  "icon": "🪓",
+  "category": "pop_culture",
+  "published": "2026-10-20",
+  "description": "Nord names for Skyrim and Elder Scrolls Online: Old Norse first names, hyphenated family names in the style of Battle-Born and Gray-Mane, or an epithet like Balgruuf the Greater.",
+  "seoKeywords": "nord names, nord name generator, skyrim nord names, skyrim name generator, eso nord names, nord last names, female nord names",
+  "isPopular": false,
+  "filters": {
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "family",
+        "epithet",
+        "first"
+      ],
+      "optionLabels": {
+        "family": "With a family name (Gunnar Frost-Helm)",
+        "epithet": "With an epithet (Gunnar the Bold)",
+        "first": "First name only"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "family": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": "[first] [famA]-[famB]"
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[first.{gender}] [famA]-[famB]"
+      }
+    },
+    "epithet": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": "[first] [epithets]"
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": "[first.{gender}] [epithets]"
+      }
+    },
+    "first": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "pick",
+          "from": "first"
+        }
+      },
+      "default": {
+        "recipe": "pick",
+        "from": "first.{gender}"
+      }
+    }
+  },
+  "data": {
+    "first": {
+      "male": [
+        "Bjorn",
+        "Brandr",
+        "Dagur",
+        "Eirik",
+        "Fjolnir",
+        "Gunnar",
+        "Haldor",
+        "Ingvar",
+        "Jorund",
+        "Ketil",
+        "Leif",
+        "Magnar",
+        "Njal",
+        "Orm",
+        "Ragnar",
+        "Sigurd",
+        "Skuli",
+        "Steinar",
+        "Thorvald",
+        "Ulf",
+        "Asgeir",
+        "Bersi",
+        "Egil",
+        "Geir",
+        "Grim",
+        "Hakon",
+        "Hrolf",
+        "Kolbein",
+        "Odd",
+        "Runolf",
+        "Snorri",
+        "Sveinn",
+        "Thorgrim",
+        "Torstein",
+        "Vestar",
+        "Yngvar",
+        "Halvard",
+        "Erlend",
+        "Hallbjorn",
+        "Thrain",
+        "Vemund",
+        "Ivar"
+      ],
+      "female": [
+        "Astrid",
+        "Bergljot",
+        "Dagny",
+        "Eydis",
+        "Freydis",
+        "Gudrun",
+        "Hallgerd",
+        "Helga",
+        "Ingrid",
+        "Jorunn",
+        "Kara",
+        "Ragna",
+        "Sigrid",
+        "Solveig",
+        "Thora",
+        "Thordis",
+        "Unn",
+        "Vigdis",
+        "Yrsa",
+        "Asa",
+        "Bodil",
+        "Embla",
+        "Gunnhild",
+        "Hild",
+        "Ragnhild",
+        "Signy",
+        "Svanhild",
+        "Thurid",
+        "Alfhild",
+        "Brynja",
+        "Estrid",
+        "Gyda",
+        "Halla",
+        "Ingunn",
+        "Ljot",
+        "Ranveig",
+        "Saga",
+        "Tove",
+        "Groa"
+      ]
+    },
+    "famA": [
+      "Stone",
+      "Frost",
+      "Iron",
+      "Snow",
+      "Storm",
+      "Black",
+      "Silver",
+      "Bear",
+      "Wolf",
+      "Ice",
+      "Oak",
+      "Ash",
+      "Hearth",
+      "Elk",
+      "Crow",
+      "Raven",
+      "Fire",
+      "Mead",
+      "Rock",
+      "Steel",
+      "Thunder",
+      "Cold",
+      "Grim",
+      "White",
+      "Red"
+    ],
+    "famB": [
+      "Fist",
+      "Helm",
+      "Heart",
+      "Hammer",
+      "Hand",
+      "Brow",
+      "Axe",
+      "Beard",
+      "Bane",
+      "Horn",
+      "Hide",
+      "Tooth",
+      "Song",
+      "Wind",
+      "Fell",
+      "Gard",
+      "Shard",
+      "Spear",
+      "Eye",
+      "Skull"
+    ],
+    "epithets": [
+      "the Bold",
+      "the Strong",
+      "the Fair",
+      "the Unbroken",
+      "the Old",
+      "the Red",
+      "Ironhand",
+      "the Wanderer",
+      "the Quiet",
+      "Wolfsbane",
+      "the Tall",
+      "the Grim",
+      "Frostborn",
+      "the Loud",
+      "Ice-Veins",
+      "the Lucky",
+      "the Young",
+      "Bear-Slayer",
+      "the Unbowed",
+      "Storm-Caller"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🪓 Nord Name Generator",
+      "tagline": "Old Norse first names, Battle-Born-style family names and epithets for the Nords of Skyrim."
+    },
+    "intro": "Nords are named like the Vikings they're based on. Skyrim is full of Old Norse-sounding first names (Ulfric, Ralof, Hadvar), proud hyphenated family names like the Battle-Borns and Gray-Manes of Whiterun, and epithets like Balgruuf the Greater and Elisif the Fair. This **Nord name generator** builds all three, for Skyrim, Elder Scrolls Online or your own saga.",
+    "sections": [
+      {
+        "heading": "Three kinds of Nord name",
+        "content": "<ul><li><strong>A family name, hyphenated.</strong> Skyrim's great families have two-part names: the Battle-Borns and Gray-Manes feuding in Whiterun, the Black-Briars in Riften, the Silver-Bloods in Markarth and the Shatter-Shields in Windhelm. Each half is a plain, strong word.</li><li><strong>An epithet.</strong> Rulers and heroes are often known by a title: Jarl Balgruuf the Greater, Jarl Elisif the Fair, Aela the Huntress.</li><li><strong>A single name.</strong> Plenty of Nords go by one name, like Ralof and Hadvar from Skyrim's opening.</li></ul><p>The generator's family names are new combinations, built from the same kind of words, so your Nord won't belong to one of the game's families (unless you get very lucky).</p>"
+      },
+      {
+        "heading": "Why Nord names sound Norse",
+        "content": "<p>The Nords came to Skyrim from Atmora, a cold continent to the north, led in legend by Ysgramor. Bethesda modelled them on the Norse, and the first names show it: many are real Old Norse names or close to them.</p><p>The first names in this generator are real Old Norse names, the kind found in the Icelandic sagas: Gunnar, Njal and Egil for men, Astrid, Gudrun and Freydis for women. They fit Skyrim because Skyrim was built to sound like them.</p>"
+      },
+      {
+        "heading": "Choosing a name for your Dragonborn",
+        "content": "<ul><li><strong>Single name or family?</strong> A Nord from a great family carries its feuds. A Nord with one name can make their own.</li><li><strong>Let the epithet be earned.</strong> Start as Sigrid, end the game as Sigrid Storm-Caller.</li><li><strong>Say it like a shout.</strong> Nord names are short and strong, which suits a people who settle arguments with the Thu'um.</li></ul><p>For other races of Tamriel, try the <a href=\"khajiit-name-generator.html\">Khajiit</a> and <a href=\"skyrim-orc-name-generator.html\">Skyrim Orc</a> name generators.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do Nord last names work in Skyrim?",
+        "answer": "The great families have hyphenated names made of two strong words, like Battle-Born, Gray-Mane and Black-Briar. Many Nords have no family name at all, and rulers often use an epithet instead, like Balgruuf the Greater."
+      },
+      {
+        "question": "Are Nord names based on real names?",
+        "answer": "Yes, many are Old Norse or close to it. The first names in this generator are real Old Norse names from the sagas."
+      },
+      {
+        "question": "Can I use these names in Elder Scrolls Online?",
+        "answer": "Yes. ESO names must be unique on your server, and a hyphenated family name or an epithet makes it easier to find one that's free."
+      }
+    ]
+  }
+}
