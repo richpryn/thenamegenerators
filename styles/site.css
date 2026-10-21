@@ -373,7 +373,7 @@ article li{margin-bottom:var(--s2)}
 .tool{--fill:var(--card);display:grid;grid-template-columns:48px 1fr auto;gap:var(--s3);align-items:center;padding:var(--s4);text-decoration:none;min-width:0}
 .tool .doodle{width:48px;height:48px}
 .tool b{display:block;font:800 17px/1.2 var(--head)}
-.tool span{display:block;font:15px/1.4 var(--body);color:var(--muted);margin-top:2px}
+.tool span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font:15px/1.4 var(--body);color:var(--muted);margin-top:2px}
 .tool em{font:800 19px var(--head);font-style:normal}
 .tool.soon{cursor:default;box-shadow:none}
 .tool:hover{--fill:#fff6d6}
