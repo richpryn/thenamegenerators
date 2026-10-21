@@ -20,7 +20,7 @@ Both Claude sessions worked through `docs/CONTENT-PLAN.md` overnight. The site w
 1. Send a session your Google Analytics Measurement ID (see "Now" below).
 2. In Search Console, request indexing for the hub pages (listed under "Review" below).
 3. Have a look at the new pages and say what you'd change.
-4. Answer the random picker/wheel question under "Decisions for you".
+4. ~~Random picker/wheel~~: decided (build it after the redesign).
 5. Add your notes to Band and Dungeon Synth when you have time.
 
 
@@ -98,7 +98,7 @@ Pages that get better with your own experience. A few lines each, in any session
 - [x] **Swamp Witch:** the old "Voodoo" style was removed, because it treated a real religion as a costume. Rich: leave it out.
 - [x] **D&D Fantasy** is now "any race or a random party", built from the race generators' lists. Rich: happy with it.
 
-- [ ] **Random name picker / wheel** ("spin the wheel", raffles, classroom picks): huge search volume, but it's a utility for a different audience (teachers, raffles) who won't use the rest of the site, and it competes with well-known wheel sites. Build it, or skip it?
+- [x] **Random name picker / wheel**: Rich: yes, build a spin-the-wheel tool once the redesign is settled, so it's built in the new design.
 
 ## Later
 

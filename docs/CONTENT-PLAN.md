@@ -209,7 +209,7 @@ Medieval English, Viking/Norse (with patronymics: -son/-dóttir), Old English/An
 
 ### Phase 6: Name tools (when the engine supports it)
 
-**Status:** The Name Combiner (`name-combiner.html`) is live, using a new `blend` recipe in the engine (documented in the README). It targets name combiner, ship name, couple name and "mix two names" searches. The Gamertag Generator (with an optional word of your own, and each platform's name rules) is live too. Random Picker is waiting on Rich's go-ahead (see OWNER-TODO).
+**Status:** The Name Combiner (`name-combiner.html`) is live, using a new `blend` recipe in the engine (documented in the README). It targets name combiner, ship name, couple name and "mix two names" searches. The Gamertag Generator (with an optional word of your own, and each platform's name rules) is live too. **Spin the Wheel / Random Name Picker: approved by Rich**, to be built after the redesign so it uses the new design. Plan: a wheel page where visitors paste or type names (one per line), spin with a proper easing animation, see the winner, and optionally remove the winner for the next spin. Lists are kept in the browser, and each spin's list can be shared as a link. It also gets a "fill from a generator" button (e.g. 8 elf names) that ties the wheel back to the rest of the site. Pages: Spin the Wheel (hub), Random Name Picker, Raffle / Pick a Winner, Secret Santa (draws pairs), and Team Generator (splits names into teams), all on one engine.
 
 High demand, but each needs a new recipe type and competes with established tools. Build one, measure it, then decide.
 
