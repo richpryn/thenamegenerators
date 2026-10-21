@@ -35,6 +35,7 @@ Things only Rich can do. The Claude sessions add items here as they come up and 
   - **First, while it's still October:** `https://thenamegenerators.com/categories/halloween-names.html` (new Halloween hub)
   - **Then the new Halloween generators:** `/posts/witch-name-generator.html`, `/posts/black-cat-name-generator.html`, `/posts/haunted-house-name-generator.html`
   - **Then the rest of the Halloween set, a few a day:** `/posts/coven-name-generator.html`, `/posts/monster-name-generator.html`, `/posts/skeleton-name-generator.html`, `/posts/spell-name-generator.html`, `/posts/horror-movie-title-generator.html`, `/posts/mummy-name-generator.html`, `/posts/scarecrow-name-generator.html`
+  - **Minecraft (new hub, all year round):** `https://thenamegenerators.com/categories/minecraft-names.html` first, then `/posts/minecraft-username-generator.html` and `/posts/minecraft-name-from-your-name.html`; the hub links the other seven
   - `https://thenamegenerators.com/` (new hero)
   - `https://thenamegenerators.com/posts/hammer-name-generator.html` (was Warhammer)
   - `https://thenamegenerators.com/posts/event-name-generator.html`

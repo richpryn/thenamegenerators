@@ -381,7 +381,29 @@
       "tagline": "Names for your village, town, city or kingdom, from Oakhollow to the Obsidian Empire."
     },
     "intro": "Once a base becomes a village, and a village becomes a town, it needs a name on the signpost. This **Minecraft town name generator** names villages, towns, cities and kingdoms in four styles: classic place names, names made from blocks, epic strongholds and funny ones.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Naming the places you build",
+        "content": "<ul><li><strong>Classic:</strong> English-sounding place names like Stonewick or Birchport, built the way real town names are: a feature plus an ending like -wick, -port or -ford.</li><li><strong>Blocky:</strong> names made from what it's built of or near: Terracotta Crossing, Mossy Cobble Hamlet.</li><li><strong>Epic:</strong> strongholds and capitals: Warden Haven, the Obsidian Empire.</li><li><strong>Funny:</strong> for the town that's really three dirt huts and a farm.</li></ul><p>Pick the size first (village, town, city or kingdom) and the generator adds the right sort of ending.</p>"
+      },
+      {
+        "heading": "Tips for builders",
+        "content": "<ul><li><strong>Name it after what's there:</strong> a town by a cherry grove, a port on the ocean, a hold in the mountains.</li><li><strong>Put the name on a sign</strong> at the entrance, or on a banner over the gate.</li><li><strong>Naming a kingdom on a server?</strong> Name each town in it in the same style, so they feel like one nation.</li></ul><p>To fill your town, try the <a href=\"minecraft-villager-name-generator.html\">Minecraft Villager Name Generator</a>. For towns outside Minecraft, there's the <a href=\"fantasy-town-name-generator.html\">Fantasy Town Name Generator</a>.</p><p>For everything else in Minecraft, see all the <a href=\"../categories/minecraft-names.html\">Minecraft name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good name for a Minecraft village?",
+        "answer": "Something that fits where it is: choose Village and the classic style for names like Stonewick, or blocky for names like Mossy Cobble Hamlet."
+      },
+      {
+        "question": "What should I call my Minecraft kingdom?",
+        "answer": "Choose Kingdom and the epic style for names like the Obsidian Empire."
+      },
+      {
+        "question": "What can I name my Minecraft base?",
+        "answer": "Try the town generator's classic or epic style for a base that's grown into a town, or the funny style for a base that hasn't."
+      }
+    ]
   }
 }

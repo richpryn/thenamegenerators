@@ -277,7 +277,29 @@
       "tagline": "Names for SMPs, Realms and every kind of server, from CrystalRidge SMP to EmberForge Network."
     },
     "intro": "A server name has to work in a server list, a Discord and a YouTube title, so short and memorable wins. This **Minecraft server name generator** makes names for SMPs, Realms and servers of every kind, with the right tag on the end.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "What makes a good server name",
+        "content": "<ul><li><strong>Short and easy to type:</strong> players will search for it, say it on Discord and put it in video titles.</li><li><strong>Say what it is:</strong> a tag like SMP, Factions or Skyblock tells people what to expect before they join.</li><li><strong>Check it's free:</strong> search server lists, Discord and YouTube before you commit, and check the web address if you'll want a website.</li></ul>"
+      },
+      {
+        "heading": "The kinds of server",
+        "content": "<ul><li><strong>SMP</strong> stands for survival multiplayer: a shared survival world, usually for friends or a community.</li><li><strong>Realms</strong> are Mojang's own paid servers, easiest for a small group of friends. The SMP and survival styles suit them.</li><li><strong>Factions:</strong> teams claim land and raid each other.</li><li><strong>Skyblock:</strong> everyone starts on a tiny island in the sky.</li><li><strong>Prison:</strong> players mine their way up through ranks.</li><li><strong>Minigames:</strong> Bedwars, Skywars and the like, so names that sound like a network.</li><li><strong>Anarchy:</strong> no rules, so names that sound like it.</li><li><strong>Creative</strong> and <strong>roleplay:</strong> builders and storytellers.</li></ul><p>For the teams on it, try the <a href=\"minecraft-clan-name-generator.html\">Minecraft Clan Name Generator</a>. For the server's YouTube channel, try the <a href=\"youtube-channel-name-generator.html\">YouTube Channel Name Generator</a>.</p><p>For everything else in Minecraft, see all the <a href=\"../categories/minecraft-names.html\">Minecraft name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What does SMP mean in Minecraft?",
+        "answer": "Survival multiplayer: a survival world shared by a group of players, often friends or a creator's community."
+      },
+      {
+        "question": "What's a good name for an SMP?",
+        "answer": "A short, memorable word plus SMP, like Storm SMP or JadeGlen SMP. Choose the SMP style."
+      },
+      {
+        "question": "What's a good name for a Minecraft Realm?",
+        "answer": "Realms are usually for friends, so pick something everyone will recognise. The SMP and survival styles work well."
+      }
+    ]
   }
 }

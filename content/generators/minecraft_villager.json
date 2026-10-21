@@ -2483,7 +2483,33 @@
       "tagline": "Names for every villager in your village, by job and by biome."
     },
     "intro": "Villagers don't come with names, but a name tag changes that, and a named villager is much easier to keep track of when you're running a trading hall. This **Minecraft villager name generator** names villagers by profession and biome, from Herbert Bookworth the Librarian to Frosty Woolsey the Shepherd.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "How to name a villager",
+        "content": "<ol><li>Get a <strong>name tag</strong>: you can find them in chests, catch them while fishing, or buy them from a librarian villager.</li><li>Put the name tag in an <strong>anvil</strong>, type the name and take it out. This costs one level of experience.</li><li>Hold the name tag and <strong>use it on the villager</strong>. The name shows above its head.</li></ol><p>A named villager won't despawn, and the name stays if it changes job. Naming villagers is a big help in a trading hall, where a row of identical librarians is easy to mix up.</p>"
+      },
+      {
+        "heading": "Professions and biomes",
+        "content": "<ul><li><strong>Thirteen jobs:</strong> armorer, butcher, cartographer, cleric, farmer, fisherman, fletcher, leatherworker, librarian, mason, shepherd, toolsmith and weaponsmith, each linked to a workstation block. Nitwits, in green coats, never take a job.</li><li><strong>Seven villager types,</strong> one for each biome they come from: plains, desert, savanna, taiga, snowy, swamp and jungle. The names follow the biome too, so a snowy villager might be Frosty and a desert one Dusty.</li><li><strong>The title format</strong> adds the job, so your librarian becomes Herbert Bookworth the Librarian.</li></ul><p>For your other mobs, try the <a href=\"minecraft-pet-name-generator.html\">Minecraft Pet Name Generator</a>, and for the village itself, the <a href=\"minecraft-town-name-generator.html\">Minecraft Town Name Generator</a>.</p><p>For everything else in Minecraft, see all the <a href=\"../categories/minecraft-names.html\">Minecraft name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do you name a villager in Minecraft?",
+        "answer": "Rename a name tag on an anvil (it costs one level), then use the name tag on the villager."
+      },
+      {
+        "question": "Does naming a villager stop it despawning?",
+        "answer": "Yes. A villager with a name tag won't despawn."
+      },
+      {
+        "question": "What are good names for a librarian villager?",
+        "answer": "Bookish ones: choose Librarian for names like Herbert Bookworth, or the title format for Herbert Bookworth the Librarian."
+      },
+      {
+        "question": "Can you name a villager anything?",
+        "answer": "Almost: an anvil allows up to 50 characters. A few special names do odd things to mobs, though: Dinnerbone or Grumm turns any mob upside down."
+      }
+    ]
   }
 }

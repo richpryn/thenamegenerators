@@ -253,7 +253,29 @@
       "tagline": "Type your name and get Minecraft usernames built from it."
     },
     "intro": "The easiest Minecraft name to remember is one built from your own: SamTheCreeper, DiamondSam, LilSam. This **Minecraft name from your name generator** takes your first name or nickname, cleans it up to letters and numbers, and builds it into usernames in five styles.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "How it builds your name",
+        "content": "<ul><li><strong>It cleans your name first.</strong> Minecraft usernames only allow letters, numbers and underscores, so spaces and accents are taken out and the result is kept short enough to add a word.</li><li><strong>Then it adds a Minecraft word</strong> before or after it: a mob (PiglinSam, Sam_Wolf), an ore or tool (NetheriteSam), a cool word, a cute word or a joke (NoobSam).</li><li><strong>Every result fits</strong> the 3 to 16 character limit, so you can use it straight away.</li></ul>"
+      },
+      {
+        "heading": "Tips",
+        "content": "<ul><li><strong>Try a nickname</strong> as well as your full name: a short name leaves room for a longer word.</li><li><strong>Not keen on your real name online?</strong> Use a nickname or an initial instead. It's safer, especially for younger players.</li><li><strong>If it's taken,</strong> try the underscore version or add a number.</li></ul><p>For usernames that don't use your name at all, try the <a href=\"minecraft-username-generator.html\">Minecraft Username Generator</a>.</p><p>For everything else in Minecraft, see all the <a href=\"../categories/minecraft-names.html\">Minecraft name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's my Minecraft name?",
+        "answer": "Type your name or nickname into the box and pick a style: you'll get a list of usernames built from it, like SamTheCreeper or DiamondSam."
+      },
+      {
+        "question": "Should I use my real name in Minecraft?",
+        "answer": "A first name or nickname is usually fine, but don't add your surname, age or where you live. Younger players are safer with a nickname."
+      },
+      {
+        "question": "Why has my name been shortened?",
+        "answer": "Minecraft usernames can only be 16 characters long, so long names are trimmed to leave room for the Minecraft word."
+      }
+    ]
   }
 }

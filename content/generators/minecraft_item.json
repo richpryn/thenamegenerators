@@ -1559,7 +1559,29 @@
       "tagline": "Names for your best pickaxe, bow, trident, mace and every other piece of enchanted gear."
     },
     "intro": "Rename a tool on an anvil and it keeps that name forever, so your Fortune III pickaxe deserves better than \"Diamond Pickaxe\". This **Minecraft tool and weapon name generator** makes epic and funny names for pickaxes, axes, shovels, bows, crossbows, tridents, maces, shields, elytra and fishing rods, with a matching enchantment if you like. For swords, try the Funny Minecraft Sword Name Generator.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "How to rename tools in Minecraft",
+        "content": "<ol><li>Put the tool or weapon in the first slot of an <strong>anvil</strong>.</li><li>Type the new name in the box at the top. Names can be up to 50 characters.</li><li>Take it out. Renaming an item that hasn't been on an anvil before costs one level of experience; more if it has.</li></ol><p>A custom name shows in italics and stays with the item, even if you enchant or repair it later. It's the best way to tell your Fortune III pickaxe from your Silk Touch one at a glance.</p>"
+      },
+      {
+        "heading": "Naming your gear",
+        "content": "<ul><li><strong>Epic names</strong> suit the gear you'd never lose: Skybreaker, Stormcaller, Starflight.</li><li><strong>Funny names</strong> suit the gear you will: Gravel Regrets, Emergency Fishing Rod.</li><li><strong>With an enchantment</strong> adds a real Minecraft enchantment in brackets, so the name matches what the tool does: Saltfury (Channeling) for a trident, Lucky Pickaxe (Silk Touch).</li></ul><p>For swords, try the <a href=\"funny-minecraft-sword-name-generator.html\">Funny Minecraft Sword Name Generator</a>. For names that aren't Minecraft-specific, try the <a href=\"sword-name-generator.html\">Sword</a> and <a href=\"axe-name-generator.html\">Axe</a> name generators.</p><p>For everything else in Minecraft, see all the <a href=\"../categories/minecraft-names.html\">Minecraft name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do you rename an item in Minecraft?",
+        "answer": "Put it in an anvil, type the new name and take it out. It costs one level of experience for an item that hasn't been on an anvil before, and names can be up to 50 characters."
+      },
+      {
+        "question": "What's a good name for a Minecraft pickaxe?",
+        "answer": "Choose Pickaxe: epic names like Skybreaker, or funny ones like Gravel Regrets. Add an enchantment for something like Deepcutter (Fortune III)."
+      },
+      {
+        "question": "What's a good name for a trident?",
+        "answer": "Something stormy or salty: choose Trident for names like Saltfury, and add Channeling or Riptide."
+      }
+    ]
   }
 }

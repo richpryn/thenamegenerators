@@ -825,7 +825,33 @@
       "tagline": "Name tag ideas for every Minecraft pet, from wolves and cats to axolotls and allays."
     },
     "intro": "A name tag keeps your pets from despawning and makes them easier to find, and a good name makes them family. This **Minecraft pet name generator** has names for wolves, cats, horses, parrots, axolotls, foxes, llamas, camels, frogs and allays, in cute, cool, funny and food styles.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Name tags and pets",
+        "content": "<ul><li><strong>Taming first:</strong> wolves are tamed with bones, cats with raw fish, parrots with seeds, and horses and llamas by riding them until they stop throwing you off. Camels don't need taming: just put a saddle on. Axolotls and frogs can't be tamed, but you can carry axolotls in a bucket and name them.</li><li><strong>Naming:</strong> rename a name tag on an anvil (one level of experience), then use it on the pet. Named mobs don't despawn, and the name makes it easier to find in a crowd of cats.</li><li><strong>Allays</strong> will follow you once you give them an item, so they deserve a name too.</li></ul>"
+      },
+      {
+        "heading": "Secret names to try",
+        "content": "<p>A few names do something special when you use them on a mob (most of these are Java Edition):</p><ul><li><strong>Dinnerbone</strong> or <strong>Grumm:</strong> the mob turns upside down.</li><li><strong>jeb_:</strong> a sheep cycles through every colour of the rainbow.</li><li><strong>Toast:</strong> a rabbit gets a special coat.</li><li><strong>Johnny:</strong> a vindicator attacks almost every mob it sees, so keep it away from your pets.</li></ul><p>And the pink axolotl is called <em>lucy</em> in the game's files. For your villagers, try the <a href=\"minecraft-villager-name-generator.html\">Minecraft Villager Name Generator</a>.</p><p>For everything else in Minecraft, see all the <a href=\"../categories/minecraft-names.html\">Minecraft name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What should I name my Minecraft dog?",
+        "answer": "Choose Wolf: cute names like Biscuit, cool ones like Ranger, or funny ones like Not a Creeper."
+      },
+      {
+        "question": "What is the pink axolotl called in Minecraft?",
+        "answer": "In the game's files the pink (leucistic) axolotl is called lucy. The others are wild, gold, cyan and the rare blue."
+      },
+      {
+        "question": "What happens if you name a mob Dinnerbone?",
+        "answer": "It turns upside down. Grumm does the same."
+      },
+      {
+        "question": "Do name tags stop mobs despawning?",
+        "answer": "Yes. Any mob with a name from a name tag won't despawn."
+      }
+    ]
   }
 }
