@@ -4,7 +4,7 @@
   "icon": "🪨",
   "category": "mythical",
   "published": "2026-10-22",
-  "description": "Golem names for D&D, stories and games, by what the golem is made of: clay, stone, iron, wood or crystal. Names like Ironheart and Claytread, or funny ones like Clunky.",
+  "description": "Golem names for stories and games: golems of clay, stone, iron, wood or crystal, with names that sound heavy, made of their material, or funny.",
   "seoKeywords": "golem name generator, golem names, dnd golem names, stone golem names, clay golem names, iron golem names, construct names",
   "seoTitle": "Golem Name Generator: Clay, Stone, Iron & Crystal",
   "isPopular": false,
@@ -740,7 +740,29 @@
       "tagline": "Names for golems by what they're made of, from Ironheart to a clay golem called Clunky."
     },
     "intro": "The golem comes from Jewish folklore, where it is a figure of clay brought to life, most famously in the legend of the Golem of Prague. In D&D and fantasy games, golems are guardians built from clay, stone, iron and stranger things. This **golem name generator** names golems by material, with heavy names and funny ones.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "The golem in Jewish folklore",
+        "content": "<p>The golem comes from Jewish folklore: a figure shaped from clay and brought to life by sacred words.</p><ul><li><strong>The word</strong> is Hebrew, meaning something unformed. It appears once in the Bible, in Psalm 139, for an unformed body.</li><li><strong>The Golem of Prague</strong> is the best-known story. Tradition credits Rabbi Judah Loew, a great scholar of 1500s Prague, with making a golem to protect the city's Jewish community. The legend as it's usually told was written down in the 1800s.</li><li><strong>Emet and met:</strong> in many versions the word <em>emet</em>, \"truth\", is written on the golem's forehead. Rubbing out the first letter leaves <em>met</em>, \"dead\", and the golem falls still.</li></ul><p>The golem is part of a living religious and cultural tradition, so the generator keeps its names to fantasy golems rather than borrowing from it.</p>"
+      },
+      {
+        "heading": "Naming a fantasy golem",
+        "content": "<p>In D&amp;D and fantasy games, golems are guardians built by wizards, and they're named for what they're made of.</p><ul><li><strong>Choose the material</strong> (clay, stone, iron, wood or crystal), and the names follow it: Claystride, Marblewarden, Prismback.</li><li><strong>Heavy</strong> names sound like guards: Graniteguard, Boulderwatch.</li><li><strong>Funny</strong> names suit a golem with a gentler job: Gravel Gary, Tin Tim.</li></ul><p>For other stone guardians, try the <a href=\"gargoyle-name-generator.html\">Gargoyle Name Generator</a>. For mechanical ones, there's the <a href=\"robot-name-generator.html\">Robot Name Generator</a>.</p><p>For more beasts of legend, see all the <a href=\"../categories/mythical-names.html\">mythical creature name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is a golem?",
+        "answer": "In Jewish folklore, a figure shaped from clay and brought to life. In fantasy games, a construct of clay, stone, iron or other material built to guard something."
+      },
+      {
+        "question": "What does emet mean on a golem?",
+        "answer": "Emet is Hebrew for truth. In the legend, rubbing out its first letter leaves met, dead, and the golem stops."
+      },
+      {
+        "question": "What's a good name for a stone golem?",
+        "answer": "Choose Stone for names like Graniteguard or Marblewarden, or the funny style for something like Gravel Gary."
+      }
+    ]
   }
 }

@@ -322,7 +322,29 @@
       "tagline": "Names for trolls, from Norse folklore to the grumpy one under the bridge."
     },
     "intro": "Trolls come from Scandinavian folklore, where they live in mountains and forests, hate the sun and sometimes turn to stone in daylight. This **troll name generator** makes Norse-sounding folklore names, cave and mountain trolls, harsh D&D troll names and funny bridge trolls who want your toll.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Trolls in folklore",
+        "content": "<p>Trolls come from Scandinavian folklore, where they live in mountains, forests and under the hills, and hate the light.</p><ul><li><strong>Turned to stone:</strong> in many Norwegian tales a troll caught by the sunrise turns to stone, which is one explanation for the odd shapes of some rocks.</li><li><strong>The bridge troll</strong> comes from \"The Three Billy Goats Gruff\", a Norwegian folk tale collected by Peter Christen Asbjørnsen and Jørgen Moe in the 1840s.</li><li><strong>The Dovre King</strong> rules the trolls of the Dovre mountains in Henrik Ibsen's play <em>Peer Gynt</em> (1867), and the painter Theodor Kittelsen fixed how trolls look for many Norwegians.</li><li><strong>In D&amp;D,</strong> trolls regenerate, and only fire or acid stops them.</li></ul>"
+      },
+      {
+        "heading": "Naming a troll",
+        "content": "<ul><li><strong>Folklore</strong> trolls get Norse-sounding names, often with a home \"of the Dovre Mountains\".</li><li><strong>Cave</strong> trolls get names made of what they're covered in: Mossback, Bouldernose.</li><li><strong>D&amp;D</strong> trolls get short, harsh names like Vorrgar.</li><li><strong>Bridge</strong> trolls get a name and an address: Wartle Stonesitter, Clod of the Humpback Bridge.</li></ul><p>For their bigger cousins, try the <a href=\"giant-name-generator.html\">Giant</a> and <a href=\"ogre-name-generator.html\">Ogre</a> name generators, and for Warcraft's trolls, the <a href=\"wow-troll-name-generator.html\">World of Warcraft Troll Name Generator</a>.</p><p>For more beasts of legend, see all the <a href=\"../categories/mythical-names.html\">mythical creature name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do trolls turn to stone in sunlight?",
+        "answer": "In many Scandinavian tales, yes: a troll caught out at sunrise turns to stone."
+      },
+      {
+        "question": "Where does the bridge troll come from?",
+        "answer": "From the Norwegian folk tale The Three Billy Goats Gruff, collected by Asbjørnsen and Moe in the 1840s."
+      },
+      {
+        "question": "What's a good name for a troll?",
+        "answer": "A Norse-sounding name for a folklore troll, a craggy one like Mossback for a cave troll, or a name and an address like Grumble Underbridge for a bridge troll."
+      }
+    ]
   }
 }

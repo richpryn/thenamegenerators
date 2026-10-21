@@ -305,7 +305,29 @@
       "tagline": "Names for gargoyles, from gothic grotesques to the little one in your garden."
     },
     "intro": "A gargoyle is, strictly, a carved waterspout: the word comes from the French for throat, and rain pours out of its mouth. Over centuries they became the stone guardians of cathedrals. This **gargoyle name generator** makes gothic names like Grimspout, cathedral guardians named for their tower, and cute names for a garden gargoyle.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Gargoyles and grotesques",
+        "content": "<p>A gargoyle is, strictly, a carved waterspout that throws rain clear of a building's walls.</p><ul><li><strong>The word</strong> comes from the French <em>gargouille</em>, throat, and is related to \"gargle\": the water pours out of its mouth.</li><li><strong>Grotesques:</strong> carved figures that don't carry water aren't gargoyles at all, though almost everyone calls them that.</li><li><strong>Notre-Dame's</strong> famous brooding \"gargoyles\" on the gallery are grotesques, added in the 1800s by the architect Eugène Viollet-le-Duc.</li><li><strong>La Gargouille</strong> was a dragon in a legend from Rouen, said to have been defeated by Saint Romanus, the city's bishop.</li></ul>"
+      },
+      {
+        "heading": "Naming a gargoyle",
+        "content": "<ul><li><strong>Gothic</strong> names are stony and grim: Grimspout, Slatefang, Mossgutter.</li><li><strong>Cathedral guardians</strong> get names like the monks and nuns who'd have walked beneath them: Sister Hildegard, Oswin of the High Parapet.</li><li><strong>Cute</strong> names suit a garden gargoyle: Little Pebble, Little Pudding.</li></ul><p>For other things that watch from the rooftops, try the <a href=\"ghost-name-generator.html\">Ghost</a> and <a href=\"haunted-house-name-generator.html\">Haunted House</a> name generators, and for something made of stone that moves, the <a href=\"golem-name-generator.html\">Golem Name Generator</a>.</p><p>For more beasts of legend, see all the <a href=\"../categories/mythical-names.html\">mythical creature name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's the difference between a gargoyle and a grotesque?",
+        "answer": "A gargoyle is a carved waterspout; a grotesque is a carved figure that doesn't carry water. Most stone monsters on buildings are grotesques."
+      },
+      {
+        "question": "Where does the word gargoyle come from?",
+        "answer": "From the French gargouille, meaning throat, because rainwater pours out of the gargoyle's mouth."
+      },
+      {
+        "question": "Are the Notre-Dame gargoyles real gargoyles?",
+        "answer": "The famous figures on the gallery are grotesques, added in the 1800s by Eugène Viollet-le-Duc. The cathedral has real gargoyle waterspouts too."
+      }
+    ]
   }
 }
