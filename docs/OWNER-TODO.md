@@ -30,7 +30,7 @@ Things only Rich can do. The Claude sessions add items here as they come up and 
 
 - [x] **Google Analytics (GA4).** Done: tag `G-R34WKHG3SR` is on every page (21 October).
 - [x] **GA linked to Search Console.** Done (21 October).
-- [ ] **Fix the sitemap in Search Console.** Google is reading `sitemap.html` (the page for people), so it reports "Sitemap is HTML". In Search Console → Sitemaps, remove `sitemap.html` and submit `https://thenamegenerators.com/sitemap.xml` instead.
+- [x] **Sitemap fixed in Search Console.** `sitemap.xml` submitted in place of `sitemap.html` (21 October).
 - [ ] **Request indexing for new and moved pages.** Partly done on 21 October; Search Console only allows about 10 requests a day. Do the hubs first, a few more each day. The sitemap (`sitemap.xml`, submitted under Sitemaps) lets Google find everything else on its own, so the rest is a nudge, not essential. URL Inspection → Request indexing for:
   - **First, while it's still October:** `https://thenamegenerators.com/categories/halloween-names.html` (new Halloween hub)
   - `https://thenamegenerators.com/` (new hero)
@@ -111,7 +111,7 @@ Pages that get better with your own experience. A few lines each, in any session
 
 ## Later
 
-- [ ] **Share image and logo** (see `SEO.md`): a 1200×630 image for social shares, or say if a session should make a simple one.
+- [x] **Share images:** done. Every page has its own, drawn by `scripts/share-images.js` from its title and illustration; Rich checked them in a share preview (21 October).
 - [ ] **Backlinks**: post the generators in D&D, worldbuilding and writing communities once the D&D cluster is up.
 
 ## Done
