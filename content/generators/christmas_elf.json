@@ -226,7 +226,29 @@
       "tagline": "What's your elf name? Type yours in and find out, along with your job in Santa's workshop."
     },
     "intro": "Every elf in Santa's workshop has a name that sounds like Christmas, and a job to go with it. This **Christmas elf name generator** turns your first name into an elf name, like Sam Jinglebottom, or makes a random one, and can give you a job too: Head of Wrapping, perhaps, or Chief Toy Tester.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "What's my elf name?",
+        "content": "<p>Type your first name and the generator keeps it, then adds an elf surname made from Christmas things: Sam Jinglebottom, Sarah Sugarsparks.</p><ul><li><strong>Add a job</strong> to find out what you'd do in Santa's workshop, from Tinsel Untangler to Keeper of the Naughty List.</li><li><strong>Or go random</strong> for a full elf name with no link to your own.</li><li><strong>For a group,</strong> run everyone's names through it for a Christmas party, an office game or a family card.</li></ul>"
+      },
+      {
+        "heading": "Christmas elves in folklore",
+        "content": "<p>Santa's busy workshop elves are a fairly modern idea, but they grew out of much older household spirits.</p><ul><li><strong>The Scandinavian nisse or tomte</strong> is a small farm spirit who looks after the house and animals. On Christmas Eve families leave him a bowl of rice porridge with butter; forget, and he plays tricks.</li><li><strong>Iceland's Yule Lads</strong> are thirteen mischievous brothers who visit one by one in the thirteen nights before Christmas, each with his own habit, like Spoon-Licker and Door-Slammer.</li></ul><p>For an elf that lives on a shelf, try the <a href=\"elf-on-the-shelf-name-generator.html\">Elf on the Shelf Name Generator</a>. For elves of the other kind, there's the <a href=\"elf-name-generator.html\">Elf Name Generator</a>.</p><p>For the rest of the season, see all the <a href=\"../categories/christmas-names.html\">Christmas name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I get my elf name?",
+        "answer": "Choose My name, type your first name and generate. You'll get your name with an elf surname, like Sam Jinglebottom, and you can add a workshop job."
+      },
+      {
+        "question": "What is a nisse?",
+        "answer": "A small household spirit from Scandinavian folklore, also called a tomte, who looks after the farm. Families leave him rice porridge on Christmas Eve."
+      },
+      {
+        "question": "What jobs do Santa's elves do?",
+        "answer": "In the generator, everything from Toy Train Driver and Sleigh Mechanic to Head of Wrapping and Keeper of the Naughty List."
+      }
+    ]
   }
 }

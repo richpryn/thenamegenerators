@@ -4,7 +4,7 @@
   "icon": "⛄",
   "category": "christmas",
   "published": "2026-10-22",
-  "description": "Snowman names for the one you've just built in the garden: puns like Snowcrates and Brrrnard, grand ones like Lord Frostbottom, and cute ones like Marshmallow.",
+  "description": "Snowman names for the one you've built in the garden: puns like Snowcrates and Brrrnard, grand ones like Lord Frostbottom, and cute ones like Marshmallow.",
   "seoKeywords": "snowman name generator, snowman names, funny snowman names, cute snowman names, snowman puns, names for a snowman, christmas snowman names",
   "seoTitle": "Snowman Name Generator: Funny Puns & Cute Names",
   "isPopular": false,
@@ -322,7 +322,29 @@
       "tagline": "A name for the snowman in your garden, from Snowcrates to Lord Frostbottom."
     },
     "intro": "A snowman only lasts a few days, so it deserves a good name while it's here. This **snowman name generator** has snowy puns like Snowcrates and Brrrnard, grand titles like Lord Frostbottom, and cute names like Marshmallow, with a description of its look if you want one.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "A short history of the snowman",
+        "content": "<p>People have been building snowmen for at least 600 years.</p><ul><li><strong>The oldest picture</strong> of a snowman is in the margin of a book of hours from around 1380, now in the Dutch national library in The Hague.</li><li><strong>The Miracle of 1511:</strong> during a bitterly cold winter in Brussels, people filled the city with snowmen, many of them rude jokes about the politics of the day.</li><li><strong>The usual look</strong> (coal for eyes and buttons, a carrot nose, twig arms) is just what was to hand in a garden or a coal shed.</li></ul>"
+      },
+      {
+        "heading": "Naming your snowman",
+        "content": "<p>The best snowman names are puns, and the worse the pun, the better.</p><ul><li><strong>Puns:</strong> Snowcrates, Brrrnard, Snowtorious.</li><li><strong>Grand titles:</strong> Lord Frostbottom, for the snowman that took all afternoon.</li><li><strong>Cute names:</strong> Marshmallow, Sprinkle, Twinkle, for the little ones.</li><li><strong>Add a look</strong> to describe it on a card or a photo caption: \"with a paper crown from a cracker\".</li></ul><p>For the reindeer to go with it, try the <a href=\"reindeer-name-generator.html\">Reindeer Name Generator</a>.</p><p>For the rest of the season, see all the <a href=\"../categories/christmas-names.html\">Christmas name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a funny name for a snowman?",
+        "answer": "A snow pun: Snowcrates, Brrrnard, Snowtorious or Winterbottom. Choose the puns style."
+      },
+      {
+        "question": "When was the first snowman built?",
+        "answer": "Nobody knows, but the oldest known picture of one is in a book of hours from around 1380."
+      },
+      {
+        "question": "What do you need to build a classic snowman?",
+        "answer": "Wet, packable snow, coal or stones for eyes and buttons, a carrot for the nose, two twigs for arms, and a hat and scarf if you can spare them."
+      }
+    ]
   }
 }

@@ -5,7 +5,7 @@
   "category": "christmas",
   "published": "2026-10-22",
   "noun": "Christmas Quiz Team Names",
-  "description": "Christmas quiz team names for the pub, the office party or the family quiz: carol puns like Away in a Ranking, and festive team names like the Mulled Brainboxes.",
+  "description": "Christmas quiz team names for the pub, office party or family quiz: carol puns like Away in a Ranking, and festive names like the Mulled Brainboxes.",
   "seoKeywords": "christmas quiz team names, christmas team names, funny christmas quiz team names, christmas pub quiz team names, christmas party team names, office christmas quiz names, festive team names",
   "seoTitle": "Christmas Quiz Team Names: Funny Festive Team Names",
   "isPopular": false,
@@ -159,7 +159,29 @@
       "tagline": "Team names for the Christmas pub quiz, the office party or the family quiz after dinner."
     },
     "intro": "The team name is the one round everyone can win, and at Christmas it should be a pun. This **Christmas quiz team name generator** has carol and cracker puns like Away in a Ranking and Quiztletoe, plus festive team names like the Mulled Brainboxes, for the pub, the office or the family quiz.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "What makes a good quiz team name",
+        "content": "<p>A Christmas quiz team name should be a pun the quizmaster has to read out loud.</p><ul><li><strong>Carol puns</strong> work best because everyone knows the tune: Away in a Ranking, Oh Come All Ye Quizzers.</li><li><strong>Cracker-joke puns</strong> earn a groan: Elf Assessment, Yule Never Guess.</li><li><strong>Keep it short</strong> enough to fit on the answer sheet.</li><li><strong>Office party?</strong> The festive style gives safe, friendly names like the Mulled Brainboxes.</li></ul>"
+      },
+      {
+        "heading": "Running a Christmas quiz",
+        "content": "<p>A Christmas quiz is a British pub and office tradition, and a good team name is the easiest point of the night.</p><ul><li><strong>Give a prize for the best team name</strong>: it gets everyone into the spirit before the first round.</li><li><strong>Christmas crackers</strong> were invented by the London sweet-maker Tom Smith in the 1840s, and their jokes make a good tie-breaker round.</li><li><strong>Teams of four to six</strong> work best for a pub or office quiz.</li></ul><p>To name the event itself, try the <a href=\"event-name-generator.html\">Event Name Generator</a>. For the gift swap, there's the <a href=\"../secret-santa-generator.html\">Secret Santa Generator</a>.</p><p>For the rest of the season, see all the <a href=\"../categories/christmas-names.html\">Christmas name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are some funny Christmas quiz team names?",
+        "answer": "Puns on carols and Christmas words: Away in a Ranking, Quiztletoe, Elf Assessment, Yule Never Guess. Choose the puns style for more."
+      },
+      {
+        "question": "What's a good team name for an office Christmas quiz?",
+        "answer": "Something friendly and safe for work, like the Mulled Brainboxes or the Merry Baubles. Choose the festive style."
+      },
+      {
+        "question": "Who invented Christmas crackers?",
+        "answer": "Tom Smith, a London confectioner, in the 1840s."
+      }
+    ]
   }
 }

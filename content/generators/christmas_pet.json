@@ -4,7 +4,7 @@
   "icon": "🐕",
   "category": "christmas",
   "published": "2026-10-22",
-  "description": "Christmas names for dogs, cats and new puppies and kittens: classic festive names like Holly and Noel, food names like Sprout and Mince Pie, and funny ones.",
+  "description": "Christmas names for dogs, cats, puppies and kittens: classic festive names like Holly and Noel, food names like Sprout and Mince Pie, and funny ones.",
   "seoKeywords": "christmas pet names, christmas dog names, christmas cat names, christmas puppy names, christmas kitten names, festive pet names, funny christmas dog names",
   "seoTitle": "Christmas Pet Names: Dog, Puppy, Cat & Kitten Names",
   "isPopular": false,
@@ -323,7 +323,29 @@
       "tagline": "Festive names for a dog, cat, puppy or kitten, from Holly to Mince Pie."
     },
     "intro": "A puppy or kitten that arrives at Christmas often ends up with a Christmas name, and the best ones still work in July. This **Christmas pet name generator** has classic festive names, Christmas dinner names and funny ones for dogs and cats.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Christmas names that last all year",
+        "content": "<p>A Christmas name should still sound right when you're calling the dog in from the garden in July.</p><ul><li><strong>Classic names</strong> like Holly, Noel, Ivy and Robin work all year round.</li><li><strong>Food names</strong> like Sprout, Mince Pie and Pudding are fun, and very British.</li><li><strong>Funny names</strong> like Bah Humbug or Pawliday are best for a pet with the personality to carry them.</li></ul>"
+      },
+      {
+        "heading": "A pet is for life",
+        "content": "<p>\"A dog is for life, not just for Christmas\" was coined in 1978 by Clarissa Baldwin of the National Canine Defence League, now Dogs Trust, and it still holds for cats and dogs alike.</p><ul><li><strong>Christmas is a busy time</strong> for a new pet to settle in. Many rescue centres pause adoptions over the holidays for that reason.</li><li><strong>Keep the namesakes out of reach:</strong> chocolate, grapes and raisins (so mince pies and Christmas pudding) and onions are all dangerous for dogs.</li></ul><p>For a black cat, try the <a href=\"black-cat-name-generator.html\">Black Cat Name Generator</a>.</p><p>For the rest of the season, see all the <a href=\"../categories/christmas-names.html\">Christmas name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good Christmas name for a dog?",
+        "answer": "Classic ones that work all year, like Holly, Noel or Robin, or food names like Sprout and Mince Pie. Choose Dog and a style."
+      },
+      {
+        "question": "What's a good Christmas name for a kitten?",
+        "answer": "Choose Cat for names like Ivy, Tinsel or Kitty Claus."
+      },
+      {
+        "question": "Who said a dog is for life, not just for Christmas?",
+        "answer": "Clarissa Baldwin of the National Canine Defence League, now Dogs Trust, in 1978."
+      }
+    ]
   }
 }

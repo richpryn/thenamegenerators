@@ -292,7 +292,29 @@
       "tagline": "Names for the elf who moves around your house every night in December."
     },
     "intro": "The first night your elf arrives, it needs a name, and the kids will have opinions. This **Elf on the Shelf name generator** has festive first names for boy and girl elves, full elf names like Pip Sugarplum, and funny ones like Agent Tinsel.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Where the Elf on the Shelf comes from",
+        "content": "<p>The Elf on the Shelf began as a picture book, <em>The Elf on the Shelf: A Christmas Tradition</em>, self-published in 2005 by Carol Aebersold and her daughter Chanda Bell.</p><ul><li><strong>The rules:</strong> the elf watches during the day, flies back to the North Pole each night to report to Santa, and turns up somewhere new each morning.</li><li><strong>No touching:</strong> in the book, an elf that's touched loses its magic, which is why children talk to it rather than pick it up.</li><li><strong>The name comes first:</strong> the book says an elf only gets its magic once the family names it, so the naming is the start of the whole thing.</li></ul>"
+      },
+      {
+        "heading": "Choosing your elf's name",
+        "content": "<p>A good elf name is easy for a small child to say, and sounds like it came from the North Pole.</p><ul><li><strong>First names</strong> like Pip, Noelle or Nutmeg are the easiest for young children.</li><li><strong>Full names</strong> like Juniper Tinselworth sound official, which helps when the elf leaves notes.</li><li><strong>Funny names</strong> like Agent Frost or Detective Buttons Snowflake suit an elf that gets up to mischief at night.</li><li><strong>Let the children choose</strong> from a few: generate a batch, read out your favourites, and let them vote.</li></ul><p>For a name made from your own, try the <a href=\"christmas-elf-name-generator.html\">Christmas Elf Name Generator</a>.</p><p>For the rest of the season, see all the <a href=\"../categories/christmas-names.html\">Christmas name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What should I name my Elf on the Shelf?",
+        "answer": "Something short and festive that your children can say easily, like Pip, Tinsel or Nutmeg. Choose Boy or Girl, generate a batch and let the children pick."
+      },
+      {
+        "question": "When does the Elf on the Shelf arrive?",
+        "answer": "Most families have the elf arrive at the start of December, or the day after Thanksgiving in the US, and leave on Christmas Eve."
+      },
+      {
+        "question": "Who wrote The Elf on the Shelf?",
+        "answer": "Carol Aebersold and her daughter Chanda Bell, who self-published the book in 2005."
+      }
+    ]
   }
 }
