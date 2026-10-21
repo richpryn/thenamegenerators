@@ -76,6 +76,7 @@
       }
     ],
     "generators": [
+      "horror_movie",
       "skeleton",
       "monster",
       "haunted_house",
