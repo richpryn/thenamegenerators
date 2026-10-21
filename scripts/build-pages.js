@@ -1449,7 +1449,7 @@ function fillMarkers(file, sections) {
     if (!re.test(html)) throw new Error(`${file} is missing <!-- BUILD:${name} --> ... <!-- /BUILD:${name} -->`);
     html = html.replace(re, (_, open, close) => `${open}\n${content}\n${close}`);
   }
-  fs.writeFileSync(filePath, html);
+  fs.writeFileSync(filePath, layout.stampAssets(html));
   console.log(`  ✅ Updated: ${file}`);
 }
 

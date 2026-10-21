@@ -307,7 +307,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css">
+    <link rel="stylesheet" href="../styles/site.css?v=125c753f">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -589,8 +589,8 @@
     </footer>
 
     <script type="application/json" id="generator-config">{"title":"Khajiit Name Generator","slug":"khajiit-name-generator","filters":{"gender":{"label":"Gender","options":["any","male","female"],"optionLabels":{"any":"Any"}},"format":{"label":"Name format","options":["any","prefix","name"],"optionLabels":{"any":"Any (a mix)","prefix":"With a prefix (Ri'dashirr)","name":"Name only"}}},"recipe":"switch","on":"format","cases":{"prefix":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[prefixes][afterPrefix]"}},"default":{"recipe":"template","template":"[prefixes][afterPrefix.{gender}]"}},"name":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"pick","from":"names"}},"default":{"recipe":"pick","from":"names.{gender}"}},"any":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[prefixes][afterPrefix]","[names]"]}},"default":{"recipe":"template","template":["[prefixes][afterPrefix.{gender}]","[names.{gender}]"]}}},"data":{"prefixes":["J'","M'","Ri'","Ra'","Ma'","Do'","Dro'","Ja'","S'"],"names":{"male":["Ahzirr","Bazhar","Dashirr","Ghazri","Hadjirr","Jhazbar","Kahjirr","Mahzir","Qadri","Rahjin","Tazharr","Urzan","Dazhar","Ahjirr","Kurzha","Zharim","Bhakar","Dravirr","Fahjar","Izhar","Jodhar","Khazim","Moshir","Nahrim","Shazhar","Varjirr","Zahjo","Ajhirr","Dhazir","Rozhar","Ezhar","Hazim","Kezhar","Mazhir","Sabjirr","Zhadirr","Tirzhar","Jurrim","Khirr","Bahzir","Dhirr","Jazhar","Khavirr","Rajhin","Zhurr"],"female":["Ahzira","Bahzra","Ezzira","Fahzi","Haddara","Inzirra","Jhanni","Khazra","Laddra","Mazhi","Nazhra","Rassa","Shazra","Tahri","Vashni","Zahri","Zirra","Aazhi","Bhirra","Dahvi","Jahdi","Razhi","Zhanna","Ahrissa","Dazhi","Kahzia","Naddhi","Qazhra","Sahzi","Tarrhi","Zazhira","Ishazi","Mahrra","Jazhi","Khalira","Zinni","Ahnazi","Shirri","Rahzi","Ahzhi","Dhazra","Ezhinni","Khajra","Rhazzi","Tazhira"]},"afterPrefix":{"male":["ahzirr","bazhar","dashirr","ghazri","hadjirr","jhazbar","kahjirr","mahzir","qadri","rahjin","tazharr","urzan","dazhar","ahjirr","kurzha","zharim","bhakar","dravirr","fahjar","izhar","jodhar","khazim","moshir","nahrim","shazhar","varjirr","zahjo","ajhirr","dhazir","rozhar","ezhar","hazim","kezhar","mazhir","sabjirr","zhadirr","tirzhar","jurrim","khirr","bahzir","dhirr","jazhar","khavirr","rajhin","zhurr"],"female":["ahzira","bahzra","ezzira","fahzi","haddara","inzirra","jhanni","khazra","laddra","mazhi","nazhra","rassa","shazra","tahri","vashni","zahri","zirra","aazhi","bhirra","dahvi","jahdi","razhi","zhanna","ahrissa","dazhi","kahzia","naddhi","qazhra","sahzi","tarrhi","zazhira","ishazi","mahrra","jazhi","khalira","zinni","ahnazi","shirri","rahzi","ahzhi","dhazra","ezhinni","khajra","rhazzi","tazhira"]}}}</script>
-    <script src="../lib/recipe-engine.js"></script>
-    <script src="../lib/page.js"></script>
-    <script src="../lib/outline.js"></script>
+    <script src="../lib/recipe-engine.js?v=d1b89e2e"></script>
+    <script src="../lib/page.js?v=68b15952"></script>
+    <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

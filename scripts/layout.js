@@ -11,6 +11,10 @@
 const Illustrations = require('../lib/illustrations.js');
 const ILLUSTRATION_MAP = require('../content/illustrations.json');
 
+const fs = require('fs');
+const path = require('path');
+const crypto = require('crypto');
+
 const SITE_NAME = 'The Name Generators';
 
 function escapeHtml(text) {
@@ -22,19 +26,43 @@ function escapeHtml(text) {
 
 // ---------- <head> assets ----------
 
+// Stylesheets and scripts get "?v=<hash of the file>" so browsers fetch the
+// new copy after every change instead of keeping a stale cached one.
+const ASSETS = ['styles/site.css', 'lib/page.js', 'lib/outline.js', 'lib/recipe-engine.js'];
+const versions = {};
+function assetVersion(file) {
+  if (!versions[file]) {
+    const body = fs.readFileSync(path.join(__dirname, '..', file));
+    versions[file] = crypto.createHash('sha1').update(body).digest('hex').slice(0, 8);
+  }
+  return versions[file];
+}
+function asset(prefix, file) {
+  return `${prefix}${file}?v=${assetVersion(file)}`;
+}
+
+/** Stamp the asset links in a hand-written page with their current versions. */
+function stampAssets(html) {
+  for (const file of ASSETS) {
+    const re = new RegExp(`((?:href|src)="(?:/|\\.\\./)?)${file.replace(/[.]/g, '\\.')}(?:\\?v=[0-9a-f]+)?"`, 'g');
+    html = html.replace(re, (_, start) => `${start}${file}?v=${assetVersion(file)}"`);
+  }
+  return html;
+}
+
 /** Stylesheet and the two fonts every page needs first, preloaded. */
 function headAssets(prefix) {
   return `<link rel="preload" href="${prefix}fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="${prefix}fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="${prefix}styles/site.css">`;
+    <link rel="stylesheet" href="${asset(prefix, 'styles/site.css')}">`;
 }
 
 /** Scripts at the end of <body>. Generator pages also load the recipe engine first. */
 function bodyScripts(prefix, { engine = false } = {}) {
   return [
-    engine ? `<script src="${prefix}lib/recipe-engine.js"></script>` : '',
-    `<script src="${prefix}lib/page.js"></script>`,
-    `<script src="${prefix}lib/outline.js"></script>`,
+    engine ? `<script src="${asset(prefix, 'lib/recipe-engine.js')}"></script>` : '',
+    `<script src="${asset(prefix, 'lib/page.js')}"></script>`,
+    `<script src="${asset(prefix, 'lib/outline.js')}"></script>`,
   ].filter(Boolean).join('\n    ');
 }
 
@@ -143,6 +171,6 @@ function stripEmoji(text) {
 }
 
 module.exports = {
-  SITE_NAME, escapeHtml, headAssets, bodyScripts, svgSprite, siteHeader, siteFooter,
+  SITE_NAME, escapeHtml, headAssets, stampAssets, bodyScripts, svgSprite, siteHeader, siteFooter,
   doodle, categoryMotif, generatorMotif, highlightFirstWord, stripEmoji, categoryLinks,
 };
