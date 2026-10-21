@@ -1,0 +1,242 @@
+{
+  "title": "Lich Name Generator",
+  "slug": "lich-name-generator",
+  "icon": "☠️",
+  "category": "dnd",
+  "published": "2026-10-22",
+  "description": "Lich names for D&D villains: ancient sorcerous names like Xarthuun, fallen archmages with a title, and liches named for the tomb where they keep their phylactery.",
+  "seoKeywords": "lich name generator, lich names, dnd lich names, undead wizard names, lich king names, dnd villain names, necromancer names",
+  "seoTitle": "Lich Name Generator: Undead Archmage Names for D&D",
+  "isPopular": false,
+  "filters": {
+    "style": {
+      "label": "Style",
+      "options": [
+        "any",
+        "ancient",
+        "fallen",
+        "tomb"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "ancient": "Ancient (Xarthuun)",
+        "fallen": "Fallen archmage (Archmage Valdris)",
+        "tomb": "Named for its tomb (the Lich of the Sunken Vault)"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "name",
+        "epithet"
+      ],
+      "optionLabels": {
+        "name": "Name only",
+        "epithet": "With a title (the Undying)"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "name": {
+      "recipe": "switch",
+      "on": "style",
+      "cases": {
+        "ancient": {
+          "recipe": "template",
+          "template": "[ancient.a][ancient.b]"
+        },
+        "fallen": {
+          "recipe": "template",
+          "template": "[fallen.titles] [fallen.names]"
+        },
+        "tomb": {
+          "recipe": "template",
+          "template": [
+            "The Lich of [tombs]",
+            "The [adj] Lich of [tombs]"
+          ]
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[ancient.a][ancient.b]",
+            "[fallen.titles] [fallen.names]",
+            "The Lich of [tombs]",
+            "The [adj] Lich of [tombs]"
+          ]
+        }
+      }
+    },
+    "epithet": {
+      "recipe": "switch",
+      "on": "style",
+      "cases": {
+        "ancient": {
+          "recipe": "template",
+          "template": [
+            "[ancient.a][ancient.b] [epithets]",
+            "[ancient.a][ancient.b], [epithets_titled]"
+          ]
+        },
+        "fallen": {
+          "recipe": "template",
+          "template": [
+            "[fallen.titles] [fallen.names] [epithets]",
+            "[fallen.titles] [fallen.names], [epithets_titled]"
+          ]
+        },
+        "tomb": {
+          "recipe": "template",
+          "template": [
+            "The Lich of [tombs]",
+            "The [adj] Lich of [tombs]"
+          ]
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[ancient.a][ancient.b] [epithets]",
+            "[ancient.a][ancient.b], [epithets_titled]",
+            "[fallen.titles] [fallen.names] [epithets]",
+            "[fallen.titles] [fallen.names], [epithets_titled]",
+            "The Lich of [tombs]",
+            "The [adj] Lich of [tombs]"
+          ]
+        }
+      }
+    }
+  },
+  "data": {
+    "ancient": {
+      "a": [
+        "Xar",
+        "Vor",
+        "Zhul",
+        "Mor",
+        "Kael",
+        "Thal",
+        "Ul",
+        "Sar",
+        "Nekh",
+        "Az",
+        "Ozr",
+        "Vex",
+        "Ith",
+        "Khor",
+        "Yr",
+        "Zael"
+      ],
+      "b": [
+        "thuun",
+        "rax",
+        "ekh",
+        "os",
+        "ith",
+        "eon",
+        "uul",
+        "arak",
+        "imar",
+        "orth",
+        "yss",
+        "an"
+      ]
+    },
+    "fallen": {
+      "titles": [
+        "Archmage",
+        "Grand Magister",
+        "High Sorcerer",
+        "Arch-Lich",
+        "Magus",
+        "Archon",
+        "Dread Sovereign",
+        "Pale Monarch",
+        "Deathless Magister",
+        "First Necromancer"
+      ],
+      "names": [
+        "Valdris",
+        "Morvane",
+        "Ezrael",
+        "Kaltheus",
+        "Ysmera",
+        "Orvane",
+        "Thessaly",
+        "Corvinus",
+        "Malgrave",
+        "Sepharine",
+        "Dravos",
+        "Isembard",
+        "Lucretia",
+        "Velkan",
+        "Nerissa",
+        "Zoltan",
+        "Aurelius",
+        "Mordaine",
+        "Selvara",
+        "Tiberion",
+        "Vashti",
+        "Caligo",
+        "Hespera",
+        "Ormund"
+      ]
+    },
+    "tombs": [
+      "the Sunken Vault",
+      "the Bone Spire",
+      "the Frozen Crypt",
+      "the Hollow Mountain",
+      "the Drowned Library",
+      "the Black Pyramid",
+      "the Silent Necropolis",
+      "the Iron Tomb",
+      "the Sealed Tower",
+      "the Ashen Barrow",
+      "the Last Catacomb",
+      "the Glass Coffin",
+      "the Starless Observatory",
+      "the Salt Mines"
+    ],
+    "adj": [
+      "Undying",
+      "Pale",
+      "Ancient",
+      "Crowned",
+      "Sleepless",
+      "Withered",
+      "Hollow-Eyed",
+      "Eternal",
+      "Forgotten",
+      "Robed",
+      "Grinning",
+      "Dread"
+    ],
+    "epithets": [
+      "the Undying",
+      "the Deathless",
+      "Who Cheated Death",
+      "the Eternal",
+      "of the Hidden Phylactery",
+      "the Hollow King",
+      "the Pale Archmage",
+      "the Bone-Crowned"
+    ],
+    "epithets_titled": [
+      "Lord of the Undead",
+      "Keeper of the Phylactery",
+      "Master of the Necropolis",
+      "Bane of the Living"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "☠️ Lich Name Generator",
+      "tagline": "Names for liches, the undead archmages who hide their souls in a phylactery."
+    },
+    "intro": "A lich is a wizard who has chosen undeath, binding their soul into a hidden phylactery so they can't truly die. In D&D they are among the most feared villains. This **lich name generator** makes ancient sorcerous names, fallen archmages with a title, and liches named for the tomb where they wait.",
+    "sections": [],
+    "faqs": []
+  }
+}

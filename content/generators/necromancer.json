@@ -1,0 +1,290 @@
+{
+  "title": "Necromancer Name Generator",
+  "slug": "necromancer-name-generator",
+  "icon": "💀",
+  "category": "dnd",
+  "published": "2026-10-22",
+  "description": "Necromancer names for D&D, stories and games: gothic scholars like Mortimer Graveson, grim sorcerous names like Vaelthas, and village hedge-necromancers.",
+  "seoKeywords": "necromancer name generator, necromancer names, dnd necromancer names, female necromancer names, dark wizard names, evil wizard names, death mage names",
+  "seoTitle": "Necromancer Name Generator: Dark Wizard Names for D&D",
+  "isPopular": false,
+  "filters": {
+    "style": {
+      "label": "Style",
+      "options": [
+        "any",
+        "scholar",
+        "grim",
+        "hedge"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "scholar": "Gothic scholar (Mortimer Graveson)",
+        "grim": "Grim (Vaelthas)",
+        "hedge": "Hedge necromancer (Old Mother Marrow)"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "name",
+        "epithet"
+      ],
+      "optionLabels": {
+        "name": "Name only",
+        "epithet": "With a title (the Bone-Caller)"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "name": {
+      "recipe": "switch",
+      "on": "style",
+      "cases": {
+        "scholar": {
+          "recipe": "template",
+          "template": "[scholar.first] [scholar.surnames]"
+        },
+        "grim": {
+          "recipe": "template",
+          "template": [
+            "[grim.a][grim.b]",
+            "[grim.a][grim.b] of [places]"
+          ]
+        },
+        "hedge": {
+          "recipe": "template",
+          "template": [
+            "[hedge.titles] [hedge.names]",
+            "[hedge.names] of [places]"
+          ]
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[scholar.first] [scholar.surnames]",
+            "[grim.a][grim.b]",
+            "[grim.a][grim.b] of [places]",
+            "[hedge.titles] [hedge.names]",
+            "[hedge.names] of [places]"
+          ]
+        }
+      }
+    },
+    "epithet": {
+      "recipe": "switch",
+      "on": "style",
+      "cases": {
+        "scholar": {
+          "recipe": "template",
+          "template": [
+            "[scholar.first] [scholar.surnames] [epithets]",
+            "[scholar.first] [scholar.surnames], [epithets_titled]"
+          ]
+        },
+        "grim": {
+          "recipe": "template",
+          "template": [
+            "[grim.a][grim.b] [epithets]",
+            "[grim.a][grim.b], [epithets_titled]",
+            "[grim.a][grim.b] of [places]"
+          ]
+        },
+        "hedge": {
+          "recipe": "template",
+          "template": [
+            "[hedge.titles] [hedge.names] [epithets]",
+            "[hedge.titles] [hedge.names], [epithets_titled]",
+            "[hedge.names] of [places]"
+          ]
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[scholar.first] [scholar.surnames] [epithets]",
+            "[scholar.first] [scholar.surnames], [epithets_titled]",
+            "[grim.a][grim.b] [epithets]",
+            "[grim.a][grim.b], [epithets_titled]",
+            "[grim.a][grim.b] of [places]",
+            "[hedge.titles] [hedge.names] [epithets]",
+            "[hedge.titles] [hedge.names], [epithets_titled]",
+            "[hedge.names] of [places]"
+          ]
+        }
+      }
+    }
+  },
+  "data": {
+    "scholar": {
+      "first": [
+        "Mortimer",
+        "Lazarus",
+        "Silas",
+        "Edgar",
+        "Ambrose",
+        "Cornelius",
+        "Ezekiel",
+        "Lucius",
+        "Malachi",
+        "Octavian",
+        "Septimus",
+        "Thaddeus",
+        "Valerian",
+        "Wendell",
+        "Augustin",
+        "Bartholomew",
+        "Desmond",
+        "Erasmus",
+        "Agatha",
+        "Beatrix",
+        "Cordelia",
+        "Drusilla",
+        "Evangeline",
+        "Hester",
+        "Isadora",
+        "Lenore",
+        "Mercy",
+        "Ophelia",
+        "Rosalind",
+        "Theodosia",
+        "Ursula",
+        "Wilhelmina",
+        "Morwenna",
+        "Sybil",
+        "Vesper",
+        "Grimelda"
+      ],
+      "surnames": [
+        "Graveson",
+        "Blackwood",
+        "Ashgrave",
+        "Coffin",
+        "Mortlake",
+        "Bonewright",
+        "Hollowell",
+        "Marrowby",
+        "Sepulchre",
+        "Shroudmore",
+        "Tombley",
+        "Vexmoor",
+        "Wormwood",
+        "Cryptwell",
+        "Duskwater",
+        "Gallowmere",
+        "Hearsefield",
+        "Knell",
+        "Mourning",
+        "Pallbury",
+        "Ravensworth",
+        "Sorrowdale",
+        "Vault"
+      ]
+    },
+    "grim": {
+      "a": [
+        "Vael",
+        "Mor",
+        "Xar",
+        "Kel",
+        "Thar",
+        "Nyx",
+        "Sar",
+        "Zul",
+        "Vor",
+        "Ash",
+        "Grav",
+        "Mal",
+        "Sep",
+        "Necr",
+        "Lich",
+        "Mort"
+      ],
+      "b": [
+        "thas",
+        "rath",
+        "gul",
+        "ion",
+        "ith",
+        "eus",
+        "ak",
+        "oth",
+        "ar",
+        "emon",
+        "iel",
+        "aros"
+      ]
+    },
+    "places": [
+      "the Black Tower",
+      "the Bone Library",
+      "the Silent Crypt",
+      "the Grey Moors",
+      "the Sunken Abbey",
+      "the Ossuary",
+      "the Raven Hill",
+      "the Drowned Village",
+      "the Forgotten Graveyard",
+      "the Ashen Vale",
+      "the Cold Keep",
+      "the Mire of Tombs"
+    ],
+    "hedge": {
+      "titles": [
+        "Old Mother",
+        "Old Father",
+        "Granny",
+        "Grandad",
+        "Auntie",
+        "Uncle",
+        "Old"
+      ],
+      "names": [
+        "Marrow",
+        "Bones",
+        "Hemlock",
+        "Crowfoot",
+        "Grimsby",
+        "Sexton",
+        "Mould",
+        "Cobweb",
+        "Tallow",
+        "Nightshade",
+        "Gravedust",
+        "Ashes",
+        "Wormsley",
+        "Barrow",
+        "Shroud",
+        "Rook",
+        "Thistle",
+        "Moth"
+      ]
+    },
+    "epithets": [
+      "the Bone-Caller",
+      "the Grave-Speaker",
+      "Who Raises the Dead",
+      "the Pale Scholar",
+      "of the Black Tower",
+      "the Corpse-Lord",
+      "the Death-Touched",
+      "the Whisperer to Skulls"
+    ],
+    "epithets_titled": [
+      "Master of the Dead",
+      "Keeper of the Ossuary",
+      "Lord of Bones",
+      "Reader of the Dead Book"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "💀 Necromancer Name Generator",
+      "tagline": "Names for necromancers, from gothic scholars to the old woman in the village who talks to bones."
+    },
+    "intro": "A necromancer is a wizard who studies death itself: in D&D, the School of Necromancy covers spells that drain life and raise the dead. This **necromancer name generator** makes gothic scholar names like Mortimer Graveson, grim sorcerous names and hedge necromancers who live a little too close to the churchyard.",
+    "sections": [],
+    "faqs": []
+  }
+}

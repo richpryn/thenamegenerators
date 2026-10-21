@@ -1,0 +1,730 @@
+{
+  "title": "Sorcerer Name Generator",
+  "slug": "sorcerer-name-generator",
+  "icon": "🔥",
+  "category": "dnd",
+  "published": "2026-10-22",
+  "description": "D&D sorcerer names for every origin: a name that fits the class and an epithet that fits the origin, for male and female characters.",
+  "seoKeywords": "sorcerer name generator, dnd sorcerer names, sorcerer names, 5e sorcerer names, sorcerer names 5e, female sorcerer names, draconic sorcerer names, dnd sorcerer name ideas",
+  "seoTitle": "D&D Sorcerer Name Generator: Names for Every Origin",
+  "isPopular": false,
+  "filters": {
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    },
+    "subclass": {
+      "label": "Origin",
+      "options": [
+        "any",
+        "draconic",
+        "wild",
+        "divine",
+        "shadow",
+        "storm",
+        "aberrant",
+        "clockwork"
+      ],
+      "optionLabels": {
+        "any": "Any origin",
+        "draconic": "Draconic Bloodline",
+        "wild": "Wild Magic",
+        "divine": "Divine Soul",
+        "shadow": "Shadow Magic",
+        "storm": "Storm Sorcery",
+        "aberrant": "Aberrant Mind",
+        "clockwork": "Clockwork Soul"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "full",
+        "name"
+      ],
+      "optionLabels": {
+        "full": "Name and epithet",
+        "name": "Name only"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "gender",
+  "cases": {
+    "any": {
+      "recipe": "switch",
+      "on": "subclass",
+      "cases": {
+        "draconic": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given] [epithets.draconic]",
+                "[given], [epithets_titled.draconic]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given]"
+            }
+          }
+        },
+        "wild": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given] [epithets.wild]",
+                "[given], [epithets_titled.wild]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given]"
+            }
+          }
+        },
+        "divine": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given] [epithets.divine]",
+                "[given], [epithets_titled.divine]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given]"
+            }
+          }
+        },
+        "shadow": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given] [epithets.shadow]",
+                "[given], [epithets_titled.shadow]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given]"
+            }
+          }
+        },
+        "storm": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given] [epithets.storm]",
+                "[given], [epithets_titled.storm]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given]"
+            }
+          }
+        },
+        "aberrant": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given] [epithets.aberrant]",
+                "[given], [epithets_titled.aberrant]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given]"
+            }
+          }
+        },
+        "clockwork": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given] [epithets.clockwork]",
+                "[given], [epithets_titled.clockwork]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given]"
+            }
+          }
+        },
+        "any": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given] [epithets.draconic]",
+                "[given], [epithets_titled.draconic]",
+                "[given] [epithets.wild]",
+                "[given], [epithets_titled.wild]",
+                "[given] [epithets.divine]",
+                "[given], [epithets_titled.divine]",
+                "[given] [epithets.shadow]",
+                "[given], [epithets_titled.shadow]",
+                "[given] [epithets.storm]",
+                "[given], [epithets_titled.storm]",
+                "[given] [epithets.aberrant]",
+                "[given], [epithets_titled.aberrant]",
+                "[given] [epithets.clockwork]",
+                "[given], [epithets_titled.clockwork]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given]"
+            }
+          }
+        }
+      }
+    },
+    "male": {
+      "recipe": "switch",
+      "on": "subclass",
+      "cases": {
+        "draconic": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given.male] [epithets.draconic]",
+                "[given.male], [epithets_titled.draconic]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given.male]"
+            }
+          }
+        },
+        "wild": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given.male] [epithets.wild]",
+                "[given.male], [epithets_titled.wild]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given.male]"
+            }
+          }
+        },
+        "divine": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given.male] [epithets.divine]",
+                "[given.male], [epithets_titled.divine]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given.male]"
+            }
+          }
+        },
+        "shadow": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given.male] [epithets.shadow]",
+                "[given.male], [epithets_titled.shadow]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given.male]"
+            }
+          }
+        },
+        "storm": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given.male] [epithets.storm]",
+                "[given.male], [epithets_titled.storm]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given.male]"
+            }
+          }
+        },
+        "aberrant": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given.male] [epithets.aberrant]",
+                "[given.male], [epithets_titled.aberrant]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given.male]"
+            }
+          }
+        },
+        "clockwork": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given.male] [epithets.clockwork]",
+                "[given.male], [epithets_titled.clockwork]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given.male]"
+            }
+          }
+        },
+        "any": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given.male] [epithets.draconic]",
+                "[given.male], [epithets_titled.draconic]",
+                "[given.male] [epithets.wild]",
+                "[given.male], [epithets_titled.wild]",
+                "[given.male] [epithets.divine]",
+                "[given.male], [epithets_titled.divine]",
+                "[given.male] [epithets.shadow]",
+                "[given.male], [epithets_titled.shadow]",
+                "[given.male] [epithets.storm]",
+                "[given.male], [epithets_titled.storm]",
+                "[given.male] [epithets.aberrant]",
+                "[given.male], [epithets_titled.aberrant]",
+                "[given.male] [epithets.clockwork]",
+                "[given.male], [epithets_titled.clockwork]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given.male]"
+            }
+          }
+        }
+      }
+    },
+    "female": {
+      "recipe": "switch",
+      "on": "subclass",
+      "cases": {
+        "draconic": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given.female] [epithets.draconic]",
+                "[given.female], [epithets_titled.draconic]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given.female]"
+            }
+          }
+        },
+        "wild": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given.female] [epithets.wild]",
+                "[given.female], [epithets_titled.wild]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given.female]"
+            }
+          }
+        },
+        "divine": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given.female] [epithets.divine]",
+                "[given.female], [epithets_titled.divine]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given.female]"
+            }
+          }
+        },
+        "shadow": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given.female] [epithets.shadow]",
+                "[given.female], [epithets_titled.shadow]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given.female]"
+            }
+          }
+        },
+        "storm": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given.female] [epithets.storm]",
+                "[given.female], [epithets_titled.storm]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given.female]"
+            }
+          }
+        },
+        "aberrant": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given.female] [epithets.aberrant]",
+                "[given.female], [epithets_titled.aberrant]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given.female]"
+            }
+          }
+        },
+        "clockwork": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given.female] [epithets.clockwork]",
+                "[given.female], [epithets_titled.clockwork]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given.female]"
+            }
+          }
+        },
+        "any": {
+          "recipe": "switch",
+          "on": "format",
+          "cases": {
+            "full": {
+              "recipe": "template",
+              "template": [
+                "[given.female] [epithets.draconic]",
+                "[given.female], [epithets_titled.draconic]",
+                "[given.female] [epithets.wild]",
+                "[given.female], [epithets_titled.wild]",
+                "[given.female] [epithets.divine]",
+                "[given.female], [epithets_titled.divine]",
+                "[given.female] [epithets.shadow]",
+                "[given.female], [epithets_titled.shadow]",
+                "[given.female] [epithets.storm]",
+                "[given.female], [epithets_titled.storm]",
+                "[given.female] [epithets.aberrant]",
+                "[given.female], [epithets_titled.aberrant]",
+                "[given.female] [epithets.clockwork]",
+                "[given.female], [epithets_titled.clockwork]"
+              ]
+            },
+            "name": {
+              "recipe": "template",
+              "template": "[given.female]"
+            }
+          }
+        }
+      }
+    }
+  },
+  "data": {
+    "given": {
+      "male": [
+        "Aurelian",
+        "Caelum",
+        "Dorian",
+        "Faelan",
+        "Ilarion",
+        "Kaelen",
+        "Lucan",
+        "Malachi",
+        "Nero",
+        "Orion",
+        "Pyrrhus",
+        "Rhydian",
+        "Sorin",
+        "Thane",
+        "Vael",
+        "Xander",
+        "Zephyr",
+        "Ash",
+        "Blaze",
+        "Cassian",
+        "Draven",
+        "Emrys",
+        "Ignatius",
+        "Kieran",
+        "Lysander",
+        "Magnus",
+        "Nyx",
+        "Osric",
+        "Phineas",
+        "Ravel",
+        "Severin",
+        "Tycho",
+        "Ulric",
+        "Vesper",
+        "Wystan",
+        "Zarek"
+      ],
+      "female": [
+        "Aurora",
+        "Calista",
+        "Drusilla",
+        "Elara",
+        "Ember",
+        "Freya",
+        "Ignis",
+        "Isadora",
+        "Kaia",
+        "Lilith",
+        "Morgana",
+        "Nyssa",
+        "Oriana",
+        "Pyra",
+        "Rhea",
+        "Seraphine",
+        "Thalia",
+        "Vespera",
+        "Xanthe",
+        "Zinnia",
+        "Astra",
+        "Blaze",
+        "Dahlia",
+        "Eris",
+        "Fiamma",
+        "Galatea",
+        "Hesper",
+        "Ione",
+        "Juno",
+        "Lyra",
+        "Mira",
+        "Nova",
+        "Raven",
+        "Selene",
+        "Tempest",
+        "Vela",
+        "Zora"
+      ]
+    },
+    "epithets": {
+      "draconic": [
+        "the Dragon-Blooded",
+        "Who Breathes Fire",
+        "the Scale-Skinned",
+        "of the Wyrm's Line",
+        "the Ember-Eyed",
+        "the Clawed Spell",
+        "the Gold-Scaled",
+        "the Drake-Born",
+        "the Fire-Tongued",
+        "the Wyrmkin"
+      ],
+      "wild": [
+        "the Unpredictable",
+        "Who Turns Into a Potted Plant",
+        "the Chaos-Touched",
+        "of the Wild Surge",
+        "the Spark",
+        "the Glitching",
+        "the Unstable",
+        "the Surging",
+        "the Weird",
+        "the Lucky",
+        "the Probably Fine"
+      ],
+      "divine": [
+        "the Heaven-Touched",
+        "Who Was Born Blessed",
+        "the Angel-Blooded",
+        "of the Celestial Line",
+        "the Radiant Soul",
+        "the Chosen",
+        "the Haloed",
+        "the Divine Spark",
+        "the Golden-Souled",
+        "the Seraphic",
+        "the Blessed"
+      ],
+      "shadow": [
+        "the Shadow-Born",
+        "Who Casts No Shadow",
+        "the Darkling",
+        "of the Shadowfell",
+        "the Hound-Keeper",
+        "the Night-Blooded",
+        "the Umbral",
+        "the Pale",
+        "the Gloom-Caster",
+        "the Lightless",
+        "the Eclipse"
+      ],
+      "storm": [
+        "the Storm-Born",
+        "Who Rides the Lightning",
+        "the Thunder-Child",
+        "of the Raging Sea",
+        "the Gale-Caller",
+        "the Tempest",
+        "the Wind-Walker",
+        "the Squall",
+        "the Lightning-Eyed",
+        "the Hurricane",
+        "the Rain-Bringer"
+      ],
+      "aberrant": [
+        "the Mind-Touched",
+        "Who Hears Whispers",
+        "the Far-Thinker",
+        "of the Strange Stars",
+        "the Tentacled",
+        "the Psychic",
+        "the Warped",
+        "the Voice Within",
+        "the Unsettling",
+        "the Many-Minded",
+        "the Dreamer Beyond"
+      ],
+      "clockwork": [
+        "the Clockwork",
+        "Who Keeps Perfect Time",
+        "the Gear-Hearted",
+        "of the Perfect Order",
+        "the Balanced",
+        "the Mechanical",
+        "the Ticking",
+        "the Precise",
+        "the Cog-Touched",
+        "the Measured",
+        "the Orderly"
+      ]
+    },
+    "epithets_titled": {
+      "draconic": [
+        "Heir of the Dragon",
+        "Child of the Wyrm"
+      ],
+      "wild": [
+        "Child of Chaos"
+      ],
+      "divine": [
+        "Child of the Gods"
+      ],
+      "shadow": [
+        "Child of the Dark"
+      ],
+      "storm": [
+        "Child of the Storm"
+      ],
+      "aberrant": [
+        "Child of the Void"
+      ],
+      "clockwork": [
+        "Child of Order"
+      ]
+    }
+  },
+  "article": {
+    "hero": {
+      "title": "🔥 Sorcerer Name Generator",
+      "tagline": "Names for sorcerers of every Origin, from dragon-blooded heirs to Wild Magic chaos."
+    },
+    "intro": "A sorcerer's magic is in their blood, and their name often hints at where it came from: a dragon, a storm, the heavens or something stranger. This **sorcerer name generator** gives D&D 5e sorcerers a first name with a touch of the arcane and an epithet for their Sorcerous Origin, from the Draconic Bloodline to Wild Magic.",
+    "sections": [],
+    "faqs": []
+  }
+}
