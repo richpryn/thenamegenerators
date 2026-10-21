@@ -15,14 +15,16 @@
         "legend",
         "place",
         "spirit",
-        "friendly"
+        "friendly",
+        "banshee"
       ],
       "optionLabels": {
         "any": "Any (a mix)",
         "legend": "Legend (the Grey Lady)",
         "place": "Haunting a place (the Drummer of the Old Mill)",
         "spirit": "Restless spirit (Edith the Weeping)",
-        "friendly": "Friendly ghost (Wisp)"
+        "friendly": "Friendly ghost (Wisp)",
+        "banshee": "Banshee (Úna of the Keening)"
       }
     }
   },
@@ -51,7 +53,15 @@
         "The [colours] [figures]",
         "The [figures] of [places]",
         "[first] [adj]",
-        "[friendly]"
+        "[friendly]",
+        "[banshee.names] [banshee.epithets]"
+      ]
+    },
+    "banshee": {
+      "recipe": "template",
+      "template": [
+        "[banshee.names] [banshee.epithets]",
+        "[banshee.names], who keens for [banshee.families]"
       ]
     }
   },
@@ -262,7 +272,63 @@
       "Gusty",
       "Pebble",
       "Fog"
-    ]
+    ],
+    "banshee": {
+      "names": [
+        "Bríd",
+        "Siobhán",
+        "Niamh",
+        "Orla",
+        "Róisín",
+        "Úna",
+        "Éabha",
+        "Gráinne",
+        "Méabh",
+        "Nuala",
+        "Caoimhe",
+        "Eithne",
+        "Fionnuala",
+        "Muireann",
+        "Sorcha",
+        "Treasa",
+        "Clodagh",
+        "Aisling",
+        "Ailbhe",
+        "Bláthnaid",
+        "Damhnait",
+        "Mairéad",
+        "Nóra",
+        "Sadhbh",
+        "Íde",
+        "Líadan",
+        "Órfhlaith",
+        "Deirdre"
+      ],
+      "epithets": [
+        "of the Keening",
+        "the Washer at the Ford",
+        "who combs her hair by the river",
+        "who sings at the window",
+        "of the Fairy Mound",
+        "the Silver-Combed",
+        "who cries before the dawn",
+        "of the Three Cries",
+        "the Mourning Woman",
+        "of the Lonely Road",
+        "who walks by the river",
+        "the Grey Cloaked"
+      ],
+      "families": [
+        "the O'Neills",
+        "the O'Briens",
+        "the O'Connors",
+        "the O'Gradys",
+        "the Kavanaghs",
+        "the old house on the hill",
+        "the family at the mill",
+        "the fishermen of the bay"
+      ]
+    }
   },
   "article": {
     "hero": {
