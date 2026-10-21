@@ -97,7 +97,8 @@
       "event",
       "spell",
       "vampire_clan",
-      "werewolf_pack"
+      "werewolf_pack",
+      "gargoyle"
     ]
   },
   {
@@ -282,7 +283,16 @@
       "poison",
       "assassin",
       "swamp_witch",
-      "dnd_human"
+      "dnd_human",
+      "troll",
+      "ogre",
+      "giant",
+      "golem",
+      "minotaur",
+      "centaur",
+      "griffin",
+      "hydra",
+      "wyvern"
     ]
   },
   {
@@ -368,8 +378,14 @@
     "seoTitle": "Mythical Creature Name Generators: Names for Beasts",
     "description": "Names for mythical creatures from legend and folklore: phoenixes, unicorns, griffins, mermaids, pegasi and more.",
     "seoDescription": "Mythical creature name generators: phoenix, unicorn, griffin, mermaid and pegasus names, from ancient legend to cute pet names. Free to use.",
-    "intro": "<p>These mythical creature name generators cover the beasts of legend, from Greek myth to the stories still told today. A <a href=\"../posts/phoenix-name-generator.html\">phoenix</a> wants a name that sounds like fire and dawn, a <a href=\"../posts/griffin-name-generator.html\">griffin</a> something proud enough to guard a mountain of gold, and a <a href=\"../posts/unicorn-name-generator.html\">unicorn</a> anything from Moonwhisper to Sir Prance-a-Lot.</p><p>Under the sea there are <a href=\"../posts/mermaid-name-generator.html\">mermaid and merman names</a>, and in the sky <a href=\"../posts/pegasus-name-generator.html\">winged horses</a>. For the bigger beasts, try the <a href=\"../posts/dragon-name-generator.html\">Dragon</a> and <a href=\"../posts/monster-name-generator.html\">Monster</a> name generators. From Greek myth there are <a href=\"../posts/centaur-name-generator.html\">centaurs</a>, <a href=\"../posts/minotaur-name-generator.html\">minotaurs</a> and the many-headed <a href=\"../posts/hydra-name-generator.html\">hydra</a>, plus <a href=\"../posts/wyvern-name-generator.html\">wyverns</a> from heraldry and <a href=\"../posts/hellhound-name-generator.html\">hellhounds</a>, with a name for each of three heads.</p>",
+    "intro": "<p>These mythical creature name generators cover the beasts of legend, from Greek myth to the stories still told today. A <a href=\"../posts/phoenix-name-generator.html\">phoenix</a> wants a name that sounds like fire and dawn, a <a href=\"../posts/griffin-name-generator.html\">griffin</a> something proud enough to guard a mountain of gold, and a <a href=\"../posts/unicorn-name-generator.html\">unicorn</a> anything from Moonwhisper to Sir Prance-a-Lot.</p><p>Under the sea there are <a href=\"../posts/mermaid-name-generator.html\">mermaid and merman names</a>, and in the sky <a href=\"../posts/pegasus-name-generator.html\">winged horses</a>. For the bigger beasts, try the <a href=\"../posts/dragon-name-generator.html\">Dragon</a> and <a href=\"../posts/monster-name-generator.html\">Monster</a> name generators. From Greek myth there are <a href=\"../posts/centaur-name-generator.html\">centaurs</a>, <a href=\"../posts/minotaur-name-generator.html\">minotaurs</a> and the many-headed <a href=\"../posts/hydra-name-generator.html\">hydra</a>, plus <a href=\"../posts/wyvern-name-generator.html\">wyverns</a> from heraldry and <a href=\"../posts/hellhound-name-generator.html\">hellhounds</a>, with a name for each of three heads.</p><p>From folklore and fantasy games come <a href=\"../posts/troll-name-generator.html\">trolls</a>, <a href=\"../posts/ogre-name-generator.html\">ogres</a> and <a href=\"../posts/giant-name-generator.html\">giants</a> of every kind, the <a href=\"../posts/yeti-name-generator.html\">yeti</a> of the high Himalayas, cathedral <a href=\"../posts/gargoyle-name-generator.html\">gargoyles</a> and <a href=\"../posts/golem-name-generator.html\">golems</a> of clay, stone and iron.</p>",
     "generators": [
+      "golem",
+      "gargoyle",
+      "yeti",
+      "giant",
+      "ogre",
+      "troll",
       "hellhound",
       "wyvern",
       "hydra",
