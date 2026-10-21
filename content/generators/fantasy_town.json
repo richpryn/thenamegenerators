@@ -2802,7 +2802,18 @@
       "North",
       "South",
       "Long",
-      "High"
+      "High",
+      "Much",
+      "Middle",
+      "Over",
+      "Bishop's",
+      "King's",
+      "Abbots",
+      "Steeple",
+      "Church",
+      "Castle",
+      "New",
+      "Far"
     ],
     "rivers": [
       "Wend",
@@ -2814,7 +2825,21 @@
       "Idle",
       "Arle",
       "Ouse",
-      "Brent"
+      "Brent",
+      "Rill",
+      "Wyre",
+      "Leven",
+      "Cole",
+      "Swale",
+      "Dove",
+      "Teme",
+      "Lyde",
+      "Cray",
+      "Otter",
+      "Glaze",
+      "Brue",
+      "Coln",
+      "Windrush"
     ]
   },
   "article": {

@@ -680,14 +680,39 @@
         "High Priestess",
         "Priestess",
         "First Daughter",
-        "Mistress"
+        "Mistress",
+        "Second Daughter",
+        "Third Daughter",
+        "Spider Priestess",
+        "Yochlol-Caller",
+        "Dowager",
+        "War Priestess",
+        "Battle Mistress",
+        "Huntress",
+        "Lady",
+        "Web-Weaver",
+        "Blade Mistress",
+        "Envoy",
+        "Spymistress"
       ],
       "male": [
         "Weapons Master",
         "Archmage",
         "Patron",
         "Second Son",
-        "Captain"
+        "Captain",
+        "First Son",
+        "Elder Boy",
+        "House Wizard",
+        "Spymaster",
+        "Lizard Rider",
+        "Scout Captain",
+        "Poisoner",
+        "Assassin",
+        "Steward",
+        "Envoy",
+        "Duellist",
+        "Sentry"
       ]
     }
   },

@@ -372,7 +372,21 @@
       "Stand and hold!",
       "Remember the ford!",
       "Out of the mist!",
-      "Blood and stone!"
+      "Blood and stone!",
+      "To the cairn!",
+      "For the old ones!",
+      "The burn runs red!",
+      "Kin and crown!",
+      "Raise the banner!",
+      "Hold the glen!",
+      "Over the fell!",
+      "No step back!",
+      "The stag rises!",
+      "For the loch!",
+      "Into the storm!",
+      "Shields together!",
+      "Sound the horn!",
+      "Never the river!"
     ],
     "tribe": {
       "adjective": [
@@ -387,7 +401,19 @@
         "Silent",
         "Painted",
         "Burning",
-        "Lone"
+        "Lone",
+        "Hungry",
+        "Sleeping",
+        "Scarred",
+        "Wandering",
+        "Golden",
+        "Crooked",
+        "Hidden",
+        "Watching",
+        "Iron",
+        "Ash",
+        "Blue",
+        "Wild"
       ],
       "noun": [
         "Wolf",
@@ -401,7 +427,19 @@
         "Hare",
         "Otter",
         "Lynx",
-        "Horse"
+        "Horse",
+        "Eagle",
+        "Badger",
+        "Owl",
+        "Bison",
+        "Crow",
+        "Salmon",
+        "Heron",
+        "Wildcat",
+        "Moose",
+        "Serpent",
+        "Bull",
+        "Ram"
       ]
     },
     "gaming": [

@@ -157,7 +157,20 @@
         "Wolfsong",
         "Hearthguard",
         "Longnight",
-        "Coldmercy"
+        "Coldmercy",
+        "Greytooth",
+        "Wolfwinter",
+        "Iceheart",
+        "Northwatch",
+        "Snowfall",
+        "Packbond",
+        "Weirwood",
+        "Frostfang",
+        "Howl",
+        "Wildling's Bane",
+        "Barrowblade",
+        "Moonhowl",
+        "Kingsward"
       ],
       "lion": [
         "Goldroar",
@@ -165,7 +178,21 @@
         "Pridefall",
         "Sunmane",
         "Kingsransom",
-        "Gilded Claw"
+        "Gilded Claw",
+        "Goldenpride",
+        "Lionheart's Due",
+        "Crownbreaker",
+        "Sunsteel",
+        "Lion's Share",
+        "Redmane",
+        "Pridestrike",
+        "Goldtongue",
+        "Rockfang",
+        "Lionsbane",
+        "Pride's Edge",
+        "The Debt",
+        "Roarsteel",
+        "Kingsgold"
       ],
       "kraken": [
         "Saltwidow",
@@ -173,7 +200,20 @@
         "Tidebreaker",
         "Reaver",
         "Deepwater",
-        "Ironprice"
+        "Ironprice",
+        "Saltsteel",
+        "Krakenarm",
+        "Seawrath",
+        "Drowngod's Gift",
+        "Wavecleaver",
+        "Ironfleet",
+        "Saltbane",
+        "Stormreaver",
+        "Undertow",
+        "Brinefang",
+        "Ironborn",
+        "Reaver's Due",
+        "Seastone"
       ],
       "dragon": [
         "Ashsister",
@@ -181,7 +221,20 @@
         "Smoke",
         "Firewidow",
         "Ashfall",
-        "Cinderqueen"
+        "Cinderqueen",
+        "Dragonfang",
+        "Ember",
+        "Flamebrother",
+        "Sunfire",
+        "Pyrefall",
+        "Scorchmark",
+        "Wyrmflame",
+        "Blackflame",
+        "Cinderfall",
+        "Dragonsong",
+        "Firstflame",
+        "Ashcrown",
+        "Smokesister"
       ],
       "stag": [
         "Stormcrown",
@@ -189,7 +242,21 @@
         "Thunderhart",
         "Hornbreaker",
         "Greenwood",
-        "Stormsong"
+        "Stormsong",
+        "Thunderstrike",
+        "Stagsbane",
+        "Rainward",
+        "Stormfury",
+        "Hartsbane",
+        "Forest King",
+        "Squallbreaker",
+        "Antlercrown",
+        "Stormwatch",
+        "Rainsong",
+        "Greenhart",
+        "Thundercrown",
+        "Hornsteel",
+        "Galeborn"
       ],
       "rose": [
         "Summersong",
@@ -197,7 +264,21 @@
         "Goldenbloom",
         "Highmercy",
         "Rosewater",
-        "Briarstrike"
+        "Briarstrike",
+        "Thornfall",
+        "Summerblade",
+        "Rosebane",
+        "Gardenward",
+        "Bloomsteel",
+        "Highthorn",
+        "Gilded Rose",
+        "Harvestblade",
+        "Thorncrown",
+        "Fairmercy",
+        "Summerlight",
+        "Petalfall",
+        "Rosesteel",
+        "Greengarden"
       ]
     },
     "adj": {
@@ -207,7 +288,13 @@
         "Winter",
         "Cold",
         "Long",
-        "Pale"
+        "Pale",
+        "Northern",
+        "Frozen",
+        "Silent",
+        "Old",
+        "Wild",
+        "Iron"
       ],
       "lion": [
         "Golden",
@@ -215,7 +302,13 @@
         "Proud",
         "Bright",
         "Gilded",
-        "Roaring"
+        "Roaring",
+        "Crimson",
+        "Royal",
+        "Rich",
+        "Hungry",
+        "Lordly",
+        "Sunlit"
       ],
       "kraken": [
         "Salt",
@@ -223,7 +316,13 @@
         "Black",
         "Iron",
         "Grey",
-        "Hard"
+        "Hard",
+        "Bitter",
+        "Cold",
+        "Wet",
+        "Wild",
+        "Dark",
+        "Reaving"
       ],
       "dragon": [
         "Dark",
@@ -231,7 +330,13 @@
         "Ashen",
         "Burning",
         "Black",
-        "Smoking"
+        "Smoking",
+        "Scorched",
+        "Fiery",
+        "Blood",
+        "Old",
+        "Valyrian",
+        "Molten"
       ],
       "stag": [
         "Storm",
@@ -239,7 +344,13 @@
         "Wild",
         "Green",
         "Black",
-        "Hunting"
+        "Hunting",
+        "Raging",
+        "Rainy",
+        "Forest",
+        "Bold",
+        "Proud",
+        "Roaring"
       ],
       "rose": [
         "Summer",
@@ -247,7 +358,13 @@
         "Green",
         "Thorned",
         "Sweet",
-        "Fair"
+        "Fair",
+        "Gentle",
+        "Blooming",
+        "Bright",
+        "Rich",
+        "Gilded",
+        "Fragrant"
       ]
     },
     "noun": {
@@ -257,7 +374,13 @@
         "Mercy",
         "Vigil",
         "Promise",
-        "Silence"
+        "Silence",
+        "Winter",
+        "Wolf",
+        "Snow",
+        "Oath",
+        "Watch",
+        "Grief"
       ],
       "lion": [
         "Mane",
@@ -265,7 +388,13 @@
         "Pride",
         "Claw",
         "Crown",
-        "Due"
+        "Due",
+        "Roar",
+        "Gold",
+        "Lion",
+        "Ransom",
+        "Sun",
+        "Glory"
       ],
       "kraken": [
         "Tide",
@@ -273,7 +402,13 @@
         "Price",
         "Wake",
         "Squall",
-        "Song"
+        "Song",
+        "Kraken",
+        "Salt",
+        "Iron",
+        "Sea",
+        "Wave",
+        "Rock"
       ],
       "dragon": [
         "Sister",
@@ -281,7 +416,13 @@
         "Flame",
         "Pyre",
         "Brother",
-        "Scale"
+        "Scale",
+        "Fire",
+        "Smoke",
+        "Wyrm",
+        "Ash",
+        "Blood",
+        "Queen"
       ],
       "stag": [
         "Antler",
@@ -289,7 +430,13 @@
         "Fury",
         "Crown",
         "Horn",
-        "Chase"
+        "Chase",
+        "Storm",
+        "Thunder",
+        "Stag",
+        "Rain",
+        "Wind",
+        "Wrath"
       ],
       "rose": [
         "Rose",
@@ -297,7 +444,13 @@
         "Harvest",
         "Garden",
         "Bloom",
-        "Grace"
+        "Grace",
+        "Summer",
+        "Petal",
+        "Briar",
+        "Bough",
+        "Mercy",
+        "Gold"
       ]
     },
     "ladies": [
@@ -310,7 +463,17 @@
       "Lady Silence",
       "Lady Vengeance",
       "Lady Regret",
-      "Lady Ruin"
+      "Lady Ruin",
+      "Lady Lament",
+      "Lady Twilight",
+      "Lady Constant",
+      "Lady Widow",
+      "Lady Ember",
+      "Lady Salt",
+      "Lady Thorn",
+      "Lady Hope",
+      "Lady Frost",
+      "Lady Requiem"
     ],
     "makers": [
       "Widow-Maker",
@@ -320,7 +483,15 @@
       "Oathbreaker",
       "Heirtaker",
       "Ghost-Maker",
-      "Debt-Settler"
+      "Debt-Settler",
+      "Grave-Digger",
+      "Crown-Taker",
+      "Truce-Breaker",
+      "Feud-Ender",
+      "Tear-Maker",
+      "Bastard-Maker",
+      "Head-Taker",
+      "Chain-Breaker"
     ],
     "blades": [
       "Valyrian steel bastard sword",
@@ -328,7 +499,13 @@
       "Valyrian steel longsword",
       "castle-forged longsword",
       "Valyrian steel arakh",
-      "castle-forged greatsword"
+      "castle-forged greatsword",
+      "Valyrian steel dagger",
+      "castle-forged bastard sword",
+      "Valyrian steel shortsword",
+      "castle-forged arming sword",
+      "Valyrian steel two-handed sword",
+      "Braavosi-style sword"
     ]
   },
   "article": {

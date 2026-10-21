@@ -962,110 +962,220 @@
         "Systems",
         "Works",
         "Digital",
-        "Cloud"
+        "Cloud",
+        "Tech",
+        "Robotics",
+        "Analytics",
+        "Software",
+        "Devices",
+        "Network",
+        "Studio"
       ],
       "luxury_premium": [
         "& Co.",
         "House",
         "Collection",
-        "Atelier"
+        "Atelier",
+        "Maison",
+        "Reserve",
+        "Couture",
+        "Jewellers",
+        "Editions",
+        "Salon"
       ],
       "nature_organic": [
         "Botanicals",
         "Naturals",
         "Organics",
-        "Apothecary"
+        "Apothecary",
+        "Farm",
+        "Grove",
+        "Skincare",
+        "Herbals",
+        "Garden",
+        "Remedies"
       ],
       "bold_athletic": [
         "Athletics",
         "Sport",
         "Performance",
-        "Training"
+        "Training",
+        "Gear",
+        "Fitness",
+        "Supply",
+        "Club",
+        "Running",
+        "Pro"
       ],
       "modern_minimalist": [
         "Studio",
         "Goods",
         "Supply",
-        "Objects"
+        "Objects",
+        "Design",
+        "Collective",
+        "Home",
+        "Edit",
+        "Form",
+        "Lab"
       ],
       "food_beverage": [
         "Kitchen",
         "Pantry",
         "Bakehouse",
         "Coffee",
-        "Provisions"
+        "Provisions",
+        "Foods",
+        "Brewing Co.",
+        "Dairy",
+        "Creamery",
+        "Larder",
+        "Mill",
+        "Deli"
       ],
       "creative_artistic": [
         "Studio",
         "Press",
         "Creative",
-        "Workshop"
+        "Workshop",
+        "Design",
+        "Gallery",
+        "Prints",
+        "Editions",
+        "Paper Co.",
+        "Ink"
       ],
       "urban_street": [
         "Supply",
         "Collective",
         "Clothing",
-        "Goods"
+        "Goods",
+        "Apparel",
+        "Wear",
+        "Club",
+        "Skate Co.",
+        "Records",
+        "Threads"
       ],
       "ocean_maritime": [
         "Surf",
         "Swim",
         "Outfitters",
-        "Marine"
+        "Marine",
+        "Sailing Co.",
+        "Boatworks",
+        "Coastal",
+        "Seafood",
+        "Diving",
+        "Tide Co."
       ],
       "desert_earth": [
         "Outfitters",
         "Trading Co.",
         "Leather",
-        "Goods"
+        "Goods",
+        "Pottery",
+        "Supply",
+        "Clay Co.",
+        "Ceramics",
+        "Mercantile",
+        "Expeditions"
       ],
       "space_cosmic": [
         "Labs",
         "Optics",
         "Games",
-        "Systems"
+        "Systems",
+        "Aerospace",
+        "Instruments",
+        "Audio",
+        "Robotics",
+        "Media",
+        "Observatory"
       ],
       "heritage_vintage": [
         "& Sons",
         "Trading Co.",
         "Mercantile",
-        "Supply Co."
+        "Supply Co.",
+        "& Daughters",
+        "Outfitters",
+        "Haberdashery",
+        "Brothers",
+        "Workshop",
+        "Est. 1887"
       ],
       "energy_power": [
         "Energy",
         "Power",
         "Electric",
-        "Solar"
+        "Solar",
+        "Renewables",
+        "Grid",
+        "Batteries",
+        "Motors",
+        "Charge",
+        "Wind"
       ],
       "fashion_style": [
         "Atelier",
         "Boutique",
         "Label",
-        "Studio"
+        "Studio",
+        "Couture",
+        "London",
+        "Collective",
+        "Tailoring",
+        "Knitwear",
+        "Edit"
       ],
       "health_wellness": [
         "Wellness",
         "Nutrition",
         "Skin",
-        "Health"
+        "Health",
+        "Yoga",
+        "Pilates",
+        "Clinic",
+        "Apothecary",
+        "Remedies",
+        "Retreats"
       ],
       "adventure_outdoor": [
         "Outdoor",
         "Outfitters",
         "Expeditions",
-        "Gear"
+        "Gear",
+        "Mountaineering",
+        "Trails",
+        "Camping Co.",
+        "Adventures",
+        "Kit",
+        "Supply"
       ],
       "home_living": [
         "Home",
         "Interiors",
         "Living",
-        "Linen"
+        "Linen",
+        "Ceramics",
+        "Furniture",
+        "Lighting",
+        "Textiles",
+        "Kitchenware",
+        "Rugs"
       ],
       "entertainment_media": [
         "Media",
         "Studios",
         "Records",
-        "Pictures"
+        "Pictures",
+        "Games",
+        "Productions",
+        "Broadcasting",
+        "Theatre Co.",
+        "Films",
+        "Audio"
       ]
     }
   },

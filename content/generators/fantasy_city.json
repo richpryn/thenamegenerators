@@ -1297,7 +1297,17 @@
         "the Shining City",
         "the White City",
         "the Heart of the Realm",
-        "the Gilded Throne"
+        "the Gilded Throne",
+        "the City of Fountains",
+        "the Queen of Cities",
+        "the Marble City",
+        "the City of Banners",
+        "the Mother of Cities",
+        "the Lion's Seat",
+        "the City of Lamps",
+        "the Eternal City",
+        "the Sunlit Crown",
+        "the Pride of the Realm"
       ],
       "fortress": [
         "the Iron Gate",
@@ -1309,7 +1319,17 @@
         "the Unbroken",
         "the Watchful City",
         "the Anvil",
-        "the Bloodied Gate"
+        "the Bloodied Gate",
+        "the Stone Shield",
+        "the Hammer of the Marches",
+        "the Grey Fortress",
+        "the Thousand-Year Wall",
+        "the City of Towers",
+        "the Gatekeeper",
+        "the Siege-Breaker",
+        "the Bastion of the East",
+        "the Armoury of Kings",
+        "the Sentinel"
       ],
       "port": [
         "the City of Sails",
@@ -1321,7 +1341,17 @@
         "the City of Gulls",
         "the Mistress of the Waves",
         "the Tideborn City",
-        "the Harbour of Kings"
+        "the Harbour of Kings",
+        "the City of Masts",
+        "the Salt Crown",
+        "the Merchant Queen",
+        "the Lighthouse City",
+        "the Sailors' Rest",
+        "the City of Spices",
+        "the Pirate's Cradle",
+        "the Gate of Storms",
+        "the Fisher-King's Seat",
+        "the Sea's Doorstep"
       ],
       "northern": [
         "the Frozen Throne",
@@ -1333,7 +1363,17 @@
         "the White Peak",
         "the Long Night City",
         "the Hall of the North",
-        "the Rimebound"
+        "the Rimebound",
+        "the Iron Hearth",
+        "the City of Furs",
+        "the Northern Star",
+        "the Snowbound Gate",
+        "the Mead-Hall City",
+        "the Ice Crown",
+        "the Watch on the Wastes",
+        "the Frostwall",
+        "the Bear's Hold",
+        "the Winter Capital"
       ],
       "ancient": [
         "the Drowned City",
@@ -1345,7 +1385,17 @@
         "the Forgotten Capital",
         "the Sleeping City",
         "the Hollow Throne",
-        "the Old Empire's Grave"
+        "the Old Empire's Grave",
+        "the City of Dust",
+        "the Buried Crown",
+        "the Lost Library",
+        "the Silent Streets",
+        "the Sunken Spires",
+        "the Empty Throne",
+        "the City Before Time",
+        "the Ash Capital",
+        "the Broken Gate",
+        "the Lantern of the Ancients"
       ],
       "river": [
         "the City of Bridges",
@@ -1357,7 +1407,17 @@
         "the Fair City",
         "the City of Barges",
         "the Meeting of Waters",
-        "the Ferryman's Town"
+        "the Ferryman's Town",
+        "the City of Locks",
+        "the Willow City",
+        "the Wool Market",
+        "the Salmon Leap",
+        "the Grain Store of the Realm",
+        "the City of Wharves",
+        "the Heron's Seat",
+        "the Bend in the River",
+        "the Toll City",
+        "the Green Crossing"
       ]
     }
   },

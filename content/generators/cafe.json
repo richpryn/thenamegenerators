@@ -263,7 +263,19 @@
         "Spoon",
         "Crumb",
         "Brew",
-        "Press"
+        "Press",
+        "Toast",
+        "Scone",
+        "Kettle",
+        "Bun",
+        "Teapot",
+        "Biscuit",
+        "Loaf",
+        "Milk",
+        "Honey",
+        "Jam",
+        "Muffin",
+        "Foam"
       ]
     },
     "cosy": {
@@ -287,7 +299,17 @@
         "Old",
         "Quiet",
         "Lazy",
-        "Merry"
+        "Merry",
+        "Cheerful",
+        "Lucky",
+        "Patient",
+        "Rambling",
+        "Snug",
+        "Tipsy",
+        "Whistling",
+        "Yellow",
+        "Gentle",
+        "Twisted"
       ],
       "noun": [
         "Kettle",
@@ -309,7 +331,17 @@
         "Robin",
         "Bicycle",
         "Bookshelf",
-        "Armchair"
+        "Armchair",
+        "Teacosy",
+        "Wren",
+        "Badger",
+        "Hedgehog",
+        "Umbrella",
+        "Postbox",
+        "Gate",
+        "Garden",
+        "Bakery",
+        "Bell"
       ]
     },
     "nature": {
@@ -351,7 +383,13 @@
         "Roasters",
         "Coffee House",
         "Kitchen",
-        "Coffee Co."
+        "Coffee Co.",
+        "Tearoom",
+        "Bakehouse",
+        "Espresso Bar",
+        "Canteen",
+        "Coffee Shop",
+        "Kitchen & Coffee"
       ]
     },
     "modern": {
@@ -393,7 +431,17 @@
         "Yield",
         "Extract",
         "Dial",
-        "Gauge"
+        "Gauge",
+        "Grain",
+        "Tamper",
+        "Crema",
+        "Pulse",
+        "Slow",
+        "Kiln",
+        "Field",
+        "Cupping",
+        "Roast",
+        "Hopper"
       ]
     },
     "playful": [

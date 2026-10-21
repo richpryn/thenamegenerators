@@ -646,7 +646,17 @@
       "the Stable",
       "the Back Stair",
       "the Woodpile",
-      "the Orchard Wall"
+      "the Orchard Wall",
+      "the Byre",
+      "the Pantry",
+      "the Chimney Corner",
+      "the Linen Press",
+      "the Hen House",
+      "the Granary",
+      "the Coal Shed",
+      "the Washhouse",
+      "the Smithy",
+      "the Lych Gate"
     ],
     "seelie": [
       "Keeper of the First Thistle",
@@ -875,7 +885,15 @@
       "who Laughs at Funerals",
       "the Pale Rider",
       "Mistress of the Lantern-Bog",
-      "the Cold Neighbour"
+      "the Cold Neighbour",
+      "who Rides the Night Mare",
+      "Keeper of the Stolen Children",
+      "of the Black Thorn",
+      "who Feasts at Midnight",
+      "the Bone Harper",
+      "who Counts Your Debts",
+      "of the Weeping Glen",
+      "the Mist-Walker"
     ],
     "court_titles": [
       "Lord",
@@ -885,7 +903,15 @@
       "Duke",
       "Duchess",
       "Knight",
-      "Queen"
+      "Queen",
+      "King",
+      "Countess",
+      "Earl",
+      "Herald",
+      "Steward",
+      "Champion",
+      "Handmaiden",
+      "Archer of the Court"
     ],
     "small_epithets": [
       "of the Meadow",
@@ -897,7 +923,21 @@
       "of the Bramble Patch",
       "of the Elder Tree",
       "of the Clover Field",
-      "of the Toadstool Ring"
+      "of the Toadstool Ring",
+      "of the Primrose Path",
+      "of the Rose Arbour",
+      "of the Hazel Copse",
+      "of the Bluebell Wood",
+      "of the Mill Stream",
+      "of the Thistle Bed",
+      "of the Daisy Chain",
+      "of the Rain Barrel",
+      "of the Oak Root",
+      "of the Spider's Web",
+      "of the Willow Bank",
+      "of the Moonlit Lawn",
+      "of the Honeysuckle",
+      "of the Robin's Nest"
     ]
   },
   "article": {

@@ -107,7 +107,19 @@
         "Rusted",
         "Iron",
         "Grey",
-        "Hungry"
+        "Hungry",
+        "Crimson",
+        "Silver",
+        "Laughing",
+        "Bold",
+        "Dusty",
+        "Scarlet",
+        "Wild",
+        "Seventh",
+        "Copper",
+        "Lost",
+        "Merry",
+        "Weathered"
       ],
       "noun": [
         "Lanterns",
@@ -119,7 +131,21 @@
         "Sparrows",
         "Compasses",
         "Banners",
-        "Hounds"
+        "Hounds",
+        "Spears",
+        "Ravens",
+        "Foxes",
+        "Daggers",
+        "Roads",
+        "Torches",
+        "Swords",
+        "Pilgrims",
+        "Stags",
+        "Arrows",
+        "Keys",
+        "Maps",
+        "Bells",
+        "Griffins"
       ],
       "noun_s": [
         "Lantern",
@@ -131,7 +157,17 @@
         "Banner",
         "Hound",
         "Road",
-        "Map"
+        "Map",
+        "Spear",
+        "Torch",
+        "Arrow",
+        "Key",
+        "Bell",
+        "Griffin",
+        "Raven",
+        "Fox",
+        "Dagger",
+        "Stag"
       ],
       "place": [
         "Saltreach",
@@ -141,7 +177,19 @@
         "Ravenscar",
         "Duskwater",
         "Highmoor",
-        "Coldharbour"
+        "Coldharbour",
+        "Brackenmoor",
+        "Elderwood",
+        "Stonecross",
+        "Wyvernmouth",
+        "Oakshott",
+        "Marshgate",
+        "Kingsferry",
+        "Copperhill",
+        "Northwatch",
+        "Redbridge",
+        "Highfell",
+        "Saltmarsh"
       ]
     },
     "thf": {
@@ -155,7 +203,17 @@
         "Grey",
         "Open",
         "Soft",
-        "Hidden"
+        "Hidden",
+        "Black",
+        "Second",
+        "Empty",
+        "Gentle",
+        "Sly",
+        "Moonless",
+        "Smiling",
+        "Patient",
+        "Nimble",
+        "Shadow"
       ],
       "noun": [
         "Hand",
@@ -167,7 +225,17 @@
         "Door",
         "Whisper",
         "Lantern",
-        "Ledger"
+        "Ledger",
+        "Purse",
+        "Shadow",
+        "Step",
+        "Pocket",
+        "Fingers",
+        "Mask",
+        "Latch",
+        "Rook",
+        "Magpie",
+        "Feather"
       ],
       "thing": [
         "Locked Door",
@@ -177,7 +245,17 @@
         "Moonless Night",
         "Turned Coin",
         "Missing Ring",
-        "Soft Step"
+        "Soft Step",
+        "Silent Bell",
+        "Loose Floorboard",
+        "Borrowed Crown",
+        "Unlatched Gate",
+        "Sleeping Guard",
+        "Lost Ledger",
+        "Velvet Glove",
+        "Black Candle",
+        "Hidden Pocket",
+        "Crooked Smile"
       ]
     },
     "mag": {
@@ -189,7 +267,15 @@
         "Lodge",
         "Council",
         "Academy",
-        "Fellowship"
+        "Fellowship",
+        "Order",
+        "Assembly",
+        "Brotherhood",
+        "Sisterhood",
+        "College",
+        "Synod",
+        "Cabal",
+        "Covenant"
       ],
       "adj": [
         "Silver",
@@ -201,7 +287,17 @@
         "Azure",
         "Waking",
         "Hollow",
-        "Last"
+        "Last",
+        "Starlit",
+        "Crimson",
+        "Golden",
+        "Veiled",
+        "Eternal",
+        "Ivory",
+        "Black",
+        "Twilight",
+        "Wandering",
+        "Thirteenth"
       ],
       "noun": [
         "Star",
@@ -213,7 +309,17 @@
         "Key",
         "Page",
         "Gate",
-        "Candle"
+        "Candle",
+        "Rose",
+        "Serpent",
+        "Mirror",
+        "Sigil",
+        "Quill",
+        "Crown",
+        "Spiral",
+        "Lantern",
+        "Hand",
+        "Book"
       ]
     },
     "mer": {
@@ -225,7 +331,19 @@
         "Spicegate",
         "Northsea",
         "Amberline",
-        "Copperbridge"
+        "Copperbridge",
+        "Westmarch",
+        "Pearlbay",
+        "Ivoryport",
+        "Sunreach",
+        "Grainford",
+        "Teaharbour",
+        "Wineshire",
+        "Furrow Coast",
+        "Coppermouth",
+        "Silverstrand",
+        "Wool Road",
+        "Southwind"
       ],
       "adj": [
         "Golden",
@@ -235,7 +353,19 @@
         "Brass",
         "Northern",
         "Free",
-        "Seven"
+        "Seven",
+        "Eastern",
+        "Western",
+        "Grand",
+        "Loyal",
+        "Copper",
+        "Crimson",
+        "United",
+        "Sovereign",
+        "Fair",
+        "Steady",
+        "Ancient",
+        "Merchant"
       ],
       "noun": [
         "Scales",
@@ -245,7 +375,19 @@
         "Caravan",
         "Lantern",
         "Seal",
-        "Key"
+        "Key",
+        "Sail",
+        "Compass",
+        "Barrel",
+        "Bridge",
+        "Crown",
+        "Wheel",
+        "Ship",
+        "Purse",
+        "Measure",
+        "Balance",
+        "Chest",
+        "Star"
       ],
       "trade": [
         "Spice",
@@ -255,7 +397,19 @@
         "Wool",
         "Amber",
         "Ivory",
-        "Timber"
+        "Timber",
+        "Tea",
+        "Fur",
+        "Grain",
+        "Pepper",
+        "Saffron",
+        "Dye",
+        "Pearl",
+        "Copper",
+        "Tin",
+        "Linen",
+        "Leather",
+        "Glass"
       ]
     },
     "cra": {
@@ -271,7 +425,21 @@
         "Potters",
         "Alchemists",
         "Lampwrights",
-        "Bowyers"
+        "Bowyers",
+        "Fletchers",
+        "Coopers",
+        "Goldsmiths",
+        "Tanners",
+        "Dyers",
+        "Chandlers",
+        "Wheelwrights",
+        "Saddlers",
+        "Glovers",
+        "Locksmiths",
+        "Shipwrights",
+        "Brewers",
+        "Papermakers",
+        "Instrument Makers"
       ],
       "adj": [
         "Golden",
@@ -281,7 +449,19 @@
         "Copper",
         "Old",
         "Patient",
-        "Bright"
+        "Bright",
+        "Careful",
+        "Brass",
+        "Silver",
+        "Sturdy",
+        "Clever",
+        "Ancient",
+        "Humble",
+        "Royal",
+        "Faithful",
+        "True",
+        "Diligent",
+        "Master"
       ],
       "tool": [
         "Anvil",
@@ -291,7 +471,19 @@
         "Kiln",
         "Loom",
         "Lathe",
-        "Quill"
+        "Quill",
+        "Plane",
+        "Awl",
+        "Bellows",
+        "Compass",
+        "Mallet",
+        "Spindle",
+        "Shears",
+        "Tongs",
+        "Crucible",
+        "Square",
+        "Gauge",
+        "Bench"
       ]
     }
   },
