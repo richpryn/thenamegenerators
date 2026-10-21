@@ -479,14 +479,28 @@
         "of Cirith Ungol",
         "of the Black Gate",
         "of Udûn",
-        "of Gorgoroth"
+        "of Gorgoroth",
+        "of the Morgai",
+        "of Mount Doom",
+        "of the Isenmouthe",
+        "of Durthang",
+        "of the Ephel Dúath",
+        "of Barad-dûr",
+        "of the Plateau of Gorgoroth"
       ],
       "uruk": [
         "of the White Hand",
         "of Isengard",
         "of Orthanc",
         "of the Uruk-hai",
-        "of Nan Curunír"
+        "of Nan Curunír",
+        "of Dunland",
+        "of the Fords of Isen",
+        "of the Wizard's Vale",
+        "of the Wolf-Pits",
+        "of the Pits of Isengard",
+        "of the Breeding-Pits",
+        "of the Gap of Rohan"
       ],
       "mountains": [
         "of Gundabad",
@@ -494,7 +508,13 @@
         "of Goblin-town",
         "of the High Pass",
         "of Mount Gram",
-        "of the Misty Mountains"
+        "of the Misty Mountains",
+        "of the Grey Mountains",
+        "of the Dimrill Gate",
+        "of the Ettenmoors",
+        "of the Back Door",
+        "of the Deep Halls",
+        "of the Under-Deeps"
       ]
     },
     "ranks": {
@@ -504,7 +524,17 @@
         "Slave-driver",
         "Tower-guard",
         "Gate-warden",
-        "Lieutenant"
+        "Lieutenant",
+        "Snaga",
+        "Whip-master",
+        "Sentry",
+        "Messenger",
+        "Black Uruk",
+        "Overseer",
+        "Watchman",
+        "Torturer",
+        "Errand-runner",
+        "Pit-guard"
       ],
       "uruk": [
         "Captain",
@@ -512,7 +542,17 @@
         "Scout",
         "Pit-master",
         "Warg-rider",
-        "Lieutenant"
+        "Lieutenant",
+        "Berserker",
+        "Standard-bearer",
+        "Crossbowman",
+        "Sapper",
+        "Halberdier",
+        "Tracker",
+        "Sergeant",
+        "Runner",
+        "Drill-master",
+        "Pikeman"
       ],
       "mountains": [
         "Chieftain",
@@ -520,7 +560,17 @@
         "Warg-rider",
         "Scout",
         "Thief",
-        "Lieutenant"
+        "Lieutenant",
+        "Wolf-tamer",
+        "Cave-guard",
+        "Torch-bearer",
+        "Drummer",
+        "Raider",
+        "Lookout",
+        "Slaver",
+        "Bone-cook",
+        "Rope-master",
+        "Gate-keeper"
       ]
     }
   },

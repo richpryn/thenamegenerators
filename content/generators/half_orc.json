@@ -1033,7 +1033,19 @@
         "Elf",
         "Man",
         "Gristle",
-        "Mud"
+        "Mud",
+        "Dwarf",
+        "Shield",
+        "Spine",
+        "Fang",
+        "Horse",
+        "Troll",
+        "Chain",
+        "Rock",
+        "Knee",
+        "Neck",
+        "Gate",
+        "Wall"
       ],
       "second": [
         "splitter",
@@ -1049,7 +1061,19 @@
         "gnawer",
         "stomper",
         "chewer",
-        "hide"
+        "hide",
+        "smasher",
+        "killer",
+        "taker",
+        "cleaver",
+        "sunderer",
+        "basher",
+        "grinder",
+        "stabber",
+        "gouger",
+        "hunter",
+        "slayer",
+        "mangler"
       ]
     }
   },

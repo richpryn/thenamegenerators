@@ -503,7 +503,20 @@
         "Mad Dok",
         "Runtherd",
         "Speedboss",
-        "Boss Nob"
+        "Boss Nob",
+        "Warphead",
+        "Flash Git",
+        "Burna Boy",
+        "Kommando Boss",
+        "Deffkopta Pilot",
+        "Mekboy",
+        "Beastboss",
+        "Tankbusta",
+        "Lootas Boss",
+        "Big Gun Boss",
+        "Dakkajet Ace",
+        "Wildboy",
+        "Stormboy"
       ],
       "fantasy": [
         "Warboss",
@@ -513,7 +526,15 @@
         "Black Orc Boss",
         "Boar Boy Boss",
         "Savage Orc Boss",
-        "Brute Boss"
+        "Brute Boss",
+        "Great Shaman",
+        "Wurrgog Prophet",
+        "Ardboy Boss",
+        "Gore-Gruntas Boss",
+        "Weirdnob Shaman",
+        "Orruk Warchanter",
+        "Arrer Boss",
+        "Wolf Rider Boss"
       ]
     },
     "groups": {
@@ -534,7 +555,15 @@
         "of da Black Mountain",
         "of da Bloody Sun",
         "of da Skull Hill tribe",
-        "of da Mad Moon"
+        "of da Mad Moon",
+        "of da Grim Toof tribe",
+        "of da Big Stompaz",
+        "of da Cracked Shield",
+        "of da Burnin' Hill",
+        "of da Gutrippaz",
+        "of da Sharp Rocks",
+        "of da Lucky Moon",
+        "of da Rotten Bog"
       ]
     }
   },

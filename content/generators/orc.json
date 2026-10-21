@@ -702,7 +702,19 @@
         "Elf",
         "Man",
         "Gristle",
-        "Mud"
+        "Mud",
+        "Dwarf",
+        "Shield",
+        "Spine",
+        "Fang",
+        "Horse",
+        "Troll",
+        "Chain",
+        "Rock",
+        "Knee",
+        "Neck",
+        "Gate",
+        "Wall"
       ],
       "second": [
         "splitter",
@@ -718,7 +730,19 @@
         "gnawer",
         "stomper",
         "chewer",
-        "hide"
+        "hide",
+        "smasher",
+        "killer",
+        "taker",
+        "cleaver",
+        "sunderer",
+        "basher",
+        "grinder",
+        "stabber",
+        "gouger",
+        "hunter",
+        "slayer",
+        "mangler"
       ]
     },
     "the": [
@@ -741,7 +765,23 @@
       "Biter",
       "Small",
       "Bloody",
-      "Clever"
+      "Clever",
+      "Tusker",
+      "Smiler",
+      "Big",
+      "Quiet",
+      "Bent-Nose",
+      "Half-Ear",
+      "Rotten",
+      "Stinker",
+      "Iron-Gut",
+      "Sleepless",
+      "Bone-Chewer",
+      "Short-Temper",
+      "Smoke-Eye",
+      "Crooked",
+      "Grey-Tooth",
+      "Skinny"
     ],
     "clan": {
       "adjective": [
@@ -758,7 +798,17 @@
         "Bone",
         "Ash",
         "Iron",
-        "Blind"
+        "Blind",
+        "Hanging",
+        "Cracked",
+        "Shattered",
+        "Gnawed",
+        "Rusted",
+        "Bloody",
+        "Hungry",
+        "Screaming",
+        "Charred",
+        "Bitter"
       ],
       "noun": [
         "Tusk",
@@ -774,7 +824,17 @@
         "Boar",
         "Toe",
         "Ear",
-        "Axe"
+        "Axe",
+        "Claw",
+        "Horn",
+        "Spine",
+        "Heart",
+        "Knife",
+        "Banner",
+        "Rock",
+        "Sun",
+        "Bone",
+        "Maw"
       ]
     }
   },
