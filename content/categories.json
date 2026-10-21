@@ -95,7 +95,9 @@
       "demon",
       "villain",
       "event",
-      "spell"
+      "spell",
+      "vampire_clan",
+      "werewolf_pack"
     ]
   },
   {
@@ -345,6 +347,8 @@
       }
     ],
     "generators": [
+      "werewolf_pack",
+      "vampire_clan",
       "fairy",
       "fairy_town",
       "werewolf",
@@ -484,6 +488,8 @@
       }
     ],
     "generators": [
+      "sidekick",
+      "superhero_team",
       "name_combiner",
       "gamertag",
       "epithet",

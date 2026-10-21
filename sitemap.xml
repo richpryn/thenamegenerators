@@ -89,7 +89,7 @@
   <!-- Category: Halloween -->
   <url>
     <loc>https://thenamegenerators.com/categories/halloween-names.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -124,7 +124,7 @@
   <!-- Category: Folklore -->
   <url>
     <loc>https://thenamegenerators.com/categories/folklore-names.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -152,7 +152,7 @@
   <!-- Category: Characters -->
   <url>
     <loc>https://thenamegenerators.com/categories/people-names.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -940,6 +940,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Sidekick Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/sidekick-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Skeleton Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/skeleton-name-generator.html</loc>
@@ -1003,6 +1010,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Superhero Team Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/superhero-team-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Swamp Witch Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/swamp-witch-name-generator.html</loc>
@@ -1035,6 +1049,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/vampire-name-generator.html</loc>
     <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Vampire Clan Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/vampire-clan-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1084,6 +1105,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/werewolf-name-generator.html</loc>
     <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Werewolf Pack Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/werewolf-pack-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
