@@ -89,6 +89,8 @@ Numbers: never type a count. Use `{{names}}`, `{{combinations}}` ("over {{combin
 
 Each category in `content/categories.json` has a `heading` (the H1), `seoTitle`, a short `description` (shown on cards and under the heading), `seoDescription`, an `intro` (HTML, two short paragraphs) and `featured`: the three or four best generators to start with, each with a one-line `note`. Keep category titles different from any generator's title so they don't compete (e.g. "Event Name Ideas…" for the category, "Event Name Generator" for the generator).
 
+
+Internal links are built from `categories.json`: every generator page links to each hub that lists it ("Also in"), each hub links to the hubs it shares generators with ("Related categories"), and related generators prefer pages that share any hub. So to connect a page to a hub, list it in that hub; don't add the link by hand. In articles, link the first mention of another generator's subject to its page.
 ## Adding a new generator
 
 1. Rich gives the name and any angle or personal notes.

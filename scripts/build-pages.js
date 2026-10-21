@@ -426,14 +426,21 @@ function generateGeneratorPage(generator, category, site) {
             </section>` : '';
 
   const sameCategory = site.inCategory(category.slug).filter(gen => gen.key !== generator.key);
-  const categoryGeneratorsHTML = sameCategory.length ? `
-            <section class="section category-generators-section">
+  // Every other hub that lists this generator, so each hub's pages link back to it
+  const otherHubs = (site.categoriesOf[generator.key] || [])
+    .filter(slug => slug !== category.slug)
+    .map(slug => site.categories.find(c => c.slug === slug));
+  const alsoInHTML = otherHubs.length
+    ? `\n                <p class="all-link also-in">Also in: ${otherHubs.map(c => `<a href="../categories/${c.slug}-names.html">${escapeHtml(c.name)} name generators</a>`).join(' · ')}</p>`
+    : '';
+  const categoryGeneratorsHTML = `
+            <section class="section category-generators-section">${sameCategory.length ? `
                 <h2>More ${escapeHtml(category.name)} Name Generators</h2>
                 <div class="genlist compact" id="category-generators">
                     ${sameCategory.map(gen => genCard(gen, { desc: false })).join('\n                    ')}
-                </div>
-                <p class="all-link"><a href="../categories/${category.slug}-names.html">All ${escapeHtml(category.name)} name generators</a></p>
-            </section>` : '';
+                </div>` : ''}
+                <p class="all-link"><a href="../categories/${category.slug}-names.html">All ${escapeHtml(category.name)} name generators</a></p>${alsoInHTML}
+            </section>`;
 
   // Article sections (headings and content are trusted HTML from content/)
   let sectionsHTML = '';
@@ -644,6 +651,20 @@ function generateCategoryPage(category, site) {
     return `<a href="../posts/${gen.slug}.html" class="feat hd tap">${layout.doodle(m)}<b>${escapeHtml(gen.title)}</b><span>${f.note.charAt(0).toUpperCase() + f.note.slice(1)}</span><span class="open hd" aria-hidden="true">Open →</span></a>`;
   }).join('\n                    ');
 
+  // Related categories: the other hubs that share the most generators with this one
+  const mine = new Set(category.generators);
+  const relatedHubs = site.categories
+    .filter(c => c.slug !== categorySlug)
+    .map(c => ({ c, shared: c.generators.filter(k => mine.has(k)).length }))
+    .filter(x => x.shared > 0)
+    .sort((a, b) => b.shared - a.shared || a.c.name.localeCompare(b.c.name))
+    .slice(0, 6);
+  const relatedHubsHTML = relatedHubs.length ? `
+            <section class="section related-hubs">
+                <h2>Related categories</h2>
+                <p class="all-link">${relatedHubs.map(x => `<a href="${x.c.slug}-names.html">${escapeHtml(x.c.name)} name generators</a>`).join(' · ')}</p>
+            </section>` : '';
+
   const generatorsHTML = generators.map(gen => {
     const m = layout.generatorMotif(gen, catOf(gen));
     motifs.push(m);
@@ -757,6 +778,7 @@ ${featured ? `
                     ${generatorsHTML}
                 </div>
             </section>
+${relatedHubsHTML}
         </main>
         <aside class="side" aria-label="Sidebar"></aside>
     </div>
@@ -1410,7 +1432,9 @@ function makeSite({ categories, generators, homepage }) {
         }
       }
     }
-    if ((categoriesOf[candidate.key] || []).includes(current.category)) total += 50;
+    // sharing any hub counts, not just the current page's main category
+    const mine = categoriesOf[current.key] || [current.category];
+    if ((categoriesOf[candidate.key] || []).some(slug => mine.includes(slug))) total += 50;
     if (candidate.isPopular) total += 20;
     return total;
   }
