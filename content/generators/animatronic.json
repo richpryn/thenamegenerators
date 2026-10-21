@@ -4,7 +4,7 @@
   "icon": "🎪",
   "category": "halloween",
   "published": "2026-10-22",
-  "description": "Animatronic names in the style of Five Nights at Freddy's: cheerful mascots like Biscuit the Badger, the band members, their broken-down versions and the pizzeria they play in.",
+  "description": "Animatronic names for original FNAF-style characters: mascots like Biscuit the Badger, band members, broken-down versions and pizzeria names.",
   "seoKeywords": "animatronic name generator, fnaf name generator, fnaf oc name generator, animatronic names, fnaf oc names, five nights at freddy's name generator, pizzeria name generator",
   "seoTitle": "Animatronic Name Generator: FNAF-Style OC Names",
   "isPopular": false,
@@ -896,7 +896,29 @@
       "tagline": "Names for animatronic mascots, their band, their worn-out versions and the pizzeria where it all went wrong."
     },
     "intro": "An animatronic's name has to sound friendly enough for a children's party and wrong enough at three in the morning. This **animatronic name generator** makes alliterative mascots, band line-ups, broken-down versions and the pizzerias they play in, for Five Nights at Freddy's-style OCs and horror games.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Animatronics, from Disney to the pizzeria",
+        "content": "<p>Animatronics were made famous by Disney, whose Audio-Animatronics first sang in the Enchanted Tiki Room in 1963.</p><ul><li><strong>The pizzeria band:</strong> in 1977 Atari's founder Nolan Bushnell opened the first Chuck E. Cheese, with a stage of animatronic animals, and ShowBiz Pizza's Rock-afire Explosion followed in 1980.</li><li><strong>Five Nights at Freddy's</strong> (2014), Scott Cawthon's horror game, turned those friendly mascots into something to fear at night, and it's why so many people now make their own animatronic characters.</li></ul><p>This generator isn't official and has no link to FNAF. It makes original characters, and leaves out every FNAF name, along with Poppy Playtime, Bendy and the real pizzeria bands.</p>"
+      },
+      {
+        "heading": "Naming an original animatronic",
+        "content": "<ul><li><strong>Mascots</strong> get an alliterative name and an animal: Biscuit the Badger, Lucky the Lobster.</li><li><strong>Band members</strong> get an instrument, because every pizzeria needs a stage.</li><li><strong>Broken-down versions</strong> are what's left in the back room: Rusted Biscuit, Faceless Bella.</li><li><strong>Venues</strong> are named after their star: Rocky Rooster's Playland, Benny Bunny's Burger Barn.</li><li><strong>Keep it original:</strong> avoid FNAF's own prefixes, like Withered, Toy and Nightmare, so your character is clearly yours.</li></ul><p>For a whole building to haunt, try the <a href=\"haunted-house-name-generator.html\">Haunted House Name Generator</a>, and for the film about it, the <a href=\"horror-movie-title-generator.html\">Horror Movie Title Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is this a FNAF OC name generator?",
+        "answer": "It makes names for original FNAF-style characters, but it isn't official and has no link to the game. Five Nights at Freddy's is Scott Cawthon's."
+      },
+      {
+        "question": "What's a good name for an animatronic?",
+        "answer": "An alliterative name and an animal, like Biscuit the Badger, or a broken-down version, like Rusted Biscuit."
+      },
+      {
+        "question": "Where did animatronics come from?",
+        "answer": "Disney made them famous with Audio-Animatronics, first seen in the Enchanted Tiki Room in 1963. Pizzeria bands followed in the late 1970s."
+      }
+    ]
   }
 }

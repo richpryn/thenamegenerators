@@ -104,7 +104,6 @@
           "recipe": "template",
           "template": [
             "The Sphinx of [places]",
-            "The [adj] Sphinx [epithets]",
             "The [adj] Sphinx, [epithets_titled]",
             "The [adj] Sphinx of [places]"
           ]
@@ -120,7 +119,6 @@
             "[egypt.a][egypt.b], [epithets_titled]",
             "[egypt.a][egypt.b] of [places]",
             "The Sphinx of [places]",
-            "The [adj] Sphinx [epithets]",
             "The [adj] Sphinx, [epithets_titled]",
             "The [adj] Sphinx of [places]"
           ]
@@ -229,7 +227,6 @@
       "Wise",
       "Watchful",
       "Golden-Eyed",
-      "Great",
       "Winged",
       "Crowned",
       "Lion-Hearted",

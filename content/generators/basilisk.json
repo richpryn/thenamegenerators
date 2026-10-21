@@ -98,7 +98,6 @@
           "recipe": "template",
           "template": [
             "The Basilisk of [lairs]",
-            "The [adj] Basilisk [epithets]",
             "The [adj] Basilisk, [epithets_titled]",
             "The [adj] Basilisk of [lairs]"
           ]
@@ -112,7 +111,6 @@
             "[latin], [epithets_titled]",
             "[latin] of [lairs]",
             "The Basilisk of [lairs]",
-            "The [adj] Basilisk [epithets]",
             "The [adj] Basilisk, [epithets_titled]",
             "The [adj] Basilisk of [lairs]"
           ]

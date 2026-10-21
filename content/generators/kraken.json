@@ -98,7 +98,6 @@
           "recipe": "template",
           "template": [
             "The Kraken of [waters]",
-            "The [adj] Kraken [epithets]",
             "The [adj] Kraken, [epithets_titled]",
             "The [adj] Kraken of [waters]"
           ]
@@ -112,7 +111,6 @@
             "[norse], [epithets_titled]",
             "[norse] of [waters]",
             "The Kraken of [waters]",
-            "The [adj] Kraken [epithets]",
             "The [adj] Kraken, [epithets_titled]",
             "The [adj] Kraken of [waters]"
           ]
@@ -151,7 +149,6 @@
         "tide",
         "crusher",
         "render",
-        "sucker",
         "lurker"
       ]
     },
@@ -235,7 +232,7 @@
     ],
     "epithets_titled": [
       "Terror of the Fleet",
-      "Lord of the Abyss",
+      "Ruler of the Abyss",
       "Bane of Sailors",
       "Keeper of the Drowned"
     ]
@@ -270,5 +267,6 @@
         "answer": "A monstrous one like Deepmaw, a Norse-sounding one like Hafgrim, or a place, like the Kraken of the Grey Deep."
       }
     ]
-  }
+  },
+  "noEcho": true
 }

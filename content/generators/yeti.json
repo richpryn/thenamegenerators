@@ -59,8 +59,10 @@
           "recipe": "template",
           "template": [
             "[funny]",
-            "Big [funny_names]",
-            "Uncle [funny_names]"
+            "Big [funny_names.m]",
+            "Big [funny_names.f]",
+            "Uncle [funny_names.m]",
+            "Auntie [funny_names.f]"
           ]
         },
         "any": {
@@ -71,8 +73,10 @@
             "Little [cute]",
             "[cute_pre][cute_suf]",
             "[funny]",
-            "Big [funny_names]",
-            "Uncle [funny_names]"
+            "Big [funny_names.m]",
+            "Big [funny_names.f]",
+            "Uncle [funny_names.m]",
+            "Auntie [funny_names.f]"
           ]
         }
       }
@@ -104,10 +108,14 @@
           "template": [
             "[funny] [epithets]",
             "[funny], [epithets_titled]",
-            "Big [funny_names] [epithets]",
-            "Big [funny_names], [epithets_titled]",
-            "Uncle [funny_names] [epithets]",
-            "Uncle [funny_names], [epithets_titled]"
+            "Big [funny_names.m] [epithets]",
+            "Big [funny_names.f] [epithets]",
+            "Big [funny_names.m], [epithets_titled]",
+            "Big [funny_names.f], [epithets_titled]",
+            "Uncle [funny_names.m] [epithets]",
+            "Auntie [funny_names.f] [epithets]",
+            "Uncle [funny_names.m], [epithets_titled]",
+            "Auntie [funny_names.f], [epithets_titled]"
           ]
         },
         "any": {
@@ -123,10 +131,14 @@
             "[cute_pre][cute_suf], [epithets_titled]",
             "[funny] [epithets]",
             "[funny], [epithets_titled]",
-            "Big [funny_names] [epithets]",
-            "Big [funny_names], [epithets_titled]",
-            "Uncle [funny_names] [epithets]",
-            "Uncle [funny_names], [epithets_titled]"
+            "Big [funny_names.m] [epithets]",
+            "Big [funny_names.f] [epithets]",
+            "Big [funny_names.m], [epithets_titled]",
+            "Big [funny_names.f], [epithets_titled]",
+            "Uncle [funny_names.m] [epithets]",
+            "Auntie [funny_names.f] [epithets]",
+            "Uncle [funny_names.m], [epithets_titled]",
+            "Auntie [funny_names.f], [epithets_titled]"
           ]
         }
       }
@@ -202,7 +214,6 @@
     "cute_suf": [
       "boots",
       "paws",
-      "bum",
       "toes",
       "bear",
       "ball",
@@ -212,7 +223,7 @@
     "funny": [
       "Steve",
       "Big Fred",
-      "Gary from the Mountains",
+      "Mountain Gary",
       "Kevin",
       "Abominable Alan",
       "Mr Toes",
@@ -229,7 +240,7 @@
       "Professor Footprint",
       "Blurry Photo",
       "Nigel",
-      "Dave Who Lives Up There",
+      "Dave Up the Hill",
       "Mr Frosty Feet",
       "Snowy McSnowface",
       "Hairy Harry",
@@ -241,20 +252,36 @@
       "Shy Sheila",
       "Footprint Frank"
     ],
-    "funny_names": [
-      "Fred",
-      "Sue",
-      "Steve",
-      "Gary",
-      "Barbara",
-      "Kevin",
-      "Dave",
-      "Brenda",
-      "Clive",
-      "Doris",
-      "Phil",
-      "Norma"
-    ],
+    "funny_names": {
+      "m": [
+        "Fred",
+        "Steve",
+        "Gary",
+        "Kevin",
+        "Dave",
+        "Clive",
+        "Phil",
+        "Keith",
+        "Derek",
+        "Trevor",
+        "Malcolm",
+        "Roger"
+      ],
+      "f": [
+        "Sue",
+        "Barbara",
+        "Brenda",
+        "Doris",
+        "Norma",
+        "Linda",
+        "Maureen",
+        "Pauline",
+        "Janet",
+        "Shirley",
+        "Gloria",
+        "Wendy"
+      ]
+    },
     "epithets": [
       "the Abominable",
       "the Unseen",
@@ -266,9 +293,9 @@
       "the Elusive"
     ],
     "epithets_titled": [
-      "Lord of the Glacier",
+      "Ruler of the Glacier",
       "Keeper of the Peaks",
-      "King of the Snows",
+      "Spirit of the Snows",
       "Guardian of the Pass"
     ]
   },
