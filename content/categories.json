@@ -604,6 +604,7 @@
       }
     ],
     "generators": [
+      "coven",
       "witch",
       "swamp_witch",
       "harry_potter_witch",
