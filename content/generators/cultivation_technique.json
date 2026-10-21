@@ -4,7 +4,7 @@
   "icon": "🥋",
   "category": "wuxia",
   "published": "2026-10-22",
-  "description": "Martial arts and cultivation technique names for wuxia and xianxia: sword arts, palms and fists, movement skills and cultivation methods, like Nine Heavens Thunder Palm.",
+  "description": "Cultivation technique names for wuxia and xianxia: sword arts, palm and fist techniques, movement skills and heart methods, with a grade if you like.",
   "seoKeywords": "cultivation technique name generator, martial arts technique names, wuxia technique names, xianxia technique names, kung fu move names, sword technique names, cultivation method names",
   "seoTitle": "Cultivation Technique Name Generator: Wuxia Moves",
   "isPopular": false,
@@ -289,7 +289,29 @@
       "tagline": "Names for sword arts, palms, movement skills and cultivation methods, from Falling Leaf Sword Art to Nine Heavens Thunder Palm."
     },
     "intro": "A wuxia hero's technique names are half the fun: they promise something spectacular before the first blow lands. This **cultivation technique name generator** makes names for sword arts, palm and fist techniques, movement skills and cultivation methods, with a grade if your story ranks them.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "How technique names work",
+        "content": "<p>A technique's name promises something spectacular before the first blow lands, and it usually says what kind of skill it is.</p><ul><li><strong>Sword arts</strong> (<em>jian</em> is the straight sword) end in Sword Technique or Sword Method.</li><li><strong>Palm and fist</strong> techniques borrow from real martial arts, which often name moves after animals, like the tiger and the crane.</li><li><strong>Movement skills</strong> are <em>qinggong</em>, \"lightness skill\": running up walls and across water.</li><li><strong>Heart Methods</strong> (<em>xinfa</em>) are the inner cultivation manuals behind everything else.</li></ul>"
+      },
+      {
+        "heading": "Technique grades",
+        "content": "<p>Many xianxia stories rank techniques from Heaven grade down through Earth and Mystic to Yellow.</p><ul><li><strong>The order</strong> comes from the first line of the <em>Thousand Character Classic</em>, a traditional Chinese primer: \"Heaven and earth, dark and yellow\" (<em>tian di xuan huang</em>).</li><li><strong>Choose With a grade</strong> to add one to a technique.</li></ul><p>For the cultivator who masters it, try the <a href=\"cultivator-title-generator.html\">Cultivator Title Generator</a>. For the sword itself, the <a href=\"japanese-sword-name-generator.html\">Japanese Sword</a> and <a href=\"sword-name-generator.html\">Sword</a> name generators have more.</p><p>For the rest of the martial world, see all the <a href=\"../categories/wuxia-names.html\">wuxia and xianxia name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is a heart method in cultivation novels?",
+        "answer": "A xinfa, the inner cultivation manual that trains a martial artist's energy. Other techniques are built on it."
+      },
+      {
+        "question": "What do Heaven, Earth, Mystic and Yellow grades mean?",
+        "answer": "A ranking of techniques from best to most common, taken from the opening line of the Thousand Character Classic."
+      },
+      {
+        "question": "What is qinggong?",
+        "answer": "Lightness skill: the movement techniques that let wuxia heroes run up walls, leap across rooftops and cross water."
+      }
+    ]
   }
 }

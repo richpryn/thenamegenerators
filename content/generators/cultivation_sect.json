@@ -227,7 +227,29 @@
       "tagline": "Names for righteous sects, demonic cults, great clans and martial schools."
     },
     "intro": "In wuxia and xianxia stories, a character's sect is their family, their school and their side in every feud. This **cultivation sect name generator** names righteous sects like the Azure Cloud Sect, demonic cults, great clans and martial arts schools, with a home if you want one.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Sects, clans and schools",
+        "content": "<p>In wuxia and xianxia a sect is a school, a family and a side in every feud at once.</p><ul><li><strong>Righteous and demonic:</strong> stories split the martial world into orthodox sects and demonic cults, and the fun is in the grey areas between them.</li><li><strong>Real anchors:</strong> two real places run through the genre, the Shaolin Monastery and the Daoist temples of the Wudang Mountains, both famous for martial arts.</li><li><strong>Clans</strong> are families with their own techniques, passed down by blood rather than taught to outsiders.</li><li><strong>Martial schools</strong> are smaller and more practical: named for their signature skill, like an Iron Palm school.</li></ul>"
+      },
+      {
+        "heading": "Naming a sect",
+        "content": "<ul><li><strong>Righteous</strong> sects sound like clean sky and mountains: Azure Cloud Sect, Golden Crane Sect.</li><li><strong>Demonic</strong> cults sound like blood and poison: Blood Shadow Cult, Poison Fang Abyss.</li><li><strong>Clans</strong> take the family name: the Murong Clan, the Wei Family.</li><li><strong>Add a place</strong> to root it in a map: of the Jade River, of the Southern Wilds.</li></ul><p>For the sect's members, try the <a href=\"wuxia-name-generator.html\">Wuxia Name Generator</a>, and for its secret arts, the <a href=\"cultivation-technique-name-generator.html\">Cultivation Technique Name Generator</a>.</p><p>For the rest of the martial world, see all the <a href=\"../categories/wuxia-names.html\">wuxia and xianxia name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good name for a cultivation sect?",
+        "answer": "A colour or element, a creature and a word for the group: Azure Cloud Sect, Golden Crane Sect. Add a place for something like Rising Sun Palace of the Jade River."
+      },
+      {
+        "question": "What's the difference between a sect and a clan?",
+        "answer": "A sect takes disciples from anywhere and teaches them; a clan is a family, and keeps its techniques in the bloodline."
+      },
+      {
+        "question": "Are Shaolin and Wudang real?",
+        "answer": "Yes. The Shaolin Monastery in Henan and the Daoist temples of the Wudang Mountains in Hubei are real and both famous for martial arts."
+      }
+    ]
   }
 }
