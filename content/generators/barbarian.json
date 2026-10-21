@@ -726,7 +726,29 @@
       "tagline": "Names for barbarians on every Path, from Berserkers who laugh in battle to Storm Heralds."
     },
     "intro": "A barbarian's name should sound like it was shouted across a battlefield, and their epithet should say what kind of rage they carry. This **barbarian name generator** gives D&D 5e barbarians a strong first name and an epithet that fits their Primal Path, from the Berserker to the Path of the Beast.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "The barbarian in D&D",
+        "content": "<p>A D&amp;D barbarian fights on fury: their Rage makes them hit harder and shrug off blows.</p><ul><li><strong>Paths:</strong> each barbarian follows a Primal Path, from the Berserker and the Totem Warrior in the Player's Handbook to the Zealot, Ancestral Guardian, Storm Herald, Wild Magic and Beast paths in later books. Each path gets its own epithets here.</li><li><strong>The word:</strong> barbarian comes from the Greek <em>barbaros</em>, used for anyone who didn't speak Greek, whose speech sounded like \"bar-bar\".</li><li><strong>Berserkers</strong> were real: Norse warriors said to fight in a trance, whose name probably means \"bear-shirts\".</li></ul>"
+      },
+      {
+        "heading": "Naming a barbarian",
+        "content": "<p>Barbarian names here have a Norse flavour: short, hard and easy to shout.</p><ul><li><strong>The name</strong> (Grimkel, Rurik, Eir) should work as a war cry.</li><li><strong>The epithet</strong> says what kind of rage it is: a Totem Warrior might be \"Child of the Eagle\", an Ancestral Guardian \"Guardian of the Line\".</li></ul><p>For the rest of the party, try the <a href=\"viking-name-generator.html\">Viking</a>, <a href=\"paladin-name-generator.html\">Paladin</a> and <a href=\"half-orc-name-generator.html\">Half-Orc</a> name generators.</p><p>For every class and race, see all the <a href=\"../categories/dnd-names.html\">D&amp;D name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good barbarian name?",
+        "answer": "Something short and hard, like Grimkel or Rurik, with an epithet for their path, like \"Child of the Eagle\" for a Totem Warrior."
+      },
+      {
+        "question": "What does berserker mean?",
+        "answer": "It probably means \"bear-shirt\", after Norse warriors said to fight in a wild trance."
+      },
+      {
+        "question": "What are the barbarian subclasses?",
+        "answer": "Primal Paths, including the Berserker, Totem Warrior, Zealot, Ancestral Guardian, Storm Herald, Wild Magic and Beast."
+      }
+    ]
   }
 }

@@ -713,7 +713,29 @@
       "tagline": "Names for druids of every Circle, from Moon shapeshifters to Spores druids."
     },
     "intro": "Druids take their power from the natural world, and many fantasy druids carry names from Welsh and Celtic tradition or straight from the plants they tend. This **druid name generator** gives D&D 5e druids a first name rooted in the old woods and an epithet for their Druid Circle, from the shapeshifting Circle of the Moon to the Circle of Spores.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Druids in history and in D&D",
+        "content": "<p>Real druids were the priests and scholars of the ancient Celtic world, in Gaul and Britain.</p><ul><li><strong>Julius Caesar</strong> wrote that they trained for up to twenty years and learned everything by heart, never in writing.</li><li><strong>Pliny the Elder</strong> described druids cutting mistletoe from an oak with a golden sickle. The word druid may mean \"oak-knower\".</li><li><strong>In D&amp;D,</strong> druids draw power from nature, take animal form with Wild Shape, and join a Circle: the Land and the Moon in the Player's Handbook, and Dreams, Shepherd, Spores, Stars and Wildfire in later books.</li></ul>"
+      },
+      {
+        "heading": "Naming a druid",
+        "content": "<p>Druid names here come from Welsh tradition and from plants: Meurig, Idris, Alder, Fern, Linden.</p><ul><li><strong>The epithet</strong> follows the Circle: a Moon druid \"Who Runs with Wolves\", a Stars druid \"the Star-Reader\", a Wildfire druid \"Child of the Blaze\".</li><li><strong>Famous figures</strong> of Welsh myth, like Taliesin and Ceridwen, are left out, so every name is yours.</li></ul><p>For the rest of the party, try the <a href=\"ranger-name-generator.html\">Ranger</a>, <a href=\"cleric-name-generator.html\">Cleric</a> and <a href=\"wood-elf-name-generator.html\">Wood Elf</a> name generators.</p><p>For every class and race, see all the <a href=\"../categories/dnd-names.html\">D&amp;D name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good druid name?",
+        "answer": "A Welsh or plant name, like Meurig or Alder, with an epithet for the Circle, like \"Who Runs with Wolves\" for a Circle of the Moon druid."
+      },
+      {
+        "question": "Were druids real?",
+        "answer": "Yes. Druids were the priests and scholars of the Celtic world, described by Julius Caesar and Pliny the Elder."
+      },
+      {
+        "question": "What does druid mean?",
+        "answer": "Possibly \"oak-knower\", from Celtic words for oak and knowledge, though scholars aren't certain."
+      }
+    ]
   }
 }

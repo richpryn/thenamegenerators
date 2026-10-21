@@ -747,7 +747,29 @@
       "tagline": "Names for monks of every Tradition, from the Open Hand to the Drunken Master."
     },
     "intro": "Monks are defined by discipline, and their names are usually simple, calm and easy to say between breaths. This **monk name generator** gives D&D 5e monks a short, steady first name and an epithet for their Monastic Tradition, from the Way of the Open Hand to the Way of the Drunken Master.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "The monk in D&D",
+        "content": "<p>A D&amp;D monk fights with fists and focus, channelling inner energy into fast, precise strikes.</p><ul><li><strong>Traditions:</strong> monks follow a Monastic Tradition, from the Way of the Open Hand, Shadow and the Four Elements in the Player's Handbook to the Drunken Master, Kensei, Sun Soul, Long Death, Mercy and Astral Self in later books.</li><li><strong>The word:</strong> monk comes from the Greek <em>monachos</em>, \"solitary\".</li></ul>"
+      },
+      {
+        "heading": "Naming a monk",
+        "content": "<p>Monk names here are calm, plain English names: Vera, Linus, Ada, Wren.</p><ul><li><strong>The epithet</strong> follows the tradition: an Open Hand monk \"the Still Hand\", a Shadow monk \"the Shadow-Step\", a Drunken Master \"the Lucky Stumble\".</li><li><strong>No borrowed names:</strong> the generator avoids taking names and terms from real Buddhist and other religious traditions.</li></ul><p>For the rest of the party, try the <a href=\"cleric-name-generator.html\">Cleric</a>, <a href=\"paladin-name-generator.html\">Paladin</a> and <a href=\"rogue-name-generator.html\">Rogue</a> name generators.</p><p>For every class and race, see all the <a href=\"../categories/dnd-names.html\">D&amp;D name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good monk name?",
+        "answer": "A calm, plain name, like Vera or Linus, and an epithet for the tradition, like \"the Still Hand\"."
+      },
+      {
+        "question": "What are the monk subclasses?",
+        "answer": "Way of the Open Hand, Shadow and the Four Elements in the Player's Handbook, plus Drunken Master, Kensei, Sun Soul, Long Death, Mercy and Astral Self."
+      },
+      {
+        "question": "What does monk mean?",
+        "answer": "It comes from the Greek monachos, meaning solitary."
+      }
+    ]
   }
 }
