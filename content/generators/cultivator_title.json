@@ -5,7 +5,7 @@
   "category": "wuxia",
   "published": "2026-10-22",
   "noun": "Cultivator Titles",
-  "description": "Titles for xianxia cultivators and immortals: Immortal Venerable of the Jade Peak, Sword Saint of the Western Clouds, demon lords and pill-making alchemists.",
+  "description": "Cultivator titles for xianxia and wuxia: immortal sovereigns, sword monarchs, demonic lords and alchemy saints, like the Drunken Sword Monarch.",
   "seoKeywords": "xianxia title generator, cultivator title generator, immortal title generator, daoist title generator, xianxia titles, cultivation novel titles, wuxia titles",
   "seoTitle": "Cultivator Title Generator: Xianxia Immortal Titles",
   "isPopular": false,
@@ -207,7 +207,29 @@
       "tagline": "Grand titles for immortals, sword saints, demon lords and alchemists."
     },
     "intro": "In xianxia, a cultivator who reaches the top earns a title, and it's usually the name everyone remembers. This **cultivator title generator** makes titles for immortals, sword cultivators, demonic cultivators and alchemists, from Immortal Venerable of the Jade Peak to the Drunken Sword Saint.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Titles in the martial world",
+        "content": "<p>In xianxia a title is the name everyone remembers, earned by power, a deed or a reputation.</p><ul><li><strong>Daoist titles</strong> lie behind many of them: <em>zhenren</em>, the \"perfected person\", and <em>xian</em>, an immortal.</li><li><strong>Venerable, Sovereign and Monarch</strong> show how far up the cultivation ladder someone has climbed.</li><li><strong>An epithet</strong> tells a story in a word: drunken, mad, lonely, merciless.</li></ul>"
+      },
+      {
+        "heading": "Choosing a title",
+        "content": "<ul><li><strong>Immortals</strong> sit on mountains and live forever: Immortal Venerable of the Jade Peak.</li><li><strong>Sword cultivators</strong> are known by their blade: the Drunken Sword Monarch, Sword Fairy of the Last Light.</li><li><strong>Demonic cultivators</strong> are feared: the Lonely Ghost King.</li><li><strong>Alchemists</strong> make pills that grant power: Pill Saint of the Red Furnace, Cauldron Master of the Hundred Herbs.</li></ul><p>For the cultivator's name, try the <a href=\"wuxia-name-generator.html\">Wuxia Name Generator</a>, and for their signature move, the <a href=\"cultivation-technique-name-generator.html\">Cultivation Technique Name Generator</a>.</p><p>For the rest of the martial world, see all the <a href=\"../categories/wuxia-names.html\">wuxia and xianxia name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good xianxia titles?",
+        "answer": "A rank and a story: the Drunken Sword Monarch, Immortal Venerable of the Jade Peak, Pill Saint of the Red Furnace."
+      },
+      {
+        "question": "What does zhenren mean?",
+        "answer": "Perfected person, a Daoist title for someone who has realised the Way. It's behind many cultivator titles."
+      },
+      {
+        "question": "What does a cultivator do?",
+        "answer": "In xianxia, a cultivator trains their inner energy through meditation, techniques and pills, climbing realm by realm towards immortality."
+      }
+    ]
   }
 }

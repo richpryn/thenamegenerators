@@ -4,7 +4,7 @@
   "icon": "🏯",
   "category": "wuxia",
   "published": "2026-10-22",
-  "description": "Wuxia and xianxia character names: real Chinese surnames, including the compound ones the genre loves, and given names from real words with their meanings, with titles and nicknames.",
+  "description": "Wuxia and xianxia names from real Chinese surnames and given names with their meanings, with titles like Senior Sister or nicknames like the Lone Wolf.",
   "seoKeywords": "wuxia name generator, xianxia name generator, chinese fantasy name generator, cultivation novel names, wuxia character names, chinese names with meanings, martial arts character names",
   "seoTitle": "Wuxia Name Generator: Xianxia Names & Meanings",
   "isPopular": false,
@@ -6146,7 +6146,29 @@
       "tagline": "Character names for wuxia and xianxia, from real Chinese surnames and words, with meanings, titles and nicknames."
     },
     "intro": "Wuxia names follow Chinese order, surname first, and the genre loves rare compound surnames like Murong and Ouyang. This **wuxia name generator** pairs real Chinese surnames with given names made from real words, like Yun (cloud) and Xue (snow), with their meanings, a sect title or a jianghu nickname.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Wuxia and xianxia",
+        "content": "<p>Wuxia means \"martial heroes\": stories of sword fighters and wanderers in the <em>jianghu</em>, the \"rivers and lakes\", the world of martial artists outside the law.</p><ul><li><strong>The golden age</strong> of the wuxia novel was the 1950s to the 1980s, led by Jin Yong (Louis Cha), Gu Long and Liang Yusheng.</li><li><strong>Xianxia</strong> means \"immortal heroes\". Its heroes cultivate their inner energy to climb towards immortality, borrowing ideas from Daoism, and the genre boomed in Chinese web novels from the 2000s.</li><li><strong>Both</strong> use the same kind of names, so this generator works for either.</li></ul>"
+      },
+      {
+        "heading": "How the names work",
+        "content": "<p>Chinese names put the surname first: in Zhang Xue, Zhang is the family name and Xue (\"snow\") the given name.</p><ul><li><strong>Compound surnames</strong> like Murong, Ouyang, Zhuge and Shangguan are rare in real life, which is why they feel so wuxia. Murong was the name of a Xianbei clan that ruled northern kingdoms in the 300s and 400s.</li><li><strong>Given names</strong> here are real words, shown with their meaning in the <em>With meaning</em> format.</li><li><strong>Titles</strong> show rank in a sect: Senior Brother (<em>shixiong</em>) and Senior Sister (<em>shijie</em>) for older disciples, Hall Master for a leader.</li><li><strong>Nicknames</strong> are what the jianghu calls you: the Jade-Faced Swordsman, the Lone Wolf.</li></ul><p>Famous names, from historical figures to the heroes of well-known novels, are left out. To give your hero a home, try the <a href=\"cultivation-sect-name-generator.html\">Cultivation Sect Name Generator</a>.</p><p>For the rest of the martial world, see all the <a href=\"../categories/wuxia-names.html\">wuxia and xianxia name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's the difference between wuxia and xianxia?",
+        "answer": "Wuxia is about martial heroes in the jianghu, the world of martial artists. Xianxia is about cultivators training their inner energy to become immortal."
+      },
+      {
+        "question": "Why do wuxia characters have two-character surnames?",
+        "answer": "Compound surnames like Murong, Ouyang and Zhuge are rare and old, which makes them feel noble and mysterious. Most Chinese surnames are one character."
+      },
+      {
+        "question": "What does jianghu mean?",
+        "answer": "Literally \"rivers and lakes\": the world of wandering martial artists, outside the rule of the court."
+      }
+    ]
   }
 }
