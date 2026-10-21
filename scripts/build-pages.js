@@ -1587,6 +1587,13 @@ function build() {
   generateLlmsTxt(site);
   updateStaticPages(site);
 
+  // The menu is hand-picked, so check its links still point to real pages
+  const missingMenu = layout.menuPages().filter(href => !fs.existsSync(path.join(ROOT, href)));
+  if (missingMenu.length) {
+    missingMenu.forEach(href => console.log(`  ❌ The menu links to ${href}, which doesn't exist. Fix MENU in scripts/layout.js.`));
+    process.exit(1);
+  }
+
   console.log(`\n✨ Build complete! Generated ${site.all.length} generator pages and ${content.categories.length} category pages.`);
   return site;
 }
