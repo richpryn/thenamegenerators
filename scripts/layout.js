@@ -160,6 +160,7 @@ const MENU = [
     ['posts/epithet-generator.html', 'Epithets & titles'],
   ], more: [['categories/halloween-names.html', 'Halloween'], ['categories/dnd-names.html', 'D&D'], ['categories/fantasy-names.html', 'Fantasy']] },
   { label: 'Games & TV', id: 'menu-games', links: [
+    ['posts/minecraft-username-generator.html', 'Minecraft usernames'],
     ['posts/hogwarts-legacy-witch-name-generator.html', 'Hogwarts Legacy witch'],
     ['posts/hogwarts-legacy-wizard-name-generator.html', 'Hogwarts Legacy wizard'],
     ['posts/baldurs-gate-3-name-generator.html', "Baldur's Gate 3"],
@@ -169,7 +170,7 @@ const MENU = [
     ['posts/warhammer-name-generator.html', 'Warhammer 40k'],
     ['posts/star-wars-name-generator.html', 'Star Wars'],
     ['posts/game-of-thrones-name-generator.html', 'Game of Thrones'],
-  ], more: [['categories/pop_culture-names.html', 'Pop culture'], ['categories/elder_scrolls-names.html', 'Elder Scrolls']] },
+  ], more: [['categories/minecraft-names.html', 'Minecraft'], ['categories/pop_culture-names.html', 'Pop culture'], ['categories/elder_scrolls-names.html', 'Elder Scrolls']] },
   { label: 'Music & online', id: 'menu-music', links: [
     ['posts/band-name-generator.html', 'Band names'],
     ['posts/rapper-name-generator.html', 'Rapper names'],

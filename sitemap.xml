@@ -107,6 +107,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Category: Minecraft -->
+  <url>
+    <loc>https://thenamegenerators.com/categories/minecraft-names.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Category: Folklore -->
   <url>
     <loc>https://thenamegenerators.com/categories/folklore-names.html</loc>
@@ -698,6 +705,69 @@
   <!-- Generator: Medieval Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/medieval-name-generator.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Minecraft Clan Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/minecraft-clan-name-generator.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Minecraft Tool and Weapon Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/minecraft-tool-name-generator.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Minecraft Name From Your Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/minecraft-name-from-your-name.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Minecraft Pet Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/minecraft-pet-name-generator.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Minecraft Server Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/minecraft-server-name-generator.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Minecraft Town Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/minecraft-town-name-generator.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Minecraft Username Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/minecraft-username-generator.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Minecraft Villager Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/minecraft-villager-name-generator.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Minecraft World Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/minecraft-world-name-generator.html</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

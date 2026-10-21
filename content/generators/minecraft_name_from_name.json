@@ -1,0 +1,259 @@
+{
+  "title": "Minecraft Name From Your Name Generator",
+  "slug": "minecraft-name-from-your-name",
+  "icon": "🧱",
+  "category": "minecraft",
+  "published": "2026-10-21",
+  "noun": "Minecraft Names",
+  "description": "Type your name and get Minecraft usernames made from it: with mobs, ores, cool words, cute words or a joke, in letters, numbers and underscores only.",
+  "seoKeywords": "minecraft name from your name, minecraft name generator with your name, what's my minecraft name, minecraft username from name, minecraft name maker, minecraft nickname generator",
+  "isPopular": false,
+  "maxLength": 16,
+  "filters": {
+    "name": {
+      "type": "text",
+      "label": "Your name",
+      "placeholder": "e.g. Sam",
+      "default": "Sam",
+      "example": "Sam",
+      "username": true
+    },
+    "style": {
+      "label": "Style",
+      "options": [
+        "any",
+        "mob",
+        "miner",
+        "cool",
+        "funny",
+        "cute"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "mob": "With a mob (SamTheCreeper)",
+        "miner": "Miner and ores (DiamondSam)",
+        "cool": "Cool (Sam_Void)",
+        "funny": "Funny (SamAteDirt)",
+        "cute": "Cute (LilSam)"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "style",
+  "cases": {
+    "mob": {
+      "recipe": "template",
+      "template": [
+        "[mobs]{name}",
+        "{name}[mobs]",
+        "{name}The[mobs]",
+        "{name}_[mobs]"
+      ]
+    },
+    "miner": {
+      "recipe": "template",
+      "template": [
+        "{name}[miner]",
+        "[ores]{name}",
+        "{name}[ores]",
+        "[ores]_{name}"
+      ]
+    },
+    "cool": {
+      "recipe": "template",
+      "template": [
+        "x{name}x",
+        "{name}_[cool]",
+        "[cool]{name}",
+        "xX{name}Xx",
+        "{name}[cool]"
+      ]
+    },
+    "funny": {
+      "recipe": "template",
+      "template": [
+        "{name}[funny]",
+        "{name}[funny]",
+        "Not{name}",
+        "Sleepy{name}",
+        "Noob{name}",
+        "{name}NoDiamonds",
+        "{name}VsCreepers",
+        "Captain{name}",
+        "{name}TheNoob",
+        "Oops{name}"
+      ]
+    },
+    "cute": {
+      "recipe": "template",
+      "template": [
+        "Lil{name}",
+        "{name}[cute]",
+        "[cute]{name}",
+        "{name}_[cute]"
+      ]
+    },
+    "any": {
+      "recipe": "template",
+      "template": [
+        "[mobs]{name}",
+        "{name}[mobs]",
+        "{name}The[mobs]",
+        "{name}_[mobs]",
+        "{name}[miner]",
+        "[ores]{name}",
+        "{name}[ores]",
+        "[ores]_{name}",
+        "x{name}x",
+        "{name}_[cool]",
+        "[cool]{name}",
+        "xX{name}Xx",
+        "{name}[cool]",
+        "{name}[funny]",
+        "{name}[funny]",
+        "Not{name}",
+        "Sleepy{name}",
+        "Noob{name}",
+        "{name}NoDiamonds",
+        "{name}VsCreepers",
+        "Captain{name}",
+        "{name}TheNoob",
+        "Oops{name}",
+        "Lil{name}",
+        "{name}[cute]",
+        "[cute]{name}",
+        "{name}_[cute]"
+      ]
+    }
+  },
+  "data": {
+    "mobs": [
+      "Creeper",
+      "Ghast",
+      "Blaze",
+      "Slime",
+      "Piglin",
+      "Warden",
+      "Ender",
+      "Wither",
+      "Golem",
+      "Axolotl",
+      "Phantom",
+      "Sniffer",
+      "Allay",
+      "Strider",
+      "Shulker",
+      "Breeze",
+      "Hoglin",
+      "Wolf",
+      "Fox",
+      "Panda",
+      "Bee",
+      "Goat",
+      "Frog",
+      "Camel",
+      "Turtle",
+      "Dolphin",
+      "Parrot",
+      "Ocelot",
+      "Llama",
+      "Squid"
+    ],
+    "ores": [
+      "Diamond",
+      "Emerald",
+      "Redstone",
+      "Iron",
+      "Gold",
+      "Copper",
+      "Lapis",
+      "Netherite",
+      "Coal",
+      "Quartz",
+      "Amethyst",
+      "Obsidian"
+    ],
+    "miner": [
+      "Mines",
+      "Crafts",
+      "Builds",
+      "Digs",
+      "Craft",
+      "MC",
+      "Miner",
+      "Builder",
+      "_MC",
+      "Plays"
+    ],
+    "cool": [
+      "Void",
+      "Frost",
+      "Shadow",
+      "Blaze",
+      "Nova",
+      "Storm",
+      "Byte",
+      "Rune",
+      "Edge",
+      "Strike",
+      "Fang",
+      "Bolt",
+      "Onyx",
+      "Neon",
+      "Ghost",
+      "Viper",
+      "Raven",
+      "Pulse",
+      "Drift",
+      "Flux"
+    ],
+    "cute": [
+      "Bee",
+      "Boo",
+      "Paws",
+      "Bun",
+      "Moo",
+      "Sprout",
+      "Bean",
+      "Puff",
+      "Blossom",
+      "Pie",
+      "Berry",
+      "Cookie",
+      "Petal",
+      "Honey",
+      "Mochi",
+      "Pebble",
+      "Button",
+      "Clover"
+    ],
+    "funny": [
+      "AteDirt",
+      "LostMyBed",
+      "HatesGravel",
+      "FellInLava",
+      "LovesCows",
+      "IsLost",
+      "NeedsFood",
+      "Panics",
+      "IsHungry",
+      "BuiltADirtHut",
+      "SleepsInDirt",
+      "FearsChickens",
+      "HasNoPickaxe",
+      "LovesGravel",
+      "IsAfk",
+      "NeedsABed",
+      "BuildsBadly"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🧱 Minecraft Name From Your Name Generator",
+      "tagline": "Type your name and get Minecraft usernames built from it."
+    },
+    "intro": "The easiest Minecraft name to remember is one built from your own: SamTheCreeper, DiamondSam, LilSam. This **Minecraft name from your name generator** takes your first name or nickname, cleans it up to letters and numbers, and builds it into usernames in five styles.",
+    "sections": [],
+    "faqs": []
+  }
+}

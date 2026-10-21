@@ -18,7 +18,8 @@
     "warhammer": "sword",
     "concepts": "lightbulb",
     "events": "bunting",
-    "halloween": "pumpkin"
+    "halloween": "pumpkin",
+    "minecraft": "pickaxe"
   },
   "generators": {
     "album": "vinyl",
@@ -93,6 +94,15 @@
     "lotr_orc": "war-axe",
     "lotr_wizard": "wizard-hat",
     "medieval": "castle",
+    "minecraft_clan": "banner",
+    "minecraft_item": "pickaxe",
+    "minecraft_name_from_name": "pickaxe",
+    "minecraft_pet": "paw",
+    "minecraft_server": "gamepad",
+    "minecraft_town": "castle",
+    "minecraft_username": "pickaxe",
+    "minecraft_villager": "house",
+    "minecraft_world": "mountain",
     "monster": "horns",
     "mummy": "hourglass",
     "name_combiner": "two-circles",

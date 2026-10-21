@@ -246,6 +246,47 @@
     ]
   },
   {
+    "name": "Minecraft",
+    "slug": "minecraft",
+    "icon": "⛏️",
+    "navLabel": "Minecraft Names",
+    "heading": "Minecraft Name Generators: Usernames, Villagers, Worlds and More",
+    "seoTitle": "Minecraft Name Generators: Usernames, Worlds, Pets",
+    "description": "Names for everything in Minecraft: usernames, villagers, pets, worlds, servers, towns, clans and enchanted tools.",
+    "seoDescription": "Minecraft name generators for usernames, villagers, pets, worlds, servers, towns, clans and tools. Free, with names that fit Minecraft's rules.",
+    "intro": "<p>Minecraft gives you a lot to name: yourself, your world, your server, the wolf that follows you everywhere and the pickaxe you've put three enchantments on. Start with a <a href=\"../posts/minecraft-username-generator.html\">username</a> that fits the rules (3 to 16 letters, numbers and underscores), or build one <a href=\"../posts/minecraft-name-from-your-name.html\">from your own name</a>.</p><p>For the things you name with a name tag, there are <a href=\"../posts/minecraft-villager-name-generator.html\">villager names</a> by profession and biome and <a href=\"../posts/minecraft-pet-name-generator.html\">pet names</a> for everything from wolves to axolotls. For the places you build, try the <a href=\"../posts/minecraft-world-name-generator.html\">world</a>, <a href=\"../posts/minecraft-server-name-generator.html\">server and SMP</a> and <a href=\"../posts/minecraft-town-name-generator.html\">town, village and kingdom</a> name generators. And for everything you fight with, there are <a href=\"../posts/minecraft-clan-name-generator.html\">clan and faction names</a>, <a href=\"../posts/minecraft-tool-name-generator.html\">names for tools and weapons</a> and <a href=\"../posts/funny-minecraft-sword-name-generator.html\">funny sword names</a>.</p>",
+    "generators": [
+      "minecraft_username",
+      "minecraft_name_from_name",
+      "minecraft_villager",
+      "minecraft_pet",
+      "minecraft_world",
+      "minecraft_server",
+      "minecraft_town",
+      "minecraft_clan",
+      "minecraft_item",
+      "funny_sword"
+    ],
+    "featured": [
+      {
+        "key": "minecraft_username",
+        "note": "usernames that fit Minecraft's 3 to 16 character rules, from GhastBuster to LostMyBed."
+      },
+      {
+        "key": "minecraft_villager",
+        "note": "villager names by profession and biome, for your trading hall."
+      },
+      {
+        "key": "minecraft_pet",
+        "note": "name tag ideas for wolves, cats, horses, axolotls, parrots and more."
+      },
+      {
+        "key": "minecraft_world",
+        "note": "world names for survival, hardcore, creative, cosy and funny worlds."
+      }
+    ]
+  },
+  {
     "name": "Folklore",
     "slug": "folklore",
     "icon": "📜",

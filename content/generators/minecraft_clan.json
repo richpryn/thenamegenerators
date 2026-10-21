@@ -1,0 +1,224 @@
+{
+  "title": "Minecraft Clan Name Generator",
+  "slug": "minecraft-clan-name-generator",
+  "icon": "🛡️",
+  "category": "minecraft",
+  "published": "2026-10-21",
+  "description": "Names for Minecraft clans, factions, teams and SMP friend groups: the Obsidian Pact, Void Reapers, the Redstone Rascals and the Dirt Hut Gang.",
+  "seoKeywords": "minecraft clan name generator, minecraft clan names, minecraft faction names, minecraft team names, bedwars team names, smp team names, minecraft guild names",
+  "isPopular": false,
+  "filters": {
+    "style": {
+      "label": "Kind of group",
+      "options": [
+        "any",
+        "faction",
+        "clan",
+        "team",
+        "friends"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "faction": "Faction (the Obsidian Pact)",
+        "clan": "PvP clan (Void Reapers)",
+        "team": "Team (the Redstone Rascals)",
+        "friends": "Friends on an SMP (the Dirt Hut Gang)"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "style",
+  "cases": {
+    "faction": {
+      "recipe": "template",
+      "template": "The [faction.a] [faction.b]"
+    },
+    "clan": {
+      "recipe": "template",
+      "template": [
+        "[clan.a] [clan.b]",
+        "The [clan.a] [clan.b]"
+      ]
+    },
+    "team": {
+      "recipe": "template",
+      "template": [
+        "Team [team.a]",
+        "The [team.adj] [team.plural]",
+        "The [team.adj] [team.plural]"
+      ]
+    },
+    "friends": {
+      "recipe": "template",
+      "template": "The [friends.a] [friends.b]"
+    },
+    "any": {
+      "recipe": "template",
+      "template": [
+        "The [faction.a] [faction.b]",
+        "[clan.a] [clan.b]",
+        "The [clan.a] [clan.b]",
+        "Team [team.a]",
+        "The [team.adj] [team.plural]",
+        "The [team.adj] [team.plural]",
+        "The [friends.a] [friends.b]"
+      ]
+    }
+  },
+  "data": {
+    "faction": {
+      "a": [
+        "Obsidian",
+        "Crimson",
+        "Netherite",
+        "Ender",
+        "Wither",
+        "Iron",
+        "Void",
+        "Ashen",
+        "Blackstone",
+        "Emerald",
+        "Prismarine",
+        "Warped",
+        "Shadow",
+        "Blaze",
+        "Ancient"
+      ],
+      "b": [
+        "Pact",
+        "Legion",
+        "Empire",
+        "Order",
+        "Alliance",
+        "Dominion",
+        "Syndicate",
+        "Covenant",
+        "Brotherhood",
+        "Republic",
+        "Accord",
+        "Vanguard",
+        "Union",
+        "Concord",
+        "Throne"
+      ]
+    },
+    "clan": {
+      "a": [
+        "Void",
+        "Crit",
+        "Shadow",
+        "Frost",
+        "Blaze",
+        "Storm",
+        "Night",
+        "Ender",
+        "Neon",
+        "Ghost",
+        "Iron",
+        "Rogue",
+        "Phantom",
+        "Wither",
+        "Crimson"
+      ],
+      "b": [
+        "Reapers",
+        "Wolves",
+        "Raiders",
+        "Strikers",
+        "Vipers",
+        "Hunters",
+        "Kings",
+        "Legends",
+        "Ravens",
+        "Titans",
+        "Knights",
+        "Clan",
+        "Squad",
+        "Fangs",
+        "Blades"
+      ]
+    },
+    "team": {
+      "a": [
+        "Creeper",
+        "Diamond",
+        "Redstone",
+        "Axolotl",
+        "Bedrock",
+        "Netherite",
+        "Emerald",
+        "Lava",
+        "Ender Pearl",
+        "Golden Apple",
+        "Totem",
+        "Beacon"
+      ],
+      "adj": [
+        "Redstone",
+        "Cobblestone",
+        "Diamond",
+        "Sneaky",
+        "Speedy",
+        "Mighty",
+        "Golden",
+        "Copper",
+        "Mossy",
+        "Lucky"
+      ],
+      "plural": [
+        "Rascals",
+        "Raiders",
+        "Rockets",
+        "Builders",
+        "Miners",
+        "Crafters",
+        "Creepers",
+        "Blazers",
+        "Diggers",
+        "Golems"
+      ]
+    },
+    "friends": {
+      "a": [
+        "Dirt Hut",
+        "Gravel",
+        "Chicken",
+        "Cobble",
+        "Pufferfish",
+        "Cookie",
+        "Pumpkin",
+        "Noob",
+        "Midnight",
+        "Sleepless",
+        "Potato",
+        "Sheep",
+        "Llama",
+        "Slime",
+        "Sweet Berry"
+      ],
+      "b": [
+        "Gang",
+        "Crew",
+        "Club",
+        "Society",
+        "Collective",
+        "Mob",
+        "Bunch",
+        "Posse",
+        "Squad",
+        "Committee",
+        "Council",
+        "Fan Club"
+      ]
+    }
+  },
+  "article": {
+    "hero": {
+      "title": "🛡️ Minecraft Clan Name Generator",
+      "tagline": "Names for factions, PvP clans, Bedwars teams and your friends on an SMP."
+    },
+    "intro": "Whether you're founding a faction, joining a PvP clan or just need a name for your friends' corner of an SMP, a group name gives everyone something to rally behind. This **Minecraft clan name generator** makes names for factions, clans, teams and friend groups.",
+    "sections": [],
+    "faqs": []
+  }
+}
