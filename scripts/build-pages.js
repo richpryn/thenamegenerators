@@ -991,7 +991,7 @@ ${scriptJson({
 
     ${layout.siteFooter('')}
     ${layout.bodyScripts('', { engine: true })}
-    <script src="lib/wheel.js"></script>
+    <script src="${layout.asset('', 'lib/wheel.js')}"></script>
 </body>
 </html>`;
 }
@@ -1299,7 +1299,7 @@ ${scriptJson({
 
     ${layout.siteFooter('')}
     ${layout.bodyScripts('', { engine: true })}
-    <script src="lib/nametools.js"></script>
+    <script src="${layout.asset('', 'lib/nametools.js')}"></script>
 </body>
 </html>`;
 }

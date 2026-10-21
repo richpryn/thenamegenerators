@@ -28,7 +28,7 @@ function escapeHtml(text) {
 
 // Stylesheets and scripts get "?v=<hash of the file>" so browsers fetch the
 // new copy after every change instead of keeping a stale cached one.
-const ASSETS = ['styles/site.css', 'lib/page.js', 'lib/outline.js', 'lib/recipe-engine.js'];
+const ASSETS = ['styles/site.css', 'lib/page.js', 'lib/outline.js', 'lib/recipe-engine.js', 'lib/wheel.js', 'lib/nametools.js'];
 const versions = {};
 function assetVersion(file) {
   if (!versions[file]) {
@@ -171,6 +171,6 @@ function stripEmoji(text) {
 }
 
 module.exports = {
-  SITE_NAME, escapeHtml, headAssets, stampAssets, bodyScripts, svgSprite, siteHeader, siteFooter,
+  SITE_NAME, escapeHtml, asset, headAssets, stampAssets, bodyScripts, svgSprite, siteHeader, siteFooter,
   doodle, categoryMotif, generatorMotif, highlightFirstWord, stripEmoji, categoryLinks,
 };
