@@ -130,7 +130,24 @@
         "Sorelion",
         "Tharandel",
         "Velithar",
-        "Kaelorn"
+        "Kaelorn",
+        "Adran",
+        "Berrian",
+        "Carric",
+        "Dayereth",
+        "Enialis",
+        "Galinndan",
+        "Hadarai",
+        "Immeral",
+        "Laucian",
+        "Mindartis",
+        "Peren",
+        "Quarion",
+        "Riardon",
+        "Soveliss",
+        "Thamior",
+        "Ivellios",
+        "Heian"
       ],
       "generic": [
         "Alvar",
@@ -167,7 +184,21 @@
         "Varion",
         "Aethril",
         "Calenor",
-        "Eredil"
+        "Eredil",
+        "Aeron",
+        "Belion",
+        "Caladhel",
+        "Dorlas",
+        "Erethon",
+        "Findor",
+        "Gaelon",
+        "Ilthor",
+        "Lothiel",
+        "Merethil",
+        "Narion",
+        "Saelon",
+        "Thalor",
+        "Elidor"
       ]
     },
     "female": {
@@ -192,7 +223,8 @@
         "Mithrellas",
         "Amarië",
         "Írimë",
-        "Findis"
+        "Findis",
+        "Tatië"
       ],
       "dnd": [
         "Aeloria",
@@ -230,7 +262,29 @@
         "Myrrhiel",
         "Shaelira",
         "Tisaren",
-        "Vyrelle"
+        "Vyrelle",
+        "Adrie",
+        "Althaea",
+        "Anastrianna",
+        "Andraste",
+        "Antinua",
+        "Bethrynna",
+        "Birel",
+        "Drusilia",
+        "Enna",
+        "Felosial",
+        "Ielenia",
+        "Jelenneth",
+        "Keyleth",
+        "Leshanna",
+        "Lia",
+        "Mialee",
+        "Sariel",
+        "Shava",
+        "Thia",
+        "Vadania",
+        "Valanthe",
+        "Xanaphia"
       ],
       "generic": [
         "Elara",
@@ -268,7 +322,19 @@
         "Sariel",
         "Thaliana",
         "Vanya",
-        "Wynne"
+        "Wynne",
+        "Aerwyn",
+        "Belanor",
+        "Celeste",
+        "Dalinwe",
+        "Elenya",
+        "Faelith",
+        "Iliana",
+        "Lothwen",
+        "Mirien",
+        "Nimriel",
+        "Rhiannel",
+        "Viriel"
       ]
     },
     "neutral": {
@@ -340,7 +406,22 @@
         "Sael",
         "Erith",
         "Nyss",
-        "Aelin"
+        "Aelin",
+        "Aelar",
+        "Arannis",
+        "Erdan",
+        "Ilvar",
+        "Kethryllia",
+        "Lael",
+        "Naivara",
+        "Silaqui",
+        "Sylvar",
+        "Tharivol",
+        "Variel",
+        "Elaith",
+        "Ferryn",
+        "Ithar",
+        "Saelis"
       ]
     }
   },

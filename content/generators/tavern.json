@@ -99,7 +99,15 @@
       "Silver",
       "Grey",
       "Copper",
-      "Scarlet"
+      "Scarlet",
+      "Brown",
+      "Dun",
+      "Speckled",
+      "Pied",
+      "Purple",
+      "Crimson",
+      "Yellow",
+      "Spotted"
     ],
     "beasts": [
       "Lion",
@@ -137,7 +145,17 @@
       "Knight's",
       "Abbot's",
       "Wizard's",
-      "Dragon's"
+      "Dragon's",
+      "Shepherd's",
+      "Ploughman's",
+      "Admiral's",
+      "Fisherman's",
+      "Carpenter's",
+      "Pilgrim's",
+      "Hermit's",
+      "Woodman's",
+      "Drover's",
+      "Bargeman's"
     ],
     "arms": [
       "Masons",
@@ -153,7 +171,17 @@
       "Harrow",
       "Thornbury",
       "Greymoor",
-      "Oakhart"
+      "Oakhart",
+      "Fletchers",
+      "Tanners",
+      "Drovers",
+      "Wheelwrights",
+      "Bricklayers",
+      "Shepherds",
+      "Foresters",
+      "Thatchers",
+      "Hatfield",
+      "Kingsley"
     ],
     "signs": [
       "Plough",
@@ -192,7 +220,17 @@
       "Moon",
       "Kettle",
       "Lantern",
-      "Crook"
+      "Crook",
+      "Hen",
+      "Cat",
+      "Bear",
+      "Ship",
+      "Ring",
+      "Arrow",
+      "Wheat",
+      "Oak",
+      "Thistle",
+      "Hawk"
     ],
     "pairsB": [
       "Crown",
@@ -209,7 +247,16 @@
       "Stars",
       "Drum",
       "Key",
-      "Barrel"
+      "Barrel",
+      "Fiddle",
+      "Bow",
+      "Wheel",
+      "Basket",
+      "Lute",
+      "Ladder",
+      "Feather",
+      "Acorn",
+      "Candle"
     ],
     "fantasyAdj": [
       "Prancing",
@@ -291,7 +338,17 @@
       "Sorry",
       "Last",
       "Tarred",
-      "Soggy"
+      "Soggy",
+      "Briny",
+      "Tattered",
+      "Waterlogged",
+      "Barnacled",
+      "Listing",
+      "Weathered",
+      "Bilge",
+      "Midnight",
+      "Patched",
+      "Grumpy"
     ],
     "dockNoun": [
       "Hook",
@@ -311,7 +368,17 @@
       "Sailor",
       "Kraken",
       "Bilge Rat",
-      "Lobster"
+      "Lobster",
+      "Mermaid",
+      "Harpoon",
+      "Crab",
+      "Hammock",
+      "Bosun",
+      "Compass",
+      "Gangplank",
+      "Tide",
+      "Sea Dog",
+      "Herring"
     ],
     "fineAdj": [
       "Gilded",
@@ -327,7 +394,17 @@
       "Sapphire",
       "Emerald",
       "Copper",
-      "Moonlit"
+      "Moonlit",
+      "Silken",
+      "Opal",
+      "Rosewood",
+      "Gossamer",
+      "Starlit",
+      "Jade",
+      "Porcelain",
+      "Velvet-Lined",
+      "Silvered",
+      "Blushing"
     ],
     "fineNoun": [
       "Swan",
@@ -345,7 +422,19 @@
       "Lyre",
       "Stag",
       "Unicorn",
-      "Goblet"
+      "Goblet",
+      "Nightingale",
+      "Orchid",
+      "Sceptre",
+      "Carriage",
+      "Pavilion",
+      "Dove",
+      "Tiara",
+      "Locket",
+      "Firebird",
+      "Camellia",
+      "Rosebud",
+      "Ballroom"
     ],
     "funny": [
       "The Critical Fail",

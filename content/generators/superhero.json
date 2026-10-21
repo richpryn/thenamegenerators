@@ -138,14 +138,26 @@
       "Glass",
       "Shield",
       "Ember",
-      "Tide"
+      "Tide",
+      "Star",
+      "Iron",
+      "Night",
+      "Sun",
+      "Rain",
+      "Spark",
+      "Comet",
+      "Bolt",
+      "Mist",
+      "Flare"
     ],
     "suffix": [
       "Man",
       "Woman",
       "Girl",
       "Boy",
-      "Kid"
+      "Kid",
+      "Lad",
+      "Lass"
     ],
     "titles": [
       "Captain",
@@ -156,7 +168,16 @@
       "Professor",
       "Commander",
       "Lady",
-      "Sir"
+      "Sir",
+      "Major",
+      "General",
+      "Baron",
+      "Madame",
+      "Dame",
+      "Lieutenant",
+      "Admiral",
+      "Count",
+      "Miss"
     ],
     "single": [
       "Nebula",
@@ -178,7 +199,27 @@
       "Torque",
       "Cadence",
       "Flux",
-      "Apex"
+      "Apex",
+      "Gravity",
+      "Tachyon",
+      "Override",
+      "Resonance",
+      "Firewall",
+      "Afterglow",
+      "Overcast",
+      "Undertow",
+      "Lodestar",
+      "Tempo",
+      "Refrain",
+      "Static",
+      "Riptide",
+      "Bulwark",
+      "Vanguard",
+      "Moonrise",
+      "Ignition",
+      "Kilowatt",
+      "Rebound",
+      "Ricochet"
     ]
   },
   "article": {

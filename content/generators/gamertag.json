@@ -245,7 +245,17 @@
           "Duke",
           "Mister",
           "Madam",
-          "General"
+          "General",
+          "Uncle",
+          "Granny",
+          "Señor",
+          "Monsieur",
+          "Admiral",
+          "Sergeant",
+          "Captain Obvious",
+          "Little",
+          "Big",
+          "Saint"
         ],
         "n": [
           "Snacks",
@@ -296,7 +306,15 @@
           "Mithril",
           "Arcane",
           "Dusk",
-          "Bone"
+          "Bone",
+          "Blood",
+          "Gloom",
+          "Night",
+          "Sun",
+          "Fire",
+          "Soul",
+          "Doom",
+          "Rime"
         ],
         "n": [
           "bane",
@@ -318,7 +336,15 @@
           "mancer",
           "rider",
           "slayer",
-          "crest"
+          "crest",
+          "crown",
+          "reaver",
+          "strider",
+          "brand",
+          "whisper",
+          "hollow",
+          "fall",
+          "shard"
         ]
       }
     },
@@ -380,7 +406,18 @@
       "808",
       "999",
       "2000",
-      "3000"
+      "3000",
+      "3",
+      "5",
+      "11",
+      "23",
+      "33",
+      "47",
+      "123",
+      "360",
+      "512",
+      "1337",
+      "2077"
     ]
   },
   "article": {

@@ -123,7 +123,22 @@
         "Hallbjorn",
         "Thrain",
         "Vemund",
-        "Ivar"
+        "Ivar",
+        "Arnolf",
+        "Dagfinn",
+        "Eyvind",
+        "Folkvar",
+        "Grimolf",
+        "Hallvard",
+        "Isleif",
+        "Jokul",
+        "Kolfinn",
+        "Lodin",
+        "Mundi",
+        "Odvar",
+        "Rolfgar",
+        "Thrand",
+        "Vali"
       ],
       "female": [
         "Astrid",
@@ -164,7 +179,18 @@
         "Ranveig",
         "Saga",
         "Tove",
-        "Groa"
+        "Groa",
+        "Asfrid",
+        "Dagrun",
+        "Fridgerd",
+        "Hrefna",
+        "Inga",
+        "Jofrid",
+        "Ketilrid",
+        "Liv",
+        "Oddny",
+        "Ragnfrid",
+        "Sigvor"
       ]
     },
     "famA": [
@@ -214,7 +240,18 @@
       "Shard",
       "Spear",
       "Eye",
-      "Skull"
+      "Skull",
+      "Shield",
+      "Born",
+      "Mane",
+      "Blood",
+      "Claw",
+      "Crest",
+      "Mead",
+      "Rune",
+      "Stride",
+      "Mantle",
+      "Field"
     ],
     "epithets": [
       "the Bold",
@@ -236,7 +273,20 @@
       "the Young",
       "Bear-Slayer",
       "the Unbowed",
-      "Storm-Caller"
+      "Storm-Caller",
+      "the Steadfast",
+      "the Hunter",
+      "Snow-Strider",
+      "the Patient",
+      "Wolf-Friend",
+      "the Generous",
+      "Stormcaller",
+      "the Cunning",
+      "Elkhunter",
+      "the Silent",
+      "the Brave",
+      "Mead-Maker",
+      "the Far-Walker"
     ]
   },
   "article": {

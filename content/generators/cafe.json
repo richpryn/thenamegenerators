@@ -132,7 +132,18 @@
       "Knead",
       "Proof",
       "Larder",
-      "Nook"
+      "Nook",
+      "Mocha",
+      "Mug",
+      "Dunk",
+      "Latte",
+      "Flat White",
+      "Pot",
+      "Bun",
+      "Scone",
+      "Macchiato",
+      "Affogato",
+      "Brew Box"
     ],
     "french": [
       "Café Noir",
@@ -174,7 +185,20 @@
       "Le Petit Déjeuner",
       "Café du Port",
       "Café des Arts",
-      "La Pause"
+      "La Pause",
+      "Café Marigold",
+      "Le Petit Matin",
+      "Café Douceur",
+      "La Tasse d'Or",
+      "Le Croissant Doré",
+      "Café Belle Rive",
+      "Café Papillon",
+      "La Petite Cuillère",
+      "Café Sucre",
+      "Café Pommier",
+      "Le Grain d'Or",
+      "Café Mistral",
+      "Café Tilleul"
     ],
     "italian": [
       "Caffè Dolce",
@@ -216,7 +240,18 @@
       "Al Portico",
       "Caffè degli Amici",
       "Caffè del Mercato",
-      "La Bottega del Caffè"
+      "La Bottega del Caffè",
+      "Caffè Gioia",
+      "Caffè Nocciola",
+      "Caffè Bella Vita",
+      "Il Chicco d'Oro",
+      "Caffè Mattina",
+      "Caffè Amaro",
+      "Caffè Riva",
+      "Caffè Limone",
+      "Caffè Bacio",
+      "Caffè Porto",
+      "Caffè Vespa"
     ],
     "pairs": {
       "left": [
@@ -389,7 +424,15 @@
         "Espresso Bar",
         "Canteen",
         "Coffee Shop",
-        "Kitchen & Coffee"
+        "Kitchen & Coffee",
+        "Coffee Roasters",
+        "Bakery",
+        "Café & Bakery",
+        "Tea Rooms",
+        "Coffee Bar",
+        "Pantry",
+        "Deli",
+        "Coffee Hut"
       ]
     },
     "modern": {
@@ -414,7 +457,15 @@
         "Twenty-One",
         "Thirty",
         "Forty",
-        "Sixty"
+        "Sixty",
+        "Twelve",
+        "Fifteen",
+        "Sixteen",
+        "Twenty-Two",
+        "Twenty-Five",
+        "Twenty-Eight",
+        "Thirty-Six",
+        "Fifty"
       ],
       "word": [
         "Origin",
@@ -478,7 +529,25 @@
       "Elevenses",
       "Brew & Bake",
       "Kettle's On",
-      "Biscuit Tin"
+      "Biscuit Tin",
+      "Grounds Control",
+      "Bean Me Up",
+      "Brew-tiful",
+      "Thyme for Tea",
+      "Latte Da",
+      "Pour Decisions",
+      "Mug Life",
+      "Steamy Beans",
+      "The Perky Pot",
+      "Better Latte Than Never",
+      "Tea Total",
+      "Holy Cannoli",
+      "Spill the Beans",
+      "Bean Counter",
+      "Have a Brew",
+      "Teapot Tales",
+      "Grind and Shine",
+      "Scone With the Wind"
     ]
   },
   "article": {

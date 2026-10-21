@@ -969,7 +969,13 @@
         "Software",
         "Devices",
         "Network",
-        "Studio"
+        "Studio",
+        "AI",
+        "Dynamics",
+        "Interactive",
+        "Solutions",
+        "Computing",
+        "Platforms"
       ],
       "luxury_premium": [
         "& Co.",
@@ -981,7 +987,13 @@
         "Couture",
         "Jewellers",
         "Editions",
-        "Salon"
+        "Salon",
+        "Fine Goods",
+        "Atelier Privé",
+        "Rare",
+        "Private Label",
+        "Perfumery",
+        "Leather Goods"
       ],
       "nature_organic": [
         "Botanicals",
@@ -993,7 +1005,13 @@
         "Skincare",
         "Herbals",
         "Garden",
-        "Remedies"
+        "Remedies",
+        "Wild",
+        "Harvest",
+        "Seeds",
+        "Meadow Co.",
+        "Wellness",
+        "Foods"
       ],
       "bold_athletic": [
         "Athletics",
@@ -1005,7 +1023,13 @@
         "Supply",
         "Club",
         "Running",
-        "Pro"
+        "Pro",
+        "Active",
+        "Sportswear",
+        "Strength",
+        "Endurance",
+        "Athletic Co.",
+        "Run Club"
       ],
       "modern_minimalist": [
         "Studio",
@@ -1017,7 +1041,13 @@
         "Home",
         "Edit",
         "Form",
-        "Lab"
+        "Lab",
+        "Space",
+        "Works",
+        "Store",
+        "Shop",
+        "Things",
+        "Folk"
       ],
       "food_beverage": [
         "Kitchen",
@@ -1031,7 +1061,13 @@
         "Creamery",
         "Larder",
         "Mill",
-        "Deli"
+        "Deli",
+        "Bakery",
+        "Roasters",
+        "Distillery",
+        "Kitchen Co.",
+        "Snacks",
+        "Grocer"
       ],
       "creative_artistic": [
         "Studio",
@@ -1043,7 +1079,13 @@
         "Prints",
         "Editions",
         "Paper Co.",
-        "Ink"
+        "Ink",
+        "Atelier",
+        "Art Supply",
+        "Paperworks",
+        "Lettering",
+        "Pottery",
+        "Arts"
       ],
       "urban_street": [
         "Supply",
@@ -1055,7 +1097,13 @@
         "Club",
         "Skate Co.",
         "Records",
-        "Threads"
+        "Threads",
+        "Athletics",
+        "Garms",
+        "Supply Co.",
+        "Streetwear",
+        "Kicks",
+        "Crew"
       ],
       "ocean_maritime": [
         "Surf",
@@ -1067,7 +1115,13 @@
         "Coastal",
         "Seafood",
         "Diving",
-        "Tide Co."
+        "Tide Co.",
+        "Swimwear",
+        "Oyster Co.",
+        "Boat Club",
+        "Shipping",
+        "Sea Salt",
+        "Harbour Co."
       ],
       "desert_earth": [
         "Outfitters",
@@ -1079,7 +1133,13 @@
         "Clay Co.",
         "Ceramics",
         "Mercantile",
-        "Expeditions"
+        "Expeditions",
+        "Stoneware",
+        "Provisions",
+        "Rugs",
+        "Outpost",
+        "Workshop",
+        "Leatherworks"
       ],
       "space_cosmic": [
         "Labs",
@@ -1091,7 +1151,13 @@
         "Audio",
         "Robotics",
         "Media",
-        "Observatory"
+        "Observatory",
+        "Space",
+        "Satellites",
+        "Launch",
+        "Telescopes",
+        "Planetarium",
+        "Dynamics"
       ],
       "heritage_vintage": [
         "& Sons",
@@ -1103,7 +1169,13 @@
         "Haberdashery",
         "Brothers",
         "Workshop",
-        "Est. 1887"
+        "Est. 1887",
+        "& Co.",
+        "Emporium",
+        "Provisions",
+        "Since 1902",
+        "Saddlery",
+        "Bootmakers"
       ],
       "energy_power": [
         "Energy",
@@ -1115,7 +1187,13 @@
         "Batteries",
         "Motors",
         "Charge",
-        "Wind"
+        "Wind",
+        "Utilities",
+        "Hydro",
+        "Generation",
+        "Power Co.",
+        "Storage",
+        "Lighting"
       ],
       "fashion_style": [
         "Atelier",
@@ -1127,7 +1205,13 @@
         "Collective",
         "Tailoring",
         "Knitwear",
-        "Edit"
+        "Edit",
+        "Clothing",
+        "Studio Co.",
+        "Accessories",
+        "Shoes",
+        "Jewellery",
+        "Wardrobe"
       ],
       "health_wellness": [
         "Wellness",
@@ -1139,7 +1223,13 @@
         "Clinic",
         "Apothecary",
         "Remedies",
-        "Retreats"
+        "Retreats",
+        "Therapies",
+        "Physio",
+        "Spa",
+        "Supplements",
+        "Wellbeing",
+        "Botanics"
       ],
       "adventure_outdoor": [
         "Outdoor",
@@ -1151,7 +1241,13 @@
         "Camping Co.",
         "Adventures",
         "Kit",
-        "Supply"
+        "Supply",
+        "Tents",
+        "Kayaks",
+        "Bike Co.",
+        "Climbing",
+        "Packs",
+        "Wild Co."
       ],
       "home_living": [
         "Home",
@@ -1163,7 +1259,13 @@
         "Lighting",
         "Textiles",
         "Kitchenware",
-        "Rugs"
+        "Rugs",
+        "Homeware",
+        "Candles",
+        "Bedding",
+        "Kitchen",
+        "Tiles",
+        "Paint Co."
       ],
       "entertainment_media": [
         "Media",
@@ -1175,7 +1277,13 @@
         "Broadcasting",
         "Theatre Co.",
         "Films",
-        "Audio"
+        "Audio",
+        "Live",
+        "Podcasts",
+        "Comics",
+        "Animation",
+        "Events",
+        "Radio"
       ]
     }
   },
