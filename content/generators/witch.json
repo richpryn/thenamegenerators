@@ -120,29 +120,45 @@
           "recipe": "template",
           "template": [
             "[classic.titles] [classic.surnames] [classic.epithets]",
-            "[classic.first] [classic.surnames] [classic.epithets]"
+            "[classic.titles] [classic.surnames], [classic.epithets_titled]",
+            "[classic.first] [classic.surnames] [classic.epithets]",
+            "[classic.first] [classic.surnames], [classic.epithets_titled]"
           ]
         },
         "hedge": {
           "recipe": "template",
-          "template": "[hedge.first] [hedge.surnames] [hedge.epithets]"
+          "template": [
+            "[hedge.first] [hedge.surnames] [hedge.epithets]",
+            "[hedge.first] [hedge.surnames], [hedge.epithets_titled]"
+          ]
         },
         "modern": {
           "recipe": "template",
-          "template": "[modern.first] [modern.surnames] [modern.epithets]"
+          "template": [
+            "[modern.first] [modern.surnames] [modern.epithets]",
+            "[modern.first] [modern.surnames], [modern.epithets_titled]"
+          ]
         },
         "costume": {
           "recipe": "template",
-          "template": "[costume.first] [costume.surnames] [costume.epithets]"
+          "template": [
+            "[costume.first] [costume.surnames] [costume.epithets]",
+            "[costume.first] [costume.surnames], [costume.epithets_titled]"
+          ]
         },
         "any": {
           "recipe": "template",
           "template": [
             "[classic.titles] [classic.surnames] [classic.epithets]",
+            "[classic.titles] [classic.surnames], [classic.epithets_titled]",
             "[classic.first] [classic.surnames] [classic.epithets]",
+            "[classic.first] [classic.surnames], [classic.epithets_titled]",
             "[hedge.first] [hedge.surnames] [hedge.epithets]",
+            "[hedge.first] [hedge.surnames], [hedge.epithets_titled]",
             "[modern.first] [modern.surnames] [modern.epithets]",
-            "[costume.first] [costume.surnames] [costume.epithets]"
+            "[modern.first] [modern.surnames], [modern.epithets_titled]",
+            "[costume.first] [costume.surnames] [costume.epithets]",
+            "[costume.first] [costume.surnames], [costume.epithets_titled]"
           ]
         }
       }
@@ -261,11 +277,13 @@
         "the Old",
         "of Thornmoor",
         "of the Raven's Rest",
-        "Keeper of the Well",
         "who knows the weather",
         "of the Seven Crows",
         "of the Last Cottage",
         "the Far-Sighted"
+      ],
+      "epithets_titled": [
+        "Keeper of the Well"
       ]
     },
     "hedge": {
@@ -330,9 +348,7 @@
         "of the Green Wood",
         "the Herb-Wife",
         "of Willow Lane",
-        "Keeper of Bees",
         "of the Mill Pond",
-        "Moon-Gatherer",
         "the Green-Fingered",
         "of the Long Meadow",
         "who talks to hares",
@@ -340,6 +356,10 @@
         "of the Bramble Gate",
         "the Weather-Wise",
         "of the Old Orchard"
+      ],
+      "epithets_titled": [
+        "Keeper of Bees",
+        "Moon-Gatherer"
       ]
     },
     "modern": {
@@ -403,17 +423,19 @@
         "of the Midnight Garden",
         "the Stargazer",
         "of Moonwell Street",
-        "Reader of Cards",
         "the Night-Owl",
         "the Candlemaker",
         "of the Thirteenth Floor",
-        "Keeper of Crystals",
         "the Bookbinder",
         "of the Rooftop Garden",
         "the Moon-Watcher",
         "of the Late-Night Bookshop",
         "the Tea-Leaf Reader",
         "of the Corner Shop"
+      ],
+      "epithets_titled": [
+        "Reader of Cards",
+        "Keeper of Crystals"
       ]
     },
     "costume": {
@@ -475,17 +497,19 @@
         "the Sparkly",
         "of the Wobbly Broom",
         "the Slightly Late",
-        "Queen of the Cauldron",
         "the Spell-Muddler",
         "of the Pumpkin Patch",
         "the Giggling",
-        "Champion of Bobbing Apples",
         "the Trick-or-Treater",
         "who burnt the brew",
         "the Glittery",
         "of the Haunted Hayride",
         "the Sweet-Collector",
         "of the Upside-Down Hat"
+      ],
+      "epithets_titled": [
+        "Queen of the Cauldron",
+        "Champion of Bobbing Apples"
       ]
     },
     "familiars": [

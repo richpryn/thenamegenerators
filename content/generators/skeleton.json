@@ -74,6 +74,7 @@
           "template": [
             "[puns.titles] [puns.first]",
             "[puns.first] [puns.epithets]",
+            "[puns.first], [puns.epithets_titled]",
             "[puns.titles] [puns.first] [puns.surnames]"
           ]
         },
@@ -90,6 +91,7 @@
           "template": [
             "[puns.titles] [puns.first]",
             "[puns.first] [puns.epithets]",
+            "[puns.first], [puns.epithets_titled]",
             "[puns.titles] [puns.first] [puns.surnames]",
             "[grim.first] the Bone Lord of [grim.places]",
             "[grim.first], [grim.titles]",
@@ -177,17 +179,19 @@
         "Who Has No Body to Go With",
         "the Spineless",
         "the Funny Bone",
-        "Champion of Rattling",
         "the Bare-Boned",
         "the Bone-Idle",
         "the Well-Rattled",
-        "Head of the Skeleton Staff",
         "the Bone-Dry Comedian",
         "the Ticklish (in the Ribs)",
-        "Dancer of the Bone Jig",
         "the Chilled-to-the-Bone",
         "Who Knows It in Their Bones",
         "the Lazy Bones"
+      ],
+      "epithets_titled": [
+        "Champion of Rattling",
+        "Head of the Skeleton Staff",
+        "Dancer of the Bone Jig"
       ]
     },
     "grim": {
