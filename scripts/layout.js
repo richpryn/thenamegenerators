@@ -124,24 +124,86 @@ function categoryLinks(categories, prefix, indent = '              ') {
   ).join(`\n${indent}`);
 }
 
+/**
+ * The main menu: a short, hand-picked set of the generators people come for,
+ * grouped the way they search, with each group's hub pages at the bottom.
+ * Every generator stays one click away through "All generators".
+ * The build checks that every link here points to a real page.
+ */
+const MENU = [
+  { label: 'Fantasy', id: 'menu-fantasy', links: [
+    ['posts/elf-name-generator.html', 'Elf names'],
+    ['posts/dwarf-name-generator.html', 'Dwarf names'],
+    ['posts/dragon-name-generator.html', 'Dragon names'],
+    ['posts/tiefling-name-generator.html', 'Tiefling names'],
+    ['posts/wizard-name-generator.html', 'Wizard names'],
+    ['posts/vampire-name-generator.html', 'Vampire names'],
+    ['posts/tavern-name-generator.html', 'Tavern names'],
+    ['posts/fantasy-town-name-generator.html', 'Town & village names'],
+    ['posts/epithet-generator.html', 'Epithets & titles'],
+  ], more: [['categories/dnd-names.html', 'D&D'], ['categories/fantasy-names.html', 'Fantasy']] },
+  { label: 'Games & TV', id: 'menu-games', links: [
+    ['posts/hogwarts-legacy-witch-name-generator.html', 'Hogwarts Legacy witch'],
+    ['posts/hogwarts-legacy-wizard-name-generator.html', 'Hogwarts Legacy wizard'],
+    ['posts/baldurs-gate-3-name-generator.html', "Baldur's Gate 3"],
+    ['posts/skyrim-orc-name-generator.html', 'Skyrim orc'],
+    ['posts/khajiit-name-generator.html', 'Khajiit'],
+    ['posts/elden-ring-name-generator.html', 'Elden Ring'],
+    ['posts/warhammer-name-generator.html', 'Warhammer 40k'],
+    ['posts/star-wars-name-generator.html', 'Star Wars'],
+    ['posts/game-of-thrones-name-generator.html', 'Game of Thrones'],
+  ], more: [['categories/pop_culture-names.html', 'Pop culture'], ['categories/elder_scrolls-names.html', 'Elder Scrolls']] },
+  { label: 'Music & online', id: 'menu-music', links: [
+    ['posts/band-name-generator.html', 'Band names'],
+    ['posts/rapper-name-generator.html', 'Rapper names'],
+    ['posts/dj-name-generator.html', 'DJ names'],
+    ['posts/album-name-generator.html', 'Album names'],
+    ['posts/stage-name-generator.html', 'Stage names'],
+    ['posts/podcast-name-generator.html', 'Podcast names'],
+    ['posts/youtube-channel-name-generator.html', 'YouTube channel names'],
+    ['posts/gamertag-generator.html', 'Gamertags'],
+  ], more: [['categories/music-names.html', 'Music']] },
+  { label: 'Business', id: 'menu-business', links: [
+    ['posts/business-name-generator.html', 'Business names'],
+    ['posts/company-name-generator.html', 'Company names'],
+    ['posts/brand-name-generator.html', 'Brand names'],
+    ['posts/cafe-name-generator.html', 'Café names'],
+    ['posts/event-name-generator.html', 'Event & party names'],
+  ], more: [['categories/organizations-names.html', 'Organisations'], ['categories/events-names.html', 'Events']] },
+  { label: 'Name tools', id: 'menu-tools', links: [
+    ['spin-the-wheel.html', 'Spin the Wheel'],
+    ['random-name-picker.html', 'Random name picker'],
+    ['raffle-picker.html', 'Raffle / pick a winner'],
+    ['secret-santa-generator.html', 'Secret Santa'],
+    ['team-generator.html', 'Team generator'],
+    ['posts/name-combiner.html', 'Name combiner'],
+  ], more: [['name-tools.html', 'Name tools']] },
+];
+
+/** Every page the menu links to, for the build's link check. */
+function menuPages() {
+  return MENU.flatMap(group => [...group.links, ...group.more].map(([href]) => href));
+}
+
 /** Header A ("Roomy"): logo, menu button on phones, links on desktop, then a hand-drawn rule. */
-function siteHeader(prefix, categories) {
+function siteHeader(prefix) {
   const home = prefix === '/' ? '/' : `${prefix}index.html`;
+  const link = ([href, text]) => `<a href="${prefix}${href}">${escapeHtml(text)}</a>`;
+  const groups = MENU.map(group => `<li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="${group.id}">${escapeHtml(group.label)}</button>
+              <ul class="nav-dropdown-menu" id="${group.id}">
+                ${group.links.map(l => `<li>${link(l)}</li>`).join('\n                ')}
+                <li class="nav-more">More: ${group.more.map(link).join(' · ')}</li>
+              </ul>
+            </li>`).join('\n            ');
   return `<header class="site-header">
       <div class="wrap bar">
         <a class="logo" href="${home}">${LOGO}<b>${SITE_NAME}</b></a>
         <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">${MENU_ICON}Menu</button>
         <nav class="site-nav" aria-label="Main">
           <ul class="nav-links" id="nav-links">
-            <li><a href="${home}">Home</a></li>
+            ${groups}
             <li><a href="${prefix}all-generators.html">All generators</a></li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
-              <ul class="nav-dropdown-menu" id="category-dropdown">
-              ${categoryLinks(categories, prefix)}
-              </ul>
-            </li>
-            <li><a href="${prefix}about.html">About</a></li>
           </ul>
         </nav>
       </div>
@@ -172,6 +234,6 @@ function stripEmoji(text) {
 }
 
 module.exports = {
-  SITE_NAME, escapeHtml, asset, headAssets, stampAssets, bodyScripts, svgSprite, siteHeader, siteFooter,
+  SITE_NAME, escapeHtml, asset, menuPages, headAssets, stampAssets, bodyScripts, svgSprite, siteHeader, siteFooter,
   doodle, categoryMotif, generatorMotif, highlightFirstWord, stripEmoji, categoryLinks,
 };
