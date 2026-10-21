@@ -1,0 +1,264 @@
+{
+  "title": "Sphinx Name Generator",
+  "slug": "sphinx-name-generator",
+  "icon": "🦁",
+  "category": "mythical",
+  "published": "2026-10-22",
+  "description": "Sphinx names for stories, D&D and games: riddling Greek sphinxes, Egyptian-style guardian sphinxes, and sphinxes named for the gate they guard.",
+  "seoKeywords": "sphinx name generator, sphinx names, dnd sphinx names, egyptian sphinx names, riddle names, guardian names, androsphinx names",
+  "seoTitle": "Sphinx Name Generator: Greek & Egyptian-Style Names",
+  "isPopular": false,
+  "filters": {
+    "style": {
+      "label": "Style",
+      "options": [
+        "any",
+        "greek",
+        "egyptian",
+        "guardian"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "greek": "Greek riddler (Ainigma)",
+        "egyptian": "Egyptian-style (Sethankh)",
+        "guardian": "Named for its gate (the Sphinx of the Sun Gate)"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "name",
+        "epithet"
+      ],
+      "optionLabels": {
+        "name": "Name only",
+        "epithet": "With a title (the Riddler)"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "name": {
+      "recipe": "switch",
+      "on": "style",
+      "cases": {
+        "greek": {
+          "recipe": "template",
+          "template": [
+            "[greek]",
+            "[greek] the [riddlers]"
+          ]
+        },
+        "egyptian": {
+          "recipe": "template",
+          "template": [
+            "[egypt.a][egypt.b]",
+            "[egypt.a][egypt.b] of [places]"
+          ]
+        },
+        "guardian": {
+          "recipe": "template",
+          "template": [
+            "The Sphinx of [places]",
+            "The [adj] Sphinx",
+            "The [adj] Sphinx of [places]"
+          ]
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[greek]",
+            "[greek] the [riddlers]",
+            "[egypt.a][egypt.b]",
+            "[egypt.a][egypt.b] of [places]",
+            "The Sphinx of [places]",
+            "The [adj] Sphinx",
+            "The [adj] Sphinx of [places]"
+          ]
+        }
+      }
+    },
+    "epithet": {
+      "recipe": "switch",
+      "on": "style",
+      "cases": {
+        "greek": {
+          "recipe": "template",
+          "template": [
+            "[greek] [epithets]",
+            "[greek], [epithets_titled]",
+            "[greek] the [riddlers] [epithets]",
+            "[greek] the [riddlers], [epithets_titled]"
+          ]
+        },
+        "egyptian": {
+          "recipe": "template",
+          "template": [
+            "[egypt.a][egypt.b] [epithets]",
+            "[egypt.a][egypt.b], [epithets_titled]",
+            "[egypt.a][egypt.b] of [places]"
+          ]
+        },
+        "guardian": {
+          "recipe": "template",
+          "template": [
+            "The Sphinx of [places]",
+            "The [adj] Sphinx [epithets]",
+            "The [adj] Sphinx, [epithets_titled]",
+            "The [adj] Sphinx of [places]"
+          ]
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[greek] [epithets]",
+            "[greek], [epithets_titled]",
+            "[greek] the [riddlers] [epithets]",
+            "[greek] the [riddlers], [epithets_titled]",
+            "[egypt.a][egypt.b] [epithets]",
+            "[egypt.a][egypt.b], [epithets_titled]",
+            "[egypt.a][egypt.b] of [places]",
+            "The Sphinx of [places]",
+            "The [adj] Sphinx [epithets]",
+            "The [adj] Sphinx, [epithets_titled]",
+            "The [adj] Sphinx of [places]"
+          ]
+        }
+      }
+    }
+  },
+  "data": {
+    "greek": [
+      "Ainigma",
+      "Phix",
+      "Grypha",
+      "Sophrona",
+      "Kalypsia",
+      "Mnemonia",
+      "Logia",
+      "Sophia",
+      "Pythia",
+      "Ariadne",
+      "Theodora",
+      "Athenais",
+      "Kassandra",
+      "Melantho",
+      "Krypteia",
+      "Labyrinthia",
+      "Gnomia",
+      "Hermeia",
+      "Metis",
+      "Eunoia",
+      "Aletheia",
+      "Phronesis",
+      "Pistis",
+      "Elpis",
+      "Arete",
+      "Dike",
+      "Themis",
+      "Harmonia",
+      "Xenia",
+      "Ainesis"
+    ],
+    "riddlers": [
+      "Riddler",
+      "Questioner",
+      "Wise",
+      "Silent",
+      "Patient",
+      "Unanswered",
+      "Watchful",
+      "Clever"
+    ],
+    "egypt": {
+      "a": [
+        "Seth",
+        "Amen",
+        "Ra",
+        "Khep",
+        "Neb",
+        "Mer",
+        "Ankh",
+        "Hor",
+        "Ptah",
+        "Djed",
+        "Wadj",
+        "Sekh"
+      ],
+      "b": [
+        "ankh",
+        "hotep",
+        "mose",
+        "nefer",
+        "ka",
+        "ib",
+        "ra",
+        "em",
+        "ef",
+        "et"
+      ]
+    },
+    "places": [
+      "the Sun Gate",
+      "the Western Desert",
+      "the Sand Temple",
+      "the Riddle Road",
+      "the Hidden Tomb",
+      "the Golden Gate",
+      "the Seven Pillars",
+      "the Moon Gate",
+      "the Lion Steps",
+      "the Last Oasis",
+      "the Sealed Library",
+      "the Valley of Kings",
+      "the Pyramid Steps",
+      "the Star Temple"
+    ],
+    "adj": [
+      "Silent",
+      "Riddling",
+      "Golden",
+      "Patient",
+      "Ancient",
+      "Sleepless",
+      "Sand-Worn",
+      "All-Seeing",
+      "Stone-Lidded",
+      "Unblinking",
+      "Wise",
+      "Watchful",
+      "Golden-Eyed",
+      "Great",
+      "Winged",
+      "Crowned",
+      "Lion-Hearted",
+      "Smiling"
+    ],
+    "epithets": [
+      "the Riddler",
+      "of the Sun Gate",
+      "Who Asks Three Questions",
+      "the Patient",
+      "the All-Knowing",
+      "the Unanswered",
+      "the Guardian of the Threshold",
+      "the Sand-Worn"
+    ],
+    "epithets_titled": [
+      "Keeper of Secrets",
+      "Guardian of the Tomb",
+      "Asker of Riddles",
+      "Lion of the Desert"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🦁 Sphinx Name Generator",
+      "tagline": "Names for sphinxes, from Greek riddlers to the stone guardians of the desert."
+    },
+    "intro": "There are two sphinxes. The Greek sphinx sat outside Thebes and asked travellers a riddle, killing those who got it wrong. The Egyptian sphinx, like the Great Sphinx of Giza, is a lion with a human head that guards temples and tombs. This **sphinx name generator** names both, and sphinxes named for the gate they guard.",
+    "sections": [],
+    "faqs": []
+  }
+}

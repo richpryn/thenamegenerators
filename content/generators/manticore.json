@@ -1,0 +1,252 @@
+{
+  "title": "Manticore Name Generator",
+  "slug": "manticore-name-generator",
+  "icon": "🦁",
+  "category": "mythical",
+  "published": "2026-10-22",
+  "description": "Manticore names for D&D, stories and games: savage names like Spinetail, Persian-sounding names, and manticores named for the wastes they hunt.",
+  "seoKeywords": "manticore name generator, manticore names, dnd manticore names, lion monster names, chimera names, fantasy beast names, monster names",
+  "seoTitle": "Manticore Name Generator: Savage Beast Names",
+  "isPopular": false,
+  "filters": {
+    "style": {
+      "label": "Style",
+      "options": [
+        "any",
+        "savage",
+        "persian",
+        "wastes"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "savage": "Savage (Spinetail)",
+        "persian": "Persian-sounding (Martikhor)",
+        "wastes": "Named for its hunting ground (the Manticore of the Red Waste)"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "name",
+        "epithet"
+      ],
+      "optionLabels": {
+        "name": "Name only",
+        "epithet": "With a title (the Man-Eater)"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "name": {
+      "recipe": "switch",
+      "on": "style",
+      "cases": {
+        "savage": {
+          "recipe": "template",
+          "template": "[savage.a][savage.b]"
+        },
+        "persian": {
+          "recipe": "template",
+          "template": [
+            "[persian]",
+            "[persian] of [wastes]"
+          ]
+        },
+        "wastes": {
+          "recipe": "template",
+          "template": [
+            "The Manticore of [wastes]",
+            "The [adj] Manticore",
+            "The [adj] Manticore of [wastes]"
+          ]
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[savage.a][savage.b]",
+            "[persian]",
+            "[persian] of [wastes]",
+            "The Manticore of [wastes]",
+            "The [adj] Manticore",
+            "The [adj] Manticore of [wastes]"
+          ]
+        }
+      }
+    },
+    "epithet": {
+      "recipe": "switch",
+      "on": "style",
+      "cases": {
+        "savage": {
+          "recipe": "template",
+          "template": [
+            "[savage.a][savage.b] [epithets]",
+            "[savage.a][savage.b], [epithets_titled]"
+          ]
+        },
+        "persian": {
+          "recipe": "template",
+          "template": [
+            "[persian] [epithets]",
+            "[persian], [epithets_titled]",
+            "[persian] of [wastes]"
+          ]
+        },
+        "wastes": {
+          "recipe": "template",
+          "template": [
+            "The Manticore of [wastes]",
+            "The [adj] Manticore [epithets]",
+            "The [adj] Manticore, [epithets_titled]",
+            "The [adj] Manticore of [wastes]"
+          ]
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[savage.a][savage.b] [epithets]",
+            "[savage.a][savage.b], [epithets_titled]",
+            "[persian] [epithets]",
+            "[persian], [epithets_titled]",
+            "[persian] of [wastes]",
+            "The Manticore of [wastes]",
+            "The [adj] Manticore [epithets]",
+            "The [adj] Manticore, [epithets_titled]",
+            "The [adj] Manticore of [wastes]"
+          ]
+        }
+      }
+    }
+  },
+  "data": {
+    "savage": {
+      "a": [
+        "Spine",
+        "Barb",
+        "Venom",
+        "Sting",
+        "Blood",
+        "Fang",
+        "Thorn",
+        "Scorch",
+        "Dust",
+        "Gore",
+        "Spike",
+        "Rend",
+        "Grim",
+        "Sand",
+        "Bone",
+        "Claw"
+      ],
+      "b": [
+        "tail",
+        "maw",
+        "mane",
+        "fang",
+        "sting",
+        "claw",
+        "roar",
+        "hide",
+        "quill",
+        "lash",
+        "hunter",
+        "eater"
+      ]
+    },
+    "persian": [
+      "Martikhor",
+      "Darvash",
+      "Kazhar",
+      "Zorvan",
+      "Rustahm",
+      "Behrak",
+      "Shahvar",
+      "Tahmar",
+      "Farzhad",
+      "Arzhang",
+      "Kavush",
+      "Varzan",
+      "Mehrak",
+      "Zarvakh",
+      "Golvar",
+      "Rokhsar",
+      "Dastar",
+      "Javush",
+      "Narvak",
+      "Sorkhan",
+      "Bahrak",
+      "Kiyar",
+      "Azhvar",
+      "Fardin",
+      "Taravash",
+      "Golnar",
+      "Shirak",
+      "Zarhan",
+      "Varesh",
+      "Khoran"
+    ],
+    "wastes": [
+      "the Red Waste",
+      "the Salt Flats",
+      "the Scorched Plains",
+      "the Broken Canyons",
+      "the Bone Desert",
+      "the Dry Mountains",
+      "the Black Sands",
+      "the Hunter's Pass",
+      "the Thorn Steppes",
+      "the Ruined City",
+      "the Dust Sea",
+      "the Lion Hills"
+    ],
+    "adj": [
+      "Spined",
+      "Man-Eating",
+      "Red",
+      "Venom-Tailed",
+      "Hungry",
+      "Roaring",
+      "Three-Rowed",
+      "Desert",
+      "Savage",
+      "Black-Maned",
+      "Barbed",
+      "Starving",
+      "Grinning",
+      "Golden",
+      "Bloodied",
+      "Dust-Coloured",
+      "Ancient",
+      "Prowling",
+      "Wild",
+      "Crimson"
+    ],
+    "epithets": [
+      "the Man-Eater",
+      "of the Red Waste",
+      "the Barbed",
+      "Who Hunts at Dusk",
+      "the Spine-Thrower",
+      "the Three-Rowed",
+      "the Roaring",
+      "the Venom-Tailed"
+    ],
+    "epithets_titled": [
+      "Terror of Caravans",
+      "Lord of the Wastes",
+      "Bane of Travellers",
+      "Hunter of Men"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🦁 Manticore Name Generator",
+      "tagline": "Names for the manticore, the lion with a human face and a tail full of spines."
+    },
+    "intro": "The manticore has a lion's body, a human face with three rows of teeth and a tail that shoots spines. Its name comes, through Greek writers, from an old Persian word meaning man-eater. This **manticore name generator** makes savage names like Spinetail, Persian-sounding names and manticores named for the wastes they hunt.",
+    "sections": [],
+    "faqs": []
+  }
+}

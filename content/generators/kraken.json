@@ -1,0 +1,252 @@
+{
+  "title": "Kraken Name Generator",
+  "slug": "kraken-name-generator",
+  "icon": "🐙",
+  "category": "mythical",
+  "published": "2026-10-22",
+  "description": "Kraken and sea monster names for stories, D&D and games: monstrous names like Deepmaw, Norse-sounding names, and sea monsters named for the waters they rule.",
+  "seoKeywords": "kraken name generator, kraken names, sea monster names, sea serpent names, giant squid names, dnd kraken names, octopus monster names",
+  "seoTitle": "Kraken Name Generator: Sea Monster Names",
+  "isPopular": false,
+  "filters": {
+    "style": {
+      "label": "Style",
+      "options": [
+        "any",
+        "monster",
+        "norse",
+        "waters"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "monster": "Monstrous (Deepmaw)",
+        "norse": "Norse-sounding (Hafgrim)",
+        "waters": "Named for its waters (the Kraken of the Grey Deep)"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "name",
+        "epithet"
+      ],
+      "optionLabels": {
+        "name": "Name only",
+        "epithet": "With a title (the Ship-Breaker)"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "name": {
+      "recipe": "switch",
+      "on": "style",
+      "cases": {
+        "monster": {
+          "recipe": "template",
+          "template": "[monster.a][monster.b]"
+        },
+        "norse": {
+          "recipe": "template",
+          "template": [
+            "[norse]",
+            "[norse] of [waters]"
+          ]
+        },
+        "waters": {
+          "recipe": "template",
+          "template": [
+            "The Kraken of [waters]",
+            "The [adj] Kraken",
+            "The [adj] Kraken of [waters]"
+          ]
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[monster.a][monster.b]",
+            "[norse]",
+            "[norse] of [waters]",
+            "The Kraken of [waters]",
+            "The [adj] Kraken",
+            "The [adj] Kraken of [waters]"
+          ]
+        }
+      }
+    },
+    "epithet": {
+      "recipe": "switch",
+      "on": "style",
+      "cases": {
+        "monster": {
+          "recipe": "template",
+          "template": [
+            "[monster.a][monster.b] [epithets]",
+            "[monster.a][monster.b], [epithets_titled]"
+          ]
+        },
+        "norse": {
+          "recipe": "template",
+          "template": [
+            "[norse] [epithets]",
+            "[norse], [epithets_titled]",
+            "[norse] of [waters]"
+          ]
+        },
+        "waters": {
+          "recipe": "template",
+          "template": [
+            "The Kraken of [waters]",
+            "The [adj] Kraken [epithets]",
+            "The [adj] Kraken, [epithets_titled]",
+            "The [adj] Kraken of [waters]"
+          ]
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[monster.a][monster.b] [epithets]",
+            "[monster.a][monster.b], [epithets_titled]",
+            "[norse] [epithets]",
+            "[norse], [epithets_titled]",
+            "[norse] of [waters]",
+            "The Kraken of [waters]",
+            "The [adj] Kraken [epithets]",
+            "The [adj] Kraken, [epithets_titled]",
+            "The [adj] Kraken of [waters]"
+          ]
+        }
+      }
+    }
+  },
+  "data": {
+    "monster": {
+      "a": [
+        "Deep",
+        "Abyss",
+        "Brine",
+        "Tide",
+        "Wreck",
+        "Drown",
+        "Ink",
+        "Coil",
+        "Gloom",
+        "Salt",
+        "Storm",
+        "Murk",
+        "Trench",
+        "Black",
+        "Grip",
+        "Hull"
+      ],
+      "b": [
+        "maw",
+        "coil",
+        "grip",
+        "arm",
+        "beak",
+        "eye",
+        "wake",
+        "tide",
+        "crusher",
+        "render",
+        "sucker",
+        "lurker"
+      ]
+    },
+    "norse": [
+      "Hafgrim",
+      "Sjovald",
+      "Djupvar",
+      "Brimolf",
+      "Skerrir",
+      "Havrok",
+      "Mareld",
+      "Strandulf",
+      "Bolgvarr",
+      "Holmgrip",
+      "Vagnar",
+      "Sjokrak",
+      "Fjordmund",
+      "Uthavr",
+      "Djupmor",
+      "Kolgrim",
+      "Isvarr",
+      "Saltbjorn",
+      "Havgard",
+      "Stormulf",
+      "Drauvik",
+      "Djuphild",
+      "Brimhild",
+      "Sjorun",
+      "Havdis",
+      "Mardis",
+      "Bolgrun",
+      "Vagrun",
+      "Skerdis",
+      "Kolfinna"
+    ],
+    "waters": [
+      "the Grey Deep",
+      "the Northern Sea",
+      "the Maelstrom",
+      "the Black Trench",
+      "the Whaling Grounds",
+      "the Frozen Fjord",
+      "the Lost Shipping Lanes",
+      "the Abyssal Plain",
+      "the Drowned Kingdom",
+      "the Kelp Labyrinth",
+      "the Shipwreck Graveyard",
+      "the Endless Blue"
+    ],
+    "adj": [
+      "Ancient",
+      "Sleeping",
+      "Hungry",
+      "Black",
+      "Many-Armed",
+      "Leviathan",
+      "Deep",
+      "Endless",
+      "Ink-Black",
+      "Ship-Eating",
+      "Storm-Born",
+      "Thousand-Armed",
+      "Grey",
+      "Colossal",
+      "Kelp-Crowned",
+      "Barnacled",
+      "Whirlpool",
+      "Island-Sized",
+      "Slumbering",
+      "Drowning"
+    ],
+    "epithets": [
+      "the Ship-Breaker",
+      "of the Grey Deep",
+      "Who Sleeps Beneath the Waves",
+      "the Many-Armed",
+      "the Unfathomable",
+      "the Ancient",
+      "the Whirlpool",
+      "the Ink-Black"
+    ],
+    "epithets_titled": [
+      "Terror of the Fleet",
+      "Lord of the Abyss",
+      "Bane of Sailors",
+      "Keeper of the Drowned"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🐙 Kraken Name Generator",
+      "tagline": "Names for the kraken and other sea monsters, from Deepmaw to the Kraken of the Grey Deep."
+    },
+    "intro": "The kraken comes from Norwegian sailors' stories: a sea monster so vast it could be mistaken for an island, which dragged ships down with its arms. The legend may come from sightings of giant squid. This **kraken name generator** makes monstrous names like Deepmaw, Norse-sounding names and sea monsters named for the waters they rule.",
+    "sections": [],
+    "faqs": []
+  }
+}
