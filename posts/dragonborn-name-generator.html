@@ -46,7 +46,6 @@
     
     <!-- Security Headers -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
     <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -308,7 +307,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=d2ada735">
+    <link rel="stylesheet" href="../styles/site.css?v=c3e41962">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -668,7 +667,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Dragonborn Name Generator","slug":"dragonborn-name-generator","filters":{"gender":{"label":"Gender","options":["any","male","female"],"optionLabels":{"any":"Any"}},"format":{"label":"Name format","options":["full_name","personal","clan","childhood"],"optionLabels":{"full_name":"Full name (clan first)","personal":"Personal name only","clan":"Clan name only","childhood":"Childhood name"}}},"recipe":"switch","on":"format","cases":{"full_name":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[clans] [personal]"}},"default":{"recipe":"template","template":"[clans] [personal.{gender}]"}},"personal":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"pick","from":"personal"}},"default":{"recipe":"pick","from":"personal.{gender}"}},"clan":{"recipe":"pick","from":"clans"},"childhood":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[personal] “[childhood]”"}},"default":{"recipe":"template","template":"[personal.{gender}] “[childhood]”"}}},"data":{"personal":{"male":["Balthak","Dorrash","Ghazrin","Kerrak","Medrok","Nazhar","Rhazkar","Torvash","Vorrin","Zhakar","Brannash","Daskar","Gurrash","Hazvorr","Irzhak","Jhazir","Kalvash","Korrak","Morzhan","Nadrik","Oskarr","Pharzhan","Qorrash","Rakhan","Sarzhin","Tazrak","Uzhar","Varrak","Zorvash","Arkhash","Bhazrin","Draxar","Ghorvan","Hazrith","Kezzar","Lorvash","Mazrak","Rhessar","Thurvan","Vazhrin"],"female":["Akhira","Bryzia","Dravi","Erisha","Ghora","Hessa","Ixira","Jhessa","Kalira","Mirrah","Nashi","Orrha","Pashra","Rhiza","Sarrah","Thessi","Uzhara","Vashra","Zorra","Azhira","Dhaliri","Irrha","Jhavi","Korrah","Leshra","Mezzira","Nazhi","Qessa","Rhavi","Sorrha","Tazzi","Velira","Yzhara","Zhessa","Brannah","Dazhra","Falira","Hazzra","Kethra","Surrah"]},"clans":["Arkenthuldrax","Brexanthiul","Corvathrinnor","Dhaerazhinal","Esthrakkamir","Fulvranthesk","Ghorrathiul","Haldrakkenvar","Irrixanthul","Jhessakandor","Kalthrenniax","Lorvanthesk","Morrikathul","Naxxarendion","Orrathinsk","Pyrranthollor","Qaldrekkiax","Rhazzindorath","Sarthenkavrix","Tharvoskendar","Ulkranthiir","Vaskendrathul","Xorrinthalak","Yrrazhennor","Zhalvathrisk","Anthrexiul","Bharrakendor","Calderhazzin","Dravenkathul","Ezzrakkonir","Ghessenthuul","Kharrandiax","Mirrivanthesk","Nazzaravor","Orvathrekkir","Rhovalinthar","Skarrendaxis","Thuldrevaxin","Vorrakandiul","Zanthrikkenor"],"childhood":["Brawler","Clawsharp","Dawnwaker","Eggcracker","Firecough","Gravel","Ironhide","Loudmouth","Quickclaw","Runt","Scalebright","Snapper","Sparkspit","Stubborn","Tumbler","Whistler","Bold","Questioner","Smoky","Thunderfoot","Ember","Sleeper","Tailchaser","Firstborn","Lastborn","Bookworm","Rockbiter","Swift","Watcher","Brightscale","Hothead","Pebble","Daydreamer","Stomper","Hatchling","Patient","Climbtail","Grinner","Spitfire","Wanderer"]}}</script>
     <script src="../lib/recipe-engine.js?v=b15fd1c1"></script>
-    <script src="../lib/page.js?v=7dcc5da2"></script>
+    <script src="../lib/page.js?v=1fbc0f8b"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

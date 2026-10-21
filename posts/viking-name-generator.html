@@ -46,7 +46,6 @@
     
     <!-- Security Headers -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
     <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -300,7 +299,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=d2ada735">
+    <link rel="stylesheet" href="../styles/site.css?v=c3e41962">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -605,7 +604,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Viking Name Generator","slug":"viking-name-generator","filters":{"gender":{"label":"Gender","options":["any","male","female"],"optionLabels":{"any":"Any"}},"format":{"label":"Name format","options":["any","patronymic","byname","first"],"optionLabels":{"any":"Any (a mix)","patronymic":"Patronymic (son or daughter of)","byname":"Byname (Erik the Red)","first":"First name only"}}},"recipe":"switch","on":"format","cases":{"patronymic":{"recipe":"switch","on":"gender","cases":{"male":{"recipe":"template","template":"[first.male] [first.male]sson"},"female":{"recipe":"template","template":"[first.female] [first.male]sdóttir"},"any":{"recipe":"template","template":["[first.male] [first.male]sson","[first.female] [first.male]sdóttir"]}}},"byname":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[first] [bynames]"}},"default":{"recipe":"template","template":"[first.{gender}] [bynames]"}},"first":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[first]"}},"default":{"recipe":"template","template":"[first.{gender}]"}},"any":{"recipe":"switch","on":"gender","cases":{"male":{"recipe":"template","template":["[first.male] [first.male]sson","[first.male] [bynames]"]},"female":{"recipe":"template","template":["[first.female] [first.male]sdóttir","[first.female] [bynames]"]},"any":{"recipe":"template","template":["[first.male] [first.male]sson","[first.male] [bynames]","[first.female] [first.male]sdóttir","[first.female] [bynames]"]}}}},"data":{"first":{"male":["Bjorn","Eirik","Gunnar","Halfdan","Harald","Ivar","Knut","Leif","Njal","Olaf","Ragnar","Sigurd","Sven","Thorstein","Ulf","Vidar","Egil","Asbjorn","Brand","Dag","Finn","Geir","Hakon","Ketil","Orm","Rolf","Torvald","Hallstein","Grim","Hrafn","Kolbein","Steinar","Ottar","Thorkel","Sigvald","Bersi","Eyvind","Hauk","Arnbjorn","Asgeir","Bard","Erling","Finnbogi","Hallbjorn","Hrolf","Kolbeinn","Skeggi","Snorri","Vigfus","Thorvald","Sighvat","Gizur"],"female":["Astrid","Bergthora","Freydis","Gudrun","Gunnhild","Helga","Ingrid","Ragnhild","Sigrid","Thora","Thorunn","Ylva","Asa","Aud","Bodil","Dagny","Estrid","Gyda","Hallgerd","Ingunn","Ragna","Signy","Solveig","Thordis","Tove","Unn","Alfhild","Groa","Svanhild","Hild","Eydis","Gunnvor","Jorunn","Ragnfrid","Aslaug","Bera","Hervor","Ingibjorg","Kolfinna","Runa","Saldis","Thorgerd","Vigdis","Yrsa","Halla"]},"bynames":["the Red","the Black","Fairhair","the Strong","the Stout","Flatnose","Ironside","Bloodaxe","the Wise","the Tall","Forkbeard","the Quiet","Bear-Claw","Wolf-Hound","the Lucky","Skull-Splitter","the Unruly","Sharp-Eye","Sea-Wolf","the Generous","Broad-Shoulder","Swift-Foot","the Grey","Hard-Ruler","Shield-Breaker","Snake-Eye","Fish-Hook","the Peaceful","the Far-Travelled","Silkbeard","Barefoot","the Good","the Old","Hairy-Breeks","the Deep-Minded","Greycloak","the Mild","Bluetooth"]}}</script>
     <script src="../lib/recipe-engine.js?v=b15fd1c1"></script>
-    <script src="../lib/page.js?v=7dcc5da2"></script>
+    <script src="../lib/page.js?v=1fbc0f8b"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>
