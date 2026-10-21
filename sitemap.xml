@@ -128,6 +128,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Category: Mythical Creatures -->
+  <url>
+    <loc>https://thenamegenerators.com/categories/mythical-names.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Category: Music -->
   <url>
     <loc>https://thenamegenerators.com/categories/music-names.html</loc>
@@ -604,6 +611,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Griffin Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/griffin-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Guild Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/guild-name-generator.html</loc>
@@ -744,6 +758,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Mermaid Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/mermaid-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Minecraft Clan Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/minecraft-clan-name-generator.html</loc>
@@ -874,6 +895,20 @@
   <url>
     <loc>https://thenamegenerators.com/posts/path-of-exile-witch-name-generator.html</loc>
     <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Pegasus Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/pegasus-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Phoenix Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/phoenix-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1042,6 +1077,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/tiefling-name-generator.html</loc>
     <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Unicorn Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/unicorn-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

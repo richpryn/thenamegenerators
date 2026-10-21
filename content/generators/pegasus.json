@@ -1,0 +1,255 @@
+{
+  "title": "Pegasus Name Generator",
+  "slug": "pegasus-name-generator",
+  "icon": "🪽",
+  "category": "mythical",
+  "published": "2026-10-22",
+  "description": "Pegasus and winged horse names for stories, games and toys: sky names like Cloudsoar, names from Greek words for wind, air and stars, and cute ones like Puffball.",
+  "seoKeywords": "pegasus name generator, pegasus names, winged horse names, flying horse names, pegasi names, cute pegasus names, fantasy horse names",
+  "seoTitle": "Pegasus Name Generator: Winged Horse Names",
+  "isPopular": false,
+  "filters": {
+    "style": {
+      "label": "Style",
+      "options": [
+        "any",
+        "sky",
+        "greek",
+        "cute"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "sky": "Sky (Cloudsoar)",
+        "greek": "Greek-sounding (Nephele)",
+        "cute": "Cute (Puffball)"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "name",
+        "epithet"
+      ],
+      "optionLabels": {
+        "name": "Name only",
+        "epithet": "With a title (the Swift)"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "name": {
+      "recipe": "switch",
+      "on": "style",
+      "cases": {
+        "sky": {
+          "recipe": "template",
+          "template": "[sky.a][sky.b]"
+        },
+        "greek": {
+          "recipe": "template",
+          "template": [
+            "[greek]",
+            "[greek] of [places]"
+          ]
+        },
+        "cute": {
+          "recipe": "template",
+          "template": [
+            "[cute]",
+            "Little [cute]",
+            "Baby [cute]"
+          ]
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[sky.a][sky.b]",
+            "[greek]",
+            "[greek] of [places]",
+            "[cute]",
+            "Little [cute]",
+            "Baby [cute]"
+          ]
+        }
+      }
+    },
+    "epithet": {
+      "recipe": "switch",
+      "on": "style",
+      "cases": {
+        "sky": {
+          "recipe": "template",
+          "template": "[sky.a][sky.b] [epithets]"
+        },
+        "greek": {
+          "recipe": "template",
+          "template": [
+            "[greek] [epithets]",
+            "[greek] of [places] [epithets]"
+          ]
+        },
+        "cute": {
+          "recipe": "template",
+          "template": [
+            "[cute] [epithets]",
+            "Little [cute] [epithets]",
+            "Baby [cute] [epithets]"
+          ]
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[sky.a][sky.b] [epithets]",
+            "[greek] [epithets]",
+            "[greek] of [places] [epithets]",
+            "[cute] [epithets]",
+            "Little [cute] [epithets]",
+            "Baby [cute] [epithets]"
+          ]
+        }
+      }
+    }
+  },
+  "data": {
+    "sky": {
+      "a": [
+        "Sky",
+        "Cloud",
+        "Star",
+        "Storm",
+        "Wind",
+        "Sun",
+        "Moon",
+        "Thunder",
+        "Silver",
+        "Dawn",
+        "Feather",
+        "Gale",
+        "Mist",
+        "Light",
+        "Rain",
+        "Snow"
+      ],
+      "b": [
+        "wing",
+        "feather",
+        "flight",
+        "gale",
+        "hoof",
+        "mane",
+        "soar",
+        "drift",
+        "glide",
+        "sail",
+        "dancer",
+        "runner"
+      ]
+    },
+    "places": [
+      "Mount Olympus",
+      "the Hippocrene Spring",
+      "Mount Helicon",
+      "the Western Wind",
+      "the High Clouds",
+      "the Starlit Road",
+      "the Dawn Gate",
+      "the Silver Sky",
+      "the Eagle's Height",
+      "the Bright Meadow"
+    ],
+    "greek": [
+      "Aether",
+      "Zephyr",
+      "Boreas",
+      "Notus",
+      "Eurus",
+      "Aella",
+      "Aura",
+      "Nephele",
+      "Asteria",
+      "Hemera",
+      "Eos",
+      "Iris",
+      "Astraeus",
+      "Selene",
+      "Pyrois",
+      "Aethon",
+      "Phlegon",
+      "Xanthos",
+      "Balios",
+      "Podarge",
+      "Arion",
+      "Chrysaor",
+      "Aeolus",
+      "Ourania",
+      "Kallisto",
+      "Kynthia",
+      "Phaedra",
+      "Alcyone",
+      "Electra",
+      "Maia",
+      "Merope",
+      "Taygete",
+      "Celaeno",
+      "Sterope",
+      "Kyrene"
+    ],
+    "cute": [
+      "Puffball",
+      "Cloudy",
+      "Feathers",
+      "Breezy",
+      "Wings",
+      "Skipper",
+      "Fluffy",
+      "Twinkle",
+      "Starlight",
+      "Pip",
+      "Nimbus",
+      "Dandelion",
+      "Flutter",
+      "Bluebell",
+      "Hopscotch",
+      "Sunbeam",
+      "Marshmallow",
+      "Cotton",
+      "Snowflake",
+      "Sky-Bean",
+      "Pudding",
+      "Dreamy",
+      "Whisper",
+      "Biscuit",
+      "Honey",
+      "Daisy",
+      "Bubble",
+      "Moonpie",
+      "Cupcake",
+      "Popcorn"
+    ],
+    "epithets": [
+      "the Swift",
+      "of the High Winds",
+      "the Cloud-Born",
+      "the Star-Chaser",
+      "Who Carries Thunder",
+      "the Untamed",
+      "of the Silver Sky",
+      "the Dawn-Flier",
+      "the Light-Hoofed",
+      "Friend of Heroes",
+      "the Storm-Rider",
+      "of the Endless Blue"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🪽 Pegasus Name Generator",
+      "tagline": "Names for a winged horse, from Cloudsoar to a pegasus called Puffball."
+    },
+    "intro": "In Greek myth, Pegasus was the winged horse who sprang from Medusa and carried the hero Bellerophon. Today any winged horse in a story or game is a pegasus, and each one needs a name. This **pegasus name generator** makes sky names like Cloudsoar, names from Greek words for wind and stars, and cute names for toys and kids' stories.",
+    "sections": [],
+    "faqs": []
+  }
+}
