@@ -98,6 +98,43 @@
     ]
   },
   {
+    "name": "Christmas",
+    "slug": "christmas",
+    "icon": "🎄",
+    "navLabel": "Christmas Names",
+    "heading": "Christmas Name Generators: Elves, Reindeer and Quiz Teams",
+    "seoTitle": "Christmas Name Generators: Elf, Reindeer & Quiz Names",
+    "description": "Christmas names for elves on the shelf, Santa's workshop elves, reindeer, snowmen, festive pets and Christmas quiz teams.",
+    "seoDescription": "Christmas name generators: Elf on the Shelf names, your elf name, reindeer, snowman and festive pet names, and Christmas quiz team names.",
+    "intro": "<p>These Christmas name generators cover everything that needs a name in December. Name the <a href=\"../posts/elf-on-the-shelf-name-generator.html\">elf on your shelf</a>, find out <a href=\"../posts/christmas-elf-name-generator.html\">your own elf name</a>, or add a <a href=\"../posts/reindeer-name-generator.html\">reindeer</a> to Santa's sleigh team.</p><p>For the garden there's the <a href=\"../posts/snowman-name-generator.html\">Snowman Name Generator</a>, and for a new puppy or kitten, <a href=\"../posts/christmas-pet-name-generator.html\">Christmas pet names</a>. Running the Christmas quiz? Start with the <a href=\"../posts/christmas-quiz-team-names.html\">Christmas quiz team names</a>, draw names with the <a href=\"../secret-santa-generator.html\">Secret Santa Generator</a>, and name the night itself with the <a href=\"../posts/event-name-generator.html\">Event Name Generator</a>.</p>",
+    "generators": [
+      "elf_on_the_shelf",
+      "christmas_elf",
+      "reindeer",
+      "snowman",
+      "christmas_pet",
+      "christmas_team"
+    ],
+    "featured": [
+      {
+        "key": "elf_on_the_shelf",
+        "note": "names for boy and girl elves, from Pip Sugarplum to Agent Tinsel."
+      },
+      {
+        "key": "christmas_elf",
+        "note": "what's your elf name? Built from your own first name, with a job in Santa's workshop."
+      },
+      {
+        "key": "christmas_team",
+        "note": "pun-filled team names for the Christmas pub, office or family quiz."
+      },
+      {
+        "key": "reindeer",
+        "note": "names for a new member of Santa's sleigh team."
+      }
+    ]
+  },
+  {
     "name": "Fantasy",
     "slug": "fantasy",
     "icon": "⚔️",

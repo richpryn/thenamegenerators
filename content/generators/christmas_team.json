@@ -1,0 +1,165 @@
+{
+  "title": "Christmas Quiz Team Name Generator",
+  "slug": "christmas-quiz-team-names",
+  "icon": "🏆",
+  "category": "christmas",
+  "published": "2026-10-22",
+  "noun": "Christmas Quiz Team Names",
+  "description": "Christmas quiz team names for the pub, the office party or the family quiz: carol puns like Away in a Ranking, and festive team names like the Mulled Brainboxes.",
+  "seoKeywords": "christmas quiz team names, christmas team names, funny christmas quiz team names, christmas pub quiz team names, christmas party team names, office christmas quiz names, festive team names",
+  "seoTitle": "Christmas Quiz Team Names: Funny Festive Team Names",
+  "isPopular": false,
+  "filters": {
+    "style": {
+      "label": "Style",
+      "options": [
+        "any",
+        "puns",
+        "festive"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "puns": "Puns (Away in a Ranking)",
+        "festive": "Festive team names (the Mulled Brainboxes)"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "style",
+  "cases": {
+    "puns": {
+      "recipe": "template",
+      "template": "[puns]"
+    },
+    "festive": {
+      "recipe": "template",
+      "template": "The [adj] [nouns]"
+    },
+    "any": {
+      "recipe": "template",
+      "template": [
+        "[puns]",
+        "The [adj] [nouns]"
+      ]
+    }
+  },
+  "data": {
+    "puns": [
+      "Quiztletoe",
+      "Sleigh What?",
+      "Yule Be Sorry",
+      "Mince Spies",
+      "Tinsel Town Brains",
+      "Elf Help Group",
+      "Snow Idea",
+      "Jingle Brains",
+      "Quizmas Crackers",
+      "Not a Creature Was Thinking",
+      "Silent Knights",
+      "Fa La La Losers",
+      "The Turkey Trotters",
+      "Sleigh All Day",
+      "Oh Come All Ye Quizzers",
+      "Deck the Halls of Fame",
+      "Baubles of Wisdom",
+      "Feliz Quizmas",
+      "We Three Quizzers",
+      "Sprout of Ideas",
+      "Mulled Whine",
+      "Gingerbread Brains",
+      "Santa's Little Cheaters",
+      "The Naughty List",
+      "Holly Jolly Geniuses",
+      "Ho Ho Hopefuls",
+      "Merry Quizmas",
+      "Elf Assessment",
+      "Brussels Sprouts of Wisdom",
+      "Rocking Around the Quiz Tree",
+      "Quiz Navidad",
+      "All I Want for Christmas Is a Point",
+      "Walking in a Quiz Wonderland",
+      "Away in a Ranking",
+      "Good King Wenceslost",
+      "The First No-Ell",
+      "Hark the Herald Answers",
+      "O Little Team of Bethlehem",
+      "Chestnuts Roasting on an Open Mind",
+      "The Twelve Points of Christmas",
+      "Dreaming of a Right Answer",
+      "Tinsel-Brained",
+      "The Wise Guys",
+      "Pudding Our Heads Together",
+      "Snow Way José",
+      "Yule Never Guess",
+      "Crackers About Quizzes",
+      "Lights Out Leaders",
+      "The Second Wise Men",
+      "Last Christmas We Won",
+      "Tinsel Tacklers",
+      "Sleigh My Name",
+      "The Holly Jolly Rogers",
+      "Elves on the Shelf",
+      "Bauble Heads",
+      "The Sprout Scouts",
+      "Quiz Kringle",
+      "The Nutcrackers",
+      "Comfort and Joy",
+      "Mince Pie Mafia",
+      "The Cracker Jokers",
+      "Ding Dong Merrily on Top"
+    ],
+    "adj": [
+      "Merry",
+      "Jolly",
+      "Tinsel",
+      "Festive",
+      "Frosty",
+      "Mistletoe",
+      "Sprout-Powered",
+      "Mulled",
+      "Snowed-In",
+      "Overfed",
+      "Sparkly",
+      "Mince-Fuelled",
+      "Cracker-Snapping",
+      "Sleigh-Riding",
+      "Pudding-Powered",
+      "Jingling",
+      "Twinkling",
+      "Sleepy",
+      "Tipsy-on-Eggnog",
+      "Gift-Wrapped"
+    ],
+    "nouns": [
+      "Brainboxes",
+      "Geniuses",
+      "Know-It-Alls",
+      "Swots",
+      "Quizzers",
+      "Thinkers",
+      "Elves",
+      "Reindeer",
+      "Crackers",
+      "Puddings",
+      "Snowmen",
+      "Sprouts",
+      "Baubles",
+      "Carollers",
+      "Angels",
+      "Robins",
+      "Stockings",
+      "Wise Ones",
+      "Smarty Pants",
+      "Mince Pies"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🏆 Christmas Quiz Team Name Generator",
+      "tagline": "Team names for the Christmas pub quiz, the office party or the family quiz after dinner."
+    },
+    "intro": "The team name is the one round everyone can win, and at Christmas it should be a pun. This **Christmas quiz team name generator** has carol and cracker puns like Away in a Ranking and Quiztletoe, plus festive team names like the Mulled Brainboxes, for the pub, the office or the family quiz.",
+    "sections": [],
+    "faqs": []
+  }
+}

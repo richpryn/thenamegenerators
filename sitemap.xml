@@ -3,14 +3,14 @@
   <!-- Homepage -->
   <url>
     <loc>https://thenamegenerators.com/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <!-- All Generators Page -->
   <url>
     <loc>https://thenamegenerators.com/all-generators.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -68,7 +68,7 @@
   <!-- HTML Sitemap -->
   <url>
     <loc>https://thenamegenerators.com/sitemap.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -90,6 +90,13 @@
   <url>
     <loc>https://thenamegenerators.com/categories/halloween-names.html</loc>
     <lastmod>2026-10-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Category: Christmas -->
+  <url>
+    <loc>https://thenamegenerators.com/categories/christmas-names.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -324,6 +331,27 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Christmas Elf Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/christmas-elf-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Christmas Pet Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/christmas-pet-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Christmas Quiz Team Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/christmas-quiz-team-names.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Clan Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/clan-name-generator.html</loc>
@@ -440,6 +468,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/elf-name-generator.html</loc>
     <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Elf on the Shelf Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/elf-on-the-shelf-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -870,6 +905,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Reindeer Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/reindeer-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Robot Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/robot-name-generator.html</loc>
@@ -909,6 +951,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/skyrim-orc-name-generator.html</loc>
     <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Snowman Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/snowman-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

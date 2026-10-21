@@ -1168,7 +1168,8 @@ const SIBLING_PAGES = {
                     <li><strong>Or reveal all.</strong> If you're organising for someone else, "Reveal all" and "Copy all pairs" give you the full list.</li>
                 </ol>
                 <h2 class="section">How the draw works</h2>
-                <p>The names are shuffled into one random circle, and each person buys for the next one round it. That guarantees nobody draws themselves, and nobody is left out. Settle a budget and a date before you draw: it saves a lot of awkward questions later.</p>`,
+                <p>The names are shuffled into one random circle, and each person buys for the next one round it. That guarantees nobody draws themselves, and nobody is left out. Settle a budget and a date before you draw: it saves a lot of awkward questions later.</p>
+                <p>Planning the rest of Christmas? There are <a href="posts/christmas-quiz-team-names.html">Christmas quiz team names</a>, an <a href="posts/elf-on-the-shelf-name-generator.html">Elf on the Shelf name generator</a> and more in the <a href="categories/christmas-names.html">Christmas name generators</a>.</p>`,
     faqs: [
       ['Can someone draw themselves?', 'No. The draw makes one big circle in which everyone gives to someone else.'],
       ['Can the organiser take part?', 'Yes. Each person reveals only their own tag, so the organiser finds out who they are buying for without seeing anyone else\'s.'],

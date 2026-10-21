@@ -1,0 +1,330 @@
+{
+  "title": "Reindeer Name Generator",
+  "slug": "reindeer-name-generator",
+  "icon": "🦌",
+  "category": "christmas",
+  "published": "2026-10-22",
+  "description": "Reindeer names for Santa's sleigh team, a Christmas story or a toy reindeer: classic sleigh names like Frosthoof, cute ones, and funny ones like Hoofdini.",
+  "seoKeywords": "reindeer name generator, reindeer names, christmas reindeer names, funny reindeer names, cute reindeer names, santa's reindeer names, names for a toy reindeer",
+  "seoTitle": "Reindeer Name Generator: Classic, Cute & Funny Names",
+  "isPopular": false,
+  "filters": {
+    "style": {
+      "label": "Style",
+      "options": [
+        "any",
+        "classic",
+        "cute",
+        "funny"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "classic": "Classic sleigh team (Frosthoof)",
+        "cute": "Cute (Button Nose)",
+        "funny": "Funny (Hoofdini)"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "name",
+        "epithet"
+      ],
+      "optionLabels": {
+        "name": "Name only",
+        "epithet": "With a title (the Swift)"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "name": {
+      "recipe": "switch",
+      "on": "style",
+      "cases": {
+        "classic": {
+          "recipe": "template",
+          "template": [
+            "[classic.a][classic.b]",
+            "[classic.single]"
+          ]
+        },
+        "cute": {
+          "recipe": "template",
+          "template": [
+            "[cute]",
+            "[cute_pre][cute_suf]"
+          ]
+        },
+        "funny": {
+          "recipe": "template",
+          "template": [
+            "[funny]",
+            "[funny_titles] [funny_names]"
+          ]
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[classic.a][classic.b]",
+            "[classic.single]",
+            "[cute]",
+            "[cute_pre][cute_suf]",
+            "[funny]",
+            "[funny_titles] [funny_names]"
+          ]
+        }
+      }
+    },
+    "epithet": {
+      "recipe": "switch",
+      "on": "style",
+      "cases": {
+        "classic": {
+          "recipe": "template",
+          "template": [
+            "[classic.a][classic.b] [epithets]",
+            "[classic.single] [epithets]"
+          ]
+        },
+        "cute": {
+          "recipe": "template",
+          "template": [
+            "[cute] [epithets]",
+            "[cute_pre][cute_suf] [epithets]"
+          ]
+        },
+        "funny": {
+          "recipe": "template",
+          "template": [
+            "[funny] [epithets]",
+            "[funny_titles] [funny_names] [epithets]"
+          ]
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[classic.a][classic.b] [epithets]",
+            "[classic.single] [epithets]",
+            "[cute] [epithets]",
+            "[cute_pre][cute_suf] [epithets]",
+            "[funny] [epithets]",
+            "[funny_titles] [funny_names] [epithets]"
+          ]
+        }
+      }
+    }
+  },
+  "data": {
+    "classic": {
+      "a": [
+        "Frost",
+        "Snow",
+        "Star",
+        "Moon",
+        "Silver",
+        "Wind",
+        "Sleet",
+        "Holly",
+        "Glimmer",
+        "North",
+        "Ice",
+        "Spark",
+        "Thistle",
+        "Twinkle",
+        "Swift",
+        "Storm",
+        "Winter",
+        "Mist"
+      ],
+      "b": [
+        "hoof",
+        "foot",
+        "wind",
+        "wing",
+        "light",
+        "bell",
+        "flight",
+        "glow",
+        "run",
+        "leap",
+        "trot",
+        "gleam",
+        "mane",
+        "step"
+      ],
+      "single": [
+        "Aurora",
+        "Borealis",
+        "Nimbus",
+        "Juniper",
+        "Flurry",
+        "Tinsel",
+        "Glacier",
+        "Nova",
+        "Evergreen",
+        "Skye",
+        "Tundra",
+        "Halo",
+        "Lumen",
+        "Pinecone",
+        "Willow",
+        "Ember",
+        "Polaris",
+        "Vega",
+        "Sirius",
+        "Orion",
+        "Starlight",
+        "Moonbeam",
+        "Snowdrift",
+        "Lapland",
+        "Fjord"
+      ]
+    },
+    "cute": [
+      "Button Nose",
+      "Snuggles",
+      "Cocoa",
+      "Marshmallow",
+      "Pip",
+      "Sprout",
+      "Biscuit",
+      "Dumpling",
+      "Toffee",
+      "Sugarplum",
+      "Fluffy",
+      "Twinkle Toes",
+      "Frosty Toes",
+      "Pudding",
+      "Peanut",
+      "Mittens",
+      "Snowball",
+      "Cinnamon",
+      "Velvet",
+      "Muffin",
+      "Bobble",
+      "Little Jingle",
+      "Gingersnap",
+      "Hazelnut",
+      "Buttercup",
+      "Popcorn",
+      "Sweet Pea",
+      "Fudge",
+      "Cupcake",
+      "Nutkin",
+      "Treacle",
+      "Wiggles",
+      "Snowy",
+      "Bluebell",
+      "Pebble"
+    ],
+    "funny": [
+      "Turbo",
+      "Sir Hoofington",
+      "Speedy McSleighface",
+      "Captain Antlers",
+      "Hoofdini",
+      "Kevin",
+      "Gary",
+      "Carrot Thief",
+      "Mince Pie",
+      "Antler Andy",
+      "Sleigh Driver Dave",
+      "Clive",
+      "Lord Jinglebum",
+      "Professor Prance",
+      "Big Nose Bernard",
+      "Nigel the Navigator",
+      "Steve from Accounts",
+      "Rooftop Ron",
+      "Chimney Charlie",
+      "Snack Break",
+      "Overtime",
+      "Second Reserve",
+      "Twelve",
+      "The New Guy",
+      "Barry the Brave",
+      "Doris",
+      "Satnav",
+      "Brian",
+      "Shiny Nose Simon",
+      "Sleepy Susan",
+      "Carrot Cake",
+      "Rooftop Rita",
+      "Bob",
+      "Tinsel Tim",
+      "Agent Antlers"
+    ],
+    "cute_pre": [
+      "Snow",
+      "Twinkle",
+      "Cocoa",
+      "Velvet",
+      "Button",
+      "Sugar",
+      "Pudding",
+      "Biscuit",
+      "Fluff",
+      "Jingle"
+    ],
+    "cute_suf": [
+      "puff",
+      "nose",
+      "hooves",
+      "bean",
+      "drop",
+      "bells",
+      "bun",
+      "sprout"
+    ],
+    "funny_titles": [
+      "Captain",
+      "Sir",
+      "Lord",
+      "Professor",
+      "Agent",
+      "Sergeant",
+      "Doctor",
+      "Admiral"
+    ],
+    "funny_names": [
+      "Antlers",
+      "Hooves",
+      "Sprout",
+      "Jingles",
+      "Snacks",
+      "Carrots",
+      "Tinsel",
+      "Crumbs",
+      "Snowpants",
+      "Wobbles"
+    ],
+    "epithets": [
+      "the Swift",
+      "the Steadfast",
+      "the Bright",
+      "of the Northern Lights",
+      "the Night-Flier",
+      "the Brave",
+      "the Silver-Hoofed",
+      "Who Never Gets Lost",
+      "the Fastest in the Stable",
+      "of the Midnight Run",
+      "the Snow-Footed",
+      "the Loyal",
+      "the Tireless",
+      "Who Knows Every Chimney",
+      "the Star-Guided"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🦌 Reindeer Name Generator",
+      "tagline": "Names for a new member of Santa's sleigh team, from Frosthoof to Hoofdini."
+    },
+    "intro": "Santa's famous reindeer all have names that sound like movement and light, and any new recruit to the team needs one too. This **reindeer name generator** makes classic sleigh-team names, cute ones for a toy reindeer, and funny ones for the reindeer that always lands on the wrong roof.",
+    "sections": [],
+    "faqs": []
+  }
+}
