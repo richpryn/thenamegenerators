@@ -76,6 +76,7 @@
       }
     ],
     "generators": [
+      "skeleton",
       "monster",
       "haunted_house",
       "black_cat",
