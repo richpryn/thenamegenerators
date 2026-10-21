@@ -34,6 +34,7 @@ Things only Rich can do. The Claude sessions add items here as they come up and 
 - [ ] **Request indexing for new and moved pages.** Partly done on 21 October; Search Console only allows about 10 requests a day. Do the hubs first, a few more each day. The sitemap (`sitemap.xml`, submitted under Sitemaps) lets Google find everything else on its own, so the rest is a nudge, not essential. URL Inspection → Request indexing for:
   - **First, while it's still October:** `https://thenamegenerators.com/categories/halloween-names.html` (new Halloween hub)
   - **Then the new Halloween generators:** `/posts/witch-name-generator.html`, `/posts/black-cat-name-generator.html`, `/posts/haunted-house-name-generator.html`
+  - **Then the rest of the Halloween set, a few a day:** `/posts/coven-name-generator.html`, `/posts/monster-name-generator.html`, `/posts/skeleton-name-generator.html`, `/posts/spell-name-generator.html`, `/posts/horror-movie-title-generator.html`, `/posts/mummy-name-generator.html`, `/posts/scarecrow-name-generator.html`
   - `https://thenamegenerators.com/` (new hero)
   - `https://thenamegenerators.com/posts/hammer-name-generator.html` (was Warhammer)
   - `https://thenamegenerators.com/posts/event-name-generator.html`
