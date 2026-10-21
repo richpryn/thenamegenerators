@@ -4,7 +4,7 @@
   "icon": "👻",
   "category": "folklore",
   "published": "2026-10-20",
-  "description": "Ghost names in the style of real hauntings (the Grey Lady, the Drummer of the Old Mill), restless Victorian spirits, and friendly little ghosts.",
+  "description": "Ghost names in the style of real hauntings (the Grey Lady, the Drummer of the Old Mill), restless spirits, Irish banshees and friendly little ghosts.",
   "seoKeywords": "ghost name generator, ghost names, haunting names, spooky names, friendly ghost names, halloween name generator, spirit names",
   "isPopular": false,
   "filters": {
@@ -149,7 +149,7 @@
       "the Long Barrow",
       "Hollow Lane",
       "the Coaching Inn",
-      "Thornfield Grange",
+      "Thornley Grange",
       "the Old Gaol",
       "Mill Pond",
       "the Priory",
@@ -339,11 +339,15 @@
       "title": "👻 Ghost Name Generator",
       "tagline": "Names for hauntings, from the Grey Lady to a friendly little Wisp."
     },
-    "intro": "Real ghost stories name their ghosts in a few simple ways: by colour (the Grey Lady, the Brown Lady), by who they were (the Drummer, the Monk), or by where they're seen. This **ghost name generator** makes names in those patterns, along with restless <a href=\"victorian-name-generator.html\">Victorian</a> spirits and friendly ghosts for Halloween.",
+    "intro": "Real ghost stories name their ghosts in a few simple ways: by colour (the Grey Lady, the Brown Lady), by who they were (the Drummer, the Monk), or by where they're seen. This **ghost name generator** makes names in those patterns, along with Irish banshees, restless <a href=\"victorian-name-generator.html\">Victorian</a> spirits and friendly ghosts for Halloween.",
     "sections": [
       {
         "heading": "How real ghosts got their names",
         "content": "<ul><li><strong>By colour:</strong> Grey Ladies are reported at castles and country houses all over Britain. The Brown Lady of Raynham Hall became famous after a photograph published in 1936.</li><li><strong>By who they were:</strong> drummers, monks and nuns appear in many local legends, usually tied to an old story about how they died.</li><li><strong>By place:</strong> Anne Boleyn is said to haunt the Tower of London, where she was executed in 1536.</li><li><strong>By what they do:</strong> the Headless Horseman of Washington Irving's <em>The Legend of Sleepy Hollow</em> (1820), or the poltergeist, German for \"noisy ghost\".</li></ul>"
+      },
+      {
+        "heading": "Banshees",
+        "content": "<p>The banshee comes from Irish folklore: in Irish she is the <em>bean sí</em>, \"woman of the fairy mound\". She doesn't harm anyone. Her keening, a high mourning cry, warns a family that one of them is about to die.</p><ul><li><strong>Old families:</strong> tradition says she keens only for the oldest Irish families, and the names most often given are the O'Neills, O'Briens, O'Connors, O'Gradys and Kavanaghs.</li><li><strong>How she's seen:</strong> sometimes a young woman, sometimes an old one, often combing her long hair. In some tales she is a washer at the ford, washing the clothes of the one who will die.</li></ul><p>The <em>Banshee</em> style gives her a modern Irish first name with a keening epithet. The banshee is part of a living tradition, so treat her kindly.</p>"
       },
       {
         "heading": "Using the names",
@@ -362,6 +366,10 @@
       {
         "question": "What's a good name for a friendly ghost?",
         "answer": "Something soft and short: Wisp, Boo, Flicker or Glimmer. Choose \"Friendly ghost\"."
+      },
+      {
+        "question": "What is a banshee?",
+        "answer": "A spirit from Irish folklore, the bean sí or \"woman of the fairy mound\", whose keening cry warns a family of a coming death. She's a mourner, not a monster."
       }
     ]
   }

@@ -4,7 +4,7 @@
   "icon": "🌾",
   "category": "halloween",
   "published": "2026-10-21",
-  "description": "Scarecrow names for the garden, the allotment, a village scarecrow festival or a scary story: folksy names like Old Tom Turnip, or creepy ones like the Hollow Man of Barley Rise.",
+  "description": "Scarecrow names for the garden, allotment, a scarecrow festival or a scary story: folksy names like Old Tom Turnip, or creepy ones like the Hollow Man.",
   "seoKeywords": "scarecrow name generator, scarecrow names, funny scarecrow names, scarecrow festival names, creepy scarecrow names, halloween scarecrow names, garden scarecrow names",
   "isPopular": false,
   "filters": {
@@ -250,7 +250,29 @@
       "tagline": "Folksy names for the scarecrow on your allotment, or creepy ones for the thing standing very still in the far field."
     },
     "intro": "Scarecrows have been standing guard over British fields for centuries, and plenty of villages now hold scarecrow festivals every year. This **scarecrow name generator** makes friendly, folksy names like Old Tom Turnip and Mother Haybale, or creepy ones like the Hollow Man of Barley Rise.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Scarecrows in Britain",
+        "content": "<ul><li><strong>Before scarecrows,</strong> farmers paid children to chase birds off the newly sown fields, shouting and banging clappers. They were called bird-scarers or crow-keepers, and the straw figure took over the job.</li><li><strong>The word</strong> scarecrow has been in English since the 1500s, and the name says exactly what it's for.</li><li><strong>Scarecrow festivals:</strong> many villages now fill their streets with scarecrows for a weekend. Kettlewell in the Yorkshire Dales has held one since the 1990s, and plenty of other villages followed.</li><li><strong>In fiction:</strong> the Scarecrow in L. Frank Baum's <em>The Wonderful Wizard of Oz</em> (1900) wants a brain, and Worzel Gummidge, from Barbara Euphan Todd's books of the 1930s, comes to life on a farm. The generator leaves those names alone and makes new ones.</li></ul>"
+      },
+      {
+        "heading": "Naming your scarecrow",
+        "content": "<ul><li><strong>For the garden or allotment,</strong> folksy works best: a title, a plain old name and something from the field (Farmer Ned Hedgely, Mother Hattie Chaff).</li><li><strong>For a scarecrow festival,</strong> add a place with <em>With a place</em> so the name goes on a sign: Little Maggie Thatch of Barley Rise.</li><li><strong>For a scary story,</strong> the creepy style gives names the locals whisper: the Stitched Man, the Straw Widow.</li></ul><p>For more of the countryside's stranger side, try the <a href=\"witch-name-generator.html\">Witch</a> and <a href=\"ghost-name-generator.html\">Ghost</a> name generators, or the <a href=\"monster-name-generator.html\">Monster Name Generator</a> for whatever's in the far field.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good name for a scarecrow?",
+        "answer": "A folksy one: an old-fashioned first name, a title like Farmer or Old, and a surname from the field, like Old Walter Strawfield or Auntie Polly Tater."
+      },
+      {
+        "question": "What's a creepy name for a scarecrow?",
+        "answer": "Something plain and unsettling, like the Stitched Man or the Straw Widow, with a place for extra dread: the Sack-Head of Sixpenny Field."
+      },
+      {
+        "question": "What did people use before scarecrows?",
+        "answer": "Children. Farmers paid boys and girls to scare birds off the fields, a job known as bird-scaring or crow-keeping."
+      }
+    ]
   }
 }
