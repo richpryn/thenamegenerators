@@ -307,7 +307,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css">
+    <link rel="stylesheet" href="../styles/site.css?v=125c753f">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -624,8 +624,8 @@
     </footer>
 
     <script type="application/json" id="generator-config">{"title":"Halfling Name Generator","slug":"halfling-name-generator","filters":{"gender":{"label":"Gender","options":["any","male","female"],"optionLabels":{"any":"Any"}},"format":{"label":"Name format","options":["full_name","with_nickname","given","family"],"optionLabels":{"full_name":"Given + family name","with_nickname":"With a nickname","given":"Given name only","family":"Family name only"}}},"recipe":"switch","on":"format","cases":{"full_name":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[given] [family]"}},"default":{"recipe":"template","template":"[given.{gender}] [family]"}},"with_nickname":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[given] “[nicknames]” [family]"}},"default":{"recipe":"template","template":"[given.{gender}] “[nicknames]” [family]"}},"given":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"pick","from":"given"}},"default":{"recipe":"pick","from":"given.{gender}"}},"family":{"recipe":"pick","from":"family"}},"data":{"given":{"male":["Abel","Alden","Barnaby","Bartle","Benno","Bram","Cobb","Corwin","Dalby","Dobbin","Ebbin","Edric","Fenwick","Ferris","Garvey","Gilly","Hob","Jory","Kip","Lenny","Lobb","Marten","Merrin","Ned","Nob","Ollie","Pip","Quincy","Rafe","Rollo","Rudy","Tobin","Todd","Tully","Wat","Wilby","Wendel"],"female":["Adela","Amity","Bella","Briar","Bryony","Clover","Daisy","Dora","Elsie","Fern","Fia","Ginny","Hazel","Hetty","Ivy","Jessa","Kitty","Lark","Lettie","Linnet","Mabel","Marigold","Minnie","Nell","Nettie","Pansy","Peony","Poppy","Primrose","Saffi","Sorrel","Tansy","Tilly","Wren","Winnie","Bree","Juniper"]},"family":["Applebough","Barleyfoot","Barrowdown","Bramblewick","Butterbank","Cobbleknot","Copperkettle","Dewdrop","Fairbarrel","Fernbrook","Greenmeadow","Hearthstone","Honeypot","Kettlewhistle","Leafwhistle","Meadowsweet","Nettlebrook","Oakbarrel","Pebblefoot","Puddlefoot","Quickstep","Rosehip","Swiftwater","Tanglefoot","Thistledown","Tumblebrook","Warmhearth","Wheatfield","Willowbank","Bracken","Hillhollow","Mossbrook","Pipewood","Riverbend","Sweetwater","Teapot","Tinderbox","Brightbarrel","Goodbloom","Mapleleaf"],"nicknames":["Lucky","Quickfingers","Tealeaf","Butterfingers","Shortstep","Biscuit","Two-Pies","Sneezewort","Whistle","Jinx","Pockets","Muddy","Sleepy","Crumbs","Kettle","Bounce","Hopscotch","Ladle","Pudding","Sprout","Nimble","Halfpint","Smudge","Patch","Jam","Thimble","Buttons","Pickle","Tumble","Dandelion"]}}</script>
-    <script src="../lib/recipe-engine.js"></script>
-    <script src="../lib/page.js"></script>
-    <script src="../lib/outline.js"></script>
+    <script src="../lib/recipe-engine.js?v=d1b89e2e"></script>
+    <script src="../lib/page.js?v=68b15952"></script>
+    <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>
