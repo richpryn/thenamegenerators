@@ -234,39 +234,39 @@
               "recipe": "template",
               "template": [
                 "[funny.starts][funny.ends.shared] [funny.epithets.under_bed]",
-                "[funny.starts][funny.ends.shared], [funny.epithets.under_bed_titled]",
+                "[funny.starts][funny.ends.shared],, [funny.epithets.under_bed_titled_titled]",
                 "[funny.starts][funny.ends.under_bed] [funny.epithets.under_bed]",
-                "[funny.starts][funny.ends.under_bed], [funny.epithets.under_bed_titled]",
+                "[funny.starts][funny.ends.under_bed],, [funny.epithets.under_bed_titled_titled]",
                 "[funny.titles] [funny.starts][funny.ends.shared] [funny.epithets.under_bed]",
-                "[funny.titles] [funny.starts][funny.ends.shared], [funny.epithets.under_bed_titled]",
+                "[funny.titles] [funny.starts][funny.ends.shared],, [funny.epithets.under_bed_titled_titled]",
                 "[funny.titles] [funny.starts][funny.ends.under_bed] [funny.epithets.under_bed]",
-                "[funny.titles] [funny.starts][funny.ends.under_bed], [funny.epithets.under_bed_titled]"
+                "[funny.titles] [funny.starts][funny.ends.under_bed],, [funny.epithets.under_bed_titled_titled]"
               ]
             },
             "swamp": {
               "recipe": "template",
               "template": [
                 "[funny.starts][funny.ends.shared] [funny.epithets.swamp]",
-                "[funny.starts][funny.ends.shared], [funny.epithets.swamp_titled]",
+                "[funny.starts][funny.ends.shared],, [funny.epithets.swamp_titled_titled]",
                 "[funny.starts][funny.ends.swamp] [funny.epithets.swamp]",
-                "[funny.starts][funny.ends.swamp], [funny.epithets.swamp_titled]",
+                "[funny.starts][funny.ends.swamp],, [funny.epithets.swamp_titled_titled]",
                 "[funny.titles] [funny.starts][funny.ends.shared] [funny.epithets.swamp]",
-                "[funny.titles] [funny.starts][funny.ends.shared], [funny.epithets.swamp_titled]",
+                "[funny.titles] [funny.starts][funny.ends.shared],, [funny.epithets.swamp_titled_titled]",
                 "[funny.titles] [funny.starts][funny.ends.swamp] [funny.epithets.swamp]",
-                "[funny.titles] [funny.starts][funny.ends.swamp], [funny.epithets.swamp_titled]"
+                "[funny.titles] [funny.starts][funny.ends.swamp],, [funny.epithets.swamp_titled_titled]"
               ]
             },
             "sea": {
               "recipe": "template",
               "template": [
                 "[funny.starts][funny.ends.shared] [funny.epithets.sea]",
-                "[funny.starts][funny.ends.shared], [funny.epithets.sea_titled]",
+                "[funny.starts][funny.ends.shared],, [funny.epithets.sea_titled_titled]",
                 "[funny.starts][funny.ends.sea] [funny.epithets.sea]",
-                "[funny.starts][funny.ends.sea], [funny.epithets.sea_titled]",
+                "[funny.starts][funny.ends.sea],, [funny.epithets.sea_titled_titled]",
                 "[funny.titles] [funny.starts][funny.ends.shared] [funny.epithets.sea]",
-                "[funny.titles] [funny.starts][funny.ends.shared], [funny.epithets.sea_titled]",
+                "[funny.titles] [funny.starts][funny.ends.shared],, [funny.epithets.sea_titled_titled]",
                 "[funny.titles] [funny.starts][funny.ends.sea] [funny.epithets.sea]",
-                "[funny.titles] [funny.starts][funny.ends.sea], [funny.epithets.sea_titled]"
+                "[funny.titles] [funny.starts][funny.ends.sea],, [funny.epithets.sea_titled_titled]"
               ]
             },
             "mountain": {
@@ -300,29 +300,29 @@
               "recipe": "template",
               "template": [
                 "[funny.starts][funny.ends.shared] [funny.epithets.under_bed]",
-                "[funny.starts][funny.ends.shared], [funny.epithets.under_bed_titled]",
+                "[funny.starts][funny.ends.shared],, [funny.epithets.under_bed_titled_titled]",
                 "[funny.starts][funny.ends.under_bed] [funny.epithets.under_bed]",
-                "[funny.starts][funny.ends.under_bed], [funny.epithets.under_bed_titled]",
+                "[funny.starts][funny.ends.under_bed],, [funny.epithets.under_bed_titled_titled]",
                 "[funny.titles] [funny.starts][funny.ends.shared] [funny.epithets.under_bed]",
-                "[funny.titles] [funny.starts][funny.ends.shared], [funny.epithets.under_bed_titled]",
+                "[funny.titles] [funny.starts][funny.ends.shared],, [funny.epithets.under_bed_titled_titled]",
                 "[funny.titles] [funny.starts][funny.ends.under_bed] [funny.epithets.under_bed]",
-                "[funny.titles] [funny.starts][funny.ends.under_bed], [funny.epithets.under_bed_titled]",
+                "[funny.titles] [funny.starts][funny.ends.under_bed],, [funny.epithets.under_bed_titled_titled]",
                 "[funny.starts][funny.ends.shared] [funny.epithets.swamp]",
-                "[funny.starts][funny.ends.shared], [funny.epithets.swamp_titled]",
+                "[funny.starts][funny.ends.shared],, [funny.epithets.swamp_titled_titled]",
                 "[funny.starts][funny.ends.swamp] [funny.epithets.swamp]",
-                "[funny.starts][funny.ends.swamp], [funny.epithets.swamp_titled]",
+                "[funny.starts][funny.ends.swamp],, [funny.epithets.swamp_titled_titled]",
                 "[funny.titles] [funny.starts][funny.ends.shared] [funny.epithets.swamp]",
-                "[funny.titles] [funny.starts][funny.ends.shared], [funny.epithets.swamp_titled]",
+                "[funny.titles] [funny.starts][funny.ends.shared],, [funny.epithets.swamp_titled_titled]",
                 "[funny.titles] [funny.starts][funny.ends.swamp] [funny.epithets.swamp]",
-                "[funny.titles] [funny.starts][funny.ends.swamp], [funny.epithets.swamp_titled]",
+                "[funny.titles] [funny.starts][funny.ends.swamp],, [funny.epithets.swamp_titled_titled]",
                 "[funny.starts][funny.ends.shared] [funny.epithets.sea]",
-                "[funny.starts][funny.ends.shared], [funny.epithets.sea_titled]",
+                "[funny.starts][funny.ends.shared],, [funny.epithets.sea_titled_titled]",
                 "[funny.starts][funny.ends.sea] [funny.epithets.sea]",
-                "[funny.starts][funny.ends.sea], [funny.epithets.sea_titled]",
+                "[funny.starts][funny.ends.sea],, [funny.epithets.sea_titled_titled]",
                 "[funny.titles] [funny.starts][funny.ends.shared] [funny.epithets.sea]",
-                "[funny.titles] [funny.starts][funny.ends.shared], [funny.epithets.sea_titled]",
+                "[funny.titles] [funny.starts][funny.ends.shared],, [funny.epithets.sea_titled_titled]",
                 "[funny.titles] [funny.starts][funny.ends.sea] [funny.epithets.sea]",
-                "[funny.titles] [funny.starts][funny.ends.sea], [funny.epithets.sea_titled]",
+                "[funny.titles] [funny.starts][funny.ends.sea],, [funny.epithets.sea_titled_titled]",
                 "[funny.starts][funny.ends.shared] [funny.epithets.mountain]",
                 "[funny.starts][funny.ends.mountain] [funny.epithets.mountain]",
                 "[funny.titles] [funny.starts][funny.ends.shared] [funny.epithets.mountain]",
@@ -752,15 +752,15 @@
           "the Night-Time Guardian",
           "the Sleepy"
         ],
-        "under_bed_titled": [
+        "sea_titled_titled": [
+          "Friend of Fish"
+        ],
+        "under_bed_titled_titled": [
           "Champion of Hide-and-Seek",
           "Snorer Extraordinaire"
         ],
-        "swamp_titled": [
+        "swamp_titled_titled": [
           "King of the Frogs"
-        ],
-        "sea_titled": [
-          "Friend of Fish"
         ]
       }
     }
