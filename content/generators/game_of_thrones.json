@@ -1187,7 +1187,7 @@
       "title": "👑 Game of Thrones Name Generator",
       "tagline": "Names from every corner of Westeros, with a house of your own or the right bastard surname."
     },
-    "intro": "George R. R. Martin builds most Westerosi names from real medieval English ones with a letter changed: Eddard for Edward, Jaime for James, Petyr for Peter. Each region has its own flavour, Targaryens sound Valyrian, and bastards get a surname that tells you where they were born. This **Game of Thrones name generator** builds names for eight regions of Westeros, plus Valyrian and Free Folk names, as a noble with a new house, a bastard or a first name alone.",
+    "intro": "George R. R. Martin builds most Westerosi names from real <a href=\"medieval-name-generator.html\">medieval</a> English ones with a letter changed: Eddard for Edward, Jaime for James, Petyr for Peter. Each region has its own flavour, Targaryens sound Valyrian, and bastards get a surname that tells you where they were born. This **Game of Thrones name generator** builds names for eight regions of Westeros, plus Valyrian and Free Folk names, as a noble with a new house, a bastard or a first name alone.",
     "sections": [
       {
         "heading": "Bastard surnames by region",
@@ -1195,7 +1195,7 @@
       },
       {
         "heading": "How each region sounds",
-        "content": "<ul><li><strong>The North:</strong> plain and old: Rickard, Benjen, Lyanna. Northern houses sound cold and hard.</li><li><strong>The Westerlands:</strong> polished and proud, the Lannisters' country: Tywin, Kevan, Cersei.</li><li><strong>The Reach:</strong> courtly and flowery, home of the Tyrells: Mace, Loras, Margaery.</li><li><strong>Dorne:</strong> a different flavour altogether, after the Rhoynar who settled there: Oberyn, Doran, Arianne, Nymeria.</li><li><strong>The Iron Islands:</strong> harsh and salty: Balon, Euron, Asha.</li><li><strong>Valyrian:</strong> the Targaryens' names, full of ae and y: Aegon, Rhaegar, Daenerys, Viserys.</li><li><strong>The Free Folk:</strong> one name, often with an epithet earned beyond the Wall: Tormund Giantsbane.</li></ul>"
+        "content": "<ul><li><strong>The North:</strong> plain and old: Rickard, Benjen, Lyanna. Northern houses sound cold and hard.</li><li><strong>The Westerlands:</strong> polished and proud, the Lannisters' country: Tywin, Kevan, Cersei.</li><li><strong>The Reach:</strong> courtly and flowery, home of the Tyrells: Mace, Loras, Margaery.</li><li><strong>Dorne:</strong> a different flavour altogether, after the Rhoynar who settled there: Oberyn, Doran, Arianne, Nymeria.</li><li><strong>The Iron Islands:</strong> harsh and salty: Balon, Euron, Asha.</li><li><strong>Valyrian:</strong> the Targaryens' names, full of ae and y: Aegon, Rhaegar, Daenerys, Viserys.</li><li><strong>The Free Folk:</strong> one name, often with an <a href=\"epithet-generator.html\">epithet</a> earned beyond the Wall: Tormund Giantsbane.</li></ul>"
       },
       {
         "heading": "Making your character's name",

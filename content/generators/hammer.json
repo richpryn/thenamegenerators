@@ -227,15 +227,15 @@
       "title": "🔨 Hammer Name Generator",
       "tagline": "Names for legendary war hammers, mauls and maces, from two-word names to full titles with an epithet."
     },
-    "intro": "Legendary hammers tend to be named for what they do or who they serve: Thor's Mjölnir, D&D's Hammer of Thunderbolts. This **hammer name generator** builds names for war hammers, mauls and maces in three shapes: short names like Sacred Anvil, a name with an epithet like \"Righteous, Fist of the Sky-Father\", and full titles like \"Star-Iron Warhammer, Breaker of Chains\".",
+    "intro": "Legendary hammers tend to be named for what they do or who they serve: Thor's Mjölnir, D&D's Hammer of Thunderbolts. This **hammer name generator** builds names for war hammers, mauls and maces in three shapes: short names like Sacred Anvil, a name with an <a href=\"epithet-generator.html\">epithet</a> like \"Righteous, Fist of the Sky-Father\", and full titles like \"Star-Iron Warhammer, Breaker of Chains\".",
     "sections": [
       {
         "heading": "Hammers in myth and history",
-        "content": "<ul><li><strong>Mjölnir</strong>, Thor's hammer, is the most famous of all. Its name is usually linked to words for crushing or grinding. In the Norse myths it was forged by the dwarves Brokkr and Eitri, and its handle came out short because Loki, disguised as a fly, kept biting Brokkr as he worked the bellows.</li><li><strong>\"The Hammer\" as a title</strong>: Charles Martel, the Frankish leader who won at Tours in 732, takes his name from <em>martel</em>, \"hammer\". Edward I of England was called <em>Scottorum malleus</em>, \"Hammer of the Scots\". Judah Maccabee's name is traditionally explained the same way.</li><li><strong>Real war hammers</strong> came into their own in the late Middle Ages, when plate armour made edges glance off. A hammer face or spike could dent or pierce armour that a sword couldn't cut, which is why knights carried them, along with maces and the spiked <em>morning star</em>.</li></ul>"
+        "content": "<ul><li><strong>Mjölnir</strong>, Thor's hammer, is the most famous of all. Its name is usually linked to words for crushing or grinding. In the Norse myths it was forged by the <a href=\"dwarf-name-generator.html\">dwarves</a> Brokkr and Eitri, and its handle came out short because Loki, disguised as a fly, kept biting Brokkr as he worked the bellows.</li><li><strong>\"The Hammer\" as a title</strong>: Charles Martel, the Frankish leader who won at Tours in 732, takes his name from <em>martel</em>, \"hammer\". Edward I of England was called <em>Scottorum malleus</em>, \"Hammer of the Scots\". Judah Maccabee's name is traditionally explained the same way.</li><li><strong>Real war hammers</strong> came into their own in the late Middle Ages, when plate armour made edges glance off. A hammer face or spike could dent or pierce armour that a <a href=\"sword-name-generator.html\">sword</a> couldn't cut, which is why <a href=\"knight-name-generator.html\">knights</a> carried them, along with maces and the spiked <em>morning star</em>.</li></ul>"
       },
       {
         "heading": "Famous hammers in games",
-        "content": "<ul><li><strong>Dungeons &amp; Dragons</strong>: the <em>Hammer of Thunderbolts</em> and the <em>Dwarven Thrower</em>, which flies back to its owner's hand. In early editions, clerics could only use blunt weapons, which is why so many holy warriors carry hammers and maces.</li><li><strong>Warcraft</strong>: the <em>Doomhammer</em>, carried by Orgrim Doomhammer and then Thrall, and <em>Sulfuras, Hand of Ragnaros</em>.</li><li><strong>Skyrim</strong>: <em>Volendrung</em>, the war hammer of Malacath, the orcs' Daedric Prince.</li></ul><p>Notice how many are named for their owner or for what they do. That's the habit the generator follows.</p>"
+        "content": "<ul><li><strong>Dungeons &amp; Dragons</strong>: the <em>Hammer of Thunderbolts</em> and the <em>Dwarven Thrower</em>, which flies back to its owner's hand. In early editions, clerics could only use blunt weapons, which is why so many holy warriors carry hammers and maces.</li><li><strong>Warcraft</strong>: the <em>Doomhammer</em>, carried by Orgrim Doomhammer and then Thrall, and <em>Sulfuras, Hand of Ragnaros</em>.</li><li><strong>Skyrim</strong>: <em>Volendrung</em>, the war hammer of Malacath, the <a href=\"orc-name-generator.html\">orcs</a>' Daedric Prince.</li></ul><p>Notice how many are named for their owner or for what they do. That's the habit the generator follows.</p>"
       },
       {
         "heading": "The three name shapes",
@@ -261,7 +261,7 @@
       },
       {
         "question": "Can I use these names in D&D?",
-        "answer": "Yes, they're free to use. A hammer suits a cleric or paladin especially well: in early editions of D&D, clerics could only use blunt weapons."
+        "answer": "Yes, they're free to use. A hammer suits a cleric or <a href=\"paladin-name-generator.html\">paladin</a> especially well: in early editions of D&D, clerics could only use blunt weapons."
       }
     ]
   }

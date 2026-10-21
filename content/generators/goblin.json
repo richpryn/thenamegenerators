@@ -215,7 +215,7 @@
       "title": "👺 Goblin Name Generator",
       "tagline": "Short, sharp goblin names, hobgoblins with a rank and bugbears with a reputation."
     },
-    "intro": "Goblins are the first monster many D&D parties meet, and the ones they remember have names. In the starter adventure Lost Mine of Phandelver it's Yeemik the goblin and Klarg the bugbear. This **goblin name generator** covers all three goblinoids: quick, nasty goblin names with an epithet, hobgoblins with a military rank, and big, slow-sounding bugbear names.",
+    "intro": "Goblins are the first monster many D&D parties meet, and the ones they remember have names. In the starter adventure Lost Mine of Phandelver it's Yeemik the goblin and Klarg the bugbear. This **goblin name generator** covers all three goblinoids: quick, nasty goblin names with an <a href=\"epithet-generator.html\">epithet</a>, hobgoblins with a military rank, and big, slow-sounding bugbear names.",
     "sections": [
       {
         "heading": "Goblins, hobgoblins and bugbears",
@@ -223,7 +223,7 @@
       },
       {
         "heading": "Goblins in folklore and fiction",
-        "content": "<p>Goblins were mischievous spirits in European folklore long before they were monsters in games. Christina Rossetti's poem <em>Goblin Market</em> (1862) has goblin merchants selling enchanted fruit. Tolkien's <em>The Hobbit</em> has the Great Goblin under the Misty Mountains, and in <em>Labyrinth</em> (1986) David Bowie plays Jareth, the Goblin King.</p><p>D&D's goblins borrow from all of that: greedy, sneaky and funnier than they mean to be. That's why an epithet works so well. \"Snik Two-Teeth\" tells you what kind of goblin he is before he's said a word.</p>"
+        "content": "<p>Goblins were mischievous spirits in European folklore long before they were monsters in games. Christina Rossetti's poem <em>Goblin Market</em> (1862) has goblin merchants selling enchanted fruit. Tolkien's <em>The <a href=\"hobbit-name-generator.html\">Hobbit</a></em> has the Great Goblin under the Misty Mountains, and in <em>Labyrinth</em> (1986) David Bowie plays Jareth, the Goblin King.</p><p>D&D's goblins borrow from all of that: greedy, sneaky and funnier than they mean to be. That's why an epithet works so well. \"Snik Two-Teeth\" tells you what kind of goblin he is before he's said a word.</p>"
       },
       {
         "heading": "Naming goblins at the table",

@@ -1366,7 +1366,7 @@
       "title": "🏰 Fantasy City Name Generator",
       "tagline": "Capitals, fortresses and ports, each with an epithet if you want one: Saltreach, the City of Sails."
     },
-    "intro": "A great city needs a name that can carry its reputation. This **fantasy city name generator** sorts names by the kind of city you're building: a shining capital, a fortress on the border, a port full of smugglers, a hold in the frozen north, the ruin of something older, or a market city on the river. Add an epithet and it comes with a reputation too: <em>Ironwall, the Last Bastion</em>.",
+    "intro": "A great city needs a name that can carry its reputation. This **fantasy city name generator** sorts names by the kind of city you're building: a shining capital, a fortress on the border, a port full of smugglers, a hold in the frozen north, the ruin of something older, or a market city on the river. Add an <a href=\"epithet-generator.html\">epithet</a> and it comes with a reputation too: <em>Ironwall, the Last Bastion</em>.",
     "sections": [
       {
         "heading": "How real cities got their names",

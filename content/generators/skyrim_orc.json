@@ -349,7 +349,7 @@
       "title": "⚔️ Skyrim Orc Name Generator",
       "tagline": "Orc names built the way Skyrim builds them, from Urag gro-Shub to Ghorza gra-Bagol."
     },
-    "intro": "Every orc you meet in Skyrim has the same kind of name: a short, hard-edged first name, then <strong>gro-</strong> or <strong>gra-</strong> and the name of a parent. Once you know the pattern you'll spot it everywhere, from the librarian at the College of Winterhold to the smiths of Markarth. This **Skyrim orc name generator** builds full names that way, or gives you just the first name if you'd rather add the rest yourself.",
+    "intro": "Every <a href=\"orc-name-generator.html\">orc</a> you meet in Skyrim has the same kind of name: a short, hard-edged first name, then <strong>gro-</strong> or <strong>gra-</strong> and the name of a parent. Once you know the pattern you'll spot it everywhere, from the librarian at the College of Winterhold to the smiths of Markarth. This **Skyrim orc name generator** builds full names that way, or gives you just the first name if you'd rather add the rest yourself.",
     "sections": [
       {
         "heading": "What gro- and gra- mean",
@@ -357,7 +357,7 @@
       },
       {
         "heading": "Names in the orc strongholds",
-        "content": "<p>Most of Skyrim's orcs live in four strongholds, each run by a chief: Dushnikh Yal and Mor Khazgur in the Reach, Largashbur in the Rift, and Narzulbur in Eastmarch. Life there follows the Code of Malacath, the Daedric Prince the orcs worship.</p><p>Stronghold names come with roles attached. There's the chief, his wives, a forge-wife who keeps the smithy (Gharol at Dushnikh Yal, for example) and a wise-woman who speaks for Malacath. If you're naming a character from a stronghold, it's worth deciding their role too, since it says as much about them as the name does.</p><p>Some orcs also earn an epithet. Borgakh the Steel Heart, the chief's daughter at Mor Khazgur who can become your follower, goes by her deed-name rather than a gro-/gra- surname. An epithet suits a character with a reputation: a champion, an exile, a famous smith.</p>"
+        "content": "<p>Most of Skyrim's orcs live in four strongholds, each run by a chief: Dushnikh Yal and Mor Khazgur in the Reach, Largashbur in the Rift, and Narzulbur in Eastmarch. Life there follows the Code of Malacath, the Daedric Prince the orcs worship.</p><p>Stronghold names come with roles attached. There's the chief, his wives, a forge-wife who keeps the smithy (Gharol at Dushnikh Yal, for example) and a wise-woman who speaks for Malacath. If you're naming a character from a stronghold, it's worth deciding their role too, since it says as much about them as the name does.</p><p>Some orcs also earn an <a href=\"epithet-generator.html\">epithet</a>. Borgakh the Steel Heart, the chief's daughter at Mor Khazgur who can become your follower, goes by her deed-name rather than a gro-/gra- surname. An epithet suits a character with a reputation: a champion, an exile, a famous smith.</p>"
       },
       {
         "heading": "How the first names sound",

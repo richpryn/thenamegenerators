@@ -281,7 +281,7 @@
       "title": "✨ Paladin Name Generator",
       "tagline": "A noble name and an epithet that shows which oath your paladin swore."
     },
-    "intro": "A paladin is defined by their oath, so their name should be too. In D&D a paladin of Devotion and a paladin of Vengeance might both be called Gideon, but one is Gideon the Merciful and the other Gideon Grimblade. This **paladin name generator** pairs a noble first name with an epithet shaped by the oath you choose, from the Player's Handbook's three to later ones like Glory and the Watchers, and the Oathbreaker.",
+    "intro": "A paladin is defined by their oath, so their name should be too. In D&D a paladin of Devotion and a paladin of Vengeance might both be called Gideon, but one is Gideon the Merciful and the other Gideon Grimblade. This **paladin name generator** pairs a noble first name with an <a href=\"epithet-generator.html\">epithet</a> shaped by the oath you choose, from the Player's Handbook's three to later ones like Glory and the Watchers, and the Oathbreaker.",
     "sections": [
       {
         "heading": "Where paladins come from",

@@ -160,7 +160,7 @@
       "title": "🧙 LOTR Wizard Name Generator",
       "tagline": "A colour and an Elvish name, the way Middle-earth names its wizards: Luinrandir, \"Blue Wanderer\"."
     },
-    "intro": "Gandalf has a different name in almost every language of Middle-earth: Mithrandir to the Elves, Tharkûn to the Dwarves, Olórin in the West. This **LOTR wizard name generator** builds names the way the Elves named the Istari, from a colour and a Sindarin word, and tells you what they mean.",
+    "intro": "Gandalf has a different name in almost every language of Middle-earth: Mithrandir to the <a href=\"elf-name-generator.html\">Elves</a>, Tharkûn to the <a href=\"dwarf-name-generator.html\">Dwarves</a>, Olórin in the West. This **LOTR wizard name generator** builds names the way the Elves named the Istari, from a colour and a Sindarin word, and tells you what they mean.",
     "sections": [
       {
         "heading": "The Istari and their names",
@@ -172,7 +172,7 @@
       },
       {
         "heading": "Using a wizard of your own",
-        "content": "<ul><li><strong>Give them a name for each people.</strong> Gandalf's many names show how far he travelled. Your wizard might be a colour to Men, an Elvish name to the Elves, and something rude to the orcs.</li><li><strong>Give them a cause.</strong> Each of the Istari had a purpose, and a weakness: Saruman's pride, Radagast's love of beasts.</li><li><strong>For wizards outside Tolkien</strong>, try the <a href=\"wizard-name-generator.html\">Wizard Name Generator</a>.</li></ul>"
+        "content": "<ul><li><strong>Give them a name for each people.</strong> Gandalf's many names show how far he travelled. Your wizard might be a colour to Men, an Elvish name to the Elves, and something rude to the <a href=\"orc-name-generator.html\">orcs</a>.</li><li><strong>Give them a cause.</strong> Each of the Istari had a purpose, and a weakness: Saruman's pride, Radagast's love of beasts.</li><li><strong>For wizards outside Tolkien</strong>, try the <a href=\"wizard-name-generator.html\">Wizard Name Generator</a>.</li></ul>"
       }
     ],
     "faqs": [

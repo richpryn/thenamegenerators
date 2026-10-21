@@ -431,11 +431,11 @@
       "title": "🧙 Wizard Name Generator",
       "tagline": "A name with a reputation attached: Aldous the Grey, Hester of Greymere, Archmage Ottilie."
     },
-    "intro": "A wizard's name usually comes in two parts: an old-fashioned first name, and something people call them behind their back. This **wizard name generator** gives you both: a grand first name for a wizard of any gender, with an epithet to suit their school of magic, a place they're known for, a surname, or a title.",
+    "intro": "A wizard's name usually comes in two parts: an old-fashioned first name, and something people call them behind their back. This **wizard name generator** gives you both: a grand first name for a wizard of any gender, with an <a href=\"epithet-generator.html\">epithet</a> to suit their school of magic, a place they're known for, a surname, or a title.",
     "sections": [
       {
         "heading": "Where wizard names come from",
-        "content": "<ul><li><strong>The word</strong> <em>wizard</em> started out meaning simply a wise man: it's Middle English <em>wys</em>, wise, with the ending <em>-ard</em>.</li><li><strong>Merlin</strong> began as the Welsh <em>Myrddin</em>. Geoffrey of Monmouth turned him into <em>Merlinus</em> in the 1130s, and the Latin name stuck.</li><li><strong>Gandalf</strong> comes from the same Norse list of dwarves as Thorin and Bombur. <em>Gandálfr</em> probably means \"wand-elf\", which is why Tolkien gave it to his wizard instead.</li><li><strong>Real magicians</strong> liked grand Latin names too. The Swiss physician known as Paracelsus is usually said to have taken a name meaning \"beyond Celsus\", the famous Roman writer on medicine.</li></ul>"
+        "content": "<ul><li><strong>The word</strong> <em>wizard</em> started out meaning simply a wise man: it's Middle English <em>wys</em>, wise, with the ending <em>-ard</em>.</li><li><strong>Merlin</strong> began as the Welsh <em>Myrddin</em>. Geoffrey of Monmouth turned him into <em>Merlinus</em> in the 1130s, and the Latin name stuck.</li><li><strong>Gandalf</strong> comes from the same Norse list of <a href=\"dwarf-name-generator.html\">dwarves</a> as Thorin and Bombur. <em>Gandálfr</em> probably means \"wand-elf\", which is why Tolkien gave it to his wizard instead.</li><li><strong>Real magicians</strong> liked grand Latin names too. The Swiss physician known as Paracelsus is usually said to have taken a name meaning \"beyond Celsus\", the famous <a href=\"roman-name-generator.html\">Roman</a> writer on medicine.</li></ul>"
       },
       {
         "heading": "Four ways to name a wizard",

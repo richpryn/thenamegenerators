@@ -2699,7 +2699,7 @@
       "title": "⚔️ D&D Fantasy Name Generator",
       "tagline": "Names for every common race in one place, or a random party at the tavern door."
     },
-    "intro": "Need a name for whoever's just walked into the tavern? This **D&amp;D fantasy name generator** gives you a first and family name for any of the common races, each in that race's own naming style, or a whole random party at once: a dwarf, a tiefling, a halfling and a dragonborn, with their races beside their names.",
+    "intro": "Need a name for whoever's just walked into the <a href=\"tavern-name-generator.html\">tavern</a>? This **D&amp;D fantasy name generator** gives you a first and family name for any of the common races, each in that race's own naming style, or a whole random party at once: a dwarf, a tiefling, a halfling and a dragonborn, with their races beside their names.",
     "sections": [
       {
         "heading": "Each race names itself differently",
@@ -2711,7 +2711,7 @@
       },
       {
         "heading": "More names for each race",
-        "content": "<p>Each race has its own page with more options and the story behind its names: <a href=\"dnd-human-name-generator.html\">Human</a>, <a href=\"elf-name-generator.html\">Elf</a>, <a href=\"dwarf-name-generator.html\">Dwarf</a>, <a href=\"halfling-name-generator.html\">Halfling</a>, <a href=\"gnome-name-generator.html\">Gnome</a>, <a href=\"half-elf-name-generator.html\">Half-Elf</a>, <a href=\"half-orc-name-generator.html\">Half-Orc</a>, <a href=\"tiefling-name-generator.html\">Tiefling</a> and <a href=\"dragonborn-name-generator.html\">Dragonborn</a>. The <a href=\"../categories/dnd-names.html\">D&amp;D names hub</a> has everything else, from taverns to goblins.</p>"
+        "content": "<p>Each race has its own page with more options and the story behind its names: <a href=\"dnd-human-name-generator.html\">Human</a>, <a href=\"elf-name-generator.html\">Elf</a>, <a href=\"dwarf-name-generator.html\">Dwarf</a>, <a href=\"halfling-name-generator.html\">Halfling</a>, <a href=\"gnome-name-generator.html\">Gnome</a>, <a href=\"half-elf-name-generator.html\">Half-Elf</a>, <a href=\"half-orc-name-generator.html\">Half-Orc</a>, <a href=\"tiefling-name-generator.html\">Tiefling</a> and <a href=\"dragonborn-name-generator.html\">Dragonborn</a>. The <a href=\"../categories/dnd-names.html\">D&amp;D names hub</a> has everything else, from taverns to <a href=\"goblin-name-generator.html\">goblins</a>.</p>"
       }
     ],
     "faqs": [
