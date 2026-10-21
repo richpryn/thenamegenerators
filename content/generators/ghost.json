@@ -61,6 +61,7 @@
       "recipe": "template",
       "template": [
         "[banshee.names] [banshee.epithets]",
+        "[banshee.names], [banshee.clauses]",
         "[banshee.names], who keens for [banshee.families]"
       ]
     }
@@ -304,20 +305,6 @@
         "Órfhlaith",
         "Deirdre"
       ],
-      "epithets": [
-        "of the Keening",
-        "the Washer at the Ford",
-        "who combs her hair by the river",
-        "who sings at the window",
-        "of the Fairy Mound",
-        "the Silver-Combed",
-        "who cries before the dawn",
-        "of the Three Cries",
-        "the Mourning Woman",
-        "of the Lonely Road",
-        "who walks by the river",
-        "the Grey Cloaked"
-      ],
       "families": [
         "the O'Neills",
         "the O'Briens",
@@ -327,6 +314,23 @@
         "the old house on the hill",
         "the family at the mill",
         "the fishermen of the bay"
+      ],
+      "epithets": [
+        "of the Keening",
+        "the Washer at the Ford",
+        "of the Fairy Mound",
+        "the Silver-Combed",
+        "of the Three Cries",
+        "the Mourning Woman",
+        "of the Lonely Road",
+        "the Grey Cloaked"
+      ],
+      "clauses": [
+        "who combs her hair by the river",
+        "who sings at the window",
+        "who cries before the dawn",
+        "who walks by the river",
+        "who keens three times at midnight"
       ]
     }
   },
