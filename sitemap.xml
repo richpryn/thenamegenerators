@@ -142,6 +142,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Category: Wuxia & Xianxia -->
+  <url>
+    <loc>https://thenamegenerators.com/categories/wuxia-names.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Category: Music -->
   <url>
     <loc>https://thenamegenerators.com/categories/music-names.html</loc>
@@ -426,6 +433,27 @@
   <url>
     <loc>https://thenamegenerators.com/posts/coven-name-generator.html</loc>
     <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Cultivation Sect Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/cultivation-sect-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Cultivation Technique Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/cultivation-technique-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Cultivator Title Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/cultivator-title-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1427,6 +1455,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/wu-tang-name-generator.html</loc>
     <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Wuxia Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/wuxia-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

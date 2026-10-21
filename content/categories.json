@@ -487,6 +487,42 @@
     ]
   },
   {
+    "name": "Wuxia & Xianxia",
+    "slug": "wuxia",
+    "icon": "⚔️",
+    "navLabel": "Wuxia & Xianxia Names",
+    "heading": "Wuxia and Xianxia Name Generators: Sects, Techniques and Cultivators",
+    "seoTitle": "Wuxia & Xianxia Name Generators: Sects & Techniques",
+    "description": "Names for wuxia and xianxia stories: cultivation sects, martial techniques, character names with meanings and cultivator titles.",
+    "seoDescription": "Wuxia and xianxia name generators: sect names, cultivation technique names, Chinese character names with meanings and immortal titles for web novels and games.",
+    "intro": "<p>These wuxia and xianxia name generators are for martial arts stories, cultivation web novels and the games they inspired. Start with a hero from the <a href=\"../posts/wuxia-name-generator.html\">Wuxia Name Generator</a>, which pairs real Chinese surnames with given names made from real words and their meanings. Then give them a <a href=\"../posts/cultivation-sect-name-generator.html\">sect</a>, a signature <a href=\"../posts/cultivation-technique-name-generator.html\">technique</a> and, once they reach the top, a <a href=\"../posts/cultivator-title-generator.html\">cultivator title</a>.</p><p>For the creatures of Chinese myth, try the <a href=\"../posts/chinese-dragon-name-generator.html\">Chinese Dragon Name Generator</a>, and for more legends from around the world, the <a href=\"mythology-names.html\">mythology name generators</a>.</p>",
+    "generators": [
+      "wuxia_name",
+      "cultivation_sect",
+      "cultivation_technique",
+      "cultivator_title",
+      "chinese_dragon"
+    ],
+    "featured": [
+      {
+        "key": "wuxia_name",
+        "note": "character names from real Chinese surnames and words, with meanings."
+      },
+      {
+        "key": "cultivation_sect",
+        "note": "righteous sects, demonic cults, great clans and martial schools."
+      },
+      {
+        "key": "cultivation_technique",
+        "note": "sword arts, palms, movement skills and cultivation methods."
+      },
+      {
+        "key": "cultivator_title",
+        "note": "titles for immortals, sword saints, demon lords and alchemists."
+      }
+    ]
+  },
+  {
     "name": "Music",
     "slug": "music",
     "icon": "🎵",

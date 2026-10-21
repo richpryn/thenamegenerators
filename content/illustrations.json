@@ -22,7 +22,8 @@
     "minecraft": "pickaxe",
     "christmas": "star",
     "mythical": "feather-wings",
-    "mythology": "laurel"
+    "mythology": "laurel",
+    "wuxia": "katana"
   },
   "generators": {
     "album": "vinyl",
@@ -54,6 +55,9 @@
     "cleric": "candle",
     "company": "building",
     "coven": "cauldron",
+    "cultivation_sect": "katana",
+    "cultivation_technique": "katana",
+    "cultivator_title": "katana",
     "cyberpunk": "city",
     "dark_elf": "leaf-moon",
     "demon": "horns",
@@ -197,6 +201,7 @@
     "wow_orc": "war-axe",
     "wow_troll": "tusks",
     "wu_tang": "bee",
+    "wuxia_name": "katana",
     "wyvern": "dragon",
     "yeti": "mountain",
     "youtube": "old-tv",
