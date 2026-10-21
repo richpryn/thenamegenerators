@@ -5594,7 +5594,29 @@
       "tagline": "Gods and goddesses for your own pantheon, by domain and by sound."
     },
     "intro": "Every fantasy world needs gods, and a pantheon feels real when its gods share a sound. This **god name generator** makes new gods and goddesses in Greek, Norse, Egyptian, Celtic or otherworldly styles, each with a domain: war, love, death, the sea, the harvest and more.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "How real pantheons sound",
+        "content": "<p>A pantheon feels real when its gods sound like they come from the same place, the way real ones do.</p><ul><li><strong>Greek</strong> gods have flowing names, often ending in vowels or -os: the twelve Olympians ruled from Mount Olympus, each with their own domain.</li><li><strong>Norse</strong> gods come in two families, the Æsir and the Vanir, with short, hard names.</li><li><strong>Egyptian</strong> gods were often shown with animal heads, and their names turn up inside human names, like Amun in Amenhotep.</li><li><strong>Celtic</strong> gods are known mostly from Roman-era inscriptions and later Irish and Welsh stories, so their names survive in pieces.</li></ul><p>Every name here is invented. Pick one sound for your whole pantheon and it will hang together.</p>"
+      },
+      {
+        "heading": "Building a pantheon",
+        "content": "<ul><li><strong>Choose a sound</strong> (Greek, Norse, Egyptian, Celtic or otherworldly) and keep it for every god.</li><li><strong>Choose a domain</strong> for each: war, love, death, the sea, the sun, the moon, the harvest, wisdom, trickery, storms, the forge or nature.</li><li><strong>The title format</strong> gives you a ready-made line for a holy book: Thalora, Goddess of the Tides.</li><li><strong>Gods need servants:</strong> try the <a href=\"angel-name-generator.html\">Angel</a> and <a href=\"demon-name-generator.html\">Demon</a> name generators, and the <a href=\"cleric-name-generator.html\">Cleric Name Generator</a> for their priests.</li></ul><p>For more gods and legends, see all the <a href=\"../categories/mythology-names.html\">mythology name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do you name a fantasy god?",
+        "answer": "Pick one sound for the whole pantheon, so the gods feel related, then give each a domain. Choose a sound and a domain here for names like Thalora, Goddess of the Tides."
+      },
+      {
+        "question": "Are these real gods?",
+        "answer": "No. Every name is invented, built to sound Greek, Norse, Egyptian, Celtic or otherworldly, so you can use them in your own world."
+      },
+      {
+        "question": "What domains can a god have?",
+        "answer": "Here: war, love, death, the sea, the sun, the moon, the harvest, wisdom, trickery, storms, the forge and nature."
+      }
+    ]
   }
 }

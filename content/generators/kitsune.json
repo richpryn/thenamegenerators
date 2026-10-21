@@ -4,7 +4,7 @@
   "icon": "🦊",
   "category": "mythology",
   "published": "2026-10-22",
-  "description": "Kitsune names from real Japanese words, with their meanings: Tsuki for moon, Kitsunebi for foxfire. Add a tail count, from One-Tailed to Nine-Tailed, or a title.",
+  "description": "Kitsune names from real Japanese words, with their meanings: Tsuki (moon), Kitsunebi (foxfire). Add tails, from One- to Nine-Tailed, or a title.",
   "seoKeywords": "kitsune name generator, kitsune names, fox spirit names, japanese fox names, nine tailed fox names, kitsune names and meanings, yokai names",
   "seoTitle": "Kitsune Name Generator: Fox Spirit Names & Meanings",
   "isPopular": false,
@@ -162,7 +162,29 @@
       "tagline": "Fox spirit names from real Japanese words, with what each one means."
     },
     "intro": "In Japanese folklore, the kitsune is a fox spirit that grows wiser and more powerful with age, gaining tails until it has nine. Some are tricksters, some are messengers of the rice god Inari. This **kitsune name generator** uses real Japanese words for names, like Tsuki (moon) and Kitsunebi (foxfire), with their meanings and a tail count.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "The kitsune in Japanese folklore",
+        "content": "<p>Kitsune is the Japanese word for fox, and in folklore foxes are clever, magical and long-lived.</p><ul><li><strong>Tails:</strong> a kitsune grows more tails as it grows older and wiser, and the oldest, at around a thousand years, have nine.</li><li><strong>Messengers of Inari:</strong> foxes are the messengers of Inari, the kami of rice and prosperity, which is why fox statues guard Inari shrines across Japan, among them Fushimi Inari in Kyoto.</li><li><strong>Kind and mischievous:</strong> some kitsune are faithful and good, others tricksters who take human shape to fool people.</li><li><strong>Foxfire,</strong> or <em>kitsunebi</em>, is the ghostly light kitsune are said to make at night.</li></ul><p>Inari is still worshipped today, so the names here come from nature and the seasons rather than from religion.</p>"
+      },
+      {
+        "heading": "Naming a kitsune",
+        "content": "<p>Every name is a real Japanese word, shown with its meaning.</p><ul><li><strong>Nature names</strong> like Tsuki (moon), Kaze (wind) and Hotaru (firefly).</li><li><strong>Season names</strong> like Haru (spring) and Yuugure (dusk).</li><li><strong>Add tails</strong> to show how old and powerful it is, from One-Tailed to Nine-Tailed, or add a title like \"Who Lights the Foxfire\".</li><li><strong>Spelling:</strong> the names are in plain romaji, without the marks that show long vowels.</li></ul><p>For more Japanese names, try the <a href=\"japanese-sword-name-generator.html\">Japanese Sword Name Generator</a>. For another creature of East Asian legend, there's the <a href=\"chinese-dragon-name-generator.html\">Chinese Dragon Name Generator</a>.</p><p>For more gods and legends, see all the <a href=\"../categories/mythology-names.html\">mythology name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many tails can a kitsune have?",
+        "answer": "Up to nine. In folklore a kitsune gains tails as it ages, and a nine-tailed fox is around a thousand years old."
+      },
+      {
+        "question": "Who is Inari?",
+        "answer": "The Shinto kami of rice and prosperity. Foxes are Inari's messengers, which is why fox statues stand at Inari shrines."
+      },
+      {
+        "question": "What does kitsunebi mean?",
+        "answer": "Foxfire: the ghostly lights kitsune are said to make at night."
+      }
+    ]
   }
 }
