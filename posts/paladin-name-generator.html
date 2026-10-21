@@ -52,7 +52,7 @@
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="format-detection" content="telephone=no">
     <!-- Content Security Policy (CSP) - Note: Some headers need server configuration -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://faves.grow.me; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://faves.grow.me;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://faves.grow.me https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://faves.grow.me https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com;">
     
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -297,6 +297,8 @@
     <link rel="icon" href="/favicon.ico?v=626227da" sizes="any">
     <link rel="icon" href="/favicon.svg?v=727d2202" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R34WKHG3SR"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-R34WKHG3SR');</script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="../styles/site.css?v=261e9e48">

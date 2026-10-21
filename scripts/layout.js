@@ -51,9 +51,18 @@ function stampAssets(html) {
   return html;
 }
 
-/** Stylesheet and the two fonts every page needs first, preloaded. */
+// Google Analytics 4. Pages with a Content-Security-Policy must allow
+// www.googletagmanager.com (scripts) and *.google-analytics.com (connect).
+const GA_ID = 'G-R34WKHG3SR';
+function analyticsTag() {
+  return `<script async src="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');</script>`;
+}
+
+/** Analytics, then the stylesheet and the two fonts every page needs first, preloaded. */
 function headAssets(prefix) {
-  return `<link rel="preload" href="${prefix}fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  return `${analyticsTag()}
+    <link rel="preload" href="${prefix}fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="${prefix}fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="${asset(prefix, 'styles/site.css')}">`;
 }
@@ -234,6 +243,7 @@ function stripEmoji(text) {
 }
 
 module.exports = {
+  analyticsTag,
   SITE_NAME, escapeHtml, asset, menuPages, headAssets, stampAssets, bodyScripts, svgSprite, siteHeader, siteFooter,
   doodle, categoryMotif, generatorMotif, highlightFirstWord, stripEmoji, categoryLinks,
 };

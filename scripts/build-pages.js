@@ -562,7 +562,7 @@ function generateGeneratorPage(generator, category, site) {
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="format-detection" content="telephone=no">
     <!-- Content Security Policy (CSP) - Note: Some headers need server configuration -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://faves.grow.me; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://faves.grow.me;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://faves.grow.me https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://faves.grow.me https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com;">
     
     <!-- Schema.org JSON-LD -->
     ${schemaScripts}
