@@ -438,4 +438,12 @@ article li{margin-bottom:var(--s2)}
 .nt-team ul{list-style:none;margin:0;padding:0}
 .nt-team li{font:16px/1.45 var(--body);overflow-wrap:anywhere}
 
+/* ---------- Cookie choice (lib/consent.js) ---------- */
+.consent{position:fixed;left:var(--gutter);right:var(--gutter);bottom:calc(var(--gutter) + var(--sticky-ad));z-index:50;max-width:560px;margin:0 auto;background:var(--card);border:1.5px solid var(--ink);border-radius:8px;box-shadow:3px 3px 0 var(--ink);padding:var(--s3) var(--s4);display:flex;flex-wrap:wrap;align-items:center;gap:var(--s3)}
+.consent p{flex:1 1 260px;margin:0;font:15px/1.45 var(--body)}
+.consent-btns{display:flex;gap:var(--s2)}
+.consent-btn{--fill:var(--card);min-height:44px;padding:0 18px;font:800 15px/1 var(--head)}
+.consent-btn:hover,.consent-btn:focus-visible{--fill:var(--hi)}
+.privacy-settings{margin-top:var(--s3)}
+
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}

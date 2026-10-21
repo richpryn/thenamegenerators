@@ -28,7 +28,7 @@ function escapeHtml(text) {
 
 // Stylesheets and scripts get "?v=<hash of the file>" so browsers fetch the
 // new copy after every change instead of keeping a stale cached one.
-const ASSETS = ['styles/site.css', 'lib/page.js', 'lib/outline.js', 'lib/recipe-engine.js', 'lib/wheel.js', 'lib/nametools.js',
+const ASSETS = ['styles/site.css', 'lib/page.js', 'lib/outline.js', 'lib/recipe-engine.js', 'lib/wheel.js', 'lib/nametools.js', 'lib/consent.js',
   'favicon.svg', 'favicon.ico', 'apple-touch-icon.png'];
 const versions = {};
 function assetVersion(file) {
@@ -51,17 +51,16 @@ function stampAssets(html) {
   return html;
 }
 
-// Google Analytics 4. Pages with a Content-Security-Policy must allow
+// Google Analytics loads from lib/consent.js, and only once the visitor
+// accepts. Pages with a Content-Security-Policy must allow
 // www.googletagmanager.com (scripts) and *.google-analytics.com (connect).
-const GA_ID = 'G-R34WKHG3SR';
-function analyticsTag() {
-  return `<script async src="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"></script>
-    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');</script>`;
+function analyticsTag(prefix) {
+  return `<script src="${asset(prefix, 'lib/consent.js')}" defer></script>`;
 }
 
 /** Analytics, then the stylesheet and the two fonts every page needs first, preloaded. */
 function headAssets(prefix) {
-  return `${analyticsTag()}
+  return `${analyticsTag(prefix)}
     <link rel="preload" href="${prefix}fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="${prefix}fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="${asset(prefix, 'styles/site.css')}">`;
@@ -223,7 +222,7 @@ function siteHeader(prefix) {
 function siteFooter(prefix) {
   return `<footer class="site-footer">
       <div class="wrap">
-        <p>&copy; <span id="current-year">${new Date().getFullYear()}</span> ${SITE_NAME} · <a href="${prefix}about.html">About</a> · <a href="${prefix}all-generators.html">All generators</a> · <a href="${prefix}spin-the-wheel.html">Spin the Wheel</a> · <a href="${prefix}name-tools.html">Name tools</a> · <a href="${prefix}sitemap.html">Site map</a></p>
+        <p>&copy; <span id="current-year">${new Date().getFullYear()}</span> ${SITE_NAME} · <a href="${prefix}about.html">About</a> · <a href="${prefix}all-generators.html">All generators</a> · <a href="${prefix}spin-the-wheel.html">Spin the Wheel</a> · <a href="${prefix}name-tools.html">Name tools</a> · <a href="${prefix}sitemap.html">Site map</a> · <a href="${prefix}privacy.html">Privacy</a></p>
       </div>
     </footer>`;
 }

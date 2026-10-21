@@ -30,6 +30,7 @@ Things only Rich can do. The Claude sessions add items here as they come up and 
 
 - [x] **Google Analytics (GA4).** Done: tag `G-R34WKHG3SR` is on every page (21 October).
 - [x] **GA linked to Search Console.** Done (21 October).
+- [ ] **Fix the sitemap in Search Console.** Google is reading `sitemap.html` (the page for people), so it reports "Sitemap is HTML". In Search Console → Sitemaps, remove `sitemap.html` and submit `https://thenamegenerators.com/sitemap.xml` instead.
 - [ ] **Request indexing for new and moved pages.** Partly done on 21 October; Search Console only allows about 10 requests a day. Do the hubs first, a few more each day. The sitemap (`sitemap.xml`, submitted under Sitemaps) lets Google find everything else on its own, so the rest is a nudge, not essential. URL Inspection → Request indexing for:
   - `https://thenamegenerators.com/` (new hero)
   - `https://thenamegenerators.com/posts/hammer-name-generator.html` (was Warhammer)
@@ -98,6 +99,8 @@ Pages that get better with your own experience. A few lines each, in any session
 - [ ] **Band Name Generator** (now live): your band-naming lessons and any story about naming your own projects. A short section from you would make it the best band-name page out there.
 
 ## Decisions for you
+
+- [x] **Cookie banner:** Rich: yes. Google Analytics now only loads after a visitor clicks Accept, and `privacy.html` explains what the site stores. Grow by Mediavine still loads on every page, and the privacy page mentions it.
 
 - [x] **Swamp Witch:** the old "Voodoo" style was removed, because it treated a real religion as a costume. Rich: leave it out.
 - [x] **D&D Fantasy** is now "any race or a random party", built from the race generators' lists. Rich: happy with it.

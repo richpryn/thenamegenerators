@@ -1522,6 +1522,7 @@ ${sorted.map((gen, i) => {
                 </div>`;
   fillMarkers('all-generators.html', { sprite: layout.svgSprite(allMotifs), header, generators: allList, footer });
   fillMarkers('about.html', { sprite: layout.svgSprite(['quill', 'note']), header, footer });
+  fillMarkers('privacy.html', { sprite: layout.svgSprite(['quill', 'note']), header, footer });
 }
 
 /**
@@ -1645,6 +1646,13 @@ ${NAME_TOOLS.map(t => `  <url>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Privacy Page -->
+  <url>
+    <loc>${baseUrl}/privacy.html</loc>
+    <lastmod>${latest([lastChanged('privacy.html')])}</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
   <!-- HTML Sitemap -->
   <url>
     <loc>${baseUrl}/sitemap.html</loc>
@@ -1732,6 +1740,7 @@ function generateHtmlSitemap(site) {
                     ${link(`${baseUrl}/name-tools.html`, 'Name tools')}
                     ${NAME_TOOLS.map(t => link(`${baseUrl}/${t.page}`, t.title)).join('\n                    ')}
                     ${link(`${baseUrl}/about.html`, 'About')}
+                    ${link(`${baseUrl}/privacy.html`, 'Privacy and cookies')}
                     ${link(`${baseUrl}/sitemap.html`, 'Site Map')}
                 </ul>
             </section>
