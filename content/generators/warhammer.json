@@ -121,7 +121,14 @@
       "Librarian",
       "Apothecary",
       "Techmarine",
-      "Ancient"
+      "Ancient",
+      "Veteran Sergeant",
+      "Company Champion",
+      "Chapter Master",
+      "Brother-Sergeant",
+      "Chief Librarian",
+      "Master of the Forge",
+      "Master of Sanctity"
     ],
     "ultra": {
       "first": [
@@ -378,7 +385,15 @@
         "Captain",
         "Major",
         "Colonel",
-        "Commissar"
+        "Commissar",
+        "Guardsman",
+        "Corporal",
+        "Veteran Sergeant",
+        "Lord Commissar",
+        "General",
+        "Tank Commander",
+        "Platoon Commander",
+        "Scout Sergeant"
       ],
       "regiments": [
         "Cadian",
@@ -386,7 +401,15 @@
         "Valhallan",
         "Vostroyan",
         "Mordian",
-        "Tallarn"
+        "Tallarn",
+        "Elysian",
+        "Armageddon",
+        "Krieg",
+        "Praetorian",
+        "Attilan",
+        "Savlar",
+        "Necromundan",
+        "Harakoni"
       ],
       "numbers": [
         "3rd",
@@ -406,7 +429,25 @@
         "133rd",
         "150th",
         "212th",
-        "303rd"
+        "303rd",
+        "2nd",
+        "4th",
+        "9th",
+        "14th",
+        "19th",
+        "28th",
+        "36th",
+        "47th",
+        "52nd",
+        "69th",
+        "81st",
+        "95th",
+        "122nd",
+        "144th",
+        "177th",
+        "201st",
+        "256th",
+        "412th"
       ]
     },
     "aeldari": {
@@ -455,14 +496,32 @@
         "Ranger",
         "Spiritseer",
         "Bonesinger",
-        "Guardian"
+        "Guardian",
+        "Dire Avenger",
+        "Howling Banshee",
+        "Striking Scorpion",
+        "Fire Dragon",
+        "Swooping Hawk",
+        "Dark Reaper",
+        "Warp Spider",
+        "Shining Spear",
+        "Pathfinder",
+        "Seer"
       ],
       "craftworlds": [
         "Ulthwé",
         "Biel-Tan",
         "Iyanden",
         "Saim-Hann",
-        "Alaitoc"
+        "Alaitoc",
+        "Altansar",
+        "Il-Kaithe",
+        "Lugganath",
+        "Iybraesil",
+        "Mymeara",
+        "Kaelor",
+        "Idharae",
+        "Yme-Loc"
       ]
     }
   },
@@ -479,7 +538,7 @@
       },
       {
         "heading": "Imperial Guard names",
-        "content": "<p>The Imperial Guard, or Astra Militarum, is made of regiments raised from a single world and named after it with a number: the Cadian 8th, the Tanith First and Only from the Gaunt's Ghosts novels. A Guard name is ordinary, a little rough, and nearly always comes with a rank and a regiment.</p><p>Famous examples include Lord Castellan Ursarkar E. Creed of Cadia, Commissar Sebastian Yarrick of Armageddon, and Commissar Ciaphas Cain. The generator's regiments come from well-known Guard worlds (Cadian, Catachan, Valhallan, Vostroyan, Mordian, Tallarn) with a random number, so you get a regiment that sounds right without copying a famous one.</p>"
+        "content": "<p>The Imperial Guard, or Astra Militarum, is made of regiments raised from a single world and named after it with a number: the Cadian 8th, the Tanith First and Only from the Gaunt's Ghosts novels. A Guard name is ordinary, a little rough, and nearly always comes with a rank and a regiment.</p><p>Famous examples include Lord Castellan Ursarkar E. Creed of Cadia, Commissar Sebastian Yarrick of Armageddon, and Commissar Ciaphas Cain. The generator's regiments come from well-known Guard worlds (Cadian, Catachan, Valhallan, Vostroyan, Mordian, Tallarn, Elysian, Krieg, Armageddon and more) with a random number, so you get a regiment that sounds right without copying a famous one.</p>"
       },
       {
         "heading": "Aeldari names",

@@ -300,7 +300,15 @@
           "Iva",
           "Vida",
           "Dorin",
-          "Jovan"
+          "Jovan",
+          "Danya",
+          "Lyuba",
+          "Rada",
+          "Zlata",
+          "Andra",
+          "Dusha",
+          "Nika",
+          "Yana"
         ]
       },
       "surnames": [
@@ -432,7 +440,22 @@
           "Tenebris",
           "Orcus",
           "Nyx",
-          "Eon"
+          "Eon",
+          "Caelestis",
+          "Hesper",
+          "Thanatos",
+          "Ourania",
+          "Arcanum",
+          "Ombra",
+          "Selene",
+          "Hemera",
+          "Morta",
+          "Noctis",
+          "Astra",
+          "Somnus",
+          "Tacita",
+          "Obscura",
+          "Sidus"
         ]
       },
       "surnames": [
@@ -630,7 +653,15 @@
           "Prince",
           "Marquis",
           "Viscount",
-          "Sir"
+          "Sir",
+          "Earl",
+          "Chevalier",
+          "Seigneur",
+          "Margrave",
+          "Archduke",
+          "Master",
+          "Comte",
+          "Laird"
         ],
         "female": [
           "Countess",
@@ -640,13 +671,29 @@
           "Princess",
           "Marquise",
           "Viscountess",
-          "Dame"
+          "Dame",
+          "Margravine",
+          "Archduchess",
+          "Mistress",
+          "Comtesse",
+          "Madame",
+          "Chatelaine",
+          "Abbess",
+          "Grand Duchess"
         ],
         "neutral": [
           "Elder",
           "Regent",
           "Sovereign",
-          "Magister"
+          "Magister",
+          "Keeper",
+          "Ancient",
+          "Warden",
+          "Seneschal",
+          "Chancellor",
+          "Custodian",
+          "Archivist",
+          "Patron"
         ]
       },
       "old_world": {
@@ -656,18 +703,41 @@
           "Voivode",
           "Boyar",
           "Baron",
-          "Lord"
+          "Lord",
+          "Hetman",
+          "Knyaz",
+          "Graf",
+          "Hospodar",
+          "Margrave",
+          "Archduke",
+          "Despot",
+          "Duke"
         ],
         "female": [
           "Countess",
           "Princess",
           "Baroness",
-          "Lady"
+          "Lady",
+          "Gräfin",
+          "Boyarina",
+          "Knyaginya",
+          "Archduchess",
+          "Margravine",
+          "Duchess",
+          "Domnița",
+          "Doamna"
         ],
         "neutral": [
           "Elder",
           "Regent",
-          "Sovereign"
+          "Sovereign",
+          "Keeper",
+          "Ancient",
+          "Warden",
+          "Seneschal",
+          "Chancellor",
+          "Custodian",
+          "Voice"
         ]
       },
       "ancient": {
@@ -677,19 +747,42 @@
           "Consul",
           "Tribune",
           "Prefect",
-          "Archon"
+          "Archon",
+          "Satrap",
+          "Strategos",
+          "Legate",
+          "Dominus",
+          "Imperator",
+          "Praetor",
+          "Censor",
+          "King"
         ],
         "female": [
           "Lady",
           "Domina",
           "Priestess",
-          "Queen"
+          "Queen",
+          "Empress",
+          "Augusta",
+          "Basilissa",
+          "Sibyl",
+          "Matron",
+          "High Priestess",
+          "Princess",
+          "Vestal"
         ],
         "neutral": [
           "Elder",
           "Magister",
           "Archon",
-          "Oracle"
+          "Oracle",
+          "Hierophant",
+          "Augur",
+          "Seer",
+          "Keeper",
+          "Ancient",
+          "Haruspex",
+          "Elder Seer"
         ]
       }
     }
