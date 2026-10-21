@@ -1,0 +1,217 @@
+{
+  "title": "Superhero Team Name Generator",
+  "slug": "superhero-team-name-generator",
+  "icon": "🦸",
+  "category": "people",
+  "published": "2026-10-22",
+  "description": "Superhero team names for comics, games, stories, parties and kids' teams: classic hero alliances, secret agency teams, fun names for kids and villain syndicates.",
+  "seoKeywords": "superhero team name generator, superhero team names, hero team names, superhero group names, villain team names, kids superhero team names, super team names",
+  "seoTitle": "Superhero Team Name Generator: Hero & Villain Teams",
+  "isPopular": false,
+  "filters": {
+    "style": {
+      "label": "Kind of team",
+      "options": [
+        "any",
+        "classic",
+        "agency",
+        "kids",
+        "villain"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "classic": "Hero alliance (the Valiant Vanguard)",
+        "agency": "Secret agency (Project Halcyon)",
+        "kids": "Kids' team (the Mighty Muffins)",
+        "villain": "Villains (the Obsidian Syndicate)"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "style",
+  "cases": {
+    "classic": {
+      "recipe": "template",
+      "template": "The [hero_adj] [hero_noun]"
+    },
+    "agency": {
+      "recipe": "template",
+      "template": [
+        "[agency_pre] [agency]",
+        "[agency] [numbers]"
+      ]
+    },
+    "kids": {
+      "recipe": "template",
+      "template": [
+        "The [kid_adj] [kid_noun]",
+        "Team [kid_noun]"
+      ]
+    },
+    "villain": {
+      "recipe": "template",
+      "template": "The [villain_adj] [villain_noun]"
+    },
+    "any": {
+      "recipe": "template",
+      "template": [
+        "The [hero_adj] [hero_noun]",
+        "[agency_pre] [agency]",
+        "[agency] [numbers]",
+        "The [kid_adj] [kid_noun]",
+        "Team [kid_noun]",
+        "The [villain_adj] [villain_noun]"
+      ]
+    }
+  },
+  "data": {
+    "hero_adj": [
+      "Stellar",
+      "Valiant",
+      "Cosmic",
+      "Mighty",
+      "Radiant",
+      "Thunder",
+      "Steel",
+      "Star",
+      "Dawn",
+      "Midnight",
+      "Atomic",
+      "Quantum",
+      "Solar",
+      "Lunar",
+      "Crimson",
+      "Golden",
+      "Silver",
+      "Storm"
+    ],
+    "hero_noun": [
+      "Alliance",
+      "Vanguard",
+      "Protectorate",
+      "Brigade",
+      "Collective",
+      "Watch",
+      "Order",
+      "Wardens",
+      "Coalition",
+      "Union",
+      "Assembly",
+      "Guard",
+      "Company",
+      "Circle",
+      "Accord",
+      "Legacy"
+    ],
+    "agency_pre": [
+      "Project",
+      "Unit",
+      "Division",
+      "Operation",
+      "Bureau",
+      "Section",
+      "Taskforce",
+      "Programme"
+    ],
+    "agency": [
+      "Halcyon",
+      "Aegis",
+      "Lantern",
+      "Meridian",
+      "Zenith",
+      "Paragon",
+      "Bastion",
+      "Kestrel",
+      "Horizon",
+      "Sentinel",
+      "Beacon",
+      "Apex",
+      "Vector",
+      "Nova",
+      "Polaris",
+      "Atlas",
+      "Orion",
+      "Tempest"
+    ],
+    "numbers": [
+      "Seven",
+      "Nine",
+      "Zero",
+      "One",
+      "Five",
+      "Twelve",
+      "Prime",
+      "Omega",
+      "Delta",
+      "Echo"
+    ],
+    "kid_adj": [
+      "Mighty",
+      "Super",
+      "Brave",
+      "Amazing-ish",
+      "Speedy",
+      "Fearless",
+      "Unstoppable",
+      "Incredible-ish",
+      "Sparkly",
+      "Daring",
+      "Bouncy",
+      "Marvellous"
+    ],
+    "kid_noun": [
+      "Muffins",
+      "Sprouts",
+      "Rockets",
+      "Thunderbolts",
+      "Comets",
+      "Pancakes",
+      "Dinosaurs",
+      "Penguins",
+      "Lightning Bugs",
+      "Superstars",
+      "Teddies",
+      "Hamsters",
+      "Owls",
+      "Socks"
+    ],
+    "villain_adj": [
+      "Obsidian",
+      "Grim",
+      "Venom",
+      "Shadow",
+      "Iron",
+      "Crimson",
+      "Dread",
+      "Hollow",
+      "Black",
+      "Viper",
+      "Ruin",
+      "Midnight"
+    ],
+    "villain_noun": [
+      "Syndicate",
+      "Cabal",
+      "Consortium",
+      "Conspiracy",
+      "Directorate",
+      "Dominion",
+      "Hand",
+      "Ring",
+      "Society",
+      "Cartel",
+      "Circle",
+      "Brotherhood",
+      "Sisterhood"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🦸 Superhero Team Name Generator",
+      "tagline": "Names for a team of heroes, a secret agency, a kids' party team or a villain syndicate."
+    },
+    "intro": "Every great superhero team has a name that sounds like a promise. This **superhero team name generator** makes names for hero alliances, secret agency teams, kids' superhero parties and the villain syndicates they fight.",
+    "sections": [],
+    "faqs": []
+  }
+}
