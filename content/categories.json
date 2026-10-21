@@ -808,15 +808,23 @@
     "slug": "scifi",
     "icon": "🚀",
     "navLabel": "Sci-Fi Names",
-    "heading": "Sci-Fi Name Generators: Aliens, Robots, Spaceships and Cyberpunks",
+    "heading": "Sci-Fi Name Generators: Aliens, Robots, Spaceships, Planets and AIs",
     "seoTitle": "Sci-Fi Name Generators: Aliens, Robots, Spaceships",
-    "description": "Names for science fiction: aliens, robots and androids, spaceships, cyberpunk street names and more.",
-    "seoDescription": "Sci-fi name generators for aliens, robots and androids, spaceships and cyberpunk characters, with the naming patterns of classic science fiction.",
-    "intro": "<p>Science fiction names follow their own rules. <a href=\"../posts/robot-name-generator.html\">Robots</a> get designations like R2-D2 and HAL 9000, ships get names that say something about their crew (Serenity, Rocinante), and <a href=\"../posts/cyberpunk-name-generator.html\">cyberpunk</a> characters go by street handles. These generators follow those patterns, with examples from the books, films and games that set them.</p>",
+    "description": "Names for science fiction: aliens, robots, AIs, mecha, spaceships, planets, cyberpunks, futuristic characters, steampunk and the post-apocalypse.",
+    "seoDescription": "Sci-fi name generators for aliens, robots, AIs, mecha, spaceships, planets, futuristic and cyberpunk characters, steampunk and post-apocalyptic worlds.",
+    "intro": "<p>Science fiction names follow their own rules. <a href=\"../posts/robot-name-generator.html\">Robots</a> get designations like R2-D2 and HAL 9000, ships get names that say something about their crew (Serenity, Rocinante), and <a href=\"../posts/cyberpunk-name-generator.html\">cyberpunk</a> characters go by street handles. These generators follow those patterns, with examples from the books, films and games that set them.</p><p>Building a whole setting? Start with the <a href=\"../posts/planet-name-generator.html\">planet</a>, name its people with the <a href=\"../posts/futuristic-name-generator.html\">Futuristic Name Generator</a>, and give the station an <a href=\"../posts/ai-name-generator.html\">AI</a> and the army a <a href=\"../posts/mecha-name-generator.html\">mecha</a>. For other futures, try <a href=\"../posts/steampunk-name-generator.html\">steampunk</a> or the world after the end of it with the <a href=\"../posts/post-apocalyptic-name-generator.html\">Post-Apocalyptic Name Generator</a>.</p>",
     "featured": [
       {
         "key": "spaceship",
         "note": "ship names from heroic to Culture-style sentences."
+      },
+      {
+        "key": "planet",
+        "note": "alien worlds, survey catalogue numbers and human colonies."
+      },
+      {
+        "key": "ai",
+        "note": "assistants, ship computers, rogue AIs and acronyms."
       },
       {
         "key": "robot",
@@ -832,10 +840,16 @@
       }
     ],
     "generators": [
-      "alien",
-      "cyberpunk",
-      "robot",
       "spaceship",
+      "planet",
+      "alien",
+      "robot",
+      "ai",
+      "mecha",
+      "cyberpunk",
+      "futuristic",
+      "steampunk",
+      "post_apocalyptic",
       "star_wars"
     ]
   },

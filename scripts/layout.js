@@ -170,7 +170,7 @@ const MENU = [
     ['posts/warhammer-name-generator.html', 'Warhammer 40k'],
     ['posts/star-wars-name-generator.html', 'Star Wars'],
     ['posts/game-of-thrones-name-generator.html', 'Game of Thrones'],
-  ], more: [['categories/minecraft-names.html', 'Minecraft'], ['categories/pop_culture-names.html', 'Pop culture'], ['categories/elder_scrolls-names.html', 'Elder Scrolls']] },
+  ], more: [['categories/minecraft-names.html', 'Minecraft'], ['categories/scifi-names.html', 'Sci-fi'], ['categories/pop_culture-names.html', 'Pop culture'], ['categories/elder_scrolls-names.html', 'Elder Scrolls']] },
   { label: 'Music & online', id: 'menu-music', links: [
     ['posts/band-name-generator.html', 'Band names'],
     ['posts/rapper-name-generator.html', 'Rapper names'],

@@ -1,0 +1,349 @@
+{
+  "title": "Futuristic Name Generator",
+  "slug": "futuristic-name-generator",
+  "icon": "🛸",
+  "category": "scifi",
+  "published": "2026-10-22",
+  "description": "Futuristic names for sci-fi characters: sleek first names like Kael and Elara, with surnames from a world that has mixed together, and double-barrelled ones.",
+  "seoKeywords": "futuristic name generator, futuristic names, sci-fi name generator, sci fi character names, futuristic boy names, futuristic girl names, space names, science fiction names",
+  "seoTitle": "Futuristic Name Generator: Sci-Fi Character Names",
+  "isPopular": false,
+  "filters": {
+    "gender": {
+      "label": "Gender",
+      "options": [
+        "any",
+        "male",
+        "female"
+      ],
+      "optionLabels": {
+        "any": "Any"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "first",
+        "full",
+        "double"
+      ],
+      "optionLabels": {
+        "first": "First name only (Kael)",
+        "full": "Full name (Elara Halloran)",
+        "double": "Double-barrelled (Elara Okafor-Lindqvist)"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "gender",
+  "cases": {
+    "any": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "first": {
+          "recipe": "template",
+          "template": [
+            "[first.m]",
+            "[first.f]"
+          ]
+        },
+        "full": {
+          "recipe": "template",
+          "template": [
+            "[first.m] [surname]",
+            "[first.f] [surname]"
+          ]
+        },
+        "double": {
+          "recipe": "template",
+          "template": [
+            "[first.m] [surname]-[surname]",
+            "[first.f] [surname]-[surname]"
+          ]
+        }
+      }
+    },
+    "male": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "first": {
+          "recipe": "template",
+          "template": "[first.m]"
+        },
+        "full": {
+          "recipe": "template",
+          "template": "[first.m] [surname]"
+        },
+        "double": {
+          "recipe": "template",
+          "template": "[first.m] [surname]-[surname]"
+        }
+      }
+    },
+    "female": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "first": {
+          "recipe": "template",
+          "template": "[first.f]"
+        },
+        "full": {
+          "recipe": "template",
+          "template": "[first.f] [surname]"
+        },
+        "double": {
+          "recipe": "template",
+          "template": "[first.f] [surname]-[surname]"
+        }
+      }
+    }
+  },
+  "data": {
+    "first": {
+      "m": [
+        "Kael",
+        "Orin",
+        "Zephyr",
+        "Caius",
+        "Ronan",
+        "Talon",
+        "Ezren",
+        "Vance",
+        "Lysander",
+        "Thane",
+        "Rhys",
+        "Soren",
+        "Idris",
+        "Jaren",
+        "Kian",
+        "Lucan",
+        "Marek",
+        "Nikolai",
+        "Orrin",
+        "Pax",
+        "Quill",
+        "Rowan",
+        "Silas",
+        "Tarek",
+        "Ulric",
+        "Varian",
+        "Wyatt",
+        "Xander",
+        "Yuri",
+        "Zane",
+        "Arlo",
+        "Bastian",
+        "Corin",
+        "Dorian",
+        "Emrys",
+        "Fenn",
+        "Galen",
+        "Halden",
+        "Ivo",
+        "Jax",
+        "Kade",
+        "Leander",
+        "Milo",
+        "Nash",
+        "Oberon",
+        "Peregrin",
+        "Ravi",
+        "Stellan",
+        "Teo",
+        "Ansel",
+        "Bram",
+        "Cyrus",
+        "Dario",
+        "Evander",
+        "Hollis",
+        "Jonah",
+        "Kasimir",
+        "Lev",
+        "Matthias",
+        "Nero",
+        "Osric",
+        "Rafe",
+        "Sander",
+        "Tycho",
+        "Vasco",
+        "Wilder",
+        "Zoltan",
+        "Anders",
+        "Callum"
+      ],
+      "f": [
+        "Zara",
+        "Nyx",
+        "Lyra",
+        "Vesna",
+        "Kira",
+        "Seren",
+        "Elara",
+        "Astra",
+        "Nova",
+        "Ione",
+        "Tamsin",
+        "Thea",
+        "Calla",
+        "Delphine",
+        "Elowen",
+        "Freya",
+        "Ilse",
+        "Juno",
+        "Kaia",
+        "Liora",
+        "Maren",
+        "Naia",
+        "Oriana",
+        "Petra",
+        "Quinn",
+        "Rhea",
+        "Saoirse",
+        "Talia",
+        "Una",
+        "Vela",
+        "Wren",
+        "Xanthe",
+        "Yara",
+        "Zinnia",
+        "Aurelia",
+        "Brielle",
+        "Cora",
+        "Danica",
+        "Esme",
+        "Fia",
+        "Halina",
+        "Isolde",
+        "Jessa",
+        "Kestrel",
+        "Lux",
+        "Mira",
+        "Neve",
+        "Ottilie",
+        "Pia",
+        "Rue",
+        "Sabine",
+        "Temperance",
+        "Vashti",
+        "Wynne",
+        "Ada",
+        "Briar",
+        "Clio",
+        "Dara",
+        "Eira",
+        "Ines",
+        "Junia",
+        "Lark",
+        "Maia",
+        "Nadia",
+        "Orla",
+        "Romy",
+        "Sela",
+        "Tova",
+        "Veda",
+        "Zoe"
+      ]
+    },
+    "surname": [
+      "Halloran",
+      "Vashti",
+      "Castellan",
+      "Oyelaran",
+      "Szabo",
+      "Delacroix",
+      "Solberg",
+      "Arroyo",
+      "Kincaid",
+      "Tanaka",
+      "Okafor",
+      "Corvane",
+      "Starling",
+      "Voss",
+      "Thorne",
+      "Kade",
+      "Achterberg",
+      "Bellamy",
+      "Chao",
+      "Danvers",
+      "Eskildsen",
+      "Fairbanks",
+      "Gallo",
+      "Haddad",
+      "Ishikawa",
+      "Jovanovic",
+      "Kowalczyk",
+      "Lindqvist",
+      "Mbeki",
+      "Nakamura",
+      "Oduya",
+      "Petrov",
+      "Quintero",
+      "Rasmussen",
+      "Sato",
+      "Takeda",
+      "Ueda",
+      "Valdez",
+      "Wekesa",
+      "Xu",
+      "Yilmaz",
+      "Zelenko",
+      "Adebayo",
+      "Brandt",
+      "Cruz",
+      "Desai",
+      "Engel",
+      "Forsythe",
+      "Grieve",
+      "Hayashi",
+      "Iyer",
+      "Jansen",
+      "Kaur",
+      "Laurent",
+      "Moreau",
+      "Novak",
+      "Okonkwo",
+      "Park",
+      "Reyes",
+      "Sorensen",
+      "Tran",
+      "Varga",
+      "Wolfe",
+      "Ayodele",
+      "Banerjee",
+      "Carrow",
+      "Drummond",
+      "Ekwueme",
+      "Falk",
+      "Garza",
+      "Holm",
+      "Ibarra",
+      "Juarez",
+      "Kovacs",
+      "Lund",
+      "Marchetti",
+      "Nyberg",
+      "Orsini",
+      "Quinlan",
+      "Roux",
+      "Strand",
+      "Toivonen",
+      "Ulloa",
+      "Vidal",
+      "Westergaard",
+      "Yoon",
+      "Zubiri"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🛸 Futuristic Name Generator",
+      "tagline": "Sleek first names and global surnames for science fiction characters."
+    },
+    "intro": "Future names in good science fiction aren't random letters: they're today's names, worn smooth and mixed by a few centuries of travel. This **futuristic name generator** pairs short, sleek first names with surnames from all over the world, and double-barrelled ones for when families merge.",
+    "sections": [],
+    "faqs": []
+  }
+}
