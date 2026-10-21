@@ -67,7 +67,7 @@ function markdownBold(html) {
 }
 function plainText(text) {
   return String(text || '').replace(/\*\*/g, '').replace(ITALIC, '$1$2')
-    .replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+    .replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').replace(/\s+([.,;:!?)])/g, '$1').replace(/([(])\s+/g, '$1').trim();
 }
 
 // JSON for a <script> block: "<" escaped so data can't close the tag.
