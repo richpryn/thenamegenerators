@@ -380,7 +380,19 @@
         "Ivy",
         "Larch",
         "Rue",
-        "Zephyr"
+        "Zephyr",
+        "Alder",
+        "Birch",
+        "Coral",
+        "Delphin",
+        "Elm",
+        "Fallow",
+        "Glade",
+        "Hazel",
+        "Isle",
+        "Kestrel",
+        "Morrow",
+        "Pine"
       ],
       "dnd": [
         "Aeris",
@@ -421,7 +433,23 @@
         "Elaith",
         "Ferryn",
         "Ithar",
-        "Saelis"
+        "Saelis",
+        "Aeren",
+        "Bryth",
+        "Celen",
+        "Dythae",
+        "Faelis",
+        "Galan",
+        "Irith",
+        "Lirien",
+        "Naeth",
+        "Raethe",
+        "Sylth",
+        "Thaeris",
+        "Velith",
+        "Ysel",
+        "Zaeth",
+        "Caelan"
       ]
     }
   },

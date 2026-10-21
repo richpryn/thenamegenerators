@@ -621,7 +621,24 @@
       "Taka-giri (Hawk Cutter)",
       "Ōkami-giri (Wolf Cutter)",
       "Mori-giri (Forest Cutter)",
-      "Iwa-giri (Rock Cutter)"
+      "Iwa-giri (Rock Cutter)",
+      "Tetsu-giri (Iron Cutter)",
+      "Hagane-giri (Steel Cutter)",
+      "Kawa-giri (River Cutter)",
+      "Umi-giri (Sea Cutter)",
+      "Sora-giri (Sky Cutter)",
+      "Honoo-giri (Flame Cutter)",
+      "Mizu-giri (Water Cutter)",
+      "Shio-giri (Tide Cutter)",
+      "Taki-giri (Waterfall Cutter)",
+      "Yama-giri (Mountain Cutter)",
+      "Matsu-giri (Pine Cutter)",
+      "Ume-giri (Plum Blossom Cutter)",
+      "Washi-giri (Eagle Cutter)",
+      "Same-giri (Shark Cutter)",
+      "Inoshishi-giri (Boar Cutter)",
+      "Kasumi-giri (Haze Cutter)",
+      "Arashi-giri (Storm Cutter)"
     ],
     "maru": [
       "Tsuki-maru (Moon)",
@@ -663,7 +680,20 @@
       "Kuma-maru (Bear)",
       "Suzume-maru (Sparrow)",
       "Hotaru-maru (Firefly)",
-      "Shika-maru (Deer)"
+      "Shika-maru (Deer)",
+      "Hagane-maru (Steel)",
+      "Kasumi-maru (Haze)",
+      "Arashi-maru (Storm)",
+      "Taki-maru (Waterfall)",
+      "Yama-maru (Mountain)",
+      "Matsu-maru (Pine)",
+      "Ume-maru (Plum Blossom)",
+      "Washi-maru (Eagle)",
+      "Shio-maru (Tide)",
+      "Aki-maru (Autumn)",
+      "Haru-maru (Spring)",
+      "Natsu-maru (Summer)",
+      "Fuyu-maru (Winter)"
     ]
   },
   "article": {
