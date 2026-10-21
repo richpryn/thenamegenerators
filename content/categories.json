@@ -445,6 +445,48 @@
     ]
   },
   {
+    "name": "Mythology",
+    "slug": "mythology",
+    "icon": "⚡",
+    "navLabel": "Mythology Names",
+    "heading": "Mythology Name Generators: Gods, Valkyries and Spirits",
+    "seoTitle": "Mythology Name Generators: Gods, Valkyries, Kitsune",
+    "description": "Names inspired by world mythology: gods and goddesses for your own pantheon, Norse valkyries, Japanese kitsune and Chinese dragons.",
+    "seoDescription": "Mythology name generators: fantasy gods and goddesses, valkyrie names from Old Norse, kitsune names from Japanese words, and Chinese dragon names with meanings.",
+    "intro": "<p>These mythology name generators draw on the myths of the world. Build your own pantheon with the <a href=\"../posts/god-name-generator.html\">God Name Generator</a>, which makes gods and goddesses in Greek, Norse, Egyptian, Celtic or otherworldly styles. For Norse myth there are <a href=\"../posts/valkyrie-name-generator.html\">valkyrie names</a> built from real Old Norse name parts; for Japanese folklore, <a href=\"../posts/kitsune-name-generator.html\">kitsune</a> names from real Japanese words; and for Chinese myth, <a href=\"../posts/chinese-dragon-name-generator.html\">Chinese dragon names</a> with their meanings.</p><p>For people from the ancient world, try the <a href=\"../posts/ancient-greek-name-generator.html\">Ancient Greek</a>, <a href=\"../posts/roman-name-generator.html\">Roman</a>, <a href=\"../posts/viking-name-generator.html\">Viking</a> and <a href=\"../posts/mummy-name-generator.html\">Egyptian mummy</a> name generators, and for the powers above and below, <a href=\"../posts/angel-name-generator.html\">angels</a>, <a href=\"../posts/demon-name-generator.html\">demons</a> and the <a href=\"../posts/hellhound-name-generator.html\">hounds of the underworld</a>.</p>",
+    "generators": [
+      "god",
+      "valkyrie",
+      "kitsune",
+      "chinese_dragon",
+      "ancient_greek",
+      "roman",
+      "viking",
+      "mummy",
+      "angel",
+      "demon",
+      "hellhound"
+    ],
+    "featured": [
+      {
+        "key": "god",
+        "note": "new gods and goddesses for your own pantheon, by domain and by sound."
+      },
+      {
+        "key": "valkyrie",
+        "note": "names built from real Old Norse parts, with a title like Chooser of the Slain."
+      },
+      {
+        "key": "kitsune",
+        "note": "fox spirit names from real Japanese words, with their meanings."
+      },
+      {
+        "key": "chinese_dragon",
+        "note": "dragon names from real Chinese words, with their meanings."
+      }
+    ]
+  },
+  {
     "name": "Music",
     "slug": "music",
     "icon": "🎵",
