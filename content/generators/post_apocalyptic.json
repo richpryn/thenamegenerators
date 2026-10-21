@@ -530,7 +530,29 @@
       "tagline": "Names for survivors, raiders, mutants, settlements and factions after the end of the world."
     },
     "intro": "After the end of the world, names get practical. A survivor goes by what they're good at, a settlement by what it used to be, and a raider by whatever frightens people most. This **post-apocalyptic name generator** names survivors, raiders, mutants, settlements and wasteland factions.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Naming after the end of the world",
+        "content": "<p>After the collapse, names get practical: people are called what they do, places what they used to be.</p><ul><li><strong>Survivors</strong> keep their real name and earn a nickname: Lyle \"Wick\" Price.</li><li><strong>Raiders</strong> go by something meant to frighten: Scab the Butcher.</li><li><strong>Mutants</strong> are named for what changed: Many-Eyes, Two-Heads the Twice-Born.</li><li><strong>Settlements</strong> are named for the ruins they're built in: Tin Can Crossing.</li><li><strong>Factions</strong> sound like they're trying to restore order, or bury it: the Ash Wardens, the Copper Assembly.</li></ul>"
+      },
+      {
+        "heading": "A short history of the end",
+        "content": "<p>Post-apocalyptic fiction is older than it looks.</p><ul><li><strong>Mary Shelley's</strong> <em>The Last Man</em> (1826) follows the last survivor of a plague.</li><li><strong>After the atom bomb,</strong> the genre took off: Walter M. Miller Jr.'s <em>A Canticle for Leibowitz</em> (1959) imagines monks preserving knowledge for centuries after a nuclear war.</li><li><strong>The wasteland</strong> look of leather, rust and fuel came from the <em>Mad Max</em> films from 1979 onwards, and games like <em>Fallout</em> made it a setting players could live in.</li></ul><p>The names here are new, and not taken from any game or film. For the dead that walk the wasteland, try the <a href=\"zombie-name-generator.html\">Zombie Name Generator</a>, and for the gangs, the <a href=\"clan-name-generator.html\">Clan Name Generator</a>.</p><p>For the rest of the future, see all the <a href=\"../categories/scifi-names.html\">sci-fi name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good post-apocalyptic name?",
+        "answer": "A real name with an earned nickname, like Lyle \"Wick\" Price, or a single hard name for a raider, like Scab the Butcher."
+      },
+      {
+        "question": "Is this a Fallout name generator?",
+        "answer": "It isn't official, but it makes names that suit Fallout-style wastelands: survivors, raiders, mutants, settlements and factions."
+      },
+      {
+        "question": "What was the first post-apocalyptic novel?",
+        "answer": "One of the earliest is Mary Shelley's The Last Man, from 1826, about the last survivor of a worldwide plague."
+      }
+    ]
   }
 }

@@ -928,7 +928,29 @@
       "tagline": "Names for giant robots: military frames with model numbers and super robots with titles to shout."
     },
     "intro": "Mecha fiction has two great traditions. Real robots are mass-produced military machines with model numbers; super robots are one-of-a-kind heroes with names you shout before the finishing move. This **mecha name generator** names both, with a model number, prefix or class if you want one.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Real robots and super robots",
+        "content": "<p>Japanese mecha fiction has two great traditions, and they name their machines differently.</p><ul><li><strong>Super robots</strong> are one-of-a-kind heroes with powers no factory could make. Tetsujin 28-go (1956) and Go Nagai's Mazinger Z (1972) set the pattern: a grand coined name, often shouted as the robot launches.</li><li><strong>Real robots</strong> began with <em>Mobile Suit Gundam</em> (1979): mass-produced military machines with model numbers, ammunition limits and maintenance crews, named like real aircraft.</li><li><strong>Mecha</strong> is short for mechanical, and in Japan the word covers almost any machine.</li></ul>"
+      },
+      {
+        "heading": "Naming your mecha",
+        "content": "<ul><li><strong>Real robot</strong> names are model codes and callsigns: KR-07 Harrier, with a class like Heavy Assault Frame.</li><li><strong>Super robot</strong> names are big coined words, often ending in -on or -ion: Voltaxion, Great Kronagon, with a title like the Steel Titan.</li><li><strong>The famous names</strong> are left out, from Gundam to Mazinger, along with the BattleTech and Titanfall names.</li></ul><p>For the pilot, try the <a href=\"futuristic-name-generator.html\">Futuristic Name Generator</a>. For smaller machines, there's the <a href=\"robot-name-generator.html\">Robot Name Generator</a>.</p><p>For the rest of the future, see all the <a href=\"../categories/scifi-names.html\">sci-fi name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's the difference between a real robot and a super robot?",
+        "answer": "Real robots are mass-produced military machines with model numbers, like the mobile suits of Gundam. Super robots are unique heroes with special powers, like Mazinger Z."
+      },
+      {
+        "question": "What does mecha mean?",
+        "answer": "It's short for mechanical. In English it usually means giant piloted robots, especially from Japanese anime and games."
+      },
+      {
+        "question": "What's a good name for a mech?",
+        "answer": "A model code and a callsign for a real robot, like KR-07 Harrier, or a grand coined name for a super robot, like Voltaxion."
+      }
+    ]
   }
 }

@@ -4,7 +4,7 @@
   "icon": "🪐",
   "category": "scifi",
   "published": "2026-10-22",
-  "description": "Planet names for science fiction and worldbuilding: invented worlds like Velithra, survey catalogue numbers, human colonies and evocative names like Glasswater, with what kind of world it is.",
+  "description": "Planet names for sci-fi stories and games: alien-sounding worlds, catalogue numbers like KTS-4417 b, human colonies like New Meridian, and more.",
   "seoKeywords": "planet name generator, planet names, sci-fi planet names, alien planet names, fictional planet names, exoplanet name generator, colony names, moon names, star system names",
   "seoTitle": "Planet Name Generator: Sci-Fi & Alien Planet Names",
   "isPopular": false,
@@ -986,7 +986,29 @@
       "tagline": "Names for alien worlds, catalogued exoplanets, human colonies and moons."
     },
     "intro": "Real planets get catalogue numbers; the ones in stories get names. This **planet name generator** makes both: alien-sounding worlds, survey catalogue designations, human colonies named after home, and descriptive names like Glasswater, with a numeral or the kind of world if you want one.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "How real planets are named",
+        "content": "<p>Real planets outside our solar system are named after their star, with a lower-case letter in order of discovery.</p><ul><li><strong>The first</strong> exoplanet found around a Sun-like star was 51 Pegasi b, in 1995: the first planet of the star 51 Pegasi. The star itself is \"a\".</li><li><strong>Survey numbers:</strong> planets found by telescopes like Kepler take the survey's name, as in Kepler-452b.</li><li><strong>Public names:</strong> the International Astronomical Union's NameExoWorlds contests let the public name some, so 51 Pegasi b is also called Dimidium.</li><li><strong>Our own planets</strong> are named after Roman gods, apart from Uranus, who's Greek.</li></ul>"
+      },
+      {
+        "heading": "Naming a planet for a story",
+        "content": "<ul><li><strong>Alien names</strong> are coined to sound like nowhere on Earth: Xasephis, Karevos.</li><li><strong>Catalogue numbers</strong> (KTS-4417 b) sound like a world nobody has named yet.</li><li><strong>Colonies</strong> are named by the people who settled them, after home, a founder or a hope: New Meridian, Okafor's Landing, Last Concord.</li><li><strong>Descriptive</strong> names are what the first crew called it: Glasswater, Stormhold.</li><li><strong>Add a numeral</strong> (Velithra IV) for a planet's place around its star, or a world type, like \"an ocean world\".</li></ul><p>For the people who live there, try the <a href=\"alien-name-generator.html\">Alien</a> and <a href=\"futuristic-name-generator.html\">Futuristic</a> name generators, and for the ship that gets them there, the <a href=\"spaceship-name-generator.html\">Spaceship Name Generator</a>.</p><p>For the rest of the future, see all the <a href=\"../categories/scifi-names.html\">sci-fi name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How are real exoplanets named?",
+        "answer": "After their star plus a lower-case letter, from b upwards in order of discovery, like 51 Pegasi b. Some also get public names through the IAU's NameExoWorlds contests."
+      },
+      {
+        "question": "What's a good name for an alien planet?",
+        "answer": "A coined name that sounds like nowhere on Earth, like Xasephis, with a numeral for its place around its star: Velithra IV."
+      },
+      {
+        "question": "Why are the planets in our solar system named after gods?",
+        "answer": "Because the Romans named the ones they could see after their gods. The later ones followed the pattern: Uranus (Greek) and Neptune (Roman)."
+      }
+    ]
   }
 }

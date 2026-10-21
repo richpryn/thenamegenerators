@@ -4,7 +4,7 @@
   "icon": "🛸",
   "category": "scifi",
   "published": "2026-10-22",
-  "description": "Futuristic names for sci-fi characters: sleek first names like Kael and Elara, with surnames from a world that has mixed together, and double-barrelled ones.",
+  "description": "Futuristic names for sci-fi characters: sleek first names like Kael and Elara with surnames from around the world, and double-barrelled ones.",
   "seoKeywords": "futuristic name generator, futuristic names, sci-fi name generator, sci fi character names, futuristic boy names, futuristic girl names, space names, science fiction names",
   "seoTitle": "Futuristic Name Generator: Sci-Fi Character Names",
   "isPopular": false,
@@ -343,7 +343,29 @@
       "tagline": "Sleek first names and global surnames for science fiction characters."
     },
     "intro": "Future names in good science fiction aren't random letters: they're today's names, worn smooth and mixed by a few centuries of travel. This **futuristic name generator** pairs short, sleek first names with surnames from all over the world, and double-barrelled ones for when families merge.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "What future names really sound like",
+        "content": "<p>In good science fiction, future names aren't random letters: they're today's names, worn smooth and mixed by centuries of travel.</p><ul><li><strong>Mixing:</strong> when people move, names travel with them, so a future crew list mixes surnames from every continent.</li><li><strong>Double-barrelled</strong> surnames join two families, as many families already do: Elara Okafor-Lindqvist.</li><li><strong>Sleek first names</strong> like Kael, Nova and Elowen are short, easy to say over a radio and hard to place in any one century.</li></ul>"
+      },
+      {
+        "heading": "Naming your crew",
+        "content": "<ul><li><strong>Choose First name</strong> for a single name, <strong>Full name</strong> for a first name and surname, or <strong>Double-barrelled</strong> for a joined surname.</li><li><strong>Mix it up:</strong> a crew where every name comes from one place will feel like today, not the future.</li><li><strong>Famous names</strong> like Shepard, Ripley, Deckard and Atreides are left out.</li></ul><p>For the ship they fly, try the <a href=\"spaceship-name-generator.html\">Spaceship Name Generator</a>, for the planet they're headed to, the <a href=\"planet-name-generator.html\">Planet Name Generator</a>, and for the city they left, the <a href=\"cyberpunk-name-generator.html\">Cyberpunk Name Generator</a>.</p><p>For the rest of the future, see all the <a href=\"../categories/scifi-names.html\">sci-fi name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good futuristic name?",
+        "answer": "A short, sleek first name like Kael or Elara with a surname from anywhere in the world, or a double-barrelled one, like Elara Okafor-Lindqvist."
+      },
+      {
+        "question": "How do you make a name sound futuristic?",
+        "answer": "Mix names from different cultures, keep first names short, and join surnames. Random letters tend to sound silly rather than futuristic."
+      },
+      {
+        "question": "What's a good name for a spaceship captain?",
+        "answer": "A full name with a strong surname, like Tarek Vasquez-Oduya. Choose Full name or Double-barrelled."
+      }
+    ]
   }
 }
