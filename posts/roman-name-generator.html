@@ -46,7 +46,6 @@
     
     <!-- Security Headers -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
     <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -305,7 +304,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=d2ada735">
+    <link rel="stylesheet" href="../styles/site.css?v=c3e41962">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -345,7 +344,7 @@
                 <li><a href="../posts/tavern-name-generator.html">Tavern names</a></li>
                 <li><a href="../posts/fantasy-town-name-generator.html">Town &amp; village names</a></li>
                 <li><a href="../posts/epithet-generator.html">Epithets &amp; titles</a></li>
-                <li class="nav-more">More: <a href="../categories/christmas-names.html">Christmas</a> · <a href="../categories/halloween-names.html">Halloween</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/fantasy-names.html">Fantasy</a></li>
+                <li class="nav-more">More: <a href="../categories/halloween-names.html">Halloween</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/fantasy-names.html">Fantasy</a></li>
               </ul>
             </li>
             <li class="nav-dropdown">
@@ -600,8 +599,8 @@
     </footer>
 
     <script type="application/json" id="generator-config">{"title":"Roman Name Generator","slug":"roman-name-generator","filters":{"gender":{"label":"Gender","options":["any","male","female"],"optionLabels":{"any":"Any"}},"format":{"label":"Name format","options":["full","meaning"],"optionLabels":{"full":"Full name","meaning":"Full name, with the cognomen's meaning (men only)"}}},"recipe":"switch","on":"gender","cases":{"male":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[praenomina] [nomina.male] [cognomina]"},"meaning":{"recipe":"template","template":"[praenomina] [nomina.male] [cognominaMeaning]"}}},"female":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[nomina.female]","[nomina.female] [femaleSuffix]"]}}},"any":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[praenomina] [nomina.male] [cognomina]","[nomina.female]","[nomina.female] [femaleSuffix]"]},"meaning":{"recipe":"template","template":"[praenomina] [nomina.male] [cognominaMeaning]"}}}},"data":{"praenomina":["Gaius","Lucius","Marcus","Publius","Quintus","Titus","Tiberius","Sextus","Aulus","Decimus","Gnaeus","Spurius","Manius","Servius","Appius","Numerius"],"nomina":{"male":["Julius","Cornelius","Claudius","Aemilius","Valerius","Fabius","Junius","Licinius","Tullius","Sempronius","Antonius","Flavius","Pompeius","Calpurnius","Cassius","Domitius","Fulvius","Horatius","Livius","Manlius","Octavius","Porcius","Sulpicius","Terentius","Vettius"],"female":["Julia","Cornelia","Claudia","Aemilia","Valeria","Fabia","Junia","Licinia","Tullia","Sempronia","Antonia","Flavia","Pompeia","Calpurnia","Cassia","Domitia","Fulvia","Horatia","Livia","Manlia","Octavia","Porcia","Sulpicia","Terentia","Vettia"]},"cognomina":["Rufus","Longus","Crassus","Naso","Magnus","Felix","Severus","Paullus","Scaevola","Calvus","Niger","Corvus","Varus","Strabo","Balbus","Brutus","Cicero","Pius","Celer","Macer","Sabinus","Albus","Lepidus","Rusticus"],"cognominaMeaning":["Rufus (“red-haired”)","Longus (“tall”)","Crassus (“fat”)","Naso (“big-nosed”)","Magnus (“great”)","Felix (“lucky”)","Severus (“stern”)","Paullus (“small”)","Scaevola (“left-handed”)","Calvus (“bald”)","Niger (“dark”)","Corvus (“raven”)","Varus (“bow-legged”)","Strabo (“squinting”)","Balbus (“stammerer”)","Brutus (“dull”)","Cicero (“chickpea”)","Pius (“dutiful”)","Celer (“swift”)","Macer (“thin”)","Sabinus (“the Sabine”)","Albus (“white”)","Lepidus (“charming”)","Rusticus (“countrified”)"],"femaleSuffix":["Maior","Minor","Secunda","Tertia"]}}</script>
-    <script src="../lib/recipe-engine.js?v=2ccd0555"></script>
-    <script src="../lib/page.js?v=7dcc5da2"></script>
+    <script src="../lib/recipe-engine.js?v=b15fd1c1"></script>
+    <script src="../lib/page.js?v=1fbc0f8b"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

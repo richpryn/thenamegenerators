@@ -46,7 +46,6 @@
     
     <!-- Security Headers -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
     <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -300,7 +299,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=d2ada735">
+    <link rel="stylesheet" href="../styles/site.css?v=c3e41962">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -362,7 +361,7 @@
                 <li><a href="../posts/tavern-name-generator.html">Tavern names</a></li>
                 <li><a href="../posts/fantasy-town-name-generator.html">Town &amp; village names</a></li>
                 <li><a href="../posts/epithet-generator.html">Epithets &amp; titles</a></li>
-                <li class="nav-more">More: <a href="../categories/christmas-names.html">Christmas</a> · <a href="../categories/halloween-names.html">Halloween</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/fantasy-names.html">Fantasy</a></li>
+                <li class="nav-more">More: <a href="../categories/halloween-names.html">Halloween</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/fantasy-names.html">Fantasy</a></li>
               </ul>
             </li>
             <li class="nav-dropdown">
@@ -655,8 +654,8 @@
     </footer>
 
     <script type="application/json" id="generator-config">{"title":"Half-Elf Name Generator","slug":"half-elf-name-generator","filters":{"gender":{"label":"Gender","options":["any","male","female"],"optionLabels":{"any":"Any"}},"mix":{"label":"Raised by","options":["mixed_elf_first","mixed_human_first","elven","human"],"optionLabels":{"mixed_elf_first":"Humans (elven first name, human surname)","mixed_human_first":"Elves (human first name, elven family name)","elven":"Elves (fully elven name)","human":"Humans (fully human name)"}}},"recipe":"switch","on":"mix","cases":{"mixed_elf_first":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[elven.given] [human.surnames]"}},"default":{"recipe":"template","template":"[elven.given.{gender}] [human.surnames]"}},"mixed_human_first":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[human.given] [elven.family]"}},"default":{"recipe":"template","template":"[human.given.{gender}] [elven.family]"}},"elven":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[elven.given] [elven.family]"}},"default":{"recipe":"template","template":"[elven.given.{gender}] [elven.family]"}},"human":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[human.given] [human.surnames]"}},"default":{"recipe":"template","template":"[human.given.{gender}] [human.surnames]"}}},"data":{"elven":{"given":{"male":["Caladrel","Faelor","Galinor","Haelan","Ilyrin","Kaelith","Lorandil","Maeron","Naeril","Raelith","Saevan","Taeral","Vaelis","Aerendil","Celandor","Elarion","Ithilan","Laethor","Sylvarin","Aranel","Belandor","Daelen","Elvaris","Fenlas","Iriandor","Mythrin","Orendil","Phaelan","Quellan","Rhovan","Tirnel"],"female":["Aeris","Caelynn","Elowen","Faelwen","Ilaria","Liavel","Maelis","Naerith","Saelora","Sylvaine","Thaliel","Vaelora","Ylsa","Calenwe","Eliphae","Ithrael","Miraen","Rhiannel","Taerwyn","Velaine","Aelith","Brilith","Daelwen","Elandra","Faelyn","Ilphara","Lethiel","Merethyl","Naiara","Shalendra","Tirelle"]},"family":["Aelindor","Caerwyn","Elaranth","Faenhal","Ilmarien","Lianthor","Maelithil","Naevarin","Rhaenor","Silvaren","Thaelindor","Vaeranth","Yllathiel","Amarethil","Brenvaril","Celenthir","Dhaerith","Ithelvar","Lothaniel","Aerethyl","Duskwhisper","Evenbrook","Faerendil","Ilvanor","Narathiel","Oakenshade","Quessaril","Starbloom","Valandril"]},"human":{"given":{"male":["Aldric","Bram","Cedric","Corwin","Darian","Edmund","Garret","Gideon","Harlan","Jasper","Kellan","Lucan","Marius","Nolan","Osric","Perrin","Quentin","Roland","Silas","Tobias","Varek","Wendel","Alaric","Benedict","Dorian","Emeric","Florian","Hugo","Leopold","Matthias"],"female":["Adela","Celia","Delia","Elinor","Freya","Gwen","Helena","Isolde","Jocelyn","Katrin","Lenora","Mara","Nell","Odette","Rosamund","Sabine","Tamsin","Vivian","Wilhelmina","Alys","Beatrix","Clarice","Edith","Greta","Hester","Imogen","Linnea","Maud","Rowena"]},"surnames":["Ashford","Blackwell","Brightwater","Carrow","Dunmore","Fairweather","Greaves","Hallowell","Hawthorne","Kestrel","Larkin","Marlowe","Northcott","Oakley","Pembroke","Ravensworth","Selwyn","Thorne","Underwood","Vance","Whitlock","Yarrow","Ambrose","Callow","Fenwick","Holloway","Merriweather","Redfern","Sterling","Wolcott"]}}}</script>
-    <script src="../lib/recipe-engine.js?v=2ccd0555"></script>
-    <script src="../lib/page.js?v=7dcc5da2"></script>
+    <script src="../lib/recipe-engine.js?v=b15fd1c1"></script>
+    <script src="../lib/page.js?v=1fbc0f8b"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

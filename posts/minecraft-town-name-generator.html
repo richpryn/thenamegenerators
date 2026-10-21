@@ -46,7 +46,6 @@
     
     <!-- Security Headers -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
     <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -300,7 +299,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=d2ada735">
+    <link rel="stylesheet" href="../styles/site.css?v=c3e41962">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -337,7 +336,7 @@
                 <li><a href="../posts/tavern-name-generator.html">Tavern names</a></li>
                 <li><a href="../posts/fantasy-town-name-generator.html">Town &amp; village names</a></li>
                 <li><a href="../posts/epithet-generator.html">Epithets &amp; titles</a></li>
-                <li class="nav-more">More: <a href="../categories/christmas-names.html">Christmas</a> · <a href="../categories/halloween-names.html">Halloween</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/fantasy-names.html">Fantasy</a></li>
+                <li class="nav-more">More: <a href="../categories/halloween-names.html">Halloween</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/fantasy-names.html">Fantasy</a></li>
               </ul>
             </li>
             <li class="nav-dropdown">
@@ -595,8 +594,8 @@
     </footer>
 
     <script type="application/json" id="generator-config">{"title":"Minecraft Town Name Generator","slug":"minecraft-town-name-generator","seoTitle":"Minecraft Town Name Generator: Village & Kingdom Names","filters":{"kind":{"label":"Place","options":["village","town","city","kingdom"],"optionLabels":{"village":"Village","town":"Town","city":"City","kingdom":"Kingdom"}},"style":{"label":"Style","options":["any","classic","blocky","epic","funny"],"optionLabels":{"any":"Any (a mix)","classic":"Classic (Oakhollow)","blocky":"Block names (Copper Harbour)","epic":"Epic (Obsidian Hold)","funny":"Funny (Creeper Crater Village)"}}},"recipe":"switch","on":"kind","cases":{"village":{"recipe":"switch","on":"style","cases":{"classic":{"recipe":"template","template":"[classic][kinds.village.ends]"},"blocky":{"recipe":"template","template":"[blocky] [kinds.village.words]"},"epic":{"recipe":"template","template":"[epic] [kinds.village.epic]"},"funny":{"recipe":"template","template":"[funny] [kinds.village.words]"},"any":{"recipe":"template","template":["[classic][kinds.village.ends]","[blocky] [kinds.village.words]","[epic] [kinds.village.epic]","[funny] [kinds.village.words]"]}}},"town":{"recipe":"switch","on":"style","cases":{"classic":{"recipe":"template","template":"[classic][kinds.town.ends]"},"blocky":{"recipe":"template","template":"[blocky] [kinds.town.words]"},"epic":{"recipe":"template","template":"[epic] [kinds.town.epic]"},"funny":{"recipe":"template","template":"[funny] [kinds.town.words]"},"any":{"recipe":"template","template":["[classic][kinds.town.ends]","[blocky] [kinds.town.words]","[epic] [kinds.town.epic]","[funny] [kinds.town.words]"]}}},"city":{"recipe":"switch","on":"style","cases":{"classic":{"recipe":"template","template":"[classic][kinds.city.ends]"},"blocky":{"recipe":"template","template":"[blocky] [kinds.city.words]"},"epic":{"recipe":"template","template":"[epic] [kinds.city.epic]"},"funny":{"recipe":"template","template":"[funny] [kinds.city.words]"},"any":{"recipe":"template","template":["[classic][kinds.city.ends]","[blocky] [kinds.city.words]","[epic] [kinds.city.epic]","[funny] [kinds.city.words]"]}}},"kingdom":{"recipe":"switch","on":"style","cases":{"classic":{"recipe":"template","template":["[classic][kinds.kingdom.ends]","The Kingdom of [classic][kinds.village.ends]"]},"blocky":{"recipe":"template","template":"[blocky] [kinds.kingdom.words]"},"epic":{"recipe":"template","template":"The [epic] [kinds.kingdom.epic]"},"funny":{"recipe":"template","template":"[funny] [kinds.kingdom.words]"},"any":{"recipe":"template","template":["[classic][kinds.kingdom.ends]","The Kingdom of [classic][kinds.village.ends]","[blocky] [kinds.kingdom.words]","The [epic] [kinds.kingdom.epic]","[funny] [kinds.kingdom.words]"]}}}},"data":{"kinds":{"village":{"ends":["by","ham","stead","wick","hollow","dale","field","combe","thorpe","ley"],"words":["Village","Hollow","Cove","Green","Corner","Crossing","Hamlet","Meadows"],"epic":["Hollow","Watch","Rest","Haven","Vale","Refuge"]},"town":{"ends":["ton","ford","bury","bridge","port","mouth","wood","minster"],"words":["Town","Market","Harbour","Bridge","Crossing","Reach","Landing","Docks"],"epic":["Hold","Keep","Crossing","Gate","Bastion","Watch"]},"city":{"ends":["ton City","polis","haven City","gate","spire","ford City"],"words":["City","Heights","Towers","Spire","Metropolis","Central","Plaza","Skyline"],"epic":["Citadel","Spire","Bastion","Capital","Throne","Sanctum"]},"kingdom":{"ends":["realm","holm","gard","mark","land","shire"],"words":["Kingdom","Realm","Empire","Dominion","Republic","Isles"],"epic":["Empire","Dominion","Realm","Throne","Crown","Kingdom"]}},"classic":["Oak","Birch","Spruce","Willow","Ash","Elder","Brook","Mill","Stone","Fern","Moss","Thorn","Bramble","Hazel","Cherry","Maple","Holly","Briar","Rowan","Larch"],"blocky":["Cobble","Redstone","Copper","Diamond","Emerald","Obsidian","Quartz","Prismarine","Amethyst","Terracotta","Deepslate","Andesite","Granite","Sandstone","Glowstone","Bamboo","Mangrove","Calcite","Mossy Cobble","Tuff"],"epic":["Obsidian","Dragon","Ender","Wither","Netherite","Blaze","Storm","Crimson","Shadow","Iron","Ancient","Warden","Void","Star","Diamond","Beacon","Elder","Sculk"],"funny":["Dirt Hut","Creeper Crater","Gravel Pit","Lava Lake","Pufferfish","Sheep Shed","Chicken Coop","Cobblestone Box","Noob","Llama Spit","Pumpkin Patch","Slime Swamp","Bad Idea","Oops","Sleepless","Lost Bed"]}}</script>
-    <script src="../lib/recipe-engine.js?v=2ccd0555"></script>
-    <script src="../lib/page.js?v=7dcc5da2"></script>
+    <script src="../lib/recipe-engine.js?v=b15fd1c1"></script>
+    <script src="../lib/page.js?v=1fbc0f8b"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>
