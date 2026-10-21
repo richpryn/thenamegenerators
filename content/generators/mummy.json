@@ -4,7 +4,7 @@
   "icon": "🧟",
   "category": "halloween",
   "published": "2026-10-21",
-  "description": "Mummy names from real Ancient Egyptian names, royal and everyday, with what each name means, and titles from scribes and priests to Keeper of the Western Tombs.",
+  "description": "Mummy names from real Ancient Egyptian names, royal and everyday, with what each one means and a title, from Royal Scribe to Keeper of the Western Tombs.",
   "seoKeywords": "mummy name generator, mummy names, egyptian mummy names, ancient egyptian names, egyptian names and meanings, pharaoh name generator, halloween mummy names",
   "isPopular": false,
   "filters": {
@@ -298,7 +298,29 @@
       "tagline": "Real Ancient Egyptian names for your mummy, with what each one means and a title to go with it."
     },
     "intro": "Ancient Egyptian names were often short sentences about a god: Amenhotep means “Amun is satisfied”, Thutmose “Thoth is born”. This **mummy name generator** uses real names from Ancient Egypt, from pharaohs to scribes, with their meanings and a title fit for a tomb.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "How Egyptian names work",
+        "content": "<p>Most Ancient Egyptian names are short sentences, usually about a god. Learn a few pieces and you can read them:</p><ul><li><strong>-mose</strong> means \"is born\": Thutmose, \"Thoth is born\"; Ramose, \"Ra is born\".</li><li><strong>-hotep</strong> means \"is satisfied\" or \"at peace\": Amenhotep, \"Amun is satisfied\".</li><li><strong>Mery-</strong> or <strong>Merit-</strong> means \"beloved of\": Meritamun, \"beloved of Amun\".</li><li><strong>Nefer</strong> means \"beautiful\" or \"good\": Nefertari, \"beautiful companion\".</li><li><strong>Sat-</strong> or <strong>Sit-</strong> means \"daughter of\": Sitre, \"daughter of Ra\".</li></ul><p>Everyday names were often simpler: Nakht means \"strong\", and Tamit means \"she-cat\".</p>"
+      },
+      {
+        "heading": "Mummies, curses and real people",
+        "content": "<ul><li><strong>The word:</strong> mummy comes from the Arabic <em>mūmiyā</em>, bitumen, because the dark embalmed bodies were once thought to be coated in it.</li><li><strong>The process:</strong> the Greek historian Herodotus wrote that embalming took 70 days, and that fits what Egyptologists have found.</li><li><strong>The curse:</strong> the idea of a mummy's curse took off after Lord Carnarvon, who paid for the dig, died in 1923, a few months after Tutankhamun's tomb was opened. The 1932 film <em>The Mummy</em>, with Boris Karloff, turned the mummy into a movie monster.</li><li><strong>Real people:</strong> the names here belonged to real Egyptians, and the mummies in museums are real people's remains. Use the names with a bit of respect, even for Halloween.</li></ul><p>For more of the ancient world, try the <a href=\"ancient-greek-name-generator.html\">Ancient Greek</a> and <a href=\"roman-name-generator.html\">Roman</a> name generators. For other undead, try <a href=\"skeleton-name-generator.html\">Skeleton</a> and <a href=\"zombie-name-generator.html\">Zombie</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What does -hotep mean in Egyptian names?",
+        "answer": "\"Is satisfied\" or \"is at peace\". Amenhotep means \"Amun is satisfied\", and Imhotep means \"he who comes in peace\"."
+      },
+      {
+        "question": "Are these real Ancient Egyptian names?",
+        "answer": "Yes. Every name comes from Ancient Egypt, from pharaohs like Thutmose and Hatshepsut to everyday people like Sennedjem, \"sweet brother\"."
+      },
+      {
+        "question": "Where does the word mummy come from?",
+        "answer": "From the Arabic mūmiyā, bitumen, because embalmed bodies were once thought to have been preserved with it."
+      }
+    ]
   }
 }

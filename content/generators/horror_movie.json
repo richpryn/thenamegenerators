@@ -4,7 +4,7 @@
   "icon": "🎬",
   "category": "halloween",
   "published": "2026-10-21",
-  "description": "Horror film titles for scripts, stories, student films and party games: hauntings, slashers, folk horror, creature features, possession and found footage, with a tagline.",
+  "description": "Horror film titles for scripts, stories, student films and party games: hauntings, slashers, folk horror, creatures, possession and found footage.",
   "seoKeywords": "horror movie title generator, horror film title generator, horror movie name generator, scary movie titles, horror story title generator, horror titles, halloween movie names",
   "isPopular": false,
   "noun": "Horror Movie Titles",
@@ -638,7 +638,29 @@
       "tagline": "Titles for hauntings, slashers, folk horror, creature features, possession stories and found footage, with a tagline to go on the poster."
     },
     "intro": "Horror titles do a lot in very few words: one strange word, or the name of a place where something went wrong. This **horror movie title generator** makes titles in six subgenres for scripts, stories, student films and party games, with a tagline if you want one.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "How horror titles work",
+        "content": "<ul><li><strong>One word:</strong> a single strange word or place name is the classic horror title. It tells you nothing and promises everything.</li><li><strong>\"The X of Y\":</strong> a title with a name in it (The Undoing of Clara Hale) makes it personal, and suits hauntings and possession stories.</li><li><strong>A tagline</strong> does the selling on the poster: short, a little cryptic, and usually a warning.</li></ul>"
+      },
+      {
+        "heading": "The subgenres",
+        "content": "<ul><li><strong>Slasher:</strong> the killer with a mask and a body count. John Carpenter's <em>Halloween</em> (1978) set most of the rules.</li><li><strong>Folk horror:</strong> old customs, isolated villages and the land itself. The term was popularised by Mark Gatiss's BBC series <em>A History of Horror</em> (2010), which named <em>Witchfinder General</em>, <em>The Blood on Satan's Claw</em> and <em>The Wicker Man</em> as its \"unholy trinity\".</li><li><strong>Found footage:</strong> the film is the evidence. <em>The Blair Witch Project</em> (1999) made it famous.</li><li><strong>Haunting, possession and creature features</strong> each have their own words: houses and names for hauntings, the body and the soul for possession, and teeth and water for creatures.</li></ul><p>The generator never rebuilds a real film title. Search a title before you use it for a real film, though, as there are a lot of horror films out there. For the cast, try the <a href=\"villain-name-generator.html\">Villain</a>, <a href=\"monster-name-generator.html\">Monster</a> and <a href=\"ghost-name-generator.html\">Ghost</a> name generators.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What makes a good horror film title?",
+        "answer": "Short and strange. One unsettling word, or a place or person something terrible happened to, then a tagline to do the scaring."
+      },
+      {
+        "question": "What is folk horror?",
+        "answer": "Horror rooted in old customs, the countryside and the land: isolated villages, strange rituals and the past refusing to stay buried."
+      },
+      {
+        "question": "Can I use these titles for my film?",
+        "answer": "Yes, they're free to use. Search the title first in case a film already has it."
+      }
+    ]
   }
 }
