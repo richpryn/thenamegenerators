@@ -4,7 +4,7 @@
   "icon": "🦄",
   "category": "mythical",
   "published": "2026-10-22",
-  "description": "Unicorn names for stories, toys, parties and games: magical names like Moonwhisper, legendary ones like Eirlys, cute ones like Sprinkles and funny ones like Sir Prance-a-Lot.",
+  "description": "Unicorn names for stories, games, toys and parties: magical names like Moonwhisper, Welsh and Scottish legendary names, cute ones and funny ones.",
   "seoKeywords": "unicorn name generator, unicorn names, cute unicorn names, magical unicorn names, funny unicorn names, unicorn names for girls, unicorn party names",
   "seoTitle": "Unicorn Name Generator: Magical, Cute & Funny Names",
   "isPopular": false,
@@ -337,7 +337,29 @@
       "tagline": "Names for a unicorn: magical, legendary, cute or very silly."
     },
     "intro": "Unicorns turn up everywhere from medieval tapestries to birthday cakes, and the right name depends on which one you've got. This **unicorn name generator** makes magical names like Moonwhisper, legendary names like Eirlys, cute names like Sprinkles and funny ones like Sir Prance-a-Lot.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Where the unicorn comes from",
+        "content": "<p>The unicorn first appears in writing around 400 BC, in the Greek doctor Ctesias's account of India.</p><ul><li><strong>Ctesias</strong> described wild asses in India with a single horn whose powder protected against poison. He never went to India and wrote down travellers' tales.</li><li><strong>In the Middle Ages</strong> the unicorn became a symbol of purity, said to be tamed only by a maiden, and the famous Unicorn Tapestries of around 1500 show the hunt for one.</li><li><strong>Unicorn horns</strong> sold in medieval Europe were really narwhal tusks, worth far more than their weight in gold.</li></ul>"
+      },
+      {
+        "heading": "Scotland's unicorn",
+        "content": "<p>The unicorn is Scotland's national animal, and has been on the Scottish royal coat of arms since the 1400s.</p><ul><li><strong>Chained:</strong> the Scottish unicorn is usually shown in chains, a sign that even the wildest, proudest beast could be tamed by a Scottish king.</li><li><strong>The lion and the unicorn:</strong> when James VI of Scotland became James I of England in 1603, the royal arms joined England's lion and Scotland's unicorn, as they still are today.</li><li><strong>The legendary style</strong> uses Welsh and Scottish names like Eirlys (\"snowdrop\"), Seren (\"star\") and Gwyn (\"white\").</li></ul><p>For a winged horse instead, try the <a href=\"pegasus-name-generator.html\">Pegasus Name Generator</a>. For another proud beast of heraldry, there's the <a href=\"griffin-name-generator.html\">Griffin Name Generator</a>.</p><p>For more beasts of legend, see all the <a href=\"../categories/mythical-names.html\">mythical creature name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Why is the unicorn Scotland's national animal?",
+        "answer": "It has been on the Scottish royal coat of arms since the 1400s, as a symbol of purity, strength and pride. It's usually shown in chains, tamed by the king."
+      },
+      {
+        "question": "What's a good name for a unicorn?",
+        "answer": "Magical names like Moonwhisper or Pearlwhisper, legendary Welsh and Scottish names like Seren, or funny ones like Duchess Prancington."
+      },
+      {
+        "question": "Were unicorn horns real?",
+        "answer": "The ones sold in medieval Europe were real objects, but they were narwhal tusks, brought south by traders and sold as unicorn horn."
+      }
+    ]
   }
 }
