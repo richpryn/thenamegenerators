@@ -329,6 +329,7 @@
       }
     ],
     "generators": [
+      "spell",
       "shield",
       "poison",
       "sword",
