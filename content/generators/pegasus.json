@@ -4,7 +4,7 @@
   "icon": "🪽",
   "category": "mythical",
   "published": "2026-10-22",
-  "description": "Pegasus and winged horse names for stories, games and toys: sky names like Cloudsoar, names from Greek words for wind, air and stars, and cute ones like Puffball.",
+  "description": "Pegasus names for winged horses in stories and games: sky names like Cloudsoar, Greek-sounding names from myth, and cute ones for a toy pegasus.",
   "seoKeywords": "pegasus name generator, pegasus names, winged horse names, flying horse names, pegasi names, cute pegasus names, fantasy horse names",
   "seoTitle": "Pegasus Name Generator: Winged Horse Names",
   "isPopular": false,
@@ -267,7 +267,29 @@
       "tagline": "Names for a winged horse, from Cloudsoar to a pegasus called Puffball."
     },
     "intro": "In Greek myth, Pegasus was the winged horse who sprang from Medusa and carried the hero Bellerophon. Today any winged horse in a story or game is a pegasus, and each one needs a name. This **pegasus name generator** makes sky names like Cloudsoar, names from Greek words for wind and stars, and cute names for toys and kids' stories.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Pegasus in Greek myth",
+        "content": "<p>In Greek myth, Pegasus sprang from the neck of the Gorgon Medusa when the hero Perseus cut off her head.</p><ul><li><strong>Bellerophon</strong> tamed him with a golden bridle from the goddess Athena, and rode him to kill the fire-breathing Chimera.</li><li><strong>The Hippocrene spring</strong> on Mount Helicon, home of the Muses, was said to have burst from the ground where Pegasus struck it with his hoof. Its name means \"horse's spring\".</li><li><strong>A constellation:</strong> after Bellerophon fell trying to ride him up to Olympus, Pegasus was placed among the stars, where the Great Square of Pegasus still marks him.</li></ul>"
+      },
+      {
+        "heading": "Naming a pegasus",
+        "content": "<p>Pegasus was one horse, but any winged horse in a story is a pegasus now, and each needs a name.</p><ul><li><strong>Sky names</strong> join wind and cloud to flight: Cloudsoar, Stormsail.</li><li><strong>Greek names</strong> come from myth. Zephyr and Boreas are the west and north winds; Balios was one of Achilles's immortal horses; Aether is the bright upper air.</li><li><strong>Cute names</strong> suit a toy or a child's drawing: Little Pip, Starlight.</li></ul><p>For a horse with a horn instead of wings, try the <a href=\"unicorn-name-generator.html\">Unicorn Name Generator</a>.</p><p>For more beasts of legend, see all the <a href=\"../categories/mythical-names.html\">mythical creature name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How was Pegasus born?",
+        "answer": "In Greek myth, he sprang from the neck of Medusa when Perseus cut off her head."
+      },
+      {
+        "question": "What is the Hippocrene spring?",
+        "answer": "A spring on Mount Helicon, sacred to the Muses, said to have appeared where Pegasus struck the ground with his hoof. The name means horse's spring."
+      },
+      {
+        "question": "What's a good name for a winged horse?",
+        "answer": "A sky name like Cloudsoar, or a Greek one like Zephyr, the west wind, or Aether, the bright upper air."
+      }
+    ]
   }
 }

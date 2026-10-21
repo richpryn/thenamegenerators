@@ -273,7 +273,29 @@
       "tagline": "Names for a bird that burns and rises again, from Emberwing to a pet called Sparky."
     },
     "intro": "In legend, the phoenix lives for centuries, burns and is reborn from its own ashes, so its name should sound like fire and dawn. This **phoenix name generator** makes fiery names like Emberwing, ancient-sounding names like Aithon and Flamma, and cute names for a pet phoenix in a game or story.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "The phoenix in legend",
+        "content": "<p>The oldest detailed account of the phoenix comes from the Greek historian Herodotus, writing in the 400s BC.</p><ul><li><strong>Herodotus</strong> heard in Egypt of a red and gold bird that came to the sun temple at Heliopolis once every 500 years, carrying its dead father in an egg of myrrh. He admitted he'd only seen pictures of it.</li><li><strong>Rebirth:</strong> later writers, the Roman poet Ovid among them, describe the phoenix building a nest of spices and being born again, the only bird that renews itself. The fiery rebirth from ashes became the best-known version.</li><li><strong>The bennu,</strong> a heron-like bird of Egyptian religion linked to the sun god and to Heliopolis, is often suggested as one of the phoenix's roots.</li><li><strong>The Chinese fenghuang</strong> is often translated as \"phoenix\", but it's a different bird, linked to harmony and to the empress rather than to rebirth.</li></ul>"
+      },
+      {
+        "heading": "Naming a phoenix",
+        "content": "<p>A phoenix name should sound like fire, sunrise or something that refuses to stay dead.</p><ul><li><strong>Fiery</strong> names join fire and flight: Emberwing, Cindersong, Ashheart.</li><li><strong>Ancient</strong> names borrow Greek and Latin fire words. Aithon and Phlegon, \"blazing\" and \"burning\", were the names of two of the sun god's horses; add \"of Heliopolis\" for Herodotus's version.</li><li><strong>Cute</strong> names suit a small fiery pet: Little Clementine, Popcorn.</li></ul><p>For other fire-breathers, try the <a href=\"dragon-name-generator.html\">Dragon Name Generator</a>.</p><p>For more beasts of legend, see all the <a href=\"../categories/mythical-names.html\">mythical creature name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Where does the phoenix legend come from?",
+        "answer": "From ancient Egypt by way of Greece: Herodotus described a bird that came to Heliopolis every 500 years. It may be linked to the Egyptian bennu bird."
+      },
+      {
+        "question": "What's a good name for a phoenix?",
+        "answer": "Something fiery, like Emberwing or Ashheart, or an ancient Greek fire word, like Phlegon (\"burning\")."
+      },
+      {
+        "question": "Is the Chinese phoenix the same as the Greek one?",
+        "answer": "No. The fenghuang is often called a phoenix in English, but it's a separate bird of good omen, not one that burns and is reborn."
+      }
+    ]
   }
 }

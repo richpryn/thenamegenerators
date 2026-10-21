@@ -4,7 +4,7 @@
   "icon": "🦅",
   "category": "mythical",
   "published": "2026-10-22",
-  "description": "Griffin and gryphon names for fantasy stories, D&D and games: noble heraldic names, fierce sky-hunter names and ancient-sounding names from Greek and Latin.",
+  "description": "Griffin names for stories and games: noble heraldic names like Aurelian Goldcrest, fierce ones like Talonstrike, and ancient gold-guarding griffins.",
   "seoKeywords": "griffin name generator, gryphon name generator, griffin names, gryphon names, dnd griffin names, fantasy griffin names, hippogriff names",
   "seoTitle": "Griffin Name Generator: Gryphon Names for Fantasy",
   "isPopular": false,
@@ -259,7 +259,29 @@
       "tagline": "Names for the half-lion, half-eagle guardians of legend, noble, fierce or ancient."
     },
     "intro": "The griffin has the body of a lion and the head and wings of an eagle, and in ancient Greek stories it guarded gold in the mountains of the north. This **griffin name generator** makes noble heraldic names, fierce sky-hunter names and ancient-sounding names for gryphons in D&D, games and stories.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Where the griffin comes from",
+        "content": "<p>The griffin, with a lion's body and an eagle's head and wings, appears in art across the ancient Near East and Greece.</p><ul><li><strong>Gold guardians:</strong> the Greek poet Aristeas, in a lost poem known through Herodotus, told of griffins guarding gold in the far north, fought by the one-eyed Arimaspians.</li><li><strong>A fossil theory:</strong> the historian Adrienne Mayor has suggested that the legend began with nomads finding dinosaur skeletons, such as Protoceratops, in the gold-bearing deserts of Central Asia.</li><li><strong>Three spellings,</strong> griffin, gryphon and griffon, are all correct. Griffin is the most common in British English.</li></ul>"
+      },
+      {
+        "heading": "Naming a griffin",
+        "content": "<p>A griffin is royalty twice over, king of the beasts and king of the birds, so its name can be proud.</p><ul><li><strong>Noble</strong> names sound heraldic: the griffin is one of the most common beasts on coats of arms, and names like Aurelian Goldcrest would fit on a shield.</li><li><strong>Fierce</strong> names are all talon and beak: Talonstrike, Talonshriek.</li><li><strong>Ancient</strong> names use Greek and Latin words for eagle and gold, like Aetos and Chrysanthe, with a home \"of Scythia\" or \"of the Riphean Mountains\", where Greek writers placed the gold.</li></ul><p>For more winged beasts, try the <a href=\"phoenix-name-generator.html\">Phoenix</a> and <a href=\"pegasus-name-generator.html\">Pegasus</a> name generators.</p><p>For more beasts of legend, see all the <a href=\"../categories/mythical-names.html\">mythical creature name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is a griffin?",
+        "answer": "A legendary creature with the body of a lion and the head, wings and front talons of an eagle, said in Greek stories to guard gold."
+      },
+      {
+        "question": "Is it griffin or gryphon?",
+        "answer": "Both are correct, and so is griffon. Griffin is the most common spelling in British English; gryphon is popular in fantasy."
+      },
+      {
+        "question": "Where did the griffin legend come from?",
+        "answer": "Greek writers placed griffins in Central Asia guarding gold. One theory is that the legend began with nomads finding dinosaur fossils there."
+      }
+    ]
   }
 }

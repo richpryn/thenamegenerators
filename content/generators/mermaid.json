@@ -521,7 +521,29 @@
       "tagline": "Names for mermaids and mermen, from Nerissa Pearlfin to a little one called Bubbles."
     },
     "intro": "Mermaids have been singing in sailors' stories for centuries, from Cornish legends to Hans Christian Andersen. This **mermaid name generator** makes names for mermaids and mermen with sea surnames like Pearlfin, names tied to a place under the waves, and cute ones for kids' parties and games.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Mermaids in folklore",
+        "content": "<p>Stories of sea people half human and half fish are told along almost every coast.</p><ul><li><strong>The Mermaid of Zennor:</strong> in a Cornish legend a mermaid lured a church singer into the sea. A carved mermaid on a bench end in Zennor church, hundreds of years old, still marks the story.</li><li><strong>Sailors' sightings:</strong> on his first voyage in 1493, Christopher Columbus reported seeing three mermaids, who were \"not as pretty as they are painted\". They were almost certainly manatees.</li><li><strong>Sirens</strong> are often mixed up with mermaids, but in Greek myth they were part bird, not part fish.</li><li><strong>Hans Christian Andersen's</strong> \"The Little Mermaid\" (1837) gave us the mermaid who longs to live on land.</li></ul>"
+      },
+      {
+        "heading": "Naming a mermaid or merman",
+        "content": "<p>A mermaid name should sound like the sea, or like the place she lives.</p><ul><li><strong>Sea surnames</strong> join a first name to something from the shore: Nerissa Pearlfin, Sorrel Sandtail.</li><li><strong>Single names</strong> with a home, like Morwenna of the Deep Trench, sound like folklore.</li><li><strong>Cute names</strong> suit a mermaid toy or a party: Baby Coral.</li><li><strong>Mermen</strong> get their own names: choose Merman for names like Tiernan Stormheart.</li></ul><p>For other sea creatures, try the <a href=\"monster-name-generator.html\">Monster Name Generator</a>'s sea monsters.</p><p>For more beasts of legend, see all the <a href=\"../categories/mythical-names.html\">mythical creature name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good mermaid name?",
+        "answer": "A first name and a sea surname, like Nerissa Pearlfin, or a single name with a home, like Morwenna of the Deep Trench."
+      },
+      {
+        "question": "What's the difference between a mermaid and a siren?",
+        "answer": "In Greek myth sirens were part woman and part bird, luring sailors with song. Later stories merged them with mermaids."
+      },
+      {
+        "question": "What did Columbus think were mermaids?",
+        "answer": "Almost certainly manatees. He wrote in 1493 that they were not as pretty as they were painted."
+      }
+    ]
   }
 }
