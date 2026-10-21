@@ -304,7 +304,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=0185f0c3">
+    <link rel="stylesheet" href="../styles/site.css?v=261e9e48">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -328,7 +328,7 @@
         <nav class="site-nav" aria-label="Main">
           <ul class="nav-links" id="nav-links">
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy">Fantasy</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy"><span class="nav-label">Fantasy</span></button>
               <ul class="nav-dropdown-menu" id="menu-fantasy">
                 <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
                 <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
@@ -343,7 +343,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games">Games &amp; TV</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games"><span class="nav-label">Games &amp; TV</span></button>
               <ul class="nav-dropdown-menu" id="menu-games">
                 <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
                 <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
@@ -358,7 +358,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music">Music &amp; online</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music"><span class="nav-label">Music &amp; online</span></button>
               <ul class="nav-dropdown-menu" id="menu-music">
                 <li><a href="../posts/band-name-generator.html">Band names</a></li>
                 <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
@@ -372,7 +372,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business">Business</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business"><span class="nav-label">Business</span></button>
               <ul class="nav-dropdown-menu" id="menu-business">
                 <li><a href="../posts/business-name-generator.html">Business names</a></li>
                 <li><a href="../posts/company-name-generator.html">Company names</a></li>
@@ -383,7 +383,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools">Name tools</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools"><span class="nav-label">Name tools</span></button>
               <ul class="nav-dropdown-menu" id="menu-tools">
                 <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
                 <li><a href="../random-name-picker.html">Random name picker</a></li>
@@ -578,7 +578,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Robot Name Generator","slug":"robot-name-generator","filters":{"format":{"label":"Name format","options":["any","designation","acronym","nickname","android"],"optionLabels":{"any":"Any (a mix)","designation":"Designation (XR-42)","acronym":"Acronym name (NOVA)","nickname":"Model and nickname","android":"Android with a human name"}}},"recipe":"switch","on":"format","cases":{"designation":{"recipe":"template","template":["[letters]-[numbers]","[letters]-[numbers]-[letters]"]},"acronym":{"recipe":"pick","from":"acronyms"},"nickname":{"recipe":"template","template":"[labels] [letters]-[numbers] “[human]”"},"android":{"recipe":"template","template":["[human]","[human]-[numbers]"]},"any":{"recipe":"template","template":["[letters]-[numbers]","[acronyms]","[labels] [letters]-[numbers] “[human]”","[human]"]}},"data":{"labels":["Unit","Model","Series","Mark","Type","Version","Build","Edition","Pattern","Revision","Prototype","Batch"],"letters":["XR","RX","KR","VX","ZT","DX","QB","LT","JX","PK","SR","NV","AX","BT","CX","GR","HX","OR","AR","BX","CR","DV","EX","FT","GX","HK","IX","KV","MX","NR","PX","RT","SX","TX","VR","WX","ZR","YX"],"numbers":["7","9","12","21","42","88","101","300","404","512","616","800","909","1000","2048","3000","5","13","77","99","3","11","16","24","32","47","64","128","256","360","451","640","720","999","1024","4096","6","18","55","250"],"acronyms":["ALICE","ORBIT","ECHO","NOVA","ATLAS","SPARK","MILO","PIXEL","VECTOR","HELIX","BOLT","CASPER","IRIS","JUNO","LUMEN","KAI","SOL","TESS","ARC","BYTE","ROVER","GADGET","TINKER","CHIRP","DOT","NIMBUS","SOCKET","ZIGGY","BLIP","COG","DYNAMO","PEBBLE","AXIOM","BEACON","CIRCUIT","DELTA","EMBER","FLUX","GLINT","HALO","INDEX","JOULE","KESTREL","LOGIC","MOTH","NODE","OPTIC","PROBE","QUARK","RELAY","SIGNAL","TANGO","UNITY","VOLT","WIDGET","ZENO"],"human":["Adam","Theo","Felix","Iris","Silas","Clara","Oren","Mira","Leo","Lyra","Jonah","Elsie","Ezra","Nora","Calvin","Sadie","Otto","June","Wren","Hugo","Alma","Rufus","Cleo","Basil","Ida","Jasper","Agnes","Bernard","Cyril","Dora","Edgar","Florence","Gus","Hazel","Ivor","Joan","Kit","Lena","Mabel","Ned","Olive","Percy","Rosa","Stanley","Tilly","Vera"]}}</script>
     <script src="../lib/recipe-engine.js?v=d1b89e2e"></script>
-    <script src="../lib/page.js?v=d5144bf2"></script>
+    <script src="../lib/page.js?v=952af489"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

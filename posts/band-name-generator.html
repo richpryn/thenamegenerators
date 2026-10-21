@@ -299,7 +299,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=0185f0c3">
+    <link rel="stylesheet" href="../styles/site.css?v=261e9e48">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -326,7 +326,7 @@
         <nav class="site-nav" aria-label="Main">
           <ul class="nav-links" id="nav-links">
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy">Fantasy</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy"><span class="nav-label">Fantasy</span></button>
               <ul class="nav-dropdown-menu" id="menu-fantasy">
                 <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
                 <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
@@ -341,7 +341,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games">Games &amp; TV</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games"><span class="nav-label">Games &amp; TV</span></button>
               <ul class="nav-dropdown-menu" id="menu-games">
                 <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
                 <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
@@ -356,7 +356,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music">Music &amp; online</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music"><span class="nav-label">Music &amp; online</span></button>
               <ul class="nav-dropdown-menu" id="menu-music">
                 <li><a href="../posts/band-name-generator.html">Band names</a></li>
                 <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
@@ -370,7 +370,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business">Business</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business"><span class="nav-label">Business</span></button>
               <ul class="nav-dropdown-menu" id="menu-business">
                 <li><a href="../posts/business-name-generator.html">Business names</a></li>
                 <li><a href="../posts/company-name-generator.html">Company names</a></li>
@@ -381,7 +381,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools">Name tools</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools"><span class="nav-label">Name tools</span></button>
               <ul class="nav-dropdown-menu" id="menu-tools">
                 <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
                 <li><a href="../random-name-picker.html">Random name picker</a></li>
@@ -593,7 +593,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Band Name Generator","slug":"band-name-generator","filters":{"genre":{"label":"Genre","options":["any","rock","metal","punk","indie","folk","electronic"],"optionLabels":{"any":"Any genre","rock":"Rock","metal":"Metal","punk":"Punk","indie":"Indie","folk":"Folk","electronic":"Electronic"}}},"recipe":"switch","on":"genre","cases":{"rock":{"recipe":"template","template":["The [genres.rock.noun]","[genres.rock.adj] [genres.rock.noun]","The [genres.rock.adj] [genres.rock.noun]","[genres.rock.one]"]},"metal":{"recipe":"template","template":["The [genres.metal.noun]","[genres.metal.adj] [genres.metal.noun]","The [genres.metal.adj] [genres.metal.noun]","[genres.metal.one]"]},"punk":{"recipe":"template","template":["The [genres.punk.noun]","[genres.punk.adj] [genres.punk.noun]","The [genres.punk.adj] [genres.punk.noun]","[genres.punk.one]"]},"indie":{"recipe":"template","template":["The [genres.indie.noun]","[genres.indie.adj] [genres.indie.noun]","The [genres.indie.adj] [genres.indie.noun]","[genres.indie.one]"]},"folk":{"recipe":"template","template":["The [genres.folk.noun]","[genres.folk.adj] [genres.folk.noun]","The [genres.folk.adj] [genres.folk.noun]","[genres.folk.one]"]},"electronic":{"recipe":"template","template":["The [genres.electronic.noun]","[genres.electronic.adj] [genres.electronic.noun]","The [genres.electronic.adj] [genres.electronic.noun]","[genres.electronic.one]"]},"any":{"recipe":"template","template":["The [genres.rock.noun]","[genres.rock.adj] [genres.rock.noun]","The [genres.rock.adj] [genres.rock.noun]","[genres.rock.one]","The [genres.metal.noun]","[genres.metal.adj] [genres.metal.noun]","The [genres.metal.adj] [genres.metal.noun]","[genres.metal.one]","The [genres.punk.noun]","[genres.punk.adj] [genres.punk.noun]","The [genres.punk.adj] [genres.punk.noun]","[genres.punk.one]","The [genres.indie.noun]","[genres.indie.adj] [genres.indie.noun]","The [genres.indie.adj] [genres.indie.noun]","[genres.indie.one]","The [genres.folk.noun]","[genres.folk.adj] [genres.folk.noun]","The [genres.folk.adj] [genres.folk.noun]","[genres.folk.one]","The [genres.electronic.noun]","[genres.electronic.adj] [genres.electronic.noun]","The [genres.electronic.adj] [genres.electronic.noun]","[genres.electronic.one]"]}},"data":{"genres":{"rock":{"adj":["Loud","Electric","Broken","Wild","Burning","Rolling","Midnight","Rusty","Velvet","Crooked","Neon","Restless","Howling","Lucky","Golden","Faded","Silver","Reckless"],"noun":["Engines","Hearts","Wolves","Rebels","Saints","Riders","Kings","Sparks","Machines","Thieves","Highways","Ghosts","Bullets","Lions","Strangers","Dogs","Diamonds","Radios"],"one":["Overdrive","Voltage","Wreckage","Amplifier","Thunderbird","Firecracker","Jukebox","Roadhouse","Riot","Highwire"]},"metal":{"adj":["Iron","Black","Frozen","Burning","Dead","Grim","Infernal","Shattered","Eternal","Savage","Crimson","Cursed","Hollow","Dread","Molten","Ancient","Ashen","Feral"],"noun":["Throne","Serpent","Tomb","Gallows","Crown","Abyss","Storm","Altar","Wolf","Pyre","Legion","Oath","Blade","Requiem","Inferno","Maw","Sepulchre","Colossus"],"one":["Morgrave","Ashbringer","Ironvein","Grimfrost","Deathmarch","Hellforge","Bloodmoon","Nightfall","Stormcrow","Bonefire"]},"punk":{"adj":["Angry","Cheap","Rotten","Useless","Bored","Broke","Dirty","Sick","Busted","Nasty","Sore","Petty","Plastic","Toxic","Rude","Spiteful","Drunk","Stupid"],"noun":["Rats","Kids","Teeth","Riots","Dropouts","Lungs","Losers","Wasters","Bricks","Fists","Mutants","Pigeons","Spitters","Vandals","Strays","Leeches","Pests","Weirdos"],"one":["Nosebleed","Hangover","Detention","Shrapnel","Graffiti","Bin Fire","Dole Queue","Static","Fallout","Headache"]},"indie":{"adj":["Paper","Quiet","Tiny","Sleepy","Strange","Gentle","Pale","Soft","Lonely","Borrowed","Polite","Sunday","Secret","Distant","Little","Second-Hand","Seaside","Foreign"],"noun":["Animals","Lanterns","Oceans","Postcards","Weekends","Cardigans","Satellites","Pianos","Fireflies","Bicycles","Lighthouses","Strangers","Daydreams","Photographs","Kites","Planets","Gardens","Envelopes"],"one":["Wallpaper","Tidal","Polaroid","Driftwood","Paperweight","Lullaby","Seafront","Tangerine","Atlas","Junebug"]},"folk":{"adj":["Old","Wandering","Willow","Hollow","Black","Barley","Crooked","Green","Wild","Salt","Ragged","Weary","Silver","Mossy","Winter","Hedgerow","Rambling","Lost"],"noun":["Fiddlers","Ploughmen","Ravens","Hollows","Shepherds","Pilgrims","Rivers","Mariners","Harvest","Ballads","Drovers","Moors","Weavers","Hares","Brambles","Lanterns","Tinkers","Wells"],"one":["Hearthsong","Wayfarer","Driftwood","Kestrel","Fernhill","Ashgrove","Thornbury","Rosehip","Saltmarsh","Starling"]},"electronic":{"adj":["Digital","Liquid","Neon","Hyper","Analog","Crystal","Solar","Static","Infinite","Chrome","Ultra","Midnight","Synthetic","Electric","Lunar","Velvet","Glass","Quantum"],"noun":["Signals","Pulse","Circuits","Waves","Echoes","Machines","Lasers","Satellites","Grid","Prism","Vectors","Frequencies","Systems","Horizons","Particles","Modules","Codes","Lights"],"one":["Nightdrive","Hologram","Datastream","Lumen","Wavelength","Afterglow","Polygon","Arcade","Modular","Sequencer"]}}}}</script>
     <script src="../lib/recipe-engine.js?v=d1b89e2e"></script>
-    <script src="../lib/page.js?v=d5144bf2"></script>
+    <script src="../lib/page.js?v=952af489"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

@@ -299,7 +299,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=0185f0c3">
+    <link rel="stylesheet" href="../styles/site.css?v=261e9e48">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -338,7 +338,7 @@
         <nav class="site-nav" aria-label="Main">
           <ul class="nav-links" id="nav-links">
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy">Fantasy</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy"><span class="nav-label">Fantasy</span></button>
               <ul class="nav-dropdown-menu" id="menu-fantasy">
                 <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
                 <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
@@ -353,7 +353,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games">Games &amp; TV</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games"><span class="nav-label">Games &amp; TV</span></button>
               <ul class="nav-dropdown-menu" id="menu-games">
                 <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
                 <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
@@ -368,7 +368,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music">Music &amp; online</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music"><span class="nav-label">Music &amp; online</span></button>
               <ul class="nav-dropdown-menu" id="menu-music">
                 <li><a href="../posts/band-name-generator.html">Band names</a></li>
                 <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
@@ -382,7 +382,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business">Business</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business"><span class="nav-label">Business</span></button>
               <ul class="nav-dropdown-menu" id="menu-business">
                 <li><a href="../posts/business-name-generator.html">Business names</a></li>
                 <li><a href="../posts/company-name-generator.html">Company names</a></li>
@@ -393,7 +393,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools">Name tools</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools"><span class="nav-label">Name tools</span></button>
               <ul class="nav-dropdown-menu" id="menu-tools">
                 <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
                 <li><a href="../random-name-picker.html">Random name picker</a></li>
@@ -625,7 +625,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Dunmer Name Generator","slug":"dunmer-name-generator","filters":{"gender":{"label":"Gender","options":["any","male","female"],"optionLabels":{"any":"Any"}},"format":{"label":"Name format","options":["full","house","first"],"optionLabels":{"full":"First and family name","house":"With a Great House","first":"First name only"}}},"recipe":"switch","on":"format","cases":{"full":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[first] [family]"}},"default":{"recipe":"template","template":"[first.{gender}] [family]"}},"house":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[first] [family] of [houses]"}},"default":{"recipe":"template","template":"[first.{gender}] [family] of [houses]"}},"first":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"pick","from":"first"}},"default":{"recipe":"pick","from":"first.{gender}"}}},"data":{"first":{"male":["Aldyn","Brelvys","Dalvyn","Dreyvas","Enar","Faldrys","Garyn","Ilvyn","Llaren","Merys","Nalvos","Orvas","Raleth","Sevyn","Tarvyn","Ulyn","Vaval","Athyn","Bolvyn","Dravyn","Felas","Gildan","Mavus","Nevos","Relyn","Sarvas","Telvyn","Uvren","Varyn","Fethis","Adril","Balyn","Davas","Edril","Folvys","Galos","Hlavyn","Indalen","Llevas","Morvyn","Neldyn","Othrys","Revyn","Savos","Tedril","Vadas","Arvyn","Dolvas"],"female":["Adrisa","Bralyna","Delvera","Elmyra","Fenara","Galsa","Ildrisa","Llavisa","Melvasa","Narysa","Ondrasa","Ravyna","Sereni","Talvesa","Ulvara","Vedyna","Aleri","Drelasa","Faryna","Ilvasa","Malsi","Nelyna","Rolasa","Savyna","Tirasa","Varsa","Dralsi","Edryna","Mevasa","Saldrisa","Alvesa","Brelyna","Dalami","Elvasa","Fevyna","Gilvasa","Hlerasa","Indasa","Llerasa","Mivanu","Nilera","Orvasa","Rivyne","Selvura","Tedyna","Vilyne","Aranu","Dervasa"]},"family":["Andalen","Belvayn","Dalvilu","Dreloth","Ethrys","Faryon","Gilvoth","Hlervu","Ilnith","Llendu","Marvani","Nerano","Omalen","Raloth","Salvani","Telvuron","Uvalen","Vandril","Aryon","Berano","Drevayn","Fendyn","Indaren","Llether","Mavrin","Orethi","Ravel","Thalas","Varvur","Arvel","Darys","Hlarvys","Menith","Sethri","Velas","Romori","Drothan"],"houses":["House Hlaalu","House Redoran","House Telvanni","House Indoril","House Dres"]}}</script>
     <script src="../lib/recipe-engine.js?v=d1b89e2e"></script>
-    <script src="../lib/page.js?v=d5144bf2"></script>
+    <script src="../lib/page.js?v=952af489"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

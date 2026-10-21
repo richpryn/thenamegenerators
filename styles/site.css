@@ -98,6 +98,10 @@ main{display:block;min-width:0}
 .nav-links a:hover{text-decoration:underline}
 .nav-dropdown-toggle::after{content:"";width:12px;height:8px;margin-left:var(--s2);background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 10'><path d='M1.5 2 C4 4.5 6 7 7 8.5 C8.5 6 10.5 3.5 12.5 1.5' fill='none' stroke='%231e1c18' stroke-width='2' stroke-linecap='round'/></svg>") no-repeat center/contain;transition:transform .15s}
 .nav-dropdown.active .nav-dropdown-toggle::after{transform:rotate(180deg)}
+.nav-dropdown-toggle::after{width:9px;height:6px;opacity:.55}
+.nav-label{position:relative}
+.nav-dropdown.current .nav-label::before,.nav-dropdown.active .nav-label::before{content:"";position:absolute;left:0;right:0;bottom:-6px;height:6px;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 10' preserveAspectRatio='none'><path d='M2 6 C50 3 120 8 198 4' fill='none' stroke='%231e1c18' stroke-width='3' stroke-linecap='round'/></svg>") no-repeat center/100% 100%}
+.nav-dropdown-menu a[aria-current="page"]{font-weight:700;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
 .nav-dropdown-menu{list-style:none;margin:0 0 var(--s2);padding:0 0 0 var(--s4);display:none}
 .nav-dropdown.active .nav-dropdown-menu{display:block}
 .nav-dropdown-menu a{font:500 16px var(--body);min-height:44px}

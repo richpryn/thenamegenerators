@@ -190,7 +190,7 @@ function siteHeader(prefix) {
   const home = prefix === '/' ? '/' : `${prefix}index.html`;
   const link = ([href, text]) => `<a href="${prefix}${href}">${escapeHtml(text)}</a>`;
   const groups = MENU.map(group => `<li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="${group.id}">${escapeHtml(group.label)}</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="${group.id}"><span class="nav-label">${escapeHtml(group.label)}</span></button>
               <ul class="nav-dropdown-menu" id="${group.id}">
                 ${group.links.map(l => `<li>${link(l)}</li>`).join('\n                ')}
                 <li class="nav-more">More: ${group.more.map(link).join(' · ')}</li>

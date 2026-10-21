@@ -299,7 +299,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=0185f0c3">
+    <link rel="stylesheet" href="../styles/site.css?v=261e9e48">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -349,7 +349,7 @@
         <nav class="site-nav" aria-label="Main">
           <ul class="nav-links" id="nav-links">
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy">Fantasy</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy"><span class="nav-label">Fantasy</span></button>
               <ul class="nav-dropdown-menu" id="menu-fantasy">
                 <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
                 <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
@@ -364,7 +364,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games">Games &amp; TV</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games"><span class="nav-label">Games &amp; TV</span></button>
               <ul class="nav-dropdown-menu" id="menu-games">
                 <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
                 <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
@@ -379,7 +379,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music">Music &amp; online</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music"><span class="nav-label">Music &amp; online</span></button>
               <ul class="nav-dropdown-menu" id="menu-music">
                 <li><a href="../posts/band-name-generator.html">Band names</a></li>
                 <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
@@ -393,7 +393,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business">Business</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business"><span class="nav-label">Business</span></button>
               <ul class="nav-dropdown-menu" id="menu-business">
                 <li><a href="../posts/business-name-generator.html">Business names</a></li>
                 <li><a href="../posts/company-name-generator.html">Company names</a></li>
@@ -404,7 +404,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools">Name tools</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools"><span class="nav-label">Name tools</span></button>
               <ul class="nav-dropdown-menu" id="menu-tools">
                 <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
                 <li><a href="../random-name-picker.html">Random name picker</a></li>
@@ -659,7 +659,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Paladin Name Generator","slug":"paladin-name-generator","filters":{"gender":{"label":"Gender","options":["any","male","female"],"optionLabels":{"any":"Any"}},"oath":{"label":"Oath","options":["any","devotion","ancients","vengeance","glory","redemption","watchers","conquest","oathbreaker"],"optionLabels":{"any":"Any oath","devotion":"Oath of Devotion","ancients":"Oath of the Ancients","vengeance":"Oath of Vengeance","glory":"Oath of Glory","redemption":"Oath of Redemption","watchers":"Oath of the Watchers","conquest":"Oath of Conquest","oathbreaker":"Oathbreaker"}}},"recipe":"switch","on":"oath","cases":{"any":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[given] [epithets]"}},"default":{"recipe":"template","template":"[given.{gender}] [epithets]"}}},"default":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[given] [epithets.{oath}]"}},"default":{"recipe":"template","template":"[given.{gender}] [epithets.{oath}]"}},"data":{"given":{"male":["Aldous","Ambrose","Anselm","Benedict","Cedric","Clement","Corwin","Darian","Edmund","Elias","Gabriel","Gareth","Gideon","Hadrian","Ignatius","Joachim","Lucan","Lucius","Marcus","Mathias","Octavian","Orrin","Percival","Quintus","Raphael","Roderic","Seraphin","Tobias","Valerian","Uriel","Alaric","Constantine","Evander","Florian","Leander","Silvan","Thaddeus","Aurelian"],"female":["Adelaide","Aurelia","Beatrix","Celestine","Clara","Constance","Elspeth","Evangeline","Felicity","Gwendolyn","Honora","Imogen","Isolde","Johanna","Leonora","Lucia","Marguerite","Mercy","Odette","Ophelia","Perpetua","Rosalind","Seraphine","Solenne","Theodora","Valeria","Verity","Vivienne","Winifred","Aveline","Bryony","Elowen","Galiena","Honoria","Liora","Marisol","Phillipa","Rowena","Sabine"]},"epithets":{"devotion":["the Pure","the Faithful","the Merciful","Dawnbringer","the Shining","Lightbearer","the Just","the Gentle","Truthsworn","the Honest","Heartward","the Steadfast"],"ancients":["of the Green","Oakheart","the Evergreen","Springwarden","Lightkeeper","the Joyful","Thornshield","Leafsworn","the Bright","Wildwarden","the Undimmed","Hopebringer"],"vengeance":["the Relentless","the Avenger","Grimblade","Oathfire","the Unforgiving","Doomseeker","the Hunter","Wrathsworn","the Tyrant-Slayer","the Reckoning","Ashenblade","the Pitiless"],"glory":["the Glorious","Gloryhand","the Champion","Victorsworn","the Radiant","the Peerless","Laurelcrown","the Triumphant","the Golden","the Unbeaten","Heroheart","the Magnificent"],"redemption":["the Peacemaker","the Kind","Mercyhand","the Forgiving","Second-Chance","the Patient","Mendheart","the Penitent","the Quiet Hand","Gentleblade","the Reconciler","the Hopeful"],"watchers":["the Vigilant","the Gatewarden","the Sentinel","Starwatch","the Ever-Watchful","Wardkeeper","the Sleepless","Dawneye","Veilguard","the Watchful","Gatekeeper","the Unblinking"],"conquest":["the Conqueror","Ironfist","the Dread","Tyrantsbane","the Iron Will","Crownbreaker","the Unyielding","Dominion","the Fearsome","Warbringer","the Iron","the Overlord"],"oathbreaker":["the Fallen","the Forsworn","Oathbreaker","the Betrayer","Blackheart","the Damned","Ashensworn","the Hollow","the Faithless","the Lost","the Dread Knight","the Abandoned"]}}}</script>
     <script src="../lib/recipe-engine.js?v=d1b89e2e"></script>
-    <script src="../lib/page.js?v=d5144bf2"></script>
+    <script src="../lib/page.js?v=952af489"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

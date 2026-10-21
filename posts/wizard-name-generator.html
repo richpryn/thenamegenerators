@@ -307,7 +307,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=0185f0c3">
+    <link rel="stylesheet" href="../styles/site.css?v=261e9e48">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -354,7 +354,7 @@
         <nav class="site-nav" aria-label="Main">
           <ul class="nav-links" id="nav-links">
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy">Fantasy</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy"><span class="nav-label">Fantasy</span></button>
               <ul class="nav-dropdown-menu" id="menu-fantasy">
                 <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
                 <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
@@ -369,7 +369,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games">Games &amp; TV</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games"><span class="nav-label">Games &amp; TV</span></button>
               <ul class="nav-dropdown-menu" id="menu-games">
                 <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
                 <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
@@ -384,7 +384,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music">Music &amp; online</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music"><span class="nav-label">Music &amp; online</span></button>
               <ul class="nav-dropdown-menu" id="menu-music">
                 <li><a href="../posts/band-name-generator.html">Band names</a></li>
                 <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
@@ -398,7 +398,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business">Business</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business"><span class="nav-label">Business</span></button>
               <ul class="nav-dropdown-menu" id="menu-business">
                 <li><a href="../posts/business-name-generator.html">Business names</a></li>
                 <li><a href="../posts/company-name-generator.html">Company names</a></li>
@@ -409,7 +409,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools">Name tools</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools"><span class="nav-label">Name tools</span></button>
               <ul class="nav-dropdown-menu" id="menu-tools">
                 <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
                 <li><a href="../random-name-picker.html">Random name picker</a></li>
@@ -681,7 +681,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Wizard Name Generator","slug":"wizard-name-generator","filters":{"gender":{"label":"Gender","options":["any","male","female"],"optionLabels":{"any":"Any","male":"Male","female":"Female"}},"format":{"label":"Name Format","options":["epithet","place","full","title"],"optionLabels":{"epithet":"Name and epithet (Aldous the Grey)","place":"Name of a place (Hester of Greymere)","full":"First name and surname (Erasmus Quillfeather)","title":"With a title (Archmage Ottilie)"}},"school":{"label":"School of Magic","options":["any","abjuration","conjuration","divination","enchantment","evocation","illusion","necromancy","transmutation"],"optionLabels":{"any":"Any","abjuration":"Abjuration (protection)","conjuration":"Conjuration (summoning)","divination":"Divination (foresight)","enchantment":"Enchantment (charm)","evocation":"Evocation (fire and force)","illusion":"Illusion","necromancy":"Necromancy","transmutation":"Transmutation (change)"}}},"recipe":"switch","on":"format","cases":{"epithet":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[first] the [epithets.{school}]"}},"default":{"recipe":"template","template":"[first.{gender}] the [epithets.{school}]"}},"place":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[first] of [places]"}},"default":{"recipe":"template","template":"[first.{gender}] of [places]"}},"full":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[first] [surnames]"}},"default":{"recipe":"template","template":"[first.{gender}] [surnames]"}},"title":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[titles] [first]","[titles] [first] of [places]"]}},"default":{"recipe":"template","template":["[titles] [first.{gender}]","[titles] [first.{gender}] of [places]"]}}},"data":{"first":{"male":["Aldous","Ambrose","Anselm","Bartholomew","Benedict","Caspian","Cornelius","Cyprian","Elias","Erasmus","Evander","Felix","Gideon","Hadrian","Horatio","Ignatius","Isidore","Jasper","Leander","Lucan","Lucius","Magnus","Marius","Melchior","Mordecai","Octavian","Orrin","Osric","Peregrine","Phineas","Quentin","Ralston","Rufus","Silas","Sylvester","Tobias","Thaddeus","Ulric","Valerian","Wendell","Wystan","Zebedee","Alaric","Barnaby","Cuthbert","Edmund","Fenwick","Gervase","Hugo","Lysander","Mervyn","Oswin","Piers","Roderick","Sebastian","Tiberius","Urien","Wilfred","Ezra","Fabian"],"female":["Agatha","Agnes","Althea","Beatrix","Cassia","Celandine","Cordelia","Drusilla","Eudora","Euphemia","Florentine","Galatea","Hester","Honoria","Imogen","Isadora","Juniper","Leocadia","Lucinda","Mabyn","Matilda","Melisande","Minerva","Morwenna","Nerissa","Octavia","Ottilie","Perpetua","Philippa","Prudence","Rosalind","Seraphina","Sibyl","Temperance","Theodora","Ursula","Verity","Viola","Wilhelmina","Winifred","Ysolde","Zenobia","Aurelia","Clemency","Delphine","Ermengarde","Gwendolen","Hildegard","Isolde","Lavinia","Maud","Odile","Petronella","Rowan","Tamsin","Ulla","Vesper","Wynne","Constance","Ianthe"]},"surnames":["Blackthorne","Quillfeather","Greymantle","Ashgrove","Starling","Thistlewood","Fairweather","Underhill","Penhallow","Mortlake","Vellacott","Wyndham","Holloway","Merriweather","Crowe","Lanthorn","Stormcrow","Inkwell","Greenhalgh","Cresswell","Harrowgate","Moonfield","Ravensworth","Thornbury","Whitlock","Brightwater","Candlewick","Duskwood","Elderberry","Foxglove","Hawksmoor","Larkspur","Nightingale","Oakhollow","Pennywort","Rookwood","Silverbirch","Stonecrop","Wexford","Yarrow"],"places":["the Ninth Tower","Greymere","the Hollow Hills","Thornwick","the Western Isles","Saltmarsh","the High Library","the Drowned Abbey","Ravenscar","the Moonlit Vale","the Iron Coast","Stonecross","the Black Fen","the Sunken City","the Last Lighthouse","Elderwood","the Glass Spire","Ashenford","the Northern Wastes","Brackenmoor","the Crooked Tower","Owlcombe","the Seventh Circle","Hazelmere","the Burning Isles","the Star Observatory","Willowford","the Copper Hills","the Mist Gate","the Silver Library","Fogmoor","the Lantern Isles"],"titles":["Archmage","Magister","Loremaster","Wardkeeper","High Wizard","Arch-Diviner","Keeper","Grand Magus","Court Wizard","Master Alchemist","High Enchanter","Archivist","Spellwright","Battlemage","Hedge Wizard","Royal Astrologer","Elder","Dean"],"epithets":{"abjuration":["Warded","Unbroken","Steadfast","Watchful","Silver","Shield-Bearer","Patient","Unyielding","Wall-Builder","Gatekeeper","Ward-Weaver","Unscathed","Protector","Safe-Keeper","Iron-Willed","Sealer of Doors","Unmoved","Guardian","Circle-Drawer","Spell-Breaker"],"conjuration":["Summoner","Far-Reaching","Gatekeeper","Many-Handed","Caller","Door-Maker","Beast-Speaker","Binder","Portal-Wright","Fog-Caller","Bringer","Rope-Maker","Hound-Caller","Star-Puller","Wall-Raiser","Familiar-Friend","Elsewhere-Walker","Rift-Opener","Feast-Maker","Storm-Summoner"],"divination":["Far-Seeing","Star-Wise","Grey-Eyed","Foretold","Seer","Blind","Dreamer","Watcher of Omens","Mirror-Gazer","Card-Reader","Bone-Caster","All-Knowing","Sleepless","Cloud-Reader","Truth-Teller","Tea-Leaf Reader","Owl-Eyed","Long-Sighted","Riddle-Speaker","Fate-Weaver"],"enchantment":["Silver-Tongued","Beguiling","Smiling","Velvet-Voiced","Persuasive","Charming","Heart-Taker","Gentle","Honey-Voiced","Whisperer","Dream-Spinner","Bewitching","Sweet-Talker","Mind-Bender","Kind-Eyed","Lulling","Mesmerist","Song-Weaver","Courtly","Captivating"],"evocation":["Red","Thunderous","Flame-Bearer","Storm-Handed","Bright","Fiery","Lightning-Touched","Loud","Fireball","Scorched","Blazing","Thunder-Voiced","Frost-Handed","Explosive","Burning","Spark-Fingered","Sun-Caller","Crackling","Firebrand","Hurler of Stars"],"illusion":["Unseen","Many-Faced","Masked","Glimmering","Mirror-Eyed","Two-Faced","Shadow-Cloaked","Deceiver","Phantasmal","Trickster","Smoke-and-Mirrors","Dream-Painter","Vanishing","Hall-of-Mirrors","Mist-Maker","Shifting","Pretender","Seeming","Painter of Lies","Fog-Wrapped"],"necromancy":["Pale","Grave-Born","Bone-Wise","Black","Hollow","Deathless","Ashen","Gravewalker","Corpse-Caller","Ghost-Friend","Wight-Lord","Skull-Keeper","Crypt-Dweller","Soul-Binder","Dust-Speaker","Tomb-Warden","Last-Breath","Cold-Handed","Raven-Haunted","Undying"],"transmutation":["Gilded","Ever-Changing","Quicksilver","Golden-Handed","Shape-Shifter","Alchemist","Stone-Turner","Transformer","Lead-to-Gold","Toad-Maker","Shifting-Skin","Iron-Bender","Glass-Blower","Leaf-Turner","Crystal-Maker","Moulder","Wolf-Shaped","Feather-Changer","Rust-Remover","Flesh-Shaper"],"any":["Grey","White","Brown","Blue","Wise","Old","Wanderer","Learned","Elder","Mad","Wandering","Unready","Green","Black","Red","Silver","Patient","Forgetful","Bearded","Bookish","Absent-Minded","Restless","Tall","Crooked","Kindly","Cantankerous","Ancient","Young","Hermit","Unpredictable"]}}}</script>
     <script src="../lib/recipe-engine.js?v=d1b89e2e"></script>
-    <script src="../lib/page.js?v=d5144bf2"></script>
+    <script src="../lib/page.js?v=952af489"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

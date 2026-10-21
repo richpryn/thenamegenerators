@@ -299,7 +299,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=0185f0c3">
+    <link rel="stylesheet" href="../styles/site.css?v=261e9e48">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -338,7 +338,7 @@
         <nav class="site-nav" aria-label="Main">
           <ul class="nav-links" id="nav-links">
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy">Fantasy</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy"><span class="nav-label">Fantasy</span></button>
               <ul class="nav-dropdown-menu" id="menu-fantasy">
                 <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
                 <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
@@ -353,7 +353,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games">Games &amp; TV</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games"><span class="nav-label">Games &amp; TV</span></button>
               <ul class="nav-dropdown-menu" id="menu-games">
                 <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
                 <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
@@ -368,7 +368,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music">Music &amp; online</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music"><span class="nav-label">Music &amp; online</span></button>
               <ul class="nav-dropdown-menu" id="menu-music">
                 <li><a href="../posts/band-name-generator.html">Band names</a></li>
                 <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
@@ -382,7 +382,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business">Business</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business"><span class="nav-label">Business</span></button>
               <ul class="nav-dropdown-menu" id="menu-business">
                 <li><a href="../posts/business-name-generator.html">Business names</a></li>
                 <li><a href="../posts/company-name-generator.html">Company names</a></li>
@@ -393,7 +393,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools">Name tools</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools"><span class="nav-label">Name tools</span></button>
               <ul class="nav-dropdown-menu" id="menu-tools">
                 <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
                 <li><a href="../random-name-picker.html">Random name picker</a></li>
@@ -624,7 +624,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Nord Name Generator","slug":"nord-name-generator","filters":{"gender":{"label":"Gender","options":["any","male","female"],"optionLabels":{"any":"Any"}},"format":{"label":"Name format","options":["family","epithet","first"],"optionLabels":{"family":"With a family name (Gunnar Frost-Helm)","epithet":"With an epithet (Gunnar the Bold)","first":"First name only"}}},"recipe":"switch","on":"format","cases":{"family":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[first] [famA]-[famB]"}},"default":{"recipe":"template","template":"[first.{gender}] [famA]-[famB]"}},"epithet":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[first] [epithets]"}},"default":{"recipe":"template","template":"[first.{gender}] [epithets]"}},"first":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"pick","from":"first"}},"default":{"recipe":"pick","from":"first.{gender}"}}},"data":{"first":{"male":["Bjorn","Brandr","Dagur","Eirik","Fjolnir","Gunnar","Haldor","Ingvar","Jorund","Ketil","Leif","Magnar","Njal","Orm","Ragnar","Sigurd","Skuli","Steinar","Thorvald","Ulf","Asgeir","Bersi","Egil","Geir","Grim","Hakon","Hrolf","Kolbein","Odd","Runolf","Snorri","Sveinn","Thorgrim","Torstein","Vestar","Yngvar","Halvard","Erlend","Hallbjorn","Thrain","Vemund","Ivar","Arnolf","Dagfinn","Eyvind","Folkvar","Grimolf","Hallvard","Isleif","Jokul","Kolfinn","Lodin","Mundi","Odvar","Rolfgar","Thrand","Vali"],"female":["Astrid","Bergljot","Dagny","Eydis","Freydis","Gudrun","Hallgerd","Helga","Ingrid","Jorunn","Kara","Ragna","Sigrid","Solveig","Thora","Thordis","Unn","Vigdis","Yrsa","Asa","Bodil","Embla","Gunnhild","Hild","Ragnhild","Signy","Svanhild","Thurid","Alfhild","Brynja","Estrid","Gyda","Halla","Ingunn","Ljot","Ranveig","Saga","Tove","Groa","Asfrid","Dagrun","Fridgerd","Hrefna","Inga","Jofrid","Ketilrid","Liv","Oddny","Ragnfrid","Sigvor"]},"famA":["Stone","Frost","Iron","Snow","Storm","Black","Silver","Bear","Wolf","Ice","Oak","Ash","Hearth","Elk","Crow","Raven","Fire","Mead","Rock","Steel","Thunder","Cold","Grim","White","Red"],"famB":["Fist","Helm","Heart","Hammer","Hand","Brow","Axe","Beard","Bane","Horn","Hide","Tooth","Song","Wind","Fell","Gard","Shard","Spear","Eye","Skull","Shield","Born","Mane","Blood","Claw","Crest","Mead","Rune","Stride","Mantle","Field"],"epithets":["the Bold","the Strong","the Fair","the Unbroken","the Old","the Red","Ironhand","the Wanderer","the Quiet","Wolfsbane","the Tall","the Grim","Frostborn","the Loud","Ice-Veins","the Lucky","the Young","Bear-Slayer","the Unbowed","Storm-Caller","the Steadfast","the Hunter","Snow-Strider","the Patient","Wolf-Friend","the Generous","Stormcaller","the Cunning","Elkhunter","the Silent","the Brave","Mead-Maker","the Far-Walker"]}}</script>
     <script src="../lib/recipe-engine.js?v=d1b89e2e"></script>
-    <script src="../lib/page.js?v=d5144bf2"></script>
+    <script src="../lib/page.js?v=952af489"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

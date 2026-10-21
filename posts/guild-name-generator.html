@@ -299,7 +299,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=0185f0c3">
+    <link rel="stylesheet" href="../styles/site.css?v=261e9e48">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -326,7 +326,7 @@
         <nav class="site-nav" aria-label="Main">
           <ul class="nav-links" id="nav-links">
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy">Fantasy</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy"><span class="nav-label">Fantasy</span></button>
               <ul class="nav-dropdown-menu" id="menu-fantasy">
                 <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
                 <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
@@ -341,7 +341,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games">Games &amp; TV</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games"><span class="nav-label">Games &amp; TV</span></button>
               <ul class="nav-dropdown-menu" id="menu-games">
                 <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
                 <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
@@ -356,7 +356,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music">Music &amp; online</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music"><span class="nav-label">Music &amp; online</span></button>
               <ul class="nav-dropdown-menu" id="menu-music">
                 <li><a href="../posts/band-name-generator.html">Band names</a></li>
                 <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
@@ -370,7 +370,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business">Business</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business"><span class="nav-label">Business</span></button>
               <ul class="nav-dropdown-menu" id="menu-business">
                 <li><a href="../posts/business-name-generator.html">Business names</a></li>
                 <li><a href="../posts/company-name-generator.html">Company names</a></li>
@@ -381,7 +381,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools">Name tools</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools"><span class="nav-label">Name tools</span></button>
               <ul class="nav-dropdown-menu" id="menu-tools">
                 <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
                 <li><a href="../random-name-picker.html">Random name picker</a></li>
@@ -586,7 +586,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Guild Name Generator","slug":"guild-name-generator","filters":{"kind":{"label":"Kind of Guild","options":["any","adventurers","thieves","mages","merchants","crafters"],"optionLabels":{"any":"Any","adventurers":"Adventurers' company (the Gilded Lanterns)","thieves":"Thieves' guild (the Velvet Hand)","mages":"Mages (the Circle of the Silver Star)","merchants":"Merchants (the Saltroad Company)","crafters":"Craft guild (the Worshipful Company of Clockmakers)"}}},"recipe":"switch","on":"kind","cases":{"any":{"recipe":"template","template":["The [adv.adj] [adv.noun]","[adv.place] Company","The Company of the [adv.adj] [adv.noun_s]","The [thf.adj] [thf.noun]","Brotherhood of the [thf.thing]","The [thf.thing] Society","The [mag.group] of the [mag.adj] [mag.noun]","Order of the [mag.adj] [mag.noun]","The [mag.adj] [mag.group]","The [mer.place] Company","The [mer.adj] [mer.noun] Consortium","Fellowship of [mer.trade] Merchants","The Worshipful Company of [cra.trade]","Guild of [cra.trade]","The [cra.adj] [cra.tool] Guild"]},"adventurers":{"recipe":"template","template":["The [adv.adj] [adv.noun]","[adv.place] Company","The Company of the [adv.adj] [adv.noun_s]"]},"thieves":{"recipe":"template","template":["The [thf.adj] [thf.noun]","Brotherhood of the [thf.thing]","The [thf.thing] Society"]},"mages":{"recipe":"template","template":["The [mag.group] of the [mag.adj] [mag.noun]","Order of the [mag.adj] [mag.noun]","The [mag.adj] [mag.group]"]},"merchants":{"recipe":"template","template":["The [mer.place] Company","The [mer.adj] [mer.noun] Consortium","Fellowship of [mer.trade] Merchants"]},"crafters":{"recipe":"template","template":["The Worshipful Company of [cra.trade]","Guild of [cra.trade]","The [cra.adj] [cra.tool] Guild"]}},"data":{"adv":{"adj":["Gilded","Wandering","Last","Broken","Lucky","Brass","Lantern","Ninth","Rusted","Iron","Grey","Hungry","Crimson","Silver","Laughing","Bold","Dusty","Scarlet","Wild","Seventh","Copper","Lost","Merry","Weathered"],"noun":["Lanterns","Blades","Wolves","Crows","Shields","Boots","Sparrows","Compasses","Banners","Hounds","Spears","Ravens","Foxes","Daggers","Roads","Torches","Swords","Pilgrims","Stags","Arrows","Keys","Maps","Bells","Griffins"],"noun_s":["Lantern","Blade","Wolf","Crow","Shield","Compass","Banner","Hound","Road","Map","Spear","Torch","Arrow","Key","Bell","Griffin","Raven","Fox","Dagger","Stag"],"place":["Saltreach","Greymere","Ashford","Thornwick","Ravenscar","Duskwater","Highmoor","Coldharbour","Brackenmoor","Elderwood","Stonecross","Wyvernmouth","Oakshott","Marshgate","Kingsferry","Copperhill","Northwatch","Redbridge","Highfell","Saltmarsh"]},"thf":{"adj":["Velvet","Quiet","Midnight","Crooked","Silver","Silent","Grey","Open","Soft","Hidden","Black","Second","Empty","Gentle","Sly","Moonless","Smiling","Patient","Nimble","Shadow"],"noun":["Hand","Market","Key","Cloak","Coin","Glove","Door","Whisper","Lantern","Ledger","Purse","Shadow","Step","Pocket","Fingers","Mask","Latch","Rook","Magpie","Feather"],"thing":["Locked Door","Empty Purse","Open Window","Second Key","Moonless Night","Turned Coin","Missing Ring","Soft Step","Silent Bell","Loose Floorboard","Borrowed Crown","Unlatched Gate","Sleeping Guard","Lost Ledger","Velvet Glove","Black Candle","Hidden Pocket","Crooked Smile"]},"mag":{"group":["Circle","Conclave","Society","Collegium","Lodge","Council","Academy","Fellowship","Order","Assembly","Brotherhood","Sisterhood","College","Synod","Cabal","Covenant"],"adj":["Silver","Seventh","Hidden","Burning","Silent","Ninefold","Azure","Waking","Hollow","Last","Starlit","Crimson","Golden","Veiled","Eternal","Ivory","Black","Twilight","Wandering","Thirteenth"],"noun":["Star","Seal","Flame","Tower","Eye","Moon","Key","Page","Gate","Candle","Rose","Serpent","Mirror","Sigil","Quill","Crown","Spiral","Lantern","Hand","Book"]},"mer":{"place":["Saltroad","Eastwind","Silkwater","Goldmere","Spicegate","Northsea","Amberline","Copperbridge","Westmarch","Pearlbay","Ivoryport","Sunreach","Grainford","Teaharbour","Wineshire","Furrow Coast","Coppermouth","Silverstrand","Wool Road","Southwind"],"adj":["Golden","Honest","Silver","Royal","Brass","Northern","Free","Seven","Eastern","Western","Grand","Loyal","Copper","Crimson","United","Sovereign","Fair","Steady","Ancient","Merchant"],"noun":["Scales","Ledger","Anchor","Coin","Caravan","Lantern","Seal","Key","Sail","Compass","Barrel","Bridge","Crown","Wheel","Ship","Purse","Measure","Balance","Chest","Star"],"trade":["Spice","Silk","Salt","Wine","Wool","Amber","Ivory","Timber","Tea","Fur","Grain","Pepper","Saffron","Dye","Pearl","Copper","Tin","Linen","Leather","Glass"]},"cra":{"trade":["Glassblowers","Clockmakers","Bladesmiths","Bookbinders","Candlemakers","Cartographers","Masons","Weavers","Potters","Alchemists","Lampwrights","Bowyers","Fletchers","Coopers","Goldsmiths","Tanners","Dyers","Chandlers","Wheelwrights","Saddlers","Glovers","Locksmiths","Shipwrights","Brewers","Papermakers","Instrument Makers"],"adj":["Golden","Iron","Steady","Honest","Copper","Old","Patient","Bright","Careful","Brass","Silver","Sturdy","Clever","Ancient","Humble","Royal","Faithful","True","Diligent","Master"],"tool":["Anvil","Hammer","Needle","Chisel","Kiln","Loom","Lathe","Quill","Plane","Awl","Bellows","Compass","Mallet","Spindle","Shears","Tongs","Crucible","Square","Gauge","Bench"]}}}</script>
     <script src="../lib/recipe-engine.js?v=d1b89e2e"></script>
-    <script src="../lib/page.js?v=d5144bf2"></script>
+    <script src="../lib/page.js?v=952af489"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

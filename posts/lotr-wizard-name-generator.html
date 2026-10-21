@@ -299,7 +299,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=0185f0c3">
+    <link rel="stylesheet" href="../styles/site.css?v=261e9e48">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -339,7 +339,7 @@
         <nav class="site-nav" aria-label="Main">
           <ul class="nav-links" id="nav-links">
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy">Fantasy</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy"><span class="nav-label">Fantasy</span></button>
               <ul class="nav-dropdown-menu" id="menu-fantasy">
                 <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
                 <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
@@ -354,7 +354,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games">Games &amp; TV</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games"><span class="nav-label">Games &amp; TV</span></button>
               <ul class="nav-dropdown-menu" id="menu-games">
                 <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
                 <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
@@ -369,7 +369,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music">Music &amp; online</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music"><span class="nav-label">Music &amp; online</span></button>
               <ul class="nav-dropdown-menu" id="menu-music">
                 <li><a href="../posts/band-name-generator.html">Band names</a></li>
                 <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
@@ -383,7 +383,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business">Business</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business"><span class="nav-label">Business</span></button>
               <ul class="nav-dropdown-menu" id="menu-business">
                 <li><a href="../posts/business-name-generator.html">Business names</a></li>
                 <li><a href="../posts/company-name-generator.html">Company names</a></li>
@@ -394,7 +394,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools">Name tools</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools"><span class="nav-label">Name tools</span></button>
               <ul class="nav-dropdown-menu" id="menu-tools">
                 <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
                 <li><a href="../random-name-picker.html">Random name picker</a></li>
@@ -601,7 +601,7 @@
 
     <script type="application/json" id="generator-config">{"title":"LOTR Wizard Name Generator","slug":"lotr-wizard-name-generator","filters":{"format":{"label":"Name Format","options":["elvish","colour","deed"],"optionLabels":{"elvish":"Elvish name and meaning (Luinrandir, \"Blue Wanderer\")","colour":"Colour and Elvish name (the Blue, called Luinrandir by the Elves)","deed":"Colour and deed (the Green Wizard, Friend of the Ents)"}}},"recipe":"switch","on":"format","cases":{"elvish":{"recipe":"pick","from":"elvish"},"colour":{"recipe":"pick","from":"called"},"deed":{"recipe":"template","template":"The [titles] Wizard, [deeds]"}},"data":{"elvish":["Mithdir (\"Grey Man\")","Mithhîr (\"Grey Lord\")","Mithion (\"Grey Son\")","Mithben (\"Grey One\")","Glanrandir (\"White Wanderer\")","Glandir (\"White Man\")","Glanhîr (\"White Lord\")","Glanion (\"White Son\")","Glanben (\"White One\")","Baranrandir (\"Brown Wanderer\")","Barandir (\"Brown Man\")","Baranhîr (\"Brown Lord\")","Baranion (\"Brown Son\")","Baranben (\"Brown One\")","Luinrandir (\"Blue Wanderer\")","Luindir (\"Blue Man\")","Luinhîr (\"Blue Lord\")","Luinion (\"Blue Son\")","Luinben (\"Blue One\")","Calenrandir (\"Green Wanderer\")","Calendir (\"Green Man\")","Calenhîr (\"Green Lord\")","Calenion (\"Green Son\")","Calenben (\"Green One\")","Ruinrandir (\"Red Wanderer\")","Ruindir (\"Red Man\")","Ruinhîr (\"Red Lord\")","Ruinion (\"Red Son\")","Ruinben (\"Red One\")","Mornrandir (\"Black Wanderer\")","Morndir (\"Black Man\")","Mornhîr (\"Black Lord\")","Mornion (\"Black Son\")","Mornben (\"Black One\")","Celebrandir (\"Silver Wanderer\")","Celebdir (\"Silver Man\")","Celebhîr (\"Silver Lord\")","Celebion (\"Silver Son\")","Celebben (\"Silver One\")","Nimrandir (\"White Wanderer\")","Nimdir (\"White Man\")","Nimhîr (\"White Lord\")","Nimben (\"White One\")"],"called":["The Grey Wizard, called Mithdir (\"Grey Man\") by the Elves","The Grey Wizard, called Mithhîr (\"Grey Lord\") by the Elves","The Grey Wizard, called Mithion (\"Grey Son\") by the Elves","The Grey Wizard, called Mithben (\"Grey One\") by the Elves","The White Wizard, called Glanrandir (\"White Wanderer\") by the Elves","The White Wizard, called Glandir (\"White Man\") by the Elves","The White Wizard, called Glanhîr (\"White Lord\") by the Elves","The White Wizard, called Glanion (\"White Son\") by the Elves","The White Wizard, called Glanben (\"White One\") by the Elves","The Brown Wizard, called Baranrandir (\"Brown Wanderer\") by the Elves","The Brown Wizard, called Barandir (\"Brown Man\") by the Elves","The Brown Wizard, called Baranhîr (\"Brown Lord\") by the Elves","The Brown Wizard, called Baranion (\"Brown Son\") by the Elves","The Brown Wizard, called Baranben (\"Brown One\") by the Elves","The Blue Wizard, called Luinrandir (\"Blue Wanderer\") by the Elves","The Blue Wizard, called Luindir (\"Blue Man\") by the Elves","The Blue Wizard, called Luinhîr (\"Blue Lord\") by the Elves","The Blue Wizard, called Luinion (\"Blue Son\") by the Elves","The Blue Wizard, called Luinben (\"Blue One\") by the Elves","The Green Wizard, called Calenrandir (\"Green Wanderer\") by the Elves","The Green Wizard, called Calendir (\"Green Man\") by the Elves","The Green Wizard, called Calenhîr (\"Green Lord\") by the Elves","The Green Wizard, called Calenion (\"Green Son\") by the Elves","The Green Wizard, called Calenben (\"Green One\") by the Elves","The Red Wizard, called Ruinrandir (\"Red Wanderer\") by the Elves","The Red Wizard, called Ruindir (\"Red Man\") by the Elves","The Red Wizard, called Ruinhîr (\"Red Lord\") by the Elves","The Red Wizard, called Ruinion (\"Red Son\") by the Elves","The Red Wizard, called Ruinben (\"Red One\") by the Elves","The Black Wizard, called Mornrandir (\"Black Wanderer\") by the Elves","The Black Wizard, called Morndir (\"Black Man\") by the Elves","The Black Wizard, called Mornhîr (\"Black Lord\") by the Elves","The Black Wizard, called Mornion (\"Black Son\") by the Elves","The Black Wizard, called Mornben (\"Black One\") by the Elves","The Silver Wizard, called Celebrandir (\"Silver Wanderer\") by the Elves","The Silver Wizard, called Celebdir (\"Silver Man\") by the Elves","The Silver Wizard, called Celebhîr (\"Silver Lord\") by the Elves","The Silver Wizard, called Celebion (\"Silver Son\") by the Elves","The Silver Wizard, called Celebben (\"Silver One\") by the Elves","The White Wizard, called Nimrandir (\"White Wanderer\") by the Elves","The White Wizard, called Nimdir (\"White Man\") by the Elves","The White Wizard, called Nimhîr (\"White Lord\") by the Elves","The White Wizard, called Nimben (\"White One\") by the Elves"],"titles":["Grey","White","Brown","Blue","Green","Red","Black","Silver"],"deeds":["Friend of the Ents","Walker in the Wild","Keeper of the Old Lore","Counsellor of Kings","Watcher of the East","Guardian of the Fords","Tamer of Eagles","Wanderer of the South","Lamp in the Dark","Herald of the West","Speaker to Beasts","Warden of the Northern Marches","Friend of Hobbits","Keeper of the Old Fires","Reader of Old Scrolls","Bane of the Necromancer","Guide of the Lost","Rider of the White Horse","Shepherd of the Woods","Keeper of the Last Fire","Seeker of the Blue Wizards","Tender of the Seeds of Hope","Guest of the Golden Hall","Watcher at the Gates","Walker in Dreams","Friend of Dwarves","Mender of Old Wrongs","Keeper of the Long Road","Lighter of Beacons","Smoke-Ring Maker"]}}</script>
     <script src="../lib/recipe-engine.js?v=d1b89e2e"></script>
-    <script src="../lib/page.js?v=d5144bf2"></script>
+    <script src="../lib/page.js?v=952af489"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

@@ -307,7 +307,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=0185f0c3">
+    <link rel="stylesheet" href="../styles/site.css?v=261e9e48">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -331,7 +331,7 @@
         <nav class="site-nav" aria-label="Main">
           <ul class="nav-links" id="nav-links">
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy">Fantasy</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy"><span class="nav-label">Fantasy</span></button>
               <ul class="nav-dropdown-menu" id="menu-fantasy">
                 <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
                 <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
@@ -346,7 +346,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games">Games &amp; TV</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games"><span class="nav-label">Games &amp; TV</span></button>
               <ul class="nav-dropdown-menu" id="menu-games">
                 <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
                 <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
@@ -361,7 +361,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music">Music &amp; online</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music"><span class="nav-label">Music &amp; online</span></button>
               <ul class="nav-dropdown-menu" id="menu-music">
                 <li><a href="../posts/band-name-generator.html">Band names</a></li>
                 <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
@@ -375,7 +375,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business">Business</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business"><span class="nav-label">Business</span></button>
               <ul class="nav-dropdown-menu" id="menu-business">
                 <li><a href="../posts/business-name-generator.html">Business names</a></li>
                 <li><a href="../posts/company-name-generator.html">Company names</a></li>
@@ -386,7 +386,7 @@
               </ul>
             </li>
             <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools">Name tools</button>
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools"><span class="nav-label">Name tools</span></button>
               <ul class="nav-dropdown-menu" id="menu-tools">
                 <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
                 <li><a href="../random-name-picker.html">Random name picker</a></li>
@@ -603,7 +603,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Warhammer 40k Name Generator","slug":"warhammer-name-generator","filters":{"faction":{"label":"Faction","options":["ultramarines","wolves","angels","guard","aeldari"],"optionLabels":{"ultramarines":"Space Marine: Ultramarines style","wolves":"Space Marine: Space Wolves style","angels":"Space Marine: Blood Angels / Dark Angels style","guard":"Imperial Guard","aeldari":"Aeldari"}},"format":{"label":"Name format","options":["full","name"],"optionLabels":{"full":"With rank and unit","name":"Name only"}}},"recipe":"switch","on":"faction","cases":{"ultramarines":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[marineRanks] [ultra.first] [ultra.surnames]"},"name":{"recipe":"template","template":"[ultra.first] [ultra.surnames]"}}},"wolves":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[wolves.first] [wolves.epithets]"},"name":{"recipe":"pick","from":"wolves.first"}}},"angels":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[marineRanks] [angels]"},"name":{"recipe":"pick","from":"angels"}}},"guard":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[guard.ranks] [guard.first] [guard.surnames], [guard.regiments] [guard.numbers]"},"name":{"recipe":"template","template":"[guard.first] [guard.surnames]"}}},"aeldari":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[aeldari.roles] [aeldari.names] of [aeldari.craftworlds]"},"name":{"recipe":"pick","from":"aeldari.names"}}}},"data":{"marineRanks":["Brother","Sergeant","Lieutenant","Captain","Chaplain","Librarian","Apothecary","Techmarine","Ancient","Veteran Sergeant","Company Champion","Chapter Master","Brother-Sergeant","Chief Librarian","Master of the Forge","Master of Sanctity"],"ultra":{"first":["Tiberon","Maxentius","Severan","Antoninus","Valerius","Decimus","Octavus","Flavian","Lucan","Septimus","Galerius","Aquilon","Corvinus","Drusus","Fabian","Gaius","Horatius","Justinian","Marcellus","Nerva","Quintillus","Remus","Sabinus","Tarquin","Vespasian","Aetius","Cyprian","Domitius","Hadrian","Cornelius","Appius","Caius","Decius","Fulvius","Gnaeus","Hostilius","Laelius","Manlius","Numerius","Postumus","Rufinus","Servius","Titus","Vitellius","Aulus"],"surnames":["Agrippan","Calvex","Damoran","Fennix","Gallus","Hestor","Invictus","Lucran","Marrus","Nonnar","Octan","Quirin","Rennor","Sevrin","Tarvo","Ultor","Mardus","Castor","Varian","Aurex","Brontus","Cassen","Dravian","Ferox","Galvan","Ionus","Kastor","Lavion","Morrus","Pellan"]},"wolves":{"first":["Bjarki","Gunnar","Haakon","Ingvar","Knut","Olvar","Sigvald","Torvald","Vigar","Egil","Hrothgar","Rolf","Sven","Kjell","Arvid","Dag","Finn","Leif","Brand","Eirik","Grimkel","Hallvard","Ketil","Orm","Skarde","Thorolf","Ulfar","Vemund","Asbjorn","Gorm","Agnar","Bersi","Dagfinn","Eyvind","Frode","Gisli","Hallbjorn","Ivarr","Jokull","Kolbjorn","Ljot","Odd","Rognvald","Steinarr","Thrain"],"epithets":["Ironjaw","Frostfang","Redmane","Stormcaller","the Grim","Greyhide","Iceborn","Doomfang","Longtooth","Thunderfist","Snowpelt","Wolfsbane","Stonehowl","the Unbroken","Ironhelm","Frostbeard","Runefist","Ashmane","Bloodtooth","the Silent","Sagafell","Storm-Eye","Grimhowl","Ice-Heart","Skullsplitter"]},"angels":["Raziel","Zadkiel","Barachiel","Uzziel","Jophiel","Sariel","Remiel","Haniel","Ithuriel","Aurelio","Benedetto","Matteo","Raffaele","Sandro","Valerio","Severo","Adriel","Cassiel","Ezrael","Hadriel","Malachai","Nathaniel","Ophaniel","Rophael","Samaiel","Tamiel","Zuriel","Amadeo","Cesare","Fabrizio","Marcello","Orsino","Ruggero","Silvano","Tancredi"],"guard":{"first":["Arlen","Brask","Corwin","Dace","Edrik","Feyn","Garus","Holt","Ivan","Jerro","Kasimir","Lem","Marko","Nash","Orlo","Pavel","Rusk","Sorn","Tomas","Varl","Wes","Yuri","Zell","Ana","Bryn","Cela","Dara","Esra","Fen","Galya","Hana","Irina","Jessa","Kira","Lena","Mira","Nadia","Oska","Petra","Rhea","Sasha","Tanja","Vesna","Ulla"],"surnames":["Voss","Hale","Strell","Marrok","Vane","Korsk","Lutz","Orlov","Rask","Senn","Tull","Varga","Wren","Yeager","Becker","Drago","Faulk","Grev","Holtz","Ivers","Jarek","Kade","Lorne","Mattox","Osk","Pryce","Quint","Rourke","Stavros","Thane","Udo","Brenner","Dask","Halvar","Krenn"],"ranks":["Trooper","Sergeant","Lieutenant","Captain","Major","Colonel","Commissar","Guardsman","Corporal","Veteran Sergeant","Lord Commissar","General","Tank Commander","Platoon Commander","Scout Sergeant"],"regiments":["Cadian","Catachan","Valhallan","Vostroyan","Mordian","Tallarn","Elysian","Armageddon","Krieg","Praetorian","Attilan","Savlar","Necromundan","Harakoni"],"numbers":["3rd","5th","8th","12th","17th","23rd","31st","42nd","56th","64th","77th","88th","101st","119th","133rd","150th","212th","303rd","2nd","4th","9th","14th","19th","28th","36th","47th","52nd","69th","81st","95th","122nd","144th","177th","201st","256th","412th"]},"aeldari":{"names":["Arhain","Belanor","Caelith","Dyrrian","Elarique","Faelan","Idranel","Kaelith","Lathriel","Maensith","Naeryth","Saelarith","Taelos","Ulthian","Vaeril","Yrlissa","Ashariel","Ellirian","Faenyra","Idrisae","Lirith","Aethyl","Caerwen","Elthariel","Ilyandra","Nymrith","Sythael","Thaerin","Vaelyr","Aurenith","Cirelle","Dythrae","Esmaine","Faroth","Ilthaen"],"roles":["Farseer","Warlock","Autarch","Exarch","Ranger","Spiritseer","Bonesinger","Guardian","Dire Avenger","Howling Banshee","Striking Scorpion","Fire Dragon","Swooping Hawk","Dark Reaper","Warp Spider","Shining Spear","Pathfinder","Seer"],"craftworlds":["Ulthwé","Biel-Tan","Iyanden","Saim-Hann","Alaitoc","Altansar","Il-Kaithe","Lugganath","Iybraesil","Mymeara","Kaelor","Idharae","Yme-Loc"]}}}</script>
     <script src="../lib/recipe-engine.js?v=d1b89e2e"></script>
-    <script src="../lib/page.js?v=d5144bf2"></script>
+    <script src="../lib/page.js?v=952af489"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>
