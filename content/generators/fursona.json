@@ -4,7 +4,7 @@
   "icon": "🐾",
   "category": "people",
   "published": "2026-10-22",
-  "description": "Fursona names for every species: wolves, foxes, cats, dogs, dragons, rabbits, deer, birds, raccoons and sharks, with a species description or a surname to match.",
+  "description": "Fursona names for wolves, foxes, cats, dogs, dragons, rabbits, deer, birds, raccoons and sharks, with a species or a surname like Brushtail.",
   "seoKeywords": "fursona name generator, fursona names, furry name generator, furry names, wolf fursona names, fox fursona names, cat fursona names, dragon fursona names, sona names",
   "seoTitle": "Fursona Name Generator: Furry Names for Any Species",
   "isPopular": false,
@@ -926,7 +926,29 @@
       "tagline": "Names for your fursona, from a wolf called Frost to a raccoon called Rummage."
     },
     "intro": "A fursona is the animal character you make to represent yourself in the furry fandom, and its name is usually the one other furries know you by. This **fursona name generator** suggests names that suit your species, with a species description or a matching surname if you'd like one.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "What a fursona is",
+        "content": "<p>A fursona is the animal character a furry creates to represent themselves: fur and persona, joined.</p><ul><li><strong>The fandom</strong> grew from science fiction conventions in the 1980s; ConFurence, in California in 1989, is usually counted as the first furry convention.</li><li><strong>Today</strong> there are conventions around the world, from Anthrocon in Pittsburgh to Confuzzled in the UK.</li><li><strong>The name</strong> is often the one other furries know you by, online and at cons, so it's worth taking time over.</li></ul>"
+      },
+      {
+        "heading": "Choosing a fursona name",
+        "content": "<ul><li><strong>Start with your species:</strong> wolves, foxes and dogs are the most popular, but the generator also does cats, dragons, rabbits, deer, birds, raccoons and sharks. Each has a few names of its own.</li><li><strong>Add a species</strong> to describe your character: Ginger, a marble fox.</li><li><strong>Add a surname</strong> made from fur, tails and paws: Leo Brightclaw, Zephyr Mistmeadow.</li><li><strong>Make it yours:</strong> a fursona is personal, so change a letter, mix two names, or keep the one that feels right. Famous furry characters are left out.</li></ul><p>For a wilder wolf, try the <a href=\"werewolf-name-generator.html\">Werewolf Name Generator</a>, and for an online handle to match, the <a href=\"gamertag-generator.html\">Gamertag Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is a fursona?",
+        "answer": "The animal character a member of the furry fandom creates to represent themselves. The word joins fur and persona."
+      },
+      {
+        "question": "What's a good fursona name?",
+        "answer": "Something that suits your species and personality, like Juniper for a fox or Leo Brightclaw for a wolf. Pick a species and generate a few."
+      },
+      {
+        "question": "What are the most popular fursona species?",
+        "answer": "Wolves, foxes and dogs are the most common, followed by cats, dragons and many more."
+      }
+    ]
   }
 }
