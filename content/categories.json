@@ -22,7 +22,9 @@
     "generators": [
       "blog",
       "brand",
-      "youtube"
+      "youtube",
+      "podcast",
+      "gamertag"
     ]
   },
   {
@@ -110,7 +112,11 @@
       "alien",
       "fairy",
       "fairy_town",
-      "elven_sword"
+      "elven_sword",
+      "hobbit",
+      "lotr_wizard",
+      "game_of_thrones",
+      "elden_ring"
     ]
   },
   {
@@ -212,7 +218,8 @@
       "fairy_town",
       "werewolf",
       "zombie",
-      "ghost"
+      "ghost",
+      "vampire"
     ]
   },
   {
@@ -318,7 +325,8 @@
       "clan",
       "company",
       "guild",
-      "brand"
+      "brand",
+      "cafe"
     ]
   },
   {
@@ -352,7 +360,8 @@
       "pirate",
       "viking",
       "superhero",
-      "villain"
+      "villain",
+      "stage_name"
     ]
   },
   {
@@ -593,7 +602,11 @@
       "anglo_saxon",
       "medieval",
       "victorian",
-      "old_west"
+      "old_west",
+      "viking",
+      "pirate",
+      "knight",
+      "japanese_sword"
     ]
   },
   {
@@ -645,7 +658,8 @@
       "ogryn",
       "funny_sword",
       "game_of_thrones",
-      "game_of_thrones_sword"
+      "game_of_thrones_sword",
+      "superhero"
     ]
   }
 ]
