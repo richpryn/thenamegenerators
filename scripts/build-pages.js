@@ -770,6 +770,211 @@ ${featured ? `
 }
 
 /**
+ * Spin the Wheel (spin-the-wheel.html), built to docs/redesign/WHEEL.md.
+ * The tool itself is lib/wheel.js; "Fill from a generator" uses the
+ * recipe engine with each generator's runtime file in data/generators/.
+ */
+const WHEEL_FILL = [
+  ['elf', 'Elf names'], ['dwarf', 'Dwarf names'], ['dragon', 'Dragon names'], ['tiefling', 'Tiefling names'],
+  ['wizard', 'Wizard names'], ['pirate', 'Pirate names'], ['viking', 'Viking names'], ['superhero', 'Superhero names'],
+  ['band', 'Band names'], ['tavern', 'Tavern names'], ['gamertag', 'Gamertags'], ['fantasy_town', 'Town names'],
+];
+const WHEEL_FAQS = [
+  ['Is the wheel really random?', "Yes. The winner is picked by your browser's built-in secure random number generator the moment you press Spin, and every name gets a slice the same size. The spin just shows you where it landed."],
+  ['Do you keep my list?', "No. The list is saved in your own browser, so it's still there next time, and nowhere else. A share link carries the names inside the link itself, after the # sign, which browsers never send to the server."],
+  ['How many names can I add?', 'Up to 500. Names are written on the wheel up to 120; beyond that the slices are too thin to read, so the wheel shows colours only and the winner appears in the card.'],
+  ['What happens if I add the same name twice?', "Duplicates are removed automatically, so everyone gets one slice. If you want someone to have a better chance, add a variation like \"Sam (2)\"."],
+  ['Can I take a name off after it wins?', 'Yes. Press "Remove & spin again" in the winner card, or "Remove winner" under the wheel. Handy for turn order or a raffle with several prizes.'],
+];
+
+function generateWheelPage(site) {
+  const baseUrl = 'https://thenamegenerators.com';
+  const url = `${baseUrl}/spin-the-wheel.html`;
+  const title = 'Spin the Wheel: Random Name Picker Wheel | The Name Generators';
+  const desc = 'Spin a wheel to pick a random name. Type or paste names, spin, remove the winner and spin again. Free, no sign-up, and your list stays in your browser.';
+  const fill = WHEEL_FILL.filter(([key]) => site.all.some(g => g.key === key));
+  const tools = ['name_combiner', 'gamertag', 'band', 'dnd_fantasy']
+    .map(key => site.all.find(g => g.key === key)).filter(Boolean);
+  const catOf = (gen) => site.categories.find(c => c.slug === gen.category);
+  const motifs = tools.map(g => layout.generatorMotif(g, catOf(g)));
+  const wheelDoodle = `<svg class="doodle wob" viewBox="0 0 60 60" aria-hidden="true" focusable="false"><circle cx="30" cy="32" r="22" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8"/><path d="M30 10 V54 M8 32 H52 M14.5 16.5 L45.5 47.5 M45.5 16.5 L14.5 47.5" stroke="#1e1c18" stroke-width="1.2" stroke-linecap="round"/><path d="M30 32 L30 10 A22 22 0 0 1 45.5 16.5 Z" fill="#efc84a" stroke="#1e1c18" stroke-width="1.2" stroke-linejoin="round"/><circle cx="30" cy="32" r="3.5" fill="#1e1c18"/><path d="M26 3 L34 3 L30 11 Z" fill="#1e1c18"/></svg>`;
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <!-- Mediavine Grow -->
+    <script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTo2YmQ3YzdiOS00MDgwLTQ5MmYtOGEyZi0yZWE3YmU2N2E5ZTU=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
+
+    <title>${escapeHtml(title)}</title>
+    <meta name="title" content="${escapeHtml(title)}">
+    <meta name="description" content="${escapeHtml(desc)}">
+    <meta name="keywords" content="spin the wheel, name wheel, random name picker wheel, wheel spinner, random wheel, spin wheel for names, wheel of names, raffle wheel">
+    <meta name="author" content="The Name Generators">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="${url}">
+    <script type="application/ld+json">
+${scriptJson({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": `${baseUrl}/` },
+    { "@type": "ListItem", "position": 2, "name": "Spin the Wheel", "item": url }
+  ]
+}, 2)}
+    </script>
+    <script type="application/ld+json">
+${scriptJson({
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Spin the Wheel",
+  "url": url,
+  "description": desc,
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in your browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" },
+  "author": AUTHOR
+}, 2)}
+    </script>
+    <script type="application/ld+json">
+${scriptJson({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": WHEEL_FAQS.map(([q, a]) => ({ "@type": "Question", "name": q, "acceptedAnswer": { "@type": "Answer", "text": a } }))
+}, 2)}
+    </script>
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="${url}">
+    <meta property="og:title" content="${escapeHtml(title)}">
+    <meta property="og:description" content="${escapeHtml(desc)}">
+    <meta property="og:site_name" content="The Name Generators">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="${escapeHtml(title)}">
+    <meta property="twitter:description" content="${escapeHtml(desc)}">
+
+    ${ICON_LINKS}
+    ${layout.headAssets('')}
+</head>
+<body>
+    ${layout.svgSprite(motifs)}
+    ${layout.siteHeader('', site.categories)}
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span aria-current="page">Spin the Wheel</span></nav>
+            <div class="titlerow">
+                <h1>Spin the <span class="hl">Wheel</span></h1>
+                ${wheelDoodle}
+            </div>
+            <p class="lede">Type or paste names, one per line, then spin. Free, no sign-up, and your list stays in your browser.</p>
+
+            <section class="sheet wt-sheet hd" id="wheel-tool" aria-label="Spin the wheel">
+                <div class="wt-grid">
+                    <div class="wt-wheelcol">
+                        <div class="wt-box">
+                            <svg class="wt-pointer wob" id="wt-pointer" viewBox="0 0 40 50" aria-hidden="true" focusable="false"><path d="M8 6 C14 3 26 3 32 6 C33 16 26 34 20 46 C14 34 7 16 8 6 Z" fill="#efc84a" stroke="#1e1c18" stroke-width="2.2" stroke-linejoin="round"/><circle cx="20" cy="13" r="3.4" fill="#1e1c18"/></svg>
+                            <div class="wt-spinner" id="wt-spinner" role="button" tabindex="0" aria-label="Spin the wheel" aria-describedby="wt-desc"><canvas id="wt-wheel" aria-hidden="true"></canvas></div>
+                            <p class="wt-empty" id="wt-empty" hidden>Add at least two names to spin.</p>
+                            <canvas id="wt-confetti" aria-hidden="true"></canvas>
+                            <div class="wt-winner hd" id="wt-winner" hidden role="group" aria-labelledby="wt-eyebrow wt-winner-name">
+                                <button class="wt-x" id="wt-win-close" type="button" aria-label="Close and keep the name on the wheel">×</button>
+                                <div class="wt-eyebrow" id="wt-eyebrow">The wheel picked</div>
+                                <strong class="wt-wname" id="wt-winner-name" tabindex="-1"><span></span></strong>
+                                <div class="wt-row">
+                                    <button class="go hd tap" id="wt-win-remove" type="button">Remove &amp; spin again</button>
+                                    <button class="mini hd tap" id="wt-win-again" type="button">Spin again</button>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="visually-hidden" id="wt-desc"></p>
+                        <button class="go hd tap wt-spin" id="wt-spin" type="button"><svg viewBox="0 0 22 22" aria-hidden="true" focusable="false"><path d="M18 11 A7 7 0 1 1 15.5 5.6" fill="none" stroke="#fffcf4" stroke-width="2.2" stroke-linecap="round"/><path d="M16.5 2 L16 6.3 L11.8 5.6" fill="none" stroke="#efc84a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span id="wt-spin-label">Spin</span></button>
+                        <div class="wt-quick">
+                            <button class="mini hd tap" id="wt-remove" type="button" disabled>Remove winner</button>
+                            <button class="mini hd tap" id="wt-shuffle" type="button">Shuffle</button>
+                        </div>
+                        <p class="wt-status" id="wt-status" aria-hidden="true"></p>
+                    </div>
+
+                    <div class="wt-listcol">
+                        <div class="label"><label for="wt-names">Names, one per line</label><span class="wt-count" id="wt-count">8 names</span></div>
+                        <div class="ctl wt-ta hd"><textarea id="wt-names" spellcheck="false" autocomplete="off" aria-describedby="wt-hint"></textarea></div>
+                        <p class="wt-hint" id="wt-hint"></p>
+
+                        <div class="wt-group">
+                            <div class="label"><label for="wt-fill-from">Fill from a generator</label><span class="pen">adds 8 names</span></div>
+                            <div class="wt-fillrow">
+                                <div class="ctl sel hd"><select id="wt-fill-from">
+                                    ${fill.map(([key, label]) => `<option value="${key}">${escapeHtml(label)}</option>`).join('\n                                    ')}
+                                </select></div>
+                                <button class="mini hd tap" id="wt-fill" type="button">Add 8</button>
+                            </div>
+                        </div>
+
+                        <div class="wt-group">
+                            <div class="wt-actions" id="wt-actions">
+                                <button class="mini hd tap" id="wt-share" type="button">Copy share link</button>
+                                <button class="mini hd tap" id="wt-clear" type="button">Clear list</button>
+                            </div>
+                            <div class="wt-confirm hd" id="wt-confirm" hidden>
+                                <p id="wt-confirm-text">Clear all 8 names?</p>
+                                <button class="mini hd tap wt-yes" id="wt-confirm-yes" type="button">Yes, clear</button>
+                                <button class="mini hd tap" id="wt-confirm-no" type="button">Keep them</button>
+                            </div>
+                            <div class="wt-sharebox" id="wt-sharebox" hidden>
+                                <div class="ctl hd"><input id="wt-share-url" readonly aria-label="Share link"></div>
+                                <p class="wt-hint" id="wt-share-note">Anyone with the link sees this exact list. Nothing is saved on our server.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <p class="visually-hidden" aria-live="polite" id="wt-live"></p>
+
+            <article class="section article">
+                <h2>How to use the wheel</h2>
+                <p class="big">Put one name on each line, press Spin, and the wheel picks one at random.</p>
+                <ol>
+                    <li><strong>Add names.</strong> Type them, paste a list from a spreadsheet, or add 8 from one of our name generators.</li>
+                    <li><strong>Spin.</strong> Press Spin, tap the wheel, or press Space or Enter when the wheel is selected.</li>
+                    <li><strong>Keep going.</strong> "Remove &amp; spin again" takes the winner off so they can't come up again: handy for turn order, or a raffle with several prizes.</li>
+                    <li><strong>Share it.</strong> Copy the link and anyone who opens it gets the same list.</li>
+                </ol>
+
+                <h2 class="section">Is it fair?</h2>
+                <p>Every name gets a slice the same size, and duplicates are removed so nobody gets two. The winner is picked by your browser's built-in secure random number generator the moment you press Spin; the spin is just there to show you where it landed, and the wheel always stops on the name that was picked.</p>
+
+                <h2 class="section">Ideas</h2>
+                <p>Pick who goes first at the table, choose a pupil to answer, draw a raffle, decide whose turn it is to make the tea, or put your shortlist of band names on the wheel and let it decide.</p>
+            </article>
+
+            <section class="section">
+                <h2>Questions</h2>
+                <div class="faq">
+                    ${WHEEL_FAQS.map(([q, a], i) => `<details${i === 0 ? ' open' : ''}><summary><span class="tg hd" aria-hidden="true">+</span>${escapeHtml(q)}</summary><p>${escapeHtml(a)}</p></details>`).join('\n                    ')}
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>More name tools</h2>
+                <div class="tools">
+                    ${tools.map((g, i) => `<a class="tool hd tap" href="posts/${g.slug}.html">${layout.doodle(motifs[i])}<div><b>${escapeHtml(g.title)}</b><span>${escapeHtml(g.description.split(/(?<=[.!?])\s/)[0])}</span></div><em aria-hidden="true">→</em></a>`).join('\n                    ')}
+                </div>
+            </section>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
+    </div>
+
+    ${layout.siteFooter('')}
+    ${layout.bodyScripts('', { engine: true })}
+    <script src="lib/wheel.js"></script>
+</body>
+</html>`;
+}
+
+/**
  * Lookups shared by the page templates.
  */
 function makeSite({ categories, generators, homepage }) {
@@ -939,6 +1144,9 @@ function build() {
     if (!content.generators[path.basename(file, '.json')]) fs.unlinkSync(path.join(RUNTIME_DIR, file));
   }
 
+  fs.writeFileSync(path.join(ROOT, 'spin-the-wheel.html'), generateWheelPage(site));
+  console.log('  ✅ Created: spin-the-wheel.html');
+
   generateSitemap(site);
   generateHtmlSitemap(site);
   generate404(site);
@@ -975,6 +1183,13 @@ function generateSitemap(site) {
     <lastmod>${siteDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <!-- Spin the Wheel -->
+  <url>
+    <loc>${baseUrl}/spin-the-wheel.html</loc>
+    <lastmod>${latest([lastChanged('lib/wheel.js')])}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <!-- About Page -->
   <url>
@@ -1067,6 +1282,7 @@ function generateHtmlSitemap(site) {
                 <ul class="sitemap-links">
                     ${link(`${baseUrl}/`, 'Home')}
                     ${link(`${baseUrl}/all-generators.html`, 'All Generators')}
+                    ${link(`${baseUrl}/spin-the-wheel.html`, 'Spin the Wheel')}
                     ${link(`${baseUrl}/about.html`, 'About')}
                     ${link(`${baseUrl}/sitemap.html`, 'Site Map')}
                 </ul>
@@ -1186,6 +1402,7 @@ Made by Rich: ${baseUrl}/about.html
       .map(g => `- [${g.title}](${baseUrl}/posts/${g.slug}.html): ${plainText(g.description)}`)
       .join('\n') + '\n';
   }
+  text += `\n## Name tools\n\n- [Spin the Wheel](${baseUrl}/spin-the-wheel.html): a random name picker wheel. Type or paste names, spin, remove the winner and spin again; lists stay in the browser and can be shared as a link.\n`;
   text += `\n## Optional\n\n- [All generators](${baseUrl}/all-generators.html)\n- [Site map](${baseUrl}/sitemap.html)\n`;
   fs.writeFileSync(path.join(ROOT, 'llms.txt'), text);
   console.log('  ✅ Created: llms.txt');

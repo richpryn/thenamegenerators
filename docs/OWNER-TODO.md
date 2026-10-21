@@ -58,6 +58,7 @@ New and rewritten pages. Read them on the live site; reply in any session with c
   - **Historical hub** (`categories/historical-names.html`): Roman, Ancient Greek, Anglo-Saxon, Medieval, Victorian, Old West
   - **Name Combiner** (`posts/name-combiner.html`): type two names, get ship-name blends. Try it with your own names!
   - **Gamertag Generator** (`posts/gamertag-generator.html`)
+  - **Spin the Wheel** (`spin-the-wheel.html`): try it on your phone. Also request indexing for it in Search Console.
 - [ ] Path of Exile Witch (rewritten: epithets by Ascendancy)
 - [ ] Elven Sword (rebuilt: every name now has a real Sindarin or Quenya meaning)
 - [ ] Dungeon Synth (rewritten without your notes; your notes would make it better)
