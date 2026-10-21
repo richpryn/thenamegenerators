@@ -713,7 +713,29 @@
       "tagline": "Names for rangers of every Conclave, from Hunters to Gloom Stalkers and Swarmkeepers."
     },
     "intro": "Rangers live at the edges of the map, so their names tend to be short, practical and borrowed from the wild. This **ranger name generator** gives D&D 5e rangers a first name that sounds at home in the woods and an epithet for their Ranger Conclave, from the Hunter to the Gloom Stalker.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "The ranger in D&D",
+        "content": "<p>A D&amp;D ranger is a hunter and tracker of the wilds, mixing weapons with nature magic.</p><ul><li><strong>Conclaves:</strong> rangers follow the Hunter or the Beast Master in the Player's Handbook, or the Gloom Stalker, Horizon Walker, Monster Slayer, Fey Wanderer or Swarmkeeper in later books.</li><li><strong>Real rangers:</strong> in medieval England a ranger was an officer who patrolled a royal forest, keeping watch on its deer and its poachers.</li><li><strong>Strider:</strong> Aragorn in <em>The Lord of the Rings</em> did more than anyone to fix the ranger as a fantasy hero.</li></ul>"
+      },
+      {
+        "heading": "Naming a ranger",
+        "content": "<p>Ranger names are short and practical: Brook, Stone, Fallon, Lorne.</p><ul><li><strong>The epithet</strong> follows the conclave: a Gloom Stalker \"the Moth-Haunted\", a Horizon Walker \"of the Far Horizons\", a Monster Slayer \"the Stake-Bearer\".</li><li><strong>An animal companion</strong> needs a name too: try the <a href=\"werewolf-name-generator.html\">Werewolf Name Generator</a>'s wolf names.</li></ul><p>For the rest of the party, try the <a href=\"druid-name-generator.html\">Druid</a>, <a href=\"rogue-name-generator.html\">Rogue</a> and <a href=\"wood-elf-name-generator.html\">Wood Elf</a> name generators.</p><p>For every class and race, see all the <a href=\"../categories/dnd-names.html\">D&amp;D name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good ranger name?",
+        "answer": "A short, practical name from the wild, like Brook or Fallon, with an epithet for the conclave, like \"of the Far Horizons\"."
+      },
+      {
+        "question": "What are the ranger subclasses?",
+        "answer": "Hunter and Beast Master in the Player's Handbook, plus Gloom Stalker, Horizon Walker, Monster Slayer, Fey Wanderer and Swarmkeeper in later books."
+      },
+      {
+        "question": "What was a ranger in history?",
+        "answer": "In medieval England, an officer who patrolled a royal forest and watched for poachers."
+      }
+    ]
   }
 }

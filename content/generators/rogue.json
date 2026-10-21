@@ -765,7 +765,29 @@
       "tagline": "Names for rogues of every Archetype, from Thieves and Assassins to Swashbucklers."
     },
     "intro": "A rogue's name is often short, easy to shout across a rooftop and easy to change if things go wrong. This **rogue name generator** gives D&D 5e rogues a quick, memorable first name and an epithet for their Roguish Archetype, from the light-fingered Thief to the dashing Swashbuckler.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "The rogue in D&D",
+        "content": "<p>A D&amp;D rogue wins on precision: Sneak Attack deals extra damage when they catch a target off guard.</p><ul><li><strong>Archetypes:</strong> the Thief, Assassin and Arcane Trickster in the Player's Handbook, and the Inquisitive, Mastermind, Scout, Swashbuckler, Phantom and Soulknife in later books.</li><li><strong>Thieves' Cant:</strong> rogues know a secret language. The real thieves' cant was the slang of London's underworld in the 1500s and 1600s, recorded in pamphlets warning honest folk.</li></ul>"
+      },
+      {
+        "heading": "Naming a rogue",
+        "content": "<p>A rogue's name should be short, easy to say in a hurry and easy to drop.</p><ul><li><strong>The name</strong> (Fen, Ivy, Sly, Kestrel) works as an alias.</li><li><strong>The epithet</strong> follows the archetype: a Thief \"Master of Locks\", an Inquisitive \"the Unfoolable\", a Swashbuckler \"the Duellist\".</li><li><strong>A codename</strong> suits an assassin: try the <a href=\"assassin-name-generator.html\">Assassin Name Generator</a>.</li></ul><p>For the rest of the party, try the <a href=\"bard-name-generator.html\">Bard</a>, <a href=\"ranger-name-generator.html\">Ranger</a> and <a href=\"halfling-name-generator.html\">Halfling</a> name generators.</p><p>For every class and race, see all the <a href=\"../categories/dnd-names.html\">D&amp;D name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good rogue name?",
+        "answer": "Short and easy to drop, like Fen or Sly, with an epithet for the archetype, like \"Master of Locks\" for a Thief."
+      },
+      {
+        "question": "What is thieves' cant?",
+        "answer": "In D&D, a secret language rogues use. In history, it was the slang of the criminal underworld in 1500s and 1600s England."
+      },
+      {
+        "question": "What are the rogue subclasses?",
+        "answer": "Thief, Assassin and Arcane Trickster in the Player's Handbook, plus Inquisitive, Mastermind, Scout, Swashbuckler, Phantom and Soulknife."
+      }
+    ]
   }
 }

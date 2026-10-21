@@ -1102,7 +1102,29 @@
       "tagline": "Names for clerics of every Domain, from Life healers to Tempest storm-priests."
     },
     "intro": "A cleric's name often sounds like it belongs in a temple, and their epithet tells you which power they serve. This **cleric name generator** gives D&D 5e clerics a first name with a saintly ring and an epithet for their Divine Domain, from the healing Life Domain to the storm-calling Tempest Domain.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "The cleric in D&D",
+        "content": "<p>A D&amp;D cleric's power comes from a god, and each cleric serves one Divine Domain.</p><ul><li><strong>Domains</strong> range from Life and Light to War, Tempest, Trickery, Knowledge, Nature, Grave, Forge, Twilight, Order and Peace. Each gets its own epithets here.</li><li><strong>Channel Divinity</strong> lets a cleric call on their god directly, for example to turn the undead.</li><li><strong>The word:</strong> cleric shares its root with clergy and clerk, from the Greek <em>klēros</em>, meaning a lot or share, as in the share given to God.</li></ul>"
+      },
+      {
+        "heading": "Naming a cleric",
+        "content": "<p>Cleric names here sound like saints and scholars: Cecilia, Cyprian, Winifred.</p><ul><li><strong>The epithet</strong> tells you which power they serve: a Forge cleric might be \"Keeper of the Forge\", a War cleric \"Hammer of the Gods\".</li><li><strong>Name the god too:</strong> the <a href=\"angel-name-generator.html\">Angel Name Generator</a> has names for the messengers of the gods.</li></ul><p>For the rest of the party, try the <a href=\"paladin-name-generator.html\">Paladin</a>, <a href=\"druid-name-generator.html\">Druid</a> and <a href=\"monk-name-generator.html\">Monk</a> name generators.</p><p>For every class and race, see all the <a href=\"../categories/dnd-names.html\">D&amp;D name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good cleric name?",
+        "answer": "A saint-like name, like Cecilia or Cyprian, with an epithet for the domain, like \"Keeper of the Forge\"."
+      },
+      {
+        "question": "What's the difference between a cleric and a paladin?",
+        "answer": "A cleric is a priest who casts divine spells; a paladin is a holy warrior bound by an oath, who fights first and casts second."
+      },
+      {
+        "question": "What are the cleric domains?",
+        "answer": "They include Life, Light, War, Knowledge, Nature, Tempest, Trickery, Grave, Forge, Twilight, Order and Peace."
+      }
+    ]
   }
 }

@@ -284,7 +284,29 @@
       "tagline": "Names for necromancers, from gothic scholars to the old woman in the village who talks to bones."
     },
     "intro": "A necromancer is a wizard who studies death itself: in D&D, the School of Necromancy covers spells that drain life and raise the dead. This **necromancer name generator** makes gothic scholar names like Mortimer Graveson, grim sorcerous names and hedge necromancers who live a little too close to the churchyard.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Where necromancy comes from",
+        "content": "<p>Necromancy began as fortune-telling: the word comes from the Greek <em>nekros</em>, \"dead\", and <em>manteia</em>, \"divination\".</p><ul><li><strong>Asking the dead:</strong> in Homer's <em>Odyssey</em>, Odysseus calls up the spirits of the dead to ask the way home.</li><li><strong>Raising the dead</strong> came later. By the Middle Ages, necromancy meant dark magic of any kind.</li><li><strong>In D&amp;D,</strong> Necromancy is a school of wizard magic, covering spells that drain life or raise the dead.</li></ul>"
+      },
+      {
+        "heading": "Naming a necromancer",
+        "content": "<ul><li><strong>Gothic scholars</strong> have names that sound like a family of undertakers: Mortimer Graveson, Ursula Ravensworth.</li><li><strong>Grim</strong> necromancers have names that sound already dead: Vaelthas, Sepith.</li><li><strong>Hedge</strong> necromancers are village bone-readers: Old Mother Marrow, Old Father Thistle.</li></ul><p>For what a necromancer may one day become, try the <a href=\"lich-name-generator.html\">Lich Name Generator</a>. For their army, there's the <a href=\"skeleton-name-generator.html\">Skeleton</a> and <a href=\"zombie-name-generator.html\">Zombie</a> name generators.</p><p>For every class and race, see all the <a href=\"../categories/dnd-names.html\">D&amp;D name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What does necromancy mean?",
+        "answer": "Divination by the dead, from the Greek nekros (dead) and manteia (divination). It later came to mean raising the dead."
+      },
+      {
+        "question": "What's a good necromancer name?",
+        "answer": "A gothic scholar's name like Mortimer Graveson, a grim one like Vaelthas, or a hedge necromancer like Old Mother Marrow."
+      },
+      {
+        "question": "Is necromancy a D&D class?",
+        "answer": "Not on its own: it's a school of wizard magic. A necromancer is usually a wizard who specialises in it."
+      }
+    ]
   }
 }

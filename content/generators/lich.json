@@ -4,7 +4,7 @@
   "icon": "☠️",
   "category": "dnd",
   "published": "2026-10-22",
-  "description": "Lich names for D&D villains: ancient sorcerous names like Xarthuun, fallen archmages with a title, and liches named for the tomb where they keep their phylactery.",
+  "description": "Lich names for undead archmages in D&D and fantasy: ancient names like Xarthuun, fallen archmages, and liches named for their tombs.",
   "seoKeywords": "lich name generator, lich names, dnd lich names, undead wizard names, lich king names, dnd villain names, necromancer names",
   "seoTitle": "Lich Name Generator: Undead Archmage Names for D&D",
   "isPopular": false,
@@ -236,7 +236,29 @@
       "tagline": "Names for liches, the undead archmages who hide their souls in a phylactery."
     },
     "intro": "A lich is a wizard who has chosen undeath, binding their soul into a hidden phylactery so they can't truly die. In D&D they are among the most feared villains. This **lich name generator** makes ancient sorcerous names, fallen archmages with a title, and liches named for the tomb where they wait.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "What is a lich?",
+        "content": "<p>A lich is a spellcaster who has made themselves undead to live forever, hiding their soul in an object called a phylactery.</p><ul><li><strong>The word:</strong> lich is Old English for a corpse, the same word as in lychgate, the roofed church gate where a coffin waited.</li><li><strong>The phylactery:</strong> while it survives, the lich can't truly die. Destroy it, and the lich can be finished for good.</li><li><strong>Famous liches</strong> belong to other worlds: Vecna, Acererak of the 1978 adventure <em>Tomb of Horrors</em>, Szass Tam and Larloch of the Forgotten Realms, and Kel'Thuzad of Warcraft. They're all left out here, so every name is new.</li></ul>"
+      },
+      {
+        "heading": "Naming a lich",
+        "content": "<ul><li><strong>Ancient</strong> names sound like they were old before the kingdom was founded: Xarthuun, Ozrekh.</li><li><strong>Fallen archmages</strong> keep their old rank: Archmage Valdris, First Necromancer Caligo.</li><li><strong>Tomb</strong> names are what the villagers call it: the Lich of the Sunken Vault.</li></ul><p>For the lich before it died, try the <a href=\"necromancer-name-generator.html\">Necromancer</a> and <a href=\"wizard-name-generator.html\">Wizard</a> name generators.</p><p>For every class and race, see all the <a href=\"../categories/dnd-names.html\">D&amp;D name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is a phylactery?",
+        "answer": "In D&D, the object where a lich hides its soul. As long as the phylactery survives, the lich can come back."
+      },
+      {
+        "question": "What does lich mean?",
+        "answer": "Corpse, in Old English. It survives in lychgate, the covered gateway to a churchyard."
+      },
+      {
+        "question": "Who are the most famous liches?",
+        "answer": "Vecna and Acererak in D&D, Szass Tam and Larloch in the Forgotten Realms, and Kel'Thuzad in Warcraft. This generator makes new names instead."
+      }
+    ]
   }
 }

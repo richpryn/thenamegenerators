@@ -731,7 +731,29 @@
       "tagline": "Names for warlocks bound to every Patron, from the Archfey to the Great Old One."
     },
     "intro": "A warlock made a deal with something powerful, and the best warlock names hint at who's on the other end of the pact. This **warlock name generator** gives D&D 5e warlocks a first name with a gothic edge and an epithet for their Otherworldly Patron, from the Archfey to the Fiend and the Great Old One.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "The warlock in D&D",
+        "content": "<p>A D&amp;D warlock gets their magic from a pact with a powerful patron.</p><ul><li><strong>Patrons:</strong> the Archfey, the Fiend and the Great Old One in the Player's Handbook, and the Celestial, Hexblade, Fathomless, Genie and Undead in later books.</li><li><strong>The word:</strong> warlock comes from the Old English <em>wǣrloga</em>, an oath-breaker, which later came to mean a sorcerer in league with the Devil.</li></ul>"
+      },
+      {
+        "heading": "Naming a warlock",
+        "content": "<p>The best warlock names hint at who's on the other end of the pact.</p><ul><li><strong>The name</strong> (Belladonna, Morwenna, Ambrose) has a dark edge.</li><li><strong>The epithet</strong> follows the patron: an Archfey warlock \"of the Summer Court\", a Genie warlock \"Servant of the Lamp\", an Undead warlock \"the Lich-Sworn\".</li><li><strong>Name the patron too:</strong> the <a href=\"demon-name-generator.html\">Demon</a>, <a href=\"fairy-name-generator.html\">Fairy</a> and <a href=\"genie-name-generator.html\">Genie</a> name generators all make good ones.</li></ul><p>For the rest of the party, try the <a href=\"sorcerer-name-generator.html\">Sorcerer</a>, <a href=\"tiefling-name-generator.html\">Tiefling</a> and <a href=\"bard-name-generator.html\">Bard</a> name generators.</p><p>For every class and race, see all the <a href=\"../categories/dnd-names.html\">D&amp;D name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good warlock name?",
+        "answer": "A name with a dark edge, like Belladonna or Ambrose, and an epithet that hints at the patron, like \"of the Summer Court\"."
+      },
+      {
+        "question": "What does warlock mean?",
+        "answer": "It comes from the Old English wǣrloga, an oath-breaker."
+      },
+      {
+        "question": "What are the warlock patrons?",
+        "answer": "The Archfey, Fiend and Great Old One in the Player's Handbook, plus the Celestial, Hexblade, Fathomless, Genie and Undead in later books."
+      }
+    ]
   }
 }

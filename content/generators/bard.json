@@ -726,7 +726,29 @@
       "tagline": "Names for bards of every College, from Lore keepers to blade-juggling Swords bards."
     },
     "intro": "Bards collect stories, so their names usually sound like they belong in one. This **bard name generator** gives D&D 5e bards a first name with a bit of flair and an epithet that fits their Bard College, from the well-read College of Lore to the dagger-juggling College of Swords.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "The bard in D&D",
+        "content": "<p>A D&amp;D bard uses music and words as magic, and their Bardic Inspiration lets allies roll an extra die.</p><ul><li><strong>Colleges:</strong> bards belong to a College, from Lore and Valor in the Player's Handbook to Glamour, Swords, Whispers, Eloquence and Creation in later books.</li><li><strong>Real bards</strong> were the poets of the Celtic world, keeping the history and praising the deeds of their patrons. Wales still crowns its bards at the National Eisteddfod.</li></ul>"
+      },
+      {
+        "heading": "Naming a bard",
+        "content": "<p>A bard's name should sound good when announced at the door of an inn.</p><ul><li><strong>The name</strong> (Rosalind, Dashiell, Odette) has a bit of romance about it.</li><li><strong>The epithet</strong> follows the College: a Lore bard might be \"the Scholar-Singer\", a Swords bard \"Sword of the Stage\", a Whispers bard \"the Smiling Knife\".</li><li><strong>Need a stage name too?</strong> The <a href=\"band-name-generator.html\">Band Name Generator</a> can name the act.</li></ul><p>For the rest of the party, try the <a href=\"rogue-name-generator.html\">Rogue</a>, <a href=\"warlock-name-generator.html\">Warlock</a> and <a href=\"satyr-name-generator.html\">Satyr</a> name generators.</p><p>For every class and race, see all the <a href=\"../categories/dnd-names.html\">D&amp;D name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good bard name?",
+        "answer": "A name with a bit of romance, like Rosalind or Dashiell, and an epithet for their College, like \"the Tale-Spinner\"."
+      },
+      {
+        "question": "What are the bard colleges?",
+        "answer": "Lore and Valor in the Player's Handbook, plus Glamour, Swords, Whispers, Eloquence and Creation in later books."
+      },
+      {
+        "question": "Were bards real?",
+        "answer": "Yes. Bards were the poets of the Celtic world, and Wales still honours its bards at the National Eisteddfod."
+      }
+    ]
   }
 }
