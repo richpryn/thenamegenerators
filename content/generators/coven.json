@@ -4,7 +4,7 @@
   "icon": "🌙",
   "category": "witch",
   "published": "2026-10-21",
-  "description": "Coven names for witches in D&D, stories and games: covens named for a place, the moon and seasons, darker covenants and cosy circles, with a motto if you like.",
+  "description": "Coven names for witches in D&D, stories and games: covens named for a place or the moon, darker covenants and cosy circles, with a motto if you like.",
   "seoKeywords": "coven name generator, coven names, witch coven names, witch group names, dnd coven names, cool coven names, halloween group names",
   "isPopular": false,
   "filters": {
@@ -404,7 +404,29 @@
       "tagline": "Names for a coven of witches: named for a place, the moon, something darker, or a cosy circle with the kettle on."
     },
     "intro": "A coven's name says where its witches meet and what they stand for. This **coven name generator** makes names for covens in D&D, stories and games, from the Coven of Hollow Oak to the Kettle and Thistle Circle, with a motto if you need one.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Where the word coven comes from",
+        "content": "<ul><li><strong>The word:</strong> coven comes from the Latin <em>convenire</em>, \"to come together\", the same root as convent. For centuries it just meant a gathering.</li><li><strong>Covens of thirteen:</strong> the link with witches comes from Scotland. In 1662 Isobel Gowdie of Auldearn confessed that witches met in covens of thirteen. Her confessions were made under interrogation and say more about the trials than about real witches, but the number stuck.</li><li><strong>The idea of an old witch cult</strong> was popularised by Margaret Murray's <em>The Witch-Cult in Western Europe</em> (1921). Historians no longer accept it, but it shaped how covens appear in fiction ever since.</li><li><strong>Today</strong> some modern pagan and Wiccan groups call themselves covens. The names here are for fiction and games.</li></ul>"
+      },
+      {
+        "heading": "Naming your coven",
+        "content": "<ul><li><strong>By place:</strong> where they meet is the easiest name to believe (the Coven of Black Mere, the Fenland Gathering).</li><li><strong>By the moon and the year:</strong> moon names and festivals suit a coven that keeps to the old calendar.</li><li><strong>Darker:</strong> a pact or a covenant sounds like something you can't leave. Good for villains.</li><li><strong>Cosy:</strong> for a friendlier story, a coven can be a supper club with spells. The Kettle and Crumpet Tea Club still counts.</li><li><strong>Add a motto</strong> for character: it's what the members say to each other at the door.</li></ul><p>To name the witches themselves, try the <a href=\"witch-name-generator.html\">Witch</a> and <a href=\"swamp-witch-name-generator.html\">Swamp Witch</a> name generators. For other groups, the <a href=\"guild-name-generator.html\">Guild</a> and <a href=\"clan-name-generator.html\">Clan</a> generators work the same way.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Why do covens have thirteen witches?",
+        "answer": "Because of a 1662 Scottish witch trial confession by Isobel Gowdie, who said witches met in thirteens. Margaret Murray's 1921 book made the idea famous, though historians now reject her theory."
+      },
+      {
+        "question": "What's a good name for a coven?",
+        "answer": "Name it for where it meets (the Coven of Hollowmere), for the moon (Daughters of the Hunter's Moon), or for what it stands for. Add a short motto to finish it off."
+      },
+      {
+        "question": "What's the difference between a coven and a circle?",
+        "answer": "In fiction they're often the same thing. Circle sounds gentler and more open; coven sounds older and more secret."
+      }
+    ]
   }
 }
