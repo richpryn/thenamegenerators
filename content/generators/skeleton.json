@@ -268,7 +268,29 @@
       "tagline": "Bone puns for your Halloween skeleton, from Sir Femur to Patella Pete, or a grim lord of the barrow."
     },
     "intro": "Every Halloween skeleton deserves a name, and most of the best ones are terrible puns: Bonaparte, Humerus, Patella Pete. This **skeleton name generator** makes funny bone names for decorations, parties and family Halloween, plus grim skeleton lords for stories and games.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Bones behind the puns",
+        "content": "<ul><li><strong>Femur:</strong> the thigh bone, the longest and strongest bone in the body.</li><li><strong>Patella:</strong> the kneecap. <strong>Tibia</strong> is the shin bone, and <strong>clavicle</strong> is the collarbone.</li><li><strong>Humerus:</strong> the upper arm bone, and the oldest skeleton joke there is. The \"funny bone\" isn't a bone at all: it's the ulnar nerve, which runs close to the skin at your elbow.</li><li><strong>Mandible:</strong> the jawbone, hence Mandy Bull.</li><li>An adult skeleton has 206 bones. Babies are born with nearer 300, which fuse as they grow.</li></ul>"
+      },
+      {
+        "heading": "Skeletons at Halloween and beyond",
+        "content": "<p>Skeletons are the friendliest of the Halloween crowd: no fangs, no curses, just a grin. That's why the garden skeleton has become a Halloween tradition, often posed doing something ordinary like gardening or walking the dog, and why it deserves a pun.</p><p>In Mexico, skeletons are part of the Day of the Dead (1 and 2 November), when families remember those who have died. The elegant skeleton La Calavera Catrina comes from the artist José Guadalupe Posada's work in the early 1900s.</p><p>For stories and games, the grim style gives skeleton lords and barrow kings. For more of the undead, try the <a href=\"zombie-name-generator.html\">Zombie</a>, <a href=\"ghost-name-generator.html\">Ghost</a> and <a href=\"vampire-name-generator.html\">Vampire</a> name generators.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a funny name for a skeleton?",
+        "answer": "A bone pun: Bonaparte, Sir Femur, Patella Pete, Skully Backbone or Humerus. Choose the puns style, and add a title for Grandpa Radius or Lady Ulna."
+      },
+      {
+        "question": "What should I call my Halloween garden skeleton?",
+        "answer": "Something that suits what it's doing. A skeleton weeding the borders could be Old Tibia Thompson; one walking a skeleton dog could be Bonaparte."
+      },
+      {
+        "question": "How many bones are in a skeleton?",
+        "answer": "An adult human skeleton has 206 bones. Babies are born with around 300, and some fuse together as they grow."
+      }
+    ]
   }
 }

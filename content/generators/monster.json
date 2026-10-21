@@ -4,7 +4,7 @@
   "icon": "👹",
   "category": "halloween",
   "published": "2026-10-21",
-  "description": "Monster names for stories, games and Halloween: grim beasts from under the bed, the swamp, the sea, the mountains and beyond, or funny, friendly monsters for kids.",
+  "description": "Monster names for stories, games and Halloween: grim beasts from under the bed, the swamp, the sea and the mountains, or funny, friendly monsters for kids.",
   "seoKeywords": "monster name generator, monster names, scary monster names, funny monster names, cute monster names, sea monster names, swamp monster names",
   "isPopular": false,
   "filters": {
@@ -741,7 +741,29 @@
       "tagline": "Grim monsters from under the bed, the swamp, the sea, the mountains and beyond, or funny, friendly ones for kids."
     },
     "intro": "A monster's name should sound like the place it lurks: something that scratches under the bed, gulps in a bog or sleeps at the bottom of the sea. This **monster name generator** makes grim names with epithets for stories and games, and funny, friendly names for kids.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Monsters and where they lurk",
+        "content": "<ul><li><strong>The word:</strong> monster comes from the Latin <em>monstrum</em>, an omen or warning, from <em>monere</em>, \"to warn\". Many folklore monsters were exactly that: a warning to keep children safe.</li><li><strong>Under the bed:</strong> the bogeyman has no single shape. He's whatever lurks in the dark corner, which is why under-the-bed names are all fingers, whispers and waiting.</li><li><strong>In the swamp:</strong> English folklore has Jenny Greenteeth, a river hag said to drag children into weedy ponds. The story kept children away from deep water.</li><li><strong>In the sea:</strong> the kraken comes from Norwegian sailors' tales, and was described by the Danish-Norwegian bishop Erik Pontoppidan in his natural history of Norway in the 1750s.</li><li><strong>In the mountains:</strong> Scandinavian trolls live under the hills and, in many tales, turn to stone in sunlight.</li><li><strong>Eldritch:</strong> an old Scots word for weird or unearthly, made famous by H. P. Lovecraft's tales of things too strange to describe.</li></ul>"
+      },
+      {
+        "heading": "Naming your monster",
+        "content": "<ul><li><strong>Make it sound like its home.</strong> Swamp monsters squelch and gurgle; sea monsters are long and salty; mountain monsters crunch.</li><li><strong>An epithet tells the story:</strong> \"the Lantern-Lurer\" says how it hunts before anyone meets it.</li><li><strong>For children,</strong> choose the funny style or Friendly monster. A monster who steals socks is scary enough at bedtime.</li></ul><p>For more creatures, try the <a href=\"dragon-name-generator.html\">Dragon</a>, <a href=\"goblin-name-generator.html\">Goblin</a> and <a href=\"werewolf-name-generator.html\">Werewolf</a> name generators.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good name for a scary monster?",
+        "answer": "Something with hard sounds that hints at where it lives, plus an epithet: Gnarlclaw of the Dark Corner, or Bogsludge the Patient Mouth. Choose the grim style."
+      },
+      {
+        "question": "What's a good name for a friendly monster?",
+        "answer": "Soft, silly sounds work best: Nibbkins, Puddlecuddle, Captain Blubhug. Choose Friendly monster, or the funny style for any kind."
+      },
+      {
+        "question": "Where does the word monster come from?",
+        "answer": "From the Latin monstrum, meaning an omen or a warning, from monere, to warn."
+      }
+    ]
   }
 }
