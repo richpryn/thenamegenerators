@@ -279,7 +279,29 @@
       "tagline": "Names for centaurs, from Greek-sounding heroes to stargazers named for real stars."
     },
     "intro": "Centaurs are half human, half horse, and in Greek myth they lived in the hills of Thessaly. Some were wild, and some, like the wise teacher of heroes, were healers and astronomers. This **centaur name generator** makes Greek-sounding names, wild forest names and stargazer names taken from real stars.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Centaurs in Greek myth",
+        "content": "<p>In Greek myth the centaurs lived in Thessaly, in the mountains of northern Greece, around Mount Pelion.</p><ul><li><strong>Wild and wise:</strong> most centaurs were wild, drinking and fighting, but Chiron was different: a healer and teacher of heroes, including Achilles and Jason.</li><li><strong>The battle with the Lapiths:</strong> at a wedding feast the centaurs got drunk and tried to carry off the bride, and the fight that followed is carved on the Parthenon in Athens.</li><li><strong>In the stars:</strong> the constellation Centaurus holds Alpha Centauri, the nearest star system to our Sun, and Sagittarius is usually drawn as a centaur archer.</li></ul><p>The generator leaves out the famous centaurs of myth and fiction, like Chiron and Nessus, so every name is new.</p>"
+      },
+      {
+        "heading": "Naming a centaur",
+        "content": "<p>A centaur's name depends on which kind of centaur it is.</p><ul><li><strong>Greek</strong> names suit a centaur of myth: Iolaos, Leucippe (\"white horse\"), with a home \"of Mount Pelion\" or \"of the Thessalian Plains\".</li><li><strong>Forest</strong> names suit a woodland centaur: Oakhoof, Birchheart, Stonegallop.</li><li><strong>Stargazer</strong> names use real star names, such as Capella and Alnitak, for centaurs who read the sky.</li></ul><p>For another half-human beast of Greek myth, try the <a href=\"minotaur-name-generator.html\">Minotaur Name Generator</a>.</p><p>For more beasts of legend, see all the <a href=\"../categories/mythical-names.html\">mythical creature name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Where did centaurs live in Greek myth?",
+        "answer": "In Thessaly in northern Greece, especially on and around Mount Pelion."
+      },
+      {
+        "question": "Who was the most famous centaur?",
+        "answer": "Chiron, the wise centaur who taught heroes like Achilles and Jason. Unlike most centaurs, he was gentle and learned."
+      },
+      {
+        "question": "What's a good name for a centaur?",
+        "answer": "A Greek name with a home, like Iolaos of the High Meadows, a forest name like Oakhoof, or a real star name like Capella."
+      }
+    ]
   }
 }

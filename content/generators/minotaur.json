@@ -252,7 +252,29 @@
       "tagline": "Names for minotaurs, from Greek-sounding names to D&D warriors with a horn clan."
     },
     "intro": "The Minotaur of Greek myth was half man, half bull, and lived at the heart of the Labyrinth on Crete. In D&D and fantasy games, minotaurs are whole peoples with clans and warriors. This **minotaur name generator** makes Greek-sounding names, brutish names like Gorehoof, and D&D-style warriors with a horn clan.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "The Minotaur of Crete",
+        "content": "<p>Minotaur means \"bull of Minos\", after the king of Crete whose wife gave birth to it.</p><ul><li><strong>The Labyrinth:</strong> Minos had the craftsman Daedalus build a maze to hold it, and fed it young Athenians: seven young men and seven young women sent as tribute.</li><li><strong>Theseus</strong> volunteered to go, killed the Minotaur, and found his way out with a ball of thread from Minos's daughter Ariadne.</li><li><strong>Its own name</strong> was Asterion, \"the starry one\", according to the Greek writers Apollodorus and Pausanias.</li><li><strong>Knossos:</strong> when Arthur Evans excavated the great palace at Knossos from 1900, he found frescoes of young people leaping over bulls, and the maze of rooms made the Labyrinth story easy to imagine.</li></ul>"
+      },
+      {
+        "heading": "Naming a minotaur",
+        "content": "<p>In fantasy games minotaurs are a whole people, not one monster, and they need names that sound strong.</p><ul><li><strong>Greek</strong> names (Taurion, Agrios, \"wild\") with a home \"of Knossos\" suit a minotaur of myth.</li><li><strong>Brutish</strong> names are all horn and hoof: Gorehoof, Bronzestamp.</li><li><strong>D&amp;D warrior</strong> names add a horn clan, like Moroth of the Iron Horn, for a minotaur character.</li></ul><p>For another half-human beast of Greek myth, try the <a href=\"centaur-name-generator.html\">Centaur Name Generator</a>.</p><p>For more beasts of legend, see all the <a href=\"../categories/mythical-names.html\">mythical creature name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What was the Minotaur's real name?",
+        "answer": "Asterion, meaning \"the starry one\", according to the Greek writers Apollodorus and Pausanias."
+      },
+      {
+        "question": "What does Minotaur mean?",
+        "answer": "Bull of Minos, after King Minos of Crete."
+      },
+      {
+        "question": "What's a good name for a D&D minotaur?",
+        "answer": "A strong name with a horn clan, like Kragg of the Iron Horn. Choose the D&D warrior style."
+      }
+    ]
   }
 }

@@ -240,7 +240,29 @@
       "tagline": "Names for wyverns, the two-legged dragons of heraldry and fantasy."
     },
     "intro": "A wyvern is a dragon with two legs instead of four and, often, a venomous barbed tail. It has flown on English coats of arms since the Middle Ages and is the traditional emblem of Wessex. This **wyvern name generator** makes fierce names like Skyrend, harsh draconic names like Vyrax, and heraldic wyverns.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "What makes a wyvern",
+        "content": "<p>In British heraldry a wyvern has two legs and two wings, and a dragon has four legs and two wings.</p><ul><li><strong>The word</strong> comes from Old French <em>wivre</em>, a viper, which is why wyverns are often drawn with a barbed, venomous tail.</li><li><strong>Wessex:</strong> a golden wyvern is the traditional emblem of Wessex, and it still flies on West Country flags and badges.</li><li><strong>In games,</strong> the two-legged rule has caught on: many fantasy games use \"wyvern\" for a smaller, wilder cousin of the dragon.</li></ul>"
+      },
+      {
+        "heading": "Naming a wyvern",
+        "content": "<p>A wyvern is a hunter, so its name should sound fast and sharp.</p><ul><li><strong>Fierce</strong> names: Skyrend, Froststing, Barbscourge.</li><li><strong>Draconic</strong> names with a hiss: Vyrax, Rythoss.</li><li><strong>Heraldic</strong> names use real tinctures, the colours of heraldry: gules (red), azure (blue), vert (green), sable (black), purpure (purple), or (gold) and argent (silver). The Gules Wyvern of the Old Kingdom would look at home on a banner.</li></ul><p>For the four-legged kind, try the <a href=\"dragon-name-generator.html\">Dragon Name Generator</a>, and for a whole coat of arms, the <a href=\"shield-name-generator.html\">Shield Name Generator</a>.</p><p>For more beasts of legend, see all the <a href=\"../categories/mythical-names.html\">mythical creature name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's the difference between a wyvern and a dragon?",
+        "answer": "In British heraldry a wyvern has two legs and a dragon has four. Both have wings, and wyverns often have a barbed tail."
+      },
+      {
+        "question": "Why is the wyvern a symbol of Wessex?",
+        "answer": "A golden wyvern has long been the traditional emblem of the old kingdom of Wessex, and it's still used on West Country flags and badges."
+      },
+      {
+        "question": "What does gules mean?",
+        "answer": "Red, in heraldry. The heraldic colours are gules (red), azure (blue), vert (green), sable (black), purpure (purple), or (gold) and argent (silver)."
+      }
+    ]
   }
 }

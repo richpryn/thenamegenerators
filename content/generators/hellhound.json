@@ -279,7 +279,29 @@
       "tagline": "Names for hellhounds and three-headed dogs, including a name for each head."
     },
     "intro": "Hellhounds guard the gates of the underworld in myths from Greece to Britain, where black dogs with burning eyes haunt lonely roads. This **hellhound name generator** makes infernal names like Ashmaw, names from Greek myth, silly pet names, and, for three-headed dogs, a name for each head.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Cerberus and his family",
+        "content": "<p>The best-known hellhound is Cerberus, the dog who guarded the gates of the Greek underworld so the dead couldn't leave.</p><ul><li><strong>Three heads:</strong> later writers settled on three. The poet Hesiod, one of the first to describe him, gave him fifty.</li><li><strong>Heracles</strong> dragged him up to the world of the living as the last of his twelve labours.</li><li><strong>His brother</strong> Orthos, a two-headed dog, guarded the cattle of the giant Geryon.</li></ul><p>The generator's \"Three heads\" format gives one name for each head, like Biscuit, Toffee and Pickles, which is handy for a three-headed dog costume or three dogs who go everywhere together.</p>"
+      },
+      {
+        "heading": "Britain's black dogs",
+        "content": "<p>Britain has its own hellhounds: black dogs with burning eyes, seen on lonely roads and in churchyards.</p><ul><li><strong>Black Shuck</strong> of East Anglia is said to have burst into the churches at Bungay and Blythburgh in a storm in 1577. Scorch marks on Blythburgh's door are still called his claw marks.</li><li><strong>The Barghest</strong> haunts Yorkshire, and Wales has the Gwyllgi, the \"dog of darkness\".</li><li><strong>The Hound of the Baskervilles</strong> (1902), Arthur Conan Doyle's Sherlock Holmes story, drew on Dartmoor's black dog legends.</li></ul><p>For more of the underworld, try the <a href=\"demon-name-generator.html\">Demon Name Generator</a>. For a real black dog or cat, the <a href=\"black-cat-name-generator.html\">Black Cat Name Generator</a> has names for both.</p><p>For more beasts of legend, see all the <a href=\"../categories/mythical-names.html\">mythical creature name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good names for a three-headed dog?",
+        "answer": "Choose the Three heads format for a name for each head, like Biscuit, Toffee and Pickles, or the Greek style for underworld names."
+      },
+      {
+        "question": "How many heads did Cerberus have?",
+        "answer": "Usually three, though the early Greek poet Hesiod gave him fifty."
+      },
+      {
+        "question": "What is Black Shuck?",
+        "answer": "A ghostly black dog of East Anglian folklore, said to have attacked two Suffolk churches during a storm in 1577."
+      }
+    ]
   }
 }

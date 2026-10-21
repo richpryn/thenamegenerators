@@ -4,7 +4,7 @@
   "icon": "🐍",
   "category": "mythical",
   "published": "2026-10-22",
-  "description": "Hydra names for D&D, stories and games: many-headed serpents named for their venom and coils, hydras named for the lake they haunt, and Greek-sounding names.",
+  "description": "Hydra names for stories and games: many-headed serpents like Venomcoil, lake hydras like the Hydra of Blackmere, and Greek-sounding names.",
   "seoKeywords": "hydra name generator, hydra names, many headed monster names, sea serpent names, dnd hydra names, serpent names, monster snake names",
   "seoTitle": "Hydra Name Generator: Many-Headed Serpent Names",
   "isPopular": false,
@@ -256,7 +256,29 @@
       "tagline": "Names for many-headed serpents, from Venomcoil to the Hydra of Blackmere."
     },
     "intro": "The Hydra of Greek myth lived in the marshes of Lerna, and every head Heracles cut off grew back as two. This **hydra name generator** names many-headed serpents for D&D, stories and games: monstrous names like Venomcoil, hydras named for the lake they haunt, and Greek-sounding names.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "The Hydra of Lerna",
+        "content": "<p>The Hydra of Greek myth lived in the swamps of Lerna, near Argos, and killing it was the second of Heracles's twelve labours.</p><ul><li><strong>Two for one:</strong> every head Heracles cut off grew back as two, until his nephew Iolaus burned each neck with a torch to stop it.</li><li><strong>One immortal head</strong> could not be killed, so Heracles buried it under a great rock.</li><li><strong>Poisoned arrows:</strong> he dipped his arrows in the Hydra's venom, and they later caused the deaths of several heroes, and of Heracles himself.</li><li><strong>How many heads?</strong> Ancient writers can't agree. Nine is the usual number; some say many more.</li></ul>"
+      },
+      {
+        "heading": "Naming a hydra",
+        "content": "<p>A hydra name should hiss, or tell you where to keep away from.</p><ul><li><strong>Serpent</strong> names are all coil and venom: Venomcoil, Bilescale.</li><li><strong>Lake</strong> names put it in its swamp: the Hydra of Blackmere, the Mire Hydra.</li><li><strong>Greek</strong> names (Enneaphis, \"nine-snake\") suit a hydra of myth.</li><li><strong>Epithets</strong> give the head count, like \"the Nine-Headed\".</li></ul><p>Hydra is also the largest constellation in the sky. For other serpents, try the <a href=\"wyvern-name-generator.html\">Wyvern</a> and <a href=\"dragon-name-generator.html\">Dragon</a> name generators.</p><p>For more beasts of legend, see all the <a href=\"../categories/mythical-names.html\">mythical creature name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many heads did the Hydra have?",
+        "answer": "Usually nine, though ancient writers disagree. Every head cut off grew back as two."
+      },
+      {
+        "question": "How did Heracles kill the Hydra?",
+        "answer": "He cut off the heads while his nephew Iolaus burned each neck so it couldn't grow back, then buried the immortal last head under a rock."
+      },
+      {
+        "question": "What's a good name for a hydra?",
+        "answer": "A hissing serpent name like Venomcoil, a place like the Hydra of Blackmere, or a Greek one like Enneaphis, with a head count as an epithet."
+      }
+    ]
   }
 }
