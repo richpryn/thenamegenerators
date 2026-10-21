@@ -981,9 +981,9 @@ ${scriptJson({
                 <h2>How to use the wheel</h2>
                 <p class="big">Put one name on each line, press Spin, and the wheel picks one at random.</p>
                 <ol>
-                    <li><strong>Add names.</strong> Type them, paste a list from a spreadsheet, or add 8 from one of our name generators.</li>
+                    <li><strong>Add names.</strong> Type them, paste a list from a spreadsheet, or add 8 from one of our <a href="all-generators.html">name generators</a>.</li>
                     <li><strong>Spin.</strong> Press Spin, tap the wheel, or press Space or Enter when the wheel is selected.</li>
-                    <li><strong>Keep going.</strong> "Remove &amp; spin again" takes the winner off so they can't come up again: handy for turn order, or a raffle with several prizes.</li>
+                    <li><strong>Keep going.</strong> "Remove &amp; spin again" takes the winner off so they can't come up again: handy for turn order, or a <a href="raffle-picker.html">raffle</a> with several prizes.</li>
                     <li><strong>Share it.</strong> Copy the link and anyone who opens it gets the same list.</li>
                 </ol>
 
@@ -991,7 +991,7 @@ ${scriptJson({
                 <p>Every name gets a slice the same size, and duplicates are removed so nobody gets two. The winner is picked by your browser's built-in secure random number generator the moment you press Spin; the spin is just there to show you where it landed, and the wheel always stops on the name that was picked.</p>
 
                 <h2 class="section">Ideas</h2>
-                <p>Pick who goes first at the table, choose a pupil to answer, draw a raffle, decide whose turn it is to make the tea, or put your shortlist of band names on the wheel and let it decide.</p>
+                <p>Pick who goes first at the table, <a href="random-name-picker.html">choose a pupil to answer</a>, draw a raffle, decide whose turn it is to make the tea, or put your shortlist of <a href="posts/band-name-generator.html">band names</a> on the wheel and let it decide.</p>
             </article>
 
             <section class="section">
@@ -1078,7 +1078,7 @@ const SIBLING_PAGES = {
     article: `<h2>How to use the name picker</h2>
                 <p class="big">Put one name on each line and press Draw. The top card turns over to show who was picked.</p>
                 <ol>
-                    <li><strong>Add names.</strong> Type them, paste a class list, or add 8 from one of our name generators.</li>
+                    <li><strong>Add names.</strong> Type them, paste a class list, or add 8 from one of our <a href="all-generators.html">name generators</a>.</li>
                     <li><strong>Draw.</strong> Press "Draw a name". Every name has the same chance.</li>
                     <li><strong>Take it out.</strong> "Remove &amp; draw again" takes the name off the list so it can't come up twice, which is handy for picking pupils to answer in turn.</li>
                     <li><strong>Share it.</strong> Copy the link and anyone who opens it gets the same list.</li>
@@ -1388,7 +1388,7 @@ ${scriptJson({
             </section>
 
             <div class="section intro">
-                <p>Every tool works the same way: type or paste names, one per line, or add 8 from one of our name generators. Your list is saved in your own browser, so it's there next time, and you can share it as a link. The names travel inside the link itself, so nothing is stored on our server.</p>
+                <p>Every tool works the same way: type or paste names, one per line, or add 8 from one of our <a href="all-generators.html">name generators</a>. Your list is saved in your own browser, so it's there next time, and you can share it as a link. The names travel inside the link itself, so nothing is stored on our server.</p>
                 <p>Every pick uses your browser's secure random number generator, and duplicate names are removed automatically so everyone has the same chance.</p>
             </div>
         </main>
