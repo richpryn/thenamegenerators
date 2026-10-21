@@ -63,6 +63,7 @@ New and rewritten pages. Read them on the live site; reply in any session with c
   - **Gamertag Generator** (`posts/gamertag-generator.html`)
   - **Spin the Wheel** (`spin-the-wheel.html`): try it on your phone. Also request indexing for it in Search Console.
   - **Name tools** (`name-tools.html` hub): Random Name Picker, Raffle Picker, Secret Santa Generator, Team Generator. Request indexing for the hub and all four pages.
+- [ ] **Warhammer 40k** (rebuilt: every faction, from Space Marines to Tyranids, each with its Chapters, Legions, regiments, orders, clans or septs, and new copy for all of them)
 - [ ] Path of Exile Witch (rewritten: epithets by Ascendancy)
 - [ ] Elven Sword (rebuilt: every name now has a real Sindarin or Quenya meaning)
 - [ ] Dungeon Synth (rewritten without your notes; your notes would make it better)
