@@ -473,7 +473,29 @@
       "tagline": "Names for giants, from muddy hill giants to storm giants under the sea."
     },
     "intro": "Giants appear in myths all over the world, and in D&D each kind lives somewhere different: hill giants in the lowlands, frost giants in the frozen north, storm giants beneath the sea. This **giant name generator** names all six D&D kinds of giant, each with names that sound like their home.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Giants in British and Irish legend",
+        "content": "<p>Britain and Ireland are full of places giants are said to have made or left behind.</p><ul><li><strong>The Giant's Causeway</strong> in County Antrim was said to have been built by the Irish giant Fionn mac Cumhaill (Finn McCool) to reach his Scottish rival Benandonner.</li><li><strong>Gogmagog</strong> was a giant of the legendary British history, and figures of Gog and Magog have stood in London's Guildhall for centuries.</li><li><strong>The Cerne Abbas Giant,</strong> a chalk figure on a Dorset hillside, is probably over a thousand years old, according to recent soil tests.</li><li><strong>In Norse myth</strong> the giants, the jötnar, were there before the gods, and the world was made from the body of the first of them.</li></ul>"
+      },
+      {
+        "heading": "D&D giants",
+        "content": "<p>D&amp;D has six main kinds of giant, ranked in an order called the ordning, with storm giants at the top and hill giants at the bottom.</p><ul><li><strong>Hill giants</strong> are greedy and simple.</li><li><strong>Stone giants</strong> are quiet carvers who live in caves.</li><li><strong>Frost giants</strong> are raiders from the frozen north.</li><li><strong>Fire giants</strong> are smiths and soldiers who live in volcanoes.</li><li><strong>Cloud giants</strong> live in castles in the sky.</li><li><strong>Storm giants</strong> are wise and solitary, living under the sea or on mountaintops.</li></ul><p>Choose a kind and each one gets names in its own sound, with a home or a title. For smaller brutes, try the <a href=\"ogre-name-generator.html\">Ogre</a> and <a href=\"troll-name-generator.html\">Troll</a> name generators.</p><p>For more beasts of legend, see all the <a href=\"../categories/mythical-names.html\">mythical creature name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are the types of giant in D&D?",
+        "answer": "Hill, stone, frost, fire, cloud and storm giants, ranked in that order from bottom to top in the giants' ordning."
+      },
+      {
+        "question": "Who built the Giant's Causeway?",
+        "answer": "In legend, the Irish giant Fionn mac Cumhaill, to reach his Scottish rival Benandonner. In fact it's natural basalt columns formed by an ancient lava flow."
+      },
+      {
+        "question": "What's a good name for a frost giant?",
+        "answer": "Choose Frost for hard, cold names with a home in the frozen north."
+      }
+    ]
   }
 }

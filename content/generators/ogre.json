@@ -311,7 +311,29 @@
       "tagline": "Names for ogres, from brutish D&D warriors to the fairy-tale kind who smell your bones."
     },
     "intro": "The ogre comes from fairy tales, where it is a huge, hungry giant who eats travellers, and from D&D, where ogres live in tribes and fight with clubs. This **ogre name generator** makes brutish names, fairy-tale ogres, D&D ogres with a tribe and funny ogres who mostly want lunch.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Where ogres come from",
+        "content": "<p>The word ogre first appears in French fairy tales, most famously in Charles Perrault's collection of 1697.</p><ul><li><strong>Perrault's ogres</strong> eat people, especially children: the ogre outwitted in \"Puss in Boots\" and the ogre in \"Hop-o'-My-Thumb\", whose seven-league boots are stolen.</li><li><strong>An ogress</strong> appears in Perrault's \"Sleeping Beauty\", as the prince's mother, who wants to eat her grandchildren.</li><li><strong>The origin</strong> of the word is uncertain. One suggestion is Orcus, a Roman god of the underworld.</li><li><strong>In D&amp;D,</strong> ogres are huge, greedy and live in tribes, which is why tribe names suit them.</li></ul>"
+      },
+      {
+        "heading": "Naming an ogre",
+        "content": "<ul><li><strong>Brutish</strong> ogres get short, thick names: Grubnak, Smashra.</li><li><strong>Fairy-tale</strong> ogres get an old, local name: Crookshin of Thornwood.</li><li><strong>D&amp;D</strong> ogres get a tribe: Bolga of the Skull Rock.</li><li><strong>Funny</strong> ogres are friendlier than they look: Sir Snackalot, Little Nigel.</li></ul><p>For other big brutes, try the <a href=\"troll-name-generator.html\">Troll</a> and <a href=\"giant-name-generator.html\">Giant</a> name generators.</p><p>For more beasts of legend, see all the <a href=\"../categories/mythical-names.html\">mythical creature name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Where does the word ogre come from?",
+        "answer": "It first appears in French fairy tales, most famously Charles Perrault's of 1697. Its origin is uncertain; one idea is the Roman underworld god Orcus."
+      },
+      {
+        "question": "What's the difference between an ogre and a troll?",
+        "answer": "Ogres come from French fairy tales and eat people; trolls come from Scandinavian folklore and live in the mountains. In D&D, trolls regenerate and ogres don't."
+      },
+      {
+        "question": "What's a funny name for an ogre?",
+        "answer": "Choose the funny style for names like Sir Snackalot, Mighty Mavis or Little Nigel."
+      }
+    ]
   }
 }

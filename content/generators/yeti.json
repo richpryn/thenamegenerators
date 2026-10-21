@@ -278,7 +278,29 @@
       "tagline": "Names for yetis, from fierce mountain beasts to a cuddly one called Snowboots."
     },
     "intro": "The yeti, or abominable snowman, is the ape-like creature said to walk the high Himalayas, known mostly from footprints in the snow. This **yeti name generator** makes fierce mountain names like Frostmane, cute names for toys and Christmas stories, and funny names for a yeti called Big Fred.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "The yeti and the abominable snowman",
+        "content": "<p>The yeti comes from the folklore of the Himalayas, where the Sherpa people tell of a large, ape-like creature of the high snows.</p><ul><li><strong>\"Abominable snowman\"</strong> came from a mistranslation. In 1921 a British Everest expedition reported tracks in the snow, and a newspaper writer turned the local name into \"abominable snowman\".</li><li><strong>The famous footprint</strong> was photographed by the mountaineer Eric Shipton in 1951.</li><li><strong>DNA tests</strong> on hair, bones and other \"yeti\" samples in recent years have found they came from bears, mostly Himalayan and Tibetan brown bears, and in one case a dog.</li></ul>"
+      },
+      {
+        "heading": "Naming a yeti",
+        "content": "<ul><li><strong>Fierce</strong> yeti names sound like ice and avalanche: Frostmane, Avalanchefoot.</li><li><strong>Cute</strong> names suit a cuddly toy or a children's story: Snowboots, Little Snowdrop.</li><li><strong>Funny</strong> names make the most of a giant hairy snowman with an ordinary name: Big Fred, Steve.</li></ul><p>For a snowman with no fur at all, try the <a href=\"snowman-name-generator.html\">Snowman Name Generator</a>. For other giants of the mountains, there's the <a href=\"giant-name-generator.html\">Giant Name Generator</a>.</p><p>For more beasts of legend, see all the <a href=\"../categories/mythical-names.html\">mythical creature name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Where does the yeti come from?",
+        "answer": "From the folklore of the Himalayas, especially the Sherpa people of Nepal and Tibet."
+      },
+      {
+        "question": "Why is it called the abominable snowman?",
+        "answer": "Because of a mistranslation in a 1921 newspaper report about tracks found by a British Everest expedition."
+      },
+      {
+        "question": "Is the yeti real?",
+        "answer": "No yeti has ever been found. DNA tests on samples said to be from yetis have shown they came from bears."
+      }
+    ]
   }
 }
