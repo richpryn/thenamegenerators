@@ -4,7 +4,7 @@
   "icon": "🐍",
   "category": "mythical",
   "published": "2026-10-22",
-  "description": "Basilisk names for D&D, stories and games: stony names like Stonegaze, Latin-sounding names fit for the king of serpents, and basilisks named for their lair.",
+  "description": "Basilisk names for stories and games: stony names like Stonegaze, Latin-sounding ones like Regulus, and basilisks named for their lairs.",
   "seoKeywords": "basilisk name generator, basilisk names, dnd basilisk names, serpent names, snake monster names, cockatrice names, king of serpents names",
   "seoTitle": "Basilisk Name Generator: King of Serpents Names",
   "isPopular": false,
@@ -246,7 +246,29 @@
       "tagline": "Names for the basilisk, the crowned king of serpents whose gaze turns to stone."
     },
     "intro": "The basilisk's name comes from the Greek for little king, and Roman writers described it as a small serpent with a crown-shaped crest whose glance or breath could kill. Later legends gave it the power to turn victims to stone. This **basilisk name generator** makes stony names like Stonegaze, Latin-sounding names and basilisks named for their lair.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "The king of serpents",
+        "content": "<p>Basilisk comes from the Greek <em>basiliskos</em>, \"little king\", for the crown-shaped mark on its head.</p><ul><li><strong>Pliny the Elder</strong> described a small snake from Africa whose breath withered plants and split rocks, and which only a weasel could kill.</li><li><strong>The deadly gaze</strong> grew as the story was retold: by the Middle Ages, a basilisk could kill with a look.</li><li><strong>The cockatrice</strong> is its medieval cousin, a rooster-serpent said to hatch from an egg laid by a cockerel.</li><li><strong>Regulus,</strong> the Latin for \"little king\", is also the name of a bright star in the constellation Leo.</li></ul>"
+      },
+      {
+        "heading": "Naming a basilisk",
+        "content": "<ul><li><strong>Stony</strong> names describe the gaze: Stonegaze, Ashgaze, Coldhiss.</li><li><strong>Latin</strong> names suit its classical roots: Regulus, Basiliscus, Marmoreus (\"marble\").</li><li><strong>Named for its lair:</strong> the Basilisk of the Statue Garden, the Basilisk of the Dry Well.</li></ul><p>For other serpents, try the <a href=\"hydra-name-generator.html\">Hydra</a> and <a href=\"wyvern-name-generator.html\">Wyvern</a> name generators.</p><p>For more beasts of legend, see all the <a href=\"../categories/mythical-names.html\">mythical creature name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What does basilisk mean?",
+        "answer": "Little king, from the Greek basiliskos, after the crown-shaped mark on its head."
+      },
+      {
+        "question": "What kills a basilisk?",
+        "answer": "In Pliny's account, a weasel. Later legends add a rooster's crow, or its own reflection in a mirror."
+      },
+      {
+        "question": "What's the difference between a basilisk and a cockatrice?",
+        "answer": "The basilisk is a serpent from ancient writers; the cockatrice is a medieval rooster-serpent, said to hatch from a cockerel's egg."
+      }
+    ]
   }
 }

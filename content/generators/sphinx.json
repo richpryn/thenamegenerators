@@ -258,7 +258,29 @@
       "tagline": "Names for sphinxes, from Greek riddlers to the stone guardians of the desert."
     },
     "intro": "There are two sphinxes. The Greek sphinx sat outside Thebes and asked travellers a riddle, killing those who got it wrong. The Egyptian sphinx, like the Great Sphinx of Giza, is a lion with a human head that guards temples and tombs. This **sphinx name generator** names both, and sphinxes named for the gate they guard.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Two kinds of sphinx",
+        "content": "<p>The Greek and Egyptian sphinxes share a lion's body and a human head, and very little else.</p><ul><li><strong>The Greek sphinx</strong> had a woman's head, a lion's body and wings. She sat outside Thebes and asked every traveller a riddle: what walks on four legs in the morning, two at noon and three in the evening? Oedipus answered \"a human\", and she threw herself to her death.</li><li><strong>The Egyptian sphinx</strong> is usually male, with a king's head on a lion's body: a guardian, not a riddler.</li><li><strong>The Great Sphinx of Giza,</strong> about 73 metres long, is usually dated to the reign of the pharaoh Khafre, around 2500 BC.</li></ul>"
+      },
+      {
+        "heading": "Naming a sphinx",
+        "content": "<ul><li><strong>Greek riddlers</strong> get Greek names (Krypteia, \"hidden\").</li><li><strong>Egyptian-style</strong> names are built from real Egyptian name parts, like those in the <a href=\"mummy-name-generator.html\">Mummy Name Generator</a>, like Merankh and Amenka.</li><li><strong>Guardians</strong> are named for what they guard: the Sphinx of the Sealed Library, the Winged Sphinx of the Sun Gate.</li></ul><p>For other lion-bodied beasts, try the <a href=\"griffin-name-generator.html\">Griffin</a> and <a href=\"manticore-name-generator.html\">Manticore</a> name generators.</p><p>For more beasts of legend, see all the <a href=\"../categories/mythical-names.html\">mythical creature name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What was the riddle of the sphinx?",
+        "answer": "What walks on four legs in the morning, two at noon and three in the evening? A human: crawling as a baby, walking as an adult, and with a stick in old age."
+      },
+      {
+        "question": "What's the difference between the Greek and Egyptian sphinx?",
+        "answer": "The Greek sphinx was a winged woman-lion who asked riddles and killed; the Egyptian sphinx is usually a male guardian with a king's head."
+      },
+      {
+        "question": "How old is the Great Sphinx of Giza?",
+        "answer": "It's usually dated to the reign of the pharaoh Khafre, around 2500 BC."
+      }
+    ]
   }
 }

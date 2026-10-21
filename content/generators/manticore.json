@@ -246,7 +246,29 @@
       "tagline": "Names for the manticore, the lion with a human face and a tail full of spines."
     },
     "intro": "The manticore has a lion's body, a human face with three rows of teeth and a tail that shoots spines. Its name comes, through Greek writers, from an old Persian word meaning man-eater. This **manticore name generator** makes savage names like Spinetail, Persian-sounding names and manticores named for the wastes they hunt.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Where the manticore comes from",
+        "content": "<p>The manticore's name comes from Persian, through Greek, and means \"man-eater\".</p><ul><li><strong>Ctesias,</strong> a Greek doctor at the Persian court around 400 BC, described it: a red, lion-bodied beast with a human face, three rows of teeth, and a tail that shot spines.</li><li><strong>Pliny the Elder</strong> repeated the description in his <em>Natural History</em>, and from there it passed into medieval bestiaries.</li><li><strong>A tiger?</strong> Many think the legend began with travellers' tales of tigers, grown with each telling.</li></ul>"
+      },
+      {
+        "heading": "Naming a manticore",
+        "content": "<ul><li><strong>Savage</strong> names are all spine and fang: Spinetail, Fanghunter.</li><li><strong>Persian-sounding</strong> names echo its origin: Martikhor, Varesh, Taravash.</li><li><strong>Named for the wastes:</strong> the Manticore of the Scorched Plains, the Grinning Manticore of the Dust Sea.</li></ul><p>For other lion-bodied beasts, try the <a href=\"griffin-name-generator.html\">Griffin</a> and <a href=\"sphinx-name-generator.html\">Sphinx</a> name generators.</p><p>For more beasts of legend, see all the <a href=\"../categories/mythical-names.html\">mythical creature name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What does manticore mean?",
+        "answer": "Man-eater. The word came into Greek from Persian."
+      },
+      {
+        "question": "Who first described the manticore?",
+        "answer": "Ctesias, a Greek doctor at the Persian court, around 400 BC. Pliny the Elder later repeated his description."
+      },
+      {
+        "question": "What's a good name for a manticore?",
+        "answer": "A savage one like Spinetail, a Persian-sounding one like Martikhor, or a place, like the Manticore of the Scorched Plains."
+      }
+    ]
   }
 }

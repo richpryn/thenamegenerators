@@ -4,7 +4,7 @@
   "icon": "🐙",
   "category": "mythical",
   "published": "2026-10-22",
-  "description": "Kraken and sea monster names for stories, D&D and games: monstrous names like Deepmaw, Norse-sounding names, and sea monsters named for the waters they rule.",
+  "description": "Kraken names for sea monsters in stories and games: monstrous names like Deepmaw, Norse-sounding names like Hafgrim, and krakens named for their waters.",
   "seoKeywords": "kraken name generator, kraken names, sea monster names, sea serpent names, giant squid names, dnd kraken names, octopus monster names",
   "seoTitle": "Kraken Name Generator: Sea Monster Names",
   "isPopular": false,
@@ -246,7 +246,29 @@
       "tagline": "Names for the kraken and other sea monsters, from Deepmaw to the Kraken of the Grey Deep."
     },
     "intro": "The kraken comes from Norwegian sailors' stories: a sea monster so vast it could be mistaken for an island, which dragged ships down with its arms. The legend may come from sightings of giant squid. This **kraken name generator** makes monstrous names like Deepmaw, Norse-sounding names and sea monsters named for the waters they rule.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Where the kraken comes from",
+        "content": "<p>The kraken comes from Norwegian sailors' stories of a sea monster so vast it could be mistaken for an island.</p><ul><li><strong>Pontoppidan:</strong> the Danish-Norwegian bishop Erik Pontoppidan described it in his <em>Natural History of Norway</em> in the 1750s, warning that sailors had landed on it thinking it was land.</li><li><strong>Tennyson's</strong> poem \"The Kraken\" (1830) has it sleeping on the sea floor until the end of the world.</li><li><strong>The real thing:</strong> the giant squid, which can grow to more than 12 metres, is the likeliest source of the legend. It was first filmed alive in its deep-sea home in the 2000s.</li></ul>"
+      },
+      {
+        "heading": "Naming a kraken",
+        "content": "<ul><li><strong>Monstrous</strong> names are all maw and coil: Deepmaw.</li><li><strong>Norse</strong> names suit its home waters: Hafgrim, Sjovald, Stormulf.</li><li><strong>Named for its waters:</strong> the Kraken of the Grey Deep, the Thousand-Armed Kraken of the Frozen Fjord.</li></ul><p>For something that sings rather than strangles, try the <a href=\"siren-name-generator.html\">Siren Name Generator</a>. For other sea monsters, the <a href=\"monster-name-generator.html\">Monster Name Generator</a> has a sea style.</p><p>For more beasts of legend, see all the <a href=\"../categories/mythical-names.html\">mythical creature name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Where does the kraken come from?",
+        "answer": "From Norwegian folklore. The bishop Erik Pontoppidan described it in the 1750s as a sea monster so big that sailors mistook it for an island."
+      },
+      {
+        "question": "Is the kraken a real animal?",
+        "answer": "No, but the giant squid, which can be over 12 metres long, is probably where the legend began."
+      },
+      {
+        "question": "What's a good name for a kraken?",
+        "answer": "A monstrous one like Deepmaw, a Norse-sounding one like Hafgrim, or a place, like the Kraken of the Grey Deep."
+      }
+    ]
   }
 }

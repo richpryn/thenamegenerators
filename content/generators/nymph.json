@@ -571,7 +571,29 @@
       "tagline": "Names for nymphs of the trees, rivers, sea and mountains."
     },
     "intro": "In Greek myth, nymphs are the spirits of nature, each bound to a place: dryads to trees, naiads to rivers and springs, nereids to the sea and oreads to the mountains. This **nymph name generator** names all four kinds, with nature names like Willowwhisper and Greek-sounding names like Meliboia.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "The kinds of nymph",
+        "content": "<p>In Greek myth, nymphs are nature spirits, each tied to one kind of place. The word means a young woman or bride.</p><ul><li><strong>Dryads</strong> are tree nymphs; the name comes from the Greek for oak. Hamadryads were bound to a single tree and died with it.</li><li><strong>Naiads</strong> live in rivers, springs and fountains.</li><li><strong>Nereids</strong> are sea nymphs, the fifty daughters of the sea god Nereus.</li><li><strong>Oreads</strong> are mountain nymphs. Echo, who could only repeat what others said, was one.</li></ul>"
+      },
+      {
+        "heading": "Naming a nymph",
+        "content": "<ul><li><strong>Choose the kind first:</strong> the names follow where the nymph lives, so dryads get Willowbark and naiads Springeddy.</li><li><strong>Nature</strong> names are made from the place itself.</li><li><strong>Greek</strong> names (Daphnaia, from <em>daphne</em>, laurel) suit a nymph of myth.</li></ul><p>For the satyrs who chase them through the woods, try the <a href=\"satyr-name-generator.html\">Satyr Name Generator</a>. For nature spirits from British folklore, there's the <a href=\"fairy-name-generator.html\">Fairy Name Generator</a>.</p><p>For more beasts of legend, see all the <a href=\"../categories/mythical-names.html\">mythical creature name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are the four kinds of nymph?",
+        "answer": "The main kinds are dryads (trees), naiads (fresh water), nereids (the sea) and oreads (mountains)."
+      },
+      {
+        "question": "What does nymph mean?",
+        "answer": "In Greek it means a young woman or a bride. In myth it came to mean a female spirit of nature."
+      },
+      {
+        "question": "Was Echo a nymph?",
+        "answer": "Yes, a mountain nymph, or oread, cursed to repeat only the last words of others."
+      }
+    ]
   }
 }

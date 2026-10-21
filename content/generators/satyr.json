@@ -258,7 +258,29 @@
       "tagline": "Names for satyrs and fauns, from Greek revellers to D&D bards with a set of pipes."
     },
     "intro": "Satyrs are the goat-legged spirits of the Greek wilds, companions of the wine god and famous for music and dancing; the Romans called their gentler cousins fauns. This **satyr name generator** makes Greek-sounding names, woodland names like Ivyhorn, and names for D&D satyr bards.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Satyrs in Greek myth",
+        "content": "<p>Satyrs were the wild followers of Dionysus, god of wine, known for music, dancing and causing trouble.</p><ul><li><strong>Horse, then goat:</strong> in early Greek art satyrs have horses' ears and tails. The goat legs came later, as they merged with Pan and the Roman fauns.</li><li><strong>Satyr plays:</strong> Athenian playwrights followed three tragedies with a rude, comic satyr play. Only one survives complete, Euripides's <em>Cyclops</em>.</li><li><strong>The pipes:</strong> the syrinx, or panpipe, is the satyr's instrument, named after a nymph who was turned into reeds.</li></ul>"
+      },
+      {
+        "heading": "Naming a satyr",
+        "content": "<ul><li><strong>Greek</strong> names come from wine, dance and revelry: Komastes, \"reveller\", with a home \"of Arcadia\".</li><li><strong>Woodland</strong> names are all ivy and horn: Ivyhorn, Hazeltail, Acornhorn.</li><li><strong>D&amp;D bards:</strong> satyrs make natural bards, so this style gives them a stage name like Pip Merrypipe.</li></ul><p>For the nymphs of the same woods, try the <a href=\"nymph-name-generator.html\">Nymph Name Generator</a>.</p><p>For more beasts of legend, see all the <a href=\"../categories/mythical-names.html\">mythical creature name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's the difference between a satyr and a faun?",
+        "answer": "Satyrs are Greek, wild followers of Dionysus; fauns are their gentler Roman cousins. Over time both came to be shown with goat legs."
+      },
+      {
+        "question": "Did satyrs have goat legs?",
+        "answer": "Not at first. Early Greek art gives them horses' ears and tails; the goat legs came from Pan and the Roman fauns."
+      },
+      {
+        "question": "What's a good name for a D&D satyr bard?",
+        "answer": "Choose the D&D bard style for names like Pip Merrypipe."
+      }
+    ]
   }
 }
