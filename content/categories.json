@@ -360,6 +360,44 @@
     ]
   },
   {
+    "name": "Mythical Creatures",
+    "slug": "mythical",
+    "icon": "🦄",
+    "navLabel": "Mythical Creature Names",
+    "heading": "Mythical Creature Name Generators: Phoenixes, Unicorns and Griffins",
+    "seoTitle": "Mythical Creature Name Generators: Names for Beasts",
+    "description": "Names for mythical creatures from legend and folklore: phoenixes, unicorns, griffins, mermaids, pegasi and more.",
+    "seoDescription": "Mythical creature name generators: phoenix, unicorn, griffin, mermaid and pegasus names, from ancient legend to cute pet names. Free to use.",
+    "intro": "<p>These mythical creature name generators cover the beasts of legend, from Greek myth to the stories still told today. A <a href=\"../posts/phoenix-name-generator.html\">phoenix</a> wants a name that sounds like fire and dawn, a <a href=\"../posts/griffin-name-generator.html\">griffin</a> something proud enough to guard a mountain of gold, and a <a href=\"../posts/unicorn-name-generator.html\">unicorn</a> anything from Moonwhisper to Sir Prance-a-Lot.</p><p>Under the sea there are <a href=\"../posts/mermaid-name-generator.html\">mermaid and merman names</a>, and in the sky <a href=\"../posts/pegasus-name-generator.html\">winged horses</a>. For the bigger beasts, try the <a href=\"../posts/dragon-name-generator.html\">Dragon</a> and <a href=\"../posts/monster-name-generator.html\">Monster</a> name generators. More creatures are on the way.</p>",
+    "generators": [
+      "phoenix",
+      "unicorn",
+      "griffin",
+      "mermaid",
+      "pegasus",
+      "dragon",
+      "monster"
+    ],
+    "featured": [
+      {
+        "key": "phoenix",
+        "note": "fiery, ancient and cute names for the bird that rises from its ashes."
+      },
+      {
+        "key": "unicorn",
+        "note": "magical, legendary, cute and very silly unicorn names."
+      },
+      {
+        "key": "mermaid",
+        "note": "mermaid and merman names with sea surnames."
+      },
+      {
+        "key": "griffin",
+        "note": "noble, fierce and ancient names for gryphons."
+      }
+    ]
+  },
+  {
     "name": "Music",
     "slug": "music",
     "icon": "🎵",

@@ -1,0 +1,262 @@
+{
+  "title": "Phoenix Name Generator",
+  "slug": "phoenix-name-generator",
+  "icon": "🐦‍🔥",
+  "category": "mythical",
+  "published": "2026-10-22",
+  "description": "Phoenix names for stories, games and pets: fiery names like Emberwing, ancient-sounding names like Aithon and Flamma, and cute ones for a pet phoenix.",
+  "seoKeywords": "phoenix name generator, phoenix names, fire bird names, names that mean fire, fantasy phoenix names, cute phoenix names, firebird names",
+  "seoTitle": "Phoenix Name Generator: Fiery, Ancient & Cute Names",
+  "isPopular": false,
+  "filters": {
+    "style": {
+      "label": "Style",
+      "options": [
+        "any",
+        "fire",
+        "ancient",
+        "cute"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "fire": "Fiery (Emberwing)",
+        "ancient": "Ancient (Aithon)",
+        "cute": "Cute (Sparky)"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "name",
+        "epithet"
+      ],
+      "optionLabels": {
+        "name": "Name only",
+        "epithet": "With a title (the Undying)"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "name": {
+      "recipe": "switch",
+      "on": "style",
+      "cases": {
+        "fire": {
+          "recipe": "template",
+          "template": "[fire.a][fire.b]"
+        },
+        "ancient": {
+          "recipe": "template",
+          "template": [
+            "[ancient]",
+            "[ancient] of [places]"
+          ]
+        },
+        "cute": {
+          "recipe": "template",
+          "template": [
+            "[cute]",
+            "Little [cute]",
+            "Baby [cute]"
+          ]
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[fire.a][fire.b]",
+            "[ancient]",
+            "[ancient] of [places]",
+            "[cute]",
+            "Little [cute]",
+            "Baby [cute]"
+          ]
+        }
+      }
+    },
+    "epithet": {
+      "recipe": "switch",
+      "on": "style",
+      "cases": {
+        "fire": {
+          "recipe": "template",
+          "template": "[fire.a][fire.b] [epithets]"
+        },
+        "ancient": {
+          "recipe": "template",
+          "template": [
+            "[ancient] [epithets]",
+            "[ancient] of [places] [epithets]"
+          ]
+        },
+        "cute": {
+          "recipe": "template",
+          "template": [
+            "[cute] [epithets]",
+            "Little [cute] [epithets]",
+            "Baby [cute] [epithets]"
+          ]
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[fire.a][fire.b] [epithets]",
+            "[ancient] [epithets]",
+            "[ancient] of [places] [epithets]",
+            "[cute] [epithets]",
+            "Little [cute] [epithets]",
+            "Baby [cute] [epithets]"
+          ]
+        }
+      }
+    }
+  },
+  "data": {
+    "fire": {
+      "a": [
+        "Ember",
+        "Ash",
+        "Flame",
+        "Cinder",
+        "Sun",
+        "Blaze",
+        "Pyre",
+        "Solar",
+        "Scarlet",
+        "Gold",
+        "Flare",
+        "Dawn",
+        "Kindle",
+        "Sear",
+        "Char",
+        "Glow"
+      ],
+      "b": [
+        "wing",
+        "feather",
+        "heart",
+        "crest",
+        "song",
+        "tail",
+        "rise",
+        "plume",
+        "flight",
+        "talon",
+        "spark",
+        "call"
+      ]
+    },
+    "places": [
+      "the Sun Temple",
+      "the Ashen Peak",
+      "the Eastern Sky",
+      "the Burning Isle",
+      "the Golden Desert",
+      "the Last Pyre",
+      "Heliopolis",
+      "the Dawn Mountains",
+      "the Red Valley",
+      "the Ember Coast"
+    ],
+    "ancient": [
+      "Aithon",
+      "Phlegon",
+      "Ignis",
+      "Flamma",
+      "Ardens",
+      "Calida",
+      "Aurelia",
+      "Solenne",
+      "Seraphina",
+      "Ignatius",
+      "Aidan",
+      "Keahi",
+      "Nuri",
+      "Pyrrha",
+      "Helia",
+      "Aelius",
+      "Lucan",
+      "Aurelian",
+      "Fulvia",
+      "Rutilus",
+      "Candela",
+      "Lumina",
+      "Aestus",
+      "Calor",
+      "Fervor",
+      "Iskra",
+      "Ogonyok",
+      "Agneta",
+      "Elidor",
+      "Solveig",
+      "Sunniva",
+      "Aodh",
+      "Brenna",
+      "Cyrene",
+      "Phoebe"
+    ],
+    "cute": [
+      "Sparky",
+      "Cinders",
+      "Toasty",
+      "Flicker",
+      "Sunny",
+      "Pip",
+      "Matchstick",
+      "Kindle",
+      "Smokey",
+      "Chilli",
+      "Paprika",
+      "Mango",
+      "Sunset",
+      "Marigold",
+      "Peaches",
+      "Nugget",
+      "Saffron",
+      "Butterscotch",
+      "Toffee",
+      "Pumpkin",
+      "Ginger",
+      "Apricot",
+      "Tangerine",
+      "Crumpet",
+      "Fizz",
+      "Popcorn",
+      "Sizzle",
+      "Ember-Bean",
+      "Twiglet",
+      "Clementine",
+      "Biscuit",
+      "Tikka",
+      "Sundae",
+      "Fudge",
+      "Kiwi"
+    ],
+    "epithets": [
+      "the Undying",
+      "the Reborn",
+      "Who Rises from Ash",
+      "the Flame-Crowned",
+      "of the Thousand Dawns",
+      "the Sunbird",
+      "the Ever-Burning",
+      "the Golden",
+      "Keeper of the Last Fire",
+      "the Eternal",
+      "the Ashborn",
+      "Herald of the Dawn",
+      "the Twice-Born",
+      "of the Burning Sky"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🐦‍🔥 Phoenix Name Generator",
+      "tagline": "Names for a bird that burns and rises again, from Emberwing to a pet called Sparky."
+    },
+    "intro": "In legend, the phoenix lives for centuries, burns and is reborn from its own ashes, so its name should sound like fire and dawn. This **phoenix name generator** makes fiery names like Emberwing, ancient-sounding names like Aithon and Flamma, and cute names for a pet phoenix in a game or story.",
+    "sections": [],
+    "faqs": []
+  }
+}

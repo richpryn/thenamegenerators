@@ -20,7 +20,8 @@
     "events": "bunting",
     "halloween": "pumpkin",
     "minecraft": "pickaxe",
-    "christmas": "star"
+    "christmas": "star",
+    "mythical": "feather-wings"
   },
   "generators": {
     "album": "vinyl",
@@ -79,6 +80,7 @@
     "githyanki": "katana",
     "gnome": "mushroom",
     "goblin": "goblin-ear",
+    "griffin": "feather-wings",
     "guild": "banner",
     "half_elf": "leaf",
     "half_orc": "war-axe",
@@ -99,6 +101,7 @@
     "lotr_orc": "war-axe",
     "lotr_wizard": "wizard-hat",
     "medieval": "castle",
+    "mermaid": "wings",
     "minecraft_clan": "banner",
     "minecraft_item": "pickaxe",
     "minecraft_name_from_name": "pickaxe",
@@ -118,6 +121,8 @@
     "orc": "war-axe",
     "paladin": "round-shield",
     "path_of_exile_witch": "crystal-ball",
+    "pegasus": "star",
+    "phoenix": "flame",
     "pirate": "skull-bones",
     "podcast": "mic",
     "poison": "bottle",
@@ -142,6 +147,7 @@
     "sword": "sword",
     "tavern": "pub-sign",
     "tiefling": "horns",
+    "unicorn": "star",
     "vampire": "bat",
     "vampire_clan": "bat",
     "victorian": "top-hat",
