@@ -76,6 +76,7 @@
       }
     ],
     "generators": [
+      "scarecrow",
       "mummy",
       "horror_movie",
       "skeleton",
