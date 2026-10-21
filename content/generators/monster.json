@@ -234,27 +234,39 @@
               "recipe": "template",
               "template": [
                 "[funny.starts][funny.ends.shared] [funny.epithets.under_bed]",
+                "[funny.starts][funny.ends.shared], [funny.epithets.under_bed_titled]",
                 "[funny.starts][funny.ends.under_bed] [funny.epithets.under_bed]",
+                "[funny.starts][funny.ends.under_bed], [funny.epithets.under_bed_titled]",
                 "[funny.titles] [funny.starts][funny.ends.shared] [funny.epithets.under_bed]",
-                "[funny.titles] [funny.starts][funny.ends.under_bed] [funny.epithets.under_bed]"
+                "[funny.titles] [funny.starts][funny.ends.shared], [funny.epithets.under_bed_titled]",
+                "[funny.titles] [funny.starts][funny.ends.under_bed] [funny.epithets.under_bed]",
+                "[funny.titles] [funny.starts][funny.ends.under_bed], [funny.epithets.under_bed_titled]"
               ]
             },
             "swamp": {
               "recipe": "template",
               "template": [
                 "[funny.starts][funny.ends.shared] [funny.epithets.swamp]",
+                "[funny.starts][funny.ends.shared], [funny.epithets.swamp_titled]",
                 "[funny.starts][funny.ends.swamp] [funny.epithets.swamp]",
+                "[funny.starts][funny.ends.swamp], [funny.epithets.swamp_titled]",
                 "[funny.titles] [funny.starts][funny.ends.shared] [funny.epithets.swamp]",
-                "[funny.titles] [funny.starts][funny.ends.swamp] [funny.epithets.swamp]"
+                "[funny.titles] [funny.starts][funny.ends.shared], [funny.epithets.swamp_titled]",
+                "[funny.titles] [funny.starts][funny.ends.swamp] [funny.epithets.swamp]",
+                "[funny.titles] [funny.starts][funny.ends.swamp], [funny.epithets.swamp_titled]"
               ]
             },
             "sea": {
               "recipe": "template",
               "template": [
                 "[funny.starts][funny.ends.shared] [funny.epithets.sea]",
+                "[funny.starts][funny.ends.shared], [funny.epithets.sea_titled]",
                 "[funny.starts][funny.ends.sea] [funny.epithets.sea]",
+                "[funny.starts][funny.ends.sea], [funny.epithets.sea_titled]",
                 "[funny.titles] [funny.starts][funny.ends.shared] [funny.epithets.sea]",
-                "[funny.titles] [funny.starts][funny.ends.sea] [funny.epithets.sea]"
+                "[funny.titles] [funny.starts][funny.ends.shared], [funny.epithets.sea_titled]",
+                "[funny.titles] [funny.starts][funny.ends.sea] [funny.epithets.sea]",
+                "[funny.titles] [funny.starts][funny.ends.sea], [funny.epithets.sea_titled]"
               ]
             },
             "mountain": {
@@ -288,17 +300,29 @@
               "recipe": "template",
               "template": [
                 "[funny.starts][funny.ends.shared] [funny.epithets.under_bed]",
+                "[funny.starts][funny.ends.shared], [funny.epithets.under_bed_titled]",
                 "[funny.starts][funny.ends.under_bed] [funny.epithets.under_bed]",
+                "[funny.starts][funny.ends.under_bed], [funny.epithets.under_bed_titled]",
                 "[funny.titles] [funny.starts][funny.ends.shared] [funny.epithets.under_bed]",
+                "[funny.titles] [funny.starts][funny.ends.shared], [funny.epithets.under_bed_titled]",
                 "[funny.titles] [funny.starts][funny.ends.under_bed] [funny.epithets.under_bed]",
+                "[funny.titles] [funny.starts][funny.ends.under_bed], [funny.epithets.under_bed_titled]",
                 "[funny.starts][funny.ends.shared] [funny.epithets.swamp]",
+                "[funny.starts][funny.ends.shared], [funny.epithets.swamp_titled]",
                 "[funny.starts][funny.ends.swamp] [funny.epithets.swamp]",
+                "[funny.starts][funny.ends.swamp], [funny.epithets.swamp_titled]",
                 "[funny.titles] [funny.starts][funny.ends.shared] [funny.epithets.swamp]",
+                "[funny.titles] [funny.starts][funny.ends.shared], [funny.epithets.swamp_titled]",
                 "[funny.titles] [funny.starts][funny.ends.swamp] [funny.epithets.swamp]",
+                "[funny.titles] [funny.starts][funny.ends.swamp], [funny.epithets.swamp_titled]",
                 "[funny.starts][funny.ends.shared] [funny.epithets.sea]",
+                "[funny.starts][funny.ends.shared], [funny.epithets.sea_titled]",
                 "[funny.starts][funny.ends.sea] [funny.epithets.sea]",
+                "[funny.starts][funny.ends.sea], [funny.epithets.sea_titled]",
                 "[funny.titles] [funny.starts][funny.ends.shared] [funny.epithets.sea]",
+                "[funny.titles] [funny.starts][funny.ends.shared], [funny.epithets.sea_titled]",
                 "[funny.titles] [funny.starts][funny.ends.sea] [funny.epithets.sea]",
+                "[funny.titles] [funny.starts][funny.ends.sea], [funny.epithets.sea_titled]",
                 "[funny.starts][funny.ends.shared] [funny.epithets.mountain]",
                 "[funny.starts][funny.ends.mountain] [funny.epithets.mountain]",
                 "[funny.titles] [funny.starts][funny.ends.shared] [funny.epithets.mountain]",
@@ -666,14 +690,11 @@
           "the Toy-Borrower",
           "the Very Shy",
           "the Tickler",
-          "Champion of Hide-and-Seek",
-          "Snorer Extraordinaire",
           "the Lost-Slipper Finder"
         ],
         "swamp": [
           "the Puddle-Splasher",
           "the Very Damp",
-          "King of the Frogs",
           "the Gurgling",
           "the Wellie-Stealer",
           "the Lily-Pad Lounger",
@@ -686,7 +707,6 @@
           "the Seasick",
           "the Bubble-Blower",
           "the Sandcastle-Kicker",
-          "Friend of Fish",
           "the Soggy",
           "the Shell-Collector",
           "the Paddler",
@@ -731,6 +751,16 @@
           "Who Checks for Bad Dreams",
           "the Night-Time Guardian",
           "the Sleepy"
+        ],
+        "under_bed_titled": [
+          "Champion of Hide-and-Seek",
+          "Snorer Extraordinaire"
+        ],
+        "swamp_titled": [
+          "King of the Frogs"
+        ],
+        "sea_titled": [
+          "Friend of Fish"
         ]
       }
     }

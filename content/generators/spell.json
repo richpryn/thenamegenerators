@@ -55,94 +55,220 @@
         "abjuration": {
           "recipe": "template",
           "template": [
-            "[abjuration.words][abjuration.ends]",
-            "[abjuration.words] [abjuration.types]",
-            "[owners]'s [adjectives] [abjuration.words]"
+            "[abjuration.themes.threshold.words][abjuration.ends]",
+            "[abjuration.themes.threshold.words] [abjuration.types]",
+            "[owners]'s [adjectives] [abjuration.themes.threshold.words]",
+            "[abjuration.themes.iron.words][abjuration.ends]",
+            "[abjuration.themes.iron.words] [abjuration.types]",
+            "[owners]'s [adjectives] [abjuration.themes.iron.words]",
+            "[abjuration.themes.silver.words][abjuration.ends]",
+            "[abjuration.themes.silver.words] [abjuration.types]",
+            "[owners]'s [adjectives] [abjuration.themes.silver.words]"
           ]
         },
         "conjuration": {
           "recipe": "template",
           "template": [
-            "[conjuration.words][conjuration.ends]",
-            "[conjuration.words] [conjuration.types]",
-            "[owners]'s [adjectives] [conjuration.words]"
+            "[conjuration.themes.beast.words][conjuration.ends]",
+            "[conjuration.themes.beast.words] [conjuration.types]",
+            "[owners]'s [adjectives] [conjuration.themes.beast.words]",
+            "[conjuration.themes.way.words][conjuration.ends]",
+            "[conjuration.themes.way.words] [conjuration.types]",
+            "[owners]'s [adjectives] [conjuration.themes.way.words]",
+            "[conjuration.themes.wild.words][conjuration.ends]",
+            "[conjuration.themes.wild.words] [conjuration.types]",
+            "[owners]'s [adjectives] [conjuration.themes.wild.words]",
+            "[conjuration.themes.light.words][conjuration.ends]",
+            "[conjuration.themes.light.words] [conjuration.types]",
+            "[owners]'s [adjectives] [conjuration.themes.light.words]"
           ]
         },
         "divination": {
           "recipe": "template",
           "template": [
-            "[divination.words][divination.ends]",
-            "[divination.words] [divination.types]",
-            "[owners]'s [adjectives] [divination.words]"
+            "[divination.themes.eye.words][divination.ends]",
+            "[divination.themes.eye.words] [divination.types]",
+            "[owners]'s [adjectives] [divination.themes.eye.words]",
+            "[divination.themes.sky.words][divination.ends]",
+            "[divination.themes.sky.words] [divination.types]",
+            "[owners]'s [adjectives] [divination.themes.sky.words]",
+            "[divination.themes.flame.words][divination.ends]",
+            "[divination.themes.flame.words] [divination.types]",
+            "[owners]'s [adjectives] [divination.themes.flame.words]",
+            "[divination.themes.voice.words][divination.ends]",
+            "[divination.themes.voice.words] [divination.types]",
+            "[owners]'s [adjectives] [divination.themes.voice.words]"
           ]
         },
         "enchantment": {
           "recipe": "template",
           "template": [
-            "[enchantment.words][enchantment.ends]",
-            "[enchantment.words] [enchantment.types]",
-            "[owners]'s [adjectives] [enchantment.words]"
+            "[enchantment.themes.sleep.words][enchantment.ends]",
+            "[enchantment.themes.sleep.words] [enchantment.types]",
+            "[owners]'s [adjectives] [enchantment.themes.sleep.words]",
+            "[enchantment.themes.song.words][enchantment.ends]",
+            "[enchantment.themes.song.words] [enchantment.types]",
+            "[owners]'s [adjectives] [enchantment.themes.song.words]",
+            "[enchantment.themes.sweet.words][enchantment.ends]",
+            "[enchantment.themes.sweet.words] [enchantment.types]",
+            "[owners]'s [adjectives] [enchantment.themes.sweet.words]",
+            "[enchantment.themes.mirth.words][enchantment.ends]",
+            "[enchantment.themes.mirth.words] [enchantment.types]",
+            "[owners]'s [adjectives] [enchantment.themes.mirth.words]"
           ]
         },
         "evocation": {
           "recipe": "template",
           "template": [
-            "[evocation.words][evocation.ends]",
-            "[evocation.words] [evocation.types]",
-            "[owners]'s [adjectives] [evocation.words]"
+            "[evocation.themes.fire.words][evocation.ends]",
+            "[evocation.themes.fire.words] [evocation.types]",
+            "[owners]'s [adjectives] [evocation.themes.fire.words]",
+            "[evocation.themes.storm.words][evocation.ends]",
+            "[evocation.themes.storm.words] [evocation.types]",
+            "[owners]'s [adjectives] [evocation.themes.storm.words]",
+            "[evocation.themes.frost.words][evocation.ends]",
+            "[evocation.themes.frost.words] [evocation.types]",
+            "[owners]'s [adjectives] [evocation.themes.frost.words]",
+            "[evocation.themes.star.words][evocation.ends]",
+            "[evocation.themes.star.words] [evocation.types]",
+            "[owners]'s [adjectives] [evocation.themes.star.words]"
           ]
         },
         "illusion": {
           "recipe": "template",
           "template": [
-            "[illusion.words][illusion.ends]",
-            "[illusion.words] [illusion.types]",
-            "[owners]'s [adjectives] [illusion.words]"
+            "[illusion.themes.mirror.words][illusion.ends]",
+            "[illusion.themes.mirror.words] [illusion.types]",
+            "[owners]'s [adjectives] [illusion.themes.mirror.words]",
+            "[illusion.themes.shadow.words][illusion.ends]",
+            "[illusion.themes.shadow.words] [illusion.types]",
+            "[owners]'s [adjectives] [illusion.themes.shadow.words]",
+            "[illusion.themes.phantom.words][illusion.ends]",
+            "[illusion.themes.phantom.words] [illusion.types]",
+            "[owners]'s [adjectives] [illusion.themes.phantom.words]",
+            "[illusion.themes.glimmer.words][illusion.ends]",
+            "[illusion.themes.glimmer.words] [illusion.types]",
+            "[owners]'s [adjectives] [illusion.themes.glimmer.words]"
           ]
         },
         "necromancy": {
           "recipe": "template",
           "template": [
-            "[necromancy.words][necromancy.ends]",
-            "[necromancy.words] [necromancy.types]",
-            "[owners]'s [adjectives] [necromancy.words]"
+            "[necromancy.themes.grave.words][necromancy.ends]",
+            "[necromancy.themes.grave.words] [necromancy.types]",
+            "[owners]'s [adjectives] [necromancy.themes.grave.words]",
+            "[necromancy.themes.wither.words][necromancy.ends]",
+            "[necromancy.themes.wither.words] [necromancy.types]",
+            "[owners]'s [adjectives] [necromancy.themes.wither.words]",
+            "[necromancy.themes.night.words][necromancy.ends]",
+            "[necromancy.themes.night.words] [necromancy.types]",
+            "[owners]'s [adjectives] [necromancy.themes.night.words]"
           ]
         },
         "transmutation": {
           "recipe": "template",
           "template": [
-            "[transmutation.words][transmutation.ends]",
-            "[transmutation.words] [transmutation.types]",
-            "[owners]'s [adjectives] [transmutation.words]"
+            "[transmutation.themes.beast.words][transmutation.ends]",
+            "[transmutation.themes.beast.words] [transmutation.types]",
+            "[owners]'s [adjectives] [transmutation.themes.beast.words]",
+            "[transmutation.themes.metal.words][transmutation.ends]",
+            "[transmutation.themes.metal.words] [transmutation.types]",
+            "[owners]'s [adjectives] [transmutation.themes.metal.words]",
+            "[transmutation.themes.green.words][transmutation.ends]",
+            "[transmutation.themes.green.words] [transmutation.types]",
+            "[owners]'s [adjectives] [transmutation.themes.green.words]"
           ]
         },
         "any": {
           "recipe": "template",
           "template": [
-            "[abjuration.words][abjuration.ends]",
-            "[abjuration.words] [abjuration.types]",
-            "[owners]'s [adjectives] [abjuration.words]",
-            "[conjuration.words][conjuration.ends]",
-            "[conjuration.words] [conjuration.types]",
-            "[owners]'s [adjectives] [conjuration.words]",
-            "[divination.words][divination.ends]",
-            "[divination.words] [divination.types]",
-            "[owners]'s [adjectives] [divination.words]",
-            "[enchantment.words][enchantment.ends]",
-            "[enchantment.words] [enchantment.types]",
-            "[owners]'s [adjectives] [enchantment.words]",
-            "[evocation.words][evocation.ends]",
-            "[evocation.words] [evocation.types]",
-            "[owners]'s [adjectives] [evocation.words]",
-            "[illusion.words][illusion.ends]",
-            "[illusion.words] [illusion.types]",
-            "[owners]'s [adjectives] [illusion.words]",
-            "[necromancy.words][necromancy.ends]",
-            "[necromancy.words] [necromancy.types]",
-            "[owners]'s [adjectives] [necromancy.words]",
-            "[transmutation.words][transmutation.ends]",
-            "[transmutation.words] [transmutation.types]",
-            "[owners]'s [adjectives] [transmutation.words]"
+            "[abjuration.themes.threshold.words][abjuration.ends]",
+            "[abjuration.themes.threshold.words] [abjuration.types]",
+            "[owners]'s [adjectives] [abjuration.themes.threshold.words]",
+            "[abjuration.themes.iron.words][abjuration.ends]",
+            "[abjuration.themes.iron.words] [abjuration.types]",
+            "[owners]'s [adjectives] [abjuration.themes.iron.words]",
+            "[abjuration.themes.silver.words][abjuration.ends]",
+            "[abjuration.themes.silver.words] [abjuration.types]",
+            "[owners]'s [adjectives] [abjuration.themes.silver.words]",
+            "[conjuration.themes.beast.words][conjuration.ends]",
+            "[conjuration.themes.beast.words] [conjuration.types]",
+            "[owners]'s [adjectives] [conjuration.themes.beast.words]",
+            "[conjuration.themes.way.words][conjuration.ends]",
+            "[conjuration.themes.way.words] [conjuration.types]",
+            "[owners]'s [adjectives] [conjuration.themes.way.words]",
+            "[conjuration.themes.wild.words][conjuration.ends]",
+            "[conjuration.themes.wild.words] [conjuration.types]",
+            "[owners]'s [adjectives] [conjuration.themes.wild.words]",
+            "[conjuration.themes.light.words][conjuration.ends]",
+            "[conjuration.themes.light.words] [conjuration.types]",
+            "[owners]'s [adjectives] [conjuration.themes.light.words]",
+            "[divination.themes.eye.words][divination.ends]",
+            "[divination.themes.eye.words] [divination.types]",
+            "[owners]'s [adjectives] [divination.themes.eye.words]",
+            "[divination.themes.sky.words][divination.ends]",
+            "[divination.themes.sky.words] [divination.types]",
+            "[owners]'s [adjectives] [divination.themes.sky.words]",
+            "[divination.themes.flame.words][divination.ends]",
+            "[divination.themes.flame.words] [divination.types]",
+            "[owners]'s [adjectives] [divination.themes.flame.words]",
+            "[divination.themes.voice.words][divination.ends]",
+            "[divination.themes.voice.words] [divination.types]",
+            "[owners]'s [adjectives] [divination.themes.voice.words]",
+            "[enchantment.themes.sleep.words][enchantment.ends]",
+            "[enchantment.themes.sleep.words] [enchantment.types]",
+            "[owners]'s [adjectives] [enchantment.themes.sleep.words]",
+            "[enchantment.themes.song.words][enchantment.ends]",
+            "[enchantment.themes.song.words] [enchantment.types]",
+            "[owners]'s [adjectives] [enchantment.themes.song.words]",
+            "[enchantment.themes.sweet.words][enchantment.ends]",
+            "[enchantment.themes.sweet.words] [enchantment.types]",
+            "[owners]'s [adjectives] [enchantment.themes.sweet.words]",
+            "[enchantment.themes.mirth.words][enchantment.ends]",
+            "[enchantment.themes.mirth.words] [enchantment.types]",
+            "[owners]'s [adjectives] [enchantment.themes.mirth.words]",
+            "[evocation.themes.fire.words][evocation.ends]",
+            "[evocation.themes.fire.words] [evocation.types]",
+            "[owners]'s [adjectives] [evocation.themes.fire.words]",
+            "[evocation.themes.storm.words][evocation.ends]",
+            "[evocation.themes.storm.words] [evocation.types]",
+            "[owners]'s [adjectives] [evocation.themes.storm.words]",
+            "[evocation.themes.frost.words][evocation.ends]",
+            "[evocation.themes.frost.words] [evocation.types]",
+            "[owners]'s [adjectives] [evocation.themes.frost.words]",
+            "[evocation.themes.star.words][evocation.ends]",
+            "[evocation.themes.star.words] [evocation.types]",
+            "[owners]'s [adjectives] [evocation.themes.star.words]",
+            "[illusion.themes.mirror.words][illusion.ends]",
+            "[illusion.themes.mirror.words] [illusion.types]",
+            "[owners]'s [adjectives] [illusion.themes.mirror.words]",
+            "[illusion.themes.shadow.words][illusion.ends]",
+            "[illusion.themes.shadow.words] [illusion.types]",
+            "[owners]'s [adjectives] [illusion.themes.shadow.words]",
+            "[illusion.themes.phantom.words][illusion.ends]",
+            "[illusion.themes.phantom.words] [illusion.types]",
+            "[owners]'s [adjectives] [illusion.themes.phantom.words]",
+            "[illusion.themes.glimmer.words][illusion.ends]",
+            "[illusion.themes.glimmer.words] [illusion.types]",
+            "[owners]'s [adjectives] [illusion.themes.glimmer.words]",
+            "[necromancy.themes.grave.words][necromancy.ends]",
+            "[necromancy.themes.grave.words] [necromancy.types]",
+            "[owners]'s [adjectives] [necromancy.themes.grave.words]",
+            "[necromancy.themes.wither.words][necromancy.ends]",
+            "[necromancy.themes.wither.words] [necromancy.types]",
+            "[owners]'s [adjectives] [necromancy.themes.wither.words]",
+            "[necromancy.themes.night.words][necromancy.ends]",
+            "[necromancy.themes.night.words] [necromancy.types]",
+            "[owners]'s [adjectives] [necromancy.themes.night.words]",
+            "[transmutation.themes.beast.words][transmutation.ends]",
+            "[transmutation.themes.beast.words] [transmutation.types]",
+            "[owners]'s [adjectives] [transmutation.themes.beast.words]",
+            "[transmutation.themes.metal.words][transmutation.ends]",
+            "[transmutation.themes.metal.words] [transmutation.types]",
+            "[owners]'s [adjectives] [transmutation.themes.metal.words]",
+            "[transmutation.themes.green.words][transmutation.ends]",
+            "[transmutation.themes.green.words] [transmutation.types]",
+            "[owners]'s [adjectives] [transmutation.themes.green.words]"
           ]
         }
       }
@@ -154,94 +280,220 @@
         "abjuration": {
           "recipe": "template",
           "template": [
-            "[abjuration.words][abjuration.ends]: [abjuration.effects]",
-            "[abjuration.words] [abjuration.types]: [abjuration.effects]",
-            "[owners]'s [adjectives] [abjuration.words]: [abjuration.effects]"
+            "[abjuration.themes.threshold.words][abjuration.ends]: [abjuration.themes.threshold.effects]",
+            "[abjuration.themes.threshold.words] [abjuration.types]: [abjuration.themes.threshold.effects]",
+            "[owners]'s [adjectives] [abjuration.themes.threshold.words]: [abjuration.themes.threshold.effects]",
+            "[abjuration.themes.iron.words][abjuration.ends]: [abjuration.themes.iron.effects]",
+            "[abjuration.themes.iron.words] [abjuration.types]: [abjuration.themes.iron.effects]",
+            "[owners]'s [adjectives] [abjuration.themes.iron.words]: [abjuration.themes.iron.effects]",
+            "[abjuration.themes.silver.words][abjuration.ends]: [abjuration.themes.silver.effects]",
+            "[abjuration.themes.silver.words] [abjuration.types]: [abjuration.themes.silver.effects]",
+            "[owners]'s [adjectives] [abjuration.themes.silver.words]: [abjuration.themes.silver.effects]"
           ]
         },
         "conjuration": {
           "recipe": "template",
           "template": [
-            "[conjuration.words][conjuration.ends]: [conjuration.effects]",
-            "[conjuration.words] [conjuration.types]: [conjuration.effects]",
-            "[owners]'s [adjectives] [conjuration.words]: [conjuration.effects]"
+            "[conjuration.themes.beast.words][conjuration.ends]: [conjuration.themes.beast.effects]",
+            "[conjuration.themes.beast.words] [conjuration.types]: [conjuration.themes.beast.effects]",
+            "[owners]'s [adjectives] [conjuration.themes.beast.words]: [conjuration.themes.beast.effects]",
+            "[conjuration.themes.way.words][conjuration.ends]: [conjuration.themes.way.effects]",
+            "[conjuration.themes.way.words] [conjuration.types]: [conjuration.themes.way.effects]",
+            "[owners]'s [adjectives] [conjuration.themes.way.words]: [conjuration.themes.way.effects]",
+            "[conjuration.themes.wild.words][conjuration.ends]: [conjuration.themes.wild.effects]",
+            "[conjuration.themes.wild.words] [conjuration.types]: [conjuration.themes.wild.effects]",
+            "[owners]'s [adjectives] [conjuration.themes.wild.words]: [conjuration.themes.wild.effects]",
+            "[conjuration.themes.light.words][conjuration.ends]: [conjuration.themes.light.effects]",
+            "[conjuration.themes.light.words] [conjuration.types]: [conjuration.themes.light.effects]",
+            "[owners]'s [adjectives] [conjuration.themes.light.words]: [conjuration.themes.light.effects]"
           ]
         },
         "divination": {
           "recipe": "template",
           "template": [
-            "[divination.words][divination.ends]: [divination.effects]",
-            "[divination.words] [divination.types]: [divination.effects]",
-            "[owners]'s [adjectives] [divination.words]: [divination.effects]"
+            "[divination.themes.eye.words][divination.ends]: [divination.themes.eye.effects]",
+            "[divination.themes.eye.words] [divination.types]: [divination.themes.eye.effects]",
+            "[owners]'s [adjectives] [divination.themes.eye.words]: [divination.themes.eye.effects]",
+            "[divination.themes.sky.words][divination.ends]: [divination.themes.sky.effects]",
+            "[divination.themes.sky.words] [divination.types]: [divination.themes.sky.effects]",
+            "[owners]'s [adjectives] [divination.themes.sky.words]: [divination.themes.sky.effects]",
+            "[divination.themes.flame.words][divination.ends]: [divination.themes.flame.effects]",
+            "[divination.themes.flame.words] [divination.types]: [divination.themes.flame.effects]",
+            "[owners]'s [adjectives] [divination.themes.flame.words]: [divination.themes.flame.effects]",
+            "[divination.themes.voice.words][divination.ends]: [divination.themes.voice.effects]",
+            "[divination.themes.voice.words] [divination.types]: [divination.themes.voice.effects]",
+            "[owners]'s [adjectives] [divination.themes.voice.words]: [divination.themes.voice.effects]"
           ]
         },
         "enchantment": {
           "recipe": "template",
           "template": [
-            "[enchantment.words][enchantment.ends]: [enchantment.effects]",
-            "[enchantment.words] [enchantment.types]: [enchantment.effects]",
-            "[owners]'s [adjectives] [enchantment.words]: [enchantment.effects]"
+            "[enchantment.themes.sleep.words][enchantment.ends]: [enchantment.themes.sleep.effects]",
+            "[enchantment.themes.sleep.words] [enchantment.types]: [enchantment.themes.sleep.effects]",
+            "[owners]'s [adjectives] [enchantment.themes.sleep.words]: [enchantment.themes.sleep.effects]",
+            "[enchantment.themes.song.words][enchantment.ends]: [enchantment.themes.song.effects]",
+            "[enchantment.themes.song.words] [enchantment.types]: [enchantment.themes.song.effects]",
+            "[owners]'s [adjectives] [enchantment.themes.song.words]: [enchantment.themes.song.effects]",
+            "[enchantment.themes.sweet.words][enchantment.ends]: [enchantment.themes.sweet.effects]",
+            "[enchantment.themes.sweet.words] [enchantment.types]: [enchantment.themes.sweet.effects]",
+            "[owners]'s [adjectives] [enchantment.themes.sweet.words]: [enchantment.themes.sweet.effects]",
+            "[enchantment.themes.mirth.words][enchantment.ends]: [enchantment.themes.mirth.effects]",
+            "[enchantment.themes.mirth.words] [enchantment.types]: [enchantment.themes.mirth.effects]",
+            "[owners]'s [adjectives] [enchantment.themes.mirth.words]: [enchantment.themes.mirth.effects]"
           ]
         },
         "evocation": {
           "recipe": "template",
           "template": [
-            "[evocation.words][evocation.ends]: [evocation.effects]",
-            "[evocation.words] [evocation.types]: [evocation.effects]",
-            "[owners]'s [adjectives] [evocation.words]: [evocation.effects]"
+            "[evocation.themes.fire.words][evocation.ends]: [evocation.themes.fire.effects]",
+            "[evocation.themes.fire.words] [evocation.types]: [evocation.themes.fire.effects]",
+            "[owners]'s [adjectives] [evocation.themes.fire.words]: [evocation.themes.fire.effects]",
+            "[evocation.themes.storm.words][evocation.ends]: [evocation.themes.storm.effects]",
+            "[evocation.themes.storm.words] [evocation.types]: [evocation.themes.storm.effects]",
+            "[owners]'s [adjectives] [evocation.themes.storm.words]: [evocation.themes.storm.effects]",
+            "[evocation.themes.frost.words][evocation.ends]: [evocation.themes.frost.effects]",
+            "[evocation.themes.frost.words] [evocation.types]: [evocation.themes.frost.effects]",
+            "[owners]'s [adjectives] [evocation.themes.frost.words]: [evocation.themes.frost.effects]",
+            "[evocation.themes.star.words][evocation.ends]: [evocation.themes.star.effects]",
+            "[evocation.themes.star.words] [evocation.types]: [evocation.themes.star.effects]",
+            "[owners]'s [adjectives] [evocation.themes.star.words]: [evocation.themes.star.effects]"
           ]
         },
         "illusion": {
           "recipe": "template",
           "template": [
-            "[illusion.words][illusion.ends]: [illusion.effects]",
-            "[illusion.words] [illusion.types]: [illusion.effects]",
-            "[owners]'s [adjectives] [illusion.words]: [illusion.effects]"
+            "[illusion.themes.mirror.words][illusion.ends]: [illusion.themes.mirror.effects]",
+            "[illusion.themes.mirror.words] [illusion.types]: [illusion.themes.mirror.effects]",
+            "[owners]'s [adjectives] [illusion.themes.mirror.words]: [illusion.themes.mirror.effects]",
+            "[illusion.themes.shadow.words][illusion.ends]: [illusion.themes.shadow.effects]",
+            "[illusion.themes.shadow.words] [illusion.types]: [illusion.themes.shadow.effects]",
+            "[owners]'s [adjectives] [illusion.themes.shadow.words]: [illusion.themes.shadow.effects]",
+            "[illusion.themes.phantom.words][illusion.ends]: [illusion.themes.phantom.effects]",
+            "[illusion.themes.phantom.words] [illusion.types]: [illusion.themes.phantom.effects]",
+            "[owners]'s [adjectives] [illusion.themes.phantom.words]: [illusion.themes.phantom.effects]",
+            "[illusion.themes.glimmer.words][illusion.ends]: [illusion.themes.glimmer.effects]",
+            "[illusion.themes.glimmer.words] [illusion.types]: [illusion.themes.glimmer.effects]",
+            "[owners]'s [adjectives] [illusion.themes.glimmer.words]: [illusion.themes.glimmer.effects]"
           ]
         },
         "necromancy": {
           "recipe": "template",
           "template": [
-            "[necromancy.words][necromancy.ends]: [necromancy.effects]",
-            "[necromancy.words] [necromancy.types]: [necromancy.effects]",
-            "[owners]'s [adjectives] [necromancy.words]: [necromancy.effects]"
+            "[necromancy.themes.grave.words][necromancy.ends]: [necromancy.themes.grave.effects]",
+            "[necromancy.themes.grave.words] [necromancy.types]: [necromancy.themes.grave.effects]",
+            "[owners]'s [adjectives] [necromancy.themes.grave.words]: [necromancy.themes.grave.effects]",
+            "[necromancy.themes.wither.words][necromancy.ends]: [necromancy.themes.wither.effects]",
+            "[necromancy.themes.wither.words] [necromancy.types]: [necromancy.themes.wither.effects]",
+            "[owners]'s [adjectives] [necromancy.themes.wither.words]: [necromancy.themes.wither.effects]",
+            "[necromancy.themes.night.words][necromancy.ends]: [necromancy.themes.night.effects]",
+            "[necromancy.themes.night.words] [necromancy.types]: [necromancy.themes.night.effects]",
+            "[owners]'s [adjectives] [necromancy.themes.night.words]: [necromancy.themes.night.effects]"
           ]
         },
         "transmutation": {
           "recipe": "template",
           "template": [
-            "[transmutation.words][transmutation.ends]: [transmutation.effects]",
-            "[transmutation.words] [transmutation.types]: [transmutation.effects]",
-            "[owners]'s [adjectives] [transmutation.words]: [transmutation.effects]"
+            "[transmutation.themes.beast.words][transmutation.ends]: [transmutation.themes.beast.effects]",
+            "[transmutation.themes.beast.words] [transmutation.types]: [transmutation.themes.beast.effects]",
+            "[owners]'s [adjectives] [transmutation.themes.beast.words]: [transmutation.themes.beast.effects]",
+            "[transmutation.themes.metal.words][transmutation.ends]: [transmutation.themes.metal.effects]",
+            "[transmutation.themes.metal.words] [transmutation.types]: [transmutation.themes.metal.effects]",
+            "[owners]'s [adjectives] [transmutation.themes.metal.words]: [transmutation.themes.metal.effects]",
+            "[transmutation.themes.green.words][transmutation.ends]: [transmutation.themes.green.effects]",
+            "[transmutation.themes.green.words] [transmutation.types]: [transmutation.themes.green.effects]",
+            "[owners]'s [adjectives] [transmutation.themes.green.words]: [transmutation.themes.green.effects]"
           ]
         },
         "any": {
           "recipe": "template",
           "template": [
-            "[abjuration.words][abjuration.ends]: [abjuration.effects]",
-            "[abjuration.words] [abjuration.types]: [abjuration.effects]",
-            "[owners]'s [adjectives] [abjuration.words]: [abjuration.effects]",
-            "[conjuration.words][conjuration.ends]: [conjuration.effects]",
-            "[conjuration.words] [conjuration.types]: [conjuration.effects]",
-            "[owners]'s [adjectives] [conjuration.words]: [conjuration.effects]",
-            "[divination.words][divination.ends]: [divination.effects]",
-            "[divination.words] [divination.types]: [divination.effects]",
-            "[owners]'s [adjectives] [divination.words]: [divination.effects]",
-            "[enchantment.words][enchantment.ends]: [enchantment.effects]",
-            "[enchantment.words] [enchantment.types]: [enchantment.effects]",
-            "[owners]'s [adjectives] [enchantment.words]: [enchantment.effects]",
-            "[evocation.words][evocation.ends]: [evocation.effects]",
-            "[evocation.words] [evocation.types]: [evocation.effects]",
-            "[owners]'s [adjectives] [evocation.words]: [evocation.effects]",
-            "[illusion.words][illusion.ends]: [illusion.effects]",
-            "[illusion.words] [illusion.types]: [illusion.effects]",
-            "[owners]'s [adjectives] [illusion.words]: [illusion.effects]",
-            "[necromancy.words][necromancy.ends]: [necromancy.effects]",
-            "[necromancy.words] [necromancy.types]: [necromancy.effects]",
-            "[owners]'s [adjectives] [necromancy.words]: [necromancy.effects]",
-            "[transmutation.words][transmutation.ends]: [transmutation.effects]",
-            "[transmutation.words] [transmutation.types]: [transmutation.effects]",
-            "[owners]'s [adjectives] [transmutation.words]: [transmutation.effects]"
+            "[abjuration.themes.threshold.words][abjuration.ends]: [abjuration.themes.threshold.effects]",
+            "[abjuration.themes.threshold.words] [abjuration.types]: [abjuration.themes.threshold.effects]",
+            "[owners]'s [adjectives] [abjuration.themes.threshold.words]: [abjuration.themes.threshold.effects]",
+            "[abjuration.themes.iron.words][abjuration.ends]: [abjuration.themes.iron.effects]",
+            "[abjuration.themes.iron.words] [abjuration.types]: [abjuration.themes.iron.effects]",
+            "[owners]'s [adjectives] [abjuration.themes.iron.words]: [abjuration.themes.iron.effects]",
+            "[abjuration.themes.silver.words][abjuration.ends]: [abjuration.themes.silver.effects]",
+            "[abjuration.themes.silver.words] [abjuration.types]: [abjuration.themes.silver.effects]",
+            "[owners]'s [adjectives] [abjuration.themes.silver.words]: [abjuration.themes.silver.effects]",
+            "[conjuration.themes.beast.words][conjuration.ends]: [conjuration.themes.beast.effects]",
+            "[conjuration.themes.beast.words] [conjuration.types]: [conjuration.themes.beast.effects]",
+            "[owners]'s [adjectives] [conjuration.themes.beast.words]: [conjuration.themes.beast.effects]",
+            "[conjuration.themes.way.words][conjuration.ends]: [conjuration.themes.way.effects]",
+            "[conjuration.themes.way.words] [conjuration.types]: [conjuration.themes.way.effects]",
+            "[owners]'s [adjectives] [conjuration.themes.way.words]: [conjuration.themes.way.effects]",
+            "[conjuration.themes.wild.words][conjuration.ends]: [conjuration.themes.wild.effects]",
+            "[conjuration.themes.wild.words] [conjuration.types]: [conjuration.themes.wild.effects]",
+            "[owners]'s [adjectives] [conjuration.themes.wild.words]: [conjuration.themes.wild.effects]",
+            "[conjuration.themes.light.words][conjuration.ends]: [conjuration.themes.light.effects]",
+            "[conjuration.themes.light.words] [conjuration.types]: [conjuration.themes.light.effects]",
+            "[owners]'s [adjectives] [conjuration.themes.light.words]: [conjuration.themes.light.effects]",
+            "[divination.themes.eye.words][divination.ends]: [divination.themes.eye.effects]",
+            "[divination.themes.eye.words] [divination.types]: [divination.themes.eye.effects]",
+            "[owners]'s [adjectives] [divination.themes.eye.words]: [divination.themes.eye.effects]",
+            "[divination.themes.sky.words][divination.ends]: [divination.themes.sky.effects]",
+            "[divination.themes.sky.words] [divination.types]: [divination.themes.sky.effects]",
+            "[owners]'s [adjectives] [divination.themes.sky.words]: [divination.themes.sky.effects]",
+            "[divination.themes.flame.words][divination.ends]: [divination.themes.flame.effects]",
+            "[divination.themes.flame.words] [divination.types]: [divination.themes.flame.effects]",
+            "[owners]'s [adjectives] [divination.themes.flame.words]: [divination.themes.flame.effects]",
+            "[divination.themes.voice.words][divination.ends]: [divination.themes.voice.effects]",
+            "[divination.themes.voice.words] [divination.types]: [divination.themes.voice.effects]",
+            "[owners]'s [adjectives] [divination.themes.voice.words]: [divination.themes.voice.effects]",
+            "[enchantment.themes.sleep.words][enchantment.ends]: [enchantment.themes.sleep.effects]",
+            "[enchantment.themes.sleep.words] [enchantment.types]: [enchantment.themes.sleep.effects]",
+            "[owners]'s [adjectives] [enchantment.themes.sleep.words]: [enchantment.themes.sleep.effects]",
+            "[enchantment.themes.song.words][enchantment.ends]: [enchantment.themes.song.effects]",
+            "[enchantment.themes.song.words] [enchantment.types]: [enchantment.themes.song.effects]",
+            "[owners]'s [adjectives] [enchantment.themes.song.words]: [enchantment.themes.song.effects]",
+            "[enchantment.themes.sweet.words][enchantment.ends]: [enchantment.themes.sweet.effects]",
+            "[enchantment.themes.sweet.words] [enchantment.types]: [enchantment.themes.sweet.effects]",
+            "[owners]'s [adjectives] [enchantment.themes.sweet.words]: [enchantment.themes.sweet.effects]",
+            "[enchantment.themes.mirth.words][enchantment.ends]: [enchantment.themes.mirth.effects]",
+            "[enchantment.themes.mirth.words] [enchantment.types]: [enchantment.themes.mirth.effects]",
+            "[owners]'s [adjectives] [enchantment.themes.mirth.words]: [enchantment.themes.mirth.effects]",
+            "[evocation.themes.fire.words][evocation.ends]: [evocation.themes.fire.effects]",
+            "[evocation.themes.fire.words] [evocation.types]: [evocation.themes.fire.effects]",
+            "[owners]'s [adjectives] [evocation.themes.fire.words]: [evocation.themes.fire.effects]",
+            "[evocation.themes.storm.words][evocation.ends]: [evocation.themes.storm.effects]",
+            "[evocation.themes.storm.words] [evocation.types]: [evocation.themes.storm.effects]",
+            "[owners]'s [adjectives] [evocation.themes.storm.words]: [evocation.themes.storm.effects]",
+            "[evocation.themes.frost.words][evocation.ends]: [evocation.themes.frost.effects]",
+            "[evocation.themes.frost.words] [evocation.types]: [evocation.themes.frost.effects]",
+            "[owners]'s [adjectives] [evocation.themes.frost.words]: [evocation.themes.frost.effects]",
+            "[evocation.themes.star.words][evocation.ends]: [evocation.themes.star.effects]",
+            "[evocation.themes.star.words] [evocation.types]: [evocation.themes.star.effects]",
+            "[owners]'s [adjectives] [evocation.themes.star.words]: [evocation.themes.star.effects]",
+            "[illusion.themes.mirror.words][illusion.ends]: [illusion.themes.mirror.effects]",
+            "[illusion.themes.mirror.words] [illusion.types]: [illusion.themes.mirror.effects]",
+            "[owners]'s [adjectives] [illusion.themes.mirror.words]: [illusion.themes.mirror.effects]",
+            "[illusion.themes.shadow.words][illusion.ends]: [illusion.themes.shadow.effects]",
+            "[illusion.themes.shadow.words] [illusion.types]: [illusion.themes.shadow.effects]",
+            "[owners]'s [adjectives] [illusion.themes.shadow.words]: [illusion.themes.shadow.effects]",
+            "[illusion.themes.phantom.words][illusion.ends]: [illusion.themes.phantom.effects]",
+            "[illusion.themes.phantom.words] [illusion.types]: [illusion.themes.phantom.effects]",
+            "[owners]'s [adjectives] [illusion.themes.phantom.words]: [illusion.themes.phantom.effects]",
+            "[illusion.themes.glimmer.words][illusion.ends]: [illusion.themes.glimmer.effects]",
+            "[illusion.themes.glimmer.words] [illusion.types]: [illusion.themes.glimmer.effects]",
+            "[owners]'s [adjectives] [illusion.themes.glimmer.words]: [illusion.themes.glimmer.effects]",
+            "[necromancy.themes.grave.words][necromancy.ends]: [necromancy.themes.grave.effects]",
+            "[necromancy.themes.grave.words] [necromancy.types]: [necromancy.themes.grave.effects]",
+            "[owners]'s [adjectives] [necromancy.themes.grave.words]: [necromancy.themes.grave.effects]",
+            "[necromancy.themes.wither.words][necromancy.ends]: [necromancy.themes.wither.effects]",
+            "[necromancy.themes.wither.words] [necromancy.types]: [necromancy.themes.wither.effects]",
+            "[owners]'s [adjectives] [necromancy.themes.wither.words]: [necromancy.themes.wither.effects]",
+            "[necromancy.themes.night.words][necromancy.ends]: [necromancy.themes.night.effects]",
+            "[necromancy.themes.night.words] [necromancy.types]: [necromancy.themes.night.effects]",
+            "[owners]'s [adjectives] [necromancy.themes.night.words]: [necromancy.themes.night.effects]",
+            "[transmutation.themes.beast.words][transmutation.ends]: [transmutation.themes.beast.effects]",
+            "[transmutation.themes.beast.words] [transmutation.types]: [transmutation.themes.beast.effects]",
+            "[owners]'s [adjectives] [transmutation.themes.beast.words]: [transmutation.themes.beast.effects]",
+            "[transmutation.themes.metal.words][transmutation.ends]: [transmutation.themes.metal.effects]",
+            "[transmutation.themes.metal.words] [transmutation.types]: [transmutation.themes.metal.effects]",
+            "[owners]'s [adjectives] [transmutation.themes.metal.words]: [transmutation.themes.metal.effects]",
+            "[transmutation.themes.green.words][transmutation.ends]: [transmutation.themes.green.effects]",
+            "[transmutation.themes.green.words] [transmutation.types]: [transmutation.themes.green.effects]",
+            "[owners]'s [adjectives] [transmutation.themes.green.words]: [transmutation.themes.green.effects]"
           ]
         }
       }
@@ -275,8 +527,6 @@
       "Hungry",
       "Endless",
       "Hidden",
-      "Burning",
-      "Silver",
       "Lingering",
       "Final",
       "Quiet",
@@ -285,23 +535,6 @@
       "Midnight"
     ],
     "abjuration": {
-      "words": [
-        "Bastion",
-        "Iron",
-        "Salt",
-        "Silver",
-        "Rampart",
-        "Oak",
-        "Threshold",
-        "Lantern",
-        "Hearth",
-        "Bulwark",
-        "Sanctum",
-        "Glass",
-        "Rowan",
-        "Anchor",
-        "Keystone"
-      ],
       "ends": [
         "ward",
         "guard",
@@ -322,39 +555,56 @@
         "Veil",
         "Aegis"
       ],
-      "effects": [
-        "turns aside the next blow aimed at you",
-        "seals a door so nothing uninvited can pass",
-        "draws a ring of salt that spirits can't cross",
-        "makes a cloak as hard as oak for a minute",
-        "wakes you if anyone crosses your threshold",
-        "breaks the hold of a charm on a friend",
-        "hides a room from scrying eyes",
-        "turns a cold wind away from the camp for a night",
-        "lets you shrug off one curse",
-        "raises a shimmering wall across a corridor",
-        "keeps fire from catching on your clothes",
-        "makes a promise binding on anyone who swears it"
-      ]
+      "themes": {
+        "threshold": {
+          "words": [
+            "Salt",
+            "Threshold",
+            "Rowan",
+            "Hearth",
+            "Keystone"
+          ],
+          "effects": [
+            "draws a ring of salt that spirits can't cross",
+            "wakes you if anyone crosses your threshold",
+            "seals a door so nothing uninvited can pass",
+            "makes a promise binding on anyone who swears it at your hearth"
+          ]
+        },
+        "iron": {
+          "words": [
+            "Iron",
+            "Bastion",
+            "Rampart",
+            "Bulwark",
+            "Oak",
+            "Anchor"
+          ],
+          "effects": [
+            "turns aside the next blow aimed at you",
+            "makes your cloak as hard as oak for a minute",
+            "raises a shimmering wall across a corridor",
+            "roots you to the spot so nothing can knock you down"
+          ]
+        },
+        "silver": {
+          "words": [
+            "Silver",
+            "Glass",
+            "Lantern",
+            "Sanctum",
+            "Mirror"
+          ],
+          "effects": [
+            "breaks the hold of a charm on a friend",
+            "hides a room from scrying eyes",
+            "lets you shrug off one curse",
+            "turns a cold wind away from the camp for a night"
+          ]
+        }
+      }
     },
     "conjuration": {
-      "words": [
-        "Lantern",
-        "Thread",
-        "Hound",
-        "Fog",
-        "Rope",
-        "Raven",
-        "Bridge",
-        "Beacon",
-        "Ladder",
-        "Mist",
-        "Thorn",
-        "Vine",
-        "Lodestone",
-        "Hearthstone",
-        "Key"
-      ],
       "ends": [
         "call",
         "step",
@@ -375,39 +625,69 @@
         "Path",
         "Gate"
       ],
-      "effects": [
-        "calls a spectral hound to your side until sunrise",
-        "opens a door in any wall, for one person, once",
-        "fetches an object you can see into your hand",
-        "fills the room with a fog that smells of rain",
-        "brings a rope of light down from the ceiling",
-        "summons a flock of ravens that scatter on command",
-        "sends you twenty paces in a blink",
-        "conjures a lantern that never goes out",
-        "pulls a cup of clean water from the air",
-        "calls a vine up from the ground to hold a door shut",
-        "opens a path through brambles and closes it behind you",
-        "summons a small helpful spirit for an hour"
-      ]
+      "themes": {
+        "beast": {
+          "words": [
+            "Hound",
+            "Raven",
+            "Owl",
+            "Wolf",
+            "Moth"
+          ],
+          "effects": [
+            "calls a spectral hound to your side until sunrise",
+            "summons a flock of ravens that scatter on command",
+            "summons a small helpful spirit for an hour",
+            "calls a grey owl to carry a message"
+          ]
+        },
+        "way": {
+          "words": [
+            "Bridge",
+            "Ladder",
+            "Key",
+            "Lodestone",
+            "Rope",
+            "Thread"
+          ],
+          "effects": [
+            "opens a door in any wall, for one person, once",
+            "sends you twenty paces in a blink",
+            "brings a rope of light down from the ceiling",
+            "fetches an object you can see into your hand",
+            "lays a glowing thread that leads you home"
+          ]
+        },
+        "wild": {
+          "words": [
+            "Thorn",
+            "Vine",
+            "Fog",
+            "Mist",
+            "Bramble"
+          ],
+          "effects": [
+            "fills the room with a fog that smells of rain",
+            "calls a vine up from the ground to hold a door shut",
+            "opens a path through brambles and closes it behind you"
+          ]
+        },
+        "light": {
+          "words": [
+            "Lantern",
+            "Beacon",
+            "Hearthstone",
+            "Candle"
+          ],
+          "effects": [
+            "conjures a lantern that never goes out",
+            "lights a beacon that only your friends can see",
+            "summons a warm hearth in the middle of the snow"
+          ]
+        }
+      }
     },
     "divination": {
-      "words": [
-        "Eye",
-        "Mirror",
-        "Owl",
-        "Star",
-        "Glass",
-        "Bone",
-        "Candle",
-        "Water",
-        "Smoke",
-        "Moon",
-        "Raven",
-        "Lantern",
-        "Whisper",
-        "Tide",
-        "Thread"
-      ],
       "ends": [
         "sight",
         "sense",
@@ -428,39 +708,68 @@
         "Reading",
         "Scrying"
       ],
-      "effects": [
-        "shows you who last touched an object",
-        "lets you see through the eyes of a bird for a minute",
-        "tells you whether a choice will end well or badly",
-        "reveals the way out of a maze",
-        "lets you hear a conversation through a wall",
-        "makes a lie taste of ash",
-        "shows the last thing a mirror reflected",
-        "finds a lost thing within a mile",
-        "tells you the name of a stranger",
-        "shows you the weather tomorrow",
-        "reveals hidden doors as faint blue lines",
-        "shows you a glimpse of a place you've never been"
-      ]
+      "themes": {
+        "eye": {
+          "words": [
+            "Eye",
+            "Owl",
+            "Raven",
+            "Mirror",
+            "Glass"
+          ],
+          "effects": [
+            "lets you see through the eyes of a bird for a minute",
+            "shows the last thing a mirror reflected",
+            "reveals hidden doors as faint blue lines",
+            "shows you a glimpse of a place you've never been"
+          ]
+        },
+        "sky": {
+          "words": [
+            "Star",
+            "Moon",
+            "Tide",
+            "Water",
+            "Cloud"
+          ],
+          "effects": [
+            "tells you whether a choice will end well or badly",
+            "shows you the weather tomorrow",
+            "finds a lost thing within a mile, the way water finds the sea",
+            "tells you which way the tide of a battle will turn"
+          ]
+        },
+        "flame": {
+          "words": [
+            "Candle",
+            "Smoke",
+            "Bone",
+            "Ember",
+            "Thread"
+          ],
+          "effects": [
+            "shows you who last touched an object",
+            "reveals the way out of a maze",
+            "makes a lie taste of ash",
+            "shows you shapes of the future in the smoke"
+          ]
+        },
+        "voice": {
+          "words": [
+            "Whisper",
+            "Echo",
+            "Bell",
+            "Raven-Call"
+          ],
+          "effects": [
+            "lets you hear a conversation through a wall",
+            "tells you the name of a stranger",
+            "lets you hear the last words spoken in a room"
+          ]
+        }
+      }
     },
     "enchantment": {
-      "words": [
-        "Honey",
-        "Velvet",
-        "Siren",
-        "Cradle",
-        "Dream",
-        "Rose",
-        "Mirth",
-        "Lark",
-        "Starling",
-        "Sweet",
-        "Feather",
-        "Moth",
-        "Poppy",
-        "Silk",
-        "Lavender"
-      ],
       "ends": [
         "song",
         "lull",
@@ -481,39 +790,66 @@
         "Beguilement",
         "Whisper"
       ],
-      "effects": [
-        "makes the target believe you're an old friend",
-        "sends a guard to sleep where they stand",
-        "fills a room with helpless laughter",
-        "makes one person forget the last minute",
-        "lets you speak a single word that must be obeyed",
-        "calms an angry crowd",
-        "makes the target fall in love with the next song they hear",
-        "makes a beast follow you like a lamb",
-        "turns fear into courage for your friends",
-        "gives a stranger a sudden urge to help you",
-        "fills dreams with a message of your choosing",
-        "makes the target too polite to refuse you"
-      ]
+      "themes": {
+        "sleep": {
+          "words": [
+            "Cradle",
+            "Dream",
+            "Poppy",
+            "Lavender",
+            "Moth"
+          ],
+          "effects": [
+            "sends a guard to sleep where they stand",
+            "fills dreams with a message of your choosing",
+            "makes one person forget the last minute"
+          ]
+        },
+        "song": {
+          "words": [
+            "Siren",
+            "Lark",
+            "Starling",
+            "Nightingale",
+            "Bell"
+          ],
+          "effects": [
+            "makes the target fall under the spell of the next song they hear",
+            "calms an angry crowd",
+            "makes a beast follow you like a lamb"
+          ]
+        },
+        "sweet": {
+          "words": [
+            "Honey",
+            "Sweet",
+            "Rose",
+            "Silk",
+            "Velvet"
+          ],
+          "effects": [
+            "makes the target believe you're an old friend",
+            "gives a stranger a sudden urge to help you",
+            "makes the target too polite to refuse you",
+            "lets you speak a single word that must be obeyed"
+          ]
+        },
+        "mirth": {
+          "words": [
+            "Mirth",
+            "Feather",
+            "Sunny",
+            "Merry"
+          ],
+          "effects": [
+            "fills a room with helpless laughter",
+            "turns fear into courage for your friends",
+            "makes everyone nearby forget their quarrels"
+          ]
+        }
+      }
     },
     "evocation": {
-      "words": [
-        "Ember",
-        "Squall",
-        "Thunder",
-        "Frost",
-        "Spark",
-        "Cinder",
-        "Flame",
-        "Hail",
-        "Ash",
-        "Comet",
-        "Blaze",
-        "Gale",
-        "Star",
-        "Kindle",
-        "Tempest"
-      ],
       "ends": [
         "bolt",
         "flare",
@@ -534,39 +870,67 @@
         "Nova",
         "Lash"
       ],
-      "effects": [
-        "throws a spear of cold light",
-        "sets a ring of fire around you",
-        "calls down a crack of thunder that knocks foes flat",
-        "sends sparks leaping from foe to foe",
-        "freezes a pond solid in a heartbeat",
-        "hurls a burning comet the size of a fist",
-        "blasts a door off its hinges",
-        "lights every candle in the room at once",
-        "sends a gale that blows out every torch",
-        "showers the area with stinging hail",
-        "brands a glowing mark on a foe so they can't hide",
-        "sends a single star streaking across the battlefield"
-      ]
+      "themes": {
+        "fire": {
+          "words": [
+            "Ember",
+            "Cinder",
+            "Flame",
+            "Blaze",
+            "Kindle"
+          ],
+          "effects": [
+            "sets a ring of fire around you",
+            "lights every candle in the room at once",
+            "brands a glowing mark on a foe so they can't hide",
+            "hurls a ball of flame the size of a fist"
+          ]
+        },
+        "storm": {
+          "words": [
+            "Squall",
+            "Thunder",
+            "Gale",
+            "Tempest"
+          ],
+          "effects": [
+            "calls down a crack of thunder that knocks foes flat",
+            "sends a gale that blows out every torch",
+            "blasts a door off its hinges",
+            "sends sparks leaping from foe to foe"
+          ]
+        },
+        "frost": {
+          "words": [
+            "Frost",
+            "Hail",
+            "Rime",
+            "Sleet"
+          ],
+          "effects": [
+            "freezes a pond solid in a heartbeat",
+            "showers the area with stinging hail",
+            "throws a spear of ice",
+            "coats the floor in ice so foes slip and fall"
+          ]
+        },
+        "star": {
+          "words": [
+            "Star",
+            "Comet",
+            "Spark",
+            "Sun"
+          ],
+          "effects": [
+            "sends a single star streaking across the battlefield",
+            "hurls a burning comet the size of a fist",
+            "throws a spear of cold white light",
+            "blinds foes with a flash of sunlight"
+          ]
+        }
+      }
     },
     "illusion": {
-      "words": [
-        "Mirror",
-        "Shadow",
-        "Mist",
-        "Ghost",
-        "Gossamer",
-        "Glimmer",
-        "Phantom",
-        "Fable",
-        "Dusk",
-        "Smoke",
-        "Twin",
-        "Echo",
-        "Haze",
-        "Masque",
-        "Moonglass"
-      ],
       "ends": [
         "mask",
         "glamour",
@@ -586,39 +950,64 @@
         "Glamour",
         "Trick"
       ],
-      "effects": [
-        "makes you look like someone else for an hour",
-        "hides a door behind a painted wall",
-        "fills a corridor with phantom footsteps",
-        "makes a coin look like gold to everyone but you",
-        "turns you invisible while you stand still",
-        "makes a pit look like solid floor",
-        "makes three copies of you that copy your every move",
-        "makes a voice seem to come from somewhere else",
-        "makes a small room seem endless",
-        "makes a sword look like a walking stick",
-        "covers a camp in a mirage of empty moorland",
-        "makes the target see their worst fear in every shadow"
-      ]
+      "themes": {
+        "mirror": {
+          "words": [
+            "Mirror",
+            "Twin",
+            "Echo",
+            "Moonglass"
+          ],
+          "effects": [
+            "makes three copies of you that copy your every move",
+            "makes a voice seem to come from somewhere else",
+            "makes you look like someone else for an hour"
+          ]
+        },
+        "shadow": {
+          "words": [
+            "Shadow",
+            "Dusk",
+            "Smoke",
+            "Mist",
+            "Haze"
+          ],
+          "effects": [
+            "turns you invisible while you stand still",
+            "covers a camp in a mirage of empty moorland",
+            "makes a pit look like solid floor",
+            "hides a door behind a painted wall"
+          ]
+        },
+        "phantom": {
+          "words": [
+            "Phantom",
+            "Ghost",
+            "Fable",
+            "Nightmare"
+          ],
+          "effects": [
+            "fills a corridor with phantom footsteps",
+            "makes the target see their worst fear in every shadow",
+            "makes a small room seem endless"
+          ]
+        },
+        "glimmer": {
+          "words": [
+            "Glimmer",
+            "Gossamer",
+            "Masque",
+            "Silver"
+          ],
+          "effects": [
+            "makes a coin look like gold to everyone but you",
+            "makes a sword look like a walking stick",
+            "dresses you in borrowed finery for a night"
+          ]
+        }
+      }
     },
     "necromancy": {
-      "words": [
-        "Bone",
-        "Grave",
-        "Ash",
-        "Raven",
-        "Hollow",
-        "Marrow",
-        "Dusk",
-        "Crypt",
-        "Wither",
-        "Barrow",
-        "Night",
-        "Shroud",
-        "Hemlock",
-        "Sallow",
-        "Yew"
-      ],
       "ends": [
         "mark",
         "rot",
@@ -639,39 +1028,55 @@
         "Mark",
         "Knell"
       ],
-      "effects": [
-        "chills the target to the bone and slows them down",
-        "lets you ask a skull three questions",
-        "makes flowers wilt in a circle around you",
-        "wakes a skeleton to carry your bags",
-        "steals a little warmth from a foe to heal you",
-        "marks the target so every blow lands harder",
-        "makes a ghost visible for a minute",
-        "curses the target with terrible luck until dawn",
-        "makes a candle burn black and silent",
-        "tells you how someone died",
-        "makes your footsteps leave frost on the ground",
-        "lets you speak with the last spirit to leave a place"
-      ]
+      "themes": {
+        "grave": {
+          "words": [
+            "Bone",
+            "Grave",
+            "Crypt",
+            "Barrow",
+            "Marrow"
+          ],
+          "effects": [
+            "lets you ask a skull three questions",
+            "wakes a skeleton to carry your bags",
+            "tells you how someone died",
+            "lets you speak with the last spirit to leave a place"
+          ]
+        },
+        "wither": {
+          "words": [
+            "Wither",
+            "Hemlock",
+            "Yew",
+            "Sallow",
+            "Ash"
+          ],
+          "effects": [
+            "makes flowers wilt in a circle around you",
+            "curses the target with terrible luck until dawn",
+            "marks the target so every blow lands harder"
+          ]
+        },
+        "night": {
+          "words": [
+            "Night",
+            "Dusk",
+            "Shroud",
+            "Hollow",
+            "Raven"
+          ],
+          "effects": [
+            "chills the target to the bone and slows them down",
+            "steals a little warmth from a foe to heal you",
+            "makes a ghost visible for a minute",
+            "makes a candle burn black and silent",
+            "makes your footsteps leave frost on the ground"
+          ]
+        }
+      }
     },
     "transmutation": {
-      "words": [
-        "Quicksilver",
-        "Stone",
-        "Thorn",
-        "Iron",
-        "Feather",
-        "Clay",
-        "Willow",
-        "Gold",
-        "Toad",
-        "Wolf",
-        "Moth",
-        "Salt",
-        "Glass",
-        "Copper",
-        "Hare"
-      ],
       "ends": [
         "shift",
         "form",
@@ -692,20 +1097,54 @@
         "Mending",
         "Twist"
       ],
-      "effects": [
-        "roots the target's feet to the ground for a minute",
-        "turns the target into a toad until sunset",
-        "makes your skin as hard as stone",
-        "mends a broken blade as if it was never broken",
-        "lets you run as fast as a hare",
-        "turns water to ice or ice to water",
-        "makes a rope grow twice as long",
-        "lets you breathe underwater for an hour",
-        "shrinks a cart to the size of a matchbox",
-        "turns iron to rust at a touch",
-        "lets you climb walls like a spider",
-        "turns a handful of leaves into coins until midnight"
-      ]
+      "themes": {
+        "beast": {
+          "words": [
+            "Toad",
+            "Wolf",
+            "Hare",
+            "Moth",
+            "Feather"
+          ],
+          "effects": [
+            "turns the target into a toad until sunset",
+            "lets you run as fast as a hare",
+            "gives you a wolf's nose for an hour",
+            "lets you float down like a feather"
+          ]
+        },
+        "metal": {
+          "words": [
+            "Stone",
+            "Iron",
+            "Copper",
+            "Gold",
+            "Quicksilver"
+          ],
+          "effects": [
+            "makes your skin as hard as stone",
+            "mends a broken blade as if it was never broken",
+            "turns iron to rust at a touch",
+            "turns a handful of leaves into gold coins until midnight",
+            "makes your feet as quick as quicksilver"
+          ]
+        },
+        "green": {
+          "words": [
+            "Thorn",
+            "Willow",
+            "Clay",
+            "Salt",
+            "Glass"
+          ],
+          "effects": [
+            "roots the target's feet to the ground for a minute",
+            "makes a rope of willow grow twice as long",
+            "shrinks a cart to the size of a matchbox",
+            "turns water to glass-clear ice"
+          ]
+        }
+      }
     }
   },
   "article": {
