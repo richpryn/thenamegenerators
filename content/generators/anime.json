@@ -4,7 +4,7 @@
   "icon": "🌸",
   "category": "pop_culture",
   "published": "2026-10-22",
-  "description": "Anime character names from real Japanese given names and surnames, with what the given name means, in either name order, or with an honorific like -kun or -senpai.",
+  "description": "Anime names from real Japanese given names and surnames, with meanings: name order, Japanese order, or with honorifics like -kun, -chan and -senpai.",
   "seoKeywords": "anime name generator, anime character name generator, anime names, japanese anime names, anime boy names, anime girl names, manga name generator, japanese name generator",
   "seoTitle": "Anime Name Generator: Japanese Character Names",
   "isPopular": false,
@@ -472,7 +472,29 @@
       "tagline": "Japanese names for anime and manga characters, with meanings and honorifics."
     },
     "intro": "Anime names are real Japanese names, and the good ones are chosen for their meaning: a quiet girl called Shizuka, a hot-headed hero called Raiden. This **anime character name generator** pairs real given names and surnames, shows what the given name can mean, and adds an honorific if you want one.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "How Japanese names work",
+        "content": "<p>In Japan the surname comes first: in Sasaki Taiga, Sasaki is the family name and Taiga the given name.</p><ul><li><strong>In English</strong> many translations swap the order, but more now keep the Japanese one. Since 2020 the Japanese government has asked for surname-first order in official English documents.</li><li><strong>Meanings depend on the kanji.</strong> Most names can be written with different characters, so the same name can mean different things. The meanings here are for one common way of writing each name.</li><li><strong>Popular names</strong> change like anywhere else: Haruto, \"sun, soar\", has topped recent surveys of boys' names.</li></ul>"
+      },
+      {
+        "heading": "Honorifics",
+        "content": "<p>Honorifics go after the name, and they show how two characters feel about each other.</p><ul><li><strong>-san:</strong> polite, for almost anyone.</li><li><strong>-kun:</strong> for boys and juniors, friendly but a little formal.</li><li><strong>-chan:</strong> affectionate, for children, close friends and anything cute.</li><li><strong>-senpai:</strong> someone senior at school or work.</li><li><strong>-sensei:</strong> a teacher, doctor or master, and manga artists too.</li><li><strong>-sama:</strong> great respect, for customers, nobles and gods.</li><li><strong>-dono and -hime:</strong> old-fashioned \"lord\" and \"princess\", for period stories.</li></ul><p>Famous surname-and-name pairs are left out. For more from Japan, try the <a href=\"kitsune-name-generator.html\">Kitsune</a> and <a href=\"japanese-sword-name-generator.html\">Japanese Sword</a> name generators.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do Japanese names go surname first?",
+        "answer": "Yes. In Japan the family name comes first. Many English translations swap the order, but more now keep it."
+      },
+      {
+        "question": "What does -chan mean?",
+        "answer": "It's an affectionate honorific for children, close friends and anything cute. -kun is its more formal counterpart, usually for boys."
+      },
+      {
+        "question": "Why can one Japanese name have different meanings?",
+        "answer": "Because it can be written with different kanji, each with its own meaning. The generator shows the meaning of one common spelling."
+      }
+    ]
   }
 }
