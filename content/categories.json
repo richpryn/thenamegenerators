@@ -76,6 +76,7 @@
       }
     ],
     "generators": [
+      "mummy",
       "horror_movie",
       "skeleton",
       "monster",
