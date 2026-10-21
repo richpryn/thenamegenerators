@@ -98,7 +98,6 @@
           "recipe": "template",
           "template": [
             "The Manticore of [wastes]",
-            "The [adj] Manticore [epithets]",
             "The [adj] Manticore, [epithets_titled]",
             "The [adj] Manticore of [wastes]"
           ]
@@ -112,7 +111,6 @@
             "[persian], [epithets_titled]",
             "[persian] of [wastes]",
             "The Manticore of [wastes]",
-            "The [adj] Manticore [epithets]",
             "The [adj] Manticore, [epithets_titled]",
             "The [adj] Manticore of [wastes]"
           ]
