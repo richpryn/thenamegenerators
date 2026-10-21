@@ -17,8 +17,8 @@ Both Claude sessions worked through `docs/CONTENT-PLAN.md` overnight. The site w
 **Rewrites (Claude session 1):** the homepage and every category page got proper intros, and a new Event Name Generator went live. Track A is finished: every page that still had old boilerplate, about 55 in all, was rewritten and its name data rebuilt. That covers the fantasy races and creatures, the places, all the weapons and items, the wizard and witch pages, Clan, Guild, Alien, Assassin, Blog, Ogryn, Company, Brand and Café. Filler words, famous characters and chain names are gone. Many names are now built from real words with their meanings: Quenya and Sindarin elf family names, Japanese sword names, English place-name endings, heraldry. Fantasy Town and Fantasy Country now also target "village" and "kingdom" searches.
 
 **What needs you, in order:**
-1. ~~Send a session your Google Analytics Measurement ID~~: done, the tag is live. Check Realtime and link it to Search Console (see "Now" below).
-2. In Search Console, request indexing for the hub pages (listed under "Review" below).
+1. ~~Google Analytics~~: done. The tag is live and linked to Search Console.
+2. Search Console indexing: partly done (the daily limit was reached). Carry on a few a day (see "Now" below).
 3. Have a look at the new pages and say what you'd change.
 4. ~~Random picker/wheel~~: decided (build it after the redesign).
 5. Add your notes to Band and Dungeon Synth when you have time.
@@ -29,15 +29,15 @@ Things only Rich can do. The Claude sessions add items here as they come up and 
 ## Now
 
 - [x] **Google Analytics (GA4).** Done: tag `G-R34WKHG3SR` is on every page (21 October).
-- [ ] **Check GA is receiving data and link it to Search Console.** Open the site, then look at Reports → Realtime in Google Analytics; your visit should appear within a minute. Then in Search Console, Settings → Associations, link the GA property.
-- [ ] **Request indexing for new and moved pages.** In Search Console, use URL Inspection → Request indexing for:
+- [x] **GA linked to Search Console.** Done (21 October).
+- [ ] **Request indexing for new and moved pages.** Partly done on 21 October; Search Console only allows about 10 requests a day. Do the hubs first, a few more each day. The sitemap (`sitemap.xml`, submitted under Sitemaps) lets Google find everything else on its own, so the rest is a nudge, not essential. URL Inspection → Request indexing for:
   - `https://thenamegenerators.com/` (new hero)
   - `https://thenamegenerators.com/posts/hammer-name-generator.html` (was Warhammer)
   - `https://thenamegenerators.com/posts/event-name-generator.html`
   - `https://thenamegenerators.com/categories/places-names.html` and `.../events-names.html`
   - New D&D pages as they go live (listed under "Review" below)
   - `https://thenamegenerators.com/name-tools.html`, `/random-name-picker.html`, `/raffle-picker.html`, `/secret-santa-generator.html`, `/team-generator.html`
-- [ ] **Start the redesign session.** Ask for 2–3 design directions as Artifacts first, no code, then pick one.
+- [x] **Redesign.** Done and live.
 
 ## Review when you have a minute
 
