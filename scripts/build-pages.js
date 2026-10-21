@@ -1138,14 +1138,14 @@ function generate404(site) {
     ${layout.headAssets('/')}
 </head>
 <body>
-    ${layout.svgSprite(['map', ...cats.map(c => layout.categoryMotif(c))])}
+    ${layout.svgSprite(['lost-map', ...cats.map(c => layout.categoryMotif(c))])}
     ${layout.siteHeader('/', site.categories)}
 
     <div class="wrap">
         <main id="main">
             <div class="titlerow">
                 <h1>Page <span class="hl">not found</span></h1>
-                ${layout.doodle('map')}
+                ${layout.doodle('lost-map')}
             </div>
             <p class="lede">That page doesn't exist, or it has moved. Try a category below, or <a href="/all-generators.html">browse all ${site.all.length} generators</a>.</p>
 

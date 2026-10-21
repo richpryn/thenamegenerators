@@ -7,7 +7,7 @@ Source of truth for generators: the read-only snapshot of origin/main in scratch
 
 - One shared **motif library**, not 108 bespoke drawings. Total: **81 drawings**.
   - 48 are drawn on the sample sheet: every motif needed by the 46 tier-1 generators, plus 7 category-only marks.
-  - 33 more motifs are needed for tier 2.
+  - The 33 tier-2 motifs are now drawn too, plus "lost-map" for the 404 page, so the library has 82 drawings and every generator has its own (phase 5).
   - 4 generators get a lightly bespoke drawing (angel, goblin, hobbit, werewolf). Every other generator reuses a library motif, with at most a small accent variant.
 - **17 category marks**: 10 reuse a library motif and 7 are category-only. Each is shown inside a hand-drawn "stamp" ring, so a category never looks like a single generator.
 - **Tier 1** = homepage popular plus every category's featured picks: 46 generators, covered by 41 motifs, all drawn.
@@ -61,7 +61,7 @@ All drawings are authored once on a 48×48 grid and scaled. Nothing is redrawn p
 
 ## 4. Motif library
 
-Status "drawn" means it's on the sample sheet. "To draw (tier 2)" means it's still needed.
+Status "drawn" means it's on the sample sheet; "drawn (tier 2)" means it was added in phase 5. All drawings live in `lib/illustrations.js`.
 
 | Motif id | Name | Shows | Used by | Status |
 |---|---|---|---|---|
@@ -113,39 +113,40 @@ Status "drawn" means it's on the sample sheet. "To draw (tier 2)" means it's sti
 | crossed-axes | Crossed axes | two war axes crossed | –; category: Warcraft | drawn |
 | hourglass | Hourglass | an hourglass with sand | –; category: Historical | drawn |
 | clapper | Clapperboard | a film clapperboard | –; category: Pop Culture | drawn |
-| vinyl | Vinyl | a vinyl record | album | to draw (tier 2) |
-| amphora | Amphora | a Greek amphora | ancient_greek | to draw (tier 2) |
-| feather-wings | Feather wings | feathered wings with a halo | angel | to draw (tier 2) |
-| cup | Cup | a coffee cup with steam | cafe | to draw (tier 2) |
-| building | Building | an office block | company | to draw (tier 2) |
-| headphones | Headphones | headphones | dj | to draw (tier 2) |
-| volcano | Volcano | a smoking volcano | dunmer | to draw (tier 2) |
-| pickaxe | Pickaxe | a pickaxe | dwarf | to draw (tier 2) |
-| ring | Ring | a plain ring with a glint | elden_ring | to draw (tier 2) |
-| shopfront | Shopfront | a striped-awning shopfront | fantasy_shop | to draw (tier 2) |
-| wizard-hat | Wizard hat | a pointed wizard hat with stars | funny_wizard, lotr_wizard, wizard | to draw (tier 2) |
-| crown | Crown | an iron crown | game_of_thrones | to draw (tier 2) |
-| gamepad | Gamepad | a game controller | gamertag | to draw (tier 2) |
-| ghost | Ghost | a sheet ghost | ghost | to draw (tier 2) |
-| goblin-ear | Goblin ear | a pointed goblin ear with an earring | goblin | to draw (tier 2) |
-| clover | Clover | a four-leaf clover | halfling | to draw (tier 2) |
-| hammer | Hammer | a war hammer | hammer | to draw (tier 2) |
-| round-door | Round door | a round door in a hillside | hobbit | to draw (tier 2) |
-| helm | Helm | a great helm with a plume | knight | to draw (tier 2) |
-| two-circles | Two circles | two overlapping circles | name_combiner | to draw (tier 2) |
-| crystal-ball | Crystal ball | a crystal ball on a stand | path_of_exile_witch | to draw (tier 2) |
-| skull-bones | Skull bones | a skull and crossbones | pirate | to draw (tier 2) |
-| mic | Mic | a microphone | podcast, rapper | to draw (tier 2) |
-| bottle | Bottle | a stoppered potion bottle | poison | to draw (tier 2) |
-| star | Star | a star with spotlight rays | stage_name | to draw (tier 2) |
-| mask | Mask | a domino mask | superhero, villain | to draw (tier 2) |
-| bat | Bat | a bat in flight | vampire | to draw (tier 2) |
-| top-hat | Top hat | a top hat | victorian | to draw (tier 2) |
-| longship | Longship | a longship with a striped sail | viking | to draw (tier 2) |
-| wolf-moon | Wolf moon | a wolf head against a full moon | werewolf | to draw (tier 2) |
-| bee | Bee | a bee | wu_tang | to draw (tier 2) |
-| old-tv | Old tv | an old TV with an antenna | youtube | to draw (tier 2) |
-| hand | Hand | a hand rising from the soil | zombie | to draw (tier 2) |
+| vinyl | Vinyl | a vinyl record | album | drawn (tier 2) |
+| amphora | Amphora | a Greek amphora | ancient_greek | drawn (tier 2) |
+| feather-wings | Feather wings | feathered wings with a halo | angel | drawn (tier 2) |
+| cup | Cup | a coffee cup with steam | cafe | drawn (tier 2) |
+| building | Building | an office block | company | drawn (tier 2) |
+| headphones | Headphones | headphones | dj | drawn (tier 2) |
+| volcano | Volcano | a smoking volcano | dunmer | drawn (tier 2) |
+| pickaxe | Pickaxe | a pickaxe | dwarf | drawn (tier 2) |
+| ring | Ring | a plain ring with a glint | elden_ring | drawn (tier 2) |
+| shopfront | Shopfront | a striped-awning shopfront | fantasy_shop | drawn (tier 2) |
+| wizard-hat | Wizard hat | a pointed wizard hat with stars | funny_wizard, lotr_wizard, wizard | drawn (tier 2) |
+| crown | Crown | an iron crown | game_of_thrones | drawn (tier 2) |
+| gamepad | Gamepad | a game controller | gamertag | drawn (tier 2) |
+| ghost | Ghost | a sheet ghost | ghost | drawn (tier 2) |
+| goblin-ear | Goblin ear | a pointed goblin ear with an earring | goblin | drawn (tier 2) |
+| clover | Clover | a four-leaf clover | halfling | drawn (tier 2) |
+| hammer | Hammer | a war hammer | hammer | drawn (tier 2) |
+| round-door | Round door | a round door in a hillside | hobbit | drawn (tier 2) |
+| helm | Helm | a great helm with a plume | knight | drawn (tier 2) |
+| two-circles | Two circles | two overlapping circles | name_combiner | drawn (tier 2) |
+| crystal-ball | Crystal ball | a crystal ball on a stand | path_of_exile_witch | drawn (tier 2) |
+| skull-bones | Skull bones | a skull and crossbones | pirate | drawn (tier 2) |
+| mic | Mic | a microphone | podcast, rapper | drawn (tier 2) |
+| bottle | Bottle | a stoppered potion bottle | poison | drawn (tier 2) |
+| star | Star | a star with spotlight rays | stage_name | drawn (tier 2) |
+| mask | Mask | a domino mask | superhero, villain | drawn (tier 2) |
+| bat | Bat | a bat in flight | vampire | drawn (tier 2) |
+| top-hat | Top hat | a top hat | victorian | drawn (tier 2) |
+| longship | Longship | a longship with a striped sail | viking | drawn (tier 2) |
+| wolf-moon | Wolf moon | a wolf head against a full moon | werewolf | drawn (tier 2) |
+| bee | Bee | a bee | wu_tang | drawn (tier 2) |
+| old-tv | Old tv | an old TV with an antenna | youtube | drawn (tier 2) |
+| hand | Hand | a hand rising from the soil | zombie | drawn (tier 2) |
+| lost-map | Lost map | a folded map with a dotted path ending in a hand-drawn question-mark squiggle | the 404 page | drawn (tier 2) |
 
 ## 5. Generator inventory (108 generators)
 
