@@ -81,32 +81,44 @@
       "cases": {
         "sky": {
           "recipe": "template",
-          "template": "[sky.a][sky.b] [epithets]"
+          "template": [
+            "[sky.a][sky.b] [epithets]",
+            "[sky.a][sky.b], [epithets_titled]"
+          ]
         },
         "greek": {
           "recipe": "template",
           "template": [
             "[greek] [epithets]",
-            "[greek] of [places] [epithets]"
+            "[greek], [epithets_titled]",
+            "[greek] of [places]"
           ]
         },
         "cute": {
           "recipe": "template",
           "template": [
             "[cute] [epithets]",
+            "[cute], [epithets_titled]",
             "Little [cute] [epithets]",
-            "Baby [cute] [epithets]"
+            "Little [cute], [epithets_titled]",
+            "Baby [cute] [epithets]",
+            "Baby [cute], [epithets_titled]"
           ]
         },
         "any": {
           "recipe": "template",
           "template": [
             "[sky.a][sky.b] [epithets]",
+            "[sky.a][sky.b], [epithets_titled]",
             "[greek] [epithets]",
-            "[greek] of [places] [epithets]",
+            "[greek], [epithets_titled]",
+            "[greek] of [places]",
             "[cute] [epithets]",
+            "[cute], [epithets_titled]",
             "Little [cute] [epithets]",
-            "Baby [cute] [epithets]"
+            "Little [cute], [epithets_titled]",
+            "Baby [cute] [epithets]",
+            "Baby [cute], [epithets_titled]"
           ]
         }
       }
@@ -238,9 +250,15 @@
       "of the Silver Sky",
       "the Dawn-Flier",
       "the Light-Hoofed",
-      "Friend of Heroes",
       "the Storm-Rider",
       "of the Endless Blue"
+    ],
+    "epithets_titled": [
+      "Friend of Heroes",
+      "Bearer of Thunder",
+      "Child of the Clouds",
+      "Steed of the Gods",
+      "Herald of the Storm"
     ]
   },
   "article": {

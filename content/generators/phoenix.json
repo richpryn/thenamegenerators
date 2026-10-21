@@ -81,32 +81,44 @@
       "cases": {
         "fire": {
           "recipe": "template",
-          "template": "[fire.a][fire.b] [epithets]"
+          "template": [
+            "[fire.a][fire.b] [epithets]",
+            "[fire.a][fire.b], [epithets_titled]"
+          ]
         },
         "ancient": {
           "recipe": "template",
           "template": [
             "[ancient] [epithets]",
-            "[ancient] of [places] [epithets]"
+            "[ancient], [epithets_titled]",
+            "[ancient] of [places]"
           ]
         },
         "cute": {
           "recipe": "template",
           "template": [
             "[cute] [epithets]",
+            "[cute], [epithets_titled]",
             "Little [cute] [epithets]",
-            "Baby [cute] [epithets]"
+            "Little [cute], [epithets_titled]",
+            "Baby [cute] [epithets]",
+            "Baby [cute], [epithets_titled]"
           ]
         },
         "any": {
           "recipe": "template",
           "template": [
             "[fire.a][fire.b] [epithets]",
+            "[fire.a][fire.b], [epithets_titled]",
             "[ancient] [epithets]",
-            "[ancient] of [places] [epithets]",
+            "[ancient], [epithets_titled]",
+            "[ancient] of [places]",
             "[cute] [epithets]",
+            "[cute], [epithets_titled]",
             "Little [cute] [epithets]",
-            "Baby [cute] [epithets]"
+            "Little [cute], [epithets_titled]",
+            "Baby [cute] [epithets]",
+            "Baby [cute], [epithets_titled]"
           ]
         }
       }
@@ -242,12 +254,17 @@
       "the Sunbird",
       "the Ever-Burning",
       "the Golden",
-      "Keeper of the Last Fire",
       "the Eternal",
       "the Ashborn",
-      "Herald of the Dawn",
       "the Twice-Born",
       "of the Burning Sky"
+    ],
+    "epithets_titled": [
+      "Keeper of the Last Fire",
+      "Herald of the Dawn",
+      "Child of the Sun",
+      "Lord of the Pyre",
+      "Bringer of Spring"
     ]
   },
   "article": {

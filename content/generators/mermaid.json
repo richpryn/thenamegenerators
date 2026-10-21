@@ -98,32 +98,44 @@
           "cases": {
             "sea": {
               "recipe": "template",
-              "template": "[female] [b][c] [epithets]"
+              "template": [
+                "[female] [b][c] [epithets]",
+                "[female] [b][c], [epithets_titled]"
+              ]
             },
             "single": {
               "recipe": "template",
               "template": [
                 "[female] [epithets]",
-                "[female] of [places] [epithets]"
+                "[female], [epithets_titled]",
+                "[female] of [places]"
               ]
             },
             "cute": {
               "recipe": "template",
               "template": [
                 "[cute] [epithets]",
+                "[cute], [epithets_titled]",
                 "Little [cute] [epithets]",
-                "Baby [cute] [epithets]"
+                "Little [cute], [epithets_titled]",
+                "Baby [cute] [epithets]",
+                "Baby [cute], [epithets_titled]"
               ]
             },
             "any": {
               "recipe": "template",
               "template": [
                 "[female] [b][c] [epithets]",
+                "[female] [b][c], [epithets_titled]",
                 "[female] [epithets]",
-                "[female] of [places] [epithets]",
+                "[female], [epithets_titled]",
+                "[female] of [places]",
                 "[cute] [epithets]",
+                "[cute], [epithets_titled]",
                 "Little [cute] [epithets]",
-                "Baby [cute] [epithets]"
+                "Little [cute], [epithets_titled]",
+                "Baby [cute] [epithets]",
+                "Baby [cute], [epithets_titled]"
               ]
             }
           }
@@ -176,32 +188,44 @@
           "cases": {
             "sea": {
               "recipe": "template",
-              "template": "[male] [b][c] [epithets]"
+              "template": [
+                "[male] [b][c] [epithets]",
+                "[male] [b][c], [epithets_titled]"
+              ]
             },
             "single": {
               "recipe": "template",
               "template": [
                 "[male] [epithets]",
-                "[male] of [places] [epithets]"
+                "[male], [epithets_titled]",
+                "[male] of [places]"
               ]
             },
             "cute": {
               "recipe": "template",
               "template": [
                 "[cute] [epithets]",
+                "[cute], [epithets_titled]",
                 "Little [cute] [epithets]",
-                "Baby [cute] [epithets]"
+                "Little [cute], [epithets_titled]",
+                "Baby [cute] [epithets]",
+                "Baby [cute], [epithets_titled]"
               ]
             },
             "any": {
               "recipe": "template",
               "template": [
                 "[male] [b][c] [epithets]",
+                "[male] [b][c], [epithets_titled]",
                 "[male] [epithets]",
-                "[male] of [places] [epithets]",
+                "[male], [epithets_titled]",
+                "[male] of [places]",
                 "[cute] [epithets]",
+                "[cute], [epithets_titled]",
                 "Little [cute] [epithets]",
-                "Baby [cute] [epithets]"
+                "Little [cute], [epithets_titled]",
+                "Baby [cute] [epithets]",
+                "Baby [cute], [epithets_titled]"
               ]
             }
           }
@@ -264,38 +288,52 @@
               "recipe": "template",
               "template": [
                 "[female] [b][c] [epithets]",
-                "[male] [b][c] [epithets]"
+                "[female] [b][c], [epithets_titled]",
+                "[male] [b][c] [epithets]",
+                "[male] [b][c], [epithets_titled]"
               ]
             },
             "single": {
               "recipe": "template",
               "template": [
                 "[female] [epithets]",
+                "[female], [epithets_titled]",
                 "[male] [epithets]",
-                "[female] of [places] [epithets]",
-                "[male] of [places] [epithets]"
+                "[male], [epithets_titled]",
+                "[female] of [places]",
+                "[male] of [places]"
               ]
             },
             "cute": {
               "recipe": "template",
               "template": [
                 "[cute] [epithets]",
+                "[cute], [epithets_titled]",
                 "Little [cute] [epithets]",
-                "Baby [cute] [epithets]"
+                "Little [cute], [epithets_titled]",
+                "Baby [cute] [epithets]",
+                "Baby [cute], [epithets_titled]"
               ]
             },
             "any": {
               "recipe": "template",
               "template": [
                 "[female] [b][c] [epithets]",
+                "[female] [b][c], [epithets_titled]",
                 "[male] [b][c] [epithets]",
+                "[male] [b][c], [epithets_titled]",
                 "[female] [epithets]",
+                "[female], [epithets_titled]",
                 "[male] [epithets]",
-                "[female] of [places] [epithets]",
-                "[male] of [places] [epithets]",
+                "[male], [epithets_titled]",
+                "[female] of [places]",
+                "[male] of [places]",
                 "[cute] [epithets]",
+                "[cute], [epithets_titled]",
                 "Little [cute] [epithets]",
-                "Baby [cute] [epithets]"
+                "Little [cute], [epithets_titled]",
+                "Baby [cute] [epithets]",
+                "Baby [cute], [epithets_titled]"
               ]
             }
           }
@@ -467,8 +505,14 @@
       "the Silver-Tailed",
       "the Shipwreck Finder",
       "the Wave-Dancer",
-      "Keeper of the Lighthouse Song",
       "the Salt-Kissed"
+    ],
+    "epithets_titled": [
+      "Keeper of the Lighthouse Song",
+      "Heir of the Pearl Caves",
+      "Ruler of the Coral Court",
+      "Child of the Tides",
+      "Guardian of the Reef"
     ]
   },
   "article": {

@@ -90,39 +90,53 @@
       "cases": {
         "magical": {
           "recipe": "template",
-          "template": "[magical.a][magical.b] [epithets]"
+          "template": [
+            "[magical.a][magical.b] [epithets]",
+            "[magical.a][magical.b], [epithets_titled]"
+          ]
         },
         "legend": {
           "recipe": "template",
           "template": [
             "[legend] [epithets]",
-            "[legend] of [glades] [epithets]"
+            "[legend], [epithets_titled]",
+            "[legend] of [glades]"
           ]
         },
         "cute": {
           "recipe": "template",
           "template": [
             "[cute] [epithets]",
-            "[cute_a] [cute_b] [epithets]"
+            "[cute], [epithets_titled]",
+            "[cute_a] [cute_b] [epithets]",
+            "[cute_a] [cute_b], [epithets_titled]"
           ]
         },
         "funny": {
           "recipe": "template",
           "template": [
             "[funny] [epithets]",
-            "[funny_titles] [funny_words] [epithets]"
+            "[funny], [epithets_titled]",
+            "[funny_titles] [funny_words] [epithets]",
+            "[funny_titles] [funny_words], [epithets_titled]"
           ]
         },
         "any": {
           "recipe": "template",
           "template": [
             "[magical.a][magical.b] [epithets]",
+            "[magical.a][magical.b], [epithets_titled]",
             "[legend] [epithets]",
-            "[legend] of [glades] [epithets]",
+            "[legend], [epithets_titled]",
+            "[legend] of [glades]",
             "[cute] [epithets]",
+            "[cute], [epithets_titled]",
             "[cute_a] [cute_b] [epithets]",
+            "[cute_a] [cute_b], [epithets_titled]",
             "[funny] [epithets]",
-            "[funny_titles] [funny_words] [epithets]"
+            "[funny], [epithets_titled]",
+            "[funny_titles] [funny_words] [epithets]",
+            "[funny_titles] [funny_words], [epithets_titled]"
           ]
         }
       }
@@ -325,10 +339,16 @@
       "the Rarely Seen",
       "of the Enchanted Wood",
       "the Radiant",
-      "the Last of Her Kind",
+      "the Last of the Herd",
       "the Wild",
       "of the Misty Vale",
       "the Dream-Bringer"
+    ],
+    "epithets_titled": [
+      "Spirit of the Glade",
+      "Guardian of the Wood",
+      "Keeper of Dreams",
+      "Child of the Moon"
     ]
   },
   "article": {

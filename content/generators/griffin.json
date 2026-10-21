@@ -75,26 +75,36 @@
       "cases": {
         "noble": {
           "recipe": "template",
-          "template": "[noble.first] [noble.b][noble.c] [epithets]"
+          "template": [
+            "[noble.first] [noble.b][noble.c] [epithets]",
+            "[noble.first] [noble.b][noble.c], [epithets_titled]"
+          ]
         },
         "fierce": {
           "recipe": "template",
-          "template": "[fierce.a][fierce.b] [epithets]"
+          "template": [
+            "[fierce.a][fierce.b] [epithets]",
+            "[fierce.a][fierce.b], [epithets_titled]"
+          ]
         },
         "ancient": {
           "recipe": "template",
           "template": [
             "[ancient] [epithets]",
-            "[ancient] of [places] [epithets]"
+            "[ancient], [epithets_titled]",
+            "[ancient] of [places]"
           ]
         },
         "any": {
           "recipe": "template",
           "template": [
             "[noble.first] [noble.b][noble.c] [epithets]",
+            "[noble.first] [noble.b][noble.c], [epithets_titled]",
             "[fierce.a][fierce.b] [epithets]",
+            "[fierce.a][fierce.b], [epithets_titled]",
             "[ancient] [epithets]",
-            "[ancient] of [places] [epithets]"
+            "[ancient], [epithets_titled]",
+            "[ancient] of [places]"
           ]
         }
       }
@@ -227,18 +237,20 @@
       "Leander"
     ],
     "epithets": [
-      "Guardian of the Gold",
       "the Watchful",
-      "Lord of the Eyrie",
       "the Sky-Lion",
       "of the High Crags",
       "the Storm-Winged",
-      "Keeper of the Mountain Pass",
       "the Unbowed",
       "of the Golden Hoard",
       "the Sharp-Eyed",
-      "Wing of the King",
       "the Proud"
+    ],
+    "epithets_titled": [
+      "Guardian of the Gold",
+      "Lord of the Eyrie",
+      "Keeper of the Mountain Pass",
+      "Wing of the King"
     ]
   },
   "article": {
