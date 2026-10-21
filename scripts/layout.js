@@ -158,7 +158,7 @@ const MENU = [
     ['posts/tavern-name-generator.html', 'Tavern names'],
     ['posts/fantasy-town-name-generator.html', 'Town & village names'],
     ['posts/epithet-generator.html', 'Epithets & titles'],
-  ], more: [['categories/dnd-names.html', 'D&D'], ['categories/fantasy-names.html', 'Fantasy']] },
+  ], more: [['categories/halloween-names.html', 'Halloween'], ['categories/dnd-names.html', 'D&D'], ['categories/fantasy-names.html', 'Fantasy']] },
   { label: 'Games & TV', id: 'menu-games', links: [
     ['posts/hogwarts-legacy-witch-name-generator.html', 'Hogwarts Legacy witch'],
     ['posts/hogwarts-legacy-wizard-name-generator.html', 'Hogwarts Legacy wizard'],

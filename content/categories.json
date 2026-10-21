@@ -48,6 +48,46 @@
     ]
   },
   {
+    "name": "Halloween",
+    "slug": "halloween",
+    "icon": "🎃",
+    "navLabel": "Halloween Names",
+    "heading": "Halloween Name Generators: Vampires, Ghosts and Zombies",
+    "seoTitle": "Halloween Name Generators: Spooky Character Names",
+    "description": "Spooky names for Halloween: vampires, ghosts, zombies, werewolves, witches and demons, for costumes, parties, haunted houses and stories.",
+    "seoDescription": "Halloween name generators for costumes, parties and stories: vampires, ghosts, zombies, werewolves, witches, demons and villains. Free to use.",
+    "intro": "<p>A good Halloween name tells you what kind of scary you're in for. A <a href=\"../posts/vampire-name-generator.html\">vampire</a> wants an old title and a family name with history behind it. A <a href=\"../posts/ghost-name-generator.html\">ghost</a> is usually named for the colour it wears or the place it haunts, like the Grey Ladies of English ghost stories. A <a href=\"../posts/zombie-name-generator.html\">zombie</a> can be grim or downright silly, and a <a href=\"../posts/werewolf-name-generator.html\">werewolf</a> name often means \"wolf\" in an old language.</p><p>Use them for a costume character, a haunted house at the school fair, a one-shot for your gaming group or a spooky short story. For the party itself, the <a href=\"../posts/event-name-generator.html\">Event Name Generator</a> has party names, and the <a href=\"../posts/villain-name-generator.html\">Villain</a> and <a href=\"../posts/demon-name-generator.html\">Demon</a> generators cover anything with horns or a cape.</p>",
+    "featured": [
+      {
+        "key": "vampire",
+        "note": "counts and countesses, Old World nobles or the vampire next door."
+      },
+      {
+        "key": "ghost",
+        "note": "named for a colour, a haunted place or a sad story, plus friendly ghosts."
+      },
+      {
+        "key": "zombie",
+        "note": "funny shamblers or grim undead, plus the virus that started it all."
+      },
+      {
+        "key": "werewolf",
+        "note": "names that really mean \"wolf\", and packs to run with."
+      }
+    ],
+    "generators": [
+      "vampire",
+      "ghost",
+      "zombie",
+      "werewolf",
+      "swamp_witch",
+      "harry_potter_witch",
+      "demon",
+      "villain",
+      "event"
+    ]
+  },
+  {
     "name": "Fantasy",
     "slug": "fantasy",
     "icon": "⚔️",
