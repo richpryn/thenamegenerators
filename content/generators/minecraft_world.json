@@ -4,7 +4,7 @@
   "icon": "🌍",
   "category": "minecraft",
   "published": "2026-10-21",
-  "description": "Minecraft world names for survival, hardcore, creative, cosy, funny and adventure worlds, all short enough to fit Minecraft's world name box.",
+  "description": "Minecraft world name ideas for survival, hardcore, creative, cosy, funny and adventure worlds, short enough to fit Minecraft's world name box.",
   "seoKeywords": "minecraft world name generator, minecraft world names, cool minecraft world names, funny minecraft world names, minecraft survival world names, hardcore world names, aesthetic minecraft world names",
   "seoTitle": "Minecraft World Name Generator: Cool & Funny Ideas",
   "isPopular": false,
@@ -337,15 +337,15 @@
       "title": "🌍 Minecraft World Name Generator",
       "tagline": "Names for survival, hardcore, creative, cosy, funny and adventure worlds."
     },
-    "intro": "A world name is the first thing you see on the world list, so it's worth more than \"New World (3)\". This **Minecraft world name generator** makes names to suit how you play: survival, hardcore, creative, cosy, funny or adventure.",
+    "intro": "This **Minecraft world name generator** makes world names to suit how you play: survival, hardcore, creative, cosy, funny or adventure. A world name is the first thing you see on the world list, so it's worth more than \"New World (3)\".",
     "sections": [
       {
-        "heading": "Picking a world name",
-        "content": "<ul><li><strong>Name it for how you'll play:</strong> a hardcore world wants something grim, a creative world something grand, and a cosy world something soft.</li><li><strong>Keep it short.</strong> Long names get cut off in the world list.</li><li><strong>Playing with friends?</strong> A name everyone recognises saves \"which one was it?\" every time you load up.</li><li><strong>You can change it later</strong> from the world's settings (Edit, on Java Edition), so don't worry about getting it perfect.</li></ul>"
+        "heading": "Minecraft world name ideas",
+        "content": "<p>A good Minecraft world name is short, matches how you'll play, and is easy to spot in the world list.</p><ul><li><strong>Name it for how you'll play:</strong> a hardcore world wants something grim, a creative world something grand, and a cosy world something soft.</li><li><strong>Keep it short.</strong> Long names get cut off in the world list.</li><li><strong>Playing with friends?</strong> A name everyone recognises saves \"which one was it?\" every time you load up.</li><li><strong>You can change it later</strong> from the world's settings (Edit, on Java Edition), so don't worry about getting it perfect.</li></ul>"
       },
       {
-        "heading": "The styles",
-        "content": "<ul><li><strong>Survival</strong> and <strong>adventure:</strong> names with a sense of a journey, like First Wilderness or Dragon's Saga.</li><li><strong>Hardcore:</strong> one life, so the name might as well be a warning.</li><li><strong>Creative:</strong> big, open names for a world where anything gets built.</li><li><strong>Cosy:</strong> cottagecore and aesthetic names, like Fern Patch or Bumble Village.</li><li><strong>Funny:</strong> for the world everyone knows will end in disaster: Don't Die Again.</li></ul><p>Running it as a server? Try the <a href=\"minecraft-server-name-generator.html\">Minecraft Server Name Generator</a>, and name the towns inside it with the <a href=\"minecraft-town-name-generator.html\">Minecraft Town Name Generator</a>.</p><p>For everything else in Minecraft, see all the <a href=\"../categories/minecraft-names.html\">Minecraft name generators</a>.</p><p>More for your Minecraft world: <a href=\"minecraft-username-generator.html\">usernames</a>.</p>"
+        "heading": "Survival, hardcore, cosy and funny world names",
+        "content": "<p>Each style of world suits a different kind of name.</p><ul><li><strong>Survival</strong> and <strong>adventure:</strong> names with a sense of a journey, like First Wilderness or Dragon's Saga.</li><li><strong>Hardcore:</strong> one life, so the name might as well be a warning.</li><li><strong>Creative:</strong> big, open names for a world where anything gets built.</li><li><strong>Cosy:</strong> cottagecore and aesthetic names, like Fern Patch or Bumble Village.</li><li><strong>Funny:</strong> for the world everyone knows will end in disaster: Don't Die Again.</li></ul><p>Running it as a server? Try the <a href=\"minecraft-server-name-generator.html\">Minecraft Server Name Generator</a>, and name the towns inside it with the <a href=\"minecraft-town-name-generator.html\">Minecraft Town Name Generator</a>.</p><p>For everything else in Minecraft, see all the <a href=\"../categories/minecraft-names.html\">Minecraft name generators</a>.</p><p>More for your Minecraft world: <a href=\"minecraft-username-generator.html\">usernames</a>.</p>"
       }
     ],
     "faqs": [
@@ -360,6 +360,10 @@
       {
         "question": "What's a good name for a world with friends?",
         "answer": "Something short that everyone will recognise in the list. The funny and adventure styles work well for shared worlds."
+      },
+      {
+        "question": "What are good names for a Minecraft hardcore world?",
+        "answer": "Something grim, because you only get one life: choose Hardcore for names that read like a warning."
       }
     ]
   }
