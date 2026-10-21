@@ -229,7 +229,7 @@
   <!-- Category: Pop Culture -->
   <url>
     <loc>https://thenamegenerators.com/categories/pop_culture-names.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -279,6 +279,20 @@
   <url>
     <loc>https://thenamegenerators.com/posts/anglo-saxon-name-generator.html</loc>
     <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Animatronic Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/animatronic-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Anime Character Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/anime-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -650,6 +664,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/funny-wizard-name-generator.html</loc>
     <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Fursona Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/fursona-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
