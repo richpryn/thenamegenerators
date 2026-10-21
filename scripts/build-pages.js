@@ -469,7 +469,7 @@ function generateGeneratorPage(generator, category, site) {
   const seoTitle = generateSEOTitle(generator);
   const baseUrl = "https://thenamegenerators.com";
   const pageUrl = `${baseUrl}/posts/${generator.slug}.html`;
-  const imageUrl = `${baseUrl}/images/${generator.slug}.jpg`;
+  const imageUrl = layout.shareImage(generator.slug);
 
   // Enhanced meta description (150-160 characters optimal)
   const metaDescription = generator.description.length > 160
@@ -675,7 +675,7 @@ function generateCategoryPage(category, site) {
   const baseUrl = "https://thenamegenerators.com";
   const categorySEOTitle = category.seoTitle || `${category.name} Name Generators - Free Online Tools | The Name Generators`;
   const categoryUrl = `${baseUrl}/categories/${categorySlug}-names.html`;
-  const categoryImageUrl = `${baseUrl}/images/categories/${categorySlug}.jpg`;
+  const categoryImageUrl = layout.shareImage(`category-${categorySlug}`);
   
   // Enhanced category meta description
   const categoryMetaDesc = category.seoDescription.length > 160
@@ -792,6 +792,15 @@ ${relatedHubsHTML}
 }
 
 /** The name tools (Spin the Wheel and its siblings), for cards, the hub page and sitemaps. */
+/** Hand-written and hub pages that get a share image (scripts/share-images.js). */
+const STATIC_SHARE_PAGES = [
+  { name: 'home', title: 'Name Generators for D&D, Stories and Games', line: 'Names for characters, places, weapons, events and bands. Free to use, no sign-up.', motif: 'dragon' },
+  { name: 'all-generators', title: 'All Name Generators', line: 'Every generator on the site, from elves to escape rooms.', motif: 'quill' },
+  { name: 'name-tools', title: 'Name Tools', line: 'Spin a wheel, draw a name, pick raffle winners, split teams or run Secret Santa.', motif: 'clover' },
+  { name: 'about', title: 'About The Name Generators', line: 'Why this site exists.', motif: 'note' },
+  { name: 'privacy', title: 'Privacy and cookies', line: 'What this site keeps, and how to change your mind.', motif: 'quill' },
+];
+
 const NAME_TOOLS = [
   { key: 'wheel', page: 'spin-the-wheel.html', title: 'Spin the Wheel', short: 'Spin a wheel of names to pick one at random.',
     doodle: '<svg class="doodle wob" viewBox="0 0 60 60" aria-hidden="true" focusable="false"><circle cx="30" cy="32" r="22" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8"/><path d="M30 10 V54 M8 32 H52 M14.5 16.5 L45.5 47.5 M45.5 16.5 L14.5 47.5" stroke="#1e1c18" stroke-width="1.2" stroke-linecap="round"/><path d="M30 32 L30 10 A22 22 0 0 1 45.5 16.5 Z" fill="#efc84a" stroke="#1e1c18" stroke-width="1.2" stroke-linejoin="round"/><circle cx="30" cy="32" r="3.5" fill="#1e1c18"/><path d="M26 3 L34 3 L30 11 Z" fill="#1e1c18"/></svg>' },
@@ -835,7 +844,7 @@ const WHEEL_FAQS = [
 function generateWheelPage(site) {
   const baseUrl = 'https://thenamegenerators.com';
   const url = `${baseUrl}/spin-the-wheel.html`;
-  const title = 'Spin the Wheel: Random Name Picker Wheel | The Name Generators';
+  const title = 'Spin the Wheel: Random Name Wheel | The Name Generators';
   const desc = 'Spin a wheel to pick a random name. Type or paste names, spin, remove the winner and spin again. Free, no sign-up, and your list stays in your browser.';
   const fill = WHEEL_FILL.filter(([key]) => site.all.some(g => g.key === key));
  const combiner = site.all.find(g => g.key === 'name_combiner');
@@ -894,8 +903,10 @@ ${scriptJson({
     <meta property="og:url" content="${url}">
     <meta property="og:title" content="${escapeHtml(title)}">
     <meta property="og:description" content="${escapeHtml(desc)}">
+    <meta property="og:image" content="${layout.shareImage('spin-the-wheel')}">
     <meta property="og:site_name" content="The Name Generators">
-    <meta property="twitter:card" content="summary">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="${layout.shareImage('spin-the-wheel')}">
     <meta property="twitter:title" content="${escapeHtml(title)}">
     <meta property="twitter:description" content="${escapeHtml(desc)}">
 
@@ -1059,7 +1070,7 @@ const numberOptions = (from, to, selected) => Array.from({ length: to - from + 1
 /** What's different about each sibling tool: its controls, its results and its page copy. */
 const SIBLING_PAGES = {
   picker: {
-    seoTitle: 'Random Name Picker: Draw a Name From a Hat | The Name Generators',
+    seoTitle: 'Random Name Picker: Draw a Name | The Name Generators',
     desc: 'Pick a random name from your list, like drawing a card from a hat. Remove each name once it is drawn. Free, no sign-up, and your list stays in your browser.',
     keywords: 'random name picker, name picker, pick a random name, draw a name, name from a hat, random name selector, classroom name picker',
     h1: 'Random Name <span class="hl">Picker</span>',
@@ -1094,7 +1105,7 @@ const SIBLING_PAGES = {
   },
   raffle: {
     seoTitle: 'Raffle Picker: Pick a Random Winner | The Name Generators',
-    desc: 'Draw one or several raffle winners at random from a list of names. Every name gets a numbered ticket, and winners are drawn in order: 1st, 2nd, 3rd. Free, in your browser.',
+    desc: 'Draw one or several raffle winners at random from a list of names. Every name gets a numbered ticket and winners are drawn in order. Free, in your browser.',
     keywords: 'raffle picker, pick a winner, random winner picker, raffle generator, giveaway picker, prize draw, random winner generator',
     h1: 'Raffle / Pick a <span class="hl">Winner</span>',
     lede: 'Every name gets a numbered ticket. Choose how many winners, then draw them in order: 1st, 2nd, 3rd.',
@@ -1131,8 +1142,8 @@ const SIBLING_PAGES = {
   },
   santa: {
     min: 3,
-    seoTitle: 'Secret Santa Generator: Draw Names Online | The Name Generators',
-    desc: 'Draw Secret Santa names online for free. Nobody gets themselves, and each match stays hidden until it is revealed, so the organiser can play too. No sign-up or emails needed.',
+    seoTitle: 'Secret Santa Generator: Free Name Draw | The Name Generators',
+    desc: 'Draw Secret Santa names online for free. Nobody gets themselves, and matches stay hidden until revealed, so the organiser can play too. No sign-up.',
     keywords: 'secret santa generator, secret santa name draw, secret santa picker, draw names for secret santa, online secret santa, gift exchange generator',
     h1: 'Secret <span class="hl">Santa</span> Generator',
     lede: 'Add everyone taking part, then draw. Nobody gets themselves, and each match stays hidden until it is revealed.',
@@ -1166,8 +1177,8 @@ const SIBLING_PAGES = {
     ],
   },
   teams: {
-    seoTitle: 'Team Generator: Split Names Into Random Teams | The Name Generators',
-    desc: 'Split a list of names into random, even teams. Choose the number of teams or the number of people per team. Free, no sign-up, and your list stays in your browser.',
+    seoTitle: 'Random Team Generator | The Name Generators',
+    desc: 'Split a list of names into random, even teams, by number of teams or people per team. Free, no sign-up, and your list stays in your browser.',
     keywords: 'team generator, random team generator, team picker, split into teams, random group generator, team maker, group generator',
     h1: 'Team <span class="hl">Generator</span>',
     lede: 'Type or paste names, choose how many teams, and get even, random teams in one click.',
@@ -1264,8 +1275,10 @@ ${scriptJson({
     <meta property="og:url" content="${url}">
     <meta property="og:title" content="${escapeHtml(cfg.seoTitle)}">
     <meta property="og:description" content="${escapeHtml(cfg.desc)}">
+    <meta property="og:image" content="${layout.shareImage(path.basename(NAME_TOOLS.find(t => t.key === key).page, '.html'))}">
     <meta property="og:site_name" content="The Name Generators">
-    <meta property="twitter:card" content="summary">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="${layout.shareImage(path.basename(NAME_TOOLS.find(t => t.key === key).page, '.html'))}">
     <meta property="twitter:title" content="${escapeHtml(cfg.seoTitle)}">
     <meta property="twitter:description" content="${escapeHtml(cfg.desc)}">
 
@@ -1330,8 +1343,8 @@ ${scriptJson({
 function generateNameToolsHub(site) {
   const baseUrl = 'https://thenamegenerators.com';
   const url = `${baseUrl}/name-tools.html`;
-  const title = 'Name Tools: Spin the Wheel, Name Picker, Raffle, Teams | The Name Generators';
-  const desc = 'Free tools for lists of names: spin a wheel, pick a random name, draw raffle winners, draw Secret Santa and make random teams. No sign-up, and lists stay in your browser.';
+  const title = 'Name Tools: Pickers, Raffles and Teams | The Name Generators';
+  const desc = 'Free tools for lists of names: spin a wheel, pick a random name, draw raffle winners or Secret Santa, and make random teams. No sign-up needed.';
   const combiner = site.all.find(g => g.key === 'name_combiner');
   const motifs = combiner ? [layout.generatorMotif(combiner, site.categories.find(c => c.slug === combiner.category))] : [];
   return `<!DOCTYPE html>
@@ -1363,7 +1376,10 @@ ${scriptJson({
     <meta property="og:url" content="${url}">
     <meta property="og:title" content="${escapeHtml(title)}">
     <meta property="og:description" content="${escapeHtml(desc)}">
+    <meta property="og:image" content="${layout.shareImage('name-tools')}">
     <meta property="og:site_name" content="The Name Generators">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="${layout.shareImage('name-tools')}">
 
     ${ICON_LINKS}
     ${layout.headAssets('')}
@@ -1585,6 +1601,7 @@ function build() {
   generateSitemap(site);
   generateHtmlSitemap(site);
   generate404(site);
+  generateRedirectPages();
   generateLlmsTxt(site);
   updateStaticPages(site);
 
@@ -1770,28 +1787,57 @@ ${groups}
 }
 
 /**
+ * Addresses from the old site. GitHub Pages can't send real redirects, so each
+ * old address gets a tiny page that forwards at once (a zero-second refresh,
+ * which Google treats as a permanent redirect) and names the new page as
+ * canonical. The 404 page also forwards them, as a fallback.
+ */
+const OLD_URLS = {
+  '/orc-name-generator-skyrim/': '/posts/skyrim-orc-name-generator.html',
+  '/orc-name-generator-warhammer/': '/posts/warhammer-orc-name-generator.html',
+  '/orc-name-generator-world-of-warcraft/': '/posts/wow-orc-name-generator.html',
+  '/orc-name-generator-lord-of-the-rings/': '/posts/lotr-orc-name-generator.html',
+  '/half-orc-name-generator/': '/posts/half-orc-name-generator.html',
+  '/dungeon-synth-name-generator/': '/posts/dungeon-synth-name-generator.html',
+  '/swamp-witch-name-generator/': '/posts/swamp-witch-name-generator.html',
+  '/dnd-fantasy-name-generator/': '/posts/dnd-fantasy-name-generator.html',
+  '/witch-name-generator-path-of-exhile/': '/posts/path-of-exile-witch-name-generator.html',
+  '/witch-name-generator-harry-potter/': '/posts/harry-potter-witch-name-generator.html',
+  '/witch-name-generator-hogwarts-legacy/': '/posts/hogwarts-legacy-witch-name-generator.html',
+  '/wizard-name-generator-hogwarts-legacy/': '/posts/hogwarts-legacy-wizard-name-generator.html',
+  '/funny-wizard-name-generator/': '/posts/funny-wizard-name-generator.html',
+  '/wizard-name-generator-lord-of-the-rings/': '/posts/lotr-wizard-name-generator.html'
+};
+
+function generateRedirectPages() {
+  for (const [from, to] of Object.entries(OLD_URLS)) {
+    const target = `https://thenamegenerators.com${to}`;
+    const dir = path.join(ROOT, from);
+    fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(path.join(dir, 'index.html'), `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moved | ${SITE_NAME}</title>
+    <link rel="canonical" href="${target}">
+    <meta http-equiv="refresh" content="0; url=${to}">
+    <script>window.location.replace(${scriptJson(to)});</script>
+</head>
+<body>
+    <p>This page has moved to <a href="${to}">${target}</a>.</p>
+</body>
+</html>
+`);
+  }
+  console.log(`  ✅ Created: ${Object.keys(OLD_URLS).length} redirect pages for old addresses`);
+}
+
+/**
  * 404 page. GitHub Pages serves this (with a real 404 status) for any
  * unknown address, so every link is absolute. Old addresses from the
  * previous site still forward to their new pages.
  */
 function generate404(site) {
-  const OLD_URLS = {
-    '/orc-name-generator-skyrim/': '/posts/skyrim-orc-name-generator.html',
-    '/orc-name-generator-warhammer/': '/posts/warhammer-orc-name-generator.html',
-    '/orc-name-generator-world-of-warcraft/': '/posts/wow-orc-name-generator.html',
-    '/orc-name-generator-lord-of-the-rings/': '/posts/lotr-orc-name-generator.html',
-    '/half-orc-name-generator/': '/posts/half-orc-name-generator.html',
-    '/dungeon-synth-name-generator/': '/posts/dungeon-synth-name-generator.html',
-    '/swamp-witch-name-generator/': '/posts/swamp-witch-name-generator.html',
-    '/dnd-fantasy-name-generator/': '/posts/dnd-fantasy-name-generator.html',
-    '/witch-name-generator-path-of-exhile/': '/posts/path-of-exile-witch-name-generator.html',
-    '/witch-name-generator-harry-potter/': '/posts/harry-potter-witch-name-generator.html',
-    '/witch-name-generator-hogwarts-legacy/': '/posts/hogwarts-legacy-witch-name-generator.html',
-    '/wizard-name-generator-hogwarts-legacy/': '/posts/hogwarts-legacy-wizard-name-generator.html',
-    '/funny-wizard-name-generator/': '/posts/funny-wizard-name-generator.html',
-    '/wizard-name-generator-lord-of-the-rings/': '/posts/lotr-wizard-name-generator.html'
-  };
-
   const cats = site.categories.filter(c => c.generators.length);
   const categoryCards = cats.map(cat => `<a href="/categories/${cat.slug}-names.html" class="cat hd tap">${layout.doodle(layout.categoryMotif(cat))}<div><b>${escapeHtml(cat.name)}</b><span>${cat.generators.length} generator${cat.generators.length !== 1 ? 's' : ''}</span></div><em aria-hidden="true">→</em></a>`).join('\n                    ');
 
@@ -1871,5 +1917,5 @@ if (require.main === module) {
   build();
 }
 
-module.exports = { build };
+module.exports = { build, NAME_TOOLS, STATIC_SHARE_PAGES };
 

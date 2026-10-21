@@ -58,6 +58,15 @@ function analyticsTag(prefix) {
   return `<script src="${asset(prefix, 'lib/consent.js')}" defer></script>`;
 }
 
+/**
+ * The share image for a page (made by scripts/share-images.js), or the
+ * homepage's while a page doesn't have its own yet.
+ */
+function shareImage(name) {
+  const file = fs.existsSync(path.join(__dirname, '..', 'images', 'share', `${name}.png`)) ? name : 'home';
+  return `https://thenamegenerators.com/images/share/${file}.png`;
+}
+
 /** Analytics, then the stylesheet and the two fonts every page needs first, preloaded. */
 function headAssets(prefix) {
   return `${analyticsTag(prefix)}
@@ -242,7 +251,7 @@ function stripEmoji(text) {
 }
 
 module.exports = {
-  analyticsTag,
+  analyticsTag, shareImage, LOGO,
   SITE_NAME, escapeHtml, asset, menuPages, headAssets, stampAssets, bodyScripts, svgSprite, siteHeader, siteFooter,
   doodle, categoryMotif, generatorMotif, highlightFirstWord, stripEmoji, categoryLinks,
 };
