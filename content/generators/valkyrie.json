@@ -4,7 +4,7 @@
   "icon": "🛡️",
   "category": "mythology",
   "published": "2026-10-22",
-  "description": "Valkyrie names built the Old Norse way, from real name parts meaning battle, spear, victory and shield, like Sigrun and Geirhild, with a title like Chooser of the Slain.",
+  "description": "Valkyrie names built from real Old Norse name parts: victory, spear, shield, battle and swan, for warrior women in stories, games and D&D.",
   "seoKeywords": "valkyrie name generator, valkyrie names, norse valkyrie names, shield maiden names, norse warrior woman names, viking female names, valkyrie names and meanings",
   "seoTitle": "Valkyrie Name Generator: Norse Shield-Maiden Names",
   "isPopular": false,
@@ -608,7 +608,29 @@
       "tagline": "Valkyrie names built from real Old Norse name parts, with a title to ride into battle with."
     },
     "intro": "Valkyries are the choosers of the slain in Norse myth, who carried fallen warriors to Valhalla. Their names were built from Old Norse words for battle, spears and shields. This **valkyrie name generator** builds names the same way, from real Old Norse name parts, with a title if you want one.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "What a valkyrie is",
+        "content": "<p>Valkyrie comes from the Old Norse <em>valkyrja</em>, \"chooser of the slain\": the women who served Odin and chose which warriors would die in battle.</p><ul><li><strong>Valhalla:</strong> the chosen dead were carried to Odin's hall, Valhalla, to feast and fight until the end of the world.</li><li><strong>Real names:</strong> Norse poems list valkyries by name, such as Hildr (\"battle\"), Þrúðr (\"strength\") and Skǫgul. The names are warlike because the valkyries were.</li></ul>"
+      },
+      {
+        "heading": "How valkyrie names are built",
+        "content": "<p>Old Norse names, valkyries' included, were usually made of two parts, and the generator joins real ones.</p><ul><li><strong>Sig-</strong> means victory, <strong>Geir-</strong> spear, <strong>Hjor-</strong> sword and <strong>Bryn-</strong> mail armour.</li><li><strong>Rand-</strong> is the rim of a shield, <strong>Gunn-</strong> means war, <strong>Hild-</strong> battle and <strong>Val-</strong> the slain.</li><li><strong>Svan-</strong> means swan, <strong>Hrafn-</strong> raven and <strong>Ulf-</strong> wolf.</li><li><strong>Endings</strong> include <strong>-hild</strong> (battle), <strong>-run</strong> (secret, or rune) and <strong>-dis</strong> (goddess, or lady).</li></ul><p>So Sigrun is \"victory secret\" and Ulfdis \"wolf lady\". For more Norse names, try the <a href=\"viking-name-generator.html\">Viking</a> and <a href=\"nord-name-generator.html\">Nord</a> name generators.</p><p>For more gods and legends, see all the <a href=\"../categories/mythology-names.html\">mythology name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What does valkyrie mean?",
+        "answer": "Chooser of the slain, from the Old Norse valkyrja: val (the slain) and kjósa (to choose)."
+      },
+      {
+        "question": "What are some real valkyrie names?",
+        "answer": "Norse poems name valkyries such as Hildr, Þrúðr, Skǫgul and Göndul. This generator builds new names from the same kind of parts."
+      },
+      {
+        "question": "What does sig mean in Norse names?",
+        "answer": "Victory. It's in names like Sigrun and Sigrid."
+      }
+    ]
   }
 }
