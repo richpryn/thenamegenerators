@@ -4,7 +4,7 @@
   "icon": "🐺",
   "category": "folklore",
   "published": "2026-10-22",
-  "description": "Werewolf pack names for stories, games and roleplay: classic packs like the Silverfang Pack, packs named for their territory, and wild names like Children of the Wolf Moon.",
+  "description": "Werewolf pack names for stories, games and roleplay: classic packs like the Silverfang Pack, packs named for their land, and wild ones, with an alpha.",
   "seoKeywords": "werewolf pack name generator, werewolf pack names, wolf pack names, werewolf clan names, wolf pack name ideas, lycan pack names, werewolf group names",
   "seoTitle": "Werewolf Pack Name Generator: Wolf Pack Names",
   "isPopular": false,
@@ -260,7 +260,29 @@
       "tagline": "Names for a werewolf pack: classic packs, packs named for their land, and wilder names tied to the moon."
     },
     "intro": "A werewolf pack is a family as much as a hunting party, and its name says where it runs and what it's known for. This **werewolf pack name generator** makes classic pack names, names tied to a territory, and wilder names linked to the moon, with an alpha to lead them if you like.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "How real wolf packs work",
+        "content": "<p>A real wolf pack is a family: usually a breeding pair and their offspring from the last few years.</p><ul><li><strong>The \"alpha\" idea</strong> came from studies of unrelated captive wolves. The biologist L. David Mech popularised the term in his 1970 book <em>The Wolf</em>, and spent years afterwards explaining that wild packs don't work that way: the \"alphas\" are simply the parents.</li><li><strong>Territory matters:</strong> wild packs hold a home range and defend it, which is why naming a pack after its land feels right.</li><li><strong>Werewolf fiction</strong> kept the alpha anyway, because a pack with a leader to challenge makes a better story.</li></ul>"
+      },
+      {
+        "heading": "Naming your pack",
+        "content": "<p>A pack name should say where it runs or what it's known for.</p><ul><li><strong>Classic</strong> pack names join a colour or feature to a wolf word: the Greytail Pack, the Stormfang Pack.</li><li><strong>Named for the land:</strong> the Wolves of Cold Hollow, the Pack of Hollow Moor.</li><li><strong>Wild:</strong> moon names, like Children of the Hungry Moon. Folk names for the full moons include the Wolf Moon in January and the Harvest Moon nearest the autumn equinox.</li><li><strong>Add an alpha</strong> to name the pack's leader too.</li></ul><p>For the werewolves themselves, try the <a href=\"werewolf-name-generator.html\">Werewolf Name Generator</a>. For their old enemies, there's the <a href=\"vampire-clan-name-generator.html\">Vampire Clan Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good name for a werewolf pack?",
+        "answer": "A colour or feature plus a wolf word (the Stormfang Pack), the land it holds (the Wolves of Cold Hollow), or a moon (Children of the Blood Moon)."
+      },
+      {
+        "question": "Do real wolf packs have alphas?",
+        "answer": "Not in the way stories suggest. A wild pack is usually a family, and the so-called alphas are the parents. The idea came from studies of unrelated wolves in captivity."
+      },
+      {
+        "question": "What is the Wolf Moon?",
+        "answer": "A traditional folk name for the full moon in January."
+      }
+    ]
   }
 }

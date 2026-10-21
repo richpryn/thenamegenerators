@@ -4,7 +4,7 @@
   "icon": "🦇",
   "category": "folklore",
   "published": "2026-10-22",
-  "description": "Vampire clan names for stories, games and Halloween: noble houses, dark courts and orders, ancient bloodlines and modern night-time societies, with a motto.",
+  "description": "Vampire clan names for stories, games and Halloween: noble houses, dark courts and orders, ancient bloodlines and modern societies, with a motto.",
   "seoKeywords": "vampire clan name generator, vampire clan names, vampire coven names, vampire family names, vampire house names, vampire bloodline names, vampire group names",
   "seoTitle": "Vampire Clan Name Generator: Houses, Courts & Bloodlines",
   "isPopular": false,
@@ -309,7 +309,29 @@
       "tagline": "Names for a vampire house, court, bloodline or modern night-time society, with a motto if you like."
     },
     "intro": "A vampire on their own is a monster; a vampire with a clan has history, rivals and rules. This **vampire clan name generator** names noble houses, dark courts and orders, ancient bloodlines and modern societies of the night, with a motto to carve over the door.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "How vampire clans got their names",
+        "content": "<p>Vampires became aristocrats in fiction long before they became clans.</p><ul><li><strong>The noble vampire</strong> arrived with John Polidori's <em>The Vampyre</em> (1819), whose Lord Ruthven moves through London society. Sheridan Le Fanu's <em>Carmilla</em> (1872) and Bram Stoker's <em>Dracula</em> (1897) kept the titles and the old family names.</li><li><strong>Clans and bloodlines</strong> came later, above all from the tabletop game <em>Vampire: The Masquerade</em> (1991), where every vampire belongs to a clan with its own nature and its own enemies.</li><li><strong>Houses, courts and orders</strong> borrow from real history: noble houses, royal courts and religious orders, each with a hierarchy and a motto.</li></ul><p>The generator makes new names in those patterns. It leaves out clans that belong to other stories, like <em>Vampire: The Masquerade</em>'s, or the Cullens and Volturi of <em>Twilight</em>.</p>"
+      },
+      {
+        "heading": "Choosing a clan name",
+        "content": "<p>A clan name should tell you how old the clan is and how it hunts.</p><ul><li><strong>A house</strong> (House Severin) is old money: a family with a castle and a portrait gallery.</li><li><strong>A court or order</strong> (the Order of the Last Candle) is about rules and rank.</li><li><strong>A bloodline</strong> traces everyone back to one sire, so it's named for them.</li><li><strong>A modern society</strong> (the Neon Union) meets in a club rather than a crypt.</li><li><strong>Add a motto</strong> to give the clan something to live by, and to break.</li></ul><p>To name the vampires themselves, try the <a href=\"vampire-name-generator.html\">Vampire Name Generator</a>. For their rivals, there's the <a href=\"werewolf-pack-name-generator.html\">Werewolf Pack Name Generator</a>, and for a gathering of witches, the <a href=\"coven-name-generator.html\">Coven Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good name for a vampire clan?",
+        "answer": "One that says how old and how grand the clan is: a house (House Severin), an order (the Order of the Last Candle) or a bloodline named for its founder. Add a motto for character."
+      },
+      {
+        "question": "What are the vampire clans in Vampire: The Masquerade?",
+        "answer": "The game's clans, such as the Ventrue, Toreador and Nosferatu, belong to that game. This generator makes new clan names instead, so you can use them freely in your own stories."
+      },
+      {
+        "question": "When did vampires become aristocrats?",
+        "answer": "In 1819, with John Polidori's The Vampyre and its aristocratic Lord Ruthven. Dracula, a Transylvanian count, followed in 1897."
+      }
+    ]
   }
 }

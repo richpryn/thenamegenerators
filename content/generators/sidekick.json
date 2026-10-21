@@ -4,7 +4,7 @@
   "icon": "⚡",
   "category": "people",
   "published": "2026-10-22",
-  "description": "Sidekick names for your superhero: classic young heroes like Kid Comet, animal sidekicks like Agent Paws, and funny ones like Captain Probably.",
+  "description": "Sidekick names for your superhero: young heroes like Kid Comet, animal sidekicks like Agent Paws, and funny ones like Captain Probably.",
   "seoKeywords": "sidekick name generator, sidekick names, superhero sidekick names, funny sidekick names, animal sidekick names, hero sidekick ideas, sidekick name ideas",
   "seoTitle": "Sidekick Name Generator: Superhero Sidekick Names",
   "isPopular": false,
@@ -323,7 +323,29 @@
       "tagline": "A name for the hero's right hand, from Kid Comet to Captain Probably."
     },
     "intro": "Every hero needs someone to hold the torch, mind the base and occasionally save the day. This **sidekick name generator** makes names for young heroes in training, animal sidekicks and the gloriously unheroic, with a title if they've earned one.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "A short history of the sidekick",
+        "content": "<p>The first great superhero sidekick was Robin, who joined Batman in <em>Detective Comics</em> #38 in 1940.</p><ul><li><strong>Robin's success</strong> led to a wave of young sidekicks through the 1940s, many named after their hero with \"Kid\" or \"Boy\" attached.</li><li><strong>The word</strong> sidekick dates from the early 1900s. It probably comes from pickpockets' slang, where a \"kick\" was a pocket and the side pocket was the hardest to pick, so the person always at your side was your side-kicker.</li><li><strong>Animal sidekicks</strong> are just as old as human ones, from cartoon dogs to talking birds.</li></ul>"
+      },
+      {
+        "heading": "Naming your sidekick",
+        "content": "<ul><li><strong>Young heroes</strong> often echo their mentor, with Kid, Young or Wonder in front: Kid Frost, Young Comet.</li><li><strong>Animal sidekicks</strong> get a name and a talent: Rocket the Amazing Hedgehog.</li><li><strong>Funny sidekicks</strong> are the ones who'd rather not be there: Doctor Eventually, Kevin from Logistics.</li><li><strong>Add a role</strong> to say what they actually do, from driving the getaway car to keeping the snacks.</li></ul><p>For the hero they work for, try the <a href=\"superhero-name-generator.html\">Superhero Name Generator</a>. For the whole team, there's the <a href=\"superhero-team-name-generator.html\">Superhero Team Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Who was the first superhero sidekick?",
+        "answer": "Robin, who first appeared with Batman in Detective Comics #38 in 1940."
+      },
+      {
+        "question": "What's a good name for a sidekick?",
+        "answer": "Echo the hero (Kid Comet), give an animal a title (Agent Paws), or make it funny (Captain Probably)."
+      },
+      {
+        "question": "Where does the word sidekick come from?",
+        "answer": "Probably from pickpockets' slang of the 1800s, where a kick was a pocket: the side pocket was the safest, so a close companion was your side-kicker."
+      }
+    ]
   }
 }
