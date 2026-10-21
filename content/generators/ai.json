@@ -620,7 +620,29 @@
       "tagline": "Names for assistants, ship computers, rogue AIs and acronyms that spell something."
     },
     "intro": "An AI's name tells you what its makers hoped it would be: a friend, a servant, a guardian or a god. This **AI name generator** names friendly assistants, ship and station computers, rogue AIs and acronym AIs, with what the letters stand for.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "How fictional AIs get their names",
+        "content": "<p>An AI's name usually tells you what its makers wanted it to be, and science fiction has been playing with that since the 1960s.</p><ul><li><strong>Acronyms:</strong> HAL 9000 in <em>2001: A Space Odyssey</em> (1968) stands for Heuristically programmed ALgorithmic computer. Acronyms make an AI sound like a product someone built and branded, which is exactly what it is.</li><li><strong>Friendly names:</strong> assistants get short, soft, human names, so people feel comfortable talking to them.</li><li><strong>Ship and station computers</strong> get names of duty and distance: Meridian, Vigil, or a moon of the outer planets.</li><li><strong>Ominous names:</strong> rogue AIs often get names from myth or from chess, like Erebus, the primordial darkness, or Zugzwang, the position where any move makes things worse.</li></ul>"
+      },
+      {
+        "heading": "Naming your AI",
+        "content": "<ul><li><strong>Decide how the humans feel about it.</strong> A friendly name makes it a colleague; a cold acronym makes it a tool; a mythic name makes it a threat.</li><li><strong>Try the acronym style</strong> for names that come with their expansion: ARIA (Adaptive Reasoning Interface Array).</li><li><strong>Add a version number</strong> (Meridian 4, Mk II) to suggest earlier models, and what happened to them.</li><li><strong>Famous AIs are left out,</strong> from HAL and Skynet to GLaDOS and JARVIS, and so are real assistants like Siri, Alexa and Claude.</li></ul><p>For an AI with a body, try the <a href=\"robot-name-generator.html\">Robot Name Generator</a>, and for the ship it runs, the <a href=\"spaceship-name-generator.html\">Spaceship Name Generator</a>.</p><p>For the rest of the future, see all the <a href=\"../categories/scifi-names.html\">sci-fi name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Why are so many fictional AIs named with acronyms?",
+        "answer": "Because they're built and branded like products. HAL 9000, from 1968, started the habit: its name stands for Heuristically programmed ALgorithmic computer."
+      },
+      {
+        "question": "What's a good name for a friendly AI?",
+        "answer": "Something short, soft and human, like Juniper or Pip. Choose the friendly assistant style."
+      },
+      {
+        "question": "What's a good name for an evil AI?",
+        "answer": "A name from myth or strategy that sounds cold and certain, like Erebus or Zugzwang. Choose the rogue AI style."
+      }
+    ]
   }
 }
