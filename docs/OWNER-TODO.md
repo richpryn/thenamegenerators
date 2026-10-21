@@ -35,6 +35,7 @@ Things only Rich can do. The Claude sessions add items here as they come up and 
   - `https://thenamegenerators.com/posts/event-name-generator.html`
   - `https://thenamegenerators.com/categories/places-names.html` and `.../events-names.html`
   - New D&D pages as they go live (listed under "Review" below)
+  - `https://thenamegenerators.com/name-tools.html`, `/random-name-picker.html`, `/raffle-picker.html`, `/secret-santa-generator.html`, `/team-generator.html`
 - [ ] **Start the redesign session.** Ask for 2–3 design directions as Artifacts first, no code, then pick one.
 
 ## Review when you have a minute
@@ -59,6 +60,7 @@ New and rewritten pages. Read them on the live site; reply in any session with c
   - **Name Combiner** (`posts/name-combiner.html`): type two names, get ship-name blends. Try it with your own names!
   - **Gamertag Generator** (`posts/gamertag-generator.html`)
   - **Spin the Wheel** (`spin-the-wheel.html`): try it on your phone. Also request indexing for it in Search Console.
+  - **Name tools** (`name-tools.html` hub): Random Name Picker, Raffle Picker, Secret Santa Generator, Team Generator. Request indexing for the hub and all four pages.
 - [ ] Path of Exile Witch (rewritten: epithets by Ascendancy)
 - [ ] Elven Sword (rebuilt: every name now has a real Sindarin or Quenya meaning)
 - [ ] Dungeon Synth (rewritten without your notes; your notes would make it better)

@@ -123,7 +123,7 @@ function siteHeader(prefix, categories) {
 function siteFooter(prefix) {
   return `<footer class="site-footer">
       <div class="wrap">
-        <p>&copy; <span id="current-year">${new Date().getFullYear()}</span> ${SITE_NAME} · <a href="${prefix}about.html">About</a> · <a href="${prefix}all-generators.html">All generators</a> · <a href="${prefix}spin-the-wheel.html">Spin the Wheel</a> · <a href="${prefix}sitemap.html">Site map</a></p>
+        <p>&copy; <span id="current-year">${new Date().getFullYear()}</span> ${SITE_NAME} · <a href="${prefix}about.html">About</a> · <a href="${prefix}all-generators.html">All generators</a> · <a href="${prefix}spin-the-wheel.html">Spin the Wheel</a> · <a href="${prefix}name-tools.html">Name tools</a> · <a href="${prefix}sitemap.html">Site map</a></p>
       </div>
     </footer>`;
 }
