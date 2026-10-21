@@ -1,0 +1,437 @@
+{
+  "title": "Haunted House Name Generator",
+  "slug": "haunted-house-name-generator",
+  "icon": "🏚️",
+  "category": "halloween",
+  "published": "2026-10-21",
+  "description": "Haunted house names for Halloween attractions, school fairs, ghost tours, escape rooms and games: grand old mansions, family-friendly frights, scary attractions and abandoned places.",
+  "seoKeywords": "haunted house name generator, haunted house names, halloween attraction names, haunted mansion names, spooky house names, ghost tour names, haunted attraction names",
+  "isPopular": false,
+  "filters": {
+    "style": {
+      "label": "Style",
+      "options": [
+        "any",
+        "mansion",
+        "family",
+        "scary",
+        "abandoned"
+      ],
+      "optionLabels": {
+        "any": "Any (a mix)",
+        "mansion": "Classic mansion (Blackwood Hall)",
+        "family": "Family-friendly (Pumpkin Hollow)",
+        "scary": "Scary attraction (The Rot Cellar)",
+        "abandoned": "Abandoned place (The Old Mill)"
+      }
+    },
+    "format": {
+      "label": "Name format",
+      "options": [
+        "name",
+        "tagline"
+      ],
+      "optionLabels": {
+        "name": "Name only",
+        "tagline": "With a tagline (nobody leaves before midnight)"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "name": {
+      "recipe": "switch",
+      "on": "style",
+      "cases": {
+        "mansion": {
+          "recipe": "template",
+          "template": [
+            "[mansion.surnames] [mansion.houses]",
+            "The House on [mansion.streets]",
+            "[mansion.surnames] [mansion.houses]"
+          ]
+        },
+        "family": {
+          "recipe": "template",
+          "template": [
+            "The [family.adjectives] [family.places]",
+            "[family.names]"
+          ]
+        },
+        "scary": {
+          "recipe": "template",
+          "template": [
+            "The [scary.adjectives] [scary.places]",
+            "The [scary.adjectives] [scary.places]",
+            "[scary.places] [scary.numbers]"
+          ]
+        },
+        "abandoned": {
+          "recipe": "template",
+          "template": [
+            "The Old [abandoned.buildings]",
+            "[abandoned.saints]'s [abandoned.institutions]",
+            "The Old [abandoned.surnames] [abandoned.buildings]"
+          ]
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[mansion.surnames] [mansion.houses]",
+            "The House on [mansion.streets]",
+            "[mansion.surnames] [mansion.houses]",
+            "The [family.adjectives] [family.places]",
+            "[family.names]",
+            "The [scary.adjectives] [scary.places]",
+            "The [scary.adjectives] [scary.places]",
+            "[scary.places] [scary.numbers]",
+            "The Old [abandoned.buildings]",
+            "[abandoned.saints]'s [abandoned.institutions]",
+            "The Old [abandoned.surnames] [abandoned.buildings]"
+          ]
+        }
+      }
+    },
+    "tagline": {
+      "recipe": "switch",
+      "on": "style",
+      "cases": {
+        "mansion": {
+          "recipe": "template",
+          "template": [
+            "[mansion.surnames] [mansion.houses]: [taglines.scary]",
+            "The House on [mansion.streets]: [taglines.scary]",
+            "[mansion.surnames] [mansion.houses]: [taglines.scary]"
+          ]
+        },
+        "family": {
+          "recipe": "template",
+          "template": [
+            "The [family.adjectives] [family.places]: [taglines.friendly]",
+            "[family.names]: [taglines.friendly]"
+          ]
+        },
+        "scary": {
+          "recipe": "template",
+          "template": [
+            "The [scary.adjectives] [scary.places]: [taglines.scary]",
+            "The [scary.adjectives] [scary.places]: [taglines.scary]",
+            "[scary.places] [scary.numbers]: [taglines.scary]"
+          ]
+        },
+        "abandoned": {
+          "recipe": "template",
+          "template": [
+            "The Old [abandoned.buildings]: [taglines.scary]",
+            "[abandoned.saints]'s [abandoned.institutions]: [taglines.scary]",
+            "The Old [abandoned.surnames] [abandoned.buildings]: [taglines.scary]"
+          ]
+        },
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[mansion.surnames] [mansion.houses]: [taglines.scary]",
+            "The House on [mansion.streets]: [taglines.scary]",
+            "[mansion.surnames] [mansion.houses]: [taglines.scary]",
+            "The [family.adjectives] [family.places]: [taglines.friendly]",
+            "[family.names]: [taglines.friendly]",
+            "The [scary.adjectives] [scary.places]: [taglines.scary]",
+            "The [scary.adjectives] [scary.places]: [taglines.scary]",
+            "[scary.places] [scary.numbers]: [taglines.scary]",
+            "The Old [abandoned.buildings]: [taglines.scary]",
+            "[abandoned.saints]'s [abandoned.institutions]: [taglines.scary]",
+            "The Old [abandoned.surnames] [abandoned.buildings]: [taglines.scary]"
+          ]
+        }
+      }
+    }
+  },
+  "data": {
+    "mansion": {
+      "surnames": [
+        "Blackwood",
+        "Ravenscroft",
+        "Ashcombe",
+        "Hollowmere",
+        "Crowhurst",
+        "Graves",
+        "Marlowe",
+        "Wychcombe",
+        "Mournington",
+        "Gloomsbury",
+        "Witherby",
+        "Grimstone",
+        "Coldharbour",
+        "Blackmere",
+        "Shadwell",
+        "Whitlock",
+        "Fallowmere",
+        "Bleakmoor",
+        "Duskwood",
+        "Hallowell",
+        "Morrow",
+        "Vexley",
+        "Nightingale",
+        "Thornleigh",
+        "Carrow"
+      ],
+      "houses": [
+        "Hall",
+        "Manor",
+        "House",
+        "Grange",
+        "Court",
+        "Abbey",
+        "Lodge",
+        "Towers",
+        "Priory",
+        "Place"
+      ],
+      "streets": [
+        "Gallows Lane",
+        "Raven Street",
+        "Crooked Lane",
+        "Cemetery Road",
+        "Hangman's Hill",
+        "Willow Walk",
+        "Bone Lane",
+        "Lantern Row",
+        "Hollow Road",
+        "Black Dog Lane",
+        "Coffin Row",
+        "Church Lane",
+        "Crow Hill",
+        "the Moor",
+        "Widow's Walk",
+        "Blackthorn Close",
+        "Candle Street",
+        "Drowned Lane"
+      ]
+    },
+    "family": {
+      "adjectives": [
+        "Spooky",
+        "Giggly",
+        "Not-So-Scary",
+        "Friendly",
+        "Wobbly",
+        "Batty",
+        "Pumpkin",
+        "Cobweb",
+        "Creepy-Crawly",
+        "Bonkers",
+        "Ghostly",
+        "Moonlit",
+        "Silly",
+        "Slightly Haunted",
+        "Boo-tiful",
+        "Squeaky",
+        "Twisty",
+        "Topsy-Turvy",
+        "Bubbling",
+        "Whispering"
+      ],
+      "places": [
+        "Hollow",
+        "House",
+        "Manor",
+        "Mansion",
+        "Lane",
+        "Castle",
+        "Cottage",
+        "Hall",
+        "Corner",
+        "Barn",
+        "Village",
+        "Woods",
+        "Tunnel",
+        "Maze",
+        "Mill",
+        "Garden"
+      ],
+      "names": [
+        "The Not-So-Haunted House",
+        "Boo Manor",
+        "The House of Friendly Ghosts",
+        "Pumpkin Hollow",
+        "The Giggling Ghost Train",
+        "Cobweb Cottage",
+        "The Batty Barn",
+        "Spook Street",
+        "The Wibbly Wobbly Tunnel",
+        "The Midnight Maze"
+      ]
+    },
+    "scary": {
+      "adjectives": [
+        "Rot",
+        "Bone",
+        "Blood",
+        "Black",
+        "Hollow",
+        "Screaming",
+        "Dead",
+        "Silent",
+        "Rust",
+        "Grave",
+        "Cursed",
+        "Hungry",
+        "Night",
+        "Crawling",
+        "Butcher's",
+        "Rotten",
+        "Forgotten",
+        "Shrieking",
+        "Splinter",
+        "Gutter"
+      ],
+      "places": [
+        "Cellar",
+        "Barn",
+        "Basement",
+        "Woods",
+        "Mill",
+        "Crypt",
+        "Chapel",
+        "Tunnels",
+        "Farm",
+        "Maze",
+        "Carnival",
+        "Motel",
+        "Theatre",
+        "Hotel",
+        "Workshop",
+        "Doll Factory",
+        "Funhouse",
+        "Waxworks",
+        "Kitchen",
+        "Attic"
+      ],
+      "numbers": [
+        "13",
+        "6",
+        "9",
+        "31",
+        "0",
+        "17",
+        "99",
+        "44",
+        "7",
+        "21"
+      ]
+    },
+    "abandoned": {
+      "buildings": [
+        "Mill",
+        "Rectory",
+        "Schoolhouse",
+        "Station",
+        "Cinema",
+        "Lighthouse",
+        "Theatre",
+        "Chapel",
+        "Waterworks",
+        "Brewery",
+        "Mine",
+        "Pier",
+        "Toy Factory",
+        "Boarding House",
+        "Fairground",
+        "Post Office",
+        "Farmhouse",
+        "Pumping Station",
+        "Bandstand",
+        "Railway Hotel",
+        "Ice Rink",
+        "Swimming Baths"
+      ],
+      "saints": [
+        "St Agatha",
+        "St Bride",
+        "St Jude",
+        "St Hilda",
+        "St Edmund",
+        "St Cuthbert",
+        "St Brigid",
+        "St Ninian",
+        "St Winifred",
+        "St Aldhelm",
+        "St Oswald",
+        "St Mungo"
+      ],
+      "institutions": [
+        "School",
+        "Chapel",
+        "Church",
+        "Abbey",
+        "College",
+        "Mission",
+        "Almshouse",
+        "Hall",
+        "Priory"
+      ],
+      "surnames": [
+        "Blackwood",
+        "Ashcombe",
+        "Hollins",
+        "Pennington",
+        "Marsh",
+        "Wexford",
+        "Barlow",
+        "Crane",
+        "Hartley",
+        "Ludlow",
+        "Fairbanks",
+        "Godwin"
+      ]
+    },
+    "taglines": {
+      "scary": [
+        "nobody leaves before midnight",
+        "enter if you dare",
+        "some guests never check out",
+        "mind the stairs",
+        "they've been expecting you",
+        "don't look behind you",
+        "the door locks behind you",
+        "nobody has lived here for a hundred years",
+        "follow the candle",
+        "listen for the piano",
+        "keep to the path",
+        "the portraits are watching",
+        "open until the last scream",
+        "bring a torch",
+        "the cellar is out of bounds",
+        "whatever you do don't knock twice",
+        "the clocks all stopped at midnight",
+        "you'll hear it before you see it",
+        "the last tour left in 1899",
+        "stay together"
+      ],
+      "friendly": [
+        "it's only a little bit haunted",
+        "come for the sweets and stay for the ghosts",
+        "the ghosts are very friendly",
+        "don't feed the bats",
+        "mind the cobwebs",
+        "wear your best costume",
+        "the scariest thing here is the toffee apples",
+        "free hot chocolate at the exit",
+        "ghosts welcome",
+        "bring your bravest grown-up",
+        "spooky fun for all the family",
+        "no real ghosts were harmed"
+      ]
+    }
+  },
+  "article": {
+    "hero": {
+      "title": "🏚️ Haunted House Name Generator",
+      "tagline": "Names for haunted houses and Halloween attractions, from Blackwood Hall to the Not-So-Haunted House."
+    },
+    "intro": "A haunted house name sets the mood before anyone walks in: a grand old hall promises a ghost story, a pun promises fun for the little ones, and a cellar with a number promises screams. This **haunted house name generator** makes names for Halloween attractions, school fairs, ghost tours, escape rooms and games, with a tagline if you need one.",
+    "sections": [],
+    "faqs": []
+  }
+}

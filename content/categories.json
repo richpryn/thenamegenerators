@@ -76,6 +76,8 @@
       }
     ],
     "generators": [
+      "haunted_house",
+      "black_cat",
       "vampire",
       "ghost",
       "zombie",
@@ -600,6 +602,7 @@
       }
     ],
     "generators": [
+      "witch",
       "swamp_witch",
       "harry_potter_witch",
       "hogwarts_legacy_witch",
