@@ -304,7 +304,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css">
+    <link rel="stylesheet" href="../styles/site.css?v=7748390b">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -529,13 +529,13 @@
 
     <footer class="site-footer">
       <div class="wrap">
-        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../spin-the-wheel.html">Spin the Wheel</a> · <a href="../sitemap.html">Site map</a></p>
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../spin-the-wheel.html">Spin the Wheel</a> · <a href="../name-tools.html">Name tools</a> · <a href="../sitemap.html">Site map</a></p>
       </div>
     </footer>
 
     <script type="application/json" id="generator-config">{"title":"Robot Name Generator","slug":"robot-name-generator","filters":{"format":{"label":"Name format","options":["any","designation","acronym","nickname","android"],"optionLabels":{"any":"Any (a mix)","designation":"Designation (XR-42)","acronym":"Acronym name (NOVA)","nickname":"Model and nickname","android":"Android with a human name"}}},"recipe":"switch","on":"format","cases":{"designation":{"recipe":"template","template":["[letters]-[numbers]","[letters]-[numbers]-[letters]"]},"acronym":{"recipe":"pick","from":"acronyms"},"nickname":{"recipe":"template","template":"[labels] [letters]-[numbers] “[human]”"},"android":{"recipe":"template","template":["[human]","[human]-[numbers]"]},"any":{"recipe":"template","template":["[letters]-[numbers]","[acronyms]","[labels] [letters]-[numbers] “[human]”","[human]"]}},"data":{"labels":["Unit","Model","Series","Mark"],"letters":["XR","RX","KR","VX","ZT","DX","QB","LT","JX","PK","SR","NV","AX","BT","CX","GR","HX","OR"],"numbers":["7","9","12","21","42","88","101","300","404","512","616","800","909","1000","2048","3000","5","13","77","99"],"acronyms":["ALICE","ORBIT","ECHO","NOVA","ATLAS","SPARK","MILO","PIXEL","VECTOR","HELIX","BOLT","CASPER","IRIS","JUNO","LUMEN","KAI","SOL","TESS","ARC","BYTE","ROVER","GADGET","TINKER","CHIRP","DOT","NIMBUS","SOCKET","ZIGGY","BLIP","COG","DYNAMO","PEBBLE"],"human":["Adam","Theo","Felix","Iris","Silas","Clara","Oren","Mira","Leo","Lyra","Jonah","Elsie","Ezra","Nora","Calvin","Sadie","Otto","June","Wren","Hugo","Alma","Rufus","Cleo","Basil","Ida","Jasper"]}}</script>
-    <script src="../lib/recipe-engine.js"></script>
-    <script src="../lib/page.js"></script>
-    <script src="../lib/outline.js"></script>
+    <script src="../lib/recipe-engine.js?v=d1b89e2e"></script>
+    <script src="../lib/page.js?v=68b15952"></script>
+    <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

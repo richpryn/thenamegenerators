@@ -307,7 +307,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css">
+    <link rel="stylesheet" href="../styles/site.css?v=7748390b">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -617,13 +617,13 @@
 
     <footer class="site-footer">
       <div class="wrap">
-        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../spin-the-wheel.html">Spin the Wheel</a> · <a href="../sitemap.html">Site map</a></p>
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../spin-the-wheel.html">Spin the Wheel</a> · <a href="../name-tools.html">Name tools</a> · <a href="../sitemap.html">Site map</a></p>
       </div>
     </footer>
 
     <script type="application/json" id="generator-config">{"title":"Dragonborn Name Generator","slug":"dragonborn-name-generator","filters":{"gender":{"label":"Gender","options":["any","male","female"],"optionLabels":{"any":"Any"}},"format":{"label":"Name format","options":["full_name","personal","clan","childhood"],"optionLabels":{"full_name":"Full name (clan first)","personal":"Personal name only","clan":"Clan name only","childhood":"Childhood name"}}},"recipe":"switch","on":"format","cases":{"full_name":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[clans] [personal]"}},"default":{"recipe":"template","template":"[clans] [personal.{gender}]"}},"personal":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"pick","from":"personal"}},"default":{"recipe":"pick","from":"personal.{gender}"}},"clan":{"recipe":"pick","from":"clans"},"childhood":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[personal] “[childhood]”"}},"default":{"recipe":"template","template":"[personal.{gender}] “[childhood]”"}}},"data":{"personal":{"male":["Balthak","Dorrash","Ghazrin","Kerrak","Medrok","Nazhar","Rhazkar","Torvash","Vorrin","Zhakar","Brannash","Daskar","Gurrash","Hazvorr","Irzhak","Jhazir","Kalvash","Korrak","Morzhan","Nadrik","Oskarr","Pharzhan","Qorrash","Rakhan","Sarzhin","Tazrak","Uzhar","Varrak","Zorvash","Arkhash","Bhazrin","Draxar","Ghorvan","Hazrith","Kezzar","Lorvash","Mazrak","Rhessar","Thurvan","Vazhrin"],"female":["Akhira","Bryzia","Dravi","Erisha","Ghora","Hessa","Ixira","Jhessa","Kalira","Mirrah","Nashi","Orrha","Pashra","Rhiza","Sarrah","Thessi","Uzhara","Vashra","Zorra","Azhira","Dhaliri","Irrha","Jhavi","Korrah","Leshra","Mezzira","Nazhi","Qessa","Rhavi","Sorrha","Tazzi","Velira","Yzhara","Zhessa","Brannah","Dazhra","Falira","Hazzra","Kethra","Surrah"]},"clans":["Arkenthuldrax","Brexanthiul","Corvathrinnor","Dhaerazhinal","Esthrakkamir","Fulvranthesk","Ghorrathiul","Haldrakkenvar","Irrixanthul","Jhessakandor","Kalthrenniax","Lorvanthesk","Morrikathul","Naxxarendion","Orrathinsk","Pyrranthollor","Qaldrekkiax","Rhazzindorath","Sarthenkavrix","Tharvoskendar","Ulkranthiir","Vaskendrathul","Xorrinthalak","Yrrazhennor","Zhalvathrisk","Anthrexiul","Bharrakendor","Calderhazzin","Dravenkathul","Ezzrakkonir","Ghessenthuul","Kharrandiax","Mirrivanthesk","Nazzaravor","Orvathrekkir","Rhovalinthar","Skarrendaxis","Thuldrevaxin","Vorrakandiul","Zanthrikkenor"],"childhood":["Brawler","Clawsharp","Dawnwaker","Eggcracker","Firecough","Gravel","Ironhide","Loudmouth","Quickclaw","Runt","Scalebright","Snapper","Sparkspit","Stubborn","Tumbler","Whistler","Bold","Questioner","Smoky","Thunderfoot","Ember","Sleeper","Tailchaser","Firstborn","Lastborn","Bookworm","Rockbiter","Swift","Watcher","Brightscale","Hothead","Pebble","Daydreamer","Stomper","Hatchling","Patient","Climbtail","Grinner","Spitfire","Wanderer"]}}</script>
-    <script src="../lib/recipe-engine.js"></script>
-    <script src="../lib/page.js"></script>
-    <script src="../lib/outline.js"></script>
+    <script src="../lib/recipe-engine.js?v=d1b89e2e"></script>
+    <script src="../lib/page.js?v=68b15952"></script>
+    <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

@@ -299,7 +299,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css">
+    <link rel="stylesheet" href="../styles/site.css?v=7748390b">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -575,13 +575,13 @@
 
     <footer class="site-footer">
       <div class="wrap">
-        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../spin-the-wheel.html">Spin the Wheel</a> · <a href="../sitemap.html">Site map</a></p>
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../spin-the-wheel.html">Spin the Wheel</a> · <a href="../name-tools.html">Name tools</a> · <a href="../sitemap.html">Site map</a></p>
       </div>
     </footer>
 
     <script type="application/json" id="generator-config">{"title":"Nord Name Generator","slug":"nord-name-generator","filters":{"gender":{"label":"Gender","options":["any","male","female"],"optionLabels":{"any":"Any"}},"format":{"label":"Name format","options":["family","epithet","first"],"optionLabels":{"family":"With a family name (Gunnar Frost-Helm)","epithet":"With an epithet (Gunnar the Bold)","first":"First name only"}}},"recipe":"switch","on":"format","cases":{"family":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[first] [famA]-[famB]"}},"default":{"recipe":"template","template":"[first.{gender}] [famA]-[famB]"}},"epithet":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[first] [epithets]"}},"default":{"recipe":"template","template":"[first.{gender}] [epithets]"}},"first":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"pick","from":"first"}},"default":{"recipe":"pick","from":"first.{gender}"}}},"data":{"first":{"male":["Bjorn","Brandr","Dagur","Eirik","Fjolnir","Gunnar","Haldor","Ingvar","Jorund","Ketil","Leif","Magnar","Njal","Orm","Ragnar","Sigurd","Skuli","Steinar","Thorvald","Ulf","Asgeir","Bersi","Egil","Geir","Grim","Hakon","Hrolf","Kolbein","Odd","Runolf","Snorri","Sveinn","Thorgrim","Torstein","Vestar","Yngvar","Halvard","Erlend","Hallbjorn","Thrain","Vemund","Ivar"],"female":["Astrid","Bergljot","Dagny","Eydis","Freydis","Gudrun","Hallgerd","Helga","Ingrid","Jorunn","Kara","Ragna","Sigrid","Solveig","Thora","Thordis","Unn","Vigdis","Yrsa","Asa","Bodil","Embla","Gunnhild","Hild","Ragnhild","Signy","Svanhild","Thurid","Alfhild","Brynja","Estrid","Gyda","Halla","Ingunn","Ljot","Ranveig","Saga","Tove","Groa"]},"famA":["Stone","Frost","Iron","Snow","Storm","Black","Silver","Bear","Wolf","Ice","Oak","Ash","Hearth","Elk","Crow","Raven","Fire","Mead","Rock","Steel","Thunder","Cold","Grim","White","Red"],"famB":["Fist","Helm","Heart","Hammer","Hand","Brow","Axe","Beard","Bane","Horn","Hide","Tooth","Song","Wind","Fell","Gard","Shard","Spear","Eye","Skull"],"epithets":["the Bold","the Strong","the Fair","the Unbroken","the Old","the Red","Ironhand","the Wanderer","the Quiet","Wolfsbane","the Tall","the Grim","Frostborn","the Loud","Ice-Veins","the Lucky","the Young","Bear-Slayer","the Unbowed","Storm-Caller"]}}</script>
-    <script src="../lib/recipe-engine.js"></script>
-    <script src="../lib/page.js"></script>
-    <script src="../lib/outline.js"></script>
+    <script src="../lib/recipe-engine.js?v=d1b89e2e"></script>
+    <script src="../lib/page.js?v=68b15952"></script>
+    <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

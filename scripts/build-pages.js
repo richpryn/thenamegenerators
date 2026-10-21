@@ -791,6 +791,29 @@ ${relatedHubsHTML}
   return html;
 }
 
+/** The name tools (Spin the Wheel and its siblings), for cards, the hub page and sitemaps. */
+const NAME_TOOLS = [
+  { key: 'wheel', page: 'spin-the-wheel.html', title: 'Spin the Wheel', short: 'Spin a wheel of names to pick one at random.',
+    doodle: '<svg class="doodle wob" viewBox="0 0 60 60" aria-hidden="true" focusable="false"><circle cx="30" cy="32" r="22" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8"/><path d="M30 10 V54 M8 32 H52 M14.5 16.5 L45.5 47.5 M45.5 16.5 L14.5 47.5" stroke="#1e1c18" stroke-width="1.2" stroke-linecap="round"/><path d="M30 32 L30 10 A22 22 0 0 1 45.5 16.5 Z" fill="#efc84a" stroke="#1e1c18" stroke-width="1.2" stroke-linejoin="round"/><circle cx="30" cy="32" r="3.5" fill="#1e1c18"/><path d="M26 3 L34 3 L30 11 Z" fill="#1e1c18"/></svg>' },
+  { key: 'picker', page: 'random-name-picker.html', title: 'Random Name Picker', short: 'Draw one name, like a card from a hat.',
+    doodle: '<svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><rect x="10" y="12" width="26" height="30" rx="3" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.6" transform="rotate(-8 23 27)"/><rect x="14" y="8" width="26" height="30" rx="3" fill="#efc84a" stroke="#1e1c18" stroke-width="1.6"/><path d="M20 20 H34 M20 26 H30" stroke="#1e1c18" stroke-width="1.5" stroke-linecap="round"/></svg>' },
+  { key: 'raffle', page: 'raffle-picker.html', title: 'Raffle / Pick a Winner', short: 'Numbered tickets, one winner or several.',
+    doodle: '<svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M6 16 H42 V22 C39 22 39 28 42 28 V34 H6 V28 C9 28 9 22 6 22 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.6" stroke-linejoin="round"/><path d="M30 16 V34" stroke="#1e1c18" stroke-width="1.2" stroke-dasharray="2 3"/><path d="M12 25 H24" stroke="#efc84a" stroke-width="4" stroke-linecap="round"/></svg>' },
+  { key: 'santa', page: 'secret-santa-generator.html', title: 'Secret Santa Generator', short: 'Draws pairs so nobody gets themselves.',
+    doodle: '<svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><rect x="8" y="18" width="32" height="24" rx="2" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.6"/><path d="M24 18 V42 M8 26 H40" stroke="#1e1c18" stroke-width="1.4"/><path d="M24 18 C18 8 12 12 18 17 M24 18 C30 8 36 12 30 17" fill="none" stroke="#1e1c18" stroke-width="1.5" stroke-linecap="round"/><path d="M12 34 H20" stroke="#efc84a" stroke-width="4" stroke-linecap="round"/></svg>' },
+  { key: 'teams', page: 'team-generator.html', title: 'Team Generator', short: 'Splits a list into even, random teams.',
+    doodle: '<svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><rect x="5" y="10" width="17" height="28" rx="2" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.6"/><rect x="26" y="10" width="17" height="28" rx="2" fill="#efc84a" stroke="#1e1c18" stroke-width="1.6"/><path d="M9 18 H18 M9 24 H16 M9 30 H18 M30 18 H39 M30 24 H37 M30 30 H39" stroke="#1e1c18" stroke-width="1.4" stroke-linecap="round"/></svg>' },
+];
+
+/** Cards linking to the other name tools (and the Name Combiner). */
+function nameToolCards(site, exceptKey) {
+  const cards = NAME_TOOLS.filter(t => t.key !== exceptKey).map(t =>
+    `<a class="tool hd tap" href="${t.page}">${t.doodle}<div><b>${escapeHtml(t.title)}</b><span>${escapeHtml(t.short)}</span></div><em aria-hidden="true">→</em></a>`);
+  const combiner = site.all.find(g => g.key === 'name_combiner');
+  if (combiner) cards.push(`<a class="tool hd tap" href="posts/${combiner.slug}.html">${layout.doodle(layout.generatorMotif(combiner, site.categories.find(c => c.slug === combiner.category)))}<div><b>${escapeHtml(combiner.title)}</b><span>Blend two names into one, ship-name style.</span></div><em aria-hidden="true">→</em></a>`);
+  return cards.join('\n                    ');
+}
+
 /**
  * Spin the Wheel (spin-the-wheel.html), built to docs/redesign/WHEEL.md.
  * The tool itself is lib/wheel.js; "Fill from a generator" uses the
@@ -815,10 +838,8 @@ function generateWheelPage(site) {
   const title = 'Spin the Wheel: Random Name Picker Wheel | The Name Generators';
   const desc = 'Spin a wheel to pick a random name. Type or paste names, spin, remove the winner and spin again. Free, no sign-up, and your list stays in your browser.';
   const fill = WHEEL_FILL.filter(([key]) => site.all.some(g => g.key === key));
-  const tools = ['name_combiner', 'gamertag', 'band', 'dnd_fantasy']
-    .map(key => site.all.find(g => g.key === key)).filter(Boolean);
-  const catOf = (gen) => site.categories.find(c => c.slug === gen.category);
-  const motifs = tools.map(g => layout.generatorMotif(g, catOf(g)));
+ const combiner = site.all.find(g => g.key === 'name_combiner');
+  const motifs = combiner ? [layout.generatorMotif(combiner, site.categories.find(c => c.slug === combiner.category))] : [];
   const wheelDoodle = `<svg class="doodle wob" viewBox="0 0 60 60" aria-hidden="true" focusable="false"><circle cx="30" cy="32" r="22" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8"/><path d="M30 10 V54 M8 32 H52 M14.5 16.5 L45.5 47.5 M45.5 16.5 L14.5 47.5" stroke="#1e1c18" stroke-width="1.2" stroke-linecap="round"/><path d="M30 32 L30 10 A22 22 0 0 1 45.5 16.5 Z" fill="#efc84a" stroke="#1e1c18" stroke-width="1.2" stroke-linejoin="round"/><circle cx="30" cy="32" r="3.5" fill="#1e1c18"/><path d="M26 3 L34 3 L30 11 Z" fill="#1e1c18"/></svg>`;
 
   return `<!DOCTYPE html>
@@ -843,7 +864,8 @@ ${scriptJson({
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": `${baseUrl}/` },
-    { "@type": "ListItem", "position": 2, "name": "Spin the Wheel", "item": url }
+    { "@type": "ListItem", "position": 2, "name": "Name tools", "item": `${baseUrl}/name-tools.html` },
+    { "@type": "ListItem", "position": 3, "name": "Spin the Wheel", "item": url }
   ]
 }, 2)}
     </script>
@@ -886,7 +908,7 @@ ${scriptJson({
 
     <div class="wrap layout">
         <main id="main">
-            <nav class="crumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span aria-current="page">Spin the Wheel</span></nav>
+            <nav class="crumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / <a href="name-tools.html">Name tools</a> / <span aria-current="page">Spin the Wheel</span></nav>
             <div class="titlerow">
                 <h1>Spin the <span class="hl">Wheel</span></h1>
                 ${wheelDoodle}
@@ -982,7 +1004,7 @@ ${scriptJson({
             <section class="section">
                 <h2>More name tools</h2>
                 <div class="tools">
-                    ${tools.map((g, i) => `<a class="tool hd tap" href="posts/${g.slug}.html">${layout.doodle(motifs[i])}<div><b>${escapeHtml(g.title)}</b><span>${escapeHtml(g.description.split(/(?<=[.!?])\s/)[0])}</span></div><em aria-hidden="true">→</em></a>`).join('\n                    ')}
+                    ${nameToolCards(site, 'wheel')}
                 </div>
             </section>
         </main>
@@ -991,7 +1013,390 @@ ${scriptJson({
 
     ${layout.siteFooter('')}
     ${layout.bodyScripts('', { engine: true })}
-    <script src="lib/wheel.js"></script>
+    <script src="${layout.asset('', 'lib/wheel.js')}"></script>
+</body>
+</html>`;
+}
+
+/** The names box, Fill from a generator, share and clear: shared by the sibling tools (ids start nt-). */
+function toolListColumn(fill) {
+  return `<div class="wt-listcol">
+                        <div class="label"><label for="nt-names">Names, one per line</label><span class="wt-count" id="nt-count">8 names</span></div>
+                        <div class="ctl wt-ta hd"><textarea id="nt-names" spellcheck="false" autocomplete="off" aria-describedby="nt-hint"></textarea></div>
+                        <p class="wt-hint" id="nt-hint"></p>
+
+                        <div class="wt-group">
+                            <div class="label"><label for="nt-fill-from">Fill from a generator</label><span class="pen">adds 8 names</span></div>
+                            <div class="wt-fillrow">
+                                <div class="ctl sel hd"><select id="nt-fill-from">
+                                    ${fill.map(([key, label]) => `<option value="${key}">${escapeHtml(label)}</option>`).join('\n                                    ')}
+                                </select></div>
+                                <button class="mini hd tap" id="nt-fill" type="button">Add 8</button>
+                            </div>
+                        </div>
+
+                        <div class="wt-group">
+                            <div class="wt-actions" id="nt-actions">
+                                <button class="mini hd tap" id="nt-share" type="button">Copy share link</button>
+                                <button class="mini hd tap" id="nt-clear" type="button">Clear list</button>
+                            </div>
+                            <div class="wt-confirm hd" id="nt-confirm" hidden>
+                                <p id="nt-confirm-text">Clear all 8 names?</p>
+                                <button class="mini hd tap wt-yes" id="nt-confirm-yes" type="button">Yes, clear</button>
+                                <button class="mini hd tap" id="nt-confirm-no" type="button">Keep them</button>
+                            </div>
+                            <div class="wt-sharebox" id="nt-sharebox" hidden>
+                                <div class="ctl hd"><input id="nt-share-url" readonly aria-label="Share link"></div>
+                                <p class="wt-hint" id="nt-share-note">Anyone with the link sees this exact list. Nothing is saved on our server.</p>
+                            </div>
+                        </div>
+                    </div>`;
+}
+
+const numberOptions = (from, to, selected) => Array.from({ length: to - from + 1 }, (_, i) => from + i)
+  .map(n => `<option value="${n}"${n === selected ? ' selected' : ''}>${n}</option>`).join('');
+
+/** What's different about each sibling tool: its controls, its results and its page copy. */
+const SIBLING_PAGES = {
+  picker: {
+    seoTitle: 'Random Name Picker: Draw a Name From a Hat | The Name Generators',
+    desc: 'Pick a random name from your list, like drawing a card from a hat. Remove each name once it is drawn. Free, no sign-up, and your list stays in your browser.',
+    keywords: 'random name picker, name picker, pick a random name, draw a name, name from a hat, random name selector, classroom name picker',
+    h1: 'Random Name <span class="hl">Picker</span>',
+    lede: 'Type or paste names, one per line, then draw one, like a card from a hat. Free, no sign-up, and your list stays in your browser.',
+    controls: `<div class="nt-deck" id="nt-deck" aria-hidden="true"><div class="nt-card back hd"></div><div class="nt-card back hd"></div><div class="nt-card hd" id="nt-card"><span id="nt-card-face">?</span></div></div>
+                        <button class="go hd tap nt-go" id="nt-go" type="button">Draw a name</button>
+                        <div class="wt-quick"><button class="mini hd tap" id="nt-remove" type="button" disabled>Remove last drawn</button></div>`,
+    result: `<div class="nt-result nt-drawn hd" id="nt-result" hidden>
+                    <div class="wt-eyebrow">You drew</div>
+                    <strong class="wt-wname" id="nt-result-name" tabindex="-1"><span></span></strong>
+                    <div class="wt-row">
+                        <button class="go hd tap" id="nt-result-remove" type="button">Remove &amp; draw again</button>
+                        <button class="mini hd tap" id="nt-result-again" type="button">Draw again</button>
+                    </div>
+                </div>`,
+    article: `<h2>How to use the name picker</h2>
+                <p class="big">Put one name on each line and press Draw. The top card turns over to show who was picked.</p>
+                <ol>
+                    <li><strong>Add names.</strong> Type them, paste a class list, or add 8 from one of our name generators.</li>
+                    <li><strong>Draw.</strong> Press "Draw a name". Every name has the same chance.</li>
+                    <li><strong>Take it out.</strong> "Remove &amp; draw again" takes the name off the list so it can't come up twice, which is handy for picking pupils to answer in turn.</li>
+                    <li><strong>Share it.</strong> Copy the link and anyone who opens it gets the same list.</li>
+                </ol>
+                <h2 class="section">Picker or wheel?</h2>
+                <p>They're equally fair. The picker is quick and quiet, good for a classroom or a long list. If you want a bit of drama while everyone watches, try <a href="spin-the-wheel.html">Spin the Wheel</a> instead.</p>`,
+    faqs: [
+      ['Is the name picker random?', "Yes. Each draw uses your browser's built-in secure random number generator, and every name on the list has the same chance."],
+      ['Can I stop a name being picked twice?', 'Yes. Press "Remove & draw again" after each draw, and the name comes off the list.'],
+      ['Do you keep my list?', "No. It's saved in your own browser so it's still there next time, and nowhere else. A share link carries the names inside the link itself."],
+      ['What happens to duplicate names?', 'They are removed automatically, so everyone has one equal chance.'],
+    ],
+  },
+  raffle: {
+    seoTitle: 'Raffle Picker: Pick a Random Winner | The Name Generators',
+    desc: 'Draw one or several raffle winners at random from a list of names. Every name gets a numbered ticket, and winners are drawn in order: 1st, 2nd, 3rd. Free, in your browser.',
+    keywords: 'raffle picker, pick a winner, random winner picker, raffle generator, giveaway picker, prize draw, random winner generator',
+    h1: 'Raffle / Pick a <span class="hl">Winner</span>',
+    lede: 'Every name gets a numbered ticket. Choose how many winners, then draw them in order: 1st, 2nd, 3rd.',
+    controls: `<div class="label"><label for="nt-setting">Winners</label><span class="pen">1st, 2nd, 3rd…</span></div>
+                        <div class="ctl sel hd nt-setting"><select id="nt-setting" data-param="winners">${numberOptions(1, 10, 1)}</select></div>
+                        <button class="go hd tap nt-go" id="nt-go" type="button">Draw the raffle</button>
+                        <div class="wt-quick"><button class="mini hd tap" id="nt-remove" type="button" disabled>Remove winners from the list</button></div>`,
+    result: `<div class="nt-result hd" id="nt-result" hidden>
+                    <h3 class="nt-result-title" id="nt-result-title" tabindex="-1">The winner</h3>
+                    <ol class="nt-winners" id="nt-winners"></ol>
+                    <div class="wt-actions">
+                        <button class="mini hd tap" id="nt-result-copy" type="button" data-label="Copy winners">Copy winners</button>
+                        <button class="mini hd tap" id="nt-result-again" type="button">Draw again</button>
+                    </div>
+                </div>
+                <h3 class="nt-tickets-title">Tickets</h3>
+                <ol class="nt-tickets" id="nt-tickets"></ol>`,
+    article: `<h2>How to run a raffle</h2>
+                <p class="big">Add everyone who entered, choose how many prizes there are, and draw.</p>
+                <ol>
+                    <li><strong>Add the entries.</strong> One name per line. Each gets a ticket number in list order, so No. 001 is the first name.</li>
+                    <li><strong>Choose the number of winners.</strong> Up to 10. Nobody can win twice in one draw.</li>
+                    <li><strong>Draw.</strong> Winners are revealed one at a time, in prize order.</li>
+                    <li><strong>Keep a record.</strong> "Copy winners" copies the results, ticket numbers included, to paste into a post or an email.</li>
+                </ol>
+                <h2 class="section">Is it fair?</h2>
+                <p>Every ticket has the same chance. Winners are picked by your browser's secure random number generator, and the order of the list doesn't change anyone's odds. For a public draw, share the link first, so everyone can see the list of entries before you draw.</p>`,
+    faqs: [
+      ['Can I draw more than one winner?', 'Yes, up to 10 at once, revealed in order: 1st, 2nd, 3rd and so on. Nobody can win twice in the same draw.'],
+      ['Is this good for giveaways?', "Yes. Paste in your entries, draw, then use \"Copy winners\" to post the result. Check your platform's own giveaway rules too."],
+      ['What do the ticket numbers mean?', 'They follow the list order: the first name is No. 001. They make it easy to announce winners without anyone needing to check spelling.'],
+      ['Do you keep the list of entries?', "No. It's saved in your own browser only. A share link carries the names inside the link itself."],
+    ],
+  },
+  santa: {
+    min: 3,
+    seoTitle: 'Secret Santa Generator: Draw Names Online | The Name Generators',
+    desc: 'Draw Secret Santa names online for free. Nobody gets themselves, and each match stays hidden until it is revealed, so the organiser can play too. No sign-up or emails needed.',
+    keywords: 'secret santa generator, secret santa name draw, secret santa picker, draw names for secret santa, online secret santa, gift exchange generator',
+    h1: 'Secret <span class="hl">Santa</span> Generator',
+    lede: 'Add everyone taking part, then draw. Nobody gets themselves, and each match stays hidden until it is revealed.',
+    controls: `<button class="go hd tap nt-go" id="nt-go" type="button">Draw names</button>
+                        <p class="wt-hint nt-center">Everyone gives one gift and gets one gift, all in one big circle.</p>`,
+    result: `<div class="nt-result hd" id="nt-result" hidden>
+                    <h3 class="nt-result-title" id="nt-result-title" tabindex="-1">Who buys for whom</h3>
+                    <p class="wt-hint">Pass the device round: each person taps their own tag to see who they're buying for.</p>
+                    <ul class="nt-pairs" id="nt-pairs"></ul>
+                    <div class="wt-actions">
+                        <button class="mini hd tap" id="nt-reveal-all" type="button">Reveal all</button>
+                        <button class="mini hd tap" id="nt-result-copy" type="button" data-label="Copy all pairs">Copy all pairs</button>
+                        <button class="mini hd tap" id="nt-result-again" type="button">Draw again</button>
+                    </div>
+                </div>`,
+    article: `<h2>How to draw Secret Santa names</h2>
+                <p class="big">Add everyone taking part, press Draw names, then let each person reveal their own match.</p>
+                <ol>
+                    <li><strong>Add everyone.</strong> At least three people, one per line.</li>
+                    <li><strong>Draw.</strong> Everyone is matched with someone else; nobody ever gets themselves.</li>
+                    <li><strong>Reveal one at a time.</strong> Pass the phone or laptop round and let each person tap their own tag, so even the organiser doesn't know who has who.</li>
+                    <li><strong>Or reveal all.</strong> If you're organising for someone else, "Reveal all" and "Copy all pairs" give you the full list.</li>
+                </ol>
+                <h2 class="section">How the draw works</h2>
+                <p>The names are shuffled into one random circle, and each person buys for the next one round it. That guarantees nobody draws themselves, and nobody is left out. Settle a budget and a date before you draw: it saves a lot of awkward questions later.</p>`,
+    faqs: [
+      ['Can someone draw themselves?', 'No. The draw makes one big circle in which everyone gives to someone else.'],
+      ['Can the organiser take part?', 'Yes. Each person reveals only their own tag, so the organiser finds out who they are buying for without seeing anyone else\'s.'],
+      ['Do I need to enter emails?', "No. There's no sign-up and no emails. Draw in person, or share the reveal step by passing the device round."],
+      ['How many people do I need?', "At least three. With two, each person would simply buy for the other."],
+    ],
+  },
+  teams: {
+    seoTitle: 'Team Generator: Split Names Into Random Teams | The Name Generators',
+    desc: 'Split a list of names into random, even teams. Choose the number of teams or the number of people per team. Free, no sign-up, and your list stays in your browser.',
+    keywords: 'team generator, random team generator, team picker, split into teams, random group generator, team maker, group generator',
+    h1: 'Team <span class="hl">Generator</span>',
+    lede: 'Type or paste names, choose how many teams, and get even, random teams in one click.',
+    controls: `<div class="label"><span>Split by</span></div>
+                        <div class="opts" role="group" aria-label="Split by"><button type="button" class="opt hd tap" data-mode="teams" aria-pressed="true">Number of teams</button><button type="button" class="opt hd tap" data-mode="size" aria-pressed="false">People per team</button></div>
+                        <div class="label nt-setting-label"><label for="nt-setting" id="nt-setting-label">Number of teams</label></div>
+                        <div class="ctl sel hd nt-setting"><select id="nt-setting" data-param="teams">${numberOptions(2, 20, 2)}</select></div>
+                        <button class="go hd tap nt-go" id="nt-go" type="button">Make teams</button>`,
+    result: `<div class="nt-result hd" id="nt-result" hidden>
+                    <h3 class="nt-result-title" id="nt-result-title" tabindex="-1">Your teams</h3>
+                    <ul class="nt-teams" id="nt-teams"></ul>
+                    <div class="wt-actions">
+                        <button class="mini hd tap" id="nt-result-copy" type="button" data-label="Copy teams">Copy teams</button>
+                        <button class="mini hd tap" id="nt-result-again" type="button">Shuffle again</button>
+                    </div>
+                </div>`,
+    article: `<h2>How to make random teams</h2>
+                <p class="big">Add everyone, choose the number of teams or the team size, and press Make teams.</p>
+                <ol>
+                    <li><strong>Add names.</strong> One per line: a class list, a five-a-side squad or a pub quiz crowd.</li>
+                    <li><strong>Choose how to split.</strong> Pick a number of teams, or how many people you want in each team.</li>
+                    <li><strong>Make teams.</strong> Names are shuffled, then dealt out one at a time like cards, so team sizes never differ by more than one.</li>
+                    <li><strong>Copy or reshuffle.</strong> "Copy teams" gives you a list to paste anywhere; "Shuffle again" makes new teams.</li>
+                </ol>
+                <h2 class="section">Need team names too?</h2>
+                <p>Try the <a href="posts/guild-name-generator.html">Guild</a> or <a href="posts/clan-name-generator.html">Clan</a> name generators, or put the team names on <a href="spin-the-wheel.html">the wheel</a> to decide who picks first.</p>`,
+    faqs: [
+      ['Are the teams even?', "As even as the numbers allow: team sizes never differ by more than one. With 10 people in 3 teams, you get teams of 4, 3 and 3."],
+      ['Can I choose the team size instead?', 'Yes. Choose "People per team" and the generator works out how many teams you need.'],
+      ['Are the teams random?', "Yes. The list is shuffled with your browser's secure random number generator before the names are dealt out."],
+      ['Do you keep my list?', "No. It's saved in your own browser only. A share link carries the names, and your setting, inside the link itself."],
+    ],
+  },
+};
+
+function generateNameToolPage(key, site) {
+  const tool = NAME_TOOLS.find(t => t.key === key);
+  const cfg = SIBLING_PAGES[key];
+  const baseUrl = 'https://thenamegenerators.com';
+  const url = `${baseUrl}/${tool.page}`;
+  const fill = WHEEL_FILL.filter(([k]) => site.all.some(g => g.key === k));
+  const combiner = site.all.find(g => g.key === 'name_combiner');
+  const motifs = combiner ? [layout.generatorMotif(combiner, site.categories.find(c => c.slug === combiner.category))] : [];
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <!-- Mediavine Grow -->
+    <script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTo2YmQ3YzdiOS00MDgwLTQ5MmYtOGEyZi0yZWE3YmU2N2E5ZTU=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
+
+    <title>${escapeHtml(cfg.seoTitle)}</title>
+    <meta name="title" content="${escapeHtml(cfg.seoTitle)}">
+    <meta name="description" content="${escapeHtml(cfg.desc)}">
+    <meta name="keywords" content="${escapeHtml(cfg.keywords)}">
+    <meta name="author" content="The Name Generators">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="${url}">
+    <script type="application/ld+json">
+${scriptJson({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": `${baseUrl}/` },
+    { "@type": "ListItem", "position": 2, "name": "Name tools", "item": `${baseUrl}/name-tools.html` },
+    { "@type": "ListItem", "position": 3, "name": tool.title, "item": url }
+  ]
+}, 2)}
+    </script>
+    <script type="application/ld+json">
+${scriptJson({
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": tool.title,
+  "url": url,
+  "description": cfg.desc,
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in your browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" },
+  "author": AUTHOR
+}, 2)}
+    </script>
+    <script type="application/ld+json">
+${scriptJson({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": cfg.faqs.map(([q, a]) => ({ "@type": "Question", "name": q, "acceptedAnswer": { "@type": "Answer", "text": a } }))
+}, 2)}
+    </script>
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="${url}">
+    <meta property="og:title" content="${escapeHtml(cfg.seoTitle)}">
+    <meta property="og:description" content="${escapeHtml(cfg.desc)}">
+    <meta property="og:site_name" content="The Name Generators">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="${escapeHtml(cfg.seoTitle)}">
+    <meta property="twitter:description" content="${escapeHtml(cfg.desc)}">
+
+    ${ICON_LINKS}
+    ${layout.headAssets('')}
+</head>
+<body>
+    ${layout.svgSprite(motifs)}
+    ${layout.siteHeader('', site.categories)}
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / <a href="name-tools.html">Name tools</a> / <span aria-current="page">${escapeHtml(tool.title)}</span></nav>
+            <div class="titlerow">
+                <h1>${cfg.h1}</h1>
+                ${tool.doodle}
+            </div>
+            <p class="lede">${escapeHtml(cfg.lede)}</p>
+
+            <section class="sheet wt-sheet hd" id="name-tool" data-tool="${key}" data-page="${tool.page}" data-min="${cfg.min || 2}" aria-label="${escapeHtml(tool.title)}">
+                <div class="wt-grid">
+                    <div class="nt-controls">
+                        ${cfg.controls}
+                    </div>
+                    ${toolListColumn(fill)}
+                </div>
+                <div class="nt-below">
+                ${cfg.result}
+                </div>
+            </section>
+            <p class="visually-hidden" aria-live="polite" id="nt-live"></p>
+
+            <article class="section article">
+                ${cfg.article}
+            </article>
+
+            <section class="section">
+                <h2>Questions</h2>
+                <div class="faq">
+                    ${cfg.faqs.map(([q, a], i) => `<details${i === 0 ? ' open' : ''}><summary><span class="tg hd" aria-hidden="true">+</span>${escapeHtml(q)}</summary><p>${escapeHtml(a)}</p></details>`).join('\n                    ')}
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>More name tools</h2>
+                <div class="tools">
+                    ${nameToolCards(site, key)}
+                </div>
+            </section>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
+    </div>
+
+    ${layout.siteFooter('')}
+    ${layout.bodyScripts('', { engine: true })}
+    <script src="${layout.asset('', 'lib/nametools.js')}"></script>
+</body>
+</html>`;
+}
+
+/** name-tools.html: the hub for the name tools. */
+function generateNameToolsHub(site) {
+  const baseUrl = 'https://thenamegenerators.com';
+  const url = `${baseUrl}/name-tools.html`;
+  const title = 'Name Tools: Spin the Wheel, Name Picker, Raffle, Teams | The Name Generators';
+  const desc = 'Free tools for lists of names: spin a wheel, pick a random name, draw raffle winners, draw Secret Santa and make random teams. No sign-up, and lists stay in your browser.';
+  const combiner = site.all.find(g => g.key === 'name_combiner');
+  const motifs = combiner ? [layout.generatorMotif(combiner, site.categories.find(c => c.slug === combiner.category))] : [];
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Mediavine Grow -->
+    <script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTo2YmQ3YzdiOS00MDgwLTQ5MmYtOGEyZi0yZWE3YmU2N2E5ZTU=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
+
+    <title>${escapeHtml(title)}</title>
+    <meta name="title" content="${escapeHtml(title)}">
+    <meta name="description" content="${escapeHtml(desc)}">
+    <meta name="author" content="The Name Generators">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="${url}">
+    <script type="application/ld+json">
+${scriptJson({
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Name tools",
+  "description": desc,
+  "url": url,
+  "mainEntity": { "@type": "ItemList", "itemListElement": NAME_TOOLS.map((t, i) => ({ "@type": "ListItem", "position": i + 1, "name": t.title, "url": `${baseUrl}/${t.page}` })) }
+}, 2)}
+    </script>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="${url}">
+    <meta property="og:title" content="${escapeHtml(title)}">
+    <meta property="og:description" content="${escapeHtml(desc)}">
+    <meta property="og:site_name" content="The Name Generators">
+
+    ${ICON_LINKS}
+    ${layout.headAssets('')}
+</head>
+<body>
+    ${layout.svgSprite(motifs)}
+    ${layout.siteHeader('', site.categories)}
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span aria-current="page">Name tools</span></nav>
+            <div class="titlerow">
+                <h1>Name <span class="hl">Tools</span></h1>
+                ${NAME_TOOLS[0].doodle}
+            </div>
+            <p class="lede">Free tools for a list of names: spin it, draw from it, run a raffle, draw Secret Santa or split it into teams.</p>
+
+            <section class="section">
+                <div class="tools">
+                    ${nameToolCards(site, null)}
+                </div>
+            </section>
+
+            <div class="section intro">
+                <p>Every tool works the same way: type or paste names, one per line, or add 8 from one of our name generators. Your list is saved in your own browser, so it's there next time, and you can share it as a link. The names travel inside the link itself, so nothing is stored on our server.</p>
+                <p>Every pick uses your browser's secure random number generator, and duplicate names are removed automatically so everyone has the same chance.</p>
+            </div>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
+    </div>
+
+    ${layout.siteFooter('')}
+    ${layout.bodyScripts('')}
 </body>
 </html>`;
 }
@@ -1068,7 +1473,7 @@ function fillMarkers(file, sections) {
     if (!re.test(html)) throw new Error(`${file} is missing <!-- BUILD:${name} --> ... <!-- /BUILD:${name} -->`);
     html = html.replace(re, (_, open, close) => `${open}\n${content}\n${close}`);
   }
-  fs.writeFileSync(filePath, html);
+  fs.writeFileSync(filePath, layout.stampAssets(html));
   console.log(`  ✅ Updated: ${file}`);
 }
 
@@ -1169,7 +1574,12 @@ function build() {
   }
 
   fs.writeFileSync(path.join(ROOT, 'spin-the-wheel.html'), generateWheelPage(site));
-  console.log('  ✅ Created: spin-the-wheel.html');
+  for (const key of Object.keys(SIBLING_PAGES)) {
+    const page = NAME_TOOLS.find(t => t.key === key).page;
+    fs.writeFileSync(path.join(ROOT, page), generateNameToolPage(key, site));
+  }
+  fs.writeFileSync(path.join(ROOT, 'name-tools.html'), generateNameToolsHub(site));
+  console.log(`  ✅ Created: name-tools.html and ${NAME_TOOLS.length} name tool pages`);
 
   generateSitemap(site);
   generateHtmlSitemap(site);
@@ -1208,13 +1618,19 @@ function generateSitemap(site) {
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  <!-- Spin the Wheel -->
+  <!-- Name tools -->
   <url>
-    <loc>${baseUrl}/spin-the-wheel.html</loc>
-    <lastmod>${latest([lastChanged('lib/wheel.js')])}</lastmod>
+    <loc>${baseUrl}/name-tools.html</loc>
+    <lastmod>${latest([lastChanged('lib/nametools.js'), lastChanged('lib/wheel.js')])}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+${NAME_TOOLS.map(t => `  <url>
+    <loc>${baseUrl}/${t.page}</loc>
+    <lastmod>${latest([lastChanged(t.key === 'wheel' ? 'lib/wheel.js' : 'lib/nametools.js')])}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>`).join('\n')}
   <!-- About Page -->
   <url>
     <loc>${baseUrl}/about.html</loc>
@@ -1306,7 +1722,8 @@ function generateHtmlSitemap(site) {
                 <ul class="sitemap-links">
                     ${link(`${baseUrl}/`, 'Home')}
                     ${link(`${baseUrl}/all-generators.html`, 'All Generators')}
-                    ${link(`${baseUrl}/spin-the-wheel.html`, 'Spin the Wheel')}
+                    ${link(`${baseUrl}/name-tools.html`, 'Name tools')}
+                    ${NAME_TOOLS.map(t => link(`${baseUrl}/${t.page}`, t.title)).join('\n                    ')}
                     ${link(`${baseUrl}/about.html`, 'About')}
                     ${link(`${baseUrl}/sitemap.html`, 'Site Map')}
                 </ul>
@@ -1426,7 +1843,8 @@ Made by Rich: ${baseUrl}/about.html
       .map(g => `- [${g.title}](${baseUrl}/posts/${g.slug}.html): ${plainText(g.description)}`)
       .join('\n') + '\n';
   }
-  text += `\n## Name tools\n\n- [Spin the Wheel](${baseUrl}/spin-the-wheel.html): a random name picker wheel. Type or paste names, spin, remove the winner and spin again; lists stay in the browser and can be shared as a link.\n`;
+  text += `\n## Name tools\n\nFree tools for lists of names; lists stay in the browser and can be shared as a link.\n\n` +
+    NAME_TOOLS.map(t => `- [${t.title}](${baseUrl}/${t.page}): ${t.short}`).join('\n') + '\n';
   text += `\n## Optional\n\n- [All generators](${baseUrl}/all-generators.html)\n- [Site map](${baseUrl}/sitemap.html)\n`;
   fs.writeFileSync(path.join(ROOT, 'llms.txt'), text);
   console.log('  ✅ Created: llms.txt');
