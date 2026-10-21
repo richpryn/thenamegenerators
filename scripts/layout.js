@@ -143,7 +143,8 @@ function categoryLinks(categories, prefix, indent = '              ') {
 
 /**
  * The main menu: a short, hand-picked set of the generators people come for,
- * grouped the way they search, with each group's hub pages at the bottom.
+ * grouped the way they search, with each group's hub pages at the bottom
+ * (and, for Fantasy, a separate row for the seasonal hubs).
  * Every generator stays one click away through "All generators".
  * The build checks that every link here points to a real page.
  */
@@ -158,7 +159,8 @@ const MENU = [
     ['posts/tavern-name-generator.html', 'Tavern names'],
     ['posts/fantasy-town-name-generator.html', 'Town & village names'],
     ['posts/epithet-generator.html', 'Epithets & titles'],
-  ], more: [['categories/christmas-names.html', 'Christmas'], ['categories/halloween-names.html', 'Halloween'], ['categories/dnd-names.html', 'D&D'], ['categories/mythical-names.html', 'Mythical creatures'], ['categories/mythology-names.html', 'Mythology'], ['categories/wuxia-names.html', 'Wuxia'], ['categories/fantasy-names.html', 'Fantasy']] },
+  ], more: [['categories/fantasy-names.html', 'Fantasy'], ['categories/dnd-names.html', 'D&D'], ['categories/mythical-names.html', 'Mythical creatures'], ['categories/mythology-names.html', 'Mythology'], ['categories/wuxia-names.html', 'Wuxia']],
+  seasonal: [['categories/christmas-names.html', 'Christmas'], ['categories/halloween-names.html', 'Halloween']] },
   { label: 'Games & TV', id: 'menu-games', links: [
     ['posts/minecraft-username-generator.html', 'Minecraft usernames'],
     ['posts/hogwarts-legacy-witch-name-generator.html', 'Hogwarts Legacy witch'],
@@ -200,7 +202,7 @@ const MENU = [
 
 /** Every page the menu links to, for the build's link check. */
 function menuPages() {
-  return MENU.flatMap(group => [...group.links, ...group.more].map(([href]) => href));
+  return MENU.flatMap(group => [...group.links, ...group.more, ...(group.seasonal || [])].map(([href]) => href));
 }
 
 /** Header A ("Roomy"): logo, menu button on phones, links on desktop, then a hand-drawn rule. */
@@ -211,7 +213,8 @@ function siteHeader(prefix) {
               <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="${group.id}"><span class="nav-label">${escapeHtml(group.label)}</span></button>
               <ul class="nav-dropdown-menu" id="${group.id}">
                 ${group.links.map(l => `<li>${link(l)}</li>`).join('\n                ')}
-                <li class="nav-more">More: ${group.more.map(link).join(' · ')}</li>
+                <li class="nav-more">More: ${group.more.map(link).join(' · ')}</li>${group.seasonal ? `
+                <li class="nav-more">Seasonal: ${group.seasonal.map(link).join(' · ')}</li>` : ''}
               </ul>
             </li>`).join('\n            ');
   return `<header class="site-header">
