@@ -629,7 +629,22 @@
       "Nettle",
       "Mossy",
       "Tuppence",
-      "Wick"
+      "Wick",
+      "Brindle",
+      "Cobweb",
+      "Dumble",
+      "Flick",
+      "Gristle",
+      "Hopkin",
+      "Kettlewick",
+      "Lumpkin",
+      "Mumble",
+      "Puddock",
+      "Rag",
+      "Sprat",
+      "Tibbet",
+      "Whisk",
+      "Ninepence"
     ],
     "places": [
       "the Hearth",
@@ -893,7 +908,17 @@
       "the Bone Harper",
       "who Counts Your Debts",
       "of the Weeping Glen",
-      "the Mist-Walker"
+      "the Mist-Walker",
+      "who Sours the Milk",
+      "of the Bramble Throne",
+      "the Night Weaver",
+      "who Counts the Dead",
+      "Keeper of the Mirror Pool",
+      "who Walks Behind You",
+      "of the Blighted Orchard",
+      "the Thorn Queen's Hound",
+      "who Never Forgets a Slight",
+      "the Lantern Thief"
     ],
     "court_titles": [
       "Lord",
@@ -911,7 +936,17 @@
       "Steward",
       "Champion",
       "Handmaiden",
-      "Archer of the Court"
+      "Archer of the Court",
+      "Margrave",
+      "Baroness",
+      "Seneschal",
+      "Lady-in-Waiting",
+      "Cupbearer",
+      "Warden",
+      "Envoy",
+      "Chancellor",
+      "Marshal",
+      "Courtier"
     ],
     "small_epithets": [
       "of the Meadow",
