@@ -289,258 +289,251 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
-                </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-pencil" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 38 L34 14 L40 20 L16 44 L7 46 Z" fill="#fffcf4"/><path d="M30 18 L36 24 M10 38 L16 44" stroke-width="1.3"/><path d="M34 14 L38 10 L44 16 L40 20 Z" fill="#efc84a"/></g></symbol>
+      <symbol id="m-tag" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6 H40 V22 L22 40 L8 26 Z" fill="#fffcf4"/><circle cx="34" cy="12" r="2.5"/><path d="M34 12 C38 6 44 6 44 10" stroke-width="1.3"/><path d="M14 26 L22 34" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-lightbulb" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 C32 5 37 11 37 17 C37 24 31 26 31 33 L17 33 C17 26 11 24 11 17 C11 11 16 5 24 5 Z" fill="#efc84a"/><path d="M18 37 h12 M19 41 h10"/><path d="M21 33 V22 l3 3 l3 -3 V33" stroke-width="1.3"/></g></symbol>
+      <symbol id="m-planet" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="25" r="11" fill="#fffcf4"/><ellipse cx="24" cy="25" rx="20" ry="6" transform="rotate(-20 24 25)"/><path d="M17 20 C20 17 24 16 27 17" stroke="#efc84a" stroke-width="3"/><path d="M40 5 l1 3 l3 1 l-3 1 l-1 3 l-1 -3 l-3 -1 l3 -1 z" fill="#1e1c18" stroke-width="1"/></g></symbol>
+      <symbol id="m-dragon" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 35 C7 25 15 17 26 17 L37 19 L45 25 L37 27 L42 31 L33 31 C29 35 23 39 17 41 C11 43 6 41 5 35 Z" fill="#fffcf4"/><path d="M19 19 L8 11 L21 15 M24 17 L19 6 L28 16" stroke-width="1.6"/><circle cx="31" cy="22" r="1.5" fill="#1e1c18"/><path d="M41 23 l1 0" stroke-width="2"/><path d="M11 37 C17 36 23 34 28 31" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-hood" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 44 C9 28 13 12 24 5 C35 12 39 28 39 44 Z" fill="#fffcf4"/><path d="M17 44 C17 32 20 22 24 19 C28 22 31 32 31 44" stroke-width="1.5"/><path d="M18 30 C21 28 27 28 30 30" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-axe" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 V44"/><path d="M24 10 C19 11 14 9 10 6 C6 13 6 23 11 30 C15 27 19 26 24 25 Z" fill="#fffcf4"/><path d="M24 10 C29 11 34 9 38 6 C42 13 42 23 37 30 C33 27 29 26 24 25 Z" fill="#fffcf4"/><path d="M21 37 h6" stroke="#efc84a" stroke-width="4"/></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../categories/concepts-names.html">Blogs &amp; Brands</a> / <span aria-current="page">Blog Name Generator</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">Blog</span> Name Generator</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-pencil"/></svg>
             </div>
-        </div>
-    </nav>
+            <p class="lede">Blog names by topic, in the shapes that work: Crumbs &amp; Butter, Notes from the Potting Shed, One More Chapter.</p>
 
-    <div class="container">
-        <header class="blog-hero">
-            <h1>📝 Blog Name Generator</h1>
-            <p class="tagline">Blog names by topic, in the shapes that work: Crumbs &amp; Butter, Notes from the Potting Shed, One More Chapter.</p>
-            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
-        </header>
-
-        <main>
-            <section class="embedded-generator">
-                <div class="generator-card">
-                    <h2>Generate Blog Names</h2>
-                    <p class="generator-description">Blog name ideas by topic, from food and travel to books, gardening and money: Crumbs &amp; Butter, Notes from the Potting Shed, One More Chapter.</p>
-                    
-                    <div class="simple-generator">
-                        <div class="filters">
-          <div class="filter-group">
-            <label for="filter-topic">Topic:</label>
-            <select id="filter-topic" name="topic" data-filter="topic">
-              <option value="any">Any topic</option>
-              <option value="food">Food</option>
-              <option value="travel">Travel</option>
-              <option value="books">Books</option>
-              <option value="parenting">Parenting</option>
-              <option value="home">Home</option>
-              <option value="garden">Garden</option>
-              <option value="fashion">Fashion</option>
-              <option value="beauty">Beauty</option>
-              <option value="fitness">Fitness</option>
-              <option value="finance">Finance</option>
-              <option value="gaming">Gaming</option>
-              <option value="crafts">Crafts</option>
-              <option value="tech">Tech</option>
-            </select>
+            <section class="sheet hd simple-generator" id="generator" aria-label="Blog Name Generator">
+                <div class="gen-one">
+          <div class="group">
+            <label class="label" for="filter-topic">Topic</label>
+            <div class="ctl sel hd">
+              <select id="filter-topic" name="topic" data-filter="topic">
+                <option value="any">Any topic</option>
+                <option value="food">Food</option>
+                <option value="travel">Travel</option>
+                <option value="books">Books</option>
+                <option value="parenting">Parenting</option>
+                <option value="home">Home</option>
+                <option value="garden">Garden</option>
+                <option value="fashion">Fashion</option>
+                <option value="beauty">Beauty</option>
+                <option value="fitness">Fitness</option>
+                <option value="finance">Finance</option>
+                <option value="gaming">Gaming</option>
+                <option value="crafts">Crafts</option>
+                <option value="tech">Tech</option>
+              </select>
+            </div>
           </div></div>
-                        <div class="generator-controls">
-                            <div class="filter-group count-group">
-                                <label for="name-count">How many:</label>
-                                <select id="name-count">
-                                    <option value="8" selected>8 names</option>
-                                    <option value="16">16 names</option>
-                                    <option value="32">32 names</option>
-                                </select>
-                            </div>
-                            <button id="generate-btn" class="generate-button">Generate Names</button>
-                        </div>
-                        <div class="results-area" id="results">
-                            <p class="results-placeholder">Click "Generate Names" to see results</p>
-                        </div>
-                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
-                        <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="true">
+                    <p class="results-empty">Press Generate Names for 8 blog names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
                     </div>
-                    
-                    <div class="cta-box">
-                        <p><strong>Need more options?</strong></p>
-                        <a href="../index.html" class="cta-button">Try the Ultimate Random Name Generator →</a>
-                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
+
+            <section class="section example-names">
+                <h2>Example Blog Names</h2>
+                <p class="sub">A few names this generator came up with. Tap one to copy it, or press "Generate Names" above for more.</p>
+                <div class="ex">
+                <div class="exbox hd">
+                    <h3>Any topic</h3>
+                    <ul>
+                        <li>The Little Pensions</li>
+                        <li>One More Chapter</li>
+                        <li>The Modern Sticky Fingers</li>
+                        <li>Notes from the Bathroom Shelf</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Travel</h3>
+                    <ul>
+                        <li>Notes from the Departure Lounge</li>
+                        <li>Off the Beaten Track</li>
+                        <li>Taking the Long Way</li>
+                        <li>Notes from the Window Seat</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Parenting</h3>
+                    <ul>
+                        <li>Fish Fingers &amp; Tantrums</li>
+                        <li>Notes from the Playground</li>
+                        <li>Raising Humans</li>
+                        <li>The Tiny Bunk Beds</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Fashion</h3>
+                    <ul>
+                        <li>The Messy Hemlines</li>
+                        <li>Seams &amp; Buttons</li>
+                        <li>Notes from the Changing Room</li>
+                        <li>Notes from the Charity Shop</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Fitness</h3>
+                    <ul>
+                        <li>Miles &amp; Trainers</li>
+                        <li>Notes from the Start Line</li>
+                        <li>The Second Changing Room</li>
+                        <li>One More Mile</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Gaming</h3>
+                    <ul>
+                        <li>Game Over Continue</li>
+                        <li>Loot &amp; Dice</li>
+                        <li>Just One More Turn</li>
+                        <li>Notes from the Loading Screen</li>
+                    </ul>
+                </div>
                 </div>
             </section>
 
-            <section class="example-names">
-                <h2>Example Blog Names</h2>
-                <p>A few names this generator came up with. Press "Generate Names" above for more.</p>
-                <h3>Any topic</h3>
-                <ul class="name-results">
-                    <li>The Little Pensions</li>
-                    <li>One More Chapter</li>
-                    <li>The Modern Sticky Fingers</li>
-                    <li>Notes from the Bathroom Shelf</li>
-                </ul>
-                <h3>Travel</h3>
-                <ul class="name-results">
-                    <li>Notes from the Departure Lounge</li>
-                    <li>Off the Beaten Track</li>
-                    <li>Taking the Long Way</li>
-                    <li>Notes from the Window Seat</li>
-                </ul>
-                <h3>Parenting</h3>
-                <ul class="name-results">
-                    <li>Fish Fingers &amp; Tantrums</li>
-                    <li>Notes from the Playground</li>
-                    <li>Raising Humans</li>
-                    <li>The Tiny Bunk Beds</li>
-                </ul>
-                <h3>Fashion</h3>
-                <ul class="name-results">
-                    <li>The Messy Hemlines</li>
-                    <li>Seams &amp; Buttons</li>
-                    <li>Notes from the Changing Room</li>
-                    <li>Notes from the Charity Shop</li>
-                </ul>
-                <h3>Fitness</h3>
-                <ul class="name-results">
-                    <li>Miles &amp; Trainers</li>
-                    <li>Notes from the Start Line</li>
-                    <li>The Second Changing Room</li>
-                    <li>One More Mile</li>
-                </ul>
-                <h3>Gaming</h3>
-                <ul class="name-results">
-                    <li>Game Over Continue</li>
-                    <li>Loot &amp; Dice</li>
-                    <li>Just One More Turn</li>
-                    <li>Notes from the Loading Screen</li>
-                </ul>
-            </section>
-
-            <section class="blog-content how-it-works">
+            <section class="section how-it-works">
                 <h2>How the Blog Name Generator Works</h2>
+                <div class="howto hd">
                 <p>It works from 288 names and name parts, which combine into over 4,600 possible results.</p>
                 <p>The choices:</p>
                 <ul><li><strong>Topic:</strong> Any topic, Food, Travel, Books, Parenting, Home, Garden, Fashion, Beauty, Fitness, Finance, Gaming, Crafts, Tech.</li></ul>
-                <p>Each press gives you 8, 16 or 32 names (choose under "How many"), and you won't see the same one twice until you've been through everything for the choices you've made.</p>
+                <p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet, until the names for the choices you've made run out.</p>
+                </div>
             </section>
 
-            <article class="blog-content" itemscope itemtype="https://schema.org/Article">
+            <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="Blog Name Generator">
                 <meta itemprop="description" content="Blog name ideas by topic, from food and travel to books, gardening and money: Crumbs &amp; Butter, Notes from the Potting Shed, One More Chapter.">
-                <section itemprop="articleBody">
-                    <p>A blog name has to say what you write about, sound like you, and still fit if your blog changes. This <strong>blog name generator</strong> has ideas for thirteen topics in the shapes good blog names usually take: two things and an ampersand, a place you write from, or a phrase that sounds like you.</p>
-                </section>
+                <div itemprop="articleBody">
+                <p class="big">A blog name has to say what you write about, sound like you, and still fit if your blog changes. This <strong>blog name generator</strong> has ideas for thirteen topics in the shapes good blog names usually take: two things and an ampersand, a place you write from, or a phrase that sounds like you.</p>
                 
-      <section>
-        <h2>Five shapes of blog name</h2>
-        <ul><li><strong>This &amp; that</strong>: two things you love, joined. <em>Lipstick &amp; Lattes</em>, <em>Crumbs &amp; Butter</em>.</li><li><strong>A place</strong>: where you write from. <em>Notes from the Potting Shed</em>, <em>The Little Pantry</em>.</li><li><strong>A phrase</strong>: something you'd actually say. <em>One More Chapter</em>, <em>Just One More Turn</em>.</li><li><strong>An honest adjective</strong>: <em>The Messy Kitchen Table</em> is more inviting than <em>The Perfect Kitchen</em>.</li><li><strong>Your own name</strong>: always available, and it grows with you. Worth considering if you might change topic.</li></ul>
-      </section>
-    
+                <h2>Five shapes of blog name</h2>
+                <ul><li><strong>This &amp; that</strong>: two things you love, joined. <em>Lipstick &amp; Lattes</em>, <em>Crumbs &amp; Butter</em>.</li><li><strong>A place</strong>: where you write from. <em>Notes from the Potting Shed</em>, <em>The Little Pantry</em>.</li><li><strong>A phrase</strong>: something you'd actually say. <em>One More Chapter</em>, <em>Just One More Turn</em>.</li><li><strong>An honest adjective</strong>: <em>The Messy Kitchen Table</em> is more inviting than <em>The Perfect Kitchen</em>.</li><li><strong>Your own name</strong>: always available, and it grows with you. Worth considering if you might change topic.</li></ul>
 
-      <section>
-        <h2>Before you choose</h2>
-        <ul><li><strong>Check the domain and the handles.</strong> A name you can't get on the main social sites will cause trouble later.</li><li><strong>Don't box yourself in.</strong> A blog called <em>Vegan in Leeds</em> is stuck if you move or start eating cheese. A bit of room helps.</li><li><strong>Skip the year.</strong> Anything with 2026 in it will look old in 2027.</li><li><strong>Say it out loud.</strong> People will hear it in podcasts and conversation, so it needs to be easy to spell from hearing.</li></ul>
-      </section>
-    
+                <h2>Before you choose</h2>
+                <ul><li><strong>Check the domain and the handles.</strong> A name you can't get on the main social sites will cause trouble later.</li><li><strong>Don't box yourself in.</strong> A blog called <em>Vegan in Leeds</em> is stuck if you move or start eating cheese. A bit of room helps.</li><li><strong>Skip the year.</strong> Anything with 2026 in it will look old in 2027.</li><li><strong>Say it out loud.</strong> People will hear it in podcasts and conversation, so it needs to be easy to spell from hearing.</li></ul>
 
-      <section>
-        <h2>A tiny history</h2>
-        <p>The word <em>weblog</em> was coined by Jorn Barger in 1997, for a page logging the web he'd read. In 1999 Peter Merholz split it, jokingly, into "we blog", and <em>blog</em> stuck. For other kinds of channel, try the <a href="podcast-name-generator.html">Podcast Name Generator</a> or the <a href="youtube-channel-name-generator.html">YouTube Channel Name Generator</a>.</p>
-      </section>
-    
+                <h2>A tiny history</h2>
+                <p>The word <em>weblog</em> was coined by Jorn Barger in 1997, for a page logging the web he'd read. In 1999 Peter Merholz split it, jokingly, into "we blog", and <em>blog</em> stuck. For other kinds of channel, try the <a href="podcast-name-generator.html">Podcast Name Generator</a> or the <a href="youtube-channel-name-generator.html">YouTube Channel Name Generator</a>.</p>
+                </div>
             </article>
 
-            
-      <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-          
-            <div class="faq-item">
-              <h3 class="faq-question">How do I choose a blog name?</h3>
-              <p class="faq-answer">Pick the topic, generate a batch, and shortlist the ones that sound like you. Then check the domain and social handles are free, and say it aloud to make sure people can spell it.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Can I use these names for my blog?</h3>
-              <p class="faq-answer">Yes, they're free to use and you don't need to credit the site. Many are everyday phrases, so search for the name first in case another blog already uses it.</p>
-            </div>
-          
-        </div>
-      </section>
-            
-      <section class="related-section">
-        <h2>Related Name Generators</h2>
-        <div class="related-grid" id="related-generators">
-          <a href="../posts/brand-name-generator.html" class="related-card">
-            <h3>🏷️ Brand Name Generator</h3>
-            <p>Brand and product names sorted by industry and feel, from tech and luxury to food, fashion and outdoor, as one word or with a product word (Juniper Botanicals).</p>
-          </a>
-          <a href="../posts/youtube-channel-name-generator.html" class="related-card">
-            <h3>▶️ YouTube Channel Name Generator</h3>
-            <p>YouTube channel names by topic (gaming, cooking, tech, travel, music) in the shapes that work on the platform, plus how to check the handle is free.</p>
-          </a>
-          <a href="../posts/alien-name-generator.html" class="related-card">
-            <h3>👽 Alien Name Generator</h3>
-            <p>Alien names that sound like they come from a real species: clicking insectoids, liquid-voiced aquatics, beings named like Hums-at-Dawn, and galactic nobility.</p>
-          </a>
-          <a href="../posts/angel-name-generator.html" class="related-card">
-            <h3>😇 Angel Name Generator</h3>
-            <p>Angel names from scripture and tradition with their Hebrew meanings, or new ones in the same style, with a choir, a domain or an epithet.</p>
-          </a>
-          <a href="../posts/assassin-name-generator.html" class="related-card">
-            <h3>🗡️ Assassin Name Generator</h3>
-            <p>Assassin names that don&#039;t draw attention: codenames like Shrike, titles like the Patient Guest, fantasy aliases like Silkstep, and full names with an alias.</p>
-          </a>
-          <a href="../posts/axe-name-generator.html" class="related-card">
-            <h3>🪓 Axe Name Generator</h3>
-            <p>Axe names in four styles: Norse axes named like troll-women, dwarven heirlooms, brutal orc cleavers and a woodsman&#039;s Old Bess, with an epithet or description.</p>
-          </a>
-        </div>
-      </section>
-            
-      <section class="category-generators-section">
-        <h2>All Blogs &amp; Brands Name Generators</h2>
-        <div class="category-generators-grid" id="category-generators">
-          <a href="../posts/brand-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🏷️</span>
-            <span class="category-generator-title">Brand Name Generator</span>
-          </a>
-          <a href="../posts/youtube-channel-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">▶️</span>
-            <span class="category-generator-title">YouTube Channel Name Generator</span>
-          </a>
-        </div>
-      </section>
-        </main>
+            <section class="section faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>How do I choose a blog name?</summary>
+                        <div>Pick the topic, generate a batch, and shortlist the ones that sound like you. Then check the domain and social handles are free, and say it aloud to make sure people can spell it.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Can I use these names for my blog?</summary>
+                        <div>Yes, they're free to use and you don't need to credit the site. Many are everyday phrases, so search for the name first in case another blog already uses it.</div>
+                    </details>
+                </div>
+            </section>
 
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+            <section class="section related-section">
+                <h2>Related Name Generators</h2>
+                <div class="genlist" id="related-generators">
+                    <a href="../posts/brand-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-tag"/></svg><div><b>Brand Name Generator</b><span>Brand and product names sorted by industry and feel, from tech and luxury to food, fashion and outdoor, as one word or with a product word (Juniper Botanicals).</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/youtube-channel-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-lightbulb"/></svg><div><b>YouTube Channel Name Generator</b><span>YouTube channel names by topic (gaming, cooking, tech, travel, music) in the shapes that work on the platform, plus how to check the handle is free.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/alien-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-planet"/></svg><div><b>Alien Name Generator</b><span>Alien names that sound like they come from a real species: clicking insectoids, liquid-voiced aquatics, beings named like Hums-at-Dawn, and galactic nobility.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/angel-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Angel Name Generator</b><span>Angel names from scripture and tradition with their Hebrew meanings, or new ones in the same style, with a choir, a domain or an epithet.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/assassin-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-hood"/></svg><div><b>Assassin Name Generator</b><span>Assassin names that don&#039;t draw attention: codenames like Shrike, titles like the Patient Guest, fantasy aliases like Silkstep, and full names with an alias.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/axe-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-axe"/></svg><div><b>Axe Name Generator</b><span>Axe names in four styles: Norse axes named like troll-women, dwarven heirlooms, brutal orc cleavers and a woodsman&#039;s Old Bess, with an epithet or description.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
+
+            <section class="section category-generators-section">
+                <h2>More Blogs &amp; Brands Name Generators</h2>
+                <div class="genlist compact" id="category-generators">
+                    <a href="../posts/brand-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-tag"/></svg><div><b>Brand Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/youtube-channel-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-lightbulb"/></svg><div><b>YouTube Channel Name Generator</b></div><em aria-hidden="true">→</em></a>
+                </div>
+                <p class="all-link"><a href="../categories/concepts-names.html">All Blogs &amp; Brands name generators</a></p>
+            </section>
+            <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
 
     <script type="application/json" id="generator-config">{"title":"Blog Name Generator","slug":"blog-name-generator","filters":{"topic":{"label":"Topic","options":["any","food","travel","books","parenting","home","garden","fashion","beauty","fitness","finance","gaming","crafts","tech"],"optionLabels":{"any":"Any topic","food":"Food","travel":"Travel","books":"Books","parenting":"Parenting","home":"Home","garden":"Garden","fashion":"Fashion","beauty":"Beauty","fitness":"Fitness","finance":"Finance","gaming":"Gaming","crafts":"Crafts","tech":"Tech"}}},"recipe":"switch","on":"topic","cases":{"any":{"recipe":"template","template":["[topics.food.things] & [topics.food.things]","The [adj] [topics.food.place]","Notes from the [topics.food.place]","[topics.food.phrases]","[topics.food.phrases]","The [adj] [topics.food.things]","[topics.travel.things] & [topics.travel.things]","The [adj] [topics.travel.place]","Notes from the [topics.travel.place]","[topics.travel.phrases]","[topics.travel.phrases]","The [adj] [topics.travel.things]","[topics.books.things] & [topics.books.things]","The [adj] [topics.books.place]","Notes from the [topics.books.place]","[topics.books.phrases]","[topics.books.phrases]","The [adj] [topics.books.things]","[topics.parenting.things] & [topics.parenting.things]","The [adj] [topics.parenting.place]","Notes from the [topics.parenting.place]","[topics.parenting.phrases]","[topics.parenting.phrases]","The [adj] [topics.parenting.things]","[topics.home.things] & [topics.home.things]","The [adj] [topics.home.place]","Notes from the [topics.home.place]","[topics.home.phrases]","[topics.home.phrases]","The [adj] [topics.home.things]","[topics.garden.things] & [topics.garden.things]","The [adj] [topics.garden.place]","Notes from the [topics.garden.place]","[topics.garden.phrases]","[topics.garden.phrases]","The [adj] [topics.garden.things]","[topics.fashion.things] & [topics.fashion.things]","The [adj] [topics.fashion.place]","Notes from the [topics.fashion.place]","[topics.fashion.phrases]","[topics.fashion.phrases]","The [adj] [topics.fashion.things]","[topics.beauty.things] & [topics.beauty.things]","The [adj] [topics.beauty.place]","Notes from the [topics.beauty.place]","[topics.beauty.phrases]","[topics.beauty.phrases]","The [adj] [topics.beauty.things]","[topics.fitness.things] & [topics.fitness.things]","The [adj] [topics.fitness.place]","Notes from the [topics.fitness.place]","[topics.fitness.phrases]","[topics.fitness.phrases]","The [adj] [topics.fitness.things]","[topics.finance.things] & [topics.finance.things]","The [adj] [topics.finance.place]","Notes from the [topics.finance.place]","[topics.finance.phrases]","[topics.finance.phrases]","The [adj] [topics.finance.things]","[topics.gaming.things] & [topics.gaming.things]","The [adj] [topics.gaming.place]","Notes from the [topics.gaming.place]","[topics.gaming.phrases]","[topics.gaming.phrases]","The [adj] [topics.gaming.things]","[topics.crafts.things] & [topics.crafts.things]","The [adj] [topics.crafts.place]","Notes from the [topics.crafts.place]","[topics.crafts.phrases]","[topics.crafts.phrases]","The [adj] [topics.crafts.things]","[topics.tech.things] & [topics.tech.things]","The [adj] [topics.tech.place]","Notes from the [topics.tech.place]","[topics.tech.phrases]","[topics.tech.phrases]","The [adj] [topics.tech.things]"]}},"default":{"recipe":"template","template":["[topics.{topic}.things] & [topics.{topic}.things]","The [adj] [topics.{topic}.place]","Notes from the [topics.{topic}.place]","[topics.{topic}.phrases]","[topics.{topic}.phrases]","The [adj] [topics.{topic}.things]"]},"data":{"adj":["Little","Honest","Messy","Slow","Curious","Everyday","Quiet","Happy","Wild","Small","Modern","Unplugged","Real","Second","Weekend","Tiny"],"topics":{"food":{"things":["Crumbs","Butter","Salt","Spoons","Saucepans","Sourdough","Leftovers","Lemons","Toast","Gravy","Garlic","Pie"],"place":["Kitchen Table","Pantry","Back Burner","Bread Bin","Allotment"],"phrases":["Chasing Crumbs","Cooking for One","Licking the Spoon","Burnt Toast and Other Disasters","Seconds Please","Eat the Seasons"]},"travel":{"things":["Maps","Passports","Suitcases","Trains","Postcards","Boarding Passes","Backpacks","Compasses","Ferries","Footpaths"],"place":["Window Seat","Slow Train","Departure Lounge","Back Road","Night Bus"],"phrases":["Wandering Slowly","Lost on Purpose","Packed Too Much","Next Stop Anywhere","Taking the Long Way","Off the Beaten Track"]},"books":{"things":["Bookmarks","Margins","Chapters","Ink","Paperbacks","Library Cards","Spines","Footnotes","Pages","Commas"],"place":["Reading Nook","Bookshop","Library Steps","Top Shelf","Armchair"],"phrases":["One More Chapter","Reading in Bed","Judging Covers","Overdue and Unrepentant","Dog-Eared Pages","Books Before Bed"]},"parenting":{"things":["Nappies","Crayons","Wellies","Puddles","Lunchboxes","Bedtimes","Tantrums","Fish Fingers","Sticky Fingers","Bunk Beds"],"place":["School Gate","Playground","Kitchen Floor","Back Seat","Bath Time"],"phrases":["Surviving Bedtime","Small People Big Days","Raising Humans","Mud and Mayhem","Half Term Again","Are We There Yet"]},"home":{"things":["Cushions","Teacups","Paint Swatches","Floorboards","Houseplants","Doorknobs","Blankets","Candles","Shelves","Wallpaper"],"place":["Spare Room","Front Door","Hallway","Window Seat","Attic"],"phrases":["Making a Home","One Room at a Time","Living with Less","Painting the Hallway Again","Home Slowly","DIY Disasters"]},"garden":{"things":["Seedlings","Wellies","Compost","Trowels","Sweet Peas","Slugs","Greenhouses","Dahlias","Weeds","Watering Cans"],"place":["Potting Shed","Allotment","Veg Patch","Back Garden","Window Box"],"phrases":["Growing Slowly","Muddy Knees","Weeding and Waiting","Grow Your Own","Planting Hope","Dirt Under My Nails"]},"fashion":{"things":["Buttons","Hemlines","Threads","Pockets","Sequins","Collars","Hangers","Seams","Tweed","Denim"],"place":["Wardrobe","Changing Room","Charity Shop","Sewing Room","Fitting Room"],"phrases":["Second Hand First","Dressed for the Weather","Wearing It Again","Style on a Budget","Thrifted and Lifted","Mended and Worn"]},"beauty":{"things":["Lipstick","Lattes","Serums","Brushes","Blush","Mirrors","Bath Salts","Freckles","Rosewater","Mascara"],"place":["Bathroom Shelf","Vanity Table","Makeup Bag","Mirror"],"phrases":["Glow and Tell","Skin Deep","Fresh Faced","Honest Beauty","Bare and Brave","Beauty on a Budget"]},"fitness":{"things":["Trainers","Kettlebells","Lungs","Laps","Miles","Blisters","Sweatbands","Stretch Marks","Protein","Puddles"],"place":["Start Line","Changing Room","Park Run","Back Garden Gym","Towpath"],"phrases":["Couch to Somewhere","Running Late","Lifting Heavy Things","One More Mile","Sweat Then Coffee","Getting Stronger"]},"finance":{"things":["Pennies","Pounds","Piggy Banks","Spreadsheets","Budgets","Receipts","Coupons","Pensions","Savings","Jam Jars"],"place":["Kitchen Table","Back Pocket","Rainy Day Fund","Savings Jar"],"phrases":["Pennies to Pounds","Spending Less Living More","The Frugal Fortnight","Debt Free Someday","Making Cents","Money Without Tears"]},"gaming":{"things":["Pixels","Controllers","Save Points","Side Quests","Respawns","Dice","Cartridges","Boss Fights","Loot","Achievements"],"place":["Couch Co-op","Arcade","Game Room","Loading Screen","Back Room Table"],"phrases":["Press Start","Just One More Turn","Rolling for Initiative","Lag and Loot","Saving the Princess Again","Game Over Continue"]},"crafts":{"things":["Yarn","Stitches","Glue Guns","Glitter","Bobbins","Paper Cuts","Beads","Felt","Clay","Thimbles"],"place":["Craft Room","Sewing Box","Studio","Kitchen Table","Workbench"],"phrases":["Knit One Purl Two","Making Things","Stuck on Glitter","Handmade Slowly","Dropped Stitches","Crafting Calm"]},"tech":{"things":["Bytes","Cables","Pixels","Gadgets","Circuits","Chargers","Keyboards","Updates","Logins","Robots"],"place":["Server Room","Desk Drawer","Workbench","Cloud"],"phrases":["Have You Tried Turning It Off","Plugged In","Byte Sized","Debug Diaries","Unboxed","Ones and Zeros"]}}}}</script>
     <script src="../lib/recipe-engine.js"></script>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

@@ -305,316 +305,277 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
-                </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-quill" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M38 4 C24 8 14 20 12 38 C24 32 36 22 38 4 Z" fill="#fffcf4"/><path d="M12 38 L35 8" stroke-width="1.3"/><path d="M12 38 L7 45"/><path d="M5 45 C12 42 18 46 25 43" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-hood" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 44 C9 28 13 12 24 5 C35 12 39 28 39 44 Z" fill="#fffcf4"/><path d="M17 44 C17 32 20 22 24 19 C28 22 31 32 31 44" stroke-width="1.5"/><path d="M18 30 C21 28 27 28 30 30" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-laurel" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 43 C12 37 8 25 13 8"/><path d="M12 34 c-6 -1 -8 -5 -7 -9 c4 1 7 4 7 9 z" fill="#efc84a"/><path d="M10 26 c-6 -1 -8 -5 -7 -9 c4 1 7 4 7 9 z" fill="#fffcf4"/><path d="M11 18 c-6 -1 -8 -5 -7 -9 c4 1 7 4 7 9 z" fill="#fffcf4"/><path d="M26 43 C36 37 40 25 35 8"/><path d="M36 34 c6 -1 8 -5 7 -9 c-4 1 -7 4 -7 9 z" fill="#fffcf4"/><path d="M38 26 c6 -1 8 -5 7 -9 c-4 1 -7 4 -7 9 z" fill="#efc84a"/><path d="M37 18 c6 -1 8 -5 7 -9 c-4 1 -7 4 -7 9 z" fill="#fffcf4"/><path d="M18 44 h12"/></g></symbol>
+      <symbol id="m-d20" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4 L42 14 L42 34 L24 44 L6 34 L6 14 Z" fill="#fffcf4"/><path d="M24 4 L15 28 L33 28 Z M6 14 L15 28 M42 14 L33 28 M15 28 L24 44 L33 28 M6 34 L15 28 M42 34 L33 28" stroke-width="1.3"/><path d="M20 24 h8" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-round-shield" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18" fill="#fffcf4"/><circle cx="24" cy="24" r="5" fill="#efc84a"/><path d="M24 6 V19 M24 29 V42 M6 24 H19 M29 24 H42" stroke-width="1.3"/></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../categories/people-names.html">Characters</a> / <span aria-current="page">Vampire Name Generator</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">Vampire</span> Name Generator</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-quill"/></svg>
             </div>
-        </div>
-    </nav>
+            <p class="lede">From Count Dracula to the vampire next door: names for every age of the undead.</p>
 
-    <div class="container">
-        <header class="blog-hero">
-            <h1>🧛 Vampire Name Generator</h1>
-            <p class="tagline">From Count Dracula to the vampire next door: names for every age of the undead.</p>
-            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
-        </header>
-
-        <main>
-            <section class="embedded-generator">
-                <div class="generator-card">
-                    <h2>Generate Vampire Names</h2>
-                    <p class="generator-description">Vampire names in four styles: gothic aristocrats, Old World Transylvanians, ancient Romans and modern urban vampires. Full names, titles like Count and Countess, or first names.</p>
-                    
-                    <div class="simple-generator">
-                        <div class="filters">
-          <div class="filter-group">
-            <label for="filter-style">Style:</label>
-            <select id="filter-style" name="style" data-filter="style">
-              <option value="gothic">Gothic aristocrat (Dracula, Carmilla)</option>
-              <option value="old_world">Old World (Transylvania, Eastern Europe)</option>
-              <option value="ancient">Ancient (Rome, Greece, the Near East)</option>
-              <option value="modern">Modern (urban fantasy)</option>
-            </select>
+            <section class="sheet hd simple-generator" id="generator" aria-label="Vampire Name Generator">
+                <div class="gen-grid">
+          <div class="group" role="group" aria-labelledby="filter-style-label">
+            <div class="label"><span id="filter-style-label">Style</span><span class="pen" data-hint-for="style" aria-hidden="true">e.g. Dracula, Carmilla</span></div>
+            <div class="opts" data-buttons-for="style">
+              <button type="button" class="opt hd tap" data-value="gothic" data-hint="e.g. Dracula, Carmilla" title="Gothic aristocrat (Dracula, Carmilla)" aria-pressed="true">Gothic aristocrat</button>
+              <button type="button" class="opt hd tap" data-value="old_world" data-hint="e.g. Transylvania, Eastern Europe" title="Old World (Transylvania, Eastern Europe)" aria-pressed="false">Old World</button>
+              <button type="button" class="opt hd tap" data-value="ancient" data-hint="e.g. Rome, Greece, the Near East" title="Ancient (Rome, Greece, the Near East)" aria-pressed="false">Ancient</button>
+              <button type="button" class="opt hd tap" data-value="modern" data-hint="e.g. urban fantasy" title="Modern (urban fantasy)" aria-pressed="false">Modern</button>
+            </div>
+            <input type="hidden" id="filter-style" name="style" data-filter="style" value="gothic">
           </div>
 
-          <div class="filter-group">
-            <label for="filter-gender">Gender:</label>
-            <select id="filter-gender" name="gender" data-filter="gender">
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="neutral">Gender-neutral</option>
-            </select>
+          <div class="group" role="group" aria-labelledby="filter-gender-label">
+            <div class="label"><span id="filter-gender-label">Gender</span><span class="pen" data-hint-for="gender" aria-hidden="true"></span></div>
+            <div class="opts" data-buttons-for="gender">
+              <button type="button" class="opt hd tap" data-value="male" data-hint="" aria-pressed="true">Male</button>
+              <button type="button" class="opt hd tap" data-value="female" data-hint="" aria-pressed="false">Female</button>
+              <button type="button" class="opt hd tap" data-value="neutral" data-hint="" aria-pressed="false">Gender-neutral</button>
+            </div>
+            <input type="hidden" id="filter-gender" name="gender" data-filter="gender" value="male">
           </div>
 
-          <div class="filter-group">
-            <label for="filter-format">Name Format:</label>
-            <select id="filter-format" name="format" data-filter="format">
-              <option value="full">Full name</option>
-              <option value="titled">With a title (Count, Countess…)</option>
-              <option value="first">First name only</option>
-            </select>
+          <div class="group" role="group" aria-labelledby="filter-format-label">
+            <div class="label"><span id="filter-format-label">Name Format</span><span class="pen" data-hint-for="format" aria-hidden="true"></span></div>
+            <div class="opts" data-buttons-for="format">
+              <button type="button" class="opt hd tap" data-value="full" data-hint="" aria-pressed="true">Full name</button>
+              <button type="button" class="opt hd tap" data-value="titled" data-hint="e.g. Count, Countess…" title="With a title (Count, Countess…)" aria-pressed="false">With a title</button>
+              <button type="button" class="opt hd tap" data-value="first" data-hint="" aria-pressed="false">First name only</button>
+            </div>
+            <input type="hidden" id="filter-format" name="format" data-filter="format" value="full">
           </div></div>
-                        <div class="generator-controls">
-                            <div class="filter-group count-group">
-                                <label for="name-count">How many:</label>
-                                <select id="name-count">
-                                    <option value="8" selected>8 names</option>
-                                    <option value="16">16 names</option>
-                                    <option value="32">32 names</option>
-                                </select>
-                            </div>
-                            <button id="generate-btn" class="generate-button">Generate Names</button>
-                        </div>
-                        <div class="results-area" id="results">
-                            <p class="results-placeholder">Click "Generate Names" to see results</p>
-                        </div>
-                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
-                        <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="false">
+                    <p class="results-empty">Press Generate Names for 8 vampire names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
                     </div>
-                    
-                    <div class="cta-box">
-                        <p><strong>Need more options?</strong></p>
-                        <a href="../index.html" class="cta-button">Try the Ultimate Random Name Generator →</a>
-                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
+
+            <section class="section example-names">
+                <h2>Example Vampire Names</h2>
+                <p class="sub">A few names this generator came up with. Tap one to copy it, or press "Generate Names" above for more.</p>
+                <div class="ex">
+                <div class="exbox hd">
+                    <h3>Gothic aristocrat · Male · Full name</h3>
+                    <ul>
+                        <li>Florian Fairfax</li>
+                        <li>Victor Ashgrove</li>
+                        <li>Cassius Saint-Clair</li>
+                        <li>Armand Vauclair</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Gothic aristocrat · Female · First name only</h3>
+                    <ul>
+                        <li>Margaux</li>
+                        <li>Annabel</li>
+                        <li>Isadora</li>
+                        <li>Eleanora</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Old World · Male · First name only</h3>
+                    <ul>
+                        <li>Sandor</li>
+                        <li>Dimitri</li>
+                        <li>Ion</li>
+                        <li>Bogdan</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Old World · Gender-neutral · With a title</h3>
+                    <ul>
+                        <li>Sovereign Vali Petrescu</li>
+                        <li>Elder Jarek Wolanski</li>
+                        <li>Regent Iva Esterhazy-Varga</li>
+                        <li>Regent Sava Varga</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Ancient · Female · With a title</h3>
+                    <ul>
+                        <li>Lady Theodora Cornelius</li>
+                        <li>Queen Zenobia of Sparta</li>
+                        <li>Priestess Livia Valerius</li>
+                        <li>Domina Aurelia of Antioch</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Modern · Male · Full name</h3>
+                    <ul>
+                        <li>Noah Grant</li>
+                        <li>Sam Rhodes</li>
+                        <li>Ethan Monroe</li>
+                        <li>Eli Graves</li>
+                    </ul>
+                </div>
                 </div>
             </section>
 
-            <section class="example-names">
-                <h2>Example Vampire Names</h2>
-                <p>A few names this generator came up with. Press "Generate Names" above for more.</p>
-                <h3>Gothic aristocrat · Male · Full name</h3>
-                <ul class="name-results">
-                    <li>Florian Fairfax</li>
-                    <li>Victor Ashgrove</li>
-                    <li>Cassius Saint-Clair</li>
-                    <li>Armand Vauclair</li>
-                </ul>
-                <h3>Gothic aristocrat · Female · First name only</h3>
-                <ul class="name-results">
-                    <li>Margaux</li>
-                    <li>Annabel</li>
-                    <li>Isadora</li>
-                    <li>Eleanora</li>
-                </ul>
-                <h3>Old World · Male · First name only</h3>
-                <ul class="name-results">
-                    <li>Sandor</li>
-                    <li>Dimitri</li>
-                    <li>Ion</li>
-                    <li>Bogdan</li>
-                </ul>
-                <h3>Old World · Gender-neutral · With a title</h3>
-                <ul class="name-results">
-                    <li>Sovereign Vali Petrescu</li>
-                    <li>Elder Jarek Wolanski</li>
-                    <li>Regent Iva Esterhazy-Varga</li>
-                    <li>Regent Sava Varga</li>
-                </ul>
-                <h3>Ancient · Female · With a title</h3>
-                <ul class="name-results">
-                    <li>Lady Theodora Cornelius</li>
-                    <li>Queen Zenobia of Sparta</li>
-                    <li>Priestess Livia Valerius</li>
-                    <li>Domina Aurelia of Antioch</li>
-                </ul>
-                <h3>Modern · Male · Full name</h3>
-                <ul class="name-results">
-                    <li>Noah Grant</li>
-                    <li>Sam Rhodes</li>
-                    <li>Ethan Monroe</li>
-                    <li>Eli Graves</li>
-                </ul>
-            </section>
-
-            <section class="blog-content how-it-works">
+            <section class="section how-it-works">
                 <h2>How the Vampire Name Generator Works</h2>
+                <div class="howto hd">
                 <p>It works from 553 names and name parts, which combine into over 69,000 possible results.</p>
                 <p>The choices:</p>
                 <ul><li><strong>Style:</strong> Gothic aristocrat, Old World, Ancient, Modern.</li><li><strong>Gender:</strong> Male, Female, Gender-neutral.</li><li><strong>Name Format:</strong><ul><li>Full name, e.g. <em>Victor Dunraven</em></li><li>With a title, e.g. <em>Prince Ambrose de Morvane</em></li><li>First name only, e.g. <em>Sebastien</em></li></ul></li></ul>
-                <p>Each press gives you 8, 16 or 32 names (choose under "How many"), and you won't see the same one twice until you've been through everything for the choices you've made.</p>
+                <p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet, until the names for the choices you've made run out.</p>
+                </div>
             </section>
 
-            <article class="blog-content" itemscope itemtype="https://schema.org/Article">
+            <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="Vampire Name Generator">
                 <meta itemprop="description" content="Vampire names in four styles: gothic aristocrats, Old World Transylvanians, ancient Romans and modern urban vampires. Full names, titles like Count and Countess, or first names.">
-                <section itemprop="articleBody">
-                    <p>Vampire names tell you how old a vampire is. A count with a castle, a Roman who's seen empires fall and a twenty-something in a leather jacket all need different names. This <strong>vampire name generator</strong> gives you four styles, from gothic aristocrat to modern urban fantasy, with full names, grand titles like <em>Count</em> and <em>Countess</em>, or just a first name.</p>
-                </section>
+                <div itemprop="articleBody">
+                <p class="big">Vampire names tell you how old a vampire is. A count with a castle, a Roman who's seen empires fall and a twenty-something in a leather jacket all need different names. This <strong>vampire name generator</strong> gives you four styles, from gothic aristocrat to modern urban fantasy, with full names, grand titles like <em>Count</em> and <em>Countess</em>, or just a first name.</p>
                 
-      <section>
-        <h2>Famous vampires and how they got their names</h2>
-        <ul><li><strong>Lord Ruthven</strong> (John Polidori's <em>The Vampyre</em>, 1819) made the vampire an aristocrat. The name was borrowed from Lady Caroline Lamb's novel <em>Glenarvon</em>, where it belongs to a thinly disguised Lord Byron.</li><li><strong>Carmilla</strong> (Sheridan Le Fanu, 1872) is really Countess Mircalla Karnstein, and also goes by Millarca: every alias is an anagram of her real name.</li><li><strong>Count Dracula</strong> (Bram Stoker, 1897) takes his name from Vlad III of Wallachia, "Dracula", meaning son of Dracul. His father was called Dracul after the Order of the Dragon.</li><li><strong>Count Orlok</strong> in the 1922 film <em>Nosferatu</em> exists because the film was an unauthorised adaptation of Dracula, so the names were changed.</li><li><strong>Lestat de Lioncourt</strong> and <strong>Louis de Pointe du Lac</strong> (Anne Rice) carry the "de" of old French nobility.</li><li><strong>Spike</strong> (<em>Buffy the Vampire Slayer</em>) was "William the Bloody" before that. Modern vampires often go by a nickname.</li></ul>
-      </section>
-    
+                <h2>Famous vampires and how they got their names</h2>
+                <ul><li><strong>Lord Ruthven</strong> (John Polidori's <em>The Vampyre</em>, 1819) made the vampire an aristocrat. The name was borrowed from Lady Caroline Lamb's novel <em>Glenarvon</em>, where it belongs to a thinly disguised Lord Byron.</li><li><strong>Carmilla</strong> (Sheridan Le Fanu, 1872) is really Countess Mircalla Karnstein, and also goes by Millarca: every alias is an anagram of her real name.</li><li><strong>Count Dracula</strong> (Bram Stoker, 1897) takes his name from Vlad III of Wallachia, "Dracula", meaning son of Dracul. His father was called Dracul after the Order of the Dragon.</li><li><strong>Count Orlok</strong> in the 1922 film <em>Nosferatu</em> exists because the film was an unauthorised adaptation of Dracula, so the names were changed.</li><li><strong>Lestat de Lioncourt</strong> and <strong>Louis de Pointe du Lac</strong> (Anne Rice) carry the "de" of old French nobility.</li><li><strong>Spike</strong> (<em>Buffy the Vampire Slayer</em>) was "William the Bloody" before that. Modern vampires often go by a nickname.</li></ul>
 
-      <section>
-        <h2>Three tricks vampire names use</h2>
-        <ul><li><strong>Titles and noble particles.</strong> Count, Baron, Lady; "de", "von". Since Lord Ruthven, the vampire of fiction has usually been an aristocrat, living off everyone else. The <em>With a title</em> format adds one.</li><li><strong>Anagrams and aliases.</strong> Someone who lives for centuries needs new identities. Carmilla shuffles her letters; "Alucard", Dracula backwards, has turned up from the 1943 film <em>Son of Dracula</em> to <em>Castlevania</em> and <em>Hellsing</em>.</li><li><strong>Names of night and shadow.</strong> Latin and Greek words for night, evening and the underworld (Nox, Vesper, Erebus, Lethe) make strong single names for an old, nameless thing.</li></ul>
-      </section>
-    
+                <h2>Three tricks vampire names use</h2>
+                <ul><li><strong>Titles and noble particles.</strong> Count, Baron, Lady; "de", "von". Since Lord Ruthven, the vampire of fiction has usually been an aristocrat, living off everyone else. The <em>With a title</em> format adds one.</li><li><strong>Anagrams and aliases.</strong> Someone who lives for centuries needs new identities. Carmilla shuffles her letters; "Alucard", Dracula backwards, has turned up from the 1943 film <em>Son of Dracula</em> to <em>Castlevania</em> and <em>Hellsing</em>.</li><li><strong>Names of night and shadow.</strong> Latin and Greek words for night, evening and the underworld (Nox, Vesper, Erebus, Lethe) make strong single names for an old, nameless thing.</li></ul>
 
-      <section>
-        <h2>Choosing a style</h2>
-        <p>A vampire usually keeps the name they were born with, so the style says when they were turned:</p><ul><li><strong>Gothic aristocrat</strong>: Western European nobility of the 1700s and 1800s, in the tradition of Dracula, Carmilla and Lestat. Pairs well with a title.</li><li><strong>Old World</strong>: Romanian, Hungarian and Slavic names, for vampires from the lands where the folklore began.</li><li><strong>Ancient</strong>: Roman, Greek and Near Eastern names, sometimes with a city instead of a surname: <em>Lucius of Carthage</em>.</li><li><strong>Modern</strong>: ordinary names for vampires who blend in, as in Twilight or True Blood. The surnames hint at something (Graves, Frost, Locke) without giving the game away. Modern vampires don't use titles, so that format isn't offered.</li></ul>
-      </section>
-    
+                <h2>Choosing a style</h2>
+                <p>A vampire usually keeps the name they were born with, so the style says when they were turned:</p><ul><li><strong>Gothic aristocrat</strong>: Western European nobility of the 1700s and 1800s, in the tradition of Dracula, Carmilla and Lestat. Pairs well with a title.</li><li><strong>Old World</strong>: Romanian, Hungarian and Slavic names, for vampires from the lands where the folklore began.</li><li><strong>Ancient</strong>: Roman, Greek and Near Eastern names, sometimes with a city instead of a surname: <em>Lucius of Carthage</em>.</li><li><strong>Modern</strong>: ordinary names for vampires who blend in, as in Twilight or True Blood. The surnames hint at something (Graves, Frost, Locke) without giving the game away. Modern vampires don't use titles, so that format isn't offered.</li></ul>
 
-      <section>
-        <h2>Making the name your own</h2>
-        <ul><li><strong>Decide when they were turned.</strong> A vampire born in 1750 and one born in 1990 shouldn't share a name style.</li><li><strong>Give them a current alias.</strong> An old vampire living in the modern world might pair a gothic real name with a modern one, or use an anagram like Carmilla.</li><li><strong>Add what others call them.</strong> An epithet like <em>the Bloody</em> or <em>the Pale</em> (try the <a href="epithet-generator.html">Epithet Generator</a>) is how mortals will remember them.</li></ul>
-      </section>
-    
+                <h2>Making the name your own</h2>
+                <ul><li><strong>Decide when they were turned.</strong> A vampire born in 1750 and one born in 1990 shouldn't share a name style.</li><li><strong>Give them a current alias.</strong> An old vampire living in the modern world might pair a gothic real name with a modern one, or use an anagram like Carmilla.</li><li><strong>Add what others call them.</strong> An epithet like <em>the Bloody</em> or <em>the Pale</em> (try the <a href="epithet-generator.html">Epithet Generator</a>) is how mortals will remember them.</li></ul>
+                </div>
             </article>
 
-            
-      <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Why are so many vampires counts?</h3>
-              <p class="faq-answer">Since Lord Ruthven in 1819, the vampire of fiction has usually been an aristocrat, and Count Dracula fixed the image for good. A title says old money, old blood and a castle, and that the vampire has been living off ordinary people for centuries.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">What does the name Dracula mean?</h3>
-              <p class="faq-answer">"Son of Dracul". Vlad III of Wallachia was called Dracula because his father, Vlad II, was known as Dracul after joining the Order of the Dragon. Stoker borrowed the name for his count.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">What is a good name for a female vampire?</h3>
-              <p class="faq-answer">For a classic gothic vampire, try an old European name with a title: Countess Elisabeth Ravenscourt, Lady Isadora Vane. For something older, a Roman or Greek name like Drusilla or Agrippina; for a modern vampire, an everyday name that blends in.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Do vampires change their names?</h3>
-              <p class="faq-answer">In a lot of fiction, yes: they live for centuries and need new identities. Carmilla's aliases are anagrams of her real name, and "Alucard" is Dracula backwards.</p>
-            </div>
-          
-        </div>
-      </section>
-            
-      <section class="related-section">
-        <h2>Related Name Generators</h2>
-        <div class="related-grid" id="related-generators">
-          <a href="../posts/assassin-name-generator.html" class="related-card">
-            <h3>🗡️ Assassin Name Generator</h3>
-            <p>Assassin names that don&#039;t draw attention: codenames like Shrike, titles like the Patient Guest, fantasy aliases like Silkstep, and full names with an alias.</p>
-          </a>
-          <a href="../posts/epithet-generator.html" class="related-card">
-            <h3>🏷️ Epithet Generator</h3>
-            <p>Add an epithet to your character&#039;s name: the Bold, Dragonslayer, of the North, or a real one from history like the Unready or Bloodaxe. 36 categories, or a mix.</p>
-          </a>
-          <a href="../posts/gamertag-generator.html" class="related-card">
-            <h3>🎮 Gamertag Generator</h3>
-            <p>Gamertags and usernames for Xbox, PlayStation, Discord, Steam and social media: cool, funny, fantasy or short, with your own word or name mixed in if you like.</p>
-          </a>
-          <a href="../posts/knight-name-generator.html" class="related-card">
-            <h3>🛡️ Knight Name Generator</h3>
-            <p>Knight names built the medieval way: Sir or Dame, a period first name, and a place, an epithet or a knightly order, from Sir Ralph of Blackmoor to Dame Isabel the Unbowed.</p>
-          </a>
-          <a href="../posts/name-combiner.html" class="related-card">
-            <h3>💞 Name Combiner</h3>
-            <p>Combine two names into one: ship names for couples and characters (Romeo + Juliet = Romiet), baby name blends, and mash-ups of any two names you type.</p>
-          </a>
-          <a href="../posts/paladin-name-generator.html" class="related-card">
-            <h3>✨ Paladin Name Generator</h3>
-            <p>Paladin names for D&amp;D, shaped by the oath: a noble first name and an epithet that suits Devotion, Vengeance, the Ancients, Glory or even an Oathbreaker.</p>
-          </a>
-        </div>
-      </section>
-            
-      <section class="category-generators-section">
-        <h2>All Characters Name Generators</h2>
-        <div class="category-generators-grid" id="category-generators">
-          <a href="../posts/name-combiner.html" class="category-generator-item">
-            <span class="category-generator-icon">💞</span>
-            <span class="category-generator-title">Name Combiner</span>
-          </a>
-          <a href="../posts/gamertag-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🎮</span>
-            <span class="category-generator-title">Gamertag Generator</span>
-          </a>
-          <a href="../posts/epithet-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🏷️</span>
-            <span class="category-generator-title">Epithet Generator</span>
-          </a>
-          <a href="../posts/assassin-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🗡️</span>
-            <span class="category-generator-title">Assassin Name Generator</span>
-          </a>
-          <a href="../posts/knight-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🛡️</span>
-            <span class="category-generator-title">Knight Name Generator</span>
-          </a>
-          <a href="../posts/paladin-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">✨</span>
-            <span class="category-generator-title">Paladin Name Generator</span>
-          </a>
-          <a href="../posts/pirate-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🏴‍☠️</span>
-            <span class="category-generator-title">Pirate Name Generator</span>
-          </a>
-          <a href="../posts/viking-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⛵</span>
-            <span class="category-generator-title">Viking Name Generator</span>
-          </a>
-          <a href="../posts/superhero-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🦸</span>
-            <span class="category-generator-title">Superhero Name Generator</span>
-          </a>
-          <a href="../posts/villain-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🦹</span>
-            <span class="category-generator-title">Villain Name Generator</span>
-          </a>
-        </div>
-      </section>
-        </main>
+            <section class="section faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Why are so many vampires counts?</summary>
+                        <div>Since Lord Ruthven in 1819, the vampire of fiction has usually been an aristocrat, and Count Dracula fixed the image for good. A title says old money, old blood and a castle, and that the vampire has been living off ordinary people for centuries.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>What does the name Dracula mean?</summary>
+                        <div>"Son of Dracul". Vlad III of Wallachia was called Dracula because his father, Vlad II, was known as Dracul after joining the Order of the Dragon. Stoker borrowed the name for his count.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>What is a good name for a female vampire?</summary>
+                        <div>For a classic gothic vampire, try an old European name with a title: Countess Elisabeth Ravenscourt, Lady Isadora Vane. For something older, a Roman or Greek name like Drusilla or Agrippina; for a modern vampire, an everyday name that blends in.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Do vampires change their names?</summary>
+                        <div>In a lot of fiction, yes: they live for centuries and need new identities. Carmilla's aliases are anagrams of her real name, and "Alucard" is Dracula backwards.</div>
+                    </details>
+                </div>
+            </section>
 
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+            <section class="section related-section">
+                <h2>Related Name Generators</h2>
+                <div class="genlist" id="related-generators">
+                    <a href="../posts/assassin-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-hood"/></svg><div><b>Assassin Name Generator</b><span>Assassin names that don&#039;t draw attention: codenames like Shrike, titles like the Patient Guest, fantasy aliases like Silkstep, and full names with an alias.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/epithet-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-laurel"/></svg><div><b>Epithet Generator</b><span>Add an epithet to your character&#039;s name: the Bold, Dragonslayer, of the North, or a real one from history like the Unready or Bloodaxe. 36 categories, or a mix.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/gamertag-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-quill"/></svg><div><b>Gamertag Generator</b><span>Gamertags and usernames for Xbox, PlayStation, Discord, Steam and social media: cool, funny, fantasy or short, with your own word or name mixed in if you like.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/knight-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-d20"/></svg><div><b>Knight Name Generator</b><span>Knight names built the medieval way: Sir or Dame, a period first name, and a place, an epithet or a knightly order, from Sir Ralph of Blackmoor to Dame Isabel the Unbowed.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/name-combiner.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-quill"/></svg><div><b>Name Combiner</b><span>Combine two names into one: ship names for couples and characters (Romeo + Juliet = Romiet), baby name blends, and mash-ups of any two names you type.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/paladin-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-round-shield"/></svg><div><b>Paladin Name Generator</b><span>Paladin names for D&amp;D, shaped by the oath: a noble first name and an epithet that suits Devotion, Vengeance, the Ancients, Glory or even an Oathbreaker.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
+
+            <section class="section category-generators-section">
+                <h2>More Characters Name Generators</h2>
+                <div class="genlist compact" id="category-generators">
+                    <a href="../posts/name-combiner.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-quill"/></svg><div><b>Name Combiner</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/gamertag-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-quill"/></svg><div><b>Gamertag Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/epithet-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-laurel"/></svg><div><b>Epithet Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/assassin-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-hood"/></svg><div><b>Assassin Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/knight-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-d20"/></svg><div><b>Knight Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/paladin-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-round-shield"/></svg><div><b>Paladin Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/pirate-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-quill"/></svg><div><b>Pirate Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/viking-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-quill"/></svg><div><b>Viking Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/superhero-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-quill"/></svg><div><b>Superhero Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/villain-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-quill"/></svg><div><b>Villain Name Generator</b></div><em aria-hidden="true">→</em></a>
+                </div>
+                <p class="all-link"><a href="../categories/people-names.html">All Characters name generators</a></p>
+            </section>
+            <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
 
     <script type="application/json" id="generator-config">{"title":"Vampire Name Generator","slug":"vampire-name-generator","filters":{"style":{"label":"Style","options":["gothic","old_world","ancient","modern"],"optionLabels":{"gothic":"Gothic aristocrat (Dracula, Carmilla)","old_world":"Old World (Transylvania, Eastern Europe)","ancient":"Ancient (Rome, Greece, the Near East)","modern":"Modern (urban fantasy)"}},"gender":{"label":"Gender","options":["male","female","neutral"],"optionLabels":{"neutral":"Gender-neutral"}},"format":{"label":"Name Format","options":["full","titled","first"],"optionLabels":{"full":"Full name","titled":"With a title (Count, Countess…)","first":"First name only"}}},"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[{style}.first.{gender}] [{style}.surnames]"},"titled":{"recipe":"template","template":"[titles.{style}.{gender}] [{style}.first.{gender}] [{style}.surnames]"},"first":{"recipe":"pick","from":"{style}.first.{gender}"}},"data":{"gothic":{"first":{"male":["Adrian","Alaric","Ambrose","Armand","Auguste","Bastien","Casimir","Cassius","Corvin","Damien","Dorian","Edmund","Evander","Florian","Gabriel","Gideon","Hadrian","Julian","Laurent","Leopold","Lucien","Lysander","Maximilian","Montague","Octavian","Raphael","Remy","Sebastien","Severin","Silas","Thaddeus","Valentin","Victor"],"female":["Adeline","Annabel","Beatrix","Camille","Cecilia","Celestine","Clarimonde","Cordelia","Delphine","Eleanora","Elisabeth","Evangeline","Genevieve","Isadora","Isolde","Josephine","Juliette","Leonora","Lenore","Lucrezia","Margaux","Marguerite","Mathilde","Ophelia","Rosalind","Seraphine","Sybille","Theodora","Valentine","Vivienne","Yvette"],"neutral":["Ash","Avery","Blair","Claude","Dominique","Emery","Evelyn","Jules","Laurie","Marion","Noel","Quinn","Raven","Remy","Rowan","Sacha","Valentine","Vesper","Wren","Sloane","Morgan","Ellis","Hollis","Sage","Ainsley","Darcy","Hilary","Jocelyn","Leslie","Shea"]},"surnames":["Blackwood","Ravenscourt","Mortmain","Thornbury","Vane","Montclair","Belmont","Rochefort","Delacroix","Valmont","Saint-Clair","de Morvane","de Lacey","Ashgrove","Crowhurst","Darkmoor","Dunraven","Everleigh","Fairfax","Grimwald","Harrowgate","Hollowell","Kingsmere","Lockwood","Marchbanks","Moreau","Nightshade","Pembroke","Ravenhurst","Sable","Sinclair","Thorne","Vauclair","Ashby","Corbeau","Duval","Malvoisin","Noirmont","Sauveterre","Lenoir"]},"old_world":{"first":{"male":["Andrei","Anton","Bogdan","Constantin","Dimitri","Dragomir","Emeric","Ferenc","Gavril","Grigore","Ilie","Ion","Istvan","Kazimierz","Ladislav","Lucian","Matei","Mihail","Miklos","Mircea","Nikolai","Radu","Sandor","Stefan","Tibor","Vasile","Viktor","Vladimir","Zoltan","Zoran","Bela","Laszlo"],"female":["Adela","Anca","Bianka","Catalina","Dorina","Elisabeta","Erzsebet","Ileana","Irina","Ilona","Katalin","Ludmila","Magda","Mirela","Natalia","Oana","Olenka","Rozalia","Sabina","Stela","Svetlana","Tatiana","Valeria","Vesna","Viorica","Zofia","Zora","Zsofia","Dragana","Milena"],"neutral":["Sasha","Zhenya","Valya","Slava","Mika","Niki","Dani","Vali","Kris","Ari","Jarek","Nicu","Lumi","Tomi","Alexi","Sava","Iva","Vida","Dorin","Jovan"]},"surnames":["Dragomir","Vasarhely","Karnovsky","Molnar","Bathory-Vass","Corvinus","Drăgulescu","Esterhazy-Varga","Szekely","Rakoczi","Lupescu","Moroianu","Strigoi","Varga","Petrescu","Constantinescu","Nemeth","Horvath","Zamfir","Vladescu","Ionescu","Albescu","Negrescu","Belanescu","Morozov","Volkov","Chernov","Ravnik","Kral","Novak","Dvorak","Wolanski","Czerny","Sokolov","Vukovic","Draganov","Ivanescu","Barbu","Teodorescu","Vrancea"]},"ancient":{"first":{"male":["Aurelius","Cassian","Darius","Drusus","Gaius","Lucius","Octavius","Quintus","Septimus","Tiberius","Valerian","Ptolemy","Cyrus","Xerxes","Leonidas","Alaric","Attalus","Belisarius","Crassus","Demetrios","Kallias","Lysandros","Nikanor","Orestes","Philon","Seleucus","Themistokles","Theron","Zenon","Ashur"],"female":["Agrippina","Antonia","Aurelia","Calpurnia","Cassia","Claudia","Cornelia","Drusilla","Faustina","Flavia","Julia","Livia","Lucilla","Octavia","Valeria","Berenice","Arsinoe","Semiramis","Theodora","Zenobia","Artemisia","Callista","Eudoxia","Helena","Irene","Kassandra","Phaedra","Xanthe","Ione","Nefertari"],"neutral":["Nox","Umbra","Aeon","Kairos","Lethe","Erebus","Styx","Caelum","Ignis","Vesper","Aether","Anima","Sol","Aster","Corvus","Lux","Tenebris","Orcus","Nyx","Eon"]},"surnames":["Aurelianus","Valerius","Cornelius","Severus","Flavius","Antonius","Domitius","Licinius","Marcellus","Sempronius","Sulpicius","Calpurnius","Aemilius","Fabius","Junius","Vipsanius","Claudius","Septimius","Tullius","Varro","of Alexandria","of Byzantium","of Carthage","of Thebes","of Babylon","of Nineveh","of Antioch","of Ur","of Sparta","of Knossos","of Tyre","of Petra","of Memphis","of Persepolis","of Ravenna","of Pergamon","of Ctesiphon","of Corinth","of Palmyra","of Syracuse"]},"modern":{"first":{"male":["Adam","Alex","Ben","Caleb","Daniel","Eli","Ethan","Finn","Gabe","Isaac","Jack","Jonah","Jude","Kai","Leo","Liam","Luca","Marcus","Max","Miles","Nate","Noah","Oliver","Owen","Rhys","Ryan","Sam","Theo","Tom","Zane"],"female":["Alice","Amber","Ava","Bella","Chloe","Claire","Ella","Emma","Grace","Hannah","Iris","Ivy","Jade","Kate","Lena","Lily","Lucy","Maya","Mia","Nadia","Nina","Nora","Ruby","Sara","Scarlett","Sophie","Stella","Tessa","Violet","Zoe"],"neutral":["Alex","Ari","Avery","Blake","Cameron","Casey","Charlie","Drew","Eden","Ellis","Emerson","Finley","Harley","Jamie","Jordan","Jules","Kai","Logan","Morgan","Parker","Quinn","Reese","Riley","River","Rowan","Sage","Sam","Skyler","Taylor","Remy"]},"surnames":["Ashford","Blackwell","Bishop","Cole","Cross","Dalton","Drake","Ellison","Fairchild","Frost","Grant","Graves","Hale","Holloway","Hunter","Kane","Knight","Locke","Marsh","Mercer","Monroe","North","Parish","Price","Reyes","Rhodes","Shaw","Sinclair","Sloane","Stone","Thorne","Vale","Vance","Ward","Webb","West","Winter","Wolfe","Wren","Crane"]},"titles":{"gothic":{"male":["Count","Baron","Lord","Duke","Prince","Marquis","Viscount","Sir"],"female":["Countess","Baroness","Lady","Duchess","Princess","Marquise","Viscountess","Dame"],"neutral":["Elder","Regent","Sovereign","Magister"]},"old_world":{"male":["Count","Prince","Voivode","Boyar","Baron","Lord"],"female":["Countess","Princess","Baroness","Lady"],"neutral":["Elder","Regent","Sovereign"]},"ancient":{"male":["Lord","Magister","Consul","Tribune","Prefect","Archon"],"female":["Lady","Domina","Priestess","Queen"],"neutral":["Elder","Magister","Archon","Oracle"]}}}}</script>
     <script src="../lib/recipe-engine.js"></script>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

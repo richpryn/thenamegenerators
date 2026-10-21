@@ -297,366 +297,303 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
-                </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-clapper" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="19" width="32" height="23" rx="2" fill="#fffcf4"/><path d="M8 19 L37 8 L39 14 L10 25"/><path d="M15 16 L18 22 M23 13 L26 19 M31 10 L34 16" stroke-width="1.3"/><path d="M14 31 h20" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-sword-crown" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(35 24 24)"><path d="M24 6 L28 12 L28 32 L20 32 L20 12 Z" fill="#fffcf4"/><path d="M14 32 H34"/><path d="M24 32 V42"/></g><path d="M3 10 L6 3 L10 8 L13 2 L16 8 L20 3 L22 10 Z" fill="#efc84a"/></g></symbol>
+      <symbol id="m-quill" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M38 4 C24 8 14 20 12 38 C24 32 36 22 38 4 Z" fill="#fffcf4"/><path d="M12 38 L35 8" stroke-width="1.3"/><path d="M12 38 L7 45"/><path d="M5 45 C12 42 18 46 25 43" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-sword" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(35 24 24)"><path d="M24 2 L28 8 L28 30 L20 30 L20 8 Z" fill="#fffcf4"/><path d="M24 9 V28" stroke-width="1.2"/><path d="M14 30 H34"/><path d="M24 30 V41"/><circle cx="24" cy="43.5" r="2.4" fill="#efc84a"/></g></g></symbol>
+      <symbol id="m-broom" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M42 5 L21 29"/><path d="M22 28 L12 30 C8 34 6 40 5 44 C11 43 18 39 22 34 Z" fill="#efc84a"/><path d="M14 33 L9 40 M17 34 L12 41" stroke-width="1.2"/><path d="M19 31 l4 -4" stroke-width="3.4"/></g></symbol>
+      <symbol id="m-wand" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 42 L32 16" stroke-width="3"/><path d="M8 42 L13 37" stroke-width="5.5"/><path d="M38 3 l2 5 l5 2 l-5 2 l-2 5 l-2 -5 l-5 -2 l5 -2 z" fill="#efc84a" stroke-width="1.4"/><path d="M29 6 l1 2 M44 20 l-2 1 M33 22 l2 1" stroke-width="1.2"/></g></symbol>
+      <symbol id="m-planet" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="25" r="11" fill="#fffcf4"/><ellipse cx="24" cy="25" rx="20" ry="6" transform="rotate(-20 24 25)"/><path d="M17 20 C20 17 24 16 27 17" stroke="#efc84a" stroke-width="3"/><path d="M40 5 l1 3 l3 1 l-3 1 l-1 3 l-1 -3 l-3 -1 l3 -1 z" fill="#1e1c18" stroke-width="1"/></g></symbol>
+      <symbol id="m-d20" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4 L42 14 L42 34 L24 44 L6 34 L6 14 Z" fill="#fffcf4"/><path d="M24 4 L15 28 L33 28 Z M6 14 L15 28 M42 14 L33 28 M15 28 L24 44 L33 28 M6 34 L15 28 M42 34 L33 28" stroke-width="1.3"/><path d="M20 24 h8" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-war-axe" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 42 L33 16"/><path d="M27 8 C37 5 46 12 44 22 C38 18 32 18 28 22 C30 16 30 12 27 8 Z" fill="#fffcf4"/><path d="M7 40 l6 6"/><path d="M12 33 l5 5" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-paw" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 22 C31 22 35 30 35 35 C35 40 30 41 24 39 C18 41 13 40 13 35 C13 30 17 22 24 22 Z" fill="#fffcf4"/><ellipse cx="12" cy="20" rx="3.5" ry="4.5" fill="#fffcf4"/><ellipse cx="19" cy="12" rx="3.5" ry="4.5" fill="#fffcf4"/><ellipse cx="29" cy="12" rx="3.5" ry="4.5" fill="#efc84a"/><ellipse cx="36" cy="20" rx="3.5" ry="4.5" fill="#fffcf4"/></g></symbol>
+      <symbol id="m-axe" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 V44"/><path d="M24 10 C19 11 14 9 10 6 C6 13 6 23 11 30 C15 27 19 26 24 25 Z" fill="#fffcf4"/><path d="M24 10 C29 11 34 9 38 6 C42 13 42 23 37 30 C33 27 29 26 24 25 Z" fill="#fffcf4"/><path d="M21 37 h6" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-lizard" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4 C27 4 29 8 27 12 L26 30 C26 36 22 40 13 44 C19 38 22 34 22 30 L21 12 C19 8 19 4 22 4 Z" fill="#fffcf4"/><path d="M22 16 L13 12 M26 16 L35 12 M22 26 L13 30 M26 26 L35 30"/><path d="M13 12 l-3 -2 M35 12 l3 -2 M13 30 l-3 2 M35 30 l3 2" stroke-width="1.3"/><circle cx="23.5" cy="7.5" r="1" fill="#1e1c18"/><path d="M23.5 17 v8" stroke="#efc84a" stroke-width="2.6"/></g></symbol>
+      <symbol id="m-leaf" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 40 C10 22 22 10 40 8 C40 28 28 40 10 40 Z" fill="#fffcf4"/><path d="M10 40 L31 17 M18 32 l7 1 M24 25 l7 1" stroke-width="1.4"/><path d="M6 44 C13 41 17 45 25 42" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-tusks" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 36 C10 26 12 14 18 7 C18 16 20 26 22 34 Z" fill="#fffcf4"/><path d="M34 36 C38 26 36 14 30 7 C30 16 28 26 26 34 Z" fill="#fffcf4"/><path d="M8 41 C16 37 32 37 40 41" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-leaf-flame" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 42 C6 26 16 16 32 14 C32 30 22 40 6 42 Z" fill="#fffcf4"/><path d="M6 42 L24 22 M13 35 l6 1" stroke-width="1.4"/><path d="M38 4 C41 9 45 11 45 17 C45 21 42 24 38 24 C34 24 32 21 32 17 C32 13 35 12 36 9 C38 11 38 13 39 14 C40 11 39 7 38 4 Z" fill="#efc84a"/></g></symbol>
+      <symbol id="m-leaf-moon" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 42 C8 26 18 16 34 14 C34 30 24 40 8 42 Z" fill="#fffcf4"/><path d="M8 42 L26 22 M15 35 l6 1" stroke-width="1.4"/><path d="M36 4 a7 7 0 1 0 7 9 a5.5 5.5 0 1 1 -7 -9 z" fill="#efc84a"/></g></symbol>
+      <symbol id="m-club" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 43 L22 26" stroke-width="3.2"/><path d="M20 28 C15 18 22 5 32 5 C42 5 45 17 37 25 C32 30 24 32 20 28 Z" fill="#fffcf4"/><circle cx="29" cy="13" r="1.6" fill="#1e1c18"/><circle cx="36" cy="17" r="1.6" fill="#1e1c18"/><circle cx="27" cy="22" r="1.6" fill="#1e1c18"/><path d="M14 37 l4 3" stroke="#efc84a" stroke-width="4"/></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../categories/pop_culture-names.html">Pop Culture</a> / <span aria-current="page">Game of Thrones Name Generator</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">Game</span> of Thrones Name Generator</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-clapper"/></svg>
             </div>
-        </div>
-    </nav>
+            <p class="lede">Names from every corner of Westeros, with a house of your own or the right bastard surname.</p>
 
-    <div class="container">
-        <header class="blog-hero">
-            <h1>👑 Game of Thrones Name Generator</h1>
-            <p class="tagline">Names from every corner of Westeros, with a house of your own or the right bastard surname.</p>
-            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
-        </header>
-
-        <main>
-            <section class="embedded-generator">
-                <div class="generator-card">
-                    <h2>Generate Game of Thrones Names</h2>
-                    <p class="generator-description">Game of Thrones character names by region of Westeros: a noble name with a new house, a bastard with the right regional surname (Snow, Sand, Rivers…), or a Valyrian or Free Folk name.</p>
-                    
-                    <div class="simple-generator">
-                        <div class="filters">
-          <div class="filter-group">
-            <label for="filter-region">Region:</label>
-            <select id="filter-region" name="region" data-filter="region">
-              <option value="north">The North</option>
-              <option value="west">The Westerlands</option>
-              <option value="reach">The Reach</option>
-              <option value="dorne">Dorne</option>
-              <option value="iron">The Iron Islands</option>
-              <option value="vale">The Vale</option>
-              <option value="river">The Riverlands</option>
-              <option value="storm">The Stormlands</option>
-              <option value="valyrian">Valyrian (Targaryen-style)</option>
-              <option value="freefolk">Free Folk (beyond the Wall)</option>
-            </select>
+            <section class="sheet hd simple-generator" id="generator" aria-label="Game of Thrones Name Generator">
+                <div class="gen-grid">
+          <div class="group">
+            <label class="label" for="filter-region">Region</label>
+            <div class="ctl sel hd">
+              <select id="filter-region" name="region" data-filter="region">
+                <option value="north">The North</option>
+                <option value="west">The Westerlands</option>
+                <option value="reach">The Reach</option>
+                <option value="dorne">Dorne</option>
+                <option value="iron">The Iron Islands</option>
+                <option value="vale">The Vale</option>
+                <option value="river">The Riverlands</option>
+                <option value="storm">The Stormlands</option>
+                <option value="valyrian">Valyrian (Targaryen-style)</option>
+                <option value="freefolk">Free Folk (beyond the Wall)</option>
+              </select>
+            </div>
           </div>
 
-          <div class="filter-group">
-            <label for="filter-gender">Gender:</label>
-            <select id="filter-gender" name="gender" data-filter="gender">
-              <option value="any">Any</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-            </select>
+          <div class="group" role="group" aria-labelledby="filter-gender-label">
+            <div class="label"><span id="filter-gender-label">Gender</span><span class="pen" data-hint-for="gender" aria-hidden="true"></span></div>
+            <div class="opts" data-buttons-for="gender">
+              <button type="button" class="opt hd tap" data-value="any" data-hint="" aria-pressed="true">Any</button>
+              <button type="button" class="opt hd tap" data-value="male" data-hint="" aria-pressed="false">Male</button>
+              <button type="button" class="opt hd tap" data-value="female" data-hint="" aria-pressed="false">Female</button>
+            </div>
+            <input type="hidden" id="filter-gender" name="gender" data-filter="gender" value="any">
           </div>
 
-          <div class="filter-group">
-            <label for="filter-format">Name format:</label>
-            <select id="filter-format" name="format" data-filter="format">
-              <option value="noble">Noble (with a house)</option>
-              <option value="bastard">Bastard (regional surname)</option>
-              <option value="first">First name only</option>
-            </select>
+          <div class="group" role="group" aria-labelledby="filter-format-label">
+            <div class="label"><span id="filter-format-label">Name format</span><span class="pen" data-hint-for="format" aria-hidden="true">e.g. with a house</span></div>
+            <div class="opts" data-buttons-for="format">
+              <button type="button" class="opt hd tap" data-value="noble" data-hint="e.g. with a house" title="Noble (with a house)" aria-pressed="true">Noble</button>
+              <button type="button" class="opt hd tap" data-value="bastard" data-hint="e.g. regional surname" title="Bastard (regional surname)" aria-pressed="false">Bastard</button>
+              <button type="button" class="opt hd tap" data-value="first" data-hint="" aria-pressed="false">First name only</button>
+            </div>
+            <input type="hidden" id="filter-format" name="format" data-filter="format" value="noble">
           </div></div>
-                        <div class="generator-controls">
-                            <div class="filter-group count-group">
-                                <label for="name-count">How many:</label>
-                                <select id="name-count">
-                                    <option value="8" selected>8 names</option>
-                                    <option value="16">16 names</option>
-                                    <option value="32">32 names</option>
-                                </select>
-                            </div>
-                            <button id="generate-btn" class="generate-button">Generate Names</button>
-                        </div>
-                        <div class="results-area" id="results">
-                            <p class="results-placeholder">Click "Generate Names" to see results</p>
-                        </div>
-                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
-                        <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="false">
+                    <p class="results-empty">Press Generate Names for 8 game of thrones names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
                     </div>
-                    
-                    <div class="cta-box">
-                        <p><strong>Need more options?</strong></p>
-                        <a href="../index.html" class="cta-button">Try the Ultimate Random Name Generator →</a>
-                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
+
+            <section class="section example-names">
+                <h2>Example Game of Thrones Names</h2>
+                <p class="sub">A few names this generator came up with. Tap one to copy it, or press "Generate Names" above for more.</p>
+                <div class="ex">
+                <div class="exbox hd">
+                    <h3>The North · Any · Noble</h3>
+                    <ul>
+                        <li>Aleyne Ironhill</li>
+                        <li>Eddrick Coldwell</li>
+                        <li>Gavin Greystark</li>
+                        <li>Lyanne Holtwood</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>The Westerlands · Female · Noble</h3>
+                    <ul>
+                        <li>Gemma Goldhollow</li>
+                        <li>Brella Redwater</li>
+                        <li>Cerelle Brightcliff</li>
+                        <li>Vessa Sarsbury</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Dorne · Male · Noble</h3>
+                    <ul>
+                        <li>Estevan Dustwell</li>
+                        <li>Cyran Brightwater</li>
+                        <li>Valen Goldspring</li>
+                        <li>Nasir Saltspear</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>The Vale · Any · Noble</h3>
+                    <ul>
+                        <li>Malcolm Highcrag</li>
+                        <li>Mellara Stonehelm</li>
+                        <li>Willam Falconwell</li>
+                        <li>Ermesande Waynwell</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>The Riverlands · Female · Noble</h3>
+                    <ul>
+                        <li>Bethany Willowford</li>
+                        <li>Alyce Oakenford</li>
+                        <li>Cerenna Darrywell</li>
+                        <li>Tyta Stillbrook</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Valyrian · Male · Noble</h3>
+                    <ul>
+                        <li>Aeryx Daenaros</li>
+                        <li>Laemon Belaerys</li>
+                        <li>Rhaenar Qoraelys</li>
+                        <li>Rhaenon Aerax</li>
+                    </ul>
+                </div>
                 </div>
             </section>
 
-            <section class="example-names">
-                <h2>Example Game of Thrones Names</h2>
-                <p>A few names this generator came up with. Press "Generate Names" above for more.</p>
-                <h3>The North · Any · Noble</h3>
-                <ul class="name-results">
-                    <li>Aleyne Ironhill</li>
-                    <li>Eddrick Coldwell</li>
-                    <li>Gavin Greystark</li>
-                    <li>Lyanne Holtwood</li>
-                </ul>
-                <h3>The Westerlands · Female · Noble</h3>
-                <ul class="name-results">
-                    <li>Gemma Goldhollow</li>
-                    <li>Brella Redwater</li>
-                    <li>Cerelle Brightcliff</li>
-                    <li>Vessa Sarsbury</li>
-                </ul>
-                <h3>Dorne · Male · Noble</h3>
-                <ul class="name-results">
-                    <li>Estevan Dustwell</li>
-                    <li>Cyran Brightwater</li>
-                    <li>Valen Goldspring</li>
-                    <li>Nasir Saltspear</li>
-                </ul>
-                <h3>The Vale · Any · Noble</h3>
-                <ul class="name-results">
-                    <li>Malcolm Highcrag</li>
-                    <li>Mellara Stonehelm</li>
-                    <li>Willam Falconwell</li>
-                    <li>Ermesande Waynwell</li>
-                </ul>
-                <h3>The Riverlands · Female · Noble</h3>
-                <ul class="name-results">
-                    <li>Bethany Willowford</li>
-                    <li>Alyce Oakenford</li>
-                    <li>Cerenna Darrywell</li>
-                    <li>Tyta Stillbrook</li>
-                </ul>
-                <h3>Valyrian · Male · Noble</h3>
-                <ul class="name-results">
-                    <li>Aeryx Daenaros</li>
-                    <li>Laemon Belaerys</li>
-                    <li>Rhaenar Qoraelys</li>
-                    <li>Rhaenon Aerax</li>
-                </ul>
-            </section>
-
-            <section class="blog-content how-it-works">
+            <section class="section how-it-works">
                 <h2>How the Game of Thrones Name Generator Works</h2>
+                <div class="howto hd">
                 <p>It works from 466 names and name parts, which combine into over 4,700 possible results.</p>
                 <p>The choices:</p>
                 <ul><li><strong>Region:</strong> The North, The Westerlands, The Reach, Dorne, The Iron Islands, The Vale, The Riverlands, The Stormlands, Valyrian, Free Folk.</li><li><strong>Gender:</strong> Any, Male, Female.</li><li><strong>Name format:</strong> Noble, Bastard, First name only.</li></ul>
-                <p>Each press gives you 8, 16 or 32 names (choose under "How many"), and you won't see the same one twice until you've been through everything for the choices you've made.</p>
+                <p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet, until the names for the choices you've made run out.</p>
+                </div>
             </section>
 
-            <article class="blog-content" itemscope itemtype="https://schema.org/Article">
+            <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="Game of Thrones Name Generator">
                 <meta itemprop="description" content="Game of Thrones character names by region of Westeros: a noble name with a new house, a bastard with the right regional surname (Snow, Sand, Rivers…), or a Valyrian or Free Folk name.">
-                <section itemprop="articleBody">
-                    <p>George R. R. Martin builds most Westerosi names from real medieval English ones with a letter changed: Eddard for Edward, Jaime for James, Petyr for Peter. Each region has its own flavour, Targaryens sound Valyrian, and bastards get a surname that tells you where they were born. This <strong>Game of Thrones name generator</strong> builds names for eight regions of Westeros, plus Valyrian and Free Folk names, as a noble with a new house, a bastard or a first name alone.</p>
-                </section>
+                <div itemprop="articleBody">
+                <p class="big">George R. R. Martin builds most Westerosi names from real medieval English ones with a letter changed: Eddard for Edward, Jaime for James, Petyr for Peter. Each region has its own flavour, Targaryens sound Valyrian, and bastards get a surname that tells you where they were born. This <strong>Game of Thrones name generator</strong> builds names for eight regions of Westeros, plus Valyrian and Free Folk names, as a noble with a new house, a bastard or a first name alone.</p>
                 
-      <section>
-        <h2>Bastard surnames by region</h2>
-        <p>In Westeros, a highborn bastard can't use their father's name. They take a surname from the region they were born in, which is why Jon is a Snow and Ellaria is a Sand:</p><ul><li><strong>Snow:</strong> the North</li><li><strong>Sand:</strong> Dorne</li><li><strong>Rivers:</strong> the Riverlands</li><li><strong>Stone:</strong> the Vale</li><li><strong>Hill:</strong> the Westerlands</li><li><strong>Flowers:</strong> the Reach</li><li><strong>Storm:</strong> the Stormlands</li><li><strong>Pyke:</strong> the Iron Islands</li><li><strong>Waters:</strong> the Crownlands, around King's Landing</li></ul><p>The generator's <em>Bastard</em> format gives each region its right surname. Valyrian names get Waters, as a Targaryen bastard born near King's Landing would.</p>
-      </section>
-    
+                <h2>Bastard surnames by region</h2>
+                <p>In Westeros, a highborn bastard can't use their father's name. They take a surname from the region they were born in, which is why Jon is a Snow and Ellaria is a Sand:</p><ul><li><strong>Snow:</strong> the North</li><li><strong>Sand:</strong> Dorne</li><li><strong>Rivers:</strong> the Riverlands</li><li><strong>Stone:</strong> the Vale</li><li><strong>Hill:</strong> the Westerlands</li><li><strong>Flowers:</strong> the Reach</li><li><strong>Storm:</strong> the Stormlands</li><li><strong>Pyke:</strong> the Iron Islands</li><li><strong>Waters:</strong> the Crownlands, around King's Landing</li></ul><p>The generator's <em>Bastard</em> format gives each region its right surname. Valyrian names get Waters, as a Targaryen bastard born near King's Landing would.</p>
 
-      <section>
-        <h2>How each region sounds</h2>
-        <ul><li><strong>The North:</strong> plain and old: Rickard, Benjen, Lyanna. Northern houses sound cold and hard.</li><li><strong>The Westerlands:</strong> polished and proud, the Lannisters' country: Tywin, Kevan, Cersei.</li><li><strong>The Reach:</strong> courtly and flowery, home of the Tyrells: Mace, Loras, Margaery.</li><li><strong>Dorne:</strong> a different flavour altogether, after the Rhoynar who settled there: Oberyn, Doran, Arianne, Nymeria.</li><li><strong>The Iron Islands:</strong> harsh and salty: Balon, Euron, Asha.</li><li><strong>Valyrian:</strong> the Targaryens' names, full of ae and y: Aegon, Rhaegar, Daenerys, Viserys.</li><li><strong>The Free Folk:</strong> one name, often with an epithet earned beyond the Wall: Tormund Giantsbane.</li></ul>
-      </section>
-    
+                <h2>How each region sounds</h2>
+                <ul><li><strong>The North:</strong> plain and old: Rickard, Benjen, Lyanna. Northern houses sound cold and hard.</li><li><strong>The Westerlands:</strong> polished and proud, the Lannisters' country: Tywin, Kevan, Cersei.</li><li><strong>The Reach:</strong> courtly and flowery, home of the Tyrells: Mace, Loras, Margaery.</li><li><strong>Dorne:</strong> a different flavour altogether, after the Rhoynar who settled there: Oberyn, Doran, Arianne, Nymeria.</li><li><strong>The Iron Islands:</strong> harsh and salty: Balon, Euron, Asha.</li><li><strong>Valyrian:</strong> the Targaryens' names, full of ae and y: Aegon, Rhaegar, Daenerys, Viserys.</li><li><strong>The Free Folk:</strong> one name, often with an epithet earned beyond the Wall: Tormund Giantsbane.</li></ul>
 
-      <section>
-        <h2>Making your character's name</h2>
-        <ul><li><strong>Take a real name and change a letter.</strong> It's Martin's own trick: Walter becomes Walder, Robert stays Robert, Edward becomes Eddard.</li><li><strong>Choose a house with a sigil in mind.</strong> A house name like Frostmark or Saltspear suggests its own banner.</li><li><strong>Decide if they're legitimate.</strong> A bastard's surname follows them everywhere, and changes the story.</li></ul><p>All the first names and houses here are new, chosen so they don't belong to a major character. For their sword, try the <a href="game-of-thrones-sword-name-generator.html">Game of Thrones Sword Name Generator</a>.</p>
-      </section>
-    
+                <h2>Making your character's name</h2>
+                <ul><li><strong>Take a real name and change a letter.</strong> It's Martin's own trick: Walter becomes Walder, Robert stays Robert, Edward becomes Eddard.</li><li><strong>Choose a house with a sigil in mind.</strong> A house name like Frostmark or Saltspear suggests its own banner.</li><li><strong>Decide if they're legitimate.</strong> A bastard's surname follows them everywhere, and changes the story.</li></ul><p>All the first names and houses here are new, chosen so they don't belong to a major character. For their sword, try the <a href="game-of-thrones-sword-name-generator.html">Game of Thrones Sword Name Generator</a>.</p>
+                </div>
             </article>
 
-            
-      <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-          
-            <div class="faq-item">
-              <h3 class="faq-question">What are the bastard surnames in Game of Thrones?</h3>
-              <p class="faq-answer">Each region has one: Snow (the North), Sand (Dorne), Rivers (Riverlands), Stone (Vale), Hill (Westerlands), Flowers (Reach), Storm (Stormlands), Pyke (Iron Islands) and Waters (Crownlands).</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">How does George R. R. Martin come up with names?</h3>
-              <p class="faq-answer">Many are real medieval English names with a letter changed or a spelling twisted: Eddard (Edward), Jaime (James), Petyr (Peter), Walder (Walter).</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Are these names from the books or the show?</h3>
-              <p class="faq-answer">The bastard surnames are; the first names and houses are new, so your character won't belong to a family in the books.</p>
-            </div>
-          
-        </div>
-      </section>
-            
-      <section class="related-section">
-        <h2>Related Name Generators</h2>
-        <div class="related-grid" id="related-generators">
-          <a href="../posts/game-of-thrones-sword-name-generator.html" class="related-card">
-            <h3>⚔️ Game of Thrones Sword Name Generator</h3>
-            <p>Game of Thrones style sword names to suit a great house, from northern wolves to Ironborn reavers, with the blade if you want it: Ashsister, a Valyrian steel longsword.</p>
-          </a>
-          <a href="../posts/gamertag-generator.html" class="related-card">
-            <h3>🎮 Gamertag Generator</h3>
-            <p>Gamertags and usernames for Xbox, PlayStation, Discord, Steam and social media: cool, funny, fantasy or short, with your own word or name mixed in if you like.</p>
-          </a>
-          <a href="../posts/funny-minecraft-sword-name-generator.html" class="related-card">
-            <h3>🗡️ Funny Minecraft Sword Name Generator</h3>
-            <p>Funny Minecraft sword names that fit the anvil&#039;s rename box, from mob puns like Creeper Sweeper to Bladey McBladeface.</p>
-          </a>
-          <a href="../posts/harry-potter-witch-name-generator.html" class="related-card">
-            <h3>⚡ Harry Potter Witch Name Generator</h3>
-            <p>Witch names in the style of the Harry Potter books: everyday British first names or grand pure-blood ones, with a surname to suit Gryffindor, Hufflepuff, Ravenclaw or Slytherin.</p>
-          </a>
-          <a href="../posts/hogwarts-legacy-witch-name-generator.html" class="related-card">
-            <h3>🪄 Hogwarts Legacy Witch Name Generator</h3>
-            <p>Hogwarts Legacy witch names in the game&#039;s 1890s style: Victorian first names with surnames to suit Gryffindor, Hufflepuff, Ravenclaw or Slytherin.</p>
-          </a>
-          <a href="../posts/hogwarts-legacy-wizard-name-generator.html" class="related-card">
-            <h3>🪄 Hogwarts Legacy Wizard Name Generator</h3>
-            <p>Hogwarts Legacy wizard names in the game&#039;s 1890s style: Victorian first names with surnames to suit Gryffindor, Hufflepuff, Ravenclaw or Slytherin.</p>
-          </a>
-        </div>
-      </section>
-            
-      <section class="category-generators-section">
-        <h2>All Pop Culture Name Generators</h2>
-        <div class="category-generators-grid" id="category-generators">
-          <a href="../posts/elden-ring-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">💍</span>
-            <span class="category-generator-title">Elden Ring Name Generator</span>
-          </a>
-          <a href="../posts/star-wars-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Star Wars Name Generator</span>
-          </a>
-          <a href="../posts/baldurs-gate-3-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🎲</span>
-            <span class="category-generator-title">Baldur&#039;s Gate 3 Name Generator</span>
-          </a>
-          <a href="../posts/harry-potter-witch-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚡</span>
-            <span class="category-generator-title">Harry Potter Witch Name Generator</span>
-          </a>
-          <a href="../posts/hogwarts-legacy-witch-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🪄</span>
-            <span class="category-generator-title">Hogwarts Legacy Witch Name Generator</span>
-          </a>
-          <a href="../posts/hogwarts-legacy-wizard-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🪄</span>
-            <span class="category-generator-title">Hogwarts Legacy Wizard Name Generator</span>
-          </a>
-          <a href="../posts/skyrim-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">Skyrim Orc Name Generator</span>
-          </a>
-          <a href="../posts/khajiit-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🐱</span>
-            <span class="category-generator-title">Khajiit Name Generator</span>
-          </a>
-          <a href="../posts/nord-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🪓</span>
-            <span class="category-generator-title">Nord Name Generator</span>
-          </a>
-          <a href="../posts/argonian-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🦎</span>
-            <span class="category-generator-title">Argonian Name Generator</span>
-          </a>
-          <a href="../posts/altmer-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🌞</span>
-            <span class="category-generator-title">Altmer Name Generator</span>
-          </a>
-          <a href="../posts/dunmer-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🌋</span>
-            <span class="category-generator-title">Dunmer Name Generator</span>
-          </a>
-          <a href="../posts/warhammer-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">💀</span>
-            <span class="category-generator-title">Warhammer 40k Name Generator</span>
-          </a>
-          <a href="../posts/warhammer-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">Warhammer Orc Name Generator</span>
-          </a>
-          <a href="../posts/wow-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">World of Warcraft Orc Name Generator</span>
-          </a>
-          <a href="../posts/wow-troll-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🗿</span>
-            <span class="category-generator-title">World of Warcraft Troll Name Generator</span>
-          </a>
-          <a href="../posts/blood-elf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🔥</span>
-            <span class="category-generator-title">Blood Elf Name Generator</span>
-          </a>
-          <a href="../posts/night-elf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🌙</span>
-            <span class="category-generator-title">Night Elf Name Generator</span>
-          </a>
-          <a href="../posts/lotr-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">LOTR Orc Name Generator</span>
-          </a>
-          <a href="../posts/lotr-wizard-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧙</span>
-            <span class="category-generator-title">LOTR Wizard Name Generator</span>
-          </a>
-          <a href="../posts/hobbit-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🏡</span>
-            <span class="category-generator-title">Hobbit Name Generator</span>
-          </a>
-          <a href="../posts/ogryn-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">Ogryn Name Generator</span>
-          </a>
-          <a href="../posts/funny-minecraft-sword-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🗡️</span>
-            <span class="category-generator-title">Funny Minecraft Sword Name Generator</span>
-          </a>
-          <a href="../posts/game-of-thrones-sword-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Game of Thrones Sword Name Generator</span>
-          </a>
-        </div>
-      </section>
-        </main>
+            <section class="section faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>What are the bastard surnames in Game of Thrones?</summary>
+                        <div>Each region has one: Snow (the North), Sand (Dorne), Rivers (Riverlands), Stone (Vale), Hill (Westerlands), Flowers (Reach), Storm (Stormlands), Pyke (Iron Islands) and Waters (Crownlands).</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>How does George R. R. Martin come up with names?</summary>
+                        <div>Many are real medieval English names with a letter changed or a spelling twisted: Eddard (Edward), Jaime (James), Petyr (Peter), Walder (Walter).</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Are these names from the books or the show?</summary>
+                        <div>The bastard surnames are; the first names and houses are new, so your character won't belong to a family in the books.</div>
+                    </details>
+                </div>
+            </section>
 
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+            <section class="section related-section">
+                <h2>Related Name Generators</h2>
+                <div class="genlist" id="related-generators">
+                    <a href="../posts/game-of-thrones-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword-crown"/></svg><div><b>Game of Thrones Sword Name Generator</b><span>Game of Thrones style sword names to suit a great house, from northern wolves to Ironborn reavers, with the blade if you want it: Ashsister, a Valyrian steel longsword.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/gamertag-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-quill"/></svg><div><b>Gamertag Generator</b><span>Gamertags and usernames for Xbox, PlayStation, Discord, Steam and social media: cool, funny, fantasy or short, with your own word or name mixed in if you like.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/funny-minecraft-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Funny Minecraft Sword Name Generator</b><span>Funny Minecraft sword names that fit the anvil&#039;s rename box, from mob puns like Creeper Sweeper to Bladey McBladeface.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/harry-potter-witch-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-broom"/></svg><div><b>Harry Potter Witch Name Generator</b><span>Witch names in the style of the Harry Potter books: everyday British first names or grand pure-blood ones, with a surname to suit Gryffindor, Hufflepuff, Ravenclaw or Slytherin.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/hogwarts-legacy-witch-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-broom"/></svg><div><b>Hogwarts Legacy Witch Name Generator</b><span>Hogwarts Legacy witch names in the game&#039;s 1890s style: Victorian first names with surnames to suit Gryffindor, Hufflepuff, Ravenclaw or Slytherin.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/hogwarts-legacy-wizard-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-wand"/></svg><div><b>Hogwarts Legacy Wizard Name Generator</b><span>Hogwarts Legacy wizard names in the game&#039;s 1890s style: Victorian first names with surnames to suit Gryffindor, Hufflepuff, Ravenclaw or Slytherin.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
+
+            <section class="section category-generators-section">
+                <h2>More Pop Culture Name Generators</h2>
+                <div class="genlist compact" id="category-generators">
+                    <a href="../posts/elden-ring-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-clapper"/></svg><div><b>Elden Ring Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/star-wars-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-planet"/></svg><div><b>Star Wars Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/baldurs-gate-3-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-d20"/></svg><div><b>Baldur&#039;s Gate 3 Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/harry-potter-witch-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-broom"/></svg><div><b>Harry Potter Witch Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/hogwarts-legacy-witch-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-broom"/></svg><div><b>Hogwarts Legacy Witch Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/hogwarts-legacy-wizard-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-wand"/></svg><div><b>Hogwarts Legacy Wizard Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/skyrim-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>Skyrim Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/khajiit-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-paw"/></svg><div><b>Khajiit Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/nord-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-axe"/></svg><div><b>Nord Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/argonian-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-lizard"/></svg><div><b>Argonian Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/altmer-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf"/></svg><div><b>Altmer Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/dunmer-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-clapper"/></svg><div><b>Dunmer Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/warhammer-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Warhammer 40k Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/warhammer-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>Warhammer Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/wow-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>World of Warcraft Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/wow-troll-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-tusks"/></svg><div><b>World of Warcraft Troll Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/blood-elf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf-flame"/></svg><div><b>Blood Elf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/night-elf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf-moon"/></svg><div><b>Night Elf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/lotr-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>LOTR Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/lotr-wizard-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-clapper"/></svg><div><b>LOTR Wizard Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/hobbit-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-clapper"/></svg><div><b>Hobbit Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/ogryn-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-club"/></svg><div><b>Ogryn Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/funny-minecraft-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Funny Minecraft Sword Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/game-of-thrones-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword-crown"/></svg><div><b>Game of Thrones Sword Name Generator</b></div><em aria-hidden="true">→</em></a>
+                </div>
+                <p class="all-link"><a href="../categories/pop_culture-names.html">All Pop Culture name generators</a></p>
+            </section>
+            <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
 
     <script type="application/json" id="generator-config">{"title":"Game of Thrones Name Generator","slug":"game-of-thrones-name-generator","filters":{"region":{"label":"Region","options":["north","west","reach","dorne","iron","vale","river","storm","valyrian","freefolk"],"optionLabels":{"north":"The North","west":"The Westerlands","reach":"The Reach","dorne":"Dorne","iron":"The Iron Islands","vale":"The Vale","river":"The Riverlands","storm":"The Stormlands","valyrian":"Valyrian (Targaryen-style)","freefolk":"Free Folk (beyond the Wall)"}},"gender":{"label":"Gender","options":["any","male","female"],"optionLabels":{"any":"Any"}},"format":{"label":"Name format","options":["noble","bastard","first"],"optionLabels":{"noble":"Noble (with a house)","bastard":"Bastard (regional surname)","first":"First name only"}}},"recipe":"switch","on":"region","cases":{"north":{"recipe":"switch","on":"format","cases":{"noble":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[north.male] [north.houses]","[north.female] [north.houses]"]}},"default":{"recipe":"template","template":"[north.{gender}] [north.houses]"}},"bastard":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[north.male] Snow","[north.female] Snow"]}},"default":{"recipe":"template","template":"[north.{gender}] Snow"}},"first":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[north.male]","[north.female]"]}},"default":{"recipe":"template","template":"[north.{gender}]"}}}},"west":{"recipe":"switch","on":"format","cases":{"noble":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[west.male] [west.houses]","[west.female] [west.houses]"]}},"default":{"recipe":"template","template":"[west.{gender}] [west.houses]"}},"bastard":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[west.male] Hill","[west.female] Hill"]}},"default":{"recipe":"template","template":"[west.{gender}] Hill"}},"first":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[west.male]","[west.female]"]}},"default":{"recipe":"template","template":"[west.{gender}]"}}}},"reach":{"recipe":"switch","on":"format","cases":{"noble":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[reach.male] [reach.houses]","[reach.female] [reach.houses]"]}},"default":{"recipe":"template","template":"[reach.{gender}] [reach.houses]"}},"bastard":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[reach.male] Flowers","[reach.female] Flowers"]}},"default":{"recipe":"template","template":"[reach.{gender}] Flowers"}},"first":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[reach.male]","[reach.female]"]}},"default":{"recipe":"template","template":"[reach.{gender}]"}}}},"dorne":{"recipe":"switch","on":"format","cases":{"noble":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[dorne.male] [dorne.houses]","[dorne.female] [dorne.houses]"]}},"default":{"recipe":"template","template":"[dorne.{gender}] [dorne.houses]"}},"bastard":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[dorne.male] Sand","[dorne.female] Sand"]}},"default":{"recipe":"template","template":"[dorne.{gender}] Sand"}},"first":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[dorne.male]","[dorne.female]"]}},"default":{"recipe":"template","template":"[dorne.{gender}]"}}}},"iron":{"recipe":"switch","on":"format","cases":{"noble":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[iron.male] [iron.houses]","[iron.female] [iron.houses]"]}},"default":{"recipe":"template","template":"[iron.{gender}] [iron.houses]"}},"bastard":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[iron.male] Pyke","[iron.female] Pyke"]}},"default":{"recipe":"template","template":"[iron.{gender}] Pyke"}},"first":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[iron.male]","[iron.female]"]}},"default":{"recipe":"template","template":"[iron.{gender}]"}}}},"vale":{"recipe":"switch","on":"format","cases":{"noble":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[vale.male] [vale.houses]","[vale.female] [vale.houses]"]}},"default":{"recipe":"template","template":"[vale.{gender}] [vale.houses]"}},"bastard":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[vale.male] Stone","[vale.female] Stone"]}},"default":{"recipe":"template","template":"[vale.{gender}] Stone"}},"first":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[vale.male]","[vale.female]"]}},"default":{"recipe":"template","template":"[vale.{gender}]"}}}},"river":{"recipe":"switch","on":"format","cases":{"noble":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[river.male] [river.houses]","[river.female] [river.houses]"]}},"default":{"recipe":"template","template":"[river.{gender}] [river.houses]"}},"bastard":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[river.male] Rivers","[river.female] Rivers"]}},"default":{"recipe":"template","template":"[river.{gender}] Rivers"}},"first":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[river.male]","[river.female]"]}},"default":{"recipe":"template","template":"[river.{gender}]"}}}},"storm":{"recipe":"switch","on":"format","cases":{"noble":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[storm.male] [storm.houses]","[storm.female] [storm.houses]"]}},"default":{"recipe":"template","template":"[storm.{gender}] [storm.houses]"}},"bastard":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[storm.male] Storm","[storm.female] Storm"]}},"default":{"recipe":"template","template":"[storm.{gender}] Storm"}},"first":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[storm.male]","[storm.female]"]}},"default":{"recipe":"template","template":"[storm.{gender}]"}}}},"valyrian":{"recipe":"switch","on":"format","cases":{"noble":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[valyrian.male] [valyrian.houses]","[valyrian.female] [valyrian.houses]"]}},"default":{"recipe":"template","template":"[valyrian.{gender}] [valyrian.houses]"}},"bastard":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[valyrian.male] Waters","[valyrian.female] Waters"]}},"default":{"recipe":"template","template":"[valyrian.{gender}] Waters"}},"first":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[valyrian.male]","[valyrian.female]"]}},"default":{"recipe":"template","template":"[valyrian.{gender}]"}}}},"freefolk":{"recipe":"switch","on":"format","cases":{"noble":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[freefolk.male] [freefolk.epithets]","[freefolk.female] [freefolk.epithets]"]}},"default":{"recipe":"template","template":"[freefolk.{gender}] [freefolk.epithets]"}},"bastard":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[freefolk.male] [freefolk.epithets]","[freefolk.female] [freefolk.epithets]"]}},"default":{"recipe":"template","template":"[freefolk.{gender}] [freefolk.epithets]"}},"first":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[freefolk.male]","[freefolk.female]"]}},"default":{"recipe":"template","template":"[freefolk.{gender}]"}}}}},"data":{"north":{"male":["Duncard","Kyle","Brandel","Halbert","Brann","Dorran","Eddrick","Gavin","Hallis","Kennet","Ormund","Rorik","Tobin","Ulric","Wilbert"],"female":["Cerise","Danyra","Edda","Gerta","Brynne","Lyanne","Torra","Aleyne","Bryna","Cella","Ellyn","Gwenna","Hesta","Lyssa","Maryn","Rhonwen","Sela","Tarla","Ysolde"],"houses":["Ashwood","Blackpool","Frostmark","Greystark","Holtwood","Ironhill","Northmoor","Rillwater","Stonebarrow","Thorne","Wolfsden","Coldwell"]},"west":{"male":["Adric","Gerold","Rodric","Dafyd","Ferrel","Harlen","Joffard","Tygar","Aubrey","Darrick","Garrick","Hallard","Lucion","Marlon","Reynard","Wardell"],"female":["Cerelle","Jeyna","Lyra","Mellara","Cyrenna","Darlessa","Gemma","Lanna","Marla","Myrielle","Sarelle","Tyanne","Alyssa","Brella","Celyne","Dorothea","Ella","Gwenys","Maris","Odelia","Rhiannon","Teora","Vessa"],"houses":["Goldhollow","Brightcliff","Crakefell","Redwater","Sarsbury","Westerholt","Goldbrook","Kingsgold"]},"reach":{"male":["Hobert","Arlan","Bennard","Desmond","Theo","Aldric","Benedict","Corwyn","Dunstan","Elwood","Florian","Gawen","Humfrey","Ivor","Lorimer","Merrick","Osmund","Percival"],"female":["Rosamund","Bethany","Elyse","Merry","Rowena","Lia","Bryony","Adela","Blanche","Celandine","Delphine","Evaline","Fiora","Gisela","Isolde","Maribel","Odette","Primrose","Sabine"],"houses":["Ashford","Bramblewood","Fairmarket","Greenhedge","Highbloom","Oldflowers","Rosemoor","Sunfield","Thornfield","Willowmere","Applewood"]},"dorne":{"male":["Gerold","Perros","Sylvo","Valen","Ahmos","Bashar","Cyran","Dameon","Estevan","Faro","Idris","Javan","Kemal","Lucan","Marek","Nasir","Rafiq","Soren"],"female":["Allyria","Delonne","Lyessa","Zahra","Amaya","Delia","Esha","Farah","Inara","Jalila","Kamira","Leyla","Mirela","Nadira","Rasha","Selina","Talia"],"houses":["Sandshadow","Saltspear","Redsand","Dustwell","Brightwater","Scorpionsand","Goldspring","Palehill","Salthaven"]},"iron":{"male":["Alton","Asgar","Brandr","Drask","Erik","Gunthor","Hrogar","Kjell","Orm","Rolf","Stygg","Ulf","Vigar","Wulf"],"female":["Gylora","Ragna","Hagra","Myla","Vala","Yrna","Sigrid","Thora","Alyra","Brenna","Kerra","Gunna","Agna","Bodil","Eira","Freyda","Groa","Hilde","Inga","Kara","Lif","Sif","Thyra","Una"],"houses":["Stonehouse","Saltwater","Greyiron","Wavecrest","Ironwood"]},"vale":{"male":["Donnel","Elbert","Ronnel","Hugh","Willam","Alder","Brennan","Cedric","Edwin","Gareth","Hugo","Ivo","Malcolm","Tristan","Ulfric"],"female":["Anya","Bethany","Elys","Ermesande","Jonquil","Mellara","Sabitha","Wyna","Aveline","Briony","Cecily","Dulcie","Elspeth","Gwendolyn","Imogen","Linnet","Mirabel","Rosalind","Sybil"],"houses":["Stonehelm","Moonbrook","Falconwell","Highcrag","Snowcrest","Skyhaven","Graybarrow","Waynwell"]},"river":{"male":["Desmond","Gerold","Aldous","Barret","Corin","Ellis","Fergus","Godwin","Hamond","Ivon","Mattias","Nolan","Osgood","Piers"],"female":["Bethany","Cerenna","Alyce","Arwyn","Danelle","Marianne","Morya","Sallei","Tyta","Agnes","Briar","Clarice","Della","Edith","Florence","Harriet","Ida","Lorna","Mabel","Nell","Rhona","Tamsin"],"houses":["Brackenford","Darrywell","Swiftwater","Tullwood","Blackmont","Greenwater","Oakenford","Redford","Stillbrook","Willowford"]},"storm":{"male":["Arlan","Cassor","Durran","Elwood","Lomas","Aldwin","Bertram","Conrad","Durstan","Emeric","Fulke","Hadric","Jarvis","Morgan","Rufus","Simeon"],"female":["Lyonne","Bethany","Edyth","Jocelyn","Lyria","Marya","Nella","Renna","Tanselle","Adelind","Bryony","Eda","Gwen","Hester","Ivy","Juliana","Lettice","Maud","Petra","Rowena"],"houses":["Stormwatch","Thundercliff","Raingate","Greenstone","Highstorm","Blackhaven","Crowsnest","Mistwood","Rainwood","Stonedance","Tempestfall","Windmere"]},"valyrian":{"male":["Rhaenar","Vaelor","Daemion","Valaerys","Jaehaenor","Rhaelor","Daerion","Haelor","Rhaenon","Aelyx","Daemar","Laemon","Aelor","Baelyx","Daemaryn","Haelon","Jaerys","Rhaelyx","Vaenor","Aeryx","Laenon"],"female":["Aelora","Daenyra","Haelyx","Laerys","Maelora","Saelyra","Vaelinor","Visera","Aelyna","Jaelora","Aerya","Baelora","Haenys","Laelora","Naerya","Saenys","Vaerys","Zhaela"],"houses":["Belaerys","Maelaris","Vaelyr","Aerax","Celtaryon","Daenaros","Qoraelys","Velmaron"]},"freefolk":{"male":["Tormar","Haldis","Styrmund","Varn","Dyrk","Brog","Hrolf","Kolvar","Ulfgar","Rask","Hakon","Grigg","Torbjorn","Ketter","Fenn","Alfyn","Bjorn","Grimm","Halvar","Sten","Torvar","Uthor"],"female":["Frenya","Hildra","Ysa","Rorga","Thessa","Vala","Brynna","Gilla","Ostra","Wenna","Sigga","Hala","Dalwyn","Kerra","Tova","Elka","Frida","Gerda","Sigrun","Thora"],"epithets":["Thunderfist","the Bold","Ice-Eye","Bearhide","Wolfwalker","Frostfinger","Longspear","Crow-Killer","Skinchanger","Snowbeard","the Silent","Redaxe","Hornblower"]}}}</script>
     <script src="../lib/recipe-engine.js"></script>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

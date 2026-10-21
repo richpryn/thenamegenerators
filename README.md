@@ -21,17 +21,22 @@ project/
 ├── content/                        # ← everything you edit
 │   ├── categories.json             # Categories: menu order, titles, intros, featured picks, generators
 │   ├── homepage.json               # The homepage's first "popular" picks, in order
+│   ├── illustrations.json          # Which drawing each generator and category uses
 │   └── generators/
 │       ├── elf.json                # One file per generator: page text, filters, recipe, names
 │       └── ...
 ├── lib/
 │   ├── recipe-engine.js            # Builds names by following a generator's recipe
-│   └── page.js                     # Menu + generator widget used by every page
+│   ├── page.js                     # Menu + generator widget used by every page
+│   ├── outline.js                  # Draws the hand-drawn outlines
+│   └── illustrations.js            # The drawing library
 ├── scripts/
 │   ├── build-pages.js              # Builds all pages from content/
+│   ├── layout.js                   # Header, footer, sprite and drawings for every page
 │   ├── validate-data.js            # Checks content/ without building
 │   └── content.js                  # Loading + checks shared by both
-├── styles/                         # main.css, blog.css
+├── styles/site.css                 # The whole design ("Grown Up B"; see docs/redesign/)
+├── fonts/                          # Self-hosted fonts (SIL Open Font License)
 ├── docs/SEO.md                     # SEO checklist: done, to do, and what to watch
 ├── docs/CONTENT.md                 # How generator pages are written: voice, structure, accuracy
 ├── index.html                      # Homepage (hand-written; marked sections filled by the build)
@@ -151,16 +156,20 @@ Dropdowns run top to bottom: options that have no names for the choices above th
 
 Built in `lib/page.js`, on every generator page and the homepage:
 
-- **Click a name to copy it** (generated names and the example names).
-- **♥ a name to save it to the shortlist**, which shows under the results. It's kept in the browser (`localStorage`) and shared by every generator, with Copy all, Clear, and a link back to the generator each name came from.
-- **How many**: 8, 16 or 32 names on generator pages; the choice is remembered.
-- **Shareable settings**: after generating, the address bar holds the choices (`?gender=female&origin=tolkien&n=16`). Opening that link sets the same choices and shows names straight away. Canonical tags point at the plain URL, so these don't count as separate pages.
+- **Every press gives 8 names.** "Show 8 more" adds 8 the visitor hasn't seen yet; when the choices run out it says "That's all N names for these choices."
+- **Options:** short lists become big buttons (an example in brackets in a label, like "Harsh (Vharuzul)", becomes a handwritten "e.g." hint); longer lists stay as dropdowns.
+- **Tap a name to copy it** (generated names and the example names).
+- **Tap the bookmark to save a name to the shortlist**, which shows under the results. It's kept in the browser (`localStorage`) and shared by every generator, with Copy, Clear (tap twice), and a link back to the generator each name came from.
+- **Shareable settings**: after generating, the address bar holds the choices (`?gender=female&origin=tolkien`). Opening that link sets the same choices. Old links with `n=16` still work; the number is ignored. Canonical tags point at the plain URL, so these don't count as separate pages.
 
 ## 🎨 Customization
 
-- **Styling**: `styles/main.css` (global), `styles/blog.css` (article pages)
+- **Styling**: `styles/site.css`, built on one spacing scale (see `docs/redesign/SPACING.md`)
+- **Header, footer and drawings shared by every page**: `scripts/layout.js`
+- **Hand-drawn outlines** (the wobbly boxes and black tap shadows): `lib/outline.js`, which draws them on any element with class `hd`
+- **Drawings**: the library is `lib/illustrations.js`; which drawing each generator and category uses is `content/illustrations.json`. A generator whose drawing isn't made yet shows its category's drawing. New generators: add an entry.
 - **Page templates**: `scripts/build-pages.js`
-- **Homepage, All Generators and About**: edit the HTML directly, but leave the `<!-- BUILD:... -->` sections alone, since the build rewrites them
+- **Homepage, All Generators and About**: edit the HTML directly, but leave the `<!-- BUILD:... -->` sections alone (sprite, header, footer and the lists), since the build rewrites them
 
 ## 📦 Requirements
 

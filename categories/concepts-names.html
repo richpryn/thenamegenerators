@@ -86,92 +86,98 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-lightbulb" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 C32 5 37 11 37 17 C37 24 31 26 31 33 L17 33 C17 26 11 24 11 17 C11 11 16 5 24 5 Z" fill="#efc84a"/><path d="M18 37 h12 M19 41 h10"/><path d="M21 33 V22 l3 3 l3 -3 V33" stroke-width="1.3"/></g></symbol>
+      <symbol id="m-pencil" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 38 L34 14 L40 20 L16 44 L7 46 Z" fill="#fffcf4"/><path d="M30 18 L36 24 M10 38 L16 44" stroke-width="1.3"/><path d="M34 14 L38 10 L44 16 L40 20 Z" fill="#efc84a"/></g></symbol>
+      <symbol id="m-tag" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6 H40 V22 L22 40 L8 26 Z" fill="#fffcf4"/><circle cx="34" cy="12" r="2.5"/><path d="M34 12 C38 6 44 6 44 10" stroke-width="1.3"/><path d="M14 26 L22 34" stroke="#efc84a" stroke-width="4"/></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <span aria-current="page">Blogs &amp; Brands</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">Blog</span> &amp; Brand Name Generators</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-lightbulb"/></svg>
+            </div>
+            <p class="lede">Names for blogs and brands, and how to check they&#039;re free to use.</p>
+
+            <div class="section intro">
+                <p>A blog or brand name has to work as a web address, a social handle and a logo, so short and distinctive beats clever. The <a href="../posts/blog-name-generator.html">Blog Name Generator</a> works by topic, from fitness to finance; the <a href="../posts/brand-name-generator.html">Brand Name Generator</a> gives you single brandable words in 18 styles, from tech to heritage.</p><p>Whichever you use, check the domain and handles before you fall for a name. The <a href="../posts/business-name-generator.html">Business Name Generator</a> explains how to check company registers and trade marks too.</p>
+            </div>
+
+            <section class="section">
+                <h2>Where to start</h2>
+                <div class="featured">
+                    <a href="../posts/blog-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-pencil"/></svg><b>Blog Name Generator</b><span>Names for 20 blog topics, from beauty and fitness to finance and gaming.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+                    <a href="../posts/brand-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-tag"/></svg><b>Brand Name Generator</b><span>Single brandable words in 18 styles, like tech, luxury and nature, or a mix of them all.</span><span class="open hd" aria-hidden="true">Open →</span></a>
                 </div>
-            </div>
-        </div>
-    </nav>
+            </section>
 
-    <div class="container">
-        <header class="hero">
-            <h1>💭 Blog and Brand Name Generators</h1>
-            <p>Names for blogs and brands, and how to check they&#039;re free to use.</p>
-            <p class="generator-count">3 generators available</p>
-        </header>
-
-        <main>
-
-        <section class="blog-content category-intro">
-            <p>A blog or brand name has to work as a web address, a social handle and a logo, so short and distinctive beats clever. The <a href="../posts/blog-name-generator.html">Blog Name Generator</a> works by topic, from fitness to finance; the <a href="../posts/brand-name-generator.html">Brand Name Generator</a> gives you single brandable words in 18 styles, from tech to heritage.</p><p>Whichever you use, check the domain and handles before you fall for a name. The <a href="../posts/business-name-generator.html">Business Name Generator</a> explains how to check company registers and trade marks too.</p>
-            <h2>Where to start</h2>
-                <ul class="featured-generators">
-                    <li><a href="../posts/blog-name-generator.html">📝 Blog Name Generator</a>: names for 20 blog topics, from beauty and fitness to finance and gaming.</li>
-                    <li><a href="../posts/brand-name-generator.html">🏷️ Brand Name Generator</a>: single brandable words in 18 styles, like tech, luxury and nature, or a mix of them all.</li>
-                </ul>
-        </section>
-            <h2 class="category-all-heading">All 3 Blogs &amp; Brands generators</h2>
-            <div class="generators-grid">
-                
-    <a href="../posts/blog-name-generator.html" class="generator-card">
-      <h3>📝 Blog Name Generator</h3>
-      <p>Blog name ideas by topic, from food and travel to books, gardening and money: Crumbs &amp; Butter, Notes from the Potting Shed, One More Chapter.</p>
-    </a>
-  
-    
-    <a href="../posts/brand-name-generator.html" class="generator-card">
-      <h3>🏷️ Brand Name Generator</h3>
-      <p>Brand and product names sorted by industry and feel, from tech and luxury to food, fashion and outdoor, as one word or with a product word (Juniper Botanicals).</p>
-    </a>
-  
-    
-    <a href="../posts/youtube-channel-name-generator.html" class="generator-card">
-      <h3>▶️ YouTube Channel Name Generator</h3>
-      <p>YouTube channel names by topic (gaming, cooking, tech, travel, music) in the shapes that work on the platform, plus how to check the handle is free.</p>
-    </a>
-  
-            </div>
+            <section class="section">
+                <h2>All 3 Blogs &amp; Brands generators</h2>
+                <div class="genlist">
+                    <a href="../posts/blog-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-pencil"/></svg><div><b>Blog Name Generator</b><span>Blog name ideas by topic, from food and travel to books, gardening and money: Crumbs &amp; Butter, Notes from the Potting Shed, One More Chapter.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/brand-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-tag"/></svg><div><b>Brand Name Generator</b><span>Brand and product names sorted by industry and feel, from tech and luxury to food, fashion and outdoor, as one word or with a product word (Juniper Botanicals).</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/youtube-channel-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-lightbulb"/></svg><div><b>YouTube Channel Name Generator</b><span>YouTube channel names by topic (gaming, cooking, tech, travel, music) in the shapes that work on the platform, plus how to check the handle is free.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
         </main>
-
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
 
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

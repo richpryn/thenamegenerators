@@ -305,270 +305,252 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
-                </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-banner" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 45 V5"/><path d="M12 8 H38 L32 17 L38 26 H12" fill="#fffcf4"/><path d="M19 13 l4 4 l4 -4 M23 17 v4" stroke-width="1.4"/><circle cx="12" cy="4.5" r="2" fill="#1e1c18"/><path d="M14 22 h15" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-tag" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6 H40 V22 L22 40 L8 26 Z" fill="#fffcf4"/><circle cx="34" cy="12" r="2.5"/><path d="M34 12 C38 6 44 6 44 10" stroke-width="1.3"/><path d="M14 26 L22 34" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-lightbulb" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 C32 5 37 11 37 17 C37 24 31 26 31 33 L17 33 C17 26 11 24 11 17 C11 11 16 5 24 5 Z" fill="#efc84a"/><path d="M18 37 h12 M19 41 h10"/><path d="M21 33 V22 l3 3 l3 -3 V33" stroke-width="1.3"/></g></symbol>
+      <symbol id="m-round-shield" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18" fill="#fffcf4"/><circle cx="24" cy="24" r="5" fill="#efc84a"/><path d="M24 6 V19 M24 29 V42 M6 24 H19 M29 24 H42" stroke-width="1.3"/></g></symbol>
+      <symbol id="m-planet" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="25" r="11" fill="#fffcf4"/><ellipse cx="24" cy="25" rx="20" ry="6" transform="rotate(-20 24 25)"/><path d="M17 20 C20 17 24 16 27 17" stroke="#efc84a" stroke-width="3"/><path d="M40 5 l1 3 l3 1 l-3 1 l-1 3 l-1 -3 l-3 -1 l3 -1 z" fill="#1e1c18" stroke-width="1"/></g></symbol>
+      <symbol id="m-dragon" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 35 C7 25 15 17 26 17 L37 19 L45 25 L37 27 L42 31 L33 31 C29 35 23 39 17 41 C11 43 6 41 5 35 Z" fill="#fffcf4"/><path d="M19 19 L8 11 L21 15 M24 17 L19 6 L28 16" stroke-width="1.6"/><circle cx="31" cy="22" r="1.5" fill="#1e1c18"/><path d="M41 23 l1 0" stroke-width="2"/><path d="M11 37 C17 36 23 34 28 31" stroke="#efc84a" stroke-width="3"/></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../categories/organizations-names.html">Organisations</a> / <span aria-current="page">Company Name Generator</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">Company</span> Name Generator</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-banner"/></svg>
             </div>
-        </div>
-    </nav>
+            <p class="lede">Startup-style company names: invented words, blends, -ify endings and two-part names.</p>
 
-    <div class="container">
-        <header class="blog-hero">
-            <h1>🏢 Company Name Generator</h1>
-            <p class="tagline">Startup-style company names: invented words, blends, -ify endings and two-part names.</p>
-            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
-        </header>
-
-        <main>
-            <section class="embedded-generator">
-                <div class="generator-card">
-                    <h2>Generate Company Names</h2>
-                    <p class="generator-description">Startup-style company names in five styles: invented words, blends, -ify and -ly endings, real words and two-part names. Plus how to check a name is free.</p>
-                    
-                    <div class="simple-generator">
-                        <div class="filters">
-          <div class="filter-group">
-            <label for="filter-category">Name Style:</label>
-            <select id="filter-category" name="category" data-filter="category">
-              <option value="any">Any style</option>
-              <option value="single_word">Real words (Anchor, Helix)</option>
-              <option value="portmanteau">Blends and coined words (Canvora, Brandify)</option>
-              <option value="trendy_suffix">Word + ending (CloudForge, DataLoop)</option>
-              <option value="invented">Invented words (Aevora, Ajorix)</option>
-              <option value="combinations">Two words (Bright Path)</option>
-            </select>
+            <section class="sheet hd simple-generator" id="generator" aria-label="Company Name Generator">
+                <div class="gen-one">
+          <div class="group">
+            <label class="label" for="filter-category">Name Style</label>
+            <div class="ctl sel hd">
+              <select id="filter-category" name="category" data-filter="category">
+                <option value="any">Any style</option>
+                <option value="single_word">Real words (Anchor, Helix)</option>
+                <option value="portmanteau">Blends and coined words (Canvora, Brandify)</option>
+                <option value="trendy_suffix">Word + ending (CloudForge, DataLoop)</option>
+                <option value="invented">Invented words (Aevora, Ajorix)</option>
+                <option value="combinations">Two words (Bright Path)</option>
+              </select>
+            </div>
           </div></div>
-                        <div class="generator-controls">
-                            <div class="filter-group count-group">
-                                <label for="name-count">How many:</label>
-                                <select id="name-count">
-                                    <option value="8" selected>8 names</option>
-                                    <option value="16">16 names</option>
-                                    <option value="32">32 names</option>
-                                </select>
-                            </div>
-                            <button id="generate-btn" class="generate-button">Generate Names</button>
-                        </div>
-                        <div class="results-area" id="results">
-                            <p class="results-placeholder">Click "Generate Names" to see results</p>
-                        </div>
-                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
-                        <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="false">
+                    <p class="results-empty">Press Generate Names for 8 company names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
                     </div>
-                    
-                    <div class="cta-box">
-                        <p><strong>Need more options?</strong></p>
-                        <a href="../index.html" class="cta-button">Try the Ultimate Random Name Generator →</a>
-                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
+
+            <section class="section example-names">
+                <h2>Example Company Names</h2>
+                <p class="sub">A few names this generator came up with. Tap one to copy it, or press "Generate Names" above for more.</p>
+                <div class="ex">
+                <div class="exbox hd">
+                    <h3>Any style</h3>
+                    <ul>
+                        <li>Cove</li>
+                        <li>Scenic Path</li>
+                        <li>Constructa</li>
+                        <li>Marker</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Real words</h3>
+                    <ul>
+                        <li>Sequence</li>
+                        <li>Pendulum</li>
+                        <li>Motion</li>
+                        <li>Palette</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Blends and coined words</h3>
+                    <ul>
+                        <li>Detectify</li>
+                        <li>Exchangix</li>
+                        <li>Leafio</li>
+                        <li>Growthly</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Word + ending</h3>
+                    <ul>
+                        <li>MapleLoop</li>
+                        <li>SummitGrid</li>
+                        <li>SparkShift</li>
+                        <li>PixelLabs</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Invented words</h3>
+                    <ul>
+                        <li>Karex</li>
+                        <li>Aprix</li>
+                        <li>Ironex</li>
+                        <li>Dalix</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Two words</h3>
+                    <ul>
+                        <li>Negative Press</li>
+                        <li>High Flyer</li>
+                        <li>Copper Wire</li>
+                        <li>Artificial Light</li>
+                    </ul>
+                </div>
                 </div>
             </section>
 
-            <section class="example-names">
-                <h2>Example Company Names</h2>
-                <p>A few names this generator came up with. Press "Generate Names" above for more.</p>
-                <h3>Any style</h3>
-                <ul class="name-results">
-                    <li>Cove</li>
-                    <li>Scenic Path</li>
-                    <li>Constructa</li>
-                    <li>Marker</li>
-                </ul>
-                <h3>Real words</h3>
-                <ul class="name-results">
-                    <li>Sequence</li>
-                    <li>Pendulum</li>
-                    <li>Motion</li>
-                    <li>Palette</li>
-                </ul>
-                <h3>Blends and coined words</h3>
-                <ul class="name-results">
-                    <li>Detectify</li>
-                    <li>Exchangix</li>
-                    <li>Leafio</li>
-                    <li>Growthly</li>
-                </ul>
-                <h3>Word + ending</h3>
-                <ul class="name-results">
-                    <li>MapleLoop</li>
-                    <li>SummitGrid</li>
-                    <li>SparkShift</li>
-                    <li>PixelLabs</li>
-                </ul>
-                <h3>Invented words</h3>
-                <ul class="name-results">
-                    <li>Karex</li>
-                    <li>Aprix</li>
-                    <li>Ironex</li>
-                    <li>Dalix</li>
-                </ul>
-                <h3>Two words</h3>
-                <ul class="name-results">
-                    <li>Negative Press</li>
-                    <li>High Flyer</li>
-                    <li>Copper Wire</li>
-                    <li>Artificial Light</li>
-                </ul>
-            </section>
-
-            <section class="blog-content how-it-works">
+            <section class="section how-it-works">
                 <h2>How the Company Name Generator Works</h2>
+                <div class="howto hd">
                 <p>It works from 1,255 names and name parts, which combine into over 1,500 possible results.</p>
                 <p>The choices:</p>
                 <ul><li><strong>Name Style:</strong><ul><li>Any style, e.g. <em>NovaStack</em></li><li>Real words, e.g. <em>Pace</em></li><li>Blends and coined words, e.g. <em>Motivatify</em></li><li>Word + ending, e.g. <em>HarborHub</em></li><li>Invented words, e.g. <em>Caldera</em></li><li>Two words, e.g. <em>Real Deal</em></li></ul></li></ul>
-                <p>Each press gives you 8, 16 or 32 names (choose under "How many"), and you won't see the same one twice until you've been through everything for the choices you've made.</p>
+                <p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet, until the names for the choices you've made run out.</p>
+                </div>
             </section>
 
-            <article class="blog-content" itemscope itemtype="https://schema.org/Article">
+            <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="Company Name Generator">
                 <meta itemprop="description" content="Startup-style company names in five styles: invented words, blends, -ify and -ly endings, real words and two-part names. Plus how to check a name is free.">
-                <section itemprop="articleBody">
-                    <p>Most new tech and startup names follow a handful of patterns: an invented word (Kodak), a blend of two words (Pinterest), a trendy ending (Shopify, Calendly) or a plain word used boldly (Slack). This <strong>company name generator</strong> makes names in each of those styles, 1,255 in all, so you can see which shape suits your company before you check it is free to register.</p>
-                </section>
+                <div itemprop="articleBody">
+                <p class="big">Most new tech and startup names follow a handful of patterns: an invented word (Kodak), a blend of two words (Pinterest), a trendy ending (Shopify, Calendly) or a plain word used boldly (Slack). This <strong>company name generator</strong> makes names in each of those styles, 1,255 in all, so you can see which shape suits your company before you check it is free to register.</p>
                 
-      <section>
-        <h2>The five shapes of a startup name</h2>
-        <ul><li><strong>Invented words</strong> mean nothing until you make them mean something. George Eastman made up <em>Kodak</em> because he liked the letter K: strong and hard to mistake.</li><li><strong>Blends</strong> join two words into one: <em>Pinterest</em> (pin + interest), <em>Microsoft</em> (microcomputer + software).</li><li><strong>Coined endings</strong> turn a word into a name: <em>Shopify</em>, <em>Calendly</em>. The -ify, -ly and -io endings say "tech company" straight away.</li><li><strong>Word + ending</strong> pairs a plain word with a building-block word: <em>GitHub</em>, <em>HubSpot</em>. Easy to say, and it hints at what you do.</li><li><strong>Real words</strong> used boldly: <em>Slack</em>, <em>Apple</em>, <em>Amazon</em>. Memorable, but the hardest to get as a domain or trade mark.</li></ul>
-      </section>
-    
+                <h2>The five shapes of a startup name</h2>
+                <ul><li><strong>Invented words</strong> mean nothing until you make them mean something. George Eastman made up <em>Kodak</em> because he liked the letter K: strong and hard to mistake.</li><li><strong>Blends</strong> join two words into one: <em>Pinterest</em> (pin + interest), <em>Microsoft</em> (microcomputer + software).</li><li><strong>Coined endings</strong> turn a word into a name: <em>Shopify</em>, <em>Calendly</em>. The -ify, -ly and -io endings say "tech company" straight away.</li><li><strong>Word + ending</strong> pairs a plain word with a building-block word: <em>GitHub</em>, <em>HubSpot</em>. Easy to say, and it hints at what you do.</li><li><strong>Real words</strong> used boldly: <em>Slack</em>, <em>Apple</em>, <em>Amazon</em>. Memorable, but the hardest to get as a domain or trade mark.</li></ul>
 
-      <section>
-        <h2>Choosing a style</h2>
-        <p>Each shape trades memorability against availability:</p><ul><li><strong>Invented words</strong> are the easiest to register and to get a domain for, and the hardest for people to remember at first.</li><li><strong>Real words and two-word names</strong> stick in the mind, but someone has almost always registered them somewhere, so check carefully.</li><li><strong>Blends, coined endings and word + ending</strong> sit in the middle: familiar parts, new whole.</li><li><strong>Trend check</strong>: -ify and -ly names date to particular waves of startups. That can be a plus (it signals "software") or a minus (it can look dated in ten years).</li></ul>
-      </section>
-    
+                <h2>Choosing a style</h2>
+                <p>Each shape trades memorability against availability:</p><ul><li><strong>Invented words</strong> are the easiest to register and to get a domain for, and the hardest for people to remember at first.</li><li><strong>Real words and two-word names</strong> stick in the mind, but someone has almost always registered them somewhere, so check carefully.</li><li><strong>Blends, coined endings and word + ending</strong> sit in the middle: familiar parts, new whole.</li><li><strong>Trend check</strong>: -ify and -ly names date to particular waves of startups. That can be a plus (it signals "software") or a minus (it can look dated in ten years).</li></ul>
 
-      <section>
-        <h2>Say it, spell it, search it</h2>
-        <ul><li><strong>Say it</strong> to someone and ask them to type it. If they can't spell it from hearing it, investors, customers and journalists won't either.</li><li><strong>Spell it</strong> as a domain: is the .com (or your country's domain) free, or a sensible variation?</li><li><strong>Search it</strong>: look it up on the company register (Companies House in the UK, your state's register in the US) and the trade mark databases (UK IPO, USPTO, EUIPO) for your field. The <a href="business-name-generator.html">Business Name Generator</a> page goes through these checks step by step.</li></ul><p>None of this is legal advice; if the name will carry real investment, a trade mark attorney can check it properly.</p>
-      </section>
-    
+                <h2>Say it, spell it, search it</h2>
+                <ul><li><strong>Say it</strong> to someone and ask them to type it. If they can't spell it from hearing it, investors, customers and journalists won't either.</li><li><strong>Spell it</strong> as a domain: is the .com (or your country's domain) free, or a sensible variation?</li><li><strong>Search it</strong>: look it up on the company register (Companies House in the UK, your state's register in the US) and the trade mark databases (UK IPO, USPTO, EUIPO) for your field. The <a href="business-name-generator.html">Business Name Generator</a> page goes through these checks step by step.</li></ul><p>None of this is legal advice; if the name will carry real investment, a trade mark attorney can check it properly.</p>
+                </div>
             </article>
 
-            
-      <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-          
-            <div class="faq-item">
-              <h3 class="faq-question">What's the difference between the name styles?</h3>
-              <p class="faq-answer">Invented words (Ajorix) are new; blends and coined words (Canvora, Brandify) build on familiar parts; word + ending (CloudForge) joins a plain word to a building-block word; real words (Anchor) and two-word names (Bright Path) use everyday language.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Which style is easiest to trade mark?</h3>
-              <p class="faq-answer">Usually invented words, because they mean nothing in your industry. Everyday words that describe what you do are the hardest to protect; everyday words with no link to your product (like Apple for computers) sit in between.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Can I use these names for my company?</h3>
-              <p class="faq-answer">Yes, they're free to use and you don't need to credit the site. Check the company register, trade marks and domains before you commit.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Business, company or brand name generator: which should I use?</h3>
-              <p class="faq-answer">This one makes startup-style names: invented words, blends and -ify/-ly endings. The <a href="business-name-generator.html">Business Name Generator</a> gives you strong single words to build a shop, trade or service name around, and the <a href="brand-name-generator.html">Brand Name Generator</a> suggests names for a product or range, sorted by industry and feel. Whichever you use, check the name is free before you commit to it.</p>
-            </div>
-          
-        </div>
-      </section>
-            
-      <section class="related-section">
-        <h2>Related Name Generators</h2>
-        <div class="related-grid" id="related-generators">
-          <a href="../posts/brand-name-generator.html" class="related-card">
-            <h3>🏷️ Brand Name Generator</h3>
-            <p>Brand and product names sorted by industry and feel, from tech and luxury to food, fashion and outdoor, as one word or with a product word (Juniper Botanicals).</p>
-          </a>
-          <a href="../posts/business-name-generator.html" class="related-card">
-            <h3>💼 Business Name Generator</h3>
-            <p>Strong one-word starting points for a business name, in 10 themes from aspirational to tech, plus how to turn one into a name and check it&#039;s free to use.</p>
-          </a>
-          <a href="../posts/clan-name-generator.html" class="related-card">
-            <h3>🛡️ Clan Name Generator</h3>
-            <p>Clan names for fantasy families and gaming teams: Highland-style clans with a motto or war cry, tribes like the Howling Elk, and gaming clans with a tag.</p>
-          </a>
-          <a href="../posts/guild-name-generator.html" class="related-card">
-            <h3>⚜️ Guild Name Generator</h3>
-            <p>Guild names for adventurers, thieves, mages, merchants and craftspeople: the Gilded Lanterns, the Velvet Hand, the Worshipful Company of Clockmakers.</p>
-          </a>
-          <a href="../posts/alien-name-generator.html" class="related-card">
-            <h3>👽 Alien Name Generator</h3>
-            <p>Alien names that sound like they come from a real species: clicking insectoids, liquid-voiced aquatics, beings named like Hums-at-Dawn, and galactic nobility.</p>
-          </a>
-          <a href="../posts/angel-name-generator.html" class="related-card">
-            <h3>😇 Angel Name Generator</h3>
-            <p>Angel names from scripture and tradition with their Hebrew meanings, or new ones in the same style, with a choir, a domain or an epithet.</p>
-          </a>
-        </div>
-      </section>
-            
-      <section class="category-generators-section">
-        <h2>All Organisations Name Generators</h2>
-        <div class="category-generators-grid" id="category-generators">
-          <a href="../posts/business-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">💼</span>
-            <span class="category-generator-title">Business Name Generator</span>
-          </a>
-          <a href="../posts/clan-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🛡️</span>
-            <span class="category-generator-title">Clan Name Generator</span>
-          </a>
-          <a href="../posts/guild-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚜️</span>
-            <span class="category-generator-title">Guild Name Generator</span>
-          </a>
-          <a href="../posts/brand-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🏷️</span>
-            <span class="category-generator-title">Brand Name Generator</span>
-          </a>
-        </div>
-      </section>
-        </main>
+            <section class="section faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>What's the difference between the name styles?</summary>
+                        <div>Invented words (Ajorix) are new; blends and coined words (Canvora, Brandify) build on familiar parts; word + ending (CloudForge) joins a plain word to a building-block word; real words (Anchor) and two-word names (Bright Path) use everyday language.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Which style is easiest to trade mark?</summary>
+                        <div>Usually invented words, because they mean nothing in your industry. Everyday words that describe what you do are the hardest to protect; everyday words with no link to your product (like Apple for computers) sit in between.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Can I use these names for my company?</summary>
+                        <div>Yes, they're free to use and you don't need to credit the site. Check the company register, trade marks and domains before you commit.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Business, company or brand name generator: which should I use?</summary>
+                        <div>This one makes startup-style names: invented words, blends and -ify/-ly endings. The <a href="business-name-generator.html">Business Name Generator</a> gives you strong single words to build a shop, trade or service name around, and the <a href="brand-name-generator.html">Brand Name Generator</a> suggests names for a product or range, sorted by industry and feel. Whichever you use, check the name is free before you commit to it.</div>
+                    </details>
+                </div>
+            </section>
 
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+            <section class="section related-section">
+                <h2>Related Name Generators</h2>
+                <div class="genlist" id="related-generators">
+                    <a href="../posts/brand-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-tag"/></svg><div><b>Brand Name Generator</b><span>Brand and product names sorted by industry and feel, from tech and luxury to food, fashion and outdoor, as one word or with a product word (Juniper Botanicals).</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/business-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-lightbulb"/></svg><div><b>Business Name Generator</b><span>Strong one-word starting points for a business name, in 10 themes from aspirational to tech, plus how to turn one into a name and check it&#039;s free to use.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/clan-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-round-shield"/></svg><div><b>Clan Name Generator</b><span>Clan names for fantasy families and gaming teams: Highland-style clans with a motto or war cry, tribes like the Howling Elk, and gaming clans with a tag.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/guild-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-banner"/></svg><div><b>Guild Name Generator</b><span>Guild names for adventurers, thieves, mages, merchants and craftspeople: the Gilded Lanterns, the Velvet Hand, the Worshipful Company of Clockmakers.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/alien-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-planet"/></svg><div><b>Alien Name Generator</b><span>Alien names that sound like they come from a real species: clicking insectoids, liquid-voiced aquatics, beings named like Hums-at-Dawn, and galactic nobility.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/angel-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Angel Name Generator</b><span>Angel names from scripture and tradition with their Hebrew meanings, or new ones in the same style, with a choir, a domain or an epithet.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
+
+            <section class="section category-generators-section">
+                <h2>More Organisations Name Generators</h2>
+                <div class="genlist compact" id="category-generators">
+                    <a href="../posts/business-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-lightbulb"/></svg><div><b>Business Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/clan-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-round-shield"/></svg><div><b>Clan Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/guild-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-banner"/></svg><div><b>Guild Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/brand-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-tag"/></svg><div><b>Brand Name Generator</b></div><em aria-hidden="true">→</em></a>
+                </div>
+                <p class="all-link"><a href="../categories/organizations-names.html">All Organisations name generators</a></p>
+            </section>
+            <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
 
     <script type="application/json" id="generator-config">{"title":"Company Name Generator","slug":"company-name-generator","filters":{"category":{"label":"Name Style","options":["any","single_word","portmanteau","trendy_suffix","invented","combinations"],"optionLabels":{"any":"Any style","single_word":"Real words (Anchor, Helix)","portmanteau":"Blends and coined words (Canvora, Brandify)","trendy_suffix":"Word + ending (CloudForge, DataLoop)","invented":"Invented words (Aevora, Ajorix)","combinations":"Two words (Bright Path)"}}},"recipe":"switch","on":"category","cases":{"any":{"recipe":"template","template":["[single_word]","[portmanteau]","[trendy_suffix.prefixes][trendy_suffix.endings]","[invented]","[combinations]"]},"trendy_suffix":{"recipe":"template","template":"[trendy_suffix.prefixes][trendy_suffix.endings]"}},"default":{"recipe":"pick","from":"{category}"},"data":{"single_word":["Aether","Anchor","Anvil","Apex","Apollo","Arc","Aria","Arrow","Ascent","Atlas","Atom","Aura","Aurora","Axiom","Azure","Beacon","Blade","Blaze","Bloom","Bolt","Boundary","Breeze","Bridge","Brilliant","Brook","Canvas","Cascade","Catalyst","Cedar","Centric","Cipher","Circuit","Clarity","Climb","Cloud","Clover","Cobalt","Compass","Conduit","Copper","Coral","Core","Corona","Cove","Crest","Crystal","Current","Curve","Cypress","Dash","Dawn","Delta","Depth","Diamond","Drift","Echo","Edge","Element","Ember","Emerge","Enigma","Epoch","Equity","Essence","Ether","Everest","Evolve","Falcon","Fathom","Fervor","Finch","Fjord","Flame","Flash","Flare","Fleet","Flint","Flux","Focus","Forge","Forth","Fortune","Fountain","Frame","Frontier","Frost","Fusion","Galaxy","Gauge","Genesis","Glide","Globe","Glow","Grade","Granite","Graph","Gravity","Grid","Grove","Harbor","Harmony","Haven","Hawk","Helix","Helm","Hinge","Horizon","Icon","Ignite","Impact","Impulse","Index","Infinite","Insight","Instinct","Integral","Invoke","Iris","Iron","Ivory","Jade","Jasper","Jet","Journey","Jubilee","Junction","Juniper","Kaleidoscope","Karma","Keen","Keystone","Kindle","Kinetic","Kite","Knot","Launch","Laurel","Lava","Legacy","Legend","Lens","Level","Leverage","Liberty","Lighthouse","Lightning","Linen","Link","Liquid","Loft","Logic","Loom","Loop","Lumen","Lunar","Lush","Lux","Magnet","Magnitude","Maple","Marble","Marina","Marker","Marvel","Matrix","Meadow","Mechanism","Merge","Merit","Mesa","Meteor","Method","Metro","Mica","Milestone","Mint","Mirror","Mist","Moat","Momentum","Mosaic","Motion","Motive","Mountain","Muse","Narrative","Navigate","Nebula","Nectar","Nerve","Nest","Neutral","Nexus","Nimbus","Noble","Nomad","North","Nova","Novel","Nucleus","Oak","Oasis","Obsidian","Ocean","Onyx","Opal","Optimal","Opus","Oracle","Orbit","Origin","Outpost","Oxide","Pace","Pacific","Palette","Paradigm","Parallel","Parcel","Passage","Path","Pattern","Peak","Pearl","Pendulum","Pennant","Perch","Phere","Phoenix","Pier","Pike","Pillar","Pine","Pinnacle","Pioneer","Pivot","Pixel","Plaza","Plume","Polar","Polaris","Portal","Prism","Prospect","Proton","Prowess","Pulse","Quantum","Quartz","Quest","Queue","Quill","Radius","Rally","Range","Raven","Reach","Realm","Rebel","Reflex","Relic","Remedy","Render","Reserve","Resolve","Resonate","Ridge","Ripple","Rise","River","Roam","Rocket","Rogue","Sage","Sail","Sapphire","Scalar","Scope","Scout","Seam","Sentry","Sequence","Serif","Shadow","Shift","Signal","Silk","Silver","Simple","Sketch","Skyline","Slate","Soar","Solar","Solid","Solve","Sonic","Spark","Spectrum","Sphere"],"portmanteau":["Brandify","Buildera","Canvora","Clarityze","Cloudify","Connectly","Creatify","Datafy","Designly","Digiterra","Dreamify","Elevora","Engagely","Evolvify","Flowmatic","Futurify","Growthly","Innovata","Inspirely","Inventora","Launchly","Marketly","Maximly","Optimly","Producta","Prospera","Scalify","Solutify","Successly","Syncify","Systema","Trackify","Transforma","Unifyra","Visionfy","Workify","Zenify","Acurata","Advancify","Agilitek","Alignify","Appifica","Architech","Ascendra","Assemblix","Avantify","Balancify","Boltify","Boostify","Buildifix","Captura","Cascadera","Centrify","Channelfy","Circulix","Clarifica","Codeify","Collabify","Compassa","Completix","Conduita","Connectra","Constructa","Coordinix","Cordifix","Creativa","Cultivix","Curatify","Cyclica","Dashify","Delivera","Depthify","Designix","Detectify","Developix","Directify","Discovera","Displayx","Distincta","Distribuix","Documentix","Dominata","Drivenfy","Dynamica","Edgecraft","Efficifix","Elegantra","Elevatra","Empowera","Enablera","Endurafy","Energiza","Engagix","Enhancify","Enterprix","Envisionfy","Equilibra","Essentifix","Establishix","Evaluix","Evolvera","Exactify","Excellix","Exchangix","Executix","Expandify","Experixa","Explorify","Expressify","Extendify","Facilitix","Fascinix","Featurify","Finalizix","Flourishfy","Flowgix","Focusify","Formatrix","Formidify","Fortunify","Foundatera","Framifica","Fulfillify","Functionix","Fundamentix","Futurefix","Generatex","Genuinify","Globalixa","Governify","Gradientra","Graphixa","Groundify","Growthra","Guidifica","Harmonixa","Heightenfy","Horizonta","Illuminix","Imaginify","Impactify","Implementix","Impressify","Improvera","Incentify","Includify","Increasify","Incrementa","Indexify","Indicatera","Influenxa","Initiatify","Innovatica","Inputify","Insightify","Inspiratica","Installix","Instantify","Instinctra","Instructix","Instrumenta","Integratica","Intellecta","Interactify","Interfacixa","Interiora","Intermedix","Internalify","Interpreta","Interventix","Introducify","Intuitixa","Inventify","Invertify","Investigix","Invitafera","Involvify","Isolatify","Iteratera","Journalify","Judgeify","Jumpstarta","Justifica","Kinectra","Knowledgify","Labelify","Launchtra","Layerify","Leadifica","Learnify","Leveragix","Liberatify","Lifetify","Lightenfy","Limitify","Linkatra","Locatify","Logistica","Magnificix","Maintainify","Managetra","Manifestix","Manufactra","Maptify","Marketrix","Masterify","Matchify","Materialix","Maximatera","Measureify","Mediatify","Meetify","Memorify","Mergeify","Messageify","Methodix","Metrifica","Migratify","Milestona","Minimify","Mirrorify","Mobilify","Modelify","Modernify","Modifica","Modulify","Momentify","Monetify","Monitorix","Motivatify","Moveify","Multiplify","Narratify","Navigatera","Necessitix","Negotiatify","Networkify","Neutralify","Nominatify","Normalify","Notablica","Notificationix","Nourishfy","Novelify","Numerify","Nurturify","Observix","Obtainify","Occasionify","Occupify","Occurify","Operatera","Optimatica","Optionify","Orchestrix","Orderify","Organizix","Orientify","Originatera","Outputify","Overviewify","Packageify","Pageify","Parallelify","Parameterfix","Participatix","Partnerify","Passagify","Patternify","Performix","Persistify","Personalify","Perspectix","Phaseify","Phenomenix","Pinpointify","Pioneerify","Pivotify","Placeify","Platformix","Pointify","Positionify","Buildify","Connectify","Craftify","Designify","Growthify","Marketify","Actio","Audeo","Aventio","Basio","Centrio","Clareo","Conectio","Creatio","Datasio","Elio","Evio","Finio","Flexio","Forio","Fusio","Geario","Gio","Grio","Helio","Hubio","Ideario","Initio","Inventio","Junctio","Leafio","Levio","Linkio","Manifio","Metrio","Modio","Motio","Nexio","Notio","Obvio","Optio","Orbio","Pivotio","Portio","Precio","Questio"],"trendy_suffix":{"prefixes":["Cloud","Data","Spark","North","Bright","Swift","Pixel","Hive","Signal","Atlas","Orbit","Nimbus","Kite","Lumen","Copper","Harbor","Maple","Echo","Vector","Summit","Ember","Tide","Quill","Canvas","Anchor","Nova","Prism","Pilot","Field","Cobalt"],"endings":["Forge","Loop","Stack","Base","Labs","Works","Hub","Craft","Wave","Grid","Shift","Lane"]},"invented":["Abryx","Acrix","Adenza","Aevora","Afinix","Agnara","Ailura","Ajorix","Akrixa","Alaryx","Albrix","Aldera","Algrix","Alista","Almera","Alprix","Altera","Alvera","Ambryx","Amera","Amprix","Andera","Andrix","Anvera","Apexa","Aprix","Aquera","Arbrix","Arcera","Ardrix","Arenta","Argrix","Arixa","Arlyx","Armera","Arprix","Artix","Arvera","Asbrix","Aspera","Astrix","Atarna","Atmera","Atrix","Auvera","Avrix","Axera","Aybrix","Azera","Balrix","Bantera","Barix","Bendra","Benrix","Beryx","Betrix","Bevora","Bextra","Beyrix","Bilux","Binara","Biorix","Birex","Blenda","Blexor","Blixtra","Bolrix","Bondera","Borex","Boxara","Bralix","Brenda","Brenix","Brexta","Bridix","Brixa","Bronex","Brutix","Bulrix","Burex","Byrix","Cadrix","Caldera","Calrix","Camix","Cantra","Caprix","Carex","Casrix","Celix","Cendra","Cenrix","Ceprix","Cerax","Chalrix","Chendra","Chirix","Chroma","Cimex","Cindrix","Clavix","Clendra","Climex","Clorix","Cobryx","Codrix","Colrix","Comrix","Conex","Corix","Corvex","Credix","Crenix","Cresix","Crextix","Crix","Cronex","Crufix","Crystix","Culex","Curex","Cylix","Cynex","Dactrix","Dalix","Danrix","Darex","Delrix","Dendra","Denrix","Derex","Destrix","Detrix","Dexra","Dextra","Dialux","Dilix","Dimex","Dinrix","Direx","Distra","Divirix","Dolix","Domrix","Dorex","Doxra","Dralix","Drenix","Drix","Dulix","Durix","Dynamex","Dynex","Ebryx","Edrix","Efrix","Egrex","Eldera","Eldrix","Electra","Elerix","Elix","Ellrix","Elrix","Elvix","Embrex","Emerix","Emrix","Endera","Endrix","Enerex","Enrix","Entrix","Envix","Epixa","Equix","Erex","Ergix","Erixa","Ertrix","Esrix","Etrix","Eutrix","Evrix","Excelrix","Exerix","Falix","Farex","Felrix","Fenrix","Ferrix","Ferix","Fibrex","Filix","Finex","Firex","Flexor","Flixta","Florex","Flurix","Folix","Forrix","Fortrix","Fragix","Fremix","Frenix","Fresix","Frixa","Fronix","Frosix","Frurix","Fulrix","Funrix","Furex","Fusrix","Futurix","Galix","Gamrix","Garex","Gatrix","Gavrix","Gelix","Genrix","Gerex","Gildex","Glirix","Glorix","Gluxta","Gradix","Granex","Graphix","Gravix","Grenix","Gridex","Grinix","Grolix","Grundix","Guardrix","Guidrix","Gulrix","Haldrix","Halex","Harex","Haverix","Helix","Helmix","Henrix","Heroix","Hextra","Hilix","Hindrix","Hiverix","Holdrix","Holix","Horixa","Hydrix","Hylix","Hyperix","Ibrex","Icrix","Iderix","Igrix","Ilix","Illuminex","Imagix","Imbrex","Imprix","Incrux","Indexa","Infinix","Influx","Inrix","Inspirix","Instrix","Integrix","Interix","Intrix","Invex","Ionix","Irixa","Ironex","Isolix","Iterix","Ivrix","Jaderix","Jarex","Jetrix","Jubrix","Julix","Jumrix","Junrix","Kalrix","Kanerix","Karex","Kelix","Kenrix","Kerex","Kinrix"],"combinations":["Blue Shift","Bright Path","Clear Skies","Dark Matter","Deep Blue","Fast Track","First Light","Full Circle","Golden Hour","Green Light","High Tide","New Wave","North Star","Open Door","Pure Form","Quick Step","Red Thread","Solid Ground","True North","White Space","Wild Card","Zero Gravity","Alpha Wave","Beta Flow","Gamma Ray","Delta Force","Echo Point","Foxtrot Base","Inner Circle","Outer Reach","Prime Meridian","Quarter Moon","Half Light","Full Bloom","New Dawn","Old Guard","Young Blood","Fresh Start","Clean Slate","Blank Canvas","Open Book","Closed Loop","Free Range","Safe Harbor","Calm Waters","Rough Seas","Smooth Sailing","Fair Winds","Strong Current","High Ground","Low Tide","Deep End","Shallow Waters","Still Point","Moving Target","Fixed Point","Turning Point","Breaking Point","Tipping Point","Focal Point","Central Station","Union Square","Grand Central","Park Avenue","Fifth Street","Main Line","Cross Roads","Side Street","Back Alley","Front Row","Top Shelf","Bottom Line","Middle Ground","Common Thread","Golden Mean","Silver Lining","Bronze Medal","Iron Will","Steel Frame","Copper Wire","Glass House","Stone Wall","Wood Grain","Clay Form","Sand Castle","Snow Peak","Rain Forest","Wind Rose","Fire Pit","Earth Tone","Water Mark","Air Flow","Space Time","Light Year","Dark Energy","Bright Spot","Blind Spot","Sweet Spot","Hot Spot","Cool Place","Warm Welcome","Cold Front","Heat Wave","Frost Line","Stone Age","Bronze Age","Iron Age","Digital Age","Modern Era","New Age","Ancient Path","Future Proof","Past Perfect","Present Tense","Forward Motion","Upward Trend","Inward Turn","Outward Bound","Left Bank","Right Angle","Straight Line","Curved Path","Round Trip","One Way","Two Step","Three Peaks","Four Corners","Five Points","Six Degrees","Seven Seas","Nine Lives","Ten Fold","Double Take","Triple Crown","Single File","Dual Mode","Multi Thread","Ultra Sonic","Nano Scale","Macro View","Wide Angle","Narrow Focus","Broad Spectrum","Deep Dive","High Flyer","Low Profile","Fast Lane","Slow Burn","Long Game","Short Cut","Direct Route","Scenic Path","Winding Road","Straight Shot","Round About","Square Deal","Fair Trade","Free Market","Open Source","Closed System","Hybrid Model","Pure Play","Mixed Media","Single Source","Dual Purpose","Triple Threat","Quad Core","Penta Star","Hexa Grid","Octo Pus","Deca Gon","Prime Number","Even Keel","Odd Couple","First Class","Second Nature","Third Degree","Fourth Wall","Fifth Avenue","Sixth Sense","Seventh Heaven","Eighth Wonder","Ninth Wave","Tenth Muse","True Blue","Real Deal","Genuine Article","Original Copy","Authentic Voice","Natural Selection","Organic Growth","Synthetic Life","Artificial Light","Virtual Reality","Actual Fact","Concrete Jungle","Abstract Art","Literal Truth","Figurative Speech","Parallel Universe","Alternate Route","Primary Source","Secondary Market","Tertiary Care","Final Answer","Initial Offer","Middle Man","End Game","Start Up","Shut Down","Boot Strap","Jump Start","Kick Off","Touch Down","Home Run","Grand Slam","Hole in One","Hat Trick","Power Play","Check Mate","Full House","Royal Flush","Trump Card","Ace Up","King High","Queen Bee","Jack Pot","Lucky Seven","Magic Number","Sacred Geometry","Divine Proportion","Perfect Storm","Ideal Solution","Optimal Path","Maximum Impact","Minimum Viable","Average Joe","Total Eclipse","Partial View","Complete Picture","Whole Truth","Half Measure","Quarter Back","Full Moon","New Moon","Crescent Shape","Gibbous Phase","Solar Flare","Lunar Landing","Stellar Performance","Cosmic Ray","Galactic Center","Universal Truth","Eternal Flame","Infinite Loop","Finite State","Constant Motion","Variable Speed","Fixed Income","Floating Rate","Static Charge","Dynamic Range","Active Voice","Passive Mode","Neutral Ground","Positive Space","Negative Press","Zero Sum","Plus One","Minus Sign","Equal Parts","Greater Good","Lesser Evil","Better Half","Worse Case","Best Bet","Worst Fear","Top Dog","Under Dog","Alpha Male","Beta Test","Gamma Level","Delta Blues","Epsilon Wave","Zeta Point","Eta Factor","Theta State"]}}</script>
     <script src="../lib/recipe-engine.js"></script>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

@@ -104,111 +104,103 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-map" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12 L17 8 L31 13 L42 9 V36 L31 40 L17 35 L6 39 Z" fill="#fffcf4"/><path d="M17 8 V35 M31 13 V40" stroke-width="1.3"/><path d="M10 29 C16 22 22 31 28 23 S34 20 36 18" stroke-dasharray="2 3" stroke-width="1.4"/><path d="M34 15 l5 5 M39 15 l-5 5" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-house" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M30 13 V6 h4 v10" fill="#fffcf4"/><path d="M12 20 V42 H36 V20" fill="#fffcf4"/><path d="M8 22 L24 8 L40 22"/><path d="M21 42 V32 h6 V42"/><path d="M15 26 h4 v4 h-4 z M29 26 h4 v4 h-4 z" stroke-width="1.3"/><path d="M4 45 C14 42 30 47 44 44" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-castle" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 14 V4 l8 3 l-8 3" fill="#efc84a"/><path d="M8 43 V18 h4 v4 h4 v-4 h4 v4 h8 v-4 h4 v4 h4 v-4 h4 v25 Z" fill="#fffcf4"/><path d="M20 43 V35 c0 -5 8 -5 8 0 V43"/><path d="M14 28 v3 M34 28 v3"/></g></symbol>
+      <symbol id="m-pub-sign" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 5 V45 M6 9 H40 M3 45 h7"/><path d="M14 9 v6 M34 9 v6" stroke-width="1.4"/><path d="M11 15 h26 v20 h-26 z" fill="#fffcf4"/><path d="M19 21 h8 v10 h-8 z"/><path d="M27 23 c4 0 4 6 0 6" stroke-width="1.4"/><path d="M18 21 c2 -2.5 8 -2.5 10 0" stroke="#efc84a" stroke-width="3"/></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <span aria-current="page">Places</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">Place</span> Name Generators</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-map"/></svg>
+            </div>
+            <p class="lede">Towns, cities and countries for fantasy worlds and maps, plus café names.</p>
+
+            <div class="section intro">
+                <p>Real place names are built from parts that once meant something: <em>-ford</em> was a river crossing, <em>-wick</em> a settlement, <em>-dale</em> a valley. Fantasy names feel real when they follow the same logic, so a mining town sounds like a mining town.</p><p>Start with the <a href="../posts/fantasy-town-name-generator.html">Fantasy Town Name Generator</a>, which sorts names by what the town does, then zoom out with cities and countries. Naming a real place? The <a href="../posts/cafe-name-generator.html">Café Name Generator</a> is here too.</p>
+            </div>
+
+            <section class="section">
+                <h2>Where to start</h2>
+                <div class="featured">
+                    <a href="../posts/fantasy-town-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-house"/></svg><b>Fantasy Town Name Generator</b><span>Towns built from real English place-name endings, sorted by what they do.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+                    <a href="../posts/fantasy-country-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-map"/></svg><b>Fantasy Country Name Generator</b><span>Kingdoms and empires in six styles, from elvish realms to Norse jarldoms.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+                    <a href="../posts/fantasy-city-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-castle"/></svg><b>Fantasy City Name Generator</b><span>Capitals, fortresses and ports, with an epithet if you want one.</span><span class="open hd" aria-hidden="true">Open →</span></a>
                 </div>
-            </div>
-        </div>
-    </nav>
+            </section>
 
-    <div class="container">
-        <header class="hero">
-            <h1>🗺️ Fantasy Place Name Generators: Towns, Cities and Countries</h1>
-            <p>Towns, cities and countries for fantasy worlds and maps, plus café names.</p>
-            <p class="generator-count">6 generators available</p>
-        </header>
-
-        <main>
-
-        <section class="blog-content category-intro">
-            <p>Real place names are built from parts that once meant something: <em>-ford</em> was a river crossing, <em>-wick</em> a settlement, <em>-dale</em> a valley. Fantasy names feel real when they follow the same logic, so a mining town sounds like a mining town.</p><p>Start with the <a href="../posts/fantasy-town-name-generator.html">Fantasy Town Name Generator</a>, which sorts names by what the town does, then zoom out with cities and countries. Naming a real place? The <a href="../posts/cafe-name-generator.html">Café Name Generator</a> is here too.</p>
-            <h2>Where to start</h2>
-                <ul class="featured-generators">
-                    <li><a href="../posts/fantasy-town-name-generator.html">🏘️ Fantasy Town Name Generator</a>: towns built from real English place-name endings, sorted by what they do.</li>
-                    <li><a href="../posts/fantasy-country-name-generator.html">🗺️ Fantasy Country Name Generator</a>: kingdoms and empires in six styles, from elvish realms to Norse jarldoms.</li>
-                    <li><a href="../posts/fantasy-city-name-generator.html">🏰 Fantasy City Name Generator</a>: capitals, fortresses and ports, with an epithet if you want one.</li>
-                </ul>
-        </section>
-            <h2 class="category-all-heading">All 6 Places generators</h2>
-            <div class="generators-grid">
-                
-    <a href="../posts/tavern-name-generator.html" class="generator-card">
-      <h3>🍺 Tavern Name Generator</h3>
-      <p>Tavern and inn names for D&amp;D and fantasy towns, built the way real pub names are: The Red Lion, The Fox and Hounds, The Prancing Pony. Six styles, from classic to dockside dive.</p>
-    </a>
-  
-    
-    <a href="../posts/fantasy-shop-name-generator.html" class="generator-card">
-      <h3>🏪 Fantasy Shop Name Generator</h3>
-      <p>Names for magic shops, blacksmiths, potion sellers, general stores and more in your D&amp;D town, built the way real shop signs work: an owner, a trade or a painted sign.</p>
-    </a>
-  
-    
-    <a href="../posts/fantasy-town-name-generator.html" class="generator-card">
-      <h3>🏘️ Fantasy Town Name Generator</h3>
-      <p>Fantasy town and village names built the way real English place names are, for farming villages, fishing ports, mining towns, abbeys, market towns and more.</p>
-    </a>
-  
-    
-    <a href="../posts/fantasy-country-name-generator.html" class="generator-card">
-      <h3>🗺️ Fantasy Country Name Generator</h3>
-      <p>Fantasy country and kingdom names in six styles, from elvish realms and Norse jarldoms to Latin empires and island thalassocracies, with or without a title.</p>
-    </a>
-  
-    
-    <a href="../posts/cafe-name-generator.html" class="generator-card">
-      <h3>☕ Cafe Name Generator</h3>
-      <p>Café and coffee shop names in eight styles: one word, French, Italian, This &amp; That, cosy, nature, modern speciality and playful puns.</p>
-    </a>
-  
-    
-    <a href="../posts/fantasy-city-name-generator.html" class="generator-card">
-      <h3>🏰 Fantasy City Name Generator</h3>
-      <p>Fantasy city names for capitals, fortresses, ports, northern holds, ancient ruins and river towns, with an epithet if you want one: &quot;the City of Bells&quot;.</p>
-    </a>
-  
-            </div>
+            <section class="section">
+                <h2>All 6 Places generators</h2>
+                <div class="genlist">
+                    <a href="../posts/tavern-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-pub-sign"/></svg><div><b>Tavern Name Generator</b><span>Tavern and inn names for D&amp;D and fantasy towns, built the way real pub names are: The Red Lion, The Fox and Hounds, The Prancing Pony. Six styles, from classic to dockside dive.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fantasy-shop-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-map"/></svg><div><b>Fantasy Shop Name Generator</b><span>Names for magic shops, blacksmiths, potion sellers, general stores and more in your D&amp;D town, built the way real shop signs work: an owner, a trade or a painted sign.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fantasy-town-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-house"/></svg><div><b>Fantasy Town Name Generator</b><span>Fantasy town and village names built the way real English place names are, for farming villages, fishing ports, mining towns, abbeys, market towns and more.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fantasy-country-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-map"/></svg><div><b>Fantasy Country Name Generator</b><span>Fantasy country and kingdom names in six styles, from elvish realms and Norse jarldoms to Latin empires and island thalassocracies, with or without a title.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/cafe-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-map"/></svg><div><b>Cafe Name Generator</b><span>Café and coffee shop names in eight styles: one word, French, Italian, This &amp; That, cosy, nature, modern speciality and playful puns.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fantasy-city-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-castle"/></svg><div><b>Fantasy City Name Generator</b><span>Fantasy city names for capitals, fortresses, ports, northern holds, ancient ruins and river towns, with an epithet if you want one: &quot;the City of Bells&quot;.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
         </main>
-
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
 
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

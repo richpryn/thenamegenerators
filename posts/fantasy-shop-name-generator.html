@@ -297,270 +297,250 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
-                </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-map" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12 L17 8 L31 13 L42 9 V36 L31 40 L17 35 L6 39 Z" fill="#fffcf4"/><path d="M17 8 V35 M31 13 V40" stroke-width="1.3"/><path d="M10 29 C16 22 22 31 28 23 S34 20 36 18" stroke-dasharray="2 3" stroke-width="1.4"/><path d="M34 15 l5 5 M39 15 l-5 5" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-castle" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 14 V4 l8 3 l-8 3" fill="#efc84a"/><path d="M8 43 V18 h4 v4 h4 v-4 h4 v4 h8 v-4 h4 v4 h4 v-4 h4 v25 Z" fill="#fffcf4"/><path d="M20 43 V35 c0 -5 8 -5 8 0 V43"/><path d="M14 28 v3 M34 28 v3"/></g></symbol>
+      <symbol id="m-house" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M30 13 V6 h4 v10" fill="#fffcf4"/><path d="M12 20 V42 H36 V20" fill="#fffcf4"/><path d="M8 22 L24 8 L40 22"/><path d="M21 42 V32 h6 V42"/><path d="M15 26 h4 v4 h-4 z M29 26 h4 v4 h-4 z" stroke-width="1.3"/><path d="M4 45 C14 42 30 47 44 44" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-d20" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4 L42 14 L42 34 L24 44 L6 34 L6 14 Z" fill="#fffcf4"/><path d="M24 4 L15 28 L33 28 Z M6 14 L15 28 M42 14 L33 28 M15 28 L24 44 L33 28 M6 34 L15 28 M42 34 L33 28" stroke-width="1.3"/><path d="M20 24 h8" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-pub-sign" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 5 V45 M6 9 H40 M3 45 h7"/><path d="M14 9 v6 M34 9 v6" stroke-width="1.4"/><path d="M11 15 h26 v20 h-26 z" fill="#fffcf4"/><path d="M19 21 h8 v10 h-8 z"/><path d="M27 23 c4 0 4 6 0 6" stroke-width="1.4"/><path d="M18 21 c2 -2.5 8 -2.5 10 0" stroke="#efc84a" stroke-width="3"/></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../categories/places-names.html">Places</a> / <span aria-current="page">Fantasy Shop Name Generator</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">Fantasy</span> Shop Name Generator</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-map"/></svg>
             </div>
-        </div>
-    </nav>
+            <p class="lede">Magic shops, smithies, apothecaries and general stores, named the way real shops were.</p>
 
-    <div class="container">
-        <header class="blog-hero">
-            <h1>🏪 Fantasy Shop Name Generator</h1>
-            <p class="tagline">Magic shops, smithies, apothecaries and general stores, named the way real shops were.</p>
-            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
-        </header>
-
-        <main>
-            <section class="embedded-generator">
-                <div class="generator-card">
-                    <h2>Generate Fantasy Shop Names</h2>
-                    <p class="generator-description">Names for magic shops, blacksmiths, potion sellers, general stores and more in your D&amp;D town, built the way real shop signs work: an owner, a trade or a painted sign.</p>
-                    
-                    <div class="simple-generator">
-                        <div class="filters">
-          <div class="filter-group">
-            <label for="filter-shop">Kind of shop:</label>
-            <select id="filter-shop" name="shop" data-filter="shop">
-              <option value="any">Any shop</option>
-              <option value="magic">Magic shop</option>
-              <option value="smith">Blacksmith</option>
-              <option value="potion">Potions and herbs</option>
-              <option value="general">General store</option>
-              <option value="books">Books and maps</option>
-              <option value="jeweller">Jeweller</option>
-              <option value="tailor">Tailor and clothier</option>
-            </select>
+            <section class="sheet hd simple-generator" id="generator" aria-label="Fantasy Shop Name Generator">
+                <div class="gen-one">
+          <div class="group">
+            <label class="label" for="filter-shop">Kind of shop</label>
+            <div class="ctl sel hd">
+              <select id="filter-shop" name="shop" data-filter="shop">
+                <option value="any">Any shop</option>
+                <option value="magic">Magic shop</option>
+                <option value="smith">Blacksmith</option>
+                <option value="potion">Potions and herbs</option>
+                <option value="general">General store</option>
+                <option value="books">Books and maps</option>
+                <option value="jeweller">Jeweller</option>
+                <option value="tailor">Tailor and clothier</option>
+              </select>
+            </div>
           </div></div>
-                        <div class="generator-controls">
-                            <div class="filter-group count-group">
-                                <label for="name-count">How many:</label>
-                                <select id="name-count">
-                                    <option value="8" selected>8 names</option>
-                                    <option value="16">16 names</option>
-                                    <option value="32">32 names</option>
-                                </select>
-                            </div>
-                            <button id="generate-btn" class="generate-button">Generate Names</button>
-                        </div>
-                        <div class="results-area" id="results">
-                            <p class="results-placeholder">Click "Generate Names" to see results</p>
-                        </div>
-                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
-                        <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="true">
+                    <p class="results-empty">Press Generate Names for 8 fantasy shop names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
                     </div>
-                    
-                    <div class="cta-box">
-                        <p><strong>Need more options?</strong></p>
-                        <a href="../index.html" class="cta-button">Try the Ultimate Random Name Generator →</a>
-                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
+
+            <section class="section example-names">
+                <h2>Example Fantasy Shop Names</h2>
+                <p class="sub">A few names this generator came up with. Tap one to copy it, or press "Generate Names" above for more.</p>
+                <div class="ex">
+                <div class="exbox hd">
+                    <h3>Any shop</h3>
+                    <ul>
+                        <li>Hoskins and Pottle</li>
+                        <li>Underwood and Marrow</li>
+                        <li>Peculiar Wands</li>
+                        <li>Kettle and Thistle</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Magic shop</h3>
+                    <ul>
+                        <li>Hobb&#039;s Wise Curios</li>
+                        <li>Orrin&#039;s Arcana</li>
+                        <li>Tamsin&#039;s Glimmering Oddities</li>
+                        <li>Whispering Baubles</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Blacksmith</h3>
+                    <ul>
+                        <li>The Honest Forge</li>
+                        <li>Oddbody and Gimble</li>
+                        <li>The Burning Shield</li>
+                        <li>Zephyrine&#039;s Black Ironworks</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>General store</h3>
+                    <ul>
+                        <li>Dewhurst and Spindle</li>
+                        <li>Gorrim&#039;s Thrifty Stores</li>
+                        <li>Ezekiel&#039;s Dusty Wares</li>
+                        <li>Grimble&#039;s Sundries</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Books and maps</h3>
+                    <ul>
+                        <li>The Wandering Owl</li>
+                        <li>The Lost Lectern</li>
+                        <li>Golden Ink and Quill</li>
+                        <li>The Quiet Map</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Jeweller</h3>
+                    <ul>
+                        <li>The Silver Circlet</li>
+                        <li>Glittering Silver</li>
+                        <li>Bellweather and Gorse</li>
+                        <li>Hettie&#039;s Royal Gold</li>
+                    </ul>
+                </div>
                 </div>
             </section>
 
-            <section class="example-names">
-                <h2>Example Fantasy Shop Names</h2>
-                <p>A few names this generator came up with. Press "Generate Names" above for more.</p>
-                <h3>Any shop</h3>
-                <ul class="name-results">
-                    <li>Hoskins and Pottle</li>
-                    <li>Underwood and Marrow</li>
-                    <li>Peculiar Wands</li>
-                    <li>Kettle and Thistle</li>
-                </ul>
-                <h3>Magic shop</h3>
-                <ul class="name-results">
-                    <li>Hobb&#039;s Wise Curios</li>
-                    <li>Orrin&#039;s Arcana</li>
-                    <li>Tamsin&#039;s Glimmering Oddities</li>
-                    <li>Whispering Baubles</li>
-                </ul>
-                <h3>Blacksmith</h3>
-                <ul class="name-results">
-                    <li>The Honest Forge</li>
-                    <li>Oddbody and Gimble</li>
-                    <li>The Burning Shield</li>
-                    <li>Zephyrine&#039;s Black Ironworks</li>
-                </ul>
-                <h3>General store</h3>
-                <ul class="name-results">
-                    <li>Dewhurst and Spindle</li>
-                    <li>Gorrim&#039;s Thrifty Stores</li>
-                    <li>Ezekiel&#039;s Dusty Wares</li>
-                    <li>Grimble&#039;s Sundries</li>
-                </ul>
-                <h3>Books and maps</h3>
-                <ul class="name-results">
-                    <li>The Wandering Owl</li>
-                    <li>The Lost Lectern</li>
-                    <li>Golden Ink and Quill</li>
-                    <li>The Quiet Map</li>
-                </ul>
-                <h3>Jeweller</h3>
-                <ul class="name-results">
-                    <li>The Silver Circlet</li>
-                    <li>Glittering Silver</li>
-                    <li>Bellweather and Gorse</li>
-                    <li>Hettie&#039;s Royal Gold</li>
-                </ul>
-            </section>
-
-            <section class="blog-content how-it-works">
+            <section class="section how-it-works">
                 <h2>How the Fantasy Shop Name Generator Works</h2>
+                <div class="howto hd">
                 <p>It works from 296 names and name parts, which combine into over 34,000 possible results.</p>
                 <p>The choices:</p>
                 <ul><li><strong>Kind of shop:</strong><ul><li>Any shop, e.g. <em>Vane and Quinch</em></li><li>Magic shop, e.g. <em>Wandering Curios</em></li><li>Blacksmith, e.g. <em>Tempered Ironmongery</em></li><li>Potions and herbs, e.g. <em>The Healing Cauldron</em></li><li>General store, e.g. <em>Packed Bits and Bobs</em></li><li>Books and maps, e.g. <em>The Dusty Compass</em></li><li>Jeweller, e.g. <em>Polished Silver</em></li><li>Tailor and clothier, e.g. <em>Patched Hats</em></li></ul></li></ul>
-                <p>Each press gives you 8, 16 or 32 names (choose under "How many"), and you won't see the same one twice until you've been through everything for the choices you've made.</p>
+                <p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet, until the names for the choices you've made run out.</p>
+                </div>
             </section>
 
-            <article class="blog-content" itemscope itemtype="https://schema.org/Article">
+            <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="Fantasy Shop Name Generator">
                 <meta itemprop="description" content="Names for magic shops, blacksmiths, potion sellers, general stores and more in your D&amp;D town, built the way real shop signs work: an owner, a trade or a painted sign.">
-                <section itemprop="articleBody">
-                    <p>Sooner or later the party goes shopping, and a shop with a name feels like a real place. Fantasy shops borrow from real ones: named after the owner (Barthen's Provisions), the trade (Ollivanders, wand-makers) or a painted sign (The Bubbling Cauldron). This <strong>fantasy shop name generator</strong> builds names in all those patterns for seven kinds of shop, from magic shops to tailors.</p>
-                </section>
+                <div itemprop="articleBody">
+                <p class="big">Sooner or later the party goes shopping, and a shop with a name feels like a real place. Fantasy shops borrow from real ones: named after the owner (Barthen's Provisions), the trade (Ollivanders, wand-makers) or a painted sign (The Bubbling Cauldron). This <strong>fantasy shop name generator</strong> builds names in all those patterns for seven kinds of shop, from magic shops to tailors.</p>
                 
-      <section>
-        <h2>Three ways shops get their names</h2>
-        <ul><li><strong>The owner's name:</strong> the oldest pattern and still the most common. In Phandalin, the town in D&D's starter adventure Lost Mine of Phandelver, the party can stock up at Barthen's Provisions. In Skyrim, Belethor's General Goods is in Whiterun.</li><li><strong>A painted sign:</strong> like tavern names, older shops were known by their sign: The Golden Anvil, The Bubbling Cauldron. Arcadia's Cauldron, the Whiterun apothecary, mixes both patterns.</li><li><strong>A partnership:</strong> two names joined by "and". In Harry Potter, Flourish and Blotts sells books and Borgin and Burkes sells dark artefacts.</li></ul><p>The generator uses all three, plus simple descriptive names (Curious Curios) for shops whose owner is happy to let the goods speak.</p>
-      </section>
-    
+                <h2>Three ways shops get their names</h2>
+                <ul><li><strong>The owner's name:</strong> the oldest pattern and still the most common. In Phandalin, the town in D&D's starter adventure Lost Mine of Phandelver, the party can stock up at Barthen's Provisions. In Skyrim, Belethor's General Goods is in Whiterun.</li><li><strong>A painted sign:</strong> like tavern names, older shops were known by their sign: The Golden Anvil, The Bubbling Cauldron. Arcadia's Cauldron, the Whiterun apothecary, mixes both patterns.</li><li><strong>A partnership:</strong> two names joined by "and". In Harry Potter, Flourish and Blotts sells books and Borgin and Burkes sells dark artefacts.</li></ul><p>The generator uses all three, plus simple descriptive names (Curious Curios) for shops whose owner is happy to let the goods speak.</p>
 
-      <section>
-        <h2>Matching the name to the shop</h2>
-        <ul><li><strong>Magic shops</strong> can be a little mysterious: The Whispering Orb, Grimble's Oddities. A magic shop with a plain name is a hint that the owner has something to hide.</li><li><strong>Blacksmiths</strong> sound solid and honest: The Ringing Anvil, Gorrim's Ironworks.</li><li><strong>Potion sellers and herbalists</strong> sound green and old: The Mossy Mortar, Hettie's Remedies.</li><li><strong>General stores</strong> are friendly and practical: The Lucky Barrel, Barnaby's Provisions.</li><li><strong>Jewellers and tailors</strong> show off: The Flawless Pearl, The Dapper Thimble.</li></ul>
-      </section>
-    
+                <h2>Matching the name to the shop</h2>
+                <ul><li><strong>Magic shops</strong> can be a little mysterious: The Whispering Orb, Grimble's Oddities. A magic shop with a plain name is a hint that the owner has something to hide.</li><li><strong>Blacksmiths</strong> sound solid and honest: The Ringing Anvil, Gorrim's Ironworks.</li><li><strong>Potion sellers and herbalists</strong> sound green and old: The Mossy Mortar, Hettie's Remedies.</li><li><strong>General stores</strong> are friendly and practical: The Lucky Barrel, Barnaby's Provisions.</li><li><strong>Jewellers and tailors</strong> show off: The Flawless Pearl, The Dapper Thimble.</li></ul>
 
-      <section>
-        <h2>Making the shop memorable</h2>
-        <ul><li><strong>Give the owner a quirk.</strong> The name tells players who to ask for: someone called Grimble is behind the counter at Grimble's Wands.</li><li><strong>Let the sign say something.</strong> "The Dented Helm" is either a joke or a warning about the quality of the armour.</li><li><strong>Add a motto.</strong> Ollivanders' sign reads "Makers of Fine Wands since 382 BC". A line under the name adds history in seconds.</li></ul><p>For the inn across the street, try the <a href="tavern-name-generator.html">Tavern Name Generator</a>; for the town itself, the <a href="fantasy-town-name-generator.html">Fantasy Town Name Generator</a>.</p>
-      </section>
-    
+                <h2>Making the shop memorable</h2>
+                <ul><li><strong>Give the owner a quirk.</strong> The name tells players who to ask for: someone called Grimble is behind the counter at Grimble's Wands.</li><li><strong>Let the sign say something.</strong> "The Dented Helm" is either a joke or a warning about the quality of the armour.</li><li><strong>Add a motto.</strong> Ollivanders' sign reads "Makers of Fine Wands since 382 BC". A line under the name adds history in seconds.</li></ul><p>For the inn across the street, try the <a href="tavern-name-generator.html">Tavern Name Generator</a>; for the town itself, the <a href="fantasy-town-name-generator.html">Fantasy Town Name Generator</a>.</p>
+                </div>
             </article>
 
-            
-      <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-          
-            <div class="faq-item">
-              <h3 class="faq-question">What's a good name for a D&D magic shop?</h3>
-              <p class="faq-answer">Something with a little mystery: an owner's name and their wares (Grimble's Oddities), or an adjective and an object (The Whispering Orb).</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">How do I name a blacksmith in a fantasy town?</h3>
-              <p class="faq-answer">Use the smith's name and trade (Gorrim's Ironworks) or a sign from the forge (The Ringing Anvil). Blacksmith names should sound solid and honest.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Can I use these names for a real shop?</h3>
-              <p class="faq-answer">Yes, but check local businesses and trade marks first, especially for simple names like The Golden Anvil.</p>
-            </div>
-          
-        </div>
-      </section>
-            
-      <section class="related-section">
-        <h2>Related Name Generators</h2>
-        <div class="related-grid" id="related-generators">
-          <a href="../posts/fantasy-city-name-generator.html" class="related-card">
-            <h3>🏰 Fantasy City Name Generator</h3>
-            <p>Fantasy city names for capitals, fortresses, ports, northern holds, ancient ruins and river towns, with an epithet if you want one: &quot;the City of Bells&quot;.</p>
-          </a>
-          <a href="../posts/fantasy-country-name-generator.html" class="related-card">
-            <h3>🗺️ Fantasy Country Name Generator</h3>
-            <p>Fantasy country and kingdom names in six styles, from elvish realms and Norse jarldoms to Latin empires and island thalassocracies, with or without a title.</p>
-          </a>
-          <a href="../posts/fantasy-town-name-generator.html" class="related-card">
-            <h3>🏘️ Fantasy Town Name Generator</h3>
-            <p>Fantasy town and village names built the way real English place names are, for farming villages, fishing ports, mining towns, abbeys, market towns and more.</p>
-          </a>
-          <a href="../posts/dnd-fantasy-name-generator.html" class="related-card">
-            <h3>⚔️ D&amp;D Fantasy Name Generator</h3>
-            <p>D&amp;D character names for every common race, with a family or clan name, or a whole random party: a dwarf, a tiefling, a halfling and a dragonborn at once.</p>
-          </a>
-          <a href="../posts/cafe-name-generator.html" class="related-card">
-            <h3>☕ Cafe Name Generator</h3>
-            <p>Café and coffee shop names in eight styles: one word, French, Italian, This &amp; That, cosy, nature, modern speciality and playful puns.</p>
-          </a>
-          <a href="../posts/tavern-name-generator.html" class="related-card">
-            <h3>🍺 Tavern Name Generator</h3>
-            <p>Tavern and inn names for D&amp;D and fantasy towns, built the way real pub names are: The Red Lion, The Fox and Hounds, The Prancing Pony. Six styles, from classic to dockside dive.</p>
-          </a>
-        </div>
-      </section>
-            
-      <section class="category-generators-section">
-        <h2>All Places Name Generators</h2>
-        <div class="category-generators-grid" id="category-generators">
-          <a href="../posts/tavern-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🍺</span>
-            <span class="category-generator-title">Tavern Name Generator</span>
-          </a>
-          <a href="../posts/fantasy-town-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🏘️</span>
-            <span class="category-generator-title">Fantasy Town Name Generator</span>
-          </a>
-          <a href="../posts/fantasy-country-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🗺️</span>
-            <span class="category-generator-title">Fantasy Country Name Generator</span>
-          </a>
-          <a href="../posts/cafe-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">☕</span>
-            <span class="category-generator-title">Cafe Name Generator</span>
-          </a>
-          <a href="../posts/fantasy-city-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🏰</span>
-            <span class="category-generator-title">Fantasy City Name Generator</span>
-          </a>
-        </div>
-      </section>
-        </main>
+            <section class="section faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>What's a good name for a D&D magic shop?</summary>
+                        <div>Something with a little mystery: an owner's name and their wares (Grimble's Oddities), or an adjective and an object (The Whispering Orb).</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>How do I name a blacksmith in a fantasy town?</summary>
+                        <div>Use the smith's name and trade (Gorrim's Ironworks) or a sign from the forge (The Ringing Anvil). Blacksmith names should sound solid and honest.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Can I use these names for a real shop?</summary>
+                        <div>Yes, but check local businesses and trade marks first, especially for simple names like The Golden Anvil.</div>
+                    </details>
+                </div>
+            </section>
 
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+            <section class="section related-section">
+                <h2>Related Name Generators</h2>
+                <div class="genlist" id="related-generators">
+                    <a href="../posts/fantasy-city-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-castle"/></svg><div><b>Fantasy City Name Generator</b><span>Fantasy city names for capitals, fortresses, ports, northern holds, ancient ruins and river towns, with an epithet if you want one: &quot;the City of Bells&quot;.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fantasy-country-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-map"/></svg><div><b>Fantasy Country Name Generator</b><span>Fantasy country and kingdom names in six styles, from elvish realms and Norse jarldoms to Latin empires and island thalassocracies, with or without a title.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fantasy-town-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-house"/></svg><div><b>Fantasy Town Name Generator</b><span>Fantasy town and village names built the way real English place names are, for farming villages, fishing ports, mining towns, abbeys, market towns and more.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/dnd-fantasy-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-d20"/></svg><div><b>D&amp;D Fantasy Name Generator</b><span>D&amp;D character names for every common race, with a family or clan name, or a whole random party: a dwarf, a tiefling, a halfling and a dragonborn at once.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/cafe-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-map"/></svg><div><b>Cafe Name Generator</b><span>Café and coffee shop names in eight styles: one word, French, Italian, This &amp; That, cosy, nature, modern speciality and playful puns.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/tavern-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-pub-sign"/></svg><div><b>Tavern Name Generator</b><span>Tavern and inn names for D&amp;D and fantasy towns, built the way real pub names are: The Red Lion, The Fox and Hounds, The Prancing Pony. Six styles, from classic to dockside dive.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
+
+            <section class="section category-generators-section">
+                <h2>More Places Name Generators</h2>
+                <div class="genlist compact" id="category-generators">
+                    <a href="../posts/tavern-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-pub-sign"/></svg><div><b>Tavern Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fantasy-town-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-house"/></svg><div><b>Fantasy Town Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fantasy-country-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-map"/></svg><div><b>Fantasy Country Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/cafe-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-map"/></svg><div><b>Cafe Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fantasy-city-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-castle"/></svg><div><b>Fantasy City Name Generator</b></div><em aria-hidden="true">→</em></a>
+                </div>
+                <p class="all-link"><a href="../categories/places-names.html">All Places name generators</a></p>
+            </section>
+            <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
 
     <script type="application/json" id="generator-config">{"title":"Fantasy Shop Name Generator","slug":"fantasy-shop-name-generator","filters":{"shop":{"label":"Kind of shop","options":["any","magic","smith","potion","general","books","jeweller","tailor"],"optionLabels":{"any":"Any shop","magic":"Magic shop","smith":"Blacksmith","potion":"Potions and herbs","general":"General store","books":"Books and maps","jeweller":"Jeweller","tailor":"Tailor and clothier"}}},"recipe":"switch","on":"shop","cases":{"magic":{"recipe":"template","template":["[owners]'s [shops.magic.goods]","The [shops.magic.adj] [shops.magic.obj]","[owners]'s [shops.magic.adj] [shops.magic.goods]","[shops.magic.adj] [shops.magic.goods]","[partners] and [partners]"]},"smith":{"recipe":"template","template":["[owners]'s [shops.smith.goods]","The [shops.smith.adj] [shops.smith.obj]","[owners]'s [shops.smith.adj] [shops.smith.goods]","[shops.smith.adj] [shops.smith.goods]","[partners] and [partners]"]},"potion":{"recipe":"template","template":["[owners]'s [shops.potion.goods]","The [shops.potion.adj] [shops.potion.obj]","[owners]'s [shops.potion.adj] [shops.potion.goods]","[shops.potion.adj] [shops.potion.goods]","[partners] and [partners]"]},"general":{"recipe":"template","template":["[owners]'s [shops.general.goods]","The [shops.general.adj] [shops.general.obj]","[owners]'s [shops.general.adj] [shops.general.goods]","[shops.general.adj] [shops.general.goods]","[partners] and [partners]"]},"books":{"recipe":"template","template":["[owners]'s [shops.books.goods]","The [shops.books.adj] [shops.books.obj]","[owners]'s [shops.books.adj] [shops.books.goods]","[shops.books.adj] [shops.books.goods]","[partners] and [partners]"]},"jeweller":{"recipe":"template","template":["[owners]'s [shops.jeweller.goods]","The [shops.jeweller.adj] [shops.jeweller.obj]","[owners]'s [shops.jeweller.adj] [shops.jeweller.goods]","[shops.jeweller.adj] [shops.jeweller.goods]","[partners] and [partners]"]},"tailor":{"recipe":"template","template":["[owners]'s [shops.tailor.goods]","The [shops.tailor.adj] [shops.tailor.obj]","[owners]'s [shops.tailor.adj] [shops.tailor.goods]","[shops.tailor.adj] [shops.tailor.goods]","[partners] and [partners]"]},"any":{"recipe":"template","template":["[owners]'s [shops.magic.goods]","The [shops.magic.adj] [shops.magic.obj]","[owners]'s [shops.magic.adj] [shops.magic.goods]","[shops.magic.adj] [shops.magic.goods]","[partners] and [partners]","[owners]'s [shops.smith.goods]","The [shops.smith.adj] [shops.smith.obj]","[owners]'s [shops.smith.adj] [shops.smith.goods]","[shops.smith.adj] [shops.smith.goods]","[partners] and [partners]","[owners]'s [shops.potion.goods]","The [shops.potion.adj] [shops.potion.obj]","[owners]'s [shops.potion.adj] [shops.potion.goods]","[shops.potion.adj] [shops.potion.goods]","[partners] and [partners]","[owners]'s [shops.general.goods]","The [shops.general.adj] [shops.general.obj]","[owners]'s [shops.general.adj] [shops.general.goods]","[shops.general.adj] [shops.general.goods]","[partners] and [partners]","[owners]'s [shops.books.goods]","The [shops.books.adj] [shops.books.obj]","[owners]'s [shops.books.adj] [shops.books.goods]","[shops.books.adj] [shops.books.goods]","[partners] and [partners]","[owners]'s [shops.jeweller.goods]","The [shops.jeweller.adj] [shops.jeweller.obj]","[owners]'s [shops.jeweller.adj] [shops.jeweller.goods]","[shops.jeweller.adj] [shops.jeweller.goods]","[partners] and [partners]","[owners]'s [shops.tailor.goods]","The [shops.tailor.adj] [shops.tailor.obj]","[owners]'s [shops.tailor.adj] [shops.tailor.goods]","[shops.tailor.adj] [shops.tailor.goods]","[partners] and [partners]"]}},"data":{"owners":["Grimble","Elara","Barnaby","Thessaly","Orrin","Mirabel","Bramwell","Zephyrine","Hobb","Tamsin","Fennick","Odelia","Gorrim","Aldous","Petra","Quill","Rosalind","Dunstan","Marigold","Ezekiel","Wenna","Tobias","Isolde","Kettrick","Brindle","Ambrose","Hettie","Silas","Vesper"],"shops":{"magic":{"goods":["Wands","Curios","Charms","Scrolls","Trinkets","Talismans","Arcana","Oddities","Wonders","Enchantments","Baubles","Relics"],"adj":["Curious","Glimmering","Whispering","Wandering","Arcane","Starlit","Hidden","Enchanted","Twinkling","Wise","Peculiar","Midnight"],"obj":["Wand","Orb","Grimoire","Lantern","Crystal","Familiar","Owl","Hourglass","Mirror","Star","Moon","Candle"]},"smith":{"goods":["Arms","Steel","Blades","Ironworks","Forge","Armoury","Hammers","Shields","Ironmongery","Smithy"],"adj":["Glowing","Ringing","Iron","Black","Tempered","Burning","Mighty","Dented","Honest","Red-Hot","Sturdy","Roaring"],"obj":["Anvil","Hammer","Bellows","Tongs","Forge","Gauntlet","Shield","Horseshoe","Blade","Helm","Ingot","Hearth"]},"potion":{"goods":["Potions","Tinctures","Remedies","Elixirs","Draughts","Herbs","Salves","Tonics","Cures","Philtres"],"adj":["Bubbling","Green","Bitter","Healing","Fragrant","Smoking","Gentle","Mossy","Wild","Silver","Dried","Steaming"],"obj":["Cauldron","Mortar","Pestle","Phial","Toadstool","Mandrake","Willow","Leech","Flask","Kettle","Nettle","Root"]},"general":{"goods":["Provisions","Goods","Supplies","Sundries","Wares","Trading Post","Outfitters","Stores","Emporium","Bits and Bobs"],"adj":["Honest","Busy","Thrifty","Lucky","Friendly","Packed","Crooked","Cheerful","Humble","Handy","Dusty","Bargain"],"obj":["Barrel","Lantern","Rope","Pack","Bucket","Ladder","Crate","Basket","Pot","Sack","Coil","Wagon"]},"books":{"goods":["Books","Tomes","Scrolls","Maps","Manuscripts","Bindery","Pages","Ink and Quill","Chronicles","Folios"],"adj":["Dusty","Quiet","Inky","Learned","Leatherbound","Forgotten","Hidden","Wandering","Lost","Crumbling","Golden","Patient"],"obj":["Quill","Page","Inkpot","Scroll","Lectern","Candle","Spine","Bookworm","Map","Bookmark","Compass","Owl"]},"jeweller":{"goods":["Gems","Jewels","Rings","Trinkets","Gold","Silver","Settings","Treasures","Finery","Facets"],"adj":["Glittering","Golden","Silver","Sparkling","Flawless","Gleaming","Precious","Royal","Polished","Rare","Shining","Dazzling"],"obj":["Ring","Pearl","Ruby","Locket","Crown","Diamond","Brooch","Chain","Sapphire","Emerald","Circlet","Opal"]},"tailor":{"goods":["Cloaks","Garments","Raiment","Threads","Silks","Finery","Tailoring","Fabrics","Hats","Boots"],"adj":["Fine","Velvet","Dapper","Silken","Woollen","Elegant","Fashionable","Patched","Gilded","Midnight","Bold","Humble"],"obj":["Needle","Thimble","Spindle","Cloak","Bobbin","Button","Loom","Ribbon","Hat","Boot","Glove","Thread"]}},"partners":["Gorse","Pottle","Thistle","Fennel","Bellweather","Mortimer","Quarry","Ashby","Crumb","Dewhurst","Fairfax","Gimble","Hoskins","Inkwell","Jarrow","Kettle","Lumley","Marrow","Nettles","Oddbody","Quinch","Ravel","Spindle","Tumbleweed","Underwood","Vane","Wicket"]}}</script>
     <script src="../lib/recipe-engine.js"></script>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

@@ -297,404 +297,305 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
-                </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-d20" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4 L42 14 L42 34 L24 44 L6 34 L6 14 Z" fill="#fffcf4"/><path d="M24 4 L15 28 L33 28 Z M6 14 L15 28 M42 14 L33 28 M15 28 L24 44 L33 28 M6 34 L15 28 M42 34 L33 28" stroke-width="1.3"/><path d="M20 24 h8" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-castle" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 14 V4 l8 3 l-8 3" fill="#efc84a"/><path d="M8 43 V18 h4 v4 h4 v-4 h4 v4 h8 v-4 h4 v4 h4 v-4 h4 v25 Z" fill="#fffcf4"/><path d="M20 43 V35 c0 -5 8 -5 8 0 V43"/><path d="M14 28 v3 M34 28 v3"/></g></symbol>
+      <symbol id="m-map" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12 L17 8 L31 13 L42 9 V36 L31 40 L17 35 L6 39 Z" fill="#fffcf4"/><path d="M17 8 V35 M31 13 V40" stroke-width="1.3"/><path d="M10 29 C16 22 22 31 28 23 S34 20 36 18" stroke-dasharray="2 3" stroke-width="1.4"/><path d="M34 15 l5 5 M39 15 l-5 5" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-house" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M30 13 V6 h4 v10" fill="#fffcf4"/><path d="M12 20 V42 H36 V20" fill="#fffcf4"/><path d="M8 22 L24 8 L40 22"/><path d="M21 42 V32 h6 V42"/><path d="M15 26 h4 v4 h-4 z M29 26 h4 v4 h-4 z" stroke-width="1.3"/><path d="M4 45 C14 42 30 47 44 44" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-planet" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="25" r="11" fill="#fffcf4"/><ellipse cx="24" cy="25" rx="20" ry="6" transform="rotate(-20 24 25)"/><path d="M17 20 C20 17 24 16 27 17" stroke="#efc84a" stroke-width="3"/><path d="M40 5 l1 3 l3 1 l-3 1 l-1 3 l-1 -3 l-3 -1 l3 -1 z" fill="#1e1c18" stroke-width="1"/></g></symbol>
+      <symbol id="m-dragon" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 35 C7 25 15 17 26 17 L37 19 L45 25 L37 27 L42 31 L33 31 C29 35 23 39 17 41 C11 43 6 41 5 35 Z" fill="#fffcf4"/><path d="M19 19 L8 11 L21 15 M24 17 L19 6 L28 16" stroke-width="1.6"/><circle cx="31" cy="22" r="1.5" fill="#1e1c18"/><path d="M41 23 l1 0" stroke-width="2"/><path d="M11 37 C17 36 23 34 28 31" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-horns" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 24 C12 22 7 14 10 5 C13 12 17 16 23 19 Z" fill="#fffcf4"/><path d="M28 24 C36 22 41 14 38 5 C35 12 31 16 25 19 Z" fill="#fffcf4"/><path d="M11 33 C15 25 33 25 37 33"/><path d="M37 33 C41 39 45 38 45 33"/><path d="M45 33 l-3.5 -3 l4.5 -1 z" fill="#1e1c18"/><path d="M10 39 C18 36 28 41 36 38" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-mushroom" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24 C6 11 42 11 42 24 Z" fill="#efc84a"/><path d="M18 24 L16 42 L32 42 L30 24" fill="#fffcf4"/><circle cx="16" cy="19" r="2.2" fill="#fffcf4" stroke-width="1.3"/><circle cx="26" cy="15" r="2.2" fill="#fffcf4" stroke-width="1.3"/><circle cx="34" cy="20" r="1.8" fill="#fffcf4" stroke-width="1.3"/><path d="M10 44 h28" stroke-width="1.4"/></g></symbol>
+      <symbol id="m-leaf" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 40 C10 22 22 10 40 8 C40 28 28 40 10 40 Z" fill="#fffcf4"/><path d="M10 40 L31 17 M18 32 l7 1 M24 25 l7 1" stroke-width="1.4"/><path d="M6 44 C13 41 17 45 25 42" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-war-axe" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 42 L33 16"/><path d="M27 8 C37 5 46 12 44 22 C38 18 32 18 28 22 C30 16 30 12 27 8 Z" fill="#fffcf4"/><path d="M7 40 l6 6"/><path d="M12 33 l5 5" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-lizard" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4 C27 4 29 8 27 12 L26 30 C26 36 22 40 13 44 C19 38 22 34 22 30 L21 12 C19 8 19 4 22 4 Z" fill="#fffcf4"/><path d="M22 16 L13 12 M26 16 L35 12 M22 26 L13 30 M26 26 L35 30"/><path d="M13 12 l-3 -2 M35 12 l3 -2 M13 30 l-3 2 M35 30 l3 2" stroke-width="1.3"/><circle cx="23.5" cy="7.5" r="1" fill="#1e1c18"/><path d="M23.5 17 v8" stroke="#efc84a" stroke-width="2.6"/></g></symbol>
+      <symbol id="m-katana" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 32 C24 24 33 14 42 4 C41 10 35 18 19 35 Z" fill="#fffcf4"/><ellipse cx="17" cy="33" rx="5.5" ry="2.6" transform="rotate(-45 17 33)" fill="#efc84a"/><path d="M15 35 L6 44"/><path d="M8 40 l2 2 M11 37 l2 2" stroke-width="1.2"/></g></symbol>
+      <symbol id="m-cauldron" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 18 H40"/><path d="M10 18 C8 30 14 40 24 40 C34 40 40 30 38 18" fill="#fffcf4"/><path d="M14 40 l-2 4 M34 40 l2 4"/><path d="M16 14 c0 -4 4 -4 4 -8 M26 14 c0 -3 3 -3 3 -6" stroke-width="1.3"/><path d="M12 23 C20 26 28 26 36 23" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-leaf-moon" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 42 C8 26 18 16 34 14 C34 30 24 40 8 42 Z" fill="#fffcf4"/><path d="M8 42 L26 22 M15 35 l6 1" stroke-width="1.4"/><path d="M36 4 a7 7 0 1 0 7 9 a5.5 5.5 0 1 1 -7 -9 z" fill="#efc84a"/></g></symbol>
+      <symbol id="m-round-shield" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18" fill="#fffcf4"/><circle cx="24" cy="24" r="5" fill="#efc84a"/><path d="M24 6 V19 M24 29 V42 M6 24 H19 M29 24 H42" stroke-width="1.3"/></g></symbol>
+      <symbol id="m-flame" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 C28 13 36 17 36 29 C36 37 30 43 24 43 C17 43 12 37 12 30 C12 23 17 20 18 14 C22 18 22 22 24 24 C26 18 25 11 24 5 Z" fill="#fffcf4"/><path d="M24 43 C20 41 19 35 23 31 C24 35 27 35 27 38 C27 41 26 42 24 43 Z" fill="#efc84a"/></g></symbol>
+      <symbol id="m-wings" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 24 C18 9 6 7 8 17 C9 23 16 25 24 24 Z" fill="#fffcf4"/><path d="M24 24 C30 9 42 7 40 17 C39 23 32 25 24 24 Z" fill="#fffcf4"/><path d="M24 24 C18 30 11 39 17 42 C21 44 24 33 24 24 Z" fill="#efc84a"/><path d="M24 24 C30 30 37 39 31 42 C27 44 24 33 24 24 Z" fill="#fffcf4"/><path d="M24 18 V34" stroke-width="1.4"/></g></symbol>
+      <symbol id="m-sword" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(35 24 24)"><path d="M24 2 L28 8 L28 30 L20 30 L20 8 Z" fill="#fffcf4"/><path d="M24 9 V28" stroke-width="1.2"/><path d="M14 30 H34"/><path d="M24 30 V41"/><circle cx="24" cy="43.5" r="2.4" fill="#efc84a"/></g></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../categories/fantasy-names.html">Fantasy</a> / <span aria-current="page">D&amp;D Fantasy Name Generator</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">D&amp;D</span> Fantasy Name Generator</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-d20"/></svg>
             </div>
-        </div>
-    </nav>
+            <p class="lede">Names for every common race in one place, or a random party at the tavern door.</p>
 
-    <div class="container">
-        <header class="blog-hero">
-            <h1>⚔️ D&amp;D Fantasy Name Generator</h1>
-            <p class="tagline">Names for every common race in one place, or a random party at the tavern door.</p>
-            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
-        </header>
-
-        <main>
-            <section class="embedded-generator">
-                <div class="generator-card">
-                    <h2>Generate D&amp;D Fantasy Names</h2>
-                    <p class="generator-description">D&amp;D character names for every common race, with a family or clan name, or a whole random party: a dwarf, a tiefling, a halfling and a dragonborn at once.</p>
-                    
-                    <div class="simple-generator">
-                        <div class="filters">
-          <div class="filter-group">
-            <label for="filter-gender">Gender:</label>
-            <select id="filter-gender" name="gender" data-filter="gender">
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-            </select>
+            <section class="sheet hd simple-generator" id="generator" aria-label="D&amp;D Fantasy Name Generator">
+                <div class="gen-grid">
+          <div class="group" role="group" aria-labelledby="filter-gender-label">
+            <div class="label"><span id="filter-gender-label">Gender</span><span class="pen" data-hint-for="gender" aria-hidden="true"></span></div>
+            <div class="opts" data-buttons-for="gender">
+              <button type="button" class="opt hd tap" data-value="male" data-hint="" aria-pressed="true">Male</button>
+              <button type="button" class="opt hd tap" data-value="female" data-hint="" aria-pressed="false">Female</button>
+            </div>
+            <input type="hidden" id="filter-gender" name="gender" data-filter="gender" value="male">
           </div>
 
-          <div class="filter-group">
-            <label for="filter-race">Race:</label>
-            <select id="filter-race" name="race" data-filter="race">
-              <option value="any">Any race (a random party)</option>
-              <option value="human">Human</option>
-              <option value="elf">Elf</option>
-              <option value="dwarf">Dwarf</option>
-              <option value="halfling">Halfling</option>
-              <option value="gnome">Gnome</option>
-              <option value="half_elf">Half-elf</option>
-              <option value="half_orc">Half-orc</option>
-              <option value="tiefling">Tiefling</option>
-              <option value="dragonborn">Dragonborn</option>
-            </select>
+          <div class="group">
+            <label class="label" for="filter-race">Race</label>
+            <div class="ctl sel hd">
+              <select id="filter-race" name="race" data-filter="race">
+                <option value="any">Any race (a random party)</option>
+                <option value="human">Human</option>
+                <option value="elf">Elf</option>
+                <option value="dwarf">Dwarf</option>
+                <option value="halfling">Halfling</option>
+                <option value="gnome">Gnome</option>
+                <option value="half_elf">Half-elf</option>
+                <option value="half_orc">Half-orc</option>
+                <option value="tiefling">Tiefling</option>
+                <option value="dragonborn">Dragonborn</option>
+              </select>
+            </div>
           </div></div>
-                        <div class="generator-controls">
-                            <div class="filter-group count-group">
-                                <label for="name-count">How many:</label>
-                                <select id="name-count">
-                                    <option value="8" selected>8 names</option>
-                                    <option value="16">16 names</option>
-                                    <option value="32">32 names</option>
-                                </select>
-                            </div>
-                            <button id="generate-btn" class="generate-button">Generate Names</button>
-                        </div>
-                        <div class="results-area" id="results">
-                            <p class="results-placeholder">Click "Generate Names" to see results</p>
-                        </div>
-                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
-                        <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="true">
+                    <p class="results-empty">Press Generate Names for 8 d&amp;d fantasy names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
                     </div>
-                    
-                    <div class="cta-box">
-                        <p><strong>Need more options?</strong></p>
-                        <a href="../index.html" class="cta-button">Try the Ultimate Random Name Generator →</a>
-                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
+
+            <section class="section example-names">
+                <h2>Example D&amp;D Fantasy Names</h2>
+                <p class="sub">A few names this generator came up with. Tap one to copy it, or press "Generate Names" above for more.</p>
+                <div class="ex">
+                <div class="exbox hd">
+                    <h3>Male · Any race</h3>
+                    <ul>
+                        <li>Nazzaravor Nazhar, dragonborn</li>
+                        <li>Magni Horvan, human</li>
+                        <li>Lorvanthesk Hazrith, dragonborn</li>
+                        <li>Darian Celenthir, half-elf</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Male · Dwarf</h3>
+                    <ul>
+                        <li>Kormund Barleybelly</li>
+                        <li>Ulfok Alekettle</li>
+                        <li>Hornik Meadfield</li>
+                        <li>Hordrin Copperdelve</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Male · Half-elf</h3>
+                    <ul>
+                        <li>Sylvarin Dhaerith</li>
+                        <li>Matthias Vance</li>
+                        <li>Vaelis Oakley</li>
+                        <li>Dorian Ashford</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Female · Any race</h3>
+                    <ul>
+                        <li>Effiwick Bramwick, gnome</li>
+                        <li>Eliphae Thaelindor, half-elf</li>
+                        <li>Belfrid Copperbrow, dwarf</li>
+                        <li>Faelwen Faerendil, half-elf</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Female · Dwarf</h3>
+                    <ul>
+                        <li>Bryndra Turfmug</li>
+                        <li>Thydra Granitemantle</li>
+                        <li>Torlis Hillbelly</li>
+                        <li>Helvor Meadhollow</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Female · Half-elf</h3>
+                    <ul>
+                        <li>Thaliel Northcott</li>
+                        <li>Ylsa Amarethil</li>
+                        <li>Clarice Vaeranth</li>
+                        <li>Miraen Redfern</li>
+                    </ul>
+                </div>
                 </div>
             </section>
 
-            <section class="example-names">
-                <h2>Example D&amp;D Fantasy Names</h2>
-                <p>A few names this generator came up with. Press "Generate Names" above for more.</p>
-                <h3>Male · Any race</h3>
-                <ul class="name-results">
-                    <li>Nazzaravor Nazhar, dragonborn</li>
-                    <li>Magni Horvan, human</li>
-                    <li>Lorvanthesk Hazrith, dragonborn</li>
-                    <li>Darian Celenthir, half-elf</li>
-                </ul>
-                <h3>Male · Dwarf</h3>
-                <ul class="name-results">
-                    <li>Kormund Barleybelly</li>
-                    <li>Ulfok Alekettle</li>
-                    <li>Hornik Meadfield</li>
-                    <li>Hordrin Copperdelve</li>
-                </ul>
-                <h3>Male · Half-elf</h3>
-                <ul class="name-results">
-                    <li>Sylvarin Dhaerith</li>
-                    <li>Matthias Vance</li>
-                    <li>Vaelis Oakley</li>
-                    <li>Dorian Ashford</li>
-                </ul>
-                <h3>Female · Any race</h3>
-                <ul class="name-results">
-                    <li>Effiwick Bramwick, gnome</li>
-                    <li>Eliphae Thaelindor, half-elf</li>
-                    <li>Belfrid Copperbrow, dwarf</li>
-                    <li>Faelwen Faerendil, half-elf</li>
-                </ul>
-                <h3>Female · Dwarf</h3>
-                <ul class="name-results">
-                    <li>Bryndra Turfmug</li>
-                    <li>Thydra Granitemantle</li>
-                    <li>Torlis Hillbelly</li>
-                    <li>Helvor Meadhollow</li>
-                </ul>
-                <h3>Female · Half-elf</h3>
-                <ul class="name-results">
-                    <li>Thaliel Northcott</li>
-                    <li>Ylsa Amarethil</li>
-                    <li>Clarice Vaeranth</li>
-                    <li>Miraen Redfern</li>
-                </ul>
-            </section>
-
-            <section class="blog-content how-it-works">
+            <section class="section how-it-works">
                 <h2>How the D&amp;D Fantasy Name Generator Works</h2>
+                <div class="howto hd">
                 <p>It works from 2,516 names and name parts, which combine into over 370,000 possible results.</p>
                 <p>The choices:</p>
                 <ul><li><strong>Gender:</strong> Male, Female.</li><li><strong>Race:</strong> Any race, Human, Elf, Dwarf, Halfling, Gnome, Half-elf, Half-orc, Tiefling, Dragonborn.</li></ul>
-                <p>Each press gives you 8, 16 or 32 names (choose under "How many"), and you won't see the same one twice until you've been through everything for the choices you've made.</p>
+                <p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet, until the names for the choices you've made run out.</p>
+                </div>
             </section>
 
-            <article class="blog-content" itemscope itemtype="https://schema.org/Article">
+            <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="D&amp;D Fantasy Name Generator">
                 <meta itemprop="description" content="D&amp;D character names for every common race, with a family or clan name, or a whole random party: a dwarf, a tiefling, a halfling and a dragonborn at once.">
-                <section itemprop="articleBody">
-                    <p>Need a name for whoever's just walked into the tavern? This <strong>D&amp;D fantasy name generator</strong> gives you a first and family name for any of the common races, each in that race's own naming style, or a whole random party at once: a dwarf, a tiefling, a halfling and a dragonborn, with their races beside their names.</p>
-                </section>
+                <div itemprop="articleBody">
+                <p class="big">Need a name for whoever's just walked into the tavern? This <strong>D&amp;D fantasy name generator</strong> gives you a first and family name for any of the common races, each in that race's own naming style, or a whole random party at once: a dwarf, a tiefling, a halfling and a dragonborn, with their races beside their names.</p>
                 
-      <section>
-        <h2>Each race names itself differently</h2>
-        <ul><li><strong>Humans</strong> in the Forgotten Realms have regional styles, like Chondathan and Illuskan, much as real countries do.</li><li><strong>Elves</strong> have a family name that translates into Common, and only take an adult name after about a century.</li><li><strong>Dwarves</strong> carry a clan name and guard their family's honour fiercely.</li><li><strong>Halflings</strong> and <strong>gnomes</strong> are fond of nicknames; gnomes can have half a dozen names.</li><li><strong>Dragonborn</strong> give their clan name first, before their own.</li><li><strong>Tieflings</strong> often have infernal names, or take a virtue as a name instead.</li></ul><p>The generator follows each race's pattern, so a dragonborn comes out clan first.</p>
-      </section>
-    
+                <h2>Each race names itself differently</h2>
+                <ul><li><strong>Humans</strong> in the Forgotten Realms have regional styles, like Chondathan and Illuskan, much as real countries do.</li><li><strong>Elves</strong> have a family name that translates into Common, and only take an adult name after about a century.</li><li><strong>Dwarves</strong> carry a clan name and guard their family's honour fiercely.</li><li><strong>Halflings</strong> and <strong>gnomes</strong> are fond of nicknames; gnomes can have half a dozen names.</li><li><strong>Dragonborn</strong> give their clan name first, before their own.</li><li><strong>Tieflings</strong> often have infernal names, or take a virtue as a name instead.</li></ul><p>The generator follows each race's pattern, so a dragonborn comes out clan first.</p>
 
-      <section>
-        <h2>Names for NPCs on the fly</h2>
-        <ul><li><strong>Generate a batch before the session.</strong> Keep a list of names by race so you never have to stop and think when a player asks the innkeeper's name.</li><li><strong>Use "Any race" for crowds.</strong> A random party is perfect for a rival adventuring group, a tavern full of strangers or a caravan.</li><li><strong>Cross out the ones you use</strong>, and write a word beside each: "nervous", "owes money". That's an NPC.</li></ul>
-      </section>
-    
+                <h2>Names for NPCs on the fly</h2>
+                <ul><li><strong>Generate a batch before the session.</strong> Keep a list of names by race so you never have to stop and think when a player asks the innkeeper's name.</li><li><strong>Use "Any race" for crowds.</strong> A random party is perfect for a rival adventuring group, a tavern full of strangers or a caravan.</li><li><strong>Cross out the ones you use</strong>, and write a word beside each: "nervous", "owes money". That's an NPC.</li></ul>
 
-      <section>
-        <h2>More names for each race</h2>
-        <p>Each race has its own page with more options and the story behind its names: <a href="dnd-human-name-generator.html">Human</a>, <a href="elf-name-generator.html">Elf</a>, <a href="dwarf-name-generator.html">Dwarf</a>, <a href="halfling-name-generator.html">Halfling</a>, <a href="gnome-name-generator.html">Gnome</a>, <a href="half-elf-name-generator.html">Half-Elf</a>, <a href="half-orc-name-generator.html">Half-Orc</a>, <a href="tiefling-name-generator.html">Tiefling</a> and <a href="dragonborn-name-generator.html">Dragonborn</a>. The <a href="../categories/dnd-names.html">D&amp;D names hub</a> has everything else, from taverns to goblins.</p>
-      </section>
-    
+                <h2>More names for each race</h2>
+                <p>Each race has its own page with more options and the story behind its names: <a href="dnd-human-name-generator.html">Human</a>, <a href="elf-name-generator.html">Elf</a>, <a href="dwarf-name-generator.html">Dwarf</a>, <a href="halfling-name-generator.html">Halfling</a>, <a href="gnome-name-generator.html">Gnome</a>, <a href="half-elf-name-generator.html">Half-Elf</a>, <a href="half-orc-name-generator.html">Half-Orc</a>, <a href="tiefling-name-generator.html">Tiefling</a> and <a href="dragonborn-name-generator.html">Dragonborn</a>. The <a href="../categories/dnd-names.html">D&amp;D names hub</a> has everything else, from taverns to goblins.</p>
+                </div>
             </article>
 
-            
-      <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-          
-            <div class="faq-item">
-              <h3 class="faq-question">What races does it cover?</h3>
-              <p class="faq-answer">Human, elf, dwarf, halfling, gnome, half-elf, half-orc, tiefling and dragonborn, the common races of D&D. Choose "Any race" for a random mix.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Are these the names from the Player's Handbook?</h3>
-              <p class="faq-answer">No. They're new names in each race's style, drawn from this site's race generators, so your characters won't share a name with the book's examples.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Can I use these names in my campaign?</h3>
-              <p class="faq-answer">Yes, they're free to use and you don't need to credit the site.</p>
-            </div>
-          
-        </div>
-      </section>
-            
-      <section class="related-section">
-        <h2>Related Name Generators</h2>
-        <div class="related-grid" id="related-generators">
-          <a href="../posts/fantasy-city-name-generator.html" class="related-card">
-            <h3>🏰 Fantasy City Name Generator</h3>
-            <p>Fantasy city names for capitals, fortresses, ports, northern holds, ancient ruins and river towns, with an epithet if you want one: &quot;the City of Bells&quot;.</p>
-          </a>
-          <a href="../posts/fantasy-country-name-generator.html" class="related-card">
-            <h3>🗺️ Fantasy Country Name Generator</h3>
-            <p>Fantasy country and kingdom names in six styles, from elvish realms and Norse jarldoms to Latin empires and island thalassocracies, with or without a title.</p>
-          </a>
-          <a href="../posts/fantasy-town-name-generator.html" class="related-card">
-            <h3>🏘️ Fantasy Town Name Generator</h3>
-            <p>Fantasy town and village names built the way real English place names are, for farming villages, fishing ports, mining towns, abbeys, market towns and more.</p>
-          </a>
-          <a href="../posts/fantasy-shop-name-generator.html" class="related-card">
-            <h3>🏪 Fantasy Shop Name Generator</h3>
-            <p>Names for magic shops, blacksmiths, potion sellers, general stores and more in your D&amp;D town, built the way real shop signs work: an owner, a trade or a painted sign.</p>
-          </a>
-          <a href="../posts/alien-name-generator.html" class="related-card">
-            <h3>👽 Alien Name Generator</h3>
-            <p>Alien names that sound like they come from a real species: clicking insectoids, liquid-voiced aquatics, beings named like Hums-at-Dawn, and galactic nobility.</p>
-          </a>
-          <a href="../posts/angel-name-generator.html" class="related-card">
-            <h3>😇 Angel Name Generator</h3>
-            <p>Angel names from scripture and tradition with their Hebrew meanings, or new ones in the same style, with a choir, a domain or an epithet.</p>
-          </a>
-        </div>
-      </section>
-            
-      <section class="category-generators-section">
-        <h2>All Fantasy Name Generators</h2>
-        <div class="category-generators-grid" id="category-generators">
-          <a href="../posts/tiefling-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">😈</span>
-            <span class="category-generator-title">Tiefling Name Generator</span>
-          </a>
-          <a href="../posts/dragonborn-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🐲</span>
-            <span class="category-generator-title">Dragonborn Name Generator</span>
-          </a>
-          <a href="../posts/halfling-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🍀</span>
-            <span class="category-generator-title">Halfling Name Generator</span>
-          </a>
-          <a href="../posts/gnome-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🍄</span>
-            <span class="category-generator-title">Gnome Name Generator</span>
-          </a>
-          <a href="../posts/elf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧝</span>
-            <span class="category-generator-title">Elf Name Generator</span>
-          </a>
-          <a href="../posts/half-elf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧝‍♂️</span>
-            <span class="category-generator-title">Half-Elf Name Generator</span>
-          </a>
-          <a href="../posts/dwarf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⛏️</span>
-            <span class="category-generator-title">Dwarf Name Generator</span>
-          </a>
-          <a href="../posts/dragon-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🐉</span>
-            <span class="category-generator-title">Dragon Name Generator</span>
-          </a>
-          <a href="../posts/wizard-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧙</span>
-            <span class="category-generator-title">Wizard Name Generator</span>
-          </a>
-          <a href="../posts/orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">Orc Name Generator</span>
-          </a>
-          <a href="../posts/skyrim-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">Skyrim Orc Name Generator</span>
-          </a>
-          <a href="../posts/warhammer-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">Warhammer Orc Name Generator</span>
-          </a>
-          <a href="../posts/wow-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">World of Warcraft Orc Name Generator</span>
-          </a>
-          <a href="../posts/lotr-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">LOTR Orc Name Generator</span>
-          </a>
-          <a href="../posts/half-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">Half-Orc Name Generator</span>
-          </a>
-          <a href="../posts/goblin-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">👺</span>
-            <span class="category-generator-title">Goblin Name Generator</span>
-          </a>
-          <a href="../posts/kobold-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🦎</span>
-            <span class="category-generator-title">Kobold Name Generator</span>
-          </a>
-          <a href="../posts/lizardfolk-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🐊</span>
-            <span class="category-generator-title">Lizardfolk Name Generator</span>
-          </a>
-          <a href="../posts/githyanki-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Githyanki Name Generator</span>
-          </a>
-          <a href="../posts/fantasy-town-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🏘️</span>
-            <span class="category-generator-title">Fantasy Town Name Generator</span>
-          </a>
-          <a href="../posts/fantasy-country-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🗺️</span>
-            <span class="category-generator-title">Fantasy Country Name Generator</span>
-          </a>
-          <a href="../posts/swamp-witch-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧙‍♀️</span>
-            <span class="category-generator-title">Swamp Witch Name Generator</span>
-          </a>
-          <a href="../posts/path-of-exile-witch-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🔮</span>
-            <span class="category-generator-title">Path of Exile Witch Name Generator</span>
-          </a>
-          <a href="../posts/funny-wizard-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🎩</span>
-            <span class="category-generator-title">Funny Wizard Name Generator</span>
-          </a>
-          <a href="../posts/high-elf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">👑</span>
-            <span class="category-generator-title">High Elf Name Generator</span>
-          </a>
-          <a href="../posts/wood-elf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🌲</span>
-            <span class="category-generator-title">Wood Elf Name Generator</span>
-          </a>
-          <a href="../posts/dark-elf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🌑</span>
-            <span class="category-generator-title">Dark Elf Name Generator</span>
-          </a>
-          <a href="../posts/clan-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🛡️</span>
-            <span class="category-generator-title">Clan Name Generator</span>
-          </a>
-          <a href="../posts/demon-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">😈</span>
-            <span class="category-generator-title">Demon Name Generator</span>
-          </a>
-          <a href="../posts/demon-epithet-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🔥</span>
-            <span class="category-generator-title">Demon Epithet Generator</span>
-          </a>
-          <a href="../posts/fantasy-city-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🏰</span>
-            <span class="category-generator-title">Fantasy City Name Generator</span>
-          </a>
-          <a href="../posts/angel-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">😇</span>
-            <span class="category-generator-title">Angel Name Generator</span>
-          </a>
-          <a href="../posts/alien-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">👽</span>
-            <span class="category-generator-title">Alien Name Generator</span>
-          </a>
-          <a href="../posts/fairy-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧚</span>
-            <span class="category-generator-title">Fairy Name Generator</span>
-          </a>
-          <a href="../posts/fairy-town-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧚‍♀️</span>
-            <span class="category-generator-title">Fairy Town Name Generator</span>
-          </a>
-          <a href="../posts/elven-sword-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Elven Sword Name Generator</span>
-          </a>
-        </div>
-      </section>
-        </main>
+            <section class="section faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>What races does it cover?</summary>
+                        <div>Human, elf, dwarf, halfling, gnome, half-elf, half-orc, tiefling and dragonborn, the common races of D&D. Choose "Any race" for a random mix.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Are these the names from the Player's Handbook?</summary>
+                        <div>No. They're new names in each race's style, drawn from this site's race generators, so your characters won't share a name with the book's examples.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Can I use these names in my campaign?</summary>
+                        <div>Yes, they're free to use and you don't need to credit the site.</div>
+                    </details>
+                </div>
+            </section>
 
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+            <section class="section related-section">
+                <h2>Related Name Generators</h2>
+                <div class="genlist" id="related-generators">
+                    <a href="../posts/fantasy-city-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-castle"/></svg><div><b>Fantasy City Name Generator</b><span>Fantasy city names for capitals, fortresses, ports, northern holds, ancient ruins and river towns, with an epithet if you want one: &quot;the City of Bells&quot;.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fantasy-country-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-map"/></svg><div><b>Fantasy Country Name Generator</b><span>Fantasy country and kingdom names in six styles, from elvish realms and Norse jarldoms to Latin empires and island thalassocracies, with or without a title.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fantasy-town-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-house"/></svg><div><b>Fantasy Town Name Generator</b><span>Fantasy town and village names built the way real English place names are, for farming villages, fishing ports, mining towns, abbeys, market towns and more.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fantasy-shop-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-map"/></svg><div><b>Fantasy Shop Name Generator</b><span>Names for magic shops, blacksmiths, potion sellers, general stores and more in your D&amp;D town, built the way real shop signs work: an owner, a trade or a painted sign.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/alien-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-planet"/></svg><div><b>Alien Name Generator</b><span>Alien names that sound like they come from a real species: clicking insectoids, liquid-voiced aquatics, beings named like Hums-at-Dawn, and galactic nobility.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/angel-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Angel Name Generator</b><span>Angel names from scripture and tradition with their Hebrew meanings, or new ones in the same style, with a choir, a domain or an epithet.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
+
+            <section class="section category-generators-section">
+                <h2>More Fantasy Name Generators</h2>
+                <div class="genlist compact" id="category-generators">
+                    <a href="../posts/tiefling-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-horns"/></svg><div><b>Tiefling Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/dragonborn-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Dragonborn Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/halfling-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-d20"/></svg><div><b>Halfling Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/gnome-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Gnome Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/elf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf"/></svg><div><b>Elf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/half-elf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf"/></svg><div><b>Half-Elf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/dwarf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Dwarf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/dragon-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Dragon Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/wizard-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Wizard Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/skyrim-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>Skyrim Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/warhammer-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>Warhammer Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/wow-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>World of Warcraft Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/lotr-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>LOTR Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/half-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>Half-Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/goblin-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-d20"/></svg><div><b>Goblin Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/kobold-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-lizard"/></svg><div><b>Kobold Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/lizardfolk-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-lizard"/></svg><div><b>Lizardfolk Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/githyanki-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-katana"/></svg><div><b>Githyanki Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fantasy-town-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-house"/></svg><div><b>Fantasy Town Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fantasy-country-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-map"/></svg><div><b>Fantasy Country Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/swamp-witch-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-cauldron"/></svg><div><b>Swamp Witch Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/path-of-exile-witch-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Path of Exile Witch Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/funny-wizard-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Funny Wizard Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/high-elf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf"/></svg><div><b>High Elf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/wood-elf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf"/></svg><div><b>Wood Elf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/dark-elf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf-moon"/></svg><div><b>Dark Elf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/clan-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-round-shield"/></svg><div><b>Clan Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/demon-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-horns"/></svg><div><b>Demon Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/demon-epithet-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-flame"/></svg><div><b>Demon Epithet Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fantasy-city-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-castle"/></svg><div><b>Fantasy City Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/angel-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Angel Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/alien-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-planet"/></svg><div><b>Alien Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fairy-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-wings"/></svg><div><b>Fairy Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fairy-town-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Fairy Town Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/elven-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Elven Sword Name Generator</b></div><em aria-hidden="true">→</em></a>
+                </div>
+                <p class="all-link"><a href="../categories/fantasy-names.html">All Fantasy name generators</a></p>
+            </section>
+            <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
 
     <script type="application/json" id="generator-config">{"title":"D&D Fantasy Name Generator","slug":"dnd-fantasy-name-generator","filters":{"gender":{"label":"Gender","options":["male","female"],"optionLabels":{"male":"Male","female":"Female"}},"race":{"label":"Race","options":["any","human","elf","dwarf","halfling","gnome","half_elf","half_orc","tiefling","dragonborn"],"optionLabels":{"any":"Any race (a random party)","human":"Human","elf":"Elf","dwarf":"Dwarf","halfling":"Halfling","gnome":"Gnome","half_elf":"Half-elf","half_orc":"Half-orc","tiefling":"Tiefling","dragonborn":"Dragonborn"}}},"recipe":"switch","on":"race","cases":{"any":{"recipe":"template","template":["[first.human.{gender}] [family.human], human","[first.elf.{gender}] [family.elf], elf","[first.dwarf.{gender}] [family.dwarf], dwarf","[first.halfling.{gender}] [family.halfling], halfling","[first.gnome.{gender}] [family.gnome], gnome","[first.half_elf.{gender}] [family.half_elf], half-elf","[first.half_orc.{gender}] [family.half_orc], half-orc","[first.tiefling.{gender}], tiefling","[family.dragonborn] [first.dragonborn.{gender}], dragonborn"]},"human":{"recipe":"template","template":"[first.human.{gender}] [family.human]"},"elf":{"recipe":"template","template":"[first.elf.{gender}] [family.elf]"},"dwarf":{"recipe":"template","template":"[first.dwarf.{gender}] [family.dwarf]"},"halfling":{"recipe":"template","template":"[first.halfling.{gender}] [family.halfling]"},"gnome":{"recipe":"template","template":"[first.gnome.{gender}] [family.gnome]"},"half_elf":{"recipe":"template","template":"[first.half_elf.{gender}] [family.half_elf]"},"half_orc":{"recipe":"template","template":"[first.half_orc.{gender}] [family.half_orc]"},"tiefling":{"recipe":"template","template":"[first.tiefling.{gender}]"},"dragonborn":{"recipe":"template","template":"[family.dragonborn] [first.dragonborn.{gender}]"}},"data":{"first":{"human":{"male":["Aldwin","Bram","Cedric","Davin","Edric","Fenwick","Garret","Harlan","Jory","Kellen","Lorne","Marten","Nevin","Osric","Perrin","Roland","Stefan","Tobin","Wendel","Ansel","Brennan","Corwin","Darian","Elden","Gavin","Arnulf","Bjarn","Dagr","Einar","Fask","Grimr","Haldor","Ivarr","Kjeld","Lothar","Magni","Njorn","Orvar","Ragn","Sten","Torfi","Ulfr","Vali","Asgar","Brodd","Eskil","Gudmar","Hauk","Ottar","Rurik","Andrej","Borislav","Dmitar","Fedor","Grigor","Ivo","Jaroslav","Kazimir","Lev","Miroslav","Nikolai","Oleg","Pavel","Radek","Stanislav","Tomislav","Vadim","Yaroslav","Zoran","Bogdan","Danilo","Goran","Milan","Rostislav","Vlasko"],"female":["Adela","Brynn","Celeste","Delia","Elowen","Freya","Gwenna","Hester","Imogen","Jessamy","Kendra","Linnet","Marisa","Nessa","Odile","Rosalind","Selene","Tamsin","Vivian","Alys","Brielle","Corra","Dorinda","Evaine","Aslaug","Bryndis","Dagrun","Eira","Frida","Gerd","Hallveig","Inga","Jofrid","Kelda","Liv","Nanna","Oddny","Ragna","Sigga","Thyri","Una","Vigdis","Yrsa","Astra","Brenna","Edda","Gunna","Saga","Agnieska","Bozena","Darina","Elena","Galina","Irina","Jelena","Katarina","Ludmila","Milena","Nadia","Olesya","Radka","Svetlana","Tatyana","Vesna","Yelena","Zora","Anika","Bogna","Danica","Ivanka","Mira","Sonja","Vera"]},"elf":{"male":["Aerin","Caelum","Theron","Eldrin","Varian","Aelthas","Arannor","Belanor","Caerindel","Daelric","Erevar","Faelar","Haldreth","Ilphas","Ivaran","Kethrian","Laeroth","Maelis","Naerion","Orivar","Paelor","Quilaren","Saelvan","Taerith","Thalvaris","Uvanir","Vaelor","Xhaerin","Yrlanth","Zaelin","Aravel","Elvaron","Ilrandir","Mythrin","Sorelion","Tharandel","Velithar","Kaelorn"],"female":["Aeloria","Sylvara","Naivara","Shanairra","Meriele","Aelira","Baelith","Daeliss","Elandra","Faenya","Galaeth","Jhaessa","Kethrynne","Laerys","Maelora","Naeryth","Oriela","Quelenna","Rhaellis","Saevanna","Thaelia","Ulivane","Vaelys","Xilara","Yshara","Zaelyth","Aerilwyn","Belenya","Cirithiel","Faelwen","Ilmaris","Lirathe","Myrrhiel","Shaelira","Tisaren","Vyrelle"]},"dwarf":{"male":["Barin","Bargrim","Bardak","Barnar","Barmund","Barulf","Barbek","Barok","Bardur","Bargar","Barval","Bardrin","Barnik","Borar","Borgrim","Bordak","Bornar","Bormund","Borulf","Borbek","Borok","Bordur","Borgar","Borval","Bordrin","Bornik","Branin","Branar","Branrik","Brangrim","Brandak","Branmund","Branulf","Branbek","Branok","Branrin","Brandur","Brangar","Branval","Brandrin","Dorar","Dorgrim","Dordak","Dornar","Dormund","Dorulf","Dorbek","Dorok","Dordur","Dorgar","Dorval","Dordrin","Dornik","Durar","Durgrim","Durdak","Durnar","Durmund","Durulf","Durbek","Durok","Durgar","Durval","Durdrin","Durnik","Grimin","Grimar","Grimrik","Grimgrim","Grimdak","Grimnar","Grimulf","Grimbek","Grimok","Grimrin","Grimdur","Grimgar","Grimval","Grimdrin","Grimnik","Gargrim","Gardak","Garnar","Garmund","Garulf","Garbek","Garok","Gardur","Garval","Gardrin","Garnik","Halin","Halar","Halrik","Halgrim","Haldak","Halnar","Halmund","Halulf","Halbek","Halok","Halrin","Haldur","Halgar","Halval","Haldrin","Halnik","Horin","Horar","Horgrim","Hordak","Hornar","Hormund","Horulf","Horbek","Horok","Hordur","Horgar","Horval","Hordrin","Hornik","Korin","Korar","Korgrim","Kordak","Kornar","Kormund","Korulf","Korbek","Korok","Kordur","Korgar","Korval","Kordrin","Kornik","Morin","Morar","Morgrim","Mordak","Mornar","Mormund","Morulf","Morbek","Morok","Mordur","Morgar","Morval","Mordrin","Mornik","Norin","Norar","Norgrim","Nordak","Nornar","Normund","Norulf","Norbek","Norok","Nordur","Norgar","Norval","Nordrin","Nornik","Orsin","Orsar","Orsrik","Orsgrim","Orsdak","Orsnar","Orsmund","Orsulf","Orsbek","Orsok","Orsrin","Orsdur","Orsgar","Orsval","Orsdrin","Orsnik","Rurin","Rurar","Rurgrim","Rurdak","Rurnar","Rurmund","Rurbek","Rurok","Rurdur","Rurgar","Rurval","Rurdrin","Rurnik","Thrunin","Thrunar","Thrunrik","Thrungrim","Thrundak","Thrunmund","Thrunulf","Thrunbek","Thrunok","Thrunrin","Thrundur","Thrungar","Thrunval","Thrundrin","Ulfin","Ulfar","Ulfrik","Ulfgrim","Ulfdak","Ulfnar","Ulfmund","Ulfbek","Ulfok","Ulfrin","Ulfdur","Ulfval","Ulfdrin","Ulfnik","Vondin","Vondar","Vondrik","Vondgrim","Vondnar","Vondmund","Vondulf","Vondbek","Vondok","Vondrin","Vondgar","Vondval","Vondnik","Balar","Balrik","Balgrim","Baldak","Balnar","Balmund","Balulf","Balbek","Balok","Balrin","Baldur","Balgar","Balval","Baldrin","Balnik","Bromin","Bromar","Bromrik","Bromgrim","Bromdak","Bromnar","Bromulf","Brombek","Bromok","Bromrin","Bromdur","Bromgar","Bromval","Bromdrin","Bromnik","Dagin","Dagar","Dagrik","Dagdak","Dagnar","Dagmund","Dagulf","Dagbek","Dagok","Dagrin","Dagdur","Dagval","Dagdrin","Dagnik","Gunin","Gunar","Gunrik","Gungrim","Gundak","Gunmund","Gunulf","Gunbek","Gunok","Gunrin","Gundur","Gungar","Gunval","Gundrin","Harin","Hargrim","Hardak","Harnar","Harmund","Harulf","Harok","Hardur","Hargar","Harval","Hardrin","Harnik","Jorin","Jorar","Jorgrim","Jordak","Jornar","Jormund","Jorulf","Jorbek","Jorok","Jordur","Jorgar","Jorval","Jordrin","Jornik","Osin","Osar","Osrik","Osgrim","Osdak","Osnar","Osmund","Osulf","Osbek","Osok","Osrin","Osdur","Osgar","Osval","Osdrin","Osnik","Ragin","Ragar","Ragrik","Ragdak","Ragmund","Ragulf","Ragbek","Ragok","Ragrin","Ragdur","Ragval","Ragdrin","Ragnik","Torin","Torar","Torgrim","Tordak","Tornar","Tormund","Torulf","Torbek","Torok","Tordur","Torgar","Torval","Tordrin","Tornik","Udin","Udar","Udrik","Udgrim","Udnar","Udmund","Udulf","Udbek","Udok","Udrin","Udgar","Udval","Udnik","Vargrim","Vardak","Varnar","Varmund","Varulf","Varbek","Varok","Vardur","Vargar","Varval","Vardrin","Varnik","Brokin","Brokar","Brokrik","Brokgrim","Brokdak","Broknar","Brokmund","Brokulf","Brokbek","Brokrin","Brokdur","Brokgar","Brokval","Brokdrin","Broknik","Skar","Skrik","Skgrim","Skdak","Sknar","Skmund","Skulf","Skbek","Skok","Skrin","Skdur","Skgar","Skval","Skdrin","Sknik"],"female":["Adhild","Adrun","Adra","Adwyn","Adna","Adgrid","Adla","Advor","Adfrid","Adith","Adlis","Adgerd","Barhild","Bardis","Barwyn","Barna","Bargrid","Barla","Barvor","Bardra","Barfrid","Barith","Barlis","Bargerd","Daghild","Dagdis","Dagrun","Dagra","Dagwyn","Dagna","Dagla","Dagvor","Dagdra","Dagfrid","Dagith","Daglis","Eldhild","Eldrun","Eldra","Eldwyn","Eldna","Eldgrid","Eldla","Eldvor","Eldfrid","Eldith","Eldlis","Eldgerd","Gunhild","Gundis","Gunra","Gunwyn","Gungrid","Gunla","Gunvor","Gundra","Gunfrid","Gunith","Gunlis","Gungerd","Helhild","Heldis","Helrun","Helra","Helwyn","Helna","Helgrid","Helvor","Heldra","Helfrid","Helith","Helgerd","Hilrun","Hilra","Hilwyn","Hilna","Hilgrid","Hilvor","Hildra","Hilfrid","Hilith","Hilgerd","Inghild","Ingdis","Ingrun","Ingra","Ingwyn","Ingna","Ingla","Ingvor","Ingdra","Ingfrid","Ingith","Inglis","Kathild","Katdis","Katrun","Katra","Katwyn","Katna","Katgrid","Katla","Katvor","Katdra","Katfrid","Katith","Katlis","Katgerd","Marhild","Mardis","Marwyn","Marna","Margrid","Marvor","Mardra","Marfrid","Marith","Marlis","Margerd","Raghild","Ragdis","Ragrun","Ragra","Ragwyn","Ragna","Ragla","Ragvor","Ragdra","Ragfrid","Ragith","Raglis","Sighild","Sigdis","Sigrun","Sigra","Sigwyn","Signa","Sigla","Sigvor","Sigdra","Sigfrid","Sigith","Siglis","Thyhild","Thydis","Thyrun","Thyra","Thywyn","Thyna","Thygrid","Thyla","Thyvor","Thydra","Thyfrid","Thyith","Thylis","Thygerd","Torhild","Tordis","Torwyn","Torna","Torgrid","Torla","Torvor","Tordra","Torfrid","Torith","Torlis","Torgerd","Ulhild","Uldis","Ulrun","Ulra","Ulwyn","Ulna","Ulgrid","Ulvor","Uldra","Ulfrid","Ulith","Ulgerd","Veshild","Vesdis","Vesrun","Vesra","Veswyn","Vesna","Vesgrid","Vesla","Vesvor","Vesdra","Vesfrid","Vesith","Veslis","Vesgerd","Brynhild","Brynrun","Brynra","Brynwyn","Bryngrid","Brynla","Brynvor","Bryndra","Brynfrid","Brynith","Brynlis","Bryngerd","Falhild","Faldis","Falrun","Falra","Falwyn","Falna","Falgrid","Falvor","Faldra","Falfrid","Falith","Falgerd","Hrafhild","Hrafdis","Hrafrun","Hrafra","Hrafwyn","Hrafna","Hrafgrid","Hrafla","Hrafvor","Hrafdra","Hrafith","Hraflis","Hrafgerd","Osthild","Ostdis","Ostrun","Ostra","Ostwyn","Ostna","Ostgrid","Ostla","Ostvor","Ostdra","Ostfrid","Ostith","Ostlis","Ostgerd","Belhild","Beldis","Belrun","Belwyn","Belna","Belgrid","Belvor","Beldra","Belfrid","Belith","Belgerd","Dorhild","Dordis","Dorwyn","Dorna","Dorgrid","Dorla","Dorvor","Dordra","Dorfrid","Dorith","Dorlis","Dorgerd","Jorhild","Jordis","Jorwyn","Jorna","Jorgrid","Jorla","Jorvor","Jordra","Jorfrid","Jorith","Jorlis","Jorgerd","Nerhild","Nerdis","Nerwyn","Nerna","Nergrid","Nerla","Nervor","Nerdra","Nerfrid","Nerith","Nerlis","Nergerd"]},"halfling":{"male":["Abel","Alden","Barnaby","Bartle","Benno","Bram","Cobb","Corwin","Dalby","Dobbin","Ebbin","Edric","Fenwick","Ferris","Garvey","Gilly","Hob","Jory","Kip","Lenny","Lobb","Marten","Merrin","Ned","Nob","Ollie","Pip","Quincy","Rafe","Rollo","Rudy","Tobin","Todd","Tully","Wat","Wilby","Wendel"],"female":["Adela","Amity","Bella","Briar","Bryony","Clover","Daisy","Dora","Elsie","Fern","Fia","Ginny","Hazel","Hetty","Ivy","Jessa","Kitty","Lark","Lettie","Linnet","Mabel","Marigold","Minnie","Nell","Nettie","Pansy","Peony","Poppy","Primrose","Saffi","Sorrel","Tansy","Tilly","Wren","Winnie","Bree","Juniper"]},"gnome":{"male":["Alby","Bandle","Bibbin","Dabbock","Fennick","Fizwick","Gabble","Gilliby","Jinkle","Kibbet","Nackwin","Nimbo","Orrick","Pemble","Quillin","Ribbock","Snorbin","Tibble","Tobbin","Wimbly","Zibbit","Zandock","Boddle","Dimwick","Fonzel","Gerrin","Jebbit","Kelvo","Morrible","Pockett","Bartleby","Cobbin","Dorrick","Flick"],"female":["Bimsy","Caramee","Dazzlewick","Ellabell","Fizzy","Glimmerella","Jessimip","Lillibee","Loopanna","Mabble","Nissabel","Oriwick","Pipsa","Quibbin","Rillyjoy","Shimmy","Tansabel","Tinsel","Winnabel","Zannadee","Bellamip","Corrabel","Dottie","Effiwick","Gemmabel","Hollimop","Isobee","Jinny","Kettiwick","Lollamip","Mirabel","Nimmi","Ottiline","Pennywick","Zibby"]},"half_elf":{"male":["Caladrel","Faelor","Galinor","Haelan","Ilyrin","Kaelith","Lorandil","Maeron","Naeril","Raelith","Saevan","Taeral","Vaelis","Aerendil","Celandor","Elarion","Ithilan","Laethor","Sylvarin","Aranel","Belandor","Daelen","Elvaris","Fenlas","Iriandor","Mythrin","Orendil","Phaelan","Quellan","Rhovan","Tirnel","Aldric","Bram","Cedric","Corwin","Darian","Edmund","Garret","Gideon","Harlan","Jasper","Kellan","Lucan","Marius","Nolan","Osric","Perrin","Quentin","Roland","Silas","Tobias","Varek","Wendel","Alaric","Benedict","Dorian","Emeric","Florian","Hugo","Leopold","Matthias"],"female":["Aeris","Caelynn","Elowen","Faelwen","Ilaria","Liavel","Maelis","Naerith","Saelora","Sylvaine","Thaliel","Vaelora","Ylsa","Calenwe","Eliphae","Ithrael","Miraen","Rhiannel","Taerwyn","Velaine","Aelith","Brilith","Daelwen","Elandra","Faelyn","Ilphara","Lethiel","Merethyl","Naiara","Shalendra","Tirelle","Adela","Celia","Delia","Elinor","Freya","Gwen","Helena","Isolde","Jocelyn","Katrin","Lenora","Mara","Nell","Odette","Rosamund","Sabine","Tamsin","Vivian","Wilhelmina","Alys","Beatrix","Clarice","Edith","Greta","Hester","Imogen","Linnea","Maud","Rowena"]},"half_orc":{"male":["Tharen","Brukar","Zorath","Darnok","Krelvan","Varlek","Tovrin","Milgar","Thalric","Harok","Kordin","Zarnith","Bromar","Lorthan","Ralkin","Voltak","Drelgar","Morvak","Togar","Brynnok","Zalthar","Karnath","Droven","Tharin","Vorlen","Marrek","Halvak","Dargan","Varnok","Falthor","Tarnak","Kolmir","Vostin","Dalrak","Harthon","Zorlek","Bronnor","Thovik","Malkar","Veldrin","Grakkar","Vrothok","Durnak","Tharkar","Gorvath","Dragorr","Zarnok","Kragath","Bralthor","Gorrash","Vorthak","Thurnok","Kralkar","Brogarn","Grudnar","Throzgar","Korvath","Durnath","Voktar","Zrugor","Brakkath","Krelgor","Thargok","Krulgar","Ragnok","Zalthorr","Harnok","Gralvok","Krodar","Vorath","Dargoth","Malruk","Grathor","Thoknar","Brokthar","Dragnar","Grukkath","Gorak","Gorok","Gorug","Gorash","Gorag","Goruk","Goroth","Gorgar","Gorgrum","Gorzag","Gorgul","Gornak","Gortar","Murak","Murok","Murug","Murash","Murag","Muruk","Muroth","Murgar","Murgrum","Murzag","Murgul","Murnak","Murtar","Murdush","Murbag","Ugak","Ugok","Ugash","Ugag","Uguk","Ugoth","Ugrok","Ugzag","Ugnak","Ugtar","Ugdush","Ugbag","Kraok","Kraug","Krauk","Kraoth","Kragar","Kragrum","Krarok","Krazag","Kragul","Kranak","Kratar","Kradush","Krabag","Zugak","Zugok","Zugash","Zugag","Zuguk","Zugoth","Zugrok","Zugzag","Zugnak","Zugtar","Zugdush","Zugbag","Thraok","Thraug","Thrauk","Thraoth","Thragar","Thragrum","Thrarok","Thrazag","Thragul","Thranak","Thratar","Thradush","Thrabag","Bolak","Bolok"],"female":["Thasya","Vorka","Drasira","Zorana","Malzara","Kelgra","Thalina","Marza","Gralsha","Ruvira","Vorla","Dorna","Zarsha","Karella","Luthara","Thazira","Varrika","Tazra","Brylka","Orlanna","Grella","Dorneth","Vashira","Krasha","Lornia","Marith","Thorna","Zalria","Vellara","Drazia","Votha","Thirna","Kolsha","Razira","Dalva","Syrna","Brasha","Morna","Trelka","Zyltha","Grathia","Thornaak","Malrath","Vrasha","Zorvith","Drukra","Thralna","Zarka","Mornath","Thazgira","Vrakka","Gronnith","Drazka","Zulkara","Brashka","Morgra","Vrosha","Kratha","Thragna","Zardra","Volska","Grulka","Durnasha","Thazka","Vrashaak","Korvasha","Vargra","Zarnaak","Thazria","Braskira","Maldra","Grorla","Dornakra","Krathaak","Vorkra","Thaldra","Zarasha","Brylkra","Gorsha","Gorgra","Gorza","Gorga","Goruth","Gorish","Goreth","Gorki","Gornya","Murka","Mursha","Murgra","Murza","Muruth","Murish","Mureth","Murki","Murnya","Uga","Ugka","Ugsha","Ugra","Ugza","Uguth","Ugish","Ugeth","Ugki","Ugnya","Kragra","Kraza","Kraga","Krauth","Kraish","Kraeth","Kraki","Kranya","Zuga","Zugka","Zugsha","Zugra","Zugza","Zuguth","Zugish","Zugeth","Zugki","Zugnya","Thraka","Thrasha","Thragra","Thraza","Thraga","Thrauth","Thraish","Thraeth","Thraki","Thranya","Bola","Bolka","Bolsha","Bolra","Bolgra","Bolza","Boluth","Bolish","Boleth","Bolki","Bolnya","Dura","Durka","Dursha","Durgra","Durga","Duruth","Durish","Dureth","Durki","Durnya","Groma","Gromka"]},"tiefling":{"male":["Akzarel","Arkadon","Azrimos","Balthaz","Barzemon","Belakos","Carthos","Damarek","Daskarion","Dravos","Ekzarion","Eskaros","Ezekar","Galthos","Ithamon","Ixarion","Kazrimos","Kelthas","Korvax","Lekarion","Lucarion","Malakos","Malphion","Marekos","Melkaris","Morvekh","Nazarel","Nekros","Orzamos","Pazurek","Phelos","Raxathos","Rhakon","Sarvoth","Sekarion","Skathos","Tamorek","Tharzon","Theskar","Uzrimon","Valakos","Varekh","Vazrael","Xerothan","Xyrak","Zarakim","Zekarion","Zethos","Zorvanos","Abraxos","Andrazel","Carzeth","Demarion","Haldrakos","Ilthurek","Kastemon","Morzeth","Oskaros","Velmarek"],"female":["Akeira","Akrista","Anthrasia","Arixa","Azrae","Belrissa","Bryxia","Caeria","Damrisa","Elysara","Erissa","Ezraela","Ghaelis","Ilvira","Iraxa","Kalthea","Kazria","Kerissa","Lerasha","Lilistra","Malaris","Marekka","Morrigha","Naxia","Nemyra","Orissa","Orveia","Pelthia","Phaedris","Quissara","Raxia","Rhyzaia","Sarissa","Sekaria","Seraxa","Thaelia","Thessira","Valeska","Varissa","Vexia","Xantheia","Xeris","Zaela","Zekira","Zethra","Ziraxa","Amrisa","Belkaia","Corvessa","Draxia","Elphia","Ixara","Lethia","Mazriel","Neriska","Sythia","Velaxa"]},"dragonborn":{"male":["Balthak","Dorrash","Ghazrin","Kerrak","Medrok","Nazhar","Rhazkar","Torvash","Vorrin","Zhakar","Brannash","Daskar","Gurrash","Hazvorr","Irzhak","Jhazir","Kalvash","Korrak","Morzhan","Nadrik","Oskarr","Pharzhan","Qorrash","Rakhan","Sarzhin","Tazrak","Uzhar","Varrak","Zorvash","Arkhash","Bhazrin","Draxar","Ghorvan","Hazrith","Kezzar","Lorvash","Mazrak","Rhessar","Thurvan","Vazhrin"],"female":["Akhira","Bryzia","Dravi","Erisha","Ghora","Hessa","Ixira","Jhessa","Kalira","Mirrah","Nashi","Orrha","Pashra","Rhiza","Sarrah","Thessi","Uzhara","Vashra","Zorra","Azhira","Dhaliri","Irrha","Jhavi","Korrah","Leshra","Mezzira","Nazhi","Qessa","Rhavi","Sorrha","Tazzi","Velira","Yzhara","Zhessa","Brannah","Dazhra","Falira","Hazzra","Kethra","Surrah"]}},"family":{"human":["Ashdown","Brightmantle","Coldwater","Dunmere","Evenford","Fairbrook","Greymantle","Hawkridge","Ironwood","Kingsbridge","Larkspur","Millbrook","Northgate","Oakhart","Redfern","Stonebridge","Thornfield","Westwater","Whitlock","Yarrow","Blackmast","Coldtide","Frostmere","Greysail","Hornwave","Icecrag","Longoar","Northwind","Ravenshield","Saltbeard","Seawolf","Stormhelm","Tidebreaker","Wavecrest","Whitecliff","Wolfhelm","Driftwood","Ironkeel","Gullfeather","Skerryman","Dravenko","Grozni","Kovarik","Lissovan","Mirovich","Novakov","Orlov","Petrovan","Radomir","Stoyan","Varenko","Vostrov","Zelenko","Dobrov","Grayskov","Horvan","Kalinov","Marinov","Rusev","Volkav"],"elf":["Elenlótë","Elenlindë","Elenmírë","Elencalma","Elenfána","Elenalda","Elensúrë","Isillótë","Isillindë","Isilmírë","Isilcalma","Isilfána","Isilalda","Isilsúrë","Anarlótë","Anarlindë","Anarmírë","Anarcalma","Anarfána","Anaralda","Anarsúrë","Laurelótë","Laurelindë","Lauremírë","Laurecalma","Laurefána","Laurealda","Lauresúrë","Telpelótë","Telpelindë","Telpemírë","Telpecalma","Telpefána","Telpealda","Telpesúrë","Ninquelótë","Ninquelindë","Ninquemírë","Ninquecalma","Ninquefána","Ninquealda","Ninquesúrë","Ilmalótë","Ilmalindë","Ilmamírë","Ilmacalma","Ilmafána","Ilmasúrë","Losselótë","Losselindë","Lossemírë","Lossecalma","Lossefána","Lossealda","Lossesúrë","Menellótë","Menellindë","Menelmírë","Menelcalma","Menelfána","Menelalda","Menelsúrë","Rómenlótë","Rómenlindë","Rómenmírë","Rómencalma","Rómenfána","Rómenalda","Rómensúrë","Númenlótë","Númenlindë","Númenmírë","Númencalma","Númenfána","Númenalda","Númensúrë","Tinwelótë","Tinwelindë","Tinwemírë","Tinwecalma","Tinwefána","Tinwealda","Tinwesúrë"],"dwarf":["Ironshield","Ironaxe","Irondelve","Ironhammer","Ironmantle","Ironborn","Ironbreaker","Ironvein","Ironbrow","Ironmail","Stonefist","Stonebeard","Stoneforge","Stoneaxe","Stonedelve","Stonehammer","Stonemantle","Stoneborn","Stonebreaker","Stonevein","Stonebrow","Stonemail","Firefist","Firehelm","Fireshield","Firedelve","Firehammer","Firemantle","Fireborn","Firebreaker","Firevein","Firebrow","Firemail","Deepfist","Deephelm","Deepbeard","Deepforge","Deepshield","Deepaxe","Deephammer","Deepmantle","Deepborn","Deepbreaker","Deepvein","Deepbrow","Deepmail","Granitefist","Granitehelm","Granitebeard","Graniteforge","Graniteshield","Graniteaxe","Granitedelve","Granitehammer","Granitemantle","Graniteborn","Granitebreaker","Granitevein","Granitebrow","Granitemail","Anvilfist","Anvilhelm","Anvilbeard","Anvilforge","Anvilshield","Anvilaxe","Anvildelve","Anvilhammer","Anvilmantle","Anvilborn","Anvilbreaker","Anvilvein","Anvilbrow","Anvilmail","Forgefist","Forgehelm","Forgebeard","Forgeshield","Forgeaxe","Forgedelve","Forgehammer","Forgemantle","Forgeborn","Forgebreaker","Forgevein","Forgebrow","Forgemail","Blackfist","Blackhelm","Blackbeard","Blackforge","Blackshield","Blackaxe","Blackdelve","Blackmantle","Blackborn","Blackbreaker","Blackvein","Blackbrow","Blackmail","Flintfist","Flinthelm","Flintbeard","Flintforge","Flintshield","Flintaxe","Flintdelve","Flinthammer","Flintmantle","Flintborn","Flintbreaker","Flintvein","Flintbrow","Flintmail","Coalfist","Coalhelm","Coalbeard","Coalforge","Coalshield","Coalaxe","Coaldelve","Coalhammer","Coalmantle","Coalborn","Coalbreaker","Coalvein","Coalbrow","Coalmail","Runefist","Runehelm","Runebeard","Runeforge","Runeshield","Runeaxe","Runedelve","Runehammer","Runemantle","Runeborn","Runebreaker","Runevein","Runebrow","Runemail","Hammerfist","Hammerhelm","Hammerbeard","Hammerforge","Hammershield","Hammeraxe","Hammerdelve","Hammermantle","Hammerborn","Hammerbreaker","Hammervein","Hammerbrow","Hammermail","Steelfist","Steelhelm","Steelbeard","Steelforge","Steelshield","Steelaxe","Steeldelve","Steelhammer","Steelmantle","Steelborn","Steelbreaker","Steelvein","Steelbrow","Steelmail","Bronzefist","Bronzehelm","Bronzeforge","Bronzeshield","Bronzeaxe","Bronzedelve","Bronzehammer","Bronzemantle","Bronzeborn","Bronzebreaker","Bronzevein","Bronzebrow","Bronzemail","Goldfist","Goldhelm","Goldforge","Goldshield","Goldaxe","Goldhammer","Goldmantle","Goldborn","Goldbreaker","Goldvein","Goldbrow","Goldmail","Copperfist","Copperhelm","Copperbeard","Copperforge","Coppershield","Copperaxe","Copperdelve","Copperhammer","Coppermantle","Copperborn","Copperbreaker","Coppervein","Copperbrow","Coppermail","Greyfist","Greyhelm","Greybeard","Greyforge","Greyshield","Greyaxe","Greydelve","Greyhammer","Greymantle","Greyborn","Greybreaker","Greyvein","Greybrow","Greymail","Frostfist","Frosthelm","Frostbeard","Frostforge","Frostshield","Frostaxe","Frostdelve","Frosthammer","Frostmantle","Frostborn","Frostbreaker","Frostvein","Frostbrow","Frostmail","Barleybarrel","Barleybrew","Barleybottom","Barleyfoot","Barleyhearth","Barleymug","Barleybeard","Barleyfield","Barleyhollow","Barleycask","Barleybelly","Barleymantle","Barleywick","Barleykettle","Alebarrel","Alebrew","Alebottom","Alefoot","Alehearth","Alemug","Alebeard","Alefield","Alehollow","Alecask","Alemantle","Alewick","Alekettle","Brewbarrel","Brewbottom","Brewfoot","Brewhearth","Brewmug","Brewbeard","Brewfield","Brewhollow","Brewcask","Brewbelly","Brewmantle","Brewkettle","Hearthbarrel","Hearthbottom","Hearthfoot","Hearthmug","Hearthbeard","Hearthfield","Hearthcask","Hearthbelly","Hearthmantle","Hearthwick","Hearthkettle","Oakbarrel","Oakbrew","Oakbottom","Oakfoot","Oakhearth","Oakmug","Oakbeard","Oakfield","Oakhollow","Oakcask","Oakbelly","Oakmantle","Oakwick","Copperbarrel","Copperbrew","Copperbottom","Copperfoot","Copperhearth","Copperfield","Copperhollow","Coppercask","Copperbelly","Copperwick","Copperkettle","Mossbarrel","Mossbrew","Mossbottom","Mossfoot","Mosshearth","Mossmug","Mossbeard","Mossfield","Mosshollow","Mosscask","Mossbelly","Mossmantle","Mosswick","Mosskettle","Claybarrel","Claybrew","Claybottom","Clayfoot","Clayhearth","Claymug","Claybeard","Clayfield","Clayhollow","Claycask","Claybelly","Claymantle","Claywick","Claykettle","Honeybarrel","Honeybrew","Honeybottom","Honeyfoot","Honeyhearth","Honeymug","Honeybeard","Honeyfield","Honeyhollow","Honeycask","Honeybelly","Honeymantle","Honeywick","Honeykettle","Peatbarrel","Peatbrew","Peatbottom","Peatfoot","Peathearth","Peatmug","Peatbeard","Peatfield","Peathollow","Peatcask","Peatbelly","Peatmantle","Peatwick","Peatkettle","Meadbarrel","Meadbrew","Meadbottom","Meadfoot","Meadhearth","Meadmug","Meadbeard","Meadfield","Meadhollow","Meadcask","Meadbelly","Meadmantle","Meadwick","Meadkettle","Kettlebarrel","Kettlebrew","Kettlebottom","Kettlefoot","Kettlehearth","Kettlemug","Kettlebeard","Kettlefield","Kettlehollow","Kettlecask","Kettlebelly","Kettlemantle","Kettlewick","Hillbarrel","Hillbrew","Hillbottom","Hillfoot","Hillhearth","Hillmug","Hillbeard","Hillfield","Hillhollow","Hillcask","Hillbelly","Hillmantle","Hillwick","Hillkettle","Thistlebarrel","Thistlebrew","Thistlebottom","Thistlefoot","Thistlehearth","Thistlemug","Thistlebeard","Thistlefield","Thistlehollow","Thistlecask","Thistlebelly","Thistlemantle","Thistlewick","Thistlekettle","Brownbarrel","Brownbrew","Brownbottom","Brownfoot","Brownhearth","Brownmug","Brownbeard","Brownfield","Brownhollow","Browncask","Brownbelly","Brownmantle","Brownwick","Brownkettle","Maltbarrel","Maltbrew","Maltbottom","Maltfoot","Malthearth","Maltmug","Maltbeard","Maltfield","Malthollow","Maltcask","Maltbelly","Maltmantle","Maltwick","Maltkettle","Hopbarrel","Hopbrew","Hopbottom","Hopfoot","Hophearth","Hopmug","Hopbeard","Hopfield","Hophollow","Hopcask","Hopbelly","Hopmantle","Hopwick","Hopkettle","Turfbarrel","Turfbrew","Turfbottom","Turfhearth","Turfmug","Turfbeard","Turfhollow","Turfcask","Turfbelly","Turfmantle","Turfwick","Turfkettle"],"halfling":["Applebough","Barleyfoot","Barrowdown","Bramblewick","Butterbank","Cobbleknot","Copperkettle","Dewdrop","Fairbarrel","Fernbrook","Greenmeadow","Hearthstone","Honeypot","Kettlewhistle","Leafwhistle","Meadowsweet","Nettlebrook","Oakbarrel","Pebblefoot","Puddlefoot","Quickstep","Rosehip","Swiftwater","Tanglefoot","Thistledown","Tumblebrook","Warmhearth","Wheatfield","Willowbank","Bracken","Hillhollow","Mossbrook","Pipewood","Riverbend","Sweetwater","Teapot","Tinderbox","Brightbarrel","Goodbloom","Mapleleaf"],"gnome":["Abbelkin","Bramwick","Dunnick","Feldspar","Gimbrel","Hollock","Kettleby","Nimbleton","Pibbin","Quartzel","Rundle","Spindleworth","Tumbleby","Wobbin","Brindle","Copperkettle","Fiddlewick","Garnet","Hobblestone","Jinglebrook","Lanternby","Mossworth","Nackleby","Pottle","Ripplecog","Thimbleby","Tinkerton","Wickersham","Zinnick","Brassbottle"],"half_elf":["Aelindor","Caerwyn","Elaranth","Faenhal","Ilmarien","Lianthor","Maelithil","Naevarin","Rhaenor","Silvaren","Thaelindor","Vaeranth","Yllathiel","Amarethil","Brenvaril","Celenthir","Dhaerith","Ithelvar","Lothaniel","Aerethyl","Duskwhisper","Evenbrook","Faerendil","Ilvanor","Narathiel","Oakenshade","Quessaril","Starbloom","Valandril","Ashford","Blackwell","Brightwater","Carrow","Dunmore","Fairweather","Greaves","Hallowell","Hawthorne","Kestrel","Larkin","Marlowe","Northcott","Oakley","Pembroke","Ravensworth","Selwyn","Thorne","Underwood","Vance","Whitlock","Yarrow","Ambrose","Callow","Fenwick","Holloway","Merriweather","Redfern","Sterling","Wolcott"],"half_orc":["Blackwood","Thorne","Mason","Tanner","Cooper","Hale","Marsh","Stone","Fletcher","Crow","Ironside","Hardy","Wolfe","Black","Grey","Hollow","Ash","Pike","Cole","Brand","Flint","Moor","Reeve","Thatcher","Wade"],"dragonborn":["Arkenthuldrax","Brexanthiul","Corvathrinnor","Dhaerazhinal","Esthrakkamir","Fulvranthesk","Ghorrathiul","Haldrakkenvar","Irrixanthul","Jhessakandor","Kalthrenniax","Lorvanthesk","Morrikathul","Naxxarendion","Orrathinsk","Pyrranthollor","Qaldrekkiax","Rhazzindorath","Sarthenkavrix","Tharvoskendar","Ulkranthiir","Vaskendrathul","Xorrinthalak","Yrrazhennor","Zhalvathrisk","Anthrexiul","Bharrakendor","Calderhazzin","Dravenkathul","Ezzrakkonir","Ghessenthuul","Kharrandiax","Mirrivanthesk","Nazzaravor","Orvathrekkir","Rhovalinthar","Skarrendaxis","Thuldrevaxin","Vorrakandiul","Zanthrikkenor"]}}}</script>
     <script src="../lib/recipe-engine.js"></script>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

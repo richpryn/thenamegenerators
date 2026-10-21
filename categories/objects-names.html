@@ -128,135 +128,109 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-sword" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(35 24 24)"><path d="M24 2 L28 8 L28 30 L20 30 L20 8 Z" fill="#fffcf4"/><path d="M24 9 V28" stroke-width="1.2"/><path d="M14 30 H34"/><path d="M24 30 V41"/><circle cx="24" cy="43.5" r="2.4" fill="#efc84a"/></g></g></symbol>
+      <symbol id="m-katana" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 32 C24 24 33 14 42 4 C41 10 35 18 19 35 Z" fill="#fffcf4"/><ellipse cx="17" cy="33" rx="5.5" ry="2.6" transform="rotate(-45 17 33)" fill="#efc84a"/><path d="M15 35 L6 44"/><path d="M8 40 l2 2 M11 37 l2 2" stroke-width="1.2"/></g></symbol>
+      <symbol id="m-sword-crown" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(35 24 24)"><path d="M24 6 L28 12 L28 32 L20 32 L20 12 Z" fill="#fffcf4"/><path d="M14 32 H34"/><path d="M24 32 V42"/></g><path d="M3 10 L6 3 L10 8 L13 2 L16 8 L20 3 L22 10 Z" fill="#efc84a"/></g></symbol>
+      <symbol id="m-round-shield" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18" fill="#fffcf4"/><circle cx="24" cy="24" r="5" fill="#efc84a"/><path d="M24 6 V19 M24 29 V42 M6 24 H19 M29 24 H42" stroke-width="1.3"/></g></symbol>
+      <symbol id="m-axe" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 V44"/><path d="M24 10 C19 11 14 9 10 6 C6 13 6 23 11 30 C15 27 19 26 24 25 Z" fill="#fffcf4"/><path d="M24 10 C29 11 34 9 38 6 C42 13 42 23 37 30 C33 27 29 26 24 25 Z" fill="#fffcf4"/><path d="M21 37 h6" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-wand" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 42 L32 16" stroke-width="3"/><path d="M8 42 L13 37" stroke-width="5.5"/><path d="M38 3 l2 5 l5 2 l-5 2 l-2 5 l-2 -5 l-5 -2 l5 -2 z" fill="#efc84a" stroke-width="1.4"/><path d="M29 6 l1 2 M44 20 l-2 1 M33 22 l2 1" stroke-width="1.2"/></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <span aria-current="page">Objects</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">Object</span> Name Generators</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg>
+            </div>
+            <p class="lede">Swords, axes, shields, wands, war hammers and poisons for games and stories.</p>
+
+            <div class="section intro">
+                <p>Named weapons are an old tradition: Excalibur, Durendal, Kusanagi. A name turns a sword into a story, which is why a magic item that's only a "+1 longsword" is so easy to forget.</p><p>These generators cover everything from swords and axes to wands and war hammers, with separate generators for elven, Japanese, Game of Thrones and Minecraft swords. When you name an item, decide who named it and why: the best item names come with a history.</p>
+            </div>
+
+            <section class="section">
+                <h2>Where to start</h2>
+                <div class="featured">
+                    <a href="../posts/sword-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><b>Sword Name Generator</b><span>Three templates, from simple blades to full titles.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+                    <a href="../posts/japanese-sword-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-katana"/></svg><b>Japanese Sword Name Generator</b><span>Names with their English meanings.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+                    <a href="../posts/game-of-thrones-sword-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword-crown"/></svg><b>Game of Thrones Sword Name Generator</b><span>Names in the style of Ice, Needle and Oathkeeper.</span><span class="open hd" aria-hidden="true">Open →</span></a>
                 </div>
-            </div>
-        </div>
-    </nav>
+            </section>
 
-    <div class="container">
-        <header class="hero">
-            <h1>⚔️ Weapon and Magic Item Name Generators</h1>
-            <p>Swords, axes, shields, wands, war hammers and poisons for games and stories.</p>
-            <p class="generator-count">10 generators available</p>
-        </header>
-
-        <main>
-
-        <section class="blog-content category-intro">
-            <p>Named weapons are an old tradition: Excalibur, Durendal, Kusanagi. A name turns a sword into a story, which is why a magic item that's only a "+1 longsword" is so easy to forget.</p><p>These generators cover everything from swords and axes to wands and war hammers, with separate generators for elven, Japanese, Game of Thrones and Minecraft swords. When you name an item, decide who named it and why: the best item names come with a history.</p>
-            <h2>Where to start</h2>
-                <ul class="featured-generators">
-                    <li><a href="../posts/sword-name-generator.html">⚔️ Sword Name Generator</a>: three templates, from simple blades to full titles.</li>
-                    <li><a href="../posts/japanese-sword-name-generator.html">⚔️ Japanese Sword Name Generator</a>: names with their English meanings.</li>
-                    <li><a href="../posts/game-of-thrones-sword-name-generator.html">⚔️ Game of Thrones Sword Name Generator</a>: names in the style of Ice, Needle and Oathkeeper.</li>
-                </ul>
-        </section>
-            <h2 class="category-all-heading">All 10 Objects generators</h2>
-            <div class="generators-grid">
-                
-    <a href="../posts/shield-name-generator.html" class="generator-card">
-      <h3>🛡️ Shield Name Generator</h3>
-      <p>Shield names with a duty or a coat of arms in proper heraldry: Oathward, Protector of the Weak; Gules, a lion rampant or.</p>
-    </a>
-  
-    
-    <a href="../posts/poison-name-generator.html" class="generator-card">
-      <h3>☠️ Poison Name Generator</h3>
-      <p>Fantasy poison names with a form and an effect, for assassins, mysteries and D&amp;D: Widow&#039;s Kiss, a clear oil causing a dreamless sleep that never ends.</p>
-    </a>
-  
-    
-    <a href="../posts/sword-name-generator.html" class="generator-card">
-      <h3>⚔️ Sword Name Generator</h3>
-      <p>Sword names for heroes, villains and old kings, with an epithet or a description: Griefbane, Drinker of Souls; Sigeling, a pattern-welded sword.</p>
-    </a>
-  
-    
-    <a href="../posts/axe-name-generator.html" class="generator-card">
-      <h3>🪓 Axe Name Generator</h3>
-      <p>Axe names in four styles: Norse axes named like troll-women, dwarven heirlooms, brutal orc cleavers and a woodsman&#039;s Old Bess, with an epithet or description.</p>
-    </a>
-  
-    
-    <a href="../posts/hammer-name-generator.html" class="generator-card">
-      <h3>🔨 Hammer Name Generator</h3>
-      <p>Names for legendary hammers, war hammers, mauls and maces, from short ones like Sacred Anvil to full titles like &quot;Star-Iron Warhammer, Breaker of Chains&quot;.</p>
-    </a>
-  
-    
-    <a href="../posts/wand-name-generator.html" class="generator-card">
-      <h3>🪄 Wand Name Generator</h3>
-      <p>Wand names and descriptions: a wand-maker&#039;s wood, length, core and flexibility, a named wand, or a magic item like the Wand of Lingering Frost.</p>
-    </a>
-  
-    
-    <a href="../posts/funny-minecraft-sword-name-generator.html" class="generator-card">
-      <h3>🗡️ Funny Minecraft Sword Name Generator</h3>
-      <p>Funny Minecraft sword names that fit the anvil&#039;s rename box, from mob puns like Creeper Sweeper to Bladey McBladeface.</p>
-    </a>
-  
-    
-    <a href="../posts/elven-sword-name-generator.html" class="generator-card">
-      <h3>⚔️ Elven Sword Name Generator</h3>
-      <p>Elven sword names built from Tolkien&#039;s Sindarin and Quenya, each with its real meaning, plus the famous blades of the legends: Glamdring, Orcrist, Andúril.</p>
-    </a>
-  
-    
-    <a href="../posts/japanese-sword-name-generator.html" class="generator-card">
-      <h3>⚔️ Japanese Sword Name Generator</h3>
-      <p>Japanese sword names built from real Japanese words, with their meaning: poetic names like Tsuki-kage, &quot;Moon Shadow&quot;, and cutter names like Kumo-giri, &quot;Cloud Cutter&quot;.</p>
-    </a>
-  
-    
-    <a href="../posts/game-of-thrones-sword-name-generator.html" class="generator-card">
-      <h3>⚔️ Game of Thrones Sword Name Generator</h3>
-      <p>Game of Thrones style sword names to suit a great house, from northern wolves to Ironborn reavers, with the blade if you want it: Ashsister, a Valyrian steel longsword.</p>
-    </a>
-  
-            </div>
+            <section class="section">
+                <h2>All 10 Objects generators</h2>
+                <div class="genlist">
+                    <a href="../posts/shield-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-round-shield"/></svg><div><b>Shield Name Generator</b><span>Shield names with a duty or a coat of arms in proper heraldry: Oathward, Protector of the Weak; Gules, a lion rampant or.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/poison-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Poison Name Generator</b><span>Fantasy poison names with a form and an effect, for assassins, mysteries and D&amp;D: Widow&#039;s Kiss, a clear oil causing a dreamless sleep that never ends.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Sword Name Generator</b><span>Sword names for heroes, villains and old kings, with an epithet or a description: Griefbane, Drinker of Souls; Sigeling, a pattern-welded sword.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/axe-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-axe"/></svg><div><b>Axe Name Generator</b><span>Axe names in four styles: Norse axes named like troll-women, dwarven heirlooms, brutal orc cleavers and a woodsman&#039;s Old Bess, with an epithet or description.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/hammer-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Hammer Name Generator</b><span>Names for legendary hammers, war hammers, mauls and maces, from short ones like Sacred Anvil to full titles like &quot;Star-Iron Warhammer, Breaker of Chains&quot;.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/wand-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-wand"/></svg><div><b>Wand Name Generator</b><span>Wand names and descriptions: a wand-maker&#039;s wood, length, core and flexibility, a named wand, or a magic item like the Wand of Lingering Frost.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/funny-minecraft-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Funny Minecraft Sword Name Generator</b><span>Funny Minecraft sword names that fit the anvil&#039;s rename box, from mob puns like Creeper Sweeper to Bladey McBladeface.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/elven-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Elven Sword Name Generator</b><span>Elven sword names built from Tolkien&#039;s Sindarin and Quenya, each with its real meaning, plus the famous blades of the legends: Glamdring, Orcrist, Andúril.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/japanese-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-katana"/></svg><div><b>Japanese Sword Name Generator</b><span>Japanese sword names built from real Japanese words, with their meaning: poetic names like Tsuki-kage, &quot;Moon Shadow&quot;, and cutter names like Kumo-giri, &quot;Cloud Cutter&quot;.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/game-of-thrones-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword-crown"/></svg><div><b>Game of Thrones Sword Name Generator</b><span>Game of Thrones style sword names to suit a great house, from northern wolves to Ironborn reavers, with the blade if you want it: Ashsister, a Valyrian steel longsword.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
         </main>
-
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
 
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

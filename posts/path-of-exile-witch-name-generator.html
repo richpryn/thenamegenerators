@@ -297,400 +297,301 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
-                </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-dragon" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 35 C7 25 15 17 26 17 L37 19 L45 25 L37 27 L42 31 L33 31 C29 35 23 39 17 41 C11 43 6 41 5 35 Z" fill="#fffcf4"/><path d="M19 19 L8 11 L21 15 M24 17 L19 6 L28 16" stroke-width="1.6"/><circle cx="31" cy="22" r="1.5" fill="#1e1c18"/><path d="M41 23 l1 0" stroke-width="2"/><path d="M11 37 C17 36 23 34 28 31" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-cauldron" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 18 H40"/><path d="M10 18 C8 30 14 40 24 40 C34 40 40 30 38 18" fill="#fffcf4"/><path d="M14 40 l-2 4 M34 40 l2 4"/><path d="M16 14 c0 -4 4 -4 4 -8 M26 14 c0 -3 3 -3 3 -6" stroke-width="1.3"/><path d="M12 23 C20 26 28 26 36 23" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-broom" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M42 5 L21 29"/><path d="M22 28 L12 30 C8 34 6 40 5 44 C11 43 18 39 22 34 Z" fill="#efc84a"/><path d="M14 33 L9 40 M17 34 L12 41" stroke-width="1.2"/><path d="M19 31 l4 -4" stroke-width="3.4"/></g></symbol>
+      <symbol id="m-planet" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="25" r="11" fill="#fffcf4"/><ellipse cx="24" cy="25" rx="20" ry="6" transform="rotate(-20 24 25)"/><path d="M17 20 C20 17 24 16 27 17" stroke="#efc84a" stroke-width="3"/><path d="M40 5 l1 3 l3 1 l-3 1 l-1 3 l-1 -3 l-3 -1 l3 -1 z" fill="#1e1c18" stroke-width="1"/></g></symbol>
+      <symbol id="m-round-shield" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18" fill="#fffcf4"/><circle cx="24" cy="24" r="5" fill="#efc84a"/><path d="M24 6 V19 M24 29 V42 M6 24 H19 M29 24 H42" stroke-width="1.3"/></g></symbol>
+      <symbol id="m-horns" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 24 C12 22 7 14 10 5 C13 12 17 16 23 19 Z" fill="#fffcf4"/><path d="M28 24 C36 22 41 14 38 5 C35 12 31 16 25 19 Z" fill="#fffcf4"/><path d="M11 33 C15 25 33 25 37 33"/><path d="M37 33 C41 39 45 38 45 33"/><path d="M45 33 l-3.5 -3 l4.5 -1 z" fill="#1e1c18"/><path d="M10 39 C18 36 28 41 36 38" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-d20" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4 L42 14 L42 34 L24 44 L6 34 L6 14 Z" fill="#fffcf4"/><path d="M24 4 L15 28 L33 28 Z M6 14 L15 28 M42 14 L33 28 M15 28 L24 44 L33 28 M6 34 L15 28 M42 34 L33 28" stroke-width="1.3"/><path d="M20 24 h8" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-mushroom" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24 C6 11 42 11 42 24 Z" fill="#efc84a"/><path d="M18 24 L16 42 L32 42 L30 24" fill="#fffcf4"/><circle cx="16" cy="19" r="2.2" fill="#fffcf4" stroke-width="1.3"/><circle cx="26" cy="15" r="2.2" fill="#fffcf4" stroke-width="1.3"/><circle cx="34" cy="20" r="1.8" fill="#fffcf4" stroke-width="1.3"/><path d="M10 44 h28" stroke-width="1.4"/></g></symbol>
+      <symbol id="m-leaf" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 40 C10 22 22 10 40 8 C40 28 28 40 10 40 Z" fill="#fffcf4"/><path d="M10 40 L31 17 M18 32 l7 1 M24 25 l7 1" stroke-width="1.4"/><path d="M6 44 C13 41 17 45 25 42" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-war-axe" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 42 L33 16"/><path d="M27 8 C37 5 46 12 44 22 C38 18 32 18 28 22 C30 16 30 12 27 8 Z" fill="#fffcf4"/><path d="M7 40 l6 6"/><path d="M12 33 l5 5" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-lizard" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4 C27 4 29 8 27 12 L26 30 C26 36 22 40 13 44 C19 38 22 34 22 30 L21 12 C19 8 19 4 22 4 Z" fill="#fffcf4"/><path d="M22 16 L13 12 M26 16 L35 12 M22 26 L13 30 M26 26 L35 30"/><path d="M13 12 l-3 -2 M35 12 l3 -2 M13 30 l-3 2 M35 30 l3 2" stroke-width="1.3"/><circle cx="23.5" cy="7.5" r="1" fill="#1e1c18"/><path d="M23.5 17 v8" stroke="#efc84a" stroke-width="2.6"/></g></symbol>
+      <symbol id="m-katana" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 32 C24 24 33 14 42 4 C41 10 35 18 19 35 Z" fill="#fffcf4"/><ellipse cx="17" cy="33" rx="5.5" ry="2.6" transform="rotate(-45 17 33)" fill="#efc84a"/><path d="M15 35 L6 44"/><path d="M8 40 l2 2 M11 37 l2 2" stroke-width="1.2"/></g></symbol>
+      <symbol id="m-house" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M30 13 V6 h4 v10" fill="#fffcf4"/><path d="M12 20 V42 H36 V20" fill="#fffcf4"/><path d="M8 22 L24 8 L40 22"/><path d="M21 42 V32 h6 V42"/><path d="M15 26 h4 v4 h-4 z M29 26 h4 v4 h-4 z" stroke-width="1.3"/><path d="M4 45 C14 42 30 47 44 44" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-map" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12 L17 8 L31 13 L42 9 V36 L31 40 L17 35 L6 39 Z" fill="#fffcf4"/><path d="M17 8 V35 M31 13 V40" stroke-width="1.3"/><path d="M10 29 C16 22 22 31 28 23 S34 20 36 18" stroke-dasharray="2 3" stroke-width="1.4"/><path d="M34 15 l5 5 M39 15 l-5 5" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-leaf-moon" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 42 C8 26 18 16 34 14 C34 30 24 40 8 42 Z" fill="#fffcf4"/><path d="M8 42 L26 22 M15 35 l6 1" stroke-width="1.4"/><path d="M36 4 a7 7 0 1 0 7 9 a5.5 5.5 0 1 1 -7 -9 z" fill="#efc84a"/></g></symbol>
+      <symbol id="m-flame" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 C28 13 36 17 36 29 C36 37 30 43 24 43 C17 43 12 37 12 30 C12 23 17 20 18 14 C22 18 22 22 24 24 C26 18 25 11 24 5 Z" fill="#fffcf4"/><path d="M24 43 C20 41 19 35 23 31 C24 35 27 35 27 38 C27 41 26 42 24 43 Z" fill="#efc84a"/></g></symbol>
+      <symbol id="m-castle" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 14 V4 l8 3 l-8 3" fill="#efc84a"/><path d="M8 43 V18 h4 v4 h4 v-4 h4 v4 h8 v-4 h4 v4 h4 v-4 h4 v25 Z" fill="#fffcf4"/><path d="M20 43 V35 c0 -5 8 -5 8 0 V43"/><path d="M14 28 v3 M34 28 v3"/></g></symbol>
+      <symbol id="m-wings" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 24 C18 9 6 7 8 17 C9 23 16 25 24 24 Z" fill="#fffcf4"/><path d="M24 24 C30 9 42 7 40 17 C39 23 32 25 24 24 Z" fill="#fffcf4"/><path d="M24 24 C18 30 11 39 17 42 C21 44 24 33 24 24 Z" fill="#efc84a"/><path d="M24 24 C30 30 37 39 31 42 C27 44 24 33 24 24 Z" fill="#fffcf4"/><path d="M24 18 V34" stroke-width="1.4"/></g></symbol>
+      <symbol id="m-sword" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(35 24 24)"><path d="M24 2 L28 8 L28 30 L20 30 L20 8 Z" fill="#fffcf4"/><path d="M24 9 V28" stroke-width="1.2"/><path d="M14 30 H34"/><path d="M24 30 V41"/><circle cx="24" cy="43.5" r="2.4" fill="#efc84a"/></g></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../categories/fantasy-names.html">Fantasy</a> / <span aria-current="page">Path of Exile Witch Name Generator</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">Path</span> of Exile Witch Name Generator</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg>
             </div>
-        </div>
-    </nav>
+            <p class="lede">A name for your Witch and an epithet to match your Ascendancy, from the Tombmother to the Rimestorm.</p>
 
-    <div class="container">
-        <header class="blog-hero">
-            <h1>🔮 Path of Exile Witch Name Generator</h1>
-            <p class="tagline">A name for your Witch and an epithet to match your Ascendancy, from the Tombmother to the Rimestorm.</p>
-            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
-        </header>
-
-        <main>
-            <section class="embedded-generator">
-                <div class="generator-card">
-                    <h2>Generate Path of Exile Witch Names</h2>
-                    <p class="generator-description">Path of Exile Witch names with an epithet to match your Ascendancy: Necromancer, Elementalist, Occultist, or PoE 2&#039;s Infernalist and Blood Mage.</p>
-                    
-                    <div class="simple-generator">
-                        <div class="filters">
-          <div class="filter-group">
-            <label for="filter-ascendancy">Ascendancy:</label>
-            <select id="filter-ascendancy" name="ascendancy" data-filter="ascendancy">
-              <option value="any">Any Ascendancy</option>
-              <option value="necromancer">Necromancer</option>
-              <option value="elementalist">Elementalist</option>
-              <option value="occultist">Occultist</option>
-              <option value="infernalist">Infernalist (PoE 2)</option>
-              <option value="blood_mage">Blood Mage (PoE 2)</option>
-            </select>
+            <section class="sheet hd simple-generator" id="generator" aria-label="Path of Exile Witch Name Generator">
+                <div class="gen-grid">
+          <div class="group" role="group" aria-labelledby="filter-ascendancy-label">
+            <div class="label"><span id="filter-ascendancy-label">Ascendancy</span><span class="pen" data-hint-for="ascendancy" aria-hidden="true"></span></div>
+            <div class="opts" data-buttons-for="ascendancy">
+              <button type="button" class="opt hd tap" data-value="any" data-hint="" aria-pressed="true">Any Ascendancy</button>
+              <button type="button" class="opt hd tap" data-value="necromancer" data-hint="" aria-pressed="false">Necromancer</button>
+              <button type="button" class="opt hd tap" data-value="elementalist" data-hint="" aria-pressed="false">Elementalist</button>
+              <button type="button" class="opt hd tap" data-value="occultist" data-hint="" aria-pressed="false">Occultist</button>
+              <button type="button" class="opt hd tap" data-value="infernalist" data-hint="e.g. PoE 2" title="Infernalist (PoE 2)" aria-pressed="false">Infernalist</button>
+              <button type="button" class="opt hd tap" data-value="blood_mage" data-hint="e.g. PoE 2" title="Blood Mage (PoE 2)" aria-pressed="false">Blood Mage</button>
+            </div>
+            <input type="hidden" id="filter-ascendancy" name="ascendancy" data-filter="ascendancy" value="any">
           </div>
 
-          <div class="filter-group">
-            <label for="filter-format">Name Format:</label>
-            <select id="filter-format" name="format" data-filter="format">
-              <option value="full">Name and epithet</option>
-              <option value="first">First name only</option>
-            </select>
+          <div class="group" role="group" aria-labelledby="filter-format-label">
+            <div class="label"><span id="filter-format-label">Name Format</span><span class="pen" data-hint-for="format" aria-hidden="true"></span></div>
+            <div class="opts" data-buttons-for="format">
+              <button type="button" class="opt hd tap" data-value="full" data-hint="" aria-pressed="true">Name and epithet</button>
+              <button type="button" class="opt hd tap" data-value="first" data-hint="" aria-pressed="false">First name only</button>
+            </div>
+            <input type="hidden" id="filter-format" name="format" data-filter="format" value="full">
           </div></div>
-                        <div class="generator-controls">
-                            <div class="filter-group count-group">
-                                <label for="name-count">How many:</label>
-                                <select id="name-count">
-                                    <option value="8" selected>8 names</option>
-                                    <option value="16">16 names</option>
-                                    <option value="32">32 names</option>
-                                </select>
-                            </div>
-                            <button id="generate-btn" class="generate-button">Generate Names</button>
-                        </div>
-                        <div class="results-area" id="results">
-                            <p class="results-placeholder">Click "Generate Names" to see results</p>
-                        </div>
-                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
-                        <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="true">
+                    <p class="results-empty">Press Generate Names for 8 path of exile witch names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
                     </div>
-                    
-                    <div class="cta-box">
-                        <p><strong>Need more options?</strong></p>
-                        <a href="../index.html" class="cta-button">Try the Ultimate Random Name Generator →</a>
-                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
+
+            <section class="section example-names">
+                <h2>Example Path of Exile Witch Names</h2>
+                <p class="sub">A few names this generator came up with. Tap one to copy it, or press "Generate Names" above for more.</p>
+                <div class="ex">
+                <div class="exbox hd">
+                    <h3>Any Ascendancy · Name and epithet</h3>
+                    <ul>
+                        <li>Velzeth the Stormcaller</li>
+                        <li>Zorara the Demonsworn</li>
+                        <li>Velxelle the Pyrebringer</li>
+                        <li>Drelath of the Unbound Souls</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Necromancer · Name and epithet</h3>
+                    <ul>
+                        <li>Mirith Bonewhisper</li>
+                        <li>Sylara the Soulthief</li>
+                        <li>Vaelith the Deathchant</li>
+                        <li>Serara the Gravemother</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Elementalist · Name and epithet</h3>
+                    <ul>
+                        <li>Morvith the Thunderborn</li>
+                        <li>Liliel the Embermancer</li>
+                        <li>Azmine the Pyrebringer</li>
+                        <li>Xiliel the Ashdancer</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Occultist · Name and epithet</h3>
+                    <ul>
+                        <li>Xenira the Veilbound</li>
+                        <li>Nyxara Blacktongue</li>
+                        <li>Elanethis the Hexborn</li>
+                        <li>Mireth the Whispering Dark</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Infernalist · Name and epithet</h3>
+                    <ul>
+                        <li>Morviel the Pyreborn</li>
+                        <li>Velzis the Brimstone Bride</li>
+                        <li>Vysis the Demon&#039;s Herald</li>
+                        <li>Jorara the Magmablood</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Blood Mage · Name and epithet</h3>
+                    <ul>
+                        <li>Xenis the Bloodletter</li>
+                        <li>Zalyn Veinweaver</li>
+                        <li>Ophisha the Sanguine</li>
+                        <li>Xilel the Bloodbound</li>
+                    </ul>
+                </div>
                 </div>
             </section>
 
-            <section class="example-names">
-                <h2>Example Path of Exile Witch Names</h2>
-                <p>A few names this generator came up with. Press "Generate Names" above for more.</p>
-                <h3>Any Ascendancy · Name and epithet</h3>
-                <ul class="name-results">
-                    <li>Velzeth the Stormcaller</li>
-                    <li>Zorara the Demonsworn</li>
-                    <li>Velxelle the Pyrebringer</li>
-                    <li>Drelath of the Unbound Souls</li>
-                </ul>
-                <h3>Necromancer · Name and epithet</h3>
-                <ul class="name-results">
-                    <li>Mirith Bonewhisper</li>
-                    <li>Sylara the Soulthief</li>
-                    <li>Vaelith the Deathchant</li>
-                    <li>Serara the Gravemother</li>
-                </ul>
-                <h3>Elementalist · Name and epithet</h3>
-                <ul class="name-results">
-                    <li>Morvith the Thunderborn</li>
-                    <li>Liliel the Embermancer</li>
-                    <li>Azmine the Pyrebringer</li>
-                    <li>Xiliel the Ashdancer</li>
-                </ul>
-                <h3>Occultist · Name and epithet</h3>
-                <ul class="name-results">
-                    <li>Xenira the Veilbound</li>
-                    <li>Nyxara Blacktongue</li>
-                    <li>Elanethis the Hexborn</li>
-                    <li>Mireth the Whispering Dark</li>
-                </ul>
-                <h3>Infernalist · Name and epithet</h3>
-                <ul class="name-results">
-                    <li>Morviel the Pyreborn</li>
-                    <li>Velzis the Brimstone Bride</li>
-                    <li>Vysis the Demon&#039;s Herald</li>
-                    <li>Jorara the Magmablood</li>
-                </ul>
-                <h3>Blood Mage · Name and epithet</h3>
-                <ul class="name-results">
-                    <li>Xenis the Bloodletter</li>
-                    <li>Zalyn Veinweaver</li>
-                    <li>Ophisha the Sanguine</li>
-                    <li>Xilel the Bloodbound</li>
-                </ul>
-            </section>
-
-            <section class="blog-content how-it-works">
+            <section class="section how-it-works">
                 <h2>How the Path of Exile Witch Name Generator Works</h2>
+                <div class="howto hd">
                 <p>It works from 400 names and name parts, which combine into over 28,000 possible results.</p>
                 <p>The choices:</p>
                 <ul><li><strong>Ascendancy:</strong> Any Ascendancy, Necromancer, Elementalist, Occultist, Infernalist, Blood Mage.</li><li><strong>Name Format:</strong><ul><li>Name and epithet, e.g. <em>Xilisha the Mindrender</em></li><li>First name only, e.g. <em>Xenelle</em></li></ul></li></ul>
-                <p>Each press gives you 8, 16 or 32 names (choose under "How many"), and you won't see the same one twice until you've been through everything for the choices you've made.</p>
+                <p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet, until the names for the choices you've made run out.</p>
+                </div>
             </section>
 
-            <article class="blog-content" itemscope itemtype="https://schema.org/Article">
+            <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="Path of Exile Witch Name Generator">
                 <meta itemprop="description" content="Path of Exile Witch names with an epithet to match your Ascendancy: Necromancer, Elementalist, Occultist, or PoE 2&#039;s Infernalist and Blood Mage.">
-                <section itemprop="articleBody">
-                    <p>In Path of Exile, everyone who washes up in Wraeclast is an exile, and the Witch is the one who brought her magic with her. Her name should sound like it. This <strong>Path of Exile Witch name generator</strong> pairs a sharp, strange first name with an epithet that fits your build, so a Necromancer gets <em>the Tombmother</em> and an Elementalist gets <em>the Rimestorm</em>.</p>
-                </section>
+                <div itemprop="articleBody">
+                <p class="big">In Path of Exile, everyone who washes up in Wraeclast is an exile, and the Witch is the one who brought her magic with her. Her name should sound like it. This <strong>Path of Exile Witch name generator</strong> pairs a sharp, strange first name with an epithet that fits your build, so a Necromancer gets <em>the Tombmother</em> and an Elementalist gets <em>the Rimestorm</em>.</p>
                 
-      <section>
-        <h2>Epithets for each Ascendancy</h2>
-        <p>The Witch specialises through her Ascendancy, and each has its own feel:</p><ul><li><strong>Necromancer</strong>: minions, corpses and souls. Epithets like <em>the Soulbinder</em>, <em>Bonewhisper</em>, <em>the Gravemother</em>.</li><li><strong>Elementalist</strong>: fire, cold and lightning. <em>the Rimestorm</em>, <em>the Arcstriker</em>, <em>Emberfury</em>.</li><li><strong>Occultist</strong>: curses, chaos and the void. <em>the Hexmistress</em>, <em>Blacktongue</em>, <em>the Hungering Void</em>.</li><li><strong>Infernalist</strong> (Path of Exile 2): hellfire and demonic pacts. <em>of the Burning Pact</em>, <em>the Brimstone Bride</em>.</li><li><strong>Blood Mage</strong> (Path of Exile 2): power paid for in blood. <em>the Crimson Tithe</em>, <em>Veinweaver</em>.</li></ul><p>Leave it on <strong>Any Ascendancy</strong> if you haven't decided yet, or if your build mixes a bit of everything.</p>
-      </section>
-    
+                <h2>Epithets for each Ascendancy</h2>
+                <p>The Witch specialises through her Ascendancy, and each has its own feel:</p><ul><li><strong>Necromancer</strong>: minions, corpses and souls. Epithets like <em>the Soulbinder</em>, <em>Bonewhisper</em>, <em>the Gravemother</em>.</li><li><strong>Elementalist</strong>: fire, cold and lightning. <em>the Rimestorm</em>, <em>the Arcstriker</em>, <em>Emberfury</em>.</li><li><strong>Occultist</strong>: curses, chaos and the void. <em>the Hexmistress</em>, <em>Blacktongue</em>, <em>the Hungering Void</em>.</li><li><strong>Infernalist</strong> (Path of Exile 2): hellfire and demonic pacts. <em>of the Burning Pact</em>, <em>the Brimstone Bride</em>.</li><li><strong>Blood Mage</strong> (Path of Exile 2): power paid for in blood. <em>the Crimson Tithe</em>, <em>Veinweaver</em>.</li></ul><p>Leave it on <strong>Any Ascendancy</strong> if you haven't decided yet, or if your build mixes a bit of everything.</p>
 
-      <section>
-        <h2>Names from Wraeclast</h2>
-        <p>The game's own spellcasters show the style. Among the women you meet or fight:</p><ul><li><strong>Doedre Darktongue</strong> and <strong>Shavronne of Umbra</strong>, servants of Malachai whose names live on in the unique items named after them.</li><li><strong>Piety</strong>, the alchemist of Act 3, whose name is a bitter joke given what she does.</li><li><strong>Atziri, Queen of the Vaal</strong>, and <strong>Zana, Master Cartographer</strong>.</li></ul><p>The pattern: short, unusual first names, often with a hard <em>z</em>, <em>x</em> or <em>th</em>, and an epithet or title that says what someone has done or become. The first names here follow it (Seryx, Xenith, Yzarith); they're new names, made to fit the game rather than taken from it.</p>
-      </section>
-    
+                <h2>Names from Wraeclast</h2>
+                <p>The game's own spellcasters show the style. Among the women you meet or fight:</p><ul><li><strong>Doedre Darktongue</strong> and <strong>Shavronne of Umbra</strong>, servants of Malachai whose names live on in the unique items named after them.</li><li><strong>Piety</strong>, the alchemist of Act 3, whose name is a bitter joke given what she does.</li><li><strong>Atziri, Queen of the Vaal</strong>, and <strong>Zana, Master Cartographer</strong>.</li></ul><p>The pattern: short, unusual first names, often with a hard <em>z</em>, <em>x</em> or <em>th</em>, and an epithet or title that says what someone has done or become. The first names here follow it (Seryx, Xenith, Yzarith); they're new names, made to fit the game rather than taken from it.</p>
 
-      <section>
-        <h2>Using the name in game</h2>
-        <ul><li><strong>Names are unique across all players</strong>, so popular ones go fast. Generate a few and keep backups.</li><li><strong>The game doesn't accept spaces in character names</strong>, which is why the ladder is full of underscores. Use <em>Seryx_the_Soulbinder</em>, run it together as <em>SeryxSoulbinder</em>, or keep the epithet for your own head-canon.</li><li><strong>A new league is a new character.</strong> A theme helps: name each league's Witch after the same family, or after the epithet of the build you're trying.</li></ul>
-      </section>
-    
+                <h2>Using the name in game</h2>
+                <ul><li><strong>Names are unique across all players</strong>, so popular ones go fast. Generate a few and keep backups.</li><li><strong>The game doesn't accept spaces in character names</strong>, which is why the ladder is full of underscores. Use <em>Seryx_the_Soulbinder</em>, run it together as <em>SeryxSoulbinder</em>, or keep the epithet for your own head-canon.</li><li><strong>A new league is a new character.</strong> A theme helps: name each league's Witch after the same family, or after the epithet of the build you're trying.</li></ul>
+                </div>
             </article>
 
-            
-      <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-          
-            <div class="faq-item">
-              <h3 class="faq-question">What are the Witch Ascendancies in Path of Exile?</h3>
-              <p class="faq-answer">In Path of Exile 1 the Witch can become a Necromancer, an Elementalist or an Occultist. In Path of Exile 2 her Ascendancies include the Infernalist and the Blood Mage. The generator has epithets to suit each.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Can I use spaces in a Path of Exile character name?</h3>
-              <p class="faq-answer">No: use underscores instead (Seryx_the_Soulbinder), or join the words together. Names are also unique across all players, so have a backup ready.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Are these names from the game?</h3>
-              <p class="faq-answer">No. The first names are new names in the game's style, so they won't clash with a character from the story. The characters mentioned in the article (Doedre, Shavronne, Piety, Atziri, Zana) are from the game.</p>
-            </div>
-          
-        </div>
-      </section>
-            
-      <section class="related-section">
-        <h2>Related Name Generators</h2>
-        <div class="related-grid" id="related-generators">
-          <a href="../posts/swamp-witch-name-generator.html" class="related-card">
-            <h3>🧙‍♀️ Swamp Witch Name Generator</h3>
-            <p>Swamp witch and hag names from folklore and fiction: Granny Nettle Bogwort, Delphine Murkwater of the bayou, Maud Reedwick of the fens, with an epithet if you like.</p>
-          </a>
-          <a href="../posts/harry-potter-witch-name-generator.html" class="related-card">
-            <h3>⚡ Harry Potter Witch Name Generator</h3>
-            <p>Witch names in the style of the Harry Potter books: everyday British first names or grand pure-blood ones, with a surname to suit Gryffindor, Hufflepuff, Ravenclaw or Slytherin.</p>
-          </a>
-          <a href="../posts/hogwarts-legacy-witch-name-generator.html" class="related-card">
-            <h3>🪄 Hogwarts Legacy Witch Name Generator</h3>
-            <p>Hogwarts Legacy witch names in the game&#039;s 1890s style: Victorian first names with surnames to suit Gryffindor, Hufflepuff, Ravenclaw or Slytherin.</p>
-          </a>
-          <a href="../posts/alien-name-generator.html" class="related-card">
-            <h3>👽 Alien Name Generator</h3>
-            <p>Alien names that sound like they come from a real species: clicking insectoids, liquid-voiced aquatics, beings named like Hums-at-Dawn, and galactic nobility.</p>
-          </a>
-          <a href="../posts/angel-name-generator.html" class="related-card">
-            <h3>😇 Angel Name Generator</h3>
-            <p>Angel names from scripture and tradition with their Hebrew meanings, or new ones in the same style, with a choir, a domain or an epithet.</p>
-          </a>
-          <a href="../posts/clan-name-generator.html" class="related-card">
-            <h3>🛡️ Clan Name Generator</h3>
-            <p>Clan names for fantasy families and gaming teams: Highland-style clans with a motto or war cry, tribes like the Howling Elk, and gaming clans with a tag.</p>
-          </a>
-        </div>
-      </section>
-            
-      <section class="category-generators-section">
-        <h2>All Fantasy Name Generators</h2>
-        <div class="category-generators-grid" id="category-generators">
-          <a href="../posts/tiefling-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">😈</span>
-            <span class="category-generator-title">Tiefling Name Generator</span>
-          </a>
-          <a href="../posts/dragonborn-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🐲</span>
-            <span class="category-generator-title">Dragonborn Name Generator</span>
-          </a>
-          <a href="../posts/halfling-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🍀</span>
-            <span class="category-generator-title">Halfling Name Generator</span>
-          </a>
-          <a href="../posts/gnome-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🍄</span>
-            <span class="category-generator-title">Gnome Name Generator</span>
-          </a>
-          <a href="../posts/elf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧝</span>
-            <span class="category-generator-title">Elf Name Generator</span>
-          </a>
-          <a href="../posts/half-elf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧝‍♂️</span>
-            <span class="category-generator-title">Half-Elf Name Generator</span>
-          </a>
-          <a href="../posts/dwarf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⛏️</span>
-            <span class="category-generator-title">Dwarf Name Generator</span>
-          </a>
-          <a href="../posts/dragon-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🐉</span>
-            <span class="category-generator-title">Dragon Name Generator</span>
-          </a>
-          <a href="../posts/wizard-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧙</span>
-            <span class="category-generator-title">Wizard Name Generator</span>
-          </a>
-          <a href="../posts/orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">Orc Name Generator</span>
-          </a>
-          <a href="../posts/skyrim-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">Skyrim Orc Name Generator</span>
-          </a>
-          <a href="../posts/warhammer-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">Warhammer Orc Name Generator</span>
-          </a>
-          <a href="../posts/wow-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">World of Warcraft Orc Name Generator</span>
-          </a>
-          <a href="../posts/lotr-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">LOTR Orc Name Generator</span>
-          </a>
-          <a href="../posts/half-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">Half-Orc Name Generator</span>
-          </a>
-          <a href="../posts/goblin-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">👺</span>
-            <span class="category-generator-title">Goblin Name Generator</span>
-          </a>
-          <a href="../posts/kobold-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🦎</span>
-            <span class="category-generator-title">Kobold Name Generator</span>
-          </a>
-          <a href="../posts/lizardfolk-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🐊</span>
-            <span class="category-generator-title">Lizardfolk Name Generator</span>
-          </a>
-          <a href="../posts/githyanki-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Githyanki Name Generator</span>
-          </a>
-          <a href="../posts/fantasy-town-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🏘️</span>
-            <span class="category-generator-title">Fantasy Town Name Generator</span>
-          </a>
-          <a href="../posts/fantasy-country-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🗺️</span>
-            <span class="category-generator-title">Fantasy Country Name Generator</span>
-          </a>
-          <a href="../posts/swamp-witch-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧙‍♀️</span>
-            <span class="category-generator-title">Swamp Witch Name Generator</span>
-          </a>
-          <a href="../posts/dnd-fantasy-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">D&amp;D Fantasy Name Generator</span>
-          </a>
-          <a href="../posts/funny-wizard-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🎩</span>
-            <span class="category-generator-title">Funny Wizard Name Generator</span>
-          </a>
-          <a href="../posts/high-elf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">👑</span>
-            <span class="category-generator-title">High Elf Name Generator</span>
-          </a>
-          <a href="../posts/wood-elf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🌲</span>
-            <span class="category-generator-title">Wood Elf Name Generator</span>
-          </a>
-          <a href="../posts/dark-elf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🌑</span>
-            <span class="category-generator-title">Dark Elf Name Generator</span>
-          </a>
-          <a href="../posts/clan-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🛡️</span>
-            <span class="category-generator-title">Clan Name Generator</span>
-          </a>
-          <a href="../posts/demon-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">😈</span>
-            <span class="category-generator-title">Demon Name Generator</span>
-          </a>
-          <a href="../posts/demon-epithet-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🔥</span>
-            <span class="category-generator-title">Demon Epithet Generator</span>
-          </a>
-          <a href="../posts/fantasy-city-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🏰</span>
-            <span class="category-generator-title">Fantasy City Name Generator</span>
-          </a>
-          <a href="../posts/angel-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">😇</span>
-            <span class="category-generator-title">Angel Name Generator</span>
-          </a>
-          <a href="../posts/alien-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">👽</span>
-            <span class="category-generator-title">Alien Name Generator</span>
-          </a>
-          <a href="../posts/fairy-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧚</span>
-            <span class="category-generator-title">Fairy Name Generator</span>
-          </a>
-          <a href="../posts/fairy-town-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧚‍♀️</span>
-            <span class="category-generator-title">Fairy Town Name Generator</span>
-          </a>
-          <a href="../posts/elven-sword-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Elven Sword Name Generator</span>
-          </a>
-        </div>
-      </section>
-        </main>
+            <section class="section faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>What are the Witch Ascendancies in Path of Exile?</summary>
+                        <div>In Path of Exile 1 the Witch can become a Necromancer, an Elementalist or an Occultist. In Path of Exile 2 her Ascendancies include the Infernalist and the Blood Mage. The generator has epithets to suit each.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Can I use spaces in a Path of Exile character name?</summary>
+                        <div>No: use underscores instead (Seryx_the_Soulbinder), or join the words together. Names are also unique across all players, so have a backup ready.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Are these names from the game?</summary>
+                        <div>No. The first names are new names in the game's style, so they won't clash with a character from the story. The characters mentioned in the article (Doedre, Shavronne, Piety, Atziri, Zana) are from the game.</div>
+                    </details>
+                </div>
+            </section>
 
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+            <section class="section related-section">
+                <h2>Related Name Generators</h2>
+                <div class="genlist" id="related-generators">
+                    <a href="../posts/swamp-witch-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-cauldron"/></svg><div><b>Swamp Witch Name Generator</b><span>Swamp witch and hag names from folklore and fiction: Granny Nettle Bogwort, Delphine Murkwater of the bayou, Maud Reedwick of the fens, with an epithet if you like.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/harry-potter-witch-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-broom"/></svg><div><b>Harry Potter Witch Name Generator</b><span>Witch names in the style of the Harry Potter books: everyday British first names or grand pure-blood ones, with a surname to suit Gryffindor, Hufflepuff, Ravenclaw or Slytherin.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/hogwarts-legacy-witch-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-broom"/></svg><div><b>Hogwarts Legacy Witch Name Generator</b><span>Hogwarts Legacy witch names in the game&#039;s 1890s style: Victorian first names with surnames to suit Gryffindor, Hufflepuff, Ravenclaw or Slytherin.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/alien-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-planet"/></svg><div><b>Alien Name Generator</b><span>Alien names that sound like they come from a real species: clicking insectoids, liquid-voiced aquatics, beings named like Hums-at-Dawn, and galactic nobility.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/angel-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Angel Name Generator</b><span>Angel names from scripture and tradition with their Hebrew meanings, or new ones in the same style, with a choir, a domain or an epithet.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/clan-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-round-shield"/></svg><div><b>Clan Name Generator</b><span>Clan names for fantasy families and gaming teams: Highland-style clans with a motto or war cry, tribes like the Howling Elk, and gaming clans with a tag.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
+
+            <section class="section category-generators-section">
+                <h2>More Fantasy Name Generators</h2>
+                <div class="genlist compact" id="category-generators">
+                    <a href="../posts/tiefling-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-horns"/></svg><div><b>Tiefling Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/dragonborn-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Dragonborn Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/halfling-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-d20"/></svg><div><b>Halfling Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/gnome-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Gnome Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/elf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf"/></svg><div><b>Elf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/half-elf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf"/></svg><div><b>Half-Elf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/dwarf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Dwarf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/dragon-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Dragon Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/wizard-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Wizard Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/skyrim-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>Skyrim Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/warhammer-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>Warhammer Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/wow-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>World of Warcraft Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/lotr-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>LOTR Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/half-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>Half-Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/goblin-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-d20"/></svg><div><b>Goblin Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/kobold-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-lizard"/></svg><div><b>Kobold Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/lizardfolk-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-lizard"/></svg><div><b>Lizardfolk Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/githyanki-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-katana"/></svg><div><b>Githyanki Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fantasy-town-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-house"/></svg><div><b>Fantasy Town Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fantasy-country-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-map"/></svg><div><b>Fantasy Country Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/swamp-witch-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-cauldron"/></svg><div><b>Swamp Witch Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/dnd-fantasy-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-d20"/></svg><div><b>D&amp;D Fantasy Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/funny-wizard-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Funny Wizard Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/high-elf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf"/></svg><div><b>High Elf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/wood-elf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf"/></svg><div><b>Wood Elf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/dark-elf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf-moon"/></svg><div><b>Dark Elf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/clan-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-round-shield"/></svg><div><b>Clan Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/demon-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-horns"/></svg><div><b>Demon Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/demon-epithet-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-flame"/></svg><div><b>Demon Epithet Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fantasy-city-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-castle"/></svg><div><b>Fantasy City Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/angel-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Angel Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/alien-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-planet"/></svg><div><b>Alien Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fairy-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-wings"/></svg><div><b>Fairy Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fairy-town-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Fairy Town Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/elven-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Elven Sword Name Generator</b></div><em aria-hidden="true">→</em></a>
+                </div>
+                <p class="all-link"><a href="../categories/fantasy-names.html">All Fantasy name generators</a></p>
+            </section>
+            <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
 
     <script type="application/json" id="generator-config">{"title":"Path of Exile Witch Name Generator","slug":"path-of-exile-witch-name-generator","filters":{"ascendancy":{"label":"Ascendancy","options":["any","necromancer","elementalist","occultist","infernalist","blood_mage"],"optionLabels":{"any":"Any Ascendancy","necromancer":"Necromancer","elementalist":"Elementalist","occultist":"Occultist","infernalist":"Infernalist (PoE 2)","blood_mage":"Blood Mage (PoE 2)"}},"format":{"label":"Name Format","options":["full","first"],"optionLabels":{"full":"Name and epithet","first":"First name only"}}},"recipe":"switch","on":"format","cases":{"first":{"recipe":"pick","from":"first"},"full":{"recipe":"switch","on":"ascendancy","cases":{"any":{"recipe":"template","template":"[first] [epithets]"}},"default":{"recipe":"template","template":"[first] [epithets.{ascendancy}]"}}},"distinct":[{"part":"first"},{"part":"rest"}],"data":{"first":["Seryx","Xenith","Velthel","Serel","Lileth","Calyn","Baltis","Thunith","Jyzoria","Pyrith","Elzelle","Zilis","Bellara","Yzarethis","Sylis","Pyretha","Serelle","Yzarith","Zoriel","Vaelisha","Ithis","Izith","Sylara","Ylthine","Myndine","Serara","Drethath","Yzarara","Xenessa","Syphis","Zilara","Velxyx","Zalvora","Syphith","Malis","Othira","Velthis","Nyxith","Nytherel","Ophyx","Volyx","Seria","Nyxelle","Ophara","Xenira","Zaelina","Elanis","Nyxara","Velzis","Pyris","Xanara","Xanith","Morrara","Jyzessa","Othora","Velthora","Nyxiel","Zilina","Nyxelis","Drethora","Morrith","Thunara","Seriel","Vaelora","Zalara","Elanith","Morrora","Zilath","Ophis","Zalel","Velxessa","Thunetha","Zorith","Ophethis","Kyzia","Xanis","Zaelara","Zephara","Myrelelis","Vaelith","Velora","Zalvelle","Syphel","Ylvina","Pyrara","Morrira","Seris","Miryne","Kyzora","Thunyn","Velzyx","Nyzzelle","Xilith","Nyxis","Drethis","Elanethis","Myzis","Thalis","Zaelith","Kyzira","Lilith","Velara","Xyressa","Velzeth","Xyretha","Sylyne","Vysira","Ithelle","Vysis","Thuniel","Calis","Othith","Thuneth","Myrelara","Velxara","Zalvara","Malara","Bellith","Ophine","Zaltara","Zaltis","Syphelle","Othelis","Xilis","Xelara","Ylvisha","Vaelis","Ithina","Baltith","Myrelina","Yzaris","Malath","Velxelle","Myzith","Zaltetha","Velthara","Ithyx","Nyxyne","Drethelis","Zephia","Xiline","Mirora","Xeletha","Elzara","Kyziel","Xyris","Xenis","Myndelis","Ylvyne","Elyyne","Elanina","Ylthyx","Xyphoria","Morroria","Othis","Kyzara","Nyzzis","Azmyx","Lilath","Xanel","Azmelle","Nyzzith","Morviel","Malyx","Malora","Zilelis","Belliel","Othyn","Xilelle","Drethetha","Nyxira","Ylthath","Othara","Morrine","Ophina","Velith","Xilath","Baltoria","Elyelle","Mirith","Elanyx","Azmara","Lilisha","Volith","Elzia","Ysis","Drethara","Vaeliel","Xilel","Kyzyx","Sylora","Velis","Xilara","Zaelis","Syphora","Ylvora","Ysith","Xenia","Nyzzara","Velxira","Jyzira","Morrthia","Xyphara","Calelle","Xanine","Yzaryne","Zaltora","Elzis","Mireth","Syphine","Miryx","Myndina","Elyara","Izis","Elanath","Nytheriel","Izia","Sylethis","Belline","Othoria","Xelisha","Syphia","Zilisha","Velzith","Serith","Vysara","Vysath","Morris","Drethyx","Xelthia","Elanara","Myrelith","Morvara","Kyzeth","Jorara","Pyrelis","Elyyx","Zalith","Zilith","Xelethis","Nytherora","Liliel","Zephith","Myndoria","Bellia","Mirelis","Myrelelle","Elythia","Zalyn","Velxis","Zaliel","Zaltessa","Calyx","Joris","Zalvis","Zileth","Volis","Nyzzath","Elanora","Thunyx","Pyrora","Vysith","Bellyne","Velzara","Pyria","Ysora","Nyxine","Morvis","Kyzisha","Xenelle","Zephira","Serath","Yzarelle","Zorel","Zorara","Zalora","Jyzisha","Volora","Zalis","Izora","Yzaryn","Xiliel","Zephiel","Drethith","Yzarthia","Myndora","Elzisha","Elyia","Lilora","Zalina","Velxiel","Miris","Ysine","Drethina","Myreliel","Azmine","Velzthia","Velxith","Zorath","Elyora","Elanyn","Morvith","Thunoria","Ithessa","Zaltith","Zaelia","Ophisha","Myrelora","Drelath","Ophia","Bellis","Morriel","Xilisha","Thalelis"],"epithets":{"necromancer":["the Soulbinder","the Tombmother","the Rotmother","Bonewhisper","the Soulthief","the Deathspeaker","the Deathchant","the Gravewalker","of the Unbound Souls","the Spiritbinder","the Withering","the Nightwither","the Pale Hand","the Forgotten One","the Forsaken","the Bonecaller","the Gravemother","the Ashen Widow","Corpsewhisper","the Lichbound"],"elementalist":["the Frostbound","the Rimestorm","the Embermancer","the Pyrebringer","the Ashdancer","the Arcstriker","the Stormcaller","Emberfury","the Tempestbinder","the Everfrozen","the Shattered Sky","Duskflame","the Frostweaver","the Thunderborn","the Glacial Heart"],"occultist":["the Hungering Void","the Mindshatter","the Unseen","the Whispering Dark","the Hexmistress","the Blightseer","the Cursebearer","the Whispering Doom","Blacktongue","the Hexborn","the Voidcursed","the Unraveled","of the Doomed Echo","the Spellwoven","the Unknowable","the Shadowseer","the Veilbound","the Cosmic Rift","the Doomcaller","the Mindrender","the Abysswalker","the Omenreader","the Doomseer","the Beyondborn"],"infernalist":["the Helltouched","the Hellbound","of the Burning Pact","the Demon's Herald","the Blackflame","the Magmablood","the Ashborn","the Smoldering Veil","the Pyreborn","the Demonsworn","Hellfire","the Cinder Queen","the Brimstone Bride","the Pactbound"],"blood_mage":["the Bloodchained","the Bloodletter","the Crimson Tithe","Veinweaver","the Sanguine","Bloodsong","the Red Hand","the Heartdrinker","the Bloodbound","the Crimson Witch","the Scarlet Rite","Blood-Oath","the Hemomancer"]}}}</script>
     <script src="../lib/recipe-engine.js"></script>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

@@ -313,343 +313,302 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
-                </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-laurel" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 43 C12 37 8 25 13 8"/><path d="M12 34 c-6 -1 -8 -5 -7 -9 c4 1 7 4 7 9 z" fill="#efc84a"/><path d="M10 26 c-6 -1 -8 -5 -7 -9 c4 1 7 4 7 9 z" fill="#fffcf4"/><path d="M11 18 c-6 -1 -8 -5 -7 -9 c4 1 7 4 7 9 z" fill="#fffcf4"/><path d="M26 43 C36 37 40 25 35 8"/><path d="M36 34 c6 -1 8 -5 7 -9 c-4 1 -7 4 -7 9 z" fill="#fffcf4"/><path d="M38 26 c6 -1 8 -5 7 -9 c-4 1 -7 4 -7 9 z" fill="#efc84a"/><path d="M37 18 c6 -1 8 -5 7 -9 c-4 1 -7 4 -7 9 z" fill="#fffcf4"/><path d="M18 44 h12"/></g></symbol>
+      <symbol id="m-flame" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 C28 13 36 17 36 29 C36 37 30 43 24 43 C17 43 12 37 12 30 C12 23 17 20 18 14 C22 18 22 22 24 24 C26 18 25 11 24 5 Z" fill="#fffcf4"/><path d="M24 43 C20 41 19 35 23 31 C24 35 27 35 27 38 C27 41 26 42 24 43 Z" fill="#efc84a"/></g></symbol>
+      <symbol id="m-hood" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 44 C9 28 13 12 24 5 C35 12 39 28 39 44 Z" fill="#fffcf4"/><path d="M17 44 C17 32 20 22 24 19 C28 22 31 32 31 44" stroke-width="1.5"/><path d="M18 30 C21 28 27 28 30 30" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-quill" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M38 4 C24 8 14 20 12 38 C24 32 36 22 38 4 Z" fill="#fffcf4"/><path d="M12 38 L35 8" stroke-width="1.3"/><path d="M12 38 L7 45"/><path d="M5 45 C12 42 18 46 25 43" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-d20" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4 L42 14 L42 34 L24 44 L6 34 L6 14 Z" fill="#fffcf4"/><path d="M24 4 L15 28 L33 28 Z M6 14 L15 28 M42 14 L33 28 M15 28 L24 44 L33 28 M6 34 L15 28 M42 34 L33 28" stroke-width="1.3"/><path d="M20 24 h8" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-round-shield" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18" fill="#fffcf4"/><circle cx="24" cy="24" r="5" fill="#efc84a"/><path d="M24 6 V19 M24 29 V42 M6 24 H19 M29 24 H42" stroke-width="1.3"/></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../categories/people-names.html">Characters</a> / <span aria-current="page">Epithet Generator</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">Epithet</span> Generator</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-laurel"/></svg>
             </div>
-        </div>
-    </nav>
+            <p class="lede">Type your character&#039;s name and find the epithet that sticks: the Bold, Dragonslayer, or something history would recognise.</p>
 
-    <div class="container">
-        <header class="blog-hero">
-            <h1>🏷️ Epithet Generator</h1>
-            <p class="tagline">Type your character&#039;s name and find the epithet that sticks: the Bold, Dragonslayer, or something history would recognise.</p>
-            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
-        </header>
-
-        <main>
-            <section class="embedded-generator">
-                <div class="generator-card">
-                    <h2>Generate Epithets</h2>
-                    <p class="generator-description">Add an epithet to your character&#039;s name: the Bold, Dragonslayer, of the North, or a real one from history like the Unready or Bloodaxe. 36 categories, or a mix.</p>
-                    
-                    <div class="simple-generator">
-                        <div class="filters">
-          <div class="filter-group">
-            <label for="filter-characterName">Character Name:</label>
-            <input type="text" id="filter-characterName" name="characterName" data-filter="characterName" placeholder="Enter your character&#039;s name" class="name-input">
+            <section class="sheet hd simple-generator" id="generator" aria-label="Epithet Generator">
+                <div class="gen-grid">
+          <div class="group">
+            <label class="label" for="filter-characterName">Character Name</label>
+            <div class="ctl hd"><input type="text" id="filter-characterName" name="characterName" data-filter="characterName" placeholder="Enter your character&#039;s name" class="name-input" autocomplete="off"></div>
           </div>
 
-          <div class="filter-group">
-            <label for="filter-category">Epithet Category:</label>
-            <select id="filter-category" name="category" data-filter="category">
-              <option value="any">Any category (a mix)</option>
-              <option value="historical">Historical (real kings and warriors)</option>
-              <option value="physical">Physical</option>
-              <option value="personality_positive">Personality: Positive</option>
-              <option value="personality_negative">Personality: Negative</option>
-              <option value="personality_neutral">Personality: Neutral</option>
-              <option value="alignment_good">Alignment: Good</option>
-              <option value="alignment_evil">Alignment: Evil</option>
-              <option value="alignment_neutral">Alignment: Neutral</option>
-              <option value="deed_dragon">Deed: Dragon</option>
-              <option value="deed_giant">Deed: Giant</option>
-              <option value="deed_monster">Deed: Monster</option>
-              <option value="deed_creature">Deed: Creature</option>
-              <option value="deed_military">Deed: Military</option>
-              <option value="deed_defensive">Deed: Defensive</option>
-              <option value="reputation_fame">Reputation: Fame</option>
-              <option value="reputation_infamy">Reputation: Infamy</option>
-              <option value="reputation_mystery">Reputation: Mystery</option>
-              <option value="reputation_respect">Reputation: Respect</option>
-              <option value="reputation_status">Reputation: Status</option>
-              <option value="origin_direction">Origin: Direction</option>
-              <option value="origin_terrain">Origin: Terrain</option>
-              <option value="origin_status">Origin: Status</option>
-              <option value="origin_metaphysical">Origin: Metaphysical</option>
-              <option value="magical_type">Magical: Type</option>
-              <option value="magical_element">Magical: Element</option>
-              <option value="magical_power">Magical: Power</option>
-              <option value="magical_state">Magical: State</option>
-              <option value="magical_specific">Magical: Specific</option>
-              <option value="weapon_type">Weapon: Type</option>
-              <option value="weapon_combat">Weapon: Combat</option>
-              <option value="weapon_skill">Weapon: Skill</option>
-              <option value="time_life">Time: Life</option>
-              <option value="time_day">Time: Day</option>
-              <option value="time_season">Time: Season</option>
-              <option value="misc_animal">Misc: Animal</option>
-              <option value="misc_color">Misc: Color</option>
-              <option value="misc_concept">Misc: Concept</option>
-            </select>
+          <div class="group">
+            <label class="label" for="filter-category">Epithet Category</label>
+            <div class="ctl sel hd">
+              <select id="filter-category" name="category" data-filter="category">
+                <option value="any">Any category (a mix)</option>
+                <option value="historical">Historical (real kings and warriors)</option>
+                <option value="physical">Physical</option>
+                <option value="personality_positive">Personality: Positive</option>
+                <option value="personality_negative">Personality: Negative</option>
+                <option value="personality_neutral">Personality: Neutral</option>
+                <option value="alignment_good">Alignment: Good</option>
+                <option value="alignment_evil">Alignment: Evil</option>
+                <option value="alignment_neutral">Alignment: Neutral</option>
+                <option value="deed_dragon">Deed: Dragon</option>
+                <option value="deed_giant">Deed: Giant</option>
+                <option value="deed_monster">Deed: Monster</option>
+                <option value="deed_creature">Deed: Creature</option>
+                <option value="deed_military">Deed: Military</option>
+                <option value="deed_defensive">Deed: Defensive</option>
+                <option value="reputation_fame">Reputation: Fame</option>
+                <option value="reputation_infamy">Reputation: Infamy</option>
+                <option value="reputation_mystery">Reputation: Mystery</option>
+                <option value="reputation_respect">Reputation: Respect</option>
+                <option value="reputation_status">Reputation: Status</option>
+                <option value="origin_direction">Origin: Direction</option>
+                <option value="origin_terrain">Origin: Terrain</option>
+                <option value="origin_status">Origin: Status</option>
+                <option value="origin_metaphysical">Origin: Metaphysical</option>
+                <option value="magical_type">Magical: Type</option>
+                <option value="magical_element">Magical: Element</option>
+                <option value="magical_power">Magical: Power</option>
+                <option value="magical_state">Magical: State</option>
+                <option value="magical_specific">Magical: Specific</option>
+                <option value="weapon_type">Weapon: Type</option>
+                <option value="weapon_combat">Weapon: Combat</option>
+                <option value="weapon_skill">Weapon: Skill</option>
+                <option value="time_life">Time: Life</option>
+                <option value="time_day">Time: Day</option>
+                <option value="time_season">Time: Season</option>
+                <option value="misc_animal">Misc: Animal</option>
+                <option value="misc_color">Misc: Color</option>
+                <option value="misc_concept">Misc: Concept</option>
+              </select>
+            </div>
           </div></div>
-                        <div class="generator-controls">
-                            <div class="filter-group count-group">
-                                <label for="name-count">How many:</label>
-                                <select id="name-count">
-                                    <option value="8" selected>8 names</option>
-                                    <option value="16">16 names</option>
-                                    <option value="32">32 names</option>
-                                </select>
-                            </div>
-                            <button id="generate-btn" class="generate-button">Generate Names</button>
-                        </div>
-                        <div class="results-area" id="results">
-                            <p class="results-placeholder">Click "Generate Names" to see results</p>
-                        </div>
-                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
-                        <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="true">
+                    <p class="results-empty">Press Generate Names for 8 epithets.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
                     </div>
-                    
-                    <div class="cta-box">
-                        <p><strong>Need more options?</strong></p>
-                        <a href="../index.html" class="cta-button">Try the Ultimate Random Name Generator →</a>
-                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
+
+            <section class="section example-names">
+                <h2>Example Epithets</h2>
+                <p class="sub">A few names this generator came up with. Tap one to copy it, or press "Generate Names" above for more.</p>
+                <div class="ex">
+                <div class="exbox hd">
+                    <h3>Any category</h3>
+                    <ul>
+                        <li>Aldric the Tranquil</li>
+                        <li>Aldric the Unbound</li>
+                        <li>Aldric the Bronze</li>
+                        <li>Aldric the Frozen</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Alignment: Good</h3>
+                    <ul>
+                        <li>Aldric the Noble</li>
+                        <li>Aldric the Brilliant</li>
+                        <li>Aldric the Light</li>
+                        <li>Aldric the Radiant</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Deed: Creature</h3>
+                    <ul>
+                        <li>Aldric Lichbane</li>
+                        <li>Aldric Trollslayer</li>
+                        <li>Aldric Undeadbane</li>
+                        <li>Aldric Ghosthunter</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Reputation: Status</h3>
+                    <ul>
+                        <li>Aldric the Outcast</li>
+                        <li>Aldric the Awakened</li>
+                        <li>Aldric the Forgotten</li>
+                        <li>Aldric the Banished</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Magical: Element</h3>
+                    <ul>
+                        <li>Aldric the Blazing</li>
+                        <li>Aldric Frostborn</li>
+                        <li>Aldric the Glacial</li>
+                        <li>Aldric Shadowborn</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Weapon: Skill</h3>
+                    <ul>
+                        <li>Aldric the Master</li>
+                        <li>Aldric the Experienced</li>
+                        <li>Aldric the Seasoned</li>
+                        <li>Aldric the Veteran</li>
+                    </ul>
+                </div>
                 </div>
             </section>
 
-            <section class="example-names">
-                <h2>Example Epithets</h2>
-                <p>A few names this generator came up with. Press "Generate Names" above for more.</p>
-                <h3>Any category</h3>
-                <ul class="name-results">
-                    <li>Aldric the Tranquil</li>
-                    <li>Aldric the Unbound</li>
-                    <li>Aldric the Bronze</li>
-                    <li>Aldric the Frozen</li>
-                </ul>
-                <h3>Alignment: Good</h3>
-                <ul class="name-results">
-                    <li>Aldric the Noble</li>
-                    <li>Aldric the Brilliant</li>
-                    <li>Aldric the Light</li>
-                    <li>Aldric the Radiant</li>
-                </ul>
-                <h3>Deed: Creature</h3>
-                <ul class="name-results">
-                    <li>Aldric Lichbane</li>
-                    <li>Aldric Trollslayer</li>
-                    <li>Aldric Undeadbane</li>
-                    <li>Aldric Ghosthunter</li>
-                </ul>
-                <h3>Reputation: Status</h3>
-                <ul class="name-results">
-                    <li>Aldric the Outcast</li>
-                    <li>Aldric the Awakened</li>
-                    <li>Aldric the Forgotten</li>
-                    <li>Aldric the Banished</li>
-                </ul>
-                <h3>Magical: Element</h3>
-                <ul class="name-results">
-                    <li>Aldric the Blazing</li>
-                    <li>Aldric Frostborn</li>
-                    <li>Aldric the Glacial</li>
-                    <li>Aldric Shadowborn</li>
-                </ul>
-                <h3>Weapon: Skill</h3>
-                <ul class="name-results">
-                    <li>Aldric the Master</li>
-                    <li>Aldric the Experienced</li>
-                    <li>Aldric the Seasoned</li>
-                    <li>Aldric the Veteran</li>
-                </ul>
-            </section>
-
-            <section class="blog-content how-it-works">
+            <section class="section how-it-works">
                 <h2>How the Epithet Generator Works</h2>
+                <div class="howto hd">
                 <p>It picks from a list of 630 epithets.</p>
                 <p>The choices:</p>
                 <ul><li><strong>Character Name:</strong> type a name and it's built into every result (leave it blank to get "Your Character").</li><li><strong>Epithet Category:</strong> Any category, Historical, Physical, Personality: Positive, Personality: Negative, Personality: Neutral, Alignment: Good, Alignment: Evil, Alignment: Neutral, Deed: Dragon, Deed: Giant, Deed: Monster, Deed: Creature, Deed: Military, Deed: Defensive, Reputation: Fame, Reputation: Infamy, Reputation: Mystery, Reputation: Respect, Reputation: Status, Origin: Direction, Origin: Terrain, Origin: Status, Origin: Metaphysical, Magical: Type, Magical: Element, Magical: Power, Magical: State, Magical: Specific, Weapon: Type, Weapon: Combat, Weapon: Skill, Time: Life, Time: Day, Time: Season, Misc: Animal, Misc: Color, Misc: Concept.</li></ul>
-                <p>Each press gives you 8, 16 or 32 names (choose under "How many"), and you won't see the same one twice until you've been through everything for the choices you've made.</p>
+                <p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet, until the names for the choices you've made run out.</p>
+                </div>
             </section>
 
-            <article class="blog-content" itemscope itemtype="https://schema.org/Article">
+            <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="Epithet Generator">
                 <meta itemprop="description" content="Add an epithet to your character&#039;s name: the Bold, Dragonslayer, of the North, or a real one from history like the Unready or Bloodaxe. 36 categories, or a mix.">
-                <section itemprop="articleBody">
-                    <p>An epithet is the part of a name people add once they know you: <em>the Bold</em>, <em>Dragonslayer</em>, <em>of the North</em>. It says what you did, what you're like or where you're from, and it often outlives everything else about you. Type your character's name into this <strong>epithet generator</strong>, pick a category (or leave it on a mix) and see what fits.</p>
-                </section>
+                <div itemprop="articleBody">
+                <p class="big">An epithet is the part of a name people add once they know you: <em>the Bold</em>, <em>Dragonslayer</em>, <em>of the North</em>. It says what you did, what you're like or where you're from, and it often outlives everything else about you. Type your character's name into this <strong>epithet generator</strong>, pick a category (or leave it on a mix) and see what fits.</p>
                 
-      <section>
-        <h2>Epithets from history</h2>
-        <p>Real kings and warriors collected some wonderful epithets, and many were far from flattering. The <strong>Historical</strong> category draws on them:</p><ul><li><strong>Æthelred the Unready</strong> (England, d. 1016): "unready" comes from Old English <em>unræd</em>, "ill-advised", a pun on his name, which means "noble counsel".</li><li><strong>Harald Bluetooth</strong> (Denmark): the Bluetooth wireless standard is named after him, and its logo combines the runes of his initials.</li><li><strong>Edward Longshanks</strong> (Edward I of England): for his height. <strong>John Lackland</strong>, a youngest son, was expected to inherit no lands of his own.</li><li><strong>Eric Bloodaxe</strong>, <strong>Sweyn Forkbeard</strong> and <strong>Thorfinn Skull-splitter</strong>: the Viking world's bynames are some of the best there are.</li><li><strong>Charles the Bald</strong>, <strong>Charles the Fat</strong> and <strong>Charles the Simple</strong>: three Frankish kings, three blunt verdicts. Their relative <strong>Louis the Stammerer</strong> fared no better.</li><li><strong>Henry the Fowler</strong> (Germany): the story goes he was out setting bird snares when news came that he'd been chosen king.</li><li><strong>Ivan the Terrible</strong>: the Russian <em>Grozny</em> is closer to "formidable" or "fearsome" than "bad".</li></ul><p>Using a real epithet makes a character feel grounded in history, and a funny one (the Fat, the Unready) can make a ruler instantly memorable.</p>
-      </section>
-    
+                <h2>Epithets from history</h2>
+                <p>Real kings and warriors collected some wonderful epithets, and many were far from flattering. The <strong>Historical</strong> category draws on them:</p><ul><li><strong>Æthelred the Unready</strong> (England, d. 1016): "unready" comes from Old English <em>unræd</em>, "ill-advised", a pun on his name, which means "noble counsel".</li><li><strong>Harald Bluetooth</strong> (Denmark): the Bluetooth wireless standard is named after him, and its logo combines the runes of his initials.</li><li><strong>Edward Longshanks</strong> (Edward I of England): for his height. <strong>John Lackland</strong>, a youngest son, was expected to inherit no lands of his own.</li><li><strong>Eric Bloodaxe</strong>, <strong>Sweyn Forkbeard</strong> and <strong>Thorfinn Skull-splitter</strong>: the Viking world's bynames are some of the best there are.</li><li><strong>Charles the Bald</strong>, <strong>Charles the Fat</strong> and <strong>Charles the Simple</strong>: three Frankish kings, three blunt verdicts. Their relative <strong>Louis the Stammerer</strong> fared no better.</li><li><strong>Henry the Fowler</strong> (Germany): the story goes he was out setting bird snares when news came that he'd been chosen king.</li><li><strong>Ivan the Terrible</strong>: the Russian <em>Grozny</em> is closer to "formidable" or "fearsome" than "bad".</li></ul><p>Using a real epithet makes a character feel grounded in history, and a funny one (the Fat, the Unready) can make a ruler instantly memorable.</p>
 
-      <section>
-        <h2>The, of, or nothing at all</h2>
-        <p>Epithets come in a few shapes, and the shape changes the feel:</p><ul><li><strong>the + word</strong>: <em>the Bold</em>, <em>the Hammer</em>, <em>the Wise</em>. The classic form, and the most common.</li><li><strong>A single compound word</strong>: <em>Dragonslayer</em>, <em>Lionheart</em>, <em>Stormborn</em>. These drop the "the" and read almost like a surname.</li><li><strong>of + place</strong>: <em>of the North</em>, <em>of the Mountains</em>. Where someone's from, especially once they've left it.</li></ul><p>The generator adds "the" where it belongs, so <em>Aldric the Brave</em>, <em>Aldric Dragonslayer</em> and <em>Aldric of the North</em> all come out right.</p>
-      </section>
-    
+                <h2>The, of, or nothing at all</h2>
+                <p>Epithets come in a few shapes, and the shape changes the feel:</p><ul><li><strong>the + word</strong>: <em>the Bold</em>, <em>the Hammer</em>, <em>the Wise</em>. The classic form, and the most common.</li><li><strong>A single compound word</strong>: <em>Dragonslayer</em>, <em>Lionheart</em>, <em>Stormborn</em>. These drop the "the" and read almost like a surname.</li><li><strong>of + place</strong>: <em>of the North</em>, <em>of the Mountains</em>. Where someone's from, especially once they've left it.</li></ul><p>The generator adds "the" where it belongs, so <em>Aldric the Brave</em>, <em>Aldric Dragonslayer</em> and <em>Aldric of the North</em> all come out right.</p>
 
-      <section>
-        <h2>Epithets are given, not chosen</h2>
-        <p>Almost nobody picks their own epithet. Other people give it to them, and that's where the fun is:</p><ul><li><strong>It can be unfair.</strong> One bad day can stick for ever. Jaime Lannister is "Kingslayer" to everyone in Westeros, whatever his reasons.</li><li><strong>It can be ironic.</strong> A giant called <em>the Small</em>, a coward called <em>the Brave</em>.</li><li><strong>It can change.</strong> A character might start as <em>the Exile</em> and end as <em>the Returned</em>, which makes a good arc for a long campaign.</li><li><strong>Different people use different ones.</strong> Allies say <em>the Bold</em>; enemies say <em>the Reckless</em>.</li></ul>
-      </section>
-    
+                <h2>Epithets are given, not chosen</h2>
+                <p>Almost nobody picks their own epithet. Other people give it to them, and that's where the fun is:</p><ul><li><strong>It can be unfair.</strong> One bad day can stick for ever. Jaime Lannister is "Kingslayer" to everyone in Westeros, whatever his reasons.</li><li><strong>It can be ironic.</strong> A giant called <em>the Small</em>, a coward called <em>the Brave</em>.</li><li><strong>It can change.</strong> A character might start as <em>the Exile</em> and end as <em>the Returned</em>, which makes a good arc for a long campaign.</li><li><strong>Different people use different ones.</strong> Allies say <em>the Bold</em>; enemies say <em>the Reckless</em>.</li></ul>
 
-      <section>
-        <h2>Choosing the right category</h2>
-        <ul><li><strong>Deeds</strong> (Dragon, Giant, Monster, Military…) for heroes with a famous victory behind them.</li><li><strong>Reputation</strong> (Fame, Infamy, Mystery…) for what people say about them, true or not.</li><li><strong>Origin</strong> for travellers, exiles and anyone far from home.</li><li><strong>Magical</strong> for spellcasters and anyone touched by magic.</li><li><strong>Personality</strong> and <strong>Physical</strong> for the epithets ordinary people get: the Tall, the Quiet, the Cruel.</li><li><strong>Historical</strong> for real epithets with a story behind them.</li></ul><p>Not sure? Leave it on <strong>Any category</strong> and press Generate a few times: the right one tends to jump out.</p>
-      </section>
-    
+                <h2>Choosing the right category</h2>
+                <ul><li><strong>Deeds</strong> (Dragon, Giant, Monster, Military…) for heroes with a famous victory behind them.</li><li><strong>Reputation</strong> (Fame, Infamy, Mystery…) for what people say about them, true or not.</li><li><strong>Origin</strong> for travellers, exiles and anyone far from home.</li><li><strong>Magical</strong> for spellcasters and anyone touched by magic.</li><li><strong>Personality</strong> and <strong>Physical</strong> for the epithets ordinary people get: the Tall, the Quiet, the Cruel.</li><li><strong>Historical</strong> for real epithets with a story behind them.</li></ul><p>Not sure? Leave it on <strong>Any category</strong> and press Generate a few times: the right one tends to jump out.</p>
+                </div>
             </article>
 
-            
-      <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-          
-            <div class="faq-item">
-              <h3 class="faq-question">What is an epithet?</h3>
-              <p class="faq-answer">A word or phrase added to a name to describe the person: what they did (Dragonslayer), what they're like (the Wise) or where they're from (of the North). Historians also call them bynames.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Should an epithet start with "the"?</h3>
-              <p class="faq-answer">Most do (the Bold, the Great), but compound words like Dragonslayer, Lionheart or Bloodaxe usually drop it, and place epithets use "of" (of the North). The generator applies the right form for each one.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Can an epithet be an insult?</h3>
-              <p class="faq-answer">Very often. History is full of them: the Unready, the Fat, the Stammerer. An unflattering epithet is a quick way to make a character, especially a ruler, memorable.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Can a character have more than one epithet?</h3>
-              <p class="faq-answer">Yes, but keep one as the main one. Some characters collect titles (Daenerys Stormborn has a long list), but one well-chosen epithet usually lands better than five.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Are the historical epithets real?</h3>
-              <p class="faq-answer">Yes. Every name in the Historical category was the epithet of a real ruler or warrior, from Æthelred the Unready to Harald Bluetooth.</p>
-            </div>
-          
-        </div>
-      </section>
-            
-      <section class="related-section">
-        <h2>Related Name Generators</h2>
-        <div class="related-grid" id="related-generators">
-          <a href="../posts/demon-epithet-generator.html" class="related-card">
-            <h3>🔥 Demon Epithet Generator</h3>
-            <p>Titles for your demons: the Devourer, Lord of the Ninth Pit, Duke of Ashes. Epithets by sin, domain and rank, inspired by real demonology.</p>
-          </a>
-          <a href="../posts/assassin-name-generator.html" class="related-card">
-            <h3>🗡️ Assassin Name Generator</h3>
-            <p>Assassin names that don&#039;t draw attention: codenames like Shrike, titles like the Patient Guest, fantasy aliases like Silkstep, and full names with an alias.</p>
-          </a>
-          <a href="../posts/vampire-name-generator.html" class="related-card">
-            <h3>🧛 Vampire Name Generator</h3>
-            <p>Vampire names in four styles: gothic aristocrats, Old World Transylvanians, ancient Romans and modern urban vampires. Full names, titles like Count and Countess, or first names.</p>
-          </a>
-          <a href="../posts/gamertag-generator.html" class="related-card">
-            <h3>🎮 Gamertag Generator</h3>
-            <p>Gamertags and usernames for Xbox, PlayStation, Discord, Steam and social media: cool, funny, fantasy or short, with your own word or name mixed in if you like.</p>
-          </a>
-          <a href="../posts/knight-name-generator.html" class="related-card">
-            <h3>🛡️ Knight Name Generator</h3>
-            <p>Knight names built the medieval way: Sir or Dame, a period first name, and a place, an epithet or a knightly order, from Sir Ralph of Blackmoor to Dame Isabel the Unbowed.</p>
-          </a>
-          <a href="../posts/name-combiner.html" class="related-card">
-            <h3>💞 Name Combiner</h3>
-            <p>Combine two names into one: ship names for couples and characters (Romeo + Juliet = Romiet), baby name blends, and mash-ups of any two names you type.</p>
-          </a>
-        </div>
-      </section>
-            
-      <section class="category-generators-section">
-        <h2>All Characters Name Generators</h2>
-        <div class="category-generators-grid" id="category-generators">
-          <a href="../posts/name-combiner.html" class="category-generator-item">
-            <span class="category-generator-icon">💞</span>
-            <span class="category-generator-title">Name Combiner</span>
-          </a>
-          <a href="../posts/gamertag-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🎮</span>
-            <span class="category-generator-title">Gamertag Generator</span>
-          </a>
-          <a href="../posts/assassin-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🗡️</span>
-            <span class="category-generator-title">Assassin Name Generator</span>
-          </a>
-          <a href="../posts/vampire-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧛</span>
-            <span class="category-generator-title">Vampire Name Generator</span>
-          </a>
-          <a href="../posts/knight-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🛡️</span>
-            <span class="category-generator-title">Knight Name Generator</span>
-          </a>
-          <a href="../posts/paladin-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">✨</span>
-            <span class="category-generator-title">Paladin Name Generator</span>
-          </a>
-          <a href="../posts/pirate-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🏴‍☠️</span>
-            <span class="category-generator-title">Pirate Name Generator</span>
-          </a>
-          <a href="../posts/viking-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⛵</span>
-            <span class="category-generator-title">Viking Name Generator</span>
-          </a>
-          <a href="../posts/superhero-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🦸</span>
-            <span class="category-generator-title">Superhero Name Generator</span>
-          </a>
-          <a href="../posts/villain-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🦹</span>
-            <span class="category-generator-title">Villain Name Generator</span>
-          </a>
-        </div>
-      </section>
-        </main>
+            <section class="section faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>What is an epithet?</summary>
+                        <div>A word or phrase added to a name to describe the person: what they did (Dragonslayer), what they're like (the Wise) or where they're from (of the North). Historians also call them bynames.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Should an epithet start with "the"?</summary>
+                        <div>Most do (the Bold, the Great), but compound words like Dragonslayer, Lionheart or Bloodaxe usually drop it, and place epithets use "of" (of the North). The generator applies the right form for each one.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Can an epithet be an insult?</summary>
+                        <div>Very often. History is full of them: the Unready, the Fat, the Stammerer. An unflattering epithet is a quick way to make a character, especially a ruler, memorable.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Can a character have more than one epithet?</summary>
+                        <div>Yes, but keep one as the main one. Some characters collect titles (Daenerys Stormborn has a long list), but one well-chosen epithet usually lands better than five.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Are the historical epithets real?</summary>
+                        <div>Yes. Every name in the Historical category was the epithet of a real ruler or warrior, from Æthelred the Unready to Harald Bluetooth.</div>
+                    </details>
+                </div>
+            </section>
 
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+            <section class="section related-section">
+                <h2>Related Name Generators</h2>
+                <div class="genlist" id="related-generators">
+                    <a href="../posts/demon-epithet-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-flame"/></svg><div><b>Demon Epithet Generator</b><span>Titles for your demons: the Devourer, Lord of the Ninth Pit, Duke of Ashes. Epithets by sin, domain and rank, inspired by real demonology.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/assassin-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-hood"/></svg><div><b>Assassin Name Generator</b><span>Assassin names that don&#039;t draw attention: codenames like Shrike, titles like the Patient Guest, fantasy aliases like Silkstep, and full names with an alias.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/vampire-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-quill"/></svg><div><b>Vampire Name Generator</b><span>Vampire names in four styles: gothic aristocrats, Old World Transylvanians, ancient Romans and modern urban vampires. Full names, titles like Count and Countess, or first names.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/gamertag-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-quill"/></svg><div><b>Gamertag Generator</b><span>Gamertags and usernames for Xbox, PlayStation, Discord, Steam and social media: cool, funny, fantasy or short, with your own word or name mixed in if you like.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/knight-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-d20"/></svg><div><b>Knight Name Generator</b><span>Knight names built the medieval way: Sir or Dame, a period first name, and a place, an epithet or a knightly order, from Sir Ralph of Blackmoor to Dame Isabel the Unbowed.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/name-combiner.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-quill"/></svg><div><b>Name Combiner</b><span>Combine two names into one: ship names for couples and characters (Romeo + Juliet = Romiet), baby name blends, and mash-ups of any two names you type.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
+
+            <section class="section category-generators-section">
+                <h2>More Characters Name Generators</h2>
+                <div class="genlist compact" id="category-generators">
+                    <a href="../posts/name-combiner.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-quill"/></svg><div><b>Name Combiner</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/gamertag-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-quill"/></svg><div><b>Gamertag Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/assassin-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-hood"/></svg><div><b>Assassin Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/vampire-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-quill"/></svg><div><b>Vampire Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/knight-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-d20"/></svg><div><b>Knight Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/paladin-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-round-shield"/></svg><div><b>Paladin Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/pirate-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-quill"/></svg><div><b>Pirate Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/viking-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-quill"/></svg><div><b>Viking Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/superhero-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-quill"/></svg><div><b>Superhero Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/villain-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-quill"/></svg><div><b>Villain Name Generator</b></div><em aria-hidden="true">→</em></a>
+                </div>
+                <p class="all-link"><a href="../categories/people-names.html">All Characters name generators</a></p>
+            </section>
+            <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
 
     <script type="application/json" id="generator-config">{"title":"Epithet Generator","slug":"epithet-generator","filters":{"characterName":{"type":"text","label":"Character Name","placeholder":"Enter your character's name","default":"Your Character","example":"Aldric"},"category":{"label":"Epithet Category","options":["any","historical","physical","personality_positive","personality_negative","personality_neutral","alignment_good","alignment_evil","alignment_neutral","deed_dragon","deed_giant","deed_monster","deed_creature","deed_military","deed_defensive","reputation_fame","reputation_infamy","reputation_mystery","reputation_respect","reputation_status","origin_direction","origin_terrain","origin_status","origin_metaphysical","magical_type","magical_element","magical_power","magical_state","magical_specific","weapon_type","weapon_combat","weapon_skill","time_life","time_day","time_season","misc_animal","misc_color","misc_concept"],"optionLabels":{"any":"Any category (a mix)","historical":"Historical (real kings and warriors)","physical":"Physical","personality_positive":"Personality: Positive","personality_negative":"Personality: Negative","personality_neutral":"Personality: Neutral","alignment_good":"Alignment: Good","alignment_evil":"Alignment: Evil","alignment_neutral":"Alignment: Neutral","deed_dragon":"Deed: Dragon","deed_giant":"Deed: Giant","deed_monster":"Deed: Monster","deed_creature":"Deed: Creature","deed_military":"Deed: Military","deed_defensive":"Deed: Defensive","reputation_fame":"Reputation: Fame","reputation_infamy":"Reputation: Infamy","reputation_mystery":"Reputation: Mystery","reputation_respect":"Reputation: Respect","reputation_status":"Reputation: Status","origin_direction":"Origin: Direction","origin_terrain":"Origin: Terrain","origin_status":"Origin: Status","origin_metaphysical":"Origin: Metaphysical","magical_type":"Magical: Type","magical_element":"Magical: Element","magical_power":"Magical: Power","magical_state":"Magical: State","magical_specific":"Magical: Specific","weapon_type":"Weapon: Type","weapon_combat":"Weapon: Combat","weapon_skill":"Weapon: Skill","time_life":"Time: Life","time_day":"Time: Day","time_season":"Time: Season","misc_animal":"Misc: Animal","misc_color":"Misc: Color","misc_concept":"Misc: Concept"}}},"recipe":"switch","on":"category","cases":{"any":{"recipe":"template","template":"{characterName} [*]"}},"default":{"recipe":"template","template":"{characterName} [{category}]"},"data":{"physical":["the Tall","the Short","the Strong","the Mighty","the Powerful","the Swift","the Quick","the Agile","the Large","the Small","the Giant","the Tiny","the Massive","the Slender","the Broad","the Lean","the Scarred","the Marked","the Tattooed","the Branded","the Maimed","the Crippled","the Lame","the Blind","the One-Eyed","the One-Armed","the One-Handed","the Eyeless","the Faceless","the Voiceless","the Mute","the Fair","the Beautiful","the Handsome","the Ugly","the Hideous","the Deformed","the Twisted","the Pale","the Dark","the Swarthy","the Ruddy","the Ashen","the Ghostly","the Pale-Faced","the Ironhand","the Steelgrip","the Quickhand","the Longfingers","the Lightfoot","the Swiftfoot","the Surefoot","the Heavyhand","the Redfist","the Blackhand","the Whitehand","the Goldhair","the Silverhair","the Blackbeard","the Redbeard","the Greybeard"],"personality_positive":["the Brave","the Bold","the Valiant","the Courageous","the Fearless","the Dauntless","the Daring","the Wise","the Sage","the Learned","the Clever","the Cunning","the Shrewd","the Sharp","the Kind","the Gentle","the Merciful","the Compassionate","the Benevolent","the Generous","the Noble","the Just","the Fair","the Righteous","the True","the Honest","the Loyal","the Faithful","the Patient","the Calm","the Serene","the Peaceful","the Tranquil","the Steadfast","the Resolute","the Cheerful","the Merry","the Jovial","the Jolly","the Laughing","the Smiling","the Happy"],"personality_negative":["the Cruel","the Merciless","the Ruthless","the Brutal","the Savage","the Vicious","the Fierce","the Cunning","the Sly","the Crafty","the Devious","the Treacherous","the Deceitful","the False","the Proud","the Arrogant","the Haughty","the Vain","the Boastful","the Pompous","the Conceited","the Greedy","the Avaricious","the Covetous","the Selfish","the Stingy","the Miserly","the Wrathful","the Angry","the Furious","the Raging","the Vengeful","the Spiteful","the Mad","the Insane","the Deranged","the Unhinged","the Crazed","the Lunatic","the Reckless"],"personality_neutral":["the Silent","the Quiet","the Still","the Calm","the Reserved","the Shy","the Timid","the Loud","the Boisterous","the Raucous","the Noisy","the Thunderous","the Booming","Stubborn","the Obstinate","the Headstrong","the Willful","the Determined","the Unyielding"],"alignment_good":["the Good","the Pure","the Holy","the Blessed","the Sacred","the Divine","the Righteous","the Just","the Noble","the Honorable","the Virtuous","the Saintly","the Angelic","the Light","the Radiant","the Shining","the Bright","the Brilliant","the Glorious"],"alignment_evil":["the Evil","the Dark","the Wicked","the Vile","the Foul","the Corrupt","the Tainted","the Cursed","the Damned","the Doomed","the Forsaken","the Fallen","the Sinister","the Black","the Shadow","the Grim","the Dire","the Dreadful","the Terrible"],"alignment_neutral":["the Gray","the Twilight","the Balanced","the Neutral","the Moderate","the Impartial","the Even-Handed","the Fair-Minded","the Unswayed","the Watcher","the Unbound"],"deed_dragon":["Dragonslayer","Dragonbane","Dragonhunter","Dragonkiller","Wyrmslayer","Wyrmbane","Drakeslayer","Scalebane","the Winged Death","Wyrmhunter"],"deed_giant":["Giantslayer","Giantbane","Gianthunter","Giantbreaker","Titanslayer","the Colossus-Killer","the Mountain-Feller","Giantsbane"],"deed_monster":["Monsterslayer","Monsterbane","Beastslayer","Beasthunter","Demonslayer","Demonbane","Devilslayer","Fiendslayer","Abominationbane","Nightmarekiller"],"deed_creature":["Trollslayer","Trollbane","Orcslayer","Orcbane","Goblinbane","Goblinslayer","Undeadbane","Ghosthunter","Vampireslayer","Lichbane","Zombiekiller"],"deed_military":["the Conqueror","the Victor","the Triumphant","the Undefeated","the Unconquered","the Invincible","the Unstoppable","the Unbreakable","the Indomitable","Kingslayer","Queenslayer","Princeslayer","Lordsbane","Knightsbane","the Usurper","the Pretender","the Rebel","the Revolutionary"],"deed_defensive":["the Defender","the Protector","the Guardian","the Warden","the Sentinel","Wallbreaker","Siegebreaker","Fortressbreaker","Gatebreaker","the Shield of the Realm","the Last Wall","Gatekeeper"],"reputation_fame":["the Legendary","the Famed","the Famous","the Renowned","the Celebrated","the Illustrious","the Glorious","the Magnificent","the Majestic","the Splendid","the Grand","the Great","the Mighty","the Powerful","the Terrible","the Awesome"],"reputation_infamy":["the Infamous","the Notorious","the Feared","the Dreaded","the Terrible","the Dreadful","the Hated","the Despised","the Loathed","the Reviled","the Scorned"],"reputation_mystery":["the Mysterious","the Enigmatic","the Unknown","the Nameless","the Faceless","the Hidden","the Secret","the Shadow","the Ghost","the Phantom","the Specter","the Wraith"],"reputation_respect":["the Respected","the Honored","the Revered","the Venerated","the Esteemed","the Admired","the Beloved","the Cherished","the Treasured","the Adored"],"reputation_status":["the Lost","the Forgotten","the Abandoned","the Exiled","the Outcast","the Banished","the Returned","Reborn","the Risen","the Awakened"],"origin_direction":["of the North","of the South","of the East","of the West","the Northerner","the Southerner","the Easterner","the Westerner","Northborn","Southborn","Eastborn","Westborn"],"origin_terrain":["of the Mountains","of the Hills","of the Valley","of the Forest","of the Woods","of the Plains","of the Desert","of the Tundra","of the Swamp","of the Coast","of the Sea","of the Ocean","of the River","of the Lake","Mountainborn","Forestborn","Seaborn","Stormborn","Desertborn"],"origin_status":["the Wanderer","the Traveler","the Vagabond","the Nomad","the Pilgrim","the Exile","the Outlander","the Foreigner","the Stranger","the Outsider","the Alien","the Native","the Local","the Homegrown","True-born"],"origin_metaphysical":["Starborn","Moonborn","Sunborn","Shadowborn","Lightborn","Darkborn","Stormborn","Flameborn","Iceborn","Earthborn","Windborn","Waterborn","Magicborn","Curseborn","Blessedborn","Demonborn","Angelborn"],"magical_type":["the Enchanted","the Bewitched","the Hexed","the Cursed","the Blessed","the Charmed","the Magical","the Mystical","the Arcane","the Eldritch","the Otherworldly","the Spellbound","the Spellwoven","Spellborn","the Magicwrought"],"magical_element":["the Flaming","the Burning","the Blazing","the Infernal","the Fiery","Fireborn","the Frozen","the Icy","the Frosty","the Glacial","the Chill","Frostborn","the Stormy","the Thunderous","the Lightning","the Tempest","Stormborn","the Shadowy","the Umbral","the Twilight","the Dusk","Shadowborn"],"magical_power":["the Powerful","the Mighty","the Potent","the Formidable","the Fearsome","the Weak","the Feeble","the Powerless","the Helpless"],"magical_state":["the Spellscarred","the Magemarked","the Runemarked","the Sigiled","the Hexer","the Blessed One","the Chosen","the Touched","the Marked","the Branded","the Sealed"],"magical_specific":["Runekeeper","Spellweaver","Soulbinder","Mindreader","Truthseer","the Farseer","Dreamwalker","Shadowwalker","Voidwalker","Planewalker","Timewalker"],"weapon_type":["Swordmaster","Blademaster","Axemaster","Spearmaster","Bowmaster","Swordsinger","the Bladedancer","Axewielder","Hammerwielder","Spearwielder","the Armed","the Blade","the Sword","the Axe","the Hammer","the Spear","the Bow"],"weapon_combat":["the Duelist","the Fencer","the Brawler","the Wrestler","the Grappler","the Fighter","the Berserker","the Rager","the Fury","the Savage","the Wild","the Feral","the Deadly","the Lethal","the Fatal","the Mortal","the Killing"],"weapon_skill":["the Skilled","the Expert","the Master","Grandmaster","the Novice","the Untrained","the Trained","the Practiced","the Veteran","the Seasoned","the Experienced"],"time_life":["the Young","the Old","the Ancient","the Ageless","the Eternal","the Timeless","the Elder","the Senior","the Aged","the Venerable","the Primordial"],"time_day":["the Dawn","the Dusk","the Twilight","the Midnight","the Morning","the Evening","the Night","Daywalker","Nightwalker"],"time_season":["the Spring","the Summer","the Autumn","the Winter","Springborn","Summerborn","Autumnborn","Winterborn"],"misc_animal":["the Wolf","the Bear","the Lion","the Tiger","the Dragon","the Eagle","the Hawk","the Falcon","the Raven","the Crow","the Serpent","the Snake","the Viper","the Fox","the Hound","the Stag","the Boar","the Bull"],"misc_color":["the Red","the Blue","the Green","the Yellow","the Black","the White","the Gray","the Gold","the Silver","the Bronze","the Copper","the Iron","the Steel","the Crimson","the Scarlet","the Azure","the Emerald","the Violet"],"misc_concept":["the First","the Last","the Only","the Lone","the Many","the Few","the Chosen","the Unchosen","the Blessed","the Cursed","the Free","the Bound","the Chained","the Liberated","the Enslaved"],"historical":["the Conqueror","the Unready","Longshanks","Lionheart","Lackland","Ironside","Bloodaxe","Forkbeard","Bluetooth","Hardrada","the Boneless","the Bald","the Fat","the Simple","the Stammerer","the Pious","the Short","the Hammer","the Fowler","the Impaler","the Terrible","the Magnificent","the Great","the Confessor","the Fair","the Fearless","the Bold","the Bulgar-Slayer","Barbarossa","the Grim","the Wise","Barefoot","the Crusader","Skull-splitter","Hairy-breeches","the Black"]}}</script>
     <script src="../lib/recipe-engine.js"></script>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

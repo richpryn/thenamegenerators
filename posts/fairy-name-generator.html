@@ -297,276 +297,257 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
-                </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-wings" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 24 C18 9 6 7 8 17 C9 23 16 25 24 24 Z" fill="#fffcf4"/><path d="M24 24 C30 9 42 7 40 17 C39 23 32 25 24 24 Z" fill="#fffcf4"/><path d="M24 24 C18 30 11 39 17 42 C21 44 24 33 24 24 Z" fill="#efc84a"/><path d="M24 24 C30 30 37 39 31 42 C27 44 24 33 24 24 Z" fill="#fffcf4"/><path d="M24 18 V34" stroke-width="1.4"/></g></symbol>
+      <symbol id="m-mushroom" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24 C6 11 42 11 42 24 Z" fill="#efc84a"/><path d="M18 24 L16 42 L32 42 L30 24" fill="#fffcf4"/><circle cx="16" cy="19" r="2.2" fill="#fffcf4" stroke-width="1.3"/><circle cx="26" cy="15" r="2.2" fill="#fffcf4" stroke-width="1.3"/><circle cx="34" cy="20" r="1.8" fill="#fffcf4" stroke-width="1.3"/><path d="M10 44 h28" stroke-width="1.4"/></g></symbol>
+      <symbol id="m-planet" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="25" r="11" fill="#fffcf4"/><ellipse cx="24" cy="25" rx="20" ry="6" transform="rotate(-20 24 25)"/><path d="M17 20 C20 17 24 16 27 17" stroke="#efc84a" stroke-width="3"/><path d="M40 5 l1 3 l3 1 l-3 1 l-1 3 l-1 -3 l-3 -1 l3 -1 z" fill="#1e1c18" stroke-width="1"/></g></symbol>
+      <symbol id="m-dragon" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 35 C7 25 15 17 26 17 L37 19 L45 25 L37 27 L42 31 L33 31 C29 35 23 39 17 41 C11 43 6 41 5 35 Z" fill="#fffcf4"/><path d="M19 19 L8 11 L21 15 M24 17 L19 6 L28 16" stroke-width="1.6"/><circle cx="31" cy="22" r="1.5" fill="#1e1c18"/><path d="M41 23 l1 0" stroke-width="2"/><path d="M11 37 C17 36 23 34 28 31" stroke="#efc84a" stroke-width="3"/></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../categories/folklore-names.html">Folklore</a> / <span aria-current="page">Fairy Name Generator</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">Fairy</span> Name Generator</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-wings"/></svg>
             </div>
-        </div>
-    </nav>
+            <p class="lede">Flower fairies, lords of the Unseelie Court and the sprite who does the washing-up: names from all of folklore&#039;s fairies.</p>
 
-    <div class="container">
-        <header class="blog-hero">
-            <h1>🧚 Fairy Name Generator</h1>
-            <p class="tagline">Flower fairies, lords of the Unseelie Court and the sprite who does the washing-up: names from all of folklore&#039;s fairies.</p>
-            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
-        </header>
-
-        <main>
-            <section class="embedded-generator">
-                <div class="generator-card">
-                    <h2>Generate Fairy Names</h2>
-                    <p class="generator-description">Fairy names from folklore: flower fairies like Thistledown, lords and ladies of the Seelie and Unseelie Courts, and household sprites like Hob o&#039; the Hearth.</p>
-                    
-                    <div class="simple-generator">
-                        <div class="filters">
-          <div class="filter-group">
-            <label for="filter-kind">Kind of Fairy:</label>
-            <select id="filter-kind" name="kind" data-filter="kind">
-              <option value="small">Flower fairies (Thistledown)</option>
-              <option value="seelie">Seelie Court, the kindly fae (Lady Ysmene)</option>
-              <option value="unseelie">Unseelie Court, the dangerous fae (Lord Morthorn)</option>
-              <option value="household">Household sprites (Hob o&#039; the Hearth)</option>
-            </select>
+            <section class="sheet hd simple-generator" id="generator" aria-label="Fairy Name Generator">
+                <div class="gen-grid">
+          <div class="group">
+            <label class="label" for="filter-kind">Kind of Fairy</label>
+            <div class="ctl sel hd">
+              <select id="filter-kind" name="kind" data-filter="kind">
+                <option value="small">Flower fairies (Thistledown)</option>
+                <option value="seelie">Seelie Court, the kindly fae (Lady Ysmene)</option>
+                <option value="unseelie">Unseelie Court, the dangerous fae (Lord Morthorn)</option>
+                <option value="household">Household sprites (Hob o&#039; the Hearth)</option>
+              </select>
+            </div>
           </div>
 
-          <div class="filter-group">
-            <label for="filter-format">Name Format:</label>
-            <select id="filter-format" name="format" data-filter="format">
-              <option value="full">With a title or home (Lady Ysmene, Keeper of the First Thistle)</option>
-              <option value="name">Name only</option>
-            </select>
+          <div class="group">
+            <label class="label" for="filter-format">Name Format</label>
+            <div class="ctl sel hd">
+              <select id="filter-format" name="format" data-filter="format">
+                <option value="full">With a title or home (Lady Ysmene, Keeper of the First Thistle)</option>
+                <option value="name">Name only</option>
+              </select>
+            </div>
           </div></div>
-                        <div class="generator-controls">
-                            <div class="filter-group count-group">
-                                <label for="name-count">How many:</label>
-                                <select id="name-count">
-                                    <option value="8" selected>8 names</option>
-                                    <option value="16">16 names</option>
-                                    <option value="32">32 names</option>
-                                </select>
-                            </div>
-                            <button id="generate-btn" class="generate-button">Generate Names</button>
-                        </div>
-                        <div class="results-area" id="results">
-                            <p class="results-placeholder">Click "Generate Names" to see results</p>
-                        </div>
-                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
-                        <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="true">
+                    <p class="results-empty">Press Generate Names for 8 fairy names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
                     </div>
-                    
-                    <div class="cta-box">
-                        <p><strong>Need more options?</strong></p>
-                        <a href="../index.html" class="cta-button">Try the Ultimate Random Name Generator →</a>
-                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
+
+            <section class="section example-names">
+                <h2>Example Fairy Names</h2>
+                <p class="sub">A few names this generator came up with. Tap one to copy it, or press "Generate Names" above for more.</p>
+                <div class="ex">
+                <div class="exbox hd">
+                    <h3>Flower fairies · With a title or home</h3>
+                    <ul>
+                        <li>Bindweedsprig of the Mossy Stone</li>
+                        <li>Nettlewing of the Long Grass</li>
+                        <li>Hawburr of the Foxglove Bank</li>
+                        <li>Poppydew of the Elder Tree</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Flower fairies · Name only</h3>
+                    <ul>
+                        <li>Fernwing</li>
+                        <li>Cloversilk</li>
+                        <li>Mossbutton</li>
+                        <li>Bindweedsilk</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Seelie Court, the kindly fae · With a title or home</h3>
+                    <ul>
+                        <li>Princess Veywyn, Seer of the Coming Harvest</li>
+                        <li>Queen Talondel of the Seelie Court</li>
+                        <li>Knight Gwylmene, the Glimmer of Treachery</li>
+                        <li>Lord Fenielle, the Siren&#039;s Lullaby</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Unseelie Court, the dangerous fae · With a title or home</h3>
+                    <ul>
+                        <li>Lady Lirielle of the Unseelie Court</li>
+                        <li>Prince Thamys of the Unseelie Court</li>
+                        <li>Duchess Raenaith, the Pale Rider</li>
+                        <li>Duke Thameth, who Steals Names</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Unseelie Court, the dangerous fae · Name only</h3>
+                    <ul>
+                        <li>Esmwyn</li>
+                        <li>Ilmene</li>
+                        <li>Quelora</li>
+                        <li>Neraris</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Household sprites · With a title or home</h3>
+                    <ul>
+                        <li>Wisp of the Stable</li>
+                        <li>Bodge o&#039; the Cellar</li>
+                        <li>Tatter o&#039; the Old Oak</li>
+                        <li>Gubbin o&#039; the Brewhouse</li>
+                    </ul>
+                </div>
                 </div>
             </section>
 
-            <section class="example-names">
-                <h2>Example Fairy Names</h2>
-                <p>A few names this generator came up with. Press "Generate Names" above for more.</p>
-                <h3>Flower fairies · With a title or home</h3>
-                <ul class="name-results">
-                    <li>Bindweedsprig of the Mossy Stone</li>
-                    <li>Nettlewing of the Long Grass</li>
-                    <li>Hawburr of the Foxglove Bank</li>
-                    <li>Poppydew of the Elder Tree</li>
-                </ul>
-                <h3>Flower fairies · Name only</h3>
-                <ul class="name-results">
-                    <li>Fernwing</li>
-                    <li>Cloversilk</li>
-                    <li>Mossbutton</li>
-                    <li>Bindweedsilk</li>
-                </ul>
-                <h3>Seelie Court, the kindly fae · With a title or home</h3>
-                <ul class="name-results">
-                    <li>Princess Veywyn, Seer of the Coming Harvest</li>
-                    <li>Queen Talondel of the Seelie Court</li>
-                    <li>Knight Gwylmene, the Glimmer of Treachery</li>
-                    <li>Lord Fenielle, the Siren&#039;s Lullaby</li>
-                </ul>
-                <h3>Unseelie Court, the dangerous fae · With a title or home</h3>
-                <ul class="name-results">
-                    <li>Lady Lirielle of the Unseelie Court</li>
-                    <li>Prince Thamys of the Unseelie Court</li>
-                    <li>Duchess Raenaith, the Pale Rider</li>
-                    <li>Duke Thameth, who Steals Names</li>
-                </ul>
-                <h3>Unseelie Court, the dangerous fae · Name only</h3>
-                <ul class="name-results">
-                    <li>Esmwyn</li>
-                    <li>Ilmene</li>
-                    <li>Quelora</li>
-                    <li>Neraris</li>
-                </ul>
-                <h3>Household sprites · With a title or home</h3>
-                <ul class="name-results">
-                    <li>Wisp of the Stable</li>
-                    <li>Bodge o&#039; the Cellar</li>
-                    <li>Tatter o&#039; the Old Oak</li>
-                    <li>Gubbin o&#039; the Brewhouse</li>
-                </ul>
-            </section>
-
-            <section class="blog-content how-it-works">
+            <section class="section how-it-works">
                 <h2>How the Fairy Name Generator Works</h2>
+                <div class="howto hd">
                 <p>It works from 789 names and name parts, which combine into over 370,000 possible results.</p>
                 <p>The choices:</p>
                 <ul><li><strong>Kind of Fairy:</strong> Flower fairies, Seelie Court, the kindly fae, Unseelie Court, the dangerous fae, Household sprites.</li><li><strong>Name Format:</strong><ul><li>With a title or home, e.g. <em>Acornthread of the Mossy Stone</em></li><li>Name only, e.g. <em>Bindweedblossom</em></li></ul></li></ul>
-                <p>Each press gives you 8, 16 or 32 names (choose under "How many"), and you won't see the same one twice until you've been through everything for the choices you've made.</p>
+                <p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet, until the names for the choices you've made run out.</p>
+                </div>
             </section>
 
-            <article class="blog-content" itemscope itemtype="https://schema.org/Article">
+            <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="Fairy Name Generator">
                 <meta itemprop="description" content="Fairy names from folklore: flower fairies like Thistledown, lords and ladies of the Seelie and Unseelie Courts, and household sprites like Hob o&#039; the Hearth.">
-                <section itemprop="articleBody">
-                    <p>"Fairy" covers everything from a creature small enough to ride a moth to a lord of the hollow hills you'd be wise not to thank. This <strong>fairy name generator</strong> has names for four kinds: tiny flower fairies, the kindly Seelie Court, the dangerous Unseelie Court, and the household sprites who do your chores at night, if you leave out the cream.</p>
-                </section>
+                <div itemprop="articleBody">
+                <p class="big">"Fairy" covers everything from a creature small enough to ride a moth to a lord of the hollow hills you'd be wise not to thank. This <strong>fairy name generator</strong> has names for four kinds: tiny flower fairies, the kindly Seelie Court, the dangerous Unseelie Court, and the household sprites who do your chores at night, if you leave out the cream.</p>
                 
-      <section>
-        <h2>Fairies and their names in folklore</h2>
-        <ul><li><strong>Don't say their name.</strong> People in Britain and Ireland were careful how they spoke of fairies, calling them the Good Folk, the Fair Folk or the Good Neighbours, to stay on their right side.</li><li><strong>A name is power.</strong> In the English tale <em>Tom Tit Tot</em>, the same story as Rumpelstiltskin, guessing the creature's name is the only way to escape the bargain.</li><li><strong>The sídhe.</strong> In Ireland the fairy folk are the <em>aos sí</em>, the people of the mounds, living inside the hills.</li><li><strong>Iron.</strong> Almost everywhere in folklore, cold iron drives fairies away. A horseshoe over the door did the job.</li></ul>
-      </section>
-    
+                <h2>Fairies and their names in folklore</h2>
+                <ul><li><strong>Don't say their name.</strong> People in Britain and Ireland were careful how they spoke of fairies, calling them the Good Folk, the Fair Folk or the Good Neighbours, to stay on their right side.</li><li><strong>A name is power.</strong> In the English tale <em>Tom Tit Tot</em>, the same story as Rumpelstiltskin, guessing the creature's name is the only way to escape the bargain.</li><li><strong>The sídhe.</strong> In Ireland the fairy folk are the <em>aos sí</em>, the people of the mounds, living inside the hills.</li><li><strong>Iron.</strong> Almost everywhere in folklore, cold iron drives fairies away. A horseshoe over the door did the job.</li></ul>
 
-      <section>
-        <h2>Four kinds of fairy</h2>
-        <ul><li><strong>Flower fairies</strong>: tiny, and named after small green things, the way Shakespeare named Titania's attendants in <em>A Midsummer Night's Dream</em>: Peaseblossom, Cobweb, Moth and Mustardseed. These follow suit: <em>Thistledown</em>, <em>Cloverbell</em>, <em>Sloeblossom</em>.</li><li><strong>The Seelie Court</strong>: Scottish folklore's "blessed" fairies, more likely to reward kindness than punish rudeness. Lords and ladies with long, graceful names.</li><li><strong>The Unseelie Court</strong>: the other kind, who ride out with the Wild Hunt and take people who wander too far. Same graceful names, much worse epithets.</li><li><strong>Household sprites</strong>: brownies, hobs and pixies who live in the house or farm and work at night. Their names are short and homely: <em>Hob</em>, <em>Tib</em>, <em>Grig</em>.</li></ul>
-      </section>
-    
+                <h2>Four kinds of fairy</h2>
+                <ul><li><strong>Flower fairies</strong>: tiny, and named after small green things, the way Shakespeare named Titania's attendants in <em>A Midsummer Night's Dream</em>: Peaseblossom, Cobweb, Moth and Mustardseed. These follow suit: <em>Thistledown</em>, <em>Cloverbell</em>, <em>Sloeblossom</em>.</li><li><strong>The Seelie Court</strong>: Scottish folklore's "blessed" fairies, more likely to reward kindness than punish rudeness. Lords and ladies with long, graceful names.</li><li><strong>The Unseelie Court</strong>: the other kind, who ride out with the Wild Hunt and take people who wander too far. Same graceful names, much worse epithets.</li><li><strong>Household sprites</strong>: brownies, hobs and pixies who live in the house or farm and work at night. Their names are short and homely: <em>Hob</em>, <em>Tib</em>, <em>Grig</em>.</li></ul>
 
-      <section>
-        <h2>Famous fairy names</h2>
-        <ul><li><strong>Oberon</strong>, king of the fairies, comes from Alberich, a dwarf of German legend, by way of the French Auberon. <strong>Titania</strong>, his queen, is a name Ovid uses for Diana.</li><li><strong>Queen Mab</strong>, "the fairies' midwife", appears in Mercutio's famous speech in <em>Romeo and Juliet</em>.</li><li><strong>Puck</strong>, or Robin Goodfellow, was a puck before he was Puck: the word meant a mischievous sprite.</li><li><strong>Tinker Bell</strong> is named for her trade. J. M. Barrie wrote that she mends pots and kettles, a tinker's work.</li></ul>
-      </section>
-    
+                <h2>Famous fairy names</h2>
+                <ul><li><strong>Oberon</strong>, king of the fairies, comes from Alberich, a dwarf of German legend, by way of the French Auberon. <strong>Titania</strong>, his queen, is a name Ovid uses for Diana.</li><li><strong>Queen Mab</strong>, "the fairies' midwife", appears in Mercutio's famous speech in <em>Romeo and Juliet</em>.</li><li><strong>Puck</strong>, or Robin Goodfellow, was a puck before he was Puck: the word meant a mischievous sprite.</li><li><strong>Tinker Bell</strong> is named for her trade. J. M. Barrie wrote that she mends pots and kettles, a tinker's work.</li></ul>
 
-      <section>
-        <h2>Writing a fairy</h2>
-        <ul><li><strong>Fairies keep their word exactly.</strong> Not the spirit of it, the letter. A fairy with a title like <em>the Bargainer</em> should be written that way.</li><li><strong>Never thank them</strong>, in some traditions: it implies a debt. Your characters might learn that the hard way.</li><li><strong>Give a household sprite a job.</strong> A brownie who's offended by a gift of clothes and leaves for good is a whole story in folklore.</li><li><strong>Where do they live?</strong> Try the <a href="fairy-town-name-generator.html">Fairy Town Name Generator</a> for hollow hills and fairy rings.</li></ul>
-      </section>
-    
+                <h2>Writing a fairy</h2>
+                <ul><li><strong>Fairies keep their word exactly.</strong> Not the spirit of it, the letter. A fairy with a title like <em>the Bargainer</em> should be written that way.</li><li><strong>Never thank them</strong>, in some traditions: it implies a debt. Your characters might learn that the hard way.</li><li><strong>Give a household sprite a job.</strong> A brownie who's offended by a gift of clothes and leaves for good is a whole story in folklore.</li><li><strong>Where do they live?</strong> Try the <a href="fairy-town-name-generator.html">Fairy Town Name Generator</a> for hollow hills and fairy rings.</li></ul>
+                </div>
             </article>
 
-            
-      <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-          
-            <div class="faq-item">
-              <h3 class="faq-question">What's the difference between the Seelie and Unseelie Courts?</h3>
-              <p class="faq-answer">They come from Scottish folklore. The Seelie ("blessed") Court are the kinder fairies, who may help those who treat them well; the Unseelie Court are hostile and dangerous. Both are perilous to cross.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Are fairies and fae the same?</h3>
-              <p class="faq-answer">"Fae" is an old spelling of "fay", another word for fairy, and modern fantasy often uses it for the grand, dangerous fairies of the courts. The generator covers both.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Can I use these names for D&D or a story?</h3>
-              <p class="faq-answer">Yes, they're free to use and you don't need to credit the site. They suit D&D's Feywild, eladrin and pixies as well as folklore-inspired stories.</p>
-            </div>
-          
-        </div>
-      </section>
-            
-      <section class="related-section">
-        <h2>Related Name Generators</h2>
-        <div class="related-grid" id="related-generators">
-          <a href="../posts/fairy-town-name-generator.html" class="related-card">
-            <h3>🧚‍♀️ Fairy Town Name Generator</h3>
-            <p>Fairy town and village names from folklore: homes under the hill, hollows in the wood, fairy rings and the great courts of the fae.</p>
-          </a>
-          <a href="../posts/ghost-name-generator.html" class="related-card">
-            <h3>👻 Ghost Name Generator</h3>
-            <p>Ghost names in the style of real hauntings (the Grey Lady, the Drummer of the Old Mill), restless Victorian spirits, and friendly little ghosts.</p>
-          </a>
-          <a href="../posts/werewolf-name-generator.html" class="related-card">
-            <h3>🐺 Werewolf Name Generator</h3>
-            <p>Werewolf names from real names that mean wolf, like Faolan (little wolf), Ylva (she-wolf) and Rudolf (famous wolf), with their meanings and a pack to run with.</p>
-          </a>
-          <a href="../posts/zombie-name-generator.html" class="related-card">
-            <h3>🧟 Zombie Name Generator</h3>
-            <p>Zombie names, from funny shambling ones (Groaning Gary) to grim undead titles, plus names for the zombie virus behind the outbreak.</p>
-          </a>
-          <a href="../posts/alien-name-generator.html" class="related-card">
-            <h3>👽 Alien Name Generator</h3>
-            <p>Alien names that sound like they come from a real species: clicking insectoids, liquid-voiced aquatics, beings named like Hums-at-Dawn, and galactic nobility.</p>
-          </a>
-          <a href="../posts/angel-name-generator.html" class="related-card">
-            <h3>😇 Angel Name Generator</h3>
-            <p>Angel names from scripture and tradition with their Hebrew meanings, or new ones in the same style, with a choir, a domain or an epithet.</p>
-          </a>
-        </div>
-      </section>
-            
-      <section class="category-generators-section">
-        <h2>All Folklore Name Generators</h2>
-        <div class="category-generators-grid" id="category-generators">
-          <a href="../posts/fairy-town-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧚‍♀️</span>
-            <span class="category-generator-title">Fairy Town Name Generator</span>
-          </a>
-          <a href="../posts/werewolf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🐺</span>
-            <span class="category-generator-title">Werewolf Name Generator</span>
-          </a>
-          <a href="../posts/zombie-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧟</span>
-            <span class="category-generator-title">Zombie Name Generator</span>
-          </a>
-          <a href="../posts/ghost-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">👻</span>
-            <span class="category-generator-title">Ghost Name Generator</span>
-          </a>
-        </div>
-      </section>
-        </main>
+            <section class="section faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>What's the difference between the Seelie and Unseelie Courts?</summary>
+                        <div>They come from Scottish folklore. The Seelie ("blessed") Court are the kinder fairies, who may help those who treat them well; the Unseelie Court are hostile and dangerous. Both are perilous to cross.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Are fairies and fae the same?</summary>
+                        <div>"Fae" is an old spelling of "fay", another word for fairy, and modern fantasy often uses it for the grand, dangerous fairies of the courts. The generator covers both.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Can I use these names for D&D or a story?</summary>
+                        <div>Yes, they're free to use and you don't need to credit the site. They suit D&D's Feywild, eladrin and pixies as well as folklore-inspired stories.</div>
+                    </details>
+                </div>
+            </section>
 
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+            <section class="section related-section">
+                <h2>Related Name Generators</h2>
+                <div class="genlist" id="related-generators">
+                    <a href="../posts/fairy-town-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Fairy Town Name Generator</b><span>Fairy town and village names from folklore: homes under the hill, hollows in the wood, fairy rings and the great courts of the fae.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/ghost-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Ghost Name Generator</b><span>Ghost names in the style of real hauntings (the Grey Lady, the Drummer of the Old Mill), restless Victorian spirits, and friendly little ghosts.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/werewolf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Werewolf Name Generator</b><span>Werewolf names from real names that mean wolf, like Faolan (little wolf), Ylva (she-wolf) and Rudolf (famous wolf), with their meanings and a pack to run with.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/zombie-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Zombie Name Generator</b><span>Zombie names, from funny shambling ones (Groaning Gary) to grim undead titles, plus names for the zombie virus behind the outbreak.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/alien-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-planet"/></svg><div><b>Alien Name Generator</b><span>Alien names that sound like they come from a real species: clicking insectoids, liquid-voiced aquatics, beings named like Hums-at-Dawn, and galactic nobility.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/angel-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Angel Name Generator</b><span>Angel names from scripture and tradition with their Hebrew meanings, or new ones in the same style, with a choir, a domain or an epithet.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
+
+            <section class="section category-generators-section">
+                <h2>More Folklore Name Generators</h2>
+                <div class="genlist compact" id="category-generators">
+                    <a href="../posts/fairy-town-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Fairy Town Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/werewolf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Werewolf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/zombie-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Zombie Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/ghost-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Ghost Name Generator</b></div><em aria-hidden="true">→</em></a>
+                </div>
+                <p class="all-link"><a href="../categories/folklore-names.html">All Folklore name generators</a></p>
+            </section>
+            <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
 
     <script type="application/json" id="generator-config">{"title":"Fairy Name Generator","slug":"fairy-name-generator","filters":{"kind":{"label":"Kind of Fairy","options":["small","seelie","unseelie","household"],"optionLabels":{"small":"Flower fairies (Thistledown)","seelie":"Seelie Court, the kindly fae (Lady Ysmene)","unseelie":"Unseelie Court, the dangerous fae (Lord Morthorn)","household":"Household sprites (Hob o' the Hearth)"}},"format":{"label":"Name Format","options":["full","name"],"optionLabels":{"full":"With a title or home (Lady Ysmene, Keeper of the First Thistle)","name":"Name only"}}},"recipe":"switch","on":"format","cases":{"name":{"recipe":"switch","on":"kind","cases":{"small":{"recipe":"pick","from":"small"},"seelie":{"recipe":"pick","from":"court"},"unseelie":{"recipe":"pick","from":"court"},"household":{"recipe":"pick","from":"household"}}},"full":{"recipe":"switch","on":"kind","cases":{"small":{"recipe":"template","template":"[small] [small_epithets]"},"seelie":{"recipe":"template","template":["[court_titles] [court], [seelie]","[court_titles] [court] of the Seelie Court"]},"unseelie":{"recipe":"template","template":["[court_titles] [court], [unseelie]","[court_titles] [court] of the Unseelie Court"]},"household":{"recipe":"template","template":["[household] o' [places]","[household] of [places]"]}}}},"data":{"small":["Acornbell","Acornblossom","Acornburr","Acornbutton","Acorncap","Acorndew","Acorndown","Acornseed","Acornsilk","Acornsprig","Acornthread","Acornwing","Bindweedbell","Bindweedblossom","Bindweedburr","Bindweedbutton","Bindweedcap","Bindweedseed","Bindweedsilk","Bindweedsprig","Bindweedthread","Bindweedwing","Bluebellblossom","Bluebellburr","Bluebellbutton","Bluebellcap","Bluebelldew","Bluebelldown","Bluebellseed","Bluebellsilk","Bluebellsprig","Bluebellthread","Bluebellwing","Bramblebell","Brambleblossom","Brambleburr","Bramblebutton","Bramblecap","Brambledew","Brambledown","Brambleseed","Bramblesilk","Bramblesprig","Bramblethread","Bramblewing","Briarbell","Briarblossom","Briarburr","Briarbutton","Briarcap","Briardew","Briardown","Briarseed","Briarsilk","Briarsprig","Briarthread","Briarwing","Burrbell","Burrblossom","Burrbutton","Burrcap","Burrdew","Burrdown","Burrseed","Burrsilk","Burrsprig","Burrthread","Burrwing","Chervilbell","Chervilblossom","Chervilburr","Chervilbutton","Chervilcap","Chervildew","Chervildown","Chervilseed","Chervilsilk","Chervilsprig","Chervilthread","Chervilwing","Cloverbell","Cloverblossom","Cloverburr","Cloverbutton","Clovercap","Cloverdew","Cloverdown","Cloverseed","Cloversilk","Cloversprig","Cloverthread","Cloverwing","Cowslipbell","Cowslipblossom","Cowslipburr","Cowslipbutton","Cowslipcap","Cowslipdew","Cowslipdown","Cowslipseed","Cowslipsilk","Cowslipsprig","Cowslipthread","Cowslipwing","Cressbell","Cressblossom","Cressburr","Cressbutton","Cresscap","Cressdew","Cressdown","Cressthread","Cresswing","Daisybell","Daisyblossom","Daisyburr","Daisybutton","Daisycap","Daisydew","Daisydown","Daisyseed","Daisysilk","Daisysprig","Daisythread","Daisywing","Fernbell","Fernblossom","Fernburr","Fernbutton","Ferncap","Ferndew","Ferndown","Fernseed","Fernsilk","Fernsprig","Fernthread","Fernwing","Hawbell","Hawblossom","Hawburr","Hawbutton","Hawcap","Hawdew","Hawdown","Hawseed","Hawsilk","Hawsprig","Hawthread","Hazelbell","Hazelblossom","Hazelburr","Hazelbutton","Hazelcap","Hazeldew","Hazeldown","Hazelseed","Hazelsilk","Hazelsprig","Hazelthread","Hazelwing","Hipsbell","Hipsblossom","Hipsburr","Hipsbutton","Hipscap","Hipsdew","Hipsdown","Hipsthread","Hipswing","Mossbell","Mossblossom","Mossburr","Mossbutton","Mosscap","Mossdew","Mossdown","Mossthread","Mosswing","Nettlebell","Nettleblossom","Nettleburr","Nettlebutton","Nettlecap","Nettledew","Nettledown","Nettleseed","Nettlesilk","Nettlesprig","Nettlethread","Nettlewing","Pipbell","Pipblossom","Pipburr","Pipbutton","Pipcap","Pipdew","Pipdown","Pipseed","Pipsilk","Pipsprig","Pipthread","Pipwing","Poppybell","Poppyblossom","Poppyburr","Poppybutton","Poppycap","Poppydew","Poppydown","Poppyseed","Poppysilk","Poppysprig","Poppythread","Poppywing","Ruebell","Rueblossom","Rueburr","Ruebutton","Ruecap","Ruedew","Ruedown","Rueseed","Ruesilk","Ruesprig","Ruethread","Ruewing","Rushbell","Rushblossom","Rushburr","Rushbutton","Rushcap","Rushdew","Rushdown","Rushseed","Rushsilk","Rushsprig","Rushthread","Rushwing","Sloebell","Sloeblossom","Sloeburr","Sloebutton","Sloecap","Sloedew","Sloedown","Sloeseed","Sloesilk","Sloesprig","Sloethread","Sloewing","Sorrelbell","Sorrelblossom","Sorrelburr","Sorrelbutton","Sorrelcap","Sorreldew","Sorreldown","Sorrelseed","Sorrelsilk","Sorrelsprig","Sorrelthread","Sorrelwing","Tansybell","Tansyblossom","Tansyburr","Tansybutton","Tansycap","Tansydew","Tansydown","Tansyseed","Tansysilk","Tansysprig","Tansythread","Tansywing","Thistlebell","Thistleblossom","Thistleburr","Thistlebutton","Thistlecap","Thistledew","Thistledown","Thistleseed","Thistlesilk","Thistlesprig","Thistlethread","Thistlewing","Yarrowbell","Yarrowblossom","Yarrowburr","Yarrowbutton","Yarrowcap","Yarrowdew","Yarrowdown","Yarrowseed","Yarrowsilk","Yarrowsprig","Yarrowthread"],"court":["Aethorn","Aemene","Aewyn","Caethorn","Caemene","Caewyn","Ilthorn","Ilmene","Ilwyn","Ilance","Ilielle","Ilaris","Ileth","Ilion","Ilora","Ilys","Ilemar","Ilisande","Ilondel","Ilaith","Morthorn","Mormene","Morwyn","Morance","Morielle","Moraris","Moreth","Morion","Morys","Moremar","Morisande","Morondel","Moraith","Ysthorn","Ysmene","Yswyn","Ysance","Ysielle","Ysaris","Yseth","Ysion","Ysora","Ysemar","Ysisande","Ysondel","Ysaith","Fenthorn","Fenmene","Fenwyn","Fenance","Fenielle","Fenaris","Feneth","Fenion","Fenora","Fenys","Fenemar","Fenisande","Fenondel","Fenaith","Nerthorn","Nermene","Nerwyn","Nerance","Nerielle","Neraris","Nereth","Nerion","Nerora","Nerys","Neremar","Nerisande","Nerondel","Neraith","Silthorn","Silmene","Silwyn","Silance","Silielle","Silaris","Sileth","Silion","Silora","Silys","Silemar","Silisande","Silondel","Silaith","Thamthorn","Thamwyn","Thamance","Thamielle","Thamaris","Thameth","Thamion","Thamora","Thamys","Thamemar","Thamisande","Thamondel","Thamaith","Ulthorn","Ulmene","Ulwyn","Ulance","Ulielle","Ularis","Uleth","Ulion","Ulora","Ulys","Ulemar","Ulisande","Ulondel","Ulaith","Veythorn","Veymene","Veywyn","Lirthorn","Lirmene","Lirwyn","Lirance","Lirielle","Liraris","Lireth","Lirion","Lirora","Lirys","Liremar","Lirisande","Lirondel","Liraith","Orithorn","Orimene","Oriwyn","Quelthorn","Quelmene","Quelwyn","Quelance","Quelielle","Quelaris","Queleth","Quelion","Quelora","Quelys","Quelemar","Quelisande","Quelondel","Quelaith","Raenthorn","Raenmene","Raenwyn","Raenance","Raenielle","Raenaris","Raeneth","Raenion","Raenora","Raenys","Raenemar","Raenisande","Raenondel","Raenaith","Esmthorn","Esmwyn","Esmance","Esmielle","Esmaris","Esmeth","Esmion","Esmora","Esmys","Esmemar","Esmisande","Esmondel","Esmaith","Talthorn","Talmene","Talwyn","Talance","Talielle","Talaris","Taleth","Talion","Talora","Talys","Talemar","Talisande","Talondel","Talaith","Gwylthorn","Gwylmene","Gwylwyn","Gwylance","Gwylielle","Gwylaris","Gwyleth","Gwylion","Gwylora","Gwylys","Gwylemar","Gwylisande","Gwylondel","Gwylaith"],"household":["Hob","Pip","Nim","Tib","Tod","Grig","Hodge","Jinks","Bobbin","Nab","Tatter","Dimble","Fennick","Wisp","Bodge","Thimble","Scrump","Tumble","Hobble","Gubbin","Pickle","Nobby","Tansy","Crumb","Sooty","Dibble","Nettle","Mossy","Tuppence","Wick"],"places":["the Hearth","the Mill","the Dairy","the Old Oak","the Churn","the Kettle","the Brewhouse","the Hay Loft","the Well","the Cellar","the Bakehouse","the Stable","the Back Stair","the Woodpile","the Orchard Wall"],"seelie":["Keeper of the First Thistle","the Weaver of Dreams and Dew","Lord of the Silent Pond","the Shadow-Sealed Whisper","Singer of the Forgotten Song","the Gilded Hand of the Court","Warden of the Sleeping Stag","the Architect of the Endless Maze","Heir to the Summer Solstice","the Unseen Gardener of the Moss","Binder of the Iron Vow","the One Who Found the True North","Lyrical Voice of the Glade","the Silvered Scout of the Elderwood","Master of the Whispering Bramble","the Heart-Stone of Avalon","Feather-Step on the Forest Floor","the Quickener of the Fallen Branch","Hunter of the Moonlit Moth","the Unblinking Eye of the Pixies","Seer of the Coming Harvest","the Blade That Never Rusts","the Listener to the Root-Song","Guardian of the Crystal Spring","the Last True Child of the Sidhe","Dancer on the Aurora's Edge","the Scribe of the Fading Light","the Herald of the Green Man","Scent of the Wildest Thyme","the Silent Watcher of the Crossroads","Maker of the Cloud-spun Veil","the Swift Retort to the Wind","the Keeper of the Time-Locked Acorn","the Soul That Holds the Mist","Runner of the Shadowy Path","the Bloom That Defied Winter","Master of the Shifting Illusion","the Unbroken Link to the Old World","the One Who Commands the Fireflies","the Glimmer in the Darkest Pool","the Silver Thread of the Lost Tapestry","the Echo of the First Bell","the Hand That Paints the Sunset","the Voice That Calms the Tempest","the Unseen Weaver of Fate","the Sentinel of the Forgotten Well","the Architect of the Mushroom Circle","the Keeper of the Elderwood Laws","the Heart That Beats for the Forest","the Whispering Willow's Kin","the Rider of the Dawn Mist","the Child of the Winter Bloom","the Navigator of the Star-Paths","the Blade Forged in Petals","the One Who Knows the Secret Name","the Shade Under the Ancient Stone","the Architect of the Fae Bridges","the Siren of the Flowing Stream","the Unbreakable Promise","the Crown of Twisted Roots","the Speaker to the Silent Beasts","the Collector of Fallen Starlight","the Giver of Perfect Silence","the Swift Judgement of the Glade","the Unfolding Map of the Wild","the One Who Sleeps Until Spring","the Light That Heals All Wounds","the Protector of the First Nymph","the Hunter of the Fabled Stag","the Shadow-Kin of the Night-Jar","the Whisperer of Lost Spells","the Seeker of the True Grail","the Hand That Feeds the Unicorn","the Silver Eye of the Moon","the Architect of the Great Sward","the Keeper of the Dew-Laden Morning","the Blade of the Sun's First Kiss","the Unseen Dancer of the Aurora","the Scion of the Wild Hunt","the Voice of the Mountain Echo","the Heart That Holds the Seasons","the Messenger of the Unseelie Court","the Star-Gazer of the High Heath","the One Who Remembers the Trees","the Sentinel of the Forgotten Path","the Glimmer of Hope in the Dark","the Whisper of the Ancestral Queen","the Architect of the Green Cathedral","the Blade of the Summer Breeze","the Vessel of the Living Earth","the One Who Walks Without Trace","the Shadow of the Elder King","the Keeper of the Sunken Treasury","the Siren's Lullaby","the Swiftness of the Hare","the Unseen Protector of the Hatchling","the Crown of the Marshlands","the Speaker of the Unspoken Word","the Collector of Human Tears","the Giver of Boundless Joy","the Final Leaf of the Autumn","the Unfolding Scroll of Time","the One Who Guards the Threshold","the Light That Betrays All Lies","the Protector of the Last Dragon","the Hunter of the Hidden Fey","the Shadow-Walker of the Old World","the Whisperer of Ancient Oaths","the Seeker of the Perfect Stone","the Hand That Guides the Rain","the Silvered Scale of the Serpent","the Architect of the Stone Circles","the Keeper of the First Story","the Blade of the Winter's Chill","the Unseen Thread of Destiny","the Scion of the Wild Rose","the Voice of the Rushing Water","the Heart That Holds No Fear","the Messenger of the Deep Woods","the Star-Touched Oracle","the One Who Feared the Sky","the Sentinel of the Whispering Falls","the Glimmer of Treachery","the Whisper of the Fallen God","the Architect of the Lost City","the Blade of the New Moon","the Vessel of the Wild Magic","the One Who Speaks with Flowers","the Shadow of the Moon-Gate","the Keeper of the Hidden Grove","the Siren of the Mountain Pass","the Swift Destroyer of Webs","the Unseen Herald of Doom","the Crown of the Burning Wood","the Speaker to the Dying Star","the Collector of Forgotten Names","the Giver of Eternal Sleep","the Final Kiss of the Sunset","the Unfolding Petal of the Night","the One Who Commands the Roots","the Light That Burns the Wicked","the Protector of the Empty Nest","the Hunter of the Stolen Crown","the Shadow-Sealed Pact","the Whisperer of the First Frost","the Seeker of the Hidden Sun","the Hand That Holds the Tides","the Silver Quill of the Scribe","the Architect of the Stone Throne","the Keeper of the Last Secret","the Blade of the Thunderstorm","the Unseen Guardian of the Infant","the Scion of the Broken Line","the Voice of the Silent Forest","the Heart That Holds the Pain","the Messenger of the Fading Stars","the Star-Walker of the Void","the One Who Defeated the King","the Sentinel of the Ancient Oak","the Glimmer of Madness","the Whisper of the First Rain","the Architect of the Stone Tower","the Blade of the Raging Fire","the Vessel of the Endless Water","the One Who Commands the Beasts","the Shadow of the Sleeping God","the Keeper of the Iron Key","the Siren of the Deep Sea","the Swift Bringer of Justice","the Unseen Hand of the Queen","the Crown of the Frozen Lake","the Speaker to the Ancient Ones","the Collector of Lost Souls","the Giver of Terrible Beauty","the Final Word of the Prophecy","the Unfolding Truth of the Fey","the One Who Guards the Gate","the Light That Reveals All","the Protector of the Ancient Scroll","the Hunter of the Wildest Dream","the Shadow-Woven Fate","the Whisperer of the New Dawn","the Seeker of the Golden Path","the Hand That Holds the Balance","the Silvered Shield of the Court","the Architect of the New World","the Keeper of the Living Flame","the Blade of the Sun's Fury","the Unseen Sentinel of the Glade","the Scion of the Forest King","the Voice of the Gentle Breeze","the Heart That Holds the Earth","the Messenger of the Great Peace","the Star-Born Wanderer","the One Who Knows No Fear","the Sentinel of the Crystal Caves","the Glimmer of Pure Power","the Whisper of the Last Breath","the Architect of the Final Spell","the Blade of the Unending Night","the Vessel of the Purest Magic","the One Who Commands the Clouds","the Shadow of the Ancient City","the Keeper of the Iron Sword","the Siren of the Hidden Spring","the Swift Healer of Wounds","the Unseen Master of Time"],"unseelie":["who Steals Names","of the Hollow Hill","Rider of the Wild Hunt","Keeper of Broken Promises","the Changeling-Maker","Lord of the Thorn Gate","who Dances Mortals to Death","of the Drowned Mill","the Bargainer","who Takes the Firstborn","Collector of Tears","the Hag of the Ford","of the Iron-Hating Court","the Will-o'-the-Wisp","who Laughs at Funerals","the Pale Rider","Mistress of the Lantern-Bog","the Cold Neighbour"],"court_titles":["Lord","Lady","Prince","Princess","Duke","Duchess","Knight","Queen"],"small_epithets":["of the Meadow","of the Hedgerow","of the Long Grass","of the Foxglove Bank","of the Dewpond","of the Mossy Stone","of the Bramble Patch","of the Elder Tree","of the Clover Field","of the Toadstool Ring"]}}</script>
     <script src="../lib/recipe-engine.js"></script>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

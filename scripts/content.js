@@ -175,6 +175,25 @@ function validate({ categories, generators, homepage = { popular: [] } }) {
     if (total < MIN_NAMES && !blendsTyped) warnings.push(`${file}: only ${total} names (aim for at least ${MIN_NAMES})`);
   }
 
+  // Drawings (content/illustrations.json): every generator and category should
+  // have one. A drawing not in the library yet falls back to the category's.
+  const illustrationsFile = path.join(CONTENT_DIR, 'illustrations.json');
+  if (fs.existsSync(illustrationsFile)) {
+    const map = JSON.parse(fs.readFileSync(illustrationsFile, 'utf8'));
+    const Illustrations = require('../lib/illustrations.js');
+    for (const key of Object.keys(generators)) {
+      if (!(map.generators || {})[key]) warnings.push(`illustrations.json: no drawing for generator "${key}" (its category's is used)`);
+    }
+    for (const key of Object.keys(map.generators || {})) {
+      if (!generators[key]) warnings.push(`illustrations.json: "${key}" isn't a generator`);
+    }
+    for (const cat of categories) {
+      const id = (map.categories || {})[cat.slug];
+      if (!id) warnings.push(`illustrations.json: no drawing for category "${cat.slug}"`);
+      else if (!Illustrations.has(id)) errors.push(`illustrations.json: category "${cat.slug}" uses "${id}", which isn't in lib/illustrations.js`);
+    }
+  }
+
   return { errors, warnings };
 }
 

@@ -52,490 +52,294 @@
       "name": "The Name Generators",
       "url": "https://thenamegenerators.com",
       "description": "Free name generators for D&D characters, fantasy worlds, stories, events and bands, each built the way its world names things.",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://thenamegenerators.com/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      },
       "publisher": {
         "@type": "Organization",
         "name": "The Name Generators",
         "url": "https://thenamegenerators.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://thenamegenerators.com/logo.png"
+          "url": "https://thenamegenerators.com/apple-touch-icon.png"
         }
       }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      "name": "Name Generators Collection",
-      "description": "Free name generators for characters, places, weapons, events and bands",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Fantasy Name Generators",
-          "url": "https://thenamegenerators.com/categories/fantasy-names.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Pop Culture Name Generators",
-          "url": "https://thenamegenerators.com/categories/pop_culture-names.html"
-        }
-      ]
     }
     </script>
     
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preload" href="fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles/site.css">
 </head>
-<body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="index.html">Home</a>
-                <a href="all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <!-- BUILD:nav -->
-<a href="categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="categories/events-names.html">🎉 Event Names</a>
-                        <a href="categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="categories/music-names.html">🎵 Music Names</a>
-                        <a href="categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="categories/people-names.html">👥 Character Names</a>
-                        <a href="categories/places-names.html">🗺️ Place Names</a>
-                        <a href="categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-<!-- /BUILD:nav -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
+<body class="home">
+    <!-- BUILD:sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-lightbulb" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 C32 5 37 11 37 17 C37 24 31 26 31 33 L17 33 C17 26 11 24 11 17 C11 11 16 5 24 5 Z" fill="#efc84a"/><path d="M18 37 h12 M19 41 h10"/><path d="M21 33 V22 l3 3 l3 -3 V33" stroke-width="1.3"/></g></symbol>
+      <symbol id="m-bunting" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 C15 18 33 18 45 9"/><path d="M8 12 l3 10 l5 -8" fill="#efc84a"/><path d="M19 15 l3 10 l4 -10" fill="#fffcf4"/><path d="M29 15 l3 10 l4 -9" fill="#efc84a"/><path d="M39 12 l2 9 l3 -7" fill="#fffcf4"/><path d="M14 36 l2 -4 l2 4 M28 40 l3 -3 M35 33 l3 1" stroke-width="1.5"/></g></symbol>
+      <symbol id="m-dragon" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 35 C7 25 15 17 26 17 L37 19 L45 25 L37 27 L42 31 L33 31 C29 35 23 39 17 41 C11 43 6 41 5 35 Z" fill="#fffcf4"/><path d="M19 19 L8 11 L21 15 M24 17 L19 6 L28 16" stroke-width="1.6"/><circle cx="31" cy="22" r="1.5" fill="#1e1c18"/><path d="M41 23 l1 0" stroke-width="2"/><path d="M11 37 C17 36 23 34 28 31" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-d20" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4 L42 14 L42 34 L24 44 L6 34 L6 14 Z" fill="#fffcf4"/><path d="M24 4 L15 28 L33 28 Z M6 14 L15 28 M42 14 L33 28 M15 28 L24 44 L33 28 M6 34 L15 28 M42 34 L33 28" stroke-width="1.3"/><path d="M20 24 h8" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-mushroom" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24 C6 11 42 11 42 24 Z" fill="#efc84a"/><path d="M18 24 L16 42 L32 42 L30 24" fill="#fffcf4"/><circle cx="16" cy="19" r="2.2" fill="#fffcf4" stroke-width="1.3"/><circle cx="26" cy="15" r="2.2" fill="#fffcf4" stroke-width="1.3"/><circle cx="34" cy="20" r="1.8" fill="#fffcf4" stroke-width="1.3"/><path d="M10 44 h28" stroke-width="1.4"/></g></symbol>
+      <symbol id="m-note" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 36 V13 L35 8 V31"/><path d="M17 18 L35 13" stroke-width="3"/><ellipse cx="13" cy="36" rx="4.5" ry="3.5" fill="#1e1c18" transform="rotate(-18 13 36)"/><ellipse cx="31" cy="31" rx="4.5" ry="3.5" fill="#efc84a" transform="rotate(-18 31 31)"/></g></symbol>
+      <symbol id="m-sword" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(35 24 24)"><path d="M24 2 L28 8 L28 30 L20 30 L20 8 Z" fill="#fffcf4"/><path d="M24 9 V28" stroke-width="1.2"/><path d="M14 30 H34"/><path d="M24 30 V41"/><circle cx="24" cy="43.5" r="2.4" fill="#efc84a"/></g></g></symbol>
+      <symbol id="m-banner" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 45 V5"/><path d="M12 8 H38 L32 17 L38 26 H12" fill="#fffcf4"/><path d="M19 13 l4 4 l4 -4 M23 17 v4" stroke-width="1.4"/><circle cx="12" cy="4.5" r="2" fill="#1e1c18"/><path d="M14 22 h15" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-quill" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M38 4 C24 8 14 20 12 38 C24 32 36 22 38 4 Z" fill="#fffcf4"/><path d="M12 38 L35 8" stroke-width="1.3"/><path d="M12 38 L7 45"/><path d="M5 45 C12 42 18 46 25 43" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-map" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12 L17 8 L31 13 L42 9 V36 L31 40 L17 35 L6 39 Z" fill="#fffcf4"/><path d="M17 8 V35 M31 13 V40" stroke-width="1.3"/><path d="M10 29 C16 22 22 31 28 23 S34 20 36 18" stroke-dasharray="2 3" stroke-width="1.4"/><path d="M34 15 l5 5 M39 15 l-5 5" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-mountain" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 41 L17 14 L25 26 L31 18 L45 41 Z" fill="#fffcf4"/><path d="M12 24 L17 14 L21 21 L18 20 L15 24 Z" stroke-width="1.3"/><circle cx="38" cy="9" r="4.5" fill="#efc84a"/></g></symbol>
+      <symbol id="m-crossed-axes" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 43 L40 9 M40 43 L8 9"/><path d="M34 5 C40 3 46 9 44 15 C40 13 37 13 35 15 C36 11 36 8 34 5 Z" fill="#fffcf4"/><path d="M14 5 C8 3 2 9 4 15 C8 13 11 13 13 15 C12 11 12 8 14 5 Z" fill="#fffcf4"/><circle cx="24" cy="26" r="3.4" fill="#efc84a"/></g></symbol>
+      <symbol id="m-planet" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="25" r="11" fill="#fffcf4"/><ellipse cx="24" cy="25" rx="20" ry="6" transform="rotate(-20 24 25)"/><path d="M17 20 C20 17 24 16 27 17" stroke="#efc84a" stroke-width="3"/><path d="M40 5 l1 3 l3 1 l-3 1 l-1 3 l-1 -3 l-3 -1 l3 -1 z" fill="#1e1c18" stroke-width="1"/></g></symbol>
+      <symbol id="m-cauldron" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 18 H40"/><path d="M10 18 C8 30 14 40 24 40 C34 40 40 30 38 18" fill="#fffcf4"/><path d="M14 40 l-2 4 M34 40 l2 4"/><path d="M16 14 c0 -4 4 -4 4 -8 M26 14 c0 -3 3 -3 3 -6" stroke-width="1.3"/><path d="M12 23 C20 26 28 26 36 23" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-hourglass" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 H37 M11 43 H37"/><path d="M15 5 C15 17 23 20 23 24 C23 28 15 31 15 43 H33 C33 31 25 28 25 24 C25 20 33 17 33 5 Z" fill="#fffcf4"/><path d="M18 40 C20 35 28 35 30 40 Z" fill="#efc84a"/><path d="M24 28 V34" stroke-width="1.2"/></g></symbol>
+      <symbol id="m-clapper" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="19" width="32" height="23" rx="2" fill="#fffcf4"/><path d="M8 19 L37 8 L39 14 L10 25"/><path d="M15 16 L18 22 M23 13 L26 19 M31 10 L34 16" stroke-width="1.3"/><path d="M14 31 h20" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-broom" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M42 5 L21 29"/><path d="M22 28 L12 30 C8 34 6 40 5 44 C11 43 18 39 22 34 Z" fill="#efc84a"/><path d="M14 33 L9 40 M17 34 L12 41" stroke-width="1.2"/><path d="M19 31 l4 -4" stroke-width="3.4"/></g></symbol>
+      <symbol id="m-laurel" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 43 C12 37 8 25 13 8"/><path d="M12 34 c-6 -1 -8 -5 -7 -9 c4 1 7 4 7 9 z" fill="#efc84a"/><path d="M10 26 c-6 -1 -8 -5 -7 -9 c4 1 7 4 7 9 z" fill="#fffcf4"/><path d="M11 18 c-6 -1 -8 -5 -7 -9 c4 1 7 4 7 9 z" fill="#fffcf4"/><path d="M26 43 C36 37 40 25 35 8"/><path d="M36 34 c6 -1 8 -5 7 -9 c-4 1 -7 4 -7 9 z" fill="#fffcf4"/><path d="M38 26 c6 -1 8 -5 7 -9 c-4 1 -7 4 -7 9 z" fill="#efc84a"/><path d="M37 18 c6 -1 8 -5 7 -9 c-4 1 -7 4 -7 9 z" fill="#fffcf4"/><path d="M18 44 h12"/></g></symbol>
+      <symbol id="m-wand" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 42 L32 16" stroke-width="3"/><path d="M8 42 L13 37" stroke-width="5.5"/><path d="M38 3 l2 5 l5 2 l-5 2 l-2 5 l-2 -5 l-5 -2 l5 -2 z" fill="#efc84a" stroke-width="1.4"/><path d="M29 6 l1 2 M44 20 l-2 1 M33 22 l2 1" stroke-width="1.2"/></g></symbol>
+      <symbol id="m-leaf" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 40 C10 22 22 10 40 8 C40 28 28 40 10 40 Z" fill="#fffcf4"/><path d="M10 40 L31 17 M18 32 l7 1 M24 25 l7 1" stroke-width="1.4"/><path d="M6 44 C13 41 17 45 25 42" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-war-axe" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 42 L33 16"/><path d="M27 8 C37 5 46 12 44 22 C38 18 32 18 28 22 C30 16 30 12 27 8 Z" fill="#fffcf4"/><path d="M7 40 l6 6"/><path d="M12 33 l5 5" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-flame" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 C28 13 36 17 36 29 C36 37 30 43 24 43 C17 43 12 37 12 30 C12 23 17 20 18 14 C22 18 22 22 24 24 C26 18 25 11 24 5 Z" fill="#fffcf4"/><path d="M24 43 C20 41 19 35 23 31 C24 35 27 35 27 38 C27 41 26 42 24 43 Z" fill="#efc84a"/></g></symbol>
+      <symbol id="m-candle" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 19 c-3 -4 0 -8 0 -12 c3 4 5 8 0 12 z" fill="#efc84a"/><path d="M19 21 h10 v21 h-10 z" fill="#fffcf4"/><path d="M19 25 c2 2 3 0 4 3 M29 24 c-1 2 -2 1 -2 4" stroke-width="1.4"/><path d="M13 43 h22"/><path d="M38 5 a6 6 0 1 0 6 8 a5 5 0 1 1 -6 -8 z"/></g></symbol>
+      <symbol id="m-round-shield" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18" fill="#fffcf4"/><circle cx="24" cy="24" r="5" fill="#efc84a"/><path d="M24 6 V19 M24 29 V42 M6 24 H19 M29 24 H42" stroke-width="1.3"/></g></symbol>
+      <symbol id="m-axe" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 V44"/><path d="M24 10 C19 11 14 9 10 6 C6 13 6 23 11 30 C15 27 19 26 24 25 Z" fill="#fffcf4"/><path d="M24 10 C29 11 34 9 38 6 C42 13 42 23 37 30 C33 27 29 26 24 25 Z" fill="#fffcf4"/><path d="M21 37 h6" stroke="#efc84a" stroke-width="4"/></g></symbol>
+    </defs></svg>
+<!-- /BUILD:sprite -->
+    <!-- BUILD:header -->
+<header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="categories/events-names.html">Event Names</a></li>
+              <li><a href="categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="categories/music-names.html">Music Names</a></li>
+              <li><a href="categories/objects-names.html">Object Names</a></li>
+              <li><a href="categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="categories/people-names.html">Character Names</a></li>
+              <li><a href="categories/places-names.html">Place Names</a></li>
+              <li><a href="categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="categories/witch-names.html">Witch Names</a></li>
+              <li><a href="categories/historical-names.html">Historical Names</a></li>
+              <li><a href="categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+<!-- /BUILD:header -->
 
-    <div class="container">
-        <!-- Hero Section with Main Generator -->
-        <header class="hero">
-            <h1>Name Generators for D&amp;D, Stories and Games</h1>
-            <p class="hero-tagline">Names for characters, places, weapons, events and bands, each built the way its world actually names things. Free to use, no sign-up.</p>
-            
-            <div class="main-generator">
-                <div class="generator-card">
-                    <h2>Try any generator</h2>
-                    <p>Pick a category and a generator, then press Generate.</p>
-                    
-                    <div class="generator-controls">
-                        <div class="control-group">
-                            <label for="main-category">Category:</label>
-                            <select id="main-category" name="category">
-                                <option value="">Select a category...</option>
-                                <!-- BUILD:category-options -->
-                                <option value="concepts">💭 Blogs &amp; Brands</option>
-                                <option value="events">🎉 Events</option>
-                                <option value="fantasy">⚔️ Fantasy</option>
-                                <option value="dnd">🎲 D&amp;D</option>
-                                <option value="folklore">📜 Folklore</option>
-                                <option value="music">🎵 Music</option>
-                                <option value="objects">⚔️ Objects</option>
-                                <option value="organizations">🏛️ Organisations</option>
-                                <option value="people">👥 Characters</option>
-                                <option value="places">🗺️ Places</option>
-                                <option value="elder_scrolls">🐉 Elder Scrolls</option>
-                                <option value="warcraft">🪓 Warcraft</option>
-                                <option value="warhammer">💀 Warhammer</option>
-                                <option value="scifi">🚀 Sci-Fi</option>
-                                <option value="witch">🧙‍♀️ Witches</option>
-                                <option value="historical">🏺 Historical</option>
-                                <option value="pop_culture">🎬 Pop Culture</option>
+    <div class="wrap">
+        <main id="main">
+            <div class="titlerow">
+                <h1>Name Generators for <span class="hl">D&amp;D, Stories</span> and Games</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-quill"/></svg>
+            </div>
+            <p class="lede intro-top">Names for characters, places, weapons, events and bands, each built the way its world actually names things. Free to use, no sign-up.</p>
+
+            <!-- Try any generator: pick a category and a generator. Its names load from data/generators/<key>.json. -->
+            <section class="sheet hd" id="try" aria-labelledby="try-heading" data-start="hogwarts_legacy_witch">
+                <div class="label"><h2 id="try-heading" class="label-heading">Try any generator</h2><span class="pen">swipe for more →</span></div>
+                <div class="opts scroll" id="main-category" role="group" aria-label="Category">
+                    <!-- BUILD:category-options -->
+                                <button type="button" class="opt hd tap" data-category="concepts" aria-pressed="true">Blogs &amp; Brands</button>
+                                <button type="button" class="opt hd tap" data-category="events" aria-pressed="false">Events</button>
+                                <button type="button" class="opt hd tap" data-category="fantasy" aria-pressed="false">Fantasy</button>
+                                <button type="button" class="opt hd tap" data-category="dnd" aria-pressed="false">D&amp;D</button>
+                                <button type="button" class="opt hd tap" data-category="folklore" aria-pressed="false">Folklore</button>
+                                <button type="button" class="opt hd tap" data-category="music" aria-pressed="false">Music</button>
+                                <button type="button" class="opt hd tap" data-category="objects" aria-pressed="false">Objects</button>
+                                <button type="button" class="opt hd tap" data-category="organizations" aria-pressed="false">Organisations</button>
+                                <button type="button" class="opt hd tap" data-category="people" aria-pressed="false">Characters</button>
+                                <button type="button" class="opt hd tap" data-category="places" aria-pressed="false">Places</button>
+                                <button type="button" class="opt hd tap" data-category="elder_scrolls" aria-pressed="false">Elder Scrolls</button>
+                                <button type="button" class="opt hd tap" data-category="warcraft" aria-pressed="false">Warcraft</button>
+                                <button type="button" class="opt hd tap" data-category="warhammer" aria-pressed="false">Warhammer</button>
+                                <button type="button" class="opt hd tap" data-category="scifi" aria-pressed="false">Sci-Fi</button>
+                                <button type="button" class="opt hd tap" data-category="witch" aria-pressed="false">Witches</button>
+                                <button type="button" class="opt hd tap" data-category="historical" aria-pressed="false">Historical</button>
+                                <button type="button" class="opt hd tap" data-category="pop_culture" aria-pressed="false">Pop Culture</button>
 <!-- /BUILD:category-options -->
-                            </select>
-                        </div>
-                        
-                        <div class="control-group">
-                            <label for="main-generator">Generator:</label>
-                            <select id="main-generator" name="generator" disabled>
-                                <option value="">Select a generator...</option>
-                            </select>
-                        </div>
-                        
-                        <div class="control-group" id="filter-container">
-                            <!-- Filters will be populated dynamically -->
-                        </div>
-                        
-                        <div class="control-group">
-                            <label for="main-count">Number of names:</label>
-                            <input type="number" id="main-count" value="10" min="1" max="50">
-                        </div>
-                        
-                        <button id="main-generate-btn" class="generate-button" disabled>Generate Names</button>
-                    </div>
-                    
-                    <div class="results-area" id="main-results">
-                        <p class="results-placeholder">Select a category and generator to begin</p>
-                    </div>
-                    <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
                 </div>
-            </div>
-        </header>
+                <div class="group">
+                    <label class="label" for="main-generator">Generator</label>
+                    <div class="ctl sel hd"><select id="main-generator" name="generator"></select></div>
+                </div>
+                <div id="filter-container"></div>
+                <button id="main-generate-btn" class="go hd tap" type="button" disabled><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="main-results" class="results-area" data-long="false">
+                    <p class="results-empty">Pick a category and a generator above.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
+                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="open-full"><a id="open-full" href="all-generators.html">Browse all generators →</a></p>
+            </section>
+            <p class="lede intro-below">Names for characters, places, weapons, events and bands, each built the way its world actually names things. Free to use, no sign-up.</p>
 
-        <!-- Category Cards -->
-        <section class="categories-section">
-            <h2>Browse by Category</h2>
-            <div class="categories-grid" id="categories-grid">
-            <!-- BUILD:categories -->
-            <a href="categories/concepts-names.html" class="category-card">
-                <span class="category-icon">💭</span>
-                <h3>Blogs &amp; Brands</h3>
-                <p>Names for blogs and brands, and how to check they&#039;re free to use.</p>
-                <div class="pillar-count">3 Generators</div>
-            </a>
-            <a href="categories/events-names.html" class="category-card">
-                <span class="category-icon">🎉</span>
-                <h3>Events</h3>
-                <p>Names for parties, festivals, gigs, fundraisers, quiz nights, and hen and stag dos.</p>
-                <div class="pillar-count">1 Generator</div>
-            </a>
-            <a href="categories/fantasy-names.html" class="category-card">
-                <span class="category-icon">⚔️</span>
-                <h3>Fantasy</h3>
-                <p>Elves, dwarves, orcs, dragons, wizards, demons and more, for D&amp;D, stories and games.</p>
-                <div class="pillar-count">37 Generators</div>
-            </a>
-            <a href="categories/dnd-names.html" class="category-card">
-                <span class="category-icon">🎲</span>
-                <h3>D&amp;D</h3>
-                <p>Names for D&amp;D characters of every race, plus taverns, towns, guilds and magic items for your campaign.</p>
-                <div class="pillar-count">43 Generators</div>
-            </a>
-            <a href="categories/folklore-names.html" class="category-card">
-                <span class="category-icon">📜</span>
-                <h3>Folklore</h3>
-                <p>Fairy names and fairy-town names inspired by folklore.</p>
-                <div class="pillar-count">5 Generators</div>
-            </a>
-            <a href="categories/music-names.html" class="category-card">
-                <span class="category-icon">🎵</span>
-                <h3>Music</h3>
-                <p>Names for music projects, albums and gigs, from a site that began with music.</p>
-                <div class="pillar-count">10 Generators</div>
-            </a>
-            <a href="categories/objects-names.html" class="category-card">
-                <span class="category-icon">⚔️</span>
-                <h3>Objects</h3>
-                <p>Swords, axes, shields, wands, war hammers and poisons for games and stories.</p>
-                <div class="pillar-count">10 Generators</div>
-            </a>
-            <a href="categories/organizations-names.html" class="category-card">
-                <span class="category-icon">🏛️</span>
-                <h3>Organisations</h3>
-                <p>Names for businesses, companies and brands, and for guilds and clans in fantasy worlds.</p>
-                <div class="pillar-count">5 Generators</div>
-            </a>
-            <a href="categories/people-names.html" class="category-card">
-                <span class="category-icon">👥</span>
-                <h3>Characters</h3>
-                <p>Epithets, assassin names and vampire names for characters in stories and games.</p>
-                <div class="pillar-count">11 Generators</div>
-            </a>
-            <a href="categories/places-names.html" class="category-card">
-                <span class="category-icon">🗺️</span>
-                <h3>Places</h3>
-                <p>Towns, cities and countries for fantasy worlds and maps, plus café names.</p>
-                <div class="pillar-count">6 Generators</div>
-            </a>
-            <a href="categories/elder_scrolls-names.html" class="category-card">
-                <span class="category-icon">🐉</span>
-                <h3>Elder Scrolls</h3>
-                <p>Names for the races of Tamriel, for Skyrim, Elder Scrolls Online and your own stories.</p>
-                <div class="pillar-count">6 Generators</div>
-            </a>
-            <a href="categories/warcraft-names.html" class="category-card">
-                <span class="category-icon">🪓</span>
-                <h3>Warcraft</h3>
-                <p>Names for the races of Azeroth, for World of Warcraft characters and roleplay.</p>
-                <div class="pillar-count">4 Generators</div>
-            </a>
-            <a href="categories/warhammer-names.html" class="category-card">
-                <span class="category-icon">💀</span>
-                <h3>Warhammer</h3>
-                <p>Names for Warhammer 40k and Warhammer Fantasy characters: Space Marines, Imperial Guard, Aeldari, Orks and Ogryns.</p>
-                <div class="pillar-count">3 Generators</div>
-            </a>
-            <a href="categories/scifi-names.html" class="category-card">
-                <span class="category-icon">🚀</span>
-                <h3>Sci-Fi</h3>
-                <p>Names for science fiction: aliens, robots and androids, spaceships, cyberpunk street names and more.</p>
-                <div class="pillar-count">5 Generators</div>
-            </a>
-            <a href="categories/witch-names.html" class="category-card">
-                <span class="category-icon">🧙‍♀️</span>
-                <h3>Witches</h3>
-                <p>Witch names for fantasy, games and Halloween: swamp witches, Harry Potter and Hogwarts Legacy witches, Path of Exile witches and more.</p>
-                <div class="pillar-count">6 Generators</div>
-            </a>
-            <a href="categories/historical-names.html" class="category-card">
-                <span class="category-icon">🏺</span>
-                <h3>Historical</h3>
-                <p>Real names from history for stories and games: Roman, Ancient Greek, Anglo-Saxon, medieval English, Victorian and Old West.</p>
-                <div class="pillar-count">6 Generators</div>
-            </a>
-            <a href="categories/pop_culture-names.html" class="category-card">
-                <span class="category-icon">🎬</span>
-                <h3>Pop Culture</h3>
-                <p>Names for Hogwarts Legacy, Harry Potter, Skyrim, Warcraft, Warhammer, Lord of the Rings and more.</p>
-                <div class="pillar-count">25 Generators</div>
-            </a>
+            <section class="section categories-section">
+                <h2>Browse by category</h2>
+                <div class="catgrid" id="categories-grid">
+<!-- BUILD:categories -->
+            <a href="categories/concepts-names.html" class="cat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-lightbulb"/></svg><div><b>Blogs &amp; Brands</b><span>3 generators</span></div><em aria-hidden="true">→</em></a>
+            <a href="categories/events-names.html" class="cat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-bunting"/></svg><div><b>Events</b><span>1 generator</span></div><em aria-hidden="true">→</em></a>
+            <a href="categories/fantasy-names.html" class="cat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Fantasy</b><span>37 generators</span></div><em aria-hidden="true">→</em></a>
+            <a href="categories/dnd-names.html" class="cat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-d20"/></svg><div><b>D&amp;D</b><span>43 generators</span></div><em aria-hidden="true">→</em></a>
+            <a href="categories/folklore-names.html" class="cat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Folklore</b><span>5 generators</span></div><em aria-hidden="true">→</em></a>
+            <a href="categories/music-names.html" class="cat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-note"/></svg><div><b>Music</b><span>10 generators</span></div><em aria-hidden="true">→</em></a>
+            <a href="categories/objects-names.html" class="cat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Objects</b><span>10 generators</span></div><em aria-hidden="true">→</em></a>
+            <a href="categories/organizations-names.html" class="cat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-banner"/></svg><div><b>Organisations</b><span>5 generators</span></div><em aria-hidden="true">→</em></a>
+            <a href="categories/people-names.html" class="cat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-quill"/></svg><div><b>Characters</b><span>11 generators</span></div><em aria-hidden="true">→</em></a>
+            <a href="categories/places-names.html" class="cat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-map"/></svg><div><b>Places</b><span>6 generators</span></div><em aria-hidden="true">→</em></a>
+            <a href="categories/elder_scrolls-names.html" class="cat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mountain"/></svg><div><b>Elder Scrolls</b><span>6 generators</span></div><em aria-hidden="true">→</em></a>
+            <a href="categories/warcraft-names.html" class="cat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-crossed-axes"/></svg><div><b>Warcraft</b><span>4 generators</span></div><em aria-hidden="true">→</em></a>
+            <a href="categories/warhammer-names.html" class="cat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Warhammer</b><span>3 generators</span></div><em aria-hidden="true">→</em></a>
+            <a href="categories/scifi-names.html" class="cat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-planet"/></svg><div><b>Sci-Fi</b><span>5 generators</span></div><em aria-hidden="true">→</em></a>
+            <a href="categories/witch-names.html" class="cat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-cauldron"/></svg><div><b>Witches</b><span>6 generators</span></div><em aria-hidden="true">→</em></a>
+            <a href="categories/historical-names.html" class="cat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-hourglass"/></svg><div><b>Historical</b><span>6 generators</span></div><em aria-hidden="true">→</em></a>
+            <a href="categories/pop_culture-names.html" class="cat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-clapper"/></svg><div><b>Pop Culture</b><span>25 generators</span></div><em aria-hidden="true">→</em></a>
 <!-- /BUILD:categories -->
-            </div>
-        </section>
+                </div>
+            </section>
 
-        <!-- Popular Generators -->
-        <section class="popular-section">
-            <h2>Popular Name Generators</h2>
-            <div class="popular-generators-grid" id="popular-generators">
-            <!-- BUILD:popular -->
-            <a href="posts/hogwarts-legacy-witch-name-generator.html" class="popular-generator-card">
-                <span class="generator-icon">🪄</span>
-                <div class="generator-info">
-                    <h3>Hogwarts Legacy Witch Name Generator</h3>
-                    <p>Hogwarts Legacy witch names in the game&#039;s 1890s style: Victorian first names with surnames to suit Gryffindor, Hufflepuff, Ravenclaw or Slytherin.</p>
-                    <span class="category-badge">🎬 Pop Culture</span>
-                </div>
-            </a>
-            <a href="posts/epithet-generator.html" class="popular-generator-card">
-                <span class="generator-icon">🏷️</span>
-                <div class="generator-info">
-                    <h3>Epithet Generator</h3>
-                    <p>Add an epithet to your character&#039;s name: the Bold, Dragonslayer, of the North, or a real one from history like the Unready or Bloodaxe. 36 categories, or a mix.</p>
-                    <span class="category-badge">👥 Characters</span>
-                </div>
-            </a>
-            <a href="posts/hogwarts-legacy-wizard-name-generator.html" class="popular-generator-card">
-                <span class="generator-icon">🪄</span>
-                <div class="generator-info">
-                    <h3>Hogwarts Legacy Wizard Name Generator</h3>
-                    <p>Hogwarts Legacy wizard names in the game&#039;s 1890s style: Victorian first names with surnames to suit Gryffindor, Hufflepuff, Ravenclaw or Slytherin.</p>
-                    <span class="category-badge">🎬 Pop Culture</span>
-                </div>
-            </a>
-            <a href="posts/elf-name-generator.html" class="popular-generator-card">
-                <span class="generator-icon">🧝</span>
-                <div class="generator-info">
-                    <h3>Elf Name Generator</h3>
-                    <p>Elf names in three styles: real elves from Tolkien&#039;s books, D&amp;D-style names, and original fantasy names. Male, female and gender-neutral.</p>
-                    <span class="category-badge">⚔️ Fantasy</span>
-                </div>
-            </a>
-            <a href="posts/skyrim-orc-name-generator.html" class="popular-generator-card">
-                <span class="generator-icon">🧌</span>
-                <div class="generator-info">
-                    <h3>Skyrim Orc Name Generator</h3>
-                    <p>Generate Skyrim orc names the way the game builds them: a first name plus gro- (son of) or gra- (daughter of) and a parent&#039;s name, like Urag gro-Shub.</p>
-                    <span class="category-badge">🎬 Pop Culture</span>
-                </div>
-            </a>
-            <a href="posts/event-name-generator.html" class="popular-generator-card">
-                <span class="generator-icon">🎉</span>
-                <div class="generator-info">
-                    <h3>Event Name Generator</h3>
-                    <p>Names for parties, festivals, gigs, fundraisers, tournaments, quiz nights, hen and stag dos and work events, plus how to check a name is free before you announce it.</p>
-                    <span class="category-badge">🎉 Events</span>
-                </div>
-            </a>
-            <a href="posts/demon-epithet-generator.html" class="popular-generator-card">
-                <span class="generator-icon">🔥</span>
-                <div class="generator-info">
-                    <h3>Demon Epithet Generator</h3>
-                    <p>Titles for your demons: the Devourer, Lord of the Ninth Pit, Duke of Ashes. Epithets by sin, domain and rank, inspired by real demonology.</p>
-                    <span class="category-badge">⚔️ Fantasy</span>
-                </div>
-            </a>
-            <a href="posts/business-name-generator.html" class="popular-generator-card">
-                <span class="generator-icon">💼</span>
-                <div class="generator-info">
-                    <h3>Business Name Generator</h3>
-                    <p>Strong one-word starting points for a business name, in 10 themes from aspirational to tech, plus how to turn one into a name and check it&#039;s free to use.</p>
-                    <span class="category-badge">🏛️ Organisations</span>
-                </div>
-            </a>
-            <a href="posts/dungeon-synth-name-generator.html" class="popular-generator-card">
-                <span class="generator-icon">🎵</span>
-                <div class="generator-info">
-                    <h3>Dungeon Synth Name Generator</h3>
-                    <p>Names for dungeon synth projects and albums in four styles: dark and medieval, nature and fantasy, cosy comfy synth, and cosmic.</p>
-                    <span class="category-badge">🎵 Music</span>
-                </div>
-            </a>
-            <a href="posts/harry-potter-witch-name-generator.html" class="popular-generator-card">
-                <span class="generator-icon">⚡</span>
-                <div class="generator-info">
-                    <h3>Harry Potter Witch Name Generator</h3>
-                    <p>Witch names in the style of the Harry Potter books: everyday British first names or grand pure-blood ones, with a surname to suit Gryffindor, Hufflepuff, Ravenclaw or Slytherin.</p>
-                    <span class="category-badge">🎬 Pop Culture</span>
-                </div>
-            </a>
-            <a href="posts/shield-name-generator.html" class="popular-generator-card">
-                <span class="generator-icon">🛡️</span>
-                <div class="generator-info">
-                    <h3>Shield Name Generator</h3>
-                    <p>Shield names with a duty or a coat of arms in proper heraldry: Oathward, Protector of the Weak; Gules, a lion rampant or.</p>
-                    <span class="category-badge">⚔️ Objects</span>
-                </div>
-            </a>
-            <a href="posts/dnd-fantasy-name-generator.html" class="popular-generator-card">
-                <span class="generator-icon">⚔️</span>
-                <div class="generator-info">
-                    <h3>D&amp;D Fantasy Name Generator</h3>
-                    <p>D&amp;D character names for every common race, with a family or clan name, or a whole random party: a dwarf, a tiefling, a halfling and a dragonborn at once.</p>
-                    <span class="category-badge">⚔️ Fantasy</span>
-                </div>
-            </a>
-            <a href="posts/lotr-wizard-name-generator.html" class="popular-generator-card">
-                <span class="generator-icon">🧙</span>
-                <div class="generator-info">
-                    <h3>LOTR Wizard Name Generator</h3>
-                    <p>Wizard names in the style of the Istari of Middle-earth: a colour, an Elvish name built from real Sindarin with its meaning, and a deed.</p>
-                    <span class="category-badge">🎬 Pop Culture</span>
-                </div>
-            </a>
-            <a href="posts/poison-name-generator.html" class="popular-generator-card">
-                <span class="generator-icon">☠️</span>
-                <div class="generator-info">
-                    <h3>Poison Name Generator</h3>
-                    <p>Fantasy poison names with a form and an effect, for assassins, mysteries and D&amp;D: Widow&#039;s Kiss, a clear oil causing a dreamless sleep that never ends.</p>
-                    <span class="category-badge">⚔️ Objects</span>
-                </div>
-            </a>
-            <a href="posts/wizard-name-generator.html" class="popular-generator-card">
-                <span class="generator-icon">🧙</span>
-                <div class="generator-info">
-                    <h3>Wizard Name Generator</h3>
-                    <p>Wizard names for any school of magic: Aldous the Grey, Hester of Greymere, Archmage Ottilie. Male and female, with epithets for the eight D&amp;D schools.</p>
-                    <span class="category-badge">⚔️ Fantasy</span>
-                </div>
-            </a>
-            <a href="posts/dragon-name-generator.html" class="popular-generator-card">
-                <span class="generator-icon">🐉</span>
-                <div class="generator-info">
-                    <h3>Dragon Name Generator</h3>
-                    <p>Dragon names for fire, frost, storm, earth, shadow, sea and venom dragons, harsh or sleek, with an epithet if you want one: &quot;Vharuzul the Ashen&quot;.</p>
-                    <span class="category-badge">⚔️ Fantasy</span>
-                </div>
-            </a>
-            <a href="posts/orc-name-generator.html" class="popular-generator-card">
-                <span class="generator-icon">🧌</span>
-                <div class="generator-info">
-                    <h3>Orc Name Generator</h3>
-                    <p>Orc names that sound like a fist on a table, with a deed-name, nickname or clan: Murzag Skullsplitter, Ushra the Unkillable. Male and female.</p>
-                    <span class="category-badge">⚔️ Fantasy</span>
-                </div>
-            </a>
-            <a href="posts/sword-name-generator.html" class="popular-generator-card">
-                <span class="generator-icon">⚔️</span>
-                <div class="generator-info">
-                    <h3>Sword Name Generator</h3>
-                    <p>Sword names for heroes, villains and old kings, with an epithet or a description: Griefbane, Drinker of Souls; Sigeling, a pattern-welded sword.</p>
-                    <span class="category-badge">⚔️ Objects</span>
-                </div>
-            </a>
-            <a href="posts/axe-name-generator.html" class="popular-generator-card">
-                <span class="generator-icon">🪓</span>
-                <div class="generator-info">
-                    <h3>Axe Name Generator</h3>
-                    <p>Axe names in four styles: Norse axes named like troll-women, dwarven heirlooms, brutal orc cleavers and a woodsman&#039;s Old Bess, with an epithet or description.</p>
-                    <span class="category-badge">⚔️ Objects</span>
-                </div>
-            </a>
-            <a href="posts/elven-sword-name-generator.html" class="popular-generator-card">
-                <span class="generator-icon">⚔️</span>
-                <div class="generator-info">
-                    <h3>Elven Sword Name Generator</h3>
-                    <p>Elven sword names built from Tolkien&#039;s Sindarin and Quenya, each with its real meaning, plus the famous blades of the legends: Glamdring, Orcrist, Andúril.</p>
-                    <span class="category-badge">⚔️ Objects</span>
-                </div>
-            </a>
+            <section class="section popular-section">
+                <h2>Popular name generators</h2>
+                <div class="featured three" id="popular-grid">
+<!-- BUILD:popular -->
+            <a href="posts/hogwarts-legacy-witch-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-broom"/></svg><b>Hogwarts Legacy Witch Name Generator</b><span>Hogwarts Legacy witch names in the game&#039;s 1890s style: Victorian first names with surnames to suit Gryffindor, Hufflepuff, Ravenclaw or Slytherin.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+            <a href="posts/epithet-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-laurel"/></svg><b>Epithet Generator</b><span>Add an epithet to your character&#039;s name: the Bold, Dragonslayer, of the North, or a real one from history like the Unready or Bloodaxe. 36 categories, or a mix.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+            <a href="posts/hogwarts-legacy-wizard-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-wand"/></svg><b>Hogwarts Legacy Wizard Name Generator</b><span>Hogwarts Legacy wizard names in the game&#039;s 1890s style: Victorian first names with surnames to suit Gryffindor, Hufflepuff, Ravenclaw or Slytherin.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+            <a href="posts/elf-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf"/></svg><b>Elf Name Generator</b><span>Elf names in three styles: real elves from Tolkien&#039;s books, D&amp;D-style names, and original fantasy names. Male, female and gender-neutral.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+            <a href="posts/skyrim-orc-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><b>Skyrim Orc Name Generator</b><span>Generate Skyrim orc names the way the game builds them: a first name plus gro- (son of) or gra- (daughter of) and a parent&#039;s name, like Urag gro-Shub.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+            <a href="posts/event-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-bunting"/></svg><b>Event Name Generator</b><span>Names for parties, festivals, gigs, fundraisers, tournaments, quiz nights, hen and stag dos and work events, plus how to check a name is free before you announce it.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+            <a href="posts/demon-epithet-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-flame"/></svg><b>Demon Epithet Generator</b><span>Titles for your demons: the Devourer, Lord of the Ninth Pit, Duke of Ashes. Epithets by sin, domain and rank, inspired by real demonology.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+            <a href="posts/business-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-lightbulb"/></svg><b>Business Name Generator</b><span>Strong one-word starting points for a business name, in 10 themes from aspirational to tech, plus how to turn one into a name and check it&#039;s free to use.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+            <a href="posts/dungeon-synth-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-candle"/></svg><b>Dungeon Synth Name Generator</b><span>Names for dungeon synth projects and albums in four styles: dark and medieval, nature and fantasy, cosy comfy synth, and cosmic.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+            <a href="posts/harry-potter-witch-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-broom"/></svg><b>Harry Potter Witch Name Generator</b><span>Witch names in the style of the Harry Potter books: everyday British first names or grand pure-blood ones, with a surname to suit Gryffindor, Hufflepuff, Ravenclaw or Slytherin.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+            <a href="posts/shield-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-round-shield"/></svg><b>Shield Name Generator</b><span>Shield names with a duty or a coat of arms in proper heraldry: Oathward, Protector of the Weak; Gules, a lion rampant or.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+            <a href="posts/dnd-fantasy-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-d20"/></svg><b>D&amp;D Fantasy Name Generator</b><span>D&amp;D character names for every common race, with a family or clan name, or a whole random party: a dwarf, a tiefling, a halfling and a dragonborn at once.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+            <a href="posts/lotr-wizard-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-clapper"/></svg><b>LOTR Wizard Name Generator</b><span>Wizard names in the style of the Istari of Middle-earth: a colour, an Elvish name built from real Sindarin with its meaning, and a deed.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+            <a href="posts/poison-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><b>Poison Name Generator</b><span>Fantasy poison names with a form and an effect, for assassins, mysteries and D&amp;D: Widow&#039;s Kiss, a clear oil causing a dreamless sleep that never ends.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+            <a href="posts/wizard-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><b>Wizard Name Generator</b><span>Wizard names for any school of magic: Aldous the Grey, Hester of Greymere, Archmage Ottilie. Male and female, with epithets for the eight D&amp;D schools.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+            <a href="posts/dragon-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><b>Dragon Name Generator</b><span>Dragon names for fire, frost, storm, earth, shadow, sea and venom dragons, harsh or sleek, with an epithet if you want one: &quot;Vharuzul the Ashen&quot;.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+            <a href="posts/orc-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><b>Orc Name Generator</b><span>Orc names that sound like a fist on a table, with a deed-name, nickname or clan: Murzag Skullsplitter, Ushra the Unkillable. Male and female.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+            <a href="posts/sword-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><b>Sword Name Generator</b><span>Sword names for heroes, villains and old kings, with an epithet or a description: Griefbane, Drinker of Souls; Sigeling, a pattern-welded sword.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+            <a href="posts/axe-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-axe"/></svg><b>Axe Name Generator</b><span>Axe names in four styles: Norse axes named like troll-women, dwarven heirlooms, brutal orc cleavers and a woodsman&#039;s Old Bess, with an epithet or description.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+            <a href="posts/elven-sword-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><b>Elven Sword Name Generator</b><span>Elven sword names built from Tolkien&#039;s Sindarin and Quenya, each with its real meaning, plus the famous blades of the legends: Glamdring, Orcrist, Andúril.</span><span class="open hd" aria-hidden="true">Open →</span></a>
 <!-- /BUILD:popular -->
-            </div>
-        </section>
-
-        <footer class="site-footer">
-            <p>&copy; <span id="current-year"></span> The Name Generators. All rights reserved. | <a href="sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+                </div>
+            </section>
+        </main>
     </div>
 
+    <!-- BUILD:footer -->
+<footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="about.html">About</a> · <a href="all-generators.html">All generators</a> · <a href="sitemap.html">Site map</a></p>
+      </div>
+    </footer>
+<!-- /BUILD:footer -->
+
     <!-- BUILD:generator-index -->
-    <script type="application/json" id="generator-index">{"concepts":[{"key":"blog","title":"Blog Name Generator","icon":"📝"},{"key":"brand","title":"Brand Name Generator","icon":"🏷️"},{"key":"youtube","title":"YouTube Channel Name Generator","icon":"▶️"}],"events":[{"key":"event","title":"Event Name Generator","icon":"🎉"}],"fantasy":[{"key":"tiefling","title":"Tiefling Name Generator","icon":"😈"},{"key":"dragonborn","title":"Dragonborn Name Generator","icon":"🐲"},{"key":"halfling","title":"Halfling Name Generator","icon":"🍀"},{"key":"gnome","title":"Gnome Name Generator","icon":"🍄"},{"key":"elf","title":"Elf Name Generator","icon":"🧝"},{"key":"half_elf","title":"Half-Elf Name Generator","icon":"🧝‍♂️"},{"key":"dwarf","title":"Dwarf Name Generator","icon":"⛏️"},{"key":"dragon","title":"Dragon Name Generator","icon":"🐉"},{"key":"wizard","title":"Wizard Name Generator","icon":"🧙"},{"key":"orc","title":"Orc Name Generator","icon":"🧌"},{"key":"skyrim_orc","title":"Skyrim Orc Name Generator","icon":"🧌"},{"key":"warhammer_orc","title":"Warhammer Orc Name Generator","icon":"🧌"},{"key":"wow_orc","title":"World of Warcraft Orc Name Generator","icon":"🧌"},{"key":"lotr_orc","title":"LOTR Orc Name Generator","icon":"🧌"},{"key":"half_orc","title":"Half-Orc Name Generator","icon":"🧌"},{"key":"goblin","title":"Goblin Name Generator","icon":"👺"},{"key":"kobold","title":"Kobold Name Generator","icon":"🦎"},{"key":"lizardfolk","title":"Lizardfolk Name Generator","icon":"🐊"},{"key":"githyanki","title":"Githyanki Name Generator","icon":"⚔️"},{"key":"fantasy_town","title":"Fantasy Town Name Generator","icon":"🏘️"},{"key":"fantasy_country","title":"Fantasy Country Name Generator","icon":"🗺️"},{"key":"swamp_witch","title":"Swamp Witch Name Generator","icon":"🧙‍♀️"},{"key":"dnd_fantasy","title":"D&D Fantasy Name Generator","icon":"⚔️"},{"key":"path_of_exile_witch","title":"Path of Exile Witch Name Generator","icon":"🔮"},{"key":"funny_wizard","title":"Funny Wizard Name Generator","icon":"🎩"},{"key":"high_elf","title":"High Elf Name Generator","icon":"👑"},{"key":"wood_elf","title":"Wood Elf Name Generator","icon":"🌲"},{"key":"dark_elf","title":"Dark Elf Name Generator","icon":"🌑"},{"key":"clan","title":"Clan Name Generator","icon":"🛡️"},{"key":"demon","title":"Demon Name Generator","icon":"😈"},{"key":"demon_epithet","title":"Demon Epithet Generator","icon":"🔥"},{"key":"fantasy_city","title":"Fantasy City Name Generator","icon":"🏰"},{"key":"angel","title":"Angel Name Generator","icon":"😇"},{"key":"alien","title":"Alien Name Generator","icon":"👽"},{"key":"fairy","title":"Fairy Name Generator","icon":"🧚"},{"key":"fairy_town","title":"Fairy Town Name Generator","icon":"🧚‍♀️"},{"key":"elven_sword","title":"Elven Sword Name Generator","icon":"⚔️"}],"dnd":[{"key":"tiefling","title":"Tiefling Name Generator","icon":"😈"},{"key":"bg3","title":"Baldur's Gate 3 Name Generator","icon":"🎲"},{"key":"dragonborn","title":"Dragonborn Name Generator","icon":"🐲"},{"key":"halfling","title":"Halfling Name Generator","icon":"🍀"},{"key":"gnome","title":"Gnome Name Generator","icon":"🍄"},{"key":"dnd_fantasy","title":"D&D Fantasy Name Generator","icon":"⚔️"},{"key":"elf","title":"Elf Name Generator","icon":"🧝"},{"key":"half_elf","title":"Half-Elf Name Generator","icon":"🧝‍♂️"},{"key":"high_elf","title":"High Elf Name Generator","icon":"👑"},{"key":"wood_elf","title":"Wood Elf Name Generator","icon":"🌲"},{"key":"dark_elf","title":"Dark Elf Name Generator","icon":"🌑"},{"key":"dwarf","title":"Dwarf Name Generator","icon":"⛏️"},{"key":"half_orc","title":"Half-Orc Name Generator","icon":"🧌"},{"key":"goblin","title":"Goblin Name Generator","icon":"👺"},{"key":"kobold","title":"Kobold Name Generator","icon":"🦎"},{"key":"lizardfolk","title":"Lizardfolk Name Generator","icon":"🐊"},{"key":"githyanki","title":"Githyanki Name Generator","icon":"⚔️"},{"key":"orc","title":"Orc Name Generator","icon":"🧌"},{"key":"dragon","title":"Dragon Name Generator","icon":"🐉"},{"key":"wizard","title":"Wizard Name Generator","icon":"🧙"},{"key":"paladin","title":"Paladin Name Generator","icon":"✨"},{"key":"knight","title":"Knight Name Generator","icon":"🛡️"},{"key":"demon","title":"Demon Name Generator","icon":"😈"},{"key":"angel","title":"Angel Name Generator","icon":"😇"},{"key":"fairy","title":"Fairy Name Generator","icon":"🧚"},{"key":"epithet","title":"Epithet Generator","icon":"🏷️"},{"key":"demon_epithet","title":"Demon Epithet Generator","icon":"🔥"},{"key":"tavern","title":"Tavern Name Generator","icon":"🍺"},{"key":"fantasy_shop","title":"Fantasy Shop Name Generator","icon":"🏪"},{"key":"fantasy_town","title":"Fantasy Town Name Generator","icon":"🏘️"},{"key":"fantasy_city","title":"Fantasy City Name Generator","icon":"🏰"},{"key":"fantasy_country","title":"Fantasy Country Name Generator","icon":"🗺️"},{"key":"clan","title":"Clan Name Generator","icon":"🛡️"},{"key":"guild","title":"Guild Name Generator","icon":"⚜️"},{"key":"sword","title":"Sword Name Generator","icon":"⚔️"},{"key":"axe","title":"Axe Name Generator","icon":"🪓"},{"key":"hammer","title":"Hammer Name Generator","icon":"🔨"},{"key":"shield","title":"Shield Name Generator","icon":"🛡️"},{"key":"wand","title":"Wand Name Generator","icon":"🪄"},{"key":"poison","title":"Poison Name Generator","icon":"☠️"},{"key":"assassin","title":"Assassin Name Generator","icon":"🗡️"},{"key":"swamp_witch","title":"Swamp Witch Name Generator","icon":"🧙‍♀️"},{"key":"dnd_human","title":"D&D Human Name Generator","icon":"🧑"}],"folklore":[{"key":"fairy","title":"Fairy Name Generator","icon":"🧚"},{"key":"fairy_town","title":"Fairy Town Name Generator","icon":"🧚‍♀️"},{"key":"werewolf","title":"Werewolf Name Generator","icon":"🐺"},{"key":"zombie","title":"Zombie Name Generator","icon":"🧟"},{"key":"ghost","title":"Ghost Name Generator","icon":"👻"}],"music":[{"key":"band","title":"Band Name Generator","icon":"🎸"},{"key":"dungeon_synth","title":"Dungeon Synth Name Generator","icon":"🎵"},{"key":"event","title":"Event Name Generator","icon":"🎉"},{"key":"album","title":"Album Name Generator","icon":"💿"},{"key":"song_title","title":"Song Title Generator","icon":"🎵"},{"key":"rapper","title":"Rapper Name Generator","icon":"🎤"},{"key":"stage_name","title":"Stage Name Generator","icon":"🎭"},{"key":"wu_tang","title":"Wu-Tang Name Generator","icon":"🐝"},{"key":"dj","title":"DJ Name Generator","icon":"🎧"},{"key":"podcast","title":"Podcast Name Generator","icon":"🎙️"}],"objects":[{"key":"shield","title":"Shield Name Generator","icon":"🛡️"},{"key":"poison","title":"Poison Name Generator","icon":"☠️"},{"key":"sword","title":"Sword Name Generator","icon":"⚔️"},{"key":"axe","title":"Axe Name Generator","icon":"🪓"},{"key":"hammer","title":"Hammer Name Generator","icon":"🔨"},{"key":"wand","title":"Wand Name Generator","icon":"🪄"},{"key":"funny_sword","title":"Funny Minecraft Sword Name Generator","icon":"🗡️"},{"key":"elven_sword","title":"Elven Sword Name Generator","icon":"⚔️"},{"key":"japanese_sword","title":"Japanese Sword Name Generator","icon":"⚔️"},{"key":"game_of_thrones_sword","title":"Game of Thrones Sword Name Generator","icon":"⚔️"}],"organizations":[{"key":"business","title":"Business Name Generator","icon":"💼"},{"key":"clan","title":"Clan Name Generator","icon":"🛡️"},{"key":"company","title":"Company Name Generator","icon":"🏢"},{"key":"guild","title":"Guild Name Generator","icon":"⚜️"},{"key":"brand","title":"Brand Name Generator","icon":"🏷️"}],"people":[{"key":"name_combiner","title":"Name Combiner","icon":"💞"},{"key":"gamertag","title":"Gamertag Generator","icon":"🎮"},{"key":"epithet","title":"Epithet Generator","icon":"🏷️"},{"key":"assassin","title":"Assassin Name Generator","icon":"🗡️"},{"key":"vampire","title":"Vampire Name Generator","icon":"🧛"},{"key":"knight","title":"Knight Name Generator","icon":"🛡️"},{"key":"paladin","title":"Paladin Name Generator","icon":"✨"},{"key":"pirate","title":"Pirate Name Generator","icon":"🏴‍☠️"},{"key":"viking","title":"Viking Name Generator","icon":"⛵"},{"key":"superhero","title":"Superhero Name Generator","icon":"🦸"},{"key":"villain","title":"Villain Name Generator","icon":"🦹"}],"places":[{"key":"tavern","title":"Tavern Name Generator","icon":"🍺"},{"key":"fantasy_shop","title":"Fantasy Shop Name Generator","icon":"🏪"},{"key":"fantasy_town","title":"Fantasy Town Name Generator","icon":"🏘️"},{"key":"fantasy_country","title":"Fantasy Country Name Generator","icon":"🗺️"},{"key":"cafe","title":"Cafe Name Generator","icon":"☕"},{"key":"fantasy_city","title":"Fantasy City Name Generator","icon":"🏰"}],"elder_scrolls":[{"key":"skyrim_orc","title":"Skyrim Orc Name Generator","icon":"🧌"},{"key":"nord","title":"Nord Name Generator","icon":"🪓"},{"key":"khajiit","title":"Khajiit Name Generator","icon":"🐱"},{"key":"dunmer","title":"Dunmer Name Generator","icon":"🌋"},{"key":"altmer","title":"Altmer Name Generator","icon":"🌞"},{"key":"argonian","title":"Argonian Name Generator","icon":"🦎"}],"warcraft":[{"key":"wow_orc","title":"World of Warcraft Orc Name Generator","icon":"🧌"},{"key":"night_elf","title":"Night Elf Name Generator","icon":"🌙"},{"key":"blood_elf","title":"Blood Elf Name Generator","icon":"🔥"},{"key":"wow_troll","title":"World of Warcraft Troll Name Generator","icon":"🗿"}],"warhammer":[{"key":"warhammer","title":"Warhammer 40k Name Generator","icon":"💀"},{"key":"warhammer_orc","title":"Warhammer Orc Name Generator","icon":"🧌"},{"key":"ogryn","title":"Ogryn Name Generator","icon":"🧌"}],"scifi":[{"key":"alien","title":"Alien Name Generator","icon":"👽"},{"key":"cyberpunk","title":"Cyberpunk Name Generator","icon":"🌃"},{"key":"robot","title":"Robot Name Generator","icon":"🤖"},{"key":"spaceship","title":"Spaceship Name Generator","icon":"🚀"},{"key":"star_wars","title":"Star Wars Name Generator","icon":"⚔️"}],"witch":[{"key":"swamp_witch","title":"Swamp Witch Name Generator","icon":"🧙‍♀️"},{"key":"harry_potter_witch","title":"Harry Potter Witch Name Generator","icon":"⚡"},{"key":"hogwarts_legacy_witch","title":"Hogwarts Legacy Witch Name Generator","icon":"🪄"},{"key":"path_of_exile_witch","title":"Path of Exile Witch Name Generator","icon":"🔮"},{"key":"wizard","title":"Wizard Name Generator","icon":"🧙"},{"key":"fairy","title":"Fairy Name Generator","icon":"🧚"}],"historical":[{"key":"roman","title":"Roman Name Generator","icon":"🏛️"},{"key":"ancient_greek","title":"Ancient Greek Name Generator","icon":"🏺"},{"key":"anglo_saxon","title":"Anglo-Saxon Name Generator","icon":"🛡️"},{"key":"medieval","title":"Medieval Name Generator","icon":"🏰"},{"key":"victorian","title":"Victorian Name Generator","icon":"🎩"},{"key":"old_west","title":"Old West Name Generator","icon":"🤠"}],"pop_culture":[{"key":"elden_ring","title":"Elden Ring Name Generator","icon":"💍"},{"key":"star_wars","title":"Star Wars Name Generator","icon":"⚔️"},{"key":"bg3","title":"Baldur's Gate 3 Name Generator","icon":"🎲"},{"key":"harry_potter_witch","title":"Harry Potter Witch Name Generator","icon":"⚡"},{"key":"hogwarts_legacy_witch","title":"Hogwarts Legacy Witch Name Generator","icon":"🪄"},{"key":"hogwarts_legacy_wizard","title":"Hogwarts Legacy Wizard Name Generator","icon":"🪄"},{"key":"skyrim_orc","title":"Skyrim Orc Name Generator","icon":"🧌"},{"key":"khajiit","title":"Khajiit Name Generator","icon":"🐱"},{"key":"nord","title":"Nord Name Generator","icon":"🪓"},{"key":"argonian","title":"Argonian Name Generator","icon":"🦎"},{"key":"altmer","title":"Altmer Name Generator","icon":"🌞"},{"key":"dunmer","title":"Dunmer Name Generator","icon":"🌋"},{"key":"warhammer","title":"Warhammer 40k Name Generator","icon":"💀"},{"key":"warhammer_orc","title":"Warhammer Orc Name Generator","icon":"🧌"},{"key":"wow_orc","title":"World of Warcraft Orc Name Generator","icon":"🧌"},{"key":"wow_troll","title":"World of Warcraft Troll Name Generator","icon":"🗿"},{"key":"blood_elf","title":"Blood Elf Name Generator","icon":"🔥"},{"key":"night_elf","title":"Night Elf Name Generator","icon":"🌙"},{"key":"lotr_orc","title":"LOTR Orc Name Generator","icon":"🧌"},{"key":"lotr_wizard","title":"LOTR Wizard Name Generator","icon":"🧙"},{"key":"hobbit","title":"Hobbit Name Generator","icon":"🏡"},{"key":"ogryn","title":"Ogryn Name Generator","icon":"🧌"},{"key":"funny_sword","title":"Funny Minecraft Sword Name Generator","icon":"🗡️"},{"key":"game_of_thrones","title":"Game of Thrones Name Generator","icon":"👑"},{"key":"game_of_thrones_sword","title":"Game of Thrones Sword Name Generator","icon":"⚔️"}]}</script>
+    <script type="application/json" id="generator-index">{"concepts":[{"key":"blog","title":"Blog Name Generator","slug":"blog-name-generator"},{"key":"brand","title":"Brand Name Generator","slug":"brand-name-generator"},{"key":"youtube","title":"YouTube Channel Name Generator","slug":"youtube-channel-name-generator"}],"events":[{"key":"event","title":"Event Name Generator","slug":"event-name-generator"}],"fantasy":[{"key":"tiefling","title":"Tiefling Name Generator","slug":"tiefling-name-generator"},{"key":"dragonborn","title":"Dragonborn Name Generator","slug":"dragonborn-name-generator"},{"key":"halfling","title":"Halfling Name Generator","slug":"halfling-name-generator"},{"key":"gnome","title":"Gnome Name Generator","slug":"gnome-name-generator"},{"key":"elf","title":"Elf Name Generator","slug":"elf-name-generator"},{"key":"half_elf","title":"Half-Elf Name Generator","slug":"half-elf-name-generator"},{"key":"dwarf","title":"Dwarf Name Generator","slug":"dwarf-name-generator"},{"key":"dragon","title":"Dragon Name Generator","slug":"dragon-name-generator"},{"key":"wizard","title":"Wizard Name Generator","slug":"wizard-name-generator"},{"key":"orc","title":"Orc Name Generator","slug":"orc-name-generator"},{"key":"skyrim_orc","title":"Skyrim Orc Name Generator","slug":"skyrim-orc-name-generator"},{"key":"warhammer_orc","title":"Warhammer Orc Name Generator","slug":"warhammer-orc-name-generator"},{"key":"wow_orc","title":"World of Warcraft Orc Name Generator","slug":"wow-orc-name-generator"},{"key":"lotr_orc","title":"LOTR Orc Name Generator","slug":"lotr-orc-name-generator"},{"key":"half_orc","title":"Half-Orc Name Generator","slug":"half-orc-name-generator"},{"key":"goblin","title":"Goblin Name Generator","slug":"goblin-name-generator"},{"key":"kobold","title":"Kobold Name Generator","slug":"kobold-name-generator"},{"key":"lizardfolk","title":"Lizardfolk Name Generator","slug":"lizardfolk-name-generator"},{"key":"githyanki","title":"Githyanki Name Generator","slug":"githyanki-name-generator"},{"key":"fantasy_town","title":"Fantasy Town Name Generator","slug":"fantasy-town-name-generator"},{"key":"fantasy_country","title":"Fantasy Country Name Generator","slug":"fantasy-country-name-generator"},{"key":"swamp_witch","title":"Swamp Witch Name Generator","slug":"swamp-witch-name-generator"},{"key":"dnd_fantasy","title":"D&D Fantasy Name Generator","slug":"dnd-fantasy-name-generator"},{"key":"path_of_exile_witch","title":"Path of Exile Witch Name Generator","slug":"path-of-exile-witch-name-generator"},{"key":"funny_wizard","title":"Funny Wizard Name Generator","slug":"funny-wizard-name-generator"},{"key":"high_elf","title":"High Elf Name Generator","slug":"high-elf-name-generator"},{"key":"wood_elf","title":"Wood Elf Name Generator","slug":"wood-elf-name-generator"},{"key":"dark_elf","title":"Dark Elf Name Generator","slug":"dark-elf-name-generator"},{"key":"clan","title":"Clan Name Generator","slug":"clan-name-generator"},{"key":"demon","title":"Demon Name Generator","slug":"demon-name-generator"},{"key":"demon_epithet","title":"Demon Epithet Generator","slug":"demon-epithet-generator"},{"key":"fantasy_city","title":"Fantasy City Name Generator","slug":"fantasy-city-name-generator"},{"key":"angel","title":"Angel Name Generator","slug":"angel-name-generator"},{"key":"alien","title":"Alien Name Generator","slug":"alien-name-generator"},{"key":"fairy","title":"Fairy Name Generator","slug":"fairy-name-generator"},{"key":"fairy_town","title":"Fairy Town Name Generator","slug":"fairy-town-name-generator"},{"key":"elven_sword","title":"Elven Sword Name Generator","slug":"elven-sword-name-generator"}],"dnd":[{"key":"tiefling","title":"Tiefling Name Generator","slug":"tiefling-name-generator"},{"key":"bg3","title":"Baldur's Gate 3 Name Generator","slug":"baldurs-gate-3-name-generator"},{"key":"dragonborn","title":"Dragonborn Name Generator","slug":"dragonborn-name-generator"},{"key":"halfling","title":"Halfling Name Generator","slug":"halfling-name-generator"},{"key":"gnome","title":"Gnome Name Generator","slug":"gnome-name-generator"},{"key":"dnd_fantasy","title":"D&D Fantasy Name Generator","slug":"dnd-fantasy-name-generator"},{"key":"elf","title":"Elf Name Generator","slug":"elf-name-generator"},{"key":"half_elf","title":"Half-Elf Name Generator","slug":"half-elf-name-generator"},{"key":"high_elf","title":"High Elf Name Generator","slug":"high-elf-name-generator"},{"key":"wood_elf","title":"Wood Elf Name Generator","slug":"wood-elf-name-generator"},{"key":"dark_elf","title":"Dark Elf Name Generator","slug":"dark-elf-name-generator"},{"key":"dwarf","title":"Dwarf Name Generator","slug":"dwarf-name-generator"},{"key":"half_orc","title":"Half-Orc Name Generator","slug":"half-orc-name-generator"},{"key":"goblin","title":"Goblin Name Generator","slug":"goblin-name-generator"},{"key":"kobold","title":"Kobold Name Generator","slug":"kobold-name-generator"},{"key":"lizardfolk","title":"Lizardfolk Name Generator","slug":"lizardfolk-name-generator"},{"key":"githyanki","title":"Githyanki Name Generator","slug":"githyanki-name-generator"},{"key":"orc","title":"Orc Name Generator","slug":"orc-name-generator"},{"key":"dragon","title":"Dragon Name Generator","slug":"dragon-name-generator"},{"key":"wizard","title":"Wizard Name Generator","slug":"wizard-name-generator"},{"key":"paladin","title":"Paladin Name Generator","slug":"paladin-name-generator"},{"key":"knight","title":"Knight Name Generator","slug":"knight-name-generator"},{"key":"demon","title":"Demon Name Generator","slug":"demon-name-generator"},{"key":"angel","title":"Angel Name Generator","slug":"angel-name-generator"},{"key":"fairy","title":"Fairy Name Generator","slug":"fairy-name-generator"},{"key":"epithet","title":"Epithet Generator","slug":"epithet-generator"},{"key":"demon_epithet","title":"Demon Epithet Generator","slug":"demon-epithet-generator"},{"key":"tavern","title":"Tavern Name Generator","slug":"tavern-name-generator"},{"key":"fantasy_shop","title":"Fantasy Shop Name Generator","slug":"fantasy-shop-name-generator"},{"key":"fantasy_town","title":"Fantasy Town Name Generator","slug":"fantasy-town-name-generator"},{"key":"fantasy_city","title":"Fantasy City Name Generator","slug":"fantasy-city-name-generator"},{"key":"fantasy_country","title":"Fantasy Country Name Generator","slug":"fantasy-country-name-generator"},{"key":"clan","title":"Clan Name Generator","slug":"clan-name-generator"},{"key":"guild","title":"Guild Name Generator","slug":"guild-name-generator"},{"key":"sword","title":"Sword Name Generator","slug":"sword-name-generator"},{"key":"axe","title":"Axe Name Generator","slug":"axe-name-generator"},{"key":"hammer","title":"Hammer Name Generator","slug":"hammer-name-generator"},{"key":"shield","title":"Shield Name Generator","slug":"shield-name-generator"},{"key":"wand","title":"Wand Name Generator","slug":"wand-name-generator"},{"key":"poison","title":"Poison Name Generator","slug":"poison-name-generator"},{"key":"assassin","title":"Assassin Name Generator","slug":"assassin-name-generator"},{"key":"swamp_witch","title":"Swamp Witch Name Generator","slug":"swamp-witch-name-generator"},{"key":"dnd_human","title":"D&D Human Name Generator","slug":"dnd-human-name-generator"}],"folklore":[{"key":"fairy","title":"Fairy Name Generator","slug":"fairy-name-generator"},{"key":"fairy_town","title":"Fairy Town Name Generator","slug":"fairy-town-name-generator"},{"key":"werewolf","title":"Werewolf Name Generator","slug":"werewolf-name-generator"},{"key":"zombie","title":"Zombie Name Generator","slug":"zombie-name-generator"},{"key":"ghost","title":"Ghost Name Generator","slug":"ghost-name-generator"}],"music":[{"key":"band","title":"Band Name Generator","slug":"band-name-generator"},{"key":"dungeon_synth","title":"Dungeon Synth Name Generator","slug":"dungeon-synth-name-generator"},{"key":"event","title":"Event Name Generator","slug":"event-name-generator"},{"key":"album","title":"Album Name Generator","slug":"album-name-generator"},{"key":"song_title","title":"Song Title Generator","slug":"song-title-generator"},{"key":"rapper","title":"Rapper Name Generator","slug":"rapper-name-generator"},{"key":"stage_name","title":"Stage Name Generator","slug":"stage-name-generator"},{"key":"wu_tang","title":"Wu-Tang Name Generator","slug":"wu-tang-name-generator"},{"key":"dj","title":"DJ Name Generator","slug":"dj-name-generator"},{"key":"podcast","title":"Podcast Name Generator","slug":"podcast-name-generator"}],"objects":[{"key":"shield","title":"Shield Name Generator","slug":"shield-name-generator"},{"key":"poison","title":"Poison Name Generator","slug":"poison-name-generator"},{"key":"sword","title":"Sword Name Generator","slug":"sword-name-generator"},{"key":"axe","title":"Axe Name Generator","slug":"axe-name-generator"},{"key":"hammer","title":"Hammer Name Generator","slug":"hammer-name-generator"},{"key":"wand","title":"Wand Name Generator","slug":"wand-name-generator"},{"key":"funny_sword","title":"Funny Minecraft Sword Name Generator","slug":"funny-minecraft-sword-name-generator"},{"key":"elven_sword","title":"Elven Sword Name Generator","slug":"elven-sword-name-generator"},{"key":"japanese_sword","title":"Japanese Sword Name Generator","slug":"japanese-sword-name-generator"},{"key":"game_of_thrones_sword","title":"Game of Thrones Sword Name Generator","slug":"game-of-thrones-sword-name-generator"}],"organizations":[{"key":"business","title":"Business Name Generator","slug":"business-name-generator"},{"key":"clan","title":"Clan Name Generator","slug":"clan-name-generator"},{"key":"company","title":"Company Name Generator","slug":"company-name-generator"},{"key":"guild","title":"Guild Name Generator","slug":"guild-name-generator"},{"key":"brand","title":"Brand Name Generator","slug":"brand-name-generator"}],"people":[{"key":"name_combiner","title":"Name Combiner","slug":"name-combiner"},{"key":"gamertag","title":"Gamertag Generator","slug":"gamertag-generator"},{"key":"epithet","title":"Epithet Generator","slug":"epithet-generator"},{"key":"assassin","title":"Assassin Name Generator","slug":"assassin-name-generator"},{"key":"vampire","title":"Vampire Name Generator","slug":"vampire-name-generator"},{"key":"knight","title":"Knight Name Generator","slug":"knight-name-generator"},{"key":"paladin","title":"Paladin Name Generator","slug":"paladin-name-generator"},{"key":"pirate","title":"Pirate Name Generator","slug":"pirate-name-generator"},{"key":"viking","title":"Viking Name Generator","slug":"viking-name-generator"},{"key":"superhero","title":"Superhero Name Generator","slug":"superhero-name-generator"},{"key":"villain","title":"Villain Name Generator","slug":"villain-name-generator"}],"places":[{"key":"tavern","title":"Tavern Name Generator","slug":"tavern-name-generator"},{"key":"fantasy_shop","title":"Fantasy Shop Name Generator","slug":"fantasy-shop-name-generator"},{"key":"fantasy_town","title":"Fantasy Town Name Generator","slug":"fantasy-town-name-generator"},{"key":"fantasy_country","title":"Fantasy Country Name Generator","slug":"fantasy-country-name-generator"},{"key":"cafe","title":"Cafe Name Generator","slug":"cafe-name-generator"},{"key":"fantasy_city","title":"Fantasy City Name Generator","slug":"fantasy-city-name-generator"}],"elder_scrolls":[{"key":"skyrim_orc","title":"Skyrim Orc Name Generator","slug":"skyrim-orc-name-generator"},{"key":"nord","title":"Nord Name Generator","slug":"nord-name-generator"},{"key":"khajiit","title":"Khajiit Name Generator","slug":"khajiit-name-generator"},{"key":"dunmer","title":"Dunmer Name Generator","slug":"dunmer-name-generator"},{"key":"altmer","title":"Altmer Name Generator","slug":"altmer-name-generator"},{"key":"argonian","title":"Argonian Name Generator","slug":"argonian-name-generator"}],"warcraft":[{"key":"wow_orc","title":"World of Warcraft Orc Name Generator","slug":"wow-orc-name-generator"},{"key":"night_elf","title":"Night Elf Name Generator","slug":"night-elf-name-generator"},{"key":"blood_elf","title":"Blood Elf Name Generator","slug":"blood-elf-name-generator"},{"key":"wow_troll","title":"World of Warcraft Troll Name Generator","slug":"wow-troll-name-generator"}],"warhammer":[{"key":"warhammer","title":"Warhammer 40k Name Generator","slug":"warhammer-name-generator"},{"key":"warhammer_orc","title":"Warhammer Orc Name Generator","slug":"warhammer-orc-name-generator"},{"key":"ogryn","title":"Ogryn Name Generator","slug":"ogryn-name-generator"}],"scifi":[{"key":"alien","title":"Alien Name Generator","slug":"alien-name-generator"},{"key":"cyberpunk","title":"Cyberpunk Name Generator","slug":"cyberpunk-name-generator"},{"key":"robot","title":"Robot Name Generator","slug":"robot-name-generator"},{"key":"spaceship","title":"Spaceship Name Generator","slug":"spaceship-name-generator"},{"key":"star_wars","title":"Star Wars Name Generator","slug":"star-wars-name-generator"}],"witch":[{"key":"swamp_witch","title":"Swamp Witch Name Generator","slug":"swamp-witch-name-generator"},{"key":"harry_potter_witch","title":"Harry Potter Witch Name Generator","slug":"harry-potter-witch-name-generator"},{"key":"hogwarts_legacy_witch","title":"Hogwarts Legacy Witch Name Generator","slug":"hogwarts-legacy-witch-name-generator"},{"key":"path_of_exile_witch","title":"Path of Exile Witch Name Generator","slug":"path-of-exile-witch-name-generator"},{"key":"wizard","title":"Wizard Name Generator","slug":"wizard-name-generator"},{"key":"fairy","title":"Fairy Name Generator","slug":"fairy-name-generator"}],"historical":[{"key":"roman","title":"Roman Name Generator","slug":"roman-name-generator"},{"key":"ancient_greek","title":"Ancient Greek Name Generator","slug":"ancient-greek-name-generator"},{"key":"anglo_saxon","title":"Anglo-Saxon Name Generator","slug":"anglo-saxon-name-generator"},{"key":"medieval","title":"Medieval Name Generator","slug":"medieval-name-generator"},{"key":"victorian","title":"Victorian Name Generator","slug":"victorian-name-generator"},{"key":"old_west","title":"Old West Name Generator","slug":"old-west-name-generator"}],"pop_culture":[{"key":"elden_ring","title":"Elden Ring Name Generator","slug":"elden-ring-name-generator"},{"key":"star_wars","title":"Star Wars Name Generator","slug":"star-wars-name-generator"},{"key":"bg3","title":"Baldur's Gate 3 Name Generator","slug":"baldurs-gate-3-name-generator"},{"key":"harry_potter_witch","title":"Harry Potter Witch Name Generator","slug":"harry-potter-witch-name-generator"},{"key":"hogwarts_legacy_witch","title":"Hogwarts Legacy Witch Name Generator","slug":"hogwarts-legacy-witch-name-generator"},{"key":"hogwarts_legacy_wizard","title":"Hogwarts Legacy Wizard Name Generator","slug":"hogwarts-legacy-wizard-name-generator"},{"key":"skyrim_orc","title":"Skyrim Orc Name Generator","slug":"skyrim-orc-name-generator"},{"key":"khajiit","title":"Khajiit Name Generator","slug":"khajiit-name-generator"},{"key":"nord","title":"Nord Name Generator","slug":"nord-name-generator"},{"key":"argonian","title":"Argonian Name Generator","slug":"argonian-name-generator"},{"key":"altmer","title":"Altmer Name Generator","slug":"altmer-name-generator"},{"key":"dunmer","title":"Dunmer Name Generator","slug":"dunmer-name-generator"},{"key":"warhammer","title":"Warhammer 40k Name Generator","slug":"warhammer-name-generator"},{"key":"warhammer_orc","title":"Warhammer Orc Name Generator","slug":"warhammer-orc-name-generator"},{"key":"wow_orc","title":"World of Warcraft Orc Name Generator","slug":"wow-orc-name-generator"},{"key":"wow_troll","title":"World of Warcraft Troll Name Generator","slug":"wow-troll-name-generator"},{"key":"blood_elf","title":"Blood Elf Name Generator","slug":"blood-elf-name-generator"},{"key":"night_elf","title":"Night Elf Name Generator","slug":"night-elf-name-generator"},{"key":"lotr_orc","title":"LOTR Orc Name Generator","slug":"lotr-orc-name-generator"},{"key":"lotr_wizard","title":"LOTR Wizard Name Generator","slug":"lotr-wizard-name-generator"},{"key":"hobbit","title":"Hobbit Name Generator","slug":"hobbit-name-generator"},{"key":"ogryn","title":"Ogryn Name Generator","slug":"ogryn-name-generator"},{"key":"funny_sword","title":"Funny Minecraft Sword Name Generator","slug":"funny-minecraft-sword-name-generator"},{"key":"game_of_thrones","title":"Game of Thrones Name Generator","slug":"game-of-thrones-name-generator"},{"key":"game_of_thrones_sword","title":"Game of Thrones Sword Name Generator","slug":"game-of-thrones-sword-name-generator"}]}</script>
 <!-- /BUILD:generator-index -->
     <script src="lib/recipe-engine.js"></script>
     <script src="lib/page.js"></script>
+    <script src="lib/outline.js"></script>
     <script>
-        // Ultimate Name Generator: pick a category, then a generator, whose
-        // names are loaded from data/generators/<key>.json when chosen.
-        const index = JSON.parse(document.getElementById('generator-index').textContent);
-        const mainCategorySelect = document.getElementById('main-category');
-        const mainGeneratorSelect = document.getElementById('main-generator');
-        const filterContainer = document.getElementById('filter-container');
-        const generateBtn = document.getElementById('main-generate-btn');
-        const resultsDiv = document.getElementById('main-results');
-        const escapeHtml = NamePage.escapeHtml;
+        // Try any generator: pick a category, then a generator, whose names are
+        // loaded from data/generators/<key>.json when chosen.
+        (function () {
+            const index = JSON.parse(document.getElementById('generator-index').textContent);
+            const panel = document.getElementById('try');
+            const categoryButtons = document.querySelectorAll('#main-category [data-category]');
+            const generatorSelect = document.getElementById('main-generator');
+            const generateBtn = document.getElementById('main-generate-btn');
+            const results = document.getElementById('main-results');
+            const openFull = document.getElementById('open-full');
+            const escapeHtml = NamePage.escapeHtml;
+            let filterContainer = document.getElementById('filter-container');
+            let loading = 0;
 
-        mainCategorySelect.addEventListener('change', () => {
-            const generators = index[mainCategorySelect.value] || [];
-            mainGeneratorSelect.innerHTML = '<option value="">Select a generator...</option>' +
-                generators.map(gen => `<option value="${escapeHtml(gen.key)}">${gen.icon} ${escapeHtml(gen.title)}</option>`).join('');
-            mainGeneratorSelect.disabled = generators.length === 0;
-            filterContainer.innerHTML = '';
-            generateBtn.disabled = true;
-        });
-
-        mainGeneratorSelect.addEventListener('change', async () => {
-            const key = mainGeneratorSelect.value;
-            filterContainer.innerHTML = '';
-            generateBtn.disabled = true;
-            if (!key) return;
-            try {
-                const response = await fetch(`data/generators/${encodeURIComponent(key)}.json`);
-                if (!response.ok) throw new Error(`HTTP ${response.status}`);
-                const config = await response.json();
-                if (mainGeneratorSelect.value !== key) return; // changed while loading
-                filterContainer.innerHTML = NamePage.filtersHtml(config.filters, 'control-group');
-                NamePage.mountGenerator({
-                    config,
-                    root: filterContainer,
-                    button: generateBtn,
-                    results: resultsDiv,
-                    getCount: () => Math.min(50, Math.max(1, parseInt(document.getElementById('main-count').value, 10) || 10)),
-                });
-                generateBtn.disabled = false;
-            } catch (error) {
-                console.error('Could not load generator:', error);
-                resultsDiv.innerHTML = '<p class="error">Error loading this generator. Please try again.</p>';
+            function chooseCategory(slug, generatorKey) {
+                categoryButtons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.category === slug)));
+                const generators = index[slug] || [];
+                generatorSelect.innerHTML = generators.map(g => `<option value="${escapeHtml(g.key)}">${escapeHtml(g.title)}</option>`).join('');
+                if (generatorKey && generators.some(g => g.key === generatorKey)) generatorSelect.value = generatorKey;
+                loadGenerator();
             }
-        });
+
+            async function loadGenerator() {
+                const key = generatorSelect.value;
+                const ticket = ++loading;
+                generateBtn.disabled = true;
+                if (!key) return;
+                try {
+                    const response = await fetch(`data/generators/${encodeURIComponent(key)}.json`);
+                    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                    const config = await response.json();
+                    if (ticket !== loading) return; // changed while loading
+                    // A fresh box each time, so old listeners don't pile up
+                    const fresh = filterContainer.cloneNode(false);
+                    fresh.className = Object.keys(config.filters || {}).length > 1 ? 'gen-grid' : '';
+                    fresh.innerHTML = NamePage.filtersHtml(config.filters, { prefill: config.recipe === 'blend' });
+                    filterContainer.replaceWith(fresh);
+                    filterContainer = fresh;
+                    const entry = Object.values(index).flat().find(g => g.key === key);
+                    if (entry) { openFull.href = `posts/${entry.slug}.html`; openFull.textContent = `Open the full ${entry.title} →`; }
+                    const widget = NamePage.mountGenerator({
+                        config,
+                        root: filterContainer,
+                        button: generateBtn,
+                        results,
+                        more: document.getElementById('more'),
+                        done: document.getElementById('done'),
+                    });
+                    generateBtn.disabled = false;
+                    widget.generate();
+                } catch (error) {
+                    console.error('Could not load generator:', error);
+                    results.innerHTML = '<p class="results-error">This generator didn\'t load. Please try again.</p>';
+                }
+            }
+
+            categoryButtons.forEach(b => b.addEventListener('click', () => chooseCategory(b.dataset.category)));
+            generatorSelect.addEventListener('change', loadGenerator);
+
+            // Open on a popular generator, in the first category that lists it
+            const start = panel.dataset.start;
+            const startCategory = Object.keys(index).find(slug => index[slug].some(g => g.key === start) &&
+                document.querySelector(`#main-category [data-category="${slug}"]`));
+            chooseCategory(startCategory || (categoryButtons[0] && categoryButtons[0].dataset.category), start);
+            const pressed = document.querySelector('#main-category [aria-pressed="true"]');
+            if (pressed) pressed.scrollIntoView({ block: 'nearest', inline: 'center' });
+        })();
     </script>
 </body>
 </html>
-

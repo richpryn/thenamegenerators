@@ -14,379 +14,379 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="styles/main.css">
-    <style>
-        .sitemap-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        .sitemap-section {
-            margin-bottom: 3rem;
-        }
-        .sitemap-section h2 {
-            color: #333;
-            border-bottom: 2px solid #4a90e2;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        .sitemap-links {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 1rem;
-        }
-        .sitemap-links a {
-            display: block;
-            padding: 0.5rem;
-            color: #4a90e2;
-            text-decoration: none;
-            border-left: 3px solid #4a90e2;
-            padding-left: 1rem;
-            transition: all 0.3s;
-        }
-        .sitemap-links a:hover {
-            background-color: #f5f5f5;
-            padding-left: 1.5rem;
-        }
-        .sitemap-category {
-            margin-top: 2rem;
-        }
-        .sitemap-category h3 {
-            color: #666;
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-        }
-    </style>
+    <link rel="preload" href="fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="all-generators.html">All Generators</a>
-                <a href="sitemap.html">Site Map</a>
-            </div>
-        </div>
-    </nav>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="categories/events-names.html">Event Names</a></li>
+              <li><a href="categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="categories/music-names.html">Music Names</a></li>
+              <li><a href="categories/objects-names.html">Object Names</a></li>
+              <li><a href="categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="categories/people-names.html">Character Names</a></li>
+              <li><a href="categories/places-names.html">Place Names</a></li>
+              <li><a href="categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="categories/witch-names.html">Witch Names</a></li>
+              <li><a href="categories/historical-names.html">Historical Names</a></li>
+              <li><a href="categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
 
-    <div class="sitemap-container">
-        <header>
-            <h1>Site Map</h1>
-            <p>Complete listing of all pages on The Name Generators</p>
-        </header>
+    <div class="wrap">
+        <main id="main" class="sitemap">
+            <div class="titlerow"><h1>Site <span class="hl">Map</span></h1></div>
+            <p class="lede">Every page on The Name Generators.</p>
 
-        <div class="sitemap-section">
-            <h2>Main Pages</h2>
-            <div class="sitemap-links">
-                <a href="https://thenamegenerators.com/">Home</a>
-                <a href="https://thenamegenerators.com/all-generators.html">All Generators</a>
-                <a href="https://thenamegenerators.com/about.html">About</a>
-                <a href="https://thenamegenerators.com/sitemap.html">Site Map</a>
-            </div>
-        </div>
+            <section class="section">
+                <h2>Main pages</h2>
+                <ul class="sitemap-links">
+                    <li><a href="https://thenamegenerators.com/">Home</a></li>
+                    <li><a href="https://thenamegenerators.com/all-generators.html">All Generators</a></li>
+                    <li><a href="https://thenamegenerators.com/about.html">About</a></li>
+                    <li><a href="https://thenamegenerators.com/sitemap.html">Site Map</a></li>
+                </ul>
+            </section>
 
-        <div class="sitemap-section">
-            <h2>Category Pages</h2>
-            <div class="sitemap-links">
-                <a href="https://thenamegenerators.com/categories/concepts-names.html">💭 Blogs &amp; Brands</a>
-                <a href="https://thenamegenerators.com/categories/events-names.html">🎉 Events</a>
-                <a href="https://thenamegenerators.com/categories/fantasy-names.html">⚔️ Fantasy</a>
-                <a href="https://thenamegenerators.com/categories/dnd-names.html">🎲 D&amp;D</a>
-                <a href="https://thenamegenerators.com/categories/folklore-names.html">📜 Folklore</a>
-                <a href="https://thenamegenerators.com/categories/music-names.html">🎵 Music</a>
-                <a href="https://thenamegenerators.com/categories/objects-names.html">⚔️ Objects</a>
-                <a href="https://thenamegenerators.com/categories/organizations-names.html">🏛️ Organisations</a>
-                <a href="https://thenamegenerators.com/categories/people-names.html">👥 Characters</a>
-                <a href="https://thenamegenerators.com/categories/places-names.html">🗺️ Places</a>
-                <a href="https://thenamegenerators.com/categories/elder_scrolls-names.html">🐉 Elder Scrolls</a>
-                <a href="https://thenamegenerators.com/categories/warcraft-names.html">🪓 Warcraft</a>
-                <a href="https://thenamegenerators.com/categories/warhammer-names.html">💀 Warhammer</a>
-                <a href="https://thenamegenerators.com/categories/scifi-names.html">🚀 Sci-Fi</a>
-                <a href="https://thenamegenerators.com/categories/witch-names.html">🧙‍♀️ Witches</a>
-                <a href="https://thenamegenerators.com/categories/historical-names.html">🏺 Historical</a>
-                <a href="https://thenamegenerators.com/categories/pop_culture-names.html">🎬 Pop Culture</a>
-            </div>
-        </div>
+            <section class="section">
+                <h2>Category pages</h2>
+                <ul class="sitemap-links">
+                    <li><a href="https://thenamegenerators.com/categories/concepts-names.html">Blogs &amp; Brands</a></li>
+                    <li><a href="https://thenamegenerators.com/categories/events-names.html">Events</a></li>
+                    <li><a href="https://thenamegenerators.com/categories/fantasy-names.html">Fantasy</a></li>
+                    <li><a href="https://thenamegenerators.com/categories/dnd-names.html">D&amp;D</a></li>
+                    <li><a href="https://thenamegenerators.com/categories/folklore-names.html">Folklore</a></li>
+                    <li><a href="https://thenamegenerators.com/categories/music-names.html">Music</a></li>
+                    <li><a href="https://thenamegenerators.com/categories/objects-names.html">Objects</a></li>
+                    <li><a href="https://thenamegenerators.com/categories/organizations-names.html">Organisations</a></li>
+                    <li><a href="https://thenamegenerators.com/categories/people-names.html">Characters</a></li>
+                    <li><a href="https://thenamegenerators.com/categories/places-names.html">Places</a></li>
+                    <li><a href="https://thenamegenerators.com/categories/elder_scrolls-names.html">Elder Scrolls</a></li>
+                    <li><a href="https://thenamegenerators.com/categories/warcraft-names.html">Warcraft</a></li>
+                    <li><a href="https://thenamegenerators.com/categories/warhammer-names.html">Warhammer</a></li>
+                    <li><a href="https://thenamegenerators.com/categories/scifi-names.html">Sci-Fi</a></li>
+                    <li><a href="https://thenamegenerators.com/categories/witch-names.html">Witches</a></li>
+                    <li><a href="https://thenamegenerators.com/categories/historical-names.html">Historical</a></li>
+                    <li><a href="https://thenamegenerators.com/categories/pop_culture-names.html">Pop Culture</a></li>
+                </ul>
+            </section>
 
-        <div class="sitemap-section">
-            <h2>Name Generators</h2>
-            <div class="sitemap-category">
+            <section class="section">
+                <h2>Name generators</h2>
+
+            <div class="sitemap-group">
                 <h3>Blogs &amp; Brands</h3>
-                <div class="sitemap-links">
-                    <a href="https://thenamegenerators.com/posts/blog-name-generator.html">📝 Blog Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/brand-name-generator.html">🏷️ Brand Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/youtube-channel-name-generator.html">▶️ YouTube Channel Name Generator</a>
-                </div>
+                <ul class="sitemap-links">
+                    <li><a href="https://thenamegenerators.com/posts/blog-name-generator.html">Blog Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/brand-name-generator.html">Brand Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/youtube-channel-name-generator.html">YouTube Channel Name Generator</a></li>
+                </ul>
             </div>
-            <div class="sitemap-category">
+            <div class="sitemap-group">
                 <h3>Events</h3>
-                <div class="sitemap-links">
-                    <a href="https://thenamegenerators.com/posts/event-name-generator.html">🎉 Event Name Generator</a>
-                </div>
+                <ul class="sitemap-links">
+                    <li><a href="https://thenamegenerators.com/posts/event-name-generator.html">Event Name Generator</a></li>
+                </ul>
             </div>
-            <div class="sitemap-category">
+            <div class="sitemap-group">
                 <h3>Fantasy</h3>
-                <div class="sitemap-links">
-                    <a href="https://thenamegenerators.com/posts/tiefling-name-generator.html">😈 Tiefling Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/dragonborn-name-generator.html">🐲 Dragonborn Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/halfling-name-generator.html">🍀 Halfling Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/gnome-name-generator.html">🍄 Gnome Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/elf-name-generator.html">🧝 Elf Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/half-elf-name-generator.html">🧝‍♂️ Half-Elf Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/dwarf-name-generator.html">⛏️ Dwarf Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/dragon-name-generator.html">🐉 Dragon Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/wizard-name-generator.html">🧙 Wizard Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/orc-name-generator.html">🧌 Orc Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/skyrim-orc-name-generator.html">🧌 Skyrim Orc Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/warhammer-orc-name-generator.html">🧌 Warhammer Orc Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/wow-orc-name-generator.html">🧌 World of Warcraft Orc Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/lotr-orc-name-generator.html">🧌 LOTR Orc Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/half-orc-name-generator.html">🧌 Half-Orc Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/goblin-name-generator.html">👺 Goblin Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/kobold-name-generator.html">🦎 Kobold Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/lizardfolk-name-generator.html">🐊 Lizardfolk Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/githyanki-name-generator.html">⚔️ Githyanki Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/fantasy-town-name-generator.html">🏘️ Fantasy Town Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/fantasy-country-name-generator.html">🗺️ Fantasy Country Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/swamp-witch-name-generator.html">🧙‍♀️ Swamp Witch Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/dnd-fantasy-name-generator.html">⚔️ D&amp;D Fantasy Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/path-of-exile-witch-name-generator.html">🔮 Path of Exile Witch Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/funny-wizard-name-generator.html">🎩 Funny Wizard Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/high-elf-name-generator.html">👑 High Elf Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/wood-elf-name-generator.html">🌲 Wood Elf Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/dark-elf-name-generator.html">🌑 Dark Elf Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/clan-name-generator.html">🛡️ Clan Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/demon-name-generator.html">😈 Demon Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/demon-epithet-generator.html">🔥 Demon Epithet Generator</a>
-                    <a href="https://thenamegenerators.com/posts/fantasy-city-name-generator.html">🏰 Fantasy City Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/angel-name-generator.html">😇 Angel Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/alien-name-generator.html">👽 Alien Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/fairy-name-generator.html">🧚 Fairy Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/fairy-town-name-generator.html">🧚‍♀️ Fairy Town Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/elven-sword-name-generator.html">⚔️ Elven Sword Name Generator</a>
-                </div>
+                <ul class="sitemap-links">
+                    <li><a href="https://thenamegenerators.com/posts/tiefling-name-generator.html">Tiefling Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/dragonborn-name-generator.html">Dragonborn Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/halfling-name-generator.html">Halfling Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/gnome-name-generator.html">Gnome Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/elf-name-generator.html">Elf Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/half-elf-name-generator.html">Half-Elf Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/dwarf-name-generator.html">Dwarf Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/dragon-name-generator.html">Dragon Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/wizard-name-generator.html">Wizard Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/orc-name-generator.html">Orc Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/skyrim-orc-name-generator.html">Skyrim Orc Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/warhammer-orc-name-generator.html">Warhammer Orc Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/wow-orc-name-generator.html">World of Warcraft Orc Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/lotr-orc-name-generator.html">LOTR Orc Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/half-orc-name-generator.html">Half-Orc Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/goblin-name-generator.html">Goblin Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/kobold-name-generator.html">Kobold Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/lizardfolk-name-generator.html">Lizardfolk Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/githyanki-name-generator.html">Githyanki Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/fantasy-town-name-generator.html">Fantasy Town Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/fantasy-country-name-generator.html">Fantasy Country Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/swamp-witch-name-generator.html">Swamp Witch Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/dnd-fantasy-name-generator.html">D&amp;D Fantasy Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/path-of-exile-witch-name-generator.html">Path of Exile Witch Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/funny-wizard-name-generator.html">Funny Wizard Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/high-elf-name-generator.html">High Elf Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/wood-elf-name-generator.html">Wood Elf Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/dark-elf-name-generator.html">Dark Elf Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/clan-name-generator.html">Clan Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/demon-name-generator.html">Demon Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/demon-epithet-generator.html">Demon Epithet Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/fantasy-city-name-generator.html">Fantasy City Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/angel-name-generator.html">Angel Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/alien-name-generator.html">Alien Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/fairy-name-generator.html">Fairy Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/fairy-town-name-generator.html">Fairy Town Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/elven-sword-name-generator.html">Elven Sword Name Generator</a></li>
+                </ul>
             </div>
-            <div class="sitemap-category">
+            <div class="sitemap-group">
                 <h3>D&amp;D</h3>
-                <div class="sitemap-links">
-                    <a href="https://thenamegenerators.com/posts/tiefling-name-generator.html">😈 Tiefling Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/baldurs-gate-3-name-generator.html">🎲 Baldur&#039;s Gate 3 Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/dragonborn-name-generator.html">🐲 Dragonborn Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/halfling-name-generator.html">🍀 Halfling Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/gnome-name-generator.html">🍄 Gnome Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/dnd-fantasy-name-generator.html">⚔️ D&amp;D Fantasy Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/elf-name-generator.html">🧝 Elf Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/half-elf-name-generator.html">🧝‍♂️ Half-Elf Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/high-elf-name-generator.html">👑 High Elf Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/wood-elf-name-generator.html">🌲 Wood Elf Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/dark-elf-name-generator.html">🌑 Dark Elf Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/dwarf-name-generator.html">⛏️ Dwarf Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/half-orc-name-generator.html">🧌 Half-Orc Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/goblin-name-generator.html">👺 Goblin Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/kobold-name-generator.html">🦎 Kobold Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/lizardfolk-name-generator.html">🐊 Lizardfolk Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/githyanki-name-generator.html">⚔️ Githyanki Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/orc-name-generator.html">🧌 Orc Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/dragon-name-generator.html">🐉 Dragon Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/wizard-name-generator.html">🧙 Wizard Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/paladin-name-generator.html">✨ Paladin Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/knight-name-generator.html">🛡️ Knight Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/demon-name-generator.html">😈 Demon Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/angel-name-generator.html">😇 Angel Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/fairy-name-generator.html">🧚 Fairy Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/epithet-generator.html">🏷️ Epithet Generator</a>
-                    <a href="https://thenamegenerators.com/posts/demon-epithet-generator.html">🔥 Demon Epithet Generator</a>
-                    <a href="https://thenamegenerators.com/posts/tavern-name-generator.html">🍺 Tavern Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/fantasy-shop-name-generator.html">🏪 Fantasy Shop Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/fantasy-town-name-generator.html">🏘️ Fantasy Town Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/fantasy-city-name-generator.html">🏰 Fantasy City Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/fantasy-country-name-generator.html">🗺️ Fantasy Country Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/clan-name-generator.html">🛡️ Clan Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/guild-name-generator.html">⚜️ Guild Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/sword-name-generator.html">⚔️ Sword Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/axe-name-generator.html">🪓 Axe Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/hammer-name-generator.html">🔨 Hammer Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/shield-name-generator.html">🛡️ Shield Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/wand-name-generator.html">🪄 Wand Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/poison-name-generator.html">☠️ Poison Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/assassin-name-generator.html">🗡️ Assassin Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/swamp-witch-name-generator.html">🧙‍♀️ Swamp Witch Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/dnd-human-name-generator.html">🧑 D&amp;D Human Name Generator</a>
-                </div>
+                <ul class="sitemap-links">
+                    <li><a href="https://thenamegenerators.com/posts/tiefling-name-generator.html">Tiefling Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/baldurs-gate-3-name-generator.html">Baldur&#039;s Gate 3 Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/dragonborn-name-generator.html">Dragonborn Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/halfling-name-generator.html">Halfling Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/gnome-name-generator.html">Gnome Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/dnd-fantasy-name-generator.html">D&amp;D Fantasy Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/elf-name-generator.html">Elf Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/half-elf-name-generator.html">Half-Elf Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/high-elf-name-generator.html">High Elf Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/wood-elf-name-generator.html">Wood Elf Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/dark-elf-name-generator.html">Dark Elf Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/dwarf-name-generator.html">Dwarf Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/half-orc-name-generator.html">Half-Orc Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/goblin-name-generator.html">Goblin Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/kobold-name-generator.html">Kobold Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/lizardfolk-name-generator.html">Lizardfolk Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/githyanki-name-generator.html">Githyanki Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/orc-name-generator.html">Orc Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/dragon-name-generator.html">Dragon Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/wizard-name-generator.html">Wizard Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/paladin-name-generator.html">Paladin Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/knight-name-generator.html">Knight Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/demon-name-generator.html">Demon Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/angel-name-generator.html">Angel Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/fairy-name-generator.html">Fairy Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/epithet-generator.html">Epithet Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/demon-epithet-generator.html">Demon Epithet Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/tavern-name-generator.html">Tavern Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/fantasy-shop-name-generator.html">Fantasy Shop Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/fantasy-town-name-generator.html">Fantasy Town Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/fantasy-city-name-generator.html">Fantasy City Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/fantasy-country-name-generator.html">Fantasy Country Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/clan-name-generator.html">Clan Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/guild-name-generator.html">Guild Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/sword-name-generator.html">Sword Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/axe-name-generator.html">Axe Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/hammer-name-generator.html">Hammer Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/shield-name-generator.html">Shield Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/wand-name-generator.html">Wand Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/poison-name-generator.html">Poison Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/assassin-name-generator.html">Assassin Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/swamp-witch-name-generator.html">Swamp Witch Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/dnd-human-name-generator.html">D&amp;D Human Name Generator</a></li>
+                </ul>
             </div>
-            <div class="sitemap-category">
+            <div class="sitemap-group">
                 <h3>Folklore</h3>
-                <div class="sitemap-links">
-                    <a href="https://thenamegenerators.com/posts/fairy-name-generator.html">🧚 Fairy Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/fairy-town-name-generator.html">🧚‍♀️ Fairy Town Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/werewolf-name-generator.html">🐺 Werewolf Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/zombie-name-generator.html">🧟 Zombie Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/ghost-name-generator.html">👻 Ghost Name Generator</a>
-                </div>
+                <ul class="sitemap-links">
+                    <li><a href="https://thenamegenerators.com/posts/fairy-name-generator.html">Fairy Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/fairy-town-name-generator.html">Fairy Town Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/werewolf-name-generator.html">Werewolf Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/zombie-name-generator.html">Zombie Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/ghost-name-generator.html">Ghost Name Generator</a></li>
+                </ul>
             </div>
-            <div class="sitemap-category">
+            <div class="sitemap-group">
                 <h3>Music</h3>
-                <div class="sitemap-links">
-                    <a href="https://thenamegenerators.com/posts/band-name-generator.html">🎸 Band Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/dungeon-synth-name-generator.html">🎵 Dungeon Synth Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/event-name-generator.html">🎉 Event Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/album-name-generator.html">💿 Album Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/song-title-generator.html">🎵 Song Title Generator</a>
-                    <a href="https://thenamegenerators.com/posts/rapper-name-generator.html">🎤 Rapper Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/stage-name-generator.html">🎭 Stage Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/wu-tang-name-generator.html">🐝 Wu-Tang Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/dj-name-generator.html">🎧 DJ Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/podcast-name-generator.html">🎙️ Podcast Name Generator</a>
-                </div>
+                <ul class="sitemap-links">
+                    <li><a href="https://thenamegenerators.com/posts/band-name-generator.html">Band Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/dungeon-synth-name-generator.html">Dungeon Synth Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/event-name-generator.html">Event Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/album-name-generator.html">Album Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/song-title-generator.html">Song Title Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/rapper-name-generator.html">Rapper Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/stage-name-generator.html">Stage Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/wu-tang-name-generator.html">Wu-Tang Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/dj-name-generator.html">DJ Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/podcast-name-generator.html">Podcast Name Generator</a></li>
+                </ul>
             </div>
-            <div class="sitemap-category">
+            <div class="sitemap-group">
                 <h3>Objects</h3>
-                <div class="sitemap-links">
-                    <a href="https://thenamegenerators.com/posts/shield-name-generator.html">🛡️ Shield Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/poison-name-generator.html">☠️ Poison Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/sword-name-generator.html">⚔️ Sword Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/axe-name-generator.html">🪓 Axe Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/hammer-name-generator.html">🔨 Hammer Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/wand-name-generator.html">🪄 Wand Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/funny-minecraft-sword-name-generator.html">🗡️ Funny Minecraft Sword Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/elven-sword-name-generator.html">⚔️ Elven Sword Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/japanese-sword-name-generator.html">⚔️ Japanese Sword Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/game-of-thrones-sword-name-generator.html">⚔️ Game of Thrones Sword Name Generator</a>
-                </div>
+                <ul class="sitemap-links">
+                    <li><a href="https://thenamegenerators.com/posts/shield-name-generator.html">Shield Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/poison-name-generator.html">Poison Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/sword-name-generator.html">Sword Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/axe-name-generator.html">Axe Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/hammer-name-generator.html">Hammer Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/wand-name-generator.html">Wand Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/funny-minecraft-sword-name-generator.html">Funny Minecraft Sword Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/elven-sword-name-generator.html">Elven Sword Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/japanese-sword-name-generator.html">Japanese Sword Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/game-of-thrones-sword-name-generator.html">Game of Thrones Sword Name Generator</a></li>
+                </ul>
             </div>
-            <div class="sitemap-category">
+            <div class="sitemap-group">
                 <h3>Organisations</h3>
-                <div class="sitemap-links">
-                    <a href="https://thenamegenerators.com/posts/business-name-generator.html">💼 Business Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/clan-name-generator.html">🛡️ Clan Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/company-name-generator.html">🏢 Company Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/guild-name-generator.html">⚜️ Guild Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/brand-name-generator.html">🏷️ Brand Name Generator</a>
-                </div>
+                <ul class="sitemap-links">
+                    <li><a href="https://thenamegenerators.com/posts/business-name-generator.html">Business Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/clan-name-generator.html">Clan Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/company-name-generator.html">Company Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/guild-name-generator.html">Guild Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/brand-name-generator.html">Brand Name Generator</a></li>
+                </ul>
             </div>
-            <div class="sitemap-category">
+            <div class="sitemap-group">
                 <h3>Characters</h3>
-                <div class="sitemap-links">
-                    <a href="https://thenamegenerators.com/posts/name-combiner.html">💞 Name Combiner</a>
-                    <a href="https://thenamegenerators.com/posts/gamertag-generator.html">🎮 Gamertag Generator</a>
-                    <a href="https://thenamegenerators.com/posts/epithet-generator.html">🏷️ Epithet Generator</a>
-                    <a href="https://thenamegenerators.com/posts/assassin-name-generator.html">🗡️ Assassin Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/vampire-name-generator.html">🧛 Vampire Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/knight-name-generator.html">🛡️ Knight Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/paladin-name-generator.html">✨ Paladin Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/pirate-name-generator.html">🏴‍☠️ Pirate Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/viking-name-generator.html">⛵ Viking Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/superhero-name-generator.html">🦸 Superhero Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/villain-name-generator.html">🦹 Villain Name Generator</a>
-                </div>
+                <ul class="sitemap-links">
+                    <li><a href="https://thenamegenerators.com/posts/name-combiner.html">Name Combiner</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/gamertag-generator.html">Gamertag Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/epithet-generator.html">Epithet Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/assassin-name-generator.html">Assassin Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/vampire-name-generator.html">Vampire Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/knight-name-generator.html">Knight Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/paladin-name-generator.html">Paladin Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/pirate-name-generator.html">Pirate Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/viking-name-generator.html">Viking Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/superhero-name-generator.html">Superhero Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/villain-name-generator.html">Villain Name Generator</a></li>
+                </ul>
             </div>
-            <div class="sitemap-category">
+            <div class="sitemap-group">
                 <h3>Places</h3>
-                <div class="sitemap-links">
-                    <a href="https://thenamegenerators.com/posts/tavern-name-generator.html">🍺 Tavern Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/fantasy-shop-name-generator.html">🏪 Fantasy Shop Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/fantasy-town-name-generator.html">🏘️ Fantasy Town Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/fantasy-country-name-generator.html">🗺️ Fantasy Country Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/cafe-name-generator.html">☕ Cafe Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/fantasy-city-name-generator.html">🏰 Fantasy City Name Generator</a>
-                </div>
+                <ul class="sitemap-links">
+                    <li><a href="https://thenamegenerators.com/posts/tavern-name-generator.html">Tavern Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/fantasy-shop-name-generator.html">Fantasy Shop Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/fantasy-town-name-generator.html">Fantasy Town Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/fantasy-country-name-generator.html">Fantasy Country Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/cafe-name-generator.html">Cafe Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/fantasy-city-name-generator.html">Fantasy City Name Generator</a></li>
+                </ul>
             </div>
-            <div class="sitemap-category">
+            <div class="sitemap-group">
                 <h3>Elder Scrolls</h3>
-                <div class="sitemap-links">
-                    <a href="https://thenamegenerators.com/posts/skyrim-orc-name-generator.html">🧌 Skyrim Orc Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/nord-name-generator.html">🪓 Nord Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/khajiit-name-generator.html">🐱 Khajiit Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/dunmer-name-generator.html">🌋 Dunmer Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/altmer-name-generator.html">🌞 Altmer Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/argonian-name-generator.html">🦎 Argonian Name Generator</a>
-                </div>
+                <ul class="sitemap-links">
+                    <li><a href="https://thenamegenerators.com/posts/skyrim-orc-name-generator.html">Skyrim Orc Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/nord-name-generator.html">Nord Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/khajiit-name-generator.html">Khajiit Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/dunmer-name-generator.html">Dunmer Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/altmer-name-generator.html">Altmer Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/argonian-name-generator.html">Argonian Name Generator</a></li>
+                </ul>
             </div>
-            <div class="sitemap-category">
+            <div class="sitemap-group">
                 <h3>Warcraft</h3>
-                <div class="sitemap-links">
-                    <a href="https://thenamegenerators.com/posts/wow-orc-name-generator.html">🧌 World of Warcraft Orc Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/night-elf-name-generator.html">🌙 Night Elf Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/blood-elf-name-generator.html">🔥 Blood Elf Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/wow-troll-name-generator.html">🗿 World of Warcraft Troll Name Generator</a>
-                </div>
+                <ul class="sitemap-links">
+                    <li><a href="https://thenamegenerators.com/posts/wow-orc-name-generator.html">World of Warcraft Orc Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/night-elf-name-generator.html">Night Elf Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/blood-elf-name-generator.html">Blood Elf Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/wow-troll-name-generator.html">World of Warcraft Troll Name Generator</a></li>
+                </ul>
             </div>
-            <div class="sitemap-category">
+            <div class="sitemap-group">
                 <h3>Warhammer</h3>
-                <div class="sitemap-links">
-                    <a href="https://thenamegenerators.com/posts/warhammer-name-generator.html">💀 Warhammer 40k Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/warhammer-orc-name-generator.html">🧌 Warhammer Orc Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/ogryn-name-generator.html">🧌 Ogryn Name Generator</a>
-                </div>
+                <ul class="sitemap-links">
+                    <li><a href="https://thenamegenerators.com/posts/warhammer-name-generator.html">Warhammer 40k Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/warhammer-orc-name-generator.html">Warhammer Orc Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/ogryn-name-generator.html">Ogryn Name Generator</a></li>
+                </ul>
             </div>
-            <div class="sitemap-category">
+            <div class="sitemap-group">
                 <h3>Sci-Fi</h3>
-                <div class="sitemap-links">
-                    <a href="https://thenamegenerators.com/posts/alien-name-generator.html">👽 Alien Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/cyberpunk-name-generator.html">🌃 Cyberpunk Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/robot-name-generator.html">🤖 Robot Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/spaceship-name-generator.html">🚀 Spaceship Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/star-wars-name-generator.html">⚔️ Star Wars Name Generator</a>
-                </div>
+                <ul class="sitemap-links">
+                    <li><a href="https://thenamegenerators.com/posts/alien-name-generator.html">Alien Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/cyberpunk-name-generator.html">Cyberpunk Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/robot-name-generator.html">Robot Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/spaceship-name-generator.html">Spaceship Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/star-wars-name-generator.html">Star Wars Name Generator</a></li>
+                </ul>
             </div>
-            <div class="sitemap-category">
+            <div class="sitemap-group">
                 <h3>Witches</h3>
-                <div class="sitemap-links">
-                    <a href="https://thenamegenerators.com/posts/swamp-witch-name-generator.html">🧙‍♀️ Swamp Witch Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/harry-potter-witch-name-generator.html">⚡ Harry Potter Witch Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/hogwarts-legacy-witch-name-generator.html">🪄 Hogwarts Legacy Witch Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/path-of-exile-witch-name-generator.html">🔮 Path of Exile Witch Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/wizard-name-generator.html">🧙 Wizard Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/fairy-name-generator.html">🧚 Fairy Name Generator</a>
-                </div>
+                <ul class="sitemap-links">
+                    <li><a href="https://thenamegenerators.com/posts/swamp-witch-name-generator.html">Swamp Witch Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/harry-potter-witch-name-generator.html">Harry Potter Witch Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy Witch Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/path-of-exile-witch-name-generator.html">Path of Exile Witch Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/wizard-name-generator.html">Wizard Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/fairy-name-generator.html">Fairy Name Generator</a></li>
+                </ul>
             </div>
-            <div class="sitemap-category">
+            <div class="sitemap-group">
                 <h3>Historical</h3>
-                <div class="sitemap-links">
-                    <a href="https://thenamegenerators.com/posts/roman-name-generator.html">🏛️ Roman Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/ancient-greek-name-generator.html">🏺 Ancient Greek Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/anglo-saxon-name-generator.html">🛡️ Anglo-Saxon Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/medieval-name-generator.html">🏰 Medieval Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/victorian-name-generator.html">🎩 Victorian Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/old-west-name-generator.html">🤠 Old West Name Generator</a>
-                </div>
+                <ul class="sitemap-links">
+                    <li><a href="https://thenamegenerators.com/posts/roman-name-generator.html">Roman Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/ancient-greek-name-generator.html">Ancient Greek Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/anglo-saxon-name-generator.html">Anglo-Saxon Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/medieval-name-generator.html">Medieval Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/victorian-name-generator.html">Victorian Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/old-west-name-generator.html">Old West Name Generator</a></li>
+                </ul>
             </div>
-            <div class="sitemap-category">
+            <div class="sitemap-group">
                 <h3>Pop Culture</h3>
-                <div class="sitemap-links">
-                    <a href="https://thenamegenerators.com/posts/elden-ring-name-generator.html">💍 Elden Ring Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/star-wars-name-generator.html">⚔️ Star Wars Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/baldurs-gate-3-name-generator.html">🎲 Baldur&#039;s Gate 3 Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/harry-potter-witch-name-generator.html">⚡ Harry Potter Witch Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/hogwarts-legacy-witch-name-generator.html">🪄 Hogwarts Legacy Witch Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/hogwarts-legacy-wizard-name-generator.html">🪄 Hogwarts Legacy Wizard Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/skyrim-orc-name-generator.html">🧌 Skyrim Orc Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/khajiit-name-generator.html">🐱 Khajiit Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/nord-name-generator.html">🪓 Nord Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/argonian-name-generator.html">🦎 Argonian Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/altmer-name-generator.html">🌞 Altmer Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/dunmer-name-generator.html">🌋 Dunmer Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/warhammer-name-generator.html">💀 Warhammer 40k Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/warhammer-orc-name-generator.html">🧌 Warhammer Orc Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/wow-orc-name-generator.html">🧌 World of Warcraft Orc Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/wow-troll-name-generator.html">🗿 World of Warcraft Troll Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/blood-elf-name-generator.html">🔥 Blood Elf Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/night-elf-name-generator.html">🌙 Night Elf Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/lotr-orc-name-generator.html">🧌 LOTR Orc Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/lotr-wizard-name-generator.html">🧙 LOTR Wizard Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/hobbit-name-generator.html">🏡 Hobbit Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/ogryn-name-generator.html">🧌 Ogryn Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/funny-minecraft-sword-name-generator.html">🗡️ Funny Minecraft Sword Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/game-of-thrones-name-generator.html">👑 Game of Thrones Name Generator</a>
-                    <a href="https://thenamegenerators.com/posts/game-of-thrones-sword-name-generator.html">⚔️ Game of Thrones Sword Name Generator</a>
-                </div>
+                <ul class="sitemap-links">
+                    <li><a href="https://thenamegenerators.com/posts/elden-ring-name-generator.html">Elden Ring Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/star-wars-name-generator.html">Star Wars Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/baldurs-gate-3-name-generator.html">Baldur&#039;s Gate 3 Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/harry-potter-witch-name-generator.html">Harry Potter Witch Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy Witch Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy Wizard Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/skyrim-orc-name-generator.html">Skyrim Orc Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/khajiit-name-generator.html">Khajiit Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/nord-name-generator.html">Nord Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/argonian-name-generator.html">Argonian Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/altmer-name-generator.html">Altmer Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/dunmer-name-generator.html">Dunmer Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/warhammer-name-generator.html">Warhammer 40k Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/warhammer-orc-name-generator.html">Warhammer Orc Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/wow-orc-name-generator.html">World of Warcraft Orc Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/wow-troll-name-generator.html">World of Warcraft Troll Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/blood-elf-name-generator.html">Blood Elf Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/night-elf-name-generator.html">Night Elf Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/lotr-orc-name-generator.html">LOTR Orc Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/lotr-wizard-name-generator.html">LOTR Wizard Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/hobbit-name-generator.html">Hobbit Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/ogryn-name-generator.html">Ogryn Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/funny-minecraft-sword-name-generator.html">Funny Minecraft Sword Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/game-of-thrones-name-generator.html">Game of Thrones Name Generator</a></li>
+                    <li><a href="https://thenamegenerators.com/posts/game-of-thrones-sword-name-generator.html">Game of Thrones Sword Name Generator</a></li>
+                </ul>
             </div>
-        </div>
+            </section>
+        </main>
     </div>
 
     <footer class="site-footer">
-        <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="about.html" style="color: #4a90e2;">About</a></p>
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="about.html">About</a> · <a href="all-generators.html">All generators</a> · <a href="sitemap.html">Site map</a></p>
+      </div>
     </footer>
+    <script src="lib/page.js"></script>
+    <script src="lib/outline.js"></script>
 </body>
 </html>

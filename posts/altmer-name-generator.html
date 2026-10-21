@@ -297,332 +297,259 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
-                </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-leaf" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 40 C10 22 22 10 40 8 C40 28 28 40 10 40 Z" fill="#fffcf4"/><path d="M10 40 L31 17 M18 32 l7 1 M24 25 l7 1" stroke-width="1.4"/><path d="M6 44 C13 41 17 45 25 42" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-sword" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(35 24 24)"><path d="M24 2 L28 8 L28 30 L20 30 L20 8 Z" fill="#fffcf4"/><path d="M24 9 V28" stroke-width="1.2"/><path d="M14 30 H34"/><path d="M24 30 V41"/><circle cx="24" cy="43.5" r="2.4" fill="#efc84a"/></g></g></symbol>
+      <symbol id="m-sword-crown" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(35 24 24)"><path d="M24 6 L28 12 L28 32 L20 32 L20 12 Z" fill="#fffcf4"/><path d="M14 32 H34"/><path d="M24 32 V42"/></g><path d="M3 10 L6 3 L10 8 L13 2 L16 8 L20 3 L22 10 Z" fill="#efc84a"/></g></symbol>
+      <symbol id="m-broom" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M42 5 L21 29"/><path d="M22 28 L12 30 C8 34 6 40 5 44 C11 43 18 39 22 34 Z" fill="#efc84a"/><path d="M14 33 L9 40 M17 34 L12 41" stroke-width="1.2"/><path d="M19 31 l4 -4" stroke-width="3.4"/></g></symbol>
+      <symbol id="m-wand" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 42 L32 16" stroke-width="3"/><path d="M8 42 L13 37" stroke-width="5.5"/><path d="M38 3 l2 5 l5 2 l-5 2 l-2 5 l-2 -5 l-5 -2 l5 -2 z" fill="#efc84a" stroke-width="1.4"/><path d="M29 6 l1 2 M44 20 l-2 1 M33 22 l2 1" stroke-width="1.2"/></g></symbol>
+      <symbol id="m-war-axe" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 42 L33 16"/><path d="M27 8 C37 5 46 12 44 22 C38 18 32 18 28 22 C30 16 30 12 27 8 Z" fill="#fffcf4"/><path d="M7 40 l6 6"/><path d="M12 33 l5 5" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-clapper" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="19" width="32" height="23" rx="2" fill="#fffcf4"/><path d="M8 19 L37 8 L39 14 L10 25"/><path d="M15 16 L18 22 M23 13 L26 19 M31 10 L34 16" stroke-width="1.3"/><path d="M14 31 h20" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-planet" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="25" r="11" fill="#fffcf4"/><ellipse cx="24" cy="25" rx="20" ry="6" transform="rotate(-20 24 25)"/><path d="M17 20 C20 17 24 16 27 17" stroke="#efc84a" stroke-width="3"/><path d="M40 5 l1 3 l3 1 l-3 1 l-1 3 l-1 -3 l-3 -1 l3 -1 z" fill="#1e1c18" stroke-width="1"/></g></symbol>
+      <symbol id="m-d20" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4 L42 14 L42 34 L24 44 L6 34 L6 14 Z" fill="#fffcf4"/><path d="M24 4 L15 28 L33 28 Z M6 14 L15 28 M42 14 L33 28 M15 28 L24 44 L33 28 M6 34 L15 28 M42 34 L33 28" stroke-width="1.3"/><path d="M20 24 h8" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-paw" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 22 C31 22 35 30 35 35 C35 40 30 41 24 39 C18 41 13 40 13 35 C13 30 17 22 24 22 Z" fill="#fffcf4"/><ellipse cx="12" cy="20" rx="3.5" ry="4.5" fill="#fffcf4"/><ellipse cx="19" cy="12" rx="3.5" ry="4.5" fill="#fffcf4"/><ellipse cx="29" cy="12" rx="3.5" ry="4.5" fill="#efc84a"/><ellipse cx="36" cy="20" rx="3.5" ry="4.5" fill="#fffcf4"/></g></symbol>
+      <symbol id="m-axe" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 V44"/><path d="M24 10 C19 11 14 9 10 6 C6 13 6 23 11 30 C15 27 19 26 24 25 Z" fill="#fffcf4"/><path d="M24 10 C29 11 34 9 38 6 C42 13 42 23 37 30 C33 27 29 26 24 25 Z" fill="#fffcf4"/><path d="M21 37 h6" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-lizard" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4 C27 4 29 8 27 12 L26 30 C26 36 22 40 13 44 C19 38 22 34 22 30 L21 12 C19 8 19 4 22 4 Z" fill="#fffcf4"/><path d="M22 16 L13 12 M26 16 L35 12 M22 26 L13 30 M26 26 L35 30"/><path d="M13 12 l-3 -2 M35 12 l3 -2 M13 30 l-3 2 M35 30 l3 2" stroke-width="1.3"/><circle cx="23.5" cy="7.5" r="1" fill="#1e1c18"/><path d="M23.5 17 v8" stroke="#efc84a" stroke-width="2.6"/></g></symbol>
+      <symbol id="m-tusks" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 36 C10 26 12 14 18 7 C18 16 20 26 22 34 Z" fill="#fffcf4"/><path d="M34 36 C38 26 36 14 30 7 C30 16 28 26 26 34 Z" fill="#fffcf4"/><path d="M8 41 C16 37 32 37 40 41" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-leaf-flame" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 42 C6 26 16 16 32 14 C32 30 22 40 6 42 Z" fill="#fffcf4"/><path d="M6 42 L24 22 M13 35 l6 1" stroke-width="1.4"/><path d="M38 4 C41 9 45 11 45 17 C45 21 42 24 38 24 C34 24 32 21 32 17 C32 13 35 12 36 9 C38 11 38 13 39 14 C40 11 39 7 38 4 Z" fill="#efc84a"/></g></symbol>
+      <symbol id="m-leaf-moon" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 42 C8 26 18 16 34 14 C34 30 24 40 8 42 Z" fill="#fffcf4"/><path d="M8 42 L26 22 M15 35 l6 1" stroke-width="1.4"/><path d="M36 4 a7 7 0 1 0 7 9 a5.5 5.5 0 1 1 -7 -9 z" fill="#efc84a"/></g></symbol>
+      <symbol id="m-club" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 43 L22 26" stroke-width="3.2"/><path d="M20 28 C15 18 22 5 32 5 C42 5 45 17 37 25 C32 30 24 32 20 28 Z" fill="#fffcf4"/><circle cx="29" cy="13" r="1.6" fill="#1e1c18"/><circle cx="36" cy="17" r="1.6" fill="#1e1c18"/><circle cx="27" cy="22" r="1.6" fill="#1e1c18"/><path d="M14 37 l4 3" stroke="#efc84a" stroke-width="4"/></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../categories/pop_culture-names.html">Pop Culture</a> / <span aria-current="page">Altmer Name Generator</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">Altmer</span> Name Generator</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf"/></svg>
             </div>
-        </div>
-    </nav>
+            <p class="lede">Long, graceful high elf names from the Summerset Isles, in the style of Ancano and Elenwen.</p>
 
-    <div class="container">
-        <header class="blog-hero">
-            <h1>🌞 Altmer Name Generator</h1>
-            <p class="tagline">Long, graceful high elf names from the Summerset Isles, in the style of Ancano and Elenwen.</p>
-            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
-        </header>
-
-        <main>
-            <section class="embedded-generator">
-                <div class="generator-card">
-                    <h2>Generate Altmer Names</h2>
-                    <p class="generator-description">Altmer (high elf) names for Skyrim and Elder Scrolls Online, long and elegant like Ancano, Elenwen and Ondolemar, the names of the Summerset Isles.</p>
-                    
-                    <div class="simple-generator">
-                        <div class="filters">
-          <div class="filter-group">
-            <label for="filter-gender">Gender:</label>
-            <select id="filter-gender" name="gender" data-filter="gender">
-              <option value="any">Any</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-            </select>
+            <section class="sheet hd simple-generator" id="generator" aria-label="Altmer Name Generator">
+                <div class="gen-one">
+          <div class="group" role="group" aria-labelledby="filter-gender-label">
+            <div class="label"><span id="filter-gender-label">Gender</span><span class="pen" data-hint-for="gender" aria-hidden="true"></span></div>
+            <div class="opts" data-buttons-for="gender">
+              <button type="button" class="opt hd tap" data-value="any" data-hint="" aria-pressed="true">Any</button>
+              <button type="button" class="opt hd tap" data-value="male" data-hint="" aria-pressed="false">Male</button>
+              <button type="button" class="opt hd tap" data-value="female" data-hint="" aria-pressed="false">Female</button>
+            </div>
+            <input type="hidden" id="filter-gender" name="gender" data-filter="gender" value="any">
           </div></div>
-                        <div class="generator-controls">
-                            <div class="filter-group count-group">
-                                <label for="name-count">How many:</label>
-                                <select id="name-count">
-                                    <option value="8" selected>8 names</option>
-                                    <option value="16">16 names</option>
-                                    <option value="32">32 names</option>
-                                </select>
-                            </div>
-                            <button id="generate-btn" class="generate-button">Generate Names</button>
-                        </div>
-                        <div class="results-area" id="results">
-                            <p class="results-placeholder">Click "Generate Names" to see results</p>
-                        </div>
-                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
-                        <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="false">
+                    <p class="results-empty">Press Generate Names for 8 altmer names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
                     </div>
-                    
-                    <div class="cta-box">
-                        <p><strong>Need more options?</strong></p>
-                        <a href="../index.html" class="cta-button">Try the Ultimate Random Name Generator →</a>
-                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
+
+            <section class="section example-names">
+                <h2>Example Altmer Names</h2>
+                <p class="sub">A few names this generator came up with. Tap one to copy it, or press "Generate Names" above for more.</p>
+                <div class="ex">
+                <div class="exbox hd">
+                    <h3>Any</h3>
+                    <ul>
+                        <li>Calindil</li>
+                        <li>Tharandil</li>
+                        <li>Firinor</li>
+                        <li>Faralwen</li>
+                        <li>Laurenya</li>
+                        <li>Norelda</li>
+                        <li>Indarie</li>
+                        <li>Calenwe</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Male</h3>
+                    <ul>
+                        <li>Tharandil</li>
+                        <li>Firinor</li>
+                        <li>Henamo</li>
+                        <li>Arandil</li>
+                        <li>Ondilmo</li>
+                        <li>Melindil</li>
+                        <li>Faranwe</li>
+                        <li>Seranil</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Female</h3>
+                    <ul>
+                        <li>Calinde</li>
+                        <li>Elrena</li>
+                        <li>Lorinde</li>
+                        <li>Pelaria</li>
+                        <li>Laurenya</li>
+                        <li>Nirelwe</li>
+                        <li>Orinwe</li>
+                        <li>Riwenna</li>
+                    </ul>
+                </div>
                 </div>
             </section>
 
-            <section class="example-names">
-                <h2>Example Altmer Names</h2>
-                <p>A few names this generator came up with. Press "Generate Names" above for more.</p>
-                <h3>Any</h3>
-                <ul class="name-results">
-                    <li>Calindil</li>
-                    <li>Tharandil</li>
-                    <li>Firinor</li>
-                    <li>Faralwen</li>
-                    <li>Laurenya</li>
-                    <li>Norelda</li>
-                    <li>Indarie</li>
-                    <li>Calenwe</li>
-                </ul>
-                <h3>Male</h3>
-                <ul class="name-results">
-                    <li>Tharandil</li>
-                    <li>Firinor</li>
-                    <li>Henamo</li>
-                    <li>Arandil</li>
-                    <li>Ondilmo</li>
-                    <li>Melindil</li>
-                    <li>Faranwe</li>
-                    <li>Seranil</li>
-                </ul>
-                <h3>Female</h3>
-                <ul class="name-results">
-                    <li>Calinde</li>
-                    <li>Elrena</li>
-                    <li>Lorinde</li>
-                    <li>Pelaria</li>
-                    <li>Laurenya</li>
-                    <li>Nirelwe</li>
-                    <li>Orinwe</li>
-                    <li>Riwenna</li>
-                </ul>
-            </section>
-
-            <section class="blog-content how-it-works">
+            <section class="section how-it-works">
                 <h2>How the Altmer Name Generator Works</h2>
+                <div class="howto hd">
                 <p>It picks from a list of 103 names.</p>
                 <p>The choices:</p>
                 <ul><li><strong>Gender:</strong><ul><li>Any, e.g. <em>Ilcano</em></li><li>Male, e.g. <em>Orlenno</em></li><li>Female, e.g. <em>Elrena</em></li></ul></li></ul>
-                <p>Each press gives you 8, 16 or 32 names (choose under "How many"), and you won't see the same one twice until you've been through everything for the choices you've made.</p>
+                <p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet, until the names for the choices you've made run out.</p>
+                </div>
             </section>
 
-            <article class="blog-content" itemscope itemtype="https://schema.org/Article">
+            <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="Altmer Name Generator">
                 <meta itemprop="description" content="Altmer (high elf) names for Skyrim and Elder Scrolls Online, long and elegant like Ancano, Elenwen and Ondolemar, the names of the Summerset Isles.">
-                <section itemprop="articleBody">
-                    <p>The Altmer, or high elves, of the Summerset Isles think very highly of themselves, and their names sound like it: long, flowing and formal. In Skyrim you meet them as Ancano at the College of Winterhold and as the Thalmor's Elenwen and Ondolemar. This <strong>Altmer name generator</strong> gives you names in the same style, for Skyrim, Elder Scrolls Online or your own Tamriel story.</p>
-                </section>
+                <div itemprop="articleBody">
+                <p class="big">The Altmer, or high elves, of the Summerset Isles think very highly of themselves, and their names sound like it: long, flowing and formal. In Skyrim you meet them as Ancano at the College of Winterhold and as the Thalmor's Elenwen and Ondolemar. This <strong>Altmer name generator</strong> gives you names in the same style, for Skyrim, Elder Scrolls Online or your own Tamriel story.</p>
                 
-      <section>
-        <h2>What Altmer names sound like</h2>
-        <ul><li><strong>Long:</strong> three or four syllables is normal. Ondolemar, Ancarion.</li><li><strong>Soft consonants</strong> (l, n, r, m) and open vowels, with few harsh sounds.</li><li><strong>Male names</strong> often end in <em>-o</em>, <em>-ar</em> or <em>-il</em>: Ancano, Estormo and Ondolemar in Skyrim.</li><li><strong>Female names</strong> often end in <em>-we</em>, <em>-wen</em> or <em>-a</em>: Elenwen, Nirya and Faralda.</li></ul><p>Altmer names are usually used alone. That suits a people who believe they're descended from the gods and don't feel the need to explain their family.</p>
-      </section>
-    
+                <h2>What Altmer names sound like</h2>
+                <ul><li><strong>Long:</strong> three or four syllables is normal. Ondolemar, Ancarion.</li><li><strong>Soft consonants</strong> (l, n, r, m) and open vowels, with few harsh sounds.</li><li><strong>Male names</strong> often end in <em>-o</em>, <em>-ar</em> or <em>-il</em>: Ancano, Estormo and Ondolemar in Skyrim.</li><li><strong>Female names</strong> often end in <em>-we</em>, <em>-wen</em> or <em>-a</em>: Elenwen, Nirya and Faralda.</li></ul><p>Altmer names are usually used alone. That suits a people who believe they're descended from the gods and don't feel the need to explain their family.</p>
 
-      <section>
-        <h2>Altmer in Skyrim</h2>
-        <p>Most Altmer in Skyrim belong to the Thalmor, the government of the Aldmeri Dominion. <strong>Elenwen</strong> is the Thalmor ambassador, <strong>Ondolemar</strong> commands the Thalmor in Markarth, and <strong>Ancano</strong> is the Thalmor adviser who causes trouble at the College of Winterhold.</p><p>Not every Altmer is Thalmor. <strong>Faralda</strong> and <strong>Nirya</strong> teach at the College, and <strong>Ancarion</strong> lives in Solitude. An Altmer character who isn't Thalmor has an easy source of tension in any Nord town.</p>
-      </section>
-    
+                <h2>Altmer in Skyrim</h2>
+                <p>Most Altmer in Skyrim belong to the Thalmor, the government of the Aldmeri Dominion. <strong>Elenwen</strong> is the Thalmor ambassador, <strong>Ondolemar</strong> commands the Thalmor in Markarth, and <strong>Ancano</strong> is the Thalmor adviser who causes trouble at the College of Winterhold.</p><p>Not every Altmer is Thalmor. <strong>Faralda</strong> and <strong>Nirya</strong> teach at the College, and <strong>Ancarion</strong> lives in Solitude. An Altmer character who isn't Thalmor has an easy source of tension in any Nord town.</p>
 
-      <section>
-        <h2>Using the names</h2>
-        <ul><li><strong>Let it be long.</strong> An Altmer won't shorten their name for anyone, which says a lot about them.</li><li><strong>Add a title if they're important:</strong> Justiciar, First Emissary, Magister.</li><li><strong>Elder Scrolls Online</strong> needs unique names, and a long Altmer name is more likely to be free.</li></ul><p>For other races of Tamriel, see the <a href="dunmer-name-generator.html">Dunmer</a>, <a href="khajiit-name-generator.html">Khajiit</a> and <a href="nord-name-generator.html">Nord</a> name generators.</p>
-      </section>
-    
+                <h2>Using the names</h2>
+                <ul><li><strong>Let it be long.</strong> An Altmer won't shorten their name for anyone, which says a lot about them.</li><li><strong>Add a title if they're important:</strong> Justiciar, First Emissary, Magister.</li><li><strong>Elder Scrolls Online</strong> needs unique names, and a long Altmer name is more likely to be free.</li></ul><p>For other races of Tamriel, see the <a href="dunmer-name-generator.html">Dunmer</a>, <a href="khajiit-name-generator.html">Khajiit</a> and <a href="nord-name-generator.html">Nord</a> name generators.</p>
+                </div>
             </article>
 
-            
-      <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Do Altmer have last names?</h3>
-              <p class="faq-answer">Usually not in Skyrim: Ancano, Elenwen and Ondolemar all go by one name. Titles, like Justiciar, are more common than surnames.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Who are the Thalmor?</h3>
-              <p class="faq-answer">The ruling government of the Aldmeri Dominion, led by the Altmer. In Skyrim they enforce the ban on worshipping Talos.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Are these names from the games?</h3>
-              <p class="faq-answer">No. They're new names in the same style, so your character won't share a name with someone in Tamriel.</p>
-            </div>
-          
-        </div>
-      </section>
-            
-      <section class="related-section">
-        <h2>Related Name Generators</h2>
-        <div class="related-grid" id="related-generators">
-          <a href="../posts/funny-minecraft-sword-name-generator.html" class="related-card">
-            <h3>🗡️ Funny Minecraft Sword Name Generator</h3>
-            <p>Funny Minecraft sword names that fit the anvil&#039;s rename box, from mob puns like Creeper Sweeper to Bladey McBladeface.</p>
-          </a>
-          <a href="../posts/game-of-thrones-sword-name-generator.html" class="related-card">
-            <h3>⚔️ Game of Thrones Sword Name Generator</h3>
-            <p>Game of Thrones style sword names to suit a great house, from northern wolves to Ironborn reavers, with the blade if you want it: Ashsister, a Valyrian steel longsword.</p>
-          </a>
-          <a href="../posts/harry-potter-witch-name-generator.html" class="related-card">
-            <h3>⚡ Harry Potter Witch Name Generator</h3>
-            <p>Witch names in the style of the Harry Potter books: everyday British first names or grand pure-blood ones, with a surname to suit Gryffindor, Hufflepuff, Ravenclaw or Slytherin.</p>
-          </a>
-          <a href="../posts/hogwarts-legacy-witch-name-generator.html" class="related-card">
-            <h3>🪄 Hogwarts Legacy Witch Name Generator</h3>
-            <p>Hogwarts Legacy witch names in the game&#039;s 1890s style: Victorian first names with surnames to suit Gryffindor, Hufflepuff, Ravenclaw or Slytherin.</p>
-          </a>
-          <a href="../posts/hogwarts-legacy-wizard-name-generator.html" class="related-card">
-            <h3>🪄 Hogwarts Legacy Wizard Name Generator</h3>
-            <p>Hogwarts Legacy wizard names in the game&#039;s 1890s style: Victorian first names with surnames to suit Gryffindor, Hufflepuff, Ravenclaw or Slytherin.</p>
-          </a>
-          <a href="../posts/lotr-orc-name-generator.html" class="related-card">
-            <h3>🧌 LOTR Orc Name Generator</h3>
-            <p>Orc names in Tolkien&#039;s style for Mordor orcs, Uruk-hai of Isengard and goblins of the Misty Mountains, with a rank or the place they serve.</p>
-          </a>
-        </div>
-      </section>
-            
-      <section class="category-generators-section">
-        <h2>All Pop Culture Name Generators</h2>
-        <div class="category-generators-grid" id="category-generators">
-          <a href="../posts/elden-ring-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">💍</span>
-            <span class="category-generator-title">Elden Ring Name Generator</span>
-          </a>
-          <a href="../posts/star-wars-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Star Wars Name Generator</span>
-          </a>
-          <a href="../posts/baldurs-gate-3-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🎲</span>
-            <span class="category-generator-title">Baldur&#039;s Gate 3 Name Generator</span>
-          </a>
-          <a href="../posts/harry-potter-witch-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚡</span>
-            <span class="category-generator-title">Harry Potter Witch Name Generator</span>
-          </a>
-          <a href="../posts/hogwarts-legacy-witch-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🪄</span>
-            <span class="category-generator-title">Hogwarts Legacy Witch Name Generator</span>
-          </a>
-          <a href="../posts/hogwarts-legacy-wizard-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🪄</span>
-            <span class="category-generator-title">Hogwarts Legacy Wizard Name Generator</span>
-          </a>
-          <a href="../posts/skyrim-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">Skyrim Orc Name Generator</span>
-          </a>
-          <a href="../posts/khajiit-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🐱</span>
-            <span class="category-generator-title">Khajiit Name Generator</span>
-          </a>
-          <a href="../posts/nord-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🪓</span>
-            <span class="category-generator-title">Nord Name Generator</span>
-          </a>
-          <a href="../posts/argonian-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🦎</span>
-            <span class="category-generator-title">Argonian Name Generator</span>
-          </a>
-          <a href="../posts/dunmer-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🌋</span>
-            <span class="category-generator-title">Dunmer Name Generator</span>
-          </a>
-          <a href="../posts/warhammer-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">💀</span>
-            <span class="category-generator-title">Warhammer 40k Name Generator</span>
-          </a>
-          <a href="../posts/warhammer-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">Warhammer Orc Name Generator</span>
-          </a>
-          <a href="../posts/wow-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">World of Warcraft Orc Name Generator</span>
-          </a>
-          <a href="../posts/wow-troll-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🗿</span>
-            <span class="category-generator-title">World of Warcraft Troll Name Generator</span>
-          </a>
-          <a href="../posts/blood-elf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🔥</span>
-            <span class="category-generator-title">Blood Elf Name Generator</span>
-          </a>
-          <a href="../posts/night-elf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🌙</span>
-            <span class="category-generator-title">Night Elf Name Generator</span>
-          </a>
-          <a href="../posts/lotr-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">LOTR Orc Name Generator</span>
-          </a>
-          <a href="../posts/lotr-wizard-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧙</span>
-            <span class="category-generator-title">LOTR Wizard Name Generator</span>
-          </a>
-          <a href="../posts/hobbit-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🏡</span>
-            <span class="category-generator-title">Hobbit Name Generator</span>
-          </a>
-          <a href="../posts/ogryn-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">Ogryn Name Generator</span>
-          </a>
-          <a href="../posts/funny-minecraft-sword-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🗡️</span>
-            <span class="category-generator-title">Funny Minecraft Sword Name Generator</span>
-          </a>
-          <a href="../posts/game-of-thrones-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">👑</span>
-            <span class="category-generator-title">Game of Thrones Name Generator</span>
-          </a>
-          <a href="../posts/game-of-thrones-sword-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Game of Thrones Sword Name Generator</span>
-          </a>
-        </div>
-      </section>
-        </main>
+            <section class="section faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Do Altmer have last names?</summary>
+                        <div>Usually not in Skyrim: Ancano, Elenwen and Ondolemar all go by one name. Titles, like Justiciar, are more common than surnames.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Who are the Thalmor?</summary>
+                        <div>The ruling government of the Aldmeri Dominion, led by the Altmer. In Skyrim they enforce the ban on worshipping Talos.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Are these names from the games?</summary>
+                        <div>No. They're new names in the same style, so your character won't share a name with someone in Tamriel.</div>
+                    </details>
+                </div>
+            </section>
 
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+            <section class="section related-section">
+                <h2>Related Name Generators</h2>
+                <div class="genlist" id="related-generators">
+                    <a href="../posts/funny-minecraft-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Funny Minecraft Sword Name Generator</b><span>Funny Minecraft sword names that fit the anvil&#039;s rename box, from mob puns like Creeper Sweeper to Bladey McBladeface.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/game-of-thrones-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword-crown"/></svg><div><b>Game of Thrones Sword Name Generator</b><span>Game of Thrones style sword names to suit a great house, from northern wolves to Ironborn reavers, with the blade if you want it: Ashsister, a Valyrian steel longsword.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/harry-potter-witch-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-broom"/></svg><div><b>Harry Potter Witch Name Generator</b><span>Witch names in the style of the Harry Potter books: everyday British first names or grand pure-blood ones, with a surname to suit Gryffindor, Hufflepuff, Ravenclaw or Slytherin.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/hogwarts-legacy-witch-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-broom"/></svg><div><b>Hogwarts Legacy Witch Name Generator</b><span>Hogwarts Legacy witch names in the game&#039;s 1890s style: Victorian first names with surnames to suit Gryffindor, Hufflepuff, Ravenclaw or Slytherin.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/hogwarts-legacy-wizard-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-wand"/></svg><div><b>Hogwarts Legacy Wizard Name Generator</b><span>Hogwarts Legacy wizard names in the game&#039;s 1890s style: Victorian first names with surnames to suit Gryffindor, Hufflepuff, Ravenclaw or Slytherin.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/lotr-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>LOTR Orc Name Generator</b><span>Orc names in Tolkien&#039;s style for Mordor orcs, Uruk-hai of Isengard and goblins of the Misty Mountains, with a rank or the place they serve.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
+
+            <section class="section category-generators-section">
+                <h2>More Pop Culture Name Generators</h2>
+                <div class="genlist compact" id="category-generators">
+                    <a href="../posts/elden-ring-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-clapper"/></svg><div><b>Elden Ring Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/star-wars-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-planet"/></svg><div><b>Star Wars Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/baldurs-gate-3-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-d20"/></svg><div><b>Baldur&#039;s Gate 3 Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/harry-potter-witch-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-broom"/></svg><div><b>Harry Potter Witch Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/hogwarts-legacy-witch-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-broom"/></svg><div><b>Hogwarts Legacy Witch Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/hogwarts-legacy-wizard-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-wand"/></svg><div><b>Hogwarts Legacy Wizard Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/skyrim-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>Skyrim Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/khajiit-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-paw"/></svg><div><b>Khajiit Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/nord-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-axe"/></svg><div><b>Nord Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/argonian-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-lizard"/></svg><div><b>Argonian Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/dunmer-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-clapper"/></svg><div><b>Dunmer Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/warhammer-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Warhammer 40k Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/warhammer-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>Warhammer Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/wow-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>World of Warcraft Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/wow-troll-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-tusks"/></svg><div><b>World of Warcraft Troll Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/blood-elf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf-flame"/></svg><div><b>Blood Elf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/night-elf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf-moon"/></svg><div><b>Night Elf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/lotr-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>LOTR Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/lotr-wizard-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-clapper"/></svg><div><b>LOTR Wizard Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/hobbit-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-clapper"/></svg><div><b>Hobbit Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/ogryn-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-club"/></svg><div><b>Ogryn Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/funny-minecraft-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Funny Minecraft Sword Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/game-of-thrones-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-clapper"/></svg><div><b>Game of Thrones Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/game-of-thrones-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword-crown"/></svg><div><b>Game of Thrones Sword Name Generator</b></div><em aria-hidden="true">→</em></a>
+                </div>
+                <p class="all-link"><a href="../categories/pop_culture-names.html">All Pop Culture name generators</a></p>
+            </section>
+            <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
 
     <script type="application/json" id="generator-config">{"title":"Altmer Name Generator","slug":"altmer-name-generator","filters":{"gender":{"label":"Gender","options":["any","male","female"],"optionLabels":{"any":"Any"}}},"recipe":"switch","on":"gender","cases":{"any":{"recipe":"pick","from":"names"}},"default":{"recipe":"pick","from":"names.{gender}"},"data":{"names":{"male":["Aicantar","Calcamo","Erundil","Faranwe","Herminor","Imion","Laurendil","Maenor","Ondilmo","Pelorin","Quaranir","Rilmeno","Seranil","Taronwe","Tharandil","Vanyaril","Aranwe","Endilmo","Ilmarion","Lanacar","Melindil","Orlenno","Saravar","Telenmo","Vanormo","Corinmo","Lithandor","Teranil","Arandil","Calindil","Eldamo","Firinor","Halimo","Ilcano","Larandir","Merenil","Norimo","Palandil","Quelamir","Sorondil","Tarnamo","Ulimar","Valandir","Arcano","Elerion","Henamo","Lirandil","Oromar","Teldamo","Vilandir","Ystamo"],"female":["Aranya","Calenwe","Elanwe","Faralwen","Ilmaria","Larwen","Mirelda","Nirelwe","Orinwe","Pelaria","Riwenna","Sarenya","Tanalwe","Ulenwe","Valaria","Amarwen","Celanye","Erinya","Halinwe","Indarie","Lirelda","Melawen","Nirinwe","Senwe","Tirinya","Valmire","Yaranwe","Elaria","Aelwen","Calinde","Elrena","Faranye","Halrwen","Ilmawe","Laurenya","Meranwe","Norelda","Palawen","Quelinde","Rilanye","Sorinwe","Taurenya","Ulwenna","Varinde","Alinwe","Celawen","Endarie","Faralye","Ilwena","Lorinde","Neralda","Telarie"]}}}</script>
     <script src="../lib/recipe-engine.js"></script>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

@@ -104,112 +104,107 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-mountain" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 41 L17 14 L25 26 L31 18 L45 41 Z" fill="#fffcf4"/><path d="M12 24 L17 14 L21 21 L18 20 L15 24 Z" stroke-width="1.3"/><circle cx="38" cy="9" r="4.5" fill="#efc84a"/></g></symbol>
+      <symbol id="m-war-axe" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 42 L33 16"/><path d="M27 8 C37 5 46 12 44 22 C38 18 32 18 28 22 C30 16 30 12 27 8 Z" fill="#fffcf4"/><path d="M7 40 l6 6"/><path d="M12 33 l5 5" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-paw" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 22 C31 22 35 30 35 35 C35 40 30 41 24 39 C18 41 13 40 13 35 C13 30 17 22 24 22 Z" fill="#fffcf4"/><ellipse cx="12" cy="20" rx="3.5" ry="4.5" fill="#fffcf4"/><ellipse cx="19" cy="12" rx="3.5" ry="4.5" fill="#fffcf4"/><ellipse cx="29" cy="12" rx="3.5" ry="4.5" fill="#efc84a"/><ellipse cx="36" cy="20" rx="3.5" ry="4.5" fill="#fffcf4"/></g></symbol>
+      <symbol id="m-axe" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 V44"/><path d="M24 10 C19 11 14 9 10 6 C6 13 6 23 11 30 C15 27 19 26 24 25 Z" fill="#fffcf4"/><path d="M24 10 C29 11 34 9 38 6 C42 13 42 23 37 30 C33 27 29 26 24 25 Z" fill="#fffcf4"/><path d="M21 37 h6" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-lizard" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4 C27 4 29 8 27 12 L26 30 C26 36 22 40 13 44 C19 38 22 34 22 30 L21 12 C19 8 19 4 22 4 Z" fill="#fffcf4"/><path d="M22 16 L13 12 M26 16 L35 12 M22 26 L13 30 M26 26 L35 30"/><path d="M13 12 l-3 -2 M35 12 l3 -2 M13 30 l-3 2 M35 30 l3 2" stroke-width="1.3"/><circle cx="23.5" cy="7.5" r="1" fill="#1e1c18"/><path d="M23.5 17 v8" stroke="#efc84a" stroke-width="2.6"/></g></symbol>
+      <symbol id="m-clapper" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="19" width="32" height="23" rx="2" fill="#fffcf4"/><path d="M8 19 L37 8 L39 14 L10 25"/><path d="M15 16 L18 22 M23 13 L26 19 M31 10 L34 16" stroke-width="1.3"/><path d="M14 31 h20" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-leaf" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 40 C10 22 22 10 40 8 C40 28 28 40 10 40 Z" fill="#fffcf4"/><path d="M10 40 L31 17 M18 32 l7 1 M24 25 l7 1" stroke-width="1.4"/><path d="M6 44 C13 41 17 45 25 42" stroke="#efc84a" stroke-width="4"/></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <span aria-current="page">Elder Scrolls</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">Elder</span> Scrolls Name Generators</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mountain"/></svg>
+            </div>
+            <p class="lede">Names for the races of Tamriel, for Skyrim, Elder Scrolls Online and your own stories.</p>
+
+            <div class="section intro">
+                <p>Every race in the Elder Scrolls names itself differently. Orcs add gro- or gra- and a parent's name; Khajiit wear prefixes like the J' in J'zargo; Nords have hyphenated family names like Battle-Born; Argonians may go by a description, like Scouts-Many-Marshes. These generators follow each race's customs, with examples from Skyrim, so your character sounds like they belong in Tamriel.</p><p>Each page explains how that race's names work. They suit Skyrim, Elder Scrolls Online, where names must be unique on your server, and tabletop games set in Tamriel.</p>
+            </div>
+
+            <section class="section">
+                <h2>Where to start</h2>
+                <div class="featured">
+                    <a href="../posts/skyrim-orc-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><b>Skyrim Orc Name Generator</b><span>Full names with gro- and gra-, built the way Skyrim builds them.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+                    <a href="../posts/khajiit-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-paw"/></svg><b>Khajiit Name Generator</b><span>Names with the prefixes of J'zargo and Ri'saad, or without.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+                    <a href="../posts/nord-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-axe"/></svg><b>Nord Name Generator</b><span>Old Norse first names and family names like Battle-Born.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+                    <a href="../posts/argonian-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-lizard"/></svg><b>Argonian Name Generator</b><span>Jel-style names, or descriptive ones like Scouts-Many-Marshes.</span><span class="open hd" aria-hidden="true">Open →</span></a>
                 </div>
-            </div>
-        </div>
-    </nav>
+            </section>
 
-    <div class="container">
-        <header class="hero">
-            <h1>🐉 Elder Scrolls Name Generators: Skyrim and ESO Races</h1>
-            <p>Names for the races of Tamriel, for Skyrim, Elder Scrolls Online and your own stories.</p>
-            <p class="generator-count">6 generators available</p>
-        </header>
-
-        <main>
-
-        <section class="blog-content category-intro">
-            <p>Every race in the Elder Scrolls names itself differently. Orcs add gro- or gra- and a parent's name; Khajiit wear prefixes like the J' in J'zargo; Nords have hyphenated family names like Battle-Born; Argonians may go by a description, like Scouts-Many-Marshes. These generators follow each race's customs, with examples from Skyrim, so your character sounds like they belong in Tamriel.</p><p>Each page explains how that race's names work. They suit Skyrim, Elder Scrolls Online, where names must be unique on your server, and tabletop games set in Tamriel.</p>
-            <h2>Where to start</h2>
-                <ul class="featured-generators">
-                    <li><a href="../posts/skyrim-orc-name-generator.html">🧌 Skyrim Orc Name Generator</a>: full names with gro- and gra-, built the way Skyrim builds them.</li>
-                    <li><a href="../posts/khajiit-name-generator.html">🐱 Khajiit Name Generator</a>: names with the prefixes of J'zargo and Ri'saad, or without.</li>
-                    <li><a href="../posts/nord-name-generator.html">🪓 Nord Name Generator</a>: Old Norse first names and family names like Battle-Born.</li>
-                    <li><a href="../posts/argonian-name-generator.html">🦎 Argonian Name Generator</a>: Jel-style names, or descriptive ones like Scouts-Many-Marshes.</li>
-                </ul>
-        </section>
-            <h2 class="category-all-heading">All 6 Elder Scrolls generators</h2>
-            <div class="generators-grid">
-                
-    <a href="../posts/skyrim-orc-name-generator.html" class="generator-card">
-      <h3>🧌 Skyrim Orc Name Generator</h3>
-      <p>Generate Skyrim orc names the way the game builds them: a first name plus gro- (son of) or gra- (daughter of) and a parent&#039;s name, like Urag gro-Shub.</p>
-    </a>
-  
-    
-    <a href="../posts/nord-name-generator.html" class="generator-card">
-      <h3>🪓 Nord Name Generator</h3>
-      <p>Nord names for Skyrim and Elder Scrolls Online: Old Norse first names, hyphenated family names in the style of Battle-Born and Gray-Mane, or an epithet like Balgruuf the Greater.</p>
-    </a>
-  
-    
-    <a href="../posts/khajiit-name-generator.html" class="generator-card">
-      <h3>🐱 Khajiit Name Generator</h3>
-      <p>Khajiit names for Skyrim, Elder Scrolls Online and your own Tamriel stories, with or without the apostrophe prefixes of names like J&#039;zargo, Ri&#039;saad and M&#039;aiq.</p>
-    </a>
-  
-    
-    <a href="../posts/dunmer-name-generator.html" class="generator-card">
-      <h3>🌋 Dunmer Name Generator</h3>
-      <p>Dunmer (dark elf) names for Skyrim, Morrowind and Elder Scrolls Online: a first name and family name in the style of Revyn Sadri and Brelyna Maryon, with an optional Great House.</p>
-    </a>
-  
-    
-    <a href="../posts/altmer-name-generator.html" class="generator-card">
-      <h3>🌞 Altmer Name Generator</h3>
-      <p>Altmer (high elf) names for Skyrim and Elder Scrolls Online, long and elegant like Ancano, Elenwen and Ondolemar, the names of the Summerset Isles.</p>
-    </a>
-  
-    
-    <a href="../posts/argonian-name-generator.html" class="generator-card">
-      <h3>🦎 Argonian Name Generator</h3>
-      <p>Argonian names for Skyrim and Elder Scrolls Online: Jel-style names like Jaree-Ra and Keerava, or descriptive names like Scouts-Many-Marshes.</p>
-    </a>
-  
-            </div>
+            <section class="section">
+                <h2>All 6 Elder Scrolls generators</h2>
+                <div class="genlist">
+                    <a href="../posts/skyrim-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>Skyrim Orc Name Generator</b><span>Generate Skyrim orc names the way the game builds them: a first name plus gro- (son of) or gra- (daughter of) and a parent&#039;s name, like Urag gro-Shub.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/nord-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-axe"/></svg><div><b>Nord Name Generator</b><span>Nord names for Skyrim and Elder Scrolls Online: Old Norse first names, hyphenated family names in the style of Battle-Born and Gray-Mane, or an epithet like Balgruuf the Greater.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/khajiit-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-paw"/></svg><div><b>Khajiit Name Generator</b><span>Khajiit names for Skyrim, Elder Scrolls Online and your own Tamriel stories, with or without the apostrophe prefixes of names like J&#039;zargo, Ri&#039;saad and M&#039;aiq.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/dunmer-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-clapper"/></svg><div><b>Dunmer Name Generator</b><span>Dunmer (dark elf) names for Skyrim, Morrowind and Elder Scrolls Online: a first name and family name in the style of Revyn Sadri and Brelyna Maryon, with an optional Great House.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/altmer-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf"/></svg><div><b>Altmer Name Generator</b><span>Altmer (high elf) names for Skyrim and Elder Scrolls Online, long and elegant like Ancano, Elenwen and Ondolemar, the names of the Summerset Isles.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/argonian-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-lizard"/></svg><div><b>Argonian Name Generator</b><span>Argonian names for Skyrim and Elder Scrolls Online: Jel-style names like Jaree-Ra and Keerava, or descriptive names like Scouts-Many-Marshes.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
         </main>
-
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
 
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

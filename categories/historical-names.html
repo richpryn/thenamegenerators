@@ -104,112 +104,105 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-hourglass" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 H37 M11 43 H37"/><path d="M15 5 C15 17 23 20 23 24 C23 28 15 31 15 43 H33 C33 31 25 28 25 24 C25 20 33 17 33 5 Z" fill="#fffcf4"/><path d="M18 40 C20 35 28 35 30 40 Z" fill="#efc84a"/><path d="M24 28 V34" stroke-width="1.2"/></g></symbol>
+      <symbol id="m-column" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6 H36 L38 10 H10 Z" fill="#fffcf4"/><path d="M14 10 V38 H34 V10" fill="#fffcf4"/><path d="M19 12 V36 M24 12 V36 M29 12 V36" stroke-width="1.2"/><path d="M10 42 H38 M12 38 H36"/><path d="M8 45 C18 42 30 46 40 43" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-round-shield" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18" fill="#fffcf4"/><circle cx="24" cy="24" r="5" fill="#efc84a"/><path d="M24 6 V19 M24 29 V42 M6 24 H19 M29 24 H42" stroke-width="1.3"/></g></symbol>
+      <symbol id="m-castle" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 14 V4 l8 3 l-8 3" fill="#efc84a"/><path d="M8 43 V18 h4 v4 h4 v-4 h4 v4 h8 v-4 h4 v4 h4 v-4 h4 v25 Z" fill="#fffcf4"/><path d="M20 43 V35 c0 -5 8 -5 8 0 V43"/><path d="M14 28 v3 M34 28 v3"/></g></symbol>
+      <symbol id="m-cowboy-hat" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 26 C14 14 18 9 24 12 C30 9 34 14 33 26" fill="#fffcf4"/><path d="M22 13 C23 17 25 17 26 13"/><path d="M16 24 C20 26 28 26 32 24" stroke="#efc84a" stroke-width="5"/><path d="M3 25 C7 35 41 35 45 25 C40 30 8 30 3 25 Z" fill="#fffcf4"/></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <span aria-current="page">Historical</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">Historical</span> Name Generators</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-hourglass"/></svg>
+            </div>
+            <p class="lede">Real names from history for stories and games: Roman, Ancient Greek, Anglo-Saxon, medieval English, Victorian and Old West.</p>
+
+            <div class="section intro">
+                <p>Every period named people its own way. Romans had three names, Anglo-Saxons built names from two meaningful parts, medieval English surnames came from jobs and places, and the Old West ran on nicknames. These generators use real names from each period and explain how naming worked at the time, so your characters sound like they belong there.</p>
+            </div>
+
+            <section class="section">
+                <h2>Where to start</h2>
+                <div class="featured">
+                    <a href="../posts/roman-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-column"/></svg><b>Roman Name Generator</b><span>Praenomen, nomen and cognomen, with what the cognomen meant.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+                    <a href="../posts/anglo-saxon-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-round-shield"/></svg><b>Anglo-Saxon Name Generator</b><span>Names built from two parts, with their meanings.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+                    <a href="../posts/medieval-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-castle"/></svg><b>Medieval Name Generator</b><span>First names and surnames from jobs, places and nicknames.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+                    <a href="../posts/old-west-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-cowboy-hat"/></svg><b>Old West Name Generator</b><span>Frontier names with a nickname.</span><span class="open hd" aria-hidden="true">Open →</span></a>
                 </div>
-            </div>
-        </div>
-    </nav>
+            </section>
 
-    <div class="container">
-        <header class="hero">
-            <h1>🏺 Historical Name Generators: Real Names From Rome to the Old West</h1>
-            <p>Real names from history for stories and games: Roman, Ancient Greek, Anglo-Saxon, medieval English, Victorian and Old West.</p>
-            <p class="generator-count">6 generators available</p>
-        </header>
-
-        <main>
-
-        <section class="blog-content category-intro">
-            <p>Every period named people its own way. Romans had three names, Anglo-Saxons built names from two meaningful parts, medieval English surnames came from jobs and places, and the Old West ran on nicknames. These generators use real names from each period and explain how naming worked at the time, so your characters sound like they belong there.</p>
-            <h2>Where to start</h2>
-                <ul class="featured-generators">
-                    <li><a href="../posts/roman-name-generator.html">🏛️ Roman Name Generator</a>: praenomen, nomen and cognomen, with what the cognomen meant.</li>
-                    <li><a href="../posts/anglo-saxon-name-generator.html">🛡️ Anglo-Saxon Name Generator</a>: names built from two parts, with their meanings.</li>
-                    <li><a href="../posts/medieval-name-generator.html">🏰 Medieval Name Generator</a>: first names and surnames from jobs, places and nicknames.</li>
-                    <li><a href="../posts/old-west-name-generator.html">🤠 Old West Name Generator</a>: frontier names with a nickname.</li>
-                </ul>
-        </section>
-            <h2 class="category-all-heading">All 6 Historical generators</h2>
-            <div class="generators-grid">
-                
-    <a href="../posts/roman-name-generator.html" class="generator-card">
-      <h3>🏛️ Roman Name Generator</h3>
-      <p>Real Roman names built the Roman way: praenomen, nomen and cognomen for men (Marcus Tullius Cicero), and the family name for women, with what each cognomen meant.</p>
-    </a>
-  
-    
-    <a href="../posts/ancient-greek-name-generator.html" class="generator-card">
-      <h3>🏺 Ancient Greek Name Generator</h3>
-      <p>Real Ancient Greek names with their meanings (Nikias, victory; Philippos, lover of horses), as a single name, with a father&#039;s name, or with a city.</p>
-    </a>
-  
-    
-    <a href="../posts/anglo-saxon-name-generator.html" class="generator-card">
-      <h3>🛡️ Anglo-Saxon Name Generator</h3>
-      <p>Old English names built the Anglo-Saxon way, from two meaningful parts: Æthelwulf (noble wolf), Eadgifu (prosperity and gift), with the meaning of each part.</p>
-    </a>
-  
-    
-    <a href="../posts/medieval-name-generator.html" class="generator-card">
-      <h3>🏰 Medieval Name Generator</h3>
-      <p>Real medieval English names with surnames from jobs (Fletcher, arrow-maker), places (atte Wode), fathers (FitzWalter) and nicknames (Armstrong), with what each surname meant.</p>
-    </a>
-  
-    
-    <a href="../posts/victorian-name-generator.html" class="generator-card">
-      <h3>🎩 Victorian Name Generator</h3>
-      <p>Real Victorian first names (Ada, Florence, Septimus, Herbert) with English surnames, optionally with a title or a real Victorian job like lamplighter or knocker-upper.</p>
-    </a>
-  
-    
-    <a href="../posts/old-west-name-generator.html" class="generator-card">
-      <h3>🤠 Old West Name Generator</h3>
-      <p>Old West names for cowboys, outlaws and frontier folk: 19th-century American first names with a surname, and a nickname like Two-Gun or Deadeye.</p>
-    </a>
-  
-            </div>
+            <section class="section">
+                <h2>All 6 Historical generators</h2>
+                <div class="genlist">
+                    <a href="../posts/roman-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-column"/></svg><div><b>Roman Name Generator</b><span>Real Roman names built the Roman way: praenomen, nomen and cognomen for men (Marcus Tullius Cicero), and the family name for women, with what each cognomen meant.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/ancient-greek-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-hourglass"/></svg><div><b>Ancient Greek Name Generator</b><span>Real Ancient Greek names with their meanings (Nikias, victory; Philippos, lover of horses), as a single name, with a father&#039;s name, or with a city.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/anglo-saxon-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-round-shield"/></svg><div><b>Anglo-Saxon Name Generator</b><span>Old English names built the Anglo-Saxon way, from two meaningful parts: Æthelwulf (noble wolf), Eadgifu (prosperity and gift), with the meaning of each part.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/medieval-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-castle"/></svg><div><b>Medieval Name Generator</b><span>Real medieval English names with surnames from jobs (Fletcher, arrow-maker), places (atte Wode), fathers (FitzWalter) and nicknames (Armstrong), with what each surname meant.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/victorian-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-hourglass"/></svg><div><b>Victorian Name Generator</b><span>Real Victorian first names (Ada, Florence, Septimus, Herbert) with English surnames, optionally with a title or a real Victorian job like lamplighter or knocker-upper.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/old-west-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-cowboy-hat"/></svg><div><b>Old West Name Generator</b><span>Old West names for cowboys, outlaws and frontier folk: 19th-century American first names with a surname, and a nickname like Two-Gun or Deadeye.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
         </main>
-
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
 
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

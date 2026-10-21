@@ -297,276 +297,241 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
-                </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-round-shield" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18" fill="#fffcf4"/><circle cx="24" cy="24" r="5" fill="#efc84a"/><path d="M24 6 V19 M24 29 V42 M6 24 H19 M29 24 H42" stroke-width="1.3"/></g></symbol>
+      <symbol id="m-axe" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 V44"/><path d="M24 10 C19 11 14 9 10 6 C6 13 6 23 11 30 C15 27 19 26 24 25 Z" fill="#fffcf4"/><path d="M24 10 C29 11 34 9 38 6 C42 13 42 23 37 30 C33 27 29 26 24 25 Z" fill="#fffcf4"/><path d="M21 37 h6" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-sword" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(35 24 24)"><path d="M24 2 L28 8 L28 30 L20 30 L20 8 Z" fill="#fffcf4"/><path d="M24 9 V28" stroke-width="1.2"/><path d="M14 30 H34"/><path d="M24 30 V41"/><circle cx="24" cy="43.5" r="2.4" fill="#efc84a"/></g></g></symbol>
+      <symbol id="m-sword-crown" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(35 24 24)"><path d="M24 6 L28 12 L28 32 L20 32 L20 12 Z" fill="#fffcf4"/><path d="M14 32 H34"/><path d="M24 32 V42"/></g><path d="M3 10 L6 3 L10 8 L13 2 L16 8 L20 3 L22 10 Z" fill="#efc84a"/></g></symbol>
+      <symbol id="m-katana" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 32 C24 24 33 14 42 4 C41 10 35 18 19 35 Z" fill="#fffcf4"/><ellipse cx="17" cy="33" rx="5.5" ry="2.6" transform="rotate(-45 17 33)" fill="#efc84a"/><path d="M15 35 L6 44"/><path d="M8 40 l2 2 M11 37 l2 2" stroke-width="1.2"/></g></symbol>
+      <symbol id="m-wand" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 42 L32 16" stroke-width="3"/><path d="M8 42 L13 37" stroke-width="5.5"/><path d="M38 3 l2 5 l5 2 l-5 2 l-2 5 l-2 -5 l-5 -2 l5 -2 z" fill="#efc84a" stroke-width="1.4"/><path d="M29 6 l1 2 M44 20 l-2 1 M33 22 l2 1" stroke-width="1.2"/></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../categories/objects-names.html">Objects</a> / <span aria-current="page">Shield Name Generator</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">Shield</span> Name Generator</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-round-shield"/></svg>
             </div>
-        </div>
-    </nav>
+            <p class="lede">A name, a duty and a coat of arms: Oathward, Protector of the Weak, gules, a lion rampant or.</p>
 
-    <div class="container">
-        <header class="blog-hero">
-            <h1>🛡️ Shield Name Generator</h1>
-            <p class="tagline">A name, a duty and a coat of arms: Oathward, Protector of the Weak, gules, a lion rampant or.</p>
-            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
-        </header>
-
-        <main>
-            <section class="embedded-generator">
-                <div class="generator-card">
-                    <h2>Generate Shield Names</h2>
-                    <p class="generator-description">Shield names with a duty or a coat of arms in proper heraldry: Oathward, Protector of the Weak; Gules, a lion rampant or.</p>
-                    
-                    <div class="simple-generator">
-                        <div class="filters">
-          <div class="filter-group">
-            <label for="filter-format">Name Format:</label>
-            <select id="filter-format" name="format" data-filter="format">
-              <option value="name">Name (Oathward)</option>
-              <option value="protector">Name and duty (Oathward, Protector of the Weak)</option>
-              <option value="heraldry">Coat of arms (Gules, a lion rampant or)</option>
-              <option value="both">Name and coat of arms</option>
-            </select>
+            <section class="sheet hd simple-generator" id="generator" aria-label="Shield Name Generator">
+                <div class="gen-one">
+          <div class="group">
+            <label class="label" for="filter-format">Name Format</label>
+            <div class="ctl sel hd">
+              <select id="filter-format" name="format" data-filter="format">
+                <option value="name">Name (Oathward)</option>
+                <option value="protector">Name and duty (Oathward, Protector of the Weak)</option>
+                <option value="heraldry">Coat of arms (Gules, a lion rampant or)</option>
+                <option value="both">Name and coat of arms</option>
+              </select>
+            </div>
           </div></div>
-                        <div class="generator-controls">
-                            <div class="filter-group count-group">
-                                <label for="name-count">How many:</label>
-                                <select id="name-count">
-                                    <option value="8" selected>8 names</option>
-                                    <option value="16">16 names</option>
-                                    <option value="32">32 names</option>
-                                </select>
-                            </div>
-                            <button id="generate-btn" class="generate-button">Generate Names</button>
-                        </div>
-                        <div class="results-area" id="results">
-                            <p class="results-placeholder">Click "Generate Names" to see results</p>
-                        </div>
-                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
-                        <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="true">
+                    <p class="results-empty">Press Generate Names for 8 shield names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
                     </div>
-                    
-                    <div class="cta-box">
-                        <p><strong>Need more options?</strong></p>
-                        <a href="../index.html" class="cta-button">Try the Ultimate Random Name Generator →</a>
-                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
+
+            <section class="section example-names">
+                <h2>Example Shield Names</h2>
+                <p class="sub">A few names this generator came up with. Tap one to copy it, or press "Generate Names" above for more.</p>
+                <div class="ex">
+                <div class="exbox hd">
+                    <h3>Name</h3>
+                    <ul>
+                        <li>Nightheart</li>
+                        <li>Starwall</li>
+                        <li>Oakhold</li>
+                        <li>the Wolfguard Shield</li>
+                        <li>the Nightbrace Shield</li>
+                        <li>Stormgate</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Name and duty</h3>
+                    <ul>
+                        <li>Nightkeep, Protector of the Crown</li>
+                        <li>Mercyheart, Protector of the Bridge</li>
+                        <li>Oakguard, Protector of the Weak</li>
+                        <li>Frostheart, Protector of the Holy Flame</li>
+                        <li>Stormward, Protector of the Children of the Vale</li>
+                        <li>Irongate, Protector of the Shield-Wall</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Coat of arms</h3>
+                    <ul>
+                        <li>Or, a sword sable (a black sword on gold)</li>
+                        <li>Or, a key azure (a blue key on gold)</li>
+                        <li>Azure, a lion rampant or (a gold lion on blue)</li>
+                        <li>Or, a ship vert (a green ship on gold)</li>
+                        <li>Argent, a boar vert (a green boar on silver)</li>
+                        <li>Argent, a lion rampant azure (a blue lion on silver)</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Name and coat of arms</h3>
+                    <ul>
+                        <li>Dawnrampart: Gules, a sword argent (a silver sword on red)</li>
+                        <li>Mercyguard: Vert, an eagle displayed argent (a silver eagle on green)</li>
+                        <li>Nightwarden: Argent, a tower purpure (a purple tower on silver)</li>
+                        <li>Kingwall: Purpure, a stag argent (a silver stag on purple)</li>
+                        <li>Hearthkeep: Or, a lion rampant purpure (a purple lion on gold)</li>
+                        <li>Embermantle: Argent, a cross gules (a red cross on silver)</li>
+                    </ul>
+                </div>
                 </div>
             </section>
 
-            <section class="example-names">
-                <h2>Example Shield Names</h2>
-                <p>A few names this generator came up with. Press "Generate Names" above for more.</p>
-                <h3>Name</h3>
-                <ul class="name-results">
-                    <li>Nightheart</li>
-                    <li>Starwall</li>
-                    <li>Oakhold</li>
-                    <li>the Wolfguard Shield</li>
-                    <li>the Nightbrace Shield</li>
-                    <li>Stormgate</li>
-                </ul>
-                <h3>Name and duty</h3>
-                <ul class="name-results">
-                    <li>Nightkeep, Protector of the Crown</li>
-                    <li>Mercyheart, Protector of the Bridge</li>
-                    <li>Oakguard, Protector of the Weak</li>
-                    <li>Frostheart, Protector of the Holy Flame</li>
-                    <li>Stormward, Protector of the Children of the Vale</li>
-                    <li>Irongate, Protector of the Shield-Wall</li>
-                </ul>
-                <h3>Coat of arms</h3>
-                <ul class="name-results">
-                    <li>Or, a sword sable (a black sword on gold)</li>
-                    <li>Or, a key azure (a blue key on gold)</li>
-                    <li>Azure, a lion rampant or (a gold lion on blue)</li>
-                    <li>Or, a ship vert (a green ship on gold)</li>
-                    <li>Argent, a boar vert (a green boar on silver)</li>
-                    <li>Argent, a lion rampant azure (a blue lion on silver)</li>
-                </ul>
-                <h3>Name and coat of arms</h3>
-                <ul class="name-results">
-                    <li>Dawnrampart: Gules, a sword argent (a silver sword on red)</li>
-                    <li>Mercyguard: Vert, an eagle displayed argent (a silver eagle on green)</li>
-                    <li>Nightwarden: Argent, a tower purpure (a purple tower on silver)</li>
-                    <li>Kingwall: Purpure, a stag argent (a silver stag on purple)</li>
-                    <li>Hearthkeep: Or, a lion rampant purpure (a purple lion on gold)</li>
-                    <li>Embermantle: Argent, a cross gules (a red cross on silver)</li>
-                </ul>
-            </section>
-
-            <section class="blog-content how-it-works">
+            <section class="section how-it-works">
                 <h2>How the Shield Name Generator Works</h2>
+                <div class="howto hd">
                 <p>It works from 559 names and name parts, which combine into over 75,000 possible results.</p>
                 <p>The choices:</p>
                 <ul><li><strong>Name Format:</strong><ul><li>Name, e.g. <em>Stormrampart</em></li><li>Name and duty, e.g. <em>Thornheart, Protector of the Pilgrims&#039; Road</em></li><li>Coat of arms, e.g. <em>Azure, a cross argent (a silver cross on blue)</em></li><li>Name and coat of arms, e.g. <em>Ironheart: Or, an eagle displayed purpure (a purple eagle on gold)</em></li></ul></li></ul>
-                <p>Each press gives you 8, 16 or 32 names (choose under "How many"), and you won't see the same one twice until you've been through everything for the choices you've made.</p>
+                <p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet, until the names for the choices you've made run out.</p>
+                </div>
             </section>
 
-            <article class="blog-content" itemscope itemtype="https://schema.org/Article">
+            <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="Shield Name Generator">
                 <meta itemprop="description" content="Shield names with a duty or a coat of arms in proper heraldry: Oathward, Protector of the Weak; Gules, a lion rampant or.">
-                <section itemprop="articleBody">
-                    <p>A shield is the one piece of kit that says who you are: in the Middle Ages, the design on it was your identity on the battlefield. This <strong>shield name generator</strong> gives you names for a legendary shield, a duty to go with it, and a coat of arms written in real heraldic language, with a plain-English translation.</p>
-                </section>
+                <div itemprop="articleBody">
+                <p class="big">A shield is the one piece of kit that says who you are: in the Middle Ages, the design on it was your identity on the battlefield. This <strong>shield name generator</strong> gives you names for a legendary shield, a duty to go with it, and a coat of arms written in real heraldic language, with a plain-English translation.</p>
                 
-      <section>
-        <h2>Famous shields</h2>
-        <ul><li><strong>The Aegis</strong> was the shield (or goatskin cloak) of Zeus and Athena, later carrying the head of Medusa. Its name is why we still say "under the aegis of".</li><li><strong>Svalinn</strong>, in Norse myth, stands in front of the sun. Without it, the mountains and seas would burn.</li><li><strong>Pridwen</strong> is King Arthur's shield in Geoffrey of Monmouth, painted with the image of the Virgin Mary. In older Welsh tales the name belongs to his ship.</li><li><strong>The shield of Achilles</strong>, made by the smith-god Hephaestus, gets a whole passage of the <em>Iliad</em> describing the scenes worked into it.</li></ul>
-      </section>
-    
+                <h2>Famous shields</h2>
+                <ul><li><strong>The Aegis</strong> was the shield (or goatskin cloak) of Zeus and Athena, later carrying the head of Medusa. Its name is why we still say "under the aegis of".</li><li><strong>Svalinn</strong>, in Norse myth, stands in front of the sun. Without it, the mountains and seas would burn.</li><li><strong>Pridwen</strong> is King Arthur's shield in Geoffrey of Monmouth, painted with the image of the Virgin Mary. In older Welsh tales the name belongs to his ship.</li><li><strong>The shield of Achilles</strong>, made by the smith-god Hephaestus, gets a whole passage of the <em>Iliad</em> describing the scenes worked into it.</li></ul>
 
-      <section>
-        <h2>Reading a coat of arms</h2>
-        <p>Heraldry has its own language, from Norman French. A coat of arms names the background (the <em>field</em>) first, then what's on it (the <em>charge</em>) and its colour:</p><ul><li><strong>Metals</strong>: <em>or</em> (gold) and <em>argent</em> (silver).</li><li><strong>Colours</strong>: <em>gules</em> (red), <em>azure</em> (blue), <em>vert</em> (green), <em>sable</em> (black) and <em>purpure</em> (purple).</li><li><strong>The rule of tincture</strong>: never put a colour on a colour or a metal on a metal, so the design can be seen from a distance. Every coat of arms the generator makes follows it.</li><li><strong>A few words</strong>: a lion <em>rampant</em> stands on its hind legs; an eagle <em>displayed</em> has its wings spread; a <em>mullet</em> is a star.</li></ul><p>So <em>Gules, a lion rampant or</em> means a gold lion standing up on a red shield: the arms Scotland's kings would recognise, with the colours swapped.</p>
-      </section>
-    
+                <h2>Reading a coat of arms</h2>
+                <p>Heraldry has its own language, from Norman French. A coat of arms names the background (the <em>field</em>) first, then what's on it (the <em>charge</em>) and its colour:</p><ul><li><strong>Metals</strong>: <em>or</em> (gold) and <em>argent</em> (silver).</li><li><strong>Colours</strong>: <em>gules</em> (red), <em>azure</em> (blue), <em>vert</em> (green), <em>sable</em> (black) and <em>purpure</em> (purple).</li><li><strong>The rule of tincture</strong>: never put a colour on a colour or a metal on a metal, so the design can be seen from a distance. Every coat of arms the generator makes follows it.</li><li><strong>A few words</strong>: a lion <em>rampant</em> stands on its hind legs; an eagle <em>displayed</em> has its wings spread; a <em>mullet</em> is a star.</li></ul><p>So <em>Gules, a lion rampant or</em> means a gold lion standing up on a red shield: the arms Scotland's kings would recognise, with the colours swapped.</p>
 
-      <section>
-        <h2>Naming a shield</h2>
-        <ul><li><strong>A shield's job is to protect something.</strong> The "Name and duty" format makes that its title: <em>Protector of the Pass</em>, <em>Protector of Lost Causes</em>.</li><li><strong>Let the arms tell the story.</strong> A family with a tower on its shield held a castle; a key might mean they kept a gate.</li><li><strong>For a paladin or knight</strong>, pair this with the <a href="knight-name-generator.html">Knight Name Generator</a>.</li></ul>
-      </section>
-    
+                <h2>Naming a shield</h2>
+                <ul><li><strong>A shield's job is to protect something.</strong> The "Name and duty" format makes that its title: <em>Protector of the Pass</em>, <em>Protector of Lost Causes</em>.</li><li><strong>Let the arms tell the story.</strong> A family with a tower on its shield held a castle; a key might mean they kept a gate.</li><li><strong>For a paladin or knight</strong>, pair this with the <a href="knight-name-generator.html">Knight Name Generator</a>.</li></ul>
+                </div>
             </article>
 
-            
-      <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Are the coats of arms correct heraldry?</h3>
-              <p class="faq-answer">Yes, in their simple form: each gives a field and a charge in the proper terms, and follows the rule of tincture (no colour on colour, no metal on metal). Real arms can be much more complicated.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">What does "gules" mean?</h3>
-              <p class="faq-answer">Red. Heraldry uses its own names for colours: gules (red), azure (blue), vert (green), sable (black), purpure (purple), and the metals or (gold) and argent (silver).</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Can I use these in D&D or my book?</h3>
-              <p class="faq-answer">Yes, they're free to use and you don't need to credit the site.</p>
-            </div>
-          
-        </div>
-      </section>
-            
-      <section class="related-section">
-        <h2>Related Name Generators</h2>
-        <div class="related-grid" id="related-generators">
-          <a href="../posts/axe-name-generator.html" class="related-card">
-            <h3>🪓 Axe Name Generator</h3>
-            <p>Axe names in four styles: Norse axes named like troll-women, dwarven heirlooms, brutal orc cleavers and a woodsman&#039;s Old Bess, with an epithet or description.</p>
-          </a>
-          <a href="../posts/elven-sword-name-generator.html" class="related-card">
-            <h3>⚔️ Elven Sword Name Generator</h3>
-            <p>Elven sword names built from Tolkien&#039;s Sindarin and Quenya, each with its real meaning, plus the famous blades of the legends: Glamdring, Orcrist, Andúril.</p>
-          </a>
-          <a href="../posts/funny-minecraft-sword-name-generator.html" class="related-card">
-            <h3>🗡️ Funny Minecraft Sword Name Generator</h3>
-            <p>Funny Minecraft sword names that fit the anvil&#039;s rename box, from mob puns like Creeper Sweeper to Bladey McBladeface.</p>
-          </a>
-          <a href="../posts/game-of-thrones-sword-name-generator.html" class="related-card">
-            <h3>⚔️ Game of Thrones Sword Name Generator</h3>
-            <p>Game of Thrones style sword names to suit a great house, from northern wolves to Ironborn reavers, with the blade if you want it: Ashsister, a Valyrian steel longsword.</p>
-          </a>
-          <a href="../posts/hammer-name-generator.html" class="related-card">
-            <h3>🔨 Hammer Name Generator</h3>
-            <p>Names for legendary hammers, war hammers, mauls and maces, from short ones like Sacred Anvil to full titles like &quot;Star-Iron Warhammer, Breaker of Chains&quot;.</p>
-          </a>
-          <a href="../posts/japanese-sword-name-generator.html" class="related-card">
-            <h3>⚔️ Japanese Sword Name Generator</h3>
-            <p>Japanese sword names built from real Japanese words, with their meaning: poetic names like Tsuki-kage, &quot;Moon Shadow&quot;, and cutter names like Kumo-giri, &quot;Cloud Cutter&quot;.</p>
-          </a>
-        </div>
-      </section>
-            
-      <section class="category-generators-section">
-        <h2>All Objects Name Generators</h2>
-        <div class="category-generators-grid" id="category-generators">
-          <a href="../posts/poison-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">☠️</span>
-            <span class="category-generator-title">Poison Name Generator</span>
-          </a>
-          <a href="../posts/sword-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Sword Name Generator</span>
-          </a>
-          <a href="../posts/axe-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🪓</span>
-            <span class="category-generator-title">Axe Name Generator</span>
-          </a>
-          <a href="../posts/hammer-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🔨</span>
-            <span class="category-generator-title">Hammer Name Generator</span>
-          </a>
-          <a href="../posts/wand-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🪄</span>
-            <span class="category-generator-title">Wand Name Generator</span>
-          </a>
-          <a href="../posts/funny-minecraft-sword-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🗡️</span>
-            <span class="category-generator-title">Funny Minecraft Sword Name Generator</span>
-          </a>
-          <a href="../posts/elven-sword-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Elven Sword Name Generator</span>
-          </a>
-          <a href="../posts/japanese-sword-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Japanese Sword Name Generator</span>
-          </a>
-          <a href="../posts/game-of-thrones-sword-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Game of Thrones Sword Name Generator</span>
-          </a>
-        </div>
-      </section>
-        </main>
+            <section class="section faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Are the coats of arms correct heraldry?</summary>
+                        <div>Yes, in their simple form: each gives a field and a charge in the proper terms, and follows the rule of tincture (no colour on colour, no metal on metal). Real arms can be much more complicated.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>What does "gules" mean?</summary>
+                        <div>Red. Heraldry uses its own names for colours: gules (red), azure (blue), vert (green), sable (black), purpure (purple), and the metals or (gold) and argent (silver).</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Can I use these in D&D or my book?</summary>
+                        <div>Yes, they're free to use and you don't need to credit the site.</div>
+                    </details>
+                </div>
+            </section>
 
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+            <section class="section related-section">
+                <h2>Related Name Generators</h2>
+                <div class="genlist" id="related-generators">
+                    <a href="../posts/axe-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-axe"/></svg><div><b>Axe Name Generator</b><span>Axe names in four styles: Norse axes named like troll-women, dwarven heirlooms, brutal orc cleavers and a woodsman&#039;s Old Bess, with an epithet or description.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/elven-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Elven Sword Name Generator</b><span>Elven sword names built from Tolkien&#039;s Sindarin and Quenya, each with its real meaning, plus the famous blades of the legends: Glamdring, Orcrist, Andúril.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/funny-minecraft-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Funny Minecraft Sword Name Generator</b><span>Funny Minecraft sword names that fit the anvil&#039;s rename box, from mob puns like Creeper Sweeper to Bladey McBladeface.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/game-of-thrones-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword-crown"/></svg><div><b>Game of Thrones Sword Name Generator</b><span>Game of Thrones style sword names to suit a great house, from northern wolves to Ironborn reavers, with the blade if you want it: Ashsister, a Valyrian steel longsword.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/hammer-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Hammer Name Generator</b><span>Names for legendary hammers, war hammers, mauls and maces, from short ones like Sacred Anvil to full titles like &quot;Star-Iron Warhammer, Breaker of Chains&quot;.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/japanese-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-katana"/></svg><div><b>Japanese Sword Name Generator</b><span>Japanese sword names built from real Japanese words, with their meaning: poetic names like Tsuki-kage, &quot;Moon Shadow&quot;, and cutter names like Kumo-giri, &quot;Cloud Cutter&quot;.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
+
+            <section class="section category-generators-section">
+                <h2>More Objects Name Generators</h2>
+                <div class="genlist compact" id="category-generators">
+                    <a href="../posts/poison-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Poison Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Sword Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/axe-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-axe"/></svg><div><b>Axe Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/hammer-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Hammer Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/wand-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-wand"/></svg><div><b>Wand Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/funny-minecraft-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Funny Minecraft Sword Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/elven-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Elven Sword Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/japanese-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-katana"/></svg><div><b>Japanese Sword Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/game-of-thrones-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword-crown"/></svg><div><b>Game of Thrones Sword Name Generator</b></div><em aria-hidden="true">→</em></a>
+                </div>
+                <p class="all-link"><a href="../categories/objects-names.html">All Objects name generators</a></p>
+            </section>
+            <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
 
     <script type="application/json" id="generator-config">{"title":"Shield Name Generator","slug":"shield-name-generator","filters":{"format":{"label":"Name Format","options":["name","protector","heraldry","both"],"optionLabels":{"name":"Name (Oathward)","protector":"Name and duty (Oathward, Protector of the Weak)","heraldry":"Coat of arms (Gules, a lion rampant or)","both":"Name and coat of arms"}}},"recipe":"switch","on":"format","cases":{"name":{"recipe":"template","template":["[names]","the [names] Shield"]},"protector":{"recipe":"template","template":"[names], Protector of [protects]"},"heraldry":{"recipe":"pick","from":"blazons"},"both":{"recipe":"template","template":"[names]: [blazons]"}},"data":{"names":["Dawnbrace","Dawngate","Dawnguard","Dawnheart","Dawnhold","Dawnkeep","Dawnmantle","Dawnrampart","Dawnwall","Dawnward","Dawnwarden","Dawnwing","Emberbrace","Embergate","Emberguard","Emberheart","Emberhold","Emberkeep","Embermantle","Emberwall","Emberward","Emberwarden","Emberwing","Faithbrace","Faithgate","Faithguard","Faithkeep","Faithmantle","Faithrampart","Faithwall","Faithward","Faithwarden","Faithwing","Frostbrace","Frostgate","Frostguard","Frostheart","Frosthold","Frostkeep","Frostmantle","Frostrampart","Frostwall","Frostward","Frostwarden","Frostwing","Hearthbrace","Hearthgate","Hearthguard","Hearthkeep","Hearthmantle","Hearthrampart","Hearthwall","Hearthward","Hearthwarden","Hearthwing","Hopebrace","Hopegate","Hopeguard","Hopeheart","Hopehold","Hopekeep","Hopemantle","Hoperampart","Hopewall","Hopeward","Hopewarden","Hopewing","Ironbrace","Irongate","Ironguard","Ironheart","Ironhold","Ironkeep","Ironmantle","Ironrampart","Ironwall","Ironward","Ironwarden","Ironwing","Kingbrace","Kingheart","Kinghold","Kingkeep","Kingmantle","Kingrampart","Kingwall","Kingward","Kingwarden","Kingwing","Lionbrace","Liongate","Lionguard","Lionhold","Lionkeep","Lionmantle","Lionrampart","Lionwall","Lionward","Lionwarden","Lionwing","Mercybrace","Mercygate","Mercyguard","Mercyheart","Mercyhold","Mercykeep","Mercymantle","Mercyrampart","Mercywall","Mercyward","Mercywarden","Mercywing","Nightbrace","Nightgate","Nightguard","Nightheart","Nighthold","Nightkeep","Nightmantle","Nightrampart","Nightwall","Nightward","Nightwarden","Oakbrace","Oakgate","Oakguard","Oakhold","Oakmantle","Oakrampart","Oakwall","Oakward","Oakwarden","Oakwing","Oathbrace","Oathgate","Oathguard","Oathkeep","Oathmantle","Oathrampart","Oathwall","Oathward","Oathwarden","Oathwing","Ravenbrace","Ravengate","Ravenguard","Ravenheart","Ravenhold","Ravenkeep","Ravenmantle","Ravenrampart","Ravenwall","Ravenward","Ravenwarden","Ravenwing","Starbrace","Stargate","Starguard","Starheart","Starhold","Starkeep","Starmantle","Starwall","Starward","Starwarden","Stonebrace","Stonegate","Stoneguard","Stoneheart","Stonehold","Stonekeep","Stonemantle","Stonerampart","Stonewall","Stoneward","Stonewarden","Stonewing","Stormbrace","Stormgate","Stormguard","Stormheart","Stormhold","Stormkeep","Stormrampart","Stormward","Stormwarden","Stormwing","Sunbrace","Sungate","Sunguard","Sunheart","Sunhold","Sunkeep","Sunmantle","Sunrampart","Sunwall","Sunward","Sunwarden","Sunwing","Thornbrace","Thorngate","Thornguard","Thornheart","Thornhold","Thornkeep","Thornmantle","Thornrampart","Thornwall","Thornward","Thornwarden","Thornwing","Wolfbrace","Wolfgate","Wolfguard","Wolfheart","Wolfhold","Wolfkeep","Wolfmantle","Wolframpart","Wolfwall","Wolfward","Wolfwarden","Wolfwing"],"protects":["the Weak","the Realm","the Gate","the Innocent","the Last King","the Northern March","the Faithful","the Children of the Vale","the Bridge","the Holy Flame","the Pass","the City","Lost Causes","the Shield-Wall","the Crown","the Pilgrims' Road"],"blazons":["Gules, a lion rampant or (a gold lion on red)","Or, a lion rampant gules (a red lion on gold)","Gules, an eagle displayed or (a gold eagle on red)","Or, an eagle displayed gules (a red eagle on gold)","Gules, a stag or (a gold stag on red)","Or, a stag gules (a red stag on gold)","Gules, a tower or (a gold tower on red)","Or, a tower gules (a red tower on gold)","Gules, a dragon or (a gold dragon on red)","Or, a dragon gules (a red dragon on gold)","Gules, a cross or (a gold cross on red)","Or, a cross gules (a red cross on gold)","Gules, a boar or (a gold boar on red)","Or, a boar gules (a red boar on gold)","Gules, a wolf or (a gold wolf on red)","Or, a wolf gules (a red wolf on gold)","Gules, a griffin or (a gold griffin on red)","Or, a griffin gules (a red griffin on gold)","Gules, an oak tree or (a gold oak tree on red)","Or, an oak tree gules (a red oak tree on gold)","Gules, a sword or (a gold sword on red)","Or, a sword gules (a red sword on gold)","Gules, a key or (a gold key on red)","Or, a key gules (a red key on gold)","Gules, a crescent or (a gold crescent moon on red)","Or, a crescent gules (a red crescent moon on gold)","Gules, a mullet or (a gold star on red)","Or, a mullet gules (a red star on gold)","Gules, a bear or (a gold bear on red)","Or, a bear gules (a red bear on gold)","Gules, a ship or (a gold ship on red)","Or, a ship gules (a red ship on gold)","Gules, a lion rampant argent (a silver lion on red)","Argent, a lion rampant gules (a red lion on silver)","Gules, an eagle displayed argent (a silver eagle on red)","Argent, an eagle displayed gules (a red eagle on silver)","Gules, a stag argent (a silver stag on red)","Argent, a stag gules (a red stag on silver)","Gules, a tower argent (a silver tower on red)","Argent, a tower gules (a red tower on silver)","Gules, a dragon argent (a silver dragon on red)","Argent, a dragon gules (a red dragon on silver)","Gules, a cross argent (a silver cross on red)","Argent, a cross gules (a red cross on silver)","Gules, a boar argent (a silver boar on red)","Argent, a boar gules (a red boar on silver)","Gules, a wolf argent (a silver wolf on red)","Argent, a wolf gules (a red wolf on silver)","Gules, a griffin argent (a silver griffin on red)","Argent, a griffin gules (a red griffin on silver)","Gules, an oak tree argent (a silver oak tree on red)","Argent, an oak tree gules (a red oak tree on silver)","Gules, a sword argent (a silver sword on red)","Argent, a sword gules (a red sword on silver)","Gules, a key argent (a silver key on red)","Argent, a key gules (a red key on silver)","Gules, a crescent argent (a silver crescent moon on red)","Argent, a crescent gules (a red crescent moon on silver)","Gules, a mullet argent (a silver star on red)","Argent, a mullet gules (a red star on silver)","Gules, a bear argent (a silver bear on red)","Argent, a bear gules (a red bear on silver)","Gules, a ship argent (a silver ship on red)","Argent, a ship gules (a red ship on silver)","Azure, a lion rampant or (a gold lion on blue)","Or, a lion rampant azure (a blue lion on gold)","Azure, an eagle displayed or (a gold eagle on blue)","Or, an eagle displayed azure (a blue eagle on gold)","Azure, a stag or (a gold stag on blue)","Or, a stag azure (a blue stag on gold)","Azure, a tower or (a gold tower on blue)","Or, a tower azure (a blue tower on gold)","Azure, a dragon or (a gold dragon on blue)","Or, a dragon azure (a blue dragon on gold)","Azure, a cross or (a gold cross on blue)","Or, a cross azure (a blue cross on gold)","Azure, a boar or (a gold boar on blue)","Or, a boar azure (a blue boar on gold)","Azure, a wolf or (a gold wolf on blue)","Or, a wolf azure (a blue wolf on gold)","Azure, a griffin or (a gold griffin on blue)","Or, a griffin azure (a blue griffin on gold)","Azure, an oak tree or (a gold oak tree on blue)","Or, an oak tree azure (a blue oak tree on gold)","Azure, a sword or (a gold sword on blue)","Or, a sword azure (a blue sword on gold)","Azure, a key or (a gold key on blue)","Or, a key azure (a blue key on gold)","Azure, a crescent or (a gold crescent moon on blue)","Or, a crescent azure (a blue crescent moon on gold)","Azure, a mullet or (a gold star on blue)","Or, a mullet azure (a blue star on gold)","Azure, a bear or (a gold bear on blue)","Or, a bear azure (a blue bear on gold)","Azure, a ship or (a gold ship on blue)","Or, a ship azure (a blue ship on gold)","Azure, a lion rampant argent (a silver lion on blue)","Argent, a lion rampant azure (a blue lion on silver)","Azure, an eagle displayed argent (a silver eagle on blue)","Argent, an eagle displayed azure (a blue eagle on silver)","Azure, a stag argent (a silver stag on blue)","Argent, a stag azure (a blue stag on silver)","Azure, a tower argent (a silver tower on blue)","Argent, a tower azure (a blue tower on silver)","Azure, a dragon argent (a silver dragon on blue)","Argent, a dragon azure (a blue dragon on silver)","Azure, a cross argent (a silver cross on blue)","Argent, a cross azure (a blue cross on silver)","Azure, a boar argent (a silver boar on blue)","Argent, a boar azure (a blue boar on silver)","Azure, a wolf argent (a silver wolf on blue)","Argent, a wolf azure (a blue wolf on silver)","Azure, a griffin argent (a silver griffin on blue)","Argent, a griffin azure (a blue griffin on silver)","Azure, an oak tree argent (a silver oak tree on blue)","Argent, an oak tree azure (a blue oak tree on silver)","Azure, a sword argent (a silver sword on blue)","Argent, a sword azure (a blue sword on silver)","Azure, a key argent (a silver key on blue)","Argent, a key azure (a blue key on silver)","Azure, a crescent argent (a silver crescent moon on blue)","Argent, a crescent azure (a blue crescent moon on silver)","Azure, a mullet argent (a silver star on blue)","Argent, a mullet azure (a blue star on silver)","Azure, a bear argent (a silver bear on blue)","Argent, a bear azure (a blue bear on silver)","Azure, a ship argent (a silver ship on blue)","Argent, a ship azure (a blue ship on silver)","Vert, a lion rampant or (a gold lion on green)","Or, a lion rampant vert (a green lion on gold)","Vert, an eagle displayed or (a gold eagle on green)","Or, an eagle displayed vert (a green eagle on gold)","Vert, a stag or (a gold stag on green)","Or, a stag vert (a green stag on gold)","Vert, a tower or (a gold tower on green)","Or, a tower vert (a green tower on gold)","Vert, a dragon or (a gold dragon on green)","Or, a dragon vert (a green dragon on gold)","Vert, a cross or (a gold cross on green)","Or, a cross vert (a green cross on gold)","Vert, a boar or (a gold boar on green)","Or, a boar vert (a green boar on gold)","Vert, a wolf or (a gold wolf on green)","Or, a wolf vert (a green wolf on gold)","Vert, a griffin or (a gold griffin on green)","Or, a griffin vert (a green griffin on gold)","Vert, an oak tree or (a gold oak tree on green)","Or, an oak tree vert (a green oak tree on gold)","Vert, a sword or (a gold sword on green)","Or, a sword vert (a green sword on gold)","Vert, a key or (a gold key on green)","Or, a key vert (a green key on gold)","Vert, a crescent or (a gold crescent moon on green)","Or, a crescent vert (a green crescent moon on gold)","Vert, a mullet or (a gold star on green)","Or, a mullet vert (a green star on gold)","Vert, a bear or (a gold bear on green)","Or, a bear vert (a green bear on gold)","Vert, a ship or (a gold ship on green)","Or, a ship vert (a green ship on gold)","Vert, a lion rampant argent (a silver lion on green)","Argent, a lion rampant vert (a green lion on silver)","Vert, an eagle displayed argent (a silver eagle on green)","Argent, an eagle displayed vert (a green eagle on silver)","Vert, a stag argent (a silver stag on green)","Argent, a stag vert (a green stag on silver)","Vert, a tower argent (a silver tower on green)","Argent, a tower vert (a green tower on silver)","Vert, a dragon argent (a silver dragon on green)","Argent, a dragon vert (a green dragon on silver)","Vert, a cross argent (a silver cross on green)","Argent, a cross vert (a green cross on silver)","Vert, a boar argent (a silver boar on green)","Argent, a boar vert (a green boar on silver)","Vert, a wolf argent (a silver wolf on green)","Argent, a wolf vert (a green wolf on silver)","Vert, a griffin argent (a silver griffin on green)","Argent, a griffin vert (a green griffin on silver)","Vert, an oak tree argent (a silver oak tree on green)","Argent, an oak tree vert (a green oak tree on silver)","Vert, a sword argent (a silver sword on green)","Argent, a sword vert (a green sword on silver)","Vert, a key argent (a silver key on green)","Argent, a key vert (a green key on silver)","Vert, a crescent argent (a silver crescent moon on green)","Argent, a crescent vert (a green crescent moon on silver)","Vert, a mullet argent (a silver star on green)","Argent, a mullet vert (a green star on silver)","Vert, a bear argent (a silver bear on green)","Argent, a bear vert (a green bear on silver)","Vert, a ship argent (a silver ship on green)","Argent, a ship vert (a green ship on silver)","Sable, a lion rampant or (a gold lion on black)","Or, a lion rampant sable (a black lion on gold)","Sable, an eagle displayed or (a gold eagle on black)","Or, an eagle displayed sable (a black eagle on gold)","Sable, a stag or (a gold stag on black)","Or, a stag sable (a black stag on gold)","Sable, a tower or (a gold tower on black)","Or, a tower sable (a black tower on gold)","Sable, a dragon or (a gold dragon on black)","Or, a dragon sable (a black dragon on gold)","Sable, a cross or (a gold cross on black)","Or, a cross sable (a black cross on gold)","Sable, a boar or (a gold boar on black)","Or, a boar sable (a black boar on gold)","Sable, a wolf or (a gold wolf on black)","Or, a wolf sable (a black wolf on gold)","Sable, a griffin or (a gold griffin on black)","Or, a griffin sable (a black griffin on gold)","Sable, an oak tree or (a gold oak tree on black)","Or, an oak tree sable (a black oak tree on gold)","Sable, a sword or (a gold sword on black)","Or, a sword sable (a black sword on gold)","Sable, a key or (a gold key on black)","Or, a key sable (a black key on gold)","Sable, a crescent or (a gold crescent moon on black)","Or, a crescent sable (a black crescent moon on gold)","Sable, a mullet or (a gold star on black)","Or, a mullet sable (a black star on gold)","Sable, a bear or (a gold bear on black)","Or, a bear sable (a black bear on gold)","Sable, a ship or (a gold ship on black)","Or, a ship sable (a black ship on gold)","Sable, a lion rampant argent (a silver lion on black)","Argent, a lion rampant sable (a black lion on silver)","Sable, an eagle displayed argent (a silver eagle on black)","Argent, an eagle displayed sable (a black eagle on silver)","Sable, a stag argent (a silver stag on black)","Argent, a stag sable (a black stag on silver)","Sable, a tower argent (a silver tower on black)","Argent, a tower sable (a black tower on silver)","Sable, a dragon argent (a silver dragon on black)","Argent, a dragon sable (a black dragon on silver)","Sable, a cross argent (a silver cross on black)","Argent, a cross sable (a black cross on silver)","Sable, a boar argent (a silver boar on black)","Argent, a boar sable (a black boar on silver)","Sable, a wolf argent (a silver wolf on black)","Argent, a wolf sable (a black wolf on silver)","Sable, a griffin argent (a silver griffin on black)","Argent, a griffin sable (a black griffin on silver)","Sable, an oak tree argent (a silver oak tree on black)","Argent, an oak tree sable (a black oak tree on silver)","Sable, a sword argent (a silver sword on black)","Argent, a sword sable (a black sword on silver)","Sable, a key argent (a silver key on black)","Argent, a key sable (a black key on silver)","Sable, a crescent argent (a silver crescent moon on black)","Argent, a crescent sable (a black crescent moon on silver)","Sable, a mullet argent (a silver star on black)","Argent, a mullet sable (a black star on silver)","Sable, a bear argent (a silver bear on black)","Argent, a bear sable (a black bear on silver)","Sable, a ship argent (a silver ship on black)","Argent, a ship sable (a black ship on silver)","Purpure, a lion rampant or (a gold lion on purple)","Or, a lion rampant purpure (a purple lion on gold)","Purpure, an eagle displayed or (a gold eagle on purple)","Or, an eagle displayed purpure (a purple eagle on gold)","Purpure, a stag or (a gold stag on purple)","Or, a stag purpure (a purple stag on gold)","Purpure, a tower or (a gold tower on purple)","Or, a tower purpure (a purple tower on gold)","Purpure, a dragon or (a gold dragon on purple)","Or, a dragon purpure (a purple dragon on gold)","Purpure, a cross or (a gold cross on purple)","Or, a cross purpure (a purple cross on gold)","Purpure, a boar or (a gold boar on purple)","Or, a boar purpure (a purple boar on gold)","Purpure, a wolf or (a gold wolf on purple)","Or, a wolf purpure (a purple wolf on gold)","Purpure, a griffin or (a gold griffin on purple)","Or, a griffin purpure (a purple griffin on gold)","Purpure, an oak tree or (a gold oak tree on purple)","Or, an oak tree purpure (a purple oak tree on gold)","Purpure, a sword or (a gold sword on purple)","Or, a sword purpure (a purple sword on gold)","Purpure, a key or (a gold key on purple)","Or, a key purpure (a purple key on gold)","Purpure, a crescent or (a gold crescent moon on purple)","Or, a crescent purpure (a purple crescent moon on gold)","Purpure, a mullet or (a gold star on purple)","Or, a mullet purpure (a purple star on gold)","Purpure, a bear or (a gold bear on purple)","Or, a bear purpure (a purple bear on gold)","Purpure, a ship or (a gold ship on purple)","Or, a ship purpure (a purple ship on gold)","Purpure, a lion rampant argent (a silver lion on purple)","Argent, a lion rampant purpure (a purple lion on silver)","Purpure, an eagle displayed argent (a silver eagle on purple)","Argent, an eagle displayed purpure (a purple eagle on silver)","Purpure, a stag argent (a silver stag on purple)","Argent, a stag purpure (a purple stag on silver)","Purpure, a tower argent (a silver tower on purple)","Argent, a tower purpure (a purple tower on silver)","Purpure, a dragon argent (a silver dragon on purple)","Argent, a dragon purpure (a purple dragon on silver)","Purpure, a cross argent (a silver cross on purple)","Argent, a cross purpure (a purple cross on silver)","Purpure, a boar argent (a silver boar on purple)","Argent, a boar purpure (a purple boar on silver)","Purpure, a wolf argent (a silver wolf on purple)","Argent, a wolf purpure (a purple wolf on silver)","Purpure, a griffin argent (a silver griffin on purple)","Argent, a griffin purpure (a purple griffin on silver)","Purpure, an oak tree argent (a silver oak tree on purple)","Argent, an oak tree purpure (a purple oak tree on silver)","Purpure, a sword argent (a silver sword on purple)","Argent, a sword purpure (a purple sword on silver)","Purpure, a key argent (a silver key on purple)","Argent, a key purpure (a purple key on silver)","Purpure, a crescent argent (a silver crescent moon on purple)","Argent, a crescent purpure (a purple crescent moon on silver)","Purpure, a mullet argent (a silver star on purple)","Argent, a mullet purpure (a purple star on silver)","Purpure, a bear argent (a silver bear on purple)","Argent, a bear purpure (a purple bear on silver)","Purpure, a ship argent (a silver ship on purple)","Argent, a ship purpure (a purple ship on silver)"]}}</script>
     <script src="../lib/recipe-engine.js"></script>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

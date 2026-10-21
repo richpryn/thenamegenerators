@@ -98,104 +98,99 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-mushroom" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24 C6 11 42 11 42 24 Z" fill="#efc84a"/><path d="M18 24 L16 42 L32 42 L30 24" fill="#fffcf4"/><circle cx="16" cy="19" r="2.2" fill="#fffcf4" stroke-width="1.3"/><circle cx="26" cy="15" r="2.2" fill="#fffcf4" stroke-width="1.3"/><circle cx="34" cy="20" r="1.8" fill="#fffcf4" stroke-width="1.3"/><path d="M10 44 h28" stroke-width="1.4"/></g></symbol>
+      <symbol id="m-wings" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 24 C18 9 6 7 8 17 C9 23 16 25 24 24 Z" fill="#fffcf4"/><path d="M24 24 C30 9 42 7 40 17 C39 23 32 25 24 24 Z" fill="#fffcf4"/><path d="M24 24 C18 30 11 39 17 42 C21 44 24 33 24 24 Z" fill="#efc84a"/><path d="M24 24 C30 30 37 39 31 42 C27 44 24 33 24 24 Z" fill="#fffcf4"/><path d="M24 18 V34" stroke-width="1.4"/></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <span aria-current="page">Folklore</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">Folklore</span> Name Generators</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg>
+            </div>
+            <p class="lede">Fairy names and fairy-town names inspired by folklore.</p>
+
+            <div class="section intro">
+                <p>In folklore, people spoke about fairies carefully: they called them "the Good Folk" or "the Fair Folk" rather than risk offending them. That mix of beauty and danger is what makes fairy names fun to write.</p><p>The <a href="../posts/fairy-name-generator.html">Fairy Name Generator</a> builds first names, full names and grand epithets, and the <a href="../posts/fairy-town-name-generator.html">Fairy Town Name Generator</a> names the hidden places they live.</p>
+            </div>
+
+            <section class="section">
+                <h2>Where to start</h2>
+                <div class="featured">
+                    <a href="../posts/fairy-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-wings"/></svg><b>Fairy Name Generator</b><span>First names, surnames and epithets, by gender.</span><span class="open hd" aria-hidden="true">Open →</span></a>
+                    <a href="../posts/fairy-town-name-generator.html" class="feat hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><b>Fairy Town Name Generator</b><span>Names for hidden villages and fairy realms.</span><span class="open hd" aria-hidden="true">Open →</span></a>
                 </div>
-            </div>
-        </div>
-    </nav>
+            </section>
 
-    <div class="container">
-        <header class="hero">
-            <h1>📜 Fairy and Folklore Name Generators</h1>
-            <p>Fairy names and fairy-town names inspired by folklore.</p>
-            <p class="generator-count">5 generators available</p>
-        </header>
-
-        <main>
-
-        <section class="blog-content category-intro">
-            <p>In folklore, people spoke about fairies carefully: they called them "the Good Folk" or "the Fair Folk" rather than risk offending them. That mix of beauty and danger is what makes fairy names fun to write.</p><p>The <a href="../posts/fairy-name-generator.html">Fairy Name Generator</a> builds first names, full names and grand epithets, and the <a href="../posts/fairy-town-name-generator.html">Fairy Town Name Generator</a> names the hidden places they live.</p>
-            <h2>Where to start</h2>
-                <ul class="featured-generators">
-                    <li><a href="../posts/fairy-name-generator.html">🧚 Fairy Name Generator</a>: first names, surnames and epithets, by gender.</li>
-                    <li><a href="../posts/fairy-town-name-generator.html">🧚‍♀️ Fairy Town Name Generator</a>: names for hidden villages and fairy realms.</li>
-                </ul>
-        </section>
-            <h2 class="category-all-heading">All 5 Folklore generators</h2>
-            <div class="generators-grid">
-                
-    <a href="../posts/fairy-name-generator.html" class="generator-card">
-      <h3>🧚 Fairy Name Generator</h3>
-      <p>Fairy names from folklore: flower fairies like Thistledown, lords and ladies of the Seelie and Unseelie Courts, and household sprites like Hob o&#039; the Hearth.</p>
-    </a>
-  
-    
-    <a href="../posts/fairy-town-name-generator.html" class="generator-card">
-      <h3>🧚‍♀️ Fairy Town Name Generator</h3>
-      <p>Fairy town and village names from folklore: homes under the hill, hollows in the wood, fairy rings and the great courts of the fae.</p>
-    </a>
-  
-    
-    <a href="../posts/werewolf-name-generator.html" class="generator-card">
-      <h3>🐺 Werewolf Name Generator</h3>
-      <p>Werewolf names from real names that mean wolf, like Faolan (little wolf), Ylva (she-wolf) and Rudolf (famous wolf), with their meanings and a pack to run with.</p>
-    </a>
-  
-    
-    <a href="../posts/zombie-name-generator.html" class="generator-card">
-      <h3>🧟 Zombie Name Generator</h3>
-      <p>Zombie names, from funny shambling ones (Groaning Gary) to grim undead titles, plus names for the zombie virus behind the outbreak.</p>
-    </a>
-  
-    
-    <a href="../posts/ghost-name-generator.html" class="generator-card">
-      <h3>👻 Ghost Name Generator</h3>
-      <p>Ghost names in the style of real hauntings (the Grey Lady, the Drummer of the Old Mill), restless Victorian spirits, and friendly little ghosts.</p>
-    </a>
-  
-            </div>
+            <section class="section">
+                <h2>All 5 Folklore generators</h2>
+                <div class="genlist">
+                    <a href="../posts/fairy-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-wings"/></svg><div><b>Fairy Name Generator</b><span>Fairy names from folklore: flower fairies like Thistledown, lords and ladies of the Seelie and Unseelie Courts, and household sprites like Hob o&#039; the Hearth.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fairy-town-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Fairy Town Name Generator</b><span>Fairy town and village names from folklore: homes under the hill, hollows in the wood, fairy rings and the great courts of the fae.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/werewolf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Werewolf Name Generator</b><span>Werewolf names from real names that mean wolf, like Faolan (little wolf), Ylva (she-wolf) and Rudolf (famous wolf), with their meanings and a pack to run with.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/zombie-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Zombie Name Generator</b><span>Zombie names, from funny shambling ones (Groaning Gary) to grim undead titles, plus names for the zombie virus behind the outbreak.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/ghost-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Ghost Name Generator</b><span>Ghost names in the style of real hauntings (the Grey Lady, the Drummer of the Old Mill), restless Victorian spirits, and friendly little ghosts.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
         </main>
-
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
 
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

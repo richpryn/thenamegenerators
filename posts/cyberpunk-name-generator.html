@@ -289,240 +289,223 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
-                </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-city" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 44 V26 h7 V16 h8 V30 h6 V10 h9 V22 h7 V44" fill="#fffcf4"/><path d="M29.5 10 V4"/><path d="M14 20 h2 M14 24 h2 M28 14 h3 M28 18 h3 M28 22 h3 M37 27 h3" stroke-width="1.3"/><path d="M3 37 H45" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-planet" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="25" r="11" fill="#fffcf4"/><ellipse cx="24" cy="25" rx="20" ry="6" transform="rotate(-20 24 25)"/><path d="M17 20 C20 17 24 16 27 17" stroke="#efc84a" stroke-width="3"/><path d="M40 5 l1 3 l3 1 l-3 1 l-1 3 l-1 -3 l-3 -1 l3 -1 z" fill="#1e1c18" stroke-width="1"/></g></symbol>
+      <symbol id="m-robot" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="11" y="14" width="26" height="22" rx="4" fill="#fffcf4"/><path d="M24 14 V8"/><circle cx="24" cy="6" r="2.2" fill="#efc84a"/><circle cx="18" cy="24" r="3"/><circle cx="30" cy="24" r="3"/><path d="M18 31 h12" stroke-width="1.3"/><path d="M7 22 v6 M41 22 v6"/></g></symbol>
+      <symbol id="m-rocket" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 3 C32 9 34 21 30 33 H18 C14 21 16 9 24 3 Z" fill="#fffcf4"/><circle cx="24" cy="17" r="4" fill="#efc84a"/><path d="M18 25 L11 33 L18 33 M30 25 L37 33 L30 33"/><path d="M21 37 l-1 5 M24 37 v6 M27 37 l1 5" stroke-width="1.3"/></g></symbol>
+      <symbol id="m-dragon" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 35 C7 25 15 17 26 17 L37 19 L45 25 L37 27 L42 31 L33 31 C29 35 23 39 17 41 C11 43 6 41 5 35 Z" fill="#fffcf4"/><path d="M19 19 L8 11 L21 15 M24 17 L19 6 L28 16" stroke-width="1.6"/><circle cx="31" cy="22" r="1.5" fill="#1e1c18"/><path d="M41 23 l1 0" stroke-width="2"/><path d="M11 37 C17 36 23 34 28 31" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-hood" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 44 C9 28 13 12 24 5 C35 12 39 28 39 44 Z" fill="#fffcf4"/><path d="M17 44 C17 32 20 22 24 19 C28 22 31 32 31 44" stroke-width="1.5"/><path d="M18 30 C21 28 27 28 30 30" stroke="#efc84a" stroke-width="4"/></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../categories/scifi-names.html">Sci-Fi</a> / <span aria-current="page">Cyberpunk Name Generator</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">Cyberpunk</span> Name Generator</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-city"/></svg>
             </div>
-        </div>
-    </nav>
+            <p class="lede">Street handles, full names with a handle, and the megacorps that own the city.</p>
 
-    <div class="container">
-        <header class="blog-hero">
-            <h1>🌃 Cyberpunk Name Generator</h1>
-            <p class="tagline">Street handles, full names with a handle, and the megacorps that own the city.</p>
-            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
-        </header>
-
-        <main>
-            <section class="embedded-generator">
-                <div class="generator-card">
-                    <h2>Generate Cyberpunk Names</h2>
-                    <p class="generator-description">Cyberpunk names for runners, hackers and fixers: street handles like Glitch and Static, full names with a handle, and megacorporation names for the companies that own the city.</p>
-                    
-                    <div class="simple-generator">
-                        <div class="filters">
-          <div class="filter-group">
-            <label for="filter-format">Name for:</label>
-            <select id="filter-format" name="format" data-filter="format">
-              <option value="handle">A street handle (Glitch)</option>
-              <option value="full">A full name with handle</option>
-              <option value="corp">A megacorporation</option>
-            </select>
+            <section class="sheet hd simple-generator" id="generator" aria-label="Cyberpunk Name Generator">
+                <div class="gen-one">
+          <div class="group">
+            <label class="label" for="filter-format">Name for</label>
+            <div class="ctl sel hd">
+              <select id="filter-format" name="format" data-filter="format">
+                <option value="handle">A street handle (Glitch)</option>
+                <option value="full">A full name with handle</option>
+                <option value="corp">A megacorporation</option>
+              </select>
+            </div>
           </div></div>
-                        <div class="generator-controls">
-                            <div class="filter-group count-group">
-                                <label for="name-count">How many:</label>
-                                <select id="name-count">
-                                    <option value="8" selected>8 names</option>
-                                    <option value="16">16 names</option>
-                                    <option value="32">32 names</option>
-                                </select>
-                            </div>
-                            <button id="generate-btn" class="generate-button">Generate Names</button>
-                        </div>
-                        <div class="results-area" id="results">
-                            <p class="results-placeholder">Click "Generate Names" to see results</p>
-                        </div>
-                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
-                        <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="false">
+                    <p class="results-empty">Press Generate Names for 8 cyberpunk names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
                     </div>
-                    
-                    <div class="cta-box">
-                        <p><strong>Need more options?</strong></p>
-                        <a href="../index.html" class="cta-button">Try the Ultimate Random Name Generator →</a>
-                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
+
+            <section class="section example-names">
+                <h2>Example Cyberpunk Names</h2>
+                <p class="sub">A few names this generator came up with. Tap one to copy it, or press "Generate Names" above for more.</p>
+                <div class="ex">
+                <div class="exbox hd">
+                    <h3>A street handle</h3>
+                    <ul>
+                        <li>Sable Socket</li>
+                        <li>Ghost Volt</li>
+                        <li>Cipher</li>
+                        <li>Echo</li>
+                        <li>Daemon</li>
+                        <li>Vandal</li>
+                        <li>Static Vector</li>
+                        <li>Byte Chrome</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>A full name with handle</h3>
+                    <ul>
+                        <li>Lena “Spike” Hale</li>
+                        <li>Ravi “Patch” Osei</li>
+                        <li>Vera “Nyx” Tanaka</li>
+                        <li>Oskar “Hex” Ibarra</li>
+                        <li>Silas “Juno” Kowalski</li>
+                        <li>Marco “Zero” Vance</li>
+                        <li>Ilya “Razor” Sato</li>
+                        <li>Zara “Lynx” Novak</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>A megacorporation</h3>
+                    <ul>
+                        <li>Vertex-Obsidian Heavy Industries</li>
+                        <li>Zenith-Vantage Pharmaceuticals</li>
+                        <li>Nexus Security</li>
+                        <li>Paragon-Helix Dynamics</li>
+                        <li>Halcyon-Solace Neural</li>
+                        <li>Orion Labs</li>
+                        <li>Meridian Robotics</li>
+                        <li>Aurora Systems</li>
+                    </ul>
+                </div>
                 </div>
             </section>
 
-            <section class="example-names">
-                <h2>Example Cyberpunk Names</h2>
-                <p>A few names this generator came up with. Press "Generate Names" above for more.</p>
-                <h3>A street handle</h3>
-                <ul class="name-results">
-                    <li>Sable Socket</li>
-                    <li>Ghost Volt</li>
-                    <li>Cipher</li>
-                    <li>Echo</li>
-                    <li>Daemon</li>
-                    <li>Vandal</li>
-                    <li>Static Vector</li>
-                    <li>Byte Chrome</li>
-                </ul>
-                <h3>A full name with handle</h3>
-                <ul class="name-results">
-                    <li>Lena “Spike” Hale</li>
-                    <li>Ravi “Patch” Osei</li>
-                    <li>Vera “Nyx” Tanaka</li>
-                    <li>Oskar “Hex” Ibarra</li>
-                    <li>Silas “Juno” Kowalski</li>
-                    <li>Marco “Zero” Vance</li>
-                    <li>Ilya “Razor” Sato</li>
-                    <li>Zara “Lynx” Novak</li>
-                </ul>
-                <h3>A megacorporation</h3>
-                <ul class="name-results">
-                    <li>Vertex-Obsidian Heavy Industries</li>
-                    <li>Zenith-Vantage Pharmaceuticals</li>
-                    <li>Nexus Security</li>
-                    <li>Paragon-Helix Dynamics</li>
-                    <li>Halcyon-Solace Neural</li>
-                    <li>Orion Labs</li>
-                    <li>Meridian Robotics</li>
-                    <li>Aurora Systems</li>
-                </ul>
-            </section>
-
-            <section class="blog-content how-it-works">
+            <section class="section how-it-works">
                 <h2>How the Cyberpunk Name Generator Works</h2>
+                <div class="howto hd">
                 <p>It works from 108 names and name parts, which combine into over 21,000 possible results.</p>
                 <p>The choices:</p>
                 <ul><li><strong>Name for:</strong><ul><li>A street handle, e.g. <em>Glitch Echo</em></li><li>A full name with handle, e.g. <em>Ines “Jack” Tanaka</em></li><li>A megacorporation, e.g. <em>Aurora-Nexus Neural</em></li></ul></li></ul>
-                <p>Each press gives you 8, 16 or 32 names (choose under "How many"), and you won't see the same one twice until you've been through everything for the choices you've made.</p>
+                <p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet, until the names for the choices you've made run out.</p>
+                </div>
             </section>
 
-            <article class="blog-content" itemscope itemtype="https://schema.org/Article">
+            <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="Cyberpunk Name Generator">
                 <meta itemprop="description" content="Cyberpunk names for runners, hackers and fixers: street handles like Glitch and Static, full names with a handle, and megacorporation names for the companies that own the city.">
-                <section itemprop="articleBody">
-                    <p>In cyberpunk, nobody uses their real name if they can help it. Hackers, fixers and mercenaries go by handles, short and memorable, while the real power sits with megacorporations whose names sound clean and slightly sinister. This <strong>cyberpunk name generator</strong> gives you street handles, full names with a handle, and corporation names.</p>
-                </section>
+                <div itemprop="articleBody">
+                <p class="big">In cyberpunk, nobody uses their real name if they can help it. Hackers, fixers and mercenaries go by handles, short and memorable, while the real power sits with megacorporations whose names sound clean and slightly sinister. This <strong>cyberpunk name generator</strong> gives you street handles, full names with a handle, and corporation names.</p>
                 
-      <section>
-        <h2>Where cyberpunk names come from</h2>
-        <p>The genre takes its name from Bruce Bethke's 1983 short story "Cyberpunk", and its look from William Gibson's novel <em>Neuromancer</em> (1984) and the film <em>Blade Runner</em> (1982). Gibson's hacker is known simply as Case, and the street samurai as Molly. In <em>Cyberpunk 2077</em>, the player character goes by a single letter, V.</p><p>The pattern is the same throughout: a short handle that says something about the person, and a real name kept quiet.</p>
-      </section>
-    
+                <h2>Where cyberpunk names come from</h2>
+                <p>The genre takes its name from Bruce Bethke's 1983 short story "Cyberpunk", and its look from William Gibson's novel <em>Neuromancer</em> (1984) and the film <em>Blade Runner</em> (1982). Gibson's hacker is known simply as Case, and the street samurai as Molly. In <em>Cyberpunk 2077</em>, the player character goes by a single letter, V.</p><p>The pattern is the same throughout: a short handle that says something about the person, and a real name kept quiet.</p>
 
-      <section>
-        <h2>Handles, names and megacorps</h2>
-        <ul><li><strong>Handles</strong> are one or two short words: a skill (Cipher, Socket), an attitude (Vandal), or a look (Chrome). They should be quick to say over comms.</li><li><strong>Full names with a handle</strong> mix cultures, because cyberpunk cities are global: Mara "Static" Okafor, Kai "Wire" Lindqvist.</li><li><strong>Megacorporations</strong> have smooth, abstract names that sound like a brochure: Helix Biotech, Meridian Dynamics. The friendlier the name, the worse the company.</li></ul><p>For the rest of your sci-fi world, see the <a href="robot-name-generator.html">Robot</a> and <a href="spaceship-name-generator.html">Spaceship</a> name generators.</p>
-      </section>
-    
+                <h2>Handles, names and megacorps</h2>
+                <ul><li><strong>Handles</strong> are one or two short words: a skill (Cipher, Socket), an attitude (Vandal), or a look (Chrome). They should be quick to say over comms.</li><li><strong>Full names with a handle</strong> mix cultures, because cyberpunk cities are global: Mara "Static" Okafor, Kai "Wire" Lindqvist.</li><li><strong>Megacorporations</strong> have smooth, abstract names that sound like a brochure: Helix Biotech, Meridian Dynamics. The friendlier the name, the worse the company.</li></ul><p>For the rest of your sci-fi world, see the <a href="robot-name-generator.html">Robot</a> and <a href="spaceship-name-generator.html">Spaceship</a> name generators.</p>
+                </div>
             </article>
 
-            
-      <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-          
-            <div class="faq-item">
-              <h3 class="faq-question">What's a good cyberpunk handle?</h3>
-              <p class="faq-answer">Short, sharp and personal: a skill, an attitude or a look, like Glitch, Cipher or Chrome. It should be easy to say quickly over comms.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Where does the word cyberpunk come from?</h3>
-              <p class="faq-answer">Bruce Bethke's 1983 short story "Cyberpunk". The genre's look came largely from William Gibson's Neuromancer and the film Blade Runner.</p>
-            </div>
-          
-        </div>
-      </section>
-            
-      <section class="related-section">
-        <h2>Related Name Generators</h2>
-        <div class="related-grid" id="related-generators">
-          <a href="../posts/alien-name-generator.html" class="related-card">
-            <h3>👽 Alien Name Generator</h3>
-            <p>Alien names that sound like they come from a real species: clicking insectoids, liquid-voiced aquatics, beings named like Hums-at-Dawn, and galactic nobility.</p>
-          </a>
-          <a href="../posts/robot-name-generator.html" class="related-card">
-            <h3>🤖 Robot Name Generator</h3>
-            <p>Robot and android names: letter-number designations like R2-D2, friendly acronym names, model numbers with a nickname, and human names for androids.</p>
-          </a>
-          <a href="../posts/spaceship-name-generator.html" class="related-card">
-            <h3>🚀 Spaceship Name Generator</h3>
-            <p>Spaceship names from heroic to strange: classic ship names (The Distant Horizon), virtue names (Fortitude), ships with a registry prefix, and Culture-style sentences.</p>
-          </a>
-          <a href="../posts/star-wars-name-generator.html" class="related-card">
-            <h3>⚔️ Star Wars Name Generator</h3>
-            <p>Star Wars names for Jedi, Sith Lords, Mandalorians and smugglers, following the patterns of the films and shows: hyphenated Jedi names, Darth titles and Mandalorian clans.</p>
-          </a>
-          <a href="../posts/angel-name-generator.html" class="related-card">
-            <h3>😇 Angel Name Generator</h3>
-            <p>Angel names from scripture and tradition with their Hebrew meanings, or new ones in the same style, with a choir, a domain or an epithet.</p>
-          </a>
-          <a href="../posts/assassin-name-generator.html" class="related-card">
-            <h3>🗡️ Assassin Name Generator</h3>
-            <p>Assassin names that don&#039;t draw attention: codenames like Shrike, titles like the Patient Guest, fantasy aliases like Silkstep, and full names with an alias.</p>
-          </a>
-        </div>
-      </section>
-            
-      <section class="category-generators-section">
-        <h2>All Sci-Fi Name Generators</h2>
-        <div class="category-generators-grid" id="category-generators">
-          <a href="../posts/alien-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">👽</span>
-            <span class="category-generator-title">Alien Name Generator</span>
-          </a>
-          <a href="../posts/robot-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🤖</span>
-            <span class="category-generator-title">Robot Name Generator</span>
-          </a>
-          <a href="../posts/spaceship-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🚀</span>
-            <span class="category-generator-title">Spaceship Name Generator</span>
-          </a>
-          <a href="../posts/star-wars-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Star Wars Name Generator</span>
-          </a>
-        </div>
-      </section>
-        </main>
+            <section class="section faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>What's a good cyberpunk handle?</summary>
+                        <div>Short, sharp and personal: a skill, an attitude or a look, like Glitch, Cipher or Chrome. It should be easy to say quickly over comms.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Where does the word cyberpunk come from?</summary>
+                        <div>Bruce Bethke's 1983 short story "Cyberpunk". The genre's look came largely from William Gibson's Neuromancer and the film Blade Runner.</div>
+                    </details>
+                </div>
+            </section>
 
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+            <section class="section related-section">
+                <h2>Related Name Generators</h2>
+                <div class="genlist" id="related-generators">
+                    <a href="../posts/alien-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-planet"/></svg><div><b>Alien Name Generator</b><span>Alien names that sound like they come from a real species: clicking insectoids, liquid-voiced aquatics, beings named like Hums-at-Dawn, and galactic nobility.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/robot-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-robot"/></svg><div><b>Robot Name Generator</b><span>Robot and android names: letter-number designations like R2-D2, friendly acronym names, model numbers with a nickname, and human names for androids.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/spaceship-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-rocket"/></svg><div><b>Spaceship Name Generator</b><span>Spaceship names from heroic to strange: classic ship names (The Distant Horizon), virtue names (Fortitude), ships with a registry prefix, and Culture-style sentences.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/star-wars-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-planet"/></svg><div><b>Star Wars Name Generator</b><span>Star Wars names for Jedi, Sith Lords, Mandalorians and smugglers, following the patterns of the films and shows: hyphenated Jedi names, Darth titles and Mandalorian clans.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/angel-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Angel Name Generator</b><span>Angel names from scripture and tradition with their Hebrew meanings, or new ones in the same style, with a choir, a domain or an epithet.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/assassin-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-hood"/></svg><div><b>Assassin Name Generator</b><span>Assassin names that don&#039;t draw attention: codenames like Shrike, titles like the Patient Guest, fantasy aliases like Silkstep, and full names with an alias.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
+
+            <section class="section category-generators-section">
+                <h2>More Sci-Fi Name Generators</h2>
+                <div class="genlist compact" id="category-generators">
+                    <a href="../posts/alien-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-planet"/></svg><div><b>Alien Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/robot-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-robot"/></svg><div><b>Robot Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/spaceship-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-rocket"/></svg><div><b>Spaceship Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/star-wars-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-planet"/></svg><div><b>Star Wars Name Generator</b></div><em aria-hidden="true">→</em></a>
+                </div>
+                <p class="all-link"><a href="../categories/scifi-names.html">All Sci-Fi name generators</a></p>
+            </section>
+            <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
 
     <script type="application/json" id="generator-config">{"title":"Cyberpunk Name Generator","slug":"cyberpunk-name-generator","filters":{"format":{"label":"Name for","options":["handle","full","corp"],"optionLabels":{"handle":"A street handle (Glitch)","full":"A full name with handle","corp":"A megacorporation"}}},"recipe":"switch","on":"format","cases":{"handle":{"recipe":"template","template":["[handles]","[handles] [handles]"]},"full":{"recipe":"template","template":"[first] “[handles]” [surnames]"},"corp":{"recipe":"template","template":["[corpA] [corpB]","[corpA]-[corpA] [corpB]"]}},"data":{"handles":["Glitch","Neon","Static","Chrome","Cipher","Hex","Razor","Ghost","Byte","Jack","Vector","Nyx","Proxy","Wire","Rook","Socket","Flux","Patch","Echo","Zero","Daemon","Vandal","Shard","Spike","Trace","Volt","Sable","Juno","Lynx"],"first":["Mara","Kai","Rena","Jax","Yuki","Teo","Ines","Silas","Vera","Ravi","Lena","Marco","Aiko","Nico","Zara","Ilya","Sana","Rhys","Tova","Emil","Nadia","Oskar","Priya","Luka","Rafe"],"surnames":["Vance","Okafor","Reyes","Kowalski","Tanaka","Mercer","Novak","Ashby","Sato","Lindqvist","Moreau","Kaur","Petrov","Haddad","Quinn","Varga","Osei","Hale","Ibarra","Strand"],"corpA":["Helix","Vantage","Omni","Kestrel","Obsidian","Nexus","Aurora","Tessera","Halcyon","Meridian","Cobalt","Paragon","Zenith","Axiom","Sentinel","Orion","Prism","Vertex","Solace"],"corpB":["Dynamics","Systems","Biotech","Industries","Holdings","Cybernetics","Neural","Logistics","Security","Pharmaceuticals","Robotics","Data","Heavy Industries","Labs","Media"]}}</script>
     <script src="../lib/recipe-engine.js"></script>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

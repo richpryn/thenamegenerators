@@ -297,292 +297,262 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
-                </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-axe" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 V44"/><path d="M24 10 C19 11 14 9 10 6 C6 13 6 23 11 30 C15 27 19 26 24 25 Z" fill="#fffcf4"/><path d="M24 10 C29 11 34 9 38 6 C42 13 42 23 37 30 C33 27 29 26 24 25 Z" fill="#fffcf4"/><path d="M21 37 h6" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-sword" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(35 24 24)"><path d="M24 2 L28 8 L28 30 L20 30 L20 8 Z" fill="#fffcf4"/><path d="M24 9 V28" stroke-width="1.2"/><path d="M14 30 H34"/><path d="M24 30 V41"/><circle cx="24" cy="43.5" r="2.4" fill="#efc84a"/></g></g></symbol>
+      <symbol id="m-sword-crown" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(35 24 24)"><path d="M24 6 L28 12 L28 32 L20 32 L20 12 Z" fill="#fffcf4"/><path d="M14 32 H34"/><path d="M24 32 V42"/></g><path d="M3 10 L6 3 L10 8 L13 2 L16 8 L20 3 L22 10 Z" fill="#efc84a"/></g></symbol>
+      <symbol id="m-katana" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 32 C24 24 33 14 42 4 C41 10 35 18 19 35 Z" fill="#fffcf4"/><ellipse cx="17" cy="33" rx="5.5" ry="2.6" transform="rotate(-45 17 33)" fill="#efc84a"/><path d="M15 35 L6 44"/><path d="M8 40 l2 2 M11 37 l2 2" stroke-width="1.2"/></g></symbol>
+      <symbol id="m-round-shield" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18" fill="#fffcf4"/><circle cx="24" cy="24" r="5" fill="#efc84a"/><path d="M24 6 V19 M24 29 V42 M6 24 H19 M29 24 H42" stroke-width="1.3"/></g></symbol>
+      <symbol id="m-wand" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 42 L32 16" stroke-width="3"/><path d="M8 42 L13 37" stroke-width="5.5"/><path d="M38 3 l2 5 l5 2 l-5 2 l-2 5 l-2 -5 l-5 -2 l5 -2 z" fill="#efc84a" stroke-width="1.4"/><path d="M29 6 l1 2 M44 20 l-2 1 M33 22 l2 1" stroke-width="1.2"/></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../categories/objects-names.html">Objects</a> / <span aria-current="page">Axe Name Generator</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">Axe</span> Name Generator</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-axe"/></svg>
             </div>
-        </div>
-    </nav>
+            <p class="lede">Names for a Viking&#039;s war axe, a dwarf&#039;s heirloom, an orc&#039;s cleaver, or a woodsman&#039;s Old Bess.</p>
 
-    <div class="container">
-        <header class="blog-hero">
-            <h1>🪓 Axe Name Generator</h1>
-            <p class="tagline">Names for a Viking&#039;s war axe, a dwarf&#039;s heirloom, an orc&#039;s cleaver, or a woodsman&#039;s Old Bess.</p>
-            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
-        </header>
-
-        <main>
-            <section class="embedded-generator">
-                <div class="generator-card">
-                    <h2>Generate Axe Names</h2>
-                    <p class="generator-description">Axe names in four styles: Norse axes named like troll-women, dwarven heirlooms, brutal orc cleavers and a woodsman&#039;s Old Bess, with an epithet or description.</p>
-                    
-                    <div class="simple-generator">
-                        <div class="filters">
-          <div class="filter-group">
-            <label for="filter-kind">Kind of Axe:</label>
-            <select id="filter-kind" name="kind" data-filter="kind">
-              <option value="any">Any</option>
-              <option value="norse">Norse (Shieldtroll)</option>
-              <option value="dwarven">Dwarven (Grudgehewer)</option>
-              <option value="brutal">Brutal (Skullsplitter)</option>
-              <option value="homely">Homely (Old Bess)</option>
-            </select>
+            <section class="sheet hd simple-generator" id="generator" aria-label="Axe Name Generator">
+                <div class="gen-grid">
+          <div class="group" role="group" aria-labelledby="filter-kind-label">
+            <div class="label"><span id="filter-kind-label">Kind of Axe</span><span class="pen" data-hint-for="kind" aria-hidden="true"></span></div>
+            <div class="opts" data-buttons-for="kind">
+              <button type="button" class="opt hd tap" data-value="any" data-hint="" aria-pressed="true">Any</button>
+              <button type="button" class="opt hd tap" data-value="norse" data-hint="e.g. Shieldtroll" title="Norse (Shieldtroll)" aria-pressed="false">Norse</button>
+              <button type="button" class="opt hd tap" data-value="dwarven" data-hint="e.g. Grudgehewer" title="Dwarven (Grudgehewer)" aria-pressed="false">Dwarven</button>
+              <button type="button" class="opt hd tap" data-value="brutal" data-hint="e.g. Skullsplitter" title="Brutal (Skullsplitter)" aria-pressed="false">Brutal</button>
+              <button type="button" class="opt hd tap" data-value="homely" data-hint="e.g. Old Bess" title="Homely (Old Bess)" aria-pressed="false">Homely</button>
+            </div>
+            <input type="hidden" id="filter-kind" name="kind" data-filter="kind" value="any">
           </div>
 
-          <div class="filter-group">
-            <label for="filter-format">Name Format:</label>
-            <select id="filter-format" name="format" data-filter="format">
-              <option value="epithet">Name and epithet (Shieldtroll, Feeder of Ravens)</option>
-              <option value="axe">Name and description (Shieldtroll, a rune-cut bearded axe)</option>
-              <option value="name">Name only</option>
-            </select>
+          <div class="group">
+            <label class="label" for="filter-format">Name Format</label>
+            <div class="ctl sel hd">
+              <select id="filter-format" name="format" data-filter="format">
+                <option value="epithet">Name and epithet (Shieldtroll, Feeder of Ravens)</option>
+                <option value="axe">Name and description (Shieldtroll, a rune-cut bearded axe)</option>
+                <option value="name">Name only</option>
+              </select>
+            </div>
           </div></div>
-                        <div class="generator-controls">
-                            <div class="filter-group count-group">
-                                <label for="name-count">How many:</label>
-                                <select id="name-count">
-                                    <option value="8" selected>8 names</option>
-                                    <option value="16">16 names</option>
-                                    <option value="32">32 names</option>
-                                </select>
-                            </div>
-                            <button id="generate-btn" class="generate-button">Generate Names</button>
-                        </div>
-                        <div class="results-area" id="results">
-                            <p class="results-placeholder">Click "Generate Names" to see results</p>
-                        </div>
-                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
-                        <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="true">
+                    <p class="results-empty">Press Generate Names for 8 axe names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
                     </div>
-                    
-                    <div class="cta-box">
-                        <p><strong>Need more options?</strong></p>
-                        <a href="../index.html" class="cta-button">Try the Ultimate Random Name Generator →</a>
-                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
+
+            <section class="section example-names">
+                <h2>Example Axe Names</h2>
+                <p class="sub">A few names this generator came up with. Tap one to copy it, or press "Generate Names" above for more.</p>
+                <div class="ex">
+                <div class="exbox hd">
+                    <h3>Any · Name and epithet</h3>
+                    <ul>
+                        <li>Gorecleaver, Ender of Arguments</li>
+                        <li>Helmbiter, Wolf of Wounds</li>
+                        <li>Ironbiter, Heirloom of the Forge</li>
+                        <li>Grey Maud, Bane of Brambles</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Any · Name only</h3>
+                    <ul>
+                        <li>Mountainbane</li>
+                        <li>Shieldogress</li>
+                        <li>Mad Moll</li>
+                        <li>Mad Sal</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Norse · Name only</h3>
+                    <ul>
+                        <li>Boneogress</li>
+                        <li>Wolfwife</li>
+                        <li>Hallwife</li>
+                        <li>Bonecrone</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Dwarven · Name and description</h3>
+                    <ul>
+                        <li>Hearthcleaver, a sharp bearded axe</li>
+                        <li>Deepdelver, a blood-rusted broad axe</li>
+                        <li>Oathsplitter, a notched greataxe</li>
+                        <li>Stonebiter, a well-loved Dane axe</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Brutal · Name and description</h3>
+                    <ul>
+                        <li>Butchertaker, a black-iron woodsman&#039;s axe</li>
+                        <li>Spinereaper, a rune-cut throwing axe</li>
+                        <li>Gutfeeder, a silver-inlaid double-bitted war axe</li>
+                        <li>Limbcleaver, an oak-hafted hand axe</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Homely · Name and epithet</h3>
+                    <ul>
+                        <li>Red Maud, Old Faithful</li>
+                        <li>Sweet Kate, the Kindling-Maker</li>
+                        <li>Mad Meg, the Woodsman&#039;s Wife</li>
+                        <li>Grey Kate, Friend of the Hearth</li>
+                    </ul>
+                </div>
                 </div>
             </section>
 
-            <section class="example-names">
-                <h2>Example Axe Names</h2>
-                <p>A few names this generator came up with. Press "Generate Names" above for more.</p>
-                <h3>Any · Name and epithet</h3>
-                <ul class="name-results">
-                    <li>Gorecleaver, Ender of Arguments</li>
-                    <li>Helmbiter, Wolf of Wounds</li>
-                    <li>Ironbiter, Heirloom of the Forge</li>
-                    <li>Grey Maud, Bane of Brambles</li>
-                </ul>
-                <h3>Any · Name only</h3>
-                <ul class="name-results">
-                    <li>Mountainbane</li>
-                    <li>Shieldogress</li>
-                    <li>Mad Moll</li>
-                    <li>Mad Sal</li>
-                </ul>
-                <h3>Norse · Name only</h3>
-                <ul class="name-results">
-                    <li>Boneogress</li>
-                    <li>Wolfwife</li>
-                    <li>Hallwife</li>
-                    <li>Bonecrone</li>
-                </ul>
-                <h3>Dwarven · Name and description</h3>
-                <ul class="name-results">
-                    <li>Hearthcleaver, a sharp bearded axe</li>
-                    <li>Deepdelver, a blood-rusted broad axe</li>
-                    <li>Oathsplitter, a notched greataxe</li>
-                    <li>Stonebiter, a well-loved Dane axe</li>
-                </ul>
-                <h3>Brutal · Name and description</h3>
-                <ul class="name-results">
-                    <li>Butchertaker, a black-iron woodsman&#039;s axe</li>
-                    <li>Spinereaper, a rune-cut throwing axe</li>
-                    <li>Gutfeeder, a silver-inlaid double-bitted war axe</li>
-                    <li>Limbcleaver, an oak-hafted hand axe</li>
-                </ul>
-                <h3>Homely · Name and epithet</h3>
-                <ul class="name-results">
-                    <li>Red Maud, Old Faithful</li>
-                    <li>Sweet Kate, the Kindling-Maker</li>
-                    <li>Mad Meg, the Woodsman&#039;s Wife</li>
-                    <li>Grey Kate, Friend of the Hearth</li>
-                </ul>
-            </section>
-
-            <section class="blog-content how-it-works">
+            <section class="section how-it-works">
                 <h2>How the Axe Name Generator Works</h2>
+                <div class="howto hd">
                 <p>It works from 592 names and name parts, which combine into over 81,000 possible results.</p>
                 <p>The choices:</p>
                 <ul><li><strong>Kind of Axe:</strong> Any, Norse, Dwarven, Brutal, Homely.</li><li><strong>Name Format:</strong><ul><li>Name and epithet, e.g. <em>Mad Kate, Keeper of the Woodpile</em></li><li>Name and description, e.g. <em>Byrniewolf, a black-iron hand axe</em></li><li>Name only, e.g. <em>Bonegnawer</em></li></ul></li></ul>
-                <p>Each press gives you 8, 16 or 32 names (choose under "How many"), and you won't see the same one twice until you've been through everything for the choices you've made.</p>
+                <p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet, until the names for the choices you've made run out.</p>
+                </div>
             </section>
 
-            <article class="blog-content" itemscope itemtype="https://schema.org/Article">
+            <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="Axe Name Generator">
                 <meta itemprop="description" content="Axe names in four styles: Norse axes named like troll-women, dwarven heirlooms, brutal orc cleavers and a woodsman&#039;s Old Bess, with an epithet or description.">
-                <section itemprop="articleBody">
-                    <p>Vikings named their axes after troll-women. That's the kind of fact that makes a good axe name, and this <strong>axe name generator</strong> has names in four styles: Norse axes like <em>Shieldtroll</em>, dwarven heirlooms like <em>Grudgehewer</em>, brutal cleavers like <em>Skullsplitter</em>, and the homely names people give tools they love, like <em>Old Bess</em>.</p>
-                </section>
+                <div itemprop="articleBody">
+                <p class="big">Vikings named their axes after troll-women. That's the kind of fact that makes a good axe name, and this <strong>axe name generator</strong> has names in four styles: Norse axes like <em>Shieldtroll</em>, dwarven heirlooms like <em>Grudgehewer</em>, brutal cleavers like <em>Skullsplitter</em>, and the homely names people give tools they love, like <em>Old Bess</em>.</p>
                 
-      <section>
-        <h2>Axes with names</h2>
-        <ul><li><strong>Rimmugýgr</strong>, "battle-ogress", was the axe of Skarphéðinn in <em>Njáls saga</em>. Norse warriors liked to give axes the names of troll-women and giantesses.</li><li><strong>Hel</strong> was the axe of King Olaf II of Norway, named after the goddess of the dead.</li><li><strong>Kennings</strong>, the riddling phrases of Norse poetry, called an axe things like the "troll-woman of the shield". The Norse names here borrow that habit: <em>Helmhag</em>, <em>Byrniewolf</em>.</li><li><strong>The labrys</strong>, the double axe of Minoan Crete, may have given its name to the Labyrinth, "the house of the double axe". That's an old theory, and still argued over.</li></ul>
-      </section>
-    
+                <h2>Axes with names</h2>
+                <ul><li><strong>Rimmugýgr</strong>, "battle-ogress", was the axe of Skarphéðinn in <em>Njáls saga</em>. Norse warriors liked to give axes the names of troll-women and giantesses.</li><li><strong>Hel</strong> was the axe of King Olaf II of Norway, named after the goddess of the dead.</li><li><strong>Kennings</strong>, the riddling phrases of Norse poetry, called an axe things like the "troll-woman of the shield". The Norse names here borrow that habit: <em>Helmhag</em>, <em>Byrniewolf</em>.</li><li><strong>The labrys</strong>, the double axe of Minoan Crete, may have given its name to the Labyrinth, "the house of the double axe". That's an old theory, and still argued over.</li></ul>
 
-      <section>
-        <h2>Four kinds of axe</h2>
-        <ul><li><strong>Norse</strong>: shield-breakers named like ogresses and wolves. For Vikings, berserkers and anyone with a longship.</li><li><strong>Dwarven</strong>: names about stone, oaths and grudges. Dwarves in fantasy, from Tolkien's Gimli on, love an axe.</li><li><strong>Brutal</strong>: what it does, said plainly. For orcs, warlords and executioners.</li><li><strong>Homely</strong>: people have always given favourite tools and guns pet names, often women's names. Edinburgh Castle's great cannon is Mons Meg. A woodsman's <em>Old Bess</em> or a barbarian's <em>Little Nell</em> says a lot about the owner.</li></ul>
-      </section>
-    
+                <h2>Four kinds of axe</h2>
+                <ul><li><strong>Norse</strong>: shield-breakers named like ogresses and wolves. For Vikings, berserkers and anyone with a longship.</li><li><strong>Dwarven</strong>: names about stone, oaths and grudges. Dwarves in fantasy, from Tolkien's Gimli on, love an axe.</li><li><strong>Brutal</strong>: what it does, said plainly. For orcs, warlords and executioners.</li><li><strong>Homely</strong>: people have always given favourite tools and guns pet names, often women's names. Edinburgh Castle's great cannon is Mons Meg. A woodsman's <em>Old Bess</em> or a barbarian's <em>Little Nell</em> says a lot about the owner.</li></ul>
 
-      <section>
-        <h2>Kinds of axe</h2>
-        <p>Choose "Name and description" and the generator says what kind of axe it is:</p><ul><li><strong>Bearded axe</strong>: a Viking design whose blade hangs below the haft, so you could hook a shield or choke up for close work.</li><li><strong>Dane axe</strong>: the big two-handed war axe of the Viking age, carried by the housecarls at Hastings.</li><li><strong>Poleaxe</strong>: a late medieval weapon for fighting in armour, with an axe head, a hammer and a spike.</li><li><strong>Felling axe</strong> and <strong>hatchet</strong>: working tools, which in stories have a habit of becoming weapons.</li></ul>
-      </section>
-    
+                <h2>Kinds of axe</h2>
+                <p>Choose "Name and description" and the generator says what kind of axe it is:</p><ul><li><strong>Bearded axe</strong>: a Viking design whose blade hangs below the haft, so you could hook a shield or choke up for close work.</li><li><strong>Dane axe</strong>: the big two-handed war axe of the Viking age, carried by the housecarls at Hastings.</li><li><strong>Poleaxe</strong>: a late medieval weapon for fighting in armour, with an axe head, a hammer and a spike.</li><li><strong>Felling axe</strong> and <strong>hatchet</strong>: working tools, which in stories have a habit of becoming weapons.</li></ul>
+                </div>
             </article>
 
-            
-      <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-          
-            <div class="faq-item">
-              <h3 class="faq-question">What are some famous axe names?</h3>
-              <p class="faq-answer">From history and legend, Rimmugýgr (Skarphéðinn's "battle-ogress") and Hel (King Olaf II's axe). In games and comics, the Leviathan Axe of God of War and Thor's Jarnbjorn. The famous fictional ones aren't in the generator.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">What is a good name for a dwarf's axe?</h3>
-              <p class="faq-answer">Something about stone, oaths or grudges: choose Dwarven for names like Grudgehewer or Runebreaker, and add an epithet like "Grudge of the Clan".</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Can I use these names in D&D or my book?</h3>
-              <p class="faq-answer">Yes, they're free to use and you don't need to credit the site.</p>
-            </div>
-          
-        </div>
-      </section>
-            
-      <section class="related-section">
-        <h2>Related Name Generators</h2>
-        <div class="related-grid" id="related-generators">
-          <a href="../posts/elven-sword-name-generator.html" class="related-card">
-            <h3>⚔️ Elven Sword Name Generator</h3>
-            <p>Elven sword names built from Tolkien&#039;s Sindarin and Quenya, each with its real meaning, plus the famous blades of the legends: Glamdring, Orcrist, Andúril.</p>
-          </a>
-          <a href="../posts/funny-minecraft-sword-name-generator.html" class="related-card">
-            <h3>🗡️ Funny Minecraft Sword Name Generator</h3>
-            <p>Funny Minecraft sword names that fit the anvil&#039;s rename box, from mob puns like Creeper Sweeper to Bladey McBladeface.</p>
-          </a>
-          <a href="../posts/game-of-thrones-sword-name-generator.html" class="related-card">
-            <h3>⚔️ Game of Thrones Sword Name Generator</h3>
-            <p>Game of Thrones style sword names to suit a great house, from northern wolves to Ironborn reavers, with the blade if you want it: Ashsister, a Valyrian steel longsword.</p>
-          </a>
-          <a href="../posts/hammer-name-generator.html" class="related-card">
-            <h3>🔨 Hammer Name Generator</h3>
-            <p>Names for legendary hammers, war hammers, mauls and maces, from short ones like Sacred Anvil to full titles like &quot;Star-Iron Warhammer, Breaker of Chains&quot;.</p>
-          </a>
-          <a href="../posts/japanese-sword-name-generator.html" class="related-card">
-            <h3>⚔️ Japanese Sword Name Generator</h3>
-            <p>Japanese sword names built from real Japanese words, with their meaning: poetic names like Tsuki-kage, &quot;Moon Shadow&quot;, and cutter names like Kumo-giri, &quot;Cloud Cutter&quot;.</p>
-          </a>
-          <a href="../posts/poison-name-generator.html" class="related-card">
-            <h3>☠️ Poison Name Generator</h3>
-            <p>Fantasy poison names with a form and an effect, for assassins, mysteries and D&amp;D: Widow&#039;s Kiss, a clear oil causing a dreamless sleep that never ends.</p>
-          </a>
-        </div>
-      </section>
-            
-      <section class="category-generators-section">
-        <h2>All Objects Name Generators</h2>
-        <div class="category-generators-grid" id="category-generators">
-          <a href="../posts/shield-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🛡️</span>
-            <span class="category-generator-title">Shield Name Generator</span>
-          </a>
-          <a href="../posts/poison-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">☠️</span>
-            <span class="category-generator-title">Poison Name Generator</span>
-          </a>
-          <a href="../posts/sword-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Sword Name Generator</span>
-          </a>
-          <a href="../posts/hammer-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🔨</span>
-            <span class="category-generator-title">Hammer Name Generator</span>
-          </a>
-          <a href="../posts/wand-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🪄</span>
-            <span class="category-generator-title">Wand Name Generator</span>
-          </a>
-          <a href="../posts/funny-minecraft-sword-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🗡️</span>
-            <span class="category-generator-title">Funny Minecraft Sword Name Generator</span>
-          </a>
-          <a href="../posts/elven-sword-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Elven Sword Name Generator</span>
-          </a>
-          <a href="../posts/japanese-sword-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Japanese Sword Name Generator</span>
-          </a>
-          <a href="../posts/game-of-thrones-sword-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Game of Thrones Sword Name Generator</span>
-          </a>
-        </div>
-      </section>
-        </main>
+            <section class="section faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>What are some famous axe names?</summary>
+                        <div>From history and legend, Rimmugýgr (Skarphéðinn's "battle-ogress") and Hel (King Olaf II's axe). In games and comics, the Leviathan Axe of God of War and Thor's Jarnbjorn. The famous fictional ones aren't in the generator.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>What is a good name for a dwarf's axe?</summary>
+                        <div>Something about stone, oaths or grudges: choose Dwarven for names like Grudgehewer or Runebreaker, and add an epithet like "Grudge of the Clan".</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Can I use these names in D&D or my book?</summary>
+                        <div>Yes, they're free to use and you don't need to credit the site.</div>
+                    </details>
+                </div>
+            </section>
 
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+            <section class="section related-section">
+                <h2>Related Name Generators</h2>
+                <div class="genlist" id="related-generators">
+                    <a href="../posts/elven-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Elven Sword Name Generator</b><span>Elven sword names built from Tolkien&#039;s Sindarin and Quenya, each with its real meaning, plus the famous blades of the legends: Glamdring, Orcrist, Andúril.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/funny-minecraft-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Funny Minecraft Sword Name Generator</b><span>Funny Minecraft sword names that fit the anvil&#039;s rename box, from mob puns like Creeper Sweeper to Bladey McBladeface.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/game-of-thrones-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword-crown"/></svg><div><b>Game of Thrones Sword Name Generator</b><span>Game of Thrones style sword names to suit a great house, from northern wolves to Ironborn reavers, with the blade if you want it: Ashsister, a Valyrian steel longsword.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/hammer-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Hammer Name Generator</b><span>Names for legendary hammers, war hammers, mauls and maces, from short ones like Sacred Anvil to full titles like &quot;Star-Iron Warhammer, Breaker of Chains&quot;.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/japanese-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-katana"/></svg><div><b>Japanese Sword Name Generator</b><span>Japanese sword names built from real Japanese words, with their meaning: poetic names like Tsuki-kage, &quot;Moon Shadow&quot;, and cutter names like Kumo-giri, &quot;Cloud Cutter&quot;.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/poison-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Poison Name Generator</b><span>Fantasy poison names with a form and an effect, for assassins, mysteries and D&amp;D: Widow&#039;s Kiss, a clear oil causing a dreamless sleep that never ends.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
+
+            <section class="section category-generators-section">
+                <h2>More Objects Name Generators</h2>
+                <div class="genlist compact" id="category-generators">
+                    <a href="../posts/shield-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-round-shield"/></svg><div><b>Shield Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/poison-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Poison Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Sword Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/hammer-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Hammer Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/wand-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-wand"/></svg><div><b>Wand Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/funny-minecraft-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Funny Minecraft Sword Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/elven-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Elven Sword Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/japanese-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-katana"/></svg><div><b>Japanese Sword Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/game-of-thrones-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword-crown"/></svg><div><b>Game of Thrones Sword Name Generator</b></div><em aria-hidden="true">→</em></a>
+                </div>
+                <p class="all-link"><a href="../categories/objects-names.html">All Objects name generators</a></p>
+            </section>
+            <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
 
     <script type="application/json" id="generator-config">{"title":"Axe Name Generator","slug":"axe-name-generator","filters":{"kind":{"label":"Kind of Axe","options":["any","norse","dwarven","brutal","homely"],"optionLabels":{"any":"Any","norse":"Norse (Shieldtroll)","dwarven":"Dwarven (Grudgehewer)","brutal":"Brutal (Skullsplitter)","homely":"Homely (Old Bess)"}},"format":{"label":"Name Format","options":["epithet","axe","name"],"optionLabels":{"epithet":"Name and epithet (Shieldtroll, Feeder of Ravens)","axe":"Name and description (Shieldtroll, a rune-cut bearded axe)","name":"Name only"}}},"recipe":"switch","on":"format","cases":{"name":{"recipe":"switch","on":"kind","cases":{"any":{"recipe":"template","template":["[names.norse]","[names.dwarven]","[names.brutal]","[names.homely]"]}},"default":{"recipe":"template","template":"[names.{kind}]"}},"epithet":{"recipe":"switch","on":"kind","cases":{"any":{"recipe":"template","template":["[names.norse], [epithets.norse]","[names.dwarven], [epithets.dwarven]","[names.brutal], [epithets.brutal]","[names.homely], [epithets.homely]"]}},"default":{"recipe":"template","template":"[names.{kind}], [epithets.{kind}]"}},"axe":{"recipe":"switch","on":"kind","cases":{"any":{"recipe":"template","template":["[names.norse], [adjectives] [types]","[names.dwarven], [adjectives] [types]","[names.brutal], [adjectives] [types]","[names.homely], [adjectives] [types]"]}},"default":{"recipe":"template","template":"[names.{kind}], [adjectives] [types]"}}},"data":{"names":{"norse":["Shieldtroll","Shieldhag","Shieldogress","Shieldwitch","Shieldwolf","Shieldbiter","Shieldgnawer","Shieldwife","Shieldcrone","Shieldmare","Helmtroll","Helmhag","Helmogress","Helmwitch","Helmwolf","Helmbiter","Helmgnawer","Helmwife","Helmcrone","Woundtroll","Woundhag","Woundogress","Woundwitch","Woundwolf","Woundbiter","Woundgnawer","Woundwife","Woundcrone","Woundmare","Battletroll","Battlehag","Battleogress","Battlewitch","Battlewolf","Battlebiter","Battlegnawer","Battlewife","Battlecrone","Battlemare","Bonetroll","Bonehag","Boneogress","Bonewitch","Bonewolf","Bonebiter","Bonegnawer","Bonewife","Bonecrone","Bonemare","Mailtroll","Mailhag","Mailogress","Mailwitch","Mailwolf","Mailbiter","Mailgnawer","Mailwife","Mailcrone","Mailmare","Byrnietroll","Byrniehag","Byrnieogress","Byrniewitch","Byrniewolf","Byrniebiter","Byrniegnawer","Byrniewife","Byrniecrone","Byrniemare","Raventroll","Ravenhag","Ravenogress","Ravenwitch","Ravenwolf","Ravenbiter","Ravengnawer","Ravenwife","Ravencrone","Ravenmare","Wolftroll","Wolfhag","Wolfogress","Wolfwitch","Wolfbiter","Wolfgnawer","Wolfwife","Wolfcrone","Wolfmare","Bloodtroll","Bloodhag","Bloodogress","Bloodwitch","Bloodwolf","Bloodbiter","Bloodgnawer","Bloodwife","Bloodcrone","Bloodmare","Speartroll","Spearhag","Spearogress","Spearwitch","Spearwolf","Spearbiter","Speargnawer","Spearwife","Spearcrone","Spearmare","Ringtroll","Ringhag","Ringogress","Ringwitch","Ringwolf","Ringbiter","Ringwife","Ringcrone","Ringmare","Halltroll","Hallhag","Hallogress","Hallwitch","Hallwolf","Hallbiter","Hallgnawer","Hallwife","Hallcrone","Hallmare","Stormtroll","Stormhag","Stormogress","Stormwitch","Stormwolf","Stormbiter","Stormgnawer","Stormwife","Stormcrone"],"dwarven":["Stonecleaver","Stonesplitter","Stonehewer","Stonebreaker","Stonebiter","Stonebane","Stonemaul","Stonecutter","Stonedelver","Stonewarden","Runecleaver","Runesplitter","Runehewer","Runebreaker","Runebiter","Runebane","Runemaul","Runecutter","Runedelver","Runewarden","Deepcleaver","Deepsplitter","Deephewer","Deepbreaker","Deepbiter","Deepbane","Deepmaul","Deepcutter","Deepdelver","Deepwarden","Ironcleaver","Ironsplitter","Ironhewer","Ironbreaker","Ironbiter","Ironbane","Ironmaul","Ironcutter","Irondelver","Ironwarden","Anvilcleaver","Anvilsplitter","Anvilhewer","Anvilbreaker","Anvilbiter","Anvilbane","Anvilmaul","Anvilcutter","Anvildelver","Anvilwarden","Granitecleaver","Granitesplitter","Granitehewer","Granitebreaker","Granitebiter","Granitebane","Granitemaul","Granitecutter","Granitedelver","Granitewarden","Grudgecleaver","Grudgesplitter","Grudgehewer","Grudgebreaker","Grudgebiter","Grudgebane","Grudgemaul","Grudgecutter","Grudgedelver","Grudgewarden","Oathcleaver","Oathsplitter","Oathbreaker","Oathbiter","Oathbane","Oathmaul","Oathcutter","Oathdelver","Oathwarden","Coalcleaver","Coalsplitter","Coalhewer","Coalbreaker","Coalbiter","Coalbane","Coalmaul","Coalcutter","Coaldelver","Coalwarden","Flintcleaver","Flintsplitter","Flinthewer","Flintbreaker","Flintbiter","Flintbane","Flintmaul","Flintcutter","Flintdelver","Flintwarden","Forgecleaver","Forgesplitter","Forgehewer","Forgebreaker","Forgebiter","Forgebane","Forgemaul","Forgecutter","Forgedelver","Forgewarden","Clancleaver","Clansplitter","Clanhewer","Clanbreaker","Clanbiter","Clanbane","Clanmaul","Clancutter","Clandelver","Clanwarden","Hearthcleaver","Hearthsplitter","Hearthbreaker","Hearthbiter","Hearthbane","Hearthmaul","Hearthcutter","Hearthdelver","Hearthwarden","Mountaincleaver","Mountainsplitter","Mountainhewer","Mountainbreaker","Mountainbiter","Mountainbane","Mountainmaul","Mountaincutter","Mountaindelver","Mountainwarden"],"brutal":["Skullsplitter","Skullchopper","Skulltaker","Skullripper","Skullhacker","Skullrender","Skullcleaver","Skullreaper","Skullfeeder","Gutsplitter","Gutchopper","Gutripper","Guthacker","Gutrender","Gutcleaver","Gutlopper","Gutreaper","Gutfeeder","Necksplitter","Neckchopper","Necktaker","Neckripper","Neckhacker","Neckrender","Neckcleaver","Necklopper","Neckreaper","Neckfeeder","Headsplitter","Headchopper","Headtaker","Headripper","Headhacker","Headrender","Headcleaver","Headlopper","Headreaper","Headfeeder","Spinesplitter","Spinechopper","Spinetaker","Spineripper","Spinehacker","Spinerender","Spinecleaver","Spinelopper","Spinereaper","Spinefeeder","Limbsplitter","Limbchopper","Limbtaker","Limbripper","Limbhacker","Limbrender","Limbcleaver","Limblopper","Limbreaper","Limbfeeder","Goresplitter","Gorechopper","Goretaker","Goreripper","Gorehacker","Gorerender","Gorecleaver","Gorelopper","Gorereaper","Gorefeeder","Butchersplitter","Butcherchopper","Butchertaker","Butcherhacker","Butchercleaver","Butcherlopper","Butcherfeeder","Ruinsplitter","Ruinchopper","Ruintaker","Ruinripper","Ruinhacker","Ruinrender","Ruincleaver","Ruinlopper","Ruinreaper","Ruinfeeder","Doomsplitter","Doomchopper","Doomtaker","Doomripper","Doomhacker","Doomrender","Doomcleaver","Doomlopper","Doomreaper","Doomfeeder","Grimsplitter","Grimchopper","Grimtaker","Grimripper","Grimhacker","Grimrender","Grimcleaver","Grimlopper","Grimreaper","Grimfeeder","Rotsplitter","Rotchopper","Rotripper","Rothacker","Rotrender","Rotcleaver","Rotlopper","Rotreaper","Rotfeeder","Gristlesplitter","Gristlechopper","Gristletaker","Gristleripper","Gristlehacker","Gristlerender","Gristlecleaver","Gristlelopper","Gristlereaper","Gristlefeeder","Carrionsplitter","Carrionchopper","Carriontaker","Carrionripper","Carrionhacker","Carrionrender","Carrioncleaver","Carrionlopper","Carrionreaper","Carrionfeeder"],"homely":["Old Bess","Old Nell","Old Meg","Old Moll","Old Kate","Old Peg","Old Sal","Old Mab","Old Joan","Old Tilly","Old Annie","Old Maud","Little Bess","Little Nell","Little Meg","Little Moll","Little Kate","Little Peg","Little Sal","Little Mab","Little Joan","Little Tilly","Little Annie","Little Maud","Big Bess","Big Nell","Big Meg","Big Moll","Big Kate","Big Peg","Big Sal","Big Mab","Big Joan","Big Tilly","Big Annie","Big Maud","Black Bess","Black Nell","Black Meg","Black Moll","Black Kate","Black Peg","Black Sal","Black Mab","Black Joan","Black Tilly","Black Annie","Black Maud","Mad Bess","Mad Nell","Mad Meg","Mad Moll","Mad Kate","Mad Peg","Mad Sal","Mad Mab","Mad Joan","Mad Tilly","Mad Annie","Mad Maud","Grey Bess","Grey Nell","Grey Meg","Grey Moll","Grey Kate","Grey Peg","Grey Sal","Grey Mab","Grey Joan","Grey Tilly","Grey Annie","Grey Maud","Long Bess","Long Nell","Long Meg","Long Moll","Long Kate","Long Peg","Long Sal","Long Mab","Long Joan","Long Tilly","Long Annie","Long Maud","Bonny Bess","Bonny Nell","Bonny Meg","Bonny Moll","Bonny Kate","Bonny Peg","Bonny Sal","Bonny Mab","Bonny Joan","Bonny Tilly","Bonny Annie","Bonny Maud","Sweet Bess","Sweet Nell","Sweet Meg","Sweet Moll","Sweet Kate","Sweet Peg","Sweet Sal","Sweet Mab","Sweet Joan","Sweet Tilly","Sweet Annie","Sweet Maud","Red Bess","Red Nell","Red Meg","Red Moll","Red Kate","Red Peg","Red Sal","Red Mab","Red Joan","Red Tilly","Red Annie","Red Maud"]},"epithets":{"norse":["Feeder of Ravens","Breaker of Shields","Wolf of Wounds","the Shield-Troll","Bane of Byrnies","Hewer of Helms","Storm of Swords","the Jarl's Gift","Widow of the Shield-Wall","Hungry for Kings"],"dwarven":["Hewer of the Deep","Grudge of the Clan","Keeper of the Hold","the Last Word","Breaker of Gates","Bane of Goblins","Heirloom of the Forge","the Mountain's Answer","Settler of Debts","Pride of the Smithy"],"brutal":["Butcher of Villages","the Red Harvest","Taker of Heads","the Warlord's Due","Terror of the Road","Ender of Arguments","No Mercy","the Last Thing You See","Feeder of Crows","Maker of Widows"],"homely":["the Woodsman's Wife","Old Faithful","Splitter of Logs","the Kindling-Maker","Friend of the Hearth","Never Blunt","the Farmer's Answer","Keeper of the Woodpile","Bane of Brambles","Stubborn as Ever"]},"types":["bearded axe","Dane axe","double-bitted war axe","greataxe","hand axe","throwing axe","broad axe","battleaxe","poleaxe","woodsman's axe","felling axe","hatchet"],"adjectives":["a rune-cut","a notched","a black-iron","a silver-inlaid","a blood-rusted","an ash-hafted","an oak-hafted","a well-loved","an old","a wicked-edged","a wolf-headed","a sharp"]}}</script>
     <script src="../lib/recipe-engine.js"></script>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

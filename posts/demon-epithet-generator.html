@@ -305,408 +305,304 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
-                </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-flame" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 C28 13 36 17 36 29 C36 37 30 43 24 43 C17 43 12 37 12 30 C12 23 17 20 18 14 C22 18 22 22 24 24 C26 18 25 11 24 5 Z" fill="#fffcf4"/><path d="M24 43 C20 41 19 35 23 31 C24 35 27 35 27 38 C27 41 26 42 24 43 Z" fill="#efc84a"/></g></symbol>
+      <symbol id="m-horns" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 24 C12 22 7 14 10 5 C13 12 17 16 23 19 Z" fill="#fffcf4"/><path d="M28 24 C36 22 41 14 38 5 C35 12 31 16 25 19 Z" fill="#fffcf4"/><path d="M11 33 C15 25 33 25 37 33"/><path d="M37 33 C41 39 45 38 45 33"/><path d="M45 33 l-3.5 -3 l4.5 -1 z" fill="#1e1c18"/><path d="M10 39 C18 36 28 41 36 38" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-laurel" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 43 C12 37 8 25 13 8"/><path d="M12 34 c-6 -1 -8 -5 -7 -9 c4 1 7 4 7 9 z" fill="#efc84a"/><path d="M10 26 c-6 -1 -8 -5 -7 -9 c4 1 7 4 7 9 z" fill="#fffcf4"/><path d="M11 18 c-6 -1 -8 -5 -7 -9 c4 1 7 4 7 9 z" fill="#fffcf4"/><path d="M26 43 C36 37 40 25 35 8"/><path d="M36 34 c6 -1 8 -5 7 -9 c-4 1 -7 4 -7 9 z" fill="#fffcf4"/><path d="M38 26 c6 -1 8 -5 7 -9 c-4 1 -7 4 -7 9 z" fill="#efc84a"/><path d="M37 18 c6 -1 8 -5 7 -9 c-4 1 -7 4 -7 9 z" fill="#fffcf4"/><path d="M18 44 h12"/></g></symbol>
+      <symbol id="m-planet" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="25" r="11" fill="#fffcf4"/><ellipse cx="24" cy="25" rx="20" ry="6" transform="rotate(-20 24 25)"/><path d="M17 20 C20 17 24 16 27 17" stroke="#efc84a" stroke-width="3"/><path d="M40 5 l1 3 l3 1 l-3 1 l-1 3 l-1 -3 l-3 -1 l3 -1 z" fill="#1e1c18" stroke-width="1"/></g></symbol>
+      <symbol id="m-dragon" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 35 C7 25 15 17 26 17 L37 19 L45 25 L37 27 L42 31 L33 31 C29 35 23 39 17 41 C11 43 6 41 5 35 Z" fill="#fffcf4"/><path d="M19 19 L8 11 L21 15 M24 17 L19 6 L28 16" stroke-width="1.6"/><circle cx="31" cy="22" r="1.5" fill="#1e1c18"/><path d="M41 23 l1 0" stroke-width="2"/><path d="M11 37 C17 36 23 34 28 31" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-round-shield" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18" fill="#fffcf4"/><circle cx="24" cy="24" r="5" fill="#efc84a"/><path d="M24 6 V19 M24 29 V42 M6 24 H19 M29 24 H42" stroke-width="1.3"/></g></symbol>
+      <symbol id="m-leaf-moon" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 42 C8 26 18 16 34 14 C34 30 24 40 8 42 Z" fill="#fffcf4"/><path d="M8 42 L26 22 M15 35 l6 1" stroke-width="1.4"/><path d="M36 4 a7 7 0 1 0 7 9 a5.5 5.5 0 1 1 -7 -9 z" fill="#efc84a"/></g></symbol>
+      <symbol id="m-d20" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4 L42 14 L42 34 L24 44 L6 34 L6 14 Z" fill="#fffcf4"/><path d="M24 4 L15 28 L33 28 Z M6 14 L15 28 M42 14 L33 28 M15 28 L24 44 L33 28 M6 34 L15 28 M42 34 L33 28" stroke-width="1.3"/><path d="M20 24 h8" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-mushroom" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24 C6 11 42 11 42 24 Z" fill="#efc84a"/><path d="M18 24 L16 42 L32 42 L30 24" fill="#fffcf4"/><circle cx="16" cy="19" r="2.2" fill="#fffcf4" stroke-width="1.3"/><circle cx="26" cy="15" r="2.2" fill="#fffcf4" stroke-width="1.3"/><circle cx="34" cy="20" r="1.8" fill="#fffcf4" stroke-width="1.3"/><path d="M10 44 h28" stroke-width="1.4"/></g></symbol>
+      <symbol id="m-leaf" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 40 C10 22 22 10 40 8 C40 28 28 40 10 40 Z" fill="#fffcf4"/><path d="M10 40 L31 17 M18 32 l7 1 M24 25 l7 1" stroke-width="1.4"/><path d="M6 44 C13 41 17 45 25 42" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-war-axe" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 42 L33 16"/><path d="M27 8 C37 5 46 12 44 22 C38 18 32 18 28 22 C30 16 30 12 27 8 Z" fill="#fffcf4"/><path d="M7 40 l6 6"/><path d="M12 33 l5 5" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-lizard" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4 C27 4 29 8 27 12 L26 30 C26 36 22 40 13 44 C19 38 22 34 22 30 L21 12 C19 8 19 4 22 4 Z" fill="#fffcf4"/><path d="M22 16 L13 12 M26 16 L35 12 M22 26 L13 30 M26 26 L35 30"/><path d="M13 12 l-3 -2 M35 12 l3 -2 M13 30 l-3 2 M35 30 l3 2" stroke-width="1.3"/><circle cx="23.5" cy="7.5" r="1" fill="#1e1c18"/><path d="M23.5 17 v8" stroke="#efc84a" stroke-width="2.6"/></g></symbol>
+      <symbol id="m-katana" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 32 C24 24 33 14 42 4 C41 10 35 18 19 35 Z" fill="#fffcf4"/><ellipse cx="17" cy="33" rx="5.5" ry="2.6" transform="rotate(-45 17 33)" fill="#efc84a"/><path d="M15 35 L6 44"/><path d="M8 40 l2 2 M11 37 l2 2" stroke-width="1.2"/></g></symbol>
+      <symbol id="m-house" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M30 13 V6 h4 v10" fill="#fffcf4"/><path d="M12 20 V42 H36 V20" fill="#fffcf4"/><path d="M8 22 L24 8 L40 22"/><path d="M21 42 V32 h6 V42"/><path d="M15 26 h4 v4 h-4 z M29 26 h4 v4 h-4 z" stroke-width="1.3"/><path d="M4 45 C14 42 30 47 44 44" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-map" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12 L17 8 L31 13 L42 9 V36 L31 40 L17 35 L6 39 Z" fill="#fffcf4"/><path d="M17 8 V35 M31 13 V40" stroke-width="1.3"/><path d="M10 29 C16 22 22 31 28 23 S34 20 36 18" stroke-dasharray="2 3" stroke-width="1.4"/><path d="M34 15 l5 5 M39 15 l-5 5" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-cauldron" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 18 H40"/><path d="M10 18 C8 30 14 40 24 40 C34 40 40 30 38 18" fill="#fffcf4"/><path d="M14 40 l-2 4 M34 40 l2 4"/><path d="M16 14 c0 -4 4 -4 4 -8 M26 14 c0 -3 3 -3 3 -6" stroke-width="1.3"/><path d="M12 23 C20 26 28 26 36 23" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-castle" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 14 V4 l8 3 l-8 3" fill="#efc84a"/><path d="M8 43 V18 h4 v4 h4 v-4 h4 v4 h8 v-4 h4 v4 h4 v-4 h4 v25 Z" fill="#fffcf4"/><path d="M20 43 V35 c0 -5 8 -5 8 0 V43"/><path d="M14 28 v3 M34 28 v3"/></g></symbol>
+      <symbol id="m-wings" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 24 C18 9 6 7 8 17 C9 23 16 25 24 24 Z" fill="#fffcf4"/><path d="M24 24 C30 9 42 7 40 17 C39 23 32 25 24 24 Z" fill="#fffcf4"/><path d="M24 24 C18 30 11 39 17 42 C21 44 24 33 24 24 Z" fill="#efc84a"/><path d="M24 24 C30 30 37 39 31 42 C27 44 24 33 24 24 Z" fill="#fffcf4"/><path d="M24 18 V34" stroke-width="1.4"/></g></symbol>
+      <symbol id="m-sword" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(35 24 24)"><path d="M24 2 L28 8 L28 30 L20 30 L20 8 Z" fill="#fffcf4"/><path d="M24 9 V28" stroke-width="1.2"/><path d="M14 30 H34"/><path d="M24 30 V41"/><circle cx="24" cy="43.5" r="2.4" fill="#efc84a"/></g></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../categories/fantasy-names.html">Fantasy</a> / <span aria-current="page">Demon Epithet Generator</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">Demon</span> Epithet Generator</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-flame"/></svg>
             </div>
-        </div>
-    </nav>
+            <p class="lede">Titles worthy of a demon: the Devourer, Duke of Ashes, Lord of the Ninth Pit.</p>
 
-    <div class="container">
-        <header class="blog-hero">
-            <h1>👹 Demon Epithet Generator</h1>
-            <p class="tagline">Titles worthy of a demon: the Devourer, Duke of Ashes, Lord of the Ninth Pit.</p>
-            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
-        </header>
-
-        <main>
-            <section class="embedded-generator">
-                <div class="generator-card">
-                    <h2>Generate Demon Epithets</h2>
-                    <p class="generator-description">Titles for your demons: the Devourer, Lord of the Ninth Pit, Duke of Ashes. Epithets by sin, domain and rank, inspired by real demonology.</p>
-                    
-                    <div class="simple-generator">
-                        <div class="filters">
-          <div class="filter-group">
-            <label for="filter-category">Epithet Category:</label>
-            <select id="filter-category" name="category" data-filter="category">
-              <option value="any">Any category (a mix)</option>
-              <option value="rank_domain">Rank and domain (Duke of Ashes)</option>
-              <option value="power_status">Power and status</option>
-              <option value="sin_vice">Sin and vice</option>
-              <option value="destruction_violence">Destruction and violence</option>
-              <option value="death_darkness">Death and darkness</option>
-              <option value="elemental_domain">Elemental domain</option>
-              <option value="physical_description">Physical description</option>
-              <option value="behavioral">Behaviour</option>
-              <option value="special_unique">Fallen, exiled and unique</option>
-            </select>
+            <section class="sheet hd simple-generator" id="generator" aria-label="Demon Epithet Generator">
+                <div class="gen-one">
+          <div class="group">
+            <label class="label" for="filter-category">Epithet Category</label>
+            <div class="ctl sel hd">
+              <select id="filter-category" name="category" data-filter="category">
+                <option value="any">Any category (a mix)</option>
+                <option value="rank_domain">Rank and domain (Duke of Ashes)</option>
+                <option value="power_status">Power and status</option>
+                <option value="sin_vice">Sin and vice</option>
+                <option value="destruction_violence">Destruction and violence</option>
+                <option value="death_darkness">Death and darkness</option>
+                <option value="elemental_domain">Elemental domain</option>
+                <option value="physical_description">Physical description</option>
+                <option value="behavioral">Behaviour</option>
+                <option value="special_unique">Fallen, exiled and unique</option>
+              </select>
+            </div>
           </div></div>
-                        <div class="generator-controls">
-                            <div class="filter-group count-group">
-                                <label for="name-count">How many:</label>
-                                <select id="name-count">
-                                    <option value="8" selected>8 names</option>
-                                    <option value="16">16 names</option>
-                                    <option value="32">32 names</option>
-                                </select>
-                            </div>
-                            <button id="generate-btn" class="generate-button">Generate Names</button>
-                        </div>
-                        <div class="results-area" id="results">
-                            <p class="results-placeholder">Click "Generate Names" to see results</p>
-                        </div>
-                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
-                        <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="false">
+                    <p class="results-empty">Press Generate Names for 8 demon epithets.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
                     </div>
-                    
-                    <div class="cta-box">
-                        <p><strong>Need more options?</strong></p>
-                        <a href="../index.html" class="cta-button">Try the Ultimate Random Name Generator →</a>
-                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
+
+            <section class="section example-names">
+                <h2>Example Demon Epithets</h2>
+                <p class="sub">A few names this generator came up with. Tap one to copy it, or press "Generate Names" above for more.</p>
+                <div class="ex">
+                <div class="exbox hd">
+                    <h3>Any category</h3>
+                    <ul>
+                        <li>the Violent</li>
+                        <li>Earl of Thorns</li>
+                        <li>President of the Seventh Circle</li>
+                        <li>Marquis of Smoke</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Rank and domain</h3>
+                    <ul>
+                        <li>Knight of Lost Souls</li>
+                        <li>Count of Locusts</li>
+                        <li>Baron of the Hollow Council</li>
+                        <li>Lord of Broken Oaths</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Sin and vice</h3>
+                    <ul>
+                        <li>the Corrupt</li>
+                        <li>King of Gluttony</li>
+                        <li>the Voice of Sin</li>
+                        <li>the Two-Faced</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Death and darkness</h3>
+                    <ul>
+                        <li>King of Corpses</li>
+                        <li>the Dark One</li>
+                        <li>Lord of Death</li>
+                        <li>the Pit</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Elemental domain</h3>
+                    <ul>
+                        <li>Master of Heat</li>
+                        <li>Lord of Storms</li>
+                        <li>Prince of Fire</li>
+                        <li>the Corruption</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Behaviour</h3>
+                    <ul>
+                        <li>the Knowledgeable</li>
+                        <li>the Hungry</li>
+                        <li>the Angry</li>
+                        <li>the Intelligent</li>
+                    </ul>
+                </div>
                 </div>
             </section>
 
-            <section class="example-names">
-                <h2>Example Demon Epithets</h2>
-                <p>A few names this generator came up with. Press "Generate Names" above for more.</p>
-                <h3>Any category</h3>
-                <ul class="name-results">
-                    <li>the Violent</li>
-                    <li>Earl of Thorns</li>
-                    <li>President of the Seventh Circle</li>
-                    <li>Marquis of Smoke</li>
-                </ul>
-                <h3>Rank and domain</h3>
-                <ul class="name-results">
-                    <li>Knight of Lost Souls</li>
-                    <li>Count of Locusts</li>
-                    <li>Baron of the Hollow Council</li>
-                    <li>Lord of Broken Oaths</li>
-                </ul>
-                <h3>Sin and vice</h3>
-                <ul class="name-results">
-                    <li>the Corrupt</li>
-                    <li>King of Gluttony</li>
-                    <li>the Voice of Sin</li>
-                    <li>the Two-Faced</li>
-                </ul>
-                <h3>Death and darkness</h3>
-                <ul class="name-results">
-                    <li>King of Corpses</li>
-                    <li>the Dark One</li>
-                    <li>Lord of Death</li>
-                    <li>the Pit</li>
-                </ul>
-                <h3>Elemental domain</h3>
-                <ul class="name-results">
-                    <li>Master of Heat</li>
-                    <li>Lord of Storms</li>
-                    <li>Prince of Fire</li>
-                    <li>the Corruption</li>
-                </ul>
-                <h3>Behaviour</h3>
-                <ul class="name-results">
-                    <li>the Knowledgeable</li>
-                    <li>the Hungry</li>
-                    <li>the Angry</li>
-                    <li>the Intelligent</li>
-                </ul>
-            </section>
-
-            <section class="blog-content how-it-works">
+            <section class="section how-it-works">
                 <h2>How the Demon Epithet Generator Works</h2>
+                <div class="howto hd">
                 <p>It works from 564 epithets and name parts, which combine into over 910 possible results.</p>
                 <p>The choices:</p>
                 <ul><li><strong>Epithet Category:</strong> Any category, Rank and domain, Power and status, Sin and vice, Destruction and violence, Death and darkness, Elemental domain, Physical description, Behaviour, Fallen, exiled and unique.</li></ul>
-                <p>Each press gives you 8, 16 or 32 names (choose under "How many"), and you won't see the same one twice until you've been through everything for the choices you've made.</p>
+                <p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet, until the names for the choices you've made run out.</p>
+                </div>
             </section>
 
-            <article class="blog-content" itemscope itemtype="https://schema.org/Article">
+            <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="Demon Epithet Generator">
                 <meta itemprop="description" content="Titles for your demons: the Devourer, Lord of the Ninth Pit, Duke of Ashes. Epithets by sin, domain and rank, inspired by real demonology.">
-                <section itemprop="articleBody">
-                    <p>A demon's name tells you who it is; its title tells you why you should be afraid. This <strong>demon epithet generator</strong> gives you both kinds of title: epithets like <em>the Devourer</em> or <em>the Unbound</em>, and ranks with a domain, like <em>Duke of Ashes</em>, in the style of the old books of demonology. Add one to your demon's name, or stack a few into a full infernal title.</p>
-                </section>
+                <div itemprop="articleBody">
+                <p class="big">A demon's name tells you who it is; its title tells you why you should be afraid. This <strong>demon epithet generator</strong> gives you both kinds of title: epithets like <em>the Devourer</em> or <em>the Unbound</em>, and ranks with a domain, like <em>Duke of Ashes</em>, in the style of the old books of demonology. Add one to your demon's name, or stack a few into a full infernal title.</p>
                 
-      <section>
-        <h2>Titles from real demonology</h2>
-        <p>The habit of giving demons grand titles is centuries old:</p><ul><li><strong>The Ars Goetia</strong>, the first book of the 17th-century <em>Lesser Key of Solomon</em>, lists 72 demons, each with a rank borrowed from nobility: Bael is a king, Marbas a president, Furcas a knight. The <strong>Rank and domain</strong> option builds titles the same way.</li><li><strong>Beelzebub, "Lord of the Flies"</strong>, comes from Ba'al Zebub, a god of the Philistine city of Ekron in the Bible.</li><li><strong>Abaddon</strong>, called Apollyon in Greek, is "the Destroyer" in the Book of Revelation.</li><li><strong>Legion</strong> takes its name from the line "My name is Legion: for we are many" in the Gospel of Mark.</li><li><strong>Lucifer</strong> means "light-bringer": the Latin name for the morning star.</li></ul>
-      </section>
-    
+                <h2>Titles from real demonology</h2>
+                <p>The habit of giving demons grand titles is centuries old:</p><ul><li><strong>The Ars Goetia</strong>, the first book of the 17th-century <em>Lesser Key of Solomon</em>, lists 72 demons, each with a rank borrowed from nobility: Bael is a king, Marbas a president, Furcas a knight. The <strong>Rank and domain</strong> option builds titles the same way.</li><li><strong>Beelzebub, "Lord of the Flies"</strong>, comes from Ba'al Zebub, a god of the Philistine city of Ekron in the Bible.</li><li><strong>Abaddon</strong>, called Apollyon in Greek, is "the Destroyer" in the Book of Revelation.</li><li><strong>Legion</strong> takes its name from the line "My name is Legion: for we are many" in the Gospel of Mark.</li><li><strong>Lucifer</strong> means "light-bringer": the Latin name for the morning star.</li></ul>
 
-      <section>
-        <h2>The seven princes of sin</h2>
-        <p>In 1589 the German theologian Peter Binsfeld matched a prince of Hell to each of the seven deadly sins, and the list is still the basis of countless games and stories:</p><ul><li><strong>Lucifer</strong>: pride</li><li><strong>Mammon</strong>: greed</li><li><strong>Asmodeus</strong>: lust</li><li><strong>Leviathan</strong>: envy</li><li><strong>Beelzebub</strong>: gluttony</li><li><strong>Satan</strong>: wrath</li><li><strong>Belphegor</strong>: sloth</li></ul><p>The <strong>Sin and vice</strong> category follows the same idea: pick the sin your demon rules, and its epithet does the rest (the Gluttonous, Envy Given Form).</p>
-      </section>
-    
+                <h2>The seven princes of sin</h2>
+                <p>In 1589 the German theologian Peter Binsfeld matched a prince of Hell to each of the seven deadly sins, and the list is still the basis of countless games and stories:</p><ul><li><strong>Lucifer</strong>: pride</li><li><strong>Mammon</strong>: greed</li><li><strong>Asmodeus</strong>: lust</li><li><strong>Leviathan</strong>: envy</li><li><strong>Beelzebub</strong>: gluttony</li><li><strong>Satan</strong>: wrath</li><li><strong>Belphegor</strong>: sloth</li></ul><p>The <strong>Sin and vice</strong> category follows the same idea: pick the sin your demon rules, and its epithet does the rest (the Gluttonous, Envy Given Form).</p>
 
-      <section>
-        <h2>Demons and devils in D&D</h2>
-        <p>Dungeons &amp; Dragons draws a line worth knowing: <strong>demons</strong> are creatures of chaos from the Abyss, while <strong>devils</strong> are creatures of order from the Nine Hells. Their titles show it:</p><ul><li>Demon lords: Demogorgon, <em>Prince of Demons</em>; Orcus, <em>Prince of Undeath</em>; Graz'zt, <em>the Dark Prince</em>; Juiblex, <em>the Faceless Lord</em>.</li><li>Archdevils: Asmodeus, <em>Lord of the Nine Hells</em>; Zariel, <em>Lord of Avernus</em>.</li></ul><p>For a demon, wild and violent epithets fit (the Ravager, the Unbound). For a devil, go for rank and order: a Duke or Marquis of somewhere specific, with a title that sounds like a contract.</p>
-      </section>
-    
+                <h2>Demons and devils in D&D</h2>
+                <p>Dungeons &amp; Dragons draws a line worth knowing: <strong>demons</strong> are creatures of chaos from the Abyss, while <strong>devils</strong> are creatures of order from the Nine Hells. Their titles show it:</p><ul><li>Demon lords: Demogorgon, <em>Prince of Demons</em>; Orcus, <em>Prince of Undeath</em>; Graz'zt, <em>the Dark Prince</em>; Juiblex, <em>the Faceless Lord</em>.</li><li>Archdevils: Asmodeus, <em>Lord of the Nine Hells</em>; Zariel, <em>Lord of Avernus</em>.</li></ul><p>For a demon, wild and violent epithets fit (the Ravager, the Unbound). For a devil, go for rank and order: a Duke or Marquis of somewhere specific, with a title that sounds like a contract.</p>
 
-      <section>
-        <h2>Building a full demonic title</h2>
-        <p>The most memorable demons stack their titles. Try name, then rank and domain, then an epithet:</p><ul><li><em>Vharzul, Duke of Ashes, the Unforgiving</em></li><li><em>Ozrakh the Devourer, Prince of the Sunless Sea</em></li></ul><p>Two titles is plenty for most demons; save the long string for the one at the end of the campaign. And let mortals use the short version: they're afraid to say the rest.</p>
-      </section>
-    
+                <h2>Building a full demonic title</h2>
+                <p>The most memorable demons stack their titles. Try name, then rank and domain, then an epithet:</p><ul><li><em>Vharzul, Duke of Ashes, the Unforgiving</em></li><li><em>Ozrakh the Devourer, Prince of the Sunless Sea</em></li></ul><p>Two titles is plenty for most demons; save the long string for the one at the end of the campaign. And let mortals use the short version: they're afraid to say the rest.</p>
+                </div>
             </article>
 
-            
-      <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-          
-            <div class="faq-item">
-              <h3 class="faq-question">What is a demon epithet?</h3>
-              <p class="faq-answer">A title added to a demon's name that describes its power, sin or domain, like "the Devourer" or "Lord of the Flies". Demons in folklore, religious texts and fantasy often have several.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Where do demon ranks like Duke and Marquis come from?</h3>
-              <p class="faq-answer">From grimoires like the Ars Goetia, which gives each of its 72 demons a noble rank: king, prince, duke, marquis, president, earl or knight. The Rank and domain option builds titles the same way.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">What's the difference between a demon and a devil?</h3>
-              <p class="faq-answer">In D&D, demons are chaotic creatures of the Abyss and devils are orderly creatures of the Nine Hells. In older Christian writing the words are used much more loosely.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Can I give a demon more than one epithet?</h3>
-              <p class="faq-answer">Yes, and many famous ones have several. A rank and domain plus one epithet ("Duke of Ashes, the Unforgiving") is a good balance.</p>
-            </div>
-          
-        </div>
-      </section>
-            
-      <section class="related-section">
-        <h2>Related Name Generators</h2>
-        <div class="related-grid" id="related-generators">
-          <a href="../posts/demon-name-generator.html" class="related-card">
-            <h3>😈 Demon Name Generator</h3>
-            <p>Demon names with a rank and a domain: new names, or the 72 spirits of the Ars Goetia with their traditional ranks, from King Paimon to Duke Astaroth.</p>
-          </a>
-          <a href="../posts/epithet-generator.html" class="related-card">
-            <h3>🏷️ Epithet Generator</h3>
-            <p>Add an epithet to your character&#039;s name: the Bold, Dragonslayer, of the North, or a real one from history like the Unready or Bloodaxe. 36 categories, or a mix.</p>
-          </a>
-          <a href="../posts/alien-name-generator.html" class="related-card">
-            <h3>👽 Alien Name Generator</h3>
-            <p>Alien names that sound like they come from a real species: clicking insectoids, liquid-voiced aquatics, beings named like Hums-at-Dawn, and galactic nobility.</p>
-          </a>
-          <a href="../posts/angel-name-generator.html" class="related-card">
-            <h3>😇 Angel Name Generator</h3>
-            <p>Angel names from scripture and tradition with their Hebrew meanings, or new ones in the same style, with a choir, a domain or an epithet.</p>
-          </a>
-          <a href="../posts/clan-name-generator.html" class="related-card">
-            <h3>🛡️ Clan Name Generator</h3>
-            <p>Clan names for fantasy families and gaming teams: Highland-style clans with a motto or war cry, tribes like the Howling Elk, and gaming clans with a tag.</p>
-          </a>
-          <a href="../posts/dark-elf-name-generator.html" class="related-card">
-            <h3>🌑 Dark Elf Name Generator</h3>
-            <p>Dark elf and drow names with a noble house and a title: Matron Mother Quenira of House Mal&#039;Morr. Male and female.</p>
-          </a>
-        </div>
-      </section>
-            
-      <section class="category-generators-section">
-        <h2>All Fantasy Name Generators</h2>
-        <div class="category-generators-grid" id="category-generators">
-          <a href="../posts/tiefling-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">😈</span>
-            <span class="category-generator-title">Tiefling Name Generator</span>
-          </a>
-          <a href="../posts/dragonborn-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🐲</span>
-            <span class="category-generator-title">Dragonborn Name Generator</span>
-          </a>
-          <a href="../posts/halfling-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🍀</span>
-            <span class="category-generator-title">Halfling Name Generator</span>
-          </a>
-          <a href="../posts/gnome-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🍄</span>
-            <span class="category-generator-title">Gnome Name Generator</span>
-          </a>
-          <a href="../posts/elf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧝</span>
-            <span class="category-generator-title">Elf Name Generator</span>
-          </a>
-          <a href="../posts/half-elf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧝‍♂️</span>
-            <span class="category-generator-title">Half-Elf Name Generator</span>
-          </a>
-          <a href="../posts/dwarf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⛏️</span>
-            <span class="category-generator-title">Dwarf Name Generator</span>
-          </a>
-          <a href="../posts/dragon-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🐉</span>
-            <span class="category-generator-title">Dragon Name Generator</span>
-          </a>
-          <a href="../posts/wizard-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧙</span>
-            <span class="category-generator-title">Wizard Name Generator</span>
-          </a>
-          <a href="../posts/orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">Orc Name Generator</span>
-          </a>
-          <a href="../posts/skyrim-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">Skyrim Orc Name Generator</span>
-          </a>
-          <a href="../posts/warhammer-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">Warhammer Orc Name Generator</span>
-          </a>
-          <a href="../posts/wow-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">World of Warcraft Orc Name Generator</span>
-          </a>
-          <a href="../posts/lotr-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">LOTR Orc Name Generator</span>
-          </a>
-          <a href="../posts/half-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">Half-Orc Name Generator</span>
-          </a>
-          <a href="../posts/goblin-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">👺</span>
-            <span class="category-generator-title">Goblin Name Generator</span>
-          </a>
-          <a href="../posts/kobold-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🦎</span>
-            <span class="category-generator-title">Kobold Name Generator</span>
-          </a>
-          <a href="../posts/lizardfolk-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🐊</span>
-            <span class="category-generator-title">Lizardfolk Name Generator</span>
-          </a>
-          <a href="../posts/githyanki-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Githyanki Name Generator</span>
-          </a>
-          <a href="../posts/fantasy-town-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🏘️</span>
-            <span class="category-generator-title">Fantasy Town Name Generator</span>
-          </a>
-          <a href="../posts/fantasy-country-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🗺️</span>
-            <span class="category-generator-title">Fantasy Country Name Generator</span>
-          </a>
-          <a href="../posts/swamp-witch-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧙‍♀️</span>
-            <span class="category-generator-title">Swamp Witch Name Generator</span>
-          </a>
-          <a href="../posts/dnd-fantasy-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">D&amp;D Fantasy Name Generator</span>
-          </a>
-          <a href="../posts/path-of-exile-witch-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🔮</span>
-            <span class="category-generator-title">Path of Exile Witch Name Generator</span>
-          </a>
-          <a href="../posts/funny-wizard-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🎩</span>
-            <span class="category-generator-title">Funny Wizard Name Generator</span>
-          </a>
-          <a href="../posts/high-elf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">👑</span>
-            <span class="category-generator-title">High Elf Name Generator</span>
-          </a>
-          <a href="../posts/wood-elf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🌲</span>
-            <span class="category-generator-title">Wood Elf Name Generator</span>
-          </a>
-          <a href="../posts/dark-elf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🌑</span>
-            <span class="category-generator-title">Dark Elf Name Generator</span>
-          </a>
-          <a href="../posts/clan-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🛡️</span>
-            <span class="category-generator-title">Clan Name Generator</span>
-          </a>
-          <a href="../posts/demon-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">😈</span>
-            <span class="category-generator-title">Demon Name Generator</span>
-          </a>
-          <a href="../posts/fantasy-city-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🏰</span>
-            <span class="category-generator-title">Fantasy City Name Generator</span>
-          </a>
-          <a href="../posts/angel-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">😇</span>
-            <span class="category-generator-title">Angel Name Generator</span>
-          </a>
-          <a href="../posts/alien-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">👽</span>
-            <span class="category-generator-title">Alien Name Generator</span>
-          </a>
-          <a href="../posts/fairy-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧚</span>
-            <span class="category-generator-title">Fairy Name Generator</span>
-          </a>
-          <a href="../posts/fairy-town-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧚‍♀️</span>
-            <span class="category-generator-title">Fairy Town Name Generator</span>
-          </a>
-          <a href="../posts/elven-sword-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Elven Sword Name Generator</span>
-          </a>
-        </div>
-      </section>
-        </main>
+            <section class="section faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>What is a demon epithet?</summary>
+                        <div>A title added to a demon's name that describes its power, sin or domain, like "the Devourer" or "Lord of the Flies". Demons in folklore, religious texts and fantasy often have several.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Where do demon ranks like Duke and Marquis come from?</summary>
+                        <div>From grimoires like the Ars Goetia, which gives each of its 72 demons a noble rank: king, prince, duke, marquis, president, earl or knight. The Rank and domain option builds titles the same way.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>What's the difference between a demon and a devil?</summary>
+                        <div>In D&D, demons are chaotic creatures of the Abyss and devils are orderly creatures of the Nine Hells. In older Christian writing the words are used much more loosely.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Can I give a demon more than one epithet?</summary>
+                        <div>Yes, and many famous ones have several. A rank and domain plus one epithet ("Duke of Ashes, the Unforgiving") is a good balance.</div>
+                    </details>
+                </div>
+            </section>
 
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+            <section class="section related-section">
+                <h2>Related Name Generators</h2>
+                <div class="genlist" id="related-generators">
+                    <a href="../posts/demon-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-horns"/></svg><div><b>Demon Name Generator</b><span>Demon names with a rank and a domain: new names, or the 72 spirits of the Ars Goetia with their traditional ranks, from King Paimon to Duke Astaroth.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/epithet-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-laurel"/></svg><div><b>Epithet Generator</b><span>Add an epithet to your character&#039;s name: the Bold, Dragonslayer, of the North, or a real one from history like the Unready or Bloodaxe. 36 categories, or a mix.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/alien-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-planet"/></svg><div><b>Alien Name Generator</b><span>Alien names that sound like they come from a real species: clicking insectoids, liquid-voiced aquatics, beings named like Hums-at-Dawn, and galactic nobility.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/angel-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Angel Name Generator</b><span>Angel names from scripture and tradition with their Hebrew meanings, or new ones in the same style, with a choir, a domain or an epithet.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/clan-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-round-shield"/></svg><div><b>Clan Name Generator</b><span>Clan names for fantasy families and gaming teams: Highland-style clans with a motto or war cry, tribes like the Howling Elk, and gaming clans with a tag.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/dark-elf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf-moon"/></svg><div><b>Dark Elf Name Generator</b><span>Dark elf and drow names with a noble house and a title: Matron Mother Quenira of House Mal&#039;Morr. Male and female.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
+
+            <section class="section category-generators-section">
+                <h2>More Fantasy Name Generators</h2>
+                <div class="genlist compact" id="category-generators">
+                    <a href="../posts/tiefling-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-horns"/></svg><div><b>Tiefling Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/dragonborn-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Dragonborn Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/halfling-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-d20"/></svg><div><b>Halfling Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/gnome-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Gnome Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/elf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf"/></svg><div><b>Elf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/half-elf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf"/></svg><div><b>Half-Elf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/dwarf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Dwarf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/dragon-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Dragon Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/wizard-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Wizard Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/skyrim-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>Skyrim Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/warhammer-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>Warhammer Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/wow-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>World of Warcraft Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/lotr-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>LOTR Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/half-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>Half-Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/goblin-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-d20"/></svg><div><b>Goblin Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/kobold-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-lizard"/></svg><div><b>Kobold Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/lizardfolk-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-lizard"/></svg><div><b>Lizardfolk Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/githyanki-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-katana"/></svg><div><b>Githyanki Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fantasy-town-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-house"/></svg><div><b>Fantasy Town Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fantasy-country-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-map"/></svg><div><b>Fantasy Country Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/swamp-witch-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-cauldron"/></svg><div><b>Swamp Witch Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/dnd-fantasy-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-d20"/></svg><div><b>D&amp;D Fantasy Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/path-of-exile-witch-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Path of Exile Witch Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/funny-wizard-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Funny Wizard Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/high-elf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf"/></svg><div><b>High Elf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/wood-elf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf"/></svg><div><b>Wood Elf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/dark-elf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf-moon"/></svg><div><b>Dark Elf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/clan-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-round-shield"/></svg><div><b>Clan Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/demon-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-horns"/></svg><div><b>Demon Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fantasy-city-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-castle"/></svg><div><b>Fantasy City Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/angel-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Angel Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/alien-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-planet"/></svg><div><b>Alien Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fairy-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-wings"/></svg><div><b>Fairy Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fairy-town-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Fairy Town Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/elven-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Elven Sword Name Generator</b></div><em aria-hidden="true">→</em></a>
+                </div>
+                <p class="all-link"><a href="../categories/fantasy-names.html">All Fantasy name generators</a></p>
+            </section>
+            <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
 
     <script type="application/json" id="generator-config">{"title":"Demon Epithet Generator","slug":"demon-epithet-generator","filters":{"category":{"label":"Epithet Category","options":["any","rank_domain","power_status","sin_vice","destruction_violence","death_darkness","elemental_domain","physical_description","behavioral","special_unique"],"optionLabels":{"any":"Any category (a mix)","rank_domain":"Rank and domain (Duke of Ashes)","power_status":"Power and status","sin_vice":"Sin and vice","destruction_violence":"Destruction and violence","death_darkness":"Death and darkness","elemental_domain":"Elemental domain","physical_description":"Physical description","behavioral":"Behaviour","special_unique":"Fallen, exiled and unique"}}},"recipe":"switch","on":"category","cases":{"any":{"recipe":"template","template":["[epithets]","[epithets]","[titles.ranks] of [titles.domains]"]},"rank_domain":{"recipe":"template","template":"[titles.ranks] of [titles.domains]"}},"default":{"recipe":"pick","from":"epithets.{category}"},"data":{"epithets":{"power_status":["the Almighty","the All-Powerful","the Supreme","the Ultimate","the Absolute","the Infinite","the Eternal","the Immortal","the Undying","the Everlasting","the Endless","the Timeless","the First","the Primordial","the Ancient","the Elder","the Old","the Ageless","the Greatest","the Mightiest","the Strongest","the Most Powerful","the Unmatched","the Invincible","the Undefeated","the Unconquered","the Unbeaten","the Victorious","the Unstoppable","the Unbreakable","the Indestructible","the Impervious","the Unkillable","the Untouchable","the Unreachable","the Beyond","the Transcendent","the Dominant","the Supreme Ruler","the Overlord","the Master","the Sovereign","the Tyrant","the Despot","the Autocrat","the Dictator","the Absolute Ruler"],"sin_vice":["the Prideful","the Lustful","the Gluttonous","the Greedy","the Wrathful","the Envious","the Slothful","Pride Incarnate","Lust Embodied","Gluttony Manifest","Greed Personified","Wrath Unleashed","Envy Given Form","Master of Pride","Lord of Lust","King of Gluttony","Prince of Greed","Duke of Wrath","Baron of Envy","the Tempter","the Seducer","the Corruptor","the Defiler","the Destroyer of Virtue","the Breaker of Vows","the Corruptor of Souls","the Destroyer of Faith","the Tempter of Saints","the Voice of Sin","the Whisper in the Dark","the Shadow of Doubt","the Corrupt","the Corrupting","the Corrosive","the Tainted","the Polluted","the Despoiler","the Ravager","the Ruiner","the Spoiler","the Bringer of Corruption","the Spreader of Evil","the Source of Wickedness","the Deceiver","the Liar","the Trickster","the Betrayer","the False One","Father of Lies","Master of Deceit","Prince of Trickery","Lord of Betrayal","the Deceptive","the Treacherous","the Duplicitous","the Two-Faced","the False"],"destruction_violence":["the Destroyer","the Annihilator","the Obliterator","the Eradicator","the Exterminator","the Ruiner","the Ravager","the Devastator","the Despoiler","the Waster","the Ender","the Finisher","the Terminator","the Closer","the Last","Bringer of Destruction","Herald of Ruin","Agent of Annihilation","the Slaughterer","the Butcher","the Executioner","the Killer","the Murderer","the Slayer","the Reaper","the Harvester","the Taker","the Collector","Mass Murderer","Serial Killer","Genocide Bringer","Slaughter Incarnate","the Violent","the Savage","the Brutal","the Cruel","the Vicious","the Fierce","the Merciless","the Ruthless","the Pitiless","the Heartless","the Remorseless","the Bloodthirsty","the Bloodsoaked","the Blood-Drenched","the Crimson","the Painful","the Torturer","the Tormentor","the Pain-Bringer","the Agony-Dealer","Master of Pain","Lord of Agony","Prince of Suffering","Duke of Torment","the Sadistic","the Malicious","the Spiteful","the Warmonger","the Warmaker","the Warrior","the Soldier","the Fighter","the Conqueror","the Vanquisher","the Subjugator","the Dominator","Lord of War","Prince of Battle","Duke of Conflict","Baron of Strife"],"death_darkness":["the Deathly","the Deadly","the Lethal","the Fatal","the Mortal","the Death-Bringer","the Death-Dealer","the Death-Giver","the Death-Maker","Lord of Death","Prince of the Dead","King of Corpses","Master of Mortality","the Grim Reaper","the Harvester of Souls","the Collector of the Dead","the Dark","the Dark One","the Darkness","the Shadow","the Shade","Prince of Darkness","Lord of Shadows","Master of Night","King of the Dark","the Lightless","the Sunless","the Starless","the Moonless","the Black","the Shadowy","the Umbral","the Tenebrous","the Stygian","the Cimmerian","the Void","the Empty","the Hollow","the Null","the Nothing","the Abyss","the Chasm","the Pit","the Depths","the Bottom","Lord of the Void","Prince of Emptiness","Master of Nothing","the Nightmare","the Terror","the Horror","the Dread","the Fear","the Frightening","the Terrifying","the Horrifying","the Dreadful","the Fearsome","Bringer of Nightmares","Dealer of Terror","Master of Fear"],"elemental_domain":["the Burning","the Blazing","the Flaming","the Fiery","the Infernal","the Scorching","the Searing","the Incinerating","the Consuming","the Immolating","Lord of Flame","Prince of Fire","Duke of Burning","Master of Heat","the Furnace","the Inferno","the Conflagration","the Holocaust","the Pyre","the Frozen","the Icy","the Frigid","the Glacial","the Frosty","the Chilling","the Freezing","the Numbing","the Cold","the Bitter","Lord of Ice","Prince of Frost","Duke of Winter","Master of Cold","the Blizzard","the Glacier","the Avalanche","the Freeze","the Shadowy","the Shaded","the Dark","the Dim","the Murky","the Hidden","the Concealed","the Veiled","the Cloaked","the Masked","Walker in Shadows","Lurker in Darkness","Dweller in Night","the Unseen","the Invisible","the Secret","the Bloody","the Bloodied","the Blood-Soaked","the Crimson","the Scarlet","the Blood-Drinker","the Blood-Letter","the Blood-Spiller","the Hemorrhage","Lord of Blood","Prince of Crimson","Duke of Gore","Master of Carnage","the Sanguine","the Hemophage","the Hemovore","the Pestilent","the Diseased","the Infected","the Contagious","the Septic","the Plague-Bringer","the Disease-Spreader","the Infection","the Contagion","Lord of Plague","Prince of Pestilence","Duke of Disease","Master of Decay","the Rot","the Decay","the Corruption","the Blight","the Canker","the Stormy","the Tempestuous","the Turbulent","the Violent","the Wild","the Storm-Bringer","the Thunder-Caller","the Lightning-Wielder","Lord of Storms","Prince of Thunder","Duke of Lightning","Master of Tempest","the Hurricane","the Tornado","the Cyclone","the Typhoon","the Maelstrom"],"physical_description":["the Colossal","the Gigantic","the Huge","the Massive","the Enormous","the Titanic","the Tiny","the Small","the Little","the Diminutive","the Minuscule","the Hideous","the Ugly","the Grotesque","the Monstrous","the Abominable","the Repulsive","the Beautiful","the Handsome","the Attractive","the Alluring","the Seductive","the Horned","the Winged","the Tailed","the Clawed","the Fanged","the Multi-Headed","the Many-Armed","the Many-Eyed","the Tentacled","the Formless","the Shapeless","the Amorphous","the Protean","the Shifting","the Twisted","the Warped","the Deformed","the Misshapen","the Malformed","the Perfect","the Flawless","the Immaculate","the Pristine","the Flesh","the Bone","the Blood","the Shadow","the Smoke","the Flame","the Stone","the Metal","the Crystal","the Glass","the Ice","Made of Fire","Born of Shadow","Forged in Pain","Shaped by Hate"],"behavioral":["the Aggressive","the Hostile","the Belligerent","the Combative","the Pugnacious","the Wrathful","the Angry","the Furious","the Enraged","the Raging","the Mad","the Insane","the Crazed","the Demented","the Lunatic","the Berserk","the Frenzied","the Wild","the Savage","the Feral","the Cunning","the Clever","the Shrewd","the Sly","the Crafty","the Wily","the Devious","the Subtle","the Calculating","the Scheming","the Intelligent","the Wise","the Knowledgeable","the Learned","the Sage","the Patient","the Waiting","the Watching","the Lurking","the Biding","the Ancient","the Old","the Timeless","the Eternal","the Patient One","the Hungry","the Starving","the Ravenous","the Voracious","the Insatiable","the Devourer","the Eater","the Consumer","the Feeder","the Glutton","the Never-Satisfied","the Always-Hungry","the Endless Appetite","the Unforgiving"],"special_unique":["the Fallen","the Cast Down","the Exiled","the Banished","the Outcast","the Rebel","the Traitor","the Betrayer","the Apostate","the Heretic","Once-Holy","Former Angel","Ex-Divine","Lost Celestial","the Legendary","the Mythical","the Fabled","the Storied","the Renowned","the Famous","the Infamous","the Notorious","the Dreaded","the Feared","the Only","the One","the Unique","the Singular","the Sole","the First","the Original","the Progenitor","the Creator","the Maker","the Last","the Final","the Ending","the Omega","the Ultimate","the Ancient","the Primordial","the Eternal","the Endless","the Timeless","Before-Time","Pre-Creation","Dawn-Born","Origin-Spawn","the Modern","the New","the Young","the Recent","the Fresh","the Unbound"]},"titles":{"ranks":["King","Prince","Duke","Marquis","President","Earl","Count","Knight","Lord","Baron"],"domains":["the Ninth Pit","Ashes","Rot","the Hollow Council","the Drowned Halls","the Crimson Gate","Broken Oaths","the Last Hour","Cinders","the Sunless Sea","Plague","Unmarked Graves","Whispers","Iron Chains","the Burning Court","Famine","Hunger","Frost","the Seventh Circle","Bones","the Abyss","Nightmares","Debts","Mirrors","Thorns","the Weeping Wood","Shadows","False Gold","Envy","the Black Throne","Silence","Forgotten Names","the Red Desert","Smoke","Locusts","Bargains","the Shattered Moon","Embers","Lost Souls","the Endless Stair"]}}}</script>
     <script src="../lib/recipe-engine.js"></script>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

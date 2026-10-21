@@ -297,276 +297,241 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
-                </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-katana" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 32 C24 24 33 14 42 4 C41 10 35 18 19 35 Z" fill="#fffcf4"/><ellipse cx="17" cy="33" rx="5.5" ry="2.6" transform="rotate(-45 17 33)" fill="#efc84a"/><path d="M15 35 L6 44"/><path d="M8 40 l2 2 M11 37 l2 2" stroke-width="1.2"/></g></symbol>
+      <symbol id="m-sword" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(35 24 24)"><path d="M24 2 L28 8 L28 30 L20 30 L20 8 Z" fill="#fffcf4"/><path d="M24 9 V28" stroke-width="1.2"/><path d="M14 30 H34"/><path d="M24 30 V41"/><circle cx="24" cy="43.5" r="2.4" fill="#efc84a"/></g></g></symbol>
+      <symbol id="m-sword-crown" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(35 24 24)"><path d="M24 6 L28 12 L28 32 L20 32 L20 12 Z" fill="#fffcf4"/><path d="M14 32 H34"/><path d="M24 32 V42"/></g><path d="M3 10 L6 3 L10 8 L13 2 L16 8 L20 3 L22 10 Z" fill="#efc84a"/></g></symbol>
+      <symbol id="m-axe" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 V44"/><path d="M24 10 C19 11 14 9 10 6 C6 13 6 23 11 30 C15 27 19 26 24 25 Z" fill="#fffcf4"/><path d="M24 10 C29 11 34 9 38 6 C42 13 42 23 37 30 C33 27 29 26 24 25 Z" fill="#fffcf4"/><path d="M21 37 h6" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-round-shield" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18" fill="#fffcf4"/><circle cx="24" cy="24" r="5" fill="#efc84a"/><path d="M24 6 V19 M24 29 V42 M6 24 H19 M29 24 H42" stroke-width="1.3"/></g></symbol>
+      <symbol id="m-wand" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 42 L32 16" stroke-width="3"/><path d="M8 42 L13 37" stroke-width="5.5"/><path d="M38 3 l2 5 l5 2 l-5 2 l-2 5 l-2 -5 l-5 -2 l5 -2 z" fill="#efc84a" stroke-width="1.4"/><path d="M29 6 l1 2 M44 20 l-2 1 M33 22 l2 1" stroke-width="1.2"/></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../categories/objects-names.html">Objects</a> / <span aria-current="page">Japanese Sword Name Generator</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">Japanese</span> Sword Name Generator</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-katana"/></svg>
             </div>
-        </div>
-    </nav>
+            <p class="lede">Sword names from real Japanese words, each with its meaning: Tsuki-kage, Kumo-giri, Karasu-maru.</p>
 
-    <div class="container">
-        <header class="blog-hero">
-            <h1>🗾 Japanese Sword Name Generator</h1>
-            <p class="tagline">Sword names from real Japanese words, each with its meaning: Tsuki-kage, Kumo-giri, Karasu-maru.</p>
-            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
-        </header>
-
-        <main>
-            <section class="embedded-generator">
-                <div class="generator-card">
-                    <h2>Generate Japanese Sword Names</h2>
-                    <p class="generator-description">Japanese sword names built from real Japanese words, with their meaning: poetic names like Tsuki-kage, &quot;Moon Shadow&quot;, and cutter names like Kumo-giri, &quot;Cloud Cutter&quot;.</p>
-                    
-                    <div class="simple-generator">
-                        <div class="filters">
-          <div class="filter-group">
-            <label for="filter-kind">Kind of Name:</label>
-            <select id="filter-kind" name="kind" data-filter="kind">
-              <option value="poetic">Poetic (Tsuki-kage, &quot;Moon Shadow&quot;)</option>
-              <option value="cutter">Named for what it cut (Kumo-giri, &quot;Cloud Cutter&quot;)</option>
-              <option value="maru">With -maru (Karasu-maru, &quot;Crow&quot;)</option>
-              <option value="any">Any</option>
-            </select>
+            <section class="sheet hd simple-generator" id="generator" aria-label="Japanese Sword Name Generator">
+                <div class="gen-one">
+          <div class="group">
+            <label class="label" for="filter-kind">Kind of Name</label>
+            <div class="ctl sel hd">
+              <select id="filter-kind" name="kind" data-filter="kind">
+                <option value="poetic">Poetic (Tsuki-kage, &quot;Moon Shadow&quot;)</option>
+                <option value="cutter">Named for what it cut (Kumo-giri, &quot;Cloud Cutter&quot;)</option>
+                <option value="maru">With -maru (Karasu-maru, &quot;Crow&quot;)</option>
+                <option value="any">Any</option>
+              </select>
+            </div>
           </div></div>
-                        <div class="generator-controls">
-                            <div class="filter-group count-group">
-                                <label for="name-count">How many:</label>
-                                <select id="name-count">
-                                    <option value="8" selected>8 names</option>
-                                    <option value="16">16 names</option>
-                                    <option value="32">32 names</option>
-                                </select>
-                            </div>
-                            <button id="generate-btn" class="generate-button">Generate Names</button>
-                        </div>
-                        <div class="results-area" id="results">
-                            <p class="results-placeholder">Click "Generate Names" to see results</p>
-                        </div>
-                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
-                        <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="true">
+                    <p class="results-empty">Press Generate Names for 8 japanese sword names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
                     </div>
-                    
-                    <div class="cta-box">
-                        <p><strong>Need more options?</strong></p>
-                        <a href="../index.html" class="cta-button">Try the Ultimate Random Name Generator →</a>
-                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
+
+            <section class="section example-names">
+                <h2>Example Japanese Sword Names</h2>
+                <p class="sub">A few names this generator came up with. Tap one to copy it, or press "Generate Names" above for more.</p>
+                <div class="ex">
+                <div class="exbox hd">
+                    <h3>Poetic</h3>
+                    <ul>
+                        <li>Umi-hoshi (Sea Star)</li>
+                        <li>Karasu-shimo (Crow Frost)</li>
+                        <li>Sakura-nami (Cherry Blossom Wave)</li>
+                        <li>Kawa-kaze (River Wind)</li>
+                        <li>Mori-inazuma (Forest Lightning)</li>
+                        <li>Kage-tsuyu (Shadow Dew)</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Named for what it cut</h3>
+                    <ul>
+                        <li>Yuki-giri (Snow Cutter)</li>
+                        <li>Tora-giri (Tiger Cutter)</li>
+                        <li>Nami-giri (Wave Cutter)</li>
+                        <li>Ishi-giri (Stone Cutter)</li>
+                        <li>Kumo-giri (Cloud Cutter)</li>
+                        <li>Ryū-giri (Dragon Cutter)</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>With -maru</h3>
+                    <ul>
+                        <li>Hebi-maru (Snake)</li>
+                        <li>Tora-maru (Tiger)</li>
+                        <li>Kumo-maru (Cloud)</li>
+                        <li>Shimo-maru (Frost)</li>
+                        <li>Kaminari-maru (Thunder)</li>
+                        <li>Tetsu-maru (Iron)</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Any</h3>
+                    <ul>
+                        <li>Hotaru-tsuyu (Firefly Dew)</li>
+                        <li>Gin-maru (Silver)</li>
+                        <li>Sakura-maru (Cherry Blossom)</li>
+                        <li>Shimo-hoshi (Frost Star)</li>
+                        <li>Kaminari-kiri (Thunder Mist)</li>
+                        <li>Take-giri (Bamboo Cutter)</li>
+                    </ul>
+                </div>
                 </div>
             </section>
 
-            <section class="example-names">
-                <h2>Example Japanese Sword Names</h2>
-                <p>A few names this generator came up with. Press "Generate Names" above for more.</p>
-                <h3>Poetic</h3>
-                <ul class="name-results">
-                    <li>Umi-hoshi (Sea Star)</li>
-                    <li>Karasu-shimo (Crow Frost)</li>
-                    <li>Sakura-nami (Cherry Blossom Wave)</li>
-                    <li>Kawa-kaze (River Wind)</li>
-                    <li>Mori-inazuma (Forest Lightning)</li>
-                    <li>Kage-tsuyu (Shadow Dew)</li>
-                </ul>
-                <h3>Named for what it cut</h3>
-                <ul class="name-results">
-                    <li>Yuki-giri (Snow Cutter)</li>
-                    <li>Tora-giri (Tiger Cutter)</li>
-                    <li>Nami-giri (Wave Cutter)</li>
-                    <li>Ishi-giri (Stone Cutter)</li>
-                    <li>Kumo-giri (Cloud Cutter)</li>
-                    <li>Ryū-giri (Dragon Cutter)</li>
-                </ul>
-                <h3>With -maru</h3>
-                <ul class="name-results">
-                    <li>Hebi-maru (Snake)</li>
-                    <li>Tora-maru (Tiger)</li>
-                    <li>Kumo-maru (Cloud)</li>
-                    <li>Shimo-maru (Frost)</li>
-                    <li>Kaminari-maru (Thunder)</li>
-                    <li>Tetsu-maru (Iron)</li>
-                </ul>
-                <h3>Any</h3>
-                <ul class="name-results">
-                    <li>Hotaru-tsuyu (Firefly Dew)</li>
-                    <li>Gin-maru (Silver)</li>
-                    <li>Sakura-maru (Cherry Blossom)</li>
-                    <li>Shimo-hoshi (Frost Star)</li>
-                    <li>Kaminari-kiri (Thunder Mist)</li>
-                    <li>Take-giri (Bamboo Cutter)</li>
-                </ul>
-            </section>
-
-            <section class="blog-content how-it-works">
+            <section class="section how-it-works">
                 <h2>How the Japanese Sword Name Generator Works</h2>
+                <div class="howto hd">
                 <p>It picks from a list of 601 names.</p>
                 <p>The choices:</p>
                 <ul><li><strong>Kind of Name:</strong><ul><li>Poetic, e.g. <em>Yami-kage (Darkness Shadow)</em></li><li>Named for what it cut, e.g. <em>Yami-giri (Darkness Cutter)</em></li><li>With -maru, e.g. <em>Kitsune-maru (Fox)</em></li><li>Any, e.g. <em>Tora-giri (Tiger Cutter)</em></li></ul></li></ul>
-                <p>Each press gives you 8, 16 or 32 names (choose under "How many"), and you won't see the same one twice until you've been through everything for the choices you've made.</p>
+                <p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet, until the names for the choices you've made run out.</p>
+                </div>
             </section>
 
-            <article class="blog-content" itemscope itemtype="https://schema.org/Article">
+            <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="Japanese Sword Name Generator">
                 <meta itemprop="description" content="Japanese sword names built from real Japanese words, with their meaning: poetic names like Tsuki-kage, &quot;Moon Shadow&quot;, and cutter names like Kumo-giri, &quot;Cloud Cutter&quot;.">
-                <section itemprop="articleBody">
-                    <p>Famous Japanese swords have names that tell a story: <em>Dōjigiri</em>, the "Child-Cutter", is said to have killed a demon; <em>Mikazuki</em>, "Crescent Moon", is named for the crescent shapes in its steel. This <strong>Japanese sword name generator</strong> builds names the same three ways, from real Japanese words, and tells you what each one means.</p>
-                </section>
+                <div itemprop="articleBody">
+                <p class="big">Famous Japanese swords have names that tell a story: <em>Dōjigiri</em>, the "Child-Cutter", is said to have killed a demon; <em>Mikazuki</em>, "Crescent Moon", is named for the crescent shapes in its steel. This <strong>Japanese sword name generator</strong> builds names the same three ways, from real Japanese words, and tells you what each one means.</p>
                 
-      <section>
-        <h2>How famous Japanese swords got their names</h2>
-        <p>Celebrated swords, called <em>meibutsu</em>, usually got their names from a story, a feature of the blade, or an owner, and the smith's name was added after. Five are counted as the greatest, the <strong>Tenka-Goken</strong>:</p><ul><li><strong>Dōjigiri Yasutsuna</strong>, "Child-Cutter", said to have killed the demon Shuten-dōji.</li><li><strong>Mikazuki Munechika</strong>, "Crescent Moon", for the crescent-shaped patterns along its edge.</li><li><strong>Ōdenta Mitsuyo</strong>, <strong>Juzumaru Tsunetsugu</strong> (named for a Buddhist rosary, <em>juzu</em>, wrapped round its hilt) and <strong>Onimaru Kunitsuna</strong>, "Demon", said to have cut down a demon on its own.</li></ul><p>Others are named for what they cut: <em>Higekiri</em>, "Beard-Cutter", and <em>Hizamaru</em>, "Knee", tested, the legends say, on condemned prisoners. That's where the "cutter" names come from.</p>
-      </section>
-    
+                <h2>How famous Japanese swords got their names</h2>
+                <p>Celebrated swords, called <em>meibutsu</em>, usually got their names from a story, a feature of the blade, or an owner, and the smith's name was added after. Five are counted as the greatest, the <strong>Tenka-Goken</strong>:</p><ul><li><strong>Dōjigiri Yasutsuna</strong>, "Child-Cutter", said to have killed the demon Shuten-dōji.</li><li><strong>Mikazuki Munechika</strong>, "Crescent Moon", for the crescent-shaped patterns along its edge.</li><li><strong>Ōdenta Mitsuyo</strong>, <strong>Juzumaru Tsunetsugu</strong> (named for a Buddhist rosary, <em>juzu</em>, wrapped round its hilt) and <strong>Onimaru Kunitsuna</strong>, "Demon", said to have cut down a demon on its own.</li></ul><p>Others are named for what they cut: <em>Higekiri</em>, "Beard-Cutter", and <em>Hizamaru</em>, "Knee", tested, the legends say, on condemned prisoners. That's where the "cutter" names come from.</p>
 
-      <section>
-        <h2>Three kinds of name</h2>
-        <ul><li><strong>Poetic</strong>: two words from nature, like the imagery of a haiku. <em>Tsuki</em> (moon) and <em>kage</em> (shadow) make <em>Tsuki-kage</em>, "Moon Shadow".</li><li><strong>Named for what it cut</strong>: a thing, plus <em>-giri</em>, from <em>kiru</em>, to cut. <em>Kumo-giri</em> is "Cloud Cutter"; <em>Take-giri</em>, "Bamboo Cutter", for a blade that's been tested.</li><li><strong>With -maru</strong>: an old ending found in boys' names, ships' names and swords' names, like the famous <em>Kogarasu-maru</em>, "Little Crow".</li></ul><p>The names use hyphens so you can see the parts. Written in Japanese they'd be joined, and sounds sometimes change when words combine.</p>
-      </section>
-    
+                <h2>Three kinds of name</h2>
+                <ul><li><strong>Poetic</strong>: two words from nature, like the imagery of a haiku. <em>Tsuki</em> (moon) and <em>kage</em> (shadow) make <em>Tsuki-kage</em>, "Moon Shadow".</li><li><strong>Named for what it cut</strong>: a thing, plus <em>-giri</em>, from <em>kiru</em>, to cut. <em>Kumo-giri</em> is "Cloud Cutter"; <em>Take-giri</em>, "Bamboo Cutter", for a blade that's been tested.</li><li><strong>With -maru</strong>: an old ending found in boys' names, ships' names and swords' names, like the famous <em>Kogarasu-maru</em>, "Little Crow".</li></ul><p>The names use hyphens so you can see the parts. Written in Japanese they'd be joined, and sounds sometimes change when words combine.</p>
 
-      <section>
-        <h2>The legendary smiths</h2>
-        <ul><li><strong>Masamune</strong>, who worked around 1300, is remembered as Japan's greatest swordsmith, and his name is still used to mean a perfect blade.</li><li><strong>Muramasa</strong>'s swords became known as cursed, said to thirst for blood and to bring misfortune on the Tokugawa family. The legend is much bigger than the history.</li><li>In stories, the two are often set against each other: Masamune's calm perfection against Muramasa's hunger.</li></ul><p>For swords in other traditions, try the <a href="sword-name-generator.html">Sword Name Generator</a> or the <a href="elven-sword-name-generator.html">Elven Sword Name Generator</a>.</p>
-      </section>
-    
+                <h2>The legendary smiths</h2>
+                <ul><li><strong>Masamune</strong>, who worked around 1300, is remembered as Japan's greatest swordsmith, and his name is still used to mean a perfect blade.</li><li><strong>Muramasa</strong>'s swords became known as cursed, said to thirst for blood and to bring misfortune on the Tokugawa family. The legend is much bigger than the history.</li><li>In stories, the two are often set against each other: Masamune's calm perfection against Muramasa's hunger.</li></ul><p>For swords in other traditions, try the <a href="sword-name-generator.html">Sword Name Generator</a> or the <a href="elven-sword-name-generator.html">Elven Sword Name Generator</a>.</p>
+                </div>
             </article>
 
-            
-      <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Are the translations real?</h3>
-              <p class="faq-answer">Yes. Every name is made from real Japanese words, and the meaning shown is what those words mean. They're new combinations, not the names of famous swords.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">What does -maru mean in a sword name?</h3>
-              <p class="faq-answer">It's a traditional ending used in names of boys, ships and swords, with a sense of something precious or protected. Kogarasu-maru, "Little Crow", is a famous example.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Can I use these names for a character or story?</h3>
-              <p class="faq-answer">Yes, they're free to use and you don't need to credit the site.</p>
-            </div>
-          
-        </div>
-      </section>
-            
-      <section class="related-section">
-        <h2>Related Name Generators</h2>
-        <div class="related-grid" id="related-generators">
-          <a href="../posts/elven-sword-name-generator.html" class="related-card">
-            <h3>⚔️ Elven Sword Name Generator</h3>
-            <p>Elven sword names built from Tolkien&#039;s Sindarin and Quenya, each with its real meaning, plus the famous blades of the legends: Glamdring, Orcrist, Andúril.</p>
-          </a>
-          <a href="../posts/funny-minecraft-sword-name-generator.html" class="related-card">
-            <h3>🗡️ Funny Minecraft Sword Name Generator</h3>
-            <p>Funny Minecraft sword names that fit the anvil&#039;s rename box, from mob puns like Creeper Sweeper to Bladey McBladeface.</p>
-          </a>
-          <a href="../posts/game-of-thrones-sword-name-generator.html" class="related-card">
-            <h3>⚔️ Game of Thrones Sword Name Generator</h3>
-            <p>Game of Thrones style sword names to suit a great house, from northern wolves to Ironborn reavers, with the blade if you want it: Ashsister, a Valyrian steel longsword.</p>
-          </a>
-          <a href="../posts/sword-name-generator.html" class="related-card">
-            <h3>⚔️ Sword Name Generator</h3>
-            <p>Sword names for heroes, villains and old kings, with an epithet or a description: Griefbane, Drinker of Souls; Sigeling, a pattern-welded sword.</p>
-          </a>
-          <a href="../posts/axe-name-generator.html" class="related-card">
-            <h3>🪓 Axe Name Generator</h3>
-            <p>Axe names in four styles: Norse axes named like troll-women, dwarven heirlooms, brutal orc cleavers and a woodsman&#039;s Old Bess, with an epithet or description.</p>
-          </a>
-          <a href="../posts/hammer-name-generator.html" class="related-card">
-            <h3>🔨 Hammer Name Generator</h3>
-            <p>Names for legendary hammers, war hammers, mauls and maces, from short ones like Sacred Anvil to full titles like &quot;Star-Iron Warhammer, Breaker of Chains&quot;.</p>
-          </a>
-        </div>
-      </section>
-            
-      <section class="category-generators-section">
-        <h2>All Objects Name Generators</h2>
-        <div class="category-generators-grid" id="category-generators">
-          <a href="../posts/shield-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🛡️</span>
-            <span class="category-generator-title">Shield Name Generator</span>
-          </a>
-          <a href="../posts/poison-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">☠️</span>
-            <span class="category-generator-title">Poison Name Generator</span>
-          </a>
-          <a href="../posts/sword-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Sword Name Generator</span>
-          </a>
-          <a href="../posts/axe-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🪓</span>
-            <span class="category-generator-title">Axe Name Generator</span>
-          </a>
-          <a href="../posts/hammer-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🔨</span>
-            <span class="category-generator-title">Hammer Name Generator</span>
-          </a>
-          <a href="../posts/wand-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🪄</span>
-            <span class="category-generator-title">Wand Name Generator</span>
-          </a>
-          <a href="../posts/funny-minecraft-sword-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🗡️</span>
-            <span class="category-generator-title">Funny Minecraft Sword Name Generator</span>
-          </a>
-          <a href="../posts/elven-sword-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Elven Sword Name Generator</span>
-          </a>
-          <a href="../posts/game-of-thrones-sword-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Game of Thrones Sword Name Generator</span>
-          </a>
-        </div>
-      </section>
-        </main>
+            <section class="section faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Are the translations real?</summary>
+                        <div>Yes. Every name is made from real Japanese words, and the meaning shown is what those words mean. They're new combinations, not the names of famous swords.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>What does -maru mean in a sword name?</summary>
+                        <div>It's a traditional ending used in names of boys, ships and swords, with a sense of something precious or protected. Kogarasu-maru, "Little Crow", is a famous example.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Can I use these names for a character or story?</summary>
+                        <div>Yes, they're free to use and you don't need to credit the site.</div>
+                    </details>
+                </div>
+            </section>
 
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+            <section class="section related-section">
+                <h2>Related Name Generators</h2>
+                <div class="genlist" id="related-generators">
+                    <a href="../posts/elven-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Elven Sword Name Generator</b><span>Elven sword names built from Tolkien&#039;s Sindarin and Quenya, each with its real meaning, plus the famous blades of the legends: Glamdring, Orcrist, Andúril.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/funny-minecraft-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Funny Minecraft Sword Name Generator</b><span>Funny Minecraft sword names that fit the anvil&#039;s rename box, from mob puns like Creeper Sweeper to Bladey McBladeface.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/game-of-thrones-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword-crown"/></svg><div><b>Game of Thrones Sword Name Generator</b><span>Game of Thrones style sword names to suit a great house, from northern wolves to Ironborn reavers, with the blade if you want it: Ashsister, a Valyrian steel longsword.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Sword Name Generator</b><span>Sword names for heroes, villains and old kings, with an epithet or a description: Griefbane, Drinker of Souls; Sigeling, a pattern-welded sword.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/axe-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-axe"/></svg><div><b>Axe Name Generator</b><span>Axe names in four styles: Norse axes named like troll-women, dwarven heirlooms, brutal orc cleavers and a woodsman&#039;s Old Bess, with an epithet or description.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/hammer-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Hammer Name Generator</b><span>Names for legendary hammers, war hammers, mauls and maces, from short ones like Sacred Anvil to full titles like &quot;Star-Iron Warhammer, Breaker of Chains&quot;.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
+
+            <section class="section category-generators-section">
+                <h2>More Objects Name Generators</h2>
+                <div class="genlist compact" id="category-generators">
+                    <a href="../posts/shield-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-round-shield"/></svg><div><b>Shield Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/poison-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Poison Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Sword Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/axe-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-axe"/></svg><div><b>Axe Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/hammer-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Hammer Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/wand-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-wand"/></svg><div><b>Wand Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/funny-minecraft-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Funny Minecraft Sword Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/elven-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Elven Sword Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/game-of-thrones-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword-crown"/></svg><div><b>Game of Thrones Sword Name Generator</b></div><em aria-hidden="true">→</em></a>
+                </div>
+                <p class="all-link"><a href="../categories/objects-names.html">All Objects name generators</a></p>
+            </section>
+            <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
 
     <script type="application/json" id="generator-config">{"title":"Japanese Sword Name Generator","slug":"japanese-sword-name-generator","filters":{"kind":{"label":"Kind of Name","options":["poetic","cutter","maru","any"],"optionLabels":{"poetic":"Poetic (Tsuki-kage, \"Moon Shadow\")","cutter":"Named for what it cut (Kumo-giri, \"Cloud Cutter\")","maru":"With -maru (Karasu-maru, \"Crow\")","any":"Any"}}},"recipe":"switch","on":"kind","cases":{"any":{"recipe":"template","template":["[poetic]","[cutter]","[maru]"]}},"default":{"recipe":"pick","from":"{kind}"},"data":{"poetic":["Tsuki-kage (Moon Shadow)","Tsuki-kaze (Moon Wind)","Tsuki-kiri (Moon Mist)","Tsuki-hana (Moon Flower)","Tsuki-yuki (Moon Snow)","Tsuki-ame (Moon Rain)","Tsuki-kumo (Moon Cloud)","Tsuki-hoshi (Moon Star)","Tsuki-yami (Moon Darkness)","Tsuki-nami (Moon Wave)","Tsuki-shimo (Moon Frost)","Tsuki-tsuyu (Moon Dew)","Tsuki-inazuma (Moon Lightning)","Tsuki-honoo (Moon Flame)","Kage-kaze (Shadow Wind)","Kage-kiri (Shadow Mist)","Kage-hana (Shadow Flower)","Kage-yuki (Shadow Snow)","Kage-ame (Shadow Rain)","Kage-kumo (Shadow Cloud)","Kage-hoshi (Shadow Star)","Kage-yami (Shadow Darkness)","Kage-nami (Shadow Wave)","Kage-shimo (Shadow Frost)","Kage-tsuyu (Shadow Dew)","Kage-inazuma (Shadow Lightning)","Kage-honoo (Shadow Flame)","Kaze-kage (Wind Shadow)","Kaze-kiri (Wind Mist)","Kaze-hana (Wind Flower)","Kaze-yuki (Wind Snow)","Kaze-ame (Wind Rain)","Kaze-kumo (Wind Cloud)","Kaze-hoshi (Wind Star)","Kaze-yami (Wind Darkness)","Kaze-nami (Wind Wave)","Kaze-shimo (Wind Frost)","Kaze-tsuyu (Wind Dew)","Kaze-inazuma (Wind Lightning)","Kaze-honoo (Wind Flame)","Kiri-kage (Mist Shadow)","Kiri-kaze (Mist Wind)","Kiri-hana (Mist Flower)","Kiri-yuki (Mist Snow)","Kiri-ame (Mist Rain)","Kiri-kumo (Mist Cloud)","Kiri-hoshi (Mist Star)","Kiri-yami (Mist Darkness)","Kiri-nami (Mist Wave)","Kiri-shimo (Mist Frost)","Kiri-tsuyu (Mist Dew)","Kiri-inazuma (Mist Lightning)","Kiri-honoo (Mist Flame)","Hana-kage (Flower Shadow)","Hana-kaze (Flower Wind)","Hana-kiri (Flower Mist)","Hana-yuki (Flower Snow)","Hana-ame (Flower Rain)","Hana-kumo (Flower Cloud)","Hana-hoshi (Flower Star)","Hana-yami (Flower Darkness)","Hana-nami (Flower Wave)","Hana-shimo (Flower Frost)","Hana-tsuyu (Flower Dew)","Hana-inazuma (Flower Lightning)","Hana-honoo (Flower Flame)","Yuki-kage (Snow Shadow)","Yuki-kaze (Snow Wind)","Yuki-kiri (Snow Mist)","Yuki-hana (Snow Flower)","Yuki-ame (Snow Rain)","Yuki-kumo (Snow Cloud)","Yuki-hoshi (Snow Star)","Yuki-yami (Snow Darkness)","Yuki-nami (Snow Wave)","Yuki-shimo (Snow Frost)","Yuki-tsuyu (Snow Dew)","Yuki-inazuma (Snow Lightning)","Yuki-honoo (Snow Flame)","Ame-kage (Rain Shadow)","Ame-kaze (Rain Wind)","Ame-kiri (Rain Mist)","Ame-hana (Rain Flower)","Ame-yuki (Rain Snow)","Ame-kumo (Rain Cloud)","Ame-hoshi (Rain Star)","Ame-yami (Rain Darkness)","Ame-nami (Rain Wave)","Ame-shimo (Rain Frost)","Ame-tsuyu (Rain Dew)","Ame-inazuma (Rain Lightning)","Ame-honoo (Rain Flame)","Kumo-kage (Cloud Shadow)","Kumo-kaze (Cloud Wind)","Kumo-kiri (Cloud Mist)","Kumo-hana (Cloud Flower)","Kumo-yuki (Cloud Snow)","Kumo-ame (Cloud Rain)","Kumo-hoshi (Cloud Star)","Kumo-yami (Cloud Darkness)","Kumo-nami (Cloud Wave)","Kumo-shimo (Cloud Frost)","Kumo-tsuyu (Cloud Dew)","Kumo-inazuma (Cloud Lightning)","Kumo-honoo (Cloud Flame)","Hoshi-kage (Star Shadow)","Hoshi-kaze (Star Wind)","Hoshi-kiri (Star Mist)","Hoshi-hana (Star Flower)","Hoshi-yuki (Star Snow)","Hoshi-ame (Star Rain)","Hoshi-kumo (Star Cloud)","Hoshi-yami (Star Darkness)","Hoshi-nami (Star Wave)","Hoshi-shimo (Star Frost)","Hoshi-tsuyu (Star Dew)","Hoshi-inazuma (Star Lightning)","Hoshi-honoo (Star Flame)","Yami-kage (Darkness Shadow)","Yami-kaze (Darkness Wind)","Yami-kiri (Darkness Mist)","Yami-hana (Darkness Flower)","Yami-yuki (Darkness Snow)","Yami-ame (Darkness Rain)","Yami-kumo (Darkness Cloud)","Yami-hoshi (Darkness Star)","Yami-nami (Darkness Wave)","Yami-shimo (Darkness Frost)","Yami-tsuyu (Darkness Dew)","Yami-inazuma (Darkness Lightning)","Yami-honoo (Darkness Flame)","Mizu-kage (Water Shadow)","Mizu-kaze (Water Wind)","Mizu-kiri (Water Mist)","Mizu-hana (Water Flower)","Mizu-yuki (Water Snow)","Mizu-kumo (Water Cloud)","Mizu-hoshi (Water Star)","Mizu-yami (Water Darkness)","Mizu-nami (Water Wave)","Mizu-shimo (Water Frost)","Mizu-tsuyu (Water Dew)","Mizu-inazuma (Water Lightning)","Mizu-honoo (Water Flame)","Nami-kage (Wave Shadow)","Nami-kaze (Wave Wind)","Nami-kiri (Wave Mist)","Nami-hana (Wave Flower)","Nami-yuki (Wave Snow)","Nami-ame (Wave Rain)","Nami-kumo (Wave Cloud)","Nami-hoshi (Wave Star)","Nami-yami (Wave Darkness)","Nami-shimo (Wave Frost)","Nami-tsuyu (Wave Dew)","Nami-inazuma (Wave Lightning)","Nami-honoo (Wave Flame)","Shimo-kage (Frost Shadow)","Shimo-kaze (Frost Wind)","Shimo-kiri (Frost Mist)","Shimo-hana (Frost Flower)","Shimo-yuki (Frost Snow)","Shimo-ame (Frost Rain)","Shimo-kumo (Frost Cloud)","Shimo-hoshi (Frost Star)","Shimo-yami (Frost Darkness)","Shimo-nami (Frost Wave)","Shimo-tsuyu (Frost Dew)","Shimo-inazuma (Frost Lightning)","Shimo-honoo (Frost Flame)","Tsuyu-kage (Dew Shadow)","Tsuyu-kaze (Dew Wind)","Tsuyu-kiri (Dew Mist)","Tsuyu-hana (Dew Flower)","Tsuyu-yuki (Dew Snow)","Tsuyu-ame (Dew Rain)","Tsuyu-kumo (Dew Cloud)","Tsuyu-hoshi (Dew Star)","Tsuyu-yami (Dew Darkness)","Tsuyu-nami (Dew Wave)","Tsuyu-shimo (Dew Frost)","Tsuyu-inazuma (Dew Lightning)","Tsuyu-honoo (Dew Flame)","Yoru-kage (Night Shadow)","Yoru-kaze (Night Wind)","Yoru-kiri (Night Mist)","Yoru-hana (Night Flower)","Yoru-yuki (Night Snow)","Yoru-ame (Night Rain)","Yoru-kumo (Night Cloud)","Yoru-hoshi (Night Star)","Yoru-yami (Night Darkness)","Yoru-nami (Night Wave)","Yoru-shimo (Night Frost)","Yoru-tsuyu (Night Dew)","Yoru-inazuma (Night Lightning)","Yoru-honoo (Night Flame)","Asa-kage (Morning Shadow)","Asa-kaze (Morning Wind)","Asa-kiri (Morning Mist)","Asa-hana (Morning Flower)","Asa-yuki (Morning Snow)","Asa-ame (Morning Rain)","Asa-kumo (Morning Cloud)","Asa-hoshi (Morning Star)","Asa-yami (Morning Darkness)","Asa-nami (Morning Wave)","Asa-shimo (Morning Frost)","Asa-tsuyu (Morning Dew)","Asa-inazuma (Morning Lightning)","Asa-honoo (Morning Flame)","Sakura-kage (Cherry Blossom Shadow)","Sakura-kaze (Cherry Blossom Wind)","Sakura-kiri (Cherry Blossom Mist)","Sakura-hana (Cherry Blossom Flower)","Sakura-yuki (Cherry Blossom Snow)","Sakura-ame (Cherry Blossom Rain)","Sakura-kumo (Cherry Blossom Cloud)","Sakura-hoshi (Cherry Blossom Star)","Sakura-yami (Cherry Blossom Darkness)","Sakura-nami (Cherry Blossom Wave)","Sakura-shimo (Cherry Blossom Frost)","Sakura-tsuyu (Cherry Blossom Dew)","Sakura-inazuma (Cherry Blossom Lightning)","Sakura-honoo (Cherry Blossom Flame)","Inazuma-kage (Lightning Shadow)","Inazuma-kaze (Lightning Wind)","Inazuma-kiri (Lightning Mist)","Inazuma-hana (Lightning Flower)","Inazuma-yuki (Lightning Snow)","Inazuma-ame (Lightning Rain)","Inazuma-kumo (Lightning Cloud)","Inazuma-hoshi (Lightning Star)","Inazuma-yami (Lightning Darkness)","Inazuma-nami (Lightning Wave)","Inazuma-shimo (Lightning Frost)","Inazuma-tsuyu (Lightning Dew)","Inazuma-honoo (Lightning Flame)","Kaminari-kage (Thunder Shadow)","Kaminari-kaze (Thunder Wind)","Kaminari-kiri (Thunder Mist)","Kaminari-hana (Thunder Flower)","Kaminari-yuki (Thunder Snow)","Kaminari-ame (Thunder Rain)","Kaminari-kumo (Thunder Cloud)","Kaminari-hoshi (Thunder Star)","Kaminari-yami (Thunder Darkness)","Kaminari-nami (Thunder Wave)","Kaminari-shimo (Thunder Frost)","Kaminari-tsuyu (Thunder Dew)","Kaminari-inazuma (Thunder Lightning)","Kaminari-honoo (Thunder Flame)","Honoo-kage (Flame Shadow)","Honoo-kaze (Flame Wind)","Honoo-kiri (Flame Mist)","Honoo-hana (Flame Flower)","Honoo-yuki (Flame Snow)","Honoo-ame (Flame Rain)","Honoo-kumo (Flame Cloud)","Honoo-hoshi (Flame Star)","Honoo-yami (Flame Darkness)","Honoo-nami (Flame Wave)","Honoo-shimo (Flame Frost)","Honoo-tsuyu (Flame Dew)","Honoo-inazuma (Flame Lightning)","Tetsu-kage (Iron Shadow)","Tetsu-kaze (Iron Wind)","Tetsu-kiri (Iron Mist)","Tetsu-hana (Iron Flower)","Tetsu-yuki (Iron Snow)","Tetsu-ame (Iron Rain)","Tetsu-kumo (Iron Cloud)","Tetsu-hoshi (Iron Star)","Tetsu-yami (Iron Darkness)","Tetsu-nami (Iron Wave)","Tetsu-shimo (Iron Frost)","Tetsu-tsuyu (Iron Dew)","Tetsu-inazuma (Iron Lightning)","Tetsu-honoo (Iron Flame)","Gin-kage (Silver Shadow)","Gin-kaze (Silver Wind)","Gin-kiri (Silver Mist)","Gin-hana (Silver Flower)","Gin-yuki (Silver Snow)","Gin-ame (Silver Rain)","Gin-kumo (Silver Cloud)","Gin-hoshi (Silver Star)","Gin-yami (Silver Darkness)","Gin-nami (Silver Wave)","Gin-shimo (Silver Frost)","Gin-tsuyu (Silver Dew)","Gin-inazuma (Silver Lightning)","Gin-honoo (Silver Flame)","Ishi-kage (Stone Shadow)","Ishi-kaze (Stone Wind)","Ishi-kiri (Stone Mist)","Ishi-hana (Stone Flower)","Ishi-yuki (Stone Snow)","Ishi-ame (Stone Rain)","Ishi-kumo (Stone Cloud)","Ishi-hoshi (Stone Star)","Ishi-yami (Stone Darkness)","Ishi-nami (Stone Wave)","Ishi-shimo (Stone Frost)","Ishi-tsuyu (Stone Dew)","Ishi-inazuma (Stone Lightning)","Ishi-honoo (Stone Flame)","Kawa-kage (River Shadow)","Kawa-kaze (River Wind)","Kawa-kiri (River Mist)","Kawa-hana (River Flower)","Kawa-yuki (River Snow)","Kawa-ame (River Rain)","Kawa-kumo (River Cloud)","Kawa-hoshi (River Star)","Kawa-yami (River Darkness)","Kawa-nami (River Wave)","Kawa-shimo (River Frost)","Kawa-tsuyu (River Dew)","Kawa-inazuma (River Lightning)","Kawa-honoo (River Flame)","Mine-kage (Peak Shadow)","Mine-kaze (Peak Wind)","Mine-kiri (Peak Mist)","Mine-hana (Peak Flower)","Mine-yuki (Peak Snow)","Mine-ame (Peak Rain)","Mine-kumo (Peak Cloud)","Mine-hoshi (Peak Star)","Mine-yami (Peak Darkness)","Mine-nami (Peak Wave)","Mine-shimo (Peak Frost)","Mine-tsuyu (Peak Dew)","Mine-inazuma (Peak Lightning)","Mine-honoo (Peak Flame)","Mori-kage (Forest Shadow)","Mori-kaze (Forest Wind)","Mori-kiri (Forest Mist)","Mori-hana (Forest Flower)","Mori-yuki (Forest Snow)","Mori-ame (Forest Rain)","Mori-kumo (Forest Cloud)","Mori-hoshi (Forest Star)","Mori-yami (Forest Darkness)","Mori-nami (Forest Wave)","Mori-shimo (Forest Frost)","Mori-tsuyu (Forest Dew)","Mori-inazuma (Forest Lightning)","Mori-honoo (Forest Flame)","Sora-kage (Sky Shadow)","Sora-kaze (Sky Wind)","Sora-kiri (Sky Mist)","Sora-hana (Sky Flower)","Sora-yuki (Sky Snow)","Sora-ame (Sky Rain)","Sora-kumo (Sky Cloud)","Sora-hoshi (Sky Star)","Sora-yami (Sky Darkness)","Sora-nami (Sky Wave)","Sora-shimo (Sky Frost)","Sora-tsuyu (Sky Dew)","Sora-inazuma (Sky Lightning)","Sora-honoo (Sky Flame)","Umi-kage (Sea Shadow)","Umi-kaze (Sea Wind)","Umi-kiri (Sea Mist)","Umi-hana (Sea Flower)","Umi-yuki (Sea Snow)","Umi-ame (Sea Rain)","Umi-kumo (Sea Cloud)","Umi-hoshi (Sea Star)","Umi-yami (Sea Darkness)","Umi-nami (Sea Wave)","Umi-shimo (Sea Frost)","Umi-tsuyu (Sea Dew)","Umi-inazuma (Sea Lightning)","Umi-honoo (Sea Flame)","Ryū-kage (Dragon Shadow)","Ryū-kaze (Dragon Wind)","Ryū-kiri (Dragon Mist)","Ryū-hana (Dragon Flower)","Ryū-yuki (Dragon Snow)","Ryū-ame (Dragon Rain)","Ryū-kumo (Dragon Cloud)","Ryū-hoshi (Dragon Star)","Ryū-yami (Dragon Darkness)","Ryū-nami (Dragon Wave)","Ryū-shimo (Dragon Frost)","Ryū-tsuyu (Dragon Dew)","Ryū-inazuma (Dragon Lightning)","Ryū-honoo (Dragon Flame)","Tora-kage (Tiger Shadow)","Tora-kaze (Tiger Wind)","Tora-kiri (Tiger Mist)","Tora-hana (Tiger Flower)","Tora-yuki (Tiger Snow)","Tora-ame (Tiger Rain)","Tora-kumo (Tiger Cloud)","Tora-hoshi (Tiger Star)","Tora-yami (Tiger Darkness)","Tora-nami (Tiger Wave)","Tora-shimo (Tiger Frost)","Tora-tsuyu (Tiger Dew)","Tora-inazuma (Tiger Lightning)","Tora-honoo (Tiger Flame)","Karasu-kage (Crow Shadow)","Karasu-kaze (Crow Wind)","Karasu-kiri (Crow Mist)","Karasu-hana (Crow Flower)","Karasu-yuki (Crow Snow)","Karasu-ame (Crow Rain)","Karasu-kumo (Crow Cloud)","Karasu-hoshi (Crow Star)","Karasu-yami (Crow Darkness)","Karasu-nami (Crow Wave)","Karasu-shimo (Crow Frost)","Karasu-tsuyu (Crow Dew)","Karasu-inazuma (Crow Lightning)","Karasu-honoo (Crow Flame)","Taka-kage (Hawk Shadow)","Taka-kaze (Hawk Wind)","Taka-kiri (Hawk Mist)","Taka-hana (Hawk Flower)","Taka-yuki (Hawk Snow)","Taka-ame (Hawk Rain)","Taka-kumo (Hawk Cloud)","Taka-hoshi (Hawk Star)","Taka-yami (Hawk Darkness)","Taka-nami (Hawk Wave)","Taka-shimo (Hawk Frost)","Taka-tsuyu (Hawk Dew)","Taka-inazuma (Hawk Lightning)","Taka-honoo (Hawk Flame)","Ōkami-kage (Wolf Shadow)","Ōkami-kaze (Wolf Wind)","Ōkami-kiri (Wolf Mist)","Ōkami-hana (Wolf Flower)","Ōkami-yuki (Wolf Snow)","Ōkami-ame (Wolf Rain)","Ōkami-kumo (Wolf Cloud)","Ōkami-hoshi (Wolf Star)","Ōkami-yami (Wolf Darkness)","Ōkami-nami (Wolf Wave)","Ōkami-shimo (Wolf Frost)","Ōkami-tsuyu (Wolf Dew)","Ōkami-inazuma (Wolf Lightning)","Ōkami-honoo (Wolf Flame)","Kitsune-kage (Fox Shadow)","Kitsune-kaze (Fox Wind)","Kitsune-kiri (Fox Mist)","Kitsune-hana (Fox Flower)","Kitsune-yuki (Fox Snow)","Kitsune-ame (Fox Rain)","Kitsune-kumo (Fox Cloud)","Kitsune-hoshi (Fox Star)","Kitsune-yami (Fox Darkness)","Kitsune-nami (Fox Wave)","Kitsune-shimo (Fox Frost)","Kitsune-tsuyu (Fox Dew)","Kitsune-inazuma (Fox Lightning)","Kitsune-honoo (Fox Flame)","Tsuru-kage (Crane Shadow)","Tsuru-kaze (Crane Wind)","Tsuru-kiri (Crane Mist)","Tsuru-hana (Crane Flower)","Tsuru-yuki (Crane Snow)","Tsuru-ame (Crane Rain)","Tsuru-kumo (Crane Cloud)","Tsuru-hoshi (Crane Star)","Tsuru-yami (Crane Darkness)","Tsuru-nami (Crane Wave)","Tsuru-shimo (Crane Frost)","Tsuru-tsuyu (Crane Dew)","Tsuru-inazuma (Crane Lightning)","Tsuru-honoo (Crane Flame)","Hebi-kage (Snake Shadow)","Hebi-kaze (Snake Wind)","Hebi-kiri (Snake Mist)","Hebi-hana (Snake Flower)","Hebi-yuki (Snake Snow)","Hebi-ame (Snake Rain)","Hebi-kumo (Snake Cloud)","Hebi-hoshi (Snake Star)","Hebi-yami (Snake Darkness)","Hebi-nami (Snake Wave)","Hebi-shimo (Snake Frost)","Hebi-tsuyu (Snake Dew)","Hebi-inazuma (Snake Lightning)","Hebi-honoo (Snake Flame)","Kuma-kage (Bear Shadow)","Kuma-kaze (Bear Wind)","Kuma-kiri (Bear Mist)","Kuma-hana (Bear Flower)","Kuma-yuki (Bear Snow)","Kuma-ame (Bear Rain)","Kuma-kumo (Bear Cloud)","Kuma-hoshi (Bear Star)","Kuma-yami (Bear Darkness)","Kuma-nami (Bear Wave)","Kuma-shimo (Bear Frost)","Kuma-tsuyu (Bear Dew)","Kuma-inazuma (Bear Lightning)","Kuma-honoo (Bear Flame)","Suzume-kage (Sparrow Shadow)","Suzume-kaze (Sparrow Wind)","Suzume-kiri (Sparrow Mist)","Suzume-hana (Sparrow Flower)","Suzume-yuki (Sparrow Snow)","Suzume-ame (Sparrow Rain)","Suzume-kumo (Sparrow Cloud)","Suzume-hoshi (Sparrow Star)","Suzume-yami (Sparrow Darkness)","Suzume-nami (Sparrow Wave)","Suzume-shimo (Sparrow Frost)","Suzume-tsuyu (Sparrow Dew)","Suzume-inazuma (Sparrow Lightning)","Suzume-honoo (Sparrow Flame)","Hotaru-kage (Firefly Shadow)","Hotaru-kaze (Firefly Wind)","Hotaru-kiri (Firefly Mist)","Hotaru-hana (Firefly Flower)","Hotaru-yuki (Firefly Snow)","Hotaru-ame (Firefly Rain)","Hotaru-kumo (Firefly Cloud)","Hotaru-hoshi (Firefly Star)","Hotaru-yami (Firefly Darkness)","Hotaru-nami (Firefly Wave)","Hotaru-shimo (Firefly Frost)","Hotaru-tsuyu (Firefly Dew)","Hotaru-inazuma (Firefly Lightning)","Hotaru-honoo (Firefly Flame)","Shika-kage (Deer Shadow)","Shika-kaze (Deer Wind)","Shika-kiri (Deer Mist)","Shika-hana (Deer Flower)","Shika-yuki (Deer Snow)","Shika-ame (Deer Rain)","Shika-kumo (Deer Cloud)","Shika-hoshi (Deer Star)","Shika-yami (Deer Darkness)","Shika-nami (Deer Wave)","Shika-shimo (Deer Frost)","Shika-tsuyu (Deer Dew)","Shika-inazuma (Deer Lightning)","Shika-honoo (Deer Flame)"],"cutter":["Kumo-giri (Cloud Cutter)","Kaze-giri (Wind Cutter)","Ishi-giri (Stone Cutter)","Hone-giri (Bone Cutter)","Tora-giri (Tiger Cutter)","Ryū-giri (Dragon Cutter)","Yami-giri (Darkness Cutter)","Nami-giri (Wave Cutter)","Ame-giri (Rain Cutter)","Take-giri (Bamboo Cutter)","Tsuki-giri (Moon Cutter)","Kitsune-giri (Fox Cutter)","Kaminari-giri (Thunder Cutter)","Yuki-giri (Snow Cutter)","Kane-giri (Bell Cutter)","Hoshi-giri (Star Cutter)"],"maru":["Tsuki-maru (Moon)","Kage-maru (Shadow)","Kaze-maru (Wind)","Kiri-maru (Mist)","Hana-maru (Flower)","Yuki-maru (Snow)","Ame-maru (Rain)","Kumo-maru (Cloud)","Hoshi-maru (Star)","Yami-maru (Darkness)","Mizu-maru (Water)","Nami-maru (Wave)","Shimo-maru (Frost)","Tsuyu-maru (Dew)","Yoru-maru (Night)","Asa-maru (Morning)","Sakura-maru (Cherry Blossom)","Inazuma-maru (Lightning)","Kaminari-maru (Thunder)","Honoo-maru (Flame)","Tetsu-maru (Iron)","Gin-maru (Silver)","Ishi-maru (Stone)","Kawa-maru (River)","Mine-maru (Peak)","Mori-maru (Forest)","Sora-maru (Sky)","Umi-maru (Sea)","Ryū-maru (Dragon)","Tora-maru (Tiger)","Karasu-maru (Crow)","Taka-maru (Hawk)","Ōkami-maru (Wolf)","Kitsune-maru (Fox)","Tsuru-maru (Crane)","Hebi-maru (Snake)","Kuma-maru (Bear)","Suzume-maru (Sparrow)","Hotaru-maru (Firefly)","Shika-maru (Deer)"]}}</script>
     <script src="../lib/recipe-engine.js"></script>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

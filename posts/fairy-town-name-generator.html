@@ -294,255 +294,236 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
-                </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-mushroom" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24 C6 11 42 11 42 24 Z" fill="#efc84a"/><path d="M18 24 L16 42 L32 42 L30 24" fill="#fffcf4"/><circle cx="16" cy="19" r="2.2" fill="#fffcf4" stroke-width="1.3"/><circle cx="26" cy="15" r="2.2" fill="#fffcf4" stroke-width="1.3"/><circle cx="34" cy="20" r="1.8" fill="#fffcf4" stroke-width="1.3"/><path d="M10 44 h28" stroke-width="1.4"/></g></symbol>
+      <symbol id="m-wings" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 24 C18 9 6 7 8 17 C9 23 16 25 24 24 Z" fill="#fffcf4"/><path d="M24 24 C30 9 42 7 40 17 C39 23 32 25 24 24 Z" fill="#fffcf4"/><path d="M24 24 C18 30 11 39 17 42 C21 44 24 33 24 24 Z" fill="#efc84a"/><path d="M24 24 C30 30 37 39 31 42 C27 44 24 33 24 24 Z" fill="#fffcf4"/><path d="M24 18 V34" stroke-width="1.4"/></g></symbol>
+      <symbol id="m-house" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M30 13 V6 h4 v10" fill="#fffcf4"/><path d="M12 20 V42 H36 V20" fill="#fffcf4"/><path d="M8 22 L24 8 L40 22"/><path d="M21 42 V32 h6 V42"/><path d="M15 26 h4 v4 h-4 z M29 26 h4 v4 h-4 z" stroke-width="1.3"/><path d="M4 45 C14 42 30 47 44 44" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-planet" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="25" r="11" fill="#fffcf4"/><ellipse cx="24" cy="25" rx="20" ry="6" transform="rotate(-20 24 25)"/><path d="M17 20 C20 17 24 16 27 17" stroke="#efc84a" stroke-width="3"/><path d="M40 5 l1 3 l3 1 l-3 1 l-1 3 l-1 -3 l-3 -1 l3 -1 z" fill="#1e1c18" stroke-width="1"/></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../categories/folklore-names.html">Folklore</a> / <span aria-current="page">Fairy Town Name Generator</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">Fairy</span> Town Name Generator</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg>
             </div>
-        </div>
-    </nav>
+            <p class="lede">Homes under the hill, hollows in the wood, and the courts you should never visit: Foxgloveknowe, the Court of Moonlit Thorns.</p>
 
-    <div class="container">
-        <header class="blog-hero">
-            <h1>🧚‍♀️ Fairy Town Name Generator</h1>
-            <p class="tagline">Homes under the hill, hollows in the wood, and the courts you should never visit: Foxgloveknowe, the Court of Moonlit Thorns.</p>
-            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
-        </header>
-
-        <main>
-            <section class="embedded-generator">
-                <div class="generator-card">
-                    <h2>Generate Fairy Town Names</h2>
-                    <p class="generator-description">Fairy town and village names from folklore: homes under the hill, hollows in the wood, fairy rings and the great courts of the fae.</p>
-                    
-                    <div class="simple-generator">
-                        <div class="filters">
-          <div class="filter-group">
-            <label for="filter-kind">Kind of Place:</label>
-            <select id="filter-kind" name="kind" data-filter="kind">
-              <option value="any">Any</option>
-              <option value="hill">Under the hill (Foxgloveknowe)</option>
-              <option value="wood">In the wood (Thistlehollow)</option>
-              <option value="ring">Fairy ring (Toadstoolmote)</option>
-              <option value="court">A fairy court (the Court of Moonlit Thorns)</option>
-            </select>
+            <section class="sheet hd simple-generator" id="generator" aria-label="Fairy Town Name Generator">
+                <div class="gen-one">
+          <div class="group" role="group" aria-labelledby="filter-kind-label">
+            <div class="label"><span id="filter-kind-label">Kind of Place</span><span class="pen" data-hint-for="kind" aria-hidden="true"></span></div>
+            <div class="opts" data-buttons-for="kind">
+              <button type="button" class="opt hd tap" data-value="any" data-hint="" aria-pressed="true">Any</button>
+              <button type="button" class="opt hd tap" data-value="hill" data-hint="e.g. Foxgloveknowe" title="Under the hill (Foxgloveknowe)" aria-pressed="false">Under the hill</button>
+              <button type="button" class="opt hd tap" data-value="wood" data-hint="e.g. Thistlehollow" title="In the wood (Thistlehollow)" aria-pressed="false">In the wood</button>
+              <button type="button" class="opt hd tap" data-value="ring" data-hint="e.g. Toadstoolmote" title="Fairy ring (Toadstoolmote)" aria-pressed="false">Fairy ring</button>
+              <button type="button" class="opt hd tap" data-value="court" data-hint="e.g. the Court of Moonlit Thorns" title="A fairy court (the Court of Moonlit Thorns)" aria-pressed="false">A fairy court</button>
+            </div>
+            <input type="hidden" id="filter-kind" name="kind" data-filter="kind" value="any">
           </div></div>
-                        <div class="generator-controls">
-                            <div class="filter-group count-group">
-                                <label for="name-count">How many:</label>
-                                <select id="name-count">
-                                    <option value="8" selected>8 names</option>
-                                    <option value="16">16 names</option>
-                                    <option value="32">32 names</option>
-                                </select>
-                            </div>
-                            <button id="generate-btn" class="generate-button">Generate Names</button>
-                        </div>
-                        <div class="results-area" id="results">
-                            <p class="results-placeholder">Click "Generate Names" to see results</p>
-                        </div>
-                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
-                        <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="true">
+                    <p class="results-empty">Press Generate Names for 8 fairy town names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
                     </div>
-                    
-                    <div class="cta-box">
-                        <p><strong>Need more options?</strong></p>
-                        <a href="../index.html" class="cta-button">Try the Ultimate Random Name Generator →</a>
-                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
+
+            <section class="section example-names">
+                <h2>Example Fairy Town Names</h2>
+                <p class="sub">A few names this generator came up with. Tap one to copy it, or press "Generate Names" above for more.</p>
+                <div class="ex">
+                <div class="exbox hd">
+                    <h3>Any</h3>
+                    <ul>
+                        <li>the Court of Moonlit Moths</li>
+                        <li>the Court of Hidden Ravens</li>
+                        <li>the Court of Silver Crowns</li>
+                        <li>Honeymound</li>
+                        <li>Bluebellcircle</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Under the hill</h3>
+                    <ul>
+                        <li>Acornmound</li>
+                        <li>Starlinghowe</li>
+                        <li>Mosshowe</li>
+                        <li>Cowsliphill</li>
+                        <li>Foxglovetump</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>In the wood</h3>
+                    <ul>
+                        <li>Willowglen</li>
+                        <li>Honeyhollow</li>
+                        <li>Wrenhollow</li>
+                        <li>Bluebellbower</li>
+                        <li>Bluebellshaw</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Fairy ring</h3>
+                    <ul>
+                        <li>Mossmote</li>
+                        <li>Clovercircle</li>
+                        <li>Cloverlea</li>
+                        <li>Silvergreen</li>
+                        <li>Glowcircle</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>A fairy court</h3>
+                    <ul>
+                        <li>the Thorned Court beneath Hawthornbarrow</li>
+                        <li>the Court of Briar Ashes</li>
+                        <li>the Weeping Court beneath Cloverbarrow</li>
+                        <li>the Court of Twilight Willows</li>
+                        <li>the Court of Dreaming Antlers</li>
+                    </ul>
+                </div>
                 </div>
             </section>
 
-            <section class="example-names">
-                <h2>Example Fairy Town Names</h2>
-                <p>A few names this generator came up with. Press "Generate Names" above for more.</p>
-                <h3>Any</h3>
-                <ul class="name-results">
-                    <li>the Court of Moonlit Moths</li>
-                    <li>the Court of Hidden Ravens</li>
-                    <li>the Court of Silver Crowns</li>
-                    <li>Honeymound</li>
-                    <li>Bluebellcircle</li>
-                </ul>
-                <h3>Under the hill</h3>
-                <ul class="name-results">
-                    <li>Acornmound</li>
-                    <li>Starlinghowe</li>
-                    <li>Mosshowe</li>
-                    <li>Cowsliphill</li>
-                    <li>Foxglovetump</li>
-                </ul>
-                <h3>In the wood</h3>
-                <ul class="name-results">
-                    <li>Willowglen</li>
-                    <li>Honeyhollow</li>
-                    <li>Wrenhollow</li>
-                    <li>Bluebellbower</li>
-                    <li>Bluebellshaw</li>
-                </ul>
-                <h3>Fairy ring</h3>
-                <ul class="name-results">
-                    <li>Mossmote</li>
-                    <li>Clovercircle</li>
-                    <li>Cloverlea</li>
-                    <li>Silvergreen</li>
-                    <li>Glowcircle</li>
-                </ul>
-                <h3>A fairy court</h3>
-                <ul class="name-results">
-                    <li>the Thorned Court beneath Hawthornbarrow</li>
-                    <li>the Court of Briar Ashes</li>
-                    <li>the Weeping Court beneath Cloverbarrow</li>
-                    <li>the Court of Twilight Willows</li>
-                    <li>the Court of Dreaming Antlers</li>
-                </ul>
-            </section>
-
-            <section class="blog-content how-it-works">
+            <section class="section how-it-works">
                 <h2>How the Fairy Town Name Generator Works</h2>
+                <div class="howto hd">
                 <p>It works from 432 names and name parts, which combine into over 2,300 possible results.</p>
                 <p>The choices:</p>
                 <ul><li><strong>Kind of Place:</strong><ul><li>Any, e.g. <em>Silverknowe</em></li><li>Under the hill, e.g. <em>Primrosemound</em></li><li>In the wood, e.g. <em>Moonbower</em></li><li>Fairy ring, e.g. <em>Moonlea</em></li><li>A fairy court, e.g. <em>the Dreaming Court beneath Foxglovebarrow</em></li></ul></li></ul>
-                <p>Each press gives you 8, 16 or 32 names (choose under "How many"), and you won't see the same one twice until you've been through everything for the choices you've made.</p>
+                <p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet, until the names for the choices you've made run out.</p>
+                </div>
             </section>
 
-            <article class="blog-content" itemscope itemtype="https://schema.org/Article">
+            <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="Fairy Town Name Generator">
                 <meta itemprop="description" content="Fairy town and village names from folklore: homes under the hill, hollows in the wood, fairy rings and the great courts of the fae.">
-                <section itemprop="articleBody">
-                    <p>In folklore, fairies don't live in towns so much as in places: inside a green hill, in a ring of mushrooms, in the roots of a hawthorn nobody dares cut down. This <strong>fairy town name generator</strong> builds names for those places from the old words for them, and for the great courts of the fae.</p>
-                </section>
+                <div itemprop="articleBody">
+                <p class="big">In folklore, fairies don't live in towns so much as in places: inside a green hill, in a ring of mushrooms, in the roots of a hawthorn nobody dares cut down. This <strong>fairy town name generator</strong> builds names for those places from the old words for them, and for the great courts of the fae.</p>
                 
-      <section>
-        <h2>Where fairies live</h2>
-        <ul><li><strong>Under the hill.</strong> In Irish and Scottish folklore, the fairy folk live inside mounds and hills, the <em>sídhe</em>. Scots has a word for such a hill: a <em>knowe</em>. English has <em>howe</em> and <em>barrow</em> for old burial mounds, often said to be fairy homes.</li><li><strong>Fairy rings.</strong> Circles of mushrooms in the grass were said to be where fairies danced. Step inside, and you might dance for a hundred years.</li><li><strong>Fairy trees.</strong> Lone hawthorns in Ireland are still left uncut for fear of offending the fairies who live there.</li><li><strong>Fairy forts.</strong> The ancient ringforts that dot the Irish countryside were long believed to belong to the fairies, and left alone.</li></ul>
-      </section>
-    
+                <h2>Where fairies live</h2>
+                <ul><li><strong>Under the hill.</strong> In Irish and Scottish folklore, the fairy folk live inside mounds and hills, the <em>sídhe</em>. Scots has a word for such a hill: a <em>knowe</em>. English has <em>howe</em> and <em>barrow</em> for old burial mounds, often said to be fairy homes.</li><li><strong>Fairy rings.</strong> Circles of mushrooms in the grass were said to be where fairies danced. Step inside, and you might dance for a hundred years.</li><li><strong>Fairy trees.</strong> Lone hawthorns in Ireland are still left uncut for fear of offending the fairies who live there.</li><li><strong>Fairy forts.</strong> The ancient ringforts that dot the Irish countryside were long believed to belong to the fairies, and left alone.</li></ul>
 
-      <section>
-        <h2>Four kinds of place</h2>
-        <ul><li><strong>Under the hill</strong>: names ending in <em>-knowe</em>, <em>-howe</em>, <em>-barrow</em> and <em>-tump</em> (a West Country word for a mound).</li><li><strong>In the wood</strong>: <em>-hollow</em>, <em>-dell</em>, <em>-shaw</em> (a small wood) and <em>-bower</em>.</li><li><strong>Fairy ring</strong>: <em>-ring</em>, <em>-mote</em> (a mound, or a meeting place), <em>-green</em> and <em>-lea</em>.</li><li><strong>A fairy court</strong>: the grand halls of the Seelie and Unseelie Courts, named like titles: <em>the Court of Weeping Willows</em>.</li></ul>
-      </section>
-    
+                <h2>Four kinds of place</h2>
+                <ul><li><strong>Under the hill</strong>: names ending in <em>-knowe</em>, <em>-howe</em>, <em>-barrow</em> and <em>-tump</em> (a West Country word for a mound).</li><li><strong>In the wood</strong>: <em>-hollow</em>, <em>-dell</em>, <em>-shaw</em> (a small wood) and <em>-bower</em>.</li><li><strong>Fairy ring</strong>: <em>-ring</em>, <em>-mote</em> (a mound, or a meeting place), <em>-green</em> and <em>-lea</em>.</li><li><strong>A fairy court</strong>: the grand halls of the Seelie and Unseelie Courts, named like titles: <em>the Court of Weeping Willows</em>.</li></ul>
 
-      <section>
-        <h2>Visiting fairyland</h2>
-        <ul><li><strong>Time runs differently.</strong> In the Irish tale of Oisín, a few years in Tír na nÓg, the Land of Youth, turn out to be three hundred in the mortal world.</li><li><strong>Don't eat the food.</strong> Eat or drink in fairyland and you may never leave: a rule from ballads like <em>Thomas the Rhymer</em> to modern fantasy.</li><li><strong>Every place needs its people.</strong> For the fairies who live there, try the <a href="fairy-name-generator.html">Fairy Name Generator</a>.</li></ul>
-      </section>
-    
+                <h2>Visiting fairyland</h2>
+                <ul><li><strong>Time runs differently.</strong> In the Irish tale of Oisín, a few years in Tír na nÓg, the Land of Youth, turn out to be three hundred in the mortal world.</li><li><strong>Don't eat the food.</strong> Eat or drink in fairyland and you may never leave: a rule from ballads like <em>Thomas the Rhymer</em> to modern fantasy.</li><li><strong>Every place needs its people.</strong> For the fairies who live there, try the <a href="fairy-name-generator.html">Fairy Name Generator</a>.</li></ul>
+                </div>
             </article>
 
-            
-      <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-          
-            <div class="faq-item">
-              <h3 class="faq-question">What is a fairy knowe?</h3>
-              <p class="faq-answer">A knowe is a Scots word for a small hill or mound. Fairy knowes were hills believed to be fairy dwellings, and the word gives fairy places an old, northern sound.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Can I use these names in D&D?</h3>
-              <p class="faq-answer">Yes, they're free to use and you don't need to credit the site. They suit villages and courts in D&D's Feywild as well as folklore-based stories.</p>
-            </div>
-          
-        </div>
-      </section>
-            
-      <section class="related-section">
-        <h2>Related Name Generators</h2>
-        <div class="related-grid" id="related-generators">
-          <a href="../posts/fairy-name-generator.html" class="related-card">
-            <h3>🧚 Fairy Name Generator</h3>
-            <p>Fairy names from folklore: flower fairies like Thistledown, lords and ladies of the Seelie and Unseelie Courts, and household sprites like Hob o&#039; the Hearth.</p>
-          </a>
-          <a href="../posts/fantasy-town-name-generator.html" class="related-card">
-            <h3>🏘️ Fantasy Town Name Generator</h3>
-            <p>Fantasy town and village names built the way real English place names are, for farming villages, fishing ports, mining towns, abbeys, market towns and more.</p>
-          </a>
-          <a href="../posts/ghost-name-generator.html" class="related-card">
-            <h3>👻 Ghost Name Generator</h3>
-            <p>Ghost names in the style of real hauntings (the Grey Lady, the Drummer of the Old Mill), restless Victorian spirits, and friendly little ghosts.</p>
-          </a>
-          <a href="../posts/werewolf-name-generator.html" class="related-card">
-            <h3>🐺 Werewolf Name Generator</h3>
-            <p>Werewolf names from real names that mean wolf, like Faolan (little wolf), Ylva (she-wolf) and Rudolf (famous wolf), with their meanings and a pack to run with.</p>
-          </a>
-          <a href="../posts/zombie-name-generator.html" class="related-card">
-            <h3>🧟 Zombie Name Generator</h3>
-            <p>Zombie names, from funny shambling ones (Groaning Gary) to grim undead titles, plus names for the zombie virus behind the outbreak.</p>
-          </a>
-          <a href="../posts/alien-name-generator.html" class="related-card">
-            <h3>👽 Alien Name Generator</h3>
-            <p>Alien names that sound like they come from a real species: clicking insectoids, liquid-voiced aquatics, beings named like Hums-at-Dawn, and galactic nobility.</p>
-          </a>
-        </div>
-      </section>
-            
-      <section class="category-generators-section">
-        <h2>All Folklore Name Generators</h2>
-        <div class="category-generators-grid" id="category-generators">
-          <a href="../posts/fairy-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧚</span>
-            <span class="category-generator-title">Fairy Name Generator</span>
-          </a>
-          <a href="../posts/werewolf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🐺</span>
-            <span class="category-generator-title">Werewolf Name Generator</span>
-          </a>
-          <a href="../posts/zombie-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧟</span>
-            <span class="category-generator-title">Zombie Name Generator</span>
-          </a>
-          <a href="../posts/ghost-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">👻</span>
-            <span class="category-generator-title">Ghost Name Generator</span>
-          </a>
-        </div>
-      </section>
-        </main>
+            <section class="section faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>What is a fairy knowe?</summary>
+                        <div>A knowe is a Scots word for a small hill or mound. Fairy knowes were hills believed to be fairy dwellings, and the word gives fairy places an old, northern sound.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Can I use these names in D&D?</summary>
+                        <div>Yes, they're free to use and you don't need to credit the site. They suit villages and courts in D&D's Feywild as well as folklore-based stories.</div>
+                    </details>
+                </div>
+            </section>
 
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+            <section class="section related-section">
+                <h2>Related Name Generators</h2>
+                <div class="genlist" id="related-generators">
+                    <a href="../posts/fairy-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-wings"/></svg><div><b>Fairy Name Generator</b><span>Fairy names from folklore: flower fairies like Thistledown, lords and ladies of the Seelie and Unseelie Courts, and household sprites like Hob o&#039; the Hearth.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/fantasy-town-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-house"/></svg><div><b>Fantasy Town Name Generator</b><span>Fantasy town and village names built the way real English place names are, for farming villages, fishing ports, mining towns, abbeys, market towns and more.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/ghost-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Ghost Name Generator</b><span>Ghost names in the style of real hauntings (the Grey Lady, the Drummer of the Old Mill), restless Victorian spirits, and friendly little ghosts.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/werewolf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Werewolf Name Generator</b><span>Werewolf names from real names that mean wolf, like Faolan (little wolf), Ylva (she-wolf) and Rudolf (famous wolf), with their meanings and a pack to run with.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/zombie-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Zombie Name Generator</b><span>Zombie names, from funny shambling ones (Groaning Gary) to grim undead titles, plus names for the zombie virus behind the outbreak.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/alien-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-planet"/></svg><div><b>Alien Name Generator</b><span>Alien names that sound like they come from a real species: clicking insectoids, liquid-voiced aquatics, beings named like Hums-at-Dawn, and galactic nobility.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
+
+            <section class="section category-generators-section">
+                <h2>More Folklore Name Generators</h2>
+                <div class="genlist compact" id="category-generators">
+                    <a href="../posts/fairy-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-wings"/></svg><div><b>Fairy Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/werewolf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Werewolf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/zombie-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Zombie Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/ghost-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-mushroom"/></svg><div><b>Ghost Name Generator</b></div><em aria-hidden="true">→</em></a>
+                </div>
+                <p class="all-link"><a href="../categories/folklore-names.html">All Folklore name generators</a></p>
+            </section>
+            <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
 
     <script type="application/json" id="generator-config">{"title":"Fairy Town Name Generator","slug":"fairy-town-name-generator","filters":{"kind":{"label":"Kind of Place","options":["any","hill","wood","ring","court"],"optionLabels":{"any":"Any","hill":"Under the hill (Foxgloveknowe)","wood":"In the wood (Thistlehollow)","ring":"Fairy ring (Toadstoolmote)","court":"A fairy court (the Court of Moonlit Thorns)"}}},"recipe":"switch","on":"kind","cases":{"any":{"recipe":"template","template":["[names]","[names]","[names]","the Court of [courts.adjective] [courts.noun]"]},"court":{"recipe":"template","template":["the Court of [courts.adjective] [courts.noun]","the [courts.adjective] Court beneath [names.hill]"]}},"default":{"recipe":"pick","from":"names.{kind}"},"data":{"names":{"hill":["Thistleknowe","Thistlehowe","Thistlemound","Thistlebarrow","Thistlehill","Thistletump","Foxgloveknowe","Foxglovehowe","Foxglovemound","Foxglovebarrow","Foxglovehill","Foxglovetump","Bluebellknowe","Bluebellhowe","Bluebellmound","Bluebellbarrow","Bluebellhill","Bluebelltump","Moonknowe","Moonhowe","Moonmound","Moonbarrow","Moonhill","Moontump","Dewknowe","Dewhowe","Dewmound","Dewbarrow","Dewhill","Dewtump","Thimbleknowe","Thimblehowe","Thimblemound","Thimblebarrow","Thimblehill","Thimbletump","Acornknowe","Acornhowe","Acornmound","Acornbarrow","Acornhill","Acorntump","Toadstoolknowe","Toadstoolhowe","Toadstoolmound","Toadstoolbarrow","Toadstoolhill","Toadstooltump","Brambleknowe","Bramblehowe","Bramblemound","Bramblebarrow","Bramblehill","Brambletump","Hawthornknowe","Hawthornhowe","Hawthornmound","Hawthornbarrow","Hawthornhill","Hawthorntump","Elderknowe","Elderhowe","Eldermound","Elderbarrow","Elderhill","Eldertump","Cloverknowe","Cloverhowe","Clovermound","Cloverbarrow","Cloverhill","Clovertump","Mossknowe","Mosshowe","Mossmound","Mossbarrow","Mosshill","Mosstump","Willowknowe","Willowhowe","Willowmound","Willowbarrow","Willowhill","Willowtump","Glowknowe","Glowhowe","Glowmound","Glowbarrow","Glowhill","Glowtump","Silverknowe","Silverhowe","Silvermound","Silverbarrow","Silverhill","Silvertump","Mistknowe","Misthowe","Mistmound","Mistbarrow","Misthill","Primroseknowe","Primrosehowe","Primrosemound","Primrosebarrow","Primrosehill","Primrosetump","Cowslipknowe","Cowsliphowe","Cowslipmound","Cowslipbarrow","Cowsliphill","Cowsliptump","Hazelknowe","Hazelhowe","Hazelmound","Hazelbarrow","Hazelhill","Hazeltump","Starlingknowe","Starlinghowe","Starlingmound","Starlingbarrow","Starlinghill","Starlingtump","Wrenknowe","Wrenhowe","Wrenmound","Wrenbarrow","Wrenhill","Wrentump","Sloeknowe","Sloehowe","Sloemound","Sloebarrow","Sloehill","Sloetump","Honeyknowe","Honeyhowe","Honeymound","Honeybarrow","Honeyhill","Honeytump","Rushknowe","Rushmound","Rushbarrow","Rushtump"],"wood":["Thistlehollow","Thistledell","Thistleshaw","Thistleglen","Thistlebower","Thistlenook","Foxglovehollow","Foxglovedell","Foxgloveshaw","Foxgloveglen","Foxglovebower","Foxglovenook","Bluebellhollow","Bluebelldell","Bluebellshaw","Bluebellglen","Bluebellbower","Bluebellnook","Moonhollow","Moondell","Moonshaw","Moonglen","Moonbower","Dewhollow","Dewdell","Dewshaw","Dewglen","Dewbower","Dewnook","Thimblehollow","Thimbledell","Thimbleshaw","Thimbleglen","Thimblebower","Thimblenook","Acornhollow","Acorndell","Acornshaw","Acornglen","Acornbower","Toadstoolhollow","Toadstooldell","Toadstoolshaw","Toadstoolglen","Toadstoolbower","Toadstoolnook","Bramblehollow","Brambledell","Brambleshaw","Brambleglen","Bramblebower","Bramblenook","Hawthornhollow","Hawthorndell","Hawthornshaw","Hawthornglen","Hawthornbower","Elderhollow","Elderdell","Eldershaw","Elderglen","Elderbower","Eldernook","Cloverhollow","Cloverdell","Clovershaw","Cloverglen","Cloverbower","Clovernook","Mosshollow","Mossdell","Mossglen","Mossbower","Mossnook","Willowhollow","Willowdell","Willowshaw","Willowglen","Willowbower","Willownook","Glowhollow","Glowdell","Glowshaw","Glowglen","Glowbower","Glownook","Silverhollow","Silverdell","Silvershaw","Silverglen","Silverbower","Silvernook","Misthollow","Mistdell","Mistshaw","Mistglen","Mistbower","Mistnook","Primrosehollow","Primrosedell","Primroseshaw","Primroseglen","Primrosebower","Primrosenook","Cowsliphollow","Cowslipdell","Cowslipshaw","Cowslipglen","Cowslipbower","Cowslipnook","Hazelhollow","Hazeldell","Hazelshaw","Hazelglen","Hazelbower","Hazelnook","Starlinghollow","Starlingdell","Starlingshaw","Starlingbower","Starlingnook","Wrenhollow","Wrendell","Wrenshaw","Wrenglen","Wrenbower","Sloehollow","Sloedell","Sloeshaw","Sloeglen","Sloebower","Sloenook","Honeyhollow","Honeydell","Honeyshaw","Honeyglen","Honeybower","Honeynook","Rushdell","Rushshaw","Rushglen","Rushbower","Rushnook"],"ring":["Thistlering","Thistlemote","Thistlecircle","Thistlegreen","Thistlelea","Foxglovering","Foxglovemote","Foxglovecircle","Foxglovegreen","Foxglovelea","Bluebellring","Bluebellmote","Bluebellcircle","Bluebellgreen","Moonring","Moonmote","Mooncircle","Moongreen","Moonlea","Dewring","Dewmote","Dewcircle","Dewgreen","Dewlea","Thimblering","Thimblemote","Thimblecircle","Thimblegreen","Thimblelea","Acornring","Acornmote","Acorncircle","Acorngreen","Acornlea","Toadstoolring","Toadstoolmote","Toadstoolcircle","Toadstoolgreen","Bramblering","Bramblemote","Bramblecircle","Bramblegreen","Bramblelea","Hawthornring","Hawthornmote","Hawthorncircle","Hawthorngreen","Hawthornlea","Eldermote","Eldercircle","Eldergreen","Elderlea","Clovermote","Clovercircle","Clovergreen","Cloverlea","Mossring","Mossmote","Mosscircle","Mossgreen","Mosslea","Willowring","Willowmote","Willowcircle","Willowgreen","Willowlea","Glowring","Glowmote","Glowcircle","Glowgreen","Glowlea","Silvermote","Silvercircle","Silvergreen","Silverlea","Mistring","Mistmote","Mistcircle","Mistgreen","Mistlea","Primrosering","Primrosemote","Primrosecircle","Primrosegreen","Primroselea","Cowslipring","Cowslipmote","Cowslipcircle","Cowslipgreen","Cowsliplea","Hazelring","Hazelmote","Hazelcircle","Hazelgreen","Starlingring","Starlingmote","Starlingcircle","Starlinglea","Wrenring","Wrenmote","Wrencircle","Wrengreen","Wrenlea","Sloering","Sloemote","Sloecircle","Sloegreen","Sloelea","Honeyring","Honeymote","Honeycircle","Honeygreen","Honeylea","Rushring","Rushmote","Rushcircle","Rushgreen","Rushlea"]},"courts":{"adjective":["Moonlit","Thorned","Silver","Hollow","Sleeping","Twilight","Dreaming","Weeping","Laughing","Briar","Evening","Hidden"],"noun":["Thorns","Mists","Antlers","Lanterns","Roses","Ravens","Bells","Mirrors","Moths","Crowns","Willows","Ashes"]}}}</script>
     <script src="../lib/recipe-engine.js"></script>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

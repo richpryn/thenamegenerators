@@ -305,362 +305,292 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
-                </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-war-axe" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 42 L33 16"/><path d="M27 8 C37 5 46 12 44 22 C38 18 32 18 28 22 C30 16 30 12 27 8 Z" fill="#fffcf4"/><path d="M7 40 l6 6"/><path d="M12 33 l5 5" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-tusks" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 36 C10 26 12 14 18 7 C18 16 20 26 22 34 Z" fill="#fffcf4"/><path d="M34 36 C38 26 36 14 30 7 C30 16 28 26 26 34 Z" fill="#fffcf4"/><path d="M8 41 C16 37 32 37 40 41" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-clapper" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="19" width="32" height="23" rx="2" fill="#fffcf4"/><path d="M8 19 L37 8 L39 14 L10 25"/><path d="M15 16 L18 22 M23 13 L26 19 M31 10 L34 16" stroke-width="1.3"/><path d="M14 31 h20" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-planet" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="25" r="11" fill="#fffcf4"/><ellipse cx="24" cy="25" rx="20" ry="6" transform="rotate(-20 24 25)"/><path d="M17 20 C20 17 24 16 27 17" stroke="#efc84a" stroke-width="3"/><path d="M40 5 l1 3 l3 1 l-3 1 l-1 3 l-1 -3 l-3 -1 l3 -1 z" fill="#1e1c18" stroke-width="1"/></g></symbol>
+      <symbol id="m-d20" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4 L42 14 L42 34 L24 44 L6 34 L6 14 Z" fill="#fffcf4"/><path d="M24 4 L15 28 L33 28 Z M6 14 L15 28 M42 14 L33 28 M15 28 L24 44 L33 28 M6 34 L15 28 M42 34 L33 28" stroke-width="1.3"/><path d="M20 24 h8" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-broom" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M42 5 L21 29"/><path d="M22 28 L12 30 C8 34 6 40 5 44 C11 43 18 39 22 34 Z" fill="#efc84a"/><path d="M14 33 L9 40 M17 34 L12 41" stroke-width="1.2"/><path d="M19 31 l4 -4" stroke-width="3.4"/></g></symbol>
+      <symbol id="m-wand" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 42 L32 16" stroke-width="3"/><path d="M8 42 L13 37" stroke-width="5.5"/><path d="M38 3 l2 5 l5 2 l-5 2 l-2 5 l-2 -5 l-5 -2 l5 -2 z" fill="#efc84a" stroke-width="1.4"/><path d="M29 6 l1 2 M44 20 l-2 1 M33 22 l2 1" stroke-width="1.2"/></g></symbol>
+      <symbol id="m-paw" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 22 C31 22 35 30 35 35 C35 40 30 41 24 39 C18 41 13 40 13 35 C13 30 17 22 24 22 Z" fill="#fffcf4"/><ellipse cx="12" cy="20" rx="3.5" ry="4.5" fill="#fffcf4"/><ellipse cx="19" cy="12" rx="3.5" ry="4.5" fill="#fffcf4"/><ellipse cx="29" cy="12" rx="3.5" ry="4.5" fill="#efc84a"/><ellipse cx="36" cy="20" rx="3.5" ry="4.5" fill="#fffcf4"/></g></symbol>
+      <symbol id="m-axe" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 V44"/><path d="M24 10 C19 11 14 9 10 6 C6 13 6 23 11 30 C15 27 19 26 24 25 Z" fill="#fffcf4"/><path d="M24 10 C29 11 34 9 38 6 C42 13 42 23 37 30 C33 27 29 26 24 25 Z" fill="#fffcf4"/><path d="M21 37 h6" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-lizard" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4 C27 4 29 8 27 12 L26 30 C26 36 22 40 13 44 C19 38 22 34 22 30 L21 12 C19 8 19 4 22 4 Z" fill="#fffcf4"/><path d="M22 16 L13 12 M26 16 L35 12 M22 26 L13 30 M26 26 L35 30"/><path d="M13 12 l-3 -2 M35 12 l3 -2 M13 30 l-3 2 M35 30 l3 2" stroke-width="1.3"/><circle cx="23.5" cy="7.5" r="1" fill="#1e1c18"/><path d="M23.5 17 v8" stroke="#efc84a" stroke-width="2.6"/></g></symbol>
+      <symbol id="m-leaf" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 40 C10 22 22 10 40 8 C40 28 28 40 10 40 Z" fill="#fffcf4"/><path d="M10 40 L31 17 M18 32 l7 1 M24 25 l7 1" stroke-width="1.4"/><path d="M6 44 C13 41 17 45 25 42" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-sword" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(35 24 24)"><path d="M24 2 L28 8 L28 30 L20 30 L20 8 Z" fill="#fffcf4"/><path d="M24 9 V28" stroke-width="1.2"/><path d="M14 30 H34"/><path d="M24 30 V41"/><circle cx="24" cy="43.5" r="2.4" fill="#efc84a"/></g></g></symbol>
+      <symbol id="m-leaf-flame" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 42 C6 26 16 16 32 14 C32 30 22 40 6 42 Z" fill="#fffcf4"/><path d="M6 42 L24 22 M13 35 l6 1" stroke-width="1.4"/><path d="M38 4 C41 9 45 11 45 17 C45 21 42 24 38 24 C34 24 32 21 32 17 C32 13 35 12 36 9 C38 11 38 13 39 14 C40 11 39 7 38 4 Z" fill="#efc84a"/></g></symbol>
+      <symbol id="m-leaf-moon" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 42 C8 26 18 16 34 14 C34 30 24 40 8 42 Z" fill="#fffcf4"/><path d="M8 42 L26 22 M15 35 l6 1" stroke-width="1.4"/><path d="M36 4 a7 7 0 1 0 7 9 a5.5 5.5 0 1 1 -7 -9 z" fill="#efc84a"/></g></symbol>
+      <symbol id="m-club" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 43 L22 26" stroke-width="3.2"/><path d="M20 28 C15 18 22 5 32 5 C42 5 45 17 37 25 C32 30 24 32 20 28 Z" fill="#fffcf4"/><circle cx="29" cy="13" r="1.6" fill="#1e1c18"/><circle cx="36" cy="17" r="1.6" fill="#1e1c18"/><circle cx="27" cy="22" r="1.6" fill="#1e1c18"/><path d="M14 37 l4 3" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-sword-crown" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(35 24 24)"><path d="M24 6 L28 12 L28 32 L20 32 L20 12 Z" fill="#fffcf4"/><path d="M14 32 H34"/><path d="M24 32 V42"/></g><path d="M3 10 L6 3 L10 8 L13 2 L16 8 L20 3 L22 10 Z" fill="#efc84a"/></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../categories/pop_culture-names.html">Pop Culture</a> / <span aria-current="page">World of Warcraft Orc Name Generator</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">World</span> of Warcraft Orc Name Generator</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg>
             </div>
-        </div>
-    </nav>
+            <p class="lede">Orc names that fit in the character box, with a surname or clan for the story behind them.</p>
 
-    <div class="container">
-        <header class="blog-hero">
-            <h1>⚔️ World of Warcraft Orc Name Generator</h1>
-            <p class="tagline">Orc names that fit in the character box, with a surname or clan for the story behind them.</p>
-            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
-        </header>
-
-        <main>
-            <section class="embedded-generator">
-                <div class="generator-card">
-                    <h2>Generate World of Warcraft Orc Names</h2>
-                    <p class="generator-description">World of Warcraft orc names that fit the game&#039;s name rules, plus an earned surname or a Horde clan for your character&#039;s story. Male and female.</p>
-                    
-                    <div class="simple-generator">
-                        <div class="filters">
-          <div class="filter-group">
-            <label for="filter-gender">Gender:</label>
-            <select id="filter-gender" name="gender" data-filter="gender">
-              <option value="any">Any</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-            </select>
+            <section class="sheet hd simple-generator" id="generator" aria-label="World of Warcraft Orc Name Generator">
+                <div class="gen-grid">
+          <div class="group" role="group" aria-labelledby="filter-gender-label">
+            <div class="label"><span id="filter-gender-label">Gender</span><span class="pen" data-hint-for="gender" aria-hidden="true"></span></div>
+            <div class="opts" data-buttons-for="gender">
+              <button type="button" class="opt hd tap" data-value="any" data-hint="" aria-pressed="true">Any</button>
+              <button type="button" class="opt hd tap" data-value="male" data-hint="" aria-pressed="false">Male</button>
+              <button type="button" class="opt hd tap" data-value="female" data-hint="" aria-pressed="false">Female</button>
+            </div>
+            <input type="hidden" id="filter-gender" name="gender" data-filter="gender" value="any">
           </div>
 
-          <div class="filter-group">
-            <label for="filter-format">Name Format:</label>
-            <select id="filter-format" name="format" data-filter="format">
-              <option value="game">Character name, fits in game (Rokgath)</option>
-              <option value="surname">With an earned surname (Rokgath Ashbrand)</option>
-              <option value="clan">With a clan (Rokgath of the Frostwolf clan)</option>
-            </select>
+          <div class="group">
+            <label class="label" for="filter-format">Name Format</label>
+            <div class="ctl sel hd">
+              <select id="filter-format" name="format" data-filter="format">
+                <option value="game">Character name, fits in game (Rokgath)</option>
+                <option value="surname">With an earned surname (Rokgath Ashbrand)</option>
+                <option value="clan">With a clan (Rokgath of the Frostwolf clan)</option>
+              </select>
+            </div>
           </div></div>
-                        <div class="generator-controls">
-                            <div class="filter-group count-group">
-                                <label for="name-count">How many:</label>
-                                <select id="name-count">
-                                    <option value="8" selected>8 names</option>
-                                    <option value="16">16 names</option>
-                                    <option value="32">32 names</option>
-                                </select>
-                            </div>
-                            <button id="generate-btn" class="generate-button">Generate Names</button>
-                        </div>
-                        <div class="results-area" id="results">
-                            <p class="results-placeholder">Click "Generate Names" to see results</p>
-                        </div>
-                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
-                        <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="false">
+                    <p class="results-empty">Press Generate Names for 8 world of warcraft orc names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
                     </div>
-                    
-                    <div class="cta-box">
-                        <p><strong>Need more options?</strong></p>
-                        <a href="../index.html" class="cta-button">Try the Ultimate Random Name Generator →</a>
-                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
+
+            <section class="section example-names">
+                <h2>Example World of Warcraft Orc Names</h2>
+                <p class="sub">A few names this generator came up with. Tap one to copy it, or press "Generate Names" above for more.</p>
+                <div class="ex">
+                <div class="exbox hd">
+                    <h3>Any · Character name, fits in game</h3>
+                    <ul>
+                        <li>Drakgra</li>
+                        <li>Tortuk</li>
+                        <li>Karsha</li>
+                        <li>Jorul</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Any · With an earned surname</h3>
+                    <ul>
+                        <li>Ragka Blackaxe</li>
+                        <li>Lokul Stormfist</li>
+                        <li>Karah Bladeroar</li>
+                        <li>Ragira Stormjaw</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Male · Character name, fits in game</h3>
+                    <ul>
+                        <li>Zarash</li>
+                        <li>Garmash</li>
+                        <li>Garzul</li>
+                        <li>Ruknar</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Male · With an earned surname</h3>
+                    <ul>
+                        <li>Gorgoth Redaxe</li>
+                        <li>Gorgor Ragefist</li>
+                        <li>Ragrok Redjaw</li>
+                        <li>Gromok Doomjaw</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Female · Character name, fits in game</h3>
+                    <ul>
+                        <li>Drakza</li>
+                        <li>Gromka</li>
+                        <li>Drakrka</li>
+                        <li>Ragira</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Female · With an earned surname</h3>
+                    <ul>
+                        <li>Ragza Skullfang</li>
+                        <li>Kragsha Wolfeye</li>
+                        <li>Urgsha Wolfbrand</li>
+                        <li>Brogha Shadowmaw</li>
+                    </ul>
+                </div>
                 </div>
             </section>
 
-            <section class="example-names">
-                <h2>Example World of Warcraft Orc Names</h2>
-                <p>A few names this generator came up with. Press "Generate Names" above for more.</p>
-                <h3>Any · Character name, fits in game</h3>
-                <ul class="name-results">
-                    <li>Drakgra</li>
-                    <li>Tortuk</li>
-                    <li>Karsha</li>
-                    <li>Jorul</li>
-                </ul>
-                <h3>Any · With an earned surname</h3>
-                <ul class="name-results">
-                    <li>Ragka Blackaxe</li>
-                    <li>Lokul Stormfist</li>
-                    <li>Karah Bladeroar</li>
-                    <li>Ragira Stormjaw</li>
-                </ul>
-                <h3>Male · Character name, fits in game</h3>
-                <ul class="name-results">
-                    <li>Zarash</li>
-                    <li>Garmash</li>
-                    <li>Garzul</li>
-                    <li>Ruknar</li>
-                </ul>
-                <h3>Male · With an earned surname</h3>
-                <ul class="name-results">
-                    <li>Gorgoth Redaxe</li>
-                    <li>Gorgor Ragefist</li>
-                    <li>Ragrok Redjaw</li>
-                    <li>Gromok Doomjaw</li>
-                </ul>
-                <h3>Female · Character name, fits in game</h3>
-                <ul class="name-results">
-                    <li>Drakza</li>
-                    <li>Gromka</li>
-                    <li>Drakrka</li>
-                    <li>Ragira</li>
-                </ul>
-                <h3>Female · With an earned surname</h3>
-                <ul class="name-results">
-                    <li>Ragza Skullfang</li>
-                    <li>Kragsha Wolfeye</li>
-                    <li>Urgsha Wolfbrand</li>
-                    <li>Brogha Shadowmaw</li>
-                </ul>
-            </section>
-
-            <section class="blog-content how-it-works">
+            <section class="section how-it-works">
                 <h2>How the World of Warcraft Orc Name Generator Works</h2>
+                <div class="howto hd">
                 <p>It works from 852 names and name parts, which combine into over 160,000 possible results.</p>
                 <p>The choices:</p>
                 <ul><li><strong>Gender:</strong> Any, Male, Female.</li><li><strong>Name Format:</strong><ul><li>Character name, fits in game, e.g. <em>Ogrira</em></li><li>With an earned surname, e.g. <em>Zarnar Ironroar</em></li><li>With a clan, e.g. <em>Garza of the Frostwolf clan</em></li></ul></li></ul>
-                <p>Each press gives you 8, 16 or 32 names (choose under "How many"), and you won't see the same one twice until you've been through everything for the choices you've made.</p>
+                <p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet, until the names for the choices you've made run out.</p>
+                </div>
             </section>
 
-            <article class="blog-content" itemscope itemtype="https://schema.org/Article">
+            <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="World of Warcraft Orc Name Generator">
                 <meta itemprop="description" content="World of Warcraft orc names that fit the game&#039;s name rules, plus an earned surname or a Horde clan for your character&#039;s story. Male and female.">
-                <section itemprop="articleBody">
-                    <p>A World of Warcraft orc needs a name that sounds like the Horde, fits the game's rules and isn't already taken on your realm. This <strong>WoW orc name generator</strong> gives you names that do all three, male and female, plus an earned surname or a clan if you want a story to go with it: <em>Rokgath Ashbrand</em>, <em>Magira of the Frostwolf clan</em>.</p>
-                </section>
+                <div itemprop="articleBody">
+                <p class="big">A World of Warcraft orc needs a name that sounds like the Horde, fits the game's rules and isn't already taken on your realm. This <strong>WoW orc name generator</strong> gives you names that do all three, male and female, plus an earned surname or a clan if you want a story to go with it: <em>Rokgath Ashbrand</em>, <em>Magira of the Frostwolf clan</em>.</p>
                 
-      <section>
-        <h2>Fitting the name into the game</h2>
-        <ul><li><strong>2 to 12 letters, no spaces.</strong> The name you type at character creation is one word. Surnames and clans are for your profile, role-play addons and your own head-canon.</li><li><strong>No three of the same letter in a row.</strong> The game rejects names like <em>Grommm</em>. Every name in the "fits in game" format follows both rules.</li><li><strong>One per realm.</strong> If the name's taken, the game will tell you. Generate a batch and keep a few backups.</li><li><strong>Accents.</strong> Players often add an accent to get round a taken name (<em>Rókgath</em>). It works, but makes you harder to whisper.</li></ul>
-      </section>
-    
+                <h2>Fitting the name into the game</h2>
+                <ul><li><strong>2 to 12 letters, no spaces.</strong> The name you type at character creation is one word. Surnames and clans are for your profile, role-play addons and your own head-canon.</li><li><strong>No three of the same letter in a row.</strong> The game rejects names like <em>Grommm</em>. Every name in the "fits in game" format follows both rules.</li><li><strong>One per realm.</strong> If the name's taken, the game will tell you. Generate a batch and keep a few backups.</li><li><strong>Accents.</strong> Players often add an accent to get round a taken name (<em>Rókgath</em>). It works, but makes you harder to whisper.</li></ul>
 
-      <section>
-        <h2>How Warcraft orcs are named</h2>
-        <ul><li><strong>Earned surnames.</strong> Many lore orcs carry a name that tells a story: Grom <em>Hellscream</em>, a name that's a battle cry in itself; Kilrogg <em>Deadeye</em>, who put out his own eye for a vision. Orgrim's <em>Doomhammer</em> is the family weapon.</li><li><strong>Names given by others.</strong> Thrall's name was a slave name, given by the human who raised him; his birth name is Go'el. A name can be a wound as much as a title.</li><li><strong>Clans.</strong> Before the Horde united, an orc was their clan first: the Frostwolves of Durotan, the Warsong of Grom, the Blackrock of Blackhand. Saying which clan you come from says what you've lived through.</li></ul>
-      </section>
-    
+                <h2>How Warcraft orcs are named</h2>
+                <ul><li><strong>Earned surnames.</strong> Many lore orcs carry a name that tells a story: Grom <em>Hellscream</em>, a name that's a battle cry in itself; Kilrogg <em>Deadeye</em>, who put out his own eye for a vision. Orgrim's <em>Doomhammer</em> is the family weapon.</li><li><strong>Names given by others.</strong> Thrall's name was a slave name, given by the human who raised him; his birth name is Go'el. A name can be a wound as much as a title.</li><li><strong>Clans.</strong> Before the Horde united, an orc was their clan first: the Frostwolves of Durotan, the Warsong of Grom, the Blackrock of Blackhand. Saying which clan you come from says what you've lived through.</li></ul>
 
-      <section>
-        <h2>The clans</h2>
-        <ul><li><strong>Frostwolf</strong>: honourable, shamanistic, exiled to Alterac. Good for a shaman or a lore-minded character.</li><li><strong>Warsong</strong>: fierce and proud, the clan of Grom and Garrosh.</li><li><strong>Blackrock</strong>: disciplined and brutal, the old heart of the Horde's armies.</li><li><strong>Bleeding Hollow</strong>, <strong>Shattered Hand</strong>, <strong>Dragonmaw</strong> and the rest each have their own history. A clan with a dark past makes for a character trying to live it down.</li></ul>
-      </section>
-    
+                <h2>The clans</h2>
+                <ul><li><strong>Frostwolf</strong>: honourable, shamanistic, exiled to Alterac. Good for a shaman or a lore-minded character.</li><li><strong>Warsong</strong>: fierce and proud, the clan of Grom and Garrosh.</li><li><strong>Blackrock</strong>: disciplined and brutal, the old heart of the Horde's armies.</li><li><strong>Bleeding Hollow</strong>, <strong>Shattered Hand</strong>, <strong>Dragonmaw</strong> and the rest each have their own history. A clan with a dark past makes for a character trying to live it down.</li></ul>
 
-      <section>
-        <h2>Role-playing an orc</h2>
-        <ul><li><strong>Earn the surname in play.</strong> Start with just a first name, and add the surname when something happens to deserve it.</li><li><strong>Pick a clan for its story</strong>, not its stats: a Frostwolf and a Dragonmaw will see the same event very differently.</li><li><strong>Female orcs</strong> in lore have short, hard names too (Draka, Aggra, Garona). The female names here follow that sound.</li></ul>
-      </section>
-    
+                <h2>Role-playing an orc</h2>
+                <ul><li><strong>Earn the surname in play.</strong> Start with just a first name, and add the surname when something happens to deserve it.</li><li><strong>Pick a clan for its story</strong>, not its stats: a Frostwolf and a Dragonmaw will see the same event very differently.</li><li><strong>Female orcs</strong> in lore have short, hard names too (Draka, Aggra, Garona). The female names here follow that sound.</li></ul>
+                </div>
             </article>
 
-            
-      <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Will these names work in World of Warcraft?</h3>
-              <p class="faq-answer">The "fits in game" names are 2 to 12 letters with no spaces and no letter three times in a row, which follows the game's naming rules. Whether a name is free depends on your realm.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Can I have a surname in WoW?</h3>
-              <p class="faq-answer">Not in the character name itself. Role-players add surnames and clans with profile addons, or simply in how they introduce their character.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Are these names from Warcraft lore?</h3>
-              <p class="faq-answer">No. The names follow the same sound, but lore characters like Thrall, Durotan and Garrosh, and their surnames, are left out so your orc is your own. The clans are real Warcraft clans.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Can I use these names for other games?</h3>
-              <p class="faq-answer">Yes, they're free to use and you don't need to credit the site. For orcs outside Warcraft, try the <a href="orc-name-generator.html">Orc Name Generator</a>.</p>
-            </div>
-          
-        </div>
-      </section>
-            
-      <section class="related-section">
-        <h2>Related Name Generators</h2>
-        <div class="related-grid" id="related-generators">
-          <a href="../posts/wow-troll-name-generator.html" class="related-card">
-            <h3>🗿 World of Warcraft Troll Name Generator</h3>
-            <p>Warcraft troll names in the style of Vol&#039;jin, Zul&#039;jin and Talanji, with an optional tribe: Darkspear, Zandalari, Amani, Gurubashi and more.</p>
-          </a>
-          <a href="../posts/lotr-orc-name-generator.html" class="related-card">
-            <h3>🧌 LOTR Orc Name Generator</h3>
-            <p>Orc names in Tolkien&#039;s style for Mordor orcs, Uruk-hai of Isengard and goblins of the Misty Mountains, with a rank or the place they serve.</p>
-          </a>
-          <a href="../posts/skyrim-orc-name-generator.html" class="related-card">
-            <h3>🧌 Skyrim Orc Name Generator</h3>
-            <p>Generate Skyrim orc names the way the game builds them: a first name plus gro- (son of) or gra- (daughter of) and a parent&#039;s name, like Urag gro-Shub.</p>
-          </a>
-          <a href="../posts/warhammer-orc-name-generator.html" class="related-card">
-            <h3>🧌 Warhammer Orc Name Generator</h3>
-            <p>Ork and orc names for Warhammer 40,000, the Old World and Age of Sigmar, with titles, clans and nicknames: Big Mek Skabnik &#039;Eadbanga of da Deathskulls.</p>
-          </a>
-          <a href="../posts/half-orc-name-generator.html" class="related-card">
-            <h3>🧌 Half-Orc Name Generator</h3>
-            <p>Half-orc names for a character raised among humans, among orcs, or somewhere between, with a surname or deed-name to match. Male and female.</p>
-          </a>
-          <a href="../posts/orc-name-generator.html" class="related-card">
-            <h3>🧌 Orc Name Generator</h3>
-            <p>Orc names that sound like a fist on a table, with a deed-name, nickname or clan: Murzag Skullsplitter, Ushra the Unkillable. Male and female.</p>
-          </a>
-        </div>
-      </section>
-            
-      <section class="category-generators-section">
-        <h2>All Pop Culture Name Generators</h2>
-        <div class="category-generators-grid" id="category-generators">
-          <a href="../posts/elden-ring-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">💍</span>
-            <span class="category-generator-title">Elden Ring Name Generator</span>
-          </a>
-          <a href="../posts/star-wars-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Star Wars Name Generator</span>
-          </a>
-          <a href="../posts/baldurs-gate-3-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🎲</span>
-            <span class="category-generator-title">Baldur&#039;s Gate 3 Name Generator</span>
-          </a>
-          <a href="../posts/harry-potter-witch-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚡</span>
-            <span class="category-generator-title">Harry Potter Witch Name Generator</span>
-          </a>
-          <a href="../posts/hogwarts-legacy-witch-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🪄</span>
-            <span class="category-generator-title">Hogwarts Legacy Witch Name Generator</span>
-          </a>
-          <a href="../posts/hogwarts-legacy-wizard-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🪄</span>
-            <span class="category-generator-title">Hogwarts Legacy Wizard Name Generator</span>
-          </a>
-          <a href="../posts/skyrim-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">Skyrim Orc Name Generator</span>
-          </a>
-          <a href="../posts/khajiit-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🐱</span>
-            <span class="category-generator-title">Khajiit Name Generator</span>
-          </a>
-          <a href="../posts/nord-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🪓</span>
-            <span class="category-generator-title">Nord Name Generator</span>
-          </a>
-          <a href="../posts/argonian-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🦎</span>
-            <span class="category-generator-title">Argonian Name Generator</span>
-          </a>
-          <a href="../posts/altmer-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🌞</span>
-            <span class="category-generator-title">Altmer Name Generator</span>
-          </a>
-          <a href="../posts/dunmer-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🌋</span>
-            <span class="category-generator-title">Dunmer Name Generator</span>
-          </a>
-          <a href="../posts/warhammer-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">💀</span>
-            <span class="category-generator-title">Warhammer 40k Name Generator</span>
-          </a>
-          <a href="../posts/warhammer-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">Warhammer Orc Name Generator</span>
-          </a>
-          <a href="../posts/wow-troll-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🗿</span>
-            <span class="category-generator-title">World of Warcraft Troll Name Generator</span>
-          </a>
-          <a href="../posts/blood-elf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🔥</span>
-            <span class="category-generator-title">Blood Elf Name Generator</span>
-          </a>
-          <a href="../posts/night-elf-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🌙</span>
-            <span class="category-generator-title">Night Elf Name Generator</span>
-          </a>
-          <a href="../posts/lotr-orc-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">LOTR Orc Name Generator</span>
-          </a>
-          <a href="../posts/lotr-wizard-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧙</span>
-            <span class="category-generator-title">LOTR Wizard Name Generator</span>
-          </a>
-          <a href="../posts/hobbit-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🏡</span>
-            <span class="category-generator-title">Hobbit Name Generator</span>
-          </a>
-          <a href="../posts/ogryn-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🧌</span>
-            <span class="category-generator-title">Ogryn Name Generator</span>
-          </a>
-          <a href="../posts/funny-minecraft-sword-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🗡️</span>
-            <span class="category-generator-title">Funny Minecraft Sword Name Generator</span>
-          </a>
-          <a href="../posts/game-of-thrones-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">👑</span>
-            <span class="category-generator-title">Game of Thrones Name Generator</span>
-          </a>
-          <a href="../posts/game-of-thrones-sword-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚔️</span>
-            <span class="category-generator-title">Game of Thrones Sword Name Generator</span>
-          </a>
-        </div>
-      </section>
-        </main>
+            <section class="section faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Will these names work in World of Warcraft?</summary>
+                        <div>The "fits in game" names are 2 to 12 letters with no spaces and no letter three times in a row, which follows the game's naming rules. Whether a name is free depends on your realm.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Can I have a surname in WoW?</summary>
+                        <div>Not in the character name itself. Role-players add surnames and clans with profile addons, or simply in how they introduce their character.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Are these names from Warcraft lore?</summary>
+                        <div>No. The names follow the same sound, but lore characters like Thrall, Durotan and Garrosh, and their surnames, are left out so your orc is your own. The clans are real Warcraft clans.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Can I use these names for other games?</summary>
+                        <div>Yes, they're free to use and you don't need to credit the site. For orcs outside Warcraft, try the <a href="orc-name-generator.html">Orc Name Generator</a>.</div>
+                    </details>
+                </div>
+            </section>
 
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+            <section class="section related-section">
+                <h2>Related Name Generators</h2>
+                <div class="genlist" id="related-generators">
+                    <a href="../posts/wow-troll-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-tusks"/></svg><div><b>World of Warcraft Troll Name Generator</b><span>Warcraft troll names in the style of Vol&#039;jin, Zul&#039;jin and Talanji, with an optional tribe: Darkspear, Zandalari, Amani, Gurubashi and more.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/lotr-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>LOTR Orc Name Generator</b><span>Orc names in Tolkien&#039;s style for Mordor orcs, Uruk-hai of Isengard and goblins of the Misty Mountains, with a rank or the place they serve.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/skyrim-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>Skyrim Orc Name Generator</b><span>Generate Skyrim orc names the way the game builds them: a first name plus gro- (son of) or gra- (daughter of) and a parent&#039;s name, like Urag gro-Shub.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/warhammer-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>Warhammer Orc Name Generator</b><span>Ork and orc names for Warhammer 40,000, the Old World and Age of Sigmar, with titles, clans and nicknames: Big Mek Skabnik &#039;Eadbanga of da Deathskulls.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/half-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>Half-Orc Name Generator</b><span>Half-orc names for a character raised among humans, among orcs, or somewhere between, with a surname or deed-name to match. Male and female.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>Orc Name Generator</b><span>Orc names that sound like a fist on a table, with a deed-name, nickname or clan: Murzag Skullsplitter, Ushra the Unkillable. Male and female.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
+
+            <section class="section category-generators-section">
+                <h2>More Pop Culture Name Generators</h2>
+                <div class="genlist compact" id="category-generators">
+                    <a href="../posts/elden-ring-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-clapper"/></svg><div><b>Elden Ring Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/star-wars-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-planet"/></svg><div><b>Star Wars Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/baldurs-gate-3-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-d20"/></svg><div><b>Baldur&#039;s Gate 3 Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/harry-potter-witch-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-broom"/></svg><div><b>Harry Potter Witch Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/hogwarts-legacy-witch-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-broom"/></svg><div><b>Hogwarts Legacy Witch Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/hogwarts-legacy-wizard-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-wand"/></svg><div><b>Hogwarts Legacy Wizard Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/skyrim-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>Skyrim Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/khajiit-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-paw"/></svg><div><b>Khajiit Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/nord-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-axe"/></svg><div><b>Nord Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/argonian-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-lizard"/></svg><div><b>Argonian Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/altmer-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf"/></svg><div><b>Altmer Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/dunmer-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-clapper"/></svg><div><b>Dunmer Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/warhammer-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Warhammer 40k Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/warhammer-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>Warhammer Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/wow-troll-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-tusks"/></svg><div><b>World of Warcraft Troll Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/blood-elf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf-flame"/></svg><div><b>Blood Elf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/night-elf-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-leaf-moon"/></svg><div><b>Night Elf Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/lotr-orc-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-war-axe"/></svg><div><b>LOTR Orc Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/lotr-wizard-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-clapper"/></svg><div><b>LOTR Wizard Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/hobbit-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-clapper"/></svg><div><b>Hobbit Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/ogryn-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-club"/></svg><div><b>Ogryn Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/funny-minecraft-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword"/></svg><div><b>Funny Minecraft Sword Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/game-of-thrones-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-clapper"/></svg><div><b>Game of Thrones Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/game-of-thrones-sword-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-sword-crown"/></svg><div><b>Game of Thrones Sword Name Generator</b></div><em aria-hidden="true">→</em></a>
+                </div>
+                <p class="all-link"><a href="../categories/pop_culture-names.html">All Pop Culture name generators</a></p>
+            </section>
+            <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
 
     <script type="application/json" id="generator-config">{"title":"World of Warcraft Orc Name Generator","slug":"wow-orc-name-generator","filters":{"gender":{"label":"Gender","options":["any","male","female"],"optionLabels":{"any":"Any","male":"Male","female":"Female"}},"format":{"label":"Name Format","options":["game","surname","clan"],"optionLabels":{"game":"Character name, fits in game (Rokgath)","surname":"With an earned surname (Rokgath Ashbrand)","clan":"With a clan (Rokgath of the Frostwolf clan)"}}},"recipe":"switch","on":"format","cases":{"game":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[names]"}},"default":{"recipe":"template","template":"[names.{gender}]"}},"surname":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[names] [surnames]"}},"default":{"recipe":"template","template":"[names.{gender}] [surnames]"}},"clan":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[names] of the [clans] clan"}},"default":{"recipe":"template","template":"[names.{gender}] of the [clans] clan"}}},"data":{"names":{"male":["Garath","Gargath","Garak","Garok","Gargor","Garnar","Gargar","Gartuk","Garul","Garzul","Gargoth","Garmash","Durash","Durath","Durgath","Durok","Durgor","Durnar","Durgar","Durtuk","Durul","Durzul","Durgoth","Durmash","Gromath","Gromrim","Gromgath","Gromak","Gromok","Gromrosh","Gromgor","Gromnar","Gromgar","Gromtuk","Gromrak","Gromul","Gromzul","Gromgoth","Gromrok","Karash","Karath","Karak","Karok","Kargor","Karnar","Kargar","Kartuk","Karul","Karzul","Kargoth","Karmash","Rokash","Rokath","Rokrim","Rokgath","Rokak","Rokrosh","Rokgor","Roknar","Rokgar","Roktuk","Rokrak","Rokul","Rokzul","Rokgoth","Rokmash","Rokrok","Mokash","Mokath","Mokrim","Mokgath","Mokak","Mokrosh","Mokgor","Moknar","Mokgar","Moktuk","Mokrak","Mokul","Mokzul","Mokgoth","Mokmash","Mokrok","Tharash","Tharath","Thargath","Tharak","Tharok","Thargor","Tharnar","Thargar","Thartuk","Tharul","Tharzul","Thargoth","Tharmash","Nazash","Nazath","Nazrim","Nazgath","Nazak","Nazok","Nazrosh","Nazgor","Naznar","Nazgar","Naztuk","Nazrak","Nazul","Nazgoth","Nazmash","Nazrok","Drakash","Drakath","Drakrim","Drakgath","Drakok","Drakrosh","Drakgor","Draknar","Drakgar","Draktuk","Drakrak","Drakul","Drakzul","Drakgoth","Drakmash","Drakrok","Broash","Broath","Brorim","Brogath","Broak","Brogor","Bronar","Brogar","Brotuk","Brorak","Broul","Brozul","Brogoth","Bromash","Zugash","Zugath","Zugrim","Zugak","Zugok","Zugrosh","Zugnar","Zugtuk","Zugrak","Zugul","Zugzul","Zugmash","Zugrok","Gorash","Gorath","Gorgath","Gorak","Gorok","Gorgor","Gornar","Gorgar","Gortuk","Gorul","Gorzul","Gorgoth","Gormash","Torash","Torath","Torgath","Torak","Torok","Torgor","Tornar","Torgar","Tortuk","Torul","Torzul","Torgoth","Tormash","Rukash","Rukath","Rukrim","Rukgath","Rukak","Rukok","Rukrosh","Rukgor","Ruknar","Rukgar","Ruktuk","Rukrak","Rukul","Rukzul","Rukgoth","Rukmash","Rukrok","Magash","Magath","Magrim","Magak","Magok","Magrosh","Magnar","Magtuk","Magrak","Magul","Magzul","Magmash","Magrok","Ogrash","Ograth","Ogrgath","Ograk","Ogrok","Ogrgor","Ogrnar","Ogrgar","Ogrtuk","Ogrul","Ogrzul","Ogrgoth","Ogrmash","Vargash","Vargath","Vargrim","Vargak","Vargok","Vargrosh","Vargnar","Vargtuk","Vargrak","Vargul","Vargzul","Vargmash","Vargrok","Ragash","Ragath","Ragrim","Ragak","Ragok","Ragrosh","Ragnar","Ragtuk","Ragrak","Ragul","Ragzul","Ragmash","Ragrok","Jorash","Jorath","Jorgath","Jorak","Jorok","Jorgor","Jornar","Jorgar","Jortuk","Jorul","Jorzul","Jorgoth","Jormash","Urgash","Urgath","Urgrim","Urgak","Urgok","Urgrosh","Urgnar","Urgtuk","Urgrak","Urgul","Urgzul","Urgmash","Urgrok","Hazash","Hazath","Hazrim","Hazgath","Hazak","Hazok","Hazrosh","Hazgor","Haznar","Hazgar","Haztuk","Hazrak","Hazul","Hazgoth","Hazmash","Hazrok","Kragash","Kragath","Kragrim","Kragak","Kragok","Kragrosh","Kragnar","Kragtuk","Kragrak","Kragul","Kragzul","Kragmash","Kragrok","Lokash","Lokath","Lokrim","Lokgath","Lokak","Lokrosh","Lokgor","Loknar","Lokgar","Loktuk","Lokrak","Lokul","Lokzul","Lokgoth","Lokmash","Lokrok","Zarash","Zarath","Zargath","Zarak","Zarok","Zargor","Zarnar","Zargar","Zartuk","Zarul","Zarzul","Zargoth","Zarmash"],"female":["Gara","Garka","Gargra","Garsha","Garza","Garnna","Gargha","Garira","Gareya","Dura","Durah","Durka","Durgra","Durza","Durnna","Durgha","Durira","Dureya","Groma","Gromah","Gromka","Gromra","Gromgra","Gromsha","Gromza","Gromnna","Gromrka","Gromgha","Gromira","Gromeya","Karah","Karka","Kargra","Karsha","Karza","Karnna","Kargha","Karira","Kareya","Roka","Rokah","Rokra","Rokgra","Roksha","Rokza","Roknna","Rokrka","Rokgha","Rokira","Rokeya","Moka","Mokah","Mokgra","Moksha","Mokza","Moknna","Mokrka","Mokgha","Mokira","Mokeya","Tharah","Tharka","Thargra","Tharsha","Tharza","Tharnna","Thargha","Tharira","Thareya","Nazah","Nazka","Nazra","Nazgra","Nazsha","Naznna","Nazrka","Nazgha","Nazira","Nazeya","Drakah","Drakra","Drakgra","Draksha","Drakza","Draknna","Drakrka","Drakgha","Drakira","Drakeya","Broa","Broah","Broka","Brora","Brogra","Brosha","Broza","Bronna","Brorka","Brogha","Broira","Broeya","Zugah","Zugka","Zugra","Zugsha","Zugza","Zugnna","Zugrka","Zugira","Zugeya","Gorah","Gorka","Gorgra","Gorsha","Gorza","Gornna","Gorgha","Gorira","Goreya","Torah","Torka","Torgra","Torsha","Torza","Tornna","Torgha","Torira","Toreya","Rukah","Rukra","Rukgra","Ruksha","Rukza","Ruknna","Rukrka","Rukgha","Rukira","Rukeya","Maga","Magah","Magka","Magsha","Magza","Magnna","Magrka","Magira","Mageya","Ogra","Ograh","Ogrka","Ogrsha","Ogrza","Ogrnna","Ogrgha","Ogrira","Ogreya","Varga","Vargah","Vargka","Vargra","Vargsha","Vargza","Vargnna","Vargrka","Vargira","Vargeya","Raga","Ragah","Ragka","Ragra","Ragsha","Ragza","Ragnna","Ragrka","Ragira","Rageya","Jora","Jorah","Jorka","Jorgra","Jorsha","Jorza","Jornna","Jorgha","Jorira","Joreya","Urga","Urgah","Urgka","Urgra","Urgsha","Urgza","Urgnna","Urgrka","Urgira","Urgeya","Haza","Hazah","Hazka","Hazra","Hazgra","Hazsha","Haznna","Hazrka","Hazgha","Hazira","Hazeya","Kraga","Kragah","Kragka","Kragra","Kragsha","Kragza","Kragnna","Kragrka","Kragira","Krageya","Loka","Lokah","Lokra","Lokgra","Loksha","Lokza","Loknna","Lokrka","Lokgha","Lokira","Lokeya","Zara","Zarah","Zarka","Zargra","Zarsha","Zarza","Zarnna","Zargha","Zarira","Zareya"]},"surnames":["Bloodhammer","Bloodscream","Bloodeye","Bloodfist","Bloodmaw","Bloodhide","Bloodhowl","Bloodbreaker","Bloodcleaver","Bloodtusk","Bloodaxe","Bloodmane","Bloodroar","Bloodjaw","Bloodbrand","Doomscream","Doomeye","Doomfist","Doomfang","Doomhide","Doomhowl","Doombreaker","Doomcleaver","Doomtusk","Doomaxe","Doomroar","Doomjaw","Doombrand","Deadhammer","Deadscream","Deadfist","Deadfang","Deadmaw","Deadhide","Deadhowl","Deadbreaker","Deadcleaver","Deadtusk","Deadaxe","Deadmane","Deadroar","Deadjaw","Deadbrand","Bladehammer","Bladescream","Bladefang","Blademaw","Bladehide","Bladehowl","Bladebreaker","Bladecleaver","Bladetusk","Bladeaxe","Blademane","Bladeroar","Bladejaw","Bladebrand","Skullhammer","Skullscream","Skulleye","Skullfist","Skullfang","Skullmaw","Skullhide","Skullhowl","Skullbreaker","Skullcleaver","Skulltusk","Skullaxe","Skullmane","Skullroar","Skulljaw","Skullbrand","Bonehammer","Bonescream","Bonefist","Bonefang","Bonemaw","Bonehide","Bonehowl","Bonebreaker","Bonecleaver","Bonetusk","Boneaxe","Bonemane","Boneroar","Bonejaw","Bonebrand","Warhammer","Warscream","Wareye","Warfist","Warfang","Warmaw","Warhide","Warhowl","Warbreaker","Warcleaver","Wartusk","Waraxe","Warmane","Warjaw","Warbrand","Stormhammer","Stormscream","Stormeye","Stormfist","Stormfang","Stormhide","Stormhowl","Stormbreaker","Stormcleaver","Stormtusk","Stormaxe","Stormroar","Stormjaw","Stormbrand","Ironhammer","Ironscream","Ironeye","Ironfist","Ironfang","Ironmaw","Ironhide","Ironhowl","Ironbreaker","Ironcleaver","Irontusk","Ironaxe","Ironmane","Ironroar","Ironbrand","Shadowhammer","Shadowscream","Shadoweye","Shadowfist","Shadowfang","Shadowmaw","Shadowhide","Shadowhowl","Shadowbreaker","Shadowcleaver","Shadowtusk","Shadowaxe","Shadowmane","Shadowroar","Shadowjaw","Shadowbrand","Thunderhammer","Thunderscream","Thundereye","Thunderfist","Thunderfang","Thundermaw","Thunderhide","Thunderhowl","Thunderbreaker","Thundercleaver","Thundertusk","Thunderaxe","Thundermane","Thunderjaw","Thunderbrand","Wolfhammer","Wolfscream","Wolfeye","Wolfmaw","Wolfhide","Wolfhowl","Wolfbreaker","Wolfcleaver","Wolftusk","Wolfaxe","Wolfroar","Wolfjaw","Wolfbrand","Grimhammer","Grimscream","Grimeye","Grimfist","Grimfang","Grimhide","Grimhowl","Grimbreaker","Grimcleaver","Grimtusk","Grimaxe","Grimroar","Grimjaw","Grimbrand","Ashscream","Asheye","Ashfist","Ashfang","Ashmaw","Ashbreaker","Ashcleaver","Ashtusk","Ashaxe","Ashmane","Ashroar","Ashjaw","Ashbrand","Ragehammer","Ragescream","Ragefist","Ragefang","Ragemaw","Ragehide","Ragehowl","Ragebreaker","Ragecleaver","Ragetusk","Rageaxe","Ragemane","Rageroar","Ragejaw","Ragebrand","Gorehammer","Gorescream","Gorefist","Gorefang","Goremaw","Gorehide","Gorehowl","Gorebreaker","Gorecleaver","Goretusk","Goreaxe","Goremane","Goreroar","Gorejaw","Gorebrand","Redhammer","Redscream","Redeye","Redfist","Redfang","Redmaw","Redhide","Redhowl","Redbreaker","Redcleaver","Redtusk","Redaxe","Redmane","Redroar","Redjaw","Redbrand","Blackhammer","Blackscream","Blackeye","Blackfist","Blackfang","Blackmaw","Blackhide","Blackhowl","Blackbreaker","Blackcleaver","Blacktusk","Blackaxe","Blackmane","Blackroar","Blackjaw","Blackbrand"],"clans":["Frostwolf","Warsong","Blackrock","Bleeding Hollow","Shattered Hand","Thunderlord","Bonechewer","Burning Blade","Dragonmaw","Laughing Skull","Shadowmoon","Stormreaver","Twilight's Hammer","Black Tooth Grin","Whiteclaw"]}}</script>
     <script src="../lib/recipe-engine.js"></script>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

@@ -305,297 +305,278 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
-                </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-tag" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6 H40 V22 L22 40 L8 26 Z" fill="#fffcf4"/><circle cx="34" cy="12" r="2.5"/><path d="M34 12 C38 6 44 6 44 10" stroke-width="1.3"/><path d="M14 26 L22 34" stroke="#efc84a" stroke-width="4"/></g></symbol>
+      <symbol id="m-lightbulb" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 C32 5 37 11 37 17 C37 24 31 26 31 33 L17 33 C17 26 11 24 11 17 C11 11 16 5 24 5 Z" fill="#efc84a"/><path d="M18 37 h12 M19 41 h10"/><path d="M21 33 V22 l3 3 l3 -3 V33" stroke-width="1.3"/></g></symbol>
+      <symbol id="m-round-shield" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18" fill="#fffcf4"/><circle cx="24" cy="24" r="5" fill="#efc84a"/><path d="M24 6 V19 M24 29 V42 M6 24 H19 M29 24 H42" stroke-width="1.3"/></g></symbol>
+      <symbol id="m-banner" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 45 V5"/><path d="M12 8 H38 L32 17 L38 26 H12" fill="#fffcf4"/><path d="M19 13 l4 4 l4 -4 M23 17 v4" stroke-width="1.4"/><circle cx="12" cy="4.5" r="2" fill="#1e1c18"/><path d="M14 22 h15" stroke="#efc84a" stroke-width="3"/></g></symbol>
+      <symbol id="m-planet" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="25" r="11" fill="#fffcf4"/><ellipse cx="24" cy="25" rx="20" ry="6" transform="rotate(-20 24 25)"/><path d="M17 20 C20 17 24 16 27 17" stroke="#efc84a" stroke-width="3"/><path d="M40 5 l1 3 l3 1 l-3 1 l-1 3 l-1 -3 l-3 -1 l3 -1 z" fill="#1e1c18" stroke-width="1"/></g></symbol>
+      <symbol id="m-dragon" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 35 C7 25 15 17 26 17 L37 19 L45 25 L37 27 L42 31 L33 31 C29 35 23 39 17 41 C11 43 6 41 5 35 Z" fill="#fffcf4"/><path d="M19 19 L8 11 L21 15 M24 17 L19 6 L28 16" stroke-width="1.6"/><circle cx="31" cy="22" r="1.5" fill="#1e1c18"/><path d="M41 23 l1 0" stroke-width="2"/><path d="M11 37 C17 36 23 34 28 31" stroke="#efc84a" stroke-width="3"/></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../categories/organizations-names.html">Organisations</a> / <span aria-current="page">Brand Name Generator</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">Brand</span> Name Generator</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-tag"/></svg>
             </div>
-        </div>
-    </nav>
+            <p class="lede">Names for a product or brand, sorted by industry and feel: 18 categories from luxury to outdoor.</p>
 
-    <div class="container">
-        <header class="blog-hero">
-            <h1>🏷️ Brand Name Generator</h1>
-            <p class="tagline">Names for a product or brand, sorted by industry and feel: 18 categories from luxury to outdoor.</p>
-            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
-        </header>
-
-        <main>
-            <section class="embedded-generator">
-                <div class="generator-card">
-                    <h2>Generate Brand Names</h2>
-                    <p class="generator-description">Brand and product names sorted by industry and feel, from tech and luxury to food, fashion and outdoor, as one word or with a product word (Juniper Botanicals).</p>
-                    
-                    <div class="simple-generator">
-                        <div class="filters">
-          <div class="filter-group">
-            <label for="filter-category">Industry or feel:</label>
-            <select id="filter-category" name="category" data-filter="category">
-              <option value="all_categories">All categories</option>
-              <option value="tech_innovation">Tech and software</option>
-              <option value="luxury_premium">Luxury and premium</option>
-              <option value="nature_organic">Natural and organic</option>
-              <option value="bold_athletic">Sport and fitness</option>
-              <option value="modern_minimalist">Modern and minimal</option>
-              <option value="food_beverage">Food and drink</option>
-              <option value="creative_artistic">Art and design</option>
-              <option value="urban_street">Streetwear and urban</option>
-              <option value="ocean_maritime">Ocean and coastal</option>
-              <option value="desert_earth">Desert and earth</option>
-              <option value="space_cosmic">Space and science</option>
-              <option value="heritage_vintage">Heritage and vintage</option>
-              <option value="energy_power">Energy and power</option>
-              <option value="fashion_style">Fashion</option>
-              <option value="health_wellness">Health and wellness</option>
-              <option value="adventure_outdoor">Outdoor and adventure</option>
-              <option value="home_living">Home and interiors</option>
-              <option value="entertainment_media">Music, film and media</option>
-            </select>
+            <section class="sheet hd simple-generator" id="generator" aria-label="Brand Name Generator">
+                <div class="gen-grid">
+          <div class="group">
+            <label class="label" for="filter-category">Industry or feel</label>
+            <div class="ctl sel hd">
+              <select id="filter-category" name="category" data-filter="category">
+                <option value="all_categories">All categories</option>
+                <option value="tech_innovation">Tech and software</option>
+                <option value="luxury_premium">Luxury and premium</option>
+                <option value="nature_organic">Natural and organic</option>
+                <option value="bold_athletic">Sport and fitness</option>
+                <option value="modern_minimalist">Modern and minimal</option>
+                <option value="food_beverage">Food and drink</option>
+                <option value="creative_artistic">Art and design</option>
+                <option value="urban_street">Streetwear and urban</option>
+                <option value="ocean_maritime">Ocean and coastal</option>
+                <option value="desert_earth">Desert and earth</option>
+                <option value="space_cosmic">Space and science</option>
+                <option value="heritage_vintage">Heritage and vintage</option>
+                <option value="energy_power">Energy and power</option>
+                <option value="fashion_style">Fashion</option>
+                <option value="health_wellness">Health and wellness</option>
+                <option value="adventure_outdoor">Outdoor and adventure</option>
+                <option value="home_living">Home and interiors</option>
+                <option value="entertainment_media">Music, film and media</option>
+              </select>
+            </div>
           </div>
 
-          <div class="filter-group">
-            <label for="filter-format">Name Format:</label>
-            <select id="filter-format" name="format" data-filter="format">
-              <option value="word">One word (Juniper)</option>
-              <option value="with_ending">With a product word (Juniper Botanicals)</option>
-            </select>
+          <div class="group">
+            <label class="label" for="filter-format">Name Format</label>
+            <div class="ctl sel hd">
+              <select id="filter-format" name="format" data-filter="format">
+                <option value="word">One word (Juniper)</option>
+                <option value="with_ending">With a product word (Juniper Botanicals)</option>
+              </select>
+            </div>
           </div></div>
-                        <div class="generator-controls">
-                            <div class="filter-group count-group">
-                                <label for="name-count">How many:</label>
-                                <select id="name-count">
-                                    <option value="8" selected>8 names</option>
-                                    <option value="16">16 names</option>
-                                    <option value="32">32 names</option>
-                                </select>
-                            </div>
-                            <button id="generate-btn" class="generate-button">Generate Names</button>
-                        </div>
-                        <div class="results-area" id="results">
-                            <p class="results-placeholder">Click "Generate Names" to see results</p>
-                        </div>
-                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
-                        <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="false">
+                    <p class="results-empty">Press Generate Names for 8 brand names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
                     </div>
-                    
-                    <div class="cta-box">
-                        <p><strong>Need more options?</strong></p>
-                        <a href="../index.html" class="cta-button">Try the Ultimate Random Name Generator →</a>
-                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
+
+            <section class="section example-names">
+                <h2>Example Brand Names</h2>
+                <p class="sub">A few names this generator came up with. Tap one to copy it, or press "Generate Names" above for more.</p>
+                <div class="ex">
+                <div class="exbox hd">
+                    <h3>All categories · One word</h3>
+                    <ul>
+                        <li>Sound</li>
+                        <li>Flux</li>
+                        <li>Morsel</li>
+                        <li>Parallax</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Natural and organic · One word</h3>
+                    <ul>
+                        <li>Honeycomb</li>
+                        <li>Hedgerow</li>
+                        <li>Sage</li>
+                        <li>Verde</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Food and drink · One word</h3>
+                    <ul>
+                        <li>Smoke</li>
+                        <li>Ladle</li>
+                        <li>Zing</li>
+                        <li>Proof</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Ocean and coastal · With a product word</h3>
+                    <ul>
+                        <li>Tide Surf</li>
+                        <li>Petrel Marine</li>
+                        <li>Cormorant Swim</li>
+                        <li>Fathom Outfitters</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Heritage and vintage · With a product word</h3>
+                    <ul>
+                        <li>Tweed Trading Co.</li>
+                        <li>Heirloom Mercantile</li>
+                        <li>Atelier &amp; Sons</li>
+                        <li>Chandler Supply Co.</li>
+                    </ul>
+                </div>
+                <div class="exbox hd">
+                    <h3>Health and wellness · With a product word</h3>
+                    <ul>
+                        <li>Balance Skin</li>
+                        <li>Restore Wellness</li>
+                        <li>Calm Nutrition</li>
+                        <li>Wellspring Health</li>
+                    </ul>
+                </div>
                 </div>
             </section>
 
-            <section class="example-names">
-                <h2>Example Brand Names</h2>
-                <p>A few names this generator came up with. Press "Generate Names" above for more.</p>
-                <h3>All categories · One word</h3>
-                <ul class="name-results">
-                    <li>Sound</li>
-                    <li>Flux</li>
-                    <li>Morsel</li>
-                    <li>Parallax</li>
-                </ul>
-                <h3>Natural and organic · One word</h3>
-                <ul class="name-results">
-                    <li>Honeycomb</li>
-                    <li>Hedgerow</li>
-                    <li>Sage</li>
-                    <li>Verde</li>
-                </ul>
-                <h3>Food and drink · One word</h3>
-                <ul class="name-results">
-                    <li>Smoke</li>
-                    <li>Ladle</li>
-                    <li>Zing</li>
-                    <li>Proof</li>
-                </ul>
-                <h3>Ocean and coastal · With a product word</h3>
-                <ul class="name-results">
-                    <li>Tide Surf</li>
-                    <li>Petrel Marine</li>
-                    <li>Cormorant Swim</li>
-                    <li>Fathom Outfitters</li>
-                </ul>
-                <h3>Heritage and vintage · With a product word</h3>
-                <ul class="name-results">
-                    <li>Tweed Trading Co.</li>
-                    <li>Heirloom Mercantile</li>
-                    <li>Atelier &amp; Sons</li>
-                    <li>Chandler Supply Co.</li>
-                </ul>
-                <h3>Health and wellness · With a product word</h3>
-                <ul class="name-results">
-                    <li>Balance Skin</li>
-                    <li>Restore Wellness</li>
-                    <li>Calm Nutrition</li>
-                    <li>Wellspring Health</li>
-                </ul>
-            </section>
-
-            <section class="blog-content how-it-works">
+            <section class="section how-it-works">
                 <h2>How the Brand Name Generator Works</h2>
+                <div class="howto hd">
                 <p>It works from 874 names and name parts, which combine into over 8,100 possible results.</p>
                 <p>The choices:</p>
                 <ul><li><strong>Industry or feel:</strong> All categories, Tech and software, Luxury and premium, Natural and organic, Sport and fitness, Modern and minimal, Food and drink, Art and design, Streetwear and urban, Ocean and coastal, Desert and earth, Space and science, Heritage and vintage, Energy and power, Fashion, Health and wellness, Outdoor and adventure, Home and interiors, Music, film and media.</li><li><strong>Name Format:</strong><ul><li>One word, e.g. <em>Retreat</em></li><li>With a product word, e.g. <em>Matinee Records</em></li></ul></li></ul>
-                <p>Each press gives you 8, 16 or 32 names (choose under "How many"), and you won't see the same one twice until you've been through everything for the choices you've made.</p>
+                <p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet, until the names for the choices you've made run out.</p>
+                </div>
             </section>
 
-            <article class="blog-content" itemscope itemtype="https://schema.org/Article">
+            <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="Brand Name Generator">
                 <meta itemprop="description" content="Brand and product names sorted by industry and feel, from tech and luxury to food, fashion and outdoor, as one word or with a product word (Juniper Botanicals).">
-                <section itemprop="articleBody">
-                    <p>A brand name has to suit what it's on: <em>Sovereign</em> sounds right on a perfume, <em>Juniper</em> on a skincare range, <em>Torque</em> on trainers. This <strong>brand name generator</strong> sorts words by industry and feel, across 18 categories, so you start from names that already fit your product. Add a product word (<em>Juniper Botanicals</em>, <em>Hearth Kitchen</em>) to see how it would look on a label, or pick "All categories" for a mix.</p>
-                </section>
+                <div itemprop="articleBody">
+                <p class="big">A brand name has to suit what it's on: <em>Sovereign</em> sounds right on a perfume, <em>Juniper</em> on a skincare range, <em>Torque</em> on trainers. This <strong>brand name generator</strong> sorts words by industry and feel, across 18 categories, so you start from names that already fit your product. Add a product word (<em>Juniper Botanicals</em>, <em>Hearth Kitchen</em>) to see how it would look on a label, or pick "All categories" for a mix.</p>
                 
-      <section>
-        <h2>How famous brands got their names</h2>
-        <ul><li><strong>Nike</strong> is the Greek goddess of victory. An early employee, Jeff Johnson, suggested it in 1971: a sports brand named for winning.</li><li><strong>Lego</strong> comes from the Danish <em>leg godt</em>, "play well". It says what the product is for.</li><li><strong>Patagonia</strong> is named after the region at the tip of South America, wild mountains and wind. The name sells the place you'd wear the jacket.</li><li><strong>Häagen-Dazs</strong> means nothing at all. Reuben Mattus made it up in New York to sound Scandinavian and old-world, umlaut included.</li><li><strong>Toblerone</strong> joins the maker's name, Tobler, with <em>torrone</em>, the Italian word for nougat.</li></ul><p>Each takes a different route: a myth, a promise, a place, a feeling, a description. The categories here give you words for the feeling and the place; the rest is yours.</p>
-      </section>
-    
+                <h2>How famous brands got their names</h2>
+                <ul><li><strong>Nike</strong> is the Greek goddess of victory. An early employee, Jeff Johnson, suggested it in 1971: a sports brand named for winning.</li><li><strong>Lego</strong> comes from the Danish <em>leg godt</em>, "play well". It says what the product is for.</li><li><strong>Patagonia</strong> is named after the region at the tip of South America, wild mountains and wind. The name sells the place you'd wear the jacket.</li><li><strong>Häagen-Dazs</strong> means nothing at all. Reuben Mattus made it up in New York to sound Scandinavian and old-world, umlaut included.</li><li><strong>Toblerone</strong> joins the maker's name, Tobler, with <em>torrone</em>, the Italian word for nougat.</li></ul><p>Each takes a different route: a myth, a promise, a place, a feeling, a description. The categories here give you words for the feeling and the place; the rest is yours.</p>
 
-      <section>
-        <h2>Matching the name to the shelf</h2>
-        <p>A brand name sits next to its rivals, and it should sound as if it belongs there while still standing out:</p><ul><li><strong>Food and drink</strong> names often sound like a kitchen or a pantry: warm, homely, a little old-fashioned (<em>Larder</em>, <em>Damson</em>, <em>Maltings</em>).</li><li><strong>Skincare and wellness</strong> lean on plants and calm (<em>Neroli</em>, <em>Calendula</em>, <em>Still</em>).</li><li><strong>Sport</strong> uses force and speed (<em>Torque</em>, <em>Redline</em>, <em>Breakaway</em>).</li><li><strong>Luxury</strong> borrows from fabric, jewels and old London addresses (<em>Cashmere</em>, <em>Solitaire</em>, <em>Belgravia</em>).</li><li><strong>Tech</strong> goes for science and precision (<em>Lattice</em>, <em>Parallax</em>, <em>Kelvin</em>).</li></ul><p>Breaking the pattern on purpose can work too: a soft, botanical name on a power tool would be remembered. But do it on purpose.</p>
-      </section>
-    
+                <h2>Matching the name to the shelf</h2>
+                <p>A brand name sits next to its rivals, and it should sound as if it belongs there while still standing out:</p><ul><li><strong>Food and drink</strong> names often sound like a kitchen or a pantry: warm, homely, a little old-fashioned (<em>Larder</em>, <em>Damson</em>, <em>Maltings</em>).</li><li><strong>Skincare and wellness</strong> lean on plants and calm (<em>Neroli</em>, <em>Calendula</em>, <em>Still</em>).</li><li><strong>Sport</strong> uses force and speed (<em>Torque</em>, <em>Redline</em>, <em>Breakaway</em>).</li><li><strong>Luxury</strong> borrows from fabric, jewels and old London addresses (<em>Cashmere</em>, <em>Solitaire</em>, <em>Belgravia</em>).</li><li><strong>Tech</strong> goes for science and precision (<em>Lattice</em>, <em>Parallax</em>, <em>Kelvin</em>).</li></ul><p>Breaking the pattern on purpose can work too: a soft, botanical name on a power tool would be remembered. But do it on purpose.</p>
 
-      <section>
-        <h2>One word or two?</h2>
-        <p>A single word (<em>Juniper</em>) is the strongest brand, but it's also the hardest to own: someone has nearly always used a common word somewhere. Adding a product word (<em>Juniper Botanicals</em>, <em>Juniper Outfitters</em>) does two jobs. It tells people what you sell, and it makes the name easier to register and find online.</p><p>Many brands start with the long version and become known by the short one. Choose "With a product word" to try names that way.</p>
-      </section>
-    
+                <h2>One word or two?</h2>
+                <p>A single word (<em>Juniper</em>) is the strongest brand, but it's also the hardest to own: someone has nearly always used a common word somewhere. Adding a product word (<em>Juniper Botanicals</em>, <em>Juniper Outfitters</em>) does two jobs. It tells people what you sell, and it makes the name easier to register and find online.</p><p>Many brands start with the long version and become known by the short one. Choose "With a product word" to try names that way.</p>
 
-      <section>
-        <h2>Checking a brand name</h2>
-        <ul><li><strong>Search your shelf.</strong> Look the name up on the shops and marketplaces where your product would sell. Another product with the same name in the same aisle is the clash that matters.</li><li><strong>Check trade marks for your product class.</strong> Trade marks are registered for kinds of goods, so <em>Juniper</em> for gin and <em>Juniper</em> for software can both exist. The UK IPO, USPTO and EUIPO all have free searches.</li><li><strong>Get the handles.</strong> A domain and social media names that match, or nearly match, make the brand easier to find.</li><li><strong>Say it in the market you're selling to.</strong> Check the word doesn't mean something unfortunate in another language you'll sell in.</li></ul><p>None of this is legal advice; for a launch with real money behind it, a trade mark attorney can check it properly.</p>
-      </section>
-    
+                <h2>Checking a brand name</h2>
+                <ul><li><strong>Search your shelf.</strong> Look the name up on the shops and marketplaces where your product would sell. Another product with the same name in the same aisle is the clash that matters.</li><li><strong>Check trade marks for your product class.</strong> Trade marks are registered for kinds of goods, so <em>Juniper</em> for gin and <em>Juniper</em> for software can both exist. The UK IPO, USPTO and EUIPO all have free searches.</li><li><strong>Get the handles.</strong> A domain and social media names that match, or nearly match, make the brand easier to find.</li><li><strong>Say it in the market you're selling to.</strong> Check the word doesn't mean something unfortunate in another language you'll sell in.</li></ul><p>None of this is legal advice; for a launch with real money behind it, a trade mark attorney can check it properly.</p>
+                </div>
             </article>
 
-            
-      <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-          
-            <div class="faq-item">
-              <h3 class="faq-question">How do I choose the right category?</h3>
-              <p class="faq-answer">Start with where the product will be sold: food and drink, wellness, fashion and so on. If none fits, choose by feel: Heritage and vintage for something with a long story, Modern and minimal for something clean and simple, Ocean and coastal or Desert and earth for something that suggests a place.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">What makes a good brand name?</h3>
-              <p class="faq-answer">It suits the product, it's easy to say and spell, and it stands apart from the names already on the same shelf. It also needs to be free to use: check trade marks for your kind of product and the domain before you commit.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Can I use these names for my brand?</h3>
-              <p class="faq-answer">Yes, they're free to use and you don't need to credit the site. Many are everyday words, so check trade marks in your product class, the shops you'll sell in and the domain before you commit.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Business, company or brand name generator: which should I use?</h3>
-              <p class="faq-answer">This one suggests names for a product or range, sorted by industry and feel. The <a href="business-name-generator.html">Business Name Generator</a> gives you strong single words to build a shop, trade or service name around, and the <a href="company-name-generator.html">Company Name Generator</a> makes startup-style names: invented words, blends and -ify/-ly endings. Whichever you use, check the name is free before you commit to it.</p>
-            </div>
-          
-        </div>
-      </section>
-            
-      <section class="related-section">
-        <h2>Related Name Generators</h2>
-        <div class="related-grid" id="related-generators">
-          <a href="../posts/business-name-generator.html" class="related-card">
-            <h3>💼 Business Name Generator</h3>
-            <p>Strong one-word starting points for a business name, in 10 themes from aspirational to tech, plus how to turn one into a name and check it&#039;s free to use.</p>
-          </a>
-          <a href="../posts/clan-name-generator.html" class="related-card">
-            <h3>🛡️ Clan Name Generator</h3>
-            <p>Clan names for fantasy families and gaming teams: Highland-style clans with a motto or war cry, tribes like the Howling Elk, and gaming clans with a tag.</p>
-          </a>
-          <a href="../posts/company-name-generator.html" class="related-card">
-            <h3>🏢 Company Name Generator</h3>
-            <p>Startup-style company names in five styles: invented words, blends, -ify and -ly endings, real words and two-part names. Plus how to check a name is free.</p>
-          </a>
-          <a href="../posts/guild-name-generator.html" class="related-card">
-            <h3>⚜️ Guild Name Generator</h3>
-            <p>Guild names for adventurers, thieves, mages, merchants and craftspeople: the Gilded Lanterns, the Velvet Hand, the Worshipful Company of Clockmakers.</p>
-          </a>
-          <a href="../posts/alien-name-generator.html" class="related-card">
-            <h3>👽 Alien Name Generator</h3>
-            <p>Alien names that sound like they come from a real species: clicking insectoids, liquid-voiced aquatics, beings named like Hums-at-Dawn, and galactic nobility.</p>
-          </a>
-          <a href="../posts/angel-name-generator.html" class="related-card">
-            <h3>😇 Angel Name Generator</h3>
-            <p>Angel names from scripture and tradition with their Hebrew meanings, or new ones in the same style, with a choir, a domain or an epithet.</p>
-          </a>
-        </div>
-      </section>
-            
-      <section class="category-generators-section">
-        <h2>All Organisations Name Generators</h2>
-        <div class="category-generators-grid" id="category-generators">
-          <a href="../posts/business-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">💼</span>
-            <span class="category-generator-title">Business Name Generator</span>
-          </a>
-          <a href="../posts/clan-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🛡️</span>
-            <span class="category-generator-title">Clan Name Generator</span>
-          </a>
-          <a href="../posts/company-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🏢</span>
-            <span class="category-generator-title">Company Name Generator</span>
-          </a>
-          <a href="../posts/guild-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">⚜️</span>
-            <span class="category-generator-title">Guild Name Generator</span>
-          </a>
-        </div>
-      </section>
-        </main>
+            <section class="section faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>How do I choose the right category?</summary>
+                        <div>Start with where the product will be sold: food and drink, wellness, fashion and so on. If none fits, choose by feel: Heritage and vintage for something with a long story, Modern and minimal for something clean and simple, Ocean and coastal or Desert and earth for something that suggests a place.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>What makes a good brand name?</summary>
+                        <div>It suits the product, it's easy to say and spell, and it stands apart from the names already on the same shelf. It also needs to be free to use: check trade marks for your kind of product and the domain before you commit.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Can I use these names for my brand?</summary>
+                        <div>Yes, they're free to use and you don't need to credit the site. Many are everyday words, so check trade marks in your product class, the shops you'll sell in and the domain before you commit.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Business, company or brand name generator: which should I use?</summary>
+                        <div>This one suggests names for a product or range, sorted by industry and feel. The <a href="business-name-generator.html">Business Name Generator</a> gives you strong single words to build a shop, trade or service name around, and the <a href="company-name-generator.html">Company Name Generator</a> makes startup-style names: invented words, blends and -ify/-ly endings. Whichever you use, check the name is free before you commit to it.</div>
+                    </details>
+                </div>
+            </section>
 
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+            <section class="section related-section">
+                <h2>Related Name Generators</h2>
+                <div class="genlist" id="related-generators">
+                    <a href="../posts/business-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-lightbulb"/></svg><div><b>Business Name Generator</b><span>Strong one-word starting points for a business name, in 10 themes from aspirational to tech, plus how to turn one into a name and check it&#039;s free to use.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/clan-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-round-shield"/></svg><div><b>Clan Name Generator</b><span>Clan names for fantasy families and gaming teams: Highland-style clans with a motto or war cry, tribes like the Howling Elk, and gaming clans with a tag.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/company-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-banner"/></svg><div><b>Company Name Generator</b><span>Startup-style company names in five styles: invented words, blends, -ify and -ly endings, real words and two-part names. Plus how to check a name is free.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/guild-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-banner"/></svg><div><b>Guild Name Generator</b><span>Guild names for adventurers, thieves, mages, merchants and craftspeople: the Gilded Lanterns, the Velvet Hand, the Worshipful Company of Clockmakers.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/alien-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-planet"/></svg><div><b>Alien Name Generator</b><span>Alien names that sound like they come from a real species: clicking insectoids, liquid-voiced aquatics, beings named like Hums-at-Dawn, and galactic nobility.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/angel-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-dragon"/></svg><div><b>Angel Name Generator</b><span>Angel names from scripture and tradition with their Hebrew meanings, or new ones in the same style, with a choir, a domain or an epithet.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
+
+            <section class="section category-generators-section">
+                <h2>More Organisations Name Generators</h2>
+                <div class="genlist compact" id="category-generators">
+                    <a href="../posts/business-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-lightbulb"/></svg><div><b>Business Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/clan-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-round-shield"/></svg><div><b>Clan Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/company-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-banner"/></svg><div><b>Company Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/guild-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-banner"/></svg><div><b>Guild Name Generator</b></div><em aria-hidden="true">→</em></a>
+                </div>
+                <p class="all-link"><a href="../categories/organizations-names.html">All Organisations name generators</a></p>
+            </section>
+            <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
 
     <script type="application/json" id="generator-config">{"title":"Brand Name Generator","slug":"brand-name-generator","filters":{"category":{"label":"Industry or feel","options":["all_categories","tech_innovation","luxury_premium","nature_organic","bold_athletic","modern_minimalist","food_beverage","creative_artistic","urban_street","ocean_maritime","desert_earth","space_cosmic","heritage_vintage","energy_power","fashion_style","health_wellness","adventure_outdoor","home_living","entertainment_media"],"optionLabels":{"all_categories":"All categories","tech_innovation":"Tech and software","luxury_premium":"Luxury and premium","nature_organic":"Natural and organic","bold_athletic":"Sport and fitness","modern_minimalist":"Modern and minimal","food_beverage":"Food and drink","creative_artistic":"Art and design","urban_street":"Streetwear and urban","ocean_maritime":"Ocean and coastal","desert_earth":"Desert and earth","space_cosmic":"Space and science","heritage_vintage":"Heritage and vintage","energy_power":"Energy and power","fashion_style":"Fashion","health_wellness":"Health and wellness","adventure_outdoor":"Outdoor and adventure","home_living":"Home and interiors","entertainment_media":"Music, film and media"}},"format":{"label":"Name Format","options":["word","with_ending"],"optionLabels":{"word":"One word (Juniper)","with_ending":"With a product word (Juniper Botanicals)"}}},"recipe":"switch","on":"format","cases":{"word":{"recipe":"switch","on":"category","cases":{"all_categories":{"recipe":"pick","from":"words"}},"default":{"recipe":"pick","from":"words.{category}"}},"with_ending":{"recipe":"switch","on":"category","cases":{"all_categories":{"recipe":"template","template":["[words.tech_innovation] [endings.tech_innovation]","[words.luxury_premium] [endings.luxury_premium]","[words.nature_organic] [endings.nature_organic]","[words.bold_athletic] [endings.bold_athletic]","[words.modern_minimalist] [endings.modern_minimalist]","[words.food_beverage] [endings.food_beverage]","[words.creative_artistic] [endings.creative_artistic]","[words.urban_street] [endings.urban_street]","[words.ocean_maritime] [endings.ocean_maritime]","[words.desert_earth] [endings.desert_earth]","[words.space_cosmic] [endings.space_cosmic]","[words.heritage_vintage] [endings.heritage_vintage]","[words.energy_power] [endings.energy_power]","[words.fashion_style] [endings.fashion_style]","[words.health_wellness] [endings.health_wellness]","[words.adventure_outdoor] [endings.adventure_outdoor]","[words.home_living] [endings.home_living]","[words.entertainment_media] [endings.entertainment_media]"]}},"default":{"recipe":"template","template":"[words.{category}] [endings.{category}]"}}},"data":{"words":{"tech_innovation":["Nexum","Vertex","Prism","Pulse","Flux","Helix","Axiom","Vector","Cipher","Quanta","Lumina","Spectra","Kinetic","Catalyst","Photon","Polaris","Orbit","Signal","Mesh","Byte","Schema","Sentinel","Celerity","Alacrity","Veridian","Tetra","Zeta","Nimbus","Lattice","Circuit","Cortexa","Synapse","Relay","Beacon","Arclight","Fathom","Parallax","Codex","Quorum","Halcyon","Ion","Kelvin","Vantage","Hyperion","Onyx","Glyph"],"luxury_premium":["Luxe","Regal","Sovereign","Monarch","Regent","Sterling","Opaline","Sapphire","Emerald","Obsidian","Pearl","Ivory","Velvet","Cashmere","Silken","Carat","Gilded","Grandeur","Belmont","Fairmont","Kensington","Mayfair","Belgravia","Ormolu","Damask","Brocade","Chiffon","Aurelia","Celeste","Valois","Montclair","Lisière","Maison Noir","Vellum","Lacquer","Marquis","Duchess","Patrician","Solitaire","Filigree","Oriel","Aurum","Argent","Noblesse"],"nature_organic":["Terra","Flora","Verde","Sage","Fern","Moss","Grove","Meadow","Orchard","Bloom","Petal","Nectar","Honeycomb","Cedar","Willow","Birch","Juniper","Hawthorn","Thistle","Clover","Heather","Lavender","Rosemary","Elderflower","Foxglove","Primrose","Bluebell","Wildling","Sprout","Tendril","Bracken","Spinney","Weald","Copse","Hedgerow","Dewpond","Mistle","Rootwell","Seedling","Greenwood","Wildmeadow","Linden","Quince","Rowan","Sorrel","Yarrow"],"bold_athletic":["Titan","Atlas","Spartan","Gladiator","Victor","Valor","Impact","Rush","Thunder","Tempest","Cyclone","Avalanche","Inferno","Blaze","Ignite","Forge","Anvil","Titanium","Carbon","Granite","Flint","Ridge","Velocity","Momentum","Surge","Thrust","Torque","Grit","Relentless","Tenacity","Mettle","Fortitude","Unbroken","Stride","Sprint","Apex","Redline","Overdrive","Breakaway","Lanefinder","Pacer","Hurdle","Ironclad","Vanguard"],"modern_minimalist":["Mono","Duo","Solo","Pure","Bare","Null","Zero","Plain","Clear","Crisp","Sleek","Lean","Soft","Calm","Still","Hush","Subtle","Blank","Stark","Sheer","Form","Line","Arc","Loop","Ring","Fold","Grain","Tone","Aero","Velo","Mira","Hako","Loka","Vada","Kido","Tana","Nook","Kin","Oma","Isle","Edit","Unit","Plane","Grid"],"food_beverage":["Zest","Tang","Zing","Crunch","Morsel","Nibble","Feast","Sip","Brew","Roast","Toast","Ember","Smoke","Pickle","Larder","Barrel","Cask","Kettle","Skillet","Hearth","Crumb","Knead","Proof","Churn","Ladle","Whisk","Saucepan","Carafe","Decanter","Tumbler","Goblet","Bramble","Damson","Greengage","Medlar","Saffron","Cardamom","Sumac","Honeypot","Butterfield","Oatcake","Marmalade","Hopfield","Maltings"],"creative_artistic":["Canvas","Palette","Easel","Sketch","Hue","Tint","Pigment","Ink","Charcoal","Graphite","Pastel","Quill","Stylus","Chisel","Etch","Muse","Motif","Texture","Pattern","Gesso","Fresco","Mosaic","Sfumato","Impasto","Collage","Montage","Diorama","Frieze","Vignette","Gouache","Sepia","Ochre","Umber","Vermilion","Cobalt","Lapis","Chiaroscuro","Linocut","Woodcut","Marbled","Kiln","Glaze","Loom"],"urban_street":["Metro","Avenue","Boulevard","Lane","Plaza","Arcade","Loft","Vault","Alley","Junction","Crossing","Corner","District","Quarter","Precinct","Ward","Turf","Pavement","Asphalt","Concrete","Overpass","Underpass","Flyover","Subway","Tram","Skate","Stride","Roam","Drifter","Hustle","Grind","Graffiti","Mural","Tag","Brick","Shutter","Rooftop","Skyline","Kiosk","Streetlight","Night Bus","Last Stop","Block Party","Corner Shop"],"ocean_maritime":["Pacific","Atlantic","Nautical","Coastal","Harbour","Cove","Inlet","Sound","Strait","Current","Tide","Swell","Ripple","Spray","Foam","Shell","Coral","Reef","Lagoon","Atoll","Shore","Pebble","Headland","Cape","Estuary","Fathom","Marina","Quay","Jetty","Anchor","Mooring","Rigging","Sail","Mast","Rudder","Helm","Keel","Starboard","Porthole","Albatross","Petrel","Cormorant","Puffin","Kelp","Triton","Ondine","Corsair","Commodore","Flotilla"],"desert_earth":["Sahara","Mojave","Sonora","Mesa","Butte","Canyon","Ravine","Gorge","Plateau","Prairie","Savanna","Steppe","Tundra","Highland","Outback","Frontier","Wilderness","Rugged","Hardy","Enduring","Primal","Pioneer","Pathfinder","Wayfinder","Nomad","Ranger","Scout","Caravan","Oasis","Dune","Mirage","Sirocco","Terracotta","Adobe","Sandstone","Ochre","Basalt","Pumice","Cinder","Crater","Geyser","Lava","Quartz","Flintlock","Sagebrush","Mesquite"],"space_cosmic":["Galaxy","Cosmos","Infinity","Orbit","Trajectory","Vector","Warp","Inertia","Thruster","Quasar","Pulsar","Magnetar","Starlet","Cluster","Constellation","Asteroid","Meteor","Satellite","Probe","Shuttle","Rover","Lander","Outpost","Beacon","Uplink","Portal","Rift","Aperture","Horizon","Zenith","Nadir","Apex","Void","Vacuum","Nebula","Aurora","Eclipse","Solstice","Equinox","Meridian","Nova","Supernova","Astral","Lunar","Stellar","Perihelion","Parsec"],"heritage_vintage":["Classic","Vintage","Retro","Heritage","Archive","Chronicle","Relic","Heirloom","Keepsake","Memento","Curio","Trove","Treasury","Coffer","Strongbox","Atelier","Library","Bureau","Tapestry","Tweed","Twill","Denim","Chintz","Percale","Muslin","Ledger","Almanac","Gazette","Postmark","Sealing Wax","Inkwell","Pennyfarthing","Gaslight","Wireless","Gramophone","Phonograph","Haberdasher","Cooper","Wheelwright","Chandler","Mercer","Old Mill","Copperplate"],"energy_power":["Dynamo","Reactor","Turbine","Piston","Volt","Amp","Watt","Ohm","Joule","Faraday","Coulomb","Hertz","Kilowatt","Megawatt","Gigawatt","Current","Surge","Flow","Charge","Grid","Spark","Jolt","Flash","Glow","Radiant","Kinetic","Thermal","Plasma","Fusion","Fission","Conduit","Circuit","Coil","Magneto","Capacitor","Rotor","Stator","Flywheel","Windmill","Sunrise","Daybreak","Solstice","Tidal","Updraft","Heliostat","Photon"],"fashion_style":["Chic","Mode","Couture","Tailor","Stitch","Seam","Hem","Pleat","Bias","Selvedge","Muse","Icon","Glamour","Velvet","Satin","Silk","Crêpe","Tulle","Organza","Chiffon","Gabardine","Houndstooth","Tartan","Paisley","Argyle","Crimson","Scarlet","Ruby","Coral","Apricot","Gilt","Bronze","Pewter","Ivory","Noir","Blanc","Rouge","Indigo","Magenta","Cerise","Lilac","Taupe","Camel","Ecru"],"health_wellness":["Vitality","Vigour","Verve","Zest","Glow","Radiance","Balance","Calm","Serene","Tranquil","Still","Restore","Renew","Revive","Recharge","Heal","Soothe","Mend","Thrive","Flourish","Bloom","Tonic","Elixir","Balm","Salve","Remedy","Sanctuary","Retreat","Haven","Breathe","Kindred","Wellspring","Stillwater","Sunwell","Aloe","Chamomile","Eucalyptus","Arnica","Calendula","Neroli","Bergamot","Vetiver","Ritual","Equilibrium"],"adventure_outdoor":["Trek","Hike","Trail","Journey","Voyage","Quest","Odyssey","Venture","Pursuit","Summit","Ridge","Crag","Scree","Fell","Tarn","Cairn","Bothy","Basecamp","Switchback","Traverse","Bivouac","Carabiner","Crampon","Ice Axe","Compass","Waymark","Lodestar","Pathfinder","Alpinist","Backcountry","Highline","Timberline","Treeline","Watershed","Headwater","Wildfell","Wolfden","Firelight","Kestrel","Kestrel Ridge","Moorland"],"home_living":["Haven","Nest","Hearth","Abode","Lodge","Cabin","Cottage","Bungalow","Sanctuary","Refuge","Shelter","Den","Nook","Parlour","Larder","Scullery","Pantry","Snug","Inglenook","Rafter","Gable","Lintel","Threshold","Doorstep","Windowsill","Damask","Muslin","Throw","Quilt","Eiderdown","Candlelight","Lamplight","Kettle","Teacup","Sideboard","Dresser","Armoire","Credenza","Homestead","Hearthside","Fireside"],"entertainment_media":["Stage","Screen","Scene","Encore","Curtain Call","Spotlight","Marquee","Premiere","Matinee","Cinema","Reel","Frame","Cut","Montage","Take","Sound","Melody","Harmony","Rhythm","Tempo","Cadence","Chord","Timbre","Frequency","Broadcast","Channel","Feed","Stream","Signal","Static","Rewind","Playback","Vinyl","Cassette","B-Side","Mixtape","Jukebox","Carnival","Circus","Gala","Recital","Jam Session","Backstage","Front Row"]},"endings":{"tech_innovation":["Labs","Systems","Works","Digital","Cloud"],"luxury_premium":["& Co.","House","Collection","Atelier"],"nature_organic":["Botanicals","Naturals","Organics","Apothecary"],"bold_athletic":["Athletics","Sport","Performance","Training"],"modern_minimalist":["Studio","Goods","Supply","Objects"],"food_beverage":["Kitchen","Pantry","Bakehouse","Coffee","Provisions"],"creative_artistic":["Studio","Press","Creative","Workshop"],"urban_street":["Supply","Collective","Clothing","Goods"],"ocean_maritime":["Surf","Swim","Outfitters","Marine"],"desert_earth":["Outfitters","Trading Co.","Leather","Goods"],"space_cosmic":["Labs","Optics","Games","Systems"],"heritage_vintage":["& Sons","Trading Co.","Mercantile","Supply Co."],"energy_power":["Energy","Power","Electric","Solar"],"fashion_style":["Atelier","Boutique","Label","Studio"],"health_wellness":["Wellness","Nutrition","Skin","Health"],"adventure_outdoor":["Outdoor","Outfitters","Expeditions","Gear"],"home_living":["Home","Interiors","Living","Linen"],"entertainment_media":["Media","Studios","Records","Pictures"]}}}</script>
     <script src="../lib/recipe-engine.js"></script>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

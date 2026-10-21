@@ -289,243 +289,204 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        <a href="../categories/concepts-names.html">💭 Blog &amp; Brand Names</a>
-                        <a href="../categories/events-names.html">🎉 Event Names</a>
-                        <a href="../categories/fantasy-names.html">⚔️ Fantasy Names</a>
-                        <a href="../categories/dnd-names.html">🎲 D&amp;D Names</a>
-                        <a href="../categories/folklore-names.html">📜 Folklore Names</a>
-                        <a href="../categories/music-names.html">🎵 Music Names</a>
-                        <a href="../categories/objects-names.html">⚔️ Object Names</a>
-                        <a href="../categories/organizations-names.html">🏛️ Organisation Names</a>
-                        <a href="../categories/people-names.html">👥 Character Names</a>
-                        <a href="../categories/places-names.html">🗺️ Place Names</a>
-                        <a href="../categories/elder_scrolls-names.html">🐉 Elder Scrolls Names</a>
-                        <a href="../categories/warcraft-names.html">🪓 Warcraft Names</a>
-                        <a href="../categories/warhammer-names.html">💀 Warhammer Names</a>
-                        <a href="../categories/scifi-names.html">🚀 Sci-Fi Names</a>
-                        <a href="../categories/witch-names.html">🧙‍♀️ Witch Names</a>
-                        <a href="../categories/historical-names.html">🏺 Historical Names</a>
-                        <a href="../categories/pop_culture-names.html">🎬 Pop Culture Names</a>
-                    </div>
-                </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="m-note" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 36 V13 L35 8 V31"/><path d="M17 18 L35 13" stroke-width="3"/><ellipse cx="13" cy="36" rx="4.5" ry="3.5" fill="#1e1c18" transform="rotate(-18 13 36)"/><ellipse cx="31" cy="31" rx="4.5" ry="3.5" fill="#efc84a" transform="rotate(-18 31 31)"/></g></symbol>
+      <symbol id="m-candle" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 19 c-3 -4 0 -8 0 -12 c3 4 5 8 0 12 z" fill="#efc84a"/><path d="M19 21 h10 v21 h-10 z" fill="#fffcf4"/><path d="M19 25 c2 2 3 0 4 3 M29 24 c-1 2 -2 1 -2 4" stroke-width="1.4"/><path d="M13 43 h22"/><path d="M38 5 a6 6 0 1 0 6 8 a5 5 0 1 1 -6 -8 z"/></g></symbol>
+      <symbol id="m-bunting" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 C15 18 33 18 45 9"/><path d="M8 12 l3 10 l5 -8" fill="#efc84a"/><path d="M19 15 l3 10 l4 -10" fill="#fffcf4"/><path d="M29 15 l3 10 l4 -9" fill="#efc84a"/><path d="M39 12 l2 9 l3 -7" fill="#fffcf4"/><path d="M14 36 l2 -4 l2 4 M28 40 l3 -3 M35 33 l3 1" stroke-width="1.5"/></g></symbol>
+      <symbol id="m-guitar" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 29 c-6 0 -9 5 -7 10 c2 5 9 6 13 2 c3 -3 2 -6 4 -8 c2 -2 5 -1 7 -4 c3 -4 0 -9 -5 -9 c-4 0 -5 3 -7 5 c-2 2 -3 4 -5 4 z" fill="#fffcf4"/><circle cx="17" cy="33" r="2.6" fill="#efc84a"/><path d="M24 25 L40 9"/><path d="M38 7 l5 -3 l2 3 l-3 4 z" fill="#fffcf4"/><path d="M12 38 l6 -6" stroke-width="1.3"/></g></symbol>
+    </defs></svg>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html"><svg class="wob" viewBox="0 0 30 30" aria-hidden="true" focusable="false"><path d="M15 2 C19 8 23 12 23 17 C23 22 19 26 15 28 C11 26 7 22 7 17 C7 12 11 8 15 2 Z" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 12 V24" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round"/><circle cx="15" cy="12" r="2" fill="#1e1c18"/><path d="M4 26 C8 24 10 27 14 25" fill="none" stroke="#efc84a" stroke-width="3" stroke-linecap="round"/></svg><b>The Name Generators</b></a>
+        <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+        <nav class="site-nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="category-dropdown">Categories</button>
+              <ul class="nav-dropdown-menu" id="category-dropdown">
+              <li><a href="../categories/concepts-names.html">Blog &amp; Brand Names</a></li>
+              <li><a href="../categories/events-names.html">Event Names</a></li>
+              <li><a href="../categories/fantasy-names.html">Fantasy Names</a></li>
+              <li><a href="../categories/dnd-names.html">D&amp;D Names</a></li>
+              <li><a href="../categories/folklore-names.html">Folklore Names</a></li>
+              <li><a href="../categories/music-names.html">Music Names</a></li>
+              <li><a href="../categories/objects-names.html">Object Names</a></li>
+              <li><a href="../categories/organizations-names.html">Organisation Names</a></li>
+              <li><a href="../categories/people-names.html">Character Names</a></li>
+              <li><a href="../categories/places-names.html">Place Names</a></li>
+              <li><a href="../categories/elder_scrolls-names.html">Elder Scrolls Names</a></li>
+              <li><a href="../categories/warcraft-names.html">Warcraft Names</a></li>
+              <li><a href="../categories/warhammer-names.html">Warhammer Names</a></li>
+              <li><a href="../categories/scifi-names.html">Sci-Fi Names</a></li>
+              <li><a href="../categories/witch-names.html">Witch Names</a></li>
+              <li><a href="../categories/historical-names.html">Historical Names</a></li>
+              <li><a href="../categories/pop_culture-names.html">Pop Culture Names</a></li>
+              </ul>
+            </li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap"><svg class="hrule wob" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M1 5 C40 3 80 7 130 5 S220 3 270 6 S350 4 399 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>
+    </header>
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../categories/music-names.html">Music</a> / <span aria-current="page">Podcast Name Generator</span></nav>
+            <div class="titlerow">
+                <h1><span class="hl">Podcast</span> Name Generator</h1>
+                <svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-note"/></svg>
             </div>
-        </div>
-    </nav>
+            <p class="lede">Podcast names with personality: a mood and a format, or a phrase that sounds like the hosts.</p>
 
-    <div class="container">
-        <header class="blog-hero">
-            <h1>🎙️ Podcast Name Generator</h1>
-            <p class="tagline">Podcast names with personality: a mood and a format, or a phrase that sounds like the hosts.</p>
+            <section class="sheet hd simple-generator" id="generator" aria-label="Podcast Name Generator">
+                
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="true">
+                    <p class="results-empty">Press Generate Names for 8 podcast names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
+                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
             <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-10-20">20 October 2026</time></p>
-        </header>
 
-        <main>
-            <section class="embedded-generator">
-                <div class="generator-card">
-                    <h2>Generate Podcast Names</h2>
-                    <p class="generator-description">Podcast names that say what the show is like: an adjective and a format (The Curious Hour), or a phrase with personality, plus how to check a name is free.</p>
+            <section class="section example-names">
+                <h2>Example Podcast Names</h2>
+                <p class="sub">A few names this generator came up with. Tap one to copy it, or press "Generate Names" above for more.</p>
+                <div class="ex">
+                <div class="exbox hd">
                     
-                    <div class="simple-generator">
-                        
-                        <div class="generator-controls">
-                            <div class="filter-group count-group">
-                                <label for="name-count">How many:</label>
-                                <select id="name-count">
-                                    <option value="8" selected>8 names</option>
-                                    <option value="16">16 names</option>
-                                    <option value="32">32 names</option>
-                                </select>
-                            </div>
-                            <button id="generate-btn" class="generate-button">Generate Names</button>
-                        </div>
-                        <div class="results-area" id="results">
-                            <p class="results-placeholder">Click "Generate Names" to see results</p>
-                        </div>
-                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
-                        <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
-                    </div>
-                    
-                    <div class="cta-box">
-                        <p><strong>Need more options?</strong></p>
-                        <a href="../index.html" class="cta-button">Try the Ultimate Random Name Generator →</a>
-                    </div>
+                    <ul>
+                        <li>The Wandering Bulletin</li>
+                        <li>Too Many Questions</li>
+                        <li>Three Cups In</li>
+                        <li>The Small Club</li>
+                        <li>Unscripted Files</li>
+                        <li>The Midnight Exchange</li>
+                        <li>Worth a Listen</li>
+                        <li>Not That Kind of Show</li>
+                        <li>Sunday Diaries</li>
+                        <li>The Big Briefing</li>
+                        <li>Tea and Tangents</li>
+                        <li>The Brief Radio</li>
+                        <li>The Friday Notes</li>
+                        <li>Brain Snacks</li>
+                        <li>The Second Corner</li>
+                        <li>The Slow Workshop</li>
+                        <li>The Curious Table</li>
+                        <li>The Cosy Break</li>
+                        <li>The Thinking Sessions</li>
+                        <li>The Honest Roundtable</li>
+                        <li>Deep Tangents</li>
+                        <li>Not Quite Experts</li>
+                        <li>The Talking Kitchen</li>
+                        <li>Quiet Questions</li>
+                    </ul>
+                </div>
                 </div>
             </section>
 
-            <section class="example-names">
-                <h2>Example Podcast Names</h2>
-                <p>A few names this generator came up with. Press "Generate Names" above for more.</p>
-                <ul class="name-results">
-                    <li>The Wandering Bulletin</li>
-                    <li>Too Many Questions</li>
-                    <li>Three Cups In</li>
-                    <li>The Small Club</li>
-                    <li>Unscripted Files</li>
-                    <li>The Midnight Exchange</li>
-                    <li>Worth a Listen</li>
-                    <li>Not That Kind of Show</li>
-                    <li>Sunday Diaries</li>
-                    <li>The Big Briefing</li>
-                    <li>Tea and Tangents</li>
-                    <li>The Brief Radio</li>
-                    <li>The Friday Notes</li>
-                    <li>Brain Snacks</li>
-                    <li>The Second Corner</li>
-                    <li>The Slow Workshop</li>
-                    <li>The Curious Table</li>
-                    <li>The Cosy Break</li>
-                    <li>The Thinking Sessions</li>
-                    <li>The Honest Roundtable</li>
-                    <li>Deep Tangents</li>
-                    <li>Not Quite Experts</li>
-                    <li>The Talking Kitchen</li>
-                    <li>Quiet Questions</li>
-                </ul>
-            </section>
-
-            <section class="blog-content how-it-works">
+            <section class="section how-it-works">
                 <h2>How the Podcast Name Generator Works</h2>
+                <div class="howto hd">
                 <p>It works from 101 names and name parts, which combine into over 4,500 possible results.</p>
-                <p>Each press gives you 8, 16 or 32 names (choose under "How many"), and you won't see the same one twice until you've been through everything for the choices you've made.</p>
+                <p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet, until the names for the choices you've made run out.</p>
+                </div>
             </section>
 
-            <article class="blog-content" itemscope itemtype="https://schema.org/Article">
+            <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="Podcast Name Generator">
                 <meta itemprop="description" content="Podcast names that say what the show is like: an adjective and a format (The Curious Hour), or a phrase with personality, plus how to check a name is free.">
-                <section itemprop="articleBody">
-                    <p>A podcast name has two jobs: tell people roughly what they'll hear, and sound like the people making it. This <strong>podcast name generator</strong> mixes the two most common shapes, an adjective and a format (The Curious Hour, Late Notes) and a phrase with personality, to give you a starting point.</p>
-                </section>
+                <div itemprop="articleBody">
+                <p class="big">A podcast name has two jobs: tell people roughly what they'll hear, and sound like the people making it. This <strong>podcast name generator</strong> mixes the two most common shapes, an adjective and a format (The Curious Hour, Late Notes) and a phrase with personality, to give you a starting point.</p>
                 
-      <section>
-        <h2>What makes a podcast name work</h2>
-        <ul><li><strong>Say what it is, or how it feels.</strong> Listeners scroll fast. A name that hints at the topic or the tone gets the click.</li><li><strong>Add the topic as a subtitle.</strong> Many shows pair a short, memorable name with a descriptive subtitle in the podcast app.</li><li><strong>Keep it short enough to say.</strong> Word of mouth is how most podcasts grow, so people need to remember the name after hearing it once.</li></ul>
-      </section>
-    
+                <h2>What makes a podcast name work</h2>
+                <ul><li><strong>Say what it is, or how it feels.</strong> Listeners scroll fast. A name that hints at the topic or the tone gets the click.</li><li><strong>Add the topic as a subtitle.</strong> Many shows pair a short, memorable name with a descriptive subtitle in the podcast app.</li><li><strong>Keep it short enough to say.</strong> Word of mouth is how most podcasts grow, so people need to remember the name after hearing it once.</li></ul>
 
-      <section>
-        <h2>Check it's free</h2>
-        <p>Search Apple Podcasts and Spotify for the exact name, then check social handles and a domain. Plenty of shows share a name, which makes both harder to find. If yours is taken, add a word or a subtitle to make it your own.</p><p>Starting a YouTube channel or a blog alongside it? Try the <a href="blog-name-generator.html">Blog Name Generator</a>.</p>
-      </section>
-    
+                <h2>Check it's free</h2>
+                <p>Search Apple Podcasts and Spotify for the exact name, then check social handles and a domain. Plenty of shows share a name, which makes both harder to find. If yours is taken, add a word or a subtitle to make it your own.</p><p>Starting a YouTube channel or a blog alongside it? Try the <a href="blog-name-generator.html">Blog Name Generator</a>.</p>
+                </div>
             </article>
 
-            
-      <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-          
-            <div class="faq-item">
-              <h3 class="faq-question">How do I name my podcast?</h3>
-              <p class="faq-answer">Pick a short name that hints at the topic or the tone, add a descriptive subtitle in the podcast apps, and check the name isn't already taken on Apple Podcasts and Spotify.</p>
-            </div>
-          
-          
-            <div class="faq-item">
-              <h3 class="faq-question">Can I use these names for my podcast?</h3>
-              <p class="faq-answer">Yes, free and with no credit needed. Search the podcast apps first so you don't share a name with an existing show.</p>
-            </div>
-          
-        </div>
-      </section>
-            
-      <section class="related-section">
-        <h2>Related Name Generators</h2>
-        <div class="related-grid" id="related-generators">
-          <a href="../posts/dungeon-synth-name-generator.html" class="related-card">
-            <h3>🎵 Dungeon Synth Name Generator</h3>
-            <p>Names for dungeon synth projects and albums in four styles: dark and medieval, nature and fantasy, cosy comfy synth, and cosmic.</p>
-          </a>
-          <a href="../posts/event-name-generator.html" class="related-card">
-            <h3>🎉 Event Name Generator</h3>
-            <p>Names for parties, festivals, gigs, fundraisers, tournaments, quiz nights, hen and stag dos and work events, plus how to check a name is free before you announce it.</p>
-          </a>
-          <a href="../posts/album-name-generator.html" class="related-card">
-            <h3>💿 Album Name Generator</h3>
-            <p>Album titles in the shapes real albums use: a mood and an object, a place, a number, a dedication, with tips on choosing one that fits the record.</p>
-          </a>
-          <a href="../posts/band-name-generator.html" class="related-card">
-            <h3>🎸 Band Name Generator</h3>
-            <p>Band names by genre, from rock and metal to indie, folk, punk and electronic, with the patterns real bands use and how to check a name isn&#039;t already taken.</p>
-          </a>
-          <a href="../posts/dj-name-generator.html" class="related-card">
-            <h3>🎧 DJ Name Generator</h3>
-            <p>DJ names for house, techno, drum and bass and beyond: a striking single name, a two-word alias, or the classic DJ prefix, with tips on choosing one that works on a flyer.</p>
-          </a>
-          <a href="../posts/rapper-name-generator.html" class="related-card">
-            <h3>🎤 Rapper Name Generator</h3>
-            <p>Rap names in the classic shapes, from Lil and Young to MC, one-word names and stylised spellings, with the stories behind famous rap names.</p>
-          </a>
-        </div>
-      </section>
-            
-      <section class="category-generators-section">
-        <h2>All Music Name Generators</h2>
-        <div class="category-generators-grid" id="category-generators">
-          <a href="../posts/band-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🎸</span>
-            <span class="category-generator-title">Band Name Generator</span>
-          </a>
-          <a href="../posts/dungeon-synth-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🎵</span>
-            <span class="category-generator-title">Dungeon Synth Name Generator</span>
-          </a>
-          <a href="../posts/event-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🎉</span>
-            <span class="category-generator-title">Event Name Generator</span>
-          </a>
-          <a href="../posts/album-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">💿</span>
-            <span class="category-generator-title">Album Name Generator</span>
-          </a>
-          <a href="../posts/song-title-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🎵</span>
-            <span class="category-generator-title">Song Title Generator</span>
-          </a>
-          <a href="../posts/rapper-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🎤</span>
-            <span class="category-generator-title">Rapper Name Generator</span>
-          </a>
-          <a href="../posts/stage-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🎭</span>
-            <span class="category-generator-title">Stage Name Generator</span>
-          </a>
-          <a href="../posts/wu-tang-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🐝</span>
-            <span class="category-generator-title">Wu-Tang Name Generator</span>
-          </a>
-          <a href="../posts/dj-name-generator.html" class="category-generator-item">
-            <span class="category-generator-icon">🎧</span>
-            <span class="category-generator-title">DJ Name Generator</span>
-          </a>
-        </div>
-      </section>
-        </main>
+            <section class="section faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>How do I name my podcast?</summary>
+                        <div>Pick a short name that hints at the topic or the tone, add a descriptive subtitle in the podcast apps, and check the name isn't already taken on Apple Podcasts and Spotify.</div>
+                    </details>
+                    <details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>Can I use these names for my podcast?</summary>
+                        <div>Yes, free and with no credit needed. Search the podcast apps first so you don't share a name with an existing show.</div>
+                    </details>
+                </div>
+            </section>
 
-        <footer class="site-footer">
-            <p>&copy; 2026 The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+            <section class="section related-section">
+                <h2>Related Name Generators</h2>
+                <div class="genlist" id="related-generators">
+                    <a href="../posts/dungeon-synth-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-candle"/></svg><div><b>Dungeon Synth Name Generator</b><span>Names for dungeon synth projects and albums in four styles: dark and medieval, nature and fantasy, cosy comfy synth, and cosmic.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/event-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-bunting"/></svg><div><b>Event Name Generator</b><span>Names for parties, festivals, gigs, fundraisers, tournaments, quiz nights, hen and stag dos and work events, plus how to check a name is free before you announce it.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/album-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-note"/></svg><div><b>Album Name Generator</b><span>Album titles in the shapes real albums use: a mood and an object, a place, a number, a dedication, with tips on choosing one that fits the record.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/band-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-guitar"/></svg><div><b>Band Name Generator</b><span>Band names by genre, from rock and metal to indie, folk, punk and electronic, with the patterns real bands use and how to check a name isn&#039;t already taken.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/dj-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-note"/></svg><div><b>DJ Name Generator</b><span>DJ names for house, techno, drum and bass and beyond: a striking single name, a two-word alias, or the classic DJ prefix, with tips on choosing one that works on a flyer.</span></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/rapper-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-note"/></svg><div><b>Rapper Name Generator</b><span>Rap names in the classic shapes, from Lil and Young to MC, one-word names and stylised spellings, with the stories behind famous rap names.</span></div><em aria-hidden="true">→</em></a>
+                </div>
+            </section>
+
+            <section class="section category-generators-section">
+                <h2>More Music Name Generators</h2>
+                <div class="genlist compact" id="category-generators">
+                    <a href="../posts/band-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-guitar"/></svg><div><b>Band Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/dungeon-synth-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-candle"/></svg><div><b>Dungeon Synth Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/event-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-bunting"/></svg><div><b>Event Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/album-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-note"/></svg><div><b>Album Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/song-title-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-note"/></svg><div><b>Song Title Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/rapper-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-note"/></svg><div><b>Rapper Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/stage-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-note"/></svg><div><b>Stage Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/wu-tang-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-note"/></svg><div><b>Wu-Tang Name Generator</b></div><em aria-hidden="true">→</em></a>
+                    <a href="../posts/dj-name-generator.html" class="gencard hd tap"><svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-note"/></svg><div><b>DJ Name Generator</b></div><em aria-hidden="true">→</em></a>
+                </div>
+                <p class="all-link"><a href="../categories/music-names.html">All Music name generators</a></p>
+            </section>
+            <p class="usage-note">Free to use, no credit needed. If you&#039;re naming a business, brand, band or product, check the name isn&#039;t already taken or trademarked first.</p>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="current-year">2026</span> The Name Generators · <a href="../about.html">About</a> · <a href="../all-generators.html">All generators</a> · <a href="../sitemap.html">Site map</a></p>
+      </div>
+    </footer>
 
     <script type="application/json" id="generator-config">{"title":"Podcast Name Generator","slug":"podcast-name-generator","filters":{},"recipe":"template","template":["The [adj] [nouns]","[adj] [nouns]","[phrases]","The [adj] [nouns]"],"data":{"adj":["Talking","Thinking","Late","Quiet","Curious","Deep","Loud","Honest","Brief","Slow","Weekly","Unscripted","Odd","Midnight","Second","Small","Big","Kitchen","Back Room","Long","Sunday","Rainy","Cosy","Messy","Tiny","Nerdy","Wandering","Restless","Lazy","Bright","Nosy","Tangent","Daily","Friday","Gentle"],"nouns":["Hour","Minutes","Table","Room","Notes","Questions","Conversations","Club","Hours","Thoughts","Files","Stories","Hangout","Podcast","Break","Sessions","Show","Chats","Debrief","Fireside","Corner","Couch","Report","Radio","Diaries","Debate","Detour","Digest","Exchange","Lounge","Tangents","Huddle","Campfire","Kitchen","Studio","Bulletin","Briefing","Roundtable","Workshop","Almanac","Dispatch","Notebook","Parlour"],"phrases":["Too Many Questions","Not That Kind of Show","The Long Way Round","Just Asking","Worth a Listen","Half Past Something","Brain Snacks","Plain Speaking","The Waiting Room","Cold Tea","Tea and Tangents","The Long Pause","Not Quite Experts","Pass the Mic","Seat at the Table","Chasing Tangents","The Tuesday Thing","Somewhat Informed","Three Cups In","Half Listening","Ask Me Later","The Second Draft","Wrong but Fun"]}}</script>
     <script src="../lib/recipe-engine.js"></script>
     <script src="../lib/page.js"></script>
+    <script src="../lib/outline.js"></script>
 </body>
 </html>

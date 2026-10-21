@@ -17,6 +17,7 @@ const { execFileSync } = require('child_process');
 const { loadContent, validate, withCounts, countNames, countCombinations } = require('./content');
 const { filtersHtml, optionLabel } = require('../lib/page.js');
 const RecipeEngine = require('../lib/recipe-engine.js');
+const layout = require('./layout');
 
 const ROOT = path.join(__dirname, '..');
 const POSTS_DIR = path.join(ROOT, 'posts');
@@ -80,11 +81,9 @@ function runtimeConfig(gen) {
   return config;
 }
 
-/** Category links for the nav dropdown. `prefix` is "../" from subfolders. */
+/** Category links for the menu. `prefix` is "../" from subfolders. */
 function navDropdownHtml(categories, prefix) {
-  return categories.map(cat =>
-    `<a href="${prefix}categories/${cat.slug}-names.html">${cat.icon} ${escapeHtml(cat.navLabel)}</a>`
-  ).join('\n                        ');
+  return layout.categoryLinks(categories, prefix);
 }
 
 const SITE_NAME = 'The Name Generators';
@@ -218,10 +217,12 @@ function howItWorksHtml(generator) {
     const [a, b] = generator.inputs.map(k => filters[k].example || filters[k].default || '');
     const sample = engine.generate(defaults, 3).join(', ');
     return `
-            <section class="blog-content how-it-works">
+            <section class="section how-it-works">
                 <h2>How the ${escapeHtml(generator.title)} Works</h2>
+                <div class="howto hd">
                 <p>Type two names and it joins the start of one to the end of the other, at points where the join reads naturally: a vowel meeting a consonant, with a vowel kept on each side. It skips results that just repeat one of the names, keeps the best-sounding ten (closest to the names' average length), and gives them to you in a random order. Very short names are also simply joined end to end.</p>
                 <p>For example, ${escapeHtml(a)} and ${escapeHtml(b)} give ${escapeHtml(sample)}. Only the first word of each box is used.</p>
+                </div>
             </section>`;
   }
 
@@ -269,12 +270,14 @@ function howItWorksHtml(generator) {
     }
   });
   if (choices.length) parts.push(`<p>The choices:</p>\n                <ul>${choices.join('')}</ul>`);
-  parts.push(`<p>Each press gives you 8, 16 or 32 names (choose under "How many"), and you won't see the same one twice until you've been through everything for the choices you've made.</p>`);
+  parts.push(`<p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet, until the names for the choices you've made run out.</p>`);
 
   return `
-            <section class="blog-content how-it-works">
+            <section class="section how-it-works">
                 <h2>How the ${escapeHtml(generator.title)} Works</h2>
+                <div class="howto hd">
                 ${parts.join('\n                ')}
+                </div>
             </section>`;
 }
 
@@ -396,64 +399,65 @@ function generateGeneratorPage(generator, category, site) {
     `<script type="application/ld+json">\n${JSON.stringify(s, null, 2).replace(/</g, '\\u003c')}\n</script>`
   ).join('\n    ');
 
-  // Filters (dropdowns and text boxes) come straight from the generator file
-  const filterHTML = Object.keys(generator.filters || {}).length
-    ? `<div class="filters">${filtersHtml(generator.filters, 'filter-group')}</div>`
+  // The generator's controls: option buttons, dropdowns and text boxes
+  // Two or more groups of options sit side by side on desktop
+  const filterCount = Object.keys(generator.filters || {}).length;
+  const filterHTML = filterCount
+    ? `<div class="${filterCount > 1 ? 'gen-grid' : 'gen-one'}">${filtersHtml(generator.filters, { prefill: generator.recipe === 'blend' })}</div>`
     : '';
 
-  const relatedHTML = `
-      <section class="related-section">
-        <h2>Related Name Generators</h2>
-        <div class="related-grid" id="related-generators">
-          ${site.related(generator).map(gen =>
-            `<a href="../posts/${gen.slug}.html" class="related-card">
-            <h3>${gen.icon} ${escapeHtml(gen.title)}</h3>
-            <p>${escapeHtml(gen.description)}</p>
-          </a>`).join('\n          ') || '<p>No related generators found.</p>'}
-        </div>
-      </section>`;
+  // Drawings: this generator's own, and one for each linked generator
+  const motif = layout.generatorMotif(generator, category);
+  const motifs = [motif];
+  const catOf = (gen) => site.categories.find(c => c.slug === gen.category);
+  const genCard = (gen, { desc = true } = {}) => {
+    const m = layout.generatorMotif(gen, catOf(gen));
+    motifs.push(m);
+    return `<a href="../posts/${gen.slug}.html" class="gencard hd tap">${layout.doodle(m)}<div><b>${escapeHtml(gen.title)}</b>${desc ? `<span>${escapeHtml(gen.description)}</span>` : ''}</div><em aria-hidden="true">→</em></a>`;
+  };
+
+  const related = site.related(generator);
+  const relatedHTML = related.length ? `
+            <section class="section related-section">
+                <h2>Related Name Generators</h2>
+                <div class="genlist" id="related-generators">
+                    ${related.map(gen => genCard(gen)).join('\n                    ')}
+                </div>
+            </section>` : '';
 
   const sameCategory = site.inCategory(category.slug).filter(gen => gen.key !== generator.key);
-  const categoryGeneratorsHTML = `
-      <section class="category-generators-section">
-        <h2>All ${escapeHtml(category.name)} Name Generators</h2>
-        <div class="category-generators-grid" id="category-generators">
-          ${sameCategory.map(gen =>
-            `<a href="../posts/${gen.slug}.html" class="category-generator-item">
-            <span class="category-generator-icon">${gen.icon}</span>
-            <span class="category-generator-title">${escapeHtml(gen.title)}</span>
-          </a>`).join('\n          ') || '<p>No other generators in this category.</p>'}
-        </div>
-      </section>`;
+  const categoryGeneratorsHTML = sameCategory.length ? `
+            <section class="section category-generators-section">
+                <h2>More ${escapeHtml(category.name)} Name Generators</h2>
+                <div class="genlist compact" id="category-generators">
+                    ${sameCategory.map(gen => genCard(gen, { desc: false })).join('\n                    ')}
+                </div>
+                <p class="all-link"><a href="../categories/${category.slug}-names.html">All ${escapeHtml(category.name)} name generators</a></p>
+            </section>` : '';
 
-  // Build article sections HTML
+  // Article sections (headings and content are trusted HTML from content/)
   let sectionsHTML = '';
   if (generator.article && generator.article.sections) {
     sectionsHTML = generator.article.sections.map(section => `
-      <section>
-        <h2>${section.heading}</h2>
-        ${markdownBold(section.content)}
-      </section>
-    `).join('\n');
+                <h2>${section.heading}</h2>
+                ${markdownBold(section.content)}`).join('\n');
   }
 
-  // Build FAQs HTML
+  // FAQs: tap a question to open its answer. Answers stay in the HTML for
+  // search engines, and the FAQPage schema is built from the same text.
   let faqsHTML = '';
-  if (generator.article && generator.article.faqs) {
+  if (generator.article && generator.article.faqs && generator.article.faqs.length) {
     faqsHTML = `
-      <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-          ${generator.article.faqs.map(faq => `
-            <div class="faq-item">
-              <h3 class="faq-question">${faq.question}</h3>
-              <p class="faq-answer">${markdownBold(faq.answer)}</p>
-            </div>
-          `).join('\n          ')}
-        </div>
-      </section>`;
+            <section class="section faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    ${generator.article.faqs.map(faq => `<details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>${faq.question}</summary>
+                        <div>${markdownBold(faq.answer)}</div>
+                    </details>`).join('\n                    ')}
+                </div>
+            </section>`;
   }
-
   // Generate SEO-optimized title
   const seoTitle = generateSEOTitle(generator);
   const baseUrl = "https://thenamegenerators.com";
@@ -475,18 +479,26 @@ function generateGeneratorPage(generator, category, site) {
   const escGenDesc = escapeHtml(generator.description);
   const escTopic = escapeHtml(generator.title.replace(' Generator', ''));
   const escCategoryName = escapeHtml(category.name);
-  const escHeroTitle = escapeHtml(generator.article.hero.title);
+  const heroTitle = layout.stripEmoji(generator.article.hero.title) || generator.title;
   const escHeroTagline = escapeHtml(generator.article.hero.tagline);
   const escNoun = escapeHtml(pluralNoun(generator));
 
+  // Long names (Roman, spaceships, taverns...) read better one per row on phones
+  const exampleList = examples.flatMap(g => g.names);
+  const longNames = exampleList.length && exampleList.reduce((n, x) => n + x.length, 0) / exampleList.length > 16;
+
   const examplesHTML = `
-            <section class="example-names">
+            <section class="section example-names">
                 <h2>Example ${escNoun}</h2>
-                <p>A few names this generator came up with. Press "Generate Names" above for more.</p>
-                ${examples.map(group => `${group.label ? `<h3>${escapeHtml(group.label)}</h3>
-                ` : ''}<ul class="name-results">
-                    ${group.names.map(n => `<li>${escapeHtml(n)}</li>`).join('\n                    ')}
-                </ul>`).join('\n                ')}
+                <p class="sub">A few names this generator came up with. Tap one to copy it, or press "Generate Names" above for more.</p>
+                <div class="ex">
+                ${examples.map(group => `<div class="exbox hd">
+                    ${group.label ? `<h3>${escapeHtml(group.label)}</h3>` : ''}
+                    <ul>
+                        ${group.names.map(n => `<li>${escapeHtml(n)}</li>`).join('\n                        ')}
+                    </ul>
+                </div>`).join('\n                ')}
+                </div>
             </section>`;
 
   const html = `<!DOCTYPE html>
@@ -549,95 +561,65 @@ function generateGeneratorPage(generator, category, site) {
     ${schemaScripts}
     
     ${ICON_LINKS}
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    ${layout.headAssets('../')}
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        ${site.navHtml('../')}
-                    </div>
-                </div>
+    ${layout.svgSprite(motifs)}
+    ${layout.siteHeader('../', site.categories)}
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../categories/${category.slug}-names.html">${escapeHtml(category.name)}</a> / <span aria-current="page">${escGenTitle}</span></nav>
+            <div class="titlerow">
+                <h1>${layout.highlightFirstWord(heroTitle)}</h1>
+                ${layout.doodle(motif)}
             </div>
-        </div>
-    </nav>
+            <p class="lede">${escHeroTagline}</p>
 
-    <div class="container">
-        <header class="blog-hero">
-            <h1>${escHeroTitle}</h1>
-            <p class="tagline">${escHeroTagline}</p>
-            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="${generator.updated}">${longDate(generator.updated)}</time></p>
-        </header>
-
-        <main>
-            <section class="embedded-generator">
-                <div class="generator-card">
-                    <h2>Generate ${escNoun}</h2>
-                    <p class="generator-description">${escGenDesc}</p>
-                    
-                    <div class="simple-generator">
-                        ${filterHTML}
-                        <div class="generator-controls">
-                            <div class="filter-group count-group">
-                                <label for="name-count">How many:</label>
-                                <select id="name-count">
-                                    <option value="8" selected>8 names</option>
-                                    <option value="16">16 names</option>
-                                    <option value="32">32 names</option>
-                                </select>
-                            </div>
-                            <button id="generate-btn" class="generate-button">Generate Names</button>
-                        </div>
-                        <div class="results-area" id="results">
-                            <p class="results-placeholder">Click "Generate Names" to see results</p>
-                        </div>
-                        <aside class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></aside>
-                        <p class="usage-note">${escapeHtml(USAGE_NOTE)}</p>
-                    </div>
-                    
-                    <div class="cta-box">
-                        <p><strong>Need more options?</strong></p>
-                        <a href="../index.html" class="cta-button">Try the Ultimate Random Name Generator →</a>
+            <section class="sheet hd simple-generator" id="generator" aria-label="${escGenTitle}">
+                ${filterHTML}
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="${longNames ? 'true' : 'false'}">
+                    <p class="results-empty">Press Generate Names for 8 ${escNoun.toLowerCase()}.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
                     </div>
                 </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
             </section>
+            <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="${generator.updated}">${longDate(generator.updated)}</time></p>
 ${examplesHTML}
 ${howItWorksHtml(generator)}
 
-            <article class="blog-content" itemscope itemtype="https://schema.org/Article">
+            <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="${escGenTitle}">
                 <meta itemprop="description" content="${escGenDesc}">
-                <section itemprop="articleBody">
-                    <p>${markdownBold(generator.article.intro)}</p>
-                </section>
+                <div itemprop="articleBody">
+                <p class="big">${markdownBold(generator.article.intro)}</p>
                 ${sectionsHTML}
+                </div>
             </article>
-
-            ${faqsHTML}
-            ${relatedHTML}
-            ${categoryGeneratorsHTML}
+${faqsHTML}
+${relatedHTML}
+${categoryGeneratorsHTML}
+            <p class="usage-note">${escapeHtml(USAGE_NOTE)}</p>
         </main>
-
-        <footer class="site-footer">
-            <p>&copy; ${new Date().getFullYear()} The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
 
+    ${layout.siteFooter('../')}
+
     <script type="application/json" id="generator-config">${scriptJson(runtimeConfig(generator))}</script>
-    <script src="../lib/recipe-engine.js"></script>
-    <script src="../lib/page.js"></script>
+    ${layout.bodyScripts('../', { engine: true })}
 </body>
 </html>`;
 
@@ -650,27 +632,23 @@ ${howItWorksHtml(generator)}
 function generateCategoryPage(category, site) {
   const categorySlug = category.slug;
   const generators = site.inCategory(categorySlug);
+  const catOf = (gen) => site.categories.find(c => c.slug === gen.category);
+  const mark = layout.categoryMotif(category);
+  const motifs = [mark];
 
   // "Where to start": a few of the category's best generators, with a line on each
   const featured = (category.featured || []).map(f => {
     const gen = generators.find(g => g.key === f.key);
-    return `<li><a href="../posts/${gen.slug}.html">${gen.icon} ${escapeHtml(gen.title)}</a>: ${f.note}</li>`;
+    const m = layout.generatorMotif(gen, catOf(gen));
+    motifs.push(m);
+    return `<a href="../posts/${gen.slug}.html" class="feat hd tap">${layout.doodle(m)}<b>${escapeHtml(gen.title)}</b><span>${f.note.charAt(0).toUpperCase() + f.note.slice(1)}</span><span class="open hd" aria-hidden="true">Open →</span></a>`;
   }).join('\n                    ');
-  const introHTML = category.intro ? `
-        <section class="blog-content category-intro">
-            ${category.intro}
-            ${featured ? `<h2>Where to start</h2>
-                <ul class="featured-generators">
-                    ${featured}
-                </ul>` : ''}
-        </section>` : '';
 
-  const generatorsHTML = generators.map(gen => `
-    <a href="../posts/${gen.slug}.html" class="generator-card">
-      <h3>${gen.icon} ${escapeHtml(gen.title)}</h3>
-      <p>${escapeHtml(gen.description)}</p>
-    </a>
-  `).join('\n    ');
+  const generatorsHTML = generators.map(gen => {
+    const m = layout.generatorMotif(gen, catOf(gen));
+    motifs.push(m);
+    return `<a href="../posts/${gen.slug}.html" class="gencard hd tap">${layout.doodle(m)}<div><b>${escapeHtml(gen.title)}</b><span>${escapeHtml(gen.description)}</span></div><em aria-hidden="true">→</em></a>`;
+  }).join('\n                    ');
 
   // Generate SEO-optimized category title
   const baseUrl = "https://thenamegenerators.com";
@@ -747,52 +725,44 @@ ${scriptJson({
     <meta property="twitter:image" content="${categoryImageUrl}">
     
     ${ICON_LINKS}
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blog.css">
+    ${layout.headAssets('../')}
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        ${site.navHtml('../')}
-                    </div>
+    ${layout.svgSprite(motifs)}
+    ${layout.siteHeader('../', site.categories)}
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <span aria-current="page">${escCatName}</span></nav>
+            <div class="titlerow">
+                <h1>${layout.highlightFirstWord(category.navLabel.replace(/Names$/, 'Name Generators'))}</h1>
+                ${layout.doodle(mark)}
+            </div>
+            <p class="lede">${escCatDescription}</p>
+${category.intro ? `
+            <div class="section intro">
+                ${category.intro}
+            </div>` : ''}
+${featured ? `
+            <section class="section">
+                <h2>Where to start</h2>
+                <div class="featured">
+                    ${featured}
                 </div>
-            </div>
-        </div>
-    </nav>
+            </section>` : ''}
 
-    <div class="container">
-        <header class="hero">
-            <h1>${category.icon} ${escapeHtml(category.heading || category.name)}</h1>
-            <p>${escCatDescription}</p>
-            <p class="generator-count">${generators.length} generator${generators.length !== 1 ? 's' : ''} available</p>
-        </header>
-
-        <main>
-${introHTML}
-            ${generators.length ? `<h2 class="category-all-heading">All ${generators.length} ${escCatName} generators</h2>` : ''}
-            <div class="generators-grid">
-                ${generatorsHTML}
-            </div>
+            <section class="section">
+                <h2>All ${generators.length} ${escCatName} generator${generators.length !== 1 ? 's' : ''}</h2>
+                <div class="genlist">
+                    ${generatorsHTML}
+                </div>
+            </section>
         </main>
-
-        <footer class="site-footer">
-            <p>&copy; ${new Date().getFullYear()} The Name Generators. All rights reserved. | <a href="../sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="../about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
+        <aside class="side" aria-label="Sidebar"></aside>
     </div>
 
-    <script src="../lib/page.js"></script>
+    ${layout.siteFooter('../')}
+    ${layout.bodyScripts('../')}
 </body>
 </html>`;
 
@@ -874,59 +844,50 @@ function fillMarkers(file, sections) {
 }
 
 function updateStaticPages(site) {
-  const nav = site.navHtml('');
+  const catOf = (gen) => site.categories.find(c => c.slug === gen.category);
+  const header = layout.siteHeader('', site.categories);
+  const footer = layout.siteFooter('');
 
-  const categoryCards = site.categories.map(cat => `            <a href="categories/${cat.slug}-names.html" class="category-card">
-                <span class="category-icon">${cat.icon}</span>
-                <h3>${escapeHtml(cat.name)}</h3>
-                <p>${escapeHtml(cat.description)}</p>
-                <div class="pillar-count">${cat.generators.length} Generator${cat.generators.length !== 1 ? 's' : ''}</div>
-            </a>`).join('\n');
+  const homeCats = site.categories.filter(cat => cat.generators.length);
+  const categoryCards = homeCats.map(cat => `            <a href="categories/${cat.slug}-names.html" class="cat hd tap">${layout.doodle(layout.categoryMotif(cat))}<div><b>${escapeHtml(cat.name)}</b><span>${cat.generators.length} generator${cat.generators.length !== 1 ? 's' : ''}</span></div><em aria-hidden="true">→</em></a>`).join('\n');
 
-  const popularCards = site.popular().slice(0, 20).map(gen => {
-    const cat = site.categories.find(c => c.slug === gen.category);
-    return `            <a href="posts/${gen.slug}.html" class="popular-generator-card">
-                <span class="generator-icon">${gen.icon}</span>
-                <div class="generator-info">
-                    <h3>${escapeHtml(gen.title)}</h3>
-                    <p>${escapeHtml(gen.description)}</p>
-                    <span class="category-badge">${cat.icon} ${escapeHtml(cat.name)}</span>
-                </div>
-            </a>`;
-  }).join('\n');
+  const popular = site.popular().slice(0, 20);
+  const popularCards = popular.map(gen => `            <a href="posts/${gen.slug}.html" class="feat hd tap">${layout.doodle(layout.generatorMotif(gen, catOf(gen)))}<b>${escapeHtml(gen.title)}</b><span>${escapeHtml(gen.description)}</span><span class="open hd" aria-hidden="true">Open →</span></a>`).join('\n');
 
-  const categoryOptions = site.categories
-    .filter(cat => cat.generators.length)
-    .map(cat => `                                <option value="${cat.slug}">${cat.icon} ${escapeHtml(cat.name)}</option>`)
-    .join('\n');
+  // The homepage generator: one button per category, then a dropdown of its generators
+  const categoryOptions = homeCats.map((cat, i) =>
+    `                                <button type="button" class="opt hd tap" data-category="${cat.slug}" aria-pressed="${i === 0}">${escapeHtml(cat.name)}</button>`
+  ).join('\n');
 
   // What the homepage generator needs to fill its "Generator" dropdown
   const homeIndex = Object.fromEntries(site.categories.map(cat => [cat.slug,
-    cat.generators.map(k => { const g = site.all.find(x => x.key === k); return { key: k, title: g.title, icon: g.icon }; })]));
+    cat.generators.map(k => { const g = site.all.find(x => x.key === k); return { key: k, title: g.title, slug: g.slug }; })]));
+
+  const homeMotifs = [...homeCats.map(c => layout.categoryMotif(c)), ...popular.map(g => layout.generatorMotif(g, catOf(g))), 'quill'];
 
   fillMarkers('index.html', {
-    nav,
+    sprite: layout.svgSprite(homeMotifs),
+    header,
     'category-options': categoryOptions,
     'generator-index': `    <script type="application/json" id="generator-index">${scriptJson(homeIndex)}</script>`,
     categories: categoryCards,
     popular: popularCards,
+    footer,
   });
 
   // All generators, A to Z; the search box filters these links in place
   const sorted = [...site.all].sort((a, b) =>
     a.title.replace(/[^\w\s]/g, '').trim().toLowerCase().localeCompare(b.title.replace(/[^\w\s]/g, '').trim().toLowerCase()));
-  const allList = `                <div class="category-generators-grid">
-${sorted.map(gen => {
+  const allMotifs = sorted.map(g => layout.generatorMotif(g, catOf(g)));
+  const allList = `                <div class="genlist compact" id="generators-list">
+${sorted.map((gen, i) => {
     const search = [gen.title, gen.description, gen.seoKeywords || '',
       ...(site.categoriesOf[gen.key] || []).map(slug => site.categories.find(c => c.slug === slug).name)].join(' ').toLowerCase();
-    return `                    <a href="posts/${gen.slug}.html" class="category-generator-item" data-search="${escapeHtml(search)}">
-                        <span class="category-generator-icon">${gen.icon}</span>
-                        <span class="category-generator-title">${escapeHtml(gen.title)}</span>
-                    </a>`;
+    return `                    <a href="posts/${gen.slug}.html" class="gencard hd tap" data-search="${escapeHtml(search)}">${layout.doodle(allMotifs[i])}<div><b>${escapeHtml(gen.title)}</b></div><em aria-hidden="true">→</em></a>`;
   }).join('\n')}
                 </div>`;
-  fillMarkers('all-generators.html', { nav, generators: allList });
-  fillMarkers('about.html', { nav });
+  fillMarkers('all-generators.html', { sprite: layout.svgSprite(allMotifs), header, generators: allList, footer });
+  fillMarkers('about.html', { sprite: layout.svgSprite(['quill', 'note']), header, footer });
 }
 
 /**
@@ -1067,8 +1028,16 @@ function generateSitemap(site) {
  */
 function generateHtmlSitemap(site) {
   const baseUrl = "https://thenamegenerators.com";
-  
-  let html = `<!DOCTYPE html>
+  const link = (href, text) => `<li><a href="${href}">${escapeHtml(text)}</a></li>`;
+  const groups = site.categories.filter(c => c.generators.length).map(category => `
+            <div class="sitemap-group">
+                <h3>${escapeHtml(category.name)}</h3>
+                <ul class="sitemap-links">
+                    ${site.inCategory(category.slug).map(g => link(`${baseUrl}/posts/${g.slug}.html`, g.title)).join('\n                    ')}
+                </ul>
+            </div>`).join('');
+
+  const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -1082,116 +1051,43 @@ function generateHtmlSitemap(site) {
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="${baseUrl}/sitemap.html">
     ${ICON_LINKS}
-    <link rel="stylesheet" href="styles/main.css">
-    <style>
-        .sitemap-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        .sitemap-section {
-            margin-bottom: 3rem;
-        }
-        .sitemap-section h2 {
-            color: #333;
-            border-bottom: 2px solid #4a90e2;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        .sitemap-links {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 1rem;
-        }
-        .sitemap-links a {
-            display: block;
-            padding: 0.5rem;
-            color: #4a90e2;
-            text-decoration: none;
-            border-left: 3px solid #4a90e2;
-            padding-left: 1rem;
-            transition: all 0.3s;
-        }
-        .sitemap-links a:hover {
-            background-color: #f5f5f5;
-            padding-left: 1.5rem;
-        }
-        .sitemap-category {
-            margin-top: 2rem;
-        }
-        .sitemap-category h3 {
-            color: #666;
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-        }
-    </style>
+    ${layout.headAssets('')}
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">🧑🏻‍💻 The Name Generators</a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="all-generators.html">All Generators</a>
-                <a href="sitemap.html">Site Map</a>
-            </div>
-        </div>
-    </nav>
+    ${layout.svgSprite([])}
+    ${layout.siteHeader('', site.categories)}
 
-    <div class="sitemap-container">
-        <header>
-            <h1>Site Map</h1>
-            <p>Complete listing of all pages on The Name Generators</p>
-        </header>
+    <div class="wrap">
+        <main id="main" class="sitemap">
+            <div class="titlerow"><h1>Site <span class="hl">Map</span></h1></div>
+            <p class="lede">Every page on The Name Generators.</p>
 
-        <div class="sitemap-section">
-            <h2>Main Pages</h2>
-            <div class="sitemap-links">
-                <a href="${baseUrl}/">Home</a>
-                <a href="${baseUrl}/all-generators.html">All Generators</a>
-                <a href="${baseUrl}/about.html">About</a>
-                <a href="${baseUrl}/sitemap.html">Site Map</a>
-            </div>
-        </div>
+            <section class="section">
+                <h2>Main pages</h2>
+                <ul class="sitemap-links">
+                    ${link(`${baseUrl}/`, 'Home')}
+                    ${link(`${baseUrl}/all-generators.html`, 'All Generators')}
+                    ${link(`${baseUrl}/about.html`, 'About')}
+                    ${link(`${baseUrl}/sitemap.html`, 'Site Map')}
+                </ul>
+            </section>
 
-        <div class="sitemap-section">
-            <h2>Category Pages</h2>
-            <div class="sitemap-links">
-`;
+            <section class="section">
+                <h2>Category pages</h2>
+                <ul class="sitemap-links">
+                    ${site.categories.map(c => link(`${baseUrl}/categories/${c.slug}-names.html`, c.name)).join('\n                    ')}
+                </ul>
+            </section>
 
-  // Add category pages
-  for (const category of site.categories) {
-    html += `                <a href="${baseUrl}/categories/${category.slug}-names.html">${category.icon} ${escapeHtml(category.name)}</a>\n`;
-  }
-
-  html += `            </div>
-        </div>
-
-        <div class="sitemap-section">
-            <h2>Name Generators</h2>
-`;
-
-  // Generators grouped by category (a generator can appear in more than one)
-  for (const category of site.categories.filter(c => c.generators.length)) {
-    const generators = site.inCategory(category.slug);
-    html += `            <div class="sitemap-category">
-                <h3>${escapeHtml(category.name)}</h3>
-                <div class="sitemap-links">
-`;
-    for (const generator of generators) {
-      html += `                    <a href="${baseUrl}/posts/${generator.slug}.html">${generator.icon || '⚔️'} ${escapeHtml(generator.title)}</a>\n`;
-    }
-    html += `                </div>
-            </div>
-`;
-  }
-
-  html += `        </div>
+            <section class="section">
+                <h2>Name generators</h2>
+${groups}
+            </section>
+        </main>
     </div>
 
-    <footer class="site-footer">
-        <p>&copy; ${new Date().getFullYear()} The Name Generators. All rights reserved. | <a href="sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="about.html" style="color: #4a90e2;">About</a></p>
-    </footer>
+    ${layout.siteFooter('')}
+    ${layout.bodyScripts('')}
 </body>
 </html>`;
 
@@ -1223,11 +1119,8 @@ function generate404(site) {
     '/wizard-name-generator-lord-of-the-rings/': '/posts/lotr-wizard-name-generator.html'
   };
 
-  const categoryCards = site.categories.filter(c => c.generators.length).map(cat => `                <a href="/categories/${cat.slug}-names.html" class="category-card">
-                    <span class="category-icon">${cat.icon}</span>
-                    <h3>${escapeHtml(cat.name)}</h3>
-                    <p>${escapeHtml(cat.description)}</p>
-                </a>`).join('\n');
+  const cats = site.categories.filter(c => c.generators.length);
+  const categoryCards = cats.map(cat => `<a href="/categories/${cat.slug}-names.html" class="cat hd tap">${layout.doodle(layout.categoryMotif(cat))}<div><b>${escapeHtml(cat.name)}</b><span>${cat.generators.length} generator${cat.generators.length !== 1 ? 's' : ''}</span></div><em aria-hidden="true">→</em></a>`).join('\n                    ');
 
   const html = `<!DOCTYPE html>
 <html lang="en">
@@ -1242,48 +1135,31 @@ function generate404(site) {
         if (oldUrls[window.location.pathname]) window.location.replace(oldUrls[window.location.pathname]);
     </script>
     ${ICON_LINKS}
-    <link rel="stylesheet" href="/styles/main.css">
+    ${layout.headAssets('/')}
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">🧑🏻‍💻 ${SITE_NAME}</a>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="/">Home</a>
-                <a href="/all-generators.html">All Generators</a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle">Categories</a>
-                    <div class="nav-dropdown-menu" id="category-dropdown">
-                        ${site.navHtml('/')}
-                    </div>
+    ${layout.svgSprite(['map', ...cats.map(c => layout.categoryMotif(c))])}
+    ${layout.siteHeader('/', site.categories)}
+
+    <div class="wrap">
+        <main id="main">
+            <div class="titlerow">
+                <h1>Page <span class="hl">not found</span></h1>
+                ${layout.doodle('map')}
+            </div>
+            <p class="lede">That page doesn't exist, or it has moved. Try a category below, or <a href="/all-generators.html">browse all ${site.all.length} generators</a>.</p>
+
+            <section class="section">
+                <h2>Categories</h2>
+                <div class="catgrid">
+                    ${categoryCards}
                 </div>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container">
-        <header class="hero">
-            <h1>Page Not Found</h1>
-            <p>That page doesn't exist, or it has moved. Try one of the categories below, or <a href="/all-generators.html">browse all ${site.all.length} generators</a>.</p>
-        </header>
-
-        <main>
-            <div class="categories-grid">
-${categoryCards}
-            </div>
+            </section>
         </main>
-
-        <footer class="site-footer">
-            <p>&copy; <span id="current-year"></span> ${SITE_NAME}. All rights reserved. | <a href="/sitemap.html" style="color: #4a90e2;">Site Map</a> | <a href="/about.html" style="color: #4a90e2;">About</a></p>
-        </footer>
     </div>
 
-    <script src="/lib/page.js"></script>
+    ${layout.siteFooter('/')}
+    ${layout.bodyScripts('/')}
 </body>
 </html>
 `;
