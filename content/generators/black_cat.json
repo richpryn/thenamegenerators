@@ -623,7 +623,6 @@
         "Cream Puff",
         "Milkshake",
         "Crumpet",
-        "Whisker Biscuit",
         "Fishcake",
         "Salmon",
         "Toffee Paws"
@@ -855,7 +854,29 @@
       "tagline": "Black cat names, and Halloween names for any cat or dog: spooky, cute, gothic or good enough to eat."
     },
     "intro": "Black cats have been witches' companions in folklore for centuries, and a good black cat name leans into it: Soot, Onyx, Nightshade, Lord Inkwell. This **black cat name generator** also names any cat or dog for Halloween, in four styles, with a costume if you like.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Black cats, witches and luck",
+        "content": "<ul><li><strong>Witches' cats:</strong> in the European witch scares of the 1500s and 1600s, cats, and black cats in particular, were said to be witches' familiars. That's where the Halloween black cat comes from.</li><li><strong>Lucky or unlucky?</strong> It depends where you are. In Britain a black cat crossing your path has long been a sign of good luck, and a black cat at a wedding is a good omen. In much of the United States it's the other way round.</li><li><strong>Black Cat Day:</strong> Cats Protection, the UK cat charity, holds National Black Cat Day every year on 27 October. It says black and black-and-white cats often wait longer than others to find a home, so October is a good time to adopt one.</li><li><strong>Black dogs too:</strong> English folklore has its own ghostly black dogs, like Black Shuck of East Anglia and the Barghest of Yorkshire, which is why the dog names have a few of their own.</li></ul>"
+      },
+      {
+        "heading": "Picking a name your pet will answer to",
+        "content": "<ul><li><strong>Keep it short.</strong> One or two syllables are easiest to call across a garden: Soot, Onyx, Nyx. Save the grand ones (Lord Inkwell) for the full name and use a short version every day.</li><li><strong>Make it sound unlike a command.</strong> A dog called Kit may hear \"sit\".</li><li><strong>Say it out loud a few times</strong> before you decide. If it feels silly to shout at the back door, pick another.</li></ul><p>For Halloween, choose <em>With a costume</em> to get a name and an outfit together. For the witch to go with the cat, try the <a href=\"witch-name-generator.html\">Witch Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good name for a black cat?",
+        "answer": "Something dark and short is classic: Soot, Onyx, Jet, Shadow, Nyx or Sloe. For something grander, try the gothic style for names like Lord Inkwell."
+      },
+      {
+        "question": "Are black cats lucky?",
+        "answer": "In Britain, traditionally yes: a black cat crossing your path is a sign of good luck. In much of the United States the superstition is that it's unlucky."
+      },
+      {
+        "question": "When is Black Cat Day?",
+        "answer": "In the UK, Cats Protection holds National Black Cat Day on 27 October each year, to encourage people to adopt black cats."
+      }
+    ]
   }
 }

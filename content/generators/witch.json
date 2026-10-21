@@ -521,7 +521,29 @@
       "tagline": "Fairy-tale crones, hedge witches, modern witches and Halloween costume names, with a familiar if you like."
     },
     "intro": "Witches in folk tales are named for where they live and what they know: an old mother at the end of the lane, a herb-wife at the edge of the wood. This **witch name generator** makes names in four styles, from classic fairy-tale witches to funny names for a Halloween costume.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "How witches got their names in folk tales",
+        "content": "<ul><li><strong>By age and standing:</strong> in English villages an older woman was often called \"Mother\" or \"Old Mother\" before her surname. The legendary Yorkshire prophetess Mother Shipton is the best-known example, and fairy-tale witches took the same pattern.</li><li><strong>By plant or place:</strong> wise women were known for what they grew and gathered, so witch names lean on herbs and hedgerow plants (Wormwood, Hemlock, Foxglove) or on where they lived (of the Crooked Lane).</li><li><strong>The hedge witch:</strong> the hedge was the boundary between the village and the wild. A hedge witch works on that edge, with herbs, charms and plain good sense, which is why hedge witch names sound green and homely.</li><li><strong>By familiar:</strong> in the English witch trials of the 1640s, accused women were said to keep animal \"imps\". Matthew Hopkins's pamphlet <em>The Discovery of Witches</em> (1647) lists names like Vinegar Tom and Pyewacket. Those trials ended in real deaths, so the generator's familiars are friendly ones: a cat called Soot, a toad called Pip.</li></ul>"
+      },
+      {
+        "heading": "Choosing a witch name",
+        "content": "<ul><li><strong>For a story or game,</strong> decide what kind of witch she is first. A fairy-tale crone, a village herb-wife and a modern witch with a shop full of crystals want very different names.</li><li><strong>For a costume,</strong> go for the <em>Halloween costume</em> style: names like Wanda Cackleberry are fun to say and easy to put on a badge.</li><li><strong>Add a familiar</strong> for character: \"Old Mother Briar and her crow, Tatters\" tells you more than the name alone.</li></ul><p>For other kinds of witch, try the <a href=\"swamp-witch-name-generator.html\">Swamp Witch</a> and <a href=\"harry-potter-witch-name-generator.html\">Harry Potter Witch</a> generators. A witch's cat needs a name too: try the <a href=\"black-cat-name-generator.html\">Black Cat Name Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is a good witch name?",
+        "answer": "One that tells you what kind of witch she is. Plant names suit a hedge witch (Hazel Briarwood), \"Old Mother\" or \"Granny\" suits a fairy-tale witch, and an ordinary first name with a moonlit surname suits a modern one (Luna Ashgrove)."
+      },
+      {
+        "question": "What is a witch's familiar?",
+        "answer": "An animal companion said to help a witch with her magic, usually a cat, toad, owl or crow. The idea comes from English folklore and the witch trials of the 1500s and 1600s."
+      },
+      {
+        "question": "What's a funny witch name for a costume?",
+        "answer": "Choose the Halloween costume style for names like Hexie Batterbury or Potionella Wobblebroom, and add a familiar for an extra laugh."
+      }
+    ]
   }
 }

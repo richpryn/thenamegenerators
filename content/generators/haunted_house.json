@@ -4,7 +4,7 @@
   "icon": "🏚️",
   "category": "halloween",
   "published": "2026-10-21",
-  "description": "Haunted house names for Halloween attractions, school fairs, ghost tours, escape rooms and games: grand old mansions, family-friendly frights, scary attractions and abandoned places.",
+  "description": "Haunted house names for Halloween attractions, school fairs, ghost tours and games: grand mansions, family frights, scary attractions and abandoned places.",
   "seoKeywords": "haunted house name generator, haunted house names, halloween attraction names, haunted mansion names, spooky house names, ghost tour names, haunted attraction names",
   "isPopular": false,
   "filters": {
@@ -431,7 +431,29 @@
       "tagline": "Names for haunted houses and Halloween attractions, from Blackwood Hall to the Not-So-Haunted House."
     },
     "intro": "A haunted house name sets the mood before anyone walks in: a grand old hall promises a ghost story, a pun promises fun for the little ones, and a cellar with a number promises screams. This **haunted house name generator** makes names for Halloween attractions, school fairs, ghost tours, escape rooms and games, with a tagline if you need one.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "What makes a good haunted house name",
+        "content": "<ul><li><strong>A real-sounding house:</strong> English country houses are called Hall, Grange, Manor, Court or Priory, so Blackwood Grange sounds like somewhere with a past. Borley Rectory in Essex, once called \"the most haunted house in England\", shows how much an ordinary house name can carry.</li><li><strong>An address:</strong> \"The House on Gallows Lane\" works because it sounds like the start of a ghost story.</li><li><strong>A promise:</strong> the name should tell people how scared to expect to be. Puns and cosy words (Cobweb Cottage) say family fun; a numbered cellar or motel says screams.</li><li><strong>A forgotten place:</strong> old mills, piers, theatres and schools make good settings because everyone can picture them empty.</li></ul>"
+      },
+      {
+        "heading": "Naming a Halloween attraction",
+        "content": "<ul><li><strong>Match the name to the scare level,</strong> and put an age guide on the poster as well. Parents at a school fair will thank you.</li><li><strong>Add a tagline</strong> for posters and tickets: \"nobody leaves before midnight\" does a lot of work.</li><li><strong>Don't use a real address or a real tragedy.</strong> Make the place up, and leave real people's homes and real events out of it.</li><li><strong>Charging entry?</strong> Search the name first to check another local attraction isn't already using it.</li></ul><p>To fill the house, try the <a href=\"ghost-name-generator.html\">Ghost</a>, <a href=\"vampire-name-generator.html\">Vampire</a> and <a href=\"zombie-name-generator.html\">Zombie</a> name generators. For the party afterwards, the <a href=\"event-name-generator.html\">Event Name Generator</a> has party names.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What should I call a haunted house for children?",
+        "answer": "Something that sounds friendly before anyone goes in: a pun or a cosy word, like Cobweb Cottage or the Not-So-Haunted House. Choose the family-friendly style."
+      },
+      {
+        "question": "How do you name a scary haunted attraction?",
+        "answer": "Short and specific works best: a place and something wrong with it (The Rot Cellar), or a building with a number (Motel 31). Add a tagline to finish the job."
+      },
+      {
+        "question": "Can I name my haunted house after a real place?",
+        "answer": "It's better not to. Make the place up, so you're not using a real person's home or a real tragedy, and check no local attraction already has the name."
+      }
+    ]
   }
 }
