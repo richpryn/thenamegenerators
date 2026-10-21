@@ -111,9 +111,9 @@ function movedPage(newSlug) {
 `;
 }
 // Favicons (absolute paths: the 404 page is served at any address)
-const ICON_LINKS = `<link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">`;
+const ICON_LINKS = `<link rel="icon" href="${layout.asset('/', 'favicon.ico')}" sizes="any">
+    <link rel="icon" href="${layout.asset('/', 'favicon.svg')}" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="${layout.asset('/', 'apple-touch-icon.png')}">`;
 const AUTHOR = { "@type": "Person", "name": "Rich", "url": "https://thenamegenerators.com/about.html" };
 const USAGE_NOTE = "Free to use, no credit needed. If you're naming a business, brand, band or product, check the name isn't already taken or trademarked first.";
 
