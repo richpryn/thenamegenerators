@@ -24,11 +24,11 @@ What's done, what's left, and what to keep an eye on. Replaces the old SEO, Bing
 
 ## To do
 
-### 3. Check the pages
+### 1. Check the pages
 - Run a few generator pages through https://pagespeed.web.dev (mobile).
 - Run one generator page through https://search.google.com/test/rich-results to check the FAQ and breadcrumb data.
 
-### 4. Optional, later
+### 2. Optional, later
 - Visible breadcrumbs on generator pages (the schema has them; the page doesn't show them)
 - Drop the meta tags search engines ignore (`keywords`, `revisit-after`, `ai-index`, `ai-crawl`)
 - Social sharing buttons
