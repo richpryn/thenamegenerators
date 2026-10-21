@@ -7,7 +7,6 @@
   "noun": "Minecraft Names",
   "description": "Minecraft name from your name: type your first name or nickname and get usernames built from it, with mobs, ores, cool or cute words, or a joke.",
   "seoKeywords": "minecraft name from your name, minecraft name generator with your name, what's my minecraft name, minecraft username from name, minecraft name maker, minecraft nickname generator",
-  "seoTitle": "Minecraft Name From Your Name: Username Maker",
   "isPopular": false,
   "maxLength": 16,
   "filters": {
@@ -75,14 +74,8 @@
       "template": [
         "{name}[funny]",
         "{name}[funny]",
-        "Not{name}",
-        "Sleepy{name}",
-        "Noob{name}",
-        "{name}NoDiamonds",
-        "{name}VsCreepers",
-        "Captain{name}",
-        "{name}TheNoob",
-        "Oops{name}"
+        "[funnypre]{name}",
+        "{name}Vs[mobs]"
       ]
     },
     "cute": {
@@ -112,14 +105,8 @@
         "{name}[cool]",
         "{name}[funny]",
         "{name}[funny]",
-        "Not{name}",
-        "Sleepy{name}",
-        "Noob{name}",
-        "{name}NoDiamonds",
-        "{name}VsCreepers",
-        "Captain{name}",
-        "{name}TheNoob",
-        "Oops{name}",
+        "[funnypre]{name}",
+        "{name}Vs[mobs]",
         "Lil{name}",
         "{name}[cute]",
         "[cute]{name}",
@@ -172,7 +159,19 @@
       "Coal",
       "Quartz",
       "Amethyst",
-      "Obsidian"
+      "Obsidian",
+      "Prismarine",
+      "Glowstone",
+      "Deepslate",
+      "Blackstone",
+      "Sculk",
+      "Granite",
+      "Cobble",
+      "Bedrock",
+      "Tuff",
+      "Calcite",
+      "Basalt",
+      "Dripstone"
     ],
     "miner": [
       "Mines",
@@ -184,7 +183,13 @@
       "Miner",
       "Builder",
       "_MC",
-      "Plays"
+      "Plays",
+      "Explores",
+      "Smelts",
+      "Brews",
+      "Farms",
+      "Tunnels",
+      "Quarries"
     ],
     "cool": [
       "Void",
@@ -206,7 +211,17 @@
       "Raven",
       "Pulse",
       "Drift",
-      "Flux"
+      "Flux",
+      "Hex",
+      "Zero",
+      "Apex",
+      "Volt",
+      "Echo",
+      "Rift",
+      "Blitz",
+      "Ash",
+      "Cobalt",
+      "Phantom"
     ],
     "cute": [
       "Bee",
@@ -226,7 +241,19 @@
       "Mochi",
       "Pebble",
       "Button",
-      "Clover"
+      "Clover",
+      "Sunny",
+      "Fluff",
+      "Muffin",
+      "Bunny",
+      "Daisy",
+      "Peach",
+      "Sprinkle",
+      "Cocoa",
+      "Twinkle",
+      "Biscuit",
+      "Marsh",
+      "Dew"
     ],
     "funny": [
       "AteDirt",
@@ -245,7 +272,44 @@
       "LovesGravel",
       "IsAfk",
       "NeedsABed",
-      "BuildsBadly"
+      "BuildsBadly",
+      "TheNoob",
+      "NoDiamonds",
+      "Panics",
+      "FellDown",
+      "AteCake",
+      "LostAgain",
+      "DugDown",
+      "HugsCreepers",
+      "OwnsTenCats",
+      "CantSwim",
+      "RanOutOfFood",
+      "HatesPhantoms",
+      "LovesLlamas",
+      "StoleMyIron",
+      "IsHere"
+    ],
+    "funnypre": [
+      "Sleepy",
+      "Noob",
+      "Not",
+      "Oops",
+      "Captain",
+      "Sir",
+      "Grumpy",
+      "Soggy",
+      "Hungry",
+      "Lazy",
+      "Clumsy",
+      "Wobbly",
+      "Confused",
+      "Accidental",
+      "Panicky",
+      "Lost",
+      "Tiny",
+      "Professor",
+      "Lucky",
+      "Unlucky"
     ]
   },
   "article": {
@@ -282,5 +346,6 @@
         "answer": "Type your first name or nickname into the box, pick a style (mob, miner, cool, funny or cute) and generate. Every result fits Minecraft's 3 to 16 character rule."
       }
     ]
-  }
+  },
+  "seoTitle": "Minecraft Name From Your Name: Username Maker"
 }

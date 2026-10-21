@@ -7,7 +7,6 @@
   "noun": "Minecraft Tool and Weapon Names",
   "description": "Minecraft pickaxe, bow and trident names, plus axes, shovels, crossbows, maces, shields, elytra and fishing rods: epic or funny, with enchantments.",
   "seoKeywords": "minecraft pickaxe names, minecraft bow names, minecraft trident names, minecraft axe names, minecraft mace names, minecraft elytra names, funny minecraft tool names, minecraft item names",
-  "seoTitle": "Minecraft Pickaxe, Bow & Trident Name Generator",
   "isPopular": false,
   "filters": {
     "item": {
@@ -86,7 +85,8 @@
               "recipe": "template",
               "template": [
                 "[pickaxe.funny]",
-                "[funny_adj] [pickaxe.noun]"
+                "[funny_adj] [pickaxe.noun]",
+                "[pickaxe.noun] of [funny_of]"
               ]
             },
             "any": {
@@ -95,7 +95,8 @@
                 "[pickaxe.epic]",
                 "[pickaxe.pre][pickaxe.suf]",
                 "[pickaxe.funny]",
-                "[funny_adj] [pickaxe.noun]"
+                "[funny_adj] [pickaxe.noun]",
+                "[pickaxe.noun] of [funny_of]"
               ]
             }
           }
@@ -115,7 +116,8 @@
               "recipe": "template",
               "template": [
                 "[pickaxe.funny] ([pickaxe.enchants])",
-                "[funny_adj] [pickaxe.noun] ([pickaxe.enchants])"
+                "[funny_adj] [pickaxe.noun] ([pickaxe.enchants])",
+                "[pickaxe.noun] of [funny_of] ([pickaxe.enchants])"
               ]
             },
             "any": {
@@ -124,7 +126,8 @@
                 "[pickaxe.epic] ([pickaxe.enchants])",
                 "[pickaxe.pre][pickaxe.suf] ([pickaxe.enchants])",
                 "[pickaxe.funny] ([pickaxe.enchants])",
-                "[funny_adj] [pickaxe.noun] ([pickaxe.enchants])"
+                "[funny_adj] [pickaxe.noun] ([pickaxe.enchants])",
+                "[pickaxe.noun] of [funny_of] ([pickaxe.enchants])"
               ]
             }
           }
@@ -150,7 +153,8 @@
               "recipe": "template",
               "template": [
                 "[axe.funny]",
-                "[funny_adj] [axe.noun]"
+                "[funny_adj] [axe.noun]",
+                "[axe.noun] of [funny_of]"
               ]
             },
             "any": {
@@ -159,7 +163,8 @@
                 "[axe.epic]",
                 "[axe.pre][axe.suf]",
                 "[axe.funny]",
-                "[funny_adj] [axe.noun]"
+                "[funny_adj] [axe.noun]",
+                "[axe.noun] of [funny_of]"
               ]
             }
           }
@@ -179,7 +184,8 @@
               "recipe": "template",
               "template": [
                 "[axe.funny] ([axe.enchants])",
-                "[funny_adj] [axe.noun] ([axe.enchants])"
+                "[funny_adj] [axe.noun] ([axe.enchants])",
+                "[axe.noun] of [funny_of] ([axe.enchants])"
               ]
             },
             "any": {
@@ -188,7 +194,8 @@
                 "[axe.epic] ([axe.enchants])",
                 "[axe.pre][axe.suf] ([axe.enchants])",
                 "[axe.funny] ([axe.enchants])",
-                "[funny_adj] [axe.noun] ([axe.enchants])"
+                "[funny_adj] [axe.noun] ([axe.enchants])",
+                "[axe.noun] of [funny_of] ([axe.enchants])"
               ]
             }
           }
@@ -214,7 +221,8 @@
               "recipe": "template",
               "template": [
                 "[shovel.funny]",
-                "[funny_adj] [shovel.noun]"
+                "[funny_adj] [shovel.noun]",
+                "[shovel.noun] of [funny_of]"
               ]
             },
             "any": {
@@ -223,7 +231,8 @@
                 "[shovel.epic]",
                 "[shovel.pre][shovel.suf]",
                 "[shovel.funny]",
-                "[funny_adj] [shovel.noun]"
+                "[funny_adj] [shovel.noun]",
+                "[shovel.noun] of [funny_of]"
               ]
             }
           }
@@ -243,7 +252,8 @@
               "recipe": "template",
               "template": [
                 "[shovel.funny] ([shovel.enchants])",
-                "[funny_adj] [shovel.noun] ([shovel.enchants])"
+                "[funny_adj] [shovel.noun] ([shovel.enchants])",
+                "[shovel.noun] of [funny_of] ([shovel.enchants])"
               ]
             },
             "any": {
@@ -252,7 +262,8 @@
                 "[shovel.epic] ([shovel.enchants])",
                 "[shovel.pre][shovel.suf] ([shovel.enchants])",
                 "[shovel.funny] ([shovel.enchants])",
-                "[funny_adj] [shovel.noun] ([shovel.enchants])"
+                "[funny_adj] [shovel.noun] ([shovel.enchants])",
+                "[shovel.noun] of [funny_of] ([shovel.enchants])"
               ]
             }
           }
@@ -278,7 +289,8 @@
               "recipe": "template",
               "template": [
                 "[bow.funny]",
-                "[funny_adj] [bow.noun]"
+                "[funny_adj] [bow.noun]",
+                "[bow.noun] of [funny_of]"
               ]
             },
             "any": {
@@ -287,7 +299,8 @@
                 "[bow.epic]",
                 "[bow.pre][bow.suf]",
                 "[bow.funny]",
-                "[funny_adj] [bow.noun]"
+                "[funny_adj] [bow.noun]",
+                "[bow.noun] of [funny_of]"
               ]
             }
           }
@@ -307,7 +320,8 @@
               "recipe": "template",
               "template": [
                 "[bow.funny] ([bow.enchants])",
-                "[funny_adj] [bow.noun] ([bow.enchants])"
+                "[funny_adj] [bow.noun] ([bow.enchants])",
+                "[bow.noun] of [funny_of] ([bow.enchants])"
               ]
             },
             "any": {
@@ -316,7 +330,8 @@
                 "[bow.epic] ([bow.enchants])",
                 "[bow.pre][bow.suf] ([bow.enchants])",
                 "[bow.funny] ([bow.enchants])",
-                "[funny_adj] [bow.noun] ([bow.enchants])"
+                "[funny_adj] [bow.noun] ([bow.enchants])",
+                "[bow.noun] of [funny_of] ([bow.enchants])"
               ]
             }
           }
@@ -342,7 +357,8 @@
               "recipe": "template",
               "template": [
                 "[crossbow.funny]",
-                "[funny_adj] [crossbow.noun]"
+                "[funny_adj] [crossbow.noun]",
+                "[crossbow.noun] of [funny_of]"
               ]
             },
             "any": {
@@ -351,7 +367,8 @@
                 "[crossbow.epic]",
                 "[crossbow.pre][crossbow.suf]",
                 "[crossbow.funny]",
-                "[funny_adj] [crossbow.noun]"
+                "[funny_adj] [crossbow.noun]",
+                "[crossbow.noun] of [funny_of]"
               ]
             }
           }
@@ -371,7 +388,8 @@
               "recipe": "template",
               "template": [
                 "[crossbow.funny] ([crossbow.enchants])",
-                "[funny_adj] [crossbow.noun] ([crossbow.enchants])"
+                "[funny_adj] [crossbow.noun] ([crossbow.enchants])",
+                "[crossbow.noun] of [funny_of] ([crossbow.enchants])"
               ]
             },
             "any": {
@@ -380,7 +398,8 @@
                 "[crossbow.epic] ([crossbow.enchants])",
                 "[crossbow.pre][crossbow.suf] ([crossbow.enchants])",
                 "[crossbow.funny] ([crossbow.enchants])",
-                "[funny_adj] [crossbow.noun] ([crossbow.enchants])"
+                "[funny_adj] [crossbow.noun] ([crossbow.enchants])",
+                "[crossbow.noun] of [funny_of] ([crossbow.enchants])"
               ]
             }
           }
@@ -406,7 +425,8 @@
               "recipe": "template",
               "template": [
                 "[trident.funny]",
-                "[funny_adj] [trident.noun]"
+                "[funny_adj] [trident.noun]",
+                "[trident.noun] of [funny_of]"
               ]
             },
             "any": {
@@ -415,7 +435,8 @@
                 "[trident.epic]",
                 "[trident.pre][trident.suf]",
                 "[trident.funny]",
-                "[funny_adj] [trident.noun]"
+                "[funny_adj] [trident.noun]",
+                "[trident.noun] of [funny_of]"
               ]
             }
           }
@@ -435,7 +456,8 @@
               "recipe": "template",
               "template": [
                 "[trident.funny] ([trident.enchants])",
-                "[funny_adj] [trident.noun] ([trident.enchants])"
+                "[funny_adj] [trident.noun] ([trident.enchants])",
+                "[trident.noun] of [funny_of] ([trident.enchants])"
               ]
             },
             "any": {
@@ -444,7 +466,8 @@
                 "[trident.epic] ([trident.enchants])",
                 "[trident.pre][trident.suf] ([trident.enchants])",
                 "[trident.funny] ([trident.enchants])",
-                "[funny_adj] [trident.noun] ([trident.enchants])"
+                "[funny_adj] [trident.noun] ([trident.enchants])",
+                "[trident.noun] of [funny_of] ([trident.enchants])"
               ]
             }
           }
@@ -470,7 +493,8 @@
               "recipe": "template",
               "template": [
                 "[mace.funny]",
-                "[funny_adj] [mace.noun]"
+                "[funny_adj] [mace.noun]",
+                "[mace.noun] of [funny_of]"
               ]
             },
             "any": {
@@ -479,7 +503,8 @@
                 "[mace.epic]",
                 "[mace.pre][mace.suf]",
                 "[mace.funny]",
-                "[funny_adj] [mace.noun]"
+                "[funny_adj] [mace.noun]",
+                "[mace.noun] of [funny_of]"
               ]
             }
           }
@@ -499,7 +524,8 @@
               "recipe": "template",
               "template": [
                 "[mace.funny] ([mace.enchants])",
-                "[funny_adj] [mace.noun] ([mace.enchants])"
+                "[funny_adj] [mace.noun] ([mace.enchants])",
+                "[mace.noun] of [funny_of] ([mace.enchants])"
               ]
             },
             "any": {
@@ -508,7 +534,8 @@
                 "[mace.epic] ([mace.enchants])",
                 "[mace.pre][mace.suf] ([mace.enchants])",
                 "[mace.funny] ([mace.enchants])",
-                "[funny_adj] [mace.noun] ([mace.enchants])"
+                "[funny_adj] [mace.noun] ([mace.enchants])",
+                "[mace.noun] of [funny_of] ([mace.enchants])"
               ]
             }
           }
@@ -534,7 +561,8 @@
               "recipe": "template",
               "template": [
                 "[shield.funny]",
-                "[funny_adj] [shield.noun]"
+                "[funny_adj] [shield.noun]",
+                "[shield.noun] of [funny_of]"
               ]
             },
             "any": {
@@ -543,7 +571,8 @@
                 "[shield.epic]",
                 "[shield.pre][shield.suf]",
                 "[shield.funny]",
-                "[funny_adj] [shield.noun]"
+                "[funny_adj] [shield.noun]",
+                "[shield.noun] of [funny_of]"
               ]
             }
           }
@@ -563,7 +592,8 @@
               "recipe": "template",
               "template": [
                 "[shield.funny] ([shield.enchants])",
-                "[funny_adj] [shield.noun] ([shield.enchants])"
+                "[funny_adj] [shield.noun] ([shield.enchants])",
+                "[shield.noun] of [funny_of] ([shield.enchants])"
               ]
             },
             "any": {
@@ -572,7 +602,8 @@
                 "[shield.epic] ([shield.enchants])",
                 "[shield.pre][shield.suf] ([shield.enchants])",
                 "[shield.funny] ([shield.enchants])",
-                "[funny_adj] [shield.noun] ([shield.enchants])"
+                "[funny_adj] [shield.noun] ([shield.enchants])",
+                "[shield.noun] of [funny_of] ([shield.enchants])"
               ]
             }
           }
@@ -598,7 +629,8 @@
               "recipe": "template",
               "template": [
                 "[elytra.funny]",
-                "[funny_adj] [elytra.noun]"
+                "[funny_adj] [elytra.noun]",
+                "[elytra.noun] of [funny_of]"
               ]
             },
             "any": {
@@ -607,7 +639,8 @@
                 "[elytra.epic]",
                 "[elytra.pre][elytra.suf]",
                 "[elytra.funny]",
-                "[funny_adj] [elytra.noun]"
+                "[funny_adj] [elytra.noun]",
+                "[elytra.noun] of [funny_of]"
               ]
             }
           }
@@ -627,7 +660,8 @@
               "recipe": "template",
               "template": [
                 "[elytra.funny] ([elytra.enchants])",
-                "[funny_adj] [elytra.noun] ([elytra.enchants])"
+                "[funny_adj] [elytra.noun] ([elytra.enchants])",
+                "[elytra.noun] of [funny_of] ([elytra.enchants])"
               ]
             },
             "any": {
@@ -636,7 +670,8 @@
                 "[elytra.epic] ([elytra.enchants])",
                 "[elytra.pre][elytra.suf] ([elytra.enchants])",
                 "[elytra.funny] ([elytra.enchants])",
-                "[funny_adj] [elytra.noun] ([elytra.enchants])"
+                "[funny_adj] [elytra.noun] ([elytra.enchants])",
+                "[elytra.noun] of [funny_of] ([elytra.enchants])"
               ]
             }
           }
@@ -662,7 +697,8 @@
               "recipe": "template",
               "template": [
                 "[fishing_rod.funny]",
-                "[funny_adj] [fishing_rod.noun]"
+                "[funny_adj] [fishing_rod.noun]",
+                "[fishing_rod.noun] of [funny_of]"
               ]
             },
             "any": {
@@ -671,7 +707,8 @@
                 "[fishing_rod.epic]",
                 "[fishing_rod.pre][fishing_rod.suf]",
                 "[fishing_rod.funny]",
-                "[funny_adj] [fishing_rod.noun]"
+                "[funny_adj] [fishing_rod.noun]",
+                "[fishing_rod.noun] of [funny_of]"
               ]
             }
           }
@@ -691,7 +728,8 @@
               "recipe": "template",
               "template": [
                 "[fishing_rod.funny] ([fishing_rod.enchants])",
-                "[funny_adj] [fishing_rod.noun] ([fishing_rod.enchants])"
+                "[funny_adj] [fishing_rod.noun] ([fishing_rod.enchants])",
+                "[fishing_rod.noun] of [funny_of] ([fishing_rod.enchants])"
               ]
             },
             "any": {
@@ -700,7 +738,8 @@
                 "[fishing_rod.epic] ([fishing_rod.enchants])",
                 "[fishing_rod.pre][fishing_rod.suf] ([fishing_rod.enchants])",
                 "[fishing_rod.funny] ([fishing_rod.enchants])",
-                "[funny_adj] [fishing_rod.noun] ([fishing_rod.enchants])"
+                "[funny_adj] [fishing_rod.noun] ([fishing_rod.enchants])",
+                "[fishing_rod.noun] of [funny_of] ([fishing_rod.enchants])"
               ]
             }
           }
@@ -745,24 +784,34 @@
               "template": [
                 "[pickaxe.funny]",
                 "[funny_adj] [pickaxe.noun]",
+                "[pickaxe.noun] of [funny_of]",
                 "[axe.funny]",
                 "[funny_adj] [axe.noun]",
+                "[axe.noun] of [funny_of]",
                 "[shovel.funny]",
                 "[funny_adj] [shovel.noun]",
+                "[shovel.noun] of [funny_of]",
                 "[bow.funny]",
                 "[funny_adj] [bow.noun]",
+                "[bow.noun] of [funny_of]",
                 "[crossbow.funny]",
                 "[funny_adj] [crossbow.noun]",
+                "[crossbow.noun] of [funny_of]",
                 "[trident.funny]",
                 "[funny_adj] [trident.noun]",
+                "[trident.noun] of [funny_of]",
                 "[mace.funny]",
                 "[funny_adj] [mace.noun]",
+                "[mace.noun] of [funny_of]",
                 "[shield.funny]",
                 "[funny_adj] [shield.noun]",
+                "[shield.noun] of [funny_of]",
                 "[elytra.funny]",
                 "[funny_adj] [elytra.noun]",
+                "[elytra.noun] of [funny_of]",
                 "[fishing_rod.funny]",
-                "[funny_adj] [fishing_rod.noun]"
+                "[funny_adj] [fishing_rod.noun]",
+                "[fishing_rod.noun] of [funny_of]"
               ]
             },
             "any": {
@@ -790,24 +839,34 @@
                 "[fishing_rod.pre][fishing_rod.suf]",
                 "[pickaxe.funny]",
                 "[funny_adj] [pickaxe.noun]",
+                "[pickaxe.noun] of [funny_of]",
                 "[axe.funny]",
                 "[funny_adj] [axe.noun]",
+                "[axe.noun] of [funny_of]",
                 "[shovel.funny]",
                 "[funny_adj] [shovel.noun]",
+                "[shovel.noun] of [funny_of]",
                 "[bow.funny]",
                 "[funny_adj] [bow.noun]",
+                "[bow.noun] of [funny_of]",
                 "[crossbow.funny]",
                 "[funny_adj] [crossbow.noun]",
+                "[crossbow.noun] of [funny_of]",
                 "[trident.funny]",
                 "[funny_adj] [trident.noun]",
+                "[trident.noun] of [funny_of]",
                 "[mace.funny]",
                 "[funny_adj] [mace.noun]",
+                "[mace.noun] of [funny_of]",
                 "[shield.funny]",
                 "[funny_adj] [shield.noun]",
+                "[shield.noun] of [funny_of]",
                 "[elytra.funny]",
                 "[funny_adj] [elytra.noun]",
+                "[elytra.noun] of [funny_of]",
                 "[fishing_rod.funny]",
-                "[funny_adj] [fishing_rod.noun]"
+                "[funny_adj] [fishing_rod.noun]",
+                "[fishing_rod.noun] of [funny_of]"
               ]
             }
           }
@@ -846,24 +905,34 @@
               "template": [
                 "[pickaxe.funny] ([pickaxe.enchants])",
                 "[funny_adj] [pickaxe.noun] ([pickaxe.enchants])",
+                "[pickaxe.noun] of [funny_of] ([pickaxe.enchants])",
                 "[axe.funny] ([axe.enchants])",
                 "[funny_adj] [axe.noun] ([axe.enchants])",
+                "[axe.noun] of [funny_of] ([axe.enchants])",
                 "[shovel.funny] ([shovel.enchants])",
                 "[funny_adj] [shovel.noun] ([shovel.enchants])",
+                "[shovel.noun] of [funny_of] ([shovel.enchants])",
                 "[bow.funny] ([bow.enchants])",
                 "[funny_adj] [bow.noun] ([bow.enchants])",
+                "[bow.noun] of [funny_of] ([bow.enchants])",
                 "[crossbow.funny] ([crossbow.enchants])",
                 "[funny_adj] [crossbow.noun] ([crossbow.enchants])",
+                "[crossbow.noun] of [funny_of] ([crossbow.enchants])",
                 "[trident.funny] ([trident.enchants])",
                 "[funny_adj] [trident.noun] ([trident.enchants])",
+                "[trident.noun] of [funny_of] ([trident.enchants])",
                 "[mace.funny] ([mace.enchants])",
                 "[funny_adj] [mace.noun] ([mace.enchants])",
+                "[mace.noun] of [funny_of] ([mace.enchants])",
                 "[shield.funny] ([shield.enchants])",
                 "[funny_adj] [shield.noun] ([shield.enchants])",
+                "[shield.noun] of [funny_of] ([shield.enchants])",
                 "[elytra.funny] ([elytra.enchants])",
                 "[funny_adj] [elytra.noun] ([elytra.enchants])",
+                "[elytra.noun] of [funny_of] ([elytra.enchants])",
                 "[fishing_rod.funny] ([fishing_rod.enchants])",
-                "[funny_adj] [fishing_rod.noun] ([fishing_rod.enchants])"
+                "[funny_adj] [fishing_rod.noun] ([fishing_rod.enchants])",
+                "[fishing_rod.noun] of [funny_of] ([fishing_rod.enchants])"
               ]
             },
             "any": {
@@ -891,24 +960,34 @@
                 "[fishing_rod.pre][fishing_rod.suf] ([fishing_rod.enchants])",
                 "[pickaxe.funny] ([pickaxe.enchants])",
                 "[funny_adj] [pickaxe.noun] ([pickaxe.enchants])",
+                "[pickaxe.noun] of [funny_of] ([pickaxe.enchants])",
                 "[axe.funny] ([axe.enchants])",
                 "[funny_adj] [axe.noun] ([axe.enchants])",
+                "[axe.noun] of [funny_of] ([axe.enchants])",
                 "[shovel.funny] ([shovel.enchants])",
                 "[funny_adj] [shovel.noun] ([shovel.enchants])",
+                "[shovel.noun] of [funny_of] ([shovel.enchants])",
                 "[bow.funny] ([bow.enchants])",
                 "[funny_adj] [bow.noun] ([bow.enchants])",
+                "[bow.noun] of [funny_of] ([bow.enchants])",
                 "[crossbow.funny] ([crossbow.enchants])",
                 "[funny_adj] [crossbow.noun] ([crossbow.enchants])",
+                "[crossbow.noun] of [funny_of] ([crossbow.enchants])",
                 "[trident.funny] ([trident.enchants])",
                 "[funny_adj] [trident.noun] ([trident.enchants])",
+                "[trident.noun] of [funny_of] ([trident.enchants])",
                 "[mace.funny] ([mace.enchants])",
                 "[funny_adj] [mace.noun] ([mace.enchants])",
+                "[mace.noun] of [funny_of] ([mace.enchants])",
                 "[shield.funny] ([shield.enchants])",
                 "[funny_adj] [shield.noun] ([shield.enchants])",
+                "[shield.noun] of [funny_of] ([shield.enchants])",
                 "[elytra.funny] ([elytra.enchants])",
                 "[funny_adj] [elytra.noun] ([elytra.enchants])",
+                "[elytra.noun] of [funny_of] ([elytra.enchants])",
                 "[fishing_rod.funny] ([fishing_rod.enchants])",
-                "[funny_adj] [fishing_rod.noun] ([fishing_rod.enchants])"
+                "[funny_adj] [fishing_rod.noun] ([fishing_rod.enchants])",
+                "[fishing_rod.noun] of [funny_of] ([fishing_rod.enchants])"
               ]
             }
           }
@@ -935,7 +1014,41 @@
       "Rusty",
       "Pre-Loved",
       "Cursed",
-      "Suspiciously Shiny"
+      "Suspiciously Shiny",
+      "Spare",
+      "Backup",
+      "Questionable",
+      "Overpowered",
+      "Underwhelming",
+      "Sentimental",
+      "Dented",
+      "Glittery",
+      "Legendary (Not Really)",
+      "Fearsome-ish",
+      "Mum's",
+      "Trusty"
+    ],
+    "funny_of": [
+      "Mild Disappointment",
+      "Questionable Luck",
+      "Many Repairs",
+      "Almost Enough XP",
+      "Doom (Probably)",
+      "Snack Breaks",
+      "Gentle Persuasion",
+      "Wild Swings",
+      "Last Resort",
+      "Endless Apologies",
+      "the Third Attempt",
+      "No Refunds",
+      "Accidental Victory",
+      "Mostly Bad Ideas",
+      "Unknown Origin",
+      "Great Panic",
+      "Slight Peril",
+      "Total Confidence",
+      "Second Chances",
+      "Very Little Mercy"
     ],
     "pickaxe": {
       "noun": [
@@ -1588,5 +1701,6 @@
         "answer": "Choose Bow for epic names like Starflight or funny ones like Missed Again, and add Power or Infinity to show the enchantment."
       }
     ]
-  }
+  },
+  "seoTitle": "Minecraft Pickaxe, Bow & Trident Name Generator"
 }

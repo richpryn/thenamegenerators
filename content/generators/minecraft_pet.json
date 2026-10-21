@@ -6,7 +6,6 @@
   "published": "2026-10-21",
   "description": "Minecraft pet names and name tag ideas for wolves, cats, horses, parrots, axolotls, foxes, llamas, camels, frogs and allays: cute, cool, funny or food.",
   "seoKeywords": "minecraft pet name generator, minecraft pet names, minecraft dog names, minecraft wolf names, minecraft cat names, minecraft horse names, minecraft axolotl names, minecraft name tag ideas",
-  "seoTitle": "Minecraft Pet Names: Dog, Cat, Horse & Axolotl Ideas",
   "isPopular": false,
   "filters": {
     "animal": {
@@ -598,7 +597,22 @@
         "Pickle",
         "Waffles",
         "Sugar",
-        "Dot"
+        "Dot",
+        "Bubble",
+        "Fudge",
+        "Petal",
+        "Pumpkin",
+        "Snowdrop",
+        "Puddle",
+        "Bobbin",
+        "Tinker",
+        "Sprinkles",
+        "Hazel",
+        "Cupcake",
+        "Pip-Squeak",
+        "Marshmallow",
+        "Dumpling",
+        "Blossom"
       ],
       "cool": [
         "Shadow",
@@ -630,7 +644,22 @@
         "Vortex",
         "Ember",
         "Flint",
-        "Obsidian"
+        "Obsidian",
+        "Blitz",
+        "Cobalt",
+        "Eclipse",
+        "Falcon",
+        "Ghost Rider",
+        "Havoc",
+        "Jinx",
+        "Lynx",
+        "Midnight",
+        "Nyx",
+        "Outlaw",
+        "Pixel",
+        "Rebel",
+        "Spectre",
+        "Talon"
       ],
       "funny": [
         "Creeper Keeper",
@@ -662,7 +691,22 @@
         "Tater Tot",
         "Sir Sniffs-a-Lot",
         "Brian",
-        "Susan"
+        "Susan",
+        "Mr Wobbly Legs",
+        "Princess Puddle",
+        "Lord Snackington",
+        "Barry",
+        "Colin",
+        "Janet",
+        "Dame Fluffington",
+        "Sergeant Snooze",
+        "Count Crumble",
+        "Mister Mischief",
+        "Little Chaos",
+        "The Boss",
+        "Fuzzbucket",
+        "Chief Napper",
+        "Bean Machine"
       ],
       "food": [
         "Nugget",
@@ -694,7 +738,22 @@
         "Pancake",
         "Apple",
         "Crumpet",
-        "Gingerbread"
+        "Gingerbread",
+        "Carrot",
+        "Honey Bottle",
+        "Cookie Dough",
+        "Glow Berry Jam",
+        "Rabbit Pie",
+        "Beet Soup",
+        "Golden Carrot",
+        "Melon Slice",
+        "Suspicious Stew",
+        "Bread",
+        "Scone",
+        "Toffee Apple",
+        "Jam Tart",
+        "Flapjack",
+        "Teacake"
       ]
     },
     "animals": {
@@ -708,7 +767,12 @@
         "Rex",
         "Bones",
         "Woofles",
-        "Sergeant Sniff"
+        "Sergeant Sniff",
+        "Fetch",
+        "Collar",
+        "Pawsome",
+        "Growler",
+        "Bark Vader"
       ],
       "cat": [
         "Chairman Meow",
@@ -720,7 +784,12 @@
         "Purrlock",
         "Furball",
         "Meowzart",
-        "Catrick"
+        "Catrick",
+        "Meowly",
+        "Kitkin",
+        "Purrsimmon",
+        "Tabby",
+        "Sir Whiskington"
       ],
       "horse": [
         "Neighthan",
@@ -732,7 +801,12 @@
         "Horsey McHorseface",
         "Mane Event",
         "Oatcake",
-        "Thunderhoof"
+        "Thunderhoof",
+        "Trotsky",
+        "Stirrup",
+        "Canter",
+        "Neigh-bour",
+        "Horseradish"
       ],
       "parrot": [
         "Polly",
@@ -744,7 +818,12 @@
         "Chatterbox",
         "Disco",
         "Jukebox",
-        "Beaky"
+        "Beaky",
+        "Tweedle",
+        "Feathers",
+        "Parrotty",
+        "Squawkins",
+        "Beat Drop"
       ],
       "axolotl": [
         "Axel",
@@ -756,7 +835,12 @@
         "Wiggles",
         "Lucy",
         "Smiley",
-        "Blue"
+        "Blue",
+        "Lotty",
+        "Axle Grease",
+        "Puddle",
+        "Frilly",
+        "Gilbert"
       ],
       "fox": [
         "Rusty",
@@ -768,7 +852,12 @@
         "Copper",
         "Ember",
         "Snowball",
-        "Fennec"
+        "Fennec",
+        "Foxy",
+        "Tod",
+        "Russet",
+        "Pounce",
+        "Sneaky"
       ],
       "llama": [
         "Como Te Llamas",
@@ -780,7 +869,12 @@
         "Llarry",
         "Caravan",
         "Woolly",
-        "Trader Tom"
+        "Trader Tom",
+        "Llamalot",
+        "Fluffernutter",
+        "Spit Spot",
+        "Llinda",
+        "Alpacino"
       ],
       "camel": [
         "Humphrey",
@@ -792,7 +886,12 @@
         "Oasis",
         "Desert Rose",
         "Saharah",
-        "Two Seats"
+        "Two Seats",
+        "Humps",
+        "Mirage",
+        "Dusty",
+        "Camelot",
+        "Caramel"
       ],
       "frog": [
         "Croaky",
@@ -804,7 +903,12 @@
         "Leap",
         "Marsh",
         "Bouncy",
-        "Sir Hops"
+        "Sir Hops",
+        "Toady",
+        "Lilypad",
+        "Jumpy",
+        "Froglet",
+        "Hoppity"
       ],
       "allay": [
         "Jingles",
@@ -816,7 +920,12 @@
         "Sparkle",
         "Wisp",
         "Blue",
-        "Hummer"
+        "Hummer",
+        "Chime",
+        "Tinkle",
+        "Glimmer",
+        "Skye",
+        "Doo-Wop"
       ]
     }
   },
@@ -862,5 +971,6 @@
         "answer": "Choose Horse for names like Thunder, Clover or Sir Gallops. Horses are tamed by riding them until they stop throwing you off."
       }
     ]
-  }
+  },
+  "seoTitle": "Minecraft Pet Names: Dog, Cat, Horse & Axolotl Ideas"
 }
