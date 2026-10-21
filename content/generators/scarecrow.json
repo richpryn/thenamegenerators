@@ -43,7 +43,8 @@
         "folksy": {
           "recipe": "template",
           "template": [
-            "[folksy.titles] [first] [folksy.surnames]",
+            "[folksy.titles.m] [first.m] [folksy.surnames]",
+            "[folksy.titles.f] [first.f] [folksy.surnames]",
             "[first] [folksy.surnames]",
             "[folksy.titles] [folksy.surnames]"
           ]
@@ -58,7 +59,8 @@
         "any": {
           "recipe": "template",
           "template": [
-            "[folksy.titles] [first] [folksy.surnames]",
+            "[folksy.titles.m] [first.m] [folksy.surnames]",
+            "[folksy.titles.f] [first.f] [folksy.surnames]",
             "[first] [folksy.surnames]",
             "[folksy.titles] [folksy.surnames]",
             "The [creepy.figures]",
@@ -74,7 +76,8 @@
         "folksy": {
           "recipe": "template",
           "template": [
-            "[folksy.titles] [first] [folksy.surnames] of [places]",
+            "[folksy.titles.m] [first.m] [folksy.surnames] of [places]",
+            "[folksy.titles.f] [first.f] [folksy.surnames] of [places]",
             "[first] [folksy.surnames] of [places]"
           ]
         },
@@ -88,7 +91,8 @@
         "any": {
           "recipe": "template",
           "template": [
-            "[folksy.titles] [first] [folksy.surnames] of [places]",
+            "[folksy.titles.m] [first.m] [folksy.surnames] of [places]",
+            "[folksy.titles.f] [first.f] [folksy.surnames] of [places]",
             "[first] [folksy.surnames] of [places]",
             "The [creepy.figures] of [places]",
             "[creepy.adjectives] [first] of [places]"
@@ -98,38 +102,42 @@
     }
   },
   "data": {
-    "first": [
-      "Tom",
-      "Jack",
-      "Ned",
-      "Sam",
-      "Bill",
-      "Wat",
-      "Hob",
-      "Jem",
-      "Ted",
-      "Ben",
-      "Alf",
-      "Bert",
-      "Walter",
-      "Harry",
-      "Joe",
-      "Will",
-      "Molly",
-      "Peg",
-      "Annie",
-      "Bess",
-      "Nell",
-      "Kit",
-      "Maggie",
-      "Dolly",
-      "Polly",
-      "Sal",
-      "Hattie",
-      "Lou",
-      "Mabel",
-      "Ida"
-    ],
+    "first": {
+      "m": [
+        "Tom",
+        "Jack",
+        "Ned",
+        "Sam",
+        "Bill",
+        "Wat",
+        "Hob",
+        "Jem",
+        "Ted",
+        "Ben",
+        "Alf",
+        "Bert",
+        "Walter",
+        "Harry",
+        "Joe",
+        "Will"
+      ],
+      "f": [
+        "Molly",
+        "Peg",
+        "Annie",
+        "Bess",
+        "Nell",
+        "Kit",
+        "Maggie",
+        "Dolly",
+        "Polly",
+        "Sal",
+        "Hattie",
+        "Lou",
+        "Mabel",
+        "Ida"
+      ]
+    },
     "places": [
       "Barley Rise",
       "Crow Hill Farm",
@@ -153,18 +161,26 @@
       "the Bottom Paddock"
     ],
     "folksy": {
-      "titles": [
-        "Old",
-        "Mother",
-        "Farmer",
-        "Uncle",
-        "Auntie",
-        "Little",
-        "Granny",
-        "Grandad",
-        "Mister",
-        "Old Man"
-      ],
+      "titles": {
+        "m": [
+          "Old",
+          "Farmer",
+          "Uncle",
+          "Little",
+          "Grandad",
+          "Mister",
+          "Old Man"
+        ],
+        "f": [
+          "Old",
+          "Mother",
+          "Farmer",
+          "Auntie",
+          "Little",
+          "Granny",
+          "Missus"
+        ]
+      },
       "surnames": [
         "Turnip",
         "Strawfield",
