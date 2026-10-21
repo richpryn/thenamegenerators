@@ -21,7 +21,8 @@
     "halloween": "pumpkin",
     "minecraft": "pickaxe",
     "christmas": "star",
-    "mythical": "feather-wings"
+    "mythical": "feather-wings",
+    "mythology": "laurel"
   },
   "generators": {
     "album": "vinyl",
@@ -45,6 +46,7 @@
     "business": "lightbulb",
     "cafe": "cup",
     "centaur": "feather-wings",
+    "chinese_dragon": "dragon",
     "christmas_elf": "star",
     "christmas_pet": "paw",
     "christmas_team": "star",
@@ -89,6 +91,7 @@
     "githyanki": "katana",
     "gnome": "mushroom",
     "goblin": "goblin-ear",
+    "god": "laurel",
     "golem": "pickaxe",
     "griffin": "feather-wings",
     "guild": "banner",
@@ -107,6 +110,7 @@
     "hydra": "lizard",
     "japanese_sword": "katana",
     "khajiit": "paw",
+    "kitsune": "leaf-flame",
     "knight": "helm",
     "kobold": "lizard",
     "kraken": "lizard",
@@ -175,6 +179,7 @@
     "tiefling": "horns",
     "troll": "tusks",
     "unicorn": "star",
+    "valkyrie": "round-shield",
     "vampire": "bat",
     "vampire_clan": "bat",
     "victorian": "top-hat",

@@ -1,0 +1,168 @@
+{
+  "title": "Kitsune Name Generator",
+  "slug": "kitsune-name-generator",
+  "icon": "🦊",
+  "category": "mythology",
+  "published": "2026-10-22",
+  "description": "Kitsune names from real Japanese words, with their meanings: Tsuki for moon, Kitsunebi for foxfire. Add a tail count, from One-Tailed to Nine-Tailed, or a title.",
+  "seoKeywords": "kitsune name generator, kitsune names, fox spirit names, japanese fox names, nine tailed fox names, kitsune names and meanings, yokai names",
+  "seoTitle": "Kitsune Name Generator: Fox Spirit Names & Meanings",
+  "isPopular": false,
+  "filters": {
+    "format": {
+      "label": "Name format",
+      "options": [
+        "meaning",
+        "tails",
+        "title",
+        "name"
+      ],
+      "optionLabels": {
+        "meaning": "With its meaning (Tsuki, moon)",
+        "tails": "With tails (Tsuki the Nine-Tailed)",
+        "title": "With a title (of the Rice Fields)",
+        "name": "Name only"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "meaning": {
+      "recipe": "template",
+      "template": "[meanings]"
+    },
+    "tails": {
+      "recipe": "template",
+      "template": "[names] the [tails]"
+    },
+    "name": {
+      "recipe": "template",
+      "template": "[names]"
+    },
+    "title": {
+      "recipe": "template",
+      "template": "[names] [epithets]"
+    }
+  },
+  "data": {
+    "names": [
+      "Tsuki",
+      "Hoshi",
+      "Yuki",
+      "Kaze",
+      "Hana",
+      "Akari",
+      "Hotaru",
+      "Momiji",
+      "Kaede",
+      "Sakura",
+      "Ame",
+      "Kumo",
+      "Hikari",
+      "Kage",
+      "Tama",
+      "Kohaku",
+      "Shiro",
+      "Kuro",
+      "Kin",
+      "Gin",
+      "Yoru",
+      "Asa",
+      "Yume",
+      "Nami",
+      "Sora",
+      "Mizu",
+      "Ren",
+      "Matsu",
+      "Ume",
+      "Kiku",
+      "Fuyu",
+      "Natsu",
+      "Haru",
+      "Aki",
+      "Kiri",
+      "Suzu",
+      "Hinode",
+      "Yuugure",
+      "Inaho",
+      "Kitsunebi"
+    ],
+    "meanings": [
+      "Tsuki (“moon”)",
+      "Hoshi (“star”)",
+      "Yuki (“snow”)",
+      "Kaze (“wind”)",
+      "Hana (“flower”)",
+      "Akari (“light”)",
+      "Hotaru (“firefly”)",
+      "Momiji (“autumn leaves”)",
+      "Kaede (“maple”)",
+      "Sakura (“cherry blossom”)",
+      "Ame (“rain”)",
+      "Kumo (“cloud”)",
+      "Hikari (“light”)",
+      "Kage (“shadow”)",
+      "Tama (“jewel”)",
+      "Kohaku (“amber”)",
+      "Shiro (“white”)",
+      "Kuro (“black”)",
+      "Kin (“gold”)",
+      "Gin (“silver”)",
+      "Yoru (“night”)",
+      "Asa (“morning”)",
+      "Yume (“dream”)",
+      "Nami (“wave”)",
+      "Sora (“sky”)",
+      "Mizu (“water”)",
+      "Ren (“lotus”)",
+      "Matsu (“pine”)",
+      "Ume (“plum blossom”)",
+      "Kiku (“chrysanthemum”)",
+      "Fuyu (“winter”)",
+      "Natsu (“summer”)",
+      "Haru (“spring”)",
+      "Aki (“autumn”)",
+      "Kiri (“mist”)",
+      "Suzu (“bell”)",
+      "Hinode (“sunrise”)",
+      "Yuugure (“dusk”)",
+      "Inaho (“ear of rice”)",
+      "Kitsunebi (“foxfire”)"
+    ],
+    "tails": [
+      "One-Tailed",
+      "Two-Tailed",
+      "Three-Tailed",
+      "Four-Tailed",
+      "Five-Tailed",
+      "Six-Tailed",
+      "Seven-Tailed",
+      "Eight-Tailed",
+      "Nine-Tailed"
+    ],
+    "epithets": [
+      "the Trickster",
+      "of the Rice Fields",
+      "the Shape-Changer",
+      "Who Lights the Foxfire",
+      "the Mischievous",
+      "of the Mountain Shrine",
+      "the Thousand-Year Fox",
+      "the Silver Fox",
+      "Who Wears a Human Face",
+      "the White Fox",
+      "the Fox of the Bamboo Grove",
+      "of the Moonlit Road"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🦊 Kitsune Name Generator",
+      "tagline": "Fox spirit names from real Japanese words, with what each one means."
+    },
+    "intro": "In Japanese folklore, the kitsune is a fox spirit that grows wiser and more powerful with age, gaining tails until it has nine. Some are tricksters, some are messengers of the rice god Inari. This **kitsune name generator** uses real Japanese words for names, like Tsuki (moon) and Kitsunebi (foxfire), with their meanings and a tail count.",
+    "sections": [],
+    "faqs": []
+  }
+}

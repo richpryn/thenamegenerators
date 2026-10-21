@@ -135,6 +135,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Category: Mythology -->
+  <url>
+    <loc>https://thenamegenerators.com/categories/mythology-names.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Category: Music -->
   <url>
     <loc>https://thenamegenerators.com/categories/music-names.html</loc>
@@ -362,6 +369,13 @@
   <!-- Generator: Centaur Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/centaur-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Chinese Dragon Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/chinese-dragon-name-generator.html</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -674,6 +688,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: God Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/god-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Golem Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/golem-name-generator.html</loc>
@@ -797,6 +818,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/khajiit-name-generator.html</loc>
     <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Kitsune Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/kitsune-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1272,6 +1300,13 @@
   <!-- Generator: Unicorn Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/unicorn-name-generator.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Valkyrie Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/valkyrie-name-generator.html</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

@@ -1,0 +1,105 @@
+{
+  "title": "Valkyrie Name Generator",
+  "slug": "valkyrie-name-generator",
+  "icon": "🛡️",
+  "category": "mythology",
+  "published": "2026-10-22",
+  "description": "Valkyrie names built the Old Norse way, from real name parts meaning battle, spear, victory and shield, like Sigrun and Geirhild, with a title like Chooser of the Slain.",
+  "seoKeywords": "valkyrie name generator, valkyrie names, norse valkyrie names, shield maiden names, norse warrior woman names, viking female names, valkyrie names and meanings",
+  "seoTitle": "Valkyrie Name Generator: Norse Shield-Maiden Names",
+  "isPopular": false,
+  "filters": {
+    "format": {
+      "label": "Name format",
+      "options": [
+        "name",
+        "title"
+      ],
+      "optionLabels": {
+        "name": "Name only",
+        "title": "With a title (Chooser of the Slain)"
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "format",
+  "cases": {
+    "name": {
+      "recipe": "template",
+      "template": "[pre][suf]"
+    },
+    "title": {
+      "recipe": "template",
+      "template": [
+        "[pre][suf] [epithets]",
+        "[pre][suf], [epithets_titled]"
+      ]
+    }
+  },
+  "data": {
+    "pre": [
+      "Sig",
+      "Geir",
+      "Rand",
+      "Hjor",
+      "Bryn",
+      "Svan",
+      "Gunn",
+      "Hild",
+      "Rad",
+      "Sky",
+      "Ey",
+      "Sol",
+      "Thrud",
+      "Ulf",
+      "Vig",
+      "Her",
+      "Skog",
+      "Alf",
+      "Hrafn"
+    ],
+    "suf": [
+      "hild",
+      "run",
+      "dis",
+      "gerd",
+      "vor",
+      "frid",
+      "leif",
+      "rid",
+      "borg",
+      "laug",
+      "veig",
+      "ny"
+    ],
+    "epithets": [
+      "the Shield-Maiden",
+      "of the Swan Feathers",
+      "Who Rides the Storm",
+      "the Spear-Bearer",
+      "the Battle-Swan",
+      "of the Golden Hall",
+      "Who Carries Heroes Home",
+      "the Raven-Winged",
+      "the War-Bride",
+      "the Helm-Crowned",
+      "the Mist-Rider",
+      "the Sword-Singer",
+      "Who Weaves the Fate of Battle"
+    ],
+    "epithets_titled": [
+      "Chooser of the Slain",
+      "Rider of the Bifrost-Road",
+      "Daughter of Battle"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🛡️ Valkyrie Name Generator",
+      "tagline": "Valkyrie names built from real Old Norse name parts, with a title to ride into battle with."
+    },
+    "intro": "Valkyries are the choosers of the slain in Norse myth, who carried fallen warriors to Valhalla. Their names were built from Old Norse words for battle, spears and shields. This **valkyrie name generator** builds names the same way, from real Old Norse name parts, with a title if you want one.",
+    "sections": [],
+    "faqs": []
+  }
+}
