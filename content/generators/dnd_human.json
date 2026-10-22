@@ -33,8 +33,70 @@
       "optionLabels": {
         "any": "Any"
       }
+    },
+    "letter": {
+      "label": "Starts with",
+      "options": [
+        "any",
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z"
+      ],
+      "optionLabels": {
+        "any": "Any letter",
+        "a": "A",
+        "b": "B",
+        "c": "C",
+        "d": "D",
+        "e": "E",
+        "f": "F",
+        "g": "G",
+        "h": "H",
+        "i": "I",
+        "j": "J",
+        "k": "K",
+        "l": "L",
+        "m": "M",
+        "n": "N",
+        "o": "O",
+        "p": "P",
+        "q": "Q",
+        "r": "R",
+        "s": "S",
+        "t": "T",
+        "u": "U",
+        "v": "V",
+        "w": "W",
+        "x": "X",
+        "y": "Y",
+        "z": "Z"
+      }
     }
   },
+  "startsWith": "letter",
   "recipe": "switch",
   "on": "style",
   "cases": {
@@ -362,7 +424,7 @@
       },
       {
         "heading": "Choosing a name for your human",
-        "content": "<ul><li><strong>Start with where they grew up.</strong> A fisherman from Luskan and a noble from Waterdeep shouldn't sound alike.</li><li><strong>Use the surname for backstory.</strong> Illuskan sea names (Saltbeard, Tidebreaker) say \"sailor family\" at once.</li><li><strong>Mix for travellers.</strong> A human raised in a port city might have a Chondathan first name and an Illuskan surname.</li></ul><p>For the other peoples of the Realms, see the <a href=\"../categories/dnd-names.html\">D&amp;D name generators</a>, or try the <a href=\"baldurs-gate-3-name-generator.html\">Baldur's Gate 3 Name Generator</a>.</p>"
+        "content": "<ul><li><strong>Start with where they grew up.</strong> A fisherman from Luskan and a noble from Waterdeep shouldn't sound alike.</li><li><strong>Use the surname for backstory.</strong> Illuskan sea names (Saltbeard, Tidebreaker) say \"sailor family\" at once.</li><li><strong>Mix for travellers.</strong> A human raised in a port city might have a Chondathan first name and an Illuskan surname.</li></ul><p>For the other peoples of the Realms, see the <a href=\"../categories/dnd-names.html\">D&amp;D name generators</a>, or try the <a href=\"baldurs-gate-3-name-generator.html\">Baldur's Gate 3 Name Generator</a>.</p><p>For shopkeepers, guards and innkeepers, try the <a href=\"npc-name-generator.html\">NPC Name Generator</a>.</p>"
       }
     ],
     "faqs": [
