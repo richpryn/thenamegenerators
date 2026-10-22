@@ -118,15 +118,20 @@ const AUTHOR = { "@type": "Person", "name": "Rich", "url": "https://thenamegener
 const USAGE_NOTE = "Free to use, no credit needed. If you're naming a business, brand, band or product, check the name isn't already taken or trademarked first.";
 
 /**
- * Page title: the generator's full title, plus the site name, plus
- * "Free Online Tool" when it still fits in ~60 characters.
+ * Page title: a hand-written seoTitle if there is one. Otherwise the
+ * generator's title plus the plain "X Names" phrase people also search for
+ * ("Alien Name Generator: Free Alien Names"), with the site name when it
+ * fits in ~65 characters.
  */
 function generateSEOTitle(generator) {
   if (generator.seoTitle) return generator.seoTitle;
-  const withTool = `${generator.title} - Free Online Tool | ${SITE_NAME}`;
-  if (withTool.length <= 60) return withTool;
-  const withSite = `${generator.title} | ${SITE_NAME}`;
-  return withSite.length <= 60 ? withSite : generator.title;
+  const noun = pluralNoun(generator);
+  const options = [
+    `${generator.title}: Free ${noun} | ${SITE_NAME}`,
+    `${generator.title}: Free ${noun}`,
+    `${generator.title} | ${SITE_NAME}`,
+  ];
+  return options.find(t => t.length <= 65) || generator.title;
 }
 
 /** "Elf Name Generator" -> "Elf Names", "Epithet Generator" -> "Epithets" */
@@ -158,6 +163,31 @@ function seededRandom(seedText) {
 }
 
 /**
+ * A "Starts with" filter only offers letters the generator can actually
+ * make (at least three names under some combination of its other options).
+ */
+function trimLetterOptions(generator) {
+  const key = generator.startsWith;
+  if (!key || !generator.filters || !generator.filters[key]) return;
+  const engine = RecipeEngine.createGenerator(generator, { random: seededRandom(generator.slug + ':letters') });
+  const text = {};
+  let combos = [{}];
+  for (const [k, f] of Object.entries(generator.filters)) {
+    if (k === key) continue;
+    if (f.type === 'text') { text[k] = f.example || f.default || 'Sam'; continue; }
+    combos = combos.flatMap(c => engine.availableOptions(k, c).map(o => ({ ...c, [k]: o })));
+  }
+  const counts = {};
+  for (const c of combos.slice(0, 24)) {
+    const seen = new Set();
+    for (let i = 0; i < 30; i++) engine.generate({ ...text, ...c }, 10).forEach(n => seen.add(n));
+    seen.forEach(n => { const l = RecipeEngine.initialOf(n); counts[l] = (counts[l] || 0) + 1; });
+  }
+  const filter = generator.filters[key];
+  generator.filters = { ...generator.filters, [key]: { ...filter, options: filter.options.filter(o => o === 'any' || (counts[o] || 0) >= 3) } };
+}
+
+/**
  * Sample names shown in the page's HTML, so search engines and AI tools can
  * see what the generator makes. Grouped by filter choice (up to 6 groups).
  */
@@ -169,6 +199,7 @@ function exampleNames(generator) {
   const textValues = {};
   const selectKeys = [];
   for (const [key, f] of Object.entries(filters)) {
+    if (key === generator.startsWith) continue;
     if (f.type === 'text') textValues[key] = f.example || f.default || '';
     else selectKeys.push(key);
   }
@@ -1558,6 +1589,7 @@ function build() {
     console.log(`  ✅ Created: categories/${category.slug}-names.html`);
   }
 
+  site.all.forEach(trimLetterOptions);
   for (const generator of site.all) {
     const category = content.categories.find(c => c.slug === generator.category);
     fs.writeFileSync(path.join(POSTS_DIR, `${generator.slug}.html`), generateGeneratorPage(generator, category, site));

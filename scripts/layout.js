@@ -169,6 +169,7 @@ const MENU = [
     ['posts/dwarf-name-generator.html', 'Dwarf names'],
     ['posts/dragon-name-generator.html', 'Dragon names'],
     ['posts/tiefling-name-generator.html', 'Tiefling names'],
+    ['posts/npc-name-generator.html', 'NPC names'],
     ['posts/wizard-name-generator.html', 'Wizard names'],
     ['posts/vampire-name-generator.html', 'Vampire names'],
     ['posts/tavern-name-generator.html', 'Tavern names'],
