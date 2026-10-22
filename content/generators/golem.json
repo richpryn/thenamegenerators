@@ -598,7 +598,11 @@
       "Brick",
       "Kiln",
       "Terracotta",
-      "Adobe"
+      "Adobe",
+      "Silt",
+      "Ochre",
+      "Shard",
+      "Marl"
     ],
     "stone": [
       "Stone",
@@ -608,7 +612,11 @@
       "Marble",
       "Slate",
       "Cobble",
-      "Boulder"
+      "Boulder",
+      "Shale",
+      "Obsidian",
+      "Gravel",
+      "Crag"
     ],
     "iron": [
       "Iron",
@@ -618,7 +626,11 @@
       "Copper",
       "Rivet",
       "Anvil",
-      "Cog"
+      "Cog",
+      "Tin",
+      "Pewter",
+      "Bolt",
+      "Chain"
     ],
     "wood": [
       "Oak",
@@ -628,7 +640,11 @@
       "Timber",
       "Willow",
       "Elm",
-      "Thorn"
+      "Thorn",
+      "Birch",
+      "Hazel",
+      "Cedar",
+      "Pine"
     ],
     "crystal": [
       "Crystal",
@@ -638,7 +654,11 @@
       "Prism",
       "Opal",
       "Geode",
-      "Diamond"
+      "Diamond",
+      "Jade",
+      "Garnet",
+      "Topaz",
+      "Ruby"
     ],
     "suf": [
       "heart",
@@ -652,7 +672,9 @@
       "watch",
       "stride",
       "hulk",
-      "keeper"
+      "keeper",
+      "brow",
+      "jaw"
     ],
     "plain": [
       "Brutus",
@@ -703,7 +725,64 @@
       "Professor Plod",
       "Duke of Dust",
       "Old Creaky",
-      "Tin Tim"
+      "Tin Tim",
+      "Stompy",
+      "Dusty",
+      "Mossy",
+      "Rubble",
+      "Grumbles",
+      "Crumbs",
+      "Mudpie",
+      "Lumpkin",
+      "Gritty",
+      "Captain Crumble",
+      "Biscuit",
+      "Clonk",
+      "Thudsworth",
+      "Lumbering Larry",
+      "Sergeant Sludge",
+      "Gravelly Graham",
+      "Pudding",
+      "Stumpy",
+      "Brickbert",
+      "Sir Topple",
+      "Wobbles",
+      "Rumble",
+      "Dumpling",
+      "Chunk",
+      "Boulder Bob",
+      "Trundle",
+      "Hefty Hector",
+      "Teapot",
+      "Flowerpot",
+      "Paperweight",
+      "Bookend",
+      "Pebbledash",
+      "Grout",
+      "Mister Mortar",
+      "Professor Pebbleworth",
+      "Old Grumpy",
+      "Gubbins",
+      "Thingummy",
+      "Mudge",
+      "Tumble",
+      "Slab",
+      "Concrete Colin",
+      "Big Derek",
+      "Monty",
+      "Brian",
+      "Wonky",
+      "Clatter",
+      "Scrap",
+      "Bucket",
+      "Muddles",
+      "Pudge",
+      "Stony Tony",
+      "Bert",
+      "Clumpy",
+      "Admiral Anvil",
+      "Major Mudslide",
+      "Bumble"
     ],
     "places": [
       "the Old Workshop",

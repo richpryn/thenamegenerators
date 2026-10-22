@@ -267,7 +267,19 @@
           "Scorugrim",
           "Scorovar",
           "Scorax",
-          "Scorek"
+          "Scorek",
+          "Volcarax",
+          "Volcorn",
+          "Volcagor",
+          "Volcuzul",
+          "Volcurok",
+          "Volcoth",
+          "Volcakar",
+          "Volcugrim",
+          "Volcovar",
+          "Volcax",
+          "Volcek",
+          "Volcorvax"
         ],
         "frost": [
           "Hrimarax",
@@ -919,7 +931,17 @@
           "Duskovar",
           "Duskax",
           "Duskek",
-          "Duskorvax"
+          "Duskorvax",
+          "Tenebrorn",
+          "Tenebragor",
+          "Tenebruzul",
+          "Tenebrurok",
+          "Tenebroth",
+          "Tenebrakar",
+          "Tenebrugrim",
+          "Tenebrovar",
+          "Tenebrek",
+          "Tenebrorvax"
         ],
         "sea": [
           "Thalarax",
@@ -1247,7 +1269,18 @@
           "Fenovar",
           "Fenax",
           "Fenek",
-          "Fenorvax"
+          "Fenorvax",
+          "Sulpharax",
+          "Sulphorn",
+          "Sulphagor",
+          "Sulphuzul",
+          "Sulphurok",
+          "Sulphoth",
+          "Sulphakar",
+          "Sulphugrim",
+          "Sulphovar",
+          "Sulphek",
+          "Sulphorvax"
         ]
       },
       "sleek": {
@@ -1410,7 +1443,18 @@
           "Scorova",
           "Scorael",
           "Scorithra",
-          "Scoriel"
+          "Scoriel",
+          "Solys",
+          "Solyra",
+          "Solessa",
+          "Solith",
+          "Soleryn",
+          "Solia",
+          "Solisse",
+          "Solova",
+          "Solael",
+          "Solithra",
+          "Soliel"
         ],
         "frost": [
           "Hrimys",
@@ -2228,7 +2272,19 @@
           "Brinova",
           "Brinael",
           "Brinithra",
-          "Briniel"
+          "Briniel",
+          "Pelagys",
+          "Pelagyra",
+          "Pelagessa",
+          "Pelagara",
+          "Pelagith",
+          "Pelageryn",
+          "Pelagia",
+          "Pelagisse",
+          "Pelagova",
+          "Pelagael",
+          "Pelagithra",
+          "Pelagiel"
         ],
         "venom": [
           "Virys",

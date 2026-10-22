@@ -411,7 +411,10 @@
         "Alder",
         "Holly",
         "Yew",
-        "Beech"
+        "Beech",
+        "Cedar",
+        "Maple",
+        "Aspen"
       ],
       "b": [
         "leaf",
@@ -441,7 +444,10 @@
         "Mist",
         "Silver",
         "Clear",
-        "Ripple"
+        "Ripple",
+        "Lake",
+        "Iris",
+        "Pebble"
       ],
       "b": [
         "song",
@@ -471,7 +477,10 @@
         "Azure",
         "Gull",
         "Surf",
-        "Breeze"
+        "Breeze",
+        "Shore",
+        "Brine",
+        "Ocean"
       ],
       "b": [
         "dancer",
@@ -501,7 +510,10 @@
         "Thyme",
         "Eagle",
         "Ridge",
-        "Moss"
+        "Moss",
+        "Lark",
+        "Gorse",
+        "Bracken"
       ],
       "b": [
         "song",

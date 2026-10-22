@@ -236,15 +236,21 @@
         "Tog",
         "Murg",
         "Dunk",
-        "Sod",
-        "Brog"
+        "Rudd",
+        "Brog",
+        "Trog",
+        "Lump",
+        "Dob",
+        "Grunk",
+        "Gurt",
+        "Clag"
       ],
       "b": [
         "ul",
         "ok",
         "ash",
         "gar",
-        "um",
+        "ath",
         "ig",
         "mor",
         "bash"
@@ -259,7 +265,7 @@
         "Bas",
         "Quarr",
         "Tor",
-        "Kar",
+        "Skarn",
         "Slat",
         "Gran",
         "Obs",
@@ -267,7 +273,13 @@
         "Cairn",
         "Dolm",
         "Crag",
-        "Monol"
+        "Monol",
+        "Brec",
+        "Gorm",
+        "Cobb",
+        "Kell",
+        "Tarn",
+        "Feld"
       ],
       "b": [
         "ath",
@@ -285,19 +297,25 @@
         "Hrim",
         "Skad",
         "Vind",
-        "Isa",
+        "Is",
         "Frost",
         "Snae",
         "Kald",
         "Jok",
         "Hel",
-        "Ulf",
+        "Hjal",
         "Gel",
         "Rime",
         "Svar",
         "Bryn",
         "Thorg",
-        "Ondr"
+        "Orm",
+        "Bjar",
+        "Hvit",
+        "Fjal",
+        "Sval",
+        "Vald",
+        "Hrok"
       ],
       "b": [
         "ir",
@@ -327,7 +345,13 @@
         "Infer",
         "Pyr",
         "Brim",
-        "Scor"
+        "Scor",
+        "Brand",
+        "Char",
+        "Flam",
+        "Volk",
+        "Fyr",
+        "Ruk"
       ],
       "b": [
         "tor",
@@ -346,7 +370,7 @@
         "Nimb",
         "Cirr",
         "Strat",
-        "Cum",
+        "Mir",
         "Hal",
         "Zeph",
         "Ael",
@@ -356,8 +380,14 @@
         "Aur",
         "Cel",
         "Thal",
-        "Ori",
-        "Neb"
+        "Vael",
+        "Neb",
+        "Alt",
+        "Eth",
+        "Nub",
+        "Hes",
+        "Cyr",
+        "Lyr"
       ],
       "b": [
         "ion",
@@ -366,7 +396,7 @@
         "eus",
         "ana",
         "iros",
-        "elle",
+        "ene",
         "ius"
       ]
     },
@@ -374,20 +404,25 @@
       "a": [
         "Thun",
         "Tor",
-        "Gale",
-        "Tempe",
+        "Gal",
+        "Storm",
         "Lev",
         "Hurr",
-        "Cyc",
+        "Strom",
         "Typh",
-        "Wave",
+        "Vag",
         "Bront",
         "Thal",
         "Ner",
         "Pont",
-        "Ocea",
+        "Skal",
         "Squal",
-        "Rag"
+        "Rag",
+        "Mael",
+        "Kael",
+        "Sturm",
+        "Kym",
+        "Haf"
       ],
       "b": [
         "dor",
@@ -397,7 +432,7 @@
         "os",
         "eus",
         "ira",
-        "uun"
+        "an"
       ]
     },
     "places": {
@@ -461,8 +496,8 @@
       "the Colossal"
     ],
     "epithets_titled": [
-      "Lord of the High Hall",
-      "King of the Mountain",
+      "Ruler of the High Hall",
+      "Ruler of the Mountain",
       "Bane of Castles",
       "Shaker of Valleys"
     ]
