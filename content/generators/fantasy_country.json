@@ -1,6 +1,6 @@
 {
   "title": "Fantasy Country Name Generator",
-  "seoTitle": "Fantasy Country and Kingdom Name Generator",
+  "seoTitle": "Fantasy Country Names: Kingdom & Nation Generator",
   "slug": "fantasy-country-name-generator",
   "icon": "🗺️",
   "category": "places",
@@ -1323,7 +1323,7 @@
       },
       {
         "heading": "Fitting a country onto your map",
-        "content": "<ul><li><strong>Make neighbours sound different.</strong> A Norse-sounding kingdom next to a Latin empire tells the reader at once that these are two peoples, and probably old enemies.</li><li><strong>Match the towns.</strong> A country's towns should share its sound. Use the <a href=\"fantasy-town-name-generator.html\">Fantasy Town Name Generator</a> for English-style towns, and keep a few syllables from the country name for its capital.</li><li><strong>Give it another name.</strong> Countries rarely call themselves what their neighbours call them: Germany is <em>Deutschland</em> to Germans and <em>Allemagne</em> to the French. One country with two names is cheap and very convincing worldbuilding.</li><li><strong>Say the adjective.</strong> You'll write about its people more than the country, so check how the name sounds with <em>-ian</em>, <em>-ish</em> or <em>-er</em> on the end before you settle on it.</li></ul>"
+        "content": "<ul><li><strong>Make neighbours sound different.</strong> A Norse-sounding kingdom next to a Latin empire tells the reader at once that these are two peoples, and probably old enemies.</li><li><strong>Match the towns.</strong> A country's towns should share its sound. Use the <a href=\"fantasy-town-name-generator.html\">Fantasy Town Name Generator</a> for English-style towns, and keep a few syllables from the country name for its capital.</li><li><strong>Give it another name.</strong> Countries rarely call themselves what their neighbours call them: Germany is <em>Deutschland</em> to Germans and <em>Allemagne</em> to the French. One country with two names is cheap and very convincing worldbuilding.</li><li><strong>Say the adjective.</strong> You'll write about its people more than the country, so check how the name sounds with <em>-ian</em>, <em>-ish</em> or <em>-er</em> on the end before you settle on it.</li></ul><p>It works whatever your world calls them: a kingdom, nation, realm, land or empire, from a small duchy on the coast to an empire that covers half the map.</p>"
       }
     ],
     "faqs": [
@@ -1346,6 +1346,10 @@
       {
         "question": "Can I use these names in D&D or my book?",
         "answer": "Yes, they're free to use and you don't need to credit the site."
+      },
+      {
+        "question": "How do you make country names for a fantasy world?",
+        "answer": "Real countries are usually named after a people (England, the land of the Angles), a ruler or a feature of the land. Pick a sound for each kingdom, nation, realm or empire, give it a title that says how it's ruled, and keep neighbouring lands related but different."
       }
     ]
   }

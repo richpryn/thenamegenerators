@@ -566,7 +566,7 @@
       },
       {
         "heading": "Naming your assassin",
-        "content": "<ul><li><strong>Say it in a tavern.</strong> If people would turn round, it's too much. <em>Wren</em> passes; <em>Deathblade</em> doesn't.</li><li><strong>Give them a real name too.</strong> The gap between Mara Voss and \"the Needle\" is where the character lives.</li><li><strong>Let the codename hint at the method.</strong> A Needle is precise; a Widow waits; a Lamplighter works at dusk.</li><li><strong>Need a guild?</strong> Try the <a href=\"guild-name-generator.html\">Guild Name Generator</a> for a thieves' or assassins' guild, or the <a href=\"poison-name-generator.html\">Poison Name Generator</a> for their tools.</li></ul>"
+        "content": "<ul><li><strong>Say it in a tavern.</strong> If people would turn round, it's too much. <em>Wren</em> passes; <em>Deathblade</em> doesn't.</li><li><strong>Give them a real name too.</strong> The gap between Mara Voss and \"the Needle\" is where the character lives.</li><li><strong>Let the codename hint at the method.</strong> A Needle is precise; a Widow waits; a Lamplighter works at dusk.</li><li><strong>Need a guild?</strong> Try the <a href=\"guild-name-generator.html\">Guild Name Generator</a> for a thieves' or assassins' guild, or the <a href=\"poison-name-generator.html\">Poison Name Generator</a> for their tools.</li></ul><p>An assassin needs more than one name: a codename for the job, an alias for daily life, and perhaps an assassin guild or organisation behind them. For that, try the <a href=\"guild-name-generator.html\">Guild Name Generator</a>.</p>"
       }
     ],
     "faqs": [
@@ -577,6 +577,14 @@
       {
         "question": "Can I use these names in D&D?",
         "answer": "Yes, they're free to use and you don't need to credit the site. The fantasy aliases suit rogues, and the full names suit NPCs with a double life."
+      },
+      {
+        "question": "What's a good codename or alias for an assassin?",
+        "answer": "A single word that's easy to say quietly and gives nothing away, like Wren or Needle. Choose Codename for names like that, or Full name for an alias that passes as ordinary."
+      },
+      {
+        "question": "What should I call an assassins' guild?",
+        "answer": "Something that sounds respectable from the outside, like a trade or a society. Try the Guild Name Generator for organisation names, or give the guild a codename of its own."
       }
     ]
   }

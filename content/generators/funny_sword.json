@@ -563,6 +563,14 @@
       {
         "question": "Do these work for other items?",
         "answer": "Most do: a pickaxe called The Aggressive Spoon is just as good. A few mention swords or blades directly."
+      },
+      {
+        "question": "What should I name my Minecraft sword?",
+        "answer": "Something that makes you laugh every time you see it in your hotbar: a pun on what it does, or an understatement for your best sword. Generate a few and pick one that fits in the anvil's name box."
+      },
+      {
+        "question": "How do you rename a sword in Minecraft?",
+        "answer": "Put the sword in an anvil, type the new name in the box at the top and take it out. On Java Edition renaming a sword that hasn't been on an anvil before costs one level of experience."
       }
     ]
   }
