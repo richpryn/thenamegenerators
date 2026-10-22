@@ -878,6 +878,10 @@
       {
         "question": "What are the biblical angel names?",
         "answer": "The Bible names only Michael and Gabriel. Raphael appears in the Book of Tobit, in the Catholic and Orthodox Bibles, and older texts like the Book of Enoch name more archangels, such as Uriel."
+      },
+      {
+        "question": "Can I get names that start with a certain letter?",
+        "answer": "Yes. Use the Starts with option to pick a letter. It ignores \"The\" and titles like Sir or Captain, so it matches the name itself."
       }
     ]
   },

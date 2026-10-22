@@ -1065,6 +1065,10 @@
       {
         "question": "How do you come up with a good alien name?",
         "answer": "Avoid random letters. A good alien name is easy to say out loud, has a sound that fits the species, and uses one or two unusual touches, like an apostrophe or a doubled vowel, rather than many."
+      },
+      {
+        "question": "Can I get names that start with a certain letter?",
+        "answer": "Yes. Use the Starts with option to pick a letter. It ignores \"The\" and titles like Sir or Captain, so it matches the name itself."
       }
     ]
   },
