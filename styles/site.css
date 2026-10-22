@@ -447,6 +447,7 @@ article li{margin-bottom:var(--s2)}
 .consent-btns{display:flex;gap:var(--s2)}
 .consent-btn{--fill:var(--card);min-height:44px;padding:0 18px;font:800 15px/1 var(--head)}
 .consent-btn:hover,.consent-btn:focus-visible{--fill:var(--hi)}
+@media (max-width:639px){.consent{padding:var(--s2) var(--s3);gap:var(--s2)}.consent p{font-size:14px;line-height:1.35}.consent-btn{min-height:40px;padding:0 16px}}
 .privacy-settings{margin-top:var(--s3)}
 
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
