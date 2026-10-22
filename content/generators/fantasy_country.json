@@ -164,7 +164,6 @@
         "Aerethil",
         "Aeralas",
         "Aerennor",
-        "Aerithë",
         "Aerandë",
         "Celdor",
         "Celwen",
@@ -905,16 +904,7 @@
         "Wynham",
         "Wynmark",
         "Wynwick",
-        "Wynley",
-        "Godrland",
-        "Godrwold",
-        "Godrmarch",
-        "Godrmere",
-        "Godrshire",
-        "Godrham",
-        "Godrmark",
-        "Godrwick",
-        "Godrley"
+        "Wynley"
       ],
       "dark": [
         "Moroth",
@@ -1295,7 +1285,20 @@
         "Morholm",
         "Morennis",
         "Moressa",
-        "Morinn"
+        "Morinn",
+        "Serholm",
+        "Serwen",
+        "Serara",
+        "Serennis",
+        "Seroran",
+        "Seressa",
+        "Serinn",
+        "Velholm",
+        "Velwen",
+        "Velennis",
+        "Veloran",
+        "Velessa",
+        "Velinn"
       ]
     }
   },
