@@ -1,0 +1,64 @@
+# Tells Bing (and the other IndexNow search engines) about new and changed
+# pages as soon as they're pushed, so they're crawled within hours, not weeks.
+# Bing's index also feeds ChatGPT search and Copilot.
+#
+# Runs on every push to main that changes a page. Run it by hand from the
+# Actions tab with "all" ticked to submit every page in sitemap.xml.
+
+name: IndexNow
+
+on:
+  push:
+    branches: [main]
+    paths: ['**.html', 'sitemap.xml']
+  workflow_dispatch:
+    inputs:
+      all:
+        description: 'Submit every page in sitemap.xml'
+        type: boolean
+        default: false
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Wait for GitHub Pages to publish
+        if: github.event_name == 'push'
+        run: sleep 90
+
+      - name: Submit URLs
+        env:
+          KEY: 2fb87a894bfdb936ca689ef4313b9973
+          HOST: thenamegenerators.com
+          ALL: ${{ github.event.inputs.all }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          if [ "$ALL" = "true" ] || [ -z "$BEFORE" ] || ! git cat-file -e "$BEFORE" 2>/dev/null; then
+            grep -o '<loc>[^<]*</loc>' sitemap.xml | sed 's/<loc>//; s/<\/loc>//' > urls.txt
+          else
+            git diff --name-only "$BEFORE" HEAD -- '*.html' \
+              | grep -v '^404.html$' \
+              | while read -r f; do
+                  [ -f "$f" ] || continue
+                  if [ "$f" = "index.html" ]; then echo "https://$HOST/"; else echo "https://$HOST/$f"; fi
+                done \
+              | grep -F -x -f <(grep -o '<loc>[^<]*</loc>' sitemap.xml | sed 's/<loc>//; s/<\/loc>//') > urls.txt || true
+          fi
+          COUNT=$(wc -l < urls.txt)
+          echo "Submitting $COUNT URLs"
+          [ "$COUNT" -gt 0 ] || exit 0
+          python3 - <<'PY'
+          import json, os, urllib.request
+          urls = [u.strip() for u in open("urls.txt") if u.strip()][:10000]
+          body = json.dumps({"host": os.environ["HOST"], "key": os.environ["KEY"],
+                             "keyLocation": f"https://{os.environ['HOST']}/{os.environ['KEY']}.txt",
+                             "urlList": urls}).encode()
+          req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body,
+                                       headers={"Content-Type": "application/json; charset=utf-8"})
+          with urllib.request.urlopen(req) as r:
+              print("IndexNow:", r.status)
+          PY

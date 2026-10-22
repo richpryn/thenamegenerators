@@ -21,6 +21,14 @@ What's done, what's left, and what to keep an eye on. Replaces the old SEO, Bing
 - [x] Old addresses from the previous site forward with real redirect pages (`OLD_URLS` in `scripts/build-pages.js`)
 - [x] Google Analytics (GA4), loaded only after cookie consent (`lib/consent.js`), and linked to Search Console
 - [x] Favicon: `favicon.svg` (the source), `favicon.ico` and `apple-touch-icon.png`, linked from every page
+- [x] British English signals: `lang="en-GB"`, `og:locale` en_GB, `inLanguage` en-GB in schema, prices in GBP
+- [x] Ignored or harmful meta tags removed (keywords, revisit-after, ai-index, X-XSS-Protection and others), and the `<meta>` Content-Security-Policy dropped so Mediavine's ad scripts aren't blocked when ads go live
+- [x] Generator pages: `og:type` article with published and modified times; Article schema with image, publisher logo and language; `max-image-preview:large` in the robots meta
+- [x] Home page schema: WebSite and Organization (founder: Rich) linked by `@id`
+- [x] Visible breadcrumbs on generator pages, matching the BreadcrumbList schema
+- [x] `robots.txt` names the current AI search crawlers (OAI-SearchBot, ClaudeBot, Claude-SearchBot, PerplexityBot, Applebot-Extended and others) and allows them
+- [x] `llms.txt` links every hub and says how the generators work
+- [x] IndexNow: `.github/workflows/indexnow.yml` tells Bing, Yandex and the other IndexNow engines about changed pages on every push (Bing also feeds ChatGPT search and Copilot). The key file is `2fb87a894bfdb936ca689ef4313b9973.txt` at the site root; don't delete it. Run the workflow by hand with "all" ticked to submit every page.
 
 ## To do
 
@@ -29,8 +37,6 @@ What's done, what's left, and what to keep an eye on. Replaces the old SEO, Bing
 - Run one generator page through https://search.google.com/test/rich-results to check the FAQ and breadcrumb data.
 
 ### 2. Optional, later
-- Visible breadcrumbs on generator pages (the schema has them; the page doesn't show them)
-- Drop the meta tags search engines ignore (`keywords`, `revisit-after`, `ai-index`, `ai-crawl`)
 - Social sharing buttons
 - Backlinks: D&D, writing and worldbuilding communities, directories of tools
 
@@ -41,4 +47,4 @@ What's done, what's left, and what to keep an eye on. Replaces the old SEO, Bing
 
 ## Known quirks
 
-- Pages set `X-Frame-Options` in a `<meta>` tag, which browsers ignore (it only works as a server header, and GitHub Pages can't set headers). Harmless, but it logs a console warning.
+- GitHub Pages can't set HTTP headers, so there's no Content-Security-Policy or X-Frame-Options. That's normal for a static site with no logins or forms.

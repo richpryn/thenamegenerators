@@ -97,7 +97,7 @@ const MOVED_PAGES = {
 function movedPage(newSlug) {
   const url = `https://thenamegenerators.com/posts/${newSlug}.html`;
   return `<!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <title>Moved | ${SITE_NAME}</title>
@@ -317,8 +317,11 @@ function generateSchemas(generator, category, examples) {
     "publisher": {
       "@type": "Organization",
       "name": SITE_NAME,
-      "url": baseUrl
+      "url": baseUrl,
+      "logo": { "@type": "ImageObject", "url": `${baseUrl}/apple-touch-icon.png` }
     },
+    "image": layout.shareImage(generator.slug),
+    "inLanguage": "en-GB",
     "datePublished": generator.published,
     "dateModified": generator.updated,
     "mainEntityOfPage": {
@@ -352,7 +355,7 @@ function generateSchemas(generator, category, examples) {
     "offers": {
       "@type": "Offer",
       "price": "0",
-      "priceCurrency": "USD"
+      "priceCurrency": "GBP"
     },
     "author": AUTHOR
   });
@@ -519,7 +522,7 @@ function generateGeneratorPage(generator, category, site) {
             </section>`;
 
   const html = `<!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -529,23 +532,21 @@ function generateGeneratorPage(generator, category, site) {
     
     <!-- Primary SEO Meta Tags -->
     <title>${escTitle}</title>
-    <meta name="title" content="${escTitle}">
     <meta name="description" content="${escDesc}">
-    <meta name="keywords" content="${escKeywords}">
-    <meta name="author" content="The Name Generators">
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="English">
-    <meta name="revisit-after" content="7 days">
+    <meta name="author" content="Rich">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <link rel="canonical" href="${pageUrl}">
     
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="${generator.published}">
+    <meta property="article:modified_time" content="${generator.updated}">
     <meta property="og:url" content="${pageUrl}">
     <meta property="og:title" content="${escTitle}">
     <meta property="og:description" content="${escDesc}">
     <meta property="og:image" content="${imageUrl}">
     <meta property="og:site_name" content="The Name Generators">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:locale" content="en_GB">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -553,26 +554,8 @@ function generateGeneratorPage(generator, category, site) {
     <meta property="twitter:title" content="${escTitle}">
     <meta property="twitter:description" content="${escDesc}">
     <meta property="twitter:image" content="${imageUrl}">
-
-    <!-- Additional Meta Tags -->
-    <meta name="generators" content="${generator.slug}">
-    <meta name="categories" content="${escCategoryName}">
-
-    <!-- AI/LLM Friendly Meta Tags -->
-    <meta name="topic" content="${escTopic}">
-    <meta name="content-type" content="name-generator">
-    <meta name="ai-index" content="yes">
-    <meta name="ai-crawl" content="allow">
-    
-    <!-- Security Headers -->
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
-    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="format-detection" content="telephone=no">
-    <!-- Content Security Policy (CSP) - Note: Some headers need server configuration -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://faves.grow.me https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://faves.grow.me https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com;">
-    
     <!-- Schema.org JSON-LD -->
     ${schemaScripts}
     
@@ -699,7 +682,7 @@ function generateCategoryPage(category, site) {
   const escCatKeywords = escapeHtml(`${category.name.toLowerCase()} names, ${category.name.toLowerCase()} name generator, ${category.name.toLowerCase()} name generators`);
 
   const html = `<!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -709,11 +692,9 @@ function generateCategoryPage(category, site) {
     
     <!-- Primary SEO Meta Tags -->
     <title>${escCatTitle}</title>
-    <meta name="title" content="${escCatTitle}">
     <meta name="description" content="${escCatDesc}">
-    <meta name="keywords" content="${escCatKeywords}">
-    <meta name="author" content="The Name Generators">
-    <meta name="robots" content="index, follow">
+    <meta name="author" content="Rich">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <link rel="canonical" href="${categoryUrl}">
     <script type="application/ld+json">
 ${scriptJson({
@@ -862,7 +843,7 @@ function generateWheelPage(site) {
   const wheelDoodle = `<svg class="doodle wob" viewBox="0 0 60 60" aria-hidden="true" focusable="false"><circle cx="30" cy="32" r="22" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.8"/><path d="M30 10 V54 M8 32 H52 M14.5 16.5 L45.5 47.5 M45.5 16.5 L14.5 47.5" stroke="#1e1c18" stroke-width="1.2" stroke-linecap="round"/><path d="M30 32 L30 10 A22 22 0 0 1 45.5 16.5 Z" fill="#efc84a" stroke="#1e1c18" stroke-width="1.2" stroke-linejoin="round"/><circle cx="30" cy="32" r="3.5" fill="#1e1c18"/><path d="M26 3 L34 3 L30 11 Z" fill="#1e1c18"/></svg>`;
 
   return `<!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -871,11 +852,9 @@ function generateWheelPage(site) {
     <script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTo2YmQ3YzdiOS00MDgwLTQ5MmYtOGEyZi0yZWE3YmU2N2E5ZTU=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
 
     <title>${escapeHtml(title)}</title>
-    <meta name="title" content="${escapeHtml(title)}">
     <meta name="description" content="${escapeHtml(desc)}">
-    <meta name="keywords" content="spin the wheel, name wheel, random name picker wheel, wheel spinner, random wheel, spin wheel for names, wheel of names, raffle wheel">
-    <meta name="author" content="The Name Generators">
-    <meta name="robots" content="index, follow">
+    <meta name="author" content="Rich">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <link rel="canonical" href="${url}">
     <script type="application/ld+json">
 ${scriptJson({
@@ -1235,7 +1214,7 @@ function generateNameToolPage(key, site) {
   const motifs = combiner ? [layout.generatorMotif(combiner, site.categories.find(c => c.slug === combiner.category))] : [];
 
   return `<!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -1244,11 +1223,9 @@ function generateNameToolPage(key, site) {
     <script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTo2YmQ3YzdiOS00MDgwLTQ5MmYtOGEyZi0yZWE3YmU2N2E5ZTU=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
 
     <title>${escapeHtml(cfg.seoTitle)}</title>
-    <meta name="title" content="${escapeHtml(cfg.seoTitle)}">
     <meta name="description" content="${escapeHtml(cfg.desc)}">
-    <meta name="keywords" content="${escapeHtml(cfg.keywords)}">
-    <meta name="author" content="The Name Generators">
-    <meta name="robots" content="index, follow">
+    <meta name="author" content="Rich">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <link rel="canonical" href="${url}">
     <script type="application/ld+json">
 ${scriptJson({
@@ -1359,7 +1336,7 @@ function generateNameToolsHub(site) {
   const combiner = site.all.find(g => g.key === 'name_combiner');
   const motifs = combiner ? [layout.generatorMotif(combiner, site.categories.find(c => c.slug === combiner.category))] : [];
   return `<!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1368,10 +1345,9 @@ function generateNameToolsHub(site) {
     <script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTo2YmQ3YzdiOS00MDgwLTQ5MmYtOGEyZi0yZWE3YmU2N2E5ZTU=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
 
     <title>${escapeHtml(title)}</title>
-    <meta name="title" content="${escapeHtml(title)}">
     <meta name="description" content="${escapeHtml(desc)}">
-    <meta name="author" content="The Name Generators">
-    <meta name="robots" content="index, follow">
+    <meta name="author" content="Rich">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <link rel="canonical" href="${url}">
     <script type="application/ld+json">
 ${scriptJson({
@@ -1737,7 +1713,7 @@ function generateHtmlSitemap(site) {
             </div>`).join('');
 
   const html = `<!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1747,8 +1723,16 @@ function generateHtmlSitemap(site) {
     
     <title>Site Map - All Pages | The Name Generators</title>
     <meta name="description" content="Complete site map listing all name generator pages, categories, and resources.">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <link rel="canonical" href="${baseUrl}/sitemap.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="${baseUrl}/sitemap.html">
+    <meta property="og:title" content="Site Map - All Pages | The Name Generators">
+    <meta property="og:description" content="Complete site map listing all name generator pages, categories, and resources.">
+    <meta property="og:image" content="${baseUrl}/images/share/home.png">
+    <meta property="og:site_name" content="The Name Generators">
+    <meta property="og:locale" content="en_GB">
+    <meta property="twitter:card" content="summary_large_image">
     ${ICON_LINKS}
     ${layout.headAssets('')}
 </head>
@@ -1827,7 +1811,7 @@ function generateRedirectPages() {
     const dir = path.join(ROOT, from);
     fs.mkdirSync(dir, { recursive: true });
     fs.writeFileSync(path.join(dir, 'index.html'), `<!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <title>Moved | ${SITE_NAME}</title>
@@ -1854,7 +1838,7 @@ function generate404(site) {
   const categoryCards = cats.map(cat => `<a href="/categories/${cat.slug}-names.html" class="cat hd tap">${layout.doodle(layout.categoryMotif(cat))}<div><b>${escapeHtml(cat.name)}</b><span>${cat.generators.length} generator${cat.generators.length !== 1 ? 's' : ''}</span></div><em aria-hidden="true">→</em></a>`).join('\n                    ');
 
   const html = `<!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1910,9 +1894,18 @@ function generateLlmsTxt(site) {
 Names are free to use, no credit needed. If you're naming a business, brand, band or product, check the name isn't already taken or trademarked first.
 
 Made by Rich: ${baseUrl}/about.html
+
+## About the generators
+
+- ${site.all.length} generators in ${site.categories.filter(c => c.generators.length).length} categories, written in British English.
+- Names come from hand-written word lists and naming rules for each setting, not from an AI model. Most options can make hundreds of different names; a few use real historical or canon names and are shorter on purpose.
+- Generators avoid copying named characters from games, books and films: they make new names in the same style.
+- Where a name uses a real language (Old Norse, Japanese, Chinese, Latin, Old English, Ancient Egyptian), the meaning shown is one we're confident of.
+- Names are made in your browser as you click; what you type into a generator is not sent anywhere.
 `;
   for (const cat of site.categories.filter(c => c.generators.length)) {
     text += `\n## ${cat.name}\n\n`;
+    text += `- [All ${cat.name} name generators](${baseUrl}/categories/${cat.slug}-names.html): ${plainText(cat.description)}\n`;
     text += site.inCategory(cat.slug)
       .map(g => `- [${g.title}](${baseUrl}/posts/${g.slug}.html): ${plainText(g.description)}`)
       .join('\n') + '\n';
