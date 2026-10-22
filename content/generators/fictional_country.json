@@ -19,9 +19,9 @@
       ],
       "optionLabels": {
         "any": "Any (a mix)",
-        "european": "Small European state (Corvania)",
+        "european": "Small European state (Corovia)",
         "nordic": "Nordic (Vestmark)",
-        "island": "Island nation (San Esperanza)"
+        "island": "Island nation (Santa Esperanza)"
       }
     },
     "format": {
@@ -99,22 +99,22 @@
       "cases": {
         "european": {
           "recipe": "template",
-          "template": "[euro] (capital: [capital])"
+          "template": "[euro] (capital: [capital.euro])"
         },
         "nordic": {
           "recipe": "template",
-          "template": "[nordic] (capital: [capital])"
+          "template": "[nordic] (capital: [capital.nordic])"
         },
         "island": {
           "recipe": "template",
-          "template": "[isle] (capital: [capital])"
+          "template": "[isle] (capital: [capital.island])"
         },
         "any": {
           "recipe": "template",
           "template": [
-            "[euro] (capital: [capital])",
-            "[nordic] (capital: [capital])",
-            "[isle] (capital: [capital])"
+            "[euro] (capital: [capital.euro])",
+            "[nordic] (capital: [capital.nordic])",
+            "[isle] (capital: [capital.island])"
           ]
         }
       }
@@ -842,33 +842,76 @@
       "St Maddern",
       "St Endelion"
     ],
-    "capital": [
-      "Port Elling",
-      "Novagrad",
-      "Saint Aurel",
-      "Valmere",
-      "Kestrel Bay",
-      "Monteluce",
-      "Haldstad",
-      "Brennick",
-      "Lindholm",
-      "Castelvero",
-      "New Harlow",
-      "Ostburg",
-      "Palmeira",
-      "Velgrad",
-      "Marivale",
-      "Dornick",
-      "Fennick",
-      "Corvallo",
-      "Seravin",
-      "Lusk",
-      "Tavisholm",
-      "Galmouth",
-      "Aldwick",
-      "Vorstadt",
-      "Miravel"
-    ],
+    "capital": {
+      "euro": [
+        "Monteluce",
+        "Castelvero",
+        "Saint Aurel",
+        "Valmere",
+        "Velgrad",
+        "Corvallo",
+        "Seravin",
+        "Miravel",
+        "Novagrad",
+        "Marivale",
+        "Dornick",
+        "Ostburg",
+        "Vorstadt",
+        "Aldenburg",
+        "Castelmar",
+        "Montebrano",
+        "Belgrava",
+        "Santavera",
+        "Lusingen",
+        "Teravo",
+        "Kesmarin",
+        "Selbourg",
+        "Vallemont",
+        "Palazzena"
+      ],
+      "nordic": [
+        "Haldstad",
+        "Lindholm",
+        "Tavisholm",
+        "Skarhavn",
+        "Fjellby",
+        "Elvsund",
+        "Kalmstad",
+        "Vesterhavn",
+        "Brandby",
+        "Solvik",
+        "Isafell",
+        "Ulvhavn",
+        "Strandby",
+        "Kjelborg",
+        "Havnstad",
+        "Tromvik",
+        "Sundby",
+        "Varghavn"
+      ],
+      "island": [
+        "Port Elling",
+        "Kestrel Bay",
+        "Palmeira",
+        "Galmouth",
+        "Aldwick",
+        "New Harlow",
+        "Fennick",
+        "Port Aurel",
+        "Port Merrow",
+        "Saltcove",
+        "Seagate",
+        "Saint Brannoc's",
+        "Gannet Harbour",
+        "Coralport",
+        "Windward Town",
+        "Lowtide",
+        "Puerto Serena",
+        "Villa Esperanza",
+        "Cove Royal",
+        "Lantern Bay"
+      ]
+    },
     "rep": [
       "Republic",
       "Kingdom",
