@@ -453,36 +453,17 @@
             <input type="hidden" id="filter-mix" name="mix" data-filter="mix" value="mixed_elf_first">
           </div>
 
-          <div class="group">
-            <label class="label" for="filter-letter">Starts with</label>
-            <div class="ctl sel hd">
-              <select id="filter-letter" name="letter" data-filter="letter">
-                <option value="any">Any letter</option>
-                <option value="a">A</option>
-                <option value="b">B</option>
-                <option value="c">C</option>
-                <option value="d">D</option>
-                <option value="e">E</option>
-                <option value="f">F</option>
-                <option value="g">G</option>
-                <option value="h">H</option>
-                <option value="i">I</option>
-                <option value="j">J</option>
-                <option value="k">K</option>
-                <option value="l">L</option>
-                <option value="m">M</option>
-                <option value="n">N</option>
-                <option value="o">O</option>
-                <option value="p">P</option>
-                <option value="q">Q</option>
-                <option value="r">R</option>
-                <option value="s">S</option>
-                <option value="t">T</option>
-                <option value="v">V</option>
-                <option value="w">W</option>
-                <option value="y">Y</option>
-              </select>
+          <div class="group" role="group" aria-labelledby="filter-letter-label">
+            <div class="label"><span id="filter-letter-label">Starts with</span><span class="pen" data-hint-for="letter" aria-hidden="true"></span></div>
+            <div class="opts" data-buttons-for="letter">
+              <button type="button" class="opt hd tap" data-value="any" data-hint="" aria-pressed="true">Any letter</button>
+              <button type="button" class="opt hd tap" data-value="e" data-hint="" aria-pressed="false">E</button>
+              <button type="button" class="opt hd tap" data-value="i" data-hint="" aria-pressed="false">I</button>
+              <button type="button" class="opt hd tap" data-value="m" data-hint="" aria-pressed="false">M</button>
+              <button type="button" class="opt hd tap" data-value="s" data-hint="" aria-pressed="false">S</button>
+              <button type="button" class="opt hd tap" data-value="t" data-hint="" aria-pressed="false">T</button>
             </div>
+            <input type="hidden" id="filter-letter" name="letter" data-filter="letter" value="any">
           </div></div>
                 <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
                 <div id="results" class="results-area" data-long="false">
@@ -568,9 +549,9 @@
             <section class="section how-it-works">
                 <h2>How the Half-Elf Name Generator Works</h2>
                 <div class="howto hd">
-                <p>It works from 180 names and name parts, which combine into over 160,000 possible results.</p>
+                <p>It picks from a list of 180 names.</p>
                 <p>The choices:</p>
-                <ul><li><strong>Gender:</strong> Any, Male, Female.</li><li><strong>Raised by:</strong><ul><li>Humans, e.g. <em>Ithilan Carrow</em></li><li>Elves, e.g. <em>Jasper Maelithil</em></li><li>Elves, e.g. <em>Saevan Amarethil</em></li><li>Humans, e.g. <em>Clarice Sterling</em></li></ul></li><li><strong>Starts with:</strong> Any letter, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, V, W, Y.</li></ul>
+                <ul><li><strong>Gender:</strong> Any, Male, Female.</li><li><strong>Raised by:</strong><ul><li>Humans, e.g. <em>Ithilan Carrow</em></li><li>Elves, e.g. <em>Jasper Maelithil</em></li><li>Elves, e.g. <em>Saevan Amarethil</em></li><li>Humans, e.g. <em>Clarice Sterling</em></li></ul></li><li><strong>Starts with:</strong> depends on the raised by:<ul><li>Humans and Elves: Any letter, E, I, M, S, T</li><li>Elves and Humans: Any letter</li></ul></li></ul>
                 <p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet. Once you've seen them all, "Start again" shuffles the whole list again.</p>
                 </div>
             </section>
@@ -712,8 +693,8 @@
       </div>
     </footer>
 
-    <script type="application/json" id="generator-config">{"title":"Half-Elf Name Generator","slug":"half-elf-name-generator","filters":{"gender":{"label":"Gender","options":["any","male","female"],"optionLabels":{"any":"Any"}},"mix":{"label":"Raised by","options":["mixed_elf_first","mixed_human_first","elven","human"],"optionLabels":{"mixed_elf_first":"Humans (elven first name, human surname)","mixed_human_first":"Elves (human first name, elven family name)","elven":"Elves (fully elven name)","human":"Humans (fully human name)"}},"letter":{"label":"Starts with","options":["any","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","v","w","y"],"optionLabels":{"any":"Any letter","a":"A","b":"B","c":"C","d":"D","e":"E","f":"F","g":"G","h":"H","i":"I","j":"J","k":"K","l":"L","m":"M","n":"N","o":"O","p":"P","q":"Q","r":"R","s":"S","t":"T","u":"U","v":"V","w":"W","x":"X","y":"Y","z":"Z"}}},"startsWith":"letter","recipe":"switch","on":"mix","cases":{"mixed_elf_first":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[elven.given] [human.surnames]"}},"default":{"recipe":"template","template":"[elven.given.{gender}] [human.surnames]"}},"mixed_human_first":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[human.given] [elven.family]"}},"default":{"recipe":"template","template":"[human.given.{gender}] [elven.family]"}},"elven":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[elven.given] [elven.family]"}},"default":{"recipe":"template","template":"[elven.given.{gender}] [elven.family]"}},"human":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[human.given] [human.surnames]"}},"default":{"recipe":"template","template":"[human.given.{gender}] [human.surnames]"}}},"data":{"elven":{"given":{"male":["Caladrel","Faelor","Galinor","Haelan","Ilyrin","Kaelith","Lorandil","Maeron","Naeril","Raelith","Saevan","Taeral","Vaelis","Aerendil","Celandor","Elarion","Ithilan","Laethor","Sylvarin","Aranel","Belandor","Daelen","Elvaris","Fenlas","Iriandor","Mythrin","Orendil","Phaelan","Quellan","Rhovan","Tirnel"],"female":["Aeris","Caelynn","Elowen","Faelwen","Ilaria","Liavel","Maelis","Naerith","Saelora","Sylvaine","Thaliel","Vaelora","Ylsa","Calenwe","Eliphae","Ithrael","Miraen","Rhiannel","Taerwyn","Velaine","Aelith","Brilith","Daelwen","Elandra","Faelyn","Ilphara","Lethiel","Merethyl","Naiara","Shalendra","Tirelle"]},"family":["Aelindor","Caerwyn","Elaranth","Faenhal","Ilmarien","Lianthor","Maelithil","Naevarin","Rhaenor","Silvaren","Thaelindor","Vaeranth","Yllathiel","Amarethil","Brenvaril","Celenthir","Dhaerith","Ithelvar","Lothaniel","Aerethyl","Duskwhisper","Evenbrook","Faerendil","Ilvanor","Narathiel","Oakenshade","Quessaril","Starbloom","Valandril"]},"human":{"given":{"male":["Aldric","Bram","Cedric","Corwin","Darian","Edmund","Garret","Gideon","Harlan","Jasper","Kellan","Lucan","Marius","Nolan","Osric","Perrin","Quentin","Roland","Silas","Tobias","Varek","Wendel","Alaric","Benedict","Dorian","Emeric","Florian","Hugo","Leopold","Matthias"],"female":["Adela","Celia","Delia","Elinor","Freya","Gwen","Helena","Isolde","Jocelyn","Katrin","Lenora","Mara","Nell","Odette","Rosamund","Sabine","Tamsin","Vivian","Wilhelmina","Alys","Beatrix","Clarice","Edith","Greta","Hester","Imogen","Linnea","Maud","Rowena"]},"surnames":["Ashford","Blackwell","Brightwater","Carrow","Dunmore","Fairweather","Greaves","Hallowell","Hawthorne","Kestrel","Larkin","Marlowe","Northcott","Oakley","Pembroke","Ravensworth","Selwyn","Thorne","Underwood","Vance","Whitlock","Yarrow","Ambrose","Callow","Fenwick","Holloway","Merriweather","Redfern","Sterling","Wolcott"]}}}</script>
-    <script src="../lib/recipe-engine.js?v=ffff2a5f"></script>
+    <script type="application/json" id="generator-config">{"title":"Half-Elf Name Generator","slug":"half-elf-name-generator","filters":{"gender":{"label":"Gender","options":["any","male","female"],"optionLabels":{"any":"Any"}},"mix":{"label":"Raised by","options":["mixed_elf_first","mixed_human_first","elven","human"],"optionLabels":{"mixed_elf_first":"Humans (elven first name, human surname)","mixed_human_first":"Elves (human first name, elven family name)","elven":"Elves (fully elven name)","human":"Humans (fully human name)"}},"letter":{"label":"Starts with","options":["any","e","i","m","s","t"],"optionLabels":{"any":"Any letter","a":"A","b":"B","c":"C","d":"D","e":"E","f":"F","g":"G","h":"H","i":"I","j":"J","k":"K","l":"L","m":"M","n":"N","o":"O","p":"P","q":"Q","r":"R","s":"S","t":"T","u":"U","v":"V","w":"W","x":"X","y":"Y","z":"Z"}}},"startsWith":"letter","recipe":"switch","on":"mix","cases":{"mixed_elf_first":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[elven.given] [human.surnames]"}},"default":{"recipe":"template","template":"[elven.given.{gender}] [human.surnames]"}},"mixed_human_first":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[human.given] [elven.family]"}},"default":{"recipe":"template","template":"[human.given.{gender}] [elven.family]"}},"elven":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[elven.given] [elven.family]"}},"default":{"recipe":"template","template":"[elven.given.{gender}] [elven.family]"}},"human":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[human.given] [human.surnames]"}},"default":{"recipe":"template","template":"[human.given.{gender}] [human.surnames]"}}},"data":{"elven":{"given":{"male":["Caladrel","Faelor","Galinor","Haelan","Ilyrin","Kaelith","Lorandil","Maeron","Naeril","Raelith","Saevan","Taeral","Vaelis","Aerendil","Celandor","Elarion","Ithilan","Laethor","Sylvarin","Aranel","Belandor","Daelen","Elvaris","Fenlas","Iriandor","Mythrin","Orendil","Phaelan","Quellan","Rhovan","Tirnel"],"female":["Aeris","Caelynn","Elowen","Faelwen","Ilaria","Liavel","Maelis","Naerith","Saelora","Sylvaine","Thaliel","Vaelora","Ylsa","Calenwe","Eliphae","Ithrael","Miraen","Rhiannel","Taerwyn","Velaine","Aelith","Brilith","Daelwen","Elandra","Faelyn","Ilphara","Lethiel","Merethyl","Naiara","Shalendra","Tirelle"]},"family":["Aelindor","Caerwyn","Elaranth","Faenhal","Ilmarien","Lianthor","Maelithil","Naevarin","Rhaenor","Silvaren","Thaelindor","Vaeranth","Yllathiel","Amarethil","Brenvaril","Celenthir","Dhaerith","Ithelvar","Lothaniel","Aerethyl","Duskwhisper","Evenbrook","Faerendil","Ilvanor","Narathiel","Oakenshade","Quessaril","Starbloom","Valandril"]},"human":{"given":{"male":["Aldric","Bram","Cedric","Corwin","Darian","Edmund","Garret","Gideon","Harlan","Jasper","Kellan","Lucan","Marius","Nolan","Osric","Perrin","Quentin","Roland","Silas","Tobias","Varek","Wendel","Alaric","Benedict","Dorian","Emeric","Florian","Hugo","Leopold","Matthias"],"female":["Adela","Celia","Delia","Elinor","Freya","Gwen","Helena","Isolde","Jocelyn","Katrin","Lenora","Mara","Nell","Odette","Rosamund","Sabine","Tamsin","Vivian","Wilhelmina","Alys","Beatrix","Clarice","Edith","Greta","Hester","Imogen","Linnea","Maud","Rowena"]},"surnames":["Ashford","Blackwell","Brightwater","Carrow","Dunmore","Fairweather","Greaves","Hallowell","Hawthorne","Kestrel","Larkin","Marlowe","Northcott","Oakley","Pembroke","Ravensworth","Selwyn","Thorne","Underwood","Vance","Whitlock","Yarrow","Ambrose","Callow","Fenwick","Holloway","Merriweather","Redfern","Sterling","Wolcott"]}},"letterSets":{"any|mixed_elf_first":"eimst","any|mixed_human_first":"","any|elven":"eimst","any|human":"","male|mixed_elf_first":"","male|mixed_human_first":"","male|elven":"","male|human":"","female|mixed_elf_first":"","female|mixed_human_first":"","female|elven":"","female|human":""}}</script>
+    <script src="../lib/recipe-engine.js?v=9d448336"></script>
     <script src="../lib/page.js?v=9651289b"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>

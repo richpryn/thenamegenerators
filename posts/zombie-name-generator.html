@@ -425,8 +425,6 @@
                 <option value="e">E</option>
                 <option value="g">G</option>
                 <option value="h">H</option>
-                <option value="j">J</option>
-                <option value="k">K</option>
                 <option value="l">L</option>
                 <option value="m">M</option>
                 <option value="n">N</option>
@@ -435,8 +433,6 @@
                 <option value="r">R</option>
                 <option value="s">S</option>
                 <option value="t">T</option>
-                <option value="u">U</option>
-                <option value="v">V</option>
                 <option value="w">W</option>
                 <option value="z">Z</option>
               </select>
@@ -511,9 +507,9 @@
             <section class="section how-it-works">
                 <h2>How the Zombie Name Generator Works</h2>
                 <div class="howto hd">
-                <p>It works from 100 names and name parts, which combine into over 60,000 possible results.</p>
+                <p>It works from 100 names and name parts, which combine into over 31,000 possible results.</p>
                 <p>The choices:</p>
-                <ul><li><strong>Name for:</strong><ul><li>A zombie, e.g. <em>Limping Colin</em></li><li>A zombie, e.g. <em>Gloria the Hungry</em></li><li>The zombie virus, e.g. <em>Delta-Morrow</em></li></ul></li><li><strong>Starts with:</strong> Any letter, A, B, C, D, E, G, H, J, K, L, M, N, O, P, R, S, T, U, V, W, Z.</li></ul>
+                <ul><li><strong>Name for:</strong><ul><li>A zombie, e.g. <em>Limping Colin</em></li><li>A zombie, e.g. <em>Gloria the Hungry</em></li><li>The zombie virus, e.g. <em>Delta-Morrow</em></li></ul></li><li><strong>Starts with:</strong> depends on the name for:<ul><li>A zombie and A zombie: Any letter</li><li>The zombie virus: Any letter, A, B, C, D, E, G, H, L, M, N, O, P, R, S, T, W, Z</li></ul></li></ul>
                 <p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet. Once you've seen them all, "Start again" shuffles the whole list again.</p>
                 </div>
             </section>
@@ -595,8 +591,8 @@
       </div>
     </footer>
 
-    <script type="application/json" id="generator-config">{"title":"Zombie Name Generator","slug":"zombie-name-generator","filters":{"what":{"label":"Name for","options":["funny","grim","virus"],"optionLabels":{"funny":"A zombie (funny)","grim":"A zombie (grim)","virus":"The zombie virus"}},"letter":{"label":"Starts with","options":["any","a","b","c","d","e","g","h","j","k","l","m","n","o","p","r","s","t","u","v","w","z"],"optionLabels":{"any":"Any letter","a":"A","b":"B","c":"C","d":"D","e":"E","f":"F","g":"G","h":"H","i":"I","j":"J","k":"K","l":"L","m":"M","n":"N","o":"O","p":"P","q":"Q","r":"R","s":"S","t":"T","u":"U","v":"V","w":"W","x":"X","y":"Y","z":"Z"}}},"startsWith":"letter","recipe":"switch","on":"what","cases":{"funny":{"recipe":"template","template":"[adjectives] [first]"},"grim":{"recipe":"template","template":"[first] [titles]"},"virus":{"recipe":"template","template":["The [virusA] [virusB]","[virusA]-[codes] [virusB]","[codes]-[virusA]","[virusA] [virusB]"]}},"data":{"first":["Gary","Brenda","Kevin","Linda","Doug","Sharon","Barry","Nigel","Wendy","Clive","Pam","Derek","Gail","Trevor","Maureen","Colin","Deirdre","Graham","Shirley","Norman","Brian","Sandra","Keith","Janet","Malcolm","Gloria","Roger","Doreen","Vernon"],"adjectives":["Groaning","Shambling","Rotting","Lurching","Moaning","Hungry","Decaying","Limping","Drooling","Mouldy","Crumbling","Wobbly","Grumbling","Gnawing","Sluggish","Stumbling","Peeling","Twitching","Undead","Brainless","Creaking","Oozing","Squelching","Dribbling","Lopsided","Mumbling"],"titles":["the Unburied","the Restless","Half-Eaten","the Twice-Dead","the Hungry","the Hollow","of the Grave","the Returned","Graveborn","the Rotten"],"virusA":["Necrosis","Lazarus","Revenant","Hollow","Pale","Grave","Morrow","Ashen","Cerberus","Hydra","Tartarus","Wraith","Ember","Black Tide","Sallow","Crimson","Silent"],"virusB":["Virus","Strain","Plague","Fever","Pathogen","Protocol","Contagion","Syndrome","Blight","Rot"],"codes":["Alpha","Beta","Gamma","Delta","Omega","Sigma","Theta","Zeta"]}}</script>
-    <script src="../lib/recipe-engine.js?v=ffff2a5f"></script>
+    <script type="application/json" id="generator-config">{"title":"Zombie Name Generator","slug":"zombie-name-generator","filters":{"what":{"label":"Name for","options":["funny","grim","virus"],"optionLabels":{"funny":"A zombie (funny)","grim":"A zombie (grim)","virus":"The zombie virus"}},"letter":{"label":"Starts with","options":["any","a","b","c","d","e","g","h","l","m","n","o","p","r","s","t","w","z"],"optionLabels":{"any":"Any letter","a":"A","b":"B","c":"C","d":"D","e":"E","f":"F","g":"G","h":"H","i":"I","j":"J","k":"K","l":"L","m":"M","n":"N","o":"O","p":"P","q":"Q","r":"R","s":"S","t":"T","u":"U","v":"V","w":"W","x":"X","y":"Y","z":"Z"}}},"startsWith":"letter","recipe":"switch","on":"what","cases":{"funny":{"recipe":"template","template":"[adjectives] [first]"},"grim":{"recipe":"template","template":"[first] [titles]"},"virus":{"recipe":"template","template":["The [virusA] [virusB]","[virusA]-[codes] [virusB]","[codes]-[virusA]","[virusA] [virusB]"]}},"data":{"first":["Gary","Brenda","Kevin","Linda","Doug","Sharon","Barry","Nigel","Wendy","Clive","Pam","Derek","Gail","Trevor","Maureen","Colin","Deirdre","Graham","Shirley","Norman","Brian","Sandra","Keith","Janet","Malcolm","Gloria","Roger","Doreen","Vernon"],"adjectives":["Groaning","Shambling","Rotting","Lurching","Moaning","Hungry","Decaying","Limping","Drooling","Mouldy","Crumbling","Wobbly","Grumbling","Gnawing","Sluggish","Stumbling","Peeling","Twitching","Undead","Brainless","Creaking","Oozing","Squelching","Dribbling","Lopsided","Mumbling"],"titles":["the Unburied","the Restless","Half-Eaten","the Twice-Dead","the Hungry","the Hollow","of the Grave","the Returned","Graveborn","the Rotten"],"virusA":["Necrosis","Lazarus","Revenant","Hollow","Pale","Grave","Morrow","Ashen","Cerberus","Hydra","Tartarus","Wraith","Ember","Black Tide","Sallow","Crimson","Silent"],"virusB":["Virus","Strain","Plague","Fever","Pathogen","Protocol","Contagion","Syndrome","Blight","Rot"],"codes":["Alpha","Beta","Gamma","Delta","Omega","Sigma","Theta","Zeta"]},"letterSets":{"funny":"","grim":"","virus":"abcdeghlmnoprstwz"}}</script>
+    <script src="../lib/recipe-engine.js?v=9d448336"></script>
     <script src="../lib/page.js?v=9651289b"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>

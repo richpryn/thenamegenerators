@@ -415,21 +415,11 @@
             <div class="ctl sel hd">
               <select id="filter-letter" name="letter" data-filter="letter">
                 <option value="any">Any letter</option>
-                <option value="a">A</option>
                 <option value="b">B</option>
                 <option value="c">C</option>
-                <option value="d">D</option>
-                <option value="f">F</option>
                 <option value="g">G</option>
-                <option value="h">H</option>
-                <option value="i">I</option>
-                <option value="l">L</option>
                 <option value="m">M</option>
-                <option value="p">P</option>
-                <option value="r">R</option>
                 <option value="s">S</option>
-                <option value="t">T</option>
-                <option value="v">V</option>
                 <option value="w">W</option>
               </select>
             </div>
@@ -508,9 +498,9 @@
             <section class="section how-it-works">
                 <h2>How the Villain Name Generator Works</h2>
                 <div class="howto hd">
-                <p>It works from 100 names and name parts, which combine into over 20,000 possible results.</p>
+                <p>It works from 100 names and name parts, which combine into over 2,000 possible results.</p>
                 <p>The choices:</p>
-                <ul><li><strong>Name format:</strong><ul><li>Any, e.g. <em>The Silent Beekeeper</em></li><li>Title and name, e.g. <em>General Malice</em></li><li>The ..., e.g. <em>The Wicked Surgeon</em></li><li>Name and epithet, e.g. <em>Mortem the Patient</em></li></ul></li><li><strong>Starts with:</strong> Any letter, A, B, C, D, F, G, H, I, L, M, P, R, S, T, V, W.</li></ul>
+                <ul><li><strong>Name format:</strong><ul><li>Any, e.g. <em>The Silent Beekeeper</em></li><li>Title and name, e.g. <em>General Malice</em></li><li>The ..., e.g. <em>The Wicked Surgeon</em></li><li>Name and epithet, e.g. <em>Mortem the Patient</em></li></ul></li><li><strong>Starts with:</strong> depends on the name format:<ul><li>Any: Any letter, B, C, G, M, S, W</li><li>Title and name: Any letter, M</li><li>The ...: Any letter, B, C, S</li><li>Name and epithet: Any letter</li></ul></li></ul>
                 <p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet. Once you've seen them all, "Start again" shuffles the whole list again.</p>
                 </div>
             </section>
@@ -590,8 +580,8 @@
       </div>
     </footer>
 
-    <script type="application/json" id="generator-config">{"title":"Villain Name Generator","slug":"villain-name-generator","filters":{"format":{"label":"Name format","options":["any","title","the","epithet"],"optionLabels":{"any":"Any (a mix)","title":"Title and name (Baron Malice)","the":"The ... (The Clockmaker)","epithet":"Name and epithet (Vex the Undying)"}},"letter":{"label":"Starts with","options":["any","a","b","c","d","f","g","h","i","l","m","p","r","s","t","v","w"],"optionLabels":{"any":"Any letter","a":"A","b":"B","c":"C","d":"D","e":"E","f":"F","g":"G","h":"H","i":"I","j":"J","k":"K","l":"L","m":"M","n":"N","o":"O","p":"P","q":"Q","r":"R","s":"S","t":"T","u":"U","v":"V","w":"W","x":"X","y":"Y","z":"Z"}}},"startsWith":"letter","recipe":"switch","on":"format","cases":{"title":{"recipe":"template","template":"[titles] [names]"},"the":{"recipe":"template","template":["The [adj] [occupations]","The [occupations]"]},"epithet":{"recipe":"template","template":"[names] [epithets]"},"any":{"recipe":"template","template":["[titles] [names]","The [adj] [occupations]","The [occupations]","[names] [epithets]"]}},"data":{"titles":["Doctor","Baron","Lord","Lady","Count","Countess","Professor","General","Madame","Duke","Mister","Queen","King","Overlord","Marquis","Archduke"],"names":["Malice","Vex","Dread","Ruin","Hex","Gloom","Wither","Sorrow","Havoc","Scourge","Blight","Mortem","Grimm","Shade","Torment","Cinder","Rook","Grieve","Sable","Vesper","Mordant","Wrath","Rancid"],"adj":["Black","Crimson","Iron","Silent","Hollow","Grim","Pale","Rotten","Twisted","Burning","Frozen","Broken","Wicked","Ashen","Venomous","Dark","Bitter","Cruel","Shadow","Vile"],"occupations":["Serpent","Jester","Shepherd","Puppeteer","Butcher","Architect","Hangman","Surgeon","Watcher","Gardener","Clockmaker","Alchemist","Magpie","Ferryman","Locust","Moth","Taxidermist","Undertaker","Lamplighter","Choirmaster","Weaver","Lockkeeper","Beekeeper","Cartographer","Locksmith","Tailor"],"epithets":["the Merciless","the Undying","the Defiler","the Usurper","the Betrayer","the Unforgiven","of the Black Hand","the Devourer","the Hollow King","the Last","the Unseen","the Nameless","the Smiling","the Patient","the Hungering"]}}</script>
-    <script src="../lib/recipe-engine.js?v=ffff2a5f"></script>
+    <script type="application/json" id="generator-config">{"title":"Villain Name Generator","slug":"villain-name-generator","filters":{"format":{"label":"Name format","options":["any","title","the","epithet"],"optionLabels":{"any":"Any (a mix)","title":"Title and name (Baron Malice)","the":"The ... (The Clockmaker)","epithet":"Name and epithet (Vex the Undying)"}},"letter":{"label":"Starts with","options":["any","b","c","g","m","s","w"],"optionLabels":{"any":"Any letter","a":"A","b":"B","c":"C","d":"D","e":"E","f":"F","g":"G","h":"H","i":"I","j":"J","k":"K","l":"L","m":"M","n":"N","o":"O","p":"P","q":"Q","r":"R","s":"S","t":"T","u":"U","v":"V","w":"W","x":"X","y":"Y","z":"Z"}}},"startsWith":"letter","recipe":"switch","on":"format","cases":{"title":{"recipe":"template","template":"[titles] [names]"},"the":{"recipe":"template","template":["The [adj] [occupations]","The [occupations]"]},"epithet":{"recipe":"template","template":"[names] [epithets]"},"any":{"recipe":"template","template":["[titles] [names]","The [adj] [occupations]","The [occupations]","[names] [epithets]"]}},"data":{"titles":["Doctor","Baron","Lord","Lady","Count","Countess","Professor","General","Madame","Duke","Mister","Queen","King","Overlord","Marquis","Archduke"],"names":["Malice","Vex","Dread","Ruin","Hex","Gloom","Wither","Sorrow","Havoc","Scourge","Blight","Mortem","Grimm","Shade","Torment","Cinder","Rook","Grieve","Sable","Vesper","Mordant","Wrath","Rancid"],"adj":["Black","Crimson","Iron","Silent","Hollow","Grim","Pale","Rotten","Twisted","Burning","Frozen","Broken","Wicked","Ashen","Venomous","Dark","Bitter","Cruel","Shadow","Vile"],"occupations":["Serpent","Jester","Shepherd","Puppeteer","Butcher","Architect","Hangman","Surgeon","Watcher","Gardener","Clockmaker","Alchemist","Magpie","Ferryman","Locust","Moth","Taxidermist","Undertaker","Lamplighter","Choirmaster","Weaver","Lockkeeper","Beekeeper","Cartographer","Locksmith","Tailor"],"epithets":["the Merciless","the Undying","the Defiler","the Usurper","the Betrayer","the Unforgiven","of the Black Hand","the Devourer","the Hollow King","the Last","the Unseen","the Nameless","the Smiling","the Patient","the Hungering"]},"letterSets":{"any":"bcgmsw","title":"m","the":"bcs","epithet":""}}</script>
+    <script src="../lib/recipe-engine.js?v=9d448336"></script>
     <script src="../lib/page.js?v=9651289b"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>

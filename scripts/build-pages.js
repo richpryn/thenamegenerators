@@ -169,22 +169,34 @@ function seededRandom(seedText) {
 function trimLetterOptions(generator) {
   const key = generator.startsWith;
   if (!key || !generator.filters || !generator.filters[key]) return;
+  const MIN = 5; // different first words a letter needs before it's offered
   const engine = RecipeEngine.createGenerator(generator, { random: seededRandom(generator.slug + ':letters') });
   const text = {};
+  const order = [];
   let combos = [{}];
   for (const [k, f] of Object.entries(generator.filters)) {
     if (k === key) continue;
     if (f.type === 'text') { text[k] = f.example || f.default || 'Sam'; continue; }
+    order.push(k);
     combos = combos.flatMap(c => engine.availableOptions(k, c).map(o => ({ ...c, [k]: o })));
   }
-  const counts = {};
-  for (const c of combos.slice(0, 24)) {
-    const seen = new Set();
-    for (let i = 0; i < 30; i++) engine.generate({ ...text, ...c }, 10).forEach(n => seen.add(n));
-    seen.forEach(n => { const l = RecipeEngine.initialOf(n); counts[l] = (counts[l] || 0) + 1; });
+  const letterSets = {};
+  const offered = new Set();
+  for (const c of combos) {
+    const words = {};
+    for (let i = 0; i < 100; i++) {
+      engine.generate({ ...text, ...c }, 10).forEach(n => {
+        const l = RecipeEngine.initialOf(n);
+        (words[l] = words[l] || new Set()).add(RecipeEngine.keyWordOf(n).toLowerCase());
+      });
+    }
+    const letters = Object.keys(words).filter(l => /^[a-z]$/.test(l) && words[l].size >= MIN).sort().join('');
+    letterSets[order.map(k => c[k]).join('|')] = letters;
+    letters.split('').forEach(l => offered.add(l));
   }
   const filter = generator.filters[key];
-  generator.filters = { ...generator.filters, [key]: { ...filter, options: filter.options.filter(o => o === 'any' || (counts[o] || 0) >= 3) } };
+  generator.filters = { ...generator.filters, [key]: { ...filter, options: filter.options.filter(o => o === 'any' || offered.has(o)) } };
+  generator.letterSets = letterSets;
 }
 
 /**
