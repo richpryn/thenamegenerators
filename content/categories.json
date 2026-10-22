@@ -77,6 +77,7 @@
       }
     ],
     "generators": [
+      "demon_realm",
       "animatronic",
       "scarecrow",
       "mummy",
@@ -168,6 +169,8 @@
       }
     ],
     "generators": [
+      "demon_realm",
+      "fairy_tale",
       "tiefling",
       "dragonborn",
       "halfling",
@@ -372,6 +375,10 @@
     "intro": "<p>In folklore, people spoke about fairies carefully: they called them \"the Good Folk\" or \"the Fair Folk\" rather than risk offending them. That mix of beauty and danger is what makes fairy names fun to write.</p><p>The <a href=\"../posts/fairy-name-generator.html\">Fairy Name Generator</a> builds first names, full names and grand epithets, and the <a href=\"../posts/fairy-town-name-generator.html\">Fairy Town Name Generator</a> names the hidden places they live.</p>",
     "featured": [
       {
+        "key": "fairy_tale",
+        "note": "royals, villains, talking animals and enchanted woods from the old stories."
+      },
+      {
         "key": "fairy",
         "note": "first names, surnames and epithets, by gender."
       },
@@ -381,6 +388,7 @@
       }
     ],
     "generators": [
+      "fairy_tale",
       "werewolf_pack",
       "vampire_clan",
       "fairy",
@@ -590,6 +598,7 @@
       }
     ],
     "generators": [
+      "staff",
       "spell",
       "shield",
       "poison",
@@ -687,6 +696,14 @@
     "intro": "<p>Real place names are built from parts that once meant something: <em>-ford</em> was a river crossing, <em>-wick</em> a settlement, <em>-dale</em> a valley. Fantasy names feel real when they follow the same logic, so a mining town sounds like a mining town.</p><p>Start with the <a href=\"../posts/fantasy-town-name-generator.html\">Fantasy Town Name Generator</a>, which sorts names by what the town does, then zoom out with cities and countries. Naming a real place? The <a href=\"../posts/cafe-name-generator.html\">Café Name Generator</a> is here too.</p>",
     "featured": [
       {
+        "key": "fictional_country",
+        "note": "believable modern made-up countries, with a capital."
+      },
+      {
+        "key": "fantasy_district",
+        "note": "quarters, markets and streets for a fantasy city."
+      },
+      {
         "key": "fantasy_town",
         "note": "towns built from real English place-name endings, sorted by what they do."
       },
@@ -700,6 +717,8 @@
       }
     ],
     "generators": [
+      "fictional_country",
+      "fantasy_district",
       "tavern",
       "fantasy_shop",
       "fantasy_town",
@@ -721,6 +740,10 @@
     "intro": "<p>Every race in the Elder Scrolls names itself differently. <a href=\"../posts/skyrim-orc-name-generator.html\">Orcs</a> add gro- or gra- and a parent's name; <a href=\"../posts/khajiit-name-generator.html\">Khajiit</a> wear prefixes like the J' in J'zargo; <a href=\"../posts/nord-name-generator.html\">Nords</a> have hyphenated family names like Battle-Born; <a href=\"../posts/argonian-name-generator.html\">Argonians</a> may go by a description, like Scouts-Many-Marshes. These generators follow each race's customs, with examples from Skyrim, so your character sounds like they belong in Tamriel.</p><p>Each page explains how that race's names work. They suit Skyrim, Elder Scrolls Online, where names must be unique on your server, and tabletop games set in Tamriel.</p>",
     "featured": [
       {
+        "key": "daedric_weapon",
+        "note": "Daedric blades and axes, never a real artefact's name."
+      },
+      {
         "key": "skyrim_orc",
         "note": "full names with gro- and gra-, built the way Skyrim builds them."
       },
@@ -738,6 +761,7 @@
       }
     ],
     "generators": [
+      "daedric_weapon",
       "skyrim_orc",
       "nord",
       "khajiit",

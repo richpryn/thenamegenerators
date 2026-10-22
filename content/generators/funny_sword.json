@@ -21,14 +21,133 @@
         "minecraft": "Minecraft jokes (Creeper Sweeper)",
         "general": "General silliness (The Tickle Stick)"
       }
+    },
+    "style": {
+      "label": "Style",
+      "options": [
+        "plain",
+        "symbols"
+      ],
+      "optionLabels": {
+        "plain": "Plain text",
+        "symbols": "With symbols (⚔ Name ⚔)"
+      }
     }
   },
   "recipe": "switch",
   "on": "kind",
   "cases": {
     "any": {
-      "recipe": "pick",
-      "from": "*"
+      "recipe": "switch",
+      "on": "style",
+      "cases": {
+        "plain": {
+          "recipe": "template",
+          "template": [
+            "[minecraft]",
+            "[general]"
+          ]
+        },
+        "symbols": {
+          "recipe": "template",
+          "template": [
+            "⚔ [minecraft] ⚔",
+            "✦ [minecraft] ✦",
+            "☠ [minecraft] ☠",
+            "★ [minecraft] ★",
+            "✧ [minecraft] ✧",
+            "❄ [minecraft] ❄",
+            "⚡ [minecraft] ⚡",
+            "♛ [minecraft] ♛",
+            "☾ [minecraft] ☽",
+            "« [minecraft] »",
+            "『 [minecraft] 』",
+            "✪ [minecraft] ✪",
+            "☄ [minecraft] ☄",
+            "➶ [minecraft] ➴",
+            "♆ [minecraft] ♆",
+            "❖ [minecraft] ❖",
+            "⚔ [general] ⚔",
+            "✦ [general] ✦",
+            "☠ [general] ☠",
+            "★ [general] ★",
+            "✧ [general] ✧",
+            "❄ [general] ❄",
+            "⚡ [general] ⚡",
+            "♛ [general] ♛",
+            "☾ [general] ☽",
+            "« [general] »",
+            "『 [general] 』",
+            "✪ [general] ✪",
+            "☄ [general] ☄",
+            "➶ [general] ➴",
+            "♆ [general] ♆",
+            "❖ [general] ❖"
+          ]
+        }
+      }
+    },
+    "minecraft": {
+      "recipe": "switch",
+      "on": "style",
+      "cases": {
+        "plain": {
+          "recipe": "template",
+          "template": "[minecraft]"
+        },
+        "symbols": {
+          "recipe": "template",
+          "template": [
+            "⚔ [minecraft] ⚔",
+            "✦ [minecraft] ✦",
+            "☠ [minecraft] ☠",
+            "★ [minecraft] ★",
+            "✧ [minecraft] ✧",
+            "❄ [minecraft] ❄",
+            "⚡ [minecraft] ⚡",
+            "♛ [minecraft] ♛",
+            "☾ [minecraft] ☽",
+            "« [minecraft] »",
+            "『 [minecraft] 』",
+            "✪ [minecraft] ✪",
+            "☄ [minecraft] ☄",
+            "➶ [minecraft] ➴",
+            "♆ [minecraft] ♆",
+            "❖ [minecraft] ❖"
+          ]
+        }
+      }
+    },
+    "general": {
+      "recipe": "switch",
+      "on": "style",
+      "cases": {
+        "plain": {
+          "recipe": "template",
+          "template": "[general]"
+        },
+        "symbols": {
+          "recipe": "template",
+          "template": [
+            "⚔ [general] ⚔",
+            "✦ [general] ✦",
+            "☠ [general] ☠",
+            "★ [general] ★",
+            "✧ [general] ✧",
+            "❄ [general] ❄",
+            "⚡ [general] ⚡",
+            "♛ [general] ♛",
+            "☾ [general] ☽",
+            "« [general] »",
+            "『 [general] 』",
+            "✪ [general] ✪",
+            "☄ [general] ☄",
+            "➶ [general] ➴",
+            "♆ [general] ♆",
+            "❖ [general] ❖"
+          ]
+        }
+      }
     }
   },
   "default": {
@@ -573,5 +692,6 @@
         "answer": "Put the sword in an anvil, type the new name in the box at the top and take it out. On Java Edition renaming a sword that hasn't been on an anvil before costs one level of experience."
       }
     ]
-  }
+  },
+  "maxLength": 50
 }
