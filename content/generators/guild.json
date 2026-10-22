@@ -15,6 +15,7 @@
         "any",
         "adventurers",
         "thieves",
+        "assassins",
         "mages",
         "merchants",
         "crafters"
@@ -25,7 +26,8 @@
         "thieves": "Thieves' guild (the Velvet Hand)",
         "mages": "Mages (the Circle of the Silver Star)",
         "merchants": "Merchants (the Saltroad Company)",
-        "crafters": "Craft guild (the Worshipful Company of Clockmakers)"
+        "crafters": "Craft guild (the Worshipful Company of Clockmakers)",
+        "assassins": "Assassins (the House of the Quiet Hour)"
       }
     }
   },
@@ -49,7 +51,11 @@
         "Fellowship of [mer.trade] Merchants",
         "The Worshipful Company of [cra.trade]",
         "Guild of [cra.trade]",
-        "The [cra.adj] [cra.tool] Guild"
+        "The [cra.adj] [cra.tool] Guild",
+        "The [asn.adj] [asn.noun]",
+        "The House of the [asn.thing]",
+        "The Order of the [asn.thing]",
+        "The [asn.school] of the [asn.thing]"
       ]
     },
     "adventurers": {
@@ -90,6 +96,15 @@
         "The Worshipful Company of [cra.trade]",
         "Guild of [cra.trade]",
         "The [cra.adj] [cra.tool] Guild"
+      ]
+    },
+    "assassins": {
+      "recipe": "template",
+      "template": [
+        "The [asn.adj] [asn.noun]",
+        "The House of the [asn.thing]",
+        "The Order of the [asn.thing]",
+        "The [asn.school] of the [asn.thing]"
       ]
     }
   },
@@ -484,6 +499,87 @@
         "Square",
         "Gauge",
         "Bench"
+      ]
+    },
+    "asn": {
+      "adj": [
+        "Silent",
+        "Velvet",
+        "Grey",
+        "Pale",
+        "Hollow",
+        "Last",
+        "Quiet",
+        "Crimson",
+        "Ashen",
+        "Unseen",
+        "Patient",
+        "Gentle",
+        "Nameless",
+        "Sleepless",
+        "Bitter",
+        "Ivory",
+        "Black-Gloved",
+        "Tenth",
+        "Final",
+        "Sorrowful",
+        "Smiling",
+        "Weeping",
+        "Hidden",
+        "Courteous"
+      ],
+      "noun": [
+        "Knives",
+        "Lilies",
+        "Ravens",
+        "Moths",
+        "Daggers",
+        "Needles",
+        "Ferrymen",
+        "Mourners",
+        "Shadows",
+        "Thorns",
+        "Gardeners",
+        "Masks",
+        "Candles",
+        "Sparrows",
+        "Herons",
+        "Lanterns",
+        "Vipers",
+        "Widows",
+        "Owls",
+        "Pilgrims",
+        "Hands",
+        "Keys"
+      ],
+      "thing": [
+        "Last Breath",
+        "Folded Letter",
+        "Quiet Hour",
+        "Unlit Lamp",
+        "Bitter Cup",
+        "Closed Eye",
+        "Second Shadow",
+        "Empty Chair",
+        "Long Night",
+        "Silver Needle",
+        "Ninth Bell",
+        "Velvet Rope",
+        "Final Word",
+        "Black Tulip",
+        "Drowned Moon",
+        "Unmarked Grave",
+        "Snuffed Candle",
+        "Gentle Knife",
+        "Paper Crane"
+      ],
+      "school": [
+        "Academy",
+        "School",
+        "House",
+        "Seminary",
+        "College",
+        "Conservatory"
       ]
     }
   },
