@@ -313,7 +313,15 @@
       "Holly",
       "Briar",
       "Rowan",
-      "Larch"
+      "Larch",
+      "Alder",
+      "Beech",
+      "Yew",
+      "Pine",
+      "Wheat",
+      "Barley",
+      "Heather",
+      "Clover"
     ],
     "blocky": [
       "Cobble",
@@ -335,7 +343,15 @@
       "Mangrove",
       "Calcite",
       "Mossy Cobble",
-      "Tuff"
+      "Tuff",
+      "Blackstone",
+      "Basalt",
+      "Dripstone",
+      "Lapis",
+      "Purpur",
+      "Brick",
+      "Mud Brick",
+      "Honeycomb"
     ],
     "epic": [
       "Obsidian",
@@ -355,7 +371,17 @@
       "Diamond",
       "Beacon",
       "Elder",
-      "Sculk"
+      "Sculk",
+      "Thunder",
+      "Frost",
+      "Ember",
+      "Golden",
+      "Eternal",
+      "Nether",
+      "Sun",
+      "Moon",
+      "Phantom",
+      "Wolf"
     ],
     "funny": [
       "Dirt Hut",
@@ -373,7 +399,19 @@
       "Bad Idea",
       "Oops",
       "Sleepless",
-      "Lost Bed"
+      "Lost Bed",
+      "Wet Sponge",
+      "Boat Crash",
+      "Burnt Toast",
+      "Angry Bee",
+      "Cactus Hug",
+      "Lost Sheep",
+      "Stuck Minecart",
+      "Leaky Roof",
+      "Snoring Villager",
+      "Soggy Bread",
+      "Lag Spike",
+      "Sticky Piston"
     ]
   },
   "article": {

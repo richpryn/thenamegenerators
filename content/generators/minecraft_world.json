@@ -152,7 +152,24 @@
         "Edge of Night",
         "Deathless",
         "Last Light",
-        "Day One Again"
+        "Day One Again",
+        "Starving Season",
+        "No Armour Run",
+        "Hold the Line",
+        "Last Totem Standing",
+        "The Thin Line",
+        "Spectator Mode Pending",
+        "One Wrong Step",
+        "Creeper Paranoia",
+        "Never Dig Down",
+        "Torchlight Only",
+        "The Night Is Long",
+        "Survive the Dark",
+        "Brink of Dawn",
+        "Watch Your Back",
+        "Three Hearts Left",
+        "No Way Back",
+        "Iron or Nothing"
       ],
       "a": [
         "Last",
@@ -162,7 +179,11 @@
         "Darkest",
         "Bitter",
         "Cold",
-        "Silent"
+        "Silent",
+        "Frozen",
+        "Fading",
+        "Endless",
+        "Hollow"
       ],
       "b": [
         "Stand",
@@ -172,7 +193,11 @@
         "Run",
         "Winter",
         "Breath",
-        "Torch"
+        "Torch",
+        "Hour",
+        "Hope",
+        "Ember",
+        "Watch"
       ]
     },
     "creative": {
@@ -272,7 +297,25 @@
         "Skeleton Shot My Horse",
         "Lost at Spawn",
         "Who Took the Iron",
-        "Totally Organised Storage"
+        "Totally Organised Storage",
+        "Who Lit the Forest",
+        "My Dog Ate My Diamonds",
+        "Creeper in the Kitchen",
+        "Beds Explode Here",
+        "Dirt Is a Building Material",
+        "Dug Too Deep",
+        "Torches Everywhere",
+        "One More Chicken",
+        "The Cow Escaped",
+        "Llama Spit Valley",
+        "Floating Trees Forever",
+        "Accidental Nether Portal",
+        "Bring Back My Boat",
+        "Not Another Cave",
+        "Swamp Hut Estates",
+        "Who Needs Doors",
+        "Bread Is Life",
+        "Gravel Rain"
       ],
       "a": [
         "Accidental",
@@ -282,7 +325,11 @@
         "Very Damp",
         "Sleepy",
         "Explosive",
-        "Wobbly"
+        "Wobbly",
+        "Badly Built",
+        "Suspicious",
+        "Overgrown",
+        "Unfinished"
       ],
       "b": [
         "Llama Farm",
@@ -292,7 +339,11 @@
         "Cobblestone Castle",
         "Sheep Republic",
         "Creeper Zoo",
-        "Lava Spa"
+        "Lava Spa",
+        "Pig Palace",
+        "Goat Ranch",
+        "Cactus Garden",
+        "Squid Museum"
       ]
     },
     "adventure": {

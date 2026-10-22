@@ -1026,7 +1026,62 @@
       "Legendary (Not Really)",
       "Fearsome-ish",
       "Mum's",
-      "Trusty"
+      "Trusty",
+      "Second-Hand",
+      "Freshly Crafted",
+      "Bargain Bin",
+      "Hand-Me-Down",
+      "Wonky",
+      "Squeaky",
+      "Soggy",
+      "Crumbly",
+      "Mysterious",
+      "Mildly Enchanted",
+      "Dramatic",
+      "Nervous",
+      "Overconfident",
+      "Sleepy",
+      "Grumpy",
+      "Chatty",
+      "Clumsy",
+      "Tiny",
+      "Enormous",
+      "Slightly Bent",
+      "Freshly Polished",
+      "Mostly Intact",
+      "Barely Working",
+      "Upside-Down",
+      "Very Shiny",
+      "Accidentally Enchanted",
+      "Unreturned",
+      "Lost and Found",
+      "Villager-Approved",
+      "Creeper-Scorched",
+      "Lava-Singed",
+      "Nearly Lost",
+      "Twice-Repaired",
+      "Ancient (Last Tuesday)",
+      "Fancy",
+      "Sparkly",
+      "Budget",
+      "Deluxe",
+      "Limited Edition",
+      "Homemade",
+      "Reasonably Priced",
+      "Award-Winning",
+      "Very Serious",
+      "Extremely Normal",
+      "Respawned",
+      "Overrated",
+      "Underrated",
+      "Nan's",
+      "Auntie's",
+      "My Best Mate's",
+      "The Neighbour's",
+      "Hardly Used",
+      "Bouncy",
+      "Damp",
+      "Moody"
     ],
     "funny_of": [
       "Mild Disappointment",
@@ -1048,7 +1103,52 @@
       "Slight Peril",
       "Total Confidence",
       "Second Chances",
-      "Very Little Mercy"
+      "Very Little Mercy",
+      "Mild Inconvenience",
+      "Lost Socks",
+      "Bad Timing",
+      "Unexpected Gravel",
+      "Sudden Creepers",
+      "Wasted Diamonds",
+      "Endless Gravel",
+      "Minor Victories",
+      "Questionable Decisions",
+      "Cold Tea",
+      "Soggy Biscuits",
+      "Polite Requests",
+      "Loud Noises",
+      "Total Chaos",
+      "Mostly Luck",
+      "Several Mistakes",
+      "Bad Directions",
+      "Wrong Turns",
+      "Lost Beds",
+      "Missing Pets",
+      "Late Nights",
+      "Early Mornings",
+      "Many Naps",
+      "Sheer Stubbornness",
+      "Borrowed Time",
+      "Almost Winning",
+      "the Wrong Biome",
+      "Lost Coordinates",
+      "Empty Chests",
+      "Full Inventories",
+      "Too Many Torches",
+      "One More Block",
+      "Five More Minutes",
+      "Hidden Talents",
+      "No Fixed Purpose",
+      "Dubious Quality",
+      "Reasonable Doubt",
+      "Mild Surprise",
+      "Sudden Bravery",
+      "Constant Lag",
+      "the Lucky Sock",
+      "Good Intentions",
+      "Brief Glory",
+      "Great Fuss",
+      "Random Chance"
     ],
     "pickaxe": {
       "noun": [
@@ -1080,7 +1180,19 @@
         "Holey Moley",
         "Diamond? What Diamond",
         "The Lost One",
-        "Pickle"
+        "Pickle",
+        "Rock and Roll",
+        "Pick Up Line",
+        "Ore-some",
+        "Pick 'n' Mix",
+        "Minor Mishap",
+        "Stone Cold",
+        "Rocky",
+        "Cave Crasher",
+        "Ore Inspector",
+        "Gem Grabber",
+        "Mine All Mine",
+        "The Tunneller"
       ],
       "enchants": [
         "Efficiency V",
@@ -1099,7 +1211,13 @@
         "Iron",
         "Echo",
         "Cave",
-        "Rock"
+        "Rock",
+        "Gem",
+        "Emerald",
+        "Copper",
+        "Quartz",
+        "Flint",
+        "Crystal"
       ],
       "suf": [
         "breaker",
@@ -1109,7 +1227,10 @@
         "finder",
         "biter",
         "song",
-        "fang"
+        "fang",
+        "cutter",
+        "carver",
+        "hewer"
       ]
     },
     "axe": {
@@ -1142,7 +1263,18 @@
         "Timberrr",
         "The Twig Botherer",
         "Splinters",
-        "Chopsticks"
+        "Chopsticks",
+        "Axe Me Anything",
+        "Wood You Mind",
+        "Chip Off the Old Block",
+        "Treeson",
+        "Branch Manager",
+        "Sawdust",
+        "Lumberjill",
+        "Oak-ward",
+        "Leaf It Out",
+        "Tree's Company",
+        "Chopper"
       ],
       "enchants": [
         "Sharpness V",
@@ -1161,7 +1293,13 @@
         "Iron",
         "Wood",
         "Root",
-        "Shield"
+        "Shield",
+        "Ash",
+        "Elm",
+        "Birch",
+        "Thorn",
+        "Frost",
+        "Ember"
       ],
       "suf": [
         "cleaver",
@@ -1171,7 +1309,10 @@
         "fall",
         "bane",
         "song",
-        "edge"
+        "edge",
+        "hewer",
+        "cleave",
+        "reaver"
       ]
     },
     "shovel": {
@@ -1204,7 +1345,18 @@
         "Path Finder",
         "Dirt Destroyer",
         "Gravel Gobbler",
-        "Scoops"
+        "Scoops",
+        "Can You Dig It",
+        "Mud Slinger",
+        "Hole Lotta Fun",
+        "Dirt Cheap",
+        "Spadework",
+        "Big Dig",
+        "Mole Patrol",
+        "The Scooper",
+        "Sand Witch",
+        "Snow Problem",
+        "Earthy"
       ],
       "enchants": [
         "Efficiency V",
@@ -1223,7 +1375,13 @@
         "Soil",
         "Dune",
         "Peat",
-        "Loam"
+        "Loam",
+        "Dust",
+        "Moss",
+        "Root",
+        "Stone",
+        "Frost",
+        "Marsh"
       ],
       "suf": [
         "mover",
@@ -1233,7 +1391,10 @@
         "seeker",
         "breaker",
         "song",
-        "bane"
+        "bane",
+        "digger",
+        "heart",
+        "turner"
       ]
     },
     "bow": {
@@ -1266,7 +1427,17 @@
         "Rainbow",
         "Bow Tie",
         "Elbow",
-        "Wobbly Arrow"
+        "Wobbly Arrow",
+        "Bow-nanza",
+        "String Theory",
+        "Quiver Me Timbers",
+        "Robin Hoodie",
+        "Bullseye (Eventually)",
+        "The Bow Must Go On",
+        "Twangy",
+        "Feather Flinger",
+        "Plinky",
+        "Long Distance"
       ],
       "enchants": [
         "Power V",
@@ -1286,7 +1457,13 @@
         "Hawk",
         "Ghost",
         "Silver",
-        "Dawn"
+        "Dawn",
+        "Swift",
+        "Sun",
+        "Night",
+        "Cloud",
+        "Raven",
+        "Ember"
       ],
       "suf": [
         "shot",
@@ -1296,7 +1473,10 @@
         "flight",
         "fall",
         "strike",
-        "reach"
+        "reach",
+        "wing",
+        "call",
+        "sight"
       ]
     },
     "crossbow": {
@@ -1329,7 +1509,17 @@
         "Tension",
         "Snap",
         "Kaboom",
-        "Click Click Bang"
+        "Click Click Bang",
+        "Cross Words",
+        "Double Cross",
+        "Cross Country",
+        "Click and Collect",
+        "Criss Cross",
+        "Bolt Bucket",
+        "Quite Cross",
+        "Firework Frenzy",
+        "Fizz Bang",
+        "Mr Grumpy Bolts"
       ],
       "enchants": [
         "Multishot",
@@ -1348,7 +1538,13 @@
         "Spark",
         "Star",
         "Storm",
-        "Quick"
+        "Quick",
+        "Flint",
+        "Blast",
+        "Thorn",
+        "Copper",
+        "Hammer",
+        "Raid"
       ],
       "suf": [
         "lock",
@@ -1358,7 +1554,10 @@
         "strike",
         "fire",
         "snap",
-        "load"
+        "load",
+        "burst",
+        "bite",
+        "crack"
       ]
     },
     "trident": {
@@ -1391,7 +1590,17 @@
         "The Drowned's Revenge",
         "Dinner Fork",
         "Prong Song",
-        "Three Pointy Bits"
+        "Three Pointy Bits",
+        "Neptune's Spare",
+        "Pitchfork Pete",
+        "Salad Fork",
+        "Splish Splash",
+        "Three's a Crowd",
+        "Tine Time",
+        "The Prongster",
+        "Seaweed Skewer",
+        "Toasting Fork",
+        "Pointy Trio"
       ],
       "enchants": [
         "Loyalty III",
@@ -1411,7 +1620,13 @@
         "Thunder",
         "Salt",
         "Riptide",
-        "Brine"
+        "Brine",
+        "Surf",
+        "Gale",
+        "Foam",
+        "Reef",
+        "Kelp",
+        "Pearl"
       ],
       "suf": [
         "caller",
@@ -1421,7 +1636,10 @@
         "song",
         "prong",
         "fury",
-        "spire"
+        "spire",
+        "lance",
+        "crest",
+        "wake"
       ]
     },
     "mace": {
@@ -1454,7 +1672,18 @@
         "The Squasher",
         "Mace Face",
         "Cannonball",
-        "Plonk"
+        "Plonk",
+        "Bonkers",
+        "Wallop",
+        "Thwack",
+        "Boing",
+        "Gravity Wins",
+        "Ouch",
+        "Squish",
+        "Landing Gear",
+        "The Thumper",
+        "Kerthunk",
+        "Doink"
       ],
       "enchants": [
         "Density V",
@@ -1474,7 +1703,13 @@
         "Wind",
         "Breeze",
         "Star",
-        "Iron"
+        "Iron",
+        "Stone",
+        "Gust",
+        "Cloud",
+        "Comet",
+        "Trial",
+        "Quake"
       ],
       "suf": [
         "breaker",
@@ -1484,7 +1719,10 @@
         "fall",
         "crusher",
         "heart",
-        "smash"
+        "smash",
+        "maul",
+        "pound",
+        "slam"
       ]
     },
     "shield": {
@@ -1517,7 +1755,18 @@
         "Arrow Collector",
         "Shieldy McShieldface",
         "Plank",
-        "The Wall"
+        "The Wall",
+        "Not My Problem",
+        "Bin Lid",
+        "Tea Tray",
+        "Pincushion",
+        "Safety First",
+        "No Thank You",
+        "Return to Sender",
+        "Behind You",
+        "Big Nope",
+        "Chopping Board",
+        "Brave Face"
       ],
       "enchants": [
         "Unbreaking III",
@@ -1533,7 +1782,13 @@
         "Bastion",
         "Steel",
         "Bulwark",
-        "Ember"
+        "Ember",
+        "Granite",
+        "Obsidian",
+        "Banner",
+        "Gold",
+        "Night",
+        "Tower"
       ],
       "suf": [
         "guard",
@@ -1543,7 +1798,10 @@
         "keep",
         "bane",
         "bearer",
-        "hold"
+        "hold",
+        "shell",
+        "brace",
+        "fort"
       ]
     },
     "elytra": {
@@ -1576,7 +1834,17 @@
         "Air Mail",
         "Plummet",
         "Wall Magnet",
-        "Bat Cape"
+        "Bat Cape",
+        "Up Up and Away",
+        "Sky Scraper",
+        "Bin Bag Wings",
+        "Free Fall",
+        "Swoop",
+        "Dramatic Exit",
+        "Faceplant",
+        "Hold On Tight",
+        "Cloud Botherer",
+        "Wheee"
       ],
       "enchants": [
         "Unbreaking III",
@@ -1592,7 +1860,13 @@
         "Void",
         "Phantom",
         "Dragon",
-        "Dusk"
+        "Dusk",
+        "Sun",
+        "Moon",
+        "Gale",
+        "Storm",
+        "Ash",
+        "Swift"
       ],
       "suf": [
         "wing",
@@ -1602,7 +1876,10 @@
         "glider",
         "flight",
         "sail",
-        "drift"
+        "drift",
+        "soar",
+        "dancer",
+        "chaser"
       ]
     },
     "fishing_rod": {
@@ -1635,7 +1912,18 @@
         "Sir Reels-a-Lot",
         "Nothing Biting",
         "Old Boot",
-        "Wet Noodle"
+        "Wet Noodle",
+        "Reel Deal",
+        "Cod Almighty",
+        "Fishy Business",
+        "Plaice Holder",
+        "Sole Searcher",
+        "Catch of the Day",
+        "Pole Position",
+        "Wishful Fishing",
+        "Let Minnow",
+        "Gone Fishing",
+        "Bob the Float"
       ],
       "enchants": [
         "Luck of the Sea III",
@@ -1653,7 +1941,13 @@
         "Deep",
         "Luck",
         "Lure",
-        "Sea"
+        "Sea",
+        "Gold",
+        "Reed",
+        "Brook",
+        "Coral",
+        "Storm",
+        "Dawn"
       ],
       "suf": [
         "line",
@@ -1663,7 +1957,10 @@
         "whisper",
         "bait",
         "reel",
-        "catcher"
+        "catcher",
+        "glint",
+        "float",
+        "angler"
       ]
     }
   },

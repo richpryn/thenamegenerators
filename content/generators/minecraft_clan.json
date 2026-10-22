@@ -152,7 +152,15 @@
         "Ender Pearl",
         "Golden Apple",
         "Totem",
-        "Beacon"
+        "Beacon",
+        "Sniffer",
+        "Slime",
+        "Allay",
+        "Trident",
+        "Elytra",
+        "Amethyst",
+        "Copper",
+        "Obsidian"
       ],
       "adj": [
         "Redstone",
@@ -164,7 +172,11 @@
         "Golden",
         "Copper",
         "Mossy",
-        "Lucky"
+        "Lucky",
+        "Fearless",
+        "Blocky",
+        "Brave",
+        "Crafty"
       ],
       "plural": [
         "Rascals",
@@ -176,7 +188,11 @@
         "Creepers",
         "Blazers",
         "Diggers",
-        "Golems"
+        "Golems",
+        "Pioneers",
+        "Rangers",
+        "Explorers",
+        "Foxes"
       ]
     },
     "friends": {
