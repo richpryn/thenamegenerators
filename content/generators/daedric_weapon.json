@@ -596,7 +596,29 @@
       "tagline": "Names for Daedric blades, axes and maces in the style of the Elder Scrolls."
     },
     "intro": "Daedric weapons are black, red-veined and slightly alive, and their names should sound like a bargain you'll regret. This **Daedric weapon name generator** makes new names for Elder Scrolls characters, mods and roleplay, with a weapon type or a title, and leaves the real artefacts of the games alone.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "What makes a weapon Daedric",
+        "content": "<p>In The Elder Scrolls games the Daedra are the beings of Oblivion, and Daedric weapons are their black, red-edged arms. In Skyrim they're the strongest ordinary weapons you can forge: you need an ebony ingot and a daedra heart, and the Daedric Smithing perk, which needs a Smithing skill of 90. The best-known Daedric items are the artefacts given by the Daedric Princes, each unique and named.</p><p>This generator makes new names in that style. They're never the name of a real artefact, so your character's weapon won't be mistaken for one from the games:</p><ul><li><strong>Name only</strong>: a hard, short name like <em>Rakmar</em> or one with an apostrophe like <em>Bal'gagoth</em>.</li><li><strong>With its weapon type</strong>: <em>Bal'zarex, a Daedric warhammer</em>.</li><li><strong>With a title</strong> that sounds like a bargain made with a Daedric Prince: <em>Korion, the Last Bargain</em>, <em>Ulkesh, the Patient Thirst</em>.</li></ul>"
+      },
+      {
+        "heading": "Naming a weapon in Skyrim",
+        "content": "<p>You can rename a weapon in Skyrim without mods: enchant it at an Arcane Enchanter and the game lets you type a new name before you craft. Mod authors and roleplayers can use these names for new weapons, fan fiction and tabletop games set in Tamriel.</p><p>This site isn't connected to Bethesda or The Elder Scrolls; the names are made up and free to use. For the warrior holding the blade, try the <a href=\"nord-name-generator.html\">Nord Name Generator</a> or the <a href=\"dunmer-name-generator.html\">Dunmer Name Generator</a>, and for any other blade the <a href=\"sword-name-generator.html\">Sword Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/elder_scrolls-names.html\">Elder Scrolls name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I rename a Daedric weapon in Skyrim?",
+        "answer": "Yes. When you enchant a weapon at an Arcane Enchanter you can give it a new name before you finish. Without enchanting it, the base game doesn't let you rename weapons."
+      },
+      {
+        "question": "Are these real Elder Scrolls artefacts?",
+        "answer": "No. None of the names belong to an artefact in the games. They're new names in a Daedric style, so they won't clash with anything your character can already find."
+      },
+      {
+        "question": "What is a good Daedric weapon name?",
+        "answer": "A short, hard name with an ominous title, like Ulrath, Doom of Kings. Daedric weapons are tied to dark bargains, so titles about oaths, debts and hunger suit them."
+      }
+    ]
   }
 }

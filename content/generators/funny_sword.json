@@ -690,6 +690,10 @@
       {
         "question": "How do you rename a sword in Minecraft?",
         "answer": "Put the sword in an anvil, type the new name in the box at the top and take it out. On Java Edition renaming a sword that hasn't been on an anvil before costs one level of experience."
+      },
+      {
+        "question": "Can I use symbols in a Minecraft sword name?",
+        "answer": "Yes. Choose With symbols, copy the name and paste it into the anvil's name box; symbols like ⚔ and ★ display on both Java and Bedrock. Colours are different: on Java Edition the § sign used for colour codes can't be typed in an anvil, so coloured names need commands or a server plugin."
       }
     ]
   },

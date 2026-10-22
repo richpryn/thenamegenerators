@@ -891,7 +891,29 @@
       "tagline": "Believable names for made-up modern countries, with an official title or a capital city."
     },
     "intro": "Thrillers, alternate histories and games often need a country that doesn't exist but sounds as if it might. This **fictional country name generator** makes believable modern countries: small European republics, Nordic states and island nations, with an official name like the Grand Duchy of Velaria, or a capital city.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Fictional Country or Fantasy Country?",
+        "content": "<p>Use this generator for a country that could sit on a modern map: a small European republic in a spy thriller, an island nation in a satirical novel, or a delegation in a Model UN crisis. The names sound like real places and come with official titles and capitals.</p><p>For a kingdom in a world of dragons and castles, use the <a href=\"fantasy-country-name-generator.html\">Fantasy Country Name Generator</a> instead. Its names are made to sound older and stranger.</p><p>Writers have been inventing countries like this for a long time. Anthony Hope's <em>The Prisoner of Zenda</em> (1894) was set in Ruritania, which gave its name to a whole genre of stories set in small invented kingdoms.</p>"
+      },
+      {
+        "heading": "How real countries get their names",
+        "content": "<p>The generator borrows real naming patterns, so the results sound right:</p><ul><li><strong>Small European states</strong> often end in <em>-ia</em>, the Latin ending for a land, as in Romania and Bulgaria: <em>Corovia</em>, <em>Velenia</em>.</li><li><strong>Nordic names</strong> use <em>-mark</em>, an old word for a borderland (Denmark is the march of the Danes), and <em>-heim</em>, meaning home: <em>Vestmark</em>, <em>Iskheim</em>.</li><li><strong>Island nations</strong> often carry a saint's name from Spanish or Portuguese explorers: <em>Santa Esperanza</em>, <em>Santa Ondina</em>.</li></ul><p><strong>Official names</strong> say how the country is run. Luxembourg is the only grand duchy left, Monaco and Liechtenstein are principalities, and Dominica and the Bahamas are both commonwealths. Choose Official name for titles like <em>the Grand Duchy of Port Perla</em>, or add a capital, as in <em>Fengard (capital: Kestrel Bay)</em>.</p><p>For more maps and settlements, see all the <a href=\"../categories/places-names.html\">place name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are some good fake country names?",
+        "answer": "Ones that follow real patterns, like Corovia (with the -ia ending of Romania) or Vestmark (with the -mark of Denmark). They sound real because the pieces are, without being a real place."
+      },
+      {
+        "question": "Can I use these for Model UN?",
+        "answer": "Yes. A fictional country is useful for a crisis committee or a practice debate, where you don't want anyone's real politics getting in the way. Give it an official name and a capital to make the brief feel complete."
+      },
+      {
+        "question": "Is any of these a real country?",
+        "answer": "They're invented, but a few pieces may match real towns, since the generator uses real naming patterns. If you're publishing, search the name first to make sure it doesn't belong to somewhere real."
+      }
+    ]
   }
 }

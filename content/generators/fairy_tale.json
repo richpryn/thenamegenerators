@@ -835,7 +835,29 @@
       "tagline": "Names for the heroes, villains, talking animals, kingdoms and woods of a fairy tale."
     },
     "intro": "Fairy tale names do a lot of work in a few words: Clever Gretchen tells you she'll win, the Wicked Queen tells you she won't. This **fairy tale name generator** names royals, villains, humble heroes, talking animals, kingdoms and enchanted places, in the style of the old tales but without borrowing their famous characters.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "How fairy tales name people",
+        "content": "<p>In the old tales most characters have no names at all. The Brothers Grimm, whose collection first came out in 1812 and reached 200 tales by the final 1857 edition, mostly wrote of \"a king's daughter\", \"a miller\" or \"the youngest son\". When a name does appear it's usually a description: Snow White, Briar Rose, Clever Gretel. Charles Perrault's tales of 1697 work the same way, and his Puss in Boots is simply the cat a miller's son inherits.</p><p>That's why this generator mixes plain names with roles and nicknames:</p><ul><li><strong>Royals</strong> get an old-fashioned name and a kingdom: <em>Princess Clemency of Amberlea</em>, <em>Prince Jasper of the Twelve Rivers</em>.</li><li><strong>Villains</strong> get a title and a vice: <em>the Ice Queen Drusilla the Envious</em>.</li><li><strong>Humble heroes</strong> are known by their trade or one good quality, like <em>Sam, the cooper's son</em> or <em>Clever Ivo</em>.</li><li><strong>Creatures</strong> get a courtesy title, as in the English tale of Mr Fox: <em>Master Fox</em>, <em>the Wild Huntsman of the Crossroads</em>.</li></ul>"
+      },
+      {
+        "heading": "Kingdoms and enchanted places",
+        "content": "<p>Fairy-tale geography is vague on purpose. Stories happen \"far away\", in a kingdom with a pleasant name, beside a wood that is never on a map. Pick <strong>Kingdom</strong> for names like <em>the Land Beyond Thistledown</em>, or <strong>Enchanted place</strong> for the tower, castle or forest where the trouble starts: <em>the Tower of the Silent Bell</em>, <em>the Castle of Mirrors</em>.</p><p>Use them for a retelling, a bedtime story, a pantomime or a tabletop game with a storybook feel. For the fair folk themselves, try the <a href=\"fairy-name-generator.html\">Fairy Name Generator</a> and the <a href=\"fairy-town-name-generator.html\">Fairy Town Name Generator</a>; for a proper villain, the <a href=\"villain-name-generator.html\">Villain Name Generator</a>.</p><p>For more tales and creatures, see all the <a href=\"../categories/folklore-names.html\">folklore name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are some good fairy tale names?",
+        "answer": "Names that sound old and a little formal, like Clemency, Ermengarde or Jasper, or a nickname that tells you who someone is, like Clever Hettie. Pair a royal name with a kingdom for a proper storybook title."
+      },
+      {
+        "question": "Are these characters from real fairy tales?",
+        "answer": "No. They're new names made in the style of the old tales, so you won't find Princess Larkspur in Grimm or Perrault. They're free to use in your own story."
+      },
+      {
+        "question": "What's a good name for a fairy tale kingdom?",
+        "answer": "Something gentle and English-sounding that suggests the landscape, like Thornwell or Brightmere, often with \"the Kingdom of\" or \"the Land Beyond\" in front. Choose Kingdom for names built that way."
+      }
+    ]
   }
 }
