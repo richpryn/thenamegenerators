@@ -538,7 +538,29 @@
       "tagline": "Names for hell planes, infernal kingdoms, circles of torment and the cities of devils."
     },
     "intro": "Every demon needs somewhere to come from. This **demon realm name generator** names infernal kingdoms, layers and circles of a hell, and the fortress cities that rule them, with new names rather than the Nine Hells and abysses of other settings.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Hells in myth and literature",
+        "content": "<p>Writers have been mapping hell for a long time, and most of the vocabulary for demon realms comes from a handful of sources:</p><ul><li><strong>Dante's Inferno</strong> (early 1300s) divides hell into nine circles, each for a different sin, with the walled city of Dis guarding the lower ones.</li><li><strong>Milton's <em>Paradise Lost</em></strong> (1667) invented the word Pandemonium, \"all the demons\", as the name of the capital the fallen angels build.</li><li><strong>Gehenna</strong> was a real valley outside Jerusalem, whose name became a word for hell. <strong>Tartarus</strong> was the Greek pit beneath the underworld.</li></ul><p>Pick <strong>Circle or layer</strong> for names in Dante's style, like <em>the Eighth Gate of Ice</em> or <em>the Circle of Chains</em>. Pick <strong>Realm</strong> for a whole kingdom, like <em>the Ashen Dominion</em>.</p>"
+      },
+      {
+        "heading": "Cities and fortresses of the damned",
+        "content": "<p>A demon realm needs somewhere to rule from. Choose <strong>Infernal city</strong> for a fortress or capital, from a bare name like <em>Xulmor</em> to <em>the Citadel of Vorgoth</em> or <em>the Weeping Palace</em>. The made-up names use hard sounds (k, g, th, z) so they sound unfriendly when read aloud.</p><p>Whoever lives there will need names too: try the <a href=\"demon-name-generator.html\">Demon Name Generator</a> and the <a href=\"demon-epithet-generator.html\">Demon Epithet Generator</a> for its rulers, and the <a href=\"tiefling-name-generator.html\">Tiefling Name Generator</a> for anyone who escaped.</p><p>For more of the underworld, see all the <a href=\"../categories/fantasy-names.html\">fantasy name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are some names for hell?",
+        "answer": "Real ones include the Inferno, Gehenna, Tartarus, Hades, Sheol and Pandemonium, all with different origins. For your own world it's better to invent one, like the Ashen Dominion, so it feels like part of your setting."
+      },
+      {
+        "question": "How many layers should a demon realm have?",
+        "answer": "As many as your story needs. Dante gave hell nine circles, which is why nine turns up so often; a few named layers you can describe is better than dozens you can't."
+      },
+      {
+        "question": "Are these from D&D or another game?",
+        "answer": "No. The names are made up for this site and aren't official planes from any game, so they're free to use in your own campaign or story."
+      }
+    ]
   }
 }

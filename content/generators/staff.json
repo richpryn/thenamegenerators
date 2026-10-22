@@ -286,7 +286,29 @@
       "tagline": "Names for wizards' staffs, druids' staffs, quarterstaffs and the slightly embarrassing sticks in between."
     },
     "intro": "A wizard's staff is half walking stick, half weapon and half the reason anyone takes the wizard seriously. This **staff name generator** names wizards' and druids' staffs, fighting quarterstaffs and funny staffs, for D&D characters, stories and games.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Four kinds of staff",
+        "content": "<ul><li><strong>Wizard's staffs</strong> get a grand, compound name and sometimes a title: <em>Rootwhisper</em>, <em>Moonfall, Staff of the Northern Stars</em>.</li><li><strong>Druid's staffs</strong> are named after the wood they're cut from. The Roman writer Pliny the Elder recorded that the druids of Gaul held the oak sacred, and British folklore credits rowan with protecting against witchcraft, so you'll see <em>Oakheart</em> and <em>the Rowan Staff of the First Spring</em>.</li><li><strong>Fighting staffs</strong> are for the quarterstaff, a plain wooden pole of six to nine feet that was a common weapon in medieval and Tudor England. They sound like what they do: <em>Bonecracker</em>, <em>Shincracker, the Last Argument</em>.</li><li><strong>Funny staffs</strong> don't take themselves seriously: <em>the Stick of Moderate Power</em>, <em>the Suspiciously Sticky Driftwood Stick</em>, or just <em>Gerald</em>.</li></ul>"
+      },
+      {
+        "heading": "Using a staff in D&D",
+        "content": "<p>In D&D 5th edition a wizard can use a staff as an arcane focus and a druid can use a wooden staff as a druidic focus, so a spellcaster's staff is often with them for the whole campaign. That makes it worth naming. A quarterstaff is also a simple weapon anyone can use, which is why monks carry them too.</p><p>Name the person holding it with the <a href=\"wizard-name-generator.html\">Wizard Name Generator</a> or the <a href=\"druid-name-generator.html\">Druid Name Generator</a>. For a smaller tool, try the <a href=\"wand-name-generator.html\">Wand Name Generator</a>, and for other weapons the <a href=\"sword-name-generator.html\">Sword Name Generator</a>.</p><p>For more named weapons and treasures, see all the <a href=\"../categories/objects-names.html\">object name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is a good name for a wizard staff?",
+        "answer": "A compound of two strong words, like Rootwhisper or Moonfall, with an optional title such as Staff of the Northern Stars. Name it after what it's made from or what it does best."
+      },
+      {
+        "question": "What's the difference between a staff and a wand?",
+        "answer": "Size and use. A staff is a full-length pole you can lean on or fight with; a wand is short and held in one hand. In D&D both can be used as an arcane focus."
+      },
+      {
+        "question": "Can I use a funny staff name in a serious game?",
+        "answer": "Yes, and it often works best that way. A powerful staff with a modest name, like the Stick of Moderate Power, is a running joke your table will remember."
+      }
+    ]
   }
 }

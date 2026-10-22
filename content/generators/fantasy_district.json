@@ -493,7 +493,29 @@
       "tagline": "Names for the quarters, streets and markets that make a fantasy city feel lived in."
     },
     "intro": "A city map comes alive when its districts have names people actually use. This **fantasy district name generator** names trade quarters, markets, streets, rich and poor districts, docks, temple precincts and mages' quarters, in the plain, practical way real old cities named their parts.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "How real cities named their districts",
+        "content": "<p>Old city names are practical. The City of London still has Bread Street, Milk Street and a street called Poultry, named after what was sold there, and Cheapside takes its name from the Old English word for a market. York's Shambles is named after the benches butchers sold meat from. Paris has the Latin Quarter, where the university students spoke Latin.</p><p>The generator follows the same habits:</p><ul><li><strong>Trade quarters</strong> are named after the trade: <em>the Tanners' Quarter</em>, <em>the Spicers' Street</em>.</li><li><strong>Markets</strong> after what they sell: <em>the Saltmarket</em>, <em>West Flowermarket</em>.</li><li><strong>Streets and lanes</strong> after a landmark: <em>Lantern Row</em>, <em>Moonglass Alley</em>, <em>Tarry Steps</em>.</li><li><strong>Rich districts</strong> sit up high: <em>the High Terrace</em>, <em>Crown Hill</em>.</li><li><strong>Rough ends</strong> sound it: <em>the Rookery</em> was the name for crowded London slums like St Giles, and <em>Ragfair</em> for the old-clothes markets.</li></ul>"
+      },
+      {
+        "heading": "Building a city map",
+        "content": "<p>A city feels real when its districts disagree: a temple quarter beside the docks, a rich terrace above a slum. Generate a name for each part, then give the city a few streets that link them. If players ask for directions, \"down Swan Row and past the Cloisters\" sounds better than \"the north district\".</p><p>Name the city first with the <a href=\"fantasy-city-name-generator.html\">Fantasy City Name Generator</a>, then fill its streets with businesses from the <a href=\"tavern-name-generator.html\">Tavern Name Generator</a> and the <a href=\"fantasy-shop-name-generator.html\">Fantasy Shop Name Generator</a>.</p><p>For more maps and settlements, see all the <a href=\"../categories/places-names.html\">place name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What do you call a section of a fantasy city?",
+        "answer": "A district, quarter or ward. A quarter often has a theme (the Mages' Quarter), a ward is an official division (the City of London still has 25), and smaller areas are named after their main street, square or market."
+      },
+      {
+        "question": "How do you name fantasy streets?",
+        "answer": "After what's there or what happens there: a trade, a landmark, a sign or a person. Add a real ending like Row, Lane, Steps, Close or Court. Choose Street or lane for names like Lantern Row."
+      },
+      {
+        "question": "Can I use these names for a D&D city?",
+        "answer": "Yes. They're made up and free to use in your game, map or book. For a published work, it's worth searching a name first in case another book already uses it."
+      }
+    ]
   }
 }
