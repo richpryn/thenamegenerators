@@ -945,7 +945,7 @@
     "sections": [
       {
         "heading": "Patronymics: son of, daughter of",
-        "content": "<p>The usual way to tell two Viking Leifs apart was to name their fathers. A son added <em>-son</em> to his father's name and a daughter added <em>-dóttir</em>: Leif Eriksson, Freydis Eiríksdóttir. (The exact spelling of the father's name changes in Old Norse grammar; the generator keeps it simple by adding -sson and -sdóttir.)</p><p>Iceland still uses this system today, which is why an Icelandic father and daughter usually have different last names.</p>"
+        "content": "<p>The usual way to tell two Viking Leifs apart was to name their fathers. A son added <em>-son</em> to his father's name and a daughter added <em>-dóttir</em>: Leif Eriksson, Freydis Eiríksdóttir. The father's name changes its ending to fit Old Norse grammar, and the generator follows the real rules: Snorri's son is Snorrason, Finnbogi's son is Finnbogason, and Leif's daughter is Leifsdóttir.</p><p>Iceland still uses this system today, which is why an Icelandic father and daughter usually have different last names.</p>"
       },
       {
         "heading": "Bynames: Erik the Red and friends",
