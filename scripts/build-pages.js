@@ -270,7 +270,7 @@ function howItWorksHtml(generator) {
     }
   });
   if (choices.length) parts.push(`<p>The choices:</p>\n                <ul>${choices.join('')}</ul>`);
-  parts.push(`<p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet, until the names for the choices you've made run out.</p>`);
+  parts.push(`<p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet. Once you've seen them all, "Start again" shuffles the whole list again.</p>`);
 
   return `
             <section class="section how-it-works">
@@ -387,6 +387,15 @@ function generateSchemas(generator, category, examples) {
   return schemas;
 }
 
+/** Put the article's end mark at the end of its last line: its last paragraph, or the last item of a closing list. */
+function withEndMark(html, motif) {
+  const trimmed = html.trimEnd();
+  const close = trimmed.endsWith('</p>') ? '</p>' : /<\/[uo]l>$/.test(trimmed) ? '</li>' : null;
+  if (!close) return html;
+  const at = trimmed.lastIndexOf(close);
+  return `${trimmed.slice(0, at)} ${layout.endMark(motif)}${trimmed.slice(at)}`;
+}
+
 /**
  * Generate HTML for a single generator page
  */
@@ -420,6 +429,7 @@ function generateGeneratorPage(generator, category, site) {
   const relatedHTML = related.length ? `
             <section class="section related-section">
                 <h2>Related Name Generators</h2>
+                ${layout.RELATED_NOTE}
                 <div class="genlist" id="related-generators">
                     ${related.map(gen => genCard(gen)).join('\n                    ')}
                 </div>
@@ -605,17 +615,17 @@ function generateGeneratorPage(generator, category, site) {
             <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="${generator.updated}">${longDate(generator.updated)}</time></p>
 ${examplesHTML}
 ${howItWorksHtml(generator)}
-
+            ${layout.sectionBreak(motif)}
             <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="${escGenTitle}">
                 <meta itemprop="description" content="${escGenDesc}">
                 <div itemprop="articleBody">
-                <p class="big">${markdownBold(generator.article.intro)}</p>
-                ${sectionsHTML}
+                ${withEndMark(`<p class="big">${markdownBold(generator.article.intro)}</p>
+                ${sectionsHTML}`, motif)}
                 </div>
             </article>
-${faqsHTML}
-${relatedHTML}
+${faqsHTML ? `            ${layout.sectionBreak(motif)}${faqsHTML}` : ''}
+${relatedHTML ? `            ${layout.sectionBreak(motif)}${relatedHTML}` : ''}
 ${categoryGeneratorsHTML}
             <p class="usage-note">${escapeHtml(USAGE_NOTE)}</p>
         </main>
@@ -769,7 +779,8 @@ ${featured ? `
                 <div class="featured">
                     ${featured}
                 </div>
-            </section>` : ''}
+            </section>
+            ${layout.sectionBreak(mark)}` : ''}
 
             <section class="section">
                 <h2>All ${generators.length} ${escCatName} generator${generators.length !== 1 ? 's' : ''}</h2>
@@ -1517,6 +1528,7 @@ function updateStaticPages(site) {
 
   fillMarkers('index.html', {
     sprite: layout.svgSprite(homeMotifs),
+    'home-break': layout.sectionBreak('quill'),
     header,
     'category-options': categoryOptions,
     'generator-index': `    <script type="application/json" id="generator-index">${scriptJson(homeIndex)}</script>`,
@@ -1536,9 +1548,9 @@ ${sorted.map((gen, i) => {
     return `                    <a href="posts/${gen.slug}.html" class="gencard hd tap" data-search="${escapeHtml(search)}">${layout.doodle(allMotifs[i])}<div><b>${escapeHtml(gen.title)}</b></div><em aria-hidden="true">→</em></a>`;
   }).join('\n')}
                 </div>`;
-  fillMarkers('all-generators.html', { sprite: layout.svgSprite(allMotifs), header, generators: allList, footer });
+  fillMarkers('all-generators.html', { sprite: layout.svgSprite([...allMotifs, 'name-tag']), header, generators: allList, footer });
   fillMarkers('about.html', { sprite: layout.svgSprite(['quill', 'note']), header, footer });
-  fillMarkers('privacy.html', { sprite: layout.svgSprite(['quill', 'note']), header, footer });
+  fillMarkers('privacy.html', { sprite: layout.svgSprite(['quill', 'note', 'cookie']), header, footer });
 }
 
 /**
@@ -1741,12 +1753,12 @@ function generateHtmlSitemap(site) {
     ${layout.headAssets('')}
 </head>
 <body>
-    ${layout.svgSprite([])}
+    ${layout.svgSprite(['map'])}
     ${layout.siteHeader('', site.categories)}
 
     <div class="wrap">
         <main id="main" class="sitemap">
-            <div class="titlerow"><h1>Site <span class="hl">Map</span></h1></div>
+            <div class="titlerow"><h1>Site <span class="hl">Map</span></h1>${layout.doodle('map')}</div>
             <p class="lede">Every page on The Name Generators.</p>
 
             <section class="section">

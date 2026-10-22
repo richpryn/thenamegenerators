@@ -104,6 +104,21 @@ function doodle(id, cls = 'doodle') {
   return `<svg class="${cls} wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-${id}"/></svg>`;
 }
 
+const SQUIGGLE = `<svg class="brk-line wob" viewBox="0 0 120 10" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M2 5 C20 2 35 8 60 5 S100 3 118 5" fill="none" stroke="#1e1c18" stroke-width="1.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>`;
+
+/** A break between two big sections: a squiggle with the page's drawing in the middle. At most three per page. */
+function sectionBreak(id) {
+  return `<div class="brk" aria-hidden="true">${SQUIGGLE}${doodle(id, 'brk-d')}${SQUIGGLE}</div>`;
+}
+
+/** The small drawing that ends an article, placed at the end of its last paragraph. */
+function endMark(id) {
+  return `<svg class="endmark wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-${id}"/></svg>`;
+}
+
+/** A blue-pen note with a curly arrow, pointing at the related generators. */
+const RELATED_NOTE = `<p class="pen-aside" aria-hidden="true">if you liked this one, try these<svg viewBox="0 0 60 40" focusable="false"><path d="M4 6 C18 4 30 10 34 20 C37 28 44 32 54 32 M47 26 L55 32 L47 37" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></p>`;
+
 // Small interface icons, drawn in the same marker style.
 const ICONS = {
   bookmark: '<symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>',
@@ -235,6 +250,7 @@ function siteHeader(prefix) {
 function siteFooter(prefix) {
   return `<footer class="site-footer">
       <div class="wrap">
+        <p class="signoff">${LOGO}<span>Made by Rich. Happy naming!</span></p>
         <p>&copy; <span id="current-year">${new Date().getFullYear()}</span> ${SITE_NAME} · <a href="${prefix}about.html">About</a> · <a href="${prefix}all-generators.html">All generators</a> · <a href="${prefix}spin-the-wheel.html">Spin the Wheel</a> · <a href="${prefix}name-tools.html">Name tools</a> · <a href="${prefix}sitemap.html">Site map</a> · <a href="${prefix}privacy.html">Privacy</a></p>
       </div>
     </footer>`;
@@ -257,5 +273,5 @@ function stripEmoji(text) {
 module.exports = {
   analyticsTag, shareImage, LOGO,
   SITE_NAME, escapeHtml, asset, menuPages, headAssets, stampAssets, bodyScripts, svgSprite, siteHeader, siteFooter,
-  doodle, categoryMotif, generatorMotif, highlightFirstWord, stripEmoji, categoryLinks,
+  doodle, sectionBreak, endMark, RELATED_NOTE, categoryMotif, generatorMotif, highlightFirstWord, stripEmoji, categoryLinks,
 };
