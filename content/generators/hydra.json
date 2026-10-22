@@ -51,7 +51,8 @@
           "recipe": "template",
           "template": [
             "The Hydra of [lakes]",
-            "The [lake_adj] Hydra"
+            "The [lake_adj] Hydra",
+            "The [hydra_adj] Hydra of [lakes]"
           ]
         },
         "greek": {
@@ -67,6 +68,7 @@
             "[serpent.a][serpent.b]",
             "The Hydra of [lakes]",
             "The [lake_adj] Hydra",
+            "The [hydra_adj] Hydra of [lakes]",
             "[greek]",
             "[greek] of [lakes]"
           ]
@@ -173,7 +175,29 @@
       "the Hollow Fen",
       "the Deep Well",
       "the Rotting Delta",
-      "the Cold Tarn"
+      "the Cold Tarn",
+      "the Eel Pits",
+      "Hagmere",
+      "the Leech Pools",
+      "the Brackish Shallows",
+      "the Sluice Gates",
+      "the Oxbow Lake",
+      "the Tar Pits",
+      "the Drowned Abbey",
+      "the Sunless Lake",
+      "Mournmere",
+      "the Crooked River",
+      "the Lily Marsh",
+      "the Old Reservoir",
+      "the Flooded Crypt",
+      "the Witch's Pool",
+      "the Sour Wells",
+      "the Lost Lagoon",
+      "Bleakwater",
+      "the Bottomless Pool",
+      "the Mud Flats",
+      "the Sinking Sands",
+      "the Fog Marsh"
     ],
     "lake_adj": [
       "Black",
@@ -248,6 +272,23 @@
       "Mother of Serpents",
       "Terror of the Marsh",
       "Lord of the Mire"
+    ],
+    "hydra_adj": [
+      "Ninefold",
+      "Venomous",
+      "Many-Mouthed",
+      "Ancient",
+      "Endless",
+      "Hungry",
+      "Bleeding",
+      "Coiling",
+      "Hissing",
+      "Midnight",
+      "Ravenous",
+      "Writhing",
+      "Pale",
+      "Eldest",
+      "Scaled"
     ]
   },
   "article": {
