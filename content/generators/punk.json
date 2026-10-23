@@ -426,8 +426,34 @@
       "title": "🧷 Punk Band Name Generator",
       "tagline": "Snotty band names, stage names and album titles for punk."
     },
-    "intro": "Punk names are short, rude about something and easy to spray on a jacket. This **punk band name generator** gives you band names, mock stage names and sardonic album titles in the spirit of '77 and every scene since, from The Truants to Captain Nuisance.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good punk band names are short, rude about something and easy to spray on a jacket: The Detentions, Council Kids, Plastic Nerves. This **punk band name generator** gives you band names, mock stage names and sardonic album titles in the spirit of '77 and every scene since, from The Truants to Captain Nuisance.",
+    "sections": [
+      {
+        "heading": "Eight good punk band names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>The Detentions</strong>: \"The\" plus a plural noun, the oldest punk pattern, aimed at school.</li><li><strong>Council Kids</strong>: two words about where you grew up.</li><li><strong>Plastic Nerves</strong>: a cheap adjective and an anxious noun.</li><li><strong>Second-Hand Neighbours</strong>: the suburbs, mocked.</li><li><strong>Vic Shrapnel and the Mardy Kids</strong>: a frontman and a gang, the way punk often did it.</li><li><strong>Polly Asbestos</strong>: a stage name built from something dangerous and ordinary.</li><li><strong>Sergeant Nuisance</strong>: a fake rank, worn as a joke.</li><li><strong>Songs for the Dole Queue</strong>: an album title that complains about the state of things.</li></ul>"
+      },
+      {
+        "heading": "How punk names work",
+        "content": "<p>Punk broke in 1976 and 1977, with the Ramones in New York and the Sex Pistols, the Clash, the Damned and Buzzcocks in Britain. Its names set out to annoy, and they followed a few habits that are still going strong:</p><ul><li><strong>Stage names as insults.</strong> Johnny Rotten, Rat Scabies and Captain Sensible of the Damned, Poly Styrene of X-Ray Spex. All four Ramones took the surname Ramone. The generator's <strong>Stage name</strong> option works the same way: <em>Gaz Static</em>, <em>Patty Bleach</em>, <em>Lord Disaster</em>.</li><li><strong>Plain plural bands.</strong> <em>The Scallywags</em>, <em>The Backbenchers</em>: something your parents or teachers would call you.</li><li><strong>A name and a gang</strong>, like Siouxsie and the Banshees: <em>Dez Pylon and the Gatecrashers</em>.</li><li><strong>One hard word</strong>: <em>Overspill</em>, <em>Backfire</em>.</li></ul><p><strong>Album titles</strong> are where punk gets sarcastic: <em>Music for Shopping Centres</em>, <em>Songs for the Unemployable</em>, <em>Ignore the Headlines</em>.</p>"
+      },
+      {
+        "heading": "Using a punk name",
+        "content": "<ul><li><strong>Keep it short enough to shout</strong> between songs, and to stencil on a T-shirt.</li><li><strong>Aim it at something.</strong> The best punk names are about a place, a person in charge or a boring rule.</li><li><strong>Search before you commit.</strong> Look the name up on Spotify, Bandcamp and YouTube, and check the social handles are free. Two acts with one name confuse fans and streaming services alike.</li></ul><p>For the faster, heavier end of the scene, try the <a href=\"hardcore-band-name-generator.html\">Hardcore Band Name Generator</a>; for the catchier one, the <a href=\"pop-punk-band-name-generator.html\">Pop Punk Band Name Generator</a>. The <a href=\"band-name-generator.html\">Band Name Generator</a> and <a href=\"song-title-generator.html\">Song Title Generator</a> cover everything else.</p><p>For more genres, see all the <a href=\"../categories/music_genres-names.html\">music genre name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good punk band names?",
+        "answer": "Short, snotty and about something: The Detentions, Council Kids, Plastic Nerves or Second-Hand Neighbours. Add a frontman for a name like Vic Shrapnel and the Mardy Kids."
+      },
+      {
+        "question": "How do you make a punk stage name?",
+        "answer": "Take an ordinary first name and add something unpleasant or dangerous, the way the 70s bands did: Gaz Static, Polly Asbestos, Benny Smog. A fake title works too, like Sergeant Nuisance."
+      },
+      {
+        "question": "Are these real punk bands?",
+        "answer": "No, they're made up in the style of the UK and US scenes. Punk has thousands of small bands, so search Bandcamp and Spotify before you print the T-shirts."
+      }
+    ]
   }
 }

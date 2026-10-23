@@ -872,8 +872,34 @@
       "title": "🕯️ Dark Ambient Name Generator",
       "tagline": "Names for music made of cold rooms, long tones and things in the cellar."
     },
-    "intro": "Dark ambient is usually one person, a lot of reverb and a name that sets the scene before a note is heard: a Latin word, a buried place, a numbered ward. This **dark ambient name generator** makes project, collaboration and album names for dark ambient, drone and horror ambient.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good dark ambient names set the scene before a note is heard: a Latin word, a buried place, a numbered ward. Dark ambient is usually one person and a lot of reverb, and the name does much of the work. This **dark ambient name generator** makes project, collaboration and album names for dark ambient, drone and horror ambient.",
+    "sections": [
+      {
+        "heading": "Eight good dark ambient names",
+        "content": "<p>All eight came from the generator, across the three styles:</p><ul><li><strong>Glacies</strong>: Latin for ice, and a single cold word, the dark ambient way.</li><li><strong>The Weeping Mine</strong>: a place underground, where the sound seems to come from.</li><li><strong>Cities Under Snow</strong>: a whole landscape in three words.</li><li><strong>Bells of the Grey Hour</strong>: a drone project named after one long, slow sound.</li><li><strong>Long Tones for Car Parks at Dawn</strong>: a drone album that tells you exactly what to expect, and where to listen.</li><li><strong>The Night Nurse</strong>: a horror ambient project named after a figure, not a monster.</li><li><strong>Annexe 19</strong>: a numbered room, which is somehow worse than a named one.</li><li><strong>Hymns for Damp Walls</strong>: horror ambient album titles work best when they're quiet and specific.</li></ul>"
+      },
+      {
+        "heading": "How dark ambient names itself",
+        "content": "<p>Dark ambient grew up in the 1980s and 90s alongside industrial music, with artists like Lustmord turning drones, field recordings and deep reverb into something closer to a place than a song. Drone goes back further, to the long, held tones of composers like La Monte Young, and Brian Eno's <em>Music for Airports</em> (1978) set the pattern for ambient album titles that name a space.</p><ul><li><strong>Dark ambient</strong> names are cold and buried: Latin words, frozen places, catacombs. <em>Crypta</em>, <em>Hiems</em>, <em>Inside the Permafrost</em>.</li><li><strong>Drone</strong> names are calmer and very British here: estuaries, reservoirs, radio masts and long tones. <em>Mills of the North Sea</em>, <em>Music for Reservoirs</em>.</li><li><strong>Horror ambient</strong> names sound like a found tape: a house and a year, a hospital ward, someone's job. <em>Wetherby House, 1938</em>, <em>The Sexton</em>, <em>The Whitlock Tapes</em>.</li></ul><p>Collaborations join two projects with an ampersand, the way split releases do: <em>The Projectionist &amp; the Lamplighter</em>.</p>"
+      },
+      {
+        "heading": "Using a dark ambient name",
+        "content": "<ul><li><strong>Pick a name that suggests a cover.</strong> A frozen lake or a numbered ward gives you the artwork as well as the title.</li><li><strong>Single Latin words are popular,</strong> so search Bandcamp and Discogs first: there may already be a Somnus or two.</li><li><strong>Let the album titles tell a story.</strong> Horror ambient especially works well as a series: the same house, a different year each time.</li></ul><p>If the horror style is the one for you, I've written a <a href=\"https://richardpryn.com/paths/horror-music/?utm_source=thenamegenerators&amp;utm_medium=referral&amp;utm_campaign=dark_ambient\">free nine-step path to horror and suspense music</a> on my music site, with walkthroughs of real horror cues and a free sample pack to practise with.</p><p>For candlelit castles instead of cellars, try the <a href=\"dungeon-synth-name-generator.html\">Dungeon Synth Name Generator</a>. For the film your soundtrack belongs to, the <a href=\"horror-movie-title-generator.html\">Horror Movie Title Generator</a> has titles, and the <a href=\"score-title-generator.html\">Score Title Generator</a> names the cues.</p><p>For more genres, see all the <a href=\"../categories/music_genres-names.html\">music genre name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good dark ambient project names?",
+        "answer": "A single cold word, often Latin, like Glacies or Crypta, or a buried place, like The Weeping Mine. Choose Dark ambient for names in that style, or Horror ambient for names that sound like found recordings."
+      },
+      {
+        "question": "What's the difference between dark ambient and drone?",
+        "answer": "Drone is built on long, held tones and changes very slowly. Dark ambient uses drones too, but adds field recordings, deep reverb and a sense of menace."
+      },
+      {
+        "question": "How do you name a horror ambient album?",
+        "answer": "Make it sound like something found: a house and a year (Wetherby House, 1938), a set of tapes, or a quiet hymn for an ordinary place, like Hymns for Damp Walls."
+      }
+    ]
   }
 }

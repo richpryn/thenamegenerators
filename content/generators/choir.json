@@ -673,8 +673,34 @@
       "title": "🎶 Choir Name Generator",
       "tagline": "Names for choirs, a cappella groups and the concerts they sing."
     },
-    "intro": "Choirs usually take the name of their town or church, while a cappella groups and barbershop quartets love a good pun. This **choir name generator** covers community, chamber, church, school and barbershop choirs, gives a cappella groups a name to sing under, and suggests concert titles too.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good choir names usually take the name of their town or church, like <em>St Winifred's Chamber Choir</em>, while a cappella groups and barbershop quartets love a good pun, like <em>Duly Noted</em>. This **choir name generator** covers community, chamber, church, school and barbershop choirs, gives a cappella groups a name to sing under, and suggests concert titles too.",
+    "sections": [
+      {
+        "heading": "Eight good choir names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>St Winifred's Chamber Choir</strong>: a church and the size of the choir.</li><li><strong>Ullsmere Male Voice Choir</strong>: the classic name for a men's choir, a great tradition in Wales.</li><li><strong>Rosemoor Choral Society</strong>: a choral society is a large amateur choir, often singing big works with orchestra.</li><li><strong>Ashcombe Singers</strong>: simple and friendly for a community choir.</li><li><strong>Duly Noted</strong>: an a cappella pun on a musical word.</li><li><strong>Harmonic Motion</strong>: a pun that's also a real term, for a student a cappella group.</li><li><strong>Come and Sing Duruflé</strong>: a come-and-sing day, where singers learn and perform a work in one go.</li><li><strong>Carols by Firelight</strong>: a Christmas concert title that sells itself.</li></ul>"
+      },
+      {
+        "heading": "Kinds of choir and how they're named",
+        "content": "<ul><li><strong>Church and cathedral choirs</strong> take the church's name: <em>St Dunstan's Singers</em>, <em>Wexley Abbey Choir</em>.</li><li><strong>Community choirs and choral societies</strong> take the town's name. A choral society is usually large and sings oratorio and other big works.</li><li><strong>Chamber choirs</strong> are smaller and often sing unaccompanied.</li><li><strong>Male voice choirs</strong> are a proud tradition in Wales and the north of England.</li><li><strong>A cappella groups</strong> (Italian for \"in the manner of the chapel\") sing without instruments, and student groups especially love puns.</li><li><strong>Barbershop</strong> is four-part close harmony, with the lead singing the tune between tenor, baritone and bass.</li></ul><p>Choose <strong>Choir name</strong> for a choir, <strong>A cappella group</strong> for a pun name, and <strong>Concert title</strong> for programmes like <em>Songs of Spring</em> or <em>A Celebration of Madrigals</em>.</p>"
+      },
+      {
+        "heading": "Naming your choir",
+        "content": "<ul><li><strong>Match the name to the music.</strong> A pun suits a pop a cappella group; a chamber choir singing Byrd wants something calmer.</li><li><strong>Put the place first</strong> if you want new singers to find you.</li><li><strong>Search the name</strong> locally and online. Choir puns are popular, and the best ones are often taken.</li></ul><p>For a gospel choir, try the <a href=\"gospel-choir-name-generator.html\">Gospel Choir Name Generator</a>. If your choir sings with players, the <a href=\"orchestra-name-generator.html\">Orchestra Name Generator</a> names orchestras and ensembles, and the <a href=\"band-name-generator.html\">Band Name Generator</a> covers everything else.</p><p>For more genres, see all the <a href=\"../categories/music_genres-names.html\">music genre name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is a good name for a choir?",
+        "answer": "For a community or church choir, the town or church plus Singers, Choir or Chorale, like Ashcombe Singers or St Winifred's Chamber Choir. For an a cappella group, a musical pun like Duly Noted."
+      },
+      {
+        "question": "What are some funny a cappella group names?",
+        "answer": "Puns on musical words work best: Duly Noted, Harmonic Motion, Clef Notes. Choose A cappella group in the generator, and search a name before you use it, since popular puns are often taken."
+      },
+      {
+        "question": "What's the difference between a choir and a choral society?",
+        "answer": "A choral society is a kind of choir: usually large and amateur, singing big works such as oratorios, often with an orchestra. Choir is the general word."
+      }
+    ]
   }
 }

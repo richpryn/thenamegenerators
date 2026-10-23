@@ -350,8 +350,34 @@
       "title": "🌫️ Shoegaze Band Name Generator",
       "tagline": "Hazy band names, solo projects and album titles for shoegaze and dream pop."
     },
-    "intro": "Shoegaze names sound the way the music does: soft, blurred and a little out of focus. This **shoegaze band name generator** makes dreamy band names, lowercase solo-project names and hazy album titles, in the spirit of the early-90s bands and the bedroom shoegaze that followed.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good shoegaze band names sound the way the music does: soft, blurred and a little out of focus, like Lilac Comets or Drowsy Lanterns. This **shoegaze band name generator** makes dreamy band names, lowercase solo-project names and hazy album titles, in the spirit of the early-90s bands and the bedroom shoegaze that followed.",
+    "sections": [
+      {
+        "heading": "Eight good shoegaze band names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Lilac Comets</strong>: a soft colour and something distant.</li><li><strong>Drowsy Lanterns</strong>: light seen through sleep.</li><li><strong>Starsleep</strong>: two dreamy words run together.</li><li><strong>Pale Swimmers</strong>: a hazy adjective and a moving noun.</li><li><strong>My Sleepy Daydream</strong>: a nod to the \"My ...\" names of the first wave.</li><li><strong>lilacdrift</strong>: a lowercase bedroom project, written the way they're written online.</li><li><strong>hazy ferris wheel</strong>: a lowercase project name that's a whole picture.</li><li><strong>Everything Is Blurry</strong>: an album title that describes the sound.</li></ul>"
+      },
+      {
+        "heading": "How shoegaze got its name, and its names",
+        "content": "<p>\"Shoegazing\" was a joke by the British music press in the early 1990s: the bands stood still on stage, staring down at their effects pedals. <em>Melody Maker</em> called it \"the scene that celebrates itself\". My Bloody Valentine's <em>Loveless</em> (1991), on Creation Records, is the album everyone points to, alongside Slowdive, Ride and Lush.</p><p>Shoegaze names are about weather, light and sleep, never anger:</p><ul><li><strong>Soft compounds</strong>: <em>Moongaze</em>, <em>Dreambloom</em>.</li><li><strong>An adjective and a plural</strong>: <em>Faded Mirrors</em>, <em>Velvet Gardens</em>.</li><li><strong>Lowercase solo projects</strong>, the style of the bedroom shoegaze that spread online: <em>snowhour</em>, <em>sleepy halo</em>. Choose <strong>Solo project</strong> for these.</li></ul><p>Album titles are short and blurry: <em>Pale Daylight</em>, <em>Glass Sea</em>, <em>In Reverse</em>.</p>"
+      },
+      {
+        "heading": "Using a shoegaze name",
+        "content": "<ul><li><strong>Keep the lowercase</strong> if it's a solo project. It's part of the look on Bandcamp and streaming services.</li><li><strong>Match the artwork.</strong> A name like <em>Lilac Comets</em> practically designs the cover.</li><li><strong>Search before you commit.</strong> Look the name up on Spotify, Bandcamp and YouTube, and check the social handles are free. Two acts with one name confuse fans and streaming services alike.</li></ul><p>Slowed right down, shoegaze turns into slowcore: try the <a href=\"slowcore-band-name-generator.html\">Slowcore Band Name Generator</a>. For the jangly side of the 90s there's the <a href=\"indie-band-name-generator.html\">Indie Band Name Generator</a>, and for a hazy synth project, the <a href=\"synthwave-name-generator.html\">Synthwave Name Generator</a>. The <a href=\"band-name-generator.html\">Band Name Generator</a> covers every other genre.</p><p>For more genres, see all the <a href=\"../categories/music_genres-names.html\">music genre name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good shoegaze band names?",
+        "answer": "Soft, dreamy and a little blurred: Lilac Comets, Drowsy Lanterns, Starsleep or Pale Swimmers. For a bedroom project, a lowercase name like lilacdrift fits the modern scene."
+      },
+      {
+        "question": "Why is it called shoegaze?",
+        "answer": "The UK music press coined it in the early 1990s because the bands stood still, looking down at their effects pedals while they played."
+      },
+      {
+        "question": "Are these real shoegaze bands?",
+        "answer": "No, they're made up in the style of the genre. Check Spotify and Bandcamp before you use one: dreamy words get used a lot."
+      }
+    ]
   }
 }

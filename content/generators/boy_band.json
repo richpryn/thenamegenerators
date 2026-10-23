@@ -676,8 +676,34 @@
       "title": "🎙️ Boy Band Name Generator",
       "tagline": "Names for a five-piece with matching outfits and a key change."
     },
-    "intro": "Boy bands love a name you can scream: a number, a catchphrase or one bold word. This **boy band name generator** makes band names, member names and album titles in the shapes the big pop groups used, from 90s Boyz to one-word reunions.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good boy band names are easy to scream: a number, a catchphrase or one bold word, like the names the big pop groups used. This **boy band name generator** makes band names, member names and album titles in those shapes, from 90s-style numbers to one-word comebacks.",
+    "sections": [
+      {
+        "heading": "Eight good boy band names",
+        "content": "<p>All eight came from the generator, with member names and an album:</p><ul><li><strong>Twenty Cities</strong>: a number and a promise of a world tour.</li><li><strong>Boys Like Us</strong>: the catchphrase name, made to be screamed back.</li><li><strong>6IX</strong>: a number in the spelling, the way 5ive styled itself.</li><li><strong>The Quinn Brothers</strong>: a family name, for a band of real or honorary brothers.</li><li><strong>Hold Tight</strong>: a phrase that's also a chorus.</li><li><strong>Finn Knight</strong>: a member name with two short, bright syllables.</li><li><strong>Reuben Sinclair</strong>: a member name for the serious one.</li><li><strong>Right Where We Belong</strong>: an album title made for the reunion tour.</li></ul>"
+      },
+      {
+        "heading": "How boy bands get their names",
+        "content": "<ul><li><strong>Numbers and spelling.</strong> Five styled itself 5ive, *NSYNC played with capitals, and Boyz II Men put a Roman numeral in the middle. The generator makes names like <em>Twelve Lanes</em>, <em>Five Nights</em> and <em>6IX</em>.</li><li><strong>A phrase.</strong> Take That was a phrase; so is <em>Right Here</em>.</li><li><strong>A word with energy.</strong> <em>Avalanche</em>, <em>Rebound</em>, <em>Sundown</em>.</li><li><strong>Brothers.</strong> From the Jackson 5 to the Jonas Brothers, family bands use the surname. That's where <em>The Gray Brothers</em> comes from.</li></ul><p>Plenty of famous boy bands were put together on television: One Direction were formed on <em>The X Factor</em> in 2010. Choose <strong>Member name</strong> for a full line-up of friendly, easy-to-chant names, and <strong>Album</strong> for titles like <em>Long Way Home</em> or simply <em>II</em>.</p>"
+      },
+      {
+        "heading": "Using the names",
+        "content": "<ul><li><strong>For a story or a school show</strong>, give each member a type: the heartthrob, the joker, the quiet one. Five names from the generator make a band.</li><li><strong>For a real band</strong>, check Spotify, YouTube and social handles before you print a single T-shirt, and make sure the name isn't trademarked.</li></ul><p>For the other half of the charts, try the <a href=\"girl-group-name-generator.html\">Girl Group Name Generator</a>, or the <a href=\"kpop-name-generator.html\">K-pop Name Generator</a> for a group in the K-pop style. For a solo career after the split, there's the <a href=\"pop-star-name-generator.html\">Pop Star Name Generator</a>.</p><p>For more genres, see all the <a href=\"../categories/music_genres-names.html\">music genre name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is a good name for a boy band?",
+        "answer": "Something short and easy to scream: a number (Twenty Cities), a catchphrase (Boys Like Us) or one bold word (Avalanche). The famous ones, from Take That to 5ive, all work when a crowd shouts them."
+      },
+      {
+        "question": "Can I make names for each member?",
+        "answer": "Yes. Choose Member name for a first name and surname for each member, like Finn Knight or Reuben Sinclair. Generate five and you have a line-up."
+      },
+      {
+        "question": "Are these real boy bands?",
+        "answer": "No, they're made up. Short band names are often taken, though, so search a name before you use it for a real act."
+      }
+    ]
   }
 }

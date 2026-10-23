@@ -418,8 +418,34 @@
       "title": "🎸 Grunge Band Name Generator",
       "tagline": "Damp, heavy, sarcastic names in the Seattle mould."
     },
-    "intro": "Grunge names sound like something left out in the rain: Mudhoney, Screaming Trees, Candlebox. This **grunge band name generator** makes band names, singer names and album titles in that early-90s style, from jammed-together compounds to blunt one-word records.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good grunge band names sound like something left out in the rain: Mudhoney, Screaming Trees, Candlebox. This **grunge band name generator** makes band names, singer names and album titles in that early-90s style, from jammed-together compounds like <em>Sludgegarden</em> to blunt one-word records.",
+    "sections": [
+      {
+        "heading": "Eight good grunge band names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Sludgegarden</strong>: two words jammed together, one of them dirty.</li><li><strong>Siltbox</strong>: short, damp and a bit ugly, as grunge should be.</li><li><strong>Crowbar Daisy</strong>: something hard next to something pretty.</li><li><strong>Melting Kites</strong>: an adjective and a plural noun, like Screaming Trees.</li><li><strong>Church of the Slug</strong>: a grand building, ruined by what's in it.</li><li><strong>Dogwater</strong>: a word nobody would want on a T-shirt, which is the point.</li><li><strong>Wetter Than Church</strong>: an album title with a dry joke in it.</li><li><strong>Loud Apathy</strong>: a record title that sums up the whole scene.</li></ul>"
+      },
+      {
+        "heading": "How grunge named itself",
+        "content": "<p>Grunge came out of Seattle in the late 1980s, much of it through Sub Pop, the label Bruce Pavitt and Jonathan Poneman set up there. Nirvana's <em>Nevermind</em> and Pearl Jam's <em>Ten</em>, both from 1991, took it worldwide.</p><p>The names were deliberately unglamorous:</p><ul><li><strong>Compounds</strong>: Soundgarden named themselves after a wind-powered sculpture in Seattle, <em>A Sound Garden</em>, which hums in the breeze. The generator builds the same kind: <em>Cedarhole</em>, <em>Puddlejump</em>.</li><li><strong>B-movie borrowing</strong>: Mudhoney took their name from a Russ Meyer film.</li><li><strong>An adjective and a plural</strong>: <em>Rotten Dogs</em>, <em>Sinking Teeth</em>.</li></ul><p>Choose <strong>Stage name</strong> for plain, real-sounding singers like <em>Dana Kessel</em> (grunge didn't do glam pseudonyms), or <strong>Album title</strong> for records like <em>Bowl of Rust</em> and <em>Ugly Weather</em>.</p>"
+      },
+      {
+        "heading": "Using a grunge name",
+        "content": "<ul><li><strong>Make it slightly off-putting.</strong> Grunge names were a reaction against the polished hair metal before them.</li><li><strong>Use the weather.</strong> Rain, rust, moss and mud are all over the Pacific Northwest, and all over grunge.</li><li><strong>Search before you commit.</strong> Look the name up on Spotify, Bandcamp and YouTube, and check the social handles are free. Two acts with one name confuse fans and streaming services alike.</li></ul><p>For the scene that grew alongside it, try the <a href=\"indie-band-name-generator.html\">Indie Band Name Generator</a> and the <a href=\"shoegaze-band-name-generator.html\">Shoegaze Band Name Generator</a>. For heavier sludge, there's the <a href=\"metal-band-name-generator.html\">Metal Band Name Generator</a>'s doom style. The <a href=\"band-name-generator.html\">Band Name Generator</a> and <a href=\"album-name-generator.html\">Album Name Generator</a> cover every other genre.</p><p>For more genres, see all the <a href=\"../categories/music_genres-names.html\">music genre name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good grunge band names?",
+        "answer": "Damp, ugly and a bit sarcastic: Sludgegarden, Siltbox, Crowbar Daisy, Melting Kites or Church of the Slug. Compounds of two words, one of them dirty, are the classic grunge shape."
+      },
+      {
+        "question": "How did grunge bands get their names?",
+        "answer": "Often from odd places: Soundgarden from a humming wind sculpture in Seattle, Mudhoney from a Russ Meyer film. The point was to sound unglamorous."
+      },
+      {
+        "question": "Are these real grunge bands?",
+        "answer": "No, they're new names in the early-90s Seattle style. Check Spotify and Bandcamp before you use one, as plenty of bands still play this kind of music."
+      }
+    ]
   }
 }

@@ -1534,8 +1534,34 @@
       "title": "🎼 Composer Name Generator",
       "tagline": "Professional names, aliases and studio names for film, TV, game and library composers."
     },
-    "intro": "Most screen composers credit their own name, but plenty release library, ambient or game music under an alias, and nearly everyone needs a name for their studio. This **composer name generator** gives you all three: credible professional names, short aliases for side projects, and production company names that look right on a cue sheet.",
-    "sections": [],
-    "faqs": []
+    "intro": "A good composer name is one a music supervisor will remember and find again: your own name, set out cleanly, like <em>Tamsin Hargreaves</em>, a short alias like <em>Lowlight</em> for side projects, or a studio name like <em>Northlight Sound</em>. Most screen composers credit their own name, but plenty release library, ambient or game music under an alias, and nearly everyone needs a name for their studio. This **composer name generator** gives you all three.",
+    "sections": [
+      {
+        "heading": "Eight good composer names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Tamsin Hargreaves</strong>: a full name that reads well in end credits.</li><li><strong>Rakel M. Eklund</strong>: a middle initial helps when your name is common.</li><li><strong>Leif Sørensen</strong>: a name that sounds right on a Nordic drama.</li><li><strong>Lowlight</strong>: a one-word alias for ambient or library work.</li><li><strong>Late Harbour</strong>: an alias that hints at the music: slow, quiet, a bit melancholy.</li><li><strong>KR-07</strong>: a code-like alias for electronic or game music.</li><li><strong>Northlight Sound</strong>: a studio name that works on an invoice and a cue sheet.</li><li><strong>Pryce &amp; Fletcher</strong>: two surnames, for a writing partnership.</li></ul>"
+      },
+      {
+        "heading": "Your name, an alias or a studio",
+        "content": "<ul><li><strong>Your own name</strong> is the usual credit for film and television work, and it's what directors and supervisors will search for. The <strong>Full name</strong> format makes credible names, with the gender filter.</li><li><strong>An alias</strong> keeps different kinds of work apart, so an ambient album doesn't sit next to your trailer cues. Electronic musicians do this a lot: Richard D. James has released music as Aphex Twin, AFX and Polygon Window. Choose <strong>Alias or mononym</strong>.</li><li><strong>A studio or production company</strong> name looks professional on contracts and publishing paperwork. Hans Zimmer's company is Remote Control Productions. Choose <strong>Studio</strong> for names like <em>Brass Lantern Audio</em> or <em>Clockwork Media Music</em>.</li></ul>"
+      },
+      {
+        "heading": "Before you use a name",
+        "content": "<ul><li><strong>Check it's free</strong> on streaming services, IMDb and in library catalogues.</li><li><strong>Register it properly.</strong> If you release under an alias, check how your <a href=\"https://composerhq.app/glossary/pro\">performing rights organisation</a> handles aliases, so the royalties still reach you.</li><li><strong>Use the same name everywhere</strong>: credits, distributors, your website and social media. If you need to change it later, Composer HQ explains <a href=\"https://composerhq.app/blog/how-to-change-artist-name-on-distrokid\">how to change your artist name on DistroKid</a>.</li></ul><p>For titles for the music itself, try the <a href=\"score-title-generator.html\">Score Title Generator</a>, and for the players, the <a href=\"orchestra-name-generator.html\">Orchestra Name Generator</a>. If you perform as well, the <a href=\"stage-name-generator.html\">Stage Name Generator</a> has more.</p><p>For more genres, see all the <a href=\"../categories/music_genres-names.html\">music genre name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Should a composer use a pseudonym?",
+        "answer": "For film and TV work, most composers use their own name so they can build a reputation. An alias is useful for different kinds of music, such as library, ambient or game work, that you want to keep separate."
+      },
+      {
+        "question": "What's a good name for a music production company?",
+        "answer": "Something short and memorable that looks professional on an invoice: a place or image plus Sound, Audio or Music, like Northlight Sound or Brass Lantern Audio, or two surnames for a partnership."
+      },
+      {
+        "question": "Are these real composers?",
+        "answer": "No. The names are made up. Search any name before you use it professionally, in case another composer already works under it."
+      }
+    ]
   }
 }

@@ -3359,8 +3359,34 @@
       "title": "🎬 Score Title Generator",
       "tagline": "Score albums, cue titles and library music album names, sorted by mood."
     },
-    "intro": "Every cue on a cue sheet needs a title, and library albums live or die by a clear, searchable name like \"Dark Hybrid Trailer\" or \"Uplifting Corporate Piano\". This **score title generator** gives working composers score album titles, cue names in the style of real cue sheets, and library album titles for ten moods, from epic and trailer to horror, corporate and ambient.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good score titles describe what's happening in the scene, like <em>Movement in the Stairwell</em>, while good library album titles describe exactly how the music sounds, like <em>Dark Paranormal Music Box</em>, so they can be found in a search. Every cue on a cue sheet needs a title, and library albums live or die by a clear, searchable name. This **score title generator** gives working composers score album titles, cue names in the style of real cue sheets, and library album titles for ten moods, from epic and trailer to horror, corporate and ambient.",
+    "sections": [
+      {
+        "heading": "Eight good score titles",
+        "content": "<p>All eight came from the generator, across moods and formats:</p><ul><li><strong>Spire of the North (Original Game Soundtrack)</strong>: a score album title with the subtitle soundtrack releases use.</li><li><strong>Grey Protocol</strong>: a tense, two-word title for a thriller score.</li><li><strong>Reclaiming the Bridge</strong>: an epic cue named after what happens on screen.</li><li><strong>Movement in the Stairwell</strong>: a tension cue that tells the music editor exactly where it goes.</li><li><strong>Letters to Jonah</strong>: an emotional score title with a person at its centre.</li><li><strong>The Third Knock</strong>: a horror cue title short enough to make you nervous.</li><li><strong>Relentless Hybrid Trailer Booms</strong>: a library album title that lists the mood, the style and the sound.</li><li><strong>Uplifting Business Claps &amp; Stomps</strong>: a corporate library title, built for search.</li></ul>"
+      },
+      {
+        "heading": "How scores and cues are named",
+        "content": "<ul><li><strong>Working cue numbers.</strong> On a film, cues are first numbered by reel and order: 1M1 is the first music cue in reel 1. Titles come later, and often describe the scene: who's there and what happens.</li><li><strong>The cue sheet</strong> lists every cue in a film or episode, with its title, timing and how it was used. It's how composers get paid, so a clear, distinct title for each cue saves confusion.</li><li><strong>Soundtrack albums</strong> add a subtitle such as (Original Score) or (Original Motion Picture Soundtrack).</li><li><strong>Library music</strong> is searched by keyword, so the best album titles say the mood, the style and the instruments: <em>Gritty Low Strings</em>, <em>Serene Tape Loops</em>.</li></ul><p>Choose a <strong>mood</strong> (epic, tension, emotional, adventure, horror, uplifting, trailer, hybrid, corporate or ambient), then a <strong>format</strong>: Score album, Cue title or Library album.</p><p><strong>Horror</strong> titles work best short and specific: <em>Stay Inside</em>, <em>Candles in the Well</em>. If you write horror cues yourself, I've put together a free nine-step path on <a href=\"https://richardpryn.com/paths/horror-music/?utm_source=thenamegenerators&amp;utm_medium=referral&amp;utm_campaign=score_title\">horror and suspense music</a> on my own site, with walkthroughs of real horror cues and a free sample pack to practise with.</p>"
+      },
+      {
+        "heading": "Titling your own music",
+        "content": "<ul><li><strong>Make every cue title unique</strong> within a project. Two cues called \"Chase\" on one cue sheet cause problems later.</li><li><strong>For library albums,</strong> put the most searched word first: the mood or the use (Trailer, Corporate, Horror), then the sound.</li><li><strong>For trailer music,</strong> short, bold titles like <em>Ignite the Sea</em> or <em>Resolute</em> suit the genre's big moments.</li><li><strong>For ambient work,</strong> a place and a texture, like <em>Mist on Stone</em>, gives the listener a picture.</li></ul><p>Keep cue titles consistent from the start: they end up on the <a href=\"https://composerhq.app/glossary/cue-sheet\">cue sheet</a>, the list of music used in a production that royalty societies pay from. If you're writing library music, Composer HQ keeps a directory of <a href=\"https://composerhq.app/production-music\">production music libraries</a> to pitch your albums to.</p><p>Name yourself or your studio with the <a href=\"composer-name-generator.html\">Composer Name Generator</a>, and the ensemble with the <a href=\"orchestra-name-generator.html\">Orchestra Name Generator</a>. For song-based releases, try the <a href=\"song-title-generator.html\">Song Title Generator</a> and the <a href=\"album-name-generator.html\">Album Name Generator</a>.</p><p>For more genres, see all the <a href=\"../categories/music_genres-names.html\">music genre name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do you name a music cue?",
+        "answer": "Describe the scene or the moment it accompanies, like Movement in the Stairwell or Reclaiming the Bridge, and make sure no two cues in the same project share a title. During production, cues are often numbered by reel first, as in 1M1."
+      },
+      {
+        "question": "What makes a good library music album title?",
+        "answer": "One that a music supervisor would type into a search: the mood, the style and the instruments, like Dark Paranormal Music Box or Gritty Low Strings. Choose Library album and a mood in the generator."
+      },
+      {
+        "question": "What does 1M1 mean in film music?",
+        "answer": "Reel 1, music cue 1. It's the working number for the first cue in the first reel of a film, used before the cue has a proper title."
+      }
+    ]
   }
 }

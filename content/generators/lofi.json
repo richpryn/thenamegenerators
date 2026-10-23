@@ -451,8 +451,34 @@
       "title": "☕ Lo-Fi Name Generator",
       "tagline": "lowercase names for beats to study, nap and make tea to."
     },
-    "intro": "Lo-fi names are soft and lowercase, like a note left on the kitchen table: a cosy object, a sleepy animal, a Japanese word, a full stop at the end. This **lo-fi name generator** makes producer aliases, collectives and beat tape titles for lo-fi hip hop and chillhop.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good lo-fi names are soft and lowercase, like a note left on the kitchen table: a cosy object, a sleepy animal, a Japanese word, a full stop at the end. This **lo-fi name generator** makes producer aliases, collectives and beat tape titles for lo-fi hip hop and chillhop.",
+    "sections": [
+      {
+        "heading": "Eight good lo-fi names",
+        "content": "<p>All eight came from the generator, across aliases, collectives and beat tapes:</p><ul><li><strong>kettle.</strong>: an everyday object and a full stop: the whole genre in one word.</li><li><strong>tsuki.</strong>: the Japanese word for moon, a nod to lo-fi's love of anime and Nujabes.</li><li><strong>sleepy attic</strong>: two words, all lowercase, and a room you'd want to nap in.</li><li><strong>puddles &amp; biscuit</strong>: a duo named like two pets.</li><li><strong>lazy koala society</strong>: a collective that sounds as relaxed as the music.</li><li><strong>beats to make tea to</strong>: a playful take on the \"beats to study to\" streams.</li><li><strong>library card</strong>: a beat tape titled after something small and nostalgic.</li><li><strong>umi vol. 4</strong>: a Japanese word and a volume number, for a series of tapes.</li></ul>"
+      },
+      {
+        "heading": "How lo-fi names itself",
+        "content": "<p>Lo-fi hip hop draws on the dusty, off-grid beats of J Dilla and the jazzy instrumentals of the Japanese producer Nujabes, who worked on the soundtrack of the anime <em>Samurai Champloo</em> (2004). It found its huge audience on YouTube, through round-the-clock streams like the one on the channel now called Lofi Girl, which began as ChilledCow.</p><ul><li><strong>Lowercase everything.</strong> Capital letters feel too loud for music made for 2am, so names stay small: <em>marmalade</em>, <em>lamplight</em>.</li><li><strong>A full stop</strong> after a one-word name makes it feel finished and quiet: <em>chestnut.</em>, <em>asa.</em></li><li><strong>Japanese words</strong> for the moon, rain or the sea are common, in honour of the anime and Nujabes. <em>ame vol. 5</em> is \"rain\".</li><li><strong>Beat tapes</strong> are named after small moments: <em>kitchen tape</em>, <em>plant sitting</em>, <em>the slow way round</em>.</li></ul>"
+      },
+      {
+        "heading": "Using a lo-fi name",
+        "content": "<ul><li><strong>Keep the lowercase everywhere</strong>, on Spotify, Bandcamp and your artwork, so the name always looks the same.</li><li><strong>Common words are hard to search.</strong> A name like <em>fern</em> is lovely but shared by a lot of people, so a full stop, a second word or \"&amp; friends\" helps listeners find you.</li><li><strong>Number your tapes.</strong> \"vol. 1\", \"vol. 2\" turns single releases into a series people collect.</li></ul><p>If you'd like to make the beats as well as name them, I've put together a <a href=\"https://richardpryn.com/paths/lofi/?utm_source=thenamegenerators&amp;utm_medium=referral&amp;utm_campaign=lofi\">free seven-step path to making lo-fi</a> on my music site: what lo-fi is, the chords and structure behind it, the plugin that does most of the work, then a full track and mix, with free MIDI.</p><p>For neon instead of rain, try the <a href=\"synthwave-name-generator.html\">Synthwave Name Generator</a>. For something slower and sadder with guitars, there's the <a href=\"slowcore-band-name-generator.html\">Slowcore Band Name Generator</a>.</p><p>For more genres, see all the <a href=\"../categories/music_genres-names.html\">music genre name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good lo-fi artist names?",
+        "answer": "Soft, lowercase names built from cosy things: kettle., sleepy attic, marmalade or tsuki. Add a full stop to a one-word name, or \"& friends\" for a collective."
+      },
+      {
+        "question": "Why are lo-fi names lowercase?",
+        "answer": "It matches the music: quiet, unhurried and a bit homemade. Capitals feel too loud for beats meant for studying or falling asleep."
+      },
+      {
+        "question": "What should I call a lo-fi beat tape?",
+        "answer": "Something small and everyday: a room, a chore or a season, like kitchen tape, plant sitting or autumn b-sides. Choose Beat tape in the generator."
+      }
+    ]
   }
 }

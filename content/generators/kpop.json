@@ -1284,8 +1284,34 @@
       "title": "🎤 K-pop Name Generator",
       "tagline": "Group names, idol stage names, fandom names and album titles for your own K-pop act."
     },
-    "intro": "K-pop names are built to be shouted by a stadium: short, stylised and easy to chant. This **K-pop name generator** makes group names, idol stage names, fandom names and mini-album titles in the shapes real agencies use, without borrowing any famous ones.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good K-pop names are short, stylised and easy to chant: a bold word in capitals, a number, or a nickname a whole stadium can shout. This **K-pop name generator** makes group names, idol stage names, fandom names and mini-album titles in the shapes real agencies use, without borrowing any famous ones.",
+    "sections": [
+      {
+        "heading": "Eight good K-pop names",
+        "content": "<p>All eight came from the generator, across its four formats:</p><ul><li><strong>HEYDAY</strong>: a group name in capitals, short enough to chant.</li><li><strong>SWEE7</strong>: a number hidden in the spelling, a favourite K-pop trick.</li><li><strong>Pink Monday</strong>: a softer two-word name for a girl group.</li><li><strong>Seulbi</strong>: a Korean given name, soft and easy to chant.</li><li><strong>Kokoro</strong>: a Japanese stage name, as many groups have Japanese members.</li><li><strong>Byeolbit</strong>: a fandom name from the Korean for starlight.</li><li><strong>Heartlings</strong>: an English fandom name that sounds like part of the family.</li><li><strong>The Diary Chapter: Mirage</strong>: an album in a numbered series, the way K-pop eras are released.</li></ul>"
+      },
+      {
+        "heading": "How K-pop names work",
+        "content": "<ul><li><strong>Group names</strong> are usually short, often in capitals, and sometimes an acronym: BTS stands for Bangtan Sonyeondan. Numbers turn up too, as in SEVENTEEN or NCT 127. The generator makes names like <em>ENCORE</em>, <em>LVX</em> and <em>Eight Rays</em>.</li><li><strong>Idol stage names</strong> are often a single name, a nickname or initials. Many groups have members from China, Japan or Taiwan: TWICE has three Japanese members and one from Taiwan. Choose a boy or girl group idol for names like <em>Joowon</em>, <em>Yuxuan</em>, <em>Saebom</em> or <em>Yutong</em>.</li><li><strong>Fandom names</strong> are part of the identity. BTS fans are ARMY, BLACKPINK's are BLINK, TWICE's are ONCE and SEVENTEEN's are CARAT. Good ones are one word, flattering and easy to chant: <em>Wishlights</em>, <em>Cheeries</em>, <em>Haetsal</em> (sunlight).</li><li><strong>Albums</strong> come out as mini-albums in eras, often with a series title and a part number, as TXT did with <em>The Dream Chapter</em>. The generator makes titles like <em>Blueprint: Day Zero Pt. 2</em> or a single word like <em>FLUTTER</em>.</li></ul>"
+      },
+      {
+        "heading": "Using the names",
+        "content": "<ul><li><strong>For fan fiction and roleplay</strong>, give each member a stage name and a position (leader, main vocal, main dancer, maknae, the youngest) and the group comes to life.</li><li><strong>For a real group or a dance cover team</strong>, search the name first: short capitalised names are popular, and fans will notice if one is taken.</li><li><strong>Name the fandom too.</strong> It's the first thing new fans ask about.</li></ul><p>For Western pop, try the <a href=\"boy-band-name-generator.html\">Boy Band</a>, <a href=\"girl-group-name-generator.html\">Girl Group</a> and <a href=\"pop-star-name-generator.html\">Pop Star</a> name generators, or the <a href=\"stage-name-generator.html\">Stage Name Generator</a> for a solo name.</p><p>For more genres, see all the <a href=\"../categories/music_genres-names.html\">music genre name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do you make a K-pop stage name?",
+        "answer": "Keep it to one or two syllables and easy to say in Korean and English: a short given name (Seulbi, Joowon), a nickname or initials. Many idols use one name only. Choose Idol stage name for names built that way."
+      },
+      {
+        "question": "What is a K-pop fandom name?",
+        "answer": "The official name for a group's fans, chosen by the group or agency: BTS fans are ARMY, BLACKPINK fans are BLINK and TWICE fans are ONCE. Choose Fandom name to make one for your own group."
+      },
+      {
+        "question": "Are these real K-pop groups?",
+        "answer": "No. They're made up in the style of K-pop names. Short words are popular, though, so search a name before you use it for a real group or a cover team."
+      }
+    ]
   }
 }
