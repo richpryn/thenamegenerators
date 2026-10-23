@@ -886,8 +886,12 @@
       "title": "😇 Angel Name Generator",
       "tagline": "Real angel names with their meanings, or new ones in the same tradition: Raphael, \"God heals\"; Ithuel, Angel of Thresholds."
     },
-    "intro": "Almost every angel's name ends the same way, and for a reason: <em>-el</em> is the Hebrew word for God, so Gabriel is \"God is my strength\" and Raphael \"God heals\". This **angel name generator** gives you the angels named in scripture and tradition, with their meanings, or new names built the same way, masculine or feminine. Add a domain, a choir or an epithet to give your angel a purpose.",
+    "intro": "Good angel names end in <em>-el</em>, the Hebrew word for God, which is why nearly all the traditional ones do: Gabriel is \"God is my strength\" and Raphael \"God heals\". This **angel name generator** gives you the angels named in scripture and tradition, with their meanings, or new names built the same way, masculine or feminine. Add a domain, a choir, an epithet or a D&amp;D rank to give your angel a purpose.",
     "sections": [
+      {
+        "heading": "Ten good angel names",
+        "content": "<p>All ten came from the generator, traditional and new:</p><ul><li><strong>Raphael</strong>: \"God heals\", the archangel of the Book of Tobit.</li><li><strong>Uriel</strong>: \"God is my light\", one of the seven archangels in the Book of Enoch.</li><li><strong>Raziel</strong>: \"secret of God\", the keeper of God's secrets in later tradition.</li><li><strong>Haniel, Angel of First Steps</strong>: a traditional name, \"grace of God\", given a gentle domain.</li><li><strong>Peniel, the Emissary of Peace</strong>: Peniel, \"face of God\", is where Jacob wrestled with the angel in Genesis.</li><li><strong>Barael, the Sentinel of the Gates</strong>: a new name with the -el ending and a guardian's epithet.</li><li><strong>Meliel of the Thrones</strong>: a feminine name placed in one of the nine choirs.</li><li><strong>Ithael, Deva of the Last Hour</strong>: a D&amp;D deva with a solemn charge.</li><li><strong>Liressa, Planetar of Sleep</strong>: a planetar, one of D&amp;D's angelic warriors, with a quiet domain.</li><li><strong>Adeon, Solar of the Second Heaven</strong>: a solar, the mightiest of D&amp;D's angels, from one of the Seven Heavens.</li></ul>"
+      },
       {
         "heading": "Biblical angels and their names",
         "content": "<ul><li><strong>The word</strong> <em>angel</em> comes from the Greek <em>angelos</em>, a messenger, which translated the Hebrew <em>mal'akh</em>, meaning the same.</li><li><strong>The Bible names very few.</strong> Michael and Gabriel appear by name; Raphael is in the Book of Tobit, which is in the Catholic and Orthodox Bibles.</li><li><strong>The Book of Enoch</strong>, an older Jewish text, names seven archangels: Uriel, Raphael, Raguel, Michael, Sariel, Gabriel and Remiel.</li><li><strong>Later tradition</strong> added many more, from Raziel, keeper of God's secrets, to Azrael, the angel of death in Islamic tradition.</li></ul>"
@@ -901,11 +905,19 @@
         "content": "<p>Fallen angels are the angels said to have rebelled against God and been cast out of heaven.</p><ul><li><strong>Lucifer</strong> means \"light-bearer\". The name comes from the Latin translation of a line in Isaiah about the fallen \"morning star\", which later tradition read as the fall of Satan.</li><li><strong>The Book of Enoch</strong> tells of the Watchers, angels who came down to earth, led by Semyaza and Azazel.</li><li><strong>John Milton's <em>Paradise Lost</em></strong> (1667) gave the fallen angels their best-known names in English literature: Beelzebub, Mammon, Belial and Moloch among them.</li></ul><p>The masculine and feminine styles make names that suit a fallen angel too, especially with a dark domain. For the other side entirely, try the <a href=\"demon-name-generator.html\">Demon Name Generator</a>.</p>"
       },
       {
+        "heading": "D&amp;D angel names",
+        "content": "<p>D&amp;D 5th edition has three kinds of angel. All are celestials, and from the least to the greatest they are:</p><ul><li><strong>Devas</strong> (challenge rating 10): messengers and agents sent to the mortal world, who can take mortal form. The name is borrowed from the Sanskrit <em>deva</em>, a divine being.</li><li><strong>Planetars</strong> (CR 16): a god's warriors, sent where a battle has to be won.</li><li><strong>Solars</strong> (CR 21): the mightiest angels of all.</li></ul><p>Choose <strong>D&amp;D celestial</strong>, with masculine or feminine names, for a rank and a charge: <em>Orael, Deva of Bridges</em>, or a home in the Seven Heavens of Mount Celestia, D&amp;D's lawful good plane: <em>Maliel, Solar of the Third Heaven</em>. For a celestial player character, try the <a href=\"dnd-human-name-generator.html\">D&amp;D Human Name Generator</a> or the <a href=\"paladin-name-generator.html\">Paladin Name Generator</a>.</p>"
+      },
+      {
         "heading": "Making a new angel name",
         "content": "<ul><li><strong>Keep the ending.</strong> <em>-iel</em>, <em>-ael</em> and <em>-uel</em> make a name sound angelic at once. The new names here all use them.</li><li><strong>Give them one job.</strong> Traditional angels have a single task: healing, secrets, death. An Angel of Lost Things or of Thresholds is more memorable than an angel of everything.</li><li><strong>Fiction borrows freely.</strong> Castiel in <em>Supernatural</em> comes from Cassiel; Aziraphale in <em>Good Omens</em> is invented, but sounds right because of that ending.</li><li><strong>Female angels</strong> are rare in tradition, where the named angels are male, but common in fiction. The feminine names here keep the angelic sound with softer endings: <em>-aela</em>, <em>-ielle</em>, <em>-essa</em>.</li></ul><p>Building a whole pantheon? The <a href=\"god-name-generator.html\">God Name Generator</a> makes gods and goddesses by domain.</p>"
       }
     ],
     "faqs": [
+      {
+        "question": "What are good D&D angel names?",
+        "answer": "A new angelic name with a D&amp;D rank and a charge: Ithael, Deva of the Last Hour; Liressa, Planetar of Sleep; Adeon, Solar of the Second Heaven. Devas are the least of D&amp;D's angels and solars the greatest. Choose D&amp;D celestial in the generator."
+      },
       {
         "question": "What does -el mean in angel names?",
         "answer": "\"God\", in Hebrew. Most angel names are short sentences about God: Michael is \"who is like God?\", Raphael \"God heals\", Uriel \"God is my light\"."
