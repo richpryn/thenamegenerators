@@ -973,15 +973,19 @@
       "title": "🪓 Axe Name Generator",
       "tagline": "Names for a Viking's war axe, a dwarf's heirloom, an orc's cleaver, or a woodsman's Old Bess."
     },
-    "intro": "<a href=\"viking-name-generator.html\">Vikings</a> named their axes after troll-women. That's the kind of fact that makes a good axe name, and this **axe name generator** has names in four styles: Norse axes like <em>Shieldtroll</em>, dwarven heirlooms like <em>Grudgehewer</em>, brutal cleavers like <em>Skullsplitter</em>, and the homely names people give tools they love, like <em>Old Bess</em>.",
+    "intro": "Good axe names are short and hard, like the ones Norse warriors gave theirs: often the name of a troll-woman or a giantess. That's the kind of fact that makes a good axe name, and this **axe name generator** has names in four styles: Norse axes like <em>Shieldtroll</em>, dwarven heirlooms like <em>Grudgehewer</em>, brutal cleavers like <em>Skullsplitter</em>, and the homely names people give tools they love, like <em>Old Bess</em>.",
     "sections": [
+      {
+        "heading": "Ten good axe names",
+        "content": "<p>All ten came from the generator, from each of its four styles:</p><ul><li><strong>Irontroll</strong>: named after a troll-woman, the Norse way.</li><li><strong>Helmbiter</strong>: named for what it bites through.</li><li><strong>Runehewer</strong>: a dwarven heirloom with runes cut into the head.</li><li><strong>Anvilwarden</strong>: for a dwarf smith's axe that's never far from the forge.</li><li><strong>Basaltsplitter</strong>: stone and splitting, for a mountain dwarf.</li><li><strong>Marrowcleaver</strong>: brutal and plain, for an orc or a warlord.</li><li><strong>Neckchopper</strong>: the executioner's choice.</li><li><strong>Old Bess</strong>: a pet name for a woodsman's favourite, like Mons Meg, the cannon at Edinburgh Castle.</li><li><strong>Bonny Kate</strong>: homely and fond, for the axe that's always been there.</li><li><strong>Little Joan, Friend of the Hearth</strong>: a homely name with a title, for an axe that chops the firewood.</li></ul>"
+      },
       {
         "heading": "Axes with names",
         "content": "<ul><li><strong>Rimmugýgr</strong>, \"battle-ogress\", was the axe of Skarphéðinn in <em>Njáls saga</em>. Norse warriors liked to give axes the names of troll-women and giantesses.</li><li><strong>Hel</strong> was the axe of King Olaf II of Norway, named after the goddess of the dead.</li><li><strong>Kennings</strong>, the riddling phrases of Norse poetry, called an axe things like the \"troll-woman of the shield\". The Norse names here borrow that habit: <em>Helmhag</em>, <em>Byrniewolf</em>.</li><li><strong>The labrys</strong>, the double axe of Minoan Crete, may have given its name to the Labyrinth, \"the house of the double axe\". That's an old theory, and still argued over.</li></ul>"
       },
       {
         "heading": "Four kinds of axe",
-        "content": "<ul><li><strong>Norse</strong>: shield-breakers named like ogresses and wolves. For Vikings, berserkers and anyone with a longship.</li><li><strong>Dwarven</strong>: names about stone, oaths and grudges. <a href=\"dwarf-name-generator.html\">Dwarves</a> in fantasy, from Tolkien's Gimli on, love an axe.</li><li><strong>Brutal</strong>: what it does, said plainly. For <a href=\"orc-name-generator.html\">orcs</a>, warlords and executioners.</li><li><strong>Homely</strong>: people have always given favourite tools and guns pet names, often women's names. Edinburgh Castle's great cannon is Mons Meg. A woodsman's <em>Old Bess</em> or a barbarian's <em>Little Nell</em> says a lot about the owner.</li></ul>"
+        "content": "<ul><li><strong>Norse</strong>: shield-breakers named like ogresses and wolves. For Vikings, berserkers and anyone with a longship.</li><li><strong>Dwarven</strong>: names about stone, oaths and grudges. <a href=\"dwarf-name-generator.html\">Dwarves</a> in fantasy, from Tolkien's Gimli on, love an axe.</li><li><strong>Brutal</strong>: what it does, said plainly. For <a href=\"orc-name-generator.html\">orcs</a>, warlords and executioners.</li><li><strong>Homely</strong>: people have always given favourite tools and guns pet names, often women's names. Edinburgh Castle's great cannon is Mons Meg. A woodsman's <em>Old Bess</em> or a barbarian's <em>Little Nell</em> says a lot about the owner.</li></ul><p>Naming an axe in Minecraft? The <a href=\"minecraft-tool-name-generator.html\">Minecraft Tool and Weapon Name Generator</a> has an Axe option, with epic names like <em>Stormbiter</em> and funny ones like <em>Axe of Great Fuss</em>. Rename it in an anvil like any other item.</p>"
       },
       {
         "heading": "Kinds of axe",
@@ -1004,6 +1008,10 @@
       {
         "question": "What are some cool axe names?",
         "answer": "Cool axe names tend to be short and hard, like the names Norse warriors gave their weapons: a word for what it does, or a grim nickname. Choose the Norse or dwarven style for names like that, with an epithet if you want a title."
+      },
+      {
+        "question": "What should I name my axe in Minecraft?",
+        "answer": "Something short enough to read in the hotbar: a Norse-style name like Irontroll suits a battle axe, or a homely one like Old Bess suits the axe you chop wood with. For names made for Minecraft, choose Axe in the Minecraft Tool and Weapon Name Generator."
       }
     ]
   }
