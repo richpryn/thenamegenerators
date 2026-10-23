@@ -21,6 +21,7 @@ project/
 ├── content/                        # ← everything you edit
 │   ├── categories.json             # Categories: menu order, titles, intros, featured picks, generators
 │   ├── homepage.json               # The homepage's first "popular" picks, in order
+│   ├── sister-links.json           # Boxes linking to sister sites, by generator (shown while "live" is true)
 │   ├── illustrations.json          # Which drawing each generator and category uses
 │   └── generators/
 │       ├── elf.json                # One file per generator: page text, filters, recipe, names

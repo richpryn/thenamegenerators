@@ -298,6 +298,8 @@ article li{margin-bottom:var(--s2)}
 .article > div > h2,.article h2{margin-top:var(--s7)}
 .article > div > h2:first-of-type{margin-top:var(--s6)}
 .usage-note{margin:var(--section) 0 0;font:15px/1.5 var(--body);color:var(--muted);max-width:64ch}
+.sister{--fill:var(--card);margin:var(--s5) 0 0;padding:var(--s3) var(--s4);max-width:64ch}
+.sister p{margin:0;font:16px/1.5 var(--body)}
 .all-link{margin:var(--s4) 0 0;font:600 16px var(--body)}
 .genlist.compact .gencard{padding:var(--s3) var(--s4)}
 .genlist.compact .gencard .doodle{width:32px;height:32px}

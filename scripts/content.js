@@ -27,7 +27,9 @@ function loadContent() {
   }
   const homepagePath = path.join(CONTENT_DIR, 'homepage.json');
   const homepage = fs.existsSync(homepagePath) ? JSON.parse(fs.readFileSync(homepagePath, 'utf8')) : { popular: [] };
-  return { categories, generators, homepage };
+  const sisterPath = path.join(CONTENT_DIR, 'sister-links.json');
+  const sisterLinks = fs.existsSync(sisterPath) ? JSON.parse(fs.readFileSync(sisterPath, 'utf8')) : { boxes: [] };
+  return { categories, generators, homepage, sisterLinks };
 }
 
 function countNames(node) {
@@ -50,9 +52,18 @@ function recipesIn(recipe) {
 }
 
 /** Returns { errors: [], warnings: [] }, each message naming its file. */
-function validate({ categories, generators, homepage = { popular: [] } }) {
+function validate({ categories, generators, homepage = { popular: [] }, sisterLinks = { boxes: [] } }) {
   const errors = [];
   const warnings = [];
+  for (const box of sisterLinks.boxes || []) {
+    const id = box.id || '?';
+    if (!/^https:\/\//.test(box.url || '')) errors.push(`sister-links.json: box "${id}" needs an https "url"`);
+    if (!(box.text || '').includes('{link}')) errors.push(`sister-links.json: box "${id}" text needs {link}`);
+    if (!box.linkText) errors.push(`sister-links.json: box "${id}" needs "linkText"`);
+    for (const key of box.generators || []) {
+      if (!generators[key]) errors.push(`sister-links.json: box "${id}" lists "${key}", which isn't a generator`);
+    }
+  }
   const categorySlugs = new Set(categories.map((c) => c.slug));
   for (const key of homepage.popular || []) {
     if (!generators[key]) errors.push(`homepage.json: "${key}" isn't a generator`);

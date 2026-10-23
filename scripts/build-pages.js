@@ -538,6 +538,12 @@ function generateGeneratorPage(generator, category, site) {
                 </div>
             </section>`;
   }
+  // Sister-site boxes (content/sister-links.json), below the article
+  const sisterHTML = site.sisterBoxes(generator.key).map(box => {
+    const [before, after] = escapeHtml(box.text).split('{link}');
+    return `            <aside class="sister hd"><p>${before}<a href="${escapeHtml(box.url)}">${escapeHtml(box.linkText)}</a>${after}</p></aside>`;
+  }).join('\n');
+
   // Generate SEO-optimized title
   const seoTitle = generateSEOTitle(generator);
   const baseUrl = "https://thenamegenerators.com";
@@ -667,6 +673,7 @@ ${howItWorksHtml(generator)}
                 ${sectionsHTML}`, motif)}
                 </div>
             </article>
+${sisterHTML}
 ${faqsHTML ? `            ${layout.sectionBreak(motif)}${faqsHTML}` : ''}
 ${relatedHTML ? `            ${layout.sectionBreak(motif)}${relatedHTML}` : ''}
 ${categoryGeneratorsHTML}
@@ -1467,7 +1474,7 @@ ${scriptJson({
 /**
  * Lookups shared by the page templates.
  */
-function makeSite({ categories, generators, homepage }) {
+function makeSite({ categories, generators, homepage, sisterLinks = { boxes: [] } }) {
   const all = Object.values(generators);
   const categoriesOf = {};
   for (const cat of categories) {
@@ -1506,6 +1513,8 @@ function makeSite({ categories, generators, homepage }) {
     categories,
     all,
     categoriesOf,
+    // content/sister-links.json: live boxes that list this generator
+    sisterBoxes: (key) => (sisterLinks.boxes || []).filter(b => b.live && (b.generators || []).includes(key)),
     inCategory: (slug) => categories.find(c => c.slug === slug).generators.map(k => generators[k]),
     related: (current) => all
       .filter(g => g.key !== current.key)
