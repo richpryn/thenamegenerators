@@ -156,6 +156,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Category: Music by Genre -->
+  <url>
+    <loc>https://thenamegenerators.com/categories/music_genres-names.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Category: Objects -->
   <url>
     <loc>https://thenamegenerators.com/categories/objects-names.html</loc>
@@ -373,6 +380,27 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Bluegrass Band Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/bluegrass-band-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Blues Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/blues-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Boy Band Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/boy-band-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Brand Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/brand-name-generator.html</loc>
@@ -405,6 +433,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/chinese-dragon-name-generator.html</loc>
     <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Choir Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/choir-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -450,6 +485,20 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Composer Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/composer-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Country Singer Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/country-singer-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Coven Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/coven-name-generator.html</loc>
@@ -492,6 +541,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Dark Ambient Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/dark-ambient-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Dark Elf Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/dark-elf-name-generator.html</loc>
@@ -527,6 +583,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Drum and Bass Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/drum-and-bass-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: D&D Fantasy Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/dnd-fantasy-name-generator.html</loc>
@@ -552,6 +615,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/dragonborn-name-generator.html</loc>
     <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Drill Rapper Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/drill-rapper-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -607,6 +677,13 @@
   <!-- Generator: Elven Sword Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/elven-sword-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Emo Band Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/emo-band-name-generator.html</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -688,6 +765,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Folk Band Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/folk-band-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Funny Minecraft Sword Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/funny-minecraft-sword-name-generator.html</loc>
@@ -765,6 +849,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Girl Group Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/girl-group-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Githyanki Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/githyanki-name-generator.html</loc>
@@ -800,10 +891,31 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Gospel Choir Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/gospel-choir-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Goth Band Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/goth-band-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Griffin Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/griffin-name-generator.html</loc>
     <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Grunge Band Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/grunge-band-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -839,6 +951,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/hammer-name-generator.html</loc>
     <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Hardcore Band Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/hardcore-band-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -898,6 +1017,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: House Music Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/house-music-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Hydra Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/hydra-name-generator.html</loc>
@@ -905,10 +1031,24 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Indie Band Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/indie-band-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Japanese Sword Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/japanese-sword-name-generator.html</loc>
     <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Jazz Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/jazz-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -940,6 +1080,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: K-pop Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/kpop-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Kraken Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/kraken-name-generator.html</loc>
@@ -958,6 +1105,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/lizardfolk-name-generator.html</loc>
     <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Lo-Fi Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/lofi-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1000,6 +1154,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/mermaid-name-generator.html</loc>
     <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Metal Band Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/metal-band-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1164,6 +1325,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Orchestra Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/orchestra-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Paladin Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/paladin-name-generator.html</loc>
@@ -1220,10 +1388,31 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Pop Punk Band Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/pop-punk-band-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Pop Star Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/pop-star-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Post-Apocalyptic Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/post-apocalyptic-name-generator.html</loc>
     <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Punk Band Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/punk-band-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1241,10 +1430,24 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Reggae Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/reggae-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Reindeer Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/reindeer-name-generator.html</loc>
     <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: R&B Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/rnb-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1283,10 +1486,24 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Score Title Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/score-title-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Shield Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/shield-name-generator.html</loc>
     <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Shoegaze Band Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/shoegaze-band-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1318,6 +1535,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Slowcore Band Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/slowcore-band-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Snowman Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/snowman-name-generator.html</loc>
@@ -1336,6 +1560,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/sorcerer-name-generator.html</loc>
     <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Soul Singer Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/soul-singer-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1416,6 +1647,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Synthwave Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/synthwave-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Tavern Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/tavern-name-generator.html</loc>
@@ -1423,10 +1661,24 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Techno Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/techno-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Tiefling Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/tiefling-name-generator.html</loc>
     <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Trap Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/trap-name-generator.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

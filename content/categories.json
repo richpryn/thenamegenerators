@@ -545,7 +545,7 @@
     "seoTitle": "Music Name Generators: Projects, Albums and Gigs",
     "description": "Names for music projects, albums and gigs, from a site that began with music.",
     "seoDescription": "Music name generators for dungeon synth projects and albums, and names for gigs, club nights and open mics, from a site built by a musician.",
-    "intro": "<p>This site started because its maker, a musician, kept needing names: for projects, <a href=\"../posts/album-name-generator.html\">albums</a>, songs and nights out. The music generators are where that began.</p><p>The <a href=\"../posts/dungeon-synth-name-generator.html\">Dungeon Synth Name Generator</a> names atmospheric fantasy projects and albums, and the <a href=\"../posts/event-name-generator.html\">Event Name Generator</a> has a whole section for gigs, club nights and open mics.</p>",
+    "intro": "<p>This site started because its maker, a musician, kept needing names: for projects, <a href=\"../posts/album-name-generator.html\">albums</a>, songs and nights out. The music generators are where that began.</p><p>The <a href=\"../posts/dungeon-synth-name-generator.html\">Dungeon Synth Name Generator</a> names atmospheric fantasy projects and albums, and the <a href=\"../posts/event-name-generator.html\">Event Name Generator</a> has a whole section for gigs, club nights and open mics.</p><p>Looking for a name in one style? <a href=\"music_genres-names.html\">Music Genre Name Generators</a> has a page for each of 35 genres, from black metal and K-pop to bluegrass and film scores.</p>",
     "featured": [
       {
         "key": "band",
@@ -571,6 +571,73 @@
       "wu_tang",
       "dj",
       "podcast"
+    ]
+  },
+  {
+    "name": "Music by Genre",
+    "slug": "music_genres",
+    "icon": "🎸",
+    "navLabel": "Music by Genre",
+    "heading": "Music Genre Name Generators",
+    "seoTitle": "Music Genre Name Generators: Bands, Artists and Albums",
+    "description": "Band, artist and album names for 35 genres, from black metal and K-pop to bluegrass and film scores.",
+    "seoDescription": "Free band, artist and album name generators for 35 music genres: metal, punk, K-pop, drill, techno, country, jazz, film scores and more. 200+ names per choice.",
+    "intro": "<p>Every genre names itself differently. Black metal reaches for winter and old tongues, K-pop for short, bright words, country for real-sounding names and dirt roads, lo-fi for soft lowercase. Each generator here is built from how acts in that genre actually name themselves, with at least 200 names for every choice and no real bands or artists.</p><p>Start with the <a href=\"../posts/metal-band-name-generator.html\">Metal Band Name Generator</a>, the <a href=\"../posts/kpop-name-generator.html\">K-pop Name Generator</a> or the <a href=\"../posts/country-singer-name-generator.html\">Country Singer Name Generator</a>. Writing for picture? Try the <a href=\"../posts/score-title-generator.html\">Score Title Generator</a> and the <a href=\"../posts/composer-name-generator.html\">Composer Name Generator</a>. For a name that works across every style, the <a href=\"../posts/band-name-generator.html\">Band Name Generator</a> is still the place to begin.</p>",
+    "featured": [
+      {
+        "key": "metal",
+        "note": "black, death, doom, thrash, power and metalcore."
+      },
+      {
+        "key": "kpop",
+        "note": "groups, idols, fandoms and comeback titles."
+      },
+      {
+        "key": "country",
+        "note": "singer names, bands and album titles."
+      },
+      {
+        "key": "score_title",
+        "note": "cue and soundtrack titles by mood."
+      }
+    ],
+    "generators": [
+      "metal",
+      "punk",
+      "emo",
+      "grunge",
+      "indie",
+      "shoegaze",
+      "goth",
+      "pop_punk",
+      "hardcore",
+      "slowcore",
+      "kpop",
+      "boy_band",
+      "girl_group",
+      "pop_star",
+      "rnb",
+      "drill",
+      "trap",
+      "techno",
+      "house",
+      "dnb",
+      "synthwave",
+      "lofi",
+      "dark_ambient",
+      "country",
+      "folk",
+      "bluegrass",
+      "blues",
+      "jazz",
+      "reggae",
+      "gospel",
+      "soul",
+      "orchestra",
+      "composer_name",
+      "score_title",
+      "choir",
+      "dungeon_synth"
     ]
   },
   {
