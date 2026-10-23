@@ -138,6 +138,10 @@ h1{font:800 var(--h1)/1.05 var(--head);letter-spacing:-.025em;margin:0;text-wrap
 .sheet{--fill:var(--card);padding:var(--card-pad);margin-top:var(--s5)}
 @media (min-width:1024px){.sheet{margin-top:var(--s6)}}
 .group + .group{margin-top:20px}
+/* A group that appears after a choice (e.g. Gender once you pick a person) fades in, so the page doesn't jump abruptly */
+.sheet .group{animation:group-in .2s ease-out}
+@keyframes group-in{from{opacity:0;transform:translateY(-4px)}}
+@media (prefers-reduced-motion:reduce){.sheet .group{animation:none}}
 .label{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:2px var(--s2);font:700 13px/1.2 var(--head);letter-spacing:.06em;text-transform:uppercase;margin-bottom:var(--s2)}
 .label > :first-child:not(.pen){white-space:nowrap}
 .label .pen{margin-left:auto;text-align:right}
