@@ -163,6 +163,23 @@ function seededRandom(seedText) {
 }
 
 /**
+ * Filter values for a sample with `key` set to `opt`: the defaults, unless
+ * they don't allow that option (Angel's D&D format has no traditional
+ * names), in which case the first combination that does.
+ */
+function validValues(engine, filters, defaults, key, opt) {
+  const values = { ...defaults, [key]: opt };
+  try { engine.generate(values, 1); return values; } catch (e) { /* look for a combination that works */ }
+  let combos = [{}];
+  for (const [k, f] of Object.entries(filters)) {
+    if (f.type === 'text') { combos = combos.map(c => ({ ...c, [k]: defaults[k] })); continue; }
+    combos = combos.flatMap(c => (k === key ? [opt] : engine.availableOptions(k, c)).map(o => ({ ...c, [k]: o })));
+    if (combos.length > 500) combos = combos.slice(0, 500);
+  }
+  return combos.find(c => c[key] === opt) || values;
+}
+
+/**
  * A "Starts with" filter only offers letters the generator can actually
  * make (at least three names under some combination of its other options).
  */
@@ -288,7 +305,7 @@ function howItWorksHtml(generator) {
     const shapes = generator.recipe === 'switch' && generator.on === key && f.options.length <= 8;
     if (shapes) {
       choices.push(`<li><strong>${escapeHtml(f.label)}:</strong><ul>${f.options.map(opt => {
-        const [sample] = engine.generate({ ...defaults, [key]: opt }, 1);
+        const [sample] = engine.generate(validValues(engine, filters, defaults, key, opt), 1);
         return `<li>${escapeHtml(label(f, opt))}, e.g. <em>${escapeHtml(sample)}</em></li>`;
       }).join('')}</ul></li>`);
     } else {
