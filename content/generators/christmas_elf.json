@@ -26,7 +26,12 @@
       "placeholder": "e.g. Sam",
       "default": "Sam",
       "example": "Sam",
-      "firstName": true
+      "firstName": true,
+      "showWhen": {
+        "source": [
+          "mine"
+        ]
+      }
     },
     "format": {
       "label": "Name format",
