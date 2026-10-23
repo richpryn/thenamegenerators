@@ -828,8 +828,34 @@
       "title": "🎷 Jazz Name Generator",
       "tagline": "Dukes, counts, quartets and big bands: jazz names that sound like a Blue Note sleeve."
     },
-    "intro": "Jazz bands are usually named after whoever is leading them, and the leaders often went by a nickname or a title. This **jazz name generator** makes jazz musician names, groups from trios to big bands, and album titles in the style of the standards.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good jazz names sound like a leader worth following: a real name with a nickname or a title, like <em>Byron \"Slide\" Fairbanks</em>, and a group named after them, like <em>The Imani Caldwell Quartet</em>. Jazz bands are usually named after whoever is leading them. This **jazz name generator** makes jazz musician names, groups from trios to big bands, and album titles in the style of the standards.",
+    "sections": [
+      {
+        "heading": "Eight good jazz names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Byron \"Slide\" Fairbanks</strong>: a nickname that tells you he plays trombone.</li><li><strong>Professor Treadwell</strong>: a title instead of a first name, like the dukes and counts of the swing era.</li><li><strong>Zelda \"Velvet\" Adeyemi</strong>: a singer's nickname that describes the voice.</li><li><strong>The Imani Caldwell Quartet</strong>: the leader's name and the size of the band, the commonest jazz group name of all.</li><li><strong>Leroy Pryce & His Orchestra</strong>: the big band convention, as in Glenn Miller and His Orchestra.</li><li><strong>The Leeds Jazz Workshop</strong>: a place and a workshop, for a collective rather than a leader's band.</li><li><strong>January in Stockholm</strong>: a month and a city, like the standard \"April in Paris\".</li><li><strong>Three A.M. at the Jade Lounge</strong>: a time and a club, for a late-night record.</li></ul>"
+      },
+      {
+        "heading": "How jazz names itself",
+        "content": "<ul><li><strong>Titles and nicknames:</strong> Duke Ellington, Count Basie and King Oliver all went by a title, and Charlie Parker by \"Bird\". Ellington got his as a boy, for his elegant manners.</li><li><strong>The leader's name and the line-up:</strong> the Dave Brubeck Quartet, the Miles Davis Quintet. Groups grow from trio to quartet, quintet, sextet, septet, octet and nonet; Miles Davis's <em>Birth of the Cool</em> sessions used a nine-piece band.</li><li><strong>\"And His Orchestra\"</strong> for the big bands of the swing era, like Benny Goodman and His Orchestra, or a name for the band itself, like Art Blakey and the Jazz Messengers.</li><li><strong>Album titles</strong> borrow from the standards (places, months, a person's name) or name the club where the set was recorded. The Village Vanguard in New York has given its name to many live albums.</li></ul><p>Choose <strong>Musician</strong> for a player, with the gender filter for a bandleader or a singer, <strong>Group</strong> for trios to big bands, and <strong>Album</strong> for titles like <em>Penthouse Sketches</em> or <em>The Montreal Sessions</em>.</p>"
+      },
+      {
+        "heading": "Using a jazz name",
+        "content": "<ul><li><strong>Name the group after the leader</strong> if one person writes the tunes and books the gigs. It's the jazz convention, and it makes your name easy to find.</li><li><strong>Pick the line-up honestly.</strong> If you sometimes play as four and sometimes as five, a name like <em>Smoke Collective</em> saves reprinting the posters.</li><li><strong>For a live album,</strong> name the room you recorded in, the way jazz always has.</li></ul><p>Jazz grew up alongside the blues: try the <a href=\"blues-name-generator.html\">Blues Name Generator</a> too, and the <a href=\"soul-singer-name-generator.html\">Soul Singer Name Generator</a> for what came later. For record titles in any genre, see the <a href=\"album-name-generator.html\">Album Name Generator</a>.</p><p>For more genres, see all the <a href=\"../categories/music_genres-names.html\">music genre name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do you name a jazz band?",
+        "answer": "Most jazz groups are named after the leader and the size of the band, like The Imani Caldwell Quartet. Big bands add \"and His (or Her) Orchestra\", and collectives take a single word, like Smoke Collective."
+      },
+      {
+        "question": "What is a good jazz musician name?",
+        "answer": "A real-sounding name with a nickname or a title: Byron \"Slide\" Fairbanks, Professor Treadwell or Zelda \"Velvet\" Adeyemi. Jazz nicknames often describe the instrument or the sound."
+      },
+      {
+        "question": "What do trio, quartet and quintet mean?",
+        "answer": "Three, four and five players. Jazz groups carry on through sextet (6), septet (7), octet (8) and nonet (9), and anything much bigger is a big band."
+      }
+    ]
   }
 }

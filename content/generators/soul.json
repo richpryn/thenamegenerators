@@ -706,8 +706,34 @@
       "title": "🎤 Soul Singer Name Generator",
       "tagline": "Velvet voices, sharp-suited groups and records you would play on a Sunday morning."
     },
-    "intro": "Soul singers sound like real people, often with an initial or a \"Little\" in front, while the groups had names polished to a shine. This **soul singer name generator** makes soul and Motown-style singer names, group names and album titles.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good soul singer names sound like real people, often with an initial, a \"Little\" or a \"Jr.\", like <em>Little Wilbert Ellerbe</em> or <em>Reggie Upshaw Jr.</em>, while the groups had names polished to a shine. This **soul singer name generator** makes soul and Motown-style singer names, group names and album titles.",
+    "sections": [
+      {
+        "heading": "Eight good soul names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Little Wilbert Ellerbe</strong>: \"Little\" was a common billing for young singers, as with Little Stevie Wonder.</li><li><strong>Reggie Upshaw Jr.</strong>: a real-sounding name with a \"Jr.\", for a singer from a musical family.</li><li><strong>Odell \"Lover Boy\" Pinkney</strong>: a nickname for a ballad singer, printed in quotation marks.</li><li><strong>Deborah Faye Stokes</strong>: a first name and a middle name together, Southern style.</li><li><strong>The Sapphire Hi-Fis</strong>: a jewel and a bit of hi-fi gloss, the way vocal groups were named.</li><li><strong>Jimmy Lyons & the Motor City Revue</strong>: a leader and a revue, after the touring shows of 1960s Detroit.</li><li><strong>The Waller Sisters</strong>: a family group with a shared surname.</li><li><strong>Love Letters from Detroit</strong>: an album title that tells you exactly what it sounds like.</li></ul>"
+      },
+      {
+        "heading": "How soul names itself",
+        "content": "<ul><li><strong>Motown</strong>, founded by Berry Gordy in Detroit in 1959, gave its groups smart, plural names: the Supremes, the Temptations, the Miracles, the Marvelettes, the Four Tops.</li><li><strong>A singer and their group</strong>: Smokey Robinson and the Miracles, Martha and the Vandellas, Gladys Knight and the Pips.</li><li><strong>Real names</strong> for solo singers, often with an initial or a nickname. Soul came largely out of gospel, and many singers kept the names they'd sung under in church.</li><li><strong>Memphis soul</strong>, from labels like Stax, was rawer, and its names and titles were plainer to match.</li></ul><p>Choose <strong>Singer</strong> for a soloist, with the gender filter, <strong>Group</strong> for a vocal group or a singer and their band, and <strong>Album</strong> for titles like <em>Heartache Radio</em> or <em>Back Seat Serenade</em>.</p>"
+      },
+      {
+        "heading": "Using a soul name",
+        "content": "<ul><li><strong>For a retro-soul act,</strong> a group name with \"the\" and a plural (<em>The Uptown Gems</em>) instantly sounds like 1965.</li><li><strong>For a modern singer,</strong> a real-sounding name usually works better than a nickname. Use the initial or the \"Jr.\" if it's true.</li><li><strong>Check the name</strong> on streaming services: soul has a long back catalogue.</li></ul><p>Soul has its roots in gospel and the blues: try the <a href=\"gospel-choir-name-generator.html\">Gospel Choir</a> and <a href=\"blues-name-generator.html\">Blues</a> name generators. For the modern side, the <a href=\"rnb-name-generator.html\">R&amp;B Name Generator</a> picks up where soul leaves off, and the <a href=\"stage-name-generator.html\">Stage Name Generator</a> covers any performer.</p><p>For more genres, see all the <a href=\"../categories/music_genres-names.html\">music genre name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is a good soul singer name?",
+        "answer": "A real-sounding name, often with an initial, a middle name or \"Little\": Little Wilbert Ellerbe, Deborah Faye Stokes or Reggie Upshaw Jr. Soul singers usually sang under their own names."
+      },
+      {
+        "question": "How were Motown groups named?",
+        "answer": "With short, smart plural names, like the Supremes or the Temptations, or a lead singer's name followed by the group, like Martha and the Vandellas. The Group format makes names in both styles."
+      },
+      {
+        "question": "Are these real soul singers?",
+        "answer": "No. They're new names in the classic style. Search one before you use it, in case a working singer already has it."
+      }
+    ]
   }
 }

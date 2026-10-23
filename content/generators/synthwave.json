@@ -724,8 +724,34 @@
       "title": "🌆 Synthwave Name Generator",
       "tagline": "Neon, night drives and VHS: names from an 80s that never quite happened."
     },
-    "intro": "Synthwave names sound like the end credits of an 80s action film: a hero with a chrome surname, a year in the name, a coastline at midnight. This **synthwave name generator** covers retrowave and outrun artists, bands and albums, with a vaporwave style for ｆｕｌｌｗｉｄｔｈ text, fake corporations and empty shopping malls.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good synthwave names sound like the end credits of an 80s action film: a hero with a chrome surname, a year in the name, a coastline at midnight. This **synthwave name generator** covers retrowave and outrun artists, bands and albums, with a vaporwave style for ｆｕｌｌｗｉｄｔｈ text, fake corporations and empty shopping malls.",
+    "sections": [
+      {
+        "heading": "Eight good synthwave names",
+        "content": "<p>All eight came from the generator, synthwave and vaporwave:</p><ul><li><strong>Moonracer 1983</strong>: a year in the name, a synthwave habit since the 2000s.</li><li><strong>Nightglider</strong>: one compound word that sounds like a car in a video game.</li><li><strong>Danny Danger &amp; the Datakids</strong>: a frontman with an action-hero name and a backing band.</li><li><strong>VCR-88</strong>: letters and a number, like old hardware.</li><li><strong>Rooftop Chase</strong>: an album title that's a scene from a film that was never made.</li><li><strong>Glow Sticks &amp; Gasoline</strong>: neon and petrol, the two smells of the genre.</li><li><strong>ＶＩＲＴＵＡＬ</strong>: fullwidth capitals, the signature look of vaporwave.</li><li><strong>Welcome to the Skyline Hotel</strong>: a vaporwave album that sounds like a lobby in 1995.</li></ul>"
+      },
+      {
+        "heading": "How synthwave and vaporwave name themselves",
+        "content": "<p>Synthwave took off in the mid-2000s, made by producers who grew up on 80s film soundtracks, arcade games and the synths of John Carpenter and Vangelis. Kavinsky's \"Nightcall\", used in the film <em>Drive</em> (2011), brought it to a much wider audience. Outrun, one of its other names, comes from Sega's 1986 arcade driving game <em>Out Run</em>.</p><ul><li><strong>Years and numbers.</strong> Many acts put a year from the 80s in their name, as Timecop1983 and FM-84 do. The generator does the same: <em>Laguna Nights 1987</em>, <em>VGA-84</em>.</li><li><strong>Film heroes.</strong> A made-up action star with a band behind him: <em>Rex Racer &amp; the Night Pilots</em>.</li><li><strong>Album titles</strong> are places and moments: a motel pool, a highway, the skyline at 3am.</li></ul><p>Vaporwave came a little later, in the early 2010s. Macintosh Plus's <em>Floral Shoppe</em> (2011) is the album most people point to. It loops slowed-down muzak and adverts, and its names look like corporate logos, Japanese shop signs or text typed in wide, spaced-out letters. Choose <strong>Vaporwave</strong> for names like <em>パラダイス Multimedia</em> or <em>ＯＰＥＮ　２４　ＨＯＵＲＳ</em>.</p>"
+      },
+      {
+        "heading": "Using a synthwave name",
+        "content": "<ul><li><strong>Think about the artwork.</strong> Sunsets, grids and chrome lettering are part of the genre, and a name that suggests a picture makes the cover easier.</li><li><strong>Vaporwave text is hard to search.</strong> Fullwidth letters and Japanese characters look great but people can't easily type them, so add a plain-text version in your profile.</li><li><strong>Check the name is free</strong> on Bandcamp, Spotify and YouTube before you print the first cassette.</li></ul><p>For something slower and dustier, try the <a href=\"lofi-name-generator.html\">Lo-Fi Name Generator</a>. If you want stars and space instead of neon, cosmic synth sits with the <a href=\"dungeon-synth-name-generator.html\">Dungeon Synth Name Generator</a>. For albums in any genre, the <a href=\"album-name-generator.html\">Album Name Generator</a> has more.</p><p>For more genres, see all the <a href=\"../categories/music_genres-names.html\">music genre name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good synthwave artist names?",
+        "answer": "Names that sound like an 80s film or game: a compound like Nightglider, a year added to a name like Moonracer 1983, or an action hero with a band, like Danny Danger & the Datakids."
+      },
+      {
+        "question": "How do you write vaporwave text?",
+        "answer": "Vaporwave often uses fullwidth characters, which look wide and evenly spaced (ＶＩＲＴＵＡＬ), or letters with spaces between them (p a r a d i s e). Copy them straight from the generator."
+      },
+      {
+        "question": "What's the difference between synthwave and vaporwave?",
+        "answer": "Synthwave is new music made in an 80s style, usually with synths and drum machines. Vaporwave takes old muzak, adverts and pop, slows and loops it, and wraps it in 90s corporate imagery."
+      }
+    ]
   }
 }
