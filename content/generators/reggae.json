@@ -738,8 +738,34 @@
       "title": "🎶 Reggae Name Generator",
       "tagline": "Singers, deejays, harmony trios and sound systems, named the Kingston way."
     },
-    "intro": "Reggae has its own naming traditions: harmony trios with elegant names, deejays with a title like Prince, General or Ranking, and dub records that \"meet\" each other. This **reggae name generator** makes artist names, band names and album titles in those styles.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good reggae names follow Jamaica's own traditions: deejays take a title like <em>Lieutenant Riddim</em> or <em>Empress Breeze</em>, harmony groups an elegant name like <em>The Upful Voices</em>, and dub records \"meet\" each other. This **reggae name generator** makes artist names, band names and album titles in those styles.",
+    "sections": [
+      {
+        "heading": "Eight good reggae names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Lieutenant Riddim</strong>: a military rank and a riddim, the backing track a deejay chats over.</li><li><strong>Empress Breeze</strong>: Empress is a respectful title for a woman in Rastafari usage.</li><li><strong>Sister Keisha</strong>: a simple, warm title for a singer.</li><li><strong>Desmond \"Rocksteady\" Ottey</strong>: a nickname taken from the style that came between ska and reggae.</li><li><strong>The Upful Voices</strong>: \"upful\" means uplifting in Jamaican speech, a good word for a harmony group.</li><li><strong>Harlesden Rockers</strong>: named after a London district with a long reggae history, for a UK band.</li><li><strong>Admiral Damion Meets the Echo Chamber</strong>: a dub album title in the classic \"meets\" style.</li><li><strong>One Drop Morning</strong>: the one drop is the reggae drum pattern that hits on the third beat.</li></ul>"
+      },
+      {
+        "heading": "How reggae names itself",
+        "content": "<ul><li><strong>Deejays</strong> in Jamaica are the vocalists who chat or toast over a riddim, while the selector plays the records. Many took a title: King, Prince, General, Ranking, Major. Prince Buster and U-Roy came out of the sound systems of 1960s Kingston.</li><li><strong>Harmony groups</strong> of the rocksteady and roots years, in the late 1960s and 1970s, had elegant names, like the Heptones and the Mighty Diamonds.</li><li><strong>Sound systems</strong> were named like businesses with a title: Duke Reid's Trojan and Coxsone Dodd's Downbeat were the great rivals.</li><li><strong>Dub albums</strong> often have one producer or group \"meeting\" another, as in Augustus Pablo's <em>King Tubby Meets Rockers Uptown</em> (1976).</li></ul><p>Much reggae vocabulary comes from Rastafari, a faith as well as a culture. Words like <em>Jah</em> (God) carry religious meaning, so the generator uses them lightly, and it's worth doing the same. Choose <strong>Artist</strong> for a singer or deejay, <strong>Band</strong> for a group or sound system, and <strong>Album</strong> for titles like <em>Sounds from Port Antonio</em>.</p>"
+      },
+      {
+        "heading": "Using a reggae name",
+        "content": "<ul><li><strong>A title and one word</strong> is the classic deejay name: <em>Major Thunder</em>, <em>Papa Rhythm</em>. Keep it short enough to shout over a riddim.</li><li><strong>For a band,</strong> a place works well: <em>Ocho Rios Reggae Band</em>, <em>Portland Sound System</em>.</li><li><strong>Search it first.</strong> Reggae has a long history and plenty of titles are taken, so check streaming services before you release.</li></ul><p>For a name on the decks, try the <a href=\"dj-name-generator.html\">DJ Name Generator</a>; for a vocalist who leans towards hip hop, the <a href=\"rapper-name-generator.html\">Rapper Name Generator</a>. The <a href=\"album-name-generator.html\">Album Name Generator</a> covers records in any style.</p><p>For more genres, see all the <a href=\"../categories/music_genres-names.html\">music genre name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is a good reggae artist name?",
+        "answer": "A title and a word that's easy to shout, like Lieutenant Riddim or Major Thunder for a deejay, or a respectful title like Sister Keisha or Empress Breeze for a singer. Choose Artist in the generator for names like these."
+      },
+      {
+        "question": "What's the difference between a deejay and a selector?",
+        "answer": "In Jamaican sound system culture the selector plays the records and the deejay is the vocalist who chats or toasts over them. It's close to what elsewhere would be an MC."
+      },
+      {
+        "question": "Why are reggae albums called \"meets\"?",
+        "answer": "Dub records often paired two producers, sound systems or groups in the title, as in King Tubby Meets Rockers Uptown. The generator's album format includes titles in that style."
+      }
+    ]
   }
 }

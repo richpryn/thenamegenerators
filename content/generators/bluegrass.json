@@ -807,8 +807,34 @@
       "title": "🪕 Bluegrass Band Name Generator",
       "tagline": "Mountain boys, brother duos and string bands, named the way Kentucky and the Blue Ridge would."
     },
-    "intro": "Bluegrass bands have named themselves after mountains, hollers and the leader out front ever since the Blue Grass Boys. This **bluegrass band name generator** makes band names, picker names and album titles in that high, lonesome style, plus a few jamgrass curveballs.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good bluegrass band names come from mountains, creeks and hollers, or from the leader out front, a habit that goes back to Bill Monroe and his Blue Grass Boys. This **bluegrass band name generator** makes band names, picker names and album titles in that high, lonesome style, plus a few jamgrass curveballs.",
+    "sections": [
+      {
+        "heading": "Eight good bluegrass band names",
+        "content": "<p>All eight came from the generator, bands, pickers and albums:</p><ul><li><strong>Buddy Neace &amp; the Mountain Boys</strong>: a leader and the Boys, the original bluegrass shape.</li><li><strong>The Fugate Brothers</strong>: brother duos have been at the heart of bluegrass since the start.</li><li><strong>The Harlan County Pickers</strong>: a real Kentucky county and what the band does.</li><li><strong>The Kanawha Sweethearts</strong>: a West Virginia river and an old-fashioned name for a female group.</li><li><strong>Crawdad Breakdown</strong>: a jamgrass-style name with a bit of fun in it.</li><li><strong>Hoss Cornett</strong>: a nickname picker, like Curly or Red.</li><li><strong>Wilma Jean Spurlock</strong>: a double first name and an Appalachian surname.</li><li><strong>Banjo Weather</strong>: an album title that sounds like a fiddle tune.</li></ul>"
+      },
+      {
+        "heading": "How bluegrass names itself",
+        "content": "<p>Bluegrass is named after one band: Bill Monroe and the Blue Grass Boys, who took their name from Kentucky, the Bluegrass State. By the late 1940s the line-up of mandolin, banjo, fiddle, guitar and bass was being copied so widely that the band's name became the genre's.</p><ul><li><strong>Leaders and their Boys.</strong> Lester Flatt and Earl Scruggs had the Foggy Mountain Boys, and the pattern stuck. Choose <strong>Band</strong> for names like <em>Eli Stamper &amp; the Mountain Rangers</em>.</li><li><strong>Brothers.</strong> The Stanley Brothers and the Osborne Brothers made family harmony part of the sound: <em>The Fugate Brothers</em>, <em>Childers &amp; Spurlock</em>.</li><li><strong>Places.</strong> Counties, creeks and forks in the river, many of them real places in Kentucky, Virginia and the Carolinas: <em>The Rocky Fork Express</em>, <em>The Hiwassee Rangers</em>.</li><li><strong>Pickers</strong> often go by nicknames or initials: <em>Shorty Rowe</em>, <em>C.W. Tackett</em>.</li></ul><p>Album titles sound like tunes from the jam: breakdowns, specials and waltzes, such as <em>Clinch River Special</em> or <em>Bear Creek Waltz</em>.</p>"
+      },
+      {
+        "heading": "Using a bluegrass band name",
+        "content": "<ul><li><strong>Be careful with real places.</strong> Naming the band after a county or creek is traditional, but check nobody local already plays under it.</li><li><strong>Nicknames suit pickers.</strong> A name like Red or Doc makes a sideman memorable on a festival line-up.</li><li><strong>Jamgrass can be sillier.</strong> If you play long jams at festivals rather than straight bluegrass, a playful name fits.</li></ul><p>For the rest of the family tree, try the <a href=\"folk-band-name-generator.html\">Folk Band</a> and <a href=\"country-singer-name-generator.html\">Country Singer</a> name generators, and the <a href=\"song-title-generator.html\">Song Title Generator</a> for a tune to go with it.</p><p>For more genres, see all the <a href=\"../categories/music_genres-names.html\">music genre name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good bluegrass band names?",
+        "answer": "A leader and their Boys, like Buddy Neace & the Mountain Boys, a pair of brothers, or a real creek or county with a job, like The Harlan County Pickers."
+      },
+      {
+        "question": "Where does the name bluegrass come from?",
+        "answer": "From Bill Monroe's band, the Blue Grass Boys, named after Kentucky, the Bluegrass State. The band's sound was copied so widely that its name became the name of the genre."
+      },
+      {
+        "question": "What is jamgrass?",
+        "answer": "A looser, festival-friendly offshoot of bluegrass with long improvised jams, closer to jam bands like the Grateful Dead. Its band names tend to be more playful."
+      }
+    ]
   }
 }

@@ -790,8 +790,34 @@
       "title": "🪕 Folk Band Name Generator",
       "tagline": "Hedgerows, ballads and borrowed fiddles: names for folk bands, singers and records."
     },
-    "intro": "Folk bands borrow their names from old songs, birds, villages and the families who sang them. This **folk band name generator** makes band names, singer names and album titles in the style of English trad, folk-rock, Appalachian ballads and nu-folk.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good folk band names borrow from old songs, birds, villages and the families who sang them. This **folk band name generator** makes band names, singer names and album titles in the style of English trad, folk-rock, Appalachian ballads and nu-folk.",
+    "sections": [
+      {
+        "heading": "Eight good folk band names",
+        "content": "<p>All eight came from the generator, bands, singers and albums:</p><ul><li><strong>The Grey Magpies</strong>: a bird with a colour, the most folk-sounding band name there is.</li><li><strong>The Wychwood Broadside</strong>: a forest and a broadside, the cheap song-sheets ballads were once sold on.</li><li><strong>Linen &amp; Rope</strong>: two plain, handmade things, the nu-folk way.</li><li><strong>The Drummond Family</strong>: a family band, like the Watersons or the Copper Family.</li><li><strong>Peggy Kinsella</strong>: a singer's name with an Irish surname and a trad feel.</li><li><strong>Jasper Trevithick</strong>: a Cornish surname for a singer-songwriter.</li><li><strong>A Lammas Garland</strong>: a garland was a little book of ballads, and Lammas is the August harvest festival.</li><li><strong>Songs from the Shepherd's Hut</strong>: a place you can picture someone singing.</li></ul>"
+      },
+      {
+        "heading": "How folk music names itself",
+        "content": "<p>Folk names come from the songs. Steeleye Span took their name from a character in the traditional song \"Horkstow Grange\", and Fairport Convention from Fairport, the house in Muswell Hill where they rehearsed. Some of the best-loved English acts are simply families: the Watersons from Hull and the Copper Family of Rottingdean in Sussex.</p><ul><li><strong>Bands</strong> take birds, plants, places and families: <em>The Winter Starlings</em>, <em>Whitethorn</em>, <em>The Hennessy Brothers</em>. Ceilidh bands add the dance: <em>The Medlock Ceilidh Band</em>.</li><li><strong>Singers</strong> usually use their own names, and the surnames here come from England, Scotland, Ireland, Wales and Cornwall. Choose a gender for names like <em>Clara Trevithick</em> or <em>Fergus Fairley</em>.</li><li><strong>Albums</strong> borrow from old song collections: a garland, a farewell, a song from somewhere. <em>The Carter's Farewell</em>, <em>Under the Rowan Tree</em>.</li></ul><p>Across the Atlantic, the old ballads survived in the Appalachian mountains, where the English collector Cecil Sharp went looking for them during the First World War. Nu-folk, the 2000s revival around London, kept the handmade feel but swapped the ballads for short, simple names.</p>"
+      },
+      {
+        "heading": "Using a folk band name",
+        "content": "<ul><li><strong>Make it easy to say in a folk club.</strong> A name gets introduced from the floor, so it should be clear the first time.</li><li><strong>Use a place you know.</strong> A local wood, river or hill gives a band roots, and people from there will come to the gig.</li><li><strong>Check the name isn't a song title already.</strong> Traditional songs are everywhere in folk, so search the name alongside \"folk\" before you commit.</li></ul><p>For the American side of the family, try the <a href=\"bluegrass-band-name-generator.html\">Bluegrass Band</a> and <a href=\"country-singer-name-generator.html\">Country Singer</a> name generators. For a general band name, there's the <a href=\"band-name-generator.html\">Band Name Generator</a>.</p><p>For more genres, see all the <a href=\"../categories/music_genres-names.html\">music genre name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good folk band names?",
+        "answer": "Names from nature and old songs: a bird with a colour, like The Grey Magpies, a plant, like Whitethorn, or a family, like The Drummond Family. A place you know is always a good start."
+      },
+      {
+        "question": "What is a broadside in folk music?",
+        "answer": "A single sheet printed on one side with the words of a ballad, sold cheaply in streets and markets from the 16th century onwards. It's a good word for a folk band name."
+      },
+      {
+        "question": "What's a good title for a folk album?",
+        "answer": "Something that sounds like an old songbook or a place: A Winter Garland, The Carter's Farewell or Songs from the Old Mill. Choose Album in the generator."
+      }
+    ]
   }
 }

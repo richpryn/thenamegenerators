@@ -786,8 +786,34 @@
       "title": "🎶 R&B Name Generator",
       "tagline": "Smooth stage names, vocal groups and late-night album titles."
     },
-    "intro": "R&B names sound smooth and personal: a real name with a little shine, a single first name, or a vocal group named after a feeling. This **R&B name generator** makes singer names, group names and album titles in the shapes real R&B acts use.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good R&B names sound smooth and personal: a real name with a little shine, a single first name, or a vocal group named after a feeling. This **R&B name generator** makes singer names, group names and album titles in the shapes real R&B acts use.",
+    "sections": [
+      {
+        "heading": "Eight good R&B names",
+        "content": "<p>All eight came from the generator, for singers, groups and albums:</p><ul><li><strong>Zuri Valentine</strong>: a first name and a romantic surname.</li><li><strong>Desmond Calloway</strong>: a smooth, old-school name for a crooner.</li><li><strong>Jericho</strong>: a single name that sounds like a voice.</li><li><strong>Velvet Voices</strong>: a vocal group named after its sound.</li><li><strong>The Ingram Sisters</strong>: a family vocal group, an R&B tradition.</li><li><strong>Leilani x Tia</strong>: a duo name in the modern style.</li><li><strong>Indigo Hour</strong>: a late-night album title.</li><li><strong>Notes on Healing</strong>: an album that sounds like a diary.</li></ul>"
+      },
+      {
+        "heading": "How R&B names work",
+        "content": "<ul><li><strong>One name.</strong> Usher, Brandy and Aaliyah are first names; SZA is a stage name for Solána Rowe. The generator's single names include <em>Dorian</em> and <em>Laila</em>.</li><li><strong>A real name with a shine.</strong> Choose Singer for full names like <em>Ayana Marsh</em> or <em>Jalen Sterling</em>.</li><li><strong>Groups named after a feeling or a family.</strong> R&B has always had vocal groups, from family acts to groups like En Vogue and Boyz II Men. TLC took its name from its members' initials. The generator makes <em>Honeycomb</em>, <em>Mellow Rhythm</em> and <em>The Calloway Brothers</em>.</li><li><strong>Album titles</strong> are personal and a little late-night: <em>Low Light</em>, <em>Basement Sessions</em>, <em>Letters to Whoever Needs It</em>.</li></ul>"
+      },
+      {
+        "heading": "Using the names",
+        "content": "<ul><li><strong>Make it sound like you.</strong> R&B is personal, so a name close to your own often works better than a big invention.</li><li><strong>Check it's free</strong> on Spotify, Apple Music and social media before you release anything, and check for trademarks.</li></ul><p>For the classic sound, try the <a href=\"soul-singer-name-generator.html\">Soul Singer Name Generator</a>. For a solo name in other genres, there's the <a href=\"stage-name-generator.html\">Stage Name Generator</a>, and for the tracks, the <a href=\"song-title-generator.html\">Song Title Generator</a>.</p><p>For more genres, see all the <a href=\"../categories/music_genres-names.html\">music genre name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good R&B singer names?",
+        "answer": "Smooth, personal names: a single first name like Jericho, or a full name with a little shine like Zuri Valentine. Many R&B stars, from Usher to Aaliyah, are known by their first name alone."
+      },
+      {
+        "question": "What's a good name for an R&B group?",
+        "answer": "A name about a feeling or a sound, like Velvet Voices or Mellow Rhythm, or a family name like The Ingram Sisters. Choose R&B group for names built that way."
+      },
+      {
+        "question": "Can I use these names?",
+        "answer": "Yes, they're free to use. Search the name on streaming services first, since single names are often taken."
+      }
+    ]
   }
 }
