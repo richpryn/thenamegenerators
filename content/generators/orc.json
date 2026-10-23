@@ -28,13 +28,15 @@
         "deed",
         "the",
         "clan",
+        "shaman",
         "name"
       ],
       "optionLabels": {
         "deed": "Name and deed-name (Murzag Skullsplitter)",
         "the": "Name and nickname (Ushra the Unkillable)",
         "clan": "Name and clan (Hrukgar of the Broken Tusk)",
-        "name": "Name only"
+        "name": "Name only",
+        "shaman": "Shaman (Gorza Bone-Reader)"
       }
     },
     "letter": {
@@ -157,6 +159,28 @@
       "default": {
         "recipe": "template",
         "template": "[names.{gender}]"
+      }
+    },
+    "shaman": {
+      "recipe": "switch",
+      "on": "gender",
+      "cases": {
+        "any": {
+          "recipe": "template",
+          "template": [
+            "[names] [shaman.title]",
+            "[names] the [shaman.the]",
+            "[names], Speaker for the [shaman.spirits]"
+          ]
+        }
+      },
+      "default": {
+        "recipe": "template",
+        "template": [
+          "[names.{gender}] [shaman.title]",
+          "[names.{gender}] the [shaman.the]",
+          "[names.{gender}], Speaker for the [shaman.spirits]"
+        ]
       }
     }
   },
@@ -897,6 +921,66 @@
         "Sun",
         "Bone",
         "Maw"
+      ]
+    },
+    "shaman": {
+      "title": [
+        "Bone-Reader",
+        "Spirit-Caller",
+        "Storm-Speaker",
+        "Smoke-Seer",
+        "Skull-Whisperer",
+        "Ash-Walker",
+        "Blood-Seer",
+        "Moon-Singer",
+        "Ghost-Talker",
+        "Fire-Dancer",
+        "Wolf-Dreamer",
+        "Thunder-Drummer",
+        "Grave-Listener",
+        "Star-Counter",
+        "Rune-Cutter",
+        "Mud-Healer",
+        "Root-Brewer",
+        "Bone-Thrower",
+        "Crow-Tongue",
+        "Ember-Eye",
+        "Rain-Caller",
+        "Dream-Walker",
+        "Stone-Listener",
+        "Ancestor-Speaker"
+      ],
+      "the": [
+        "Far-Seeing",
+        "Wise",
+        "Old",
+        "Mad",
+        "Blind",
+        "Twice-Born",
+        "Ghost-Touched",
+        "Storm-Marked",
+        "Patient",
+        "Listening",
+        "Unafraid",
+        "Grey",
+        "Moon-Mad",
+        "Smoke-Wreathed",
+        "Bone-Hung",
+        "Spirit-Bound"
+      ],
+      "spirits": [
+        "Ancestors",
+        "Storm Spirits",
+        "Wolf Spirits",
+        "Old Bones",
+        "Dead Chiefs",
+        "Mountain",
+        "Burning Sky",
+        "Hungry Ghosts",
+        "Red Moon",
+        "Deep Earth",
+        "Four Winds",
+        "First Fire"
       ]
     }
   },

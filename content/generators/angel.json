@@ -28,13 +28,15 @@
         "name",
         "domain",
         "choir",
-        "epithet"
+        "epithet",
+        "dnd"
       ],
       "optionLabels": {
         "name": "Name only",
         "domain": "Angel of something (Ithuel, Angel of Thresholds)",
         "choir": "With a choir (Ithuel of the Thrones)",
-        "epithet": "With an epithet (Ithuel, the Sentinel of the Dawn)"
+        "epithet": "With an epithet (Ithuel, the Sentinel of the Dawn)",
+        "dnd": "D&D celestial (Ithuel, Deva of Small Mercies)"
       }
     },
     "letter": {
@@ -181,6 +183,26 @@
         "feminine": {
           "recipe": "template",
           "template": "[invented.feminine], [epithets]"
+        }
+      }
+    },
+    "dnd": {
+      "recipe": "switch",
+      "on": "kind",
+      "cases": {
+        "masculine": {
+          "recipe": "template",
+          "template": [
+            "[invented.masculine], [dnd.rank] of [domains]",
+            "[invented.masculine], [dnd.rank] of the [dnd.host]"
+          ]
+        },
+        "feminine": {
+          "recipe": "template",
+          "template": [
+            "[invented.feminine], [dnd.rank] of [domains]",
+            "[invented.feminine], [dnd.rank] of the [dnd.host]"
+          ]
         }
       }
     }
@@ -832,7 +854,32 @@
       "the Seeker of Lost Light",
       "the Listener to All Prayers",
       "the Final Guardian"
-    ]
+    ],
+    "dnd": {
+      "rank": [
+        "Deva",
+        "Planetar",
+        "Solar"
+      ],
+      "host": [
+        "First Heaven",
+        "Second Heaven",
+        "Third Heaven",
+        "Fourth Heaven",
+        "Fifth Heaven",
+        "Sixth Heaven",
+        "Seventh Heaven",
+        "Silver Throne",
+        "Morning Court",
+        "Golden Host",
+        "Bright Citadel",
+        "Dawn Choir",
+        "Shining Gate",
+        "Starlit Hall",
+        "White Tower",
+        "Radiant Legion"
+      ]
+    }
   },
   "article": {
     "hero": {
