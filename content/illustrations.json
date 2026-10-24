@@ -267,9 +267,9 @@
     "farm_animal": "sheep",
     "easter_bunny": "bunny-egg",
     "kawaii_food": "mochi",
-    "ghost_hunting_team": "candle",
-    "haunted_pub": "ghost",
-    "paranormal_podcast": "mic",
-    "local_legend": "bat"
+    "ghost_hunting_team": "torch",
+    "haunted_pub": "inn-sign",
+    "paranormal_podcast": "ghost-mic",
+    "local_legend": "standing-stone"
   }
 }
