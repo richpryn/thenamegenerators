@@ -3358,10 +3358,35 @@
     "intro": "Every village seems to have one: a hill you don't whistle on, a lane where a black dog walks beside you, a mere where something sings. The **Local Legend Generator** makes up brand-new legends in that old British style, each with a place, a creature or ghost, what happened and the warning locals still give. Choose spooky or family-friendly.",
     "sections": [
       {
+        "heading": "Three local legends to start with",
+        "content": "<p>All three came from the generator:</p><ul><li>\"In Hagg Wood, a great black dog the size of a calf is said to follow anyone walking alone and vanish at the bridge. Never speak to it.\" <em>Black dog, spooky.</em></li><li>\"On Black Hill above the village, a giant with a cloak of heather is said to pick up anyone who sleeps on the hill and set them down a mile away.\" <em>Giant, spooky.</em></li><li>\"Where Gill Beck runs under the road, a family of tiny fair folk is said to borrow spoons and bring them back polished.\" <em>Fair folk, family-friendly.</em></li></ul>"
+      },
+      {
         "heading": "Are these real legends?",
         "content": "<p>No. Every legend here is invented, and so are the places. They borrow the shape of real British folklore and some of its old customs, such as carrying iron or turning your coat inside out, but no story here is a real legend from a real village. They're for writing, games, ghost-story nights and Halloween.</p>"
+      },
+      {
+        "heading": "The real folklore behind them",
+        "content": "<p>The legends are made up, but the creatures are old British favourites:</p><ul><li><strong>Black dogs</strong> turn up all over Britain. Black Shuck of East Anglia is said to have burst into the church at Bungay during a storm in 1577, and Yorkshire has the barghest and the padfoot.</li><li><strong>Worms</strong> are the old English dragons, usually wingless. The Lambton Worm of County Durham is said to have coiled itself round a hill.</li><li><strong>Fair folk</strong> were treated politely and kept at a distance: iron was said to keep them off, and in the West Country, turning your coat inside out was the cure for being \"pixie-led\".</li><li><strong>Standing stones</strong> often have a story of people turned to stone, like the king and his knights at the Rollright Stones in Oxfordshire.</li><li><strong>Selkies</strong>, seals who could become people, belong to the sea stories of Orkney and Shetland.</li></ul><p>Choose <strong>Family-friendly</strong> for gentle legends that suit younger children, or <strong>Spooky</strong> for eerie ones with no gore.</p>"
+      },
+      {
+        "heading": "Using a legend",
+        "content": "<ul><li><strong>For a story,</strong> the warning at the end is your plot: what happens to the one who ignores it?</li><li><strong>For a game,</strong> give the legend to an innkeeper and let the players decide whether it's true.</li><li><strong>For a ghost-story night,</strong> read one out by candlelight and ask everyone to add the next part.</li></ul><p>Need a name for the ghost? Try the <a href=\"ghost-name-generator.html\">Ghost Name Generator</a>. For the inn where the story is told, there's the <a href=\"haunted-pub-name-generator.html\">Haunted Pub Name Generator</a>, and for something with a plot, the <a href=\"story-prompt-generator.html\">Story Prompt Generator</a>.</p><p>For more spooky names, see all the <a href=\"../categories/halloween-names.html\">Halloween name generators</a>.</p>"
       }
     ],
-    "faqs": []
+    "faqs": [
+      {
+        "question": "Are these real British legends?",
+        "answer": "No. Every legend and every place is invented, though the creatures and customs come from real British folklore."
+      },
+      {
+        "question": "What is a black dog in folklore?",
+        "answer": "A ghostly black dog said to haunt roads, churchyards and crossroads in many parts of Britain, known by local names like Black Shuck, the barghest and the padfoot."
+      },
+      {
+        "question": "Are the legends suitable for children?",
+        "answer": "Choose Family-friendly for gentle legends, like a fairy who teaches robins new songs. The spooky ones are eerie but never gory."
+      }
+    ]
   }
 }

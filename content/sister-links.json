@@ -104,6 +104,40 @@
       "generators": [
         "easter_bunny"
       ]
+    },
+    {
+      "id": "haunted-ghost-hunting",
+      "live": true,
+      "_note": "TODO: if Rich adds a ghost-hunt nights directory on hauntedhotels.uk, switch this url to it.",
+      "text": "Planning a real investigation? Our sister site {link} lists ghost tours in York, Edinburgh, London and Oxford.",
+      "linkText": "Haunted Hotels UK",
+      "url": "https://hauntedhotels.uk/ghost-tours?utm_source=thenamegenerators&utm_medium=referral&utm_campaign=ghost_hunting_team",
+      "generators": [
+        "ghost_hunting_team"
+      ]
+    },
+    {
+      "id": "haunted-podcast",
+      "live": true,
+      "text": "Looking for real haunted places to cover? Our sister site {link} has the ghost stories behind more than 80 haunted hotels.",
+      "linkText": "Haunted Hotels UK",
+      "url": "https://hauntedhotels.uk/?utm_source=thenamegenerators&utm_medium=referral&utm_campaign=paranormal_podcast",
+      "generators": [
+        "paranormal_podcast"
+      ]
+    },
+    {
+      "id": "haunted-pub",
+      "live": true,
+      "text": "Fancy a drink in a real haunted pub? Our sister site {link} has a guide to haunted pubs in London, York, Edinburgh and Oxford.",
+      "linkText": "Haunted Hotels UK",
+      "url": "https://hauntedhotels.uk/haunted-pubs?utm_source=thenamegenerators&utm_medium=referral&utm_campaign=haunted_pub",
+      "generators": [
+        "haunted_pub"
+      ]
     }
+  ],
+  "_todo": [
+    "local_legend: no box yet. If Rich launches the UK folklore map site, link its 'read real legends' pages here."
   ]
 }

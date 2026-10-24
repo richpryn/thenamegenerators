@@ -846,8 +846,34 @@
       "title": "🔦 Ghost Hunting Team Name Generator",
       "tagline": "Names for paranormal investigation groups, from serious research societies to the Cold Spot Collective."
     },
-    "intro": "Every group of torch-carrying, flask-packing investigators needs a name for the T-shirts. This **ghost hunting team name generator** makes names for paranormal teams and ghost hunting groups: serious research societies, spooky night watches, funny crews and teams named after a town or moor.",
-    "sections": [],
-    "faqs": []
+    "intro": "A good ghost hunting team name sounds either serious enough to be trusted with an old house at midnight, or honest about the fact that you'll scream at a creaking floorboard. Every group of torch-carrying, flask-packing investigators needs a name for the T-shirts. This **ghost hunting team name generator** makes names for paranormal teams and ghost hunting groups: serious research societies, spooky night watches, funny crews and teams named after a town or moor.",
+    "sections": [
+      {
+        "heading": "Eight good ghost hunting team names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Wessex Paranormal Investigations</strong>: a serious name with an old regional title.</li><li><strong>The Ellery Bureau of Apparition Studies</strong>: sounds like it has a filing cabinet full of cases.</li><li><strong>Residual Energy Monitoring Group</strong>: borrows the language of ghost hunters' kit.</li><li><strong>The Hushed Guard</strong>: spooky and short, good on a hoodie.</li><li><strong>Last Light Callers</strong>: a team that starts when everyone else goes home.</li><li><strong>The Faintly Terrified Crew</strong>: honest about how the night will go.</li><li><strong>Phantoms Anonymous</strong>: a joke that works on a podcast or a T-shirt.</li><li><strong>The Llandeilo Spectral Society</strong>: a local group named after its town.</li></ul>"
+      },
+      {
+        "heading": "How ghost hunting groups name themselves",
+        "content": "<p>Organised ghost hunting is older than you might think. The Society for Psychical Research was founded in London in 1882 to investigate hauntings scientifically, and in the 1930s Harry Price made Borley Rectory in Essex famous as \"the most haunted house in England\". Today's teams follow the same two traditions: sober research, and a good night out.</p><ul><li><strong>Investigative</strong> names use the words of research: Society, Bureau, Enquiry Group, Investigations. Good for a team that writes up its findings.</li><li><strong>Spooky</strong> names sound like a night watch: <em>Dark Hour Walkers</em>, <em>Midnight Searchers</em>.</li><li><strong>Funny</strong> names are for groups who bring biscuits: <em>The Boo Brigade</em>, <em>Fruitcake and Spooks</em>.</li><li><strong>Named for a place</strong> puts your town on the badge: <em>The Whitstable Midnight Watch</em>, <em>The Bamburgh Haunt Hunters</em>.</li></ul>"
+      },
+      {
+        "heading": "Before you print the T-shirts",
+        "content": "<ul><li><strong>Search the name.</strong> Local paranormal groups are common, so check nobody near you already uses it on Facebook or YouTube.</li><li><strong>Ask permission</strong> before investigating any building, and stay off private land.</li><li><strong>Think about the logo.</strong> A lantern, a key or a torch beam suits most names here.</li></ul><p>Starting a show about your investigations? Try the <a href=\"paranormal-podcast-name-generator.html\">Paranormal Podcast Name Generator</a>. For the ghosts you're after, there's the <a href=\"ghost-name-generator.html\">Ghost Name Generator</a>, and for the stories locals tell about them, the <a href=\"local-legend-generator.html\">Local Legend Generator</a>.</p><p>For more spooky names, see all the <a href=\"../categories/halloween-names.html\">Halloween name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good names for a ghost hunting team?",
+        "answer": "A serious name like Wessex Paranormal Investigations, a spooky one like The Hushed Guard, or a funny one like The Faintly Terrified Crew. Name it after your town for a local group."
+      },
+      {
+        "question": "What do ghost hunters call themselves?",
+        "answer": "Most groups call themselves paranormal investigators, and use names like Society, Research Group or Investigations. Others prefer something friendlier, like a Night Watch."
+      },
+      {
+        "question": "Can I name my team after my town?",
+        "answer": "Yes. Choose Named for a place for names like The Stamford Ghost Watch. Check first that there isn't already a group with the same name nearby."
+      }
+    ]
   }
 }

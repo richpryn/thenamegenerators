@@ -3056,7 +3056,33 @@
       "tagline": "Creaking old inns and their resident ghosts, from The Weeping Lantern to The Boo and Anchor."
     },
     "intro": "Every old inn worth its sign has a ghost story: a coachman who still waits in the yard, a fiddler heard after closing time. This **haunted pub name generator** makes spooky, old-English pub names in classic, gothic and comic styles, and can give each one its own resident ghost.",
-    "sections": [],
-    "faqs": []
+    "sections": [
+      {
+        "heading": "Eight good haunted pub names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>The Huntsman's Lament</strong>: a classic sign with a sad story behind it.</li><li><strong>The Sleepless Smuggler</strong>: haunted by a smuggler who hides lace and tea under the floorboards.</li><li><strong>The Watchman's Rest</strong>: for a ghost who never finished his shift.</li><li><strong>The Raven and Scythe</strong>: a gothic pair, like a real \"and\" pub name.</li><li><strong>The Spider and Key</strong>: a gothic sign with a mystery in it.</li><li><strong>The Grave Mistake</strong>: a comic name, haunted by a boggart who hides the darts.</li><li><strong>The Spook and Umbrella</strong>: a cheerful pun on a pub sign.</li><li><strong>The Fright and Cushion</strong>: haunted by a landlord who rattles chains and then apologises.</li></ul>"
+      },
+      {
+        "heading": "Why so many pubs have a ghost",
+        "content": "<p>Old inns had everything a ghost story needs: centuries of travellers, coaching yards, cellars and, on the coast, smugglers. Jamaica Inn on Bodmin Moor gave its name to Daphne du Maurier's 1936 smuggling novel and has had a ghostly reputation ever since.</p><ul><li><strong>Classic</strong> names follow real pub patterns, with a figure from the inn's past: a pedlar, a landlady, a fiddler.</li><li><strong>Gothic</strong> names use the old \"A and B\" sign shape with darker things: <em>The Rook and Coffin</em>.</li><li><strong>Comic</strong> names are ghost puns for a Halloween party: <em>The Overworked Spectre</em>.</li></ul><p>Choose <strong>With its ghost</strong> and every pub comes with a resident spirit and the odd thing it does.</p>"
+      },
+      {
+        "heading": "Using a haunted pub",
+        "content": "<ul><li><strong>In a story or a game,</strong> the ghost is a ready-made rumour: the barkeep can tell it, and the players can investigate.</li><li><strong>For a Halloween party,</strong> name the room or the bar after one and print a sign.</li><li><strong>For a real pub or event,</strong> search the name first, as many classic pub names are already in use.</li></ul><p>For an ordinary inn, try the <a href=\"tavern-name-generator.html\">Tavern Name Generator</a>. For the ghost itself, there's the <a href=\"ghost-name-generator.html\">Ghost Name Generator</a>, and for the house up the road, the <a href=\"haunted-house-name-generator.html\">Haunted House Name Generator</a>.</p><p>For more spooky names, see all the <a href=\"../categories/halloween-names.html\">Halloween name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good haunted pub names?",
+        "answer": "Old-English pub names with a ghost in them: The Huntsman's Lament, The Raven and Scythe, The Sleepless Smuggler. For a party, comic names like The Spook and Umbrella."
+      },
+      {
+        "question": "Why are so many old pubs said to be haunted?",
+        "answer": "They're old, busy places full of travellers' stories, often with cellars, coaching yards or smuggling history, which is just what a ghost story needs."
+      },
+      {
+        "question": "Can I use these names for a D&D tavern?",
+        "answer": "Yes. Choose With its ghost and you get a rumour for your players at the same time."
+      }
+    ]
   }
 }
