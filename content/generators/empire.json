@@ -352,9 +352,35 @@
       "title": "🏛️ Empire Name Generator",
       "tagline": "Marble empires, holy thrones, steppe khanates and star empires, from the Calvarine Imperium to the Empire of the Twelve Suns."
     },
-    "intro": "This **empire name generator** builds great empires for fantasy worlds, D&D campaigns, strategy games and sci-fi: Roman-style imperiums, holy theocracies, eastern dynasties, steppe khanates, dread empires and galactic hegemonies. Pick a short description and each one comes with a hint of its history.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good empire names sound old, large and a little arrogant, usually a people's name with a grand title: <em>The Pellantine Empire</em>, <em>The Great Khanate of Uljai</em>, <em>The Third Nyrari Empire</em>. This **empire name generator** builds great empires for fantasy worlds, D&amp;D campaigns, strategy games and sci-fi: Roman-style imperiums, holy theocracies, eastern dynasties, steppe khanates, dread empires and galactic hegemonies. Pick a short description and each one comes with a hint of its history.",
+    "sections": [
+      {
+        "heading": "Eight good empire names",
+        "content": "<p>All eight came from the generator, across its six styles:</p><ul><li><strong>The Pellantine Empire</strong>: a Roman-sounding name with the classic -ine ending.</li><li><strong>The Varrian Principate, whose senate still pretends to rule</strong>: a Roman-style empire with its politics in the description.</li><li><strong>The Radiant Throne of Luminara</strong>: a holy empire named after light.</li><li><strong>The Vermilion Willow Dynasty</strong>: an eastern dynasty named for a colour and a tree.</li><li><strong>The Great Khanate of Uljai</strong>: a steppe empire ruled by a great khan.</li><li><strong>The Dread Empire of Nhexath</strong>: hard, hissing sounds for the enemy of every story.</li><li><strong>The Empire of the Eleven Suns</strong>: a star empire named after its territory.</li><li><strong>The Third Nyrari Empire</strong>: a number tells you two earlier empires fell.</li></ul>"
+      },
+      {
+        "heading": "How empires name themselves",
+        "content": "<p>The word comes from the Latin <em>imperium</em>, the power to command. Empires tend to name themselves after their founding people or city, then add titles to make the claim bigger. The Byzantine Empire called itself the Roman Empire to the end, and the Holy Roman Empire lasted so long under that name that Voltaire joked it was neither holy, nor Roman, nor an empire.</p><ul><li><strong>Roman-style</strong> names use Latin endings and titles: <em>Imperium Aquilae</em>, <em>The Eagle Throne of Tertessa</em>, the Principate and the Triumvirate.</li><li><strong>Holy</strong> empires are blessed, sacred and radiant, ruled by priests or crowned by them.</li><li><strong>Eastern</strong> empires are named like dynasties, after a colour, a creature or an object: <em>The Crimson Bell Empire</em>.</li><li><strong>Steppe horde</strong> names use khanate and khaganate, the realms of a khan or a great khan. The word <em>horde</em> comes from a Turkic word for a camp.</li><li><strong>Dark</strong> empires are dread, undying or ashen.</li><li><strong>Space</strong> empires borrow political words, hegemony, suzerainty, protectorate, and number themselves like dynasties.</li></ul>"
+      },
+      {
+        "heading": "Building an empire",
+        "content": "<ul><li><strong>Give it a past.</strong> Choose <strong>With a description</strong> for a line of history, like <em>The Oztet Horde, whose sons divided the empire between them</em>.</li><li><strong>Name the conquered too.</strong> An empire is more interesting when its provinces still remember being kingdoms.</li><li><strong>Number it.</strong> A Second or Third Empire suggests rises and falls your players can find the ruins of.</li></ul><p>For the realms it swallowed, try the <a href=\"kingdom-name-generator.html\">Kingdom Name Generator</a> and the <a href=\"fantasy-country-name-generator.html\">Fantasy Country Name Generator</a>. For its capital, there's the <a href=\"fantasy-city-name-generator.html\">Fantasy City Name Generator</a>, and for its fortresses, the <a href=\"castle-name-generator.html\">Castle Name Generator</a>. Building a star empire? Name its worlds with the <a href=\"planet-name-generator.html\">Planet Name Generator</a> and its fleet with the <a href=\"spaceship-name-generator.html\">Spaceship Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good fantasy empire names?",
+        "answer": "A people's name with a grand title: The Pellantine Empire, The Radiant Throne of Luminara, The Great Khanate of Uljai or The Dread Empire of Nhexath. Pick a style to match the empire's culture."
+      },
+      {
+        "question": "What are good names for a space empire?",
+        "answer": "Names that sound political and permanent: The Third Nyrari Empire, The Zorenti Suzerainty, The Empire of the Eleven Suns. Choose the Space style."
+      },
+      {
+        "question": "What's a khanate?",
+        "answer": "A realm ruled by a khan, the title of rulers on the Eurasian steppe. A khaganate is ruled by a khagan, a great khan over other khans."
+      }
+    ]
   },
   "data": {
     "base": {

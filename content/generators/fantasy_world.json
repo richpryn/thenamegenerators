@@ -1871,8 +1871,34 @@
       "title": "🌍 Fantasy World Name Generator",
       "tagline": "Names for whole worlds and the realms within them."
     },
-    "intro": "The **Fantasy World Name Generator** names the worlds and realms of your D&D campaign, novel or game, from shining high-fantasy worlds to dying dark ones, mythic realms of the gods and hidden fey kingdoms.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good fantasy world names are short and sound like the story: <em>Seraneth</em> for bright high fantasy, <em>Mournhollow</em> for a dying world, <em>Worldloom</em> for a realm of the gods. The **Fantasy World Name Generator** names the worlds and realms of your D&amp;D campaign, novel or game, from shining high-fantasy worlds to dying dark ones, mythic realms of the gods and hidden fey kingdoms.",
+    "sections": [
+      {
+        "heading": "Eight good fantasy world names",
+        "content": "<p>All eight came from the generator, across its four styles:</p><ul><li><strong>Seraneth</strong>: a flowing high-fantasy name, easy to say every session.</li><li><strong>Ildathera, the Shining World</strong>: a name with a title, for an epic.</li><li><strong>Isaevael</strong>: \"the valley of wisdom\" in the generator's old tongue.</li><li><strong>Mournhollow</strong>: a dark world named for grief.</li><li><strong>Blightdeep, the Sunless World</strong>: a dark fantasy setting in two words and a title.</li><li><strong>Fateloom</strong>: \"the loom of destiny\", for a world shaped by the gods.</li><li><strong>Brackenwild</strong>: a fey realm of hedgerows and wild places.</li><li><strong>The Twilight Kingdom of Nettlering</strong>: a fairy court with a sting in its name.</li></ul>"
+      },
+      {
+        "heading": "How fantasy worlds are named",
+        "content": "<p>Many fantasy worlds are named for what they mean to the people who live there. Norse myth has Midgard, the \"middle enclosure\" where people live, joined to the other worlds by the tree Yggdrasil. Tolkien's Middle-earth comes from the Old English <em>middangeard</em>, the same idea, and his whole world is <em>Arda</em>. D&amp;D's settings have their own: Toril is the world of the Forgotten Realms, and Krynn the world of Dragonlance.</p><ul><li><strong>High fantasy</strong> names are soft and bright, with endings like <em>-eth</em>, <em>-aris</em> and <em>-vael</em>.</li><li><strong>Dark fantasy</strong> names are English compounds of grief and decay: <em>Dreadbarrow</em>, <em>Rustfall</em>.</li><li><strong>Mythic</strong> names are big ideas made into places: <em>Stormanvil</em>, <em>Heavenhalls</em>.</li><li><strong>Fey</strong> names come from the hedgerow: hawthorn, bramble and thistle.</li></ul><p>Choose <strong>Title</strong> for a full realm name, or <strong>With meaning</strong> to see what each one means.</p>"
+      },
+      {
+        "heading": "Naming your world",
+        "content": "<ul><li><strong>Decide who's speaking.</strong> The people of a world might call it \"the earth\" or \"the land\"; scholars and gods might have a grander name.</li><li><strong>Keep it short.</strong> You'll say it a lot, so two or three syllables work best.</li><li><strong>Name the planes too.</strong> A world with a fey realm next door needs both names: try a high-fantasy world and a fey court.</li></ul><p>Then fill it in: the <a href=\"continent-name-generator.html\">Continent Name Generator</a> for its landmasses, the <a href=\"island-name-generator.html\">Island Name Generator</a> for its seas, and the <a href=\"kingdom-name-generator.html\">Kingdom</a> and <a href=\"village-name-generator.html\">Village</a> name generators for the people. For a world in space, try the <a href=\"planet-name-generator.html\">Planet Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good fantasy world names?",
+        "answer": "Short names that suit the tone: Seraneth or Ildathera for high fantasy, Mournhollow for dark fantasy, Fateloom for a world of the gods, Brackenwild for a fey realm."
+      },
+      {
+        "question": "How do you name a fantasy world?",
+        "answer": "Think about what the people living there would call it, often just \"the world\" or \"the middle land\", as with Midgard and Middle-earth, then make a name that sounds like your story."
+      },
+      {
+        "question": "Can I use these names for my D&D campaign?",
+        "answer": "Yes, they're made up and free to use. If you're publishing, search the name first in case another book or game already uses it."
+      }
+    ]
   }
 }

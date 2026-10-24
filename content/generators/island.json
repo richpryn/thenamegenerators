@@ -1386,8 +1386,34 @@
       "title": "🏝️ Island Name Generator",
       "tagline": "Fantasy isles, tropical cays, pirate hideouts and sweet little islands for your cosy game."
     },
-    "intro": "Every map needs a few islands, and every island needs a name worth sailing to. This **island name generator** gives you fantasy isles for your D&D campaign, tropical cays, pirate hideouts, eerie rocks lost in the fog and cute names for the island in your cosy life-sim game, with a short description if you want a story to go with it.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good island names say what the island is like before anyone lands: a soft fantasy name like <em>Isle of Vaelis</em>, a tropical cay, a pirate's reef or a rock nobody visits twice. Every map needs a few islands, and this **island name generator** gives you fantasy isles for your D&D campaign, tropical cays, pirate hideouts, eerie rocks lost in the fog and cute names for the island in your cosy life-sim game, with a short description if you want a story to go with it.",
+    "sections": [
+      {
+        "heading": "Eight good island names",
+        "content": "<p>All eight came from the generator, across its five styles:</p><ul><li><strong>Isle of Saldrenne</strong>: a flowing fantasy name with the old \"Isle of\" in front.</li><li><strong>Wizardsey</strong>: built like a real British island name, with the Norse <em>-ey</em> ending.</li><li><strong>Cowrie Atoll</strong>: a tropical ring of coral named after a shell.</li><li><strong>Gloaming Skerry</strong>: a skerry is a small rocky island, and gloaming is Scots for dusk.</li><li><strong>Lantern Rock, that no two maps place in the same spot</strong>: a mysterious island with its own legend.</li><li><strong>Wrecker's Reef</strong>: a pirate name with a hint of what happens to ships there.</li><li><strong>Captain Calloway's Key</strong>: a pirate hideout named after the captain who found it.</li><li><strong>Scone Isle</strong>: a cosy island for a life-sim game.</li></ul>"
+      },
+      {
+        "heading": "How islands get their names",
+        "content": "<p>Real island names are full of old words for \"island\", which is why so many end the same way:</p><ul><li><strong>-ey and -ay</strong> come from the Old Norse <em>ey</em>, island. Anglesey, Orkney and Lundy all have it, and Lundy means \"puffin island\".</li><li><strong>Holm</strong> is a small island, as in Steep Holm and Flat Holm in the Bristol Channel.</li><li><strong>Ynys</strong> is Welsh for island: Anglesey is Ynys Môn in Welsh.</li><li><strong>Skerry</strong>, from the Norse <em>sker</em>, is a rocky islet too small to live on.</li><li><strong>Cay</strong> and <strong>key</strong> come from the Spanish <em>cayo</em>, a small, low island, which is why Florida has the Keys.</li><li><strong>Atoll</strong> is a ring of coral round a lagoon. The word comes from Dhivehi, the language of the Maldives.</li></ul><p>The generator borrows these: <strong>fantasy</strong> names use \"Isle of\" and the Norse ending, <strong>tropical</strong> names use cays and atolls, <strong>mysterious</strong> names use skerries and rocks, <strong>pirate</strong> names use reefs, keys and captains, and <strong>cosy</strong> names are anything you could eat with a cup of tea. Choose <strong>With a description</strong> for a line of story, like <em>Isle of Vintrelle, where storm-mages train on the cliffs each winter</em>.</p>"
+      },
+      {
+        "heading": "Putting islands on your map",
+        "content": "<ul><li><strong>Name a chain together.</strong> Islands near each other often share a name, like \"the Runic Isles\", with each island named separately.</li><li><strong>Let sailors name the dangerous ones.</strong> A rock that wrecks ships gets a blunt name, like Weeping Rock.</li><li><strong>Give each island one thing it's known for,</strong> which is what the description format is for.</li></ul><p>For the land beyond the sea, try the <a href=\"continent-name-generator.html\">Continent Name Generator</a>, and for the whole world, the <a href=\"world-name-generator.html\">World Name Generator</a>. If pirates are involved, the <a href=\"pirate-name-generator.html\">Pirate Name Generator</a> names the crew.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good fantasy island names?",
+        "answer": "Names with an old word for island in them, like Wizardsey (with the Norse -ey ending) or Isle of Saldrenne. Choose Fantasy, and add a description for a line of story."
+      },
+      {
+        "question": "What's the difference between a cay, a key and an atoll?",
+        "answer": "A cay or key is a small, low island, often of sand or coral; both words come from the Spanish cayo. An atoll is a ring of coral round a lagoon."
+      },
+      {
+        "question": "Can I use these names in a game or novel?",
+        "answer": "Yes, they're free to use. A few may match tiny real islands somewhere, so search a name first if you're publishing."
+      }
+    ]
   }
 }

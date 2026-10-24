@@ -2482,8 +2482,34 @@
       "title": "🗺️ Continent Name Generator",
       "tagline": "Names for the great landmasses of your world, and what they mean."
     },
-    "intro": "The **Continent Name Generator** gives you names for the vast landmasses of a fantasy map, from Greek and Old Norse compounds with real meanings to elven, dark and plain-English names for your D&D campaign or novel.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good continent names are big and simple, usually a description in an old language: <em>Kaldmark</em> is Old Norse for \"cold land\" and <em>Rhodogaea</em> Greek for \"land of roses\". The **Continent Name Generator** gives you names for the vast landmasses of a fantasy map, from Greek and Old Norse compounds with real meanings to elven, dark and plain-English names for your D&amp;D campaign or novel.",
+    "sections": [
+      {
+        "heading": "Eight good continent names",
+        "content": "<p>All eight came from the generator, across its five styles:</p><ul><li><strong>Rhodogaea</strong>: Greek for \"land of roses\", gentle enough for a peaceful continent.</li><li><strong>Terra Abscondita</strong>: Latin for \"hidden land\", for somewhere off the edge of the old maps.</li><li><strong>Drakochora</strong>: Greek for \"country of dragons\", which tells explorers what to expect.</li><li><strong>Thursland</strong>: Old Norse for \"land of giants\".</li><li><strong>Hvitdal</strong>: Old Norse for \"white valley\", for a frozen north.</li><li><strong>Caelandris</strong>: an elven name meaning \"the high shore\".</li><li><strong>Vhelgoth</strong>: a dark name for the continent the villains come from.</li><li><strong>The Untamed Expanse, claimed by no crown and mapped by few</strong>: a plain-English name with a hook for explorers.</li></ul>"
+      },
+      {
+        "heading": "Where continent names come from",
+        "content": "<p>Real continent names are a mix of myth, Roman provinces and mapmakers. Europe shares its name with Europa of Greek myth. Africa was the name of a Roman province. America comes from the explorer Amerigo Vespucci, whose first name a German mapmaker put on a world map in 1507. Australia is from the Latin <em>australis</em>, \"southern\", and Antarctica means \"opposite the Arctic\", which itself comes from the Greek for \"bear\", after the Great Bear in the northern sky.</p><ul><li><strong>Greek and Latin</strong> names join real words: <em>oros</em> (mountain), <em>gaia</em> (earth), <em>chora</em> (country), <em>nesos</em> (island), <em>terra</em> (land).</li><li><strong>Old Norse</strong> names use <em>-land</em>, <em>-heim</em> (home), <em>-mark</em> (borderland) and <em>-fjall</em> (mountain).</li><li><strong>Elven</strong> and <strong>dark</strong> names are invented, with meanings in an imagined tongue.</li><li><strong>Descriptive</strong> names say it in English: <em>The Sundered Reach</em>, <em>The Burning Barrens</em>.</li></ul><p>Choose <strong>With meaning</strong> to see what each name means, which helps you decide what the land should look like.</p>"
+      },
+      {
+        "heading": "Naming a world map",
+        "content": "<ul><li><strong>Name continents from one culture's point of view.</strong> The people who made the map call their own land \"home\" and the far one \"the hidden land\".</li><li><strong>Mix styles on purpose.</strong> A Latin name in the south and Old Norse in the north shows that different peoples did the naming.</li><li><strong>Leave somewhere unmapped.</strong> A continent \"claimed by no crown\" is where the campaign can go next.</li></ul><p>Name the whole world with the <a href=\"world-name-generator.html\">Fantasy World Name Generator</a>, the smaller lands with the <a href=\"island-name-generator.html\">Island Name Generator</a>, and the countries on each continent with the <a href=\"kingdom-name-generator.html\">Kingdom</a> and <a href=\"fantasy-country-name-generator.html\">Fantasy Country</a> name generators.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good fantasy continent names?",
+        "answer": "Simple names with a meaning behind them: Rhodogaea (Greek, \"land of roses\"), Thursland (Old Norse, \"land of giants\"), Terra Abscondita (Latin, \"hidden land\"), or a plain one like The Sundered Reach."
+      },
+      {
+        "question": "How did real continents get their names?",
+        "answer": "In different ways: Europe shares a name with Europa of Greek myth, Africa was a Roman province, America is named after Amerigo Vespucci, and Australia comes from the Latin for southern."
+      },
+      {
+        "question": "Are the meanings real?",
+        "answer": "For the Greek, Latin and Old Norse styles, yes: the names are built from real words. The elven and dark meanings are invented to go with invented languages."
+      }
+    ]
   }
 }
