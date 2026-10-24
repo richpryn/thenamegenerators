@@ -1501,8 +1501,34 @@
       "title": "🐑 Farm Animal Name Generator",
       "tagline": "Cute, funny and classic names for every animal in the farmyard."
     },
-    "intro": "Naming a pet lamb, a new calf, a trio of hens or a cheeky goat? This **farm animal name generator** has cute, funny and classic farmyard names for sheep, cows, pigs, chickens, ponies, goats and ducks, from Daisy and Button to Mootilda and Sir Clucksalot.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good farm animal names suit the animal and say something about its character: a soft name like Thimble for a lamb, a pun like Granny Mooington for a cow, a sturdy old name like Gertrude for a pig. Naming a pet lamb, a new calf, a trio of hens or a cheeky goat? This **farm animal name generator** has cute, funny and classic farmyard names for sheep, cows, pigs, chickens, ponies, goats and ducks, from Daisy and Button to Mootilda and Sir Clucksalot.",
+    "sections": [
+      {
+        "heading": "Eight good farm animal names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Thimble</strong>: a cute name for a small lamb.</li><li><strong>Baa-Bean</strong>: a lamb name with the noise built in.</li><li><strong>Granny Mooington</strong>: a funny cow name with a title.</li><li><strong>Henelope</strong>: a hen pun on Penelope.</li><li><strong>Cluckingham Palace</strong>: for a hen house, or a very grand chicken.</li><li><strong>Gertrude</strong>: a classic, solid name for a pig.</li><li><strong>Little Bleat</strong>: a cute name for a kid goat.</li><li><strong>Baroness Honkington</strong>: a goose with airs and graces.</li></ul>"
+      },
+      {
+        "heading": "Naming each kind of animal",
+        "content": "<p>Pick an animal and the names follow its noises and habits:</p><ul><li><strong>Lambs and sheep:</strong> soft, small names, and baa puns. A lamb raised by hand is often called a pet lamb or, in parts of England, a cade lamb.</li><li><strong>Cows and calves:</strong> moo puns like <em>Moorgaret</em> and <em>Moonica</em>, or a grand title like <em>Prince Cudsworth</em>, after the cud cows chew.</li><li><strong>Pigs and piglets:</strong> classic names like <em>Opal</em> and <em>Huxley</em>, or wildflower names like <em>Speedwell</em> and <em>Meadowsweet</em>.</li><li><strong>Chickens:</strong> cluck puns for hens and grand titles for a cockerel: <em>Sir Clucksalot</em>, <em>Lord Crowington</em>.</li><li><strong>Ponies, horses and donkeys:</strong> sensible names that work on a stable door, like <em>Annabel</em> or <em>Basil</em>.</li><li><strong>Goats:</strong> a young goat is a kid, so the cute goat names are extra small: <em>Pea</em>, <em>Wiggle</em>.</li><li><strong>Ducks and geese:</strong> waddles and honks: <em>Lorraine Waddleton</em>, <em>Countess Honksalot</em>.</li></ul>"
+      },
+      {
+        "heading": "Names for a flock, a herd or a toy farm",
+        "content": "<ul><li><strong>Naming several at once?</strong> Pick a theme, like flowers for the hens or grand titles for the geese, so they sound like a family.</li><li><strong>On a working farm,</strong> short names are easier to call across a field.</li><li><strong>For a toy farm or a story,</strong> the funny names give each animal a personality before the game starts.</li></ul><p>For Easter lambs and chicks, try the <a href=\"easter-bunny-name-generator.html\">Easter Bunny Name Generator</a>. For other pets, there's the <a href=\"black-cat-name-generator.html\">Black Cat</a>, <a href=\"christmas-pet-name-generator.html\">Christmas Pet</a> and <a href=\"pet-dinosaur-name-generator.html\">Pet Dinosaur</a> name generators.</p><p>For more animals, real and imagined, see all the <a href=\"../categories/animals-names.html\">animal name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are cute names for farm animals?",
+        "answer": "Small, soft names like Thimble, Button, Teacup or Little Bleat. Choose Cute and the animal you're naming."
+      },
+      {
+        "question": "What are funny names for chickens?",
+        "answer": "Cluck puns and grand titles, like Sir Clucksalot, Henelope, Duchess Scratchington or Cluckingham Palace for the hen house. Choose Chicken and Funny."
+      },
+      {
+        "question": "What's a baby goat called?",
+        "answer": "A kid. A baby cow is a calf, a baby pig a piglet, a young duck a duckling and a young goose a gosling."
+      }
+    ]
   }
 }
