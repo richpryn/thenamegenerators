@@ -568,6 +568,10 @@ function generateGeneratorPage(generator, category, site) {
   const heroTitle = layout.stripEmoji(generator.article.hero.title) || generator.title;
   const escHeroTagline = escapeHtml(generator.article.hero.tagline);
   const escNoun = escapeHtml(pluralNoun(generator));
+  // What one result is called on the buttons and tips: "name" unless the
+  // generator says otherwise ("item": "prompt").
+  const item = generator.item || 'name';
+  const Items = item.charAt(0).toUpperCase() + item.slice(1) + 's';
 
   // Long names (Roman, spaceships, taverns...) read better one per row on phones
   const exampleList = examples.flatMap(g => g.names);
@@ -576,7 +580,7 @@ function generateGeneratorPage(generator, category, site) {
   const examplesHTML = `
             <section class="section example-names">
                 <h2>Example ${escNoun}</h2>
-                <p class="sub">A few names this generator came up with. Tap one to copy it, or press "Generate Names" above for more.</p>
+                <p class="sub">A few ${item}s this generator came up with. Tap one to copy it, or press "Generate ${Items}" above for more.</p>
                 <div class="ex">
                 ${examples.map(group => `<div class="exbox hd">
                     ${group.label ? `<h3>${escapeHtml(group.label)}</h3>` : ''}
@@ -643,16 +647,16 @@ function generateGeneratorPage(generator, category, site) {
 
             <section class="sheet hd simple-generator" id="generator" aria-label="${escGenTitle}">
                 ${filterHTML}
-                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate ${Items}</button>
                 <div id="results" class="results-area" data-long="${longNames ? 'true' : 'false'}">
-                    <p class="results-empty">Press Generate Names for 8 ${escNoun.toLowerCase()}.</p>
+                    <p class="results-empty">Press Generate ${Items} for 8 ${escNoun.toLowerCase()}.</p>
                 </div>
                 <div class="after">
                     <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
                     <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
                 </div>
                 <div class="foot">
-                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <p class="sl" id="shortlist-line">Tap a ${item} to copy it, or the bookmark to keep it.</p>
                     <div class="acts">
                         <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
                         <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
