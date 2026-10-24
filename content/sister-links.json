@@ -54,6 +54,56 @@
         "dinosaur",
         "pet_dinosaur"
       ]
+    },
+    {
+      "id": "party-christmas",
+      "live": true,
+      "text": "Planning a party? Free printables from our sister site, {link}.",
+      "linkText": "Bunting & Balloons",
+      "url": "https://buntingandballoons.co.uk/christmas-party/?utm_source=thenamegenerators&utm_medium=referral&utm_campaign=party-printables",
+      "generators": [
+        "christmas_team"
+      ]
+    },
+    {
+      "id": "party-gaming",
+      "live": true,
+      "text": "Planning a party? Free printables from our sister site, {link}.",
+      "linkText": "Bunting & Balloons",
+      "url": "https://buntingandballoons.co.uk/game-on-party/?utm_source=thenamegenerators&utm_medium=referral&utm_campaign=party-printables",
+      "generators": [
+        "kids_gamertag"
+      ]
+    },
+    {
+      "id": "party-farm",
+      "live": true,
+      "text": "Planning a party? Free printables from our sister site, {link}.",
+      "linkText": "Bunting & Balloons",
+      "url": "https://buntingandballoons.co.uk/farm-party/?utm_source=thenamegenerators&utm_medium=referral&utm_campaign=party-printables",
+      "generators": [
+        "farm_animal"
+      ]
+    },
+    {
+      "id": "party-kawaii",
+      "live": true,
+      "text": "Planning a party? Free printables from our sister site, {link}.",
+      "linkText": "Bunting & Balloons",
+      "url": "https://buntingandballoons.co.uk/kawaii-party/?utm_source=thenamegenerators&utm_medium=referral&utm_campaign=party-printables",
+      "generators": [
+        "kawaii_food"
+      ]
+    },
+    {
+      "id": "party-easter",
+      "live": true,
+      "text": "Planning a party? Free printables from our sister site, {link}.",
+      "linkText": "Bunting & Balloons",
+      "url": "https://buntingandballoons.co.uk/easter-party/?utm_source=thenamegenerators&utm_medium=referral&utm_campaign=party-printables",
+      "generators": [
+        "easter_bunny"
+      ]
     }
   ]
 }
