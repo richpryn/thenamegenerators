@@ -6038,8 +6038,34 @@
       "title": "🦖 Dinosaur Name Generator",
       "tagline": "Name a dinosaur nobody has ever dug up."
     },
-    "intro": "The **Dinosaur Name Generator** makes up new dinosaurs the way scientists do, from Greek and Latin word parts, and tells you what each name means. Pick realistic, fantasy or funny, or make a dinosaur from your own first name.",
-    "sections": [],
-    "faqs": []
+    "intro": "A good dinosaur name is built from Greek and Latin word parts that describe the animal: <em>Velociraptor</em> means \"swift thief\" and <em>Triceratops</em> \"three-horned face\". The **Dinosaur Name Generator** makes up new dinosaurs the same way and tells you what each name means. Pick realistic, fantasy or funny, or make a dinosaur from your own first name.",
+    "sections": [
+      {
+        "heading": "Eight good dinosaur names",
+        "content": "<p>All eight came from the generator, two from each kind:</p><ul><li><strong>Nyctovenator</strong>: \"night hunter\", a predator that comes out after dark.</li><li><strong>Macronychus</strong>: \"long claw\", short and believable, like a real genus.</li><li><strong>Titanodrakon</strong>: \"titan dragon\", for a fantasy world where dragons and dinosaurs meet.</li><li><strong>Sapphirodrakon custos</strong>: a jewel-coloured dragon with a Latin species name meaning \"guardian\".</li><li><strong>Biscuitodon</strong>: \"biscuit-toothed\", a funny name built the proper way.</li><li><strong>Hiccup Rex</strong>: \"the hiccup king\", a joke on Tyrannosaurus rex.</li><li><strong>Samosuchus viridis</strong>: \"Sam's green crocodile\", made from a first name.</li><li><strong>Priyaraptor tonans</strong>: Priya's thundering thief.</li></ul>"
+      },
+      {
+        "heading": "How dinosaurs get their names",
+        "content": "<p>The word <em>dinosaur</em> was coined by the anatomist Richard Owen in 1842, from the Greek <em>deinos</em>, \"terrible\", and <em>sauros</em>, \"lizard\". Every dinosaur since has been named from word parts like these, most of them Greek or Latin:</p><ul><li><strong>-saurus</strong>, lizard: <em>Stegosaurus</em>, the \"roof lizard\".</li><li><strong>-raptor</strong>, thief, and <strong>-venator</strong>, hunter, for predators.</li><li><strong>-onychus</strong>, claw: <em>Deinonychus</em> is the \"terrible claw\".</li><li><strong>-mimus</strong>, mimic: <em>Gallimimus</em>, the \"chicken mimic\", was named for looking like a giant bird.</li><li><strong>-tops</strong>, face, and <strong>-ceratops</strong>, horned face: <em>Triceratops</em>.</li><li><strong>-titan</strong>, for the giants: <em>Patagotitan</em>, one of the biggest sauropods ever found, is the titan of Patagonia.</li></ul><p>A full scientific name has two parts. The genus comes first, with a capital letter, and the species second, in lower case, both in italics: <em>Tyrannosaurus rex</em>, \"tyrant lizard king\". Species names often describe the animal or honour a person or place, and scientists can have a sense of humour. <em>Masiakasaurus knopfleri</em> is named after Mark Knopfler of Dire Straits, whose music was playing while the team dug it up.</p><p>One thing the generator never calls a dinosaur: a <em>Pterodactyl</em>. Pterosaurs flew alongside the dinosaurs but weren't dinosaurs themselves. Here <em>-dactyl</em>, \"finger\", is only used in the funny names.</p>"
+      },
+      {
+        "heading": "Using your dinosaur",
+        "content": "<ul><li><strong>Choose the format.</strong> <em>With its meaning</em> is best for a story or a school project, <em>Full species</em> sounds like a museum label, and <em>Name only</em> is quickest.</li><li><strong>Make one from your name.</strong> Type a first name and choose <em>From my name</em>. It's a good way to get children interested in how scientific names work.</li><li><strong>Draw it.</strong> The meaning tells you what to draw: a \"frost-footed lizard\" or a \"rose-crested titan\" practically designs itself.</li></ul><p>For other creatures, try the <a href=\"dragon-name-generator.html\">Dragon Name Generator</a> or the <a href=\"monster-name-generator.html\">Monster Name Generator</a>.</p><p>For more animals, real and imagined, see all the <a href=\"../categories/animals-names.html\">animal name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do you make up a dinosaur name?",
+        "answer": "Join Greek or Latin word parts that describe it: a feature (claw, crest, horn) plus an ending like -saurus (lizard), -raptor (thief) or -titan (giant). Nyctovenator, for example, is \"night hunter\". The generator does this for you and gives the meaning."
+      },
+      {
+        "question": "Can I make a dinosaur from my name?",
+        "answer": "Yes. Choose From my name and type your first name. Sam becomes Samosuchus viridis, Sam's green crocodile, or another species built on your name."
+      },
+      {
+        "question": "Are these real dinosaurs?",
+        "answer": "No. They're made up in the way real dinosaurs are named, so they sound right, but you won't find them in a museum. A real name has to be published by scientists in a research paper."
+      }
+    ]
   }
 }

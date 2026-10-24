@@ -8,9 +8,31 @@
       "linkText": "Acorn & Ink",
       "url": "https://acornandink.co.uk/story-writing/?utm_source=thenamegenerators&utm_medium=referral&utm_campaign=story-writing",
       "generators": [
-        "fairy", "fairy_tale", "fairy_town", "dragon", "unicorn", "mermaid", "pirate", "knight",
-        "wizard", "funny_wizard", "giant", "robot", "monster", "superhero", "sidekick", "superhero_team",
-        "phoenix", "pegasus", "griffin", "spaceship", "snowman", "reindeer", "christmas_elf", "elf_on_the_shelf"
+        "fairy",
+        "fairy_tale",
+        "fairy_town",
+        "dragon",
+        "unicorn",
+        "mermaid",
+        "pirate",
+        "knight",
+        "wizard",
+        "funny_wizard",
+        "giant",
+        "robot",
+        "monster",
+        "superhero",
+        "sidekick",
+        "superhero_team",
+        "phoenix",
+        "pegasus",
+        "griffin",
+        "spaceship",
+        "snowman",
+        "reindeer",
+        "christmas_elf",
+        "elf_on_the_shelf",
+        "dinosaur"
       ]
     }
   ]
