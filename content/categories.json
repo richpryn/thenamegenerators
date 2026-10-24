@@ -468,7 +468,7 @@
     "seoTitle": "Animal and Pet Name Generators: Dinosaurs, Cats and More",
     "description": "Names for pets, toys and made-up animals, from brand-new dinosaur species to a cat for Halloween.",
     "seoDescription": "Free animal and pet name generators: make up a dinosaur species with its meaning, name a pet dinosaur or teddy, and find names for black cats and Christmas pets.",
-    "intro": "<p>Names for animals real and imagined. The <a href=\"../posts/dinosaur-name-generator.html\">Dinosaur Name Generator</a> makes up new species from real Greek and Latin, with what each name means, or turns your own name into a dinosaur. The <a href=\"../posts/pet-dinosaur-name-generator.html\">Pet Dinosaur Name Generator</a> names the dinosaur in your life: a teddy, a toy, a pet or a character in a story.</p>",
+    "intro": "<p>Names for animals real and imagined. The <a href=\"../posts/dinosaur-name-generator.html\">Dinosaur Name Generator</a> makes up new species from real Greek and Latin, with what each name means, or turns your own name into a dinosaur. The <a href=\"../posts/pet-dinosaur-name-generator.html\">Pet Dinosaur Name Generator</a> names the dinosaur in your life: a teddy, a toy, a pet or a character in a story.</p><p>For parties, pets and farm visits, the <a href=\"../posts/farm-animal-name-generator.html\">Farm Animal Name Generator</a> names lambs, calves, piglets, hens, ponies, goats and ducks, and the <a href=\"../posts/easter-bunny-name-generator.html\">Easter Bunny Name Generator</a> names bunnies, chicks and lambs for the egg hunt.</p>",
     "featured": [
       {
         "key": "dinosaur",
@@ -482,6 +482,8 @@
     "generators": [
       "dinosaur",
       "pet_dinosaur",
+      "easter_bunny",
+      "farm_animal",
       "black_cat",
       "christmas_pet",
       "minecraft_pet"
@@ -706,7 +708,8 @@
       "funny_sword",
       "elven_sword",
       "japanese_sword",
-      "game_of_thrones_sword"
+      "game_of_thrones_sword",
+      "kawaii_food"
     ]
   },
   {

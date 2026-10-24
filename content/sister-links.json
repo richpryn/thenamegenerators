@@ -31,9 +31,7 @@
         "snowman",
         "reindeer",
         "christmas_elf",
-        "elf_on_the_shelf",
-        "dinosaur",
-        "pet_dinosaur"
+        "elf_on_the_shelf"
       ]
     },
     {
@@ -44,6 +42,17 @@
       "url": "https://acornandink.co.uk/story-writing/?utm_source=thenamegenerators&utm_medium=referral&utm_campaign=story-prompts",
       "generators": [
         "story_prompt"
+      ]
+    },
+    {
+      "id": "dinosaur-facts",
+      "live": true,
+      "text": "Dinosaur facts for kids, with fact sheets, quizzes and worksheets for ages 5 to 14, from our sister site, {link}.",
+      "linkText": "Acorn & Ink",
+      "url": "https://acornandink.co.uk/dinosaurs/?utm_source=thenamegenerators&utm_medium=referral&utm_campaign=dinosaurs",
+      "generators": [
+        "dinosaur",
+        "pet_dinosaur"
       ]
     }
   ]
