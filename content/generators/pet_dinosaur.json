@@ -5717,8 +5717,34 @@
       "title": "🦕 Pet Dinosaur Name Generator",
       "tagline": "Cute, funny and fierce names for a dino toy, teddy, pet or game dinosaur."
     },
-    "intro": "Whether it's a cuddly toy T. rex, a new stuffed triceratops or a pet lizard with big ideas, this **pet dinosaur name generator** has cute, funny and fierce dinosaur names for girls and boys, from Clover and Trixie to Sir Chomps-a-Lot and Stormjaw.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good pet dinosaur names are cute (Clover, Pip), funny (Lady Short-Arms) or fierce (Sickleclaw), and the best ones suit the kind of dinosaur. Whether it's a cuddly toy T. rex, a new stuffed triceratops or a pet lizard with big ideas, this **pet dinosaur name generator** has names for girls and boys, from Trixie and Primrose to Sir Chomps-a-Lot and Stormjaw.",
+    "sections": [
+      {
+        "heading": "Eight good pet dinosaur names",
+        "content": "<p>All eight came from the generator, cute, funny and fierce:</p><ul><li><strong>Primrose</strong>: a gentle flower name for a soft toy.</li><li><strong>Petal Plates</strong>: a stegosaurus name that rhymes with its back.</li><li><strong>Pip</strong>: short and small, for a little pterosaur.</li><li><strong>Lady Short-Arms</strong>: a T. rex joke. Real T. rex arms were only about a metre long on an animal twelve metres from nose to tail.</li><li><strong>Maureen the Wobbly Lamp-Post</strong>: a long-neck with a very ordinary name.</li><li><strong>Effie Prickle-Tail</strong>: a cute stegosaurus named after its spikes.</li><li><strong>Sickleclaw</strong>: a fierce raptor, named after the curved claw on each foot.</li><li><strong>Thora Tide-Fang</strong>: a fierce sea reptile with a Norse first name.</li></ul>"
+      },
+      {
+        "heading": "Matching the name to the dinosaur",
+        "content": "<p>Pick a kind of dinosaur and the names take its shape into account:</p><ul><li><strong>T. rex</strong> names lean on big teeth and small arms.</li><li><strong>Stegosaurus</strong> names mention its plates and its spiky tail. Palaeontologists call those spikes a <em>thagomizer</em>, a word borrowed from a Gary Larson <em>Far Side</em> cartoon.</li><li><strong>Raptors</strong> get quick, sharp names. The real Velociraptor was about the size of a turkey and had feathers.</li><li><strong>Long necks</strong> like Diplodocus and Brontosaurus get names about being tall: <em>Clive of the Loft</em>, <em>Horace of the Tall Cupboard</em>.</li><li><strong>Flying</strong> and <strong>sea</strong> reptiles are here because every dinosaur toy box has them, though strictly pterosaurs and plesiosaurs weren't dinosaurs.</li></ul><p>Choose <strong>With a title</strong> for a name with a bit of character, like <em>Zip the Friendly Stegosaurus</em> or <em>Sigrid the Relentless Plesiosaur</em>.</p>"
+      },
+      {
+        "heading": "Naming a toy, a pet or a game dinosaur",
+        "content": "<ul><li><strong>For a toddler's toy,</strong> pick a cute name that's easy to say: two syllables, like Gigi or Lenny.</li><li><strong>For a pet lizard, dog or cat,</strong> a funny or fierce dinosaur name suits an animal with attitude.</li><li><strong>For a game,</strong> fierce names like <em>General Redjaw</em> work for a tamed dinosaur that fights.</li></ul><p>To invent a whole new species with a scientific name and its meaning, try the <a href=\"dinosaur-name-generator.html\">Dinosaur Name Generator</a>. For other pets, there's the <a href=\"black-cat-name-generator.html\">Black Cat Name Generator</a> and the <a href=\"christmas-pet-name-generator.html\">Christmas Pet Name Generator</a>.</p><p>For more animals, real and imagined, see all the <a href=\"../categories/animals-names.html\">animal name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are cute dinosaur names?",
+        "answer": "Soft, short names like Clover, Pip, Primrose or Lenny, or a name that fits the dinosaur, like Petal Plates for a stegosaurus. Choose Cute, then Girl or Boy."
+      },
+      {
+        "question": "What are funny dinosaur names?",
+        "answer": "Names that make a joke about the dinosaur, like Lady Short-Arms for a T. rex or Maureen the Wobbly Lamp-Post for a long-neck. Choose Funny for names like these."
+      },
+      {
+        "question": "Were pterodactyls and plesiosaurs dinosaurs?",
+        "answer": "No. Pterosaurs were flying reptiles and plesiosaurs were sea reptiles, both living at the same time as the dinosaurs. They're included here because they're in every dinosaur toy box."
+      }
+    ]
   }
 }
