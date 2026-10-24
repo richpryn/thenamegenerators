@@ -25,7 +25,8 @@
     "mythology": "laurel",
     "wuxia": "jian",
     "music_genres": "jukebox",
-    "animals": "dog"
+    "animals": "dog",
+    "worldbuilding": "map"
   },
   "generators": {
     "ai": "robot",
@@ -270,6 +271,14 @@
     "ghost_hunting_team": "torch",
     "haunted_pub": "inn-sign",
     "paranormal_podcast": "ghost-mic",
-    "local_legend": "standing-stone"
+    "local_legend": "standing-stone",
+    "kingdom": "crown",
+    "empire": "laurel",
+    "continent": "map",
+    "fantasy_world": "portal",
+    "island": "lost-map",
+    "village": "house",
+    "castle": "castle",
+    "dungeon": "skull-bones"
   }
 }

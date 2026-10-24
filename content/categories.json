@@ -221,6 +221,45 @@
     ]
   },
   {
+    "name": "World-Building",
+    "slug": "worldbuilding",
+    "icon": "🗺️",
+    "navLabel": "World-Building",
+    "heading": "Fantasy World-Building Name Generators",
+    "seoTitle": "World-Building Name Generators: Kingdoms, Lands and Places",
+    "description": "Names for every corner of a fantasy world: kingdoms, continents, castles, forests, rivers, dungeons and the cities of elves and dwarves.",
+    "seoDescription": "Free fantasy world-building name generators for D&D and writers: kingdoms, empires, continents, islands, castles, dungeons, forests, mountains, rivers and more.",
+    "intro": "<p>Everything a fantasy map needs a name for, from the continent down to the cave. Each generator follows how real places get their names, with fantasy, medieval, elven and dwarven styles, and many can add a line of history to start your story.</p><p>For the towns and cities on the map, see the <a href=\"../posts/fantasy-town-name-generator.html\">Fantasy Town</a>, <a href=\"../posts/fantasy-city-name-generator.html\">Fantasy City</a> and <a href=\"../posts/fantasy-country-name-generator.html\">Fantasy Country</a> generators.</p>",
+    "featured": [
+      {
+        "key": "kingdom",
+        "note": "medieval, elven, dwarven, desert, dark and orc kingdoms."
+      },
+      {
+        "key": "continent",
+        "note": "continent names with their Greek, Latin or Norse meanings."
+      },
+      {
+        "key": "castle",
+        "note": "keeps, citadels and palaces, with a line of history."
+      },
+      {
+        "key": "dungeon",
+        "note": "crypts, lairs and labyrinths, with a one-line DM hook."
+      }
+    ],
+    "generators": [
+      "kingdom",
+      "empire",
+      "continent",
+      "fantasy_world",
+      "island",
+      "village",
+      "castle",
+      "dungeon"
+    ]
+  },
+  {
     "name": "D&D",
     "slug": "dnd",
     "icon": "🎲",

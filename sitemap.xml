@@ -3,14 +3,14 @@
   <!-- Homepage -->
   <url>
     <loc>https://thenamegenerators.com/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <!-- All Generators Page -->
   <url>
     <loc>https://thenamegenerators.com/all-generators.html</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -68,7 +68,7 @@
   <!-- HTML Sitemap -->
   <url>
     <loc>https://thenamegenerators.com/sitemap.html</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -104,6 +104,13 @@
   <url>
     <loc>https://thenamegenerators.com/categories/fantasy-names.html</loc>
     <lastmod>2026-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Category: World-Building -->
+  <url>
+    <loc>https://thenamegenerators.com/categories/worldbuilding-names.html</loc>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -436,6 +443,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Castle Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/castle-name-generator.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Centaur Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/centaur-name-generator.html</loc>
@@ -503,6 +517,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/composer-name-generator.html</loc>
     <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Continent Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/continent-name-generator.html</loc>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -653,6 +674,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Dungeon Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/dungeon-name-generator.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Dungeon Synth Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/dungeon-synth-name-generator.html</loc>
@@ -713,6 +741,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/emo-band-name-generator.html</loc>
     <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Empire Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/empire-name-generator.html</loc>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -783,6 +818,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/fantasy-town-name-generator.html</loc>
     <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Fantasy World Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/world-name-generator.html</loc>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1087,6 +1129,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Island Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/island-name-generator.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Japanese Sword Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/japanese-sword-name-generator.html</loc>
@@ -1119,6 +1168,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/kids-gamertag-generator.html</loc>
     <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Kingdom Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/kingdom-name-generator.html</loc>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1819,6 +1875,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/viking-name-generator.html</loc>
     <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Village Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/village-name-generator.html</loc>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
