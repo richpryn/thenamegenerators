@@ -54,14 +54,14 @@
   <!-- About Page -->
   <url>
     <loc>https://thenamegenerators.com/about.html</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <!-- Privacy Page -->
   <url>
     <loc>https://thenamegenerators.com/privacy.html</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -317,6 +317,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Artist Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/artist-name-generator.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Assassin Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/assassin-name-generator.html</loc>
@@ -467,7 +474,7 @@
   <!-- Generator: Christmas Quiz Team Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/christmas-quiz-team-names.html</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1073,6 +1080,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Kids' Gamertag Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/kids-gamertag-generator.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Kitsune Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/kitsune-name-generator.html</loc>
@@ -1637,6 +1651,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/steampunk-name-generator.html</loc>
     <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Story Prompt Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/story-prompt-generator.html</loc>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

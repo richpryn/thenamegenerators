@@ -146,6 +146,7 @@
     "japanese_sword": "katana",
     "jazz": "note",
     "khajiit": "paw",
+    "kids_gamertag": "gamepad",
     "kitsune": "cherry-blossom",
     "knight": "helm",
     "kobold": "lizard",
@@ -188,6 +189,7 @@
     "paladin": "round-shield",
     "path_of_exile_witch": "crystal-ball",
     "pegasus": "winged-horseshoe",
+    "pet_dinosaur": "skull-bones",
     "phoenix": "phoenix",
     "pirate": "skull-bones",
     "planet": "planet",
@@ -260,6 +262,7 @@
     "yeti": "footprint",
     "youtube": "old-tv",
     "zombie": "hand",
-    "pet_dinosaur": "skull-bones"
+    "artist_name": "headphones",
+    "story_prompt": "quill"
   }
 }

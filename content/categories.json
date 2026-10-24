@@ -597,6 +597,7 @@
       "song_title",
       "rapper",
       "stage_name",
+      "artist_name",
       "wu_tang",
       "dj",
       "podcast"
@@ -762,6 +763,7 @@
       }
     ],
     "generators": [
+      "kids_gamertag",
       "fursona",
       "anime",
       "sidekick",
@@ -777,7 +779,8 @@
       "viking",
       "superhero",
       "villain",
-      "stage_name"
+      "stage_name",
+      "story_prompt"
     ]
   },
   {

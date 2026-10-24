@@ -35,6 +35,16 @@
         "dinosaur",
         "pet_dinosaur"
       ]
+    },
+    {
+      "id": "story-prompts",
+      "live": true,
+      "text": "Got your prompt? Plan the story with free printable story planners and character sheets from our sister site, {link}.",
+      "linkText": "Acorn & Ink",
+      "url": "https://acornandink.co.uk/story-writing/?utm_source=thenamegenerators&utm_medium=referral&utm_campaign=story-prompts",
+      "generators": [
+        "story_prompt"
+      ]
     }
   ]
 }
