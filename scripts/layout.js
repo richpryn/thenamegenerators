@@ -198,7 +198,7 @@ const MENU = [
     ['posts/podcast-name-generator.html', 'Podcast names'],
     ['posts/youtube-channel-name-generator.html', 'YouTube channel names'],
     ['posts/gamertag-generator.html', 'Gamertags'],
-  ], more: [['categories/music-names.html', 'Music']] },
+  ], more: [['categories/music-names.html', 'Music'], ['categories/music_genres-names.html', 'Music by genre']] },
   { label: 'Business', id: 'menu-business', links: [
     ['posts/business-name-generator.html', 'Business names'],
     ['posts/company-name-generator.html', 'Company names'],
