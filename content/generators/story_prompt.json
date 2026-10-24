@@ -5035,8 +5035,34 @@
       "title": "✍️ Story Prompt Generator",
       "tagline": "Story ideas in seven genres for young writers and grown-ups alike: a whole prompt, or just the character, setting, plot or twist you're missing."
     },
-    "intro": "Stuck for something to write? The **Story Prompt Generator** gives you a fresh story idea in a click. Pick a genre and an age group, then take a whole prompt or just the piece you need: a character, a setting, a plot or a twist.",
-    "sections": [],
-    "faqs": []
+    "intro": "A good story prompt gives you a character, a problem and a reason it's hard, and leaves the rest to you. The **Story Prompt Generator** makes a fresh one in a click. Pick a genre and an age group, then take a whole prompt or just the piece you need: a character, a setting, a plot or a twist.",
+    "sections": [
+      {
+        "heading": "Six story prompts to start with",
+        "content": "<p>All six came from the generator, for children and for older writers:</p><ul><li>\"A retired dragon who is the only one who can see the castle ghost sets out to return a library book that is 300 years overdue.\" <em>Fantasy, kids.</em></li><li>\"A baby phoenix who can talk to bees has to find a new home for a family of fire sprites.\" <em>Fantasy, kids.</em></li><li>\"A penguin who has hiccups that won't stop.\" <em>A funny character on its own, for younger writers to build a story around.</em></li><li>\"An insurance investigator who receives a letter in their own handwriting sets out to find out why the last lighthouse keeper vanished.\" <em>Mystery, teens and adults.</em></li><li>\"The planet they're terraforming already belongs to someone.\" <em>A sci-fi twist to drop into a story you've already started.</em></li><li>\"Your hero has to keep the family café going through a hard winter.\" <em>An everyday plot, with no magic needed.</em></li></ul>"
+      },
+      {
+        "heading": "Genres, ages and parts",
+        "content": "<ul><li><strong>Seven genres:</strong> fantasy, mystery, sci-fi, spooky, adventure, funny and everyday. Spooky prompts for children stay friendly: a ghost train where the ghosts throw a party, not anything that keeps anyone up at night.</li><li><strong>Two age groups:</strong> <em>Kids (6 to 11)</em> gives playful heroes and clear goals; <em>Teens and adults</em> adds complications, secrets and harder choices.</li><li><strong>Five parts:</strong> a full prompt, or just a character, a setting, a plot or a twist. Use the parts on their own to fill a gap in a story you've already started, or roll one of each and put them together.</li></ul>"
+      },
+      {
+        "heading": "Turning a prompt into a story",
+        "content": "<ul><li><strong>Ask what the hero wants,</strong> and what's stopping them. The prompt gives you both; the story is how they get round it.</li><li><strong>Plan the middle.</strong> Most stories go wrong halfway through, so decide on one thing that makes the problem worse before you start writing.</li><li><strong>Save the twist for late on.</strong> A twist works best once the reader thinks they know what's going on.</li><li><strong>In a classroom,</strong> give everyone the same prompt and compare how differently the stories turn out.</li></ul><p>Every hero needs a name. Try the <a href=\"fairy-tale-name-generator.html\">Fairy Tale</a>, <a href=\"wizard-name-generator.html\">Wizard</a>, <a href=\"pirate-name-generator.html\">Pirate</a> and <a href=\"superhero-name-generator.html\">Superhero</a> name generators, or the <a href=\"villain-name-generator.html\">Villain Name Generator</a> for whoever's causing the trouble.</p><p>For more characters, see all the <a href=\"../categories/people-names.html\">character name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is a good story prompt for kids?",
+        "answer": "One with a fun hero, a clear job to do and something in the way, like a baby phoenix who has to find a new home for a family of fire sprites. Choose Kids (6 to 11) and a genre for prompts like this."
+      },
+      {
+        "question": "Can I get just a character or a twist?",
+        "answer": "Yes. Choose Just a character, Just a setting, Just a plot or Just a twist to get one piece at a time, which is useful when you're stuck partway through a story."
+      },
+      {
+        "question": "Can I use these prompts in a lesson or a writing group?",
+        "answer": "Yes, they're free to use. Giving everyone the same prompt and comparing the stories is a good writing exercise."
+      }
+    ]
   }
 }
