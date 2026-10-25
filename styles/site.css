@@ -228,6 +228,8 @@ article h2{margin-top:var(--s7)}
 article ul,article ol{padding-left:var(--s5);margin:0 0 var(--s4)}
 article li{margin-bottom:var(--s2)}
 .howto{--fill:var(--card);padding:var(--card-pad)}
+/* Long numbers or words in prose wrap instead of pushing the page sideways */
+.howto,.article,.faq,.lede,.intro{overflow-wrap:break-word}
 .howto > :last-child{margin-bottom:0}
 .pull{position:relative;margin:var(--s6) 0;padding-left:var(--s5);font:italic 500 24px/1.32 var(--body);max-width:26ch}
 .pull svg{position:absolute;left:0;top:2px;width:14px;height:calc(100% - 4px)}
