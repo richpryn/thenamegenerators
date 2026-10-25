@@ -388,9 +388,35 @@
       "title": "👑 Kingdom Name Generator",
       "tagline": "Medieval crowns, elven courts, dwarven halls and desert sultanates, from Aldmere to the Kingdom of the Seven Oases."
     },
-    "intro": "This **kingdom name generator** gives you fantasy kingdoms for D&D campaigns, novels and strategy games: medieval realms, hidden elven courts, deep dwarven holds, desert sultanates, cursed dark kingdoms and orc warlands. Choose a short description and each name comes with a hint of what the kingdom is like.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good kingdom names sound like the land and the people who live there: <em>Pennmark</em> for a medieval border realm, <em>Kadgarth</em> for a dwarven hold, <em>Qasara</em> for a desert throne. This **kingdom name generator** gives you fantasy kingdoms for D&amp;D campaigns, novels and strategy games: medieval realms, hidden elven courts, deep dwarven holds, desert sultanates, cursed dark kingdoms and orc warlands. Choose a short description and each name comes with a hint of what the kingdom is like.",
+    "sections": [
+      {
+        "heading": "Eight good kingdom names",
+        "content": "<p>All eight came from the generator, across its six styles:</p><ul><li><strong>Pennmark</strong>: a plain medieval name: an old word for a hill and an old word for a borderland.</li><li><strong>The Twin Kingdoms of Bramland and Rathmarch</strong>: two crowns, one alliance, and a war waiting to happen.</li><li><strong>The Starlit Court of Ysilesse</strong>: an elven realm that calls itself a court, not a kingdom.</li><li><strong>The Deep Kingdom of Kadgarth</strong>: hard consonants for a dwarven hold under the mountain.</li><li><strong>The Golden Throne of Isharir</strong>: a desert kingdom named for its throne.</li><li><strong>The Withered Kingdom of Hagfen, where the rivers run black</strong>: a dark kingdom with its curse in the description.</li><li><strong>The Clanlands of Brugmak</strong>: an orc kingdom that is really a union of clans.</li><li><strong>Lornwyn, a kingdom of chalk downs and white horses</strong>: a description that gives you the landscape at once.</li></ul>"
+      },
+      {
+        "heading": "How kingdoms get their names",
+        "content": "<p>Real kingdoms were usually named after a people or a place. England was the land of the Angles. Wessex was the kingdom of the West Saxons and Essex the East Saxons, Northumbria lay north of the Humber, and Mercia took its name from an Old English word for the people of the border. Tolkien did the same in Elvish: <em>Gondor</em> means \"stone-land\".</p><ul><li><strong>Medieval</strong> names join English place-name parts, like <em>-moor</em>, <em>-mark</em> and <em>-vale</em>, or take a heraldic badge: <em>Kingdom of the White Boar</em>.</li><li><strong>Elven</strong> realms are courts, hidden or moonlit: <em>The Court of Naisse</em>.</li><li><strong>Dwarven</strong> kingdoms are holds and crowns of iron: <em>The Holds of Hammerdeep</em>.</li><li><strong>Desert</strong> kingdoms take golden and sun thrones: <em>The Sun Throne of Qaset</em>.</li><li><strong>Dark</strong> kingdoms are withered, cursed or named for what's gone wrong: <em>The Kingdom of Silence, where no birds sing</em>.</li><li><strong>Orc</strong> kingdoms are warlands, clanlands and skull thrones.</li></ul><p>Choose <strong>With a description</strong> for a one-line hook, like <em>Ardmont, whose old king has no heir</em>, which is half a plot already.</p>"
+      },
+      {
+        "heading": "Putting a kingdom on the map",
+        "content": "<ul><li><strong>Give neighbours different sounds.</strong> An elven court next to an orc warland should sound nothing alike.</li><li><strong>Let the description start a story.</strong> A kingdom \"which sits between two greater powers\" tells your players where the next war will be.</li><li><strong>Name the capital and the castle too,</strong> so the court has somewhere to sit.</li></ul><p>For a realm on a grander scale, try the <a href=\"empire-name-generator.html\">Empire Name Generator</a>; for a whole nation with a title, the <a href=\"fantasy-country-name-generator.html\">Fantasy Country Name Generator</a>; and for a modern invented country, the <a href=\"fictional-country-name-generator.html\">Fictional Country Name Generator</a>. Fill the kingdom with the <a href=\"castle-name-generator.html\">Castle</a>, <a href=\"fantasy-city-name-generator.html\">Fantasy City</a>, <a href=\"fantasy-town-name-generator.html\">Fantasy Town</a> and <a href=\"village-name-generator.html\">Village</a> name generators, and give the adventurers somewhere to go with the <a href=\"dungeon-name-generator.html\">Dungeon Name Generator</a>. For the people, see all the <a href=\"../categories/dnd-names.html\">D&amp;D name generators</a>.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good kingdom names?",
+        "answer": "Names that suit the land and the people: Pennmark or Lornwyn for a medieval realm, The Starlit Court of Ysilesse for elves, The Deep Kingdom of Kadgarth for dwarves, The Golden Throne of Isharir for a desert kingdom."
+      },
+      {
+        "question": "How do you name a fantasy kingdom?",
+        "answer": "Start with the people or the landscape, as real kingdoms did (Wessex was the kingdom of the West Saxons), then add a title that says how it's ruled: a Court, a Throne, the Holds, the Clanlands."
+      },
+      {
+        "question": "What's the difference between a kingdom and an empire?",
+        "answer": "A kingdom is ruled by a king or queen over one people or land. An empire rules many peoples and lands, often conquered, under an emperor. Try the Empire Name Generator for the bigger kind."
+      }
+    ]
   },
   "data": {
     "base": {

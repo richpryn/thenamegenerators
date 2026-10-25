@@ -1248,8 +1248,34 @@
       "title": "🏰 Castle Name Generator",
       "tagline": "Border keeps, gothic ruins, elven palaces and dwarf holds, from Ravendale Castle to Hammerdeep."
     },
-    "intro": "Most real castles are simply named after the place they guard, which is why Ravendale Castle sounds older than Castle of Eternal Shadows. This **castle name generator** builds names the way real and storybook castles get them, in six styles from medieval keeps to elven palaces, and can add a line of history for your campaign or novel.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good castle names are usually just a place name and \"Castle\", which is why Ravendale Castle sounds older than Castle of Eternal Shadows. Most real castles are simply named after the place they guard. This **castle name generator** builds names the way real and storybook castles get them, in six styles from medieval keeps to elven palaces, and can add a line of history for your campaign or novel.",
+    "sections": [
+      {
+        "heading": "Eight good castle names",
+        "content": "<p>All eight came from the generator, across its six styles:</p><ul><li><strong>Coldscar Keep</strong>: a medieval name built from the landscape, for a hard northern fortress.</li><li><strong>Old Greystow Castle</strong>: \"where the last siege ended with a tunnel under the gatehouse\".</li><li><strong>Dragonspire Keep</strong>: heroic fantasy with a dragon in the name.</li><li><strong>Castle Bleakmoor</strong>: dark: \"Castle\" first, then a grim place.</li><li><strong>The Court of Eilennor</strong>: an elven palace that sounds like a royal court.</li><li><strong>Hammerhold</strong>: dwarven: a hold, not a castle, cut into the rock.</li><li><strong>Ormund Delve</strong>: \"carved into the mountain over forty generations\".</li><li><strong>The Castle on Lily Lake</strong>: a fairy-tale castle with its setting in the name.</li></ul>"
+      },
+      {
+        "heading": "How castles get their names",
+        "content": "<ul><li><strong>Place name plus Castle</strong> is the usual pattern: Dover Castle, Warwick Castle, Bamburgh Castle. The castle takes the name of the place it guards.</li><li><strong>Castle first</strong>, as in Castle Rising in Norfolk, sounds older and grander, which is why the dark style uses it.</li><li><strong>Welsh castles</strong> are a <em>castell</em>, so Castell Coch is the \"red castle\".</li><li><strong>Scottish names</strong> often start with <em>dùn</em>, Gaelic for a fort, as in Dunnottar and Dunstaffnage.</li><li><strong>Keep</strong> was the great central tower of a castle, and <strong>hold</strong> and <strong>delve</strong> suit dwarves, who dig rather than build.</li></ul><p>The six styles follow these patterns: <strong>medieval</strong> place names, <strong>fantasy</strong> spires and watches, <strong>dark</strong> castles with \"Castle\" in front, <strong>elven</strong> palaces and courts, <strong>dwarven</strong> holds and gates, and <strong>fairy-tale</strong> palaces by lakes and brooks. Choose <strong>With history</strong> for a line of the castle's past, like <em>Hold Ragnvald, retaken from the goblins after two hundred years</em>.</p>"
+      },
+      {
+        "heading": "Using a castle in your world",
+        "content": "<ul><li><strong>Name the place first.</strong> If the castle stands above a town, give them the same name, the way real ones do.</li><li><strong>Let the history line be a hook.</strong> A castle \"sealed by its own garrison, from the outside\" is a whole adventure.</li><li><strong>Match the style to who built it.</strong> Elves and dwarves wouldn't call their homes castles at all.</li></ul><p>For the realm it rules, try the <a href=\"kingdom-name-generator.html\">Kingdom Name Generator</a> or the <a href=\"empire-name-generator.html\">Empire Name Generator</a>. For the people defending it, there's the <a href=\"knight-name-generator.html\">Knight Name Generator</a>, and for what lies underneath, the <a href=\"dungeon-name-generator.html\">Dungeon Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good fantasy castle names?",
+        "answer": "A place name with Castle or Keep, like Coldscar Keep or Old Greystow Castle, or a style to match who built it: The Court of Eilennor for elves, Hammerhold for dwarves."
+      },
+      {
+        "question": "How are real castles named?",
+        "answer": "Usually after the place they guard, like Dover Castle or Warwick Castle. In Wales, castell means castle, and many Scottish names start with dùn, a fort."
+      },
+      {
+        "question": "What's the difference between a castle and a keep?",
+        "answer": "A keep is the great central tower of a castle, the strongest part. In fantasy, Keep is often used for a smaller castle or a single fortified tower."
+      }
+    ]
   }
 }

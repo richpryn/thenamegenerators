@@ -1432,8 +1432,34 @@
       "title": "🗝️ Dungeon Name Generator",
       "tagline": "Crypts, caves, wizard's towers and drowned temples, from the Sunken Crypt of Vael to Oswin's Folly."
     },
-    "intro": "A good dungeon name tells the players what they are walking into before they light the first torch. This **dungeon name generator** makes names for D&D and other fantasy games in eight kinds, from crypts and goblin caves to wizard's lairs and shifting mazes, and can add a one-line hook to get the adventure started.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good dungeon names tell the players what they're walking into before they light the first torch: a crypt, a mine, a wizard's tower gone wrong. This **dungeon name generator** makes names for D&D and other fantasy games in eight kinds, from crypts and goblin caves to wizard's lairs and shifting mazes, and can add a one-line hook to get the adventure started.",
+    "sections": [
+      {
+        "heading": "Eight good dungeon names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>The Mouldering Ossuary of the Silent Order</strong>: a crypt with a backstory in the name.</li><li><strong>The Webbed Hollows</strong>: a cave that warns the players about spiders.</li><li><strong>The Siege-Scarred Castle</strong>: a ruined fortress whose name tells you what happened.</li><li><strong>Oswin's Folly</strong>: a wizard's lair where \"a failed experiment has fused two rooms and their occupants\".</li><li><strong>The Drowned Fane of the Spider Mother</strong>: a fane is an old word for a temple.</li><li><strong>The Singing Iron Workings</strong>: a mine with something strange in it.</li><li><strong>The Old Greymarket Storm Drains</strong>: an under-the-city dungeon named like a real place.</li><li><strong>The Maze That Breathes</strong>: a labyrinth with a name that makes players nervous.</li></ul>"
+      },
+      {
+        "heading": "What makes a dungeon name work",
+        "content": "<p>The word itself has moved. <em>Dungeon</em> comes from the Old French <em>donjon</em>, the great tower or keep of a castle, and only later came to mean the cells underneath. Since D&amp;D was published in 1974, it has meant any place full of monsters and treasure, from a tomb to a sewer.</p><ul><li><strong>Say what it is.</strong> Catacombs, Ossuary, Warrens, Workings, Cisterns: the kind of place tells players what to expect.</li><li><strong>Add one detail.</strong> <em>Moss-Grown</em>, <em>Bone-Strewn</em>, <em>Smoke-Stained</em>: an adjective is a description the players hear before they arrive.</li><li><strong>Name it after someone</strong> for a lair or a tomb: <em>Morwenna's Puzzle-House</em>, <em>The Pale Crypt of Nerith</em>.</li></ul><p>The eight kinds use real words for each place: an <em>ossuary</em> holds bones, an <em>undercroft</em> is the vaulted cellar under a church, an <em>adit</em> is the level entrance to a mine, and <em>firedamp</em> was the miners' name for explosive gas. Choose <strong>With a DM hook</strong> for a one-line reason to go in, like <em>The Pit of Orvane: The local troll is reasonable, but only if you bring cheese.</em></p>"
+      },
+      {
+        "heading": "Running your dungeon",
+        "content": "<ul><li><strong>Use the hook as the rumour</strong> the players hear in the tavern, then decide whether it's true.</li><li><strong>Name the rooms too.</strong> A dungeon with a Bell Room and a Drowned Stair is easier to map and remember.</li><li><strong>Link it to the world above.</strong> A mine belongs to a town; a crypt belongs to a family; a ruin belonged to someone's castle.</li></ul><p>For the castle the ruin used to be, try the <a href=\"castle-name-generator.html\">Castle Name Generator</a>. For whoever gives the players the job, the <a href=\"npc-name-generator.html\">NPC Name Generator</a> makes a name, a job and a quirk. For every race and class, see all the <a href=\"../categories/dnd-names.html\">D&amp;D name generators</a>.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good D&D dungeon names?",
+        "answer": "Names that say what kind of place it is and add one detail, like The Webbed Hollows, The Singing Iron Workings or The Mouldering Ossuary of the Silent Order. Add a DM hook for a reason to go in."
+      },
+      {
+        "question": "What does dungeon originally mean?",
+        "answer": "It comes from the Old French donjon, the keep or great tower of a castle. The meaning of a prison underneath came later."
+      },
+      {
+        "question": "Can I use these in a published adventure?",
+        "answer": "Yes, they're free to use. Search a name first if you're publishing, in case another adventure already uses it."
+      }
+    ]
   }
 }
