@@ -135,9 +135,16 @@
       "generators": [
         "haunted_pub"
       ]
+    },
+    {
+      "id": "hob-legends",
+      "live": true,
+      "text": "Want the real thing? Our sister site {link} retells the real legends of Britain and pins them to the places they come from.",
+      "linkText": "Hob & Hollow",
+      "url": "https://hobandhollow.co.uk/?utm_source=thenamegenerators&utm_medium=referral&utm_campaign=local_legend",
+      "generators": [
+        "local_legend"
+      ]
     }
-  ],
-  "_todo": [
-    "local_legend: no box yet. If Rich launches the UK folklore map site, link its 'read real legends' pages here."
   ]
 }
