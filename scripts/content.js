@@ -214,18 +214,26 @@ function validate({ categories, generators, homepage = { popular: [] }, sisterLi
  */
 function countCombinations(gen) {
   const engine = RecipeEngine.createGenerator(gen);
-  const size = (p, values) => RecipeEngine.resolveList(gen.data, p.replace(/\{(\w+)\}/g, (_, k) => values[k] || '')).length;
-  const slotFactor = (r, values) => Object.values(r.slots || {}).reduce((n, p) => n * size(p, values), 1);
+  const listAt = (p, values) => RecipeEngine.resolveList(gen.data, p.replace(/\{(\w+)\}/g, (_, k) => values[k] || ''));
+  // A list's size, counting each item's own [Slot] fillers: only the slots an
+  // item actually uses multiply it ("The [Fiddler]'s Chair" uses one of many).
+  const size = (p, values, slots) => {
+    const list = listAt(p, values);
+    if (!slots) return list.length;
+    return list.reduce((sum, item) => sum + [...String(item).matchAll(/\[(\w+)\]/g)]
+      .reduce((n, m) => (slots[m[1]] ? n * size(slots[m[1]], values, null) : n), 1), 0);
+  };
   const count = (r, values) => {
     if (r.recipe === 'switch') {
       const choice = r.cases[values[r.on]] || r.default;
       return choice ? count(choice, values) : 0;
     }
-    if (r.recipe === 'pick') return size(r.from, values) * slotFactor(r, values);
-    if (r.recipe === 'combine') return r.parts.reduce((n, p) => n * size(p, values), 1) * slotFactor(r, values);
+    if (r.recipe === 'pick') return size(r.from, values, r.slots);
+    if (r.recipe === 'combine') return r.parts.reduce((n, p) => n * size(p, values, r.slots), 1);
     if (r.recipe === 'template') {
-      return [].concat(r.template).reduce((sum, t) =>
-        sum + [...t.matchAll(/\[([^\]]+)\]/g)].reduce((n, m) => n * size(m[1], values), 1), 0) * slotFactor(r, values);
+      // A template listed twice is a weighting, not twice the names
+      return [...new Set([].concat(r.template))].reduce((sum, t) =>
+        sum + [...t.matchAll(/\[([^\]]+)\]/g)].reduce((n, m) => n * size(m[1], values, r.slots), 1), 0);
     }
     return 0;
   };
@@ -240,6 +248,7 @@ function countCombinations(gen) {
 
 // 2,740 -> "2,700"; 1,195 -> "1,100" (for "over {{combinations}}")
 function roundDown(n) {
+  if (n >= 1e12) return 'a trillion'; // "over a trillion": past that, the digits mean nothing
   if (n < 100) return String(n);
   const digits = Math.pow(10, String(Math.floor(n)).length - 2);
   return (Math.floor(n / digits) * digits).toLocaleString('en-GB');
