@@ -272,7 +272,12 @@
       "elf_city",
       "dwarf_city",
       "orc_stronghold",
-      "magic_school"
+      "magic_school",
+      "wizard_tower",
+      "plane",
+      "underwater_city",
+      "sky_city",
+      "prison"
     ],
     "eyebrow": "World-building elements",
     "approach": {
@@ -936,7 +941,19 @@
       "fantasy_country",
       "cafe",
       "fantasy_city",
-      "haunted_house"
+      "haunted_house",
+      "street",
+      "house_name",
+      "school",
+      "university",
+      "hospital",
+      "hotel",
+      "wild_west_town",
+      "pirate_island",
+      "farm",
+      "theme_park",
+      "zoo",
+      "lighthouse"
     ],
     "eyebrow": "World-building elements",
     "approach": {
@@ -1143,7 +1160,14 @@
       "futuristic",
       "steampunk",
       "post_apocalyptic",
-      "star_wars"
+      "star_wars",
+      "galaxy",
+      "star",
+      "moon",
+      "cyberpunk_city",
+      "scifi_city",
+      "steampunk_city",
+      "post_apocalyptic_town"
     ]
   },
   {
