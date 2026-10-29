@@ -86,7 +86,7 @@
         "classic": {
           "recipe": "template",
           "template": [
-            "[classic] [roles]",
+            "[classic_plain] [roles]",
             "[titles] [kid_words] [roles]",
             "[lad_words] [lad_suffix] [roles]"
           ]
@@ -94,27 +94,27 @@
         "animal": {
           "recipe": "template",
           "template": [
-            "[animal] [roles]",
-            "[pets] the [wonder] [creatures] [roles]"
+            "[animal_plain] [roles]",
+            "[hedge_titles] [pets] [roles]"
           ]
         },
         "funny": {
           "recipe": "template",
           "template": [
-            "[funny] [roles]",
+            "[funny_plain] [roles]",
             "[hedge_titles] [hedges] [roles]"
           ]
         },
         "any": {
           "recipe": "template",
           "template": [
-            "[classic] [roles]",
+            "[classic_plain] [roles]",
             "[titles] [kid_words] [roles]",
             "[lad_words] [lad_suffix] [roles]",
-            "[animal] [roles]",
-            "[pets] the [wonder] [creatures] [roles]",
-            "[funny] [roles]",
-            "[hedge_titles] [hedges] [roles]"
+            "[animal_plain] [roles]",
+            "[funny_plain] [roles]",
+            "[hedge_titles] [hedges] [roles]",
+            "[hedge_titles] [pets] [roles]"
           ]
         }
       }
@@ -366,6 +366,104 @@
       "the Always-Late",
       "the Ever-Ready",
       "the Brave"
+    ],
+    "classic_plain": [
+      "Spark",
+      "Flicker",
+      "Comet",
+      "Dash",
+      "Echo",
+      "Pip",
+      "Ember",
+      "Glint",
+      "Blink",
+      "Bolt",
+      "Skip",
+      "Rook",
+      "Wisp",
+      "Zip",
+      "Jinx",
+      "Sprocket",
+      "Pixel",
+      "Buzz",
+      "Ripple",
+      "Swift",
+      "Tracer",
+      "Flare",
+      "Nimbus",
+      "Quill",
+      "Ricochet",
+      "Sparrow",
+      "Static",
+      "Kite",
+      "Rocket",
+      "Scout",
+      "Fizz",
+      "Dart",
+      "Twist",
+      "Blip",
+      "Spry",
+      "Nipper",
+      "Whirl",
+      "Chirp",
+      "Pinwheel",
+      "Breeze",
+      "Sparkler"
+    ],
+    "animal_plain": [
+      "Captain Whiskers",
+      "Professor Feathers",
+      "Sir Hops-a-Lot",
+      "Agent Paws",
+      "Hoot",
+      "Sergeant Snuffles",
+      "Pounce",
+      "Major Waddles",
+      "Doctor Squeak",
+      "Lady Fluffington"
+    ],
+    "funny_plain": [
+      "Captain Probably",
+      "Tea-Boy",
+      "Sidekick Steve",
+      "Mostly Helpful",
+      "Reception",
+      "Second Best",
+      "Backup Barry",
+      "Doug",
+      "Snack Duty",
+      "Mr Holds-the-Coats",
+      "Plus One",
+      "Almost-Man",
+      "Gerald",
+      "Lieutenant Optional",
+      "Kevin from Logistics",
+      "Captain Sidekick",
+      "Not-Quite-Man",
+      "Loyal Linda",
+      "Brian (Mostly Invisible)",
+      "Keith from Accounts",
+      "Mrs Minds-the-Bags",
+      "Trainee Hero",
+      "Junior Assistant (Acting)",
+      "Packed Lunch",
+      "Hero-in-Waiting",
+      "Not-Quite-Woman",
+      "Health and Safety",
+      "Pat from Next Door",
+      "Supply Teacher",
+      "Backup Bev",
+      "Dave (No Powers)",
+      "Fire Drill",
+      "Sensible Shoes",
+      "Kettle Duty",
+      "Cape Ironer",
+      "Wrong Turn Wendy",
+      "Assistant Regional Hero",
+      "Part-Time Pete",
+      "Lost and Found",
+      "Minor Inconvenience",
+      "Noticeably Average"
     ]
   },
   "article": {
