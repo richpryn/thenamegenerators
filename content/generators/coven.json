@@ -96,44 +96,44 @@
         "place": {
           "recipe": "template",
           "template": [
-            "The Coven of [place.places]: “[mottos.solemn]”",
-            "The [place.short] [place.groups]: “[mottos.solemn]”"
+            "The Coven of [place.places]: \"[mottos.solemn]\"",
+            "The [place.short] [place.groups]: \"[mottos.solemn]\""
           ]
         },
         "moon": {
           "recipe": "template",
           "template": [
-            "The [moon.adjectives] [moon.groups]: “[mottos.solemn]”",
-            "The [moon.ordinals] Moon: “[mottos.solemn]”",
-            "Daughters of the [moon.moons]: “[mottos.solemn]”"
+            "The [moon.adjectives] [moon.groups]: \"[mottos.solemn]\"",
+            "The [moon.ordinals] Moon: \"[mottos.solemn]\"",
+            "Daughters of the [moon.moons]: \"[mottos.solemn]\""
           ]
         },
         "dark": {
           "recipe": "template",
           "template": [
-            "The [dark.words] [dark.groups]: “[mottos.solemn]”",
-            "The [dark.words] [dark.groups]: “[mottos.solemn]”"
+            "The [dark.words] [dark.groups]: \"[mottos.solemn]\"",
+            "The [dark.words] [dark.groups]: \"[mottos.solemn]\""
           ]
         },
         "cosy": {
           "recipe": "template",
           "template": [
-            "The [cosy.things] and [cosy.things] [cosy.groups]: “[mottos.cosy]”",
-            "The [cosy.things] Lane [cosy.groups]: “[mottos.cosy]”"
+            "The [cosy.things] and [cosy.things] [cosy.groups]: \"[mottos.cosy]\"",
+            "The [cosy.things] Lane [cosy.groups]: \"[mottos.cosy]\""
           ]
         },
         "any": {
           "recipe": "template",
           "template": [
-            "The Coven of [place.places]: “[mottos.solemn]”",
-            "The [place.short] [place.groups]: “[mottos.solemn]”",
-            "The [moon.adjectives] [moon.groups]: “[mottos.solemn]”",
-            "The [moon.ordinals] Moon: “[mottos.solemn]”",
-            "Daughters of the [moon.moons]: “[mottos.solemn]”",
-            "The [dark.words] [dark.groups]: “[mottos.solemn]”",
-            "The [dark.words] [dark.groups]: “[mottos.solemn]”",
-            "The [cosy.things] and [cosy.things] [cosy.groups]: “[mottos.cosy]”",
-            "The [cosy.things] Lane [cosy.groups]: “[mottos.cosy]”"
+            "The Coven of [place.places]: \"[mottos.solemn]\"",
+            "The [place.short] [place.groups]: \"[mottos.solemn]\"",
+            "The [moon.adjectives] [moon.groups]: \"[mottos.solemn]\"",
+            "The [moon.ordinals] Moon: \"[mottos.solemn]\"",
+            "Daughters of the [moon.moons]: \"[mottos.solemn]\"",
+            "The [dark.words] [dark.groups]: \"[mottos.solemn]\"",
+            "The [dark.words] [dark.groups]: \"[mottos.solemn]\"",
+            "The [cosy.things] and [cosy.things] [cosy.groups]: \"[mottos.cosy]\"",
+            "The [cosy.things] Lane [cosy.groups]: \"[mottos.cosy]\""
           ]
         }
       }

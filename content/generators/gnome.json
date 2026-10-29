@@ -106,12 +106,12 @@
       "cases": {
         "any": {
           "recipe": "template",
-          "template": "[personal] “[nicknames]” [clans]"
+          "template": "[personal] \"[nicknames]\" [clans]"
         }
       },
       "default": {
         "recipe": "template",
-        "template": "[personal.{gender}] “[nicknames]” [clans]"
+        "template": "[personal.{gender}] \"[nicknames]\" [clans]"
       }
     },
     "full_name": {

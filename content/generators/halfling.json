@@ -120,12 +120,12 @@
       "cases": {
         "any": {
           "recipe": "template",
-          "template": "[given] “[nicknames]” [family]"
+          "template": "[given] \"[nicknames]\" [family]"
         }
       },
       "default": {
         "recipe": "template",
-        "template": "[given.{gender}] “[nicknames]” [family]"
+        "template": "[given.{gender}] \"[nicknames]\" [family]"
       }
     },
     "given": {

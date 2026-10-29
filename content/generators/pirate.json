@@ -41,7 +41,7 @@
       "optionLabels": {
         "any": "Any (a mix)",
         "nickname_first": "Nickname first (Red Silas)",
-        "nickname_middle": "Nickname in the middle (Silas “Red” Thatch)",
+        "nickname_middle": "Nickname in the middle (Silas \"Red\" Thatch)",
         "captain": "Captain and surname"
       }
     },
@@ -145,12 +145,12 @@
           "cases": {
             "any": {
               "recipe": "template",
-              "template": "[first] “[nick]” [surnames]"
+              "template": "[first] \"[nick]\" [surnames]"
             }
           },
           "default": {
             "recipe": "template",
-            "template": "[first.{gender}] “[nick]” [surnames]"
+            "template": "[first.{gender}] \"[nick]\" [surnames]"
           }
         },
         "captain": {
@@ -175,7 +175,7 @@
               "recipe": "template",
               "template": [
                 "[nick] [first]",
-                "[first] “[nick]” [surnames]",
+                "[first] \"[nick]\" [surnames]",
                 "Captain [first] [surnames]"
               ]
             }
@@ -184,7 +184,7 @@
             "recipe": "template",
             "template": [
               "[nick] [first.{gender}]",
-              "[first.{gender}] “[nick]” [surnames]",
+              "[first.{gender}] \"[nick]\" [surnames]",
               "Captain [first.{gender}] [surnames]"
             ]
           }

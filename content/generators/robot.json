@@ -42,7 +42,7 @@
     },
     "nickname": {
       "recipe": "template",
-      "template": "[labels] [letters]-[numbers] “[human]”"
+      "template": "[labels] [letters]-[numbers] \"[human]\""
     },
     "android": {
       "recipe": "template",
@@ -56,7 +56,7 @@
       "template": [
         "[letters]-[numbers]",
         "[acronyms]",
-        "[labels] [letters]-[numbers] “[human]”",
+        "[labels] [letters]-[numbers] \"[human]\"",
         "[human]"
       ]
     }
