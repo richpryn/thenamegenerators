@@ -198,6 +198,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Category: Writing -->
+  <url>
+    <loc>https://thenamegenerators.com/categories/writing-names.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Category: Places -->
   <url>
     <loc>https://thenamegenerators.com/categories/places-names.html</loc>

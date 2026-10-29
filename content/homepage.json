@@ -47,16 +47,10 @@
       "id": "writing",
       "name": "Writing",
       "icon": "images/brand/category-writing.webp",
-      "hubs": [],
-      "extra": [
-        "story_prompt",
-        "local_legend",
-        "fairy_tale",
-        "epithet",
-        "villain",
-        "sidekick"
+      "hubs": [
+        "writing"
       ],
-      "link": "posts/story-prompt-generator.html"
+      "link": "categories/writing-names.html"
     },
     {
       "id": "music",

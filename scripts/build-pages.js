@@ -1556,9 +1556,152 @@ ${scriptJson({
 }
 
 /**
+ * Naming guides: content/guides/<slug>.json -> guides/<slug>.html, plus
+ * guides/index.html. A guide has title, slug, description (meta), seoTitle,
+ * published, intro, sections [{heading, content}], faqs [{question, answer}]
+ * and related [generator keys], all written by the content session.
+ */
+const GUIDES_DIR = path.join(ROOT, 'guides');
+
+function guideHead(prefix, { title, desc, url, image, schema }) {
+  return `<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${escapeHtml(title)}</title>
+    <meta name="description" content="${escapeHtml(desc)}">
+    <meta name="author" content="Rich">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <link rel="canonical" href="${url}">
+    <script type="application/ld+json">
+${scriptJson(schema, 2)}
+    </script>
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="${url}">
+    <meta property="og:title" content="${escapeHtml(title)}">
+    <meta property="og:description" content="${escapeHtml(desc)}">
+    <meta property="og:image" content="${image}">
+    <meta property="og:site_name" content="The Name Generators">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="${image}">
+
+    ${ICON_LINKS}
+    ${layout.headAssets(prefix)}
+</head>`;
+}
+
+function generateGuidePage(guide, site) {
+  const baseUrl = 'https://thenamegenerators.com';
+  const url = `${baseUrl}/guides/${guide.slug}.html`;
+  const related = (guide.related || []).map(k => site.all.find(g => g.key === k)).filter(Boolean);
+  const catOf = (gen) => site.categories.find(c => c.slug === gen.category);
+  const motifs = related.map(g => layout.generatorMotif(g, catOf(g)));
+  const faqs = guide.faqs || [];
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "Article", "headline": guide.title, "description": guide.description, "url": url,
+        "datePublished": guide.published, "dateModified": guide.updated || guide.published, "inLanguage": "en-GB",
+        "author": { "@type": "Person", "name": "Rich", "url": `${baseUrl}/about.html` },
+        "publisher": { "@type": "Organization", "name": "The Name Generators", "url": `${baseUrl}/` },
+        "image": layout.shareImage('home') },
+      { "@type": "BreadcrumbList", "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": `${baseUrl}/` },
+        { "@type": "ListItem", "position": 2, "name": "Naming guides", "item": `${baseUrl}/guides/` },
+        { "@type": "ListItem", "position": 3, "name": guide.title, "item": url }] },
+      ...(faqs.length ? [{ "@type": "FAQPage", "mainEntity": faqs.map(f => ({ "@type": "Question", "name": plainText(f.question),
+        "acceptedAnswer": { "@type": "Answer", "text": plainText(f.answer) } })) }] : []),
+    ],
+  };
+  const sections = (guide.sections || []).map(s => `
+                <h2>${s.heading}</h2>
+                ${markdownBold(s.content)}`).join('\n');
+  const faqHtml = faqs.length ? `
+            <section class="section faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    ${faqs.map(f => `<details>
+                        <summary><span class="tg hd" aria-hidden="true">+</span>${f.question}</summary>
+                        <div>${markdownBold(f.answer)}</div>
+                    </details>`).join('\n                    ')}
+                </div>
+            </section>` : '';
+  const relatedHtml = related.length ? `
+            <section class="section">
+                <h2>Try these name generators</h2>
+                <div class="genlist">
+                    ${related.map(g => `<a href="../posts/${g.slug}.html" class="gencard hd tap">${layout.doodle(layout.generatorMotif(g, catOf(g)), 'doodle wob')}<div><b>${escapeHtml(g.title)}</b></div><em aria-hidden="true">→</em></a>`).join('\n                    ')}
+                </div>
+            </section>` : '';
+  return `${guideHead('../', { title: guide.seoTitle || `${guide.title} | The Name Generators`, desc: guide.description, url, image: layout.shareImage('home'), schema })}
+<body>
+    ${layout.svgSprite([...motifs, 'quill'])}
+    ${layout.siteHeader('../', site.categories)}
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="index.html">Naming guides</a> / <span aria-current="page">${escapeHtml(guide.title)}</span></nav>
+            <article class="guide">
+                <div class="titlerow">
+                    <h1>${escapeHtml(guide.title)}</h1>
+                    ${layout.doodle(guide.motif || 'quill')}
+                </div>
+                <p class="lede">${markdownBold(guide.intro || '')}</p>
+                <p class="byline">By Rich · ${longDate(guide.updated || guide.published)}</p>
+                <div class="section article">${sections}
+                </div>
+            </article>${relatedHtml}${faqHtml}
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
+    </div>
+
+    ${layout.siteFooter('../')}
+    ${layout.bodyScripts('../')}
+</body>
+</html>`;
+}
+
+function generateGuidesIndex(site) {
+  const baseUrl = 'https://thenamegenerators.com';
+  const url = `${baseUrl}/guides/`;
+  const title = 'Naming Guides: How to Name Characters, Places and More | The Name Generators';
+  const desc = 'How to come up with great names for characters, fantasy worlds, businesses, bands and more: practical naming guides with examples.';
+  const guides = site.guides();
+  const schema = { "@context": "https://schema.org", "@type": "CollectionPage", "name": "Naming guides", "description": desc, "url": url,
+    "mainEntity": { "@type": "ItemList", "itemListElement": guides.map((g, i) => ({ "@type": "ListItem", "position": i + 1, "name": g.title, "url": `${baseUrl}/guides/${g.slug}.html` })) } };
+  return `${guideHead('../', { title, desc, url, image: layout.shareImage('home'), schema })}
+<body>
+    ${layout.svgSprite([...guides.map(g => g.motif || 'quill'), 'quill'])}
+    ${layout.siteHeader('../', site.categories)}
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <span aria-current="page">Naming guides</span></nav>
+            <div class="titlerow">
+                <h1>Naming <span class="hl">Guides</span></h1>
+                ${layout.doodle('quill')}
+            </div>
+            <p class="lede">${escapeHtml(desc)}</p>
+            <section class="section">
+                <div class="genlist">
+                    ${guides.map(g => `<a href="${g.slug}.html" class="gencard hd tap">${layout.doodle(g.motif || 'quill', 'doodle wob')}<div><b>${escapeHtml(g.title)}</b><span>${escapeHtml(g.description)}</span></div><em aria-hidden="true">→</em></a>`).join('\n                    ')}
+                </div>
+            </section>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
+    </div>
+
+    ${layout.siteFooter('../')}
+    ${layout.bodyScripts('../')}
+</body>
+</html>`;
+}
+
+/**
  * Lookups shared by the page templates.
  */
-function makeSite({ categories, generators, homepage, sisterLinks = { boxes: [] } }) {
+function makeSite({ categories, generators, homepage, sisterLinks = { boxes: [] }, guides = [] }) {
   const all = Object.values(generators);
   const categoriesOf = {};
   for (const cat of categories) {
@@ -1615,6 +1758,8 @@ function makeSite({ categories, generators, homepage, sisterLinks = { boxes: [] 
         .sort((a, b) => (a.popularRank || 999) - (b.popularRank || 999)));
     },
     navHtml: (prefix) => navDropdownHtml(categories, prefix),
+    // content/guides/*.json, newest first (for guides/index.html and the homepage)
+    guides: () => guides.slice().sort((a, b) => (b.published || '').localeCompare(a.published || '') || a.title.localeCompare(b.title)),
     // content/homepage.json "groups": the eight homepage tiles, each with its
     // generators (every generator in its hubs, plus extras, counted once)
     homeGroups: () => (homepage.groups || []).map(gr => {
@@ -1806,6 +1951,15 @@ function build() {
     fs.writeFileSync(path.join(ROOT, page), generateNameToolPage(key, site));
   }
   fs.writeFileSync(path.join(ROOT, 'name-tools.html'), generateNameToolsHub(site));
+  fs.mkdirSync(GUIDES_DIR, { recursive: true });
+  for (const guide of site.guides()) {
+    fs.writeFileSync(path.join(GUIDES_DIR, `${guide.slug}.html`), generateGuidePage(guide, site));
+  }
+  for (const file of fs.readdirSync(GUIDES_DIR)) {
+    if (file !== 'index.html' && !site.guides().some(g => `${g.slug}.html` === file)) fs.unlinkSync(path.join(GUIDES_DIR, file));
+  }
+  fs.writeFileSync(path.join(GUIDES_DIR, 'index.html'), generateGuidesIndex(site));
+  console.log(`  ✅ Created: guides/index.html and ${site.guides().length} guide pages`);
   console.log(`  ✅ Created: name-tools.html and ${NAME_TOOLS.length} name tool pages`);
 
   generateSitemap(site);
@@ -1913,6 +2067,22 @@ ${NAME_TOOLS.map(t => `  <url>
 `;
   }
 
+  if (site.guides().length) {
+    sitemap += `  <!-- Naming guides -->
+  <url>
+    <loc>${baseUrl}/guides/</loc>
+    <lastmod>${latest(site.guides().map(g => g.updated || g.published))}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+${site.guides().map(g => `  <url>
+    <loc>${baseUrl}/guides/${g.slug}.html</loc>
+    <lastmod>${g.updated || g.published}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+`).join('')}`;
+  }
   sitemap += `</urlset>`;
 
   const sitemapPath = path.join(ROOT, 'sitemap.xml');
@@ -2134,6 +2304,10 @@ Made by Rich: ${baseUrl}/about.html
   }
   text += `\n## Name tools\n\nFree tools for lists of names; lists stay in the browser and can be shared as a link.\n\n` +
     NAME_TOOLS.map(t => `- [${t.title}](${baseUrl}/${t.page}): ${t.short}`).join('\n') + '\n';
+  if (site.guides().length) {
+    text += `\n## Naming guides\n\n- [All naming guides](${baseUrl}/guides/)\n` +
+      site.guides().map(g => `- [${g.title}](${baseUrl}/guides/${g.slug}.html): ${plainText(g.description)}`).join('\n') + '\n';
+  }
   text += `\n## Optional\n\n- [All generators](${baseUrl}/all-generators.html)\n- [Site map](${baseUrl}/sitemap.html)\n`;
   fs.writeFileSync(path.join(ROOT, 'llms.txt'), text);
   console.log('  ✅ Created: llms.txt');

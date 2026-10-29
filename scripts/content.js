@@ -29,7 +29,11 @@ function loadContent() {
   const homepage = fs.existsSync(homepagePath) ? JSON.parse(fs.readFileSync(homepagePath, 'utf8')) : { popular: [] };
   const sisterPath = path.join(CONTENT_DIR, 'sister-links.json');
   const sisterLinks = fs.existsSync(sisterPath) ? JSON.parse(fs.readFileSync(sisterPath, 'utf8')) : { boxes: [] };
-  return { categories, generators, homepage, sisterLinks };
+  // content/guides/*.json: naming guides (see generateGuidePage)
+  const guidesDir = path.join(CONTENT_DIR, 'guides');
+  const guides = fs.existsSync(guidesDir) ? fs.readdirSync(guidesDir).filter((f) => f.endsWith('.json')).sort()
+    .map((f) => ({ slug: path.basename(f, '.json'), ...JSON.parse(fs.readFileSync(path.join(guidesDir, f), 'utf8')) })) : [];
+  return { categories, generators, homepage, sisterLinks, guides };
 }
 
 function countNames(node) {
@@ -52,9 +56,17 @@ function recipesIn(recipe) {
 }
 
 /** Returns { errors: [], warnings: [] }, each message naming its file. */
-function validate({ categories, generators, homepage = { popular: [] }, sisterLinks = { boxes: [] } }) {
+function validate({ categories, generators, homepage = { popular: [] }, sisterLinks = { boxes: [] }, guides = [] }) {
   const errors = [];
   const warnings = [];
+  for (const g of guides) {
+    const at = `guides/${g.slug}.json`;
+    if (!/^[a-z0-9-]+$/.test(g.slug)) errors.push(`${at}: the file name must be lowercase-with-hyphens`);
+    for (const f of ['title', 'description', 'published', 'intro']) if (!g[f]) errors.push(`${at}: needs "${f}"`);
+    if (g.description && g.description.length > 160) warnings.push(`${at}: description is over 160 characters`);
+    if (!(g.sections || []).length) errors.push(`${at}: needs at least one section`);
+    for (const k of g.related || []) if (!generators[k]) errors.push(`${at}: related generator "${k}" doesn't exist`);
+  }
   for (const box of sisterLinks.boxes || []) {
     const id = box.id || '?';
     if (!/^https:\/\//.test(box.url || '')) errors.push(`sister-links.json: box "${id}" needs an https "url"`);

@@ -901,6 +901,43 @@
     ]
   },
   {
+    "name": "Writing",
+    "slug": "writing",
+    "icon": "✍️",
+    "navLabel": "Writing",
+    "heading": "Name Generators for Writers",
+    "seoTitle": "Name Generators for Writers: Stories, Characters and Titles",
+    "description": "Story prompts, characters, villains, sidekicks, legends and titles: generators for writers stuck on the next name or idea.",
+    "seoDescription": "Free name generators and story tools for writers: story prompts, local legends, villain, sidekick, superhero, NPC and fairy-tale names, epithets and titles.",
+    "intro": "<p>Every story needs names, and most writers have stalled on one. These generators cover the people in your story, the legends around it and the titles on it. Stuck before the names? Start with the <a href=\"../posts/story-prompt-generator.html\">Story Prompt Generator</a>.</p>",
+    "featured": [
+      {
+        "key": "story_prompt",
+        "note": "a character, setting, plot or twist, for kids or adults."
+      },
+      {
+        "key": "villain",
+        "note": "villains with titles, from petty to world-ending."
+      },
+      {
+        "key": "local_legend",
+        "note": "invented British folk legends with a warning."
+      }
+    ],
+    "generators": [
+      "story_prompt",
+      "local_legend",
+      "fairy_tale",
+      "epithet",
+      "villain",
+      "sidekick",
+      "superhero",
+      "npc",
+      "horror_movie",
+      "song_title"
+    ]
+  },
+  {
     "name": "Places",
     "slug": "places",
     "icon": "🗺️",
