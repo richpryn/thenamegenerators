@@ -25,7 +25,57 @@
       "youtube",
       "podcast",
       "gamertag"
-    ]
+    ],
+    "eyebrow": "Names for online projects",
+    "approach": {
+      "heading": "How to approach blog and brand names",
+      "text": "<p>An online name has to do four jobs at once: web address, social handle, logo and something people can say to a friend. Short and distinctive beats clever. Many of the best blog names describe a feeling rather than the topic, so a food blog doesn't need the word 'food' in it. Brands often borrow a real word from somewhere unexpected. Whatever you choose, check the domain and the handles before you fall in love with it.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Describe a feeling, not the topic.",
+        "Check the domain first.",
+        "Grab every social handle.",
+        "Avoid numbers and hyphens.",
+        "Say it to a friend and see."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name a blog, a brand, a channel or a podcast.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Licking the Spoon",
+          "type": "BLOG",
+          "verdict": "A food blog that tastes good before you've read a recipe.",
+          "breakdown": "It describes the best moment in baking instead of using the word 'food', which makes it warmer and easier to remember.",
+          "motif": "pencil"
+        },
+        {
+          "name": "Waymarker",
+          "type": "BRAND",
+          "verdict": "A brand name for anything outdoors.",
+          "breakdown": "A waymarker is a sign that shows walkers the route, so the word already means 'this way' and needs no explaining.",
+          "motif": "tag"
+        },
+        {
+          "name": "The Ladle Life",
+          "type": "CHANNEL",
+          "verdict": "A cooking channel that's easy to say and to search.",
+          "breakdown": "Repeating the L sound makes it catchy, and 'life' suggests everyday cooking rather than a restaurant kitchen.",
+          "motif": "old-tv"
+        },
+        {
+          "name": "The Unscripted Couch",
+          "type": "PODCAST",
+          "verdict": "A podcast that tells you it's relaxed before you press play.",
+          "breakdown": "'Unscripted' sets the tone and 'couch' sets the scene: a chat between friends, not a lecture.",
+          "motif": "mic"
+        }
+      ]
+    }
   },
   {
     "name": "Events",
@@ -46,7 +96,57 @@
     "generators": [
       "event",
       "christmas_team"
-    ]
+    ],
+    "eyebrow": "Parties, quizzes and get-togethers",
+    "approach": {
+      "heading": "How to approach event names",
+      "text": "<p>An event name has one job: tell people what it is and make them want to come. The best ones say what happens (a quiz, a walk, a tournament), who it's for, and add a twist, usually a pun on a phrase everyone knows. Keep it short enough to fit on a poster and a ticket, and easy to say out loud, because most people will hear about it from a friend. For a quiz, the team names are part of the fun too.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Say what happens in the name.",
+        "Pun on a phrase everyone knows.",
+        "Keep it short enough for a poster.",
+        "Say it out loud to a friend.",
+        "Add the year if it repeats."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name parties, quizzes, fundraisers, tournaments and the teams that play in them.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Last Pint Standing",
+          "type": "STAG DO",
+          "verdict": "A stag do name with the evening's plan built in.",
+          "breakdown": "A pun on 'last man standing', which everyone already knows, so it lands straight away.",
+          "motif": "cup"
+        },
+        {
+          "name": "Around the World Quiz",
+          "type": "QUIZ NIGHT",
+          "verdict": "Plain, clear and instantly understood.",
+          "breakdown": "It tells people exactly what kind of questions to expect, which is often more useful than a pun.",
+          "motif": "globe"
+        },
+        {
+          "name": "Checkmate Rumble",
+          "type": "TOURNAMENT",
+          "verdict": "A chess tournament with a bit of swagger.",
+          "breakdown": "It puts a chess term next to a wrestling word, so a quiet game sounds like a contest worth watching.",
+          "motif": "crown"
+        },
+        {
+          "name": "Driving Home for Quizmas",
+          "type": "QUIZ TEAM",
+          "verdict": "A Christmas quiz team name people will sing.",
+          "breakdown": "A one-word pun on Chris Rea's 'Driving Home for Christmas', a song most British quizzers know by heart.",
+          "motif": "note"
+        }
+      ]
+    }
   },
   {
     "name": "Halloween",
@@ -105,7 +205,57 @@
       "vampire_clan",
       "werewolf_pack",
       "gargoyle"
-    ]
+    ],
+    "eyebrow": "Spooky characters and places",
+    "approach": {
+      "heading": "How to approach Halloween names",
+      "text": "<p>A good Halloween name tells people what kind of scary they're in for before they read another word. Britain's ghosts are named the way witnesses described them, by colour and by who they seemed to be, which is why so many old houses have a Grey Lady. Vampires borrow titles and old family names, haunted inns borrow the pattern of real pub signs, and costumes and pets suit a pun. Decide first whether you want a shiver or a grin, then pick the style that matches.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Match the name to the scare level.",
+        "Name a ghost by its colour or its job.",
+        "Give a vampire a title and a family.",
+        "Puns suit costumes and pets.",
+        "Keep children's names friendly."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name ghosts, vampires, witches, haunted houses and everything else that goes bump in the night.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "The Grey Ploughboy",
+          "type": "GHOST",
+          "verdict": "A local ghost with a sad story you can almost hear.",
+          "breakdown": "British ghosts are often named for their colour and who they were, like the Grey Ladies of old houses. A ploughboy makes it a farm ghost, out in the fields at dusk.",
+          "motif": "ghost"
+        },
+        {
+          "name": "Dame Liliane Dunraven",
+          "type": "VAMPIRE",
+          "verdict": "An old-world vampire who expects to be addressed properly.",
+          "breakdown": "A grand title, an elegant French first name, and a surname built from 'dun', an old word for dull greyish-brown, and 'raven'. It sounds like a family that has owned the same castle for centuries.",
+          "motif": "bat"
+        },
+        {
+          "name": "The Toad and Chain",
+          "type": "HAUNTED PUB",
+          "verdict": "A pub sign you'd hesitate to walk under.",
+          "breakdown": "It follows the 'A and B' pattern of real English pub names, like the Rose and Crown, but swaps in two grim objects. The familiar shape makes it believable; the toad and chain make it uneasy.",
+          "motif": "pub-sign"
+        },
+        {
+          "name": "Thrift Meadowsweet and her owl, Professor",
+          "type": "WITCH",
+          "verdict": "A kindly hedge witch with a familiar who knows best.",
+          "breakdown": "Thrift and meadowsweet are both wild British plants, the kind a hedge witch would gather. The owl's name adds the joke.",
+          "motif": "cauldron"
+        }
+      ]
+    }
   },
   {
     "name": "Christmas",
@@ -142,7 +292,57 @@
         "key": "reindeer",
         "note": "names for a new member of Santa's sleigh team."
       }
-    ]
+    ],
+    "eyebrow": "Festive names for the whole family",
+    "approach": {
+      "heading": "How to approach Christmas names",
+      "text": "<p>Christmas names work best when they sound warm and a little silly. Santa's reindeer show how: the 1823 poem <em>A Visit from St. Nicholas</em> named them after what they do (Dasher, Dancer, Prancer), and Rudolph joined them in 1939. Elves suit a cosy first name, a festive surname and a workshop job. Snowmen suit whatever they're wearing. For quiz teams and family games, a pun on a carol or a cracker joke is all you need.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Mix a festive word with a cosy one.",
+        "Give an elf a workshop job.",
+        "Give a snowman an outfit.",
+        "Puns win quiz team rounds.",
+        "Keep kids' names easy to spell."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name elves, reindeer, snowmen, festive pets and Christmas quiz teams.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Jinglehooves",
+          "type": "REINDEER",
+          "verdict": "A reindeer you can hear coming across the roof.",
+          "breakdown": "Two festive words joined into one, a sound and a part of the animal, in the same spirit as Dasher and Prancer.",
+          "motif": "reindeer"
+        },
+        {
+          "name": "Dolly Sprinklesocks, Toy Train Driver",
+          "type": "ELF",
+          "verdict": "An elf with a proper job at the North Pole.",
+          "breakdown": "A cosy old-fashioned first name, a silly compound surname, and a workshop job that tells you what she does all December.",
+          "motif": "christmas-elf"
+        },
+        {
+          "name": "Duke of Drifts, with a paper crown from a cracker",
+          "type": "SNOWMAN",
+          "verdict": "A very grand snowman on a very small budget.",
+          "breakdown": "A noble title for something made of snow, and an outfit borrowed from the Christmas dinner table. The crown is the joke.",
+          "motif": "snowman"
+        },
+        {
+          "name": "Santa Clues",
+          "type": "QUIZ TEAM",
+          "verdict": "The team name every quizmaster wishes they'd thought of.",
+          "breakdown": "Change one letter of Santa Claus and it becomes a quiz team that's out to find the answers. Short puns like this are easy to read out and hard to forget.",
+          "motif": "star"
+        }
+      ]
+    }
   },
   {
     "name": "Fantasy",
@@ -218,7 +418,57 @@
       "elden_ring",
       "monster",
       "spell"
-    ]
+    ],
+    "eyebrow": "Fantasy characters and creatures",
+    "approach": {
+      "heading": "How to approach fantasy names",
+      "text": "<p>The best fantasy names sound as if they belong to a language, even an invented one. Tolkien built his elves' names from languages he made up, and took most of his dwarves' names from the Old Norse poem the Völuspá, which is why they still sound right together. Decide how each people sounds before you name anyone: soft and flowing for elves, hard and blunt for dwarves and orcs, grand and ancient for dragons. Then keep to it, so a reader can tell where a character comes from before they're introduced.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Give each people its own sound.",
+        "Keep names easy to read aloud.",
+        "Add an epithet for a reputation.",
+        "Avoid famous names from books and games.",
+        "Vary the length across a cast."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name the heroes, monsters and places of a fantasy world.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Nervor Flintmantle",
+          "type": "DWARF",
+          "verdict": "A dwarf you can picture at the forge.",
+          "breakdown": "Flint and mantle are both plain English words, one hard and one heavy, which is the way dwarven surnames tend to work: stone, metal and things you'd make from them.",
+          "motif": "helm"
+        },
+        {
+          "name": "Glacarax, the Long Winter",
+          "type": "DRAGON",
+          "verdict": "An ice dragon whose name sounds like cracking.",
+          "breakdown": "Glac- comes from the Latin for ice, as in glacier, and the hard -arax ending gives it a growl. The epithet tells you what happens when it wakes.",
+          "motif": "dragon"
+        },
+        {
+          "name": "Lethandor",
+          "type": "ELF",
+          "verdict": "A flowing elven name with a sense of place.",
+          "breakdown": "Soft consonants and three easy syllables make it sound elvish, and the -dor ending echoes Tolkien's Elvish, where it means land.",
+          "motif": "leaf"
+        },
+        {
+          "name": "Riverlock, the Mill City",
+          "type": "CITY",
+          "verdict": "A working city with its trade in its name.",
+          "breakdown": "A river lock and a mill are things you'd actually find there, and the epithet works like a real nickname, the way Manchester was called Cottonopolis.",
+          "motif": "city"
+        }
+      ]
+    }
   },
   {
     "name": "World-Building",
@@ -434,7 +684,57 @@
       "nymph",
       "satyr",
       "kraken"
-    ]
+    ],
+    "eyebrow": "Characters for your campaign",
+    "approach": {
+      "heading": "How to approach D&D names",
+      "text": "<p>A good D&amp;D name tells the table who someone is in one breath. The Player's Handbook gives each race its own naming habits, from dwarven clan names to the virtue names some tieflings take, so start with the character's people and let the name follow. Then think about how often it will be said: a player character's name gets shouted across the table every session, so it should be quick to say and easy to spell. For NPCs, a name plus one memorable detail does more than a page of backstory.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Start with the character's race.",
+        "Make it easy to say at the table.",
+        "Give each NPC one memorable quirk.",
+        "Use an epithet for a big reputation.",
+        "Keep a list of names you've used."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name player characters, NPCs, monsters and the places they meet.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Boldness",
+          "type": "TIEFLING",
+          "verdict": "A virtue name with a challenge built in.",
+          "breakdown": "Some tieflings name themselves after an idea rather than a person. Boldness tells everyone what this character means to live up to, and gives the player something to play.",
+          "motif": "horns"
+        },
+        {
+          "name": "Toby Larkspur",
+          "type": "HALFLING",
+          "verdict": "A halfling who sounds like a good neighbour.",
+          "breakdown": "An ordinary, friendly first name with a garden-flower surname: larkspur is a cottage-garden plant. Halfling names work best when they sound homely.",
+          "motif": "round-door"
+        },
+        {
+          "name": "The Retired Henchman",
+          "type": "TAVERN",
+          "verdict": "A tavern with a story on its sign.",
+          "breakdown": "It follows the real pattern of pub names, the plus a figure, and raises an obvious question: whose henchman, and why did he retire?",
+          "motif": "inn-sign"
+        },
+        {
+          "name": "Kelgra Stonebridge, a talkative midwife who sells a little too cheaply",
+          "type": "NPC",
+          "verdict": "A ready-made NPC with a hook.",
+          "breakdown": "A name that fits her people, a job, and one odd detail. Why is she selling so cheaply? The players will want to know.",
+          "motif": "speech-bubble"
+        }
+      ]
+    }
   },
   {
     "name": "Minecraft",
@@ -475,7 +775,57 @@
         "key": "minecraft_world",
         "note": "world names for survival, hardcore, creative, cosy and funny worlds."
       }
-    ]
+    ],
+    "eyebrow": "Names for blocks and builders",
+    "approach": {
+      "heading": "How to approach Minecraft names",
+      "text": "<p>Minecraft names have practical limits. A Java Edition username is 3 to 16 characters, using letters, numbers and underscores, so short wins. Everything else you name with a name tag or an anvil: a pet, a villager, a sword. The best Minecraft names come from the game itself, from the mobs, the blocks and the ways you've died, because every player recognises them. A joke about falling in lava lands better on a server than a name that could belong to any game.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Keep usernames to 16 characters.",
+        "Borrow from mobs, blocks and biomes.",
+        "Name pets with a name tag.",
+        "Rename swords and tools in an anvil.",
+        "Check a username is free first."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name your player, your pets, your villagers, your world and your server.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "FellInLava",
+          "type": "USERNAME",
+          "verdict": "A username that every Minecraft player has earned at least once.",
+          "breakdown": "An honest confession in ten characters, well under the 16-character limit. Running the words together keeps it readable without spaces.",
+          "motif": "block"
+        },
+        {
+          "name": "Hmmbert Tanner",
+          "type": "VILLAGER",
+          "verdict": "A villager name that sounds exactly like a villager.",
+          "breakdown": "Villagers mumble 'hmm' at you, so it's built into the first name, and Tanner is the job: a leatherworker who works with hides.",
+          "motif": "name-tag"
+        },
+        {
+          "name": "Probably Not Haunted",
+          "type": "WORLD",
+          "verdict": "A world name that makes friends want to join, carefully.",
+          "breakdown": "Understatement does the work: the name promises nothing and suggests everything, which suits a world full of caves and mobs.",
+          "motif": "map"
+        },
+        {
+          "name": "Bedtime Skipper",
+          "type": "SWORD",
+          "verdict": "A sword that knows what you'd rather be doing.",
+          "breakdown": "Sleeping in a bed skips the night in Minecraft, so the joke is that this sword clears the mobs that stop you getting there.",
+          "motif": "sword"
+        }
+      ]
+    }
   },
   {
     "name": "Folklore",
@@ -513,7 +863,57 @@
       "vampire",
       "monster",
       "scarecrow"
-    ]
+    ],
+    "eyebrow": "Old tales and things that go bump",
+    "approach": {
+      "heading": "How to approach folklore names",
+      "text": "<p>Folklore names are what people said around the fire, so they're plain and often careful. In Britain and Ireland, fairies were called the good folk or the fair folk, partly so as not to offend them. Ghosts were named for what witnesses saw: a colour, a job, a habit, like the many Grey Ladies of old houses. Werewolf names lean on the old word for wolf, which turns up in names like Wolfgang and the Old English <em>wulf</em>. Keep folklore names simple, local and a little uneasy, as if someone is still telling the story.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Name it the way locals would.",
+        "Describe what people saw.",
+        "Keep fairy names polite.",
+        "Use old words for old creatures.",
+        "Leave a little mystery."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name ghosts, fairies, werewolves and the characters of old tales.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Ealdwulf",
+          "type": "WEREWOLF",
+          "verdict": "A werewolf name with the wolf hidden inside.",
+          "breakdown": "Old English eald means old and wulf means wolf, so it's an ordinary Anglo-Saxon name that turns out to be a warning.",
+          "motif": "wolf-moon"
+        },
+        {
+          "name": "Hester the Drifting",
+          "type": "GHOST",
+          "verdict": "A ghost named the way witnesses would describe her.",
+          "breakdown": "An old-fashioned first name and what she does, which is how real ghosts get their names: the drifting lady on the landing.",
+          "motif": "ghost"
+        },
+        {
+          "name": "Bodkin",
+          "type": "FAIRY",
+          "verdict": "A small, sharp fairy name.",
+          "breakdown": "A bodkin is a small pointed tool, a good name for a little hob who might be helpful or might prick your finger.",
+          "motif": "mushroom"
+        },
+        {
+          "name": "The Hag of the River Ford",
+          "type": "FAIRY TALE",
+          "verdict": "A fairy-tale figure you'd take the long way round to avoid.",
+          "breakdown": "No name at all, just what she is and where she waits, the way the old tales leave most characters unnamed.",
+          "motif": "hood"
+        }
+      ]
+    }
   },
   {
     "name": "Mythical Creatures",
@@ -571,7 +971,57 @@
         "key": "griffin",
         "note": "noble, fierce and ancient names for gryphons."
       }
-    ]
+    ],
+    "eyebrow": "Creatures of myth and legend",
+    "approach": {
+      "heading": "How to approach creature names",
+      "text": "<p>Mythical creatures arrive with a history, and their names should respect it. Many of them come to us through Greek: the griffin from <em>grups</em>, the hydra from the word for a water snake. The ancient historian Herodotus wrote that the phoenix came to Heliopolis, the Egyptian city of the sun. A good creature name draws on the same roots or on what the creature does: fire for a phoenix, the sea for a kraken, gold and mountains for a griffin. Then decide whether it should be noble, frightening or friendly, and choose the style to match.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Name it after what it does.",
+        "Use the creature's old roots.",
+        "Match the name to its temper.",
+        "Add a home or a title for grandeur.",
+        "Keep cute names short."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name dragons, griffins, sea monsters and every beast in between.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Ignis of Heliopolis",
+          "type": "PHOENIX",
+          "verdict": "A phoenix with ancient history in its name.",
+          "breakdown": "Ignis is Latin for fire, and Heliopolis is the Egyptian city of the sun where Herodotus said the phoenix came.",
+          "motif": "phoenix"
+        },
+        {
+          "name": "Leonidas Sunmane",
+          "type": "GRIFFIN",
+          "verdict": "A noble griffin, half lion and all pride.",
+          "breakdown": "Leon- is the Greek for lion, which is half of every griffin, and Sunmane adds the gold that griffins were said to guard.",
+          "motif": "griffin"
+        },
+        {
+          "name": "Brinemaw",
+          "type": "KRAKEN",
+          "verdict": "A sea monster in two blunt syllables.",
+          "breakdown": "Brine is salt water and a maw is a gaping mouth, so the name says exactly what sailors are afraid of.",
+          "motif": "tentacle"
+        },
+        {
+          "name": "Fionnuala of the Misty Vale",
+          "type": "UNICORN",
+          "verdict": "A gentle unicorn with a Celtic name.",
+          "breakdown": "Fionnuala is an Irish name meaning \"white shoulder\", which suits a white horse, and the misty vale gives it somewhere hidden to live.",
+          "motif": "unicorn"
+        }
+      ]
+    }
   },
   {
     "name": "Animals & Pets",
@@ -601,7 +1051,57 @@
       "black_cat",
       "christmas_pet",
       "minecraft_pet"
-    ]
+    ],
+    "eyebrow": "Pets, farm animals and dinosaurs",
+    "approach": {
+      "heading": "How to approach animal names",
+      "text": "<p>A pet name gets called out hundreds of times, so it needs to be easy to say: two syllables are ideal, and a name with a clear vowel carries across a garden. After that, match it to the animal's personality, grand, cute or silly. Invented creatures work differently. Real dinosaurs are named from Greek and Latin descriptions, starting with the word dinosaur itself, coined by Richard Owen in 1842 from the Greek for 'terrible lizard'. A made-up species sounds right when it's built the same way.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Two syllables are easy to call.",
+        "Match the name to the personality.",
+        "Give a grand title to a small pet.",
+        "Build dinosaurs from Greek and Latin.",
+        "Shout it across the garden first."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name pets, farm animals, Easter bunnies and dinosaurs real and imagined.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Pyrorhinus (fire nose)",
+          "type": "DINOSAUR",
+          "verdict": "A made-up dinosaur that sounds like it belongs in a museum.",
+          "breakdown": "Greek 'pyr' (fire) plus 'rhinos' (nose), joined the way palaeontologists name real species.",
+          "motif": "sauropod"
+        },
+        {
+          "name": "Baroness Bonetail",
+          "type": "PET DINOSAUR",
+          "verdict": "A toy dinosaur with a fearsome reputation.",
+          "breakdown": "Alliteration makes it easy to say, and the grand title is funny on a cuddly toy.",
+          "motif": "pet-trex"
+        },
+        {
+          "name": "Princess Oinkington",
+          "type": "FARM ANIMAL",
+          "verdict": "A pig who thinks she lives in a palace.",
+          "breakdown": "The '-ington' ending of grand English surnames and place names, joined to an oink. Small joke, big personality.",
+          "motif": "sheep"
+        },
+        {
+          "name": "Professor Velvetpaw",
+          "type": "CAT",
+          "verdict": "A cat with a doctorate in looking unimpressed.",
+          "breakdown": "A grand title and a soft, descriptive surname, which suits a cat that rules the house.",
+          "motif": "black-cat"
+        }
+      ]
+    }
   },
   {
     "name": "Mythology",
@@ -643,7 +1143,57 @@
         "key": "chinese_dragon",
         "note": "dragon names from real Chinese words, with their meanings."
       }
-    ]
+    ],
+    "eyebrow": "Gods, heroes and the old stories",
+    "approach": {
+      "heading": "How to approach mythology names",
+      "text": "<p>Mythological names usually mean something. Norse names are often built from two parts, many of them honouring a god, like the Thor- in Thorgils and Thorgerd. Greek and Roman names point to a quality or a place, and Japanese names often have a meaning you can translate. For invented gods, start with the domain, then find a name that sounds as old as the thing it rules. Remember that some of these traditions are still practised: borrow the patterns, and treat real gods with respect.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Start a god's name with its domain.",
+        "Build Norse names from two parts.",
+        "Give a name a meaning you can explain.",
+        "Treat living traditions with respect.",
+        "Use epithets for gods and heroes."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name gods, valkyries, fox spirits and the heroes of the old stories.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Thorgils Fairhair",
+          "type": "VIKING",
+          "verdict": "A Norse name with a family's faith in it.",
+          "breakdown": "Thor- honours the god Thor, as so many Norse names did, and Fairhair is the kind of nickname real Norsemen had: Harald Fairhair was a king of Norway.",
+          "motif": "longship"
+        },
+        {
+          "name": "Svanveig the Wolf-Rider",
+          "type": "VALKYRIE",
+          "verdict": "A valkyrie who is both graceful and dangerous.",
+          "breakdown": "Svan- is the Norse for swan, and in the old poems some valkyries are swan-maidens. The epithet adds the battlefield.",
+          "motif": "feather-wings"
+        },
+        {
+          "name": "Kanzashi",
+          "type": "KITSUNE",
+          "verdict": "A fox spirit named after something beautiful and small.",
+          "breakdown": "Kanzashi are traditional Japanese hair ornaments, which suits a fox who appears as a woman and leaves a single clue behind.",
+          "motif": "cherry-blossom"
+        },
+        {
+          "name": "Dageth, Keeper of the Forest",
+          "type": "GOD",
+          "verdict": "An invented god with a clear purpose.",
+          "breakdown": "A short, old-sounding name and a domain that tells worshippers what to pray for, the way real pantheons divide the world between their gods.",
+          "motif": "sun-amulet"
+        }
+      ]
+    }
   },
   {
     "name": "Wuxia & Xianxia",
@@ -679,7 +1229,57 @@
         "key": "cultivator_title",
         "note": "titles for immortals, sword saints, demon lords and alchemists."
       }
-    ]
+    ],
+    "eyebrow": "Martial heroes and immortal sects",
+    "approach": {
+      "heading": "How to approach wuxia and xianxia names",
+      "text": "<p>In Chinese names the family name comes first, so Feng Yao is Yao of the Feng family. In wuxia stories, though, most fighters are known by a nickname earned in the jianghu, the world of martial artists: the Smiling Tiger, the Drunken Immortal. Sects are named after a mountain, a colour or a sacred animal, the way real schools took the names of Wudang and Emei mountains. Techniques borrow from Chinese cosmology, such as the Seven Stars of the Northern Dipper. Combine a family name, a reputation and a school, and a character has a place in the martial world.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Put the family name first.",
+        "Earn a nickname in the jianghu.",
+        "Name sects after mountains or colours.",
+        "Give techniques a grade and an animal.",
+        "Use titles for masters and elders."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name cultivators, sects, techniques and martial titles.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Feng Yao, the Smiling Tiger",
+          "type": "CULTIVATOR",
+          "verdict": "A martial artist known more by reputation than name.",
+          "breakdown": "Family name first, then the given name, then a jianghu nickname that warns you: someone who smiles while they fight is the most dangerous person in the room.",
+          "motif": "jian"
+        },
+        {
+          "name": "Emerald Bamboo Hall",
+          "type": "SECT",
+          "verdict": "A sect that sounds calm, disciplined and old.",
+          "breakdown": "A colour, a plant and a building, the classic pattern for sect names. Bamboo stands for resilience and integrity in Chinese culture.",
+          "motif": "cloud"
+        },
+        {
+          "name": "Seven Stars Mist Step",
+          "type": "TECHNIQUE",
+          "verdict": "A footwork technique named after the night sky.",
+          "breakdown": "The Seven Stars are the Northern Dipper, important in Chinese astronomy and Daoism, and Mist Step tells you how the move looks: there one moment, gone the next.",
+          "motif": "jian"
+        },
+        {
+          "name": "Cauldron Master of the Healing Spring",
+          "type": "TITLE",
+          "verdict": "A title for the alchemist everyone needs.",
+          "breakdown": "In xianxia stories, pills are refined in a cauldron, so a Cauldron Master is the person who makes them, and the Healing Spring says which kind.",
+          "motif": "cauldron"
+        }
+      ]
+    }
   },
   {
     "name": "Music",
@@ -717,7 +1317,57 @@
       "wu_tang",
       "dj",
       "podcast"
-    ]
+    ],
+    "eyebrow": "Names for musicians",
+    "approach": {
+      "heading": "How to approach music names",
+      "text": "<p>A music name has to work out loud before it works on paper: shouted by a promoter, typed into a search bar, printed small on a festival poster. The best ones set a mood in a few words. Bands have long taken their names from whatever was to hand: a book title, a line in a film, a street sign. Start with the feeling of the music, then find two or three words that carry it, and check nobody on the streaming services already has them.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Say it as a gig announcement.",
+        "Two words are easier to search than one.",
+        "Let the name match the sound.",
+        "Check streaming services first.",
+        "Grab the social handles too."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name your band, your album, your songs and the night you play them.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "The Ragged Hares",
+          "type": "BAND",
+          "verdict": "A band you can picture before you hear a note.",
+          "breakdown": "'The' plus an adjective plus an animal is one of the oldest band patterns, and 'ragged' gives it rough edges, which suits folk or indie rock.",
+          "motif": "guitar"
+        },
+        {
+          "name": "Notes from the Valley",
+          "type": "ALBUM",
+          "verdict": "An album title that sounds like a collection of letters home.",
+          "breakdown": "The 'Notes from…' pattern tells listeners the songs belong together, as if written in one place and sent back from it.",
+          "motif": "vinyl"
+        },
+        {
+          "name": "Talking to Static Before the Rain",
+          "type": "SONG",
+          "verdict": "A whole scene in seven words.",
+          "breakdown": "A verb, an odd object and a time of day make a small story, which is why the title works as a prompt for writing the song.",
+          "motif": "note"
+        },
+        {
+          "name": "raincoat.",
+          "type": "ARTIST",
+          "verdict": "A soft, quiet alias for a bedroom producer.",
+          "breakdown": "Lower case and a full stop are a lo-fi and ambient habit: the name looks understated, and an everyday object makes it easy to remember.",
+          "motif": "headphones"
+        }
+      ]
+    }
   },
   {
     "name": "Music by Genre",
@@ -784,7 +1434,57 @@
       "score_title",
       "choir",
       "dungeon_synth"
-    ]
+    ],
+    "eyebrow": "Names by genre",
+    "approach": {
+      "heading": "How to approach genre names",
+      "text": "<p>Every genre has its own naming habits, and listeners notice when a name breaks them. Black metal reaches for winter and old tongues, K-pop for short, bright words, country for real-sounding names with a middle name or a nickname, and lo-fi for soft lower case. Before you name a project, look at what sits next to it on a playlist: the right name sounds like it belongs there, but not so much that it gets lost.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Learn your genre's naming habits.",
+        "Fit in, but don't copy.",
+        "Check the name on a playlist.",
+        "Search streaming services first.",
+        "Keep it easy to spell."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to find a name that sounds like it belongs in your genre.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Sepulchral Catacomb",
+          "type": "METAL BAND",
+          "verdict": "Doom and death metal in two heavy words.",
+          "breakdown": "'Sepulchral' comes from the Latin sepulcrum, a tomb, so the name is about burial twice over. Long Latin-rooted words are a metal tradition.",
+          "motif": "electric-guitar"
+        },
+        {
+          "name": "Johnny Ray Whitlock",
+          "type": "COUNTRY ARTIST",
+          "verdict": "A name that sounds like it's been on the radio for years.",
+          "breakdown": "Two first names together, then a solid surname, is a long-standing country habit. It sounds like a real person from a real small town.",
+          "motif": "cowboy-hat"
+        },
+        {
+          "name": "The Lammas Fair",
+          "type": "FOLK BAND",
+          "verdict": "A folk band named after an old English festival.",
+          "breakdown": "Lammas, on 1 August, was the harvest festival when bread from the new wheat was blessed; the name comes from the Old English for 'loaf mass'.",
+          "motif": "harmonica"
+        },
+        {
+          "name": "Marguerite \"Sweet Lou\" Ingersoll",
+          "type": "JAZZ ARTIST",
+          "verdict": "A jazz singer whose nickname arrives before she does.",
+          "breakdown": "A nickname in quotation marks between first name and surname is a jazz tradition, and 'Sweet Lou' tells you about the voice.",
+          "motif": "saxophone"
+        }
+      ]
+    }
   },
   {
     "name": "Objects",
@@ -824,7 +1524,57 @@
       "japanese_sword",
       "game_of_thrones_sword",
       "kawaii_food"
-    ]
+    ],
+    "eyebrow": "Weapons, wands and treasures",
+    "approach": {
+      "heading": "How to approach object names",
+      "text": "<p>Named weapons are an old tradition. In <em>Beowulf</em> the hero's swords have names, Hrunting and Nægling, and Norse poets called weapons by riddling kennings rather than plain words. A good weapon name says what it does or what it's made of, and a legendary one gets an epithet as well. Wands and staffs suit the wood they're cut from. And a very strong weapon with a very modest name, like a sword called the Butter Knife, is a joke that never gets old.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Name it after what it does.",
+        "Add an epithet for a legendary blade.",
+        "Use the material: oak, iron, ash.",
+        "Short names are easier to shout.",
+        "Give strong weapons modest names."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name swords, axes, wands, staffs, shields and the treasures in your hoard.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Duskdrinker, the Hollow Oath",
+          "type": "SWORD",
+          "verdict": "A dark blade with a broken promise behind it.",
+          "breakdown": "A two-part compound in the old English style, with an epithet that hints at a story: someone swore on this sword and didn't keep their word.",
+          "motif": "sword"
+        },
+        {
+          "name": "Anar-macil (Sun-sword)",
+          "type": "ELVEN SWORD",
+          "verdict": "An elven blade whose name is a translation.",
+          "breakdown": "Built from two Quenya words in Tolkien's Elvish: 'anar' (sun) and 'macil' (sword).",
+          "motif": "sword-crown"
+        },
+        {
+          "name": "Ravenwhisper, a pear wand with a moonstone dust core",
+          "type": "WAND",
+          "verdict": "A wand with a name, a wood and a secret.",
+          "breakdown": "A quiet, dark name, then the details that make a wand feel real: what it's carved from and what's inside it.",
+          "motif": "wand"
+        },
+        {
+          "name": "Red Maud, the Kindling-Maker",
+          "type": "AXE",
+          "verdict": "A much-loved axe that has chopped a lot of firewood.",
+          "breakdown": "People have long given favourite tools women's pet names, like the great cannon Mons Meg. The epithet tells you its real job.",
+          "motif": "axe"
+        }
+      ]
+    }
   },
   {
     "name": "Organisations",
@@ -857,7 +1607,57 @@
       "guild",
       "brand",
       "cafe"
-    ]
+    ],
+    "eyebrow": "Groups and businesses",
+    "approach": {
+      "heading": "How to approach organisation names",
+      "text": "<p>An organisation's name tells people what it stands for before they know anything else. Real guilds and companies named themselves after their trade, their patron or a symbol on their sign, which is why so many old firms are 'the Company of' something. A modern business needs a name that's short, easy to spell and free to use as a web address. Decide whether the group is real or imagined first: a fantasy guild can be grand, but a real café needs a name people can find.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Decide: real business or fictional?",
+        "Keep real names short to spell.",
+        "Check the domain and handles.",
+        "Search trademarks before you print.",
+        "Give fictional groups a symbol."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name a business, a guild, a clan or the café on the corner.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Lodestar",
+          "type": "BUSINESS",
+          "verdict": "A business name that promises to point you the right way.",
+          "breakdown": "A lodestar is a star used to steer by, usually the Pole Star, so the name suggests guidance without saying what the business does.",
+          "motif": "star"
+        },
+        {
+          "name": "The Company of the Copper Hound",
+          "type": "GUILD",
+          "verdict": "An adventurers' company that sounds like it has a sign over its door.",
+          "breakdown": "'The Company of the' plus an object follows old trade and inn-sign naming, and a copper hound suggests something loyal but not too grand.",
+          "motif": "banner"
+        },
+        {
+          "name": "Clan Thornmere, motto: \"First In and Last Out\"",
+          "type": "CLAN",
+          "verdict": "A clan you'd want on your side.",
+          "breakdown": "Thorn and mere (an old word for a lake) make a believable place-name, and a short motto in plain words follows the Scottish clan tradition.",
+          "motif": "round-shield"
+        },
+        {
+          "name": "Page & Spoon",
+          "type": "CAFÉ",
+          "verdict": "A café that tells you it's good for a long read.",
+          "breakdown": "Pairing two everyday objects with an ampersand is a popular café pattern, and these two promise books and food.",
+          "motif": "cup"
+        }
+      ]
+    }
   },
   {
     "name": "Characters",
@@ -898,7 +1698,57 @@
       "villain",
       "stage_name",
       "story_prompt"
-    ]
+    ],
+    "eyebrow": "Characters and personas",
+    "approach": {
+      "heading": "How to approach character names",
+      "text": "<p>A character's name is the first thing a reader learns about them, so it should hint at who they are. Real names came from somewhere: a parent, a place, a job or a nickname that stuck. Give your character the same history. A knight carries a family name and a deed, a pirate a nickname earned at sea, a villain a title they chose themselves. Then say it out loud next to the other names in your story, so no two sound alike.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Let the name hint at the character.",
+        "Give nicknames a story.",
+        "Avoid names that start alike.",
+        "Say it out loud in a sentence.",
+        "Keep villains' titles self-chosen."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name heroes, villains, sidekicks and everyone in between.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Sir Siward the Pious",
+          "type": "KNIGHT",
+          "verdict": "A knight with a reputation to live up to.",
+          "breakdown": "Siward is a genuine Old English name, and an epithet like 'the Pious' is how real medieval rulers and knights were told apart.",
+          "motif": "helm"
+        },
+        {
+          "name": "Moth-Wing",
+          "type": "ASSASSIN",
+          "verdict": "A codename that's quiet, soft and gives nothing away.",
+          "breakdown": "Moths come out at night and make no sound, so the name suggests the job without saying it.",
+          "motif": "daggers"
+        },
+        {
+          "name": "The Iron Surgeon",
+          "type": "VILLAIN",
+          "verdict": "An ordinary job made frightening.",
+          "breakdown": "'The' plus a material plus a profession turns something trustworthy into something cold, which is what makes the best villain titles unsettling.",
+          "motif": "mask"
+        },
+        {
+          "name": "Captain Maud Tarr",
+          "type": "PIRATE",
+          "verdict": "A pirate captain who sounds like she smells of the sea.",
+          "breakdown": "Maud is a real medieval name, and 'Tarr' recalls 'Jack Tar', the old slang for a sailor.",
+          "motif": "skull-bones"
+        }
+      ]
+    }
   },
   {
     "name": "Places",
@@ -1046,7 +1896,57 @@
       "dunmer",
       "altmer",
       "argonian"
-    ]
+    ],
+    "eyebrow": "Names for Tamriel",
+    "approach": {
+      "heading": "How to approach Elder Scrolls names",
+      "text": "<p>Each people in The Elder Scrolls names itself differently, so start with the race. Nords take Old Norse-style names and an epithet earned in battle. Khajiit names often carry an apostrophe prefix that says something about the bearer's standing. Argonians may be known by what they do, translated into a phrase like Wades-Through-Fog. Dark elves and high elves have long, formal names with their own sounds. Match the pattern, and an original name will fit in anywhere in Tamriel without borrowing anyone else's.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Start with the character's race.",
+        "Give Nords an earned epithet.",
+        "Use one Khajiit prefix, not two.",
+        "Let Argonians be named by deeds.",
+        "Avoid names from the games."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name characters and weapons for your own Tamriel adventures. This site isn't connected to Bethesda.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Asgeir Ash-Fist",
+          "type": "NORD",
+          "verdict": "A Nord who sounds like he'd win an argument by punching the table.",
+          "breakdown": "Asgeir is a real Old Norse name, from 'god' and 'spear'. The hyphenated epithet is the Nord habit of being named for a deed or a trait.",
+          "motif": "longship"
+        },
+        {
+          "name": "Dro'bajhar",
+          "type": "KHAJIIT",
+          "verdict": "A name with weight and age to it.",
+          "breakdown": "The apostrophe prefix is part of the Khajiit pattern, and the soft 'jh' and rolling vowels keep it from sounding like any other race.",
+          "motif": "paw"
+        },
+        {
+          "name": "Wades-Through-Fog",
+          "type": "ARGONIAN",
+          "verdict": "An Argonian name you understand the first time you hear it.",
+          "breakdown": "A short phrase describing what the character does, joined with hyphens. It suits a scout, a fisher or anyone at home in the marshes.",
+          "motif": "lizard"
+        },
+        {
+          "name": "Vesthas, Doom of Kings",
+          "type": "WEAPON",
+          "verdict": "A Daedric blade with a reputation it hasn't finished earning.",
+          "breakdown": "A hard two-syllable name with a grand title after the comma, the way legendary weapons are named. It isn't a real artefact from the games, so it won't clash with anything.",
+          "motif": "jagged-blade"
+        }
+      ]
+    }
   },
   {
     "name": "Warcraft",
@@ -1081,7 +1981,57 @@
       "night_elf",
       "blood_elf",
       "wow_troll"
-    ]
+    ],
+    "eyebrow": "Names for your characters",
+    "approach": {
+      "heading": "How to approach Warcraft names",
+      "text": "<p>Warcraft's races each have a sound of their own, and a good name follows it. Orc names are short and hard, and a surname earned in battle or a clan says where loyalty lies. Night elf surnames come from the moon, the night and the forest. Blood elf names lean on the sun, fire and dawn. Trolls often use an apostrophe between two short sounds. Pick the race first, then the sound, and check the name is free on your realm before you make the character.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Pick the race, then the sound.",
+        "Give orcs a clan or a battle surname.",
+        "Moon and forest for night elves.",
+        "Sun and flame for blood elves.",
+        "Check it's free on your realm."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name orcs, elves and trolls for your next character. This site isn't connected to Blizzard.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Durgoth Blackroar",
+          "type": "ORC",
+          "verdict": "An orc you'd hear before you saw him.",
+          "breakdown": "A hard first name with a 'th' ending, then a surname of a colour and a noise. Warcraft orcs often take surnames like this, from what they're known for.",
+          "motif": "war-axe"
+        },
+        {
+          "name": "Delandros Nightfeather",
+          "type": "NIGHT ELF",
+          "verdict": "A quiet, watchful name for a druid or a hunter.",
+          "breakdown": "A long, flowing first name and a surname built from the night and a bird's feather, which suits a race tied to the moon and the wild.",
+          "motif": "leaf-moon"
+        },
+        {
+          "name": "Kaelessa Dawnsorrow",
+          "type": "BLOOD ELF",
+          "verdict": "A proud name with something sad underneath.",
+          "breakdown": "Dawn ties her to the sun, like most blood elf names, and 'sorrow' hints at loss. One word does the work of a whole backstory.",
+          "motif": "flame"
+        },
+        {
+          "name": "Ze'tok",
+          "type": "TROLL",
+          "verdict": "Short, sharp and easy to shout in a raid.",
+          "breakdown": "Two short sounds split by an apostrophe, the classic troll pattern. Five characters means it's quick to type in chat, too.",
+          "motif": "tusks"
+        }
+      ]
+    }
   },
   {
     "name": "Warhammer",
@@ -1111,7 +2061,57 @@
       "warhammer",
       "warhammer_orc",
       "ogryn"
-    ]
+    ],
+    "eyebrow": "Names for the battlefield",
+    "approach": {
+      "heading": "How to approach Warhammer names",
+      "text": "<p>In Warhammer, a name is mostly a rank and a reputation. Space Marines put their title first and their Chapter last, so the name tells you who they are and who they answer to. Sisters of Battle carry saintly Latin-sounding names. Orks pile on titles and nicknames until the name runs out of breath, and Ogryns are known by a simple nickname, often in quotes. Decide the character's faction and rank first, then give them a name that sounds like the army they belong to.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Put the rank before the name.",
+        "Name the Chapter, Order or clan.",
+        "Give Orks a title they gave themselves.",
+        "Keep Ogryn nicknames short.",
+        "Make it sound like the army."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name heroes, villains and squads for your army or your next game. This site isn't connected to Games Workshop.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Veteran Sergeant Lo'van Flameward of the Salamanders",
+          "type": "SPACE MARINE",
+          "verdict": "A full name that reads like a service record.",
+          "breakdown": "Rank, name and Chapter in one line. 'Flameward' suits the Salamanders, whose whole style is fire and the forge.",
+          "motif": "helm"
+        },
+        {
+          "name": "Sister Hospitaller Justina Dolorosa of the Order of the Sacred Rose",
+          "type": "SISTER",
+          "verdict": "A name that sounds like a saint in training.",
+          "breakdown": "Justina comes from the Latin for 'just', and Dolorosa means 'sorrowful'. Both fit an order that heals as well as fights.",
+          "motif": "laurel"
+        },
+        {
+          "name": "Big Mek Muksnag",
+          "type": "ORK",
+          "verdict": "An Ork whose name tells you he builds things that explode.",
+          "breakdown": "The rank comes first and says what he does. Muksnag is two short, ugly syllables, the sound of something being dropped on a workbench.",
+          "motif": "gear"
+        },
+        {
+          "name": "Grob 'Mister Shovel'",
+          "type": "OGRYN",
+          "verdict": "An Ogryn nickname with dignity, of a sort.",
+          "breakdown": "A one-syllable name and a nickname in quotes, taken from the tool he never puts down. The 'Mister' makes it funnier.",
+          "motif": "club"
+        }
+      ]
+    }
   },
   {
     "name": "Sci-Fi",
@@ -1170,7 +2170,57 @@
       "post_apocalyptic_town",
       "space_station",
       "colony"
-    ]
+    ],
+    "eyebrow": "Space and the future",
+    "approach": {
+      "heading": "How to approach sci-fi names",
+      "text": "<p>A science fiction name should hint at the history between now and then. Colonists name new worlds after the places they left, so you get New Lagos or Upper Bristol. Navies name ships after virtues, and machines get serial numbers that people soften with nicknames. Real astronomy helps too: planets around other stars are labelled with the star's catalogue name and a lower-case letter, like 51 Pegasi b. Mix one familiar word with one strange one, and the future feels lived in rather than invented.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Give old Earth words a new home.",
+        "Use codes for machines, names for crews.",
+        "Let ships be named after virtues.",
+        "Keep alien names to one sound set.",
+        "Mix the familiar with the strange."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name ships, worlds, machines and the people who live among them.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Stiff Upper Lip",
+          "type": "SHIP",
+          "verdict": "A ship name with a sense of humour and a stubborn streak.",
+          "breakdown": "A whole phrase as a ship name, in the tradition of Iain M. Banks's Culture novels. It tells you the crew are calm under fire, and a little bit British about it.",
+          "motif": "rocket"
+        },
+        {
+          "name": "Rimemere",
+          "type": "PLANET",
+          "verdict": "An ice world you can picture from orbit.",
+          "breakdown": "Combines 'rime' (frost) with 'mere' (lake), two old English words. It sounds like a frozen sea, and it's easy to say over a crackling comms channel.",
+          "motif": "planet"
+        },
+        {
+          "name": "QUILL (Quantum Understanding Intelligence Logic Lab)",
+          "type": "AI",
+          "verdict": "An AI whose name sounds friendlier than its job title.",
+          "breakdown": "A short, ordinary word made from the initials of a technical title, the way real projects get their acronyms. The quill also hints that it writes things down, and remembers.",
+          "motif": "lightbulb"
+        },
+        {
+          "name": "Revision YX-7 \"Cyril\"",
+          "type": "ROBOT",
+          "verdict": "A machine somebody has grown fond of.",
+          "breakdown": "A serial number for the paperwork and a plain old-fashioned nickname for everyday use. The gap between the two is a whole story about the robot's crew.",
+          "motif": "robot"
+        }
+      ]
+    }
   },
   {
     "name": "Witches",
@@ -1206,7 +2256,57 @@
       "wizard",
       "fairy",
       "spell"
-    ]
+    ],
+    "eyebrow": "Witches, covens and spells",
+    "approach": {
+      "heading": "How to approach witch names",
+      "text": "<p>Witch names in British folklore come from three places: plants, places and familiars. Village cunning folk were known by where they lived, hedge witches by the herbs they gathered, and the witch-finder Matthew Hopkins recorded familiars in the 1640s with names like Pyewacket. Fictional witches follow the same habits. Take a surname from a wild plant, add a title like Granny or Old Mother, and give the witch a familiar with a name of its own. For covens and spells, a moon, a place or a maker's name does the work.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Take a surname from a wild plant.",
+        "Give the witch a familiar with a name.",
+        "Name a coven after a moon or a place.",
+        "Put a maker's name on a spell.",
+        "Keep cosy witches cosy."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name witches, covens, familiars and the spells they cast.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Granny Grimble and her owl, Hoot",
+          "type": "WITCH",
+          "verdict": "A village witch children are only slightly afraid of.",
+          "breakdown": "An old-fashioned title, a surname that sounds like grumbling, and a familiar named after the noise it makes.",
+          "motif": "broom"
+        },
+        {
+          "name": "The Toadstool and Thistle Guild",
+          "type": "COVEN",
+          "verdict": "A coven that might also run the village flower show.",
+          "breakdown": "Two hedgerow plants joined with 'and', like a pub sign, plus 'Guild', which makes the coven sound like a respectable local society.",
+          "motif": "mushroom"
+        },
+        {
+          "name": "Cradlehush",
+          "type": "SPELL",
+          "verdict": "A spell name that tells you exactly what it does.",
+          "breakdown": "Two soft English words, 'cradle' and 'hush', joined into one: a sleep spell you can say in a whisper.",
+          "motif": "spark-orb"
+        },
+        {
+          "name": "Elfrida Marshmouth, who Sings to Leeches",
+          "type": "SWAMP WITCH",
+          "verdict": "A fen witch with a habit nobody likes to ask about.",
+          "breakdown": "Elfrida is an Old English name, from Ælfthryth, which gives her a very old feel. Marshmouth places her in the fens, and the epithet gives her a story.",
+          "motif": "swamp"
+        }
+      ]
+    }
   },
   {
     "name": "Historical",
@@ -1248,7 +2348,57 @@
       "knight",
       "japanese_sword",
       "mummy"
-    ]
+    ],
+    "eyebrow": "Names from history",
+    "approach": {
+      "heading": "How to approach historical names",
+      "text": "<p>Every period named people its own way, and getting the pattern right matters more than the exact name. Romans had up to three names, Anglo-Saxons built names from two meaningful parts, and medieval English surnames came from jobs, places, fathers and nicknames. Pick the period first, then let the name follow its rules. A Roman with a modern surname, or a Saxon with a Norman first name, will jar with anyone who knows the period.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Pick the period before the name.",
+        "Follow the period's naming rules.",
+        "Give surnames a job or a place.",
+        "Avoid famous historical figures.",
+        "Check the meaning of each part."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to find a name that fits its period.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Aulus Petronius Macer",
+          "type": "ROMAN",
+          "verdict": "A Roman citizen with the full three names.",
+          "breakdown": "A personal name, a family name and a cognomen, the Roman tria nomina. Macer is Latin for 'thin', as many cognomens began as nicknames.",
+          "motif": "laurel"
+        },
+        {
+          "name": "Leofric",
+          "type": "ANGLO-SAXON",
+          "verdict": "A real Old English name with its meaning built in.",
+          "breakdown": "Two parts, 'dear' and 'ruler', joined together, which is how most Anglo-Saxon names were made.",
+          "motif": "crowned-shield"
+        },
+        {
+          "name": "Agnes Hayward",
+          "type": "MEDIEVAL",
+          "verdict": "A medieval name with a job attached.",
+          "breakdown": "A hayward looked after a village's hedges and fences, and like many English surnames the job became the family name.",
+          "motif": "quill"
+        },
+        {
+          "name": "Mae \"Mustang\" Garrett",
+          "type": "OLD WEST",
+          "verdict": "A frontier name with a reputation in the middle.",
+          "breakdown": "A nickname placed between first name and surname was common in Old West stories, and 'Mustang' suggests someone wild and hard to catch.",
+          "motif": "cowboy-hat"
+        }
+      ]
+    }
   },
   {
     "name": "Pop Culture",
@@ -1303,6 +2453,56 @@
       "game_of_thrones",
       "game_of_thrones_sword",
       "superhero"
-    ]
+    ],
+    "eyebrow": "Names for fans",
+    "approach": {
+      "heading": "How to approach fan-fiction and game names",
+      "text": "<p>A good name for a fan character fits the world without copying it. Every setting has its own rules: Hogwarts students have solid British names, hobbits are named after flowers and gemstones, anime characters follow Japanese naming order. Learn the pattern and you can make a name nobody has used before that still sounds like it belongs. The generators here follow each setting's patterns but never borrow a character's name, so your character is your own.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Learn the setting's naming pattern.",
+        "Never borrow a main character's name.",
+        "Match the name to the era.",
+        "Say it in an accent from that world.",
+        "Check your favourite isn't canon."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name characters for fan fiction, roleplay and your next game. This site isn't connected to any of these franchises.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Verity Penhallow",
+          "type": "WITCH",
+          "verdict": "A witch who'd fit straight into a Victorian school photograph.",
+          "breakdown": "Verity is a Victorian virtue name, meaning truth, which suits a game set in the 1890s. Penhallow is a Cornish-sounding surname with weight to it.",
+          "motif": "wand"
+        },
+        {
+          "name": "Pale Howl",
+          "type": "SWORD",
+          "verdict": "A sword name that sounds like it came out of the north.",
+          "breakdown": "Two words, an image and a sound, the way great swords in fantasy are named. The wolf's howl ties it to a northern house without naming one.",
+          "motif": "sword"
+        },
+        {
+          "name": "Gillyflower Haybarrow",
+          "type": "HOBBIT",
+          "verdict": "A hobbit you'd find at the front of the queue for second breakfast.",
+          "breakdown": "Tolkien often named hobbit girls after flowers, and gillyflower is an old English name for a clove-scented pink. Haybarrow is a cosy, farmyard surname.",
+          "motif": "round-door"
+        },
+        {
+          "name": "Kaede Hirano",
+          "type": "ANIME",
+          "verdict": "A name that sounds right in a school corridor or on a battlefield.",
+          "breakdown": "Kaede means 'maple' in Japanese, a common girl's name, and Hirano is a familiar surname. In Japanese order the surname would come first.",
+          "motif": "cherry-blossom"
+        }
+      ]
+    }
   }
 ]
