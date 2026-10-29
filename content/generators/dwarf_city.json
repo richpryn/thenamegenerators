@@ -1057,8 +1057,34 @@
       "title": "⚒️ Dwarf City Name Generator",
       "tagline": "Halls under the mountain, cities in the deep, ringing forges and holds lost to the dark."
     },
-    "intro": "Dwarf cities tend to have two names: a plain one any trader understands, like Anvilheart or Lanterndeep, and an old dwarvish one such as Kadgrim Hold. This **dwarf city name generator** gives you both kinds for mountain holds, deep cities, forge cities, ruined holds and trade cities, with a short description to start your D&D campaign or story.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good dwarf city names sound carved out of rock: a hard old name like Thardur Hold, or a plain one that says what the place is, like Lanterndeep or Anvilfire. Dwarf cities tend to have both kinds: a plain name any trader understands and an old dwarvish one. This **dwarf city name generator** gives you both for mountain holds, deep cities, forge cities, ruined holds and trade cities, with a short description to start your D&amp;D campaign or story.",
+    "sections": [
+      {
+        "heading": "Eight good dwarf city names",
+        "content": "<p>All eight came from the generator, across its five kinds of city:</p><ul><li><strong>Thardur Hold</strong>: a mountain hold with a short, hard dwarvish name.</li><li><strong>Ramwatch Hold, whose war horn can be heard three valleys away</strong>: a hold with a reputation.</li><li><strong>Lanterndeep</strong>: a deep city named for the light it needs.</li><li><strong>Haldgar Deep, where the miners sing to the stone before they cut it</strong>: a description that's also a custom.</li><li><strong>Anvilfire</strong>: a forge city, plain and loud.</li><li><strong>Rustgate, abandoned so quickly the tables are still laid</strong>: a ruined hold with a mystery attached.</li><li><strong>Fallen Ormrak, whose gate was broken by a dragon</strong>: a ruin that explains itself.</li><li><strong>Dralorn Gate, where outsiders may trade but never stay the night</strong>: a trade city with one strict rule.</li></ul>"
+      },
+      {
+        "heading": "Holds, deeps and delves",
+        "content": "<p>Dwarf cities in fiction owe a lot to Tolkien's Khazad-dûm, the great dwarf realm the elves called Moria, \"black chasm\", and which in English was the Dwarrowdelf. <em>Delve</em> comes from the Old English word for to dig, which is why it turns up in so many dwarf names. The Norse myths that gave Tolkien his dwarves also gave them a home: Niðavellir, where the dwarves forged the gods' treasures.</p><p>The generator has five kinds of city:</p><ul><li><strong>Mountain holds</strong> are fortresses in the peaks: <em>Eaglecrown</em>, <em>Ulmgol Hold</em>.</li><li><strong>Deep cities</strong> are far under the mountain: <em>Borthak Below</em>, <em>Gemhall</em>.</li><li><strong>Forge cities</strong> are named for their fires and anvils: <em>The Forges of Korgol</em>.</li><li><strong>Ruined holds</strong> are Fallen, Old or Lost: <em>Gloomdelve</em>, <em>Old Bramheim</em>.</li><li><strong>Trade cities</strong> are gates and crossings: <em>Goldcross</em>, <em>Galdzan Crossing</em>.</li></ul><p>Choose <strong>With a description</strong> for a line of history or local colour with each name.</p>"
+      },
+      {
+        "heading": "Building a dwarf city",
+        "content": "<ul><li><strong>Give it two names:</strong> the old dwarvish one the clans use, and the plain one outsiders say.</li><li><strong>Decide what it's famous for:</strong> ale, axes, gems or a grudge.</li><li><strong>Ruins make good dungeons.</strong> A fallen hold with its treasure still sealed is a whole campaign.</li></ul><p>For the dwarves themselves, try the <a href=\"dwarf-name-generator.html\">Dwarf Name Generator</a>. For the fortress on the surface, there's the <a href=\"fortress-name-generator.html\">Fortress Name Generator</a>, and for what's left when a hold falls, the <a href=\"ruins-name-generator.html\">Ruins Name Generator</a>. Their neighbours across the valley might live in an <a href=\"elf-city-name-generator.html\">elf city</a> or an <a href=\"orc-city-name-generator.html\">orc stronghold</a>.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good dwarf city names?",
+        "answer": "Hard, rocky names like Thardur Hold or Zuntok Hold, or plain English ones that say what the place is, like Lanterndeep, Anvilfire or Goldcross."
+      },
+      {
+        "question": "What's the difference between a hold and a deep?",
+        "answer": "Here, a hold is a fortress city in the mountain peaks and a deep is a city far below them. Choose Mountain hold or Deep city for names of each kind."
+      },
+      {
+        "question": "Are these dwarf cities from D&D or Tolkien?",
+        "answer": "No. They're made up for this site and free to use. The generator follows the same habits as fantasy dwarves, but the names aren't from any book or game."
+      }
+    ]
   }
 }

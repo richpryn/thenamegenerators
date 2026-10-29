@@ -1379,8 +1379,34 @@
       "title": "🏞️ Valley Name Generator",
       "tagline": "Dales, combes, glens and cwms, elven vales and valleys of bones, for maps that need somewhere between the mountains."
     },
-    "intro": "Real valleys are named for a river, a bird, a tree or a long-dead farmer, which is why Ketteldale and Owlcombe sound lived in. This **valley name generator** builds fantasy, British, elven, dark and hidden valley names, with an optional line about what lies there.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good valley names say what's there or who lived there, with a real valley word on the end: <em>Hazeldale</em>, <em>Rookscombe</em>, <em>Wolf Clough</em>. Real valleys are named for a river, a bird, a tree or a long-dead farmer, which is why Ketteldale and Owlcombe sound lived in. This **valley name generator** builds fantasy, British, elven, dark and hidden valley names, with an optional line about what lies there.",
+    "sections": [
+      {
+        "heading": "Eight good valley names",
+        "content": "<p>All eight came from the generator, across its five styles:</p><ul><li><strong>Hazeldale</strong>: a hazel tree and the northern word for valley.</li><li><strong>Cwm Aur, where red kites circle above the oaks</strong>: a Welsh valley name meaning \"golden valley\".</li><li><strong>Wolf Clough, where curlews call over the rough grazing</strong>: a steep northern valley with an animal in its name.</li><li><strong>Heatherfold, a long valley of sheep farms and drystone walls</strong>: a fantasy name that sounds like real hill country.</li><li><strong>The Vale of Naelindë, lit by lanterns hung in the willows</strong>: an elven vale with a picture in the description.</li><li><strong>Widow's Hollow</strong>: a dark valley with a story waiting to be told.</li><li><strong>Valley of Silent Bells, where every scarecrow faces the same way</strong>: dark, with one detail that's wrong.</li><li><strong>The Hollow Behind the Waterfall</strong>: a hidden valley whose name tells you how to find it.</li></ul>"
+      },
+      {
+        "heading": "Valley words and where they come from",
+        "content": "<p>Britain has a word for every kind of valley, and most of them came from the people who settled there:</p><ul><li><strong>Dale</strong>, from Old Norse and Old English, all over the north: the Yorkshire Dales.</li><li><strong>Glen</strong>, from the Gaelic <em>gleann</em>, a narrow Highland valley: Glencoe.</li><li><strong>Strath</strong>, from the Gaelic <em>srath</em>, a wide, flat-bottomed valley.</li><li><strong>Combe</strong>, from Old English, a short valley in the south-west, and <strong>cwm</strong>, the Welsh word it's related to.</li><li><strong>Clough</strong>, a steep, narrow valley in the north of England.</li></ul><p>The styles follow those words. <strong>British</strong> valleys use them straight; <strong>fantasy</strong> valleys use -fold and -reach; <strong>elven</strong> valleys are vales; <strong>dark</strong> valleys are gulches, gorges and hollows; and <strong>hidden</strong> valleys are named for what hides them. Choose <strong>With a description</strong> for a line about what lies there.</p>"
+      },
+      {
+        "heading": "Putting valleys on your map",
+        "content": "<ul><li><strong>Name the valley after its river,</strong> or the river after the valley. Real ones often share a name.</li><li><strong>Match the word to the region.</strong> A glen in the north and a combe in the south tell readers where they are.</li><li><strong>Give hidden valleys a way in.</strong> A pass that opens at midsummer is a quest in itself.</li></ul><p>For what runs through it, try the <a href=\"river-name-generator.html\">River Name Generator</a>; for what surrounds it, the <a href=\"mountain-name-generator.html\">Mountain Name Generator</a>; and for who lives there, the <a href=\"village-name-generator.html\">Village Name Generator</a>. An elven vale needs an <a href=\"elf-city-name-generator.html\">elf city</a>.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good names for a valley?",
+        "answer": "A feature plus a real valley word: Hazeldale, Rookscombe, Wolf Clough, or a vale for something elven. Choose a style to match the region."
+      },
+      {
+        "question": "What's the difference between a dale, a glen and a combe?",
+        "answer": "They're regional words. A dale is a northern English valley, a glen a narrow Scottish one, and a combe a short valley in the south-west of England. Cwm is the Welsh equivalent of combe."
+      },
+      {
+        "question": "Can I name a valley after a river?",
+        "answer": "Yes, and real valleys often are. Name one first and use it for the other, so your map hangs together."
+      }
+    ]
   }
 }

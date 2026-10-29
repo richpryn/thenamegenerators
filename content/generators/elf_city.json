@@ -2632,8 +2632,34 @@
       "title": "🧝 Elf City Name Generator",
       "tagline": "Shining spires, forest refuges, cities in the deep and harbours on the western sea."
     },
-    "intro": "Every name from this **elf city name generator** is built from a small elvish tongue invented just for this page, so each city can come with its meaning: Aethandrë is ‘the city of dawn’ and Maerossa ‘the harbour of the waves’. Pick high, wood, dark, sea or moon and star elves for your D&D campaign or novel.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good elf city names are long, soft and full of vowels, and they usually mean something: a hall, a haven or a grove, named after dawn, the sea or the stars. Every name from this **elf city name generator** is built from a small elvish tongue invented just for this page, so each city can come with its meaning: Aethaleth is ‘the court of dawn’ and Ossisaen ‘the haven of dolphins’. Pick high, wood, dark, sea or moon and star elves for your D&amp;D campaign or novel.",
+    "sections": [
+      {
+        "heading": "Eight good elf city names",
+        "content": "<p>All eight came from the generator, across its five kinds of elf:</p><ul><li><strong>Aethaleth, ‘the court of dawn’</strong>: a high elf city whose name is a promise of light.</li><li><strong>Arisavel, ‘the haven of victory’</strong>: a high elf city founded after a war.</li><li><strong>Hirrawyn, ‘the refuge of the white stag’</strong>: a wood elf city with a legend built in.</li><li><strong>Neylatham, ‘the hidden hall of quiet streams’</strong>: a wood elf city you'd only find with a guide.</li><li><strong>Nhalarrath, ‘the city of the black river’</strong>: an underground city, harder and darker in sound.</li><li><strong>Ossisaen, ‘the haven of dolphins’</strong>: a sea elf harbour.</li><li><strong>Vyssalthë, ‘the bridge of the falling stars’</strong>: a moon and star elf city for a night sky.</li><li><strong>The Spires of Taeroriel</strong>: a high elf name with the city's skyline in it.</li></ul>"
+      },
+      {
+        "heading": "How elf cities are named",
+        "content": "<p>The most famous elf cities in fiction have two names: one in Elvish and one in the common tongue. Tolkien's Rivendell is the English form of the Sindarin <em>Imladris</em>, \"deep dale of the cleft\", and Lothlórien adds <em>loth</em>, \"flower\", to the name of the land. In D&amp;D's Forgotten Realms, the dark elves' great city under the earth is Menzoberranzan, hard-edged and long, which is how drow names have sounded ever since.</p><p><strong>The elvish on this page is invented.</strong> It isn't Tolkien's Sindarin or Quenya, or any game's official language. It's a small set of word parts made for this generator, so each part always means the same thing:</p><ul><li><strong>High elves</strong> name cities after courts, thrones and dawn: <em>Daeraleth</em>, \"the court of summer\".</li><li><strong>Wood elves</strong> use groves, boughs and animals: <em>Pelloryth</em>, \"the boughs of acorns\".</li><li><strong>Dark elves</strong> underground get harsh sounds and secrets: <em>Sevresk</em>, \"the gate of secrets\".</li><li><strong>Sea elves</strong> name harbours after whales and waves: <em>Maerarra</em>, \"the lantern of the waves\".</li><li><strong>Moon and star elves</strong> build bridges and towers: <em>Cyrahanys</em>, \"the tower of the north star\".</li></ul><p>Choose <strong>Name only</strong> for the city on its own, or <strong>With meaning</strong> to get the translation too.</p>"
+      },
+      {
+        "heading": "Building an elven city",
+        "content": "<ul><li><strong>Use the meaning.</strong> A city called \"the refuge of the white stag\" needs a story about the stag.</li><li><strong>Give it a common name too.</strong> Humans and dwarves won't say Neylatham; they'll call it the Hidden Hall.</li><li><strong>Keep one kind of elf per region,</strong> so neighbouring cities sound related.</li></ul><p>For the elves who live there, try the <a href=\"elf-name-generator.html\">Elf</a>, <a href=\"high-elf-name-generator.html\">High Elf</a>, <a href=\"wood-elf-name-generator.html\">Wood Elf</a> and <a href=\"dark-elf-name-generator.html\">Dark Elf</a> name generators. For their rivals, there's the <a href=\"dwarf-city-name-generator.html\">Dwarf City Name Generator</a>, and for the realm around the city, the <a href=\"kingdom-name-generator.html\">Kingdom Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good elf city names?",
+        "answer": "Long, flowing names with a meaning, like Aethaleth, ‘the court of dawn’, Hirrawyn, ‘the refuge of the white stag’, or Ossisaen, ‘the haven of dolphins’. Choose a kind of elf to match the city."
+      },
+      {
+        "question": "Is the elvish on this page Tolkien's Elvish?",
+        "answer": "No. It's a small elvish tongue invented for this generator, so the meanings are consistent but they aren't Sindarin, Quenya or any game's official language."
+      },
+      {
+        "question": "What do dark elf cities sound like?",
+        "answer": "Harder and more hissing than other elf cities, with sounds like zh, x and rr: Nhalarrath, ‘the city of the black river’, or Sevresk, ‘the gate of secrets’."
+      }
+    ]
   }
 }
