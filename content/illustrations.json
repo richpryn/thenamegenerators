@@ -319,6 +319,8 @@
     "farm": "sheep",
     "theme_park": "bunting",
     "zoo": "paw",
-    "lighthouse": "lamp"
+    "lighthouse": "lamp",
+    "space_station": "rocket",
+    "colony": "planet"
   }
 }
