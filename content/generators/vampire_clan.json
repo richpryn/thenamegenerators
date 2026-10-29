@@ -93,40 +93,40 @@
         "house": {
           "recipe": "template",
           "template": [
-            "House [house]: “[mottos]”",
-            "The House of [house]: “[mottos]”"
+            "House [house]: \"[mottos]\"",
+            "The House of [house]: \"[mottos]\""
           ]
         },
         "court": {
           "recipe": "template",
           "template": [
-            "The [court_adj] [court_noun]: “[mottos]”",
-            "The Order of the [orders]: “[mottos]”"
+            "The [court_adj] [court_noun]: \"[mottos]\"",
+            "The Order of the [orders]: \"[mottos]\""
           ]
         },
         "bloodline": {
           "recipe": "template",
           "template": [
-            "The Bloodline of [ancients]: “[mottos]”",
-            "Children of [ancients]: “[mottos]”",
-            "The [house] Bloodline: “[mottos]”"
+            "The Bloodline of [ancients]: \"[mottos]\"",
+            "Children of [ancients]: \"[mottos]\"",
+            "The [house] Bloodline: \"[mottos]\""
           ]
         },
         "modern": {
           "recipe": "template",
-          "template": "The [modern_adj] [modern_noun]: “[mottos]”"
+          "template": "The [modern_adj] [modern_noun]: \"[mottos]\""
         },
         "any": {
           "recipe": "template",
           "template": [
-            "House [house]: “[mottos]”",
-            "The House of [house]: “[mottos]”",
-            "The [court_adj] [court_noun]: “[mottos]”",
-            "The Order of the [orders]: “[mottos]”",
-            "The Bloodline of [ancients]: “[mottos]”",
-            "Children of [ancients]: “[mottos]”",
-            "The [house] Bloodline: “[mottos]”",
-            "The [modern_adj] [modern_noun]: “[mottos]”"
+            "House [house]: \"[mottos]\"",
+            "The House of [house]: \"[mottos]\"",
+            "The [court_adj] [court_noun]: \"[mottos]\"",
+            "The Order of the [orders]: \"[mottos]\"",
+            "The Bloodline of [ancients]: \"[mottos]\"",
+            "Children of [ancients]: \"[mottos]\"",
+            "The [house] Bloodline: \"[mottos]\"",
+            "The [modern_adj] [modern_noun]: \"[mottos]\""
           ]
         }
       }
