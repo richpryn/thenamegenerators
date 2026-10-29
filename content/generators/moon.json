@@ -1175,8 +1175,34 @@
       "title": "🌙 Moon Name Generator",
       "tagline": "Names for the moons of your sci-fi planets and the moons that light your fantasy world."
     },
-    "intro": "Every good world needs a moon or two. This **moon name generator** names sci-fi mining and colony moons, the moons of a fantasy sky, moons from myth and legend, and quiet poetic moons, with a short description if you want one.",
-    "sections": [],
-    "faqs": []
+    "intro": "A good moon name tells you what the moon is to the people below it: a mining claim like <em>Kerrigan's Diggings</em>, a lamp in a fantasy sky like <em>The Owl Moon</em>, or a goddess like <em>The Hunting Mother</em>. Every good world needs a moon or two. This **moon name generator** names sci-fi mining and colony moons, the moons of a fantasy sky, moons from myth and legend, and quiet poetic moons, with a short description if you want one.",
+    "sections": [
+      {
+        "heading": "Eight good moon names",
+        "content": "<p>All eight came from the generator, two from each style:</p><ul><li><strong>Kerrigan's Diggings</strong>: a mining moon named after the prospector who staked it.</li><li><strong>Kadhu IV-a</strong>: a survey code for a moon of the fourth planet, the way a colony office would file it.</li><li><strong>The Owl Moon</strong>: a fantasy moon named for the nights it rules.</li><li><strong>The Lamplighter's Bucket</strong>: the kind of everyday name farmers give the sky.</li><li><strong>The Hunting Mother</strong>: a mythic moon that sounds like a goddess.</li><li><strong>Ondrel's Comb</strong>: a moon named as an object belonging to someone in a legend.</li><li><strong>The Pale Saucer</strong>: a gentle poetic name.</li><li><strong>The Lamp of Empty Streets</strong>: a poetic name for the moon over a sleeping city.</li></ul>"
+      },
+      {
+        "heading": "How real moons got their names",
+        "content": "<ul><li><strong>Our Moon</strong> is just \"the Moon\" in English, with a capital letter. The Romans called it Luna and the Greeks Selene, after the moon goddess.</li><li><strong>Jupiter's four largest moons</strong> were discovered by Galileo in 1610 and named Io, Europa, Ganymede and Callisto, after figures loved by Zeus, the Greek Jupiter.</li><li><strong>Mars has two small moons,</strong> Phobos and Deimos, \"fear\" and \"dread\", named after the sons of Ares, the Greek god of war.</li><li><strong>Uranus breaks the pattern:</strong> its moons are named after characters from Shakespeare and Alexander Pope, like Titania, Oberon, Miranda and Ariel.</li></ul><p>The generator follows each habit. <strong>Sci-fi</strong> moons are named after claims, prospectors and surveys: <em>Calloway's Claim</em>, <em>Jorvic IV-b</em>. <strong>Fantasy</strong> moons get everyday names, and sometimes come in pairs: <em>Tam and Wren</em>. <strong>Mythic</strong> moons are goddesses and their belongings, and <strong>Poetic</strong> moons are lamps, mirrors and saucers. Choose <strong>With a description</strong> for a line about what the moon does, like <em>The Little Moon, which pulls the tides of the Inner Sea</em>.</p>"
+      },
+      {
+        "heading": "Moons in your world",
+        "content": "<ul><li><strong>Decide what the moon means.</strong> A farming world names its moon after harvests; a mining colony after money.</li><li><strong>Two moons make a story.</strong> Twins, rivals or a big and a small one each give the calendar and the legends something to work with.</li><li><strong>Let the name change.</strong> Settlers might call a moon one thing, and the survey office another.</li></ul><p>Give the moon a world to orbit with the <a href=\"planet-name-generator.html\">Planet Name Generator</a>, and a sun with the <a href=\"star-name-generator.html\">Star Name Generator</a>. For the wider sky, there's the <a href=\"galaxy-name-generator.html\">Galaxy Name Generator</a>; for the ships and the locals, the <a href=\"spaceship-name-generator.html\">Spaceship</a> and <a href=\"alien-name-generator.html\">Alien</a> name generators.</p><p>For more, see all the <a href=\"../categories/scifi-names.html\">sci-fi name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good moon names?",
+        "answer": "Names that say what the moon is to the people below: Kerrigan's Diggings for a mining moon, The Owl Moon for a fantasy sky, The Hunting Mother for a moon goddess, or The Pale Saucer for something gentle."
+      },
+      {
+        "question": "How are real moons named?",
+        "answer": "Mostly after figures from myth, like Io, Europa, Ganymede and Callisto at Jupiter, or Phobos and Deimos at Mars. Uranus is the exception: its moons are named after characters from Shakespeare and Alexander Pope."
+      },
+      {
+        "question": "Can a planet have two moons with linked names?",
+        "answer": "Yes, and it often works well: twins, a pair of lovers or rivals. The Fantasy style sometimes gives paired names like Tam and Wren."
+      }
+    ]
   }
 }

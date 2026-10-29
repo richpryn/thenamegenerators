@@ -1195,8 +1195,34 @@
       "title": "☁️ Sky City Name Generator",
       "tagline": "Cloud kingdoms, drifting islands, airship ports above the smoke and cities among the stars."
     },
-    "intro": "This **sky city name generator** names floating cities and cloud kingdoms of every kind: royal courts built on the clouds, islands of rock adrift on the wind, steampunk airship ports, radiant celestial cities and sci-fi stations high above the world. Add a short description for an instant story hook in your D&D campaign, novel or game.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good sky city names suggest what holds them up: clouds (<em>Raincrown</em>), rock and wind (<em>Driftholm</em>), hot air and brass (<em>Bellowston Skyport</em>) or something holier (<em>The Shining City of Lysithe</em>). This **sky city name generator** names floating cities and cloud kingdoms of every kind: royal courts built on the clouds, islands of rock adrift on the wind, steampunk airship ports, radiant celestial cities and sci-fi stations high above the world. Add a short description for an instant story hook in your D&amp;D campaign, novel or game.",
+    "sections": [
+      {
+        "heading": "Eight good sky city names",
+        "content": "<p>All eight came from the generator, across its five styles:</p><ul><li><strong>Raincrown</strong>: a cloud kingdom that rules the weather below.</li><li><strong>Rainhold, whose bells can be heard on the ground below as distant thunder</strong>: a cloud city that explains a mystery on the ground.</li><li><strong>Driftholm</strong>: an island adrift: <em>-holm</em> is an old word for an island.</li><li><strong>Kyrow Aloft, lifted into the sky by an old wizard's mistake</strong>: a floating island with an accident in its past.</li><li><strong>Port Spratling, where the weather is forecast by a clockwork oracle</strong>: a steampunk airship port.</li><li><strong>Corona Stellarum</strong>: Latin for \"crown of the stars\", for a celestial city.</li><li><strong>Hymngate, built by beings of light before the world was young</strong>: a holy city named after its gate.</li><li><strong>Quist High Station, that drifts on the winds of a gas giant</strong>: a sci-fi city above an alien world.</li></ul>"
+      },
+      {
+        "heading": "Cities in the sky",
+        "content": "<p>People have imagined cities in the sky for a long time. In Aristophanes' comedy <em>The Birds</em>, from 414 BC, the birds build a city between heaven and earth called Cloudcuckooland, a word English still uses for a fantasy far from reality. Jonathan Swift's <em>Gulliver's Travels</em> (1726) has Laputa, a flying island steered by a giant magnet.</p><ul><li><strong>Cloud kingdoms</strong> use mist, rain and billow: <em>Cirruscourt</em>, <em>Hazehold</em>.</li><li><strong>Floating islands</strong> add <em>Adrift</em> or <em>Aloft</em> to a name, or end in rock and spur: <em>Thistleshard</em>, <em>Gustspur</em>.</li><li><strong>Steampunk ports</strong> sound like Victorian towns with moorings: <em>Rivetwick</em>, <em>Cranston Aerodrome</em>.</li><li><strong>Celestial</strong> cities sound sacred, sometimes in Latin: <em>Hortus Solis</em>, \"garden of the sun\".</li><li><strong>Orbital</strong> stations use the words of altitude and orbit: <em>Habitat Perihelion Ten</em>, <em>Aerostat Updraft</em>.</li></ul>"
+      },
+      {
+        "heading": "Using a sky city",
+        "content": "<ul><li><strong>Decide what keeps it up:</strong> magic, hot air, a lodestone or engines. The name can hint at it.</li><li><strong>Think about the ground below.</strong> A city that casts a shadow the size of a county has neighbours with opinions.</li><li><strong>Give it a way in:</strong> a stair of clouds, an airship mooring or a lift that takes three days.</li></ul><p>For airships and their crews, try the <a href=\"steampunk-name-generator.html\">Steampunk Name Generator</a>. For the city's opposite, there's the <a href=\"underwater-city-name-generator.html\">Underwater City Name Generator</a>, and for the gods a celestial city serves, the <a href=\"god-name-generator.html\">God Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good names for a floating city?",
+        "answer": "Names that suggest what keeps it in the air: Raincrown for a cloud kingdom, Driftholm for a floating island, Bellowston Skyport for a steampunk port, or Corona Stellarum for a celestial city."
+      },
+      {
+        "question": "What is the floating island in Gulliver's Travels?",
+        "answer": "Laputa, a flying island in Jonathan Swift's 1726 novel, steered by a giant magnet."
+      },
+      {
+        "question": "Can I get a sci-fi sky city?",
+        "answer": "Yes. Choose Sci-fi orbital for stations and habitats like Habitat Perihelion Ten or Quist High Station."
+      }
+    ]
   }
 }

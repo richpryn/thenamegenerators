@@ -1305,8 +1305,34 @@
       "title": "⭐ Star Name Generator",
       "tagline": "Names for the suns of your sci-fi systems and the bright stars of your fantasy skies."
     },
-    "intro": "Need a sun for your star system or a guiding star for your fantasy sky? This **star name generator** makes up invented sci-fi stars, survey catalogue designations, mythic stars and poetic names, with a short description if you want one.",
-    "sections": [],
-    "faqs": []
+    "intro": "A good star name either sounds like a real catalogue entry, like <em>Theta Thessarae</em>, or like a legend someone told by firelight, like <em>The Huntsman's Forge</em>. Need a sun for your star system or a guiding star for your fantasy sky? This **star name generator** makes up invented sci-fi stars, survey catalogue designations, mythic stars and poetic names, with a short description if you want one.",
+    "sections": [
+      {
+        "heading": "Eight good star names",
+        "content": "<p>All eight came from the generator, across its four styles:</p><ul><li><strong>Zanessa Alpha</strong>: a coined name with a Greek letter, the way the brightest star in a group is labelled.</li><li><strong>Kaminski's Star</strong>: named after whoever found it, like a real astronomer's star.</li><li><strong>Orveon Iota, a pulsar whose ticking guides navigators across the sector</strong>: a sci-fi star with a job in the story.</li><li><strong>Theta Thessarae</strong>: built like a real Bayer designation: a Greek letter and a Latin-sounding constellation.</li><li><strong>UXT 19147 A</strong>: a catalogue number with a letter, the first star of a multiple system.</li><li><strong>The Huntsman's Forge</strong>: a mythic star that sounds like part of an old constellation.</li><li><strong>Oduvan's Heart</strong>: a legend's name, short enough for sailors to steer by.</li><li><strong>The Candle of Homecoming</strong>: a poetic name for the star someone looks for on the way home.</li></ul>"
+      },
+      {
+        "heading": "How real stars are named",
+        "content": "<ul><li><strong>Bayer designations.</strong> In 1603 Johann Bayer labelled the stars in each constellation with Greek letters, usually brightest first, followed by the constellation's name in Latin: Alpha Centauri, Beta Orionis. The generator's catalogue style follows the same pattern with invented constellations: <em>Delta Nalorae</em>.</li><li><strong>Old names.</strong> Many bright stars keep names that came into English from Arabic. Aldebaran means \"the follower\", because it follows the Pleiades across the sky, and Altair comes from a phrase meaning \"the flying eagle\".</li><li><strong>Catalogue numbers.</strong> Most stars only have numbers, like HD numbers from the Henry Draper Catalogue or Gliese numbers for nearby stars.</li><li><strong>Star systems.</strong> A system takes its name from its main star. In a multiple system each star gets a capital letter (Alpha Centauri A and B), and planets get lower-case letters starting at b: 51 Pegasi b was the first planet found orbiting a Sun-like star.</li></ul><p>The International Astronomical Union approves official names. Everything here is invented, so it won't clash with a real star. Choose <strong>Sci-fi</strong> for coined names and discoverers' stars, <strong>Fantasy/myth</strong> for stars from legend, <strong>Catalogue</strong> for codes like <em>Sable-93a</em>, and <strong>Poetic</strong> for names like <em>The Patient Candle</em>. Add <strong>With a description</strong> for a line about what the star is, or what it means to the people below.</p>"
+      },
+      {
+        "heading": "Naming a star system",
+        "content": "<ul><li><strong>Name the star first,</strong> then give its planets the star's name plus a letter, or names of their own.</li><li><strong>Use two names</strong> for important stars: a catalogue code for the navigators and an old name for everyone else.</li><li><strong>Binary stars</strong> make good settings. Two suns means two sunsets, and maybe nights that never get properly dark.</li></ul><p>Name the worlds in the system with the <a href=\"planet-name-generator.html\">Planet</a> and <a href=\"moon-name-generator.html\">Moon</a> name generators, the galaxy with the <a href=\"galaxy-name-generator.html\">Galaxy Name Generator</a>, and whoever lives there with the <a href=\"alien-name-generator.html\">Alien Name Generator</a>. To get there, try the <a href=\"spaceship-name-generator.html\">Spaceship Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/scifi-names.html\">sci-fi name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good star names for a sci-fi story?",
+        "answer": "A coined name with a Greek letter, like Zanessa Alpha, a discoverer's name, like Kaminski's Star, or a catalogue code like UXT 19147 A. Choose Fantasy/myth or Poetic for stars with a story behind them."
+      },
+      {
+        "question": "How do you name a star system?",
+        "answer": "Name it after its main star. Extra stars in the system get capital letters (A, B), and planets get lower-case letters starting at b, so the first planet of Theta Thessarae would be Theta Thessarae b."
+      },
+      {
+        "question": "Are these real stars?",
+        "answer": "No. The names and catalogue numbers are invented, though they're built the way real star names and designations are."
+      }
+    ]
   }
 }

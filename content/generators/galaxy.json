@@ -1128,8 +1128,34 @@
       "title": "🌌 Galaxy Name Generator",
       "tagline": "Spirals, star-roads and catalogue codes, from the Khestra Spiral to the Weaver's Loom."
     },
-    "intro": "A galaxy holds billions of stars, so its name has to carry some weight. This **galaxy name generator** makes names for sci-fi settings, fantasy skies and space stories: coined spirals, mythic names from old legends, invented catalogue codes like the ones astronomers use, and quieter poetic names, each with an optional description.",
-    "sections": [],
-    "faqs": []
+    "intro": "A good galaxy name sounds big enough to hold billions of stars: a coined name like <em>The Cyrenth Wheel</em>, a mythic one like <em>Olloran's Harp</em>, or a catalogue code like <em>VRD J1137+5508</em>. A galaxy holds billions of stars, so its name has to carry some weight. This **galaxy name generator** makes names for sci-fi settings, fantasy skies and space stories: coined spirals, mythic names from old legends, invented catalogue codes like the ones astronomers use, and quieter poetic names, each with an optional description.",
+    "sections": [
+      {
+        "heading": "Eight good galaxy names",
+        "content": "<p>All eight came from the generator, two from each style:</p><ul><li><strong>The Cyrenth Wheel</strong>: a coined name with the shape of the galaxy in it.</li><li><strong>The Kyrevos-Ithrael Pair</strong>: two galaxies locked together, named like a double act.</li><li><strong>Olloran's Harp</strong>: a mythic name that sounds like an old sky story.</li><li><strong>The Distaff of Varuun</strong>: a spinning tool in the sky, the way old cultures saw their own stars.</li><li><strong>VRD J1137+5508</strong>: built like a real survey designation, with its sky position in the number.</li><li><strong>Sundqvist Catalogue 144, a dwarf spheroidal behind a thick lane of foreground dust</strong>: a code and a description that sound like an astronomer's notes.</li><li><strong>The Bridge of Lost Buttons</strong>: a poetic name for a galaxy seen from a small, sad planet.</li><li><strong>Willowlight</strong>: short, soft and easy to say.</li></ul>"
+      },
+      {
+        "heading": "How astronomers name galaxies",
+        "content": "<p>Our own galaxy is the Milky Way, and the word <em>galaxy</em> comes from the same idea: the Greek <em>galaxias</em> means \"milky\". Beyond that, very few galaxies have names at all.</p><ul><li><strong>Catalogue numbers</strong> do most of the work. In the 18th century Charles Messier listed fuzzy objects that astronomers might mistake for comets, so the Andromeda Galaxy is also M31. The New General Catalogue, or NGC, added thousands more.</li><li><strong>Survey designations</strong> often include the object's position in the sky, which is why real codes look like a string of numbers with a plus or minus sign in the middle.</li><li><strong>The few with names</strong> are named after constellations (Andromeda) or people: the Magellanic Clouds are named after Ferdinand Magellan, whose expedition described them.</li></ul><p>The generator covers all of that and more. <strong>Sci-fi</strong> gives coined names with a shape word: Wheel, Disc, Drift, Cloud. <strong>Mythic</strong> names a galaxy after a legend, like <em>The Wanderer's Chariot</em>. <strong>Catalogue</strong> makes invented codes and survey numbers, and <strong>Poetic</strong> gives quiet names like <em>The Shore of Kept Promises</em>. Choose <strong>With a description</strong> for a line of story, like <em>The Fractured Arm, a small galaxy being slowly swallowed by its larger neighbour</em>.</p>"
+      },
+      {
+        "heading": "Galaxies in your setting",
+        "content": "<ul><li><strong>Most stories need only one or two.</strong> Name your home galaxy and the one next door, and leave the rest as catalogue numbers.</li><li><strong>Different people, different names.</strong> Scientists might use the code while the locals use a legend. That gap is a nice detail.</li><li><strong>Distances are huge.</strong> Andromeda, our nearest large neighbour, is about 2.5 million light years away. Crossing between galaxies should feel like a very big deal.</li></ul><p>Fill the galaxy with the <a href=\"star-name-generator.html\">Star</a>, <a href=\"planet-name-generator.html\">Planet</a> and <a href=\"moon-name-generator.html\">Moon</a> name generators, then name the ships and people with the <a href=\"spaceship-name-generator.html\">Spaceship</a> and <a href=\"alien-name-generator.html\">Alien</a> name generators.</p><p>For more, see all the <a href=\"../categories/scifi-names.html\">sci-fi name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good galaxy names for a sci-fi story?",
+        "answer": "A coined name with a shape word, like The Cyrenth Wheel or The Ambrevel Drift, or a catalogue code like VRD J1137+5508 for something more scientific. Choose Mythic or Poetic for a softer, older feel."
+      },
+      {
+        "question": "How do real galaxies get their names?",
+        "answer": "Mostly with catalogue numbers, like M31 for the Andromeda Galaxy. Only a few have names, usually from a constellation or a person, like the Magellanic Clouds."
+      },
+      {
+        "question": "Are any of these real galaxies?",
+        "answer": "No. The names and catalogue codes are invented, though the codes are built to look like real survey designations."
+      }
+    ]
   }
 }

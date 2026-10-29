@@ -1458,8 +1458,34 @@
       "title": "🐚 Underwater City Name Generator",
       "tagline": "Merfolk courts, drowned kingdoms, sea-floor research bases and cities that have never seen the sun."
     },
-    "intro": "This **underwater city name generator** builds names for every kind of city beneath the waves: shimmering merfolk courts, ancient cities lost to the sea, sci-fi bases on the seabed, lightless cities in the deep and bright towns on the coral reef. Add a short description to give your D&D campaign, story or game an instant hook.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good underwater city names sound like the sea they're in: soft and shining for merfolk (<em>Nacredeep</em>), heavy and old for a sunken city (<em>Drowned Withywold</em>), cold and technical for a research base (<em>Thermocline Station</em>). This **underwater city name generator** builds names for every kind of city beneath the waves: shimmering merfolk courts, ancient cities lost to the sea, sci-fi bases on the seabed, lightless cities in the deep and bright towns on the coral reef. Add a short description to give your D&amp;D campaign, story or game an instant hook.",
+    "sections": [
+      {
+        "heading": "Eight good underwater city names",
+        "content": "<p>All eight came from the generator, across its five styles:</p><ul><li><strong>Nacredeep</strong>: mother-of-pearl and the deep in one word, for a merfolk city.</li><li><strong>The Kelp Bower of Aunura, built on the back of a sleeping sea turtle</strong>: a merfolk city with a story to explore.</li><li><strong>Wethermouth Beneath the Waves, lost to the sea along with its church and market</strong>: an ordinary town that drowned, which makes it sadder.</li><li><strong>Malador the Drowned, that sank with all its gold, or so the story goes</strong>: a legend with treasure in it.</li><li><strong>Thermocline Station</strong>: a sci-fi base named after the layer where warm water meets cold.</li><li><strong>Lumen Station, whose radio has picked up a signal from deeper down</strong>: a research base with a mystery underneath.</li><li><strong>Siltrift, whose citizens have never seen the colour blue</strong>: a city of the dark deep.</li><li><strong>Lumiro, whose children ride seahorses to school</strong>: a bright coral town.</li></ul>"
+      },
+      {
+        "heading": "Drowned cities in legend",
+        "content": "<p>The most famous underwater city is Atlantis, described by Plato in his dialogues <em>Timaeus</em> and <em>Critias</em> as a great island power swallowed by the sea in a single day and night. Breton legend has Ys, the city of King Gradlon, drowned when the sea gates were opened, and Welsh legend has Cantre'r Gwaelod, a lost kingdom beneath Cardigan Bay. Real coasts have lost towns too: most of Dunwich, once a busy port in Suffolk, has gone into the sea.</p><ul><li><strong>Merfolk</strong> cities are named for pearls, shells and foam: <em>Moonshell Palace</em>, <em>Foamhaven</em>.</li><li><strong>Sunken</strong> cities keep their old names with <em>Drowned</em>, <em>Sunken</em> or <em>Beneath the Waves</em> added.</li><li><strong>Sci-fi</strong> bases take ocean science words and code names: <em>Habitat Isobath</em>, <em>Fathom Base Delta</em>.</li><li><strong>Deep-sea</strong> cities have cold, heavy names: <em>Hollowtrench</em>, <em>Ulmugoth</em>.</li><li><strong>Coral</strong> towns are bright and warm: <em>Angelfish Hollow</em>, <em>Calavi Lagoon</em>.</li></ul>"
+      },
+      {
+        "heading": "Using an underwater city",
+        "content": "<ul><li><strong>Decide who can reach it.</strong> A city only merfolk can visit is a different adventure from a sunken ruin divers explore.</li><li><strong>Let the description be the hook:</strong> a signal from deeper down, or a city that rises once a century.</li><li><strong>Think about light.</strong> Names in the deep can be darker because nobody there has seen the sun.</li></ul><p>For the people who live there, try the <a href=\"mermaid-name-generator.html\">Mermaid Name Generator</a>, and for the waters above, the <a href=\"sea-name-generator.html\">Sea Name Generator</a>. For a city in the other direction, there's the <a href=\"sky-city-name-generator.html\">Sky City Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good names for an underwater city?",
+        "answer": "Names that fit the sea and who lives there: Nacredeep for merfolk, Drowned Withywold for a sunken ruin, Thermocline Station for a sci-fi base, or Siltrift for a city in the deep."
+      },
+      {
+        "question": "What is the most famous underwater city?",
+        "answer": "Atlantis, which Plato described as an island power that sank in a single day and night. Breton legend has the drowned city of Ys, and Welsh legend Cantre'r Gwaelod."
+      },
+      {
+        "question": "Can I use these in D&D?",
+        "answer": "Yes. Choose With a description for a hook, such as a city that rises once every hundred years or a market that sells sea-glass and stories."
+      }
+    ]
   }
 }

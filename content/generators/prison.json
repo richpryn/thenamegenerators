@@ -1165,8 +1165,34 @@
       "title": "⛓️ Prison Name Generator",
       "tagline": "Gaols, prison moons and vaults for sleeping dragons, from the Keyless Tower to Camp No-Pudding."
     },
-    "intro": "Every villain needs somewhere to be locked up, and every hero needs somewhere to break out of. This **prison name generator** makes names for fantasy dungeons and D&D gaols, sci-fi prison planets and stations, magical prisons built to hold monsters, and funny lock-ups, with an optional one-line description.",
-    "sections": [],
-    "faqs": []
+    "intro": "A good prison name tells prisoners what they're in for: a rock, a gaol or an oubliette in fantasy (<em>Bitterholt Rock</em>), a code and a number in sci-fi (<em>Facility Beta-113</em>), a seal or a cage for monsters. Every villain needs somewhere to be locked up, and every hero needs somewhere to break out of. This **prison name generator** makes names for fantasy dungeons and D&amp;D gaols, sci-fi prison planets and stations, magical prisons built to hold monsters, and funny lock-ups, with an optional one-line description.",
+    "sections": [
+      {
+        "heading": "Eight good prison names",
+        "content": "<p>All eight came from the generator, across its four styles:</p><ul><li><strong>Bitterholt Rock</strong>: a fantasy prison on a crag, with a name that sounds as cold as it is.</li><li><strong>Cragwick Rock, whose top cells have no stairs, so prisoners go up and down by basket</strong>: a gaol with an escape problem built in.</li><li><strong>The Leaden Oubliette</strong>: an oubliette is a cell you're put in to be forgotten.</li><li><strong>Penal Asteroid Sereth, which jumps to a new star system every night</strong>: a sci-fi prison nobody can find.</li><li><strong>Oskara Station, buried under three miles of ice</strong>: a prison where the landscape is the guard.</li><li><strong>The Seven-Locked Wraith Seal</strong>: a magical prison for something that can't be killed.</li><li><strong>The Starlocked Casket, where a storm spirit is kept in a jar that must never be opened</strong>: a monster prison small enough to carry.</li><li><strong>Camp No-Pudding</strong>: a funny lock-up for the worst crime of all.</li></ul>"
+      },
+      {
+        "heading": "How prisons get their names",
+        "content": "<p>Real prisons were usually named after where they stood. London's Newgate prison took its name from Newgate, one of the gates in the old city wall, and the Tower of London held prisoners for centuries. Alcatraz in San Francisco Bay was named by Spanish explorers after the seabirds on the island. In Scotland a tolbooth was a town hall that also served as the jail, and in the 18th and 19th centuries Britain kept prisoners on hulks, old ships moored in rivers and harbours.</p><ul><li><strong>Fantasy</strong> prisons are gaols, rocks, oubliettes and hulks: <em>The Sunless Lockhouse</em>, <em>The Drowned Tolbooth of Drearwick</em>.</li><li><strong>Sci-fi</strong> prisons sound official: <em>Correctional Orbital Drevan</em>, <em>Holding Station Zaltor</em>.</li><li><strong>Monster</strong> prisons are seals, circles and vaults: <em>The Salt Circle</em>, <em>The Riddle-Locked Cage</em>.</li><li><strong>Funny</strong> prisons are for goblins and pixies: <em>Wobblecombe Secure Unit for Cheeky Pixies</em>.</li></ul><p>Choose <strong>With a description</strong> for one detail about the prison, which is usually where an escape plan starts.</p>"
+      },
+      {
+        "heading": "Using a prison in your game",
+        "content": "<ul><li><strong>Give it one weakness</strong> and hide it in the description.</li><li><strong>Name the warden</strong> as well. A prison with a person in charge feels more real.</li><li><strong>Decide who it holds:</strong> debtors, rebels, monsters or someone the party needs to free.</li></ul><p>For a prison inside a castle, try the <a href=\"castle-name-generator.html\">Castle Name Generator</a> or the <a href=\"fortress-name-generator.html\">Fortress Name Generator</a>. For one under the ground, there's the <a href=\"dungeon-name-generator.html\">Dungeon Name Generator</a>, and for a tower with someone locked at the top, the <a href=\"wizard-tower-name-generator.html\">Wizard Tower Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good names for a fantasy prison?",
+        "answer": "Names that sound cold and permanent: Bitterholt Rock, The Leaden Oubliette, or The Sunless Lockhouse. For a sci-fi prison, try Penal Asteroid Sereth or Correctional Orbital Drevan."
+      },
+      {
+        "question": "What is an oubliette?",
+        "answer": "A dungeon cell reached only by a trapdoor in the ceiling. The name comes from the French oublier, to forget."
+      },
+      {
+        "question": "Can I get a prison for monsters?",
+        "answer": "Yes. Choose For monsters for seals, cages and vaults, like The Seven-Locked Wraith Seal or The Salt Circle."
+      }
+    ]
   }
 }
