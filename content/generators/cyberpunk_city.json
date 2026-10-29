@@ -1439,7 +1439,7 @@
     "d": {
       "megacity": [
         "forty million people stacked a mile high",
-        "where the sun hasn’t been seen at street level in a decade",
+        "where the sun hasn't been seen at street level in a decade",
         "run by a board of directors instead of a mayor",
         "whose acid rain eats through a raincoat in a week",
         "sprawled across what used to be three separate cities",
@@ -1466,7 +1466,7 @@
       ],
       "district": [
         "an old factory district now full of workshops and noodle bars",
-        "where the tram lines still run but the trams don’t",
+        "where the tram lines still run but the trams don't",
         "whose tower blocks are linked by rope bridges and cable runs",
         "where the street market sells second-hand implants",
         "whose residents vote on everything, loudly",
@@ -1478,7 +1478,7 @@
         "built around a dried-up canal",
         "where every second shop repairs phones or prosthetics",
         "whose landlord is a company that went bankrupt years ago",
-        "where the drones can’t get a signal",
+        "where the drones can't get a signal",
         "whose old railway arches house a hundred tiny businesses",
         "where the corporations sent security once and never again",
         "whose walls are covered in murals of local heroes",
@@ -1519,16 +1519,16 @@
         "whose motto is printed on every door handle"
       ],
       "undercity": [
-        "built in the dark beneath the city’s lowest street",
+        "built in the dark beneath the city's lowest street",
         "where the rain drips down from forty levels above",
         "a maze of shacks bolted to the pillars of a motorway",
         "whose only light comes from cooking fires and old adverts",
         "where the old subway tunnels became streets",
         "whose people trade in scrap, rumours and spare parts",
         "built from shipping containers stacked ten high",
-        "where the city’s waste water ends up, eventually",
-        "whose residents haven’t officially existed for years",
-        "where the corporations send what they’d rather forget",
+        "where the city's waste water ends up, eventually",
+        "whose residents haven't officially existed for years",
+        "where the corporations send what they'd rather forget",
         "run by a council of street doctors and mechanics",
         "whose markets sell anything salvaged from above",
         "where everyone knows the way out but no one can afford it",
@@ -1567,7 +1567,7 @@
         "whose arcades are full of machines nobody can fix",
         "where every doorway leads to a different party",
         "whose fortune tellers use cheap augmented reality",
-        "lit so brightly the birds think it’s always day",
+        "lit so brightly the birds think it's always day",
         "where the street performers have more cybernetics than limbs",
         "whose best bar has no name and no door",
         "where the power bill is paid in cash every Friday"
@@ -1608,5 +1608,6 @@
         "answer": "Yes. They're made up and free to use. Choose With a description for a ready-made hook for each district."
       }
     ]
-  }
+  },
+  "capitalise": true
 }

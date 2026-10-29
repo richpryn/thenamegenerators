@@ -1412,7 +1412,7 @@
         "whose children vote on the design of every new playground",
         "where the working week is three days long",
         "whose robots tend the gardens and refuse all thanks",
-        "where the founders’ promise is carved over every door",
+        "where the founders' promise is carved over every door",
         "whose skyline was designed by a committee of poets and engineers",
         "where the streets are swept by the wind and the rain",
         "whose festival of lights lasts a whole month",
@@ -1499,7 +1499,7 @@
         "whose archives were buried to wait for better days",
         "where the last working lift is guarded like treasure",
         "whose metro tunnels are flooded and full of fish",
-        "where the radiation has faded but the stories haven’t",
+        "where the radiation has faded but the stories haven't",
         "whose glass towers were stripped bare for their windows",
         "where travellers shelter under the old motorway bridges",
         "whose central plaza is a lake now",
@@ -1571,5 +1571,6 @@
         "answer": "A hopeful kind of science fiction about green, sustainable cities, where people live alongside plants and clean energy. Choose Solarpunk for names like Juniper Rise and Bracken Greenway."
       }
     ]
-  }
+  },
+  "capitalise": true
 }
