@@ -22,7 +22,7 @@
         "any": "Any kind of prison",
         "fantasy": "Fantasy/D&D (Coldwick Gaol)",
         "scifi": "Sci-fi (Penal Moon Korrin)",
-        "monster": "For monsters (Moon Jar)",
+        "monster": "For monsters (The Wraith Gaol)",
         "funny": "Funny (Camp No-Pudding)"
       }
     },
@@ -84,7 +84,7 @@
             "[monster.nick]",
             "The [monster.monster]'s [monster.noun]",
             "The [monster.adj] [monster.monster] [monster.place]",
-            "The [monster.monster] Under [fantasy.places]",
+            "The [monster.monster] Vault Under [fantasy.places]",
             "[funny.place] [funny.facility]",
             "[funny.place] [funny.facility]",
             "[funny.place] [funny.facility]",
@@ -146,7 +146,7 @@
             "[monster.nick]",
             "The [monster.monster]'s [monster.noun]",
             "The [monster.adj] [monster.monster] [monster.place]",
-            "The [monster.monster] Under [fantasy.places]"
+            "The [monster.monster] Vault Under [fantasy.places]"
           ]
         },
         "funny": {
@@ -209,7 +209,7 @@
             "[monster.nick], [monster.desc]",
             "The [monster.monster]'s [monster.noun], [monster.desc]",
             "The [monster.adj] [monster.monster] [monster.place], [monster.desc]",
-            "The [monster.monster] Under [fantasy.places], [monster.desc]",
+            "The [monster.monster] Vault Under [fantasy.places], [monster.desc]",
             "[funny.place] [funny.facility], [funny.desc]",
             "[funny.place] [funny.facility], [funny.desc]",
             "[funny.place] [funny.facility], [funny.desc]",
@@ -271,7 +271,7 @@
             "[monster.nick], [monster.desc]",
             "The [monster.monster]'s [monster.noun], [monster.desc]",
             "The [monster.adj] [monster.monster] [monster.place], [monster.desc]",
-            "The [monster.monster] Under [fantasy.places], [monster.desc]"
+            "The [monster.monster] Vault Under [fantasy.places], [monster.desc]"
           ]
         },
         "funny": {
@@ -300,7 +300,6 @@
         "Grimthorpe",
         "Blackholt",
         "Gaolby",
-        "Keystone Fell",
         "Bleakmere",
         "Ironthorpe",
         "Ketterholt",
@@ -412,7 +411,7 @@
         "Bishop Abelard",
         "Lord Gallen",
         "Lady Sable",
-        "the Iron Warden",
+        "The Iron Warden",
         "Mother Grieve",
         "Baron Ashcombe",
         "Count Varel",
@@ -420,14 +419,14 @@
         "Gaoler Pike",
         "Thane Rudd",
         "Abbess Mallow",
-        "the Grey Steward",
+        "The Grey Steward",
         "Captain Vorne",
         "Magister Orrin",
         "Lord Mortain",
-        "the Blind Steward",
+        "The Blind Steward",
         "Old Grisel",
         "Keeper Ashby",
-        "the Margravine",
+        "The Margravine",
         "Prince Ottar",
         "Lady Wren",
         "Warden Strake",
