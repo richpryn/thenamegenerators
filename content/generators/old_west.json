@@ -29,7 +29,7 @@
       ],
       "optionLabels": {
         "any": "Any (a mix)",
-        "nickname_middle": "Nickname in the middle (Wade “Two-Gun” Colter)",
+        "nickname_middle": "Nickname in the middle (Wade \"Two-Gun\" Colter)",
         "the_kid": "First name and nickname (Lucky Etta)",
         "full": "First name and surname"
       }
@@ -44,17 +44,17 @@
       "cases": {
         "male": {
           "recipe": "template",
-          "template": "[first.male] “[nick]” [surnames]"
+          "template": "[first.male] \"[nick]\" [surnames]"
         },
         "female": {
           "recipe": "template",
-          "template": "[first.female] “[nick]” [surnames]"
+          "template": "[first.female] \"[nick]\" [surnames]"
         },
         "any": {
           "recipe": "template",
           "template": [
-            "[first.male] “[nick]” [surnames]",
-            "[first.female] “[nick]” [surnames]"
+            "[first.male] \"[nick]\" [surnames]",
+            "[first.female] \"[nick]\" [surnames]"
           ]
         }
       }
@@ -112,7 +112,7 @@
         "male": {
           "recipe": "template",
           "template": [
-            "[first.male] “[nick]” [surnames]",
+            "[first.male] \"[nick]\" [surnames]",
             "[nick] [first.male]",
             "[first.male] [surnames]"
           ]
@@ -120,7 +120,7 @@
         "female": {
           "recipe": "template",
           "template": [
-            "[first.female] “[nick]” [surnames]",
+            "[first.female] \"[nick]\" [surnames]",
             "[nick] [first.female]",
             "[first.female] [surnames]"
           ]
@@ -128,10 +128,10 @@
         "any": {
           "recipe": "template",
           "template": [
-            "[first.male] “[nick]” [surnames]",
+            "[first.male] \"[nick]\" [surnames]",
             "[nick] [first.male]",
             "[first.male] [surnames]",
-            "[first.female] “[nick]” [surnames]",
+            "[first.female] \"[nick]\" [surnames]",
             "[nick] [first.female]",
             "[first.female] [surnames]"
           ]

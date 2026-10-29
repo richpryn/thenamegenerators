@@ -34,7 +34,7 @@
     },
     "full": {
       "recipe": "template",
-      "template": "[first] “[handles]” [surnames]"
+      "template": "[first] \"[handles]\" [surnames]"
     },
     "corp": {
       "recipe": "template",

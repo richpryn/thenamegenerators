@@ -99,14 +99,14 @@
     },
     "both": {
       "recipe": "template",
-      "template": "[draconic] “[descriptive]”"
+      "template": "[draconic] \"[descriptive]\""
     },
     "any": {
       "recipe": "template",
       "template": [
         "[draconic]",
         "[descriptive]",
-        "[draconic] “[descriptive]”"
+        "[draconic] \"[descriptive]\""
       ]
     }
   },

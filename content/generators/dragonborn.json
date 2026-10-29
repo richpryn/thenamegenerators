@@ -138,12 +138,12 @@
       "cases": {
         "any": {
           "recipe": "template",
-          "template": "[personal] “[childhood]”"
+          "template": "[personal] \"[childhood]\""
         }
       },
       "default": {
         "recipe": "template",
-        "template": "[personal.{gender}] “[childhood]”"
+        "template": "[personal.{gender}] \"[childhood]\""
       }
     }
   },
