@@ -576,6 +576,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Cyberpunk City Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/cyberpunk-city-name-generator.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Daedric Weapon Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/daedric-weapon-name-generator.html</loc>
@@ -1164,6 +1171,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: House Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/house-name-generator.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Hydra Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/hydra-name-generator.html</loc>
@@ -1640,6 +1654,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Post-Apocalyptic Settlement Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/post-apocalyptic-town-name-generator.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Prison Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/prison-name-generator.html</loc>
@@ -1735,6 +1756,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/scarecrow-name-generator.html</loc>
     <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Sci-Fi City Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/sci-fi-city-name-generator.html</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1892,10 +1920,24 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Steampunk City Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/steampunk-city-name-generator.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Story Prompt Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/story-prompt-generator.html</loc>
     <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Street Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/street-name-generator.html</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

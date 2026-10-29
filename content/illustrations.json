@@ -303,6 +303,12 @@
     "prison": "clapper",
     "galaxy": "planet",
     "star": "star",
-    "moon": "leaf-moon"
+    "moon": "leaf-moon",
+    "cyberpunk_city": "city",
+    "scifi_city": "city",
+    "steampunk_city": "gear",
+    "post_apocalyptic_town": "flag",
+    "street": "signpost",
+    "house_name": "house"
   }
 }

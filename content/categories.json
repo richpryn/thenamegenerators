@@ -941,7 +941,9 @@
       "fantasy_country",
       "cafe",
       "fantasy_city",
-      "haunted_house"
+      "haunted_house",
+      "street",
+      "house_name"
     ],
     "eyebrow": "World-building elements",
     "approach": {
@@ -1151,7 +1153,11 @@
       "star_wars",
       "galaxy",
       "star",
-      "moon"
+      "moon",
+      "cyberpunk_city",
+      "scifi_city",
+      "steampunk_city",
+      "post_apocalyptic_town"
     ]
   },
   {
