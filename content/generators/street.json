@@ -2304,8 +2304,34 @@
       "title": "🛣️ Street Name Generator",
       "tagline": "British lanes and mews, American avenues, fantasy city streets, cyberpunk skyways and silly roads, with a line of description if you want one."
     },
-    "intro": "Every map needs streets, and every street needs a name that sounds lived in. This **street name generator** makes British closes, crescents and wynds, American drives and boulevards, crooked fantasy alleys for your D&D city, rain-soaked cyberpunk skyways and some gloriously silly roads.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good street names sound lived in: a local name and the right ending, like <em>Rothwell Close</em> for a quiet cul-de-sac or <em>Vernon Mews</em> for a row of converted stables. Every map needs streets, and every street needs a name that sounds lived in. This **street name generator** makes British closes, crescents and wynds, American drives and boulevards, crooked fantasy alleys for your D&amp;D city, rain-soaked cyberpunk skyways and some gloriously silly roads.",
+    "sections": [
+      {
+        "heading": "Eight good street names",
+        "content": "<p>All eight came from the generator, across its five styles:</p><ul><li><strong>Vernon Mews</strong>: a sweep of Georgian houses, with the mews that once meant stables.</li><li><strong>Rothwell Close</strong>: a quiet British cul-de-sac.</li><li><strong>Hidden Brook Circle</strong>: an American suburb named after the stream they built over.</li><li><strong>Ellery Street</strong>: an old American main drag with a diner and a hardware store.</li><li><strong>Candlemakers' Alley</strong>: a fantasy street named after its trade, the way medieval streets were.</li><li><strong>Weathercock Wynd</strong>: a wynd is a narrow Scottish lane, which suits a fantasy old town.</li><li><strong>Wetware Spur</strong>: a cyberpunk street that leads down into the cargo docks.</li><li><strong>Twitching Curtain Terrace</strong>: a funny name for a street where everyone knows everyone's business.</li></ul>"
+      },
+      {
+        "heading": "How real streets got their names",
+        "content": "<p>Old street names are practical. They say where the road goes, what was sold there or who lived on it:</p><ul><li><strong>High Street</strong> was the main street of a town, \"high\" meaning important rather than uphill.</li><li><strong>Gate</strong> in York comes from the Old Norse <em>gata</em>, a street: Stonegate, Coppergate and Micklegate are streets, and the city's actual gateways are called bars.</li><li><strong>The Shambles</strong>, also in York, is named after the benches butchers sold meat from. <strong>Pudding Lane</strong> in London, where the Great Fire of 1666 began, is said to be named after the offal, or \"puddings\", carted along it.</li><li><strong>Trades</strong> gave streets their names all over Europe, which is why the fantasy style has <em>Tilers' Passage</em> and <em>Apothecaries' Row</em>.</li></ul><p>The ending says what kind of street it is. A <strong>close</strong> is usually a cul-de-sac, a <strong>mews</strong> was a row of stables behind grand houses, a <strong>terrace</strong> is a row of joined houses, a <strong>row</strong> a line of cottages, and a <strong>wynd</strong> a narrow Scottish lane. American cities went another way: the 1811 plan for Manhattan laid out numbered streets and avenues, which is why the American style has <em>East 93rd Street</em>.</p><p>Choose <strong>With a description</strong> to give each street a detail, like <em>Medlar Grove, lined with tiny Victorian cottages and cobbles</em>.</p>"
+      },
+      {
+        "heading": "Using street names",
+        "content": "<ul><li><strong>In a story or game,</strong> name the streets players will walk down, and let the rest be \"the market\" or \"the docks\".</li><li><strong>Give each district a flavour:</strong> trade names near the market, grand mews by the palace, wynds and steps in the old town.</li><li><strong>For a real development,</strong> UK street names are approved by the local council, usually after the developer has suggested them. Councils avoid names that are already used nearby.</li></ul><p>For the districts the streets run through, try the <a href=\"fantasy-district-name-generator.html\">Fantasy District Name Generator</a>. For the place itself, there's the <a href=\"fantasy-city-name-generator.html\">Fantasy City</a>, <a href=\"fantasy-town-name-generator.html\">Fantasy Town</a> and <a href=\"village-name-generator.html\">Village</a> name generators, and for the house at number seven, the <a href=\"house-name-generator.html\">House Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/places-names.html\">place name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good street names?",
+        "answer": "Names that sound lived in: a local or family name with the right ending, like Rothwell Close or Vernon Mews, or a trade name for a fantasy city, like Candlemakers' Alley. Choose a style to match the place."
+      },
+      {
+        "question": "What's the difference between a close, a mews and a terrace?",
+        "answer": "A close is usually a cul-de-sac, a mews was originally a row of stables behind larger houses, and a terrace is a row of houses joined together."
+      },
+      {
+        "question": "Who names new streets in the UK?",
+        "answer": "The local council approves street names, usually from suggestions made by the developer. Councils avoid duplicates and names that could be confusing for emergency services."
+      }
+    ]
   }
 }

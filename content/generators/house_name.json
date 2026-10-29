@@ -3202,8 +3202,34 @@
       "title": "🏡 House Name Generator",
       "tagline": "Cottage names, grand halls, modern homes, Welsh and Scots names, jokes and fantasy burrows, each with its meaning if you want it."
     },
-    "intro": "In Britain a house can have a name as well as a number, from Rose Cottage to The Old Forge. This **house name generator** suggests cottage names, grand Hall and Manor names built from real Old English place-name words, modern names for new builds, Welsh, Cornish and Scots names with their meanings, fresh joke names and cosy fantasy homes.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good house names say something true about the house: what it used to be, what grows by the door, or the view from the window, like <em>Drover's Cottage</em>, <em>Honeysuckle Cottage</em> or <em>Westerly</em>. In Britain a house can have a name as well as a number, from Rose Cottage to The Old Forge. This **house name generator** suggests cottage names, grand Hall and Manor names built from real Old English place-name words, modern names for new builds, Welsh, Cornish and Scots names with their meanings, fresh joke names and cosy fantasy homes.",
+    "sections": [
+      {
+        "heading": "Eight good house names",
+        "content": "<p>All eight came from the generator, one or two from each style:</p><ul><li><strong>Drover's Cottage</strong>: once home to a drover, who walked cattle to market. A name with the house's history in it.</li><li><strong>Honeysuckle Cottage</strong>: named for the honeysuckle round the door, the classic way to name a cottage.</li><li><strong>Earnford Manor</strong>: Old English for the eagles' river crossing, built the way real manor names were.</li><li><strong>Westerly</strong>: a modern one-word name for the prevailing west wind, good for a house by the coast.</li><li><strong>Hafan Deg</strong>: Welsh for \"fair haven\".</li><li><strong>Tigh na Mara</strong>: Scottish Gaelic for \"house of the sea\".</li><li><strong>Thistle Do</strong>: say it out loud: \"this'll do\".</li><li><strong>Thimble Nook</strong>: a fantasy name for a snug little house, dug by a family of tailors.</li></ul>"
+      },
+      {
+        "heading": "How British houses get their names",
+        "content": "<p>House names are a very British habit, especially for older and rural homes that were around before streets were numbered. Surveys over the years have often reported the same favourites at the top, simple names like The Cottage, Rose Cottage and The Bungalow. The best names usually come from one of five places:</p><ul><li><strong>What the house used to be:</strong> <em>The Old Bakehouse</em>, <em>The Old Chandlery</em>, <em>Keeper's Cottage</em>. Choose <strong>Cottage</strong> for names like these.</li><li><strong>What grows or lives there:</strong> an apple tree, honeysuckle, a badger sett in the wood.</li><li><strong>Old place-name words:</strong> the <strong>Grand</strong> style joins Old English parts the way real estates were named. <em>-croft</em> is a small field, <em>-leigh</em> a clearing, <em>-combe</em> a valley and <em>-well</em> a spring, so <em>Thornwell Place</em> is the spring of the thorn bushes.</li><li><strong>Another language:</strong> Welsh names like <em>Tŷ Gwyn</em> (white house) and <em>Bryn Celyn</em> (holly hill), Cornish names like <em>Chy an Mor</em> (house of the sea), Scottish Gaelic names like <em>Tigh na Coille</em> (house of the wood), and Scots names like <em>Bide-a-Wee</em> (stay a little while).</li><li><strong>A joke:</strong> the <em>Dun-</em> names for a retirement home (<em>Dunfarmin</em>, <em>Dunsailin</em>), and puns like <em>Moor or Less</em> for a moorland cottage.</li></ul><p>Choose <strong>With its meaning</strong> to see what each name means. The Welsh, Cornish, Gaelic and Scots meanings are real translations.</p>"
+      },
+      {
+        "heading": "Naming your house",
+        "content": "<ul><li><strong>You can usually name your house,</strong> but if it already has a number, Royal Mail asks you to keep the number in the address. The name is added to it, not swapped for it.</li><li><strong>Tell your local council.</strong> Councils look after street naming and numbering, and many have a form for adding or changing a house name. Some won't accept a name that's already used on the same street.</li><li><strong>Say it on the phone.</strong> You'll spell it out to delivery drivers for years, so pick something that's easy to say and spell.</li><li><strong>Using Welsh or Gaelic?</strong> Get the spelling and accents right: <em>Tŷ</em> has a circumflex, and the meaning should suit the house.</li><li><strong>Check the sign.</strong> A long name needs a long slate. <em>Hafan</em> fits on any gatepost.</li></ul><p>Naming the village too? Try the <a href=\"village-name-generator.html\">Village Name Generator</a>. For a house with a past, the <a href=\"haunted-house-name-generator.html\">Haunted House Name Generator</a> has names for somewhere spookier, and the <a href=\"street-name-generator.html\">Street Name Generator</a> names the road it's on.</p><p>For more, see all the <a href=\"../categories/places-names.html\">place name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good house name ideas?",
+        "answer": "Names that say something true about the house: its history (Drover's Cottage, The Old Bakehouse), what grows there (Honeysuckle Cottage), the view or the weather (Westerly), or a word in Welsh or Gaelic, like Hafan Deg (fair haven) or Tigh na Mara (house of the sea)."
+      },
+      {
+        "question": "How do I name my house in the UK?",
+        "answer": "Contact your local council, which handles street naming and numbering; many have a simple form. If your house has a number, Royal Mail asks you to keep using it, so the name is added to your address rather than replacing the number."
+      },
+      {
+        "question": "What are some Welsh house names and their meanings?",
+        "answer": "Tŷ Gwyn means white house, Bryn Celyn holly hill, Hafod a summer dwelling in the hills, Cartref home, and Glan yr Afon the riverbank. Choose Welsh and Scots with the meaning format to see more."
+      }
+    ]
   }
 }

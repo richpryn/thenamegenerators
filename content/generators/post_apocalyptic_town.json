@@ -1643,8 +1643,34 @@
       "title": "☢️ Post-Apocalyptic Settlement Name Generator",
       "tagline": "Scrap towns, walled compounds and nomad camps for the world after the end."
     },
-    "intro": "The **Post-Apocalyptic Settlement Name Generator** names the towns people build after the end of the world: scrap towns, walled compounds, nomad camps, squats in the ruins of old cities and hopeful villages starting again, with a short description if you want one.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good post-apocalyptic town names are named after whatever is left: a car park, a motorway exit, a shopping trolley or a hope. The **Post-Apocalyptic Settlement Name Generator** names the towns people build after the end of the world: scrap towns, walled compounds, nomad camps, squats in the ruins of old cities and hopeful villages starting again, with a short description if you want one.",
+    "sections": [
+      {
+        "heading": "Eight good post-apocalyptic town names",
+        "content": "<p>All eight came from the generator, across its five styles:</p><ul><li><strong>Hubcapville</strong>: a scrap town named after what it's built from.</li><li><strong>Kettle Cross, where every roof is made from a different road sign</strong>: a scrap settlement with a picture in its description.</li><li><strong>Chainlink Keep</strong>: a fortified town that's mostly fence.</li><li><strong>Dawes Compound, behind walls made of shipping containers stacked four high</strong>: a compound named after whoever's in charge.</li><li><strong>Exit 36</strong>: a nomad stop named after the motorway sign, the only landmark left.</li><li><strong>Under the Car Park</strong>: a squat in the ruins, named by giving directions.</li><li><strong>Old Planetarium</strong>: a ruin people have moved into, still called what it used to be.</li><li><strong>Green Shoots</strong>: a village of rebuilders, named after a hope.</li></ul>"
+      },
+      {
+        "heading": "How survivors name their settlements",
+        "content": "<p>After the end of the world, nobody has time for a grand name. Settlements are named after a landmark, a leader or a joke, and the names stick. Fiction has some famous ones: Bartertown in <em>Mad Max Beyond Thunderdome</em> (1985), and Megaton in <em>Fallout 3</em>, a town built around an unexploded bomb.</p><ul><li><strong>Scrap towns</strong> are named after the junk: <em>Toaster Ridge</em>, <em>Jerrycan Flats</em>, <em>Bottlecap Cross</em>.</li><li><strong>Fortified</strong> towns are stockades, forts and keeps: <em>Keogh’s Stockade</em>, <em>Barricade Hill</em>.</li><li><strong>Nomad camps</strong> take road names and mile markers: <em>Mile Fifty-Five</em>, <em>Camp Long Road</em>.</li><li><strong>City ruins</strong> keep the old building's name: <em>Museum Hill</em>, <em>Department Store Steps</em>, <em>Arrivals</em>.</li><li><strong>Rebuilders</strong> choose hopeful names: <em>Daybreak Commons</em>, <em>Brighter Days</em>.</li></ul>"
+      },
+      {
+        "heading": "Settling the wasteland",
+        "content": "<ul><li><strong>Name it after what's left.</strong> A post-apocalyptic town should tell you what the world used to be.</li><li><strong>Mix the moods.</strong> A map with one hopeful village among the stockades and scrap towns has somewhere worth protecting.</li><li><strong>Let names be practical.</strong> Survivors name places so others can find them: by road, by sign, by landmark.</li></ul><p>For the survivors themselves, try the <a href=\"post-apocalyptic-name-generator.html\">Post-Apocalyptic Name Generator</a>. For cities before the fall, there's the <a href=\"sci-fi-city-name-generator.html\">Sci-Fi City</a> and <a href=\"cyberpunk-city-name-generator.html\">Cyberpunk City</a> name generators.</p><p>For more, see all the <a href=\"../categories/scifi-names.html\">sci-fi name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good post-apocalyptic town names?",
+        "answer": "Names that come from what's left: Hubcapville, Exit 36, Under the Car Park or Old Planetarium. For a hopeful village, try names like Green Shoots or Daybreak Commons."
+      },
+      {
+        "question": "How do survivors name a settlement?",
+        "answer": "Practically: after a landmark, a road sign, a leader or the junk it's built from. Grand names come later, if at all."
+      },
+      {
+        "question": "Can I use these in a game or story?",
+        "answer": "Yes. They're free to use. Choose With a description for a line about life in each settlement."
+      }
+    ]
   }
 }

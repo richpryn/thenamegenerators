@@ -1579,8 +1579,34 @@
       "title": "🌃 Cyberpunk City Name Generator",
       "tagline": "Rain-slick megacities, corporate towers, neon strips and the dark streets underneath."
     },
-    "intro": "This **cyberpunk city name generator** names every layer of a future megacity: the sprawl itself, its districts and neighbourhoods, gleaming corporate arcologies, slums and undercities, and the neon nightlife strips in between. Add a short description for an instant setting hook in your RPG, game or story.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good cyberpunk city names sound crowded, corporate and a little worn out: a sprawl named like a metro area, districts named after the industry that left, and towers named after the company that owns them. This **cyberpunk city name generator** names every layer of a future megacity: the sprawl itself, its districts and neighbourhoods, gleaming corporate arcologies, slums and undercities, and the neon nightlife strips in between. Add a short description for an instant setting hook in your RPG, game or story.",
+    "sections": [
+      {
+        "heading": "Eight good cyberpunk city names",
+        "content": "<p>All eight came from the generator, across its five styles:</p><ul><li><strong>Sevara–Ostira Sprawl</strong>: two cities that grew into one, named like a real conurbation.</li><li><strong>Port Sevida, whose water supply is owned by a soft-drinks company</strong>: a megacity with its politics in one line.</li><li><strong>Cannery Square</strong>: a district named after an industry that's long gone.</li><li><strong>Lindqvist Yards</strong>: a neighbourhood named after whoever built it, decades ago.</li><li><strong>Prentiss Tower One, whose staff canteen feeds sixty thousand people a day</strong>: a corporate arcology big enough to be a town.</li><li><strong>Rustditch</strong>: an undercity name that says exactly what it's like down there.</li><li><strong>Jukebox Mile</strong>: a neon strip with a bit of old-fashioned glamour.</li><li><strong>Silver Dollar Avenue, whose fortune tellers use cheap augmented reality</strong>: a nightlife strip where the future is second-hand.</li></ul>"
+      },
+      {
+        "heading": "How cyberpunk names its cities",
+        "content": "<p>The genre's cities grew out of William Gibson's <em>Neuromancer</em> (1984), set in the Sprawl, the Boston–Atlanta Metropolitan Axis: one city running down a whole coastline. Since then, cyberpunk cities have tended to be named like real metropolitan areas, with the old names still showing through. The tabletop game <em>Cyberpunk</em> gave us Night City, later the setting of <em>Cyberpunk 2077</em>.</p><ul><li><strong>Megacity</strong> names use the language of planning departments: Metro, Greater, Special Zone, Sprawl. <em>Greater Halira</em>, <em>Zania Special Zone</em>.</li><li><strong>Districts</strong> keep the name of what used to be there: a cannery, a gantry, a chimney. <em>Chimney Heights</em>, <em>the Gantry Blocks</em>.</li><li><strong>Arcologies</strong> are vast self-contained buildings, a word the architect Paolo Soleri made from <em>architecture</em> and <em>ecology</em>. Here they're named after the corporations that own them: <em>the Prentiss Arcology</em>, <em>Goldleaf Ziggurat</em>.</li><li><strong>Slums and undercities</strong> are named by the people who live there: <em>Bucket Bottoms</em>, <em>Rag End</em>, <em>Mouldtown</em>.</li><li><strong>Neon strips</strong> sound like a night out: <em>Kaleidoscope Strip</em>, <em>Ultraviolet Boulevard</em>.</li></ul><p>Choose <strong>With a description</strong> for a line about the place, like <em>the Gantry Blocks, whose residents grow vegetables on every balcony</em>.</p>"
+      },
+      {
+        "heading": "Building your sprawl",
+        "content": "<ul><li><strong>Name the city first, then go down.</strong> One megacity name, a handful of districts, two or three arcologies and one undercity is plenty for a campaign.</li><li><strong>Let the corporations show.</strong> If a tower is named after a company, decide what the company makes and how far its name reaches into the streets.</li><li><strong>Give the poor parts better names.</strong> Official names are bland; the nicknames locals use are where the character is.</li></ul><p>For the people who live there, try the <a href=\"cyberpunk-name-generator.html\">Cyberpunk Name Generator</a>. For cities of other futures, there's the <a href=\"sci-fi-city-name-generator.html\">Sci-Fi City</a>, <a href=\"steampunk-city-name-generator.html\">Steampunk City</a> and <a href=\"post-apocalyptic-town-name-generator.html\">Post-Apocalyptic Settlement</a> name generators, and for the streets themselves, the <a href=\"street-name-generator.html\">Street Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/scifi-names.html\">sci-fi name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good cyberpunk city names?",
+        "answer": "Names that sound like a real metro area grown too big, like Greater Halira or the Sevara–Ostira Sprawl, with districts named after old industries (Cannery Square) and towers named after corporations (the Prentiss Arcology)."
+      },
+      {
+        "question": "What is an arcology?",
+        "answer": "A huge self-contained building where people live, work and shop without leaving. The word, from architecture and ecology, came from the architect Paolo Soleri, and cyberpunk turned it into the corporate tower."
+      },
+      {
+        "question": "Can I use these names in my RPG?",
+        "answer": "Yes. They're made up and free to use. Choose With a description for a ready-made hook for each district."
+      }
+    ]
   }
 }
