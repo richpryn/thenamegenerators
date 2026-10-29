@@ -285,7 +285,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=ac296999">
+    <link rel="stylesheet" href="../styles/site.css?v=1ca2262b">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -294,6 +294,8 @@
       <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
       <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
       <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
       <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
       <symbol id="m-spark-orb" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9 l3 3 M40 9 l-3 3 M5 23 h4 M39 23 h4 M24 3 v4" stroke-width="1.6"/><circle cx="24" cy="22" r="10" fill="#fffcf4"/><circle cx="24" cy="22" r="5" fill="#efc84a" stroke="none"/><path d="M18 22 C18 16 26 15 28 20 C30 25 24 28 21 25" stroke-width="1.4"/><path d="M11 34 C14 41 34 41 37 34 C35 31.5 31 31.5 29 34 M19 34 C17 31.5 13 31.5 11 34" fill="#fffcf4"/></g></symbol>
       <symbol id="m-war-axe" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 42 L33 16"/><path d="M27 8 C37 5 46 12 44 22 C38 18 32 18 28 22 C30 16 30 12 27 8 Z" fill="#fffcf4"/><path d="M7 40 l6 6"/><path d="M12 33 l5 5" stroke="#efc84a" stroke-width="4"/></g></symbol>
@@ -358,77 +360,90 @@
         <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
         <nav class="site-nav" aria-label="Main">
           <ul class="nav-links" id="nav-links">
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy"><span class="nav-label">Fantasy</span></button>
-              <ul class="nav-dropdown-menu" id="menu-fantasy">
-                <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
-                <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
-                <li><a href="../posts/dragon-name-generator.html">Dragon names</a></li>
-                <li><a href="../posts/tiefling-name-generator.html">Tiefling names</a></li>
-                <li><a href="../posts/npc-name-generator.html">NPC names</a></li>
-                <li><a href="../posts/wizard-name-generator.html">Wizard names</a></li>
-                <li><a href="../posts/vampire-name-generator.html">Vampire names</a></li>
-                <li><a href="../posts/tavern-name-generator.html">Tavern names</a></li>
-                <li><a href="../posts/fantasy-town-name-generator.html">Town &amp; village names</a></li>
-                <li><a href="../posts/epithet-generator.html">Epithets &amp; titles</a></li>
-                <li class="nav-more">More: <a href="../categories/fantasy-names.html">Fantasy</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/mythical-names.html">Mythical creatures</a> · <a href="../categories/mythology-names.html">Mythology</a> · <a href="../categories/wuxia-names.html">Wuxia</a> · <a href="../categories/worldbuilding-names.html">World-building</a></li>
-                <li class="nav-more">Seasonal: <a href="../categories/christmas-names.html">Christmas</a> · <a href="../categories/halloween-names.html">Halloween</a></li>
-              </ul>
+            <li class="nav-top"><a href="../index.html">Home</a></li>
+            <li class="nav-top"><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown nav-mega">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-categories"><span class="nav-label">Categories</span></button>
+              <div class="nav-dropdown-menu nav-mega-panel" id="menu-categories">
+                <div class="nav-col">
+                  <p class="nav-col-h">Fantasy</p>
+                  <ul>
+                    <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
+                    <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
+                    <li><a href="../posts/dragon-name-generator.html">Dragon names</a></li>
+                    <li><a href="../posts/tiefling-name-generator.html">Tiefling names</a></li>
+                    <li><a href="../posts/npc-name-generator.html">NPC names</a></li>
+                    <li><a href="../posts/wizard-name-generator.html">Wizard names</a></li>
+                    <li><a href="../posts/vampire-name-generator.html">Vampire names</a></li>
+                    <li><a href="../posts/tavern-name-generator.html">Tavern names</a></li>
+                    <li><a href="../posts/fantasy-town-name-generator.html">Town &amp; village names</a></li>
+                    <li><a href="../posts/epithet-generator.html">Epithets &amp; titles</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/fantasy-names.html">Fantasy</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/mythical-names.html">Mythical creatures</a> · <a href="../categories/mythology-names.html">Mythology</a> · <a href="../categories/wuxia-names.html">Wuxia</a> · <a href="../categories/worldbuilding-names.html">World-building</a></p>
+                  <p class="nav-more">Seasonal: <a href="../categories/christmas-names.html">Christmas</a> · <a href="../categories/halloween-names.html">Halloween</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Games &amp; TV</p>
+                  <ul>
+                    <li><a href="../posts/minecraft-username-generator.html">Minecraft usernames</a></li>
+                    <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
+                    <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
+                    <li><a href="../posts/baldurs-gate-3-name-generator.html">Baldur&#039;s Gate 3</a></li>
+                    <li><a href="../posts/skyrim-orc-name-generator.html">Skyrim orc</a></li>
+                    <li><a href="../posts/khajiit-name-generator.html">Khajiit</a></li>
+                    <li><a href="../posts/elden-ring-name-generator.html">Elden Ring</a></li>
+                    <li><a href="../posts/warhammer-name-generator.html">Warhammer 40k</a></li>
+                    <li><a href="../posts/star-wars-name-generator.html">Star Wars</a></li>
+                    <li><a href="../posts/game-of-thrones-name-generator.html">Game of Thrones</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/minecraft-names.html">Minecraft</a> · <a href="../categories/scifi-names.html">Sci-fi</a> · <a href="../categories/pop_culture-names.html">Pop culture</a> · <a href="../categories/elder_scrolls-names.html">Elder Scrolls</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Music &amp; online</p>
+                  <ul>
+                    <li><a href="../posts/band-name-generator.html">Band names</a></li>
+                    <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
+                    <li><a href="../posts/dj-name-generator.html">DJ names</a></li>
+                    <li><a href="../posts/album-name-generator.html">Album names</a></li>
+                    <li><a href="../posts/stage-name-generator.html">Stage names</a></li>
+                    <li><a href="../posts/podcast-name-generator.html">Podcast names</a></li>
+                    <li><a href="../posts/youtube-channel-name-generator.html">YouTube channel names</a></li>
+                    <li><a href="../posts/gamertag-generator.html">Gamertags</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/music-names.html">Music</a> · <a href="../categories/music_genres-names.html">Music by genre</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Business</p>
+                  <ul>
+                    <li><a href="../posts/business-name-generator.html">Business names</a></li>
+                    <li><a href="../posts/company-name-generator.html">Company names</a></li>
+                    <li><a href="../posts/brand-name-generator.html">Brand names</a></li>
+                    <li><a href="../posts/cafe-name-generator.html">Café names</a></li>
+                    <li><a href="../posts/event-name-generator.html">Event &amp; party names</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/organizations-names.html">Organisations</a> · <a href="../categories/events-names.html">Events</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Name tools</p>
+                  <ul>
+                    <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
+                    <li><a href="../random-name-picker.html">Random name picker</a></li>
+                    <li><a href="../raffle-picker.html">Raffle / pick a winner</a></li>
+                    <li><a href="../secret-santa-generator.html">Secret Santa</a></li>
+                    <li><a href="../team-generator.html">Team generator</a></li>
+                    <li><a href="../posts/name-combiner.html">Name combiner</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../name-tools.html">Name tools</a></p>
+                </div>
+                <p class="nav-all"><a href="../all-generators.html">All generators →</a><a href="../sitemap.html#categories">Every category →</a></p>
+              </div>
             </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games"><span class="nav-label">Games &amp; TV</span></button>
-              <ul class="nav-dropdown-menu" id="menu-games">
-                <li><a href="../posts/minecraft-username-generator.html">Minecraft usernames</a></li>
-                <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
-                <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
-                <li><a href="../posts/baldurs-gate-3-name-generator.html">Baldur&#039;s Gate 3</a></li>
-                <li><a href="../posts/skyrim-orc-name-generator.html">Skyrim orc</a></li>
-                <li><a href="../posts/khajiit-name-generator.html">Khajiit</a></li>
-                <li><a href="../posts/elden-ring-name-generator.html">Elden Ring</a></li>
-                <li><a href="../posts/warhammer-name-generator.html">Warhammer 40k</a></li>
-                <li><a href="../posts/star-wars-name-generator.html">Star Wars</a></li>
-                <li><a href="../posts/game-of-thrones-name-generator.html">Game of Thrones</a></li>
-                <li class="nav-more">More: <a href="../categories/minecraft-names.html">Minecraft</a> · <a href="../categories/scifi-names.html">Sci-fi</a> · <a href="../categories/pop_culture-names.html">Pop culture</a> · <a href="../categories/elder_scrolls-names.html">Elder Scrolls</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music"><span class="nav-label">Music &amp; online</span></button>
-              <ul class="nav-dropdown-menu" id="menu-music">
-                <li><a href="../posts/band-name-generator.html">Band names</a></li>
-                <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
-                <li><a href="../posts/dj-name-generator.html">DJ names</a></li>
-                <li><a href="../posts/album-name-generator.html">Album names</a></li>
-                <li><a href="../posts/stage-name-generator.html">Stage names</a></li>
-                <li><a href="../posts/podcast-name-generator.html">Podcast names</a></li>
-                <li><a href="../posts/youtube-channel-name-generator.html">YouTube channel names</a></li>
-                <li><a href="../posts/gamertag-generator.html">Gamertags</a></li>
-                <li class="nav-more">More: <a href="../categories/music-names.html">Music</a> · <a href="../categories/music_genres-names.html">Music by genre</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business"><span class="nav-label">Business</span></button>
-              <ul class="nav-dropdown-menu" id="menu-business">
-                <li><a href="../posts/business-name-generator.html">Business names</a></li>
-                <li><a href="../posts/company-name-generator.html">Company names</a></li>
-                <li><a href="../posts/brand-name-generator.html">Brand names</a></li>
-                <li><a href="../posts/cafe-name-generator.html">Café names</a></li>
-                <li><a href="../posts/event-name-generator.html">Event &amp; party names</a></li>
-                <li class="nav-more">More: <a href="../categories/organizations-names.html">Organisations</a> · <a href="../categories/events-names.html">Events</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools"><span class="nav-label">Name tools</span></button>
-              <ul class="nav-dropdown-menu" id="menu-tools">
-                <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
-                <li><a href="../random-name-picker.html">Random name picker</a></li>
-                <li><a href="../raffle-picker.html">Raffle / pick a winner</a></li>
-                <li><a href="../secret-santa-generator.html">Secret Santa</a></li>
-                <li><a href="../team-generator.html">Team generator</a></li>
-                <li><a href="../posts/name-combiner.html">Name combiner</a></li>
-                <li class="nav-more">More: <a href="../name-tools.html">Name tools</a></li>
-              </ul>
-            </li>
-            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-top"><a href="../about.html">About</a></li>
+            <li class="nav-find"><form class="nav-search" action="../all-generators.html" method="get" role="search">
+          <label class="visually-hidden" for="nav-q">Search generators</label>
+          <input id="nav-q" type="search" name="q" placeholder="Search generators…" autocomplete="off" enterkeyhint="search">
+          <button type="submit" aria-label="Search"><svg aria-hidden="true" focusable="false"><use href="#i-search"/></svg></button>
+        </form></li>
           </ul>
         </nav>
       </div>
@@ -737,7 +752,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Sorcerer Name Generator","slug":"sorcerer-name-generator","seoTitle":"D&D Sorcerer Name Generator: Names for Every Origin","filters":{"gender":{"label":"Gender","options":["any","male","female"],"optionLabels":{"any":"Any"}},"subclass":{"label":"Origin","options":["any","draconic","wild","divine","shadow","storm","aberrant","clockwork"],"optionLabels":{"any":"Any origin","draconic":"Draconic Bloodline","wild":"Wild Magic","divine":"Divine Soul","shadow":"Shadow Magic","storm":"Storm Sorcery","aberrant":"Aberrant Mind","clockwork":"Clockwork Soul"}},"format":{"label":"Name format","options":["full","name"],"optionLabels":{"full":"Name and epithet","name":"Name only"}},"letter":{"label":"Starts with","options":["any","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","r","s","t","v","z"],"optionLabels":{"any":"Any letter","a":"A","b":"B","c":"C","d":"D","e":"E","f":"F","g":"G","h":"H","i":"I","j":"J","k":"K","l":"L","m":"M","n":"N","o":"O","p":"P","q":"Q","r":"R","s":"S","t":"T","u":"U","v":"V","w":"W","x":"X","y":"Y","z":"Z"}}},"startsWith":"letter","recipe":"switch","on":"gender","cases":{"any":{"recipe":"switch","on":"subclass","cases":{"draconic":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given] [epithets.draconic]","[given], [epithets_titled.draconic]"]},"name":{"recipe":"template","template":"[given]"}}},"wild":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given] [epithets.wild]","[given], [epithets_titled.wild]"]},"name":{"recipe":"template","template":"[given]"}}},"divine":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given] [epithets.divine]","[given], [epithets_titled.divine]"]},"name":{"recipe":"template","template":"[given]"}}},"shadow":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given] [epithets.shadow]","[given], [epithets_titled.shadow]"]},"name":{"recipe":"template","template":"[given]"}}},"storm":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given] [epithets.storm]","[given], [epithets_titled.storm]"]},"name":{"recipe":"template","template":"[given]"}}},"aberrant":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given] [epithets.aberrant]","[given], [epithets_titled.aberrant]"]},"name":{"recipe":"template","template":"[given]"}}},"clockwork":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given] [epithets.clockwork]","[given], [epithets_titled.clockwork]"]},"name":{"recipe":"template","template":"[given]"}}},"any":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given] [epithets.draconic]","[given], [epithets_titled.draconic]","[given] [epithets.wild]","[given], [epithets_titled.wild]","[given] [epithets.divine]","[given], [epithets_titled.divine]","[given] [epithets.shadow]","[given], [epithets_titled.shadow]","[given] [epithets.storm]","[given], [epithets_titled.storm]","[given] [epithets.aberrant]","[given], [epithets_titled.aberrant]","[given] [epithets.clockwork]","[given], [epithets_titled.clockwork]"]},"name":{"recipe":"template","template":"[given]"}}}}},"male":{"recipe":"switch","on":"subclass","cases":{"draconic":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given.male] [epithets.draconic]","[given.male], [epithets_titled.draconic]"]},"name":{"recipe":"template","template":"[given.male]"}}},"wild":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given.male] [epithets.wild]","[given.male], [epithets_titled.wild]"]},"name":{"recipe":"template","template":"[given.male]"}}},"divine":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given.male] [epithets.divine]","[given.male], [epithets_titled.divine]"]},"name":{"recipe":"template","template":"[given.male]"}}},"shadow":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given.male] [epithets.shadow]","[given.male], [epithets_titled.shadow]"]},"name":{"recipe":"template","template":"[given.male]"}}},"storm":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given.male] [epithets.storm]","[given.male], [epithets_titled.storm]"]},"name":{"recipe":"template","template":"[given.male]"}}},"aberrant":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given.male] [epithets.aberrant]","[given.male], [epithets_titled.aberrant]"]},"name":{"recipe":"template","template":"[given.male]"}}},"clockwork":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given.male] [epithets.clockwork]","[given.male], [epithets_titled.clockwork]"]},"name":{"recipe":"template","template":"[given.male]"}}},"any":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given.male] [epithets.draconic]","[given.male], [epithets_titled.draconic]","[given.male] [epithets.wild]","[given.male], [epithets_titled.wild]","[given.male] [epithets.divine]","[given.male], [epithets_titled.divine]","[given.male] [epithets.shadow]","[given.male], [epithets_titled.shadow]","[given.male] [epithets.storm]","[given.male], [epithets_titled.storm]","[given.male] [epithets.aberrant]","[given.male], [epithets_titled.aberrant]","[given.male] [epithets.clockwork]","[given.male], [epithets_titled.clockwork]"]},"name":{"recipe":"template","template":"[given.male]"}}}}},"female":{"recipe":"switch","on":"subclass","cases":{"draconic":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given.female] [epithets.draconic]","[given.female], [epithets_titled.draconic]"]},"name":{"recipe":"template","template":"[given.female]"}}},"wild":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given.female] [epithets.wild]","[given.female], [epithets_titled.wild]"]},"name":{"recipe":"template","template":"[given.female]"}}},"divine":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given.female] [epithets.divine]","[given.female], [epithets_titled.divine]"]},"name":{"recipe":"template","template":"[given.female]"}}},"shadow":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given.female] [epithets.shadow]","[given.female], [epithets_titled.shadow]"]},"name":{"recipe":"template","template":"[given.female]"}}},"storm":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given.female] [epithets.storm]","[given.female], [epithets_titled.storm]"]},"name":{"recipe":"template","template":"[given.female]"}}},"aberrant":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given.female] [epithets.aberrant]","[given.female], [epithets_titled.aberrant]"]},"name":{"recipe":"template","template":"[given.female]"}}},"clockwork":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given.female] [epithets.clockwork]","[given.female], [epithets_titled.clockwork]"]},"name":{"recipe":"template","template":"[given.female]"}}},"any":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given.female] [epithets.draconic]","[given.female], [epithets_titled.draconic]","[given.female] [epithets.wild]","[given.female], [epithets_titled.wild]","[given.female] [epithets.divine]","[given.female], [epithets_titled.divine]","[given.female] [epithets.shadow]","[given.female], [epithets_titled.shadow]","[given.female] [epithets.storm]","[given.female], [epithets_titled.storm]","[given.female] [epithets.aberrant]","[given.female], [epithets_titled.aberrant]","[given.female] [epithets.clockwork]","[given.female], [epithets_titled.clockwork]"]},"name":{"recipe":"template","template":"[given.female]"}}}}}},"data":{"given":{"male":["Aurelian","Caelum","Dorian","Faelan","Ilarion","Kaelen","Lucan","Malachi","Nero","Orion","Pyrrhus","Rhydian","Sorin","Thane","Vael","Xander","Zephyr","Ash","Blaze","Cassian","Draven","Emrys","Ignatius","Kieran","Lysander","Magnus","Nyx","Osric","Phineas","Ravel","Severin","Tycho","Ulric","Vesper","Wystan","Zarek","Aldwyn","Belisar","Corvus","Dante","Eldric","Florian","Gideon","Helios","Icarus","Kaspar","Leander","Nestor","Peregrine","Ronan","Sylvan","Teodor","Valerian","Adrastos","Ambrose","Anselm","Anton","Aric","Bastien","Caius","Castor","Cyprian","Damon","Darius","Demetrios","Elian","Evren","Fabian","Gaius","Galen","Hadrian","Halcyon","Isandro","Ivo","Julian","Kassius","Marius","Maximus","Nicodemus","Octavian","Perseus","Quentin","Rafael","Rufus","Septimus","Solon","Stellan","Tarquin","Theron","Viktor","Yvain","Zoltan","Ambrosius","Aurelius","Benedek","Cornelius","Corentin","Cosimo","Elias","Erasmus","Ferran","Isidor","Jovan","Lorcan","Mattheus","Oren","Pascal","Raphael","Rhys","Soren","Stefan","Theodric","Tobias","Vasil","Zeno","Amadeus","Anatol","Arvid","Balian","Cassiel","Cosmin","Dorran","Eamon","Evander","Fintan","Gaspard","Jago","Lazar","Leonel","Marcellus","Matthias","Mikhail","Niall","Osmund","Pellam","Quillon","Remiel","Sacha","Saverio","Tancred","Thibault","Ulysses","Vidal","Wendel","Ximeno","Yuri","Aldous","Bertram","Calder","Cormac","Davor","Emeric","Hector","Ciaran","Elio","Idris","Valerio","Auden","Corwin","Seraphin","Aurelio","Lucius","Severo"],"female":["Aurora","Calista","Drusilla","Elara","Ember","Freya","Ignis","Isadora","Kaia","Lilith","Morgana","Nyssa","Oriana","Pyra","Rhea","Seraphine","Thalia","Vespera","Xanthe","Zinnia","Astra","Blaze","Dahlia","Eris","Fiamma","Galatea","Hesper","Ione","Juno","Lyra","Mira","Nova","Raven","Selene","Tempest","Vela","Zora","Ariadne","Briallen","Cassandra","Delphine","Elektra","Fiora","Gwyneth","Helena","Ilona","Jessamine","Katrin","Lucia","Melisande","Nimue","Ottilie","Sorcha","Adara","Alessandra","Althea","Amara","Anthea","Antonia","Aster","Aurelia","Brisa","Caelia","Carina","Cassia","Celestine","Cerise","Circe","Clio","Cyra","Danae","Delia","Dione","Elysia","Estrella","Evadne","Faustine","Flavia","Ianthe","Ilaria","Irina","Ismene","Jacinta","Larissa","Leocadia","Livia","Luna","Lysandra","Maia","Marisol","Medea","Melantha","Minerva","Nerissa","Octavia","Ondine","Ophira","Phaedra","Philomena","Rosalba","Sabine","Scarlet","Selina","Severine","Sibyl","Sidra","Solenne","Stella","Sunniva","Tamsin","Theodosia","Ursa","Valeria","Venetia","Verena","Xenia","Zephyrine","Zosia","Alcyone","Amalthea","Anwen","Arianwen","Briseis","Caterina","Cinzia","Corisande","Damaris","Elowen","Esperanza","Fenella","Ginevra","Iliana","Ines","Isaura","Kalinda","Leontine","Liane","Lorelei","Lucasta","Marcelline","Nadira","Odalys","Orsolya","Rosamund","Sanna","Talitha","Valentina","Vivienne","Yolande","Zara","Aveline","Beatrix","Cosima","Dagny","Eira","Fiametta","Gisela","Halina","Lucienne","Celandine","Amaryllis","Isolde","Rhosyn"]},"epithets":{"draconic":["the Dragon-Blooded","Who Breathes Fire","the Scale-Skinned","of the Wyrm's Line","the Ember-Eyed","the Clawed Spell","the Gold-Scaled","the Drake-Born","the Fire-Tongued","the Wyrmkin"],"wild":["the Unpredictable","Who Turns Into a Potted Plant","the Chaos-Touched","of the Wild Surge","the Spark","the Glitching","the Unstable","the Surging","the Weird","the Lucky","the Probably Fine"],"divine":["the Heaven-Touched","Who Was Born Blessed","the Angel-Blooded","of the Celestial Line","the Radiant Soul","the Chosen","the Haloed","the Divine Spark","the Golden-Souled","the Seraphic","the Blessed"],"shadow":["the Shadow-Born","Who Casts No Shadow","the Darkling","of the Shadowfell","the Hound-Keeper","the Night-Blooded","the Umbral","the Pale","the Gloom-Caster","the Lightless","the Eclipse"],"storm":["the Storm-Born","Who Rides the Lightning","the Thunder-Child","of the Raging Sea","the Gale-Caller","the Tempest","the Wind-Walker","the Squall","the Lightning-Eyed","the Hurricane","the Rain-Bringer"],"aberrant":["the Mind-Touched","Who Hears Whispers","the Far-Thinker","of the Strange Stars","the Tentacled","the Psychic","the Warped","the Voice Within","the Unsettling","the Many-Minded","the Dreamer Beyond"],"clockwork":["the Clockwork","Who Keeps Perfect Time","the Gear-Hearted","of the Perfect Order","the Balanced","the Mechanical","the Ticking","the Precise","the Cog-Touched","the Measured","the Orderly"]},"epithets_titled":{"draconic":["Heir of the Dragon","Child of the Wyrm"],"wild":["Child of Chaos"],"divine":["Child of the Gods"],"shadow":["Child of the Dark"],"storm":["Child of the Storm"],"aberrant":["Child of the Void"],"clockwork":["Child of Order"]}},"letterSets":{"any|any|full":"abcdefghijklmnoprstvz","any|any|name":"abcdefghijklmnoprstvz","any|draconic|full":"abcdefghijklmnoprstvz","any|draconic|name":"abcdefghijklmnoprstvz","any|wild|full":"abcdefghijklmnoprstvz","any|wild|name":"abcdefghijklmnoprstvz","any|divine|full":"abcdefghijklmnoprstvz","any|divine|name":"abcdefghijklmnoprstvz","any|shadow|full":"abcdefghijklmnoprstvz","any|shadow|name":"abcdefghijklmnoprstvz","any|storm|full":"abcdefghijklmnoprstvz","any|storm|name":"abcdefghijklmnoprstvz","any|aberrant|full":"abcdefghijklmnoprstvz","any|aberrant|name":"abcdefghijklmnoprstvz","any|clockwork|full":"abcdefghijklmnoprstvz","any|clockwork|name":"abcdefghijklmnoprstvz","male|any|full":"abcdefilmnoprstv","male|any|name":"abcdefilmnoprstv","male|draconic|full":"abcdefilmnoprstv","male|draconic|name":"abcdefilmnoprstv","male|wild|full":"abcdefilmnoprstv","male|wild|name":"abcdefilmnoprstv","male|divine|full":"abcdefilmnoprstv","male|divine|name":"abcdefilmnoprstv","male|shadow|full":"abcdefilmnoprstv","male|shadow|name":"abcdefilmnoprstv","male|storm|full":"abcdefilmnoprstv","male|storm|name":"abcdefilmnoprstv","male|aberrant|full":"abcdefilmnoprstv","male|aberrant|name":"abcdefilmnoprstv","male|clockwork|full":"abcdefilmnoprstv","male|clockwork|name":"abcdefilmnoprstv","female|any|full":"abcdefilmnorstvz","female|any|name":"abcdefilmnorstvz","female|draconic|full":"abcdefilmnorstvz","female|draconic|name":"abcdefilmnorstvz","female|wild|full":"abcdefilmnorstvz","female|wild|name":"abcdefilmnorstvz","female|divine|full":"abcdefilmnorstvz","female|divine|name":"abcdefilmnorstvz","female|shadow|full":"abcdefilmnorstvz","female|shadow|name":"abcdefilmnorstvz","female|storm|full":"abcdefilmnorstvz","female|storm|name":"abcdefilmnorstvz","female|aberrant|full":"abcdefilmnorstvz","female|aberrant|name":"abcdefilmnorstvz","female|clockwork|full":"abcdefilmnorstvz","female|clockwork|name":"abcdefilmnorstvz"}}</script>
     <script src="../lib/recipe-engine.js?v=d13ac625"></script>
-    <script src="../lib/page.js?v=a8d98e76"></script>
+    <script src="../lib/page.js?v=ac3a7981"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

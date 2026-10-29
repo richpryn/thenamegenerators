@@ -285,7 +285,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=ac296999">
+    <link rel="stylesheet" href="../styles/site.css?v=1ca2262b">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -294,6 +294,8 @@
       <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
       <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
       <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
       <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
       <symbol id="m-longship" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 32 V5"/><path d="M14 7 H34 V25 H14 Z" fill="#fffcf4"/><path d="M19.5 8 V24 M28.5 8 V24" stroke="#efc84a" stroke-width="3.5"/><path d="M14 7 H34 V25 H14 Z"/><path d="M3 29 C9 40 39 40 45 29 Z" fill="#fffcf4"/><path d="M45 29 C47 25 45 21 41.5 22.5 M3 29 C1 26 2 23 5 24"/><circle cx="13" cy="33" r="2" stroke-width="1.2"/><circle cx="20" cy="33" r="2" stroke-width="1.2"/><circle cx="28" cy="33" r="2" stroke-width="1.2"/><circle cx="35" cy="33" r="2" stroke-width="1.2"/><path d="M4 45 c4 -3 8 3 12 0 c4 -3 8 3 12 0 c4 -3 8 3 12 0" stroke-width="1.4"/></g></symbol>
       <symbol id="m-feather-wings" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="24" cy="7" rx="8" ry="2.6" stroke="#efc84a" stroke-width="2.6"/><path d="M24 22 C18 15 9 12 5 18 C9 19 9 22 6 24 C11 25 11 28 9 31 C15 32 20 29 24 26 Z" fill="#fffcf4"/><path d="M24 22 C30 15 39 12 43 18 C39 19 39 22 42 24 C37 25 37 28 39 31 C33 32 28 29 24 26 Z" fill="#fffcf4"/><path d="M11 20 l6 2 M12 27 l6 -1 M37 20 l-6 2 M36 27 l-6 -1" stroke-width="1.2"/><path d="M24 22 V40" stroke-width="1.4"/></g></symbol>
@@ -320,77 +322,90 @@
         <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
         <nav class="site-nav" aria-label="Main">
           <ul class="nav-links" id="nav-links">
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy"><span class="nav-label">Fantasy</span></button>
-              <ul class="nav-dropdown-menu" id="menu-fantasy">
-                <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
-                <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
-                <li><a href="../posts/dragon-name-generator.html">Dragon names</a></li>
-                <li><a href="../posts/tiefling-name-generator.html">Tiefling names</a></li>
-                <li><a href="../posts/npc-name-generator.html">NPC names</a></li>
-                <li><a href="../posts/wizard-name-generator.html">Wizard names</a></li>
-                <li><a href="../posts/vampire-name-generator.html">Vampire names</a></li>
-                <li><a href="../posts/tavern-name-generator.html">Tavern names</a></li>
-                <li><a href="../posts/fantasy-town-name-generator.html">Town &amp; village names</a></li>
-                <li><a href="../posts/epithet-generator.html">Epithets &amp; titles</a></li>
-                <li class="nav-more">More: <a href="../categories/fantasy-names.html">Fantasy</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/mythical-names.html">Mythical creatures</a> · <a href="../categories/mythology-names.html">Mythology</a> · <a href="../categories/wuxia-names.html">Wuxia</a> · <a href="../categories/worldbuilding-names.html">World-building</a></li>
-                <li class="nav-more">Seasonal: <a href="../categories/christmas-names.html">Christmas</a> · <a href="../categories/halloween-names.html">Halloween</a></li>
-              </ul>
+            <li class="nav-top"><a href="../index.html">Home</a></li>
+            <li class="nav-top"><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown nav-mega">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-categories"><span class="nav-label">Categories</span></button>
+              <div class="nav-dropdown-menu nav-mega-panel" id="menu-categories">
+                <div class="nav-col">
+                  <p class="nav-col-h">Fantasy</p>
+                  <ul>
+                    <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
+                    <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
+                    <li><a href="../posts/dragon-name-generator.html">Dragon names</a></li>
+                    <li><a href="../posts/tiefling-name-generator.html">Tiefling names</a></li>
+                    <li><a href="../posts/npc-name-generator.html">NPC names</a></li>
+                    <li><a href="../posts/wizard-name-generator.html">Wizard names</a></li>
+                    <li><a href="../posts/vampire-name-generator.html">Vampire names</a></li>
+                    <li><a href="../posts/tavern-name-generator.html">Tavern names</a></li>
+                    <li><a href="../posts/fantasy-town-name-generator.html">Town &amp; village names</a></li>
+                    <li><a href="../posts/epithet-generator.html">Epithets &amp; titles</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/fantasy-names.html">Fantasy</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/mythical-names.html">Mythical creatures</a> · <a href="../categories/mythology-names.html">Mythology</a> · <a href="../categories/wuxia-names.html">Wuxia</a> · <a href="../categories/worldbuilding-names.html">World-building</a></p>
+                  <p class="nav-more">Seasonal: <a href="../categories/christmas-names.html">Christmas</a> · <a href="../categories/halloween-names.html">Halloween</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Games &amp; TV</p>
+                  <ul>
+                    <li><a href="../posts/minecraft-username-generator.html">Minecraft usernames</a></li>
+                    <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
+                    <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
+                    <li><a href="../posts/baldurs-gate-3-name-generator.html">Baldur&#039;s Gate 3</a></li>
+                    <li><a href="../posts/skyrim-orc-name-generator.html">Skyrim orc</a></li>
+                    <li><a href="../posts/khajiit-name-generator.html">Khajiit</a></li>
+                    <li><a href="../posts/elden-ring-name-generator.html">Elden Ring</a></li>
+                    <li><a href="../posts/warhammer-name-generator.html">Warhammer 40k</a></li>
+                    <li><a href="../posts/star-wars-name-generator.html">Star Wars</a></li>
+                    <li><a href="../posts/game-of-thrones-name-generator.html">Game of Thrones</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/minecraft-names.html">Minecraft</a> · <a href="../categories/scifi-names.html">Sci-fi</a> · <a href="../categories/pop_culture-names.html">Pop culture</a> · <a href="../categories/elder_scrolls-names.html">Elder Scrolls</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Music &amp; online</p>
+                  <ul>
+                    <li><a href="../posts/band-name-generator.html">Band names</a></li>
+                    <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
+                    <li><a href="../posts/dj-name-generator.html">DJ names</a></li>
+                    <li><a href="../posts/album-name-generator.html">Album names</a></li>
+                    <li><a href="../posts/stage-name-generator.html">Stage names</a></li>
+                    <li><a href="../posts/podcast-name-generator.html">Podcast names</a></li>
+                    <li><a href="../posts/youtube-channel-name-generator.html">YouTube channel names</a></li>
+                    <li><a href="../posts/gamertag-generator.html">Gamertags</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/music-names.html">Music</a> · <a href="../categories/music_genres-names.html">Music by genre</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Business</p>
+                  <ul>
+                    <li><a href="../posts/business-name-generator.html">Business names</a></li>
+                    <li><a href="../posts/company-name-generator.html">Company names</a></li>
+                    <li><a href="../posts/brand-name-generator.html">Brand names</a></li>
+                    <li><a href="../posts/cafe-name-generator.html">Café names</a></li>
+                    <li><a href="../posts/event-name-generator.html">Event &amp; party names</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/organizations-names.html">Organisations</a> · <a href="../categories/events-names.html">Events</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Name tools</p>
+                  <ul>
+                    <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
+                    <li><a href="../random-name-picker.html">Random name picker</a></li>
+                    <li><a href="../raffle-picker.html">Raffle / pick a winner</a></li>
+                    <li><a href="../secret-santa-generator.html">Secret Santa</a></li>
+                    <li><a href="../team-generator.html">Team generator</a></li>
+                    <li><a href="../posts/name-combiner.html">Name combiner</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../name-tools.html">Name tools</a></p>
+                </div>
+                <p class="nav-all"><a href="../all-generators.html">All generators →</a><a href="../sitemap.html#categories">Every category →</a></p>
+              </div>
             </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games"><span class="nav-label">Games &amp; TV</span></button>
-              <ul class="nav-dropdown-menu" id="menu-games">
-                <li><a href="../posts/minecraft-username-generator.html">Minecraft usernames</a></li>
-                <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
-                <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
-                <li><a href="../posts/baldurs-gate-3-name-generator.html">Baldur&#039;s Gate 3</a></li>
-                <li><a href="../posts/skyrim-orc-name-generator.html">Skyrim orc</a></li>
-                <li><a href="../posts/khajiit-name-generator.html">Khajiit</a></li>
-                <li><a href="../posts/elden-ring-name-generator.html">Elden Ring</a></li>
-                <li><a href="../posts/warhammer-name-generator.html">Warhammer 40k</a></li>
-                <li><a href="../posts/star-wars-name-generator.html">Star Wars</a></li>
-                <li><a href="../posts/game-of-thrones-name-generator.html">Game of Thrones</a></li>
-                <li class="nav-more">More: <a href="../categories/minecraft-names.html">Minecraft</a> · <a href="../categories/scifi-names.html">Sci-fi</a> · <a href="../categories/pop_culture-names.html">Pop culture</a> · <a href="../categories/elder_scrolls-names.html">Elder Scrolls</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music"><span class="nav-label">Music &amp; online</span></button>
-              <ul class="nav-dropdown-menu" id="menu-music">
-                <li><a href="../posts/band-name-generator.html">Band names</a></li>
-                <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
-                <li><a href="../posts/dj-name-generator.html">DJ names</a></li>
-                <li><a href="../posts/album-name-generator.html">Album names</a></li>
-                <li><a href="../posts/stage-name-generator.html">Stage names</a></li>
-                <li><a href="../posts/podcast-name-generator.html">Podcast names</a></li>
-                <li><a href="../posts/youtube-channel-name-generator.html">YouTube channel names</a></li>
-                <li><a href="../posts/gamertag-generator.html">Gamertags</a></li>
-                <li class="nav-more">More: <a href="../categories/music-names.html">Music</a> · <a href="../categories/music_genres-names.html">Music by genre</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business"><span class="nav-label">Business</span></button>
-              <ul class="nav-dropdown-menu" id="menu-business">
-                <li><a href="../posts/business-name-generator.html">Business names</a></li>
-                <li><a href="../posts/company-name-generator.html">Company names</a></li>
-                <li><a href="../posts/brand-name-generator.html">Brand names</a></li>
-                <li><a href="../posts/cafe-name-generator.html">Café names</a></li>
-                <li><a href="../posts/event-name-generator.html">Event &amp; party names</a></li>
-                <li class="nav-more">More: <a href="../categories/organizations-names.html">Organisations</a> · <a href="../categories/events-names.html">Events</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools"><span class="nav-label">Name tools</span></button>
-              <ul class="nav-dropdown-menu" id="menu-tools">
-                <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
-                <li><a href="../random-name-picker.html">Random name picker</a></li>
-                <li><a href="../raffle-picker.html">Raffle / pick a winner</a></li>
-                <li><a href="../secret-santa-generator.html">Secret Santa</a></li>
-                <li><a href="../team-generator.html">Team generator</a></li>
-                <li><a href="../posts/name-combiner.html">Name combiner</a></li>
-                <li class="nav-more">More: <a href="../name-tools.html">Name tools</a></li>
-              </ul>
-            </li>
-            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-top"><a href="../about.html">About</a></li>
+            <li class="nav-find"><form class="nav-search" action="../all-generators.html" method="get" role="search">
+          <label class="visually-hidden" for="nav-q">Search generators</label>
+          <input id="nav-q" type="search" name="q" placeholder="Search generators…" autocomplete="off" enterkeyhint="search">
+          <button type="submit" aria-label="Search"><svg aria-hidden="true" focusable="false"><use href="#i-search"/></svg></button>
+        </form></li>
           </ul>
         </nav>
       </div>
@@ -630,7 +645,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Viking Name Generator","slug":"viking-name-generator","filters":{"gender":{"label":"Gender","options":["any","male","female"],"optionLabels":{"any":"Any"}},"format":{"label":"Name format","options":["any","patronymic","byname","first"],"optionLabels":{"any":"Any (a mix)","patronymic":"Patronymic (son or daughter of)","byname":"Byname (Erik the Red)","first":"First name only"}},"letter":{"label":"Starts with","options":["any","a","b","d","e","f","g","h","i","k","o","r","s","t","u","v"],"optionLabels":{"any":"Any letter","a":"A","b":"B","c":"C","d":"D","e":"E","f":"F","g":"G","h":"H","i":"I","j":"J","k":"K","l":"L","m":"M","n":"N","o":"O","p":"P","q":"Q","r":"R","s":"S","t":"T","u":"U","v":"V","w":"W","x":"X","y":"Y","z":"Z"}}},"startsWith":"letter","recipe":"switch","on":"format","cases":{"patronymic":{"recipe":"switch","on":"gender","cases":{"male":{"recipe":"template","template":"[first.male] [patronym.son]"},"female":{"recipe":"template","template":"[first.female] [patronym.dottir]"},"any":{"recipe":"template","template":["[first.male] [patronym.son]","[first.female] [patronym.dottir]"]}}},"byname":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[first.male] [bynames]","[first.female] [bynames_f]"]},"male":{"recipe":"template","template":"[first.male] [bynames]"},"female":{"recipe":"template","template":"[first.female] [bynames_f]"}}},"first":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[first]"}},"default":{"recipe":"template","template":"[first.{gender}]"}},"any":{"recipe":"switch","on":"gender","cases":{"male":{"recipe":"template","template":["[first.male] [patronym.son]","[first.male] [bynames]"]},"female":{"recipe":"template","template":["[first.female] [patronym.dottir]","[first.female] [bynames_f]"]},"any":{"recipe":"template","template":["[first.male] [patronym.son]","[first.male] [bynames]","[first.female] [patronym.dottir]","[first.female] [bynames_f]"]}}}},"data":{"first":{"male":["Bjorn","Eirik","Gunnar","Halfdan","Harald","Ivar","Knut","Leif","Njal","Olaf","Ragnar","Sigurd","Sven","Thorstein","Ulf","Vidar","Egil","Asbjorn","Brand","Dag","Finn","Geir","Hakon","Ketil","Orm","Rolf","Torvald","Hallstein","Grim","Hrafn","Kolbein","Steinar","Ottar","Thorkel","Sigvald","Bersi","Eyvind","Hauk","Arnbjorn","Asgeir","Bard","Erling","Finnbogi","Hallbjorn","Hrolf","Skeggi","Snorri","Vigfus","Thorvald","Sighvat","Gizur","Alf","Arngrim","Asmund","Audun","Bodvar","Bork","Dagfinn","Einar","Eyjolf","Eystein","Gest","Glum","Gudmund","Gunnbjorn","Guthorm","Hafgrim","Hallfred","Hallvard","Halldor","Hallkel","Hamund","Hastein","Hedin","Hemming","Herjolf","Holmstein","Hord","Horik","Hoskuld","Hrapp","Hrut","Ingimund","Ingjald","Ingolf","Isleif","Kalf","Kjartan","Kol","Ljot","Lodin","Mord","Odd","Onund","Ozur","Ragnvald","Runolf","Sigtrygg","Sigmund","Snaebjorn","Solmund","Starkad","Steinthor","Styr","Svart","Thangbrand","Thjodolf","Thorarin","Thorbjorn","Thord","Thorfinn","Thorgeir","Thorgils","Thorgrim","Thorleif","Thorleik","Thormod","Thorodd","Thorolf","Thorvard","Ulfar","Ulfljot","Vagn","Valgard","Vermund","Vestein","Yngvar","Anund","Arnkel","Asbrand","Eilif","Eldgrim","Gaut","Gorm","Gudbrand","Gunnlaug","Hall","Hallgrim","Herstein","Hjorleif","Hrafnkel","Ingvar","Karl","Kodran","Ofeig","Ospak","Skarphedin","Steingrim","Thorhall","Fridleif","Grjotgard","Hrollaug","Kolskegg","Mar","Otkel","Thrain","Asvald","Hroald","Kveldulf","Thorbrand","Bergthor","Jorund","Arnor","Hallad","Asolf","Hrorek","Vemund","Ketilbjorn","Ulfkel","Thorgaut","Arnfinn","Arnstein","Brynjolf","Gunnstein","Ingimar","Kolgrim","Hromund","Gudleif","Kolbjorn","Grimkel","Agnar","Alrek","Arinbjorn","Asgrim","Geirmund","Gudrod","Gunnulf","Hergils","Orlyg","Raud","Ulfhedin","Erlend","Hafthor"],"female":["Astrid","Bergthora","Freydis","Gudrun","Gunnhild","Helga","Ingrid","Ragnhild","Sigrid","Thora","Thorunn","Ylva","Asa","Aud","Bodil","Dagny","Estrid","Gyda","Hallgerd","Ingunn","Ragna","Signy","Solveig","Thordis","Tove","Unn","Alfhild","Groa","Svanhild","Hild","Eydis","Gunnvor","Jorunn","Ragnfrid","Aslaug","Bera","Hervor","Ingibjorg","Kolfinna","Runa","Saldis","Thorgerd","Vigdis","Yrsa","Halla","Alfdis","Alfrun","Arnbjorg","Arngerd","Asdis","Asgerd","Asta","Asvor","Bergljot","Borghild","Brynhild","Dagrun","Droplaug","Ellisif","Geirrid","Gjaflaug","Grima","Gudny","Gyrid","Hallbera","Halldis","Halldora","Hallfrid","Hallkatla","Hallveig","Herdis","Hildigunn","Hlif","Hrafnhild","Ingigerd","Ingirid","Jofrid","Jodis","Katla","Kolbrun","Ragnheid","Rannveig","Sigrun","Steinunn","Svala","Thjodhild","Thorbjorg","Thorey","Thorfinna","Thorgunna","Thorhild","Thorkatla","Thorny","Thurid","Valgerd","Yngvild","Aldis","Asleif","Dalla","Gudlaug","Gudrid","Hildirid","Oddny","Olof","Saeunn","Steinvor","Svanlaug","Thorlaug","Thorhalla","Ulfheid","Ulfhild","Vilborg","Alfgerd","Eldrid","Freygerd","Geirlaug","Gerd","Gudfinna","Heid","Inga","Isgerd","Oddbjorg","Sigfrid","Sigvor","Svanhvit","Thorgrima","Asfrid","Bergdis","Gunnbjorg","Hrefna","Oddrun","Gudbjorg","Asny","Bjorg","Eyvor","Herborg","Hrodny","Ingileif","Ulfrun","Bodvild","Dis","Fridgerd","Geirny","Hallbjorg","Thyra","Kadlin","Melkorka","Osk","Holmfrid","Asbjorg"]},"bynames":["the Red","the Black","Fairhair","the Strong","the Stout","Flatnose","Ironside","Bloodaxe","the Wise","the Tall","Forkbeard","the Quiet","Bear-Claw","Wolf-Hound","the Lucky","Skull-Splitter","the Unruly","Sharp-Eye","Sea-Wolf","the Generous","Broad-Shoulder","Swift-Foot","the Grey","Hard-Ruler","Shield-Breaker","Snake-Eye","Fish-Hook","the Peaceful","the Far-Travelled","Silkbeard","Barefoot","the Good","the Old","Hairy-Breeks","the Deep-Minded","Greycloak","the Mild","Bluetooth"],"patronym":{"son":["Bjornsson","Eiriksson","Gunnarsson","Halfdansson","Haraldsson","Ivarsson","Knutsson","Leifsson","Njalsson","Olafsson","Ragnarsson","Sigurdsson","Svensson","Thorsteinsson","Ulfsson","Vidarsson","Egilsson","Asbjornsson","Brandsson","Dagsson","Finnsson","Geirsson","Hakonsson","Ketilsson","Ormsson","Rolfsson","Torvaldsson","Hallsteinsson","Grimsson","Hrafnsson","Kolbeinsson","Steinarsson","Ottarsson","Thorkelsson","Sigvaldsson","Bersason","Eyvindsson","Hauksson","Arnbjornsson","Asgeirsson","Bardsson","Erlingsson","Finnbogason","Hallbjornsson","Hrolfsson","Skeggason","Snorrason","Thorvaldsson","Sighvatsson","Alfsson","Arngrimsson","Asmundsson","Audunsson","Bodvarsson","Borksson","Dagfinnsson","Einarsson","Eyjolfsson","Eysteinsson","Gestsson","Glumsson","Gudmundsson","Gunnbjornsson","Guthormsson","Hafgrimsson","Hallfredsson","Hallvardsson","Halldorsson","Hallkelsson","Hamundsson","Hasteinsson","Hedinsson","Hemmingsson","Herjolfsson","Holmsteinsson","Hordsson","Horiksson","Hoskuldsson","Hrappsson","Hrutsson","Ingimundsson","Ingjaldsson","Ingolfsson","Isleifsson","Kalfsson","Kjartansson","Kolsson","Ljotsson","Lodinsson","Mordsson","Oddsson","Onundsson","Ozursson","Ragnvaldsson","Runolfsson","Sigtryggsson","Sigmundsson","Snaebjornsson","Solmundsson","Starkadsson","Steinthorsson","Styrsson","Svartsson","Thangbrandsson","Thjodolfsson","Thorarinsson","Thorbjornsson","Thordsson","Thorfinnsson","Thorgeirsson","Thorgrimsson","Thorleifsson","Thorleiksson","Thormodsson","Thoroddsson","Thorolfsson","Thorvardsson","Ulfarsson","Ulfljotsson","Vagnsson","Valgardsson","Vermundsson","Vesteinsson","Yngvarsson","Anundsson","Arnkelsson","Asbrandsson","Eilifsson","Eldgrimsson","Gautsson","Gormsson","Gudbrandsson","Gunnlaugsson","Hallsson","Hallgrimsson","Hersteinsson","Hjorleifsson","Hrafnkelsson","Ingvarsson","Karlsson","Kodransson","Ofeigsson","Ospaksson","Skarphedinsson","Steingrimsson","Thorhallsson","Fridleifsson","Grjotgardsson","Hrollaugsson","Kolskeggsson","Marsson","Otkelsson","Thrainsson","Asvaldsson","Hroaldsson","Kveldulfsson","Thorbrandsson","Bergthorsson","Jorundsson","Arnorsson","Halladsson","Asolfsson","Hroreksson","Vemundsson","Ketilbjornsson","Ulfkelsson","Thorgautsson","Arnfinnsson","Arnsteinsson","Brynjolfsson","Gunnsteinsson","Ingimarsson","Kolgrimsson","Hromundsson","Gudleifsson","Kolbjornsson","Grimkelsson","Agnarsson","Alreksson","Arinbjornsson","Asgrimsson","Geirmundsson","Gudrodsson","Gunnulfsson","Orlygsson","Raudsson","Ulfhedinsson","Erlendsson","Hafthorsson"],"dottir":["Bjornsdóttir","Eiriksdóttir","Gunnarsdóttir","Halfdansdóttir","Haraldsdóttir","Ivarsdóttir","Knutsdóttir","Leifsdóttir","Njalsdóttir","Olafsdóttir","Ragnarsdóttir","Sigurdsdóttir","Svensdóttir","Thorsteinsdóttir","Ulfsdóttir","Vidarsdóttir","Egilsdóttir","Asbjornsdóttir","Brandsdóttir","Dagsdóttir","Finnsdóttir","Geirsdóttir","Hakonsdóttir","Ketilsdóttir","Ormsdóttir","Rolfsdóttir","Torvaldsdóttir","Hallsteinsdóttir","Grimsdóttir","Hrafnsdóttir","Kolbeinsdóttir","Steinarsdóttir","Ottarsdóttir","Thorkelsdóttir","Sigvaldsdóttir","Bersadóttir","Eyvindsdóttir","Hauksdóttir","Arnbjornsdóttir","Asgeirsdóttir","Bardsdóttir","Erlingsdóttir","Finnbogadóttir","Hallbjornsdóttir","Hrolfsdóttir","Skeggadóttir","Snorradóttir","Thorvaldsdóttir","Sighvatsdóttir","Alfsdóttir","Arngrimsdóttir","Asmundsdóttir","Audunsdóttir","Bodvarsdóttir","Borksdóttir","Dagfinnsdóttir","Einarsdóttir","Eyjolfsdóttir","Eysteinsdóttir","Gestsdóttir","Glumsdóttir","Gudmundsdóttir","Gunnbjornsdóttir","Guthormsdóttir","Hafgrimsdóttir","Hallfredsdóttir","Hallvardsdóttir","Halldorsdóttir","Hallkelsdóttir","Hamundsdóttir","Hasteinsdóttir","Hedinsdóttir","Hemmingsdóttir","Herjolfsdóttir","Holmsteinsdóttir","Hordsdóttir","Horiksdóttir","Hoskuldsdóttir","Hrappsdóttir","Hrutsdóttir","Ingimundsdóttir","Ingjaldsdóttir","Ingolfsdóttir","Isleifsdóttir","Kalfsdóttir","Kjartansdóttir","Kolsdóttir","Ljotsdóttir","Lodinsdóttir","Mordsdóttir","Oddsdóttir","Onundsdóttir","Ozursdóttir","Ragnvaldsdóttir","Runolfsdóttir","Sigtryggsdóttir","Sigmundsdóttir","Snaebjornsdóttir","Solmundsdóttir","Starkadsdóttir","Steinthorsdóttir","Styrsdóttir","Svartsdóttir","Thangbrandsdóttir","Thjodolfsdóttir","Thorarinsdóttir","Thorbjornsdóttir","Thordsdóttir","Thorfinnsdóttir","Thorgeirsdóttir","Thorgrimsdóttir","Thorleifsdóttir","Thorleiksdóttir","Thormodsdóttir","Thoroddsdóttir","Thorolfsdóttir","Thorvardsdóttir","Ulfarsdóttir","Ulfljotsdóttir","Vagnsdóttir","Valgardsdóttir","Vermundsdóttir","Vesteinsdóttir","Yngvarsdóttir","Anundsdóttir","Arnkelsdóttir","Asbrandsdóttir","Eilifsdóttir","Eldgrimsdóttir","Gautsdóttir","Gormsdóttir","Gudbrandsdóttir","Gunnlaugsdóttir","Hallsdóttir","Hallgrimsdóttir","Hersteinsdóttir","Hjorleifsdóttir","Hrafnkelsdóttir","Ingvarsdóttir","Karlsdóttir","Kodransdóttir","Ofeigsdóttir","Ospaksdóttir","Skarphedinsdóttir","Steingrimsdóttir","Thorhallsdóttir","Fridleifsdóttir","Grjotgardsdóttir","Hrollaugsdóttir","Kolskeggsdóttir","Marsdóttir","Otkelsdóttir","Thrainsdóttir","Asvaldsdóttir","Hroaldsdóttir","Kveldulfsdóttir","Thorbrandsdóttir","Bergthorsdóttir","Jorundsdóttir","Arnorsdóttir","Halladsdóttir","Asolfsdóttir","Hroreksdóttir","Vemundsdóttir","Ketilbjornsdóttir","Ulfkelsdóttir","Thorgautsdóttir","Arnfinnsdóttir","Arnsteinsdóttir","Brynjolfsdóttir","Gunnsteinsdóttir","Ingimarsdóttir","Kolgrimsdóttir","Hromundsdóttir","Gudleifsdóttir","Kolbjornsdóttir","Grimkelsdóttir","Agnarsdóttir","Alreksdóttir","Arinbjornsdóttir","Asgrimsdóttir","Geirmundsdóttir","Gudrodsdóttir","Gunnulfsdóttir","Orlygsdóttir","Raudsdóttir","Ulfhedinsdóttir","Erlendsdóttir","Hafthorsdóttir"]},"bynames_f":["the Red","the Black","Fairhair","the Strong","the Stout","Flatnose","Ironside","Bloodaxe","the Wise","the Tall","the Quiet","Bear-Claw","Wolf-Hound","the Lucky","Skull-Splitter","the Unruly","Sharp-Eye","Sea-Wolf","the Generous","Broad-Shoulder","Swift-Foot","the Grey","Hard-Ruler","Shield-Breaker","Snake-Eye","Fish-Hook","the Peaceful","the Far-Travelled","Barefoot","the Good","the Old","the Deep-Minded","Greycloak","the Mild","Bluetooth"]},"letterSets":{"any|any":"abdefghikorstuv","any|patronymic":"abdefghikorstuv","any|byname":"abdefghikorstuv","any|first":"abdefghikorstuv","male|any":"abeghikorstuv","male|patronymic":"abeghikorstuv","male|byname":"abeghikorstuv","male|first":"abeghikorstuv","female|any":"abdeghiorst","female|patronymic":"abdeghiorst","female|byname":"abdeghiorst","female|first":"abdeghiorst"}}</script>
     <script src="../lib/recipe-engine.js?v=d13ac625"></script>
-    <script src="../lib/page.js?v=a8d98e76"></script>
+    <script src="../lib/page.js?v=ac3a7981"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

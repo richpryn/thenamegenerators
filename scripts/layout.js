@@ -125,6 +125,8 @@ const ICONS = {
   wand: '<symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>',
   copy: '<symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>',
   clear: '<symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>',
+  search: '<symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>',
+  doc: '<symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>',
   tick: '<symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>',
 };
 
@@ -221,26 +223,48 @@ function menuPages() {
   return MENU.flatMap(group => [...group.links, ...group.more, ...(group.seasonal || [])].map(([href]) => href));
 }
 
-/** Header A ("Roomy"): logo, menu button on phones, links on desktop, then a hand-drawn rule. */
+/** A search box that sends its words to All generators (?q=), which filters on load. */
+function searchForm(prefix, { id = 'nav-q', cls = 'nav-search', placeholder = 'Search generators…', button = '' } = {}) {
+  return `<form class="${cls}" action="${prefix}all-generators.html" method="get" role="search">
+          <label class="visually-hidden" for="${id}">${escapeHtml(placeholder.replace(/…$/, ''))}</label>
+          <input id="${id}" type="search" name="q" placeholder="${escapeHtml(placeholder)}" autocomplete="off" enterkeyhint="search">
+          ${button || `<button type="submit" aria-label="Search"><svg aria-hidden="true" focusable="false"><use href="#i-search"/></svg></button>`}
+        </form>`;
+}
+
+/**
+ * The header: logo, Home, All generators, a Categories panel (the hand-picked
+ * MENU groups side by side) and About, with a search box on the right.
+ * On phones the Menu button opens the same list, search first.
+ */
 function siteHeader(prefix) {
   const home = prefix === '/' ? '/' : `${prefix}index.html`;
   const link = ([href, text]) => `<a href="${prefix}${href}">${escapeHtml(text)}</a>`;
-  const groups = MENU.map(group => `<li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="${group.id}"><span class="nav-label">${escapeHtml(group.label)}</span></button>
-              <ul class="nav-dropdown-menu" id="${group.id}">
-                ${group.links.map(l => `<li>${link(l)}</li>`).join('\n                ')}
-                <li class="nav-more">More: ${group.more.map(link).join(' · ')}</li>${group.seasonal ? `
-                <li class="nav-more">Seasonal: ${group.seasonal.map(link).join(' · ')}</li>` : ''}
-              </ul>
-            </li>`).join('\n            ');
+  const cols = MENU.map(group => `<div class="nav-col">
+                  <p class="nav-col-h">${escapeHtml(group.label)}</p>
+                  <ul>
+                    ${group.links.map(l => `<li>${link(l)}</li>`).join('\n                    ')}
+                  </ul>
+                  <p class="nav-more">More: ${group.more.map(link).join(' · ')}</p>${group.seasonal ? `
+                  <p class="nav-more">Seasonal: ${group.seasonal.map(link).join(' · ')}</p>` : ''}
+                </div>`).join('\n                ');
   return `<header class="site-header">
       <div class="wrap bar">
         <a class="logo" href="${home}">${LOGO}<b>${SITE_NAME}</b></a>
         <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">${MENU_ICON}Menu</button>
         <nav class="site-nav" aria-label="Main">
           <ul class="nav-links" id="nav-links">
-            ${groups}
-            <li><a href="${prefix}all-generators.html">All generators</a></li>
+            <li class="nav-top"><a href="${home}">Home</a></li>
+            <li class="nav-top"><a href="${prefix}all-generators.html">All generators</a></li>
+            <li class="nav-dropdown nav-mega">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-categories"><span class="nav-label">Categories</span></button>
+              <div class="nav-dropdown-menu nav-mega-panel" id="menu-categories">
+                ${cols}
+                <p class="nav-all"><a href="${prefix}all-generators.html">All generators →</a><a href="${prefix}sitemap.html#categories">Every category →</a></p>
+              </div>
+            </li>
+            <li class="nav-top"><a href="${prefix}about.html">About</a></li>
+            <li class="nav-find">${searchForm(prefix)}</li>
           </ul>
         </nav>
       </div>
@@ -273,6 +297,6 @@ function stripEmoji(text) {
 
 module.exports = {
   analyticsTag, shareImage, LOGO,
-  SITE_NAME, escapeHtml, asset, menuPages, headAssets, stampAssets, bodyScripts, svgSprite, siteHeader, siteFooter,
+  SITE_NAME, escapeHtml, asset, searchForm, menuPages, headAssets, stampAssets, bodyScripts, svgSprite, siteHeader, siteFooter,
   doodle, sectionBreak, endMark, RELATED_NOTE, categoryMotif, generatorMotif, highlightFirstWord, stripEmoji, categoryLinks,
 };

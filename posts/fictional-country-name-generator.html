@@ -285,7 +285,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=ac296999">
+    <link rel="stylesheet" href="../styles/site.css?v=1ca2262b">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -294,6 +294,8 @@
       <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
       <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
       <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
       <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
       <symbol id="m-flag" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 44 C12 35 32 35 45 44 Z" fill="#fffcf4"/><path d="M20 39 V5"/><path d="M20 6 C26 3 30 9 38 6 V18 C30 21 26 15 20 18 Z" fill="#efc84a"/><circle cx="29" cy="12" r="2.2" stroke-width="1.2"/></g></symbol>
       <symbol id="m-map" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12 L17 8 L31 13 L42 9 V36 L31 40 L17 35 L6 39 Z" fill="#fffcf4"/><path d="M17 8 V35 M31 13 V40" stroke-width="1.3"/><path d="M10 29 C16 22 22 31 28 23 S34 20 36 18" stroke-dasharray="2 3" stroke-width="1.4"/><path d="M34 15 l5 5 M39 15 l-5 5" stroke="#efc84a" stroke-width="3"/></g></symbol>
@@ -312,77 +314,90 @@
         <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
         <nav class="site-nav" aria-label="Main">
           <ul class="nav-links" id="nav-links">
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy"><span class="nav-label">Fantasy</span></button>
-              <ul class="nav-dropdown-menu" id="menu-fantasy">
-                <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
-                <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
-                <li><a href="../posts/dragon-name-generator.html">Dragon names</a></li>
-                <li><a href="../posts/tiefling-name-generator.html">Tiefling names</a></li>
-                <li><a href="../posts/npc-name-generator.html">NPC names</a></li>
-                <li><a href="../posts/wizard-name-generator.html">Wizard names</a></li>
-                <li><a href="../posts/vampire-name-generator.html">Vampire names</a></li>
-                <li><a href="../posts/tavern-name-generator.html">Tavern names</a></li>
-                <li><a href="../posts/fantasy-town-name-generator.html">Town &amp; village names</a></li>
-                <li><a href="../posts/epithet-generator.html">Epithets &amp; titles</a></li>
-                <li class="nav-more">More: <a href="../categories/fantasy-names.html">Fantasy</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/mythical-names.html">Mythical creatures</a> · <a href="../categories/mythology-names.html">Mythology</a> · <a href="../categories/wuxia-names.html">Wuxia</a> · <a href="../categories/worldbuilding-names.html">World-building</a></li>
-                <li class="nav-more">Seasonal: <a href="../categories/christmas-names.html">Christmas</a> · <a href="../categories/halloween-names.html">Halloween</a></li>
-              </ul>
+            <li class="nav-top"><a href="../index.html">Home</a></li>
+            <li class="nav-top"><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown nav-mega">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-categories"><span class="nav-label">Categories</span></button>
+              <div class="nav-dropdown-menu nav-mega-panel" id="menu-categories">
+                <div class="nav-col">
+                  <p class="nav-col-h">Fantasy</p>
+                  <ul>
+                    <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
+                    <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
+                    <li><a href="../posts/dragon-name-generator.html">Dragon names</a></li>
+                    <li><a href="../posts/tiefling-name-generator.html">Tiefling names</a></li>
+                    <li><a href="../posts/npc-name-generator.html">NPC names</a></li>
+                    <li><a href="../posts/wizard-name-generator.html">Wizard names</a></li>
+                    <li><a href="../posts/vampire-name-generator.html">Vampire names</a></li>
+                    <li><a href="../posts/tavern-name-generator.html">Tavern names</a></li>
+                    <li><a href="../posts/fantasy-town-name-generator.html">Town &amp; village names</a></li>
+                    <li><a href="../posts/epithet-generator.html">Epithets &amp; titles</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/fantasy-names.html">Fantasy</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/mythical-names.html">Mythical creatures</a> · <a href="../categories/mythology-names.html">Mythology</a> · <a href="../categories/wuxia-names.html">Wuxia</a> · <a href="../categories/worldbuilding-names.html">World-building</a></p>
+                  <p class="nav-more">Seasonal: <a href="../categories/christmas-names.html">Christmas</a> · <a href="../categories/halloween-names.html">Halloween</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Games &amp; TV</p>
+                  <ul>
+                    <li><a href="../posts/minecraft-username-generator.html">Minecraft usernames</a></li>
+                    <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
+                    <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
+                    <li><a href="../posts/baldurs-gate-3-name-generator.html">Baldur&#039;s Gate 3</a></li>
+                    <li><a href="../posts/skyrim-orc-name-generator.html">Skyrim orc</a></li>
+                    <li><a href="../posts/khajiit-name-generator.html">Khajiit</a></li>
+                    <li><a href="../posts/elden-ring-name-generator.html">Elden Ring</a></li>
+                    <li><a href="../posts/warhammer-name-generator.html">Warhammer 40k</a></li>
+                    <li><a href="../posts/star-wars-name-generator.html">Star Wars</a></li>
+                    <li><a href="../posts/game-of-thrones-name-generator.html">Game of Thrones</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/minecraft-names.html">Minecraft</a> · <a href="../categories/scifi-names.html">Sci-fi</a> · <a href="../categories/pop_culture-names.html">Pop culture</a> · <a href="../categories/elder_scrolls-names.html">Elder Scrolls</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Music &amp; online</p>
+                  <ul>
+                    <li><a href="../posts/band-name-generator.html">Band names</a></li>
+                    <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
+                    <li><a href="../posts/dj-name-generator.html">DJ names</a></li>
+                    <li><a href="../posts/album-name-generator.html">Album names</a></li>
+                    <li><a href="../posts/stage-name-generator.html">Stage names</a></li>
+                    <li><a href="../posts/podcast-name-generator.html">Podcast names</a></li>
+                    <li><a href="../posts/youtube-channel-name-generator.html">YouTube channel names</a></li>
+                    <li><a href="../posts/gamertag-generator.html">Gamertags</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/music-names.html">Music</a> · <a href="../categories/music_genres-names.html">Music by genre</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Business</p>
+                  <ul>
+                    <li><a href="../posts/business-name-generator.html">Business names</a></li>
+                    <li><a href="../posts/company-name-generator.html">Company names</a></li>
+                    <li><a href="../posts/brand-name-generator.html">Brand names</a></li>
+                    <li><a href="../posts/cafe-name-generator.html">Café names</a></li>
+                    <li><a href="../posts/event-name-generator.html">Event &amp; party names</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/organizations-names.html">Organisations</a> · <a href="../categories/events-names.html">Events</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Name tools</p>
+                  <ul>
+                    <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
+                    <li><a href="../random-name-picker.html">Random name picker</a></li>
+                    <li><a href="../raffle-picker.html">Raffle / pick a winner</a></li>
+                    <li><a href="../secret-santa-generator.html">Secret Santa</a></li>
+                    <li><a href="../team-generator.html">Team generator</a></li>
+                    <li><a href="../posts/name-combiner.html">Name combiner</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../name-tools.html">Name tools</a></p>
+                </div>
+                <p class="nav-all"><a href="../all-generators.html">All generators →</a><a href="../sitemap.html#categories">Every category →</a></p>
+              </div>
             </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games"><span class="nav-label">Games &amp; TV</span></button>
-              <ul class="nav-dropdown-menu" id="menu-games">
-                <li><a href="../posts/minecraft-username-generator.html">Minecraft usernames</a></li>
-                <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
-                <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
-                <li><a href="../posts/baldurs-gate-3-name-generator.html">Baldur&#039;s Gate 3</a></li>
-                <li><a href="../posts/skyrim-orc-name-generator.html">Skyrim orc</a></li>
-                <li><a href="../posts/khajiit-name-generator.html">Khajiit</a></li>
-                <li><a href="../posts/elden-ring-name-generator.html">Elden Ring</a></li>
-                <li><a href="../posts/warhammer-name-generator.html">Warhammer 40k</a></li>
-                <li><a href="../posts/star-wars-name-generator.html">Star Wars</a></li>
-                <li><a href="../posts/game-of-thrones-name-generator.html">Game of Thrones</a></li>
-                <li class="nav-more">More: <a href="../categories/minecraft-names.html">Minecraft</a> · <a href="../categories/scifi-names.html">Sci-fi</a> · <a href="../categories/pop_culture-names.html">Pop culture</a> · <a href="../categories/elder_scrolls-names.html">Elder Scrolls</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music"><span class="nav-label">Music &amp; online</span></button>
-              <ul class="nav-dropdown-menu" id="menu-music">
-                <li><a href="../posts/band-name-generator.html">Band names</a></li>
-                <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
-                <li><a href="../posts/dj-name-generator.html">DJ names</a></li>
-                <li><a href="../posts/album-name-generator.html">Album names</a></li>
-                <li><a href="../posts/stage-name-generator.html">Stage names</a></li>
-                <li><a href="../posts/podcast-name-generator.html">Podcast names</a></li>
-                <li><a href="../posts/youtube-channel-name-generator.html">YouTube channel names</a></li>
-                <li><a href="../posts/gamertag-generator.html">Gamertags</a></li>
-                <li class="nav-more">More: <a href="../categories/music-names.html">Music</a> · <a href="../categories/music_genres-names.html">Music by genre</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business"><span class="nav-label">Business</span></button>
-              <ul class="nav-dropdown-menu" id="menu-business">
-                <li><a href="../posts/business-name-generator.html">Business names</a></li>
-                <li><a href="../posts/company-name-generator.html">Company names</a></li>
-                <li><a href="../posts/brand-name-generator.html">Brand names</a></li>
-                <li><a href="../posts/cafe-name-generator.html">Café names</a></li>
-                <li><a href="../posts/event-name-generator.html">Event &amp; party names</a></li>
-                <li class="nav-more">More: <a href="../categories/organizations-names.html">Organisations</a> · <a href="../categories/events-names.html">Events</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools"><span class="nav-label">Name tools</span></button>
-              <ul class="nav-dropdown-menu" id="menu-tools">
-                <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
-                <li><a href="../random-name-picker.html">Random name picker</a></li>
-                <li><a href="../raffle-picker.html">Raffle / pick a winner</a></li>
-                <li><a href="../secret-santa-generator.html">Secret Santa</a></li>
-                <li><a href="../team-generator.html">Team generator</a></li>
-                <li><a href="../posts/name-combiner.html">Name combiner</a></li>
-                <li class="nav-more">More: <a href="../name-tools.html">Name tools</a></li>
-              </ul>
-            </li>
-            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-top"><a href="../about.html">About</a></li>
+            <li class="nav-find"><form class="nav-search" action="../all-generators.html" method="get" role="search">
+          <label class="visually-hidden" for="nav-q">Search generators</label>
+          <input id="nav-q" type="search" name="q" placeholder="Search generators…" autocomplete="off" enterkeyhint="search">
+          <button type="submit" aria-label="Search"><svg aria-hidden="true" focusable="false"><use href="#i-search"/></svg></button>
+        </form></li>
           </ul>
         </nav>
       </div>
@@ -587,7 +602,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Fictional Country Name Generator","slug":"fictional-country-name-generator","seoTitle":"Fictional Country Name Generator: Modern & Realistic","filters":{"style":{"label":"Kind of country","options":["any","european","nordic","island"],"optionLabels":{"any":"Any (a mix)","european":"Small European state (Corovia)","nordic":"Nordic (Vestmark)","island":"Island nation (Santa Esperanza)"}},"format":{"label":"Name format","options":["name","official","capital"],"optionLabels":{"name":"Name only","official":"Official name (the Republic of Corvania)","capital":"With its capital city"}}},"recipe":"switch","on":"format","cases":{"name":{"recipe":"switch","on":"style","cases":{"european":{"recipe":"template","template":"[euro]"},"nordic":{"recipe":"template","template":"[nordic]"},"island":{"recipe":"template","template":"[isle]"},"any":{"recipe":"template","template":["[euro]","[nordic]","[isle]"]}}},"official":{"recipe":"switch","on":"style","cases":{"european":{"recipe":"template","template":"The [rep] of [euro]"},"nordic":{"recipe":"template","template":"The [rep] of [nordic]"},"island":{"recipe":"template","template":"The [rep] of [isle]"},"any":{"recipe":"template","template":["The [rep] of [euro]","The [rep] of [nordic]","The [rep] of [isle]"]}}},"capital":{"recipe":"switch","on":"style","cases":{"european":{"recipe":"template","template":"[euro] (capital: [capital.euro])"},"nordic":{"recipe":"template","template":"[nordic] (capital: [capital.nordic])"},"island":{"recipe":"template","template":"[isle] (capital: [capital.island])"},"any":{"recipe":"template","template":["[euro] (capital: [capital.euro])","[nordic] (capital: [capital.nordic])","[isle] (capital: [capital.island])"]}}}},"data":{"euro":["Aldania","Aldaria","Aldavia","Aldenia","Aldenza","Alderia","Aldessa","Aldia","Aldonia","Aldoria","Aldova","Aldovar","Ardania","Ardaria","Ardavia","Ardenia","Ardenza","Arderia","Ardessa","Ardia","Ardonia","Ardoria","Ardova","Ardovar","Ardovia","Belania","Belaria","Belavia","Belenia","Belenza","Beleria","Belessa","Belia","Belonia","Beloria","Belova","Belovar","Branaria","Branavia","Branenia","Branenza","Braneria","Branessa","Brania","Branonia","Branoria","Branova","Branovar","Branovia","Calania","Calaria","Calavia","Calenia","Calenza","Caleria","Calessa","Calia","Calonia","Caloria","Calova","Calovar","Calovia","Casania","Casaria","Casavia","Casenia","Casenza","Caseria","Casessa","Casia","Casonia","Casoria","Casova","Casovar","Casovia","Corania","Coraria","Coravia","Corenia","Corenza","Coreria","Coressa","Coria","Coronia","Corova","Corovar","Corovia","Dorania","Doraria","Doravia","Dorenia","Dorenza","Doreria","Doressa","Doria","Doronia","Dorova","Dorovar","Dorovia","Feraria","Feravia","Ferenia","Ferenza","Feressa","Feria","Feronia","Feroria","Ferova","Ferovar","Ferovia","Galania","Galaria","Galavia","Galenia","Galenza","Galeria","Galessa","Galia","Galonia","Galoria","Galova","Galovar","Galovia","Kesania","Kesaria","Kesavia","Kesenia","Kesenza","Keseria","Kesia","Kesonia","Kesoria","Kesova","Kesovar","Kesovia","Linania","Linaria","Linavia","Linenia","Linenza","Lineria","Linessa","Linia","Linonia","Linoria","Linova","Linovar","Linovia","Lorania","Loraria","Loravia","Lorenia","Lorenza","Loreria","Loressa","Loria","Loronia","Lorova","Lorovar","Lorovia","Lusania","Lusaria","Lusavia","Lusenia","Lusenza","Luseria","Lusessa","Lusia","Lusonia","Lusoria","Lusova","Lusovar","Marania","Maravia","Marenia","Marenza","Mareria","Maressa","Maria","Maronia","Maroria","Marova","Marovar","Mirania","Miraria","Miravia","Mirenia","Mirenza","Mireria","Miressa","Miria","Mironia","Miroria","Mirova","Mirovar","Mirovia","Montaria","Montavia","Montenia","Montenza","Monteria","Montessa","Montia","Montonia","Montoria","Montova","Montovar","Montovia","Ostavia","Ostenia","Ostenza","Osteria","Ostessa","Ostonia","Ostoria","Ostova","Ostovar","Ostovia","Palania","Palaria","Palavia","Palenia","Palenza","Paleria","Palessa","Palia","Palonia","Paloria","Palova","Palovar","Palovia","Rovania","Rovaria","Rovavia","Rovenia","Rovenza","Roveria","Rovessa","Rovia","Rovonia","Rovoria","Santania","Santavia","Santenia","Santenza","Santeria","Santessa","Santia","Santonia","Santoria","Santova","Santovar","Santovia","Selania","Selaria","Selavia","Selenia","Selenza","Seleria","Selessa","Selia","Selonia","Seloria","Selova","Selovar","Selovia","Sevania","Sevaria","Sevavia","Sevenia","Sevenza","Severia","Sevessa","Sevia","Sevonia","Sevoria","Sevova","Sevovar","Sevovia","Tavania","Tavaria","Tavenia","Tavenza","Taveria","Tavessa","Tavia","Tavonia","Tavoria","Tavovar","Tavovia","Terania","Teraria","Teravia","Terenia","Terenza","Teressa","Teria","Teronia","Teroria","Terova","Terovar","Terovia","Valania","Valaria","Valavia","Valenia","Valenza","Valessa","Valia","Valonia","Valova","Valovar","Valovia","Velaria","Velavia","Velenia","Velenza","Veleria","Velessa","Velia","Velonia","Veloria","Velova","Velovar","Velovia","Vesania","Vesaria","Vesavia","Vesenia","Vesenza","Veseria","Vesia","Vesonia","Vesoria","Vesova","Vesovar","Vesovia","Vorania","Voraria","Voravia","Vorenia","Vorenza","Voreria","Voressa","Voria","Voronia","Vorova","Vorovar","Vorovia","Zelania","Zelaria","Zelavia","Zelenia","Zelenza","Zeleria","Zelessa","Zelia","Zelonia","Zeloria","Zelova","Zelovar","Zelovia"],"nordic":["Brandfold","Brandgard","Brandheim","Brandholm","Brandland","Brandmark","Brandstad","Brandsund","Brandvik","Elvdal","Elvfold","Elvgard","Elvheim","Elvholm","Elvland","Elvmark","Elvstad","Elvsund","Fendal","Fenfold","Fengard","Fenheim","Fenholm","Fenland","Fenmark","Fenstad","Fensund","Fenvik","Fjelldal","Fjellfold","Fjellgard","Fjellheim","Fjellholm","Fjellmark","Fjellstad","Fjellsund","Fjellvik","Grimdal","Grimfold","Grimgard","Grimheim","Grimholm","Grimland","Grimstad","Grimsund","Grimvik","Haldfold","Haldgard","Haldheim","Haldholm","Haldland","Haldmark","Haldstad","Haldsund","Haldvik","Havdal","Havfold","Havgard","Havheim","Havholm","Havland","Havmark","Havstad","Havsund","Iskdal","Iskfold","Iskgard","Iskheim","Iskholm","Iskland","Iskmark","Iskstad","Isksund","Iskvik","Kaldfold","Kaldgard","Kaldheim","Kaldholm","Kaldland","Kaldmark","Kaldstad","Kaldsund","Kaldvik","Lindfold","Lindgard","Lindheim","Lindholm","Lindland","Lindmark","Lindstad","Lindsund","Lindvik","Nordfold","Nordgard","Nordheim","Nordholm","Nordstad","Nordsund","Nordvik","Skardal","Skarfold","Skargard","Skarheim","Skarholm","Skarland","Skarmark","Skarstad","Skarsund","Skarvik","Soldal","Solfold","Solgard","Solheim","Solholm","Solmark","Solstad","Solsund","Solvik","Strandfold","Strandgard","Strandheim","Strandholm","Strandland","Strandmark","Strandstad","Strandsund","Strandvik","Sundfold","Sundgard","Sundheim","Sundholm","Sundland","Sundmark","Sundstad","Sundvik","Trondfold","Trondgard","Trondheim","Trondholm","Trondland","Trondmark","Trondstad","Trondsund","Trondvik","Ulvdal","Ulvfold","Ulvgard","Ulvheim","Ulvholm","Ulvland","Ulvmark","Ulvstad","Ulvsund","Vargdal","Vargfold","Vargheim","Vargholm","Vargland","Vargmark","Vargstad","Vargsund","Vargvik","Vestdal","Vestgard","Vestheim","Vestholm","Vestmark","Vestsund","Vestvik","Vikdal","Vikfold","Vikgard","Vikheim","Vikholm","Vikland","Vikmark","Vikstad","Viksund"],"isle":["Santa Aurelia","Santa Coralia","Santa Esperanza","Santa Celeste","Santa Palmira","Santa Benedetta","Santa Lucena","Santa Caridad","Santa Serena","Santa Brisa","Santa Estrella","Santa Ondina","Santa Perla","Santa Clemencia","Santa Rosalba","Santa Graciela","Santa Paloma","Santa Dorada","Santa Inocencia","Santa Valeriana","Santa Lucinda","Santa Florencia","Santa Leocadia","Santa Rufina","Santa Eulalia","Santa Severina","Santa Marcelina","Santa Adelina","San Aurelio","San Benedicto","San Celestino","San Ambrosio","San Teodoro","San Clemente","San Amadeo","San Silvestre","San Leandro","San Fermin","San Isidro","San Patricio","San Rodrigo","San Severino","San Anselmo","San Bartolo","San Evaristo","San Gregorio","San Ildefonso","San Prudencio","San Valerio","Port Aurelia","Port Coralia","Port Esperanza","Port Celeste","Port Palmira","Port Benedetta","Port Lucena","Port Caridad","Port Serena","Port Brisa","Port Estrella","Port Ondina","Port Perla","Port Clemencia","Port Rosalba","Port Graciela","Port Paloma","Port Dorada","Port Inocencia","Port Valeriana","Port Lucinda","Port Florencia","Port Leocadia","Port Rufina","Port Eulalia","Port Severina","Port Marcelina","Port Adelina","the Corran Islands","the Velmor Islands","the Kestra Islands","the Aldmere Islands","the Tarran Islands","the Merrow Islands","the Solenne Islands","the Halcyon Islands","the Brannoc Islands","the Ossery Islands","the Calder Islands","the Mirren Islands","the Vantage Islands","the Coralline Islands","the Westerly Islands","the Gannet Islands","the Lowry Islands","the Sarrow Islands","the Tolland Islands","the Dunmarra Islands","the Corran Isles","the Velmor Isles","the Kestra Isles","the Aldmere Isles","the Tarran Isles","the Merrow Isles","the Solenne Isles","the Halcyon Isles","the Brannoc Isles","the Ossery Isles","the Calder Isles","the Mirren Isles","the Vantage Isles","the Coralline Isles","the Westerly Isles","the Gannet Isles","the Lowry Isles","the Sarrow Isles","the Tolland Isles","the Dunmarra Isles","Corran Island","Velmor Island","Kestra Island","Aldmere Island","Tarran Island","Merrow Island","Solenne Island","Halcyon Island","Brannoc Island","Ossery Island","Calder Island","Mirren Island","Vantage Island","Coralline Island","Westerly Island","Gannet Island","Lowry Island","Sarrow Island","Tolland Island","Dunmarra Island","Isla Aurelia","Isla Coralia","Isla Esperanza","Isla Celeste","Isla Palmira","Isla Benedetta","Isla Lucena","Isla Caridad","Isla Serena","Isla Brisa","Isla Estrella","Isla Ondina","Isla Perla","Isla Clemencia","Isla Rosalba","Isla Graciela","Isla Paloma","Isla Dorada","Isla Inocencia","Isla Valeriana","Isla Lucinda","Isla Florencia","Isla Leocadia","Isla Rufina","Isla Eulalia","Isla Severina","Isla Marcelina","Isla Adelina","St Aurel","St Brannoc","St Ilda","St Kessog","St Merryn","St Senara","St Elvan","St Corentin","St Maddern","St Endelion"],"capital":{"euro":["Monteluce","Castelvero","Saint Aurel","Valmere","Velgrad","Corvallo","Seravin","Miravel","Novagrad","Marivale","Dornick","Ostburg","Vorstadt","Aldenburg","Castelmar","Montebrano","Belgrava","Santavera","Lusingen","Teravo","Kesmarin","Selbourg","Vallemont","Palazzena"],"nordic":["Haldstad","Lindholm","Tavisholm","Skarhavn","Fjellby","Elvsund","Kalmstad","Vesterhavn","Brandby","Solvik","Isafell","Ulvhavn","Strandby","Kjelborg","Havnstad","Tromvik","Sundby","Varghavn"],"island":["Port Elling","Kestrel Bay","Palmeira","Galmouth","Aldwick","New Harlow","Fennick","Port Aurel","Port Merrow","Saltcove","Seagate","Saint Brannoc's","Gannet Harbour","Coralport","Windward Town","Lowtide","Puerto Serena","Villa Esperanza","Cove Royal","Lantern Bay"]},"rep":["Republic","Kingdom","Federal Republic","Principality","Grand Duchy","Commonwealth","United Provinces","Free State","Democratic Republic","Federation","Union","Confederation","Duchy"]}}</script>
     <script src="../lib/recipe-engine.js?v=d13ac625"></script>
-    <script src="../lib/page.js?v=a8d98e76"></script>
+    <script src="../lib/page.js?v=ac3a7981"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

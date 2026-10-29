@@ -309,7 +309,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=ac296999">
+    <link rel="stylesheet" href="../styles/site.css?v=1ca2262b">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -318,6 +318,8 @@
       <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
       <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
       <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
       <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
       <symbol id="m-sword" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(35 24 24)"><path d="M24 2 L28 8 L28 30 L20 30 L20 8 Z" fill="#fffcf4"/><path d="M24 9 V28" stroke-width="1.2"/><path d="M14 30 H34"/><path d="M24 30 V41"/><circle cx="24" cy="43.5" r="2.4" fill="#efc84a"/></g></g></symbol>
       <symbol id="m-sword-crown" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(35 24 24)"><path d="M24 6 L28 12 L28 32 L20 32 L20 12 Z" fill="#fffcf4"/><path d="M14 32 H34"/><path d="M24 32 V42"/></g><path d="M3 10 L6 3 L10 8 L13 2 L16 8 L20 3 L22 10 Z" fill="#efc84a"/></g></symbol>
@@ -352,77 +354,90 @@
         <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
         <nav class="site-nav" aria-label="Main">
           <ul class="nav-links" id="nav-links">
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy"><span class="nav-label">Fantasy</span></button>
-              <ul class="nav-dropdown-menu" id="menu-fantasy">
-                <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
-                <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
-                <li><a href="../posts/dragon-name-generator.html">Dragon names</a></li>
-                <li><a href="../posts/tiefling-name-generator.html">Tiefling names</a></li>
-                <li><a href="../posts/npc-name-generator.html">NPC names</a></li>
-                <li><a href="../posts/wizard-name-generator.html">Wizard names</a></li>
-                <li><a href="../posts/vampire-name-generator.html">Vampire names</a></li>
-                <li><a href="../posts/tavern-name-generator.html">Tavern names</a></li>
-                <li><a href="../posts/fantasy-town-name-generator.html">Town &amp; village names</a></li>
-                <li><a href="../posts/epithet-generator.html">Epithets &amp; titles</a></li>
-                <li class="nav-more">More: <a href="../categories/fantasy-names.html">Fantasy</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/mythical-names.html">Mythical creatures</a> · <a href="../categories/mythology-names.html">Mythology</a> · <a href="../categories/wuxia-names.html">Wuxia</a> · <a href="../categories/worldbuilding-names.html">World-building</a></li>
-                <li class="nav-more">Seasonal: <a href="../categories/christmas-names.html">Christmas</a> · <a href="../categories/halloween-names.html">Halloween</a></li>
-              </ul>
+            <li class="nav-top"><a href="../index.html">Home</a></li>
+            <li class="nav-top"><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown nav-mega">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-categories"><span class="nav-label">Categories</span></button>
+              <div class="nav-dropdown-menu nav-mega-panel" id="menu-categories">
+                <div class="nav-col">
+                  <p class="nav-col-h">Fantasy</p>
+                  <ul>
+                    <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
+                    <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
+                    <li><a href="../posts/dragon-name-generator.html">Dragon names</a></li>
+                    <li><a href="../posts/tiefling-name-generator.html">Tiefling names</a></li>
+                    <li><a href="../posts/npc-name-generator.html">NPC names</a></li>
+                    <li><a href="../posts/wizard-name-generator.html">Wizard names</a></li>
+                    <li><a href="../posts/vampire-name-generator.html">Vampire names</a></li>
+                    <li><a href="../posts/tavern-name-generator.html">Tavern names</a></li>
+                    <li><a href="../posts/fantasy-town-name-generator.html">Town &amp; village names</a></li>
+                    <li><a href="../posts/epithet-generator.html">Epithets &amp; titles</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/fantasy-names.html">Fantasy</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/mythical-names.html">Mythical creatures</a> · <a href="../categories/mythology-names.html">Mythology</a> · <a href="../categories/wuxia-names.html">Wuxia</a> · <a href="../categories/worldbuilding-names.html">World-building</a></p>
+                  <p class="nav-more">Seasonal: <a href="../categories/christmas-names.html">Christmas</a> · <a href="../categories/halloween-names.html">Halloween</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Games &amp; TV</p>
+                  <ul>
+                    <li><a href="../posts/minecraft-username-generator.html">Minecraft usernames</a></li>
+                    <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
+                    <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
+                    <li><a href="../posts/baldurs-gate-3-name-generator.html">Baldur&#039;s Gate 3</a></li>
+                    <li><a href="../posts/skyrim-orc-name-generator.html">Skyrim orc</a></li>
+                    <li><a href="../posts/khajiit-name-generator.html">Khajiit</a></li>
+                    <li><a href="../posts/elden-ring-name-generator.html">Elden Ring</a></li>
+                    <li><a href="../posts/warhammer-name-generator.html">Warhammer 40k</a></li>
+                    <li><a href="../posts/star-wars-name-generator.html">Star Wars</a></li>
+                    <li><a href="../posts/game-of-thrones-name-generator.html">Game of Thrones</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/minecraft-names.html">Minecraft</a> · <a href="../categories/scifi-names.html">Sci-fi</a> · <a href="../categories/pop_culture-names.html">Pop culture</a> · <a href="../categories/elder_scrolls-names.html">Elder Scrolls</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Music &amp; online</p>
+                  <ul>
+                    <li><a href="../posts/band-name-generator.html">Band names</a></li>
+                    <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
+                    <li><a href="../posts/dj-name-generator.html">DJ names</a></li>
+                    <li><a href="../posts/album-name-generator.html">Album names</a></li>
+                    <li><a href="../posts/stage-name-generator.html">Stage names</a></li>
+                    <li><a href="../posts/podcast-name-generator.html">Podcast names</a></li>
+                    <li><a href="../posts/youtube-channel-name-generator.html">YouTube channel names</a></li>
+                    <li><a href="../posts/gamertag-generator.html">Gamertags</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/music-names.html">Music</a> · <a href="../categories/music_genres-names.html">Music by genre</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Business</p>
+                  <ul>
+                    <li><a href="../posts/business-name-generator.html">Business names</a></li>
+                    <li><a href="../posts/company-name-generator.html">Company names</a></li>
+                    <li><a href="../posts/brand-name-generator.html">Brand names</a></li>
+                    <li><a href="../posts/cafe-name-generator.html">Café names</a></li>
+                    <li><a href="../posts/event-name-generator.html">Event &amp; party names</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/organizations-names.html">Organisations</a> · <a href="../categories/events-names.html">Events</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Name tools</p>
+                  <ul>
+                    <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
+                    <li><a href="../random-name-picker.html">Random name picker</a></li>
+                    <li><a href="../raffle-picker.html">Raffle / pick a winner</a></li>
+                    <li><a href="../secret-santa-generator.html">Secret Santa</a></li>
+                    <li><a href="../team-generator.html">Team generator</a></li>
+                    <li><a href="../posts/name-combiner.html">Name combiner</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../name-tools.html">Name tools</a></p>
+                </div>
+                <p class="nav-all"><a href="../all-generators.html">All generators →</a><a href="../sitemap.html#categories">Every category →</a></p>
+              </div>
             </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games"><span class="nav-label">Games &amp; TV</span></button>
-              <ul class="nav-dropdown-menu" id="menu-games">
-                <li><a href="../posts/minecraft-username-generator.html">Minecraft usernames</a></li>
-                <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
-                <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
-                <li><a href="../posts/baldurs-gate-3-name-generator.html">Baldur&#039;s Gate 3</a></li>
-                <li><a href="../posts/skyrim-orc-name-generator.html">Skyrim orc</a></li>
-                <li><a href="../posts/khajiit-name-generator.html">Khajiit</a></li>
-                <li><a href="../posts/elden-ring-name-generator.html">Elden Ring</a></li>
-                <li><a href="../posts/warhammer-name-generator.html">Warhammer 40k</a></li>
-                <li><a href="../posts/star-wars-name-generator.html">Star Wars</a></li>
-                <li><a href="../posts/game-of-thrones-name-generator.html">Game of Thrones</a></li>
-                <li class="nav-more">More: <a href="../categories/minecraft-names.html">Minecraft</a> · <a href="../categories/scifi-names.html">Sci-fi</a> · <a href="../categories/pop_culture-names.html">Pop culture</a> · <a href="../categories/elder_scrolls-names.html">Elder Scrolls</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music"><span class="nav-label">Music &amp; online</span></button>
-              <ul class="nav-dropdown-menu" id="menu-music">
-                <li><a href="../posts/band-name-generator.html">Band names</a></li>
-                <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
-                <li><a href="../posts/dj-name-generator.html">DJ names</a></li>
-                <li><a href="../posts/album-name-generator.html">Album names</a></li>
-                <li><a href="../posts/stage-name-generator.html">Stage names</a></li>
-                <li><a href="../posts/podcast-name-generator.html">Podcast names</a></li>
-                <li><a href="../posts/youtube-channel-name-generator.html">YouTube channel names</a></li>
-                <li><a href="../posts/gamertag-generator.html">Gamertags</a></li>
-                <li class="nav-more">More: <a href="../categories/music-names.html">Music</a> · <a href="../categories/music_genres-names.html">Music by genre</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business"><span class="nav-label">Business</span></button>
-              <ul class="nav-dropdown-menu" id="menu-business">
-                <li><a href="../posts/business-name-generator.html">Business names</a></li>
-                <li><a href="../posts/company-name-generator.html">Company names</a></li>
-                <li><a href="../posts/brand-name-generator.html">Brand names</a></li>
-                <li><a href="../posts/cafe-name-generator.html">Café names</a></li>
-                <li><a href="../posts/event-name-generator.html">Event &amp; party names</a></li>
-                <li class="nav-more">More: <a href="../categories/organizations-names.html">Organisations</a> · <a href="../categories/events-names.html">Events</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools"><span class="nav-label">Name tools</span></button>
-              <ul class="nav-dropdown-menu" id="menu-tools">
-                <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
-                <li><a href="../random-name-picker.html">Random name picker</a></li>
-                <li><a href="../raffle-picker.html">Raffle / pick a winner</a></li>
-                <li><a href="../secret-santa-generator.html">Secret Santa</a></li>
-                <li><a href="../team-generator.html">Team generator</a></li>
-                <li><a href="../posts/name-combiner.html">Name combiner</a></li>
-                <li class="nav-more">More: <a href="../name-tools.html">Name tools</a></li>
-              </ul>
-            </li>
-            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-top"><a href="../about.html">About</a></li>
+            <li class="nav-find"><form class="nav-search" action="../all-generators.html" method="get" role="search">
+          <label class="visually-hidden" for="nav-q">Search generators</label>
+          <input id="nav-q" type="search" name="q" placeholder="Search generators…" autocomplete="off" enterkeyhint="search">
+          <button type="submit" aria-label="Search"><svg aria-hidden="true" focusable="false"><use href="#i-search"/></svg></button>
+        </form></li>
           </ul>
         </nav>
       </div>
@@ -661,7 +676,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Funny Minecraft Sword Name Generator","slug":"funny-minecraft-sword-name-generator","filters":{"kind":{"label":"Kind of Joke","options":["any","minecraft","general"],"optionLabels":{"any":"Any","minecraft":"Minecraft jokes (Creeper Sweeper)","general":"General silliness (The Tickle Stick)"}},"style":{"label":"Style","options":["plain","symbols"],"optionLabels":{"plain":"Plain text","symbols":"With symbols (⚔ Name ⚔)"}}},"recipe":"switch","on":"kind","cases":{"any":{"recipe":"switch","on":"style","cases":{"plain":{"recipe":"template","template":["[minecraft]","[general]"]},"symbols":{"recipe":"template","template":["⚔ [minecraft] ⚔","✦ [minecraft] ✦","☠ [minecraft] ☠","★ [minecraft] ★","✧ [minecraft] ✧","❄ [minecraft] ❄","⚡ [minecraft] ⚡","♛ [minecraft] ♛","☾ [minecraft] ☽","« [minecraft] »","『 [minecraft] 』","✪ [minecraft] ✪","☄ [minecraft] ☄","➶ [minecraft] ➴","♆ [minecraft] ♆","❖ [minecraft] ❖","⚔ [general] ⚔","✦ [general] ✦","☠ [general] ☠","★ [general] ★","✧ [general] ✧","❄ [general] ❄","⚡ [general] ⚡","♛ [general] ♛","☾ [general] ☽","« [general] »","『 [general] 』","✪ [general] ✪","☄ [general] ☄","➶ [general] ➴","♆ [general] ♆","❖ [general] ❖"]}}},"minecraft":{"recipe":"switch","on":"style","cases":{"plain":{"recipe":"template","template":"[minecraft]"},"symbols":{"recipe":"template","template":["⚔ [minecraft] ⚔","✦ [minecraft] ✦","☠ [minecraft] ☠","★ [minecraft] ★","✧ [minecraft] ✧","❄ [minecraft] ❄","⚡ [minecraft] ⚡","♛ [minecraft] ♛","☾ [minecraft] ☽","« [minecraft] »","『 [minecraft] 』","✪ [minecraft] ✪","☄ [minecraft] ☄","➶ [minecraft] ➴","♆ [minecraft] ♆","❖ [minecraft] ❖"]}}},"general":{"recipe":"switch","on":"style","cases":{"plain":{"recipe":"template","template":"[general]"},"symbols":{"recipe":"template","template":["⚔ [general] ⚔","✦ [general] ✦","☠ [general] ☠","★ [general] ★","✧ [general] ✧","❄ [general] ❄","⚡ [general] ⚡","♛ [general] ♛","☾ [general] ☽","« [general] »","『 [general] 』","✪ [general] ✪","☄ [general] ☄","➶ [general] ➴","♆ [general] ♆","❖ [general] ❖"]}}}},"default":{"recipe":"pick","from":"{kind}"},"data":{"minecraft":["Block Chopper","Gravel Maker","Almost Diamond","Not a Pickaxe","The Irony Blade","The XP Grinder","Zomb-B-Gone","Creeper Sweeper","The Ender Sigh","The Crafty Cleaver","The Plank Poker","I Forgot My Bow","The Bedrock Breaker (Lies)","The Lag Spiker","The Block Remover","The Admin's Ban Hammer","The Enchantment Fraud","The Mob Motivator","The Cobblestone Crusher","The Nether Noodler","The Piglin Distractor","The Anti-Ghast Repellent","The Shears Reject","The Pickaxe's Brother","The Unblockable Block","The Crafting Table Killer","The Torches Slayer","The Chest Opener","The Potion Mixer","The Dripstone Dropper","The Warden's Whimper","The Iron Deficient","The Golden Mistake","The AFK Defender","The Server Lag Compensator","The Unstackable Stabber","The Villager Vindicator","The Pig Destroyer","The Diamond Imposter","The Redstone Regulator","The Hopper Stopper","The Observer Observed","The Piston Pusher","The Expert's Excuse","The PvP Panic","The Respawn Reloader","The Ender Dragon Feather","The Wither Whipper","The Elder Guardian Grump","The Shulker Shaker","The Vexing Vexer","The Evoker's Envy","The Witch's Wish","The Stray Striker","The Husk Hitter","The Drowned Driver","The Phantom Flicker","The Slime Slicer","The Magma Master","The Cave Spider Crisis","The Silverfish Surprise","The Chicken Chaser","The Sheep Shearer (Wrong)","The Cow Comforter","The Llama Layer","The Fox Finder","The Dolphin Diver","The Turtle Tipper","The Pufferfish Punch","The Salmon Swiper","The Cod Cutter","The Axolotl Annoyance","The Goat Gouge","The Camel Kicker","The Sniffer Snapper","The Frog Flipper","The Allay Allergen","The Server Saver","The Ping Putter","The FPS Flipper","The Shader Shocker","The Texture Taker","The Modded Menace","The Vanilla Vandal","The Forge Fighter","The Fabric Flail","The Spigot Spinner","The Crafting Companion","The Brewer's Bane","The Anvil Annihilator","The Note Block Nuisance","The Banner Bruiser","The Dirt Disruptor","The Piston Partner","The Observer Oddity","The Redstone Reject","The Basalt Banger","The Crying Obsidian Carver","The Turtle Shell Thrasher","The Phantom Membrane Masher","The Rabbit Foot Flailer","The Golden Apple Goo","The Disconnect Defender","The Creeper's Therapist","The Ultimate Shears","The Blockiest Blade","The Missing Texture","The AFK Assassin","The Respawn Anchor","Sock Sender","Ping Spike","Lag Chopper","Ender Tear","Nether Nuisance","Iron Deficiency","Bananarang","Texture Glitch","Shrug Sender","The Dirt Hut Defender","The Midnight Miner","The Strip Mine Stabber","The Lava Bucket Regret","The Gravel Gamble","The Creeper Hug","The Hiss Dismisser","The Inventory Full","The Hunger Bar Hero","The Pork Chop Poker","The Sapling Saver","The Torch Spammer","The Cobble Generator","The Spawn Point Protector","The Diagonal Digger","The Two-Block Tunnel","The Sugar Cane Snipper","The Melon Mangler","The Pumpkin Head Disguise","The Bone Meal Bonker","The Spider Jockey Juggler","The Chicken Jockey Chaser","The Baby Zombie Blocker","The Iron Golem's Apology","The Villager's Hmm","The Trading Hall Haggler","The Totem Forgetter","The Fall Damage Fixer","The Water Bucket Clutch","The Lost Coordinates","The F3 Finder","The Nether Portal Panic","The Blaze Rod Bonker","The Fortress Fumbler","The Stronghold Stumbler","The Eye of Ender Lobber","The Chorus Fruit Teleporter","The Elytra Crash Landing","The Firework Fumbler","The Boat Glitch","The Minecart Mishap","The Skeleton Arrow Magnet","The Dropped Diamond","The Despawned Loot","The Creeper Crater Filler","The Sweet Berry Ouch","The Honey Block Sticker","The Bee Nest Bopper","The Wandering Trader Waver","The Respawn Screen Regular","The Hardcore Heartbreak","The Peaceful Mode","The Seed Searcher","The Wooden Starter","The Stone Age Upgrade","The Netherite Dream","Punch Tree First","Bedtime Skipper","Mining Fatigue","Gravel Regret"],"general":["Bladey McBladeface","The Slightly Used","Pointy End Go","The Tickle Stick","Sword of Mediocrity","A Sharp Object","The Butter Knife","Spatula of Doom","The Back Scratcher","Oofbringer","The Disappointment","The Unsubtle Blade","Handle With Care","The Rusty Nail","The Emergency Spork","The Excalibur Jr.","Slicey Dicey","The Wobbly Blade","Mr. Pokey","The Paper Cut","Swordfish","The Bamboozler","A Simple Stick","The Obligatory Sword","Less Lethal Weapon","Shank Redemption","The Unforkable","My Axe (But It's a Sword)","The Slightly Dull Edge","Sir Pokes-a-Lot","The Foam Sword","The Great Ponderer","Stabby McStabface","The Wrong Tool","The Aggressive Spoon","The Overkill Stick","The Subtle Suggestion","The Argument Closer","Just a Phase","The 'It's Fine' Blade","The 1 HP Wonder","The Silent Shhh","The Hunger Pains","The Oopsie Doopsie","The Accidental Weapon","The Plot Twist","The Guard Break","The Swift Exit","The Budget Broadsword","The Pocket Protector","The Unnecessary Sharpness","The Point of View","The ZzZzZz Blade","The 'Did That Hurt?'","The Slightly Bent","The Friendly Reminder","The 'I Have No Idea'","The Farmer's Foe","The Non-Magic Stick","The Go-To Gimmick","The Sticky Situation","The 'Don't Tell Mum'","The Sneaky Surprise","The Auto-Corrector","The Mild Inconvenience","The Notched Nine","The Bed Wars Boom","The Bouncy Blade","The Unstoppable Force (Maybe)","The Movable Object","The Fauxcalibur","The Noodle Arm","The Unintended Consequence","The Not-So-Greatsword","The Beginner's Bop","The 'Look Out!'","The Subtle Stunner","The Critical Complainer","The Auto-Clicker","The 'Just In Case'","The Illusioner's Joke","The Vibe Checker","The Mood Stabiliser","The Truth Teller (Only Lies)","The Certified Classic","The Unspoken Rule","The Back Handed Compliment","The Side Eye Slasher","The Second Best","The 'Better Than Nothing'","The Over Promiser","The Under Deliverer","The 'Did I Do That?'","The Plot Device","The Deus Ex Machina","The 4th Wall Breaker","The Placeholder Name","The Default Setting","The Alpha Blade","The Beta Basher","The Patch Note Punisher","The Nerf Now","The Buff Boy","The Reworked Raker","The Legacy Logger","The Nostalgia Namer","The 'Remember This?'","The Unfinished Project","The Quick Fix","The Delayed Damage","The Client Crasher","The Resource Regulator","The Bukkit Basher","The Paper Pummeler","The Furnace Filler","The Smelter Smasher","The Loom Looper","The Cartography Carver","The Grindstone Grinder","The Stonecutter Scraper","The Bell Ringer","The Jukebox Joker","The Disc Destroyer","The Item Frame Fail","The Armor Stand Avenger","The Painting Payer","The Flower Flinger","The Grass Getter","The Sand Striker","The Clay Clipper","The Snow Scraper","The Ice Icer","The Water Wacker","The Lava Lacer","The Dropper Diver","The Dispenser Doer","The Repeater Ripper","The Comparator Crusher","The Daylight Dagger","The Tripwire Terror","The Pressure Plate Painer","The Button Buster","The Lever Loser","The Quartz Queller","The Blackstone Breaker","The Soul Sand Stabber","The Soul Soil Slicer","The Ancient Debris Digger","The Gilded Glint","The Warped Walker","The Crimson Cutter","The Fungus Flattener","The Vine Vandal","The Moss Master","The Azalea Axe (Again, Sword)","The Glow Berry Grabber","The Spore Spreader","The Sculk Scourge","The Echo Edge","The Reinforced Reprieve","The Conduit Cutter","The Heart of the Sea Hitter","The Fermented Friend","The Docile Destroyer","The Calamity Comforter","The Mild Mannered Melee","The Pacifist Pinprick","The Harmonious Hitter","The Wholesome Weapon","The Kind Killer","The Caring Cleaver","The Polite Puncture","The Friendly Fire Starter","The Love Tap","The Hug Machine (Sharp)","The Peace Treaty Tool","The Inventory Hog","The Non-Committal Cleaver","The Emotional Damage Stick","The 'Press F to Pay Respects' Blade","The Slightly Damp","The Unnecessary Upgrade","The Plot Armor Piercer","The World Eater (in training)","The Anti-Griefer Guarantee","The Unsubscribed","The Mute Button","The 'Wait, That's Illegal'","The Sword of Awkwardness","The Unsharpened Truth","The Final Warning","The 'You Tried' Trophy","The One Hit Wonder (if you're lucky)","The Placeholder Prop","The Alt-F4 Activator","The Ctrl-Z Zapper","The Default Dicer","The Tutorial Tyrant","The Toxic Trapper","The Report Button","The Error 404","The Bad Connection","The Spam Clicker","The Uninvited Guest","The Mild Annoyance","The Overly Dramatic","The Last Resort","The First Mistake","The Unintended Feature","The 'I'm Telling' Blade","The World Border Whack","The Elytra Eliminator","The Unobtainium Edge","The Resource Pack Reject","The Unpopular Opinion","Potato Masher","Mild Spice","Vibe Killer","Oopsie Dagger","Shamebringer","Guilt Trip","Salt Shaker","Wet Wipe","Final Exam","Pop Quiz","Alarm Clock","Noob Slicer","Chunk Loader","Bed Wrecker","Emerald Scythe","Wool Harvester","Glitch Grazer","Loot Gobbler","Stabber","Pokey","Whacker","Swishy","Zip Zap","Boom Stick","Not Safe","Warning Sign","Good Enough","Trust Issues","Maybe Sharp","Needs Grind","Desk Blade","Lunch Cutter","Spaghettisword","Wiggle Stick","Chuckle Blade","Giggle Cutter","Snicker Snatcher","Whoopsie Whack","Pickle Poker","Toast Tapper","Cupcake Cleaver","Pillow Punisher","Blanket Basher","Sofa Slayer","Carpet Cracker","Door Knocker","Window Wiper","Dust Bunny Destroyer","Cobweb Cleanser","Air Conditioner","Slight Miscalculation","Pure Chaos","Existential Threat","Questionable Intent","Suspicious Object","Definitely Not Cursed","A Simple Tool","Very Necessary","Highly Optional","Sorta Strong","Kinda Pointy","Barely Lethal","The Sequel","The Prequel","The Spin-Off","Unnecessary Detail","Hidden Feature","Debug Dicer","Sound Dampener","Silent Scream","Heavy Sigh","Eye Roll","Head Shake","Face Palm","Deep Breather","Inner Peace Killer","Rage Inducer","Frustration Fighter","Confusion Cleaver","Whatever Whacker","Meh Mallet","Okay Obliterator","Fine Finisher","Sure Slasher","Whatever Whisperer","Totally Fine","I Guess","If You Insist","Go For It","Don't Care","Big Deal","Little Trouble","Tiny Terror","Small Scourge","Mini Menace","Pocket Power","Keychain Killer"]},"maxLength":50}</script>
     <script src="../lib/recipe-engine.js?v=d13ac625"></script>
-    <script src="../lib/page.js?v=a8d98e76"></script>
+    <script src="../lib/page.js?v=ac3a7981"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

@@ -285,7 +285,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=ac296999">
+    <link rel="stylesheet" href="../styles/site.css?v=1ca2262b">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -294,6 +294,8 @@
       <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
       <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
       <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
       <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
       <symbol id="m-dragon" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 35 C7 25 15 17 26 17 L37 19 L45 25 L37 27 L42 31 L33 31 C29 35 23 39 17 41 C11 43 6 41 5 35 Z" fill="#fffcf4"/><path d="M19 19 L8 11 L21 15 M24 17 L19 6 L28 16" stroke-width="1.6"/><circle cx="31" cy="22" r="1.5" fill="#1e1c18"/><path d="M41 23 l1 0" stroke-width="2"/><path d="M11 37 C17 36 23 34 28 31" stroke="#efc84a" stroke-width="3"/></g></symbol>
       <symbol id="m-feather-wings" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="24" cy="7" rx="8" ry="2.6" stroke="#efc84a" stroke-width="2.6"/><path d="M24 22 C18 15 9 12 5 18 C9 19 9 22 6 24 C11 25 11 28 9 31 C15 32 20 29 24 26 Z" fill="#fffcf4"/><path d="M24 22 C30 15 39 12 43 18 C39 19 39 22 42 24 C37 25 37 28 39 31 C33 32 28 29 24 26 Z" fill="#fffcf4"/><path d="M11 20 l6 2 M12 27 l6 -1 M37 20 l-6 2 M36 27 l-6 -1" stroke-width="1.2"/><path d="M24 22 V40" stroke-width="1.4"/></g></symbol>
@@ -314,77 +316,90 @@
         <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
         <nav class="site-nav" aria-label="Main">
           <ul class="nav-links" id="nav-links">
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy"><span class="nav-label">Fantasy</span></button>
-              <ul class="nav-dropdown-menu" id="menu-fantasy">
-                <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
-                <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
-                <li><a href="../posts/dragon-name-generator.html">Dragon names</a></li>
-                <li><a href="../posts/tiefling-name-generator.html">Tiefling names</a></li>
-                <li><a href="../posts/npc-name-generator.html">NPC names</a></li>
-                <li><a href="../posts/wizard-name-generator.html">Wizard names</a></li>
-                <li><a href="../posts/vampire-name-generator.html">Vampire names</a></li>
-                <li><a href="../posts/tavern-name-generator.html">Tavern names</a></li>
-                <li><a href="../posts/fantasy-town-name-generator.html">Town &amp; village names</a></li>
-                <li><a href="../posts/epithet-generator.html">Epithets &amp; titles</a></li>
-                <li class="nav-more">More: <a href="../categories/fantasy-names.html">Fantasy</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/mythical-names.html">Mythical creatures</a> · <a href="../categories/mythology-names.html">Mythology</a> · <a href="../categories/wuxia-names.html">Wuxia</a> · <a href="../categories/worldbuilding-names.html">World-building</a></li>
-                <li class="nav-more">Seasonal: <a href="../categories/christmas-names.html">Christmas</a> · <a href="../categories/halloween-names.html">Halloween</a></li>
-              </ul>
+            <li class="nav-top"><a href="../index.html">Home</a></li>
+            <li class="nav-top"><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown nav-mega">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-categories"><span class="nav-label">Categories</span></button>
+              <div class="nav-dropdown-menu nav-mega-panel" id="menu-categories">
+                <div class="nav-col">
+                  <p class="nav-col-h">Fantasy</p>
+                  <ul>
+                    <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
+                    <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
+                    <li><a href="../posts/dragon-name-generator.html">Dragon names</a></li>
+                    <li><a href="../posts/tiefling-name-generator.html">Tiefling names</a></li>
+                    <li><a href="../posts/npc-name-generator.html">NPC names</a></li>
+                    <li><a href="../posts/wizard-name-generator.html">Wizard names</a></li>
+                    <li><a href="../posts/vampire-name-generator.html">Vampire names</a></li>
+                    <li><a href="../posts/tavern-name-generator.html">Tavern names</a></li>
+                    <li><a href="../posts/fantasy-town-name-generator.html">Town &amp; village names</a></li>
+                    <li><a href="../posts/epithet-generator.html">Epithets &amp; titles</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/fantasy-names.html">Fantasy</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/mythical-names.html">Mythical creatures</a> · <a href="../categories/mythology-names.html">Mythology</a> · <a href="../categories/wuxia-names.html">Wuxia</a> · <a href="../categories/worldbuilding-names.html">World-building</a></p>
+                  <p class="nav-more">Seasonal: <a href="../categories/christmas-names.html">Christmas</a> · <a href="../categories/halloween-names.html">Halloween</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Games &amp; TV</p>
+                  <ul>
+                    <li><a href="../posts/minecraft-username-generator.html">Minecraft usernames</a></li>
+                    <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
+                    <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
+                    <li><a href="../posts/baldurs-gate-3-name-generator.html">Baldur&#039;s Gate 3</a></li>
+                    <li><a href="../posts/skyrim-orc-name-generator.html">Skyrim orc</a></li>
+                    <li><a href="../posts/khajiit-name-generator.html">Khajiit</a></li>
+                    <li><a href="../posts/elden-ring-name-generator.html">Elden Ring</a></li>
+                    <li><a href="../posts/warhammer-name-generator.html">Warhammer 40k</a></li>
+                    <li><a href="../posts/star-wars-name-generator.html">Star Wars</a></li>
+                    <li><a href="../posts/game-of-thrones-name-generator.html">Game of Thrones</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/minecraft-names.html">Minecraft</a> · <a href="../categories/scifi-names.html">Sci-fi</a> · <a href="../categories/pop_culture-names.html">Pop culture</a> · <a href="../categories/elder_scrolls-names.html">Elder Scrolls</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Music &amp; online</p>
+                  <ul>
+                    <li><a href="../posts/band-name-generator.html">Band names</a></li>
+                    <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
+                    <li><a href="../posts/dj-name-generator.html">DJ names</a></li>
+                    <li><a href="../posts/album-name-generator.html">Album names</a></li>
+                    <li><a href="../posts/stage-name-generator.html">Stage names</a></li>
+                    <li><a href="../posts/podcast-name-generator.html">Podcast names</a></li>
+                    <li><a href="../posts/youtube-channel-name-generator.html">YouTube channel names</a></li>
+                    <li><a href="../posts/gamertag-generator.html">Gamertags</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/music-names.html">Music</a> · <a href="../categories/music_genres-names.html">Music by genre</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Business</p>
+                  <ul>
+                    <li><a href="../posts/business-name-generator.html">Business names</a></li>
+                    <li><a href="../posts/company-name-generator.html">Company names</a></li>
+                    <li><a href="../posts/brand-name-generator.html">Brand names</a></li>
+                    <li><a href="../posts/cafe-name-generator.html">Café names</a></li>
+                    <li><a href="../posts/event-name-generator.html">Event &amp; party names</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/organizations-names.html">Organisations</a> · <a href="../categories/events-names.html">Events</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Name tools</p>
+                  <ul>
+                    <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
+                    <li><a href="../random-name-picker.html">Random name picker</a></li>
+                    <li><a href="../raffle-picker.html">Raffle / pick a winner</a></li>
+                    <li><a href="../secret-santa-generator.html">Secret Santa</a></li>
+                    <li><a href="../team-generator.html">Team generator</a></li>
+                    <li><a href="../posts/name-combiner.html">Name combiner</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../name-tools.html">Name tools</a></p>
+                </div>
+                <p class="nav-all"><a href="../all-generators.html">All generators →</a><a href="../sitemap.html#categories">Every category →</a></p>
+              </div>
             </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games"><span class="nav-label">Games &amp; TV</span></button>
-              <ul class="nav-dropdown-menu" id="menu-games">
-                <li><a href="../posts/minecraft-username-generator.html">Minecraft usernames</a></li>
-                <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
-                <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
-                <li><a href="../posts/baldurs-gate-3-name-generator.html">Baldur&#039;s Gate 3</a></li>
-                <li><a href="../posts/skyrim-orc-name-generator.html">Skyrim orc</a></li>
-                <li><a href="../posts/khajiit-name-generator.html">Khajiit</a></li>
-                <li><a href="../posts/elden-ring-name-generator.html">Elden Ring</a></li>
-                <li><a href="../posts/warhammer-name-generator.html">Warhammer 40k</a></li>
-                <li><a href="../posts/star-wars-name-generator.html">Star Wars</a></li>
-                <li><a href="../posts/game-of-thrones-name-generator.html">Game of Thrones</a></li>
-                <li class="nav-more">More: <a href="../categories/minecraft-names.html">Minecraft</a> · <a href="../categories/scifi-names.html">Sci-fi</a> · <a href="../categories/pop_culture-names.html">Pop culture</a> · <a href="../categories/elder_scrolls-names.html">Elder Scrolls</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music"><span class="nav-label">Music &amp; online</span></button>
-              <ul class="nav-dropdown-menu" id="menu-music">
-                <li><a href="../posts/band-name-generator.html">Band names</a></li>
-                <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
-                <li><a href="../posts/dj-name-generator.html">DJ names</a></li>
-                <li><a href="../posts/album-name-generator.html">Album names</a></li>
-                <li><a href="../posts/stage-name-generator.html">Stage names</a></li>
-                <li><a href="../posts/podcast-name-generator.html">Podcast names</a></li>
-                <li><a href="../posts/youtube-channel-name-generator.html">YouTube channel names</a></li>
-                <li><a href="../posts/gamertag-generator.html">Gamertags</a></li>
-                <li class="nav-more">More: <a href="../categories/music-names.html">Music</a> · <a href="../categories/music_genres-names.html">Music by genre</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business"><span class="nav-label">Business</span></button>
-              <ul class="nav-dropdown-menu" id="menu-business">
-                <li><a href="../posts/business-name-generator.html">Business names</a></li>
-                <li><a href="../posts/company-name-generator.html">Company names</a></li>
-                <li><a href="../posts/brand-name-generator.html">Brand names</a></li>
-                <li><a href="../posts/cafe-name-generator.html">Café names</a></li>
-                <li><a href="../posts/event-name-generator.html">Event &amp; party names</a></li>
-                <li class="nav-more">More: <a href="../categories/organizations-names.html">Organisations</a> · <a href="../categories/events-names.html">Events</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools"><span class="nav-label">Name tools</span></button>
-              <ul class="nav-dropdown-menu" id="menu-tools">
-                <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
-                <li><a href="../random-name-picker.html">Random name picker</a></li>
-                <li><a href="../raffle-picker.html">Raffle / pick a winner</a></li>
-                <li><a href="../secret-santa-generator.html">Secret Santa</a></li>
-                <li><a href="../team-generator.html">Team generator</a></li>
-                <li><a href="../posts/name-combiner.html">Name combiner</a></li>
-                <li class="nav-more">More: <a href="../name-tools.html">Name tools</a></li>
-              </ul>
-            </li>
-            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-top"><a href="../about.html">About</a></li>
+            <li class="nav-find"><form class="nav-search" action="../all-generators.html" method="get" role="search">
+          <label class="visually-hidden" for="nav-q">Search generators</label>
+          <input id="nav-q" type="search" name="q" placeholder="Search generators…" autocomplete="off" enterkeyhint="search">
+          <button type="submit" aria-label="Search"><svg aria-hidden="true" focusable="false"><use href="#i-search"/></svg></button>
+        </form></li>
           </ul>
         </nav>
       </div>
@@ -564,7 +579,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Chinese Dragon Name Generator","slug":"chinese-dragon-name-generator","seoTitle":"Chinese Dragon Name Generator: Names & Meanings","filters":{"format":{"label":"Name format","options":["meaning","title","name"],"optionLabels":{"meaning":"With its meaning (thunder cloud)","title":"With a title (Ruler of the Rain Clouds)","name":"Name only"}}},"recipe":"switch","on":"format","cases":{"meaning":{"recipe":"template","template":"[meanings]"},"title":{"recipe":"template","template":"[names], [titles]"},"name":{"recipe":"template","template":"[names]"}},"data":{"names":["Tianyun","Tianxing","Tianshen","Yunlei","Yunxing","Yunshen","Leiyun","Leixing","Fengyun","Fengxing","Shuiyun","Shuishen","Jinming","Jinhuo","Yulei","Yuzhu","Yuming","Yuhuo","Bailei","Baizhu","Baiming","Baihuo","Honglei","Hongzhu","Hongming","Honghuo","Heilei","Heizhu","Heihuo","Zhuming","Zhuhuo","Haihui","Jiangfeng","Jiangzhu","Jianghui","Jianglin","Shanfeng","Shanzhu","Shanchun","Xueshui","Xuehai","Xuechun","Yueshui","Yuehai","Yuechun","Xingshui","Xinghai","Minghai","Mingchun","Wuhui","Wuchun","Shenhui","Huohai","Huohui","Chunshui","Chunhui","Chunlin","Qiushui","Qiulin","Yunhai","Jinlei","Yuxue","Hongyun","Yuyun","Mingyue","Qiuyue","Chunlei","Haiyue","Jiangyue","Shanyue","Xuelin","Leihuo","Yunzhu","Yunxia","Wanxia","Zhaoxia","Jinxia","Haitao","Yuntao","Songfeng","Leidian","Dianguang","Shuangyue","Hanyue","Hanxing","Bingxue","Shanlan","Chenxi","Chenxing","Xinghui","Yueguang","Yinyue","Yinxing","Yinhe","Meixue","Hanmei","Songyun","Lingquan","Huoyan","Zhuguang","Tengyun","Xingyun","Leiming","Haichao","Chunchao","Shuangxue","Hanshuang","Bingjing","Jinlin","Yinlin","Tianlan","Jinbo","Yinbo","Qiulu","Hanlu","Lichun","Xiazhi","Xiayun","Dongxue","Qiufeng","Chunfeng","Qiushuang","Tianguang","Lingguang","Jinzhu","Yinzhu","Shanquan","Bingyue","Chiyan","Jinyan","Bihai","Canghai","Haiguang","Jiangxue","Fengxue","Baixue","Shanshui","Xingchen","Yanhuo","Shuijing","Xuehui","Yuntian","Jiuxiao","Fengling","Yinshuang","Yinxue","Jinqiu","Chuxue","Chuxia","Qiuyun","Shuiyue","Jingshui","Leiting","Tianlei","Tianhuo","Yuehua","Shuanghua","Binghua","Yunjin","Hanquan","Yanbo","Huixing","Liuxing"],"meanings":["Tianyun (“the clouds of heaven”)","Tianxing (“star of heaven”)","Tianshen (“heavenly spirit”)","Yunlei (“thunder in the clouds”)","Yunxing (“star in the clouds”)","Yunshen (“spirit of the clouds”)","Leiyun (“thundercloud”)","Leixing (“thunder star”)","Fengyun (“wind and cloud”)","Fengxing (“wind and stars”)","Shuiyun (“water and cloud”)","Shuishen (“water spirit”)","Jinming (“golden light”)","Jinhuo (“golden fire”)","Yulei (“jade thunder”)","Yuzhu (“jade pearl”)","Yuming (“jade light”)","Yuhuo (“jade fire”)","Bailei (“white thunder”)","Baizhu (“white pearl”)","Baiming (“white light”)","Baihuo (“white fire”)","Honglei (“red thunder”)","Hongzhu (“red pearl”)","Hongming (“red light”)","Honghuo (“red fire”)","Heilei (“black thunder”)","Heizhu (“black pearl”)","Heihuo (“black fire”)","Zhuming (“pearl light”)","Zhuhuo (“pearl of fire”)","Haihui (“radiance of the sea”)","Jiangfeng (“river wind”)","Jiangzhu (“river pearl”)","Jianghui (“radiance of the river”)","Jianglin (“forest by the river”)","Shanfeng (“mountain wind”)","Shanzhu (“mountain pearl”)","Shanchun (“spring in the mountains”)","Xueshui (“snowmelt”)","Xuehai (“sea of snow”)","Xuechun (“spring snow”)","Yueshui (“moonlit water”)","Yuehai (“moonlit sea”)","Yuechun (“spring moon”)","Xingshui (“starlit water”)","Xinghai (“sea of stars”)","Minghai (“bright sea”)","Mingchun (“bright spring”)","Wuhui (“misty radiance”)","Wuchun (“misty spring”)","Shenhui (“radiance of the spirits”)","Huohai (“sea of fire”)","Huohui (“firelight”)","Chunshui (“spring water”)","Chunhui (“spring sunshine”)","Chunlin (“spring forest”)","Qiushui (“autumn waters”)","Qiulin (“autumn forest”)","Yunhai (“sea of clouds”)","Jinlei (“golden thunder”)","Yuxue (“jade snow”)","Hongyun (“red clouds”)","Yuyun (“jade clouds”)","Mingyue (“bright moon”)","Qiuyue (“autumn moon”)","Chunlei (“spring thunder”)","Haiyue (“moon over the sea”)","Jiangyue (“moon on the river”)","Shanyue (“mountain moon”)","Xuelin (“snowy forest”)","Leihuo (“thunderfire”)","Yunzhu (“cloud pearl”)","Yunxia (“rosy clouds”)","Wanxia (“evening glow”)","Zhaoxia (“rosy dawn”)","Jinxia (“golden sunset clouds”)","Haitao (“rolling waves of the sea”)","Yuntao (“billowing clouds”)","Songfeng (“wind in the pines”)","Leidian (“thunder and lightning”)","Dianguang (“flash of lightning”)","Shuangyue (“frosty moon”)","Hanyue (“cold moon”)","Hanxing (“winter stars”)","Bingxue (“ice and snow”)","Shanlan (“mountain mist”)","Chenxi (“first light of morning”)","Chenxing (“morning star”)","Xinghui (“starlight”)","Yueguang (“moonlight”)","Yinyue (“silver moon”)","Yinxing (“silver star”)","Yinhe (“the Milky Way”)","Meixue (“plum blossom in the snow”)","Hanmei (“winter plum blossom”)","Songyun (“clouds over the pines”)","Lingquan (“spirit spring”)","Huoyan (“blazing flame”)","Zhuguang (“pearly lustre”)","Tengyun (“riding the clouds”)","Xingyun (“nebula”)","Leiming (“rolling thunder”)","Haichao (“ocean tide”)","Chunchao (“spring tide”)","Shuangxue (“frost and snow”)","Hanshuang (“hard frost”)","Bingjing (“ice crystal”)","Jinlin (“golden scales”)","Yinlin (“silver scales”)","Tianlan (“sky blue”)","Jinbo (“golden waves”)","Yinbo (“silver waves”)","Qiulu (“autumn dew”)","Hanlu (“cold dew”)","Lichun (“the beginning of spring”)","Xiazhi (“midsummer”)","Xiayun (“summer clouds”)","Dongxue (“winter snow”)","Qiufeng (“autumn wind”)","Chunfeng (“spring breeze”)","Qiushuang (“autumn frost”)","Tianguang (“light of heaven”)","Lingguang (“spirit light”)","Jinzhu (“golden pearl”)","Yinzhu (“silver pearl”)","Shanquan (“mountain spring”)","Bingyue (“icy moon”)","Chiyan (“crimson flame”)","Jinyan (“golden flame”)","Bihai (“jade-green sea”)","Canghai (“the boundless sea”)","Haiguang (“light on the sea”)","Jiangxue (“snow on the river”)","Fengxue (“snowstorm”)","Baixue (“white snow”)","Shanshui (“mountains and waters”)","Xingchen (“the stars”)","Yanhuo (“fireworks”)","Shuijing (“crystal”)","Xuehui (“gleam of snow”)","Yuntian (“the sky above the clouds”)","Jiuxiao (“the highest heavens”)","Fengling (“wind chime”)","Yinshuang (“silver frost”)","Yinxue (“silver snow”)","Jinqiu (“golden autumn”)","Chuxue (“first snow”)","Chuxia (“early summer”)","Qiuyun (“autumn clouds”)","Shuiyue (“the moon in the water”)","Jingshui (“still water”)","Leiting (“thunderbolt”)","Tianlei (“heavenly thunder”)","Tianhuo (“fire from heaven”)","Yuehua (“moon's glow”)","Shuanghua (“frost flowers”)","Binghua (“ice flowers”)","Yunjin (“cloud brocade”)","Hanquan (“cold spring”)","Yanbo (“misty waters”)","Huixing (“comet”)","Liuxing (“shooting star”)"],"titles":["Dragon of the Eastern Sea","Dragon of the Yellow River","Guardian of the Pearl","Ruler of the Rain Clouds","Keeper of the Jade Gate","Dragon of the Nine Rivers","Bringer of the Spring Rain","Guardian of the Western Mountains","Dragon of the Southern Sea","Spirit of the Mists","Keeper of the Moon Pearl","Dragon of the Northern Wind","Guardian of the Waterfall","Rider of the Thunder Clouds","Dragon of the Lotus Lake"]}}</script>
     <script src="../lib/recipe-engine.js?v=d13ac625"></script>
-    <script src="../lib/page.js?v=a8d98e76"></script>
+    <script src="../lib/page.js?v=ac3a7981"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

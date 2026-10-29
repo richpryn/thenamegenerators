@@ -285,7 +285,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=ac296999">
+    <link rel="stylesheet" href="../styles/site.css?v=1ca2262b">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -294,6 +294,8 @@
       <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
       <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
       <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
       <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
       <symbol id="m-headset-mic" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 26 C10 9 38 9 38 26" stroke-width="2.4"/><path d="M6 21 h7 v11 h-7 z" fill="#fffcf4"/><path d="M35 21 h7 v11 h-7 z" fill="#fffcf4"/><path d="M10 32 C12 40 18 42 25 40"/><ellipse cx="28" cy="39.5" rx="3.4" ry="2.4" fill="#efc84a"/><path d="M20 4 l1 2 M28 4 l-1 2 M24 2 v2.5" stroke-width="1.2"/></g></symbol>
       <symbol id="m-candle" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 19 c-3 -4 0 -8 0 -12 c3 4 5 8 0 12 z" fill="#efc84a"/><path d="M19 21 h10 v21 h-10 z" fill="#fffcf4"/><path d="M19 25 c2 2 3 0 4 3 M29 24 c-1 2 -2 1 -2 4" stroke-width="1.4"/><path d="M13 43 h22"/><path d="M38 5 a6 6 0 1 0 6 8 a5 5 0 1 1 -6 -8 z"/></g></symbol>
@@ -332,77 +334,90 @@
         <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
         <nav class="site-nav" aria-label="Main">
           <ul class="nav-links" id="nav-links">
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy"><span class="nav-label">Fantasy</span></button>
-              <ul class="nav-dropdown-menu" id="menu-fantasy">
-                <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
-                <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
-                <li><a href="../posts/dragon-name-generator.html">Dragon names</a></li>
-                <li><a href="../posts/tiefling-name-generator.html">Tiefling names</a></li>
-                <li><a href="../posts/npc-name-generator.html">NPC names</a></li>
-                <li><a href="../posts/wizard-name-generator.html">Wizard names</a></li>
-                <li><a href="../posts/vampire-name-generator.html">Vampire names</a></li>
-                <li><a href="../posts/tavern-name-generator.html">Tavern names</a></li>
-                <li><a href="../posts/fantasy-town-name-generator.html">Town &amp; village names</a></li>
-                <li><a href="../posts/epithet-generator.html">Epithets &amp; titles</a></li>
-                <li class="nav-more">More: <a href="../categories/fantasy-names.html">Fantasy</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/mythical-names.html">Mythical creatures</a> · <a href="../categories/mythology-names.html">Mythology</a> · <a href="../categories/wuxia-names.html">Wuxia</a> · <a href="../categories/worldbuilding-names.html">World-building</a></li>
-                <li class="nav-more">Seasonal: <a href="../categories/christmas-names.html">Christmas</a> · <a href="../categories/halloween-names.html">Halloween</a></li>
-              </ul>
+            <li class="nav-top"><a href="../index.html">Home</a></li>
+            <li class="nav-top"><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown nav-mega">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-categories"><span class="nav-label">Categories</span></button>
+              <div class="nav-dropdown-menu nav-mega-panel" id="menu-categories">
+                <div class="nav-col">
+                  <p class="nav-col-h">Fantasy</p>
+                  <ul>
+                    <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
+                    <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
+                    <li><a href="../posts/dragon-name-generator.html">Dragon names</a></li>
+                    <li><a href="../posts/tiefling-name-generator.html">Tiefling names</a></li>
+                    <li><a href="../posts/npc-name-generator.html">NPC names</a></li>
+                    <li><a href="../posts/wizard-name-generator.html">Wizard names</a></li>
+                    <li><a href="../posts/vampire-name-generator.html">Vampire names</a></li>
+                    <li><a href="../posts/tavern-name-generator.html">Tavern names</a></li>
+                    <li><a href="../posts/fantasy-town-name-generator.html">Town &amp; village names</a></li>
+                    <li><a href="../posts/epithet-generator.html">Epithets &amp; titles</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/fantasy-names.html">Fantasy</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/mythical-names.html">Mythical creatures</a> · <a href="../categories/mythology-names.html">Mythology</a> · <a href="../categories/wuxia-names.html">Wuxia</a> · <a href="../categories/worldbuilding-names.html">World-building</a></p>
+                  <p class="nav-more">Seasonal: <a href="../categories/christmas-names.html">Christmas</a> · <a href="../categories/halloween-names.html">Halloween</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Games &amp; TV</p>
+                  <ul>
+                    <li><a href="../posts/minecraft-username-generator.html">Minecraft usernames</a></li>
+                    <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
+                    <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
+                    <li><a href="../posts/baldurs-gate-3-name-generator.html">Baldur&#039;s Gate 3</a></li>
+                    <li><a href="../posts/skyrim-orc-name-generator.html">Skyrim orc</a></li>
+                    <li><a href="../posts/khajiit-name-generator.html">Khajiit</a></li>
+                    <li><a href="../posts/elden-ring-name-generator.html">Elden Ring</a></li>
+                    <li><a href="../posts/warhammer-name-generator.html">Warhammer 40k</a></li>
+                    <li><a href="../posts/star-wars-name-generator.html">Star Wars</a></li>
+                    <li><a href="../posts/game-of-thrones-name-generator.html">Game of Thrones</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/minecraft-names.html">Minecraft</a> · <a href="../categories/scifi-names.html">Sci-fi</a> · <a href="../categories/pop_culture-names.html">Pop culture</a> · <a href="../categories/elder_scrolls-names.html">Elder Scrolls</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Music &amp; online</p>
+                  <ul>
+                    <li><a href="../posts/band-name-generator.html">Band names</a></li>
+                    <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
+                    <li><a href="../posts/dj-name-generator.html">DJ names</a></li>
+                    <li><a href="../posts/album-name-generator.html">Album names</a></li>
+                    <li><a href="../posts/stage-name-generator.html">Stage names</a></li>
+                    <li><a href="../posts/podcast-name-generator.html">Podcast names</a></li>
+                    <li><a href="../posts/youtube-channel-name-generator.html">YouTube channel names</a></li>
+                    <li><a href="../posts/gamertag-generator.html">Gamertags</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/music-names.html">Music</a> · <a href="../categories/music_genres-names.html">Music by genre</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Business</p>
+                  <ul>
+                    <li><a href="../posts/business-name-generator.html">Business names</a></li>
+                    <li><a href="../posts/company-name-generator.html">Company names</a></li>
+                    <li><a href="../posts/brand-name-generator.html">Brand names</a></li>
+                    <li><a href="../posts/cafe-name-generator.html">Café names</a></li>
+                    <li><a href="../posts/event-name-generator.html">Event &amp; party names</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/organizations-names.html">Organisations</a> · <a href="../categories/events-names.html">Events</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Name tools</p>
+                  <ul>
+                    <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
+                    <li><a href="../random-name-picker.html">Random name picker</a></li>
+                    <li><a href="../raffle-picker.html">Raffle / pick a winner</a></li>
+                    <li><a href="../secret-santa-generator.html">Secret Santa</a></li>
+                    <li><a href="../team-generator.html">Team generator</a></li>
+                    <li><a href="../posts/name-combiner.html">Name combiner</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../name-tools.html">Name tools</a></p>
+                </div>
+                <p class="nav-all"><a href="../all-generators.html">All generators →</a><a href="../sitemap.html#categories">Every category →</a></p>
+              </div>
             </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games"><span class="nav-label">Games &amp; TV</span></button>
-              <ul class="nav-dropdown-menu" id="menu-games">
-                <li><a href="../posts/minecraft-username-generator.html">Minecraft usernames</a></li>
-                <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
-                <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
-                <li><a href="../posts/baldurs-gate-3-name-generator.html">Baldur&#039;s Gate 3</a></li>
-                <li><a href="../posts/skyrim-orc-name-generator.html">Skyrim orc</a></li>
-                <li><a href="../posts/khajiit-name-generator.html">Khajiit</a></li>
-                <li><a href="../posts/elden-ring-name-generator.html">Elden Ring</a></li>
-                <li><a href="../posts/warhammer-name-generator.html">Warhammer 40k</a></li>
-                <li><a href="../posts/star-wars-name-generator.html">Star Wars</a></li>
-                <li><a href="../posts/game-of-thrones-name-generator.html">Game of Thrones</a></li>
-                <li class="nav-more">More: <a href="../categories/minecraft-names.html">Minecraft</a> · <a href="../categories/scifi-names.html">Sci-fi</a> · <a href="../categories/pop_culture-names.html">Pop culture</a> · <a href="../categories/elder_scrolls-names.html">Elder Scrolls</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music"><span class="nav-label">Music &amp; online</span></button>
-              <ul class="nav-dropdown-menu" id="menu-music">
-                <li><a href="../posts/band-name-generator.html">Band names</a></li>
-                <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
-                <li><a href="../posts/dj-name-generator.html">DJ names</a></li>
-                <li><a href="../posts/album-name-generator.html">Album names</a></li>
-                <li><a href="../posts/stage-name-generator.html">Stage names</a></li>
-                <li><a href="../posts/podcast-name-generator.html">Podcast names</a></li>
-                <li><a href="../posts/youtube-channel-name-generator.html">YouTube channel names</a></li>
-                <li><a href="../posts/gamertag-generator.html">Gamertags</a></li>
-                <li class="nav-more">More: <a href="../categories/music-names.html">Music</a> · <a href="../categories/music_genres-names.html">Music by genre</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business"><span class="nav-label">Business</span></button>
-              <ul class="nav-dropdown-menu" id="menu-business">
-                <li><a href="../posts/business-name-generator.html">Business names</a></li>
-                <li><a href="../posts/company-name-generator.html">Company names</a></li>
-                <li><a href="../posts/brand-name-generator.html">Brand names</a></li>
-                <li><a href="../posts/cafe-name-generator.html">Café names</a></li>
-                <li><a href="../posts/event-name-generator.html">Event &amp; party names</a></li>
-                <li class="nav-more">More: <a href="../categories/organizations-names.html">Organisations</a> · <a href="../categories/events-names.html">Events</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools"><span class="nav-label">Name tools</span></button>
-              <ul class="nav-dropdown-menu" id="menu-tools">
-                <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
-                <li><a href="../random-name-picker.html">Random name picker</a></li>
-                <li><a href="../raffle-picker.html">Raffle / pick a winner</a></li>
-                <li><a href="../secret-santa-generator.html">Secret Santa</a></li>
-                <li><a href="../team-generator.html">Team generator</a></li>
-                <li><a href="../posts/name-combiner.html">Name combiner</a></li>
-                <li class="nav-more">More: <a href="../name-tools.html">Name tools</a></li>
-              </ul>
-            </li>
-            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-top"><a href="../about.html">About</a></li>
+            <li class="nav-find"><form class="nav-search" action="../all-generators.html" method="get" role="search">
+          <label class="visually-hidden" for="nav-q">Search generators</label>
+          <input id="nav-q" type="search" name="q" placeholder="Search generators…" autocomplete="off" enterkeyhint="search">
+          <button type="submit" aria-label="Search"><svg aria-hidden="true" focusable="false"><use href="#i-search"/></svg></button>
+        </form></li>
           </ul>
         </nav>
       </div>
@@ -609,7 +624,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Girl Group Name Generator","slug":"girl-group-name-generator","seoTitle":"Girl Group Name Generator: Group, Member & Album Names","filters":{"format":{"label":"What are you naming?","options":["band","artist","album"],"optionLabels":{"band":"Group name (Velvet Belles)","artist":"Member name (Poppy Lane)","album":"Album (No Apologies)"}}},"recipe":"switch","on":"format","cases":{"band":{"recipe":"template","template":["[gg.girls] [gg.suf]","[gg.girls] [gg.suf]","[gg.girls] [gg.suf]","Girls [gg.adv]","[gg.comp]","[gg.comp]","The [gg.the]","The [gg.the]","[gg.who]'s [gg.what]","[gg.ord] [gg.ordnoun]","[gg.one]","[gg.one]","[gg.styl]","[gg.acr]","The [gg.surn] Sisters"]},"artist":{"recipe":"template","template":["[f] [s]"]},"album":{"recipe":"template","template":["[ga.word]","[ga.word]","[ga.phrase]","[ga.phrase]","[ga.phrase]","[ga.adj] [ga.noun]","[ga.num]"]}},"noEcho":true,"data":{"gg":{"girls":["Sugar","Starlight","Velvet","Cherry","Glitter","Lipgloss","Saturday","Rocket","Sunset","Golden","Diamond","Electric","Disco","Radio","Candy","Pepper","Honey","Riot","Rebel","Paper","Satellite","Superstar","Hollywood","City","Seaside","Summer","Weekend","Midnight","Pop","Rollerskate","Bubblegum","Lucky","Sparkle","Comet","Jukebox","Mixtape"],"suf":["Girls","Dolls","Sisters","Belles","Queens","Club","Angels","Darlings"],"adv":["Unplugged","Uptown","Upstairs","Undercover","Unlimited","Unstoppable","On Top","in Charge","Gone Wild","on the Run","in Gold","Who Run It"],"comp":["Sugarlace","Glitterbox","Starstruck","Firecracker","Lipstick Jungle","Peppermint","Honeytrap Avenue","Kitten Heels","Cherrybomb Club","Velvetine","Candyfloss","Sherbet","Stilettos","Hairspray","Rollerdisco","Bubblegum Riot","Sweet Revenge","Pop Tarts","Moonbeams","Starlets","Sugarcoat","Spark Club","Gloss","Glamour","Firefly","Satin Doll","Jellybean","Mirrorball","Chatterbox"],"the":["Fridays","Sundaes","Holidays","Weekenders","Juniors","Valentines","Darlings","Debutantes","Starlets","Sweethearts","Cupcakes","Charms","Lovelies","Hi-Fis","Jukeboxes","Pearls","Daydreams","Goldies","Lipsticks","Twisters","Ribbons","Petals"],"who":["Destiny","Liberty","Heaven","Nature","Venus","Mother","Fortune","Cupid","Juliet","Gemini","Harmony"],"what":["Daughters","Darlings","Angels","Girls","Favourites","Promise","Choice","Muses","Sisters","Sweethearts"],"ord":["Third","Fourth","Fifth","Sixth","Seventh","Ninth"],"ordnoun":["Avenue","Chorus","Melody","Season","Wonder","Element","Verse","Edition","Dimension","Sense"],"one":["Radiance","Sorority","Liberté","Fierce","Fabulous","Glamorous","Sassy","Siren","Electra","Mirage","Bombshell","Majesty","Venus","Gemini","Viva","Encore","Supernova","Unity","Rhapsody","Solstice","Diva"],"styl":["Mis-Chief","Glam-Ur","Xtra Gloss","Sis-Ter","Luv'Lee","Diva-Z","B-Gorgeous","Sugah","Fly Gurlz","Kiss-Kiss","Hi-Shine","Star-Lite","Lip-Stix","G-Lamour"],"acr":["SWG","GRL","BFF","XOX","LVG","DVS","KZY","ICN","QBZ","FLY"],"surn":["Bell","Hart","Rose","Lane","Monroe","Delaney","Quinn","Holland","Fox","Reed","Sinclair","Marsh","Carter","Ellis","Brady","Kane","Shaw","Valentine","Starr","Gold"]},"f":["Abby","Alexa","Alice","Amber","Amelia","Ana","April","Ava","Bella","Beth","Bonnie","Brooke","Caitlin","Cara","Carly","Cassie","Chloe","Daisy","Darcy","Eden","Eleanor","Ella","Ellie","Eliza","Emily","Emma","Erin","Esme","Eva","Evie","Faye","Freya","Gemma","Georgia","Grace","Hannah","Harper","Hayley","Holly","Imogen","Isla","Ivy","Jasmine","Jess","Josie","Kate","Katie","Kayla","Keira","Lacey","Layla","Leah","Lena","Lexi","Lily","Lola","Lucy","Maddie","Maisie","Maya","Megan","Mia","Millie","Molly","Nadia","Naomi","Nina","Paige","Phoebe","Piper","Poppy","Rachel","Rebecca","Rosa","Ruby","Sadie","Sasha","Savannah","Scarlett","Sienna","Skye","Sofia","Sophie","Stella","Summer","Tara","Tess","Tilly","Willow","Zoe","Amara","Callie","Delilah","Elodie","Hallie","Iris","Juno","Kira","Lydia","Margot","Nell","Orla","Rosie","Talia","Thea","Viola","Alana","Bianca","Clara","Dani","Elise","Gabi","Jodie","Kelsey","Lauren","Lottie","Marnie","Nicole","Tia","Yasmin","Ciara","Abbie","Becca","Casey","Dionne","Kerry","Leanne","Michelle","Natalie","Shannon","Stacey","Vicky"],"s":["Abbott","Ainsley","Archer","Ashford","Bailey","Barnes","Bell","Bennett","Blake","Bloom","Brady","Brooks","Burke","Callaway","Carr","Carson","Chase","Cooper","Cross","Dale","Darcy","Dawson","Dean","Delaney","Doyle","Ellis","Fairley","Fenton","Finch","Fletcher","Flynn","Ford","Foster","Fox","Gale","Greer","Hale","Hart","Hayes","Hollis","Hunter","Hurst","Kane","Keane","Kerr","Knight","Lane","Lawson","Lowe","Lyle","Marsh","Mercer","Miles","Monroe","Moore","Nash","North","Parker","Pierce","Price","Quinn","Reed","Reeves","Reid","Rhodes","Rivers","Sawyer","Shaw","Sinclair","Sloane","Sutton","Thorne","Vale","Vaughn","Wade","Walsh","Ward","West","Wilde","Winter","Wolfe","Wren","York","Adair","Bishop","Coleman","Conway","Daly","Devlin","Farrell","Gallo","Harding","Kearney","Lennon","Lynch","Madden","McCall","Moran","Navarro","Okafor","Palmer","Quigley","Romero","Shelby","Tate","Tierney","Vance","Whelan"],"ga":{"word":["Glamour","Sugarcoated","Heartbreaker","Bombshell","Fierce","Dazzle","Unbreakable Hearts","Shine","Glitterball","Showgirl","Rebelette","Sass","Lipgloss","Daydreamer","Fearless Hearts","Champagne","Firecracker","Supernova","Gold Dust","Diamond Dust","Sparkler","Kaleidoscope Heart","Electric Kiss","Sweet Talk","Femme","Sisterhood","Girl Talk","Twelve Midnight","Rollercoaster","Lightning","Sugar Rush","Spotlight","Bubblegum","Candy Shop","Hot Gossip","Lovebirds","Unstoppable"],"phrase":["Girls Night Out","Turn It Up Loud","Don't Wait Up","No Apologies","Told You So","Dance Like Nobody's Watching","Kiss and Tell","Louder Together","Better in Pink","Taking Over","Watch Us Now","Say It Like You Mean It","Out All Night","Glitter and Gold","Friends Forever","Lights Camera Action","Ready, Set, Glow","Born to Shine","Sugar and Spice","All Dressed Up","Stronger Together","Here Comes Trouble","Sweet Sixteen","Hearts on Our Sleeves","Making Waves","Party in the Rain","Bigger Than Us","Heartbeats and Hairspray","Love Notes","Lipstick on the Mirror","Fly Like a Girl","Under the Mirrorball","Let's Go Girls","Rhythm and Rhinestones","Glitter on the Dancefloor","Lipstick and Lightning","Sweet as Sugar","Making Moves","Cherry Kisses","Midnight Feast","Gold Hoops and Heartbreak","Keep Your Crown On","Sisters First","Not Your Princess","Rewrite the Ending","Loud and Proud","Pink Champagne Problems","Diaries and Daydreams","Hearts Wide Open","Turn the Music Up","Party of Five","Off the Record","Ribbons in Our Hair","Cherry Lip Gloss Summer","Kisses from London","Sweeter Than Candy","Better Than Boys","Glitterati","Stilettos and Sneakers"],"adj":["Golden","Electric","Sweet","Wild","Pretty","Fearless","Glossy","Sparkling","Brand New","Velvet","Midnight"],"noun":["Hearts","Lights","Dreams","Diaries","Secrets","Promises","Rebels","Kisses","Days","Mirrors","Crowns","Stars","Notes","Moves"],"num":["II","III","IV","The Second Album","Greatest Hits","Unplugged","Live"]}}}</script>
     <script src="../lib/recipe-engine.js?v=d13ac625"></script>
-    <script src="../lib/page.js?v=a8d98e76"></script>
+    <script src="../lib/page.js?v=ac3a7981"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

@@ -290,7 +290,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=ac296999">
+    <link rel="stylesheet" href="../styles/site.css?v=1ca2262b">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -299,6 +299,8 @@
       <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
       <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
       <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
       <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
       <symbol id="m-harmonica" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 H44 V30 H4 Z" fill="#fffcf4"/><path d="M4 18 H44 V21.5 H4 Z" fill="#efc84a"/><path d="M7 24 h2.2 v3 h-2.2 z" fill="#1e1c18" stroke="none"/><path d="M11 24 h2.2 v3 h-2.2 z" fill="#1e1c18" stroke="none"/><path d="M15 24 h2.2 v3 h-2.2 z" fill="#1e1c18" stroke="none"/><path d="M19 24 h2.2 v3 h-2.2 z" fill="#1e1c18" stroke="none"/><path d="M23 24 h2.2 v3 h-2.2 z" fill="#1e1c18" stroke="none"/><path d="M27 24 h2.2 v3 h-2.2 z" fill="#1e1c18" stroke="none"/><path d="M31 24 h2.2 v3 h-2.2 z" fill="#1e1c18" stroke="none"/><path d="M35 24 h2.2 v3 h-2.2 z" fill="#1e1c18" stroke="none"/><path d="M39 24 h2.2 v3 h-2.2 z" fill="#1e1c18" stroke="none"/><path d="M30 9 V3.5 l4.5 -1.3 v5.5" stroke-width="1.3"/><circle cx="28.8" cy="9" r="1.5" fill="#1e1c18"/><circle cx="33.3" cy="7.7" r="1.5" fill="#1e1c18"/></g></symbol>
       <symbol id="m-candle" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 19 c-3 -4 0 -8 0 -12 c3 4 5 8 0 12 z" fill="#efc84a"/><path d="M19 21 h10 v21 h-10 z" fill="#fffcf4"/><path d="M19 25 c2 2 3 0 4 3 M29 24 c-1 2 -2 1 -2 4" stroke-width="1.4"/><path d="M13 43 h22"/><path d="M38 5 a6 6 0 1 0 6 8 a5 5 0 1 1 -6 -8 z"/></g></symbol>
@@ -337,77 +339,90 @@
         <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
         <nav class="site-nav" aria-label="Main">
           <ul class="nav-links" id="nav-links">
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy"><span class="nav-label">Fantasy</span></button>
-              <ul class="nav-dropdown-menu" id="menu-fantasy">
-                <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
-                <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
-                <li><a href="../posts/dragon-name-generator.html">Dragon names</a></li>
-                <li><a href="../posts/tiefling-name-generator.html">Tiefling names</a></li>
-                <li><a href="../posts/npc-name-generator.html">NPC names</a></li>
-                <li><a href="../posts/wizard-name-generator.html">Wizard names</a></li>
-                <li><a href="../posts/vampire-name-generator.html">Vampire names</a></li>
-                <li><a href="../posts/tavern-name-generator.html">Tavern names</a></li>
-                <li><a href="../posts/fantasy-town-name-generator.html">Town &amp; village names</a></li>
-                <li><a href="../posts/epithet-generator.html">Epithets &amp; titles</a></li>
-                <li class="nav-more">More: <a href="../categories/fantasy-names.html">Fantasy</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/mythical-names.html">Mythical creatures</a> · <a href="../categories/mythology-names.html">Mythology</a> · <a href="../categories/wuxia-names.html">Wuxia</a> · <a href="../categories/worldbuilding-names.html">World-building</a></li>
-                <li class="nav-more">Seasonal: <a href="../categories/christmas-names.html">Christmas</a> · <a href="../categories/halloween-names.html">Halloween</a></li>
-              </ul>
+            <li class="nav-top"><a href="../index.html">Home</a></li>
+            <li class="nav-top"><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown nav-mega">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-categories"><span class="nav-label">Categories</span></button>
+              <div class="nav-dropdown-menu nav-mega-panel" id="menu-categories">
+                <div class="nav-col">
+                  <p class="nav-col-h">Fantasy</p>
+                  <ul>
+                    <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
+                    <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
+                    <li><a href="../posts/dragon-name-generator.html">Dragon names</a></li>
+                    <li><a href="../posts/tiefling-name-generator.html">Tiefling names</a></li>
+                    <li><a href="../posts/npc-name-generator.html">NPC names</a></li>
+                    <li><a href="../posts/wizard-name-generator.html">Wizard names</a></li>
+                    <li><a href="../posts/vampire-name-generator.html">Vampire names</a></li>
+                    <li><a href="../posts/tavern-name-generator.html">Tavern names</a></li>
+                    <li><a href="../posts/fantasy-town-name-generator.html">Town &amp; village names</a></li>
+                    <li><a href="../posts/epithet-generator.html">Epithets &amp; titles</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/fantasy-names.html">Fantasy</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/mythical-names.html">Mythical creatures</a> · <a href="../categories/mythology-names.html">Mythology</a> · <a href="../categories/wuxia-names.html">Wuxia</a> · <a href="../categories/worldbuilding-names.html">World-building</a></p>
+                  <p class="nav-more">Seasonal: <a href="../categories/christmas-names.html">Christmas</a> · <a href="../categories/halloween-names.html">Halloween</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Games &amp; TV</p>
+                  <ul>
+                    <li><a href="../posts/minecraft-username-generator.html">Minecraft usernames</a></li>
+                    <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
+                    <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
+                    <li><a href="../posts/baldurs-gate-3-name-generator.html">Baldur&#039;s Gate 3</a></li>
+                    <li><a href="../posts/skyrim-orc-name-generator.html">Skyrim orc</a></li>
+                    <li><a href="../posts/khajiit-name-generator.html">Khajiit</a></li>
+                    <li><a href="../posts/elden-ring-name-generator.html">Elden Ring</a></li>
+                    <li><a href="../posts/warhammer-name-generator.html">Warhammer 40k</a></li>
+                    <li><a href="../posts/star-wars-name-generator.html">Star Wars</a></li>
+                    <li><a href="../posts/game-of-thrones-name-generator.html">Game of Thrones</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/minecraft-names.html">Minecraft</a> · <a href="../categories/scifi-names.html">Sci-fi</a> · <a href="../categories/pop_culture-names.html">Pop culture</a> · <a href="../categories/elder_scrolls-names.html">Elder Scrolls</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Music &amp; online</p>
+                  <ul>
+                    <li><a href="../posts/band-name-generator.html">Band names</a></li>
+                    <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
+                    <li><a href="../posts/dj-name-generator.html">DJ names</a></li>
+                    <li><a href="../posts/album-name-generator.html">Album names</a></li>
+                    <li><a href="../posts/stage-name-generator.html">Stage names</a></li>
+                    <li><a href="../posts/podcast-name-generator.html">Podcast names</a></li>
+                    <li><a href="../posts/youtube-channel-name-generator.html">YouTube channel names</a></li>
+                    <li><a href="../posts/gamertag-generator.html">Gamertags</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/music-names.html">Music</a> · <a href="../categories/music_genres-names.html">Music by genre</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Business</p>
+                  <ul>
+                    <li><a href="../posts/business-name-generator.html">Business names</a></li>
+                    <li><a href="../posts/company-name-generator.html">Company names</a></li>
+                    <li><a href="../posts/brand-name-generator.html">Brand names</a></li>
+                    <li><a href="../posts/cafe-name-generator.html">Café names</a></li>
+                    <li><a href="../posts/event-name-generator.html">Event &amp; party names</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/organizations-names.html">Organisations</a> · <a href="../categories/events-names.html">Events</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Name tools</p>
+                  <ul>
+                    <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
+                    <li><a href="../random-name-picker.html">Random name picker</a></li>
+                    <li><a href="../raffle-picker.html">Raffle / pick a winner</a></li>
+                    <li><a href="../secret-santa-generator.html">Secret Santa</a></li>
+                    <li><a href="../team-generator.html">Team generator</a></li>
+                    <li><a href="../posts/name-combiner.html">Name combiner</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../name-tools.html">Name tools</a></p>
+                </div>
+                <p class="nav-all"><a href="../all-generators.html">All generators →</a><a href="../sitemap.html#categories">Every category →</a></p>
+              </div>
             </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games"><span class="nav-label">Games &amp; TV</span></button>
-              <ul class="nav-dropdown-menu" id="menu-games">
-                <li><a href="../posts/minecraft-username-generator.html">Minecraft usernames</a></li>
-                <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
-                <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
-                <li><a href="../posts/baldurs-gate-3-name-generator.html">Baldur&#039;s Gate 3</a></li>
-                <li><a href="../posts/skyrim-orc-name-generator.html">Skyrim orc</a></li>
-                <li><a href="../posts/khajiit-name-generator.html">Khajiit</a></li>
-                <li><a href="../posts/elden-ring-name-generator.html">Elden Ring</a></li>
-                <li><a href="../posts/warhammer-name-generator.html">Warhammer 40k</a></li>
-                <li><a href="../posts/star-wars-name-generator.html">Star Wars</a></li>
-                <li><a href="../posts/game-of-thrones-name-generator.html">Game of Thrones</a></li>
-                <li class="nav-more">More: <a href="../categories/minecraft-names.html">Minecraft</a> · <a href="../categories/scifi-names.html">Sci-fi</a> · <a href="../categories/pop_culture-names.html">Pop culture</a> · <a href="../categories/elder_scrolls-names.html">Elder Scrolls</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music"><span class="nav-label">Music &amp; online</span></button>
-              <ul class="nav-dropdown-menu" id="menu-music">
-                <li><a href="../posts/band-name-generator.html">Band names</a></li>
-                <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
-                <li><a href="../posts/dj-name-generator.html">DJ names</a></li>
-                <li><a href="../posts/album-name-generator.html">Album names</a></li>
-                <li><a href="../posts/stage-name-generator.html">Stage names</a></li>
-                <li><a href="../posts/podcast-name-generator.html">Podcast names</a></li>
-                <li><a href="../posts/youtube-channel-name-generator.html">YouTube channel names</a></li>
-                <li><a href="../posts/gamertag-generator.html">Gamertags</a></li>
-                <li class="nav-more">More: <a href="../categories/music-names.html">Music</a> · <a href="../categories/music_genres-names.html">Music by genre</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business"><span class="nav-label">Business</span></button>
-              <ul class="nav-dropdown-menu" id="menu-business">
-                <li><a href="../posts/business-name-generator.html">Business names</a></li>
-                <li><a href="../posts/company-name-generator.html">Company names</a></li>
-                <li><a href="../posts/brand-name-generator.html">Brand names</a></li>
-                <li><a href="../posts/cafe-name-generator.html">Café names</a></li>
-                <li><a href="../posts/event-name-generator.html">Event &amp; party names</a></li>
-                <li class="nav-more">More: <a href="../categories/organizations-names.html">Organisations</a> · <a href="../categories/events-names.html">Events</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools"><span class="nav-label">Name tools</span></button>
-              <ul class="nav-dropdown-menu" id="menu-tools">
-                <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
-                <li><a href="../random-name-picker.html">Random name picker</a></li>
-                <li><a href="../raffle-picker.html">Raffle / pick a winner</a></li>
-                <li><a href="../secret-santa-generator.html">Secret Santa</a></li>
-                <li><a href="../team-generator.html">Team generator</a></li>
-                <li><a href="../posts/name-combiner.html">Name combiner</a></li>
-                <li class="nav-more">More: <a href="../name-tools.html">Name tools</a></li>
-              </ul>
-            </li>
-            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-top"><a href="../about.html">About</a></li>
+            <li class="nav-find"><form class="nav-search" action="../all-generators.html" method="get" role="search">
+          <label class="visually-hidden" for="nav-q">Search generators</label>
+          <input id="nav-q" type="search" name="q" placeholder="Search generators…" autocomplete="off" enterkeyhint="search">
+          <button type="submit" aria-label="Search"><svg aria-hidden="true" focusable="false"><use href="#i-search"/></svg></button>
+        </form></li>
           </ul>
         </nav>
       </div>
@@ -635,7 +650,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Blues Name Generator","slug":"blues-name-generator","seoTitle":"Blues Name Generator: Bluesman Names, Bands & Albums","filters":{"format":{"label":"What are you naming?","options":["artist","band","album"],"optionLabels":{"artist":"Blues name (Catfish Tolliver)","band":"Band (Delta Rhythm Kings)","album":"Album (Mean Old Landlord)"}},"gender":{"label":"Singer's gender","options":["any","male","female"],"optionLabels":{"any":"Any","male":"Male","female":"Female"}}},"noEcho":true,"recipe":"switch","on":"format","cases":{"artist":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[bl.m] [bl.sur]","[bl.m] [bl.sur]","[bl.verb] [bl.m] [bl.sur]","[bl.size] [bl.m] [bl.sur]","[bl.nick] [bl.sur]","[bl.nick] [bl.sur]","[bl.place] [bl.pnick]","[bl.place] [bl.m] [bl.sur]","[bl.m] \"[bl.qnick]\" [bl.sur]","[bl.f] [bl.sur]","[bl.f] [bl.sur]","Big Mama [bl.sur]","[bl.place] [bl.f]","[bl.fsize] [bl.f] [bl.sur]","[bl.fdouble] [bl.sur]","[bl.f] \"[bl.fq]\" [bl.sur]","Ma [bl.sur]","[bl.fdouble] [bl.sur]"]},"male":{"recipe":"template","template":["[bl.m] [bl.sur]","[bl.m] [bl.sur]","[bl.verb] [bl.m] [bl.sur]","[bl.size] [bl.m] [bl.sur]","[bl.nick] [bl.sur]","[bl.nick] [bl.sur]","[bl.place] [bl.pnick]","[bl.place] [bl.m] [bl.sur]","[bl.m] \"[bl.qnick]\" [bl.sur]"]},"female":{"recipe":"template","template":["[bl.f] [bl.sur]","[bl.f] [bl.sur]","Big Mama [bl.sur]","[bl.place] [bl.f]","[bl.fsize] [bl.f] [bl.sur]","[bl.fdouble] [bl.sur]","[bl.f] \"[bl.fq]\" [bl.sur]","Ma [bl.sur]","[bl.fdouble] [bl.sur]"]}}},"band":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[bl.m] [bl.sur] & the [bl.bplural]","[bl.f] [bl.sur] & the [bl.bplural]","[bl.nick] [bl.sur] & the [bl.bplural]","The [bl.badj] [bl.bnoun]","The [bl.badj] [bl.bnoun]","[bl.bplace] [bl.bsuffix]","[bl.bplace] [bl.bsuffix]","The [bl.sur] Blues Band","[bl.one]"]}}},"album":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[bl.ablue] Blues","[bl.ablue] Blues","Live at [bl.club]","[bl.verb] in the [bl.inthe]","Mean Old [bl.mean]","Highway [bl.hwy] Blues","[bl.albphrase]","[bl.albphrase]","Down at [bl.club]"]}}}},"data":{"bl":{"m":["Johnny","Jimmy","Eddie","Sam","Joe","Charlie","Albert","Freddie","Otis","Luther","Lonnie","Leroy","Earl","Clarence","Floyd","Homer","Jesse","Cleveland","Ellis","Odell","Percy","Sylvester","Theodore","Virgil","Wilbert","Arthur","Robert","Henry","Louis","Moses","Isaiah","Cedric","Melvin","Calvin","Curtis","Earnest","Lucius","Nathaniel","Ollie","Roscoe","Tommy","Ike","Abe","Marcus","Otha","Elijah","Amos","Jasper","Clyde","Willard","Dewitt","Ezra","Hosea","Lemuel","Mose","Sterling","Thaddeus","Booker","Hezekiah","Lester","Rayfield","Tyrone","Odie"],"f":["Ida","Alberta","Mamie","Victoria","Ruth","Hattie","Louise","Bertha","Della","Geneva","Viola","Pearl","Ruby","Odessa","Lula","Cora","Hazel","Lottie","Mattie","Eula","Lillian","Inez","Velma","Irma","Marva","Nellie","Josephine","Clara","Essie","Annie","Beulah","Gertrude","Ophelia","Willa","Rosa","Estelle","Florence","Lucinda","Leola","Ozella","Vera","Zora","Callie","Lizzie","Lavinia","Delphine","Sadie","Nettie","Queenie","Dora","Augusta"],"fdouble":["Ida Mae","Ruby Lee","Willa Mae","Lula Belle","Annie Mae","Cora Lee","Essie Mae","Odessa Mae","Pearl Lee","Velma Jean","Hattie Mae","Mattie Lou","Della Rose","Viola Jean","Bertha Lee","Lottie Mae","Nellie Ruth","Eula Mae","Sadie Bell","Zora Lee"],"verb":["Ramblin'","Howlin'","Lightnin'","Stompin'","Shoutin'","Moanin'","Rollin'","Hollerin'","Struttin'","Walkin'","Rockin'","Jumpin'","Swingin'","Shufflin'","Driftin'","Boogie","Hummin'","Wailin'"],"size":["Big","Little","Long","Tall","Sweet","Young","Lil'","Old Man","Steady"],"fsize":["Big","Little","Sweet","Queen","Lil'","Lady"],"nick":["Catfish","Hambone","Hound Dog","Bluebird","Cornbread","Biscuit","Possum","Bullfrog","Mudcat","Smokestack","Peanut","Bones","Barrelhouse","Washboard","Harmonica","Boogie","Smokey","Steamboat","Freight Train","Cadillac","Gator","Rooster","Jaybird","Doc","Slim","Shakey","Hurricane","Gravel","Thunder","Honeydripper","Sugarcane","Gumbo","Kingsnake","Tailgate","Bottleneck","Railroad"],"place":["Memphis","Texas","Tampa","Chicago","Delta","Mississippi","Louisiana","Georgia","Carolina","Arkansas","Alabama","Helena","Shreveport","Vicksburg","Greenville","Natchez","Houston","Tupelo","Yazoo","Gulfport"],"pnick":["Sam","Pete","Johnny","Jimmy","Sonny","Jack","Joe","Charlie","Ike","Earl","Frank","Curley","Jesse","Eddie","Lonnie","Henry","Ollie","Mose","Leroy","Smitty"],"qnick":["Guitar","Harmonica","Boogie","Catfish","Hambone","Smokestack","Bluebird","Steady Rollin'","Juke Box","Thunder","Bottleneck","Hound Dog","Cornbread","Sugar","Lucky","Big Hat","Two-Step","Gravy","Sweet Pea","Mississippi","Railroad","Bayou","Slide"],"fq":["Sugar","Honey","Big Voice","Queen Bee","Sweet Pea","Lady Blue","Little Bit","Hummingbird","Sugar Lump","Peaches","Stormy","Juke Box","Bluebell","Songbird","Treetop","Cinnamon"],"sur":["Tolliver","Pruitt","Gaines","Mabry","Hollins","Whitfield","Crenshaw","Pettaway","Gilliam","Ransom","Peoples","Hardaway","Holloway","Jenkins","Lyons","Pickens","Simms","Truitt","Upshaw","Battle","Ellerbe","Fortune","Gatewood","Hairston","Ivory","Lockett","Nesbitt","Odom","Partee","Quarles","Toomer","Varnado","Akins","Boykin","Childress","Dancy","Easley","Faison","Glover","Jessup","Lacy","Madison","Mims","Norwood","Overton","Pinkney","Spearman","Tillman","Winfield","Bledsoe","Caldwell","Fairley","Gholston","Hightower","Kirkland","Lindsey","McNeal","Puckett","Rideout","Strother","Whitlow","Abernathy","Crowder","Embry","Garrett","Lattimore","Moseley","Penn","Riddick","Sumter","Tyree","Weathers","Cheatham","Fennell","Goodloe","Jeter","Kimble","Mosby","Pegues","Thornhill","Vick","Wofford","Yarbrough","Bynum","Darden","Echols","Gamble","Jemison","Lucas","Oglesby","Swanson","Tubbs","Mayes","Pernell"],"bplural":["Night Owls","Housewreckers","Mudcats","Juke Kings","Rhythm Aces","Shufflers","Moaners","Dukes","Tailgaters","Hurricanes","Groovemasters","Sidewinders","Rhythm Rockers","Knockouts","Tomcats","Kingsnakes","Bayou Kings","Late Shift","Lowdown Kings","Delta Rollers","Back Alley Band","Thunderbolts","Rent Party Band","Jukejoint Jumpers","Rattlesnakes"],"badj":["Mighty","Rockin'","Howlin'","Low-Down","Hard-Luck","Back-Porch","Smokestack","Barrelhouse","Boogie","Rattlesnake","Downhome","Red-Hot","Rusty","Tin Can","Bottleneck","Muddy River","Gravel Road","Steamboat","Juke-Box","Kitchen Table","Freight Train","Midnight"],"bnoun":["Kings","Aces","Shakers","Hounds","Rollers","Dukes","Shufflers","Stompers","Allstars","Revue","Kingsnakes","Cats","Hollerers","Groovers","Prowlers","Rhythm Section","Jug Band","Shakedown"],"bplace":["Delta","Hill Country","Maxwell Street","South Side","West Side","Bayou","Crescent City","Clarksdale","Helena","Greenville","Vicksburg","Yazoo","Sunflower River","Gulf Coast","Piedmont","Texas","Highway 82","Big River","Riverside","Lakeside","Bluff City"],"bsuffix":["Blues Band","Allstars","Blues Revue","Rhythm Kings","Shufflers","Jug Band","Juke Band","Blues Collective","Boogie Band","Night Train","Blues Express","Houserockers"],"one":["The Rent Party Revue","Hambone Junction","The Fish Fry Band","Tin Roof Shakers","Rooster & the Rain","Levee Breakers","The Back Porch Congregation","Muddy Boots Blues Band","Second-Hand Cadillac","The Overcoat Band","Crawdad Hole","Sorghum Syrup Revue","The Late Freight","Midnight Mule","Two-Bit Prophets","The Bus Station Blues Band","Jook House Jubilee","The Crossroads Trio","Low Light Revue","Big Muddy Rollers","The Mailtrain","Brass Bed Boogie"],"ablue":["Midnight Train","Hard Luck","Back Porch","Freight Yard","Riverside","Flood Water","Railroad","Kitchen Table","Lonesome Road","Steamboat","Overcoat","Empty Pocket","Broke-Down Car","Red Clay","Gravel Road","Bus Station","Juke Box","Tin Roof","Thunderstorm","Northbound","Dust Storm","Sugar Bowl","Pawn Shop","Front Door","Paycheck","Landlord","Mailbox","Telephone","Monday Morning","Muddy Water","Levee","Crawdad","Last Bus","Porch Light","Bottleneck","Bad Luck","Cold Coffee","Hand-Me-Down","Laundry Day","Second Shift","Weatherman","Leaky Roof","Broken Clock","Dusty Road","Rooster"],"club":["the Blue Lantern","the Hi-Hat Club","the Silver Dollar","the Crawdad Hole","Big Sam's Juke House","Mama Lou's","the Rooster Lounge","the Midnight Grill","the Catfish Kitchen","the Blue Moon Lounge","the Flamingo Room","the Riverside Inn","the Delta Lounge","the Paradise Grill","Pearl's Supper Club","the Tin Roof","the Shake Rag Café","the Lucky Seven","the Green Door","the Bluebird Inn","Ruby's Juke Joint","the Red Lantern","the Rail Yard Club","Sadie's Barbecue"],"inthe":["Rain","Kitchen","Alley","Dark","Back Room","Morning","Mud","Pines","Dust","Rail Yard","Low Light","Thunder","Bottomland","Lamplight"],"mean":["Train","River","Landlord","Town","Rooster","Weather","Highway","Winter","Boss","Rain","Freight","Mule","Alarm Clock","Flood","Wind","Moon"],"hwy":["8","12","19","27","41","55","72","82","90","98"],"albphrase":["Six Strings and a Suitcase","Mud on My Shoes","Lowdown and Lonesome","Muddy River Rising","Long Road North","Kitchen Table Sessions","Front Porch Recordings","Friday Night Fish Fry","Bad Luck Penny","Ain't Got a Dime","Too Tired to Cry","Rain on the Levee","Packed My Suitcase","Ten Cent Guitar","Rollin' Like a River","Last Fair Day","Somebody Stole My Shoes","Talking to the River","Holler and Hum","Down South Sunday","Fishin' Hole Boogie","Leave the Light On","Northbound Freight","Old Guitar, New Strings","Crossroads Dust","Can't Sleep for the Rain","Rocking Chair Boogie","Sunflower River Sessions","Back Door Blues Revue","Big River Shuffle","Low Water","Broke and Blue","Feels Like Rain Again","Same Old Train","Porch Light Boogie","Barbecue and Boogie","Delta Moonrise","Keep On Walkin'","Steel Strings, Hard Luck","The Long Way to Chicago","One More Mile North","Smokestack Sunday"]}}}</script>
     <script src="../lib/recipe-engine.js?v=d13ac625"></script>
-    <script src="../lib/page.js?v=a8d98e76"></script>
+    <script src="../lib/page.js?v=ac3a7981"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

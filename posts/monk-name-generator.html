@@ -285,7 +285,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=ac296999">
+    <link rel="stylesheet" href="../styles/site.css?v=1ca2262b">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -294,6 +294,8 @@
       <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
       <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
       <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
       <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
       <symbol id="m-beads" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24.0" cy="9.0" r="2.6" fill="#fffcf4" stroke-width="1.4"/><circle cx="30.0" cy="10.6" r="2.6" fill="#fffcf4" stroke-width="1.4"/><circle cx="34.4" cy="15.0" r="2.6" fill="#fffcf4" stroke-width="1.4"/><circle cx="36.0" cy="21.0" r="2.6" fill="#fffcf4" stroke-width="1.4"/><circle cx="34.4" cy="27.0" r="2.6" fill="#fffcf4" stroke-width="1.4"/><circle cx="30.0" cy="31.4" r="2.6" fill="#fffcf4" stroke-width="1.4"/><circle cx="18.0" cy="31.4" r="2.6" fill="#fffcf4" stroke-width="1.4"/><circle cx="13.6" cy="27.0" r="2.6" fill="#fffcf4" stroke-width="1.4"/><circle cx="12.0" cy="21.0" r="2.6" fill="#fffcf4" stroke-width="1.4"/><circle cx="13.6" cy="15.0" r="2.6" fill="#fffcf4" stroke-width="1.4"/><circle cx="18.0" cy="10.6" r="2.6" fill="#fffcf4" stroke-width="1.4"/><circle cx="24" cy="34.5" r="3.8" fill="#efc84a"/><path d="M24 38.5 V44 M21.5 46 L24 42 L26.5 46" stroke-width="1.4"/></g></symbol>
       <symbol id="m-feather-wings" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="24" cy="7" rx="8" ry="2.6" stroke="#efc84a" stroke-width="2.6"/><path d="M24 22 C18 15 9 12 5 18 C9 19 9 22 6 24 C11 25 11 28 9 31 C15 32 20 29 24 26 Z" fill="#fffcf4"/><path d="M24 22 C30 15 39 12 43 18 C39 19 39 22 42 24 C37 25 37 28 39 31 C33 32 28 29 24 26 Z" fill="#fffcf4"/><path d="M11 20 l6 2 M12 27 l6 -1 M37 20 l-6 2 M36 27 l-6 -1" stroke-width="1.2"/><path d="M24 22 V40" stroke-width="1.4"/></g></symbol>
@@ -358,77 +360,90 @@
         <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
         <nav class="site-nav" aria-label="Main">
           <ul class="nav-links" id="nav-links">
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy"><span class="nav-label">Fantasy</span></button>
-              <ul class="nav-dropdown-menu" id="menu-fantasy">
-                <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
-                <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
-                <li><a href="../posts/dragon-name-generator.html">Dragon names</a></li>
-                <li><a href="../posts/tiefling-name-generator.html">Tiefling names</a></li>
-                <li><a href="../posts/npc-name-generator.html">NPC names</a></li>
-                <li><a href="../posts/wizard-name-generator.html">Wizard names</a></li>
-                <li><a href="../posts/vampire-name-generator.html">Vampire names</a></li>
-                <li><a href="../posts/tavern-name-generator.html">Tavern names</a></li>
-                <li><a href="../posts/fantasy-town-name-generator.html">Town &amp; village names</a></li>
-                <li><a href="../posts/epithet-generator.html">Epithets &amp; titles</a></li>
-                <li class="nav-more">More: <a href="../categories/fantasy-names.html">Fantasy</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/mythical-names.html">Mythical creatures</a> · <a href="../categories/mythology-names.html">Mythology</a> · <a href="../categories/wuxia-names.html">Wuxia</a> · <a href="../categories/worldbuilding-names.html">World-building</a></li>
-                <li class="nav-more">Seasonal: <a href="../categories/christmas-names.html">Christmas</a> · <a href="../categories/halloween-names.html">Halloween</a></li>
-              </ul>
+            <li class="nav-top"><a href="../index.html">Home</a></li>
+            <li class="nav-top"><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown nav-mega">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-categories"><span class="nav-label">Categories</span></button>
+              <div class="nav-dropdown-menu nav-mega-panel" id="menu-categories">
+                <div class="nav-col">
+                  <p class="nav-col-h">Fantasy</p>
+                  <ul>
+                    <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
+                    <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
+                    <li><a href="../posts/dragon-name-generator.html">Dragon names</a></li>
+                    <li><a href="../posts/tiefling-name-generator.html">Tiefling names</a></li>
+                    <li><a href="../posts/npc-name-generator.html">NPC names</a></li>
+                    <li><a href="../posts/wizard-name-generator.html">Wizard names</a></li>
+                    <li><a href="../posts/vampire-name-generator.html">Vampire names</a></li>
+                    <li><a href="../posts/tavern-name-generator.html">Tavern names</a></li>
+                    <li><a href="../posts/fantasy-town-name-generator.html">Town &amp; village names</a></li>
+                    <li><a href="../posts/epithet-generator.html">Epithets &amp; titles</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/fantasy-names.html">Fantasy</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/mythical-names.html">Mythical creatures</a> · <a href="../categories/mythology-names.html">Mythology</a> · <a href="../categories/wuxia-names.html">Wuxia</a> · <a href="../categories/worldbuilding-names.html">World-building</a></p>
+                  <p class="nav-more">Seasonal: <a href="../categories/christmas-names.html">Christmas</a> · <a href="../categories/halloween-names.html">Halloween</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Games &amp; TV</p>
+                  <ul>
+                    <li><a href="../posts/minecraft-username-generator.html">Minecraft usernames</a></li>
+                    <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
+                    <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
+                    <li><a href="../posts/baldurs-gate-3-name-generator.html">Baldur&#039;s Gate 3</a></li>
+                    <li><a href="../posts/skyrim-orc-name-generator.html">Skyrim orc</a></li>
+                    <li><a href="../posts/khajiit-name-generator.html">Khajiit</a></li>
+                    <li><a href="../posts/elden-ring-name-generator.html">Elden Ring</a></li>
+                    <li><a href="../posts/warhammer-name-generator.html">Warhammer 40k</a></li>
+                    <li><a href="../posts/star-wars-name-generator.html">Star Wars</a></li>
+                    <li><a href="../posts/game-of-thrones-name-generator.html">Game of Thrones</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/minecraft-names.html">Minecraft</a> · <a href="../categories/scifi-names.html">Sci-fi</a> · <a href="../categories/pop_culture-names.html">Pop culture</a> · <a href="../categories/elder_scrolls-names.html">Elder Scrolls</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Music &amp; online</p>
+                  <ul>
+                    <li><a href="../posts/band-name-generator.html">Band names</a></li>
+                    <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
+                    <li><a href="../posts/dj-name-generator.html">DJ names</a></li>
+                    <li><a href="../posts/album-name-generator.html">Album names</a></li>
+                    <li><a href="../posts/stage-name-generator.html">Stage names</a></li>
+                    <li><a href="../posts/podcast-name-generator.html">Podcast names</a></li>
+                    <li><a href="../posts/youtube-channel-name-generator.html">YouTube channel names</a></li>
+                    <li><a href="../posts/gamertag-generator.html">Gamertags</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/music-names.html">Music</a> · <a href="../categories/music_genres-names.html">Music by genre</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Business</p>
+                  <ul>
+                    <li><a href="../posts/business-name-generator.html">Business names</a></li>
+                    <li><a href="../posts/company-name-generator.html">Company names</a></li>
+                    <li><a href="../posts/brand-name-generator.html">Brand names</a></li>
+                    <li><a href="../posts/cafe-name-generator.html">Café names</a></li>
+                    <li><a href="../posts/event-name-generator.html">Event &amp; party names</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/organizations-names.html">Organisations</a> · <a href="../categories/events-names.html">Events</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Name tools</p>
+                  <ul>
+                    <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
+                    <li><a href="../random-name-picker.html">Random name picker</a></li>
+                    <li><a href="../raffle-picker.html">Raffle / pick a winner</a></li>
+                    <li><a href="../secret-santa-generator.html">Secret Santa</a></li>
+                    <li><a href="../team-generator.html">Team generator</a></li>
+                    <li><a href="../posts/name-combiner.html">Name combiner</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../name-tools.html">Name tools</a></p>
+                </div>
+                <p class="nav-all"><a href="../all-generators.html">All generators →</a><a href="../sitemap.html#categories">Every category →</a></p>
+              </div>
             </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games"><span class="nav-label">Games &amp; TV</span></button>
-              <ul class="nav-dropdown-menu" id="menu-games">
-                <li><a href="../posts/minecraft-username-generator.html">Minecraft usernames</a></li>
-                <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
-                <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
-                <li><a href="../posts/baldurs-gate-3-name-generator.html">Baldur&#039;s Gate 3</a></li>
-                <li><a href="../posts/skyrim-orc-name-generator.html">Skyrim orc</a></li>
-                <li><a href="../posts/khajiit-name-generator.html">Khajiit</a></li>
-                <li><a href="../posts/elden-ring-name-generator.html">Elden Ring</a></li>
-                <li><a href="../posts/warhammer-name-generator.html">Warhammer 40k</a></li>
-                <li><a href="../posts/star-wars-name-generator.html">Star Wars</a></li>
-                <li><a href="../posts/game-of-thrones-name-generator.html">Game of Thrones</a></li>
-                <li class="nav-more">More: <a href="../categories/minecraft-names.html">Minecraft</a> · <a href="../categories/scifi-names.html">Sci-fi</a> · <a href="../categories/pop_culture-names.html">Pop culture</a> · <a href="../categories/elder_scrolls-names.html">Elder Scrolls</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music"><span class="nav-label">Music &amp; online</span></button>
-              <ul class="nav-dropdown-menu" id="menu-music">
-                <li><a href="../posts/band-name-generator.html">Band names</a></li>
-                <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
-                <li><a href="../posts/dj-name-generator.html">DJ names</a></li>
-                <li><a href="../posts/album-name-generator.html">Album names</a></li>
-                <li><a href="../posts/stage-name-generator.html">Stage names</a></li>
-                <li><a href="../posts/podcast-name-generator.html">Podcast names</a></li>
-                <li><a href="../posts/youtube-channel-name-generator.html">YouTube channel names</a></li>
-                <li><a href="../posts/gamertag-generator.html">Gamertags</a></li>
-                <li class="nav-more">More: <a href="../categories/music-names.html">Music</a> · <a href="../categories/music_genres-names.html">Music by genre</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business"><span class="nav-label">Business</span></button>
-              <ul class="nav-dropdown-menu" id="menu-business">
-                <li><a href="../posts/business-name-generator.html">Business names</a></li>
-                <li><a href="../posts/company-name-generator.html">Company names</a></li>
-                <li><a href="../posts/brand-name-generator.html">Brand names</a></li>
-                <li><a href="../posts/cafe-name-generator.html">Café names</a></li>
-                <li><a href="../posts/event-name-generator.html">Event &amp; party names</a></li>
-                <li class="nav-more">More: <a href="../categories/organizations-names.html">Organisations</a> · <a href="../categories/events-names.html">Events</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools"><span class="nav-label">Name tools</span></button>
-              <ul class="nav-dropdown-menu" id="menu-tools">
-                <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
-                <li><a href="../random-name-picker.html">Random name picker</a></li>
-                <li><a href="../raffle-picker.html">Raffle / pick a winner</a></li>
-                <li><a href="../secret-santa-generator.html">Secret Santa</a></li>
-                <li><a href="../team-generator.html">Team generator</a></li>
-                <li><a href="../posts/name-combiner.html">Name combiner</a></li>
-                <li class="nav-more">More: <a href="../name-tools.html">Name tools</a></li>
-              </ul>
-            </li>
-            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-top"><a href="../about.html">About</a></li>
+            <li class="nav-find"><form class="nav-search" action="../all-generators.html" method="get" role="search">
+          <label class="visually-hidden" for="nav-q">Search generators</label>
+          <input id="nav-q" type="search" name="q" placeholder="Search generators…" autocomplete="off" enterkeyhint="search">
+          <button type="submit" aria-label="Search"><svg aria-hidden="true" focusable="false"><use href="#i-search"/></svg></button>
+        </form></li>
           </ul>
         </nav>
       </div>
@@ -741,7 +756,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Monk Name Generator","slug":"monk-name-generator","seoTitle":"D&D Monk Name Generator: Names for Every Tradition","filters":{"gender":{"label":"Gender","options":["any","male","female"],"optionLabels":{"any":"Any"}},"subclass":{"label":"Tradition","options":["any","open_hand","shadow","elements","drunken","kensei","sun_soul","long_death","mercy","astral"],"optionLabels":{"any":"Any tradition","open_hand":"Way of the Open Hand","shadow":"Way of Shadow","elements":"Way of the Four Elements","drunken":"Way of the Drunken Master","kensei":"Way of the Kensei","sun_soul":"Way of the Sun Soul","long_death":"Way of the Long Death","mercy":"Way of Mercy","astral":"Way of the Astral Self"}},"format":{"label":"Name format","options":["full","name"],"optionLabels":{"full":"Name and epithet","name":"Name only"}},"letter":{"label":"Starts with","options":["any","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","r","s","t","u","v","w","z"],"optionLabels":{"any":"Any letter","a":"A","b":"B","c":"C","d":"D","e":"E","f":"F","g":"G","h":"H","i":"I","j":"J","k":"K","l":"L","m":"M","n":"N","o":"O","p":"P","q":"Q","r":"R","s":"S","t":"T","u":"U","v":"V","w":"W","x":"X","y":"Y","z":"Z"}}},"startsWith":"letter","recipe":"switch","on":"gender","cases":{"any":{"recipe":"switch","on":"subclass","cases":{"open_hand":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given] [epithets.open_hand]"},"name":{"recipe":"template","template":"[given]"}}},"shadow":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given] [epithets.shadow]"},"name":{"recipe":"template","template":"[given]"}}},"elements":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given] [epithets.elements]"},"name":{"recipe":"template","template":"[given]"}}},"drunken":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given] [epithets.drunken]"},"name":{"recipe":"template","template":"[given]"}}},"kensei":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given] [epithets.kensei]"},"name":{"recipe":"template","template":"[given]"}}},"sun_soul":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given] [epithets.sun_soul]"},"name":{"recipe":"template","template":"[given]"}}},"long_death":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given] [epithets.long_death]"},"name":{"recipe":"template","template":"[given]"}}},"mercy":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given] [epithets.mercy]"},"name":{"recipe":"template","template":"[given]"}}},"astral":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given] [epithets.astral]"},"name":{"recipe":"template","template":"[given]"}}},"any":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given] [epithets.open_hand]","[given] [epithets.shadow]","[given] [epithets.elements]","[given] [epithets.drunken]","[given] [epithets.kensei]","[given] [epithets.sun_soul]","[given] [epithets.long_death]","[given] [epithets.mercy]","[given] [epithets.astral]"]},"name":{"recipe":"template","template":"[given]"}}}}},"male":{"recipe":"switch","on":"subclass","cases":{"open_hand":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given.male] [epithets.open_hand]"},"name":{"recipe":"template","template":"[given.male]"}}},"shadow":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given.male] [epithets.shadow]"},"name":{"recipe":"template","template":"[given.male]"}}},"elements":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given.male] [epithets.elements]"},"name":{"recipe":"template","template":"[given.male]"}}},"drunken":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given.male] [epithets.drunken]"},"name":{"recipe":"template","template":"[given.male]"}}},"kensei":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given.male] [epithets.kensei]"},"name":{"recipe":"template","template":"[given.male]"}}},"sun_soul":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given.male] [epithets.sun_soul]"},"name":{"recipe":"template","template":"[given.male]"}}},"long_death":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given.male] [epithets.long_death]"},"name":{"recipe":"template","template":"[given.male]"}}},"mercy":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given.male] [epithets.mercy]"},"name":{"recipe":"template","template":"[given.male]"}}},"astral":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given.male] [epithets.astral]"},"name":{"recipe":"template","template":"[given.male]"}}},"any":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given.male] [epithets.open_hand]","[given.male] [epithets.shadow]","[given.male] [epithets.elements]","[given.male] [epithets.drunken]","[given.male] [epithets.kensei]","[given.male] [epithets.sun_soul]","[given.male] [epithets.long_death]","[given.male] [epithets.mercy]","[given.male] [epithets.astral]"]},"name":{"recipe":"template","template":"[given.male]"}}}}},"female":{"recipe":"switch","on":"subclass","cases":{"open_hand":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given.female] [epithets.open_hand]"},"name":{"recipe":"template","template":"[given.female]"}}},"shadow":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given.female] [epithets.shadow]"},"name":{"recipe":"template","template":"[given.female]"}}},"elements":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given.female] [epithets.elements]"},"name":{"recipe":"template","template":"[given.female]"}}},"drunken":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given.female] [epithets.drunken]"},"name":{"recipe":"template","template":"[given.female]"}}},"kensei":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given.female] [epithets.kensei]"},"name":{"recipe":"template","template":"[given.female]"}}},"sun_soul":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given.female] [epithets.sun_soul]"},"name":{"recipe":"template","template":"[given.female]"}}},"long_death":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given.female] [epithets.long_death]"},"name":{"recipe":"template","template":"[given.female]"}}},"mercy":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given.female] [epithets.mercy]"},"name":{"recipe":"template","template":"[given.female]"}}},"astral":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[given.female] [epithets.astral]"},"name":{"recipe":"template","template":"[given.female]"}}},"any":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[given.female] [epithets.open_hand]","[given.female] [epithets.shadow]","[given.female] [epithets.elements]","[given.female] [epithets.drunken]","[given.female] [epithets.kensei]","[given.female] [epithets.sun_soul]","[given.female] [epithets.long_death]","[given.female] [epithets.mercy]","[given.female] [epithets.astral]"]},"name":{"recipe":"template","template":"[given.female]"}}}}}},"data":{"given":{"male":["Ash","Brother Bram","Cole","Dane","Eli","Finch","Gray","Hale","Ivo","Jory","Kai","Lark","Mace","Noel","Orrin","Pax","Quill","Reed","Sage","Tam","Ulan","Vale","Wren","Arin","Calder","Dorian","Edan","Faro","Galen","Haskel","Iden","Jasper","Kellan","Linus","Mattias","Rowan","Anselm","Bede","Corin","Dov","Emeric","Fintan","Hollis","Isak","Joss","Lowen","Merrin","Niall","Oren","Piran","Soren","Tobin","Aelred","Aidan","Alcuin","Amos","Asa","Barnabas","Bennet","Brendan","Caedmon","Ciaran","Colm","Columba","Cyril","Dace","Eamon","Ebbe","Edwin","Emil","Ewan","Fell","Fenn","Gil","Hallam","Hugh","Ilan","Ira","Jem","Jonah","Kester","Lane","Leif","Lior","Marek","Moss","Nils","Odo","Otto","Pell","Ren","Rhun","Saul","Seth","Stellan","Tarn","Teo","Tycho","Wyn","Yann","Zev","Benno","Cosmo","Ferris","Ilya","Jarek","Laurens","Lukas","Misha","Pavel","Rainer","Sander","Stefan","Tomas","Urban","Viggo","Wendel","Yves","Zeno","Aurel","Bastien","Cillian","Dorran","Eskil","Fabian","Gregor","Idris","Kristof","Lennart","Mathis","Noam","Olin","Pascal","Ruben","Simon","Timo","Uri","Vaughn","Cairn","Flint","Glen","Heron","Slate","Clay","Tern","Abel","Aldo","Cuthbert","Elias","Ezra","Gideon","Hamish","Lucan","Mikkel","Osric","Silas","Thane","Ulf","Hollin","Keir","Rafe","Torin","Wystan","Esko","Bertil"],"female":["Ada","Bree","Calla","Dara","Elin","Faye","Gwen","Iris","Jade","Kira","Lena","Mira","Nia","Ona","Pia","Rue","Sela","Tamsin","Una","Vera","Willa","Yara","Zara","Alba","Brin","Cass","Delia","Esme","Fen","Greer","Hollis","Ina","Juno","Kestrel","Lys","Marin","Neve","Agnes","Briony","Clem","Dell","Edda","Fia","Hanne","Ilse","Jessamy","Liesel","Maude","Noor","Orla","Petra","Signe","Thea","Aino","Alma","Anke","Anna","Asha","Aster","Ayla","Beth","Brigid","Cait","Ceri","Dagny","Dora","Eda","Effie","Eira","Elsa","Elske","Enid","Etta","Eve","Fleur","Gerda","Greta","Hana","Hedda","Hild","Hulda","Ilka","Inge","Isa","Jana","Jutta","Karin","Kaja","Lea","Lise","Livia","Lora","Lumi","Mae","Mara","Meret","Mila","Moa","Nell","Nora","Odile","Oona","Rhea","Rina","Ros","Runa","Saga","Sanne","Selma","Sian","Silke","Sol","Tova","Tilde","Ulla","Vala","Vesna","Ylva","Zita","Agathe","Cecily","Dorit","Elodie","Fenna","Gisela","Hester","Jorun","Klara","Lotte","Malin","Mette","Nadia","Ottilie","Ragna","Solveig","Thora","Ursel","Viveka","Zelie","Aude","Beatrix","Clio","Dagmar","Edith","Frida","Ide","Kaisa","Linnea","Madlen","Nanna","Oda","Briar","Clove","Dove","Heather","Linnet","Merle","Teal","Tansy","Roswitha","Benedikte","Aveline","Ingrid","Liv","Marta","Nessa"]},"epithets":{"open_hand":["the Open Palm","Who Strikes Like Water","the Unarmed","of the Mountain Monastery","the Swift Fist","the Still Hand","the Disciplined","the Quivering Palm","the Balanced","the Patient Strike","the Calm Storm","the Empty Hand"],"shadow":["the Shadow-Step","Who Walks Unseen","the Night Monk","of the Hidden Temple","the Silent","the Umbral Fist","the Darkened","the Lantern-Snuffer","the Unheard","the Veiled","the Smoke","the Moonless"],"elements":["the Element-Walker","Who Bends the Wind","the Fire-Fist","of the Four Winds","the Water-Palm","the Earth-Foot","the Storm-Dancer","the River Step","the Flame-Breath","the Stone-Stance","the Tidal","the Elemental"],"drunken":["the Wobbly","Who Never Falls Over","the Staggering","of the Tavern Temple","the Tipsy Fist","the Swaying Reed","the Hiccup","the Lucky Stumble","the Tankard","the Unsteady","the Tumbling","the Barstool Sage"],"kensei":["the Blade-Master","Who Paints with Swords","the Way of the Brush","of the Silent Dojo","the Weapon-Saint","the Steady Blade","the Calligrapher","the Sword-Dancer","the Disciplined Edge","the Bow-Master","the Measured Cut","the Perfect Form"],"sun_soul":["the Sun-Fist","Who Glows at Dawn","the Radiant Palm","of the Morning Temple","the Sunbolt","the Bright Soul","the Burning Hand","the Golden","the Dawn-Strike","the Shining","the Daybreak","the Inner Sun"],"long_death":["the Death-Student","Who Studies Endings","the Grave-Monk","of the Silent Crypt","the Unafraid","the Last Breath","the Touch of Death","the Grim Scholar","the Mortal Coil","the Pale Hand","the Unflinching","the Hour of Death"],"mercy":["the Plague-Masked","Who Heals and Harms","the Merciful Hand","of the Hospice","the Masked Healer","the Physician","the Gentle Death","the Hand of Mercy","the Kind Touch","the Plague Doctor","the Soothing","the Last Mercy"],"astral":["the Astral Arms","Who Sees Beyond","the Starbound Soul","of the Silver Cord","the Spirit-Fist","the Many-Armed","the Inner Eye","the Ghostly","the Soul-Seen","the Luminous","the Astral","the Mirror-Self"]},"epithets_titled":{}},"letterSets":{"any|any|full":"abcdefghijklmnoprstuvwz","any|any|name":"abcdefghijklmnoprstuvwz","any|open_hand|full":"abcdefghijklmnoprstuvwz","any|open_hand|name":"abcdefghijklmnoprstuvwz","any|shadow|full":"abcdefghijklmnoprstuvwz","any|shadow|name":"abcdefghijklmnoprstuvwz","any|elements|full":"abcdefghijklmnoprstuvwz","any|elements|name":"abcdefghijklmnoprstuvwz","any|drunken|full":"abcdefghijklmnoprstuvwz","any|drunken|name":"abcdefghijklmnoprstuvwz","any|kensei|full":"abcdefghijklmnoprstuvwz","any|kensei|name":"abcdefghijklmnoprstuvwz","any|sun_soul|full":"abcdefghijklmnoprstuvwz","any|sun_soul|name":"abcdefghijklmnoprstuvwz","any|long_death|full":"abcdefghijklmnoprstuvwz","any|long_death|name":"abcdefghijklmnoprstuvwz","any|mercy|full":"abcdefghijklmnoprstuvwz","any|mercy|name":"abcdefghijklmnoprstuvwz","any|astral|full":"abcdefghijklmnoprstuvwz","any|astral|name":"abcdefghijklmnoprstuvwz","male|any|full":"abcdefghijklmoprst","male|any|name":"abcdefghijklmoprst","male|open_hand|full":"abcdefghijklmoprst","male|open_hand|name":"abcdefghijklmoprst","male|shadow|full":"abcdefghijklmoprst","male|shadow|name":"abcdefghijklmoprst","male|elements|full":"abcdefghijklmoprst","male|elements|name":"abcdefghijklmoprst","male|drunken|full":"abcdefghijklmoprst","male|drunken|name":"abcdefghijklmoprst","male|kensei|full":"abcdefghijklmoprst","male|kensei|name":"abcdefghijklmoprst","male|sun_soul|full":"abcdefghijklmoprst","male|sun_soul|name":"abcdefghijklmoprst","male|long_death|full":"abcdefghijklmoprst","male|long_death|name":"abcdefghijklmoprst","male|mercy|full":"abcdefghijklmoprst","male|mercy|name":"abcdefghijklmoprst","male|astral|full":"abcdefghijklmoprst","male|astral|name":"abcdefghijklmoprst","female|any|full":"abcdefghijklmnorst","female|any|name":"abcdefghijklmnorst","female|open_hand|full":"abcdefghijklmnorst","female|open_hand|name":"abcdefghijklmnorst","female|shadow|full":"abcdefghijklmnorst","female|shadow|name":"abcdefghijklmnorst","female|elements|full":"abcdefghijklmnorst","female|elements|name":"abcdefghijklmnorst","female|drunken|full":"abcdefghijklmnorst","female|drunken|name":"abcdefghijklmnorst","female|kensei|full":"abcdefghijklmnorst","female|kensei|name":"abcdefghijklmnorst","female|sun_soul|full":"abcdefghijklmnorst","female|sun_soul|name":"abcdefghijklmnorst","female|long_death|full":"abcdefghijklmnorst","female|long_death|name":"abcdefghijklmnorst","female|mercy|full":"abcdefghijklmnorst","female|mercy|name":"abcdefghijklmnorst","female|astral|full":"abcdefghijklmnorst","female|astral|name":"abcdefghijklmnorst"}}</script>
     <script src="../lib/recipe-engine.js?v=d13ac625"></script>
-    <script src="../lib/page.js?v=a8d98e76"></script>
+    <script src="../lib/page.js?v=ac3a7981"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

@@ -260,7 +260,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=ac296999">
+    <link rel="stylesheet" href="../styles/site.css?v=1ca2262b">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -269,6 +269,8 @@
       <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
       <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
       <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
       <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
       <symbol id="m-hammer" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 20 V43 C22 45 26 45 26 43 V20" fill="#fffcf4"/><path d="M22.8 34 H25.2 V42.5 H22.8 Z" fill="#efc84a" stroke="none"/><path d="M22 20 V43 C22 45 26 45 26 43 V20"/><rect x="9" y="8" width="25" height="12" rx="2" fill="#fffcf4"/><path d="M34 10.5 L43 14 L34 17.5" fill="#fffcf4"/><path d="M15 8 V20 M28 8 V20" stroke-width="1.2"/></g></symbol>
       <symbol id="m-leaf-moon" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 42 C8 26 18 16 34 14 C34 30 24 40 8 42 Z" fill="#fffcf4"/><path d="M8 42 L26 22 M15 35 l6 1" stroke-width="1.4"/><path d="M36 4 a7 7 0 1 0 7 9 a5.5 5.5 0 1 1 -7 -9 z" fill="#efc84a"/></g></symbol>
@@ -299,77 +301,90 @@
         <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
         <nav class="site-nav" aria-label="Main">
           <ul class="nav-links" id="nav-links">
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy"><span class="nav-label">Fantasy</span></button>
-              <ul class="nav-dropdown-menu" id="menu-fantasy">
-                <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
-                <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
-                <li><a href="../posts/dragon-name-generator.html">Dragon names</a></li>
-                <li><a href="../posts/tiefling-name-generator.html">Tiefling names</a></li>
-                <li><a href="../posts/npc-name-generator.html">NPC names</a></li>
-                <li><a href="../posts/wizard-name-generator.html">Wizard names</a></li>
-                <li><a href="../posts/vampire-name-generator.html">Vampire names</a></li>
-                <li><a href="../posts/tavern-name-generator.html">Tavern names</a></li>
-                <li><a href="../posts/fantasy-town-name-generator.html">Town &amp; village names</a></li>
-                <li><a href="../posts/epithet-generator.html">Epithets &amp; titles</a></li>
-                <li class="nav-more">More: <a href="../categories/fantasy-names.html">Fantasy</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/mythical-names.html">Mythical creatures</a> · <a href="../categories/mythology-names.html">Mythology</a> · <a href="../categories/wuxia-names.html">Wuxia</a> · <a href="../categories/worldbuilding-names.html">World-building</a></li>
-                <li class="nav-more">Seasonal: <a href="../categories/christmas-names.html">Christmas</a> · <a href="../categories/halloween-names.html">Halloween</a></li>
-              </ul>
+            <li class="nav-top"><a href="../index.html">Home</a></li>
+            <li class="nav-top"><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown nav-mega">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-categories"><span class="nav-label">Categories</span></button>
+              <div class="nav-dropdown-menu nav-mega-panel" id="menu-categories">
+                <div class="nav-col">
+                  <p class="nav-col-h">Fantasy</p>
+                  <ul>
+                    <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
+                    <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
+                    <li><a href="../posts/dragon-name-generator.html">Dragon names</a></li>
+                    <li><a href="../posts/tiefling-name-generator.html">Tiefling names</a></li>
+                    <li><a href="../posts/npc-name-generator.html">NPC names</a></li>
+                    <li><a href="../posts/wizard-name-generator.html">Wizard names</a></li>
+                    <li><a href="../posts/vampire-name-generator.html">Vampire names</a></li>
+                    <li><a href="../posts/tavern-name-generator.html">Tavern names</a></li>
+                    <li><a href="../posts/fantasy-town-name-generator.html">Town &amp; village names</a></li>
+                    <li><a href="../posts/epithet-generator.html">Epithets &amp; titles</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/fantasy-names.html">Fantasy</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/mythical-names.html">Mythical creatures</a> · <a href="../categories/mythology-names.html">Mythology</a> · <a href="../categories/wuxia-names.html">Wuxia</a> · <a href="../categories/worldbuilding-names.html">World-building</a></p>
+                  <p class="nav-more">Seasonal: <a href="../categories/christmas-names.html">Christmas</a> · <a href="../categories/halloween-names.html">Halloween</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Games &amp; TV</p>
+                  <ul>
+                    <li><a href="../posts/minecraft-username-generator.html">Minecraft usernames</a></li>
+                    <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
+                    <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
+                    <li><a href="../posts/baldurs-gate-3-name-generator.html">Baldur&#039;s Gate 3</a></li>
+                    <li><a href="../posts/skyrim-orc-name-generator.html">Skyrim orc</a></li>
+                    <li><a href="../posts/khajiit-name-generator.html">Khajiit</a></li>
+                    <li><a href="../posts/elden-ring-name-generator.html">Elden Ring</a></li>
+                    <li><a href="../posts/warhammer-name-generator.html">Warhammer 40k</a></li>
+                    <li><a href="../posts/star-wars-name-generator.html">Star Wars</a></li>
+                    <li><a href="../posts/game-of-thrones-name-generator.html">Game of Thrones</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/minecraft-names.html">Minecraft</a> · <a href="../categories/scifi-names.html">Sci-fi</a> · <a href="../categories/pop_culture-names.html">Pop culture</a> · <a href="../categories/elder_scrolls-names.html">Elder Scrolls</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Music &amp; online</p>
+                  <ul>
+                    <li><a href="../posts/band-name-generator.html">Band names</a></li>
+                    <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
+                    <li><a href="../posts/dj-name-generator.html">DJ names</a></li>
+                    <li><a href="../posts/album-name-generator.html">Album names</a></li>
+                    <li><a href="../posts/stage-name-generator.html">Stage names</a></li>
+                    <li><a href="../posts/podcast-name-generator.html">Podcast names</a></li>
+                    <li><a href="../posts/youtube-channel-name-generator.html">YouTube channel names</a></li>
+                    <li><a href="../posts/gamertag-generator.html">Gamertags</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/music-names.html">Music</a> · <a href="../categories/music_genres-names.html">Music by genre</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Business</p>
+                  <ul>
+                    <li><a href="../posts/business-name-generator.html">Business names</a></li>
+                    <li><a href="../posts/company-name-generator.html">Company names</a></li>
+                    <li><a href="../posts/brand-name-generator.html">Brand names</a></li>
+                    <li><a href="../posts/cafe-name-generator.html">Café names</a></li>
+                    <li><a href="../posts/event-name-generator.html">Event &amp; party names</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/organizations-names.html">Organisations</a> · <a href="../categories/events-names.html">Events</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Name tools</p>
+                  <ul>
+                    <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
+                    <li><a href="../random-name-picker.html">Random name picker</a></li>
+                    <li><a href="../raffle-picker.html">Raffle / pick a winner</a></li>
+                    <li><a href="../secret-santa-generator.html">Secret Santa</a></li>
+                    <li><a href="../team-generator.html">Team generator</a></li>
+                    <li><a href="../posts/name-combiner.html">Name combiner</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../name-tools.html">Name tools</a></p>
+                </div>
+                <p class="nav-all"><a href="../all-generators.html">All generators →</a><a href="../sitemap.html#categories">Every category →</a></p>
+              </div>
             </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games"><span class="nav-label">Games &amp; TV</span></button>
-              <ul class="nav-dropdown-menu" id="menu-games">
-                <li><a href="../posts/minecraft-username-generator.html">Minecraft usernames</a></li>
-                <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
-                <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
-                <li><a href="../posts/baldurs-gate-3-name-generator.html">Baldur&#039;s Gate 3</a></li>
-                <li><a href="../posts/skyrim-orc-name-generator.html">Skyrim orc</a></li>
-                <li><a href="../posts/khajiit-name-generator.html">Khajiit</a></li>
-                <li><a href="../posts/elden-ring-name-generator.html">Elden Ring</a></li>
-                <li><a href="../posts/warhammer-name-generator.html">Warhammer 40k</a></li>
-                <li><a href="../posts/star-wars-name-generator.html">Star Wars</a></li>
-                <li><a href="../posts/game-of-thrones-name-generator.html">Game of Thrones</a></li>
-                <li class="nav-more">More: <a href="../categories/minecraft-names.html">Minecraft</a> · <a href="../categories/scifi-names.html">Sci-fi</a> · <a href="../categories/pop_culture-names.html">Pop culture</a> · <a href="../categories/elder_scrolls-names.html">Elder Scrolls</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music"><span class="nav-label">Music &amp; online</span></button>
-              <ul class="nav-dropdown-menu" id="menu-music">
-                <li><a href="../posts/band-name-generator.html">Band names</a></li>
-                <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
-                <li><a href="../posts/dj-name-generator.html">DJ names</a></li>
-                <li><a href="../posts/album-name-generator.html">Album names</a></li>
-                <li><a href="../posts/stage-name-generator.html">Stage names</a></li>
-                <li><a href="../posts/podcast-name-generator.html">Podcast names</a></li>
-                <li><a href="../posts/youtube-channel-name-generator.html">YouTube channel names</a></li>
-                <li><a href="../posts/gamertag-generator.html">Gamertags</a></li>
-                <li class="nav-more">More: <a href="../categories/music-names.html">Music</a> · <a href="../categories/music_genres-names.html">Music by genre</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business"><span class="nav-label">Business</span></button>
-              <ul class="nav-dropdown-menu" id="menu-business">
-                <li><a href="../posts/business-name-generator.html">Business names</a></li>
-                <li><a href="../posts/company-name-generator.html">Company names</a></li>
-                <li><a href="../posts/brand-name-generator.html">Brand names</a></li>
-                <li><a href="../posts/cafe-name-generator.html">Café names</a></li>
-                <li><a href="../posts/event-name-generator.html">Event &amp; party names</a></li>
-                <li class="nav-more">More: <a href="../categories/organizations-names.html">Organisations</a> · <a href="../categories/events-names.html">Events</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools"><span class="nav-label">Name tools</span></button>
-              <ul class="nav-dropdown-menu" id="menu-tools">
-                <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
-                <li><a href="../random-name-picker.html">Random name picker</a></li>
-                <li><a href="../raffle-picker.html">Raffle / pick a winner</a></li>
-                <li><a href="../secret-santa-generator.html">Secret Santa</a></li>
-                <li><a href="../team-generator.html">Team generator</a></li>
-                <li><a href="../posts/name-combiner.html">Name combiner</a></li>
-                <li class="nav-more">More: <a href="../name-tools.html">Name tools</a></li>
-              </ul>
-            </li>
-            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-top"><a href="../about.html">About</a></li>
+            <li class="nav-find"><form class="nav-search" action="../all-generators.html" method="get" role="search">
+          <label class="visually-hidden" for="nav-q">Search generators</label>
+          <input id="nav-q" type="search" name="q" placeholder="Search generators…" autocomplete="off" enterkeyhint="search">
+          <button type="submit" aria-label="Search"><svg aria-hidden="true" focusable="false"><use href="#i-search"/></svg></button>
+        </form></li>
           </ul>
         </nav>
       </div>
@@ -566,7 +581,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Dwarf City Name Generator","slug":"dwarf-city-name-generator","seoTitle":"Dwarf City Name Generator: Dwarven Holds & Halls","filters":{"style":{"label":"Kind of city","options":["any","mountain","deep","forge","ruin","trade"],"optionLabels":{"any":"Any dwarf city","mountain":"Mountain hold (Kadgrim Hold)","deep":"Deep city (Lanterndeep)","forge":"Forge city (Anvilheart)","ruin":"Ruined hold (Fallen Borvald)","trade":"Trade city (Gemcross)"}},"format":{"label":"Name format","options":["name","description"],"optionLabels":{"name":"Name only (Anvilheart)","description":"With a description"}}},"noEcho":true,"recipe":"switch","on":"format","cases":{"name":{"recipe":"switch","on":"style","cases":{"any":{"recipe":"template","template":["[comp.mountain]","[comp.mountain]","[comp.mountain] Hold","[native] Hold","[native] Hold","Hold [native]","The High Halls of [native]","[comp.deep]","[comp.deep]","[native] Deep","[native] Deep","The Deeps of [native]","Lower [native]","[native] Below","[comp.forge]","[comp.forge]","[native] Forge","[native] Forge","The Forges of [native]","The Anvil of [native]","[comp.forge] Hold","[comp.ruin]","[comp.ruin]","Fallen [native]","Fallen [native]","Old [native]","The Lost Halls of [native]","The Broken Gate of [native]","[comp.trade]","[comp.trade]","[native] Gate","[native] Gate","[native] Crossing","The Market Halls of [native]","[native] Market"]},"mountain":{"recipe":"template","template":["[comp.mountain]","[comp.mountain]","[comp.mountain] Hold","[native] Hold","[native] Hold","Hold [native]","The High Halls of [native]"]},"deep":{"recipe":"template","template":["[comp.deep]","[comp.deep]","[native] Deep","[native] Deep","The Deeps of [native]","Lower [native]","[native] Below"]},"forge":{"recipe":"template","template":["[comp.forge]","[comp.forge]","[native] Forge","[native] Forge","The Forges of [native]","The Anvil of [native]","[comp.forge] Hold"]},"ruin":{"recipe":"template","template":["[comp.ruin]","[comp.ruin]","Fallen [native]","Fallen [native]","Old [native]","The Lost Halls of [native]","The Broken Gate of [native]"]},"trade":{"recipe":"template","template":["[comp.trade]","[comp.trade]","[native] Gate","[native] Gate","[native] Crossing","The Market Halls of [native]","[native] Market"]}}},"description":{"recipe":"switch","on":"style","cases":{"any":{"recipe":"template","template":["[comp.mountain], [desc.mountain]","[comp.mountain], [desc.mountain]","[comp.mountain] Hold, [desc.mountain]","[native] Hold, [desc.mountain]","[native] Hold, [desc.mountain]","Hold [native], [desc.mountain]","The High Halls of [native], [desc.mountain]","[comp.deep], [desc.deep]","[comp.deep], [desc.deep]","[native] Deep, [desc.deep]","[native] Deep, [desc.deep]","The Deeps of [native], [desc.deep]","Lower [native], [desc.deep]","[native] Below, [desc.deep]","[comp.forge], [desc.forge]","[comp.forge], [desc.forge]","[native] Forge, [desc.forge]","[native] Forge, [desc.forge]","The Forges of [native], [desc.forge]","The Anvil of [native], [desc.forge]","[comp.forge] Hold, [desc.forge]","[comp.ruin], [desc.ruin]","[comp.ruin], [desc.ruin]","Fallen [native], [desc.ruin]","Fallen [native], [desc.ruin]","Old [native], [desc.ruin]","The Lost Halls of [native], [desc.ruin]","The Broken Gate of [native], [desc.ruin]","[comp.trade], [desc.trade]","[comp.trade], [desc.trade]","[native] Gate, [desc.trade]","[native] Gate, [desc.trade]","[native] Crossing, [desc.trade]","The Market Halls of [native], [desc.trade]","[native] Market, [desc.trade]"]},"mountain":{"recipe":"template","template":["[comp.mountain], [desc.mountain]","[comp.mountain], [desc.mountain]","[comp.mountain] Hold, [desc.mountain]","[native] Hold, [desc.mountain]","[native] Hold, [desc.mountain]","Hold [native], [desc.mountain]","The High Halls of [native], [desc.mountain]"]},"deep":{"recipe":"template","template":["[comp.deep], [desc.deep]","[comp.deep], [desc.deep]","[native] Deep, [desc.deep]","[native] Deep, [desc.deep]","The Deeps of [native], [desc.deep]","Lower [native], [desc.deep]","[native] Below, [desc.deep]"]},"forge":{"recipe":"template","template":["[comp.forge], [desc.forge]","[comp.forge], [desc.forge]","[native] Forge, [desc.forge]","[native] Forge, [desc.forge]","The Forges of [native], [desc.forge]","The Anvil of [native], [desc.forge]","[comp.forge] Hold, [desc.forge]"]},"ruin":{"recipe":"template","template":["[comp.ruin], [desc.ruin]","[comp.ruin], [desc.ruin]","Fallen [native], [desc.ruin]","Fallen [native], [desc.ruin]","Old [native], [desc.ruin]","The Lost Halls of [native], [desc.ruin]","The Broken Gate of [native], [desc.ruin]"]},"trade":{"recipe":"template","template":["[comp.trade], [desc.trade]","[comp.trade], [desc.trade]","[native] Gate, [desc.trade]","[native] Gate, [desc.trade]","[native] Crossing, [desc.trade]","The Market Halls of [native], [desc.trade]","[native] Market, [desc.trade]"]}}}},"data":{"native":["Kadrak","Kadgrim","Kadmar","Kadgar","Kadzan","Kadorn","Kadvald","Kadtok","Kadthak","Kadheim","Kadek","Kadbek","Bardek","Barzan","Barorn","Barvald","Bartok","Bargol","Barthak","Barheim","Barek","Gorgrim","Gormar","Gordur","Gordek","Gorgar","Gorzan","Gorvald","Gortok","Gordrin","Gorthak","Gorheim","Gorek","Gorbek","Thardur","Thardek","Tharmund","Tharzan","Tharorn","Tharvald","Thartok","Thargol","Thardrin","Tharheim","Tharek","Tharbek","Brunrak","Brungrim","Brunmar","Brundur","Brundek","Brungar","Brunrik","Brunzan","Brunorn","Brunvald","Bruntok","Brungol","Brundrin","Brunthak","Brunek","Brunbek","Dralgrim","Dralmar","Draldur","Draldek","Dralgar","Dralmund","Dralrik","Dralzan","Dralorn","Draltok","Dralgol","Dralthak","Dralheim","Dralek","Dralbek","Varnrak","Varndur","Varndek","Varnmund","Varnrik","Varnzan","Varntok","Varngol","Varnheim","Varnek","Varnbek","Hromrak","Hromgrim","Hromdur","Hromdek","Hromgar","Hromrik","Hromzan","Hromorn","Hromvald","Hromtok","Hromgol","Hromdrin","Hromthak","Hromheim","Hromek","Hrombek","Balrak","Balmar","Baldek","Balzan","Balorn","Baltok","Balgol","Balthak","Balheim","Balek","Grunrak","Grunmar","Grundur","Grundek","Grungar","Grunrik","Grunzan","Grunorn","Grunvald","Gruntok","Grungol","Grundrin","Grunthak","Grunheim","Grunek","Grunbek","Dagrak","Dagmar","Dagdek","Dagzan","Dagorn","Dagvald","Dagtok","Dagthak","Dagheim","Dagek","Rukrak","Rukmar","Rukdur","Rukdek","Rukmund","Rukrik","Rukzan","Rukorn","Rukvald","Ruktok","Rukgol","Rukdrin","Rukthak","Rukheim","Rukek","Rukbek","Skargrim","Skardur","Skardek","Skarmund","Skarzan","Skarorn","Skarvald","Skartok","Skargol","Skardrin","Skarthak","Skarek","Skarbek","Haldrak","Haldmar","Haldgar","Haldzan","Haldorn","Haldtok","Haldheim","Haldek","Ormrak","Ormdur","Ormdek","Ormgar","Ormrik","Ormzan","Ormvald","Ormtok","Ormheim","Ormek","Ormbek","Bormar","Bordek","Borzan","Borvald","Bortok","Borgol","Borthak","Borheim","Borek","Kulrak","Kulgrim","Kulmar","Kuldur","Kuldek","Kulgar","Kulmund","Kulrik","Kulzan","Kulorn","Kulvald","Kultok","Kulgol","Kuldrin","Kulthak","Kulheim","Kulek","Kulbek","Drumrak","Drumgrim","Drumdur","Drumdek","Drumgar","Drumrik","Drumzan","Drumorn","Drumvald","Drumtok","Drumthak","Drumheim","Drumek","Drumbek","Gravmar","Gravdur","Gravdek","Gravgar","Gravmund","Gravrik","Gravzan","Gravorn","Gravtok","Gravgol","Gravdrin","Gravthak","Gravheim","Gravek","Gravbek","Thulrak","Thulgrim","Thulmar","Thuldur","Thuldek","Thulgar","Thulmund","Thulrik","Thulzan","Thulorn","Thulvald","Thultok","Thulgol","Thuldrin","Thulheim","Thulek","Thulbek","Vormar","Vordur","Vordek","Vormund","Vorzan","Vorvald","Vortok","Vorgol","Vordrin","Vorthak","Vorek","Vorbek","Zunrak","Zungrim","Zunmar","Zundur","Zundek","Zungar","Zunrik","Zunzan","Zunorn","Zunvald","Zuntok","Zungol","Zundrin","Zunthak","Zunheim","Zunek","Zunbek","Brakgrim","Brakmar","Brakdur","Brakdek","Brakgar","Brakrik","Brakzan","Brakorn","Brakvald","Braktok","Brakdrin","Brakheim","Brakek","Brakbek","Krumrak","Krumgrim","Krumdur","Krumdek","Krumgar","Krumrik","Krumzan","Krumorn","Krumvald","Krumtok","Krumgol","Krumdrin","Krumthak","Krumheim","Krumek","Krumbek","Storgrim","Stormar","Stordur","Stordek","Storgar","Stormund","Storzan","Storvald","Storgol","Stordrin","Storthak","Storheim","Storek","Storbek","Kormar","Kordek","Korzan","Korvald","Kortok","Korgol","Korthak","Korheim","Korek","Fundrak","Fundmar","Fundgar","Fundzan","Fundorn","Fundvald","Fundtok","Fundgol","Fundheim","Fundek","Fundbek","Ragmar","Ragdek","Ragzan","Ragorn","Ragvald","Ragtok","Ragthak","Ragheim","Ragek","Bramgrim","Bramdek","Bramgar","Bramrik","Bramzan","Bramorn","Bramvald","Bramtok","Bramgol","Bramdrin","Bramthak","Bramheim","Bramek","Brambek","Hedrak","Hedgrim","Hedmar","Hedgar","Hedmund","Hedzan","Hedorn","Hedvald","Hedtok","Hedgol","Hedthak","Hedek","Hedbek","Tordek","Torzan","Torvald","Torgol","Torthak","Torheim","Torek","Ulmrak","Ulmdur","Ulmdek","Ulmgar","Ulmrik","Ulmzan","Ulmvald","Ulmtok","Ulmgol","Ulmheim","Ulmek","Ulmbek","Galdrak","Galdmar","Galdzan","Galdorn","Galdtok","Galdheim","Galdek","Galdbek","Jornrak","Jornmar","Jorndur","Jorndek","Jorngar","Jornmund","Jornrik","Jornzan","Jornvald","Jorntok","Jorngol","Jornheim","Jornek","Jornbek","Mardrak","Mardmund","Mardzan","Mardorn","Mardvald","Mardtok","Mardgol","Mardheim","Mardek","Mardbek"],"comp":{"mountain":["Snowcrown","Snowwatch","Snowfast","Cloudhelm","Cloudhorn","Cloudcrown","Cloudspire","Cloudwatch","Eaglecrown","Frostcrown","Frostfast","Greyhorn","Greyfast","Highhelm","Highhorn","Highfast","Ramhorn","Ramhelm","Ramcrown","Ramwatch","Cragcrown","Craghelm","Craghorn","Cragspire","Shieldhorn","Shieldspire","Granitehorn","Granitespire","Thundercrown","Windhorn","Windspire","Stonecrown","Stonewatch","Peakhelm","Peakcrown","Goathorn","Summithold","Summithall"],"deep":["Underdelve","Underhall","Undervault","Underreach","Underhome","Underwell","Lanterndeep","Lanterndelve","Lanternvault","Lanternwell","Glowdeep","Glowdelve","Glowhall","Glowvault","Glowreach","Echodelve","Echovault","Echowell","Rootdelve","Roothall","Rootvault","Lowdelve","Lowvault","Lowreach","Gemreach","Gemwell","Gemhall","Crystaldeep","Crystaldelve","Crystalhall","Crystalvault","Crystalreach","Mossdeep","Mossdelve","Mosshall","Mossvault","Lampdeep","Lampdelve","Lamphall","Lampvault","Quietdeep","Quietdelve","Quiethall","Quietvault","Mushroomhall","Mushroomvault","Candledeep","Candledelve","Candlehall","Candlevault","Darkvault","Nightdelve","Nightwell","Glimmerdeep","Glimmerdelve","Glimmerhall","Glimmervault"],"forge":["Anvilheart","Anvilfast","Anvilhome","Anvilcrown","Anvilfire","Anvilward","Emberhome","Emberfast","Emberward","Hammerheart","Hammerhome","Hammerfire","Hammerward","Hammercrown","Bellowshall","Bellowsheart","Bellowshome","Cinderhall","Cinderheart","Cinderfast","Coalhall","Coalheart","Coalhome","Coalfire","Coalgate","Furnacehall","Furnaceheart","Furnacehome","Furnacegate","Bronzeheart","Bronzefire","Sparkhall","Sparkhome","Sparkforge","Sparkdeep","Ingothall","Ingotgate","Ashheart","Kilnhall","Kilnheart","Kilnhome","Brazierhall","Braziergate","Steelheart","Steelhall","Steelhome","Flameforge","Flamehall","Firedeep","Fireheart","Firehall","Copperheart"],"ruin":["Ashfast","Dustdelve","Dusthold","Silentdelve","Silentforge","Coldforge","Coldhall","Colddelve","Brokenhelm","Brokenforge","Hollowhold","Hollowforge","Sunkendelve","Sunkenhold","Drowneddeep","Drownedhall","Drowneddelve","Crackedanvil","Crackedgate","Rusthall","Rustgate","Rustdeep","Rustdelve","Gloomdelve","Gloomhall","Bonedelve","Bonehall","Lasthold","Lasthall","Ghostdelve","Ghostforge","Ghosthall","Fallowdelve","Fallowhall","Wraithhall","Stonefall","Sorrowdelve","Sorrowhall","Sorrowdeep","Sorrowgate","Lornhall","Lorndelve"],"trade":["Coppertoll","Silvermarket","Silvertoll","Gemcross","Gemmarket","Gemgate","Gemtoll","Coinhall","Goldmarket","Goldcross","Goldtoll","Tollhall","Bridgehold","Cartgate","Ledgerhall","Scalehall","Scalegate","Barrowmarket","Saltdelve","Merchantgate","Roadhold","Roadgate","Lanternmarket","Markethold","Oremarket","Orecross","Waggongate"]},"desc":{"mountain":["a mountain hold whose gates have never been breached","a hold carved into the peak above the clouds","reached only by a stair of nine hundred steps","guarded by giant stone kings carved into the cliff","a great hall lit by shafts of sunlight through the rock","whose war horn can be heard three valleys away","home to the finest axe-smiths in the north","its gate hidden behind a frozen waterfall","where the snow never melts from the battlements","watching over the only pass through the mountains","where every clan keeps a hall of its own","built around a hot spring deep in the rock","whose king is crowned on the old anvil","its walls carved with the name of every king","where goats graze on terraces cut into the slopes","a hold that keeps a vault of mountain gold","with bridges of stone strung between three peaks","where the great beacon is lit in times of war","a fortress hold that has stood for three thousand years","its doors opened only by a dwarf who knows the rune-word","where the wind howls through a hundred arrow slits","whose lookouts can see the sea on a clear day"],"deep":["a deep city lit by glowing crystals","a city a mile below the mountain roots","where lanterns burn in every street and never go out","built around an underground lake as black as ink","its streets winding down into the dark for days","where mushroom farms feed ten thousand dwarves","a deep city that has not seen the sun in a thousand years","whose great hall is a cavern big enough to hold a storm","where the miners sing to the stone before they cut it","carved from a single vein of white marble","with a hundred stairs and only one way out","where the deepest shaft has never found a bottom","its pillars carved like the trunks of stone trees","where blind fish swim in the cistern","a city of tunnels known only to its own people","whose gem mines glitter like a night sky","built where three underground rivers meet","its gates sealed against what lives further down","where the stone is warm to the touch","whose children learn the tunnels before they learn to read","a quiet deep city where every voice echoes","reached by a lift of chains and counterweights"],"forge":["a forge city where the fires have burned for a thousand years","built over a river of molten rock","where the anvils ring day and night","famous for blades that never dull","where the smoke rises from a hundred chimneys in the cliff","its great forge fed by the heat of the mountain","where the runesmiths guard their secrets","the city that forged the crowns of seven kings","where every apprentice spends ten years at the bellows","whose bells are cast from the finest bronze","where the forge-masters are honoured like lords","its streets warm even in the deepest winter","where the hammer-song can be heard outside the mountain","home of the guild of master armourers","where the great furnace is never allowed to go out","whose steel is traded for its weight in silver","built around a forge that was old before the city","where water wheels drive hammers as big as houses","a forge city whose ash darkens the snow for miles","whose smiths hold a contest every midwinter","where the coal carts run on iron rails","its walls glowing red when the furnaces are lit"],"ruin":["a ruined hold lost to a flood a hundred years ago","abandoned when the mines dug too deep","its halls empty since the last king fell","where the forges went cold long ago","a fallen hold that the clans have sworn to retake","whose gate was broken by a dragon","where only echoes answer the horn","its treasure still sealed somewhere in the dark","a ruin the old songs say is cursed","whose great hall is now home to bats","abandoned after a plague swept through the deeps","where goblins squat in the throne room","buried by a rockfall in a single night","a lost hold whose map was burned","where the statues of the kings still stand guard","its lower halls drowned by a rising lake","whose last defenders are said to still keep watch","abandoned so quickly the tables are still laid","a ruin that the dwarves will not speak of","its runes worn smooth by centuries of wind","where the anvils lie broken in the dust","which fell when its people quarrelled over gold"],"trade":["a trade city on the great road under the mountains","where dwarves, humans and elves all come to bargain","whose market fills a cavern the size of a field","famous for its gem fair every spring","where every caravan pays a toll in silver","a trade city whose counting-houses never close","where the dwarves mint coins for half the world","with a gate wide enough for six waggons side by side","where the guilds are richer than the king","known for honest scales and hard bargains","its lower halls lined with merchants from distant lands","where the river barges unload beneath the mountain","whose bankers lend money to kings","a busy city where the inns stay open all night","where the best ale under the mountains is brewed","famous for its market of clockwork toys","on the only safe road through the mountains","where any deal is sealed with a handshake and a hammer blow","whose vaults hold the wealth of a dozen clans","its streets ringing with the sound of haggling","where outsiders may trade but never stay the night","built where the old mining roads meet"]}}}</script>
     <script src="../lib/recipe-engine.js?v=d13ac625"></script>
-    <script src="../lib/page.js?v=a8d98e76"></script>
+    <script src="../lib/page.js?v=ac3a7981"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

@@ -18,6 +18,7 @@ const { loadContent, validate, withCounts, countNames, countCombinations } = req
 const { filtersHtml, optionLabel } = require('../lib/page.js');
 const RecipeEngine = require('../lib/recipe-engine.js');
 const layout = require('./layout');
+const Illustrations = require('../lib/illustrations.js');
 
 const ROOT = path.join(__dirname, '..');
 const POSTS_DIR = path.join(ROOT, 'posts');
@@ -697,6 +698,73 @@ ${categoryGeneratorsHTML}
 }
 
 /**
+ * The optional parts of a hub page (see docs/redesign/HUBS.md):
+ *   eyebrow:  "World building elements"            small caps line above the H1
+ *   art:      "images/brand/hub-places"             header art; expects -800.webp and -1600.webp
+ *   artSize:  [1686, 809]                           its width and height (defaults to the castle art's)
+ *   approach: { heading, text }                     "How to approach place names" prose (HTML allowed)
+ *   tips:     { heading?, items: [..] }             the Quick tips box, 3 to 6 short lines
+ *   examples: { heading?, intro?, items: [{ name, type, verdict, breakdown, motif? }] }  up to 4 cards
+ * Returns HTML strings, empty where the category has nothing.
+ */
+function hubParts(category, motifs) {
+  const out = { eyebrow: '', art: '', guide: '' };
+  if (category.eyebrow) out.eyebrow = `<p class="eyebrow">${escapeHtml(category.eyebrow)}</p>`;
+  if (category.art) {
+    const [w, h] = category.artSize || [1686, 809];
+    out.art = `<img class="hub-art" src="../${category.art}-800.webp" srcset="../${category.art}-800.webp 800w, ../${category.art}-1600.webp 1600w" sizes="(min-width: 1024px) 520px, 100vw" width="${w}" height="${h}" alt="" fetchpriority="high" decoding="async">`;
+  }
+  const parts = [];
+  const approach = category.approach && category.approach.text ? `
+                <div class="hub-approach">
+                    <h2 class="uh2">${escapeHtml(category.approach.heading || 'How to approach these names')}</h2>
+                    <div class="hub-prose">${category.approach.text}</div>
+                </div>` : '';
+  const tipItems = (category.tips && category.tips.items) || [];
+  if (tipItems.length) motifs.push('lost-map');
+  const tips = tipItems.length ? `
+                <aside class="tips hd" aria-labelledby="tips-title">
+                    ${layout.doodle('lost-map', 'doodle tips-d')}
+                    <div>
+                        <h2 id="tips-title">${escapeHtml(category.tips.heading || 'Quick tips')}</h2>
+                        <ul class="ticks">
+                            ${tipItems.map(t => `<li>${escapeHtml(t)}</li>`).join('\n                            ')}
+                        </ul>
+                    </div>
+                </aside>` : '';
+  if (approach || tips) parts.push(`
+            <section class="section hub-guide${approach && tips ? ' two' : ''}">${approach}${tips}
+            </section>`);
+  const ex = category.examples && category.examples.items ? category.examples.items.slice(0, 4) : [];
+  if (ex.length) {
+    const fallback = layout.categoryMotif(category);
+    const cards = ex.map(e => {
+      const m = e.motif && Illustrations.has(e.motif) ? e.motif : fallback;
+      motifs.push(m);
+      return `<article class="excard hd">
+                        ${layout.doodle(m, 'doodle ex-d')}
+                        <div class="ex-t">
+                            <h3>${escapeHtml(e.name)}</h3>
+                            ${e.type ? `<p class="ex-type">${escapeHtml(e.type)}</p>` : ''}
+                            ${e.verdict ? `<p class="ex-verdict">${escapeHtml(e.verdict)}</p>` : ''}
+                            ${e.breakdown ? `<p class="ex-why">${escapeHtml(e.breakdown)}</p>` : ''}
+                        </div>
+                    </article>`;
+    }).join('\n                    ');
+    parts.push(`
+            <section class="section hub-examples">
+                <h2 class="uh2">${escapeHtml(category.examples.heading || 'Examples')}</h2>
+                ${category.examples.intro ? `<p class="sec-sub">${escapeHtml(category.examples.intro)}</p>` : ''}
+                <div class="exlist">
+                    ${cards}
+                </div>
+            </section>`);
+  }
+  out.guide = parts.join('\n');
+  return out;
+}
+
+/**
  * Generate category landing page
  */
 function generateCategoryPage(category, site) {
@@ -711,8 +779,12 @@ function generateCategoryPage(category, site) {
     const gen = generators.find(g => g.key === f.key);
     const m = layout.generatorMotif(gen, catOf(gen));
     motifs.push(m);
-    return `<a href="../posts/${gen.slug}.html" class="feat hd tap">${layout.doodle(m)}<b>${escapeHtml(gen.title)}</b><span>${f.note.charAt(0).toUpperCase() + f.note.slice(1)}</span><span class="open hd" aria-hidden="true">Open →</span></a>`;
+    return `<a href="../posts/${gen.slug}.html" class="trycard hd tap">${layout.doodle(m, 'doodle try-d')}<span class="try-t"><b>${escapeHtml(gen.title)}</b><span>${f.note.charAt(0).toUpperCase() + f.note.slice(1)}</span></span><em aria-hidden="true">→</em></a>`;
   }).join('\n                    ');
+
+  // Optional hub copy (mockup 2): eyebrow, header art, how-to prose, quick
+  // tips and worked examples. Each part only appears when the category has it.
+  const hub = hubParts(category, motifs);
 
   // Related categories: the other hubs that share the most generators with this one
   const mine = new Set(category.generators);
@@ -816,19 +888,27 @@ ${scriptJson({
     <div class="wrap layout">
         <main id="main">
             <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <span aria-current="page">${escCatName}</span></nav>
-            <div class="titlerow">
-                <h1>${layout.highlightFirstWord(category.navLabel.replace(/Names$/, 'Name Generators'))}</h1>
-                ${layout.doodle(mark)}
+            <div class="hub-head${hub.art ? ' has-art' : ''}">
+                <div class="hub-head-t">
+                    ${hub.eyebrow}
+                    <div class="titlerow">
+                        <h1>${layout.highlightFirstWord(category.navLabel.replace(/Names$/, 'Name Generators'))}</h1>
+                        ${hub.art ? '' : layout.doodle(mark)}
+                    </div>
+                    <p class="lede">${escCatDescription}</p>
+                </div>
+                ${hub.art}
             </div>
-            <p class="lede">${escCatDescription}</p>
 ${category.intro ? `
             <div class="section intro">
                 ${category.intro}
             </div>` : ''}
+${hub.guide}
 ${featured ? `
-            <section class="section">
-                <h2>Where to start</h2>
-                <div class="featured">
+            <section class="section try-section">
+                <h2 class="uh2">${escapeHtml(category.startHeading || 'Where to start')}</h2>
+                ${category.startIntro ? `<p class="sec-sub">${escapeHtml(category.startIntro)}</p>` : ''}
+                <div class="trylist">
                     ${featured}
                 </div>
             </section>
@@ -1516,6 +1596,7 @@ function makeSite({ categories, generators, homepage, sisterLinks = { boxes: [] 
   return {
     categories,
     all,
+    homepage,
     categoriesOf,
     // content/sister-links.json: live boxes that list this generator
     sisterBoxes: (key) => (sisterLinks.boxes || []).filter(b => b.live && (b.generators || []).includes(key)),
@@ -1565,36 +1646,91 @@ function fillMarkers(file, sections) {
   console.log(`  ✅ Updated: ${file}`);
 }
 
+/**
+ * The homepage body (mockup 1): hero with the castle art and a search box,
+ * popular searches, the eight category tiles, popular generators, a
+ * "Surprise me" button and the newest generators.
+ */
+function homeHtml(site) {
+  const plural = (n) => `${n} generator${n === 1 ? '' : 's'}`;
+  const chips = (site.homepage.featuredSearches || []).map(c =>
+    `<a class="chip hd tap" href="all-generators.html?q=${encodeURIComponent(c.q)}">${escapeHtml(c.label)}</a>`).join('\n                    ');
+  const tiles = site.homeGroups().map(g =>
+    `<a class="tile hd tap" href="${g.link}"><img src="${g.icon}" alt="" width="64" height="64" loading="lazy" decoding="async"><span class="tile-t"><b>${escapeHtml(g.name)}</b><span>${plural(g.count)} →</span></span></a>`).join('\n                    ');
+  const popular = site.popularTiles().map(t =>
+    `<a class="pop hd tap" href="posts/${t.gen.slug}.html"><img src="${t.icon}" alt="" width="96" height="96" loading="lazy" decoding="async"><b>${escapeHtml(t.title)}</b><em aria-hidden="true">→</em></a>`).join('\n                    ');
+  const recent = site.recentlyAdded(6).map(g =>
+    `<li><a href="posts/${g.slug}.html"><svg aria-hidden="true" focusable="false"><use href="#i-doc"/></svg><span>${escapeHtml(g.title)}</span><em aria-hidden="true">→</em></a></li>`).join('\n                        ');
+  const slugs = site.all.map(g => g.slug);
+  const rays = `<svg class="rays" viewBox="0 0 96 96" aria-hidden="true" focusable="false"><path d="M48 6 v10 M48 80 v10 M6 48 h10 M80 48 h10 M18 18 l7 7 M71 71 l7 7 M78 18 l-7 7 M25 71 l-7 7" stroke="#efc84a" stroke-width="4" stroke-linecap="round"/></svg>`;
+  return `
+            <section class="hero" aria-labelledby="hero-title">
+                <div class="hero-text">
+                    <h1 id="hero-title">Find the perfect name for your <span class="hl">next idea.</span></h1>
+                    <p class="hero-sub">Characters, fantasy worlds, gaming, music, businesses and more. Free name generators to get your creativity moving.</p>
+                </div>
+                <img class="hero-art" src="images/brand/header-castle-800.webp" srcset="images/brand/header-castle-800.webp 800w, images/brand/header-castle-1600.webp 1600w" sizes="(min-width: 1024px) 560px, 100vw" width="1686" height="809" alt="" fetchpriority="high" decoding="async">
+                ${layout.searchForm('', { id: 'hero-q', cls: 'hero-search hd', placeholder: 'What do you need a name for?', button: '<button class="go hi hd tap" type="submit">Find a generator →</button>' })}
+                <div class="chips"><span class="pen">Popular searches:</span>
+                    ${chips}
+                </div>
+            </section>
+
+            <section class="section home-cats" aria-labelledby="cats-title">
+                <div class="sec-head"><h2 id="cats-title" class="uh2">Browse by category</h2><a class="sec-link" href="sitemap.html#categories">View all categories →</a></div>
+                <p class="sec-sub">Explore our name generators by category, from fantasy and gaming to business and everyday tools.</p>
+                <div class="tiles">
+                    ${tiles}
+                </div>
+            </section>
+
+            <section class="section home-pop" aria-labelledby="pop-title">
+                <div class="sec-head"><h2 id="pop-title" class="uh2">Popular right now</h2><a class="sec-link" href="all-generators.html">View all generators →</a></div>
+                <p class="sec-sub">Our most used name generators, updated regularly.</p>
+                <div class="pops">
+                    ${popular}
+                </div>
+            </section>
+
+            <div class="duo">
+                <section class="box hd" aria-labelledby="surprise-title">
+                    <h2 id="surprise-title" class="uh2">Explore something unexpected</h2>
+                    <p>Not sure what you need? Let us pick a random name generator for you and discover something new.</p>
+                    <div class="surprise-row">
+                        <span class="dice">${rays}${layout.doodle('d20', 'dice-d')}</span>
+                        <a class="go hi hd tap" id="surprise" href="posts/${slugs[0]}.html">Surprise me →</a>
+                    </div>
+                    <script type="application/json" id="surprise-list">${scriptJson(slugs)}</script>
+                    <script>
+                        (function () {
+                            var list = JSON.parse(document.getElementById('surprise-list').textContent);
+                            document.getElementById('surprise').addEventListener('click', function (e) {
+                                e.preventDefault();
+                                location.href = 'posts/' + list[Math.floor(Math.random() * list.length)] + '.html';
+                            });
+                        })();
+                    </script>
+                </section>
+                <section class="box hd" aria-labelledby="recent-title">
+                    <div class="sec-head"><h2 id="recent-title" class="uh2">Recently added</h2><a class="sec-link" href="all-generators.html">View all generators →</a></div>
+                    <p>Check out our latest name generators.</p>
+                    <ul class="recent">
+                        ${recent}
+                    </ul>
+                </section>
+            </div>
+`;
+}
+
 function updateStaticPages(site) {
   const catOf = (gen) => site.categories.find(c => c.slug === gen.category);
   const header = layout.siteHeader('', site.categories);
   const footer = layout.siteFooter('');
 
-  const homeCats = site.categories.filter(cat => cat.generators.length);
-  const categoryCards = homeCats.map(cat => `            <a href="categories/${cat.slug}-names.html" class="cat hd tap">${layout.doodle(layout.categoryMotif(cat))}<div><b>${escapeHtml(cat.name)}</b><span>${cat.generators.length} generator${cat.generators.length !== 1 ? 's' : ''}</span></div><em aria-hidden="true">→</em></a>`).join('\n');
-
-  const popular = site.popular().slice(0, 20);
-  const popularCards = popular.map(gen => `            <a href="posts/${gen.slug}.html" class="feat hd tap">${layout.doodle(layout.generatorMotif(gen, catOf(gen)))}<b>${escapeHtml(gen.title)}</b><span>${escapeHtml(gen.description)}</span><span class="open hd" aria-hidden="true">Open →</span></a>`).join('\n');
-
-  // The homepage generator: one button per category, then a dropdown of its generators
-  const categoryOptions = homeCats.map((cat, i) =>
-    `                                <button type="button" class="opt hd tap" data-category="${cat.slug}" aria-pressed="${i === 0}">${escapeHtml(cat.name)}</button>`
-  ).join('\n');
-
-  // What the homepage generator needs to fill its "Generator" dropdown
-  const homeIndex = Object.fromEntries(site.categories.map(cat => [cat.slug,
-    cat.generators.map(k => { const g = site.all.find(x => x.key === k); return { key: k, title: g.title, slug: g.slug }; })]));
-
-  const homeMotifs = [...homeCats.map(c => layout.categoryMotif(c)), ...popular.map(g => layout.generatorMotif(g, catOf(g))), 'quill'];
-
   fillMarkers('index.html', {
-    sprite: layout.svgSprite(homeMotifs),
-    'home-break': layout.sectionBreak('quill'),
+    sprite: layout.svgSprite(['d20']),
     header,
-    'category-options': categoryOptions,
-    'generator-index': `    <script type="application/json" id="generator-index">${scriptJson(homeIndex)}</script>`,
-    categories: categoryCards,
-    popular: popularCards,
+    home: homeHtml(site),
     footer,
   });
 
@@ -1844,7 +1980,7 @@ function generateHtmlSitemap(site) {
                 </ul>
             </section>
 
-            <section class="section">
+            <section class="section" id="categories">
                 <h2>Category pages</h2>
                 <ul class="sitemap-links">
                     ${site.categories.map(c => link(`${baseUrl}/categories/${c.slug}-names.html`, c.name)).join('\n                    ')}

@@ -285,7 +285,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=ac296999">
+    <link rel="stylesheet" href="../styles/site.css?v=1ca2262b">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -294,6 +294,8 @@
       <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
       <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
       <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
       <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
       <symbol id="m-gear" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 9 v5 M21 40 v5 M3 27 h5 M34 27 h5 M8.3 14.3 l3.5 3.5 M30.2 36.2 l3.5 3.5 M33.7 14.3 l-3.5 3.5 M8.3 39.7 l3.5 -3.5" stroke-width="4.5"/><circle cx="21" cy="27" r="13" fill="#fffcf4"/><circle cx="21" cy="27" r="5" fill="#efc84a"/><circle cx="21" cy="27" r="1.6" fill="#fffcf4"/><path d="M38 2.5 v3 M38 14.5 v3 M30.5 10 h3 M42.5 10 h3" stroke-width="3"/><circle cx="38" cy="10" r="4.6" fill="#fffcf4"/><circle cx="38" cy="10" r="1.2" fill="#1e1c18"/></g></symbol>
       <symbol id="m-alien" viewBox="0 0 48 48"><g fill="none" stroke="#1e1c18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 7 L14.5 2.5 M30 7 L33.5 2.5" stroke-width="1.4"/><circle cx="14" cy="2.6" r="1.8" fill="#efc84a"/><circle cx="34" cy="2.6" r="1.8" fill="#efc84a"/><path d="M24 5 C36 5 40 14 38 24 C36 34 30 43 24 43 C18 43 12 34 10 24 C8 14 12 5 24 5 Z" fill="#fffcf4"/><path d="M14 22 C18 20 22 24 21 28 C17 29 13 26 14 22 Z" fill="#1e1c18"/><path d="M34 22 C30 20 26 24 27 28 C31 29 35 26 34 22 Z" fill="#1e1c18"/><circle cx="17" cy="24" r="1" fill="#fffcf4" stroke="none"/><circle cx="31" cy="24" r="1" fill="#fffcf4" stroke="none"/><path d="M22 35 h4" stroke-width="1.2"/></g></symbol>
@@ -309,77 +311,90 @@
         <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 18 14" aria-hidden="true" focusable="false"><path d="M1 2 C6 3 12 1 17 2 M1 7 C6 8 12 6 17 7 M1 12 C6 13 12 11 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
         <nav class="site-nav" aria-label="Main">
           <ul class="nav-links" id="nav-links">
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-fantasy"><span class="nav-label">Fantasy</span></button>
-              <ul class="nav-dropdown-menu" id="menu-fantasy">
-                <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
-                <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
-                <li><a href="../posts/dragon-name-generator.html">Dragon names</a></li>
-                <li><a href="../posts/tiefling-name-generator.html">Tiefling names</a></li>
-                <li><a href="../posts/npc-name-generator.html">NPC names</a></li>
-                <li><a href="../posts/wizard-name-generator.html">Wizard names</a></li>
-                <li><a href="../posts/vampire-name-generator.html">Vampire names</a></li>
-                <li><a href="../posts/tavern-name-generator.html">Tavern names</a></li>
-                <li><a href="../posts/fantasy-town-name-generator.html">Town &amp; village names</a></li>
-                <li><a href="../posts/epithet-generator.html">Epithets &amp; titles</a></li>
-                <li class="nav-more">More: <a href="../categories/fantasy-names.html">Fantasy</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/mythical-names.html">Mythical creatures</a> · <a href="../categories/mythology-names.html">Mythology</a> · <a href="../categories/wuxia-names.html">Wuxia</a> · <a href="../categories/worldbuilding-names.html">World-building</a></li>
-                <li class="nav-more">Seasonal: <a href="../categories/christmas-names.html">Christmas</a> · <a href="../categories/halloween-names.html">Halloween</a></li>
-              </ul>
+            <li class="nav-top"><a href="../index.html">Home</a></li>
+            <li class="nav-top"><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-dropdown nav-mega">
+              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-categories"><span class="nav-label">Categories</span></button>
+              <div class="nav-dropdown-menu nav-mega-panel" id="menu-categories">
+                <div class="nav-col">
+                  <p class="nav-col-h">Fantasy</p>
+                  <ul>
+                    <li><a href="../posts/elf-name-generator.html">Elf names</a></li>
+                    <li><a href="../posts/dwarf-name-generator.html">Dwarf names</a></li>
+                    <li><a href="../posts/dragon-name-generator.html">Dragon names</a></li>
+                    <li><a href="../posts/tiefling-name-generator.html">Tiefling names</a></li>
+                    <li><a href="../posts/npc-name-generator.html">NPC names</a></li>
+                    <li><a href="../posts/wizard-name-generator.html">Wizard names</a></li>
+                    <li><a href="../posts/vampire-name-generator.html">Vampire names</a></li>
+                    <li><a href="../posts/tavern-name-generator.html">Tavern names</a></li>
+                    <li><a href="../posts/fantasy-town-name-generator.html">Town &amp; village names</a></li>
+                    <li><a href="../posts/epithet-generator.html">Epithets &amp; titles</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/fantasy-names.html">Fantasy</a> · <a href="../categories/dnd-names.html">D&amp;D</a> · <a href="../categories/mythical-names.html">Mythical creatures</a> · <a href="../categories/mythology-names.html">Mythology</a> · <a href="../categories/wuxia-names.html">Wuxia</a> · <a href="../categories/worldbuilding-names.html">World-building</a></p>
+                  <p class="nav-more">Seasonal: <a href="../categories/christmas-names.html">Christmas</a> · <a href="../categories/halloween-names.html">Halloween</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Games &amp; TV</p>
+                  <ul>
+                    <li><a href="../posts/minecraft-username-generator.html">Minecraft usernames</a></li>
+                    <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
+                    <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
+                    <li><a href="../posts/baldurs-gate-3-name-generator.html">Baldur&#039;s Gate 3</a></li>
+                    <li><a href="../posts/skyrim-orc-name-generator.html">Skyrim orc</a></li>
+                    <li><a href="../posts/khajiit-name-generator.html">Khajiit</a></li>
+                    <li><a href="../posts/elden-ring-name-generator.html">Elden Ring</a></li>
+                    <li><a href="../posts/warhammer-name-generator.html">Warhammer 40k</a></li>
+                    <li><a href="../posts/star-wars-name-generator.html">Star Wars</a></li>
+                    <li><a href="../posts/game-of-thrones-name-generator.html">Game of Thrones</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/minecraft-names.html">Minecraft</a> · <a href="../categories/scifi-names.html">Sci-fi</a> · <a href="../categories/pop_culture-names.html">Pop culture</a> · <a href="../categories/elder_scrolls-names.html">Elder Scrolls</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Music &amp; online</p>
+                  <ul>
+                    <li><a href="../posts/band-name-generator.html">Band names</a></li>
+                    <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
+                    <li><a href="../posts/dj-name-generator.html">DJ names</a></li>
+                    <li><a href="../posts/album-name-generator.html">Album names</a></li>
+                    <li><a href="../posts/stage-name-generator.html">Stage names</a></li>
+                    <li><a href="../posts/podcast-name-generator.html">Podcast names</a></li>
+                    <li><a href="../posts/youtube-channel-name-generator.html">YouTube channel names</a></li>
+                    <li><a href="../posts/gamertag-generator.html">Gamertags</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/music-names.html">Music</a> · <a href="../categories/music_genres-names.html">Music by genre</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Business</p>
+                  <ul>
+                    <li><a href="../posts/business-name-generator.html">Business names</a></li>
+                    <li><a href="../posts/company-name-generator.html">Company names</a></li>
+                    <li><a href="../posts/brand-name-generator.html">Brand names</a></li>
+                    <li><a href="../posts/cafe-name-generator.html">Café names</a></li>
+                    <li><a href="../posts/event-name-generator.html">Event &amp; party names</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../categories/organizations-names.html">Organisations</a> · <a href="../categories/events-names.html">Events</a></p>
+                </div>
+                <div class="nav-col">
+                  <p class="nav-col-h">Name tools</p>
+                  <ul>
+                    <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
+                    <li><a href="../random-name-picker.html">Random name picker</a></li>
+                    <li><a href="../raffle-picker.html">Raffle / pick a winner</a></li>
+                    <li><a href="../secret-santa-generator.html">Secret Santa</a></li>
+                    <li><a href="../team-generator.html">Team generator</a></li>
+                    <li><a href="../posts/name-combiner.html">Name combiner</a></li>
+                  </ul>
+                  <p class="nav-more">More: <a href="../name-tools.html">Name tools</a></p>
+                </div>
+                <p class="nav-all"><a href="../all-generators.html">All generators →</a><a href="../sitemap.html#categories">Every category →</a></p>
+              </div>
             </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-games"><span class="nav-label">Games &amp; TV</span></button>
-              <ul class="nav-dropdown-menu" id="menu-games">
-                <li><a href="../posts/minecraft-username-generator.html">Minecraft usernames</a></li>
-                <li><a href="../posts/hogwarts-legacy-witch-name-generator.html">Hogwarts Legacy witch</a></li>
-                <li><a href="../posts/hogwarts-legacy-wizard-name-generator.html">Hogwarts Legacy wizard</a></li>
-                <li><a href="../posts/baldurs-gate-3-name-generator.html">Baldur&#039;s Gate 3</a></li>
-                <li><a href="../posts/skyrim-orc-name-generator.html">Skyrim orc</a></li>
-                <li><a href="../posts/khajiit-name-generator.html">Khajiit</a></li>
-                <li><a href="../posts/elden-ring-name-generator.html">Elden Ring</a></li>
-                <li><a href="../posts/warhammer-name-generator.html">Warhammer 40k</a></li>
-                <li><a href="../posts/star-wars-name-generator.html">Star Wars</a></li>
-                <li><a href="../posts/game-of-thrones-name-generator.html">Game of Thrones</a></li>
-                <li class="nav-more">More: <a href="../categories/minecraft-names.html">Minecraft</a> · <a href="../categories/scifi-names.html">Sci-fi</a> · <a href="../categories/pop_culture-names.html">Pop culture</a> · <a href="../categories/elder_scrolls-names.html">Elder Scrolls</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-music"><span class="nav-label">Music &amp; online</span></button>
-              <ul class="nav-dropdown-menu" id="menu-music">
-                <li><a href="../posts/band-name-generator.html">Band names</a></li>
-                <li><a href="../posts/rapper-name-generator.html">Rapper names</a></li>
-                <li><a href="../posts/dj-name-generator.html">DJ names</a></li>
-                <li><a href="../posts/album-name-generator.html">Album names</a></li>
-                <li><a href="../posts/stage-name-generator.html">Stage names</a></li>
-                <li><a href="../posts/podcast-name-generator.html">Podcast names</a></li>
-                <li><a href="../posts/youtube-channel-name-generator.html">YouTube channel names</a></li>
-                <li><a href="../posts/gamertag-generator.html">Gamertags</a></li>
-                <li class="nav-more">More: <a href="../categories/music-names.html">Music</a> · <a href="../categories/music_genres-names.html">Music by genre</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-business"><span class="nav-label">Business</span></button>
-              <ul class="nav-dropdown-menu" id="menu-business">
-                <li><a href="../posts/business-name-generator.html">Business names</a></li>
-                <li><a href="../posts/company-name-generator.html">Company names</a></li>
-                <li><a href="../posts/brand-name-generator.html">Brand names</a></li>
-                <li><a href="../posts/cafe-name-generator.html">Café names</a></li>
-                <li><a href="../posts/event-name-generator.html">Event &amp; party names</a></li>
-                <li class="nav-more">More: <a href="../categories/organizations-names.html">Organisations</a> · <a href="../categories/events-names.html">Events</a></li>
-              </ul>
-            </li>
-            <li class="nav-dropdown">
-              <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-tools"><span class="nav-label">Name tools</span></button>
-              <ul class="nav-dropdown-menu" id="menu-tools">
-                <li><a href="../spin-the-wheel.html">Spin the Wheel</a></li>
-                <li><a href="../random-name-picker.html">Random name picker</a></li>
-                <li><a href="../raffle-picker.html">Raffle / pick a winner</a></li>
-                <li><a href="../secret-santa-generator.html">Secret Santa</a></li>
-                <li><a href="../team-generator.html">Team generator</a></li>
-                <li><a href="../posts/name-combiner.html">Name combiner</a></li>
-                <li class="nav-more">More: <a href="../name-tools.html">Name tools</a></li>
-              </ul>
-            </li>
-            <li><a href="../all-generators.html">All generators</a></li>
+            <li class="nav-top"><a href="../about.html">About</a></li>
+            <li class="nav-find"><form class="nav-search" action="../all-generators.html" method="get" role="search">
+          <label class="visually-hidden" for="nav-q">Search generators</label>
+          <input id="nav-q" type="search" name="q" placeholder="Search generators…" autocomplete="off" enterkeyhint="search">
+          <button type="submit" aria-label="Search"><svg aria-hidden="true" focusable="false"><use href="#i-search"/></svg></button>
+        </form></li>
           </ul>
         </nav>
       </div>
@@ -585,7 +600,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Mecha Name Generator","slug":"mecha-name-generator","seoTitle":"Mecha Name Generator: Giant Robot & Mech Names","filters":{"style":{"label":"Kind of mecha","options":["any","real","super"],"optionLabels":{"any":"Any (a mix)","real":"Real robot, a military machine (KR-07 Harrier)","super":"Super robot, a hero machine (Great Thundaros)"}},"format":{"label":"Name format","options":["name","full","class"],"optionLabels":{"name":"Name only","full":"With a model number or prefix","class":"With its class or title"}}},"recipe":"switch","on":"format","cases":{"name":{"recipe":"switch","on":"style","cases":{"real":{"recipe":"template","template":"[real]"},"super":{"recipe":"template","template":"[super]"},"any":{"recipe":"template","template":["[real]","[super]"]}}},"full":{"recipe":"switch","on":"style","cases":{"real":{"recipe":"template","template":"[code]-[num] [real]"},"super":{"recipe":"template","template":"[superpre] [super]"},"any":{"recipe":"template","template":["[code]-[num] [real]","[superpre] [super]"]}}},"class":{"recipe":"switch","on":"style","cases":{"real":{"recipe":"template","template":["[real], [realclass]","[code]-[num] [real], [realclass]"]},"super":{"recipe":"template","template":["[super], [superclass]","[superpre] [super], [superclass]"]},"any":{"recipe":"template","template":["[real], [realclass]","[code]-[num] [real], [realclass]","[super], [superclass]","[superpre] [super], [superclass]"]}}}},"data":{"real":["Harrier","Kestrel","Longbow","Halberd","Sabre","Gauntlet","Bastion","Warden","Vanguard","Cataphract","Hoplite","Corsair","Tempest","Squall","Monsoon","Shrike","Merlin","Goshawk","Peregrine","Osprey","Heron","Glaive","Partisan","Pike","Falchion","Claymore","Ajax","Hector","Diomedes","Tancred","Rampart","Paladin","Templar","Hussar","Cuirassier","Dragoon","Lancer","Grenadier","Fusilier","Sapper","Pathfinder","Outrider","Sentry","Picket","Bulwark","Breaker","Hammerfall","Anvil","Ironclad","Bulldog","Mastiff","Wolfhound","Lurcher","Badger","Bison","Rhino","Mammoth","Gorgon","Basilisk","Chimera","Mantis","Hornet","Scorpion","Tarantula","Raptor","Condor","Harpy","Gryphon","Thunderhead","Stormcrow","Cinderhawk","Ashwalker","Stonebreaker","Ridgeback","Deadfall","Tripwire","Longshot","Blackthorn","Hawthorn","Nightjar","Wyvern","Drake","Salamander","Huntsman","Reaver","Revenant","Requiem","Verdict","Arbalest","Mangonel","Trebuchet","Onager","Ballista","Bombard","Culverin","Mortar","Petard","Carronade","Kukri","Tulwar","Shamshir","Zweihänder","Flamberge","Estoc","Rapier","Spatha","Gladius","Pilum","Sarissa","Triarius","Legate","Tribune","Praetor","Prefect","Jarl","Thane","Housecarl","Berserker","Ulfhednar","Einherjar","Draugr","Fenrir","Sleipnir","Tyr","Vidar","Mattock","Bardiche","Voulge","Guisarme","Spontoon","Poleaxe","Falcata","Khopesh","Stiletto","Misericorde","Francisca","Kopis","Buzzard","Lanner","Saker","Gyrfalcon","Caracara","Skua","Gannet","Jackal","Hyena","Warthog","Aurochs","Caracal","Skirmisher","Vedette","Hobelar","Uhlan","Voltigeur","Carabinier","Halberdier","Yeoman","Sharpshooter","Peltast","Velite","Hastatus","Ashigaru","Sirocco","Harmattan","Derecho","Hailstorm","Whiteout","Barbican","Portcullis","Redoubt","Ravelin","Glacis","Carbine","Blunderbuss","Falconet","Howitzer"],"code":["VX","KR","TX","MK","GR","AX","ZR","HV","SR","DX","LT","FX","KX","NV","TR","BR","OX","CV","HX","PX"],"num":["01","02","03","04","05","06","07","08","09","10","11","12","13","14","17","19","21","22","27","33","40","42","47","51","66","73","88","90","99","100","117","220","404","707","900"],"realclass":["Light Scout Frame","Heavy Assault Frame","Siege Frame","Interceptor","Artillery Walker","Command Unit","Recon Frame","Close-Combat Frame","Support Walker","Orbital Drop Frame","Urban Pacification Unit","Long-Range Sniper Frame","Amphibious Assault Frame","Electronic Warfare Unit","Breacher Frame","Heavy Lifter","Escort Frame","Prototype Duel Frame"],"super":["Arkagon","Arkaiser","Arkakon","Arkanos","Arkarion","Arkaros","Arkaxion","Arkaxx","Arkazor","Arkeon","Arkex","Arkion","Arkios","Astragon","Astraiser","Astrakon","Astranos","Astrarion","Astraros","Astraxion","Astraxx","Astrazor","Astreon","Astrex","Astrion","Astrios","Balagon","Balaiser","Balakon","Balanos","Balarion","Balaros","Balaxion","Balaxx","Balazor","Balbolt","Baldion","Baldros","Baleon","Balex","Balgaiser","Balgar","Balion","Balios","Balkaiser","Balryu","Balvorn","Balzan","Blazagon","Blazaiser","Blazakon","Blazanos","Blazarion","Blazaros","Blazaxion","Blazaxx","Blazeon","Blazex","Blazion","Blazios","Braxagon","Braxaiser","Braxakon","Braxanos","Braxarion","Braxaros","Braxazor","Braxeon","Braxex","Braxion","Braxios","Buragon","Buraiser","Burakon","Buranos","Burarion","Buraros","Buraxion","Buraxx","Burazor","Burbolt","Burdion","Burdros","Bureon","Burex","Burgaiser","Burion","Burios","Burkaiser","Burryu","Burvorn","Burzan","Daibolt","Daidion","Daidros","Daigaiser","Daikaiser","Dairyu","Daivorn","Daizan","Doragon","Doraiser","Dorakon","Doranos","Dorarion","Doraros","Doraxion","Doraxx","Dorazor","Dorbolt","Dordion","Dordros","Doreon","Dorex","Dorgaiser","Dorgar","Dorion","Dorios","Dorryu","Dorvorn","Dorzan","Drakagon","Drakaiser","Drakanos","Drakarion","Drakaros","Drakaxion","Drakaxx","Drakazor","Drakeon","Drakex","Drakion","Drakios","Dynagon","Dynaiser","Dynakon","Dynanos","Dynarion","Dynaros","Dynaxion","Dynaxx","Dynazor","Dynbolt","Dyndion","Dyndros","Dyngaiser","Dyngar","Dynion","Dynios","Dynkaiser","Dynryu","Dynvorn","Dynzan","Ferragon","Ferraiser","Ferrakon","Ferranos","Ferrarion","Ferraros","Ferraxion","Ferraxx","Ferrazor","Ferreon","Ferrion","Ferrios","Galdagon","Galdaiser","Galdakon","Galdanos","Galdarion","Galdaros","Galdaxion","Galdaxx","Galdazor","Galdeon","Galdex","Galdion","Galdios","Garagon","Garaiser","Garakon","Garanos","Garaxion","Garaxx","Garazor","Garbolt","Gardion","Gardros","Gareon","Garex","Gargaiser","Garios","Garkaiser","Garmagon","Garmaiser","Garmakon","Garmanos","Garmarion","Garmaros","Garmaxion","Garmaxx","Garmazor","Garmeon","Garmex","Garmion","Garmios","Garryu","Garvorn","Garzan","Golagon","Golaiser","Golakon","Golanos","Golarion","Golaros","Golaxion","Golaxx","Golazor","Golbolt","Goldion","Goldros","Goleon","Golex","Golgaiser","Golgar","Golios","Golkaiser","Golryu","Golvorn","Golzan","Granagon","Granaiser","Granakon","Granarion","Granaros","Granaxion","Granaxx","Granazor","Granbolt","Grandion","Grandros","Graneon","Granex","Grangar","Granion","Granios","Granryu","Granvorn","Granzan","Gravagon","Gravaiser","Gravakon","Gravanos","Gravarion","Gravaros","Gravaxion","Gravaxx","Gravazor","Graveon","Gravex","Gravios","Grimagon","Grimaiser","Grimakon","Grimanos","Grimarion","Grimaros","Grimaxion","Grimaxx","Grimazor","Grimbolt","Grimdion","Grimdros","Grimeon","Grimex","Grimgar","Grimion","Grimios","Grimryu","Grimvorn","Grimzan","Ignagon","Ignaiser","Ignakon","Ignanos","Ignarion","Ignaros","Ignaxion","Ignaxx","Ignazor","Igneon","Ignex","Ignion","Ignios","Jinagon","Jinaiser","Jinakon","Jinanos","Jinarion","Jinaros","Jinaxion","Jinaxx","Jinazor","Jinbolt","Jindion","Jindros","Jineon","Jinex","Jingaiser","Jingar","Jinion","Jinios","Jinkaiser","Jinryu","Jinvorn","Jinzan","Kagaiser","Kagakon","Kaganos","Kagarion","Kagaros","Kagaxion","Kagaxx","Kagazor","Kageon","Kagex","Kagion","Kagios","Kaibolt","Kaidion","Kaidros","Kaigaiser","Kaigar","Kairyu","Kaivorn","Kaizan","Kronagon","Kronaiser","Kronakon","Kronanos","Kronarion","Kronaros","Kronaxion","Kronaxx","Kronazor","Kronbolt","Krondion","Krondros","Kroneon","Kronex","Krongar","Kronion","Kronios","Kronryu","Kronvorn","Kronzan","Levagon","Levaiser","Levakon","Levanos","Levarion","Levaros","Levaxion","Levaxx","Levazor","Leveon","Levex","Levion","Levios","Magaiser","Magakon","Maganos","Magarion","Magaros","Magaxion","Magaxx","Magazor","Mageon","Magion","Ragaiser","Ragakon","Raganos","Ragarion","Ragaros","Ragaxion","Ragaxx","Ragazor","Rageon","Ragex","Ragion","Ragios","Raidagon","Raidaiser","Raidakon","Raidanos","Raidarion","Raidaros","Raidaxion","Raidaxx","Raidazor","Raidex","Raidion","Raidios","Rexagon","Rexaiser","Rexakon","Rexanos","Rexarion","Rexaros","Rexaxion","Rexaxx","Rexazor","Rexeon","Rexion","Rexios","Ryubolt","Ryudion","Ryudros","Ryugaiser","Ryugar","Ryukaiser","Ryuvorn","Ryuzan","Solagon","Solaiser","Solakon","Solanos","Solarion","Solaxion","Solaxx","Solazor","Solbolt","Soldion","Soldros","Soleon","Solex","Solgaiser","Solgar","Solion","Solios","Solkaiser","Solryu","Solvorn","Solzan","Thundagon","Thundakon","Thundanos","Thundaros","Thundaxx","Thundazor","Thundeon","Thundex","Thundion","Thundios","Toragon","Toraiser","Torakon","Toranos","Torarion","Toraros","Toraxion","Toraxx","Torazor","Torbolt","Tordion","Tordros","Toreon","Torgaiser","Torgar","Torion","Torios","Torkaiser","Torryu","Torvorn","Torzan","Valdagon","Valdaiser","Valdakon","Valdanos","Valdarion","Valdaros","Valdaxion","Valdaxx","Valdazor","Valdeon","Valdex","Valdion","Valdios","Voltagon","Voltaiser","Voltakon","Voltanos","Voltarion","Voltaros","Voltaxion","Voltaxx","Voltazor","Volteon","Voltex","Voltion","Voltios","Vorgagon","Vorgaiser","Vorgakon","Vorganos","Vorgarion","Vorgaros","Vorgaxion","Vorgaxx","Vorgazor","Vorgeon","Vorgex","Vorgion","Vorgios","Zanagon","Zanaiser","Zanakon","Zanarion","Zanaros","Zanaxion","Zanaxx","Zanazor","Zanbolt","Zandion","Zandros","Zaneon","Zanex","Zangaiser","Zangar","Zanion","Zanios","Zankaiser","Zanryu","Zanvorn","Zephagon","Zephaiser","Zephakon","Zephanos","Zepharion","Zepharos","Zephaxion","Zephaxx","Zephazor","Zepheon","Zephex","Zephion","Zephios","Zoragon","Zoraiser","Zorakon","Zoranos","Zorarion","Zoraros","Zoraxion","Zoraxx","Zorazor","Zorbolt","Zordion","Zordros","Zoreon","Zorex","Zorgaiser","Zorgar","Zorion","Zorios","Zorkaiser","Zorryu","Zorvorn","Zorzan"],"superpre":["Great","Super","Shin","Ultimate","Grand","Dai","King","Mighty","Neo","Final","God","Hyper"],"superclass":["Guardian of the Earth","the Steel Titan","the Thunder God Robot","Defender of Tomorrow","the Iron Colossus","the Sky Fortress","the Last Hope","the Star Guardian","the Combining King","the Burning Warrior","the Giant of Justice","the Flame Emperor","the Steel Samurai","the Galaxy Breaker","the Storm Giant","the Lion of Steel"]}}</script>
     <script src="../lib/recipe-engine.js?v=d13ac625"></script>
-    <script src="../lib/page.js?v=a8d98e76"></script>
+    <script src="../lib/page.js?v=ac3a7981"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>
