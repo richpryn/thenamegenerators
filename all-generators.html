@@ -589,16 +589,23 @@
             const input = document.getElementById('search-input');
             const count = document.getElementById('search-count');
             const links = document.querySelectorAll('#generators-list [data-search]');
+            // Every word must match somewhere ("dragon names" finds the dragon pages);
+            // filler words people type into a search box are ignored.
+            const FILLER = new Set(['name', 'names', 'generator', 'generators', 'a', 'an', 'the', 'for', 'of', 'my', 'ideas']);
             input.addEventListener('input', () => {
                 const term = input.value.toLowerCase().trim();
+                const words = term.split(/\s+/).filter((w) => w && !FILLER.has(w));
                 let shown = 0;
                 links.forEach((link) => {
-                    const match = term === '' || link.dataset.search.includes(term);
+                    const match = !words.length || words.every((w) => link.dataset.search.includes(w.replace(/s$/, '')));
                     link.hidden = !match;
                     if (match) shown++;
                 });
                 count.textContent = term ? (shown ? `${shown} generator${shown === 1 ? '' : 's'}` : 'No generators match. Try a shorter word.') : '';
             });
+            // all-generators.html?q=dragon (the homepage search sends people here)
+            const q = new URLSearchParams(location.search).get('q');
+            if (q) { input.value = q; input.dispatchEvent(new Event('input')); }
         })();
     </script>
 </body>

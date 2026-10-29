@@ -1534,6 +1534,18 @@ function makeSite({ categories, generators, homepage, sisterLinks = { boxes: [] 
         .sort((a, b) => (a.popularRank || 999) - (b.popularRank || 999)));
     },
     navHtml: (prefix) => navDropdownHtml(categories, prefix),
+    // content/homepage.json "groups": the eight homepage tiles, each with its
+    // generators (every generator in its hubs, plus extras, counted once)
+    homeGroups: () => (homepage.groups || []).map(gr => {
+      const keys = new Set([...(gr.hubs || []).flatMap(slug => categories.find(c => c.slug === slug).generators), ...(gr.extra || [])]);
+      const gens = [...keys].map(k => generators[k]).filter(Boolean);
+      return { ...gr, generators: gens, count: gens.length + (gr.pages || []).length };
+    }),
+    // content/homepage.json "popularTiles": illustrated cards, title optional
+    popularTiles: () => (homepage.popularTiles || []).map(t => ({ ...t, gen: generators[t.key], title: t.title || generators[t.key].title })),
+    // Newest first, by published date (ties by title), for "Recently added"
+    recentlyAdded: (n = 6) => all.filter(g => g.published)
+      .sort((a, b) => b.published.localeCompare(a.published) || a.title.localeCompare(b.title)).slice(0, n),
   };
 }
 

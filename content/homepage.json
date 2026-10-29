@@ -8,5 +8,159 @@
     "event",
     "demon_epithet",
     "business"
+  ],
+  "_about": "popular: the old homepage list. groups: the eight homepage tiles; each counts every generator in its hubs plus its extra keys (no double counting). popularTiles: the six illustrated 'Popular right now' cards (art in images/brand). featuredSearches: the chips under the hero search.",
+  "groups": [
+    {
+      "id": "fantasy",
+      "name": "Fantasy",
+      "icon": "images/brand/category-fantasy.webp",
+      "hubs": [
+        "fantasy",
+        "dnd",
+        "mythical",
+        "mythology",
+        "folklore",
+        "witch",
+        "wuxia"
+      ],
+      "link": "categories/fantasy-names.html"
+    },
+    {
+      "id": "gaming",
+      "name": "Gaming",
+      "icon": "images/brand/category-gaming.webp",
+      "hubs": [
+        "minecraft",
+        "warcraft",
+        "elder_scrolls",
+        "warhammer",
+        "pop_culture"
+      ],
+      "extra": [
+        "gamertag",
+        "kids_gamertag"
+      ],
+      "link": "categories/pop_culture-names.html"
+    },
+    {
+      "id": "writing",
+      "name": "Writing",
+      "icon": "images/brand/category-writing.webp",
+      "hubs": [],
+      "extra": [
+        "story_prompt",
+        "local_legend",
+        "fairy_tale",
+        "epithet",
+        "villain",
+        "sidekick"
+      ],
+      "link": "posts/story-prompt-generator.html"
+    },
+    {
+      "id": "music",
+      "name": "Music",
+      "icon": "images/brand/category-music.webp",
+      "hubs": [
+        "music",
+        "music_genres"
+      ],
+      "link": "categories/music-names.html"
+    },
+    {
+      "id": "business",
+      "name": "Business",
+      "icon": "images/brand/category-business.webp",
+      "hubs": [
+        "concepts",
+        "organizations"
+      ],
+      "link": "categories/concepts-names.html"
+    },
+    {
+      "id": "places",
+      "name": "Places",
+      "icon": "images/brand/category-places.webp",
+      "hubs": [
+        "places",
+        "worldbuilding"
+      ],
+      "link": "categories/places-names.html"
+    },
+    {
+      "id": "people",
+      "name": "People",
+      "icon": "images/brand/category-people.webp",
+      "hubs": [
+        "people",
+        "historical"
+      ],
+      "link": "categories/people-names.html"
+    },
+    {
+      "id": "tools",
+      "name": "Everyday Tools",
+      "icon": "images/brand/category-everyday-tools.webp",
+      "hubs": [],
+      "pages": [
+        "spin-the-wheel.html",
+        "random-name-picker.html",
+        "raffle-picker.html",
+        "team-generator.html",
+        "secret-santa-generator.html"
+      ],
+      "link": "name-tools.html"
+    }
+  ],
+  "popularTiles": [
+    {
+      "key": "npc",
+      "title": "Fantasy Character Name Generator",
+      "icon": "images/brand/popular-fantasy-character.webp"
+    },
+    {
+      "key": "business",
+      "icon": "images/brand/popular-business.webp"
+    },
+    {
+      "key": "band",
+      "icon": "images/brand/popular-band.webp"
+    },
+    {
+      "key": "dnd_fantasy",
+      "icon": "images/brand/popular-dnd.webp"
+    },
+    {
+      "key": "gamertag",
+      "title": "Username Generator",
+      "icon": "images/brand/popular-username.webp"
+    },
+    {
+      "key": "dragon",
+      "icon": "images/brand/popular-dragon.webp"
+    }
+  ],
+  "featuredSearches": [
+    {
+      "label": "Character",
+      "q": "character"
+    },
+    {
+      "label": "Fantasy World",
+      "q": "world"
+    },
+    {
+      "label": "Gaming Username",
+      "q": "gamertag"
+    },
+    {
+      "label": "Band Name",
+      "q": "band"
+    },
+    {
+      "label": "Business Name",
+      "q": "business"
+    }
   ]
 }
