@@ -1280,8 +1280,34 @@
       "title": "🏕️ Colony Name Generator",
       "tagline": "Pioneer towns, company towns, garrisons, communes, dusty frontier camps and the children of the long voyage."
     },
-    "intro": "This **colony name generator** names sci-fi colonies and frontier settlements for RimWorld and other colony sims, stories and tabletop games: hopeful pioneer towns, corporate company towns, military garrisons, idealistic communes, rough frontier camps and settlements founded by the descendants of a generation ship. Add a short description to give your colony a history.",
-    "sections": [],
-    "faqs": []
+    "intro": "A good colony name tells you who founded it and what they hoped for: <em>New Seville</em> remembers home, <em>Claim Block 37B</em> belongs to a company, <em>Hard Luck Basin</em> was settled the hard way. This **colony name generator** names sci-fi colonies and frontier settlements for RimWorld and other colony sims, stories and tabletop games: hopeful pioneer towns, corporate company towns, military garrisons, idealistic communes, rough frontier camps and settlements founded by the descendants of a generation ship. Add a short description to give your colony a history.",
+    "sections": [
+      {
+        "heading": "Eight good colony names",
+        "content": "<p>All eight came from the generator, across its six styles:</p><ul><li><strong>New Seville, whose founders planted a tree for every child born on the voyage</strong>: a pioneer colony named after home, the oldest habit there is.</li><li><strong>Goodmorrow Hollow</strong>: a hopeful name for a settlement's first morning.</li><li><strong>Claim Block 11, whose residents voted to unionise, and the head office has gone very quiet</strong>: a company town with its politics in the name.</li><li><strong>Camp Redfern, where every family has a medal in a drawer</strong>: a military colony that remembers its war.</li><li><strong>Paco Assembly, a free town with no money, no locks and no police</strong>: a utopian commune with an Esperanto name: <em>paco</em> means peace.</li><li><strong>Bent Nail Coulee</strong>: a frontier camp named after something somebody found there.</li><li><strong>Spit and Wire Junction, where the doctor is a vet and nobody minds</strong>: the frontier at its scrappiest.</li><li><strong>Mess Hall Meadow, whose elders still feel dizzy under an open sky</strong>: a generation-ship colony named after the part of the ship people remember.</li></ul>"
+      },
+      {
+        "heading": "How colonies get their names",
+        "content": "<p>Real colonies were named in a few predictable ways, and science fiction has borrowed all of them:</p><ul><li><strong>After home,</strong> with New in front: New York, New Zealand, Nova Scotia (\"New Scotland\").</li><li><strong>After a patron:</strong> Virginia was named after Elizabeth I, the Virgin Queen, and Georgia after George II.</li><li><strong>After a hope or a virtue:</strong> settlers named towns Providence, Concord and Harmony.</li><li><strong>After the company:</strong> company towns took the name of whoever owned the mine or the mill.</li></ul><p>The generator follows the same habits, style by style:</p><ul><li><strong>Hopeful pioneers</strong> get New-names and sunny compounds: <em>Larksong Vale</em>, <em>Morrowacre</em>.</li><li><strong>Corporate</strong> colonies are lots, sectors and slogans: <em>Lot 18</em>, <em>Efficiency Village</em>.</li><li><strong>Military</strong> colonies are camps and musters, named after officers or kit: <em>Garrison Shako</em>, <em>Pargeter's Muster</em>.</li><li><strong>Utopian</strong> communes are named after an ideal: <em>Long Table Commune</em>, <em>Open Sky Mutual</em>. A few use Esperanto, the language L. L. Zamenhof published in 1887 to be shared by everyone: <em>Espero</em> (hope), <em>Amikeco</em> (friendship), <em>Libereco</em> (freedom).</li><li><strong>Frontier</strong> camps are named like gold-rush towns, after luck, junk and landmarks: <em>Dead Battery Butte</em>, <em>Purdy's Dugout</em>.</li><li><strong>Generation ship</strong> colonies are named after the ship that carried them for generations, or the part of it people remember: <em>Cryo Meadow</em>, <em>Airlock Wood</em>.</li></ul>"
+      },
+      {
+        "heading": "Naming your colony",
+        "content": "<ul><li><strong>Decide who founded it.</strong> A company, an army and a commune would never choose the same name.</li><li><strong>Let the name age.</strong> \"Claim Block 37B\" might be called \"Thirty-Seven\" by its third generation.</li><li><strong>For RimWorld and other colony sims,</strong> pick a style that matches your starting scenario, then let the description suggest your colonists' first story.</li></ul><p>Need the world it's on? Try the <a href=\"planet-name-generator.html\">Planet Name Generator</a>. For the station overhead, there's the <a href=\"space-station-name-generator.html\">Space Station Name Generator</a>; for a colony that grew into a city, the <a href=\"sci-fi-city-name-generator.html\">Sci-Fi City Name Generator</a>; and for one that didn't make it, the <a href=\"post-apocalyptic-town-name-generator.html\">Post-Apocalyptic Town Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/scifi-names.html\">sci-fi name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good names for a colony?",
+        "answer": "Names that tell you who founded it: New Seville for hopeful pioneers, Claim Block 37B for a company, Camp Redfern for the military, Open Sky Mutual for a commune, Hard Luck Basin for the frontier, or Cryo Meadow for a generation ship."
+      },
+      {
+        "question": "What's a good RimWorld colony name?",
+        "answer": "Match it to your start. A tribal or scrappy start suits a frontier name like Bent Nail Coulee; a well-funded start suits a hopeful one like Goodmorrow Hollow; a crashed ship suits a generation-ship name like Airlock Wood."
+      },
+      {
+        "question": "What do the Esperanto names mean?",
+        "answer": "Espero means hope, Amikeco friendship, Libereco freedom, Frateco brotherhood, Lumo light, Suno sun, Paco peace and Komunumo community."
+      }
+    ]
   }
 }

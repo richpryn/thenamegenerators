@@ -1252,8 +1252,34 @@
       "title": "🛰️ Space Station Name Generator",
       "tagline": "Fleet anchorages, deep-space labs, freeports, mining rigs, orbital resorts and stations best left alone."
     },
-    "intro": "This **space station name generator** names orbital stations of every kind: military forts and fleet anchorages, research observatories, busy trading freeports, rough mining outposts, glittering luxury resorts and derelict hulks drifting in the dark. Add a short description for an instant story hook in your sci-fi novel, tabletop RPG or game.",
-    "sections": [],
-    "faqs": []
+    "intro": "A good space station name tells you what the station is for before you dock: <em>Fort Castellano</em> is a military post, <em>Freeport Allspice</em> a trading hub, <em>Manganese Bore</em> a mine. This **space station name generator** names orbital stations of every kind: military forts and fleet anchorages, research observatories, busy trading freeports, rough mining outposts, glittering luxury resorts and derelict hulks drifting in the dark. Add a short description for an instant story hook in your sci-fi novel, tabletop RPG or game.",
+    "sections": [
+      {
+        "heading": "Eight good space station names",
+        "content": "<p>All eight came from the generator, across its six styles:</p><ul><li><strong>Fort Ivers, whose crew still runs drills for a war that ended decades ago</strong>: a military station with a story in one line.</li><li><strong>Picket Echo-Seven</strong>: a small outpost named with the phonetic alphabet, the way military callsigns are.</li><li><strong>Hollis Survey Station, where three Nobel winners share one tiny kitchen</strong>: a research station with a human touch.</li><li><strong>Listening Post Fulcrum</strong>: a quiet name for a station that watches and waits.</li><li><strong>Waystation Mercator, where smugglers and inspectors drink in the same bar</strong>: a trading hub named after the mapmaker, with trouble built in.</li><li><strong>Mica Vein, a remote dig with a population of forty and a very good darts team</strong>: a mining outpost named after what it digs.</li><li><strong>Château Orrery</strong>: a luxury resort that sounds expensive before you see the prices.</li><li><strong>Station Threnody, where something is still tending the greenhouse</strong>: a derelict named after a funeral song, for a horror one-shot.</li></ul>"
+      },
+      {
+        "heading": "How real and fictional stations are named",
+        "content": "<p>Real space stations have mostly been given short, hopeful names:</p><ul><li><strong>Salyut</strong>, Russian for \"salute\", was the name of the Soviet Union's first stations; Salyut 1 launched in 1971.</li><li><strong>Mir</strong>, which flew from 1986 to 2001, means both \"peace\" and \"world\" in Russian.</li><li><strong>Skylab</strong>, America's first station (1973), was named for what it was: a laboratory in the sky.</li><li><strong>The International Space Station</strong> kept a plain, descriptive name because it belongs to several countries at once.</li><li><strong>Tiangong</strong>, China's station, means \"heavenly palace\".</li></ul><p>Fiction tends to go one of two ways: a code or number, like <em>Deep Space Nine</em> and <em>Babylon 5</em>, or a name that tells you who runs it. The generator does both:</p><ul><li><strong>Military</strong> stations are forts, pickets and fleet yards, often with a callsign: <em>Watchpost Yankee Eight</em>, <em>Glaive Station</em>.</li><li><strong>Research</strong> stations are arrays and listening posts named after scientists or scientific words: <em>Nyberg-Brightman Array</em>, <em>Station Calculus</em>.</li><li><strong>Trading hubs</strong> borrow from spices and old coins: <em>The Paprika Market</em>, <em>Guilder Emporium</em>.</li><li><strong>Mining</strong> outposts name the ore and the hole: <em>Bismuth Refinery 52</em>, <em>Gallagher's Motherlode</em>.</li><li><strong>Luxury</strong> stations sound like grand hotels: <em>The Aurelian Retreat</em>, <em>Marchmont Casino &amp; Spa</em>.</li><li><strong>Derelict</strong> stations are named after the last thing anyone said, or felt: <em>Lusk's Silence</em>, <em>Kessler's Regret</em>.</li></ul><p>Choose <strong>With a description</strong> for a one-line hook to start a scene with.</p>"
+      },
+      {
+        "heading": "Using a station in your story",
+        "content": "<ul><li><strong>Give it a nickname.</strong> Crews never use the official name: <em>Bismuth Refinery 52</em> becomes \"the Fifty-Two\".</li><li><strong>Let the name date it.</strong> A station named after a war, a founder or a company tells players how old it is and who built it.</li><li><strong>Use the description as a hook.</strong> \"Warmer than it should be\" is the start of a session.</li></ul><p>For the ships that dock there, try the <a href=\"spaceship-name-generator.html\">Spaceship Name Generator</a>. For what it orbits, there's the <a href=\"planet-name-generator.html\">Planet</a>, <a href=\"moon-name-generator.html\">Moon</a> and <a href=\"star-name-generator.html\">Star</a> name generators, and for the people who settle below, the <a href=\"colony-name-generator.html\">Colony Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/scifi-names.html\">sci-fi name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good names for a space station?",
+        "answer": "Names that say what the station does: Fort Castellano for a military post, Listening Post Fulcrum for research, Freeport Allspice for trade, Mica Vein for a mine, Château Orrery for luxury, or Station Threnody for a derelict."
+      },
+      {
+        "question": "What were real space stations called?",
+        "answer": "Salyut and Mir (Soviet and Russian), Skylab (American), the International Space Station, and China's Tiangong, which means heavenly palace."
+      },
+      {
+        "question": "Can I get a story hook with the name?",
+        "answer": "Yes. Choose With a description for a line like \"where salvage crews refuse to go past the third deck\"."
+      }
+    ]
   }
 }
