@@ -2092,8 +2092,34 @@
       "title": "🐸 Swamp Name Generator",
       "tagline": "Misty mires, haunted fens, bayous and witchy bogs for your maps and stories."
     },
-    "intro": "Every good fantasy map has a stretch of marsh nobody wants to cross. This **swamp name generator** gives you fantasy marshes, haunted bogs, real-sounding British fens, carrs and mosses, Louisiana bayous and witchy mires, with a short description if you want one.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good swamp names sound wet, old and a little unwelcoming: <em>Sedgeslough</em>, <em>Gloammere</em>, <em>the Fen of Cold Candles</em>. Every good fantasy map has a stretch of marsh nobody wants to cross. This **swamp name generator** gives you fantasy marshes, haunted bogs, real-sounding British fens, carrs and mosses, Louisiana bayous and witchy mires, with a short description if you want one.",
+    "sections": [
+      {
+        "heading": "Eight good swamp names",
+        "content": "<p>All eight came from the generator, across its five styles:</p><ul><li><strong>Gloammere</strong>: a fantasy marsh named for the dusk light over still water.</li><li><strong>Newtmarsh</strong>: short, damp and full of small creatures.</li><li><strong>The Fen of Cold Candles</strong>: a haunted fen with lights you shouldn't follow.</li><li><strong>Will-o'-Wisp Fen</strong>: named after the marsh lights of English folklore.</li><li><strong>Wytheley Carr</strong>: a British fen name built from real place-name parts.</li><li><strong>Black Drove Mire</strong>: a drove is an old track across the fens.</li><li><strong>Pirogue Bayou</strong>: a bayou named after the flat-bottomed boats used there.</li><li><strong>Bog Myrtle Slough</strong>: a witchy marsh named after a real bog plant.</li></ul>"
+      },
+      {
+        "heading": "Fens, carrs, mosses and bayous",
+        "content": "<p>English has a word for almost every kind of wet ground, and most of them are old:</p><ul><li><strong>Fen</strong> comes from Old English. The Fens of East Anglia were mostly drained for farming from the 1600s, and their drained fields still carry names like <em>-drove</em> and <em>-ings</em> (from the Norse for meadow).</li><li><strong>Carr</strong>, from Old Norse, is wet woodland, usually alder and willow.</li><li><strong>Moss</strong> is the northern English and Scots word for a peat bog, as in Chat Moss near Manchester.</li><li><strong>Levels</strong> are low, flat land by the sea or a river, like the Somerset Levels.</li><li><strong>Bayou</strong> is Louisiana French, borrowed from the Choctaw word for a slow stream, and the <strong>Bayou</strong> style uses Cajun French surnames and swamp wildlife.</li></ul><p>Fiction has its own famous swamps: Tolkien's Dead Marshes are the template for a marsh full of something you shouldn't look at. The <strong>Haunted</strong> style borrows from folklore instead: a <em>hinkypunk</em> is an old West Country name for a will-o'-the-wisp, and a <em>gytrash</em> is a northern English spirit of lonely roads.</p>"
+      },
+      {
+        "heading": "Using swamps on your map",
+        "content": "<ul><li><strong>Put them where water gathers:</strong> at a river mouth, behind a sand bar, or in a valley with nowhere to drain.</li><li><strong>Give them a reason to cross.</strong> A causeway, a ferry or a shortcut makes a marsh a place for adventures, not just a blank space.</li><li><strong>Choose With a description</strong> for a ready-made hook, like <em>Lilymarsh, where travellers follow the glow-moths or get lost</em>.</li></ul><p>Someone has to live there: try the <a href=\"swamp-witch-name-generator.html\">Swamp Witch Name Generator</a>. For the water around it, there's the <a href=\"river-name-generator.html\">River</a> and <a href=\"lake-name-generator.html\">Lake</a> name generators, and for drier ground, <a href=\"forest-name-generator.html\">Forest</a> and <a href=\"mountain-name-generator.html\">Mountain</a>.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good swamp names?",
+        "answer": "Names that sound wet and old: Gloammere, Newtmarsh, Black Drove Mire, or the Fen of Cold Candles for a haunted one. Choose British fen for real-sounding names, or Bayou for Louisiana."
+      },
+      {
+        "question": "What's the difference between a fen, a bog and a marsh?",
+        "answer": "Broadly, a marsh is wet grassland, a fen is a peat wetland fed by ground water and a bog is one fed by rain. In place names the words are used loosely, so pick the one that sounds right."
+      },
+      {
+        "question": "What is a carr?",
+        "answer": "A wet woodland of alder or willow. The word comes from Old Norse and is common in place names across northern and eastern England."
+      }
+    ]
   }
 }

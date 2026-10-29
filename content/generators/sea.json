@@ -1312,8 +1312,34 @@
       "title": "🌊 Sea Name Generator",
       "tagline": "Seas and oceans for your map: storm-wracked deeps, frozen wastes of ice, warm reef waters and seas out of legend."
     },
-    "intro": "Every fantasy map has a lot of blue on it, and all that water deserves a name. This **sea name generator** names seas and oceans for D&D campaigns, novels and worldbuilding, from the Shivering Deep to the Ambergrise Ocean, with a short description if you want a story to go with it.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good sea names describe what it's like to sail on it: <em>the Shivering Gulf</em>, <em>the Rime Sea</em>, <em>the Saffron Sea</em>. Every fantasy map has a lot of blue on it, and all that water deserves a name. This **sea name generator** names seas and oceans for D&amp;D campaigns, novels and worldbuilding, from the Shivering Deep to the Ambergrise Ocean, with a short description if you want a story to go with it.",
+    "sections": [
+      {
+        "heading": "Eight good sea names",
+        "content": "<p>All eight came from the generator, across its five styles:</p><ul><li><strong>the Opal Wash</strong>: a fantasy sea with a jewel's colour and an old word for shallow water.</li><li><strong>the Sea of Snapped Oars</strong>: a stormy sea that tells sailors what to expect.</li><li><strong>the Wreckers' Sea</strong>: named after the people who live off its shipwrecks.</li><li><strong>the Hoarfrost Sea</strong>: a frozen sea named for the frost on the rigging.</li><li><strong>the White Road</strong>: a frozen sea that's flat and pale enough to travel across.</li><li><strong>the Cowrie Sea</strong>: a tropical sea named after a shell.</li><li><strong>the Frangipani Shallows</strong>: warm, sweet-smelling water over white sand.</li><li><strong>the Ocean That Has No Shore</strong>: a mythic ocean that sounds like the start of a creation story.</li></ul>"
+      },
+      {
+        "heading": "How seas get their names",
+        "content": "<p>Real seas are mostly named for where they are, what they look like, or a story:</p><ul><li><strong>Where they are.</strong> The Mediterranean comes from the Latin for \"middle of the land\", because the Romans saw it as the sea in the middle of their world.</li><li><strong>A hopeful euphemism.</strong> The Greeks first called the Black Sea the inhospitable sea, then renamed it <em>Pontus Euxinus</em>, the hospitable sea, perhaps to keep it in a good mood.</li><li><strong>A myth.</strong> The Atlantic is the sea of Atlas, the Titan who held up the sky.</li><li><strong>A kenning.</strong> Old English poets called the sea the <em>hronrād</em>, the whale-road, which is where the mythic style's <em>Whale-Road</em> comes from.</li></ul><p>Choose a style: <strong>fantasy</strong> for colours and wonders, <strong>stormy</strong> for wrecks and weather, <strong>frozen</strong> for ice and pale light, <strong>tropical</strong> for shells, flowers and lagoons, or <strong>mythic</strong> for gods and drowned kings. Choose <strong>With a description</strong> for a line of story, like <em>the Breakers, whose tides run backwards on the darkest nights</em>.</p>"
+      },
+      {
+        "heading": "Putting seas on your map",
+        "content": "<ul><li><strong>Name the big water first.</strong> An ocean around the edge, then smaller seas, gulfs and straits between the coasts.</li><li><strong>Let the coast decide.</strong> A sea beside a frozen kingdom should sound cold; one between spice islands should sound warm.</li><li><strong>Give sailors their own names.</strong> Sailors on both sides of a sea will call it different things, and a nickname like <em>the Shipgrave</em> tells you how they feel about it.</li></ul><p>Fill the sea with land using the <a href=\"island-name-generator.html\">Island Name Generator</a>, and with trouble using the <a href=\"pirate-name-generator.html\">Pirate Name Generator</a>. For the water that runs into it, try the <a href=\"river-name-generator.html\">River</a> and <a href=\"lake-name-generator.html\">Lake</a> name generators, and for the coasts around it, <a href=\"continent-name-generator.html\">Continent</a> and <a href=\"world-name-generator.html\">World</a>.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good fantasy sea names?",
+        "answer": "Names that describe the water: the Shivering Gulf or the Sea of Snapped Oars for a dangerous sea, the Rime Sea for a frozen one, the Cowrie Sea for a warm one. Pick a style to match."
+      },
+      {
+        "question": "What's the difference between a sea and an ocean?",
+        "answer": "An ocean is one of the great bodies of water between continents; a sea is smaller and usually partly enclosed by land. On a fantasy map, use Ocean for the edges and Sea for the water between coasts."
+      },
+      {
+        "question": "Where does the name Mediterranean come from?",
+        "answer": "From the Latin for \"middle of the land\", because it lay at the centre of the Roman world."
+      }
+    ]
   }
 }
