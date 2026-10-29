@@ -692,15 +692,44 @@
             // Every word must match somewhere ("dragon names" finds the dragon pages);
             // filler words people type into a search box are ignored.
             const FILLER = new Set(['name', 'names', 'generator', 'generators', 'a', 'an', 'the', 'for', 'of', 'my', 'ideas']);
+            // Best matches first: the exact generator ("house" -> House Name
+            // Generator), then titles starting with the words, then titles
+            // containing them, then matches only in the description or keywords.
+            const list = document.getElementById('generators-list');
+            const original = Array.from(links);
+            const titleOf = (link) => (link.querySelector('b') || link).textContent.toLowerCase()
+                .replace(/\s*(name )?generator$/, '').trim();
+            const score = (link, words, phrase) => {
+                const title = titleOf(link);
+                const titleWords = title.split(/[\s-]+/);
+                if (title === phrase) return 1000;
+                let s = 0;
+                if (title === phrase || title.startsWith(phrase + ' ') || title.startsWith(phrase + '-')) s += 500;
+                words.forEach((w) => {
+                    if (titleWords.includes(w)) s += 200;
+                    else if (titleWords.some((t) => t.startsWith(w))) s += 120;
+                    else if (title.includes(w)) s += 60;
+                });
+                return s - title.length / 100; // shorter titles win ties
+            };
             input.addEventListener('input', () => {
                 const term = input.value.toLowerCase().trim();
-                const words = term.split(/\s+/).filter((w) => w && !FILLER.has(w));
+                const words = term.split(/\s+/).filter((w) => w && !FILLER.has(w)).map((w) => w.replace(/s$/, ''));
+                const phrase = words.join(' ');
                 let shown = 0;
-                links.forEach((link) => {
-                    const match = !words.length || words.every((w) => link.dataset.search.includes(w.replace(/s$/, '')));
+                const matches = [];
+                original.forEach((link) => {
+                    const match = !words.length || words.every((w) => link.dataset.search.includes(w));
                     link.hidden = !match;
-                    if (match) shown++;
+                    if (match) { shown++; matches.push(link); }
                 });
+                if (words.length) {
+                    matches.map((link, i) => ({ link, i, s: score(link, words, phrase) }))
+                        .sort((a, b) => b.s - a.s || a.i - b.i)
+                        .forEach(({ link }) => list.appendChild(link));
+                } else {
+                    original.forEach((link) => list.appendChild(link)); // back to A to Z
+                }
                 count.textContent = term ? (shown ? `${shown} generator${shown === 1 ? '' : 's'}` : 'No generators match. Try a shorter word.') : '';
             });
             // all-generators.html?q=dragon (the homepage search sends people here)
