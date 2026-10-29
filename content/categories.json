@@ -1759,7 +1759,7 @@
     "seoTitle": "Name Generators for Writers: Stories, Characters and Titles",
     "description": "Story prompts, characters, villains, sidekicks, legends and titles: generators for writers stuck on the next name or idea.",
     "seoDescription": "Free name generators and story tools for writers: story prompts, local legends, villain, sidekick, superhero, NPC and fairy-tale names, epithets and titles.",
-    "intro": "<p>Every story needs names, and most writers have stalled on one. These generators cover the people in your story, the legends around it and the titles on it. Stuck before the names? Start with the <a href=\"../posts/story-prompt-generator.html\">Story Prompt Generator</a>.</p>",
+    "intro": "<p>Every story needs names, and most writers have stalled on one: the villain who needs a title, the sidekick who needs a joke, the village whose legend everybody knows. These generators cover the people in your story, the places and stories around them, and the titles on the cover. For characters, try the <a href=\"../posts/villain-name-generator.html\">Villain</a>, <a href=\"../posts/sidekick-name-generator.html\">Sidekick</a>, <a href=\"../posts/superhero-name-generator.html\">Superhero</a> and <a href=\"../posts/fairy-tale-name-generator.html\">Fairy Tale</a> name generators, or the <a href=\"../posts/epithet-generator.html\">Epithet Generator</a> to give anyone a title they earned.</p><p>Stuck before the names? The <a href=\"../posts/story-prompt-generator.html\">Story Prompt Generator</a> gives you a character, a setting, a plot or a twist, and the <a href=\"../posts/local-legend-generator.html\">Local Legend Generator</a> makes up the kind of folk tale a village tells about itself. When it's finished, the <a href=\"../posts/horror-movie-title-generator.html\">Horror Movie Title</a> and <a href=\"../posts/song-title-generator.html\">Song Title</a> generators will help name it.</p>",
     "featured": [
       {
         "key": "story_prompt",
@@ -1785,7 +1785,57 @@
       "npc",
       "horror_movie",
       "song_title"
-    ]
+    ],
+    "eyebrow": "Tools for writers",
+    "approach": {
+      "heading": "How to approach names in a story",
+      "text": "<p>A name in a story does a job: it tells the reader who someone is before they've done anything. Fairy tales show how little it takes. The Grimms' heroes are often just a trade and a quality, like Clever Gretel or the miller's daughter, and readers know exactly where they stand. Decide what the reader needs to feel when the name first appears, whether that's dread, warmth or a laugh, and choose a name that does it. Then make every name in the story sound different, so nobody mixes up two characters on the page.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Decide what the name should make us feel.",
+        "Give main characters different first letters.",
+        "Read every name aloud before you keep it.",
+        "Let villains earn a title, not just a name.",
+        "Search a title before you publish it."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name the characters, places and titles in your story.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Countess Gloom",
+          "type": "VILLAIN",
+          "verdict": "A villain you can introduce in two words.",
+          "breakdown": "A noble rank gives her power and an old family, and a single gloomy noun tells you what she brings with her. The pattern is easy to remember, which is exactly what a recurring villain needs.",
+          "motif": "mask"
+        },
+        {
+          "name": "Keith from Accounts",
+          "type": "SIDEKICK",
+          "verdict": "A comic sidekick who gets a laugh just by being introduced.",
+          "breakdown": "The joke is how ordinary it is: a plain first name and an office job, next to heroes with code names. It tells readers straight away that this character is here to undercut the drama.",
+          "motif": "speech-bubble"
+        },
+        {
+          "name": "Maud Who Never Lied",
+          "type": "FAIRY TALE HERO",
+          "verdict": "A heroine whose name is also a promise.",
+          "breakdown": "An old, plain first name with one virtue attached, the way fairy tales name their heroes. The reader immediately wonders what happens when Maud is tempted to lie, which is a plot in itself.",
+          "motif": "storybook"
+        },
+        {
+          "name": "Yewbride",
+          "type": "HORROR TITLE",
+          "verdict": "A folk horror title that sounds like an old custom gone wrong.",
+          "breakdown": "Yew trees grow in old churchyards and are linked with death and long life, and 'bride' suggests a ceremony. Together they hint at a village ritual nobody should take part in.",
+          "motif": "candle"
+        }
+      ]
+    }
   },
   {
     "name": "Places",
