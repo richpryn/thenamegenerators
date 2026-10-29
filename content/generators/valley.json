@@ -22,8 +22,8 @@
       "optionLabels": {
         "any": "Any style",
         "fantasy": "Fantasy (Griffinfold)",
-        "british": "British (Ketteldale)",
-        "elven": "Elven (Vale of Seralis)",
+        "british": "British (Ormesdale)",
+        "elven": "Elven (The Valley of Fenara)",
         "dark": "Dark (Valley of Cairns)",
         "hidden": "Hidden (The Lost Glen)"
       }
@@ -552,7 +552,6 @@
         "Swinesdale",
         "Thornsdale",
         "Kirksdale",
-        "Oxendale",
         "Cringledale",
         "Uldale",
         "Thwaitedale",
@@ -584,7 +583,6 @@
         "Shepcombe",
         "Radcombe",
         "Bradcombe",
-        "Lidcombe",
         "Tidcombe",
         "Cherrycombe",
         "Honeycombe",
