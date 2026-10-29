@@ -943,7 +943,17 @@
       "fantasy_city",
       "haunted_house",
       "street",
-      "house_name"
+      "house_name",
+      "school",
+      "university",
+      "hospital",
+      "hotel",
+      "wild_west_town",
+      "pirate_island",
+      "farm",
+      "theme_park",
+      "zoo",
+      "lighthouse"
     ],
     "eyebrow": "World-building elements",
     "approach": {

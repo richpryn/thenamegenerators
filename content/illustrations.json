@@ -309,6 +309,16 @@
     "steampunk_city": "gear",
     "post_apocalyptic_town": "flag",
     "street": "signpost",
-    "house_name": "house"
+    "house_name": "house",
+    "school": "pencil",
+    "university": "quill",
+    "hospital": "building",
+    "hotel": "building",
+    "wild_west_town": "cowboy-hat",
+    "pirate_island": "lost-map",
+    "farm": "sheep",
+    "theme_park": "bunting",
+    "zoo": "paw",
+    "lighthouse": "lamp"
   }
 }
