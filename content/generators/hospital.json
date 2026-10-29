@@ -1330,8 +1330,34 @@
       "title": "🏥 Hospital Name Generator",
       "tagline": "From Ravensmere General to the House of Gentle Hands, a hospital for every story, game and town."
     },
-    "intro": "Every town needs somewhere to patch people up. This **hospital name generator** makes invented hospital names for stories, games and roleplay towns: British infirmaries, American medical centres, fantasy healers' houses, sci-fi medbays and abandoned old hospitals, with an optional one-line description.",
-    "sections": [],
-    "faqs": []
+    "intro": "A good hospital name is calm and trustworthy: a saint, a place or a benefactor, plus Hospital, Infirmary or Medical Center. This **hospital name generator** makes invented hospital names for stories, games and roleplay towns: British infirmaries, American medical centres, fantasy healers' houses, sci-fi medbays and abandoned old hospitals, with an optional one-line description.",
+    "sections": [
+      {
+        "heading": "Eight good hospital names",
+        "content": "<p>All eight came from the generator, across its five styles:</p><ul><li><strong>St Bega's Hospital</strong>: named after an Anglo-Saxon saint, the way many British hospitals are.</li><li><strong>Bellingthorpe District General Hospital</strong>: the full, official-sounding name of a big NHS hospital.</li><li><strong>The Hubert Nuttall Memorial Hospital</strong>: named after a local benefactor.</li><li><strong>Okafor-Brennan Medical Center, built on stilts to ride out the hurricanes</strong>: an American medical centre with a sense of place.</li><li><strong>The House of Mended Bones</strong>: a fantasy healers' house that says what it does.</li><li><strong>Medbay Theta-17, where the medical AI has a bedside manner it learned from old films</strong>: a sci-fi medbay with personality.</li><li><strong>St Petroc's Isolation Hospital, cut off by the tide twice a day, as it was when it was built</strong>: an abandoned hospital with a real history behind the idea.</li><li><strong>The Victoria Block of Ravensmere General, where the night porter's bell still rings in the empty lodge</strong>: an eerie old building, without being cruel about anyone who was ever a patient there.</li></ul>"
+      },
+      {
+        "heading": "How hospitals got their names",
+        "content": "<p><em>Hospital</em> comes from the Latin <em>hospes</em>, which meant both guest and host, and the first hospitals took in travellers and the poor as well as the sick. Many were run by monasteries, which is why so many British hospitals are named after saints. St Bartholomew's in London, founded in 1123, is often described as the oldest hospital in Britain still on its original site.</p><ul><li><strong>British</strong> names: a saint, a monarch or a benefactor, then General, District General, Infirmary (from the Latin for weak) or Memorial.</li><li><strong>American</strong> names: Medical Center, Memorial or Regional, often after a family or a county.</li><li><strong>Fantasy</strong> names: houses of healing, hospices and physic gardens.</li><li><strong>Sci-fi</strong> names: medbays, wards on stations and mobile units with code numbers.</li><li><strong>Abandoned</strong> names: fever, isolation and convalescent hospitals were real places, built to keep infectious diseases away from towns. Their ghosts here are staff, lights and sounds, never patients, and the word asylum is never used.</li></ul>"
+      },
+      {
+        "heading": "Using a hospital name",
+        "content": "<ul><li><strong>For a medical drama,</strong> a saint's name or a memorial name sounds right for a British hospital.</li><li><strong>For a roleplay town,</strong> the description gives the hospital a detail players remember.</li><li><strong>For a ghost story,</strong> an abandoned hospital works best when the eeriness is in the building, not in mocking the people who were treated there.</li><li><strong>Avoid real hospitals.</strong> Many saints' names are already in use, so check before you set a story in a real town.</li></ul><p>For a house with a darker past, try the <a href=\"haunted-house-name-generator.html\">Haunted House Name Generator</a>. For a place to stay while visiting, there's the <a href=\"hotel-name-generator.html\">Hotel Name Generator</a>, and for the doctors' training, the <a href=\"university-name-generator.html\">University Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/places-names.html\">place name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good names for a fictional hospital?",
+        "answer": "A saint, a place or a benefactor plus the right ending: St Bega's Hospital, Bellingthorpe District General Hospital, The Hubert Nuttall Memorial Hospital. For a fantasy world, try The House of Mended Bones."
+      },
+      {
+        "question": "Why are so many British hospitals named after saints?",
+        "answer": "Many of the first hospitals were founded by monasteries and churches, so they took a saint's name. St Bartholomew's in London dates from 1123."
+      },
+      {
+        "question": "Is the abandoned hospital style suitable for a ghost story?",
+        "answer": "Yes. Its ghosts are staff, lights and sounds rather than patients, and it never uses the word asylum, so it's spooky without being unkind."
+      }
+    ]
   }
 }

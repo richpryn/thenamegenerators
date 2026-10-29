@@ -1467,8 +1467,34 @@
       "title": "🤠 Wild West Town Name Generator",
       "tagline": "Gold-rush camps, cattle towns and dusty outposts for your frontier stories and games."
     },
-    "intro": "The **Wild West Town Name Generator** names the towns of the Old West: gold-rush boomtowns, cattle towns at the end of the trail, desert water stops, abandoned ghost towns and lonely frontier forts, with a short description if you want one.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good Wild West town names say what the town was built for: a strike (<em>Bedrock City</em>), a water stop (<em>Yucca Wells</em>), a river crossing or a fort. The **Wild West Town Name Generator** names the towns of the Old West: gold-rush boomtowns, cattle towns at the end of the trail, desert water stops, abandoned ghost towns and lonely frontier forts, with a short description if you want one.",
+    "sections": [
+      {
+        "heading": "Eight good Wild West town names",
+        "content": "<p>All eight came from the generator, across its five kinds of town:</p><ul><li><strong>Poor Man's Diggings</strong>: a mining camp named with the miners' own gallows humour.</li><li><strong>Long Tom's Bar</strong>: a gold camp on a river bar, named after the man who staked it.</li><li><strong>Calloway's Luck, with eleven saloons, two churches and one very tired sheriff</strong>: a boomtown and its whole character in one line.</li><li><strong>Bridle Junction</strong>: a cattle town where the trail meets the railway.</li><li><strong>Chuckwalla Tank, where rattlesnakes sun themselves on the railway sleepers</strong>: a desert water stop named after a lizard.</li><li><strong>Lizard Draw</strong>: a desert stop named after a dry gully and what lives in it.</li><li><strong>Stopped Clock Camp, where only the lizards and the wind remain</strong>: a ghost town that tells you when it died.</li><li><strong>Fort Iron Gate, whose surgeon is also the dentist, the vet and the barber</strong>: a frontier fort with a story about the people inside.</li></ul>"
+      },
+      {
+        "heading": "How Old West towns got their names",
+        "content": "<p>Frontier towns were named fast, often by whoever got there first, and the names stuck.</p><ul><li><strong>A bit of luck or bad luck.</strong> Tombstone, Arizona, got its name because the prospector Ed Schieffelin was told the only thing he'd find in that country was his tombstone. He named his first claim Tombstone, and the town that grew up took the name.</li><li><strong>The landscape.</strong> Deadwood, South Dakota, was named after the dead trees in its gulch. A <em>gulch</em> is a steep ravine, a <em>butte</em> is a lone flat-topped hill, and in the dry South-West a <em>tank</em> is a pool or hollow that holds water.</li><li><strong>The work.</strong> In the California gold rush, a <em>bar</em> was a gravel bank in a river where miners panned, and many camps were named after one. <em>Diggings</em> meant the same thing on dry land.</li><li><strong>A fort or a railway.</strong> Dodge City, Kansas, took its name from nearby Fort Dodge. Towns on the railway were often called a junction or a station.</li></ul><p>Pick a kind of town and the generator follows the same habits: <strong>Boomtown</strong> for gold and silver camps, <strong>Cattle town</strong> for the end of the trail, <strong>Desert outpost</strong> for water stops, <strong>Ghost town</strong> for places left behind and <strong>Frontier fort</strong> for army posts and trading posts. Choose <strong>With a description</strong> for a line about what's there.</p>"
+      },
+      {
+        "heading": "Using a Wild West town",
+        "content": "<ul><li><strong>Give it a reason to exist.</strong> A frontier town is there because of gold, cattle, water, a railway or a fort. When that goes, it becomes a ghost town.</li><li><strong>Use the description as a plot hook.</strong> A town \"whose richest claim was won in a game of cards\" is a story waiting to start.</li><li><strong>Name a few at once</strong> for a map of a whole territory, from the fort to the ghost town in the hills.</li></ul><p>For the outlaws and sheriffs who live there, try the <a href=\"old-west-name-generator.html\">Old West Name Generator</a>. For a ranch outside town, the <a href=\"farm-name-generator.html\">Farm Name Generator</a> has a ranch style, and for somewhere to stay the night, there's the <a href=\"hotel-name-generator.html\">Hotel Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/places-names.html\">place name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good Wild West town names?",
+        "answer": "Names that say why the town is there: a strike like Bedrock City, a water stop like Yucca Wells, a crossing like Bridle Junction, or a fort like Fort Iron Gate. Ghost towns get names like Stopped Clock Camp."
+      },
+      {
+        "question": "How did Tombstone get its name?",
+        "answer": "The prospector Ed Schieffelin was told the only thing he'd find there was his tombstone. He named his first silver claim Tombstone, and the town took the name."
+      },
+      {
+        "question": "Can I use these names in a western story or game?",
+        "answer": "Yes. They're invented, so they're free to use in a story, a tabletop western or a video game."
+      }
+    ]
   }
 }

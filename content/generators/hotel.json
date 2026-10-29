@@ -1339,8 +1339,34 @@
       "title": "🏨 Hotel Name Generator",
       "tagline": "Grand seafront palaces, cosy B&Bs, haunted hotels and orbital resorts, all with a room for your story."
     },
-    "intro": "Every journey needs somewhere to stay. This **hotel name generator** makes invented hotel names for stories, games and worldbuilding: grand historic hotels, boutique hideaways, seaside B&Bs, haunted hotels, fantasy inn-hotels and space hotels, with an optional one-line description.",
-    "sections": [],
-    "faqs": []
+    "intro": "A good hotel name promises a certain kind of stay: a grand name for chandeliers, two pretty words for a boutique, a house number for a seaside B&amp;B. This **hotel name generator** makes invented hotel names for stories, games and world-building: grand historic hotels, boutique hideaways, seaside B&amp;Bs, haunted hotels, fantasy inn-hotels and space hotels, with an optional one-line description.",
+    "sections": [
+      {
+        "heading": "Eight good hotel names",
+        "content": "<p>All eight came from the generator, across its six styles:</p><ul><li><strong>The Ravenmouth Esplanade Hotel</strong>: a grand seaside hotel on the promenade.</li><li><strong>The Ashenhurst Palace Hotel</strong>: a grand name with a family seat in it.</li><li><strong>Tinder &amp; Clove</strong>: a boutique name made of two pleasant words and an ampersand.</li><li><strong>7 Bay Terrace, with a sign in the window that has said \"Vacancies\" since 1979</strong>: a seaside B&amp;B known by its address.</li><li><strong>The Unanswered Bell Hotel, where the lift stops at a floor that was bricked up years ago</strong>: a haunted hotel with a story in one line.</li><li><strong>The Lodging House of the Twelve Hearths</strong>: a fantasy inn-hotel that sounds warm.</li><li><strong>Hotel Nadir, where the sunrise comes round sixteen times a day</strong>: a space hotel in orbit.</li><li><strong>The Lumen Ringside Suites, with a staff of three humans, forty robots and a very old ship's cat</strong>: a sci-fi hotel with character.</li></ul>"
+      },
+      {
+        "heading": "How hotels name themselves",
+        "content": "<p>Hotel names follow fashion. Coaching inns took the names of pub signs; the grand hotels of the 19th century chose names that sounded important; boutique hotels went small and clever.</p><ul><li><strong>Grand</strong> hotels: the Victorian railway and seaside hotels called themselves the Grand, the Metropole, the Imperial and the Esplanade. The Savoy in London opened in 1889, and the Ritz is named after the hotelier César Ritz.</li><li><strong>Boutique</strong> hotels use two nouns, a colour or a material: <em>Cedar &amp; Fig</em>, <em>The Velvet Rooms</em>.</li><li><strong>Seaside B&amp;Bs</strong> are known by a house name or a street number, and by their breakfasts.</li><li><strong>Haunted</strong> hotels have a ghost story in the name: <em>The Broken Chandelier Hotel</em>.</li><li><strong>Fantasy</strong> inn-hotels are lodging houses, waystations and travellers' halls.</li><li><strong>Space</strong> hotels are named after astronomy words: aphelion, nadir, parsec. A <em>motel</em>, by the way, was a \"motor hotel\" for drivers.</li></ul>"
+      },
+      {
+        "heading": "Using a hotel name",
+        "content": "<ul><li><strong>For a story,</strong> choose <strong>With a description</strong>: the detail is often the start of the plot.</li><li><strong>For a game,</strong> a hotel makes a good hub: guests arrive, rumours spread, something goes missing.</li><li><strong>For a real business,</strong> search the name, as hotel names are often already trademarked.</li></ul><p>For a smaller place to stay, try the <a href=\"tavern-name-generator.html\">Tavern Name Generator</a>, and for an inn with a ghost, the <a href=\"haunted-pub-name-generator.html\">Haunted Pub Name Generator</a>. For the seaside town around your B&amp;B, there's the <a href=\"lighthouse-name-generator.html\">Lighthouse</a> and <a href=\"theme-park-name-generator.html\">Theme Park</a> name generators.</p><p>For more, see all the <a href=\"../categories/places-names.html\">place name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good names for a hotel?",
+        "answer": "It depends on the stay: The Ravenmouth Esplanade Hotel for a grand seaside hotel, Tinder & Clove for a boutique one, or 7 Bay Terrace for a B&B. Choose a style to match."
+      },
+      {
+        "question": "What makes a good boutique hotel name?",
+        "answer": "Two short, pleasant words, often joined with an ampersand, or a colour or material: Cedar & Fig, The Velvet Rooms, The Indigo Rooms."
+      },
+      {
+        "question": "Can I use these names for a real hotel?",
+        "answer": "They're invented, but hotel names are often trademarked, so search the name and check with your local registry before you use it for a business."
+      }
+    ]
   }
 }

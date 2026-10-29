@@ -1687,8 +1687,34 @@
       "title": "🎓 University Name Generator",
       "tagline": "Fictional universities for stories and games: ancient colleges, redbrick and modern universities, American state schools, fantasy collegiums and sci-fi institutes, with Latin or English mottos."
     },
-    "intro": "Campus novels, D&D scholars and starship engineers all need somewhere to have studied. This **university name generator** makes fictional ancient colleges, redbrick and modern British universities, American state universities and institutes of technology, fantasy collegiums and sci-fi orbital universities, each with a Latin or English motto if you want one.",
-    "sections": [],
-    "faqs": []
+    "intro": "A good university name tells you how old it is before you read the prospectus: a saint's college with a Latin motto, a redbrick named after its city, a state university named after a river. This **university name generator** makes fictional ancient colleges, redbrick and modern British universities, American state universities and institutes of technology, fantasy collegiums and sci-fi orbital universities, each with a Latin or English motto if you want one.",
+    "sections": [
+      {
+        "heading": "Eight good university names",
+        "content": "<p>All eight came from the generator, across its five styles:</p><ul><li><strong>St Ethelbert's College, motto “Scientia et labore” (by knowledge and work)</strong>: an ancient college named after an Anglo-Saxon saint.</li><li><strong>Bosanquet and Danvers College, motto “Nunc aut numquam” (now or never)</strong>: named after two benefactors, as some old colleges are.</li><li><strong>Grimchester School of Mines, motto “Built to last”</strong>: a Victorian technical college with a practical motto.</li><li><strong>Nedchester Lowry University, motto “For the good of the city”</strong>: a civic university named after its city and a founder.</li><li><strong>Glen Mesa College of Liberal Arts, motto “Nec aspera terrent” (hardships do not deter us)</strong>: an American college with a classic Latin motto.</li><li><strong>The Lorehouse of Kyrandel</strong>: a fantasy university that sounds like a library.</li><li><strong>The Chantry of Learning at Ravara</strong>: a fantasy college with a religious past.</li><li><strong>Tavis Deep Space Institute, motto “From one world, many”</strong>: a sci-fi institute with a motto about colonising.</li></ul>"
+      },
+      {
+        "heading": "How universities are named",
+        "content": "<p>The word <em>college</em> comes from the Latin <em>collegium</em>, a group of colleagues, and the oldest universities still feel like communities with Latin names. Oxford's motto is <em>Dominus illuminatio mea</em>, \"the Lord is my light\", from the Psalms.</p><ul><li><strong>Ancient</strong> colleges are named after saints, founders and benefactors, and almost always have a Latin motto.</li><li><strong>Redbrick</strong> universities are the civic universities founded in Victorian industrial cities. The name took hold after a 1943 book about them, and they're named after their cities. A <em>School of Mines</em> trained engineers for local industry.</li><li><strong>American</strong> universities include state universities, liberal arts colleges and institutes of technology, named after towns, rivers and landscapes: <em>Sycamore Plains State College</em>, <em>Rock Bend Tech</em>.</li><li><strong>Fantasy</strong> universities borrow old words for places of learning: collegium, scholarium, lorehouse, chantry.</li><li><strong>Sci-fi</strong> universities are orbital, colonial or polytechnic, with mottos about the stars.</li></ul><p>Choose <strong>With a Latin motto</strong> for a crest with a translation, or <strong>With an English motto</strong> for a modern one. The Latin mottos are real phrases: <em>Plus ultra</em> (further beyond) was the motto of the Spanish king Charles V.</p>"
+      },
+      {
+        "heading": "Using a university name",
+        "content": "<ul><li><strong>For a campus novel,</strong> the college's age sets the mood: a saint's college means quads and gowns, a redbrick means a city and a students' union.</li><li><strong>For a character's backstory,</strong> a university name and motto say a lot about where they came from.</li><li><strong>For D&amp;D,</strong> a fantasy university makes a good home for a wizard, a sage or a library heist.</li><li><strong>Avoid real names.</strong> Many towns have real universities, so search before you set a story in one.</li></ul><p>For younger students, try the <a href=\"school-name-generator.html\">School Name Generator</a>, and for spellcasters, the <a href=\"magic-school-name-generator.html\">Magic School Name Generator</a>. After graduation, there's always the <a href=\"hospital-name-generator.html\">Hospital Name Generator</a> for the medics.</p><p>For more, see all the <a href=\"../categories/places-names.html\">place name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good fictional university names?",
+        "answer": "Names that tell you their age: St Ethelbert's College for an ancient one, Grimchester School of Mines for a Victorian one, Glen Mesa College of Liberal Arts for an American one. Add a Latin motto for a crest."
+      },
+      {
+        "question": "Are the Latin university mottos correct?",
+        "answer": "Yes. They're real Latin phrases with accurate translations, such as Nec aspera terrent, hardships do not deter us, and Magna est veritas, great is the truth."
+      },
+      {
+        "question": "What is a redbrick university?",
+        "answer": "One of the civic universities founded in Britain's big industrial cities in the Victorian and Edwardian eras. The name refers to their red-brick buildings, in contrast to the old stone colleges."
+      }
+    ]
   }
 }

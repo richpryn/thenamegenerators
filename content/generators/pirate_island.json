@@ -1486,8 +1486,34 @@
       "title": "🏴‍☠️ Pirate Island Name Generator",
       "tagline": "Treasure islands, pirate ports and cursed isles for your crew to find."
     },
-    "intro": "The **Pirate Island Name Generator** names the islands pirates bury treasure on, sail home to and steer well clear of: treasure islands, rowdy pirate ports, cursed isles, hidden tropical hideouts and some very silly islands, with a description of what waits there if you want one.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good pirate island names promise treasure, trouble or a laugh: <em>Lost Map Isle</em>, <em>Groaning Cay</em>, <em>Seasick Bucket Isle</em>. The **Pirate Island Name Generator** names the islands pirates bury treasure on, sail home to and steer well clear of: treasure islands, rowdy pirate ports, cursed isles, hidden tropical hideouts and some very silly islands, with a description of what waits there if you want one.",
+    "sections": [
+      {
+        "heading": "Eight good pirate island names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Lost Map Isle</strong>: a treasure island that has already caused trouble.</li><li><strong>Gold Bar Cay, where the treasure map is scratched onto the shell of a very old tortoise</strong>: a treasure hunt with a twist.</li><li><strong>Port Oakum</strong>: a pirate port named after the tarred rope used to seal a ship's planks.</li><li><strong>Brigand's Wharf, whose governor is a retired pirate with a very fancy hat</strong>: a pirate haven with a ruler to match.</li><li><strong>Ghost Crab Island, where footprints appear in the sand with nobody there to make them</strong>: a cursed island that stays spooky without being scary.</li><li><strong>Hermit Crab Hollow, with a lagoon deep enough to hide a whole ship</strong>: a hideout with a reason to hide there.</li><li><strong>Moody Parrot Rock</strong>: a silly island for a younger crew.</li><li><strong>Moody Teapot Island, where the X on the map was a tea stain</strong>: a joke the whole table will remember.</li></ul>"
+      },
+      {
+        "heading": "Real pirate havens and treasure islands",
+        "content": "<p>The age of piracy had real island bases, and their names still turn up in pirate stories.</p><ul><li><strong>Tortuga</strong>, off the north coast of Hispaniola, is Spanish for \"turtle\", supposedly from the island's shape. It was a famous buccaneer base in the 1600s.</li><li><strong>Nassau</strong>, in the Bahamas, was a pirate haven in the early 1700s, until the British sent a governor to clear the pirates out.</li><li><strong>Cay</strong> and <strong>key</strong> come from the Spanish <em>cayo</em>, a small low island, which is why the Caribbean is full of them.</li><li><strong>Treasure Island</strong> gave us most of the rest. Robert Louis Stevenson's novel, published as a book in 1883, has the map, the X and the buried gold that every pirate island since has borrowed.</li></ul><p>Pick a style: <strong>Treasure</strong>, <strong>Pirate port</strong>, <strong>Cursed</strong>, <strong>Hideout</strong> or <strong>Funny</strong>. Choose <strong>With a description</strong> to find out what waits on the island.</p>"
+      },
+      {
+        "heading": "Using a pirate island",
+        "content": "<ul><li><strong>For a treasure hunt or a party,</strong> the treasure descriptions make good first clues.</li><li><strong>For a game,</strong> give each island on your map a different style, so the crew knows which ones to avoid.</li><li><strong>For younger pirates,</strong> the funny islands keep things silly.</li></ul><p>Every island needs a crew: try the <a href=\"pirate-name-generator.html\">Pirate Name Generator</a>. For islands of every other kind, there's the <a href=\"island-name-generator.html\">Island Name Generator</a>, and for the sea around them, the <a href=\"sea-name-generator.html\">Sea Name Generator</a>. To guide ships past the rocks, try the <a href=\"lighthouse-name-generator.html\">Lighthouse Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/places-names.html\">place name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good pirate island names?",
+        "answer": "Names that promise treasure or trouble, like Lost Map Isle, Groaning Cay or Port Oakum, or silly ones like Moody Parrot Rock for a younger crew."
+      },
+      {
+        "question": "What does cay mean in an island name?",
+        "answer": "A small, low island, often a sandbank on a reef. The word comes from the Spanish cayo, and key means the same, as in the Florida Keys."
+      },
+      {
+        "question": "Can I use these for a pirate party treasure hunt?",
+        "answer": "Yes. Choose Treasure and With a description, and each island comes with a clue to hide."
+      }
+    ]
   }
 }

@@ -2255,8 +2255,34 @@
       "title": "🏫 School Name Generator",
       "tagline": "Fictional schools for stories and games: British academies, American high schools, boarding schools, anime high schools and fantasy academies, with mottos and descriptions."
     },
-    "intro": "Every school story needs a school with a name that feels real. This **school name generator** makes fictional British academies and grammar schools, American high schools, rambling boarding schools, anime-style Japanese high schools (with what the name means) and fantasy academies for squires, bards and dragonriders.",
-    "sections": [],
-    "faqs": []
+    "intro": "A good school name sounds like it has been there for generations: a place, a founder or a saint, plus the right word for the kind of school, from Academy to High to Gakuen. This **school name generator** makes fictional British academies and grammar schools, American high schools, rambling boarding schools, anime-style Japanese high schools (with what the name means) and fantasy academies for squires, bards and dragonriders.",
+    "sections": [
+      {
+        "heading": "Eight good school names",
+        "content": "<p>All eight came from the generator, across its five styles:</p><ul><li><strong>St Audrey's C of E Primary School</strong>: a Church of England village school, named after a saint, like hundreds of real ones.</li><li><strong>Dame Eleanor Rainsford School</strong>: named after a founder, the way many old English schools were.</li><li><strong>Sugar Ridge Union High School, motto “Pride, Honor, Excellence”</strong>: an American high school, with American spelling in the motto.</li><li><strong>Quenbrook School for Girls, motto “Spectemur agendo” (let us be judged by our deeds)</strong>: a boarding school with a proper Latin motto.</li><li><strong>Ditchwell Hall, motto “Excelsior” (ever higher)</strong>: a boarding school that sounds like a country house, because it probably was one.</li><li><strong>Hoshino Gakuen</strong>: <em>hoshi</em> means star in Japanese, and a <em>gakuen</em> is an academy.</li><li><strong>Mizuyama Boys' High School (“water mountain”), motto “Bunbu ryōdō” (excelling in both study and sport)</strong>: an anime school with a real Japanese four-character motto.</li><li><strong>Cairdor School of Alchemy, whose library is guarded by a very old tortoise</strong>: a fantasy academy with a story in its description.</li></ul>"
+      },
+      {
+        "heading": "How schools get their names",
+        "content": "<p>Most real schools are named after a place, a founder or a saint, and the last word tells you what kind of school it is.</p><ul><li><strong>British</strong> schools: a <em>grammar school</em> was originally a school that taught Latin grammar, and the name stuck to the selective state schools of the 20th century. <em>C of E</em> means a Church of England school, and many English state schools have become <em>Academies</em> since the 2000s.</li><li><strong>American</strong> high schools are named after towns, local landmarks or notable people: <em>Thaddeus Quimby High School</em>, <em>Green Mills High School</em>. A <em>Union</em> high school serves several districts.</li><li><strong>Boarding</strong> schools often occupy old country houses, so they keep the house name: <em>Egmere Castle School</em>, <em>Tunleigh Park School</em>. Their Latin mottos are part of the tradition.</li><li><strong>Anime</strong> schools follow real Japanese patterns: a place name built from nature words (<em>Sakurahara</em>, cherry blossom plain), then <em>High School</em>, the Japanese <em>kōkō</em>, short for <em>kōtō gakkō</em>. <em>Prefectural</em> schools are run by the prefecture, and <em>Private</em> ones are independent. The mottos are real Japanese sayings, such as <em>Jūnin toiro</em>, ten people, ten colours: everyone is different.</li><li><strong>Fantasy</strong> academies are named after what they teach: arms, alchemy, archery, bardic song or griffin riding.</li></ul><p>Choose <strong>With a motto</strong> for a school crest, or <strong>With a description</strong> for a line that says what the school is like.</p>"
+      },
+      {
+        "heading": "Using a school name",
+        "content": "<ul><li><strong>For a school story,</strong> the name sets the tone: a Free School or a C of E primary feels everyday, a Hall with a Latin motto feels like midnight feasts.</li><li><strong>For anime or manga,</strong> pick a name whose meaning fits the setting: a seaside school suits <em>-hama</em>, beach.</li><li><strong>For a game,</strong> the motto is a ready-made clue, or a joke when the school fails to live up to it.</li><li><strong>Check real schools.</strong> Many place names are reused, so search before you publish a school in a real town.</li></ul><p>For wizards rather than pupils, try the <a href=\"magic-school-name-generator.html\">Magic School Name Generator</a>. For older students, there's the <a href=\"university-name-generator.html\">University Name Generator</a>, and for a school trip, the <a href=\"theme-park-name-generator.html\">Theme Park</a> and <a href=\"zoo-name-generator.html\">Zoo</a> name generators.</p><p>For more, see all the <a href=\"../categories/places-names.html\">place name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good names for a fictional school?",
+        "answer": "A place, a founder or a saint plus the right ending: St Audrey's C of E Primary School, Dame Eleanor Rainsford School, Ditchwell Hall or Hoshino Gakuen. Pick a style to match your story."
+      },
+      {
+        "question": "What do Japanese school names mean?",
+        "answer": "They're usually place names built from nature words, like Mizuyama, water mountain, or Fujihama, wisteria beach. Gakuen means academy, and kōkō is a high school. Choose Anime to see the meaning with each name."
+      },
+      {
+        "question": "Are the Latin and Japanese mottos real?",
+        "answer": "Yes, they're real phrases with accurate translations, such as Spectemur agendo, let us be judged by our deeds, and Onko chishin, learn from the old to understand the new."
+      }
+    ]
   }
 }

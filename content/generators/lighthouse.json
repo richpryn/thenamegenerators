@@ -1900,8 +1900,34 @@
       "title": "🗼 Lighthouse Name Generator",
       "tagline": "Lights on points, heads and rocks, haunted towers, cosy cottage lighthouses, fantasy beacons and sci-fi navigation lights, with a description or a keeper's story."
     },
-    "intro": "Every stretch of dangerous coast needs a light, and every light needs a name. This **lighthouse name generator** makes British-style point, head and rock lights, storm-lashed haunted towers, cosy little lighthouses, fantasy sea-lamps and sci-fi beacons, and it can tell you who keeps the lamp burning.",
-    "sections": [],
-    "faqs": []
+    "intro": "A good lighthouse name is the name of the danger it guards: a point, a head, a rock or a skerry, plus Light or Lighthouse. This **lighthouse name generator** makes British-style point, head and rock lights, storm-lashed haunted towers, cosy little lighthouses, fantasy sea-lamps and sci-fi beacons, and it can tell you who keeps the lamp burning.",
+    "sections": [
+      {
+        "heading": "Eight good lighthouse names",
+        "content": "<p>All eight came from the generator, across its five styles:</p><ul><li><strong>Inverellan Skerry Lighthouse</strong>: a Scottish light on a rocky skerry.</li><li><strong>Balvaig Low Light</strong>: one of a pair of lights, the way real leading lights work.</li><li><strong>Iron Ledge Light, whose clock stopped on the night of the storm</strong>: a stormy light with a story.</li><li><strong>Fog Head Light, where the bell rings on calm nights though nobody pulls the rope</strong>: a haunted light that's eerie rather than grim.</li><li><strong>Kittiwake Corner Light</strong>: a cosy little light named after a seabird.</li><li><strong>The Runegleam at Selgarde, whose keeper, Brother Ansel of the Salt Monks, brews potions from seaweed for the fishing village</strong>: a fantasy sea-lamp with its keeper's story.</li><li><strong>Nav Beacon Kittiwake</strong>: a sci-fi beacon that kept the old bird name.</li><li><strong>Selholm High Light, kept for twenty-two years by Edith Stobbs, who grew prize-winning leeks in the shelter of the wall</strong>: a keeper's story that sounds like a real one.</li></ul>"
+      },
+      {
+        "heading": "How lighthouses are named",
+        "content": "<p>The Pharos of Alexandria, one of the Seven Wonders of the ancient world, gave its name to lighthouses across Europe: <em>phare</em> in French and <em>faro</em> in Spanish and Italian. In Britain, lights are named after the place they mark.</p><ul><li><strong>British</strong> names: a Point, Head, Ness, Skerry or Rock, then Light or Lighthouse. A <em>High Light</em> and a <em>Low Light</em> were built as a pair, so ships could line them up to find a safe channel.</li><li><strong>Stormy</strong> names come from the rocks themselves. The first Eddystone lighthouse, off Plymouth, was swept away in the great storm of 1703 with its builder, Henry Winstanley, inside. The Bell Rock lighthouse, finished in 1810, still stands on a reef that is under water at high tide.</li><li><strong>Cosy</strong> names are for a postcard lighthouse: cockles, kittiwakes, cocoa.</li><li><strong>Fantasy</strong> sea-lamps are lanterns, gleams and beacons, kept by dragons, monks and mermaids.</li><li><strong>Sci-fi</strong> beacons keep the old seabird names and add a number.</li></ul><p>Choose <strong>With the keeper's story</strong> for a name and a person. The most famous real keeper's family is the Darlings of the Longstone lighthouse: in 1838 Grace Darling and her father rowed out in a storm to rescue survivors of the wrecked steamer <em>Forfarshire</em>.</p>"
+      },
+      {
+        "heading": "Using a lighthouse name",
+        "content": "<ul><li><strong>For a story,</strong> the keeper's story is a ready-made character, and the stormy descriptions are ready-made openings.</li><li><strong>For a map,</strong> put lighthouses on headlands and reefs, where they'd really be needed.</li><li><strong>For a cosy game or a children's book,</strong> the cosy style keeps it gentle.</li></ul><p>For the water around it, try the <a href=\"sea-name-generator.html\">Sea Name Generator</a>, and for the rocks offshore, the <a href=\"island-name-generator.html\">Island Name Generator</a>. For a lighthouse on a treasure map, there's the <a href=\"pirate-island-name-generator.html\">Pirate Island Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/places-names.html\">place name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good lighthouse names?",
+        "answer": "The place it guards plus Light or Lighthouse: Inverellan Skerry Lighthouse, Balvaig Low Light, Kittiwake Corner Light. For a story, add the keeper, like Selholm High Light, kept for twenty-two years by Edith Stobbs."
+      },
+      {
+        "question": "Why do some lighthouses come in High and Low pairs?",
+        "answer": "A high light and a low light were built so that ships could line them up, one above the other, to steer a safe course into a harbour or channel."
+      },
+      {
+        "question": "Where does the word pharos come from?",
+        "answer": "From the Pharos of Alexandria, the great lighthouse built on the island of Pharos in Egypt. Its name became the word for a lighthouse in Greek, and phare and faro in French, Spanish and Italian."
+      }
+    ]
   }
 }

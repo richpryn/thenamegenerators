@@ -2141,8 +2141,34 @@
       "title": "🚜 Farm Name Generator",
       "tagline": "Cosy names for your Stardew Valley farm, proper British farms, Wild West ranches, funny farms and fantasy farms."
     },
-    "intro": "Every good farm needs a name on the gate. This **farm name generator** gives you cosy and cute names for Stardew Valley and other farming games, British farms, American ranches, punny farms and fantasy farms, each with an optional line about the place.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good farm names usually come from the land, an animal or a family, like <em>Willow Beck Farm</em> or <em>Honeypot Farm</em>, or a pun if you're feeling cheerful. Every good farm needs a name on the gate. This **farm name generator** gives you cosy and cute names for Stardew Valley and other farming games, British farms, American ranches, punny farms and fantasy farms, each with an optional line about the place.",
+    "sections": [
+      {
+        "heading": "Eight good farm names",
+        "content": "<p>All eight came from the generator, across its styles:</p><ul><li><strong>Willow Beck Farm</strong>: a British farm by a stream, beck being the northern word for one.</li><li><strong>Linnet Brow Farm, known for its cider orchard and its bad-tempered gander</strong>: a real-sounding farm with a character in it.</li><li><strong>Flying C Ranch</strong>: an American ranch named after its cattle brand.</li><li><strong>Butterhollow Farm</strong>: a cosy name that suits a farming game.</li><li><strong>Scarecrow and Sugarsnap Farm, with fairy lights strung along the porch</strong>: a cute farm that's easy to picture.</li><li><strong>Unimpressed Cauliflower Farm</strong>: a pun-free funny name that works on its own.</li><li><strong>Pecking Order Farm, where the hens have staged three escapes this month</strong>: a funny farm with a running joke.</li><li><strong>Frostberry Steading, with an orchard of glowing apples that light the lane at night</strong>: a fantasy farm with a little magic.</li></ul>"
+      },
+      {
+        "heading": "How farms get their names",
+        "content": "<ul><li><strong>British farms</strong> are often named after their place in the parish. <em>Home Farm</em> was the farm that supplied the big house, and <em>Manor Farm</em> belonged to the manor. George Orwell's <em>Animal Farm</em> begins at a Manor Farm.</li><li><strong>Old words for the land</strong> fill British farm names: <em>croft</em> (a small enclosed field), <em>brow</em> (the brow of a hill), <em>carr</em> (wet woodland), <em>fold</em> (an animal pen) and <em>-stead</em> (a farmstead). In Scotland a <em>steading</em> is the farm buildings.</li><li><strong>American ranches</strong> take the name of their cattle brand, read aloud: <em>Flying C</em> is a C with wings, <em>Rocking J</em> a J on a rocker, and <em>C Bar A</em> two letters with a bar between.</li></ul><p>Choose a style: <strong>British</strong>, <strong>Ranch</strong>, <strong>Cosy and cute</strong>, <strong>Funny</strong> or <strong>Fantasy</strong>. Choose <strong>With a description</strong> for a line about the place.</p>"
+      },
+      {
+        "heading": "Naming your farm in a game",
+        "content": "<ul><li><strong>In Stardew Valley</strong> and other farming games, you name your farm when you start a new game, so it's worth picking one you'll like for a hundred in-game seasons.</li><li><strong>Match the name to your plans:</strong> a cosy name for a crop farm, a funny one for a farm full of animals.</li><li><strong>Keep it short</strong> if the game shows it on screen often.</li></ul><p>Name the animals too with the <a href=\"farm-animal-name-generator.html\">Farm Animal Name Generator</a>. For the village down the lane, there's the <a href=\"village-name-generator.html\">Village Name Generator</a>, and for a farm with a petting zoo, the <a href=\"zoo-name-generator.html\">Zoo Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/places-names.html\">place name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What should I name my farm in Stardew Valley?",
+        "answer": "Something cosy you'll be happy to see for a long time, like Butterhollow Farm or Honeypot Farm, or a joke like Unimpressed Cauliflower Farm. Choose Cosy and cute or Funny for names like these."
+      },
+      {
+        "question": "What are some traditional British farm names?",
+        "answer": "Names from the land and the parish: Home Farm, Manor Farm, Hill Farm, or a field word like croft, brow or fold, as in Redcroft Farm. Choose British for names built that way."
+      },
+      {
+        "question": "How are ranches named?",
+        "answer": "Many American ranches take the name of their cattle brand, read aloud, like the Flying C or the Rocking J. Choose Ranch for names like these."
+      }
+    ]
   }
 }

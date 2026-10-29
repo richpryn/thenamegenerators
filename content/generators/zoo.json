@@ -2080,8 +2080,34 @@
       "title": "🦒 Zoo Name Generator",
       "tagline": "Classic zoos, safari parks, aquariums, petting farms, silly zoos and menageries of mythical beasts, with a line of description if you want one."
     },
-    "intro": "Opening a new park in Planet Zoo, or need a zoo for a story or game? This **zoo name generator** comes up with classic zoological gardens, drive-through safari parks, aquariums, children's petting farms, funny zoo names and fantasy menageries full of dragons and griffins.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good zoo names usually pair a place with what the zoo is, like <em>Whitden Zoological Park</em> or <em>Manta Reef Aquarium</em>, or go for a pun like <em>Hippo Campus Petting Zoo</em>. Opening a new park in Planet Zoo, or need a zoo for a story or game? This **zoo name generator** comes up with classic zoological gardens, drive-through safari parks, aquariums, children's petting farms, funny zoo names and fantasy menageries full of dragons and griffins.",
+    "sections": [
+      {
+        "heading": "Eight good zoo names",
+        "content": "<p>All eight came from the generator, across its styles:</p><ul><li><strong>The Zoo at Falwell Abbey</strong>: a classic zoo in the grounds of an old house.</li><li><strong>Kifaru Valley Safari Park</strong>: kifaru is Swahili for rhinoceros.</li><li><strong>Leopard Rock Safari Park, with a giraffe-feeding platform at head height</strong>: a safari park with its best moment in the description.</li><li><strong>Walhaven Aquarium, with an otter holt and a puffin cliff</strong>: a seaside aquarium with British wildlife.</li><li><strong>Hopscotch Pet Farm</strong>: a children's farm with a playful name.</li><li><strong>Hippo Campus Petting Zoo</strong>: a pun that works best said out loud.</li><li><strong>Lord Fluffington's Mostly Wild Petting Zoo, where the ducks have taken over the car park</strong>: a funny zoo with a story already running.</li><li><strong>The Royal Menagerie of Zalenn, with a manticore that is much friendlier than it looks</strong>: a fantasy menagerie.</li></ul>"
+      },
+      {
+        "heading": "From menageries to safari parks",
+        "content": "<ul><li><strong>Menageries</strong> came first: collections of animals kept by royalty. The Tower of London kept one for centuries, and its animals went to London Zoo in the 1830s.</li><li><strong>Zoo</strong> is short for zoological garden. London Zoo opened in 1828 as a collection for scientific study, and let the public in from 1847.</li><li><strong>Safari parks</strong>, where you drive through the enclosures, arrived in Britain at Longleat in 1966. Their names often borrow Swahili words: <em>twiga</em> (giraffe), <em>tembo</em> (elephant) and <em>kifaru</em> (rhinoceros).</li><li><strong>Aquariums and sea centres</strong> are named after the coast or a sea creature, and children's farms after something friendly.</li></ul><p>Choose a style: <strong>Classic zoo</strong>, <strong>Safari park</strong>, <strong>Aquarium</strong>, <strong>Petting farm</strong>, <strong>Funny</strong> or <strong>Fantasy</strong>. Choose <strong>With a description</strong> for its star attraction.</p>"
+      },
+      {
+        "heading": "Naming a zoo in a game",
+        "content": "<ul><li><strong>In Planet Zoo,</strong> a name that matches your biggest habitat, like a safari park for the savannah, helps the park feel planned.</li><li><strong>Use the description</strong> as a goal: build the hippo pool you can see from underwater.</li><li><strong>For a story or a toy zoo,</strong> the funny names give the place a personality straight away.</li></ul><p>For the animals themselves, try the <a href=\"farm-animal-name-generator.html\">Farm Animal</a>, <a href=\"black-cat-name-generator.html\">Black Cat</a> and <a href=\"pet-dinosaur-name-generator.html\">Pet Dinosaur</a> name generators. For a park next door, there's the <a href=\"theme-park-name-generator.html\">Theme Park Name Generator</a>, and for a working farm, the <a href=\"farm-name-generator.html\">Farm Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/places-names.html\">place name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good zoo names?",
+        "answer": "A place and the kind of zoo, like Whitden Zoological Park or Manta Reef Aquarium, or a pun like Hippo Campus Petting Zoo. Choose a style to match your park."
+      },
+      {
+        "question": "What should I name my zoo in Planet Zoo?",
+        "answer": "Name it after the kind of park you're building: a safari park for big open habitats, an aquarium for the coast, or a classic zoo in old gardens. Choose With a description for a star attraction to build."
+      },
+      {
+        "question": "What does zoo stand for?",
+        "answer": "It's short for zoological garden, the name London Zoo used when it opened in 1828."
+      }
+    ]
   }
 }
