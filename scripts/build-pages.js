@@ -1807,6 +1807,7 @@ function homeHtml(site) {
   const recent = site.recentlyAdded(6).map(g =>
     `<li><a href="posts/${g.slug}.html"><svg aria-hidden="true" focusable="false"><use href="#i-doc"/></svg><span>${escapeHtml(g.title)}</span><em aria-hidden="true">→</em></a></li>`).join('\n                        ');
   const slugs = site.all.map(g => g.slug);
+  const guides = site.guides().slice(0, 3);
   const rays = `<svg class="rays" viewBox="0 0 96 96" aria-hidden="true" focusable="false"><path d="M48 6 v10 M48 80 v10 M6 48 h10 M80 48 h10 M18 18 l7 7 M71 71 l7 7 M78 18 l-7 7 M25 71 l-7 7" stroke="#efc84a" stroke-width="4" stroke-linecap="round"/></svg>`;
   return `
             <section class="hero" aria-labelledby="hero-title">
@@ -1864,6 +1865,14 @@ function homeHtml(site) {
                     </ul>
                 </section>
             </div>
+${guides.length ? `
+            <section class="section home-guides" aria-labelledby="guides-title">
+                <div class="sec-head"><h2 id="guides-title" class="uh2">Naming guides and inspiration</h2><a class="sec-link" href="guides/index.html">View all guides →</a></div>
+                <p class="sec-sub">Helpful tips, examples and advice to get the most out of our name generators.</p>
+                <div class="guide-cards">
+                    ${guides.map(g => `<a class="trycard hd tap" href="guides/${g.slug}.html">${layout.doodle(g.motif || 'quill', 'doodle try-d')}<span class="try-t"><b>${escapeHtml(g.title)}</b><span>${escapeHtml(g.description || '')}</span></span><em aria-hidden="true">→</em></a>`).join('\n                    ')}
+                </div>
+            </section>` : ''}
 `;
 }
 
@@ -1873,7 +1882,7 @@ function updateStaticPages(site) {
   const footer = layout.siteFooter('');
 
   fillMarkers('index.html', {
-    sprite: layout.svgSprite(['d20']),
+    sprite: layout.svgSprite(['d20', ...site.guides().slice(0, 3).map(g => g.motif || 'quill')]),
     header,
     home: homeHtml(site),
     footer,
@@ -1917,6 +1926,7 @@ function build() {
   }
 
   const site = makeSite(content);
+  layout.setNav({ guides: site.guides().length > 0 });
   for (const dir of [POSTS_DIR, CATEGORIES_DIR, RUNTIME_DIR]) fs.mkdirSync(dir, { recursive: true });
 
   for (const category of content.categories) {

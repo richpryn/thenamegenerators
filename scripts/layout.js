@@ -223,6 +223,11 @@ function menuPages() {
   return MENU.flatMap(group => [...group.links, ...group.more, ...(group.seasonal || [])].map(([href]) => href));
 }
 
+// Optional header links that only appear once there is something to link to.
+const NAV = { guides: false };
+/** Called by the build once it knows what exists (e.g. any naming guides). */
+function setNav(opts) { Object.assign(NAV, opts); }
+
 /** A search box that sends its words to All generators (?q=), which filters on load. */
 function searchForm(prefix, { id = 'nav-q', cls = 'nav-search', placeholder = 'Search generators…', button = '' } = {}) {
   return `<form class="${cls}" action="${prefix}all-generators.html" method="get" role="search">
@@ -263,7 +268,8 @@ function siteHeader(prefix) {
                 <p class="nav-all"><a href="${prefix}all-generators.html">All generators →</a><a href="${prefix}sitemap.html#categories">Every category →</a></p>
               </div>
             </li>
-            <li class="nav-top"><a href="${prefix}about.html">About</a></li>
+${NAV.guides ? `            <li class="nav-top"><a href="${prefix}guides/index.html">Guides</a></li>
+` : ''}            <li class="nav-top"><a href="${prefix}about.html">About</a></li>
             <li class="nav-find">${searchForm(prefix)}</li>
           </ul>
         </nav>
@@ -297,6 +303,6 @@ function stripEmoji(text) {
 
 module.exports = {
   analyticsTag, shareImage, LOGO,
-  SITE_NAME, escapeHtml, asset, searchForm, menuPages, headAssets, stampAssets, bodyScripts, svgSprite, siteHeader, siteFooter,
+  SITE_NAME, escapeHtml, asset, searchForm, setNav, menuPages, headAssets, stampAssets, bodyScripts, svgSprite, siteHeader, siteFooter,
   doodle, sectionBreak, endMark, RELATED_NOTE, categoryMotif, generatorMotif, highlightFirstWord, stripEmoji, categoryLinks,
 };
