@@ -2034,8 +2034,34 @@
       "title": "🌀 Plane Name Generator",
       "tagline": "Names for D&D planes, demiplanes and other dimensions, from bright heavens to roiling chaos."
     },
-    "intro": "Need somewhere beyond the map? This **plane name generator** names D&D planes of existence and other dimensions: elemental planes, heavens, hells, fey and shadow realms, astral and dream planes, and planes of pure chaos, with a short description if you want one.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good plane names, in the D&amp;D sense of planes of existence rather than aeroplanes, describe what the place is made of or what it's for: <em>The Brine Ocean</em> for an elemental plane, <em>The Ivory Terraces</em> for a heaven, <em>The Tiers of Sealed Fates</em> for a hell. This **plane name generator** names D&amp;D planes of existence and other dimensions: elemental planes, heavens, hells, fey and shadow realms, astral and dream planes, and planes of pure chaos, with a short description if you want one.",
+    "sections": [
+      {
+        "heading": "Eight good plane names",
+        "content": "<p>All eight came from the generator, across its six styles:</p><ul><li><strong>Caldira, Plane of Boiling Seas</strong>: an elemental plane with a name and a title, so players can say either.</li><li><strong>The Twelve Floating Mountains</strong>: an earth and air plane described in four words.</li><li><strong>The Ivory Terraces, where the souls of the good rest in endless gardens</strong>: a heaven built in levels, which gives the party somewhere to climb.</li><li><strong>The Tiers of the Tally, where the air smells of sulphur and old parchment</strong>: a hell run on paperwork.</li><li><strong>The Glimmering Courts, where travellers who eat the food can never leave</strong>: a fey plane with the oldest fairy rule of all.</li><li><strong>Palehollow, a grey echo of the world where colours drain away and sounds grow faint</strong>: a shadow plane in a single word.</li><li><strong>The Drift of Waking Dreams, a starry void crossed by ships with silver sails</strong>: an astral plane for travelling through.</li><li><strong>Skrelurra, where gravity is a suggestion rather than a rule</strong>: a chaos plane with harsh sounds to match.</li></ul>"
+      },
+      {
+        "heading": "Planes in D&amp;D and before it",
+        "content": "<p>The idea of an astral plane is older than the game. It came from 19th-century occultism and Theosophy, which described layers of existence beyond the physical world. D&amp;D took the word and built a whole cosmology on it.</p><ul><li><strong>The Inner Planes</strong> are the elements: fire, water, air and earth, and the places where they meet.</li><li><strong>The Outer Planes</strong> are the realms of gods and the afterlife, from the heavens to the hells. Earlier editions arranged them in a ring known as the Great Wheel.</li><li><strong>The Feywild and the Shadowfell</strong> are the 5th edition's echoes of the mortal world: one brighter and wilder, the other grey and drained of life.</li><li><strong>The Astral Plane</strong> is the silvery space between them, crossed by travellers and their ships.</li></ul><p>The generator follows the same divisions, so its names slot into a D&amp;D cosmology or your own. Choose <strong>With a description</strong> for a line about what's there.</p>"
+      },
+      {
+        "heading": "Building your own cosmology",
+        "content": "<ul><li><strong>Name planes after what they're made of</strong> or who lives there. Players remember \"the hell of contracts\" better than an invented word.</li><li><strong>Use a short name and a long one:</strong> <em>Caldira</em> in conversation, <em>Plane of Boiling Seas</em> on the map.</li><li><strong>Give each plane one rule</strong> that makes it different, like not eating the food, or gravity that changes.</li></ul><p>For the hells in more detail, try the <a href=\"demon-realm-name-generator.html\">Demon Realm Name Generator</a>, and for the powers who rule the planes, the <a href=\"god-name-generator.html\">God Name Generator</a>. For the world they all surround, there's the <a href=\"world-name-generator.html\">World Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are some good D&D plane names?",
+        "answer": "Names that describe the plane, like The Brine Ocean for an elemental plane, The Ivory Terraces for a heaven, or Palehollow for a shadow realm. Choose a style for elemental, heavenly, infernal, fey, astral or chaotic planes."
+      },
+      {
+        "question": "What is a plane of existence?",
+        "answer": "In D&D and other fantasy, a separate world or dimension beyond the ordinary one: the elemental planes, the heavens and hells, the realm of the fey, or the starry Astral Plane between them."
+      },
+      {
+        "question": "Are these the official D&D planes?",
+        "answer": "No. They're new names in the same style, so you can add them to an existing D&D cosmology or build your own without borrowing from a published setting."
+      }
+    ]
   }
 }

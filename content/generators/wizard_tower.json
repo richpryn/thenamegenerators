@@ -2209,8 +2209,34 @@
       "title": "🗼 Wizard Tower Name Generator",
       "tagline": "Arcane spires, necromancer towers, star observatories, ruins and wonky follies."
     },
-    "intro": "Every self-respecting mage needs a tower. This **wizard tower name generator** names arcane spires, grim necromancer towers, elemental towers, astronomers' observatories, ruins and eccentric follies, with a short description if you want one.",
-    "sections": [],
-    "faqs": []
+    "intro": "A good wizard tower name tells you about the wizard before you knock: a jewel and a spire for a scholar (<em>The Sapphire Needle of Mallowfell</em>), bones and bells for a necromancer, a star tower for an astronomer. Every self-respecting mage needs a tower. This **wizard tower name generator** names arcane spires, grim necromancer towers, elemental towers, astronomers' observatories, ruins and eccentric follies, with a short description if you want one.",
+    "sections": [
+      {
+        "heading": "Eight good wizard tower names",
+        "content": "<p>All eight came from the generator, across its six styles:</p><ul><li><strong>The Sapphire Needle of Mallowfell</strong>: a jewel, a tall thin tower and a place: the classic arcane pattern.</li><li><strong>Glimford Spire, whose door opens only to someone who speaks its true name</strong>: a scholar's tower with a puzzle at the front door.</li><li><strong>The Spire of the Tolling Bell, whose master has not been seen alive for three centuries</strong>: a necromancer's tower that sounds like a warning.</li><li><strong>Basaltcrag, carved into the side of a cliff, one room per century</strong>: an earth wizard's home that grew slowly.</li><li><strong>Hepzibah's Meteor Tower, whose orrery holds a tiny, burning sun</strong>: an observatory named after the astronomer who built it.</li><li><strong>The Ruined Tower of Broken Wands</strong>: a ruin that tells you how it ended.</li><li><strong>Old Snorkle's Tower and Tea Room</strong>: a funny name for a wizard who has had to diversify.</li><li><strong>The Biscuit Tower, whose wizard has been \"just popping out\" since last spring</strong>: a folly with a mystery in it.</li></ul>"
+      },
+      {
+        "heading": "How towers get their names",
+        "content": "<p>Towers have always been named for who built them or what they were for. Real ones show the pattern: Tycho Brahe's observatory on the island of Hven, built in the 1570s, was called Uraniborg, after Urania, the muse of astronomy. The follies that 18th-century landowners put up on their estates were named after the owner or the view. In fiction the wizard's tower became a type of its own, and Saruman's Orthanc at Isengard is the one most readers picture.</p><ul><li><strong>Arcane</strong> towers are needles, spires and pinnacles, often with a jewel or a colour: <em>The Indigo Spire</em>.</li><li><strong>Necromancer</strong> towers take bones, graves and the names of the dead: <em>The Tower of Ivo the Gravewalker</em>, <em>Dirgemere</em>.</li><li><strong>Elemental</strong> towers name their element: <em>The Tower of Falling Hail</em>, <em>Blazetor</em>.</li><li><strong>Observatories</strong> watch the sky: <em>Clearfell Observatory</em>, <em>The Comet Watch</em>.</li><li><strong>Ruined</strong> towers say what's left: <em>The Roofless Tower of Wickby</em>.</li><li><strong>Funny</strong> towers belong to wizards whose neighbours have complained: <em>Old Whiffle's Extremely Tall Tower</em>.</li></ul><p>Choose <strong>With a description</strong> for a line about the tower itself, which is often the best hook for a visit.</p>"
+      },
+      {
+        "heading": "Using a tower in your story",
+        "content": "<ul><li><strong>Name it after its owner</strong> if the wizard is still alive, and after its fate if they aren't.</li><li><strong>Let the description set the quest:</strong> a door that opens to a true name means someone has to find that name.</li><li><strong>Give each floor a purpose,</strong> from the library to the room nobody goes into.</li></ul><p>For the wizard inside, try the <a href=\"wizard-name-generator.html\">Wizard Name Generator</a>, and for where they trained, the <a href=\"magic-school-name-generator.html\">Magic School Name Generator</a>. For a tower that's become a prison, there's the <a href=\"prison-name-generator.html\">Prison Name Generator</a>, and for one that's fallen, the <a href=\"ruins-name-generator.html\">Ruins Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is a good name for a wizard tower?",
+        "answer": "One that tells you about the wizard: The Sapphire Needle of Mallowfell for a scholar, The Spire of the Tolling Bell for a necromancer, or Hepzibah's Meteor Tower for an astronomer. Choose a style to match your wizard."
+      },
+      {
+        "question": "Can I get a description with the tower name?",
+        "answer": "Yes. Choose With a description for a line about the tower, such as a door that only opens to its true name or a library that is bigger on the inside."
+      },
+      {
+        "question": "Are there funny wizard tower names?",
+        "answer": "Yes. Choose Funny for names like Old Snorkle's Tower and Tea Room or The Biscuit Tower, whose wizard has been \"just popping out\" since last spring."
+      }
+    ]
   }
 }
