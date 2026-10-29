@@ -272,7 +272,12 @@
       "elf_city",
       "dwarf_city",
       "orc_stronghold",
-      "magic_school"
+      "magic_school",
+      "wizard_tower",
+      "plane",
+      "underwater_city",
+      "sky_city",
+      "prison"
     ],
     "eyebrow": "World-building elements",
     "approach": {
@@ -1143,7 +1148,10 @@
       "futuristic",
       "steampunk",
       "post_apocalyptic",
-      "star_wars"
+      "star_wars",
+      "galaxy",
+      "star",
+      "moon"
     ]
   },
   {

@@ -295,6 +295,14 @@
     "elf_city": "leaf-moon",
     "dwarf_city": "hammer",
     "orc_stronghold": "tusks",
-    "magic_school": "wizard-hat"
+    "magic_school": "wizard-hat",
+    "wizard_tower": "staff",
+    "plane": "portal",
+    "underwater_city": "mermaid",
+    "sky_city": "cloud",
+    "prison": "clapper",
+    "galaxy": "planet",
+    "star": "star",
+    "moon": "leaf-moon"
   }
 }
