@@ -273,7 +273,67 @@
       "dwarf_city",
       "orc_stronghold",
       "magic_school"
-    ]
+    ],
+    "guide": {
+      "eyebrow": "World-building elements",
+      "heading": "World-Building: Worlds, Lands and Landscapes",
+      "approach": "<p>Name a world from the outside in. Start with the world and its continents, then the kingdoms on them, then the mountains, rivers and forests that divide them, and the villages and dungeons in between. Each layer can borrow from the one above: a northern continent gives its rivers northern names, and a dwarven kingdom names its mountains in its own tongue. Real landscapes were named the same way, by whoever lived nearby, which is why a fell, a tor and a ben are all hills.</p>",
+      "tips": [
+        "Start big and work down: world, continent, kingdom, then landscape.",
+        "Give each region a language and keep its rivers, hills and towns in it.",
+        "Use the landscape word that fits the place: a fell in the north, a tor in the south-west, a ben in Scotland.",
+        "Name some places after people and events, so the map has a history.",
+        "Keep a list as you go, so the same names don't turn up twice."
+      ],
+      "examples": [
+        {
+          "name": "Sumarland",
+          "type": "CONTINENT",
+          "verdict": "A continent whose name is a translation.",
+          "why": "Old Norse for 'land of summer'. A name with a meaning lets you decide what the first people to arrive thought of the place.",
+          "key": "continent"
+        },
+        {
+          "name": "Pedlar's Law",
+          "type": "LANDMARK",
+          "verdict": "A hill with a story in its name.",
+          "why": "'Law' is an old word for a rounded hill in Scotland and the north of England, as in North Berwick Law. 'Pedlar's' suggests whoever crossed it, or never made it to the other side.",
+          "key": "mountain"
+        },
+        {
+          "name": "Cowslip Covert",
+          "type": "FOREST",
+          "verdict": "A small, gentle wood that sounds completely real.",
+          "why": "A covert is a small wood kept as cover for game, and cowslips are a spring flower of English meadows. Two plain words make a wood you can walk through.",
+          "key": "forest"
+        },
+        {
+          "name": "The Lantern Warren",
+          "type": "DUNGEON",
+          "verdict": "A labyrinth that tells players to bring a light.",
+          "why": "A warren is a maze of burrows, so the name promises tunnels that twist back on themselves; 'lantern' hints that someone, or something, down there keeps the lights on.",
+          "key": "dungeon"
+        }
+      ],
+      "try": [
+        {
+          "key": "fantasy_world",
+          "line": "Worlds and realms, with a title or a meaning."
+        },
+        {
+          "key": "continent",
+          "line": "Continents with a meaning, in classical, northern, elvish and dark styles."
+        },
+        {
+          "key": "mountain",
+          "line": "Peaks and ranges, from British fells to dwarven holds."
+        },
+        {
+          "key": "dungeon",
+          "line": "Crypts, mines and lairs, with a hook for your next session."
+        }
+      ]
+    }
   },
   {
     "name": "D&D",
@@ -887,7 +947,67 @@
       "cafe",
       "fantasy_city",
       "haunted_house"
-    ]
+    ],
+    "guide": {
+      "eyebrow": "World-building elements",
+      "heading": "Places: Kingdoms, Cities and Landmarks",
+      "approach": "<p>Real place names started out as plain descriptions: who lived there, what stood there, or what you'd find when you arrived. Oxford was the ford where oxen crossed; Ashby was the farm by the ash trees. Over centuries the words wore smooth, which is why they sound natural rather than invented. The best fantasy places work the same way. Decide what the place is known for, choose an old-sounding word for it, and add an ending that says what kind of place it is: a ford, a haven, a hold, a mere.</p>",
+      "tips": [
+        "Name a place after what's there: a river crossing, a mine, a market, a ruin.",
+        "Give each region one language, so its towns sound related.",
+        "Let old places sound worn down: York began as Eboracum and became Eoforwic and Jorvik on the way.",
+        "Say it out loud. If it's hard to say, players will rename it for you.",
+        "Search the name before you publish, in case it's a real town or someone else's setting."
+      ],
+      "examples": [
+        {
+          "name": "Ebonwold",
+          "type": "KINGDOM",
+          "verdict": "A dark kingdom you can picture before you see the map.",
+          "why": "Combines 'ebon' (black, as in ebony) with 'wold', an Old English word for forest or high ground. A kingdom of black woods, in two syllables.",
+          "key": "kingdom"
+        },
+        {
+          "name": "Ferryhaven",
+          "type": "CITY",
+          "verdict": "A river port that sounds like it has been trading for centuries.",
+          "why": "Combines 'ferry' (a river crossing) with 'haven' (a safe harbour). Both are plain English words, so it reads like a real place that grew up around its trade.",
+          "key": "fantasy_city"
+        },
+        {
+          "name": "Candleworth",
+          "type": "VILLAGE",
+          "verdict": "A craft village you can smell from the road.",
+          "why": "Combines 'candle' with '-worth', an Old English word for an enclosed settlement, as in Tamworth. It sounds like the village where the chandlers lived, which is exactly how real names began.",
+          "key": "fantasy_town"
+        },
+        {
+          "name": "Llyn y Gloch",
+          "type": "LANDMARK",
+          "verdict": "A lake that comes with a legend attached.",
+          "why": "Welsh for 'lake of the bell'. A bell in a lake suggests a drowned church or a sunken village, the kind of story real Welsh lakes are known for.",
+          "key": "lake"
+        }
+      ],
+      "try": [
+        {
+          "key": "fantasy_town",
+          "line": "Towns built from real English endings, from fishing ports to mining towns."
+        },
+        {
+          "key": "fantasy_city",
+          "line": "Capitals, ports and fortress cities, with an epithet if you want one."
+        },
+        {
+          "key": "fantasy_country",
+          "line": "Kingdoms and empires in six styles, from elvish to Norse."
+        },
+        {
+          "key": "tavern",
+          "line": "The inn every adventure starts in, named the way real pubs were."
+        }
+      ]
+    }
   },
   {
     "name": "Elder Scrolls",

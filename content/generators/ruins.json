@@ -593,7 +593,6 @@
         "Westerholt",
         "Ulverby",
         "Penhallow",
-        "Tregarron",
         "Rookwood",
         "Briarmoor",
         "Eskdale",
@@ -651,7 +650,6 @@
         "Ravell",
         "Greaves",
         "Hartigan",
-        "Montague",
         "Ashcastle",
         "Wyvernsby",
         "Stanhope",
@@ -1300,8 +1298,34 @@
       "title": "🏚️ Ruins Name Generator",
       "tagline": "Fallen cities, roofless castles and drowned towns, and the stories of how they fell."
     },
-    "intro": "Every ruin was once somewhere people lived, and a good name hints at what went wrong. This **ruins name generator** makes names for D&D and fantasy ruins in seven styles, from ancient cities and fallen castles to jungle, desert, sunken, elven and dwarven ruins, and can add a line on what happened there.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good ruin names hint at what the place used to be and what went wrong: <em>Old Halikar</em>, <em>Drowned Meridune</em>, <em>What Remains of Mallorscar Keep</em>. Every ruin was once somewhere people lived. This **ruins name generator** makes names for D&amp;D and fantasy ruins in seven styles, from ancient cities and fallen castles to jungle, desert, sunken, elven and dwarven ruins, and can add a line on what happened there.",
+    "sections": [
+      {
+        "heading": "Eight good ruin names",
+        "content": "<p>All eight came from the generator, across its seven styles:</p><ul><li><strong>Old Halikar</strong>: \"Old\" in front of a city's name is the simplest way to say it has fallen.</li><li><strong>The Toppled Towers of Ilyrith, forgotten after the trade roads moved east</strong>: a city that died slowly, as real ones often did.</li><li><strong>What Remains of Mallorscar Keep</strong>: a castle ruin that tells you there isn't much left.</li><li><strong>The Ruins of Rookwood Tower, lost in a card game and never claimed</strong>: a fate with a joke in it.</li><li><strong>The Strangled Gardens of Kalevu, split apart by the roots of a single giant fig tree</strong>: a jungle ruin the forest is taking back.</li><li><strong>Drowned Meridune, sunk in a single night after its queen angered the sea</strong>: a sunken city with a legend attached.</li><li><strong>Tirasel the Forsaken, left behind when its people grew weary of the world</strong>: an elven ruin abandoned rather than destroyed.</li><li><strong>Lost Tordunmar, sealed by its last king, with the door locked from inside</strong>: a dwarven hold that raises an obvious question.</li></ul>"
+      },
+      {
+        "heading": "How real ruins are named",
+        "content": "<p>Real ruins usually keep the name of what they were, with a word added once they fall. Old Sarum is the hilltop site of the first Salisbury, abandoned when the town moved down to the river. Roman forts left their mark in the Old English <em>ceaster</em>: Chesters, on Hadrian's Wall, is simply \"the fort\". An Old English poem known as <em>The Ruin</em>, kept in the Exeter Book, describes broken walls and hot baths, and is often thought to be about Roman Bath.</p><ul><li><strong>Ancient cities</strong> take Old, Lost or the Fallen: <em>Caldessa the Fallen</em>.</li><li><strong>Fallen castles</strong> keep the family or the keep: <em>The Fallen Seat of House Fenwick</em>.</li><li><strong>Jungle</strong> and <strong>desert</strong> ruins are named for what has buried them: vines, roots or sand.</li><li><strong>Sunken</strong> ruins are Drowned or Sunken, with coral and kelp in the streets.</li><li><strong>Elven</strong> ruins are white stones and silver bowers; <strong>dwarven</strong> ones are halls, gates and thrones.</li></ul><p>Choose <strong>With its fate</strong> for a line on how it fell, from a flood that rose for forty days to a famine and wolves.</p>"
+      },
+      {
+        "heading": "Using a ruin in your game",
+        "content": "<ul><li><strong>Decide how it fell.</strong> The fate tells you what's still there: a flood leaves silt, a fire leaves ash, a curse leaves something waiting.</li><li><strong>Give it two names.</strong> What it was called once, and what the locals call it now.</li><li><strong>Put a clue in the name.</strong> \"Sealed from inside\" is a question players will want answered.</li></ul><p>To fill it with traps and treasure, try the <a href=\"dungeon-name-generator.html\">Dungeon Name Generator</a>. For the castle before it fell, there's the <a href=\"castle-name-generator.html\">Castle Name Generator</a>, and for a ruined place of worship, the <a href=\"temple-name-generator.html\">Temple Name Generator</a>. Dwarven and elven ruins pair well with the <a href=\"dwarf-city-name-generator.html\">Dwarf City</a> and <a href=\"elf-city-name-generator.html\">Elf City</a> name generators.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good names for ruins?",
+        "answer": "The old name with a word that says it has fallen: Old Halikar, Drowned Meridune, What Remains of Mallorscar Keep. Choose With its fate to add how it fell."
+      },
+      {
+        "question": "How do you name a ruined city?",
+        "answer": "Start with what the city was called, then add Old, Lost, Drowned or the Fallen, or describe what's left: the toppled towers, the dry fountains."
+      },
+      {
+        "question": "Can I use these for D&D dungeons?",
+        "answer": "Yes. A ruin with a fate is a ready-made adventure: the fate tells you what the players will find inside."
+      }
+    ]
   }
 }

@@ -1342,7 +1342,6 @@
         "Ostara Prime",
         "Halvex",
         "Morrowmere",
-        "Tessaract",
         "Valkis",
         "Drayne",
         "Kessarine",
@@ -1606,8 +1605,34 @@
       "title": "🛡️ Fortress Name Generator",
       "tagline": "Bastions, fastnesses, orc stockades and border forts, from Oathwall to Fortress World Keldris."
     },
-    "intro": "A castle is a home with walls, but a fortress exists to hold the line. This **fortress name generator** builds names for heroic bastions, dwarven fastnesses, orc strongholds, dark citadels, frontier forts and sci-fi fortress worlds, with an optional line of history for your campaign.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good fortress names sound like they'll never fall: <em>Dawnward</em>, <em>Kaldnar Fastness</em>, <em>Fort Steadfast</em>. A castle is a home with walls, but a fortress exists to hold the line. This **fortress name generator** builds names for heroic bastions, dwarven fastnesses, orc strongholds, dark citadels, frontier forts and sci-fi fortress worlds, with an optional line of history for your campaign.",
+    "sections": [
+      {
+        "heading": "Eight good fortress names",
+        "content": "<p>All eight came from the generator, across its six styles:</p><ul><li><strong>Dawnward</strong>: a one-word name for a fortress that faces the enemy at sunrise.</li><li><strong>Vigilgate, where the paladins train their squires</strong>: a heroic fortress with a purpose.</li><li><strong>Kaldnar Fastness, that held out against goblins for forty winters</strong>: a dwarven stronghold with a reputation.</li><li><strong>Kragzug, whose chieftain wears a crown made of a cooking pot</strong>: an orc stronghold with a sense of humour.</li><li><strong>The Smouldering Bulwark, its gates carved with the faces of the conquered</strong>: a dark fortress you don't want to visit.</li><li><strong>Fort Ashwell, manned by twelve soldiers and a very old dog</strong>: a frontier fort that's barely holding on.</li><li><strong>Fort Hawk Ridge, its commander a disgraced knight with something to prove</strong>: a frontier post with a ready-made NPC.</li><li><strong>Redoubt Theta, commanded by an AI that has never slept</strong>: a sci-fi fortress with a military code name.</li></ul>"
+      },
+      {
+        "heading": "How fortresses got their names",
+        "content": "<p>Many British place names began as fortifications. Alfred the Great built a network of <em>burhs</em>, fortified towns, against the Vikings, and the Old English <em>burh</em> survives in endings like -bury and -borough. Older still, the Roman <em>castra</em>, a military camp, gave English the -chester, -caster and -cester of Chester, Lancaster and Leicester. Before both, Iron Age people built hillforts like Maiden Castle in Dorset, one of the largest in Britain.</p><ul><li><strong>Fantasy</strong> fortresses use words for holding the line: ward, wall, gate, bulwark, redoubt.</li><li><strong>Dwarven</strong> ones are fastnesses, an old word for a stronghold, cut into the rock.</li><li><strong>Orcish</strong> strongholds are named for what's nailed to the gate: <em>Three Skulls Stronghold</em>.</li><li><strong>Dark</strong> fortresses are citadels of ash and doom.</li><li><strong>Frontier</strong> forts are stockades, blockhouses and lookouts named for the nearest landmark.</li><li><strong>Sci-fi</strong> fortresses take code names with Greek letters: <em>Sentinel Lambda</em>.</li></ul><p>Choose <strong>With a line of history</strong> for something worth knowing about it, from its armoury to its commander.</p>"
+      },
+      {
+        "heading": "Using a fortress in your campaign",
+        "content": "<ul><li><strong>Ask what it guards.</strong> A pass, a ford, a border or a secret: the answer shapes the name.</li><li><strong>Give it a siege.</strong> A fortress that held for forty winters has veterans and ghosts.</li><li><strong>Fortress or castle?</strong> If a family lives in it, it's a castle. If an army does, it's a fortress.</li></ul><p>For a home with walls, try the <a href=\"castle-name-generator.html\">Castle Name Generator</a>, and for what's underneath, the <a href=\"dungeon-name-generator.html\">Dungeon Name Generator</a>. Dwarven and orcish fortresses pair with the <a href=\"dwarf-city-name-generator.html\">Dwarf City</a> and <a href=\"orc-city-name-generator.html\">Orc Stronghold</a> name generators, and a fallen fortress with the <a href=\"ruins-name-generator.html\">Ruins Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good fortress names?",
+        "answer": "Names about holding the line: Dawnward, Vigilgate, Kaldnar Fastness or Fort Steadfast. Choose a style for dwarven, orcish, dark, frontier or sci-fi fortresses."
+      },
+      {
+        "question": "What's the difference between a fortress and a castle?",
+        "answer": "A castle is a fortified home, usually a lord's. A fortress is built for war and garrisoned by soldiers, and may have no lord living in it at all."
+      },
+      {
+        "question": "What is a fastness?",
+        "answer": "An old word for a stronghold, a place made secure. It suits dwarven holds cut deep into a mountain."
+      }
+    ]
   }
 }

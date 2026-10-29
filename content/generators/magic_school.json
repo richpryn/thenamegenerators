@@ -21,9 +21,9 @@
       ],
       "optionLabels": {
         "any": "Any style",
-        "academy": "Grand academy (Rowanhurst)",
+        "academy": "Grand academy (Yewvale Lyceum)",
         "witch": "Witch school (Moonwort Hall)",
-        "college": "Wizard college (Quillcombe)",
+        "college": "Wizard college (Owlholme Hall)",
         "hidden": "Secret school (the Hidden…)",
         "little": "Little ones (Acorn Spellery)"
       }
@@ -1764,8 +1764,34 @@
       "title": "🪄 Magic School Name Generator",
       "tagline": "Grand academies, witch schools, wizard colleges and secret schools, with mottos."
     },
-    "intro": "Every young spellcaster needs somewhere to learn. This **magic school name generator** gives you grand academies, witch schools, old wizard colleges, hidden schools and cosy schools for little witches and wizards, with a motto or a short description if you want one.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good magic school names sound old and a little grand, usually a place name plus Academy, College or Hall, like Hollyholme Academy or Quillford College, and the best ones come with a motto. Every young spellcaster needs somewhere to learn. This **magic school name generator** gives you grand academies, witch schools, old wizard colleges, hidden schools and cosy schools for little witches and wizards, with a motto or a short description if you want one.",
+    "sections": [
+      {
+        "heading": "Eight good magic school names",
+        "content": "<p>All eight came from the generator, across its five kinds of school:</p><ul><li><strong>Hollyholme Academy of Wandcraft</strong>: a grand academy with a subject in its name.</li><li><strong>Lindenley Royal Academy, motto “Sic itur ad astra”</strong>: \"thus one goes to the stars\", a line from Virgil.</li><li><strong>Dame Nettlebed's Academy for Young Witches, motto “Stir clockwise, think twice”</strong>: a witch school with practical advice.</li><li><strong>Heronhurst College of Familiars, motto “Festina lente”</strong>: \"make haste slowly\", good advice for anyone with a familiar.</li><li><strong>The College of Runes at Quillcliffe</strong>: an old wizard college named like a university.</li><li><strong>The School of Locked Doors</strong>: a secret school that tells you how hard it is to find.</li><li><strong>Number Twenty-Two, Candle Row</strong>: a hidden school disguised as an ordinary address.</li><li><strong>Toadstool Hill Charm School</strong>: a cosy school for the youngest witches and wizards.</li></ul>"
+      },
+      {
+        "heading": "Academies, colleges and mottos",
+        "content": "<p>Fictional magic schools borrow from real ones. Hogwarts has a Latin motto, <em>Draco dormiens nunquam titillandus</em>, \"never tickle a sleeping dragon\", and Terry Pratchett's Unseen University is named like an old university with a joke attached. Words like <em>lyceum</em> go back further still: the Lyceum was the school in Athens where Aristotle taught.</p><ul><li><strong>Grand academies</strong> are royal, ancient or sovereign: <em>The Sovereign Academy of Transmutation</em>.</li><li><strong>Witch schools</strong> are named after herbs and headmistresses: <em>Vervain House</em>, <em>Dame Sloe's School for Witches</em>.</li><li><strong>Wizard colleges</strong> sound like Oxford or Cambridge: <em>Lanternford College</em>.</li><li><strong>Secret schools</strong> are under, behind or beyond something: <em>The Academy Below the Library</em>.</li><li><strong>Little ones</strong> are nurseries and charm schools: <em>Ladybird Magic Nursery</em>.</li></ul><p>Choose <strong>With a motto</strong> for a school motto. The Latin mottos are real Latin, many of them famous lines, and come with a translation: <em>Sapere aude</em>, \"dare to be wise\", is from the Roman poet Horace. The witch and little-ones schools get English mottos instead, like <em>Brew kindly</em>.</p>"
+      },
+      {
+        "heading": "Building a magic school",
+        "content": "<ul><li><strong>Give it houses or colleges</strong> named after its founders, so students have a side to be on.</li><li><strong>Use the description</strong> as a hook: a clock that runs backwards on feast days is the start of a mystery.</li><li><strong>Choose the motto last,</strong> once you know what the school values.</li></ul><p>For the students and staff, try the <a href=\"wizard-name-generator.html\">Wizard</a> and <a href=\"witch-name-generator.html\">Witch</a> name generators. For what they learn, there's the <a href=\"spell-name-generator.html\">Spell Name Generator</a>, and for the witches who meet after hours, the <a href=\"coven-name-generator.html\">Coven Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good magic school names?",
+        "answer": "Old-sounding place names with Academy, College or Hall, like Hollyholme Academy of Wandcraft or Lanternford College, or a cosy witch school like Vervain House. Add a motto for the full effect."
+      },
+      {
+        "question": "Are the Latin mottos real Latin?",
+        "answer": "Yes. They're real Latin phrases, many of them well known, such as Festina lente (make haste slowly) and Sapere aude (dare to be wise), each with a translation."
+      },
+      {
+        "question": "Is there a magic school name for young children?",
+        "answer": "Yes. Choose Little ones for cosy names like Toadstool Hill Charm School, with gentle mottos like “Every wand starts small”."
+      }
+    ]
   }
 }

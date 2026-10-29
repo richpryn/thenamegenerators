@@ -22,12 +22,12 @@
       ],
       "optionLabels": {
         "any": "Any style",
-        "medieval": "Medieval (Ravendale Castle)",
-        "fantasy": "Fantasy (Silverspire)",
+        "medieval": "Medieval (Dunholt Tower)",
+        "fantasy": "Fantasy (Stormspire)",
         "dark": "Dark (Castle Morvane)",
-        "elven": "Elven (Ithrendel)",
+        "elven": "Elven (Tower of Ithorath)",
         "dwarven": "Dwarven (Hammerdeep)",
-        "fairytale": "Fairy tale (Swanmere Palace)"
+        "fairytale": "Fairy tale (Clairelune Palace)"
       }
     },
     "format": {

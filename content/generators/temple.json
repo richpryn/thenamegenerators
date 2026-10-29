@@ -457,8 +457,6 @@
         "Brightwell",
         "Gildenford",
         "Lightholt",
-        "Halloway",
-        "Whitford",
         "Larksby",
         "Morrowby",
         "Tapersby",
@@ -673,7 +671,6 @@
         "Witchford",
         "Gallowcombe",
         "Gauntmere",
-        "Mournholt",
         "Blackthwaite Fen",
         "Moth Hollow"
       ],
@@ -1582,8 +1579,34 @@
       "title": "🛕 Temple Name Generator",
       "tagline": "Holy sanctuaries, hidden cult fanes and lost ziggurats, each with a god of its own."
     },
-    "intro": "Every temple in a fantasy world says something about the god inside it. This **temple name generator** makes temple names for D&D and fantasy writing in six styles, from sunlit sanctuaries and druid circles to cult fanes and mountain monasteries, and can tell you which invented god is worshipped there.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good temple names tell you who is worshipped there and how: a sunlit <em>Sanctuary of Gentle Rain</em>, a druid's <em>Rowanmere Henge</em>, a cult's <em>Veilfane</em>. This **temple name generator** makes temple names for D&amp;D and fantasy writing in six styles, from sunlit sanctuaries and druid circles to cult fanes and mountain monasteries, and can tell you which invented god is worshipped there.",
+    "sections": [
+      {
+        "heading": "Eight good temple names",
+        "content": "<p>All eight came from the generator, across its six styles:</p><ul><li><strong>The Abbey of the Hundred Lamps</strong>: a holy house you can picture lit up at night.</li><li><strong>Haloreach, sacred to a sun god who runs the sky as a golden stag</strong>: a holy name with a god you can picture.</li><li><strong>Veilfane, dedicated to a goddess of night, secrets and poison</strong>: a cult temple in one short, hissing word.</li><li><strong>Rowanmere Henge</strong>: a druid circle by a lake of rowan trees.</li><li><strong>The Sanctum of the Glacier Mother</strong>: an elemental temple to the ice itself.</li><li><strong>The Fane of the First Kings</strong>: an ancient temple, older than anyone's records.</li><li><strong>The Temple of the Jade Tortoise</strong>: an eastern temple named for a sacred animal.</li><li><strong>The Hall of the Iron Fist, where warrior monks honour a god of discipline and courage</strong>: a monastery with a job to do.</li></ul>"
+      },
+      {
+        "heading": "How temples get their names",
+        "content": "<p>Temples have usually been named after the god inside them. The Parthenon in Athens takes its name from Athena Parthenos, \"Athena the maiden\", and the Romans called a god's temple an <em>aedes</em>, a house. Several old English words for holy places still turn up on maps:</p><ul><li><strong>Fane</strong>, from the Latin <em>fanum</em>, a sacred place. It's the word the generator uses for dark and ancient temples.</li><li><strong>Minster</strong>, from the Latin <em>monasterium</em> by way of Old English: York Minster, Westminster.</li><li><strong>-church</strong> and <strong>-kirk</strong>, from English and Norse: Ormskirk, Falkirk.</li><li><strong>Henge</strong>, which archaeologists borrowed from Stonehenge itself.</li></ul><p>The styles follow the kind of faith: <strong>holy</strong> abbeys and sanctuaries, <strong>dark</strong> fanes and undercrofts, <strong>druidic</strong> groves and stone rings, <strong>elemental</strong> spires and fonts, <strong>ancient</strong> ziggurats and pyramids, and <strong>eastern</strong> pavilions and pagodas. Choose <strong>With its god</strong> to add who is worshipped, like <em>Hartstone, sacred to a tree goddess whose roots hold up the land</em>.</p>"
+      },
+      {
+        "heading": "Using a temple in your world",
+        "content": "<ul><li><strong>Let the god shape the building.</strong> A god of the sea gets a harbour shrine; a god of secrets gets an undercroft.</li><li><strong>Give the temple a rule.</strong> No iron inside, no speaking after dusk: one custom makes it memorable.</li><li><strong>Ruined temples are adventures.</strong> An ancient fane that nobody remembers is a ready-made dungeon.</li></ul><p>Name the god with the <a href=\"god-name-generator.html\">God Name Generator</a> and the priest with the <a href=\"cleric-name-generator.html\">Cleric Name Generator</a>. For a temple that has fallen, try the <a href=\"ruins-name-generator.html\">Ruins Name Generator</a>, and for the halls beneath it, the <a href=\"dungeon-name-generator.html\">Dungeon Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good temple names for D&D?",
+        "answer": "Names that tell you about the god: The Abbey of the Hundred Lamps for a god of light, Veilfane for a goddess of secrets, Rowanmere Henge for a nature cult. Choose With its god to add the deity."
+      },
+      {
+        "question": "What is a fane?",
+        "answer": "An old word for a temple, from the Latin fanum, a sacred place. It sounds older and darker than temple, which suits cults and lost faiths."
+      },
+      {
+        "question": "Are the gods real?",
+        "answer": "No. Every god the generator mentions is invented, so you can build your own pantheon around them."
+      }
+    ]
   }
 }

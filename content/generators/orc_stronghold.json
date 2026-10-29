@@ -22,9 +22,9 @@
       "optionLabels": {
         "any": "Any style",
         "war": "War camp (Red Banner Camp)",
-        "mountain": "Mountain hold (Tuskcrag)",
+        "mountain": "Mountain hold (Bragtooth)",
         "swamp": "Goblin warren (Muckwallow)",
-        "ruins": "Ruin squat (Rubbletown)",
+        "ruins": "Ruin squat (Kulnakh Scrapyard)",
         "capital": "Horde capital (Ghornakh)"
       }
     },
@@ -1785,8 +1785,34 @@
       "title": "🪓 Orc Stronghold Name Generator",
       "tagline": "War camps, mountain holds, goblin warrens and horde capitals for your orcs."
     },
-    "intro": "Every orc warband needs somewhere to bang its drums. This **orc stronghold name generator** gives you orc city, fortress and camp names: war camps, mountain holds, swampy goblin warrens, ruined cities the orcs have moved into and great horde capitals, with a short description if you want one.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good orc stronghold names are short and blunt, or plain descriptions of something ugly: Skargash, Fangfell, Bannerditch. Every orc warband needs somewhere to bang its drums. This **orc stronghold name generator** gives you orc city, fortress and camp names: war camps, mountain holds, swampy goblin warrens, ruined cities the orcs have moved into and great horde capitals, with a short description if you want one.",
+    "sections": [
+      {
+        "heading": "Eight good orc stronghold names",
+        "content": "<p>All eight came from the generator, across its five kinds of stronghold:</p><ul><li><strong>The Nine Banners</strong>: a war camp named after how many warbands answered the call.</li><li><strong>Split Axe Stockade</strong>: a camp with a wooden wall and a broken weapon on its sign.</li><li><strong>Hobspire, that has never been taken by siege</strong>: a mountain hold that boasts in its description.</li><li><strong>Toadwallow, where stolen chickens are kept in the throne room</strong>: a goblin warren that's funny and grim at once.</li><li><strong>The Stolen Lighthouse</strong>: a ruin the orcs have moved into.</li><li><strong>The Hollow Opera House</strong>: a grand old building with new and noisy tenants.</li><li><strong>Zharmur of the Thousand Tents</strong>: a horde capital that's mostly camp.</li><li><strong>Uzkar, where the war chief rules from a throne of boar tusks</strong>: a capital with a throne to describe.</li></ul>"
+      },
+      {
+        "heading": "How orcs name their strongholds",
+        "content": "<p>Orc strongholds in games tend to be named in one of two ways: a hard name in the orcs' own tongue, or a plain description in the common one. Warcraft's orc capital, Orgrimmar, is named after the warchief Orgrim Doomhammer. Skyrim's orc strongholds, like Dushnikh Yal and Largashbur, each have a chief and a code of their own.</p><p>The generator has five kinds:</p><ul><li><strong>War camps</strong> are temporary and named for banners and boots: <em>Snarling Boot War Camp</em>.</li><li><strong>Mountain holds</strong> are crags and keeps: <em>The Horns of Kraguth</em>, <em>Crackfell</em>.</li><li><strong>Goblin warrens</strong> are damp and crowded: <em>Grubbog</em>, <em>Mouldmire</em>.</li><li><strong>Ruin squats</strong> are captured towns the orcs have renamed: <em>Scrapgate</em>, <em>Chimneystack</em>.</li><li><strong>Horde capitals</strong> are the big ones: <em>Ghornarr</em>, <em>The Throne of Kragnakh</em>.</li></ul><p>Choose <strong>With a description</strong> for a line that tells you what makes the place memorable.</p>"
+      },
+      {
+        "heading": "Using an orc stronghold",
+        "content": "<ul><li><strong>Ruin squats make good adventures:</strong> the old kingdom still claims the place on its maps.</li><li><strong>A war camp moves,</strong> so the players might have to track it.</li><li><strong>Give the capital one custom:</strong> a feast, a wrestling challenge, a drum. It makes the orcs a people, not just enemies.</li></ul><p>For the orcs who live there, try the <a href=\"orc-name-generator.html\">Orc</a>, <a href=\"skyrim-orc-name-generator.html\">Skyrim Orc</a> and <a href=\"wow-orc-name-generator.html\">WoW Orc</a> name generators. For the walls they're attacking, there's the <a href=\"fortress-name-generator.html\">Fortress</a> and <a href=\"castle-name-generator.html\">Castle</a> name generators, and for the dwarves under the next mountain, the <a href=\"dwarf-city-name-generator.html\">Dwarf City Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good orc stronghold names?",
+        "answer": "Short, hard names like Skargash or Ghornarr, or blunt descriptions like Fangfell, Bannerditch or Split Axe Stockade. Choose a kind of stronghold to match how settled the orcs are."
+      },
+      {
+        "question": "What should I call an orc war camp?",
+        "answer": "After its banners or its warbands, like The Nine Banners or Snarling Boot War Camp. War camps move, so their names are simple and practical."
+      },
+      {
+        "question": "Can I use these for goblins too?",
+        "answer": "Yes. Choose Goblin warren for damp, crowded names like Grubbog and Toadwallow."
+      }
+    ]
   }
 }
