@@ -55,7 +55,8 @@ function cardHtml(page) {
   const drawing = page.drawing.svg
     ? page.drawing.svg.replace('class="doodle wob"', 'class="art"')
     : `<svg class="art" viewBox="0 0 48 48" aria-hidden="true"><use href="#m-${page.drawing.motif}"/></svg>`;
-  const sprite = layout.svgSprite(page.drawing.motif ? [page.drawing.motif] : []);
+  // Image drawings use site-root paths; the card is rendered from file://, so make them relative to <base>
+  const sprite = layout.svgSprite(page.drawing.motif ? [page.drawing.motif] : []).replace(/href="\/images\//g, 'href="images/');
   return `<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8">
 <base href="file://${ROOT}/">
