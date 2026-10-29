@@ -264,7 +264,15 @@
       "sea",
       "desert",
       "swamp",
-      "cave"
+      "cave",
+      "temple",
+      "ruins",
+      "valley",
+      "fortress",
+      "elf_city",
+      "dwarf_city",
+      "orc_stronghold",
+      "magic_school"
     ]
   },
   {

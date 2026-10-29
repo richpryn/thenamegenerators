@@ -287,6 +287,14 @@
     "sea": "longship",
     "desert": "sun-amulet",
     "swamp": "mushroom",
-    "cave": "pickaxe"
+    "cave": "pickaxe",
+    "temple": "column",
+    "ruins": "column",
+    "valley": "mountain",
+    "fortress": "round-shield",
+    "elf_city": "leaf-moon",
+    "dwarf_city": "hammer",
+    "orc_stronghold": "tusks",
+    "magic_school": "wizard-hat"
   }
 }
