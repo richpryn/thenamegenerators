@@ -85,7 +85,7 @@
             "The [ruin.adj] [ruin.noun] of [owners]",
             "[owners]'s [ruin.poss]",
             "The Ruins of [owners]'s [ruin.poss]",
-            "Old [places] Castle",
+            "[places] Castle",
             "[lair.wizards]'s [lair.poss]",
             "[lair.wizards]'s [lair.poss]",
             "[lair.wizards]'s [lair.poss]",
@@ -174,7 +174,7 @@
             "The [ruin.adj] [ruin.noun] of [owners]",
             "[owners]'s [ruin.poss]",
             "The Ruins of [owners]'s [ruin.poss]",
-            "Old [places] Castle"
+            "[places] Castle"
           ]
         },
         "lair": {
@@ -284,7 +284,7 @@
             "The [ruin.adj] [ruin.noun] of [owners]: [hooks.ruin]",
             "[owners]'s [ruin.poss]: [hooks.ruin]",
             "The Ruins of [owners]'s [ruin.poss]: [hooks.ruin]",
-            "Old [places] Castle: [hooks.ruin]",
+            "[places] Castle: [hooks.ruin]",
             "[lair.wizards]'s [lair.poss]: [hooks.lair]",
             "[lair.wizards]'s [lair.poss]: [hooks.lair]",
             "[lair.wizards]'s [lair.poss]: [hooks.lair]",
@@ -373,7 +373,7 @@
             "The [ruin.adj] [ruin.noun] of [owners]: [hooks.ruin]",
             "[owners]'s [ruin.poss]: [hooks.ruin]",
             "The Ruins of [owners]'s [ruin.poss]: [hooks.ruin]",
-            "Old [places] Castle: [hooks.ruin]"
+            "[places] Castle: [hooks.ruin]"
           ]
         },
         "lair": {

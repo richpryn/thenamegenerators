@@ -256,7 +256,15 @@
       "island",
       "village",
       "castle",
-      "dungeon"
+      "dungeon",
+      "forest",
+      "mountain",
+      "river",
+      "lake",
+      "sea",
+      "desert",
+      "swamp",
+      "cave"
     ]
   },
   {
