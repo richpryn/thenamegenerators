@@ -1551,8 +1551,34 @@
       "title": "🌲 Forest Name Generator",
       "tagline": "Enchanted forests, elven glades, haunted woods and good old English copses for your maps and stories."
     },
-    "intro": "Every map needs a forest, and every forest needs a name the players will remember. This **forest name generator** gives you enchanted fantasy forests, elven woods, dark and haunted forests for your D&D campaign, and English woods, chases and holts named the way real ones are, with a line of description if you want one.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good forest names say what kind of wood it is before anyone walks in: <em>Foxglove Shaw</em> sounds like a Sunday walk, <em>The Hungry Thicket</em> does not. Every map needs a forest, and every forest needs a name the players will remember. This **forest name generator** gives you enchanted fantasy forests, elven woods, dark and haunted forests for your D&amp;D campaign, and English woods, chases and holts named the way real ones are, with a line of description if you want one.",
+    "sections": [
+      {
+        "heading": "Eight good forest names",
+        "content": "<p>All eight came from the generator, across its styles:</p><ul><li><strong>Honeyweald Forest</strong>: <em>weald</em> is the Old English word for forest, made sweet.</li><li><strong>The Forest of Painted Leaves</strong>: a fantasy wood that's beautiful rather than dangerous.</li><li><strong>The Moonlit Woods of Ithennis</strong>: an elven forest with a flowing name and a time of day.</li><li><strong>Drearshaw</strong>: a dark wood with an old English ending, <em>shaw</em>, for a small wood.</li><li><strong>The Watching Copse</strong>: a small wood that feels too big for its name.</li><li><strong>Tedholt Chase</strong>: a hunting chase with <em>holt</em>, another Old English word for wood.</li><li><strong>Church Spinney</strong>: a real-sounding English wood named after what stands beside it.</li><li><strong>Spellweald, where it is always the first week of spring</strong>: a magical forest with its story in the description.</li></ul>"
+      },
+      {
+        "heading": "How real woods and forests got their names",
+        "content": "<p>English woods are named in old words that each meant something slightly different:</p><ul><li><strong>-hurst</strong> was a wooded hill and <strong>-holt</strong> a wood, both Old English, so they turn up in village names as well as woods.</li><li><strong>Weald</strong> is the Old English for forest, and survives in the Weald of Kent and Sussex.</li><li><strong>Shaw</strong>, <strong>copse</strong> and <strong>spinney</strong> are small woods; a copse was often cut back for timber.</li><li><strong>A chase</strong> was hunting land held by a lord rather than the king, as at Cannock Chase.</li></ul><p>In medieval England a \"forest\" wasn't always wooded at all: it was land under forest law, kept for the king's hunting. William the Conqueror made the New Forest a royal forest in the 1070s, and Sherwood simply means \"shire wood\". Fantasy writers borrowed the same habits. Tolkien took Mirkwood from the Old Norse <em>Myrkviðr</em>, and Fangorn means \"beard of tree\" in his Elvish.</p><p>Choose <strong>English woods</strong> for names like <em>Atherhurst Wood</em>, <strong>Elven</strong> for <em>Sylumel</em>, <strong>Dark</strong> for <em>Shroudtangle</em>, or <strong>Fantasy</strong> for <em>The Wandering Wilds</em>. <strong>With a description</strong> adds a line of story: <em>Weepbough, which has swallowed three search parties</em>.</p>"
+      },
+      {
+        "heading": "Putting a forest on the map",
+        "content": "<ul><li><strong>Name it from the outside.</strong> Villagers on the edge of a forest name it after what they fear or use: firewood, hunting, wolves.</li><li><strong>Give big forests smaller parts.</strong> A great forest might hold a named copse, a chase and a glade, each with its own story.</li><li><strong>Let the description be a hook.</strong> A wood with standing stones that move is an adventure waiting to happen.</li></ul><p>Beyond the trees, try the <a href=\"mountain-name-generator.html\">Mountain</a>, <a href=\"river-name-generator.html\">River</a> and <a href=\"lake-name-generator.html\">Lake</a> name generators, and for the wetter, darker parts of the map, the <a href=\"swamp-name-generator.html\">Swamp Name Generator</a>. For the village at the forest's edge, there's the <a href=\"village-name-generator.html\">Village Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good names for a fantasy forest?",
+        "answer": "Names that set the mood: enchanted like Honeyweald Forest, elven like the Moonlit Woods of Ithennis, or dark like The Hungry Thicket. For an English-sounding wood, try Foxglove Shaw or Tedholt Chase."
+      },
+      {
+        "question": "What's the difference between a wood, a copse and a forest?",
+        "answer": "Size, mostly. A copse or a spinney is a small wood, a wood is bigger, and a forest is bigger still. In medieval England a forest was also a legal term for royal hunting land, wooded or not."
+      },
+      {
+        "question": "Can I use these names in D&D?",
+        "answer": "Yes. They're made up and free to use. Choose With a description for a forest that comes with an adventure hook."
+      }
+    ]
   }
 }

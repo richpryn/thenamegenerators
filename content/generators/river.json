@@ -1481,8 +1481,34 @@
       "title": "🏞️ River Name Generator",
       "tagline": "Great rivers for your world map, old British-sounding rivers, elven streams and dark waters."
     },
-    "intro": "Every map needs a river or two, and a good name makes the land around it feel real. This **river name generator** gives you fantasy rivers for your D&D campaign, old Celtic-sounding British rivers, becks, burns and brooks, flowing elven names, dark and haunted waters and magical streams, with a short description if you want a story to go with one.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good river names are short and old-sounding, because real ones are: many British rivers have kept names older than English itself. Every map needs a river or two, and a good name makes the land around it feel real. This **river name generator** gives you fantasy rivers for your D&amp;D campaign, old Celtic-sounding British rivers, becks, burns and brooks, flowing elven names, dark and haunted waters and magical streams, with a short description if you want a story to go with one.",
+    "sections": [
+      {
+        "heading": "Eight good river names",
+        "content": "<p>All eight came from the generator, across its styles:</p><ul><li><strong>the Halvane</strong>: a short, old-sounding fantasy river.</li><li><strong>the Redrun, where the old kings were crowned on an island mid-stream</strong>: a river with history in its description.</li><li><strong>the River Varrow</strong>: sounds like a real British river on an Ordnance Survey map.</li><li><strong>Scar Beck, that vanishes underground for a mile and comes up in a cave</strong>: a northern beck with a mystery.</li><li><strong>the Faelasora</strong>: a long, flowing elven river.</li><li><strong>Coffin Burn, that whispers names on still nights</strong>: a dark stream nobody fishes.</li><li><strong>the River Daydream</strong>: a magical river for a gentler map.</li><li><strong>Thistledown Burn</strong>: a Scottish burn with a soft, magical name.</li></ul>"
+      },
+      {
+        "heading": "How rivers get their names",
+        "content": "<p>River names are some of the oldest words in Britain. Many came from Celtic languages, or from before them, and stayed while the languages around them changed:</p><ul><li><strong>Avon</strong> comes from the Brittonic word for river, so the River Avon is really \"River River\".</li><li><strong>Thames</strong>, <strong>Tamar</strong> and <strong>Tame</strong> are thought to share an ancient root, possibly meaning dark.</li><li><strong>Beck</strong> comes from Old Norse and is the northern word for a stream; <strong>burn</strong> is the Scottish and Northumbrian one, and <strong>brook</strong> the southern.</li><li><strong>Water</strong> on its own is used for some rivers in Scotland and the north, like the Water of Leith.</li></ul><p>Choose <strong>British</strong> for names like <em>the Lennock</em> and <em>Brae Burn</em>, <strong>Fantasy</strong> for <em>the River Pellagar</em>, <strong>Elven</strong> for <em>the Liariel</em>, <strong>Dark</strong> for <em>Wraith's Burn</em>, or <strong>Magical</strong> for <em>the Moonrun</em>.</p>"
+      },
+      {
+        "heading": "Rivers on your map",
+        "content": "<ul><li><strong>Rivers run downhill to the sea or a lake,</strong> and they join rather than split. Start at the mountains and draw down.</li><li><strong>Name the big river first,</strong> then give its smaller streams their own names: a beck, a burn, a brook.</li><li><strong>Put towns where rivers can be crossed.</strong> That's where real towns grew, which is why so many end in -ford and -bridge.</li></ul><p>For where the river starts, try the <a href=\"mountain-name-generator.html\">Mountain Name Generator</a>, and for where it ends, the <a href=\"lake-name-generator.html\">Lake</a> and <a href=\"sea-name-generator.html\">Sea</a> name generators. To name the towns along its banks, there's the <a href=\"fantasy-town-name-generator.html\">Fantasy Town Name Generator</a>, which has a riverside style.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good names for a fantasy river?",
+        "answer": "Short, old-sounding names like the Halvane or the River Varrow, flowing elven names like the Liariel, or dark ones like Coffin Burn. Add a description for a river with a story."
+      },
+      {
+        "question": "What's the difference between a beck, a burn and a brook?",
+        "answer": "They all mean a stream. Beck is the northern English word, from Old Norse; burn is Scottish and Northumbrian; brook is used further south."
+      },
+      {
+        "question": "Why do so many British rivers have short names?",
+        "answer": "Many are among the oldest names in the country, from Celtic or even earlier languages, worn down over centuries of use. Avon, for example, simply meant river."
+      }
+    ]
   }
 }

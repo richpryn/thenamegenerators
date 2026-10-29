@@ -1442,8 +1442,34 @@
       "title": "🏜️ Desert Name Generator",
       "tagline": "Golden wastes, rolling sand seas, white salt flats, cursed dunes and dusty desert planets."
     },
-    "intro": "Sand, salt and silence can still have a name worth remembering. This **desert name generator** names deserts for D&D campaigns, novels and sci-fi worlds, from sweeping sand seas and cracked salt flats to cursed wastes and whole desert planets, with a short description if you want one.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good desert names say what kind of empty it is: golden dunes, cracked salt, or somewhere cursed. Sand, salt and silence can still have a name worth remembering. This **desert name generator** names deserts for D&amp;D campaigns, novels and sci-fi worlds, from sweeping sand seas and cracked salt flats to cursed wastes and whole desert planets, with a short description if you want one.",
+    "sections": [
+      {
+        "heading": "Eight good desert names",
+        "content": "<p>All eight came from the generator, across its styles:</p><ul><li><strong>the Goldmarch</strong>: a fantasy desert that sounds like a border country.</li><li><strong>the Desert of Painted Rocks</strong>: a place you'd find on a traveller's map.</li><li><strong>the Wandering Erg</strong>: a sand sea whose dunes move.</li><li><strong>the Moving Mountains</strong>: what desert travellers might call dunes that shift.</li><li><strong>the Snowsalt Flats</strong>: a salt pan that looks like snow and burns like a desert.</li><li><strong>the Desert of Lost Armies</strong>: a cursed waste with a story in its name.</li><li><strong>the Jackal Barrens</strong>: short, dry and slightly menacing.</li><li><strong>Calyx Prime</strong>: a sci-fi desert planet.</li></ul>"
+      },
+      {
+        "heading": "How deserts get their names",
+        "content": "<p>The most famous desert names are mostly descriptions. <em>Sahara</em> comes from the Arabic word for desert, so \"the Sahara Desert\" says the same thing twice. Arabia's Rub' al Khali means \"the Empty Quarter\".</p><p>The generator uses the real words for different kinds of desert:</p><ul><li><strong>Erg</strong> is the word geographers use, from Arabic, for a great sea of sand dunes: <em>Erg Lorvessa</em>, <em>the Bellisar Erg</em>.</li><li><strong>Playa</strong>, Spanish for beach, is a dry lake bed, and <strong>sabkha</strong>, from Arabic, is a salt flat: <em>the Tazmin Playa</em>, <em>Sabkha Ulvane</em>.</li><li><strong>Badlands</strong> are eroded country of gullies and bare rock, hard to cross and harder to farm: <em>the Gnawed Badlands</em>, <em>the Crooked Mesas</em>.</li></ul><p>Choose <strong>Cursed</strong> for wastes with a history, or <strong>Sci-fi planet</strong> for a whole desert world with a catalogue number, like <em>Thalane XI</em>. <strong>With a description</strong> adds a line, such as <em>the Wave Erg, whose dunes boom like thunder when the sand slides</em>.</p>"
+      },
+      {
+        "heading": "Building a desert",
+        "content": "<ul><li><strong>Deserts aren't all sand.</strong> Mix dune seas, salt flats, rocky badlands and the odd oasis, each with its own name.</li><li><strong>Give it a route.</strong> A caravan road or a pilgrims' trail tells players how people survive the crossing.</li><li><strong>Leave ruins.</strong> A desert is a good place for a fallen empire to have left something behind.</li></ul><p>Name that empire with the <a href=\"empire-name-generator.html\">Empire Name Generator</a>. For the land around the desert, try the <a href=\"mountain-name-generator.html\">Mountain</a>, <a href=\"river-name-generator.html\">River</a> and <a href=\"forest-name-generator.html\">Forest</a> name generators, and for the whole map, <a href=\"continent-name-generator.html\">Continent</a> and <a href=\"world-name-generator.html\">World</a>.</p><p>For more, see all the <a href=\"../categories/worldbuilding-names.html\">world-building name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good fantasy desert names?",
+        "answer": "Names that describe the land and its dangers: the Goldmarch, the Wandering Erg, the Snowsalt Flats or the Desert of Lost Armies. Pick a style for dunes, salt, cursed wastes or a desert planet."
+      },
+      {
+        "question": "What does Sahara mean?",
+        "answer": "It comes from the Arabic word for desert, so the Sahara Desert is really \"the desert desert\"."
+      },
+      {
+        "question": "What is an erg?",
+        "answer": "A large area of sand dunes, sometimes called a sand sea. The word comes from Arabic and is used by geographers for deserts like the great dune fields of the Sahara."
+      }
+    ]
   }
 }
