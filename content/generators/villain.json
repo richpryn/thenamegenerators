@@ -4,8 +4,8 @@
   "icon": "🦹",
   "category": "people",
   "published": "2026-10-20",
-  "description": "Villain names for stories, games and comics: a sinister title (Doctor, Baron, Countess), an unsettling name like The Clockmaker, or a name with a dark epithet.",
-  "seoKeywords": "villain name generator, villain names, evil name generator, supervillain name generator, bad guy names, female villain names, evil names, villain name, villains names, antagonist names, demon lord names, evil boss names, supervillain names, funny villain names, dark lord names, villain names male, villain names female",
+  "description": "Villain names for stories, games and comics in six styles: classic, supervillain, dark lord, game boss, sci-fi and funny, male or female.",
+  "seoKeywords": "villain name generator, villain names, evil name generator, supervillain name generator, bad guy names, female villain names, evil names, villain name, villains names, antagonist names, demon lord names, evil boss names, supervillain names, funny villain names, dark lord names, villain names male, villain names female, boss names, types of villains, dark lord name generator",
   "isPopular": false,
   "filters": {
     "style": {
@@ -3497,11 +3497,19 @@
       "title": "🦹 Villain Name Generator",
       "tagline": "Sinister titles, unsettling nicknames and dark epithets for the bad guy."
     },
-    "intro": "A villain's name should make the audience uneasy before the villain does anything. Some use a grand title (Doctor Doom, Baron Zemo, Lord Voldemort), some an ordinary word made sinister (The Joker, The Riddler), and some a name with an <a href=\"epithet-generator.html\">epithet</a>. This **villain name generator** makes all three, for stories, games, comics and campaigns.",
+    "intro": "A villain's name should make the audience uneasy before the villain does anything. Some use a grand title (Doctor Doom, Baron Zemo, Lord Voldemort), some an ordinary word made sinister (The Joker, The Riddler), and some a name with an <a href=\"epithet-generator.html\">epithet</a>. This **villain name generator** makes all three, in six styles from classic and supervillain to dark lord, game boss, sci-fi and funny, for stories, games, comics and campaigns.",
     "sections": [
       {
         "heading": "What makes a villain name work",
         "content": "<ul><li><strong>A title claims power.</strong> Doctor, Baron, Lord, Countess: the villain thinks they deserve respect, and wants you to know it.</li><li><strong>An ordinary job made sinister</strong> is unsettling: The Gardener, The Clockmaker, The Collector. The audience wonders what exactly they collect.</li><li><strong>Hard sounds help:</strong> k, x, v and z appear in a lot of villain names for a reason.</li><li><strong>An epithet tells the legend:</strong> the Undying, the Usurper. Good for fantasy villains with a history.</li></ul>"
+      },
+      {
+        "heading": "Types of villains",
+        "content": "<p>Most villains fit one of a handful of types, and each suits a different kind of name. These examples all came from the generator:</p><ul><li><strong>The mastermind</strong> plans everything and is rarely in the room when it happens: <em>Madame Enigma</em>, <em>The Diamond Mastermind</em>.</li><li><strong>The dark lord</strong> rules a realm, an army or the end of the world: <em>Zarkhul the Thousand-Eyed</em>, <em>Lazmira, Queen of Ash</em>.</li><li><strong>The corporate villain</strong> does terrible things through paperwork: <em>Director Oren Talbek</em>, <em>Consul Freja Teague</em>.</li><li><strong>The boss</strong> guards a place the heroes have to get through: <em>Gnash, Lord of the Sewers</em>, <em>Eskar, Warden of the Deep Mines</em>.</li><li><strong>The rival</strong> wants the same thing as the hero, and has the manners to match: <em>Duke Mordant</em>.</li><li><strong>The monster</strong> barely needs a name at all, just a reputation: <em>The Locust</em>, <em>Murk the Many-Armed</em>.</li><li><strong>The tragic villain</strong> was something else once, and the name keeps the wound: <em>Sela Talbek the Uploaded</em>, <em>Calvaine the Grave-Born</em>.</li><li><strong>The petty villain</strong> is a comedy of small crimes: <em>Mildred the Pettiest</em>, <em>The Last-Biscuit Taker</em>.</li></ul><p>Not every story needs a villain, but most need an <strong>antagonist</strong>: whoever stands in the hero's way. A rival, a rule or a storm can be an antagonist. A villain is an antagonist who chooses to do harm.</p>"
+      },
+      {
+        "heading": "Six styles of villain name",
+        "content": "<ul><li><strong>Classic</strong>: grand titles and ordinary jobs made sinister. <em>Duke Mordant</em>, <em>The Quiltmaker</em>, <em>Fester the Hungering</em>.</li><li><strong>Supervillain</strong>: comic-book names built from science, disaster and a title. <em>Baroness Tungsten</em>, <em>Mister Calamity</em>, <em>The Static Saboteur</em>.</li><li><strong>Dark lord</strong>: harsh invented names with an epithet and a realm, for dark lords and demon lords alike. <em>Archon Ruvaine</em>, <em>Gulgrath the Eternal, Emperor of Cinders</em>.</li><li><strong>Game boss</strong>: named for the place you fight them or the job they do there. <em>Rusk, Tyrant of the Iron Bridge</em>, <em>Ringmaster Scrag</em>, <em>The Blind Jailer</em>.</li><li><strong>Sci-fi</strong>: admirals, directors and things that used to be people. <em>Admiral Kasimir Corvan</em>, <em>The White Signal</em>.</li><li><strong>Funny</strong>: small-scale evil for comedy and children's stories. <em>Countess Mildew</em>, <em>The Wheelie Bin Hijacker</em>, <em>General Ever-So-Slightly-Evil</em>.</li></ul><p>Choose <strong>Female</strong> or <strong>Male</strong> for titles to match (Countess or Count, Empress or Emperor), and a format for a title and name, a <em>The…</em> name, or a name with an epithet.</p>"
       },
       {
         "heading": "Naming the villain for your story",
@@ -3516,8 +3524,25 @@
       {
         "question": "Can I use these villain names in my book or game?",
         "answer": "Yes, free and with no credit needed. Check a name isn't already a well-known character before you publish."
+      },
+      {
+        "question": "What are good villain names?",
+        "answer": "Names that make people uneasy before the villain does anything: a grand title like Duke Mordant, an ordinary job made sinister like The Quiltmaker, or a name with a dark epithet like Zarkhul the Thousand-Eyed. Pick a style to match your story."
+      },
+      {
+        "question": "What's the difference between a villain and an antagonist?",
+        "answer": "An antagonist is whoever opposes the protagonist, and they don't have to be evil: a rival, a parent or a storm can all be antagonists. A villain is an antagonist who means harm."
+      },
+      {
+        "question": "What are good demon lord names?",
+        "answer": "Harsh names with an epithet and a realm, like Lazmira, Queen of Ash or Gulgrath the Eternal, Emperor of Cinders. Choose the Dark lord style. For lesser demons, try the Demon Name Generator."
+      },
+      {
+        "question": "What are good evil boss names?",
+        "answer": "Name a game boss after where you fight them or what they guard: Gnash, Lord of the Sewers, Rusk, Tyrant of the Iron Bridge or The Blind Jailer. For a corporate villain, the Sci-fi style gives names like Director Oren Talbek."
       }
     ]
   },
-  "noEcho": true
+  "noEcho": true,
+  "seoTitle": "Villain Name Generator: Evil, Dark Lord & Boss Names"
 }

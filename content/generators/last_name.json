@@ -3196,8 +3196,38 @@
       "title": "📜 Last Name Generator",
       "tagline": "Surnames with a story behind them"
     },
-    "intro": "A surname carries a family history: a job, a hill, a nickname or a Norman castle. This **last name generator** makes last names for characters in six styles, from realistic British and noble names to fantasy, sci-fi, gothic and funny ones, and can show what each name means.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good last names for characters come from the same four places real surnames did: a job, a place, a father's name or a nickname. A surname carries a family history: a trade, a hill, a nickname or a Norman castle. This **last name generator** makes last names for characters in six styles, from realistic British and noble names to fantasy, sci-fi, gothic and funny ones, and can show what each name means.",
+    "sections": [
+      {
+        "heading": "Eight good last names",
+        "content": "<p>All eight came from the generator, with the meanings it gives:</p><ul><li><strong>Fletcher</strong>: an arrow-maker: an occupational name, one of the commonest kinds.</li><li><strong>Hartley</strong>: from the stag wood: a place name that sounds settled and old.</li><li><strong>Hobbs</strong>: son of Hob, a pet form of Robert: a patronymic hidden in a short name.</li><li><strong>Freeman</strong>: a free man, not a serf: a name that tells you about a family's status.</li><li><strong>Grosvenor</strong>: great huntsman, from Norman French: noble and a little grand.</li><li><strong>Engel-Kobayashi</strong>: angel (German) and small forest (Japanese): a sci-fi double name from two cultures.</li><li><strong>Grimwold</strong>: grim plus wold, open upland: a gothic name for a house on a hill.</li><li><strong>Crumpetby</strong>: crumpet plus by, a Norse word for a farm: funny, but built like a real place name.</li></ul>"
+      },
+      {
+        "heading": "Where surnames come from",
+        "content": "<p>Most English families had a fixed surname by the end of the Middle Ages, and nearly all of them come from four sources:</p><ul><li><strong>Occupation:</strong> Smith, Cooper (a barrel-maker), Baxter (a baker), Webster (a weaver). Smith is still the commonest surname in the UK.</li><li><strong>Place:</strong> where a family lived or came from, like Langley (the long clearing) or Sutton (the south farm).</li><li><strong>Patronymic:</strong> a father's name, like Robinson or Harrison. Welsh names often came from <em>ap</em>, \"son of\": ap Rhys became Price, and ap Hywel became Powell. Scottish and Irish <em>Mac</em> and Norman <em>Fitz</em> mean the same.</li><li><strong>Nickname:</strong> what people called you, like Armstrong (strong in the arm), Reid (red-haired) or Fox (cunning).</li></ul><p>The generator's six styles build on these. <strong>Realistic British</strong> and <strong>Noble</strong> use real surnames with their real meanings; <strong>Fantasy</strong>, <strong>Gothic</strong> and <strong>Funny</strong> join invented words to real endings like <em>-wold</em>, <em>-fell</em> and <em>-by</em>; and <strong>Sci-fi</strong> joins real surnames from different languages, as families might in a mixed future. Choose <strong>With its meaning</strong> to see what each one means.</p>"
+      },
+      {
+        "heading": "Choosing a surname for a character",
+        "content": "<ul><li><strong>Let it say something.</strong> A character called Thatcher or Wainwright had a working ancestor; one called Beaumont or Delamere has money behind them.</li><li><strong>Match the place.</strong> Cornish names often begin with Tre-, Pol- or Pen-, as in Trevelyan or Penrose, and Welsh ones are often patronymics, so a surname can tell readers where a family is from.</li><li><strong>Check the whole name together.</strong> Say the first name and surname aloud to make sure they don't clash or make an unfortunate phrase.</li></ul><p>For a first name to go with it, try the <a href=\"character-name-generator.html\">Character Name Generator</a>, and for the craft behind it, read our guide: <a href=\"../guides/how-to-create-character-names.html\">How to Create Great Character Names</a>.</p><p>For more, see all the <a href=\"../categories/people-names.html\">character name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good last names for characters?",
+        "answer": "Ones that fit the character's world and background: an occupational name like Fletcher for a working family, a Norman name like Beaumont for an old noble one, or a landscape name like Thornwood in fantasy."
+      },
+      {
+        "question": "Where do surnames come from?",
+        "answer": "Mostly from four sources: a job (Smith, Cooper), a place (Langley, Sutton), a father's name (Robinson, Price) or a nickname (Armstrong, Reid)."
+      },
+      {
+        "question": "What does Fitz mean in a surname?",
+        "answer": "Son of. It comes from Norman French fils, so Fitzwilliam means son of William. Some Fitz names, like Fitzroy (son of the king), were given to royal children born outside marriage."
+      },
+      {
+        "question": "Are the meanings real?",
+        "answer": "Yes, for the British, noble and sci-fi names, which are real surnames. The fantasy, gothic and funny names are invented, and the meaning shows the real words they are built from."
+      }
+    ]
   }
 }

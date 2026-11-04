@@ -5,7 +5,7 @@
   "category": "pop_culture",
   "published": "2026-10-20",
   "description": "Star Wars names for Jedi, Sith Lords, Mandalorians and rebels, following the films and shows: hyphenated Jedi names, Darth titles and clans.",
-  "seoKeywords": "star wars name generator, jedi name generator, sith name generator, mandalorian name generator, star wars names, darth name generator, star wars character names, star wars droid names, star wars droid name generator, mandalorian names, mandalorian clan names",
+  "seoKeywords": "star wars name generator, jedi name generator, sith name generator, mandalorian name generator, star wars names, darth name generator, star wars character names, star wars droid names, star wars droid name generator, mandalorian names, mandalorian clan names, droid name generator",
   "isPopular": false,
   "filters": {
     "type": {
@@ -1105,8 +1105,16 @@
         "content": "<p>Mandalorians identify strongly with their clan: Bo-Katan Kryze of Clan Kryze, Sabine of Clan Wren. Din Djarin, the Mandalorian of the series, was a foundling adopted into the Mandalorian way of life. The generator gives a Mandalorian a first name and a clan, either as \"of Clan\" or as a surname.</p>"
       },
       {
+        "heading": "Mandalorian clan names",
+        "content": "<p>In Star Wars, Mandalorians belong to clans, and clans can belong to larger houses, like House Kryze and House Vizsla. Choose <strong>Mandalorian clan</strong> for new clan and house names with hard, short sounds: <em>Clan Arvos</em>, <em>Clan Udrik</em>, <em>House Gorvak</em>, <em>House Ghes'ka</em>. Give your Mandalorian a name from the Mandalorian option, then a clan for them to fight for.</p>"
+      },
+      {
         "heading": "Smugglers and rebels",
         "content": "<p>The galaxy's ordinary heroes have the plainest names: Han Solo, Lando Calrissian, Cassian Andor, Jyn Erso. A short first name and a surname that sounds tough is the classic smuggler name. Use the <em>Smuggler or rebel</em> option for pilots, bounty hunters and anyone without a lightsaber.</p>"
+      },
+      {
+        "heading": "Droid names",
+        "content": "<p>Star Wars droids are known by a model designation of letters and numbers, like R2-D2 and C-3PO, and the people who own them often turn the designation into a nickname: Artoo, Threepio. Choose <strong>Droid</strong> for new designations in that style, some with a nickname attached:</p><ul><li><strong>A nickname from the letters:</strong> <em>Beefive (B5-L5)</em>, <em>Entoo (N2-X6)</em>, <em>Emnine (M9-V2)</em>.</li><li><strong>A nickname from personality:</strong> <em>Chirp (NQ-72)</em>, <em>Scrap (F4-C2)</em>, <em>Bleep (V6-L1)</em>.</li><li><strong>A plain designation</strong> for a droid nobody has bothered to name: <em>WZ-9</em>, <em>MX-47</em>.</li></ul>"
       }
     ],
     "faqs": [
@@ -1121,6 +1129,18 @@
       {
         "question": "Are these names from Star Wars?",
         "answer": "No. They're new names in the same patterns; the generator avoids names already used in the films and shows."
+      },
+      {
+        "question": "How do you make a Star Wars droid name?",
+        "answer": "Use a short designation of letters and numbers, like the generator's T1-C7 or WZ-9, then give it a nickname from the letters (Beefive for B5-L5) or its personality (Chirp). Choose Droid for names like these."
+      },
+      {
+        "question": "What are good Mandalorian clan names?",
+        "answer": "Short, hard names after Clan or House: Clan Arvos, Clan Udrik, House Gorvak. Choose Mandalorian clan for more."
+      },
+      {
+        "question": "Is this an official Star Wars generator?",
+        "answer": "No. This site isn't connected to Lucasfilm or Disney. The names are new ones in Star Wars styles, free to use for fan fiction, games and roleplay."
       }
     ]
   }

@@ -5,7 +5,7 @@
   "category": "fantasy",
   "published": "2025-11-30",
   "description": "Dragon names for fire, frost, storm, earth, shadow, sea and venom dragons, harsh or sleek, with an epithet if you want one: \"Vharuzul the Ashen\".",
-  "seoKeywords": "dragon names, dragon name generator, fantasy dragon names, dnd dragon names, fire dragon names, ice dragon names, female dragon names, httyd dragon names, dragon species names, how to train your dragon dragon names, dragon species name generator, httyd dragon names female, female dragons",
+  "seoKeywords": "dragon names, dragon name generator, fantasy dragon names, dnd dragon names, fire dragon names, ice dragon names, female dragon names, httyd dragon names, dragon species names, how to train your dragon dragon names, dragon species name generator, httyd dragon names female, female dragons, how to train your dragon names",
   "isPopular": true,
   "popularRank": 3,
   "filters": {
@@ -11095,11 +11095,15 @@
       },
       {
         "heading": "Nine kinds, two sounds",
-        "content": "<p>The start of each name carries the element and the ending carries the sound:</p><ul><li><strong>Fire</strong> draws on words for burning and forges (<em>ign-</em>, <em>pyr-</em>, and <em>Surt-</em> after the fire giant of Norse myth). <strong>Frost</strong> on Norse and Greek words for ice and snow (<em>hrim-</em>, <em>khion-</em>). <strong>Storm</strong>, <strong>earth</strong>, <strong>shadow</strong>, <strong>sea</strong> and <strong>venom</strong> each have their own. <strong>Light</strong> dragons take their names from words for dawn and brightness, like <em>Phosara, Keeper of the Morning</em>, and <strong>primordial</strong> dragons sound like the oldest things alive: <em>Ormrorvax, the First of All Dragons</em>. <strong>Light</strong> dragons take their names from words for dawn and brightness, like <em>Phosara, Keeper of the Morning</em>, and <strong>primordial</strong> dragons sound like the oldest things alive: <em>Ormrorvax, the First of All Dragons</em>.</li><li><strong>Harsh</strong> endings (<em>-uzul</em>, <em>-agor</em>, <em>-arax</em>) give a growling, ancient name for something that burns villages.</li><li><strong>Sleek</strong> endings (<em>-yra</em>, <em>-essa</em>, <em>-ith</em>) give a smoother name, for a cunning dragon, a young one, or one that reads as female.</li></ul>"
+        "content": "<p>The start of each name carries the element and the ending carries the sound:</p><ul><li><strong>Fire</strong> draws on words for burning and forges (<em>ign-</em>, <em>pyr-</em>, and <em>Surt-</em> after the fire giant of Norse myth). <strong>Frost</strong> on Norse and Greek words for ice and snow (<em>hrim-</em>, <em>khion-</em>). <strong>Storm</strong>, <strong>earth</strong>, <strong>shadow</strong>, <strong>sea</strong> and <strong>venom</strong> each have their own. <strong>Light</strong> dragons take their names from words for dawn and brightness, like <em>Phosara, Keeper of the Morning</em>, and <strong>primordial</strong> dragons sound like the oldest things alive: <em>Ormrorvax, the First of All Dragons</em>.</li><li><strong>Harsh</strong> endings (<em>-uzul</em>, <em>-agor</em>, <em>-arax</em>) give a growling, ancient name for something that burns villages.</li><li><strong>Sleek</strong> endings (<em>-yra</em>, <em>-essa</em>, <em>-ith</em>) give a smoother name, for a cunning dragon or a young one.</li><li><strong>Female</strong> names have their own endings, like <em>-ova</em>, <em>-isse</em>, <em>-ynne</em> and <em>-iel</em>: <em>Lysora</em>, <em>Helisse</em>, <em>Brontynne</em>. With an epithet they become <em>Solisse the Molten</em> or <em>Fyria, Breaker of Castles</em>.</li></ul>"
       },
       {
         "heading": "Giving a dragon a title",
         "content": "<p>Dragons in stories rarely have just one name. They collect titles from the people who fear them (<em>the Black Dread</em>), from what they've done (<em>Burner of Cities</em>), and from flattery: Bilbo calls Smaug <em>the Chiefest and Greatest of Calamities</em> to keep him talking.</p><p>Ursula Le Guin's Earthsea goes further: a dragon's <em>true</em> name gives power over it, so the name everyone uses is only a mask. A dragon with a public title and a secret name is a ready-made quest.</p><p>Got a name but no story? Try the <a href=\"story-prompt-generator.html\">Story Prompt Generator</a> for a plot, a setting or a twist.</p><p>For more beasts of legend, from phoenixes to griffins, see the <a href=\"../categories/mythical-names.html\">mythical creature name generators</a>.</p><p>Looking for an Eastern dragon of rain and rivers? Try the <a href=\"chinese-dragon-name-generator.html\">Chinese Dragon Name Generator</a>.</p>"
+      },
+      {
+        "heading": "Dragon species names",
+        "content": "<p>Some stories name dragons by species rather than one by one. The <em>How to Train Your Dragon</em> books by Cressida Cowell, and the DreamWorks films made from them, are the best-known example: each kind of dragon gets a name that describes how it looks or what it does.</p><p>Choose <strong>Species</strong> for original names in that style. None of them are dragons from the films:</p><ul><li><strong>A body part:</strong> <em>Crag Clubtail</em>, <em>Lavaspine</em>, <em>Toxinhorn</em>.</li><li><strong>A habit:</strong> <em>Tufted Smoke Gouger</em>, <em>Prism Rammer</em>, <em>Morning Snapper</em>.</li><li><strong>A place, like a real animal's common name:</strong> <em>Marsh Clubtail</em>, <em>Western Hailstone Brute</em>.</li></ul><p>Give a species name to a whole kind of dragon, then use the other formats to name the individuals: a <em>Marsh Clubtail</em> called <em>Grunova</em>. This site isn't connected to DreamWorks or the <em>How to Train Your Dragon</em> books.</p>"
       }
     ],
     "faqs": [
@@ -11118,6 +11122,14 @@
       {
         "question": "Can I use these names in D&D or my book?",
         "answer": "Yes, they're free to use and you don't need to credit the site."
+      },
+      {
+        "question": "How do I make a How to Train Your Dragon style dragon name?",
+        "answer": "Describe the dragon the way a naturalist would: a body part, a habit or the place it lives, like Crag Clubtail, Prism Rammer or Western Hailstone Brute. Choose Species for original names in that style."
+      },
+      {
+        "question": "What are good female dragon names?",
+        "answer": "Names with softer endings like -ova, -isse and -ynne: Lysora, Helisse, Brontynne. Choose Female under Sound, and add an epithet for something like Solisse the Molten."
       }
     ]
   }

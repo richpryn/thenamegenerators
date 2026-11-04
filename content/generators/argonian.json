@@ -5,7 +5,7 @@
   "category": "pop_culture",
   "published": "2026-10-20",
   "description": "Argonian names for Skyrim and Elder Scrolls Online: Jel-style names like Jaree-Ra and Keerava, or descriptive names like Scouts-Many-Marshes.",
-  "seoKeywords": "argonian names, argonian name generator, skyrim argonian names, eso argonian names, argonian descriptive names, jel names, female argonian names, argonian thief names, argonian assassin names",
+  "seoKeywords": "argonian names, argonian name generator, skyrim argonian names, eso argonian names, argonian descriptive names, jel names, female argonian names, argonian thief names, argonian assassin names, argonian thief name generator",
   "isPopular": false,
   "filters": {
     "style": {
@@ -1109,6 +1109,10 @@
         "content": "<p>Argonians come from Black Marsh, the swampland in the south-east of Tamriel. Their lives are bound to the Hist, the great sentient trees of the marsh; hatchlings lick the sap of the Hist, which shapes who they become.</p><p>That's one reason descriptive names suit Argonians so well. A name like Listens-To-Hist or Knows-Many-Roots puts the swamp and the trees right in the name.</p>"
       },
       {
+        "heading": "Argonian thief names",
+        "content": "<p>Descriptive names are ideal for a thief, because a name that says what you do is also a reputation. Choose <strong>Thief</strong> for names built that way:</p><ul><li><strong>A skill:</strong> <em>Darts-Through-Windows</em>, <em>Finds-Hidden-Doors</em>.</li><li><strong>A favourite haul:</strong> <em>Snatches-Fine-Silks</em>, <em>Swipes-Warm-Pies</em>, <em>Takes-Glittering-Things</em>.</li><li><strong>A hiding place:</strong> <em>Waits-Under-Docks</em>, <em>Crouches-In-The-Bell-Tower</em>.</li><li><strong>A boast:</strong> <em>Never-Caught-Twice</em>.</li></ul><p>They suit a thief character in Skyrim, Elder Scrolls Online or your own Tamriel game. A thief might keep a Jel name for family and a descriptive name for the job.</p>"
+      },
+      {
         "heading": "Choosing a name",
         "content": "<ul><li><strong>Descriptive names make a great hook.</strong> Someone will always ask why a character is called Bites-Twice.</li><li><strong>Jel names suit Argonians who keep to their own kind,</strong> or who don't care whether outsiders can say their name.</li><li><strong>Use both.</strong> Give your Argonian a Jel name at home and a descriptive name among the other races.</li></ul><p>For other races of Tamriel, see the <a href=\"khajiit-name-generator.html\">Khajiit</a>, <a href=\"dunmer-name-generator.html\">Dunmer</a> and <a href=\"nord-name-generator.html\">Nord</a> name generators.</p>"
       }
@@ -1125,6 +1129,10 @@
       {
         "question": "Are these names from Skyrim?",
         "answer": "No. They're new names in the same two styles, so your character won't share one with someone in the game."
+      },
+      {
+        "question": "What are good Argonian thief names?",
+        "answer": "Descriptive names that say what the thief does or steals: Darts-Through-Windows, Snatches-Fine-Silks, Waits-Under-Docks or Never-Caught-Twice. Choose Thief for names like these. They're new names in the Argonian style, not characters from the games."
       }
     ]
   }

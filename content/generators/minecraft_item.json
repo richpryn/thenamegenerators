@@ -5,8 +5,8 @@
   "category": "minecraft",
   "published": "2026-10-21",
   "noun": "Minecraft Tool and Weapon Names",
-  "description": "Minecraft pickaxe, bow and trident names, plus axes, shovels, crossbows, maces, shields, elytra and fishing rods: epic or funny, with enchantments.",
-  "seoKeywords": "minecraft pickaxe names, minecraft bow names, minecraft trident names, minecraft axe names, minecraft mace names, minecraft elytra names, funny minecraft tool names, minecraft item names, minecraft sword names, sword name ideas minecraft, sword names ideas minecraft, minecraft armor names, minecraft armor names ideas",
+  "description": "Minecraft sword, armour, pickaxe, bow and trident names, plus axes, maces, shields and elytra: epic or funny, with enchantments.",
+  "seoKeywords": "minecraft pickaxe names, minecraft bow names, minecraft trident names, minecraft axe names, minecraft mace names, minecraft elytra names, funny minecraft tool names, minecraft item names, minecraft sword names, sword name ideas minecraft, sword names ideas minecraft, minecraft armor names, minecraft armor names ideas, minecraft armour names",
   "isPopular": false,
   "filters": {
     "item": {
@@ -2396,7 +2396,7 @@
       "title": "🪓 Minecraft Tool and Weapon Name Generator",
       "tagline": "Names for your best pickaxe, bow, trident, mace and every other piece of enchanted gear."
     },
-    "intro": "This **Minecraft tool and weapon name generator** makes epic and funny names for pickaxes, axes, shovels, bows, crossbows, tridents, maces, shields, elytra and fishing rods, with an enchantment if you like. Rename a tool on an anvil and it keeps that name, so your Fortune III pickaxe deserves better than \"Diamond Pickaxe\".",
+    "intro": "This **Minecraft tool and weapon name generator** makes epic and funny names for swords, armour, pickaxes, axes, shovels, bows, crossbows, tridents, maces, shields, elytra and fishing rods, with an enchantment if you like. Rename a tool on an anvil and it keeps that name, so your Fortune III pickaxe deserves better than \"Diamond Pickaxe\".",
     "sections": [
       {
         "heading": "How to rename an item in Minecraft",
@@ -2404,7 +2404,7 @@
       },
       {
         "heading": "Minecraft pickaxe, bow and trident names",
-        "content": "<p>The best Minecraft tool names match what the tool does, or what keeps happening to it.</p><ul><li><strong>Epic names</strong> suit the gear you'd never lose: Skybreaker, Stormcaller, Starflight.</li><li><strong>Funny names</strong> suit the gear you will: Gravel Regrets, Emergency Fishing Rod.</li><li><strong>With an enchantment</strong> adds a real Minecraft enchantment in brackets, so the name matches what the tool does: Saltfury (Channeling) for a trident, Lucky Pickaxe (Silk Touch).</li></ul><p>For swords, try the <a href=\"funny-minecraft-sword-name-generator.html\">Funny Minecraft Sword Name Generator</a>. For names that aren't Minecraft-specific, try the <a href=\"sword-name-generator.html\">Sword</a> and <a href=\"axe-name-generator.html\">Axe</a> name generators.</p><p>For everything else in Minecraft, see all the <a href=\"../categories/minecraft-names.html\">Minecraft name generators</a>.</p><p>More for your Minecraft world: <a href=\"minecraft-clan-name-generator.html\">clan and faction names</a> and <a href=\"minecraft-username-generator.html\">usernames</a>.</p>"
+        "content": "<p>The best Minecraft tool names match what the tool does, or what keeps happening to it.</p><ul><li><strong>Epic names</strong> suit the gear you'd never lose: Skybreaker, Stormcaller, Starflight.</li><li><strong>Funny names</strong> suit the gear you will: Gravel Regrets, Emergency Fishing Rod.</li><li><strong>With an enchantment</strong> adds a real Minecraft enchantment in brackets, so the name matches what the tool does: Saltfury (Channeling) for a trident, Lucky Pickaxe (Silk Touch).</li></ul><p>Choose <strong>Sword</strong> for epic names like <em>Witherbane</em>, <em>Enderbrand</em> and <em>Riftblade</em>, or funny ones like <em>Twice-Repaired Sword</em> and <em>Blade of Mostly Bad Ideas</em>. Choose <strong>Armour</strong> for a helmet, chestplate, leggings or boots: <em>Moonshell</em>, <em>Creeperproof Plate</em>, <em>Leggings of Dubious Quality</em>, or with an enchantment, <em>Thundermail (Projectile Protection IV)</em>. For a whole page of joke swords, try the <a href=\"funny-minecraft-sword-name-generator.html\">Funny Minecraft Sword Name Generator</a>. For names that aren't Minecraft-specific, try the <a href=\"sword-name-generator.html\">Sword</a> and <a href=\"axe-name-generator.html\">Axe</a> name generators.</p><p>For everything else in Minecraft, see all the <a href=\"../categories/minecraft-names.html\">Minecraft name generators</a>.</p><p>More for your Minecraft world: <a href=\"minecraft-clan-name-generator.html\">clan and faction names</a> and <a href=\"minecraft-username-generator.html\">usernames</a>.</p>"
       }
     ],
     "faqs": [
@@ -2423,8 +2423,16 @@
       {
         "question": "What are good Minecraft bow names?",
         "answer": "Choose Bow for epic names like Starflight or funny ones like Missed Again, and add Power or Infinity to show the enchantment."
+      },
+      {
+        "question": "What are good Minecraft sword names?",
+        "answer": "Epic names that match the sword's job, like Witherbane, Enderbrand or Starslayer, or funny ones like Twice-Repaired Sword and Blade of Mostly Bad Ideas. Choose Sword and a style."
+      },
+      {
+        "question": "What are good Minecraft armour names?",
+        "answer": "Names for the whole set or each piece: Moonshell, Creeperproof Plate, Featherstep Boots or Shiny Pyjamas. Choose Armour, and With an enchantment to add one like Protection IV. Rename armour on an anvil, just like a tool."
       }
     ]
   },
-  "seoTitle": "Minecraft Pickaxe, Bow & Trident Name Generator"
+  "seoTitle": "Minecraft Sword, Armour & Tool Name Generator"
 }

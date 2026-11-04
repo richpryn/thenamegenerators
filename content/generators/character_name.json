@@ -4205,8 +4205,38 @@
       "title": "🎭 Character Name Generator",
       "tagline": "Names for heroes, villains and everyone in between"
     },
-    "intro": "A good name tells a reader who a character is before they say a word. This **character name generator** makes fantasy, modern, historical, sci-fi and funny names for female and male characters, as a first name, a full name or a name with a role to spark a story.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good character names fit the story's world, sound like the person they belong to, and don't clash with anyone else in the cast. This **character name generator** makes fantasy, modern, historical, sci-fi and funny names for female and male characters, as a first name, a full name or a name with a role to spark a story.",
+    "sections": [
+      {
+        "heading": "Eight good character names",
+        "content": "<p>All eight came from the generator, across its five genres:</p><ul><li><strong>Elowyn Whitlow</strong>: a female fantasy name: soft and flowing, with an English-sounding surname to keep it grounded.</li><li><strong>Vaelin Gildenleaf</strong>: a male fantasy name with an elvish ring and a surname you can picture.</li><li><strong>Rukhsana Okoye</strong>: a modern name that sounds like a real person in a real city today.</li><li><strong>Prudence Crowther</strong>: a historical name: Puritan families really did name daughters after virtues.</li><li><strong>Zacchaeus Nethersole</strong>: a historical name with a Bible first name and an old English surname.</li><li><strong>Orson Faraday</strong>: a sci-fi name that sounds like it belongs on a ship's crew list.</li><li><strong>Hester Scuttlebury</strong>: a funny name that still sounds like it could be real.</li><li><strong>Rosie Wong, a barista who knows everyone's order</strong>: a name with a role, so the character arrives with a job and a habit.</li></ul>"
+      },
+      {
+        "heading": "Five genres, three formats",
+        "content": "<p>Each genre follows the naming habits of its kind of story:</p><ul><li><strong>Fantasy</strong> names pair an invented or rare first name with a landscape surname: <em>Siona Moonbrook</em>, <em>Gareth Bramblewood</em>.</li><li><strong>Modern</strong> names mix first names and surnames from many backgrounds, the way a real school register or office does: <em>Kian Walker</em>, <em>Efua Danso</em>.</li><li><strong>Historical</strong> names lean on older English choices. In the 1500s and 1600s Puritan families gave children virtue names like Prudence and Patience, and Bible names like Gideon and Ezra were common, so <em>Gideon Whitmore</em> sounds like he belongs in a period drama.</li><li><strong>Sci-fi</strong> names are short, international and easy to say over a radio: <em>Katya Holm</em>, <em>Bram Haldane</em>.</li><li><strong>Funny</strong> names sound almost plausible, which is where the joke is: <em>Horace Snoozleby</em>, <em>Lettice Muddlestone</em>.</li></ul><p>Choose <strong>First name only</strong> when you already have a family name, <strong>Full name</strong> for a new character, or <strong>Name and a role</strong> for a quick NPC or a writing prompt.</p>"
+      },
+      {
+        "heading": "Making the name work in your story",
+        "content": "<ul><li><strong>Vary your cast.</strong> Give main characters different first letters and different lengths, so readers never mix them up.</li><li><strong>Say it out loud.</strong> If you'll read the story aloud or play it at a table, the name needs to be easy to say.</li><li><strong>Check it isn't famous.</strong> Search the full name before you publish, in case it belongs to a well-known person or character.</li><li><strong>Use the role as a prompt.</strong> \"A detective inspector close to retirement\" already has a plot.</li></ul><p>For the craft behind it, read our guide: <a href=\"../guides/how-to-create-character-names.html\">How to Create Great Character Names</a>. For a surname on its own, try the <a href=\"last-name-generator.html\">Last Name Generator</a>. For the people around your hero, there's the <a href=\"villain-name-generator.html\">Villain</a>, <a href=\"sidekick-name-generator.html\">Sidekick</a> and <a href=\"npc-name-generator.html\">NPC</a> name generators.</p><p>For more, see all the <a href=\"../categories/people-names.html\">character name generators</a> and the <a href=\"../categories/writing-names.html\">writing tools</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good character names?",
+        "answer": "Names that fit the character's world and era, are easy to say, and stand apart from the rest of the cast. A fantasy heroine might be Elowyn Whitlow; a modern one, Rukhsana Okoye. Pick a genre and generate a few until one fits."
+      },
+      {
+        "question": "What are good female fantasy character names?",
+        "answer": "Flowing first names with a landscape surname, like Siona Moonbrook, Miravel Fairwind or Celestine Starcrest. Choose Fantasy and Female for more."
+      },
+      {
+        "question": "What are some funny names for characters?",
+        "answer": "Names that sound almost real, like Horace Snoozleby, Queenie Tumbleweed or Ned Wobblethwaite. Choose the Funny genre; the names work best for comic side characters."
+      },
+      {
+        "question": "Can I use these names in my book or game?",
+        "answer": "Yes, they're free to use. If a character is a major one, search the full name first to make sure it doesn't belong to a famous person or another fictional character."
+      }
+    ]
   }
 }

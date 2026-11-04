@@ -2388,8 +2388,38 @@
       "title": "👯 Group Name Generator",
       "tagline": "Names for the group chat, the friend group and the squad: funny, cute, cool, family or work, sized for two, three, four or five."
     },
-    "intro": "Every group chat starts as \"New Group\" until someone has a better idea. This **group name generator** is that better idea: pick a style and how many of you there are, and it gives you names to paste into WhatsApp, from the Biscuit Brigade to Table for Four.",
-    "sections": [],
-    "faqs": []
+    "intro": "Good group chat names are short, a bit of an in-joke, and easy to spot in a long list of chats. Every group chat starts as \"New Group\" until someone has a better idea. This **group name generator** is that better idea: pick a style and how many of you there are, and it gives you names to paste into WhatsApp, from the Biscuit Brigade to Table for Four.",
+    "sections": [
+      {
+        "heading": "Eight good group names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Fourmidable</strong>: a name for four people that's also a pun.</li><li><strong>Garlic Bread Patrol</strong>: funny, specific and about food, which is what most group chats end up discussing.</li><li><strong>Three Peas Club</strong>: a cute name for a trio.</li><li><strong>Egg and Soldiers</strong>: a name for two people who go together.</li><li><strong>Dad's Taxi</strong>: a family chat name every parent will recognise.</li><li><strong>Could Have Been an Email</strong>: a work chat name everyone in an office understands.</li><li><strong>Streetlight Collective</strong>: a cool name for a group that stays out late.</li><li><strong>Fearless Five</strong>: an alliterative name for five or more.</li></ul>"
+      },
+      {
+        "heading": "Names by style and size",
+        "content": "<p>Pick a <strong>style</strong> for the kind of group you are:</p><ul><li><strong>Funny:</strong> food, in-jokes and mild chaos: <em>Sausage Roll Fan Club</em>, <em>The Easily Distracted Quad</em>.</li><li><strong>Cute:</strong> soft and sweet: <em>Sprinkle Squad</em>, <em>Sweet Peas</em>.</li><li><strong>Cool:</strong> short and stylish: <em>Wavelength</em>, <em>Dark Horses</em>.</li><li><strong>Family:</strong> home life: <em>Sunday Roast</em>, <em>Tea's Ready</em>.</li><li><strong>Work:</strong> office life, kept polite: <em>Coffee Machine Alliance</em>, <em>Shift Swap</em>.</li><li><strong>Best friends:</strong> loyalty and history: <em>Joined at the Hip</em>, <em>Pinky Promise Posse</em>.</li></ul><p>Then pick a <strong>size</strong>. Names for two people play on pairs (<em>Cheese and Crackers</em>), names for three on trios, and names for four or five use the number itself: <em>Pancake Four</em>, <em>Five for Tea</em>.</p>"
+      },
+      {
+        "heading": "Picking a name everyone likes",
+        "content": "<ul><li><strong>Make it about the group.</strong> The best names refer to something you all share: a holiday, a joke or a place you always meet.</li><li><strong>Keep it short</strong> so it shows in full in the chat list on a phone.</li><li><strong>Add an emoji</strong> if your app allows it, so the chat is easy to spot.</li><li><strong>Keep work chats safe for work.</strong> Assume anyone could see the name over your shoulder.</li></ul><p>Naming a team rather than a chat? Try the <a href=\"christmas-quiz-team-names.html\">Christmas Quiz Team Name Generator</a> or the <a href=\"superhero-team-name-generator.html\">Superhero Team Name Generator</a>. For gaming groups, there's the <a href=\"clan-name-generator.html\">Clan</a> and <a href=\"guild-name-generator.html\">Guild</a> name generators.</p><p>For more, see all the <a href=\"../categories/organizations-names.html\">organisation name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What's a good group name for 4 people?",
+        "answer": "Something that uses the number or suits a foursome, like Fourmidable, Pancake Four or Table for Four. Choose Four under group size for more."
+      },
+      {
+        "question": "What are good group chat names?",
+        "answer": "Short, a little bit of an in-joke, and easy to spot in a list: Garlic Bread Patrol for friends, Dad's Taxi for family, or Could Have Been an Email for work."
+      },
+      {
+        "question": "What are good friend group names?",
+        "answer": "Names about loyalty or shared history, like Joined at the Hip, Day Ones or Pinky Promise Posse. Choose Best friends for more."
+      },
+      {
+        "question": "Do these work for WhatsApp and other apps?",
+        "answer": "Yes. Copy the name and paste it into your group's name or subject. Shorter names show in full in the chat list."
+      }
+    ]
   }
 }
