@@ -324,6 +324,7 @@
     "space_station": "ring-station",
     "colony": "dome-colony",
     "character_name": "mask",
-    "last_name": "quill"
+    "last_name": "quill",
+    "group_name": "speech-bubble"
   }
 }
