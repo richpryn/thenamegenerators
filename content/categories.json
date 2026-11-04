@@ -1697,7 +1697,9 @@
       "superhero",
       "villain",
       "stage_name",
-      "story_prompt"
+      "story_prompt",
+      "character_name",
+      "last_name"
     ],
     "eyebrow": "Characters and personas",
     "approach": {
@@ -1784,7 +1786,9 @@
       "superhero",
       "npc",
       "horror_movie",
-      "song_title"
+      "song_title",
+      "character_name",
+      "last_name"
     ],
     "eyebrow": "Tools for writers",
     "approach": {

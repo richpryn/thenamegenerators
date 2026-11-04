@@ -322,6 +322,8 @@
     "zoo": "zoo",
     "lighthouse": "lighthouse",
     "space_station": "ring-station",
-    "colony": "dome-colony"
+    "colony": "dome-colony",
+    "character_name": "mask",
+    "last_name": "quill"
   }
 }
