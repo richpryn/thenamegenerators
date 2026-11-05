@@ -1,0 +1,1 @@
+- Site Jobs: when you finish work that leaves something for Richard to do, or completes a job, update the Site Jobs page (https://claude.ai/artifact/9cukbteXbK5sJbHyxGHPri) with ArtifactData in the `tasks` collection: add new jobs with urgency and importance (1–5) and score = urgency × importance, tick done ones, and never delete or untick.
