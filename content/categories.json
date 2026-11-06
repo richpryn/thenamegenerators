@@ -2618,18 +2618,22 @@
         "note": "builders and construction firms: classic family names to modern brands."
       },
       {
-        "key": "landscaping",
-        "note": "landscaping and gardening names: puns, classic and nature-inspired."
+        "key": "electrical_business",
+        "note": "names for electricians and electrical contractors, from puns to professional."
       }
     ],
     "generators": [
       "cleaning_business",
       "construction_company",
+      "electrical_business",
       "landscaping",
-      "lawn_care"
+      "lawn_care",
+      "painting_business",
+      "plumbing_business",
+      "roofing_company"
     ],
     "startHeading": "Try these name generators",
-    "startIntro": "Use these tools to name a cleaning, building, garden or lawn care business.",
+    "startIntro": "Use these tools to name a cleaning, building, garden, plumbing, electrical, roofing or painting business.",
     "approach": {
       "heading": "How to approach trade business names",
       "text": "<p>Most local trades are named in one of three ways: a family name (<em>Carter & Sons</em>), the town (<em>Hampton Garden Care</em>) or a catchy line that sticks (<em>Mow Excuses</em>). Each says something different: a family name promises a reputation, a town promises you're nearby, and a pun promises you're friendly. Pick the one that matches how you want customers to see you, keep it short enough for the side of a van, and say what you do if you specialise, because customers search for the job, not the name.</p>"
