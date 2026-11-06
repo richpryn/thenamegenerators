@@ -834,9 +834,30 @@
       "title": "🍨 Dessert Business Name Generator",
       "tagline": "Names for a dessert parlour, a dessert van or a treats business on Instagram."
     },
-    "intro": "Sundaes, waffles, cheesecake or dessert cups by delivery: this **dessert business name generator** has names in eight styles, from <em>Sundae Best</em> to French luxury, plus names built from your town or your own name.",
-    "sections": [],
+    "intro": "A good dessert business name sounds like a treat: a pun like Sundae Best for a fun parlour, or something soft and French for a dessert bar. Sundaes, waffles, cheesecake or dessert cups by delivery: this **dessert business name generator** has names in eight styles, from <em>Sundae Best</em> to French luxury, plus names built from your town or your own name.",
+    "sections": [
+      {
+        "heading": "Eight good dessert business names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Sundae Best</strong>: a pun on Sunday best, for a sundae parlour.</li><li><strong>Custard's Last Stand</strong>: a pun on Custer's Last Stand, for a place that never runs out.</li><li><strong>Never on a Sundae</strong>: a joke that works on a sign.</li><li><strong>Say Cheesecake Dessert Bar</strong>: a pun built around one dessert.</li><li><strong>Cloud Cups</strong>: aesthetic and simple, for dessert cups by delivery.</li><li><strong>Wobble</strong>: one funny, modern word that suggests jelly and panna cotta.</li><li><strong>Maison Chantilly</strong>: luxury: Chantilly cream is sweetened whipped cream, named after the town of Chantilly in France.</li><li><strong>Hampton Waffle & Sundae Bar</strong>: your town plus your menu.</li></ul>"
+      },
+      {
+        "heading": "How dessert business names work",
+        "content": "<ul><li><strong>Parlours and bars want fun.</strong> Families and teenagers choose dessert shops for a treat, so puns and playful names work well.</li><li><strong>French names suggest patisserie.</strong> <em>Maison</em> (house), <em>délices</em> (delights) and <em>sucré</em> (sweet) set expectations for something refined, and for prices to match.</li><li><strong>Delivery brands need clarity.</strong> On a delivery app, customers scroll fast, so a name that says what you sell (<em>Brownie Dessert Studio</em>) beats a clever one.</li></ul>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>A name from a generator is a starting point, not permission to use it. Before you order the sign, the boxes or the van livery:</p><ul><li><strong>Company register.</strong> In the UK, search Companies House; you can't register a limited company with the same name as an existing one. In the US, search your state's business register.</li><li><strong>Trade marks.</strong> Search the UK trade mark register (or the USPTO in the US) for the goods and services you'll sell.</li><li><strong>Domain and handles.</strong> Check the .co.uk or .com and the Instagram and TikTok handles you'll need.</li><li><strong>Your area.</strong> Search a map app for businesses with the same or a similar name nearby.</li></ul><p>Press <strong>Check</strong> on any name, or use the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to run most of these at once. For the full process, read our guide, <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>. This is general guidance, not legal advice.</p><p>In the UK, a dessert shop, van or delivery kitchen must register with the local council as a food business at least 28 days before trading.</p>"
+      },
+      {
+        "heading": "Making the name work on a delivery app",
+        "content": "<ul><li><strong>Put the dessert in the name</strong> if you sell one thing, so it shows up in searches.</li><li><strong>Keep it short</strong> enough to read on a phone thumbnail.</li><li><strong>Make sure you can say it.</strong> A French name you can't pronounce is hard to answer the phone with.</li></ul><p>Baking as well? Try the <a href=\"cake-business-name-generator.html\">Cake Business</a>, <a href=\"cookie-business-name-generator.html\">Cookie Business</a> and <a href=\"bakery-name-generator.html\">Bakery</a> name generators, or the <a href=\"cafe-name-generator.html\">Café Name Generator</a> if you serve coffee.</p><p>For more, see all the <a href=\"../categories/biz_food-names.html\">food and drink business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good dessert shop names?",
+        "answer": "Names that sound like a treat: puns like Sundae Best or Custard's Last Stand for a fun parlour, or French names like Maison Chantilly for a dessert bar."
+      },
       {
         "question": "How do I check a dessert business name is free?",
         "answer": "Press <strong>Check</strong> on any name to see whether it's free as a company name, a domain and a social media handle. Before you commit, search the official registers too: in the UK, Companies House and the UK trade mark register; in the US, your state's business register and the USPTO trade mark search. Look on a map app for businesses with the same name nearby."
@@ -844,6 +865,10 @@
       {
         "question": "Should I give my dessert shop a French name?",
         "answer": "A French name such as <em>Maison Sucre</em> or <em>La Douceur</em> suits a patisserie or an elegant dessert bar, and tells customers to expect something refined. For a fun sundae and waffle parlour, an English pun is usually easier to remember, spell and search for. Whatever you pick, make sure you know what the words mean and how to say them."
+      },
+      {
+        "question": "What's a good name for a dessert delivery business?",
+        "answer": "One that says what you sell and reads quickly on a phone: Cloud Cups, Brownie Dessert Studio or Hampton Waffle & Sundae Bar. Customers scroll fast on delivery apps."
       }
     ]
   }

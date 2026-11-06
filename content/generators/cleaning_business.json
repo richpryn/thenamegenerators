@@ -14,9 +14,30 @@
       "title": "🧽 Cleaning Business Name Generator",
       "tagline": "Names for a cleaning business, from Mop Stars to Ivory Housekeeping."
     },
-    "intro": "Need a name for your cleaning company? This **cleaning business name generator** has catchy puns, cute and friendly names, professional names for commercial cleaners and polished ones for luxury housekeeping, plus names built from your town or your first name.",
-    "sections": [],
+    "intro": "A good cleaning business name is short, cheerful and easy to remember from a van or a leaflet, and it hints at the result: a clean, calm home. This **cleaning business name generator** has catchy puns, cute and friendly names, professional names for commercial cleaners and polished ones for luxury housekeeping, plus names built from your town or your first name.",
+    "sections": [
+      {
+        "heading": "Eight good cleaning business names",
+        "content": "<p>All eight came from the generator, across its styles:</p><ul><li><strong>Dust Till Dawn</strong>: a pun customers repeat to their friends.</li><li><strong>Custom Maid Cleaners</strong>: a maid pun that also says what you do.</li><li><strong>Little Wren Cleaning</strong>: small, friendly and easy to draw as a logo.</li><li><strong>Larkfield Domestic Cleaning</strong>: a classic name that sounds long established.</li><li><strong>Keystone Contract Cleaning</strong>: professional, for offices and commercial contracts.</li><li><strong>Ivory Lane Household Services</strong>: quiet luxury for high-end housekeeping.</li><li><strong>Hampton Sparkle House Cleaning</strong>: a local name, built from the town you type in.</li><li><strong>Tidy Homes by Sarah</strong>: your own name, which customers remember and trust.</li></ul>"
+      },
+      {
+        "heading": "What makes a cleaning name work",
+        "content": "<p>Cleaning is a trust business: people are letting you into their homes or offices, often with a key. The name should sound tidy and dependable before anyone reads your reviews.</p><ul><li><strong>Domestic or commercial?</strong> Homeowners respond to warm, friendly names like <em>Sunny Side Maids</em>. Offices and facilities managers look for names that sound like a contract they can sign: <em>Blueline Facility Services</em>, <em>Vantage Office Cleaning</em>.</li><li><strong>Puns work, up to a point.</strong> <em>Mop Stars</em> and <em>Done & Dusted</em> are memorable on a van, but a commercial client may prefer something plainer. Pick one style and keep it.</li><li><strong>Say what you clean</strong> if you specialise: carpets, windows, end-of-tenancy or ovens. Customers search for exactly those words.</li><li><strong>Your town or your name</strong> helps local search and makes you sound like a real person rather than a franchise.</li></ul><p>Choose <strong>Name with a slogan</strong> to pair a name with a line for your leaflet, such as <em>Rise & Shine – Home is where the clean is</em>.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>A van wrap, uniforms and a stack of leaflets all carry the name, and each costs money the moment it's printed, so check the name first. Press <strong>Check</strong> next to any name to open the <a href=\"../business-name-checker.html\">Business Name Checker</a>, which looks it up in one go:</p><ul><li><strong>The company register:</strong> Companies House in the UK, or your state's business register in the US. A limited company's name can't be the same as one already registered.</li><li><strong>Trade marks:</strong> the UK IPO and USPTO registers. Registering a company doesn't stop someone else owning the name as a trade mark.</li><li><strong>A domain and social handles,</strong> so customers can find you under the same name everywhere.</li></ul><p>This is general guidance, not legal advice. For the full process, read our guide, <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>"
+      },
+      {
+        "heading": "Getting the name seen",
+        "content": "<ul><li><strong>Keep it readable at a distance.</strong> A van is read at 30 miles an hour, so short names and big letters win.</li><li><strong>Set up a Google Business Profile</strong> with the exact same name, so map searches and reviews all point to you.</li><li><strong>Match the handle.</strong> If the full name isn't free on Instagram or Facebook, add your town rather than random numbers.</li></ul><p>Other trades: the <a href=\"landscaping-business-name-generator.html\">Landscaping</a> and <a href=\"lawn-care-business-name-generator.html\">Lawn Care</a> business name generators, or the <a href=\"business-name-generator.html\">Business Name Generator</a> for anything else.</p><p>For more, see all the <a href=\"../categories/biz_trades-names.html\">trades and home services business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good cleaning business names?",
+        "answer": "Short, friendly names that hint at a clean result, like Dust Till Dawn, Little Wren Cleaning or Keystone Contract Cleaning for offices. Adding your town or first name, as in Tidy Homes by Sarah, helps local customers find and trust you."
+      },
       {
         "question": "How do I check a cleaning business name is free?",
         "answer": "Press <strong>Check</strong> next to any name to see if it's free as a company, a domain and a social media handle. Then make sure: in the UK, search Companies House and the UK IPO trade mark register; in the US, search your state's business register and the USPTO trade mark search. A quick map search for the name in your area helps too."
@@ -24,6 +45,10 @@
       {
         "question": "What's a good slogan for a cleaning business?",
         "answer": "Keep it short and promise the result, not the work: <em>We clean, you relax</em> or <em>Your home, spotless</em>. Choose <strong>Name with a slogan</strong> in the Format menu to see names paired with one."
+      },
+      {
+        "question": "Should I put my own name in my cleaning business name?",
+        "answer": "It often helps for a small, local business: customers like knowing who's coming to their home. If you plan to grow and take on staff, a name without your own in it may be easier to sell or expand later."
       }
     ]
   },

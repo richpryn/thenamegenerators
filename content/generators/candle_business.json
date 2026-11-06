@@ -1155,9 +1155,30 @@
       "title": "🕯️ Candle Business Name Generator",
       "tagline": "Names for a candle maker, from Pour Decisions to Amber & Oud."
     },
-    "intro": "Pouring candles for Etsy, markets or your own shop? This **candle business name generator** has names in eight styles, from puns and witchy to quiet luxury, ready to check before you print the labels.",
-    "sections": [],
+    "intro": "A good candle business name hints at light, wax or scent and fits on a small jar label: a pun, a cosy pairing, a scent or something witchy. This **candle business name generator** has names in eight styles, from puns and witchy to quiet luxury, ready to check before you print the labels.",
+    "sections": [
+      {
+        "heading": "Eight good candle business names",
+        "content": "<p>All eight came from the generator, across its styles:</p><ul><li><strong>Wax & Wane Candle Co.</strong>: a pun on the moon that fits a candle perfectly.</li><li><strong>Wick Tock</strong>: short, funny and easy to remember.</li><li><strong>Hedgehog & Ember</strong>: a cute pairing for a cosy, rustic range.</li><li><strong>Big Sniff Energy</strong>: a funny name for a playful shop.</li><li><strong>Saffron & Vetiver</strong>: luxury, named after two scents.</li><li><strong>Linen & Ash</strong>: aesthetic and calm, with a soft image.</li><li><strong>Crescent Moon Apothecary</strong>: witchy, with an old word for a maker of remedies.</li><li><strong>Wick by Sarah</strong>: your own name as a maker's mark.</li></ul>"
+      },
+      {
+        "heading": "How candle brands are named",
+        "content": "<ul><li><strong>Scent pairings</strong> (<em>Neroli & Oud</em>, <em>Saffron & Vetiver</em>) suit a premium range and tell customers what they'll smell.</li><li><strong>Light and time</strong>: <em>Soft Hours</em>, <em>Late Light</em>, <em>Quiet Hours</em>. Candles are about evenings, so these names feel calm.</li><li><strong>Pouring puns</strong>: <em>Pour Decisions</em>, <em>Pour Soul Candle Co.</em> The word pour is the candle-maker's own.</li><li><strong>Witchy names</strong> borrow moons, ravens and apothecaries, and suit ritual and seasonal candles.</li></ul>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Jar labels, boxes and market stall signs all carry the name, and each costs money the moment it's printed, so check the name first. Press <strong>Check</strong> next to any name to open the <a href=\"../business-name-checker.html\">Business Name Checker</a>, which looks it up in one go:</p><ul><li><strong>The company register:</strong> Companies House in the UK, or your state's business register in the US. A limited company's name can't be the same as one already registered.</li><li><strong>Trade marks:</strong> the UK IPO and USPTO registers. Registering a company doesn't stop someone else owning the name as a trade mark.</li><li><strong>A domain and social handles,</strong> so customers can find you under the same name everywhere.</li></ul><p>If you sell scented candles in the UK or EU, your labels will usually need safety information about the fragrance oils as well as your name, so leave room for it in the design.</p><p>This is general guidance, not legal advice. For the full process, read our guide, <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>"
+      },
+      {
+        "heading": "Tips for a candle maker",
+        "content": "<ul><li><strong>Test it on a jar.</strong> Write the name on a real label: long names get squashed.</li><li><strong>Avoid famous candle brands' names.</strong> Big brands defend their names.</li><li><strong>Match the name to the price.</strong> A pun suits a market stall; a scent pairing suits a premium range.</li></ul><p>Selling other gifts? Try the <a href=\"jewelry-business-name-generator.html\">Jewelry Business</a> and <a href=\"boutique-name-generator.html\">Boutique</a> name generators, or the <a href=\"brand-name-generator.html\">Brand Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_shops-names.html\">shop, brand and maker business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good candle business names?",
+        "answer": "Names that hint at light, wax or scent and fit on a small label: Wax & Wane Candle Co., Hedgehog & Ember, Saffron & Vetiver or Linen & Ash. Puns like Wick Tock suit a playful shop."
+      },
       {
         "question": "How do I check a candle business name is free?",
         "answer": "Press <strong>Check</strong> on any name to see whether it is free as a company name, a web address and a social media handle. In the UK, search the Companies House register; in the US, search your state's business register and the USPTO trade mark search. Do this before you pay for a logo, labels or signage."
@@ -1165,6 +1186,10 @@
       {
         "question": "What is a good name for a candle business?",
         "answer": "One that hints at light, wax or scent, fits on a small jar label and still reads well as a handle. Puns such as <em>Pour Decisions</em> suit a playful Etsy shop; a scent pair such as <em>Amber & Oud</em> suits a premium range. Avoid names close to big brands such as Yankee Candle or Diptyque, which defend their names."
+      },
+      {
+        "question": "What are some funny candle business names?",
+        "answer": "Puns and silly animals work well: Big Sniff Energy, Wick Tock, The Startled Otter Candle Co. or Smells Like a Day Off. Choose Funny for more."
       }
     ]
   }

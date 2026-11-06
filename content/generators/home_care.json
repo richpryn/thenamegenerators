@@ -452,16 +452,37 @@
       "title": "🏡 Home Care Name Generator",
       "tagline": "Calm, trustworthy names for a home care or domiciliary care agency."
     },
-    "intro": "Families choose a home care agency on trust, so the name should sound calm, kind and dependable. This **Home Care Name Generator** suggests names for home care, senior care and domiciliary care agencies in six styles, including names built from your town or your own name.",
-    "sections": [],
+    "intro": "Good home care names sound calm, kind and dependable, the qualities families look for: <em>Langley Home Care</em>, <em>Every Step Care</em> or <em>Lamplight Companion Care</em>. Families choose a home care agency on trust, so the name should sound calm, kind and dependable. This **Home Care Name Generator** suggests names for home care, senior care and domiciliary care agencies in six styles, including names built from your town or your own name.",
+    "sections": [
+      {
+        "heading": "Eight good home care names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Langley Home Care</strong>: a classic surname-style name that sounds established.</li><li><strong>Whitmore Care Services</strong>: formal and reassuring for an agency.</li><li><strong>Every Step Care</strong>: warm, and it suggests support that adapts over time.</li><li><strong>Thoughtful Home Care</strong>: one plain quality families want.</li><li><strong>Lantern Care</strong>: modern and gentle: a light left on.</li><li><strong>Linden Home Care</strong>: a calm tree name that suits a local agency.</li><li><strong>Lamplight Companion Care</strong>: faith-inspired without being preachy, and it says companionship.</li><li><strong>Hampton Companion Care</strong>: your town's name, for families searching locally.</li></ul>"
+      },
+      {
+        "heading": "Choosing a name families will trust",
+        "content": "<p>Families usually choose a care agency at a hard time, often for a parent, so the name should reassure rather than entertain.</p><ul><li><strong>Keep it calm and plain.</strong> Puns rarely suit care. Words like <em>Care</em>, <em>Home Care</em>, <em>Companion Care</em> and <em>Care at Home</em> are clear and kind.</li><li><strong>Say what you do.</strong> <em>Companion care</em> suggests help with company and daily life; <em>home care</em> covers personal care too. Use the words for the service you're registered to provide.</li><li><strong>Sound settled.</strong> A surname or place name (<em>Whitfield Home Care</em>) suggests an agency that has been around for years.</li><li><strong>Use warmth carefully.</strong> <em>Kindly</em>, <em>Thoughtful</em> and <em>Gentle</em> work; anything that sounds childish or cute can feel wrong to an older client.</li></ul><p><em>Domiciliary care</em> is the formal UK term, but families rarely search for it, so most agencies put <em>home care</em> or <em>care at home</em> in the name.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Every name here has a <strong>Check</strong> button, which opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>: it looks up domains, social handles, the company register and trade mark searches in one place. Before you order signs or cards:</p><ul><li><strong>Company register.</strong> In the UK, search Companies House; a limited company's name can't be the same as one already registered. In the US, search your state's business register. In England, an agency providing personal care must also register with the Care Quality Commission (CQC); in Scotland that's the Care Inspectorate, and in Wales Care Inspectorate Wales. Check your name isn't too close to an agency already registered with them.</li><li><strong>Trade marks.</strong> Search the UK Intellectual Property Office or the USPTO for marks in your line of work. Registering a company doesn't give you trade mark rights.</li><li><strong>Domain and handles.</strong> Try the .co.uk or .com and the Instagram and Facebook names at the same time, and change the name slightly rather than settle for a messy handle.</li><li><strong>Local search.</strong> Look up the name with your town. Two similar businesses a few miles apart confuse customers and reviews.</li></ul><p>This is general guidance, not legal advice. For the full process, read <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p><p>For other caring businesses, try the <a href=\"pet-sitting-name-generator.html\">Pet Sitting</a> name generator, or the <a href=\"business-name-generator.html\">Business Name Generator</a> for a name in your own words.</p><p>For more, see all the <a href=\"../categories/biz_care-names.html\">pet, care and learning business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
       {
-        "question": "How do I check a home care name is free?",
-        "answer": "Press **Check** on any name to see whether it's free as a company name, a domain and a social media handle. Before you commit, search the official registers too: in the UK, Companies House; in the US, your state's business register and the USPTO trade mark search."
+        "question": "What are good home care business names?",
+        "answer": "Calm, kind and dependable names, like Langley Home Care, Every Step Care or Lantern Care. A surname or your town (Hampton Companion Care) makes an agency sound established and local."
       },
       {
         "question": "Is home care the same as domiciliary care?",
-        "answer": "Yes. <em>Domiciliary care</em> is the formal UK term for care in a person's own home, while most agencies call it <em>home care</em> or <em>care at home</em> in their name because it is clearer to families. In the US, <em>home care</em> and <em>senior care</em> are the usual words. In England a home care agency giving personal care must register with the Care Quality Commission (CQC), so check your name there too."
+        "answer": "Yes. Domiciliary care is the formal UK term for care in a person's own home, while most agencies call it home care or care at home in their name because it is clearer to families. In the US, home care and senior care are the usual words. In England a home care agency giving personal care must register with the Care Quality Commission (CQC), so check your name there too."
+      },
+      {
+        "question": "Should a care agency have a faith-inspired name?",
+        "answer": "It can, if faith is part of how you work and you welcome everyone. Gentle words like Grace, Hope or Lamplight read as warm to most families; choose the Faith-inspired style for ideas."
+      },
+      {
+        "question": "How do I check a home care name is free?",
+        "answer": "Press Check on any name to see whether it's free as a company name, a domain and a social media handle. Before you commit, search the official registers too: in the UK, Companies House; in the US, your state's business register and the USPTO trade mark search."
       }
     ]
   }
