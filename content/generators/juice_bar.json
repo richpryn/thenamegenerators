@@ -694,9 +694,30 @@
       "title": "🥤 Juice Bar Name Generator",
       "tagline": "Names for a juice bar, smoothie shack or cold-press brand, from Peel Good to Mango Bay Smoothies."
     },
-    "intro": "A juice bar name should sound fresh, bright and healthy, and fit on a cup, a bottle label and a shopfront. This **juice bar name generator** gives you names for a juice or smoothie bar in seven styles, from punny to tropical, including ones built from your town or your own name.",
-    "sections": [],
+    "intro": "Good juice bar names sound fresh and bright: a pun (<em>Beet Goes On Juicery</em>), a pair of ingredients (<em>Celery &amp; Mint Juice Bar</em>) or a short modern word (<em>Pulp &amp; Pith</em>). This **juice bar name generator** gives you names for a juice or smoothie bar in seven styles, from punny to tropical, including ones built from your town or your own name.",
+    "sections": [
+      {
+        "heading": "Eight good juice bar names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Beet Goes On Juicery</strong>: a song pun with a vegetable in it.</li><li><strong>Glow Getter Juice Co.</strong>: a play on go-getter, for a bright brand.</li><li><strong>Lime Light Juice Bar</strong>: a pun people get straight away.</li><li><strong>Celery &amp; Mint Juice Bar</strong>: two ingredients that tell you it's fresh.</li><li><strong>Mango Island Smoothie Shack</strong>: tropical, for a beach or a summer kiosk.</li><li><strong>Pulp &amp; Pith</strong>: two juicing words, short and modern.</li><li><strong>Root &amp; Seed</strong>: earthy and simple, for a health-focused menu.</li><li><strong>Hampton Juicery</strong>: your town and the trade word.</li></ul>"
+      },
+      {
+        "heading": "What makes a juice bar name work",
+        "content": "<ul><li><strong>Fresh words:</strong> pulp, press, peel, rind, root and leaf all say \"made in front of you\".</li><li><strong>Juicery</strong> is a modern word for a juice shop, and suits cold-pressed juice in bottles as well as a counter.</li><li><strong>Juice or smoothie?</strong> Name what most of your menu is, or choose a name without either word if you might add bowls and coffee later.</li><li><strong>Keep health claims out of the name.</strong> Words that promise to cure or detox can fall foul of food advertising rules.</li></ul>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>A name from a generator is a starting point, not permission to use it. Before you order the cups, bottle labels or sign:</p><ul><li><strong>Company register.</strong> In the UK, search Companies House; you can't register a limited company with the same name as an existing one. In the US, search your state's business register.</li><li><strong>Trade marks.</strong> Search the UK trade mark register (or the USPTO in the US) for the goods and services you'll sell.</li><li><strong>Domain and handles.</strong> Check the .co.uk or .com and the Instagram and TikTok handles you'll need.</li><li><strong>Your area.</strong> Search a map app and the delivery apps for businesses with the same or a similar name nearby.</li></ul><p>Press <strong>Check</strong> on any name, or use the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to run most of these at once. For the full process, read our guide, <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>. This is general guidance, not legal advice.</p><p>In the UK, any food business must register with the local council at least 28 days before it starts trading. Registration is free, and the council will inspect you and give you a food hygiene rating.</p>"
+      },
+      {
+        "heading": "Tips for juice bars",
+        "content": "<p>Bottle labels are small, so check your name still reads at label size. For a sit-down menu, try the <a href=\"cafe-name-generator.html\">Café Name Generator</a>; for something sweeter, the <a href=\"bubble-tea-shop-name-generator.html\">Bubble Tea Shop</a> and <a href=\"ice-cream-business-name-generator.html\">Ice Cream</a> name generators.</p><p>For more, see all the <a href=\"../categories/biz_food-names.html\">food and drink business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good juice bar names?",
+        "answer": "Fresh, bright names: Beet Goes On Juicery, Glow Getter Juice Co., Celery & Mint Juice Bar or Pulp & Pith. Choose a style for punny, cute, fresh, tropical or modern names."
+      },
       {
         "question": "How do I check a juice bar name is free?",
         "answer": "Press <strong>Check</strong> on any name to see whether it's free as a company name, a domain and a social media handle. Before you commit, search the official registers too: in the UK, Companies House and the UK trade mark register; in the US, your state's business register and the USPTO trade mark search. Look on a map app for businesses with the same name nearby."
@@ -704,6 +725,10 @@
       {
         "question": "Should my name say juice bar or smoothie bar?",
         "answer": "Say what most of your menu is. If you might add smoothies, acai bowls or coffee later, a name without the drink in it (<em>Peel Good</em>, <em>Wild Leaf</em>) or with a wide word like <em>Juice Co.</em> or <em>Juicery</em> gives you room. Avoid health claims in the name, such as cures or detox promises, which advertising rules in the UK and US restrict."
+      },
+      {
+        "question": "What's a juicery?",
+        "answer": "A modern word for a juice shop, often one that sells cold-pressed juice in bottles. It's a good word to use if you sell more than drinks over the counter."
       }
     ]
   }

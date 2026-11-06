@@ -181,16 +181,37 @@
       "title": "✈️ Travel Agency Name Generator",
       "tagline": "Names for a travel agent, travel agency or tour company, from Window Seat Travel to Plane Sailing."
     },
-    "intro": "Name your business with this **Travel Agency Name Generator**: for independent travel agents, high-street travel agencies and tour companies. Pick a style and kind of business, or add your first name or town.",
-    "sections": [],
+    "intro": "Good travel agency names make people want to go somewhere: a bird that travels like <em>Godwit Travel Co.</em>, a line about the journey like <em>Plane Sailing Travel</em>, or your own name, like <em>Journeys by Sarah</em>. Name your business with this **Travel Agency Name Generator**: for independent travel agents, high-street travel agencies and tour companies. Pick a style and kind of business, or add your first name or town.",
+    "sections": [
+      {
+        "heading": "Eight good travel agency names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Plane Sailing Travel</strong>: a pun on plain sailing: holidays without the hassle.</li><li><strong>Carry Me Off Travel</strong>: the feeling of a good holiday, in four words.</li><li><strong>Godwit Travel Co.</strong>: the bar-tailed godwit flies from Alaska to New Zealand without stopping.</li><li><strong>Tern Trips</strong>: the Arctic tern makes the longest migration of any animal.</li><li><strong>Lost Luggage Vacations</strong>: a joke for agents with a sense of humour.</li><li><strong>Sapphire Shores Luxury Holidays</strong>: colour and coast for the top end.</li><li><strong>Holmwood Holidays</strong>: a classic name for a high-street agency.</li><li><strong>Journeys by Sarah</strong>: personal, for an independent agent.</li></ul>"
+      },
+      {
+        "heading": "How travel businesses name themselves",
+        "content": "<p>Travel names sell a feeling: open roads, window seats, shores and journeys. Birds that migrate make good modern names, because they travel further than anyone: the Arctic tern and the bar-tailed godwit hold the records. Luxury agencies lean on precious stones and calm water; funny names belong to agents whose clients are families and friends.</p><p>Watch your words. <em>Holidays</em> sounds British and <em>Vacations</em> American; <em>Travel</em> works for both. <em>Tours</em> suggests you run trips yourself, while <em>Travel Agency</em> suggests you book other people's.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Every name here has a <strong>Check</strong> button, which opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>: it looks up domains, social handles, the company register and trade mark searches in one place. Before you order signs or cards:</p><ul><li><strong>Company register.</strong> In the UK, search Companies House; a limited company's name can't be the same as one already registered. In the US, search your state's business register.</li><li><strong>Trade marks.</strong> Search the UK Intellectual Property Office or the USPTO for marks in your line of work. Registering a company doesn't give you trade mark rights.</li><li><strong>Domain and handles.</strong> Try the .co.uk or .com and the main social handles at the same time, and adjust the name rather than settle for a messy handle.</li><li><strong>Local search.</strong> Look the name up with your town, as two similar firms a few miles apart confuse clients and reviews.</li></ul><p>This is general guidance, not legal advice. For the full process, read <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p><p>In the UK, package holidays that include flights must be protected under ATOL, run by the Civil Aviation Authority, and many agents also join ABTA, so plan for these before you trade. For a general firm name, try the <a href=\"business-name-generator.html\">Business Name Generator</a>; for weddings abroad, the <a href=\"wedding-planner-name-generator.html\">Wedding Planner Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_services-names.html\">professional and creative business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
       {
-        "question": "How do I check a travel agency name is free?",
-        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse customers."
+        "question": "What are good travel agency names?",
+        "answer": "Names that make people want to go: Plane Sailing Travel, Carry Me Off Travel, a bird that travels like Godwit Travel Co., or your own name, like Journeys by Sarah."
       },
       {
         "question": "What should an independent travel agent call their business?",
         "answer": "Many home-based agents use their own name (\"Travel with Sarah\", \"Sarah Rose Travel\"), because clients book with a person they trust. If you specialise, say so: cruises, honeymoons, ski or family holidays. \"Holidays\" sounds British and \"Vacations\" American, so pick the one your clients use, or plain \"Travel\" for both. Keep well clear of big tour operators' and airlines' names."
+      },
+      {
+        "question": "Do I need ATOL to start a travel agency in the UK?",
+        "answer": "If you sell package holidays that include flights, they must be ATOL protected; ATOL is run by the Civil Aviation Authority. Check what you'll sell before you choose a name and trade."
+      },
+      {
+        "question": "How do I check a travel agency name is free?",
+        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse customers."
       }
     ]
   },

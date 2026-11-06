@@ -1052,9 +1052,30 @@
       "title": "🍽️ Restaurant Name Generator",
       "tagline": "Names for a restaurant, bistro, grill or takeaway, from The Hungry Fox to Trattoria del Ponte."
     },
-    "intro": "A restaurant name sets expectations before anyone reads the menu, and it has to work on a sign, a booking site and a map search. This **restaurant name generator** gives you names in eight styles, from catchy to fine dining, Italian and Spanish, including ones built from your town or your own name.",
-    "sections": [],
+    "intro": "A good restaurant name tells people what kind of evening to expect before they read the menu: <em>Nolan's Brasserie</em> promises steak frites, <em>La Locanda</em> pasta and candles, <em>Flint &amp; Bone</em> an open grill. This **restaurant name generator** gives you names in eight styles, from catchy to fine dining, Italian and Spanish, including ones built from your town or your own name.",
+    "sections": [
+      {
+        "heading": "Eight good restaurant names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>The Crooked Pig</strong>: a pub-style name with a picture in it, easy to remember.</li><li><strong>Chapel Lane Bistro</strong>: a street and a kind of restaurant: exactly how many real ones are named.</li><li><strong>Osborne's Steakhouse</strong>: a surname says there's a cook behind it.</li><li><strong>Flint &amp; Bone</strong>: two hard words for an open-fire grill.</li><li><strong>Restaurant Marigold</strong>: the formal \"Restaurant\" first is a fine-dining habit.</li><li><strong>Da Aldo</strong>: Italian for \"at Aldo's\", the way many trattorias are named after the owner.</li><li><strong>Casa Mateo</strong>: Spanish for \"Mateo's house\", warm and simple.</li><li><strong>Sarah's on the Quay</strong>: your name and where to find you.</li></ul>"
+      },
+      {
+        "heading": "What restaurant names say",
+        "content": "<p>The word <em>restaurant</em> comes from the French <em>restaurer</em>, to restore: in 18th-century Paris a restaurant was first a restoring broth, before it became the place that served it. The kind of place you name says a lot on its own:</p><ul><li><strong>Bistro and brasserie:</strong> French, informal and busy. A brasserie was originally a brewery.</li><li><strong>Trattoria, osteria, locanda:</strong> Italian words for simple, family-run places. <em>Ristorante</em> is the smarter one, and a <em>locanda</em> was an inn.</li><li><strong>Casa, cocina, taquería:</strong> Spanish for house, kitchen and taco shop.</li><li><strong>Kitchen, dining rooms, grill:</strong> plain English words that say \"relaxed\" or \"modern\" depending on what you pair them with.</li></ul><p>Choose <strong>Italian</strong> or <strong>Spanish</strong> for names that use the words correctly, and make sure the menu matches the promise.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>A name from a generator is a starting point, not permission to use it. Before you order the sign, menus or booking page:</p><ul><li><strong>Company register.</strong> In the UK, search Companies House; you can't register a limited company with the same name as an existing one. In the US, search your state's business register.</li><li><strong>Trade marks.</strong> Search the UK trade mark register (or the USPTO in the US) for the goods and services you'll sell.</li><li><strong>Domain and handles.</strong> Check the .co.uk or .com and the Instagram and TikTok handles you'll need.</li><li><strong>Your area.</strong> Search a map app and the delivery apps for businesses with the same or a similar name nearby.</li></ul><p>Press <strong>Check</strong> on any name, or use the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to run most of these at once. For the full process, read our guide, <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>. This is general guidance, not legal advice.</p><p>In the UK, any food business must register with the local council at least 28 days before it starts trading. Registration is free, and the council will inspect you and give you a food hygiene rating.</p>"
+      },
+      {
+        "heading": "Tips for restaurant names",
+        "content": "<ul><li><strong>Test it on the phone.</strong> People ring to book. If you have to spell it every time, choose another.</li><li><strong>Search it on the booking and delivery apps</strong> in your area, where customers type the name.</li></ul><p>For a smaller place, try the <a href=\"cafe-name-generator.html\">Café</a> or <a href=\"pizza-business-name-generator.html\">Pizza</a> name generators; for events, the <a href=\"catering-business-name-generator.html\">Catering Business Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_food-names.html\">food and drink business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good restaurant names?",
+        "answer": "Names that set expectations and are easy to say on the phone: The Crooked Pig, Chapel Lane Bistro, Flint & Bone, Da Aldo or Casa Mateo. Choose a style, from catchy to fine dining, Italian or Spanish."
+      },
       {
         "question": "How do I check a restaurant name is free?",
         "answer": "Press <strong>Check</strong> on any name to see whether it's free as a company name, a domain and a social media handle. Before you commit, search the official registers too: in the UK, Companies House and the UK trade mark register; in the US, your state's business register and the USPTO trade mark search. Look on a map app for businesses with the same name nearby."
@@ -1062,6 +1083,10 @@
       {
         "question": "How do I come up with a unique restaurant name?",
         "answer": "Start with what makes the place yours: your name, the street, the building, the cooking or the feeling you want. Say it out loud, picture it on the sign and type it into a map search to see whether a restaurant nearby already uses it. Avoid names so narrow that you can't change the menu later."
+      },
+      {
+        "question": "What does trattoria mean?",
+        "answer": "A simple, informal Italian restaurant, usually family-run. An osteria is similar, a ristorante is more formal, and a locanda was originally an inn."
       }
     ]
   }

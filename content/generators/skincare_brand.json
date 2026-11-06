@@ -800,16 +800,41 @@
       "title": "🧴 Skincare Brand Name Generator",
       "tagline": "Names for a skincare line, body care brand or small-batch apothecary."
     },
-    "intro": "The **Skincare Brand Name Generator** suggests names for a skincare (or skin care) brand, body care line or small-batch business: catchy, cute, modern, luxury, aesthetic, natural and botanical, your town or your own name.",
-    "sections": [],
+    "intro": "Good skincare brand names are short, look clean on a small label, and hint at what the product feels like or is made from: Balm & Bloom, The Beeswax Apothecary, Studio Retinol. The **Skincare Brand Name Generator** suggests names for a skincare (or skin care) brand, body care line or small-batch business: catchy, cute, modern, luxury, aesthetic, natural and botanical, your town or your own name.",
+    "sections": [
+      {
+        "heading": "Eight good skincare brand names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Balm & Bloom</strong>: soft alliteration that suits a gentle range.</li><li><strong>Clean Slate Skin</strong>: a catchy promise in three short words.</li><li><strong>Studio Retinol</strong>: modern and science-led, named after an active ingredient.</li><li><strong>Pearl Botanicals</strong>: a luxury name with plants in it.</li><li><strong>No. 9 Apothecary</strong>: a numbered name that looks good on a small bottle.</li><li><strong>Dewdrop Skin</strong>: cute and easy to remember.</li><li><strong>Oat & Elderflower Naturals</strong>: two real ingredients, so customers know what's inside.</li><li><strong>Sage Skin Goods</strong>: an aesthetic name with a calm colour in it.</li></ul>"
+      },
+      {
+        "heading": "How skincare names work",
+        "content": "<ul><li><strong>Ingredient names</strong> say what's in the jar: <em>The Beeswax Apothecary</em>, <em>Camellia Skin Kitchen</em>. Only name an ingredient the product really contains.</li><li><strong>Science names</strong> use lab and formula words: <em>Formula Labs</em>, <em>Serum Lab Skin Co.</em></li><li><strong>Luxury</strong> names use a number, a pearl or \"atelier\": <em>No. 11 Skin Atelier</em>.</li><li><strong>Apothecary</strong> is an old word for a pharmacist's shop, and suits small-batch, plant-based ranges.</li></ul><p>Labels are small, so a one- or two-word name with \"Skin\" or \"Skincare\" in the descriptor line often works better than a long name.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Press <strong>Check</strong> on any name, or paste one into the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to see whether the domain and social handles are free and to jump to the company register and trade mark searches. Then:</p><ul><li><strong>Search the company register.</strong> In the UK that's Companies House; in the US, your state's business register.</li><li><strong>Search trade marks</strong> with the UK Intellectual Property Office or the USPTO, especially if you'll sell products or open more than one site.</li><li><strong>Look locally.</strong> Search Google Maps for skincare brands near you: a similar name a few streets away will confuse customers even if it's legally fine.</li><li><strong>Get the trade mark search right.</strong> Cosmetics are a crowded trade mark class, and a brand is harder to change once it's printed on stock.</li><li><strong>In the UK, cosmetics have their own rules.</strong> Before you sell, each product needs a UK-based Responsible Person and a safety assessment, and must be notified through the government's cosmetic product notification service.</li></ul><p>This is general guidance, not legal advice. For more on choosing and checking a name, read our guide: <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>"
+      },
+      {
+        "heading": "Naming the range as well as the brand",
+        "content": "<p>Many small brands give each product a short name of its own (a cleanser called after a place, a balm called after a flower) under one brand name. Keep the brand name simple so the product names have room. For candles or soap to sit alongside it, try the <a href=\"candle-business-name-generator.html\">Candle Business Name Generator</a> and the <a href=\"soap-business-name-generator.html\">Soap Business Name Generator</a>; for colour cosmetics, the <a href=\"makeup-brand-name-generator.html\">Makeup Brand Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_beauty-names.html\">beauty and wellness business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good skincare brand names?",
+        "answer": "Short names that look clean on a label and hint at the product: Balm & Bloom, Oat & Elderflower Naturals, Studio Retinol or No. 9 Apothecary. Choose a style for names like these."
+      },
+      {
+        "question": "Can I put \"organic\" or \"natural\" in my skincare brand name?",
+        "answer": "Be careful. A name is a claim, and in the UK advertising rules say claims mustn't mislead, while in the US the word organic on many cosmetics falls under the USDA organic rules. If your products aren't certified, a word such as botanical, apothecary or plant-based is safer than organic. Check with your safety assessor or trading standards before you print labels."
+      },
       {
         "question": "How do I check a skincare brand name is free?",
         "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, also search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as another business nearby with a similar name can confuse clients."
       },
       {
-        "question": "Can I put \"organic\" or \"natural\" in my skincare brand name?",
-        "answer": "Be careful. A name is a claim, and in the UK advertising rules say claims mustn't mislead, while in the US the word organic on many cosmetics falls under the USDA organic rules. If your products aren't certified, a word such as botanical, apothecary or plant-based is safer than organic. Check with your safety assessor or trading standards before you print labels."
+        "question": "Do I need anything before selling skincare in the UK?",
+        "answer": "Yes. Each product needs a UK-based Responsible Person, a cosmetic product safety report from a qualified assessor, and notification to the government before it goes on sale. Check the current rules on GOV.UK before you launch."
       }
     ]
   }

@@ -938,9 +938,30 @@
       "title": "🚚 Food Truck Name Generator",
       "tagline": "Names for a food truck, food van or street food stall, from Wheel Good Food to Bessie the Burger Van."
     },
-    "intro": "A food truck name has to work painted on the side of a van, shouted across a festival field and typed into Instagram. This **food truck name generator** gives you names in eight styles, from punny to taco and BBQ names, for trucks in the US and food vans in the UK.",
-    "sections": [],
+    "intro": "Good food truck names are short, loud and say what you cook, so people choose you from across a festival field: <em>Seoul Train Street Kitchen</em>, <em>Bun &amp; Gone</em>, <em>Agave Street Tacos</em>. This **food truck name generator** gives you names in eight styles, from punny to taco and BBQ names, for trucks in the US and food vans in the UK.",
+    "sections": [
+      {
+        "heading": "Eight good food truck names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Seoul Train Street Kitchen</strong>: a Korean food pun that works in a sentence.</li><li><strong>Hummus Where the Heart Is</strong>: a pun people repeat to their friends.</li><li><strong>Crêpe Expectations Truck</strong>: Dickens, but make it pancakes.</li><li><strong>Bun &amp; Gone</strong>: a burger van name that's also a promise of speed.</li><li><strong>Smoke Signals BBQ</strong>: the smoke you can see from the car park, in the name.</li><li><strong>Agave Street Tacos</strong>: the food and a Mexican flavour in three words.</li><li><strong>Gertie the Taco Truck</strong>: giving the van a name makes it a character.</li><li><strong>Spark &amp; Spoon</strong>: short and modern, for a van whose menu might change.</li></ul>"
+      },
+      {
+        "heading": "What makes a food truck name work",
+        "content": "<ul><li><strong>Read it at speed.</strong> Customers see your van for a few seconds across a market or a field. Short names and big words win.</li><li><strong>Puns earn their place here.</strong> A queue at a festival is where a name like <em>Curry Up Food Truck</em> gets photographed and shared.</li><li><strong>Name the food, or paint it underneath.</strong> Choose <strong>Tacos</strong> or <strong>Burgers</strong> for names that say it, or a catchy name with the menu on the side of the van.</li><li><strong>Truck or van?</strong> Americans say food truck; in the UK it's usually a food van or catering trailer. Use the word your customers search for.</li></ul>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>A name from a generator is a starting point, not permission to use it. Before you order the van wrap or banners:</p><ul><li><strong>Company register.</strong> In the UK, search Companies House; you can't register a limited company with the same name as an existing one. In the US, search your state's business register.</li><li><strong>Trade marks.</strong> Search the UK trade mark register (or the USPTO in the US) for the goods and services you'll sell.</li><li><strong>Domain and handles.</strong> Check the .co.uk or .com and the Instagram and TikTok handles you'll need.</li><li><strong>Your area.</strong> Search a map app and the delivery apps for businesses with the same or a similar name nearby.</li></ul><p>Press <strong>Check</strong> on any name, or use the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to run most of these at once. For the full process, read our guide, <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>. This is general guidance, not legal advice.</p><p>In the UK, any food business must register with the local council at least 28 days before it starts trading. Registration is free, and the council will inspect you and give you a food hygiene rating.</p><p>A mobile food business registers with the council where the vehicle is kept. To sell on the street in the UK you'll usually also need a street trading licence or consent from the council where you trade, and markets and festivals have their own pitch fees and rules.</p>"
+      },
+      {
+        "heading": "Tips for food trucks",
+        "content": "<ul><li><strong>Match your handle to the name.</strong> Regulars follow vans on Instagram to find out where you'll be next, so the handle matters as much as the sign.</li><li><strong>Check the name fits the serving hatch.</strong> Many vans put the name above the hatch, where long names shrink.</li></ul><p>For a fixed shop, try the <a href=\"restaurant-name-generator.html\">Restaurant</a> and <a href=\"pizza-business-name-generator.html\">Pizza</a> name generators; for desserts on wheels, the <a href=\"ice-cream-business-name-generator.html\">Ice Cream Business Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_food-names.html\">food and drink business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good food truck names?",
+        "answer": "Short, loud names that say what you cook: Seoul Train Street Kitchen, Bun & Gone, Smoke Signals BBQ or Agave Street Tacos. Choose a style for punny, cute, modern, taco or burger names."
+      },
       {
         "question": "How do I check a food truck name is free?",
         "answer": "Press <strong>Check</strong> on any name to see whether it's free as a company name, a domain and a social media handle. Before you commit, search the official registers too: in the UK, Companies House and the UK trade mark register; in the US, your state's business register and the USPTO trade mark search. Look on a map app for businesses with the same name nearby."
@@ -948,6 +969,10 @@
       {
         "question": "Should a food truck name say what food you sell?",
         "answer": "It helps. People choose a truck from across a car park or a festival field, so a name like <em>Fuego Tacos</em> or <em>Hickory Smoke BBQ</em> sells itself. If you might change the menu, pick a catchy name and put the food on the van underneath it, e.g. <em>Wheel Good Food: burgers and loaded fries</em>."
+      },
+      {
+        "question": "Do I need a licence for a food van in the UK?",
+        "answer": "Usually more than one. The van registers as a food business with the council where it's kept, and selling on the street usually needs a street trading licence or consent from the council where you trade. Markets and events set their own rules."
       }
     ]
   }

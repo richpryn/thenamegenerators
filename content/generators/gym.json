@@ -1079,16 +1079,41 @@
       "title": "🏋️ Gym Name Generator",
       "tagline": "Names for a gym, personal training business or fitness studio."
     },
-    "intro": "The **Gym Name Generator** suggests names for a gym, personal training business or fitness studio (or fitness center): catchy, funny, strong and gritty, classic, modern, your town or your own name. Choose what you run to get the right trade words.",
-    "sections": [],
+    "intro": "Good gym names are short, strong and easy to put on a T-shirt: Foundry Barbell, Benchmark Gym, Kettle On Fitness. The **Gym Name Generator** suggests names for a gym, personal training business or fitness studio (or fitness center): catchy, funny, strong and gritty, classic, modern, your town or your own name. Choose what you run to get the right trade words.",
+    "sections": [
+      {
+        "heading": "Eight good gym names",
+        "content": "<p>All eight came from the generator, across gyms, PT and studios:</p><ul><li><strong>Foundry Barbell</strong>: strong and gritty, an industrial word for a lifting gym.</li><li><strong>Benchmark Gym</strong>: a catchy double meaning: a bench, and a standard to beat.</li><li><strong>The Engine House Health Club</strong>: a classic name from an old building.</li><li><strong>Torque Gym</strong>: modern, short and powerful.</li><li><strong>Kettle On Fitness</strong>: a friendly pun for a PT business.</li><li><strong>Personal Best Fitness</strong>: says what every client wants.</li><li><strong>Out of Breath Fitness Studio</strong>: funny and honest.</li><li><strong>Pace Studio</strong>: clean and modern, for classes.</li></ul>"
+      },
+      {
+        "heading": "How gym names work",
+        "content": "<ul><li><strong>Strong</strong> names borrow from industry and stone: <em>Quarry Strength Club</em>, <em>Slate Fitness Club</em>, <em>The Anvil Yard</em>.</li><li><strong>Classic</strong> names use a surname or a building: <em>Emerson's Strength Club</em>, <em>The Old Brewery Gym</em>.</li><li><strong>Modern</strong> names are one word: <em>Charge Fitness</em>, <em>Stride</em>.</li><li><strong>Funny</strong> names win on social media: <em>Planks a Lot</em>, <em>Swole Mates Gym</em>.</li></ul><p>Choose <strong>Personal training</strong> or <strong>Studio</strong> for the right trade words: PT, coaching, training studio, bootcamp or classes. A barbell club suggests lifting; a studio suggests classes; a health club suggests a pool and changing rooms.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Press <strong>Check</strong> on any name, or paste one into the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to see whether the domain and social handles are free and to jump to the company register and trade mark searches. Then:</p><ul><li><strong>Search the company register.</strong> In the UK that's Companies House; in the US, your state's business register.</li><li><strong>Search trade marks</strong> with the UK Intellectual Property Office or the USPTO, especially if you'll sell products or open more than one site.</li><li><strong>Look locally.</strong> Search Google Maps for gyms near you: a similar name a few streets away will confuse customers even if it's legally fine.</li></ul><p>This is general guidance, not legal advice. For more on choosing and checking a name, read our guide: <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>"
+      },
+      {
+        "heading": "Thinking about growth",
+        "content": "<p>A personal trainer's own name is easy to start with, but if you might open a studio or hire coaches, a brand name grows with you. For mind and body classes, try the <a href=\"yoga-studio-name-generator.html\">Yoga Studio Name Generator</a>; for recovery, the <a href=\"massage-business-name-generator.html\">Massage Business Name Generator</a>. Kit and merch? The <a href=\"t-shirt-business-name-generator.html\">T-Shirt Business Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_beauty-names.html\">beauty and wellness business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good gym names?",
+        "answer": "Short, strong names that look good on a T-shirt: Foundry Barbell, Benchmark Gym, Torque Gym, or something friendlier like Kettle On Fitness. Choose what you run for the right words."
+      },
+      {
+        "question": "What should I call my personal training business?",
+        "answer": "Many personal trainers use their own name, because clients buy the coach: \"Dan Hale PT\", \"Train with Dan\" or \"Coach Dan\". If you plan to hire other trainers or open a studio later, choose a brand name instead (\"Kettle On Fitness\", \"Northgate Strength\"), so the business can grow without you on every session. Either way, check the Instagram handle and domain are free before you print anything."
+      },
       {
         "question": "How do I check a gym or fitness business name is free?",
         "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, also search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as another business nearby with a similar name can confuse clients."
       },
       {
-        "question": "What should I call my personal training business?",
-        "answer": "Many personal trainers use their own name, because clients buy the coach: \"Dan Hale PT\", \"Train with Dan\" or \"Coach Dan\". If you plan to hire other trainers or open a studio later, choose a brand name instead (\"Kettle On Fitness\", \"Northgate Strength\"), so the business can grow without you on every session. Either way, check the Instagram handle and domain are free before you print anything."
+        "question": "What are funny gym names?",
+        "answer": "Puns people share, like Planks a Lot, Swole Mates Gym, Squats & Giggles or Will Train for Snacks. Choose Funny for more."
       }
     ]
   }

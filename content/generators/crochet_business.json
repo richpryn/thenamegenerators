@@ -788,16 +788,41 @@
       "title": "🧶 Crochet Business Name Generator",
       "tagline": "Names for a crochet or knitting shop, from Off the Hook to Moss & Merino."
     },
-    "intro": "Selling amigurumi, granny-square blankets or chunky knits? This **crochet business name generator** has names in seven styles for Etsy, Instagram, craft fairs and yarn shops, including names built from your own name.",
-    "sections": [],
+    "intro": "Good crochet business names are warm and handmade: your own name with <em>Hooks</em> or <em>Crochet</em>, a pun on loops and yarn, or a soft pair like <em>Plum &amp; Alpaca</em>. Selling amigurumi, granny-square blankets or chunky knits? This **crochet business name generator** has names in seven styles for Etsy, Instagram, craft fairs and yarn shops, including names built from your own name.",
+    "sections": [
+      {
+        "heading": "Eight good crochet business names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Treble Maker</strong>: a pun on troublemaker and the treble stitch.</li><li><strong>Bits &amp; Bobbins</strong>: a twist on bits and bobs, for a maker who does a bit of everything.</li><li><strong>Ewe Can Do It</strong>: a sheep pun with encouragement in it, good for patterns and kits.</li><li><strong>Frog It</strong>: crocheters say <em>frogging</em> for pulling work out, because you \"rip it, rip it\". An in-joke other makers will love.</li><li><strong>Loopy Lambs</strong>: cute, for amigurumi and baby gifts.</li><li><strong>Plum &amp; Alpaca</strong>: a soft, aesthetic pair for an Instagram shop.</li><li><strong>The Old Post Office Wool Shop</strong>: a classic yarn shop name with a building's history in it.</li><li><strong>Hooked on Hampton</strong>: a pun on your town. Put your own town in the box.</li></ul>"
+      },
+      {
+        "heading": "How crochet names work",
+        "content": "<ul><li><strong>Craft words:</strong> hook, loop, stitch, skein and yarn all make good name parts. <em>Amigurumi</em>, the Japanese word for small crocheted or knitted stuffed toys, is a search term in its own right.</li><li><strong>UK or US terms:</strong> the same stitch has different names on each side of the Atlantic: a UK treble is a US double. A name like <em>Treble Maker</em> reads as British.</li><li><strong>Your own name</strong> is the most common shape, like <em>Crochet with Sarah</em>, and it suits a one-person shop.</li><li><strong>Toys have rules.</strong> Crocheted toys sold in the UK must meet the toy safety regulations and carry UKCA or CE marking, handmade ones included.</li></ul>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>A crochet name ends up on your shop, your tags and your Instagram, so it's worth a few minutes' checking before anything is printed:</p><ul><li><strong>Press Check</strong> on any name above. The <a href=\"../business-name-checker.html\">Business Name Checker</a> looks up the domain, links to the company register (Companies House in the UK) and opens the trade mark search and social handles.</li><li><strong>Search where you'll trade.</strong> Look the name up on maps, marketplaces and social media. Two businesses with the same name confuse customers and reviews.</li><li><strong>Etsy shop names have to be unique, 4 to 20 characters, with no spaces, so check your favourite still fits.</strong></li></ul><p>This is general guidance, not legal advice. For the full process, from shortlisting to registering, read our guide to <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>"
+      },
+      {
+        "heading": "Tips for makers",
+        "content": "<ul><li><strong>Match the name to what you sell.</strong> <em>Cute</em> suits toys, <em>Aesthetic</em> suits blankets and homeware, and <em>Classic</em> suits a yarn shop.</li><li><strong>Think about patterns.</strong> If you'll sell patterns as well as finished pieces, a name without <em>Shop</em> in it travels better.</li></ul><p>Related trades: the <a href=\"candle-business-name-generator.html\">Candle</a>, <a href=\"soap-business-name-generator.html\">Soap</a> and <a href=\"jewelry-business-name-generator.html\">Jewellery</a> name generators. For a name with no trade attached, try the <a href=\"brand-name-generator.html\">Brand Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_shops-names.html\">shops, brands and makers business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What should I name my crochet business?",
+        "answer": "Many makers use their own name, as in <em>Hooked by Sarah</em> or <em>Sarah Crochets</em>, which is warm and easy to find. If you want something catchier, try a pun on hooks, loops or yarn, or a soft pair such as <em>Moss & Merino</em> for an aesthetic Instagram shop. Avoid names close to yarn and kit brands such as Hobbii or The Woobles."
+      },
+      {
+        "question": "What are cute crochet business names?",
+        "answer": "Soft, small names like Loopy Lambs, Pip & Purl, Snuggle Stitch or Wee Woollies. Choose Cute in the Style menu, or add your own name for something like Sarah's Crochet Nook."
+      },
       {
         "question": "How do I check a crochet business name is free?",
         "answer": "Press <strong>Check</strong> on any name to see whether it is free as a company name, a web address and a social media handle. In the UK, search the Companies House register; in the US, search your state's business register and the USPTO trade mark search. Do this before you pay for a logo, labels or signage."
       },
       {
-        "question": "What should I name my crochet business?",
-        "answer": "Many makers use their own name, as in <em>Hooked by Sarah</em> or <em>Sarah Crochets</em>, which is warm and easy to find. If you want something catchier, try a pun on hooks, loops or yarn, or a soft pair such as <em>Moss & Merino</em> for an aesthetic Instagram shop. Avoid names close to yarn brands such as Hobbii or The Woobles."
+        "question": "How long can an Etsy shop name be?",
+        "answer": "Etsy shop names must be 4 to 20 characters long, with no spaces, and unique on Etsy. Check your favourite fits before you design a logo."
       }
     ]
   }

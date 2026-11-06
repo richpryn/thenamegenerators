@@ -1365,16 +1365,41 @@
       "title": "🧘 Yoga Studio Name Generator",
       "tagline": "Names for a yoga studio, Pilates studio or yoga teacher."
     },
-    "intro": "The **Yoga Studio Name Generator** suggests names for a yoga studio, Pilates or reformer studio, or a yoga teacher's classes: catchy, cute, classic, modern, aesthetic, Sanskrit words with meaning, your town or your own name.",
-    "sections": [],
+    "intro": "Good yoga studio names feel calm, are easy to say, and tell people whether you teach yoga, Pilates or both. The **Yoga Studio Name Generator** suggests names for a yoga studio, Pilates or reformer studio, or a yoga teacher's classes: catchy, cute, classic, modern, aesthetic, Sanskrit words with meaning, your town or your own name.",
+    "sections": [
+      {
+        "heading": "Eight good yoga studio names",
+        "content": "<p>All eight came from the generator, for yoga and Pilates:</p><ul><li><strong>Slow Flow Yoga</strong>: catchy and says what the class feels like.</li><li><strong>Off the Mat Yoga & Pilates</strong>: a phrase yoga teachers already use.</li><li><strong>Spring Loaded Pilates</strong>: a pun on the reformer's springs.</li><li><strong>The Hayloft Yoga Studio</strong>: a classic name from the room itself.</li><li><strong>Studio Reform</strong>: modern and minimal, for reformer Pilates.</li><li><strong>Fig & Clay Yoga Co.</strong>: an aesthetic name in warm colours.</li><li><strong>Drishti Yoga House</strong>: Sanskrit for a focused gaze.</li><li><strong>Karuna Pilates Studio</strong>: Sanskrit for compassion.</li></ul>"
+      },
+      {
+        "heading": "How yoga and Pilates names work",
+        "content": "<ul><li><strong>Sanskrit</strong> words carry meaning, and a <em>shala</em> is a yoga school or house: <em>Chandra Yoga Shala</em>. Pick words you can explain, and use them respectfully.</li><li><strong>Pilates</strong> is named after Joseph Pilates, who developed the method and the reformer machine. Reformer names often play on springs, cores and control: <em>To the Core Reformer Studio</em>.</li><li><strong>Aesthetic</strong> names use calm colours and natural materials: <em>Studio Birch</em>, <em>Terracotta Yoga</em>.</li><li><strong>Classic</strong> names use a street or a building: <em>Church Street Yoga House</em>.</li></ul><p>Choose <strong>Yoga</strong> or <strong>Pilates</strong> to get the right trade words, or leave it on Any for a studio that teaches both.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Press <strong>Check</strong> on any name, or paste one into the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to see whether the domain and social handles are free and to jump to the company register and trade mark searches. Then:</p><ul><li><strong>Search the company register.</strong> In the UK that's Companies House; in the US, your state's business register.</li><li><strong>Search trade marks</strong> with the UK Intellectual Property Office or the USPTO, especially if you'll sell products or open more than one site.</li><li><strong>Look locally.</strong> Search Google Maps for yoga studios near you: a similar name a few streets away will confuse customers even if it's legally fine.</li></ul><p>This is general guidance, not legal advice. For more on choosing and checking a name, read our guide: <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>"
+      },
+      {
+        "heading": "Names for teachers without a studio",
+        "content": "<p>If you teach in village halls, gyms or online, your own name or a class name is often better than a studio name: it travels with you. For the gym down the road, try the <a href=\"gym-name-generator.html\">Gym Name Generator</a>; for treatments, the <a href=\"massage-business-name-generator.html\">Massage Business Name Generator</a> and <a href=\"spa-name-generator.html\">Spa Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_beauty-names.html\">beauty and wellness business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good yoga studio names?",
+        "answer": "Calm, easy names that say what you teach: Slow Flow Yoga, The Hayloft Yoga Studio, Fig & Clay Yoga Co., or a Sanskrit name like Drishti Yoga House."
+      },
+      {
+        "question": "What are good Sanskrit names for a yoga studio?",
+        "answer": "Choose a short word whose meaning you can explain to students: prana (breath, life force), shanti (peace), sukha (ease, happiness), sthira (steady), ananda (bliss), sangha (community) or santosha (contentment). Use it respectfully and check the spelling with a trusted source. Some words, such as surya (sun), chandra (moon) and agni (fire), are also names of Hindu deities, so think carefully before using them. Pair it with a plain word (\"Sukha Yoga Shala\", \"Prana Pilates\") so people know what you offer."
+      },
       {
         "question": "How do I check a yoga studio name is free?",
         "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, also search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as another business nearby with a similar name can confuse clients."
       },
       {
-        "question": "What are good Sanskrit names for a yoga studio?",
-        "answer": "Choose a short word whose meaning you can explain to students: prana (breath, life force), shanti (peace), sukha (ease, happiness), sthira (steady), ananda (bliss), sangha (community), surya (sun) or chandra (moon). Use it respectfully, check the spelling with a trusted source, and avoid the names of deities. Pair it with a plain word (\"Sukha Yoga Shala\", \"Prana Pilates\") so people know what you offer."
+        "question": "What's a good name for a Pilates studio?",
+        "answer": "Something that hints at the method or the reformer, like Spring Loaded Pilates, Studio Reform or To the Core Reformer Studio. Choose Pilates for names like these."
       }
     ]
   }

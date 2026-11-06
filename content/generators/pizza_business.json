@@ -946,9 +946,30 @@
       "title": "🍕 Pizza Business Name Generator",
       "tagline": "Names for a pizzeria, slice shop or wood-fired pizza van, from Pie Fidelity to Forno Napoli."
     },
-    "intro": "A pizza name has to look good on a box, a delivery app and the side of a van. This **pizza business name generator** gives you names for a pizzeria, pizza shop or pizza truck in eight styles, from punny to proper Italian, including ones built from your town or your own name.",
-    "sections": [],
+    "intro": "Good pizza names look right on a box and are easy to find on a delivery app: a family name (<em>Romano &amp; Sons Pizzeria</em>), proper Italian (<em>Il Forno di Nunzia</em>) or a pun (<em>Cheese Louise Pizza Co.</em>). This **pizza business name generator** gives you names for a pizzeria, pizza shop or pizza truck in eight styles, from punny to proper Italian, including ones built from your town or your own name.",
+    "sections": [
+      {
+        "heading": "Eight good pizza names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Cheese Louise Pizza Co.</strong>: a pun with a name in it, easy to remember.</li><li><strong>One More Slice</strong>: what every customer says, as a name.</li><li><strong>Romano &amp; Sons Pizzeria</strong>: the classic family pizzeria pattern.</li><li><strong>Crust &amp; Embers</strong>: two words for a wood-fired oven.</li><li><strong>Blister Pizza Co.</strong>: named after the charred bubbles on a good crust.</li><li><strong>Il Forno di Nunzia</strong>: Italian for \"Nunzia's oven\".</li><li><strong>The Wandering Pizza Bus</strong>: a van name with a story in it.</li><li><strong>Sarah's Pizza Shed</strong>: your name and a homely place, for a garden or market stall pizza oven.</li></ul>"
+      },
+      {
+        "heading": "How pizza names work",
+        "content": "<ul><li><strong>Pizzeria</strong> is the Italian word for a pizza shop, and <em>forno</em> means oven: <em>Il Forno</em> is \"the oven\".</li><li><strong>Family names</strong> like <em>Rossi &amp; Sons</em> or <em>Da Tonino</em> (\"at Tonino's\") follow how real Italian pizzerias are often named.</li><li><strong>Sourdough and wood-fired</strong> places suit short modern names about fire, flour and char.</li><li><strong>Takeaways and vans</strong> can be punny, because people choose them from an app or a queue.</li></ul><p>Choose <strong>Italian</strong> for names that use the words correctly, and <strong>Van</strong> for names that suit a converted bus or horsebox.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>A name from a generator is a starting point, not permission to use it. Before you order the boxes, sign or van livery:</p><ul><li><strong>Company register.</strong> In the UK, search Companies House; you can't register a limited company with the same name as an existing one. In the US, search your state's business register.</li><li><strong>Trade marks.</strong> Search the UK trade mark register (or the USPTO in the US) for the goods and services you'll sell.</li><li><strong>Domain and handles.</strong> Check the .co.uk or .com and the Instagram and TikTok handles you'll need.</li><li><strong>Your area.</strong> Search a map app and the delivery apps for businesses with the same or a similar name nearby.</li></ul><p>Press <strong>Check</strong> on any name, or use the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to run most of these at once. For the full process, read our guide, <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>. This is general guidance, not legal advice.</p><p>In the UK, any food business must register with the local council at least 28 days before it starts trading. Registration is free, and the council will inspect you and give you a food hygiene rating.</p>"
+      },
+      {
+        "heading": "Tips for pizza businesses",
+        "content": "<p>Delivery apps sort by name and photo, so test how your name looks as a small tile next to the big chains. Avoid anything close to a national chain's name, which will be a trade mark.</p><p>For the rest of the menu, try the <a href=\"restaurant-name-generator.html\">Restaurant</a> and <a href=\"food-truck-name-generator.html\">Food Truck</a> name generators.</p><p>For more, see all the <a href=\"../categories/biz_food-names.html\">food and drink business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good pizza shop names?",
+        "answer": "Names that look good on a box and are easy to find on delivery apps: Romano & Sons Pizzeria, Crust & Embers, One More Slice or Il Forno di Nunzia. Choose a style for catchy, classic, modern, Italian or van names."
+      },
       {
         "question": "How do I check a pizza business name is free?",
         "answer": "Press <strong>Check</strong> on any name to see whether it's free as a company name, a domain and a social media handle. Before you commit, search the official registers too: in the UK, Companies House and the UK trade mark register; in the US, your state's business register and the USPTO trade mark search. Look on a map app for businesses with the same name nearby."
@@ -956,6 +977,10 @@
       {
         "question": "What should I name my pizza shop?",
         "answer": "Think about what you sell and who's buying. A family pizzeria often uses a name (<em>Tony's Pizzeria</em>, <em>Rossi &amp; Sons</em>); a sourdough or wood-fired place suits something short (<em>Flour &amp; Fire</em>); a takeaway or van can be punny (<em>Pie Fidelity</em>). Make sure it's easy to say on the phone and to find on delivery apps, where customers search by name."
+      },
+      {
+        "question": "What does il forno mean?",
+        "answer": "\"The oven\" in Italian. A pizzeria is a pizza shop, and da before a name, as in Pizzeria da Tonino, means \"at Tonino's\"."
       }
     ]
   }

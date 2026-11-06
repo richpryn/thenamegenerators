@@ -158,16 +158,37 @@
       "title": "🧮 Accounting Business Name Generator",
       "tagline": "Names for an accounting firm, bookkeeping business or tax service, from Carry the One Accounting to Hartley & Rowe."
     },
-    "intro": "Name your accounting firm, bookkeeping business or tax service with this **Accounting Business Name Generator**. Pick a style and what you offer, or add your first name or town.",
-    "sections": [],
+    "intro": "Good accounting business names sound trustworthy first and clever second: a surname firm like <em>Blake &amp; Hadley Bookkeeping</em>, a calm promise like <em>The Tidy Desk</em>, or a light pun like <em>Carry the One Accounts</em>. Name your accounting firm, bookkeeping business or tax service with this **Accounting Business Name Generator**. Pick a style and what you offer, or add your first name or town.",
+    "sections": [
+      {
+        "heading": "Eight good accounting business names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Carry the One Accounts</strong>: a maths pun clients smile at, without losing trust.</li><li><strong>The Tidy Desk</strong>: a promise about how your books will feel.</li><li><strong>Neat Numbers Accounting</strong>: clear, friendly and easy to remember.</li><li><strong>Blake & Hadley Bookkeeping</strong>: two surnames, the traditional shape of a practice.</li><li><strong>Kemp Accountants</strong>: one surname and the job, as plain as it gets.</li><li><strong>Brass Tacks Accounts</strong>: an idiom for getting down to basics.</li><li><strong>Satchel Books</strong>: a modern one-word name for a bookkeeper.</li><li><strong>Spreadsheet Heroes Financial Services</strong>: a friendly name for a small-business bookkeeper.</li></ul>"
+      },
+      {
+        "heading": "How accounting firms name themselves",
+        "content": "<p>Clients hand over their finances, so the name has to feel safe. Most practices use the partners' surnames or the town; bookkeepers and tax preparers can afford to be friendlier. The last word matters: <em>Accountants</em> and <em>Accounting</em> suggest a full service, <em>Bookkeeping</em> the day-to-day records, and <em>Tax</em> a seasonal service.</p><p>Be careful with titles. In the UK, anyone can call themselves an accountant, but <em>Chartered Accountant</em> and <em>Chartered Certified Accountant</em> belong to members of bodies such as the ICAEW and ACCA, and <em>Chartered</em> is a sensitive word that Companies House won't accept in a company name without permission. In the US, <em>CPA</em> is a licensed title regulated by each state. Use these only if you hold them.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Every name here has a <strong>Check</strong> button, which opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>: it looks up domains, social handles, the company register and trade mark searches in one place. Before you order signs or cards:</p><ul><li><strong>Company register.</strong> In the UK, search Companies House; a limited company's name can't be the same as one already registered. In the US, search your state's business register. Words such as <em>Chartered</em> are sensitive and need permission.</li><li><strong>Trade marks.</strong> Search the UK Intellectual Property Office or the USPTO for marks in your line of work. Registering a company doesn't give you trade mark rights.</li><li><strong>Domain and handles.</strong> Try the .co.uk or .com and the main social handles at the same time, and adjust the name rather than settle for a messy handle.</li><li><strong>Local search.</strong> Look the name up with your town, as two similar firms a few miles apart confuse clients and reviews.</li></ul><p>This is general guidance, not legal advice. For the full process, read <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p><p>In the UK, accountancy and bookkeeping businesses also need to be supervised for anti-money laundering purposes, either by a professional body or by HMRC, so register before you start trading. For a general firm name, try the <a href=\"business-name-generator.html\">Business</a> or <a href=\"consulting-business-name-generator.html\">Consulting</a> generators.</p><p>For more, see all the <a href=\"../categories/biz_services-names.html\">professional and creative business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
       {
-        "question": "How do I check a accounting business name is free?",
-        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse customers."
+        "question": "What are good accounting firm names?",
+        "answer": "Trustworthy names with a clear job: surnames like Blake & Hadley Bookkeeping, plain promises like The Tidy Desk, or a light pun like Carry the One Accounts."
       },
       {
         "question": "What should I name my accounting firm?",
-        "answer": "Clients want to trust you, so most firms use surnames (\"Hartley & Rowe Accountants\") or the town they serve; bookkeepers and tax preparers can be friendlier (\"Good Books Bookkeeping\"). Only use protected titles you hold: \"CPA\" in the US and \"Chartered\" in the UK need the right qualification, and Companies House asks for proof before it accepts \"Chartered\"."
+        "answer": "Clients want to trust you, so most firms use surnames (\"Hartley & Rowe Accountants\") or the town they serve; bookkeepers and tax preparers can be friendlier (\"Numbers People Bookkeeping\"). Only use protected titles you hold: \"CPA\" in the US and \"Chartered\" in the UK need the right qualification, and \"Chartered\" is a sensitive word, so Companies House needs permission before a company can use it."
+      },
+      {
+        "question": "Can I call myself an accountant without qualifications in the UK?",
+        "answer": "Yes, accountant on its own isn't a protected title in the UK, but Chartered Accountant and Chartered Certified Accountant are, and Chartered needs permission in a company name. You'll also need anti-money laundering supervision."
+      },
+      {
+        "question": "How do I check an accounting business name is free?",
+        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse customers."
       }
     ]
   },
