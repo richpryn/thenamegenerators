@@ -2606,20 +2606,20 @@
     "seoTitle": "Trade Business Name Generators: Cleaning, Building, Garden",
     "description": "Names for cleaners, builders, landscapers, plumbers and other trades, each with a check to see if it's free.",
     "seoDescription": "Free business name generators for trades: cleaning, construction, landscaping, lawn care, plumbing, electrical and more, with a free name checker.",
-    "intro": "<p>A trade name ends up on a van, a quote and a review site, so it has to be easy to remember and sound like someone you'd trust in your home. These generators work trade by trade, from cleaning to construction, with catchy names for the van and classic ones for the quote. Add your town or your own name, the way most local firms are named.</p><p>Every name has a <b>Check</b> button: it opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>, which looks up the company register, domains, trade marks and social handles in one go.</p>",
-    "eyebrow": "Business names",
+    "intro": "<p>A trade name ends up on a van, a quote and a review site, so it has to be easy to remember and sound like someone you'd let into your home. These generators work trade by trade, from <a href=\"../posts/cleaning-business-name-generator.html\">cleaning</a> and <a href=\"../posts/construction-company-name-generator.html\">construction</a> to <a href=\"../posts/landscaping-business-name-generator.html\">landscaping</a> and <a href=\"../posts/lawn-care-business-name-generator.html\">lawn care</a>, with catchy names for the van, classic family names for the quote, and names built from your town or your own name, the way most local firms are named.</p><p>Every name has a <b>Check</b> button that opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>, which looks up the company register, trade marks, domains and social handles in one go.</p>",
+    "eyebrow": "Business names by trade",
     "featured": [
       {
         "key": "cleaning_business",
-        "note": "Cleaning business names in eight styles, from catchy puns and cute names to professional a."
+        "note": "cleaning business names, from catchy puns to professional firms."
       },
       {
         "key": "construction_company",
-        "note": "Construction company and building business names: catchy, classic family firms, strong, mo."
+        "note": "builders and construction firms: classic family names to modern brands."
       },
       {
         "key": "landscaping",
-        "note": "Landscaping and gardening business names: catchy puns, classic, nature-inspired, modern an."
+        "note": "landscaping and gardening names: puns, classic and nature-inspired."
       }
     ],
     "generators": [
@@ -2628,8 +2628,55 @@
       "landscaping",
       "lawn_care"
     ],
-    "startHeading": "Choose your kind of business",
-    "startIntro": "Pick the generator for your trade, then press Check on any name you like."
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name a cleaning, building, garden or lawn care business.",
+    "approach": {
+      "heading": "How to approach trade business names",
+      "text": "<p>Most local trades are named in one of three ways: a family name (<em>Carter & Sons</em>), the town (<em>Hampton Garden Care</em>) or a catchy line that sticks (<em>Mow Excuses</em>). Each says something different: a family name promises a reputation, a town promises you're nearby, and a pun promises you're friendly. Pick the one that matches how you want customers to see you, keep it short enough for the side of a van, and say what you do if you specialise, because customers search for the job, not the name.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Keep it short enough for a van.",
+        "Add your town to help local search.",
+        "Say what you do if you specialise.",
+        "Match it to a Google Business Profile.",
+        "Check it's free before you print."
+      ]
+    },
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Dust Till Dawn",
+          "type": "CLEANING",
+          "verdict": "A pun people repeat to their friends.",
+          "breakdown": "It twists the film title From Dusk Till Dawn into the job itself, so it's memorable and says what you do in three words.",
+          "motif": "broom"
+        },
+        {
+          "name": "Ashlar",
+          "type": "CONSTRUCTION",
+          "verdict": "A one-word trade name that sounds skilled.",
+          "breakdown": "Ashlar is finely cut, squared building stone. Using a word from the trade shows you know the craft without boasting.",
+          "motif": "hammer"
+        },
+        {
+          "name": "Rowan & Wildflower Landscapes",
+          "type": "LANDSCAPING",
+          "verdict": "Gentle and natural, for planting and garden work.",
+          "breakdown": "Two native plants make a pairing that's easy to picture and draw as a logo, and 'Landscapes' tells customers what you do.",
+          "motif": "leaf"
+        },
+        {
+          "name": "Green Stripe Lawn Care",
+          "type": "LAWN CARE",
+          "verdict": "The result every customer wants, in the name.",
+          "breakdown": "Neat stripes are the sign of a well-mown lawn, so the name promises the finish rather than the work.",
+          "motif": "great-tree"
+        }
+      ]
+    }
   },
   {
     "name": "Professional & Creative Business Names",
@@ -2640,20 +2687,20 @@
     "seoTitle": "Business Name Generators for Services, Agencies and Studios",
     "description": "Names for consultants, photographers, estate agents, event planners and agencies, each with a check to see if it's free.",
     "seoDescription": "Free business name generators for professional and creative services: consulting, photography, real estate, event planning and more.",
-    "intro": "<p>A service business sells trust before it sells anything else, so its name has to sound established from day one. These generators work by profession, from consulting to photography, with classic names built on surnames, modern one-word names and names from your own name or town. Every one is the kind of name that fits a website, a proposal and a LinkedIn page.</p><p>Every name has a <b>Check</b> button: it opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>, which looks up the company register, domains, trade marks and social handles in one go.</p>",
-    "eyebrow": "Business names",
+    "intro": "<p>A service business sells trust before it sells anything else, so its name has to sound established from day one. These generators work by profession: <a href=\"../posts/consulting-business-name-generator.html\">consulting</a>, <a href=\"../posts/event-planning-business-name-generator.html\">event planning</a>, <a href=\"../posts/photography-business-name-generator.html\">photography</a> and <a href=\"../posts/real-estate-name-generator.html\">real estate</a>, with classic surname names, modern one-word names and names built from your own name or town. For anything else, the <a href=\"../posts/business-name-generator.html\">Business</a> and <a href=\"../posts/company-name-generator.html\">Company</a> name generators take your own words.</p><p>Every name has a <b>Check</b> button: it opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>, which looks up the company register, domains, trade marks and social handles in one go. Then read our guide, <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>",
+    "eyebrow": "Business names by trade",
     "featured": [
       {
         "key": "consulting",
-        "note": "Consulting and consultancy business names for business, HR, IT, marketing, finance and hea."
+        "note": "consultancy names for business, HR, IT, marketing and finance."
       },
       {
         "key": "event_planning",
-        "note": "Names for event planners and party planning businesses: catchy, cute, classic, modern, lux."
+        "note": "event and party planning names, from cute to luxury."
       },
       {
         "key": "photography_business",
-        "note": "Photography business names for weddings, families, newborns and pets: catchy, cute, classi."
+        "note": "photography names for weddings, families, newborns and pets."
       }
     ],
     "generators": [
@@ -2664,8 +2711,56 @@
       "business",
       "company"
     ],
-    "startHeading": "Choose your kind of business",
-    "startIntro": "Pick the generator for your trade, then press Check on any name you like."
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name a consultancy, studio, agency or practice.",
+    "approach": {
+      "heading": "How to approach a service business name",
+      "text": "<p>Clients hire a consultant, planner, photographer or agent for their judgement, so the name should sound trustworthy before it sounds clever. Most service businesses use one of four shapes: your own name, which sells you; surnames joined with &amp; or Partners, which sound like an established firm; a short promise, which says how you work; or one strong word, which leaves room to grow. Add the word your clients search for, such as Photography, Events or Estate Agents, and check the name is free before you print anything.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Lead with trust, not jokes.",
+        "Add the word clients search for.",
+        "Your own name sells you, not the firm.",
+        "Keep it short enough for a business card.",
+        "Check Companies House and trade marks.",
+        "Grab the domain and handles together."
+      ]
+    },
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Rowe & Carrington",
+          "type": "CONSULTANCY",
+          "verdict": "A firm that sounds established on its first day.",
+          "breakdown": "Two surnames joined with an ampersand is the oldest shape for a professional firm, used by solicitors and accountants for centuries, so clients read it as settled and serious.",
+          "motif": "compass-rose"
+        },
+        {
+          "name": "Planned to Perfection",
+          "type": "EVENT PLANNER",
+          "verdict": "Tells clients exactly what they're paying for.",
+          "breakdown": "A familiar phrase turned into a promise. It works on a card, a website and a phone greeting, and it suits weddings and parties alike.",
+          "motif": "bunting"
+        },
+        {
+          "name": "Linen & Grain",
+          "type": "PHOTOGRAPHER",
+          "verdict": "A name that looks like the photographs.",
+          "breakdown": "Linen and grain are both textures, and grain is the look of film. Together they promise soft, natural images before a client sees a single one.",
+          "motif": "star"
+        },
+        {
+          "name": "Bricks & Keys",
+          "type": "ESTATE AGENT",
+          "verdict": "A sale summed up in two words.",
+          "breakdown": "Bricks for the house and keys for the handover: the start and end of every move, in a pair that's easy to remember from a sign board.",
+          "motif": "house"
+        }
+      ]
+    }
   },
   {
     "name": "Pets, Care & Learning Business Names",
@@ -2676,20 +2771,20 @@
     "seoTitle": "Pet and Care Business Name Generators: Dogs, Care, Tutoring",
     "description": "Names for dog groomers, dog walkers, pet sitters, home care agencies, nurseries and tutors, each with a check to see if it's free.",
     "seoDescription": "Free business name generators for dog grooming, dog walking, pet sitting, home care and more, with a free business name checker.",
-    "intro": "<p>People hand you their pets, their parents or their children, so a care business name has to feel warm and trustworthy straight away. Pet names can be playful; care and learning names need to be kind and calm. These generators get the tone right for each, and most add your own name or town, which is how many trusted local services are named.</p><p>Every name has a <b>Check</b> button: it opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>, which looks up the company register, domains, trade marks and social handles in one go.</p>",
-    "eyebrow": "Business names",
+    "intro": "<p>People hand you their pets or their parents, so a care business name has to feel warm and trustworthy straight away. Pet names can be playful, from <a href=\"../posts/dog-grooming-name-generator.html\">dog grooming</a> puns to <a href=\"../posts/dog-walking-name-generator.html\">dog walking</a> and <a href=\"../posts/pet-sitting-name-generator.html\">pet sitting</a> names; <a href=\"../posts/home-care-name-generator.html\">home care</a> names need to be calm and kind. These generators get the tone right for each, and most add your own name or town, which is how many trusted local services are named.</p><p>Every name has a <b>Check</b> button: it opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>, which looks up the company register, domains, trade marks and social handles in one go. Then read our guide, <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>",
+    "eyebrow": "Business names by trade",
     "featured": [
       {
         "key": "dog_grooming",
-        "note": "Dog grooming business names for a salon, a home studio or a mobile van: catchy, cute, funn."
+        "note": "dog grooming names for a salon, a home studio or a mobile van."
       },
       {
         "key": "dog_walking",
-        "note": "Dog walking business names for a walker, a pack-walk round or a side hustle: catchy, cute."
+        "note": "dog walking names, from puns to trusted local names."
       },
       {
         "key": "home_care",
-        "note": "Names for a home care or domiciliary care agency: trusted, warm and caring, modern, faith-."
+        "note": "calm, kind names for a home care agency."
       }
     ],
     "generators": [
@@ -2698,8 +2793,56 @@
       "home_care",
       "pet_sitting"
     ],
-    "startHeading": "Choose your kind of business",
-    "startIntro": "Pick the generator for your trade, then press Check on any name you like."
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name a pet business or a care agency.",
+    "approach": {
+      "heading": "How to approach a care business name",
+      "text": "<p>Care businesses are chosen on trust: owners hand over their keys and their dog, and families hand over a parent. So the name should feel warm first and clever second. Pet businesses can have fun with puns and dog words, as long as the joke is kind. Home care names should be calm and plain, often a surname or town with Home Care or Companion Care. Your own name works well for a one-person service, because customers want to know who will turn up.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Warmth first, jokes second.",
+        "Puns suit pets, not home care.",
+        "Your own name builds local trust.",
+        "Say if you're mobile or board pets.",
+        "Check licences and registers first.",
+        "Test it on a van or a flyer."
+      ]
+    },
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Groom With a View",
+          "type": "DOG GROOMER",
+          "verdict": "A pun owners will repeat to their friends.",
+          "breakdown": "It borrows a familiar film title and swaps one letter's worth of meaning, so it's memorable without being silly, and it hints at a nice place to leave your dog.",
+          "motif": "dog"
+        },
+        {
+          "name": "Tails on Trails",
+          "type": "DOG WALKER",
+          "verdict": "A rhyme that pictures the walk.",
+          "breakdown": "Tails and trails rhyme, so it sticks in the memory, and it shows happy dogs out on a path before the customer reads anything else.",
+          "motif": "paw"
+        },
+        {
+          "name": "Furry Godmother",
+          "type": "PET SITTER",
+          "verdict": "A promise of good care, wrapped in a joke.",
+          "breakdown": "A pun on fairy godmother, the figure who looks after someone while they're away. It's funny, and it makes the sitter sound kind and reliable.",
+          "motif": "cottage"
+        },
+        {
+          "name": "Every Step Care",
+          "type": "HOME CARE",
+          "verdict": "Calm, kind and dependable.",
+          "breakdown": "No puns, just a quiet promise of support that changes as needs change. That's the tone families want when they're choosing care for a parent.",
+          "motif": "lamp"
+        }
+      ]
+    }
   },
   {
     "name": "Beauty & Wellness Business Names",
@@ -2710,20 +2853,20 @@
     "seoTitle": "Beauty Business Name Generators: Salon, Nails, Lashes",
     "description": "Names for hair and beauty salons, nail techs, lash studios, spas and fitness businesses, each with a check to see if it's free.",
     "seoDescription": "Free beauty business name generators: hair salon, beauty salon, nail salon, lash, spa, barber and more, with a free business name checker.",
-    "intro": "<p>Clients choose a salon on Instagram before they ever walk in, so a beauty business name needs to look good as a handle and feel right for your prices. These generators work trade by trade, from hair and nails to lashes and spas, in styles from cute and aesthetic to luxury. Add your own name for a name that grows with your client list.</p><p>Every name has a <b>Check</b> button: it opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>, which looks up the company register, domains, trade marks and social handles in one go.</p>",
-    "eyebrow": "Business names",
+    "intro": "<p>Clients choose a salon on Instagram before they ever walk in, so a beauty business name needs to look good as a handle and feel right for your prices. Each generator here is made for one trade: the <a href=\"../posts/hair-salon-name-generator.html\">Hair Salon</a>, <a href=\"../posts/beauty-salon-name-generator.html\">Beauty Salon</a>, <a href=\"../posts/nail-salon-name-generator.html\">Nail Salon</a> and <a href=\"../posts/lash-business-name-generator.html\">Lash Business</a> name generators. Each has styles from catchy puns and cute names to aesthetic and French luxury, and can use your town or your own name.</p><p>Every name has a <b>Check</b> button: it opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>, which looks up the company register, domains, trade marks and social handles in one go.</p>",
+    "eyebrow": "Business names by trade",
     "featured": [
       {
         "key": "beauty_salon",
-        "note": "Beauty salon and beauty studio business names: catchy, classic, modern, luxury, aesthetic."
+        "note": "beauty salon and studio names: classic, modern and luxury."
       },
       {
         "key": "hair_salon",
-        "note": "Hair salon business names in seven styles, from catchy puns and classic hairdressers to lu."
+        "note": "hair salon names, from puns to classic hairdressers and luxury studios."
       },
       {
         "key": "lash_business",
-        "note": "Names for a lash tech, lash studio or lash and brow business: catchy, cute, modern, luxury."
+        "note": "names for a lash tech, lash studio or lash and brow bar."
       }
     ],
     "generators": [
@@ -2732,8 +2875,55 @@
       "lash_business",
       "nail_salon"
     ],
-    "startHeading": "Choose your kind of business",
-    "startIntro": "Pick the generator for your trade, then press Check on any name you like."
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name a hair salon, beauty salon, nail bar or lash studio.",
+    "approach": {
+      "heading": "How to approach salon names",
+      "text": "<p>Decide first how you want clients to feel: welcomed by a friendly local salon, calmed by a quiet treatment room, or treated by a premium studio. The name should match your prices. Puns on shear, mane, gel or lash say friendly; one clean word from the craft says modern; French words like atelier, maison and peau say luxury. Because clients find salons on Instagram and Google Maps, check the handle and the area before you commit.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Match the name to your prices.",
+        "Check the Instagram handle first.",
+        "Name a speciality if you have one.",
+        "Your own name suits one chair.",
+        "Search nearby for similar salons."
+      ]
+    },
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Shear Luck",
+          "type": "HAIR SALON",
+          "verdict": "The classic hairdresser's pun, done well.",
+          "breakdown": "It plays on \"sheer luck\" with the shears every stylist uses, and it's short enough for a sign and a handle.",
+          "motif": "shopfront"
+        },
+        {
+          "name": "Peau Douce",
+          "type": "BEAUTY SALON",
+          "verdict": "A calm, premium name for skin treatments.",
+          "breakdown": "It's French for \"soft skin\", which says exactly what clients come in for, with a luxury feel.",
+          "motif": "rose"
+        },
+        {
+          "name": "Maison Vernis",
+          "type": "NAIL SALON",
+          "verdict": "Nail polish, said elegantly.",
+          "breakdown": "Vernis is French for varnish, the French word for nail polish, and maison (house) makes it sound like an established studio.",
+          "motif": "bottle"
+        },
+        {
+          "name": "Clin d'Œil Lashes",
+          "type": "LASH STUDIO",
+          "verdict": "A lash name with a wink in it, literally.",
+          "breakdown": "Clin d'œil is French for a wink, the perfect image for a lash studio.",
+          "motif": "star"
+        }
+      ]
+    }
   },
   {
     "name": "Food & Drink Business Names",
@@ -2744,20 +2934,20 @@
     "seoTitle": "Food Business Name Generators: Bakery, Café and More",
     "description": "Names for bakeries, cake makers, food trucks, caterers, bars and cafés, each with a check to see if it's free.",
     "seoDescription": "Free food and drink business name generators: bakery, cake, cookie, dessert, café, catering, food truck and more, with a free name checker.",
-    "intro": "<p>A food business name has to look good on a sign, a box and an Instagram grid, and say what you sell before anyone has tasted it. These generators work trade by trade, so a bakery gets bakery names and a food truck gets food truck names, in styles from cute and punny to classic and premium. Add your own name or town for names nobody else will have.</p><p>Every name has a <b>Check</b> button: it opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>, which looks up the company register, domains, trade marks and social handles in one go.</p>",
-    "eyebrow": "Business names",
+    "intro": "<p>A food business name has to look good on a sign, a box and an Instagram grid, and say what you sell before anyone has tasted it. Each generator here is made for one trade: the <a href=\"../posts/bakery-name-generator.html\">Bakery</a>, <a href=\"../posts/cake-business-name-generator.html\">Cake Business</a>, <a href=\"../posts/cookie-business-name-generator.html\">Cookie Business</a> and <a href=\"../posts/dessert-business-name-generator.html\">Dessert Business</a> name generators, plus the <a href=\"../posts/cafe-name-generator.html\">Café Name Generator</a>. Each has styles from punny and cute to classic and French, and can build a name from your town or your own name.</p><p>Every name has a <b>Check</b> button: it opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>, which looks up the company register, domains, trade marks and social handles in one go. In the UK, remember to register a food business with your council at least 28 days before you start trading.</p>",
+    "eyebrow": "Business names by trade",
     "featured": [
       {
         "key": "bakery",
-        "note": "Bakery business name ideas in eight styles: catchy, cute, funny, classic, modern, French, ."
+        "note": "bakery names: catchy, cute, classic, modern and French."
       },
       {
         "key": "cake_business",
-        "note": "Names for a cake shop or home cake business in seven styles: catchy, cute, aesthetic, luxu."
+        "note": "cake shop and home cake business names, cute to luxury."
       },
       {
         "key": "cookie_business",
-        "note": "Names for a cookie business, shop or brand: catchy, cute, funny, one word, decorated cooki."
+        "note": "cookie shop and brand names, including decorated cookies."
       }
     ],
     "generators": [
@@ -2767,8 +2957,55 @@
       "dessert_business",
       "cafe"
     ],
-    "startHeading": "Choose your kind of business",
-    "startIntro": "Pick the generator for your trade, then press Check on any name you like."
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name a bakery, cake business, cookie shop, dessert bar or café.",
+    "approach": {
+      "heading": "How to approach food business names",
+      "text": "<p>Start with what you sell and who buys it. A birthday-cake maker, a sourdough bakery and a dessert parlour all want different names, even though they all bake. Food names work best when they make people hungry and say what's on offer: a pun built on a baking word (proof, knead, crumb), a classic name from your street or family, or a French word if your pastries live up to it. Then check it reads on a box, fits an Instagram handle and isn't already used nearby.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Put what you sell in the name.",
+        "Puns work best for fun, casual food.",
+        "Use French only if you can say it.",
+        "Add your town to be found locally.",
+        "Check the handle before the sign."
+      ]
+    },
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Well Bread",
+          "type": "BAKERY",
+          "verdict": "A pun everyone gets on first reading.",
+          "breakdown": "It plays on \"well bred\" and tells you it's a bakery in two words, short enough for a sign, a bag and a handle.",
+          "motif": "shopfront"
+        },
+        {
+          "name": "Belgravia Cake Atelier",
+          "type": "CAKE BUSINESS",
+          "verdict": "A wedding-cake name that justifies wedding-cake prices.",
+          "breakdown": "Belgravia is one of London's smartest districts, and atelier is French for a workshop or studio, so the name says handmade and high-end.",
+          "motif": "cherry-blossom"
+        },
+        {
+          "name": "Cookies Are My Cardio",
+          "type": "COOKIE BUSINESS",
+          "verdict": "A joke that sells itself on Instagram.",
+          "breakdown": "It's funny, it's shareable, and it tells you exactly what the business sells.",
+          "motif": "cookie"
+        },
+        {
+          "name": "Maison Chantilly",
+          "type": "DESSERT BAR",
+          "verdict": "Soft, French and a little bit fancy.",
+          "breakdown": "Maison means house, and Chantilly cream is sweetened whipped cream named after the town of Chantilly in France.",
+          "motif": "cup"
+        }
+      ]
+    }
   },
   {
     "name": "Shops, Brands & Makers Business Names",
@@ -2779,20 +3016,20 @@
     "seoTitle": "Shop and Brand Name Generators: Clothing, Candles, Jewelry",
     "description": "Names for clothing brands, boutiques, candle makers, jewellers and Etsy shops, each with a check to see if it's free.",
     "seoDescription": "Free shop and brand name generators: clothing brand, boutique, jewelry, candle and more, with a free check for domains, handles and companies.",
-    "intro": "<p>For a shop or a small brand, the name is the brand: it goes on the label, the packaging and the shop page. These generators work product by product, from clothing to candles, in styles from aesthetic and cute to modern and luxury. Add your own name for a maker's mark nobody else can use.</p><p>Every name has a <b>Check</b> button: it opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>, which looks up the company register, domains, trade marks and social handles in one go.</p>",
-    "eyebrow": "Business names",
+    "intro": "<p>For a shop or a small brand, the name is the brand: it goes on the label, the packaging and the shop page. These generators work product by product, from a <a href=\"../posts/clothing-brand-name-generator.html\">clothing brand</a> or a <a href=\"../posts/boutique-name-generator.html\">boutique</a> to a <a href=\"../posts/jewelry-business-name-generator.html\">jewellery business</a> or a <a href=\"../posts/candle-business-name-generator.html\">candle business</a>, in styles from aesthetic and cute to modern and luxury. Add your own name for a maker's mark nobody else can use.</p><p>Every name has a <b>Check</b> button that opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>, which looks up the company register, trade marks, domains and social handles in one go.</p>",
+    "eyebrow": "Business names by trade",
     "featured": [
       {
         "key": "boutique",
-        "note": "Boutique names that are cute, catchy, French-chic or western, or built from your name or t."
+        "note": "boutique names: cute, catchy, French-chic or built from your name."
       },
       {
         "key": "candle_business",
-        "note": "Candle business names that are catchy, cute, funny, luxury, aesthetic or witchy, or built ."
+        "note": "candle business names: cosy, luxury, aesthetic or witchy."
       },
       {
         "key": "clothing_brand",
-        "note": "Clothing brand names that are easy to remember: catchy puns, streetwear, Y2K, luxury, heri."
+        "note": "clothing brand names: streetwear, Y2K, luxury and heritage."
       }
     ],
     "generators": [
@@ -2802,7 +3039,54 @@
       "jewelry_business",
       "brand"
     ],
-    "startHeading": "Choose your kind of business",
-    "startIntro": "Pick the generator for your trade, then press Check on any name you like."
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to name a label, a shop or a small handmade brand.",
+    "approach": {
+      "heading": "How to approach shop and brand names",
+      "text": "<p>A product name has to work small: on a woven label, a jar or a 32-pixel profile picture. Short names and clear images do best. Decide first what customers should feel when they see it (playful, cosy, luxurious, nostalgic) and pick a style to match: a pun for a market stall, a scent pairing for a premium candle, French words for fine jewellery. Then check the handle as well as the domain, because most small brands are found on Instagram, Etsy and TikTok before anywhere else.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Write it on a real label first.",
+        "Match the style to your price.",
+        "Check the handle, not just the domain.",
+        "Stay clear of big brands' names.",
+        "Your own name makes a maker's mark."
+      ]
+    },
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Thread Carefully",
+          "type": "CLOTHING",
+          "verdict": "A pun that doubles as a brand value.",
+          "breakdown": "It plays on 'tread carefully' with thread, so it's both funny and a quiet promise of careful making.",
+          "motif": "tag"
+        },
+        {
+          "name": "Chez Mathilde",
+          "type": "BOUTIQUE",
+          "verdict": "A French touch that feels personal.",
+          "breakdown": "Chez means 'at the home of', so the name sounds like being welcomed into someone's shop rather than a chain.",
+          "motif": "shopfront"
+        },
+        {
+          "name": "Snowdrop & Silver",
+          "type": "JEWELLERY",
+          "verdict": "Delicate, with the metal in the name.",
+          "breakdown": "A spring flower and the material you work in: customers know what you make and what it feels like before they look.",
+          "motif": "ring"
+        },
+        {
+          "name": "Wax & Wane Candle Co.",
+          "type": "CANDLES",
+          "verdict": "A pun that fits the product exactly.",
+          "breakdown": "'Wax and wane' describes the moon growing and shrinking, and candles do the same as they burn.",
+          "motif": "candle"
+        }
+      ]
+    }
   }
 ]
