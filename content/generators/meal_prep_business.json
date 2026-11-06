@@ -763,9 +763,30 @@
       "title": "🍱 Meal Prep Business Name Generator",
       "tagline": "Names for a meal prep service, from Prep Talk Kitchen to Green Plate Meals."
     },
-    "intro": "A meal prep name goes on every label, delivery bag and Instagram post. This **meal prep business name generator** gives you names for a healthy meal prep, fitness meal or home-cooked meal service in seven styles, including ones built from your town or your own name.",
-    "sections": [],
+    "intro": "Good meal prep business names say who the food is for: gym-goers (<em>Rep Kitchen</em>), healthy eaters (<em>Leaf & Ladle</em>) or busy families (<em>The Weeknight Kitchen</em>). This **meal prep business name generator** gives you names for a healthy meal prep, fitness meal or home-cooked meal service in seven styles, including ones built from your town or your own name.",
+    "sections": [
+      {
+        "heading": "Eight good meal prep business names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Rep Kitchen</strong>: a gym word that tells lifters it's for them.</li><li><strong>Peak Plates</strong>: fitness and food in two words.</li><li><strong>Leaf & Ladle</strong>: fresh and healthy without making claims.</li><li><strong>Rainbow Plate Kitchen</strong>: a healthy name that suggests variety.</li><li><strong>The Weeknight Kitchen</strong>: home cooking for busy families.</li><li><strong>The Slow Cooker Larder</strong>: comfort food, said plainly.</li><li><strong>Prep Rally Food Co.</strong>: a pun on pep rally that's easy to remember.</li><li><strong>Portion & Grain</strong>: modern and short, good on a label.</li></ul>"
+      },
+      {
+        "heading": "What makes a meal prep name work",
+        "content": "<p>Meal prep customers buy a routine, so the name should say whose routine it fits:</p><ul><li><strong>Fitness:</strong> reps, macros, fuel and peaks speak to gym-goers.</li><li><strong>Healthy:</strong> leaf, root, green and harvest suggest fresh food without promising results.</li><li><strong>Home-cooked:</strong> kitchen, larder and weeknight suggest comfort and convenience.</li><li><strong>Puns on prep</strong> are memorable, but check nobody local already uses yours.</li></ul><p>Keep health claims out of the name. In the UK and the US, what you can say about food and health is regulated, so a name promising weight loss or a cure can cause problems. Any UK food business must also register with its local council at least 28 days before it starts trading.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Press <strong>Check</strong> next to any name, or paste it into the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to see whether the domain and social handles are free. Then search the company register (Companies House in the UK, your state's business register in the US) and the trade mark register for your kind of business. Your name goes on every label and delivery bag, so check it before you order packaging.</p><p>This is general guidance, not legal advice. For the full process, read <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>"
+      },
+      {
+        "heading": "Tips for meal prep services",
+        "content": "<ul><li><strong>Design for the lid.</strong> A short name reads best on a meal container.</li><li><strong>Say your area</strong> if you deliver locally, so people searching nearby find you.</li><li><strong>Leave room for menus.</strong> A name tied to one diet can be limiting if you add others.</li></ul><p>See also the <a href=\"catering-business-name-generator.html\">Catering Business</a> and <a href=\"juice-bar-name-generator.html\">Juice Bar</a> name generators.</p><p>For more, see all the <a href=\"../categories/biz_food-names.html\">food and drink business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good meal prep business names?",
+        "answer": "Names that say who it's for: Rep Kitchen or Peak Plates for fitness, Leaf & Ladle for healthy eating, The Weeknight Kitchen for busy families. Avoid health claims in the name."
+      },
       {
         "question": "How do I check a meal prep business name is free?",
         "answer": "Press <strong>Check</strong> on any name to see whether it's free as a company name, a domain and a social media handle. Before you commit, search the official registers too: in the UK, Companies House and the UK trade mark register; in the US, your state's business register and the USPTO trade mark search. Look on a map app for businesses with the same name nearby."
@@ -773,6 +794,10 @@
       {
         "question": "What's a good name for a meal prep business?",
         "answer": "Say who it's for. Gym-goers look for fuel, macros and protein (<em>Macro Kitchen</em>); busy families want home cooking (<em>Nana's Sunday Kitchen</em>); a healthy service suits fresh, green words (<em>Green Plate Meals</em>). A pun on prep is easy to remember (<em>Prep Talk</em>). Keep health claims out of the name: food labelling rules in the UK and US limit what you can promise."
+      },
+      {
+        "question": "Do I need to register a meal prep business?",
+        "answer": "In the UK, yes: register with your local council as a food business at least 28 days before you start. In the US, rules vary by state and county, so check with your local health department."
       }
     ]
   }

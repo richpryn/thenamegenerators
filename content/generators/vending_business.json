@@ -167,12 +167,25 @@
       "title": "🥤 Vending Machine Business Name Generator",
       "tagline": "Names for a vending machine round, from Pocket Change Vending to Hartley Refreshments."
     },
-    "intro": "Name your round with this **Vending Machine Business Name Generator**: for snack and drink machines, healthy vending, coffee machines and micro markets. Pick a style and what you sell, or add your first name or town.",
-    "sections": [],
+    "intro": "Good vending business names are short, friendly and readable from across a break room: a pun like <em>Spend &amp; Vend</em>, a cosy word like <em>Peckish</em>, or a surname with \"Refreshments\". Name your round with this **Vending Machine Business Name Generator**: for snack and drink machines, healthy vending, coffee machines and micro markets. Pick a style and what you sell, or add your first name or town.",
+    "sections": [
+      {
+        "heading": "Eight good vending business names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Spend &amp; Vend</strong>: a rhyme that's easy to remember.</li><li><strong>Peckish Vending</strong>: a very British word for a little bit hungry.</li><li><strong>Break Room Hero Vending</strong>: names the place your machines live.</li><li><strong>Happily Vended After</strong>: a fairy-tale pun people repeat.</li><li><strong>Not Before Coffee Vending Co.</strong>: for a round of coffee machines.</li><li><strong>Biscuit Tin Snacks</strong>: a cosy modern name that fits on a machine front.</li><li><strong>Merritt Vending Services</strong>: a surname, which sounds solid when you pitch to offices.</li><li><strong>Hampton Refreshment Services</strong>: a local name for schools, gyms and offices nearby.</li></ul>"
+      },
+      {
+        "heading": "Naming a vending round",
+        "content": "<p>Your name goes on the front of every machine and on your pitch to every site, so it has two jobs. On the machine it should be short, cheerful and easy to read; in an email to an office manager it should sound reliable. A pun or snack word wins on the first; a surname or town with \"Vending\" or \"Refreshments\" wins on the second. If you only sell healthy snacks or coffee, put that in the name so sites looking for it can find you.</p><p>Keep snack and drink brands out of your name, logo and domain: names like Coca-Cola, Mars and Walkers are trade marks, even if you stock their products.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Every name here has a Check button. Press it before you order business cards, and run through these yourself:</p><ul><li><strong>The company register:</strong> Companies House in the UK, or your state's business register in the US.</li><li><strong>Trade marks:</strong> search the UK IPO or USPTO for the same or a similar name in your field.</li><li><strong>Domains and handles:</strong> a matching .co.uk or .com, and the same handle on the platforms your clients use.</li><li><strong>Machine wraps:</strong> check before you pay for vinyl, as it's the most expensive thing to change.</li></ul><p>The <a href=\"../business-name-checker.html\">Business Name Checker</a> runs the first checks for you, and <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a> explains them in more detail. This is general guidance, not legal advice.</p><p>Selling coffee in person? Try the <a href=\"cafe-name-generator.html\">Café Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_services-names.html\">professional and creative business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
       {
-        "question": "How do I check a vending business name is free?",
-        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse customers."
+        "question": "What are good vending machine business names?",
+        "answer": "Short, cheerful names that read on a machine: a rhyme (Spend & Vend), a snack word (Peckish Vending) or a pun (Happily Vended After). For pitching to offices, a surname with Vending or Refreshments sounds solid."
       },
       {
         "question": "What is a good name for a vending machine business?",
@@ -181,6 +194,10 @@
       {
         "question": "Can I put a snack or drink brand in my vending business name?",
         "answer": "No. Names like Coca-Cola, Mars or Walkers are trade marks, even if you stock their products, so keep them off your business name, logo and domain. You can show the brands you stock on the machine itself, within the supplier's rules. Check your chosen name on Companies House, your state's business register and the trade mark registers before you wrap your machines."
+      },
+      {
+        "question": "How do I check a vending business name is free?",
+        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse customers."
       }
     ]
   },

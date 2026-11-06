@@ -749,9 +749,30 @@
       "title": "🪴 Plant Shop Name Generator",
       "tagline": "Names for a plant shop or nursery, from Leaf It to Me to The Old Mill Garden Centre."
     },
-    "intro": "Opening a houseplant shop, selling cuttings online or running a nursery? This **plant shop name generator** gives you plant business names in seven styles, from puns to proper garden centres, and you can check each one is free before you paint the sign.",
-    "sections": [],
+    "intro": "A good plant shop name says plants at a glance: a light pun for a houseplant shop, a short modern name for a plant studio, or a surname or place for a nursery. Opening a houseplant shop, selling cuttings online or running a nursery? This **plant shop name generator** gives you plant business names in seven styles, from puns to proper garden centres, and you can check each one is free before you paint the sign.",
+    "sections": [
+      {
+        "heading": "Eight good plant shop names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Unbeleafable</strong>: the best-known kind of plant pun, in one word.</li><li><strong>The Thirsty Fern</strong>: catchy, and every plant owner knows the feeling.</li><li><strong>Little Palm Greenhouse</strong>: cute and clear.</li><li><strong>Still Alive Plants</strong>: a joke for anyone who's killed a houseplant.</li><li><strong>The Awkward Calathea</strong>: funny, and a nod to a famously fussy plant.</li><li><strong>Glasshouse Plant Studio</strong>: modern, for a stylish city shop.</li><li><strong>Brindley's Nursery</strong>: a classic family nursery name.</li><li><strong>Sarah's Potting Shed</strong>: your name and a homely garden word.</li></ul>"
+      },
+      {
+        "heading": "Houseplant shop, plant studio or nursery?",
+        "content": "<ul><li><strong>Houseplant shops</strong> sell to people who name their plants, so puns and personality work: <em>Planty of Room</em>.</li><li><strong>Plant studios</strong> in towns and cities often go modern and minimal: <em>Studio Node</em>, <em>Root Plant Shop</em>.</li><li><strong>Nurseries and garden centres</strong> are usually named after a family or a place, as in <em>The Old Orchard Garden Centre</em>, because people trust them like a local firm.</li></ul><p>Choose <strong>From my town</strong> for a local name like <em>Hampton Bulb Shop</em>.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Before you pay for a logo, labels or a stall banner, press <strong>Check</strong> on the name you like, or paste it into the <a href=\"../business-name-checker.html\">Business Name Checker</a>. It looks for:</p><ul><li><strong>Company names:</strong> in the UK, Companies House won't register a limited company name that's the same as one already on the register. In the US, check your state's business register.</li><li><strong>Trade marks:</strong> search the UK Intellectual Property Office and, if you sell abroad, the USPTO. A registered company name doesn't give you trade mark rights.</li><li><strong>Web and social:</strong> the .com or .co.uk, plus the Instagram, TikTok and Etsy handles plant customers will look for.</li></ul><p>If you sell plants as a business in Great Britain, you may also need to register with the Animal and Plant Health Agency (APHA), and some plants need plant passports when you move or sell them. Check the current rules before you start trading.</p><p>This is general guidance, not legal advice. For the full checklist, read <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>"
+      },
+      {
+        "heading": "Tips for a plant business",
+        "content": "<ul><li><strong>Think about how you'll grow.</strong> A houseplant pun can feel narrow if you later sell garden plants and tools.</li><li><strong>Check it reads clearly abroad,</strong> if you'll ship cuttings. Some words, such as <em>pot</em> or <em>bud</em>, read as cannabis in the US.</li><li><strong>Make it easy to say over the phone</strong> for a nursery taking orders.</li></ul><p>Selling cut flowers too? Try the <a href=\"flower-shop-name-generator.html\">Flower Shop Name Generator</a>. For a landscaping service, there's the <a href=\"landscaping-business-name-generator.html\">Landscaping Business Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_shops-names.html\">shop and brand business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good plant shop names?",
+        "answer": "Names that say plants straight away: Unbeleafable or The Thirsty Fern for a houseplant shop, Glasshouse Plant Studio for a modern one, or Brindley's Nursery for a garden nursery."
+      },
       {
         "question": "How do I check a plant shop name is free?",
         "answer": "Press <strong>Check</strong> on any name to see whether it is free as a company name, a web address and a social media handle. In the UK, search the Companies House register; in the US, search your state's business register and the USPTO trade mark search. Do this before you pay for a logo, labels or signage."
@@ -759,6 +780,10 @@
       {
         "question": "What is a good name for a plant shop?",
         "answer": "One that says plants at a glance and is easy to find online. Houseplant shops suit a light pun (<em>Leaf It to Me</em>) or a short modern name (<em>Canopy Plant Studio</em>); nurseries and garden centres do better with a surname or a place (<em>The Old Mill Garden Centre</em>). In the US, avoid words such as <em>pot</em>, <em>grow</em> or <em>bud</em> on their own, which can read as a cannabis shop."
+      },
+      {
+        "question": "Do I need a licence to sell plants?",
+        "answer": "In Great Britain, businesses selling plants may need to register with the Animal and Plant Health Agency, and some plants need plant passports. Check the current rules on GOV.UK before you start trading."
       }
     ]
   }

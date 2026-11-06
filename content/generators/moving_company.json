@@ -14,9 +14,30 @@
       "title": "🚚 Moving Company Name Generator",
       "tagline": "Names for movers and removals firms, from Sofa So Good to Hartley & Sons Removals."
     },
-    "intro": "Starting a moving company, a removals firm or a man and van business? This **moving company name generator** has catchy and funny puns, classic family names, short modern names and names for small moves, plus names from your town or first name.",
-    "sections": [],
+    "intro": "Good moving company names promise care and reliability: a family name (<em>Royle Removals & Storage</em>), a plain promise (<em>Careful Man with a Van</em>) or a pun that looks good on a van (<em>Lift Off Movers</em>). This **moving company name generator** has catchy and funny puns, classic family names, short modern names and names for small moves, plus names from your town or first name.",
+    "sections": [
+      {
+        "heading": "Eight good moving company names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Royle Removals & Storage</strong>: a surname and both services, the classic shape.</li><li><strong>Careful Man with a Van</strong>: promises the one thing customers worry about.</li><li><strong>Lift Off Movers</strong>: a cheerful pun that reads well on a lorry.</li><li><strong>Hands & Van</strong>: short, friendly and clear.</li><li><strong>Tandem Movers</strong>: a modern one-word name about working together.</li><li><strong>Old Mill Relocations</strong>: a place name with an established feel.</li><li><strong>Pack & Go Removals</strong>: says what happens, in three words.</li><li><strong>Sarah's Tidy Moves</strong>: a personal name with a promise.</li></ul>"
+      },
+      {
+        "heading": "What makes a removals name work",
+        "content": "<p>People hand movers everything they own, so the name has to earn trust:</p><ul><li><strong>Use the local word.</strong> In the UK it's \"Removals\" or \"man and van\"; in the US, \"Movers\" or \"Moving & Storage\".</li><li><strong>Say your size.</strong> \"Man with a Van\" sets expectations for small moves; \"Removals & Storage\" suggests a full service with a warehouse.</li><li><strong>Keep it legible on a van.</strong> Your lorry is your biggest advert, so short names in big letters work hardest.</li></ul><p>In the UK, membership of a trade body such as the British Association of Removers reassures customers. In the US, movers who cross state lines need a USDOT number from the Federal Motor Carrier Safety Administration, shown on the vehicle.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Press <strong>Check</strong> next to any name, or paste it into the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to see whether the domain and social handles are free. Then search the company register (Companies House in the UK, your state's business register in the US) and the trade mark register for your kind of business. Removals firms often share similar names, so search your area on a map app before you letter the van.</p><p>This is general guidance, not legal advice. For the full process, read <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>"
+      },
+      {
+        "heading": "Tips for movers",
+        "content": "<ul><li><strong>Think about storage.</strong> If you'll add storage later, a name like \"Removals & Storage\" saves a rebrand.</li><li><strong>Add your area</strong> if you work locally: \"Hampton Movers\" ranks well in local search.</li><li><strong>Make the phone number big.</strong> On a van, the name gets attention and the number gets the job.</li></ul><p>See also the <a href=\"cleaning-business-name-generator.html\">Cleaning Business</a> and <a href=\"handyman-business-name-generator.html\">Handyman</a> name generators for end-of-tenancy and odd-job services.</p><p>For more, see all the <a href=\"../categories/biz_trades-names.html\">trades and home services business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good moving company names?",
+        "answer": "Names that sound careful and reliable, like Royle Removals & Storage or Careful Man with a Van, or a friendly pun such as Lift Off Movers. Use Removals in the UK and Movers in the US."
+      },
       {
         "question": "How do I check a moving company name is free?",
         "answer": "Press <strong>Check</strong> next to any name to see if it's free as a company, a domain and a social media handle. Then make sure: in the UK, search Companies House and the UK IPO trade mark register; in the US, search your state's business register and the USPTO trade mark search. A quick map search for the name in your area helps too."
@@ -24,6 +45,10 @@
       {
         "question": "What's a good name for a moving company?",
         "answer": "Movers are trusted with everything a family owns, so names that sound careful and dependable work well: <em>Hartley & Sons Removals</em>, <em>Careful Hands Movers</em> or <em>Steve's Man & Van</em>. A friendly pun like <em>Sofa So Good</em> looks great on the side of a van. In the UK, &ldquo;Removals&rdquo; is the usual word; in the US, &ldquo;Movers&rdquo; or &ldquo;Moving & Storage&rdquo;."
+      },
+      {
+        "question": "What's the difference between a removals company and a man and van?",
+        "answer": "A removals company usually offers a full service with a crew, packing and often storage. A man and van is a smaller, cheaper service for single items or small moves, so name your business for the size of job you'll take."
       }
     ]
   },

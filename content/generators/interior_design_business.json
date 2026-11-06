@@ -14,9 +14,30 @@
       "title": "🛋️ Interior Design Business Name Generator",
       "tagline": "Names for interior designers and decorators, from Pattern Play to Atelier Hartley."
     },
-    "intro": "Launching a design studio or setting up as a decorator? This **interior design business name generator** has catchy, cute and aesthetic names for Instagram, classic studio names, short modern ones and luxury names, plus names from your town or your first name.",
-    "sections": [],
+    "intro": "Good interior design business names sound calm and considered, like the rooms you'll design: your own name (<em>Studio Ellery</em>), a material (<em>Velvet & Travertine Design</em>) or a soft Instagram-ready word (<em>The Moss Edit</em>). This **interior design business name generator** has catchy, cute and aesthetic names, classic studio names, short modern ones and luxury names, plus names from your town or your first name.",
+    "sections": [
+      {
+        "heading": "Eight good interior design business names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Studio Ellery</strong>: a surname studio, the way many designers trade.</li><li><strong>Atelier Raeburn</strong>: atelier, French for workshop, for a high-end practice.</li><li><strong>Velvet & Travertine Design</strong>: two materials that tell clients your look before they see a photo.</li><li><strong>The Moss Edit</strong>: an \"edit\" name, short enough to be your Instagram handle.</li><li><strong>Plum & Pebble Interior Styling</strong>: a softer, cosier pairing for homes rather than offices.</li><li><strong>Dado</strong>: one word, from the dado rail, for a short modern brand.</li><li><strong>Woodville & Granger Interior Design</strong>: two surnames that sound like an established firm.</li><li><strong>Interior Styling by Sarah</strong>: your name, for a one-person service clients hire for you.</li></ul>"
+      },
+      {
+        "heading": "What makes an interior design name work",
+        "content": "<p>Clients hire a designer for their taste, so the name should show it:</p><ul><li><strong>Your own name</strong> is the most common choice, because the designer is the product. <em>Studio</em>, <em>Atelier</em> or <em>Interiors</em> after a surname reads as professional.</li><li><strong>Materials and textures</strong> (linen, oak, travertine, rattan, velvet) say what your rooms feel like.</li><li><strong>Design words</strong> such as dado, plinth, sisal and terrazzo appeal to people who already know the trade.</li><li><strong>Styling versus design:</strong> \"interior styling\" suggests furnishing and dressing a room; \"interior design\" or \"interior architecture\" suggests layout and building work. Choose the word that matches what you'll actually do.</li></ul><p>In the UK \"interior designer\" isn't a protected title, though membership of the British Institute of Interior Design (BIID) tells clients you meet a professional standard. A few US states do regulate the title, so check your state's rules before you use it.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Press <strong>Check</strong> next to any name, or paste it into the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to see whether the domain and social handles are free. Then search the company register (Companies House in the UK, your state's business register in the US) and the trade mark register for your kind of business. Design studios trade on their portfolio, so make sure the Instagram and Pinterest handles are free too.</p><p>This is general guidance, not legal advice. For the full process, read <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>"
+      },
+      {
+        "heading": "Tips for designers",
+        "content": "<ul><li><strong>Leave room to grow.</strong> A name with your surname works whether you stay solo or hire a team.</li><li><strong>Test the handle.</strong> Long names get cut short in search results and profile links.</li><li><strong>Match the look.</strong> A rustic name on a minimalist portfolio sends mixed signals.</li></ul><p>Working alongside builders and decorators? See the <a href=\"construction-company-name-generator.html\">Construction Company</a> and <a href=\"painting-business-name-generator.html\">Painting Business</a> name generators, or the <a href=\"business-name-generator.html\">Business Name Generator</a> for anything else.</p><p>For more, see all the <a href=\"../categories/biz_trades-names.html\">trades and home services business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good interior design business names?",
+        "answer": "Your own name with Studio, Atelier or Interiors (Studio Ellery, Atelier Raeburn), a pair of materials (Velvet & Travertine Design), or a calm one-word name (Dado). Choose a style in the generator to see more of each kind."
+      },
       {
         "question": "How do I check an interior design business name is free?",
         "answer": "Press <strong>Check</strong> next to any name to see if it's free as a company, a domain and a social media handle. Then make sure: in the UK, search Companies House and the UK IPO trade mark register; in the US, search your state's business register and the USPTO trade mark search. A quick map search for the name in your area helps too."
@@ -24,6 +45,10 @@
       {
         "question": "What is a good name for an interior design business?",
         "answer": "Many designers use their own name, because clients hire the person: <em>Studio Hartley</em>, <em>Hartley Interiors</em> or <em>Interiors by Sophie</em>. Others choose a calm, material word that suits their look, such as <em>Linen & Oak</em> or <em>The Sage Edit</em>, which also works as an Instagram handle. Choose <strong>Aesthetic</strong> or <strong>From my name</strong> in the Style menu to try both."
+      },
+      {
+        "question": "Do I need a qualification to call myself an interior designer?",
+        "answer": "Not in the UK, where the title isn't protected, though BIID membership shows a professional standard. A few US states regulate the title, so check locally before you use it."
       }
     ]
   },

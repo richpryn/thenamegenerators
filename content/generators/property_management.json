@@ -152,12 +152,25 @@
       "title": "🔑 Property Management Name Generator",
       "tagline": "Names for a property management company, from Well Kept Property Management to Gable Lettings."
     },
-    "intro": "Name your business with this **Property Management Name Generator**: for rental and lettings managers, block and HOA managers, holiday-let hosts and commercial property managers. Pick a style and what you manage, or add your first name or town.",
-    "sections": [],
+    "intro": "Good property management names sound steady and reachable: a surname or a place with \"Property Management\", or a word about keys and good order like <em>In Good Order</em>. Name your business with this **Property Management Name Generator**: for rental and lettings managers, block and HOA managers, holiday-let hosts and commercial property managers. Pick a style and what you manage, or add your first name or town.",
+    "sections": [
+      {
+        "heading": "Eight good property management names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>In Good Order Property Management</strong>: tells landlords their buildings will be looked after.</li><li><strong>Property Sorted</strong>: short and reassuring for busy landlords.</li><li><strong>Good Bones Managed Property</strong>: a builder's phrase for a sound house.</li><li><strong>Cartwright Property Managers</strong>: a surname, which sounds established.</li><li><strong>Kendall &amp; Mather</strong>: a classic two-name firm.</li><li><strong>Quoin Property Managers</strong>: a quoin is a cornerstone, an apt word for a building firm.</li><li><strong>Dovecote Property Management</strong>: a gentle, memorable modern name.</li><li><strong>Hampton Property Office</strong>: a local name, for a firm with a high-street office.</li></ul>"
+      },
+      {
+        "heading": "How property managers are named",
+        "content": "<p>Landlords, residents and leaseholders want someone dependable who answers the phone, so names lean on surnames, places, building words (lintel, quoin, gable) and phrases about upkeep. If you specialise, say so: \"Lettings\" for UK rentals, \"Block Management\" for flats, \"HOA Management\" in the US, \"Stays\" for holiday lets.</p><p><strong>Rules to know:</strong> in the UK, letting agents and property managers must belong to a government-approved redress scheme, and in England they must also belong to a client money protection (CMP) scheme if they hold client money. \"Chartered Surveyors\" and \"RICS\" are for RICS-regulated firms only. In the US, \"Realtor\" is a trade mark of the National Association of Realtors, and many states require a real estate broker's licence to manage rentals for others.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Every name here has a Check button. Press it before you order business cards, and run through these yourself:</p><ul><li><strong>The company register:</strong> Companies House in the UK, or your state's business register in the US.</li><li><strong>Trade marks:</strong> search the UK IPO or USPTO for the same or a similar name in your field.</li><li><strong>Domains and handles:</strong> a matching .co.uk or .com, and the same handle on the platforms your clients use.</li><li><strong>Booking sites:</strong> keep clear of names like Airbnb in your business name, even if you list there.</li></ul><p>The <a href=\"../business-name-checker.html\">Business Name Checker</a> runs the first checks for you, and <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a> explains them in more detail. This is general guidance, not legal advice.</p><p>For sales as well as lettings, try the <a href=\"real-estate-name-generator.html\">Real Estate Name Generator</a>, and for the cleaners you'll book between tenants, the <a href=\"cleaning-business-name-generator.html\">Cleaning Business Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_services-names.html\">professional and creative business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
       {
-        "question": "How do I check a property management name is free?",
-        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse customers."
+        "question": "What are good property management company names?",
+        "answer": "Steady, local-sounding names: a surname (Cartwright Property Managers), a place (Hampton Property Office), or a phrase about good upkeep (In Good Order Property Management). Say what you manage if you specialise."
       },
       {
         "question": "What makes a good property management company name?",
@@ -165,7 +178,11 @@
       },
       {
         "question": "Are there any words a property manager can't use?",
-        "answer": "Avoid \"Chartered Surveyors\" and \"RICS\" unless you are RICS-regulated, \"Realtor\", which is a trade mark of the US National Association of Realtors, and the names of booking sites such as Airbnb. In the UK, \"Trust\" and \"Association\" need approval in a company name, and letting and property management agents in England must join a redress scheme and a client money protection scheme. In many US states, managing rentals for others needs a real estate broker's licence, so check your state's rules before you choose a name."
+        "answer": "Avoid \"Chartered Surveyors\" and \"RICS\" unless you are RICS-regulated, and \"Realtor\", a trade mark of the US National Association of Realtors. Keep booking sites' names, such as Airbnb, out of your name. In the UK, letting and property management agents must join a government-approved redress scheme, and in England a client money protection scheme too. In many US states, managing rentals for others needs a real estate broker's licence."
+      },
+      {
+        "question": "How do I check a property management name is free?",
+        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse customers."
       }
     ]
   },

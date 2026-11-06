@@ -771,9 +771,30 @@
       "title": "🍺 Brewery Name Generator",
       "tagline": "Names for a craft brewery, microbrewery or brewpub, from Lager Than Life to Fell Top Brewing Co."
     },
-    "intro": "A brewery name goes on every can, pump clip and tap handle. This **brewery name generator** gives you names for a craft brewery, microbrewery or brewpub in seven styles, from punny to traditional, including ones built from your town or your own name.",
-    "sections": [],
+    "intro": "Good brewery names suit a pump clip and a tap handle: a place (<em>The Mill Race Brewers</em>), a brewing word (<em>Wort & Ember Beer Co.</em>) or a pun (<em>Yeast Coast Brewing Co.</em>). This **brewery name generator** gives you names for a craft brewery, microbrewery or brewpub in seven styles, from punny to traditional, including ones built from your town or your own name.",
+    "sections": [
+      {
+        "heading": "Eight good brewery names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>The Mill Race Brewers</strong>: named after the place, the most common brewery pattern.</li><li><strong>Wort & Ember Beer Co.</strong>: wort is the sweet liquid that becomes beer.</li><li><strong>Grist & Fold Brewing</strong>: grist is the milled malt that goes into the mash.</li><li><strong>Foeder Brew Co.</strong>: a foeder is a large wooden vat for ageing beer.</li><li><strong>Lupulin Beer</strong>: lupulin is the yellow resin in hops that gives bitterness and aroma.</li><li><strong>Yeast Coast Brewing Co.</strong>: a pun that works on a can.</li><li><strong>Stout Fellow Brewery</strong>: a classic British phrase with a beer in it.</li><li><strong>The Railway Arch Brewery</strong>: many small breweries really do brew under railway arches.</li></ul>"
+      },
+      {
+        "heading": "What makes a brewery name work",
+        "content": "<p>Most breweries are named after a place, and the reasons are practical: drinkers like local beer, and a place name is harder for anyone else to claim.</p><ul><li><strong>Place names:</strong> the town, a hill, a river or the building (<em>The Old Maltings Ales</em>).</li><li><strong>Brewing words:</strong> grist, wort, mash, foeder and lupulin appeal to beer fans who know the process.</li><li><strong>Family names</strong> (<em>Bramley & Sons Brewing Co.</em>) suit traditional ale.</li><li><strong>Puns</strong> work well on cans, where you have room for big artwork.</li></ul><p>In the UK, anyone producing beer for sale needs approval from HMRC for alcohol duty before brewing commercially. In the US, breweries need a federal permit from the TTB as well as state licences.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Press <strong>Check</strong> next to any name, or paste it into the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to see whether the domain and social handles are free. Then search the company register (Companies House in the UK, your state's business register in the US) and the trade mark register for your kind of business. Beer names are some of the most crowded trade marks there are, so check the brewery name and each beer name in the class for beer before you print a single label.</p><p>This is general guidance, not legal advice. For the full process, read <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>"
+      },
+      {
+        "heading": "Tips for brewers",
+        "content": "<ul><li><strong>Think about the pump clip.</strong> Short names in bold type stand out on a busy bar.</li><li><strong>Leave room for beer names.</strong> A plain brewery name lets each beer have its own personality.</li><li><strong>Search festivals and beer apps</strong> as well as Google, where breweries are listed.</li></ul><p>Opening a taproom? See the <a href=\"bar-name-generator.html\">Bar Name Generator</a>. For events, the <a href=\"mobile-bar-name-generator.html\">Mobile Bar Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_food-names.html\">food and drink business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good brewery names?",
+        "answer": "Place names like The Mill Race Brewers, brewing words like Wort & Ember Beer Co. or Foeder Brew Co., family names like Bramley & Sons, or puns like Yeast Coast Brewing Co."
+      },
       {
         "question": "How do I check a brewery name is free?",
         "answer": "Press <strong>Check</strong> on any name to see whether it's free as a company name, a domain and a social media handle. Before you commit, search the official registers too: in the UK, Companies House and the UK trade mark register; in the US, your state's business register and the USPTO trade mark search. Look on a map app for businesses with the same name nearby."
@@ -781,6 +802,10 @@
       {
         "question": "How do breweries choose their names?",
         "answer": "Most take a place: the town, a hill, a river or the building they brew in (<em>Hampton Brewing Co.</em>, <em>The Old Maltings Brewery</em>). Family breweries use a surname (<em>Ashby &amp; Sons</em>), craft breweries often pick one short word (<em>Grist Brewing Co.</em>), and some go for a pun. Beer names are crowded with trade marks, so check the name as a trade mark in your class as well as a company name."
+      },
+      {
+        "question": "Do I need a licence to start a brewery?",
+        "answer": "Yes, to sell beer. In the UK you need HMRC approval for alcohol duty before brewing commercially, plus premises and food registration. In the US you need a federal TTB permit and state licences."
       }
     ]
   }

@@ -924,9 +924,30 @@
       "title": "🏷️ Sticker Business Name Generator",
       "tagline": "Names for a sticker shop or stationery brand, from Stuck on You to Ashby Stationers."
     },
-    "intro": "Selling stickers on Etsy, at craft fairs or from your own stationery shop? This **sticker business name generator** gives you names in eight styles, from puns to proper stationers, and you can check each one is free before you print your first sheet.",
-    "sections": [],
+    "intro": "A good sticker shop name is short enough for a backing card, playful, and says what you sell: a pun on stick and peel, a cute animal, or your own name if you're the artist. Selling stickers on Etsy, at craft fairs or from your own stationery shop? This **sticker business name generator** gives you names in eight styles, from puns to proper stationers, and you can check each one is free before you print your first sheet.",
+    "sections": [
+      {
+        "heading": "Eight good sticker business names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Peel the Love</strong>: a warm pun on peeling a sticker.</li><li><strong>Stuck on Axolotls</strong>: a pun that also tells people your theme.</li><li><strong>Teeny Penguin Sticker Co.</strong>: a cute animal plus Sticker Co.: clear and friendly.</li><li><strong>Feral Llama Sticker Co.</strong>: funny, for chaotic designs.</li><li><strong>Mochi & Moon Stickers</strong>: soft and aesthetic, for planner stickers.</li><li><strong>Mirror Foil Sticker Works</strong>: modern, and names a finish people search for.</li><li><strong>The Pencil Pot Stationers</strong>: a classic stationer's name if you sell more than stickers.</li><li><strong>Sarah Made a Sticker</strong>: your own name, for an artist-led shop.</li></ul>"
+      },
+      {
+        "heading": "How sticker shop names work",
+        "content": "<p>Sticker shops sell mostly online and at fairs, so the name has to work as a handle and on a small banner.</p><ul><li><strong>Puns</strong> on stick, peel and vinyl are the classic choice.</li><li><strong>Finish words</strong> help people find you: <em>holo</em>, <em>foil</em>, <em>matte</em>, <em>glossy</em>, <em>washi</em> (decorative Japanese paper tape).</li><li><strong>Kiss-cut and die-cut</strong> are worth knowing: kiss-cut stickers are cut through the sticker but not the backing, so several sit on one sheet; die-cut stickers are cut right through to their shape.</li><li><strong>Your theme</strong> in the name (frogs, plants, cats) brings in people looking for exactly that.</li></ul>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Before you pay for a logo, labels or a stall banner, press <strong>Check</strong> on the name you like, or paste it into the <a href=\"../business-name-checker.html\">Business Name Checker</a>. It looks for:</p><ul><li><strong>Company names:</strong> in the UK, Companies House won't register a limited company name that's the same as one already on the register. In the US, check your state's business register.</li><li><strong>Trade marks:</strong> search the UK Intellectual Property Office and, if you sell abroad, the USPTO. A registered company name doesn't give you trade mark rights.</li><li><strong>Web and social:</strong> the .com or .co.uk, plus the Instagram, TikTok and Etsy handles sticker customers will look for.</li></ul><p>Most important of all: never base a sticker shop, or its stickers, on other people's characters, logos or fan art. Marketplaces remove listings that use them, and the owners can take action against you. Original designs are the whole point.</p><p>This is general guidance, not legal advice. For the full checklist, read <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>"
+      },
+      {
+        "heading": "Tips for a sticker shop",
+        "content": "<ul><li><strong>Keep it under 20 characters</strong> if you'll sell on Etsy, which limits shop names to 20 characters with no spaces.</li><li><strong>Leave room for stationery.</strong> Many sticker shops add washi, notebooks and prints later.</li><li><strong>Match the name to your style of drawing,</strong> cute, funny or minimal.</li></ul><p>Selling prints too? Try the <a href=\"art-business-name-generator.html\">Art Business Name Generator</a>. For printed clothing, there's the <a href=\"t-shirt-business-name-generator.html\">T-Shirt Business Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_shops-names.html\">shop and brand business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good sticker shop names?",
+        "answer": "Short, playful names that say stickers: Peel the Love, Stuck on Axolotls, Teeny Penguin Sticker Co. or Mochi & Moon Stickers for a softer, aesthetic shop."
+      },
       {
         "question": "How do I check a sticker business name is free?",
         "answer": "Press <strong>Check</strong> on any name to see whether it is free as a company name, a web address and a social media handle. In the UK, search the Companies House register; in the US, search your state's business register and the USPTO trade mark search. Do this before you pay for a logo, labels or signage."
@@ -934,6 +955,10 @@
       {
         "question": "What is a good name for a sticker business?",
         "answer": "Something short that fits on a backing card and a shop banner. Puns on stick, peel and vinyl (<em>Stuck on You</em>) are popular; a cute animal plus <em>Sticker Co.</em> suits illustrated shops; and your own name (<em>Sarah Draws</em>) works well if you are the artist. Check your handle is free on Etsy and Instagram too."
+      },
+      {
+        "question": "Can I sell stickers of characters from films or games?",
+        "answer": "Not without permission. Characters and logos belong to their owners, and marketplaces remove listings that use them. Build your shop on your own designs."
       }
     ]
   }

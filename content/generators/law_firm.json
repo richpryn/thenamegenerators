@@ -166,12 +166,25 @@
       "title": "⚖️ Law Firm Name Generator",
       "tagline": "Names for a law firm or solo practice, from Firm Footing Family Law to Hartley & Cobb."
     },
-    "intro": "Name your practice with this **Law Firm Name Generator**: for solicitors' firms, attorneys' offices and solo lawyers. Pick a style and practice area, or add your first name or town.",
-    "sections": [],
+    "intro": "Good law firm names are plain, steady and easy to say on the phone: usually founders' surnames (<em>Pickering &amp; Chalmers</em>), sometimes a town or a calm word like <em>Kestrel Law</em>. Name your practice with this **Law Firm Name Generator**: for solicitors' firms, attorneys' offices and solo lawyers. Pick a style and practice area, or add your first name or town.",
+    "sections": [
+      {
+        "heading": "Eight good law firm names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Pickering &amp; Chalmers</strong>: two surnames joined with an ampersand, the classic shape of a partnership.</li><li><strong>Loxley &amp; Partners</strong>: one founder's name with room for the firm to grow.</li><li><strong>Ormsby Law</strong>: a single surname and one plain word: short enough for a brass plate.</li><li><strong>Plainly Legal</strong>: promises clear advice without promising results.</li><li><strong>Briefly Put Legal Services</strong>: a light play on a legal brief that still sounds professional.</li><li><strong>Kestrel Law</strong>: a modern one-word name that makes a clean logo.</li><li><strong>Hampton Legal Centre</strong>: a town name, for a practice that serves its high street.</li><li><strong>Law Office of Sarah</strong>: a solo practitioner's name, as US lawyers often style it.</li></ul>"
+      },
+      {
+        "heading": "How law firms are named",
+        "content": "<p>Most law firms are named after people. A partnership traditionally takes the surnames of its founders, and many keep them long after those partners have gone, because the name carries the reputation. Newer and smaller practices are freer: a town, a single word or a phrase about clarity works, provided it doesn't overstate what you are.</p><ul><li><strong>Be accurate about size.</strong> \"&amp; Partners\" or \"Group\" on a one-person practice can mislead clients.</li><li><strong>Don't promise outcomes.</strong> Words like \"Win\" or \"Guaranteed\" invite complaints and, for regulated lawyers, regulatory trouble.</li><li><strong>Say what you do if you specialise.</strong> A family or immigration practice is easier to find when the name says so.</li></ul><p><strong>Protected words:</strong> in England and Wales, \"solicitor\" and \"barrister\" are protected titles. Solicitors' firms are regulated by the Solicitors Regulation Authority (SRA), whose rules say a firm's name must not be misleading, and barristers by the Bar Standards Board. In the US, each state bar sets the rules for firm names. The names here leave out \"Solicitors\" and \"Attorneys\": add the word yourself only if you are entitled to use it.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Every name here has a Check button. Press it before you order business cards, and run through these yourself:</p><ul><li><strong>The company register:</strong> Companies House in the UK, or your state's business register in the US.</li><li><strong>Trade marks:</strong> search the UK IPO or USPTO for the same or a similar name in your field.</li><li><strong>Domains and handles:</strong> a matching .co.uk or .com, and the same handle on the platforms your clients use.</li><li><strong>Your regulator:</strong> if you are a solicitor, check your firm name against the SRA's rules; in the US, check your state bar's rules on trade names.</li></ul><p>The <a href=\"../business-name-checker.html\">Business Name Checker</a> runs the first checks for you, and <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a> explains them in more detail. This is general guidance, not legal advice.</p><p>For the other professionals in your building, try the <a href=\"accounting-business-name-generator.html\">Accounting</a>, <a href=\"financial-advisor-name-generator.html\">Financial Advisor</a> and <a href=\"consulting-business-name-generator.html\">Consulting</a> name generators.</p><p>For more, see all the <a href=\"../categories/biz_services-names.html\">professional and creative business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
       {
-        "question": "How do I check a law firm name is free?",
-        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse customers."
+        "question": "What are good law firm names?",
+        "answer": "Founders' surnames joined with an ampersand (Pickering & Chalmers), one surname with Law (Ormsby Law), a town (Hampton Legal Centre) or a calm modern word (Kestrel Law). Keep it plain and honest about who you are."
       },
       {
         "question": "What should I name my law firm?",
@@ -179,7 +192,11 @@
       },
       {
         "question": "Can I put \"Solicitors\" or \"Attorneys\" in my firm's name?",
-        "answer": "Only if you are entitled to. In England and Wales, only a firm authorised by the Solicitors Regulation Authority may call itself \"Solicitors\", and \"barrister\" and \"chambers\" belong to the Bar. \"Law\", \"Legal\" and \"Lawyers\" are open words, but a business must not give the impression it is regulated when it isn't. In the US, each state bar sets the rules for firm names: most allow trade names that aren't misleading, \"Attorneys\" must mean licensed lawyers, and \"& Associates\" should only be used if you have associates. That is why names here leave those words out: add them yourself if they apply to you. Immigration advice and claims handling are regulated too, and \"Trust\" and \"Chartered\" need approval in a UK company name."
+        "answer": "Only if you are entitled to. In England and Wales, \"solicitor\" and \"barrister\" are protected titles: solicitors' firms are regulated by the SRA, whose rules say a firm's name must not be misleading, and barristers by the Bar Standards Board. In the US, each state bar sets the rules for firm names, and many limit trade names and phrases like \"& Associates\". The names here leave those words out, so add them yourself only if they apply to you. In a UK company name, \"Trust\" and \"Chartered\" are sensitive words that need approval."
+      },
+      {
+        "question": "How do I check a law firm name is free?",
+        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse customers."
       }
     ]
   },
