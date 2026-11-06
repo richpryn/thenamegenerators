@@ -32,7 +32,8 @@
     "biz_services": "lightbulb",
     "biz_care": "paw",
     "biz_beauty": "hand",
-    "biz_food": "cookie"
+    "biz_food": "cookie",
+    "biz_shops": "shopfront"
   },
   "generators": {
     "ai": "robot",
@@ -350,6 +351,10 @@
     "bakery": "windmill",
     "cake_business": "candle",
     "cookie_business": "cookie",
-    "dessert_business": "cup"
+    "dessert_business": "cup",
+    "clothing_brand": "tag",
+    "boutique": "shopfront",
+    "jewelry_business": "ring",
+    "candle_business": "candle"
   }
 }

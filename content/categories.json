@@ -2769,5 +2769,40 @@
     ],
     "startHeading": "Choose your kind of business",
     "startIntro": "Pick the generator for your trade, then press Check on any name you like."
+  },
+  {
+    "name": "Shops, Brands & Makers Business Names",
+    "slug": "biz_shops",
+    "icon": "🛍️",
+    "navLabel": "Shops & Makers",
+    "heading": "Shop, Brand and Maker Name Generators",
+    "seoTitle": "Shop and Brand Name Generators: Clothing, Candles, Jewelry",
+    "description": "Names for clothing brands, boutiques, candle makers, jewellers and Etsy shops, each with a check to see if it's free.",
+    "seoDescription": "Free shop and brand name generators: clothing brand, boutique, jewelry, candle and more, with a free check for domains, handles and companies.",
+    "intro": "<p>For a shop or a small brand, the name is the brand: it goes on the label, the packaging and the shop page. These generators work product by product, from clothing to candles, in styles from aesthetic and cute to modern and luxury. Add your own name for a maker's mark nobody else can use.</p><p>Every name has a <b>Check</b> button: it opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>, which looks up the company register, domains, trade marks and social handles in one go.</p>",
+    "eyebrow": "Business names",
+    "featured": [
+      {
+        "key": "boutique",
+        "note": "Boutique names that are cute, catchy, French-chic or western, or built from your name or t."
+      },
+      {
+        "key": "candle_business",
+        "note": "Candle business names that are catchy, cute, funny, luxury, aesthetic or witchy, or built ."
+      },
+      {
+        "key": "clothing_brand",
+        "note": "Clothing brand names that are easy to remember: catchy puns, streetwear, Y2K, luxury, heri."
+      }
+    ],
+    "generators": [
+      "boutique",
+      "candle_business",
+      "clothing_brand",
+      "jewelry_business",
+      "brand"
+    ],
+    "startHeading": "Choose your kind of business",
+    "startIntro": "Pick the generator for your trade, then press Check on any name you like."
   }
 ]
