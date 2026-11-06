@@ -68,7 +68,13 @@
       "icon": "images/brand/category-business.webp",
       "hubs": [
         "concepts",
-        "organizations"
+        "organizations",
+        "biz_food",
+        "biz_beauty",
+        "biz_trades",
+        "biz_shops",
+        "biz_services",
+        "biz_care"
       ],
       "link": "categories/concepts-names.html"
     },

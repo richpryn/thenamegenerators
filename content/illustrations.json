@@ -27,7 +27,12 @@
     "music_genres": "jukebox",
     "animals": "dog",
     "worldbuilding": "compass-rose",
-    "writing": "quill"
+    "writing": "quill",
+    "biz_trades": "hammer",
+    "biz_services": "lightbulb",
+    "biz_care": "paw",
+    "biz_beauty": "hand",
+    "biz_food": "cookie"
   },
   "generators": {
     "ai": "robot",
@@ -325,6 +330,26 @@
     "colony": "dome-colony",
     "character_name": "mask",
     "last_name": "quill",
-    "group_name": "speech-bubble"
+    "group_name": "speech-bubble",
+    "photography_business": "film-reel",
+    "real_estate": "house",
+    "consulting": "lightbulb",
+    "event_planning": "bunting",
+    "dog_grooming": "paw",
+    "dog_walking": "dog",
+    "pet_sitting": "paw",
+    "home_care": "house",
+    "cleaning_business": "broom",
+    "construction_company": "hammer",
+    "landscaping": "leaf",
+    "lawn_care": "clover",
+    "hair_salon": "crown",
+    "beauty_salon": "rose",
+    "nail_salon": "hand",
+    "lash_business": "wings",
+    "bakery": "windmill",
+    "cake_business": "candle",
+    "cookie_business": "cookie",
+    "dessert_business": "cup"
   }
 }

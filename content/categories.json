@@ -2596,5 +2596,178 @@
         }
       ]
     }
+  },
+  {
+    "name": "Trades & Home Services Business Names",
+    "slug": "biz_trades",
+    "icon": "🧰",
+    "navLabel": "Trades & Home Services",
+    "heading": "Trade and Home Service Business Name Generators",
+    "seoTitle": "Trade Business Name Generators: Cleaning, Building, Garden",
+    "description": "Names for cleaners, builders, landscapers, plumbers and other trades, each with a check to see if it's free.",
+    "seoDescription": "Free business name generators for trades: cleaning, construction, landscaping, lawn care, plumbing, electrical and more, with a free name checker.",
+    "intro": "<p>A trade name ends up on a van, a quote and a review site, so it has to be easy to remember and sound like someone you'd trust in your home. These generators work trade by trade, from cleaning to construction, with catchy names for the van and classic ones for the quote. Add your town or your own name, the way most local firms are named.</p><p>Every name has a <b>Check</b> button: it opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>, which looks up the company register, domains, trade marks and social handles in one go.</p>",
+    "eyebrow": "Business names",
+    "featured": [
+      {
+        "key": "cleaning_business",
+        "note": "Cleaning business names in eight styles, from catchy puns and cute names to professional a."
+      },
+      {
+        "key": "construction_company",
+        "note": "Construction company and building business names: catchy, classic family firms, strong, mo."
+      },
+      {
+        "key": "landscaping",
+        "note": "Landscaping and gardening business names: catchy puns, classic, nature-inspired, modern an."
+      }
+    ],
+    "generators": [
+      "cleaning_business",
+      "construction_company",
+      "landscaping",
+      "lawn_care"
+    ],
+    "startHeading": "Choose your kind of business",
+    "startIntro": "Pick the generator for your trade, then press Check on any name you like."
+  },
+  {
+    "name": "Professional & Creative Business Names",
+    "slug": "biz_services",
+    "icon": "💼",
+    "navLabel": "Professional Services",
+    "heading": "Professional and Creative Business Name Generators",
+    "seoTitle": "Business Name Generators for Services, Agencies and Studios",
+    "description": "Names for consultants, photographers, estate agents, event planners and agencies, each with a check to see if it's free.",
+    "seoDescription": "Free business name generators for professional and creative services: consulting, photography, real estate, event planning and more.",
+    "intro": "<p>A service business sells trust before it sells anything else, so its name has to sound established from day one. These generators work by profession, from consulting to photography, with classic names built on surnames, modern one-word names and names from your own name or town. Every one is the kind of name that fits a website, a proposal and a LinkedIn page.</p><p>Every name has a <b>Check</b> button: it opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>, which looks up the company register, domains, trade marks and social handles in one go.</p>",
+    "eyebrow": "Business names",
+    "featured": [
+      {
+        "key": "consulting",
+        "note": "Consulting and consultancy business names for business, HR, IT, marketing, finance and hea."
+      },
+      {
+        "key": "event_planning",
+        "note": "Names for event planners and party planning businesses: catchy, cute, classic, modern, lux."
+      },
+      {
+        "key": "photography_business",
+        "note": "Photography business names for weddings, families, newborns and pets: catchy, cute, classi."
+      }
+    ],
+    "generators": [
+      "consulting",
+      "event_planning",
+      "photography_business",
+      "real_estate",
+      "business",
+      "company"
+    ],
+    "startHeading": "Choose your kind of business",
+    "startIntro": "Pick the generator for your trade, then press Check on any name you like."
+  },
+  {
+    "name": "Pets, Care & Learning Business Names",
+    "slug": "biz_care",
+    "icon": "🐾",
+    "navLabel": "Pets, Care & Learning",
+    "heading": "Pet, Care and Learning Business Name Generators",
+    "seoTitle": "Pet and Care Business Name Generators: Dogs, Care, Tutoring",
+    "description": "Names for dog groomers, dog walkers, pet sitters, home care agencies, nurseries and tutors, each with a check to see if it's free.",
+    "seoDescription": "Free business name generators for dog grooming, dog walking, pet sitting, home care and more, with a free business name checker.",
+    "intro": "<p>People hand you their pets, their parents or their children, so a care business name has to feel warm and trustworthy straight away. Pet names can be playful; care and learning names need to be kind and calm. These generators get the tone right for each, and most add your own name or town, which is how many trusted local services are named.</p><p>Every name has a <b>Check</b> button: it opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>, which looks up the company register, domains, trade marks and social handles in one go.</p>",
+    "eyebrow": "Business names",
+    "featured": [
+      {
+        "key": "dog_grooming",
+        "note": "Dog grooming business names for a salon, a home studio or a mobile van: catchy, cute, funn."
+      },
+      {
+        "key": "dog_walking",
+        "note": "Dog walking business names for a walker, a pack-walk round or a side hustle: catchy, cute."
+      },
+      {
+        "key": "home_care",
+        "note": "Names for a home care or domiciliary care agency: trusted, warm and caring, modern, faith-."
+      }
+    ],
+    "generators": [
+      "dog_grooming",
+      "dog_walking",
+      "home_care",
+      "pet_sitting"
+    ],
+    "startHeading": "Choose your kind of business",
+    "startIntro": "Pick the generator for your trade, then press Check on any name you like."
+  },
+  {
+    "name": "Beauty & Wellness Business Names",
+    "slug": "biz_beauty",
+    "icon": "💅",
+    "navLabel": "Beauty Businesses",
+    "heading": "Beauty and Wellness Business Name Generators",
+    "seoTitle": "Beauty Business Name Generators: Salon, Nails, Lashes",
+    "description": "Names for hair and beauty salons, nail techs, lash studios, spas and fitness businesses, each with a check to see if it's free.",
+    "seoDescription": "Free beauty business name generators: hair salon, beauty salon, nail salon, lash, spa, barber and more, with a free business name checker.",
+    "intro": "<p>Clients choose a salon on Instagram before they ever walk in, so a beauty business name needs to look good as a handle and feel right for your prices. These generators work trade by trade, from hair and nails to lashes and spas, in styles from cute and aesthetic to luxury. Add your own name for a name that grows with your client list.</p><p>Every name has a <b>Check</b> button: it opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>, which looks up the company register, domains, trade marks and social handles in one go.</p>",
+    "eyebrow": "Business names",
+    "featured": [
+      {
+        "key": "beauty_salon",
+        "note": "Beauty salon and beauty studio business names: catchy, classic, modern, luxury, aesthetic."
+      },
+      {
+        "key": "hair_salon",
+        "note": "Hair salon business names in seven styles, from catchy puns and classic hairdressers to lu."
+      },
+      {
+        "key": "lash_business",
+        "note": "Names for a lash tech, lash studio or lash and brow business: catchy, cute, modern, luxury."
+      }
+    ],
+    "generators": [
+      "beauty_salon",
+      "hair_salon",
+      "lash_business",
+      "nail_salon"
+    ],
+    "startHeading": "Choose your kind of business",
+    "startIntro": "Pick the generator for your trade, then press Check on any name you like."
+  },
+  {
+    "name": "Food & Drink Business Names",
+    "slug": "biz_food",
+    "icon": "🧁",
+    "navLabel": "Food & Drink Businesses",
+    "heading": "Food and Drink Business Name Generators",
+    "seoTitle": "Food Business Name Generators: Bakery, Café and More",
+    "description": "Names for bakeries, cake makers, food trucks, caterers, bars and cafés, each with a check to see if it's free.",
+    "seoDescription": "Free food and drink business name generators: bakery, cake, cookie, dessert, café, catering, food truck and more, with a free name checker.",
+    "intro": "<p>A food business name has to look good on a sign, a box and an Instagram grid, and say what you sell before anyone has tasted it. These generators work trade by trade, so a bakery gets bakery names and a food truck gets food truck names, in styles from cute and punny to classic and premium. Add your own name or town for names nobody else will have.</p><p>Every name has a <b>Check</b> button: it opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>, which looks up the company register, domains, trade marks and social handles in one go.</p>",
+    "eyebrow": "Business names",
+    "featured": [
+      {
+        "key": "bakery",
+        "note": "Bakery business name ideas in eight styles: catchy, cute, funny, classic, modern, French, ."
+      },
+      {
+        "key": "cake_business",
+        "note": "Names for a cake shop or home cake business in seven styles: catchy, cute, aesthetic, luxu."
+      },
+      {
+        "key": "cookie_business",
+        "note": "Names for a cookie business, shop or brand: catchy, cute, funny, one word, decorated cooki."
+      }
+    ],
+    "generators": [
+      "bakery",
+      "cake_business",
+      "cookie_business",
+      "dessert_business",
+      "cafe"
+    ],
+    "startHeading": "Choose your kind of business",
+    "startIntro": "Pick the generator for your trade, then press Check on any name you like."
   }
 ]

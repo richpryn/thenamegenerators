@@ -1,0 +1,539 @@
+{
+  "title": "Dog Walking Name Generator",
+  "seoTitle": "Dog Walking Name Generator: Business Name Ideas",
+  "slug": "dog-walking-name-generator",
+  "icon": "🦮",
+  "category": "biz_care",
+  "published": "2026-11-07",
+  "description": "Dog walking business names for a walker, a pack-walk round or a side hustle: catchy, cute, funny, trusted, modern, from your town or your name.",
+  "seoKeywords": "dog walking name generator, dog walking business names, dog walking business name ideas, dog walking business name generator, dog walker business names, dog walker names, dog walking company names, dog walking service name generator, pet walking business names, dog sitting business names, catchy dog walking business names, cute dog walking business names, funny dog walking business names, unique dog walking business names, dog walking business names for kids, dog walking business names uk, dog walking names not taken",
+  "isPopular": false,
+  "noun": "Dog Walking Business Names",
+  "noEcho": true,
+  "fixArticles": true,
+  "checkName": true,
+  "filters": {
+    "style": {
+      "label": "Style",
+      "options": [
+        "any",
+        "catchy",
+        "cute",
+        "funny",
+        "classic",
+        "modern",
+        "local",
+        "mine"
+      ],
+      "optionLabels": {
+        "any": "Any style",
+        "catchy": "Catchy and punny (Wag & Wander)",
+        "cute": "Cute and friendly (Happy Tails Dog Walking)",
+        "funny": "Funny (Leash Expectations)",
+        "classic": "Classic and trusted (Oakwood Dog Walking Services)",
+        "modern": "Unique and modern (Stride Dog Co.)",
+        "local": "From your town (Hampton Hounds)",
+        "mine": "From your name (Walks with Sarah)"
+      }
+    },
+    "town": {
+      "type": "text",
+      "label": "Your town or area",
+      "placeholder": "e.g. Hampton",
+      "default": "Hampton",
+      "example": "Hampton",
+      "showWhen": {
+        "style": [
+          "local"
+        ]
+      }
+    },
+    "name": {
+      "type": "text",
+      "label": "Your first name",
+      "placeholder": "e.g. Sarah",
+      "default": "Sarah",
+      "example": "Sarah",
+      "firstName": true,
+      "showWhen": {
+        "style": [
+          "mine"
+        ]
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "style",
+  "cases": {
+    "any": {
+      "recipe": "template",
+      "template": [
+        "[catchy.puns]",
+        "[catchy.puns]",
+        "[catchy.left] & [catchy.right]",
+        "[catchy.left] & [catchy.right] Dog Walking",
+        "[catchy.punWord] [trade]",
+        "[cute.adj] [cute.noun] [trade]",
+        "[cute.adj] [cute.noun]",
+        "[cute.sweet] Paws [trade]",
+        "[cute.sweet] Paws",
+        "The [cute.adj] Pup Walking Co.",
+        "[funny.list]",
+        "[funny.list]",
+        "[funny.adj] [funny.dog] Walking Club",
+        "The [funny.adj] [funny.dog]",
+        "[funny.adj] [funny.dog] Adventures",
+        "[funny.adj] [funny.dog] Dog Walking",
+        "[classic.place] [classic.trade]",
+        "[classic.place] [classic.trade]",
+        "[classic.surname]'s Dog Walking",
+        "[classic.surname] [classic.trade]",
+        "[modern.word]",
+        "[modern.word] Dog Co.",
+        "[modern.word] & Co.",
+        "[modern.word] Walks",
+        "[modern.word] Dog Walking",
+        "The [modern.word] Club",
+        "[modern.word] + Hound"
+      ]
+    },
+    "catchy": {
+      "recipe": "template",
+      "template": [
+        "[catchy.puns]",
+        "[catchy.puns]",
+        "[catchy.left] & [catchy.right]",
+        "[catchy.left] & [catchy.right] Dog Walking",
+        "[catchy.punWord] [trade]"
+      ]
+    },
+    "cute": {
+      "recipe": "template",
+      "template": [
+        "[cute.adj] [cute.noun] [trade]",
+        "[cute.adj] [cute.noun]",
+        "[cute.sweet] Paws [trade]",
+        "[cute.sweet] Paws",
+        "The [cute.adj] Pup Walking Co."
+      ]
+    },
+    "funny": {
+      "recipe": "template",
+      "template": [
+        "[funny.list]",
+        "[funny.list]",
+        "[funny.adj] [funny.dog] Walking Club",
+        "The [funny.adj] [funny.dog]",
+        "[funny.adj] [funny.dog] Adventures",
+        "[funny.adj] [funny.dog] Dog Walking"
+      ]
+    },
+    "classic": {
+      "recipe": "template",
+      "template": [
+        "[classic.place] [classic.trade]",
+        "[classic.place] [classic.trade]",
+        "[classic.surname]'s Dog Walking",
+        "[classic.surname] [classic.trade]"
+      ]
+    },
+    "modern": {
+      "recipe": "template",
+      "template": [
+        "[modern.word]",
+        "[modern.word] Dog Co.",
+        "[modern.word] & Co.",
+        "[modern.word] Walks",
+        "[modern.word] Dog Walking",
+        "The [modern.word] Club",
+        "[modern.word] + Hound"
+      ]
+    },
+    "local": {
+      "recipe": "template",
+      "template": [
+        "{town} Dog Walking",
+        "{town} Dog Walkers",
+        "{town} Pack Walks",
+        "{town} Dog Adventures",
+        "{town} Walkies",
+        "{town} [local.word]",
+        "{town} [local.word] Dog Walking",
+        "{town} [local.word] Walking Club",
+        "[cute.adj] [cute.noun] {town}",
+        "[cute.sweet] Paws {town}",
+        "Muddy Paws {town}",
+        "[cute.adj] [cute.noun] of {town}",
+        "{town} [local.word] Adventures"
+      ]
+    },
+    "mine": {
+      "recipe": "template",
+      "template": [
+        "{name}'s Dog Walking",
+        "{name}'s Walkies",
+        "Walks with {name}",
+        "{name} Walks Dogs",
+        "{name}'s Dog Walking Co.",
+        "Out & About with {name}",
+        "[cute.adj] [cute.noun] by {name}",
+        "{name}'s [cute.adj] [cute.noun]",
+        "{name}'s [local.word] Club",
+        "[cute.sweet] Paws by {name}",
+        "{name}'s Pack Walks",
+        "{name}'s Dog Adventures"
+      ]
+    }
+  },
+  "data": {
+    "trade": [
+      "Dog Walking",
+      "Dog Walkers",
+      "Dog Walks",
+      "Pack Walks",
+      "Dog Adventures",
+      "Walkies",
+      "Dog Walking Co.",
+      "Dog Care",
+      "Pet Care"
+    ],
+    "catchy": {
+      "puns": [
+        "Leash Expectations",
+        "Lead the Way Dog Walking",
+        "Pawsitive Steps",
+        "Pound the Pavement",
+        "Tails on Trails",
+        "Happy Trails Dog Walking",
+        "Have Leash, Will Travel",
+        "Pup & About",
+        "Out & About Dog Walking",
+        "Paws for a Walk",
+        "The Walking Pup",
+        "Walkie Talkie Dogs",
+        "Sniffari Dog Walks",
+        "Furry Footsteps",
+        "Mutts on a Mission",
+        "Doggone Walks",
+        "Wagabonds",
+        "Barks & Rec",
+        "Lead On Dog Walking",
+        "Get Up & Go Dog Walking",
+        "Muddy Boots Dog Walking",
+        "Pawprints & Footprints",
+        "Wag Along Dog Walking",
+        "Trot Along Dog Walking",
+        "Hound About Town",
+        "Bark Rangers",
+        "Step & Fetch",
+        "Round the Block Dog Walking",
+        "Every Step Counts Dog Walking",
+        "Strollin' Pups",
+        "Fresh Air Fido",
+        "Pawsome Strolls",
+        "The Daily Wag",
+        "Walk o'Clock",
+        "Paws & Pavements"
+      ],
+      "left": [
+        "Walk",
+        "Wag",
+        "Wander",
+        "Stroll",
+        "Sniff",
+        "Romp",
+        "Ramble",
+        "Roam",
+        "Trot",
+        "Strut",
+        "Scamper",
+        "Stride",
+        "Hike",
+        "Bound"
+      ],
+      "right": [
+        "Wander",
+        "Sniff",
+        "Play",
+        "Romp",
+        "Roam",
+        "Fetch",
+        "Run",
+        "Ramble",
+        "Explore",
+        "Stroll",
+        "Splash"
+      ],
+      "punWord": [
+        "Pawsitive",
+        "Wagabond",
+        "Pawsome",
+        "Sniffari",
+        "Pupventure",
+        "Furry Feet",
+        "Happy Strides",
+        "Pawprint",
+        "Leash & Lead",
+        "Waggy Walks"
+      ]
+    },
+    "cute": {
+      "adj": [
+        "Little",
+        "Happy",
+        "Fluffy",
+        "Waggy",
+        "Sunny",
+        "Snuggly",
+        "Sweet",
+        "Tiny",
+        "Fuzzy",
+        "Cuddly",
+        "Lucky",
+        "Jolly",
+        "Bonny",
+        "Furry",
+        "Cheery",
+        "Merry",
+        "Bouncy",
+        "Wiggly",
+        "Busy",
+        "Muddy"
+      ],
+      "noun": [
+        "Paws",
+        "Tails",
+        "Pups",
+        "Pooch",
+        "Pawprints",
+        "Woofers"
+      ],
+      "sweet": [
+        "Honey",
+        "Pudding",
+        "Daisy",
+        "Button",
+        "Buttercup",
+        "Pickle",
+        "Puddle",
+        "Biscuit",
+        "Toffee",
+        "Muffin",
+        "Peanut",
+        "Bramble",
+        "Pebble",
+        "Cookie",
+        "Poppy",
+        "Bluebell",
+        "Marshmallow",
+        "Cupcake",
+        "Jellybean",
+        "Sugar"
+      ]
+    },
+    "funny": {
+      "list": [
+        "Leash Expectations",
+        "Have Leash, Will Travel",
+        "Walkie Talkie Dogs",
+        "Barks & Rec",
+        "Mutts on a Mission",
+        "Hot Dog Walks",
+        "Zoomies Dog Walking",
+        "Who Walks Who?",
+        "Fur Miles Dog Walking",
+        "Tired Dog, Happy Home",
+        "Dogged Determination",
+        "Hound Around Town",
+        "Bark Rangers",
+        "Pupkin Spice Walks",
+        "The Sniff Report",
+        "Doggy Paddle Walks",
+        "Fur & Mud Walking Co.",
+        "Walkies & Talkies",
+        "Mud, Sweat & Paws",
+        "Walk It Off Dog Walking",
+        "Are We There Yet? Dog Walks",
+        "Paws on the Ground"
+      ],
+      "adj": [
+        "Muddy",
+        "Soggy",
+        "Scruffy",
+        "Mucky",
+        "Grubby",
+        "Shaggy",
+        "Hungry",
+        "Bouncy",
+        "Zoomy",
+        "Sniffy",
+        "Barky",
+        "Waggly",
+        "Wiggly",
+        "Sleepy"
+      ],
+      "dog": [
+        "Mutts",
+        "Pups",
+        "Hounds",
+        "Pooches",
+        "Doggos"
+      ]
+    },
+    "classic": {
+      "place": [
+        "Northgate",
+        "Oakwood",
+        "Ashdown",
+        "Hillside",
+        "Riverside",
+        "Meadowbrook",
+        "Parkside",
+        "Greenway",
+        "Brookfield",
+        "Fernhill",
+        "Elmwood",
+        "Southgate",
+        "Highfield",
+        "Woodside",
+        "Fairfield",
+        "Beechwood",
+        "Hawthorn",
+        "Willowbrook",
+        "Millbrook",
+        "Stonebridge",
+        "Ashgrove",
+        "Rosewood",
+        "Cedarwood",
+        "Larkfield",
+        "Kingsmead",
+        "Foxhill",
+        "Oakfield",
+        "Thornbury",
+        "Westbrook",
+        "Hollybank",
+        "Brookside",
+        "Heathfield",
+        "Orchard",
+        "Valley",
+        "Greenfield",
+        "Juniper Hill"
+      ],
+      "surname": [
+        "Hartley",
+        "Fletcher",
+        "Bennett",
+        "Ashworth",
+        "Whitmore",
+        "Holloway",
+        "Prescott",
+        "Langley",
+        "Thornton",
+        "Mercer",
+        "Calloway",
+        "Sinclair",
+        "Hollis",
+        "Archer",
+        "Ellison",
+        "Lawson",
+        "Kendall",
+        "Ainsley",
+        "Barrett",
+        "Hadley",
+        "Whitfield",
+        "Sutton",
+        "Radley",
+        "Rowley",
+        "Dalton",
+        "Beckett",
+        "Lockwood",
+        "Whitaker",
+        "Cartwright",
+        "Atherton",
+        "Brampton",
+        "Fairbrother",
+        "Ashby",
+        "Pemberton",
+        "Hargreaves",
+        "Marlow"
+      ],
+      "trade": [
+        "Dog Walking",
+        "Dog Walking Services",
+        "Dog Walkers",
+        "Pet Care",
+        "Dog Care",
+        "Dog Services"
+      ]
+    },
+    "modern": {
+      "word": [
+        "Lead",
+        "Leash",
+        "Stride",
+        "Trail",
+        "Roam",
+        "Stroll",
+        "Romp",
+        "Ramble",
+        "Pack",
+        "Wander",
+        "Pace",
+        "Trot",
+        "Sniff",
+        "Hike",
+        "Collar",
+        "Loop",
+        "Route",
+        "Path",
+        "Step",
+        "Tread",
+        "Heel",
+        "Bound",
+        "Scout",
+        "Hound",
+        "Ranger",
+        "Compass",
+        "Yonder",
+        "Gait",
+        "Lope",
+        "Muddy",
+        "Fieldside",
+        "Ridge",
+        "Meadow",
+        "Bracken",
+        "Wellies"
+      ]
+    },
+    "local": {
+      "word": [
+        "Paws",
+        "Tails",
+        "Pups",
+        "Hounds",
+        "Mutts",
+        "Pawprints",
+        "Pooches",
+        "Waggers"
+      ]
+    }
+  },
+  "article": {
+    "hero": {
+      "title": "🦮 Dog Walking Name Generator",
+      "tagline": "Names for dog walkers, pack walks and doggy adventures, from Wag & Wander to Leash Expectations."
+    },
+    "intro": "Your name goes on the van, the flyers through doors and the lead clipped to every dog, so it should be friendly and easy to remember. This **Dog Walking Name Generator** has names in seven styles, from catchy puns to trusted local names and ones built from your own name.",
+    "sections": [],
+    "faqs": [
+      {
+        "question": "How do I check a dog walking name is free?",
+        "answer": "Press **Check** on any name to see whether it's free as a company name, a domain and a social media handle. Before you commit, search the official registers too: in the UK, Companies House; in the US, your state's business register and the USPTO trade mark search."
+      },
+      {
+        "question": "What is a good dog walking business name for kids?",
+        "answer": "Keep it simple and honest: your first name plus what you do, such as <em>Sam's Dog Walking</em> or <em>Walks with Sam</em>, is easy for neighbours to remember and trust. Pick the <strong>From your name</strong> or <strong>Cute and friendly</strong> style, and ask a parent to help with flyers and payments."
+      }
+    ]
+  }
+}

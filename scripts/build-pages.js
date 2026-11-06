@@ -1765,7 +1765,7 @@ function makeSite({ categories, generators, homepage, sisterLinks = { boxes: [] 
     // content/homepage.json "groups": the eight homepage tiles, each with its
     // generators (every generator in its hubs, plus extras, counted once)
     homeGroups: () => (homepage.groups || []).map(gr => {
-      const keys = new Set([...(gr.hubs || []).flatMap(slug => categories.find(c => c.slug === slug).generators), ...(gr.extra || [])]);
+      const keys = new Set([...(gr.hubs || []).flatMap(slug => ((categories.find(c => c.slug === slug) || {}).generators || [])), ...(gr.extra || [])]);
       const gens = [...keys].map(k => generators[k]).filter(Boolean);
       return { ...gr, generators: gens, count: gens.length + (gr.pages || []).length };
     }),
