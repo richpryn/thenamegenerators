@@ -379,6 +379,10 @@
     "handyman_business": "hammer",
     "hvac_business": "flame",
     "pressure_washing_business": "waves",
-    "car_detailing_business": "street"
+    "car_detailing_business": "street",
+    "graphic_design_business": "pencil",
+    "web_design_business": "old-tv",
+    "wedding_planner": "ring",
+    "travel_agency": "globe"
   }
 }
