@@ -53,6 +53,7 @@ function generateCheckerPage(site, { escapeHtml, scriptJson, ICON_LINKS, AUTHOR 
     formation: cfg.formation,
     logo: cfg.logo,
     usStates: cfg.usStates,
+    usLive: cfg.usLive,
     registers: cfg.registers,
     tradeMarks: cfg.tradeMarks,
   };

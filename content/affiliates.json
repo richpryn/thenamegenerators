@@ -34,23 +34,383 @@
       "affiliate": false
     }
   },
-  "usStates": [],
-  "registers": {},
+  "usStates": [
+    {
+      "code": "AL",
+      "name": "Alabama",
+      "url": "https://arc-sos.state.al.us/CGI/CORPNAME.MBR/INPUT",
+      "template": "https://arc-sos.state.al.us/cgi/corpname.mbr/output?search={q}&type=ALL&status=ALL&place=ALL&city="
+    },
+    {
+      "code": "AK",
+      "name": "Alaska",
+      "url": "https://www.commerce.alaska.gov/cbp/main/search/entities",
+      "template": null
+    },
+    {
+      "code": "AZ",
+      "name": "Arizona",
+      "url": "https://arizonabusinesscenter.azcc.gov/EntitySearch/Index",
+      "template": null
+    },
+    {
+      "code": "AR",
+      "name": "Arkansas",
+      "url": "https://sos-corp-search.ark.org/corps",
+      "template": null
+    },
+    {
+      "code": "CA",
+      "name": "California",
+      "url": "https://bizfileonline.sos.ca.gov/search/business",
+      "template": null
+    },
+    {
+      "code": "CO",
+      "name": "Colorado",
+      "url": "https://www.coloradosos.gov/biz/BusinessEntityCriteriaExt.do",
+      "template": null
+    },
+    {
+      "code": "CT",
+      "name": "Connecticut",
+      "url": "https://service.ct.gov/business/s/onlinebusinesssearch?language=en_US",
+      "template": null
+    },
+    {
+      "code": "DE",
+      "name": "Delaware",
+      "url": "https://icis.corp.delaware.gov/ecorp/entitysearch/namesearch.aspx",
+      "template": null
+    },
+    {
+      "code": "DC",
+      "name": "District of Columbia",
+      "url": "https://boss.dc.gov/",
+      "template": null
+    },
+    {
+      "code": "FL",
+      "name": "Florida",
+      "url": "https://search.sunbiz.org/Inquiry/CorporationSearch/ByName",
+      "template": "https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResults?inquiryType=EntityName&searchTerm={q}"
+    },
+    {
+      "code": "GA",
+      "name": "Georgia",
+      "url": "https://ecorp.sos.ga.gov/BusinessSearch",
+      "template": null
+    },
+    {
+      "code": "HI",
+      "name": "Hawaii",
+      "url": "https://hbe.ehawaii.gov/documents/search.html",
+      "template": null
+    },
+    {
+      "code": "ID",
+      "name": "Idaho",
+      "url": "https://sosbiz.idaho.gov/search/business",
+      "template": null
+    },
+    {
+      "code": "IL",
+      "name": "Illinois",
+      "url": "https://apps.ilsos.gov/businessentitysearch/",
+      "template": null
+    },
+    {
+      "code": "IN",
+      "name": "Indiana",
+      "url": "https://bsd.sos.in.gov/publicbusinesssearch",
+      "template": null
+    },
+    {
+      "code": "IA",
+      "name": "Iowa",
+      "url": "https://sos.iowa.gov/search/business/search.aspx",
+      "template": null
+    },
+    {
+      "code": "KS",
+      "name": "Kansas",
+      "url": "https://www.sos.ks.gov/eforms/BusinessEntity/Search.aspx",
+      "template": null
+    },
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "url": "https://sosbes.sos.ky.gov/BusSearchNProfile/search.aspx",
+      "template": null
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "url": "https://coraweb.sos.la.gov/commercialsearch/commercialsearch.aspx",
+      "template": null
+    },
+    {
+      "code": "ME",
+      "name": "Maine",
+      "url": "https://apps3.web.maine.gov/nei-sos-icrs/ICRS?MainPage=x",
+      "template": null
+    },
+    {
+      "code": "MD",
+      "name": "Maryland",
+      "url": "https://egov.maryland.gov/BusinessExpress/EntitySearch",
+      "template": null
+    },
+    {
+      "code": "MA",
+      "name": "Massachusetts",
+      "url": "https://corp.sec.state.ma.us/corpweb/corpsearch/CorpSearch.aspx",
+      "template": null
+    },
+    {
+      "code": "MI",
+      "name": "Michigan",
+      "url": "https://mibusinessregistry.lara.state.mi.us/search/business",
+      "template": null
+    },
+    {
+      "code": "MN",
+      "name": "Minnesota",
+      "url": "https://mblsportal.sos.mn.gov/Business/Search",
+      "template": "https://mblsportal.sos.mn.gov/Business/BusinessSearch?BusinessName={q}&IncludePriorNames=False&Status=Active&Type=BeginsWith"
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "url": "https://corp.sos.ms.gov/corp/portal/c/page/corpBusinessIdSearch/portal.aspx",
+      "template": null
+    },
+    {
+      "code": "MO",
+      "name": "Missouri",
+      "url": "https://bsd.sos.mo.gov/BusinessEntity/BESearch.aspx?SearchType=0",
+      "template": null
+    },
+    {
+      "code": "MT",
+      "name": "Montana",
+      "url": "https://biz.sosmt.gov/search/business",
+      "template": null
+    },
+    {
+      "code": "NE",
+      "name": "Nebraska",
+      "url": "https://www.nebraska.gov/sos/corp/corpsearch.cgi",
+      "template": null
+    },
+    {
+      "code": "NV",
+      "name": "Nevada",
+      "url": "https://orion.nv.gov/portal/public/",
+      "template": null
+    },
+    {
+      "code": "NH",
+      "name": "New Hampshire",
+      "url": "https://quickstart.sos.nh.gov/online/BusinessInquire",
+      "template": null
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "url": "https://www.njportal.com/DOR/BusinessNameSearch/Search/BusinessName",
+      "template": null
+    },
+    {
+      "code": "NM",
+      "name": "New Mexico",
+      "url": "https://enterprise.sos.nm.gov/search/business",
+      "template": null
+    },
+    {
+      "code": "NY",
+      "name": "New York",
+      "url": "https://apps.dos.ny.gov/publicInquiry/",
+      "template": null
+    },
+    {
+      "code": "NC",
+      "name": "North Carolina",
+      "url": "https://www.sosnc.gov/online_services/search/by_title/_Business_Registration",
+      "template": null
+    },
+    {
+      "code": "ND",
+      "name": "North Dakota",
+      "url": "https://firststop.sos.nd.gov/search/business",
+      "template": null
+    },
+    {
+      "code": "OH",
+      "name": "Ohio",
+      "url": "https://businesssearch.ohiosos.gov/",
+      "template": null
+    },
+    {
+      "code": "OK",
+      "name": "Oklahoma",
+      "url": "https://www.sos.ok.gov/corp/corpinquiryfind.aspx",
+      "template": null
+    },
+    {
+      "code": "OR",
+      "name": "Oregon",
+      "url": "https://sos.oregon.gov/business/pages/find.aspx",
+      "template": null
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "url": "https://file.dos.pa.gov/search/business",
+      "template": null
+    },
+    {
+      "code": "RI",
+      "name": "Rhode Island",
+      "url": "https://business.sos.ri.gov/CorpWeb/CorpSearch/CorpSearch.aspx",
+      "template": null
+    },
+    {
+      "code": "SC",
+      "name": "South Carolina",
+      "url": "https://businessfilings.sc.gov/BusinessFiling/Entity/Search",
+      "template": null
+    },
+    {
+      "code": "SD",
+      "name": "South Dakota",
+      "url": "https://sosenterprise.sd.gov/BusinessServices/Business/FilingSearch.aspx",
+      "template": null
+    },
+    {
+      "code": "TN",
+      "name": "Tennessee",
+      "url": "https://tncab.tnsos.gov/business-entity-search",
+      "template": null
+    },
+    {
+      "code": "TX",
+      "name": "Texas",
+      "url": "https://comptroller.texas.gov/taxes/franchise/account-status/search",
+      "template": null
+    },
+    {
+      "code": "UT",
+      "name": "Utah",
+      "url": "https://businessregistration.utah.gov/EntitySearch/OnlineEntitySearch",
+      "template": null
+    },
+    {
+      "code": "VT",
+      "name": "Vermont",
+      "url": "https://bizfilings.vermont.gov/online/BusinessInquire/",
+      "template": null
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "url": "https://cis.scc.virginia.gov/EntitySearch/Index",
+      "template": null
+    },
+    {
+      "code": "WA",
+      "name": "Washington",
+      "url": "https://ccfs.sos.wa.gov/#/BusinessSearch",
+      "template": null
+    },
+    {
+      "code": "WV",
+      "name": "West Virginia",
+      "url": "https://apps.wv.gov/SOS/BusinessEntitySearch/",
+      "template": null
+    },
+    {
+      "code": "WI",
+      "name": "Wisconsin",
+      "url": "https://apps.dfi.wi.gov/apps/corpSearch/Search.aspx",
+      "template": null
+    },
+    {
+      "code": "WY",
+      "name": "Wyoming",
+      "url": "https://wyobiz.wyo.gov/Business/FilingSearch.aspx",
+      "template": null
+    }
+  ],
+  "registers": {
+    "ca": [
+      {
+        "name": "Corporations Canada (federal companies)",
+        "url": "https://ised-isde.canada.ca/cc/lgcy/fdrlCrpSrch.html?lang=eng",
+        "note": "Provinces keep their own registers too."
+      }
+    ],
+    "au": [
+      {
+        "name": "ABN Lookup (business and company names)",
+        "url": "https://abr.business.gov.au/",
+        "template": "https://abr.business.gov.au/Search/ResultsActive?SearchText={q}"
+      },
+      {
+        "name": "ASIC registers search",
+        "url": "https://connectonline.asic.gov.au/RegistrySearch/faces/landing/SearchRegisters.jspx"
+      }
+    ],
+    "ie": [
+      {
+        "name": "CRO company search",
+        "url": "https://core.cro.ie/search"
+      }
+    ],
+    "nz": [
+      {
+        "name": "NZ Companies Office",
+        "url": "https://app.companiesoffice.govt.nz/companies/app/ui/pages/companies/search",
+        "template": "https://app.companiesoffice.govt.nz/companies/app/ui/pages/companies/search?q={q}&mode=standard&type=entities&advancedPanel=false"
+      }
+    ],
+    "other": [
+      {
+        "name": "OpenCorporates (companies worldwide)",
+        "url": "https://opencorporates.com/",
+        "template": "https://opencorporates.com/companies?q={q}"
+      }
+    ]
+  },
   "tradeMarks": [
     {
       "name": "UK IPO trade mark search",
       "url": "https://trademarks.ipo.gov.uk/ipo-tmtext",
       "countries": [
-        "uk",
-        "other"
+        "uk"
       ]
     },
     {
       "name": "USPTO trademark search",
-      "url": "https://tmsearch.uspto.gov/",
+      "url": "https://tmsearch.uspto.gov/search/search-results",
+      "note": "Type the name into the search box.",
       "countries": [
         "us",
         "other"
+      ]
+    },
+    {
+      "name": "Canadian Trademarks Database",
+      "url": "https://ised-isde.canada.ca/cipo/trademark-search/srch?lang=eng",
+      "countries": [
+        "ca"
+      ]
+    },
+    {
+      "name": "IP Australia trade mark search",
+      "url": "https://search.ipaustralia.gov.au/trademarks/search/quick",
+      "countries": [
+        "au"
       ]
     },
     {
@@ -64,7 +424,35 @@
     },
     {
       "name": "WIPO Global Brand Database (worldwide)",
-      "url": "https://branddb.wipo.int/"
+      "url": "https://branddb.wipo.int/",
+      "template": "https://branddb.wipo.int/en/quicksearch?by=brandName&v={q}"
     }
-  ]
+  ],
+  "usLive": {
+    "CO": {
+      "url": "https://data.colorado.gov/resource/4ykn-tg5h.json",
+      "field": "entityname",
+      "status": "entitystatus"
+    },
+    "NY": {
+      "url": "https://data.ny.gov/resource/n9v6-gdp6.json",
+      "field": "current_entity_name",
+      "statusText": "Active"
+    },
+    "OR": {
+      "url": "https://data.oregon.gov/resource/tckn-sxa6.json",
+      "field": "business_name",
+      "statusText": "Active"
+    },
+    "CT": {
+      "url": "https://data.ct.gov/resource/n7gp-d28j.json",
+      "field": "name",
+      "status": "status"
+    },
+    "TX": {
+      "url": "https://data.texas.gov/resource/9cir-efmm.json",
+      "field": "taxpayer_name",
+      "statusText": "Active"
+    }
+  }
 }
