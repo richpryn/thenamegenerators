@@ -371,6 +371,14 @@
     "catering_business": "bunting",
     "restaurant": "shopfront",
     "food_truck": "street",
-    "ice_cream_business": "cup"
+    "ice_cream_business": "cup",
+    "daycare": "star",
+    "tutoring": "lamp",
+    "therapy_practice": "leaf-moon",
+    "nonprofit": "hand",
+    "handyman_business": "hammer",
+    "hvac_business": "flame",
+    "pressure_washing_business": "waves",
+    "car_detailing_business": "street"
   }
 }

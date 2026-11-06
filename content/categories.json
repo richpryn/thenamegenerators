@@ -2630,7 +2630,11 @@
       "lawn_care",
       "painting_business",
       "plumbing_business",
-      "roofing_company"
+      "roofing_company",
+      "car_detailing_business",
+      "hvac_business",
+      "handyman_business",
+      "pressure_washing_business"
     ],
     "startHeading": "Try these name generators",
     "startIntro": "Use these tools to name a cleaning, building, garden, plumbing, electrical, roofing or painting business.",
@@ -2799,7 +2803,11 @@
       "dog_grooming",
       "dog_walking",
       "home_care",
-      "pet_sitting"
+      "pet_sitting",
+      "daycare",
+      "nonprofit",
+      "therapy_practice",
+      "tutoring"
     ],
     "startHeading": "Try these name generators",
     "startIntro": "Use these tools to name a pet business or a care agency.",
