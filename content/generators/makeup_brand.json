@@ -212,8 +212,6 @@
         "Face First",
         "Blush & Bashful",
         "Shade Card",
-        "Swatch This",
-        "Swatch Out",
         "Contour Club",
         "Shadow Play",
         "Gloss Up",
@@ -898,7 +896,7 @@
         "{name}'s Glow Kit",
         "{name} Beauty House",
         "{name}'s Palette Box",
-        "The {name} Lip Company",
+        "{name} Lip Company",
         "{name} Pout Co."
       ]
     }

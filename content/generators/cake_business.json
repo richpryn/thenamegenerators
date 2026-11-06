@@ -792,7 +792,7 @@
         "Piped by {name}",
         "{name} Bakes",
         "{name} & Co. Cakes",
-        "The {name} Cake Co.",
+        "{name} Cake Co.",
         "Cake by {name}",
         "{name}'s Cake Tin",
         "{name}'s Cake Stand",
@@ -803,7 +803,7 @@
         "{name}'s Cakes & Co.",
         "{name}'s Sugar Studio",
         "{name}'s Little Cake Co.",
-        "The {name} Cake Studio",
+        "{name} Cake Studio",
         "Cakes at {name}'s"
       ]
     }

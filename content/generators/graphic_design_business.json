@@ -228,7 +228,6 @@
         "Small Caps",
         "Bold & Italic",
         "Hex Code",
-        "Swatch Book",
         "Halftone",
         "Duotone",
         "Letterpress",
@@ -571,7 +570,6 @@
         "Bracket",
         "Comma",
         "Crease",
-        "Swatch",
         "Outline",
         "Marque",
         "Set Square",
@@ -759,7 +757,7 @@
         "studio": [
           "Studio {name} Design",
           "{name} & Co. Design",
-          "The {name} Studio",
+          "{name} Studio",
           "{name} Design Group",
           "{name}'s Studio",
           "{name} Creative House"

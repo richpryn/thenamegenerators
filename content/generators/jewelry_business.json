@@ -166,7 +166,7 @@
       "template": [
         "{name}'s [mine.goods]",
         "[mine.by] by {name}",
-        "The {name} [mine.material] [mine.materialEnd]",
+        "{name} [mine.material] [mine.materialEnd]",
         "{name}'s [mine.material] [mine.materialEnd]",
         "{name} & [mine.pair]",
         "[mine.fixed]"

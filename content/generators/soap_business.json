@@ -172,7 +172,7 @@
         "[mine.by] by {name}",
         "{name} [mine.plain]",
         "{name}'s [mine.kind] [mine.kindEnd]",
-        "The {name} [mine.kind] [mine.kindEnd]",
+        "{name} [mine.kind] [mine.kindEnd]",
         "[mine.fixed]"
       ]
     }
@@ -1091,7 +1091,7 @@
         "Little {name} Soap Co.",
         "Simply {name} Soap",
         "{name}'s Little Soap Kitchen",
-        "The {name} Soap Company",
+        "{name} Soap Company",
         "Soap by {name} & Co.",
         "{name}'s Bubble Bar",
         "{name}'s Soap Dish",

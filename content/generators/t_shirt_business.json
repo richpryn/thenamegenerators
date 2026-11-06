@@ -154,7 +154,7 @@
         "[mine.by] by {name}",
         "{name} [mine.plain]",
         "{name}'s [mine.kind] [mine.kindEnd]",
-        "The {name} [mine.kind] [mine.kindEnd]",
+        "{name} [mine.kind] [mine.kindEnd]",
         "[mine.fixed]"
       ]
     }
@@ -532,7 +532,6 @@
         "Batch",
         "Misprint",
         "Proof",
-        "Swatch",
         "Plate",
         "Stencil",
         "Inkwell",
@@ -931,8 +930,8 @@
         "Studio {name} Prints",
         "{name}'s Print Corner",
         "{name}'s Tee Corner",
-        "The {name} Press",
-        "The {name} Print Company",
+        "{name} Press",
+        "{name} Print Company",
         "{name} Made This",
         "Team {name} Tees",
         "{name} on a Tee"

@@ -187,7 +187,6 @@
         "{name} [mine.middle] [trade.{field}]",
         "{name} [mine.middle] [trade.{field}]",
         "{name} [mine.middle] [trade.{field}]",
-        "{name} [trade.{field}]",
         "{name}'s [trade.{field}]",
         "[mine.by.{field}]"
       ]
@@ -905,7 +904,6 @@
         "Brook",
         "Lark",
         "Reed",
-        "Moss",
         "Hill",
         "Rivers",
         "Sage",

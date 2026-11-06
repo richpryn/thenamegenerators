@@ -165,7 +165,7 @@
       "template": [
         "{name}'s [mine.goods]",
         "[mine.byThing] by {name}",
-        "The {name} [mine.material] [mine.materialEnd]",
+        "{name} [mine.material] [mine.materialEnd]",
         "{name}'s [mine.material] [mine.materialEnd]",
         "[mine.fixed]"
       ]
@@ -385,7 +385,6 @@
         "Button",
         "Rib",
         "Purl",
-        "Swatch",
         "Cloth",
         "Hanger",
         "Uniform",
@@ -951,7 +950,7 @@
         "Maison {name}",
         "Atelier {name}",
         "{name} Atelier",
-        "The {name} Label",
+        "{name} Label",
         "Wear {name}",
         "Simply {name}",
         "Made by {name}",

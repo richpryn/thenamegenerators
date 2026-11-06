@@ -147,7 +147,7 @@
         "[mine.by] by {name}",
         "{name} [mine.plain]",
         "{name}'s [mine.kind] [mine.kindEnd]",
-        "The {name} [mine.kind] [mine.kindEnd]",
+        "{name} [mine.kind] [mine.kindEnd]",
         "[mine.fixed]"
       ]
     }
@@ -767,7 +767,7 @@
         "{name}'s Hook & Yarn",
         "Little {name} Crochet",
         "{name} Loves Crochet",
-        "The {name} Crochet Company",
+        "{name} Crochet Company",
         "Yarn & {name}",
         "{name} & Co. Crochet",
         "Simply {name} Crochet",

@@ -200,7 +200,7 @@
             "[mine.byShape] {name}",
             "{name}'s [mine.quality] [mine.qservice]",
             "{name} [mine.family] [mine.fservice]",
-            "The {name} Plumbing Co.",
+            "{name} Plumbing Co.",
             "{name} the Plumber"
           ]
         }
@@ -290,7 +290,7 @@
             "[mine.byShape] {name} – [taglines]",
             "{name}'s [mine.quality] [mine.qservice] – [taglines]",
             "{name} [mine.family] [mine.fservice] – [taglines]",
-            "The {name} Plumbing Co. – [taglines]",
+            "{name} Plumbing Co. – [taglines]",
             "{name} the Plumber – [taglines]"
           ]
         }
@@ -916,7 +916,6 @@
         "Reliance",
         "Assured",
         "Benchmark",
-        "Hallmark",
         "Sterling",
         "Pinnacle",
         "Keystone",

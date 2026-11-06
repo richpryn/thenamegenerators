@@ -174,7 +174,7 @@
         "{name}'s [mine.trade]",
         "{name} [mine.trade]",
         "{name}'s [mine.adj] [mine.adjTrade]",
-        "The {name} [mine.theTrade]",
+        "{name} [mine.theTrade]",
         "{name} & Co. [mine.coTrade]",
         "{name}'s [mine.spec] [mine.room]"
       ]
@@ -469,7 +469,6 @@
         "Blend",
         "Prime",
         "Liner",
-        "Swatch",
         "Stipple",
         "Primer",
         "Lipline",
