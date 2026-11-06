@@ -1095,9 +1095,30 @@
       "title": "🍸 Bar Name Generator",
       "tagline": "Names for a pub, cocktail bar, wine bar or speakeasy, from Glass Act to The Velvet Room."
     },
-    "intro": "A bar name has to work on a sign over the door, a menu and a booking page. This **bar name generator** gives you names for a pub, cocktail bar, wine bar or speakeasy in eight styles, from punny to classy, including ones built from your town or your own name.",
-    "sections": [],
+    "intro": "A good bar name matches the room: a pub-style name (<em>The Partridge & Lantern</em>), something mysterious for a speakeasy (<em>No. 14 Printer's Yard</em>), or a pun for a neighbourhood bar (<em>Stool & Story</em>). This **bar name generator** gives you names for a pub, cocktail bar, wine bar or speakeasy in eight styles, from punny to classy, including ones built from your town or your own name.",
+    "sections": [
+      {
+        "heading": "Eight good bar names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>The Partridge & Lantern</strong>: two things joined with \"and\", the oldest pub-name pattern.</li><li><strong>The Rendell Arms</strong>: \"Arms\" comes from a coat of arms on the sign.</li><li><strong>No. 14 Printer's Yard</strong>: an address, the speakeasy way of hiding in plain sight.</li><li><strong>Gimlet Cocktail House</strong>: named after a classic cocktail.</li><li><strong>Carafe & Rind</strong>: wine and cheese in two words.</li><li><strong>Brass & Coupe</strong>: a classy pair of materials and glassware.</li><li><strong>Stool & Story</strong>: a friendly pun for a neighbourhood bar.</li><li><strong>Pour Social</strong>: short and modern, easy to book.</li></ul>"
+      },
+      {
+        "heading": "What makes a bar name work",
+        "content": "<p>The name sets the price and the mood before anyone opens the menu:</p><ul><li><strong>Pubs</strong> use the old sign-board shapes: an animal or object, two things joined with \"and\", or \"Arms\".</li><li><strong>Cocktail bars and speakeasies</strong> often use an address or a classic cocktail (gimlet, sidecar, Americano), which hints at what's on the list.</li><li><strong>Wine bars</strong> lean on corks, cellars and carafes; <em>enoteca</em> is the Italian word for a wine bar.</li><li><strong>Neighbourhood bars</strong> can be punny, as long as the joke survives being said every time someone books a table.</li></ul><p>In England and Wales, a bar selling alcohol needs a premises licence from the council under the Licensing Act 2003, with a Designated Premises Supervisor who holds a personal licence. In the US, liquor licences are issued by each state.</p><p>Naming a tavern for a fantasy story or a D&amp;D game instead? Try the <a href=\"tavern-name-generator.html\">Tavern Name Generator</a> or the <a href=\"haunted-pub-name-generator.html\">Haunted Pub Name Generator</a>.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Press <strong>Check</strong> next to any name, or paste it into the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to see whether the domain and social handles are free. Then search the company register (Companies House in the UK, your state's business register in the US) and the trade mark register for your kind of business. Drinks names are crowded with trade marks, so check the name in the classes for bars and for drinks if you might sell your own.</p><p>This is general guidance, not legal advice. For the full process, read <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>"
+      },
+      {
+        "heading": "Tips for bar owners",
+        "content": "<ul><li><strong>Say it when booking.</strong> \"A table at Stool and Story for four\" should be easy over the phone.</li><li><strong>Think about the sign.</strong> Pub names were made to be painted; one strong image still works best.</li><li><strong>Room to change.</strong> A name tied to one drink can feel narrow if the menu grows.</li></ul><p>Taking the bar on the road? See the <a href=\"mobile-bar-name-generator.html\">Mobile Bar Name Generator</a>. For your own beer, the <a href=\"brewery-name-generator.html\">Brewery Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_food-names.html\">food and drink business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good bar names?",
+        "answer": "It depends on the bar: pub-style names like The Partridge & Lantern, address names like No. 14 Printer's Yard for a speakeasy, or puns like Stool & Story for a neighbourhood bar. Choose a style in the generator for more of each."
+      },
       {
         "question": "How do I check a bar name is free?",
         "answer": "Press <strong>Check</strong> on any name to see whether it's free as a company name, a domain and a social media handle. Before you commit, search the official registers too: in the UK, Companies House and the UK trade mark register; in the US, your state's business register and the USPTO trade mark search. Look on a map app for businesses with the same name nearby."
@@ -1105,6 +1126,10 @@
       {
         "question": "What makes a good bar name?",
         "answer": "Match the name to the room. A pub suits a traditional shape (<em>The Hop Pole</em>, <em>The Ashby Arms</em>); a cocktail bar or speakeasy can be mysterious (<em>No. 9 Mill Lane</em>); a wine bar can lean on corks and cellars; a neighbourhood bar can be punny (<em>Glass Act</em>). Keep it short enough to say when booking a table, and check nobody nearby trades under it."
+      },
+      {
+        "question": "Is this a fantasy tavern name generator?",
+        "answer": "No, this one is for real bars. For fantasy and D&D taverns, use the Tavern Name Generator or the Haunted Pub Name Generator."
       }
     ]
   }

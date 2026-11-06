@@ -169,12 +169,25 @@
       "title": "🚚 Trucking Company Name Generator",
       "tagline": "Names for a trucking, haulage or logistics firm, from Loadstar Freight to Hartley & Sons Haulage."
     },
-    "intro": "Name your business with this **Trucking Company Name Generator**: for owner-operators, haulage firms, logistics companies and hotshot or box truck businesses. Pick a style and kind of work, or add your first name or town.",
-    "sections": [],
+    "intro": "Good trucking company names are short enough to read on a moving truck and easy to say to a dispatcher: a family name (<em>Pearce &amp; Sons Transport</em>), initials (<em>N&amp;S Freight</em>) or a road word (<em>Milepost Trucking</em>). Name your business with this **Trucking Company Name Generator**: for owner-operators, haulage firms, logistics companies and hotshot or box truck businesses. Pick a style and kind of work, or add your first name or town.",
+    "sections": [
+      {
+        "heading": "Eight good trucking company names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Pearce &amp; Sons Transport</strong>: the classic family-firm name, painted on cab doors for generations.</li><li><strong>N&amp;S Freight</strong>: initials are short, easy to letter and easy to say on the radio.</li><li><strong>Milepost Trucking</strong>: a road word that makes a clean logo.</li><li><strong>Gearbox Haulage</strong>: short, mechanical and British-sounding.</li><li><strong>Dawn Run Transport Co.</strong>: suggests early starts and on-time deliveries.</li><li><strong>Ten Four Transport</strong>: CB radio slang for \"message received\".</li><li><strong>Wheel Be There Haulage</strong>: a pun that also makes a promise.</li><li><strong>Hampton &amp; District Transport</strong>: a local name for a firm that serves its area.</li></ul>"
+      },
+      {
+        "heading": "Trucking, haulage or logistics?",
+        "content": "<p>The words carry a country with them. \"Trucking\" and \"Freight Lines\" sound American; \"Haulage\" and \"Carriers\" sound British; \"Transport\", \"Freight\" and \"Logistics\" work in both. \"Logistics\" suggests you organise movement and storage as well as drive. Choose the kind of work to get the right words: Trucking (US), Haulage (UK), Logistics and freight, or Hotshot and box truck.</p><p><strong>Rules that affect your name:</strong> in the US, a carrier operating under a USDOT number must show its legal name or a single trade name and its USDOT number on both sides of the vehicle, so decide on the name before you register. In the UK, operating goods vehicles over 3.5 tonnes for business needs an operator's licence (O-licence) from the Traffic Commissioner, in the business's name.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Every name here has a Check button. Press it before you order business cards, and run through these yourself:</p><ul><li><strong>The company register:</strong> Companies House in the UK, or your state's business register in the US.</li><li><strong>Trade marks:</strong> search the UK IPO or USPTO for the same or a similar name in your field.</li><li><strong>Domains and handles:</strong> a matching .co.uk or .com, and the same handle on the platforms your clients use.</li><li><strong>Big carriers and makers:</strong> keep clear of the names of large hauliers, parcel firms and truck manufacturers, and of \"Royal Mail\" and \"Post Office\".</li></ul><p>The <a href=\"../business-name-checker.html\">Business Name Checker</a> runs the first checks for you, and <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a> explains them in more detail. This is general guidance, not legal advice.</p><p>For local removals rather than freight, try the <a href=\"moving-company-name-generator.html\">Moving Company Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_services-names.html\">professional and creative business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
       {
-        "question": "How do I check a trucking company name is free?",
-        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse customers."
+        "question": "What are good trucking company names?",
+        "answer": "Short names that read on a moving truck: a family name (Pearce & Sons Transport), initials (N&S Freight), a road word (Milepost Trucking) or a light pun (Wheel Be There Haulage)."
       },
       {
         "question": "What should I name my trucking company?",
@@ -182,7 +195,11 @@
       },
       {
         "question": "Does my truck have to show the business name?",
-        "answer": "In the US, trucks run under a USDOT number must show the carrier's legal name or one trade name and the USDOT number on both sides, and the name must match your FMCSA registration, so choose it before you apply for your operating authority. In the UK, goods vehicles over 3.5 tonnes need an operator's licence in the business's name. Avoid \"Royal Mail\", \"Post Office\" and \"Royal\", and keep clear of big carriers' and truck makers' names."
+        "answer": "In the US, carriers operating under a USDOT number must show their legal name or one trade name and the USDOT number on both sides of the vehicle, so choose the name before you register. In the UK, goods vehicles over 3.5 tonnes used for business need an operator's licence in the business's name. Keep clear of big carriers' and truck makers' names, and of Royal Mail and Post Office."
+      },
+      {
+        "question": "How do I check a trucking company name is free?",
+        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse customers."
       }
     ]
   },

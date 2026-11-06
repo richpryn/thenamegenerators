@@ -1174,9 +1174,30 @@
       "title": "🌸 Perfume Brand Name Generator",
       "tagline": "Names for a perfume or fragrance brand, from Maison Plume to Dar Al Misk."
     },
-    "intro": "Launching a fragrance line, a perfume oil range or a decant shop? This **perfume brand name generator** has names in eight styles, from French and quiet luxury to cologne and oud, ready to check before you order bottles.",
-    "sections": [],
+    "intro": "A good perfume brand name sounds like a house, a place or a feeling, and is easy to say at a counter: a French word, a founder's surname, or a note like oud or vetiver. Launching a fragrance line, a perfume oil range or a decant shop? This **perfume brand name generator** has names in eight styles, from French and quiet luxury to cologne and oud, ready to check before you order bottles.",
+    "sections": [
+      {
+        "heading": "Eight good perfume brand names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Vickers & Hart</strong>: a quiet-luxury name, like an old London perfumer.</li><li><strong>Brume Blanche</strong>: French for white mist.</li><li><strong>Sillage Clair</strong>: sillage is the trail a scent leaves behind.</li><li><strong>Basenote Fragrances</strong>: a perfumer's word for a modern, niche label.</li><li><strong>Eau Happy Day Perfumes</strong>: a catchy pun for social media.</li><li><strong>Timber & Leather</strong>: two classic cologne notes.</li><li><strong>Zahra Attar House</strong>: an attar is a perfume oil; zahra means flower in Arabic.</li><li><strong>Mandarin by Sarah</strong>: your name with a note.</li></ul>"
+      },
+      {
+        "heading": "Perfume words worth knowing",
+        "content": "<ul><li><strong>Strengths:</strong> from strongest to lightest, parfum (or extrait), eau de parfum, eau de toilette and eau de cologne. Each has a lower share of perfume oil than the one before.</li><li><strong>Eau de Cologne</strong> takes its name from the German city of Cologne, where it was made in the 1700s.</li><li><strong>Notes:</strong> top notes are what you smell first, heart notes come next and base notes, such as musk and vetiver, last longest. The <em>drydown</em> is how a scent settles on skin.</li><li><strong>Oud</strong> comes from agarwood, and an <strong>attar</strong> is a perfume oil, so the <em>Oud and Arabian</em> style uses both.</li><li><strong>Maison</strong> (house) and <strong>Parfums</strong> are the usual French ways to start or end a name.</li></ul>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Before you pay for a logo, labels or a stall banner, press <strong>Check</strong> on the name you like, or paste it into the <a href=\"../business-name-checker.html\">Business Name Checker</a>. It looks for:</p><ul><li><strong>Company names:</strong> in the UK, Companies House won't register a limited company name that's the same as one already on the register. In the US, check your state's business register.</li><li><strong>Trade marks:</strong> search the UK Intellectual Property Office and, if you sell abroad, the USPTO. A registered company name doesn't give you trade mark rights.</li><li><strong>Web and social:</strong> the .com or .co.uk, plus the Instagram, TikTok and Etsy handles fragrance customers will look for.</li></ul><p>Fragrances are cosmetic products in the UK, so before you sell, each one needs a safety assessment, a UK Responsible Person and notification through the government's cosmetic notification service, with ingredients listed on the label. Keep the name clear of big fashion houses and their famous perfume names.</p><p>This is general guidance, not legal advice. For the full checklist, read <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>"
+      },
+      {
+        "heading": "Tips for a fragrance brand",
+        "content": "<ul><li><strong>Name the house, then the scents.</strong> The brand name stays the same while each perfume gets its own name.</li><li><strong>Check the name without accents</strong> for web addresses and handles.</li><li><strong>Say it out loud.</strong> If people can't pronounce a French name, they'll struggle to search for it.</li></ul><p>Making candles or skincare too? Try the <a href=\"candle-business-name-generator.html\">Candle Business Name Generator</a> or the <a href=\"skincare-brand-name-generator.html\">Skincare Brand Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_shops-names.html\">shop and brand business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good perfume brand names?",
+        "answer": "Names that sound like a house or a feeling: Vickers & Hart for quiet luxury, Brume Blanche or Sillage Clair in French, Timber & Leather for cologne, or Zahra Attar House for oud and attars."
+      },
       {
         "question": "How do I check a perfume brand name is free?",
         "answer": "Press <strong>Check</strong> on any name to see whether it is free as a company name, a web address and a social media handle. In the UK, search the Companies House register; in the US, search your state's business register and the USPTO trade mark search. Do this before you pay for a logo, labels or signage."
@@ -1184,6 +1205,10 @@
       {
         "question": "What are good French words for a perfume brand?",
         "answer": "Short words that are easy to say in English work best: <em>Sillage</em> (the trail a scent leaves), <em>Velours</em> (velvet), <em>Plume</em> (feather), <em>Lune</em> (moon) and <em>Soir</em> (evening). <em>Maison</em> (house) and <em>Parfums</em> are the usual ways to start or end the name. Keep the accents in your logo but check the name without them for domains and handles."
+      },
+      {
+        "question": "What's the difference between eau de parfum and eau de toilette?",
+        "answer": "Eau de parfum has a higher share of perfume oil than eau de toilette, so it's usually stronger and lasts longer. Parfum (extrait) is stronger still, and eau de cologne the lightest."
       }
     ]
   }

@@ -166,16 +166,37 @@
       "title": "🎬 Video Production Name Generator",
       "tagline": "Names for a video production company or videographer, from That's a Wrap Productions to Sarah Mae Films."
     },
-    "intro": "Name your company with this **Video Production Name Generator**: for video production companies, freelance and wedding videographers, and film production companies. Pick a style and the kind of work you do, or add your first name or town.",
-    "sections": [],
+    "intro": "Good video production names are short, easy to say on the phone and look good as an end card: a film-set phrase like <em>Take Two Films</em>, a single craft word like <em>Rushes</em>, or your own name with \"Films\". Name your company with this **Video Production Name Generator**: for video production companies, freelance and wedding videographers, and film production companies. Pick a style and the kind of work you do, or add your first name or town.",
+    "sections": [
+      {
+        "heading": "Eight good video production names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Take Two Films</strong>: a film-set phrase anyone recognises.</li><li><strong>Rushes Film Co.</strong>: rushes are a day's unedited footage, a word only crews use.</li><li><strong>Bokeh Productions</strong>: the soft background blur of a fast lens.</li><li><strong>Tripod Pictures</strong>: a simple piece of kit that makes a clean logo.</li><li><strong>Elderflower Films</strong>: a soft, aesthetic name for weddings.</li><li><strong>Late Summer Motion</strong>: a mood rather than a word, for Instagram.</li><li><strong>The Edit Room</strong>: a classic name for a post-production studio.</li><li><strong>Films by Sarah</strong>: a personal name couples trust with their wedding.</li></ul>"
+      },
+      {
+        "heading": "Naming a production company",
+        "content": "<p>Video businesses split into two kinds of name. Production companies working with brands want something short and craft-literate: a film-set word (rushes, dolly, gaffer, splice), a phrase (\"That's a Wrap\", \"Take Two\") or a surname with \"Productions\". Wedding and event videographers sell themselves, so their own name with \"Films\" usually works best, perhaps with a soft aesthetic word for Instagram.</p><ul><li><strong>Productions</strong> sounds like a company with crews and clients.</li><li><strong>Films</strong> sounds personal or cinematic.</li><li><strong>Media</strong> suggests video plus photography, social and design.</li></ul>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Every name here has a Check button. Press it before you order business cards, and run through these yourself:</p><ul><li><strong>The company register:</strong> Companies House in the UK, or your state's business register in the US.</li><li><strong>Trade marks:</strong> search the UK IPO or USPTO for the same or a similar name in your field.</li><li><strong>Domains and handles:</strong> a matching .co.uk or .com, and the same handle on the platforms your clients use.</li><li><strong>Video platforms:</strong> check the name is free as a YouTube, Vimeo and Instagram handle, as clients will look there first.</li></ul><p>The <a href=\"../business-name-checker.html\">Business Name Checker</a> runs the first checks for you, and <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a> explains them in more detail. This is general guidance, not legal advice.</p><p>Shooting stills as well? Try the <a href=\"photography-business-name-generator.html\">Photography Business Name Generator</a>, and for the couples you film, the <a href=\"wedding-planner-name-generator.html\">Wedding Planner Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_services-names.html\">professional and creative business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
       {
-        "question": "How do I check a video production company name is free?",
-        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse customers."
+        "question": "What are good video production company names?",
+        "answer": "Short, craft-literate names: a film-set phrase (Take Two Films), a crew word (Rushes Film Co., Bokeh Productions), or your own name with Films for wedding work (Films by Sarah)."
       },
       {
         "question": "What are creative names for a video production company?",
         "answer": "The best ones are short, easy to say on the phone and look good as an end card. Film-set phrases (\"That's a Wrap Productions\", \"Second Take Media\") show you know the craft; a single craft word (\"Sprocket Films\", \"Gaffer Media\") makes a clean logo; wedding videographers often use their own name with \"Films\" (\"Sarah Mae Films\"), which couples trust. Check the name works as a YouTube, Vimeo and Instagram handle too."
+      },
+      {
+        "question": "Should I use Productions, Films or Media?",
+        "answer": "Productions sounds like a company with crews and clients, Films sounds personal or cinematic and suits wedding videographers, and Media suggests video alongside photography, social content and design."
+      },
+      {
+        "question": "How do I check a video production company name is free?",
+        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse customers."
       }
     ]
   },

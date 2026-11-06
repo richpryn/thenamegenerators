@@ -851,9 +851,30 @@
       "title": "🍹 Mobile Bar Name Generator",
       "tagline": "Names for a horsebox bar, prosecco van or mobile bartending business, from Tow & Tonic to Betty the Horsebox."
     },
-    "intro": "Your name goes on the van, the quote and the wedding supplier list. This **mobile bar name generator** gives you names for a horsebox bar, prosecco van, bar cart or mobile bartending service in eight styles, including ones built from your town or your own name.",
-    "sections": [],
+    "intro": "Good mobile bar names are fun to say at a wedding and fit on the side of a horsebox: a pun (<em>Hitched & Poured Bar Co.</em>), a cute name for the van itself (<em>Daisy the Bar Cart</em>) or something classy (<em>The Gold Leaf Wedding Bar</em>). This **mobile bar name generator** gives you names for a horsebox bar, prosecco van, bar cart or mobile bartending service in eight styles, including ones built from your town or your own name.",
+    "sections": [
+      {
+        "heading": "Eight good mobile bar names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Hitched & Poured Bar Co.</strong>: a wedding pun that tells planners what you do.</li><li><strong>Fizz in a Field</strong>: perfect for outdoor weddings and festivals.</li><li><strong>Daisy the Bar Cart</strong>: a name for the vehicle itself, which guests remember.</li><li><strong>The Dinky Prosecco Van</strong>: cute and clear for small parties.</li><li><strong>The Gold Leaf Wedding Bar</strong>: classy enough for a luxury wedding supplier list.</li><li><strong>Hatch & Shaker</strong>: modern, from the serving hatch and the cocktail shaker.</li><li><strong>Gin in a Horsebox</strong>: says exactly what you are.</li><li><strong>Clean Pour Bar & Events</strong>: a professional name for a bartending service.</li></ul>"
+      },
+      {
+        "heading": "What makes a mobile bar name work",
+        "content": "<p>Your name goes on quotes, supplier lists and the vehicle, so it has to work in all three:</p><ul><li><strong>Name the vehicle</strong> (horsebox, prosecco van, tuk tuk, bar cart) because that's what couples and planners search for.</li><li><strong>Give the van a name</strong>, like a pet. It makes the bar the star of the photos.</li><li><strong>Weddings or corporate?</strong> Romantic and fizzy names suit weddings; a plain surname name suits office parties and conferences.</li></ul><p>In England and Wales, selling alcohol at an event usually needs either the venue's premises licence or a Temporary Event Notice, and a personal licence helps. In the US, rules vary by state and many events use the caterer's or venue's licence, so check locally.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Press <strong>Check</strong> next to any name, or paste it into the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to see whether the domain and social handles are free. Then search the company register (Companies House in the UK, your state's business register in the US) and the trade mark register for your kind of business. Wedding suppliers trade on Instagram, so make sure the handle is free before you letter the horsebox.</p><p>This is general guidance, not legal advice. For the full process, read <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>"
+      },
+      {
+        "heading": "Tips for mobile bars",
+        "content": "<ul><li><strong>Big, simple lettering</strong> reads in the background of every wedding photo.</li><li><strong>Avoid drink brands.</strong> Names of real gins or proseccos are trade marks.</li><li><strong>Cover the area you serve</strong> in your bio, so planners know you'll travel.</li></ul><p>Opening a fixed bar too? See the <a href=\"bar-name-generator.html\">Bar Name Generator</a>. For food at the same events, the <a href=\"food-truck-name-generator.html\">Food Truck</a> and <a href=\"catering-business-name-generator.html\">Catering Business</a> name generators.</p><p>For more, see all the <a href=\"../categories/biz_food-names.html\">food and drink business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good names for a mobile bar?",
+        "answer": "Puns about towing, horses and weddings (Hitched & Poured Bar Co., Fizz in a Field), a pet name for the van (Daisy the Bar Cart), or a classy wedding name like The Gold Leaf Wedding Bar."
+      },
       {
         "question": "How do I check a mobile bar name is free?",
         "answer": "Press <strong>Check</strong> on any name to see whether it's free as a company name, a domain and a social media handle. Before you commit, search the official registers too: in the UK, Companies House and the UK trade mark register; in the US, your state's business register and the USPTO trade mark search. Look on a map app for businesses with the same name nearby."
@@ -861,6 +882,10 @@
       {
         "question": "What are catchy names for a mobile bartending business?",
         "answer": "Puns about towing, horses and weddings work well for horsebox bars and prosecco vans (<em>Tow &amp; Tonic</em>, <em>Bridle &amp; Bubbles</em>), and a cute name for the van itself is easy to remember (<em>Betty the Horsebox</em>). For corporate events, a plain name with your surname reads as professional (<em>Ashby Bar Services</em>). Say what you do in your bio and on the van, so couples and planners can find you."
+      },
+      {
+        "question": "Do I need a licence for a mobile bar?",
+        "answer": "Usually, yes. In England and Wales you'll normally need the venue's premises licence or a Temporary Event Notice to sell alcohol. Check the rules where you trade, as they differ in Scotland and in each US state."
       }
     ]
   }

@@ -710,9 +710,30 @@
       "title": "🧢 Streetwear Brand Name Generator",
       "tagline": "Names for a streetwear label, from Issue 04 to Night Owls Collective."
     },
-    "intro": "Planning your first drop, a skate label or a crew that makes clothes? This **streetwear brand name generator** gives you names in eight styles, from drop culture to luxury streetwear, and you can check each one is free before you order blanks.",
-    "sections": [],
+    "intro": "A good streetwear brand name is short, works as a chest print or a neck label, and sounds like a crew, a drop or a skate trick rather than a shop. Planning your first drop, a skate label or a crew that makes clothes? This **streetwear brand name generator** gives you names in eight styles, from drop culture to luxury streetwear, and you can check each one is free before you order blanks.",
+    "sections": [
+      {
+        "heading": "Eight good streetwear brand names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>No Restock Clothing</strong>: drop culture in three words: buy it now or miss it.</li><li><strong>Test Press Supply Co.</strong>: a small first run, named like a record.</li><li><strong>Noseslide Club</strong>: a skate trick that skaters will recognise straight away.</li><li><strong>Quarter Pipe Wear</strong>: skate ramp language for a skate label.</li><li><strong>Grail Hunters Dept.</strong>: hype language with a department-store twist.</li><li><strong>Night Owls Collective</strong>: sounds like a crew that also makes clothes.</li><li><strong>Atelier Pewter</strong>: quiet luxury: a French workshop word and a metal colour.</li><li><strong>Hampton vs Everybody</strong>: a local name with attitude.</li></ul>"
+      },
+      {
+        "heading": "How streetwear names work",
+        "content": "<p>Streetwear grew out of surf, skate and hip-hop, and the names still sound like it. Supreme opened as a skate shop in New York in 1994, and Palace started as a London skate crew before it was a brand. The labels people chase tend to share a few habits:</p><ul><li><strong>Crew names:</strong> Club, Society, Collective, Union. The brand sounds like something you belong to.</li><li><strong>Drop language:</strong> limited releases are part of the appeal, so words like <em>Waitlist</em>, <em>One Run</em> and <em>Archive</em> work.</li><li><strong>Utility words:</strong> Supply, Goods, Dept. and Uniform Co. make a small label sound established.</li><li><strong>Numbers:</strong> a year, a postcode or a drop number, as in <em>Sarah 31</em>, for a name that looks good on a tag.</li></ul><p>Choose <strong>With my name</strong> or <strong>From my town</strong> to build it around you or where you're from.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Before you pay for a logo, labels or a stall banner, press <strong>Check</strong> on the name you like, or paste it into the <a href=\"../business-name-checker.html\">Business Name Checker</a>. It looks for:</p><ul><li><strong>Company names:</strong> in the UK, Companies House won't register a limited company name that's the same as one already on the register. In the US, check your state's business register.</li><li><strong>Trade marks:</strong> search the UK Intellectual Property Office and, if you sell abroad, the USPTO. A registered company name doesn't give you trade mark rights.</li><li><strong>Web and social:</strong> the .com or .co.uk, plus the Instagram, TikTok and Etsy handles streetwear customers will look for.</li></ul><p>Clothing sits in trade mark class 25, one of the most crowded classes there is, so a trade mark search matters more here than in most trades. Keep well away from big labels' names and logos.</p><p>This is general guidance, not legal advice. For the full checklist, read <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>"
+      },
+      {
+        "heading": "Making it work on a garment",
+        "content": "<ul><li><strong>Test it as a print.</strong> Mock it up as a chest print, a back print and a woven label before you order.</li><li><strong>Keep the handle short.</strong> Drops sell on Instagram and TikTok, so a long name becomes a clumsy handle.</li><li><strong>Leave room to grow.</strong> A name tied to one design or one joke can feel stuck after a few drops.</li></ul><p>For a wider clothing label, try the <a href=\"clothing-brand-name-generator.html\">Clothing Brand Name Generator</a>; for printed tees, the <a href=\"t-shirt-business-name-generator.html\">T-Shirt Business Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_shops-names.html\">shop and brand business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good streetwear brand names?",
+        "answer": "Short names that sound like a crew, a drop or a skate trick: No Restock Clothing, Noseslide Club, Night Owls Collective or Atelier Pewter for a luxury feel. Pick a style to get names like these."
+      },
       {
         "question": "How do I check a streetwear brand name is free?",
         "answer": "Press <strong>Check</strong> on any name to see whether it is free as a company name, a web address and a social media handle. In the UK, search the Companies House register; in the US, search your state's business register and the USPTO trade mark search. Do this before you pay for a logo, labels or signage."
@@ -720,6 +741,10 @@
       {
         "question": "What makes a good streetwear brand name?",
         "answer": "Short, easy to say and good on a chest print or a neck label. Streetwear names often sound like a crew (<em>Night Owls Collective</em>), a catalogue number (<em>Issue 04</em>) or a skate term (<em>Grip Tape Goods</em>). Stay well clear of the big labels and their logos: Supreme, Palace and Stüssy guard their names closely, and clothing is a crowded trade mark class."
+      },
+      {
+        "question": "Should a streetwear brand have numbers in its name?",
+        "answer": "It can work well: a year, a drop number or a postcode looks good on a tag and is harder for someone else to have already. Check the handle is free, as short number names are popular."
       }
     ]
   }

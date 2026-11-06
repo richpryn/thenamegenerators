@@ -185,16 +185,37 @@
       "title": "🧺 Laundromat Name Generator",
       "tagline": "Names for a laundromat, launderette or laundry service, from Lint Condition Laundry to The Old Wash House."
     },
-    "intro": "Name your shop with this **Laundromat Name Generator**: for laundromats and launderettes (or laundrettes, as many UK shops spell it), wash and fold and delivery services, and dry cleaners. Pick a style and your kind of laundry, or add your first name or town.",
-    "sections": [],
+    "intro": "Good laundromat names are short enough for a shop sign and say what you do: a pun like <em>Lint Condition Laundry</em>, a cosy name like <em>Pegs &amp; Mittens</em>, or a street or family name with \"Launderette\". Name your shop with this **Laundromat Name Generator**: for laundromats and launderettes (or laundrettes, as many UK shops spell it), wash and fold and delivery services, and dry cleaners. Pick a style and your kind of laundry, or add your first name or town.",
+    "sections": [
+      {
+        "heading": "Eight good laundromat names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Lint Condition Laundry Co.</strong>: a pun on \"mint condition\" that people remember.</li><li><strong>Pressing Matters Laundry</strong>: a double meaning that suits dry cleaning.</li><li><strong>Spin &amp; Grin Laundrette</strong>: cheerful and easy to say.</li><li><strong>Pegs &amp; Mittens Laundrette</strong>: a cosy name for a friendly neighbourhood shop.</li><li><strong>Fold Service Laundry</strong>: a pun on \"full service\" for wash and fold.</li><li><strong>Linden Laundry &amp; Dry Cleaning</strong>: a classic name that lists both services.</li><li><strong>Washline Laundromat</strong>: a clean modern one-word name.</li><li><strong>Hampton Street Wash House</strong>: an old-fashioned word with a local feel.</li></ul>"
+      },
+      {
+        "heading": "Laundromat, launderette or wash house?",
+        "content": "<p>The word tells customers where they are. \"Laundromat\" and \"Coin Laundry\" are American; \"Launderette\" (often spelt \"laundrette\") is the British word for a self-service laundry; \"Wash House\" recalls the public wash houses of Victorian towns; \"Wash &amp; Fold\" means a service where staff do the washing; \"Dry Cleaners\" means professional cleaning and pressing. Choose your kind of laundry and the generator uses the right words.</p><p>Puns on suds, spin and folding work well on a sign, but read them aloud before you commit: laundry jokes can slide into double meanings, and \"laundering\" means something else entirely.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Every name here has a Check button. Press it before you order business cards, and run through these yourself:</p><ul><li><strong>The company register:</strong> Companies House in the UK, or your state's business register in the US.</li><li><strong>Trade marks:</strong> search the UK IPO or USPTO for the same or a similar name in your field.</li><li><strong>Domains and handles:</strong> a matching .co.uk or .com, and the same handle on the platforms your clients use.</li><li><strong>Your street:</strong> look at nearby laundries on a map, as two similar names a few streets apart confuse customers.</li></ul><p>The <a href=\"../business-name-checker.html\">Business Name Checker</a> runs the first checks for you, and <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a> explains them in more detail. This is general guidance, not legal advice.</p><p>Offering home or office cleaning too? Try the <a href=\"cleaning-business-name-generator.html\">Cleaning Business Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_services-names.html\">professional and creative business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
       {
-        "question": "How do I check a laundromat name is free?",
-        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse customers."
+        "question": "What are good laundromat names?",
+        "answer": "Short names that read on a sign and say what you do: a pun (Lint Condition Laundry Co.), a cosy name (Pegs & Mittens Laundrette) or a local one (Hampton Street Wash House)."
       },
       {
         "question": "What is a good name for a laundromat?",
         "answer": "A good laundry name is short enough to read on a shop sign from across the street and tells people what you do: \"Laundromat\" or \"Coin Laundry\" in the US, \"Launderette\" in the UK, \"Wash & Fold\" for a service, \"Dry Cleaners\" for pressing. Puns on socks, suds and folding (\"Lint Condition Laundry\") are remembered and shared; a family or street name (\"Hartley's Dry Cleaners\") feels established. Read any pun aloud before you commit: laundry jokes can slide into double meanings, and \"laundering\" means something else entirely."
+      },
+      {
+        "question": "What's the difference between a laundromat and a launderette?",
+        "answer": "Nothing but the country. Laundromat is the American word for a self-service laundry and launderette (or laundrette) the British one. Wash and fold is a service where staff do the washing, and a dry cleaner cleans and presses clothes professionally."
+      },
+      {
+        "question": "How do I check a laundromat name is free?",
+        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse customers."
       }
     ]
   },

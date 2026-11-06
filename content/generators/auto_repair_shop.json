@@ -14,9 +14,30 @@
       "title": "🔧 Auto Repair Shop Name Generator",
       "tagline": "Names for mechanics and garages, from Torque of the Town to Hartley & Sons Motors."
     },
-    "intro": "Opening a garage, a repair shop or a mobile mechanic business? This **auto repair shop name generator** has catchy and funny puns, classic family garage names, short modern names and names for mobile mechanics, plus names from your town or first name.",
-    "sections": [],
+    "intro": "Good auto repair shop names sound trustworthy and local: a family name (<em>The Kingsway Garage</em>), a plain promise (<em>Steady Wheels Garage</em>) or a light pun people remember (<em>Oil's Well Motors</em>). This **auto repair shop name generator** has catchy and funny puns, classic family garage names, short modern names and names for mobile mechanics, plus names from your town or first name.",
+    "sections": [
+      {
+        "heading": "Eight good auto repair shop names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>The Kingsway Garage</strong>: a road name and \"Garage\", the classic British shape.</li><li><strong>Rigby Auto Works</strong>: a surname with Auto Works, solid and dependable.</li><li><strong>Steady Wheels Garage</strong>: a plain promise customers want to hear.</li><li><strong>Oil's Well Motors</strong>: a gentle pun on \"all's well\".</li><li><strong>Spanner Planner Garage</strong>: a rhyme that sticks.</li><li><strong>Kickdown Mechanics</strong>: a driving term, for a modern workshop.</li><li><strong>Mechanic at Your Door</strong>: says exactly what a mobile mechanic does.</li><li><strong>Sarah & Daughters Car Repairs</strong>: a family business name with a twist.</li></ul>"
+      },
+      {
+        "heading": "What makes a garage name work",
+        "content": "<p>People pick a mechanic they trust, often in a hurry, so clarity beats cleverness:</p><ul><li><strong>Say what you are.</strong> In the UK, \"Garage\", \"Motors\" or \"Vehicle Services\" reads naturally; in the US, \"Auto Repair\" or \"Auto Shop\".</li><li><strong>Family and place names</strong> (<em>Rigby Auto Works</em>, <em>The Bramley Garage</em>) suggest a business that will still be there when the car needs its next service.</li><li><strong>Puns</strong> work best on a van or a sign, as long as they stay friendly.</li><li><strong>Mobile mechanics</strong> should put \"mobile\" or \"at your door\" in the name, because that's what customers search for.</li></ul><p>If you'll carry out MOT tests in Great Britain, the garage must be approved by the DVSA as a test station, so only mention MOTs once you are. In the US, ASE certification is voluntary but widely recognised.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Press <strong>Check</strong> next to any name, or paste it into the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to see whether the domain and social handles are free. Then search the company register (Companies House in the UK, your state's business register in the US) and the trade mark register for your kind of business. Search a map app for your town too: two garages with the same name a few miles apart will confuse customers and reviews.</p><p>This is general guidance, not legal advice. For the full process, read <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>"
+      },
+      {
+        "heading": "Tips for garages",
+        "content": "<ul><li><strong>Keep it short for the sign.</strong> Garage signs are read from the road.</li><li><strong>Match your Google profile.</strong> Most customers find a mechanic through maps, so use the exact same name there.</li><li><strong>Avoid car brands.</strong> Names like Ford or BMW in your business name can infringe their trade marks, even if you specialise in them.</li></ul><p>Valeting or detailing as well? Try the <a href=\"car-detailing-business-name-generator.html\">Car Detailing Business Name Generator</a>. For other trades, see the <a href=\"handyman-business-name-generator.html\">Handyman</a> and <a href=\"moving-company-name-generator.html\">Moving Company</a> name generators.</p><p>For more, see all the <a href=\"../categories/biz_trades-names.html\">trades and home services business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good auto repair shop names?",
+        "answer": "Plain, trustworthy names such as The Kingsway Garage or Rigby Auto Works, or a friendly pun like Oil's Well Motors. In the UK, Garage or Motors reads more naturally than Auto Repair."
+      },
       {
         "question": "How do I check an auto repair shop name is free?",
         "answer": "Press <strong>Check</strong> next to any name to see if it's free as a company, a domain and a social media handle. Then make sure: in the UK, search Companies House and the UK IPO trade mark register; in the US, search your state's business register and the USPTO trade mark search. A quick map search for the name in your area helps too."
@@ -24,6 +45,10 @@
       {
         "question": "What is a good name for a mechanic shop?",
         "answer": "Customers want a mechanic they can trust, so plain, solid names work best: <em>Hartley & Sons Motors</em>, <em>Northgate Garage</em> or <em>Gary's Auto Repair</em>. A light pun such as <em>Torque of the Town</em> helps people remember you. In the UK, &ldquo;Garage&rdquo; or &ldquo;Motors&rdquo; reads more naturally than &ldquo;Auto Repair&rdquo;. Choose <strong>Catchy</strong> or <strong>Funny</strong> in the Style menu for puns."
+      },
+      {
+        "question": "Can I use a car brand in my garage's name?",
+        "answer": "It's best not to. Car makers' names are trade marks, and using one can suggest you're an official dealer. Say \"specialist\" in your description instead, and check with an adviser if unsure."
       }
     ]
   },

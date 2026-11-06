@@ -893,9 +893,30 @@
       "title": "🏺 Pottery Business Name Generator",
       "tagline": "Names for a potter, a ceramics brand or a clay studio, from Dressed to Kiln to The Old Forge Pottery."
     },
-    "intro": "Selling mugs at markets, opening a clay studio or running pottery painting parties? This **pottery business name generator** has ceramics names in seven styles, ready to check before you stamp your pots.",
-    "sections": [],
+    "intro": "A good pottery business name is warm, handmade and short enough for a maker's stamp: a clay pun, a homely object, or a studio name for classes and pottery painting. Selling mugs at markets, opening a clay studio or running pottery painting parties? This **pottery business name generator** has ceramics names in seven styles, ready to check before you stamp your pots.",
+    "sections": [
+      {
+        "heading": "Eight good pottery business names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Coil & Trouble Ceramics</strong>: a pun on coil pots and Macbeth's witches.</li><li><strong>Glaze Days Pottery</strong>: a cheerful pun that suits a studio.</li><li><strong>The Smiley Milk Jug</strong>: cute and homely.</li><li><strong>Plum & Slip</strong>: slip is liquid clay, so it's a potter's in-joke.</li><li><strong>Saggar</strong>: a saggar is a box that protects pots in the kiln: short and modern.</li><li><strong>The Old Coach House Pottery</strong>: a classic name tied to a building.</li><li><strong>Try the Wheel</strong>: a studio name that tells beginners what to do.</li><li><strong>Sarah & Kiln</strong>: your name and the potter's oven.</li></ul>"
+      },
+      {
+        "heading": "Clay words that make good names",
+        "content": "<ul><li><strong>Kaolin</strong> is china clay, named after Gaoling, a hill in China where it was mined.</li><li><strong>Slip</strong> is clay thinned with water, used to join and decorate.</li><li><strong>Bisque</strong> is a first, unglazed firing.</li><li><strong>Wedging</strong> is kneading clay to push out air.</li><li><strong>Raku</strong> and <strong>pit firing</strong> are firing methods that leave dramatic marks.</li></ul><p>The <strong>Studio</strong> style suits classes and pottery painting, where the name should sound fun and welcoming: <em>Messy Potters Club</em>, <em>Pot Shed Pottery Café</em>.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Before you pay for a logo, labels or a stall banner, press <strong>Check</strong> on the name you like, or paste it into the <a href=\"../business-name-checker.html\">Business Name Checker</a>. It looks for:</p><ul><li><strong>Company names:</strong> in the UK, Companies House won't register a limited company name that's the same as one already on the register. In the US, check your state's business register.</li><li><strong>Trade marks:</strong> search the UK Intellectual Property Office and, if you sell abroad, the USPTO. A registered company name doesn't give you trade mark rights.</li><li><strong>Web and social:</strong> the .com or .co.uk, plus the Instagram, TikTok and Etsy handles pottery customers will look for.</li></ul><p>If you sell mugs, plates or bowls, the glazes must be food-safe. In the UK there are legal limits on how much lead and cadmium ceramics may release into food, so check your glazes and test your pieces.</p><p>This is general guidance, not legal advice. For the full checklist, read <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>"
+      },
+      {
+        "heading": "Tips for a pottery business",
+        "content": "<ul><li><strong>Fit it on a stamp.</strong> Many potters mark the base of each piece, so a short name or initials works best.</li><li><strong>Pottery or ceramics?</strong> Pottery sounds handmade; ceramics sounds design-led.</li><li><strong>Classes need a friendly name.</strong> People booking a first lesson want to feel welcome.</li></ul><p>Selling prints or paintings too? Try the <a href=\"art-business-name-generator.html\">Art Business Name Generator</a>. For candles in handmade pots, there's the <a href=\"candle-business-name-generator.html\">Candle Business Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_shops-names.html\">shop and brand business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good pottery business names?",
+        "answer": "Warm, short names: Glaze Days Pottery, Plum & Slip, Saggar for a modern studio, or Try the Wheel for classes."
+      },
       {
         "question": "How do I check a pottery business name is free?",
         "answer": "Press <strong>Check</strong> on any name to see whether it is free as a company name, a web address and a social media handle. In the UK, search the Companies House register; in the US, search your state's business register and the USPTO trade mark search. Do this before you pay for a logo, labels or signage."
@@ -903,6 +924,10 @@
       {
         "question": "Should a pottery business name say pottery or ceramics?",
         "answer": "<em>Pottery</em> sounds warm and handmade and suits a studio, a shop or classes; <em>Ceramics</em> sounds more design-led and suits a tableware brand or a gallery maker; <em>Clay Co.</em> sits between the two. If you mostly sell online, a short name without either word (such as <em>Kaolin</em>) is easier to fit on a maker's stamp and a handle."
+      },
+      {
+        "question": "Do I need anything special to sell mugs and plates?",
+        "answer": "Your glazes need to be food-safe. In the UK, ceramics that touch food must stay within legal limits for lead and cadmium release, so check your glazes and test your pieces."
       }
     ]
   }

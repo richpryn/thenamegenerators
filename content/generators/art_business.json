@@ -1006,9 +1006,30 @@
       "title": "🖼️ Art Business Name Generator",
       "tagline": "Names for an artist, a print shop, an art studio or a gallery, from Palette Cleanser to The Old Chapel Gallery."
     },
-    "intro": "Selling prints on Etsy, teaching art classes or opening a gallery? This **art business name generator** has names in eight styles, from puns and aesthetic Instagram names to classic galleries, ready to check.",
-    "sections": [],
+    "intro": "A good art business name sells you or your style: your own name for originals, a soft aesthetic name for a print shop, a friendly name for classes, or a surname for a gallery. Selling prints on Etsy, teaching art classes or opening a gallery? This **art business name generator** has names in eight styles, from puns and aesthetic Instagram names to classic galleries, ready to check.",
+    "sections": [
+      {
+        "heading": "Eight good art business names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Line & Dandy</strong>: a pun for illustration and line drawing.</li><li><strong>Draw & Order Studio</strong>: catchy, and tidy-sounding.</li><li><strong>Paper Moon Art Studio</strong>: cute and dreamy.</li><li><strong>Raw Umber</strong>: a pigment name for a modern studio.</li><li><strong>Sage & Sparrow</strong>: soft and aesthetic, for a print shop.</li><li><strong>Sip & Sketch</strong>: a class that tells you what happens.</li><li><strong>Farrow Editions</strong>: sounds like a print publisher.</li><li><strong>The Old Dairy Gallery</strong>: a gallery named after its building.</li></ul>"
+      },
+      {
+        "heading": "Prints, originals, classes or a gallery",
+        "content": "<ul><li><strong>Originals</strong> sell on the artist, so your own name often works best.</li><li><strong>Print shops</strong> suit a brand name. <em>Editions</em> hints at limited runs, which are numbered, as in 12/50, and are often printed as giclée prints.</li><li><strong>Classes</strong> want a welcoming name: Club, Workshop, Art Room.</li><li><strong>Galleries</strong> are usually named after their founders or their building.</li></ul><p>Pigment names make good studio names: <em>ochre</em> and <em>umber</em> are earth pigments, and <em>cadmium</em> gives bright yellows and reds.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Before you pay for a logo, labels or a stall banner, press <strong>Check</strong> on the name you like, or paste it into the <a href=\"../business-name-checker.html\">Business Name Checker</a>. It looks for:</p><ul><li><strong>Company names:</strong> in the UK, Companies House won't register a limited company name that's the same as one already on the register. In the US, check your state's business register.</li><li><strong>Trade marks:</strong> search the UK Intellectual Property Office and, if you sell abroad, the USPTO. A registered company name doesn't give you trade mark rights.</li><li><strong>Web and social:</strong> the .com or .co.uk, plus the Instagram, TikTok and Etsy handles art customers will look for.</li></ul><p>If you sell prints of your own work you own the copyright, but never sell art based on other people's characters, logos or photographs without permission.</p><p>This is general guidance, not legal advice. For the full checklist, read <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>"
+      },
+      {
+        "heading": "Tips for an art business",
+        "content": "<ul><li><strong>Keep your name for originals.</strong> Many artists use their own name for paintings and a brand name for prints.</li><li><strong>Match it to your style</strong>: soft names for soft work, bold names for bold work.</li><li><strong>Check Etsy's limit</strong> of 20 characters with no spaces if you'll sell there.</li></ul><p>Making stickers or pottery too? Try the <a href=\"sticker-business-name-generator.html\">Sticker Business Name Generator</a> or the <a href=\"pottery-business-name-generator.html\">Pottery Business Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_shops-names.html\">shop and brand business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good art business names?",
+        "answer": "Names that suit what you sell: your own name for originals, Sage & Sparrow for a print shop, Sip & Sketch for classes, or The Old Dairy Gallery for a gallery."
+      },
       {
         "question": "How do I check an art business name is free?",
         "answer": "Press <strong>Check</strong> on any name to see whether it is free as a company name, a web address and a social media handle. In the UK, search the Companies House register; in the US, search your state's business register and the USPTO trade mark search. Do this before you pay for a logo, labels or signage."
@@ -1016,6 +1037,10 @@
       {
         "question": "Should I use my own name for my art business?",
         "answer": "Many artists do: <em>Sarah Hart Art</em> or <em>Art by Sarah</em> sells you as well as the work, and buyers of originals often want to know the artist. A separate brand name (such as <em>Pale Fern Prints</em>) suits a print shop, a studio with classes or a business you may grow or sell one day. Many artists keep their own name for originals and a brand for prints."
+      },
+      {
+        "question": "What does \"Editions\" mean in an art business name?",
+        "answer": "It suggests limited-edition prints: a set number of prints, each numbered (12/50, for example). It's a good word for a print shop or a small publisher."
       }
     ]
   }
