@@ -2713,7 +2713,11 @@
       "photography_business",
       "real_estate",
       "business",
-      "company"
+      "company",
+      "accounting_business",
+      "insurance_agency",
+      "marketing_agency",
+      "tech_company"
     ],
     "startHeading": "Try these name generators",
     "startIntro": "Use these tools to name a consultancy, studio, agency or practice.",
@@ -2877,7 +2881,11 @@
       "beauty_salon",
       "hair_salon",
       "lash_business",
-      "nail_salon"
+      "nail_salon",
+      "barber_shop",
+      "makeup_artist",
+      "skincare_brand",
+      "spa"
     ],
     "startHeading": "Try these name generators",
     "startIntro": "Use these tools to name a hair salon, beauty salon, nail bar or lash studio.",
