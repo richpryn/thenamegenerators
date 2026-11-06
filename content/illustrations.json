@@ -407,6 +407,10 @@
     "law_firm": "office-desk",
     "financial_advisor": "office-desk",
     "property_management": "office-desk",
-    "trucking_company": "office-desk"
+    "trucking_company": "office-desk",
+    "flower_shop": "gift-shop",
+    "perfume_brand": "gift-shop",
+    "pottery_business": "gift-shop",
+    "art_business": "gift-shop"
   }
 }
