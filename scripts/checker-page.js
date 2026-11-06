@@ -119,7 +119,7 @@ ${scriptJson({
     ${layout.headAssets('')}
 </head>
 <body>
-    ${layout.svgSprite([])}
+    ${layout.svgSprite(['name-checker'])}
     ${layout.siteHeader('', site.categories)}
 
     <div class="wrap layout">
@@ -127,6 +127,7 @@ ${scriptJson({
             <nav class="crumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span aria-current="page">Business Name Checker</span></nav>
             <div class="titlerow">
                 <h1>Business Name <span class="hl">Checker</span></h1>
+                ${layout.doodle('name-checker')}
             </div>
             <p class="lede">Is your business name taken? Check the company register, domains, trade marks and social handles in one go. Free, and nothing you type is stored.</p>
 

@@ -941,7 +941,7 @@ const STATIC_SHARE_PAGES = [
   { name: 'all-generators', title: 'All Name Generators', line: 'Every generator on the site, from elves to escape rooms.', motif: 'quill' },
   { name: 'name-tools', title: 'Name Tools', line: 'Spin a wheel, draw a name, pick raffle winners, split teams or run Secret Santa.', motif: 'clover' },
   { name: 'business', title: 'Business Name Generators', line: 'Names for every trade, and a checker to see if yours is taken.', motif: 'shopfront' },
-  { name: 'business-name-checker', title: 'Business Name Checker', line: 'Is your business name taken? Company registers, domains, trade marks and handles in one go.', motif: 'quill' },
+  { name: 'business-name-checker', title: 'Business Name Checker', line: 'Is your business name taken? Company registers, domains, trade marks and handles in one go.', motif: 'name-checker' },
   { name: 'about', title: 'About The Name Generators', line: 'Why this site exists.', motif: 'note' },
   { name: 'privacy', title: 'Privacy and cookies', line: 'What this site keeps, and how to change your mind.', motif: 'quill' },
 ];
@@ -1573,7 +1573,7 @@ function generateBusinessHub(site) {
   const hubs = group.hubs.filter(s => s.startsWith('biz_')).map(s => site.categories.find(c => c.slug === s)).filter(Boolean);
   const general = BUSINESS_GENERAL.map(k => site.all.find(g => g.key === k)).filter(Boolean);
   const catOf = (gen) => site.categories.find(c => c.slug === gen.category);
-  const motifs = ['quill', ...hubs.map(h => layout.categoryMotif(h)), ...general.map(g => layout.generatorMotif(g, catOf(g)))];
+  const motifs = ['name-checker', ...hubs.map(h => layout.categoryMotif(h)), ...general.map(g => layout.generatorMotif(g, catOf(g)))];
   const plural = (n) => `${n} generator${n === 1 ? '' : 's'}`;
   const hubCards = hubs.map(h => `<a class="trycard hd tap" href="categories/${h.slug}-names.html">${layout.doodle(layout.categoryMotif(h), 'doodle try-d')}<span class="try-t"><b>${escapeHtml(h.navLabel)}</b><span>${escapeHtml(h.description)}</span><span class="biz-count">${plural(h.generators.length)} →</span></span></a>`).join('\n                    ');
   const generalCards = general.map(g => `<a href="posts/${g.slug}.html" class="gencard hd tap">${layout.doodle(layout.generatorMotif(g, catOf(g)))}<div><b>${escapeHtml(g.title)}</b><span>${escapeHtml(g.description)}</span></div><em aria-hidden="true">→</em></a>`).join('\n                    ');
@@ -1642,7 +1642,7 @@ ${scriptJson({
 
             <section class="section">
                 <a class="biz-check hd tap" href="business-name-checker.html">
-                    ${layout.doodle('quill', 'doodle biz-check-d')}
+                    ${layout.doodle('name-checker', 'doodle biz-check-d')}
                     <span class="try-t"><span class="eyebrow">Already have a name?</span><b>Check if it's free</b><span>Company registers, domains, trade marks and social handles in one go.</span></span>
                     <span class="go hi hd" aria-hidden="true">Check a name →</span>
                 </a>
