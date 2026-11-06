@@ -1,0 +1,779 @@
+{
+  "title": "Meal Prep Business Name Generator",
+  "slug": "meal-prep-business-name-generator",
+  "icon": "🍱",
+  "category": "biz_food",
+  "published": "2026-11-07",
+  "description": "Meal prep business name ideas for a healthy meal prep, fitness meal or home-cooked meal service, in seven styles. Check any name is free.",
+  "seoTitle": "Meal Prep Business Name Generator: Catchy Name Ideas",
+  "seoKeywords": "meal prep business name generator, meal prep business name ideas, meal prep names for business, meal prep names, meal prep name ideas, unique meal prep name ideas, meal prep company names, meal prep company name ideas, meal prep service names, catchy names for meal prep business, catchy meal prep names, healthy meal prep business names, good name for meal prep business, meal plan business names, food prep business names, food prep name ideas",
+  "isPopular": false,
+  "noun": "Meal Prep Business Names",
+  "noEcho": true,
+  "fixArticles": true,
+  "checkName": true,
+  "filters": {
+    "style": {
+      "label": "Style",
+      "options": [
+        "any",
+        "catchy",
+        "healthy",
+        "fitness",
+        "homestyle",
+        "modern",
+        "local",
+        "mine"
+      ],
+      "optionLabels": {
+        "any": "Any style",
+        "catchy": "Catchy and punny (Prep Talk Kitchen)",
+        "healthy": "Healthy and fresh (Green Plate Meals)",
+        "fitness": "Gym and fitness (Macro Kitchen)",
+        "homestyle": "Home-cooked (Nana's Sunday Kitchen)",
+        "modern": "Unique and modern (Batch & Bowl)",
+        "local": "From your town (Hampton Meal Prep Co.)",
+        "mine": "From your name (Meals by Sarah)"
+      }
+    },
+    "name": {
+      "type": "text",
+      "label": "Your first name",
+      "placeholder": "e.g. Sarah",
+      "default": "Sarah",
+      "example": "Sarah",
+      "firstName": true,
+      "showWhen": {
+        "style": [
+          "mine"
+        ]
+      }
+    },
+    "town": {
+      "type": "text",
+      "label": "Your town or area",
+      "placeholder": "e.g. Hampton",
+      "default": "Hampton",
+      "example": "Hampton",
+      "showWhen": {
+        "style": [
+          "local"
+        ]
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "style",
+  "cases": {
+    "any": {
+      "recipe": "template",
+      "template": [
+        "[catchy.prep] [catchy.prepend]",
+        "[catchy.core] [catchy.ending]",
+        "[catchy.whole]",
+        "[healthy.adjective] [healthy.noun] [healthy.ending]",
+        "[healthy.whole]",
+        "[fitness.word] [fitness.ending]",
+        "[fitness.word2] [fitness.ending2]",
+        "[fitness.left] & [fitness.right] [fitness.pairend]",
+        "[fitness.whole]",
+        "[homestyle.who]'s [homestyle.ending]",
+        "The [homestyle.place] [homestyle.placeend]",
+        "[homestyle.whole]",
+        "[modern.word] [modern.ending]",
+        "[modern.left] & [modern.right]",
+        "[modern.bare]"
+      ]
+    },
+    "catchy": {
+      "recipe": "template",
+      "template": [
+        "[catchy.prep] [catchy.prepend]",
+        "[catchy.core] [catchy.ending]",
+        "[catchy.whole]"
+      ]
+    },
+    "healthy": {
+      "recipe": "template",
+      "template": [
+        "[healthy.adjective] [healthy.noun] [healthy.ending]",
+        "[healthy.whole]"
+      ]
+    },
+    "fitness": {
+      "recipe": "template",
+      "template": [
+        "[fitness.word] [fitness.ending]",
+        "[fitness.word2] [fitness.ending2]",
+        "[fitness.left] & [fitness.right] [fitness.pairend]",
+        "[fitness.whole]"
+      ]
+    },
+    "homestyle": {
+      "recipe": "template",
+      "template": [
+        "[homestyle.who]'s [homestyle.ending]",
+        "The [homestyle.place] [homestyle.placeend]",
+        "[homestyle.whole]"
+      ]
+    },
+    "modern": {
+      "recipe": "template",
+      "template": [
+        "[modern.word] [modern.ending]",
+        "[modern.left] & [modern.right]",
+        "[modern.bare]"
+      ]
+    },
+    "local": {
+      "recipe": "template",
+      "template": [
+        "{town} [local.trade]",
+        "The {town} [local.the]",
+        "{town}'s [local.own] [local.short]",
+        "[local.phrase]",
+        "{town} [local.adjective] [local.noun]"
+      ]
+    },
+    "mine": {
+      "recipe": "template",
+      "template": [
+        "{name}'s [mine.trade]",
+        "[mine.by] by {name}",
+        "{name}'s [mine.adjective] [mine.short]",
+        "[mine.phrase]"
+      ]
+    }
+  },
+  "data": {
+    "catchy": {
+      "prep": [
+        "Prep School",
+        "Prep Talk",
+        "Prep Rally",
+        "Prep Star",
+        "Prep Work",
+        "Prep Step",
+        "Prep It Real",
+        "Prep & Ready",
+        "Sunday Prep",
+        "Prep Squad",
+        "Prep Club",
+        "Pep & Prep",
+        "Prep Party",
+        "Prep Time",
+        "Rep & Prep",
+        "Prep Notes",
+        "Prep Hero"
+      ],
+      "prepend": [
+        "Meals",
+        "Co.",
+        "Meal Co.",
+        "Food Co.",
+        "Lunches",
+        "Eats"
+      ],
+      "core": [
+        "Bowl Goals",
+        "Bowl Model",
+        "Macro Manage",
+        "Fuel Good",
+        "Meal Appeal",
+        "Batch of the Day",
+        "Rice & Shine",
+        "Grain Train",
+        "Fork Lift",
+        "Batch Party",
+        "Lunch Money",
+        "Fridge Goals",
+        "Well Fed",
+        "Good Batch",
+        "Chop to It",
+        "Souper Hero",
+        "Grain Changer",
+        "Bowl Mates",
+        "Feed the Week",
+        "Portion Perfect",
+        "Lid Lifters",
+        "Chop & Change",
+        "Stock Up",
+        "Rice to Meet You"
+      ],
+      "ending": [
+        "Meal Prep",
+        "Meal Prep Co.",
+        "Kitchen",
+        "Meals",
+        "Prep Co."
+      ],
+      "whole": [
+        "Lean On Me Meals",
+        "Prepped to Perfection",
+        "Sorted for the Week",
+        "Meals on Repeat",
+        "Lunch Is Sorted",
+        "Dinner's Done",
+        "Ready, Set, Eat",
+        "Eat the Week",
+        "Seven Day Kitchen",
+        "The Weekly Fork",
+        "Week in a Bowl",
+        "Fridge Full of Good",
+        "Monday Sorted",
+        "Don't Skip Lunch",
+        "Hungry Monday Meal Prep",
+        "No Cook Week",
+        "Fork Ready Meals",
+        "Heat & Eat Kitchen",
+        "Grab & Go Goodness",
+        "Batch Better",
+        "Spoon Ready",
+        "Fill the Fridge Co.",
+        "The Prepped Plate",
+        "Lunchtime Legends",
+        "Meal Mates",
+        "The Full Fridge",
+        "Wholesome Hustle",
+        "Prep Comes First"
+      ]
+    },
+    "healthy": {
+      "adjective": [
+        "Green",
+        "Clean",
+        "Fresh",
+        "Wholesome",
+        "Honest",
+        "Simple",
+        "Good",
+        "Real",
+        "Whole",
+        "Bright",
+        "Garden",
+        "Sunny",
+        "Balanced",
+        "Hearty"
+      ],
+      "noun": [
+        "Plate",
+        "Bowl",
+        "Fork",
+        "Spoon",
+        "Table",
+        "Pantry",
+        "Larder",
+        "Leaf",
+        "Root",
+        "Grain",
+        "Harvest",
+        "Sprout"
+      ],
+      "ending": [
+        "Meals",
+        "Meal Prep",
+        "Food Co."
+      ],
+      "whole": [
+        "Eat Well Kitchen",
+        "Good Food Prep Co.",
+        "Fresh Start Meals",
+        "Rainbow Plate Kitchen",
+        "Veg Forward Kitchen",
+        "Plant Plate Meals",
+        "Greens & Grains",
+        "Roots & Shoots Kitchen",
+        "Seed & Sprout Meals",
+        "Leaf & Ladle",
+        "Five a Day Kitchen",
+        "Eat the Rainbow Co.",
+        "Nourish Bowl Co.",
+        "Honest Plate",
+        "Simply Fresh Meals",
+        "Garden Fresh Meal Prep",
+        "Wholefood Kitchen",
+        "The Good Grain Co.",
+        "Fresh Fork Kitchen",
+        "Real Food Prep Co."
+      ]
+    },
+    "fitness": {
+      "word": [
+        "Protein",
+        "Gains",
+        "Lift",
+        "Rep",
+        "Strong",
+        "Iron",
+        "Athlete",
+        "Peak",
+        "Sprint",
+        "Pace",
+        "Barbell",
+        "PB",
+        "Power",
+        "Endurance",
+        "Recovery",
+        "Training",
+        "Matchday",
+        "Race Day",
+        "Gym"
+      ],
+      "ending": [
+        "Kitchen",
+        "Meals",
+        "Meal Prep",
+        "Eats",
+        "Plates",
+        "Prep Co.",
+        "Nutrition",
+        "Food Co."
+      ],
+      "word2": [
+        "Macro",
+        "Lean",
+        "Fit",
+        "Muscle"
+      ],
+      "ending2": [
+        "Meal Prep",
+        "Eats",
+        "Plates",
+        "Prep Co.",
+        "Nutrition"
+      ],
+      "left": [
+        "Train",
+        "Lift",
+        "Sweat",
+        "Run",
+        "Cycle",
+        "Swim"
+      ],
+      "right": [
+        "Refuel",
+        "Recover",
+        "Repeat",
+        "Rest"
+      ],
+      "pairend": [
+        "Meals",
+        "Kitchen",
+        "Meal Prep"
+      ],
+      "whole": [
+        "Fuel the Grind",
+        "Eat to Train",
+        "Train & Eat Kitchen",
+        "Protein Pantry",
+        "Macro Counted Meals",
+        "Gym Bag Lunches",
+        "Post-Workout Kitchen",
+        "Fuel Station Meals",
+        "Matchday Meals Co.",
+        "Personal Best Kitchen",
+        "Macro Kitchen",
+        "Set & Rep Meals",
+        "Fitfuel Kitchen",
+        "Clean Gains Kitchen",
+        "The Protein Plate",
+        "Fuelled Up Meals",
+        "Recovery Kitchen Co."
+      ]
+    },
+    "homestyle": {
+      "who": [
+        "Nana",
+        "Granny",
+        "Grandma",
+        "Nan",
+        "Auntie",
+        "Mum",
+        "Mom",
+        "Mama",
+        "Gran",
+        "Nonna",
+        "Grandpa"
+      ],
+      "ending": [
+        "Home Cooking",
+        "Meals",
+        "Dinners",
+        "Cookhouse",
+        "Sunday Kitchen",
+        "Batch Kitchen",
+        "Ready Meals",
+        "Freezer Meals",
+        "Family Meals",
+        "Comfort Kitchen",
+        "Home Kitchen",
+        "Hot Dinners",
+        "Pie & Stew Kitchen"
+      ],
+      "place": [
+        "Old Farmhouse",
+        "Cottage",
+        "Village",
+        "Corner",
+        "Back Door",
+        "Kitchen Table",
+        "Family Table",
+        "Sunday Table",
+        "Farmhouse",
+        "Country",
+        "Homely",
+        "Hearty",
+        "Weeknight",
+        "Slow Cooker"
+      ],
+      "placeend": [
+        "Kitchen",
+        "Meal Co.",
+        "Larder",
+        "Pantry",
+        "Dinner Co.",
+        "Cookhouse"
+      ],
+      "whole": [
+        "Homemade Dinners Co.",
+        "Home Cooked Co.",
+        "The Weekly Supper",
+        "Dinner's Ready Meals",
+        "Sunday Best Kitchen",
+        "Batch Cooked Co.",
+        "Like Mum Makes",
+        "Like Mom Makes",
+        "Proper Home Cooking",
+        "Tea's Ready Kitchen",
+        "Supper Club Meals",
+        "Family Dinners Co.",
+        "The Freezer Drawer",
+        "Pie in the Freezer Co.",
+        "Comfort Food Co.",
+        "Hotpot & Pie Kitchen",
+        "Stew & Crumble Co.",
+        "Cooked With Care",
+        "Made at Home Meals",
+        "Home Kitchen Helpers"
+      ]
+    },
+    "modern": {
+      "word": [
+        "Plated",
+        "Portion",
+        "Batch",
+        "Ladle",
+        "Tray",
+        "Bento",
+        "Tiffin",
+        "Stack",
+        "Simmer",
+        "Roast",
+        "Stock",
+        "Grain",
+        "Prep",
+        "Pantry",
+        "Cupboard",
+        "Spoon",
+        "Pan",
+        "Skillet",
+        "Weekday",
+        "Lunchbag",
+        "Bowlful",
+        "Spoonful",
+        "Forkful",
+        "Platter",
+        "Mealtime",
+        "Hob",
+        "Larder",
+        "Sunday",
+        "Sprig",
+        "Saucepan",
+        "Traybake"
+      ],
+      "ending": [
+        "Meals",
+        "Meal Co.",
+        "Meal Prep",
+        "Prep Co.",
+        "Eats"
+      ],
+      "left": [
+        "Batch",
+        "Tiffin",
+        "Bento",
+        "Portion",
+        "Tray",
+        "Simmer",
+        "Stock",
+        "Roast"
+      ],
+      "right": [
+        "Bowl",
+        "Greens",
+        "Grain",
+        "Spoon",
+        "Rice",
+        "Lunch"
+      ],
+      "bare": [
+        "Mise en Place",
+        "Portioned",
+        "Batched",
+        "Prepped",
+        "Sorted",
+        "Stocked Up",
+        "Bento & Co.",
+        "Tiffin & Co.",
+        "Saucepan & Co."
+      ]
+    },
+    "local": {
+      "trade": [
+        "Meal Prep",
+        "Meal Prep Co.",
+        "Healthy Meals",
+        "Fresh Meals",
+        "Meal Co.",
+        "Prep Co.",
+        "Ready Meals",
+        "Meal Delivery",
+        "Batch Kitchen",
+        "Lunch Co.",
+        "Fitness Meals",
+        "Protein Kitchen",
+        "Food Prep",
+        "Weekly Meals",
+        "Meal Plans",
+        "Family Meals",
+        "Freezer Meals",
+        "Plant Kitchen",
+        "Dinner Co.",
+        "Prepped Meals",
+        "Meals on Demand",
+        "Meal Service",
+        "Prep Club",
+        "Gym Meals",
+        "Lunch Prep",
+        "Weekly Prep",
+        "Batch Cooking",
+        "Protein Meals",
+        "Fresh Prep",
+        "Healthy Eats",
+        "Fit Eats",
+        "Prep & Deliver",
+        "Meal Plan Co.",
+        "Lunch Bags",
+        "Batch Meals"
+      ],
+      "the": [
+        "Meal Prep Co.",
+        "Meal Co.",
+        "Lunch Co.",
+        "Batch Kitchen",
+        "Dinner Co.",
+        "Food Prep Co.",
+        "Fresh Meal Co.",
+        "Prep Club",
+        "Meal Plan Co.",
+        "Weekly Prep Co."
+      ],
+      "adjective": [
+        "Fresh",
+        "Healthy",
+        "Fit",
+        "Clean",
+        "Green",
+        "Good",
+        "Home-Cooked",
+        "Weekly",
+        "Protein",
+        "Plant-Based"
+      ],
+      "noun": [
+        "Meal Prep",
+        "Meals",
+        "Meal Co.",
+        "Prep Co.",
+        "Lunch Co.",
+        "Food Prep",
+        "Eats",
+        "Bowls"
+      ],
+      "own": [
+        "Own",
+        "Original",
+        "Local",
+        "Little",
+        "Friendly",
+        "Favourite"
+      ],
+      "short": [
+        "Meal Prep",
+        "Meal Co.",
+        "Prep Co.",
+        "Lunch Co.",
+        "Batch Kitchen",
+        "Dinner Co.",
+        "Meals",
+        "Prep Club"
+      ],
+      "phrase": [
+        "Fuel {town}",
+        "Fresh {town} Meals",
+        "{town} Eats Well",
+        "Made in {town} Meals",
+        "{town} Fit Food",
+        "{town} Prep & Go",
+        "{town} Fresh Plate",
+        "{town} Weekday Meals",
+        "Taste of {town} Meals",
+        "{town} Grab & Go",
+        "{town} Fridge Fillers",
+        "{town} Sunday Prep",
+        "Eat Well {town}",
+        "{town} Lunch Bags",
+        "{town} Meal Prep Hub",
+        "{town} Ready to Heat",
+        "{town} Fresh & Fit",
+        "{town} Gym Bag Lunches",
+        "{town} Meal Plan Kitchen",
+        "{town} Sunday Roast Prep",
+        "{town} Batch & Bowl",
+        "{town} Tiffin Co.",
+        "{town} Bento Co.",
+        "{town} Green Bowl Co.",
+        "{town} Protein Prep",
+        "{town} Lunch Club Co.",
+        "{town} Healthy Kitchen Co.",
+        "{town} Gym Food Co.",
+        "{town} Protein Pantry",
+        "{town} Fresh Bowl Co.",
+        "{town} Batch Cook Co.",
+        "{town} Prepped & Delivered",
+        "{town} Sunday Batch",
+        "{town} Dinner Drop",
+        "{town} Lunch Drop",
+        "{town} Fridge Fill",
+        "{town} Weekly Batch",
+        "{town} Desk Lunch Co.",
+        "{town} Office Lunch Co.",
+        "{town} Heat & Eat",
+        "{town} Plant Plate"
+      ]
+    },
+    "mine": {
+      "trade": [
+        "Meal Prep",
+        "Meals",
+        "Meal Prep Co.",
+        "Meal Co.",
+        "Prep Co.",
+        "Healthy Meals",
+        "Fresh Meals",
+        "Ready Meals",
+        "Batch Kitchen",
+        "Lunch Co.",
+        "Fitness Meals",
+        "Protein Kitchen",
+        "Weekly Meals",
+        "Meal Plans",
+        "Family Meals",
+        "Freezer Meals",
+        "Plant Kitchen",
+        "Dinner Co.",
+        "Prepped Meals",
+        "Meal Service",
+        "Food Prep",
+        "Lunches",
+        "Prep Club",
+        "Gym Meals",
+        "Lunch Prep",
+        "Weekly Prep",
+        "Batch Cooking",
+        "Protein Meals",
+        "Fresh Prep",
+        "Healthy Eats",
+        "Fit Eats",
+        "Meal Plan Co.",
+        "Batch Meals",
+        "Lunch Bags",
+        "Healthy Kitchen"
+      ],
+      "by": [
+        "Meals",
+        "Prepped",
+        "Meal Prep",
+        "Fresh Meals",
+        "Healthy Meals",
+        "Lunches",
+        "Batch Cooking",
+        "Fuel",
+        "Plates",
+        "Protein Bowls",
+        "Weekly Meals",
+        "Fresh Prep",
+        "Lunch Bags"
+      ],
+      "adjective": [
+        "Little",
+        "Healthy",
+        "Fresh",
+        "Homemade",
+        "Weekly",
+        "Famous",
+        "Simple",
+        "Honest",
+        "Green",
+        "Good",
+        "Sunday",
+        "Protein"
+      ],
+      "short": [
+        "Meal Prep",
+        "Meals",
+        "Meal Co.",
+        "Prep Co.",
+        "Lunch Co.",
+        "Batch Kitchen",
+        "Dinner Co.",
+        "Prep Club",
+        "Bowls",
+        "Lunch Bags",
+        "Weekly Prep",
+        "Protein Bowls",
+        "Eats",
+        "Fridge Meals"
+      ],
+      "phrase": [
+        "Meal Prep with {name}",
+        "{name}'s Fridge Fillers",
+        "Eat Well with {name}",
+        "{name}'s Weekly Plate",
+        "{name}'s Bowl Co.",
+        "Fuelled by {name}",
+        "{name}'s Grab & Go",
+        "{name}'s Sunday Prep",
+        "{name} & Co. Meal Prep"
+      ]
+    }
+  },
+  "article": {
+    "hero": {
+      "title": "🍱 Meal Prep Business Name Generator",
+      "tagline": "Names for a meal prep service, from Prep Talk Kitchen to Green Plate Meals."
+    },
+    "intro": "A meal prep name goes on every label, delivery bag and Instagram post. This **meal prep business name generator** gives you names for a healthy meal prep, fitness meal or home-cooked meal service in seven styles, including ones built from your town or your own name.",
+    "sections": [],
+    "faqs": [
+      {
+        "question": "How do I check a meal prep business name is free?",
+        "answer": "Press <strong>Check</strong> on any name to see whether it's free as a company name, a domain and a social media handle. Before you commit, search the official registers too: in the UK, Companies House and the UK trade mark register; in the US, your state's business register and the USPTO trade mark search. Look on a map app for businesses with the same name nearby."
+      },
+      {
+        "question": "What's a good name for a meal prep business?",
+        "answer": "Say who it's for. Gym-goers look for fuel, macros and protein (<em>Macro Kitchen</em>); busy families want home cooking (<em>Nana's Sunday Kitchen</em>); a healthy service suits fresh, green words (<em>Green Plate Meals</em>). A pun on prep is easy to remember (<em>Prep Talk</em>). Keep health claims out of the name: food labelling rules in the UK and US limit what you can promise."
+      }
+    ]
+  }
+}

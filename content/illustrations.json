@@ -411,6 +411,14 @@
     "flower_shop": "gift-shop",
     "perfume_brand": "gift-shop",
     "pottery_business": "gift-shop",
-    "art_business": "gift-shop"
+    "art_business": "gift-shop",
+    "bar": "cafe-front",
+    "mobile_bar": "cafe-front",
+    "brewery": "cafe-front",
+    "meal_prep_business": "cafe-front",
+    "spray_tan_business": "salon-chair",
+    "brow_business": "salon-chair",
+    "dance_studio": "pet-cottage",
+    "martial_arts_school": "pet-cottage"
   }
 }

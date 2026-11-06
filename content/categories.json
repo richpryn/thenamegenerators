@@ -2819,7 +2819,9 @@
       "daycare",
       "nonprofit",
       "therapy_practice",
-      "tutoring"
+      "tutoring",
+      "dance_studio",
+      "martial_arts_school"
     ],
     "startHeading": "Try these name generators",
     "startIntro": "Use these tools to name a pet business or a care agency.",
@@ -2909,7 +2911,9 @@
       "gym",
       "massage_business",
       "tattoo_shop",
-      "yoga_studio"
+      "yoga_studio",
+      "brow_business",
+      "spray_tan_business"
     ],
     "startHeading": "Try these name generators",
     "startIntro": "Use these tools to name a hair salon, beauty salon, nail bar or lash studio.",
@@ -2999,7 +3003,11 @@
       "bubble_tea_shop",
       "candy_business",
       "juice_bar",
-      "pizza_business"
+      "pizza_business",
+      "bar",
+      "brewery",
+      "meal_prep_business",
+      "mobile_bar"
     ],
     "startHeading": "Try these name generators",
     "startIntro": "Use these tools to name a bakery, cake business, cookie shop, dessert bar or café.",
