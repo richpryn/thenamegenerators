@@ -391,6 +391,10 @@
     "pizza_business": "cafe-front",
     "bubble_tea_shop": "cafe-front",
     "juice_bar": "cafe-front",
-    "candy_business": "cafe-front"
+    "candy_business": "cafe-front",
+    "massage_business": "salon-chair",
+    "tattoo_shop": "salon-chair",
+    "gym": "salon-chair",
+    "yoga_studio": "salon-chair"
   }
 }
