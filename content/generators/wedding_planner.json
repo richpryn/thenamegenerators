@@ -893,7 +893,6 @@
         "Brook",
         "Lark",
         "Reed",
-        "Moss",
         "Hill",
         "Rivers",
         "Sage",
@@ -931,27 +930,27 @@
         ],
         "planning": [
           "Wedding Planning by {name}",
-          "{name} Wedding Planner",
+          "{name}'s Wedding Planner",
           "{name}'s Wedding Plans",
           "Planned with {name}"
         ],
         "coordination": [
           "{name} on the Day",
           "Coordinated by {name}",
-          "{name} Wedding Coordinator",
+          "{name}'s Wedding Coordinator",
           "{name}'s Wedding Day Co."
         ],
         "styling": [
           "Wedding Styling by {name}",
-          "{name} Wedding Stylist",
+          "{name}'s Wedding Stylist",
           "Decor by {name}",
           "{name}'s Wedding Props"
         ],
         "destination": [
-          "{name} Weddings Abroad",
+          "{name}'s Weddings Abroad",
           "Wed Abroad with {name}",
           "I Do Abroad with {name}",
-          "{name} Destination Weddings"
+          "{name}'s Destination Weddings"
         ]
       }
     },

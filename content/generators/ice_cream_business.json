@@ -395,7 +395,6 @@
         "Sprinkle Sprinkle Little Star",
         "Cone Voyage",
         "Cone-fusion",
-        "Malt Disney",
         "Fro-Yo-Yo",
         "Shake It Off Shakes",
         "Float Your Boat",
@@ -930,7 +929,7 @@
         "Cones"
       ],
       "phrase": [
-        "{name} Creamery",
+        "{name}'s Creamery",
         "{name} & Co. Creamery",
         "{name}'s Scoop",
         "{name}'s Sweet Scoop",

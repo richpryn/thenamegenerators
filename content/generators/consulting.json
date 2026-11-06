@@ -143,7 +143,7 @@
       "template": [
         "{name} [mine.middle] [trade.{field}]",
         "{name} [mine.middle] [trade.{field}]",
-        "{name} [trade.{field}]",
+        "{name}'s [trade.{field}]",
         "[mine.phrase]"
       ]
     }
@@ -703,7 +703,6 @@
         "Brook",
         "Lark",
         "Reed",
-        "Moss",
         "Hill",
         "Rivers",
         "Sage",
@@ -732,12 +731,12 @@
         "{name} Consults",
         "Consulting by {name}",
         "{name}'s Consultancy",
-        "{name} Advisory",
+        "{name}'s Advisory",
         "Ask {name} Consulting",
         "{name} & Associates",
-        "{name} Consulting Co.",
+        "{name}'s Consulting Co.",
         "Advice by {name}",
-        "{name} Strategy Co.",
+        "{name}'s Strategy Co.",
         "Team {name} Consulting"
       ]
     }

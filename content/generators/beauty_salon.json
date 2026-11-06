@@ -164,7 +164,7 @@
         "[mine.pre]",
         "{name}'s [mine.spec] [mine.room]",
         "{name}'s [mine.adj] [mine.adjTrade]",
-        "{name} [mine.theTrade]",
+        "{name}'s [mine.theTrade]",
         "{name} & Co. [mine.coTrade]"
       ]
     }

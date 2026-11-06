@@ -178,7 +178,7 @@
       "template": [
         "{name}'s [mine.trade]",
         "[mine.by] by {name}",
-        "{name} [mine.nameTrade]",
+        "{name}'s [mine.nameTrade]",
         "{name}'s [mine.adj] [mine.adjTrade]",
         "{name}'s [mine.spec] [mine.specTrade]",
         "{name}'s [mine.noun] [mine.adjTrade]"

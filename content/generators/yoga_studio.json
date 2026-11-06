@@ -177,7 +177,7 @@
         "[mine.with.{kind}] with {name}",
         "{name}'s [mine.adj] [mine.adjTrade.{kind}]",
         "{name}'s [mine.adj] [mine.adjTrade.{kind}]",
-        "{name} [mine.nameTrade.{kind}]",
+        "{name}'s [mine.nameTrade.{kind}]",
         "{name}'s [mine.with.{kind}] [mine.classTrade]",
         "{name}'s [trade.{kind}]"
       ]
@@ -979,12 +979,7 @@
         "Kula",
         "Sangha",
         "Abhyasa",
-        "Surya",
-        "Chandra",
-        "Agni",
-        "Vayu",
         "Akasha",
-        "Prithvi",
         "Anahata",
         "Mandala",
         "Mantra"

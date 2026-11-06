@@ -186,8 +186,8 @@
         "{name}'s [mine.word] Foundation",
         "{name}'s [mine.word] [cause.{cause}.org]",
         "{name}'s [mine.word] [cause.{cause}.org]",
-        "{name} [classic.org]",
-        "{name} [cause.{cause}.org]",
+        "{name}'s [classic.org]",
+        "{name}'s [cause.{cause}.org]",
         "Team {name}",
         "{name}'s Fund",
         "{name}'s [cause.{cause}.short]",
@@ -232,7 +232,6 @@
         ],
         "hope": [
           "Bright Futures",
-          "Brighter Futures",
           "Little Hearts",
           "Young Hearts",
           "Big Dreams",
@@ -253,7 +252,6 @@
           "Little Victories",
           "New Hope",
           "Brighter Days",
-          "Open Doors",
           "Open Arms",
           "Fresh Start",
           "New Beginnings",
@@ -327,8 +325,7 @@
           "Show Some Love",
           "Kindness Crew",
           "Good Turns Club",
-          "Rise Together",
-          "Many Hands Make"
+          "Rise Together"
         ],
         "faith": [
           "Kids Ministry",
@@ -408,7 +405,6 @@
           "New Hope",
           "Bright Futures",
           "Brighter Days",
-          "Open Doors",
           "Open Arms",
           "Fresh Start",
           "New Beginnings",
@@ -483,8 +479,7 @@
           "Show Some Love",
           "Kindness Crew",
           "Good Turns Club",
-          "Rise Together",
-          "Many Hands Make"
+          "Rise Together"
         ],
         "faith": [
           "Scholarship Fund",
@@ -562,7 +557,6 @@
           "New Hope",
           "Bright Futures",
           "Brighter Days",
-          "Open Doors",
           "Open Arms",
           "Fresh Start",
           "New Beginnings",
@@ -613,7 +607,6 @@
           "Bags of Hope",
           "Pantry Pals",
           "Hot Meals Happy Hearts",
-          "Breakfast Club",
           "Spare a Spoon",
           "Roof Raisers",
           "Fridge Friends",
@@ -637,8 +630,7 @@
           "Show Some Love",
           "Kindness Crew",
           "Good Turns Club",
-          "Rise Together",
-          "Many Hands Make"
+          "Rise Together"
         ],
         "faith": [
           "Food Pantry",
@@ -715,7 +707,6 @@
           "Light Ahead",
           "New Hope",
           "Bright Futures",
-          "Open Doors",
           "Open Arms",
           "Fresh Start",
           "New Beginnings",
@@ -788,8 +779,7 @@
           "Show Some Love",
           "Kindness Crew",
           "Good Turns Club",
-          "Rise Together",
-          "Many Hands Make"
+          "Rise Together"
         ],
         "faith": [
           "Healing Ministries",
@@ -867,7 +857,6 @@
           "New Hope",
           "Bright Futures",
           "Brighter Days",
-          "Open Doors",
           "Open Arms",
           "Fresh Start",
           "New Beginnings",
@@ -942,8 +931,7 @@
           "Show Some Love",
           "Kindness Crew",
           "Good Turns Club",
-          "Rise Together",
-          "Many Hands Make"
+          "Rise Together"
         ],
         "faith": [
           "Animal Rescue",
@@ -1021,7 +1009,6 @@
           "New Hope",
           "Bright Futures",
           "Brighter Days",
-          "Open Doors",
           "Open Arms",
           "Fresh Start",
           "New Beginnings",
@@ -1096,8 +1083,7 @@
           "Show Some Love",
           "Kindness Crew",
           "Good Turns Club",
-          "Rise Together",
-          "Many Hands Make"
+          "Rise Together"
         ],
         "faith": [
           "Creation Care",
@@ -1155,7 +1141,6 @@
           "Common Ground",
           "Many Hands",
           "Stronger Together",
-          "Open Doors",
           "Town Square",
           "Village Green",
           "One Community",
@@ -1246,8 +1231,7 @@
           "Show Some Love",
           "Kindness Crew",
           "Good Turns Club",
-          "Rise Together",
-          "Many Hands Make"
+          "Rise Together"
         ],
         "faith": [
           "Community Project",
@@ -1371,7 +1355,6 @@
           "New Hope",
           "Bright Futures",
           "Brighter Days",
-          "Open Doors",
           "Open Arms",
           "Fresh Start",
           "New Beginnings",
@@ -1426,8 +1409,7 @@
           "Show Some Love",
           "Kindness Crew",
           "Good Turns Club",
-          "Rise Together",
-          "Many Hands Make"
+          "Rise Together"
         ],
         "faith": [
           "Ministries",

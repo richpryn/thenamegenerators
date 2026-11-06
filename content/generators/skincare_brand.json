@@ -191,8 +191,8 @@
       "template": [
         "[mine.by] by {name}",
         "{name}'s [mine.trade]",
-        "{name} [mine.nameTrade]",
-        "{name} [mine.theTrade]",
+        "{name}'s [mine.nameTrade]",
+        "{name}'s [mine.theTrade]",
         "{name} & Co. [mine.coTrade]",
         "{name}'s [mine.plant] [mine.plantTrade]",
         "{name}'s [mine.adj] [mine.adjTrade]"

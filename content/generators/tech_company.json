@@ -787,7 +787,6 @@
         "Brook",
         "Lark",
         "Reed",
-        "Moss",
         "Hill",
         "Rivers",
         "Ash",
@@ -811,37 +810,37 @@
       ],
       "phrase": {
         "any": [
-          "{name} Tech",
+          "{name}'s Tech",
           "{name}'s Tech Co.",
-          "{name} Labs",
+          "{name}'s Labs",
           "Tech by {name}",
           "Ask {name} Tech",
           "{name} & Co. Technology",
           "Team {name} Tech",
-          "{name} Digital Works"
+          "{name}'s Digital Works"
         ],
         "software": [
           "Code by {name}",
           "{name} Codes",
           "{name}'s Software Co.",
-          "{name} Software Labs",
+          "{name}'s Software Labs",
           "Built by {name}",
-          "{name} Dev Co."
+          "{name}'s Dev Co."
         ],
         "app": [
           "Apps by {name}",
-          "{name} Apps",
+          "{name}'s Apps",
           "{name}'s App Studio",
           "{name} Builds Apps",
-          "{name} App Co.",
-          "{name} Mobile"
+          "{name}'s App Co.",
+          "{name}'s Mobile"
         ],
         "it": [
           "{name}'s IT",
           "Ask {name} IT",
           "{name}'s Computer Services",
           "{name} Fixes Computers",
-          "{name} IT Support",
+          "{name}'s IT Support",
           "{name}'s Tech Help",
           "Call {name} IT",
           "{name} Sorts IT"

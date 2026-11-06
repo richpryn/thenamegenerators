@@ -1074,7 +1074,6 @@
         "Brook",
         "Lark",
         "Reed",
-        "Moss",
         "Hill",
         "Sage",
         "Ash",
@@ -1096,43 +1095,43 @@
       "phrase": {
         "any": [
           "{name} & Sons Transport",
-          "{name} Freight Co.",
+          "{name}'s Freight Co.",
           "{name}'s Haulage",
           "{name} Hauls",
           "Driven by {name}",
-          "{name} Transport Co.",
+          "{name}'s Transport Co.",
           "{name}'s Freight"
         ],
         "trucking": [
           "{name}'s Trucking",
-          "{name} Trucking Co.",
-          "{name} Freight Lines",
+          "{name}'s Trucking Co.",
+          "{name}'s Freight Lines",
           "{name} & Sons Trucking",
           "{name} Express"
         ],
         "haulage": [
           "{name}'s Haulage",
           "{name} & Sons Haulage",
-          "{name} Haulage Co.",
+          "{name}'s Haulage Co.",
           "{name}'s Transport",
-          "{name} Road Haulage",
+          "{name}'s Road Haulage",
           "{name} & Daughters Haulage"
         ],
         "logistics": [
-          "{name} Logistics",
+          "{name}'s Logistics",
           "{name}'s Freight & Logistics",
-          "{name} Supply Chain",
-          "{name} Logistics Co.",
-          "{name} Freight Services",
-          "{name} Distribution"
+          "{name}'s Supply Chain",
+          "{name}'s Logistics Co.",
+          "{name}'s Freight Services",
+          "{name}'s Distribution"
         ],
         "hotshot": [
           "{name}'s Hotshot",
-          "{name} Hotshot Trucking",
+          "{name}'s Hotshot Trucking",
           "{name}'s Hauling",
-          "{name} Expedited",
+          "{name}'s Expedited",
           "{name}'s Box Truck Co.",
-          "{name} Hot Shot Services"
+          "{name}'s Hot Shot Services"
         ]
       }
     },

@@ -625,7 +625,6 @@
         "Rover",
         "Ramble",
         "Abroad",
-        "Afar",
         "Elsewhere",
         "Swallow",
         "Tern",
@@ -848,7 +847,6 @@
         "Brook",
         "Lark",
         "Reed",
-        "Moss",
         "Hill",
         "Rivers",
         "Sage",
@@ -892,17 +890,17 @@
           "{name} the Travel Agent",
           "{name}'s Holiday Shop",
           "Holidays with {name}",
-          "{name} Books Holidays",
+          "{name}'s Books Holidays",
           "Vacations by {name}",
           "{name}'s Travel Desk"
         ],
         "tours": [
           "Tours with {name}",
           "{name}'s Tours",
-          "{name} Tours",
+          "{name}'s Tours",
           "Guided by {name}",
           "Walks with {name}",
-          "{name} Tour Co."
+          "{name}'s Tour Co."
         ]
       }
     },

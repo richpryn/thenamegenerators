@@ -158,13 +158,19 @@
       "recipe": "template",
       "template": [
         "{name}'s [mine.trade]",
-        "{name} [mine.nameTrade]",
+        "{name}'s [mine.nameTrade]",
         "[mine.with] with {name}",
         "{name}'s [mine.spec] [mine.specTrade]",
         "{name}'s [mine.spec] [mine.specTrade]",
-        "{name} [mine.spec] [mine.nameSpecTrade]",
+        "{name}'s [mine.spec] [mine.nameSpecTrade]",
         "{name}'s [mine.room]",
-        "{name}'s [mine.adj] [mine.adjTrade]"
+        "{name}'s [mine.adj] [mine.adjTrade]",
+        "Massage by {name}",
+        "Treatments with {name}",
+        "{name}'s Massage Room",
+        "{name}'s Massage & Bodywork Clinic",
+        "Back to Better with {name}",
+        "Ease with {name}"
       ]
     }
   },
@@ -714,7 +720,18 @@
         "Deep Tissue Massage",
         "Massage & Wellness",
         "Reflexology",
-        "Sports Therapy"
+        "Sports Therapy",
+        "Pregnancy Massage",
+        "Neck & Back Clinic",
+        "Bodywork",
+        "Massage Studio",
+        "Mobile Massage Service",
+        "Sports & Remedial Massage",
+        "Swedish Massage",
+        "Seated Massage",
+        "Massage Rooms",
+        "Therapy Rooms",
+        "Muscle Clinic"
       ],
       "nameTrade": [
         "Massage Therapy",
@@ -749,7 +766,14 @@
         "Soft Tissue Therapy",
         "Sports Therapy",
         "Mobile Sports Massage",
-        "Clinical Massage"
+        "Clinical Massage",
+        "Aromatherapy",
+        "Myofascial Release",
+        "Indian Head Massage",
+        "Lymphatic Drainage",
+        "Relaxation Massage",
+        "Bodywork",
+        "Stretch Therapy"
       ],
       "spec": [
         "Sports",

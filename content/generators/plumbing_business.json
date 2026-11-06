@@ -200,7 +200,7 @@
             "[mine.byShape] {name}",
             "{name}'s [mine.quality] [mine.qservice]",
             "{name} [mine.family] [mine.fservice]",
-            "{name} Plumbing Co.",
+            "{name}'s Plumbing Co.",
             "{name} the Plumber"
           ]
         }
@@ -290,7 +290,7 @@
             "[mine.byShape] {name} – [taglines]",
             "{name}'s [mine.quality] [mine.qservice] – [taglines]",
             "{name} [mine.family] [mine.fservice] – [taglines]",
-            "{name} Plumbing Co. – [taglines]",
+            "{name}'s Plumbing Co. – [taglines]",
             "{name} the Plumber – [taglines]"
           ]
         }

@@ -731,7 +731,6 @@
         "Brook",
         "Lark",
         "Reed",
-        "Moss",
         "Hill",
         "Rivers",
         "Sage",
@@ -761,7 +760,7 @@
           "{name} Draws",
           "Drawn by {name}",
           "{name} Creates",
-          "{name} Design Studio",
+          "{name}'s Design Studio",
           "Design by {name}",
           "{name} Makes Logos",
           "{name}'s Design Desk",
@@ -769,7 +768,7 @@
         ],
         "freelance": [
           "{name} the Designer",
-          "{name} Freelance Design",
+          "{name}'s Freelance Design",
           "Logos by {name}",
           "{name} Illustrates",
           "Illustrated by {name}",
@@ -778,10 +777,10 @@
         "studio": [
           "Studio {name} Design",
           "{name} & Co. Design",
-          "{name} Studio",
-          "{name} Design Group",
           "{name}'s Studio",
-          "{name} Creative House"
+          "{name}'s Design Group",
+          "{name}'s Studio",
+          "{name}'s Creative House"
         ]
       }
     }

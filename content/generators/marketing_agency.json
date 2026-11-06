@@ -816,7 +816,6 @@
         "Brook",
         "Lark",
         "Reed",
-        "Moss",
         "Hill",
         "Rivers",
         "Sage",
@@ -851,23 +850,23 @@
           "Hey {name} Marketing"
         ],
         "digital": [
-          "{name} Digital",
+          "{name}'s Digital",
           "Digital by {name}",
           "{name}'s Digital Co.",
-          "{name} Online",
+          "{name}'s Online",
           "{name} Does Digital",
-          "{name} SEO & Digital"
+          "{name}'s SEO & Digital"
         ],
         "social": [
-          "{name} Social",
+          "{name}'s Social",
           "Social by {name}",
           "{name}'s Socials",
           "{name} Posts",
-          "{name} Social Club",
+          "{name}'s Social Club",
           "Content by {name}"
         ],
         "creative": [
-          "{name} Creative",
+          "{name}'s Creative",
           "Studio {name}",
           "Designed by {name}",
           "{name}'s Creative Co.",
@@ -875,11 +874,11 @@
           "{name} Makes Brands"
         ],
         "advertising": [
-          "{name} Ads",
+          "{name}'s Ads",
           "Ads by {name}",
           "{name}'s Ad Co.",
-          "{name} Advertising Co.",
-          "{name} Media",
+          "{name}'s Advertising Co.",
+          "{name}'s Media",
           "Adverts by {name}"
         ]
       }

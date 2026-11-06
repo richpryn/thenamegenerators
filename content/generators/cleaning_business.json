@@ -210,7 +210,7 @@
             "{name}'s [mine.service]",
             "[mine.byShape] {name}",
             "{name}'s [mine.quality] [mine.qservice]",
-            "{name} Cleaning Co.",
+            "{name}'s Cleaning Co.",
             "{name} [mine.family] [mine.fservice]",
             "{name} Cleans"
           ]
@@ -309,7 +309,7 @@
             "{name}'s [mine.service] – [taglines]",
             "[mine.byShape] {name} – [taglines]",
             "{name}'s [mine.quality] [mine.qservice] – [taglines]",
-            "{name} Cleaning Co. – [taglines]",
+            "{name}'s Cleaning Co. – [taglines]",
             "{name} [mine.family] [mine.fservice] – [taglines]",
             "{name} Cleans – [taglines]"
           ]

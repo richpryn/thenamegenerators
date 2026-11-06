@@ -170,9 +170,9 @@
         "{name} the Barber",
         "{name}'s [mine.adj] [mine.adjTrade]",
         "{name} & Sons [mine.sonsTrade]",
-        "{name} [mine.theTrade]",
+        "{name}'s [mine.theTrade]",
         "{name}'s [mine.spec] [mine.room]",
-        "{name} [mine.nameTrade]"
+        "{name}'s [mine.nameTrade]"
       ]
     }
   },

@@ -245,7 +245,6 @@
         "Clean Build",
         "Solid Build",
         "Good Build",
-        "Hello Web",
         "Browser Ready",
         "Bookmarked",
         "Soft Launch",
@@ -650,7 +649,6 @@
         "Brook",
         "Lark",
         "Reed",
-        "Moss",
         "Hill",
         "Rivers",
         "Sage",
@@ -678,7 +676,7 @@
           "Websites by {name}",
           "{name}'s Websites",
           "{name} Builds Websites",
-          "{name} Web Studio",
+          "{name}'s Web Studio",
           "Web Design by {name}",
           "{name} Makes Websites",
           "{name}'s Web Co.",
@@ -690,16 +688,16 @@
           "{name} Designs Websites",
           "{name}'s Web Design",
           "Web Studio {name}",
-          "{name} Site Design",
+          "{name}'s Site Design",
           "Pages by {name}",
-          "{name} Web Design Co."
+          "{name}'s Web Design Co."
         ],
         "development": [
           "{name} Codes Websites",
           "Coded by {name}",
           "Websites Built by {name}",
           "{name}'s Web Dev",
-          "{name} Web Developer",
+          "{name}'s Web Developer",
           "{name} Builds Web"
         ]
       }

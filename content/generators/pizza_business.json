@@ -907,7 +907,7 @@
       ],
       "phrase": [
         "Pizzeria {name}",
-        "{name} Pizza Co.",
+        "{name}'s Pizza Co.",
         "{name} & Co. Pizza",
         "Pizza at {name}'s",
         "{name}'s Slice",

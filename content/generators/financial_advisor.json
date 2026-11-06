@@ -722,7 +722,6 @@
         "Brook",
         "Lark",
         "Reed",
-        "Moss",
         "Hill",
         "Ash",
         "James",
@@ -757,7 +756,7 @@
         ],
         "wealth": [
           "{name}'s Wealth Management",
-          "{name} Wealth Partners",
+          "{name}'s Wealth Partners",
           "Wealth with {name}"
         ]
       }

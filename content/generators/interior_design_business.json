@@ -212,7 +212,7 @@
             "[mine.by] {name}",
             "{name}'s [mine.quality] [mine.qservice]",
             "{name} [mine.end]",
-            "{name} Design Co.",
+            "{name}'s Design Co.",
             "{name} & Co. Interiors",
             "At Home with {name}"
           ]
@@ -338,7 +338,7 @@
             "[mine.by] {name} – [taglines]",
             "{name}'s [mine.quality] [mine.qservice] – [taglines]",
             "{name} [mine.end] – [taglines]",
-            "{name} Design Co. – [taglines]",
+            "{name}'s Design Co. – [taglines]",
             "{name} & Co. Interiors – [taglines]",
             "At Home with {name} – [taglines]"
           ]

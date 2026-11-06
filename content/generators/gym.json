@@ -168,7 +168,7 @@
       "template": [
         "{name}'s [trade.{kind}]",
         "[mine.with.{kind}] with {name}",
-        "{name} [mine.nameTrade.{kind}]",
+        "{name}'s [mine.nameTrade.{kind}]",
         "{name}'s [mine.adj] [trade.{kind}]",
         "{name}'s [mine.adj] [trade.{kind}]",
         "{name}'s [mine.focus] [mine.focusTrade.{kind}]",
@@ -1065,7 +1065,7 @@
       "fixed": [
         "Coach {name}",
         "Team {name}",
-        "{name} Fit",
+        "{name}'s Fit",
         "Fit with {name}",
         "Train Like {name}",
         "{name} Trains",
