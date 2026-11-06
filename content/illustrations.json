@@ -399,6 +399,10 @@
     "interior_design_business": "toolbox",
     "auto_repair_shop": "toolbox",
     "moving_company": "toolbox",
-    "pest_control_business": "toolbox"
+    "pest_control_business": "toolbox",
+    "streetwear_brand": "gift-shop",
+    "kids_clothing_brand": "gift-shop",
+    "sticker_business": "gift-shop",
+    "plant_shop": "gift-shop"
   }
 }
