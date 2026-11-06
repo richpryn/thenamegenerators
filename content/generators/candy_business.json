@@ -827,9 +827,30 @@
       "title": "🍬 Candy Business Name Generator",
       "tagline": "Names for a candy store, sweet shop, fudge kitchen or pick and mix stall, from Jar None to Maison Praline."
     },
-    "intro": "A candy name should make people smile and look good on a jar label, a shop sign and a sweet bag. This **candy business name generator** gives you names for a candy store or sweet shop (as it's called in the UK) in seven styles, from punny to old-fashioned and luxury, including ones built from your town or your own name.",
-    "sections": [],
+    "intro": "Good candy and sweet shop names make people smile and look good on a jar label: a pun (<em>Lolly Good Show</em>), an old-fashioned shop (<em>Mrs Thackeray's Sweet Shoppe</em>) or something smart (<em>The Gilded Cocoa Bean</em>). This **candy business name generator** gives you names for a candy store or sweet shop (as it's called in the UK) in seven styles, from punny to old-fashioned and luxury, including ones built from your town or your own name.",
+    "sections": [
+      {
+        "heading": "Eight good candy and sweet shop names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Lolly Good Show</strong>: a very British pun on \"jolly good show\".</li><li><strong>Sherbet Dip Sweet Shop</strong>: a classic sweet as the name.</li><li><strong>Bah Humbug Sweet Shop</strong>: a Dickens line, and humbugs are a real sweet.</li><li><strong>Toffee &amp; Gobstopper</strong>: two old favourites, cute and nostalgic.</li><li><strong>Mrs Thackeray's Sweet Shoppe</strong>: the old-fashioned spelling suits a traditional jar shop.</li><li><strong>The Peppermint Jar</strong>: simple and classic, with a picture in it.</li><li><strong>The Gilded Cocoa Bean</strong>: luxury, for chocolates and gifts.</li><li><strong>Hampton's Famous Rock Shop</strong>: seaside rock and your town, for a resort shop.</li></ul>"
+      },
+      {
+        "heading": "Candy or sweets?",
+        "content": "<p><em>Candy</em> is the everyday word in the US and Canada; in the UK and Ireland it's <em>sweets</em>, and a candy store is a sweet shop. Use the word your customers use, or a name with neither, like <em>The Peppermint Jar</em>, if you sell online to both.</p><ul><li><strong>Old-fashioned:</strong> jars, humbugs, sherbet and the spelling <em>shoppe</em> all say traditional sweet shop.</li><li><strong>Pick and mix:</strong> a phrase British customers know and search for.</li><li><strong>Luxury:</strong> chocolate words and French touches like <em>Maison</em> (house) suit gift boxes.</li><li><strong>Seaside:</strong> a stick of rock with the town's name running through it is a British resort tradition, so a local name suits a seafront shop.</li></ul>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>A name from a generator is a starting point, not permission to use it. Before you order the jars, labels, sweet bags or sign:</p><ul><li><strong>Company register.</strong> In the UK, search Companies House; you can't register a limited company with the same name as an existing one. In the US, search your state's business register.</li><li><strong>Trade marks.</strong> Search the UK trade mark register (or the USPTO in the US) for the goods and services you'll sell.</li><li><strong>Domain and handles.</strong> Check the .co.uk or .com and the Instagram and TikTok handles you'll need.</li><li><strong>Your area.</strong> Search a map app and the delivery apps for businesses with the same or a similar name nearby.</li></ul><p>Press <strong>Check</strong> on any name, or use the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to run most of these at once. For the full process, read our guide, <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>. This is general guidance, not legal advice.</p><p>In the UK, any food business must register with the local council at least 28 days before it starts trading. Registration is free, and the council will inspect you and give you a food hygiene rating.</p>"
+      },
+      {
+        "heading": "Tips for sweet shops",
+        "content": "<p>Avoid the names of famous sweets and chocolate bars, which are trade marks. For more treats, try the <a href=\"ice-cream-business-name-generator.html\">Ice Cream</a>, <a href=\"dessert-business-name-generator.html\">Dessert</a> and <a href=\"cookie-business-name-generator.html\">Cookie</a> business name generators.</p><p>For more, see all the <a href=\"../categories/biz_food-names.html\">food and drink business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good candy store names?",
+        "answer": "Cheerful names that look good on a jar or a bag: Lolly Good Show, Sherbet Dip Sweet Shop, Toffee & Gobstopper, The Peppermint Jar or, for chocolates, The Gilded Cocoa Bean. Choose a style for catchy, cute, classic, luxury or modern names."
+      },
       {
         "question": "How do I check a candy business name is free?",
         "answer": "Press <strong>Check</strong> on any name to see whether it's free as a company name, a domain and a social media handle. Before you commit, search the official registers too: in the UK, Companies House and the UK trade mark register; in the US, your state's business register and the USPTO trade mark search. Look on a map app for businesses with the same name nearby."
@@ -837,6 +858,10 @@
       {
         "question": "Should I call it a candy shop or a sweet shop?",
         "answer": "Use the word your customers use. <em>Candy</em> is the everyday word in the US and Canada, <em>sweets</em> in the UK and Ireland, though <em>candy</em> now reads as fun and modern in the UK too. Selling online to both, a name without either word (<em>The Sherbet Jar</em>, <em>Bonbon Voyage</em>) works everywhere; add the trade word in your listing."
+      },
+      {
+        "question": "Can I name my sweet shop after a famous sweet?",
+        "answer": "Not after a brand. The names of branded sweets and chocolate bars are trade marks, so leave them out. Traditional sweets like humbugs, sherbet lemons and fudge are ordinary words and fine to use."
       }
     ]
   }

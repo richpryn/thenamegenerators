@@ -966,16 +966,41 @@
       "title": "🍦 Ice Cream Business Name Generator",
       "tagline": "Names for an ice cream shop, parlour, gelateria or van, from Sundae School to Sunshine Ices."
     },
-    "intro": "An ice cream name has to make people smile from across the seafront, and fit on a shopfront, a van or a tub lid. This **ice cream business name generator** gives you names for an ice cream shop, parlour (or parlor), gelateria or ice cream van in eight styles, including ones built from your town or your own name.",
-    "sections": [],
+    "intro": "Good ice cream names are cheerful and short enough for a cone sign or the side of a van: <em>Scoop Dreams</em>, <em>Willow Farm Creamery</em>, <em>Gelateria del Porto</em>. This **ice cream business name generator** gives you names for an ice cream shop, parlour (or parlor), gelateria or ice cream van in eight styles, including ones built from your town or your own name.",
+    "sections": [
+      {
+        "heading": "Eight good ice cream names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Scoop Dreams</strong>: a pun that works on a cup and a sign.</li><li><strong>Cold Comfort Ice Cream Co.</strong>: a familiar phrase turned into a treat.</li><li><strong>Cone Voyage</strong>: a holiday pun for a seaside kiosk.</li><li><strong>Polar Bear Creamery</strong>: an animal mascot children will remember.</li><li><strong>Willow Farm Creamery</strong>: creamery suggests it's made from local milk.</li><li><strong>The Old Bandstand Ices</strong>: named after the building, the way real seaside shops often are.</li><li><strong>Gelateria del Porto</strong>: Italian for \"the harbour gelato shop\".</li><li><strong>Mr Sprinkle</strong>: a van name in the old \"Mr\" tradition, without borrowing anyone's brand.</li></ul>"
+      },
+      {
+        "heading": "What makes an ice cream name work",
+        "content": "<ul><li><strong>Gelato or ice cream?</strong> <em>Gelato</em> is Italian for ice cream, and in English it means the denser Italian style. A <em>gelateria</em> is a gelato shop. Use the Italian words only if you make it that way.</li><li><strong>Parlour, creamery, ices:</strong> parlour (parlor in the US) sounds old-fashioned and sit-down; creamery suggests dairy and farm-made; <em>ices</em> is the classic British seaside word.</li><li><strong>Vans need short names.</strong> Choose <strong>Van</strong> for names that read on the move. The big van brands are trade marks, so don't borrow them.</li><li><strong>Puns land.</strong> Ice cream is a happy purchase, so a groan-worthy pun like <em>Have an Ice Day Ice Cream Co.</em> suits it better than most trades.</li></ul>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>A name from a generator is a starting point, not permission to use it. Before you order the sign, van livery or tub labels:</p><ul><li><strong>Company register.</strong> In the UK, search Companies House; you can't register a limited company with the same name as an existing one. In the US, search your state's business register.</li><li><strong>Trade marks.</strong> Search the UK trade mark register (or the USPTO in the US) for the goods and services you'll sell.</li><li><strong>Domain and handles.</strong> Check the .co.uk or .com and the Instagram and TikTok handles you'll need.</li><li><strong>Your area.</strong> Search a map app and the delivery apps for businesses with the same or a similar name nearby.</li></ul><p>Press <strong>Check</strong> on any name, or use the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to run most of these at once. For the full process, read our guide, <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>. This is general guidance, not legal advice.</p><p>In the UK, any food business must register with the local council at least 28 days before it starts trading. Registration is free, and the council will inspect you and give you a food hygiene rating.</p>"
+      },
+      {
+        "heading": "Tips for ice cream businesses",
+        "content": "<p>Seasonal businesses live on repeat visits, so a name that's easy to remember from last summer is worth more than a clever one. For the rest of the dessert menu, try the <a href=\"dessert-business-name-generator.html\">Dessert</a> and <a href=\"candy-business-name-generator.html\">Candy</a> business name generators, or the <a href=\"food-truck-name-generator.html\">Food Truck Name Generator</a> for a van that sells more than ice cream.</p><p>For more, see all the <a href=\"../categories/biz_food-names.html\">food and drink business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
       {
-        "question": "How do I check a ice cream business name is free?",
+        "question": "What are good ice cream shop names?",
+        "answer": "Cheerful, short names: Scoop Dreams, Cone Voyage, Willow Farm Creamery, The Old Bandstand Ices or, for Italian-style ice cream, Gelateria del Porto. Choose a style for catchy, cute, classic, gelato or van names."
+      },
+      {
+        "question": "How do I check an ice cream business name is free?",
         "answer": "Press <strong>Check</strong> on any name to see whether it's free as a company name, a domain and a social media handle. Before you commit, search the official registers too: in the UK, Companies House and the UK trade mark register; in the US, your state's business register and the USPTO trade mark search. Look on a map app for businesses with the same name nearby."
       },
       {
         "question": "What makes a good ice cream van or truck name?",
         "answer": "Something short, cheerful and easy to read on a moving van: <em>Sunshine Ices</em>, <em>Sundae Drive</em> or <em>Rosie's Ice Cream Van</em>. Avoid the famous van brands, which are trade marks, and check your council or city's rules for trading pitches before you paint the name on."
+      },
+      {
+        "question": "What's the difference between gelato and ice cream?",
+        "answer": "Gelato is the Italian word for ice cream, and in English it usually means the Italian style: denser and served slightly warmer. A gelateria is a shop that sells it."
       }
     ]
   }

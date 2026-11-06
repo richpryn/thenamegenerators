@@ -161,16 +161,37 @@
       "title": "🎨 Graphic Design Business Name Generator",
       "tagline": "Names for a freelance graphic designer or design studio, from Font & Centre Design to Studio Fern."
     },
-    "intro": "Name your design business with this **Graphic Design Business Name Generator**: for freelance graphic designers, illustrators and design studios. Pick a style, or add your first name or town.",
-    "sections": [],
+    "intro": "Good graphic design business names look good written down, because clients judge your name as your first piece of work: a typography word like <em>Studio Italic</em>, a soft aesthetic name like <em>Pebble &amp; Pen</em>, or your own name, like <em>Made by Sarah</em>. Name your design business with this **Graphic Design Business Name Generator**: for freelance graphic designers, illustrators and design studios. Pick a style, or add your first name or town.",
+    "sections": [
+      {
+        "heading": "Eight good graphic design business names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Studio Italic</strong>: a type style, with a natural slant for a logo.</li><li><strong>Studio Baseline</strong>: the line letters sit on, a word designers know.</li><li><strong>Swash Studios</strong>: a swash is the decorative flourish on a letter.</li><li><strong>Asterisk Graphic Design</strong>: a single symbol you can build a logo from.</li><li><strong>Draw Attention Studio</strong>: a pun that says exactly what design does.</li><li><strong>Line of Sight Design Co.</strong>: clear, and easy to say on a call.</li><li><strong>Pebble & Pen</strong>: soft and aesthetic, for an illustrator or stationery designer.</li><li><strong>Made by Sarah</strong>: simple and honest for a freelancer.</li></ul>"
+      },
+      {
+        "heading": "How design studios name themselves",
+        "content": "<p>Design names often borrow the trade's own words: baseline, kerning, italic, swash, offset (a printing method), duotone. They show you know the craft, and they make a natural starting point for a logo. Studios also use founders' names or a number: Pentagram, one of the best-known design firms, was named for its five founding partners.</p><p>Freelancers usually do best with their own name, which grows with them and sells them as the designer. Studios that plan to hire can use <em>Studio</em>, <em>Design Co.</em> or <em>House</em>. Choose the aesthetic style for names that suit Instagram and stationery, or the modern style for single-word studio names.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Every name here has a <strong>Check</strong> button, which opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>: it looks up domains, social handles, the company register and trade mark searches in one place. Before you order signs or cards:</p><ul><li><strong>Company register.</strong> In the UK, search Companies House; a limited company's name can't be the same as one already registered. In the US, search your state's business register.</li><li><strong>Trade marks.</strong> Search the UK Intellectual Property Office or the USPTO for marks in your line of work. Registering a company doesn't give you trade mark rights.</li><li><strong>Domain and handles.</strong> Try the .co.uk or .com and the main social handles at the same time, and adjust the name rather than settle for a messy handle.</li><li><strong>Local search.</strong> Look the name up with your town, as two similar firms a few miles apart confuse clients and reviews.</li></ul><p>This is general guidance, not legal advice. For the full process, read <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p><p>Sketch a logo for your favourite before you decide: if it doesn't make a good mark, keep looking. For websites, try the <a href=\"web-design-name-generator.html\">Web Design Name Generator</a>; for agency work, the <a href=\"marketing-agency-name-generator.html\">Marketing Agency Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_services-names.html\">professional and creative business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
       {
-        "question": "How do I check a graphic design business name is free?",
-        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse customers."
+        "question": "What are good graphic design business names?",
+        "answer": "Names that make a good logo: a typography word like Studio Italic or Swash Studios, a soft name like Pebble & Pen, or your own name, like Made by Sarah."
       },
       {
         "question": "What should I name my graphic design company?",
         "answer": "Your name is your first piece of work, so clients judge it. Freelancers often use their own name (\"Sarah Rose Design\", \"Designed by Tom\"), which is honest and easy to grow; studios pick a short word they can build a logo around (\"Glyph Studio\") or a clever line (\"Font & Centre Design\"). Make sure it looks good written down and works as an Instagram handle and a domain."
+      },
+      {
+        "question": "Should a freelance designer use their own name?",
+        "answer": "Usually, yes. Clients are hiring you, and your name grows with your portfolio. Use a studio name if you plan to hire or want to sound bigger."
+      },
+      {
+        "question": "How do I check a graphic design business name is free?",
+        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse customers."
       }
     ]
   },

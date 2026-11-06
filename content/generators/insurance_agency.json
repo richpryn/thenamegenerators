@@ -166,16 +166,37 @@
       "title": "🛡️ Insurance Agency Name Generator",
       "tagline": "Names for an insurance agency or brokerage, from Safe & Sound Insurance to Pemberton Insurance Agency."
     },
-    "intro": "Name your agency or brokerage with this **Insurance Agency Name Generator**: for home and car, life, health and business insurance. Pick a style and the cover you sell, or add your first name or town.",
-    "sections": [],
+    "intro": "Good insurance agency names sound steady and local: a family name like <em>Westbrook Insurance Partners</em>, a reassuring image like <em>Under One Roof Insurance Agency</em>, or a little humour like <em>Bubble Wrapped Insurance Co.</em> Name your agency or brokerage with this **Insurance Agency Name Generator**: for home and car, life, health and business insurance. Pick a style and the cover you sell, or add your first name or town.",
+    "sections": [
+      {
+        "heading": "Eight good insurance agency names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Under One Roof Insurance Agency</strong>: home and car cover in one place, said as an image.</li><li><strong>Steady Ground Insurance Brokers</strong>: calm and reassuring.</li><li><strong>Policy in Plain English</strong>: a promise every customer wants.</li><li><strong>Bubble Wrapped Insurance Co.</strong>: a friendly joke about being protected.</li><li><strong>Spare Key Insurance Brokers</strong>: a homely image of being prepared.</li><li><strong>Westbrook Insurance Partners</strong>: a traditional surname-style firm.</li><li><strong>Parasol & Co.</strong>: cover from the weather, in one modern word.</li><li><strong>Clearview Cover</strong>: plain, modern and easy to say.</li></ul>"
+      },
+      {
+        "heading": "How insurance agencies name themselves",
+        "content": "<p>Insurance is sold on trust, so most agencies use a surname, the town, or an image of shelter: roofs, umbrellas, keys and steady ground. Funny names work for a friendly local broker, as long as the joke is about protection rather than disaster.</p><p>Words carry rules here. In the UK, selling or arranging insurance is regulated by the Financial Conduct Authority, and <em>Insurance</em> and <em>Assurance</em> are sensitive words that need the FCA's view before Companies House accepts them in a company name. In the US, agents are licensed by each state, and some states have rules about agency names. Use <em>Brokers</em> only if you act for your customers, and stay well away from any big insurer's name or slogan.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Every name here has a <strong>Check</strong> button, which opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>: it looks up domains, social handles, the company register and trade mark searches in one place. Before you order signs or cards:</p><ul><li><strong>Company register.</strong> In the UK, search Companies House; a limited company's name can't be the same as one already registered. In the US, search your state's business register. <em>Insurance</em> and <em>Assurance</em> are sensitive words that need the FCA's view first.</li><li><strong>Trade marks.</strong> Search the UK Intellectual Property Office or the USPTO for marks in your line of work. Registering a company doesn't give you trade mark rights.</li><li><strong>Domain and handles.</strong> Try the .co.uk or .com and the main social handles at the same time, and adjust the name rather than settle for a messy handle.</li><li><strong>Local search.</strong> Look the name up with your town, as two similar firms a few miles apart confuse clients and reviews.</li></ul><p>This is general guidance, not legal advice. For the full process, read <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p><p>For a general firm name, try the <a href=\"business-name-generator.html\">Business</a> or <a href=\"consulting-business-name-generator.html\">Consulting</a> generators.</p><p>For more, see all the <a href=\"../categories/biz_services-names.html\">professional and creative business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
       {
-        "question": "How do I check a insurance agency name is free?",
-        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse customers."
+        "question": "What are good insurance agency names?",
+        "answer": "Steady, reassuring names: a surname like Westbrook Insurance Partners, an image like Under One Roof Insurance Agency, or a friendly line like Policy in Plain English."
       },
       {
         "question": "What should I name my insurance agency?",
         "answer": "Trust matters most, so many agents use their own surname (\"Pemberton Insurance Agency\") or their town; a friendly line (\"Rain or Shine Insurance\") stands out on a busy street. Steer clear of anything close to a big insurer's name or slogan. In the UK, \"insurance\" is a sensitive word in a company name, so you'll need the FCA's view before Companies House accepts it; in the US, check your state's rules for agency names."
+      },
+      {
+        "question": "Can I use Insurance in a UK company name?",
+        "answer": "Yes, but it's a sensitive word, so Companies House needs the Financial Conduct Authority's view before it accepts it. You'll also need FCA authorisation to sell insurance."
+      },
+      {
+        "question": "How do I check an insurance agency name is free?",
+        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse customers."
       }
     ]
   },

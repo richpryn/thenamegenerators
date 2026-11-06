@@ -795,16 +795,41 @@
       "title": "🖌️ Makeup Artist Name Generator",
       "tagline": "Names for a makeup artist, bridal MUA or makeup studio."
     },
-    "intro": "The **Makeup Artist Name Generator** suggests names for a makeup artist (or make-up artist) business, bridal MUA, makeup studio or Instagram page: catchy, classic, modern, luxury, aesthetic, your town or your own name.",
-    "sections": [],
+    "intro": "Good makeup artist names say who you are and what you do, so brides and clients can find you: \"Makeup by Sarah\", a studio name, or a soft brand word like Blush or Dewy. The **Makeup Artist Name Generator** suggests names for a makeup artist (or make-up artist) business, bridal MUA, makeup studio or Instagram page: catchy, classic, modern, luxury, aesthetic, your town or your own name.",
+    "sections": [
+      {
+        "heading": "Eight good makeup artist names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Brush & Blend Makeup</strong>: two things every artist does, in an easy rhythm.</li><li><strong>Made You Look</strong>: a catchy line that works as an Instagram name.</li><li><strong>Eastgate Bridal Makeup Studio</strong>: a place and \"bridal\", which is what brides search for.</li><li><strong>Dawson Makeup Artistry</strong>: a surname and \"artistry\" sounds established.</li><li><strong>The Dewy Edit</strong>: modern, and named after a finish clients ask for.</li><li><strong>No. 12 Makeup Atelier</strong>: a numbered address name with a luxury feel.</li><li><strong>Peony & Lilac Makeup</strong>: soft flower names that suit bridal work.</li><li><strong>Close-Up Glam</strong>: for an artist who does photo shoots and evenings out.</li></ul>"
+      },
+      {
+        "heading": "How makeup artist names work",
+        "content": "<p>Most makeup artists are found through Instagram, wedding directories and word of mouth, so the name has to work as a handle first. MUA, short for makeup artist, is common in handles and searches.</p><ul><li><strong>Your own name</strong> (\"Makeup by Sarah\", <em>Dawson Makeup Artistry</em>) suits freelancers, because clients book the artist.</li><li><strong>Bridal</strong> in the name helps if weddings are most of your work.</li><li><strong>Modern</strong> names use a finish or a product word: <em>Matte Finish Makeup Co.</em>, <em>Gloss Makeup Co.</em></li><li><strong>Luxury</strong> names borrow a number or an address: <em>No. 21 Makeup Rooms</em>, <em>Belgravia Makeup Artistry</em>.</li><li><strong>Aesthetic</strong> names use soft colours and textures: <em>Seashell Makeup Studio</em>, <em>Lavender Glam</em>.</li></ul><p>Both spellings, makeup and make-up, are fine in the UK. Pick one and use it everywhere.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Press <strong>Check</strong> on any name, or paste one into the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to see whether the domain and social handles are free and to jump to the company register and trade mark searches. Then:</p><ul><li><strong>Search the company register.</strong> In the UK that's Companies House; in the US, your state's business register.</li><li><strong>Search trade marks</strong> with the UK Intellectual Property Office or the USPTO, especially if you'll sell products or open more than one site.</li><li><strong>Look locally.</strong> Search Google Maps for makeup artists near you: a similar name a few streets away will confuse customers even if it's legally fine.</li><li><strong>Check the handle with and without \"mua\".</strong> Clients search for both.</li></ul><p>This is general guidance, not legal advice. For more on choosing and checking a name, read our guide: <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>"
+      },
+      {
+        "heading": "If you might grow",
+        "content": "<p>If you plan to hire other artists or launch a product line later, choose a brand name rather than your own, so the business can grow without you at every booking. For a product range, see the <a href=\"makeup-brand-name-generator.html\">Makeup Brand Name Generator</a> and the <a href=\"skincare-brand-name-generator.html\">Skincare Brand Name Generator</a>. Working alongside a hairdresser? Try the <a href=\"hair-salon-name-generator.html\">Hair Salon Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_beauty-names.html\">beauty and wellness business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good makeup artist names?",
+        "answer": "Names that say who you are and what you do, like Dawson Makeup Artistry or Eastgate Bridal Makeup Studio, or a soft brand name like The Dewy Edit or Peony & Lilac Makeup. Keep it short enough for an Instagram handle."
+      },
+      {
+        "question": "What should I call my makeup artist Instagram?",
+        "answer": "Use the same name as your business, so clients can find you everywhere. \"Makeup by Sarah\" or \"Sarah Hartley Makeup\" tells people who you are and what you do, and adding your town (\"Hampton Bridal Makeup\") helps local brides find you. Keep it short, avoid numbers and extra underscores, and check the handle is free on every platform before you print anything."
+      },
       {
         "question": "How do I check a makeup artist name is free?",
         "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, also search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as another business nearby with a similar name can confuse clients."
       },
       {
-        "question": "What should I call my makeup artist Instagram?",
-        "answer": "Use the same name as your business, so clients can find you everywhere. \"Makeup by Sarah\" or \"Sarah Hartley Makeup\" tells people who you are and what you do, and adding your town (\"Hampton Bridal Makeup\") helps local brides find you. Keep it short, avoid numbers and extra underscores, and check the handle is free on every platform before you print anything."
+        "question": "What does MUA mean?",
+        "answer": "Makeup artist. Many artists put it in their Instagram handle, so it's worth checking your name with and without it."
       }
     ]
   }

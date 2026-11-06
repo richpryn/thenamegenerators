@@ -859,9 +859,30 @@
       "title": "🥂 Catering Business Name Generator",
       "tagline": "Names for a catering company, from home-cooked buffets to wedding feasts."
     },
-    "intro": "A catering name goes on quotes, vans, aprons and wedding websites, so it needs to sound trustworthy and be easy to find. This **catering business name generator** gives you names in seven styles, from punny to elegant, including ones built from your town or your own name.",
-    "sections": [],
+    "intro": "Good catering names sound trustworthy enough for a wedding and simple enough to read on a van: a family name (<em>Granger &amp; Family Caterers</em>), a warm pun (<em>Pinch of Salt Catering</em>) or a short modern word (<em>Cloche</em>). This **catering business name generator** gives you names in seven styles, from punny to elegant, including ones built from your town or your own name.",
+    "sections": [
+      {
+        "heading": "Eight good catering names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Pinch of Salt Catering</strong>: a cooking phrase everyone knows, with a light touch.</li><li><strong>Hog Heaven Roasts</strong>: says exactly what you serve, and makes people smile.</li><li><strong>Simply Platters</strong>: short, plain and right for grazing boards and buffets.</li><li><strong>Rosemary Picnics</strong>: a herb and an occasion, for a softer, outdoor brand.</li><li><strong>Granger &amp; Family Caterers</strong>: a family name reads as a firm with a reputation.</li><li><strong>Cloche</strong>: one modern word: the silver dome lifted off a plate at the table.</li><li><strong>Laurel &amp; Sage Wedding Catering</strong>: two herbs and the word clients search for.</li><li><strong>Champagne &amp; Canapés</strong>: says weddings and drinks receptions before anyone reads the menu.</li></ul>"
+      },
+      {
+        "heading": "What makes a catering name work",
+        "content": "<ul><li><strong>Trust first.</strong> Clients are handing you their wedding or their company party. A family name, your own name or a calm, classic word does more than a joke for formal events.</li><li><strong>Say the occasion if you specialise.</strong> People search for \"wedding catering\", \"hog roast\" or \"afternoon tea\", so a name that includes it is easier to find.</li><li><strong>Leave room to grow.</strong> <em>Sarah's Sunday Roasts</em> is lovely until you start doing canapés. A wider word like <em>Kitchen</em>, <em>Catering Co.</em> or <em>Events</em> gives you room.</li><li><strong>Canapé, cloche, soirée:</strong> French words suit the luxury end of the market, because the vocabulary of formal dining came from France. Make sure clients can spell them when they search.</li></ul>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>A name from a generator is a starting point, not permission to use it. Before you order the van livery, aprons or website:</p><ul><li><strong>Company register.</strong> In the UK, search Companies House; you can't register a limited company with the same name as an existing one. In the US, search your state's business register.</li><li><strong>Trade marks.</strong> Search the UK trade mark register (or the USPTO in the US) for the goods and services you'll sell.</li><li><strong>Domain and handles.</strong> Check the .co.uk or .com and the Instagram and TikTok handles you'll need.</li><li><strong>Your area.</strong> Search a map app and the delivery apps for businesses with the same or a similar name nearby.</li></ul><p>Press <strong>Check</strong> on any name, or use the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to run most of these at once. For the full process, read our guide, <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>. This is general guidance, not legal advice.</p><p>In the UK, any food business must register with the local council at least 28 days before it starts trading. Registration is free, and the council will inspect you and give you a food hygiene rating.</p>"
+      },
+      {
+        "heading": "Tips for caterers",
+        "content": "<ul><li><strong>Put the name on the quote.</strong> Most catering is booked from a PDF quote or a wedding directory listing, so make sure the name looks right in an email signature.</li><li><strong>Get a matching email address</strong> rather than a free webmail one; it reads as a proper business to corporate clients.</li></ul><p>For the cake, try the <a href=\"cake-business-name-generator.html\">Cake Business Name Generator</a>; for a fixed premises, the <a href=\"restaurant-name-generator.html\">Restaurant</a> and <a href=\"cafe-name-generator.html\">Café</a> name generators; and for a van, the <a href=\"food-truck-name-generator.html\">Food Truck Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_food-names.html\">food and drink business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good catering business names?",
+        "answer": "Names that sound trustworthy and say what you do: Pinch of Salt Catering, Granger & Family Caterers, Laurel & Sage Wedding Catering or the one-word Cloche. Choose a style for punny, classic, modern or luxury names."
+      },
       {
         "question": "How do I check a catering name is free?",
         "answer": "Press <strong>Check</strong> on any name to see whether it's free as a company name, a domain and a social media handle. Before you commit, search the official registers too: in the UK, Companies House and the UK trade mark register; in the US, your state's business register and the USPTO trade mark search. Look on a map app for businesses with the same name nearby."
@@ -869,6 +890,10 @@
       {
         "question": "What's a good name for a home catering business?",
         "answer": "Many home caterers use their own name (<em>Sarah's Kitchen</em>, <em>Feasts by Sarah</em>) because clients are hiring a cook they trust. If you want to grow into weddings and corporate events, a name with <em>Catering Co.</em> or <em>Events</em> sounds bigger. Keep it general enough that you can add buffets, grazing boards or hog roasts later."
+      },
+      {
+        "question": "Do I need to register a catering business?",
+        "answer": "In the UK, yes: every food business, including one run from home, must register with the local council at least 28 days before trading. It's free, and the council will inspect your kitchen and give you a food hygiene rating."
       }
     ]
   }

@@ -147,16 +147,37 @@
       "title": "🌐 Web Design Name Generator",
       "tagline": "Names for a web designer, developer or agency, from Second Site Web Design to Larch Digital."
     },
-    "intro": "Name your business with this **Web Design Name Generator**: for freelance web designers, web developers and web design agencies. Pick a style and what you do, or add your first name or town.",
-    "sections": [],
+    "intro": "Good web design business names are short, easy to spell aloud and free as a domain: a building word like <em>Joist Web</em>, a clear service name like <em>Rhodes Web Design &amp; Build</em>, or a pun like <em>Site for Sore Eyes</em>. Name your business with this **Web Design Name Generator**: for freelance web designers, web developers and web design agencies. Pick a style and what you do, or add your first name or town.",
+    "sections": [
+      {
+        "heading": "Eight good web design business names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Above the Fold Web Co.</strong>: the newspaper term for what you see first, used on the web too.</li><li><strong>Site for Sore Eyes</strong>: a pun on sight for sore eyes.</li><li><strong>Bookmarked Web Design Co.</strong>: what every client wants their site to be.</li><li><strong>Joist Web</strong>: a building word: sites are built, like houses.</li><li><strong>Hinge Websites</strong>: short, solid and easy to spell.</li><li><strong>Kestrel Digital</strong>: a bird with sharp eyes, for a modern studio.</li><li><strong>Rhodes Web Design & Build</strong>: a surname and a full description of the job.</li><li><strong>Sarah Builds Websites</strong>: plain and personal for a freelancer.</li></ul>"
+      },
+      {
+        "heading": "How web designers name themselves",
+        "content": "<p>Your own website is the first thing clients judge, and the domain has to match the name, so short wins. Building words work well (<em>joist</em>, <em>hinge</em>, <em>beam</em>, <em>brick</em>), because a website is built, and so do web terms that clients half-know: <em>above the fold</em>, <em>bookmarked</em>, <em>site lines</em>. Avoid hyphens and odd spellings, which are hard to say on the phone.</p><p>The last word says what you do: <em>Web Design</em> for the look, <em>Web Development</em> or <em>Digital</em> for the build, and <em>Websites</em> for small businesses that just want one that works. Choose design or development and the generator adjusts its words.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Every name here has a <strong>Check</strong> button, which opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>: it looks up domains, social handles, the company register and trade mark searches in one place. Before you order signs or cards:</p><ul><li><strong>Company register.</strong> In the UK, search Companies House; a limited company's name can't be the same as one already registered. In the US, search your state's business register.</li><li><strong>Trade marks.</strong> Search the UK Intellectual Property Office or the USPTO for marks in your line of work. Registering a company doesn't give you trade mark rights.</li><li><strong>Domain and handles.</strong> Try the .co.uk or .com and the main social handles at the same time, and adjust the name rather than settle for a messy handle.</li><li><strong>Local search.</strong> Look the name up with your town, as two similar firms a few miles apart confuse clients and reviews.</li></ul><p>This is general guidance, not legal advice. For the full process, read <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p><p>For the graphics behind the site, try the <a href=\"graphic-design-business-name-generator.html\">Graphic Design Business Name Generator</a>; for a software product, the <a href=\"tech-company-name-generator.html\">Tech Company Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_services-names.html\">professional and creative business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
       {
-        "question": "How do I check a web design business name is free?",
-        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse customers."
+        "question": "What are good web design business names?",
+        "answer": "Short names that work as a domain: building words like Joist Web, web terms like Above the Fold Web Co., or a clear service name like Rhodes Web Design & Build."
       },
       {
         "question": "Should my web design business name match my domain?",
         "answer": "Yes, as closely as you can: clients will judge you by your own website first. Choose a name that's short, easy to spell when read aloud and has no hyphens, then check the .com and your country's domain (.co.uk in the UK) before you print anything. If the exact domain is taken, adding \"web\", \"studio\" or your town to the domain is fine."
+      },
+      {
+        "question": "Should I call myself a web designer or web developer?",
+        "answer": "Use the one clients search for: web design for the look and small-business sites, web development for custom builds and code. Web Design & Build covers both."
+      },
+      {
+        "question": "How do I check a web design business name is free?",
+        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse customers."
       }
     ]
   },

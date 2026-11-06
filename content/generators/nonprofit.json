@@ -1698,16 +1698,41 @@
       "title": "🤝 Nonprofit Name Generator",
       "tagline": "Names for a nonprofit, charity, foundation or community group, for any cause."
     },
-    "intro": "A good charity name tells people what you stand for and is easy to remember when they come to donate. This **Nonprofit Name Generator** suggests names for nonprofits, charities, foundations and community groups, by cause, including names built from your town or in memory of someone.",
-    "sections": [],
+    "intro": "Good nonprofit and charity names say what you do or who you help, and are easy to remember when someone comes to donate: <em>Spare a Spoon</em>, <em>Little Hearts Project</em>, <em>Woodside Animal Trust</em>. This **Nonprofit Name Generator** suggests names for nonprofits, charities, foundations and community groups, by cause, including names built from your town or in memory of someone.",
+    "sections": [
+      {
+        "heading": "Eight good nonprofit names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Spare a Spoon</strong>: a gentle ask that's also the name of a food project.</li><li><strong>Pass the Plate Community Pantry</strong>: says how it works and what it does.</li><li><strong>Little Hearts Project</strong>: warm and simple, for a children's cause.</li><li><strong>Room to Grow for Young Carers</strong>: names exactly who you help.</li><li><strong>Woodside Animal Trust</strong>: a classic, settled name for an animal charity.</li><li><strong>Willow Rewild</strong>: modern and specific to nature work.</li><li><strong>Sarah's Voice Foundation</strong>: a memorial name that gives a person a lasting voice.</li><li><strong>Kin Conservation</strong>: short and modern, for a wildlife group.</li></ul>"
+      },
+      {
+        "heading": "Charity, nonprofit or foundation?",
+        "content": "<p><em>Nonprofit</em> is mostly American wording; in the UK people say <em>charity</em>, <em>not-for-profit</em> or <em>community group</em>. The ending you choose tells people what kind of organisation you are:</p><ul><li><strong>Trust</strong> and <strong>Foundation</strong>: established, often grant-giving or set up in someone's name.</li><li><strong>Project</strong>: hands-on and local, like a food project or a youth project.</li><li><strong>Collective</strong> and <strong>Network</strong>: people working together.</li><li><strong>CIC</strong>: in the UK, a community interest company is a separate legal form for social enterprises, with its own rules.</li></ul><p>Choose a cause and the generator picks words to suit it: plates and pantries for food, paws and sanctuaries for animals, woodland and rewilding for nature.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Press <strong>Check</strong> on any name, or use the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to see whether it's free as a domain and a social handle and to search the company register. Before you commit:</p><ul><li><strong>Company register:</strong> Companies House in the UK, or your state's business register in the US.</li><li><strong>Trade marks:</strong> search the UK IPO or USPTO register for anyone using the name in your field.</li><li><strong>Locally:</strong> search Google Maps for your area, since parents and clients will find you there first.</li><li><strong>Charity registers:</strong> in England and Wales, search the Charity Commission register; charities there with an income over £5,000 have to register. \"Charity\" is also a sensitive word in UK company names. In the US, check the IRS Tax Exempt Organization Search.</li></ul><p>For the full process, see <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>. This is general guidance, not legal advice.</p><p>Avoid names close to a well-known charity. Besides confusing donors, the Charity Commission can direct a charity to change a name that's too similar to another one.</p>"
+      },
+      {
+        "heading": "Names in memory of someone",
+        "content": "<p>A foundation set up in someone's memory often uses their first name, as in <em>Sarah's Light Foundation</em>. Choose <em>From a name, or in memory</em> and type the name. Talk it through with the family first, and make sure the name will still feel right on a fundraising page years from now.</p><p>For other care and community organisations, try the <a href=\"home-care-name-generator.html\">Home Care</a> and <a href=\"daycare-name-generator.html\">Daycare</a> name generators.</p><p>For more, see all the <a href=\"../categories/biz_care-names.html\">pets, care and learning business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good nonprofit names?",
+        "answer": "Names that say the cause or the people you help and are easy to remember: Spare a Spoon, Little Hearts Project, Woodside Animal Trust or Willow Rewild. Choose a cause for names to match."
+      },
+      {
+        "question": "What makes a good nonprofit name?",
+        "answer": "Say the cause or the people you help, keep it short enough for a banner and a web address, and make sure it does not sound like a big existing charity, which can confuse donors and break the rules on charity names. A hopeful phrase plus a plain ending (<em>Full Plates Food Project</em>, <em>Bright Futures Trust</em>) works well, and a foundation set up in someone's memory often uses their name."
+      },
       {
         "question": "How do I check a nonprofit name is free?",
         "answer": "Press **Check** on any name to see whether it's free as a company name, a domain and a social media handle. Before you commit, search the official registers too: in the UK, Companies House; in the US, your state's business register and the USPTO trade mark search. In England and Wales, also search the Charity Commission register; in the US, check the IRS Tax Exempt Organization Search."
       },
       {
-        "question": "What makes a good nonprofit name?",
-        "answer": "Say the cause or the people you help, keep it short enough for a banner and a web address, and make sure it does not sound like a big existing charity, which can confuse donors and break the rules on charity names. A hopeful phrase plus a plain ending (<em>Full Plates Food Project</em>, <em>Bright Futures Trust</em>) works well, and a foundation set up in someone's memory often uses their name."
+        "question": "Is it a charity or a nonprofit?",
+        "answer": "Nonprofit is mostly US wording. In the UK, a registered charity, a community interest company (CIC) and a not-for-profit group are different things, so use the word that matches how you're set up."
       }
     ]
   }
