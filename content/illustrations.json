@@ -387,6 +387,10 @@
     "t_shirt_business": "gift-shop",
     "soap_business": "gift-shop",
     "crochet_business": "gift-shop",
-    "makeup_brand": "gift-shop"
+    "makeup_brand": "gift-shop",
+    "pizza_business": "cafe-front",
+    "bubble_tea_shop": "cafe-front",
+    "juice_bar": "cafe-front",
+    "candy_business": "cafe-front"
   }
 }
