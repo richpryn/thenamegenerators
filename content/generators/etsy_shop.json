@@ -760,9 +760,30 @@
       "title": "🛍️ Etsy Shop Name Generator",
       "tagline": "Handmade shop names that fit the 20-letter limit, from GlueAndGlitter to JuniperAndThistle."
     },
-    "intro": "Opening a shop for your candles, prints, pottery or printables? This **Etsy shop name generator** gives you handmade shop names in six styles, each one written the way Etsy needs it: one word, letters only, 20 characters at most. Check each one is free before you set up the shop.",
-    "sections": [],
+    "intro": "Good Etsy shop names are short, easy to read without spaces and say something about what you make: <em>PaperAndPixel</em> for prints, <em>PinAndPatch</em> for sewing, <em>IvyAndBramble</em> for anything botanical. Opening a shop for your candles, prints, pottery or printables? This **Etsy shop name generator** gives you handmade shop names in six styles, each one written the way Etsy needs it: one word, letters only, 20 characters at most. Check each one is free before you set up the shop.",
+    "sections": [
+      {
+        "heading": "Eight good Etsy shop names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>PaperAndPixel</strong>: paper prints and digital files in one name.</li><li><strong>IvyAndBramble</strong>: two hedgerow plants, for a calm, botanical shop.</li><li><strong>PinAndPatch</strong>: says sewing in eleven letters.</li><li><strong>NeatPrintables</strong>: clear and searchable for printables and digital downloads.</li><li><strong>TinyPebbleDesigns</strong>: cute, with a word that says you design things.</li><li><strong>StudioTessera</strong>: modern; a tessera is one of the small tiles in a mosaic.</li><li><strong>BirchValleyMade</strong>: sounds like a place, with \"Made\" to say it's handmade.</li><li><strong>HeartAndHandCo</strong>: warm, and about making things by hand.</li></ul>"
+      },
+      {
+        "heading": "Writing a name the way Etsy needs it",
+        "content": "<p>Etsy shop names are written as one word, so sellers use CamelCase: a capital letter at the start of each word, as in <em>JuniperAndThistle</em>. That keeps the name readable without spaces. A few habits help:</p><ul><li><strong>\"And\" joins two things</strong> neatly: <em>HeatherAndFeather</em>, <em>DoveAndPoppy</em>.</li><li><strong>Endings like Makes, Made, Makery, Studio and Co.</strong> tell buyers it's a maker's shop.</li><li><strong>Say what you sell</strong> if you can: Prints, Printables, Candles, Designs.</li></ul><p>This site isn't connected to Etsy. Every name here avoids the word Etsy and keeps to the length limit.</p>"
+      },
+      {
+        "heading": "Check it's free before you set up the shop",
+        "content": "<p>Before you pay for a sign, a logo or printed bags, check the name is free:</p><ul><li><strong>Company register:</strong> if you form a limited company in the UK, Companies House won't accept a name that's the same as one already registered. In the US, search your state's business register.</li><li><strong>Trade marks:</strong> search the UK IPO or USPTO register for your kind of goods, so you don't clash with an existing brand.</li><li><strong>Web and social:</strong> check the domain and the handles you'll use, since many customers will find you on Instagram first.</li></ul><p>Press <strong>Check</strong> on any name, or use the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to run those searches in one place. The <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a> guide covers the rest. This is general guidance, not legal advice.</p>"
+      },
+      {
+        "heading": "Tips for a handmade shop",
+        "content": "<ul><li><strong>Think beyond one platform.</strong> If the shop grows, you'll want the same name for a website and social handles.</li><li><strong>Leave room to grow.</strong> A name tied to one product can feel narrow if you add more.</li><li><strong>Never use another brand's name</strong> in your shop name.</li></ul><p>For a name by trade, try the <a href=\"candle-business-name-generator.html\">Candle</a>, <a href=\"pottery-business-name-generator.html\">Pottery</a>, <a href=\"sticker-business-name-generator.html\">Sticker</a> and <a href=\"crochet-business-name-generator.html\">Crochet</a> business name generators.</p><p>For more, see all the <a href=\"../categories/biz_shops-names.html\">shop and brand business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good Etsy shop names?",
+        "answer": "Short CamelCase names that say what you make, such as PaperAndPixel, IvyAndBramble, PinAndPatch or NeatPrintables. Pick a style and press Check to see if the name is free."
+      },
       {
         "question": "How do I check an Etsy shop name is free?",
         "answer": "Press <strong>Check</strong> on any name to see whether it is free as a company name, a web address and a social media handle; Etsy itself tells you if a shop name is taken when you type it in. If you will trade under the name, also search the Companies House register in the UK, or your state's business register and the USPTO trade mark search in the US."
@@ -770,6 +791,10 @@
       {
         "question": "What are the rules for an Etsy shop name?",
         "answer": "Etsy shop names must be 4 to 20 characters long, use only letters and numbers, and have no spaces, so sellers write them in CamelCase, such as <em>JuniperAndThistle</em>. They must not copy another brand or use Etsy's own name, and you can change yours later, within Etsy's limits. Every name here follows those rules."
+      },
+      {
+        "question": "Can I use my own name for an Etsy shop?",
+        "answer": "Yes, and it's common: choose With my name for names like SarahMakesCandles. A personal name is easy to remember, but check another seller isn't already using it."
       }
     ]
   },

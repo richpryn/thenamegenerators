@@ -1159,9 +1159,30 @@
       "title": "🎁 Gift Shop Name Generator",
       "tagline": "Names for a gift shop or gift box business, from Many Happy Returns to The Gilded Ribbon."
     },
-    "intro": "Opening a card and gift shop, a seaside souvenir shop or an online gift box business? This **gift shop name generator** gives you names in eight styles, from wrapping-paper puns to luxury and hamper names, and you can check each one is free before you order the bags.",
-    "sections": [],
+    "intro": "Good gift shop names feel warm and say \"present\" without trying too hard: a phrase people already use (<em>It's a Gift</em>), something from the wrapping (<em>Tied with a Bow</em>), or the name of the high street. Opening a card and gift shop, a seaside souvenir shop or an online gift box business? This **gift shop name generator** gives you names in eight styles, from wrapping-paper puns to luxury and hamper names, and you can check each one is free before you order the bags.",
+    "sections": [
+      {
+        "heading": "Eight good gift shop names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>It's a Gift</strong>: a phrase everyone knows, with a double meaning.</li><li><strong>Tied with a Bow</strong>: the moment of handing a present over.</li><li><strong>The Very Thing</strong>: what you say when you find the right present.</li><li><strong>Gifts on the Square</strong>: tells locals exactly where you are.</li><li><strong>The Golden Parcel</strong>: a luxury name with a bit of sparkle.</li><li><strong>Box of Good Things Co.</strong>: a gift box business in plain words.</li><li><strong>Honey Puffin Gift Shop</strong>: cute and coastal, for a seaside shop.</li><li><strong>The Old Coach House Cards &amp; Gifts</strong>: a building name that sounds like it's been there for years.</li></ul>"
+      },
+      {
+        "heading": "What makes a gift shop name work",
+        "content": "<ul><li><strong>Warm words:</strong> happy, little, cosy, golden, ribbon, parcel. A gift shop sells a feeling as much as things.</li><li><strong>Say cards if you sell them.</strong> \"Cards &amp; Gifts\" is a classic high-street pairing because people look for a card first.</li><li><strong>Gift boxes and hampers</strong> sell online, so the name needs to work as a web address: <em>Teatime Boxes</em>, <em>Box of Good Things Co.</em></li><li><strong>Local names</strong> suit tourist towns: visitors like a shop that's clearly from where they are.</li></ul>"
+      },
+      {
+        "heading": "Check it's free before you order the bags",
+        "content": "<p>Before you pay for a sign, a logo or printed bags, check the name is free:</p><ul><li><strong>Company register:</strong> if you form a limited company in the UK, Companies House won't accept a name that's the same as one already registered. In the US, search your state's business register.</li><li><strong>Trade marks:</strong> search the UK IPO or USPTO register for your kind of goods, so you don't clash with an existing brand.</li><li><strong>Web and social:</strong> check the domain and the handles you'll use, since many customers will find you on Instagram first.</li></ul><p>Press <strong>Check</strong> on any name, or use the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to run those searches in one place. The <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a> guide covers the rest. This is general guidance, not legal advice.</p>"
+      },
+      {
+        "heading": "Tips for a gift shop",
+        "content": "<ul><li><strong>Keep it short enough for a paper bag and a gift tag.</strong></li><li><strong>Avoid names close to big card and gift chains.</strong></li><li><strong>Seasonal?</strong> Pick a name that still works in July as well as December.</li></ul><p>For a shop with more homeware or clothes, try the <a href=\"boutique-name-generator.html\">Boutique Name Generator</a>; for handmade stock, the <a href=\"candle-business-name-generator.html\">Candle Business</a> and <a href=\"etsy-shop-name-generator.html\">Etsy Shop</a> name generators.</p><p>For more, see all the <a href=\"../categories/biz_shops-names.html\">shop and brand business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are some cute gift shop names?",
+        "answer": "Soft, cheerful names such as Cheery Owl Gift Shop, Honey Puffin Gift Shop, Tied with a Bow or Sunny Lemon Gift Co. Choose Cute for more."
+      },
       {
         "question": "How do I check a gift shop name is free?",
         "answer": "Press <strong>Check</strong> on any name to see whether it is free as a company name, a web address and a social media handle. In the UK, search the Companies House register; in the US, search your state's business register and the USPTO trade mark search. Do this before you pay for a logo, labels or signage."
@@ -1169,6 +1190,10 @@
       {
         "question": "What is a good name for a gift shop?",
         "answer": "One that feels warm, says gifts or hints at them, and is easy to remember when someone needs a present in a hurry. A pun such as <em>Many Happy Returns</em> suits a fun card shop, a classic name such as <em>Langford Cards &amp; Gifts</em> suits the high street, and a gift box business often uses <em>Box Co.</em> or <em>Hampers</em>. Avoid names close to big chains such as Clintons, Card Factory or Paperchase."
+      },
+      {
+        "question": "What should I call a gift box business?",
+        "answer": "Say box, hamper or parcel so people know what you sell: Box of Good Things Co., Teatime Boxes or Boxes & Bows. Choose Gift boxes and hampers for names like these."
       }
     ]
   }
