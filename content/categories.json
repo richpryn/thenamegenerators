@@ -3065,7 +3065,11 @@
       "candle_business",
       "clothing_brand",
       "jewelry_business",
-      "brand"
+      "brand",
+      "crochet_business",
+      "makeup_brand",
+      "soap_business",
+      "t_shirt_business"
     ],
     "startHeading": "Try these name generators",
     "startIntro": "Use these tools to name a label, a shop or a small handmade brand.",
