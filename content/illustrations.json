@@ -367,6 +367,10 @@
     "barber_shop": "crown",
     "makeup_artist": "star",
     "skincare_brand": "leaf-moon",
-    "spa": "cloud"
+    "spa": "cloud",
+    "catering_business": "bunting",
+    "restaurant": "shopfront",
+    "food_truck": "street",
+    "ice_cream_business": "cup"
   }
 }

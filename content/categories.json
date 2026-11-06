@@ -2967,7 +2967,11 @@
       "cake_business",
       "cookie_business",
       "dessert_business",
-      "cafe"
+      "cafe",
+      "catering_business",
+      "food_truck",
+      "ice_cream_business",
+      "restaurant"
     ],
     "startHeading": "Try these name generators",
     "startIntro": "Use these tools to name a bakery, cake business, cookie shop, dessert bar or café.",
