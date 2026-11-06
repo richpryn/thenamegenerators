@@ -1,0 +1,70 @@
+{
+  "_readme": "Links used by the Business Name Checker (business-name-checker.html). To switch on an affiliate programme, replace that entry's url with the tracking link the programme gives you (keep {domain} or {q} where the name should go) and set affiliate to true: the link is then marked rel=sponsored and the disclosure line shows. companiesHouseApi is the address of the Cloudflare Worker in workers/companies-house once it's deployed; while it's empty the page links to Companies House instead.",
+  "companiesHouseApi": "",
+  "disclosure": "We may earn a small commission if you buy through some of these links. It doesn't change the price you pay.",
+  "domains": {
+    "global": {
+      "name": "Namecheap",
+      "url": "https://www.namecheap.com/domains/registration/results/?domain={domain}",
+      "affiliate": false
+    }
+  },
+  "formation": {
+    "uk": {
+      "name": "1st Formations",
+      "label": "Register a UK company",
+      "blurb": "Form a limited company with Companies House online, usually within a day.",
+      "url": "https://www.1stformations.co.uk/",
+      "affiliate": false
+    },
+    "us": {
+      "name": "ZenBusiness",
+      "label": "Form an LLC",
+      "blurb": "Set up an LLC in your state online.",
+      "url": "https://www.zenbusiness.com/",
+      "affiliate": false
+    }
+  },
+  "logo": {
+    "global": {
+      "name": "Looka",
+      "label": "Make a logo",
+      "blurb": "Try logo designs with your new name in a few minutes.",
+      "url": "https://looka.com/",
+      "affiliate": false
+    }
+  },
+  "usStates": [],
+  "registers": {},
+  "tradeMarks": [
+    {
+      "name": "UK IPO trade mark search",
+      "url": "https://trademarks.ipo.gov.uk/ipo-tmtext",
+      "countries": [
+        "uk",
+        "other"
+      ]
+    },
+    {
+      "name": "USPTO trademark search",
+      "url": "https://tmsearch.uspto.gov/",
+      "countries": [
+        "us",
+        "other"
+      ]
+    },
+    {
+      "name": "EUIPO eSearch (EU)",
+      "url": "https://euipo.europa.eu/eSearch/",
+      "countries": [
+        "uk",
+        "ie",
+        "other"
+      ]
+    },
+    {
+      "name": "WIPO Global Brand Database (worldwide)",
+      "url": "https://branddb.wipo.int/"
+    }
+  ]
+}

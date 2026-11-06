@@ -1863,5 +1863,6 @@
         "answer": "This one gives you strong single words to build a shop, trade or service name around. The <a href=\"company-name-generator.html\">Company Name Generator</a> makes startup-style names: invented words, blends and -ify/-ly endings, and the <a href=\"brand-name-generator.html\">Brand Name Generator</a> suggests names for a product or range, sorted by industry and feel. Whichever you use, check the name is free before you commit to it."
       }
     ]
-  }
+  },
+  "checkName": true
 }

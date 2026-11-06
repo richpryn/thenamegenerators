@@ -1372,5 +1372,6 @@
         "answer": "This one makes startup-style names: invented words, blends and -ify/-ly endings. The <a href=\"business-name-generator.html\">Business Name Generator</a> gives you strong single words to build a shop, trade or service name around, and the <a href=\"brand-name-generator.html\">Brand Name Generator</a> suggests names for a product or range, sorted by industry and feel. Whichever you use, check the name is free before you commit to it."
       }
     ]
-  }
+  },
+  "checkName": true
 }

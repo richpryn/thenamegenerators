@@ -19,6 +19,7 @@ const { filtersHtml, optionLabel } = require('../lib/page.js');
 const RecipeEngine = require('../lib/recipe-engine.js');
 const layout = require('./layout');
 const Illustrations = require('../lib/illustrations.js');
+const { generateCheckerPage } = require('./checker-page');
 
 const ROOT = path.join(__dirname, '..');
 const POSTS_DIR = path.join(ROOT, 'posts');
@@ -939,6 +940,7 @@ const STATIC_SHARE_PAGES = [
   { name: 'home', title: 'Name Generators for D&D, Stories and Games', line: 'Names for characters, places, weapons, events and bands. Free to use, no sign-up.', motif: 'dragon' },
   { name: 'all-generators', title: 'All Name Generators', line: 'Every generator on the site, from elves to escape rooms.', motif: 'quill' },
   { name: 'name-tools', title: 'Name Tools', line: 'Spin a wheel, draw a name, pick raffle winners, split teams or run Secret Santa.', motif: 'clover' },
+  { name: 'business-name-checker', title: 'Business Name Checker', line: 'Is your business name taken? Company registers, domains, trade marks and handles in one go.', motif: 'quill' },
   { name: 'about', title: 'About The Name Generators', line: 'Why this site exists.', motif: 'note' },
   { name: 'privacy', title: 'Privacy and cookies', line: 'What this site keeps, and how to change your mind.', motif: 'quill' },
 ];
@@ -1961,6 +1963,8 @@ function build() {
     fs.writeFileSync(path.join(ROOT, page), generateNameToolPage(key, site));
   }
   fs.writeFileSync(path.join(ROOT, 'name-tools.html'), generateNameToolsHub(site));
+  fs.writeFileSync(path.join(ROOT, 'business-name-checker.html'), layout.stampAssets(generateCheckerPage(site, { escapeHtml, scriptJson, ICON_LINKS, AUTHOR })));
+  console.log('  ✅ Created: business-name-checker.html');
   fs.mkdirSync(GUIDES_DIR, { recursive: true });
   for (const guide of site.guides()) {
     fs.writeFileSync(path.join(GUIDES_DIR, `${guide.slug}.html`), generateGuidePage(guide, site));
@@ -2043,6 +2047,13 @@ ${NAME_TOOLS.map(t => `  <url>
     <lastmod>${latest([lastChanged('privacy.html')])}</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <!-- Business Name Checker -->
+  <url>
+    <loc>${baseUrl}/business-name-checker.html</loc>
+    <lastmod>${siteDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <!-- HTML Sitemap -->
   <url>

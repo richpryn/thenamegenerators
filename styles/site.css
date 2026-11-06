@@ -204,6 +204,33 @@ h1{font:800 var(--h1)/1.05 var(--head);letter-spacing:-.025em;margin:0;text-wrap
 .save svg.ic{width:15px;height:17px;fill:none;stroke:var(--ink);stroke-width:1.8;stroke-linejoin:round}
 .save[aria-pressed="true"]{--fill:var(--hi)}
 .save[aria-pressed="true"] svg.ic{fill:var(--ink)}
+/* Business pages: Check opens the name in the Business Name Checker. */
+.chk{--fill:#fff;height:40px;flex:none;display:flex;align-items:center;gap:4px;padding:0 10px;font:600 14px/1 var(--head);color:var(--ink);text-decoration:none}
+.chk svg.ic{width:14px;height:14px;fill:none;stroke:var(--ink);stroke-width:2}
+@media (max-width:420px){.chk span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}.chk{width:40px;justify-content:center;padding:0}}
+/* Business Name Checker page (business-name-checker.html). */
+.ck-form{display:grid;gap:var(--s3)}
+@media (min-width:720px){.ck-form{grid-template-columns:2fr 1fr;align-items:end}.ck-form .go{grid-column:1/-1}}
+.ck-field .name-input{width:100%;box-sizing:border-box;min-height:48px}
+.ck-field label{display:block;font:700 15px/1.3 var(--head);margin-bottom:6px}
+.ck-select{width:100%;min-height:48px;padding:0 12px;font:500 16px var(--body);border:2px solid var(--ink);border-radius:10px;background:#fff;color:var(--ink)}
+.ck-results{margin-top:var(--s5);display:grid;gap:var(--s4)}
+.ck-for{margin:0}
+.ck-card{--fill:var(--card);padding:var(--s4)}
+.ck-card h3{margin:0 0 var(--s3)}
+.ck-list{list-style:none;margin:0;padding:0}
+.ck-list li{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s2);padding:8px 0;border-bottom:1px solid var(--rule)}
+.ck-item{flex:1;min-width:10ch;font:500 17px/1.3 var(--body);overflow-wrap:anywhere}
+.ck-badge{font:700 13px/1 var(--head);padding:6px 9px;border-radius:999px;border:1.5px solid var(--ink);white-space:nowrap}
+.ck-free{background:#d8f0d2}.ck-taken{background:#f6d4cf}.ck-unknown{background:#eee}.ck-wait{background:#fff;opacity:.7}
+.ck-btn{--fill:var(--hi);display:inline-flex;align-items:center;min-height:40px;padding:0 14px;font:700 15px/1 var(--head);color:var(--ink);text-decoration:none}
+.ck-links{display:flex;flex-wrap:wrap;gap:8px 18px;list-style:none;margin:0;padding:0}
+.ck-note,.ck-sub{color:var(--ink-2,inherit);font-size:16px}
+.ck-steps li{margin-bottom:var(--s3)}
+.ck-disclose,.ck-small{font-size:14px;opacity:.8}
+.ck-groups{display:grid;gap:var(--s4)}
+@media (min-width:720px){.ck-groups{grid-template-columns:1fr 1fr}}
+.ck-group h3{margin:0 0 8px}
 /* The write-in animation must end with no clipping, or it cuts off the save buttons' shadows. */
 .results li.new{animation:write .45s ease both;animation-delay:calc(var(--i,0) * 40ms)}
 @keyframes write{from{opacity:0;clip-path:inset(0 100% 0 0)}to{opacity:1;clip-path:inset(-12px -12px -12px -12px)}}
