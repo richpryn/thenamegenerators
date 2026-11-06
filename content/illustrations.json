@@ -395,6 +395,10 @@
     "massage_business": "salon-chair",
     "tattoo_shop": "salon-chair",
     "gym": "salon-chair",
-    "yoga_studio": "salon-chair"
+    "yoga_studio": "salon-chair",
+    "interior_design_business": "toolbox",
+    "auto_repair_shop": "toolbox",
+    "moving_company": "toolbox",
+    "pest_control_business": "toolbox"
   }
 }
