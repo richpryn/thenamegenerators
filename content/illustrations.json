@@ -359,6 +359,10 @@
     "plumbing_business": "gear",
     "electrical_business": "lightbulb",
     "roofing_company": "house",
-    "painting_business": "pencil"
+    "painting_business": "pencil",
+    "marketing_agency": "mic",
+    "tech_company": "robot",
+    "accounting_business": "lamp",
+    "insurance_agency": "crowned-shield"
   }
 }

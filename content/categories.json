@@ -2648,23 +2648,27 @@
     "eyebrow": "Business names",
     "featured": [
       {
+        "key": "accounting_business",
+        "note": "Names for accounting firms, bookkeeping businesses and tax preparers: catchy, funny, class."
+      },
+      {
         "key": "consulting",
         "note": "Consulting and consultancy business names for business, HR, IT, marketing, finance and hea."
       },
       {
         "key": "event_planning",
         "note": "Names for event planners and party planning businesses: catchy, cute, classic, modern, lux."
-      },
-      {
-        "key": "photography_business",
-        "note": "Photography business names for weddings, families, newborns and pets: catchy, cute, classi."
       }
     ],
     "generators": [
+      "accounting_business",
       "consulting",
       "event_planning",
+      "insurance_agency",
+      "marketing_agency",
       "photography_business",
       "real_estate",
+      "tech_company",
       "business",
       "company"
     ],
