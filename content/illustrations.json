@@ -355,6 +355,10 @@
     "clothing_brand": "tag",
     "boutique": "shopfront",
     "jewelry_business": "ring",
-    "candle_business": "candle"
+    "candle_business": "candle",
+    "plumbing_business": "gear",
+    "electrical_business": "lightbulb",
+    "roofing_company": "house",
+    "painting_business": "pencil"
   }
 }

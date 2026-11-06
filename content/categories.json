@@ -2618,15 +2618,19 @@
         "note": "Construction company and building business names: catchy, classic family firms, strong, mo."
       },
       {
-        "key": "landscaping",
-        "note": "Landscaping and gardening business names: catchy puns, classic, nature-inspired, modern an."
+        "key": "electrical_business",
+        "note": "Names for electricians and electrical contractors: catchy and funny puns, classic, profess."
       }
     ],
     "generators": [
       "cleaning_business",
       "construction_company",
+      "electrical_business",
       "landscaping",
-      "lawn_care"
+      "lawn_care",
+      "painting_business",
+      "plumbing_business",
+      "roofing_company"
     ],
     "startHeading": "Choose your kind of business",
     "startIntro": "Pick the generator for your trade, then press Check on any name you like."
