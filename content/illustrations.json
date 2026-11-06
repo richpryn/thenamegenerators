@@ -28,11 +28,11 @@
     "animals": "dog",
     "worldbuilding": "compass-rose",
     "writing": "quill",
-    "biz_trades": "hammer",
+    "biz_trades": "toolbox",
     "biz_services": "lightbulb",
     "biz_care": "paw",
-    "biz_beauty": "hand",
-    "biz_food": "cookie",
+    "biz_beauty": "salon-chair",
+    "biz_food": "cafe-front",
     "biz_shops": "shopfront"
   },
   "generators": {
