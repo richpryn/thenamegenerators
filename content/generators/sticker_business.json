@@ -158,7 +158,7 @@
       "template": [
         "{name}'s [mine.goods]",
         "[mine.by] by {name}",
-        "{name} [mine.plain]",
+        "{name}'s [mine.plain]",
         "{name}'s [mine.noun] [mine.nounEnd]",
         "{name}'s [mine.kind] [mine.kindEnd]",
         "[mine.fixed]"
@@ -539,7 +539,6 @@
         "Holofoil",
         "Cut & Peel",
         "Transfer",
-        "Kraft",
         "Clearcoat",
         "Satin",
         "Shimmer",

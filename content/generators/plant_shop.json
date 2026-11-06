@@ -144,7 +144,7 @@
         "[mine.by] by {name}",
         "{name}'s [mine.type] [mine.typeEnd]",
         "{name} & [mine.pair]",
-        "{name} [mine.end]",
+        "{name}'s [mine.end]",
         "[mine.fixed]",
         "{name}'s Little [mine.little]"
       ]
@@ -729,7 +729,7 @@
         "Grown by {name}",
         "Potted by {name}",
         "{name} Grows",
-        "{name} Plants Things",
+        "{name}'s Plants Things",
         "Planted by {name}",
         "{name}'s Green Fingers",
         "{name} Loves Plants",

@@ -911,7 +911,6 @@
     "local": {
       "end": [
         "Perfumery",
-        "Parfums",
         "Fragrance Co.",
         "Scent Co.",
         "Perfume House",
@@ -923,7 +922,6 @@
         "Fragrance Lab",
         "Fragrance House",
         "Perfume Co.",
-        "Perfumers",
         "Scent Studio"
       ],
       "note": [
@@ -1024,7 +1022,6 @@
         "Parfums de {town}",
         "{town} Atelier",
         "Perfumed in {town}",
-        "Made in {town} Parfums",
         "{town} Nose",
         "The {town} Nose",
         "Blended in {town}",

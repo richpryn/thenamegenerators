@@ -161,7 +161,7 @@
     "mine": {
       "recipe": "template",
       "template": [
-        "{name} [mine.end]",
+        "{name}'s [mine.end]",
         "[mine.what] by {name}",
         "{name}'s [mine.adj] [mine.shop]",
         "{name}'s [mine.thing]",
@@ -484,7 +484,6 @@
         "Margin",
         "Ultramarine",
         "Oxblood",
-        "Kraft",
         "Imprint",
         "Colophon",
         "Leporello",
@@ -537,7 +536,6 @@
         "Offset",
         "Margin",
         "Ultramarine",
-        "Kraft",
         "Imprint",
         "Colophon",
         "Leporello",
@@ -599,7 +597,6 @@
         "Soft Light Studio",
         "Fern & Feather Art",
         "Sage & Sparrow",
-        "Dried Flowers Studio",
         "Wildflower Prints",
         "Pressed Petal Studio",
         "Little Window Studio",
@@ -991,10 +988,10 @@
       "fixed": [
         "{name}'s Art",
         "Art by {name}",
-        "{name} Art",
-        "{name} Paints Pets",
+        "{name}'s Art",
+        "{name}'s Paints Pets",
         "{name}'s Gallery",
-        "{name} Art Co.",
+        "{name}'s Art Co.",
         "{name}'s Art Club",
         "{name}'s Art School",
         "Dear {name} Prints"

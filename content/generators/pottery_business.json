@@ -153,7 +153,7 @@
     "mine": {
       "recipe": "template",
       "template": [
-        "{name} [mine.end]",
+        "{name}'s [mine.end]",
         "{name}'s [mine.thing]",
         "[mine.verb] by {name}",
         "{name}'s [mine.adj] [mine.shop]",
@@ -872,19 +872,19 @@
       ],
       "fixed": [
         "{name}'s Pottery",
-        "{name} Ceramics",
+        "{name}'s Ceramics",
         "Pottery by {name}",
         "Thrown by {name}",
         "Fired by {name}",
         "Handmade by {name} Ceramics",
-        "{name} Throws",
+        "{name}'s Throws",
         "{name}'s Kiln",
         "Studio {name} Ceramics",
         "{name}'s Wheel",
-        "{name} Pottery",
+        "{name}'s Pottery",
         "{name}'s Clay Club",
         "{name}'s Pottery Painting",
-        "{name} Clay Studio"
+        "{name}'s Clay Studio"
       ]
     }
   },

@@ -211,7 +211,7 @@
             "{name}'s [mine.service]",
             "[mine.by] {name}",
             "{name}'s [mine.quality] [mine.qservice]",
-            "{name} [mine.end]",
+            "{name}'s [mine.end]",
             "{name}'s Design Co.",
             "{name} & Co. Interiors",
             "At Home with {name}"
@@ -337,7 +337,7 @@
             "{name}'s [mine.service] – [taglines]",
             "[mine.by] {name} – [taglines]",
             "{name}'s [mine.quality] [mine.qservice] – [taglines]",
-            "{name} [mine.end] – [taglines]",
+            "{name}'s [mine.end] – [taglines]",
             "{name}'s Design Co. – [taglines]",
             "{name} & Co. Interiors – [taglines]",
             "At Home with {name} – [taglines]"
@@ -1071,8 +1071,7 @@
         "Henley",
         "Wentworth",
         "Savile",
-        "Carlyle",
-        "Gramercy"
+        "Carlyle"
       ],
       "eservice": [
         "Interior Design",

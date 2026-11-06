@@ -136,7 +136,7 @@
       "template": [
         "{name}'s [mine.goods]",
         "[mine.by] by {name}",
-        "{name} [mine.end]",
+        "{name}'s [mine.end]",
         "{name} & [mine.noun]",
         "{name}'s [mine.adj] [mine.noun]",
         "[mine.fixed]"
@@ -167,7 +167,6 @@
         "Cot Couture",
         "Pram Parade",
         "Mini Me Clothing",
-        "Puddle Jumpers",
         "Muddy Knees",
         "Grass Stains Clothing",
         "Scuffed Knees",
@@ -610,7 +609,6 @@
         "{town} Baby Bundles",
         "{town} Little Explorers",
         "Wee {town}",
-        "{town} Puddle Jumpers",
         "{town} Bobble Hats"
       ]
     },
