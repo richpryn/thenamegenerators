@@ -153,16 +153,37 @@
       "title": "💼 Consulting Business Name Generator",
       "tagline": "Names for a consulting firm or one-person consultancy, from Groundwork Consulting to Hartley & Rowe."
     },
-    "intro": "Name your consulting firm or one-person consultancy with this **Consulting Business Name Generator**. Choose a style and your field (business, HR, IT, marketing, finance or healthcare), or add your first name or town.",
-    "sections": [],
-    "faqs": [
+    "intro": "Good consulting names sound established and say what you advise on: a surname firm like <em>Rowe &amp; Carrington</em>, a plain promise like <em>Square One Advisors</em>, or one strong word like <em>Weathervane Advisors</em>. Name your consulting firm or one-person consultancy with this **Consulting Business Name Generator**. Choose a style and your field (business, HR, IT, marketing, finance or healthcare), or add your first name or town.",
+    "sections": [
       {
-        "question": "How do I check a consulting business name is free?",
-        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse customers."
+        "heading": "Eight good consulting business names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Rowe &amp; Carrington</strong>: two surnames joined with an ampersand, the classic shape of an advisory firm.</li><li><strong>Plain English Advisory</strong>: a promise clients understand before they've met you.</li><li><strong>Square One Advisors</strong>: for consultants who start by sorting out the basics.</li><li><strong>Weathervane Advisors</strong>: one strong image: you show which way the wind is blowing.</li><li><strong>In the Black Consulting</strong>: a finance name with the outcome built in.</li><li><strong>Hire Purpose</strong>: an HR name with a pun that still sounds professional.</li><li><strong>Switched On IT</strong>: friendly and clear for small-business IT support.</li><li><strong>Vital Signs Consulting</strong>: a healthcare name that reads well on a proposal.</li></ul>"
       },
       {
+        "heading": "How consultancies name themselves",
+        "content": "<p>Clients buy a consultant's judgement, so the name has one job: make you sound like someone worth listening to. Most consultancies choose one of four shapes:</p><ul><li><strong>Your own name</strong>, as in <em>Sarah Rivers Consultants</em>. Best for a one-person practice, where clients are hiring you.</li><li><strong>Surnames joined with &amp; or Partners</strong>: <em>Holbrook &amp; Partners</em>. These sound like a firm that has been around for years, even on day one.</li><li><strong>A phrase or promise</strong>: <em>Long Game Consulting Group</em>, <em>Spot On Strategy</em>. Easy to remember, and it tells clients how you work.</li><li><strong>One word</strong>: <em>Lattice</em>, <em>Ballast</em>, <em>Outrider</em>. Modern and roomy, but you'll need a line underneath saying what you do.</li></ul><p>The last word matters too. <em>Consulting</em> and <em>Consultancy</em> are the plainest, <em>Advisory</em> sounds senior, <em>Partners</em> and <em>Associates</em> suggest more than one person, and <em>Labs</em> or <em>Studio</em> suit digital and creative work. Choose a field and the generator adds the matching words, from <em>HR Solutions</em> to <em>Brand Strategy</em>.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Every name here has a <strong>Check</strong> button, which opens the <a href=\"../business-name-checker.html\">Business Name Checker</a>: it looks up domains, social handles, the company register and trade mark searches in one place. Before you order signs or cards:</p><ul><li><strong>Company register.</strong> In the UK, search Companies House; a limited company's name can't be the same as one already registered. In the US, search your state's business register. Some words, such as <em>Chartered</em>, are sensitive and need permission before a company can use them, and a name that suggests a link with the NHS or a government body is restricted too.</li><li><strong>Trade marks.</strong> Search the UK Intellectual Property Office or the USPTO for marks in your line of work. Registering a company doesn't give you trade mark rights.</li><li><strong>Domain and handles.</strong> Try the .co.uk or .com and the Instagram and Facebook names at the same time, and change the name slightly rather than settle for a messy handle.</li><li><strong>Local search.</strong> Look up the name with your town. Two similar businesses a few miles apart confuse customers and reviews.</li></ul><p>This is general guidance, not legal advice. For the full process, read <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p><p>For a name in your own words, try the <a href=\"business-name-generator.html\">Business Name Generator</a> or the <a href=\"company-name-generator.html\">Company Name Generator</a>. If you also plan events or take photos for clients, there's the <a href=\"event-planning-business-name-generator.html\">Event Planning</a> and <a href=\"photography-business-name-generator.html\">Photography</a> generators.</p><p>For more, see all the <a href=\"../categories/biz_services-names.html\">professional and creative business name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
         "question": "What should I name my consulting business?",
-        "answer": "Most consultants choose one of three shapes: their own name (\"Sarah Rose Consulting\"), which sells you as the expert; a surname-style firm name (\"Hartley & Rowe\"), which sounds established; or a single strong word (\"Keel\", \"Groundwork\"), which leaves room to grow. Add your field (\"HR Consulting\", \"Tax Advisory\") so people know what you do at a glance."
+        "answer": "Most consultants choose one of three shapes: their own name (\"Sarah Rivers Consultants\"), which sells you as the expert; a surname-style firm name (\"Rowe & Carrington\"), which sounds established; or a single strong word (\"Ballast\", \"Outrider\"), which leaves room to grow. Add your field (\"HR Consulting\", \"Tax Advisory\") so people know what you do at a glance."
+      },
+      {
+        "question": "Should I use Consulting, Consultancy or Advisory?",
+        "answer": "Consulting is the commonest and works everywhere. Consultancy is a little more British, and Advisory sounds more senior, which suits finance and strategy work. Partners and Associates suggest a team, so use them only if there is one."
+      },
+      {
+        "question": "Can I use the word \"Chartered\" in my business name?",
+        "answer": "Only if you hold the chartered status it implies. In the UK, Chartered is a sensitive word, so Companies House needs permission before a company can use it in its name."
+      },
+      {
+        "question": "How do I check a consulting business name is free?",
+        "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as two similar names nearby confuse clients."
       }
     ]
   },

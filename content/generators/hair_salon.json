@@ -765,9 +765,30 @@
       "title": "💇 Hair Salon Name Generator",
       "tagline": "Names for a hair salon you could put above the door tomorrow."
     },
-    "intro": "The **Hair Salon Name Generator** suggests names for a hairdressers, hair studio or home salon: catchy puns, classic and classy, sleek one-word brands, luxury, Instagram-ready, your town or your own name.",
-    "sections": [],
+    "intro": "A good hair salon name is easy to say, easy to find on Instagram and matches your prices: a pun for a friendly local salon, a sleek one-word name for a modern studio. The **Hair Salon Name Generator** suggests names for a hairdressers, hair studio or home salon: catchy puns, classic and classy, sleek one-word brands, luxury, Instagram-ready, your town or your own name.",
+    "sections": [
+      {
+        "heading": "Eight good hair salon names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Shear Luck</strong>: a pun on sheer luck, the hairdresser's favourite kind of joke.</li><li><strong>Mane Street Hair</strong>: a pun on Main Street, for a high-street salon.</li><li><strong>Snipping Point</strong>: a pun that's easy to remember.</li><li><strong>The Lob Room</strong>: modern and specific: a lob is a long bob.</li><li><strong>Nape Studio</strong>: one clean word from the craft, the nape being the back of the neck.</li><li><strong>Honey & Driftwood Hair</strong>: soft and aesthetic, for a calm, natural-looking salon.</li><li><strong>Atelier Mèche</strong>: luxury and French: <em>mèche</em> is a lock of hair, and <em>mèches</em> are highlights.</li><li><strong>Hampton Balayage Co.</strong>: your town plus a speciality: balayage is French for \"sweeping\", the hand-painted highlighting technique.</li></ul>"
+      },
+      {
+        "heading": "How hair salon names work",
+        "content": "<ul><li><strong>Puns are a hairdressing tradition.</strong> Plays on shear, mane, fringe, tress and curl are everywhere, which is exactly why you need to check yours isn't taken nearby.</li><li><strong>Price shapes the name.</strong> Atelier, maison and a numbered address (<em>No. 21 Hair Studio</em>) say premium; puns say friendly and local.</li><li><strong>Specialities help clients find you.</strong> Curls, afro hair, braids, blonding and bridal hair are all searched for, so a name like <em>Hampton Curl Co.</em> does some of your marketing.</li><li><strong>Your own name</strong> suits a stylist with a following, but is harder to grow beyond one chair.</li></ul>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>A name from a generator is a starting point, not permission to use it. Before you order the sign, the boxes or the van livery:</p><ul><li><strong>Company register.</strong> In the UK, search Companies House; you can't register a limited company with the same name as an existing one. In the US, search your state's business register.</li><li><strong>Trade marks.</strong> Search the UK trade mark register (or the USPTO in the US) for the goods and services you'll sell.</li><li><strong>Domain and handles.</strong> Check the .co.uk or .com and the Instagram and TikTok handles you'll need.</li><li><strong>Your area.</strong> Search a map app for businesses with the same or a similar name nearby.</li></ul><p>Press <strong>Check</strong> on any name, or use the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to run most of these at once. For the full process, read our guide, <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>. This is general guidance, not legal advice.</p><p>In the UK, hairdressers don't need a licence to trade, though you can join the voluntary Hair Council register. In the US, hairdressers need a state cosmetology licence, so check your state board's rules before you open.</p>"
+      },
+      {
+        "heading": "Making the name work on Instagram",
+        "content": "<ul><li><strong>Check the handle first.</strong> Salons are found on Instagram and Google Maps, so a matching handle matters as much as the sign.</li><li><strong>Say it on the phone.</strong> \"Snipping Point\" is easy; a name clients have to spell out loses bookings.</li></ul><p>Running a full salon? Try the <a href=\"beauty-salon-name-generator.html\">Beauty Salon</a>, <a href=\"nail-salon-name-generator.html\">Nail Salon</a> and <a href=\"lash-business-name-generator.html\">Lash Business</a> name generators.</p><p>For more, see all the <a href=\"../categories/biz_beauty-names.html\">beauty and wellness business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good hair salon names?",
+        "answer": "Names that match your salon: puns like Shear Luck or Mane Street Hair for a friendly local salon, sleek names like Nape Studio for a modern one, or French names like Atelier Mèche for a premium studio."
+      },
       {
         "question": "How do I check a hair salon name is free?",
         "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, also search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as another salon nearby with a similar name can confuse clients."
@@ -775,6 +796,10 @@
       {
         "question": "Should my hair salon have a French name?",
         "answer": "Only if it suits the feel of your salon. Words such as maison (house), atelier (workshop) and coiffure (hairdressing) read as premium in the UK and the US, but keep it easy to spell and say, or people won't find you online. A name that mixes one French word with an English one, such as Maison Strand, often works best."
+      },
+      {
+        "question": "Do I need a licence to open a hair salon?",
+        "answer": "Not in the UK, where registration with the Hair Council is voluntary. In the US, every state requires hairdressers to hold a cosmetology licence."
       }
     ]
   }

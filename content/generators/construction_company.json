@@ -14,9 +14,30 @@
       "title": "🏗️ Construction Company Name Generator",
       "tagline": "Names for builders and contractors, from Keystone Construction to Hartley & Sons."
     },
-    "intro": "Starting a building firm? This **construction company name generator** suggests names for builders, contractors and renovation firms: catchy, classic family names, strong one-word names, modern and luxury, plus names from your town or your first name.",
-    "sections": [],
+    "intro": "A good construction company name sounds solid and trustworthy: a family name, a word from the trade or a strong image, often with your town. This **construction company name generator** suggests names for builders, contractors and renovation firms: catchy, classic family names, strong one-word names, modern and luxury, plus names from your town or your first name.",
+    "sections": [
+      {
+        "heading": "Eight good construction company names",
+        "content": "<p>All eight came from the generator, across its styles:</p><ul><li><strong>Fair & Square Building</strong>: a promise of honest quotes in three words.</li><li><strong>Square One Construction</strong>: a catchy phrase that also means starting fresh.</li><li><strong>Carter & Sons General Contractors</strong>: the classic family firm, with a trade in the surname.</li><li><strong>Millbrook Builders & Joiners</strong>: a place-style name that sounds local and established.</li><li><strong>Ashlar</strong>: a modern one-word name from the trade: ashlar is finely cut, squared building stone.</li><li><strong>Dovetail & Co.</strong>: named after the joint, a sign of careful work.</li><li><strong>Steadfast Construction Co.</strong>: strong and dependable, for bigger projects.</li><li><strong>Whitfield Fine Homes</strong>: a luxury name for high-end builds and renovations.</li></ul>"
+      },
+      {
+        "heading": "Where good building names come from",
+        "content": "<p>Most building firms are named one of three ways, and each sends a different message:</p><ul><li><strong>A family name</strong> with <em>& Sons</em>, <em>Brothers</em> or <em>Family</em>: it says the firm has a reputation to protect. <em>Slater</em> and <em>Mason</em> started as surnames for the trades themselves.</li><li><strong>A word from the trade:</strong> a <em>keystone</em> locks an arch together, a <em>lintel</em> carries the wall over a door and a <em>truss</em> holds up a roof. They sound skilled without being boastful.</li><li><strong>A strong image:</strong> stone, oak, iron, a ridge or a summit. <em>Stoneridge Contracting</em> and <em>Iron Ridge Builders</em> suit groundworks and larger contracts.</li></ul><p>If you specialise, say so: extensions, loft conversions, brickwork or groundworks are what customers type into a search box.</p>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>Signboards, hoardings, vans and quotes all carry the name, and each costs money the moment it's printed, so check the name first. Press <strong>Check</strong> next to any name to open the <a href=\"../business-name-checker.html\">Business Name Checker</a>, which looks it up in one go:</p><ul><li><strong>The company register:</strong> Companies House in the UK, or your state's business register in the US. A limited company's name can't be the same as one already registered.</li><li><strong>Trade marks:</strong> the UK IPO and USPTO registers. Registering a company doesn't stop someone else owning the name as a trade mark.</li><li><strong>A domain and social handles,</strong> so customers can find you under the same name everywhere.</li></ul><p>This is general guidance, not legal advice. For the full process, read our guide, <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>"
+      },
+      {
+        "heading": "Making the name work on site",
+        "content": "<ul><li><strong>Think about the site board.</strong> Your name goes outside every job you do, so a clear, short name is free advertising.</li><li><strong>Keep it honest.</strong> Avoid words like <em>Chartered</em> or <em>Institute</em> in a company name: Companies House treats some words as sensitive and they need permission.</li><li><strong>Leave room to grow</strong> if you might move from renovations into new builds.</li></ul><p>Other trades: the <a href=\"cleaning-business-name-generator.html\">Cleaning</a> and <a href=\"landscaping-business-name-generator.html\">Landscaping</a> business name generators, or the <a href=\"company-name-generator.html\">Company Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_trades-names.html\">trades and home services business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good construction company names?",
+        "answer": "Names that sound solid and trustworthy: a family name like Carter & Sons, a trade word like Ashlar or Dovetail & Co., or a strong image like Steadfast Construction. Adding your town helps local customers."
+      },
       {
         "question": "How do I check a construction company name is free?",
         "answer": "Press <strong>Check</strong> next to any name to see if it's free as a company, a domain and a social media handle. Then make sure: in the UK, search Companies House and the UK IPO trade mark register; in the US, search your state's business register and the USPTO trade mark search. A quick map search for the name in your area helps too."
@@ -24,6 +45,10 @@
       {
         "question": "What are some construction company names with meaning?",
         "answer": "Many of the best come from the trade itself. A <em>keystone</em> is the central stone that locks an arch together, a <em>cornerstone</em> is the first stone laid, a <em>plumb line</em> shows a wall is truly upright and a <em>lintel</em> carries the wall over a door. They suggest strength and careful work."
+      },
+      {
+        "question": "Should a building company name say what work it does?",
+        "answer": "If you specialise, yes: extensions, lofts or brickwork are what customers search for. A general builder can use a broader name and list the services underneath."
       }
     ]
   },

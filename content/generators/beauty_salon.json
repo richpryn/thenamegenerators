@@ -749,9 +749,30 @@
       "title": "💄 Beauty Salon Name Generator",
       "tagline": "Names for a beauty salon, studio or treatment room."
     },
-    "intro": "The **Beauty Salon Name Generator** suggests names for a beauty salon, beauty studio or home treatment room: facials, brows, waxing, tanning and pampering. Pick catchy, classic, modern, luxury or aesthetic, or build a name from your town or your own name.",
-    "sections": [],
+    "intro": "A good beauty salon name feels calm and clean, says what you offer and suits your prices, from a friendly local beauty room to a skin clinic. The **Beauty Salon Name Generator** suggests names for a beauty salon, beauty studio or home treatment room: facials, brows, waxing, tanning and pampering. Pick catchy, classic, modern, luxury or aesthetic, or build a name from your town or your own name.",
+    "sections": [
+      {
+        "heading": "Eight good beauty salon names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>About Face Beauty Bar</strong>: a pun that tells you it's about faces.</li><li><strong>The Glow Up</strong>: fun and current, for a younger crowd.</li><li><strong>Skin Deep Beauty</strong>: a familiar phrase turned into a name.</li><li><strong>Hollis & Whitmore Beauty Rooms</strong>: classic: two surnames and the British <em>beauty rooms</em>.</li><li><strong>Serum Beauty</strong>: one modern word from skincare.</li><li><strong>Clay & Fig Beauty</strong>: aesthetic and earthy, for natural treatments.</li><li><strong>Peau Douce</strong>: luxury French: it means \"soft skin\".</li><li><strong>Institut de Beauté</strong>: the French for a beauty institute, for a salon with a French feel.</li></ul>"
+      },
+      {
+        "heading": "How beauty salon names work",
+        "content": "<ul><li><strong>The ending sets the tone.</strong> <em>Rooms</em> and <em>salon</em> feel traditional, <em>studio</em> and <em>bar</em> feel modern, and <em>lounge</em> feels relaxed.</li><li><strong>Clinic and aesthetics</strong> suggest medical-style treatments such as injectables. Use them only if that's what you offer, or clients will expect something you don't do.</li><li><strong>Calm words sell calm:</strong> clay, fig, fern, linen and golden hour all suggest a peaceful treatment room.</li></ul>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>A name from a generator is a starting point, not permission to use it. Before you order the sign, the boxes or the van livery:</p><ul><li><strong>Company register.</strong> In the UK, search Companies House; you can't register a limited company with the same name as an existing one. In the US, search your state's business register.</li><li><strong>Trade marks.</strong> Search the UK trade mark register (or the USPTO in the US) for the goods and services you'll sell.</li><li><strong>Domain and handles.</strong> Check the .co.uk or .com and the Instagram and TikTok handles you'll need.</li><li><strong>Your area.</strong> Search a map app for businesses with the same or a similar name nearby.</li></ul><p>Press <strong>Check</strong> on any name, or use the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to run most of these at once. For the full process, read our guide, <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>. This is general guidance, not legal advice.</p>"
+      },
+      {
+        "heading": "Making the name work",
+        "content": "<ul><li><strong>Fit it to your menu.</strong> A name like <em>Hampton Brow Studio</em> is great for brows but limiting if you add facials.</li><li><strong>Picture it on a gift voucher.</strong> Vouchers are a big part of beauty income, and the name should look good on one.</li></ul><p>Specialising? Try the <a href=\"hair-salon-name-generator.html\">Hair Salon</a>, <a href=\"nail-salon-name-generator.html\">Nail Salon</a> and <a href=\"lash-business-name-generator.html\">Lash Business</a> name generators.</p><p>For more, see all the <a href=\"../categories/biz_beauty-names.html\">beauty and wellness business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good beauty salon names?",
+        "answer": "Names that feel calm and match your prices: catchy ones like About Face Beauty Bar, classic ones like Hollis & Whitmore Beauty Rooms, or French luxury like Peau Douce, which means soft skin."
+      },
       {
         "question": "How do I check a beauty salon name is free?",
         "answer": "Press Check on any name to see whether it's free as a company, a domain and a social media handle. In the UK, also search Companies House; in the US, search your state's business register and the USPTO trade mark search. Check your local area too, as another salon nearby with a similar name can confuse clients."
@@ -759,6 +780,10 @@
       {
         "question": "What's the difference between a beauty salon and a beauty parlour?",
         "answer": "Nothing much: they're the same kind of business. \"Beauty salon\" is the usual phrase in the UK and the US today, while \"beauty parlour\" (\"parlor\" in American spelling) sounds old-fashioned in Britain and America but is still common in India and Pakistan. Words such as studio, rooms, bar and clinic are popular in new salon names."
+      },
+      {
+        "question": "Should I call my salon a clinic?",
+        "answer": "Only if you offer medical-style treatments such as injectables or skin peels done by a qualified practitioner. For facials, brows and waxing, studio, rooms or bar sets the right expectations."
       }
     ]
   }
