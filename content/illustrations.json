@@ -419,6 +419,10 @@
     "spray_tan_business": "salon-chair",
     "brow_business": "salon-chair",
     "dance_studio": "pet-cottage",
-    "martial_arts_school": "pet-cottage"
+    "martial_arts_school": "pet-cottage",
+    "security_company": "office-desk",
+    "vending_business": "office-desk",
+    "laundromat": "office-desk",
+    "video_production": "office-desk"
   }
 }
