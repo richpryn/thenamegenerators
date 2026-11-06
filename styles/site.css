@@ -658,3 +658,13 @@ a.go{text-decoration:none}
 .guide .article h3{font:800 18px/1.3 var(--head);letter-spacing:0;text-transform:none;color:var(--ink);margin:var(--s5) 0 var(--s2)}
 .guide .article p,.guide .article li{font-size:18px;line-height:1.65}
 
+/* ---------- Business landing page ---------- */
+.biz-check{--fill:var(--card);display:flex;flex-wrap:wrap;align-items:center;gap:var(--s4);padding:var(--card-pad);text-decoration:none;color:var(--ink)}
+.biz-check-d{width:72px;height:72px;flex:none}
+.biz-check .try-t{flex:1 1 240px}
+.biz-check .try-t b{font:800 24px/1.15 var(--head)}
+.biz-check .eyebrow{margin:0 0 6px;display:block}
+.biz-check .go{width:auto;margin:0;padding:0 var(--s5);min-height:48px;font-size:17px;flex:none}
+.biz-count{margin-top:6px!important;font:400 15px/1.2 var(--hand)!important;color:var(--ink)!important}
+@media (max-width:639px){.biz-check .go{width:100%}}
+

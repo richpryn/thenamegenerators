@@ -14,9 +14,30 @@
       "title": "🔧 Plumbing Business Name Generator",
       "tagline": "Names for plumbers, from Flush Hour to Clearwater Plumbing & Heating."
     },
-    "intro": "Setting up as a plumber? This **plumbing business name generator** has catchy and funny puns, classic family names, professional names for plumbing and heating firms and short modern ones, plus names from your town or your first name.",
-    "sections": [],
+    "intro": "Good plumbing business names are easy to read on a van and tell people what you do: a family name with <em>Plumbing &amp; Heating</em>, your town, or a pun customers will remember. Setting up as a plumber? This **plumbing business name generator** has catchy and funny puns, classic family names, professional names for plumbing and heating firms and short modern ones, plus names from your town or your first name.",
+    "sections": [
+      {
+        "heading": "Eight good plumbing business names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Plumb Perfect</strong>: a one-word pun on <em>plumb</em> that sounds like a promise.</li><li><strong>Leak Geeks</strong>: short, funny and easy to say on the phone.</li><li><strong>Flush Gordon</strong>: a pun on Flash Gordon that people repeat to their friends.</li><li><strong>Tap &amp; Tile Plumbing</strong>: tells customers you do bathrooms as well as pipes.</li><li><strong>Nash &amp; Sons Plumbing Services</strong>: the classic family firm, which still reads as trustworthy.</li><li><strong>Heatwise Boiler Services</strong>: says boilers straight away, for a heating specialist.</li><li><strong>Drip &amp; Co.</strong>: short and modern, with room to grow beyond plumbing.</li><li><strong>Hampton Plumbing &amp; Gas</strong>: a town name, which helps local search. Put your own town in the box.</li></ul>"
+      },
+      {
+        "heading": "What makes a plumbing name work",
+        "content": "<p>The word <em>plumber</em> comes from the Latin <em>plumbum</em>, lead, because pipes were once made of it. Most firms still name themselves in one of a few plain ways:</p><ul><li><strong>Say the job.</strong> Customers search for \"plumber near me\" or \"boiler repair\", so a name with <em>Plumbing</em>, <em>Heating</em> or <em>Drainage</em> in it is easier to find and to trust.</li><li><strong>Puns work on vans.</strong> <em>Pipe Down</em> or <em>Kitchen Sink Drama</em> gets a smile at the traffic lights. Keep them clean, and add a straight slogan so people know you're qualified.</li><li><strong>Family and town names</strong> sound settled and local, which matters for a trade people let into their homes.</li><li><strong>Gas work needs registration.</strong> In the UK, anyone working on gas appliances such as boilers must be on the Gas Safe Register, so only put gas or boiler work in your name if you're registered.</li></ul>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>A plumbing name ends up on a van, a website, a Google Business Profile and a stack of invoices, so it's worth a few minutes' checking before any of that is printed:</p><ul><li><strong>Press Check</strong> on any name above. The <a href=\"../business-name-checker.html\">Business Name Checker</a> looks up the domain, links to the company register (Companies House in the UK) and opens the trade mark search and social handles.</li><li><strong>Search your area.</strong> Look up the name on a map and in local search results. Two firms with the same name a few miles apart confuse customers and reviews.</li><li><strong>If you do gas work, show your Gas Safe registration next to the name on your van and website, not instead of it.</strong></li></ul><p>This is general guidance, not legal advice. For the full process, from shortlisting to registering, read our guide to <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>"
+      },
+      {
+        "heading": "Getting the name onto the van",
+        "content": "<ul><li><strong>Read it at a distance.</strong> A short name and a phone number are what people remember from a passing van.</li><li><strong>Add a slogan if the name is a joke.</strong> Choose <em>Name with a slogan</em> for lines like <em>Warm homes, clear drains</em>.</li><li><strong>Use the same name everywhere:</strong> van, invoices, Google Business Profile and social media.</li></ul><p>Other trades: the <a href=\"electrical-business-name-generator.html\">Electrical</a>, <a href=\"roofing-company-name-generator.html\">Roofing</a>, <a href=\"painting-business-name-generator.html\">Painting</a>, <a href=\"construction-company-name-generator.html\">Construction</a>, <a href=\"cleaning-business-name-generator.html\">Cleaning</a>, <a href=\"landscaping-business-name-generator.html\">Landscaping</a> business name generators. For any kind of firm, try the <a href=\"business-name-generator.html\">Business Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_trades-names.html\">trades and home services business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good plumbing business names?",
+        "answer": "Names that say the job and are easy to read on a van: Plumb Perfect, Leak Geeks, Nash &amp; Sons Plumbing Services or Heatwise Boiler Services. Add your town for local search."
+      },
       {
         "question": "How do I check a plumbing business name is free?",
         "answer": "Press <strong>Check</strong> next to any name to see if it's free as a company, a domain and a social media handle. Then make sure: in the UK, search Companies House and the UK IPO trade mark register; in the US, search your state's business register and the USPTO trade mark search. A quick map search for the name in your area helps too."
@@ -24,6 +45,10 @@
       {
         "question": "What's a good slogan for a plumbing business?",
         "answer": "Promise speed, honesty and a tidy job: <em>Fixed fast, fixed right</em> or <em>Day or night, we put it right</em>. Keep jokes clean, because the slogan goes on your van. Choose <strong>Name with a slogan</strong> in the Format menu to see names paired with one."
+      },
+      {
+        "question": "Can I put gas or boiler work in my business name?",
+        "answer": "Only if you're on the Gas Safe Register. In the UK anyone working on gas appliances such as boilers must be registered, so show your registration alongside the name."
       }
     ]
   },

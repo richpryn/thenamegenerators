@@ -940,6 +940,7 @@ const STATIC_SHARE_PAGES = [
   { name: 'home', title: 'Name Generators for D&D, Stories and Games', line: 'Names for characters, places, weapons, events and bands. Free to use, no sign-up.', motif: 'dragon' },
   { name: 'all-generators', title: 'All Name Generators', line: 'Every generator on the site, from elves to escape rooms.', motif: 'quill' },
   { name: 'name-tools', title: 'Name Tools', line: 'Spin a wheel, draw a name, pick raffle winners, split teams or run Secret Santa.', motif: 'clover' },
+  { name: 'business', title: 'Business Name Generators', line: 'Names for every trade, and a checker to see if yours is taken.', motif: 'shopfront' },
   { name: 'business-name-checker', title: 'Business Name Checker', line: 'Is your business name taken? Company registers, domains, trade marks and handles in one go.', motif: 'quill' },
   { name: 'about', title: 'About The Name Generators', line: 'Why this site exists.', motif: 'note' },
   { name: 'privacy', title: 'Privacy and cookies', line: 'What this site keeps, and how to change your mind.', motif: 'quill' },
@@ -1558,6 +1559,120 @@ ${scriptJson({
 }
 
 /**
+ * business.html: the Business landing page. The Business Name Checker first,
+ * then the trade hubs as cards, then the general business generators.
+ * The hub list comes from content/homepage.json's "business" group.
+ */
+const BUSINESS_GENERAL = ['business', 'company', 'brand', 'cafe', 'event'];
+function generateBusinessHub(site) {
+  const baseUrl = 'https://thenamegenerators.com';
+  const url = `${baseUrl}/business.html`;
+  const title = 'Business Name Generators by Trade, plus a Name Checker | The Name Generators';
+  const desc = 'Business name ideas for every trade, from bakeries and salons to plumbers and pet sitters, and a free checker to see if your name is taken.';
+  const group = (site.homepage.groups || []).find(g => g.id === 'business') || { hubs: [] };
+  const hubs = group.hubs.filter(s => s.startsWith('biz_')).map(s => site.categories.find(c => c.slug === s)).filter(Boolean);
+  const general = BUSINESS_GENERAL.map(k => site.all.find(g => g.key === k)).filter(Boolean);
+  const catOf = (gen) => site.categories.find(c => c.slug === gen.category);
+  const motifs = ['quill', ...hubs.map(h => layout.categoryMotif(h)), ...general.map(g => layout.generatorMotif(g, catOf(g)))];
+  const plural = (n) => `${n} generator${n === 1 ? '' : 's'}`;
+  const hubCards = hubs.map(h => `<a class="trycard hd tap" href="categories/${h.slug}-names.html">${layout.doodle(layout.categoryMotif(h), 'doodle try-d')}<span class="try-t"><b>${escapeHtml(h.navLabel)}</b><span>${escapeHtml(h.description)}</span><span class="biz-count">${plural(h.generators.length)} →</span></span></a>`).join('\n                    ');
+  const generalCards = general.map(g => `<a href="posts/${g.slug}.html" class="gencard hd tap">${layout.doodle(layout.generatorMotif(g, catOf(g)))}<div><b>${escapeHtml(g.title)}</b><span>${escapeHtml(g.description)}</span></div><em aria-hidden="true">→</em></a>`).join('\n                    ');
+  const total = new Set(hubs.flatMap(h => h.generators).concat(general.map(g => g.key))).size;
+  return `<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Mediavine Grow -->
+    <script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTo2YmQ3YzdiOS00MDgwLTQ5MmYtOGEyZi0yZWE3YmU2N2E5ZTU=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
+
+    <title>${escapeHtml(title)}</title>
+    <meta name="description" content="${escapeHtml(desc)}">
+    <meta name="author" content="Rich">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <link rel="canonical" href="${url}">
+    <script type="application/ld+json">
+${scriptJson({
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Business name generators",
+  "description": desc,
+  "url": url,
+  "mainEntity": { "@type": "ItemList", "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Business Name Checker", "url": `${baseUrl}/business-name-checker.html` },
+    ...hubs.map((h, i) => ({ "@type": "ListItem", "position": i + 2, "name": h.navLabel, "url": `${baseUrl}/categories/${h.slug}-names.html` }))
+  ] }
+}, 2)}
+    </script>
+    <script type="application/ld+json">
+${scriptJson({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": `${baseUrl}/` },
+    { "@type": "ListItem", "position": 2, "name": "Business", "item": url }
+  ]
+}, 2)}
+    </script>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="${url}">
+    <meta property="og:title" content="${escapeHtml(title)}">
+    <meta property="og:description" content="${escapeHtml(desc)}">
+    <meta property="og:image" content="${layout.shareImage('business')}">
+    <meta property="og:site_name" content="The Name Generators">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="${layout.shareImage('business')}">
+
+    ${ICON_LINKS}
+    ${layout.headAssets('')}
+</head>
+<body>
+    ${layout.svgSprite(motifs)}
+    ${layout.siteHeader('', site.categories)}
+
+    <div class="wrap layout">
+        <main id="main">
+            <nav class="crumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span aria-current="page">Business</span></nav>
+            <div class="titlerow">
+                <h1>Business <span class="hl">Name Generators</span></h1>
+                ${layout.doodle('shopfront')}
+            </div>
+            <p class="lede">${total} business name generators, one for each kind of business, and a free checker to see if your name is already taken.</p>
+
+            <section class="section">
+                <a class="biz-check hd tap" href="business-name-checker.html">
+                    ${layout.doodle('quill', 'doodle biz-check-d')}
+                    <span class="try-t"><span class="eyebrow">Already have a name?</span><b>Check if it's free</b><span>Company registers, domains, trade marks and social handles in one go.</span></span>
+                    <span class="go hi hd" aria-hidden="true">Check a name →</span>
+                </a>
+            </section>
+
+            <section class="section">
+                <h2 class="uh2">Find names for your trade</h2>
+                <p class="sec-sub">Every name on these pages has a Check button, so you can see straight away if it's taken.</p>
+                <div class="trylist">
+                    ${hubCards}
+                </div>
+            </section>
+            ${layout.sectionBreak('shopfront')}
+            <section class="section">
+                <h2 class="uh2">General business names</h2>
+                <div class="genlist">
+                    ${generalCards}
+                </div>
+            </section>
+        </main>
+        <aside class="side" aria-label="Sidebar"></aside>
+    </div>
+
+    ${layout.siteFooter('')}
+    ${layout.bodyScripts('')}
+</body>
+</html>`;
+}
+
+/**
  * Naming guides: content/guides/<slug>.json -> guides/<slug>.html, plus
  * guides/index.html. A guide has title, slug, description (meta), seoTitle,
  * published, intro, sections [{heading, content}], faqs [{question, answer}]
@@ -1963,6 +2078,8 @@ function build() {
     fs.writeFileSync(path.join(ROOT, page), generateNameToolPage(key, site));
   }
   fs.writeFileSync(path.join(ROOT, 'name-tools.html'), generateNameToolsHub(site));
+  fs.writeFileSync(path.join(ROOT, 'business.html'), layout.stampAssets(generateBusinessHub(site)));
+  console.log('  ✅ Created: business.html');
   fs.writeFileSync(path.join(ROOT, 'business-name-checker.html'), layout.stampAssets(generateCheckerPage(site, { escapeHtml, scriptJson, ICON_LINKS, AUTHOR })));
   console.log('  ✅ Created: business-name-checker.html');
   fs.mkdirSync(GUIDES_DIR, { recursive: true });
@@ -2017,6 +2134,12 @@ function generateSitemap(site) {
   <!-- All Generators Page -->
   <url>
     <loc>${baseUrl}/all-generators.html</loc>
+    <lastmod>${siteDate}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/business.html</loc>
     <lastmod>${siteDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
