@@ -119,11 +119,7 @@ Pages that get better with your own experience. A few lines each, in any session
 - [x] **Share images:** done. Every page has its own, drawn by `scripts/share-images.js` from its title and illustration; Rich checked them in a share preview (21 October).
 - [ ] **Backlinks**: post the generators in D&D, worldbuilding and writing communities once the D&D cluster is up.
 
-- [ ] **Bing AI opportunities still to build** (from the AI Performance report, 4 November). Rich chose A and C first; these wait for his go:
-  - **Warcraft:** WoW Dwarf and WoW Tauren name generators (also "tauren namen"), and a Funny WoW Name Generator by class (mage, rogue, warlock, warrior…).
-  - **Warrior Cats-style clan names** (original prefix + suffix names, no canon).
-  - **Franchise searches, Rich's call:** My Little Pony, FF14 Viera, Transformers, Marvel Rivals (funny names) and Sims names.
-  - **Skipped on purpose:** fantasy-football team puns on real players ("bucky irving fantasy names"), Fortnite name decoration (Arabic), and a fantasy language creator (a separate tool).
+- [x] **Bing AI opportunities still to build:** decided 6 November. The Warcraft set, Warrior Cats names and all five franchise generators (My Little Pony, FF14 Viera, Transformers, Marvel Rivals, Sims) are in the weekly generator backlog. A Monday task builds one new generator a week and adds 50+ names to three existing pages.
 
 ## Done
 
