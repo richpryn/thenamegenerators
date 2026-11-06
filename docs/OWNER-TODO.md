@@ -121,6 +121,13 @@ Pages that get better with your own experience. A few lines each, in any session
 
 - [x] **Bing AI opportunities still to build:** decided 6 November. The Warcraft set, Warrior Cats names and all five franchise generators (My Little Pony, FF14 Viera, Transformers, Marvel Rivals, Sims) are in the weekly generator backlog. A Monday task builds one new generator a week and adds 50+ names to three existing pages.
 
+- [ ] **Making the site more than generators** (6 November). Five ideas for Rich to decide on, also on Site Jobs:
+  - **My World:** saved name projects per campaign or novel. Plan with phases and effort: https://claude.ai/artifact/VMJ2HUhpirTJ7YrFdX6B1G
+  - **Printable name tables** for game nights (d100 taverns, NPC sheets).
+  - **"Can I use this name?" checker** on business, band, username and artist pages (domain, handles, Companies House, trade marks).
+  - **Name-meaning reference pages** (place-name endings, how elvish names are built) for AI search to cite.
+  - **"Most-saved names this week"** list (needs a small backend).
+
 ## Done
 
 - [x] Split the work: content session does rewrites, intros and Events; this session does generator upgrades and new generators.
