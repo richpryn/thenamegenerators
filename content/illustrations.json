@@ -423,6 +423,10 @@
     "security_company": "office-desk",
     "vending_business": "office-desk",
     "laundromat": "office-desk",
-    "video_production": "office-desk"
+    "video_production": "office-desk",
+    "vintage_shop": "gift-shop",
+    "gift_shop": "gift-shop",
+    "sewing_business": "gift-shop",
+    "etsy_shop": "gift-shop"
   }
 }
