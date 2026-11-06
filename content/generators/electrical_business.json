@@ -14,9 +14,30 @@
       "title": "⚡ Electrical Business Name Generator",
       "tagline": "Names for electricians, from Ohm Sweet Ohm to Brightline Electrical Contractors."
     },
-    "intro": "Going it alone as a sparky? This **electrical business name generator** has names for electricians and electrical contractors: catchy and funny puns, classic family names, professional names for contractors and short modern ones, plus names from your town or your first name.",
-    "sections": [],
+    "intro": "Good electrical business names sound safe and switched on: a family name with <em>Electrical</em>, your town, or a pun on watts and ohms. Going it alone as a sparky? This **electrical business name generator** has names for electricians and electrical contractors: catchy and funny puns, classic family names, professional names for contractors and short modern ones, plus names from your town or your first name.",
+    "sections": [
+      {
+        "heading": "Eight good electrical business names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Switched On</strong>: a catchy name that also says you're on the ball.</li><li><strong>Live &amp; Neutral</strong>: two wiring terms that sound like a firm's motto.</li><li><strong>Ohm &amp; Dry Electricians</strong>: a pun on the ohm, the unit of resistance, and on \"home and dry\".</li><li><strong>The Crown Joules</strong>: named after the joule, the unit of energy, and the Crown Jewels.</li><li><strong>Barlow Electrical Contractors</strong>: a classic name for a firm that wins commercial work.</li><li><strong>Ironbridge Electrical Contractors</strong>: professional and solid, for bigger jobs.</li><li><strong>Three Phase &amp; Co.</strong>: short and modern, and every electrician knows what it means.</li><li><strong>Hampton EV Chargers</strong>: a town name with a specialism. Put your own town in the box.</li></ul>"
+      },
+      {
+        "heading": "What makes an electrical name work",
+        "content": "<p>Electricians are \"sparkies\" in British slang, and the trade has plenty of words that double as puns. The units are named after scientists: the watt after James Watt, the ohm after Georg Ohm and the joule after James Prescott Joule.</p><ul><li><strong>Puns on units and wiring</strong> make a name memorable: <em>Watt the Fuse</em>, <em>Sparks &amp; Recreation</em>. Pair them with a slogan that says you're qualified.</li><li><strong>Say the specialism.</strong> EV chargers, solar, data cabling and lighting are all searched for, so a name like <em>Hampton Bright Solar &amp; Electrical</em> tells people what you do.</li><li><strong>Professional names</strong> with <em>Contractors</em>, <em>Installations</em> or <em>Group</em> suit firms bidding for commercial work.</li><li><strong>Qualifications sell.</strong> In England and Wales, notifiable domestic electrical work falls under Part P of the Building Regulations. Electricians registered with a competent person scheme, such as NICEIC or NAPIT, can self-certify it, and customers look for those logos.</li></ul>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>A electrical name ends up on a van, a website, a Google Business Profile and a stack of invoices, so it's worth a few minutes' checking before any of that is printed:</p><ul><li><strong>Press Check</strong> on any name above. The <a href=\"../business-name-checker.html\">Business Name Checker</a> looks up the domain, links to the company register (Companies House in the UK) and opens the trade mark search and social handles.</li><li><strong>Search your area.</strong> Look up the name on a map and in local search results. Two firms with the same name a few miles apart confuse customers and reviews.</li><li><strong>Don't use a scheme's name or logo, such as NICEIC, in your business name. Show it beside the name once you're registered.</strong></li></ul><p>This is general guidance, not legal advice. For the full process, from shortlisting to registering, read our guide to <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>.</p>"
+      },
+      {
+        "heading": "Getting the name onto the van",
+        "content": "<ul><li><strong>Keep it short</strong> enough to read from across the road.</li><li><strong>Add a slogan</strong> if the name is a joke: choose <em>Name with a slogan</em> for lines like <em>Bright ideas, safe wiring</em>.</li><li><strong>Leave room to grow:</strong> a name that only says EV chargers can feel narrow if you later do rewires.</li></ul><p>Other trades: the <a href=\"plumbing-business-name-generator.html\">Plumbing</a>, <a href=\"roofing-company-name-generator.html\">Roofing</a>, <a href=\"painting-business-name-generator.html\">Painting</a>, <a href=\"construction-company-name-generator.html\">Construction</a>, <a href=\"cleaning-business-name-generator.html\">Cleaning</a>, <a href=\"landscaping-business-name-generator.html\">Landscaping</a> business name generators. For any kind of firm, try the <a href=\"business-name-generator.html\">Business Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_trades-names.html\">trades and home services business name generators</a>.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good electrician business names?",
+        "answer": "Short names that sound safe and switched on: Switched On, Live &amp; Neutral, Barlow Electrical Contractors or Three Phase &amp; Co. Add a specialism like EV chargers or solar if that's your main work."
+      },
       {
         "question": "How do I check an electrical business name is free?",
         "answer": "Press <strong>Check</strong> next to any name to see if it's free as a company, a domain and a social media handle. Then make sure: in the UK, search Companies House and the UK IPO trade mark register; in the US, search your state's business register and the USPTO trade mark search. A quick map search for the name in your area helps too."
@@ -24,6 +45,10 @@
       {
         "question": "What are some funny electrician business names?",
         "answer": "The best play on electrical words that sound like everyday ones: <em>Ohm Sweet Ohm</em>, <em>Socket Science</em>, <em>Crown Joules</em> or <em>Sparks &amp; Recreation</em>. Pair a joke name with a serious slogan so customers still know you're qualified. Choose <strong>Funny</strong> in the Style menu for more."
+      },
+      {
+        "question": "Should I put NICEIC in my business name?",
+        "answer": "No. Show the scheme's logo beside your name once you're registered, but don't make it part of the name. The scheme's name belongs to the scheme."
       }
     ]
   },
