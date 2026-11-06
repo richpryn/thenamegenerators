@@ -2881,7 +2881,11 @@
       "beauty_salon",
       "hair_salon",
       "lash_business",
-      "nail_salon"
+      "nail_salon",
+      "barber_shop",
+      "makeup_artist",
+      "skincare_brand",
+      "spa"
     ],
     "startHeading": "Try these name generators",
     "startIntro": "Use these tools to name a hair salon, beauty salon, nail bar or lash studio.",
