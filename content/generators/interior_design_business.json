@@ -194,7 +194,15 @@
             "The {town} [local.the]",
             "{town}'s Interior Designer",
             "{town} Home & Interiors",
-            "Interior Design {town}"
+            "Interior Design {town}",
+            "Interiors of {town}",
+            "{town} Design House",
+            "{town} Interior Studio",
+            "Homes of {town} Interiors",
+            "{town} Room & Home Design",
+            "{town} Interior Styling Co.",
+            "{town} Soft Furnishing Studio",
+            "Studio {town} Interiors"
           ]
         },
         "mine": {
@@ -312,7 +320,15 @@
             "The {town} [local.the] – [taglines]",
             "{town}'s Interior Designer – [taglines]",
             "{town} Home & Interiors – [taglines]",
-            "Interior Design {town} – [taglines]"
+            "Interior Design {town} – [taglines]",
+            "Interiors of {town} – [taglines]",
+            "{town} Design House – [taglines]",
+            "{town} Interior Studio – [taglines]",
+            "Homes of {town} Interiors – [taglines]",
+            "{town} Room & Home Design – [taglines]",
+            "{town} Interior Styling Co. – [taglines]",
+            "{town} Soft Furnishing Studio – [taglines]",
+            "Studio {town} Interiors – [taglines]"
           ]
         },
         "mine": {
