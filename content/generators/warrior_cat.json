@@ -401,6 +401,13 @@
                 "[kp]kit of [clans]"
               ]
             }
+          },
+          "default": {
+            "recipe": "template",
+            "template": [
+              "[kp]kit",
+              "[kp]kit of [clans]"
+            ]
           }
         },
         "apprentice": {
@@ -414,6 +421,13 @@
                 "[kp]paw of [clans]"
               ]
             }
+          },
+          "default": {
+            "recipe": "template",
+            "template": [
+              "[kp]paw",
+              "[kp]paw of [clans]"
+            ]
           }
         },
         "warrior": {
@@ -763,6 +777,13 @@
                 "[lead] of [clans]"
               ]
             }
+          },
+          "default": {
+            "recipe": "template",
+            "template": [
+              "[lead]",
+              "[lead] of [clans]"
+            ]
           }
         },
         "life": {
@@ -776,6 +797,13 @@
                 "[life] of [clans]"
               ]
             }
+          },
+          "default": {
+            "recipe": "template",
+            "template": [
+              "[life]",
+              "[life] of [clans]"
+            ]
           }
         }
       }
@@ -1011,6 +1039,10 @@
               "recipe": "template",
               "template": "[kp]kit"
             }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[kp]kit"
           }
         },
         "apprentice": {
@@ -1021,6 +1053,10 @@
               "recipe": "template",
               "template": "[kp]paw"
             }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[kp]paw"
           }
         },
         "warrior": {
@@ -1283,6 +1319,10 @@
               "recipe": "pick",
               "from": "lead"
             }
+          },
+          "default": {
+            "recipe": "pick",
+            "from": "lead"
           }
         },
         "life": {
@@ -1293,6 +1333,10 @@
               "recipe": "pick",
               "from": "life"
             }
+          },
+          "default": {
+            "recipe": "pick",
+            "from": "life"
           }
         }
       }
@@ -1530,6 +1574,12 @@
                 "[kp]kit of [clans]"
               ]
             }
+          },
+          "default": {
+            "recipe": "template",
+            "template": [
+              "[kp]kit of [clans]"
+            ]
           }
         },
         "apprentice": {
@@ -1542,6 +1592,12 @@
                 "[kp]paw of [clans]"
               ]
             }
+          },
+          "default": {
+            "recipe": "template",
+            "template": [
+              "[kp]paw of [clans]"
+            ]
           }
         },
         "warrior": {
@@ -1804,6 +1860,10 @@
               "recipe": "template",
               "template": "[lead] of [clans]"
             }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[lead] of [clans]"
           }
         },
         "life": {
@@ -1814,6 +1874,10 @@
               "recipe": "template",
               "template": "[life] of [clans]"
             }
+          },
+          "default": {
+            "recipe": "template",
+            "template": "[life] of [clans]"
           }
         }
       }
