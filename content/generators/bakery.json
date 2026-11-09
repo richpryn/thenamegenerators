@@ -4,6 +4,7 @@
   "icon": "🥖",
   "category": "biz_food",
   "published": "2026-11-07",
+  "updated": "2026-11-09",
   "description": "Bakery business name ideas in eight styles: catchy, cute, funny, classic, modern, French, from your town or your own name. Check any name is free.",
   "seoTitle": "Bakery Name Generator: Bakery Business Name Ideas",
   "seoKeywords": "bakery name generator, bakery business name generator, bakery names, bakery business names, bakery name ideas, bakery business name ideas, baking business names, home bakery business names, home bakery name ideas, bakery names not taken, unique bakery names, cute bakery names, catchy bakery names, funny bakery names, bakery names in french, patisserie name generator, pastry shop name generator, bakery names with your name, bake shop names",
@@ -206,7 +207,18 @@
         "Well Bread",
         "Use Your Loaf",
         "Loaf Story",
-        "Crumbs of Comfort"
+        "Crumbs of Comfort",
+        "Flour Hour",
+        "Crust & Found",
+        "Rye & Mighty",
+        "Sweet Rise",
+        "Grain & Simple",
+        "Loaf & Behold",
+        "Proof & Fold",
+        "Honest Crust",
+        "Morning Rise",
+        "Warm Oven",
+        "Golden Loaf"
       ],
       "ending": [
         "Bakery",
@@ -260,7 +272,16 @@
         "The Rising Loaf",
         "Bake Street",
         "Golden Hour Bakes",
-        "Use Your Bun"
+        "Use Your Bun",
+        "Flour Hour",
+        "Crust & Found",
+        "Rye & Mighty",
+        "Grain & Simple",
+        "Bake It Till You Make It",
+        "Rye So Serious",
+        "Fresh Out of the Oven",
+        "Loaf & Behold",
+        "Proof & Fold"
       ]
     },
     "cute": {
@@ -279,7 +300,9 @@
         "Bonny",
         "Wee",
         "Lovely",
-        "Dinky"
+        "Dinky",
+        "Toasty",
+        "Golden"
       ],
       "noun": [
         "Crumb",
@@ -296,7 +319,11 @@
         "Bake Shop",
         "Kitchen",
         "Scone",
-        "Pie"
+        "Pie",
+        "Teacake",
+        "Cupcake",
+        "Pantry",
+        "Crumpet"
       ],
       "pet": [
         "Honeybun",
@@ -319,7 +346,19 @@
         "Pudding",
         "Hazelnut",
         "Teddy",
-        "Snowdrop"
+        "Snowdrop",
+        "Pippin",
+        "Honeycomb",
+        "Clementine",
+        "Toffee",
+        "Fudge",
+        "Sprinkles",
+        "Primrose",
+        "Maple",
+        "Nutmeg",
+        "Ginger",
+        "Custard",
+        "Treacle"
       ],
       "ending": [
         "Bakes",
@@ -372,7 +411,16 @@
         "Loaf Shack",
         "Hot Diggity Dough",
         "Crumb Again",
-        "Bun Stop Shop"
+        "Bun Stop Shop",
+        "Whole Grain Shebang",
+        "Bake to the Future",
+        "Gone with the Grain",
+        "Scone with the Wind",
+        "Loaf Potion",
+        "Crust Issues",
+        "Hot Cross Puns",
+        "Dough Way José",
+        "Batter Late Than Never"
       ],
       "ending": [
         "Bakery",
@@ -407,7 +455,14 @@
         "Bun Day at a Time",
         "Crumb On In",
         "Crumb Rain or Shine",
-        "Yeast Side Story"
+        "Yeast Side Story",
+        "Muffin Compares to You",
+        "Bread It and Weep",
+        "Crumb as You Are",
+        "Life Is What You Bake It",
+        "Doughn't Stop Me Now",
+        "Ain't Nothing but a Bread Thing",
+        "Have a Bun Day"
       ]
     },
     "classic": {
@@ -467,7 +522,28 @@
         "Gilbert",
         "Hargreaves",
         "Ingram",
-        "Keating"
+        "Keating",
+        "Ashdown",
+        "Brindley",
+        "Cartwright",
+        "Danby",
+        "Dunmore",
+        "Elsworth",
+        "Goodwin",
+        "Gresham",
+        "Hadley",
+        "Lockwood",
+        "Linley",
+        "Moreton",
+        "Newbold",
+        "Penfold",
+        "Pennington",
+        "Ridley",
+        "Rushworth",
+        "Saxby",
+        "Stanway",
+        "Whitlock",
+        "Wilmot"
       ],
       "partner": [
         "Hale",
@@ -519,7 +595,11 @@
         "Fire Station",
         "Village Shop",
         "Smithy",
-        "Malthouse"
+        "Malthouse",
+        "Old Bank",
+        "Tithe Barn",
+        "Boathouse",
+        "Old Dairy Barn"
       ],
       "oldtrade": [
         "Bakery",
@@ -545,7 +625,16 @@
         "Water Lane",
         "Castle Street",
         "Abbey Road",
-        "Friar Street"
+        "Friar Street",
+        "High Street",
+        "Fore Street",
+        "Sheep Street",
+        "Silver Street",
+        "Priory Lane",
+        "Bell Street",
+        "Hill Street",
+        "Union Street",
+        "Victoria Road"
       ]
     },
     "modern": {
@@ -577,7 +666,10 @@
         "Dough",
         "Stone",
         "Ember",
-        "Field"
+        "Field",
+        "Leaven",
+        "Levain",
+        "Wheat"
       ],
       "ending": [
         "& Co.",
@@ -607,7 +699,13 @@
         "Kneaded",
         "Crumbworks",
         "Ovenbird",
-        "Wildgrain"
+        "Wildgrain",
+        "Leaven",
+        "Levain",
+        "Stoneground",
+        "Firebrick",
+        "Crumbhouse",
+        "Proofroom"
       ],
       "left": [
         "Flour",
@@ -734,7 +832,21 @@
         "Victor",
         "Yvette",
         "Zoé",
-        "Anouk"
+        "Anouk",
+        "Adèle",
+        "Basile",
+        "Corentin",
+        "Émile",
+        "Florian",
+        "Gabin",
+        "Héloïse",
+        "Joséphine",
+        "Lilou",
+        "Maëlle",
+        "Océane",
+        "Rosalie",
+        "Sacha",
+        "Valentin"
       ],
       "place": [
         "du Coin",
@@ -806,7 +918,18 @@
         "Le Pétrin",
         "Le Beau Pain",
         "Le Pain d'Antan",
-        "Le Four à Bois"
+        "Le Four à Bois",
+        "Le Pain de Campagne",
+        "La Douce Farine",
+        "La Bonne Miche",
+        "Le Pain Perdu",
+        "La Belle Croûte",
+        "Le Four Doré",
+        "Le Panier à Pain",
+        "Les Mains dans la Farine",
+        "La Fournée Dorée",
+        "Au Bon Levain",
+        "Le Moulin Doré"
       ]
     },
     "local": {
@@ -835,7 +958,10 @@
         "Bread & Cake",
         "Doughnut Co.",
         "Bagel Co.",
-        "Baking Company"
+        "Baking Company",
+        "Bread & Buns",
+        "Bread Basket",
+        "Pantry"
       ],
       "place": [
         "Street",
@@ -910,7 +1036,18 @@
         "{town} Rolling Pin",
         "Made in {town} Bakery",
         "Proper {town} Bakery",
-        "{town} Crust & Crumb"
+        "{town} Crust & Crumb",
+        "{town} Daily Bread",
+        "{town} Bread Basket",
+        "Rise & Shine {town}",
+        "{town} Bun Company",
+        "{town} Loaf & Larder",
+        "{town} Bread Club",
+        "Oven Fresh {town}",
+        "{town} Hearth Bakery",
+        "The Little {town} Bakehouse",
+        "Best of {town} Bakery",
+        "Good Morning {town} Bakery"
       ]
     },
     "mine": {
@@ -944,7 +1081,13 @@
         "Bakery Co.",
         "Cake & Bake",
         "Baking",
-        "Bake Club"
+        "Bake Club",
+        "Bread Basket",
+        "Bake Box",
+        "Sourdough Kitchen",
+        "Pie Kitchen",
+        "Bun Club",
+        "Bread Board"
       ],
       "by": [
         "Bakes",
@@ -976,7 +1119,12 @@
         "Baked Goods",
         "Bread & Buns",
         "Cookies",
-        "Scones"
+        "Scones",
+        "Fresh Bread",
+        "Morning Bakes",
+        "Sourdough Loaves",
+        "Pies & Pastries",
+        "Homemade Bread"
       ],
       "adjective": [
         "Little",
@@ -1001,7 +1149,10 @@
         "Fresh",
         "Golden",
         "Happy",
-        "Old-Fashioned"
+        "Old-Fashioned",
+        "Market",
+        "Sunrise",
+        "Honest"
       ],
       "short": [
         "Bakery",
@@ -1033,7 +1184,16 @@
         "{name}'s Bun Club",
         "Bread Club by {name}",
         "{name}'s Bake Shop",
-        "{name}'s Bakery & Pantry"
+        "{name}'s Bakery & Pantry",
+        "{name}'s Bread Basket",
+        "{name}'s Morning Bakes",
+        "{name}'s Proper Bakes",
+        "{name}'s Little Oven",
+        "{name}'s Sourdough Kitchen",
+        "{name}'s Bake Box",
+        "{name}'s Home Oven",
+        "{name}'s Crumbs",
+        "Sunday Bakes with {name}"
       ]
     }
   },

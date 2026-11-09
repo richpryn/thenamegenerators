@@ -4,6 +4,7 @@
   "icon": "🧝",
   "category": "fantasy",
   "published": "2025-11-30",
+  "updated": "2026-11-09",
   "description": "Elf names in three styles: real elves from Tolkien's books, D&D-style names, and original fantasy names. Male, female and gender-neutral.",
   "seoKeywords": "elf names, elven names, fantasy elf names, tolkien elf names, dnd elf names, elven woman names, female elf names, elven women names, elf woman names, female elf names dnd, elf girl names",
   "isPopular": true,
@@ -327,7 +328,17 @@
         "Rennic",
         "Sylvreth",
         "Wyvaren",
-        "Aunthir"
+        "Aunthir",
+        "Baelithar",
+        "Caervandor",
+        "Daelorin",
+        "Elvaeric",
+        "Jhaeriven",
+        "Maelthorin",
+        "Phaelorin",
+        "Xaelvar",
+        "Yraeldor",
+        "Zaerivan"
       ],
       "generic": [
         "Alvar",
@@ -501,7 +512,19 @@
         "Davian",
         "Elisar",
         "Fenlas",
-        "Kellan"
+        "Kellan",
+        "Arlandor",
+        "Calvaren",
+        "Gilrandor",
+        "Halvarion",
+        "Ithlan",
+        "Jorandel",
+        "Maelandir",
+        "Nimvaren",
+        "Tirvalen",
+        "Ulvarion",
+        "Wrenlas",
+        "Yvandor"
       ]
     },
     "female": {
@@ -814,7 +837,19 @@
         "Quaria",
         "Raelys",
         "Amalys",
-        "Ilyviel"
+        "Ilyviel",
+        "Aelivyre",
+        "Baelythra",
+        "Caelvessa",
+        "Daelithra",
+        "Jhaelyndra",
+        "Naevessa",
+        "Olaessa",
+        "Phaelyra",
+        "Thaelyssa",
+        "Ulaevra",
+        "Xaelyndra",
+        "Zaelvyra"
       ],
       "generic": [
         "Elara",
@@ -1097,7 +1132,20 @@
         "Melianne",
         "Selara",
         "Faeria",
-        "Elaria"
+        "Elaria",
+        "Briwen",
+        "Elsewyn",
+        "Fennelle",
+        "Gwenalith",
+        "Lianwen",
+        "Peronelle",
+        "Rosalwen",
+        "Tamsiel",
+        "Verelle",
+        "Elidwen",
+        "Mirawen",
+        "Wynfaye",
+        "Aurelwen"
       ]
     },
     "neutral": {
@@ -1264,7 +1312,22 @@
         "Ibis",
         "Owl",
         "Larkspur",
-        "Bryn"
+        "Bryn",
+        "Sycamore",
+        "Hornbeam",
+        "Blackthorn",
+        "Mallow",
+        "Vervain",
+        "Speedwell",
+        "Harebell",
+        "Siskin",
+        "Redwing",
+        "Waxwing",
+        "Gloaming",
+        "Kingcup",
+        "Rosebay",
+        "Tamarack",
+        "Campion"
       ],
       "dnd": [
         "Aeris",
@@ -1435,7 +1498,18 @@
         "Riel",
         "Tarrin",
         "Ulas",
-        "Wyn"
+        "Wyn",
+        "Aethryn",
+        "Ithren",
+        "Aevys",
+        "Orvyn",
+        "Elvyr",
+        "Laeven",
+        "Naevyn",
+        "Oraelis",
+        "Quaelin",
+        "Thaevin",
+        "Xaelis"
       ]
     }
   },

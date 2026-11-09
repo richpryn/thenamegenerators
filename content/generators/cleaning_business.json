@@ -5,6 +5,7 @@
   "icon": "🧽",
   "category": "biz_trades",
   "published": "2026-11-07",
+  "updated": "2026-11-09",
   "description": "Cleaning business names in eight styles, from catchy puns and cute names to professional and luxury, plus names from your town or first name, with slogans.",
   "seoKeywords": "cleaning business name generator, cleaning business names, cleaning company names, cleaning business name ideas, cleaning service name generator, catchy cleaning business names, cute cleaning business names, funny cleaning business names, unique cleaning business names, cleaning business names that are not taken, cleaning business names for women, luxury cleaning business names, professional cleaning company names, cleaning service names and slogans, house cleaning name generator, cleaning business names uk",
   "isPopular": false,
@@ -398,7 +399,21 @@
         "Spotless Spaces",
         "The Spotless Touch",
         "Mop It Up",
-        "Shine & Dandy"
+        "Shine & Dandy",
+        "Mop & Roll",
+        "Mop Shop",
+        "Sweep Heart",
+        "Clean & Serene",
+        "Sweep Stakes",
+        "Maid My Day",
+        "Maid in Heaven",
+        "Mop Culture",
+        "Scrub Hub",
+        "Mop Top",
+        "Neat Freaks",
+        "Suds Up",
+        "Dust Patrol",
+        "Clean Queen"
       ],
       "end": [
         "Cleaning",
@@ -442,7 +457,16 @@
         "Bumblebee",
         "Sunflower",
         "Little Star",
-        "Rosebud"
+        "Rosebud",
+        "Puffin",
+        "Button",
+        "Moonbeam",
+        "Honeydew",
+        "Dandelion",
+        "Little Owl",
+        "Forget-Me-Not",
+        "Tulip",
+        "Cherry Blossom"
       ],
       "end": [
         "Cleaning",
@@ -593,7 +617,24 @@
         "Cross",
         "Dalton",
         "Emerson",
-        "Garrett"
+        "Garrett",
+        "Ashton",
+        "Bramwell",
+        "Farrell",
+        "Hanley",
+        "Mercer",
+        "Prentice",
+        "Radcliffe",
+        "Stanton",
+        "Thorpe",
+        "Kendrick",
+        "Lindley",
+        "Merrick",
+        "Osborne",
+        "Pritchard",
+        "Sinclair",
+        "Talbot",
+        "Wheeler"
       ],
       "surnamePoss": [
         "Hartley",
@@ -668,7 +709,24 @@
         "Burke",
         "Dalton",
         "Emerson",
-        "Garrett"
+        "Garrett",
+        "Ashton",
+        "Bramwell",
+        "Farrell",
+        "Hanley",
+        "Mercer",
+        "Prentice",
+        "Radcliffe",
+        "Stanton",
+        "Thorpe",
+        "Kendrick",
+        "Lindley",
+        "Merrick",
+        "Osborne",
+        "Pritchard",
+        "Sinclair",
+        "Talbot",
+        "Wheeler"
       ],
       "initial": [
         "A",
@@ -738,7 +796,17 @@
         "Rosewood",
         "Holloway",
         "Sandford",
-        "Larchmont"
+        "Larchmont",
+        "Elmfield",
+        "Foxhill",
+        "Kingsbridge",
+        "Northwood",
+        "Oakdale",
+        "Riverbank",
+        "Southgate",
+        "Woodside",
+        "Chestnut Grove",
+        "Ivy Lane"
       ],
       "service": [
         "Cleaning Services",
@@ -800,7 +868,15 @@
         "Silverline",
         "Evergreen",
         "Northstar",
-        "Bluestone"
+        "Bluestone",
+        "Brightway",
+        "Clearwell",
+        "Landmark",
+        "Beacon",
+        "Crestline",
+        "Clearpath",
+        "Lodestar",
+        "Brightwater"
       ],
       "service": [
         "Cleaning Solutions",
@@ -869,7 +945,11 @@
         "Spruced",
         "Sweep",
         "Sage",
-        "Citrus"
+        "Citrus",
+        "Kempt",
+        "Shimmer",
+        "Rinsed",
+        "Scrubbed"
       ],
       "end": [
         "Co.",
@@ -909,7 +989,14 @@
         "Wentworth",
         "Kingsley",
         "Carrington",
-        "Montague"
+        "Montague",
+        "Belmont",
+        "Kensington",
+        "Ashbourne",
+        "Langley",
+        "Opal",
+        "Damask",
+        "Chantilly"
       ],
       "service": [
         "Housekeeping",
@@ -953,7 +1040,11 @@
         "The Housekeeping Company",
         "The Polished Home",
         "The Immaculate Home",
-        "The Discreet Housekeeper"
+        "The Discreet Housekeeper",
+        "The Fresh Linen Company",
+        "The Quiet Housekeeper",
+        "The Pressed Linen Co.",
+        "The Well-Kept Home"
       ]
     },
     "local": {
@@ -996,7 +1087,9 @@
         "Shine",
         "Gleam",
         "Tidy",
-        "Pristine"
+        "Pristine",
+        "Pure",
+        "Smart"
       ],
       "bservice": [
         "Cleaning",
@@ -1026,7 +1119,12 @@
         "Sparkle",
         "Home Helpers",
         "Mop Squad",
-        "Maid Service"
+        "Maid Service",
+        "Spring Clean",
+        "Sparkle Team",
+        "Housekeepers",
+        "Window Cleaners",
+        "Mop & Bucket"
       ]
     },
     "mine": {
@@ -1066,7 +1164,12 @@
         "Sparkling Homes by",
         "Windows by",
         "Deep Cleans by",
-        "Spotless Homes by"
+        "Spotless Homes by",
+        "Polished by",
+        "Tidied by",
+        "Ironing by",
+        "Oven Cleaning by",
+        "Carpets by"
       ],
       "quality": [
         "Sparkling",
@@ -1090,7 +1193,11 @@
         "Gleaming",
         "Bright",
         "Careful",
-        "Spick & Span"
+        "Spick & Span",
+        "Thorough",
+        "Neat",
+        "Honest",
+        "Cheerful"
       ],
       "qservice": [
         "Cleaning",
