@@ -5578,8 +5578,25 @@
       "tagline": "Original Clan names for kits, apprentices, warriors, medicine cats and leaders, by fur colour if you like."
     },
     "intro": "In the Warriors books every Clan cat has a two-part name: a prefix that stays for life and a suffix that changes as the cat grows up. A kit called Yewkit becomes the apprentice Yewpaw, earns a warrior name like Yewsong and, if they lead their Clan, becomes Yewstar. This **warrior cat name generator** makes original names in that style for every rank, from a fur colour if you like, and can show a whole life from kit to warrior. It's a fan-made, unofficial tool inspired by Erin Hunter's Warriors books, and it never gives you the name of a cat from the books.",
-    "sections": [],
+    "sections": [
+      {
+        "heading": "Eight good warrior cat names",
+        "content": "<p>All eight came from the generator, across ranks and fur colours:</p><ul><li><strong>Sootsong</strong>: a black warrior's name. The prefix describes the coat and the suffix the cat's voice.</li><li><strong>Ravenlight</strong>: another black cat, with a bright suffix to balance the dark prefix.</li><li><strong>Rustnose</strong>: a ginger warrior named for one feature, the way many book cats are.</li><li><strong>Patchheart</strong>: a tortie or calico, named for a patched coat and a kind nature.</li><li><strong>Whitedash</strong>: a white cat that moves fast.</li><li><strong>Comfreydew</strong>: a medicine cat, named after a healing herb.</li><li><strong>Ospreystar</strong>: a leader, with the -star every Clan leader takes.</li><li><strong>Stillkit → Stillpaw → Stillfern → Stillstar</strong>: one cat's whole life, from kit to leader.</li></ul>"
+      },
+      {
+        "heading": "How warrior cat names are built",
+        "content": "<p>The Warriors series, first published in 2003 under the pen name Erin Hunter (several authors share it), gives every Clan cat a name in two halves:</p><ul><li><strong>The prefix</strong> is given at birth and kept for life. It usually comes from nature or from how the kit looks: a plant, a bird, a stone, a colour.</li><li><strong>The suffix</strong> marks the cat's place in the Clan. Kits end in <em>-kit</em> and apprentices in <em>-paw</em>. A warrior's suffix is chosen at their naming ceremony, often for something about them: <em>-song</em>, <em>-pelt</em>, <em>-fang</em>.</li><li><strong>Leaders</strong> replace their suffix with <em>-star</em>.</li></ul><p>Choose a <strong>rank</strong> for the stage you need, or <strong>Whole life</strong> to see one cat grow up. Choose a <strong>fur colour</strong> for prefixes that suit the coat: soot, crow and raven for black cats, rust and fox for ginger ones, dapple and patch for torties. Choose <strong>With a Clan</strong> to add an original Clan name, like <em>Maplelight of WolfClan</em>.</p>"
+      },
+      {
+        "heading": "Making your own Clan cat",
+        "content": "<ul><li><strong>Look at the cat first.</strong> A prefix that describes the coat or the eyes makes the name feel earned.</li><li><strong>Pick a suffix with a story.</strong> A warrior called <em>-fang</em> fights; one called <em>-song</em> is gentle. In the books the leader chooses it at the naming ceremony, so think about what they'd have seen.</li><li><strong>Keep the Clan consistent.</strong> A Clan in pine woods might favour pine, needle and owl names.</li><li><strong>Use it for your own cat too.</strong> The colour option makes it easy to find a name for a real black or ginger cat.</li></ul><p>For more names for real cats, try the <a href=\"black-cat-name-generator.html\">Black Cat Name Generator</a>. For other animals, see all the <a href=\"../categories/animals-names.html\">animal name generators</a>.</p><p>This is a fan-made generator, not connected to the Warriors books or their publishers. Every name here is original rather than taken from the books.</p>"
+      }
+    ],
     "faqs": [
+      {
+        "question": "What are good warrior cat names?",
+        "answer": "Two-part names from nature, like Sootsong, Ravenlight, Patchheart or Rustnose: a prefix for the cat's look and a suffix for its character. Choose a rank and a fur colour to get names like these."
+      },
       {
         "question": "How do warrior cat names work?",
         "answer": "A warrior name is a prefix plus a suffix, like Fern and song. Kits end in -kit, apprentices in -paw, and leaders swap their suffix for -star. The prefix never changes."
@@ -5587,6 +5604,10 @@
       {
         "question": "Can I use these names in my fan fiction?",
         "answer": "Yes. Every name here is original and checked against the cats in the books, so use them for your own Clan, story, roleplay or drawings."
+      },
+      {
+        "question": "What are good warrior cat names for a black cat?",
+        "answer": "Names with a dark prefix, like Sootsong, Ravenlight, Crowspeck or Blackdawn. Choose Black under fur colour."
       }
     ]
   }
