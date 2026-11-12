@@ -1,0 +1,207 @@
+{
+  "title": "Welsh Names and Surnames",
+  "term": "Welsh patronymic",
+  "definition": "A Welsh name that links a person to their father with ap or ab (son of) or ferch (daughter of), as in Dafydd ap Gruffudd.",
+  "section": "languages",
+  "description": "How Welsh names worked: ap, ab and ferch, how Powell, Price and Bowen grew out of them, why Jones is so common, and what Welsh first names mean.",
+  "seoTitle": "Welsh Names and Surnames: ap, ab, ferch and Jones",
+  "published": "2026-11-12",
+  "motif": "dragon",
+  "atAGlance": "<p>For most of their history the Welsh had no fixed family names. A person was known by their own name and their father's, joined by <em>ap</em> or <em>ab</em> (son of) or <em>ferch</em> (daughter of), so the surname changed every generation. Fixed surnames spread from the gentry downwards from the 1500s, but in parts of rural Wales the old system lasted into the early 1800s. Because most new surnames were made from a small pool of first names, a handful of them, led by Jones, Williams and Davies, are shared by a very large part of the population.</p>",
+  "facts": [
+    {
+      "label": "Son of",
+      "value": "ap (ab before a vowel), from mab, \"son\""
+    },
+    {
+      "label": "Daughter of",
+      "value": "ferch, from merch, \"girl, daughter\"; often written verch in old English-language records"
+    },
+    {
+      "label": "Fixed surnames",
+      "value": "Spread from the 1500s; patronymics lasted in some rural areas into the early 1800s"
+    },
+    {
+      "label": "Most common surnames (1813–37)",
+      "value": "Jones, Williams, Davies, Thomas and Evans"
+    }
+  ],
+  "examplesHeading": "Welsh names and where they come from",
+  "examples": [
+    {
+      "name": "Powell",
+      "language": "Welsh surname",
+      "meaning": "from *ap Hywel*, \"son of Hywel\"",
+      "status": "attested",
+      "source": "morgan"
+    },
+    {
+      "name": "Price / Pryce",
+      "language": "Welsh surname",
+      "meaning": "from *ap Rhys*, \"son of Rhys\"",
+      "status": "attested",
+      "source": "morgan"
+    },
+    {
+      "name": "Bowen",
+      "language": "Welsh surname",
+      "meaning": "from *ab Owain*, \"son of Owain\"",
+      "status": "attested",
+      "source": "morgan"
+    },
+    {
+      "name": "Pugh",
+      "language": "Welsh surname",
+      "meaning": "from *ap Hugh*, \"son of Hugh\"",
+      "status": "attested",
+      "source": "odfn"
+    },
+    {
+      "name": "Jones",
+      "language": "Welsh and English surname",
+      "meaning": "\"son of John\", from the father's name plus -s",
+      "status": "attested",
+      "source": "rowlands"
+    },
+    {
+      "name": "Davies",
+      "language": "Welsh surname",
+      "meaning": "\"son of David\" (Welsh Dafydd)",
+      "status": "attested",
+      "source": "rowlands"
+    },
+    {
+      "name": "Dafydd",
+      "language": "Welsh first name",
+      "meaning": "the Welsh form of David, from Hebrew, usually explained as \"beloved\"",
+      "status": "attested",
+      "source": "dfn"
+    },
+    {
+      "name": "Emrys",
+      "language": "Welsh first name",
+      "meaning": "the Welsh form of Latin *Ambrosius*, from Greek for \"immortal\"",
+      "status": "attested",
+      "source": "dfn"
+    },
+    {
+      "name": "Gwen",
+      "language": "Welsh first name",
+      "meaning": "from *gwen*, the feminine of *gwyn*, \"white, fair, blessed\"",
+      "status": "attested",
+      "source": "dfn"
+    },
+    {
+      "name": "Rhys",
+      "language": "Welsh first name",
+      "meaning": "an old Welsh name, often explained as \"ardour\"; the exact origin is debated",
+      "status": "uncertain",
+      "source": "dfn"
+    },
+    {
+      "name": "Angharad",
+      "language": "Welsh first name",
+      "meaning": "a medieval name usually explained as \"much loved\", from *car*, love; the analysis is not certain",
+      "status": "uncertain",
+      "source": "dfn"
+    },
+    {
+      "name": "Bryn",
+      "language": "Welsh first name",
+      "meaning": "the ordinary word for \"hill\", used as a first name in modern times",
+      "status": "attested",
+      "source": "dfn"
+    },
+    {
+      "name": "Cerys",
+      "language": "Welsh first name",
+      "meaning": "a modern name linked to *caru*, \"to love\"",
+      "status": "uncertain",
+      "source": "dfn"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Son of, daughter of",
+      "content": "<p>Medieval Wales named people the way much of the Celtic and Norse world did: by descent. A man was <em>Llywelyn ap Gruffudd</em>, Llywelyn son of Gruffudd, and if more was needed the chain went back another generation or two: <em>Dafydd ap Ieuan ap Gruffudd</em>.<sup><a href=\"#src-1\">[1]</a></sup> The word <em>ap</em> is a worn-down form of <em>mab</em>, \"son\", and before a vowel it became <em>ab</em>, as in <em>ab Owain</em>. A woman was <em>ferch</em>, from <em>merch</em>, \"girl, daughter\": <em>Gwenllian ferch Llywelyn</em>. Clerks writing in English often spelt it <em>verch</em>, which is why family historians meet both forms.<sup><a href=\"#src-1\">[1]</a></sup></p><p>The change from <em>m</em> to <em>f</em> is the Welsh soft mutation, which alters the first sound of a word after certain other words. The same rule turns <em>mab</em> into <em>fab</em> in modern Welsh writing (<em>Llywelyn fab Gruffudd</em>), while the older reduced form <em>ap</em> survives in names.</p><p>Under this system the \"surname\" changed every generation. A son of Llywelyn ap Gruffudd would be <em>ap Llywelyn</em>, not <em>ap Gruffudd</em>.</p>"
+    },
+    {
+      "heading": "How fixed surnames arrived",
+      "content": "<p>Fixed surnames came to Wales slowly, and from the top down. Gentry families with English connections adopted them first, from the 1500s onwards, as English law and English-language records spread after Wales was joined to England by the Acts of 1536 and 1543.<sup><a href=\"#src-1\">[1]</a></sup> Ordinary people followed over the next two centuries, and in parts of the rural north and west patronymics were still in everyday use in the early 1800s.<sup><a href=\"#src-2\">[2]</a></sup></p><p>Two patterns produced most Welsh surnames:</p><ul><li><strong>The <em>ap</em> merged into the name.</strong> <em>Ap Hywel</em> became Powell, <em>ap Rhys</em> became Price or Pryce, <em>ab Owain</em> became Bowen, <em>ap Hugh</em> became Pugh and <em>ap Richard</em> became Prichard.<sup><a href=\"#src-1\">[1]</a></sup></li><li><strong>The father's name took an English -s.</strong> John's son became Jones, David's son Davies, William's son Williams and Evan's son Evans.<sup><a href=\"#src-2\">[2]</a></sup></li></ul><p>Many families simply froze the father's name as it stood, which is why Thomas, Morgan, Owen and Lewis are both first names and surnames.</p>"
+    },
+    {
+      "heading": "Why so many Joneses?",
+      "content": "<p>In a survey of every parish marriage register in Wales from 1813 to 1837, John and Sheila Rowlands found that Jones alone accounted for nearly 14 per cent of people, Williams for almost 9 per cent and Davies for about 7 per cent. The ten commonest surnames covered more than half the population, a far tighter concentration than in England.<sup><a href=\"#src-2\">[2]</a></sup><sup><a href=\"#src-3\">[3]</a></sup></p><p>The reason is the stock the surnames were made from. By the time ordinary families were taking fixed names, most Welsh boys were being given a small set of Christian names (John, William, David, Thomas, Evan, Hugh), so most new patronymic surnames came from the same few fathers' names.<sup><a href=\"#src-2\">[2]</a></sup> In close-knit communities this produced the famous Welsh habit of nicknames by trade or place, such as Jones the Post or Evans the Milk.</p>"
+    },
+    {
+      "heading": "Welsh first names",
+      "content": "<p>Welsh first names come from several layers:</p><ul><li><strong>Biblical and saints' names in Welsh form:</strong> Dafydd (David), Ieuan (John) and Siân (Jane).<sup><a href=\"#src-4\">[4]</a></sup></li><li><strong>Latin names borrowed in Roman and early medieval times:</strong> Emrys, from <em>Ambrosius</em>.<sup><a href=\"#src-4\">[4]</a></sup></li><li><strong>Native medieval names:</strong> Rhys, Owain, Gruffudd and Angharad. The meanings of several of these are explained in more than one way, so treat popular one-word meanings with some caution.<sup><a href=\"#src-4\">[4]</a></sup></li><li><strong>Ordinary Welsh words used as names</strong>, mostly from the 19th and 20th centuries: Bryn (\"hill\"), Gwen (\"white, fair, blessed\") and Cerys, which is linked to <em>caru</em>, \"to love\".<sup><a href=\"#src-4\">[4]</a></sup></li></ul><p>When you build a Welsh-style name for a story, the period matters. <em>Gwilym ap Dafydd</em> belongs to the Middle Ages, <em>Gwilym Davies</em> to the last three centuries, and a name like Cerys is a modern choice.</p>"
+    },
+    {
+      "heading": "Building a Welsh-style name for a story",
+      "content": "<p>For a medieval character, use a first name and a father's name joined by <em>ap</em> (or <em>ab</em> before a vowel) for a man and <em>ferch</em> for a woman, and add a grandfather if two characters would otherwise share a name: <em>Rhys ap Gruffudd ap Owain</em>. A nickname from looks or trade, such as <em>Goch</em> (red) or <em>Fychan</em> (younger, later anglicised as Vaughan), was common too.<sup><a href=\"#src-1\">[1]</a></sup></p><p>For a character after about 1700, use a fixed surname instead, and expect it to be one of the common patronymic ones. A village where half the people are called Jones is not an exaggeration but the historical norm.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What does ap mean in Welsh names?",
+      "answer": "Son of. It's a shortened form of mab, \"son\", and becomes ab before a vowel, as in ab Owain. The female form is ferch, \"daughter of\"."
+    },
+    {
+      "question": "Why do so many Welsh people have the same surname?",
+      "answer": "Most Welsh surnames were made from a father's first name when fixed surnames arrived, and by then most fathers had one of a few common names, such as John, William and David. That gave Jones, Williams and Davies, which together covered almost a third of people in Wales in the early 1800s."
+    },
+    {
+      "question": "Where does the surname Powell come from?",
+      "answer": "It comes from ap Hywel, \"son of Hywel\", with the ap merged into the name. Price (ap Rhys), Bowen (ab Owain) and Pugh (ap Hugh) were formed the same way."
+    }
+  ],
+  "related": [
+    "old-english-names",
+    "medieval-english-names",
+    "english-place-name-elements"
+  ],
+  "generators": [
+    "last_name",
+    "house_name",
+    "character_name"
+  ],
+  "sources": [
+    {
+      "id": "morgan",
+      "author": "T. J. Morgan and Prys Morgan",
+      "title": "Welsh Surnames",
+      "publisher": "University of Wales Press",
+      "year": "1985"
+    },
+    {
+      "id": "rowlands",
+      "author": "John Rowlands and Sheila Rowlands",
+      "title": "The Surnames of Wales",
+      "publisher": "Federation of Family History Societies",
+      "year": "1996"
+    },
+    {
+      "id": "nomina",
+      "author": "John Rowlands and Sheila Rowlands",
+      "title": "Surnames of Wales: an update (Nomina 29)",
+      "publisher": "Society for Name Studies in Britain and Ireland",
+      "url": "https://www.snsbi.org.uk/Nomina_articles/Nomina_29_Rowlands.pdf",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "dfn",
+      "author": "Patrick Hanks, Kate Hardcastle and Flavia Hodges",
+      "title": "A Dictionary of First Names",
+      "publisher": "Oxford University Press",
+      "year": "2006"
+    },
+    {
+      "id": "odfn",
+      "author": "Patrick Hanks, Richard Coates and Peter McClure",
+      "title": "The Oxford Dictionary of Family Names in Britain and Ireland",
+      "publisher": "Oxford University Press",
+      "year": "2016"
+    }
+  ]
+}
