@@ -353,6 +353,19 @@ function howItWorksHtml(generator) {
             </section>`;
 }
 
+/** Naming guides that list this generator in their "related", linked back from its page. */
+function guideLinksHtml(generator, site) {
+  const guides = site.guides().filter(g => (g.related || []).includes(generator.key)
+    || (generator.checkName && g.slug === 'business-naming-best-practices'));
+  if (!guides.length) return '';
+  return `
+            <section class="section guide-links">
+                <h2>${guides.length > 1 ? 'Naming guides' : 'Naming guide'}</h2>
+                <ul class="ref-links">
+                    ${guides.map(g => `<li><a href="../guides/${g.slug}.html">${escapeHtml(g.title)}</a>: ${escapeHtml(g.description)}</li>`).join('\n                    ')}
+                </ul>
+            </section>`;
+}
 // 2,740 -> "2,700"
 function roundDownNumber(n) {
   if (n < 100) return String(n);
@@ -689,7 +702,7 @@ function generateGeneratorPage(generator, category, site) {
             </section>
             <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="${generator.updated}">${longDate(generator.updated)}</time></p>
 ${examplesHTML}
-${howItWorksHtml(generator)}${Reference.generatorBox(REF_FOR[generator.key])}
+${howItWorksHtml(generator)}${Reference.generatorBox(REF_FOR[generator.key])}${guideLinksHtml(generator, site)}
             ${layout.sectionBreak(motif)}
             <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="${escGenTitle}">
