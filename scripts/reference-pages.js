@@ -81,7 +81,8 @@ function referenceFor(records) {
 function generatorBox(records, prefix = '../') {
   if (!records || !records.length) return '';
   return `
-            <section class="section ref-box">
+            <section class="section ref-box hd">
+                <svg class="doodle ref-box-d wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-library"/></svg>
                 <h2>Understanding these names</h2>
                 <p>Where names like these come from, from our Naming Library:</p>
                 <ul class="ref-links">
@@ -162,7 +163,7 @@ function referencePage(r, records, site, helpers) {
                     ${r.examples.map(e => `<tr><td><b>${escapeHtml(e.name)}</b>${e.language ? `<br><small>${escapeHtml(e.language)}</small>` : ''}</td><td>${md(escapeHtml(e.meaning || ''))}${srcIndex[e.source] ? ` <sup><a href="#src-${srcIndex[e.source]}">[${srcIndex[e.source]}]</a></sup>` : ''}</td><td>${statusBadge(e.status)}</td></tr>`).join('\n                    ')}
                     </tbody>
                 </table></div>
-                <p class="ref-key">${statuses.map(s => `${statusBadge(s)} ${escapeHtml(STATUS[s][1])}`).join(' ')}</p>` : '';
+                <ul class="ref-key">${statuses.map(s => `<li>${statusBadge(s)} ${escapeHtml(STATUS[s][1])}</li>`).join('')}</ul>` : '';
 
   const facts = (r.facts || []).length ? `
                 <dl class="ref-facts">
@@ -211,7 +212,7 @@ function referencePage(r, records, site, helpers) {
 
   return `${head({ title: r.seoTitle || `${r.title} | The Naming Library`, desc: r.description, url, schema, helpers })}
 <body>
-    ${layout.svgSprite([...gens.map(g => layout.generatorMotif(g, catOf(g))), 'quill'])}
+    ${layout.svgSprite([...gens.map(g => layout.generatorMotif(g, catOf(g))), r.motif || 'library'])}
     ${layout.siteHeader('../', site.categories)}
 
     <div class="wrap layout">
@@ -221,7 +222,7 @@ function referencePage(r, records, site, helpers) {
                 <p class="eyebrow">${escapeHtml(section ? section.name : 'Naming Library')}</p>
                 <div class="titlerow">
                     <h1>${escapeHtml(r.title)}</h1>
-                    ${layout.doodle(r.motif || 'quill')}
+                    ${layout.doodle(r.motif || 'library')}
                 </div>
                 <div class="ref-glance hd">
                     <h2>At a glance</h2>
@@ -250,7 +251,7 @@ function referenceIndex(records, site, helpers) {
   const groups = SECTIONS.map(s => ({ ...s, items: records.filter(r => r.section === s.key) })).filter(s => s.items.length);
   return `${head({ title, desc, url, schema, helpers })}
 <body>
-    ${layout.svgSprite(['quill'])}
+    ${layout.svgSprite(['library', ...records.map(r => r.motif || 'library')])}
     ${layout.siteHeader('../', site.categories)}
 
     <div class="wrap layout">
@@ -258,14 +259,14 @@ function referenceIndex(records, site, helpers) {
             <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <span aria-current="page">Naming Library</span></nav>
             <div class="titlerow">
                 <h1>The Naming <span class="hl">Library</span></h1>
-                ${layout.doodle('quill')}
+                ${layout.doodle('library')}
             </div>
             <p class="lede">The origins, meanings and construction of names. Every page cites its sources, and every example says whether the name is historically recorded, reconstructed by scholars, built by us from real word parts, or simply invented.</p>
             ${groups.map(g => `<section class="section">
                 <h2>${escapeHtml(g.name)}</h2>
                 <p>${escapeHtml(g.line)}</p>
                 <div class="genlist">
-                    ${g.items.map(r => `<a href="${r.slug}.html" class="gencard hd tap">${layout.doodle(r.motif || 'quill', 'doodle wob')}<div><b>${escapeHtml(r.title)}</b><span>${escapeHtml(r.description)}</span></div><em aria-hidden="true">→</em></a>`).join('\n                    ')}
+                    ${g.items.map(r => `<a href="${r.slug}.html" class="gencard hd tap">${layout.doodle(r.motif || 'library', 'doodle wob')}<div><b>${escapeHtml(r.title)}</b><span>${escapeHtml(r.description)}</span></div><em aria-hidden="true">→</em></a>`).join('\n                    ')}
                 </div>
             </section>`).join('\n            ')}
             <section class="section">
