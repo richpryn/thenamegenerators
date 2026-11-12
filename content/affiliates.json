@@ -1,6 +1,6 @@
 {
   "_readme": "Links used by the Business Name Checker (business-name-checker.html). To switch on an affiliate programme, replace that entry's url with the tracking link the programme gives you (keep {domain} or {q} where the name should go) and set affiliate to true: the link is then marked rel=sponsored and the disclosure line shows. companiesHouseApi is the address of the Cloudflare Worker in workers/companies-house once it's deployed; while it's empty the page links to Companies House instead.",
-  "companiesHouseApi": "",
+  "companiesHouseApi": "https://ch-proxy.richardpryn.workers.dev",
   "disclosure": "We may earn a small commission if you buy through some of these links. It doesn't change the price you pay.",
   "domains": {
     "global": {
