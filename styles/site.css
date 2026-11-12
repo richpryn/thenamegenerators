@@ -668,3 +668,19 @@ a.go{text-decoration:none}
 .biz-count{margin-top:6px!important;font:400 15px/1.2 var(--hand)!important;color:var(--ink)!important}
 @media (max-width:639px){.biz-check .go{width:100%}}
 
+/* Naming Library (reference/), plain styles; the design session may restyle. */
+.ref-glance{--fill:var(--card);padding:var(--s4);margin:var(--s4) 0}
+.ref-glance h2{margin:0 0 var(--s2);font-size:18px}
+.ref-table-wrap{overflow-x:auto}
+.ref-table{width:100%;border-collapse:collapse;font-size:16px}
+.ref-table th,.ref-table td{text-align:left;vertical-align:top;padding:8px;border-bottom:1px solid var(--rule)}
+.ref-status{display:inline-block;font:700 12px/1 var(--head);padding:5px 8px;border-radius:999px;border:1.5px solid var(--ink);white-space:nowrap}
+.ref-attested{background:#d8f0d2}.ref-reconstructed{background:#dde7f7}.ref-derived{background:#f6ecc9}.ref-invented{background:#f1dcef}.ref-uncertain{background:#eee}
+.ref-key{font-size:14px;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center}
+.ref-facts{display:grid;gap:8px;margin:var(--s3) 0}
+.ref-facts div{display:grid;grid-template-columns:minmax(120px,30%) 1fr;gap:12px}
+.ref-facts dt{font-weight:700}
+.ref-facts dd{margin:0}
+.ref-links li{margin-bottom:8px}
+.ref-sources ol{font-size:15px}
+.ref-note{font-size:14px;opacity:.8}

@@ -163,6 +163,7 @@ function validate({ categories, generators, homepage = { popular: [] }, sisterLi
       if (i === selectKeys.length) {
         try {
           const names = engine.generate(values, 3);
+          if (!names.length && !(gen.startsWith && values[gen.startsWith] && values[gen.startsWith] !== 'any')) errors.push(`${file}: ${JSON.stringify(values)} gives no names`);
           if (names.some((n) => !n || /undefined|\[|\]/.test(n))) {
             errors.push(`${file}: ${JSON.stringify(values)} gives odd names, e.g. "${names[0]}"`);
           }
@@ -217,6 +218,9 @@ function validate({ categories, generators, homepage = { popular: [] }, sisterLi
     }
   }
 
+  // The Naming Library (content/reference/*.json)
+  const Reference = require('./reference-pages');
+  errors.push(...Reference.validateReference(Reference.loadReference(), generators));
   return { errors, warnings };
 }
 

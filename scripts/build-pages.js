@@ -20,6 +20,9 @@ const RecipeEngine = require('../lib/recipe-engine.js');
 const layout = require('./layout');
 const Illustrations = require('../lib/illustrations.js');
 const { generateCheckerPage } = require('./checker-page');
+const Reference = require('./reference-pages');
+const REFERENCE = Reference.loadReference();
+const REF_FOR = Reference.referenceFor(REFERENCE);
 
 const ROOT = path.join(__dirname, '..');
 const POSTS_DIR = path.join(ROOT, 'posts');
@@ -332,6 +335,13 @@ function howItWorksHtml(generator) {
     }
   });
   if (choices.length) parts.push(`<p>The choices:</p>\n                <ul>${choices.join('')}</ul>`);
+  // Where the names come from, written per page in content ("nameSource"):
+  // {"kind": "invented" | "historical" | "mixed", "note": "..."}
+  const src = generator.nameSource;
+  if (src && src.note) {
+    const lead = { invented: 'Every name is invented.', historical: 'These are real historical names.', mixed: 'Some names are real and some are invented.' }[src.kind] || '';
+    parts.push(`<p><strong>Where the names come from:</strong> ${escapeHtml(lead)} ${markdownBold(escapeHtml(src.note))}</p>`);
+  }
   parts.push(`<p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet. Once you've seen them all, "Start again" shuffles the whole list again.</p>`);
 
   return `
@@ -500,7 +510,16 @@ function generateGeneratorPage(generator, category, site) {
                 </div>
             </section>` : '';
 
-  const sameCategory = site.inCategory(category.slug).filter(gen => gen.key !== generator.key);
+  // Up to 8 more from the same hub (not already in Related): popular pages
+  // first, then a rotation that starts after this page, so every page in a
+  // hub is linked from its neighbours. The hub page links to all of them.
+  const relatedKeys = new Set(related.map(g => g.key));
+  const hubAll = site.inCategory(category.slug);
+  const hubOthers = hubAll.filter(gen => gen.key !== generator.key && !relatedKeys.has(gen.key));
+  const at = hubAll.findIndex(gen => gen.key === generator.key);
+  const rotated = hubAll.slice(at + 1).concat(hubAll.slice(0, Math.max(at, 0))).filter(gen => hubOthers.includes(gen));
+  const popular = hubOthers.filter(gen => gen.isPopular).sort((a, b) => (a.popularRank || 99) - (b.popularRank || 99));
+  const sameCategory = [...new Set([...popular.slice(0, 3), ...rotated])].slice(0, 8);
   // Every other hub that lists this generator, so each hub's pages link back to it
   const otherHubs = (site.categoriesOf[generator.key] || [])
     .filter(slug => slug !== category.slug)
@@ -514,7 +533,7 @@ function generateGeneratorPage(generator, category, site) {
                 <div class="genlist compact" id="category-generators">
                     ${sameCategory.map(gen => genCard(gen, { desc: false })).join('\n                    ')}
                 </div>` : ''}
-                <p class="all-link"><a href="../categories/${category.slug}-names.html">All ${escapeHtml(category.name)} name generators</a></p>${alsoInHTML}
+                <p class="all-link"><a href="../categories/${category.slug}-names.html">All ${hubAll.length} ${escapeHtml(category.name)} name generators</a></p>${alsoInHTML}
             </section>`;
 
   // Article sections (headings and content are trusted HTML from content/)
@@ -669,7 +688,7 @@ function generateGeneratorPage(generator, category, site) {
             </section>
             <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="${generator.updated}">${longDate(generator.updated)}</time></p>
 ${examplesHTML}
-${howItWorksHtml(generator)}
+${howItWorksHtml(generator)}${Reference.generatorBox(REF_FOR[generator.key])}
             ${layout.sectionBreak(motif)}
             <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="${escGenTitle}">
@@ -2093,6 +2112,7 @@ function build() {
   console.log(`  ✅ Created: guides/index.html and ${site.guides().length} guide pages`);
   console.log(`  ✅ Created: name-tools.html and ${NAME_TOOLS.length} name tool pages`);
 
+  Reference.buildReference(site, { scriptJson, ICON_LINKS, markdownBold, plainText, longDate });
   generateSitemap(site);
   generateHtmlSitemap(site);
   generate404(site);
@@ -2211,6 +2231,22 @@ ${NAME_TOOLS.map(t => `  <url>
 `;
   }
 
+  if (REFERENCE.length) {
+    sitemap += `  <!-- Naming Library -->
+  <url>
+    <loc>${baseUrl}/reference/</loc>
+    <lastmod>${latest(REFERENCE.map(r => r.updated || r.published))}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+${REFERENCE.map(r => `  <url>
+    <loc>${baseUrl}/reference/${r.slug}.html</loc>
+    <lastmod>${r.updated || r.published}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+`).join('')}`;
+  }
   if (site.guides().length) {
     sitemap += `  <!-- Naming guides -->
   <url>
@@ -2451,6 +2487,10 @@ Made by Rich: ${baseUrl}/about.html
   if (site.guides().length) {
     text += `\n## Naming guides\n\n- [All naming guides](${baseUrl}/guides/)\n` +
       site.guides().map(g => `- [${g.title}](${baseUrl}/guides/${g.slug}.html): ${plainText(g.description)}`).join('\n') + '\n';
+  }
+  if (REFERENCE.length) {
+    text += `\n## Naming Library\n\nSourced reference pages on the origins, meanings and construction of names. Each example is labelled as recorded, reconstructed, built from real parts, or invented.\n\n- [The Naming Library](${baseUrl}/reference/)\n` +
+      REFERENCE.map(r => `- [${r.title}](${baseUrl}/reference/${r.slug}.html): ${plainText(r.description)}`).join('\n') + '\n';
   }
   text += `\n## Optional\n\n- [All generators](${baseUrl}/all-generators.html)\n- [Site map](${baseUrl}/sitemap.html)\n`;
   fs.writeFileSync(path.join(ROOT, 'llms.txt'), text);
