@@ -159,7 +159,8 @@
   "related": [
     "old-english-names",
     "medieval-english-names",
-    "english-place-name-elements"
+    "english-place-name-elements",
+    "patronymic-names"
   ],
   "generators": [
     "last_name",

@@ -101,8 +101,8 @@
     {
       "name": "Kennedy",
       "language": "Irish",
-      "meaning": "From (Ó) Cinnéide, from a personal name meaning 'ugly head'.",
-      "status": "attested",
+      "meaning": "From Ó Cinnéide, 'descendant of Cinnéidigh'. The personal name is often explained as 'ugly head', but some read it as 'helmeted head'.",
+      "status": "uncertain",
       "source": "snsbi-intro"
     },
     {
@@ -159,8 +159,9 @@
   "related": [
     "occupational-surnames",
     "patronymic-names",
-    "what-is-onomastics",
-    "name-prefixes-and-suffixes"
+    "medieval-english-names",
+    "welsh-names",
+    "old-english-names"
   ],
   "generators": [
     "medieval",

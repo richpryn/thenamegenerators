@@ -142,7 +142,7 @@
     },
     {
       "heading": "Patronymics in invented names",
-      "content": "<p>If you build patronymics for a story or game, the details matter. Icelandic and Old Norse patronymics use the possessive form of the parent's name, so it is Sveinsson, not Sveinnson. A matronymic from Helga is Helgudóttir, because the possessive of Helga is Helgu. Pick one language's pattern and stick with it. A Welsh ap and an Icelandic -dóttir in the same family will look odd to anyone who knows either.</p>"
+      "content": "<p>Building patronymics for a story or game? A few details make them convincing:</p><ul><li><strong>Use the possessive form of the parent's name</strong> in Norse and Icelandic styles: Sveinsson, not Sveinnson. A daughter of Helga is Helgudóttir, because the possessive of Helga is Helgu.</li><li><strong>Decide whether the name changes every generation.</strong> In a living system like Iceland's it does, so a father and son have different second names. In a frozen system like most of Britain's, the whole family shares one.</li><li><strong>Keep one pattern per culture.</strong> A Welsh <em>ap</em>, a Gaelic <em>Mac</em> and an Icelandic <em>-dóttir</em> can all exist in one world, but mixing them inside one family will look odd to readers who know them.</li></ul><p>The <a href=\"../posts/viking-name-generator.html\">Viking Name Generator</a> builds -son and -dóttir names this way.</p>"
     }
   ],
   "faqs": [
@@ -161,9 +161,10 @@
   ],
   "related": [
     "how-surnames-began",
+    "welsh-names",
     "old-norse-names",
-    "occupational-surnames",
-    "what-is-onomastics"
+    "name-prefixes-and-suffixes",
+    "roman-names"
   ],
   "generators": [
     "viking",

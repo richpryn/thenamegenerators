@@ -138,11 +138,11 @@
     },
     {
       "heading": "Favourite building blocks",
-      "content": "<p>The god Thor is the most famous element. The 1874 Cleasby–Vigfusson dictionary notes that Thor's name was always thought to sound well. On its own it appears as Þórir (male) and Þóra (female), and in compounds at the start (Þorsteinn, Þorbjörn, Þorgerðr) or the end (Arnórr, Halldórr).<sup><a href=\"#src-6\">[6]</a></sup></p><p><em>Björn</em>, 'bear', and the related Bjarni were common names, and björn also turns up in compounds such as Þorbjörn and Ásbjörn. <em>Úlfr</em>, 'wolf', was used alone, at the start of names (Úlfhildr), and especially at the end, where it became -ólfr: Ingólfr, Brynjólfr, Eyjólfr. <em>Ketill</em>, 'cauldron', usually came last and shrank to -kell: Áskell, Þorkell, Úlfkell.<sup><a href=\"#src-7\">[7]</a></sup><sup><a href=\"#src-8\">[8]</a></sup><sup><a href=\"#src-9\">[9]</a></sup></p><p>Women's names often end in <em>-hildr</em>, a poetic word for 'battle'. Another battle word, <em>gunnr</em>, starts names such as Gunnhildr.<sup><a href=\"#src-10\">[10]</a></sup><sup><a href=\"#src-11\">[11]</a></sup></p>"
+      "content": "<p>The god Thor is the most famous element. On its own it appears as Þórir (male) and Þóra (female), and in compounds at the start (Þorsteinn, Þorbjörn, Þorgerðr) or the end (Arnórr, Halldórr).<sup><a href=\"#src-6\">[6]</a></sup></p><p><em>Björn</em>, 'bear', and the related Bjarni were common names, and björn also turns up in compounds such as Þorbjörn and Ásbjörn. <em>Úlfr</em>, 'wolf', was used alone, at the start of names (Úlfhildr), and especially at the end, where it became -ólfr: Ingólfr, Brynjólfr, Eyjólfr. <em>Ketill</em>, 'cauldron', usually came last and shrank to -kell: Áskell, Þorkell, Úlfkell.<sup><a href=\"#src-7\">[7]</a></sup><sup><a href=\"#src-8\">[8]</a></sup><sup><a href=\"#src-9\">[9]</a></sup></p><p>Women's names often end in <em>-hildr</em>, a poetic word for 'battle'. Another battle word, <em>gunnr</em>, starts names such as Gunnhildr.<sup><a href=\"#src-10\">[10]</a></sup><sup><a href=\"#src-11\">[11]</a></sup></p><p>Other favourites were <em>áss</em>, 'god', at the start of names (Ásbjörn, Áslákr, Ásgeirr); <em>geirr</em>, 'spear', which could go at either end (Geirmundr, Þorgeirr, Ásgeirr); <em>steinn</em>, 'stone' (Þorsteinn, Hallsteinn); and <em>sigr</em>, 'victory', usually shortened to Sig- (Sigurðr, Sigríðr).<sup><a href=\"#src-21\">[21]</a></sup><sup><a href=\"#src-22\">[22]</a></sup><sup><a href=\"#src-1\">[1]</a></sup></p><p>Parents often reused an element from a relative's name, so brothers might be Þorsteinn and Þorgeirr. Like the English Æthel- families, this shows a family connection rather than a meaning.<sup><a href=\"#src-5\">[5]</a></sup></p>"
     },
     {
       "heading": "Son of, daughter of",
-      "content": "<p>Instead of a family surname, people were identified by their father's name in the possessive form plus <em>sonr</em>, 'son', or <em>dóttir</em>, 'daughter'. Sveinn's children would be Sveinsson and Sveinsdóttir. The name described the actual parent and changed every generation.<sup><a href=\"#src-12\">[12]</a></sup><sup><a href=\"#src-13\">[13]</a></sup><sup><a href=\"#src-3\">[3]</a></sup></p><p>Iceland still names people this way. English has -son surnames too, but they formed in the Middle Ages, mostly on first names the Normans made popular, such as Robert and Richard. A modern Robertson is not a sign of Viking ancestry.<sup><a href=\"#src-3\">[3]</a></sup><sup><a href=\"#src-2\">[2]</a></sup></p>"
+      "content": "<p>Instead of a family surname, people were identified by their father's name in the possessive form plus <em>sonr</em>, 'son', or <em>dóttir</em>, 'daughter'. Sveinn's children would be Sveinsson and Sveinsdóttir. The name described the actual parent and changed every generation.<sup><a href=\"#src-12\">[12]</a></sup><sup><a href=\"#src-13\">[13]</a></sup><sup><a href=\"#src-3\">[3]</a></sup></p><p>Iceland still names people this way. English has -son surnames too, but they formed in the Middle Ages, mostly on first names the Normans made popular, such as Robert and Richard. A modern Robertson is not a sign of Viking ancestry.<sup><a href=\"#src-3\">[3]</a></sup><sup><a href=\"#src-2\">[2]</a></sup></p><p>In practice the patronymic did a job surnames do now: telling apart the many men called Þorsteinn or Ketill. Sagas usually introduce someone with both, and often add a grandfather or a byname too.<sup><a href=\"#src-12\">[12]</a></sup><sup><a href=\"#src-13\">[13]</a></sup></p>"
     },
     {
       "heading": "Bynames: Fairhair, Bloodaxe and Hairy-breeks",
@@ -170,7 +170,9 @@
   "related": [
     "patronymic-names",
     "name-prefixes-and-suffixes",
-    "what-is-onomastics"
+    "old-english-names",
+    "english-place-name-elements",
+    "how-surnames-began"
   ],
   "generators": [
     "viking",
@@ -304,6 +306,18 @@
       "id": "cv-jarnsida",
       "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: járn-síða",
       "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/jarn-sida",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-geirr",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: geirr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/geirr",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-sigr",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: sigr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/sigr",
       "accessed": "2026-11-12"
     }
   ]
