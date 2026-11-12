@@ -224,7 +224,7 @@ function menuPages() {
 }
 
 // Optional header links that only appear once there is something to link to.
-const NAV = { guides: false };
+const NAV = { guides: false, library: false };
 /** Called by the build once it knows what exists (e.g. any naming guides). */
 function setNav(opts) { Object.assign(NAV, opts); }
 
@@ -269,6 +269,7 @@ function siteHeader(prefix) {
               </div>
             </li>
 ${NAV.guides ? `            <li class="nav-top"><a href="${prefix}guides/index.html">Guides</a></li>
+` : ''}${NAV.library ? `            <li class="nav-top"><a href="${prefix}reference/index.html">Library</a></li>
 ` : ''}            <li class="nav-top"><a href="${prefix}about.html">About</a></li>
             <li class="nav-find">${searchForm(prefix)}</li>
           </ul>
