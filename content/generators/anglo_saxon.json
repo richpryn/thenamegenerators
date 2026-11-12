@@ -789,5 +789,9 @@
         "answer": "Edward (Eadweard), Edmund (Eadmund), Alfred (Ælfred), Audrey (Æthelthryth) and Edith (Eadgyth), among others."
       }
     ]
+  },
+  "nameSource": {
+    "kind": "mixed",
+    "note": "Names are built from real Old English name elements, each with its real meaning. Some are recorded Anglo-Saxon names, such as Æthelstan and Eadgifu; others are new combinations made by the same rules."
   }
 }

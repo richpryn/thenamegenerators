@@ -1035,6 +1035,6 @@
   },
   "nameSource": {
     "kind": "historical",
-    "note": "The first names are recorded Old Norse names, the kind found in the sagas and on rune stones, spelled the usual modern English way. Full names are built from them, so each is a new combination rather than a particular person."
+    "note": "The first names are Old Norse names found in the sagas, spelt without accents. Full names pair them with patronymics (-son, -dóttir) and saga-style bynames, so each full name is a new person."
   }
 }
