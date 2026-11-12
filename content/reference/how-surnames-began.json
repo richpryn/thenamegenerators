@@ -161,7 +161,8 @@
     "patronymic-names",
     "medieval-english-names",
     "welsh-names",
-    "old-english-names"
+    "old-english-names",
+    "naming-fictional-characters"
   ],
   "generators": [
     "medieval",

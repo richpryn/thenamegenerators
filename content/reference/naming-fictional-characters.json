@@ -61,7 +61,7 @@
       "language": "Dickens, A Christmas Carol",
       "meaning": "Origin unknown. The story of a misread 'meal man' gravestone for an Ebenezer Scroggie has no supporting evidence.",
       "status": "uncertain",
-      "source": "mentalfloss"
+      "source": "ednews"
     },
     {
       "name": "Gilderoy Lockhart",
@@ -141,7 +141,7 @@
     },
     {
       "heading": "Dickens's notebooks of names",
-      "content": "<p>Dickens collected names as raw material. His friend and biographer John Forster published extracts from Dickens's Book of Memoranda, kept from 1855 to 1865. It includes lists of girls' and boys' first names that Dickens noted as coming from Privy Council Education lists, such as Rubina, Pleasant, Doctor, Zerubbabel and Pickles, then lists he seems to have made up himself, and a long run of 'available names'.<sup><a href=\"#src-4\">[4]</a></sup></p><p>Some went straight into the novels. 'Bradley' is on the boys' list and 'Amon Headston' among the available names; the schoolmaster in <em>Our Mutual Friend</em> is Bradley Headstone.<sup><a href=\"#src-4\">[4]</a></sup><sup><a href=\"#src-5\">[5]</a></sup></p><p>Not every origin story holds up. A popular tale says Dickens saw a gravestone in Edinburgh for Ebenezer Lennox Scroggie, a 'meal man', misread it as 'mean man', and invented Scrooge. Researchers have found no record of the merchant, no burial record and no source for the Dickens quotation. The journalist who first published it, Rowan Pelling, has called it a probable hoax.<sup><a href=\"#src-6\">[6]</a></sup></p>"
+      "content": "<p>Dickens collected names as raw material. His friend and biographer John Forster published extracts from Dickens's Book of Memoranda, kept from 1855 to 1865. It includes lists of girls' and boys' first names that Dickens noted as coming from Privy Council Education lists, such as Rubina, Pleasant, Doctor, Zerubbabel and Pickles, then lists he seems to have made up himself, and a long run of 'available names'.<sup><a href=\"#src-4\">[4]</a></sup></p><p>Some went straight into the novels. 'Bradley' is on the boys' list and 'Amon Headston' among the available names; the schoolmaster in <em>Our Mutual Friend</em> is Bradley Headstone.<sup><a href=\"#src-4\">[4]</a></sup><sup><a href=\"#src-5\">[5]</a></sup></p><p>Not every origin story holds up. A popular tale says Dickens saw a gravestone in Edinburgh's Canongate kirkyard for Ebenezer Lennox Scroggie, a 'meal man', misread it as 'mean man', and invented Scrooge. The story is widely repeated, but it rests on later retellings rather than anything Dickens is known to have written, and the stone itself is said to be long gone. Treat it as a good story, not a fact.<sup><a href=\"#src-6\">[6]</a></sup></p>"
     },
     {
       "heading": "Rowling's sources, in her own words",
@@ -163,7 +163,7 @@
     },
     {
       "question": "Where did Dickens get the name Ebenezer Scrooge?",
-      "answer": "No one knows. The popular story that Dickens misread an Edinburgh gravestone of Ebenezer Scroggie, 'meal man', as 'mean man' has no supporting evidence and has been called a probable hoax."
+      "answer": "No one knows for certain. A popular story says Dickens misread an Edinburgh gravestone for Ebenezer Scroggie, 'meal man', as 'mean man', but it rests on later retellings rather than anything Dickens wrote, so treat it as a legend."
     },
     {
       "question": "Where do Tolkien's dwarf names come from?",
@@ -175,7 +175,10 @@
     "constructed-languages",
     "old-norse-names",
     "old-english-names",
-    "fantasy-place-names"
+    "fantasy-place-names",
+    "dragon-names-in-myth-and-literature",
+    "how-surnames-began",
+    "name-prefixes-and-suffixes"
   ],
   "generators": [
     "character_name",
@@ -226,10 +229,10 @@
       "accessed": "2026-11-12"
     },
     {
-      "id": "mentalfloss",
-      "title": "7 Real-Life Inspirations for Dickens's A Christmas Carol",
-      "publisher": "Mental Floss",
-      "url": "https://www.mentalfloss.com/holidays/christmas/7-real-life-inspirations-dickenss-christmas-carol",
+      "id": "ednews",
+      "title": "How an Edinburgh gravestone inspired Ebenezer Scrooge",
+      "publisher": "Edinburgh Evening News",
+      "url": "https://www.edinburghnews.scotsman.com/whats-on/arts-and-entertainment/how-edinburgh-gravestone-inspired-ebenezer-scrooge-609726",
       "accessed": "2026-11-12"
     },
     {
@@ -315,9 +318,9 @@
     },
     {
       "id": "hulton-summary",
-      "title": "E. Hulton & Co. v. Jones (case summary)",
-      "publisher": "Quimbee",
-      "url": "https://www.quimbee.com/cases/e-hulton-co-v-jones",
+      "title": "E Hulton and Co v Jones: HL 1910 (case note)",
+      "publisher": "swarb.co.uk",
+      "url": "https://swarb.co.uk/?p=117578",
       "accessed": "2026-11-12"
     }
   ]

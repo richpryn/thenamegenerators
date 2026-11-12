@@ -19,7 +19,7 @@
     },
     {
       "label": "Dothraki",
-      "value": "David J. Peterson, chosen through the Language Creation Society for HBO; over 1,800 words at launch"
+      "value": "David J. Peterson, chosen through the Language Creation Society for HBO"
     },
     {
       "label": "Na'vi",
@@ -66,7 +66,7 @@
     {
       "name": "High Valyrian",
       "language": "Game of Thrones",
-      "meaning": "Martin said he had made up only seven words of it before the TV series.",
+      "meaning": "Martin invented only a few words of it; Peterson built the full language for the TV series.",
       "status": "attested",
       "source": "grrm"
     },
@@ -125,7 +125,7 @@
     },
     {
       "heading": "Klingon, Dothraki and Na'vi",
-      "content": "<p><strong>Klingon.</strong> Klingons in early <em>Star Trek</em> spoke English. For the third film the producers asked the linguist Marc Okrand to create a real language. He did not base it on any one language; its sounds all occur in human languages, but the combination is unusual. <em>The Klingon Dictionary</em> came out in 1985.<sup><a href=\"#src-4\">[4]</a></sup></p><p><strong>Dothraki and High Valyrian.</strong> George R. R. Martin has said he is no linguist. He used only a handful of Dothraki words, such as <em>khal</em> and <em>arakh</em>, and had made up seven words of High Valyrian. When HBO filmed the series, the producers asked the Language Creation Society, which chose David J. Peterson's proposal. Peterson kept to the evidence in the books, such as word order and adjectives after nouns, and built a language of more than 1,800 words.<sup><a href=\"#src-5\">[5]</a></sup></p><p><strong>Na'vi.</strong> Paul Frommer, a professor at the University of Southern California's Marshall School of Business, created Na'vi for James Cameron's <em>Avatar</em> and still publishes new words and grammar notes on his blog.<sup><a href=\"#src-6\">[6]</a></sup></p>"
+      "content": "<p><strong>Klingon.</strong> Klingons in early <em>Star Trek</em> spoke English. For the third film the producers asked the linguist Marc Okrand to create a real language. He did not base it on any one language; its sounds all occur in human languages, but the combination is unusual. <em>The Klingon Dictionary</em> came out in 1985.<sup><a href=\"#src-4\">[4]</a></sup></p><p><strong>Dothraki and High Valyrian.</strong> George R. R. Martin has said he is no linguist. He used only a handful of Dothraki words, such as <em>khal</em> and <em>arakh</em>, and made up only a few words of High Valyrian. When HBO filmed the series, the producers asked the Language Creation Society, which chose David J. Peterson's proposal. Peterson kept to the evidence in the books, such as word order and adjectives after nouns, and built a full working language from them.<sup><a href=\"#src-5\">[5]</a></sup></p><p><strong>Na'vi.</strong> Paul Frommer, a professor at the University of Southern California's Marshall School of Business, created Na'vi for James Cameron's <em>Avatar</em> and still publishes new words and grammar notes on his blog.<sup><a href=\"#src-6\">[6]</a></sup></p>"
     },
     {
       "heading": "Esperanto: a different goal",
@@ -133,7 +133,7 @@
     },
     {
       "heading": "Naming language or full language?",
-      "content": "<p>A full conlang has sounds, grammar, a large vocabulary and often a writing system. Most stories never need that. A naming language is a smaller kit: a set of sounds, rules for how syllables fit together, and a stock of roots and endings. Mark Rosenfelder's <em>Language Construction Kit</em> uses the term and notes that tools such as prefixes, suffixes and compounds are useful 'even if you want nothing more than a naming language'.<sup><a href=\"#src-8\">[8]</a></sup></p><p>Martin's books show this in practice. A few consistent words gave Dothraki a flavour on the page, and the full language was only needed when actors had to speak it.<sup><a href=\"#src-5\">[5]</a></sup></p><p>Rosenfelder also warns that working backwards, inventing words as needed and a grammar afterwards, leads to inconsistency. He gives Hergé's Syldavian from the Tintin books as an example.<sup><a href=\"#src-8\">[8]</a></sup></p>"
+      "content": "<p>A full conlang has sounds, grammar, a large vocabulary and often a writing system. Most stories never need that. A naming language is a smaller kit: a set of sounds, rules for how syllables fit together, and a stock of roots and endings. Mark Rosenfelder's <em>Language Construction Kit</em> uses the term and notes that tools such as prefixes, suffixes and compounds are useful 'even if you want nothing more than a naming language'.<sup><a href=\"#src-8\">[8]</a></sup></p><p>Martin's books show this in practice. A few consistent words gave Dothraki a flavour on the page, and the full language was only needed when actors had to speak it.<sup><a href=\"#src-5\">[5]</a></sup></p><p>Rosenfelder also warns that working backwards, inventing words as needed and a grammar afterwards, leads to inconsistency.<sup><a href=\"#src-8\">[8]</a></sup></p>"
     },
     {
       "heading": "Building a simple naming language",
@@ -143,7 +143,7 @@
   "faqs": [
     {
       "question": "Is Dothraki a real language?",
-      "answer": "It is a real constructed language. George R. R. Martin used only a few Dothraki words in his novels, and David J. Peterson expanded it for HBO's Game of Thrones into a language with its own grammar and, at launch, more than 1,800 words. It has no native speakers."
+      "answer": "It is a real constructed language. George R. R. Martin used only a few Dothraki words in his novels, and David J. Peterson expanded it for HBO's Game of Thrones into a full language with its own grammar and vocabulary. It has no native speakers."
     },
     {
       "question": "How did Tolkien create Elvish?",
@@ -158,7 +158,9 @@
     "how-fantasy-names-work",
     "naming-fictional-characters",
     "fantasy-place-names",
-    "name-prefixes-and-suffixes"
+    "name-prefixes-and-suffixes",
+    "old-norse-names",
+    "welsh-names"
   ],
   "generators": [
     "elf",

@@ -5,7 +5,7 @@
   "seoTitle": "Fantasy Place Names: How Real Patterns Help",
   "published": "2026-11-12",
   "motif": "library",
-  "atAGlance": "<p>Most real place-names are compounds of a word for the kind of place, such as Old Norse <em>thveit</em> 'clearing' or Welsh <em>aber</em> 'river mouth', and a word that picks out this particular one. English puts the describing word first (Micklethwaite), while Welsh usually puts the place-word first (Aberystwyth, 'mouth of the Ystwyth'). Tolkien used this layering deliberately: the Shire has English-style names, while Bree, Combe, Archet and Chetwood were chosen to sound older and Celtic. Bree, he said, meant 'hill', and he based it on Brill in Buckinghamshire, whose name combines a Brittonic and an English word for hill.</p>",
+  "atAGlance": "<p>Most real place-names are compounds of a word for the kind of place, such as Old Norse <em>thveit</em> 'clearing' or Welsh <em>aber</em> 'river mouth', and a word that picks out this particular one. English puts the describing word first (Micklethwaite), while Welsh usually puts the place-word first (Aberystwyth, 'mouth of the Ystwyth'). Tolkien used this layering deliberately: the Shire has English-style names, while Bree, Combe, Archet and Chetwood were chosen to sound older and Celtic. He glossed Bree as 'hill', and his son Christopher recorded that it was based on Brill in Buckinghamshire, whose name combines a Brittonic and an English word for hill.</p>",
   "facts": [
     {
       "label": "English pattern",
@@ -21,7 +21,7 @@
     },
     {
       "label": "Tolkien's model",
-      "value": "Bree from Brill (Buckinghamshire), Brittonic + Old English 'hill' + 'hill'"
+      "value": "Bree from Brill (Buckinghamshire), per Christopher Tolkien: Brittonic + Old English, 'hill' + 'hill'"
     }
   ],
   "examplesHeading": "Real elements, Tolkien's names and some we built",
@@ -29,14 +29,14 @@
     {
       "name": "Bree",
       "language": "Tolkien, The Lord of the Rings",
-      "meaning": "Tolkien said it was an old Celtic-style word for 'hill', to make Bree-land feel older than the Shire.",
+      "meaning": "Tolkien glossed it as an old word for 'hill', one of the Celtic-looking names that make Bree-land older than the Shire.",
       "status": "attested",
       "source": "tolkien-lotr"
     },
     {
       "name": "Brill",
       "language": "Buckinghamshire place-name",
-      "meaning": "Brittonic 'hill' + Old English hyll 'hill'. Tolkien's model for Bree.",
+      "meaning": "Brittonic 'hill' + Old English hyll 'hill'. Christopher Tolkien recorded it as the model for Bree.",
       "status": "attested",
       "source": "wikt-brill"
     },
@@ -147,7 +147,7 @@
     },
     {
       "question": "What does Bree mean in The Lord of the Rings?",
-      "answer": "Tolkien said Bree meant 'hill'. He based it on Brill in Buckinghamshire, whose name is usually explained as a Brittonic word for 'hill' with Old English hyll, 'hill', added."
+      "answer": "In Appendix F Tolkien glossed bree as 'hill'. According to Christopher Tolkien, it was based on Brill in Buckinghamshire, whose name is usually explained as a Brittonic word for 'hill' with Old English hyll, 'hill', added."
     },
     {
       "question": "What does aber mean in place names?",
@@ -156,10 +156,11 @@
   ],
   "related": [
     "english-place-name-elements",
-    "name-prefixes-and-suffixes",
     "welsh-names",
     "old-norse-names",
-    "constructed-languages"
+    "name-prefixes-and-suffixes",
+    "constructed-languages",
+    "how-fantasy-names-work"
   ],
   "generators": [
     "fantasy_town",

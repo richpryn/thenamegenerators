@@ -150,7 +150,8 @@
     "patronymic-names",
     "name-prefixes-and-suffixes",
     "english-place-name-elements",
-    "old-english-names"
+    "old-english-names",
+    "how-fantasy-names-work"
   ],
   "generators": [
     "last_name",

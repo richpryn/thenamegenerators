@@ -161,7 +161,11 @@
     "english-place-name-elements",
     "old-english-names",
     "old-norse-names",
-    "what-is-onomastics"
+    "what-is-onomastics",
+    "how-fantasy-names-work",
+    "constructed-languages",
+    "fantasy-place-names",
+    "naming-fictional-characters"
   ],
   "generators": [
     "anglo_saxon",

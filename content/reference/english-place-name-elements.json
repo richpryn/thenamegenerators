@@ -167,7 +167,8 @@
     "old-english-names",
     "welsh-names",
     "name-prefixes-and-suffixes",
-    "old-norse-names"
+    "old-norse-names",
+    "fantasy-place-names"
   ],
   "generators": [
     "fantasy_town",

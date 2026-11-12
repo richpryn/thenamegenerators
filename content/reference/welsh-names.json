@@ -160,7 +160,10 @@
     "old-english-names",
     "medieval-english-names",
     "english-place-name-elements",
-    "patronymic-names"
+    "patronymic-names",
+    "constructed-languages",
+    "dragon-names-in-myth-and-literature",
+    "fantasy-place-names"
   ],
   "generators": [
     "last_name",

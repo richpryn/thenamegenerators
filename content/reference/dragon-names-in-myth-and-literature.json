@@ -133,11 +133,11 @@
     },
     {
       "heading": "Smaug and the Chinese lóng",
-      "content": "<p>Tolkien explained <strong>Smaug</strong> in a 1938 letter to <em>The Observer</em>. He said the name was the past tense of a primitive Germanic verb <em>smugan</em>, 'to squeeze through a hole', and called it 'a low philological jest'.<sup><a href=\"#src-22\">[22]</a></sup></p><p>The Chinese <strong>lóng</strong> (龍) is often translated 'dragon', but the word is unrelated to <em>drakōn</em>. Wiktionary records proposals linking it to an ancient Sino-Tibetan word for 'dragon' or 'thunder', with relatives such as Tibetan <em>'brug</em>. Like many reconstructions, this is a proposal, not a proven fact.<sup><a href=\"#src-23\">[23]</a></sup></p>"
+      "content": "<p>Tolkien explained <strong>Smaug</strong> in a 1938 letter to <em>The Observer</em>. He said the name was the past tense of a primitive Germanic verb <em>smugan</em>, 'to squeeze through a hole', and called it 'a low philological jest'.<sup><a href=\"#src-22\">[22]</a></sup> In an earlier letter he had linked it to the related Icelandic verb <em>smjúga</em>, 'to creep through'.<sup><a href=\"#src-24\">[24]</a></sup></p><p>The Chinese <strong>lóng</strong> (龍) is often translated 'dragon', but the word is unrelated to <em>drakōn</em>. Wiktionary records proposals linking it to an ancient Sino-Tibetan word for 'dragon' or 'thunder', with relatives such as Tibetan <em>'brug</em>. Like many reconstructions, this is a proposal, not a proven fact.<sup><a href=\"#src-23\">[23]</a></sup></p>"
     },
     {
       "heading": "Using real dragon names well",
-      "content": "<p>Some practical points, which are advice rather than findings:</p><ul><li><strong>Check before you borrow.</strong> Fáfnir, Smaug and Python are well known, and a reader will spot them.</li><li><strong>Say 'uncertain' when it is.</strong> Popular sites often give one confident meaning for names like Fáfnir or Ladon. The dictionaries above show that scholars disagree.<sup><a href=\"#src-9\">[9]</a></sup><sup><a href=\"#src-16\">[16]</a></sup><sup><a href=\"#src-13\">[13]</a></sup></li><li><strong>Old words make good raw material.</strong> Real elements such as <em>wyrm</em>, <em>draca</em> and <em>ormr</em> give an invented name an old-world feel.<sup><a href=\"#src-4\">[4]</a></sup><sup><a href=\"#src-3\">[3]</a></sup><sup><a href=\"#src-7\">[7]</a></sup></li></ul><p>Our dragon generators work in this way: they combine elements to make new names. Those names are invented, not recorded in any myth.</p>"
+      "content": "<p>Some practical points, which are advice rather than findings:</p><ul><li><strong>Check before you borrow.</strong> Fáfnir, Smaug and Python are well known, and a reader will spot them.</li><li><strong>Say 'uncertain' when it is.</strong> Popular sites often give one confident meaning for names like Fáfnir or Ladon. The dictionaries above show that scholars disagree.<sup><a href=\"#src-9\">[9]</a></sup><sup><a href=\"#src-16\">[16]</a></sup><sup><a href=\"#src-13\">[13]</a></sup></li><li><strong>Old words make good raw material.</strong> Real elements such as <em>wyrm</em>, <em>draca</em> and <em>ormr</em> give an invented name an old-world feel.<sup><a href=\"#src-4\">[4]</a></sup><sup><a href=\"#src-3\">[3]</a></sup><sup><a href=\"#src-7\">[7]</a></sup></li></ul><p>The dragon generators on this site work the same way, combining elements into new names. Those names are invented, not recorded in any myth.</p>"
     }
   ],
   "faqs": [
@@ -159,7 +159,9 @@
     "old-norse-names",
     "old-english-names",
     "welsh-names",
-    "naming-fictional-characters"
+    "naming-fictional-characters",
+    "fantasy-place-names",
+    "constructed-languages"
   ],
   "generators": [
     "dragon",
@@ -317,6 +319,12 @@
       "id": "wikt-long",
       "title": "Wiktionary: 龍",
       "url": "https://en.wiktionary.org/wiki/%E9%BE%8D",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "tcg-letters",
+      "title": "Tolkien Collector's Guide: The Letters of J. R. R. Tolkien, letter to the Observer (1938) and letter to G. E. Selby (December 1937)",
+      "url": "https://tolkienguide.com/guide/letters/28",
       "accessed": "2026-11-12"
     }
   ]
