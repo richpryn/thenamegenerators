@@ -975,5 +975,9 @@
         "answer": "Usually more than one. The van registers as a food business with the council where it's kept, and selling on the street usually needs a street trading licence or consent from the council where you trade. Markets and events set their own rules."
       }
     ]
+  },
+  "nameSource": {
+    "kind": "invented",
+    "note": "Names are built from everyday words, puns, place and family names, and the patterns real businesses in this trade use. They aren't taken from real businesses, but short names may already be in use, so press Check before you commit."
   }
 }

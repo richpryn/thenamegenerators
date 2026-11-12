@@ -11132,5 +11132,9 @@
         "answer": "Names with softer endings like -ova, -isse and -ynne: Lysora, Helisse, Brontynne. Choose Female under Sound, and add an epithet for something like Solisse the Molten."
       }
     ]
+  },
+  "nameSource": {
+    "kind": "invented",
+    "note": "Each name joins a root for its element, mostly from Greek, Latin or Norse words (ign- for fire, hrim- for frost), to an invented ending. None is a dragon from a book, film or game."
   }
 }

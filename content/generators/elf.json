@@ -1559,5 +1559,9 @@
         "answer": "Flowing names with soft endings like -iel, -wen, -yra and -anne: Celianne, Seriana and Elawen in the generic style, or Aelyndra, Sylthiel and Faelwen in the D&D style. Choose Female and a style for more."
       }
     ]
+  },
+  "nameSource": {
+    "kind": "mixed",
+    "note": "The Tolkien option uses names from his books. Every other option is invented from elvish-sounding parts."
   }
 }

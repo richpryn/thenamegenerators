@@ -802,5 +802,9 @@
         "answer": "Not in the UK, where registration with the Hair Council is voluntary. In the US, every state requires hairdressers to hold a cosmetology licence."
       }
     ]
+  },
+  "nameSource": {
+    "kind": "invented",
+    "note": "Names are built from everyday words, puns, place and family names, and the patterns real businesses in this trade use. They aren't taken from real businesses, but short names may already be in use, so press Check before you commit."
   }
 }
