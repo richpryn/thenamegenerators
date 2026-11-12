@@ -883,5 +883,9 @@
         "answer": "It depends where you are. Many US states license massage therapists and control the title, while in the UK it isn't a protected title but professional bodies offer membership. Check your local rules before you choose a name."
       }
     ]
+  },
+  "nameSource": {
+    "kind": "invented",
+    "note": "Names are built from everyday words, puns, place and family names, and the patterns real businesses in this trade use. They aren't taken from real businesses, but short names may already be in use, so press Check before you commit."
   }
 }

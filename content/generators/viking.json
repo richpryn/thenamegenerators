@@ -1032,5 +1032,9 @@
         "answer": "Yes, the first names are real Old Norse names from the sagas and rune stones. The bynames are in the same style; some, like the Red and Fairhair, are famous real ones."
       }
     ]
+  },
+  "nameSource": {
+    "kind": "historical",
+    "note": "The first names are recorded Old Norse names, the kind found in the sagas and on rune stones, spelled the usual modern English way. Full names are built from them, so each is a new combination rather than a particular person."
   }
 }

@@ -6437,5 +6437,9 @@
         "answer": "Yes. Every name in the Historical category was the epithet of a real ruler or warrior, from Æthelred the Unready to Harald Bluetooth."
       }
     ]
+  },
+  "nameSource": {
+    "kind": "mixed",
+    "note": "The Historical category uses real bynames of kings and warriors, such as Æthelred the Unready and Harald Hardrada. Every other category is new epithets in the same style."
   }
 }

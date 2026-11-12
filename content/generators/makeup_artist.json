@@ -837,5 +837,9 @@
         "answer": "Makeup artist. Many artists put it in their Instagram handle, so it's worth checking your name with and without it."
       }
     ]
+  },
+  "nameSource": {
+    "kind": "invented",
+    "note": "Names are built from everyday words, puns, place and family names, and the patterns real businesses in this trade use. They aren't taken from real businesses, but short names may already be in use, so press Check before you commit."
   }
 }

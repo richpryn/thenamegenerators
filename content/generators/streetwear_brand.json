@@ -744,5 +744,9 @@
         "answer": "It can work well: a year, a drop number or a postcode looks good on a tag and is harder for someone else to have already. Check the handle is free, as short number names are popular."
       }
     ]
+  },
+  "nameSource": {
+    "kind": "invented",
+    "note": "Names are built from everyday words, puns, place and family names, and the patterns real businesses in this trade use. They aren't taken from real businesses, but short names may already be in use, so press Check before you commit."
   }
 }

@@ -1002,5 +1002,9 @@
         "answer": "Gelato is the Italian word for ice cream, and in English it usually means the Italian style: denser and served slightly warmer. A gelateria is a shop that sells it."
       }
     ]
+  },
+  "nameSource": {
+    "kind": "invented",
+    "note": "Names are built from everyday words, puns, place and family names, and the patterns real businesses in this trade use. They aren't taken from real businesses, but short names may already be in use, so press Check before you commit."
   }
 }

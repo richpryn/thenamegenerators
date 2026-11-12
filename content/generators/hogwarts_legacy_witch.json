@@ -352,5 +352,9 @@
         "answer": "Bold, outdoorsy names: choose Gryffindor for surnames like Hardwick or Fairweather."
       }
     ]
+  },
+  "nameSource": {
+    "kind": "mixed",
+    "note": "The first names were real girls' names in late Victorian Britain, when the game is set. The surnames are English surnames and new ones in the same style. None is a character from the books, films or game."
   }
 }

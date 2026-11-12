@@ -1717,5 +1717,9 @@
         "answer": "Nonprofit is mostly US wording. In the UK, a registered charity, a community interest company (CIC) and a not-for-profit group are different things, so use the word that matches how you're set up."
       }
     ]
+  },
+  "nameSource": {
+    "kind": "invented",
+    "note": "Names are built from everyday words, puns, place and family names, and the patterns real businesses in this trade use. They aren't taken from real businesses, but short names may already be in use, so press Check before you commit."
   }
 }
