@@ -1,0 +1,310 @@
+{
+  "title": "Old Norse Names: How Viking-Age Names Worked",
+  "section": "languages",
+  "description": "How Old Norse names were built: two-part names like Þorsteinn, patronymics, and bynames like Fairhair and Bloodaxe, plus what survives in England.",
+  "seoTitle": "Old Norse Names: How Viking Names Worked",
+  "published": "2026-11-12",
+  "motif": "quill",
+  "atAGlance": "<p>Old Norse given names were either single words, such as Ormr ('snake'), or compounds of two elements, such as Þorsteinn (Thor + 'stone') and Ásbjörn ('god' + 'bear'). People were also identified by a patronymic, such as Sveinsson ('Sveinn's son') or Sveinsdóttir ('Sveinn's daughter'), and often by a byname, such as hárfagri, 'fair-haired'. In England these names survive mainly in place-names in Yorkshire, the East Midlands, East Anglia and the north-west, and in a few surnames.</p>",
+  "facts": [
+    {
+      "label": "Name types",
+      "value": "Single-element names, two-element compounds, and bynames (nicknames)"
+    },
+    {
+      "label": "Common elements",
+      "value": "Þór- (Thor), Ás- 'god', -björn 'bear', -ólfr 'wolf', -kell 'cauldron', -steinn 'stone', -hildr 'battle'"
+    },
+    {
+      "label": "Patronymics",
+      "value": "Father's name in the possessive + -son or -dóttir: Sveinsson, Sveinsdóttir"
+    },
+    {
+      "label": "Left in England",
+      "value": "Place-names such as Aslackby, Ormesby and Kettlethorpe; surnames such as Herrick"
+    }
+  ],
+  "examplesHeading": "Old Norse names and bynames",
+  "examples": [
+    {
+      "name": "Þorsteinn (Thorstein)",
+      "language": "Old Norse",
+      "meaning": "Thor + steinn 'stone'.",
+      "status": "attested",
+      "source": "cv-nafn"
+    },
+    {
+      "name": "Ásbjörn",
+      "language": "Old Norse",
+      "meaning": "áss 'god' + björn 'bear'.",
+      "status": "attested",
+      "source": "cv-bjorn"
+    },
+    {
+      "name": "Þorkell (Thorkel)",
+      "language": "Old Norse",
+      "meaning": "Thor + ketill 'cauldron', shortened to -kell.",
+      "status": "attested",
+      "source": "cv-ketill"
+    },
+    {
+      "name": "Ingólfr",
+      "language": "Old Norse",
+      "meaning": "Ends in -ólfr, the form úlfr 'wolf' takes at the end of a name.",
+      "status": "attested",
+      "source": "cv-ulfr"
+    },
+    {
+      "name": "Úlfhildr",
+      "language": "Old Norse, female",
+      "meaning": "úlfr 'wolf' + hildr 'battle'.",
+      "status": "attested",
+      "source": "cv-ulfr"
+    },
+    {
+      "name": "Áslákr",
+      "language": "Old Norse",
+      "meaning": "áss 'god' + leikr 'play, battle'. Found in Aslackby, Lincolnshire.",
+      "status": "attested",
+      "source": "snsbi-personal"
+    },
+    {
+      "name": "Ormr",
+      "language": "Old Norse",
+      "meaning": "'Snake'. A byname that became a given name; found in the Ormesbys of Norfolk, Lincolnshire and Yorkshire.",
+      "status": "attested",
+      "source": "snsbi-personal"
+    },
+    {
+      "name": "Ápi",
+      "language": "Old Norse",
+      "meaning": "'Fool'. Another byname used as a given name, in Apethorpe, Northamptonshire.",
+      "status": "attested",
+      "source": "snsbi-personal"
+    },
+    {
+      "name": "Hálfdan",
+      "language": "Old Norse",
+      "meaning": "'Half-Dane', for someone with one Danish parent. In Holdenby, Northamptonshire.",
+      "status": "attested",
+      "source": "snsbi-personal"
+    },
+    {
+      "name": "hárfagri (Fairhair)",
+      "language": "Old Norse byname",
+      "meaning": "'Fair-haired', the byname of King Haraldr (Harald Fairhair).",
+      "status": "attested",
+      "source": "cv-harfagr"
+    },
+    {
+      "name": "blóðøx (Bloodaxe)",
+      "language": "Old Norse byname",
+      "meaning": "'Bloody axe', the byname of King Eiríkr (Eric Bloodaxe).",
+      "status": "attested",
+      "source": "cv-blodox"
+    },
+    {
+      "name": "loðbrók (Lodbrok)",
+      "language": "Old Norse byname",
+      "meaning": "'Shaggy breeches' (Hairy-breeks), the byname of Ragnarr in the sagas. Whether he was a real person is disputed.",
+      "status": "uncertain",
+      "source": "cv-lodbrok"
+    },
+    {
+      "name": "hausakljúfr",
+      "language": "Old Norse byname",
+      "meaning": "'Skull-cleaver', a nickname in Orkneyinga saga.",
+      "status": "attested",
+      "source": "cv-hausa"
+    },
+    {
+      "name": "Herrick",
+      "language": "English surname",
+      "meaning": "From a single ancestor with a form of the Old Norse name Eiríkr (Eric).",
+      "status": "attested",
+      "source": "snsbi-intro"
+    },
+    {
+      "name": "Úlfsdóttir",
+      "language": "Old Norse pattern",
+      "meaning": "Built as 'daughter of Úlfr', with the possessive form Úlfs.",
+      "status": "derived"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "One element or two",
+      "content": "<p>Old Norse names, like Old English ones, came from a shared Germanic way of naming. A name could be a single word, such as Steinn ('stone'), or a compound of two elements, such as Hallsteinn or Þorsteinn. The two-part type goes back to Indo-European, and the same habit is found in Old English and early Celtic names.<sup><a href=\"#src-5\">[5]</a></sup><sup><a href=\"#src-1\">[1]</a></sup></p><p>The elements were real words, but a compound did not have to mean anything as a phrase. Treat translations like 'god-bear' for Ásbjörn as a list of parts, not a description of the person.<sup><a href=\"#src-1\">[1]</a></sup></p>"
+    },
+    {
+      "heading": "Favourite building blocks",
+      "content": "<p>The god Thor is the most famous element. The 1874 Cleasby–Vigfusson dictionary notes that Thor's name was always thought to sound well. On its own it appears as Þórir (male) and Þóra (female), and in compounds at the start (Þorsteinn, Þorbjörn, Þorgerðr) or the end (Arnórr, Halldórr).<sup><a href=\"#src-6\">[6]</a></sup></p><p><em>Björn</em>, 'bear', and the related Bjarni were common names, and björn also turns up in compounds such as Þorbjörn and Ásbjörn. <em>Úlfr</em>, 'wolf', was used alone, at the start of names (Úlfhildr), and especially at the end, where it became -ólfr: Ingólfr, Brynjólfr, Eyjólfr. <em>Ketill</em>, 'cauldron', usually came last and shrank to -kell: Áskell, Þorkell, Úlfkell.<sup><a href=\"#src-7\">[7]</a></sup><sup><a href=\"#src-8\">[8]</a></sup><sup><a href=\"#src-9\">[9]</a></sup></p><p>Women's names often end in <em>-hildr</em>, a poetic word for 'battle'. Another battle word, <em>gunnr</em>, starts names such as Gunnhildr.<sup><a href=\"#src-10\">[10]</a></sup><sup><a href=\"#src-11\">[11]</a></sup></p>"
+    },
+    {
+      "heading": "Son of, daughter of",
+      "content": "<p>Instead of a family surname, people were identified by their father's name in the possessive form plus <em>sonr</em>, 'son', or <em>dóttir</em>, 'daughter'. Sveinn's children would be Sveinsson and Sveinsdóttir. The name described the actual parent and changed every generation.<sup><a href=\"#src-12\">[12]</a></sup><sup><a href=\"#src-13\">[13]</a></sup><sup><a href=\"#src-3\">[3]</a></sup></p><p>Iceland still names people this way. English has -son surnames too, but they formed in the Middle Ages, mostly on first names the Normans made popular, such as Robert and Richard. A modern Robertson is not a sign of Viking ancestry.<sup><a href=\"#src-3\">[3]</a></sup><sup><a href=\"#src-2\">[2]</a></sup></p>"
+    },
+    {
+      "heading": "Bynames: Fairhair, Bloodaxe and Hairy-breeks",
+      "content": "<p>Old Norse had words for an extra descriptive name, such as <em>viðrnefni</em>, 'soubriquet'. These bynames could describe looks, character or deeds. King Haraldr was <em>hárfagri</em>, 'fair-haired'. King Eiríkr was <em>blóðøx</em>, 'bloody axe'. Others include <em>flatnefr</em>, 'flat-nosed', and <em>hausakljúfr</em>, 'skull-cleaver'.<sup><a href=\"#src-14\">[14]</a></sup><sup><a href=\"#src-15\">[15]</a></sup><sup><a href=\"#src-16\">[16]</a></sup><sup><a href=\"#src-17\">[17]</a></sup><sup><a href=\"#src-18\">[18]</a></sup></p><p>Ragnarr <em>loðbrók</em>, 'shaggy breeches' (often rendered Hairy-breeks), is the best known. He is a figure of legend, and Cleasby–Vigfusson calls him mythical, so treat his story with care. The same goes for <em>járnsíða</em>, 'Ironside', given in Ragnars saga to a legendary warrior king.<sup><a href=\"#src-19\">[19]</a></sup><sup><a href=\"#src-20\">[20]</a></sup></p><p>Some bynames became ordinary given names. Ormr ('snake') and Ápi ('fool') both appear as personal names in English place-names, and so does Hálfdan, 'half-Dane'.<sup><a href=\"#src-1\">[1]</a></sup></p>"
+    },
+    {
+      "heading": "What survives in England",
+      "content": "<p>Scandinavians settled in large numbers in the 9th and 10th centuries, and their names are common in place-names in Yorkshire, the East Midlands, East Anglia and north-west England. Aslackby in Lincolnshire contains Áslákr, the Ormesbys contain Ormr, and Kettlethorpe and Grimethorpe in West Yorkshire contain Scandinavian personal names. Women appear too: Helperby in Yorkshire has the woman's name Hjalp, and Sizergh in Westmorland has Sigríðr.<sup><a href=\"#src-1\">[1]</a></sup><sup><a href=\"#src-4\">[4]</a></sup></p><p>A few Old Norse names lived on long enough to become English surnames. Herrick goes back to a single man with a form of Eiríkr, while Gamble arose in several families from men called Gamel.<sup><a href=\"#src-2\">[2]</a></sup></p>"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Did Vikings have last names?",
+      "answer": "Not fixed family names. People were known by their own name plus their father's name with -son or -dóttir, such as Sveinsson or Sveinsdóttir, and often by a byname describing them, such as hárfagri, 'fair-haired'."
+    },
+    {
+      "question": "What does Lodbrok mean?",
+      "answer": "Loðbrók means 'shaggy breeches', often translated Hairy-breeks. It is the byname of Ragnarr in the sagas, a legendary figure whose existence as a real person is disputed."
+    },
+    {
+      "question": "What are some real Viking nicknames?",
+      "answer": "Recorded Old Norse bynames include hárfagri ('fair-haired'), blóðøx ('bloody axe'), flatnefr ('flat-nosed'), hausakljúfr ('skull-cleaver'), loðbrók ('shaggy breeches') and járnsíða ('Ironside')."
+    }
+  ],
+  "related": [
+    "patronymic-names",
+    "name-prefixes-and-suffixes",
+    "what-is-onomastics"
+  ],
+  "generators": [
+    "viking",
+    "nord",
+    "dwarf"
+  ],
+  "sources": [
+    {
+      "id": "snsbi-personal",
+      "author": "Ellie Rye with Keith Briggs, John Insley, Oliver Padel and Diana Whaley",
+      "title": "Personal names in England's place-names",
+      "publisher": "Society for Name Studies in Britain and Ireland",
+      "year": "2024",
+      "url": "https://www.snsbi.org.uk/exploring-names/personal-names-in-englands-place-names/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "snsbi-intro",
+      "author": "Diana Whaley with Peter McClure",
+      "title": "Introducing family names (surnames) in Britain and Ireland",
+      "publisher": "Society for Name Studies in Britain and Ireland",
+      "year": "2024",
+      "url": "https://www.snsbi.org.uk/exploring-names/introducing-family-names-surnames-in-britain-and-ireland/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "snsbi-glossary",
+      "title": "Glossary of terminology used in name studies",
+      "publisher": "Society for Name Studies in Britain and Ireland",
+      "url": "https://www.snsbi.org.uk/exploring-names/glossary/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "snsbi-england",
+      "title": "Place-names of England",
+      "publisher": "Society for Name Studies in Britain and Ireland",
+      "url": "https://www.snsbi.org.uk/exploring-names/place-names-of-england/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-nafn",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: nafn",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/nafn",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-thorr",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: Þórr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/thorr",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-bjorn",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: björn",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/bjorn",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-ulfr",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: úlfr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/ulfr",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-ketill",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: ketill",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/ketill",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-hildr",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: hildr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/hildr",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-gunnr",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: gunnr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/gunnr",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-sonr",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: sonr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/sonr",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-dottir",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: dóttir",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/dottir",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-vidrnefni",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: viðr-nefni",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/vidr-nefni",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-harfagr",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: hár-fagr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/har-fagr",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-blodox",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: blóð-öx",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/blod-ox",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-flatnefr",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: flat-nefr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/flat-nefr",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-hausa",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: hausa-kljúfr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/hausa-kljufr",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-lodbrok",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: loð-brók",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/lod-brok",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-jarnsida",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: járn-síða",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/jarn-sida",
+      "accessed": "2026-11-12"
+    }
+  ]
+}

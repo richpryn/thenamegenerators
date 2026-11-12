@@ -1,0 +1,284 @@
+{
+  "title": "Name Prefixes and Suffixes: The Real Building Blocks",
+  "term": "Name element",
+  "definition": "A meaningful part of a name, such as Old English tūn 'farmstead' in place-names ending -ton, or æthel 'noble' in Æthelred. In personal names an element is also called a theme.",
+  "section": "construction",
+  "description": "What -by, -thorpe, -ton, -ham, -wick, -ford and -ley mean in English place-names, and the Old English and Old Norse elements in personal names.",
+  "seoTitle": "Place-Name Endings and Name Elements Explained",
+  "published": "2026-11-12",
+  "motif": "quill",
+  "atAGlance": "<p>Most old English place-names have two parts: a first element that describes the place or names its owner, and a final element (the generic) that says what kind of place it was, such as -ton from Old English <em>tūn</em>, 'farmstead, village, estate', or -by from Old Norse <em>bý</em>, 'farmstead, village'. Early personal names were built in a similar way from a stock of elements, such as Old English <em>wulf</em>, 'wolf', and <em>stān</em>, 'stone', in Wulfstan. Look-alike endings can hide different words, so a name's meaning has to be checked against its early spellings.</p>",
+  "facts": [
+    {
+      "label": "Most common English place-name element",
+      "value": "Old English tūn, giving -ton"
+    },
+    {
+      "label": "Scandinavian markers",
+      "value": "-by, -thorpe, -thwaite, -toft"
+    },
+    {
+      "label": "Old English personal-name elements",
+      "value": "æthel 'noble', ēad 'prosperity', beorht 'bright', wine 'friend', wulf 'wolf'"
+    },
+    {
+      "label": "Old Norse personal-name elements",
+      "value": "Þór- (Thor), Ás- 'god', -björn 'bear', -ólfr 'wolf', -kell 'cauldron'"
+    }
+  ],
+  "examplesHeading": "Real name elements, and two we built",
+  "examples": [
+    {
+      "name": "-ton",
+      "language": "Old English tūn",
+      "meaning": "'Farmstead, village, estate'. Bolton, Brighton. The ancestor of the word town.",
+      "status": "attested",
+      "source": "snsbi-england"
+    },
+    {
+      "name": "-ham",
+      "language": "Old English hām or hamm",
+      "meaning": "Either hām 'homestead' (Nottingham) or hamm 'enclosure, land in a river bend'. Only early spellings tell them apart.",
+      "status": "attested",
+      "source": "wikt-ham"
+    },
+    {
+      "name": "-ley",
+      "language": "Old English lēah",
+      "meaning": "Woodland, a clearing or wood pasture. Barnsley, Crawley, Oakley.",
+      "status": "attested",
+      "source": "snsbi-england"
+    },
+    {
+      "name": "-ford",
+      "language": "Old English ford",
+      "meaning": "A river crossing. Oxford is 'ford associated with oxen'.",
+      "status": "attested",
+      "source": "snsbi-glossary"
+    },
+    {
+      "name": "-wick, -wich",
+      "language": "Old English wīc",
+      "meaning": "A specialised settlement or trading place: Ipswich, Norwich, Chiswick. Not the same as Old Norse vík 'bay' in Lerwick and Wick.",
+      "status": "attested",
+      "source": "snsbi-scotland"
+    },
+    {
+      "name": "-by",
+      "language": "Old Norse bý",
+      "meaning": "'Farmstead, village'. Derby, Grimsby, Ashby.",
+      "status": "attested",
+      "source": "snsbi-england"
+    },
+    {
+      "name": "-thorpe",
+      "language": "Old Norse thorp",
+      "meaning": "'Outlying farmstead'. Thorpe, Grimethorpe, Kettlethorpe.",
+      "status": "attested",
+      "source": "snsbi-england"
+    },
+    {
+      "name": "-thwaite",
+      "language": "Old Norse thveit",
+      "meaning": "'Clearing'. Thwaite, Braithwaite, Micklethwaite.",
+      "status": "attested",
+      "source": "snsbi-england"
+    },
+    {
+      "name": "Wulfstan",
+      "language": "Old English",
+      "meaning": "wulf 'wolf' + stān 'stone'. The parts were combined without forming a sensible phrase.",
+      "status": "attested",
+      "source": "snsbi-personal"
+    },
+    {
+      "name": "Edward",
+      "language": "Old English Ēadweard",
+      "meaning": "ēad 'prosperity' + weard 'guard'. A two-part name that survived as a single, indivisible one.",
+      "status": "attested",
+      "source": "snsbi-personal"
+    },
+    {
+      "name": "Þorkell (Thorkel)",
+      "language": "Old Norse",
+      "meaning": "Thor + ketill 'cauldron', shortened to -kell.",
+      "status": "attested",
+      "source": "cv-ketill"
+    },
+    {
+      "name": "Ingólfr",
+      "language": "Old Norse",
+      "meaning": "The ending -ólfr is úlfr 'wolf' in an unstressed position.",
+      "status": "attested",
+      "source": "cv-ulfr"
+    },
+    {
+      "name": "Ashthwaite",
+      "language": "Old Norse style place-name",
+      "meaning": "Built from ash (the tree) + thwaite 'clearing'.",
+      "status": "derived"
+    },
+    {
+      "name": "Wulfbeorht",
+      "language": "Old English style personal name",
+      "meaning": "Built from wulf 'wolf' + beorht 'bright'.",
+      "status": "derived"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Two parts make a name",
+      "content": "<p>Most English place-names are compounds. The last part, the generic, says what kind of place it is: a farm, a ford, a hill, a clearing. The first part, the specific, picks out this one: who owned it, what grew there, what it looked like. Oxford is the ford associated with oxen. In Old English and Old Norse the specific always comes first.<sup><a href=\"#src-1\">[1]</a></sup></p><p>Celtic languages often do it the other way round. Welsh Llandudno is 'church of Tudno', with the generic first.<sup><a href=\"#src-1\">[1]</a></sup></p>"
+    },
+    {
+      "heading": "Common place-name endings",
+      "content": "<p><strong>-ton</strong> comes from Old English <em>tūn</em>, 'farmstead, village, estate'. It is the most common element in English place-names and was still forming new names around the time of Domesday Book. <strong>-ham</strong> is usually <em>hām</em>, 'homestead', an element used mostly in the early Anglo-Saxon period. But some -hams come from <em>hamm</em>, 'enclosure, land in a river bend', and Durham and Oldham come from Old Norse <em>holm</em>, 'island of dry ground'.<sup><a href=\"#src-2\">[2]</a></sup><sup><a href=\"#src-4\">[4]</a></sup><sup><a href=\"#src-6\">[6]</a></sup></p><p><strong>-ley</strong> is <em>lēah</em>, used of woods, clearings and wood pasture. <strong>-ford</strong> is a river crossing. <strong>-wick</strong> and <strong>-wich</strong> are usually <em>wīc</em>, a specialised settlement or trading place, as in Ipswich and Norwich. In Scotland, though, Lerwick and Wick come from Old Norse <em>vík</em>, 'bay'.<sup><a href=\"#src-2\">[2]</a></sup><sup><a href=\"#src-3\">[3]</a></sup></p><p>The Scandinavian endings mark where Viking-Age settlers lived, mainly Yorkshire, the East Midlands, East Anglia and the north-west. <strong>-by</strong> is <em>bý</em>, 'farmstead, village'. <strong>-thorpe</strong> is <em>thorp</em>, 'outlying farmstead', though Old English had a related word too. <strong>-thwaite</strong> is <em>thveit</em>, 'clearing', and <strong>-toft</strong> is 'farmstead, farm plot', as in Lowestoft.<sup><a href=\"#src-2\">[2]</a></sup><sup><a href=\"#src-16\">[16]</a></sup></p><p>Endings can deceive. Of three Embletons, only one is really a <em>tūn</em> name. Hampton never had a <em>p</em> in the first place. Always check a name against its early spellings.<sup><a href=\"#src-4\">[4]</a></sup></p>"
+    },
+    {
+      "heading": "Building blocks of personal names",
+      "content": "<p>Early Germanic names were made from a shared stock of elements, a habit inherited from Indo-European. Some names had one element (Old English Beadu, 'war'). Many combined two: Beaduheard is 'war' + 'hard, brave'.<sup><a href=\"#src-5\">[5]</a></sup></p><p>Common Old English elements include <em>æthel</em> 'noble', <em>ēad</em> 'prosperity, riches', <em>beorht</em> 'bright', <em>wine</em> 'friend', <em>wulf</em> 'wolf' and <em>weard</em> 'guard, watchman'.<sup><a href=\"#src-7\">[7]</a></sup><sup><a href=\"#src-8\">[8]</a></sup><sup><a href=\"#src-9\">[9]</a></sup><sup><a href=\"#src-10\">[10]</a></sup><sup><a href=\"#src-11\">[11]</a></sup><sup><a href=\"#src-12\">[12]</a></sup></p><p>Some compounds make sense as phrases: Heathuwulf, 'battle-wolf', is close to the kennings of Old English poetry. Many do not. Wulfstan is 'wolf-stone', and the parts were probably never meant to be read together. So be careful with lists that translate every name as a neat phrase.<sup><a href=\"#src-5\">[5]</a></sup></p><p>Old Norse worked the same way. Thor appears in many names, such as Þorsteinn, Þorbjörn and Þorkell. <em>Ketill</em>, 'cauldron', shrinks to -kell, and <em>úlfr</em>, 'wolf', becomes -ólfr at the end of a name, as in Ingólfr. The 1874 Cleasby–Vigfusson dictionary adds a neat detail: an Anglo-Saxon charter containing names in Thor- (Þur-) that claims a date before the Danish invasions of the 9th century is a sure sign of forgery.<sup><a href=\"#src-13\">[13]</a></sup><sup><a href=\"#src-14\">[14]</a></sup><sup><a href=\"#src-15\">[15]</a></sup></p><p>After the Norman Conquest, two-part naming gave way to choosing from a stock of ready-made names. A few old compounds survive as single names, such as Edward, from <em>Ēadweard</em>.<sup><a href=\"#src-5\">[5]</a></sup></p>"
+    },
+    {
+      "heading": "Borrowing real elements for invented names",
+      "content": "<p>Fantasy and historical-fiction names feel right when they follow these old patterns. A place called Ashthwaite reads as northern English because readers half-recognise the ending. A character called Wulfbeorht sounds Anglo-Saxon because both parts are real Old English elements. Neither is necessarily a real name, and we label examples like these 'Built from real parts'.</p><p>A few rules of thumb help. Keep the specific first and the generic last. Keep to one language: an Old Norse <em>-by</em> on an Old English personal name happens in real places, but a random mix of Welsh, Norse and Latin will not. And use the element for something that fits: a <em>-ford</em> needs a river.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What does -by mean at the end of a place name?",
+      "answer": "It comes from Old Norse bý, 'farmstead, village'. Names such as Derby, Grimsby and Ashby are common where Scandinavians settled in the 9th and 10th centuries, especially Yorkshire, Lincolnshire and the East Midlands."
+    },
+    {
+      "question": "What does thorpe mean in place names?",
+      "answer": "An outlying farmstead, from Scandinavian thorp. It appears alone as Thorpe and in compounds such as Grimethorpe and Kettlethorpe. Old English had a related word, so not every thorpe is Viking."
+    },
+    {
+      "question": "What does ham mean in place names?",
+      "answer": "Usually Old English hām, 'homestead' (the source of home), as in Nottingham. Some -hams come from hamm, 'enclosure' or land in a river bend, and a few, such as Durham, from Old Norse holm. Early spellings decide which."
+    }
+  ],
+  "related": [
+    "what-is-onomastics",
+    "old-norse-names",
+    "how-surnames-began"
+  ],
+  "generators": [
+    "anglo_saxon",
+    "viking",
+    "fantasy_town",
+    "village"
+  ],
+  "sources": [
+    {
+      "id": "snsbi-glossary",
+      "title": "Glossary of terminology used in name studies",
+      "publisher": "Society for Name Studies in Britain and Ireland",
+      "url": "https://www.snsbi.org.uk/exploring-names/glossary/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "snsbi-england",
+      "title": "Place-names of England",
+      "publisher": "Society for Name Studies in Britain and Ireland",
+      "url": "https://www.snsbi.org.uk/exploring-names/place-names-of-england/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "snsbi-scotland",
+      "title": "Place-names of Scotland",
+      "publisher": "Society for Name Studies in Britain and Ireland",
+      "url": "https://www.snsbi.org.uk/exploring-names/place-names-of-scotland/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "snsbi-place",
+      "author": "Diana Whaley",
+      "title": "Interpreting place-names",
+      "publisher": "Society for Name Studies in Britain and Ireland",
+      "year": "2023",
+      "url": "https://www.snsbi.org.uk/exploring-names/interpreting-place-names/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "snsbi-personal",
+      "author": "Ellie Rye with Keith Briggs, John Insley, Oliver Padel and Diana Whaley",
+      "title": "Personal names in England's place-names",
+      "publisher": "Society for Name Studies in Britain and Ireland",
+      "year": "2024",
+      "url": "https://www.snsbi.org.uk/exploring-names/personal-names-in-englands-place-names/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "wikt-ham",
+      "title": "Wiktionary: -ham",
+      "url": "https://en.wiktionary.org/wiki/-ham",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "bt-aethele",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: æðele (noble)",
+      "publisher": "Faculty of Arts, Charles University",
+      "url": "https://bosworthtoller.com/940",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "bt-ead",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: eád (prosperity, riches)",
+      "publisher": "Faculty of Arts, Charles University",
+      "url": "https://bosworthtoller.com/8279",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "bt-beorht",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: beorht (bright)",
+      "publisher": "Faculty of Arts, Charles University",
+      "url": "https://bosworthtoller.com/3741",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "bt-wine",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: wine (friend)",
+      "publisher": "Faculty of Arts, Charles University",
+      "url": "https://bosworthtoller.com/35887",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "bt-wulf",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: wulf (wolf)",
+      "publisher": "Faculty of Arts, Charles University",
+      "url": "https://bosworthtoller.com/36812",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "bt-weard",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: weard (guardian)",
+      "publisher": "Faculty of Arts, Charles University",
+      "url": "https://bosworthtoller.com/34828",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-thorr",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: Þórr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/thorr",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-ketill",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: ketill",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/ketill",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-ulfr",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: úlfr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/ulfr",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-thorp",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: þorp",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/thorp",
+      "accessed": "2026-11-12"
+    }
+  ]
+}
