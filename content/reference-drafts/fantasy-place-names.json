@@ -1,0 +1,247 @@
+{
+  "title": "Fantasy Place Names: Borrowing the Structure of Real Ones",
+  "section": "fantasy",
+  "description": "How invented towns borrow real place-name patterns: English -by, -thwaite and -mere, Welsh aber-, llan- and pen-, and how Tolkien named Bree and the Shire.",
+  "seoTitle": "Fantasy Place Names: How Real Patterns Help",
+  "published": "2026-11-12",
+  "motif": "library",
+  "atAGlance": "<p>Most real place-names are compounds of a word for the kind of place, such as Old Norse <em>thveit</em> 'clearing' or Welsh <em>aber</em> 'river mouth', and a word that picks out this particular one. English puts the describing word first (Micklethwaite), while Welsh usually puts the place-word first (Aberystwyth, 'mouth of the Ystwyth'). Tolkien used this layering deliberately: the Shire has English-style names, while Bree, Combe, Archet and Chetwood were chosen to sound older and Celtic. Bree, he said, meant 'hill', and he based it on Brill in Buckinghamshire, whose name combines a Brittonic and an English word for hill.</p>",
+  "facts": [
+    {
+      "label": "English pattern",
+      "value": "Describing word + place-word: Micklethwaite 'big clearing'"
+    },
+    {
+      "label": "Welsh pattern",
+      "value": "Place-word + describing word or name: Aberystwyth, Llanbadarn"
+    },
+    {
+      "label": "Norse markers",
+      "value": "-by 'farmstead, village', -thorpe 'outlying farm', -thwaite 'clearing'"
+    },
+    {
+      "label": "Tolkien's model",
+      "value": "Bree from Brill (Buckinghamshire), Brittonic + Old English 'hill' + 'hill'"
+    }
+  ],
+  "examplesHeading": "Real elements, Tolkien's names and some we built",
+  "examples": [
+    {
+      "name": "Bree",
+      "language": "Tolkien, The Lord of the Rings",
+      "meaning": "Tolkien said it was an old Celtic-style word for 'hill', to make Bree-land feel older than the Shire.",
+      "status": "attested",
+      "source": "tolkien-lotr"
+    },
+    {
+      "name": "Brill",
+      "language": "Buckinghamshire place-name",
+      "meaning": "Brittonic 'hill' + Old English hyll 'hill'. Tolkien's model for Bree.",
+      "status": "attested",
+      "source": "wikt-brill"
+    },
+    {
+      "name": "Chetwood",
+      "language": "Tolkien, Bree-land",
+      "meaning": "Modelled on Chetwode near Brill. Tolkien took chet as an old word for 'wood'; for the real name, the first element is disputed.",
+      "status": "uncertain",
+      "source": "wikt-chetwode"
+    },
+    {
+      "name": "Combe",
+      "language": "Tolkien, Bree-land; English element",
+      "meaning": "From Old English cumb 'valley'. Whether that word is Celtic or English in origin is unclear.",
+      "status": "uncertain",
+      "source": "wikt-combe"
+    },
+    {
+      "name": "Michel Delving",
+      "language": "Tolkien, the Shire",
+      "meaning": "Old English micel 'great' + delving 'digging': an English-sounding town name that suits hobbit-holes.",
+      "status": "attested",
+      "source": "bt-micel"
+    },
+    {
+      "name": "Micklethwaite",
+      "language": "Yorkshire and Lake District",
+      "meaning": "Norse mikill 'big' + thveit 'clearing'.",
+      "status": "attested",
+      "source": "snseng"
+    },
+    {
+      "name": "Embleton",
+      "language": "Northumberland",
+      "meaning": "Looks like a -ton name but comes from dūn 'hill', not tūn 'farmstead'. Endings can mislead.",
+      "status": "attested",
+      "source": "snseng"
+    },
+    {
+      "name": "Aberystwyth",
+      "language": "Welsh",
+      "meaning": "aber 'river mouth' + the river name Ystwyth.",
+      "status": "attested",
+      "source": "snswales"
+    },
+    {
+      "name": "Llanbadarn",
+      "language": "Welsh",
+      "meaning": "llan 'church enclosure' + St Padarn, with the P softened to B.",
+      "status": "attested",
+      "source": "snswales"
+    },
+    {
+      "name": "Penfro (Pembroke)",
+      "language": "Welsh",
+      "meaning": "'Land's end', with pen 'head, end'.",
+      "status": "attested",
+      "source": "snswales"
+    },
+    {
+      "name": "Barmouth",
+      "language": "Welsh, anglicised",
+      "meaning": "Originally Aber Mawdd, 'mouth of the Mawdd'. The aber is hidden in the modern form.",
+      "status": "attested",
+      "source": "snswales"
+    },
+    {
+      "name": "Coldmere",
+      "language": "Built from Old English",
+      "meaning": "cald 'cold' + mere 'lake, pool'. May match a real minor name by chance.",
+      "status": "derived"
+    },
+    {
+      "name": "Ravensthwaite",
+      "language": "Built from Old Norse",
+      "meaning": "hrafn 'raven' + thveit 'clearing', for a northern-sounding village.",
+      "status": "derived"
+    },
+    {
+      "name": "Aberdusk",
+      "language": "Our mixed example",
+      "meaning": "Welsh aber + English dusk. Mixing languages in one name breaks the pattern, so use it only on purpose.",
+      "status": "invented"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Two parts make a place",
+      "content": "<p>Real place-names are usually compounds. One part says what sort of place it is: a ford, a clearing, a river mouth, a church. The other picks out this one: who owned it, what grew there, what it looked like. Micklethwaite, for example, is Norse <em>mikill</em>, 'big', plus <em>thveit</em>, 'clearing'.<sup><a href=\"#src-1\">[1]</a></sup><sup><a href=\"#src-2\">[2]</a></sup></p><p>The order depends on the language. English and Norse put the describing word first. Welsh usually puts the place-word first, so Aberystwyth is 'mouth of the Ystwyth' and Llanbadarn is the church enclosure of St Padarn. Welsh also changes the first sound of the second word, which is why Padarn becomes -badarn and Mair becomes -fair in Llanfair.<sup><a href=\"#src-3\">[3]</a></sup></p><p>For a fuller list of English endings and what they mean, see our page on <a href=\"english-place-name-elements.html\">English place-name endings</a>.</p>"
+    },
+    {
+      "heading": "Endings that tell a story",
+      "content": "<p>Some elements are clear markers of who named a place. In England, -by ('farmstead, village'), -thorpe ('outlying farmstead') and -thwaite ('clearing') are typical of Scandinavian settlement, and Scandinavian names in general are much commoner in Yorkshire, Lincolnshire and Norfolk than in Suffolk, and almost absent from Essex.<sup><a href=\"#src-1\">[1]</a></sup> Old English <em>mere</em> could mean a lake, a pool or the sea.<sup><a href=\"#src-4\">[4]</a></sup></p><p>In Wales, <em>llan</em> first meant an enclosure and came to mean a church with its graveyard, usually followed by a saint's name. <em>Aber</em> means a river mouth or a meeting of rivers, and <em>pen</em> a head or end, as in Penfro, 'land's end'. Welsh has a rich stock of landscape words, too: a hill might be a <em>bre</em>, <em>bryn</em>, <em>moel</em> or <em>mynydd</em>, and a ridge a <em>cefn</em> or <em>esgair</em>. Names such as Llwyncelyn, 'holly grove', show how much of the landscape ends up on the map.<sup><a href=\"#src-3\">[3]</a></sup></p><p>Endings can mislead, though. Embleton in Northumberland looks like a -ton name but comes from <em>dūn</em>, 'hill'.<sup><a href=\"#src-1\">[1]</a></sup> Barmouth hides its <em>aber</em>: it was once Aber Mawdd, 'mouth of the Mawdd'.<sup><a href=\"#src-3\">[3]</a></sup> Real names have to be checked against early spellings; invented ones only need to be consistent.</p>"
+    },
+    {
+      "heading": "How Tolkien named the Shire and Bree",
+      "content": "<p>Tolkien used real naming layers to suggest history. The Shire's names sound English: Michel Delving joins Old English <em>micel</em>, 'great', with <em>delving</em>, 'digging': in effect 'Much Digging', a joke that suits hobbits, who live in holes.<sup><a href=\"#src-5\">[5]</a></sup><sup><a href=\"#src-6\">[6]</a></sup></p><p>Bree-land is different. In Appendix F of <em>The Lord of the Rings</em>, Tolkien explains that he gave Bree, Combe, Archet and Chetwood names with non-English, Celtic-looking elements, to show they were older than the Shire. He glossed <em>bree</em> as 'hill' and <em>chet</em> as 'wood'.<sup><a href=\"#src-7\">[7]</a></sup></p><p>Christopher Tolkien recorded that Bree was based on Brill in Buckinghamshire, a place his father knew well.<sup><a href=\"#src-8\">[8]</a></sup> Brill is usually explained as a Brittonic word for 'hill' with Old English <em>hyll</em>, 'hill', added: a 'hill-hill'.<sup><a href=\"#src-9\">[9]</a></sup> Tolkien's Chetwood echoes Chetwode nearby, but dictionaries treat the real name's first element as unclear, so 'wood-wood' is a likely reading, not a certain one.<sup><a href=\"#src-10\">[10]</a></sup></p>"
+    },
+    {
+      "heading": "Keeping a map consistent",
+      "content": "<p>This is writing advice drawn from the patterns above:</p><ul><li><strong>Give each culture its own set of elements.</strong> If the north speaks a Norse-like language, its villages end in -by and -thwaite. If the west is Welsh-like, its towns start with aber- and llan-.</li><li><strong>Keep the word order.</strong> Norse- or English-style names put the describing word first; Welsh-style names put the place-word first.<sup><a href=\"#src-1\">[1]</a></sup><sup><a href=\"#src-3\">[3]</a></sup></li><li><strong>Match the landscape.</strong> An aber needs a river mouth; a -thwaite needs a clearing.</li><li><strong>Use layers for history.</strong> Older names can survive under newer ones, as Tolkien did with Bree.<sup><a href=\"#src-7\">[7]</a></sup></li><li><strong>Mix languages only on purpose.</strong> A name like our Aberdusk mixes Welsh and English and will read as odd unless that is the point.</li></ul><p>Our town and country generators combine elements in this way. Their results are invented, and any match with a real place is a coincidence.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How do you name fantasy towns?",
+      "answer": "A reliable method is to copy how real places were named: join a word for the kind of place (ford, clearing, river mouth) to a word describing it or naming an owner, and use one consistent set of elements for each culture on your map."
+    },
+    {
+      "question": "What does Bree mean in The Lord of the Rings?",
+      "answer": "Tolkien said Bree meant 'hill'. He based it on Brill in Buckinghamshire, whose name is usually explained as a Brittonic word for 'hill' with Old English hyll, 'hill', added."
+    },
+    {
+      "question": "What does aber mean in place names?",
+      "answer": "In Welsh, aber means a river mouth or estuary, or the place where one river meets another. It is usually followed by the river's name, as in Aberystwyth and Aberaeron."
+    }
+  ],
+  "related": [
+    "english-place-name-elements",
+    "name-prefixes-and-suffixes",
+    "welsh-names",
+    "old-norse-names",
+    "constructed-languages"
+  ],
+  "generators": [
+    "fantasy_town",
+    "fantasy_country",
+    "village",
+    "kingdom",
+    "fantasy_city"
+  ],
+  "sources": [
+    {
+      "id": "snseng",
+      "author": "Diana Whaley and Keith Briggs",
+      "title": "Introducing the place-names of England",
+      "publisher": "Society for Name Studies in Britain and Ireland",
+      "year": "2024",
+      "url": "https://www.snsbi.org.uk/exploring-names/place-names-of-england/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-mikill",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: mikill",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/mikill",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "snswales",
+      "title": "Introducing the place-names of Wales",
+      "publisher": "Society for Name Studies in Britain and Ireland",
+      "url": "https://www.snsbi.org.uk/exploring-names/place-names-of-wales/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "bt-mere",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: mere (sea, lake, pool)",
+      "publisher": "Faculty of Arts, Charles University",
+      "url": "https://bosworthtoller.com/22650",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "bt-micel",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: micel (great, much)",
+      "publisher": "Faculty of Arts, Charles University",
+      "url": "https://bosworthtoller.com/22770",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "wikt-delve",
+      "title": "Wiktionary: delve",
+      "url": "https://en.wiktionary.org/wiki/delve",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "tolkien-lotr",
+      "author": "J. R. R. Tolkien",
+      "title": "The Lord of the Rings, Appendix F: On Translation",
+      "publisher": "George Allen and Unwin",
+      "year": "1955"
+    },
+    {
+      "id": "rots",
+      "author": "J. R. R. Tolkien, ed. Christopher Tolkien",
+      "title": "The Return of the Shadow (The History of Middle-earth 6), chapter 7, note 6",
+      "publisher": "Unwin Hyman",
+      "year": "1988"
+    },
+    {
+      "id": "wikt-brill",
+      "title": "Wiktionary: Brill",
+      "url": "https://en.wiktionary.org/wiki/Brill",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "wikt-chetwode",
+      "title": "Wiktionary: Chetwode",
+      "url": "https://en.wiktionary.org/wiki/Chetwode",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "wikt-combe",
+      "title": "Wiktionary: combe",
+      "url": "https://en.wiktionary.org/wiki/combe",
+      "accessed": "2026-11-12"
+    }
+  ]
+}

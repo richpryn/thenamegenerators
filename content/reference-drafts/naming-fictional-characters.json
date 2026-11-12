@@ -1,0 +1,324 @@
+{
+  "title": "Naming Fictional Characters: How Writers Have Done It",
+  "term": "Charactonym",
+  "definition": "A name for a fictional character that suggests one of the character's traits, such as Dickens's Gradgrind or Bunyan's Mr Talkative.",
+  "section": "fantasy",
+  "description": "How Dickens, Rowling and Tolkien named characters: telling names, notebooks of collected names, Norse dwarf names, and why to avoid real people's names.",
+  "seoTitle": "Naming Fictional Characters: Real Methods",
+  "published": "2026-11-12",
+  "motif": "library",
+  "atAGlance": "<p>A charactonym is a character's name that hints at their nature, like Dickens's Gradgrind, the fact-grinding schoolmaster of <em>Hard Times</em>. Dickens kept notebooks of names, some copied from official lists of schoolchildren, and J. K. Rowling has said she collects names from maps, saints, war memorials and gravestones as well as inventing them. Tolkien took most of the dwarf names in <em>The Hobbit</em>, and the name Gandalf, from a list of dwarfs in the Old Norse poem <em>Völuspá</em>. Writers also need to take care with names that match real people: in a 1909 libel case a newspaper lost although it said its 'Artemus Jones' was made up.</p>",
+  "facts": [
+    {
+      "label": "Charactonym",
+      "value": "A fictional name that suggests a trait (Mr Talkative, Gradgrind)"
+    },
+    {
+      "label": "Aptronym",
+      "value": "A real person's name that suits them, especially their job"
+    },
+    {
+      "label": "Dickens's name lists",
+      "value": "Book of Memoranda, 1855–1865, published by John Forster"
+    },
+    {
+      "label": "Tolkien's dwarf names",
+      "value": "From the Dvergatal ('catalogue of dwarfs') in Völuspá"
+    }
+  ],
+  "examplesHeading": "Names from real books and what is known about them",
+  "examples": [
+    {
+      "name": "Mr Talkative",
+      "language": "John Bunyan, The Pilgrim's Progress",
+      "meaning": "A classic charactonym: the name is the character.",
+      "status": "attested",
+      "source": "mw-aptronym"
+    },
+    {
+      "name": "Gradgrind",
+      "language": "Dickens, Hard Times",
+      "meaning": "Thomas Gradgrind, who wants children taught 'nothing but Facts'. The name suggests grinding.",
+      "status": "attested",
+      "source": "hardtimes"
+    },
+    {
+      "name": "M'Choakumchild",
+      "language": "Dickens, Hard Times",
+      "meaning": "The schoolmaster who serves Gradgrind's system; read aloud, 'choke 'em child'.",
+      "status": "attested",
+      "source": "hardtimes"
+    },
+    {
+      "name": "Bradley Headstone",
+      "language": "Dickens, Our Mutual Friend",
+      "meaning": "Both 'Bradley' and 'Headston' appear in the name lists Dickens kept in his notebook.",
+      "status": "attested",
+      "source": "forster"
+    },
+    {
+      "name": "Scrooge",
+      "language": "Dickens, A Christmas Carol",
+      "meaning": "Origin unknown. The story of a misread 'meal man' gravestone for an Ebenezer Scroggie has no supporting evidence.",
+      "status": "uncertain",
+      "source": "mentalfloss"
+    },
+    {
+      "name": "Gilderoy Lockhart",
+      "language": "Rowling, Harry Potter",
+      "meaning": "Gilderoy, a Scottish highwayman in the Dictionary of Phrase and Fable, plus Lockhart from a First World War memorial.",
+      "status": "attested",
+      "source": "hpl-scot"
+    },
+    {
+      "name": "Dumbledore",
+      "language": "Rowling, Harry Potter",
+      "meaning": "An old dialect word for a bumblebee, chosen because she imagined him humming.",
+      "status": "attested",
+      "source": "hpl-bn0"
+    },
+    {
+      "name": "Potter",
+      "language": "Rowling, Harry Potter",
+      "meaning": "The surname of a brother and sister she played with as a child.",
+      "status": "attested",
+      "source": "hpl-cr"
+    },
+    {
+      "name": "Voldemort, Malfoy",
+      "language": "Rowling, Harry Potter",
+      "meaning": "Names Rowling says she invented rather than collected.",
+      "status": "attested",
+      "source": "hpl-wbur"
+    },
+    {
+      "name": "Durinn, Dvalinn, Dáinn",
+      "language": "Old Norse, Völuspá",
+      "meaning": "Dwarf names in the Dvergatal; Durin, Dwalin and Dáin in Tolkien.",
+      "status": "attested",
+      "source": "voluspa"
+    },
+    {
+      "name": "Þorinn, Fíli, Kíli, Glóinn",
+      "language": "Old Norse, Völuspá",
+      "meaning": "More Dvergatal names that became Thorin, Fili, Kili and Glóin in The Hobbit.",
+      "status": "attested",
+      "source": "voluspa"
+    },
+    {
+      "name": "Gandalfr",
+      "language": "Old Norse, Völuspá",
+      "meaning": "A dwarf in the poem; Tolkien gave the name to his wizard. gandr has a disputed meaning (something magic) + álfr 'elf'.",
+      "status": "uncertain",
+      "source": "cv-gandr"
+    },
+    {
+      "name": "Eikinskjaldi",
+      "language": "Old Norse, Völuspá",
+      "meaning": "Behind Thorin's 'Oakenshield'. skjaldi is 'shield', but eikinn can mean 'oaken' or 'savage'.",
+      "status": "uncertain",
+      "source": "cv-eikinn"
+    },
+    {
+      "name": "Théoden",
+      "language": "Tolkien, Rohan",
+      "meaning": "Old English þēoden, a poetic word for 'prince, king'.",
+      "status": "attested",
+      "source": "bt-theoden"
+    },
+    {
+      "name": "Artemus Jones",
+      "language": "Libel case, 1909",
+      "meaning": "A name a newspaper said was invented. A real barrister of that name sued and won.",
+      "status": "attested",
+      "source": "hulton"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Telling names",
+      "content": "<p>A name that hints at a character's nature is called a charactonym. Merriam-Webster's examples are Mistress Quickly and Caspar Milquetoast.<sup><a href=\"#src-1\">[1]</a></sup> John Bunyan's <em>The Pilgrim's Progress</em> is full of them, such as Mr Talkative and Mr Worldly Wiseman.<sup><a href=\"#src-2\">[2]</a></sup> A related word, aptronym, is used for a real person whose name suits them, often their job. It is sometimes said to have been coined by the American columnist Franklin P. Adams, but that is not certain.<sup><a href=\"#src-2\">[2]</a></sup></p><p>Dickens used telling names freely. In <em>Hard Times</em> the schoolmaster Thomas Gradgrind demands 'Facts' and nothing else, the teacher who serves his system is Mr M'Choakumchild, and two of Gradgrind's younger children are named Adam Smith and Malthus, after the economists.<sup><a href=\"#src-3\">[3]</a></sup></p>"
+    },
+    {
+      "heading": "Dickens's notebooks of names",
+      "content": "<p>Dickens collected names as raw material. His friend and biographer John Forster published extracts from Dickens's Book of Memoranda, kept from 1855 to 1865. It includes lists of girls' and boys' first names that Dickens noted as coming from Privy Council Education lists, such as Rubina, Pleasant, Doctor, Zerubbabel and Pickles, then lists he seems to have made up himself, and a long run of 'available names'.<sup><a href=\"#src-4\">[4]</a></sup></p><p>Some went straight into the novels. 'Bradley' is on the boys' list and 'Amon Headston' among the available names; the schoolmaster in <em>Our Mutual Friend</em> is Bradley Headstone.<sup><a href=\"#src-4\">[4]</a></sup><sup><a href=\"#src-5\">[5]</a></sup></p><p>Not every origin story holds up. A popular tale says Dickens saw a gravestone in Edinburgh for Ebenezer Lennox Scroggie, a 'meal man', misread it as 'mean man', and invented Scrooge. Researchers have found no record of the merchant, no burial record and no source for the Dickens quotation. The journalist who first published it, Rowan Pelling, has called it a probable hoax.<sup><a href=\"#src-6\">[6]</a></sup></p>"
+    },
+    {
+      "heading": "Rowling's sources, in her own words",
+      "content": "<p>J. K. Rowling has described a mix of collecting and inventing. In 1999 she said she keeps notebooks of unusual names, gathered from saints, place-names, war memorials and gravestones, while names such as Quidditch and Malfoy were made up.<sup><a href=\"#src-7\">[7]</a></sup> In another interview that year she added maps, street names and people she met, said Voldemort was invented, and said Mrs Norris comes from Jane Austen.<sup><a href=\"#src-8\">[8]</a></sup></p><p>Some individual stories she has told:</p><ul><li><strong>Dumbledore</strong> is an old word for a bumblebee, chosen because she pictured him humming to himself.<sup><a href=\"#src-7\">[7]</a></sup> Dictionaries record it as an archaic or dialect word, used by writers such as Thomas Hardy.<sup><a href=\"#src-12\">[12]</a></sup></li><li><strong>Potter</strong> was the surname of a family she lived near as a child.<sup><a href=\"#src-9\">[9]</a></sup><sup><a href=\"#src-7\">[7]</a></sup></li><li><strong>Gilderoy Lockhart</strong> joins a highwayman from the <em>Dictionary of Phrase and Fable</em> with a surname from a First World War memorial.<sup><a href=\"#src-10\">[10]</a></sup></li><li>She says she named the four Hogwarts houses on the back of an aeroplane sick bag.<sup><a href=\"#src-11\">[11]</a></sup></li></ul><p>You will often read that Snape was named after the village of Snape in Suffolk. We could not trace that to an interview we could check, so treat it as unconfirmed.</p>"
+    },
+    {
+      "heading": "Tolkien's Norse dwarfs and English kings",
+      "content": "<p>The Old Norse poem <em>Völuspá</em> contains a list of dwarfs, the Dvergatal. It names Durinn, Dvalinn, Dáinn, Bívurr, Bávurr, Bömburr, Nóri, Óinn, Þorinn, Þráinn, Fíli, Kíli, Glóinn, Dóri and Óri, and also Gandalfr and Eikinskjaldi.<sup><a href=\"#src-13\">[13]</a></sup> Readers of <em>The Hobbit</em> will recognise most of Thorin's company, Gandalf, and Thorin's byname Oakenshield.</p><p>The meanings are less clear than the borrowing. <em>Gandalfr</em> combines <em>gandr</em>, a word whose exact sense is uncertain, with <em>álfr</em>, 'elf'.<sup><a href=\"#src-14\">[14]</a></sup> Eikinskjaldi is usually read as 'oak-shield', but <em>eikinn</em> can also mean 'savage'.<sup><a href=\"#src-15\">[15]</a></sup></p><p>In Appendix F of <em>The Lord of the Rings</em>, Tolkien explains that he represented the languages of Men in the north with Old Norse and the language of Rohan with Old English, and that the Dwarves used names from the Men they lived among.<sup><a href=\"#src-16\">[16]</a></sup> So the king of Rohan is Théoden, from Old English <em>þēoden</em>, a poetic word for a prince or king.<sup><a href=\"#src-17\">[17]</a></sup></p>"
+    },
+    {
+      "heading": "Avoiding names too close to real people",
+      "content": "<p>In 1909 the House of Lords upheld a libel award to Thomas Artemus Jones, a barrister. A newspaper had published a scandalous story about an 'Artemus Jones' it said was imaginary, but friends of the real man believed it was about him.<sup><a href=\"#src-18\">[18]</a></sup><sup><a href=\"#src-19\">[19]</a></sup> The law has developed since, and this is not legal advice, but the case shows why writers check names.</p><p>Practical steps, as advice: search the full name together with the character's job and town; be most careful with unusual names and with villains; and in fantasy, prefer invented or historical forms over the names of living people.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Where did J.K. Rowling get the names for Harry Potter?",
+      "answer": "By her own account, from a mix of sources: notebooks of names collected from saints, place-names, maps, war memorials and gravestones, plus some she invented, such as Voldemort, Malfoy and Quidditch. Dumbledore is an old word for a bumblebee, and Potter was the surname of childhood neighbours."
+    },
+    {
+      "question": "Where did Dickens get the name Ebenezer Scrooge?",
+      "answer": "No one knows. The popular story that Dickens misread an Edinburgh gravestone of Ebenezer Scroggie, 'meal man', as 'mean man' has no supporting evidence and has been called a probable hoax."
+    },
+    {
+      "question": "Where do Tolkien's dwarf names come from?",
+      "answer": "From the Dvergatal, a list of dwarf names in the Old Norse poem Völuspá. It includes Durinn, Þorinn, Fíli, Kíli, Glóinn, Bömburr, Óinn and Gandalfr, as well as Eikinskjaldi, behind Thorin's byname Oakenshield."
+    }
+  ],
+  "related": [
+    "how-fantasy-names-work",
+    "constructed-languages",
+    "old-norse-names",
+    "old-english-names",
+    "fantasy-place-names"
+  ],
+  "generators": [
+    "character_name",
+    "villain",
+    "npc",
+    "epithet",
+    "dwarf"
+  ],
+  "sources": [
+    {
+      "id": "mw-charactonym",
+      "title": "Charactonym",
+      "publisher": "Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/charactonym",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "mw-aptronym",
+      "title": "Aptronym: Usage and Examples",
+      "publisher": "Merriam-Webster",
+      "url": "https://www.merriam-webster.com/wordplay/aptronym-slang-definition",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "hardtimes",
+      "author": "Charles Dickens",
+      "title": "Hard Times",
+      "publisher": "Project Gutenberg",
+      "year": "1854",
+      "url": "https://www.gutenberg.org/ebooks/786",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "forster",
+      "author": "John Forster",
+      "title": "The Life of Charles Dickens, vol. III, chapter 'Hints for Books Written and Unwritten'",
+      "publisher": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/25851",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "omf",
+      "author": "Charles Dickens",
+      "title": "Our Mutual Friend",
+      "publisher": "Project Gutenberg",
+      "year": "1865",
+      "url": "https://www.gutenberg.org/ebooks/883",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "mentalfloss",
+      "title": "7 Real-Life Inspirations for Dickens's A Christmas Carol",
+      "publisher": "Mental Floss",
+      "url": "https://www.mentalfloss.com/holidays/christmas/7-real-life-inspirations-dickenss-christmas-carol",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "hpl-bn0",
+      "author": "Harry Potter Lexicon (transcript)",
+      "title": "J. K. Rowling, Barnes and Noble interview, 19 March 1999",
+      "url": "https://www.hp-lexicon.org/source/interviews/bn0/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "hpl-wbur",
+      "author": "Harry Potter Lexicon (transcript)",
+      "title": "J. K. Rowling on The Connection, WBUR Radio, 12 October 1999",
+      "url": "https://www.hp-lexicon.org/quote/19800/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "hpl-cr",
+      "author": "Harry Potter Lexicon (transcript)",
+      "title": "J. K. Rowling, Comic Relief live chat, March 2001",
+      "url": "https://www.hp-lexicon.org/source/interviews/cr/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "hpl-scot",
+      "author": "Harry Potter Lexicon (transcript)",
+      "title": "J. K. Rowling, 'Harry and me', The Scotsman, November 2002",
+      "url": "https://www.hp-lexicon.org/source/interviews/scot/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "hpl-sch1",
+      "author": "Harry Potter Lexicon (transcript)",
+      "title": "J. K. Rowling, Scholastic online interview, 3 February 2000",
+      "url": "https://www.hp-lexicon.org/source/interviews/sch1/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "wikt-dumbledore",
+      "title": "Wiktionary: dumbledore",
+      "url": "https://en.wiktionary.org/wiki/dumbledore",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "voluspa",
+      "title": "Völuspá (Old Norse text), stanzas 10–16",
+      "publisher": "heimskringla.no",
+      "url": "https://heimskringla.no/wiki/V%C3%B6lusp%C3%A1",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-gandr",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: gandr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/gandr",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cv-eikinn",
+      "title": "Cleasby and Vigfusson, An Icelandic-English Dictionary (1874), online edition: eikinn",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/eikinn",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "tolkien-lotr",
+      "author": "J. R. R. Tolkien",
+      "title": "The Lord of the Rings, Appendix F: The Languages and Peoples of the Third Age; On Translation",
+      "publisher": "George Allen and Unwin",
+      "year": "1955"
+    },
+    {
+      "id": "bt-theoden",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: þeóden (prince, king)",
+      "publisher": "Faculty of Arts, Charles University",
+      "url": "https://bosworthtoller.com/31679",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "hulton",
+      "title": "E. Hulton and Co v Jones [1909] UKHL 591, reported [1910] AC 20",
+      "publisher": "BAILII",
+      "url": "https://www.bailii.org/uk/cases/UKHL/1909/47SLR0591.html",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "hulton-summary",
+      "title": "E. Hulton & Co. v. Jones (case summary)",
+      "publisher": "Quimbee",
+      "url": "https://www.quimbee.com/cases/e-hulton-co-v-jones",
+      "accessed": "2026-11-12"
+    }
+  ]
+}

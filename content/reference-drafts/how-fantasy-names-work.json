@@ -1,0 +1,239 @@
+{
+  "title": "How Fantasy Names Work: Sound Symbolism and Phonaesthetics",
+  "term": "Phonaesthetics",
+  "definition": "The study of the expressive qualities of speech sounds, such as why some words strike people as pleasant or harsh for their sound alone.",
+  "section": "fantasy",
+  "description": "Why some invented names sound gentle and others menacing: the bouba/kiki effect, sound symbolism research, and which naming tips are only advice.",
+  "seoTitle": "How Fantasy Names Work: Sound Symbolism",
+  "published": "2026-11-12",
+  "motif": "library",
+  "atAGlance": "<p>Sound symbolism is a link between speech sounds and meaning that is not purely arbitrary. In experiments, most people match the made-up word <em>bouba</em> to a rounded shape and <em>kiki</em> to a spiky one, and a 2022 test across 25 languages found the effect in most of them. Studies of Pokémon names found that names with more voiced consonants such as b, d, g and z, and longer names, tend to belong to bigger, stronger characters. These are tendencies, not rules: no sound means 'evil' or 'elvish' on its own.</p>",
+  "facts": [
+    {
+      "label": "Classic experiment",
+      "value": "Köhler's takete and maluma (1929, 1947); bouba and kiki (Ramachandran and Hubbard, 2001)"
+    },
+    {
+      "label": "Biggest cross-language test",
+      "value": "917 people, 25 languages: 72% of responses matched the expected pattern"
+    },
+    {
+      "label": "Sounds linked with size",
+      "value": "Voiced consonants (b, d, g, z) and the vowel a for big; the vowel i for small"
+    },
+    {
+      "label": "Sounds in 'pleasant' words",
+      "value": "l and m, smooth consonants, few clusters (Crystal, 1995)"
+    }
+  ],
+  "examplesHeading": "Test words, fictional names and a few of our own",
+  "examples": [
+    {
+      "name": "takete / maluma",
+      "language": "Experimental nonsense words",
+      "meaning": "Köhler's pair: takete matched to a spiky figure, maluma (earlier baluba) to a rounded one.",
+      "status": "attested",
+      "source": "cwiek"
+    },
+    {
+      "name": "kiki / bouba",
+      "language": "Experimental nonsense words",
+      "meaning": "Ramachandran and Hubbard's 2001 version of the same test: kiki spiky, bouba round.",
+      "status": "attested",
+      "source": "cwiek"
+    },
+    {
+      "name": "mil / mal",
+      "language": "Experimental nonsense words",
+      "meaning": "Sapir (1929): people tended to name a small table mil and a large one mal.",
+      "status": "attested",
+      "source": "oecs"
+    },
+    {
+      "name": "Gorbag, Shagrat",
+      "language": "Tolkien, Orkish names",
+      "meaning": "Orc names full of voiced consonants and back vowels. Devoice them (Corpac, Shacrat) and they sound far less nasty.",
+      "status": "attested",
+      "source": "lck"
+    },
+    {
+      "name": "Alaree, Osnomian",
+      "language": "Science-fiction alien names",
+      "meaning": "Names of friendly aliens that David Crystal used to show his 'pleasant sound' pattern.",
+      "status": "attested",
+      "source": "crystal"
+    },
+    {
+      "name": "Vatch, Triops",
+      "language": "Science-fiction alien names",
+      "meaning": "Names of hostile aliens in the same article: short, with harsher consonants.",
+      "status": "attested",
+      "source": "crystal"
+    },
+    {
+      "name": "Manwë",
+      "language": "Tolkien, Quenya",
+      "meaning": "The two dots tell English readers to pronounce the final e.",
+      "status": "attested",
+      "source": "tolkien-lotr"
+    },
+    {
+      "name": "Eärendil",
+      "language": "Tolkien, Quenya",
+      "meaning": "The two dots show that e and a are separate vowels, not one sound.",
+      "status": "attested",
+      "source": "tolkien-lotr"
+    },
+    {
+      "name": "Lirameli",
+      "language": "Our example: soft pattern",
+      "meaning": "Built with l, r, m and front vowels, the pattern Crystal found in 'pleasant' words.",
+      "status": "invented"
+    },
+    {
+      "name": "Grukdag",
+      "language": "Our example: harsh pattern",
+      "meaning": "Voiced plosives (g, d) and back vowels, the Orkish pattern Rosenfelder describes.",
+      "status": "invented"
+    },
+    {
+      "name": "Velsh'ar",
+      "language": "Our example: apostrophe",
+      "meaning": "An apostrophe with no defined sound. Readers can't tell what it means, which is the problem.",
+      "status": "invented"
+    },
+    {
+      "name": "Selladore",
+      "language": "English, respelt",
+      "meaning": "C. S. Lewis's respelling of 'cellar door' as a made-up proper name.",
+      "status": "attested",
+      "source": "languagelog"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Bouba, kiki and the shape of a sound",
+      "content": "<p>Most of the time the link between a word and its meaning is arbitrary. Trees are <em>arbor</em> in Latin, <em>Baum</em> in German and <em>ki</em> in Japanese. But researchers have long noticed exceptions, where a sound seems to suit what it names. This is called sound symbolism.<sup><a href=\"#src-1\">[1]</a></sup></p><p>Modern experiments began in the 1920s. Edward Sapir found that people tended to give the made-up name <em>mal</em> to a large table and <em>mil</em> to a small one. The psychologist Wolfgang Köhler showed people a rounded figure and a spiky one and asked which was <em>takete</em>. Most picked the spiky one, leaving the round shape for <em>baluba</em> (<em>maluma</em> in his 1947 edition).<sup><a href=\"#src-1\">[1]</a></sup><sup><a href=\"#src-2\">[2]</a></sup></p><p>In 2001 V. S. Ramachandran and Edward Hubbard repeated the test with <em>bouba</em> and <em>kiki</em>, and the name stuck.<sup><a href=\"#src-3\">[3]</a></sup><sup><a href=\"#src-2\">[2]</a></sup> The largest check so far, published in 2022, tested 917 speakers of 25 languages using ten writing systems. Overall, 72% of responses matched bouba to round and kiki to spiky, and the match was stronger for bouba. Results varied by language, from 100% for Swedish speakers to 36% for Romanian, and earlier studies found no effect among Syuba speakers in Nepal or Hunjara speakers in Papua New Guinea.<sup><a href=\"#src-2\">[2]</a></sup> So the effect is strong and widespread, but not universal.</p>"
+    },
+    {
+      "heading": "Big, heavy and harsh: what the research says",
+      "content": "<p>A team led by Shigeto Kawahara studied every Japanese Pokémon name available in 2016. Names with more voiced obstruents (b, d, g, z) tended to belong to bigger, heavier Pokémon and to more evolved forms. Longer names went with bigger and stronger characters too. Names starting with high vowels such as i leaned towards smaller, lighter Pokémon, though that effect was small.<sup><a href=\"#src-4\">[4]</a></sup> The authors link this to the 'frequency code' idea: low-pitched sounds suggest large things and high-pitched sounds small ones.<sup><a href=\"#src-4\">[4]</a></sup></p><p>The vowel link goes back to Sapir: many English speakers feel <em>a</em> is bigger than <em>i</em>.<sup><a href=\"#src-4\">[4]</a></sup> But the pattern is not fixed for every language. In Korean ideophones, <em>a</em> is linked with smallness.<sup><a href=\"#src-1\">[1]</a></sup></p><p>Beauty has been studied too. David Crystal analysed lists of words people call beautiful, such as <em>melody</em>, <em>velvet</em> and <em>gossamer</em>. They favoured l and m and smooth, continuous consonants, used few consonant clusters, and often had three syllables with the stress on the first. He noted that friendly aliens in science fiction get names like Alaree, while enemies get names like Vatch.<sup><a href=\"#src-5\">[5]</a></sup> Crystal was careful to say his sample was small, and that sound and meaning can't be fully separated: pleasant-sounding words usually mean pleasant things.<sup><a href=\"#src-5\">[5]</a></sup></p>"
+    },
+    {
+      "heading": "Making a culture's names hang together",
+      "content": "<p>A single good name matters less than a set that sounds like it belongs to one people. Mark Rosenfelder's <em>Language Construction Kit</em> points out that Tolkien's Orkish relies on harsh consonants, while his Elvish is full of vowels, l and r. He compares Gorbag and Shagrat with the unvoiced Corpac and Shacrat to show how much voicing alone changes the feel.<sup><a href=\"#src-6\">[6]</a></sup></p><p>Tolkien built his Elvish sounds on languages he loved. He wrote to W. H. Auden that Welsh names had fascinated him since childhood, and that finding a Finnish grammar made his own invented language heavily 'Finnicized' in sound and structure.<sup><a href=\"#src-7\">[7]</a></sup></p><p>The practical lesson is to choose a small set of sounds and syllable shapes for each culture and stick to it. That is writing advice rather than a research finding, but it follows from the evidence: readers notice patterns, and a name that breaks the pattern stands out.</p>"
+    },
+    {
+      "heading": "Apostrophes and accents",
+      "content": "<p>Rosenfelder warns against adding apostrophes just to make a word look alien. Real languages use the apostrophe for very different things: a glottal stop in Hawaiian, a dropped letter in English, a syllable break in romanised Chinese. Because of that, it tells the reader nothing on its own. He gives similar advice on accents: give each mark one clear job and keep it.<sup><a href=\"#src-6\">[6]</a></sup></p><p>Tolkien's own spelling is the usual model. He spelt Quenya much like Latin and used two dots to show readers which vowels to sound separately, as in Eärendil, or that a final e is pronounced, as in Manwë.<sup><a href=\"#src-6\">[6]</a></sup><sup><a href=\"#src-8\">[8]</a></sup> Rosenfelder also notes that Marc Okrand gave Klingon capital and small letters with different sounds, which works but is hard to remember.<sup><a href=\"#src-6\">[6]</a></sup></p>"
+    },
+    {
+      "heading": "What is proven, and what is just advice",
+      "content": "<ul><li><strong>Well supported:</strong> most people, across many languages, link bouba-type words with round shapes and kiki-type words with spiky ones.<sup><a href=\"#src-2\">[2]</a></sup></li><li><strong>Supported, but varies by language:</strong> voiced consonants and the vowel a suggest size and weight; i suggests smallness.<sup><a href=\"#src-4\">[4]</a></sup><sup><a href=\"#src-1\">[1]</a></sup></li><li><strong>Writing advice:</strong> keep each culture's sounds consistent, and don't use apostrophes or accents without a reason.<sup><a href=\"#src-6\">[6]</a></sup></li><li><strong>Myth:</strong> that 'cellar door' has been shown to be the most beautiful phrase in English. It is an old claim that Tolkien repeated in a 1955 lecture. The language writer Grant Barrett collected more than 80 versions of the story, but none is a scientific finding.<sup><a href=\"#src-9\">[9]</a></sup></li></ul><p>Sound symbolism nudges readers; it does not decide for them. A villain called Lirameli can still be terrifying if the story makes him so.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is the bouba/kiki effect?",
+      "answer": "It is the tendency to match the made-up word 'bouba' with a rounded shape and 'kiki' with a spiky one. A 2022 study of 917 people speaking 25 languages found 72% of responses followed this pattern, though the strength varied between languages."
+    },
+    {
+      "question": "What makes a name sound evil?",
+      "answer": "There is no fixed rule, but research links voiced consonants such as b, d, g and z with size and heaviness, and fantasy writers often give villains short names with harsh consonants and back vowels, like Tolkien's orcs Gorbag and Shagrat. Context still matters more than sound."
+    },
+    {
+      "question": "Why do fantasy names have apostrophes?",
+      "answer": "Usually to make a name look foreign. Language inventors such as Mark Rosenfelder advise against it unless the apostrophe stands for a definite sound, such as a glottal stop, because real languages use it in so many different ways that it tells the reader nothing."
+    }
+  ],
+  "related": [
+    "constructed-languages",
+    "naming-fictional-characters",
+    "fantasy-place-names",
+    "name-prefixes-and-suffixes",
+    "what-is-onomastics"
+  ],
+  "generators": [
+    "character_name",
+    "elf",
+    "orc",
+    "villain"
+  ],
+  "sources": [
+    {
+      "id": "oecs",
+      "author": "Mutsumi Imai and Kimi Akita",
+      "title": "Sound Symbolism",
+      "publisher": "Open Encyclopedia of Cognitive Science, MIT Press",
+      "year": "2024",
+      "url": "https://oecs.knowledgefutures.org/pub/in0y7zea",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "cwiek",
+      "author": "Aleksandra Ćwiek and others",
+      "title": "The bouba/kiki effect is robust across cultures and writing systems",
+      "publisher": "Philosophical Transactions of the Royal Society B 377: 20200390",
+      "year": "2022",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8591387/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "ramachandran",
+      "author": "V. S. Ramachandran and Edward M. Hubbard",
+      "title": "Synaesthesia: a window into perception, thought and language",
+      "publisher": "Journal of Consciousness Studies 8 (12): 3–34",
+      "year": "2001"
+    },
+    {
+      "id": "pokemon",
+      "author": "Shigeto Kawahara, Atsushi Noto and Gakuji Kumagai",
+      "title": "Sound symbolic patterns in Pokémon names",
+      "publisher": "Phonetica 75 (3): 219–244",
+      "year": "2018",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6159826/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "crystal",
+      "author": "David Crystal",
+      "title": "Phonaesthetically speaking",
+      "publisher": "English Today 42, vol. 11 no. 2, Cambridge University Press",
+      "year": "1995",
+      "url": "https://davidcrystal.com/Files/BooksAndArticles/-4009.pdf",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "lck",
+      "author": "Mark Rosenfelder",
+      "title": "The Language Construction Kit: the basics",
+      "publisher": "zompist.com",
+      "url": "https://zompist.com/kitlong.html",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "auden",
+      "author": "J. R. R. Tolkien",
+      "title": "Letter to the poet W. H. Auden, 7 June 1955",
+      "publisher": "The Tolkien Estate",
+      "url": "https://www.tolkienestate.com/letters/letter-to-the-poet-w-h-auden-7-jun-1955/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "tolkien-lotr",
+      "author": "J. R. R. Tolkien",
+      "title": "The Lord of the Rings, Appendix E: Writing and Spelling",
+      "publisher": "George Allen and Unwin",
+      "year": "1955"
+    },
+    {
+      "id": "languagelog",
+      "author": "Geoff Nunberg",
+      "title": "The Romantic Side of Familiar Words",
+      "publisher": "Language Log, University of Pennsylvania",
+      "year": "2010",
+      "url": "https://languagelog.ldc.upenn.edu/nll/?p=2142",
+      "accessed": "2026-11-12"
+    }
+  ]
+}

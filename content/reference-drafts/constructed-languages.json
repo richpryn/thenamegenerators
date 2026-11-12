@@ -1,0 +1,236 @@
+{
+  "title": "Constructed Languages and Naming Languages",
+  "term": "Conlang",
+  "definition": "A constructed language: one deliberately invented by a person or group, such as Esperanto, Klingon or Dothraki, rather than one that grew naturally.",
+  "section": "fantasy",
+  "description": "How Tolkien, Marc Okrand, David J. Peterson and Paul Frommer built languages for fiction, and why a naming language is often all a story needs.",
+  "seoTitle": "Constructed Languages and Fantasy Names",
+  "published": "2026-11-12",
+  "motif": "library",
+  "atAGlance": "<p>A constructed language, or conlang, is a language someone has invented on purpose. Famous examples for fiction include Tolkien's Elvish languages Quenya and Sindarin, Marc Okrand's Klingon for <em>Star Trek</em>, David J. Peterson's Dothraki and High Valyrian for HBO's <em>Game of Thrones</em>, and Paul Frommer's Na'vi for <em>Avatar</em>. Esperanto, published by L. L. Zamenhof in 1887, was built for a different job: to be an easy second language for real people. Many writers need only a naming language, a consistent set of sounds and a few word roots, rather than a full grammar.</p>",
+  "facts": [
+    {
+      "label": "Tolkien's two main Elvish languages",
+      "value": "Quenya (High-elven) and Sindarin (Grey-elven)"
+    },
+    {
+      "label": "Klingon",
+      "value": "Marc Okrand; The Klingon Dictionary published 1985"
+    },
+    {
+      "label": "Dothraki",
+      "value": "David J. Peterson, chosen through the Language Creation Society for HBO; over 1,800 words at launch"
+    },
+    {
+      "label": "Na'vi",
+      "value": "Paul Frommer, University of Southern California, for James Cameron's Avatar"
+    }
+  ],
+  "examplesHeading": "Languages and words from real works, and a naming language of our own",
+  "examples": [
+    {
+      "name": "Quenya",
+      "language": "Tolkien, Elvish",
+      "meaning": "High-elven, one of Tolkien's two main Elvish languages. An early form was spelt Qenya.",
+      "status": "attested",
+      "source": "hostetter"
+    },
+    {
+      "name": "Sindarin",
+      "language": "Tolkien, Elvish",
+      "meaning": "Grey-elven. Earlier conceived as Noldorin, and before that Goldogrin or Gnomish.",
+      "status": "attested",
+      "source": "hostetter"
+    },
+    {
+      "name": "Elen síla lúmenn' omentielvo",
+      "language": "Tolkien, Quenya",
+      "meaning": "Frodo's greeting to the Elves in Woody End, most readers' first sight of Quenya.",
+      "status": "attested",
+      "source": "hostetter"
+    },
+    {
+      "name": "khal, arakh",
+      "language": "Dothraki, from the novels",
+      "meaning": "Two of the few Dothraki words George R. R. Martin put in the books.",
+      "status": "attested",
+      "source": "grrm"
+    },
+    {
+      "name": "khaleesi, khalasar",
+      "language": "Dothraki, from the novels",
+      "meaning": "Words Martin coined. Peterson aimed to stay faithful to what the books already had.",
+      "status": "attested",
+      "source": "grrm"
+    },
+    {
+      "name": "High Valyrian",
+      "language": "Game of Thrones",
+      "meaning": "Martin said he had made up only seven words of it before the TV series.",
+      "status": "attested",
+      "source": "grrm"
+    },
+    {
+      "name": "Klingon",
+      "language": "Star Trek",
+      "meaning": "Created by the linguist Marc Okrand; its sounds all exist in real languages, but the mix is unusual.",
+      "status": "attested",
+      "source": "kli"
+    },
+    {
+      "name": "pIqaD",
+      "language": "Klingon",
+      "meaning": "A Klingon writing system based on glyphs used in set decoration. Okrand's own system uses Latin letters.",
+      "status": "attested",
+      "source": "kli"
+    },
+    {
+      "name": "Na'vi",
+      "language": "Avatar",
+      "meaning": "The language of Pandora's inhabitants, created and still added to by Paul Frommer.",
+      "status": "attested",
+      "source": "frommer"
+    },
+    {
+      "name": "Esperanto",
+      "language": "International auxiliary language",
+      "meaning": "Published by L. L. Zamenhof in 1887 as an easy shared second language, not for fiction.",
+      "status": "attested",
+      "source": "esperanto"
+    },
+    {
+      "name": "Verdurian",
+      "language": "Mark Rosenfelder's conlang",
+      "meaning": "The author of the Language Construction Kit's own invented language, used as a worked example.",
+      "status": "attested",
+      "source": "lck"
+    },
+    {
+      "name": "Talren",
+      "language": "Our naming language",
+      "meaning": "Built from our invented roots tal 'stone' + ren 'river': a town by a rocky river.",
+      "status": "invented"
+    },
+    {
+      "name": "Renmara",
+      "language": "Our naming language",
+      "meaning": "ren 'river' + mara 'bright'. Same roots, same sound rules, so the two names feel related.",
+      "status": "invented"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Tolkien: the languages came first",
+      "content": "<p>Tolkien's Elvish languages are the best-known conlangs in fiction. Quenya (High-elven) and Sindarin (Grey-elven) are the two main ones, and most of the non-English names of people and places in his books come from them.<sup><a href=\"#src-1\">[1]</a></sup> He had been building them for nearly forty years before <em>The Fellowship of the Ring</em> appeared in 1954, and he wrote that the stories were made to give the languages a world, rather than the other way round.<sup><a href=\"#src-1\">[1]</a></sup></p><p>His tastes shaped the sounds. In a 1955 letter to W. H. Auden he described a lifelong fascination with Welsh names and the thrill of finding a Finnish grammar, which made his own language heavily Finnish in sound and structure.<sup><a href=\"#src-2\">[2]</a></sup> He also gave the Elvish languages invented histories, with older forms changing into newer ones, just as Old English became modern English.<sup><a href=\"#src-1\">[1]</a></sup></p><p>In a 1931 lecture, published as 'A Secret Vice', Tolkien argued that the urge to invent languages is common and is a legitimate part of the drive towards fantasy.<sup><a href=\"#src-3\">[3]</a></sup></p>"
+    },
+    {
+      "heading": "Klingon, Dothraki and Na'vi",
+      "content": "<p><strong>Klingon.</strong> Klingons in early <em>Star Trek</em> spoke English. For the third film the producers asked the linguist Marc Okrand to create a real language. He did not base it on any one language; its sounds all occur in human languages, but the combination is unusual. <em>The Klingon Dictionary</em> came out in 1985.<sup><a href=\"#src-4\">[4]</a></sup></p><p><strong>Dothraki and High Valyrian.</strong> George R. R. Martin has said he is no linguist. He used only a handful of Dothraki words, such as <em>khal</em> and <em>arakh</em>, and had made up seven words of High Valyrian. When HBO filmed the series, the producers asked the Language Creation Society, which chose David J. Peterson's proposal. Peterson kept to the evidence in the books, such as word order and adjectives after nouns, and built a language of more than 1,800 words.<sup><a href=\"#src-5\">[5]</a></sup></p><p><strong>Na'vi.</strong> Paul Frommer, a professor at the University of Southern California's Marshall School of Business, created Na'vi for James Cameron's <em>Avatar</em> and still publishes new words and grammar notes on his blog.<sup><a href=\"#src-6\">[6]</a></sup></p>"
+    },
+    {
+      "heading": "Esperanto: a different goal",
+      "content": "<p>Esperanto is a useful contrast. L. L. Zamenhof published it in 1887 in the hope that a shared second language would help different peoples understand each other. It was not meant to replace anyone's first language. It has no grammatical gender and no irregular verbs, and is spelt as it sounds.<sup><a href=\"#src-7\">[7]</a></sup></p><p>A language for fiction has the opposite aim. It should feel foreign and fit one imagined culture, as Klingon was meant to sound as alien as the Klingons looked while staying pronounceable for actors.<sup><a href=\"#src-4\">[4]</a></sup> Esperanto, by contrast, draws most of its vocabulary from European languages Zamenhof knew well, such as Latin, French, German and Russian.<sup><a href=\"#src-7\">[7]</a></sup></p>"
+    },
+    {
+      "heading": "Naming language or full language?",
+      "content": "<p>A full conlang has sounds, grammar, a large vocabulary and often a writing system. Most stories never need that. A naming language is a smaller kit: a set of sounds, rules for how syllables fit together, and a stock of roots and endings. Mark Rosenfelder's <em>Language Construction Kit</em> uses the term and notes that tools such as prefixes, suffixes and compounds are useful 'even if you want nothing more than a naming language'.<sup><a href=\"#src-8\">[8]</a></sup></p><p>Martin's books show this in practice. A few consistent words gave Dothraki a flavour on the page, and the full language was only needed when actors had to speak it.<sup><a href=\"#src-5\">[5]</a></sup></p><p>Rosenfelder also warns that working backwards, inventing words as needed and a grammar afterwards, leads to inconsistency. He gives Hergé's Syldavian from the Tintin books as an example.<sup><a href=\"#src-8\">[8]</a></sup></p>"
+    },
+    {
+      "heading": "Building a simple naming language",
+      "content": "<p>This is writing advice based on the sources above, not a rule:</p><ul><li><strong>Pick the sounds first.</strong> Rosenfelder suggests working on the sounds before the spelling, then spelling them simply.<sup><a href=\"#src-8\">[8]</a></sup></li><li><strong>Make a short list of roots</strong> with meanings, such as our invented <em>tal</em> 'stone' and <em>ren</em> 'river'.</li><li><strong>Combine them by fixed rules</strong>, the way real place-names put a describing word before a word for the kind of place.</li><li><strong>Write the rules down</strong> so later names follow them.</li></ul><p>Names built this way, like our Talren and Renmara, sound related because they share roots and sounds, even if readers never learn what they mean.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is Dothraki a real language?",
+      "answer": "It is a real constructed language. George R. R. Martin used only a few Dothraki words in his novels, and David J. Peterson expanded it for HBO's Game of Thrones into a language with its own grammar and, at launch, more than 1,800 words. It has no native speakers."
+    },
+    {
+      "question": "How did Tolkien create Elvish?",
+      "answer": "Over decades, starting before he wrote the stories. He built Quenya and Sindarin with their own sounds, grammar and invented histories, drawing on languages he loved, especially Finnish and Welsh, and kept revising them for the rest of his life."
+    },
+    {
+      "question": "What is a naming language?",
+      "answer": "A small invented language used only for names: a fixed set of sounds, rules for building syllables, and a list of roots and endings. It gives a culture's names a consistent feel without the work of a full grammar."
+    }
+  ],
+  "related": [
+    "how-fantasy-names-work",
+    "naming-fictional-characters",
+    "fantasy-place-names",
+    "name-prefixes-and-suffixes"
+  ],
+  "generators": [
+    "elf",
+    "game_of_thrones",
+    "alien",
+    "high_elf"
+  ],
+  "sources": [
+    {
+      "id": "hostetter",
+      "author": "Carl F. Hostetter",
+      "title": "Tolkien's Invented Languages",
+      "publisher": "The Tolkien Estate",
+      "url": "https://www.tolkienestate.com/scholarship/carl-hostetter-tolkiens-invented-languages/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "auden",
+      "author": "J. R. R. Tolkien",
+      "title": "Letter to the poet W. H. Auden, 7 June 1955",
+      "publisher": "The Tolkien Estate",
+      "url": "https://www.tolkienestate.com/letters/letter-to-the-poet-w-h-auden-7-jun-1955/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "shippey",
+      "author": "Tom Shippey",
+      "title": "The Monsters and the Critics and Other Essays",
+      "publisher": "The Tolkien Estate",
+      "url": "https://www.tolkienestate.com/scholarship/tom-shippey-the-monsters-and-the-critics-and-other-essays/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "kli",
+      "title": "Development and Use of the Klingon Language",
+      "publisher": "Klingon Language Institute",
+      "url": "https://www.kli.org/about-klingon/klingon-history/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "grrm",
+      "author": "George R. R. Martin",
+      "title": "Klaatu Barada Nicto… (blog post with HBO's announcement of David J. Peterson)",
+      "publisher": "Not a Blog",
+      "year": "2010",
+      "url": "https://georgerrmartin.com/notablog/2010/04/12/klaatu-barada-nicto/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "frommer",
+      "author": "Paul Frommer",
+      "title": "About Na'viteri.org",
+      "publisher": "Na'viteri.org",
+      "url": "https://naviteri.org/about/",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "esperanto",
+      "author": "Joshua Holzer",
+      "title": "A brief history of Esperanto, the 135-year-old language of peace",
+      "publisher": "The Conversation",
+      "year": "2022",
+      "url": "https://theconversation.com/a-brief-history-of-esperanto-the-135-year-old-language-of-peace-hated-by-hitler-and-stalin-alike-186025",
+      "accessed": "2026-11-12"
+    },
+    {
+      "id": "lck",
+      "author": "Mark Rosenfelder",
+      "title": "The Language Construction Kit",
+      "publisher": "zompist.com",
+      "url": "https://zompist.com/kitlong.html",
+      "accessed": "2026-11-12"
+    }
+  ]
+}
