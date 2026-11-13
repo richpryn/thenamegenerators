@@ -50,6 +50,10 @@ names, fantasy names. One JSON file per page; the file name is the slug
 - Lists of pet names and fantasy names may skip `meaning` and `status`; then add no `sources`.
 - Real ranks for England and Wales come automatically from `content/data/ons-names.json` (ONS, 1996–2025), matched on exact spelling and the group's gender. Don't type ranks in.
 
+## Style
+
+- Put meanings in straight single quotes wherever they appear in copy: titles ("Names That Mean 'Moon'"), headings, intros, FAQs and notes ("means 'oak tree'", "'fire', 'flame' or 'hearth'"). This is Rich's preference across all lists.
+
 ## Rules
 
 - At least 2 sources on any page that gives meanings. Prefer the Oxford Dictionary of First Names, Behind the Name (which cites its sources), Wiktionary, and the Naming Library's own sources.
