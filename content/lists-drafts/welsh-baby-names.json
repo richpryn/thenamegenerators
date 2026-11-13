@@ -1,0 +1,986 @@
+{
+  "title": "Welsh Baby Names",
+  "seoTitle": "Welsh Baby Names With Pronunciation and Meanings",
+  "description": "Over 100 Welsh girl and boy names in real use, from Cerys and Seren to Dylan and Rhys, each with a simple pronunciation guide and a checked meaning.",
+  "section": "heritage",
+  "published": "2026-11-13",
+  "motif": "dragon",
+  "intro": "<p>These are Welsh names that people actually give their children, from long-established ones like Rhys and Angharad to modern word names like Seren (\"star\") and Eira (\"snow\"). Every name has a plain pronunciation guide, because Welsh spelling trips up English speakers more than the names themselves do.</p><p>We checked each meaning against Behind the Name and the Oxford Dictionary of First Names. Where the origin is disputed, or nobody knows, we say so instead of repeating a pretty guess. The rankings show how often each name was registered in England and Wales.</p>",
+  "groups": [
+    {
+      "heading": "Welsh girl names",
+      "gender": "girl",
+      "names": [
+        {
+          "name": "Seren",
+          "meaning": "star",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "the Welsh word for star; a modern name",
+          "pronounce": "SEH-ren"
+        },
+        {
+          "name": "Cerys",
+          "meaning": "a modern name linked to caru, \"to love\"",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "dfn",
+          "note": "a variant of Carys; the link to caru is the usual explanation",
+          "pronounce": "KEH-riss"
+        },
+        {
+          "name": "Carys",
+          "meaning": "from caru, \"to love\"",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "in common use since the mid-1900s",
+          "pronounce": "KA-riss"
+        },
+        {
+          "name": "Ffion",
+          "meaning": "foxglove",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "a modern name from the Welsh word",
+          "pronounce": "FEE-on"
+        },
+        {
+          "name": "Nia",
+          "meaning": "Welsh form of the Irish name Niamh",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "used by the poet T. Gwynn Jones in 1916",
+          "pronounce": "NEE-a"
+        },
+        {
+          "name": "Eira",
+          "meaning": "snow",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "a recently created name",
+          "pronounce": "AY-ra"
+        },
+        {
+          "name": "Megan",
+          "meaning": "Welsh pet form of Margaret (\"pearl\")",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "MEG-an"
+        },
+        {
+          "name": "Elin",
+          "meaning": "Welsh form of Helen",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "EH-lin"
+        },
+        {
+          "name": "Catrin",
+          "meaning": "Welsh form of Katherine",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "KAT-rin"
+        },
+        {
+          "name": "Bethan",
+          "meaning": "Welsh pet form of Elizabeth",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "BETH-an"
+        },
+        {
+          "name": "Lowri",
+          "meaning": "Welsh form of Laura",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "LOW-ree (LOW as in now)"
+        },
+        {
+          "name": "Gwen",
+          "meaning": "white, fair, blessed",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "dfn",
+          "note": "the feminine of gwyn; also short for Gwenllian and other Gwen- names",
+          "pronounce": "GWEN"
+        },
+        {
+          "name": "Gwenllian",
+          "meaning": "gwen (\"white, blessed\") plus a second part that may mean \"flaxen\" or \"flood\"",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "note": "a medieval royal name; the second element is not certain",
+          "pronounce": "gwen-HLEE-an"
+        },
+        {
+          "name": "Angharad",
+          "meaning": "usually explained as \"much loved\", from an- (very) and caru (to love)",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "dfn",
+          "note": "a medieval name; the analysis is not certain",
+          "pronounce": "ang-HA-rad"
+        },
+        {
+          "name": "Rhiannon",
+          "meaning": "probably from an old Celtic name meaning \"great queen\"",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "note": "the horsewoman of the Mabinogi",
+          "pronounce": "hree-AN-on"
+        },
+        {
+          "name": "Rhian",
+          "meaning": "maiden, young woman",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "from Welsh rhiain",
+          "pronounce": "HREE-an"
+        },
+        {
+          "name": "Efa",
+          "meaning": "Welsh form of Eva",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "EH-va"
+        },
+        {
+          "name": "Enfys",
+          "meaning": "rainbow",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "first used in the 1800s",
+          "pronounce": "EN-viss"
+        },
+        {
+          "name": "Tesni",
+          "meaning": "warmth",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "TESS-nee"
+        },
+        {
+          "name": "Tegan",
+          "meaning": "darling, from a pet form of teg, \"beautiful\"",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "TEG-an"
+        },
+        {
+          "name": "Eleri",
+          "meaning": "from the name of a Welsh river; meaning unknown",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "note": "also a 7th-century saint",
+          "pronounce": "eh-LEH-ree"
+        },
+        {
+          "name": "Heledd",
+          "meaning": "meaning unknown",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "note": "the speaker of the medieval poems Canu Heledd",
+          "pronounce": "HEH-leth (th as in \"the\")"
+        },
+        {
+          "name": "Lleucu",
+          "meaning": "meaning unknown, possibly linked to the name Lleu",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "note": "from a 14th-century love elegy",
+          "pronounce": "HLAY-kee"
+        },
+        {
+          "name": "Mared",
+          "meaning": "Welsh form of Margaret",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "MA-red"
+        },
+        {
+          "name": "Mererid",
+          "meaning": "pearl, gem",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "from Latin margarita",
+          "pronounce": "meh-REH-rid"
+        },
+        {
+          "name": "Nest",
+          "meaning": "medieval Welsh pet form of Agnes",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "NEST"
+        },
+        {
+          "name": "Olwen",
+          "meaning": "white footprint",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "from ol (track) and gwen (white); the heroine of Culhwch and Olwen",
+          "pronounce": "OL-wen"
+        },
+        {
+          "name": "Branwen",
+          "meaning": "white raven",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "from bran (raven) and gwen; a heroine of the Mabinogi",
+          "pronounce": "BRAN-wen"
+        },
+        {
+          "name": "Bronwen",
+          "meaning": "seemingly bron (\"breast\") and gwen (\"white, blessed\")",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "note": "sometimes a spelling of Branwen; used since the 1800s",
+          "pronounce": "BRON-wen"
+        },
+        {
+          "name": "Ceridwen",
+          "meaning": "possibly \"bent, crooked\" plus \"woman\" or \"white, blessed\"",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "note": "the sorceress of the Taliesin legend",
+          "pronounce": "keh-RID-wen"
+        },
+        {
+          "name": "Ceinwen",
+          "meaning": "cain (\"good, lovely\") and gwen (\"white, blessed\")",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "a 5th-century saint",
+          "pronounce": "KINE-wen"
+        },
+        {
+          "name": "Anwen",
+          "meaning": "very beautiful",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "from an- (very) and gwen",
+          "pronounce": "AN-wen"
+        },
+        {
+          "name": "Heulwen",
+          "meaning": "sunshine",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "from haul (sun) and gwen",
+          "pronounce": "HAYL-wen"
+        },
+        {
+          "name": "Haf",
+          "meaning": "summer",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "HAHV"
+        },
+        {
+          "name": "Eirlys",
+          "meaning": "snowdrop",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "from eira (snow) and llys (plant)",
+          "pronounce": "AYR-liss"
+        },
+        {
+          "name": "Llinos",
+          "meaning": "linnet",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "HLEE-noss"
+        },
+        {
+          "name": "Briallen",
+          "meaning": "primrose",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "a modern name from briallu",
+          "pronounce": "bree-A-hlen"
+        },
+        {
+          "name": "Elain",
+          "meaning": "fawn",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "created in the 1800s",
+          "pronounce": "EH-line"
+        },
+        {
+          "name": "Awen",
+          "meaning": "inspiration",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "wikt",
+          "note": "the poetic inspiration of the bards",
+          "pronounce": "AH-wen"
+        },
+        {
+          "name": "Dilys",
+          "meaning": "genuine",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "used since the late 1800s",
+          "pronounce": "DIL-iss"
+        },
+        {
+          "name": "Delyth",
+          "meaning": "from del, \"pretty\"",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "a recently created name",
+          "pronounce": "DEL-ith"
+        },
+        {
+          "name": "Glenys",
+          "meaning": "probably from glân (\"pure, holy\") or glyn (\"valley\")",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "note": "created in the late 1800s",
+          "pronounce": "GLEN-iss"
+        },
+        {
+          "name": "Nerys",
+          "meaning": "probably from nêr, \"lord\"",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "pronounce": "NEH-riss"
+        },
+        {
+          "name": "Myfanwy",
+          "meaning": "my- (\"my\") plus a word meaning \"fine, delicate\" or \"woman\"",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "note": "the title of Joseph Parry's 1875 song",
+          "pronounce": "muh-VAN-wee"
+        },
+        {
+          "name": "Gwyneth",
+          "meaning": "probably a form of Gwynedd, the north Welsh kingdom",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "note": "common in Wales since the 1800s",
+          "pronounce": "GWIN-eth"
+        },
+        {
+          "name": "Sian",
+          "meaning": "Welsh form of Jane",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "written Siân in Welsh",
+          "pronounce": "SHAHN"
+        },
+        {
+          "name": "Siwan",
+          "meaning": "Welsh form of Joan",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "SHOO-an"
+        },
+        {
+          "name": "Sioned",
+          "meaning": "Welsh form of Janet",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "SHON-ed"
+        }
+      ]
+    },
+    {
+      "heading": "Welsh boy names",
+      "gender": "boy",
+      "names": [
+        {
+          "name": "Dylan",
+          "meaning": "from dy (\"to, towards\") and llanw (\"tide, flow\")",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "a sea-born figure in the Mabinogi",
+          "pronounce": "DUH-lan"
+        },
+        {
+          "name": "Rhys",
+          "meaning": "probably \"ardour, enthusiasm\"",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "dfn",
+          "note": "an old Welsh royal name; the exact origin is debated",
+          "pronounce": "HREES"
+        },
+        {
+          "name": "Owain",
+          "meaning": "possibly from Latin Eugenius; other Celtic origins have been suggested",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "note": "Owain Glyndŵr led the rising of 1400",
+          "pronounce": "OH-wine"
+        },
+        {
+          "name": "Owen",
+          "meaning": "English spelling of Owain",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "OH-en"
+        },
+        {
+          "name": "Osian",
+          "meaning": "Welsh spelling of Ossian, the form of Irish Oisín (\"little deer\") made famous in the 1700s",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "note": "the link to Ossian is the usual explanation",
+          "pronounce": "OSH-an"
+        },
+        {
+          "name": "Idris",
+          "meaning": "ardent lord",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "from iudd (lord) and ris (ardent); Cadair Idris is named after a legendary giant",
+          "pronounce": "ID-riss"
+        },
+        {
+          "name": "Macsen",
+          "meaning": "Welsh form of Maximus",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "after Macsen Wledig, the Roman emperor of Welsh legend",
+          "pronounce": "MAK-sen"
+        },
+        {
+          "name": "Emrys",
+          "meaning": "Welsh form of Ambrose, from Greek for \"immortal\"",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "dfn",
+          "pronounce": "EM-riss"
+        },
+        {
+          "name": "Morgan",
+          "meaning": "possibly from mor (\"sea\") and cant (\"circle\")",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "note": "from Old Welsh Morcant",
+          "pronounce": "MOR-gan"
+        },
+        {
+          "name": "Evan",
+          "meaning": "English form of Ifan, the Welsh John",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "EV-an"
+        },
+        {
+          "name": "Cai",
+          "meaning": "Welsh form of Kay, Arthur's steward in legend",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "KYE"
+        },
+        {
+          "name": "Tomos",
+          "meaning": "Welsh form of Thomas",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "TOM-oss"
+        },
+        {
+          "name": "Ioan",
+          "meaning": "Welsh form of John",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "YO-an"
+        },
+        {
+          "name": "Gethin",
+          "meaning": "dark-skinned, swarthy",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "GETH-in"
+        },
+        {
+          "name": "Rhodri",
+          "meaning": "from rod (\"wheel\") and ri (\"king\")",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "Rhodri the Great ruled Gwynedd in the 9th century",
+          "pronounce": "HROD-ree"
+        },
+        {
+          "name": "Dewi",
+          "meaning": "an old Welsh form of David",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "Saint Dewi is the patron saint of Wales",
+          "pronounce": "DEH-wee"
+        },
+        {
+          "name": "Dafydd",
+          "meaning": "Welsh form of David, usually explained as \"beloved\"",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "dfn",
+          "pronounce": "DA-vith (th as in \"the\")"
+        },
+        {
+          "name": "Ifan",
+          "meaning": "modern form of Ieuan, the Welsh John",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "EE-van"
+        },
+        {
+          "name": "Iwan",
+          "meaning": "modern Welsh form of Ieuan (John)",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "YOO-an"
+        },
+        {
+          "name": "Ieuan",
+          "meaning": "medieval Welsh form of John",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "revived in the 1800s",
+          "pronounce": "YAY-an"
+        },
+        {
+          "name": "Ianto",
+          "meaning": "pet form of Ifan (John)",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "YAN-to"
+        },
+        {
+          "name": "Sion",
+          "meaning": "Welsh form of John",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "written Siôn in Welsh",
+          "pronounce": "SHOHN"
+        },
+        {
+          "name": "Iestyn",
+          "meaning": "Welsh form of Justin",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "a 6th-century saint",
+          "pronounce": "YES-tin"
+        },
+        {
+          "name": "Steffan",
+          "meaning": "Welsh form of Stephen",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "STEF-an"
+        },
+        {
+          "name": "Huw",
+          "meaning": "Welsh form of Hugh",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "HEW"
+        },
+        {
+          "name": "Gwilym",
+          "meaning": "Welsh form of William",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "GWIL-im"
+        },
+        {
+          "name": "Hywel",
+          "meaning": "eminent, prominent (literally \"well seen\")",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "Hywel the Good gave Wales its medieval laws",
+          "pronounce": "HUH-wel"
+        },
+        {
+          "name": "Gruffudd",
+          "meaning": "iudd (\"lord\") plus a first part of uncertain meaning, possibly \"strong\"",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "note": "a common royal name in medieval Wales",
+          "pronounce": "GRIFF-ith (th as in \"the\")"
+        },
+        {
+          "name": "Llywelyn",
+          "meaning": "probably from an old Celtic name made from the gods Lugus and Belenus; often linked to llyw, \"leader\"",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "note": "the name of the last native princes of Wales",
+          "pronounce": "hluh-WEL-in"
+        },
+        {
+          "name": "Rhydian",
+          "meaning": "possibly from rhyd, \"ford\"",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "note": "a companion of Saint Illtud",
+          "pronounce": "HRUTH-yan"
+        },
+        {
+          "name": "Trystan",
+          "meaning": "Welsh spelling of Tristan",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "TRUSS-tan"
+        },
+        {
+          "name": "Aled",
+          "meaning": "from the name of a Welsh river; meaning uncertain",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "pronounce": "AL-ed"
+        },
+        {
+          "name": "Alun",
+          "meaning": "Welsh form of Alan; also the name of two Welsh rivers",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "AL-in"
+        },
+        {
+          "name": "Aneurin",
+          "meaning": "modern form of Aneirin, possibly from Latin Honorius",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "note": "Aneirin was the 6th-century poet of Y Gododdin",
+          "pronounce": "a-NAY-rin"
+        },
+        {
+          "name": "Nye",
+          "meaning": "pet form of Aneirin or Aneurin",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "NYE"
+        },
+        {
+          "name": "Taliesin",
+          "meaning": "shining brow",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "from tal (brow) and iesin (shining); the legendary 6th-century bard",
+          "pronounce": "tal-YES-in"
+        },
+        {
+          "name": "Emlyn",
+          "meaning": "from an old region of south-west Wales, \"around the valley\"",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "the link with Latin Aemilianus is unfounded",
+          "pronounce": "EM-lin"
+        },
+        {
+          "name": "Bryn",
+          "meaning": "hill, mound",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "dfn",
+          "note": "the ordinary Welsh word, used as a name in modern times",
+          "pronounce": "BRIN"
+        },
+        {
+          "name": "Glyn",
+          "meaning": "valley",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "GLIN"
+        },
+        {
+          "name": "Wyn",
+          "meaning": "from gwyn, \"white, blessed\"",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "WIN"
+        },
+        {
+          "name": "Gwyn",
+          "meaning": "white, blessed",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "Gwyn ap Nudd leads the Wild Hunt in Welsh legend",
+          "pronounce": "GWIN"
+        },
+        {
+          "name": "Berwyn",
+          "meaning": "white top, from barr (\"top\") and gwyn (\"white\")",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "also a mountain range in north Wales",
+          "pronounce": "BER-win"
+        },
+        {
+          "name": "Bleddyn",
+          "meaning": "from blaidd, \"wolf\", with a pet ending",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "an 11th-century king of Gwynedd and Powys",
+          "pronounce": "BLETH-in"
+        },
+        {
+          "name": "Caradog",
+          "meaning": "Welsh form of Caratacos",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "the British leader who fought Rome",
+          "pronounce": "ka-RA-dog"
+        },
+        {
+          "name": "Madog",
+          "meaning": "from mad, \"good, fortunate\", with a pet ending",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "a spelling of Madoc",
+          "pronounce": "MAD-og"
+        },
+        {
+          "name": "Gwydion",
+          "meaning": "probably \"born of trees\"",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "note": "the magician of the Mabinogi",
+          "pronounce": "GWID-yon"
+        },
+        {
+          "name": "Geraint",
+          "meaning": "meaning unknown, possibly from Latin Gerontius",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "note": "a knight of Arthurian legend",
+          "pronounce": "GEH-raint"
+        },
+        {
+          "name": "Cynan",
+          "meaning": "an Old Welsh name usually linked to the word for \"dog\"",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "wikt",
+          "note": "the sound changes do not quite fit, so the link is debated",
+          "pronounce": "KUN-an"
+        },
+        {
+          "name": "Ifor",
+          "meaning": "Welsh form of Ivor",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "IV-or"
+        },
+        {
+          "name": "Deiniol",
+          "meaning": "Welsh form of Daniel",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "Bangor cathedral is dedicated to Saint Deiniol",
+          "pronounce": "DINE-yol"
+        },
+        {
+          "name": "Eifion",
+          "meaning": "an Old Welsh name of unknown meaning",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "note": "revived from the place name Eifionydd",
+          "pronounce": "AYV-yon"
+        },
+        {
+          "name": "Meirion",
+          "meaning": "from the old county of Meirionnydd, probably from Latin Marianus",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "pronounce": "MAYR-yon"
+        },
+        {
+          "name": "Islwyn",
+          "meaning": "below the grove, from a mountain name",
+          "origin": "Welsh",
+          "status": "attested",
+          "source": "behind",
+          "note": "from is (below) and llwyn (grove)",
+          "pronounce": "ISS-loo-in"
+        },
+        {
+          "name": "Tegid",
+          "meaning": "possibly from teg (\"fair\") or from Latin Tacitus",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "note": "Llyn Tegid is Bala Lake",
+          "pronounce": "TEG-id"
+        },
+        {
+          "name": "Tudur",
+          "meaning": "Welsh form of Tudor, possibly \"ruler of the people\"",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "pronounce": "TID-ir"
+        },
+        {
+          "name": "Peredur",
+          "meaning": "meaning uncertain, possibly \"hard spears\"",
+          "origin": "Welsh",
+          "status": "uncertain",
+          "source": "behind",
+          "note": "the Welsh hero who became Perceval",
+          "pronounce": "peh-REH-dir"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "How to read the pronunciations",
+      "content": "<p>The guides use plain English spellings, with the stressed syllable in capitals. Welsh stress usually falls on the second-to-last syllable. A few Welsh sounds have no exact English match:</p><ul><li><strong>ll</strong> (Llinos, Llywelyn) is written <em>hl</em> here. Put your tongue where you would for an <em>l</em> and blow air past the sides.</li><li><strong>dd</strong> is the <em>th</em> in <em>the</em>, while <strong>th</strong> is the <em>th</em> in <em>thin</em>. So Dafydd ends in a soft <em>th</em>.</li><li><strong>f</strong> sounds like <em>v</em> (Efa is EH-va) and <strong>ff</strong> like <em>f</em> (Ffion).</li><li><strong>w</strong> and <strong>y</strong> are often vowels: <em>w</em> like <em>oo</em>, <em>y</em> like <em>i</em> in a last syllable and <em>uh</em> elsewhere.</li><li><strong>rh</strong> is a breathy <em>r</em>, close to <em>hr</em> (Rhys, Rhiannon).</li></ul><p>Accents vary between north and south Wales, so treat these as a good starting point, not the only correct way.</p>"
+    },
+    {
+      "heading": "Old names, new names and Welsh forms",
+      "content": "<p>Welsh first names come in a few layers. Some are medieval Welsh names, like Angharad, Gruffudd and Hywel. Some are Welsh forms of names used all over Europe: Siân and Siwan are Jane and Joan, and Ifan, Ieuan, Iwan, Ioan and Siôn are all John. A large group are ordinary Welsh words used as names, mostly since the 1800s: Seren (star), Eira (snow), Enfys (rainbow), Heulwen (sunshine) and Bryn (hill).</p><p>That last group is where invented meanings creep in. Cerys is often said to mean \"love\", but it is a modern name and the link to <em>caru</em>, \"to love\", is an explanation rather than a record. Names from rivers and old regions, such as Eleri, Aled and Emlyn, are similar: the place came first, and the place name's own meaning is often lost.</p>"
+    },
+    {
+      "heading": "Spellings and accents",
+      "content": "<p>Many Welsh names have an accent (Siân, Siôn) that registration systems and some forms drop. We list Sian and Sion without the accent so the official England and Wales rankings match, but Siân and Siôn are the Welsh spellings. If you choose one of these, it is worth checking how the name will appear on passports and school systems.</p><p>English spellings exist for several names: Owen for Owain, Evan for Ifan, Tudor for Tudur. They are pronounced differently, so pick the spelling that matches how you want the name said.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is the most popular Welsh name?",
+      "answer": "Of the names on this list, Dylan ranks highest in England and Wales: 72nd for boys in 2025. For girls, Seren, Nia, Eira and Ffion are the most used Welsh names."
+    },
+    {
+      "question": "What are traditional Welsh names?",
+      "answer": "Medieval Welsh names still in use include Rhys, Owain, Gruffudd, Hywel, Dafydd and Llywelyn for boys, and Angharad, Gwenllian, Nest and Olwen for girls. Names such as Seren, Eira and Cerys are modern by comparison."
+    },
+    {
+      "question": "How do you pronounce Welsh names?",
+      "answer": "Most Welsh letters are said as they are written, with stress on the second-to-last syllable. The main surprises are ll (a breathed l), dd (the th in \"the\"), f (said as v), w and y used as vowels, and rh (a breathy r). Every name on this page has a simple pronunciation guide."
+    }
+  ],
+  "generators": [
+    "last_name",
+    "house_name",
+    "character_name"
+  ],
+  "reference": [
+    "welsh-names",
+    "patronymic-names",
+    "what-is-onomastics"
+  ],
+  "lists": [
+    "old-english-names",
+    "victorian-names",
+    "names-that-mean-star",
+    "names-that-mean-light"
+  ],
+  "sources": [
+    {
+      "id": "dfn",
+      "author": "Patrick Hanks, Kate Hardcastle and Flavia Hodges",
+      "title": "A Dictionary of First Names",
+      "publisher": "Oxford University Press",
+      "year": "2006"
+    },
+    {
+      "id": "behind",
+      "title": "Behind the Name: Welsh names",
+      "url": "https://www.behindthename.com/names/usage/welsh",
+      "accessed": "2026-11-13"
+    },
+    {
+      "id": "wikt",
+      "title": "Wiktionary: Welsh given names (Awen, Cynan)",
+      "url": "https://en.wiktionary.org/wiki/Category:Welsh_given_names",
+      "accessed": "2026-11-13"
+    }
+  ]
+}

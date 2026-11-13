@@ -1,0 +1,515 @@
+{
+  "title": "Fantasy Town Names",
+  "seoTitle": "Fantasy Town Names: 105 Villages, Towns and Cities",
+  "description": "105 original fantasy town, village and city names: English-style villages, coastal towns, mining towns, elven cities, dwarven holds and dark fortresses.",
+  "section": "fantasy",
+  "published": "2026-11-13",
+  "motif": "castle-hill",
+  "intro": "<p>Names for the places on your map: quiet villages, fishing ports, mining towns, elven cities, dwarven holds and the grim fortress at the edge of the world. Every name came from one of the place-name generators on this site, and we kept the ones that sound like real places people could live in.</p><p>Many of the English-style names are built from genuine Old English place-name parts such as <em>-thorpe</em> (outlying farm), <em>-wick</em> (dairy farm or trading place) and <em>-combe</em> (valley), which is why they sound believable. We avoided names of real towns.</p>",
+  "groups": [
+    {
+      "heading": "English-style villages and market towns (from the village and fantasy town generators)",
+      "gender": "any",
+      "names": [
+        {
+          "name": "Wynthorpe St Margaret",
+          "status": "invented"
+        },
+        {
+          "name": "Dunbourne-on-the-Wold",
+          "status": "invented"
+        },
+        {
+          "name": "Eckhurst St Giles",
+          "status": "invented"
+        },
+        {
+          "name": "Middle Sibworth",
+          "status": "invented"
+        },
+        {
+          "name": "Lower Tadstow",
+          "status": "invented"
+        },
+        {
+          "name": "Tibden-on-the-Moor",
+          "status": "invented"
+        },
+        {
+          "name": "Wexcombe-on-the-Green",
+          "status": "invented"
+        },
+        {
+          "name": "Great Wadsett",
+          "status": "invented"
+        },
+        {
+          "name": "Kelholt-le-Fen",
+          "status": "invented"
+        },
+        {
+          "name": "Ebbworth-on-the-Marsh",
+          "status": "invented"
+        },
+        {
+          "name": "Rosthorpe-le-Moor",
+          "status": "invented"
+        },
+        {
+          "name": "Fallowstead",
+          "status": "invented"
+        },
+        {
+          "name": "Butterthorpe",
+          "status": "invented"
+        },
+        {
+          "name": "Honeycott",
+          "status": "invented"
+        },
+        {
+          "name": "Cloverstead",
+          "status": "invented"
+        },
+        {
+          "name": "Little Hopworth",
+          "status": "invented"
+        },
+        {
+          "name": "Chipping Saltford",
+          "status": "invented"
+        },
+        {
+          "name": "Market Mercerwich",
+          "status": "invented"
+        },
+        {
+          "name": "Spicewich",
+          "status": "invented"
+        },
+        {
+          "name": "Chipping Wainford",
+          "status": "invented"
+        }
+      ]
+    },
+    {
+      "heading": "Cosy villages (from the village generator)",
+      "gender": "any",
+      "names": [
+        {
+          "name": "Primrose Mead",
+          "status": "invented"
+        },
+        {
+          "name": "Snowdrop End",
+          "status": "invented"
+        },
+        {
+          "name": "Teasel-under-the-Hill",
+          "status": "invented"
+        },
+        {
+          "name": "Kettle Nook",
+          "status": "invented"
+        },
+        {
+          "name": "Damson Green",
+          "status": "invented"
+        },
+        {
+          "name": "Elderflower Dell",
+          "status": "invented"
+        },
+        {
+          "name": "Hollyhock-in-the-Dell",
+          "status": "invented"
+        },
+        {
+          "name": "Dormouse Corner",
+          "status": "invented"
+        },
+        {
+          "name": "Thistledown Lane End",
+          "status": "invented"
+        },
+        {
+          "name": "Pippin Meadow",
+          "status": "invented"
+        },
+        {
+          "name": "Crumpet Nook",
+          "status": "invented"
+        },
+        {
+          "name": "Cowslip-on-the-Brook",
+          "status": "invented"
+        }
+      ]
+    },
+    {
+      "heading": "Coastal towns and ports (from the fantasy town and fantasy city generators)",
+      "gender": "any",
+      "names": [
+        {
+          "name": "Gullport-on-Sea",
+          "status": "invented"
+        },
+        {
+          "name": "Nether Galecove",
+          "status": "invented"
+        },
+        {
+          "name": "Pearlness",
+          "status": "invented"
+        },
+        {
+          "name": "Gannetsey",
+          "status": "invented"
+        },
+        {
+          "name": "Musselhaven",
+          "status": "invented"
+        },
+        {
+          "name": "Cocklehithe-on-Sea",
+          "status": "invented"
+        },
+        {
+          "name": "High Gullhithe",
+          "status": "invented"
+        },
+        {
+          "name": "Crabhithe-on-Sea",
+          "status": "invented"
+        },
+        {
+          "name": "Anchorhithe",
+          "status": "invented"
+        },
+        {
+          "name": "Whalecove",
+          "status": "invented"
+        },
+        {
+          "name": "Lanternport",
+          "status": "invented"
+        },
+        {
+          "name": "Kelpmouth",
+          "status": "invented"
+        },
+        {
+          "name": "Galereach",
+          "status": "invented"
+        },
+        {
+          "name": "Brineshore",
+          "status": "invented"
+        },
+        {
+          "name": "Mistquay",
+          "status": "invented"
+        }
+      ]
+    },
+    {
+      "heading": "Mining and northern towns (from the fantasy town and fantasy city generators)",
+      "gender": "any",
+      "names": [
+        {
+          "name": "Anvilfell",
+          "status": "invented"
+        },
+        {
+          "name": "Ashscar",
+          "status": "invented"
+        },
+        {
+          "name": "Anvilgill",
+          "status": "invented"
+        },
+        {
+          "name": "Ironfell",
+          "status": "invented"
+        },
+        {
+          "name": "King's Leadside",
+          "status": "invented"
+        },
+        {
+          "name": "Blackdelve",
+          "status": "invented"
+        },
+        {
+          "name": "Redscar",
+          "status": "invented"
+        },
+        {
+          "name": "Bishop's Highscar",
+          "status": "invented"
+        },
+        {
+          "name": "Church Greydelve",
+          "status": "invented"
+        },
+        {
+          "name": "Snowcrag",
+          "status": "invented"
+        },
+        {
+          "name": "Elkgard",
+          "status": "invented"
+        },
+        {
+          "name": "Rimehorn",
+          "status": "invented"
+        },
+        {
+          "name": "Glaciercrag",
+          "status": "invented"
+        },
+        {
+          "name": "Bearheim",
+          "status": "invented"
+        },
+        {
+          "name": "Winterhelm",
+          "status": "invented"
+        }
+      ]
+    },
+    {
+      "heading": "Elven cities (from the elf city generator)",
+      "gender": "any",
+      "names": [
+        {
+          "name": "Rhaunaelis",
+          "status": "invented"
+        },
+        {
+          "name": "Lyssevarn",
+          "status": "invented"
+        },
+        {
+          "name": "Arisaleth",
+          "status": "invented"
+        },
+        {
+          "name": "Saelancë",
+          "status": "invented"
+        },
+        {
+          "name": "The Spires of Corressa",
+          "status": "invented"
+        },
+        {
+          "name": "Thuviashë",
+          "status": "invented"
+        },
+        {
+          "name": "Seviemmar",
+          "status": "invented"
+        },
+        {
+          "name": "Hirravaun",
+          "status": "invented"
+        },
+        {
+          "name": "The Grove of Evralis",
+          "status": "invented"
+        },
+        {
+          "name": "Kelvennë",
+          "status": "invented"
+        },
+        {
+          "name": "Maerossa Harbour",
+          "status": "invented"
+        },
+        {
+          "name": "Selphidrë",
+          "status": "invented"
+        },
+        {
+          "name": "The Silver Towers of Ammyrolë",
+          "status": "invented"
+        },
+        {
+          "name": "Syllorys",
+          "status": "invented"
+        },
+        {
+          "name": "The Starlit Halls of Orvorys",
+          "status": "invented"
+        }
+      ]
+    },
+    {
+      "heading": "Dwarven holds (from the dwarf city generator)",
+      "gender": "any",
+      "names": [
+        {
+          "name": "Saltdelve",
+          "status": "invented"
+        },
+        {
+          "name": "Thulgol Forge",
+          "status": "invented"
+        },
+        {
+          "name": "The Lost Halls of Torheim",
+          "status": "invented"
+        },
+        {
+          "name": "Ingothall",
+          "status": "invented"
+        },
+        {
+          "name": "The Market Halls of Gordek",
+          "status": "invented"
+        },
+        {
+          "name": "Coalheart Hold",
+          "status": "invented"
+        },
+        {
+          "name": "Fallen Bramgar",
+          "status": "invented"
+        },
+        {
+          "name": "The Anvil of Krumdur",
+          "status": "invented"
+        },
+        {
+          "name": "Drumheim Gate",
+          "status": "invented"
+        },
+        {
+          "name": "Hammerfire Hold",
+          "status": "invented"
+        },
+        {
+          "name": "Sparkhall Hold",
+          "status": "invented"
+        },
+        {
+          "name": "Ghostforge",
+          "status": "invented"
+        }
+      ]
+    },
+    {
+      "heading": "Dark, ruined and fortress towns (from the fantasy city and orc stronghold generators)",
+      "gender": "any",
+      "names": [
+        {
+          "name": "Sunkenthrone",
+          "status": "invented"
+        },
+        {
+          "name": "Ashenbarrow",
+          "status": "invented"
+        },
+        {
+          "name": "Brokencrown",
+          "status": "invented"
+        },
+        {
+          "name": "Paledeep",
+          "status": "invented"
+        },
+        {
+          "name": "Echofall",
+          "status": "invented"
+        },
+        {
+          "name": "Silentspire",
+          "status": "invented"
+        },
+        {
+          "name": "Dreadcrag",
+          "status": "invented"
+        },
+        {
+          "name": "Bloodbastion",
+          "status": "invented"
+        },
+        {
+          "name": "Ravenspike",
+          "status": "invented"
+        },
+        {
+          "name": "Bonebastion",
+          "status": "invented"
+        },
+        {
+          "name": "Cinderbastion",
+          "status": "invented"
+        },
+        {
+          "name": "Grothollow",
+          "status": "invented"
+        },
+        {
+          "name": "Bragmaw",
+          "status": "invented"
+        },
+        {
+          "name": "Dagdush Crag",
+          "status": "invented"
+        },
+        {
+          "name": "The Thousand Torches",
+          "status": "invented"
+        },
+        {
+          "name": "Mount Kruzdum",
+          "status": "invented"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Why English-style names sound real",
+      "content": "<p>Real English place names are made of a few dozen recurring parts, and readers know them without realising. A name ending in <em>-thorpe</em>, <em>-by</em> or <em>-wick</em> sounds like a village because thousands of real villages end that way. Add a second word the way real places do, such as a church (St Giles), a position (Lower, Nether, Great), a river (-on-the-Wold) or a market (Chipping, Market), and the name gains a history.</p><p>Our Naming Library page on English place-name elements explains what each part originally meant, so you can build names that describe the place: a <em>-combe</em> sits in a valley, a <em>-hithe</em> is a landing place on a river or coast.</p>"
+    },
+    {
+      "heading": "Naming a whole map",
+      "content": "<p>Places in the same region should sound related. Pick two or three endings for each region and reuse them, as real counties do: a coast full of <em>-hithe</em> and <em>-cove</em> towns, a north of <em>-gard</em> and <em>-heim</em>. Then let the odd name break the pattern to show history, like an elven ruin in human lands or a dwarven name on a hill fort.</p><p>Vary the length too. A map where every town has four syllables is hard to read; mix short names like Ashscar with longer ones like Dunbourne-on-the-Wold.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How do you name a fantasy town?",
+      "answer": "Decide what the town is known for (fishing, mining, a market, a castle) and who lives there, then build the name from a feature and a place-name ending: Gull + port, Anvil + fell. Adding a second word, as in Chipping Saltford or Wynthorpe St Margaret, makes it sound older."
+    },
+    {
+      "question": "Do fantasy town names have meanings?",
+      "answer": "Many of the English-style ones do, because they are built from real Old English place-name parts: -thorpe was an outlying farm, -combe a valley and -wick a farm or trading place. The elven and dwarven names are invented and have no meaning in a real language."
+    },
+    {
+      "question": "How do you name a medieval town?",
+      "answer": "Use English place-name patterns: a personal name or feature plus an ending such as -by, -thorpe, -ham or -ton, and perhaps a church or market word, like Market Mercerwich. Our village generator's medieval style builds names from Old English and Old Norse personal names."
+    }
+  ],
+  "generators": [
+    "fantasy_town",
+    "village",
+    "fantasy_city",
+    "elf_city",
+    "dwarf_city",
+    "orc_stronghold"
+  ],
+  "reference": [
+    "fantasy-place-names",
+    "english-place-name-elements",
+    "how-fantasy-names-work"
+  ],
+  "lists": [
+    "dnd-names-list",
+    "fantasy-names-female",
+    "fantasy-names-male"
+  ]
+}

@@ -62,7 +62,10 @@ function loadLists() {
 
 function validateLists(lists, generators, referenceSlugs) {
   const errors = [];
-  const slugs = new Set(lists.map(l => l.slug));
+  // Links may point at drafts waiting for review; they're skipped until published.
+  const draftDir = path.join(__dirname, '..', 'content', 'lists-drafts');
+  const drafts = fs.existsSync(draftDir) ? fs.readdirSync(draftDir).filter(f => f.endsWith('.json')).map(f => path.basename(f, '.json')) : [];
+  const slugs = new Set([...lists.map(l => l.slug), ...drafts]);
   for (const l of lists) {
     const at = `lists/${l.slug}.json`;
     if (!/^[a-z0-9-]+$/.test(l.slug)) errors.push(`${at}: file name must be lowercase-with-hyphens`);
