@@ -110,8 +110,10 @@ function listsFor(lists) {
 function generatorBox(lists) {
   if (!lists || !lists.length) return '';
   return `
-            <section class="section list-links">
+            <section class="section list-links hd">
+                <svg class="doodle ref-box-d wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-name-list"/></svg>
                 <h2>Name lists</h2>
+                <p>Real names to browse, with their meanings checked:</p>
                 <ul class="ref-links">
                     ${lists.map(l => `<li><a href="../names/${l.slug}.html">${esc(l.title)}</a>: ${esc(l.description)}</li>`).join('\n                    ')}
                 </ul>
@@ -282,7 +284,7 @@ function listPage(l, lists, site, refs, helpers) {
 
   return `${head({ title: l.seoTitle || `${l.title} | The Name Generators`, desc: l.description, url, schema, helpers })}
 <body>
-    ${layout.svgSprite([...gens.map(g => layout.generatorMotif(g, catOf(g))), l.motif || 'quill'])}
+    ${layout.svgSprite([...gens.map(g => layout.generatorMotif(g, catOf(g))), l.motif || 'name-list'])}
     ${layout.siteHeader('../', site.categories)}
 
     <div class="wrap layout">
@@ -291,7 +293,7 @@ function listPage(l, lists, site, refs, helpers) {
             <p class="eyebrow">${esc(section ? section.name : 'Name lists')}</p>
             <div class="titlerow">
                 <h1>${esc(l.title)}</h1>
-                ${layout.doodle(l.motif || 'quill')}
+                ${layout.doodle(l.motif || 'name-list')}
             </div>
             <div class="lede">${md(l.intro)}</div>
             <p class="byline">By <a href="../about.html">Rich</a> · ${helpers.longDate(l.updated || l.published)} · ${summary.join(' · ')}</p>
@@ -320,7 +322,7 @@ function listIndex(lists, site, helpers) {
   const groups = SECTIONS.map(s => ({ ...s, items: lists.filter(l => l.section === s.key) })).filter(s => s.items.length);
   return `${head({ title, desc, url, schema, helpers })}
 <body>
-    ${layout.svgSprite([...new Set(lists.map(l => l.motif || 'quill'))])}
+    ${layout.svgSprite([...new Set(lists.map(l => l.motif || 'name-list'))])}
     ${layout.siteHeader('../', site.categories)}
 
     <div class="wrap layout">
@@ -334,7 +336,7 @@ function listIndex(lists, site, helpers) {
                 <h2>${esc(g.name)}</h2>
                 <p>${esc(g.line)}</p>
                 <div class="genlist">
-                    ${g.items.map(l => `<a href="${l.slug}.html" class="gencard hd tap">${layout.doodle(l.motif || 'quill', 'doodle wob')}<div><b>${esc(l.title)}</b><span>${esc(l.description)}</span></div><em aria-hidden="true">→</em></a>`).join('\n                    ')}
+                    ${g.items.map(l => `<a href="${l.slug}.html" class="gencard hd tap">${layout.doodle(l.motif || 'name-list', 'doodle wob')}<div><b>${esc(l.title)}</b><span>${esc(l.description)}</span></div><em aria-hidden="true">→</em></a>`).join('\n                    ')}
                 </div>
             </section>`).join('\n            ')}
         </main>

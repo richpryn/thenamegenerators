@@ -224,7 +224,7 @@ function menuPages() {
 }
 
 // Optional header links that only appear once there is something to link to.
-const NAV = { guides: false, library: false };
+const NAV = { guides: false, library: false, names: false };
 /** Called by the build once it knows what exists (e.g. any naming guides). */
 function setNav(opts) { Object.assign(NAV, opts); }
 
@@ -259,7 +259,7 @@ function siteHeader(prefix) {
         <button class="menu-toggle hd tap" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">${MENU_ICON}Menu</button>
         <nav class="site-nav" aria-label="Main">
           <ul class="nav-links" id="nav-links">
-            <li class="nav-top"><a href="${home}">Home</a></li>
+            <li class="nav-top nav-home"><a href="${home}">Home</a></li>
             <li class="nav-top"><a href="${prefix}all-generators.html">All generators</a></li>
             <li class="nav-dropdown nav-mega">
               <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="menu-categories"><span class="nav-label">Categories</span></button>
@@ -269,6 +269,7 @@ function siteHeader(prefix) {
               </div>
             </li>
 ${NAV.guides ? `            <li class="nav-top"><a href="${prefix}guides/index.html">Guides</a></li>
+` : ''}${NAV.names ? `            <li class="nav-top"><a href="${prefix}names/index.html">Name lists</a></li>
 ` : ''}${NAV.library ? `            <li class="nav-top"><a href="${prefix}reference/index.html">Library</a></li>
 ` : ''}            <li class="nav-top"><a href="${prefix}about.html">About</a></li>
             <li class="nav-find">${searchForm(prefix)}</li>

@@ -510,6 +510,7 @@ function generateGeneratorPage(generator, category, site) {
   const motif = layout.generatorMotif(generator, category);
   const motifs = [motif];
   if (REF_FOR[generator.key]) motifs.push('library');
+  if (LIST_FOR[generator.key]) motifs.push('name-list');
   const catOf = (gen) => site.categories.find(c => c.slug === gen.category);
   const genCard = (gen, { desc = true } = {}) => {
     const m = layout.generatorMotif(gen, catOf(gen));
@@ -2079,7 +2080,7 @@ function build() {
   }
 
   const site = makeSite(content);
-  layout.setNav({ guides: site.guides().length > 0, library: REFERENCE.length > 0 });
+  layout.setNav({ guides: site.guides().length > 0, library: REFERENCE.length > 0, names: LISTS.length > 0 });
   for (const dir of [POSTS_DIR, CATEGORIES_DIR, RUNTIME_DIR]) fs.mkdirSync(dir, { recursive: true });
 
   for (const category of content.categories) {
