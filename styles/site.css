@@ -717,3 +717,28 @@ a.go{text-decoration:none}
 .ref-box > p{margin:var(--s2) 0 0;color:var(--muted)}
 .ref-box-d{position:absolute;right:var(--card-pad);top:var(--card-pad);width:52px;height:52px}
 @media (max-width:480px){.ref-box{padding-right:var(--card-pad)}.ref-box-d{position:static;float:right;width:44px;height:44px;margin:0 0 var(--s2) var(--s2)}}
+/* Name lists (names/), plain styles; the design session may restyle. */
+.nl-filters{display:flex;flex-wrap:wrap;gap:var(--s3) var(--s4);align-items:flex-end;padding:var(--s4);margin:var(--s4) 0}
+.nl-f{display:flex;flex-direction:column;gap:6px;min-width:140px}
+.nl-fl{font:700 14px/1.2 var(--head)}
+.nl-f .name-input{min-height:44px;padding:0 12px;font:500 16px var(--body);border:2px solid var(--ink);border-radius:10px}
+.nl-chips{display:flex;flex-wrap:wrap;gap:6px}
+.nl-chips .chip{--fill:#fff;min-height:40px;padding:0 12px;font:700 14px/1 var(--head)}
+.nl-chips .chip[aria-pressed="true"]{--fill:var(--hi)}
+.nl-check{justify-content:flex-end;min-width:0}
+.nl-check label{font:600 15px/1.3 var(--body);display:flex;gap:8px;align-items:center;min-height:44px}
+.nl-count{flex-basis:100%;margin:0;font-size:14px;opacity:.8}
+.nl-list{list-style:none;margin:0;padding:0;display:grid;gap:0 var(--s4)}
+@media (min-width:720px){.nl-list{grid-template-columns:1fr 1fr}}
+.nl-item{padding:10px 0;border-bottom:1px solid var(--rule)}
+.nl-top{display:flex;align-items:center;gap:8px}
+.nl-name{font:700 20px/1.2 var(--head);padding:0;background:none;border:0;cursor:copy;text-align:left;color:var(--ink)}
+.nl-say{font-size:14px;opacity:.75;font-style:italic}
+.nl-top .save{margin-left:auto}
+.nl-info,.nl-note,.nl-stats{margin:4px 0 0;font-size:15px}
+.nl-meaning{font-weight:600}
+.nl-origin{opacity:.8}
+.nl-note{opacity:.85}
+.nl-rank{font:700 13px/1 var(--head);padding:4px 8px;border-radius:999px;border:1.5px solid var(--ink);background:#fff}
+.nl-up{color:#2d7a33;font-size:13px;font-weight:600}.nl-down{color:#a3412f;font-size:13px;font-weight:600}
+.nl-group small{font-weight:400;opacity:.7}

@@ -23,6 +23,9 @@ const { generateCheckerPage } = require('./checker-page');
 const Reference = require('./reference-pages');
 const REFERENCE = Reference.loadReference();
 const REF_FOR = Reference.referenceFor(REFERENCE);
+const Lists = require('./list-pages');
+const LISTS = Lists.loadLists();
+const LIST_FOR = Lists.listsFor(LISTS);
 
 const ROOT = path.join(__dirname, '..');
 const POSTS_DIR = path.join(ROOT, 'posts');
@@ -702,7 +705,7 @@ function generateGeneratorPage(generator, category, site) {
             </section>
             <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="${generator.updated}">${longDate(generator.updated)}</time></p>
 ${examplesHTML}
-${howItWorksHtml(generator)}${Reference.generatorBox(REF_FOR[generator.key])}${guideLinksHtml(generator, site)}
+${howItWorksHtml(generator)}${Reference.generatorBox(REF_FOR[generator.key])}${guideLinksHtml(generator, site)}${Lists.generatorBox(LIST_FOR[generator.key])}
             ${layout.sectionBreak(motif)}
             <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="${escGenTitle}">
@@ -2127,6 +2130,7 @@ function build() {
   console.log(`  ✅ Created: name-tools.html and ${NAME_TOOLS.length} name tool pages`);
 
   Reference.buildReference(site, { scriptJson, ICON_LINKS, markdownBold, plainText, longDate });
+  Lists.buildLists(site, REFERENCE, { scriptJson, ICON_LINKS, markdownBold, plainText, longDate });
   generateSitemap(site);
   generateHtmlSitemap(site);
   generate404(site);
@@ -2245,6 +2249,22 @@ ${NAME_TOOLS.map(t => `  <url>
 `;
   }
 
+  if (LISTS.length) {
+    sitemap += `  <!-- Name lists -->
+  <url>
+    <loc>${baseUrl}/names/</loc>
+    <lastmod>${latest(LISTS.map(l => l.updated || l.published))}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+${LISTS.map(l => `  <url>
+    <loc>${baseUrl}/names/${l.slug}.html</loc>
+    <lastmod>${l.updated || l.published}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+`).join('')}`;
+  }
   if (REFERENCE.length) {
     sitemap += `  <!-- Naming Library -->
   <url>
@@ -2501,6 +2521,10 @@ Made by Rich: ${baseUrl}/about.html
   if (site.guides().length) {
     text += `\n## Naming guides\n\n- [All naming guides](${baseUrl}/guides/)\n` +
       site.guides().map(g => `- [${g.title}](${baseUrl}/guides/${g.slug}.html): ${plainText(g.description)}`).join('\n') + '\n';
+  }
+  if (LISTS.length) {
+    text += `\n## Name lists\n\nLists of real names with checked meanings and ONS popularity ranks for England and Wales.\n\n- [All name lists](${baseUrl}/names/)\n` +
+      LISTS.map(l => `- [${l.title}](${baseUrl}/names/${l.slug}.html): ${plainText(l.description)}`).join('\n') + '\n';
   }
   if (REFERENCE.length) {
     text += `\n## Naming Library\n\nSourced reference pages on the origins, meanings and construction of names. Each example is labelled as recorded, reconstructed, built from real parts, or invented.\n\n- [The Naming Library](${baseUrl}/reference/)\n` +
