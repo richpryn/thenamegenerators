@@ -428,6 +428,8 @@
     "gift_shop": "gift-shop",
     "sewing_business": "gift-shop",
     "etsy_shop": "gift-shop",
-    "warrior_cat": "black-cat"
+    "warrior_cat": "black-cat",
+    "dog": "dog",
+    "cat": "black-cat"
   }
 }
