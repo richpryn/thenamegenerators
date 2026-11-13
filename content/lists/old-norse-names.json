@@ -205,25 +205,27 @@
         },
         {
           "name": "Steinunn",
-          "meaning": "steinn (stone) + unnr (wave)",
+          "meaning": "steinn (stone) + unnr (wave) or unna (to love)",
           "origin": "Old Norse",
           "status": "attested",
-          "source": "behind"
+          "source": "behind",
+          "note": "Old Norse Steinunn"
         },
         {
           "name": "Ingunn",
           "meaning": "Ing, a god's name + unna (to love)",
           "origin": "Old Norse",
           "status": "attested",
-          "source": "behind"
+          "source": "behind",
+          "note": "Old Norse Ingunn"
         },
         {
           "name": "Jorunn",
-          "meaning": "jǫfurr (boar) + unna (to love)",
+          "meaning": "jǫfurr (boar, chieftain) or jór (horse) + unna (to love)",
           "origin": "Old Norse",
-          "status": "attested",
+          "status": "uncertain",
           "source": "behind",
-          "note": "Old Norse Jórunnr"
+          "note": "Old Norse Jórunn; sources disagree on the first part"
         },
         {
           "name": "Idunn",
@@ -286,35 +288,40 @@
           "meaning": "holy, blessed",
           "origin": "Old Norse",
           "status": "attested",
-          "source": "behind"
+          "source": "behind",
+          "note": "Old Norse Helga"
         },
         {
           "name": "Ragna",
           "meaning": "short form of names beginning regin (counsel)",
           "origin": "Old Norse",
           "status": "attested",
-          "source": "behind"
+          "source": "behind",
+          "note": "Old Norse Ragna"
         },
         {
           "name": "Katla",
           "meaning": "feminine of Ketill (cauldron)",
           "origin": "Old Norse",
           "status": "attested",
-          "source": "cv-ketill"
+          "source": "cv-ketill",
+          "note": "Old Norse Katla"
         },
         {
           "name": "Hrefna",
           "meaning": "feminine of Hrafn (raven)",
           "origin": "Old Norse",
           "status": "attested",
-          "source": "behind"
+          "source": "behind",
+          "note": "Old Norse Hrefna"
         },
         {
           "name": "Halla",
           "meaning": "feminine of Hallr (rock, slab)",
           "origin": "Old Norse",
           "status": "attested",
-          "source": "behind"
+          "source": "behind",
+          "note": "Old Norse Halla"
         },
         {
           "name": "Tofa",
@@ -346,7 +353,7 @@
           "origin": "Old Norse",
           "status": "uncertain",
           "source": "behind",
-          "note": "the mother of Hrólfr Kraki in legend"
+          "note": "Old Norse Yrsa; in legend the mother of Hrólfr kraki"
         },
         {
           "name": "Liv",
@@ -384,7 +391,7 @@
           "origin": "Old Norse",
           "status": "attested",
           "source": "behind",
-          "note": "Old Norse Leifr; Leif Eriksson reached North America in the early 1000s"
+          "note": "Old Norse Leifr; Leif Eriksson reached North America around 1000"
         },
         {
           "name": "Erik",
@@ -408,7 +415,7 @@
           "origin": "Old Norse",
           "status": "attested",
           "source": "behind",
-          "note": "Old Norse Áleifr"
+          "note": "Old Norse Áleifr, later Óláfr"
         },
         {
           "name": "Sigurd",
@@ -440,7 +447,7 @@
           "origin": "Old Norse",
           "status": "attested",
           "source": "behind",
-          "note": "Old Norse Þórfinnr"
+          "note": "Old Norse Þorfinnr"
         },
         {
           "name": "Thorstein",
@@ -448,7 +455,7 @@
           "origin": "Old Norse",
           "status": "attested",
           "source": "cv-nafn",
-          "note": "Old Norse Þórsteinn"
+          "note": "Old Norse Þorsteinn"
         },
         {
           "name": "Thorkel",
@@ -456,7 +463,7 @@
           "origin": "Old Norse",
           "status": "attested",
           "source": "cv-ketill",
-          "note": "Old Norse Þórketill; usually shortened to Þorkell"
+          "note": "Old Norse Þorkell, contracted from Þórketill"
         },
         {
           "name": "Thorbjorn",
@@ -464,7 +471,7 @@
           "origin": "Old Norse",
           "status": "attested",
           "source": "cv-bjorn",
-          "note": "Old Norse Þórbjǫrn"
+          "note": "Old Norse Þorbjǫrn"
         },
         {
           "name": "Thorvald",
@@ -472,15 +479,15 @@
           "origin": "Old Norse",
           "status": "attested",
           "source": "behind",
-          "note": "Old Norse Þórvaldr"
+          "note": "Old Norse Þorvaldr"
         },
         {
           "name": "Thorir",
-          "meaning": "Þórr (Thor) + vir (warrior)",
+          "meaning": "Þórr (Thor) + vér, a second part of uncertain meaning, sometimes read as \"warrior\"",
           "origin": "Old Norse",
-          "status": "attested",
+          "status": "uncertain",
           "source": "behind",
-          "note": "Old Norse Þórir"
+          "note": "Old Norse Þórir, probably from older Þórvér; the second part is not certain"
         },
         {
           "name": "Asbjorn",
@@ -583,7 +590,8 @@
           "meaning": "raven",
           "origin": "Old Norse",
           "status": "attested",
-          "source": "behind"
+          "source": "behind",
+          "note": "Old Norse Hrafn"
         },
         {
           "name": "Ketil",
@@ -607,7 +615,7 @@
           "origin": "Old Norse",
           "status": "attested",
           "source": "behind",
-          "note": "Old Norse Sveinn; borne by Sven Forkbeard, who came to rule Norway and England"
+          "note": "Old Norse Sveinn; borne by Sven Forkbeard, king of Denmark, who also ruled Norway and, briefly, England"
         },
         {
           "name": "Stein",
@@ -639,7 +647,7 @@
           "origin": "Old Norse",
           "status": "attested",
           "source": "behind",
-          "note": "Snorri Sturluson compiled the Prose Edda"
+          "note": "Old Norse Snorri; Snorri Sturluson compiled the Prose Edda"
         },
         {
           "name": "Erling",
@@ -686,14 +694,16 @@
           "meaning": "pet form of names containing bjǫrn, \"bear\"",
           "origin": "Old Norse",
           "status": "attested",
-          "source": "behind"
+          "source": "behind",
+          "note": "Old Norse Bjarni"
         },
         {
           "name": "Helgi",
           "meaning": "holy, blessed",
           "origin": "Old Norse",
           "status": "attested",
-          "source": "behind"
+          "source": "behind",
+          "note": "Old Norse Helgi"
         },
         {
           "name": "Kari",
@@ -721,17 +731,19 @@
         },
         {
           "name": "Sverrir",
-          "meaning": "wild, swinging",
+          "meaning": "swinging, whirling, perhaps \"wild\"",
           "origin": "Old Norse",
           "status": "attested",
-          "source": "behind"
+          "source": "behind",
+          "note": "Old Norse Sverrir"
         },
         {
           "name": "Styrmir",
           "meaning": "from styrma, \"to storm\"",
           "origin": "Old Norse",
           "status": "attested",
-          "source": "behind"
+          "source": "behind",
+          "note": "Old Norse Styrmir"
         }
       ]
     }
@@ -743,7 +755,7 @@
     },
     {
       "heading": "Spelling Old Norse names",
-      "content": "<p>Old Norse used letters English no longer has. <strong>Þ</strong> (thorn) and <strong>ð</strong> (eth) are both <em>th</em>, and <strong>ǫ</strong> is an open <em>o</em>, often written <em>ö</em> or <em>o</em> today. Most men's names end in <em>-r</em> in Old Norse (Leifr, Haraldr), which is usually dropped in English: Leif, Harald.</p><p>Modern Scandinavian spellings differ again: Bjǫrn is Björn in Swedish and Bjørn in Norwegian and Danish, and Þórsteinn is Torsten. For a baby, the simple English spelling is easiest. For a story set in the Viking Age, the Old Norse forms in the notes look more authentic.</p>"
+      "content": "<p>Old Norse used letters English no longer has. <strong>Þ</strong> (thorn) and <strong>ð</strong> (eth) are both <em>th</em>, and <strong>ǫ</strong> is an open <em>o</em>, often written <em>ö</em> or <em>o</em> today. Most men's names end in <em>-r</em> in Old Norse (Leifr, Haraldr), which is usually dropped in English: Leif, Harald.</p><p>Modern Scandinavian spellings differ again: Bjǫrn is Björn in Swedish and Bjørn in Norwegian and Danish, and Þorsteinn is Torsten. For a baby, the simple English spelling is easiest. For a story set in the Viking Age, the Old Norse forms in the notes look more authentic.</p>"
     },
     {
       "heading": "Names the Vikings left in England",

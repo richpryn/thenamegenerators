@@ -565,9 +565,9 @@
           "name": "Monday",
           "meaning": "Monday, from Old English 'moon day'",
           "origin": "English",
-          "status": "attested",
+          "status": "derived",
           "source": "btn-moon",
-          "note": "given to children born on a Monday, especially in parts of Africa"
+          "note": "a day-name, sometimes given to a child born on a Monday"
         },
         {
           "name": "Yue",
@@ -615,7 +615,9 @@
     "fairy",
     "witch"
   ],
-  "reference": [],
+  "reference": [
+    "naming-fictional-characters"
+  ],
   "lists": [
     "names-that-mean-star",
     "names-that-mean-night",

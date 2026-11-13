@@ -78,7 +78,7 @@
         },
         {
           "name": "Caoimhe",
-          "meaning": "dear, beloved, gentle",
+          "meaning": "gentle, dear, precious",
           "origin": "Irish",
           "status": "attested",
           "source": "btn-caoimhe",
@@ -696,12 +696,16 @@
     "elf"
   ],
   "reference": [
-    "old-english-names"
+    "old-english-names",
+    "welsh-names",
+    "what-is-onomastics"
   ],
   "lists": [
     "names-that-mean-light",
     "names-that-mean-moon",
-    "names-that-mean-strength"
+    "names-that-mean-strength",
+    "names-that-mean-sun",
+    "names-that-mean-star"
   ],
   "sources": [
     {

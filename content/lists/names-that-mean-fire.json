@@ -71,11 +71,11 @@
         },
         {
           "name": "Brenda",
-          "meaning": "fire, torch, sword (from Old Norse Brandr)",
+          "meaning": "possibly 'fire, torch' or 'sword' (Old Norse brandr)",
           "origin": "Old Norse, via English",
-          "status": "attested",
+          "status": "uncertain",
           "source": "btn-fire",
-          "note": "the Norse word brandr covered all three senses"
+          "note": "often linked to Old Norse Brandr, but the link isn't certain; some tie it to Brendan instead"
         },
         {
           "name": "Eldbjørg",
@@ -523,7 +523,9 @@
     "fairy",
     "witch"
   ],
-  "reference": [],
+  "reference": [
+    "old-norse-names"
+  ],
   "lists": [
     "names-that-mean-light",
     "names-that-mean-sun",

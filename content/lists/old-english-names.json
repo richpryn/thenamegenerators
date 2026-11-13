@@ -36,10 +36,10 @@
         },
         {
           "name": "Eadgyth",
-          "meaning": "ead (prosperity) + gyth (war)",
+          "meaning": "ead (prosperity) + gyth (battle, war)",
           "origin": "Old English",
           "status": "attested",
-          "source": "odfn",
+          "source": "behind",
           "note": "the Old English form of Edith"
         },
         {
@@ -141,7 +141,7 @@
           "meaning": "battle",
           "origin": "Old English",
           "status": "attested",
-          "source": "odfn",
+          "source": "behind",
           "note": "a one-part name, borne by the abbess of Whitby"
         },
         {
@@ -176,7 +176,7 @@
         },
         {
           "name": "Mildgyth",
-          "meaning": "milde (gentle) + gyth (battle)",
+          "meaning": "milde (gentle) + gyth (battle, war)",
           "origin": "Old English",
           "status": "attested",
           "source": "behind",
@@ -222,14 +222,14 @@
         },
         {
           "name": "Ealdgyth",
-          "meaning": "eald (old) + gyth (battle)",
+          "meaning": "eald (old) + gyth (battle, war)",
           "origin": "Old English",
           "status": "attested",
           "source": "behind"
         },
         {
           "name": "Godgyth",
-          "meaning": "god (God) + gyth (battle)",
+          "meaning": "god (God) + gyth (battle, war)",
           "origin": "Old English",
           "status": "attested",
           "source": "behind"
@@ -261,15 +261,15 @@
           "meaning": "from Æthelthryth, noble + strength",
           "origin": "English, from Old English",
           "status": "attested",
-          "source": "odfn",
+          "source": "behind",
           "note": "a medieval short form, kept alive by Saint Audrey of Ely"
         },
         {
           "name": "Edith",
-          "meaning": "from Eadgyth, prosperity + war",
+          "meaning": "from Eadgyth, prosperity + battle, war",
           "origin": "English, from Old English",
           "status": "attested",
-          "source": "odfn",
+          "source": "behind",
           "note": "survived 1066 and was revived by the Victorians"
         },
         {
@@ -277,7 +277,7 @@
           "meaning": "from æthel, \"noble\"",
           "origin": "English, from Old English",
           "status": "attested",
-          "source": "odfn",
+          "source": "behind",
           "note": "a Victorian short form of Æthel- names, not an Anglo-Saxon name itself"
         },
         {
@@ -376,7 +376,7 @@
           "meaning": "ælf (elf) + ræd (counsel)",
           "origin": "Old English",
           "status": "attested",
-          "source": "odfn",
+          "source": "behind",
           "note": "Alfred the Great, king of Wessex 871–899"
         },
         {
@@ -431,7 +431,7 @@
           "meaning": "ead (prosperity) + weard (guardian)",
           "origin": "Old English",
           "status": "attested",
-          "source": "odfn",
+          "source": "behind",
           "note": "the Old English form of Edward"
         },
         {
@@ -439,7 +439,7 @@
           "meaning": "ead (prosperity) + mund (protection)",
           "origin": "Old English",
           "status": "attested",
-          "source": "odfn",
+          "source": "behind",
           "note": "the Old English form of Edmund"
         },
         {
@@ -650,7 +650,7 @@
           "meaning": "elf + counsel",
           "origin": "English, from Old English",
           "status": "attested",
-          "source": "odfn",
+          "source": "behind",
           "note": "revived in the 1800s"
         },
         {
@@ -658,7 +658,7 @@
           "meaning": "prosperity + guardian",
           "origin": "English, from Old English",
           "status": "attested",
-          "source": "odfn",
+          "source": "behind",
           "note": "kept in use by Edward the Confessor"
         },
         {
@@ -666,7 +666,7 @@
           "meaning": "prosperity + protection",
           "origin": "English, from Old English",
           "status": "attested",
-          "source": "odfn",
+          "source": "behind",
           "note": "after the martyred king of East Anglia"
         },
         {
@@ -835,7 +835,8 @@
     "old-english-names",
     "medieval-english-names",
     "english-place-name-elements",
-    "name-prefixes-and-suffixes"
+    "name-prefixes-and-suffixes",
+    "old-norse-names"
   ],
   "lists": [
     "victorian-names",

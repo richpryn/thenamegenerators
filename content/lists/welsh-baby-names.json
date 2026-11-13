@@ -25,7 +25,7 @@
           "meaning": "a modern name linked to caru, \"to love\"",
           "origin": "Welsh",
           "status": "uncertain",
-          "source": "dfn",
+          "source": "behind",
           "note": "a variant of Carys; the link to caru is the usual explanation",
           "pronounce": "KEH-riss"
         },
@@ -110,7 +110,7 @@
           "meaning": "white, fair, blessed",
           "origin": "Welsh",
           "status": "attested",
-          "source": "dfn",
+          "source": "wikt",
           "note": "the feminine of gwyn; also short for Gwenllian and other Gwen- names",
           "pronounce": "GWEN"
         },
@@ -128,7 +128,7 @@
           "meaning": "usually explained as \"much loved\", from an- (very) and caru (to love)",
           "origin": "Welsh",
           "status": "uncertain",
-          "source": "dfn",
+          "source": "behind",
           "note": "a medieval name; the analysis is not certain",
           "pronounce": "ang-HA-rad"
         },
@@ -177,7 +177,7 @@
         },
         {
           "name": "Tegan",
-          "meaning": "darling, from a pet form of teg, \"beautiful\"",
+          "meaning": "darling, a pet form of teg, \"fair, beautiful\"",
           "origin": "Welsh",
           "status": "attested",
           "source": "behind",
@@ -436,11 +436,11 @@
       "names": [
         {
           "name": "Dylan",
-          "meaning": "from dy (\"to, towards\") and llanw (\"tide, flow\")",
+          "meaning": "from llanw, \"tide, flow\", with a prefix read either as dy-, \"to, towards\", or as an intensifier, \"great\"",
           "origin": "Welsh",
-          "status": "attested",
+          "status": "uncertain",
           "source": "behind",
-          "note": "a sea-born figure in the Mabinogi",
+          "note": "a sea-born figure in the Mabinogi; sources disagree on what the first part means",
           "pronounce": "DUH-lan"
         },
         {
@@ -448,7 +448,7 @@
           "meaning": "probably \"ardour, enthusiasm\"",
           "origin": "Welsh",
           "status": "uncertain",
-          "source": "dfn",
+          "source": "behind",
           "note": "an old Welsh royal name; the exact origin is debated",
           "pronounce": "HREES"
         },
@@ -501,7 +501,7 @@
           "meaning": "Welsh form of Ambrose, from Greek for \"immortal\"",
           "origin": "Welsh",
           "status": "attested",
-          "source": "dfn",
+          "source": "behind",
           "pronounce": "EM-riss"
         },
         {
@@ -576,7 +576,7 @@
           "meaning": "Welsh form of David, usually explained as \"beloved\"",
           "origin": "Welsh",
           "status": "attested",
-          "source": "dfn",
+          "source": "behind",
           "pronounce": "DA-vith (th as in \"the\")"
         },
         {
@@ -688,7 +688,7 @@
           "status": "uncertain",
           "source": "behind",
           "note": "a companion of Saint Illtud",
-          "pronounce": "HRUTH-yan"
+          "pronounce": "HRUD-yan"
         },
         {
           "name": "Trystan",
@@ -753,8 +753,8 @@
           "name": "Bryn",
           "meaning": "hill, mound",
           "origin": "Welsh",
-          "status": "attested",
-          "source": "dfn",
+          "status": "derived",
+          "source": "wikt",
           "note": "the ordinary Welsh word, used as a name in modern times",
           "pronounce": "BRIN"
         },

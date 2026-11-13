@@ -513,7 +513,7 @@
           "origin": "Turkish",
           "status": "attested",
           "source": "btn-strong",
-          "note": "listed as a girl's name in Turkish; used for boys too in England and Wales",
+          "note": "a Turkish girl's name; in English it is better known as a character in Tolkien",
           "pronounce": "beh-REN"
         },
         {
@@ -617,12 +617,16 @@
   ],
   "reference": [
     "old-english-names",
-    "old-norse-names"
+    "old-norse-names",
+    "roman-names",
+    "what-is-onomastics"
   ],
   "lists": [
     "names-that-mean-fire",
     "names-that-mean-love",
-    "names-that-mean-sun"
+    "names-that-mean-sun",
+    "old-norse-names",
+    "old-english-names"
   ],
   "sources": [
     {
