@@ -326,9 +326,11 @@ function listPage(l, lists, site, refs, helpers) {
             </div>
             <div class="lede">${introFirst}</div>
             <p class="byline">By <a href="../about.html">Rich</a> · ${helpers.longDate(l.updated || l.published)} · ${summary.join(' · ')}</p>
+            <div class="nl-body">
             ${filters}${jump}${statusKey}
             ${groupsHtml}
             <p class="nl-none" hidden>No names match. Try a different letter or origin.</p>
+            </div>
             <article class="section article">${introRest ? `
                 <h2>About this list</h2>
                 ${introRest}` : ''}${body}
