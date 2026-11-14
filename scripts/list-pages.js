@@ -156,14 +156,14 @@ ${helpers.scriptJson(schema, 2)}
 
 function rankHtml(r) {
   if (!r) return '';
+  const fmt = (n) => n.toLocaleString('en-GB');
   let trend = '';
-  if (r.past) {
-    if (r.past > r.rank * 1.15) trend = `<span class="nl-up" title="Up from #${r.past.toLocaleString('en-GB')} in ${r.pastYear}">↑ from #${r.past.toLocaleString('en-GB')} in ${r.pastYear}</span>`;
-    else if (r.rank > r.past * 1.15) trend = `<span class="nl-down" title="Down from #${r.past.toLocaleString('en-GB')} in ${r.pastYear}">↓ from #${r.past.toLocaleString('en-GB')} in ${r.pastYear}</span>`;
-  } else if (r.pastYear == null) {
-    trend = '<span class="nl-up">new</span>';
-  }
-  return `<span class="nl-rank" title="${r.count ? `${r.count.toLocaleString('en-GB')} ${r.gender === 'girl' ? 'girls' : 'boys'} given this name in England and Wales in ${r.year}` : ''}">#${r.rank.toLocaleString('en-GB')} in ${r.year}${r.gender && r.groupGender === 'any' ? ` (${r.gender}s)` : ''}</span> ${trend}`;
+  if (r.past && r.past > r.rank * 1.15) trend = `<span class="nl-up">↑ from #${fmt(r.past)} (${r.pastYear})</span>`;
+  else if (r.past && r.rank > r.past * 1.15) trend = `<span class="nl-down">↓ from #${fmt(r.past)} (${r.pastYear})</span>`;
+  else if (!r.past) trend = '<span class="nl-up">new entry</span>';
+  const who = r.gender && r.groupGender === 'any' ? ` ${r.gender}s` : '';
+  const tip = r.count ? `${fmt(r.count)} ${r.gender === 'girl' ? 'girls' : 'boys'} were given this name in England and Wales in ${r.year}` : '';
+  return `<b class="nl-rank" title="${tip}">#${fmt(r.rank)}</b>${who ? `<small>${who}</small>` : ''} ${trend}`;
 }
 
 function listPage(l, lists, site, refs, helpers) {
@@ -179,26 +179,45 @@ function listPage(l, lists, site, refs, helpers) {
   const genders = [...new Set((l.groups || []).map(g => g.gender).filter(Boolean))];
   const statuses = new Set();
 
+  const hasMeanings = (l.groups || []).some(g => (g.names || []).some(n => n.meaning));
+  const hasOrigins = origins.length > 0;
+  const saveBtn = (n) => `<button type="button" class="save hd tap name-save nl-save" data-name="${esc(n.name)}" data-title="${esc(l.title)}" data-slug="" aria-pressed="false" aria-label="Save ${esc(n.name)} to your shortlist"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-bookmark"/></svg></button>`;
+  const dataAttrs = (n, g, r) => `data-gender="${esc(g.gender || '')}" data-origin="${esc(n.origin || '')}" data-letter="${esc(n.name.normalize('NFD').charAt(0).toUpperCase())}" data-ranked="${r ? r.rank : ''}"`;
+
   const groupsHtml = (l.groups || []).map((g, gi) => {
-    const items = (g.names || []).map(n => {
+    const rows = (g.names || []).map(n => {
       const r = usesRanks ? onsRank(n.name, g.gender) : null;
       if (r) { ranked++; r.groupGender = g.gender; }
       if (n.status) statuses.add(n.status);
-      const [label, tip] = STATUS[n.status] || [];
-      const cite = srcIndex[n.source] ? ` <sup><a href="#src-${srcIndex[n.source]}">[${srcIndex[n.source]}]</a></sup>` : '';
-      const meaning = n.meaning ? `<span class="nl-meaning">“${esc(n.meaning)}”</span>` : '';
-      return `<li class="nl-item" data-gender="${esc(g.gender || '')}" data-origin="${esc(n.origin || '')}" data-letter="${esc(n.name.normalize('NFD').charAt(0).toUpperCase())}" data-ranked="${r ? r.rank : ''}">
-                        <div class="nl-top"><button type="button" class="name-copy nl-name" title="Copy">${esc(n.name)}</button>${n.pronounce ? ` <span class="nl-say">${esc(n.pronounce)}</span>` : ''}
-                        <button type="button" class="save hd tap name-save" data-name="${esc(n.name)}" data-title="${esc(l.title)}" data-slug="" aria-pressed="false" aria-label="Save ${esc(n.name)} to your shortlist"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-bookmark"/></svg></button></div>
-                        <p class="nl-info">${meaning}${n.origin ? ` <span class="nl-origin">${esc(n.origin)}</span>` : ''}${label ? ` <span class="ref-status ref-${n.status}" title="${esc(tip)}">${esc(label)}</span>` : ''}${cite}</p>${n.note ? `\n                        <p class="nl-note">${md(esc(n.note))}</p>` : ''}${r ? `\n                        <p class="nl-stats">${rankHtml(r)}</p>` : ''}
-                    </li>`;
+      if (!hasMeanings && !hasOrigins) {
+        return `<li class="nl-item nl-chipname" ${dataAttrs(n, g, r)}><button type="button" class="name-copy nl-name" title="Copy">${esc(n.name)}</button>${n.note ? ` <small class="nl-note">${md(esc(n.note))}</small>` : ''}${saveBtn(n)}</li>`;
+      }
+      // Only the exceptions get a label: "Checked" is the default and is said once at the top.
+      const [label, tip] = n.status && n.status !== 'attested' ? STATUS[n.status] : [];
+      const cite = srcIndex[n.source] ? `<sup><a href="#src-${srcIndex[n.source]}" title="Source ${srcIndex[n.source]}">${srcIndex[n.source]}</a></sup>` : '';
+      return `<tr class="nl-item" ${dataAttrs(n, g, r)}>
+                        <th scope="row" class="nl-c-name"><button type="button" class="name-copy nl-name" title="Copy">${esc(n.name)}</button>${n.pronounce ? `<span class="nl-say">${esc(n.pronounce)}</span>` : ''}</th>
+                        <td class="nl-c-mean">${n.meaning ? `<span class="nl-meaning">${esc(n.meaning)}</span>${cite}` : ''}${label ? ` <span class="ref-status ref-${n.status}" title="${esc(tip)}">${esc(label)}</span>` : ''}${n.note ? `<span class="nl-note">${md(esc(n.note))}</span>` : ''}</td>
+                        ${hasOrigins ? `<td class="nl-c-origin">${esc(n.origin || '')}</td>` : ''}
+                        ${usesRanks ? `<td class="nl-c-pop">${r ? rankHtml(r) : '<span class="nl-unranked" title="Not in the ONS rankings for England and Wales in 2025">–</span>'}</td>` : ''}
+                        <td class="nl-c-save">${saveBtn(n)}</td>
+                    </tr>`;
     }).join('\n                    ');
+    const head = !hasMeanings && !hasOrigins ? '' : `<thead><tr><th scope="col">Name</th><th scope="col">${hasMeanings ? 'Meaning' : 'Notes'}</th>${hasOrigins ? '<th scope="col">Origin</th>' : ''}${usesRanks ? '<th scope="col" title="Rank in England and Wales, ONS">Popularity</th>' : ''}<th scope="col"><span class="visually-hidden">Save</span></th></tr></thead>`;
+    const body = !hasMeanings && !hasOrigins
+      ? `<ul class="nl-chiplist">
+                    ${rows}
+                </ul>`
+      : `<div class="nl-table-wrap"><table class="nl-table">
+                    ${head}
+                    <tbody>
+                    ${rows}
+                    </tbody>
+                </table></div>`;
     return `
-            <section class="section nl-group" id="group-${gi + 1}" data-gender="${esc(g.gender || '')}">
+            <section class="section nl-group" id="${esc((g.gender || 'group') + '-' + (gi + 1))}" data-gender="${esc(g.gender || '')}">
                 <h2>${esc(g.heading)} <small>(${(g.names || []).length})</small></h2>${g.intro ? `\n                <p>${md(g.intro)}</p>` : ''}
-                <ul class="nl-list">
-                    ${items}
-                </ul>
+                ${body}
             </section>`;
   }).join('');
 
@@ -240,8 +259,11 @@ function listPage(l, lists, site, refs, helpers) {
                 <p class="nl-count" aria-live="polite"><span id="nl-shown">${total}</span> of ${total} names</p>
             </form>`;
 
-  const statusKey = statuses.size ? `
-                <ul class="ref-key">${[...statuses].map(s => `<li><span class="ref-status ref-${s}">${STATUS[s][0]}</span> ${esc(STATUS[s][1])}</li>`).join('')}</ul>` : '';
+  const exceptions = [...statuses].filter(st => st !== 'attested');
+  const statusKey = exceptions.length ? `
+            <p class="nl-key">${exceptions.map(st => `<span class="ref-status ref-${st}">${STATUS[st][0]}</span> ${esc(STATUS[st][1])}`).join(' ')}</p>` : '';
+  const jump = (l.groups || []).length > 1 ? `
+            <nav class="nl-jump" aria-label="Jump to"><span>Jump to:</span> ${(l.groups || []).map((g, gi) => `<a href="#${esc((g.gender || 'group') + '-' + (gi + 1))}">${esc(g.heading.replace(/ (names )?that mean .*$/i, '').replace(/^names /i, ''))} <small>(${(g.names || []).length})</small></a>`).join(' · ')}</nav>` : '';
 
   const body = (l.sections || []).map(s => `
                 <h2>${s.heading}</h2>
@@ -273,7 +295,7 @@ function listPage(l, lists, site, refs, helpers) {
                 </div>
             </section>` : '';
   const sourcesHtml = sources.length ? `
-            <section class="section ref-sources">
+            <section class="section ref-sources" id="sources">
                 <h2>Sources</h2>
                 <ol>
                     ${sources.map((s, i) => `<li id="src-${i + 1}">${s.author ? `${esc(s.author)}, ` : ''}${s.url ? `<a href="${esc(s.url)}" rel="noopener">${esc(s.title)}</a>` : `<cite>${esc(s.title)}</cite>`}${s.publisher ? `, ${esc(s.publisher)}` : ''}${s.year ? ` (${esc(s.year)})` : ''}${s.accessed ? `. Checked ${esc(helpers.longDate(s.accessed))}` : ''}.${s.note ? ` ${esc(s.note)}` : ''}</li>`).join('\n                    ')}
@@ -281,9 +303,13 @@ function listPage(l, lists, site, refs, helpers) {
                 <p class="ref-note">Spotted a mistake? <a href="../about.html">Tell us</a> and we'll check it and put it right.</p>
             </section>` : '';
 
+  const introHtml = md(l.intro || '');
+  const cut = introHtml.indexOf('</p>');
+  const introFirst = cut > -1 ? introHtml.slice(0, cut + 4) : introHtml;
+  const introRest = cut > -1 ? introHtml.slice(cut + 4).trim() : '';
   const summary = [`${total} names`];
   if (ranked) summary.push(`${ranked} with their real rank in England and Wales`);
-  if (statuses.has('attested')) summary.push('every meaning checked against the sources below');
+  if (statuses.has('attested')) summary.push('every meaning checked against the <a href="#sources">sources</a>');
 
   return `${head({ title: l.seoTitle || `${l.title} | The Name Generators`, desc: l.description, url, schema, helpers })}
 <body>
@@ -298,12 +324,14 @@ function listPage(l, lists, site, refs, helpers) {
                 <h1>${esc(l.title)}</h1>
                 ${layout.doodle(l.motif || 'name-list')}
             </div>
-            <div class="lede">${md(l.intro)}</div>
+            <div class="lede">${introFirst}</div>
             <p class="byline">By <a href="../about.html">Rich</a> · ${helpers.longDate(l.updated || l.published)} · ${summary.join(' · ')}</p>
-            ${filters}${statusKey}
+            ${filters}${jump}${statusKey}
             ${groupsHtml}
             <p class="nl-none" hidden>No names match. Try a different letter or origin.</p>
-            <article class="section article">${body}
+            <article class="section article">${introRest ? `
+                <h2>About this list</h2>
+                ${introRest}` : ''}${body}
             </article>${genHtml}${moreHtml}${faqHtml}${sourcesHtml}
         </main>
         <aside class="side" aria-label="Sidebar"></aside>

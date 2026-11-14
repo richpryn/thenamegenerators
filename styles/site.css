@@ -762,3 +762,47 @@ a.go{text-decoration:none}
 .list-links h2{margin:0;font:700 22px/1.2 var(--body)}
 .list-links > p{margin:var(--s2) 0 0;color:var(--muted)}
 @media (max-width:480px){.list-links{padding-right:var(--card-pad)}}
+/* Name lists: compact table (Nov 14 redesign). */
+.nl-jump{margin:var(--s3) 0;font:400 16px/1.6 var(--body)}
+.nl-jump span{font:700 13px/1 var(--head);letter-spacing:.06em;text-transform:uppercase;margin-right:4px}
+.nl-jump small{color:var(--muted)}
+.nl-key{font-size:14px;color:var(--muted);margin:0 0 var(--s3)}
+.nl-key .ref-status{margin-right:2px}
+.nl-table-wrap{margin-top:var(--s3)}
+.nl-table{width:100%;border-collapse:collapse;font-size:16px}
+.nl-table thead th{font:700 12px/1.2 var(--head);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:left;padding:6px 8px;border-bottom:2px solid var(--ink)}
+.nl-table td,.nl-table th[scope=row]{padding:8px;border-bottom:1px solid var(--rule);vertical-align:top;text-align:left}
+.nl-c-name{font-weight:400;white-space:nowrap}
+.nl-table .nl-name{font:700 19px/1.2 var(--body)}
+.nl-c-name .nl-say{display:block;font:400 14px/1.2 var(--hand);color:var(--pen);margin-top:2px}
+.nl-meaning{font-style:normal}
+.nl-c-mean sup{font-size:11px;margin-left:2px}
+.nl-c-mean sup a{text-decoration:none;color:var(--muted)}
+.nl-c-mean .nl-note{display:block;font-size:14px;color:var(--muted);margin-top:2px}
+.nl-c-mean .ref-status{font-size:11px;padding:3px 7px;vertical-align:1px}
+.nl-c-origin{font-size:14px;color:var(--muted)}
+.nl-c-pop{white-space:nowrap;font-size:14px}
+.nl-c-pop .nl-rank{font:800 15px/1 var(--head);font-variant-numeric:tabular-nums;padding:0;border:0;background:none}
+.nl-c-pop small{color:var(--muted)}
+.nl-c-pop .nl-up,.nl-c-pop .nl-down{display:block;font:400 14px/1.2 var(--hand);margin-top:2px}
+.nl-unranked{color:var(--muted);font-size:13px}
+.nl-c-save{width:44px;text-align:right}
+.nl-save{width:34px;height:34px}
+.nl-save svg.ic{width:12px;height:14px}
+.nl-chiplist{list-style:none;margin:var(--s3) 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:0 var(--s4)}
+.nl-chipname{display:flex;align-items:center;gap:6px;padding:6px 0;border-bottom:1px solid var(--rule)}
+.nl-chipname .nl-name{font:700 18px/1.2 var(--body)}
+.nl-chipname .nl-save{margin-left:auto}
+@media (max-width:719px){
+  .nl-table thead{display:none}
+  .nl-table,.nl-table tbody{display:block}
+  .nl-table tr{display:grid;grid-template-columns:1fr auto;grid-template-areas:"name save" "mean save" "meta save";column-gap:8px;padding:8px 0;border-bottom:1px solid var(--rule)}
+  .nl-table td,.nl-table th[scope=row]{padding:0;border:0}
+  .nl-c-name{grid-area:name;display:flex;align-items:baseline;gap:8px;white-space:normal}
+  .nl-c-name .nl-say{display:inline;margin:0}
+  .nl-c-mean{grid-area:mean}
+  .nl-c-origin{grid-area:meta;display:inline}
+  .nl-c-pop{grid-area:meta;justify-self:end;white-space:normal;text-align:right}
+  .nl-c-pop .nl-up,.nl-c-pop .nl-down{display:inline;margin-left:4px}
+  .nl-c-save{grid-area:save;width:auto;align-self:center}
+}
