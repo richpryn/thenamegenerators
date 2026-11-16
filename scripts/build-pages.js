@@ -677,7 +677,7 @@ function generateGeneratorPage(generator, category, site) {
 
     <div class="wrap layout">
         <main id="main">
-            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../categories/${category.slug}-names.html">${escapeHtml(category.name)}</a> / <span aria-current="page">${escGenTitle}</span></nav>
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / ${category.slug.startsWith('biz_') ? '<a href="../business.html">Business</a> / ' : ''}<a href="../categories/${category.slug}-names.html">${escapeHtml(category.name)}</a> / <span aria-current="page">${escGenTitle}</span></nav>
             <div class="titlerow">
                 <h1>${layout.highlightFirstWord(heroTitle)}</h1>
                 ${layout.doodle(motif)}
@@ -925,7 +925,7 @@ ${scriptJson({
 
     <div class="wrap layout">
         <main id="main">
-            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <span aria-current="page">${escCatName}</span></nav>
+            <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / ${category.slug.startsWith('biz_') ? '<a href="../business.html">Business</a> / ' : ''}<span aria-current="page">${escCatName}</span></nav>
             <div class="hub-head${hub.art ? ' has-art' : ''}">
                 <div class="hub-head-t">
                     ${hub.eyebrow}
@@ -2138,6 +2138,7 @@ function build() {
   generateRedirectPages();
   generateLlmsTxt(site);
   updateStaticPages(site);
+  cleanIndexLinks();
 
   // The menu is hand-picked, so check its links still point to real pages
   const missingMenu = layout.menuPages().filter(href => !fs.existsSync(path.join(ROOT, href)));
@@ -2387,6 +2388,31 @@ ${groups}
   const sitemapHtmlPath = path.join(ROOT, 'sitemap.html');
   fs.writeFileSync(sitemapHtmlPath, html);
   console.log(`  ✅ Created: sitemap.html`);
+}
+
+/**
+ * Internal links point at folders ("../", "reference/"), never at
+ * ".../index.html": the canonical tags name the folder address, and links to
+ * the index.html copy tell Google a second address exists. Runs last, over
+ * every page, so hand-written pages are covered too.
+ */
+function cleanIndexLinks() {
+  const SKIP = new Set(['scripts', 'content', 'data', 'lib', 'styles', 'fonts', 'images', 'workers', 'docs', 'node_modules', '.git']);
+  let files = 0, links = 0;
+  (function walk(dir) {
+    for (const f of fs.readdirSync(dir)) {
+      const p = path.join(dir, f);
+      if (fs.statSync(p).isDirectory()) { if (!SKIP.has(f)) walk(p); continue; }
+      if (!f.endsWith('.html')) continue;
+      const before = fs.readFileSync(p, 'utf8');
+      const after = before.replace(/href="((?:\/|(?:\.\.\/)+)?(?:[\w-]+\/)*)index\.html(#[^"]*)?"/g, (m, dirPart, hash) => {
+        links++;
+        return `href="${dirPart || './'}${hash || ''}"`;
+      });
+      if (after !== before) { fs.writeFileSync(p, after); files++; }
+    }
+  })(ROOT);
+  console.log(`  ✅ Cleaned ${links} index.html links in ${files} pages`);
 }
 
 /**
