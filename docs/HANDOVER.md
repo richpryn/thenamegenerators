@@ -1,0 +1,46 @@
+# Handover
+
+Each session keeps its own section. Read the whole file at the start of a session.
+
+## Generator Builder (data, engine and build; 16 Nov 2026)
+
+### Where things stand
+- About 410 generators, 33 hubs, 16 Naming Library pages (`/reference/`), 20 name lists (`/names/`), 10 guides, the Business Name Checker, Spin the Wheel and the name tools. All live and validating.
+- **Business:** 96 trade generators in six hubs (biz_food, biz_beauty, biz_trades, biz_shops, biz_services, biz_care) plus business, company, brand and cafe, all with a Check button. The checker is at `business-name-checker.html`:
+  - **live in the browser:** RDAP domain checks, and US state open-data lookups for CO/NY/OR/CT/TX
+  - **links:** the UK Companies House name check, trade mark searches and social handles
+  - **affiliate buttons:** set in `content/affiliates.json`, placeholders until Rich has tracking links
+  - **Companies House proxy:** a Cloudflare Worker in `workers/companies-house/`, waiting for Rich's API key; set `companiesHouseApi` in affiliates.json once deployed.
+- **Name lists:** ranks come from `content/data/ons-names.json`, built from the ONS 1996–2025 workbook by `scripts/data/ons-names.py`. Builder `scripts/list-pages.js`, filters `lib/lists.js`. Compact table design from 14 Nov; keep the `.nl-body` wrapper and the `.nl-item` class.
+- **Naming Library:** builder `scripts/reference-pages.js`. Every example has a status (attested / reconstructed / derived / invented / uncertain), and the validator requires sources.
+- **Generator pages** show "How it works" with nameSource, an "Understanding these names" box from the library, a Naming guide box and a Name lists box, plus 8 hub links (no longer the whole hub).
+
+### In progress (16 Nov)
+Ten approved generators are being built by agents in this session's scratchpad: gingerbread_house, quiz_team, hamster, guinea_pig, horse, ice_mage, book_club, running_club, gritter and snow_removal_business. If this session is gone before they ship, rebuild them in a fresh session from the Site Jobs ideas jobs of 9 and 16 Nov.
+
+### Backlog (approved by Rich; build one a week)
+- **Franchise and character pages:** WoW Dwarf, WoW Tauren, funny WoW names by class, FF14 Viera, Transformers-style, funny Marvel Rivals, Sims names. Write these "in the style of", with original names only.
+- **Titles:** knight title, villain title, nickname, dragon epithet, royal title, jester, hero, black metal band.
+- **Game extras:** Minecraft (skin, boss, build, potion, YouTube channel, modpack, map) and Elden Ring weapon and boss names.
+- **Possible trade pages:** junk removal, dog training, fence company.
+- **Naming Library phase 4:** business, brand and stage names.
+
+### Scheduled task
+"TNG weekly generator and refresh" (trig_01KF7NvrpuE69hqvVxvEBo5z) runs Mondays at 07:56 London time. It fires into the long Generator Builder chat (session_013n1Brs6jN7WNjnPp4aVHzc). Each run:
+- builds one backlog generator
+- adds 50+ names to 3 pages, at least 2 of them business pages, oldest "updated" first
+- researches 3–5 ideas into a `tng-ideas-<date>` Site Jobs entry
+- ships and notifies the content and design sessions
+
+To stop it re-reading this long chat, Rich could switch it to start a fresh session each time (update_trigger, create_new_session_on_fire). It's self-contained enough.
+
+### Decisions
+- Fan pages use original names only, and say they're fan-made and unofficial. Canon ban lists are built from the wikis.
+- Business names follow the rules in CLAUDE.md "Start here".
+- Name lists: ONS ranks are for England and Wales only. No typed ranks. Disputed meanings are kept and labelled.
+- Rich's style: meanings in straight single quotes in list copy.
+- Outreach (backlinks) is agreed in principle. It waits on Rich choosing an email service (Google Workspace or Zoho) and moving mail off Bluehost. Plan: a 30-site target list in a separate Outreach page, drafts in Gmail for Rich to send, and a "fastest-rising names" ONS data story for the press.
+- Monthly email signup: agreed in principle, waiting on the email service choice.
+
+### Waiting on Rich (see Site Jobs)
+Companies House API key and Worker; affiliate sign-ups; Cloudflare Web Analytics; email service and moving mail off Bluehost; the Search Console check of the name lists in late December.
