@@ -5,6 +5,7 @@
   "icon": "💇",
   "category": "biz_beauty",
   "published": "2026-11-07",
+  "updated": "2026-11-16",
   "description": "Hair salon business names in seven styles, from catchy puns and classic hairdressers to luxury, aesthetic, local and named after you.",
   "seoKeywords": "hair salon name generator, hair salon business name generator, hair salon names, hair salon name ideas, hair salon business names, hairdresser business names, hair stylist business name ideas, hair stylist name generator, salon names aesthetic, catchy hair salon names, funny hair salon names, unique hair salon names, hair salon names that are not taken",
   "isPopular": false,
@@ -245,7 +246,33 @@
         "Curl Friends",
         "The Gloss Department",
         "Strand & Deliver",
-        "Trim Time"
+        "Trim Time",
+        "Mane Squeeze",
+        "Do or Dye",
+        "Dye Hard",
+        "Hair & Grace",
+        "Bob's Your Uncle",
+        "Combing Soon",
+        "Shear Bliss",
+        "Tress Express",
+        "Hair Say",
+        "Twist & Shout",
+        "Shear Talent",
+        "Curl Crush",
+        "Mane Frame",
+        "Fringe Element",
+        "Strand Tall",
+        "Hair We Are",
+        "Comb On Over",
+        "The Glossary",
+        "Short & Sweet",
+        "Shampoo & Chat",
+        "Pixie Dust Hair",
+        "Snip Happy",
+        "Cutting Remarks",
+        "Shine On",
+        "Tangle Free",
+        "Shear Brilliance"
       ],
       "stems": [
         "Mane Street",
@@ -272,7 +299,11 @@
         "Mane Line",
         "Wave Length",
         "Tame the Mane",
-        "Hair Necessities"
+        "Hair Necessities",
+        "Mane Squeeze",
+        "Curl Crush",
+        "Shear Bliss",
+        "Tress Express"
       ],
       "trade": [
         "Hair Studio",
@@ -356,7 +387,17 @@
         "Beaumont",
         "Fairbairn",
         "Carlisle",
-        "Hawthorne"
+        "Hawthorne",
+        "Ainsworth",
+        "Bramwell",
+        "Wilmot",
+        "Rutherford",
+        "Kimber",
+        "Selby",
+        "Marchant",
+        "Cartwright",
+        "Ridley",
+        "Hollins"
       ],
       "trade": [
         "Hairdressing",
@@ -472,7 +513,15 @@
         "Fade",
         "Shampoo",
         "Scissor",
-        "Mirror"
+        "Mirror",
+        "Chignon",
+        "Crimp",
+        "Tousle",
+        "Pin Curl",
+        "Ripple",
+        "Twirl",
+        "Pompadour",
+        "Topknot"
       ]
     },
     "luxury": {
@@ -496,7 +545,15 @@
         "Maison Belle Mèche",
         "Atelier de Coiffure",
         "Salon Étoile",
-        "Mèche d'Or"
+        "Mèche d'Or",
+        "Maison Bijou",
+        "Atelier Soie",
+        "Maison Ivoire",
+        "Salon Ivoire",
+        "Atelier Étoile",
+        "Lumière Coiffure",
+        "Salon Bijou",
+        "Maison Perle"
       ],
       "adj": [
         "Velvet",
@@ -587,7 +644,15 @@
         "Cinnamon",
         "Maple",
         "Birch",
-        "Heather"
+        "Heather",
+        "Clover",
+        "Fennel",
+        "Nutmeg",
+        "Sandalwood",
+        "Wheat",
+        "Rosemary",
+        "Peony",
+        "Linden"
       ]
     },
     "local": {
@@ -611,7 +676,12 @@
         "Market",
         "Street",
         "Cross",
-        "Common"
+        "Common",
+        "Wharf",
+        "Crescent",
+        "Terrace",
+        "Walk",
+        "Close"
       ],
       "trade": [
         "Hair",
@@ -692,7 +762,12 @@
         "Blondes",
         "Highlights",
         "Fringes",
-        "Hairdressing"
+        "Hairdressing",
+        "Pixie Cuts",
+        "Silver Hair",
+        "Bobs",
+        "Bridal Updos",
+        "Wavy Hair"
       ],
       "pre": [
         "Salon {name}",

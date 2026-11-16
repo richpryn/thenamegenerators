@@ -5,6 +5,7 @@
   "icon": "🌳",
   "category": "biz_trades",
   "published": "2026-11-07",
+  "updated": "2026-11-16",
   "description": "Landscaping and gardening business names: catchy puns, classic, nature-inspired, modern and luxury garden design, plus names from your town or first name.",
   "seoKeywords": "landscaping business name generator, landscaping business names, landscaping company names, landscaping name generator, landscaping business name ideas, gardening business names, gardening business name generator, gardening business names uk, catchy landscaping business names, funny landscaping business names, unique landscaping business names, landscape design business name ideas, professional landscaping business names, landscaping names not taken",
   "isPopular": false,
@@ -256,7 +257,31 @@
         "Lay of the Land",
         "Grow With It",
         "Root & Branch",
-        "Fully Rooted"
+        "Fully Rooted",
+        "Paving Grace",
+        "Plot Twist",
+        "Branch Manager",
+        "Field Day",
+        "Grow Places",
+        "Walk in the Park",
+        "Fence & Sensibility",
+        "Trowel Blazers",
+        "Stepping Stones",
+        "Ground Rules",
+        "Edge & Order",
+        "Greener Pastures",
+        "Over the Fence",
+        "Thyme Well Spent",
+        "Shovel Ready",
+        "Mulch Better",
+        "Make Hay",
+        "Dig In",
+        "Sow Simple",
+        "Trellis & Twine",
+        "Rock & Rake",
+        "Gravel & Grace",
+        "Beyond the Hedge",
+        "Root to Branch"
       ],
       "end": [
         "Landscaping",
@@ -360,7 +385,11 @@
         "Cross",
         "Dalton",
         "Emerson",
-        "Garrett"
+        "Garrett",
+        "Pickering",
+        "Radford",
+        "Marsden",
+        "Ormond"
       ],
       "initial": [
         "A",
@@ -534,7 +563,11 @@
         "Burke",
         "Dalton",
         "Emerson",
-        "Garrett"
+        "Garrett",
+        "Pickering",
+        "Radford",
+        "Marsden",
+        "Ormond"
       ]
     },
     "nature": {
@@ -619,7 +652,16 @@
         "Clover Hill",
         "Pinecone",
         "Two Oaks",
-        "Three Birches"
+        "Three Birches",
+        "Foxglove Lane",
+        "Hedgerow Hill",
+        "Bramble Hollow",
+        "Rook Wood",
+        "Linden Lea",
+        "Wren Meadow",
+        "Larch Hollow",
+        "Otter Brook",
+        "Hazel Hollow"
       ],
       "service": [
         "Landscapes",
@@ -680,7 +722,14 @@
         "Pergola",
         "Grow",
         "Earth",
-        "Bark"
+        "Bark",
+        "Sedge",
+        "Shale",
+        "Furrow",
+        "Spinney",
+        "Copse",
+        "Basalt",
+        "Lichen"
       ],
       "end": [
         "Landscapes",
@@ -716,7 +765,10 @@
         "Westcott",
         "Worthington",
         "Ellsworth",
-        "Radcliffe"
+        "Radcliffe",
+        "Harcourt",
+        "Somerton",
+        "Thornleigh"
       ],
       "service": [
         "Garden Design",
@@ -747,7 +799,13 @@
         "Laurel Hedge",
         "Clipped Box",
         "Garden Folly",
-        "Old Stone Wall"
+        "Old Stone Wall",
+        "Stone Urn",
+        "Cloister",
+        "Loggia",
+        "Lavender Walk",
+        "Stone Terrace",
+        "Rill"
       ],
       "formalEnd": [
         "Garden Design",
@@ -799,7 +857,11 @@
         "Paving & Landscapes",
         "Tree Care",
         "Hedges & Gardens",
-        "Patios & Driveways"
+        "Patios & Driveways",
+        "Lawns & Borders",
+        "Fencing & Gardens",
+        "Garden Makeovers",
+        "Decking & Patios"
       ]
     },
     "mine": {
