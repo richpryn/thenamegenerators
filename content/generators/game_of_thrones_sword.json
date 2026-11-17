@@ -164,7 +164,6 @@
         "Northwatch",
         "Snowfall",
         "Packbond",
-        "Weirwood",
         "Frostfang",
         "Howl",
         "Wildling's Bane",
@@ -234,7 +233,9 @@
         "Dragonsong",
         "Firstflame",
         "Ashcrown",
-        "Smokesister"
+        "Smokesister",
+        "Ashwing",
+        "Emberfall"
       ],
       "stag": [
         "Stormcrown",
@@ -294,7 +295,8 @@
         "Silent",
         "Old",
         "Wild",
-        "Iron"
+        "Iron",
+        "Bleak"
       ],
       "lion": [
         "Golden",
@@ -308,7 +310,8 @@
         "Rich",
         "Hungry",
         "Lordly",
-        "Sunlit"
+        "Sunlit",
+        "Haughty"
       ],
       "kraken": [
         "Salt",
@@ -322,7 +325,8 @@
         "Wet",
         "Wild",
         "Dark",
-        "Reaving"
+        "Reaving",
+        "Briny"
       ],
       "dragon": [
         "Dark",
@@ -336,7 +340,8 @@
         "Blood",
         "Old",
         "Valyrian",
-        "Molten"
+        "Molten",
+        "Smouldering"
       ],
       "stag": [
         "Storm",
@@ -350,7 +355,8 @@
         "Forest",
         "Bold",
         "Proud",
-        "Roaring"
+        "Roaring",
+        "Windswept"
       ],
       "rose": [
         "Summer",
@@ -364,7 +370,8 @@
         "Bright",
         "Rich",
         "Gilded",
-        "Fragrant"
+        "Fragrant",
+        "Verdant"
       ]
     },
     "noun": {
@@ -380,7 +387,8 @@
         "Snow",
         "Oath",
         "Watch",
-        "Grief"
+        "Grief",
+        "Vow"
       ],
       "lion": [
         "Mane",
@@ -389,12 +397,12 @@
         "Claw",
         "Crown",
         "Due",
-        "Roar",
         "Gold",
         "Lion",
         "Ransom",
         "Sun",
-        "Glory"
+        "Glory",
+        "Hoard"
       ],
       "kraken": [
         "Tide",
@@ -408,21 +416,22 @@
         "Iron",
         "Sea",
         "Wave",
-        "Rock"
+        "Rock",
+        "Reef"
       ],
       "dragon": [
-        "Sister",
         "Ember",
         "Flame",
         "Pyre",
         "Brother",
         "Scale",
-        "Fire",
         "Smoke",
         "Wyrm",
         "Ash",
         "Blood",
-        "Queen"
+        "Queen",
+        "Cinder",
+        "Talon"
       ],
       "stag": [
         "Antler",
@@ -436,7 +445,8 @@
         "Stag",
         "Rain",
         "Wind",
-        "Wrath"
+        "Wrath",
+        "Gale"
       ],
       "rose": [
         "Rose",
@@ -450,7 +460,8 @@
         "Briar",
         "Bough",
         "Mercy",
-        "Gold"
+        "Gold",
+        "Blossom"
       ]
     },
     "ladies": [
@@ -542,5 +553,6 @@
         "answer": "Yes, they're free to use and you don't need to credit the site."
       }
     ]
-  }
+  },
+  "noEcho": true
 }
