@@ -186,7 +186,20 @@
       "Echo",
       "Arrow",
       "Bolt",
-      "Cyclone"
+      "Cyclone",
+      "Meteor",
+      "Glacier",
+      "Orbit",
+      "Granite",
+      "Flint",
+      "Zephyr",
+      "Gale",
+      "Torrent",
+      "Pulse",
+      "Jetstream",
+      "Sunburst",
+      "Monsoon",
+      "Hailstone"
     ],
     "lad_words": [
       "Wonder",
@@ -296,7 +309,16 @@
       "Apparently",
       "Supposedly",
       "Presumably",
-      "Theoretically"
+      "Theoretically",
+      "Usually",
+      "Partly",
+      "Briefly",
+      "Mostly",
+      "Reportedly",
+      "Ideally",
+      "Loosely",
+      "Somewhat",
+      "Hypothetically"
     ],
     "funny": [
       "Captain Probably",
