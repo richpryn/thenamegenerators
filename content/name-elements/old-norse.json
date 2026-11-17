@@ -1,0 +1,3323 @@
+{
+  "sources": [
+    {
+      "id": "cv-thorr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: Þórr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/thorr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-thorsteinn",
+      "title": "Wiktionary: Þorsteinn (Old Norse)",
+      "url": "https://en.wiktionary.org/wiki/%C3%9Eorsteinn#Old_Norse",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-thorbjorn",
+      "title": "Wiktionary: Þorbjǫrn (Old Norse)",
+      "url": "https://en.wiktionary.org/wiki/%C3%9Eorbj%C7%ABrn#Old_Norse",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-thurso",
+      "title": "Wiktionary: Thurso (English)",
+      "url": "https://en.wiktionary.org/wiki/Thurso#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-ulfr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: úlfr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/ulfr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-hrolfr",
+      "title": "Wiktionary: Hrólfr (Old Norse)",
+      "url": "https://en.wiktionary.org/wiki/Hr%C3%B3lfr#Old_Norse",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-bjorn",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: björn (bjǫrn)",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/bjorn",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-steinn-2",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: steinn (stone)",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/steinn-2",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-ketill",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: ketill",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/ketill",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-orn",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: örn (ǫrn)",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/orn",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-ari",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: ari",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/ari",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-ass-2",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: áss (god)",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/ass-2",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-asgeirr",
+      "title": "Wiktionary: Ásgeirr (Old Norse)",
+      "url": "https://en.wiktionary.org/wiki/%C3%81sgeirr#Old_Norse",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-astridr",
+      "title": "Wiktionary: Ástríðr (Old Norse)",
+      "url": "https://en.wiktionary.org/wiki/%C3%81str%C3%AD%C3%B0r#Old_Norse",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-hildr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: hildr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/hildr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-gunnr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: gunnr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/gunnr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-gunnarr",
+      "title": "Wiktionary: Gunnarr (Old Norse)",
+      "url": "https://en.wiktionary.org/wiki/Gunnarr#Old_Norse",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-geirr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: geirr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/geirr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-geirmundr",
+      "title": "Wiktionary: Geirmundr (Old Norse)",
+      "url": "https://en.wiktionary.org/wiki/Geirmundr#Old_Norse",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-sigr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: sigr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/sigr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-run",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: rún",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/run",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-hallr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: hallr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/hallr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-rikr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: ríkr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/rikr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-eirikr",
+      "title": "Wiktionary: Eiríkr (Old Norse)",
+      "url": "https://en.wiktionary.org/wiki/Eir%C3%ADkr#Old_Norse",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-ormr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: ormr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/ormr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-ormskirk",
+      "title": "Wiktionary: Ormskirk (English)",
+      "url": "https://en.wiktionary.org/wiki/Ormskirk#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-hrafn",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: hrafn",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/hrafn",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-haukr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: haukr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/haukr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-dis",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: dís",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/dis",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-fridr-2",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: fríðr (fair)",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/fridr-2",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-leif",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: Leifr / -leif",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/leif",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-leif-2",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: leif (inheritance)",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/leif-2",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-leifr",
+      "title": "Wiktionary: Leifr (Old Norse)",
+      "url": "https://en.wiktionary.org/wiki/Leifr#Old_Norse",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-ve-3",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: vé (sanctuary)",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/ve-3",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-brandr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: brandr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/brandr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-herr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: herr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/herr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-grimr",
+      "title": "Wiktionary: Grímr (Old Norse)",
+      "url": "https://en.wiktionary.org/wiki/Gr%C3%ADmr#Old_Norse",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-grima",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: gríma",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/grima",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-grimsby",
+      "title": "Wiktionary: Grimsby (English)",
+      "url": "https://en.wiktionary.org/wiki/Grimsby#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-regin",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: regin",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/regin",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-valdr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: valdr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/valdr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-haraldr",
+      "title": "Wiktionary: Haraldr (Old Norse)",
+      "url": "https://en.wiktionary.org/wiki/Haraldr#Old_Norse",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-sveinn",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: sveinn",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/sveinn",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-sveinn",
+      "title": "Wiktionary: Sveinn (Old Norse)",
+      "url": "https://en.wiktionary.org/wiki/Sveinn#Old_Norse",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-swansea",
+      "title": "Wiktionary: Swansea (English)",
+      "url": "https://en.wiktionary.org/wiki/Swansea#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-hjorr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: hjörr (hjǫrr)",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/hjorr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-gudrun",
+      "title": "Wiktionary: Guðrún (Old Norse)",
+      "url": "https://en.wiktionary.org/wiki/Gu%C3%B0r%C3%BAn#Old_Norse",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-yngvi",
+      "title": "Wiktionary: Yngvi (Old Norse)",
+      "url": "https://en.wiktionary.org/wiki/Yngvi#Old_Norse",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-ingi",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: Ingi",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/ingi",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-gud",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: guð",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/gud",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-gudmundr",
+      "title": "Wiktionary: Guðmundr (Old Norse)",
+      "url": "https://en.wiktionary.org/wiki/Gu%C3%B0mundr#Old_Norse",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-vordr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: vörðr (vǫrðr)",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/vordr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-vordr",
+      "title": "Wiktionary: vǫrðr (Old Norse)",
+      "url": "https://en.wiktionary.org/wiki/v%C7%ABr%C3%B0r#Old_Norse",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-hrodr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: hróðr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/hrodr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-thjod",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: þjóð",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/thjod",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-bjorg",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: björg (bjǫrg)",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/bjorg",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-svanr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: svanr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/svanr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-hjalmr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: hjálmr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/hjalmr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-byr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: býr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/byr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-baer",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: bær (bœr, býr)",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/baer",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-whitby",
+      "title": "Wiktionary: Whitby (English)",
+      "url": "https://en.wiktionary.org/wiki/Whitby#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-derby",
+      "title": "Wiktionary: Derby (English)",
+      "url": "https://en.wiktionary.org/wiki/Derby#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-kirkby",
+      "title": "Wiktionary: Kirkby (English)",
+      "url": "https://en.wiktionary.org/wiki/Kirkby#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-thorp",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: þorp",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/thorp",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-thveit",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: þveit",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/thveit",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-braithwaite",
+      "title": "Wiktionary: Braithwaite (English)",
+      "url": "https://en.wiktionary.org/wiki/Braithwaite#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-thwaite",
+      "title": "Wiktionary: Thwaite (English)",
+      "url": "https://en.wiktionary.org/wiki/Thwaite#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-topt",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: topt",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/topt",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-lowestoft",
+      "title": "Wiktionary: Lowestoft (English)",
+      "url": "https://en.wiktionary.org/wiki/Lowestoft#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-dalr-2",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: dalr (dale)",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/dalr-2",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-langdale",
+      "title": "Wiktionary: Langdale (English)",
+      "url": "https://en.wiktionary.org/wiki/Langdale#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-fjordr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: fjörðr (fjǫrðr)",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/fjordr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-wexford",
+      "title": "Wiktionary: Wexford (English)",
+      "url": "https://en.wiktionary.org/wiki/Wexford#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-waterford",
+      "title": "Wiktionary: Waterford (English)",
+      "url": "https://en.wiktionary.org/wiki/Waterford#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-vik-2",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: vík",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/vik-2",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-lerwick",
+      "title": "Wiktionary: Lerwick (English)",
+      "url": "https://en.wiktionary.org/wiki/Lerwick#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-wick",
+      "title": "Wiktionary: Wick (English)",
+      "url": "https://en.wiktionary.org/wiki/Wick#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-nes",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: nes",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/nes",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-caithness",
+      "title": "Wiktionary: Caithness (English)",
+      "url": "https://en.wiktionary.org/wiki/Caithness#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-skegness",
+      "title": "Wiktionary: Skegness (English)",
+      "url": "https://en.wiktionary.org/wiki/Skegness#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-holmr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: hólmr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/holmr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-ey",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: ey",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/ey",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-orkney",
+      "title": "Wiktionary: Orkney (English)",
+      "url": "https://en.wiktionary.org/wiki/Orkney#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-kirkja",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: kirkja",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/kirkja",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-kirkwall",
+      "title": "Wiktionary: Kirkwall (English)",
+      "url": "https://en.wiktionary.org/wiki/Kirkwall#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-gil",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: gil",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/gil",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-fjall-2",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: fjall",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/fjall-2",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-fell-2",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: fell",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/fell-2",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-scafell",
+      "title": "Wiktionary: Scafell (English)",
+      "url": "https://en.wiktionary.org/wiki/Scafell#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-bekkr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: bekkr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/bekkr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-troutbeck",
+      "title": "Wiktionary: Troutbeck (English)",
+      "url": "https://en.wiktionary.org/wiki/Troutbeck#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-haugr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: haugr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/haugr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-lundr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: lundr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/lundr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-lund",
+      "title": "Wiktionary: Lund (English)",
+      "url": "https://en.wiktionary.org/wiki/Lund#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-gardr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: garðr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/gardr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-applegarth",
+      "title": "Wiktionary: Applegarth (English)",
+      "url": "https://en.wiktionary.org/wiki/Applegarth#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-setr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: setr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/setr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-saetr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: sætr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/saetr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-skali",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: skáli",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/skali",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-scales",
+      "title": "Wiktionary: Scales (English)",
+      "url": "https://en.wiktionary.org/wiki/Scales#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-kelda",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: kelda",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/kelda",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-threlkeld",
+      "title": "Wiktionary: Threlkeld (English)",
+      "url": "https://en.wiktionary.org/wiki/Threlkeld#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-vad",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: vað",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/vad",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-wath",
+      "title": "Wiktionary: Wath (English)",
+      "url": "https://en.wiktionary.org/wiki/Wath#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-sker",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: sker",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/sker",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-myrr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: mýrr",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/myrr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-thing",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: þing",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/thing",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-dingwall",
+      "title": "Wiktionary: Dingwall (English)",
+      "url": "https://en.wiktionary.org/wiki/Dingwall#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-tynwald",
+      "title": "Wiktionary: Tynwald (English)",
+      "url": "https://en.wiktionary.org/wiki/Tynwald#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-vollr",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: völlr (vǫllr)",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/vollr",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-vagr-2",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: vágr (bay)",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/vagr-2",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-stornoway",
+      "title": "Wiktionary: Stornoway (English)",
+      "url": "https://en.wiktionary.org/wiki/Stornoway#English",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-oss-2",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: óss",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/oss-2",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "cv-bryggja",
+      "title": "Cleasby-Vigfusson Old Norse Dictionary online: bryggja",
+      "url": "https://cleasby-vigfusson-dictionary.vercel.app/word/bryggja",
+      "accessed": "2026-11-17"
+    }
+  ],
+  "elements": [
+    {
+      "id": "on-thorr",
+      "element": "Þórr",
+      "forms": [
+        "Þór-",
+        "Þor-",
+        "-þórr"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given",
+        "place"
+      ],
+      "meaning": "Thor, the thunder god",
+      "tags": [
+        "god",
+        "storm"
+      ],
+      "note": "The god-name most used in Norse names; on its own it gave only Þórir and Þóra.",
+      "status": "attested",
+      "sources": [
+        "cv-thorr",
+        "wk-thorsteinn",
+        "wk-thorbjorn",
+        "wk-thurso"
+      ],
+      "examples": [
+        {
+          "name": "Þorsteinn",
+          "parts": "Þórr + steinn",
+          "gloss": "Thor's stone",
+          "source": "wk-thorsteinn"
+        },
+        {
+          "name": "Þorbjǫrn",
+          "parts": "Þórr + bjǫrn",
+          "gloss": "Thor bear",
+          "source": "wk-thorbjorn"
+        },
+        {
+          "name": "Thurso",
+          "parts": "Þórs + á",
+          "gloss": "Thor's river",
+          "source": "wk-thurso"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking",
+        "god"
+      ]
+    },
+    {
+      "id": "on-ulfr",
+      "element": "úlfr",
+      "forms": [
+        "Úlf-",
+        "-ólfr",
+        "-úlfr"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given",
+        "place"
+      ],
+      "meaning": "wolf",
+      "tags": [
+        "wolf"
+      ],
+      "note": "As a second element it was usually said -ólfr; Cleasby-Vigfusson links Ulpha and Ulverston in north England to it.",
+      "status": "attested",
+      "sources": [
+        "cv-ulfr",
+        "wk-hrolfr"
+      ],
+      "examples": [
+        {
+          "name": "Úlfkell",
+          "parts": "úlfr + ketill",
+          "gloss": "wolf cauldron",
+          "source": "cv-ulfr"
+        },
+        {
+          "name": "Þórólfr",
+          "parts": "Þórr + úlfr",
+          "gloss": "Thor wolf",
+          "source": "cv-ulfr"
+        },
+        {
+          "name": "Hrólfr",
+          "parts": "hróðr + úlfr",
+          "gloss": "fame wolf",
+          "source": "wk-hrolfr"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-bjorn",
+      "element": "bjǫrn",
+      "forms": [
+        "Bjǫrn",
+        "Bjarn-",
+        "-bjǫrn"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "bear",
+      "tags": [
+        "bear"
+      ],
+      "note": "Bjǫrn and Bjarni were common names on their own.",
+      "status": "attested",
+      "sources": [
+        "cv-bjorn",
+        "wk-thorbjorn"
+      ],
+      "examples": [
+        {
+          "name": "Þorbjǫrn",
+          "parts": "Þórr + bjǫrn",
+          "gloss": "Thor bear",
+          "source": "wk-thorbjorn"
+        },
+        {
+          "name": "Ásbjǫrn",
+          "parts": "áss + bjǫrn",
+          "gloss": "god bear",
+          "source": "cv-bjorn"
+        },
+        {
+          "name": "Steinbjǫrn",
+          "parts": "steinn + bjǫrn",
+          "gloss": "stone bear",
+          "source": "cv-steinn-2"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-steinn",
+      "element": "steinn",
+      "forms": [
+        "Stein-",
+        "-steinn"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given",
+        "place"
+      ],
+      "meaning": "stone",
+      "tags": [
+        "stone"
+      ],
+      "status": "attested",
+      "sources": [
+        "cv-steinn-2",
+        "wk-thorsteinn"
+      ],
+      "examples": [
+        {
+          "name": "Þorsteinn",
+          "parts": "Þórr + steinn",
+          "gloss": "Thor's stone",
+          "source": "wk-thorsteinn"
+        },
+        {
+          "name": "Hallsteinn",
+          "parts": "hallr + steinn",
+          "gloss": "boulder stone",
+          "source": "cv-steinn-2"
+        },
+        {
+          "name": "Steingrímr",
+          "parts": "steinn + grímr",
+          "gloss": "stone mask",
+          "source": "cv-steinn-2"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-ketill",
+      "element": "ketill",
+      "forms": [
+        "Ketil-",
+        "-kell",
+        "-ketill"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "kettle, cauldron",
+      "tags": [
+        "home"
+      ],
+      "note": "Shortened to -kell at the end of names; Cleasby-Vigfusson links its popularity to the holy cauldron used at sacrifices.",
+      "status": "attested",
+      "sources": [
+        "cv-ketill"
+      ],
+      "examples": [
+        {
+          "name": "Ketilbjǫrn",
+          "parts": "ketill + bjǫrn",
+          "gloss": "cauldron bear",
+          "source": "cv-ketill"
+        },
+        {
+          "name": "Þorkell",
+          "parts": "Þórr + ketill",
+          "gloss": "Thor's cauldron",
+          "source": "cv-ketill"
+        },
+        {
+          "name": "Áskell",
+          "parts": "áss + ketill",
+          "gloss": "god's cauldron",
+          "source": "cv-ketill"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-orn",
+      "element": "ǫrn",
+      "forms": [
+        "Ǫrn",
+        "Ǫrn-"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "eagle",
+      "tags": [
+        "eagle"
+      ],
+      "note": "Old Norse also had the shorter word ari, 'eagle', mostly in poetry.",
+      "status": "attested",
+      "sources": [
+        "cv-orn",
+        "cv-ari",
+        "cv-ulfr"
+      ],
+      "examples": [
+        {
+          "name": "Ǫrnólfr",
+          "parts": "ǫrn + úlfr",
+          "gloss": "eagle wolf",
+          "source": "cv-ulfr"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-ass",
+      "element": "áss",
+      "forms": [
+        "Ás-",
+        "Ást-"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "god, one of the Æsir",
+      "tags": [
+        "god"
+      ],
+      "note": "Before r it became Ást-, as in Ástríðr; Cleasby-Vigfusson thinks Ás- in names may point to Thor.",
+      "status": "attested",
+      "sources": [
+        "cv-ass-2",
+        "wk-asgeirr",
+        "wk-astridr"
+      ],
+      "examples": [
+        {
+          "name": "Ásgeirr",
+          "parts": "áss + geirr",
+          "gloss": "god spear",
+          "source": "wk-asgeirr"
+        },
+        {
+          "name": "Ásbjǫrn",
+          "parts": "áss + bjǫrn",
+          "gloss": "god bear",
+          "source": "cv-bjorn"
+        },
+        {
+          "name": "Ástríðr",
+          "parts": "áss + fríðr",
+          "gloss": "god-beautiful",
+          "source": "wk-astridr"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking",
+        "god"
+      ]
+    },
+    {
+      "id": "on-hildr",
+      "element": "hildr",
+      "forms": [
+        "Hild-",
+        "-hildr",
+        "-ildr"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "battle",
+      "tags": [
+        "battle"
+      ],
+      "note": "Very common at the end of women's names; rare as a first element in Norse.",
+      "status": "attested",
+      "sources": [
+        "cv-hildr"
+      ],
+      "examples": [
+        {
+          "name": "Gunnhildr",
+          "parts": "gunnr + hildr",
+          "gloss": "battle battle",
+          "source": "cv-hildr"
+        },
+        {
+          "name": "Ragnhildr",
+          "parts": "regin + hildr",
+          "gloss": "gods' battle",
+          "source": "cv-hildr"
+        },
+        {
+          "name": "Hrafnhildr",
+          "parts": "hrafn + hildr",
+          "gloss": "raven battle",
+          "source": "cv-hildr"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-gunnr",
+      "element": "gunnr",
+      "forms": [
+        "Gunn-",
+        "-gunnr"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "war, battle",
+      "tags": [
+        "battle",
+        "war"
+      ],
+      "note": "A poetic word; older form guðr.",
+      "status": "attested",
+      "sources": [
+        "cv-gunnr",
+        "wk-gunnarr"
+      ],
+      "examples": [
+        {
+          "name": "Gunnarr",
+          "parts": "gunnr + -arr",
+          "gloss": "battle warrior",
+          "source": "wk-gunnarr"
+        },
+        {
+          "name": "Gunnhildr",
+          "parts": "gunnr + hildr",
+          "gloss": "battle battle",
+          "source": "cv-hildr"
+        },
+        {
+          "name": "Gunnsteinn",
+          "parts": "gunnr + steinn",
+          "gloss": "battle stone",
+          "source": "cv-gunnr"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-geirr",
+      "element": "geirr",
+      "forms": [
+        "Geir-",
+        "-geirr"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "spear",
+      "tags": [
+        "spear"
+      ],
+      "status": "attested",
+      "sources": [
+        "cv-geirr",
+        "wk-geirmundr",
+        "wk-asgeirr"
+      ],
+      "examples": [
+        {
+          "name": "Ásgeirr",
+          "parts": "áss + geirr",
+          "gloss": "god spear",
+          "source": "wk-asgeirr"
+        },
+        {
+          "name": "Geirmundr",
+          "parts": "geirr + mundr",
+          "gloss": "spear protection",
+          "source": "wk-geirmundr"
+        },
+        {
+          "name": "Þorgeirr",
+          "parts": "Þórr + geirr",
+          "gloss": "Thor spear",
+          "source": "cv-geirr"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-sigr",
+      "element": "sigr",
+      "forms": [
+        "Sig-",
+        "Sigr-"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "victory",
+      "tags": [
+        "victory"
+      ],
+      "note": "In names it usually appears without the r, as Sig-.",
+      "status": "attested",
+      "sources": [
+        "cv-sigr",
+        "cv-geirr",
+        "cv-run"
+      ],
+      "examples": [
+        {
+          "name": "Siggeirr",
+          "parts": "sigr + geirr",
+          "gloss": "victory spear",
+          "source": "cv-geirr"
+        },
+        {
+          "name": "Sigrún",
+          "parts": "sigr + rún",
+          "gloss": "victory secret",
+          "source": "cv-run"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-hallr",
+      "element": "hallr",
+      "forms": [
+        "Hall-",
+        "-hallr"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "large stone, boulder",
+      "tags": [
+        "stone",
+        "rock"
+      ],
+      "note": "Not the English word hall: as a name element it means a stone.",
+      "status": "attested",
+      "sources": [
+        "cv-hallr"
+      ],
+      "examples": [
+        {
+          "name": "Hallgrímr",
+          "parts": "hallr + grímr",
+          "gloss": "boulder mask",
+          "source": "cv-hallr"
+        },
+        {
+          "name": "Hallfríðr",
+          "parts": "hallr + fríðr",
+          "gloss": "beautiful stone",
+          "source": "cv-hallr"
+        },
+        {
+          "name": "Þórhallr",
+          "parts": "Þórr + hallr",
+          "gloss": "Thor's stone",
+          "source": "cv-hallr"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-rikr",
+      "element": "ríkr",
+      "forms": [
+        "-ríkr"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "mighty, powerful; ruler",
+      "tags": [
+        "power",
+        "ruler"
+      ],
+      "note": "Whether the Ei- of Eiríkr means 'ever' or 'one' is disputed.",
+      "status": "attested",
+      "sources": [
+        "cv-rikr",
+        "wk-eirikr"
+      ],
+      "examples": [
+        {
+          "name": "Eiríkr",
+          "parts": "ei- + ríkr",
+          "gloss": "ever ruler, or one ruler",
+          "source": "wk-eirikr"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-ormr",
+      "element": "ormr",
+      "forms": [
+        "Orm-",
+        "-ormr"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given",
+        "place"
+      ],
+      "meaning": "snake, serpent, dragon",
+      "tags": [
+        "dragon",
+        "animal"
+      ],
+      "note": "Ormr was also a name on its own, and the name of King Olaf Tryggvason's longship Ormr inn Langi.",
+      "status": "attested",
+      "sources": [
+        "cv-ormr",
+        "wk-ormskirk"
+      ],
+      "examples": [
+        {
+          "name": "Hallormr",
+          "parts": "hallr + ormr",
+          "gloss": "stone serpent",
+          "source": "cv-ormr"
+        },
+        {
+          "name": "Ormhildr",
+          "parts": "ormr + hildr",
+          "gloss": "serpent battle",
+          "source": "cv-hildr"
+        },
+        {
+          "name": "Ormskirk",
+          "parts": "Ormr + kirkja",
+          "gloss": "Ormr's church",
+          "source": "wk-ormskirk"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking",
+        "dragon"
+      ]
+    },
+    {
+      "id": "on-hrafn",
+      "element": "hrafn",
+      "forms": [
+        "Hrafn-",
+        "Hrafn"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "raven",
+      "tags": [
+        "raven"
+      ],
+      "status": "attested",
+      "sources": [
+        "cv-hrafn"
+      ],
+      "examples": [
+        {
+          "name": "Hrafnkell",
+          "parts": "hrafn + ketill",
+          "gloss": "raven cauldron",
+          "source": "cv-hrafn"
+        },
+        {
+          "name": "Hrafnhildr",
+          "parts": "hrafn + hildr",
+          "gloss": "raven battle",
+          "source": "cv-hildr"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-haukr",
+      "element": "haukr",
+      "forms": [
+        "Haukr",
+        "Hauka-"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given",
+        "place"
+      ],
+      "meaning": "hawk",
+      "tags": [
+        "bird"
+      ],
+      "note": "Used as a man's name on its own; Haukadalr is an Icelandic place.",
+      "status": "attested",
+      "sources": [
+        "cv-haukr"
+      ],
+      "examples": [
+        {
+          "name": "Haukadalr",
+          "parts": "hauka + dalr",
+          "gloss": "hawks' valley",
+          "source": "cv-haukr"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-dis",
+      "element": "dís",
+      "forms": [
+        "-dís"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "goddess, female guardian spirit; lady",
+      "tags": [
+        "god"
+      ],
+      "note": "Common at the end of Icelandic women's names; in poetry it can simply mean a woman.",
+      "status": "attested",
+      "sources": [
+        "cv-dis",
+        "cv-hjorr",
+        "cv-herr"
+      ],
+      "examples": [
+        {
+          "name": "Hjǫrdís",
+          "parts": "hjǫrr + dís",
+          "gloss": "sword goddess",
+          "source": "cv-hjorr"
+        },
+        {
+          "name": "Herdís",
+          "parts": "herr + dís",
+          "gloss": "army goddess",
+          "source": "cv-herr"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-fridr",
+      "element": "fríðr",
+      "forms": [
+        "-fríðr",
+        "-ríðr"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "fair, beautiful",
+      "tags": [
+        "fair"
+      ],
+      "note": "Women's name ending; not the same word as friðr, 'peace'.",
+      "status": "attested",
+      "sources": [
+        "cv-fridr-2",
+        "wk-astridr"
+      ],
+      "examples": [
+        {
+          "name": "Hallfríðr",
+          "parts": "hallr + fríðr",
+          "gloss": "beautiful stone",
+          "source": "cv-hallr"
+        },
+        {
+          "name": "Hólmfríðr",
+          "parts": "hólmr + fríðr",
+          "gloss": "beautiful islet",
+          "source": "cv-fridr-2"
+        },
+        {
+          "name": "Ástríðr",
+          "parts": "áss + fríðr",
+          "gloss": "god-beautiful",
+          "source": "wk-astridr"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-leifr",
+      "element": "leifr",
+      "forms": [
+        "Leif-",
+        "-leifr",
+        "-leif"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "heir; inheritance",
+      "tags": [
+        "family"
+      ],
+      "status": "attested",
+      "sources": [
+        "wk-leifr",
+        "cv-leif",
+        "cv-leif-2"
+      ],
+      "examples": [
+        {
+          "name": "Þorleifr",
+          "parts": "Þórr + leifr",
+          "gloss": "Thor's heir",
+          "source": "cv-leif"
+        },
+        {
+          "name": "Hjǫrleifr",
+          "parts": "hjǫrr + leifr",
+          "gloss": "sword heir",
+          "source": "cv-hjorr"
+        },
+        {
+          "name": "Ásleif",
+          "parts": "áss + leif",
+          "gloss": "god's heir",
+          "source": "cv-leif"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-ve",
+      "element": "vé",
+      "forms": [
+        "Vé-"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "sanctuary, holy place",
+      "tags": [
+        "holy"
+      ],
+      "note": "Uncertain: Cleasby-Vigfusson says Vé- in names may be vé 'home, sanctuary' or a separate word for 'holy'.",
+      "status": "uncertain",
+      "sources": [
+        "cv-ve-3",
+        "cv-steinn-2"
+      ],
+      "examples": [
+        {
+          "name": "Vésteinn",
+          "parts": "vé + steinn",
+          "gloss": "holy stone",
+          "source": "cv-steinn-2"
+        },
+        {
+          "name": "Végeirr",
+          "parts": "vé + geirr",
+          "gloss": "holy spear",
+          "source": "cv-ve-3"
+        },
+        {
+          "name": "Vékell",
+          "parts": "vé + ketill",
+          "gloss": "holy cauldron",
+          "source": "cv-ketill"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-brandr",
+      "element": "brandr",
+      "forms": [
+        "Brand-",
+        "-brandr"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "sword blade; firebrand",
+      "tags": [
+        "sword",
+        "fire"
+      ],
+      "note": "Uncertain: the word means both 'firebrand' and 'sword blade', and it is unclear which is meant in names.",
+      "status": "uncertain",
+      "sources": [
+        "cv-brandr",
+        "cv-herr",
+        "cv-hildr"
+      ],
+      "examples": [
+        {
+          "name": "Herbrandr",
+          "parts": "herr + brandr",
+          "gloss": "army sword",
+          "source": "cv-herr"
+        },
+        {
+          "name": "Hildibrandr",
+          "parts": "hildr + brandr",
+          "gloss": "battle sword",
+          "source": "cv-hildr"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-grimr",
+      "element": "grímr",
+      "forms": [
+        "Grím-",
+        "-grímr"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given",
+        "place"
+      ],
+      "meaning": "masked one (a name of Odin)",
+      "tags": [
+        "god"
+      ],
+      "note": "Uncertain: probably from gríma, 'mask, hood', and one of Odin's names, but the origin is not settled.",
+      "status": "uncertain",
+      "sources": [
+        "wk-grimr",
+        "cv-grima",
+        "wk-grimsby"
+      ],
+      "examples": [
+        {
+          "name": "Hallgrímr",
+          "parts": "hallr + grímr",
+          "gloss": "boulder mask",
+          "source": "cv-hallr"
+        },
+        {
+          "name": "Steingrímr",
+          "parts": "steinn + grímr",
+          "gloss": "stone mask",
+          "source": "cv-steinn-2"
+        },
+        {
+          "name": "Grimsby",
+          "parts": "Grímr + -s + býr",
+          "gloss": "Grímr's village",
+          "source": "wk-grimsby"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-regin",
+      "element": "regin",
+      "forms": [
+        "Ragn-",
+        "Rǫgn-",
+        "Regin-"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "the gods, divine powers",
+      "tags": [
+        "god"
+      ],
+      "note": "Usually shortened to Ragn- or Rǫgn- in names.",
+      "status": "attested",
+      "sources": [
+        "cv-regin",
+        "cv-hildr",
+        "cv-valdr"
+      ],
+      "examples": [
+        {
+          "name": "Ragnhildr",
+          "parts": "regin + hildr",
+          "gloss": "gods' battle",
+          "source": "cv-hildr"
+        },
+        {
+          "name": "Rǫgnvaldr",
+          "parts": "regin + valdr",
+          "gloss": "gods' ruler",
+          "source": "cv-valdr"
+        },
+        {
+          "name": "Ragnarr",
+          "parts": "regin + -arr",
+          "gloss": "gods' warrior",
+          "source": "cv-regin"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking",
+        "god"
+      ]
+    },
+    {
+      "id": "on-valdr",
+      "element": "valdr",
+      "forms": [
+        "-valdr",
+        "-aldr"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "ruler, wielder",
+      "tags": [
+        "ruler",
+        "power"
+      ],
+      "note": "The v drops in Haraldr and Ingjaldr.",
+      "status": "attested",
+      "sources": [
+        "cv-valdr",
+        "wk-haraldr"
+      ],
+      "examples": [
+        {
+          "name": "Þorvaldr",
+          "parts": "Þórr + valdr",
+          "gloss": "Thor ruler",
+          "source": "cv-valdr"
+        },
+        {
+          "name": "Haraldr",
+          "parts": "herr + valdr",
+          "gloss": "army ruler",
+          "source": "wk-haraldr"
+        },
+        {
+          "name": "Rǫgnvaldr",
+          "parts": "regin + valdr",
+          "gloss": "gods' ruler",
+          "source": "cv-valdr"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-herr",
+      "element": "herr",
+      "forms": [
+        "Her-",
+        "Herj-",
+        "Har-"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "army, host",
+      "tags": [
+        "army"
+      ],
+      "status": "attested",
+      "sources": [
+        "cv-herr",
+        "wk-haraldr"
+      ],
+      "examples": [
+        {
+          "name": "Herjólfr",
+          "parts": "herr + úlfr",
+          "gloss": "army wolf",
+          "source": "cv-herr"
+        },
+        {
+          "name": "Herdís",
+          "parts": "herr + dís",
+          "gloss": "army goddess",
+          "source": "cv-herr"
+        },
+        {
+          "name": "Haraldr",
+          "parts": "herr + valdr",
+          "gloss": "army ruler",
+          "source": "wk-haraldr"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-sveinn",
+      "element": "sveinn",
+      "forms": [
+        "Sveinn",
+        "Svein-"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given",
+        "place"
+      ],
+      "meaning": "boy, young man",
+      "tags": [
+        "young"
+      ],
+      "note": "Sveinn began as a byname and became a very common name; English swain comes from the same word.",
+      "status": "attested",
+      "sources": [
+        "cv-sveinn",
+        "wk-sveinn",
+        "wk-swansea"
+      ],
+      "examples": [
+        {
+          "name": "Sveinbjǫrn",
+          "parts": "sveinn + bjǫrn",
+          "gloss": "young man bear",
+          "source": "cv-sveinn"
+        },
+        {
+          "name": "Swansea",
+          "parts": "Sveins + ey",
+          "gloss": "Sveinn's island",
+          "source": "wk-swansea"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-hjorr",
+      "element": "hjǫrr",
+      "forms": [
+        "Hjǫr-"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "sword",
+      "tags": [
+        "sword"
+      ],
+      "status": "attested",
+      "sources": [
+        "cv-hjorr"
+      ],
+      "examples": [
+        {
+          "name": "Hjǫrleifr",
+          "parts": "hjǫrr + leifr",
+          "gloss": "sword heir",
+          "source": "cv-hjorr"
+        },
+        {
+          "name": "Hjǫrdís",
+          "parts": "hjǫrr + dís",
+          "gloss": "sword goddess",
+          "source": "cv-hjorr"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-run",
+      "element": "rún",
+      "forms": [
+        "Rún-",
+        "-rún"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "secret; rune",
+      "tags": [
+        "magic",
+        "counsel"
+      ],
+      "note": "Mostly at the end of women's names.",
+      "status": "attested",
+      "sources": [
+        "cv-run",
+        "wk-gudrun"
+      ],
+      "examples": [
+        {
+          "name": "Sigrún",
+          "parts": "sigr + rún",
+          "gloss": "victory secret",
+          "source": "cv-run"
+        },
+        {
+          "name": "Rúnólfr",
+          "parts": "rún + úlfr",
+          "gloss": "rune wolf",
+          "source": "cv-run"
+        },
+        {
+          "name": "Guðrún",
+          "parts": "guð or gunnr + rún",
+          "gloss": "god's secret, or battle secret",
+          "source": "wk-gudrun"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-yngvi",
+      "element": "Yngvi / Ingi",
+      "forms": [
+        "Ingi-",
+        "Ing-",
+        "Yngv-"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "Yngvi, a name of the god Freyr",
+      "tags": [
+        "god"
+      ],
+      "note": "Cleasby-Vigfusson notes Ingi- names were especially popular among the early Swedes.",
+      "status": "attested",
+      "sources": [
+        "wk-yngvi",
+        "cv-ingi"
+      ],
+      "examples": [
+        {
+          "name": "Ingibjǫrg",
+          "parts": "Ingi + bjǫrg",
+          "gloss": "Ingi's help",
+          "source": "cv-bjorg"
+        },
+        {
+          "name": "Ingimundr",
+          "parts": "Ingi + mundr",
+          "gloss": "Ingi's protection",
+          "source": "cv-ingi"
+        },
+        {
+          "name": "Ingólfr",
+          "parts": "Ingi + úlfr",
+          "gloss": "Ingi's wolf",
+          "source": "cv-ingi"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking",
+        "god"
+      ]
+    },
+    {
+      "id": "on-gud",
+      "element": "guð",
+      "forms": [
+        "Guð-"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "god",
+      "tags": [
+        "god"
+      ],
+      "note": "In some names Guð- may come instead from guðr, 'battle' (Wiktionary on Guðrún).",
+      "status": "attested",
+      "sources": [
+        "cv-gud",
+        "wk-gudmundr",
+        "wk-gudrun"
+      ],
+      "examples": [
+        {
+          "name": "Guðmundr",
+          "parts": "guð + mundr",
+          "gloss": "god protection",
+          "source": "wk-gudmundr"
+        },
+        {
+          "name": "Guðrún",
+          "parts": "guð + rún",
+          "gloss": "god's secret",
+          "source": "wk-gudrun"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-mundr",
+      "element": "mundr",
+      "forms": [
+        "-mundr"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "protection",
+      "tags": [
+        "protection"
+      ],
+      "status": "attested",
+      "sources": [
+        "wk-gudmundr",
+        "wk-geirmundr"
+      ],
+      "examples": [
+        {
+          "name": "Guðmundr",
+          "parts": "guð + mundr",
+          "gloss": "god protection",
+          "source": "wk-gudmundr"
+        },
+        {
+          "name": "Geirmundr",
+          "parts": "geirr + mundr",
+          "gloss": "spear protection",
+          "source": "wk-geirmundr"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-vordr",
+      "element": "vǫrðr",
+      "forms": [
+        "-varðr",
+        "-vǫrðr"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "guard, warden",
+      "tags": [
+        "guardian"
+      ],
+      "note": "In names it usually appears as -varðr.",
+      "status": "attested",
+      "sources": [
+        "cv-vordr",
+        "wk-vordr",
+        "cv-hallr",
+        "cv-herr"
+      ],
+      "examples": [
+        {
+          "name": "Hallvarðr",
+          "parts": "hallr + vǫrðr",
+          "gloss": "stone guardian",
+          "source": "cv-hallr"
+        },
+        {
+          "name": "Hervarðr",
+          "parts": "herr + vǫrðr",
+          "gloss": "army guardian",
+          "source": "cv-herr"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-hrodr",
+      "element": "hróðr",
+      "forms": [
+        "Hróð-",
+        "Hró-",
+        "Hrol-"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "fame, praise",
+      "tags": [
+        "famous",
+        "glory"
+      ],
+      "note": "Often worn down in names: Hrólfr is the Norse match of Rudolph.",
+      "status": "attested",
+      "sources": [
+        "cv-hrodr",
+        "wk-hrolfr"
+      ],
+      "examples": [
+        {
+          "name": "Hrólfr",
+          "parts": "hróðr + úlfr",
+          "gloss": "fame wolf",
+          "source": "wk-hrolfr"
+        },
+        {
+          "name": "Hróðgeirr",
+          "parts": "hróðr + geirr",
+          "gloss": "fame spear",
+          "source": "cv-hrodr"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-thjod",
+      "element": "þjóð",
+      "forms": [
+        "Þjóð-"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "people, nation",
+      "tags": [
+        "people"
+      ],
+      "status": "attested",
+      "sources": [
+        "cv-thjod"
+      ],
+      "examples": [
+        {
+          "name": "Þjóðólfr",
+          "parts": "þjóð + úlfr",
+          "gloss": "people's wolf",
+          "source": "cv-thjod"
+        },
+        {
+          "name": "Þjóðhildr",
+          "parts": "þjóð + hildr",
+          "gloss": "people's battle",
+          "source": "cv-thjod"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-bjorg",
+      "element": "bjǫrg",
+      "forms": [
+        "-bjǫrg"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "help, rescue",
+      "tags": [
+        "protection"
+      ],
+      "note": "A women's name ending; it became -borg in Swedish and Danish, as in Ingeborg.",
+      "status": "attested",
+      "sources": [
+        "cv-bjorg"
+      ],
+      "examples": [
+        {
+          "name": "Ingibjǫrg",
+          "parts": "Ingi + bjǫrg",
+          "gloss": "Ingi's help",
+          "source": "cv-bjorg"
+        },
+        {
+          "name": "Þorbjǫrg",
+          "parts": "Þórr + bjǫrg",
+          "gloss": "Thor's help",
+          "source": "cv-bjorg"
+        },
+        {
+          "name": "Guðbjǫrg",
+          "parts": "guð + bjǫrg",
+          "gloss": "god's help",
+          "source": "cv-bjorg"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-svanr",
+      "element": "svanr",
+      "forms": [
+        "Svan-",
+        "Svanr"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "swan",
+      "tags": [
+        "bird"
+      ],
+      "note": "Svanr was also a man's name on its own.",
+      "status": "attested",
+      "sources": [
+        "cv-svanr",
+        "cv-hildr"
+      ],
+      "examples": [
+        {
+          "name": "Svanhildr",
+          "parts": "svanr + hildr",
+          "gloss": "swan battle",
+          "source": "cv-hildr"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-hjalmr",
+      "element": "hjálmr",
+      "forms": [
+        "Hjálm-",
+        "-hjálmr"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "given"
+      ],
+      "meaning": "helmet",
+      "tags": [
+        "helmet"
+      ],
+      "note": "Not a frequent element, says Cleasby-Vigfusson.",
+      "status": "attested",
+      "sources": [
+        "cv-hjalmr"
+      ],
+      "examples": [
+        {
+          "name": "Hjálmarr",
+          "parts": "hjálmr + -arr",
+          "gloss": "helmet warrior",
+          "source": "cv-hjalmr"
+        },
+        {
+          "name": "Hjálmgeirr",
+          "parts": "hjálmr + geirr",
+          "gloss": "helmet spear",
+          "source": "cv-hjalmr"
+        }
+      ],
+      "page": "old-norse-names",
+      "generators": [
+        "viking"
+      ]
+    },
+    {
+      "id": "on-byr",
+      "element": "býr",
+      "forms": [
+        "-by",
+        "-bý",
+        "-bø"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "farm, settlement, village",
+      "tags": [
+        "farm",
+        "settlement"
+      ],
+      "note": "Also spelt bœr; the -by names of northern and eastern England mark Norse and Danish settlement.",
+      "status": "attested",
+      "sources": [
+        "cv-baer",
+        "cv-byr",
+        "wk-grimsby",
+        "wk-whitby",
+        "wk-derby"
+      ],
+      "examples": [
+        {
+          "name": "Grimsby",
+          "parts": "Grímr + -s + býr",
+          "gloss": "Grímr's village",
+          "source": "wk-grimsby"
+        },
+        {
+          "name": "Whitby",
+          "parts": "hvítr + býr",
+          "gloss": "white village",
+          "source": "wk-whitby"
+        },
+        {
+          "name": "Derby",
+          "parts": "dýr + býr",
+          "gloss": "animal village",
+          "source": "wk-derby"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "viking"
+      ]
+    },
+    {
+      "id": "on-thorp",
+      "element": "þorp",
+      "forms": [
+        "-thorp",
+        "-thorpe",
+        "-trup"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "hamlet, small village",
+      "tags": [
+        "settlement"
+      ],
+      "note": "Very common in Danish names (-trup, -rup); in England it gave -thorp and -thorpe.",
+      "status": "attested",
+      "sources": [
+        "cv-thorp"
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "viking"
+      ]
+    },
+    {
+      "id": "on-thveit",
+      "element": "þveit",
+      "forms": [
+        "-thwaite",
+        "Thwaite"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place",
+        "surname"
+      ],
+      "meaning": "parcel of land, paddock, clearing",
+      "tags": [
+        "clearing",
+        "field"
+      ],
+      "note": "Cleasby-Vigfusson notes it in northern England (Ormathwaite, Langthwaite) but never in Icelandic place-names.",
+      "status": "attested",
+      "sources": [
+        "cv-thveit",
+        "wk-braithwaite",
+        "wk-thwaite"
+      ],
+      "examples": [
+        {
+          "name": "Braithwaite",
+          "parts": "breiðr + þveit",
+          "gloss": "broad clearing",
+          "source": "wk-braithwaite"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "viking"
+      ]
+    },
+    {
+      "id": "on-topt",
+      "element": "topt",
+      "forms": [
+        "-toft",
+        "Toft"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "house site, homestead plot",
+      "tags": [
+        "home",
+        "farm"
+      ],
+      "note": "Spelt toft as well as topt in old Norse writing.",
+      "status": "attested",
+      "sources": [
+        "cv-topt",
+        "wk-lowestoft"
+      ],
+      "examples": [
+        {
+          "name": "Lowestoft",
+          "parts": "Hloðvér + toft",
+          "gloss": "Hloðvér's homestead",
+          "source": "wk-lowestoft"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "viking"
+      ]
+    },
+    {
+      "id": "on-dalr",
+      "element": "dalr",
+      "forms": [
+        "-dale",
+        "-dal",
+        "-dalr"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "valley, dale",
+      "tags": [
+        "valley"
+      ],
+      "note": "Cleasby-Vigfusson compares Langdale, Borrowdale and Wensleydale to Icelandic dale names.",
+      "status": "attested",
+      "sources": [
+        "cv-dalr-2",
+        "wk-langdale",
+        "cv-haukr"
+      ],
+      "examples": [
+        {
+          "name": "Langdale",
+          "parts": "lang + dalr",
+          "gloss": "long valley",
+          "source": "wk-langdale"
+        },
+        {
+          "name": "Haukadalr",
+          "parts": "hauka + dalr",
+          "gloss": "hawks' valley",
+          "source": "cv-haukr"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "mountain",
+        "viking"
+      ]
+    },
+    {
+      "id": "on-fjordr",
+      "element": "fjǫrðr",
+      "forms": [
+        "-firth",
+        "-ford",
+        "-fjǫrðr"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "firth, fjord, long sea inlet",
+      "tags": [
+        "bay",
+        "sea"
+      ],
+      "note": "Became firth in Scotland and -ford in Irish names; English ford is related but not the same word.",
+      "status": "attested",
+      "sources": [
+        "cv-fjordr",
+        "wk-wexford",
+        "wk-waterford"
+      ],
+      "examples": [
+        {
+          "name": "Wexford",
+          "parts": "veisa + fjǫrðr",
+          "gloss": "inlet of the mudflats",
+          "source": "wk-wexford"
+        },
+        {
+          "name": "Waterford",
+          "parts": "Veðra + fjǫrðr",
+          "gloss": "wether fjord",
+          "source": "wk-waterford"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "viking",
+        "island"
+      ]
+    },
+    {
+      "id": "on-vik",
+      "element": "vík",
+      "forms": [
+        "-wick",
+        "-vík"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "small bay, creek, inlet",
+      "tags": [
+        "bay"
+      ],
+      "note": "Not every British -wick is Norse: inland ones come from Latin vicus through Old English.",
+      "status": "attested",
+      "sources": [
+        "cv-vik-2",
+        "wk-lerwick",
+        "wk-wick"
+      ],
+      "examples": [
+        {
+          "name": "Lerwick",
+          "parts": "leir + vík",
+          "gloss": "clay bay",
+          "source": "wk-lerwick"
+        },
+        {
+          "name": "Wick",
+          "parts": "vík",
+          "gloss": "bay",
+          "source": "wk-wick"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "viking",
+        "village"
+      ]
+    },
+    {
+      "id": "on-nes",
+      "element": "nes",
+      "forms": [
+        "-ness",
+        "-nes"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "headland, ness",
+      "tags": [
+        "headland"
+      ],
+      "status": "attested",
+      "sources": [
+        "cv-nes",
+        "wk-caithness",
+        "wk-skegness"
+      ],
+      "examples": [
+        {
+          "name": "Caithness",
+          "parts": "Cat + nes",
+          "gloss": "headland of the Cat people",
+          "source": "wk-caithness"
+        },
+        {
+          "name": "Skegness",
+          "parts": "Skeggi or skegg + nes",
+          "gloss": "Skeggi's headland, or beard headland",
+          "source": "wk-skegness"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "viking",
+        "island"
+      ]
+    },
+    {
+      "id": "on-holmr",
+      "element": "hólmr",
+      "forms": [
+        "-holm",
+        "-holme",
+        "Holm"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "islet; meadow by water",
+      "tags": [
+        "island",
+        "meadow"
+      ],
+      "note": "In Iceland it was also used of waterside meadows cut off by ditches.",
+      "status": "attested",
+      "sources": [
+        "cv-holmr"
+      ],
+      "examples": [],
+      "page": "english-place-name-elements",
+      "generators": [
+        "island",
+        "viking"
+      ]
+    },
+    {
+      "id": "on-ey",
+      "element": "ey",
+      "forms": [
+        "-ey",
+        "-ay",
+        "-a"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "island",
+      "tags": [
+        "island"
+      ],
+      "note": "The Norse often called the Northern and Western Isles simply Eyjar, 'the Isles'.",
+      "status": "attested",
+      "sources": [
+        "cv-ey",
+        "wk-orkney",
+        "wk-swansea"
+      ],
+      "examples": [
+        {
+          "name": "Orkney",
+          "parts": "ǫrkn + ey",
+          "gloss": "seal islands",
+          "source": "wk-orkney"
+        },
+        {
+          "name": "Swansea",
+          "parts": "Sveins + ey",
+          "gloss": "Sveinn's island",
+          "source": "wk-swansea"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "island",
+        "viking"
+      ]
+    },
+    {
+      "id": "on-kirkja",
+      "element": "kirkja",
+      "forms": [
+        "Kirk-",
+        "-kirk"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "church",
+      "tags": [
+        "church"
+      ],
+      "status": "attested",
+      "sources": [
+        "cv-kirkja",
+        "wk-kirkby",
+        "wk-ormskirk",
+        "wk-kirkwall"
+      ],
+      "examples": [
+        {
+          "name": "Kirkby",
+          "parts": "kirkja + býr",
+          "gloss": "village with a church",
+          "source": "wk-kirkby"
+        },
+        {
+          "name": "Ormskirk",
+          "parts": "Ormr + kirkja",
+          "gloss": "Ormr's church",
+          "source": "wk-ormskirk"
+        },
+        {
+          "name": "Kirkwall",
+          "parts": "kirkja + vágr",
+          "gloss": "church bay",
+          "source": "wk-kirkwall"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "viking"
+      ]
+    },
+    {
+      "id": "on-gil",
+      "element": "gil",
+      "forms": [
+        "-gill",
+        "-ghyll",
+        "Gill"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "ravine, narrow glen with a stream",
+      "tags": [
+        "valley",
+        "river"
+      ],
+      "note": "Survives as gill or ghyll in place-names of northern England and Scotland.",
+      "status": "attested",
+      "sources": [
+        "cv-gil"
+      ],
+      "examples": [],
+      "page": "english-place-name-elements",
+      "generators": [
+        "river",
+        "mountain"
+      ]
+    },
+    {
+      "id": "on-fjall",
+      "element": "fjall / fell",
+      "forms": [
+        "-fell",
+        "Fell"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "fell, mountain, hill",
+      "tags": [
+        "mountain",
+        "hill"
+      ],
+      "note": "In Iceland fell was a single hill and fjall a mountain; northern English fell comes from the Norse.",
+      "status": "attested",
+      "sources": [
+        "cv-fjall-2",
+        "cv-fell-2",
+        "wk-scafell"
+      ],
+      "examples": [
+        {
+          "name": "Scafell",
+          "parts": "skalli + fjall",
+          "gloss": "bald peak",
+          "source": "wk-scafell"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "mountain",
+        "viking"
+      ]
+    },
+    {
+      "id": "on-bekkr",
+      "element": "bekkr",
+      "forms": [
+        "-beck",
+        "Beck"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "brook, stream",
+      "tags": [
+        "river",
+        "water"
+      ],
+      "note": "Rare in Iceland, where lækr was the usual word; common in northern England as beck.",
+      "status": "attested",
+      "sources": [
+        "cv-bekkr",
+        "wk-troutbeck"
+      ],
+      "examples": [
+        {
+          "name": "Troutbeck",
+          "parts": "truht + bekkr",
+          "gloss": "trout stream",
+          "source": "wk-troutbeck"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "river",
+        "village"
+      ]
+    },
+    {
+      "id": "on-haugr",
+      "element": "haugr",
+      "forms": [
+        "How",
+        "-how"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "mound, hill; burial mound",
+      "tags": [
+        "hill"
+      ],
+      "note": "Northern English how comes from it; Norse farms often had a mound from which the owner could view his land.",
+      "status": "attested",
+      "sources": [
+        "cv-haugr"
+      ],
+      "examples": [],
+      "page": "english-place-name-elements",
+      "generators": [
+        "mountain",
+        "village"
+      ]
+    },
+    {
+      "id": "on-lundr",
+      "element": "lundr",
+      "forms": [
+        "Lund",
+        "-lund"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place",
+        "surname"
+      ],
+      "meaning": "grove",
+      "tags": [
+        "wood",
+        "tree"
+      ],
+      "note": "Cleasby-Vigfusson links some Icelandic groves to worship and says Lund in northern England marks Norse settlement.",
+      "status": "attested",
+      "sources": [
+        "cv-lundr",
+        "wk-lund"
+      ],
+      "examples": [
+        {
+          "name": "Lund",
+          "parts": "lundr",
+          "gloss": "grove",
+          "source": "wk-lund"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "forest",
+        "village"
+      ]
+    },
+    {
+      "id": "on-gardr",
+      "element": "garðr",
+      "forms": [
+        "-garth",
+        "Garth"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "enclosure, yard; farmstead",
+      "tags": [
+        "enclosure",
+        "farm"
+      ],
+      "note": "The same root as English yard and garden.",
+      "status": "attested",
+      "sources": [
+        "cv-gardr",
+        "wk-applegarth"
+      ],
+      "examples": [
+        {
+          "name": "Applegarth",
+          "parts": "apaldr + garðr",
+          "gloss": "apple-tree enclosure",
+          "source": "wk-applegarth"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "viking"
+      ]
+    },
+    {
+      "id": "on-saetr",
+      "element": "sætr",
+      "forms": [
+        "-sætr",
+        "-setr"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "mountain pasture, summer dairy farm",
+      "tags": [
+        "meadow",
+        "farm"
+      ],
+      "note": "Norwegian sæter; also spelt setr.",
+      "status": "attested",
+      "sources": [
+        "cv-setr",
+        "cv-saetr"
+      ],
+      "examples": [],
+      "page": "english-place-name-elements",
+      "generators": [
+        "mountain",
+        "village"
+      ]
+    },
+    {
+      "id": "on-skali",
+      "element": "skáli",
+      "forms": [
+        "Scale",
+        "-scale",
+        "Scales"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place",
+        "surname"
+      ],
+      "meaning": "hut, shed; hall",
+      "tags": [
+        "home"
+      ],
+      "note": "First a hut put up for temporary use, like a shieling; later also a hall.",
+      "status": "attested",
+      "sources": [
+        "cv-skali",
+        "wk-scales"
+      ],
+      "examples": [
+        {
+          "name": "Scales",
+          "parts": "skáli",
+          "gloss": "huts, sheds",
+          "source": "wk-scales"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "viking"
+      ]
+    },
+    {
+      "id": "on-kelda",
+      "element": "kelda",
+      "forms": [
+        "Keld",
+        "-keld"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "spring, well",
+      "tags": [
+        "spring"
+      ],
+      "note": "Survives as keld, 'a spring', in northern English.",
+      "status": "attested",
+      "sources": [
+        "cv-kelda",
+        "wk-threlkeld"
+      ],
+      "examples": [
+        {
+          "name": "Threlkeld",
+          "parts": "þræll + kelda",
+          "gloss": "thrall's spring",
+          "source": "wk-threlkeld"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "river"
+      ]
+    },
+    {
+      "id": "on-vad",
+      "element": "vað",
+      "forms": [
+        "Wath",
+        "-wath"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "ford, wading place",
+      "tags": [
+        "ford"
+      ],
+      "status": "attested",
+      "sources": [
+        "cv-vad",
+        "wk-wath"
+      ],
+      "examples": [
+        {
+          "name": "Wath",
+          "parts": "vað",
+          "gloss": "ford",
+          "source": "wk-wath"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "river"
+      ]
+    },
+    {
+      "id": "on-sker",
+      "element": "sker",
+      "forms": [
+        "Skerry",
+        "Sker-"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "skerry, rock in the sea",
+      "tags": [
+        "rock",
+        "sea"
+      ],
+      "note": "English skerry comes from it.",
+      "status": "attested",
+      "sources": [
+        "cv-sker"
+      ],
+      "examples": [],
+      "page": "english-place-name-elements",
+      "generators": [
+        "island",
+        "viking"
+      ]
+    },
+    {
+      "id": "on-myrr",
+      "element": "mýrr",
+      "forms": [
+        "Mýr-",
+        "-mýrr"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "moor, bog, swamp",
+      "tags": [
+        "marsh"
+      ],
+      "note": "Related to English moor and mire; common in Icelandic place-names such as Mýrar.",
+      "status": "attested",
+      "sources": [
+        "cv-myrr"
+      ],
+      "examples": [],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village"
+      ]
+    },
+    {
+      "id": "on-thing",
+      "element": "þing",
+      "forms": [
+        "Ting-",
+        "Ding-",
+        "Tyn-"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "assembly, parliament",
+      "tags": [
+        "people",
+        "counsel"
+      ],
+      "note": "Tynwald is still the name of the Isle of Man's parliament; Dingwall's origin is called probable.",
+      "status": "attested",
+      "sources": [
+        "cv-thing",
+        "wk-dingwall",
+        "wk-tynwald"
+      ],
+      "examples": [
+        {
+          "name": "Tingwall",
+          "parts": "þing + vǫllr",
+          "gloss": "assembly field",
+          "source": "cv-thing"
+        },
+        {
+          "name": "Dingwall",
+          "parts": "þing + vǫllr",
+          "gloss": "assembly field",
+          "source": "wk-dingwall"
+        },
+        {
+          "name": "Tynwald",
+          "parts": "þing + vǫllr",
+          "gloss": "assembly field",
+          "source": "wk-tynwald"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "kingdom",
+        "viking"
+      ]
+    },
+    {
+      "id": "on-vollr",
+      "element": "vǫllr",
+      "forms": [
+        "-wall",
+        "-wald",
+        "-vellir"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "field, plain",
+      "tags": [
+        "field"
+      ],
+      "status": "attested",
+      "sources": [
+        "cv-vollr",
+        "cv-thing",
+        "wk-tynwald"
+      ],
+      "examples": [
+        {
+          "name": "Tingwall",
+          "parts": "þing + vǫllr",
+          "gloss": "assembly field",
+          "source": "cv-thing"
+        },
+        {
+          "name": "Tynwald",
+          "parts": "þing + vǫllr",
+          "gloss": "assembly field",
+          "source": "wk-tynwald"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "viking"
+      ]
+    },
+    {
+      "id": "on-vagr",
+      "element": "vágr",
+      "forms": [
+        "-wall",
+        "-way",
+        "-vágr"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "creek, bay",
+      "tags": [
+        "bay"
+      ],
+      "note": "Kirkwall's -wall is a later reshaping of -vágr.",
+      "status": "attested",
+      "sources": [
+        "cv-vagr-2",
+        "wk-kirkwall",
+        "wk-stornoway"
+      ],
+      "examples": [
+        {
+          "name": "Kirkwall",
+          "parts": "kirkja + vágr",
+          "gloss": "church bay",
+          "source": "wk-kirkwall"
+        },
+        {
+          "name": "Stornoway",
+          "parts": "stjórn + vágr",
+          "gloss": "rudder bay",
+          "source": "wk-stornoway"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "viking",
+        "island"
+      ]
+    },
+    {
+      "id": "on-oss",
+      "element": "óss",
+      "forms": [
+        "Ós-",
+        "-óss"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "river mouth, outlet",
+      "tags": [
+        "mouth",
+        "river"
+      ],
+      "note": "Niðaróss is the old name of Trondheim in Norway.",
+      "status": "attested",
+      "sources": [
+        "cv-oss-2"
+      ],
+      "examples": [
+        {
+          "name": "Niðaróss",
+          "parts": "Niðar + óss",
+          "gloss": "mouth of the Nid",
+          "source": "cv-oss-2"
+        }
+      ],
+      "generators": [
+        "river",
+        "viking"
+      ]
+    },
+    {
+      "id": "on-bryggja",
+      "element": "bryggja",
+      "forms": [
+        "-bryggja"
+      ],
+      "language": "Old Norse",
+      "use": [
+        "place"
+      ],
+      "meaning": "pier, landing stage; bridge",
+      "tags": [
+        "harbour",
+        "bridge"
+      ],
+      "note": "Norse sources called Stamford Bridge Stanfurðubryggja; Scots brigg is related.",
+      "status": "attested",
+      "sources": [
+        "cv-bryggja"
+      ],
+      "examples": [],
+      "generators": [
+        "viking",
+        "village"
+      ]
+    }
+  ]
+}

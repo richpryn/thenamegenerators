@@ -870,3 +870,5 @@ a.go{text-decoration:none}
   .el-c-lang span{display:inline}
   .el-c-lang span::before{content:" · "}
 }
+.el-sources summary{cursor:pointer;font:700 16px/1.3 var(--head);min-height:44px;display:flex;align-items:center}
+.el-sources ol{font-size:14px;line-height:1.45}

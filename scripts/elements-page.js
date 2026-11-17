@@ -158,7 +158,7 @@ function page(data, site, records, helpers, { published, updated }) {
   const row = (e) => {
     const forms = (e.forms || []).filter(f => f.replace(/-/g, '').toLowerCase() !== e.element.replace(/-/g, '').toLowerCase());
     const examples = (e.examples || []).slice(0, 3).map(x =>
-      `<li><b>${escapeHtml(x.name)}</b>${x.parts ? ` <span class="el-parts">${escapeHtml(x.parts)}</span>` : ''}${x.gloss ? ` <span class="el-gloss">'${escapeHtml(x.gloss)}'</span>` : ''}${x.source ? sup([x.source]) : ''}</li>`).join('');
+      `<li><b>${escapeHtml(x.name)}</b>${x.parts ? ` <span class="el-parts">${escapeHtml(x.parts)}</span>` : ''}${x.gloss ? ` <span class="el-gloss">'${escapeHtml(x.gloss)}'</span>` : ''}${x.source ? `<sup>${sup([x.source])}</sup>` : ''}</li>`).join('');
     const links = [
       e.page && refBySlug[e.page] ? `<a href="${e.page}.html">${escapeHtml(refBySlug[e.page].title)}</a>` : '',
       ...(e.generators || []).filter(k => genByKey[k]).slice(0, 2).map(k => `<a href="../posts/${genByKey[k].slug}.html">${escapeHtml(genByKey[k].title)}</a>`),
@@ -193,9 +193,12 @@ function page(data, site, records, helpers, { published, updated }) {
   const sourcesHtml = `
             <section class="section ref-sources">
                 <h2>Sources</h2>
+                <p>Every element above is checked against at least one of these ${data.sources.length} dictionary entries and scholarly pages. The numbers in the table link to them.</p>
+                <details class="el-sources"><summary>Show all ${data.sources.length} sources</summary>
                 <ol>
                     ${data.sources.map((s, i) => `<li id="src-${i + 1}">${s.author ? `${escapeHtml(s.author)}, ` : ''}${s.url ? `<a href="${escapeHtml(s.url)}" rel="noopener">${escapeHtml(s.title)}</a>` : `<cite>${escapeHtml(s.title)}</cite>`}${s.publisher ? `, ${escapeHtml(s.publisher)}` : ''}${s.year ? ` (${escapeHtml(s.year)})` : ''}${s.accessed ? `. Checked ${escapeHtml(helpers.longDate(s.accessed))}` : ''}.</li>`).join('\n                    ')}
                 </ol>
+                </details>
                 <p class="ref-note">Spotted a mistake? <a href="../about.html">Tell us</a> and we'll check it and put it right.</p>
             </section>`;
 
