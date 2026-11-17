@@ -826,3 +826,47 @@ a.go{text-decoration:none}
   .nl-body > .nl-filters .nl-check label{gap:8px}
   .nl-body .nl-group{scroll-margin-top:90px}
 }
+/* ---------- Homepage: Naming Library band (17 Nov) ---------- */
+.lib-cards{display:grid;grid-template-columns:1fr;gap:var(--grid-gap)}
+@media (min-width:640px){.lib-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1100px){.lib-cards{grid-template-columns:repeat(4,minmax(0,1fr))}.lib-cards .trycard{flex-direction:column;align-items:flex-start}.lib-cards .trycard em{align-self:flex-end;margin-top:auto}}
+.lib-cards .trycard:first-child{--fill:#fff6d6}
+.lib-stats{margin:var(--s4) 0 0;font:400 17px/1.3 var(--hand);color:var(--pen)}
+.ref-finder{--fill:#fff6d6;margin:var(--s5) 0 0}
+/* ---------- Name Element Finder (reference/name-elements.html) ---------- */
+.el-filters .el-f-q{flex:2 1 220px}
+.el-filters .el-f-chips{flex:1 1 100%}
+.el-filters .nl-chips .chip{min-height:36px;padding:0 12px;font-size:14px}
+.el-table{min-width:0}
+.el-table th[scope=row]{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--rule);font:400 16px/1.4 var(--body);letter-spacing:0;text-transform:none;color:var(--ink)}
+.el-c-el b{display:block;font:700 19px/1.25 var(--body)}
+.el-forms{display:block;font:400 14px/1.3 var(--hand);color:var(--pen);margin-top:2px}
+.el-meaning{font-weight:600}
+.el-c-mean sup{font-size:11px;margin-left:2px}
+.el-c-mean sup a,.el-c-ex sup a{text-decoration:none;color:var(--muted)}
+.el-note{display:block;font-size:14px;line-height:1.4;color:var(--muted);margin-top:3px}
+.el-links{display:block;font-size:14px;margin-top:3px}
+.el-c-ex ul{list-style:none;margin:0;padding:0}
+.el-c-ex li{margin:0 0 3px;font-size:15px;line-height:1.35}
+.el-c-ex b{font:700 16px/1.3 var(--body)}
+.el-parts{color:var(--muted);font-size:13px}
+.el-gloss{font-style:italic}
+.el-c-lang{font-size:14px;white-space:nowrap}
+.el-c-lang span{display:block;color:var(--muted);font-size:13px;white-space:normal}
+.el-row{scroll-margin-top:90px}
+.el-row:target{background:#fff6d6}
+@media (max-width:719px){
+  .el-wrap{overflow:visible}
+  .el-table thead{display:none}
+  .el-table,.el-table tbody{display:block}
+  .el-table tr{display:block;padding:10px 12px;border-bottom:1px solid var(--rule)}
+  .el-table tr:last-child{border-bottom:0}
+  .el-table td,.el-table th[scope=row]{display:block;padding:0;border:0}
+  .el-c-el b{display:inline;font-size:18px}
+  .el-forms{display:inline;margin-left:6px}
+  .el-c-mean{margin-top:2px}
+  .el-c-ex ul{margin-top:4px}
+  .el-c-lang{margin-top:4px;white-space:normal}
+  .el-c-lang span{display:inline}
+  .el-c-lang span::before{content:" · "}
+}

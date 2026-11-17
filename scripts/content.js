@@ -221,6 +221,9 @@ function validate({ categories, generators, homepage = { popular: [] }, sisterLi
   // The Naming Library (content/reference/*.json)
   const Reference = require('./reference-pages');
   errors.push(...Reference.validateReference(Reference.loadReference(), generators));
+  // Name Element Finder (content/name-elements/*.json)
+  const Elements = require('./elements-page');
+  errors.push(...Elements.validateElements(Elements.loadElements(), generators, new Set(Reference.loadReference().map(r => r.slug))));
   // Name lists (content/lists/*.json)
   const Lists = require('./list-pages');
   errors.push(...Lists.validateLists(Lists.loadLists(), generators, new Set(Reference.loadReference().map(r => r.slug))));

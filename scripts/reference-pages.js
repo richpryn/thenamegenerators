@@ -78,15 +78,17 @@ function referenceFor(records) {
 }
 
 /** The "Understanding these names" box on a generator page. */
-function generatorBox(records, prefix = '../') {
-  if (!records || !records.length) return '';
+function generatorBox(records, prefix = '../', finder = false) {
+  if ((!records || !records.length) && !finder) return '';
+  records = records || [];
   return `
             <section class="section ref-box hd">
                 <svg class="doodle ref-box-d wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#m-library"/></svg>
                 <h2>Understanding these names</h2>
                 <p>Where names like these come from, from our Naming Library:</p>
                 <ul class="ref-links">
-                    ${records.map(r => `<li><a href="${prefix}reference/${r.slug}.html">${escapeHtml(r.title)}</a>: ${escapeHtml(r.description)}</li>`).join('\n                    ')}
+                    ${records.map(r => `<li><a href="${prefix}reference/${r.slug}.html">${escapeHtml(r.title)}</a>: ${escapeHtml(r.description)}</li>`).join('\n                    ')}${finder ? `
+                    <li><a href="${prefix}reference/name-elements.html">Name Element Finder</a>: look up what the word parts in these names mean, with sources.</li>` : ''}
                 </ul>
             </section>`;
 }
@@ -242,7 +244,7 @@ function referencePage(r, records, site, helpers) {
 </html>`;
 }
 
-function referenceIndex(records, site, helpers) {
+function referenceIndex(records, site, helpers, elementCount = 0) {
   const url = `${BASE}/reference/`;
   const title = 'The Naming Library: Where Names Come From and How They Work | The Name Generators';
   const desc = 'Researched, sourced guides to the origins, meanings and construction of names: surnames, patronymics, Old Norse and Old English names, fantasy naming and more.';
@@ -251,7 +253,7 @@ function referenceIndex(records, site, helpers) {
   const groups = SECTIONS.map(s => ({ ...s, items: records.filter(r => r.section === s.key) })).filter(s => s.items.length);
   return `${head({ title, desc, url, schema, helpers })}
 <body>
-    ${layout.svgSprite(['library', ...records.map(r => r.motif || 'library')])}
+    ${layout.svgSprite(['library', 'signpost', ...records.map(r => r.motif || 'library')])}
     ${layout.siteHeader('../', site.categories)}
 
     <div class="wrap layout">
@@ -262,7 +264,8 @@ function referenceIndex(records, site, helpers) {
                 ${layout.doodle('library')}
             </div>
             <p class="lede">The origins, meanings and construction of names. Every page cites its sources, and every example says whether the name is historically recorded, reconstructed by scholars, built by us from real word parts, or simply invented.</p>
-            ${groups.map(g => `<section class="section">
+            ${elementCount ? `<a class="trycard hd tap ref-finder" href="name-elements.html">${layout.doodle('signpost', 'doodle try-d')}<span class="try-t"><b>Name Element Finder</b><span>Search ${elementCount} sourced word parts by meaning, such as wolf, river or king, across Old English, Old Norse, Welsh, Gaelic, Latin, Greek and more.</span></span><em aria-hidden="true">→</em></a>` : ''}
+            ${groups.map(g => `<section class="section" id="${g.key}">
                 <h2>${escapeHtml(g.name)}</h2>
                 <p>${escapeHtml(g.line)}</p>
                 <div class="genlist">
@@ -284,16 +287,16 @@ function referenceIndex(records, site, helpers) {
 }
 
 /** Writes reference/*.html; returns the records for the sitemap and llms.txt. */
-function buildReference(site, helpers) {
+function buildReference(site, helpers, elementCount = 0) {
   const records = loadReference();
   const dir = path.join(__dirname, '..', 'reference');
   if (!records.length) return records;
   fs.mkdirSync(dir, { recursive: true });
   for (const r of records) fs.writeFileSync(path.join(dir, `${r.slug}.html`), layout.stampAssets(referencePage(r, records, site, helpers)));
   for (const f of fs.readdirSync(dir)) {
-    if (f !== 'index.html' && !records.some(r => `${r.slug}.html` === f)) fs.unlinkSync(path.join(dir, f));
+    if (f !== 'index.html' && f !== 'name-elements.html' && !records.some(r => `${r.slug}.html` === f)) fs.unlinkSync(path.join(dir, f));
   }
-  fs.writeFileSync(path.join(dir, 'index.html'), layout.stampAssets(referenceIndex(records, site, helpers)));
+  fs.writeFileSync(path.join(dir, 'index.html'), layout.stampAssets(referenceIndex(records, site, helpers, elementCount)));
   console.log(`  ✅ Created: reference/index.html and ${records.length} Naming Library pages`);
   return records;
 }

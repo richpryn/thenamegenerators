@@ -23,6 +23,9 @@ const { generateCheckerPage } = require('./checker-page');
 const Reference = require('./reference-pages');
 const REFERENCE = Reference.loadReference();
 const REF_FOR = Reference.referenceFor(REFERENCE);
+const Elements = require('./elements-page');
+const ELEMENTS = Elements.loadElements();
+const ELEMENT_GENS = Elements.generatorKeys(ELEMENTS);
 const Lists = require('./list-pages');
 const LISTS = Lists.loadLists();
 const LIST_FOR = Lists.listsFor(LISTS);
@@ -706,7 +709,7 @@ function generateGeneratorPage(generator, category, site) {
             </section>
             <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="${generator.updated}">${longDate(generator.updated)}</time></p>
 ${examplesHTML}
-${howItWorksHtml(generator)}${Reference.generatorBox(REF_FOR[generator.key])}${guideLinksHtml(generator, site)}${Lists.generatorBox(LIST_FOR[generator.key])}
+${howItWorksHtml(generator)}${Reference.generatorBox(REF_FOR[generator.key], '../', ELEMENT_GENS.has(generator.key))}${guideLinksHtml(generator, site)}${Lists.generatorBox(LIST_FOR[generator.key])}
             ${layout.sectionBreak(motif)}
             <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="${escGenTitle}">
@@ -1946,6 +1949,35 @@ function fillMarkers(file, sections) {
 }
 
 /**
+ * Homepage "Every name has a story" band: the Naming Library and the Name
+ * Element Finder, so the research side of the site is seen, not just linked.
+ */
+const LIBRARY_HOME_MOTIFS = ['signpost', 'crown', 'quill', 'library'];
+function libraryHomeHtml() {
+  if (!REFERENCE.length) return '';
+  const examples = REFERENCE.reduce((n, r) => n + (r.examples || []).length, 0);
+  const sectionCount = (key) => REFERENCE.filter(r => r.section === key).length;
+  const n = ELEMENTS.elements.length;
+  const langs = new Set(ELEMENTS.elements.map(e => e.language)).size;
+  const cards = [
+    n ? { href: `reference/${Elements.SLUG}.html`, motif: 'signpost', title: 'Name Element Finder', line: `Search ${n} word parts by meaning, such as wolf, river or king, in ${langs} languages.` } : null,
+    { href: 'reference/#languages', motif: 'crown', title: 'Naming traditions', line: `Old English, Old Norse, Welsh and Roman names: ${sectionCount('languages')} guides to how each culture named people.` },
+    { href: 'reference/#construction', motif: 'quill', title: 'How names are built', line: 'Prefixes, suffixes, patronymics and place-name endings, with real examples.' },
+    { href: 'reference/#fantasy', motif: 'library', title: 'Fantasy and fiction', line: 'How invented names are made to sound right, from Tolkien\'s languages to dragon names.' },
+  ].filter(Boolean);
+  return `
+            <section class="section home-lib" aria-labelledby="lib-title">
+                <div class="sec-head"><h2 id="lib-title" class="uh2">Every name has a story</h2><a class="sec-link" href="reference/index.html">Explore the Naming Library →</a></div>
+                <p class="sec-sub">Where names come from, what they mean and how to build ones that feel real. Every page cites its sources, and every example says whether a name is recorded, reconstructed or invented.</p>
+                <div class="lib-cards">
+                    ${cards.map(c => `<a class="trycard hd tap" href="${c.href}">${layout.doodle(c.motif, 'doodle try-d')}<span class="try-t"><b>${escapeHtml(c.title)}</b><span>${escapeHtml(c.line)}</span></span><em aria-hidden="true">→</em></a>`).join('\n                    ')}
+                </div>
+                <p class="lib-stats">${REFERENCE.length} sourced guides · ${examples} labelled examples${n ? ` · ${n} name elements` : ''}</p>
+            </section>
+`;
+}
+
+/**
  * The homepage body (mockup 1): hero with the castle art and a search box,
  * popular searches, the eight category tiles, popular generators, a
  * "Surprise me" button and the newest generators.
@@ -1992,6 +2024,7 @@ function homeHtml(site) {
                 </div>
             </section>
 
+${libraryHomeHtml()}
             <div class="duo">
                 <section class="box hd" aria-labelledby="surprise-title">
                     <h2 id="surprise-title" class="uh2">Explore something unexpected</h2>
@@ -2036,7 +2069,7 @@ function updateStaticPages(site) {
   const footer = layout.siteFooter('');
 
   fillMarkers('index.html', {
-    sprite: layout.svgSprite(['d20', ...site.guides().slice(0, 3).map(g => g.motif || 'quill')]),
+    sprite: layout.svgSprite(['d20', ...LIBRARY_HOME_MOTIFS, ...site.guides().slice(0, 3).map(g => g.motif || 'quill')]),
     header,
     home: homeHtml(site),
     footer,
@@ -2130,7 +2163,8 @@ function build() {
   console.log(`  ✅ Created: guides/index.html and ${site.guides().length} guide pages`);
   console.log(`  ✅ Created: name-tools.html and ${NAME_TOOLS.length} name tool pages`);
 
-  Reference.buildReference(site, { scriptJson, ICON_LINKS, markdownBold, plainText, longDate });
+  Reference.buildReference(site, { scriptJson, ICON_LINKS, markdownBold, plainText, longDate }, ELEMENTS.elements.length);
+  Elements.buildElements(site, REFERENCE, { scriptJson, ICON_LINKS, markdownBold, plainText, longDate });
   Lists.buildLists(site, REFERENCE, { scriptJson, ICON_LINKS, markdownBold, plainText, longDate });
   generateSitemap(site);
   generateHtmlSitemap(site);
@@ -2275,7 +2309,13 @@ ${LISTS.map(l => `  <url>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-${REFERENCE.map(r => `  <url>
+${ELEMENTS.elements.length ? `  <url>
+    <loc>${baseUrl}/reference/${Elements.SLUG}.html</loc>
+    <lastmod>${Elements.dates().updated}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+` : ''}${REFERENCE.map(r => `  <url>
     <loc>${baseUrl}/reference/${r.slug}.html</loc>
     <lastmod>${r.updated || r.published}</lastmod>
     <changefreq>monthly</changefreq>
@@ -2555,6 +2595,7 @@ Made by Rich: ${baseUrl}/about.html
   }
   if (REFERENCE.length) {
     text += `\n## Naming Library\n\nSourced reference pages on the origins, meanings and construction of names. Each example is labelled as recorded, reconstructed, built from real parts, or invented.\n\n- [The Naming Library](${baseUrl}/reference/)\n` +
+      (ELEMENTS.elements.length ? `- [Name Element Finder](${baseUrl}/reference/${Elements.SLUG}.html): search ${ELEMENTS.elements.length} sourced name elements (word parts such as Old English wulf 'wolf') by meaning, language and kind of name\n` : '') +
       REFERENCE.map(r => `- [${r.title}](${baseUrl}/reference/${r.slug}.html): ${plainText(r.description)}`).join('\n') + '\n';
   }
   text += `\n## Optional\n\n- [All generators](${baseUrl}/all-generators.html)\n- [Site map](${baseUrl}/sitemap.html)\n`;
