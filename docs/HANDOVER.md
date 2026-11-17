@@ -13,6 +13,8 @@ Each session keeps its own section. Read the whole file at the start of a sessio
   - **Companies House proxy:** a Cloudflare Worker in `workers/companies-house/`, waiting for Rich's API key; set `companiesHouseApi` in affiliates.json once deployed.
 - **Name lists:** ranks come from `content/data/ons-names.json`, built from the ONS 1996–2025 workbook by `scripts/data/ons-names.py`. Builder `scripts/list-pages.js`, filters `lib/lists.js`. Compact table design from 14 Nov; keep the `.nl-body` wrapper and the `.nl-item` class.
 - **Naming Library:** builder `scripts/reference-pages.js`. Every example has a status (attested / reconstructed / derived / invented / uncertain), and the validator requires sources.
+- **Name Element Finder** (17 Nov): `reference/name-elements.html`, 292 sourced word parts (Old English, Old Norse, Welsh, Scottish Gaelic, Irish, Latin, Greek, Old High German, Frankish). Data in `content/name-elements/` (README there), builder `scripts/elements-page.js`, filters `lib/elements.js`. Generator pages whose keys appear in the data link to it from "Understanding these names". `?q=wolf` pre-fills the search.
+- **Homepage** has an "Every name has a story" Library band (17 Nov), built by `libraryHomeHtml()` in build-pages.js.
 - **Generator pages** show "How it works" with nameSource, an "Understanding these names" box from the library, a Naming guide box and a Name lists box, plus 8 hub links (no longer the whole hub).
 
 ### In progress (16 Nov)
