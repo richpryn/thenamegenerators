@@ -1,0 +1,3138 @@
+{
+ "sources": [
+  {
+   "id": "logainm-gloss",
+   "title": "Placenames Database of Ireland (logainm.ie): Glossary of common words in Irish placenames",
+   "url": "https://www.logainm.ie/en/glossary",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "snsbi-wales",
+   "title": "SNSBI: Introducing the place-names of Wales",
+   "url": "https://www.snsbi.org.uk/exploring-names/place-names-of-wales/",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "snsbi-scotland",
+   "title": "SNSBI: Introducing the place-names of Scotland (Carole Hough)",
+   "url": "https://www.snsbi.org.uk/exploring-names/place-names-of-scotland/",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-ap",
+   "title": "Wiktionary: ap (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/ap#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-ab",
+   "title": "Wiktionary: ab (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/ab#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-powell-cap",
+   "title": "Wiktionary: Powell (English)",
+   "url": "https://en.wiktionary.org/wiki/Powell#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-bowen-cap",
+   "title": "Wiktionary: Bowen (English)",
+   "url": "https://en.wiktionary.org/wiki/Bowen#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-merch",
+   "title": "Wiktionary: merch (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/merch#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-ferch",
+   "title": "Wiktionary: ferch (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/ferch#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-gwyn",
+   "title": "Wiktionary: gwyn (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/gwyn#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-gwen-cap",
+   "title": "Wiktionary: Gwen (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/Gwen#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-gwyn-cap",
+   "title": "Wiktionary: Gwyn (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/Gwyn#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-du",
+   "title": "Wiktionary: du (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/du#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-coch",
+   "title": "Wiktionary: coch (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/coch#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-gough-cap",
+   "title": "Wiktionary: Gough (English)",
+   "url": "https://en.wiktionary.org/wiki/Gough#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-llwyd",
+   "title": "Wiktionary: llwyd (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/llwyd#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-lloyd-cap",
+   "title": "Wiktionary: Lloyd (English)",
+   "url": "https://en.wiktionary.org/wiki/Lloyd#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-bach",
+   "title": "Wiktionary: bach (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/bach#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-vaughan-cap",
+   "title": "Wiktionary: Vaughan (English)",
+   "url": "https://en.wiktionary.org/wiki/Vaughan#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-mawr",
+   "title": "Wiktionary: mawr (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/mawr#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-hen",
+   "title": "Wiktionary: hen (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/hen#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-bran",
+   "title": "Wiktionary: brân (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/br%C3%A2n#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-arth",
+   "title": "Wiktionary: arth (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/arth#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-blaidd",
+   "title": "Wiktionary: blaidd (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/blaidd#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-llew",
+   "title": "Wiktionary: llew (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/llew#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-aber",
+   "title": "Wiktionary: aber (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/aber#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-llan",
+   "title": "Wiktionary: llan (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/llan#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-eglwys",
+   "title": "Wiktionary: eglwys (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/eglwys#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-betws",
+   "title": "Wiktionary: betws (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/betws#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-tref",
+   "title": "Wiktionary: tref (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/tref#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-caer",
+   "title": "Wiktionary: caer (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/caer#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-dinas",
+   "title": "Wiktionary: dinas (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/dinas#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-pen",
+   "title": "Wiktionary: pen (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/pen#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-cwm",
+   "title": "Wiktionary: cwm (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/cwm#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-glyn",
+   "title": "Wiktionary: glyn (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/glyn#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-glyn-cap",
+   "title": "Wiktionary: Glyn (English)",
+   "url": "https://en.wiktionary.org/wiki/Glyn#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-nant",
+   "title": "Wiktionary: nant (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/nant#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-afon",
+   "title": "Wiktionary: afon (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/afon#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-llyn",
+   "title": "Wiktionary: llyn (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/llyn#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-bryn",
+   "title": "Wiktionary: bryn (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/bryn#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-bryn-cap",
+   "title": "Wiktionary: Bryn (English)",
+   "url": "https://en.wiktionary.org/wiki/Bryn#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-mynydd",
+   "title": "Wiktionary: mynydd (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/mynydd#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-maes",
+   "title": "Wiktionary: maes (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/maes#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-rhos",
+   "title": "Wiktionary: rhos (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/rhos#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-coed",
+   "title": "Wiktionary: coed (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/coed#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-ynys",
+   "title": "Wiktionary: ynys (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/ynys#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-pont",
+   "title": "Wiktionary: pont (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/pont#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-cy-porth",
+   "title": "Wiktionary: porth (Welsh)",
+   "url": "https://en.wiktionary.org/wiki/porth#Welsh",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-gd-baile",
+   "title": "Wiktionary: baile (Scottish Gaelic)",
+   "url": "https://en.wiktionary.org/wiki/baile#Scottish_Gaelic",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-gd-inbhir",
+   "title": "Wiktionary: inbhir (Scottish Gaelic)",
+   "url": "https://en.wiktionary.org/wiki/inbhir#Scottish_Gaelic",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-gd-beinn",
+   "title": "Wiktionary: beinn (Scottish Gaelic)",
+   "url": "https://en.wiktionary.org/wiki/beinn#Scottish_Gaelic",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-ben-nevis-cap",
+   "title": "Wiktionary: Ben Nevis (English)",
+   "url": "https://en.wiktionary.org/wiki/Ben_Nevis#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-gd-srath",
+   "title": "Wiktionary: srath (Scottish Gaelic)",
+   "url": "https://en.wiktionary.org/wiki/srath#Scottish_Gaelic",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-strathspey-cap",
+   "title": "Wiktionary: Strathspey (English)",
+   "url": "https://en.wiktionary.org/wiki/Strathspey#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-gd-gleann",
+   "title": "Wiktionary: gleann (Scottish Gaelic)",
+   "url": "https://en.wiktionary.org/wiki/gleann#Scottish_Gaelic",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-glencoe-cap",
+   "title": "Wiktionary: Glencoe (English)",
+   "url": "https://en.wiktionary.org/wiki/Glencoe#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-glenmore-cap",
+   "title": "Wiktionary: Glenmore (English)",
+   "url": "https://en.wiktionary.org/wiki/Glenmore#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-gd-loch",
+   "title": "Wiktionary: loch (Scottish Gaelic)",
+   "url": "https://en.wiktionary.org/wiki/loch#Scottish_Gaelic",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-gd-eilean",
+   "title": "Wiktionary: eilean (Scottish Gaelic)",
+   "url": "https://en.wiktionary.org/wiki/eilean#Scottish_Gaelic",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-gd-allt",
+   "title": "Wiktionary: allt (Scottish Gaelic)",
+   "url": "https://en.wiktionary.org/wiki/allt#Scottish_Gaelic",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-gd-achadh",
+   "title": "Wiktionary: achadh (Scottish Gaelic)",
+   "url": "https://en.wiktionary.org/wiki/achadh#Scottish_Gaelic",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-gd-mor",
+   "title": "Wiktionary: mòr (Scottish Gaelic)",
+   "url": "https://en.wiktionary.org/wiki/m%C3%B2r#Scottish_Gaelic",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-mor",
+   "title": "Wiktionary: mór (Irish)",
+   "url": "https://en.wiktionary.org/wiki/m%C3%B3r#Irish",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-ardmore-cap",
+   "title": "Wiktionary: Ardmore (English)",
+   "url": "https://en.wiktionary.org/wiki/Ardmore#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-lismore-cap",
+   "title": "Wiktionary: Lismore (English)",
+   "url": "https://en.wiktionary.org/wiki/Lismore#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-gd-mac",
+   "title": "Wiktionary: mac (Scottish Gaelic)",
+   "url": "https://en.wiktionary.org/wiki/mac#Scottish_Gaelic",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-mac",
+   "title": "Wiktionary: mac (Irish)",
+   "url": "https://en.wiktionary.org/wiki/mac#Irish",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-macdonald-cap",
+   "title": "Wiktionary: MacDonald (English)",
+   "url": "https://en.wiktionary.org/wiki/MacDonald#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-gd-nic-cap",
+   "title": "Wiktionary: Nic (Scottish Gaelic)",
+   "url": "https://en.wiktionary.org/wiki/Nic#Scottish_Gaelic",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-nic-cap",
+   "title": "Wiktionary: Nic (Irish)",
+   "url": "https://en.wiktionary.org/wiki/Nic#Irish",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-gd-ruadh",
+   "title": "Wiktionary: ruadh (Scottish Gaelic)",
+   "url": "https://en.wiktionary.org/wiki/ruadh#Scottish_Gaelic",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-rua",
+   "title": "Wiktionary: rua (Irish)",
+   "url": "https://en.wiktionary.org/wiki/rua#Irish",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-rory-cap",
+   "title": "Wiktionary: Rory (English)",
+   "url": "https://en.wiktionary.org/wiki/Rory#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-gd-ban",
+   "title": "Wiktionary: bàn (Scottish Gaelic)",
+   "url": "https://en.wiktionary.org/wiki/b%C3%A0n#Scottish_Gaelic",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-ban",
+   "title": "Wiktionary: bán (Irish)",
+   "url": "https://en.wiktionary.org/wiki/b%C3%A1n#Irish",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-bain-cap",
+   "title": "Wiktionary: Bain (English)",
+   "url": "https://en.wiktionary.org/wiki/Bain#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-gd-donn",
+   "title": "Wiktionary: donn (Scottish Gaelic)",
+   "url": "https://en.wiktionary.org/wiki/donn#Scottish_Gaelic",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-donn",
+   "title": "Wiktionary: donn (Irish)",
+   "url": "https://en.wiktionary.org/wiki/donn#Irish",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-duncan-cap",
+   "title": "Wiktionary: Duncan (English)",
+   "url": "https://en.wiktionary.org/wiki/Duncan#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-gd-fionn",
+   "title": "Wiktionary: fionn (Scottish Gaelic)",
+   "url": "https://en.wiktionary.org/wiki/fionn#Scottish_Gaelic",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-fionn",
+   "title": "Wiktionary: fionn (Irish)",
+   "url": "https://en.wiktionary.org/wiki/fionn#Irish",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-gd-fionnghal-cap",
+   "title": "Wiktionary: Fionnghal (Scottish Gaelic)",
+   "url": "https://en.wiktionary.org/wiki/Fionnghal#Scottish_Gaelic",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-finlay-cap",
+   "title": "Wiktionary: Finlay (English)",
+   "url": "https://en.wiktionary.org/wiki/Finlay#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-fiona-cap",
+   "title": "Wiktionary: Fiona (English)",
+   "url": "https://en.wiktionary.org/wiki/Fiona#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-dun",
+   "title": "Wiktionary: dún (Irish)",
+   "url": "https://en.wiktionary.org/wiki/d%C3%BAn#Irish",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-donegal-cap",
+   "title": "Wiktionary: Donegal (English)",
+   "url": "https://en.wiktionary.org/wiki/Donegal#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-dundrum-cap",
+   "title": "Wiktionary: Dundrum (English)",
+   "url": "https://en.wiktionary.org/wiki/Dundrum#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-cill",
+   "title": "Wiktionary: cill (Irish)",
+   "url": "https://en.wiktionary.org/wiki/cill#Irish",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-kildare-cap",
+   "title": "Wiktionary: Kildare (English)",
+   "url": "https://en.wiktionary.org/wiki/Kildare#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-cnoc",
+   "title": "Wiktionary: cnoc (Irish)",
+   "url": "https://en.wiktionary.org/wiki/cnoc#Irish",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-droim",
+   "title": "Wiktionary: droim (Irish)",
+   "url": "https://en.wiktionary.org/wiki/droim#Irish",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-ard",
+   "title": "Wiktionary: ard (Irish)",
+   "url": "https://en.wiktionary.org/wiki/ard#Irish",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-tulach",
+   "title": "Wiktionary: tulach (Irish)",
+   "url": "https://en.wiktionary.org/wiki/tulach#Irish",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-carraig",
+   "title": "Wiktionary: carraig (Irish)",
+   "url": "https://en.wiktionary.org/wiki/carraig#Irish",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-carrickfergus-cap",
+   "title": "Wiktionary: Carrickfergus (English)",
+   "url": "https://en.wiktionary.org/wiki/Carrickfergus#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-inis",
+   "title": "Wiktionary: inis (Irish)",
+   "url": "https://en.wiktionary.org/wiki/inis#Irish",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-ros",
+   "title": "Wiktionary: ros (Irish)",
+   "url": "https://en.wiktionary.org/wiki/ros#Irish",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-rosslare-cap",
+   "title": "Wiktionary: Rosslare (English)",
+   "url": "https://en.wiktionary.org/wiki/Rosslare#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-gd-magh",
+   "title": "Wiktionary: magh (Scottish Gaelic)",
+   "url": "https://en.wiktionary.org/wiki/magh#Scottish_Gaelic",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-mayo-cap",
+   "title": "Wiktionary: Mayo (English)",
+   "url": "https://en.wiktionary.org/wiki/Mayo#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-ath",
+   "title": "Wiktionary: áth (Irish)",
+   "url": "https://en.wiktionary.org/wiki/%C3%A1th#Irish",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-athlone-cap",
+   "title": "Wiktionary: Athlone (English)",
+   "url": "https://en.wiktionary.org/wiki/Athlone#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-clonmel-cap",
+   "title": "Wiktionary: Clonmel (English)",
+   "url": "https://en.wiktionary.org/wiki/Clonmel#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-derry-cap",
+   "title": "Wiktionary: Derry (English)",
+   "url": "https://en.wiktionary.org/wiki/Derry#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-dubh",
+   "title": "Wiktionary: dubh (Irish)",
+   "url": "https://en.wiktionary.org/wiki/dubh#Irish",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-gd-dubh",
+   "title": "Wiktionary: dubh (Scottish Gaelic)",
+   "url": "https://en.wiktionary.org/wiki/dubh#Scottish_Gaelic",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-dublin-cap",
+   "title": "Wiktionary: Dublin (English)",
+   "url": "https://en.wiktionary.org/wiki/Dublin#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-dougal-cap",
+   "title": "Wiktionary: Dougal (English)",
+   "url": "https://en.wiktionary.org/wiki/Dougal#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-beag",
+   "title": "Wiktionary: beag (Irish)",
+   "url": "https://en.wiktionary.org/wiki/beag#Irish",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-glas",
+   "title": "Wiktionary: glas (Irish)",
+   "url": "https://en.wiktionary.org/wiki/glas#Irish",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-o",
+   "title": "Wiktionary: ó (Irish)",
+   "url": "https://en.wiktionary.org/wiki/%C3%B3#Irish",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-o-cap",
+   "title": "Wiktionary: Ó (Irish)",
+   "url": "https://en.wiktionary.org/wiki/%C3%93#Irish",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-oconnor-cap",
+   "title": "Wiktionary: O'Connor (English)",
+   "url": "https://en.wiktionary.org/wiki/O%27Connor#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-en-obrien-cap",
+   "title": "Wiktionary: O'Brien (English)",
+   "url": "https://en.wiktionary.org/wiki/O%27Brien#English",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-ni-cap",
+   "title": "Wiktionary: Ní (Irish)",
+   "url": "https://en.wiktionary.org/wiki/N%C3%AD#Irish",
+   "accessed": "2026-11-17"
+  },
+  {
+   "id": "wikt-ga-inion",
+   "title": "Wiktionary: iníon (Irish)",
+   "url": "https://en.wiktionary.org/wiki/in%C3%ADon#Irish",
+   "accessed": "2026-11-17"
+  }
+ ],
+ "elements": [
+  {
+   "id": "cy-ap",
+   "element": "ap",
+   "forms": [
+    "ap ",
+    "ab ",
+    "P-",
+    "B-"
+   ],
+   "language": "Welsh",
+   "use": [
+    "given",
+    "surname"
+   ],
+   "meaning": "son of",
+   "tags": [
+    "son",
+    "family"
+   ],
+   "note": "A soft-mutated form of mab 'son'; ab is used before vowels, and it fused into surnames such as Powell and Bowen.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-ap",
+    "wikt-cy-ab",
+    "snsbi-wales"
+   ],
+   "examples": [
+    {
+     "name": "Gwalchmai ap Meilyr",
+     "parts": "Gwalchmai + ap + Meilyr",
+     "gloss": "Gwalchmai son of Meilyr",
+     "source": "snsbi-wales"
+    },
+    {
+     "name": "Powell",
+     "parts": "ap + Hywel",
+     "gloss": "son of Hywel",
+     "source": "wikt-en-powell-cap"
+    },
+    {
+     "name": "Bowen",
+     "parts": "ab + Owain",
+     "gloss": "son of Owain",
+     "source": "wikt-en-bowen-cap"
+    }
+   ],
+   "page": "welsh-names",
+   "generators": [
+    "last_name"
+   ]
+  },
+  {
+   "id": "cy-merch",
+   "element": "merch",
+   "forms": [
+    "ferch ",
+    "verch "
+   ],
+   "language": "Welsh",
+   "use": [
+    "given"
+   ],
+   "meaning": "girl, daughter",
+   "tags": [
+    "daughter",
+    "family"
+   ],
+   "note": "In names the soft-mutated ferch means 'daughter of', the female match for ap.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-merch",
+    "wikt-cy-ferch"
+   ],
+   "examples": [],
+   "page": "welsh-names"
+  },
+  {
+   "id": "cy-gwyn",
+   "element": "gwyn",
+   "forms": [
+    "Gwyn",
+    "Gwen-",
+    "-wyn",
+    "-wen"
+   ],
+   "language": "Welsh",
+   "use": [
+    "given",
+    "place",
+    "surname"
+   ],
+   "meaning": "white; blessed",
+   "tags": [
+    "white",
+    "holy"
+   ],
+   "note": "Gwen is the feminine form, and is also a given name in its own right.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-gwyn",
+    "wikt-cy-gwen-cap",
+    "snsbi-wales"
+   ],
+   "examples": [
+    {
+     "name": "Gwyn",
+     "parts": "gwyn",
+     "gloss": "white, blessed",
+     "source": "wikt-cy-gwyn-cap"
+    },
+    {
+     "name": "Gwenffrwd",
+     "parts": "gwen + ffrwd",
+     "gloss": "white stream (English Whitebrook)",
+     "source": "snsbi-wales"
+    },
+    {
+     "name": "Abergwyngregyn",
+     "parts": "aber + gwyn + cregyn",
+     "gloss": "estuary of white shells",
+     "source": "snsbi-wales"
+    }
+   ],
+   "page": "welsh-names",
+   "generators": [
+    "druid",
+    "river"
+   ]
+  },
+  {
+   "id": "cy-du",
+   "element": "du",
+   "forms": [
+    "Du-",
+    "-ddu"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place",
+    "given"
+   ],
+   "meaning": "black, dark",
+   "tags": [
+    "black"
+   ],
+   "note": "Cognate with Gaelic dubh.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-du",
+    "snsbi-wales"
+   ],
+   "examples": [
+    {
+     "name": "Dulais",
+     "parts": "du + -lais",
+     "gloss": "dark (a river name)",
+     "source": "snsbi-wales"
+    }
+   ],
+   "generators": [
+    "river"
+   ]
+  },
+  {
+   "id": "cy-coch",
+   "element": "coch",
+   "forms": [
+    "-goch",
+    "Gough"
+   ],
+   "language": "Welsh",
+   "use": [
+    "surname",
+    "place"
+   ],
+   "meaning": "red; red-haired",
+   "tags": [
+    "red"
+   ],
+   "note": "Borrowed early from Latin coccum 'scarlet berry'.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-coch",
+    "wikt-en-gough-cap"
+   ],
+   "examples": [
+    {
+     "name": "Gough",
+     "parts": "coch",
+     "gloss": "red (a nickname for red hair)",
+     "source": "wikt-en-gough-cap"
+    }
+   ],
+   "generators": [
+    "last_name"
+   ]
+  },
+  {
+   "id": "cy-llwyd",
+   "element": "llwyd",
+   "forms": [
+    "Lloyd",
+    "Llwyd",
+    "-lwyd"
+   ],
+   "language": "Welsh",
+   "use": [
+    "surname",
+    "given",
+    "place"
+   ],
+   "meaning": "grey; grey-haired",
+   "tags": [
+    "grey",
+    "old"
+   ],
+   "note": "A nickname for someone with grey hair; Lloyd and Floyd are English spellings.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-llwyd",
+    "wikt-en-lloyd-cap"
+   ],
+   "examples": [
+    {
+     "name": "Lloyd",
+     "parts": "llwyd",
+     "gloss": "grey, grey-haired",
+     "source": "wikt-en-lloyd-cap"
+    }
+   ],
+   "page": "welsh-names",
+   "generators": [
+    "last_name"
+   ]
+  },
+  {
+   "id": "cy-bach",
+   "element": "bach",
+   "forms": [
+    "-fach",
+    "Vaughan",
+    "Fychan"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place",
+    "surname"
+   ],
+   "meaning": "small, little",
+   "tags": [
+    "small",
+    "nickname"
+   ],
+   "note": "Bychan, a diminutive of bach, became the surname Vaughan; cognate with Gaelic beag.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-bach",
+    "wikt-en-vaughan-cap"
+   ],
+   "examples": [
+    {
+     "name": "Vaughan",
+     "parts": "bychan",
+     "gloss": "little (one)",
+     "source": "wikt-en-vaughan-cap"
+    }
+   ],
+   "generators": [
+    "last_name",
+    "village"
+   ]
+  },
+  {
+   "id": "cy-mawr",
+   "element": "mawr",
+   "forms": [
+    "-fawr",
+    "Mawr"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place"
+   ],
+   "meaning": "large, great",
+   "tags": [
+    "great"
+   ],
+   "note": "Shows up after the noun in place names, often softened to -fawr.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-mawr"
+   ],
+   "examples": [],
+   "generators": [
+    "village",
+    "mountain"
+   ]
+  },
+  {
+   "id": "cy-hen",
+   "element": "hen",
+   "forms": [
+    "Hen-"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place"
+   ],
+   "meaning": "old",
+   "tags": [
+    "old"
+   ],
+   "note": "Comes before the noun, as in hendre, the lowland home farm (SNSBI).",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-hen",
+    "snsbi-wales"
+   ],
+   "examples": [],
+   "generators": [
+    "village"
+   ]
+  },
+  {
+   "id": "cy-bran",
+   "element": "brân",
+   "forms": [
+    "Bran",
+    "-fran"
+   ],
+   "language": "Welsh",
+   "use": [
+    "given",
+    "place"
+   ],
+   "meaning": "crow, raven",
+   "tags": [
+    "raven",
+    "bird"
+   ],
+   "note": "Covers the crow family generally, including rook and raven.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-bran"
+   ],
+   "examples": [],
+   "generators": [
+    "druid"
+   ]
+  },
+  {
+   "id": "cy-arth",
+   "element": "arth",
+   "forms": [
+    "Arth"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place"
+   ],
+   "meaning": "bear",
+   "tags": [
+    "bear"
+   ],
+   "note": "Some Welsh rivers are named from animals: the Arth and the Twrch 'wild boar' (SNSBI).",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-arth",
+    "snsbi-wales"
+   ],
+   "examples": [
+    {
+     "name": "Arth",
+     "parts": "arth",
+     "gloss": "bear (a river name)",
+     "source": "snsbi-wales"
+    }
+   ],
+   "generators": [
+    "river"
+   ]
+  },
+  {
+   "id": "cy-blaidd",
+   "element": "blaidd",
+   "forms": [
+    "-bleiddiau",
+    "Bleidd-"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place",
+    "given"
+   ],
+   "meaning": "wolf",
+   "tags": [
+    "wolf"
+   ],
+   "note": "Plural bleiddiau.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-blaidd",
+    "snsbi-wales"
+   ],
+   "examples": [
+    {
+     "name": "Cerrig-y-bleiddiau",
+     "parts": "cerrig + y + bleiddiau",
+     "gloss": "wolves' rocks",
+     "source": "snsbi-wales"
+    }
+   ]
+  },
+  {
+   "id": "cy-llew",
+   "element": "llew",
+   "forms": [
+    "Llew"
+   ],
+   "language": "Welsh",
+   "use": [
+    "given"
+   ],
+   "meaning": "lion",
+   "tags": [
+    "animal"
+   ],
+   "note": "Borrowed from Latin leo.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-llew"
+   ],
+   "examples": []
+  },
+  {
+   "id": "cy-aber",
+   "element": "aber",
+   "forms": [
+    "Aber-"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place"
+   ],
+   "meaning": "river mouth, estuary; confluence",
+   "tags": [
+    "mouth",
+    "river"
+   ],
+   "note": "Also used in Pictish, as in Aberdeen 'mouth of the Don'.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-aber",
+    "snsbi-wales"
+   ],
+   "examples": [
+    {
+     "name": "Aberystwyth",
+     "parts": "aber + Ystwyth",
+     "gloss": "mouth of the Ystwyth ('bendy') river",
+     "source": "snsbi-wales"
+    },
+    {
+     "name": "Abercynon",
+     "parts": "aber + Cynon",
+     "gloss": "where the Cynon meets the Taf",
+     "source": "snsbi-wales"
+    },
+    {
+     "name": "Barmouth",
+     "parts": "aber + Mawdd",
+     "gloss": "mouth of the Mawdd",
+     "source": "snsbi-wales"
+    }
+   ],
+   "page": "welsh-names",
+   "generators": [
+    "river",
+    "village",
+    "fantasy_town"
+   ]
+  },
+  {
+   "id": "cy-llan",
+   "element": "llan",
+   "forms": [
+    "Llan-"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place"
+   ],
+   "meaning": "church and churchyard; first 'enclosure'",
+   "tags": [
+    "church",
+    "enclosure"
+   ],
+   "note": "Usually followed by a saint's name, which softens (Mair becomes -fair).",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-llan",
+    "snsbi-wales"
+   ],
+   "examples": [
+    {
+     "name": "Llanddewi",
+     "parts": "llan + Dewi",
+     "gloss": "St David's church",
+     "source": "snsbi-wales"
+    },
+    {
+     "name": "Llanbadarn",
+     "parts": "llan + Padarn",
+     "gloss": "St Padarn's church",
+     "source": "snsbi-wales"
+    },
+    {
+     "name": "Llanfair",
+     "parts": "llan + Mair",
+     "gloss": "St Mary's church",
+     "source": "snsbi-wales"
+    }
+   ],
+   "page": "welsh-names",
+   "generators": [
+    "village",
+    "fantasy_town"
+   ]
+  },
+  {
+   "id": "cy-eglwys",
+   "element": "eglwys",
+   "forms": [
+    "Eglwys-"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place"
+   ],
+   "meaning": "church",
+   "tags": [
+    "church"
+   ],
+   "note": "Borrowed from Latin ecclesia.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-eglwys",
+    "snsbi-wales"
+   ],
+   "examples": [],
+   "generators": [
+    "village"
+   ]
+  },
+  {
+   "id": "cy-betws",
+   "element": "betws",
+   "forms": [
+    "Betws-"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place"
+   ],
+   "meaning": "chapel",
+   "tags": [
+    "church"
+   ],
+   "note": "Borrowed from Old English bedhūs 'prayer house'.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-betws",
+    "snsbi-wales"
+   ],
+   "examples": [
+    {
+     "name": "Betws-y-Coed",
+     "parts": "betws + y + coed",
+     "gloss": "chapel in the wood"
+    }
+   ],
+   "generators": [
+    "village"
+   ]
+  },
+  {
+   "id": "cy-tref",
+   "element": "tref",
+   "forms": [
+    "Tre-",
+    "Dre-",
+    "-dref"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place"
+   ],
+   "meaning": "settlement, farm; now 'town'",
+   "tags": [
+    "settlement",
+    "farm",
+    "town"
+   ],
+   "note": "Often appears as Tre- or Dre-; compare Old English tūn.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-tref",
+    "snsbi-wales"
+   ],
+   "examples": [
+    {
+     "name": "Trewalchmai",
+     "parts": "tref + Gwalchmai",
+     "gloss": "Gwalchmai's settlement",
+     "source": "snsbi-wales"
+    },
+    {
+     "name": "Tremadog",
+     "parts": "tref + Madog",
+     "gloss": "Madocks's town",
+     "source": "snsbi-wales"
+    }
+   ],
+   "page": "welsh-names",
+   "generators": [
+    "village",
+    "fantasy_town"
+   ]
+  },
+  {
+   "id": "cy-caer",
+   "element": "caer",
+   "forms": [
+    "Caer-",
+    "Car-"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place"
+   ],
+   "meaning": "fort, stronghold",
+   "tags": [
+    "fort"
+   ],
+   "note": "Often used of old Roman forts, much like English -chester.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-caer",
+    "snsbi-wales"
+   ],
+   "examples": [
+    {
+     "name": "Cardiff",
+     "parts": "caer + Taf",
+     "gloss": "fort on the River Taff",
+     "source": "snsbi-wales"
+    },
+    {
+     "name": "Caernarfon",
+     "parts": "caer + yn + Arfon",
+     "gloss": "fort in Arfon",
+     "source": "snsbi-wales"
+    },
+    {
+     "name": "Caerleon",
+     "parts": "caer + lleon",
+     "gloss": "fort of the legions",
+     "source": "snsbi-wales"
+    }
+   ],
+   "page": "welsh-names",
+   "generators": [
+    "castle",
+    "fantasy_town",
+    "kingdom"
+   ]
+  },
+  {
+   "id": "cy-dinas",
+   "element": "dinas",
+   "forms": [
+    "Dinas"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place"
+   ],
+   "meaning": "city; earlier 'stronghold, fort'",
+   "tags": [
+    "fort",
+    "town"
+   ],
+   "note": "From din 'fort', which survives in Tenby (Dinbych 'little fort').",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-dinas",
+    "snsbi-wales"
+   ],
+   "examples": [
+    {
+     "name": "Dinas Powys",
+     "parts": "dinas + Powys",
+     "gloss": "fort of Powys",
+     "source": "snsbi-wales"
+    }
+   ],
+   "generators": [
+    "castle"
+   ]
+  },
+  {
+   "id": "cy-pen",
+   "element": "pen",
+   "forms": [
+    "Pen-",
+    "Pem-"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place"
+   ],
+   "meaning": "head; top; end",
+   "tags": [
+    "headland",
+    "hill"
+   ],
+   "note": "Used of hilltops, headlands and the ends of things.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-pen",
+    "snsbi-wales"
+   ],
+   "examples": [
+    {
+     "name": "Pembroke",
+     "parts": "pen + bro",
+     "gloss": "land's end",
+     "source": "snsbi-wales"
+    }
+   ],
+   "generators": [
+    "mountain",
+    "village"
+   ]
+  },
+  {
+   "id": "cy-cwm",
+   "element": "cwm",
+   "forms": [
+    "Cwm-"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place"
+   ],
+   "meaning": "valley, dale",
+   "tags": [
+    "valley"
+   ],
+   "note": "Borrowed into English as coomb.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-cwm"
+   ],
+   "examples": [],
+   "generators": [
+    "village"
+   ]
+  },
+  {
+   "id": "cy-glyn",
+   "element": "glyn",
+   "forms": [
+    "Glyn-",
+    "Glyn"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place",
+    "given"
+   ],
+   "meaning": "glen, valley",
+   "tags": [
+    "valley"
+   ],
+   "note": "Cognate with Gaelic gleann.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-glyn",
+    "wikt-en-glyn-cap"
+   ],
+   "examples": [
+    {
+     "name": "Glyn",
+     "parts": "glyn",
+     "gloss": "valley",
+     "source": "wikt-en-glyn-cap"
+    }
+   ],
+   "generators": [
+    "village"
+   ]
+  },
+  {
+   "id": "cy-nant",
+   "element": "nant",
+   "forms": [
+    "Nant-"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place"
+   ],
+   "meaning": "brook, stream",
+   "tags": [
+    "river",
+    "water"
+   ],
+   "note": "In older names it can also mean the valley of a stream.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-nant",
+    "snsbi-wales"
+   ],
+   "examples": [],
+   "generators": [
+    "river"
+   ]
+  },
+  {
+   "id": "cy-afon",
+   "element": "afon",
+   "forms": [
+    "Afon"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place"
+   ],
+   "meaning": "river",
+   "tags": [
+    "river"
+   ],
+   "note": "Source of the English river name Avon.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-afon"
+   ],
+   "examples": [],
+   "generators": [
+    "river"
+   ]
+  },
+  {
+   "id": "cy-llyn",
+   "element": "llyn",
+   "forms": [
+    "Llyn"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place"
+   ],
+   "meaning": "lake",
+   "tags": [
+    "lake"
+   ],
+   "note": "Not the same word as the peninsula Llŷn.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-llyn"
+   ],
+   "examples": [],
+   "generators": [
+    "lake"
+   ]
+  },
+  {
+   "id": "cy-bryn",
+   "element": "bryn",
+   "forms": [
+    "Bryn-",
+    "Bryn"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place",
+    "given"
+   ],
+   "meaning": "hill",
+   "tags": [
+    "hill"
+   ],
+   "note": "One of several Welsh words for a hill, with bre, moel and mynydd.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-bryn",
+    "wikt-en-bryn-cap",
+    "snsbi-wales"
+   ],
+   "examples": [
+    {
+     "name": "Bryn",
+     "parts": "bryn",
+     "gloss": "hill",
+     "source": "wikt-en-bryn-cap"
+    }
+   ],
+   "generators": [
+    "mountain",
+    "village"
+   ]
+  },
+  {
+   "id": "cy-mynydd",
+   "element": "mynydd",
+   "forms": [
+    "Mynydd"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place"
+   ],
+   "meaning": "mountain; upland, moorland",
+   "tags": [
+    "mountain"
+   ],
+   "status": "attested",
+   "sources": [
+    "wikt-cy-mynydd",
+    "snsbi-wales"
+   ],
+   "examples": [
+    {
+     "name": "Mynydd Epynt",
+     "parts": "mynydd + Epynt",
+     "gloss": "upland crossed by a horse path",
+     "source": "snsbi-wales"
+    }
+   ],
+   "generators": [
+    "mountain"
+   ]
+  },
+  {
+   "id": "cy-maes",
+   "element": "maes",
+   "forms": [
+    "Maes-"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place"
+   ],
+   "meaning": "field, open ground",
+   "tags": [
+    "field"
+   ],
+   "status": "attested",
+   "sources": [
+    "wikt-cy-maes"
+   ],
+   "examples": [],
+   "generators": [
+    "village"
+   ]
+  },
+  {
+   "id": "cy-rhos",
+   "element": "rhos",
+   "forms": [
+    "Rhos-"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place"
+   ],
+   "meaning": "moor, heath",
+   "tags": [
+    "marsh",
+    "field"
+   ],
+   "note": "Related to Gaelic and Irish ros, which means a promontory or wood.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-rhos",
+    "snsbi-wales"
+   ],
+   "examples": [
+    {
+     "name": "Rhosllanerchrugog",
+     "parts": "rhos + llannerch + grugog",
+     "gloss": "moor of the heathy clearing",
+     "source": "snsbi-wales"
+    }
+   ],
+   "generators": [
+    "village"
+   ]
+  },
+  {
+   "id": "cy-coed",
+   "element": "coed",
+   "forms": [
+    "Coed-",
+    "-goed",
+    "-y-Coed"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place"
+   ],
+   "meaning": "wood, forest; trees",
+   "tags": [
+    "wood",
+    "tree"
+   ],
+   "status": "attested",
+   "sources": [
+    "wikt-cy-coed"
+   ],
+   "examples": [
+    {
+     "name": "Betws-y-Coed",
+     "parts": "betws + y + coed",
+     "gloss": "chapel in the wood"
+    }
+   ],
+   "generators": [
+    "forest"
+   ]
+  },
+  {
+   "id": "cy-ynys",
+   "element": "ynys",
+   "forms": [
+    "Ynys"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place"
+   ],
+   "meaning": "island",
+   "tags": [
+    "island"
+   ],
+   "note": "Cognate with Irish inis.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-ynys"
+   ],
+   "examples": [],
+   "generators": [
+    "island"
+   ]
+  },
+  {
+   "id": "cy-pont",
+   "element": "pont",
+   "forms": [
+    "Pont-",
+    "-bont"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place"
+   ],
+   "meaning": "bridge",
+   "tags": [
+    "bridge"
+   ],
+   "note": "Borrowed from Latin pons.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-pont",
+    "snsbi-wales"
+   ],
+   "examples": [
+    {
+     "name": "Pontsenni",
+     "parts": "pont + Senni",
+     "gloss": "bridge over the Senni (English Sennybridge)",
+     "source": "snsbi-wales"
+    }
+   ],
+   "generators": [
+    "village"
+   ]
+  },
+  {
+   "id": "cy-porth",
+   "element": "porth",
+   "forms": [
+    "Porth-",
+    "-borth"
+   ],
+   "language": "Welsh",
+   "use": [
+    "place"
+   ],
+   "meaning": "harbour, port; also gateway",
+   "tags": [
+    "harbour",
+    "bay"
+   ],
+   "note": "Two words share this spelling: porth 'harbour' and porth 'gateway'.",
+   "status": "attested",
+   "sources": [
+    "wikt-cy-porth",
+    "snsbi-wales"
+   ],
+   "examples": [
+    {
+     "name": "Aberporth",
+     "parts": "aber + porth",
+     "gloss": "port estuary",
+     "source": "snsbi-wales"
+    },
+    {
+     "name": "Porthmadog",
+     "parts": "porth + Madog",
+     "gloss": "Madocks's harbour",
+     "source": "snsbi-wales"
+    }
+   ],
+   "generators": [
+    "village"
+   ]
+  },
+  {
+   "id": "gd-baile",
+   "element": "baile",
+   "forms": [
+    "Bal-",
+    "Balla-",
+    "Bally-"
+   ],
+   "language": "Scottish Gaelic",
+   "use": [
+    "place"
+   ],
+   "meaning": "farm, township; town",
+   "tags": [
+    "farm",
+    "settlement",
+    "town"
+   ],
+   "note": "Irish baile 'townland, town' is the most common Irish place-name word, as Bally-. Not every Bal- is baile (Balloch is bealach 'pass').",
+   "status": "attested",
+   "sources": [
+    "wikt-gd-baile",
+    "snsbi-scotland",
+    "logainm-gloss"
+   ],
+   "examples": [
+    {
+     "name": "Ballachulish",
+     "parts": "baile + caolas",
+     "gloss": "farm on the strait",
+     "source": "snsbi-scotland"
+    },
+    {
+     "name": "Ballantrae",
+     "parts": "baile + an + tràigh",
+     "gloss": "farm on the shore",
+     "source": "snsbi-scotland"
+    },
+    {
+     "name": "Baile Átha Cliath",
+     "parts": "baile + áth + cliath",
+     "gloss": "town of the ford of hurdles (Dublin)",
+     "source": "logainm-gloss"
+    }
+   ],
+   "generators": [
+    "village",
+    "fantasy_town"
+   ]
+  },
+  {
+   "id": "gd-inbhir",
+   "element": "inbhir",
+   "forms": [
+    "Inver-",
+    "Inner-"
+   ],
+   "language": "Scottish Gaelic",
+   "use": [
+    "place"
+   ],
+   "meaning": "river mouth, estuary",
+   "tags": [
+    "mouth",
+    "river"
+   ],
+   "note": "The Gaelic match for Brittonic aber; Ayr and Nairn once had Inver- spellings.",
+   "status": "attested",
+   "sources": [
+    "wikt-gd-inbhir",
+    "snsbi-scotland"
+   ],
+   "examples": [
+    {
+     "name": "Inverness",
+     "parts": "inbhir + Ness",
+     "gloss": "mouth of the River Ness",
+     "source": "snsbi-scotland"
+    }
+   ],
+   "generators": [
+    "river",
+    "village"
+   ]
+  },
+  {
+   "id": "gd-beinn",
+   "element": "beinn",
+   "forms": [
+    "Ben ",
+    "Ben-",
+    "-ven"
+   ],
+   "language": "Scottish Gaelic",
+   "use": [
+    "place"
+   ],
+   "meaning": "mountain, peak",
+   "tags": [
+    "mountain"
+   ],
+   "note": "Irish has binn or beann 'peak, cliff'.",
+   "status": "attested",
+   "sources": [
+    "wikt-gd-beinn",
+    "snsbi-scotland"
+   ],
+   "examples": [
+    {
+     "name": "Ben Nevis",
+     "parts": "beinn + Nevis",
+     "gloss": "mountain of the Nevis (meaning unknown)",
+     "source": "wikt-en-ben-nevis-cap"
+    }
+   ],
+   "generators": [
+    "mountain"
+   ]
+  },
+  {
+   "id": "gd-srath",
+   "element": "srath",
+   "forms": [
+    "Strath-"
+   ],
+   "language": "Scottish Gaelic",
+   "use": [
+    "place"
+   ],
+   "meaning": "wide river valley, strath",
+   "tags": [
+    "valley",
+    "meadow"
+   ],
+   "note": "Irish srath means river meadow; Strathclyde is from the Brittonic cousin of this word.",
+   "status": "attested",
+   "sources": [
+    "wikt-gd-srath",
+    "logainm-gloss"
+   ],
+   "examples": [
+    {
+     "name": "Strathspey",
+     "parts": "srath + Spè",
+     "gloss": "strath of the River Spey",
+     "source": "wikt-en-strathspey-cap"
+    }
+   ],
+   "generators": [
+    "river",
+    "village"
+   ]
+  },
+  {
+   "id": "gd-gleann",
+   "element": "gleann",
+   "forms": [
+    "Glen-",
+    "Glen"
+   ],
+   "language": "Scottish Gaelic",
+   "use": [
+    "place"
+   ],
+   "meaning": "glen, valley",
+   "tags": [
+    "valley"
+   ],
+   "note": "The same word in Irish; Welsh glyn is a cousin.",
+   "status": "attested",
+   "sources": [
+    "wikt-gd-gleann",
+    "logainm-gloss",
+    "snsbi-scotland"
+   ],
+   "examples": [
+    {
+     "name": "Glencoe",
+     "parts": "gleann + Comhann",
+     "gloss": "valley of the River Coe",
+     "source": "wikt-en-glencoe-cap"
+    },
+    {
+     "name": "Glenmore",
+     "parts": "gleann + mòr",
+     "gloss": "great valley",
+     "source": "wikt-en-glenmore-cap"
+    }
+   ],
+   "generators": [
+    "village",
+    "forest"
+   ]
+  },
+  {
+   "id": "gd-loch",
+   "element": "loch",
+   "forms": [
+    "Loch ",
+    "Lough "
+   ],
+   "language": "Scottish Gaelic",
+   "use": [
+    "place"
+   ],
+   "meaning": "lake; arm of the sea",
+   "tags": [
+    "lake",
+    "sea"
+   ],
+   "note": "Irish loch (anglicised Lough) means lake or inlet.",
+   "status": "attested",
+   "sources": [
+    "wikt-gd-loch",
+    "logainm-gloss"
+   ],
+   "examples": [
+    {
+     "name": "Loch Leven",
+     "parts": "loch + Liobhann",
+     "gloss": "loch of the Leven",
+     "source": "snsbi-scotland"
+    }
+   ],
+   "generators": [
+    "lake"
+   ]
+  },
+  {
+   "id": "gd-eilean",
+   "element": "eilean",
+   "forms": [
+    "Eilean "
+   ],
+   "language": "Scottish Gaelic",
+   "use": [
+    "place"
+   ],
+   "meaning": "island",
+   "tags": [
+    "island"
+   ],
+   "note": "Irish has oileán; inis is an older word for island.",
+   "status": "attested",
+   "sources": [
+    "wikt-gd-eilean",
+    "snsbi-scotland"
+   ],
+   "examples": [],
+   "generators": [
+    "island"
+   ]
+  },
+  {
+   "id": "gd-allt",
+   "element": "allt",
+   "forms": [
+    "Allt ",
+    "Ault-"
+   ],
+   "language": "Scottish Gaelic",
+   "use": [
+    "place"
+   ],
+   "meaning": "steep-sided stream",
+   "tags": [
+    "river"
+   ],
+   "note": "In Irish place names allt or alt means a steep-sided glen, height or cliff.",
+   "status": "attested",
+   "sources": [
+    "wikt-gd-allt",
+    "logainm-gloss"
+   ],
+   "examples": [],
+   "generators": [
+    "river"
+   ]
+  },
+  {
+   "id": "gd-achadh",
+   "element": "achadh",
+   "forms": [
+    "Ach-",
+    "Auch-",
+    "Augh-"
+   ],
+   "language": "Scottish Gaelic",
+   "use": [
+    "place"
+   ],
+   "meaning": "field, meadow",
+   "tags": [
+    "field"
+   ],
+   "note": "Irish achadh, also 'field', mostly survives only in place names.",
+   "status": "attested",
+   "sources": [
+    "wikt-gd-achadh",
+    "logainm-gloss"
+   ],
+   "examples": [],
+   "generators": [
+    "village"
+   ]
+  },
+  {
+   "id": "gd-mor",
+   "element": "mòr",
+   "forms": [
+    "-more",
+    "-mhòr"
+   ],
+   "language": "Scottish Gaelic",
+   "use": [
+    "place",
+    "given"
+   ],
+   "meaning": "big, great",
+   "tags": [
+    "great"
+   ],
+   "note": "Irish mór is the same word; both usually follow the noun as -more.",
+   "status": "attested",
+   "sources": [
+    "wikt-gd-mor",
+    "wikt-ga-mor",
+    "logainm-gloss"
+   ],
+   "examples": [
+    {
+     "name": "Glenmore",
+     "parts": "gleann + mòr",
+     "gloss": "great valley",
+     "source": "wikt-en-glenmore-cap"
+    },
+    {
+     "name": "Ardmore",
+     "parts": "àird + mòr",
+     "gloss": "great height",
+     "source": "wikt-en-ardmore-cap"
+    },
+    {
+     "name": "Lismore",
+     "parts": "lios + mòr",
+     "gloss": "great enclosure",
+     "source": "wikt-en-lismore-cap"
+    }
+   ],
+   "generators": [
+    "mountain",
+    "village"
+   ]
+  },
+  {
+   "id": "gd-mac",
+   "element": "mac",
+   "forms": [
+    "Mac",
+    "Mc",
+    "M'"
+   ],
+   "language": "Scottish Gaelic",
+   "use": [
+    "surname"
+   ],
+   "meaning": "son; son of",
+   "tags": [
+    "son",
+    "family"
+   ],
+   "note": "Used the same way in Irish surnames; cognate with Welsh mab.",
+   "status": "attested",
+   "sources": [
+    "wikt-gd-mac",
+    "wikt-ga-mac"
+   ],
+   "examples": [
+    {
+     "name": "MacDonald",
+     "parts": "mac + Dòmhnall",
+     "gloss": "son of Donald",
+     "source": "wikt-en-macdonald-cap"
+    }
+   ],
+   "page": "patronymic-names",
+   "generators": [
+    "last_name"
+   ]
+  },
+  {
+   "id": "gd-nic",
+   "element": "nic",
+   "forms": [
+    "Nic "
+   ],
+   "language": "Scottish Gaelic",
+   "use": [
+    "surname"
+   ],
+   "meaning": "daughter of the son of",
+   "tags": [
+    "daughter",
+    "family"
+   ],
+   "note": "Short for nighean mhic; used by women in place of Mac in both Gaelic and Irish.",
+   "status": "attested",
+   "sources": [
+    "wikt-gd-nic-cap",
+    "wikt-ga-nic-cap"
+   ],
+   "examples": [
+    {
+     "name": "Nic Leòid",
+     "parts": "nic + Leòid",
+     "gloss": "MacLeod, as a woman's surname",
+     "source": "wikt-gd-nic-cap"
+    }
+   ],
+   "page": "patronymic-names",
+   "generators": [
+    "last_name"
+   ]
+  },
+  {
+   "id": "gd-ruadh",
+   "element": "ruadh",
+   "forms": [
+    "Roy",
+    "-ruadh",
+    "Ruai-"
+   ],
+   "language": "Scottish Gaelic",
+   "use": [
+    "given",
+    "surname",
+    "place"
+   ],
+   "meaning": "red; red-haired",
+   "tags": [
+    "red"
+   ],
+   "note": "Modern Irish spells it rua; Welsh rhudd is a cousin.",
+   "status": "attested",
+   "sources": [
+    "wikt-gd-ruadh",
+    "wikt-ga-rua",
+    "logainm-gloss"
+   ],
+   "examples": [
+    {
+     "name": "Rory",
+     "parts": "ruadh + rí",
+     "gloss": "red king",
+     "source": "wikt-en-rory-cap"
+    }
+   ],
+   "generators": [
+    "last_name"
+   ]
+  },
+  {
+   "id": "gd-ban",
+   "element": "bàn",
+   "forms": [
+    "Bain",
+    "-bhàn",
+    "-bawn"
+   ],
+   "language": "Scottish Gaelic",
+   "use": [
+    "given",
+    "surname",
+    "place"
+   ],
+   "meaning": "white, pale; fair-haired",
+   "tags": [
+    "white",
+    "fair"
+   ],
+   "note": "Irish bán also means lea-ground, grassy land, in place names.",
+   "status": "attested",
+   "sources": [
+    "wikt-gd-ban",
+    "wikt-ga-ban",
+    "logainm-gloss"
+   ],
+   "examples": [
+    {
+     "name": "Bain",
+     "parts": "bàn",
+     "gloss": "fair, white",
+     "source": "wikt-en-bain-cap"
+    },
+    {
+     "name": "McBain",
+     "parts": "mac + bàn",
+     "gloss": "son of the fair one",
+     "source": "wikt-en-bain-cap"
+    }
+   ],
+   "generators": [
+    "last_name"
+   ]
+  },
+  {
+   "id": "gd-donn",
+   "element": "donn",
+   "forms": [
+    "Don-",
+    "Donn-"
+   ],
+   "language": "Scottish Gaelic",
+   "use": [
+    "given",
+    "surname"
+   ],
+   "meaning": "brown; brown-haired",
+   "tags": [
+    "colour"
+   ],
+   "note": "The second half of Donnchadh (Duncan) is disputed: 'battle' or 'noble'.",
+   "status": "attested",
+   "sources": [
+    "wikt-gd-donn",
+    "wikt-ga-donn"
+   ],
+   "examples": [
+    {
+     "name": "Duncan",
+     "parts": "donn + cath",
+     "gloss": "brown battle (or donn + cáid 'noble')",
+     "source": "wikt-en-duncan-cap"
+    }
+   ],
+   "generators": [
+    "last_name"
+   ]
+  },
+  {
+   "id": "gd-fionn",
+   "element": "fionn",
+   "forms": [
+    "Fionn-",
+    "Fin-",
+    "Fion-"
+   ],
+   "language": "Scottish Gaelic",
+   "use": [
+    "given",
+    "place"
+   ],
+   "meaning": "fair, white",
+   "tags": [
+    "fair",
+    "white"
+   ],
+   "note": "Same word in Irish; Welsh gwyn is a cousin. Fiona was popularised in the 1700s.",
+   "status": "attested",
+   "sources": [
+    "wikt-gd-fionn",
+    "wikt-ga-fionn",
+    "logainm-gloss"
+   ],
+   "examples": [
+    {
+     "name": "Fionnghal",
+     "parts": "fionn + guala",
+     "gloss": "fair shoulder",
+     "source": "wikt-gd-fionnghal-cap"
+    },
+    {
+     "name": "Finlay",
+     "parts": "fionn + laoch",
+     "gloss": "fair warrior",
+     "source": "wikt-en-finlay-cap"
+    },
+    {
+     "name": "Fiona",
+     "parts": "fionn",
+     "gloss": "fair, white",
+     "source": "wikt-en-fiona-cap"
+    }
+   ],
+   "generators": [
+    "druid"
+   ]
+  },
+  {
+   "id": "ga-dun",
+   "element": "dún",
+   "forms": [
+    "Dun-",
+    "Down-",
+    "Doon-"
+   ],
+   "language": "Irish",
+   "use": [
+    "place"
+   ],
+   "meaning": "fort",
+   "tags": [
+    "fort"
+   ],
+   "note": "Scottish Gaelic dùn 'fortification, fortified hill' gives Dundee and Dunfermline; Welsh din, dinas is a cousin.",
+   "status": "attested",
+   "sources": [
+    "wikt-ga-dun",
+    "logainm-gloss",
+    "snsbi-scotland"
+   ],
+   "examples": [
+    {
+     "name": "Donegal",
+     "parts": "dún + na + nGall",
+     "gloss": "fort of the foreigners",
+     "source": "wikt-en-donegal-cap"
+    },
+    {
+     "name": "Dundrum",
+     "parts": "dún + droim",
+     "gloss": "fort of the ridge",
+     "source": "wikt-en-dundrum-cap"
+    }
+   ],
+   "generators": [
+    "castle",
+    "fantasy_town"
+   ]
+  },
+  {
+   "id": "ga-cill",
+   "element": "cill",
+   "forms": [
+    "Kil-",
+    "Kill-"
+   ],
+   "language": "Irish",
+   "use": [
+    "place"
+   ],
+   "meaning": "church; churchyard",
+   "tags": [
+    "church"
+   ],
+   "note": "Borrowed from Latin cella; just as common in Scottish Gaelic, usually with a saint's name.",
+   "status": "attested",
+   "sources": [
+    "wikt-ga-cill",
+    "logainm-gloss",
+    "snsbi-scotland"
+   ],
+   "examples": [
+    {
+     "name": "Kildare",
+     "parts": "cill + dair",
+     "gloss": "church of the oak",
+     "source": "wikt-en-kildare-cap"
+    },
+    {
+     "name": "Kilmarnock",
+     "parts": "cill + Marnock",
+     "gloss": "St Marnock's church",
+     "source": "snsbi-scotland"
+    },
+    {
+     "name": "Kilbride",
+     "parts": "cill + Brighid",
+     "gloss": "St Brigid's church",
+     "source": "snsbi-scotland"
+    }
+   ],
+   "generators": [
+    "village"
+   ]
+  },
+  {
+   "id": "ga-cnoc",
+   "element": "cnoc",
+   "forms": [
+    "Knock-",
+    "Knock"
+   ],
+   "language": "Irish",
+   "use": [
+    "place"
+   ],
+   "meaning": "hill",
+   "tags": [
+    "hill"
+   ],
+   "note": "Also used in Scottish Gaelic for a hillock or knoll.",
+   "status": "attested",
+   "sources": [
+    "wikt-ga-cnoc",
+    "logainm-gloss"
+   ],
+   "examples": [
+    {
+     "name": "Cnoc na Cille",
+     "parts": "cnoc + na + cille",
+     "gloss": "hill of the church",
+     "source": "logainm-gloss"
+    }
+   ],
+   "generators": [
+    "mountain",
+    "village"
+   ]
+  },
+  {
+   "id": "ga-sliabh",
+   "element": "sliabh",
+   "forms": [
+    "Slieve ",
+    "Slieve-"
+   ],
+   "language": "Irish",
+   "use": [
+    "place"
+   ],
+   "meaning": "mountain, moor",
+   "tags": [
+    "mountain"
+   ],
+   "status": "attested",
+   "sources": [
+    "logainm-gloss"
+   ],
+   "examples": [],
+   "generators": [
+    "mountain"
+   ]
+  },
+  {
+   "id": "ga-droim",
+   "element": "droim",
+   "forms": [
+    "Drum-",
+    "Drom-"
+   ],
+   "language": "Irish",
+   "use": [
+    "place"
+   ],
+   "meaning": "ridge; back",
+   "tags": [
+    "hill"
+   ],
+   "note": "Scottish Gaelic druim, the same word.",
+   "status": "attested",
+   "sources": [
+    "wikt-ga-droim",
+    "logainm-gloss"
+   ],
+   "examples": [
+    {
+     "name": "Dundrum",
+     "parts": "dún + droim",
+     "gloss": "fort of the ridge",
+     "source": "wikt-en-dundrum-cap"
+    }
+   ],
+   "generators": [
+    "mountain",
+    "village"
+   ]
+  },
+  {
+   "id": "ga-ard",
+   "element": "ard",
+   "forms": [
+    "Ard-",
+    "Ard"
+   ],
+   "language": "Irish",
+   "use": [
+    "place"
+   ],
+   "meaning": "height; high",
+   "tags": [
+    "hill"
+   ],
+   "note": "Scottish Gaelic has àird 'height, point, promontory'.",
+   "status": "attested",
+   "sources": [
+    "wikt-ga-ard",
+    "logainm-gloss"
+   ],
+   "examples": [
+    {
+     "name": "Ardmore",
+     "parts": "ard + mór",
+     "gloss": "great height",
+     "source": "wikt-en-ardmore-cap"
+    }
+   ],
+   "generators": [
+    "mountain",
+    "village"
+   ]
+  },
+  {
+   "id": "ga-tulach",
+   "element": "tulach",
+   "forms": [
+    "Tulla-",
+    "Tully-"
+   ],
+   "language": "Irish",
+   "use": [
+    "place"
+   ],
+   "meaning": "hillock",
+   "tags": [
+    "hill"
+   ],
+   "status": "attested",
+   "sources": [
+    "wikt-ga-tulach",
+    "logainm-gloss"
+   ],
+   "examples": [
+    {
+     "name": "Tulach Mhór",
+     "parts": "tulach + mór",
+     "gloss": "great hillock (Tullamore)",
+     "source": "logainm-gloss"
+    }
+   ],
+   "generators": [
+    "village"
+   ]
+  },
+  {
+   "id": "ga-carraig",
+   "element": "carraig",
+   "forms": [
+    "Carrick-",
+    "Carrig-"
+   ],
+   "language": "Irish",
+   "use": [
+    "place"
+   ],
+   "meaning": "rock",
+   "tags": [
+    "rock"
+   ],
+   "note": "Same word in Scottish Gaelic; Welsh carreg is a cousin.",
+   "status": "attested",
+   "sources": [
+    "wikt-ga-carraig",
+    "logainm-gloss"
+   ],
+   "examples": [
+    {
+     "name": "Carrickfergus",
+     "parts": "carraig + Fearghas",
+     "gloss": "Fergus's rock",
+     "source": "wikt-en-carrickfergus-cap"
+    }
+   ],
+   "generators": [
+    "castle",
+    "mountain"
+   ]
+  },
+  {
+   "id": "ga-inis",
+   "element": "inis",
+   "forms": [
+    "Inis",
+    "Inish-",
+    "Ennis-",
+    "Inch-"
+   ],
+   "language": "Irish",
+   "use": [
+    "place"
+   ],
+   "meaning": "island; river meadow",
+   "tags": [
+    "island",
+    "meadow"
+   ],
+   "note": "Scottish Gaelic innis 'small island, meadow' gives Inch- names; Welsh ynys is a cousin.",
+   "status": "attested",
+   "sources": [
+    "wikt-ga-inis",
+    "logainm-gloss"
+   ],
+   "examples": [],
+   "generators": [
+    "island"
+   ]
+  },
+  {
+   "id": "ga-ros",
+   "element": "ros",
+   "forms": [
+    "Ros-",
+    "Ross-"
+   ],
+   "language": "Irish",
+   "use": [
+    "place"
+   ],
+   "meaning": "wooded height; wood; promontory",
+   "tags": [
+    "headland",
+    "wood"
+   ],
+   "note": "Also Scottish Gaelic; compare Welsh rhos 'moor'.",
+   "status": "attested",
+   "sources": [
+    "wikt-ga-ros",
+    "logainm-gloss"
+   ],
+   "examples": [
+    {
+     "name": "Rosslare",
+     "parts": "ros + láir",
+     "gloss": "middle promontory",
+     "source": "wikt-en-rosslare-cap"
+    }
+   ],
+   "generators": [
+    "village",
+    "forest"
+   ]
+  },
+  {
+   "id": "ga-maigh",
+   "element": "maigh",
+   "forms": [
+    "Moy-",
+    "Magh"
+   ],
+   "language": "Irish",
+   "use": [
+    "place"
+   ],
+   "meaning": "plain",
+   "tags": [
+    "field"
+   ],
+   "note": "Older spelling magh, also used in Scottish Gaelic.",
+   "status": "attested",
+   "sources": [
+    "logainm-gloss",
+    "wikt-gd-magh"
+   ],
+   "examples": [
+    {
+     "name": "Mayo",
+     "parts": "maigh + eo",
+     "gloss": "plain of yew trees",
+     "source": "wikt-en-mayo-cap"
+    }
+   ],
+   "generators": [
+    "village"
+   ]
+  },
+  {
+   "id": "ga-ath",
+   "element": "áth",
+   "forms": [
+    "Ath-",
+    "Ah-",
+    "-atha"
+   ],
+   "language": "Irish",
+   "use": [
+    "place"
+   ],
+   "meaning": "ford",
+   "tags": [
+    "ford"
+   ],
+   "note": "Scottish Gaelic àth 'ford' too.",
+   "status": "attested",
+   "sources": [
+    "wikt-ga-ath",
+    "logainm-gloss"
+   ],
+   "examples": [
+    {
+     "name": "Athlone",
+     "parts": "áth + Luan",
+     "gloss": "Luan's ford",
+     "source": "wikt-en-athlone-cap"
+    },
+    {
+     "name": "Baile Átha Cliath",
+     "parts": "baile + áth + cliath",
+     "gloss": "town of the ford of hurdles (Dublin)",
+     "source": "logainm-gloss"
+    }
+   ],
+   "generators": [
+    "river",
+    "village"
+   ]
+  },
+  {
+   "id": "ga-cluain",
+   "element": "cluain",
+   "forms": [
+    "Clon-",
+    "Cloon-"
+   ],
+   "language": "Irish",
+   "use": [
+    "place"
+   ],
+   "meaning": "meadow, pasture",
+   "tags": [
+    "meadow"
+   ],
+   "status": "attested",
+   "sources": [
+    "logainm-gloss",
+    "wikt-en-clonmel-cap"
+   ],
+   "examples": [
+    {
+     "name": "Clonmel",
+     "parts": "cluain + meala",
+     "gloss": "honey meadow",
+     "source": "wikt-en-clonmel-cap"
+    }
+   ],
+   "generators": [
+    "village"
+   ]
+  },
+  {
+   "id": "ga-doire",
+   "element": "doire",
+   "forms": [
+    "Derry",
+    "Derry-",
+    "Dery-"
+   ],
+   "language": "Irish",
+   "use": [
+    "place"
+   ],
+   "meaning": "oak wood, grove",
+   "tags": [
+    "oak",
+    "wood"
+   ],
+   "status": "attested",
+   "sources": [
+    "logainm-gloss",
+    "wikt-en-derry-cap"
+   ],
+   "examples": [
+    {
+     "name": "Derry",
+     "parts": "doire",
+     "gloss": "oak grove",
+     "source": "wikt-en-derry-cap"
+    }
+   ],
+   "generators": [
+    "forest",
+    "village"
+   ]
+  },
+  {
+   "id": "ga-rath",
+   "element": "ráth",
+   "forms": [
+    "Rath-",
+    "Ra-"
+   ],
+   "language": "Irish",
+   "use": [
+    "place"
+   ],
+   "meaning": "ring-fort",
+   "tags": [
+    "fort",
+    "enclosure"
+   ],
+   "note": "An earthen ring-fort, very common in Irish townland names.",
+   "status": "attested",
+   "sources": [
+    "logainm-gloss"
+   ],
+   "examples": [],
+   "generators": [
+    "castle",
+    "village"
+   ]
+  },
+  {
+   "id": "ga-lios",
+   "element": "lios",
+   "forms": [
+    "Lis-"
+   ],
+   "language": "Irish",
+   "use": [
+    "place"
+   ],
+   "meaning": "ring-fort, enclosure",
+   "tags": [
+    "fort",
+    "enclosure"
+   ],
+   "status": "attested",
+   "sources": [
+    "logainm-gloss",
+    "wikt-en-lismore-cap"
+   ],
+   "examples": [
+    {
+     "name": "Lismore",
+     "parts": "lios + mór",
+     "gloss": "great enclosure",
+     "source": "wikt-en-lismore-cap"
+    }
+   ],
+   "generators": [
+    "castle",
+    "village"
+   ]
+  },
+  {
+   "id": "ga-dubh",
+   "element": "dubh",
+   "forms": [
+    "Du-",
+    "Dubh-",
+    "Dou-"
+   ],
+   "language": "Irish",
+   "use": [
+    "place",
+    "given",
+    "surname"
+   ],
+   "meaning": "black, dark",
+   "tags": [
+    "black"
+   ],
+   "note": "Same word in Scottish Gaelic; Welsh du is a cousin.",
+   "status": "attested",
+   "sources": [
+    "wikt-ga-dubh",
+    "wikt-gd-dubh",
+    "logainm-gloss"
+   ],
+   "examples": [
+    {
+     "name": "Dublin",
+     "parts": "dubh + linn",
+     "gloss": "black pool",
+     "source": "wikt-en-dublin-cap"
+    },
+    {
+     "name": "Dougal",
+     "parts": "dubh + gall",
+     "gloss": "dark stranger",
+     "source": "wikt-en-dougal-cap"
+    }
+   ],
+   "generators": [
+    "river",
+    "last_name"
+   ]
+  },
+  {
+   "id": "ga-beag",
+   "element": "beag",
+   "forms": [
+    "-beg",
+    "Beg"
+   ],
+   "language": "Irish",
+   "use": [
+    "place"
+   ],
+   "meaning": "small, little",
+   "tags": [
+    "small"
+   ],
+   "note": "Same word in Scottish Gaelic; Welsh bach is a cousin.",
+   "status": "attested",
+   "sources": [
+    "wikt-ga-beag",
+    "logainm-gloss"
+   ],
+   "examples": [
+    {
+     "name": "An Baile Beag",
+     "parts": "an + baile + beag",
+     "gloss": "the small town",
+     "source": "logainm-gloss"
+    }
+   ],
+   "generators": [
+    "village"
+   ]
+  },
+  {
+   "id": "ga-glas",
+   "element": "glas",
+   "forms": [
+    "Glas-",
+    "-glass"
+   ],
+   "language": "Irish",
+   "use": [
+    "place"
+   ],
+   "meaning": "green; grey",
+   "tags": [
+    "green",
+    "grey"
+   ],
+   "note": "Covers green-blue-grey shades. Glasgow is from the Brittonic cousin: 'green hollow' (SNSBI).",
+   "status": "attested",
+   "sources": [
+    "wikt-ga-glas",
+    "logainm-gloss",
+    "snsbi-scotland"
+   ],
+   "examples": [],
+   "generators": [
+    "village"
+   ]
+  },
+  {
+   "id": "ga-o",
+   "element": "ó",
+   "forms": [
+    "Ó ",
+    "O'",
+    "Uí"
+   ],
+   "language": "Irish",
+   "use": [
+    "surname"
+   ],
+   "meaning": "grandson, descendant",
+   "tags": [
+    "family"
+   ],
+   "note": "Anglicised as O'; women use Ní instead.",
+   "status": "attested",
+   "sources": [
+    "wikt-ga-o",
+    "wikt-ga-o-cap",
+    "wikt-en-oconnor-cap"
+   ],
+   "examples": [
+    {
+     "name": "O'Connor",
+     "parts": "ó + Conchúr",
+     "gloss": "descendant of Conor",
+     "source": "wikt-en-oconnor-cap"
+    },
+    {
+     "name": "O'Brien",
+     "parts": "ó + Brian",
+     "gloss": "descendant of Brian",
+     "source": "wikt-en-obrien-cap"
+    }
+   ],
+   "page": "patronymic-names",
+   "generators": [
+    "last_name"
+   ]
+  },
+  {
+   "id": "ga-ni",
+   "element": "ní",
+   "forms": [
+    "Ní "
+   ],
+   "language": "Irish",
+   "use": [
+    "surname"
+   ],
+   "meaning": "daughter of the descendant of",
+   "tags": [
+    "daughter",
+    "family"
+   ],
+   "note": "Short for iníon uí, from iníon 'daughter'; the women's form of Ó.",
+   "status": "attested",
+   "sources": [
+    "wikt-ga-ni-cap",
+    "wikt-ga-inion"
+   ],
+   "examples": [],
+   "page": "patronymic-names",
+   "generators": [
+    "last_name"
+   ]
+  }
+ ]
+}

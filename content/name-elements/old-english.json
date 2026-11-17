@@ -1,0 +1,3862 @@
+{
+  "sources": [
+    {
+      "id": "bt-aethele",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: æðele",
+      "url": "https://bosworthtoller.com/940",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-ead",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: eád",
+      "url": "https://bosworthtoller.com/8279",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-beorht",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: beorht",
+      "url": "https://bosworthtoller.com/3741",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-wulf",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: wulf",
+      "url": "https://bosworthtoller.com/36812",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-wine",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: wine",
+      "url": "https://bosworthtoller.com/35887",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-weard",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: weard",
+      "url": "https://bosworthtoller.com/34828",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-aelf",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: ælf",
+      "url": "https://bosworthtoller.com/599",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-wig",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: wíg",
+      "url": "https://bosworthtoller.com/35625",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-here",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: here",
+      "url": "https://bosworthtoller.com/18861",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-sige",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: sige",
+      "url": "https://bosworthtoller.com/27665",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-cyne",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: cyne-",
+      "url": "https://bosworthtoller.com/7102",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-cyne-names",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: cyne- (addenda: proper names)",
+      "url": "https://bosworthtoller.com/42398",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-mund",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: mund",
+      "url": "https://bosworthtoller.com/23211",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-rice",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: ríce",
+      "url": "https://bosworthtoller.com/25771",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-gar",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: gár",
+      "url": "https://bosworthtoller.com/13290",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-helm",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: helm",
+      "url": "https://bosworthtoller.com/18674",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-frith",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: friþ",
+      "url": "https://bosworthtoller.com/12425",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-leof",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: leóf",
+      "url": "https://bosworthtoller.com/21430",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-os",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: ós",
+      "url": "https://bosworthtoller.com/25014",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-heard",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: heard",
+      "url": "https://bosworthtoller.com/18470",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-stan",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: stán",
+      "url": "https://bosworthtoller.com/28714",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-gifu",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: gifu",
+      "url": "https://bosworthtoller.com/17044",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-ecg",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: ecg",
+      "url": "https://bosworthtoller.com/8837",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-wynn",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: wyn",
+      "url": "https://bosworthtoller.com/36912",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-beorn",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: beorn",
+      "url": "https://bosworthtoller.com/3757",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-hild",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: hild",
+      "url": "https://bosworthtoller.com/19005",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-raed",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: rǽd",
+      "url": "https://bosworthtoller.com/25462",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-beald",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: beald",
+      "url": "https://bosworthtoller.com/3105",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-cuth",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: cúþ",
+      "url": "https://bosworthtoller.com/6861",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-weald",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: weald (power)",
+      "url": "https://bosworthtoller.com/34747",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-thryth",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: þrýþ",
+      "url": "https://bosworthtoller.com/32201",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-ceol",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: ceól",
+      "url": "https://bosworthtoller.com/6036",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-ealh",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: ealh",
+      "url": "https://bosworthtoller.com/8481",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-eald",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: eald",
+      "url": "https://bosworthtoller.com/8395",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-noth",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: nóþ",
+      "url": "https://bosworthtoller.com/23931",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-noth-names",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: nóþ (in proper names)",
+      "url": "https://bosworthtoller.com/23932",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-torht",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: torht",
+      "url": "https://bosworthtoller.com/30793",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-god",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: god",
+      "url": "https://bosworthtoller.com/17294",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-god-good",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: gód",
+      "url": "https://bosworthtoller.com/17296",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-aethelwulf",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: Æðel-wulf",
+      "url": "https://bosworthtoller.com/957",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-eadweard",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: Eádweard",
+      "url": "https://bosworthtoller.com/8323",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-eadmund",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: Eádmund",
+      "url": "https://bosworthtoller.com/8313",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-eadgar",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: Eádgár",
+      "url": "https://bosworthtoller.com/8288",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-eadwig",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: Eádwíg",
+      "url": "https://bosworthtoller.com/8325",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-eadred",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: Eádréd",
+      "url": "https://bosworthtoller.com/8320",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-aelfred",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: Ælfréd",
+      "url": "https://bosworthtoller.com/607",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-aelfric",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: Ælfríc",
+      "url": "https://bosworthtoller.com/609",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-aethelbryht",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: Æðelbryht",
+      "url": "https://bosworthtoller.com/935",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-ecgbryht",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: Ecg-bryht",
+      "url": "https://bosworthtoller.com/8840",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-aethelstan",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: Æðelstán",
+      "url": "https://bosworthtoller.com/954",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-aethelraed",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: Æðelrǽd",
+      "url": "https://bosworthtoller.com/952",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-aldhelm",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: Aldhelm",
+      "url": "https://bosworthtoller.com/1424",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-ceolwald",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: Ceolwald",
+      "url": "https://bosworthtoller.com/6044",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-aelfnoth",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: Ælf-nóþ",
+      "url": "https://bosworthtoller.com/605",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-eadbald",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: Eádbald",
+      "url": "https://bosworthtoller.com/8282",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-aethelbald",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: Æðelbald",
+      "url": "https://bosworthtoller.com/932",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-cingestun",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: Cinges tún",
+      "url": "https://bosworthtoller.com/6180",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-deorhyrst",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: Deór-hyrst",
+      "url": "https://bosworthtoller.com/7632",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-wintanceaster",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: Wintan-ceaster",
+      "url": "https://bosworthtoller.com/35936",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-oswald",
+      "title": "Wiktionary: Oswald",
+      "url": "https://en.wiktionary.org/wiki/Oswald",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-oswin",
+      "title": "Wiktionary: Oswin",
+      "url": "https://en.wiktionary.org/wiki/Oswin",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-godwin",
+      "title": "Wiktionary: Godwin",
+      "url": "https://en.wiktionary.org/wiki/Godwin",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-hereward",
+      "title": "Wiktionary: Hereward",
+      "url": "https://en.wiktionary.org/wiki/Hereward",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-wulfstan",
+      "title": "Wiktionary: Wulfstan",
+      "url": "https://en.wiktionary.org/wiki/Wulfstan",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-wulfhere",
+      "title": "Wiktionary: Wulfhere",
+      "url": "https://en.wiktionary.org/wiki/Wulfhere",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-leofric",
+      "title": "Wiktionary: Leofric",
+      "url": "https://en.wiktionary.org/wiki/Leofric",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-wilfred",
+      "title": "Wiktionary: Wilfred",
+      "url": "https://en.wiktionary.org/wiki/Wilfred",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-cuthbert",
+      "title": "Wiktionary: Cuthbert",
+      "url": "https://en.wiktionary.org/wiki/Cuthbert",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-mildred",
+      "title": "Wiktionary: Mildred",
+      "url": "https://en.wiktionary.org/wiki/Mildred",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-audrey",
+      "title": "Wiktionary: Audrey",
+      "url": "https://en.wiktionary.org/wiki/Audrey",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-godgifu",
+      "title": "Wiktionary: Godgifu",
+      "url": "https://en.wiktionary.org/wiki/Godgifu",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-ealhmund",
+      "title": "Wiktionary: Ealhmund",
+      "url": "https://en.wiktionary.org/wiki/Ealhmund",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-cyneheard",
+      "title": "Wiktionary: Cyneheard",
+      "url": "https://en.wiktionary.org/wiki/Cyneheard",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-heardred",
+      "title": "Wiktionary: Heardred",
+      "url": "https://en.wiktionary.org/wiki/Heardred",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-torhthelm",
+      "title": "Wiktionary: Torhthelm",
+      "url": "https://en.wiktionary.org/wiki/Torhthelm",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-wigheard",
+      "title": "Wiktionary: Wigheard",
+      "url": "https://en.wiktionary.org/wiki/Wigheard",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-beornwulf",
+      "title": "Wiktionary: Beornwulf",
+      "url": "https://en.wiktionary.org/wiki/Beornwulf",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-wynflaed",
+      "title": "Wiktionary: Wynflæd",
+      "url": "https://en.wiktionary.org/wiki/Wynflæd",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-sigebeorht",
+      "title": "Wiktionary: Sigebeorht",
+      "url": "https://en.wiktionary.org/wiki/Sigebeorht",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-hilda",
+      "title": "Wiktionary: Hilda",
+      "url": "https://en.wiktionary.org/wiki/Hilda",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-edgar",
+      "title": "Wiktionary: Edgar",
+      "url": "https://en.wiktionary.org/wiki/Edgar",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-kenilworth",
+      "title": "Wiktionary: Kenilworth",
+      "url": "https://en.wiktionary.org/wiki/Kenilworth",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-oxford",
+      "title": "Wiktionary: Oxford",
+      "url": "https://en.wiktionary.org/wiki/Oxford",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-stratford",
+      "title": "Wiktionary: Stratford",
+      "url": "https://en.wiktionary.org/wiki/Stratford",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-bradford",
+      "title": "Wiktionary: Bradford",
+      "url": "https://en.wiktionary.org/wiki/Bradford",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-ipswich",
+      "title": "Wiktionary: Ipswich",
+      "url": "https://en.wiktionary.org/wiki/Ipswich",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-norwich",
+      "title": "Wiktionary: Norwich",
+      "url": "https://en.wiktionary.org/wiki/Norwich",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-sheffield",
+      "title": "Wiktionary: Sheffield",
+      "url": "https://en.wiktionary.org/wiki/Sheffield",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-langley",
+      "title": "Wiktionary: Langley",
+      "url": "https://en.wiktionary.org/wiki/Langley",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-bexley",
+      "title": "Wiktionary: Bexley",
+      "url": "https://en.wiktionary.org/wiki/Bexley",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-burnley",
+      "title": "Wiktionary: Burnley",
+      "url": "https://en.wiktionary.org/wiki/Burnley",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-morley",
+      "title": "Wiktionary: Morley",
+      "url": "https://en.wiktionary.org/wiki/Morley",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-norton",
+      "title": "Wiktionary: Norton",
+      "url": "https://en.wiktionary.org/wiki/Norton",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-sutton",
+      "title": "Wiktionary: Sutton",
+      "url": "https://en.wiktionary.org/wiki/Sutton",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-acton",
+      "title": "Wiktionary: Acton",
+      "url": "https://en.wiktionary.org/wiki/Acton",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-ashton",
+      "title": "Wiktionary: Ashton",
+      "url": "https://en.wiktionary.org/wiki/Ashton",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-fulham",
+      "title": "Wiktionary: Fulham",
+      "url": "https://en.wiktionary.org/wiki/Fulham",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-evesham",
+      "title": "Wiktionary: Evesham",
+      "url": "https://en.wiktionary.org/wiki/Evesham",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-hampstead",
+      "title": "Wiktionary: Hampstead",
+      "url": "https://en.wiktionary.org/wiki/Hampstead",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-birmingham",
+      "title": "Wiktionary: Birmingham",
+      "url": "https://en.wiktionary.org/wiki/Birmingham",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-winchester",
+      "title": "Wiktionary: Winchester",
+      "url": "https://en.wiktionary.org/wiki/Winchester",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-sudbury",
+      "title": "Wiktionary: Sudbury",
+      "url": "https://en.wiktionary.org/wiki/Sudbury",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-hendon",
+      "title": "Wiktionary: Hendon",
+      "url": "https://en.wiktionary.org/wiki/Hendon",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-wimbledon",
+      "title": "Wiktionary: Wimbledon",
+      "url": "https://en.wiktionary.org/wiki/Wimbledon",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-croydon",
+      "title": "Wiktionary: Croydon",
+      "url": "https://en.wiktionary.org/wiki/Croydon",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-coombe",
+      "title": "Wiktionary: Coombe",
+      "url": "https://en.wiktionary.org/wiki/Coombe",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-holbrook",
+      "title": "Wiktionary: Holbrook",
+      "url": "https://en.wiktionary.org/wiki/Holbrook",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-stockwell",
+      "title": "Wiktionary: Stockwell",
+      "url": "https://en.wiktionary.org/wiki/Stockwell",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-windermere",
+      "title": "Wiktionary: Windermere",
+      "url": "https://en.wiktionary.org/wiki/Windermere",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-thorney",
+      "title": "Wiktionary: Thorney",
+      "url": "https://en.wiktionary.org/wiki/Thorney",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-selsey",
+      "title": "Wiktionary: Selsey",
+      "url": "https://en.wiktionary.org/wiki/Selsey",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-chertsey",
+      "title": "Wiktionary: Chertsey",
+      "url": "https://en.wiktionary.org/wiki/Chertsey",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-ivinghoe",
+      "title": "Wiktionary: Ivinghoe",
+      "url": "https://en.wiktionary.org/wiki/Ivinghoe",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-lyndhurst",
+      "title": "Wiktionary: Lyndhurst",
+      "url": "https://en.wiktionary.org/wiki/Lyndhurst",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-stoke",
+      "title": "Wiktionary: Stoke",
+      "url": "https://en.wiktionary.org/wiki/Stoke",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-bristol",
+      "title": "Wiktionary: Bristol",
+      "url": "https://en.wiktionary.org/wiki/Bristol",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-padstow",
+      "title": "Wiktionary: Padstow",
+      "url": "https://en.wiktionary.org/wiki/Padstow",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-uxbridge",
+      "title": "Wiktionary: Uxbridge",
+      "url": "https://en.wiktionary.org/wiki/Uxbridge",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-dartmoor",
+      "title": "Wiktionary: Dartmoor",
+      "url": "https://en.wiktionary.org/wiki/Dartmoor",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-ashbourne",
+      "title": "Wiktionary: Ashbourne",
+      "url": "https://en.wiktionary.org/wiki/Ashbourne",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-ludlow",
+      "title": "Wiktionary: Ludlow",
+      "url": "https://en.wiktionary.org/wiki/Ludlow",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-portsmouth",
+      "title": "Wiktionary: Portsmouth",
+      "url": "https://en.wiktionary.org/wiki/Portsmouth",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-gateshead",
+      "title": "Wiktionary: Gateshead",
+      "url": "https://en.wiktionary.org/wiki/Gateshead",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-liverpool",
+      "title": "Wiktionary: Liverpool",
+      "url": "https://en.wiktionary.org/wiki/Liverpool",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "wk-windsor",
+      "title": "Wiktionary: Windsor",
+      "url": "https://en.wiktionary.org/wiki/Windsor",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-tun",
+      "title": "Key to English Place-Names (University of Nottingham), elements: tūn",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=tun",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-ham",
+      "title": "Key to English Place-Names (University of Nottingham), elements: hām",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=ham",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-hamm",
+      "title": "Key to English Place-Names (University of Nottingham), elements: hamm",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=hamm",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-leah",
+      "title": "Key to English Place-Names (University of Nottingham), elements: lēah",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=leah",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-ford",
+      "title": "Key to English Place-Names (University of Nottingham), elements: ford",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=ford",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-wic",
+      "title": "Key to English Place-Names (University of Nottingham), elements: wīc",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=wic",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-burh",
+      "title": "Key to English Place-Names (University of Nottingham), elements: burh",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=burh",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-ceaster",
+      "title": "Key to English Place-Names (University of Nottingham), elements: ceaster",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=ceaster",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-feld",
+      "title": "Key to English Place-Names (University of Nottingham), elements: feld",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=feld",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-dun",
+      "title": "Key to English Place-Names (University of Nottingham), elements: dūn",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=dun",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-hyll",
+      "title": "Key to English Place-Names (University of Nottingham), elements: hyll",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=hyll",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-denu",
+      "title": "Key to English Place-Names (University of Nottingham), elements: denu",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=denu",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-cumb",
+      "title": "Key to English Place-Names (University of Nottingham), elements: cumb",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=cumb",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-broc",
+      "title": "Key to English Place-Names (University of Nottingham), elements: brōc",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=broc",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-wella",
+      "title": "Key to English Place-Names (University of Nottingham), elements: wella",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=wella",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-ea",
+      "title": "Key to English Place-Names (University of Nottingham), elements: ēa",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=ea",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-mere",
+      "title": "Key to English Place-Names (University of Nottingham), elements: mere",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=mere",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-eg",
+      "title": "Key to English Place-Names (University of Nottingham), elements: ēg",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=eg",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-stede",
+      "title": "Key to English Place-Names (University of Nottingham), elements: stede",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=stede",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-worth",
+      "title": "Key to English Place-Names (University of Nottingham), elements: worð",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=worth",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-hoh",
+      "title": "Key to English Place-Names (University of Nottingham), elements: hōh",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=hoh",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-wudu",
+      "title": "Key to English Place-Names (University of Nottingham), elements: wudu",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=wudu",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-hyrst",
+      "title": "Key to English Place-Names (University of Nottingham), elements: hyrst",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=hyrst",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-holt",
+      "title": "Key to English Place-Names (University of Nottingham), elements: holt",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=holt",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-stoc",
+      "title": "Key to English Place-Names (University of Nottingham), elements: stoc",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=stoc",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-stow",
+      "title": "Key to English Place-Names (University of Nottingham), elements: stōw",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=stow",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-brycg",
+      "title": "Key to English Place-Names (University of Nottingham), elements: brycg",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=brycg",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-mor",
+      "title": "Key to English Place-Names (University of Nottingham), elements: mōr",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=mor",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-mersc",
+      "title": "Key to English Place-Names (University of Nottingham), elements: mersc",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=mersc",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-crundel",
+      "title": "Key to English Place-Names (University of Nottingham), elements: crundel",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=crundel",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-burna",
+      "title": "Key to English Place-Names (University of Nottingham), elements: burna",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=burna",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-graf",
+      "title": "Key to English Place-Names (University of Nottingham), elements: grāf",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=graf",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-hlaw",
+      "title": "Key to English Place-Names (University of Nottingham), elements: hlāw",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=hlaw",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-port",
+      "title": "Key to English Place-Names (University of Nottingham), elements: port",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=port",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-ac",
+      "title": "Key to English Place-Names (University of Nottingham), elements: āc",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=ac",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-aesc",
+      "title": "Key to English Place-Names (University of Nottingham), elements: æsc",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=aesc",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-heafod",
+      "title": "Key to English Place-Names (University of Nottingham), elements: hēafod",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=heafod",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-pol",
+      "title": "Key to English Place-Names (University of Nottingham), elements: pōl",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=pol",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "kepn-ora",
+      "title": "Key to English Place-Names (University of Nottingham), elements: ōra",
+      "url": "https://kepn.nottingham.ac.uk/elements?q=ora",
+      "accessed": "2026-11-17"
+    },
+    {
+      "id": "bt-burh",
+      "title": "Bosworth-Toller Anglo-Saxon Dictionary online: burh",
+      "url": "https://bosworthtoller.com/5434",
+      "accessed": "2026-11-17"
+    }
+  ],
+  "elements": [
+    {
+      "id": "oe-aethele",
+      "element": "æþele",
+      "forms": [
+        "Æthel-",
+        "Ethel-",
+        "Æðel-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "noble",
+      "tags": [
+        "noble"
+      ],
+      "note": "Modern Ethel began as a short form of names starting with Ethel-.",
+      "status": "attested",
+      "sources": [
+        "bt-aethele",
+        "bt-aethelwulf",
+        "bt-aethelstan",
+        "bt-aethelraed"
+      ],
+      "examples": [
+        {
+          "name": "Æthelwulf",
+          "parts": "æþele + wulf",
+          "gloss": "noble wolf",
+          "source": "bt-aethelwulf"
+        },
+        {
+          "name": "Æthelstan",
+          "parts": "æþele + stān",
+          "gloss": "noble stone",
+          "source": "bt-aethelstan"
+        },
+        {
+          "name": "Æthelred",
+          "parts": "æþele + rǣd",
+          "gloss": "noble counsel",
+          "source": "bt-aethelraed"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-ead",
+      "element": "ēad",
+      "forms": [
+        "Ead-",
+        "Ed-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "wealth, prosperity, happiness",
+      "tags": [
+        "wealth"
+      ],
+      "note": "Source of the Ed- in Edward, Edmund, Edgar and Edith.",
+      "status": "attested",
+      "sources": [
+        "bt-ead",
+        "bt-eadweard",
+        "bt-eadmund",
+        "bt-eadgar"
+      ],
+      "examples": [
+        {
+          "name": "Eadweard",
+          "parts": "ēad + weard",
+          "gloss": "prosperity guardian",
+          "source": "bt-eadweard"
+        },
+        {
+          "name": "Eadmund",
+          "parts": "ēad + mund",
+          "gloss": "prosperity protection",
+          "source": "bt-eadmund"
+        },
+        {
+          "name": "Eadgar",
+          "parts": "ēad + gār",
+          "gloss": "prosperity spear",
+          "source": "bt-eadgar"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-beorht",
+      "element": "beorht",
+      "forms": [
+        "-beorht",
+        "-berht",
+        "-bert",
+        "Beorht-",
+        "Byrht-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "bright, shining, splendid",
+      "tags": [
+        "bright"
+      ],
+      "note": "Usual source of English names ending in -bert, such as Cuthbert.",
+      "status": "attested",
+      "sources": [
+        "bt-beorht",
+        "bt-aethelbryht",
+        "bt-ecgbryht"
+      ],
+      "examples": [
+        {
+          "name": "Æthelberht",
+          "parts": "æþele + beorht",
+          "gloss": "noble and bright",
+          "source": "bt-aethelbryht"
+        },
+        {
+          "name": "Ecgberht",
+          "parts": "ecg + beorht",
+          "gloss": "bright sword",
+          "source": "bt-ecgbryht"
+        },
+        {
+          "name": "Sigebeorht",
+          "parts": "sige + beorht",
+          "gloss": "bright victory",
+          "source": "wk-sigebeorht"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-wulf",
+      "element": "wulf",
+      "forms": [
+        "-wulf",
+        "Wulf-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "wolf",
+      "tags": [
+        "wolf"
+      ],
+      "status": "attested",
+      "sources": [
+        "bt-wulf",
+        "bt-aethelwulf",
+        "wk-wulfstan"
+      ],
+      "examples": [
+        {
+          "name": "Æthelwulf",
+          "parts": "æþele + wulf",
+          "gloss": "noble wolf",
+          "source": "bt-aethelwulf"
+        },
+        {
+          "name": "Wulfstan",
+          "parts": "wulf + stān",
+          "gloss": "wolf stone",
+          "source": "wk-wulfstan"
+        },
+        {
+          "name": "Wulfhere",
+          "parts": "wulf + here",
+          "gloss": "wolf army",
+          "source": "wk-wulfhere"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-wine",
+      "element": "wine",
+      "forms": [
+        "-wine",
+        "-win",
+        "Wine-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "friend",
+      "tags": [
+        "friend"
+      ],
+      "note": "Gives the -win of names such as Edwin, Godwin and Oswin.",
+      "status": "attested",
+      "sources": [
+        "bt-wine",
+        "wk-oswin",
+        "wk-godwin"
+      ],
+      "examples": [
+        {
+          "name": "Oswine",
+          "parts": "ōs + wine",
+          "gloss": "god friend",
+          "source": "wk-oswin"
+        },
+        {
+          "name": "Godwine",
+          "parts": "god + wine",
+          "gloss": "God's friend",
+          "source": "wk-godwin"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-weard",
+      "element": "weard",
+      "forms": [
+        "-weard",
+        "-ward"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "guard, guardian, protector",
+      "tags": [
+        "guardian",
+        "protection"
+      ],
+      "status": "attested",
+      "sources": [
+        "bt-weard",
+        "bt-eadweard",
+        "wk-hereward"
+      ],
+      "examples": [
+        {
+          "name": "Eadweard",
+          "parts": "ēad + weard",
+          "gloss": "prosperity guardian",
+          "source": "bt-eadweard"
+        },
+        {
+          "name": "Hereweard",
+          "parts": "here + weard",
+          "gloss": "army guard",
+          "source": "wk-hereward"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-aelf",
+      "element": "ælf",
+      "forms": [
+        "Ælf-",
+        "Elf-",
+        "Al-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "elf",
+      "tags": [
+        "elf",
+        "magic"
+      ],
+      "note": "Bosworth-Toller also lists an older, now rejected, analysis of Alfred from eald + friþ.",
+      "status": "attested",
+      "sources": [
+        "bt-aelf",
+        "bt-aelfred",
+        "bt-aelfric"
+      ],
+      "examples": [
+        {
+          "name": "Ælfred",
+          "parts": "ælf + rǣd",
+          "gloss": "elf counsel",
+          "source": "bt-aelfred"
+        },
+        {
+          "name": "Ælfric",
+          "parts": "ælf + rīce",
+          "gloss": "elf ruler",
+          "source": "bt-aelfric"
+        },
+        {
+          "name": "Ælfnoth",
+          "parts": "ælf + nōþ",
+          "gloss": "elf boldness",
+          "source": "bt-aelfnoth"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-wig",
+      "element": "wīg",
+      "forms": [
+        "Wig-",
+        "-wig",
+        "-wi"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "war, battle, fight",
+      "tags": [
+        "war",
+        "battle"
+      ],
+      "status": "attested",
+      "sources": [
+        "bt-wig",
+        "bt-eadwig",
+        "wk-wigheard"
+      ],
+      "examples": [
+        {
+          "name": "Eadwig",
+          "parts": "ēad + wīg",
+          "gloss": "prosperity war",
+          "source": "bt-eadwig"
+        },
+        {
+          "name": "Wigheard",
+          "parts": "wīg + heard",
+          "gloss": "battle-brave",
+          "source": "wk-wigheard"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-here",
+      "element": "here",
+      "forms": [
+        "Here-",
+        "-here",
+        "-her"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "army, host",
+      "tags": [
+        "army"
+      ],
+      "status": "attested",
+      "sources": [
+        "bt-here",
+        "wk-hereward",
+        "wk-wulfhere"
+      ],
+      "examples": [
+        {
+          "name": "Hereweard",
+          "parts": "here + weard",
+          "gloss": "army guard",
+          "source": "wk-hereward"
+        },
+        {
+          "name": "Wulfhere",
+          "parts": "wulf + here",
+          "gloss": "wolf army",
+          "source": "wk-wulfhere"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-sige",
+      "element": "sige",
+      "forms": [
+        "Sige-",
+        "Sig-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "victory",
+      "tags": [
+        "victory"
+      ],
+      "note": "A different sige meaning 'setting of the sun' exists, but the name element means victory.",
+      "status": "attested",
+      "sources": [
+        "bt-sige",
+        "wk-sigebeorht"
+      ],
+      "examples": [
+        {
+          "name": "Sigebeorht",
+          "parts": "sige + beorht",
+          "gloss": "bright victory",
+          "source": "wk-sigebeorht"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-cyne",
+      "element": "cyne-",
+      "forms": [
+        "Cyne-",
+        "Cyn-",
+        "Ken-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "royal, kingly",
+      "tags": [
+        "king",
+        "noble"
+      ],
+      "note": "Bosworth-Toller notes it occurs frequently in proper names; Cynehild survives inside the place-name Kenilworth.",
+      "status": "attested",
+      "sources": [
+        "bt-cyne",
+        "bt-cyne-names",
+        "wk-cyneheard"
+      ],
+      "examples": [
+        {
+          "name": "Cyneheard",
+          "parts": "cyne + heard",
+          "gloss": "royal and hardy",
+          "source": "wk-cyneheard"
+        },
+        {
+          "name": "Cynehild",
+          "parts": "cyne + hild",
+          "gloss": "royal battle",
+          "source": "wk-kenilworth"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-mund",
+      "element": "mund",
+      "forms": [
+        "-mund",
+        "-mond"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "protection, guardianship (literally 'hand')",
+      "tags": [
+        "protection",
+        "guardian"
+      ],
+      "status": "attested",
+      "sources": [
+        "bt-mund",
+        "bt-eadmund",
+        "wk-ealhmund"
+      ],
+      "examples": [
+        {
+          "name": "Eadmund",
+          "parts": "ēad + mund",
+          "gloss": "prosperity protection",
+          "source": "bt-eadmund"
+        },
+        {
+          "name": "Ealhmund",
+          "parts": "ealh + mund",
+          "gloss": "temple protection",
+          "source": "wk-ealhmund"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-rice",
+      "element": "rīce",
+      "forms": [
+        "-ric",
+        "-rīc"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "powerful, mighty; rule",
+      "tags": [
+        "power",
+        "ruler"
+      ],
+      "status": "attested",
+      "sources": [
+        "bt-rice",
+        "bt-aelfric",
+        "wk-leofric"
+      ],
+      "examples": [
+        {
+          "name": "Ælfric",
+          "parts": "ælf + rīce",
+          "gloss": "elf ruler",
+          "source": "bt-aelfric"
+        },
+        {
+          "name": "Leofric",
+          "parts": "lēof + rīce",
+          "gloss": "beloved ruler",
+          "source": "wk-leofric"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-gar",
+      "element": "gār",
+      "forms": [
+        "-gar",
+        "Gar-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "spear",
+      "tags": [
+        "spear"
+      ],
+      "status": "attested",
+      "sources": [
+        "bt-gar",
+        "bt-eadgar",
+        "wk-edgar"
+      ],
+      "examples": [
+        {
+          "name": "Eadgar",
+          "parts": "ēad + gār",
+          "gloss": "prosperity spear",
+          "source": "bt-eadgar"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-helm",
+      "element": "helm",
+      "forms": [
+        "-helm",
+        "Helm-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "helmet; protection, covering",
+      "tags": [
+        "helmet",
+        "protection"
+      ],
+      "status": "attested",
+      "sources": [
+        "bt-helm",
+        "bt-aldhelm",
+        "wk-torhthelm"
+      ],
+      "examples": [
+        {
+          "name": "Aldhelm",
+          "parts": "eald + helm",
+          "gloss": "old helmet",
+          "source": "bt-aldhelm"
+        },
+        {
+          "name": "Torhthelm",
+          "parts": "torht + helm",
+          "gloss": "bright helmet",
+          "source": "wk-torhthelm"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-frith",
+      "element": "friþ",
+      "forms": [
+        "-frith",
+        "-frid",
+        "-fred",
+        "Frith-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "peace, protection",
+      "tags": [
+        "peace"
+      ],
+      "note": "The -fred of Wilfred is friþ, but the -fred of Alfred is rǣd 'counsel'.",
+      "status": "attested",
+      "sources": [
+        "bt-frith",
+        "wk-wilfred"
+      ],
+      "examples": [
+        {
+          "name": "Wilfrith",
+          "parts": "wil + friþ",
+          "gloss": "will, peace",
+          "source": "wk-wilfred"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-leof",
+      "element": "lēof",
+      "forms": [
+        "Leof-",
+        "-leof"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "dear, beloved",
+      "tags": [
+        "beloved"
+      ],
+      "status": "attested",
+      "sources": [
+        "bt-leof",
+        "wk-leofric"
+      ],
+      "examples": [
+        {
+          "name": "Leofric",
+          "parts": "lēof + rīce",
+          "gloss": "beloved ruler",
+          "source": "wk-leofric"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-os",
+      "element": "ōs",
+      "forms": [
+        "Os-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "a god, divinity",
+      "tags": [
+        "god"
+      ],
+      "note": "The same word as Old Norse áss (the Æsir); as a separate word it survives mainly in names.",
+      "status": "attested",
+      "sources": [
+        "bt-os",
+        "wk-oswald",
+        "wk-oswin"
+      ],
+      "examples": [
+        {
+          "name": "Osweald",
+          "parts": "ōs + weald",
+          "gloss": "god power",
+          "source": "wk-oswald"
+        },
+        {
+          "name": "Oswine",
+          "parts": "ōs + wine",
+          "gloss": "god friend",
+          "source": "wk-oswin"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-heard",
+      "element": "heard",
+      "forms": [
+        "-heard",
+        "-hard",
+        "Heard-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "hard, firm, brave, hardy",
+      "tags": [
+        "hard",
+        "brave"
+      ],
+      "status": "attested",
+      "sources": [
+        "bt-heard",
+        "wk-heardred",
+        "wk-wigheard"
+      ],
+      "examples": [
+        {
+          "name": "Heardred",
+          "parts": "heard + rǣd",
+          "gloss": "hardy counsel",
+          "source": "wk-heardred"
+        },
+        {
+          "name": "Wigheard",
+          "parts": "wīg + heard",
+          "gloss": "battle-brave",
+          "source": "wk-wigheard"
+        },
+        {
+          "name": "Cyneheard",
+          "parts": "cyne + heard",
+          "gloss": "royal and hardy",
+          "source": "wk-cyneheard"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-stan",
+      "element": "stān",
+      "forms": [
+        "-stan",
+        "Stan-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given",
+        "place"
+      ],
+      "meaning": "stone",
+      "tags": [
+        "stone",
+        "rock"
+      ],
+      "status": "attested",
+      "sources": [
+        "bt-stan",
+        "bt-aethelstan",
+        "wk-wulfstan"
+      ],
+      "examples": [
+        {
+          "name": "Æthelstan",
+          "parts": "æþele + stān",
+          "gloss": "noble stone",
+          "source": "bt-aethelstan"
+        },
+        {
+          "name": "Wulfstan",
+          "parts": "wulf + stān",
+          "gloss": "wolf stone",
+          "source": "wk-wulfstan"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon",
+        "village"
+      ]
+    },
+    {
+      "id": "oe-gifu",
+      "element": "gifu",
+      "forms": [
+        "-gifu",
+        "-giva"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "gift",
+      "tags": [
+        "gift"
+      ],
+      "note": "Godgifu is the Old English form of Godiva.",
+      "status": "attested",
+      "sources": [
+        "bt-gifu",
+        "wk-godgifu"
+      ],
+      "examples": [
+        {
+          "name": "Godgifu",
+          "parts": "god + gifu",
+          "gloss": "gift of God",
+          "source": "wk-godgifu"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-ecg",
+      "element": "ecg",
+      "forms": [
+        "Ecg-",
+        "Eg-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "edge, blade, sword",
+      "tags": [
+        "sword"
+      ],
+      "note": "Ecgberht is the source of the later name Egbert.",
+      "status": "attested",
+      "sources": [
+        "bt-ecg",
+        "bt-ecgbryht"
+      ],
+      "examples": [
+        {
+          "name": "Ecgberht",
+          "parts": "ecg + beorht",
+          "gloss": "bright sword",
+          "source": "bt-ecgbryht"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-wynn",
+      "element": "wynn",
+      "forms": [
+        "Wyn-",
+        "-wynn"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "joy, delight",
+      "tags": [
+        "beloved"
+      ],
+      "note": "Wynflæd's second part, flǣd, has an uncertain meaning, often given as 'beauty'.",
+      "status": "attested",
+      "sources": [
+        "bt-wynn",
+        "wk-wynflaed"
+      ],
+      "examples": [
+        {
+          "name": "Wynflæd",
+          "parts": "wynn + flǣd",
+          "gloss": "joy + (perhaps) beauty",
+          "source": "wk-wynflaed"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-beorn",
+      "element": "beorn",
+      "forms": [
+        "Beorn-",
+        "-beorn"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "man, warrior, chief (poetic)",
+      "tags": [
+        "warrior"
+      ],
+      "note": "Related to Old Norse björn 'bear', but in Old English it means a man or warrior.",
+      "status": "attested",
+      "sources": [
+        "bt-beorn",
+        "wk-beornwulf"
+      ],
+      "examples": [
+        {
+          "name": "Beornwulf",
+          "parts": "beorn + wulf",
+          "gloss": "warrior wolf",
+          "source": "wk-beornwulf"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-hild",
+      "element": "hild",
+      "forms": [
+        "-hild",
+        "Hild-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "war, battle (poetic)",
+      "tags": [
+        "battle",
+        "war"
+      ],
+      "note": "Common in women's names; St Hild of Whitby gives the modern Hilda.",
+      "status": "attested",
+      "sources": [
+        "bt-hild",
+        "wk-hilda"
+      ],
+      "examples": [
+        {
+          "name": "Hild",
+          "parts": "hild",
+          "gloss": "battle",
+          "source": "wk-hilda"
+        },
+        {
+          "name": "Cynehild",
+          "parts": "cyne + hild",
+          "gloss": "royal battle",
+          "source": "wk-kenilworth"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-raed",
+      "element": "rǣd",
+      "forms": [
+        "-red",
+        "-ræd",
+        "Red-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "counsel, advice, wisdom",
+      "tags": [
+        "counsel",
+        "wise"
+      ],
+      "status": "attested",
+      "sources": [
+        "bt-raed",
+        "bt-aelfred",
+        "bt-eadred"
+      ],
+      "examples": [
+        {
+          "name": "Ælfred",
+          "parts": "ælf + rǣd",
+          "gloss": "elf counsel",
+          "source": "bt-aelfred"
+        },
+        {
+          "name": "Æthelred",
+          "parts": "æþele + rǣd",
+          "gloss": "noble counsel",
+          "source": "bt-aethelraed"
+        },
+        {
+          "name": "Eadred",
+          "parts": "ēad + rǣd",
+          "gloss": "prosperity counsel",
+          "source": "bt-eadred"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-beald",
+      "element": "beald",
+      "forms": [
+        "-beald",
+        "-bald",
+        "Bald-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "bold, brave",
+      "tags": [
+        "brave"
+      ],
+      "status": "attested",
+      "sources": [
+        "bt-beald",
+        "bt-eadbald",
+        "bt-aethelbald"
+      ],
+      "examples": [
+        {
+          "name": "Eadbald",
+          "parts": "ēad + beald",
+          "gloss": "prosperity, bold",
+          "source": "bt-eadbald"
+        },
+        {
+          "name": "Æthelbald",
+          "parts": "æþele + beald",
+          "gloss": "noble and bold",
+          "source": "bt-aethelbald"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-cuth",
+      "element": "cūþ",
+      "forms": [
+        "Cuth-",
+        "Cūþ-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "known, famous",
+      "tags": [
+        "famous"
+      ],
+      "status": "attested",
+      "sources": [
+        "bt-cuth",
+        "wk-cuthbert"
+      ],
+      "examples": [
+        {
+          "name": "Cuthbert",
+          "parts": "cūþ + beorht",
+          "gloss": "brightly known, famous",
+          "source": "wk-cuthbert"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-weald",
+      "element": "weald",
+      "forms": [
+        "-weald",
+        "-wald"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "power, rule",
+      "tags": [
+        "power",
+        "ruler"
+      ],
+      "note": "Not the same as weald 'forest', which is a separate place-name word.",
+      "status": "attested",
+      "sources": [
+        "bt-weald",
+        "wk-oswald",
+        "bt-ceolwald"
+      ],
+      "examples": [
+        {
+          "name": "Osweald",
+          "parts": "ōs + weald",
+          "gloss": "god power",
+          "source": "wk-oswald"
+        },
+        {
+          "name": "Ceolwald",
+          "parts": "ceol + weald",
+          "gloss": "ship power",
+          "source": "bt-ceolwald"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-thryth",
+      "element": "þrȳþ",
+      "forms": [
+        "-thryth",
+        "-dred",
+        "-dreda"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "strength, might",
+      "tags": [
+        "strong",
+        "power"
+      ],
+      "note": "Mostly in women's names; it gives the -dred of Mildred and lies behind Audrey.",
+      "status": "attested",
+      "sources": [
+        "bt-thryth",
+        "wk-mildred",
+        "wk-audrey"
+      ],
+      "examples": [
+        {
+          "name": "Mildthryth",
+          "parts": "milde + þrȳþ",
+          "gloss": "mild strength",
+          "source": "wk-mildred"
+        },
+        {
+          "name": "Æthelthryth",
+          "parts": "æþele + þrȳþ",
+          "gloss": "noble strength",
+          "source": "wk-audrey"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-ceol",
+      "element": "cēol",
+      "forms": [
+        "Ceol-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "ship, keel",
+      "tags": [
+        "sea"
+      ],
+      "status": "attested",
+      "sources": [
+        "bt-ceol",
+        "bt-ceolwald"
+      ],
+      "examples": [
+        {
+          "name": "Ceolwald",
+          "parts": "ceol + weald",
+          "gloss": "ship power",
+          "source": "bt-ceolwald"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-ealh",
+      "element": "ealh",
+      "forms": [
+        "Ealh-",
+        "Alh-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "temple, sanctuary, residence",
+      "tags": [
+        "holy"
+      ],
+      "status": "attested",
+      "sources": [
+        "bt-ealh",
+        "wk-ealhmund"
+      ],
+      "examples": [
+        {
+          "name": "Ealhmund",
+          "parts": "ealh + mund",
+          "gloss": "temple protection",
+          "source": "wk-ealhmund"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-eald",
+      "element": "eald",
+      "forms": [
+        "Eald-",
+        "Ald-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "old",
+      "tags": [
+        "old"
+      ],
+      "status": "attested",
+      "sources": [
+        "bt-eald",
+        "bt-aldhelm"
+      ],
+      "examples": [
+        {
+          "name": "Aldhelm",
+          "parts": "eald + helm",
+          "gloss": "old helmet",
+          "source": "bt-aldhelm"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-noth",
+      "element": "nōþ",
+      "forms": [
+        "-noth",
+        "-nōþ"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "boldness, daring",
+      "tags": [
+        "brave"
+      ],
+      "note": "Bosworth-Toller notes it occurs often as a part of proper names.",
+      "status": "attested",
+      "sources": [
+        "bt-noth",
+        "bt-noth-names",
+        "bt-aelfnoth"
+      ],
+      "examples": [
+        {
+          "name": "Ælfnoth",
+          "parts": "ælf + nōþ",
+          "gloss": "elf boldness",
+          "source": "bt-aelfnoth"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-torht",
+      "element": "torht",
+      "forms": [
+        "Torht-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "bright, splendid",
+      "tags": [
+        "bright"
+      ],
+      "status": "attested",
+      "sources": [
+        "bt-torht",
+        "wk-torhthelm"
+      ],
+      "examples": [
+        {
+          "name": "Torhthelm",
+          "parts": "torht + helm",
+          "gloss": "bright helmet",
+          "source": "wk-torhthelm"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-god",
+      "element": "god",
+      "forms": [
+        "God-"
+      ],
+      "language": "Old English",
+      "use": [
+        "given"
+      ],
+      "meaning": "God, a god (or gōd 'good')",
+      "tags": [
+        "god"
+      ],
+      "note": "Usually read as god 'God', but in some names it may be gōd 'good'; the two are hard to tell apart in spelling.",
+      "status": "uncertain",
+      "sources": [
+        "bt-god",
+        "bt-god-good",
+        "wk-godwin",
+        "wk-godgifu"
+      ],
+      "examples": [
+        {
+          "name": "Godwine",
+          "parts": "god + wine",
+          "gloss": "God's friend",
+          "source": "wk-godwin"
+        },
+        {
+          "name": "Godgifu",
+          "parts": "god + gifu",
+          "gloss": "gift of God",
+          "source": "wk-godgifu"
+        }
+      ],
+      "page": "old-english-names",
+      "generators": [
+        "anglo_saxon"
+      ]
+    },
+    {
+      "id": "oe-tun",
+      "element": "tūn",
+      "forms": [
+        "-ton",
+        "-tun"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "enclosure, farmstead, village, estate",
+      "tags": [
+        "farm",
+        "settlement",
+        "enclosure"
+      ],
+      "note": "The commonest English place-name element; it later gave the word 'town'.",
+      "status": "attested",
+      "sources": [
+        "kepn-tun",
+        "bt-cingestun",
+        "wk-norton"
+      ],
+      "examples": [
+        {
+          "name": "Norton",
+          "parts": "norþ + tūn",
+          "gloss": "north farmstead",
+          "source": "wk-norton"
+        },
+        {
+          "name": "Sutton",
+          "parts": "sūþ + tūn",
+          "gloss": "south farmstead",
+          "source": "wk-sutton"
+        },
+        {
+          "name": "Kingston",
+          "parts": "cyning + tūn",
+          "gloss": "the king's estate",
+          "source": "bt-cingestun"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "fantasy_town"
+      ]
+    },
+    {
+      "id": "oe-ham",
+      "element": "hām",
+      "forms": [
+        "-ham",
+        "Ham-"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "homestead, village, estate",
+      "tags": [
+        "home",
+        "settlement"
+      ],
+      "note": "Easily confused with hamm; early spellings are needed to tell them apart.",
+      "status": "attested",
+      "sources": [
+        "kepn-ham",
+        "wk-hampstead"
+      ],
+      "examples": [
+        {
+          "name": "Hampstead",
+          "parts": "hām + stede",
+          "gloss": "homestead site",
+          "source": "wk-hampstead"
+        },
+        {
+          "name": "Birmingham",
+          "parts": "Beorma + -inga + hām",
+          "gloss": "homestead of Beorma's people",
+          "source": "wk-birmingham"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "fantasy_town"
+      ]
+    },
+    {
+      "id": "oe-hamm",
+      "element": "hamm",
+      "forms": [
+        "-ham",
+        "-hamm"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "land hemmed in by water or marsh; river-meadow",
+      "tags": [
+        "meadow",
+        "river",
+        "enclosure"
+      ],
+      "note": "Looks the same as hām in modern names such as Fulham.",
+      "status": "attested",
+      "sources": [
+        "kepn-hamm",
+        "wk-fulham"
+      ],
+      "examples": [
+        {
+          "name": "Fulham",
+          "parts": "Fulla + hamm",
+          "gloss": "Fulla's riverside land",
+          "source": "wk-fulham"
+        },
+        {
+          "name": "Evesham",
+          "parts": "Eof + hamm",
+          "gloss": "Eof's enclosed land",
+          "source": "wk-evesham"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village"
+      ]
+    },
+    {
+      "id": "oe-leah",
+      "element": "lēah",
+      "forms": [
+        "-ley",
+        "-leigh",
+        "-ly",
+        "-lea"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "wood, woodland clearing; later pasture, meadow",
+      "tags": [
+        "clearing",
+        "wood",
+        "meadow"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-leah",
+        "wk-langley"
+      ],
+      "examples": [
+        {
+          "name": "Langley",
+          "parts": "lang + lēah",
+          "gloss": "long clearing",
+          "source": "wk-langley"
+        },
+        {
+          "name": "Bexley",
+          "parts": "byxe + lēah",
+          "gloss": "box-tree wood",
+          "source": "wk-bexley"
+        },
+        {
+          "name": "Morley",
+          "parts": "mōr + lēah",
+          "gloss": "moor wood",
+          "source": "wk-morley"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "forest"
+      ]
+    },
+    {
+      "id": "oe-ford",
+      "element": "ford",
+      "forms": [
+        "-ford",
+        "Ford-"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "ford, river crossing",
+      "tags": [
+        "ford",
+        "river"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-ford",
+        "wk-oxford"
+      ],
+      "examples": [
+        {
+          "name": "Oxford",
+          "parts": "oxa + ford",
+          "gloss": "oxen's ford",
+          "source": "wk-oxford"
+        },
+        {
+          "name": "Stratford",
+          "parts": "strǣt + ford",
+          "gloss": "ford on a Roman road",
+          "source": "wk-stratford"
+        },
+        {
+          "name": "Bradford",
+          "parts": "brād + ford",
+          "gloss": "broad ford",
+          "source": "wk-bradford"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "river"
+      ]
+    },
+    {
+      "id": "oe-wic",
+      "element": "wīc",
+      "forms": [
+        "-wich",
+        "-wick",
+        "-wyke"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "dwelling, farm, dairy farm; trading settlement",
+      "tags": [
+        "settlement",
+        "farm"
+      ],
+      "note": "Borrowed early from Latin vicus.",
+      "status": "attested",
+      "sources": [
+        "kepn-wic",
+        "wk-ipswich"
+      ],
+      "examples": [
+        {
+          "name": "Ipswich",
+          "parts": "Gip + wīc",
+          "gloss": "Gip's trading place",
+          "source": "wk-ipswich"
+        },
+        {
+          "name": "Norwich",
+          "parts": "norþ + wīc",
+          "gloss": "north settlement",
+          "source": "wk-norwich"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "fantasy_town"
+      ]
+    },
+    {
+      "id": "oe-burh",
+      "element": "burh",
+      "forms": [
+        "-bury",
+        "-borough",
+        "-burgh",
+        "-brough"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "fortified place, fort; later a town",
+      "tags": [
+        "fort",
+        "town"
+      ],
+      "note": "-bury comes from byrig, the dative case of burh.",
+      "status": "attested",
+      "sources": [
+        "kepn-burh",
+        "bt-burh",
+        "wk-sudbury"
+      ],
+      "examples": [
+        {
+          "name": "Sudbury",
+          "parts": "sūþ + burh",
+          "gloss": "south fort",
+          "source": "wk-sudbury"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "castle",
+        "fantasy_town"
+      ]
+    },
+    {
+      "id": "oe-ceaster",
+      "element": "ceaster",
+      "forms": [
+        "-chester",
+        "-cester",
+        "-caster"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "city, old fortification, Roman site",
+      "tags": [
+        "fort",
+        "town"
+      ],
+      "note": "Borrowed from Latin castra 'camp'; usually marks a Roman site.",
+      "status": "attested",
+      "sources": [
+        "kepn-ceaster",
+        "bt-wintanceaster",
+        "wk-winchester"
+      ],
+      "examples": [
+        {
+          "name": "Winchester",
+          "parts": "Venta + ceaster",
+          "gloss": "Roman town of Venta",
+          "source": "wk-winchester"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "castle",
+        "roman"
+      ]
+    },
+    {
+      "id": "oe-feld",
+      "element": "feld",
+      "forms": [
+        "-field",
+        "-feld"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "open country, land without trees; later arable land",
+      "tags": [
+        "field"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-feld",
+        "wk-sheffield"
+      ],
+      "examples": [
+        {
+          "name": "Sheffield",
+          "parts": "Sheaf + feld",
+          "gloss": "open land by the River Sheaf",
+          "source": "wk-sheffield"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village"
+      ]
+    },
+    {
+      "id": "oe-dun",
+      "element": "dūn",
+      "forms": [
+        "-don",
+        "-den",
+        "Down-"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "hill",
+      "tags": [
+        "hill"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-dun",
+        "wk-hendon"
+      ],
+      "examples": [
+        {
+          "name": "Hendon",
+          "parts": "hēah + dūn",
+          "gloss": "high hill",
+          "source": "wk-hendon"
+        },
+        {
+          "name": "Wimbledon",
+          "parts": "personal name + dūn",
+          "gloss": "a man's hill",
+          "source": "wk-wimbledon"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "mountain"
+      ]
+    },
+    {
+      "id": "oe-hyll",
+      "element": "hyll",
+      "forms": [
+        "-hill",
+        "-hull"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "hill, natural rise in the ground",
+      "tags": [
+        "hill"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-hyll"
+      ],
+      "examples": [],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "mountain"
+      ]
+    },
+    {
+      "id": "oe-denu",
+      "element": "denu",
+      "forms": [
+        "-den",
+        "-dean",
+        "-don"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "valley",
+      "tags": [
+        "valley"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-denu",
+        "wk-croydon"
+      ],
+      "examples": [
+        {
+          "name": "Croydon",
+          "parts": "croh + denu",
+          "gloss": "saffron valley",
+          "source": "wk-croydon"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village"
+      ]
+    },
+    {
+      "id": "oe-cumb",
+      "element": "cumb",
+      "forms": [
+        "-combe",
+        "-comb",
+        "Comp-"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "coomb, valley",
+      "tags": [
+        "valley"
+      ],
+      "note": "Possibly borrowed from British (compare Welsh cwm); KEPN gives both views.",
+      "status": "attested",
+      "sources": [
+        "kepn-cumb",
+        "wk-coombe"
+      ],
+      "examples": [
+        {
+          "name": "Coombe",
+          "parts": "cumb",
+          "gloss": "valley",
+          "source": "wk-coombe"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village"
+      ]
+    },
+    {
+      "id": "oe-broc",
+      "element": "brōc",
+      "forms": [
+        "-brook",
+        "Brock-"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "brook, stream",
+      "tags": [
+        "river",
+        "water"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-broc",
+        "wk-holbrook"
+      ],
+      "examples": [
+        {
+          "name": "Holbrook",
+          "parts": "hol + brōc",
+          "gloss": "hollow brook",
+          "source": "wk-holbrook"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "river"
+      ]
+    },
+    {
+      "id": "oe-wella",
+      "element": "wella",
+      "forms": [
+        "-well",
+        "-wall",
+        "Well-"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "spring, stream",
+      "tags": [
+        "spring",
+        "water"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-wella",
+        "wk-stockwell"
+      ],
+      "examples": [
+        {
+          "name": "Stockwell",
+          "parts": "stocc + wella",
+          "gloss": "spring by a tree stump",
+          "source": "wk-stockwell"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village"
+      ]
+    },
+    {
+      "id": "oe-ea",
+      "element": "ēa",
+      "forms": [
+        "Ea-",
+        "E-"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "river",
+      "tags": [
+        "river"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-ea"
+      ],
+      "examples": [],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "river"
+      ]
+    },
+    {
+      "id": "oe-mere",
+      "element": "mere",
+      "forms": [
+        "-mere",
+        "-mer",
+        "Mer-"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "pond, pool, lake",
+      "tags": [
+        "lake",
+        "water"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-mere",
+        "wk-windermere"
+      ],
+      "examples": [
+        {
+          "name": "Windermere",
+          "parts": "Winand + mere",
+          "gloss": "Winand's lake",
+          "source": "wk-windermere"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "lake"
+      ]
+    },
+    {
+      "id": "oe-eg",
+      "element": "ēg",
+      "forms": [
+        "-ey",
+        "-ea",
+        "-y"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "island; dry ground in marsh",
+      "tags": [
+        "island",
+        "marsh"
+      ],
+      "note": "In early names it usually means dry ground in a marsh, not an island at sea.",
+      "status": "attested",
+      "sources": [
+        "kepn-eg",
+        "wk-thorney"
+      ],
+      "examples": [
+        {
+          "name": "Thorney",
+          "parts": "þorn + ēg",
+          "gloss": "thorn-tree island",
+          "source": "wk-thorney"
+        },
+        {
+          "name": "Selsey",
+          "parts": "seolh + ēg",
+          "gloss": "seal island",
+          "source": "wk-selsey"
+        },
+        {
+          "name": "Chertsey",
+          "parts": "Cerot + ēg",
+          "gloss": "Cerot's island",
+          "source": "wk-chertsey"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "island"
+      ]
+    },
+    {
+      "id": "oe-stede",
+      "element": "stede",
+      "forms": [
+        "-stead",
+        "-sted"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "place, site; farm, estate",
+      "tags": [
+        "settlement",
+        "farm"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-stede",
+        "wk-hampstead"
+      ],
+      "examples": [
+        {
+          "name": "Hampstead",
+          "parts": "hām + stede",
+          "gloss": "homestead site",
+          "source": "wk-hampstead"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village"
+      ]
+    },
+    {
+      "id": "oe-worth",
+      "element": "worð",
+      "forms": [
+        "-worth",
+        "-worthy",
+        "-wardine"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "enclosure",
+      "tags": [
+        "enclosure",
+        "farm"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-worth",
+        "wk-kenilworth"
+      ],
+      "examples": [
+        {
+          "name": "Kenilworth",
+          "parts": "Cynehild + worð",
+          "gloss": "Cynehild's enclosure",
+          "source": "wk-kenilworth"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village"
+      ]
+    },
+    {
+      "id": "oe-hoh",
+      "element": "hōh",
+      "forms": [
+        "-hoe",
+        "-hoo",
+        "-ho"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "heel; sharply projecting piece of ground, spur of a hill",
+      "tags": [
+        "hill",
+        "headland"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-hoh",
+        "wk-ivinghoe"
+      ],
+      "examples": [
+        {
+          "name": "Ivinghoe",
+          "parts": "Ifa + -ing + hōh",
+          "gloss": "hill-spur of Ifa's people",
+          "source": "wk-ivinghoe"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village"
+      ]
+    },
+    {
+      "id": "oe-wudu",
+      "element": "wudu",
+      "forms": [
+        "-wood",
+        "Wood-"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "wood; timber",
+      "tags": [
+        "wood"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-wudu"
+      ],
+      "examples": [],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "forest"
+      ]
+    },
+    {
+      "id": "oe-hyrst",
+      "element": "hyrst",
+      "forms": [
+        "-hurst",
+        "-hirst",
+        "Hurst-"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "wooded hill",
+      "tags": [
+        "wood",
+        "hill"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-hyrst",
+        "bt-deorhyrst",
+        "wk-lyndhurst"
+      ],
+      "examples": [
+        {
+          "name": "Lyndhurst",
+          "parts": "lind + hyrst",
+          "gloss": "lime-tree wooded hill",
+          "source": "wk-lyndhurst"
+        },
+        {
+          "name": "Deerhurst",
+          "parts": "dēor + hyrst",
+          "gloss": "wooded hill of wild animals",
+          "source": "bt-deorhyrst"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "forest"
+      ]
+    },
+    {
+      "id": "oe-holt",
+      "element": "holt",
+      "forms": [
+        "-holt",
+        "Holt-"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "wood, often of a single kind of tree",
+      "tags": [
+        "wood"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-holt"
+      ],
+      "examples": [],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "forest"
+      ]
+    },
+    {
+      "id": "oe-stoc",
+      "element": "stoc",
+      "forms": [
+        "Stoke",
+        "-stock",
+        "-stoke"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "place; secondary or dependent settlement",
+      "tags": [
+        "settlement"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-stoc",
+        "wk-stoke"
+      ],
+      "examples": [
+        {
+          "name": "Stoke",
+          "parts": "stoc",
+          "gloss": "outlying settlement",
+          "source": "wk-stoke"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village"
+      ]
+    },
+    {
+      "id": "oe-stow",
+      "element": "stōw",
+      "forms": [
+        "-stow",
+        "-stowe",
+        "Stow-"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "place; place of assembly; holy place",
+      "tags": [
+        "holy",
+        "settlement"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-stow",
+        "wk-bristol"
+      ],
+      "examples": [
+        {
+          "name": "Bristol",
+          "parts": "brycg + stōw",
+          "gloss": "place by the bridge",
+          "source": "wk-bristol"
+        },
+        {
+          "name": "Padstow",
+          "parts": "Petroc + stōw",
+          "gloss": "St Petroc's holy place",
+          "source": "wk-padstow"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village"
+      ]
+    },
+    {
+      "id": "oe-brycg",
+      "element": "brycg",
+      "forms": [
+        "-bridge",
+        "-brig",
+        "Bridge-"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "bridge; causeway",
+      "tags": [
+        "bridge"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-brycg",
+        "wk-uxbridge"
+      ],
+      "examples": [
+        {
+          "name": "Uxbridge",
+          "parts": "Wixan + brycg",
+          "gloss": "bridge of the Wixan people",
+          "source": "wk-uxbridge"
+        },
+        {
+          "name": "Bristol",
+          "parts": "brycg + stōw",
+          "gloss": "place by the bridge",
+          "source": "wk-bristol"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "river"
+      ]
+    },
+    {
+      "id": "oe-mor",
+      "element": "mōr",
+      "forms": [
+        "-moor",
+        "More-",
+        "Mor-"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "marsh; barren upland, moor",
+      "tags": [
+        "marsh",
+        "hill"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-mor",
+        "wk-dartmoor"
+      ],
+      "examples": [
+        {
+          "name": "Dartmoor",
+          "parts": "Dart + mōr",
+          "gloss": "moor of the River Dart",
+          "source": "wk-dartmoor"
+        },
+        {
+          "name": "Morley",
+          "parts": "mōr + lēah",
+          "gloss": "moor wood",
+          "source": "wk-morley"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village"
+      ]
+    },
+    {
+      "id": "oe-mersc",
+      "element": "mersc",
+      "forms": [
+        "Marsh-",
+        "-marsh",
+        "Mers-"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "marsh",
+      "tags": [
+        "marsh"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-mersc"
+      ],
+      "examples": [],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village"
+      ]
+    },
+    {
+      "id": "oe-crundel",
+      "element": "crundel",
+      "forms": [
+        "Crond-",
+        "Crund-"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "chalk-pit, quarry, gully",
+      "tags": [
+        "valley",
+        "rock"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-crundel"
+      ],
+      "examples": [],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village"
+      ]
+    },
+    {
+      "id": "oe-burna",
+      "element": "burna",
+      "forms": [
+        "-bourne",
+        "-borne",
+        "-burn"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "stream",
+      "tags": [
+        "river",
+        "water"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-burna",
+        "wk-ashbourne"
+      ],
+      "examples": [
+        {
+          "name": "Ashbourne",
+          "parts": "æsc + burna",
+          "gloss": "ash-tree stream",
+          "source": "wk-ashbourne"
+        },
+        {
+          "name": "Burnley",
+          "parts": "Brun + lēah",
+          "gloss": "clearing by the River Brun",
+          "source": "wk-burnley"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "river"
+      ]
+    },
+    {
+      "id": "oe-graf",
+      "element": "grāf",
+      "forms": [
+        "-grave",
+        "-greave",
+        "Grove-"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "grove, copse",
+      "tags": [
+        "wood",
+        "tree"
+      ],
+      "note": "Do not confuse with græf 'pit, trench', which also gives -grave.",
+      "status": "attested",
+      "sources": [
+        "kepn-graf"
+      ],
+      "examples": [],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "forest"
+      ]
+    },
+    {
+      "id": "oe-hlaw",
+      "element": "hlāw",
+      "forms": [
+        "-low",
+        "-law",
+        "-lowe"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "burial mound; hill",
+      "tags": [
+        "hill"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-hlaw",
+        "wk-ludlow"
+      ],
+      "examples": [
+        {
+          "name": "Ludlow",
+          "parts": "Hlūde + hlāw",
+          "gloss": "mound by the Hlūde (River Teme)",
+          "source": "wk-ludlow"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village"
+      ]
+    },
+    {
+      "id": "oe-port",
+      "element": "port",
+      "forms": [
+        "Port-",
+        "-port"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "harbour; also market town, or town gate",
+      "tags": [
+        "harbour",
+        "town"
+      ],
+      "note": "Borrowed from Latin; the meaning (harbour, market, gate) depends on the place.",
+      "status": "attested",
+      "sources": [
+        "kepn-port",
+        "wk-portsmouth"
+      ],
+      "examples": [
+        {
+          "name": "Portsmouth",
+          "parts": "port + mūþa",
+          "gloss": "mouth of the harbour",
+          "source": "wk-portsmouth"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "fantasy_town"
+      ]
+    },
+    {
+      "id": "oe-ac",
+      "element": "āc",
+      "forms": [
+        "Ac-",
+        "Oak-",
+        "-ock"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "oak tree",
+      "tags": [
+        "oak",
+        "tree"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-ac",
+        "wk-acton"
+      ],
+      "examples": [
+        {
+          "name": "Acton",
+          "parts": "āc + tūn",
+          "gloss": "oak farmstead",
+          "source": "wk-acton"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "forest"
+      ]
+    },
+    {
+      "id": "oe-aesc",
+      "element": "æsc",
+      "forms": [
+        "Ash-",
+        "Ast-",
+        "-ash"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "ash tree",
+      "tags": [
+        "ash",
+        "tree"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-aesc",
+        "wk-ashton"
+      ],
+      "examples": [
+        {
+          "name": "Ashton",
+          "parts": "æsc + tūn",
+          "gloss": "ash-tree farmstead",
+          "source": "wk-ashton"
+        },
+        {
+          "name": "Ashbourne",
+          "parts": "æsc + burna",
+          "gloss": "ash-tree stream",
+          "source": "wk-ashbourne"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "forest"
+      ]
+    },
+    {
+      "id": "oe-heafod",
+      "element": "hēafod",
+      "forms": [
+        "-head",
+        "-hed"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "head; end or source; projecting ground, small hill",
+      "tags": [
+        "headland",
+        "hill"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-heafod",
+        "wk-gateshead"
+      ],
+      "examples": [
+        {
+          "name": "Gateshead",
+          "parts": "gāt + hēafod",
+          "gloss": "goat's headland",
+          "source": "wk-gateshead"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village"
+      ]
+    },
+    {
+      "id": "oe-pol",
+      "element": "pōl",
+      "forms": [
+        "-pool",
+        "Pool-"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "pool",
+      "tags": [
+        "water",
+        "lake"
+      ],
+      "status": "attested",
+      "sources": [
+        "kepn-pol",
+        "wk-liverpool"
+      ],
+      "examples": [
+        {
+          "name": "Liverpool",
+          "parts": "lifer + pōl",
+          "gloss": "pool of thick, muddy water",
+          "source": "wk-liverpool"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village",
+        "lake"
+      ]
+    },
+    {
+      "id": "oe-ora",
+      "element": "ōra",
+      "forms": [
+        "-or",
+        "-ore"
+      ],
+      "language": "Old English",
+      "use": [
+        "place"
+      ],
+      "meaning": "shore, bank; hill-slope",
+      "tags": [
+        "hill",
+        "sea"
+      ],
+      "note": "Used in southern England; a separate ōra means 'ore'.",
+      "status": "attested",
+      "sources": [
+        "kepn-ora",
+        "wk-windsor"
+      ],
+      "examples": [
+        {
+          "name": "Windsor",
+          "parts": "windel + ōra",
+          "gloss": "bank with a windlass",
+          "source": "wk-windsor"
+        }
+      ],
+      "page": "english-place-name-elements",
+      "generators": [
+        "village"
+      ]
+    }
+  ]
+}
