@@ -974,5 +974,12 @@
         "answer": "Yes, all are names used in the ancient Greek world, given in their Greek spellings with their usual meanings."
       }
     ]
+  },
+  "provenance": {
+    "lists": {
+      "male": "recorded",
+      "female": "recorded",
+      "cities": "recorded"
+    }
   }
 }

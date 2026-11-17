@@ -1563,5 +1563,18 @@
   "nameSource": {
     "kind": "mixed",
     "note": "The Tolkien option uses names from his books. Every other option is invented from elvish-sounding parts."
+  },
+  "provenance": {
+    "lists": {
+      "male.tolkien": "canon",
+      "female.tolkien": "canon",
+      "male.dnd": "invented",
+      "male.generic": "invented",
+      "female.dnd": "invented",
+      "female.generic": "invented",
+      "neutral": "invented"
+    },
+    "canon": "Tolkien",
+    "canonWork": "Tolkien's books"
   }
 }

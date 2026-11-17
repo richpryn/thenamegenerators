@@ -872,3 +872,22 @@ a.go{text-decoration:none}
 }
 .el-sources summary{cursor:pointer;font:700 16px/1.3 var(--head);min-height:44px;display:flex;align-items:center}
 .el-sources ol{font-size:14px;line-height:1.45}
+/* Header fit (17 Nov): the logo never shrinks under the menu; the search box gives way instead */
+@media (min-width:1024px){
+  .site-header .logo{flex:none}
+  .site-nav{min-width:0}
+  .nav-links > li.nav-find{flex:0 1 250px;min-width:150px;width:auto}
+}
+@media (min-width:1024px) and (max-width:1339px){.nav-links > li.nav-find{flex-basis:190px}}
+/* ---------- Provenance badges on generated names (17 Nov) ---------- */
+.prov{flex:none;display:inline-block;font:800 11px/1 var(--head);letter-spacing:.02em;padding:4px 7px 3px;border-radius:10px 8px 11px 7px;border:1.2px solid var(--ink);white-space:nowrap;color:var(--ink);background:var(--card);vertical-align:2px}
+.prov-recorded{background:var(--hi)}
+.prov-derived{background:#fff6d6}
+.prov-canon{background:#fde2d6}
+.prov-invented{background:var(--card);border-style:dashed}
+.results li .prov{margin-left:auto}
+.results li .prov + .name-check,.results li .prov + .name-save{margin-left:0}
+.exbox li .prov{margin-left:6px}
+.prov-key{display:flex;flex-wrap:wrap;gap:6px 16px;margin:var(--s3) 0 0;font-size:14px;line-height:1.4;color:var(--muted)}
+.prov-key > span{flex:1 1 260px}
+.prov-key .prov{margin-right:4px}

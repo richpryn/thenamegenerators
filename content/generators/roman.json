@@ -366,5 +366,10 @@
         "answer": "Chickpea, from the Latin cicer. Many cognomina began as nicknames about looks or character."
       }
     ]
+  },
+  "provenance": {
+    "lists": {
+      "*": "recorded"
+    }
   }
 }

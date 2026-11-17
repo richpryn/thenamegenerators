@@ -3229,5 +3229,20 @@
         "answer": "Yes, for the British, noble and sci-fi names, which are real surnames. The fantasy, gothic and funny names are invented, and the meaning shows the real words they are built from."
       }
     ]
+  },
+  "provenance": {
+    "lists": {
+      "name.british": "recorded",
+      "name.noble": "recorded",
+      "name.scifi": "recorded",
+      "name.fantasy": "invented",
+      "name.funny": "invented",
+      "meaning.british": "recorded",
+      "meaning.noble": "recorded",
+      "meaning.scifi": "recorded",
+      "meaning.fantasy": "invented",
+      "meaning.funny": "invented"
+    },
+    "hyphenated": "derived"
   }
 }

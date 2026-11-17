@@ -1036,5 +1036,13 @@
   "nameSource": {
     "kind": "historical",
     "note": "The first names are Old Norse names found in the sagas, spelt without accents. Full names pair them with patronymics (-son, -dóttir) and saga-style bynames, so each full name is a new person."
+  },
+  "provenance": {
+    "lists": {
+      "first": "recorded",
+      "patronym": "derived",
+      "bynames": "derived",
+      "bynames_f": "derived"
+    }
   }
 }

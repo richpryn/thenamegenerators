@@ -103,6 +103,19 @@ function validate({ categories, generators, homepage = { popular: [] }, sisterLi
     for (const field of ['title', 'slug', 'icon', 'category', 'published', 'description', 'seoKeywords', 'recipe', 'data']) {
       if (!gen[field]) errors.push(`${file}: missing "${field}"`);
     }
+    if (gen.provenance) {
+      const KINDS = ['recorded', 'derived', 'canon', 'invented'];
+      const lists = gen.provenance.lists || {};
+      if (!Object.keys(lists).length) errors.push(`${file}: provenance needs "lists"`);
+      const leaves = [];
+      (function walk(node, p) { if (Array.isArray(node)) leaves.push(p); else if (node && typeof node === 'object') Object.keys(node).forEach(k => walk(node[k], p ? p + '.' + k : k)); })(gen.data, '');
+      for (const [path, kind] of Object.entries(lists)) {
+        if (!KINDS.includes(kind)) errors.push(`${file}: provenance kind "${kind}" for "${path}" must be one of ${KINDS.join(', ')}`);
+        if (path !== '*' && !leaves.some(l => l === path || l.startsWith(path + '.'))) errors.push(`${file}: provenance list "${path}" isn't in data`);
+      }
+      if (gen.provenance.hyphenated && !KINDS.includes(gen.provenance.hyphenated)) errors.push(`${file}: provenance "hyphenated" must be one of ${KINDS.join(', ')}`);
+      if (Object.values(lists).includes('canon') && !gen.provenance.canon) errors.push(`${file}: provenance with "canon" lists needs "canon" (e.g. "Tolkien")`);
+    }
     if (gen.seoTitle && gen.seoTitle.length > 65) warnings.push(`${file}: seoTitle is ${gen.seoTitle.length} characters (aim for 60 or fewer)`);
     if (gen.published && !/^\d{4}-\d{2}-\d{2}$/.test(gen.published)) {
       errors.push(`${file}: "published" should be a date like 2026-10-20`);

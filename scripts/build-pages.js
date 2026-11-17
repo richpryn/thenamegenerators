@@ -258,7 +258,7 @@ function exampleNames(generator) {
     return generator.examplePairs.map(pair => ({
       label: Object.values(pair).join(' + '),
       names: engine.generate({ ...textValues, ...pair }, 4),
-    }));
+    })).map(g => ({ ...g, kinds: g.names.map(n => engine.provenanceOf(n)) }));
   }
 
   const perGroup = Math.max(4, Math.ceil(TOTAL / combos.length));
@@ -267,7 +267,14 @@ function exampleNames(generator) {
       .map(k => optionLabel(filters[k], combo[k]).replace(/\s*\(.*\)\s*$/, ''))
       .join(' · '),
     names: engine.generate({ ...textValues, ...combo }, perGroup),
-  }));
+  })).map(g => ({ ...g, kinds: g.names.map(n => engine.provenanceOf(n)) }));
+}
+
+/** An example name in the HTML, with its provenance badge when the generator has them. */
+function exampleItem(name, kind, generator) {
+  const info = kind ? RecipeEngine.provenanceLabel(kind, generator) : null;
+  if (!info) return `<li>${escapeHtml(name)}</li>`;
+  return `<li data-name="${escapeHtml(name)}">${escapeHtml(name)} <span class="prov prov-${kind}" title="${escapeHtml(info.title)}">${escapeHtml(info.label)}</span></li>`;
 }
 
 /**
@@ -347,6 +354,12 @@ function howItWorksHtml(generator) {
   if (src && src.note) {
     const lead = { invented: 'Every name is invented.', historical: 'These are real historical names.', mixed: 'Some names are real and some are invented.' }[src.kind] || '';
     parts.push(`<p><strong>Where the names come from:</strong> ${escapeHtml(lead)} ${markdownBold(escapeHtml(src.note))}</p>`);
+  }
+  if (generator.provenance) {
+    const seen = new Set(exampleNames(generator).flatMap(g => g.kinds || []));
+    const kinds = RecipeEngine.KIND_ORDER.filter(k => seen.has(k));
+    const said = kinds.map(k => { const i = RecipeEngine.provenanceLabel(k, generator); return `<strong>${escapeHtml(i.label)}</strong> ${escapeHtml(i.title.charAt(0).toLowerCase() + i.title.slice(1))}`; });
+    parts.push(`<p><strong>The labels on each name:</strong> ${said.join(' ')} Our <a href="../reference/how-fantasy-names-work.html">Naming Library</a> explains how we check names.</p>`);
   }
   parts.push(`<p>Each press gives you 8 names. "Show 8 more" adds 8 you haven't seen yet. Once you've seen them all, "Start again" shuffles the whole list again.</p>`);
 
@@ -627,7 +640,7 @@ function generateGeneratorPage(generator, category, site) {
                 ${examples.map(group => `<div class="exbox hd">
                     ${group.label ? `<h3>${escapeHtml(group.label)}</h3>` : ''}
                     <ul>
-                        ${group.names.map(n => `<li>${escapeHtml(n)}</li>`).join('\n                        ')}
+                        ${group.names.map((n, i) => exampleItem(n, (group.kinds || [])[i], generator)).join('\n                        ')}
                     </ul>
                 </div>`).join('\n                ')}
                 </div>
