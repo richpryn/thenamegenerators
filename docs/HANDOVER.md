@@ -43,6 +43,7 @@ To stop it re-reading this long chat, Rich could switch it to start a fresh sess
 - Rich's style: meanings in straight single quotes in list copy.
 - Outreach (backlinks) is agreed in principle. It waits on Rich choosing an email service (Google Workspace or Zoho) and moving mail off Bluehost. Plan: a 30-site target list in a separate Outreach page, drafts in Gmail for Rich to send, and a "fastest-rising names" ONS data story for the press.
 - Monthly email signup: agreed in principle, waiting on the email service choice.
+- My World (saved name projects): decided 17 Nov to wait for analytics; when built, "My Worlds", on the save button and homepage only. Revisit in February (Site Jobs).
 
 ### Waiting on Rich (see Site Jobs)
 Companies House API key and Worker; affiliate sign-ups; Cloudflare Web Analytics; email service and moving mail off Bluehost; the Search Console check of the name lists in late December.
