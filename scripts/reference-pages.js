@@ -78,8 +78,8 @@ function referenceFor(records) {
 }
 
 /** The "Understanding these names" box on a generator page. */
-function generatorBox(records, prefix = '../', finder = false) {
-  if ((!records || !records.length) && !finder) return '';
+function generatorBox(records, prefix = '../', finder = false, toolkit = false) {
+  if ((!records || !records.length) && !finder && !toolkit) return '';
   records = records || [];
   return `
             <section class="section ref-box hd">
@@ -88,7 +88,8 @@ function generatorBox(records, prefix = '../', finder = false) {
                 <p>Where names like these come from, from our Naming Library:</p>
                 <ul class="ref-links">
                     ${records.map(r => `<li><a href="${prefix}reference/${r.slug}.html">${escapeHtml(r.title)}</a>: ${escapeHtml(r.description)}</li>`).join('\n                    ')}${finder ? `
-                    <li><a href="${prefix}reference/name-elements.html">Name Element Finder</a>: look up what the word parts in these names mean, with sources.</li>` : ''}
+                    <li><a href="${prefix}reference/name-elements.html">Name Element Finder</a>: look up what the word parts in these names mean, with sources.</li>` : ''}${toolkit ? `
+                    <li><a href="${prefix}worldbuilders-naming-toolkit.html">The Worldbuilder's Naming Toolkit</a>: name a whole world so its names sound consistent, with a printable worksheet.</li>` : ''}
                 </ul>
             </section>`;
 }
@@ -253,7 +254,7 @@ function referenceIndex(records, site, helpers, elementCount = 0) {
   const groups = SECTIONS.map(s => ({ ...s, items: records.filter(r => r.section === s.key) })).filter(s => s.items.length);
   return `${head({ title, desc, url, schema, helpers })}
 <body>
-    ${layout.svgSprite(['library', 'signpost', ...records.map(r => r.motif || 'library')])}
+    ${layout.svgSprite(['library', 'signpost', 'compass-rose', ...records.map(r => r.motif || 'library')])}
     ${layout.siteHeader('../', site.categories)}
 
     <div class="wrap layout">
@@ -264,6 +265,7 @@ function referenceIndex(records, site, helpers, elementCount = 0) {
                 ${layout.doodle('library')}
             </div>
             <p class="lede">The origins, meanings and construction of names. Every page cites its sources, and every example says whether the name is historically recorded, reconstructed by scholars, built by us from real word parts, or simply invented.</p>
+            <a class="trycard hd tap ref-finder" href="../worldbuilders-naming-toolkit.html">${layout.doodle('compass-rose', 'doodle try-d')}<span class="try-t"><b>The Worldbuilder's Naming Toolkit</b><span>Five steps to naming a whole fantasy world consistently, using the research in this library, with a printable worksheet.</span></span><em aria-hidden="true">→</em></a>
             ${elementCount ? `<a class="trycard hd tap ref-finder" href="name-elements.html">${layout.doodle('signpost', 'doodle try-d')}<span class="try-t"><b>Name Element Finder</b><span>Search ${elementCount} sourced word parts by meaning, such as wolf, river or king, across Old English, Old Norse, Welsh, Gaelic, Latin, Greek and more.</span></span><em aria-hidden="true">→</em></a>` : ''}
             ${groups.map(g => `<section class="section" id="${g.key}">
                 <h2>${escapeHtml(g.name)}</h2>

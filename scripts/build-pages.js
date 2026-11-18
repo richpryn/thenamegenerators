@@ -26,6 +26,7 @@ const REF_FOR = Reference.referenceFor(REFERENCE);
 const Elements = require('./elements-page');
 const ELEMENTS = Elements.loadElements();
 const ELEMENT_GENS = Elements.generatorKeys(ELEMENTS);
+const Toolkit = require('./toolkit-page');
 const Lists = require('./list-pages');
 const LISTS = Lists.loadLists();
 const LIST_FOR = Lists.listsFor(LISTS);
@@ -722,7 +723,7 @@ function generateGeneratorPage(generator, category, site) {
             </section>
             <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="${generator.updated}">${longDate(generator.updated)}</time></p>
 ${examplesHTML}
-${howItWorksHtml(generator)}${Reference.generatorBox(REF_FOR[generator.key], '../', ELEMENT_GENS.has(generator.key))}${guideLinksHtml(generator, site)}${Lists.generatorBox(LIST_FOR[generator.key])}
+${howItWorksHtml(generator)}${Reference.generatorBox(REF_FOR[generator.key], '../', ELEMENT_GENS.has(generator.key), Toolkit.GENERATOR_KEYS.has(generator.key))}${guideLinksHtml(generator, site)}${Lists.generatorBox(LIST_FOR[generator.key])}
             ${layout.sectionBreak(motif)}
             <article class="section article" itemscope itemtype="https://schema.org/Article">
                 <meta itemprop="headline" content="${escGenTitle}">
@@ -1965,7 +1966,7 @@ function fillMarkers(file, sections) {
  * Homepage "Every name has a story" band: the Naming Library and the Name
  * Element Finder, so the research side of the site is seen, not just linked.
  */
-const LIBRARY_HOME_MOTIFS = ['signpost', 'crown', 'quill', 'library'];
+const LIBRARY_HOME_MOTIFS = ['signpost', 'crown', 'quill', 'compass-rose'];
 function libraryHomeHtml() {
   if (!REFERENCE.length) return '';
   const examples = REFERENCE.reduce((n, r) => n + (r.examples || []).length, 0);
@@ -1976,7 +1977,7 @@ function libraryHomeHtml() {
     n ? { href: `reference/${Elements.SLUG}.html`, motif: 'signpost', title: 'Name Element Finder', line: `Search ${n} word parts by meaning, such as wolf, river or king, in ${langs} languages.` } : null,
     { href: 'reference/#languages', motif: 'crown', title: 'Naming traditions', line: `Old English, Old Norse, Welsh and Roman names: ${sectionCount('languages')} guides to how each culture named people.` },
     { href: 'reference/#construction', motif: 'quill', title: 'How names are built', line: 'Prefixes, suffixes, patronymics and place-name endings, with real examples.' },
-    { href: 'reference/#fantasy', motif: 'library', title: 'Fantasy and fiction', line: 'How invented names are made to sound right, from Tolkien\'s languages to dragon names.' },
+    { href: `${Toolkit.SLUG}.html`, motif: 'compass-rose', title: "Worldbuilder's Naming Toolkit", line: 'Name a whole fantasy world in five steps, with a free printable worksheet.' },
   ].filter(Boolean);
   return `
             <section class="section home-lib" aria-labelledby="lib-title">
@@ -2178,6 +2179,7 @@ function build() {
 
   Reference.buildReference(site, { scriptJson, ICON_LINKS, markdownBold, plainText, longDate }, ELEMENTS.elements.length);
   Elements.buildElements(site, REFERENCE, { scriptJson, ICON_LINKS, markdownBold, plainText, longDate });
+  Toolkit.buildToolkit(site, REFERENCE, { scriptJson, ICON_LINKS, markdownBold, plainText, longDate }, ELEMENTS.elements.length);
   Lists.buildLists(site, REFERENCE, { scriptJson, ICON_LINKS, markdownBold, plainText, longDate });
   generateSitemap(site);
   generateHtmlSitemap(site);
@@ -2321,6 +2323,12 @@ ${LISTS.map(l => `  <url>
     <lastmod>${latest(REFERENCE.map(r => r.updated || r.published))}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/${Toolkit.SLUG}.html</loc>
+    <lastmod>${Toolkit.UPDATED}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 ${ELEMENTS.elements.length ? `  <url>
     <loc>${baseUrl}/reference/${Elements.SLUG}.html</loc>
@@ -2608,6 +2616,7 @@ Made by Rich: ${baseUrl}/about.html
   }
   if (REFERENCE.length) {
     text += `\n## Naming Library\n\nSourced reference pages on the origins, meanings and construction of names. Each example is labelled as recorded, reconstructed, built from real parts, or invented.\n\n- [The Naming Library](${baseUrl}/reference/)\n` +
+      `- [The Worldbuilder's Naming Toolkit](${baseUrl}/${Toolkit.SLUG}.html): a five-step method for naming a fictional world consistently, with a printable worksheet\n` +
       (ELEMENTS.elements.length ? `- [Name Element Finder](${baseUrl}/reference/${Elements.SLUG}.html): search ${ELEMENTS.elements.length} sourced name elements (word parts such as Old English wulf 'wolf') by meaning, language and kind of name\n` : '') +
       REFERENCE.map(r => `- [${r.title}](${baseUrl}/reference/${r.slug}.html): ${plainText(r.description)}`).join('\n') + '\n';
   }
