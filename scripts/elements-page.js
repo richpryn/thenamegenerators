@@ -18,6 +18,9 @@ const SLUG = 'name-elements';
 
 const LANGUAGES = ['Old English', 'Old Norse', 'Welsh', 'Cornish', 'Scottish Gaelic', 'Irish', 'Latin', 'Ancient Greek',
   'Old High German', 'Frankish', 'Old French'];
+// BCP 47 codes for the lang attribute on each headword (screen readers and search engines)
+const LANG_CODE = { 'Old English': 'ang', 'Old Norse': 'non', 'Welsh': 'cy', 'Cornish': 'kw', 'Scottish Gaelic': 'gd', 'Irish': 'ga',
+  'Latin': 'la', 'Ancient Greek': 'grc', 'Old High German': 'goh', 'Frankish': 'frk', 'Old French': 'fro' };
 const USES = { given: 'First names', place: 'Place names', surname: 'Surnames' };
 const ELEMENT_STATUS = { attested: ['Recorded', 'The word and its meaning are recorded in dictionaries of the language.'],
   uncertain: ['Uncertain', 'Scholars disagree about the meaning, or it is unproven.'] };
@@ -165,7 +168,7 @@ function page(data, site, records, helpers, { published, updated }) {
     ].filter(Boolean).join(' · ');
     const text = [e.element, ...(e.forms || []), e.meaning, e.note, e.language, ...(e.tags || []), ...(e.examples || []).map(x => `${x.name} ${x.gloss || ''}`)].join(' ');
     return `<tr class="el-row" id="el-${e.id}" data-lang="${escapeHtml(e.language)}" data-use="${(e.use || []).join(' ')}" data-tags="${(e.tags || []).join(' ')}" data-text="${escapeHtml(text)}">
-                        <th scope="row" class="el-c-el"><b lang="${escapeHtml(e.language)}">${escapeHtml(e.element)}</b>${forms.length ? `<span class="el-forms">${escapeHtml(forms.join(', '))}</span>` : ''}</th>
+                        <th scope="row" class="el-c-el"><b lang="${LANG_CODE[e.language] || 'und'}">${escapeHtml(e.element)}</b>${forms.length ? `<span class="el-forms">${escapeHtml(forms.join(', '))}</span>` : ''}</th>
                         <td class="el-c-mean"><span class="el-meaning">'${escapeHtml(e.meaning)}'</span>${e.status === 'uncertain' ? ` <span class="ref-status ref-uncertain" title="${escapeHtml(ELEMENT_STATUS.uncertain[1])}">Uncertain</span>` : ''}<sup>${sup(e.sources)}</sup>${e.note ? `<span class="el-note">${escapeHtml(e.note)}</span>` : ''}${links ? `<span class="el-links">${links}</span>` : ''}</td>
                         <td class="el-c-ex">${examples ? `<ul>${examples}</ul>` : ''}</td>
                         <td class="el-c-lang">${escapeHtml(e.language)}<span>${(e.use || []).map(u => USES[u]).join(', ')}</span></td>
