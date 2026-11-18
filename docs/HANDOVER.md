@@ -42,6 +42,9 @@ To stop it re-reading this long chat, Rich could switch it to start a fresh sess
 - Business names follow the rules in CLAUDE.md "Start here".
 - Name lists: ONS ranks are for England and Wales only. No typed ranks. Disputed meanings are kept and labelled.
 - Rich's style: meanings in straight single quotes in list copy.
+- Outreach tracker (18 Nov): https://claude.ai/artifact/1s6kFY2S4J6j5EsHXsZrUe (a Sheet, 47 checked prospects with pitch and destination). Drafts go in Gmail for Rich to send once the email service is chosen.
+- **Worldbuilder's Naming Toolkit** (18 Nov): `worldbuilders-naming-toolkit.html`, built by `scripts/toolkit-page.js`; the outreach flagship. Linked from the homepage Library band, the Library index and the 22 generators it lists.
+- Speed (Lighthouse, 18 Nov): performance 91–99, SEO 100, accessibility 96–100; best practices 79 only because Grow by Mediavine sets third-party cookies (see the consent decision on Site Jobs).
 - Outreach (backlinks) is agreed in principle. It waits on Rich choosing an email service (Google Workspace or Zoho) and moving mail off Bluehost. Plan: a 30-site target list in a separate Outreach page, drafts in Gmail for Rich to send, and a "fastest-rising names" ONS data story for the press.
 - Monthly email signup: agreed in principle, waiting on the email service choice.
 - My World (saved name projects): decided 17 Nov to wait for analytics; when built, "My Worlds", on the save button and homepage only. Revisit in February (Site Jobs).
