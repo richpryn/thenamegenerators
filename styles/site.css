@@ -918,3 +918,19 @@ a.go{text-decoration:none}
   .tk-printing .tk-worksheet h2{font-size:20px;background:none}
   .tk-ws th,.tk-ws td{height:26px}
 }
+/* ---------- Name Builder (18 Nov) ---------- */
+.nb-form .nb-go{flex:0 0 auto;justify-content:flex-end}
+.nb-form .nb-go .go{min-height:46px;border:0;cursor:pointer;font:700 16px var(--head);padding:0 var(--s4)}
+.nb-list{list-style:none;margin:0;padding:0;display:grid;gap:0 var(--s5)}
+@media (min-width:760px){.nb-results .nb-list{grid-template-columns:1fr 1fr}}
+.nb-item{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;padding:10px 0;border-bottom:1px solid var(--rule);min-width:0}
+.nb-name{font:700 21px/1.25 var(--body);color:var(--ink);background:none;border:0;padding:0;cursor:copy;text-align:left}
+.nb-item .prov{text-decoration:none}
+.nb-parts{flex-basis:100%;font-size:15px;color:var(--muted)}
+.nb-parts a{color:var(--ink)}
+.nb-results{margin-top:var(--s4)}
+.nb-key{font-size:14px;color:var(--muted);margin:var(--s3) 0 0;line-height:1.6}
+.nb-ex{display:grid;gap:var(--grid-gap)}
+@media (min-width:760px){.nb-ex{grid-template-columns:1fr 1fr}}
+.nb-ex .exbox h3{margin:0 0 var(--s2)}
+.nb-ex .nb-name{font-size:18px;cursor:text}

@@ -1,0 +1,50 @@
+{
+  "_note": "Name Builder (reference/name-builder.html). Joining forms for two-part names, each tied to a sourced element in content/name-elements/ by id. [id, form] or [id, form, gender] where gender is m or f (second parts of people's names only). Built by scripts/builder-page.js; checked by the validator.",
+  "published": "2026-11-18",
+  "updated": "2026-11-18",
+  "languages": [
+    {
+      "key": "oe",
+      "name": "Old English",
+      "people": {
+        "first": [["oe-aethele", "Æthel"], ["oe-aelf", "Ælf"], ["oe-beorht", "Beorht"], ["oe-beorn", "Beorn"], ["oe-ceol", "Ceol"], ["oe-cuth", "Cuth"], ["oe-cyne", "Cyne"], ["oe-ead", "Ead"], ["oe-eald", "Eald"], ["oe-ealh", "Ealh"], ["oe-ecg", "Ecg"], ["oe-frith", "Frithu"], ["oe-gar", "Gar"], ["oe-god", "God"], ["oe-heard", "Heard"], ["oe-helm", "Helm"], ["oe-here", "Here"], ["oe-hild", "Hild"], ["oe-leof", "Leof"], ["oe-os", "Os"], ["oe-sige", "Sige"], ["oe-stan", "Stan"], ["oe-torht", "Torht"], ["oe-wig", "Wig"], ["oe-wine", "Wine"], ["oe-wulf", "Wulf"], ["oe-wynn", "Wyn"]],
+        "second": [["oe-beald", "bald", "m"], ["oe-beorht", "beorht", "m"], ["oe-beorn", "beorn", "m"], ["oe-frith", "frith", "m"], ["oe-gar", "gar", "m"], ["oe-heard", "heard", "m"], ["oe-helm", "helm", "m"], ["oe-here", "here", "m"], ["oe-mund", "mund", "m"], ["oe-noth", "noth", "m"], ["oe-raed", "red", "m"], ["oe-rice", "ric", "m"], ["oe-stan", "stan", "m"], ["oe-weald", "weald", "m"], ["oe-weard", "weard", "m"], ["oe-wig", "wig", "m"], ["oe-wine", "wine", "m"], ["oe-wulf", "wulf", "m"], ["oe-burh", "burh", "f"], ["oe-gifu", "gifu", "f"], ["oe-hild", "hild", "f"], ["oe-thryth", "thryth", "f"], ["oe-wynn", "wynn", "f"]]
+      },
+      "places": {
+        "first": [["oe-ac", "Oak"], ["oe-aesc", "Ash"], ["oe-broc", "Brook"], ["oe-brycg", "Bridge"], ["oe-dun", "Down"], ["oe-ford", "Ford"], ["oe-ham", "Ham"], ["oe-holt", "Holt"], ["oe-hyrst", "Hurst"], ["oe-mere", "Mer"], ["oe-mersc", "Marsh"], ["oe-mor", "More"], ["oe-pol", "Pool"], ["oe-port", "Port"], ["oe-stan", "Stan"], ["oe-stow", "Stow"], ["oe-wella", "Well"], ["oe-wudu", "Wood"]],
+        "second": [["oe-tun", "ton"], ["oe-leah", "ley"], ["oe-ford", "ford"], ["oe-ham", "ham"], ["oe-burh", "bury"], ["oe-feld", "field"], ["oe-wella", "well"], ["oe-wic", "wick"], ["oe-worth", "worth"], ["oe-stede", "stead"], ["oe-denu", "den"], ["oe-dun", "don"], ["oe-hyrst", "hurst"], ["oe-cumb", "combe"], ["oe-mere", "mere"], ["oe-pol", "pool"], ["oe-brycg", "bridge"], ["oe-broc", "brook"], ["oe-burna", "bourne"], ["oe-hlaw", "low"], ["oe-hoh", "hoe"], ["oe-holt", "holt"], ["oe-wudu", "wood"], ["oe-stow", "stow"], ["oe-eg", "ey"], ["oe-mor", "moor"], ["oe-heafod", "head"], ["oe-graf", "grave"]]
+      }
+    },
+    {
+      "key": "on",
+      "name": "Old Norse",
+      "spelling": "Shown in the plain English spelling of the sagas in translation, without accents or the -r ending: Thorstein for Þorsteinn.",
+      "people": {
+        "first": [["on-ass", "As"], ["on-bjorn", "Bjarn"], ["on-brandr", "Brand"], ["on-geirr", "Geir"], ["on-grimr", "Grim"], ["on-gud", "Gud"], ["on-gunnr", "Gunn"], ["on-hallr", "Hall"], ["on-herr", "Her"], ["on-hildr", "Hild"], ["on-hjalmr", "Hjalm"], ["on-hjorr", "Hjor"], ["on-hrafn", "Hrafn"], ["on-hrodr", "Hrod"], ["on-ketill", "Ketil"], ["on-leifr", "Leif"], ["on-orn", "Orn"], ["on-ormr", "Orm"], ["on-regin", "Ragn"], ["on-run", "Run"], ["on-sigr", "Sig"], ["on-steinn", "Stein"], ["on-svanr", "Svan"], ["on-sveinn", "Svein"], ["on-thjod", "Thjod"], ["on-thorr", "Thor"], ["on-ulfr", "Ulf"], ["on-ve", "Ve"], ["on-yngvi", "Ingi"]],
+        "second": [["on-bjorn", "bjorn", "m"], ["on-brandr", "brand", "m"], ["on-geirr", "geir", "m"], ["on-grimr", "grim", "m"], ["on-hallr", "hall", "m"], ["on-ketill", "kel", "m"], ["on-leifr", "leif", "m"], ["on-mundr", "mund", "m"], ["on-ormr", "orm", "m"], ["on-rikr", "rik", "m"], ["on-steinn", "stein", "m"], ["on-ulfr", "olf", "m"], ["on-valdr", "vald", "m"], ["on-vordr", "vard", "m"], ["on-bjorg", "bjorg", "f"], ["on-dis", "dis", "f"], ["on-fridr", "frid", "f"], ["on-gunnr", "gunn", "f"], ["on-hildr", "hild", "f"], ["on-run", "run", "f"]]
+      },
+      "places": {
+        "first": [["on-grimr", "Grims"], ["on-holmr", "Holm"], ["on-kelda", "Keld"], ["on-kirkja", "Kirk"], ["on-lundr", "Lund"], ["on-ormr", "Orms"], ["on-steinn", "Stain"], ["on-thing", "Ting"]],
+        "second": [["on-byr", "by"], ["on-thorp", "thorpe"], ["on-thveit", "thwaite"], ["on-topt", "toft"], ["on-dalr", "dale"], ["on-bekkr", "beck"], ["on-gil", "gill"], ["on-gardr", "garth"], ["on-holmr", "holm"], ["on-nes", "ness"], ["on-vik", "wick"], ["on-kelda", "keld"], ["on-haugr", "how"], ["on-fjall", "fell"], ["on-vad", "wath"], ["on-skali", "scale"], ["on-lundr", "lund"], ["on-vollr", "wall"]]
+      }
+    },
+    {
+      "key": "goh",
+      "name": "Old High German and Frankish",
+      "spelling": "Shown in the forms that came into English and German through the Normans and Franks: Wilhelm, Gerhard, Ludwig.",
+      "people": {
+        "first": [["goh-adal", "Adal"], ["goh-arn", "Arn"], ["goh-bald", "Bald"], ["goh-bero", "Bern"], ["goh-diot", "Diet"], ["goh-fridu", "Frid"], ["goh-ger", "Ger"], ["goh-gund", "Gund"], ["goh-heim", "Heim"], ["goh-helm", "Helm"], ["goh-heri", "Her"], ["goh-hiltja", "Hild"], ["goh-hlut", "Lud"], ["goh-hruod", "Rod"], ["goh-hugu", "Hug"], ["goh-liut", "Liut"], ["goh-ragin", "Rein"], ["goh-sigu", "Sig"], ["goh-walt", "Walt"], ["goh-willo", "Wil"], ["goh-wolf", "Wolf"]],
+        "second": [["goh-bald", "bald", "m"], ["goh-beraht", "bert", "m"], ["goh-fridu", "frid", "m"], ["goh-ger", "ger", "m"], ["goh-hart", "hard", "m"], ["goh-helm", "helm", "m"], ["goh-heri", "her", "m"], ["goh-munt", "mund", "m"], ["goh-rat", "rad", "m"], ["goh-rih", "ric", "m"], ["goh-walt", "wald", "m"], ["goh-wic", "wig", "m"], ["goh-wolf", "olf", "m"], ["goh-gund", "gund", "f"], ["goh-hiltja", "hild", "f"]]
+      }
+    },
+    {
+      "key": "grc",
+      "name": "Ancient Greek",
+      "spelling": "Shown in the Latin spelling used in English: Theodorus, Nicolaus, Philippus.",
+      "people": {
+        "first": [["grc-agathos", "Agatho"], ["grc-alexo", "Alex"], ["grc-aner", "Andro"], ["grc-aristos", "Aristo"], ["grc-archos", "Arche"], ["grc-chrysos", "Chryso"], ["grc-demos", "Demo"], ["grc-doron", "Doro"], ["grc-eu", "Eu"], ["grc-hippos", "Hippo"], ["grc-kallos", "Calli"], ["grc-kleos", "Cleo"], ["grc-megas", "Mega"], ["grc-nike", "Nico"], ["grc-philos", "Philo"], ["grc-polys", "Poly"], ["grc-sophos", "Sopho"], ["grc-theos", "Theo"]],
+        "second": [["grc-aner", "ander", "m"], ["grc-archos", "archus", "m"], ["grc-demos", "demus", "m"], ["grc-doron", "dorus", "m"], ["grc-genes", "genes", "m"], ["grc-hippos", "ippus", "m"], ["grc-kleos", "cles", "m"], ["grc-kratos", "crates", "m"], ["grc-laos", "laus", "m"], ["grc-mache", "machus", "m"], ["grc-philos", "philus", "m"], ["grc-theos", "theus", "m"], ["grc-aner", "andra", "f"], ["grc-doron", "dora", "f"], ["grc-hippos", "ippe", "f"], ["grc-mache", "mache", "f"], ["grc-nike", "nice", "f"], ["grc-theos", "thea", "f"]]
+      }
+    }
+  ]
+}

@@ -27,6 +27,7 @@ const Elements = require('./elements-page');
 const ELEMENTS = Elements.loadElements();
 const ELEMENT_GENS = Elements.generatorKeys(ELEMENTS);
 const Toolkit = require('./toolkit-page');
+const Builder = require('./builder-page');
 const Lists = require('./list-pages');
 const LISTS = Lists.loadLists();
 const LIST_FOR = Lists.listsFor(LISTS);
@@ -2179,6 +2180,7 @@ function build() {
 
   Reference.buildReference(site, { scriptJson, ICON_LINKS, markdownBold, plainText, longDate }, ELEMENTS.elements.length);
   Elements.buildElements(site, REFERENCE, { scriptJson, ICON_LINKS, markdownBold, plainText, longDate });
+  Builder.buildBuilder(site, REFERENCE, { scriptJson, ICON_LINKS, markdownBold, plainText, longDate });
   Toolkit.buildToolkit(site, REFERENCE, { scriptJson, ICON_LINKS, markdownBold, plainText, longDate }, ELEMENTS.elements.length);
   Lists.buildLists(site, REFERENCE, { scriptJson, ICON_LINKS, markdownBold, plainText, longDate });
   generateSitemap(site);
@@ -2327,6 +2329,12 @@ ${LISTS.map(l => `  <url>
   <url>
     <loc>${baseUrl}/${Toolkit.SLUG}.html</loc>
     <lastmod>${Toolkit.UPDATED}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/reference/${Builder.SLUG}.html</loc>
+    <lastmod>${Builder.dates().updated}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -2617,6 +2625,7 @@ Made by Rich: ${baseUrl}/about.html
   if (REFERENCE.length) {
     text += `\n## Naming Library\n\nSourced reference pages on the origins, meanings and construction of names. Each example is labelled as recorded, reconstructed, built from real parts, or invented.\n\n- [The Naming Library](${baseUrl}/reference/)\n` +
       `- [The Worldbuilder's Naming Toolkit](${baseUrl}/${Toolkit.SLUG}.html): a five-step method for naming a fictional world consistently, with a printable worksheet\n` +
+      `- [Name Builder](${baseUrl}/reference/${Builder.SLUG}.html): build Old English, Old Norse, Germanic or Greek names from two real, sourced parts, chosen by meaning\n` +
       (ELEMENTS.elements.length ? `- [Name Element Finder](${baseUrl}/reference/${Elements.SLUG}.html): search ${ELEMENTS.elements.length} sourced name elements (word parts such as Old English wulf 'wolf') by meaning, language and kind of name\n` : '') +
       REFERENCE.map(r => `- [${r.title}](${baseUrl}/reference/${r.slug}.html): ${plainText(r.description)}`).join('\n') + '\n';
   }

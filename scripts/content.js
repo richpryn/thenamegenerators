@@ -236,6 +236,7 @@ function validate({ categories, generators, homepage = { popular: [] }, sisterLi
   errors.push(...Reference.validateReference(Reference.loadReference(), generators));
   // Name Element Finder (content/name-elements/*.json)
   const Elements = require('./elements-page');
+  errors.push(...require('./builder-page').validate(generators));
   errors.push(...Elements.validateElements(Elements.loadElements(), generators, new Set(Reference.loadReference().map(r => r.slug))));
   // Name lists (content/lists/*.json)
   const Lists = require('./list-pages');

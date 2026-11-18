@@ -240,7 +240,7 @@ ${filters}
             <section class="section article">
                 <h2>Using elements to make a name</h2>
                 <p>Most early Germanic names, including Old English and Old Norse ones, join two elements: a first part such as æþel 'noble' or Þór 'Thor', and a second such as wulf 'wolf' or steinn 'stone'. Place names add a description to a landscape word, so a ford, a hill or a farm gets a name from who owned it or what grew there.</p>
-                <p>To build your own, pick elements from one language, so the name sounds of a piece, and check the forms column for how a word changes inside a name. A name you build this way is <b>built from real parts</b>, not recorded, unless you find it in the sources. Our <a href="name-prefixes-and-suffixes.html">guide to prefixes and suffixes</a> explains the patterns.</p>
+                <p>To build your own, pick elements from one language, so the name sounds of a piece, and check the forms column for how a word changes inside a name. A name you build this way is <b>built from real parts</b>, not recorded, unless you find it in the sources. Our <a href="name-prefixes-and-suffixes.html">guide to prefixes and suffixes</a> explains the patterns, and the <a href="name-builder.html">Name Builder</a> joins elements for you.</p>
             </section>
 
             <section class="section">

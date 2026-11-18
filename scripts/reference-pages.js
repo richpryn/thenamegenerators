@@ -266,6 +266,7 @@ function referenceIndex(records, site, helpers, elementCount = 0) {
             </div>
             <p class="lede">The origins, meanings and construction of names. Every page cites its sources, and every example says whether the name is historically recorded, reconstructed by scholars, built by us from real word parts, or simply invented.</p>
             <a class="trycard hd tap ref-finder" href="../worldbuilders-naming-toolkit.html">${layout.doodle('compass-rose', 'doodle try-d')}<span class="try-t"><b>The Worldbuilder's Naming Toolkit</b><span>Five steps to naming a whole fantasy world consistently, using the research in this library, with a printable worksheet.</span></span><em aria-hidden="true">→</em></a>
+            <a class="trycard hd tap ref-finder" href="name-builder.html">${layout.doodle('quill', 'doodle try-d')}<span class="try-t"><b>Name Builder</b><span>Pick the meanings you want and build an Old English, Norse, Germanic or Greek name from two real parts, the way those names were made.</span></span><em aria-hidden="true">→</em></a>
             ${elementCount ? `<a class="trycard hd tap ref-finder" href="name-elements.html">${layout.doodle('signpost', 'doodle try-d')}<span class="try-t"><b>Name Element Finder</b><span>Search ${elementCount} sourced word parts by meaning, such as wolf, river or king, across Old English, Old Norse, Welsh, Gaelic, Latin, Greek and more.</span></span><em aria-hidden="true">→</em></a>` : ''}
             ${groups.map(g => `<section class="section" id="${g.key}">
                 <h2>${escapeHtml(g.name)}</h2>
@@ -296,7 +297,7 @@ function buildReference(site, helpers, elementCount = 0) {
   fs.mkdirSync(dir, { recursive: true });
   for (const r of records) fs.writeFileSync(path.join(dir, `${r.slug}.html`), layout.stampAssets(referencePage(r, records, site, helpers)));
   for (const f of fs.readdirSync(dir)) {
-    if (f !== 'index.html' && f !== 'name-elements.html' && !records.some(r => `${r.slug}.html` === f)) fs.unlinkSync(path.join(dir, f));
+    if (f !== 'index.html' && f !== 'name-elements.html' && f !== 'name-builder.html' && !records.some(r => `${r.slug}.html` === f)) fs.unlinkSync(path.join(dir, f));
   }
   fs.writeFileSync(path.join(dir, 'index.html'), layout.stampAssets(referenceIndex(records, site, helpers, elementCount)));
   console.log(`  ✅ Created: reference/index.html and ${records.length} Naming Library pages`);
