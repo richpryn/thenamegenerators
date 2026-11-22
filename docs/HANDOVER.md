@@ -46,8 +46,8 @@ To stop it re-reading this long chat, Rich could switch it to start a fresh sess
 - **Name Builder** (18 Nov): `reference/name-builder.html` joins two sourced elements into Old English, Old Norse, Germanic or Greek people's names, and Old English or Norse place names. Joining forms in `content/name-builder.json` (by element id, with m/f on second parts); builder `scripts/builder-page.js`, page script `lib/builder.js`. Names matching an example in the elements or Library data show as Recorded.
 - **Worldbuilder's Naming Toolkit** (18 Nov): `worldbuilders-naming-toolkit.html`, built by `scripts/toolkit-page.js`; the outreach flagship. Linked from the homepage Library band, the Library index and the 22 generators it lists.
 - Speed (Lighthouse, 18 Nov): performance 91–99, SEO 100, accessibility 96–100; best practices 79 only because Grow by Mediavine sets third-party cookies (see the consent decision on Site Jobs).
-- Outreach (backlinks) is agreed in principle. It waits on Rich choosing an email service (Google Workspace or Zoho) and moving mail off Bluehost. Plan: a 30-site target list in a separate Outreach page, drafts in Gmail for Rich to send, and a "fastest-rising names" ONS data story for the press.
-- Monthly email signup: agreed in principle, waiting on the email service choice.
+- Outreach (backlinks) is agreed in principle. It waits on moving mail off Bluehost: decided 22 Nov to use the same set-up as the other sites (Cloudflare Email Routing in, Brevo out, read in the sites Gmail, address hello@thenamegenerators.com); steps on Site Jobs (em-tng). Plan: a 30-site target list in a separate Outreach page, drafts in Gmail for Rich to send, and a "fastest-rising names" ONS data story for the press.
+- Monthly email signup: agreed in principle, waiting on the email move (em-tng).
 - My World (saved name projects): decided 17 Nov to wait for analytics; when built, "My Worlds", on the save button and homepage only. Revisit in February (Site Jobs).
 
 ### Waiting on Rich (see Site Jobs)
