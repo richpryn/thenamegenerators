@@ -1,5 +1,7 @@
 # The Name Generators (thenamegenerators.com)
 
+**Shared agent rules:** at the start of every session, also read Agent Rules for Richard's Sites (https://claude.ai/artifact/VrxiekE5tGeewsZjWCcGR6, through the Claude Docs connector or an Artifact read). It covers what agents may do without asking, git, quality, email, money and reporting. Where it and this file differ, the stricter rule wins.
+
 ## Start here
 
 At the start of every session: read this file and docs/HANDOVER.md, run git status and git log -15, and list this site's open jobs on Site Jobs (ArtifactData query on https://claude.ai/artifact/9cukbteXbK5sJbHyxGHPri, collection tasks, where site == "tng" and done == false). Then say in two lines where things stand.
