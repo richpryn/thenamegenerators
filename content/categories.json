@@ -95,7 +95,9 @@
     ],
     "generators": [
       "event",
-      "christmas_team"
+      "christmas_team",
+      "quiz_team",
+      "gritter"
     ],
     "eyebrow": "Parties, quizzes and get-togethers",
     "approach": {
@@ -273,7 +275,8 @@
       "reindeer",
       "snowman",
       "christmas_pet",
-      "christmas_team"
+      "christmas_team",
+      "gingerbread_house"
     ],
     "featured": [
       {
@@ -2644,7 +2647,8 @@
       "auto_repair_shop",
       "interior_design_business",
       "moving_company",
-      "pest_control_business"
+      "pest_control_business",
+      "snow_removal_business"
     ],
     "startHeading": "Try these name generators",
     "startIntro": "Use these tools to name a cleaning, building, garden, plumbing, electrical, roofing or painting business.",
