@@ -2,7 +2,30 @@
 
 Each session keeps its own section. Read the whole file at the start of a session.
 
-## Generator Builder (data, engine and build; 16 Nov 2026)
+## Generator Builder (data, engine and build; updated 23 Nov 2026)
+
+From 23 Nov, Rich runs ONE TNG session for generators, content and design. Read every section of this file; there are no separate sessions to message any more, so do the article and drawing work yourself, following the Content and Design sections.
+
+### How to build a generator (the full routine)
+1. **Research the searches.** Run Google autocomplete for "<thing> name generator", "<thing> names" and the modifiers people use. Turn real modifiers into filter options.
+2. **Write a build script outside the repo**, in a staging folder, that outputs `<key>.json`. Keep ban lists in the script:
+   - canon names, from the franchise wikis
+   - brands and chains
+   - famous people
+   - British rude words and double meanings
+   Check every possible output against them.
+3. **Check capacity.** `node scripts/capacity.js <key> 200` must report no low combinations. Check against sibling pages with lib/recipe-engine.js (generate 2,000+ names) so nothing repeats.
+4. **Read 60+ samples** and cut clunky ones. Every bracketed label example must be a real output.
+5. **Copy it in.**
+   - Add the key to its hub in content/categories.json.
+   - Set the drawing with setdefault in content/illustrations.json (the hub's motif as a placeholder).
+   - Run `node scripts/validate-data.js` (0 errors), then `NODE_PATH=$(npm root -g) node scripts/share-images.js` and `node scripts/build-pages.js`.
+   - Commit, then `git pull --no-rebase`, rebuild and push.
+6. **Write the article** (Content section) and choose or draw the motif (Design section).
+- **Fan pages:** original names only, and the intro says fan-made and unofficial.
+- **Business pages:** follow the CLAUDE.md rules.
+- **After changing data:** re-check that the article's example names are still real outputs.
+
 
 ### Where things stand
 - About 410 generators, 33 hubs, 16 Naming Library pages (`/reference/`), 20 name lists (`/names/`), 10 guides, the Business Name Checker, Spin the Wheel and the name tools. All live and validating.
