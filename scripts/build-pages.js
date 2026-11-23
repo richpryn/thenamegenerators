@@ -114,11 +114,13 @@ function movedPage(newSlug) {
 <head>
     <meta charset="UTF-8">
     <title>Moved | ${SITE_NAME}</title>
+    <meta name="description" content="This page has moved to ${url}.">
     <link rel="canonical" href="${url}">
     <meta http-equiv="refresh" content="0; url=${newSlug}.html">
 </head>
 <body>
-    <p>This page has moved to <a href="${newSlug}.html">${url}</a>.</p>
+    <h1>This page has moved</h1>
+    <p>Its new address is <a href="${newSlug}.html">${url}</a>.</p>
 </body>
 </html>
 `;
@@ -2517,12 +2519,14 @@ function generateRedirectPages() {
 <head>
     <meta charset="UTF-8">
     <title>Moved | ${SITE_NAME}</title>
+    <meta name="description" content="This page has moved to ${target}.">
     <link rel="canonical" href="${target}">
     <meta http-equiv="refresh" content="0; url=${to}">
     <script>window.location.replace(${scriptJson(to)});</script>
 </head>
 <body>
-    <p>This page has moved to <a href="${to}">${target}</a>.</p>
+    <h1>This page has moved</h1>
+    <p>Its new address is <a href="${to}">${target}</a>.</p>
 </body>
 </html>
 `);
