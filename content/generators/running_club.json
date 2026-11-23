@@ -654,7 +654,20 @@
       "tagline": "Names for your running club, run crew, relay team or Saturday morning group."
     },
     "intro": "Most running clubs are named after their town plus a word like Harriers or Striders, while newer run crews go for something social or silly. This **Running Club Name Generator** makes both, plus names for women's groups, relay teams and charity runs.",
-    "sections": [],
+    "sections": [
+      {
+        "heading": "Eight good running club names",
+        "content": "<p>All eight came from the generator, across its styles:</p><ul><li><strong>Hampton &amp; District Harriers</strong>: the classic club name, for a group that takes in the villages around a town.</li><li><strong>Hampton Woodland Striders</strong>: a place, a landscape and a running word: a name for a trail club.</li><li><strong>Tortoise Not Hare</strong>: for a beginners' group that's proud of going steady.</li><li><strong>Running on Porridge</strong>: funny, and true for most Saturday morning runners.</li><li><strong>Trail Sisterhood</strong>: a women's group that heads off-road.</li><li><strong>Jogs &amp; Doughnuts</strong>: a coffee crew that's honest about why it runs.</li><li><strong>One Baton, Many Legs</strong>: a relay team name that's also a team motto.</li><li><strong>Anchor Leg Comets</strong>: for a relay team, named after the final leg.</li></ul>"
+      },
+      {
+        "heading": "How running clubs are named",
+        "content": "<p>Traditional British running clubs nearly all follow one pattern: a place, then a running word. Harriers is the oldest of those words. It comes from the hounds used to hunt hares, and 19th-century cross-country clubs ran \"hare and hounds\" chases, with runners following a trail laid by the \"hares\". Striders, Pacers, Joggers, Road Runners and AC (Athletic Club) came later.</p><p>The place part can be a town, a district or a landmark: a hill, a river, a canal or a castle. That's useful if there's already a club with your town's name, as Hampton Canal Pacers is a different club from Hampton Harriers.</p><p>Newer run crews and social groups often skip the pattern altogether. They're named after what happens after the run (Laps &amp; Lattes, The Bakery Loop) or how fast it goes (Back of the Pack), which tells people the group is friendly before they've met anyone.</p>"
+      },
+      {
+        "heading": "Before you settle on a name",
+        "content": "<ul><li><strong>Search for clubs nearby.</strong> Look on Strava, Facebook and the national athletics body's club finder (England Athletics, Scottish Athletics, Welsh Athletics or Athletics Northern Ireland) so you don't pick a name that's already in use down the road.</li><li><strong>Think about kit.</strong> A club name goes on vests and hoodies, so shorter names print better.</li><li><strong>Leave out trade marks.</strong> Keep parkrun, race names and sports brands out of the club name.</li><li><strong>Plan for growth.</strong> A joke name suits a group of friends. If you might affiliate and enter races as a club one day, a place-based name will age better.</li></ul>"
+      }
+    ],
     "faqs": [
       {
         "question": "What are some funny running team names?",
@@ -663,6 +676,18 @@
       {
         "question": "What should I call a running group chat on WhatsApp?",
         "answer": "Something short that fits the group: Laps & Lattes for a coffee crew, Sole Sisters for a women's group, or your town plus Striders for a club. If you meet at the same parkrun each week, a name like The Saturday Breakfast Runners works well, but keep the word parkrun itself out of the name, as it's a trade mark."
+      },
+      {
+        "question": "What is a good name for a women's running group?",
+        "answer": "Something supportive with a bit of fun: Trail Sisterhood, Morning Mile Mums or Wild Women Running. Choose Women and girls for more, and add your town to make the group easy to find."
+      },
+      {
+        "question": "What is a good relay or charity team name?",
+        "answer": "A pun on batons, legs or finishing lines, or a name that says why you're running: One Baton, Many Legs, Anchor Leg Comets or The Good Cause Runners. Choose Relay &amp; charity for more."
+      },
+      {
+        "question": "Can I use these names for my club?",
+        "answer": "Yes, they're free to use. Check that no nearby club already uses the name, and if you're printing kit or setting up a website, check it isn't taken there too."
       }
     ]
   }
