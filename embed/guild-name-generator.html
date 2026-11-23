@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guild Name Generator | The Name Generators</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://thenamegenerators.com/posts/guild-name-generator.html">
+    <base target="_blank">
+    <link rel="icon" href="/favicon.ico?v=626227da" sizes="any">
+    <link rel="icon" href="/favicon.svg?v=727d2202" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
+</head>
+<body class="embed-page">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      
+    </defs></svg>
+    <main class="embed-wrap">
+        <p class="embed-head"><b>Guild Name Generator</b> <a href="https://thenamegenerators.com/posts/guild-name-generator.html?utm_source=embed&amp;utm_medium=widget" rel="noopener">More at The Name Generators</a></p>
+        <section class="sheet hd simple-generator" id="generator" aria-label="Guild Name Generator">
+                <div class="gen-one">
+          <div class="group">
+            <label class="label" for="filter-kind">Kind of Guild</label>
+            <div class="ctl sel hd">
+              <select id="filter-kind" name="kind" data-filter="kind">
+                <option value="any">Any</option>
+                <option value="adventurers">Adventurers&#039; company (the Gilded Lanterns)</option>
+                <option value="thieves">Thieves&#039; guild (the Velvet Hand)</option>
+                <option value="assassins">Assassins (the House of the Quiet Hour)</option>
+                <option value="mages">Mages (the Circle of the Silver Star)</option>
+                <option value="merchants">Merchants (the Saltroad Company)</option>
+                <option value="crafters">Craft guild (the Worshipful Company of Clockmakers)</option>
+              </select>
+            </div>
+          </div></div>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="true">
+                    <p class="results-empty">Press Generate Names for 8 guild names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
+                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+    </main>
+    <script type="application/json" id="generator-config">{"title":"Guild Name Generator","slug":"guild-name-generator","filters":{"kind":{"label":"Kind of Guild","options":["any","adventurers","thieves","assassins","mages","merchants","crafters"],"optionLabels":{"any":"Any","adventurers":"Adventurers' company (the Gilded Lanterns)","thieves":"Thieves' guild (the Velvet Hand)","mages":"Mages (the Circle of the Silver Star)","merchants":"Merchants (the Saltroad Company)","crafters":"Craft guild (the Worshipful Company of Clockmakers)","assassins":"Assassins (the House of the Quiet Hour)"}}},"recipe":"switch","on":"kind","cases":{"any":{"recipe":"template","template":["The [adv.adj] [adv.noun]","[adv.place] Company","The Company of the [adv.adj] [adv.noun_s]","The [thf.adj] [thf.noun]","Brotherhood of the [thf.thing]","The [thf.thing] Society","The [mag.group] of the [mag.adj] [mag.noun]","Order of the [mag.adj] [mag.noun]","The [mag.adj] [mag.group]","The [mer.place] Company","The [mer.adj] [mer.noun] Consortium","Fellowship of [mer.trade] Merchants","The Worshipful Company of [cra.trade]","Guild of [cra.trade]","The [cra.adj] [cra.tool] Guild","The [asn.adj] [asn.noun]","The House of the [asn.thing]","The Order of the [asn.thing]","The [asn.school] of the [asn.thing]"]},"adventurers":{"recipe":"template","template":["The [adv.adj] [adv.noun]","[adv.place] Company","The Company of the [adv.adj] [adv.noun_s]"]},"thieves":{"recipe":"template","template":["The [thf.adj] [thf.noun]","Brotherhood of the [thf.thing]","The [thf.thing] Society"]},"mages":{"recipe":"template","template":["The [mag.group] of the [mag.adj] [mag.noun]","Order of the [mag.adj] [mag.noun]","The [mag.adj] [mag.group]"]},"merchants":{"recipe":"template","template":["The [mer.place] Company","The [mer.adj] [mer.noun] Consortium","Fellowship of [mer.trade] Merchants"]},"crafters":{"recipe":"template","template":["The Worshipful Company of [cra.trade]","Guild of [cra.trade]","The [cra.adj] [cra.tool] Guild"]},"assassins":{"recipe":"template","template":["The [asn.adj] [asn.noun]","The House of the [asn.thing]","The Order of the [asn.thing]","The [asn.school] of the [asn.thing]"]}},"data":{"adv":{"adj":["Gilded","Wandering","Last","Broken","Lucky","Brass","Lantern","Ninth","Rusted","Iron","Grey","Hungry","Crimson","Silver","Laughing","Bold","Dusty","Scarlet","Wild","Seventh","Copper","Lost","Merry","Weathered"],"noun":["Lanterns","Blades","Wolves","Crows","Shields","Boots","Sparrows","Compasses","Banners","Hounds","Spears","Ravens","Foxes","Daggers","Roads","Torches","Swords","Pilgrims","Stags","Arrows","Keys","Maps","Bells","Griffins"],"noun_s":["Lantern","Blade","Wolf","Crow","Shield","Compass","Banner","Hound","Road","Map","Spear","Torch","Arrow","Key","Bell","Griffin","Raven","Fox","Dagger","Stag"],"place":["Saltreach","Greymere","Ashford","Thornwick","Ravenscar","Duskwater","Highmoor","Coldharbour","Brackenmoor","Elderwood","Stonecross","Wyvernmouth","Oakshott","Marshgate","Kingsferry","Copperhill","Northwatch","Redbridge","Highfell","Saltmarsh"]},"thf":{"adj":["Velvet","Quiet","Midnight","Crooked","Silver","Silent","Grey","Open","Soft","Hidden","Black","Second","Empty","Gentle","Sly","Moonless","Smiling","Patient","Nimble","Shadow"],"noun":["Hand","Market","Key","Cloak","Coin","Glove","Door","Whisper","Lantern","Ledger","Purse","Shadow","Step","Pocket","Fingers","Mask","Latch","Rook","Magpie","Feather"],"thing":["Locked Door","Empty Purse","Open Window","Second Key","Moonless Night","Turned Coin","Missing Ring","Soft Step","Silent Bell","Loose Floorboard","Borrowed Crown","Unlatched Gate","Sleeping Guard","Lost Ledger","Velvet Glove","Black Candle","Hidden Pocket","Crooked Smile"]},"mag":{"group":["Circle","Conclave","Society","Collegium","Lodge","Council","Academy","Fellowship","Order","Assembly","Brotherhood","Sisterhood","College","Synod","Cabal","Covenant"],"adj":["Silver","Seventh","Hidden","Burning","Silent","Ninefold","Azure","Waking","Hollow","Last","Starlit","Crimson","Golden","Veiled","Eternal","Ivory","Black","Twilight","Wandering","Thirteenth"],"noun":["Star","Seal","Flame","Tower","Eye","Moon","Key","Page","Gate","Candle","Rose","Serpent","Mirror","Sigil","Quill","Crown","Spiral","Lantern","Hand","Book"]},"mer":{"place":["Saltroad","Eastwind","Silkwater","Goldmere","Spicegate","Northsea","Amberline","Copperbridge","Westmarch","Pearlbay","Ivoryport","Sunreach","Grainford","Teaharbour","Wineshire","Furrow Coast","Coppermouth","Silverstrand","Wool Road","Southwind"],"adj":["Golden","Honest","Silver","Royal","Brass","Northern","Free","Seven","Eastern","Western","Grand","Loyal","Copper","Crimson","United","Sovereign","Fair","Steady","Ancient","Merchant"],"noun":["Scales","Ledger","Anchor","Coin","Caravan","Lantern","Seal","Key","Sail","Compass","Barrel","Bridge","Crown","Wheel","Ship","Purse","Measure","Balance","Chest","Star"],"trade":["Spice","Silk","Salt","Wine","Wool","Amber","Ivory","Timber","Tea","Fur","Grain","Pepper","Saffron","Dye","Pearl","Copper","Tin","Linen","Leather","Glass"]},"cra":{"trade":["Glassblowers","Clockmakers","Bladesmiths","Bookbinders","Candlemakers","Cartographers","Masons","Weavers","Potters","Alchemists","Lampwrights","Bowyers","Fletchers","Coopers","Goldsmiths","Tanners","Dyers","Chandlers","Wheelwrights","Saddlers","Glovers","Locksmiths","Shipwrights","Brewers","Papermakers","Instrument Makers"],"adj":["Golden","Iron","Steady","Honest","Copper","Old","Patient","Bright","Careful","Brass","Silver","Sturdy","Clever","Ancient","Humble","Royal","Faithful","True","Diligent","Master"],"tool":["Anvil","Hammer","Needle","Chisel","Kiln","Loom","Lathe","Quill","Plane","Awl","Bellows","Compass","Mallet","Spindle","Shears","Tongs","Crucible","Square","Gauge","Bench"]},"asn":{"adj":["Silent","Velvet","Grey","Pale","Hollow","Last","Quiet","Crimson","Ashen","Unseen","Patient","Gentle","Nameless","Sleepless","Bitter","Ivory","Black-Gloved","Tenth","Final","Sorrowful","Smiling","Weeping","Hidden","Courteous"],"noun":["Knives","Lilies","Ravens","Moths","Daggers","Needles","Ferrymen","Mourners","Shadows","Thorns","Gardeners","Masks","Candles","Sparrows","Herons","Lanterns","Vipers","Widows","Owls","Pilgrims","Hands","Keys"],"thing":["Last Breath","Folded Letter","Quiet Hour","Unlit Lamp","Bitter Cup","Closed Eye","Second Shadow","Empty Chair","Long Night","Silver Needle","Ninth Bell","Velvet Rope","Final Word","Black Tulip","Drowned Moon","Unmarked Grave","Snuffed Candle","Gentle Knife","Paper Crane"],"school":["Academy","School","House","Seminary","College","Conservatory"]}}}</script>
+    <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
+    <script src="../lib/outline.js?v=bb3e12d8"></script>
+    <script>(function(){if(window.parent===window)return;var last=0;function send(){var h=Math.ceil(document.documentElement.getBoundingClientRect().height);if(h!==last){last=h;window.parent.postMessage({tngEmbedHeight:h},'*');}}if('ResizeObserver' in window)new ResizeObserver(send).observe(document.body);window.addEventListener('load',send);send();})();</script>
+</body>
+</html>

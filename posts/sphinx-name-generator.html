@@ -285,7 +285,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=7232e3a3">
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -461,6 +461,14 @@
                 <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
             </section>
             <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-11-13">13 November 2026</time></p>
+            <details class="embed-box">
+                <summary>Put this generator on your website</summary>
+                <p>Free for blogs, campaign sites, class pages and wikis, with no ads. Paste this into your page's HTML:</p>
+                <textarea class="embed-code" readonly rows="5" aria-label="Embed code for the Sphinx Name Generator">&lt;iframe src=&quot;https://thenamegenerators.com/embed/sphinx-name-generator.html&quot; title=&quot;Sphinx Name Generator&quot; data-tng-embed width=&quot;100%&quot; height=&quot;560&quot; style=&quot;border:0;width:100%;max-width:720px&quot; loading=&quot;lazy&quot; allow=&quot;clipboard-write&quot;&gt;&lt;/iframe&gt;
+&lt;p style=&quot;margin:4px 0 16px;font-size:14px&quot;&gt;Sphinx Name Generator by &lt;a href=&quot;https://thenamegenerators.com/posts/sphinx-name-generator.html&quot;&gt;The Name Generators&lt;/a&gt;&lt;/p&gt;
+&lt;script src=&quot;https://thenamegenerators.com/lib/embed.js&quot; async&gt;&lt;/script&gt;</textarea>
+                <p class="embed-acts"><button type="button" class="mini hd tap" data-embed-copy><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy code</span></button> <a href="../embed-name-generators.html">How embedding works</a></p>
+            </details>
 
             <section class="section example-names">
                 <h2>Example Sphinx Names</h2>
@@ -614,7 +622,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Sphinx Name Generator","slug":"sphinx-name-generator","seoTitle":"Sphinx Name Generator: Greek & Egyptian-Style Names","filters":{"style":{"label":"Style","options":["any","greek","egyptian","guardian"],"optionLabels":{"any":"Any (a mix)","greek":"Greek riddler (Ainigma)","egyptian":"Egyptian-style (Sethankh)","guardian":"Named for its gate (the Sphinx of the Sun Gate)"}},"format":{"label":"Name format","options":["name","epithet"],"optionLabels":{"name":"Name only","epithet":"With a title (the Riddler)"}}},"recipe":"switch","on":"format","cases":{"name":{"recipe":"switch","on":"style","cases":{"greek":{"recipe":"template","template":["[greek]","[greek] the [riddlers]"]},"egyptian":{"recipe":"template","template":["[egypt.a][egypt.b]","[egypt.a][egypt.b] of [places]"]},"guardian":{"recipe":"template","template":["The Sphinx of [places]","The [adj] Sphinx","The [adj] Sphinx of [places]"]},"any":{"recipe":"template","template":["[greek]","[greek] the [riddlers]","[egypt.a][egypt.b]","[egypt.a][egypt.b] of [places]","The Sphinx of [places]","The [adj] Sphinx","The [adj] Sphinx of [places]"]}}},"epithet":{"recipe":"switch","on":"style","cases":{"greek":{"recipe":"template","template":["[greek] [epithets]","[greek], [epithets_titled]","[greek] the [riddlers] [epithets]","[greek] the [riddlers], [epithets_titled]"]},"egyptian":{"recipe":"template","template":["[egypt.a][egypt.b] [epithets]","[egypt.a][egypt.b], [epithets_titled]","[egypt.a][egypt.b] of [places]"]},"guardian":{"recipe":"template","template":["The Sphinx of [places]","The [adj] Sphinx, [epithets_titled]","The [adj] Sphinx of [places]"]},"any":{"recipe":"template","template":["[greek] [epithets]","[greek], [epithets_titled]","[greek] the [riddlers] [epithets]","[greek] the [riddlers], [epithets_titled]","[egypt.a][egypt.b] [epithets]","[egypt.a][egypt.b], [epithets_titled]","[egypt.a][egypt.b] of [places]","The Sphinx of [places]","The [adj] Sphinx, [epithets_titled]","The [adj] Sphinx of [places]"]}}}},"data":{"greek":["Ainigma","Phix","Grypha","Sophrona","Kalypsia","Mnemonia","Logia","Sophia","Pythia","Ariadne","Theodora","Athenais","Kassandra","Melantho","Krypteia","Labyrinthia","Gnomia","Hermeia","Metis","Eunoia","Aletheia","Phronesis","Pistis","Elpis","Arete","Dike","Themis","Harmonia","Xenia","Ainesis"],"riddlers":["Riddler","Questioner","Wise","Silent","Patient","Unanswered","Watchful","Clever"],"egypt":{"a":["Seth","Amen","Ra","Khep","Neb","Mer","Ankh","Hor","Ptah","Djed","Wadj","Sekh"],"b":["ankh","hotep","mose","nefer","ka","ib","ra","em","ef","et"]},"places":["the Sun Gate","the Western Desert","the Sand Temple","the Riddle Road","the Hidden Tomb","the Golden Gate","the Seven Pillars","the Moon Gate","the Lion Steps","the Last Oasis","the Sealed Library","the Valley of Kings","the Pyramid Steps","the Star Temple"],"adj":["Silent","Riddling","Golden","Patient","Ancient","Sleepless","Sand-Worn","All-Seeing","Stone-Lidded","Unblinking","Wise","Watchful","Golden-Eyed","Winged","Crowned","Lion-Hearted","Smiling"],"epithets":["the Riddler","of the Sun Gate","Who Asks Three Questions","the Patient","the All-Knowing","the Unanswered","the Guardian of the Threshold","the Sand-Worn"],"epithets_titled":["Keeper of Secrets","Guardian of the Tomb","Asker of Riddles","Lion of the Desert"]}}</script>
     <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
-    <script src="../lib/page.js?v=e05a95f4"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

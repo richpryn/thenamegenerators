@@ -285,7 +285,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=7232e3a3">
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -461,6 +461,14 @@
                 <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
             </section>
             <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-11-13">13 November 2026</time></p>
+            <details class="embed-box">
+                <summary>Put this generator on your website</summary>
+                <p>Free for blogs, campaign sites, class pages and wikis, with no ads. Paste this into your page's HTML:</p>
+                <textarea class="embed-code" readonly rows="5" aria-label="Embed code for the Basilisk Name Generator">&lt;iframe src=&quot;https://thenamegenerators.com/embed/basilisk-name-generator.html&quot; title=&quot;Basilisk Name Generator&quot; data-tng-embed width=&quot;100%&quot; height=&quot;560&quot; style=&quot;border:0;width:100%;max-width:720px&quot; loading=&quot;lazy&quot; allow=&quot;clipboard-write&quot;&gt;&lt;/iframe&gt;
+&lt;p style=&quot;margin:4px 0 16px;font-size:14px&quot;&gt;Basilisk Name Generator by &lt;a href=&quot;https://thenamegenerators.com/posts/basilisk-name-generator.html&quot;&gt;The Name Generators&lt;/a&gt;&lt;/p&gt;
+&lt;script src=&quot;https://thenamegenerators.com/lib/embed.js&quot; async&gt;&lt;/script&gt;</textarea>
+                <p class="embed-acts"><button type="button" class="mini hd tap" data-embed-copy><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy code</span></button> <a href="../embed-name-generators.html">How embedding works</a></p>
+            </details>
 
             <section class="section example-names">
                 <h2>Example Basilisk Names</h2>
@@ -614,7 +622,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Basilisk Name Generator","slug":"basilisk-name-generator","seoTitle":"Basilisk Name Generator: King of Serpents Names","filters":{"style":{"label":"Style","options":["any","stone","latin","lair"],"optionLabels":{"any":"Any (a mix)","stone":"Stony (Stonegaze)","latin":"Latin-sounding (Regulus)","lair":"Named for its lair (the Basilisk of the Dry Well)"}},"format":{"label":"Name format","options":["name","epithet"],"optionLabels":{"name":"Name only","epithet":"With a title (the Stone-Gazer)"}}},"recipe":"switch","on":"format","cases":{"name":{"recipe":"switch","on":"style","cases":{"stone":{"recipe":"template","template":"[stone.a][stone.b]"},"latin":{"recipe":"template","template":["[latin]","[latin] of [lairs]"]},"lair":{"recipe":"template","template":["The Basilisk of [lairs]","The [adj] Basilisk","The [adj] Basilisk of [lairs]"]},"any":{"recipe":"template","template":["[stone.a][stone.b]","[latin]","[latin] of [lairs]","The Basilisk of [lairs]","The [adj] Basilisk","The [adj] Basilisk of [lairs]"]}}},"epithet":{"recipe":"switch","on":"style","cases":{"stone":{"recipe":"template","template":["[stone.a][stone.b] [epithets]","[stone.a][stone.b], [epithets_titled]"]},"latin":{"recipe":"template","template":["[latin] [epithets]","[latin], [epithets_titled]","[latin] of [lairs]"]},"lair":{"recipe":"template","template":["The Basilisk of [lairs]","The [adj] Basilisk, [epithets_titled]","The [adj] Basilisk of [lairs]"]},"any":{"recipe":"template","template":["[stone.a][stone.b] [epithets]","[stone.a][stone.b], [epithets_titled]","[latin] [epithets]","[latin], [epithets_titled]","[latin] of [lairs]","The Basilisk of [lairs]","The [adj] Basilisk, [epithets_titled]","The [adj] Basilisk of [lairs]"]}}}},"data":{"stone":{"a":["Stone","Grave","Ash","Dust","Venom","Gloom","Grey","Slate","Marble","Cold","Pale","Rot","Wither","Blight","Death","Shade"],"b":["gaze","eye","fang","coil","scale","crown","glare","stare","hiss","breath","sight","tongue"]},"latin":["Regulus","Basiliscus","Serpentinus","Venenus","Lapidarius","Mortifer","Obscurus","Saxifer","Aspis","Coronatus","Rex Serpens","Torvus","Funestus","Lividus","Petrus","Noxius","Gelidus","Ater","Pallidus","Sibilus","Draco Minor","Vipereus","Anguis","Squameus","Oculus","Silex","Marmoreus","Cinereus","Tenebrus","Sepulcrus"],"lairs":["the Dry Well","the Desert Ruins","the Forgotten Cellar","the Castle Moat","the Sunless Cave","the Old Cistern","the Poisoned Spring","the Statue Garden","the Cracked Tomb","the Sewer Throne","the Barren Hills","the Crypt of Kings"],"adj":["Crowned","Stone-Eyed","Pale","Poisoned","Ancient","Sleeping","Hissing","Grey","Lidless","Dreadful","Silent","Withering","Venomous","Stone-Crowned","Hungry","Coiling","Dusty","Glaring","Pale-Eyed","Little"],"epithets":["the Stone-Gazer","the Crowned","of the Dry Well","the Withering","the Unseen","the Poison-Breathed"],"epithets_titled":["King of Serpents","Whose Glance Is Death","Lord of Statues","Bane of Heroes","Maker of Statues","Terror of the Desert"]}}</script>
     <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
-    <script src="../lib/page.js?v=e05a95f4"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

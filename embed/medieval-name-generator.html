@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medieval Name Generator | The Name Generators</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://thenamegenerators.com/posts/medieval-name-generator.html">
+    <base target="_blank">
+    <link rel="icon" href="/favicon.ico?v=626227da" sizes="any">
+    <link rel="icon" href="/favicon.svg?v=727d2202" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
+</head>
+<body class="embed-page">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      
+    </defs></svg>
+    <main class="embed-wrap">
+        <p class="embed-head"><b>Medieval Name Generator</b> <a href="https://thenamegenerators.com/posts/medieval-name-generator.html?utm_source=embed&amp;utm_medium=widget" rel="noopener">More at The Name Generators</a></p>
+        <section class="sheet hd simple-generator" id="generator" aria-label="Medieval Name Generator">
+                <div class="gen-grid">
+          <div class="group" role="group" aria-labelledby="filter-gender-label">
+            <div class="label"><span id="filter-gender-label">Gender</span><span class="pen" data-hint-for="gender" aria-hidden="true"></span></div>
+            <div class="opts" data-buttons-for="gender">
+              <button type="button" class="opt hd tap" data-value="any" data-hint="" aria-pressed="true">Any</button>
+              <button type="button" class="opt hd tap" data-value="male" data-hint="" aria-pressed="false">Male</button>
+              <button type="button" class="opt hd tap" data-value="female" data-hint="" aria-pressed="false">Female</button>
+            </div>
+            <input type="hidden" id="filter-gender" name="gender" data-filter="gender" value="any">
+          </div>
+
+          <div class="group" role="group" aria-labelledby="filter-surname-label">
+            <div class="label"><span id="filter-surname-label">Surname from</span><span class="pen" data-hint-for="surname" aria-hidden="true"></span></div>
+            <div class="opts" data-buttons-for="surname">
+              <button type="button" class="opt hd tap" data-value="any" data-hint="" aria-pressed="true">Any</button>
+              <button type="button" class="opt hd tap" data-value="job" data-hint="e.g. Fletcher" title="A job (Fletcher)" aria-pressed="false">A job</button>
+              <button type="button" class="opt hd tap" data-value="place" data-hint="e.g. atte Wode" title="A place (atte Wode)" aria-pressed="false">A place</button>
+              <button type="button" class="opt hd tap" data-value="father" data-hint="e.g. FitzWalter" title="A father (FitzWalter)" aria-pressed="false">A father</button>
+              <button type="button" class="opt hd tap" data-value="nickname" data-hint="e.g. Armstrong" title="A nickname (Armstrong)" aria-pressed="false">A nickname</button>
+            </div>
+            <input type="hidden" id="filter-surname" name="surname" data-filter="surname" value="any">
+          </div>
+
+          <div class="group">
+            <label class="label" for="filter-format">Name format</label>
+            <div class="ctl sel hd">
+              <select id="filter-format" name="format" data-filter="format">
+                <option value="meaning">With the surname&#039;s meaning</option>
+                <option value="name">Name only</option>
+              </select>
+            </div>
+          </div></div>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="true">
+                    <p class="results-empty">Press Generate Names for 8 medieval names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
+                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+    </main>
+    <script type="application/json" id="generator-config">{"title":"Medieval Name Generator","slug":"medieval-name-generator","filters":{"gender":{"label":"Gender","options":["any","male","female"],"optionLabels":{"any":"Any"}},"surname":{"label":"Surname from","options":["any","job","place","father","nickname"],"optionLabels":{"any":"Any","job":"A job (Fletcher)","place":"A place (atte Wode)","father":"A father (FitzWalter)","nickname":"A nickname (Armstrong)"}},"format":{"label":"Name format","options":["meaning","name"],"optionLabels":{"meaning":"With the surname's meaning","name":"Name only"}}},"recipe":"switch","on":"format","cases":{"meaning":{"recipe":"switch","on":"surname","cases":{"any":{"recipe":"switch","on":"gender","cases":{"male":{"recipe":"template","template":"[first.male] [surnamesM]"},"female":{"recipe":"template","template":"[first.female] [surnamesM]"},"any":{"recipe":"template","template":["[first.male] [surnamesM]","[first.female] [surnamesM]"]}}}},"default":{"recipe":"switch","on":"gender","cases":{"male":{"recipe":"template","template":"[first.male] [surnamesM.{surname}]"},"female":{"recipe":"template","template":"[first.female] [surnamesM.{surname}]"},"any":{"recipe":"template","template":["[first.male] [surnamesM.{surname}]","[first.female] [surnamesM.{surname}]"]}}}},"name":{"recipe":"switch","on":"surname","cases":{"any":{"recipe":"switch","on":"gender","cases":{"male":{"recipe":"template","template":"[first.male] [surnames]"},"female":{"recipe":"template","template":"[first.female] [surnames]"},"any":{"recipe":"template","template":["[first.male] [surnames]","[first.female] [surnames]"]}}}},"default":{"recipe":"switch","on":"gender","cases":{"male":{"recipe":"template","template":"[first.male] [surnames.{surname}]"},"female":{"recipe":"template","template":"[first.female] [surnames.{surname}]"},"any":{"recipe":"template","template":["[first.male] [surnames.{surname}]","[first.female] [surnames.{surname}]"]}}}}},"data":{"first":{"male":["Adam","Alan","Baldwin","Geoffrey","Gilbert","Hugh","Henry","John","Nicholas","Peter","Ralph","Richard","Robert","Roger","Simon","Stephen","Thomas","Walter","William","Hamo","Osbert","Walkelin","Jordan","Ranulf","Laurence","Martin","Reynold","Elias","Matthew","Philip"],"female":["Agnes","Alice","Amice","Avice","Beatrice","Cecily","Christina","Constance","Denise","Edith","Ela","Eleanor","Emma","Isabel","Joan","Juliana","Lettice","Mabel","Margery","Matilda","Maud","Petronilla","Rohese","Sybil","Hawise","Idonea","Lucy","Margaret","Felicia"]},"surnames":{"job":["Smith","Baker","Fletcher","Thatcher","Cooper","Chandler","Webster","Turner","Mason","Taylor","Miller","Fowler","Wright","Sawyer","Tanner","Glover","Carter","Shepherd","Hayward","Butler","Spicer","Bowyer","Lorimer","Brewster","Chaucer"],"place":["atte Wode","atte Hille","atte Broke","atte Welle","atte Grene","Underwood","Bywater","Ford","Field","Marsh","atte Water","Bridges","Townsend","Lane","Moor","Dale","Hurst","Hall","Pool","Rowe","Heath","Thorpe","Stone","Wells","Shaw","Holt","Nash","Noakes"],"father":["FitzWalter","FitzRoger","FitzHugh","FitzWilliam","Johnson","Williamson","Dickson","Robson","Watson","Hobson","FitzAlan","FitzGerald","FitzPeter","FitzRalph","FitzSimon","Jackson","Thompson","Wilson","Harrison","Richardson","Stephenson","Dawson","Hodgson","Pearson","Nicholson","Gibson","Simpson","Adamson"],"nickname":["Brown","White","Long","Short","Young","Gray","Armstrong","Goodfellow","Fox","Bird","Russell","Little","Strong","Swift","Black","Reed","Good","Wise","Hardy","Sharp","Merriman","Golightly","Proudfoot","Lovell","Fairfax","Whitehead","Turnbull","Crane","Lamb","Truelove"]},"surnamesM":{"job":["Smith (metalworker)","Baker (baker)","Fletcher (arrow-maker)","Thatcher (roofer)","Cooper (barrel-maker)","Chandler (candle-maker)","Webster (weaver)","Turner (woodturner)","Mason (stoneworker)","Taylor (tailor)","Miller (miller)","Fowler (bird-catcher)","Wright (maker)","Sawyer (sawer of wood)","Tanner (leather-tanner)","Glover (glove-maker)","Carter (carter)","Shepherd (shepherd)","Hayward (hedge-keeper)","Butler (wine steward)","Spicer (spice-seller)","Bowyer (bow-maker)","Lorimer (maker of bridles and spurs)","Brewster (brewer)","Chaucer (shoemaker)"],"place":["atte Wode (at the wood)","atte Hille (at the hill)","atte Broke (at the brook)","atte Welle (at the well)","atte Grene (at the village green)","Underwood (below the wood)","Bywater (by the water)","Ford (at the river crossing)","Field (at the field)","Marsh (at the marsh)","atte Water (at the water)","Bridges (at the bridge)","Townsend (at the end of the village)","Lane (at the lane)","Moor (at the moor)","Dale (in the valley)","Hurst (at the wooded hill)","Hall (worked at the hall)","Pool (by the pool)","Rowe (at the row of houses)","Heath (at the heath)","Thorpe (at the outlying farm)","Stone (by the stone)","Wells (at the springs)","Shaw (at the copse)","Holt (at the wood)","Nash (at the ash tree)","Noakes (at the oaks)"],"father":["FitzWalter (son of Walter)","FitzRoger (son of Roger)","FitzHugh (son of Hugh)","FitzWilliam (son of William)","Johnson (son of John)","Williamson (son of William)","Dickson (son of Dick (Richard))","Robson (son of Rob (Robert))","Watson (son of Wat (Walter))","Hobson (son of Hob (Robert))","FitzAlan (son of Alan)","FitzGerald (son of Gerald)","FitzPeter (son of Peter)","FitzRalph (son of Ralph)","FitzSimon (son of Simon)","Jackson (son of Jack (John))","Thompson (son of Thom (Thomas))","Wilson (son of Will (William))","Harrison (son of Harry (Henry))","Richardson (son of Richard)","Stephenson (son of Stephen)","Dawson (son of Daw (David))","Hodgson (son of Hodge (Roger))","Pearson (son of Piers (Peter))","Nicholson (son of Nichol (Nicholas))","Gibson (son of Gib (Gilbert))","Simpson (son of Sim (Simon))","Adamson (son of Adam)"],"nickname":["Brown (brown-haired)","White (fair)","Long (tall)","Short (short)","Young (the younger)","Gray (grey-haired)","Armstrong (strong in the arm)","Goodfellow (good companion)","Fox (foxlike)","Bird (birdlike)","Russell (red-haired)","Little (small)","Strong (strong)","Swift (quick)","Black (dark-haired)","Reed (red-haired)","Good (good)","Wise (wise)","Hardy (bold)","Sharp (quick-witted)","Merriman (cheerful man)","Golightly (light of foot)","Proudfoot (proud walker)","Lovell (wolf cub)","Fairfax (fair-haired)","Whitehead (white-haired)","Turnbull (strong enough to turn a bull)","Crane (long-legged)","Lamb (meek)","Truelove (faithful sweetheart)"]}},"provenance":{"lists":{"*":"recorded"}}}</script>
+    <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
+    <script src="../lib/outline.js?v=bb3e12d8"></script>
+    <script>(function(){if(window.parent===window)return;var last=0;function send(){var h=Math.ceil(document.documentElement.getBoundingClientRect().height);if(h!==last){last=h;window.parent.postMessage({tngEmbedHeight:h},'*');}}if('ResizeObserver' in window)new ResizeObserver(send).observe(document.body);window.addEventListener('load',send);send();})();</script>
+</body>
+</html>

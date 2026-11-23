@@ -301,7 +301,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=7232e3a3">
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -477,6 +477,14 @@
                 <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
             </section>
             <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-11-13">13 November 2026</time></p>
+            <details class="embed-box">
+                <summary>Put this generator on your website</summary>
+                <p>Free for blogs, campaign sites, class pages and wikis, with no ads. Paste this into your page's HTML:</p>
+                <textarea class="embed-code" readonly rows="5" aria-label="Embed code for the Harry Potter Witch Name Generator">&lt;iframe src=&quot;https://thenamegenerators.com/embed/harry-potter-witch-name-generator.html&quot; title=&quot;Harry Potter Witch Name Generator&quot; data-tng-embed width=&quot;100%&quot; height=&quot;560&quot; style=&quot;border:0;width:100%;max-width:720px&quot; loading=&quot;lazy&quot; allow=&quot;clipboard-write&quot;&gt;&lt;/iframe&gt;
+&lt;p style=&quot;margin:4px 0 16px;font-size:14px&quot;&gt;Harry Potter Witch Name Generator by &lt;a href=&quot;https://thenamegenerators.com/posts/harry-potter-witch-name-generator.html&quot;&gt;The Name Generators&lt;/a&gt;&lt;/p&gt;
+&lt;script src=&quot;https://thenamegenerators.com/lib/embed.js&quot; async&gt;&lt;/script&gt;</textarea>
+                <p class="embed-acts"><button type="button" class="mini hd tap" data-embed-copy><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy code</span></button> <a href="../embed-name-generators.html">How embedding works</a></p>
+            </details>
 
             <section class="section example-names">
                 <h2>Example Harry Potter Witch Names</h2>
@@ -638,7 +646,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Harry Potter Witch Name Generator","slug":"harry-potter-witch-name-generator","filters":{"house":{"label":"House","options":["any","gryffindor","hufflepuff","ravenclaw","slytherin"],"optionLabels":{"any":"Any house","gryffindor":"Gryffindor","hufflepuff":"Hufflepuff","ravenclaw":"Ravenclaw","slytherin":"Slytherin"}},"style":{"label":"First Name","options":["any","everyday","pureblood"],"optionLabels":{"any":"Any","everyday":"Everyday (Emma, Siobhan)","pureblood":"Old pure-blood (Ottoline, Lyra)"}}},"recipe":"switch","on":"house","cases":{"any":{"recipe":"switch","on":"style","cases":{"any":{"recipe":"template","template":"[first] [surnames]"}},"default":{"recipe":"template","template":"[first.{style}] [surnames]"}}},"default":{"recipe":"switch","on":"style","cases":{"any":{"recipe":"template","template":"[first] [surnames.{house}]"}},"default":{"recipe":"template","template":"[first.{style}] [surnames.{house}]"}},"data":{"first":{"everyday":["Emma","Sarah","Rebecca","Laura","Claire","Gemma","Rachel","Helen","Kate","Lucy","Sophie","Amy","Natalie","Kirsty","Louise","Zoe","Jenny","Kerry","Holly","Abigail","Charlotte","Emily","Annie","Harriet","Eleanor","Ruth","Fiona","Siobhan","Priya","Anjali","Aisha","Nadia","Mei","Sian","Rhiannon","Bethan","Milly","Polly","Daisy","Rosie","Tilly","Imogen","Florence","Becky","Tamsin","Jess","Freya","Maisie","Orla","Niamh"],"pureblood":["Lyra","Vega","Carina","Alcyone","Electra","Maia","Seraphine","Ottoline","Aurelia","Ignatia","Octavia","Philippa","Theodosia","Clementina","Honoria","Leonora","Mirabel","Rosamund","Isolde","Celestine","Cordelia","Eulalia","Hesperia","Galatea","Lucasta","Aldora","Sibilla","Perpetua","Ondine","Elspeth","Morgause","Euphrasia","Columbina","Antheia","Berenice","Calpurnia","Delphina","Eudoxia","Fenella","Griselda","Hermia","Lavinia","Melusine","Oriel","Rhoswen","Thomasina"]},"surnames":{"gryffindor":["Hartwell","Ashdown","Brightmore","Stoutley","Hardcastle","Fairfax","Ironside","Armstrong","Redmayne","Goldsworthy","Hargreaves","Strickland","Boldwood","Hawthorne","Penhallow","Haverford","Cragg","Burnell","Ryder","Tremlett","Wolfenden","Embury","Lyon","Blazey","Truscott"],"hufflepuff":["Applegate","Hollyfield","Mossop","Honeycutt","Goodbody","Nettleship","Butterworth","Pipkin","Cobbold","Rushworth","Medlicott","Fernsby","Oakes","Hedges","Gladwell","Fairbairn","Kettlewell","Plumtree","Haybarrow","Bunting","Cosgrove","Larkin","Dimbleby","Thrupp","Pennywhistle"],"ravenclaw":["Pennyfeather","Fairweather","Lark","Inkpen","Starling","Ashcombe","Merrivale","Heron","Bookbinder","Lovelace","Wexley","Vellacott","Whitlock","Sterne","Halloran","Everleigh","Fennimore","Hollins","Ellery","Wren","Brightwell","Penrose","Quillon","Moonley","Astley"],"slytherin":["Mortlake","Vavasour","Ravensworth","Blackwood","Thorne","Mallory","Grimshaw","Vesey","Draycott","Pembroke","Corvell","Vaux","St Clair","Belvoir","Mordaunt","Chevalier","Valmont","Wolsey","Ravenhurst","Coldwell","Selby","Dauncey","Lisle","Fitzroy","Malvoisin"]}}}</script>
     <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
-    <script src="../lib/page.js?v=e05a95f4"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

@@ -314,7 +314,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=7232e3a3">
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -478,6 +478,14 @@
                 <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
             </section>
             <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-11-13">13 November 2026</time></p>
+            <details class="embed-box">
+                <summary>Put this generator on your website</summary>
+                <p>Free for blogs, campaign sites, class pages and wikis, with no ads. Paste this into your page's HTML:</p>
+                <textarea class="embed-code" readonly rows="5" aria-label="Embed code for the Hogwarts Legacy Wizard Name Generator">&lt;iframe src=&quot;https://thenamegenerators.com/embed/hogwarts-legacy-wizard-name-generator.html&quot; title=&quot;Hogwarts Legacy Wizard Name Generator&quot; data-tng-embed width=&quot;100%&quot; height=&quot;560&quot; style=&quot;border:0;width:100%;max-width:720px&quot; loading=&quot;lazy&quot; allow=&quot;clipboard-write&quot;&gt;&lt;/iframe&gt;
+&lt;p style=&quot;margin:4px 0 16px;font-size:14px&quot;&gt;Hogwarts Legacy Wizard Name Generator by &lt;a href=&quot;https://thenamegenerators.com/posts/hogwarts-legacy-wizard-name-generator.html&quot;&gt;The Name Generators&lt;/a&gt;&lt;/p&gt;
+&lt;script src=&quot;https://thenamegenerators.com/lib/embed.js&quot; async&gt;&lt;/script&gt;</textarea>
+                <p class="embed-acts"><button type="button" class="mini hd tap" data-embed-copy><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy code</span></button> <a href="../embed-name-generators.html">How embedding works</a></p>
+            </details>
 
             <section class="section example-names">
                 <h2>Example Hogwarts Legacy Wizard Names</h2>
@@ -638,7 +646,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Hogwarts Legacy Wizard Name Generator","slug":"hogwarts-legacy-wizard-name-generator","filters":{"house":{"label":"House","options":["any","gryffindor","hufflepuff","ravenclaw","slytherin"],"optionLabels":{"any":"Any house"}}},"recipe":"switch","on":"house","cases":{"any":{"recipe":"combine","parts":["first","surnames"],"join":" "}},"default":{"recipe":"combine","parts":["first","surnames.{house}"],"join":" "},"data":{"first":["Albert","Alfred","Ambrose","Archibald","Arthur","Augustus","Barnabas","Bartholomew","Cecil","Clement","Cyril","Edgar","Edmund","Edwin","Elias","Ellis","Ernest","Ezra","Felix","Frederick","Gideon","Gilbert","Harold","Horace","Hugo","Ignatius","Jasper","Leopold","Lucius","Matthias","Montague","Mortimer","Octavius","Ogden","Oswald","Percival","Phineas","Quentin","Reginald","Rufus","Septimus","Silas","Solomon","Thaddeus","Theodore","Tobias","Ulysses","Walter","Wilfred","Zachariah","Benedict","Cornelius","Erasmus","Fitzgerald","Hamish","Humphrey","Jeremiah","Lysander","Mordecai","Nathaniel","Obadiah","Peregrine","Rupert","Sebastian","Tiberius","Virgil","Barnaby","Crispin","Algernon","Bertram","Arjun","Kenji","Emeka","Rafael","Tariq","Hamid","Mateo","Ravi","Kwame","Callum","Dmitri","Anders","Takeshi","Idris"],"surnames":{"gryffindor":["Ashcombe","Bramwell","Brightwater","Burnham","Dauntley","Dunmore","Fairweather","Fernsby","Galloway","Gamble","Goodhart","Hale","Hardwick","Hart","Heathcote","Holloway","Jolliffe","Lambert","Lyon","Mallory","Marsden","Pennington","Redfern","Rowley","Scarlett","Stirling","Strong","Thatcher","Tolliver","Wakefield","Whitlock","Wolfe","Wyndham","Boulton","Hawkes","Leighton","Brand","Ashford","Kingsbury","Steele"],"slytherin":["Ashby","Belvoir","Blackburne","Carrington","Castellane","Corvell","Crane","Dashwood","Montrose","Mordaunt","Pemberton","Quarrington","Ravenscroft","Rothwell","St Clair","Sterling","Thorne","Vane","Vaughan","Wexley","Winterbourne","Wolcott","Ashenden","Blackmore","Cavendish","Coldridge","Darrow","Fairfax","Grimstone","Harrowgate","Mortlake","Rook","Sallis","Selby","Vesey","Ormsby","Draycott","Villiers","Asquith","Lisle"],"ravenclaw":["Abernethy","Ainsworth","Alcott","Bellamy","Birchall","Brightman","Chadwick","Crofton","Elderfield","Featherstone","Fitzwilliam","Goodwin","Hawthorne","Inkpen","Lark","Lightfoot","Moorcroft","Nettleship","Owlsley","Penrose","Quill","Quigley","Rainsford","Starling","Stowe","Thistlewood","Tillingham","Whitby","Winslow","Wren","Bookham","Faraday","Merriman","Sage","Halloway","Linton","Penhallow","Ravensworth","Ashbury","Wise"],"hufflepuff":["Applegate","Bassett","Bellows","Brambley","Brewster","Butterfield","Cobbold","Cotterill","Dimmock","Dunbar","Fennel","Gladwell","Goodbody","Greenhalgh","Hartley","Hedges","Honeysett","Kettle","Lovell","Maddox","Merriweather","Midgley","Nutley","Oakley","Pickering","Plumtree","Sowerby","Sparrow","Tansley","Tuckett","Wainwright","Whitlow","Woolley","Badgerly","Barley","Cherry","Haybury","Meadows","Pennywhistle","Honeybourne"]}}}</script>
     <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
-    <script src="../lib/page.js?v=e05a95f4"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo-Fi Name Generator | The Name Generators</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://thenamegenerators.com/posts/lofi-name-generator.html">
+    <base target="_blank">
+    <link rel="icon" href="/favicon.ico?v=626227da" sizes="any">
+    <link rel="icon" href="/favicon.svg?v=727d2202" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
+</head>
+<body class="embed-page">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      
+    </defs></svg>
+    <main class="embed-wrap">
+        <p class="embed-head"><b>Lo-Fi Name Generator</b> <a href="https://thenamegenerators.com/posts/lofi-name-generator.html?utm_source=embed&amp;utm_medium=widget" rel="noopener">More at The Name Generators</a></p>
+        <section class="sheet hd simple-generator" id="generator" aria-label="Lo-Fi Name Generator">
+                <div class="gen-one">
+          <div class="group" role="group" aria-labelledby="filter-format-label">
+            <div class="label"><span id="filter-format-label">What are you naming?</span><span class="pen" data-hint-for="format" aria-hidden="true">e.g. teacup.</span></div>
+            <div class="opts" data-buttons-for="format">
+              <button type="button" class="opt hd tap" data-value="artist" data-hint="e.g. teacup." title="Producer alias (teacup.)" aria-pressed="true">Producer alias</button>
+              <button type="button" class="opt hd tap" data-value="band" data-hint="e.g. fern &amp; wren" title="Duo/collective (fern &amp; wren)" aria-pressed="false">Duo/collective</button>
+              <button type="button" class="opt hd tap" data-value="album" data-hint="e.g. sunday laundry" title="Beat tape (sunday laundry)" aria-pressed="false">Beat tape</button>
+            </div>
+            <input type="hidden" id="filter-format" name="format" data-filter="format" value="artist">
+          </div></div>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="false">
+                    <p class="results-empty">Press Generate Names for 8 lo-fi names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
+                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+    </main>
+    <script type="application/json" id="generator-config">{"title":"Lo-Fi Name Generator","slug":"lofi-name-generator","seoTitle":"Lo-Fi Name Generator: Lofi Artist & Beat Tape Names","noEcho":true,"filters":{"format":{"label":"What are you naming?","options":["artist","band","album"],"optionLabels":{"artist":"Producer alias (teacup.)","band":"Duo/collective (fern & wren)","album":"Beat tape (sunday laundry)"}}},"recipe":"switch","on":"format","cases":{"artist":{"recipe":"template","template":["[one]","[one]","[one].","[jp]","[jp].","sleepy [animal]","[adj] [noun]","[coined]","[coined] & [animal]"]},"band":{"recipe":"template","template":["[one] & [one]","[jp] & [one]","the [adj] [noun] club","[one] [clubnoun]","[adj] [animal] [clubnoun]","[one] & friends","[coined] & friends"]},"album":{"recipe":"template","template":["[alb]","[alb]","[tapenoun] tape","beats to [verb] to","[jp] vol. [n]","[season] [tapeword]"]}},"data":{"one":["dewdrop","nightlight","honeydew","marmalade","biscuit","teacup","raincoat","puddles","snowglobe","kettle","blanket","porchlight","windowsill","daydreamer","lamplight","moth","sparrow","wren","fern","moss","clover","pebble","acorn","chestnut","cinnamon","oatmeal","crumbs","mittens","slippers","beanie","notebook","paperback","bookmark","dandelion","sunroom","siesta","snooze","hush","lull","murmur","drizzle","raindrops","overcast","cloudberry","matcha","chai","cocoa","mochi","dumpling","houseplant","succulent","bonsai","streetlamp","tramline","postcard","stamps","crayons","doodles","sketchbook","inkwell","typewriter","radiator","hotwater","teapot","sugarcube","shortbread","crumpet","toastie","flapjack","bluebell","foxglove","thimble","yarn","pompom","quilt","duvet","nightcap","sleepwalk","dozing","yawns","pillowfort","homebody"],"jp":["yume","sora","hoshi","kumo","ame","neko","tsuki","natsu","fuyu","haru","kaze","yoru","asa","hikari","umi","hana","mizu","yuki","shizuka","nemui","ocha","sakura"],"coined":["teo","milo","nuo","lio","rua","emi","kai","ilo","pim","tavi","soren","lumi","beau","remi","ollie","nao","kiko","tobi","fen","arlo","wilo","ezra","noa"],"animal":["cat","kitten","fox","owl","bear","otter","hedgehog","bunny","puppy","frog","snail","sloth","penguin","duckling","hamster","mouse","badger","koala","seal","squirrel","deer","moth","panda","turtle"],"adj":["quiet","little","soft","slow","warm","dusty","rainy","lazy","mellow","faded","hazy","gentle","tiny","misty","sleepy","comfy","cloudy","snowy","sunny"],"noun":["bakery","window","garden","rooftop","library","bookshop","kettle","blanket","radio","cassette","notebook","porch","balcony","laundrette","tram","bicycle","lantern","houseplant","jumper","mug","piano","stereo","attic","greenhouse","teapot","bus stop","café","corner shop","deckchair","record player"],"alb":["tea for one","sunday laundry","rain on the window","homework at midnight","the last train home","warm socks","notes from the balcony","bookshop afternoons","kettle's on","slow mornings","late library","soft focus","the quiet carriage","between classes","study break","paper lanterns","cloud watching","spring cleaning","first frost","pancake sunday","open window","the long nap","plant sitting","back porch","corner shop","bedside lamp","biscuit tin","fog on the river","the walk home","lunch break","rainy commute","dust on the needle","tape hiss","hand-me-down records","grandma's piano","dog-eared","unfinished homework","cherry blossom walk","lantern festival","steam and static","sleeping in","sunlight through curtains","an afternoon off","the 4th floor","blanket fort","mug of cocoa","tea leaves","moonlit laundry","window shopping in the rain","jam on toast","the cat's asleep","snooze button","radiator season","puddle jumping","tidy desk, messy head","library card","late bus","cloudy with beats","pencil shavings","breakfast for dinner","hot water bottle","attic radio","porch light on","kitchen table","early tram","rooftop washing line","the slow way round","fogged glasses","half past nothing","cold toast","second cup","ferry to nowhere","screen glow","lost umbrella","bike in the rain"],"tapenoun":["biscuit","kettle","teacup","raincoat","porch","attic","library","laundrette","tram","notebook","blanket","cocoa","matcha","radiator","windowsill","puddle","sunday","homework","bakery","balcony","bedroom","kitchen"],"verb":["fold laundry","water plants","feed the cat","bake bread","read on the train","watch the rain","do the dishes","write letters","fall asleep","walk the dog","revise for exams","sketch","daydream","make tea","wait for the bus","tidy your room","knit","paint","stargaze","nap","journal","wash up","repot plants","do puzzles","make pancakes","catch the last tram","finish homework"],"season":["spring","summer","autumn","winter","rainy season","midnight","morning","afternoon","weekend"],"tapeword":["tapes","loops","sketches","demos","beats","notes","tape","b-sides"],"n":["1","2","3","4","5"],"clubnoun":["club","collective","radio","tapes","records","society","crew"]}}</script>
+    <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
+    <script src="../lib/outline.js?v=bb3e12d8"></script>
+    <script>(function(){if(window.parent===window)return;var last=0;function send(){var h=Math.ceil(document.documentElement.getBoundingClientRect().height);if(h!==last){last=h;window.parent.postMessage({tngEmbedHeight:h},'*');}}if('ResizeObserver' in window)new ResizeObserver(send).observe(document.body);window.addEventListener('load',send);send();})();</script>
+</body>
+</html>

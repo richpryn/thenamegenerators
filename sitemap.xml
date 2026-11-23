@@ -20,6 +20,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  <!-- Embed a generator -->
+  <url>
+    <loc>https://thenamegenerators.com/embed-name-generators.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
   <!-- Name tools -->
   <url>
     <loc>https://thenamegenerators.com/name-tools.html</loc>

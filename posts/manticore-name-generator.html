@@ -285,7 +285,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=7232e3a3">
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -462,6 +462,14 @@
                 <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
             </section>
             <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-11-23">23 November 2026</time></p>
+            <details class="embed-box">
+                <summary>Put this generator on your website</summary>
+                <p>Free for blogs, campaign sites, class pages and wikis, with no ads. Paste this into your page's HTML:</p>
+                <textarea class="embed-code" readonly rows="5" aria-label="Embed code for the Manticore Name Generator">&lt;iframe src=&quot;https://thenamegenerators.com/embed/manticore-name-generator.html&quot; title=&quot;Manticore Name Generator&quot; data-tng-embed width=&quot;100%&quot; height=&quot;560&quot; style=&quot;border:0;width:100%;max-width:720px&quot; loading=&quot;lazy&quot; allow=&quot;clipboard-write&quot;&gt;&lt;/iframe&gt;
+&lt;p style=&quot;margin:4px 0 16px;font-size:14px&quot;&gt;Manticore Name Generator by &lt;a href=&quot;https://thenamegenerators.com/posts/manticore-name-generator.html&quot;&gt;The Name Generators&lt;/a&gt;&lt;/p&gt;
+&lt;script src=&quot;https://thenamegenerators.com/lib/embed.js&quot; async&gt;&lt;/script&gt;</textarea>
+                <p class="embed-acts"><button type="button" class="mini hd tap" data-embed-copy><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy code</span></button> <a href="../embed-name-generators.html">How embedding works</a></p>
+            </details>
 
             <section class="section example-names">
                 <h2>Example Manticore Names</h2>
@@ -609,7 +617,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Manticore Name Generator","slug":"manticore-name-generator","seoTitle":"Manticore Name Generator: Savage Beast Names","filters":{"style":{"label":"Style","options":["any","savage","persian","wastes"],"optionLabels":{"any":"Any (a mix)","savage":"Savage (Spinetail)","persian":"Persian-sounding (Martikhor)","wastes":"Named for its hunting ground (the Manticore of the Red Waste)"}},"format":{"label":"Name format","options":["name","epithet"],"optionLabels":{"name":"Name only","epithet":"With a title (the Man-Eater)"}}},"recipe":"switch","on":"format","cases":{"name":{"recipe":"switch","on":"style","cases":{"savage":{"recipe":"template","template":"[savage.a][savage.b]"},"persian":{"recipe":"template","template":["[persian]","[persian] of [wastes]"]},"wastes":{"recipe":"template","template":["The Manticore of [wastes]","The [adj] Manticore","The [adj] Manticore of [wastes]"]},"any":{"recipe":"template","template":["[savage.a][savage.b]","[persian]","[persian] of [wastes]","The Manticore of [wastes]","The [adj] Manticore","The [adj] Manticore of [wastes]"]}}},"epithet":{"recipe":"switch","on":"style","cases":{"savage":{"recipe":"template","template":["[savage.a][savage.b] [epithets]","[savage.a][savage.b], [epithets_titled]"]},"persian":{"recipe":"template","template":["[persian] [epithets]","[persian], [epithets_titled]","[persian] of [wastes]"]},"wastes":{"recipe":"template","template":["The Manticore of [wastes]","The [adj] Manticore, [epithets_titled]","The [adj] Manticore of [wastes]"]},"any":{"recipe":"template","template":["[savage.a][savage.b] [epithets]","[savage.a][savage.b], [epithets_titled]","[persian] [epithets]","[persian], [epithets_titled]","[persian] of [wastes]","The Manticore of [wastes]","The [adj] Manticore, [epithets_titled]","The [adj] Manticore of [wastes]"]}}}},"data":{"savage":{"a":["Spine","Barb","Venom","Sting","Blood","Fang","Thorn","Scorch","Dust","Gore","Spike","Rend","Grim","Sand","Bone","Claw"],"b":["tail","maw","mane","fang","sting","claw","roar","hide","quill","lash","hunter","eater"]},"persian":["Martikhor","Darvash","Kazhar","Zorvan","Rustahm","Behrak","Shahvar","Tahmar","Farzhad","Arzhang","Kavush","Varzan","Mehrak","Zarvakh","Golvar","Rokhsar","Dastar","Javush","Narvak","Sorkhan","Bahrak","Kiyar","Azhvar","Fardin","Taravash","Golnar","Shirak","Zarhan","Varesh","Khoran"],"wastes":["the Red Waste","the Salt Flats","the Scorched Plains","the Broken Canyons","the Bone Desert","the Dry Mountains","the Black Sands","the Hunter's Pass","the Thorn Steppes","the Ruined City","the Dust Sea","the Lion Hills"],"adj":["Spined","Man-Eating","Red","Venom-Tailed","Hungry","Roaring","Three-Rowed","Desert","Savage","Black-Maned","Barbed","Starving","Grinning","Golden","Bloodied","Dust-Coloured","Ancient","Prowling","Wild","Crimson"],"epithets":["the Man-Eater","of the Red Waste","the Barbed","Who Hunts at Dusk","the Spine-Thrower","the Three-Rowed","the Roaring","the Venom-Tailed"],"epithets_titled":["Terror of Caravans","Lord of the Wastes","Bane of Travellers","Hunter of Men"]}}</script>
     <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
-    <script src="../lib/page.js?v=e05a95f4"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

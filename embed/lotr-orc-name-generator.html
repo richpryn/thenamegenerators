@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOTR Orc Name Generator | The Name Generators</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://thenamegenerators.com/posts/lotr-orc-name-generator.html">
+    <base target="_blank">
+    <link rel="icon" href="/favicon.ico?v=626227da" sizes="any">
+    <link rel="icon" href="/favicon.svg?v=727d2202" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
+</head>
+<body class="embed-page">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      
+    </defs></svg>
+    <main class="embed-wrap">
+        <p class="embed-head"><b>LOTR Orc Name Generator</b> <a href="https://thenamegenerators.com/posts/lotr-orc-name-generator.html?utm_source=embed&amp;utm_medium=widget" rel="noopener">More at The Name Generators</a></p>
+        <section class="sheet hd simple-generator" id="generator" aria-label="LOTR Orc Name Generator">
+                <div class="gen-grid">
+          <div class="group">
+            <label class="label" for="filter-kind">Kind of Orc</label>
+            <div class="ctl sel hd">
+              <select id="filter-kind" name="kind" data-filter="kind">
+                <option value="mordor">Mordor orc</option>
+                <option value="uruk">Uruk-hai of Isengard</option>
+                <option value="mountains">Goblin of the Misty Mountains</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="group">
+            <label class="label" for="filter-format">Name Format</label>
+            <div class="ctl sel hd">
+              <select id="filter-format" name="format" data-filter="format">
+                <option value="place">Name and where they serve (Gashthak of the Tower)</option>
+                <option value="rank">With a rank (Captain Krimdush of Udûn)</option>
+                <option value="name">Name only</option>
+              </select>
+            </div>
+          </div></div>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="true">
+                    <p class="results-empty">Press Generate Names for 8 lotr orc names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
+                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+    </main>
+    <script type="application/json" id="generator-config">{"title":"LOTR Orc Name Generator","slug":"lotr-orc-name-generator","filters":{"kind":{"label":"Kind of Orc","options":["mordor","uruk","mountains"],"optionLabels":{"mordor":"Mordor orc","uruk":"Uruk-hai of Isengard","mountains":"Goblin of the Misty Mountains"}},"format":{"label":"Name Format","options":["place","rank","name"],"optionLabels":{"place":"Name and where they serve (Gashthak of the Tower)","rank":"With a rank (Captain Krimdush of Udûn)","name":"Name only"}}},"recipe":"switch","on":"format","cases":{"name":{"recipe":"pick","from":"names"},"place":{"recipe":"template","template":"[names] [places.{kind}]"},"rank":{"recipe":"template","template":["[ranks.{kind}] [names]","[ranks.{kind}] [names] [places.{kind}]"]}},"data":{"names":["Shakrat","Shakbag","Shakûk","Shakdush","Shakhûr","Shakgash","Shakbug","Shakthak","Shakduf","Shaknákh","Shakmog","Shakgrat","Shakzûg","Shaklûk","Shakash","Shakug","Shakrok","Shakmûr","Shaknar","Gorûk","Gordush","Gorhûr","Gorgash","Gorbug","Gorthak","Gorduf","Gornákh","Gormog","Gorgrat","Gorzûg","Gorlûk","Gorash","Gorug","Gormûr","Gornar","Uglrat","Uglbag","Ugldush","Uglhûr","Uglgash","Uglbug","Uglthak","Uglduf","Uglnákh","Uglmog","Uglgrat","Uglzûg","Uglash","Uglug","Uglrok","Uglmûr","Uglnar","Lugrat","Lugbag","Lugûk","Lughûr","Lugbug","Lugthak","Lugduf","Lugnákh","Lugmog","Lugzûg","Luglûk","Lugash","Lugrok","Lugmûr","Lugnar","Muzrat","Muzbag","Muzûk","Muzdush","Muzhûr","Muzbug","Muzthak","Muzduf","Muznákh","Muzmog","Muzgrat","Muzlûk","Muzash","Muzug","Muzrok","Muzmûr","Muznar","Radrat","Radbag","Radûk","Radhûr","Radgash","Radthak","Radnákh","Radmog","Radgrat","Radzûg","Radlûk","Radash","Radug","Radrok","Radmûr","Radnar","Ufrat","Ufbag","Ufûk","Ufdush","Ufhûr","Ufgash","Ufbug","Ufduf","Ufnákh","Ufmog","Ufgrat","Ufzûg","Uflûk","Ufash","Ufug","Ufrok","Ufmûr","Ufnar","Gashrat","Gashbag","Gashûk","Gashdush","Gashgash","Gashbug","Gashthak","Gashduf","Gashnákh","Gashmog","Gashgrat","Gashzûg","Gashlûk","Gashash","Gashug","Gashrok","Gashmûr","Gashnar","Lagrat","Lagbag","Lagûk","Lagdush","Laghûr","Lagbug","Lagthak","Lagnákh","Lagmog","Lagzûg","Laglûk","Lagash","Lagug","Lagrok","Lagmûr","Lagnar","Grishrat","Grishbag","Grishûk","Grishdush","Grishgash","Grishbug","Grishthak","Grishduf","Grishmog","Grishgrat","Grishzûg","Grishlûk","Grishash","Grishug","Grishrok","Grishmûr","Grishnar","Skratrat","Skratbag","Skratûk","Skratdush","Skrathûr","Skratgash","Skratbug","Skratduf","Skratnákh","Skratmog","Skratgrat","Skratzûg","Skratlûk","Skratash","Skratug","Skratrok","Skratmûr","Skratnar","Bolrat","Bolbag","Bolûk","Boldush","Bolhûr","Bolgash","Bolbug","Bolthak","Bolduf","Bolnákh","Bolmog","Bolzûg","Bolash","Bolug","Bolrok","Bolmûr","Bolnar","Maurat","Maubag","Mauûk","Maudush","Maugash","Maubug","Mauthak","Mauduf","Maunákh","Maumog","Maugrat","Mauzûg","Maulûk","Mauash","Maurok","Maumûr","Maunar","Dushrat","Dushbag","Dushûk","Dushdush","Dushgash","Dushbug","Dushthak","Dushduf","Dushnákh","Dushmog","Dushgrat","Dushzûg","Dushlûk","Dushash","Dushug","Dushrok","Dushmûr","Dushnar","Narbag","Narûk","Nardush","Narhûr","Nargash","Narbug","Narthak","Narduf","Narnákh","Narmog","Nargrat","Narzûg","Narlûk","Narash","Narug","Narmûr","Narnar","Zograt","Zogbag","Zogûk","Zogdush","Zoghûr","Zogbug","Zogthak","Zogduf","Zognákh","Zogmog","Zogzûg","Zoglûk","Zogash","Zogug","Zogrok","Zogmûr","Zognar","Ghorûk","Ghordush","Ghorhûr","Ghorgash","Ghorbug","Ghorthak","Ghorduf","Ghornákh","Ghormog","Ghorgrat","Ghorzûg","Ghorlûk","Ghorash","Ghorug","Ghormûr","Ghornar","Krimrat","Krimbag","Krimûk","Krimdush","Krimhûr","Krimgash","Krimbug","Krimthak","Krimduf","Krimnákh","Krimgrat","Krimzûg","Krimlûk","Krimash","Krimug","Krimrok","Krimnar","Yagrat","Yagbag","Yagûk","Yagdush","Yaghûr","Yagbug","Yagthak","Yagduf","Yagnákh","Yagmog","Yagzûg","Yaglûk","Yagash","Yagug","Yagrok","Yagmûr","Yagnar","Globrat","Globûk","Globdush","Globhûr","Globgash","Globthak","Globduf","Globnákh","Globmog","Globgrat","Globzûg","Globlûk","Globash","Globug","Globrok","Globmûr","Globnar","Snikrat","Snikbag","Snikûk","Snikdush","Snikhûr","Snikgash","Snikbug","Snikthak","Snikduf","Sniknákh","Snikmog","Snikgrat","Snikzûg","Sniklûk","Snikash","Snikug","Snikrok","Snikmûr","Sniknar","Horkrat","Horkbag","Horkûk","Horkdush","Horkhûr","Horkgash","Horkbug","Horkthak","Horkduf","Horknákh","Horkmog","Horkgrat","Horkzûg","Horklûk","Horkash","Horkug","Horkrok","Horkmûr","Horknar","Bûrbag","Bûrûk","Bûrdush","Bûrhûr","Bûrgash","Bûrbug","Bûrthak","Bûrduf","Bûrnákh","Bûrmog","Bûrgrat","Bûrzûg","Bûrlûk","Bûrash","Bûrug","Bûrmûr","Bûrnar","Ulrat","Ulbag","Ulûk","Uldush","Ulhûr","Ulgash","Ulbug","Ulthak","Ulduf","Ulnákh","Ulmog","Ulgrat","Ulzûg","Ulash","Ulug","Ulrok","Ulmûr","Ulnar"],"places":{"mordor":["of the Tower","of Lugbúrz","of Minas Morgul","of Cirith Ungol","of the Black Gate","of Udûn","of Gorgoroth","of the Morgai","of Mount Doom","of the Isenmouthe","of Durthang","of the Ephel Dúath","of Barad-dûr","of the Plateau of Gorgoroth"],"uruk":["of the White Hand","of Isengard","of Orthanc","of the Uruk-hai","of Nan Curunír","of Dunland","of the Fords of Isen","of the Wizard's Vale","of the Wolf-Pits","of the Pits of Isengard","of the Breeding-Pits","of the Gap of Rohan"],"mountains":["of Gundabad","of Moria","of Goblin-town","of the High Pass","of Mount Gram","of the Misty Mountains","of the Grey Mountains","of the Dimrill Gate","of the Ettenmoors","of the Back Door","of the Deep Halls","of the Under-Deeps"]},"ranks":{"mordor":["Captain","Tracker","Slave-driver","Tower-guard","Gate-warden","Lieutenant","Snaga","Whip-master","Sentry","Messenger","Black Uruk","Overseer","Watchman","Torturer","Errand-runner","Pit-guard"],"uruk":["Captain","Fighting Uruk","Scout","Pit-master","Warg-rider","Lieutenant","Berserker","Standard-bearer","Crossbowman","Sapper","Halberdier","Tracker","Sergeant","Runner","Drill-master","Pikeman"],"mountains":["Chieftain","Tunnel-boss","Warg-rider","Scout","Thief","Lieutenant","Wolf-tamer","Cave-guard","Torch-bearer","Drummer","Raider","Lookout","Slaver","Bone-cook","Rope-master","Gate-keeper"]}}}</script>
+    <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
+    <script src="../lib/outline.js?v=bb3e12d8"></script>
+    <script>(function(){if(window.parent===window)return;var last=0;function send(){var h=Math.ceil(document.documentElement.getBoundingClientRect().height);if(h!==last){last=h;window.parent.postMessage({tngEmbedHeight:h},'*');}}if('ResizeObserver' in window)new ResizeObserver(send).observe(document.body);window.addEventListener('load',send);send();})();</script>
+</body>
+</html>

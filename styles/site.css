@@ -934,3 +934,19 @@ a.go{text-decoration:none}
 @media (min-width:760px){.nb-ex{grid-template-columns:1fr 1fr}}
 .nb-ex .exbox h3{margin:0 0 var(--s2)}
 .nb-ex .nb-name{font-size:18px;cursor:text}
+/* ---------- Embeds (23 Nov) ---------- */
+.embed-box{margin:var(--s4) 0 0;font:15px/1.5 var(--body);color:var(--muted)}
+.embed-box summary{cursor:pointer;color:var(--ink);font:600 15px/1.4 var(--head);text-decoration:underline;text-decoration-color:var(--hi);text-decoration-thickness:3px;text-underline-offset:3px;width:max-content;max-width:100%}
+.embed-box p{margin:var(--s3) 0 0}
+.embed-code{display:block;width:100%;box-sizing:border-box;margin:var(--s2) 0 0;padding:var(--s2) var(--s3);font:13px/1.45 ui-monospace,Menlo,Consolas,monospace;color:var(--ink);background:#fff;border:1.5px solid var(--ink);border-radius:8px;resize:vertical}
+.embed-acts{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s3)}
+.embed-picker .embed-select{width:100%;min-height:46px;font:16px var(--body);padding:0 var(--s3);border:1.5px solid var(--ink);border-radius:8px;background:#fff;color:var(--ink)}
+.embed-picker .embed-label{margin-top:var(--s5)}
+.embed-preview{margin-top:var(--s2)}
+.embed-credit{margin:4px 0 0;font-size:14px}
+.embed-page{min-height:0;background:var(--paper)}
+.embed-wrap{padding:var(--s3)}
+.embed-wrap .sheet{margin-top:var(--s2)}
+.embed-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:var(--s1) var(--s3);margin:0;font:15px/1.3 var(--head)}
+.embed-head b{font-weight:700}
+.embed-head a{font-size:14px;color:var(--ink)}

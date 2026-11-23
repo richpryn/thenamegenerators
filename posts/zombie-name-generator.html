@@ -285,7 +285,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=7232e3a3">
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -475,6 +475,14 @@
                 <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
             </section>
             <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-11-13">13 November 2026</time></p>
+            <details class="embed-box">
+                <summary>Put this generator on your website</summary>
+                <p>Free for blogs, campaign sites, class pages and wikis, with no ads. Paste this into your page's HTML:</p>
+                <textarea class="embed-code" readonly rows="5" aria-label="Embed code for the Zombie Name Generator">&lt;iframe src=&quot;https://thenamegenerators.com/embed/zombie-name-generator.html&quot; title=&quot;Zombie Name Generator&quot; data-tng-embed width=&quot;100%&quot; height=&quot;560&quot; style=&quot;border:0;width:100%;max-width:720px&quot; loading=&quot;lazy&quot; allow=&quot;clipboard-write&quot;&gt;&lt;/iframe&gt;
+&lt;p style=&quot;margin:4px 0 16px;font-size:14px&quot;&gt;Zombie Name Generator by &lt;a href=&quot;https://thenamegenerators.com/posts/zombie-name-generator.html&quot;&gt;The Name Generators&lt;/a&gt;&lt;/p&gt;
+&lt;script src=&quot;https://thenamegenerators.com/lib/embed.js&quot; async&gt;&lt;/script&gt;</textarea>
+                <p class="embed-acts"><button type="button" class="mini hd tap" data-embed-copy><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy code</span></button> <a href="../embed-name-generators.html">How embedding works</a></p>
+            </details>
 
             <section class="section example-names">
                 <h2>Example Zombie Names</h2>
@@ -610,7 +618,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Zombie Name Generator","slug":"zombie-name-generator","filters":{"what":{"label":"Name for","options":["funny","grim","virus"],"optionLabels":{"funny":"A zombie (funny)","grim":"A zombie (grim)","virus":"The zombie virus"}},"letter":{"label":"Starts with","options":["any","a","b","c","d","e","g","h","l","m","n","o","p","r","s","t","w","z"],"optionLabels":{"any":"Any letter","a":"A","b":"B","c":"C","d":"D","e":"E","f":"F","g":"G","h":"H","i":"I","j":"J","k":"K","l":"L","m":"M","n":"N","o":"O","p":"P","q":"Q","r":"R","s":"S","t":"T","u":"U","v":"V","w":"W","x":"X","y":"Y","z":"Z"}}},"startsWith":"letter","recipe":"switch","on":"what","cases":{"funny":{"recipe":"template","template":"[adjectives] [first]"},"grim":{"recipe":"template","template":"[first] [titles]"},"virus":{"recipe":"template","template":["The [virusA] [virusB]","[virusA]-[codes] [virusB]","[codes]-[virusA]","[virusA] [virusB]"]}},"data":{"first":["Gary","Brenda","Kevin","Linda","Doug","Sharon","Barry","Nigel","Wendy","Clive","Pam","Derek","Gail","Trevor","Maureen","Colin","Deirdre","Graham","Shirley","Norman","Brian","Sandra","Keith","Janet","Malcolm","Gloria","Roger","Doreen","Vernon"],"adjectives":["Groaning","Shambling","Rotting","Lurching","Moaning","Hungry","Decaying","Limping","Drooling","Mouldy","Crumbling","Wobbly","Grumbling","Gnawing","Sluggish","Stumbling","Peeling","Twitching","Undead","Brainless","Creaking","Oozing","Squelching","Dribbling","Lopsided","Mumbling"],"titles":["the Unburied","the Restless","Half-Eaten","the Twice-Dead","the Hungry","the Hollow","of the Grave","the Returned","Graveborn","the Rotten"],"virusA":["Necrosis","Lazarus","Revenant","Hollow","Pale","Grave","Morrow","Ashen","Cerberus","Hydra","Tartarus","Wraith","Ember","Black Tide","Sallow","Crimson","Silent"],"virusB":["Virus","Strain","Plague","Fever","Pathogen","Protocol","Contagion","Syndrome","Blight","Rot"],"codes":["Alpha","Beta","Gamma","Delta","Omega","Sigma","Theta","Zeta"]},"letterSets":{"funny":"","grim":"","virus":"abcdeghlmnoprstwz"}}</script>
     <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
-    <script src="../lib/page.js?v=e05a95f4"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

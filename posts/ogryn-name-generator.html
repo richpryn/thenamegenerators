@@ -277,7 +277,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=7232e3a3">
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -441,6 +441,14 @@
                 <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
             </section>
             <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-11-23">23 November 2026</time></p>
+            <details class="embed-box">
+                <summary>Put this generator on your website</summary>
+                <p>Free for blogs, campaign sites, class pages and wikis, with no ads. Paste this into your page's HTML:</p>
+                <textarea class="embed-code" readonly rows="5" aria-label="Embed code for the Ogryn Name Generator">&lt;iframe src=&quot;https://thenamegenerators.com/embed/ogryn-name-generator.html&quot; title=&quot;Ogryn Name Generator&quot; data-tng-embed width=&quot;100%&quot; height=&quot;560&quot; style=&quot;border:0;width:100%;max-width:720px&quot; loading=&quot;lazy&quot; allow=&quot;clipboard-write&quot;&gt;&lt;/iframe&gt;
+&lt;p style=&quot;margin:4px 0 16px;font-size:14px&quot;&gt;Ogryn Name Generator by &lt;a href=&quot;https://thenamegenerators.com/posts/ogryn-name-generator.html&quot;&gt;The Name Generators&lt;/a&gt;&lt;/p&gt;
+&lt;script src=&quot;https://thenamegenerators.com/lib/embed.js&quot; async&gt;&lt;/script&gt;</textarea>
+                <p class="embed-acts"><button type="button" class="mini hd tap" data-embed-copy><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy code</span></button> <a href="../embed-name-generators.html">How embedding works</a></p>
+            </details>
 
             <section class="section example-names">
                 <h2>Example Ogryn Names</h2>
@@ -577,7 +585,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Ogryn Name Generator","slug":"ogryn-name-generator","filters":{"format":{"label":"Name Format","options":["nickname","squad","regiment","name"],"optionLabels":{"nickname":"Name and nickname (Graug 'Doorstop')","squad":"Name and squad (Graug, Holder of the Line)","regiment":"Name and regiment (Thunk of the Cadian 88th)","name":"Name only"}}},"recipe":"switch","on":"format","cases":{"name":{"recipe":"pick","from":"first"},"nickname":{"recipe":"template","template":"[first] '[nicknames]'"},"squad":{"recipe":"template","template":"[first], [loyal]"},"regiment":{"recipe":"template","template":["[first] [regiments]","[first] '[nicknames]' [regiments]"]}},"data":{"first":["Graug","Vaus","Qodd","Zrog","Thunk","Kraog","Ganduk","Crolg","Vreadd","Sguad","Bazz","Hukk","Fogg","Snag","Bruk","Snuff","Drok","Mogg","Nogg","Gog","Wug","Zog","Grutt","Hunk","Varg","Drokk","Skab","Flogg","Blagg","Krol","Thorg","Zakk","Krag","Shokk","Brog","Slab","Lug","Chunk","Zug","Stomp","Grog","Ruk","Grug","Tank","Rig","Snort","Drogg","Gut","Glug","Scab","Krutt","Thrug","Grak","Bozz","Fleg","Klunk","Moggol","Ogg","Fuzz","Lurr","Marr","Rinn","Yug","Zugz","Vozz","Shlug","Brag","Stug","Karr","Plog","Vurr","Narl","Krump","Gritz","Snortle","Blutt","Trigg","Fraz","Muzz","Kuss","Krolg","Slabbs","Gruntok","Drakk","Scrog","Rimm","Hoss","Bullg","Brunk","Clomp","Drub","Dunk","Flumm","Fronk","Glob","Grumm","Grund","Gurk","Karg","Klud","Krunch","Lunk","Lurg","Mulg","Murk","Oggo","Plonk","Podd","Rugg","Rumm","Splud","Strunk","Thudd","Trog","Trunk","Tugg","Vorg","Whump","Yarg","Zunk","Bludd","Borr","Clag","Dagg","Durk","Glunk","Grob","Hurk","Jarg","Klob","Krugg","Lumm","Mogz","Pugg","Rokk","Skudd","Snub","Thog","Torg","Bramm","Hekk","Lobb","Mudd","Norb","Plunk","Rhok","Stubb","Thuk","Vrugg","Clunk","Dregg","Krask","Mabb","Nogz","Sludd","Tumm","Ulg","Vosk","Wrogg","Gubb","Jukk","Brakk","Thrubb","Glumm","Lunt","Ozz","Dokk","Gurt","Hulg","Kurg","Murg","Bunk","Clod","Dobb","Flubb","Hob","Klonk","Lomp","Mugg","Numm","Ponk","Rubb","Bloog","Crunk","Dunt","Grobb","Jubb","Lugg","Nubb","Plodd","Quob","Rumb","Slubb","Thrunk","Vubb","Wubb","Zubb","Clump","Dorg","Grubb","Hogg","Lork","Munk","Nurg","Thwump","Brub","Dubb","Gromm","Hubb","Kludd","Lugz","Mubb","Nugg","Ogz","Prog","Rudd","Stogg","Thub","Udd","Vugg","Wudd","Tubb","Blubb","Lump","Thump","Stump","Clobb","Druk","Grunk","Krub","Pudd","Trudd","Wobb","Bodd","Gorb","Hodd","Kogg","Lubb"],"nicknames":["Bone'ead","Big'un","Doorstop","Tiny","Lugger","Sarge","Mister Shovel","Crater","Bucket","Ratty","Rumble","Lumps","Bulwark","Chomp","Brick","Slab","Knuckles","Wall","Biscuit","Dozer","Barrel","Thumper","Grub","Tank"],"loyal":["Good Boy of the 88th","Friend of the Commissar","Holder of the Line","Carrier of the Big Shield","Breaker of Doors","Eater of Everyone's Rations","Hero of the Trench","Never Lost a Shovel","the One Who Stays","Strongest in the Regiment","Catcher of Grenades","Keeper of the Lucky Rock","Puncher of Orks","Carrier of the Sarge","Wall That Walks","Friend of the Ratlings","Opener of Hatches","Lifter of Tanks","Biggest Helmet","Bearer of the Ripper Gun","Wakes Up Last","Hugs Too Hard","Knows Three Words","Volunteered (Twice)","Best at Digging","First Through the Breach","Saver of the Medic","Holder of the Bridge"],"regiments":["of the Cadian 88th","of the Tallarn Heavy Guard","of the Valhallan Ice Warriors","of the Catachan 7th","of the Mordian 14th","of the Krieg 93rd","of the Vostroyan 21st","of the Armageddon Steel Legion","of the Praetorian 3rd","of the Elysian Drop Troops","of the Attilan Rough Riders","of the Savlar Chem-Dogs","of the Valhallan 41st","of the Cadian Shock Troops","of the Mordian Iron Guard","of the Krieg Siege Regiment"]}}</script>
     <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
-    <script src="../lib/page.js?v=e05a95f4"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

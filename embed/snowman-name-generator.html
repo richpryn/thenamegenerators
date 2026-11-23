@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowman Name Generator | The Name Generators</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://thenamegenerators.com/posts/snowman-name-generator.html">
+    <base target="_blank">
+    <link rel="icon" href="/favicon.ico?v=626227da" sizes="any">
+    <link rel="icon" href="/favicon.svg?v=727d2202" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
+</head>
+<body class="embed-page">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      
+    </defs></svg>
+    <main class="embed-wrap">
+        <p class="embed-head"><b>Snowman Name Generator</b> <a href="https://thenamegenerators.com/posts/snowman-name-generator.html?utm_source=embed&amp;utm_medium=widget" rel="noopener">More at The Name Generators</a></p>
+        <section class="sheet hd simple-generator" id="generator" aria-label="Snowman Name Generator">
+                <div class="gen-grid">
+          <div class="group" role="group" aria-labelledby="filter-style-label">
+            <div class="label"><span id="filter-style-label">Style</span><span class="pen" data-hint-for="style" aria-hidden="true">e.g. a mix</span></div>
+            <div class="opts" data-buttons-for="style">
+              <button type="button" class="opt hd tap" data-value="any" data-hint="e.g. a mix" title="Any (a mix)" aria-pressed="true">Any</button>
+              <button type="button" class="opt hd tap" data-value="puns" data-hint="e.g. Snowcrates" title="Puns (Snowcrates)" aria-pressed="false">Puns</button>
+              <button type="button" class="opt hd tap" data-value="classic" data-hint="e.g. Lord Frostbottom" title="Grand titles (Lord Frostbottom)" aria-pressed="false">Grand titles</button>
+              <button type="button" class="opt hd tap" data-value="cute" data-hint="e.g. Marshmallow" title="Cute (Marshmallow)" aria-pressed="false">Cute</button>
+            </div>
+            <input type="hidden" id="filter-style" name="style" data-filter="style" value="any">
+          </div>
+
+          <div class="group" role="group" aria-labelledby="filter-format-label">
+            <div class="label"><span id="filter-format-label">Name format</span><span class="pen" data-hint-for="format" aria-hidden="true"></span></div>
+            <div class="opts" data-buttons-for="format">
+              <button type="button" class="opt hd tap" data-value="name" data-hint="" aria-pressed="true">Name only</button>
+              <button type="button" class="opt hd tap" data-value="look" data-hint="e.g. a carrot nose and coal buttons" title="With a look (a carrot nose and coal buttons)" aria-pressed="false">With a look</button>
+            </div>
+            <input type="hidden" id="filter-format" name="format" data-filter="format" value="name">
+          </div></div>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="true">
+                    <p class="results-empty">Press Generate Names for 8 snowman names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
+                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+    </main>
+    <script type="application/json" id="generator-config">{"title":"Snowman Name Generator","slug":"snowman-name-generator","seoTitle":"Snowman Name Generator: Funny Puns & Cute Names","filters":{"style":{"label":"Style","options":["any","puns","classic","cute"],"optionLabels":{"any":"Any (a mix)","puns":"Puns (Snowcrates)","classic":"Grand titles (Lord Frostbottom)","cute":"Cute (Marshmallow)"}},"format":{"label":"Name format","options":["name","look"],"optionLabels":{"name":"Name only","look":"With a look (a carrot nose and coal buttons)"}}},"recipe":"switch","on":"format","cases":{"name":{"recipe":"switch","on":"style","cases":{"puns":{"recipe":"template","template":["[puns]","Little [puns]"]},"classic":{"recipe":"template","template":["[classic]","[titles] [snow_surnames]"]},"cute":{"recipe":"template","template":["[cute]","[cute_pre][cute_suf]"]},"any":{"recipe":"template","template":["[puns]","Little [puns]","[classic]","[titles] [snow_surnames]","[cute]","[cute_pre][cute_suf]"]}}},"look":{"recipe":"switch","on":"style","cases":{"puns":{"recipe":"template","template":["[puns], with [accessories]","Little [puns], with [accessories]"]},"classic":{"recipe":"template","template":["[classic], with [accessories]","[titles] [snow_surnames], with [accessories]"]},"cute":{"recipe":"template","template":["[cute], with [accessories]","[cute_pre][cute_suf], with [accessories]"]},"any":{"recipe":"template","template":["[puns], with [accessories]","Little [puns], with [accessories]","[classic], with [accessories]","[titles] [snow_surnames], with [accessories]","[cute], with [accessories]","[cute_pre][cute_suf], with [accessories]"]}}}},"data":{"puns":["Snowbert","Frostina","Icelyn","Flake","Chillbert","Coldie","Melty","Drift","Sleety","Blizzard Bob","Carrot-Top","Snowella","Snowbie","Slushy","Wintergreen","Snowdon","Snowcrates","Snowcone","Brrrnard","Chilly Billy","Frostbert","Iceabella","Snowlivia","Coldwell","Sir Shivers","Snowphie","Snowah","Chillian","Frostopher","Iceac","Snowmond","Slushanna","Brrrbara","Winterbottom","Coldwin","Flurrence","Sleetney","Flakey Jake","Iceaiah","Frostin","Snowrah","Chillsea","Snowbastian","Brrrian","Snowenna","Frostella","Drifty","Coldilocks","Snowtorious","Blizzabeth","Shiverly","Frostine","Snowmeo","Brrrtha","Brrrnie","Brrrenda","Brrrnadette","Brrrtram","Brrrtie","Brrryony","Snowel","Coldric","Frostavius","Sleetrix","Snow Joke","Snowbody","Snow-it-all","Snowmanuel","Chilliam","Snowscar","Hailey","Meltilda","Meltvin","Icebel","Snowen","Snowby","Snowmi","Chillvia","Snowdith","Brrrito","Chillax","Snowmad","Meltdown","Snowkidding","Puddles","Frostrid","Slushton","Iceolde","Coldella","Flakesby","Sleetwood","Snowdrew","Frostwyn","Blizzard Betty","Chillsworth"],"titles":["Mr","Mrs","Old Man","Lord","Lady","Sir","Captain","Professor","Grandad","Auntie","Duke","Baron","Sergeant","Major","Admiral","Mayor","Dame","Uncle","Granny","Constable"],"snow_surnames":["Frostington","Snowberry","Frostbottom","Icicle","Coal-Buttons","Snowflake","Drift","Flurry","Carrot","Mittens","Avalanche","McFrost","Snowdrop","Sleet","Frost","Chill","Snowball","Melt","Brrr","Snowcap"],"cute_pre":["Snow","Puff","Frost","Sugar","Button","Cotton","Twinkle","Flurry","Sparkle","Cocoa"],"cute_suf":["drop","ball","bun","bean","puff","pop","bell","pie","flake","nose"],"classic":["Mr Frostington","Mrs Snowberry","Old Man Winter","Lord Frostbottom","Sir Snowsalot","Lady Icicle","Captain Coal-Buttons","Professor Snowflake","Grandad Drift","Auntie Flurry","Mr Carrot","Mrs Mittens","Duke of Drifts","Baron Von Brrr","Sergeant Snowball","Major Melt","Admiral Avalanche","Mayor McFrost","Dame Snowdrop","Uncle Sleet","Granny Frost","Constable Chill","Doctor Freeze-Pop","Captain Snowcap","Judge Icicle"],"cute":["Snowy","Button","Pebble","Marshmallow","Puff","Coconut","Sugar","Mitten","Pom-Pom","Cotton","Snowpea","Biscuit","Fluff","Dumpling","Twinkle","Snowdrop","Tiny","Bobble","Muffin","Noodle","Snuggle","Cocoa","Sprinkle","Dot","Flurry","Sparkle","Pip","Cloud","Teacup","Pudding","Meringue","Vanilla","Custard","Milkshake","Sherbet","Glitter","Snowglobe","Cuddles","Fuzzy","Woolly","Earmuff","Toasty","Cosy","Sugarcube","Sugar Lump","Gumdrop","Jellybean","Cupcake","Bun","Bonbon","Truffle","Popcorn","Chestnut","Acorn","Pinecone","Twig","Snowbell","Bunny","Cub","Owlet","Puffin","Smidge","Teeny","Dinky","Squish","Roly-Poly","Moonbeam","Starlight","Glimmer","Shimmer","Doodle","Squiggle","Bubbles","Fizz","Pickle","Peanut","Sprout","Bean","Nugget","Crumpet","Scone","Teacake","Marzipan","Nougat","Toffee","Fudge","Candyfloss","Lolly","Daisy","Clover","Puddle","Snowbaby","Pipkin","Dimples","Hiccup","Little Bean"],"accessories":["a carrot nose and coal buttons","a stripy scarf and a bobble hat","a top hat and a pipe made of a twig","twig arms and a tea-towel cape","sunglasses and a Christmas jumper","a saucepan for a hat","stone eyes and a big smile","a borrowed football scarf","a sprout for a nose","a tinsel scarf","odd gloves on its twig hands","a bucket hat and a carrot that keeps falling off","a paper crown from a cracker","a wonky smile made of pebbles","a scarf it definitely didn't knit itself"]}}</script>
+    <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
+    <script src="../lib/outline.js?v=bb3e12d8"></script>
+    <script>(function(){if(window.parent===window)return;var last=0;function send(){var h=Math.ceil(document.documentElement.getBoundingClientRect().height);if(h!==last){last=h;window.parent.postMessage({tngEmbedHeight:h},'*');}}if('ResizeObserver' in window)new ResizeObserver(send).observe(document.body);window.addEventListener('load',send);send();})();</script>
+</body>
+</html>

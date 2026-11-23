@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design Name Generator | The Name Generators</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://thenamegenerators.com/posts/web-design-name-generator.html">
+    <base target="_blank">
+    <link rel="icon" href="/favicon.ico?v=626227da" sizes="any">
+    <link rel="icon" href="/favicon.svg?v=727d2202" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
+</head>
+<body class="embed-page">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      
+    </defs></svg>
+    <main class="embed-wrap">
+        <p class="embed-head"><b>Web Design Name Generator</b> <a href="https://thenamegenerators.com/posts/web-design-name-generator.html?utm_source=embed&amp;utm_medium=widget" rel="noopener">More at The Name Generators</a></p>
+        <section class="sheet hd simple-generator" id="generator" aria-label="Web Design Name Generator">
+                <div class="gen-grid">
+          <div class="group">
+            <label class="label" for="filter-style">Style</label>
+            <div class="ctl sel hd">
+              <select id="filter-style" name="style" data-filter="style">
+                <option value="any">Any style</option>
+                <option value="catchy">Catchy and clever (Second Site Web Design)</option>
+                <option value="modern">Modern and unique (Larch Digital)</option>
+                <option value="classic">Classic (Hartley Web Design)</option>
+                <option value="local">From my town (Hampton Lane Websites)</option>
+                <option value="mine">With my name (Websites by Sarah)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="group">
+            <label class="label" for="filter-kind">What you do</label>
+            <div class="ctl sel hd">
+              <select id="filter-kind" name="kind" data-filter="kind">
+                <option value="any">Web design and build</option>
+                <option value="design">Web design</option>
+                <option value="development">Web development</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="group">
+            <label class="label" for="filter-town">Your town or area</label>
+            <div class="ctl hd"><input type="text" id="filter-town" name="town" data-filter="town" placeholder="e.g. Hampton" class="name-input" autocomplete="off"></div>
+          </div>
+
+          <div class="group">
+            <label class="label" for="filter-name">Your first name</label>
+            <div class="ctl hd"><input type="text" id="filter-name" name="name" data-filter="name" placeholder="e.g. Sarah" class="name-input" autocomplete="off"></div>
+          </div></div>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="true">
+                    <p class="results-empty">Press Generate Names for 8 web design business names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
+                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+    </main>
+    <script type="application/json" id="generator-config">{"title":"Web Design Name Generator","seoTitle":"Web Design Name Generator | Business & Agency Names","slug":"web-design-name-generator","noEcho":true,"fixArticles":true,"checkName":true,"filters":{"style":{"label":"Style","options":["any","catchy","modern","classic","local","mine"],"optionLabels":{"any":"Any style","catchy":"Catchy and clever (Second Site Web Design)","modern":"Modern and unique (Larch Digital)","classic":"Classic (Hartley Web Design)","local":"From my town (Hampton Lane Websites)","mine":"With my name (Websites by Sarah)"}},"kind":{"label":"What you do","options":["any","design","development"],"optionLabels":{"any":"Web design and build","design":"Web design","development":"Web development"}},"town":{"type":"text","label":"Your town or area","placeholder":"e.g. Hampton","default":"Hampton","example":"Hampton","showWhen":{"style":["local"]}},"name":{"type":"text","label":"Your first name","placeholder":"e.g. Sarah","default":"Sarah","example":"Sarah","firstName":true,"showWhen":{"style":["mine"]}}},"recipe":"switch","on":"style","cases":{"any":{"recipe":"template","template":["[catchy.phrase] [trade.{kind}]","[catchy.phrase] [trade.{kind}]","[catchy.phrase] [trade.{kind}]","[catchy.special.{kind}]","[modern.word] [trade.{kind}]","[modern.word] [modern.suffix.{kind}]","[modern.word] [modern.suffix.{kind}]","[classic.surname] [trade.{kind}]","[classic.surname] [trade.{kind}]","[classic.surname] & [classic.surname] [trade.{kind}]","[classic.place] [trade.{kind}]","[classic.surname] [classic.formal]","[classic.place] [classic.formal]"]},"catchy":{"recipe":"template","template":["[catchy.phrase] [trade.{kind}]","[catchy.phrase] [trade.{kind}]","[catchy.phrase] [trade.{kind}]","[catchy.special.{kind}]"]},"modern":{"recipe":"template","template":["[modern.word] [trade.{kind}]","[modern.word] [modern.suffix.{kind}]","[modern.word] [modern.suffix.{kind}]"]},"classic":{"recipe":"template","template":["[classic.surname] [trade.{kind}]","[classic.surname] [trade.{kind}]","[classic.surname] & [classic.surname] [trade.{kind}]","[classic.place] [trade.{kind}]","[classic.surname] [classic.formal]","[classic.place] [classic.formal]"]},"local":{"recipe":"template","template":["{town} [local.street] [trade.{kind}]","{town} [local.street] [trade.{kind}]","{town}'s [local.own] [trade.{kind}]","[local.phrase.{kind}]","[local.phrase.any]"]},"mine":{"recipe":"template","template":["{name} [mine.middle] [trade.{kind}]","{name} [mine.middle] [trade.{kind}]","{name}'s [trade.{kind}]","[mine.phrase.{kind}]","[mine.phrase.any]"]}},"data":{"trade":{"any":["Web Design","Websites","Web Studio","Web Co.","Web Design Co.","Web Agency","Web Design & Build","Website Co."],"design":["Web Design","Website Design","Web Design Co.","Web Design Studio","Websites","Web Studio","Site Design","Web Design House"],"development":["Web Development","Web Dev","Web Developers","Web Build","Web Works","Web Engineering","Web Dev Co.","Web & Code"]},"catchy":{"phrase":["Second Site","Site & Sound","Out of Site","Site Seeing","In Site","Site Lines","Far Site","Above the Fold","Scroll Down","Keep Scrolling","Next Page","New Window","Home Page","Front Page","Front Door","Shop Front","Shop Window","Open Door","Hyperlink","Linked Up","Well Linked","Pages & Pixels","Page & Pixel","Mobile First","Fast Load","Quick Load","Clean Build","Solid Build","Good Build","Browser Ready","Bookmarked","Soft Launch","Go Live","Live Site","Launch Day","Ready to Launch","Code & Canvas","Code & Craft","Tag & Link","Alt Text","Style Sheet","Hex & Pixel","Easy Nav","Menu Bar","Home Button","Clickable","Scroll & Click","Click & Scroll","Spun Silk","Fresh Paint","Good Bones","Open Plan","Cornerstone","Up & Running","Online Today","Plain English","No Fuss","Signposted","Pin Sharp","Bright Pages","Sharp Sites","Load & Go","Tap & Scroll","Above Board","Clean Slate","Two Clicks","One Click"],"special":{"any":["Site for Sore Eyes","Website Story","The Website People","Websites Made Simple","Your Website Sorted","The Web Shed","Webs & Co.","The Homepage Co.","Sites for Sore Eyes","The Website Workshop"],"design":["Out of Site Design","Second Site Studio","Site & Sound Studio","Above the Fold Studio","Pretty Pages","Pages That Pop","The Website Kitchen","Picture Perfect Websites","Good Looking Websites","Sites That Sparkle","Hindsight Web Design","Website Wardrobe"],"development":["Div & Conquer","Tag Team Web Dev","Commit & Deploy","Built to Load","Stack & Ship","Server Side Studio","The Front End Co.","Front End Folk","Under the Hood Web","The Code Room","Clean Commit Web","Ship It Web Dev","Back End Builders","Rock Solid Websites"]}},"classic":{"surname":["Hartley","Ashworth","Bennett","Whitmore","Pemberton","Calloway","Prescott","Langley","Hargreaves","Hollis","Sutton","Lockwood","Ainsley","Barrington","Whitfield","Cartwright","Radcliffe","Kendall","Harlow","Marlow","Ridley","Selby","Waverley","Holbrook","Ellery","Pryce","Rowe","Garrett","Hale","Sinclair","Beckett","Harper","Holt","Lowell","Abbott","Bramley","Chandler","Everett","Fulton","Jarvis","Lambert","Maddox","Norris","Pearce","Rhodes","Shaw","Thorne","Vaughan","Walsh","Yates","Ashby","Blake","Dawson","Ellis","Fletcher","Hughes","Ingram","Kemp","Lowe","Nash","Osborne","Palmer","Riley","Sawyer","Wheeler","Carrington","Fairfax","Hadley","Linden","Mayhew","Pennington","Rutherford","Stratton","Templeton","Weston","Winslow","Aldridge","Brennan","Caldwell","Darby","Emerson","Faulkner","Gilmore","Hensley","Kingsley","Lister","Merritt","Newell","Ormsby","Pickering","Redfern","Stanton","Thackeray","Underwood","Wakefield","Whitley"],"place":["Northgate","Southgate","Eastgate","Westgate","Kingsway","Highfield","Westbrook","Ashdown","Oakwood","Fairfield","Riverside","Greenway","Hillcrest","Brookside","Elmwood","Oakfield","Parkside","Abbey","Priory","Kingsbridge","Queensway","Ashfield","Beechwood","Copperfield","Fernhill","Greystone","Hawthorn","Larchwood","Maplewood","Millbrook","Oakley Green","Redbridge","Rosewood","Stonebridge","Thornbury","Willowbrook","Woodside","Ashcombe","Briarwood","Chapel Hill","Elmstead","Fairview","Holmwood","Longmeadow","Old Bridge"],"formal":["Web Services","Internet Services","Website Services","Web Solutions","Web Design Services","Web Design Group"]},"modern":{"word":["Compass","Pebble","Larch","Aspen","Alder","Rowan","Current","Scaffold","Doorway","Porch","Hallway","Lobby","Front Porch","Level","Brick","Mortar","Beam","Rafter","Joist","Hinge","Latch","Breadcrumb","Widget","Sprocket","Cog","Lighthouse","Doorstep","Gatepost","Cobble","Slate","Quartz","Brass","Fuse","Dynamo","Kestrel","Swallow","Starling","Finch","Robin","Otter"],"suffix":{"any":["Digital","Web","Studio","Sites","Online","Websites"],"design":["Digital","Web","Studio","Sites","Websites","Web Studio"],"development":["Digital","Web","Code","Dev","Labs","Sites"]}},"local":{"street":["Square","Lane","Row","Bridge","Gate","Park","Street","Place","Point","Green","Hill","Mill","Yard","Cross","Way","Fields","Vale","Common","Rise","Grove","Terrace","Mews","Hall","Quay","Brook","Meadow","Corner","Wharf","Market","Abbey"],"own":["Own","Local"],"phrase":{"any":["{town} Websites","Websites for {town}","Get {town} Online","The {town} Website Co.","{town} Web","Web Design {town}","{town} Sites"],"design":["{town} Web Designer","The {town} Web Designer","{town} Website Design Co.","Web Studio {town}","{town} Site Design","{town} Web Design Studio"],"development":["{town} Web Developer","{town} Code Co.","Coded in {town}","Websites Built in {town}","{town} Dev Studio","{town} Web Builders"]}},"mine":{"middle":["Rose","Grace","Mae","Jane","Kate","Lou","Ann","June","Hope","Belle","Faye","Rae","Eve","Ivy","Hazel","Pearl","Ruby","Iris","Willow","Fern","Lane","Green","North","Fox","Wren","Brook","Lark","Reed","Hill","Rivers","Sage","Ash","James","Wild","Wilder","Fields","Meadows","Bright","Marsh","Woods","Lake","Vale","Rowan","Elm","Hollow","Shore","Field","Heath","Oak"],"phrase":{"any":["Websites by {name}","{name}'s Websites","{name} Builds Websites","{name}'s Web Studio","Web Design by {name}","{name} Makes Websites","{name}'s Web Co.","Sites by {name}","Ask {name} Web Design","{name} Gets You Online"],"design":["{name} Designs Websites","{name}'s Web Design","Web Studio {name}","{name}'s Site Design","Pages by {name}","{name}'s Web Design Co."],"development":["{name} Codes Websites","Coded by {name}","Websites Built by {name}","{name}'s Web Dev","{name}'s Web Developer","{name} Builds Web"]}}},"nameSource":{"kind":"invented","note":"Names are built from everyday words, puns, place and family names, and the patterns real businesses in this trade use. They aren't taken from real businesses, but short names may already be in use, so press Check before you commit."}}</script>
+    <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
+    <script src="../lib/outline.js?v=bb3e12d8"></script>
+    <script>(function(){if(window.parent===window)return;var last=0;function send(){var h=Math.ceil(document.documentElement.getBoundingClientRect().height);if(h!==last){last=h;window.parent.postMessage({tngEmbedHeight:h},'*');}}if('ResizeObserver' in window)new ResizeObserver(send).observe(document.body);window.addEventListener('load',send);send();})();</script>
+</body>
+</html>

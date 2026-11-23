@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poison Name Generator | The Name Generators</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://thenamegenerators.com/posts/poison-name-generator.html">
+    <base target="_blank">
+    <link rel="icon" href="/favicon.ico?v=626227da" sizes="any">
+    <link rel="icon" href="/favicon.svg?v=727d2202" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
+</head>
+<body class="embed-page">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      
+    </defs></svg>
+    <main class="embed-wrap">
+        <p class="embed-head"><b>Poison Name Generator</b> <a href="https://thenamegenerators.com/posts/poison-name-generator.html?utm_source=embed&amp;utm_medium=widget" rel="noopener">More at The Name Generators</a></p>
+        <section class="sheet hd simple-generator" id="generator" aria-label="Poison Name Generator">
+                <div class="gen-one">
+          <div class="group">
+            <label class="label" for="filter-format">Name Format</label>
+            <div class="ctl sel hd">
+              <select id="filter-format" name="format" data-filter="format">
+                <option value="name">Name (Widow&#039;s Kiss)</option>
+                <option value="effect">Name and effect (Widow&#039;s Kiss: a dreamless sleep that never ends)</option>
+                <option value="full">Name, form and effect</option>
+              </select>
+            </div>
+          </div></div>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="true">
+                    <p class="results-empty">Press Generate Names for 8 poison names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
+                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+    </main>
+    <script type="application/json" id="generator-config">{"title":"Poison Name Generator","slug":"poison-name-generator","seoTitle":"Poison Name Generator: Fantasy Poisons for D&D and Stories","filters":{"format":{"label":"Name Format","options":["name","effect","full"],"optionLabels":{"name":"Name (Widow's Kiss)","effect":"Name and effect (Widow's Kiss: a dreamless sleep that never ends)","full":"Name, form and effect"}}},"recipe":"switch","on":"format","cases":{"name":{"recipe":"pick","from":"names"},"effect":{"recipe":"template","template":"[names]: [effects]"},"full":{"recipe":"template","template":"[names], [forms] causing [effects]"}},"data":{"names":["Widow's Kiss","Serpent's Tear","Midnight Draught","Grey Lady","Mourning Dew","Sleeper's Wine","Bitter Almond","Pale Rider","Hangman's Honey","Black Lace","Saint's Supper","Cold Comfort","Last Rites","Velvet Hour","Crow's Supper","Quiet Guest","Gentle Death","Moth's Breath","Judas Cup","Silent Bell","Fen Fever","Orphan Maker","Weeping Glass","Lady's Mantle","Thief's Rest","Hollow Heart","Nightwine","Graveroot","Ashmilk","Dreamless","Kingbane","Heir's Hurry","Spider's Silk","Final Toast","Mercy","Corpse Candle","Black Honey","Velvet Glove","Long Sleep","Nightingale's Rest","Sweet Surrender","Monk's Mercy","Lullaby","Dowager's Tea","Crow's Feast","Moonlit Cordial","Gentle Hand","Long Goodbye","Winter's Breath","Midsummer Sorrow","Sleeping Rose","Grave Sugar","Lady's Tears","Bishop's Bane","Silver Silence","Twilight Tonic","Widow's Veil","Hemlock Cordial","Undertaker's Friend","Gravedigger's Bread","Queen's Patience","Cardinal's Cup","Physician's Folly","Apothecary's Regret","Sexton's Salt","Raven's Milk","Adder's Cream","Toadflax Tea","Foxglove Sugar","Belladonna Smile","Wolfsbane Water","Yewberry Jam","Mandrake Milk","Henbane Dreams","Angel's Trumpet","Deadly Grace","Stillheart","Ninth Hour","Vespers","Compline","Evensong","Requiem Wine","Funeral Lily","Shroud Silk","Coffin Nail","Lychgate Tea","Churchyard Dew","Barrow Mist","Marsh Light","Spinster's Thread","Governess's Gift","Second Husband","Third Wife","Inheritance Powder","Succession Salt","Patience of Saints","Kindly Uncle","Aunt Mildred's Tonic","Grandmother's Remedy","Nursemaid's Tonic","Sleep of Kings","Courtier's Cup","Regent's Draught","Pretender's Wine","Usurper's Sugar","Prince's Pallor","Ambassador's Gift","Envoy's Ink","Pearl Drop","Opal Milk","Frost Lily","Bitter Rue","Rue's End","Cypress Shade","Black Tansy","Silent Partner","Locked Room","Empty Chair","Cold Supper","Blue Hour","Gloaming Tea","Moth Wine","Cobweb Tea","Beetle Black","Velvet Thorn","Sweet Nothing","Ghost Orchid","Starless","Eventide","Undertow","Lethewater","Charon's Coin","Ferryman's Fee","Nightjar","Ashen Rose","Marrowfrost","Sallowroot","Witchwater","Cuckoo's Gift","Changeling Tea","Golden Silence","Verdigris","Paris Green","Sugar of Lead","Bitter Cherry","Laurel Water","Oleander Honey","Mad Honey","Death Cap","Destroying Angel","Fool's Parsley","Dead Man's Fingers","Dwale","Nightcap","Parting Glass","Stirrup Cup","Loving Cup","Bride's Bouquet","Fifth Course","Tea at Four","Grey Morning","Mortsafe","Long Shadow","Lantern Out","Candle Snuffer","Last Light","Final Curtain","Quietus","Eternal Rest","Heir Apparent","Duchess's Sorrow","Nightshade Syrup","Tallow Tears","Sleeping Draught","Hush Water","Vicar's Tea","Curate's Comfort","Spinster's Sugar","Matron's Tonic","Butler's Secret","Housekeeper's Jam","Gardener's Revenge","Lords-and-Ladies","Thornapple Wine","Monkshood Cordial","Bittersweet","Spindleberry","Privet Wine","Laburnum Tea","Dog's Mercury","Nightfall Brandy","Velvet Curtain","Swan Song","Pale Cordial","Willow Tea","Raven's Kiss","Moth's Kiss","Mourner's Bread","Funeral Biscuit","Black Ribbon","Mourning Ring","Jet Brooch","Quiet Night","Hush Money","Final Bow","Curtain Call","Lady Nightshade","Owl's Lullaby","Cradle Song","Grey Gloves","Chamberlain's Cup","Steward's Sorrow","Heiress's Hurry","Cousin's Portion","Widow's Weeds","Tea for One","Dowry Draught","Banquet's End","Cellar Cold","Wick Snuffer","Ashen Kiss","Snowberry Syrup","Holly Wine","Ivy Water","Mistletoe Milk"],"effects":["a dreamless sleep that never ends","a slow chill from the fingers inward","a fever that looks like plague","sweet dreams and then silence","a cough no healer can name","forgetfulness of the last day","paralysis but perfect hearing","a death that looks like old age","a smile frozen on the face","sleep for exactly three days","a loss of voice","nothing at all for a week","blackened fingertips","terrible visions","a burning thirst","a heart that slows like a winding-down clock","the taste of copper and then nothing","a cold that no fire can warm","an honest tongue for one hour","weeping that will not stop","a slow turning of the skin to grey","blindness at sunset","a deep and foolish happiness","the loss of every memory of one person","sleepwalking towards water","a fear of open doors","hair turning white overnight","a voice that is no longer your own","a hunger for salt","a fever only in moonlight","the inability to lie","slow stiffness like frost","a sleep full of strange dreams","a sudden fondness for the colour grey","a week of hiccups","numb lips and a heavy tongue","an unbearable thirst","the loss of all sense of taste","a slow, creeping weariness","a fit of laughter and then nothing","a racing heart at every sunset","a whisper only the victim can hear","a deep sleep broken only by moonlight","a blue tinge to the lips","a fortnight of forgetfulness","a terrible sense of being watched","an itch that moves about","eyes that cannot bear candlelight"],"forms":["a clear oil","a grey powder","a sweet wine","a pale blue tincture","black crystals","an odourless vapour","a bitter tea","a red paste","a scented candle","a honey","a perfume","a silver dust","a green salve","a sugared plum","a love letter's ink","a white petal","a cloud of spores","a bead of dew","a smear on a glove","a lip balm","a pinch of snuff","a cup of cold soup","a rose thorn","a single drop","a lemon cordial","a sugared almond","a lavender oil","a rose-water","a white chalk","a sealed letter","a pair of gloves","a ring with a hidden chamber","a hair pin","a powdered pearl","a dried mushroom","a frosted cake","a herbal snuff","an amber resin","a cup of chocolate","a pressed flower"]}}</script>
+    <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
+    <script src="../lib/outline.js?v=bb3e12d8"></script>
+    <script>(function(){if(window.parent===window)return;var last=0;function send(){var h=Math.ceil(document.documentElement.getBoundingClientRect().height);if(h!==last){last=h;window.parent.postMessage({tngEmbedHeight:h},'*');}}if('ResizeObserver' in window)new ResizeObserver(send).observe(document.body);window.addEventListener('load',send);send();})();</script>
+</body>
+</html>

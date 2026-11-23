@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Name Generator | The Name Generators</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://thenamegenerators.com/posts/staff-name-generator.html">
+    <base target="_blank">
+    <link rel="icon" href="/favicon.ico?v=626227da" sizes="any">
+    <link rel="icon" href="/favicon.svg?v=727d2202" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
+</head>
+<body class="embed-page">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      
+    </defs></svg>
+    <main class="embed-wrap">
+        <p class="embed-head"><b>Staff Name Generator</b> <a href="https://thenamegenerators.com/posts/staff-name-generator.html?utm_source=embed&amp;utm_medium=widget" rel="noopener">More at The Name Generators</a></p>
+        <section class="sheet hd simple-generator" id="generator" aria-label="Staff Name Generator">
+                <div class="gen-one">
+          <div class="group" role="group" aria-labelledby="filter-kind-label">
+            <div class="label"><span id="filter-kind-label">Kind of staff</span><span class="pen" data-hint-for="kind" aria-hidden="true">e.g. a mix</span></div>
+            <div class="opts" data-buttons-for="kind">
+              <button type="button" class="opt hd tap" data-value="any" data-hint="e.g. a mix" title="Any (a mix)" aria-pressed="true">Any</button>
+              <button type="button" class="opt hd tap" data-value="wizard" data-hint="e.g. Rootwhisper" title="Wizard&#039;s staff (Rootwhisper)" aria-pressed="false">Wizard&#039;s staff</button>
+              <button type="button" class="opt hd tap" data-value="druid" data-hint="e.g. Oakheart" title="Druid&#039;s staff (Oakheart)" aria-pressed="false">Druid&#039;s staff</button>
+              <button type="button" class="opt hd tap" data-value="fighting" data-hint="e.g. Bonecracker" title="Fighting staff (Bonecracker)" aria-pressed="false">Fighting staff</button>
+              <button type="button" class="opt hd tap" data-value="funny" data-hint="e.g. the Stick of Moderate Power" title="Funny (the Stick of Moderate Power)" aria-pressed="false">Funny</button>
+            </div>
+            <input type="hidden" id="filter-kind" name="kind" data-filter="kind" value="any">
+          </div></div>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="true">
+                    <p class="results-empty">Press Generate Names for 8 staff names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
+                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+    </main>
+    <script type="application/json" id="generator-config">{"title":"Staff Name Generator","slug":"staff-name-generator","seoTitle":"Staff Name Generator: Wizard, Druid & Funny Staff Names","filters":{"kind":{"label":"Kind of staff","options":["any","wizard","druid","fighting","funny"],"optionLabels":{"any":"Any (a mix)","wizard":"Wizard's staff (Rootwhisper)","druid":"Druid's staff (Oakheart)","fighting":"Fighting staff (Bonecracker)","funny":"Funny (the Stick of Moderate Power)"}}},"recipe":"switch","on":"kind","cases":{"wizard":{"recipe":"template","template":["[grand.a][grand.b]","The Staff of [of]","[grand.a][grand.b], Staff of [of]"]},"druid":{"recipe":"template","template":["[druid]","[druid] of [of]","The [fmat] Staff of [of]"]},"fighting":{"recipe":"template","template":["[fight.a][fight.b]","[fightw]","[fight.a][fight.b], [fightw]"]},"funny":{"recipe":"template","template":["[funny]","The [fadj] Staff of [of]","The [fadj] [fmat] Stick"]},"any":{"recipe":"template","template":["[grand.a][grand.b]","The Staff of [of]","[grand.a][grand.b], Staff of [of]","[druid]","[druid] of [of]","The [fmat] Staff of [of]","[fight.a][fight.b]","[fightw]","[fight.a][fight.b], [fightw]","[funny]","The [fadj] Staff of [of]","The [fadj] [fmat] Stick"]}},"data":{"grand":{"a":["Root","Star","Moon","Storm","Ember","Frost","Rune","Ash","Thorn","Dawn","Dusk","Oak","Raven","Sun","Mist","Ever","Gloam","Wyrm","Sage","Hollow","Silver","Elder","Cloud","Shadow"],"b":["whisper","warden","song","bearer","caller","light","binder","weaver","fall","crown","heart","keeper","wake","sight","staff","branch"]},"of":["Seven Winters","the First Spring","the Last Light","the Northern Stars","Endless Rain","the Wandering Moon","Quiet Storms","the Old Oak","a Thousand Doors","the Silent Tower","Ashes and Embers","the Deep Roots","the Midnight Hour","Clear Skies","the Hidden Path","the Waking Earth","the Turning Tide","Unspoken Words","the Burning Book","the Forgotten King"],"druid":["Oakheart","Thornbloom","Rowan Rod","Mossgrip","Hazelwand","Briarbranch","Greenwood Crook","Willowwhip","Hollyhaft","Yewroot","Alder Bough","Elderstaff","Mistletoe Rod","Fernspiral","Acornknot","Ashling","Blackthorn Crook","Birchbright","Lichenhaft","Ivytwist"],"fight":{"a":["Bone","Skull","Knee","Shin","Rib","Jaw","Head","Back","Wrist","Knuckle"],"b":["cracker","breaker","knocker","rattler","thumper","bruiser","tapper","smasher","ringer","bender"]},"fightw":["the Long Answer","the Last Argument","Polite Reminder","Second Opinion","the Walking Stick","Old Reliable","the Quiet Word","Short Temper","the Long Goodbye","Firm Handshake","the Peacekeeper","the Debate","Good Manners","House Rules"],"funny":["Stick of Moderate Power","Old Wobbly","The Pointy-ish End","Gerald","Probably Magic","The Walking Aid of Doom","Twig of Destiny","Lord Splinter","The Overcompensator","Not a Broom","Sir Leans-a-Lot","Magic Stick Mk II","The Heavy Stick","Branch Manager","Wand's Big Brother","Staffany","The Unbendable (Mostly)","Professor Pole","Woody","The Stick of Many Uses","Big Twig","Splintermaster","The Long Wand","Stick of Mild Inconvenience","Lean On Me","Captain Timber","Barkley","Old Faithful-ish","The Fancy Stick","Beard Prop"],"fmat":["Oak","Ash","Yew","Rowan","Blackthorn","Hazel","Willow","Elder","Holly","Ebony","Bone","Driftwood","Ironwood","Silverwood","Crystal-Topped Oak","Dragonbone","Bog Oak","Petrified Ash","Rune-Carved Yew","Moonlit Birch"],"fadj":["Slightly Charred","Wobbly","Over-Polished","Borrowed","Very Tall","Second-Hand","Suspiciously Sticky","Squeaky","Chewed","Lucky"]}}</script>
+    <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
+    <script src="../lib/outline.js?v=bb3e12d8"></script>
+    <script>(function(){if(window.parent===window)return;var last=0;function send(){var h=Math.ceil(document.documentElement.getBoundingClientRect().height);if(h!==last){last=h;window.parent.postMessage({tngEmbedHeight:h},'*');}}if('ResizeObserver' in window)new ResizeObserver(send).observe(document.body);window.addEventListener('load',send);send();})();</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giant Name Generator | The Name Generators</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://thenamegenerators.com/posts/giant-name-generator.html">
+    <base target="_blank">
+    <link rel="icon" href="/favicon.ico?v=626227da" sizes="any">
+    <link rel="icon" href="/favicon.svg?v=727d2202" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
+</head>
+<body class="embed-page">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      
+    </defs></svg>
+    <main class="embed-wrap">
+        <p class="embed-head"><b>Giant Name Generator</b> <a href="https://thenamegenerators.com/posts/giant-name-generator.html?utm_source=embed&amp;utm_medium=widget" rel="noopener">More at The Name Generators</a></p>
+        <section class="sheet hd simple-generator" id="generator" aria-label="Giant Name Generator">
+                <div class="gen-grid">
+          <div class="group">
+            <label class="label" for="filter-kind">Kind of giant</label>
+            <div class="ctl sel hd">
+              <select id="filter-kind" name="kind" data-filter="kind">
+                <option value="any">Any</option>
+                <option value="hill">Hill giant</option>
+                <option value="stone">Stone giant</option>
+                <option value="frost">Frost giant</option>
+                <option value="fire">Fire giant</option>
+                <option value="cloud">Cloud giant</option>
+                <option value="storm">Storm giant</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="group" role="group" aria-labelledby="filter-format-label">
+            <div class="label"><span id="filter-format-label">Name format</span><span class="pen" data-hint-for="format" aria-hidden="true"></span></div>
+            <div class="opts" data-buttons-for="format">
+              <button type="button" class="opt hd tap" data-value="name" data-hint="" aria-pressed="true">Name only</button>
+              <button type="button" class="opt hd tap" data-value="place" data-hint="e.g. of the Ice Fields" title="With a home (of the Ice Fields)" aria-pressed="false">With a home</button>
+              <button type="button" class="opt hd tap" data-value="epithet" data-hint="e.g. the Mountain-Shaker" title="With a title (the Mountain-Shaker)" aria-pressed="false">With a title</button>
+            </div>
+            <input type="hidden" id="filter-format" name="format" data-filter="format" value="name">
+          </div></div>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="true">
+                    <p class="results-empty">Press Generate Names for 8 giant names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
+                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+    </main>
+    <script type="application/json" id="generator-config">{"title":"Giant Name Generator","slug":"giant-name-generator","seoTitle":"Giant Name Generator: Hill, Frost, Fire & Storm Giants","filters":{"kind":{"label":"Kind of giant","options":["any","hill","stone","frost","fire","cloud","storm"],"optionLabels":{"any":"Any","hill":"Hill giant","stone":"Stone giant","frost":"Frost giant","fire":"Fire giant","cloud":"Cloud giant","storm":"Storm giant"}},"format":{"label":"Name format","options":["name","place","epithet"],"optionLabels":{"name":"Name only","place":"With a home (of the Ice Fields)","epithet":"With a title (the Mountain-Shaker)"}}},"recipe":"switch","on":"kind","cases":{"hill":{"recipe":"switch","on":"format","cases":{"name":{"recipe":"template","template":"[hill.a][hill.b]"},"place":{"recipe":"template","template":"[hill.a][hill.b] of [places.hill]"},"epithet":{"recipe":"template","template":["[hill.a][hill.b] [epithets]","[hill.a][hill.b], [epithets_titled]"]}}},"stone":{"recipe":"switch","on":"format","cases":{"name":{"recipe":"template","template":"[stone.a][stone.b]"},"place":{"recipe":"template","template":"[stone.a][stone.b] of [places.stone]"},"epithet":{"recipe":"template","template":["[stone.a][stone.b] [epithets]","[stone.a][stone.b], [epithets_titled]"]}}},"frost":{"recipe":"switch","on":"format","cases":{"name":{"recipe":"template","template":"[frost.a][frost.b]"},"place":{"recipe":"template","template":"[frost.a][frost.b] of [places.frost]"},"epithet":{"recipe":"template","template":["[frost.a][frost.b] [epithets]","[frost.a][frost.b], [epithets_titled]"]}}},"fire":{"recipe":"switch","on":"format","cases":{"name":{"recipe":"template","template":"[fire.a][fire.b]"},"place":{"recipe":"template","template":"[fire.a][fire.b] of [places.fire]"},"epithet":{"recipe":"template","template":["[fire.a][fire.b] [epithets]","[fire.a][fire.b], [epithets_titled]"]}}},"cloud":{"recipe":"switch","on":"format","cases":{"name":{"recipe":"template","template":"[cloud.a][cloud.b]"},"place":{"recipe":"template","template":"[cloud.a][cloud.b] of [places.cloud]"},"epithet":{"recipe":"template","template":["[cloud.a][cloud.b] [epithets]","[cloud.a][cloud.b], [epithets_titled]"]}}},"storm":{"recipe":"switch","on":"format","cases":{"name":{"recipe":"template","template":"[storm.a][storm.b]"},"place":{"recipe":"template","template":"[storm.a][storm.b] of [places.storm]"},"epithet":{"recipe":"template","template":["[storm.a][storm.b] [epithets]","[storm.a][storm.b], [epithets_titled]"]}}},"any":{"recipe":"switch","on":"format","cases":{"name":{"recipe":"template","template":["[hill.a][hill.b]","[stone.a][stone.b]","[frost.a][frost.b]","[fire.a][fire.b]","[cloud.a][cloud.b]","[storm.a][storm.b]"]},"place":{"recipe":"template","template":["[hill.a][hill.b] of [places.hill]","[stone.a][stone.b] of [places.stone]","[frost.a][frost.b] of [places.frost]","[fire.a][fire.b] of [places.fire]","[cloud.a][cloud.b] of [places.cloud]","[storm.a][storm.b] of [places.storm]"]},"epithet":{"recipe":"template","template":["[hill.a][hill.b] [epithets]","[hill.a][hill.b], [epithets_titled]","[stone.a][stone.b] [epithets]","[stone.a][stone.b], [epithets_titled]","[frost.a][frost.b] [epithets]","[frost.a][frost.b], [epithets_titled]","[fire.a][fire.b] [epithets]","[fire.a][fire.b], [epithets_titled]","[cloud.a][cloud.b] [epithets]","[cloud.a][cloud.b], [epithets_titled]","[storm.a][storm.b] [epithets]","[storm.a][storm.b], [epithets_titled]"]}}}},"data":{"hill":{"a":["Grob","Thud","Mulk","Grumm","Lurg","Bulk","Hob","Drog","Gub","Krom","Burl","Tog","Murg","Dunk","Rudd","Brog","Trog","Lump","Dob","Grunk","Gurt","Clag"],"b":["ul","ok","ash","gar","ath","ig","mor","bash"]},"stone":{"a":["Grav","Flint","Marl","Shal","Bas","Quarr","Tor","Skarn","Slat","Gran","Obs","Chert","Cairn","Dolm","Crag","Monol","Brec","Gorm","Cobb","Kell","Tarn","Feld"],"b":["ath","ek","orn","ith","al","ur","os","en"]},"frost":{"a":["Hrim","Skad","Vind","Is","Frost","Snae","Kald","Jok","Hel","Hjal","Gel","Rime","Svar","Bryn","Thorg","Orm","Bjar","Hvit","Fjal","Sval","Vald","Hrok"],"b":["ir","mar","gard","rik","ulf","nir","hild","vor"]},"fire":{"a":["Kiln","Brann","Ash","Kol","Muspel","Eld","Glod","Ember","Hearth","Forg","Cinder","Smelt","Infer","Pyr","Brim","Scor","Brand","Char","Flam","Volk","Fyr","Ruk"],"b":["tor","gan","mund","rak","dur","ax","hal","eth"]},"cloud":{"a":["Aer","Nimb","Cirr","Strat","Mir","Hal","Zeph","Ael","Ves","Syl","Lun","Aur","Cel","Thal","Vael","Neb","Alt","Eth","Nub","Hes","Cyr","Lyr"],"b":["ion","ara","iel","eus","ana","iros","ene","ius"]},"storm":{"a":["Thun","Tor","Gal","Storm","Lev","Hurr","Strom","Typh","Vag","Bront","Thal","Ner","Pont","Skal","Squal","Rag","Mael","Kael","Sturm","Kym","Haf"],"b":["dor","ath","ion","ara","os","eus","ira","an"]},"places":{"hill":["the Rolling Downs","Muddy Hill","the Sheep Fields","the Barrow Mounds","Cabbage Hill","the Low Hills"],"stone":["the Deep Quarry","the Standing Stones","the Grey Cliffs","the Stone Halls","the Echo Caves","the Granite Peaks"],"frost":["the Ice Fields","the Frozen North","the Glacier Halls","the Winter Peaks","the Rime Fjord","the White Waste"],"fire":["the Burning Forge","the Molten Halls","the Ash Mountains","the Smoking Peak","the Iron Furnace","the Ember Pits"],"cloud":["the Sky Castle","the High Clouds","the Floating Isles","the Silver Towers","the Wind Palace","the Moonlit Heights"],"storm":["the Sunken Palace","the Thunder Peaks","the Storm Coast","the Ocean Depths","the Lightning Spire","the Whirlpool Throne"]},"epithets":["the Mountain-Shaker","the Earth-Breaker","of the Long Winter","the Sky-Walker","the Boulder-Thrower","the Ancient","Who Sleeps Under the Hills","the Colossal"],"epithets_titled":["Ruler of the High Hall","Ruler of the Mountain","Bane of Castles","Shaker of Valleys"]}}</script>
+    <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
+    <script src="../lib/outline.js?v=bb3e12d8"></script>
+    <script>(function(){if(window.parent===window)return;var last=0;function send(){var h=Math.ceil(document.documentElement.getBoundingClientRect().height);if(h!==last){last=h;window.parent.postMessage({tngEmbedHeight:h},'*');}}if('ResizeObserver' in window)new ResizeObserver(send).observe(document.body);window.addEventListener('load',send);send();})();</script>
+</body>
+</html>

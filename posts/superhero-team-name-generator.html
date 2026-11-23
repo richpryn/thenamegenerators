@@ -290,7 +290,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=7232e3a3">
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -457,6 +457,14 @@
                 <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
             </section>
             <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-11-13">13 November 2026</time></p>
+            <details class="embed-box">
+                <summary>Put this generator on your website</summary>
+                <p>Free for blogs, campaign sites, class pages and wikis, with no ads. Paste this into your page's HTML:</p>
+                <textarea class="embed-code" readonly rows="5" aria-label="Embed code for the Superhero Team Name Generator">&lt;iframe src=&quot;https://thenamegenerators.com/embed/superhero-team-name-generator.html&quot; title=&quot;Superhero Team Name Generator&quot; data-tng-embed width=&quot;100%&quot; height=&quot;560&quot; style=&quot;border:0;width:100%;max-width:720px&quot; loading=&quot;lazy&quot; allow=&quot;clipboard-write&quot;&gt;&lt;/iframe&gt;
+&lt;p style=&quot;margin:4px 0 16px;font-size:14px&quot;&gt;Superhero Team Name Generator by &lt;a href=&quot;https://thenamegenerators.com/posts/superhero-team-name-generator.html&quot;&gt;The Name Generators&lt;/a&gt;&lt;/p&gt;
+&lt;script src=&quot;https://thenamegenerators.com/lib/embed.js&quot; async&gt;&lt;/script&gt;</textarea>
+                <p class="embed-acts"><button type="button" class="mini hd tap" data-embed-copy><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy code</span></button> <a href="../embed-name-generators.html">How embedding works</a></p>
+            </details>
 
             <section class="section example-names">
                 <h2>Example Superhero Team Names</h2>
@@ -599,7 +607,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Superhero Team Name Generator","slug":"superhero-team-name-generator","seoTitle":"Superhero Team Name Generator: Hero & Villain Teams","filters":{"style":{"label":"Kind of team","options":["any","classic","agency","kids","villain"],"optionLabels":{"any":"Any (a mix)","classic":"Hero alliance (the Valiant Vanguard)","agency":"Secret agency (Project Halcyon)","kids":"Kids' team (the Mighty Muffins)","villain":"Villains (the Obsidian Syndicate)"}}},"recipe":"switch","on":"style","cases":{"classic":{"recipe":"template","template":"The [hero_adj] [hero_noun]"},"agency":{"recipe":"template","template":["[agency_pre] [agency]","[agency] [numbers]"]},"kids":{"recipe":"template","template":["The [kid_adj] [kid_noun]","Team [kid_noun]"]},"villain":{"recipe":"template","template":"The [villain_adj] [villain_noun]"},"any":{"recipe":"template","template":["The [hero_adj] [hero_noun]","[agency_pre] [agency]","[agency] [numbers]","The [kid_adj] [kid_noun]","Team [kid_noun]","The [villain_adj] [villain_noun]"]}},"data":{"hero_adj":["Stellar","Valiant","Cosmic","Mighty","Radiant","Thunder","Steel","Star","Dawn","Midnight","Atomic","Quantum","Solar","Lunar","Crimson","Golden","Silver","Storm"],"hero_noun":["Alliance","Vanguard","Protectorate","Brigade","Collective","Watch","Order","Wardens","Coalition","Union","Assembly","Guard","Company","Circle","Accord","Legacy"],"agency_pre":["Project","Unit","Division","Operation","Bureau","Section","Taskforce","Programme"],"agency":["Halcyon","Aegis","Lantern","Meridian","Zenith","Paragon","Bastion","Kestrel","Horizon","Sentinel","Beacon","Apex","Vector","Nova","Polaris","Atlas","Orion","Tempest"],"numbers":["Nine","Zero","One","Five","Twelve","Prime","Omega","Delta","Echo"],"kid_adj":["Mighty","Super","Brave","Amazing-ish","Speedy","Fearless","Unstoppable","Incredible-ish","Sparkly","Daring","Bouncy","Marvellous"],"kid_noun":["Muffins","Sprouts","Rockets","Comets","Pancakes","Dinosaurs","Penguins","Lightning Bugs","Superstars","Teddies","Hamsters","Owls","Socks"],"villain_adj":["Obsidian","Grim","Venom","Shadow","Iron","Crimson","Dread","Hollow","Black","Viper","Ruin","Midnight","Ashen","Gilded","Sable"],"villain_noun":["Syndicate","Cabal","Consortium","Conspiracy","Directorate","Dominion","Ring","Cartel","Circle","Sisterhood","Conclave","Coterie"]}}</script>
     <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
-    <script src="../lib/page.js?v=e05a95f4"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

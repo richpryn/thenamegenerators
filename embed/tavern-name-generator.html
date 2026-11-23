@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tavern Name Generator | The Name Generators</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://thenamegenerators.com/posts/tavern-name-generator.html">
+    <base target="_blank">
+    <link rel="icon" href="/favicon.ico?v=626227da" sizes="any">
+    <link rel="icon" href="/favicon.svg?v=727d2202" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
+</head>
+<body class="embed-page">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      
+    </defs></svg>
+    <main class="embed-wrap">
+        <p class="embed-head"><b>Tavern Name Generator</b> <a href="https://thenamegenerators.com/posts/tavern-name-generator.html?utm_source=embed&amp;utm_medium=widget" rel="noopener">More at The Name Generators</a></p>
+        <section class="sheet hd simple-generator" id="generator" aria-label="Tavern Name Generator">
+                <div class="gen-one">
+          <div class="group">
+            <label class="label" for="filter-style">Style</label>
+            <div class="ctl sel hd">
+              <select id="filter-style" name="style" data-filter="style">
+                <option value="any">Any (a mix)</option>
+                <option value="classic">Classic (The Red Lion)</option>
+                <option value="pair">Pairs (The Fox and Hounds)</option>
+                <option value="fantasy">Fantasy (The Prancing Pony)</option>
+                <option value="dockside">Dockside dive</option>
+                <option value="upmarket">Upmarket</option>
+                <option value="funny">Funny</option>
+              </select>
+            </div>
+          </div></div>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="true">
+                    <p class="results-empty">Press Generate Names for 8 tavern names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
+                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+    </main>
+    <script type="application/json" id="generator-config">{"title":"Tavern Name Generator","slug":"tavern-name-generator","filters":{"style":{"label":"Style","options":["any","classic","pair","fantasy","dockside","upmarket","funny"],"optionLabels":{"any":"Any (a mix)","classic":"Classic (The Red Lion)","pair":"Pairs (The Fox and Hounds)","fantasy":"Fantasy (The Prancing Pony)","dockside":"Dockside dive","upmarket":"Upmarket","funny":"Funny"}}},"recipe":"switch","on":"style","cases":{"classic":{"recipe":"template","template":["The [colours] [beasts]","The [colours] [beasts]","The [heads] Head","The [arms] Arms","The [signs]"]},"pair":{"recipe":"template","template":["The [pairsA] and [pairsB]"]},"fantasy":{"recipe":"template","template":["The [fantasyAdj] [fantasyNoun]"]},"dockside":{"recipe":"template","template":["The [dockAdj] [dockNoun]"]},"upmarket":{"recipe":"template","template":["The [fineAdj] [fineNoun]"]},"funny":{"recipe":"pick","from":"funny"},"any":{"recipe":"template","template":["The [colours] [beasts]","The [colours] [beasts]","The [heads] Head","The [arms] Arms","The [signs]","The [pairsA] and [pairsB]","The [fantasyAdj] [fantasyNoun]","The [fantasyAdj] [fantasyNoun]","The [dockAdj] [dockNoun]","The [fineAdj] [fineNoun]","[funny]"]}},"data":{"colours":["Red","White","Black","Golden","Green","Blue","Silver","Grey","Copper","Scarlet","Brown","Dun","Speckled","Pied","Purple","Crimson","Yellow","Spotted"],"beasts":["Lion","Hart","Boar","Bull","Swan","Stag","Horse","Hound","Bear","Dragon","Griffin","Eagle","Unicorn","Ram","Fox","Falcon","Raven","Wolf","Hind","Lamb","Cockerel","Salmon"],"heads":["King's","Queen's","Bishop's","Duke's","Miller's","Ferryman's","Giant's","Huntsman's","Knight's","Abbot's","Wizard's","Dragon's","Shepherd's","Ploughman's","Admiral's","Fisherman's","Carpenter's","Pilgrim's","Hermit's","Woodman's","Drover's","Bargeman's"],"arms":["Masons","Smiths","Carpenters","Bakers","Weavers","Coopers","Brewers","Archers","Ashford","Blackwood","Harrow","Thornbury","Greymoor","Oakhart","Fletchers","Tanners","Drovers","Wheelwrights","Bricklayers","Shepherds","Foresters","Thatchers","Hatfield","Kingsley"],"signs":["Plough","Anchor","Bell","Crown","Wheatsheaf","Mitre","Ship","Globe","Feathers","Harrow","Lantern","Cartwheel","Bugle","Compasses","Chequers","Sun","Star","Moon","Shears","Barley Mow"],"pairsA":["Rose","Fox","Lamb","Hare","Bell","Sword","Anchor","Plough","Swan","Stag","Owl","Moon","Kettle","Lantern","Crook","Hen","Cat","Bear","Ship","Ring","Arrow","Wheat","Oak","Thistle","Hawk"],"pairsB":["Crown","Hounds","Flag","Tabor","Book","Shield","Hope","Harrow","Cygnet","Hunter","Ivy","Stars","Drum","Key","Barrel","Fiddle","Bow","Wheel","Basket","Lute","Ladder","Feather","Acorn","Candle"],"fantasyAdj":["Prancing","Drunken","Sleeping","Laughing","Rusty","Wandering","Dancing","Winking","Grinning","Howling","Crooked","One-Eyed","Hungry","Lucky","Thirsty","Snoring","Singing","Restless","Weary","Merry","Broken","Lost","Burning","Frozen","Hidden","Jolly","Stubborn","Toothless","Wise","Golden"],"fantasyNoun":["Pony","Dragon","Giant","Griffin","Goblin","Troll","Wyvern","Owlbear","Gnome","Dwarf","Mermaid","Unicorn","Wizard","Knight","Bard","Basilisk","Hydra","Manticore","Ogre","Kraken","Gauntlet","Tankard","Flagon","Cauldron","Lantern","Anvil","Shield","Barrel","Kettle","Candle","Boot","Wand"],"dockAdj":["Rusty","Drowned","Leaky","Rotten","Crooked","Broken","Sunken","Black","Salty","Gutter","Sorry","Last","Tarred","Soggy","Briny","Tattered","Waterlogged","Barnacled","Listing","Weathered","Bilge","Midnight","Patched","Grumpy"],"dockNoun":["Hook","Rat","Anchor","Barrel","Lantern","Cutlass","Oar","Bucket","Net","Eel","Gull","Mast","Plank","Chain","Sailor","Kraken","Bilge Rat","Lobster","Mermaid","Harpoon","Crab","Hammock","Bosun","Compass","Gangplank","Tide","Sea Dog","Herring"],"fineAdj":["Gilded","Silver","Velvet","Ivory","Crystal","Golden","Royal","Amber","Pearl","Marble","Sapphire","Emerald","Copper","Moonlit","Silken","Opal","Rosewood","Gossamer","Starlit","Jade","Porcelain","Velvet-Lined","Silvered","Blushing"],"fineNoun":["Swan","Chalice","Lantern","Rose","Peacock","Lily","Harp","Crown","Feather","Garden","Fountain","Mirror","Lyre","Stag","Unicorn","Goblet","Nightingale","Orchid","Sceptre","Carriage","Pavilion","Dove","Tiara","Locket","Firebird","Camellia","Rosebud","Ballroom"],"funny":["The Critical Fail","The Natural Twenty","The Nat One","The Mimic's Mouth","The Tipsy Kobold","The Sober Paladin","The Last Resort","The Polite Orc","The Honest Bard","The Bottomless Tankard","The Goblin's Tab","The Unpaid Bard","The Tipsy Treant","The Grumpy Gnome","The Hungover Hydra","The Retired Adventurer","The Wandering Mimic","The Mild Dragon","The Slightly Haunted Inn","The Second-Best Inn","The Bard's Excuse","The Missing Party","The Short Rest","The Long Rest","The Saving Throw","The Quest Board","The Silent Bard","The Cursed Spoon","The Lazy Lich","The Damp Dragon","The Sleepy Sentry","The Clumsy Thief","The Overdressed Owlbear","The Confused Cleric","The Barrel Roll","The Wrong Turn","The Lucky Guess","The Patient Ogre","The Fussy Phoenix","The Moody Minotaur","The Tavern at the End of the Dungeon","The Spilled Potion","The Lost Map","The Nervous Necromancer","The Rogue's Alibi","The Wizard's Hat Stand","The Dwarf Who Never Left","The Troll Toll","The Shy Giant","The Dragon's Overdraft","The Fainting Goat","The Overconfident Squire","The Apologetic Barbarian","The Vegetarian Dragon","The Tidy Goblin","The Bard Who Knows One Song","The Knight Who Lost His Horse","The Wizard's Spare Socks","The Unlucky Horseshoe","The Ogre's Teacup","The Gnome With a Grudge","The Haunted Coat Rack","The Indecisive Oracle","The Pessimistic Prophet","The Disappointed Dragon","The Mildly Cursed Kettle","The Bored Gargoyle","The Ticklish Troll","The Sneezing Griffin","The Hiccuping Wyvern","The Napping Knight","The Retired Henchman","The Reformed Villain","The Unemployed Jester","The Forgetful Sphinx","The Gullible Giant","The Vain Vampire","The Sulking Siren","The Ogre's Book Club","The Dwarf on Stilts","The Elf in Wellies","The Lich's Day Off","The Necromancer's Knitting Circle","The Skeleton Staff","The Ghost Who Pays Rent","The Goblin's Receipt","The Hero's Overdue Library Book","The Chosen One's Cousin","The Prophecy (Probably)","The Almost Legendary","The Fairly Famous","The Tankard Half Full","The Empty Purse","The Copper Short","The Bad Idea","The Good Idea at the Time","The Bard's Apology","The Dented Helmet","The Squeaky Armour","The Itchy Chainmail","The Borrowed Sword","The Wonky Stool","The Wobbly Table","The Leaky Roof","The Draughty Window","The Sticky Floor","The Loud Lute","The Out-of-Tune Harp","The Off-Key Choir","The Dancing Bear (Who Can't)","The Goose That Bites","The Angry Chicken","The Pig in a Wig","The Duck in a Hat","The Cat That Owns the Place","The Dog Who Counts","The Slightly Smaller Dragon","The Cheaper Inn Next Door","The Inn That Was Here Before","The No Vacancies","The Adventurers Welcome (Mostly)","The Mind Your Head","The Bring Your Own Spoon","The Stew of the Day (Every Day)","The Mystery Stew","The Suspicious Pie","The Questionable Sausage","The Burnt Crust","The Stale Loaf","The Weeping Onion","The Smug Pixie","The Grouchy Wizard","The Magician's Missing Rabbit","The Sneezing Wand","The Exploded Cauldron","The Banished Barber","The Lost Sock","The Fifth Wheel","The Rainy Tuesday","The Last Orders","The Closing Time","The One More Round","The Morning After","The Bouncer Is a Troll","The Ogre at the Door","The Gnome Behind the Bar","The Tall Tale","The Fisherman's Exaggeration","The One That Got Away","The Hero's Bar Tab","The Quest Not Taken","The Side Quest","The Fetch Quest","The Escort Mission","The Random Encounter","The Starting Village","The Wandering Monster","The Upside-Down Map","The Dungeon's Lost Property","The Dragon's Dentist","The Knight's Laundry","The Broom Parking","The Sword in the Scone","The Holy Pail","The Round Table for Two","The Distressed Dragon","The Frog Who Wasn't a Prince","The Giant's Small Beer","The Dwarf's Tall Story","The Troll Under New Management","The Unicorn's Bad Hair Day","The Goblin Who Tidied Up"]}}</script>
+    <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
+    <script src="../lib/outline.js?v=bb3e12d8"></script>
+    <script>(function(){if(window.parent===window)return;var last=0;function send(){var h=Math.ceil(document.documentElement.getBoundingClientRect().height);if(h!==last){last=h;window.parent.postMessage({tngEmbedHeight:h},'*');}}if('ResizeObserver' in window)new ResizeObserver(send).observe(document.body);window.addEventListener('load',send);send();})();</script>
+</body>
+</html>

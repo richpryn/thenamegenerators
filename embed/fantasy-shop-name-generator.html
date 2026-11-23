@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Shop Name Generator | The Name Generators</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://thenamegenerators.com/posts/fantasy-shop-name-generator.html">
+    <base target="_blank">
+    <link rel="icon" href="/favicon.ico?v=626227da" sizes="any">
+    <link rel="icon" href="/favicon.svg?v=727d2202" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
+</head>
+<body class="embed-page">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      
+    </defs></svg>
+    <main class="embed-wrap">
+        <p class="embed-head"><b>Fantasy Shop Name Generator</b> <a href="https://thenamegenerators.com/posts/fantasy-shop-name-generator.html?utm_source=embed&amp;utm_medium=widget" rel="noopener">More at The Name Generators</a></p>
+        <section class="sheet hd simple-generator" id="generator" aria-label="Fantasy Shop Name Generator">
+                <div class="gen-one">
+          <div class="group">
+            <label class="label" for="filter-shop">Kind of shop</label>
+            <div class="ctl sel hd">
+              <select id="filter-shop" name="shop" data-filter="shop">
+                <option value="any">Any shop</option>
+                <option value="magic">Magic shop</option>
+                <option value="smith">Blacksmith</option>
+                <option value="potion">Potions and herbs</option>
+                <option value="general">General store</option>
+                <option value="books">Books and maps</option>
+                <option value="jeweller">Jeweller</option>
+                <option value="tailor">Tailor and clothier</option>
+              </select>
+            </div>
+          </div></div>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="true">
+                    <p class="results-empty">Press Generate Names for 8 fantasy shop names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
+                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+    </main>
+    <script type="application/json" id="generator-config">{"title":"Fantasy Shop Name Generator","slug":"fantasy-shop-name-generator","filters":{"shop":{"label":"Kind of shop","options":["any","magic","smith","potion","general","books","jeweller","tailor"],"optionLabels":{"any":"Any shop","magic":"Magic shop","smith":"Blacksmith","potion":"Potions and herbs","general":"General store","books":"Books and maps","jeweller":"Jeweller","tailor":"Tailor and clothier"}}},"recipe":"switch","on":"shop","cases":{"magic":{"recipe":"template","template":["[owners]'s [shops.magic.goods]","The [shops.magic.adj] [shops.magic.obj]","[owners]'s [shops.magic.adj] [shops.magic.goods]","[shops.magic.adj] [shops.magic.goods]","[partners] and [partners]"]},"smith":{"recipe":"template","template":["[owners]'s [shops.smith.goods]","The [shops.smith.adj] [shops.smith.obj]","[owners]'s [shops.smith.adj] [shops.smith.goods]","[shops.smith.adj] [shops.smith.goods]","[partners] and [partners]"]},"potion":{"recipe":"template","template":["[owners]'s [shops.potion.goods]","The [shops.potion.adj] [shops.potion.obj]","[owners]'s [shops.potion.adj] [shops.potion.goods]","[shops.potion.adj] [shops.potion.goods]","[partners] and [partners]"]},"general":{"recipe":"template","template":["[owners]'s [shops.general.goods]","The [shops.general.adj] [shops.general.obj]","[owners]'s [shops.general.adj] [shops.general.goods]","[shops.general.adj] [shops.general.goods]","[partners] and [partners]"]},"books":{"recipe":"template","template":["[owners]'s [shops.books.goods]","The [shops.books.adj] [shops.books.obj]","[owners]'s [shops.books.adj] [shops.books.goods]","[shops.books.adj] [shops.books.goods]","[partners] and [partners]"]},"jeweller":{"recipe":"template","template":["[owners]'s [shops.jeweller.goods]","The [shops.jeweller.adj] [shops.jeweller.obj]","[owners]'s [shops.jeweller.adj] [shops.jeweller.goods]","[shops.jeweller.adj] [shops.jeweller.goods]","[partners] and [partners]"]},"tailor":{"recipe":"template","template":["[owners]'s [shops.tailor.goods]","The [shops.tailor.adj] [shops.tailor.obj]","[owners]'s [shops.tailor.adj] [shops.tailor.goods]","[shops.tailor.adj] [shops.tailor.goods]","[partners] and [partners]"]},"any":{"recipe":"template","template":["[owners]'s [shops.magic.goods]","The [shops.magic.adj] [shops.magic.obj]","[owners]'s [shops.magic.adj] [shops.magic.goods]","[shops.magic.adj] [shops.magic.goods]","[partners] and [partners]","[owners]'s [shops.smith.goods]","The [shops.smith.adj] [shops.smith.obj]","[owners]'s [shops.smith.adj] [shops.smith.goods]","[shops.smith.adj] [shops.smith.goods]","[partners] and [partners]","[owners]'s [shops.potion.goods]","The [shops.potion.adj] [shops.potion.obj]","[owners]'s [shops.potion.adj] [shops.potion.goods]","[shops.potion.adj] [shops.potion.goods]","[partners] and [partners]","[owners]'s [shops.general.goods]","The [shops.general.adj] [shops.general.obj]","[owners]'s [shops.general.adj] [shops.general.goods]","[shops.general.adj] [shops.general.goods]","[partners] and [partners]","[owners]'s [shops.books.goods]","The [shops.books.adj] [shops.books.obj]","[owners]'s [shops.books.adj] [shops.books.goods]","[shops.books.adj] [shops.books.goods]","[partners] and [partners]","[owners]'s [shops.jeweller.goods]","The [shops.jeweller.adj] [shops.jeweller.obj]","[owners]'s [shops.jeweller.adj] [shops.jeweller.goods]","[shops.jeweller.adj] [shops.jeweller.goods]","[partners] and [partners]","[owners]'s [shops.tailor.goods]","The [shops.tailor.adj] [shops.tailor.obj]","[owners]'s [shops.tailor.adj] [shops.tailor.goods]","[shops.tailor.adj] [shops.tailor.goods]","[partners] and [partners]"]}},"data":{"owners":["Grimble","Elara","Barnaby","Thessaly","Orrin","Mirabel","Bramwell","Zephyrine","Hobb","Tamsin","Fennick","Odelia","Gorrim","Aldous","Petra","Quill","Rosalind","Dunstan","Marigold","Ezekiel","Wenna","Tobias","Isolde","Kettrick","Brindle","Ambrose","Hettie","Silas","Vesper"],"shops":{"magic":{"goods":["Wands","Curios","Charms","Scrolls","Trinkets","Talismans","Arcana","Oddities","Wonders","Enchantments","Baubles","Relics"],"adj":["Curious","Glimmering","Whispering","Wandering","Arcane","Starlit","Hidden","Enchanted","Twinkling","Wise","Peculiar","Midnight"],"obj":["Wand","Orb","Grimoire","Lantern","Crystal","Familiar","Owl","Hourglass","Mirror","Star","Moon","Candle"]},"smith":{"goods":["Arms","Steel","Blades","Ironworks","Forge","Armoury","Hammers","Shields","Ironmongery","Smithy"],"adj":["Glowing","Ringing","Iron","Black","Tempered","Burning","Mighty","Dented","Honest","Red-Hot","Sturdy","Roaring"],"obj":["Anvil","Hammer","Bellows","Tongs","Forge","Gauntlet","Shield","Horseshoe","Blade","Helm","Ingot","Hearth"]},"potion":{"goods":["Potions","Tinctures","Remedies","Elixirs","Draughts","Herbs","Salves","Tonics","Cures","Philtres"],"adj":["Bubbling","Green","Bitter","Healing","Fragrant","Smoking","Gentle","Mossy","Wild","Silver","Dried","Steaming"],"obj":["Cauldron","Mortar","Pestle","Phial","Toadstool","Mandrake","Willow","Leech","Flask","Kettle","Nettle","Root"]},"general":{"goods":["Provisions","Goods","Supplies","Sundries","Wares","Trading Post","Outfitters","Stores","Emporium","Bits and Bobs"],"adj":["Honest","Busy","Thrifty","Lucky","Friendly","Packed","Crooked","Cheerful","Humble","Handy","Dusty","Bargain"],"obj":["Barrel","Lantern","Rope","Pack","Bucket","Ladder","Crate","Basket","Pot","Sack","Coil","Wagon"]},"books":{"goods":["Books","Tomes","Scrolls","Maps","Manuscripts","Bindery","Pages","Ink and Quill","Chronicles","Folios"],"adj":["Dusty","Quiet","Inky","Learned","Leatherbound","Forgotten","Hidden","Wandering","Lost","Crumbling","Golden","Patient"],"obj":["Quill","Page","Inkpot","Scroll","Lectern","Candle","Spine","Bookworm","Map","Bookmark","Compass","Owl"]},"jeweller":{"goods":["Gems","Jewels","Rings","Trinkets","Gold","Silver","Settings","Treasures","Finery","Facets"],"adj":["Glittering","Golden","Silver","Sparkling","Flawless","Gleaming","Precious","Royal","Polished","Rare","Shining","Dazzling"],"obj":["Ring","Pearl","Ruby","Locket","Crown","Diamond","Brooch","Chain","Sapphire","Emerald","Circlet","Opal"]},"tailor":{"goods":["Cloaks","Garments","Raiment","Threads","Silks","Finery","Tailoring","Fabrics","Hats","Boots"],"adj":["Fine","Velvet","Dapper","Silken","Woollen","Elegant","Fashionable","Patched","Gilded","Midnight","Bold","Humble"],"obj":["Needle","Thimble","Spindle","Cloak","Bobbin","Button","Loom","Ribbon","Hat","Boot","Glove","Thread"]}},"partners":["Gorse","Pottle","Thistle","Fennel","Bellweather","Mortimer","Quarry","Ashby","Crumb","Dewhurst","Fairfax","Gimble","Hoskins","Inkwell","Jarrow","Kettle","Lumley","Marrow","Nettles","Oddbody","Quinch","Ravel","Spindle","Tumbleweed","Underwood","Vane","Wicket"]}}</script>
+    <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
+    <script src="../lib/outline.js?v=bb3e12d8"></script>
+    <script>(function(){if(window.parent===window)return;var last=0;function send(){var h=Math.ceil(document.documentElement.getBoundingClientRect().height);if(h!==last){last=h;window.parent.postMessage({tngEmbedHeight:h},'*');}}if('ResizeObserver' in window)new ResizeObserver(send).observe(document.body);window.addEventListener('load',send);send();})();</script>
+</body>
+</html>

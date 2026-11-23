@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-Apocalyptic Name Generator | The Name Generators</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://thenamegenerators.com/posts/post-apocalyptic-name-generator.html">
+    <base target="_blank">
+    <link rel="icon" href="/favicon.ico?v=626227da" sizes="any">
+    <link rel="icon" href="/favicon.svg?v=727d2202" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
+</head>
+<body class="embed-page">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      
+    </defs></svg>
+    <main class="embed-wrap">
+        <p class="embed-head"><b>Post-Apocalyptic Name Generator</b> <a href="https://thenamegenerators.com/posts/post-apocalyptic-name-generator.html?utm_source=embed&amp;utm_medium=widget" rel="noopener">More at The Name Generators</a></p>
+        <section class="sheet hd simple-generator" id="generator" aria-label="Post-Apocalyptic Name Generator">
+                <div class="gen-one">
+          <div class="group" role="group" aria-labelledby="filter-kind-label">
+            <div class="label"><span id="filter-kind-label">What are you naming?</span><span class="pen" data-hint-for="kind" aria-hidden="true">e.g. a mix</span></div>
+            <div class="opts" data-buttons-for="kind">
+              <button type="button" class="opt hd tap" data-value="any" data-hint="e.g. a mix" title="Anything (a mix)" aria-pressed="true">Anything</button>
+              <button type="button" class="opt hd tap" data-value="survivor" data-hint="e.g. Cass &quot;Rust&quot; Harlow" title="Survivor (Cass &quot;Rust&quot; Harlow)" aria-pressed="false">Survivor</button>
+              <button type="button" class="opt hd tap" data-value="raider" data-hint="e.g. Scab the Butcher" title="Raider (Scab the Butcher)" aria-pressed="false">Raider</button>
+              <button type="button" class="opt hd tap" data-value="mutant" data-hint="e.g. Two-Heads" title="Mutant (Two-Heads)" aria-pressed="false">Mutant</button>
+              <button type="button" class="opt hd tap" data-value="settlement" data-hint="e.g. Tin Can Crossing" title="Settlement (Tin Can Crossing)" aria-pressed="false">Settlement</button>
+              <button type="button" class="opt hd tap" data-value="faction" data-hint="e.g. the Ash Wardens" title="Faction (the Ash Wardens)" aria-pressed="false">Faction</button>
+            </div>
+            <input type="hidden" id="filter-kind" name="kind" data-filter="kind" value="any">
+          </div></div>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="false">
+                    <p class="results-empty">Press Generate Names for 8 post-apocalyptic names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
+                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+    </main>
+    <script type="application/json" id="generator-config">{"title":"Post-Apocalyptic Name Generator","slug":"post-apocalyptic-name-generator","seoTitle":"Post-Apocalyptic Name Generator: Wasteland Names","filters":{"kind":{"label":"What are you naming?","options":["any","survivor","raider","mutant","settlement","faction"],"optionLabels":{"any":"Anything (a mix)","survivor":"Survivor (Cass \"Rust\" Harlow)","raider":"Raider (Scab the Butcher)","mutant":"Mutant (Two-Heads)","settlement":"Settlement (Tin Can Crossing)","faction":"Faction (the Ash Wardens)"}}},"recipe":"switch","on":"kind","cases":{"survivor":{"recipe":"template","template":["[first] [surname]","[first] \"[nick]\" [surname]","[nick]"]},"raider":{"recipe":"template","template":["[raider.n] [raider.t]","[raider.n]"]},"mutant":{"recipe":"template","template":["[mutant.a]","[mutant.a] [mutant.t]"]},"settlement":{"recipe":"template","template":"[place.a] [place.b]"},"faction":{"recipe":"template","template":"The [faction.a] [faction.b]"},"any":{"recipe":"template","template":["[first] [surname]","[first] \"[nick]\" [surname]","[nick]","[raider.n] [raider.t]","[raider.n]","[mutant.a]","[mutant.a] [mutant.t]","[place.a] [place.b]","The [faction.a] [faction.b]"]}},"data":{"first":["Cass","Mags","Rook","Tin","Patch","Juniper","Ash","Ezra","Hollis","Wren","Jory","Marlo","Della","Abel","Sunny","Rosa","Tobias","Hester","Gus","Ida","Moss","Nell","Silas","Thea","Cy","Lou","Ruby","Ivo","Bett","Cal","Dina","Fen","Hank","Ines","Jude","Kit","Lark","Merle","Nico","Odie","Pru","Quinn","Rhett","Sal","Tam","Ursa","Vin","Willa","Yara","Zeke","Ada","Bo","Cora","Dex","Edie","Flint","Greer","Huck","Iggy","June","Kes","Lyle","Mae","Noor","Orrin","Pace","Reva","Sol","Tully","Vada","Wade","Arlo","Bree","Cutter","Dell"],"surname":["Harlow","Voss","Mercer","Boone","Calder","Dunn","Garrity","Hatch","Kell","Lowry","Marsh","Nash","Orr","Pike","Quill","Reyes","Slade","Tate","Vance","Wilder","Yates","Crane","Ford","Grady","Hale","Irons","Jessup","Keel","Lyle","Mott","Naylor","Okafor","Price","Rusk","Sorensen","Thorne","Ulrich","Varga","Webb","Abara","Booker","Cobb","Dyer","Ennis","Fitch","Gale","Holt","Imrie"],"nick":["Rust","Patch","Two-Bit","Geiger","Scrap","Dust","Glass","Lucky","Cog","Rad","Static","Tinker","Splice","Flint","Ash","Salt","Copper","Grit","Spanner","Fuse","Tallow","Soot","Rivet","Mudlark","Jerrycan","Sixpence","Wick","Crowbar","Gasket","Hacksaw","Lantern","Sparkplug","Bones","Tumbleweed","Magpie","Dynamo","Ticktock","Ration","Cinders","Scavenger","Pigeon","Buckshot","Shrapnel","Brine","Hush","Drift","Ledger","Thimble"],"raider":{"n":["Scab","Gristle","Skull","Hook","Krank","Razor","Tusk","Gash","Chain","Ripsaw","Mangle","Spike","Torch","Maw","Grinder","Knuckles","Brick","Wrench","Boiler","Diesel","Nitro","Piston","Crusher","Gutter","Rot","Snag","Splinter","Sawtooth","Barbwire","Muzzle","Blister","Cinder","Fang","Howl","Jackal","Leech","Ratchet","Sledge","Stitch","Vex","Wreck"],"t":["the Butcher","the Burner","the Hungry","Two-Guns","the Collector","the Smiler","Bonebreaker","the Mad","the Unkind","Tyre-Iron","of the Salt Road","the Toll-Taker","Ten-Litre","the Last","the Rattler","No-Mercy","the Wrecker","of the Dry Lakes","Gasoline","the Grinning"]},"mutant":{"a":["Two-Heads","Bigmouth","Sevenfingers","Old Glow","Many-Eyes","Long Arms","Greenskin","Hollowback","Saltlung","Crooktooth","Gills","Mothwing","Stonehide","Thornback","Brightbones","Ninetoes","Softskull","Glowworm","Stalk","Lump","Murmur","Spine","Grub","Croak","Chitter","Molt","Husk","Fungus","Blink","Drool","Tallow","Wart","Bloat","Twitch","Burr","Shiver","Clatter","Creep","Lumen","Gristle"],"t":["of the Glow Pits","the Unburied","from the Crater","the Changed","the Twice-Born","of the Green Water","the Shelter Child","of the Deep Tunnels","the Many","the Listener","the Gentle","the Blessed","the Forgotten","of the Ash Fields","the Old One"]},"place":{"a":["Rust","Last","Tin Can","Salt","Junction","Fort","Hope's","Cinder","Dust","Glass","Bone","Ash","Copper","Ember","Static","Sunken","Broken","Dry","Lucky","Rad","Bitter","Gutter","Scrap","Iron","Sorrow","Second","Mercy","Highway","Pylon","Turbine","Silo","Reservoir","Bunker","Overpass","Rail","Tollgate","Signal","Lantern","Stillwater","Greenhouse"],"b":["Hollow","Light","Crossing","Flats","Nine","End","Town","Creek","Gulch","Rock","Hill","Yard","Ridge","Springs","Haven","Market","Camp","Station","Wells","Depot","Pass","Hold","Junction","Bridge","Sprawl","Heap","Mill","Basin","Mile","Landing"]},"faction":{"a":["Ash","Salt","Iron","Rust","Dust","Bone","Glass","Cinder","Copper","Sun","Storm","Thorn","Static","Grave","Gasoline","Sand","Black Flag","Red Road","Long Road","Green","Tin","Ember","Silo","Tollgate","Wire","Highway","Lantern","Ration"],"b":["Wardens","Kings","Choir","Saints","Riders","Dogs","Widows","Lords","Pilgrims","Kin","Hounds","Collective","Union","Syndicate","Convoy","Brigade","Faithful","Tribe","Assembly","Watch","Mothers","Prophets","Runners","Scavengers","Tinkers","Jackals","Crows","Vultures","Clan","Militia"]}}}</script>
+    <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
+    <script src="../lib/outline.js?v=bb3e12d8"></script>
+    <script>(function(){if(window.parent===window)return;var last=0;function send(){var h=Math.ceil(document.documentElement.getBoundingClientRect().height);if(h!==last){last=h;window.parent.postMessage({tngEmbedHeight:h},'*');}}if('ResizeObserver' in window)new ResizeObserver(send).observe(document.body);window.addEventListener('load',send);send();})();</script>
+</body>
+</html>

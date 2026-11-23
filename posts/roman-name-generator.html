@@ -290,7 +290,7 @@
     <script src="../lib/consent.js?v=308feade" defer></script>
     <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles/site.css?v=7232e3a3">
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
 </head>
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -481,6 +481,14 @@
                 <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
             </section>
             <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="2026-11-17">17 November 2026</time></p>
+            <details class="embed-box">
+                <summary>Put this generator on your website</summary>
+                <p>Free for blogs, campaign sites, class pages and wikis, with no ads. Paste this into your page's HTML:</p>
+                <textarea class="embed-code" readonly rows="5" aria-label="Embed code for the Roman Name Generator">&lt;iframe src=&quot;https://thenamegenerators.com/embed/roman-name-generator.html&quot; title=&quot;Roman Name Generator&quot; data-tng-embed width=&quot;100%&quot; height=&quot;560&quot; style=&quot;border:0;width:100%;max-width:720px&quot; loading=&quot;lazy&quot; allow=&quot;clipboard-write&quot;&gt;&lt;/iframe&gt;
+&lt;p style=&quot;margin:4px 0 16px;font-size:14px&quot;&gt;Roman Name Generator by &lt;a href=&quot;https://thenamegenerators.com/posts/roman-name-generator.html&quot;&gt;The Name Generators&lt;/a&gt;&lt;/p&gt;
+&lt;script src=&quot;https://thenamegenerators.com/lib/embed.js&quot; async&gt;&lt;/script&gt;</textarea>
+                <p class="embed-acts"><button type="button" class="mini hd tap" data-embed-copy><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy code</span></button> <a href="../embed-name-generators.html">How embedding works</a></p>
+            </details>
 
             <section class="section example-names">
                 <h2>Example Roman Names</h2>
@@ -636,7 +644,7 @@
 
     <script type="application/json" id="generator-config">{"title":"Roman Name Generator","slug":"roman-name-generator","filters":{"gender":{"label":"Gender","options":["any","male","female"],"optionLabels":{"any":"Any"}},"format":{"label":"Name format","options":["full","meaning"],"optionLabels":{"full":"Full name","meaning":"Full name, with the cognomen's meaning (men only)"}},"letter":{"label":"Starts with","options":["any","a","c","m","p","s","t","v"],"optionLabels":{"any":"Any letter","a":"A","b":"B","c":"C","d":"D","e":"E","f":"F","g":"G","h":"H","i":"I","j":"J","k":"K","l":"L","m":"M","n":"N","o":"O","p":"P","q":"Q","r":"R","s":"S","t":"T","u":"U","v":"V","w":"W","x":"X","y":"Y","z":"Z"}}},"startsWith":"letter","recipe":"switch","on":"gender","cases":{"male":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":"[praenomina] [nomina.male] [cognomina]"},"meaning":{"recipe":"template","template":"[praenomina] [nomina.male] [cognominaMeaning]"}}},"female":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[nomina.female]","[nomina.female] [femaleSuffix]"]}}},"any":{"recipe":"switch","on":"format","cases":{"full":{"recipe":"template","template":["[praenomina] [nomina.male] [cognomina]","[nomina.female]","[nomina.female] [femaleSuffix]"]},"meaning":{"recipe":"template","template":"[praenomina] [nomina.male] [cognominaMeaning]"}}}},"data":{"praenomina":["Gaius","Lucius","Marcus","Publius","Quintus","Titus","Tiberius","Sextus","Aulus","Decimus","Gnaeus","Spurius","Manius","Servius","Appius","Numerius"],"nomina":{"male":["Julius","Cornelius","Claudius","Aemilius","Valerius","Fabius","Junius","Licinius","Tullius","Sempronius","Antonius","Flavius","Pompeius","Calpurnius","Cassius","Domitius","Fulvius","Horatius","Livius","Manlius","Octavius","Porcius","Sulpicius","Terentius","Vettius","Aelius","Annius","Atilius","Aurelius","Caecilius","Clodius","Curtius","Furius","Hortensius","Lucretius","Marcius","Minucius","Mucius","Naevius","Papirius","Plautius","Postumius","Quinctius","Rutilius","Sergius","Servilius","Statilius","Titius","Ulpius","Verginius","Volumnius","Petronius","Vibius"],"female":["Julia","Cornelia","Claudia","Aemilia","Valeria","Fabia","Junia","Licinia","Tullia","Sempronia","Antonia","Flavia","Pompeia","Calpurnia","Cassia","Domitia","Fulvia","Horatia","Livia","Manlia","Octavia","Porcia","Sulpicia","Terentia","Vettia","Aelia","Annia","Atilia","Aurelia","Caecilia","Clodia","Curtia","Furia","Hortensia","Lucretia","Marcia","Minucia","Mucia","Naevia","Papiria","Plautia","Postumia","Quinctia","Rutilia","Sergia","Servilia","Statilia","Titia","Ulpia","Verginia","Volumnia","Petronia","Vibia"]},"cognomina":["Rufus","Longus","Crassus","Naso","Magnus","Felix","Severus","Paullus","Scaevola","Calvus","Niger","Corvus","Varus","Strabo","Balbus","Brutus","Cicero","Pius","Celer","Macer","Sabinus","Albus","Lepidus","Rusticus"],"cognominaMeaning":["Rufus (\"red-haired\")","Longus (\"tall\")","Crassus (\"fat\")","Naso (\"big-nosed\")","Magnus (\"great\")","Felix (\"lucky\")","Severus (\"stern\")","Paullus (\"small\")","Scaevola (\"left-handed\")","Calvus (\"bald\")","Niger (\"dark\")","Corvus (\"raven\")","Varus (\"bow-legged\")","Strabo (\"squinting\")","Balbus (\"stammerer\")","Brutus (\"dull\")","Cicero (\"chickpea\")","Pius (\"dutiful\")","Celer (\"swift\")","Macer (\"thin\")","Sabinus (\"the Sabine\")","Albus (\"white\")","Lepidus (\"charming\")","Rusticus (\"countrified\")"],"femaleSuffix":["Maior","Minor","Secunda","Tertia"]},"provenance":{"lists":{"*":"recorded"}},"letterSets":{"any|full":"acmpstv","any|meaning":"","male|full":"","male|meaning":"","female|full":"acpsv"}}</script>
     <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
-    <script src="../lib/page.js?v=e05a95f4"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
     <script src="../lib/outline.js?v=bb3e12d8"></script>
 </body>
 </html>

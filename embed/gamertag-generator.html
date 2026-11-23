@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamertag Generator | The Name Generators</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://thenamegenerators.com/posts/gamertag-generator.html">
+    <base target="_blank">
+    <link rel="icon" href="/favicon.ico?v=626227da" sizes="any">
+    <link rel="icon" href="/favicon.svg?v=727d2202" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
+</head>
+<body class="embed-page">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      
+    </defs></svg>
+    <main class="embed-wrap">
+        <p class="embed-head"><b>Gamertag Generator</b> <a href="https://thenamegenerators.com/posts/gamertag-generator.html?utm_source=embed&amp;utm_medium=widget" rel="noopener">More at The Name Generators</a></p>
+        <section class="sheet hd simple-generator" id="generator" aria-label="Gamertag Generator">
+                <div class="gen-grid">
+          <div class="group" role="group" aria-labelledby="filter-style-label">
+            <div class="label"><span id="filter-style-label">Style</span><span class="pen" data-hint-for="style" aria-hidden="true"></span></div>
+            <div class="opts" data-buttons-for="style">
+              <button type="button" class="opt hd tap" data-value="any" data-hint="" aria-pressed="true">Any style</button>
+              <button type="button" class="opt hd tap" data-value="cool" data-hint="e.g. ShadowViper" title="Cool (ShadowViper)" aria-pressed="false">Cool</button>
+              <button type="button" class="opt hd tap" data-value="funny" data-hint="e.g. CaptainSnacks" title="Funny (CaptainSnacks)" aria-pressed="false">Funny</button>
+              <button type="button" class="opt hd tap" data-value="fantasy" data-hint="e.g. Runeblade" title="Fantasy (Runeblade)" aria-pressed="false">Fantasy</button>
+              <button type="button" class="opt hd tap" data-value="short" data-hint="e.g. Vyke" title="Short, 4 letters (Vyke)" aria-pressed="false">Short, 4 letters</button>
+            </div>
+            <input type="hidden" id="filter-style" name="style" data-filter="style" value="any">
+          </div>
+
+          <div class="group">
+            <label class="label" for="filter-useWord">Include your own word</label>
+            <div class="ctl sel hd">
+              <select id="filter-useWord" name="useWord" data-filter="useWord">
+                <option value="no">No</option>
+                <option value="yes">Yes, use the word below</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="group">
+            <label class="label" for="filter-word">Your word or name</label>
+            <div class="ctl hd"><input type="text" id="filter-word" name="word" data-filter="word" placeholder="e.g. Sam, Pizza, Fox" class="name-input" autocomplete="off"></div>
+          </div></div>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="false">
+                    <p class="results-empty">Press Generate Names for 8 gamertags.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
+                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+    </main>
+    <script type="application/json" id="generator-config">{"title":"Gamertag Generator","slug":"gamertag-generator","filters":{"style":{"label":"Style","options":["any","cool","funny","fantasy","short"],"optionLabels":{"any":"Any style","cool":"Cool (ShadowViper)","funny":"Funny (CaptainSnacks)","fantasy":"Fantasy (Runeblade)","short":"Short, 4 letters (Vyke)"}},"useWord":{"label":"Include your own word","options":["no","yes"],"optionLabels":{"no":"No","yes":"Yes, use the word below"}},"word":{"type":"text","label":"Your word or name","placeholder":"e.g. Sam, Pizza, Fox","default":"","example":"Fox"}},"recipe":"switch","on":"style","cases":{"cool":{"recipe":"switch","on":"useWord","cases":{"no":{"recipe":"template","template":["[styles.cool.a][styles.cool.n]","[styles.cool.a][styles.cool.n]","[styles.cool.a][styles.cool.n][digits]"]},"yes":{"recipe":"template","template":["{word}[styles.cool.n]","[styles.cool.a]{word}","{word}[styles.cool.n][digits]"]}}},"funny":{"recipe":"switch","on":"useWord","cases":{"no":{"recipe":"template","template":["[styles.funny.a][styles.funny.n]","[styles.funny.a][styles.funny.n]","[styles.funny.a][styles.funny.n][digits]"]},"yes":{"recipe":"template","template":["{word}[styles.funny.n]","[styles.funny.a]{word}","{word}[styles.funny.n][digits]"]}}},"fantasy":{"recipe":"switch","on":"useWord","cases":{"no":{"recipe":"template","template":["[styles.fantasy.a][styles.fantasy.n]","[styles.fantasy.a][styles.fantasy.n]","[styles.fantasy.a][styles.fantasy.n][digits]"]},"yes":{"recipe":"template","template":["{word}[styles.fantasy.n]","[styles.fantasy.a]{word}","{word}[styles.fantasy.n][digits]"]}}},"short":{"recipe":"switch","on":"useWord","cases":{"no":{"recipe":"template","template":["[short]"]},"yes":{"recipe":"template","template":["{word}[short]","[short]{word}"]}}},"any":{"recipe":"switch","on":"useWord","cases":{"no":{"recipe":"template","template":["[styles.cool.a][styles.cool.n]","[styles.cool.a][styles.cool.n]","[styles.cool.a][styles.cool.n][digits]","[styles.funny.a][styles.funny.n]","[styles.funny.a][styles.funny.n]","[styles.funny.a][styles.funny.n][digits]","[styles.fantasy.a][styles.fantasy.n]","[styles.fantasy.a][styles.fantasy.n]","[styles.fantasy.a][styles.fantasy.n][digits]","[short]"]},"yes":{"recipe":"template","template":["{word}[styles.cool.n]","[styles.cool.a]{word}","{word}[styles.cool.n][digits]","{word}[styles.funny.n]","[styles.funny.a]{word}","{word}[styles.funny.n][digits]","{word}[styles.fantasy.n]","[styles.fantasy.a]{word}","{word}[styles.fantasy.n][digits]","{word}[short]","[short]{word}"]}}}},"data":{"styles":{"cool":{"a":["Shadow","Silent","Frost","Night","Iron","Void","Storm","Toxic","Neon","Phantom","Crimson","Rogue","Savage","Cyber","Lunar","Venom","Ghost","Blaze","Hyper","Steel","Dark","Rapid","Feral","Static","Omega"],"n":["Viper","Reaper","Wolf","Hawk","Strike","Fang","Pulse","Raven","Blade","Spectre","Fury","Hunter","Nova","Comet","Talon","Raptor","Bolt","Cobra","Titan","Ronin","Vortex","Wraith","Sniper","Drift","Lynx"]},"funny":{"a":["Captain","Sir","Lord","Professor","Doctor","Lady","Count","Agent","Major","Baron","Chief","Duke","Mister","Madam","General","Uncle","Granny","Señor","Monsieur","Admiral","Sergeant","Captain Obvious","Little","Big","Saint"],"n":["Snacks","Napsalot","Lagsalot","Wobbles","Pancake","Noodle","Biscuit","Potato","Toaster","Nugget","Waffles","Pickles","Sprinkles","Dumpling","Crumpet","Bubbles","Muffin","Socks","Cheddar","Teapot","Meatball","Sausage","Sandwich","Spaghetti","Turnip"]},"fantasy":{"a":["Dragon","Rune","Storm","Shadow","Frost","Iron","Star","Moon","Ember","Thorn","Grim","Raven","Ash","Wolf","Elder","Wyrm","Mithril","Arcane","Dusk","Bone","Blood","Gloom","Night","Sun","Fire","Soul","Doom","Rime"],"n":["bane","blade","born","caller","forge","heart","shield","song","walker","weaver","ward","fang","binder","keeper","wing","seer","mancer","rider","slayer","crest","crown","reaver","strider","brand","whisper","hollow","fall","shard"]}},"short":["Vyke","Zorn","Kryx","Daxe","Vexo","Juno","Rook","Onyx","Lyra","Kael","Zeph","Nyxo","Brox","Taze","Quin","Voxa","Jett","Kova","Drax","Zyla","Moxi","Rexo","Faye","Hexa","Lynx","Axel","Ziva","Kyro","Nova","Pyro","Vale","Wren","Echo","Ozzy","Saxo","Tyke","Ulix","Yori","Zeno","Mira","Lexi","Nyla","Kyra","Knox","Mako","Maxx","Niko","Nixx","Nyte","Nexa","Lyko","Lyte","Luxe","Rekt","Rift","Rune","Ryno","Shay","Skye","Sync","Taro","Teko","Vega","Yeti","Yuki","Zade","Zane","Zeke","Zion","Xyon","Jaxx","Klix","Grix","Dash","Daze","Elix","Eryx","Evox","Dyno","Axon","Brix","Pixl","Roxx","Rayn","Orin","Oryx","Kade","Arlo","Aryx","Aura","Axia","Azor","Vace","Vant","Vero","Vynn","Torq","Vorn","Zarn","Vyre","Xylo","Zyke","Tyde","Tyro","Tika","Rael","Roan","Rivo","Odyn","Quix","Quip","Prym","Ixor","Juke","Jolt","Wyld","Wysp","Warp","Xane","Yura","Zolt","Volt","Vibe","Tilt","Pike","Jade","Izzy","Hawk","Haze","Grit","Gale","Ezra","Crux","Byte","Atom","Axis","Kilo","Fenn","Jorn","Lorn","Tarn","Brin","Corv","Dray","Fynx","Gorm","Holt","Lark","Nash","Rush","Trek","Zest","Dusk","Gust","Blip","Zing","Opal","Ruby","Skar","Glim"],"digits":["7","9","13","21","42","64","77","88","99","101","404","777","808","999","2000","3000","3","5","11","23","33","47","123","360","512","1337","2077"]}}</script>
+    <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
+    <script src="../lib/outline.js?v=bb3e12d8"></script>
+    <script>(function(){if(window.parent===window)return;var last=0;function send(){var h=Math.ceil(document.documentElement.getBoundingClientRect().height);if(h!==last){last=h;window.parent.postMessage({tngEmbedHeight:h},'*');}}if('ResizeObserver' in window)new ResizeObserver(send).observe(document.body);window.addEventListener('load',send);send();})();</script>
+</body>
+</html>

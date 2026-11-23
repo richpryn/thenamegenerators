@@ -29,6 +29,9 @@ const ELEMENT_GENS = Elements.generatorKeys(ELEMENTS);
 const Toolkit = require('./toolkit-page');
 const Builder = require('./builder-page');
 const Lists = require('./list-pages');
+const Embed = require('./embed-pages');
+/** Each generator's card HTML, kept for its embed page. */
+const EMBED_CARDS = {};
 const LISTS = Lists.loadLists();
 const LIST_FOR = Lists.listsFor(LISTS);
 
@@ -650,6 +653,29 @@ function generateGeneratorPage(generator, category, site) {
                 </div>
             </section>`;
 
+  // The generator itself, shared with its embed page (scripts/embed-pages.js)
+  const cardHTML = `<section class="sheet hd simple-generator" id="generator" aria-label="${escGenTitle}">
+                ${filterHTML}
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate ${Items}</button>
+                <div id="results" class="results-area" data-long="${longNames ? 'true' : 'false'}">
+                    <p class="results-empty">Press Generate ${Items} for 8 ${escNoun.toLowerCase()}.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a ${item} to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
+                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>`;
+  EMBED_CARDS[generator.key] = cardHTML;
+
   const html = `<!DOCTYPE html>
 <html lang="en-GB">
 <head>
@@ -704,27 +730,9 @@ function generateGeneratorPage(generator, category, site) {
             </div>
             <p class="lede">${escHeroTagline}</p>
 
-            <section class="sheet hd simple-generator" id="generator" aria-label="${escGenTitle}">
-                ${filterHTML}
-                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate ${Items}</button>
-                <div id="results" class="results-area" data-long="${longNames ? 'true' : 'false'}">
-                    <p class="results-empty">Press Generate ${Items} for 8 ${escNoun.toLowerCase()}.</p>
-                </div>
-                <div class="after">
-                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
-                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
-                </div>
-                <div class="foot">
-                    <p class="sl" id="shortlist-line">Tap a ${item} to copy it, or the bookmark to keep it.</p>
-                    <div class="acts">
-                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
-                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
-                    </div>
-                </div>
-                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
-                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
-            </section>
+            ${cardHTML}
             <p class="byline">By <a href="../about.html">Rich</a> · Updated <time datetime="${generator.updated}">${longDate(generator.updated)}</time></p>
+            ${Embed.embedBoxHtml(generator, escapeHtml)}
 ${examplesHTML}
 ${howItWorksHtml(generator)}${Reference.generatorBox(REF_FOR[generator.key], '../', ELEMENT_GENS.has(generator.key), Toolkit.GENERATOR_KEYS.has(generator.key))}${guideLinksHtml(generator, site)}${Lists.generatorBox(LIST_FOR[generator.key])}
             ${layout.sectionBreak(motif)}
@@ -2185,6 +2193,7 @@ function build() {
   Builder.buildBuilder(site, REFERENCE, { scriptJson, ICON_LINKS, markdownBold, plainText, longDate });
   Toolkit.buildToolkit(site, REFERENCE, { scriptJson, ICON_LINKS, markdownBold, plainText, longDate }, ELEMENTS.elements.length);
   Lists.buildLists(site, REFERENCE, { scriptJson, ICON_LINKS, markdownBold, plainText, longDate });
+  Embed.buildEmbeds(site, EMBED_CARDS, { escapeHtml, scriptJson, runtimeConfig, ICON_LINKS });
   generateSitemap(site);
   generateHtmlSitemap(site);
   generate404(site);
@@ -2236,6 +2245,13 @@ function generateSitemap(site) {
     <lastmod>${siteDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <!-- Embed a generator -->
+  <url>
+    <loc>${baseUrl}/embed-name-generators.html</loc>
+    <lastmod>${latest([lastChanged('scripts/embed-pages.js')])}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <!-- Name tools -->
   <url>

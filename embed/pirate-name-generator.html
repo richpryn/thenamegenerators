@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirate Name Generator | The Name Generators</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://thenamegenerators.com/posts/pirate-name-generator.html">
+    <base target="_blank">
+    <link rel="icon" href="/favicon.ico?v=626227da" sizes="any">
+    <link rel="icon" href="/favicon.svg?v=727d2202" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
+</head>
+<body class="embed-page">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      
+    </defs></svg>
+    <main class="embed-wrap">
+        <p class="embed-head"><b>Pirate Name Generator</b> <a href="https://thenamegenerators.com/posts/pirate-name-generator.html?utm_source=embed&amp;utm_medium=widget" rel="noopener">More at The Name Generators</a></p>
+        <section class="sheet hd simple-generator" id="generator" aria-label="Pirate Name Generator">
+                <div class="gen-grid">
+          <div class="group" role="group" aria-labelledby="filter-what-label">
+            <div class="label"><span id="filter-what-label">Name for</span><span class="pen" data-hint-for="what" aria-hidden="true"></span></div>
+            <div class="opts" data-buttons-for="what">
+              <button type="button" class="opt hd tap" data-value="pirate" data-hint="" aria-pressed="true">A pirate</button>
+              <button type="button" class="opt hd tap" data-value="ship" data-hint="" aria-pressed="false">A pirate ship</button>
+            </div>
+            <input type="hidden" id="filter-what" name="what" data-filter="what" value="pirate">
+          </div>
+
+          <div class="group" role="group" aria-labelledby="filter-gender-label">
+            <div class="label"><span id="filter-gender-label">Gender</span><span class="pen" data-hint-for="gender" aria-hidden="true"></span></div>
+            <div class="opts" data-buttons-for="gender">
+              <button type="button" class="opt hd tap" data-value="any" data-hint="" aria-pressed="true">Any</button>
+              <button type="button" class="opt hd tap" data-value="male" data-hint="" aria-pressed="false">Male</button>
+              <button type="button" class="opt hd tap" data-value="female" data-hint="" aria-pressed="false">Female</button>
+            </div>
+            <input type="hidden" id="filter-gender" name="gender" data-filter="gender" value="any">
+          </div>
+
+          <div class="group">
+            <label class="label" for="filter-format">Pirate name format</label>
+            <div class="ctl sel hd">
+              <select id="filter-format" name="format" data-filter="format">
+                <option value="any">Any (a mix)</option>
+                <option value="nickname_first">Nickname first (Red Silas)</option>
+                <option value="nickname_middle">Nickname in the middle (Silas &quot;Red&quot; Thatch)</option>
+                <option value="captain">Captain and surname</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="group">
+            <label class="label" for="filter-letter">Starts with</label>
+            <div class="ctl sel hd">
+              <select id="filter-letter" name="letter" data-filter="letter">
+                <option value="any">Any letter</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+                <option value="g">G</option>
+                <option value="h">H</option>
+                <option value="j">J</option>
+                <option value="l">L</option>
+                <option value="m">M</option>
+                <option value="p">P</option>
+                <option value="r">R</option>
+                <option value="s">S</option>
+                <option value="t">T</option>
+                <option value="w">W</option>
+              </select>
+            </div>
+          </div></div>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="true">
+                    <p class="results-empty">Press Generate Names for 8 pirate names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
+                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+    </main>
+    <script type="application/json" id="generator-config">{"title":"Pirate Name Generator","slug":"pirate-name-generator","filters":{"what":{"label":"Name for","options":["pirate","ship"],"optionLabels":{"pirate":"A pirate","ship":"A pirate ship"}},"gender":{"label":"Gender","options":["any","male","female"],"optionLabels":{"any":"Any"}},"format":{"label":"Pirate name format","options":["any","nickname_first","nickname_middle","captain"],"optionLabels":{"any":"Any (a mix)","nickname_first":"Nickname first (Red Silas)","nickname_middle":"Nickname in the middle (Silas \"Red\" Thatch)","captain":"Captain and surname"}},"letter":{"label":"Starts with","options":["any","b","c","g","h","j","l","m","p","r","s","t","w"],"optionLabels":{"any":"Any letter","a":"A","b":"B","c":"C","d":"D","e":"E","f":"F","g":"G","h":"H","i":"I","j":"J","k":"K","l":"L","m":"M","n":"N","o":"O","p":"P","q":"Q","r":"R","s":"S","t":"T","u":"U","v":"V","w":"W","x":"X","y":"Y","z":"Z"}}},"startsWith":"letter","recipe":"switch","on":"what","cases":{"ship":{"recipe":"template","template":["The [shipAdj] [shipNoun]","The [shipNoun]'s Revenge","The [shipAdj] [shipNoun]","[first.female]'s Revenge","The [shipNoun] of [first.female]"]},"pirate":{"recipe":"switch","on":"format","cases":{"nickname_first":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[nick] [first]"}},"default":{"recipe":"template","template":"[nick] [first.{gender}]"}},"nickname_middle":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"[first] \"[nick]\" [surnames]"}},"default":{"recipe":"template","template":"[first.{gender}] \"[nick]\" [surnames]"}},"captain":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":"Captain [first] [surnames]"}},"default":{"recipe":"template","template":"Captain [first.{gender}] [surnames]"}},"any":{"recipe":"switch","on":"gender","cases":{"any":{"recipe":"template","template":["[nick] [first]","[first] \"[nick]\" [surnames]","Captain [first] [surnames]"]}},"default":{"recipe":"template","template":["[nick] [first.{gender}]","[first.{gender}] \"[nick]\" [surnames]","Captain [first.{gender}] [surnames]"]}}}}},"data":{"first":{"male":["Silas","Jonah","Ezekiel","Tobias","Barnaby","Jasper","Elias","Abel","Gideon","Josiah","Ambrose","Caleb","Edmund","Hosea","Isaac","Lemuel","Nathaniel","Obadiah","Reuben","Thaddeus","William","Thomas","Samuel","Henry","Walter","Roger","Ned","Will","Kit","Davy"],"female":["Grace","Molly","Bess","Charlotte","Hester","Ruth","Martha","Polly","Sarah","Nell","Abigail","Maud","Jenny","Agnes","Eliza","Peg","Kate","Lettie","Hannah","Temperance","Patience","Prudence","Sal","Meg","Bridget","Liza","Rose","Constance","Judith","Tabitha"]},"surnames":["Thatch","Blackwell","Crane","Hawkins","Salt","Morrow","Lowe","Drake","Gallow","Rook","Teague","Quill","Harrow","Pike","Marlowe","Grimes","Sterne","Coffin","Carver","Strand","Wick","Brine","Danger","Mallet","Tarr","Hollis"],"nick":["Red","One-Eye","Peg-Leg","Black","Mad","Bloody","Grinning","Iron-Hook","Silver","Salty","Lucky","Gentleman","Barefoot","Scarface","Rum-Soaked","Long","Quick","Cutlass","Stormy","Laughing","Toothless","Gunpowder","Patch","Whistling"],"shipAdj":["Black","Crimson","Silver","Golden","Drunken","Wicked","Howling","Restless","Midnight","Rusted","Laughing","Bloody","Salt","Cursed","Wandering","Damned","Grey","Lucky","Sea","Storm"],"shipNoun":["Gull","Serpent","Widow","Shark","Kraken","Lantern","Raven","Fortune","Mermaid","Siren","Cutlass","Revenge","Wolf","Ghost","Dagger","Tide","Rose","Hound","Maiden"]},"letterSets":{"pirate|any|any":"bgjlmprst","pirate|any|nickname_first":"","pirate|any|nickname_middle":"jt","pirate|any|captain":"jt","pirate|male|any":"s","pirate|male|nickname_first":"","pirate|male|nickname_middle":"","pirate|male|captain":"","pirate|female|any":"blmps","pirate|female|nickname_first":"","pirate|female|nickname_middle":"","pirate|female|captain":"","ship|any|any":"cghlmrsw","ship|any|nickname_first":"cghlmrsw","ship|any|nickname_middle":"cghlmrsw","ship|any|captain":"cghlmrsw","ship|male|any":"cghlmrsw","ship|male|nickname_first":"cghlmrsw","ship|male|nickname_middle":"cghlmrsw","ship|male|captain":"cghlmrsw","ship|female|any":"cghlmrsw","ship|female|nickname_first":"cghlmrsw","ship|female|nickname_middle":"cghlmrsw","ship|female|captain":"cghlmrsw"}}</script>
+    <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
+    <script src="../lib/outline.js?v=bb3e12d8"></script>
+    <script>(function(){if(window.parent===window)return;var last=0;function send(){var h=Math.ceil(document.documentElement.getBoundingClientRect().height);if(h!==last){last=h;window.parent.postMessage({tngEmbedHeight:h},'*');}}if('ResizeObserver' in window)new ResizeObserver(send).observe(document.body);window.addEventListener('load',send);send();})();</script>
+</body>
+</html>
