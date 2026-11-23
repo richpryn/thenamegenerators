@@ -5,6 +5,7 @@
   "icon": "💅",
   "category": "biz_beauty",
   "published": "2026-11-07",
+  "updated": "2026-11-23",
   "description": "Nail salon and nail tech business names: catchy, cute, modern, luxury, aesthetic, from your town or with your name. Check each one is free.",
   "seoKeywords": "nail salon name generator, nail business name generator, nail salon names, nail salon name ideas, nail salon business names, nail business names with your name, nail tech names, nail studio names, cute nail business names, catchy nail salon names, funny nail salon names, luxury nail salon names, aesthetic nail business names, nail salon names for instagram, nail salon names in french, nail salon names that are not taken",
   "isPopular": false,
@@ -244,7 +245,25 @@
         "Glaze & Glory",
         "Talon Agency",
         "Mani Happy Returns",
-        "Mani Thanks"
+        "Mani Thanks",
+        "Half Moon Nails",
+        "Ten Tiny Canvases",
+        "Tip of the Day",
+        "Fresh Set Nails",
+        "Set & Seal",
+        "Pinkie Promise Nails",
+        "Coat Tails Nails",
+        "Hand to Toe",
+        "Off the Cuff Nails",
+        "Glossary Nails",
+        "Second Nature Nails",
+        "Seal the Deal Nails",
+        "Shine Time Nails",
+        "File Away",
+        "Top to Toe Nails",
+        "Golden Hands Nails",
+        "Cuticle Club",
+        "Lend a Hand Nails"
       ],
       "stems": [
         "Tip Top",
@@ -270,7 +289,18 @@
         "Glaze & Glory",
         "Polished Off",
         "Show of Hands",
-        "Many Hands"
+        "Many Hands",
+        "Half Moon",
+        "Fresh Set",
+        "Pinkie Promise",
+        "Off the Cuff",
+        "Coat Tails",
+        "Glossary",
+        "Hand to Toe",
+        "Second Nature",
+        "Set & Seal",
+        "Shine Time",
+        "Golden Hands"
       ],
       "trade": [
         "Nails",
@@ -299,7 +329,14 @@
         "Lacquer & Lattes",
         "Gloss & Gossip",
         "Paint & Polish",
-        "Mani & Mimosa"
+        "Mani & Mimosa",
+        "Cuticles & Coffee",
+        "Polish & Petals",
+        "Tips & Tea",
+        "Chrome & Coffee",
+        "Gloss & Gold",
+        "Buff & Bloom",
+        "Mani & Matcha"
       ]
     },
     "cute": {
@@ -343,7 +380,23 @@
         "Macaron",
         "Fairy Cake",
         "Gumdrop",
-        "Sundae"
+        "Sundae",
+        "Peaches",
+        "Cherry",
+        "Clover",
+        "Bunny",
+        "Lilac",
+        "Teacup",
+        "Pom Pom",
+        "Snowdrop",
+        "Primrose",
+        "Fudge",
+        "Peony",
+        "Honeybee",
+        "Pudding",
+        "Cherry Blossom",
+        "Pip",
+        "Duckling"
       ]
     },
     "modern": {
@@ -382,7 +435,11 @@
         "Gem",
         "Glitter",
         "Swirl",
-        "Spectrum"
+        "Spectrum",
+        "Lunula",
+        "Squoval",
+        "Gradient",
+        "Overlay"
       ]
     },
     "luxury": {
@@ -406,7 +463,17 @@
         "Le Petit Vernis",
         "Belle Laque",
         "Mains d'Or",
-        "Atelier Main Dorée"
+        "Atelier Main Dorée",
+        "Petites Mains",
+        "La Belle Main",
+        "Main Douce",
+        "Atelier Doré",
+        "Maison Nacre",
+        "Atelier Nacre",
+        "Vernis Velours",
+        "Le Salon Vernis",
+        "Nacre et Vernis",
+        "Maison Main Douce"
       ],
       "adj": [
         "Velvet",
@@ -431,7 +498,17 @@
         "Kensington",
         "Ashcombe",
         "Montague",
-        "Fitzroy"
+        "Fitzroy",
+        "Champagne",
+        "Porcelain",
+        "Chantilly",
+        "Damask",
+        "Regent",
+        "Marylebone",
+        "Hampstead",
+        "Camellia",
+        "Orchid",
+        "Alabaster"
       ],
       "trade": [
         "Nail Rooms",
@@ -498,7 +575,22 @@
         "Cinnamon",
         "Maple",
         "Birch",
-        "Heather"
+        "Heather",
+        "Lavender",
+        "Rosehip",
+        "Cloud",
+        "Mist",
+        "Sorbet",
+        "Coral",
+        "Sea Glass",
+        "Blush",
+        "Terracotta",
+        "Matcha",
+        "Pistachio",
+        "Apricot",
+        "Fawn",
+        "Bramble",
+        "Sundew"
       ]
     },
     "local": {
@@ -522,7 +614,12 @@
         "Market",
         "Street",
         "Cross",
-        "Common"
+        "Common",
+        "Crescent",
+        "Terrace",
+        "Wharf",
+        "Walk",
+        "Mill"
       ],
       "trade": [
         "Nails",
@@ -604,7 +701,13 @@
         "Natural Nails",
         "Builder Gel",
         "Nail Extensions",
-        "Mani-Pedis"
+        "Mani-Pedis",
+        "Nail Care",
+        "Gel Polish",
+        "Nail Artistry",
+        "Manicure Studio",
+        "Signature Nails",
+        "Mobile Manicures"
       ],
       "pre": [
         "Maison {name} Nails",

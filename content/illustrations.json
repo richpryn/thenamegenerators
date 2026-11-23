@@ -437,6 +437,10 @@
     "gingerbread_house": "snowman",
     "quiz_team": "bunting",
     "gritter": "bunting",
-    "snow_removal_business": "toolbox"
+    "snow_removal_business": "toolbox",
+    "horse": "dog",
+    "ice_mage": "dragon",
+    "hamster": "dog",
+    "guinea_pig": "dog"
   }
 }

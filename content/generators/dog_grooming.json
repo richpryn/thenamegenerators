@@ -5,6 +5,7 @@
   "icon": "🐩",
   "category": "biz_care",
   "published": "2026-11-07",
+  "updated": "2026-11-23",
   "description": "Dog grooming business names for a salon, a home studio or a mobile van: catchy, cute, funny, classy, modern, from your town or from your name.",
   "seoKeywords": "dog grooming name generator, dog grooming business names, dog grooming business name ideas, dog grooming business name generator, dog groomer business names, pet grooming business names, dog grooming salon name generator, mobile dog grooming business name ideas, cute dog grooming business names, catchy dog grooming business names, funny dog grooming business names, unique dog grooming business names, classy dog grooming names, dog grooming names not taken, dog grooming shop names",
   "isPopular": false,
@@ -238,7 +239,6 @@
         "Neat Feet Grooming",
         "Furst Class Grooming",
         "Pupper Cuts",
-        "Mutt Cuts",
         "Fresh Prints Grooming",
         "Pooch Perfect",
         "Brush Strokes Dog Grooming",
@@ -263,7 +263,25 @@
         "The Shampoodle",
         "Doodle Doos",
         "Fetching Fur Grooming",
-        "Sleek & Chic Dog Grooming"
+        "Sleek & Chic Dog Grooming",
+        "Groom Service",
+        "Bubble & Squeak Dog Grooming",
+        "Paws & Reflect Grooming",
+        "Paws for Thought Grooming",
+        "Sit, Stay, Shine",
+        "In Snip Shape",
+        "Shear Delight Grooming",
+        "Shear Joy Dog Grooming",
+        "Clean Cut Canines",
+        "Wet Nose Dog Spa",
+        "Every Dog's Day Spa",
+        "Wash Your Paws Grooming",
+        "Tail Waggers Grooming",
+        "Dog Days Grooming",
+        "Bark & Bubbles",
+        "Shampoo & Chew",
+        "Tidy Paws Grooming",
+        "Lead the Way Grooming"
       ],
       "left": [
         "Wash",
@@ -280,7 +298,13 @@
         "Splash",
         "Soak",
         "Buff",
-        "Spritz"
+        "Spritz",
+        "Shampoo",
+        "Groom",
+        "Shear",
+        "Pamper",
+        "Tidy",
+        "Towel"
       ],
       "right": [
         "Wag",
@@ -290,9 +314,13 @@
         "Strut",
         "Shine",
         "Play",
-        "Go",
         "Sparkle",
-        "Prance"
+        "Prance",
+        "Trot",
+        "Bounce",
+        "Zoom",
+        "Snuggle",
+        "Fetch"
       ],
       "thing": [
         "Suds",
@@ -302,7 +330,11 @@
         "Soap",
         "Snips",
         "Combs",
-        "Brushes"
+        "Brushes",
+        "Shampoo",
+        "Clippers",
+        "Towels",
+        "Scissors"
       ],
       "dogThing": [
         "Pups",
@@ -312,7 +344,10 @@
         "Wags",
         "Whiskers",
         "Tails",
-        "Woofs"
+        "Woofs",
+        "Snouts",
+        "Noses",
+        "Wiggles"
       ],
       "punWord": [
         "Pawfection",
@@ -327,7 +362,17 @@
         "Furst Class",
         "Pawdicure",
         "Groomtown",
-        "Scrubadub"
+        "Scrubadub",
+        "Pawradise",
+        "Shear Bliss",
+        "Shear Delight",
+        "Furtastic",
+        "Waggington",
+        "Clean Cut",
+        "Snip Shape",
+        "Top Dog",
+        "Wet Nose",
+        "Tail Waggers"
       ]
     },
     "cute": {
@@ -350,7 +395,11 @@
         "Cheery",
         "Merry",
         "Teddy",
-        "Dinky"
+        "Dinky",
+        "Plucky",
+        "Dandy",
+        "Chirpy",
+        "Smiley"
       ],
       "noun": [
         "Paws",
@@ -358,7 +407,9 @@
         "Pups",
         "Pooch",
         "Whiskers",
-        "Pawprints"
+        "Pawprints",
+        "Snouts",
+        "Wags"
       ],
       "sweet": [
         "Honey",
@@ -380,7 +431,17 @@
         "Marshmallow",
         "Cupcake",
         "Jellybean",
-        "Sugar"
+        "Sugar",
+        "Pippin",
+        "Treacle",
+        "Waffle",
+        "Pumpkin",
+        "Clover",
+        "Nutmeg",
+        "Custard",
+        "Teacake",
+        "Fudge",
+        "Maple"
       ],
       "pairA": [
         "Bubbles",
@@ -391,7 +452,10 @@
         "Cuddles",
         "Biscuits",
         "Ribbons",
-        "Puddles"
+        "Puddles",
+        "Wiggles",
+        "Brushes",
+        "Pompoms"
       ],
       "pairB": [
         "Bows",
@@ -403,7 +467,11 @@
         "Curls",
         "Kisses",
         "Puffs",
-        "Biscuits"
+        "Biscuits",
+        "Snuffles",
+        "Snoots",
+        "Pompoms",
+        "Wiggles"
       ]
     },
     "funny": {
@@ -418,7 +486,6 @@
         "No More Stinky Dog",
         "Sudsy Mutts",
         "Pooch Smooch",
-        "Nailed It Dog Grooming",
         "Smell Ya Later Grooming",
         "Ruff Around the Edges",
         "Bad Hair Day Dogs",
@@ -429,7 +496,19 @@
         "Tails From the Tub",
         "Fancy Schmancy Dogs",
         "Pupcakes Grooming",
-        "The Fur Will Fly"
+        "The Fur Will Fly",
+        "Mucky Pups Grooming",
+        "Stinky to Swanky",
+        "Bath Dodgers",
+        "Shaggy No More",
+        "Hairy Situation Grooming",
+        "Mud Busters Dog Grooming",
+        "The Wet Dog Shake",
+        "Scrubs & Tubs",
+        "Pawsitively Fresh",
+        "Mud Season Grooming",
+        "Brushing Up Nicely",
+        "Tangle Rescue Grooming"
       ],
       "adj": [
         "Muddy",
@@ -443,7 +522,13 @@
         "Hairy",
         "Smelly",
         "Messy",
-        "Fluffed-Up"
+        "Fluffed-Up",
+        "Whiffy",
+        "Tangly",
+        "Rumpled",
+        "Bedraggled",
+        "Pongy",
+        "Windswept"
       ],
       "dog": [
         "Mutt",
@@ -453,7 +538,10 @@
         "Doggy",
         "Mutts",
         "Pups",
-        "Hounds"
+        "Hounds",
+        "Scamp",
+        "Scamps",
+        "Doggies"
       ],
       "before": [
         "Muddy",
@@ -465,7 +553,12 @@
         "Mucky",
         "Messy",
         "Grubby",
-        "Hairy"
+        "Hairy",
+        "Whiffy",
+        "Tangly",
+        "Rumpled",
+        "Bedraggled",
+        "Windswept"
       ],
       "after": [
         "Fluffy",
@@ -477,7 +570,12 @@
         "Fancy",
         "Dazzling",
         "Handsome",
-        "Sparkling"
+        "Sparkling",
+        "Gleaming",
+        "Swanky",
+        "Snazzy",
+        "Glossy",
+        "Dashing"
       ]
     },
     "luxury": {
@@ -497,7 +595,14 @@
         "Elegant",
         "Velvet",
         "Silken",
-        "Glossy"
+        "Glossy",
+        "Noble",
+        "Lavish",
+        "Majestic",
+        "Royal",
+        "Plush",
+        "Swanky",
+        "Opulent"
       ],
       "noun": [
         "Pooch",
@@ -507,7 +612,12 @@
         "Canine",
         "Spaniel",
         "Terrier",
-        "Poodle"
+        "Poodle",
+        "Whippet",
+        "Setter",
+        "Retriever",
+        "Pointer",
+        "Beagle"
       ],
       "word": [
         "Velvet",
@@ -533,7 +643,15 @@
         "Ashby",
         "Beaumont",
         "Fairfax",
-        "Pembroke"
+        "Pembroke",
+        "Richmond",
+        "Hampstead",
+        "Marylebone",
+        "Ashcombe",
+        "Linden",
+        "Hartley",
+        "Chantilly",
+        "Primrose"
       ],
       "trade": [
         "Dog Spa",
@@ -543,7 +661,9 @@
         "Grooming Atelier",
         "Dog Grooming",
         "Grooming Salon",
-        "Grooming Lounge"
+        "Grooming Lounge",
+        "Grooming Rooms",
+        "Dog Atelier"
       ],
       "french": [
         "Le Chien",
@@ -551,7 +671,11 @@
         "Chez Chien",
         "Bijou Chien",
         "Maison du Chien",
-        "Le Chien Chic"
+        "Le Chien Chic",
+        "Le Beau Chien",
+        "Chien Charmant",
+        "Maison Toilettage",
+        "Le Chien Doré"
       ]
     },
     "modern": {
@@ -593,7 +717,14 @@
         "Shine",
         "Tail",
         "Paw",
-        "Mane"
+        "Mane",
+        "Clipper",
+        "Fettle",
+        "Scrub",
+        "Spritz",
+        "Ruff",
+        "Wag",
+        "Tousle"
       ]
     },
     "mobile": {
@@ -612,7 +743,11 @@
         "Wags",
         "Doggy Spa",
         "Pups",
-        "Clippers"
+        "Clippers",
+        "Snips",
+        "Brushes",
+        "Tubs",
+        "Pamper"
       ],
       "end": [
         "on Wheels",
@@ -622,7 +757,9 @@
         "on the Road",
         "at Your Door",
         "to Your Door",
-        "Express"
+        "Express",
+        "Around Town",
+        "on Your Doorstep"
       ],
       "trade": [
         "Mobile Dog Grooming",
@@ -648,7 +785,14 @@
         "Pooch Wagon",
         "The Pampering Van",
         "Driveway Dog Grooming",
-        "The Fluff Truck"
+        "The Fluff Truck",
+        "The Bubble Van",
+        "Paws on Wheels",
+        "The Fluff Van",
+        "Groom on the Go",
+        "The Suds Van",
+        "Doorstep Dog Spa",
+        "The Tub Truck"
       ]
     },
     "local": {
@@ -664,7 +808,12 @@
         "Wags",
         "Hounds",
         "Whiskers",
-        "Pawprints"
+        "Pawprints",
+        "Barks",
+        "Snips",
+        "Woofs",
+        "Muddy Paws",
+        "Snouts"
       ]
     }
   },

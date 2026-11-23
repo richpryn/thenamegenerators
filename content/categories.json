@@ -420,7 +420,8 @@
       "game_of_thrones",
       "elden_ring",
       "monster",
-      "spell"
+      "spell",
+      "ice_mage"
     ],
     "eyebrow": "Fantasy characters and creatures",
     "approach": {
@@ -1057,7 +1058,10 @@
       "warrior_cat",
       "dog",
       "cat",
-      "pony"
+      "pony",
+      "horse",
+      "hamster",
+      "guinea_pig"
     ],
     "eyebrow": "Pets, farm animals and dinosaurs",
     "approach": {
