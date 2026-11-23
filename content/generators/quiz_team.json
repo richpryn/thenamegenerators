@@ -2016,7 +2016,20 @@
       "tagline": "A team name for the pub quiz, the table quiz or trivia night, from Quiz Pro Quo to Pharaoh Enough."
     },
     "intro": "The team name is the first answer the quizmaster reads out, so make it a good one. This **quiz team name generator** gives funny pub quiz and trivia team names, with quiz in the name or themed on music, film, sport, history, work or family, for a pair, a four or a whole table.",
-    "sections": [],
+    "sections": [
+      {
+        "heading": "Eight good quiz team names",
+        "content": "<p>All eight came from the generator, one from each theme:</p><ul><li><strong>Quizinformation</strong>: quiz squeezed into a word everyone knows.</li><li><strong>Fact Attack</strong>: short and confident: easy for the quizmaster to read out.</li><li><strong>Treble Makers</strong>: a music pun on troublemakers, for a team that knows its music round.</li><li><strong>Plot Thickeners</strong>: for the film buffs.</li><li><strong>Transfer Window Shoppers</strong>: a football joke for a team that's strong on sport.</li><li><strong>Feudal Attraction</strong>: a history pun with a wink.</li><li><strong>Meeting Could Have Been an Email</strong>: an office team name everyone at work will recognise.</li><li><strong>Sshh, Conferring</strong>: for a team of four that argues over every answer.</li></ul>"
+      },
+      {
+        "heading": "What makes a good quiz team name",
+        "content": "<p>The quizmaster reads every team name out at least twice: when the scores go up and again at the end. So the best names are easy to say, get a laugh in the room, and still sound good if you come last. Self-mocking names like Last Place Champions or Wrong Again take the pressure off, while confident ones like Fact Attack set you up for a fall if you don't win.</p><p>Puns work best when they change one word in a phrase everyone knows, as in Quiz Pro Quo or Gone with the Win. If the quizmaster has to stop and work it out, it's probably one change too many.</p>"
+      },
+      {
+        "heading": "Matching the name to the night",
+        "content": "<ul><li><strong>Theme nights.</strong> If the quiz has a theme, such as music, film or sport, choose that theme for a name that fits the evening.</li><li><strong>Work quizzes.</strong> Office jokes about meetings, lanyards and the buffet go down well. Keep it friendly, as your manager will hear it.</li><li><strong>Family and school quizzes.</strong> Keep the jokes clean and simple so the children get them too. Choose Family &amp; kids.</li><li><strong>Team size.</strong> Names that count the team, like Tri Hard or Four Gone Conclusion, are easy to remember. Choose your team size for those.</li></ul>"
+      }
+    ],
     "faqs": [
       {
         "question": "What are some funny quiz team names with quiz in the title?",
@@ -2025,6 +2038,18 @@
       {
         "question": "What is a good quiz team name for 2 people?",
         "answer": "Play on there being two of you: Better Halves, Two Clever by Half or One Pen Between Us. Choose Two of us under Team size, and add a theme if your quiz has one."
+      },
+      {
+        "question": "What is a good team name for a work quiz?",
+        "answer": "Something every office will recognise: Meeting Could Have Been an Email, Lanyard Legends or Just Here for the Buffet. Choose Work for more, and keep it friendly, as the whole company will hear it."
+      },
+      {
+        "question": "What is a good quiz team name for a big group?",
+        "answer": "Lean into the numbers: Too Many Cooks, Half a Dozen Super Whizz Kids or Six Quiz Kids. Choose Five or more under Team size."
+      },
+      {
+        "question": "Should I keep the same quiz team name every week?",
+        "answer": "Many regular teams do, so the quizmaster and other teams get to know you. Others change it every week for a new joke. Both are fine, though a regular name makes it easier to track your scores over the season."
       }
     ]
   }
