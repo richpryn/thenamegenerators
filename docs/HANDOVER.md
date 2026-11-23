@@ -18,8 +18,8 @@ Each session keeps its own section. Read the whole file at the start of a sessio
 - **Homepage** has an "Every name has a story" Library band (17 Nov), built by `libraryHomeHtml()` in build-pages.js.
 - **Generator pages** show "How it works" with nameSource, an "Understanding these names" box from the library, a Naming guide box and a Name lists box, plus 8 hub links (no longer the whole hub).
 
-### In progress (16 Nov)
-Ten approved generators are being built by agents in this session's scratchpad: gingerbread_house, quiz_team, hamster, guinea_pig, horse, ice_mage, book_club, running_club, gritter and snow_removal_business. If this session is gone before they ship, rebuild them in a fresh session from the Site Jobs ideas jobs of 9 and 16 Nov.
+### Shipped 23 Nov
+The ten ideas approved on 9 and 16 Nov are live: book_club, running_club, gingerbread_house, quiz_team, gritter, snow_removal_business, horse, ice_mage, hamster and guinea_pig. Weekly names went to nail_salon, dog_grooming and orc. Articles and drawings were requested from the content and design sessions. No new-idea research this week (none pending approval).
 
 ### Backlog (approved by Rich; build one a week)
 - **Franchise and character pages:** WoW Dwarf, WoW Tauren, funny WoW names by class, FF14 Viera, Transformers-style, funny Marvel Rivals, Sims names. Write these "in the style of", with original names only.
