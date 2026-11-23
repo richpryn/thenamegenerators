@@ -1467,6 +1467,75 @@
             }
           }
         }
+      },
+      "default": {
+        "recipe": "switch",
+        "on": "format",
+        "cases": {
+          "any": {
+            "recipe": "template",
+            "template": [
+              "[pun.us.song]",
+              "[pun.us.song]",
+              "[pun.us.song] – [why.song]",
+              "[pun.us.song] – [why.song]",
+              "[pun.us.film]",
+              "[pun.us.film]",
+              "[pun.us.film] – [why.film]",
+              "[pun.us.film] – [why.film]",
+              "[pun.us.phrase]",
+              "[pun.us.phrase]",
+              "[pun.us.phrase] – [why.phrase]",
+              "[pun.us.phrase] – [why.phrase]",
+              "[pun.both.song]",
+              "[pun.both.song]",
+              "[pun.both.song] – [why.song]",
+              "[pun.both.song] – [why.song]",
+              "[pun.both.film]",
+              "[pun.both.film]",
+              "[pun.both.film] – [why.film]",
+              "[pun.both.film] – [why.film]",
+              "[pun.both.phrase]",
+              "[pun.both.phrase]",
+              "[pun.both.phrase] – [why.phrase]",
+              "[pun.both.phrase] – [why.phrase]"
+            ]
+          },
+          "name": {
+            "recipe": "template",
+            "template": [
+              "[pun.us.song]",
+              "[pun.us.song]",
+              "[pun.us.film]",
+              "[pun.us.film]",
+              "[pun.us.phrase]",
+              "[pun.us.phrase]",
+              "[pun.both.song]",
+              "[pun.both.song]",
+              "[pun.both.film]",
+              "[pun.both.film]",
+              "[pun.both.phrase]",
+              "[pun.both.phrase]"
+            ]
+          },
+          "why": {
+            "recipe": "template",
+            "template": [
+              "[pun.us.song] – [why.song]",
+              "[pun.us.song] – [why.song]",
+              "[pun.us.film] – [why.film]",
+              "[pun.us.film] – [why.film]",
+              "[pun.us.phrase] – [why.phrase]",
+              "[pun.us.phrase] – [why.phrase]",
+              "[pun.both.song] – [why.song]",
+              "[pun.both.song] – [why.song]",
+              "[pun.both.film] – [why.film]",
+              "[pun.both.film] – [why.film]",
+              "[pun.both.phrase] – [why.phrase]",
+              "[pun.both.phrase] – [why.phrase]"
+            ]
+          }
+        }
       }
     }
   },
