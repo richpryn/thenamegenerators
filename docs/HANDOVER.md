@@ -197,10 +197,10 @@ Serve with `python3 -m http.server 8765`, then use Playwright (preinstalled) at 
 
 ### Recent work
 - Name lists (23 Nov): rows are two lines on phones. On desktop (≥ 900px wide and ≥ 640px tall) a slim sticky filter bar sits inside `<div class="nl-body">`. `.nl-item` stays as a JS hook for lib/lists.js.
-- New drawings: pony, trainer (running_club). Existing drawings were mapped for book_club (storybook), quiz_team (lightbulb), horse (pony) and ice_mage (wizard-hat).
+- New drawings: pony, trainer (running_club), and on 23 Nov gingerbread-house, gritter, hamster, guinea-pig and snow-shovel (snow_removal_business). Existing drawings were mapped for book_club (storybook), quiz_team (lightbulb), horse (pony) and ice_mage (wizard-hat).
 
 ### Waiting on Rich (on Site Jobs)
-- **Five drawings awaiting approval:** gingerbread-house, gritter, hamster, guinea-pig, snow-shovel (for snow_removal_business). The SVGs and target generator keys are in `docs/redesign/pending-motifs.json`, and the sheet he saw is `docs/redesign/img/pending-motifs-23nov.png`. On a yes, copy each into MOTIFS, map the generator, build, render share images, push, and tick `tng-new-pages-art-nov23` on Site Jobs. If he asks for changes, redraw and show him again.
+- None for the five 23 Nov drawings: Rich approved them and they are live (gingerbread-house, gritter, hamster, guinea-pig, snow-shovel).
 - Art for lake, swamp, dungeon, dunes and compass rose, which are still in the old line style (`tng-art-line-places`).
 - Warrior cat art (`tng-warrior-cat-art`). The page uses the black cat for now.
 
