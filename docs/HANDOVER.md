@@ -29,13 +29,13 @@ The ten ideas approved on 9 and 16 Nov are live: book_club, running_club, ginger
 - **Naming Library phase 4:** business, brand and stage names.
 
 ### Scheduled task
-"TNG weekly generator and refresh" (trig_01KF7NvrpuE69hqvVxvEBo5z) runs Mondays at 07:56 London time. It fires into the long Generator Builder chat (session_013n1Brs6jN7WNjnPp4aVHzc). Each run:
-- builds one backlog generator
+"TNG weekly generator and refresh" (trig_01UYGpoiFjKN3RdzZbMC6C6M) runs Mondays at 07:56 London time and starts a fresh session each time (since 23 Nov; the old trigger, trig_01KF7NvrpuE69hqvVxvEBo5z, which fired into the long chat, is disabled). Each run:
+- builds one approved backlog generator
 - adds 50+ names to 3 pages, at least 2 of them business pages, oldest "updated" first
-- researches 3–5 ideas into a `tng-ideas-<date>` Site Jobs entry
-- ships and notifies the content and design sessions
+- researches ideas into a `tng-ideas-<date>` Site Jobs entry, skipped while one is still awaiting approval
+- ships, notifies the content and design sessions, and adds a line here
 
-To stop it re-reading this long chat, Rich could switch it to start a fresh session each time (update_trigger, create_new_session_on_fire). It's self-contained enough.
+Approval: Rich ticks the ideas job, or tells a TNG session.
 
 ### Decisions
 - Fan pages use original names only, and say they're fan-made and unofficial. Canon ban lists are built from the wikis.
