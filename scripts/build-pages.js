@@ -1009,6 +1009,7 @@ const STATIC_SHARE_PAGES = [
   { name: 'business-name-checker', title: 'Business Name Checker', line: 'Is your business name taken? Company registers, domains, trade marks and handles in one go.', motif: 'name-checker' },
   { name: 'about', title: 'About The Name Generators', line: 'Why this site exists.', motif: 'note' },
   { name: 'privacy', title: 'Privacy and cookies', line: 'What this site keeps, and how to change your mind.', motif: 'quill' },
+  { name: 'embed-name-generators', title: 'Embed a Name Generator', line: 'Put any of our generators on your own site, free and with no ads.', motif: 'quill' },
 ];
 
 const NAME_TOOLS = [
