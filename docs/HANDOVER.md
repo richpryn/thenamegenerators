@@ -44,6 +44,11 @@ From 23 Nov, Rich runs ONE TNG session for generators, content and design. Read 
 ### Shipped 23 Nov
 The ten ideas approved on 9 and 16 Nov are live: book_club, running_club, gingerbread_house, quiz_team, gritter, snow_removal_business, horse, ice_mage, hamster and guinea_pig. Weekly names went to nail_salon, dog_grooming and orc. Articles and drawings were requested from the content and design sessions. No new-idea research this week (none pending approval).
 
+### 23 Nov (afternoon): internal links and embeds
+- **Internal links (live):** an audit of the built pages found every page within 2 clicks of the homepage and every generator with 4+ links from other pages, but 51 generators had no link from any other article's *text* (Dog, Cat, Horse, Warhammer 40k, Elden Ring, D&D Fantasy among them). About 100 in-text links added across 91 articles, following the CONTENT.md first-mention rule. When adding a generator, link it from 1–2 related articles too.
+- **Embeds (on branch `claude/wonderful-maxwell-k8n8wh`, waiting for Rich's yes; Site Jobs `tng-embed-approve`):** `scripts/embed-pages.js` builds `embed/<slug>.html` for every generator (card only, noindex, canonical to the real page, no ads or analytics), a "Put this generator on your website" box under each byline, `embed-name-generators.html` (picker, preview, code, FAQs; in the sitemap) and `lib/embed.js` (optional host script that resizes the frame). The credit link sits outside the iframe because only that one counts as a backlink; its anchor is the site name. To ship: merge the branch into main, rebuild, run share images, push.
+- Dog and Cat pages have no article sections (2 FAQs each). Worth full articles: both are big searches.
+
 ### Backlog (approved by Rich; build one a week)
 - **Franchise and character pages:** WoW Dwarf, WoW Tauren, funny WoW names by class, FF14 Viera, Transformers-style, funny Marvel Rivals, Sims names. Write these "in the style of", with original names only.
 - **Titles:** knight title, villain title, nickname, dragon epithet, royal title, jester, hero, black metal band.
