@@ -79,3 +79,59 @@ Privacy-page contact method (`tng-privacy-contact`: hello@thenamegenerators.com 
 
 ### Scheduled tasks
 None are bound to this session. The weekly work arrives through the Builder's Monday task (see above).
+
+## Design (layout, CSS, markup templates and drawings; 23 Nov 2026)
+
+### What this covers
+How the site looks: `styles/site.css`, the shared markup in `scripts/layout.js`, page templates in `scripts/build-pages.js` / `list-pages.js` / `reference-pages.js`, the drawings, and share images. The design spec is in `docs/redesign/` (README there lists the files). The design is called "Grown Up B": warm paper, black marker outlines, a yellow highlighter, blue ballpoint notes. A black offset shadow means "you can tap this".
+
+### CSS (styles/site.css, one file)
+- Tokens are at the top in `:root`: `--paper` (page), `--card`, `--ink`, `--hi` (yellow), `--pen` (blue), `--muted`, `--rule`. Fonts are `--head` (Schibsted Grotesk), `--body` (Newsreader) and `--hand` (Kalam), all self-hosted in /fonts.
+- Spacing comes only from `--s1`…`--s8` (4 · 8 · 12 · 16 · 24 · 32 · 48 · 64). Breakpoints are phone < 640, tablet 640–1023, desktop ≥ 1024. The source is `docs/redesign/SPACING.md`.
+- Sections are marked `/* ---------- Name ---------- */`: header, title block, generator card, cards, home, hubs, guides, business, Naming Library, name lists, and the tools. Add new blocks at the end with a dated heading.
+- Hand-drawn outlines: give an element class `hd` and `lib/outline.js` draws a wobbly border on it. `sheet` is the cream card; `tap` adds the offset shadow.
+- The header hides "Home" at ≥ 1024px and tightens gaps at 1024–1339px so all the nav items fit. Re-check 1024px whenever a nav item is added.
+- `[hidden]{display:none!important}` is global, so filters can hide rows that use display:grid or flex.
+- Every page links `site.css?v=<hash>` (stampAssets in layout.js), so every built page changes when the CSS changes. That's expected.
+
+### Shared markup (scripts/layout.js)
+- `headAssets`, `bodyScripts`, `siteHeader`, `searchForm`, `siteFooter`. `MENU` holds the groups shown in the Categories mega panel.
+- Drawings in pages:
+  - `doodle(id)` is a drawing in the title row or a card.
+  - `sectionBreak(id)` is a small drawing between sections.
+  - `endMark(id)` sits at the end of the article.
+  - `svgSprite(ids)` must list every motif a page uses.
+- Nav flags: `setNav({ guides, library, names })` in build-pages.js turns on the Guides, Library and Name lists nav items. Each flag is on when that content exists (guides, `content/reference/`, `content/lists/`). Hand-written pages (index, about, all-generators, privacy) use `<!-- BUILD:x -->` markers that fillMarkers fills; index.html main is one `<!-- BUILD:home -->`.
+- Hub pages take optional fields (eyebrow, art, approach, tips, examples). They're documented in `docs/redesign/HUBS.md`.
+
+### Drawings
+- Every drawing is in `lib/illustrations.js` `MOTIFS`. Each entry is either:
+  - `svg`: inline, drawn on a 48×48 grid inside the shared GROUP. The GROUP sets the stroke to #1e1c18, width 1.8, with round caps and joins. Fills use only `#fffcf4` (cream) and `#efc84a` (yellow), with black for eyes and dots. Use thinner strokes (1.1–1.4) for detail lines.
+  - `img`: Rich's own art in `images/motifs/<id>.webp?v=N`. These are 240–320px WebP files, cut from his sheets with PIL and compressed. Bump `?v` when you replace a file.
+- Which drawing each page uses is in `content/illustrations.json`: `categories` maps hub key to motif, and `generators` maps generator key to motif. A generator without its own drawing uses its hub's drawing. Add a new page's entry with setdefault and keep hub drawings as fallbacks.
+- To add a motif:
+  1. Add `"id": { name: "…", svg: "…" }` to MOTIFS. Keep ids kebab-case.
+  2. Set the generator to the new id in illustrations.json.
+  3. Run `node scripts/build-pages.js`, then `NODE_PATH=$(npm root -g) node scripts/share-images.js`.
+  4. Check the page at 390px and 1280px.
+  5. Commit.
+- Check new SVGs at 160, 56 and 36px before showing Rich. Small details vanish at 36px, and lines must not stick out of shapes. Rich caught laces floating above a trainer. Avoid brand marks: no swooshes and no three stripes.
+- **Approval:** Rich approves every new drawing before it goes live. Show him a PNG sheet of each drawing at 3 sizes (send it as a file). Map to existing approved drawings without asking when one fits. When he names a specific object ("running club should be a trainer"), drawing it and putting it live straight away is fine; show him the result. He has rejected drawings before ("weren't quite good enough") and sent his own art instead, so offer that option.
+
+### Share images
+`scripts/share-images.js` renders a 1200×630 PNG per page into `images/share/`. It uses the paper card, the title with a highlighter swash, and the motif at 240px. It writes `images/share/manifest.json` with hashes, so a run only redraws changed pages. Run it after any drawing or title change: `NODE_PATH=$(npm root -g) timeout 500 node scripts/share-images.js`. `STATIC_SHARE_PAGES` in build-pages.js covers the non-generator pages (business, business-name-checker).
+
+### Checking
+Serve with `python3 -m http.server 8765`, then use Playwright (preinstalled) at 360, 390, 1024, 1280 and 1440px. Look for horizontal overflow (`scrollWidth > width`), words split mid-word, and the header fitting at 1024px. A full sweep of all pages takes 10–20 minutes, so run it in the background. After merging others' pushes: if conflicts are only in built HTML, take theirs, rebuild, re-run share images, and `git grep '^<<<<<<< '` before committing. Never commit conflict markers (this once broke images/share/manifest.json).
+
+### Recent work
+- Name lists (23 Nov): rows are two lines on phones. On desktop (≥ 900px wide and ≥ 640px tall) a slim sticky filter bar sits inside `<div class="nl-body">`. `.nl-item` stays as a JS hook for lib/lists.js.
+- New drawings: pony, trainer (running_club). Existing drawings were mapped for book_club (storybook), quiz_team (lightbulb), horse (pony) and ice_mage (wizard-hat).
+
+### Waiting on Rich (on Site Jobs)
+- **Five drawings awaiting approval:** gingerbread-house, gritter, hamster, guinea-pig, snow-shovel (for snow_removal_business). The SVGs and target generator keys are in `docs/redesign/pending-motifs.json`, and the sheet he saw is `docs/redesign/img/pending-motifs-23nov.png`. On a yes, copy each into MOTIFS, map the generator, build, render share images, push, and tick `tng-new-pages-art-nov23` on Site Jobs. If he asks for changes, redraw and show him again.
+- Art for lake, swamp, dungeon, dunes and compass rose, which are still in the old line style (`tng-art-line-places`).
+- Warrior cat art (`tng-warrior-cat-art`). The page uses the black cat for now.
+
+### Open questions
+- None for Rich. On narrow desktops (900–1179px) the name-list filter bar wraps to two rows (106px) on lists with the Origin filter. It's acceptable, but it could be slimmer.
