@@ -434,13 +434,13 @@
     "pony": "pony",
     "book_club": "storybook",
     "running_club": "trainer",
-    "gingerbread_house": "snowman",
+    "gingerbread_house": "gingerbread-house",
     "quiz_team": "lightbulb",
-    "gritter": "bunting",
-    "snow_removal_business": "toolbox",
+    "gritter": "gritter",
+    "snow_removal_business": "snow-shovel",
     "horse": "pony",
     "ice_mage": "wizard-hat",
-    "hamster": "dog",
-    "guinea_pig": "dog"
+    "hamster": "hamster",
+    "guinea_pig": "guinea-pig"
   }
 }
