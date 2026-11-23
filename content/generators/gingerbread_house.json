@@ -1118,7 +1118,28 @@
       "tagline": "A name for the sign over the door, or for your team in the gingerbread house competition."
     },
     "intro": "Every gingerbread house deserves a name on its little sign, from cosy Gumdrop Cottage to the slightly nibbled Wuthering Bites. This **gingerbread house name generator** names the house itself or your team for a gingerbread house competition, in cute, funny, grand or spooky styles, with no brand-name sweets.",
-    "sections": [],
+    "sections": [
+      {
+        "heading": "Eight good gingerbread house names",
+        "content": "<p>All eight came from the generator, four for the house and four for the team:</p><ul><li><strong>Macaroon Lodge</strong>: cute and short enough to pipe on a sign.</li><li><strong>Treacle Abbey</strong>: a grand name for a showpiece with towers and arched windows.</li><li><strong>Subsidence Cottage</strong>: for a house that has started to lean. Every judge will know why.</li><li><strong>Gingerdread Manor</strong>: a spooky house, with the pun in the first word.</li><li><strong>Whisk Takers</strong>: a team pun on risk takers, good for a bold design.</li><li><strong>Who Ate the Chimney?</strong>: a funny team name that tells a story.</li><li><strong>The Royal Icing Society</strong>: grand, and royal icing is the hard icing that holds the walls together.</li><li><strong>Fright Bites</strong>: a short spooky team name for a haunted house entry.</li></ul>"
+      },
+      {
+        "heading": "How to name a gingerbread house",
+        "content": "<p>A good house name has two parts: something sweet and a kind of building. Gumdrop Cottage, Marzipan Manor and Clementine Cabin all follow that pattern, which borrows from the way British houses are named. The building word sets the mood. Cottage and Lodge sound cosy, Manor and Abbey sound grand, and Crypt or Keep turn it spooky.</p><p>Let the house decide. Name it after what's on it (a peppermint roof, a candy-cane fence) or what's gone wrong with it. A wonky house with a funny name often gets more smiles than a perfect one with a plain name.</p>"
+      },
+      {
+        "heading": "Putting the name on the house",
+        "content": "<p>If you're piping the name on, keep it short. Every letter in royal icing takes a steady hand, and a sign with 10 to 15 letters is easier than a long one. Write it on baking paper first, let it dry, and lift it on, or pipe it onto a biscuit \"sign\" that you can redo if a letter goes wrong. A house number works well too: 9 Cinnamon Terrace fits on a tiny door.</p>"
+      },
+      {
+        "heading": "Team names for a gingerbread house competition",
+        "content": "<p>Offices, schools and families often hold gingerbread house competitions in December, and a team name gives the judges something to read out. Baking and building puns work best: Raise the Roof, Bun Intended, The Way the Cookie Crumbles. Match the style to the event. Cute suits children's teams, grand suits a showpiece entry, and spooky suits a haunted house design. If the judging includes a theme, choose the name after you've chosen the design, so the two tell the same joke.</p>"
+      },
+      {
+        "heading": "Where gingerbread houses come from",
+        "content": "<p>Gingerbread itself is centuries old, but gingerbread houses are usually linked to Germany in the 19th century, after the Brothers Grimm published Hansel and Gretel in 1812, with its witch's house made of bread and cake. German bakers made decorated houses for Christmas, and the custom spread from there. That's why a spooky gingerbread house is less odd than it sounds: the most famous one in a story belongs to a witch.</p>"
+      }
+    ],
     "faqs": [
       {
         "question": "What are some funny gingerbread house names?",
@@ -1127,6 +1148,18 @@
       {
         "question": "What is a good team name for a gingerbread house competition?",
         "answer": "A baking or building pun that judges will read out with a grin, such as Whisk Takers, Frost Responders or Pipe Dreams. Choose Team name, then a style: cute for children, grand for a showpiece, spooky for a haunted house."
+      },
+      {
+        "question": "What is a cute name for a gingerbread house?",
+        "answer": "Pair a sweet word with a cosy building: Macaroon Lodge, Gumdrop Cottage or Custard Hut. Choose House name and Cute for more, or add a house number, like 9 Cinnamon Terrace, for a tiny front door."
+      },
+      {
+        "question": "Do the names use brand-name sweets?",
+        "answer": "No. The names use ordinary sweet and biscuit words such as gumdrop, treacle, marzipan and ginger nut, and leave out brand names, so they're fine for a school or office competition."
+      },
+      {
+        "question": "Can I name a haunted gingerbread house?",
+        "answer": "Yes. Choose Spooky for names like Gingerdread Manor, Cobwebbed Liquorice Keep or The House That Crumbled. It suits a Halloween build as well as a Christmas one."
       }
     ]
   }

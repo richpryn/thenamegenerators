@@ -2453,7 +2453,24 @@
       "tagline": "Pun-filled names for gritters and snow plows, ready for your council's naming competition."
     },
     "intro": "Every winter, councils across the UK ask people to name their gritters, and US states run name-a-snow-plow contests. This **gritter name generator** gives you fresh entries: puns on songs, films and sayings like <em>Rock Salt Man</em>, Scottish names, silly ones and kids' entries, with a reason it fits if your entry form asks for one. Names already used by real gritters are left out, so yours has a chance.",
-    "sections": [],
+    "sections": [
+      {
+        "heading": "Eight good gritter names",
+        "content": "<p>All eight came from the generator, across its styles:</p><ul><li><strong>Four Roads and a Gritter</strong>: a film pun that's easy to read on the side of a lorry.</li><li><strong>Don't Flurry, Be Happy</strong>: a song pun with a cheerful message for an icy morning.</li><li><strong>Auld Lang Brine</strong>: Scottish, and brine is the salty water some councils spray on roads.</li><li><strong>Lang May Yer Roads Be Clear</strong>: a twist on the Scottish blessing \"lang may yer lum reek\".</li><li><strong>Sir Scatters-a-Lot</strong>: a silly knightly name for a lorry that scatters salt.</li><li><strong>Gritty the Yeti</strong>: a kids' name with a rhyme and a snowy creature.</li><li><strong>Sleetless in Seattle</strong>: a US snow plow pun on the film.</li><li><strong>The Slush Fund</strong>: a plow name that works as a joke for grown-ups.</li></ul>"
+      },
+      {
+        "heading": "How gritter naming competitions work",
+        "content": "<p>Named gritters started in Scotland: the companies that grit Scotland's trunk roads began asking schoolchildren for names in the 2000s, and Traffic Scotland's online gritter tracker now shows the named fleet on a live map from November to March. Councils across the UK have followed, often with a school competition or a public vote on a shortlist. In the US, the Minnesota Department of Transportation began its Name a Snowplow contest in the winter of 2020–21, when Plowy McPlowFace won by a wide margin, and other states have run their own since.</p><p>Rules vary, so read the entry form. Many councils only take entries from children or schools, set a closing date, and ask for a line on why your name should win.</p>"
+      },
+      {
+        "heading": "What makes a winning name",
+        "content": "<ul><li><strong>A pun people know straight away.</strong> The best names change one word of a famous song, film or saying, like Gritallica, a real Scottish gritter. If it needs explaining, it won't win.</li><li><strong>Short enough for the lorry.</strong> The name is painted or stuck on the side, so two to four words is ideal.</li><li><strong>Family friendly.</strong> Councils won't put anything rude on a council vehicle, even mildly.</li><li><strong>Not already taken.</strong> Many councils publish a list of their gritters' names; check it, and check nearby councils too. This generator leaves out names real gritters already use.</li><li><strong>No real people.</strong> Puns on celebrities' names are popular, but some councils won't use them, so this generator sticks to songs, films, sayings and characters of its own.</li></ul>"
+      },
+      {
+        "heading": "What gritters actually do",
+        "content": "<p>Gritters mostly spread rock salt rather than grit. The salt lowers the temperature at which water freezes, so it works best spread before ice forms, usually in the evening or early morning when the road surface is heading for freezing. Councils give different limits, but most say salt starts to struggle when the road surface drops below about −5 to −8°C. That's why a name about salt, brine or spreading is as fair a joke as one about snow.</p>"
+      }
+    ],
     "faqs": [
       {
         "question": "What are some funny gritter names?",
@@ -2462,6 +2479,18 @@
       {
         "question": "How do I win a name the gritter competition?",
         "answer": "Councils pick names that are funny, easy to read on the side of a lorry and family friendly. Check your name isn't already on a gritter (many councils publish a list), avoid real people's names, and say in a line why it fits. Choose <strong>Name and why it fits</strong> for help with that line."
+      },
+      {
+        "question": "Why do the names come with a reason?",
+        "answer": "Many competitions ask why your name should win. Choose Name and why it fits and each name comes with a short line you can adapt, like \"it makes the truck sound like a helpful friend\"."
+      },
+      {
+        "question": "Is a gritter the same as a snow plow?",
+        "answer": "Not quite. A gritter spreads salt to stop ice forming, and many can fit a plough blade for heavy snow. In the US the trucks are usually called snow plows, and they do both jobs. Choose UK gritter or US snow plow to match your competition."
+      },
+      {
+        "question": "Can I enter these names in a competition?",
+        "answer": "Yes, they're free to use. Check the council's existing names first, as two lorries can't share one, and follow the competition's rules on who can enter."
       }
     ]
   }
