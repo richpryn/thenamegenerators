@@ -52,3 +52,30 @@ To stop it re-reading this long chat, Rich could switch it to start a fresh sess
 
 ### Waiting on Rich (see Site Jobs)
 Companies House API key and Worker; affiliate sign-ups; Cloudflare Web Analytics; email service and moving mail off Bluehost; the Search Console check of the name lists in late December.
+
+## Content session (copy, fact-checking and editorial; 23 Nov 2026)
+
+### What this session owns
+The words on the site: each generator's `article` (hero, intro, sections, faqs), `description` (≤155 characters), `seoTitle` (≤60), `seoKeywords`, `noun` and `nameSource`; hub copy in `content/categories.json` (intro, featured notes, approach, tips, examples, startHeading/startIntro); `content/guides/`; Naming Library entries in `content/reference/` (drafts in `content/reference-drafts/`); name lists in `content/lists/` (drafts in `content/lists-drafts/`); `content/sister-links.json`; about.html and docs/CONTENT.md. The Builder owns the data, filters and engine. The Designer owns `content/illustrations.json` and the drawings.
+
+### How the work runs
+- The Builder sends a weekly message (Mondays) listing new pages, which arrive with an intro and 2 FAQs only, and the pages it deepened. For each new page: sample 60+ names across every filter, then write the article. The usual shape is "Eight good X names" (all real outputs), how the names work, one or two sections specific to the subject, a section on checking or using the name, and 5–7 FAQs. Add nameSource where the Builder hasn't. For deepened pages, check that every example name in the article can still be generated. If one has gone, replace it with a real output.
+- Voice (Rich): neutral, friendly and knowledgeable; British English; facts checked; no innuendo; no canon names as outputs; "free to use, but check availability" for anything that could be a brand. Fan pages say they're fan-made and unofficial, and name the rights holder.
+- To check an example, generate it: `createGenerator(require('./content/generators/<key>.json')).generate(choices, n)` from `lib/recipe-engine.js`. Brute-force every filter combination when a name is rare. Then run `node scripts/content.js validate` and `node scripts/build-pages.js`, commit, merge origin/main, and push to the branch `claude/blissful-noether-negb31` and to `main` (Rich: "just merge", no PRs).
+- Many reference sites (behindthename, etymonline, Wikipedia, Britannica, Tolkien Gateway, PASE and others) are blocked from this container. Check through search results, and say so when a claim rests on them.
+
+### In progress (23 Nov)
+Articles for the Builder's 23 Nov batch: gingerbread_house and gritter first (they're timely), then book_club, running_club, quiz_team, snow_removal_business, horse, ice_mage, hamster and guinea_pig. Also check the examples on nail_salon, dog_grooming and orc after the Builder removed "Nailed It…", "Mutt Cuts", "Wash & Go", Ghorza and Ghorbag. If this session is gone, a fresh one should take these from the Builder's 23 Nov commits (d0e59da, 06e39cd, 30fbbe3).
+
+### Decisions
+- Sister-site boxes (`content/sister-links.json`): Haunted Hotels UK appears on the ghost pages and the Tavern page (haunted pubs) only. Rich said no wider Bunting & Balloons boxes, and no hotel link on hub pages.
+- Guides only for the big hub pages (Rich).
+- Pony page: the Sparkle, Shimmer, Glimmer and Dash endings stay (ordinary words), with whole canon names blocked.
+- Companies House live check is done: the Worker at https://ch-proxy.richardpryn.workers.dev is set in `content/affiliates.json` and tested on the live site.
+- about.html has a "How the names are checked" section. Its contact line waits on the privacy-contact decision.
+
+### Waiting on Rich (on Site Jobs)
+Privacy-page contact method (`tng-privacy-contact`: hello@thenamegenerators.com once Cloudflare Email Routing is set up); whether Grow by Mediavine waits for cookie consent (`tng-mediavine-consent`); indexing requests for the business pages (`tng-index-business`). Email to prynsites@gmail.com: read only messages to or delivered to @thenamegenerators.com, drafts only, never send or delete.
+
+### Scheduled tasks
+None are bound to this session. The weekly work arrives through the Builder's Monday task (see above).
