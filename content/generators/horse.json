@@ -4523,7 +4523,28 @@
       "tagline": "Racehorse, show, stable, western and fantasy horse names, or a name from the sire and dam."
     },
     "intro": "A good horse name fits the horse's job: a racehorse needs a short, witty name that fits in 18 characters, a show jumper often carries its breeder's prefix, and the horse in the stable just needs something easy to call across a field. This **horse name generator** makes names for mares and stallions in all of these styles, and can build a name from the sire and dam, the way breeders do.",
-    "sections": [],
+    "sections": [
+      {
+        "heading": "Eight good horse names",
+        "content": "<p>All eight came from the generator, across its kinds of name:</p><ul><li><strong>Silent Harbour</strong>: a racehorse name with a calm sound and room for a big finish.</li><li><strong>Honest Encore</strong>: a racehorse name that a commentator can shout.</li><li><strong>Kilbarry Aria</strong>: a show name: a breeder's prefix and a musical word, the way many sport horses are named.</li><li><strong>Castlewood Interlude</strong>: another show name, with the same pattern for a stallion.</li><li><strong>Muesli</strong>: a stable name that's quick to call across a yard.</li><li><strong>Cobnut</strong>: a stable name for a sturdy cob, which is the joke.</li><li><strong>Emberhoof</strong>: a fantasy steed, for a story or a game.</li><li><strong>Sagebrush</strong>: a western name from the plains.</li></ul>"
+      },
+      {
+        "heading": "Registered names and stable names",
+        "content": "<p>Many horses have two names. The registered name goes on the passport and the entry lists, and the stable name is what everyone calls the horse at home. A show jumper registered as Hazelbrook Dynasty might be \"Dino\" in the yard; a racehorse called Galloping Rascal might be \"Rascal\" to its groom. If you're naming a horse you'll ride and show, choose both: a longer name that sounds good when it's announced, and a short one you can call across a field.</p><p>Good stable names are one or two syllables, with a clear sound that doesn't rhyme with \"whoa\" or \"walk on\". Food names (Muesli, Battenberg), names for the horse's colour and plain human names (Morag, Douglas) are all popular.</p>"
+      },
+      {
+        "heading": "Naming a racehorse",
+        "content": "<p>Racehorse names have to be registered, and the rules are strict. In Britain and Ireland, names are registered through Weatherbys and can be at most 18 characters, including spaces and punctuation. About 3,000 names are protected, including famous horses and the winners of major races, so they can't be used again. Names that could cause offence are turned down too.</p><p>Within those rules, racehorse names are often a little poetic or a little witty: two words with a good rhythm, or a nod to the owner (Sam's Wish, Ted's Promise). Many owners also borrow from the sire and dam, which is what \"From sire and dam\" does here.</p>"
+      },
+      {
+        "heading": "Show, dressage and breed names",
+        "content": "<p>Sport horses usually carry their breeder's prefix: the name of the stud or farm, followed by the horse's own name, as in Kilbarry Aria or Ashgrove Aria. Horses bred in Belgium and the Netherlands often take the stud's name after \"van\" or \"van de\", and French ones after \"de\". Dressage horses often have musical names (Toccata, Sonata, Cantilena), which suit a sport where the freestyle test is ridden to music.</p><p>Breed societies have their own rules on length and prefixes, so check yours before you register a foal.</p>"
+      },
+      {
+        "heading": "Western and fantasy names",
+        "content": "<p>Western names come from the American West: plants, places and ranch words like Mesquite, Laredo and Rustler. Registered Quarter Horses often have playful names built from the parents' names, such as the \"Lil\" and \"Sheza\" names the generator makes. Fantasy steeds suit a story or a game, built from fire, wind and stars, like Flamefoot or Starrider.</p>"
+      }
+    ],
     "faqs": [
       {
         "question": "How do you name a horse after its sire and dam?",
@@ -4531,7 +4552,15 @@
       },
       {
         "question": "How many letters can a racehorse name have?",
-        "answer": "In Britain and Ireland a racehorse name can be at most 18 characters, counting spaces, and it can't copy the name of a famous horse, a living person without permission or a trade mark. Every racehorse name here fits in 18 characters, but check availability with Weatherbys before you register one."
+        "answer": "In Britain and Ireland a racehorse name can be at most 18 characters, counting spaces and punctuation, and the US uses the same limit. It also can't copy one of the protected names, which include famous horses and the winners of major races, or anything that could cause offence. Every racehorse name here fits in 18 characters, but check availability with Weatherbys (or your country's registry) before you register one."
+      },
+      {
+        "question": "What is a good name for a mare?",
+        "answer": "It depends on her job: Ruby Parade or Midsummer Duchess for a racehorse, Fernleigh Toccata for a show mare, or Della, Squiggle or Mint Humbug in the stable. Choose Mare or filly and a kind of name for more."
+      },
+      {
+        "question": "Are these horse names free to use?",
+        "answer": "Yes. If you're registering a racehorse or a show horse, check the name with the registry first, as each one has to be unique, and protected names can't be used."
       }
     ]
   }
