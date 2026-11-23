@@ -2598,7 +2598,28 @@
       "tagline": "Boy and girl dog names: classic, cute, funny, tough, foodie or just plain Dave."
     },
     "intro": "Most British dogs end up with short, friendly names like Poppy, Teddy or Bertie, but there's room for a Sir Barks-a-Lot too. This **dog name generator** gives boy and girl dog names in six styles, from classics and cute names to human names, food names and tough names for big dogs.",
-    "sections": [],
+    "sections": [
+      {
+        "heading": "Eight good dog names",
+        "content": "<p>All eight came from the generator, across its styles:</p><ul><li><strong>Rufus</strong>: a classic boy's name, short and easy to shout across a park.</li><li><strong>Poppy</strong>: a classic for a girl, with two syllables and a bright ending.</li><li><strong>Little Bean</strong>: cute for a small dog, and funny on a big one.</li><li><strong>Sir Sniffs-a-Lot</strong>: a funny name that fits most dogs on a walk.</li><li><strong>Gethin</strong>: a Welsh first name. A plain human name always gets a smile at the vet's.</li><li><strong>Custard Cream</strong>: a food name after the British biscuit, for a pale dog.</li><li><strong>Atlas</strong>: a tough name for a big dog, after the Titan who held up the sky.</li><li><strong>Doorstop</strong>: for the dog who lies across every doorway.</li></ul>"
+      },
+      {
+        "heading": "What makes a name easy to call",
+        "content": "<p>You'll say your dog's name thousands of times, often loudly and in public, so it's worth testing before you decide.</p><ul><li><strong>Keep it short.</strong> One or two syllables are quick to call and hard to mishear: Ted, Ruby, Milo.</li><li><strong>Watch out for commands.</strong> Kit sounds like \"sit\", Bo like \"no\" and Ray like \"stay\", which can muddle a young dog.</li><li><strong>Avoid clashes at home.</strong> A dog called Sam in a house with a Sam will get confused, and so will Sam.</li><li><strong>Give long names a short form.</strong> The funny names are fun on the vet's form, but Sir Sniffs-a-Lot will soon be Sniffs in the park.</li><li><strong>Try it out loud.</strong> Shout it in the garden. If you'd feel silly shouting it, pick another.</li></ul>"
+      },
+      {
+        "heading": "Renaming a rescue dog",
+        "content": "<p>It's fine to give a rescue dog a new name, and many owners do. Dogs learn that a sound means good things are coming, so a new name can be learned in a few days or weeks.</p><p>Say the new name in a happy voice, and give a treat or a fuss when your dog looks at you. Keeping a similar sound can help: a dog called Ned will quickly take to Ted. Don't use the name when you're telling your dog off, so it always means something good.</p>"
+      },
+      {
+        "heading": "The name tag and the law",
+        "content": "<p>In England, Scotland and Wales, the Control of Dogs Order 1992 says a dog in a public place must wear a collar with its owner's name and address on it, or on a tag fixed to it. Working dogs and registered guide dogs are among the exceptions. A postcode is a sensible part of the address, and a phone number helps too.</p><p>The law doesn't ask for your dog's name on the tag, and many owners leave it off. In England, dogs must also be microchipped by the time they're eight weeks old, and it's the owner's job to keep the details on the chip database up to date when they move or change number.</p>"
+      },
+      {
+        "heading": "Naming two dogs",
+        "content": "<p>Give two dogs names that start with different sounds and have a different number of syllables, so each one knows which of them you mean. Rufus and Poppy work well; Ted and Ned don't. A matching theme is fun as long as the names sound different: Crumble and Custard Cream, or Atlas and Little Bean.</p><p>For the cat in the house, try the <a href=\"cat-name-generator.html\">Cat Name Generator</a>, and for Christmas names, the <a href=\"christmas-pet-name-generator.html\">Christmas Pet Name Generator</a>.</p>"
+      }
+    ],
     "faqs": [
       {
         "question": "What is a good name for a dog?",
@@ -2607,7 +2628,32 @@
       {
         "question": "Do dogs know their names?",
         "answer": "Dogs learn that the sound of their name means attention, food or a walk is coming, so they turn when they hear it. Use it in a happy voice, reward them when they look at you, and avoid using it when telling them off."
+      },
+      {
+        "question": "What are good boy dog names?",
+        "answer": "Short classics such as Rufus, Ted and Jasper never go out of fashion. Choose Boy and Classic, or Tough for a big dog (Atlas, Zeus or Rex)."
+      },
+      {
+        "question": "What are good girl dog names?",
+        "answer": "Poppy, Ruby and Tess are classics, and Tilly, Dotty and Clementine are cute. Choose Girl, then Classic or Cute."
+      },
+      {
+        "question": "What are some funny dog names?",
+        "answer": "Choose Funny for names like Captain Fluffypants, Doorstop and Uh-Oh, or a very human name such as Linda, Norma or Cyril."
+      },
+      {
+        "question": "What's a good name for a big dog?",
+        "answer": "Choose Tough for strong names like Atlas, Thunder, Bison and Gladiator. A tiny cute name such as Little Bean is funny on a big dog too."
+      },
+      {
+        "question": "Should I put my dog's name on its tag?",
+        "answer": "You don't have to. The law in Great Britain asks for the owner's name and address on the collar or tag, not the dog's name, and many owners leave it off."
       }
     ]
-  }
+  },
+  "nameSource": {
+    "kind": "mixed",
+    "note": "Hand-picked lists of real first names, everyday words and food names, plus funny names made up for this site, like Sir Sniffs-a-Lot. Each style has its own lists for boys and girls."
+  },
+  "noun": "Dog Names"
 }

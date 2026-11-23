@@ -4367,8 +4367,29 @@
       "title": "🐈 Cat Name Generator",
       "tagline": "Boy and girl cat names by style or by coat: ginger, grey, white, tabby, tuxedo or tortie."
     },
-    "intro": "Luna, Milo and Bella top the UK's cat name lists, but a cat can carry off almost anything, from Tiddles to Lady Arabella. This **cat name generator** gives boy and girl cat names in six styles, or by the colour of the coat. For a black cat, try the <a href=\"black-cat-name-generator.html\">Black Cat Name Generator</a>.",
-    "sections": [],
+    "intro": "Luna, Milo and Bella are among the UK's favourite cat names, but a cat can carry off almost anything, from Tiddles to Lady Arabella. This **cat name generator** gives boy and girl cat names in six styles, or by the colour of the coat. For a black cat, try the <a href=\"black-cat-name-generator.html\">Black Cat Name Generator</a>.",
+    "sections": [
+      {
+        "heading": "Eight good cat names",
+        "content": "<p>All eight came from the generator, across its styles and colours:</p><ul><li><strong>Tiddles</strong>: the old British classic for a cat.</li><li><strong>Mavis</strong>: an old-fashioned human name, for a cat who acts as if she owns the house.</li><li><strong>Paperweight</strong>: a funny name for a cat who sits on whatever you're reading.</li><li><strong>Baroness Sherbourne</strong>: posh, for a cat who expects the best cushion.</li><li><strong>Harris Tweed</strong>: for a brown tabby, after the Scottish cloth.</li><li><strong>Spats</strong>: for a black and white cat with white feet, after the old shoe covers.</li><li><strong>Quilty</strong>: for a tortie or calico, patched like a quilt.</li><li><strong>Moonstone</strong>: for a grey cat with a pale sheen.</li></ul>"
+      },
+      {
+        "heading": "Names by coat colour",
+        "content": "<p>A cat's coat is often the quickest way to a name. Each colour in the generator has its own ideas:</p><ul><li><strong>Ginger:</strong> food and autumn colours, like Miss Marmalade, Little Cheddar and Toast.</li><li><strong>Grey:</strong> metals, stones and weather, like Slate, Flint, Drizzle and Captain Nickel.</li><li><strong>White:</strong> snow, milk and pearls, like Snowdrop, Icicle and Miss Pearl.</li><li><strong>Tabby:</strong> stripes, tweed and woodland animals, like Captain Stripes and Duchess Raccoon.</li><li><strong>Black and white:</strong> smart clothes and piano keys, like Cravat, Prince Keys and Salt and Pepper.</li><li><strong>Tortie or calico:</strong> patchwork, spice and jewel colours, like Mahogany, Jumble and Mrs Garnet.</li></ul><p>For a black cat, try the <a href=\"black-cat-name-generator.html\">Black Cat Name Generator</a>.</p>"
+      },
+      {
+        "heading": "Why most torties are girls",
+        "content": "<p>The genes for orange and black fur sit on the X chromosome. A cat needs two X chromosomes to carry both colours at once, and that usually means a female. In each patch of skin one X is switched off at random, which is what makes the patchwork.</p><p>Boy tortoiseshell and calico cats do exist, but they're rare. Most have an extra X chromosome (XXY), and they're almost always unable to father kittens. The generator still has Boy names for torties, in case yours is one of the rare ones.</p>"
+      },
+      {
+        "heading": "Getting your cat to answer",
+        "content": "<p>Cats do learn their names. A 2019 study in <em>Scientific Reports</em> found that pet cats react differently to their own name than to other words of the same length. Coming when called is another matter.</p><ul><li><strong>Use the name at mealtimes</strong>, so it means food is on the way.</li><li><strong>Keep it short for every day.</strong> Baroness Sherbourne can be Bonnie in the kitchen.</li><li><strong>Don't use it to scold.</strong> Save a sharp \"no\" for that, so the name always sounds good.</li></ul>"
+      },
+      {
+        "heading": "Microchips, collars and the law",
+        "content": "<p>Since 10 June 2024, pet cats in England must be microchipped before they're 20 weeks old, and owners must keep their details on the microchip database up to date. Farm, feral and community cats that live with little human contact are exempt. Owners who don't comply can be given 21 days to get it done, and can be fined up to £500.</p><p>There's no law that a cat must wear a collar. If yours does, choose a quick-release collar that comes undone if it catches on something. A name on the tag is up to you; a phone number is more useful.</p>"
+      }
+    ],
     "faqs": [
       {
         "question": "Do cats know their names?",
@@ -4377,7 +4398,32 @@
       {
         "question": "What should I name a ginger cat?",
         "answer": "Food and autumn colours suit ginger cats well: Marmalade, Satsuma, Toffee, Rusty or Copper. Pick Ginger as the style for a full list, with boy and girl options."
+      },
+      {
+        "question": "What are good boy cat names?",
+        "answer": "Classic toms are called Tiddles, Fred or Ronnie, and human names like Wilfred and Monty suit them too. Choose Boy, then Classic or Human names."
+      },
+      {
+        "question": "What are good girl cat names?",
+        "answer": "Blossom, Freya and Zelda are classics, and Hattie, Mavis and Nell are lovely human names. Choose Girl, then Classic, Cute or Human names."
+      },
+      {
+        "question": "What are some funny cat names?",
+        "answer": "Choose Funny for names like Paperweight, Sofa Destroyer, Lady Grumbles and Doctor Meow."
+      },
+      {
+        "question": "What should I name a black and white cat?",
+        "answer": "Smart clothes and piano keys suit a tuxedo cat: Spats, Cravat, Gatsby or Salt and Pepper. Choose Black and white as the style."
+      },
+      {
+        "question": "Can a boy cat be tortoiseshell?",
+        "answer": "Yes, but rarely. The colours need two X chromosomes, so most torties and calicos are female; the few males usually have an extra X chromosome."
       }
     ]
-  }
+  },
+  "nameSource": {
+    "kind": "mixed",
+    "note": "Hand-picked lists of real first names, everyday words, food and colour words, joined with titles like Lady and Captain for some styles, plus funny names made up for this site. Each style and colour has its own lists for boys and girls."
+  },
+  "noun": "Cat Names"
 }
