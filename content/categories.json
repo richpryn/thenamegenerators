@@ -27,7 +27,10 @@
       "podcast",
       "gamertag",
       "code_name",
-      "discord_server"
+      "discord_server",
+      "twitch_username",
+      "xbox_gamertag",
+      "psn_name"
     ],
     "eyebrow": "Names for online projects",
     "approach": {

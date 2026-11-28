@@ -1,0 +1,1027 @@
+{
+ "key": "twitch_username",
+ "title": "Twitch Name Generator",
+ "seoTitle": "Twitch Name Generator: Username & Channel Ideas",
+ "slug": "twitch-name-generator",
+ "icon": "📺",
+ "category": "concepts",
+ "published": "2026-11-29",
+ "description": "Twitch usernames and channel names that fit the rules: streamer brands, cosy, funny and chat-friendly names, with your own word or name if you like.",
+ "seoKeywords": "twitch name generator, twitch username generator, twitch channel name ideas, twitch name ideas, twitch username ideas, cool twitch names, funny twitch names, cute twitch names, streamer name generator, streamer name ideas",
+ "isPopular": false,
+ "noun": "Twitch Names",
+ "noEcho": true,
+ "maxLength": 25,
+ "nameSource": {
+  "kind": "invented",
+  "note": "Names are built from word lists written for this page, in the patterns streamers use: a brand with TV or Live on the end, short names that are easy to type in chat, cosy pairs and jokes about how you play. Every name is 4 to 25 characters of letters, numbers and underscores, as Twitch requires. Brands, games and the names of well-known streamers were checked for and left out. This page is not made by or connected with Twitch or Amazon."
+ },
+ "filters": {
+  "style": {
+   "label": "Style",
+   "options": [
+    "any",
+    "brand",
+    "chat",
+    "cosy",
+    "funny"
+   ],
+   "optionLabels": {
+    "any": "Any style",
+    "brand": "Channel brand (CopperOtterTV)",
+    "chat": "Chat-friendly (PebblePlays)",
+    "cosy": "Cosy and chill (MossAndMilk)",
+    "funny": "Funny (BadAtBossFights)"
+   }
+  },
+  "format": {
+   "label": "Format",
+   "options": [
+    "joined",
+    "underscore"
+   ],
+   "optionLabels": {
+    "joined": "Joined (CopperOtterTV)",
+    "underscore": "Underscores (Copper_Otter_TV)"
+   }
+  },
+  "useWord": {
+   "label": "Include your own word",
+   "options": [
+    "no",
+    "yes"
+   ],
+   "optionLabels": {
+    "no": "No",
+    "yes": "Yes, use the word below"
+   }
+  },
+  "word": {
+   "type": "text",
+   "label": "Your word or name",
+   "placeholder": "e.g. Milo, Pixel, Frog",
+   "default": "Milo",
+   "example": "Milo",
+   "username": true,
+   "showWhen": {
+    "useWord": [
+     "yes"
+    ]
+   }
+  }
+ },
+ "recipe": "switch",
+ "on": "style",
+ "cases": {
+  "any": {
+   "recipe": "switch",
+   "on": "format",
+   "cases": {
+    "joined": {
+     "recipe": "switch",
+     "on": "useWord",
+     "cases": {
+      "no": {
+       "recipe": "template",
+       "template": [
+        "[brand.a][brand.n][brand.end]",
+        "[brand.a][brand.n][brand.end]",
+        "The[brand.a][brand.n]",
+        "[brand.a][brand.n]",
+        "[chat.w][chat.end]",
+        "[chat.w][chat.end]",
+        "[chat.pre][chat.w]",
+        "[cosy.a][cosy.n]",
+        "[cosy.a][cosy.n][cosy.end]",
+        "[cosy.left]And[cosy.right]",
+        "[cosy.left]And[cosy.right]",
+        "[funny.lvl]At[funny.skill]",
+        "[funny.lvl]At[funny.skill]",
+        "[funny.n]With[funny.has]",
+        "[funny.vibe][funny.n]Energy",
+        "[funny.n]InChat"
+       ]
+      },
+      "yes": {
+       "recipe": "template",
+       "template": [
+        "{word}[brand.n][brand.end]",
+        "[brand.a]{word}[brand.end]",
+        "The[brand.a]{word}",
+        "{word}The[brand.n]",
+        "{word}[chat.w]",
+        "[chat.w]{word}",
+        "{word}And[chat.w]",
+        "{word}[chat.end]",
+        "[chat.pre]{word}",
+        "[cosy.a]{word}",
+        "{word}And[cosy.right]",
+        "{word}And[cosy.right]",
+        "[cosy.a]{word}[cosy.end]",
+        "{word}Is[funny.lvl]At[funny.skill]",
+        "{word}With[funny.has]",
+        "[funny.vibe]{word}Energy",
+        "{word}Vs[funny.skill]",
+        "[funny.n]Named{word}"
+       ]
+      }
+     }
+    },
+    "underscore": {
+     "recipe": "switch",
+     "on": "useWord",
+     "cases": {
+      "no": {
+       "recipe": "template",
+       "template": [
+        "[brand.a]_[brand.n]_[u.brand.end]",
+        "[brand.a]_[brand.n]_[u.brand.end]",
+        "The_[brand.a]_[brand.n]",
+        "[brand.a]_[brand.n]",
+        "[chat.w]_[chat.end]",
+        "[chat.w]_[chat.end]",
+        "[chat.pre]_[chat.w]",
+        "[cosy.a]_[cosy.n]",
+        "[cosy.a]_[cosy.n]_[cosy.end]",
+        "[cosy.left]_And_[cosy.right]",
+        "[cosy.left]_And_[cosy.right]",
+        "[u.funny.lvl]_At_[u.funny.skill]",
+        "[u.funny.lvl]_At_[u.funny.skill]",
+        "[funny.n]_With_[u.funny.has]",
+        "[funny.vibe]_[funny.n]_Energy",
+        "[funny.n]_In_Chat"
+       ]
+      },
+      "yes": {
+       "recipe": "template",
+       "template": [
+        "{word}_[brand.n]_[u.brand.end]",
+        "[brand.a]_{word}_[u.brand.end]",
+        "The_[brand.a]_{word}",
+        "{word}_The_[brand.n]",
+        "{word}_[chat.w]",
+        "[chat.w]_{word}",
+        "{word}_And_[chat.w]",
+        "{word}_[chat.end]",
+        "[chat.pre]_{word}",
+        "[cosy.a]_{word}",
+        "{word}_And_[cosy.right]",
+        "{word}_And_[cosy.right]",
+        "[cosy.a]_{word}_[cosy.end]",
+        "{word}_Is_[u.funny.lvl]_At_[u.funny.skill]",
+        "{word}_With_[u.funny.has]",
+        "[funny.vibe]_{word}_Energy",
+        "{word}_Vs_[u.funny.skill]",
+        "[funny.n]_Named_{word}"
+       ]
+      }
+     }
+    }
+   }
+  },
+  "brand": {
+   "recipe": "switch",
+   "on": "format",
+   "cases": {
+    "joined": {
+     "recipe": "switch",
+     "on": "useWord",
+     "cases": {
+      "no": {
+       "recipe": "template",
+       "template": [
+        "[brand.a][brand.n][brand.end]",
+        "[brand.a][brand.n][brand.end]",
+        "The[brand.a][brand.n]",
+        "[brand.a][brand.n]"
+       ]
+      },
+      "yes": {
+       "recipe": "template",
+       "template": [
+        "{word}[brand.n][brand.end]",
+        "[brand.a]{word}[brand.end]",
+        "The[brand.a]{word}",
+        "{word}The[brand.n]"
+       ]
+      }
+     }
+    },
+    "underscore": {
+     "recipe": "switch",
+     "on": "useWord",
+     "cases": {
+      "no": {
+       "recipe": "template",
+       "template": [
+        "[brand.a]_[brand.n]_[u.brand.end]",
+        "[brand.a]_[brand.n]_[u.brand.end]",
+        "The_[brand.a]_[brand.n]",
+        "[brand.a]_[brand.n]"
+       ]
+      },
+      "yes": {
+       "recipe": "template",
+       "template": [
+        "{word}_[brand.n]_[u.brand.end]",
+        "[brand.a]_{word}_[u.brand.end]",
+        "The_[brand.a]_{word}",
+        "{word}_The_[brand.n]"
+       ]
+      }
+     }
+    }
+   }
+  },
+  "chat": {
+   "recipe": "switch",
+   "on": "format",
+   "cases": {
+    "joined": {
+     "recipe": "switch",
+     "on": "useWord",
+     "cases": {
+      "no": {
+       "recipe": "template",
+       "template": [
+        "[chat.w][chat.end]",
+        "[chat.w][chat.end]",
+        "[chat.pre][chat.w]"
+       ]
+      },
+      "yes": {
+       "recipe": "template",
+       "template": [
+        "{word}[chat.w]",
+        "[chat.w]{word}",
+        "{word}And[chat.w]",
+        "{word}[chat.end]",
+        "[chat.pre]{word}"
+       ]
+      }
+     }
+    },
+    "underscore": {
+     "recipe": "switch",
+     "on": "useWord",
+     "cases": {
+      "no": {
+       "recipe": "template",
+       "template": [
+        "[chat.w]_[chat.end]",
+        "[chat.w]_[chat.end]",
+        "[chat.pre]_[chat.w]"
+       ]
+      },
+      "yes": {
+       "recipe": "template",
+       "template": [
+        "{word}_[chat.w]",
+        "[chat.w]_{word}",
+        "{word}_And_[chat.w]",
+        "{word}_[chat.end]",
+        "[chat.pre]_{word}"
+       ]
+      }
+     }
+    }
+   }
+  },
+  "cosy": {
+   "recipe": "switch",
+   "on": "format",
+   "cases": {
+    "joined": {
+     "recipe": "switch",
+     "on": "useWord",
+     "cases": {
+      "no": {
+       "recipe": "template",
+       "template": [
+        "[cosy.a][cosy.n]",
+        "[cosy.a][cosy.n][cosy.end]",
+        "[cosy.left]And[cosy.right]",
+        "[cosy.left]And[cosy.right]"
+       ]
+      },
+      "yes": {
+       "recipe": "template",
+       "template": [
+        "[cosy.a]{word}",
+        "{word}And[cosy.right]",
+        "{word}And[cosy.right]",
+        "[cosy.a]{word}[cosy.end]"
+       ]
+      }
+     }
+    },
+    "underscore": {
+     "recipe": "switch",
+     "on": "useWord",
+     "cases": {
+      "no": {
+       "recipe": "template",
+       "template": [
+        "[cosy.a]_[cosy.n]",
+        "[cosy.a]_[cosy.n]_[cosy.end]",
+        "[cosy.left]_And_[cosy.right]",
+        "[cosy.left]_And_[cosy.right]"
+       ]
+      },
+      "yes": {
+       "recipe": "template",
+       "template": [
+        "[cosy.a]_{word}",
+        "{word}_And_[cosy.right]",
+        "{word}_And_[cosy.right]",
+        "[cosy.a]_{word}_[cosy.end]"
+       ]
+      }
+     }
+    }
+   }
+  },
+  "funny": {
+   "recipe": "switch",
+   "on": "format",
+   "cases": {
+    "joined": {
+     "recipe": "switch",
+     "on": "useWord",
+     "cases": {
+      "no": {
+       "recipe": "template",
+       "template": [
+        "[funny.lvl]At[funny.skill]",
+        "[funny.lvl]At[funny.skill]",
+        "[funny.n]With[funny.has]",
+        "[funny.vibe][funny.n]Energy",
+        "[funny.n]InChat"
+       ]
+      },
+      "yes": {
+       "recipe": "template",
+       "template": [
+        "{word}Is[funny.lvl]At[funny.skill]",
+        "{word}With[funny.has]",
+        "[funny.vibe]{word}Energy",
+        "{word}Vs[funny.skill]",
+        "[funny.n]Named{word}"
+       ]
+      }
+     }
+    },
+    "underscore": {
+     "recipe": "switch",
+     "on": "useWord",
+     "cases": {
+      "no": {
+       "recipe": "template",
+       "template": [
+        "[u.funny.lvl]_At_[u.funny.skill]",
+        "[u.funny.lvl]_At_[u.funny.skill]",
+        "[funny.n]_With_[u.funny.has]",
+        "[funny.vibe]_[funny.n]_Energy",
+        "[funny.n]_In_Chat"
+       ]
+      },
+      "yes": {
+       "recipe": "template",
+       "template": [
+        "{word}_Is_[u.funny.lvl]_At_[u.funny.skill]",
+        "{word}_With_[u.funny.has]",
+        "[funny.vibe]_{word}_Energy",
+        "{word}_Vs_[u.funny.skill]",
+        "[funny.n]_Named_{word}"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "data": {
+  "brand": {
+   "a": [
+    "Amber",
+    "Brass",
+    "Copper",
+    "Velvet",
+    "Cosmic",
+    "Quiet",
+    "Lucky",
+    "Rusty",
+    "Sunny",
+    "Misty",
+    "Pixel",
+    "Atomic",
+    "Golden",
+    "Hollow",
+    "Paper",
+    "Midnight",
+    "Northern",
+    "Clever",
+    "Restless",
+    "Wandering",
+    "Humble",
+    "Curious",
+    "Electric",
+    "Crooked",
+    "Solar",
+    "Tidal",
+    "Dusty",
+    "Marble",
+    "Scarlet",
+    "Indigo",
+    "Maple",
+    "Silver",
+    "Wild",
+    "Odd",
+    "Brave",
+    "Jolly",
+    "Bold",
+    "Plucky",
+    "Daring",
+    "Retro",
+    "Turbo",
+    "Neon",
+    "Rocket",
+    "Mellow",
+    "Bright",
+    "Lunar",
+    "Crimson",
+    "Cobalt"
+   ],
+   "n": [
+    "Lantern",
+    "Otter",
+    "Comet",
+    "Badger",
+    "Kettle",
+    "Compass",
+    "Robot",
+    "Moth",
+    "Raccoon",
+    "Falcon",
+    "Pigeon",
+    "Arcade",
+    "Signal",
+    "Panda",
+    "Beetle",
+    "Gecko",
+    "Hedgehog",
+    "Owl",
+    "Parrot",
+    "Tortoise",
+    "Walrus",
+    "Yeti",
+    "Wizard",
+    "Knight",
+    "Pilot",
+    "Goose",
+    "Moose",
+    "Squid",
+    "Narwhal",
+    "Orbit",
+    "Engine",
+    "Radio",
+    "Jukebox",
+    "Lighthouse",
+    "Bramble",
+    "Acorn",
+    "Pebble",
+    "Thunder",
+    "Heron",
+    "Magpie",
+    "Hare",
+    "Mammoth",
+    "Kraken",
+    "Dodo",
+    "Puffin",
+    "Lemur",
+    "Koala"
+   ],
+   "end": [
+    "TV",
+    "Live",
+    "Streams",
+    "OnAir",
+    "HQ",
+    "Gaming",
+    "Plays"
+   ]
+  },
+  "chat": {
+   "w": [
+    "Pebble",
+    "Moxie",
+    "Bean",
+    "Pip",
+    "Tofu",
+    "Mochi",
+    "Nimbus",
+    "Pixel",
+    "Zap",
+    "Bloop",
+    "Fizz",
+    "Taco",
+    "Waffle",
+    "Bramble",
+    "Biscuit",
+    "Pudding",
+    "Noodle",
+    "Sprout",
+    "Button",
+    "Jinx",
+    "Kip",
+    "Moss",
+    "Nugget",
+    "Dumpling",
+    "Pickle",
+    "Ziggy",
+    "Bop",
+    "Wisp",
+    "Doodle",
+    "Gizmo",
+    "Gadget",
+    "Ember",
+    "Juniper",
+    "Parsnip",
+    "Rascal",
+    "Scout",
+    "Ollie",
+    "Toffee",
+    "Fudge",
+    "Pretzel",
+    "Bagel",
+    "Clover",
+    "Tumble",
+    "Puddle",
+    "Wobble",
+    "Sprocket",
+    "Widget",
+    "Bonbon",
+    "Banjo",
+    "Kazoo",
+    "Pogo",
+    "Bonzo",
+    "Tinker",
+    "Sparky",
+    "Comet",
+    "Biscotti",
+    "Cobble",
+    "Flapjack",
+    "Gumdrop",
+    "Kipper",
+    "Lolly",
+    "Marzipan",
+    "Nutmeg",
+    "Pompom",
+    "Quokka",
+    "Sherbet",
+    "Truffle",
+    "Wiggle",
+    "Zigzag",
+    "Crumpet",
+    "Yoyo",
+    "Domino",
+    "Marble",
+    "Nacho",
+    "Tater",
+    "Cricket",
+    "Peanut",
+    "Fern",
+    "Hopscotch",
+    "Zippy"
+   ],
+   "end": [
+    "Plays",
+    "Live",
+    "TV",
+    "Games",
+    "Streams"
+   ],
+   "pre": [
+    "Its",
+    "Hey",
+    "Just",
+    "Simply",
+    "Hi"
+   ]
+  },
+  "cosy": {
+   "a": [
+    "Sleepy",
+    "Cosy",
+    "Snug",
+    "Gentle",
+    "Mellow",
+    "Drowsy",
+    "Dreamy",
+    "Quiet",
+    "Rainy",
+    "Foggy",
+    "Mossy",
+    "Toasty",
+    "Fuzzy",
+    "Honey",
+    "Pastel",
+    "Lazy",
+    "Calm",
+    "Hushed",
+    "Starlit",
+    "Moonlit",
+    "Sunday",
+    "Lavender",
+    "Cloudy",
+    "Dewy",
+    "Comfy",
+    "Woolly",
+    "Little",
+    "Slow",
+    "Autumn",
+    "Misty"
+   ],
+   "n": [
+    "Fern",
+    "Moth",
+    "Kettle",
+    "Cocoa",
+    "Mushroom",
+    "Acorn",
+    "Blanket",
+    "Candle",
+    "Pebble",
+    "Clover",
+    "Willow",
+    "Bramble",
+    "Hedgehog",
+    "Frog",
+    "Snail",
+    "Bee",
+    "Owl",
+    "Lantern",
+    "Teacup",
+    "Porridge",
+    "Marmalade",
+    "Meadow",
+    "Garden",
+    "Burrow",
+    "Cottage",
+    "Hearth",
+    "Puddle",
+    "Plum",
+    "Peach",
+    "Sprout",
+    "Daisy",
+    "Bunny",
+    "Duckling",
+    "Otter",
+    "Cardigan",
+    "Jumper",
+    "Slipper",
+    "Pillow",
+    "Toadstool",
+    "Bluebell",
+    "Robin",
+    "Badger",
+    "Sparrow",
+    "Firefly"
+   ],
+   "end": [
+    "Corner",
+    "Cafe",
+    "Club",
+    "Nook",
+    "Hour",
+    "Den",
+    "Lodge",
+    "Studio"
+   ],
+   "left": [
+    "Moss",
+    "Fern",
+    "Rain",
+    "Moon",
+    "Fog",
+    "Clover",
+    "Pebble",
+    "Willow",
+    "Acorn",
+    "Meadow",
+    "Ember",
+    "Frost",
+    "Thistle",
+    "Heather",
+    "Bramble",
+    "Daisy",
+    "Maple",
+    "Juniper",
+    "Ivy",
+    "Hazel",
+    "Rowan",
+    "Pine",
+    "Petal",
+    "Cloud",
+    "Star",
+    "Moth",
+    "Frog",
+    "Snail",
+    "Robin",
+    "Wren"
+   ],
+   "right": [
+    "Milk",
+    "Tea",
+    "Toast",
+    "Honey",
+    "Cocoa",
+    "Crumbs",
+    "Jam",
+    "Scones",
+    "Biscuits",
+    "Cake",
+    "Pie",
+    "Soup",
+    "Buns",
+    "Butter",
+    "Cream",
+    "Cookies",
+    "Crumble",
+    "Custard",
+    "Waffles",
+    "Pancakes",
+    "Porridge",
+    "Marmalade",
+    "Lemonade",
+    "Cider",
+    "Fudge",
+    "Toffee"
+   ]
+  },
+  "funny": {
+   "lvl": [
+    "Bad",
+    "Awful",
+    "Rubbish",
+    "Hopeless",
+    "Terrible",
+    "NotGreat",
+    "Decent",
+    "Average",
+    "Clumsy",
+    "Tragic",
+    "Questionable",
+    "Shocking",
+    "Dreadful"
+   ],
+   "skill": [
+    "BossFights",
+    "Parkour",
+    "Puzzles",
+    "Stealth",
+    "Aiming",
+    "Jumping",
+    "Driving",
+    "Fishing",
+    "Cooking",
+    "Racing",
+    "Building",
+    "Maps",
+    "Tutorials",
+    "Directions",
+    "Platforming",
+    "Chess",
+    "Speedruns",
+    "Strategy",
+    "Hiding",
+    "Dodging",
+    "Ladders",
+    "Doors",
+    "Swimming",
+    "Steering",
+    "Parking",
+    "Bowling",
+    "Juggling",
+    "Timing",
+    "Sneaking",
+    "Climbing",
+    "Escaping",
+    "Landing",
+    "Reloading"
+   ],
+   "n": [
+    "Potato",
+    "Pigeon",
+    "Goose",
+    "Toaster",
+    "Gremlin",
+    "Raccoon",
+    "Walrus",
+    "Duck",
+    "Parsnip",
+    "Cabbage",
+    "Sprout",
+    "Lobster",
+    "Badger",
+    "Hamster",
+    "Llama",
+    "Cactus",
+    "Kettle",
+    "Teaspoon",
+    "Crouton",
+    "Possum",
+    "Ferret",
+    "Gerbil",
+    "Penguin",
+    "Seagull",
+    "Haddock",
+    "Wombat",
+    "Trifle",
+    "Jellyfish",
+    "Crab"
+   ],
+   "has": [
+    "Wifi",
+    "APlan",
+    "Dreams",
+    "AHeadset",
+    "NoMap",
+    "ATorch",
+    "Opinions",
+    "ABackpack",
+    "Questions",
+    "AHat",
+    "NoBrakes",
+    "Ambition",
+    "AJetpack",
+    "Homework",
+    "ASecret",
+    "Lag",
+    "ABucket",
+    "AMission",
+    "Notes",
+    "AWebcam",
+    "AGrudge",
+    "NoChill",
+    "Snacks"
+   ],
+   "vibe": [
+    "Chaotic",
+    "Wholesome",
+    "Sleepy",
+    "Confused",
+    "Smug",
+    "Feral",
+    "Grumpy",
+    "Spicy",
+    "Dramatic"
+   ]
+  },
+  "u": {
+   "brand": {
+    "end": [
+     "TV",
+     "Live",
+     "Streams",
+     "OnAir",
+     "HQ",
+     "Gaming",
+     "Plays"
+    ]
+   },
+   "funny": {
+    "lvl": [
+     "Bad",
+     "Awful",
+     "Rubbish",
+     "Hopeless",
+     "Terrible",
+     "Not_Great",
+     "Decent",
+     "Average",
+     "Clumsy",
+     "Tragic",
+     "Questionable",
+     "Shocking",
+     "Dreadful"
+    ],
+    "skill": [
+     "Boss_Fights",
+     "Parkour",
+     "Puzzles",
+     "Stealth",
+     "Aiming",
+     "Jumping",
+     "Driving",
+     "Fishing",
+     "Cooking",
+     "Racing",
+     "Building",
+     "Maps",
+     "Tutorials",
+     "Directions",
+     "Platforming",
+     "Chess",
+     "Speedruns",
+     "Strategy",
+     "Hiding",
+     "Dodging",
+     "Ladders",
+     "Doors",
+     "Swimming",
+     "Steering",
+     "Parking",
+     "Bowling",
+     "Juggling",
+     "Timing",
+     "Sneaking",
+     "Climbing",
+     "Escaping",
+     "Landing",
+     "Reloading"
+    ],
+    "has": [
+     "Wifi",
+     "A_Plan",
+     "Dreams",
+     "A_Headset",
+     "No_Map",
+     "A_Torch",
+     "Opinions",
+     "A_Backpack",
+     "Questions",
+     "A_Hat",
+     "No_Brakes",
+     "Ambition",
+     "A_Jetpack",
+     "Homework",
+     "A_Secret",
+     "Lag",
+     "A_Bucket",
+     "A_Mission",
+     "Notes",
+     "A_Webcam",
+     "A_Grudge",
+     "No_Chill",
+     "Snacks"
+    ]
+   }
+  }
+ },
+ "article": {
+  "hero": {
+   "title": "📺 Twitch Name Generator",
+   "tagline": "Twitch usernames and channel names that fit the rules, from CopperOtterTV to RubbishAtParking."
+  },
+  "intro": "Your Twitch username is your channel's address, your name in chat and the brand on every clip. This **Twitch name generator** makes names in four styles (channel brands, short chat-friendly names, cosy names and funny ones), all 4 to 25 characters of letters, numbers and underscores, and it can build them around a word or name of your own. It's an unofficial tool, not made by or connected with Twitch or its owner, Amazon.",
+  "sections": [
+   {
+    "heading": "Eight good Twitch names",
+    "content": "<p>All eight came from the generator, two from each style:</p><ul><li><strong>CopperOtterTV</strong>: a channel brand. The TV on the end tells people it's a channel, not just a player.</li><li><strong>TheWanderingHeron</strong>: a brand that suits a variety streamer who plays a bit of everything.</li><li><strong>PebblePlays</strong>: chat-friendly, short enough that viewers can @ you without a typo.</li><li><strong>ItsMochi</strong>: the greeting style many streamers use, so the name reads like a hello.</li><li><strong>MossAndMilk</strong>: cosy and gentle, for slow games, crafts or late-night chatting.</li><li><strong>SleepyFernCorner</strong>: cosy, with a place word that makes the channel sound like somewhere to sit.</li><li><strong>RubbishAtParking</strong>: funny, and it gives chat something to tease you about.</li><li><strong>GooseWithAHeadset</strong>: a silly picture that people remember after one stream.</li></ul>"
+   },
+   {
+    "heading": "Twitch's username rules",
+    "content": "<ul><li><strong>Length:</strong> 4 to 25 characters.</li><li><strong>Characters:</strong> letters, numbers and underscores only. No spaces, hyphens, full stops or emoji, so <em>Copper Otter</em> becomes <em>CopperOtter</em> or <em>Copper_Otter</em>.</li><li><strong>Capitals:</strong> your channel address is your username in lower case (twitch.tv/copperottertv). Your display name can add capital letters to make it easier to read.</li><li><strong>Changing it:</strong> you can change your username once every 60 days, but not while you're live or while a video is uploading.</li><li><strong>Taken names:</strong> Twitch doesn't release inactive usernames, so a name someone registered years ago usually stays taken.</li></ul><p>Every name this generator makes fits those rules, and none starts with an underscore. Rules can change, so if a name won't go through, check Twitch's own help pages.</p>"
+   },
+   {
+    "heading": "How streamer names work",
+    "content": "<p>A Twitch name has to work in three places: said out loud on stream, typed in chat and read in a list of live channels. The names that stick tend to follow a few patterns:</p><ul><li><strong>A brand plus a channel word.</strong> TV, Live, Streams, Plays or HQ on the end makes a name sound like a show, and it's the usual way to get a name when the plain version is taken.</li><li><strong>Short and easy to type.</strong> Viewers tag you with @ and type your name to shout you out, so one or two short words beat a long phrase.</li><li><strong>A mood.</strong> Cosy streams have soft, homely names; competitive ones sound sharp. The name is the first hint of what the stream is like.</li><li><strong>A joke about yourself.</strong> Funny names that admit you're bad at something give chat a running joke from day one.</li></ul><p>Read your name in lower case before you commit, since that's how it appears in your channel address: two words run together can spell something you didn't mean. Every name here has been checked for that.</p>"
+   },
+   {
+    "heading": "Check it's free before you go live",
+    "content": "<p>The names here are free to use, but you need to check each one is available. Search twitch.tv/ followed by the name, or try it in your account settings. If you're building a channel, check the same handle on YouTube, TikTok and Instagram too, so viewers can find you everywhere under one name, and if the channel might grow into a brand, search the trade mark registers (the UK IPO or USPTO) as well. This isn't legal advice.</p><p>For the rest of your setup, try the <a href=\"youtube-channel-name-generator.html\">YouTube Channel Name Generator</a> for a matching channel and the <a href=\"discord-server-name-generator.html\">Discord Server Name Generator</a> for your community server. Gaming on console? The <a href=\"xbox-gamertag-generator.html\">Xbox Gamertag Generator</a> and <a href=\"psn-name-generator.html\">PSN Name Generator</a> follow those platforms' rules, and the <a href=\"gamertag-generator.html\">Gamertag Generator</a> makes names for anywhere.</p>"
+   }
+  ],
+  "faqs": [
+   {
+    "question": "How long can a Twitch username be?",
+    "answer": "Between 4 and 25 characters, using only letters, numbers and underscores. Every name this generator makes fits."
+   },
+   {
+    "question": "Can a Twitch name have spaces?",
+    "answer": "No. Use capital letters to show the words (CopperOtterTV), or choose Underscores in the Format box for Copper_Otter_TV."
+   },
+   {
+    "question": "How often can I change my Twitch name?",
+    "answer": "Once every 60 days, and not while you're live. In most languages your display name can only change the capital letters of your username, but you can do that at any time."
+   },
+   {
+    "question": "How do I make a Twitch name with my name in it?",
+    "answer": "Choose \"Yes, use the word below\" and type your name or nickname. With Milo you get names like MiloAndTea and MiloIsBadAtParking."
+   },
+   {
+    "question": "What are good Twitch names for cosy streamers?",
+    "answer": "Choose Cosy and chill for soft, homely names like MossAndMilk and SleepyFernCorner, which suit slow games, crafts and chatting streams."
+   },
+   {
+    "question": "What are some funny Twitch names?",
+    "answer": "Choose Funny for names that make fun of how you play, like RubbishAtParking, BadAtBossFights and ChaoticGooseEnergy."
+   },
+   {
+    "question": "Is this an official Twitch tool?",
+    "answer": "No. It's a free, unofficial name generator and isn't connected with Twitch or Amazon. Check a name is available on Twitch before you use it."
+   }
+  ]
+ }
+}
