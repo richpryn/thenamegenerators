@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Username Generator | The Name Generators</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://thenamegenerators.com/posts/roblox-username-generator.html">
+    <base target="_blank">
+    <link rel="icon" href="/favicon.ico?v=626227da" sizes="any">
+    <link rel="icon" href="/favicon.svg?v=727d2202" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
+</head>
+<body class="embed-page">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      
+    </defs></svg>
+    <main class="embed-wrap">
+        <p class="embed-head"><b>Roblox Username Generator</b> <a href="https://thenamegenerators.com/posts/roblox-username-generator.html?utm_source=embed&amp;utm_medium=widget" rel="noopener">More at The Name Generators</a></p>
+        <section class="sheet hd simple-generator" id="generator" aria-label="Roblox Username Generator">
+                <div class="gen-grid">
+          <div class="group">
+            <label class="label" for="filter-style">Style</label>
+            <div class="ctl sel hd">
+              <select id="filter-style" name="style" data-filter="style">
+                <option value="any">Any style</option>
+                <option value="aesthetic">Aesthetic (lilacmoth)</option>
+                <option value="cute">Cute (MochiBunny)</option>
+                <option value="cool">Cool (NebulaSurfer)</option>
+                <option value="funny">Funny (DramaticPigeon)</option>
+                <option value="games">Games (BadgeHunter)</option>
+                <option value="word">From a word (PickleTheBrave)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="group" role="group" aria-labelledby="filter-format-label">
+            <div class="label"><span id="filter-format-label">Format</span><span class="pen" data-hint-for="format" aria-hidden="true"></span></div>
+            <div class="opts" data-buttons-for="format">
+              <button type="button" class="opt hd tap" data-value="plain" data-hint="" aria-pressed="true">Words only</button>
+              <button type="button" class="opt hd tap" data-value="numbers" data-hint="e.g. MochiBunny77" title="With a number (MochiBunny77)" aria-pressed="false">With a number</button>
+              <button type="button" class="opt hd tap" data-value="underscore" data-hint="e.g. Mochi_Bunny" title="Underscore (Mochi_Bunny)" aria-pressed="false">Underscore</button>
+            </div>
+            <input type="hidden" id="filter-format" name="format" data-filter="format" value="plain">
+          </div>
+
+          <div class="group">
+            <label class="label" for="filter-word">A nickname or favourite word</label>
+            <div class="ctl hd"><input type="text" id="filter-word" name="word" data-filter="word" placeholder="e.g. Pickle, Comet, Bean" class="name-input" autocomplete="off"></div>
+          </div></div>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="false">
+                    <p class="results-empty">Press Generate Names for 8 roblox usernames.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
+                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+    </main>
+    <script type="application/json" id="generator-config">{"title":"Roblox Username Generator","seoTitle":"Roblox Username Generator: Cute, Aesthetic & Cool Names","slug":"roblox-username-generator","noEcho":true,"maxLength":20,"nameSource":{"kind":"invented","note":"Names are built from soft colours, sweets, animals, space words, silly objects and words from obbies and tycoons, and every one fits the Roblox username rules. Game titles, YouTubers, brands, real names, ages and anything rude were left out, and the site has no connection to Roblox Corporation."},"filters":{"style":{"label":"Style","options":["any","aesthetic","cute","cool","funny","games","word"],"optionLabels":{"any":"Any style","aesthetic":"Aesthetic (lilacmoth)","cute":"Cute (MochiBunny)","cool":"Cool (NebulaSurfer)","funny":"Funny (DramaticPigeon)","games":"Games (BadgeHunter)","word":"From a word (PickleTheBrave)"}},"format":{"label":"Format","options":["plain","numbers","underscore"],"optionLabels":{"plain":"Words only","numbers":"With a number (MochiBunny77)","underscore":"Underscore (Mochi_Bunny)"}},"word":{"type":"text","label":"A nickname or favourite word","placeholder":"e.g. Pickle, Comet, Bean","default":"Pickle","example":"Pickle","username":true,"showWhen":{"style":["word"]},"noUnderscore":true}},"recipe":"switch","on":"style","cases":{"any":{"recipe":"switch","on":"format","cases":{"plain":{"recipe":"template","template":["[aesthetic.a][aesthetic.n]","[cute.a][cute.n]","[cool.a][cool.n]","[funny.a][funny.n]","[funny.whole]","[games.a][games.n]"]},"numbers":{"recipe":"template","template":["[aesthetic.a][aesthetic.n][num]","[cute.a][cute.n][num]","[cool.a][cool.n][num]","[funny.a][funny.n][num]","[funny.whole][num]","[games.a][games.n][num]"]},"underscore":{"recipe":"template","template":["[aesthetic.a]_[aesthetic.n]","[cute.a]_[cute.n]","[cool.a]_[cool.n]","[funny.a]_[funny.n]","[games.a]_[games.n]"]}}},"aesthetic":{"recipe":"switch","on":"format","cases":{"plain":{"recipe":"template","template":["[aesthetic.a][aesthetic.n]"]},"numbers":{"recipe":"template","template":["[aesthetic.a][aesthetic.n][num]"]},"underscore":{"recipe":"template","template":["[aesthetic.a]_[aesthetic.n]"]}}},"cute":{"recipe":"switch","on":"format","cases":{"plain":{"recipe":"template","template":["[cute.a][cute.n]"]},"numbers":{"recipe":"template","template":["[cute.a][cute.n][num]"]},"underscore":{"recipe":"template","template":["[cute.a]_[cute.n]"]}}},"cool":{"recipe":"switch","on":"format","cases":{"plain":{"recipe":"template","template":["[cool.a][cool.n]"]},"numbers":{"recipe":"template","template":["[cool.a][cool.n][num]"]},"underscore":{"recipe":"template","template":["[cool.a]_[cool.n]"]}}},"funny":{"recipe":"switch","on":"format","cases":{"plain":{"recipe":"template","template":["[funny.a][funny.n]","[funny.whole]"]},"numbers":{"recipe":"template","template":["[funny.a][funny.n][num]","[funny.whole][num]"]},"underscore":{"recipe":"template","template":["[funny.a]_[funny.n]"]}}},"games":{"recipe":"switch","on":"format","cases":{"plain":{"recipe":"template","template":["[games.a][games.n]"]},"numbers":{"recipe":"template","template":["[games.a][games.n][num]"]},"underscore":{"recipe":"template","template":["[games.a]_[games.n]"]}}},"word":{"recipe":"switch","on":"format","cases":{"plain":{"recipe":"template","template":["{word}[word.end]","[word.start]{word}","[word.start]{word}[word.end]","{word}The[word.title]","{word}And[word.pal]"]},"numbers":{"recipe":"template","template":["{word}[word.end][num]","[word.start]{word}[num]"]},"underscore":{"recipe":"template","template":["{word}_[word.end]","[word.start]_{word}","[word.start]{word}_[word.end]"]}}}},"data":{"aesthetic":{"a":["lilac","velvet","misty","dewy","hazy","satin","moonlit","starlit","rosy","dusty","frosted","pearly","sage","lavender","matcha","mocha","peony","faded","glossy","blush","opal","amber","coral","celeste","willow","fern"],"n":["moth","fable","halo","bloom","glow","lace","ribbon","sparrow","swan","wish","dusk","dawn","aura","skies","tide","sorbet","petals","angel","snow","rain","lily","iris","dove","latte","tulle"]},"cute":{"a":["Mochi","Boba","Sprinkle","Marshmallow","Caramel","Toffee","Cocoa","Vanilla","Strawberry","Blueberry","Lemon","Melon","Kiwi","Bubblegum","Jelly","Candy","Sugarplum","Dumpling","Pudding","Cupcake","Honeybun","Snowdrop","Buttercup","Bluebell","Clover","Tulip","Poppy","Pumpkin","Cinnamon","Gumdrop"],"n":["Bunny","Pup","Cub","Chick","Bear","Panda","Fox","Duckie","Froggy","Lamb","Mouse","Bee","Paws","Puff","Bean","Cloud","Star","Heart","Blossom","Owlet","Fawn","Seal","Otter","Kitten","Snail","Koala","Pony","Hedgehog"]},"cool":{"a":["Chrome","Cobalt","Zenith","Vector","Orbit","Radiant","Quasar","Meteor","Nebula","Astro","Eclipse","Stellar","Polar","Glacier","Carbon","Prism","Neutron","Photon","Cosmo","Fusion","Velocity","Pulsar","Aero","Tornado","Cyclone","Granite","Magnet","Sapphire","Infinity","Hydro"],"n":["Striker","Dasher","Glide","Flyer","Runner","Jumper","Surfer","Drifter","Boost","Burst","Flare","Streak","Wing","Arrow","Sprinter","Comet","Voyager","Racer","Spinner","Glider","Zoom","Flash","Swoop","Leap","Charge","Blaster","Rush","Pilot"]},"funny":{"a":["Laggy","Flustered","Chaotic","Bewildered","Distracted","Fumbling","Tumbling","Jittery","Dramatic","Snoozy","Confused","Hungry","Dizzy","Noisy","Grumbly","Giddy","Puzzled","Frazzled","Overexcited","Muddled","Speedy","Snoring","Ticklish","Peckish","Rumbly","Wobbling","Sniffly","Startled","Baffled","Jumpy"],"n":["Spud","Pigeon","Crouton","Yeti","Wombat","Toaster","Teaspoon","Kettle","Jellyfish","Lobster","Gnome","Hippo","Moose","Emu","Slipper","Wellie","Trolley","Kipper","Nacho","Gherkin","Baguette","Pretzel","Cabbage","Radish","Spatula","Puffin","Narwhal","Alpaca","Hedgehog","Pelican"],"whole":["OofIFellOff","MissedTheJump","FellOffAgain","AfkForSnacks","BackInFiveMins","RespawnPlease","TrippedOnAir","OneMoreRound","WrongButton","PressedJumpLate","AlwaysLastPlace","SnackBreakAgain","OopsWrongServer","LostMyCheckpoint","JumpedTooEarly","WalkedIntoAWall","WavingAtEveryone","DancingInTheLobby","WhereDidIRespawn","StillLoading","MyCatPressedJump","ForgotHowToJump","PleaseWaitForMe","LagMadeMeDoIt","JustExploring","SpinningInCircles","TooManyHats","BrbGettingToast","NotAPro","HelloImNew"]},"games":{"a":["Obby","Tycoon","Parkour","Lava","Checkpoint","Lobby","Spawn","Badge","Server","Teleport","Sandbox","Trampoline","Treasure","Tower","Kart","Puzzle","Escape","Quest","Treehouse","Skatepark","Waterslide","Island","Speedrun","Zipline","Jetpack","Hoverboard"],"n":["Runner","Jumper","Climber","Hopper","Collector","Hunter","Champ","Explorer","Racer","Dasher","Finder","Seeker","Maker","Legend","Ace","Pro","Boss","Chaser","Rider","Skipper","Scout","Planner","Designer","Wizard"]},"word":{"start":["Super","Mega","Hyper","Ultra","Turbo","Cosmic","Speedy","Sneaky","Lucky","Happy","Sunny","Mighty","Jolly","Bouncy","Fluffy","Agent","Captain","Sir","Little","Sparkly","Zippy","Brave","Royal","Golden"],"end":["Star","Dash","Glow","Puff","Zoom","Quest","Comet","Bean","Bloom","Sprout","Pop","Jump","Boost","Wave","Burst","Hop","Flip","Bounce","Zip","Twirl","Paws","Wing","Pup","Cub","Bot","Rocket","Shine","Builder","Runner","Jumper","Racer","Hopper","Glider","Dancer","Skater","Wizard","Explorer","Doodle","Sparkle","Blaze"],"title":["Brave","Great","Bold","Swift","Mighty","Clever","Kind","Quick","Fearless","Daring","Wise","Speedy","Curious"],"pal":["Panda","Bunny","Pup","Penguin","Otter","Duck","Fox","Bear","Koala","Frog","Owl","Moose","Yeti","Hippo","Llama","Puffin","Hamster","Kitten"]},"num":["22","33","44","55","77","99","101","123","202","222","246","303","321","333","404","456","505","555","707","777","808","909","999"]}}</script>
+    <script src="../lib/recipe-engine.js?v=1e6b57bd"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
+    <script src="../lib/outline.js?v=bb3e12d8"></script>
+    <script>(function(){if(window.parent===window)return;var last=0;function send(){var h=Math.ceil(document.documentElement.getBoundingClientRect().height);if(h!==last){last=h;window.parent.postMessage({tngEmbedHeight:h},'*');}}if('ResizeObserver' in window)new ResizeObserver(send).observe(document.body);window.addEventListener('load',send);send();})();</script>
+</body>
+</html>

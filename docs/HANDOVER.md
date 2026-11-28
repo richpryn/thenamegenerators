@@ -28,7 +28,7 @@ From 23 Nov, Rich runs ONE TNG session for generators, content and design. Read 
 
 
 ### Where things stand
-- About 430 generators, 33 hubs, 16 Naming Library pages (`/reference/`), 20 name lists (`/names/`), 10 guides, the Business Name Checker, Spin the Wheel and the name tools. All live and validating.
+- About 445 generators, 34 hubs, 16 Naming Library pages (`/reference/`), 20 name lists (`/names/`), 10 guides, the Business Name Checker, Spin the Wheel and the name tools. All live and validating.
 - **Business:** 96 trade generators in six hubs (biz_food, biz_beauty, biz_trades, biz_shops, biz_services, biz_care) plus business, company, brand and cafe, all with a Check button. The checker is at `business-name-checker.html`:
   - **live in the browser:** RDAP domain checks, and US state open-data lookups for CO/NY/OR/CT/TX
   - **links:** the UK Companies House name check, trade mark searches and social handles
@@ -61,6 +61,14 @@ From Rich's 700-keyword export (Semrush-style volumes and difficulty), checked a
 - Drawings are existing motifs as stand-ins; better fits would be new drawings (cocktail glass, sailing boat or narrowboat, motorcycle helmet, clown, luchador mask or belt, newspaper, scimitar for Redguard). On Site Jobs.
 - Older Elder Scrolls pages (nord, dunmer, altmer, khajiit) lack the fan-made line, nameSource, seoTitle and noEcho, and nord has two combinations under 200. On Site Jobs as an agent job.
 - Next from the same review (waiting for Rich's go): Middle Name and Baby Name from Parents (ONS data), platform username pages (Twitch, Xbox, PSN, Roblox, TikTok, Instagram), a Domain Name Generator with the RDAP check, a Names from Around the World hub, and a Random Name Generator.
+
+### 29 Nov: batch 2 (approved by Rich, `tng-ideas-2026-11-28b`)
+- **Live:** domain_name (checkName; uses the checker's RDAP), twitch_username, xbox_gamertag, psn_name, roblox_username, tiktok_username, instagram_username (all in `concepts`), random_name and middle_name (`people`), and a new hub **`world`** ("Names from Around the World", categories/world-names.html) with polish_name, irish_name, french_name, spanish_name, italian_name and arabic_name, plus the existing real-name history pages.
+- **Real-name pages** use `nameSource.kind: "recorded"` (new lead line "These are real recorded names." in build-pages.js) and provenance badges. Sources, all credited on the pages: ONS (OGL; UK first names, decade top-100s, and the 2026 baby-surnames release), US SSA via the CC0 CRAN `babynames` package (ssa.gov blocks the container, so US data stops at 2017), US Census 2010 surnames, dane.gov.pl PESEL lists (CC0), CSO Ireland (CC BY 4.0) with Matheson 1894 surnames, INSEE prénoms plus surnames counted from INSEE death files, INE (CC BY 4.0), Istat Conta nomi plus 13 comune open datasets for Italian surnames, Wikidata (CC0) for Arabic. Full names are pre-joined lists so famous pairings (Robert Lewandowski, Cyril Smith) can't appear.
+- **Engine additions** (lib/recipe-engine.js header documents them): `banSubstrings` (generator), `lowercase` (generator), and on `username` text filters `maxChars`, `startLetter`, `noUnderscore`.
+- **Not built:** Dutch (SVB blocks the container; Meertens data needs permission). On Site Jobs.
+- **Waiting for Rich:** Baby Name Generator from Parents' Names (new tool). It's committed only on the local preview branch `worktree-agent-aa0f6e5c80511d9df` (commit 587a26b); a patch copy is in the session scratchpad. Both are lost when this container goes, so if Rich approves in a later session, rebuild from the Site Jobs description (lib/parentnames.js matcher over ons-names.json, four groups, blends behind a button).
+- Removed "random name generator" from character_name's seoKeywords so it doesn't compete with random_name.
 
 ### Backlog (approved by Rich; build one a week)
 - **Franchise and character pages:** WoW Dwarf, WoW Tauren, funny WoW names by class, FF14 Viera, Transformers-style, funny Marvel Rivals, Sims names. Write these "in the style of", with original names only.

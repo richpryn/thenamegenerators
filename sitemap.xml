@@ -3,20 +3,20 @@
   <!-- Homepage -->
   <url>
     <loc>https://thenamegenerators.com/</loc>
-    <lastmod>2026-11-28</lastmod>
+    <lastmod>2026-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <!-- All Generators Page -->
   <url>
     <loc>https://thenamegenerators.com/all-generators.html</loc>
-    <lastmod>2026-11-28</lastmod>
+    <lastmod>2026-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://thenamegenerators.com/business.html</loc>
-    <lastmod>2026-11-28</lastmod>
+    <lastmod>2026-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -81,21 +81,21 @@
   <!-- Business Name Checker -->
   <url>
     <loc>https://thenamegenerators.com/business-name-checker.html</loc>
-    <lastmod>2026-11-28</lastmod>
+    <lastmod>2026-11-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- HTML Sitemap -->
   <url>
     <loc>https://thenamegenerators.com/sitemap.html</loc>
-    <lastmod>2026-11-28</lastmod>
+    <lastmod>2026-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- Category: Blogs & Brands -->
   <url>
     <loc>https://thenamegenerators.com/categories/concepts-names.html</loc>
-    <lastmod>2026-11-28</lastmod>
+    <lastmod>2026-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -214,7 +214,7 @@
   <!-- Category: Characters -->
   <url>
     <loc>https://thenamegenerators.com/categories/people-names.html</loc>
-    <lastmod>2026-11-28</lastmod>
+    <lastmod>2026-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -271,6 +271,13 @@
   <url>
     <loc>https://thenamegenerators.com/categories/historical-names.html</loc>
     <lastmod>2026-11-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Category: World -->
+  <url>
+    <loc>https://thenamegenerators.com/categories/world-names.html</loc>
+    <lastmod>2026-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -400,6 +407,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Arabic Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/arabic-name-generator.html</loc>
+    <lastmod>2026-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Argonian Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/argonian-name-generator.html</loc>
@@ -515,7 +529,7 @@
   <!-- Generator: Blog Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/blog-name-generator.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -781,7 +795,7 @@
   <!-- Generator: Company Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/company-name-generator.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1013,6 +1027,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/dog-walking-name-generator.html</loc>
     <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Domain Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/domain-name-generator.html</loc>
+    <lastmod>2026-11-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1303,6 +1324,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: French Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/french-name-generator.html</loc>
+    <lastmod>2026-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Funny Minecraft Sword Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/funny-minecraft-sword-name-generator.html</loc>
@@ -1327,7 +1355,7 @@
   <!-- Generator: Futuristic Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/futuristic-name-generator.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1355,7 +1383,7 @@
   <!-- Generator: Gamertag Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/gamertag-generator.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1369,7 +1397,7 @@
   <!-- Generator: Genie Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/genie-name-generator.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1730,6 +1758,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Instagram Username Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/instagram-username-generator.html</loc>
+    <lastmod>2026-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Insurance Agency Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/insurance-agency-name-generator.html</loc>
@@ -1744,10 +1779,24 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Irish Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/irish-name-generator.html</loc>
+    <lastmod>2026-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Island Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/island-name-generator.html</loc>
     <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Italian Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/italian-name-generator.html</loc>
+    <lastmod>2026-11-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1803,7 +1852,7 @@
   <!-- Generator: Kids' Gamertag Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/kids-gamertag-generator.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1873,7 +1922,7 @@
   <!-- Generator: Last Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/last-name-generator.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -2038,6 +2087,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Middle Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/middle-name-generator.html</loc>
+    <lastmod>2026-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Minecraft Clan Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/minecraft-clan-name-generator.html</loc>
@@ -2083,7 +2139,7 @@
   <!-- Generator: Minecraft Username Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/minecraft-username-generator.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -2430,6 +2486,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Polish Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/polish-name-generator.html</loc>
+    <lastmod>2026-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Pony Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/pony-name-generator.html</loc>
@@ -2493,6 +2556,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: PSN Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/psn-name-generator.html</loc>
+    <lastmod>2026-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Punk Band Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/punk-band-name-generator.html</loc>
@@ -2504,6 +2574,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/quiz-team-name-generator.html</loc>
     <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Random Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/random-name-generator.html</loc>
+    <lastmod>2026-11-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -2567,6 +2644,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/rnb-name-generator.html</loc>
     <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Roblox Username Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/roblox-username-generator.html</loc>
+    <lastmod>2026-11-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -2794,6 +2878,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Spanish Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/spanish-name-generator.html</loc>
+    <lastmod>2026-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Spell Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/spell-name-generator.html</loc>
@@ -3004,6 +3095,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: TikTok Username Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/tiktok-username-generator.html</loc>
+    <lastmod>2026-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Trap Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/trap-name-generator.html</loc>
@@ -3036,6 +3134,13 @@
   <url>
     <loc>https://thenamegenerators.com/posts/tutoring-business-name-generator.html</loc>
     <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Generator: Twitch Name Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/twitch-name-generator.html</loc>
+    <lastmod>2026-11-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -3277,6 +3382,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Generator: Xbox Gamertag Generator -->
+  <url>
+    <loc>https://thenamegenerators.com/posts/xbox-gamertag-generator.html</loc>
+    <lastmod>2026-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Generator: Yeti Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/yeti-name-generator.html</loc>
@@ -3294,7 +3406,7 @@
   <!-- Generator: YouTube Channel Name Generator -->
   <url>
     <loc>https://thenamegenerators.com/posts/youtube-channel-name-generator.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
