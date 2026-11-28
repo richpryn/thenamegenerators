@@ -2548,9 +2548,9 @@
     "navLabel": "Names from Around the World",
     "heading": "Names from Around the World: Real Names by Country and Era",
     "seoTitle": "Names from Around the World: Real Name Generators",
-    "description": "Real names from official records: Polish and Irish names today, and Viking, Roman, Greek, Anglo-Saxon and medieval names from history.",
-    "seoDescription": "Real names from around the world, from official records: Polish and Irish first names and surnames, plus Viking, Roman and medieval names.",
-    "intro": "<p>These generators use real names, taken from official records rather than made up. The <a href=\"../posts/polish-name-generator.html\">Polish</a> and <a href=\"../posts/irish-name-generator.html\">Irish</a> name generators draw on national registers of names people have today, with each country's surname rules built in. For names from the past, the <a href=\"../posts/viking-name-generator.html\">Viking</a>, <a href=\"../posts/roman-name-generator.html\">Roman</a> and <a href=\"../posts/anglo-saxon-name-generator.html\">Anglo-Saxon</a> generators use names recorded in sagas, inscriptions and charters, and explain how each culture put a name together.</p>",
+    "description": "Real names from official records: French, Spanish, Italian, Polish, Irish and Arabic names today, plus Viking, Roman and medieval names from history.",
+    "seoDescription": "Real names from official records: French, Spanish, Italian, Polish, Irish and Arabic first names and surnames, plus Viking, Roman and medieval names.",
+    "intro": "<p>These generators use real names, taken from official records rather than made up. The <a href=\"../posts/french-name-generator.html\">French</a>, <a href=\"../posts/spanish-name-generator.html\">Spanish</a>, <a href=\"../posts/italian-name-generator.html\">Italian</a>, <a href=\"../posts/polish-name-generator.html\">Polish</a> and <a href=\"../posts/irish-name-generator.html\">Irish</a> name generators draw on national records of names people have today, with each country's surname rules built in, and the <a href=\"../posts/arabic-name-generator.html\">Arabic Name Generator</a> shows how Arabic names are put together. For British and American names, try the <a href=\"../posts/random-name-generator.html\">Random Name Generator</a>. For names from the past, the <a href=\"../posts/viking-name-generator.html\">Viking</a>, <a href=\"../posts/roman-name-generator.html\">Roman</a> and <a href=\"../posts/anglo-saxon-name-generator.html\">Anglo-Saxon</a> generators use names recorded in sagas, inscriptions and charters, and explain how each culture put a name together.</p>",
     "featured": [
       {
         "key": "polish_name",
@@ -2572,15 +2572,18 @@
     "generators": [
       "polish_name",
       "irish_name",
+      "french_name",
+      "spanish_name",
+      "italian_name",
       "arabic_name",
+      "random_name",
       "viking",
       "roman",
       "ancient_greek",
       "anglo_saxon",
       "medieval",
       "victorian",
-      "last_name",
-      "random_name"
+      "last_name"
     ],
     "eyebrow": "Real names, country by country",
     "approach": {
