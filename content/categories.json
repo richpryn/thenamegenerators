@@ -22,6 +22,7 @@
     "generators": [
       "blog",
       "brand",
+      "domain_name",
       "youtube",
       "podcast",
       "gamertag",
