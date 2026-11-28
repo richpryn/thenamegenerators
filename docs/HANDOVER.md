@@ -68,6 +68,7 @@ From Rich's 700-keyword export (Semrush-style volumes and difficulty), checked a
 - **Engine additions** (lib/recipe-engine.js header documents them): `banSubstrings` (generator), `lowercase` (generator), and on `username` text filters `maxChars`, `startLetter`, `noUnderscore`.
 - **Not built:** Dutch (SVB blocks the container; Meertens data needs permission). On Site Jobs.
 - **Waiting for Rich:** Baby Name Generator from Parents' Names (new tool). It's committed only on the local preview branch `worktree-agent-aa0f6e5c80511d9df` (commit 587a26b); a patch copy is in the session scratchpad. Both are lost when this container goes, so if Rich approves in a later session, rebuild from the Site Jobs description (lib/parentnames.js matcher over ons-names.json, four groups, blends behind a button).
+- 29 Nov (later): Rich ruled "If they are real names don't leave them out": real-name pages now keep slang, brand, word and famous single names; only whole famous pairings are blocked, women's surnames (Kaur, Begum) follow girls' names only. Still left as editorial choices (on Site Jobs): Polish page uses Polish spellings only; Italian town lists drop non-citizens; Arabic list leaves out European names. Middle Name can't block a clash between a typed first name and a middle name (Olivia Rodrigo).
 - Removed "random name generator" from character_name's seoKeywords so it doesn't compete with random_name.
 
 ### Backlog (approved by Rich; build one a week)
