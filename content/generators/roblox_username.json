@@ -1,0 +1,794 @@
+{
+  "key": "roblox_username",
+  "title": "Roblox Username Generator",
+  "seoTitle": "Roblox Username Generator: Cute, Aesthetic & Cool Names",
+  "slug": "roblox-username-generator",
+  "icon": "🧱",
+  "category": "concepts",
+  "published": "2026-11-29",
+  "description": "Roblox username ideas that fit the rules: cute, aesthetic, cool, funny and game-themed names, with or without a number, plus a quick safety tip.",
+  "seoKeywords": "roblox username generator, roblox name generator, roblox username ideas, cute roblox usernames, aesthetic roblox usernames, cool roblox usernames, funny roblox usernames, roblox names, good roblox usernames, roblox usernames for girls, roblox usernames for boys",
+  "isPopular": false,
+  "noun": "Roblox Usernames",
+  "noEcho": true,
+  "maxLength": 20,
+  "nameSource": {
+    "kind": "invented",
+    "note": "Names are built from soft colours, sweets, animals, space words, silly objects and words from obbies and tycoons, and every one fits the Roblox username rules. Game titles, YouTubers, brands, real names, ages and anything rude were left out, and the site has no connection to Roblox Corporation."
+  },
+  "filters": {
+    "style": {
+      "label": "Style",
+      "options": [
+        "any",
+        "aesthetic",
+        "cute",
+        "cool",
+        "funny",
+        "games",
+        "word"
+      ],
+      "optionLabels": {
+        "any": "Any style",
+        "aesthetic": "Aesthetic (lilacmoth)",
+        "cute": "Cute (MochiBunny)",
+        "cool": "Cool (NebulaSurfer)",
+        "funny": "Funny (DramaticPigeon)",
+        "games": "Games (BadgeHunter)",
+        "word": "From a word (PickleTheBrave)"
+      }
+    },
+    "format": {
+      "label": "Format",
+      "options": [
+        "plain",
+        "numbers",
+        "underscore"
+      ],
+      "optionLabels": {
+        "plain": "Words only",
+        "numbers": "With a number (MochiBunny77)",
+        "underscore": "Underscore (Mochi_Bunny)"
+      }
+    },
+    "word": {
+      "type": "text",
+      "label": "A nickname or favourite word",
+      "placeholder": "e.g. Pickle, Comet, Bean",
+      "default": "Pickle",
+      "example": "Pickle",
+      "username": true,
+      "showWhen": {
+        "style": [
+          "word"
+        ]
+      },
+      "noUnderscore": true
+    }
+  },
+  "recipe": "switch",
+  "on": "style",
+  "cases": {
+    "any": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "plain": {
+          "recipe": "template",
+          "template": [
+            "[aesthetic.a][aesthetic.n]",
+            "[cute.a][cute.n]",
+            "[cool.a][cool.n]",
+            "[funny.a][funny.n]",
+            "[funny.whole]",
+            "[games.a][games.n]"
+          ]
+        },
+        "numbers": {
+          "recipe": "template",
+          "template": [
+            "[aesthetic.a][aesthetic.n][num]",
+            "[cute.a][cute.n][num]",
+            "[cool.a][cool.n][num]",
+            "[funny.a][funny.n][num]",
+            "[funny.whole][num]",
+            "[games.a][games.n][num]"
+          ]
+        },
+        "underscore": {
+          "recipe": "template",
+          "template": [
+            "[aesthetic.a]_[aesthetic.n]",
+            "[cute.a]_[cute.n]",
+            "[cool.a]_[cool.n]",
+            "[funny.a]_[funny.n]",
+            "[games.a]_[games.n]"
+          ]
+        }
+      }
+    },
+    "aesthetic": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "plain": {
+          "recipe": "template",
+          "template": [
+            "[aesthetic.a][aesthetic.n]"
+          ]
+        },
+        "numbers": {
+          "recipe": "template",
+          "template": [
+            "[aesthetic.a][aesthetic.n][num]"
+          ]
+        },
+        "underscore": {
+          "recipe": "template",
+          "template": [
+            "[aesthetic.a]_[aesthetic.n]"
+          ]
+        }
+      }
+    },
+    "cute": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "plain": {
+          "recipe": "template",
+          "template": [
+            "[cute.a][cute.n]"
+          ]
+        },
+        "numbers": {
+          "recipe": "template",
+          "template": [
+            "[cute.a][cute.n][num]"
+          ]
+        },
+        "underscore": {
+          "recipe": "template",
+          "template": [
+            "[cute.a]_[cute.n]"
+          ]
+        }
+      }
+    },
+    "cool": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "plain": {
+          "recipe": "template",
+          "template": [
+            "[cool.a][cool.n]"
+          ]
+        },
+        "numbers": {
+          "recipe": "template",
+          "template": [
+            "[cool.a][cool.n][num]"
+          ]
+        },
+        "underscore": {
+          "recipe": "template",
+          "template": [
+            "[cool.a]_[cool.n]"
+          ]
+        }
+      }
+    },
+    "funny": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "plain": {
+          "recipe": "template",
+          "template": [
+            "[funny.a][funny.n]",
+            "[funny.whole]"
+          ]
+        },
+        "numbers": {
+          "recipe": "template",
+          "template": [
+            "[funny.a][funny.n][num]",
+            "[funny.whole][num]"
+          ]
+        },
+        "underscore": {
+          "recipe": "template",
+          "template": [
+            "[funny.a]_[funny.n]"
+          ]
+        }
+      }
+    },
+    "games": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "plain": {
+          "recipe": "template",
+          "template": [
+            "[games.a][games.n]"
+          ]
+        },
+        "numbers": {
+          "recipe": "template",
+          "template": [
+            "[games.a][games.n][num]"
+          ]
+        },
+        "underscore": {
+          "recipe": "template",
+          "template": [
+            "[games.a]_[games.n]"
+          ]
+        }
+      }
+    },
+    "word": {
+      "recipe": "switch",
+      "on": "format",
+      "cases": {
+        "plain": {
+          "recipe": "template",
+          "template": [
+            "{word}[word.end]",
+            "[word.start]{word}",
+            "[word.start]{word}[word.end]",
+            "{word}The[word.title]",
+            "{word}And[word.pal]"
+          ]
+        },
+        "numbers": {
+          "recipe": "template",
+          "template": [
+            "{word}[word.end][num]",
+            "[word.start]{word}[num]"
+          ]
+        },
+        "underscore": {
+          "recipe": "template",
+          "template": [
+            "{word}_[word.end]",
+            "[word.start]_{word}",
+            "[word.start]{word}_[word.end]"
+          ]
+        }
+      }
+    }
+  },
+  "data": {
+    "aesthetic": {
+      "a": [
+        "lilac",
+        "velvet",
+        "misty",
+        "dewy",
+        "hazy",
+        "satin",
+        "moonlit",
+        "starlit",
+        "rosy",
+        "dusty",
+        "frosted",
+        "pearly",
+        "sage",
+        "lavender",
+        "matcha",
+        "mocha",
+        "peony",
+        "faded",
+        "glossy",
+        "blush",
+        "opal",
+        "amber",
+        "coral",
+        "celeste",
+        "willow",
+        "fern"
+      ],
+      "n": [
+        "moth",
+        "fable",
+        "halo",
+        "bloom",
+        "glow",
+        "lace",
+        "ribbon",
+        "sparrow",
+        "swan",
+        "wish",
+        "dusk",
+        "dawn",
+        "aura",
+        "skies",
+        "tide",
+        "sorbet",
+        "petals",
+        "angel",
+        "snow",
+        "rain",
+        "lily",
+        "iris",
+        "dove",
+        "latte",
+        "tulle"
+      ]
+    },
+    "cute": {
+      "a": [
+        "Mochi",
+        "Boba",
+        "Sprinkle",
+        "Marshmallow",
+        "Caramel",
+        "Toffee",
+        "Cocoa",
+        "Vanilla",
+        "Strawberry",
+        "Blueberry",
+        "Lemon",
+        "Melon",
+        "Kiwi",
+        "Bubblegum",
+        "Jelly",
+        "Candy",
+        "Sugarplum",
+        "Dumpling",
+        "Pudding",
+        "Cupcake",
+        "Honeybun",
+        "Snowdrop",
+        "Buttercup",
+        "Bluebell",
+        "Clover",
+        "Tulip",
+        "Poppy",
+        "Pumpkin",
+        "Cinnamon",
+        "Gumdrop"
+      ],
+      "n": [
+        "Bunny",
+        "Pup",
+        "Cub",
+        "Chick",
+        "Bear",
+        "Panda",
+        "Fox",
+        "Duckie",
+        "Froggy",
+        "Lamb",
+        "Mouse",
+        "Bee",
+        "Paws",
+        "Puff",
+        "Bean",
+        "Cloud",
+        "Star",
+        "Heart",
+        "Blossom",
+        "Owlet",
+        "Fawn",
+        "Seal",
+        "Otter",
+        "Kitten",
+        "Snail",
+        "Koala",
+        "Pony",
+        "Hedgehog"
+      ]
+    },
+    "cool": {
+      "a": [
+        "Chrome",
+        "Cobalt",
+        "Zenith",
+        "Vector",
+        "Orbit",
+        "Radiant",
+        "Quasar",
+        "Meteor",
+        "Nebula",
+        "Astro",
+        "Eclipse",
+        "Stellar",
+        "Polar",
+        "Glacier",
+        "Carbon",
+        "Prism",
+        "Neutron",
+        "Photon",
+        "Cosmo",
+        "Fusion",
+        "Velocity",
+        "Pulsar",
+        "Aero",
+        "Tornado",
+        "Cyclone",
+        "Granite",
+        "Magnet",
+        "Sapphire",
+        "Infinity",
+        "Hydro"
+      ],
+      "n": [
+        "Striker",
+        "Dasher",
+        "Glide",
+        "Flyer",
+        "Runner",
+        "Jumper",
+        "Surfer",
+        "Drifter",
+        "Boost",
+        "Burst",
+        "Flare",
+        "Streak",
+        "Wing",
+        "Arrow",
+        "Sprinter",
+        "Comet",
+        "Voyager",
+        "Racer",
+        "Spinner",
+        "Glider",
+        "Zoom",
+        "Flash",
+        "Swoop",
+        "Leap",
+        "Charge",
+        "Blaster",
+        "Rush",
+        "Pilot"
+      ]
+    },
+    "funny": {
+      "a": [
+        "Laggy",
+        "Flustered",
+        "Chaotic",
+        "Bewildered",
+        "Distracted",
+        "Fumbling",
+        "Tumbling",
+        "Jittery",
+        "Dramatic",
+        "Snoozy",
+        "Confused",
+        "Hungry",
+        "Dizzy",
+        "Noisy",
+        "Grumbly",
+        "Giddy",
+        "Puzzled",
+        "Frazzled",
+        "Overexcited",
+        "Muddled",
+        "Speedy",
+        "Snoring",
+        "Ticklish",
+        "Peckish",
+        "Rumbly",
+        "Wobbling",
+        "Sniffly",
+        "Startled",
+        "Baffled",
+        "Jumpy"
+      ],
+      "n": [
+        "Spud",
+        "Pigeon",
+        "Crouton",
+        "Yeti",
+        "Wombat",
+        "Toaster",
+        "Teaspoon",
+        "Kettle",
+        "Jellyfish",
+        "Lobster",
+        "Gnome",
+        "Hippo",
+        "Moose",
+        "Emu",
+        "Slipper",
+        "Wellie",
+        "Trolley",
+        "Kipper",
+        "Nacho",
+        "Gherkin",
+        "Baguette",
+        "Pretzel",
+        "Cabbage",
+        "Radish",
+        "Spatula",
+        "Puffin",
+        "Narwhal",
+        "Alpaca",
+        "Hedgehog",
+        "Pelican"
+      ],
+      "whole": [
+        "OofIFellOff",
+        "MissedTheJump",
+        "FellOffAgain",
+        "AfkForSnacks",
+        "BackInFiveMins",
+        "RespawnPlease",
+        "TrippedOnAir",
+        "OneMoreRound",
+        "WrongButton",
+        "PressedJumpLate",
+        "AlwaysLastPlace",
+        "SnackBreakAgain",
+        "OopsWrongServer",
+        "LostMyCheckpoint",
+        "JumpedTooEarly",
+        "WalkedIntoAWall",
+        "WavingAtEveryone",
+        "DancingInTheLobby",
+        "WhereDidIRespawn",
+        "StillLoading",
+        "MyCatPressedJump",
+        "ForgotHowToJump",
+        "PleaseWaitForMe",
+        "LagMadeMeDoIt",
+        "JustExploring",
+        "SpinningInCircles",
+        "TooManyHats",
+        "BrbGettingToast",
+        "NotAPro",
+        "HelloImNew"
+      ]
+    },
+    "games": {
+      "a": [
+        "Obby",
+        "Tycoon",
+        "Parkour",
+        "Lava",
+        "Checkpoint",
+        "Lobby",
+        "Spawn",
+        "Badge",
+        "Server",
+        "Teleport",
+        "Sandbox",
+        "Trampoline",
+        "Treasure",
+        "Tower",
+        "Kart",
+        "Puzzle",
+        "Escape",
+        "Quest",
+        "Treehouse",
+        "Skatepark",
+        "Waterslide",
+        "Island",
+        "Speedrun",
+        "Zipline",
+        "Jetpack",
+        "Hoverboard"
+      ],
+      "n": [
+        "Runner",
+        "Jumper",
+        "Climber",
+        "Hopper",
+        "Collector",
+        "Hunter",
+        "Champ",
+        "Explorer",
+        "Racer",
+        "Dasher",
+        "Finder",
+        "Seeker",
+        "Maker",
+        "Legend",
+        "Ace",
+        "Pro",
+        "Boss",
+        "Chaser",
+        "Rider",
+        "Skipper",
+        "Scout",
+        "Planner",
+        "Designer",
+        "Wizard"
+      ]
+    },
+    "word": {
+      "start": [
+        "Super",
+        "Mega",
+        "Hyper",
+        "Ultra",
+        "Turbo",
+        "Cosmic",
+        "Speedy",
+        "Sneaky",
+        "Lucky",
+        "Happy",
+        "Sunny",
+        "Mighty",
+        "Jolly",
+        "Bouncy",
+        "Fluffy",
+        "Agent",
+        "Captain",
+        "Sir",
+        "Little",
+        "Sparkly",
+        "Zippy",
+        "Brave",
+        "Royal",
+        "Golden"
+      ],
+      "end": [
+        "Star",
+        "Dash",
+        "Glow",
+        "Puff",
+        "Zoom",
+        "Quest",
+        "Comet",
+        "Bean",
+        "Bloom",
+        "Sprout",
+        "Pop",
+        "Jump",
+        "Boost",
+        "Wave",
+        "Burst",
+        "Hop",
+        "Flip",
+        "Bounce",
+        "Zip",
+        "Twirl",
+        "Paws",
+        "Wing",
+        "Pup",
+        "Cub",
+        "Bot",
+        "Rocket",
+        "Shine",
+        "Builder",
+        "Runner",
+        "Jumper",
+        "Racer",
+        "Hopper",
+        "Glider",
+        "Dancer",
+        "Skater",
+        "Wizard",
+        "Explorer",
+        "Doodle",
+        "Sparkle",
+        "Blaze"
+      ],
+      "title": [
+        "Brave",
+        "Great",
+        "Bold",
+        "Swift",
+        "Mighty",
+        "Clever",
+        "Kind",
+        "Quick",
+        "Fearless",
+        "Daring",
+        "Wise",
+        "Speedy",
+        "Curious"
+      ],
+      "pal": [
+        "Panda",
+        "Bunny",
+        "Pup",
+        "Penguin",
+        "Otter",
+        "Duck",
+        "Fox",
+        "Bear",
+        "Koala",
+        "Frog",
+        "Owl",
+        "Moose",
+        "Yeti",
+        "Hippo",
+        "Llama",
+        "Puffin",
+        "Hamster",
+        "Kitten"
+      ]
+    },
+    "num": [
+      "22",
+      "33",
+      "44",
+      "55",
+      "77",
+      "99",
+      "101",
+      "123",
+      "202",
+      "222",
+      "246",
+      "303",
+      "321",
+      "333",
+      "404",
+      "456",
+      "505",
+      "555",
+      "707",
+      "777",
+      "808",
+      "909",
+      "999"
+    ]
+  },
+  "article": {
+    "hero": {
+      "title": "🧱 Roblox Username Generator",
+      "tagline": "Cute, aesthetic, cool and funny Roblox usernames that fit the rules, with no real names or ages in them."
+    },
+    "intro": "A Roblox username is one word, it has to be unique, and changing it later costs Robux, so it's worth getting right first time. This **Roblox username generator** makes names in the styles players actually use, from soft aesthetic names like lilacmoth to funny ones like DramaticPigeon, and every one keeps to the Roblox username rules. It's an independent site and isn't connected to Roblox Corporation, which owns the Roblox name.",
+    "sections": [
+      {
+        "heading": "Eight good Roblox usernames",
+        "content": "<p>All eight came from the generator, across its styles and formats:</p><ul><li><strong>lilacmoth</strong>: an aesthetic name, two soft words run together in lowercase.</li><li><strong>MochiBunny</strong>: cute, short and easy to read in a chat.</li><li><strong>NebulaSurfer</strong>: cool without trying too hard.</li><li><strong>DramaticPigeon</strong>: a funny name other players will remember.</li><li><strong>OofIFellOff</strong>: a joke every obby player knows.</li><li><strong>ServerHopper</strong>: a games name for someone who never stays in one server for long.</li><li><strong>PickleTheBrave</strong>: built from a nickname, with no real name in it.</li><li><strong>MochiBunny77</strong>: the same cute name with a number that isn't an age or a year, for when the plain one is taken.</li></ul>"
+      },
+      {
+        "heading": "The Roblox username rules",
+        "content": "<p>Roblox checks every new username against a few rules, and this generator follows all of them:</p><ul><li><strong>Length:</strong> 3 to 20 characters.</li><li><strong>Characters:</strong> letters and numbers only, plus underscores. No spaces, full stops or symbols, so <em>Mochi Bunny</em> becomes <em>MochiBunny</em> or <em>Mochi_Bunny</em>.</li><li><strong>Underscores:</strong> one at most, and never at the start or the end. <em>Mochi_Bunny</em> works; <em>_MochiBunny_</em> doesn't.</li><li><strong>Unique:</strong> no two accounts can share a username, which is why the obvious ones are gone.</li><li><strong>Filtered:</strong> Roblox runs new usernames through its filter, so a name that keeps getting rejected may have a word in it the filter doesn't like.</li></ul><p>Roblox also has a <strong>display name</strong>, which is separate from the username and doesn't have to be unique. You can pick something simple there, but the username stays with the account, so choose one you'll still like in a year.</p>"
+      },
+      {
+        "heading": "Keep your username safe",
+        "content": "<p>Lots of Roblox players are young, and a username is the first thing strangers see. A good one tells other players nothing about you. Before you pick one, check it doesn't include:</p><ul><li><strong>your real name</strong> or your surname;</li><li><strong>your age, birthday or the year you were born</strong>, so no 11 or 2015;</li><li><strong>your school, town or street</strong>;</li><li>anything that pretends to be Roblox staff, a moderator or a YouTuber.</li></ul><p>None of the names here has a real name, an age or a year in it. If you choose <strong>From a word</strong>, type a nickname or a favourite thing, like Pickle or Comet, rather than your own name. Grown-ups: it's worth choosing the name together and setting up the account's parental controls at the same time.</p>"
+      },
+      {
+        "heading": "Which style suits you?",
+        "content": "<ul><li><strong>Aesthetic</strong> names are soft colours and pretty things in lowercase, like <em>velvetmoth</em> or <em>starlit_swan</em>. They suit dress-up, roleplay and building games.</li><li><strong>Cute</strong> names join a sweet treat to a small animal: <em>HoneybunBear</em>, <em>MochiBunny</em>.</li><li><strong>Cool</strong> names pair a space or metal word with something fast: <em>CobaltStreak</em>, <em>NebulaSurfer</em>.</li><li><strong>Funny</strong> names are silly animals and objects, or things that happen to everyone, like <em>PeckishPuffin</em> or <em>LostMyCheckpoint</em>.</li><li><strong>Games</strong> names use the words of obbies, tycoons and lobbies, like <em>TowerClimber</em> or <em>CheckpointChaser</em>, without borrowing any game's title.</li><li><strong>From a word</strong> builds names round a nickname or favourite thing: <em>CaptainPickle</em>, <em>PickleAndPanda</em>.</li></ul><p>Playing Minecraft as well? The <a href=\"minecraft-username-generator.html\">Minecraft Username Generator</a> keeps to Minecraft's 16-character limit, and the <a href=\"kids-gamertag-generator.html\">Kids' Gamertag Generator</a> makes safe names for other games.</p>"
+      },
+      {
+        "heading": "If the name you want is taken",
+        "content": "<p>Type it into the username box when you sign up and Roblox will tell you straight away whether it's free. If it isn't, try one of these:</p><ul><li>Choose <strong>With a number</strong>. The numbers here, like 77 or 404, are never ages or years.</li><li>Choose <strong>Underscore</strong>: <em>Mochi_Bunny</em> is a different username from <em>MochiBunny</em>.</li><li>Swap one word and keep the other, so <em>MochiBunny</em> becomes <em>MochiOtter</em>.</li></ul><p>The names are free to use, but someone may already have the one you like, so check it on Roblox before you get attached.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is a good Roblox username?",
+        "answer": "One that's short, easy to read and tells nobody your real name or age, like MochiBunny or NebulaSurfer. Choose a style and press the button until one feels like you."
+      },
+      {
+        "question": "How do I make a cute or aesthetic Roblox username?",
+        "answer": "For cute, join a sweet treat to a small animal, like HoneybunBear; choose Cute. For aesthetic, put two soft words together in lowercase, like velvetmoth; choose Aesthetic."
+      },
+      {
+        "question": "How long can a Roblox username be?",
+        "answer": "Between 3 and 20 characters. Every name this generator makes fits, even with a number added."
+      },
+      {
+        "question": "Can a Roblox username have an underscore?",
+        "answer": "Yes, but only one, and not at the start or the end. Choose Underscore for names like Mochi_Bunny."
+      },
+      {
+        "question": "Should I use my real name in my Roblox username?",
+        "answer": "No. Keep your real name, age, school and town out of it. Choose From a word and type a nickname or a favourite thing instead."
+      },
+      {
+        "question": "What are some funny Roblox usernames?",
+        "answer": "Names like DramaticPigeon, PeckishPuffin and OofIFellOff. Choose Funny for more."
+      },
+      {
+        "question": "Is this an official Roblox tool?",
+        "answer": "No. It's an independent name generator and isn't connected to Roblox Corporation. Roblox decides which usernames it accepts."
+      }
+    ]
+  }
+}

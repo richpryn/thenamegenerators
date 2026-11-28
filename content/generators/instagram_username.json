@@ -1,0 +1,923 @@
+{
+  "key": "instagram_username",
+  "title": "Instagram Username Generator",
+  "seoTitle": "Instagram Username Generator: Aesthetic & Cute IG Names",
+  "slug": "instagram-username-generator",
+  "icon": "📸",
+  "category": "concepts",
+  "published": "2026-11-29",
+  "description": "Instagram username ideas: aesthetic, cute, cool and funny handles, names for art, food, travel, fitness and book accounts, or ideas from your name.",
+  "seoKeywords": "instagram username generator, instagram name generator, ig name generator, ig username ideas, insta name ideas, instagram username ideas, aesthetic instagram usernames, aesthetic instagram names, cute instagram usernames, cool instagram names, funny instagram usernames, instagram handle ideas",
+  "isPopular": false,
+  "noun": "Instagram Usernames",
+  "noEcho": true,
+  "lowercase": true,
+  "maxLength": 30,
+  "nameSource": {
+    "kind": "invented",
+    "note": "Names are built from soft colours, little things, city words, everyday chaos and words for art, cooking, travel, training and reading, joined with dots and underscores, the characters Instagram allows. None ends in a web-address ending such as .art or .studio. Brands, creators, celebrities and anything rude were left out, and the site has no connection to Instagram or Meta."
+  },
+  "filters": {
+    "style": {
+      "label": "Style",
+      "options": [
+        "any",
+        "aesthetic",
+        "cute",
+        "cool",
+        "funny",
+        "art",
+        "food",
+        "travel",
+        "fitness",
+        "books",
+        "name"
+      ],
+      "optionLabels": {
+        "any": "Any style",
+        "aesthetic": "Aesthetic (slow.mornings)",
+        "cute": "Cute (teeny.acorn)",
+        "cool": "Cool (concrete.collective)",
+        "funny": "Funny (mostly.biscuits)",
+        "art": "Art (the.gouache.journal)",
+        "food": "Food (sourdough.sunday)",
+        "travel": "Travel (coastal.footsteps)",
+        "fitness": "Fitness (steady.miles)",
+        "books": "Books (margin.notes)",
+        "name": "From your name (Sam.Journal)"
+      }
+    },
+    "name": {
+      "type": "text",
+      "label": "Your name or nickname",
+      "placeholder": "e.g. Sam",
+      "default": "Sam",
+      "example": "Sam",
+      "username": true,
+      "showWhen": {
+        "style": [
+          "name"
+        ]
+      },
+      "noUnderscore": true,
+      "startLetter": true
+    }
+  },
+  "recipe": "switch",
+  "on": "style",
+  "cases": {
+    "any": {
+      "recipe": "template",
+      "template": [
+        "[aesthetic.a].[aesthetic.n_dot]",
+        "the.[aesthetic.a].[aesthetic.n_dot]",
+        "[aesthetic.a]_[aesthetic.n]",
+        "[cute.a].[cute.n_dot]",
+        "the.[cute.a].[cute.n_dot]",
+        "[cute.a]_[cute.n]",
+        "little.[cute.a].[cute.n_dot]",
+        "[cool.a].[cool.n_dot]",
+        "the.[cool.a].[cool.n_dot]",
+        "[cool.a]_[cool.n]",
+        "mostly.[funny.mostly_dot]",
+        "[funny.x].and.[funny.y_dot]",
+        "[funny.x].and.[funny.y_dot]",
+        "[funny.whole]",
+        "[art.a].[art.n_dot]",
+        "the.[art.a].[art.n_dot]",
+        "[art.a]_[art.n]",
+        "[food.a].[food.n_dot]",
+        "the.[food.a].[food.n_dot]",
+        "[food.a]_[food.n]",
+        "little.[food.a].[food.n_dot]",
+        "[travel.a].[travel.n_dot]",
+        "[travel.a]_[travel.n]",
+        "the.[travel.a].[travel.n_dot]",
+        "notes.from.the.[travel.place_dot]",
+        "[fitness.a].[fitness.n_dot]",
+        "the.[fitness.a].[fitness.n_dot]",
+        "[fitness.a]_[fitness.n]",
+        "[books.a].[books.n_dot]",
+        "the.[books.a].[books.n_dot]",
+        "[books.a]_[books.n]"
+      ]
+    },
+    "aesthetic": {
+      "recipe": "template",
+      "template": [
+        "[aesthetic.a].[aesthetic.n_dot]",
+        "the.[aesthetic.a].[aesthetic.n_dot]",
+        "[aesthetic.a]_[aesthetic.n]"
+      ]
+    },
+    "cute": {
+      "recipe": "template",
+      "template": [
+        "[cute.a].[cute.n_dot]",
+        "the.[cute.a].[cute.n_dot]",
+        "[cute.a]_[cute.n]",
+        "little.[cute.a].[cute.n_dot]"
+      ]
+    },
+    "cool": {
+      "recipe": "template",
+      "template": [
+        "[cool.a].[cool.n_dot]",
+        "the.[cool.a].[cool.n_dot]",
+        "[cool.a]_[cool.n]"
+      ]
+    },
+    "funny": {
+      "recipe": "template",
+      "template": [
+        "mostly.[funny.mostly_dot]",
+        "[funny.x].and.[funny.y_dot]",
+        "[funny.x].and.[funny.y_dot]",
+        "[funny.whole]"
+      ]
+    },
+    "art": {
+      "recipe": "template",
+      "template": [
+        "[art.a].[art.n_dot]",
+        "the.[art.a].[art.n_dot]",
+        "[art.a]_[art.n]"
+      ]
+    },
+    "food": {
+      "recipe": "template",
+      "template": [
+        "[food.a].[food.n_dot]",
+        "the.[food.a].[food.n_dot]",
+        "[food.a]_[food.n]",
+        "little.[food.a].[food.n_dot]"
+      ]
+    },
+    "travel": {
+      "recipe": "template",
+      "template": [
+        "[travel.a].[travel.n_dot]",
+        "[travel.a]_[travel.n]",
+        "the.[travel.a].[travel.n_dot]",
+        "notes.from.the.[travel.place_dot]"
+      ]
+    },
+    "fitness": {
+      "recipe": "template",
+      "template": [
+        "[fitness.a].[fitness.n_dot]",
+        "the.[fitness.a].[fitness.n_dot]",
+        "[fitness.a]_[fitness.n]"
+      ]
+    },
+    "books": {
+      "recipe": "template",
+      "template": [
+        "[books.a].[books.n_dot]",
+        "the.[books.a].[books.n_dot]",
+        "[books.a]_[books.n]"
+      ]
+    },
+    "name": {
+      "recipe": "template",
+      "template": [
+        "{name}.[name.end_dot]",
+        "{name}_[name.end]",
+        "{name}[name.end]",
+        "[name.pre]_{name}",
+        "[name.pre]{name}",
+        "the.{name}.[name.end_dot]",
+        "[name.thing].by_{name}"
+      ]
+    }
+  },
+  "data": {
+    "aesthetic": {
+      "a": [
+        "vintage",
+        "porcelain",
+        "gilded",
+        "pressed",
+        "quiet",
+        "slow",
+        "still",
+        "tender",
+        "gentle",
+        "faint",
+        "pale",
+        "sepia",
+        "muted",
+        "candlelit",
+        "seaglass",
+        "moonbeam",
+        "ivory",
+        "dusty",
+        "bluebell",
+        "foxglove"
+      ],
+      "n": [
+        "archive",
+        "edit",
+        "moments",
+        "notes",
+        "journal",
+        "mornings",
+        "afternoons",
+        "frames",
+        "gallery",
+        "keepsake",
+        "poems",
+        "florals",
+        "rooms",
+        "pages",
+        "chapters",
+        "evenings",
+        "postcards",
+        "stills"
+      ],
+      "n_dot": [
+        "archive",
+        "edit",
+        "moments",
+        "notes",
+        "journal",
+        "mornings",
+        "afternoons",
+        "frames",
+        "keepsake",
+        "poems",
+        "florals",
+        "rooms",
+        "pages",
+        "chapters",
+        "evenings",
+        "postcards",
+        "stills"
+      ]
+    },
+    "cute": {
+      "a": [
+        "teeny",
+        "dainty",
+        "snug",
+        "pocket",
+        "speckled",
+        "cheery",
+        "dinky",
+        "toasty",
+        "bitty",
+        "puffy",
+        "chubby",
+        "twinkly",
+        "sweetpea"
+      ],
+      "n": [
+        "macaron",
+        "teacup",
+        "mitten",
+        "acorn",
+        "toadstool",
+        "hedgehog",
+        "bluebird",
+        "pompom",
+        "bonbon",
+        "dormouse",
+        "sparrow",
+        "pip",
+        "bumble",
+        "custard",
+        "crumpet",
+        "gingerbread",
+        "duckling",
+        "minnow",
+        "kitten",
+        "pudding"
+      ],
+      "n_dot": [
+        "macaron",
+        "teacup",
+        "mitten",
+        "acorn",
+        "toadstool",
+        "hedgehog",
+        "bluebird",
+        "pompom",
+        "bonbon",
+        "dormouse",
+        "sparrow",
+        "pip",
+        "bumble",
+        "custard",
+        "crumpet",
+        "gingerbread",
+        "duckling",
+        "minnow",
+        "kitten",
+        "pudding"
+      ]
+    },
+    "cool": {
+      "a": [
+        "noir",
+        "urban",
+        "concrete",
+        "minimal",
+        "steel",
+        "obsidian",
+        "north",
+        "nomad",
+        "monochrome",
+        "graphite",
+        "asphalt",
+        "basalt",
+        "shadowline",
+        "brutalist",
+        "rooftop",
+        "backstreet"
+      ],
+      "n": [
+        "collective",
+        "district",
+        "archive",
+        "edit",
+        "culture",
+        "division",
+        "society",
+        "quarter",
+        "frame",
+        "works",
+        "house",
+        "department",
+        "index",
+        "standard",
+        "unit"
+      ],
+      "n_dot": [
+        "collective",
+        "district",
+        "archive",
+        "edit",
+        "culture",
+        "division",
+        "society",
+        "quarter",
+        "frame",
+        "department",
+        "index",
+        "standard",
+        "unit"
+      ]
+    },
+    "funny": {
+      "x": [
+        "toast",
+        "crumbs",
+        "naps",
+        "socks",
+        "biscuits",
+        "pigeons",
+        "puddles",
+        "sprouts",
+        "noodles",
+        "pancakes",
+        "crumpets",
+        "houseplants",
+        "cardigans",
+        "umbrellas",
+        "teacups",
+        "kettles",
+        "crisps",
+        "jumpers",
+        "raincoats",
+        "sandwiches"
+      ],
+      "y": [
+        "chaos",
+        "mischief",
+        "nonsense",
+        "drama",
+        "panic",
+        "giggles",
+        "sarcasm",
+        "confusion",
+        "questions",
+        "opinions",
+        "hiccups",
+        "muddles",
+        "mayhem"
+      ],
+      "mostly": [
+        "napping",
+        "biscuits",
+        "snacking",
+        "overthinking",
+        "procrastinating",
+        "daydreaming",
+        "running.late",
+        "chaos",
+        "crumbs",
+        "dancing.badly",
+        "snoozing",
+        "doodling",
+        "rambling",
+        "humming",
+        "tidying",
+        "forgetting"
+      ],
+      "whole": [
+        "out.of.office.forever",
+        "professionally.distracted",
+        "overthinking.again",
+        "pigeon.appreciation.society",
+        "unpaid.dog.walker",
+        "my.plants.are.thriving",
+        "tea.first.then.chaos",
+        "camera.roll.chaos",
+        "left.on.read.again",
+        "too_many_tabs_open",
+        "forgot.to.post.again",
+        "blurry_photo_club",
+        "accidental.photographer"
+      ],
+      "mostly_dot": [
+        "napping",
+        "biscuits",
+        "snacking",
+        "overthinking",
+        "procrastinating",
+        "daydreaming",
+        "running.late",
+        "chaos",
+        "crumbs",
+        "dancing.badly",
+        "snoozing",
+        "doodling",
+        "rambling",
+        "humming",
+        "tidying",
+        "forgetting"
+      ],
+      "y_dot": [
+        "chaos",
+        "mischief",
+        "nonsense",
+        "drama",
+        "panic",
+        "giggles",
+        "sarcasm",
+        "confusion",
+        "questions",
+        "opinions",
+        "hiccups",
+        "muddles",
+        "mayhem"
+      ]
+    },
+    "art": {
+      "a": [
+        "gouache",
+        "charcoal",
+        "graphite",
+        "linework",
+        "palette",
+        "canvas",
+        "easel",
+        "lino",
+        "ceramic",
+        "fineliner",
+        "pastel",
+        "inkwash",
+        "printmaking",
+        "papercut"
+      ],
+      "n": [
+        "gallery",
+        "portfolio",
+        "studio",
+        "prints",
+        "archive",
+        "collection",
+        "works",
+        "illustrations",
+        "journal",
+        "sketchbook",
+        "notes",
+        "atelier",
+        "editions"
+      ],
+      "n_dot": [
+        "portfolio",
+        "prints",
+        "archive",
+        "collection",
+        "illustrations",
+        "journal",
+        "sketchbook",
+        "notes",
+        "atelier",
+        "editions"
+      ]
+    },
+    "food": {
+      "a": [
+        "sourdough",
+        "scone",
+        "granola",
+        "honeycomb",
+        "brunch",
+        "fig",
+        "hazelnut",
+        "damson",
+        "rhubarb",
+        "peach",
+        "butter",
+        "crumb",
+        "blackberry",
+        "basil",
+        "citrus",
+        "pistachio",
+        "cardamom"
+      ],
+      "n": [
+        "plate",
+        "table",
+        "bowl",
+        "spoon",
+        "journal",
+        "diary",
+        "notes",
+        "sunday",
+        "spread",
+        "pantry",
+        "picnic",
+        "bakes"
+      ],
+      "n_dot": [
+        "plate",
+        "table",
+        "bowl",
+        "spoon",
+        "journal",
+        "diary",
+        "notes",
+        "sunday",
+        "spread",
+        "pantry",
+        "picnic",
+        "bakes"
+      ]
+    },
+    "travel": {
+      "place": [
+        "coast",
+        "hills",
+        "harbour",
+        "mountains",
+        "road",
+        "north",
+        "island",
+        "valley",
+        "lakes",
+        "shore",
+        "moors",
+        "dunes",
+        "cliffs",
+        "fells"
+      ],
+      "a": [
+        "wander",
+        "roam",
+        "compass",
+        "postcard",
+        "coastal",
+        "island",
+        "mountain",
+        "sunset",
+        "horizon",
+        "harbour",
+        "meadow",
+        "alpine",
+        "faraway",
+        "northbound"
+      ],
+      "n": [
+        "notes",
+        "journal",
+        "stories",
+        "trails",
+        "footsteps",
+        "routes",
+        "snapshots",
+        "frames",
+        "archive",
+        "atlas",
+        "passport",
+        "letters"
+      ],
+      "n_dot": [
+        "notes",
+        "journal",
+        "stories",
+        "trails",
+        "footsteps",
+        "routes",
+        "snapshots",
+        "frames",
+        "archive",
+        "atlas",
+        "passport",
+        "letters"
+      ],
+      "place_dot": [
+        "coast",
+        "hills",
+        "harbour",
+        "mountains",
+        "road",
+        "north",
+        "island",
+        "valley",
+        "lakes",
+        "shore",
+        "moors",
+        "dunes",
+        "cliffs",
+        "fells"
+      ]
+    },
+    "fitness": {
+      "a": [
+        "strong",
+        "morning",
+        "steady",
+        "mile",
+        "core",
+        "trail",
+        "peak",
+        "balance",
+        "active",
+        "early",
+        "everyday",
+        "iron"
+      ],
+      "n": [
+        "journal",
+        "log",
+        "notes",
+        "project",
+        "days",
+        "habit",
+        "method",
+        "diary",
+        "miles",
+        "reps",
+        "rituals",
+        "collective"
+      ],
+      "n_dot": [
+        "journal",
+        "log",
+        "notes",
+        "project",
+        "days",
+        "habit",
+        "method",
+        "diary",
+        "miles",
+        "reps",
+        "rituals",
+        "collective"
+      ]
+    },
+    "books": {
+      "a": [
+        "bookish",
+        "paper",
+        "margin",
+        "poetry",
+        "reading",
+        "inked",
+        "annotated",
+        "hardback",
+        "footnote",
+        "bookshelf",
+        "storybook",
+        "sonnet"
+      ],
+      "n": [
+        "notes",
+        "journal",
+        "diary",
+        "annotations",
+        "archive",
+        "edit",
+        "pages",
+        "shelf",
+        "readings",
+        "quotes",
+        "underlines"
+      ],
+      "n_dot": [
+        "notes",
+        "journal",
+        "diary",
+        "annotations",
+        "archive",
+        "edit",
+        "pages",
+        "shelf",
+        "readings",
+        "quotes",
+        "underlines"
+      ]
+    },
+    "name": {
+      "pre": [
+        "hello",
+        "meet",
+        "by",
+        "dear",
+        "lovefrom",
+        "thisis"
+      ],
+      "thing": [
+        "sketches",
+        "bakes",
+        "notes",
+        "photos",
+        "prints",
+        "makes",
+        "stitches",
+        "pots",
+        "cakes",
+        "florals",
+        "frames",
+        "doodles",
+        "ceramics",
+        "poems",
+        "recipes",
+        "stories",
+        "journeys",
+        "plates",
+        "collages",
+        "knits"
+      ],
+      "end": [
+        "Journal",
+        "Diary",
+        "Notes",
+        "Archive",
+        "Gallery",
+        "Captures",
+        "Wanders",
+        "Edit",
+        "Abroad",
+        "Outdoors",
+        "Frames",
+        "Pages",
+        "Illustrates",
+        "Designs",
+        "Writes",
+        "Shoots",
+        "Collective",
+        "Prints",
+        "Kitchen",
+        "Garden",
+        "Lens",
+        "Ceramics",
+        "Florals",
+        "Adventures",
+        "Thoughts",
+        "Days",
+        "Bakery",
+        "Studio",
+        "Knits",
+        "Stitches",
+        "Pots",
+        "Blooms",
+        "Recipes",
+        "Poems",
+        "Sessions",
+        "Portfolio",
+        "Atelier",
+        "Letters",
+        "Stills",
+        "Sketchbook",
+        "Snapshots",
+        "Interiors",
+        "Bakehouse",
+        "Pantry",
+        "Notebook",
+        "Editorial",
+        "Seasons",
+        "Mornings",
+        "Wardrobe"
+      ],
+      "end_dot": [
+        "Journal",
+        "Diary",
+        "Notes",
+        "Archive",
+        "Captures",
+        "Wanders",
+        "Edit",
+        "Abroad",
+        "Outdoors",
+        "Frames",
+        "Pages",
+        "Illustrates",
+        "Designs",
+        "Writes",
+        "Shoots",
+        "Collective",
+        "Prints",
+        "Lens",
+        "Ceramics",
+        "Florals",
+        "Adventures",
+        "Thoughts",
+        "Days",
+        "Bakery",
+        "Knits",
+        "Stitches",
+        "Pots",
+        "Blooms",
+        "Poems",
+        "Sessions",
+        "Portfolio",
+        "Atelier",
+        "Letters",
+        "Stills",
+        "Sketchbook",
+        "Snapshots",
+        "Interiors",
+        "Bakehouse",
+        "Pantry",
+        "Notebook",
+        "Editorial",
+        "Seasons",
+        "Mornings",
+        "Wardrobe"
+      ]
+    }
+  },
+  "article": {
+    "hero": {
+      "title": "📸 Instagram Username Generator",
+      "tagline": "Aesthetic, cute, cool and funny Instagram handles, names for themed accounts, and ideas from your own name."
+    },
+    "intro": "Your Instagram username is your @handle and the end of your profile link, so it does more work than the name above your bio. This **Instagram username generator** (an IG name generator, if you like) makes aesthetic, cute, cool and funny handles, names for art, food, travel, fitness and book accounts, and ideas from your own name, using only letters, numbers, full stops and underscores. It's an independent site and isn't connected to Instagram or its owner, Meta.",
+    "sections": [
+      {
+        "heading": "Eight good Instagram usernames",
+        "content": "<p>All eight came from the generator, across eight of its styles:</p><ul><li><strong>slow.mornings</strong>: aesthetic, and it tells you what the grid will feel like.</li><li><strong>teeny.acorn</strong>: cute, short and easy to type.</li><li><strong>concrete.collective</strong>: cool and grown-up, for city photos or design.</li><li><strong>mostly.biscuits</strong>: a funny, honest bio in two words.</li><li><strong>the.gouache.journal</strong>: an art account that names the paint.</li><li><strong>sourdough.sunday</strong>: a food account with a weekly habit built in.</li><li><strong>coastal.footsteps</strong>: travel photos by the sea.</li><li><strong>margin.notes</strong>: a book account for people who write in their books.</li></ul>"
+      },
+      {
+        "heading": "What an Instagram username can use",
+        "content": "<p>Instagram usernames are made of letters, numbers, full stops and underscores, with no spaces. Instagram's own help pages suggest adding a full stop, a number or an underscore when the name you want is taken, which is why so many handles look like <em>sepia_postcards</em> or <em>the.quiet.archive</em>.</p><p>Two more things shape the names here:</p><ul><li><strong>No web addresses.</strong> Instagram's terms don't let you put a domain name or web address in your username without its permission. Lots of ordinary words are now web endings too (.art, .studio, .travel, .club), so no name here ends in one after a dot.</li><li><strong>Tidy dots.</strong> Every name starts and ends with a letter or number and never has two dots or underscores together. Every name is 30 characters or fewer.</li></ul><p>The <strong>name</strong> on your profile is separate from the username and can have spaces and capitals, so you can put your full name or a longer title there.</p>"
+      },
+      {
+        "heading": "Aesthetic, cute, cool or funny?",
+        "content": "<ul><li><strong>Aesthetic</strong> handles pair a soft, faded word with something you'd keep: <em>the.pressed.florals</em>, <em>sepia_postcards</em>, <em>the.quiet.archive</em>.</li><li><strong>Cute</strong> handles are tiny things with a small, round word in front: <em>teeny.acorn</em>, <em>little.pocket.macaron</em>.</li><li><strong>Cool</strong> handles sound like a design studio or a city quarter: <em>noir.society</em>, <em>the.brutalist.quarter</em>.</li><li><strong>Funny</strong> handles are honest about the account: <em>mostly.biscuits</em>, <em>biscuits.and.sarcasm</em>, <em>pigeon.appreciation.society</em>.</li></ul><p>The word <em>the</em> at the front makes almost any pair sound like a title, and it often frees up a handle that's taken without it.</p>"
+      },
+      {
+        "heading": "Names for a themed account",
+        "content": "<p>If your posts have one subject, put it in the handle. Choose <strong>Art</strong>, <strong>Food</strong>, <strong>Travel</strong>, <strong>Fitness</strong> or <strong>Books</strong> for names like <em>lino_works</em>, <em>fig.table</em>, <em>notes.from.the.harbour</em>, <em>morning.miles</em> and <em>the.bookish.edit</em>.</p><ul><li><strong>Name your craft, not your kit.</strong> <em>the.gouache.journal</em> says what you paint with; a paint brand's name in the handle would tie you to that company and could cause trouble with it.</li><li><strong>Leave room to grow.</strong> <em>fig.table</em> can cover any recipe; one dish in the handle might not.</li><li><strong>From your name</strong> works best for a portfolio or a small business: <em>sketches.by_Sam</em>, <em>Sam_Portfolio</em>, <em>the.Sam.Collective</em>.</li></ul><p>Naming a shop or studio rather than an account? The <a href=\"brand-name-generator.html\">Brand Name Generator</a> makes brandable words for products.</p>"
+      },
+      {
+        "heading": "Before you claim it",
+        "content": "<p>The names here are free to use, but usernames go to whoever claims them first. Type it into the username box when you edit your profile and Instagram will tell you whether it's free. If the account will grow into a business, search for the name on other apps and as a website too, and check nobody is using it for the same thing.</p><p>Instagram can change a username that copies someone else's trade mark or pretends to be another person, so leave brands and famous names out. For a matching handle on other apps, try the <a href=\"tiktok-username-generator.html\">TikTok Username Generator</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is a good Instagram username?",
+        "answer": "One that's short, easy to spell and says what you post, like sourdough.sunday for food or slow.mornings for a soft lifestyle grid. Choose the style or subject closest to your account."
+      },
+      {
+        "question": "How do I make an aesthetic Instagram username?",
+        "answer": "Join a soft, faded word to something you'd keep, with a dot or underscore between, like sepia_postcards or the.pressed.florals. Choose Aesthetic."
+      },
+      {
+        "question": "What are some cute Instagram usernames?",
+        "answer": "Tiny things with a small word in front: teeny.acorn, little.pocket.macaron. Choose Cute."
+      },
+      {
+        "question": "What are some funny Instagram usernames?",
+        "answer": "Be honest about the account: mostly.biscuits, biscuits.and.sarcasm or pigeon.appreciation.society. Choose Funny."
+      },
+      {
+        "question": "Can an Instagram username have dots and underscores?",
+        "answer": "Yes. Letters, numbers, full stops and underscores are all allowed, and Instagram suggests adding one when your first choice is taken."
+      },
+      {
+        "question": "How do I make an Instagram username from my name?",
+        "answer": "Choose From your name and type your name or nickname for ideas like Sam.Journal, hello_Sam or sketches.by_Sam."
+      },
+      {
+        "question": "Is this an official Instagram tool?",
+        "answer": "No. It's an independent name generator and isn't connected to Instagram or Meta."
+      }
+    ]
+  }
+}

@@ -30,7 +30,10 @@
       "discord_server",
       "twitch_username",
       "xbox_gamertag",
-      "psn_name"
+      "psn_name",
+      "roblox_username",
+      "tiktok_username",
+      "instagram_username"
     ],
     "eyebrow": "Names for online projects",
     "approach": {

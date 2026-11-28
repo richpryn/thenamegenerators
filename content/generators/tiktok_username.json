@@ -1,0 +1,899 @@
+{
+  "key": "tiktok_username",
+  "title": "TikTok Username Generator",
+  "seoTitle": "TikTok Username Generator: Cute, Aesthetic & Funny Ideas",
+  "slug": "tiktok-username-generator",
+  "icon": "🎵",
+  "category": "concepts",
+  "published": "2026-11-29",
+  "description": "TikTok username ideas: aesthetic, cute, cool and funny handles, names for art, food, travel, fitness and book accounts, or ideas built from your name.",
+  "seoKeywords": "tiktok username generator, tiktok name generator, tiktok username ideas, tiktok name ideas, cute tiktok usernames, aesthetic tiktok usernames, aesthetic tiktok names, funny tiktok usernames, cool tiktok usernames, tiktok usernames for girls, tiktok usernames for boys, tiktok handle ideas",
+  "isPopular": false,
+  "noun": "TikTok Usernames",
+  "noEcho": true,
+  "lowercase": true,
+  "maxLength": 24,
+  "nameSource": {
+    "kind": "invented",
+    "note": "Names are built from soft colours, cute animals, retro words, everyday objects and words for art, cooking, travel, workouts and reading, joined with dots and underscores so every one uses only characters TikTok allows. Brands, creators, celebrities and anything rude were left out, and the site has no connection to TikTok or ByteDance."
+  },
+  "filters": {
+    "style": {
+      "label": "Style",
+      "options": [
+        "any",
+        "aesthetic",
+        "cute",
+        "cool",
+        "funny",
+        "art",
+        "food",
+        "travel",
+        "fitness",
+        "books",
+        "name"
+      ],
+      "optionLabels": {
+        "any": "Any style",
+        "aesthetic": "Aesthetic (linen.sunday)",
+        "cute": "Cute (peanut_hamster)",
+        "cool": "Cool (static.signal)",
+        "funny": "Funny (sock_inspector)",
+        "art": "Art (doodle_timelapses)",
+        "food": "Food (toastie_hacks)",
+        "travel": "Travel (passport_diaries)",
+        "fitness": "Fitness (plank.era)",
+        "books": "Books (plot.twist)",
+        "name": "From your name (itssam)"
+      }
+    },
+    "name": {
+      "type": "text",
+      "label": "Your name or nickname",
+      "placeholder": "e.g. Sam",
+      "default": "Sam",
+      "example": "Sam",
+      "username": true,
+      "showWhen": {
+        "style": [
+          "name"
+        ]
+      },
+      "noUnderscore": true,
+      "startLetter": true
+    }
+  },
+  "recipe": "switch",
+  "on": "style",
+  "cases": {
+    "any": {
+      "recipe": "template",
+      "template": [
+        "[aesthetic.a].[aesthetic.n_dot]",
+        "[aesthetic.a]_[aesthetic.n]",
+        "[aesthetic.a][aesthetic.n]",
+        "its.[aesthetic.a].[aesthetic.n_dot]",
+        "[cute.a].[cute.n_dot]",
+        "[cute.a]_[cute.n]",
+        "lil.[cute.a].[cute.n_dot]",
+        "[cool.a][cool.n]",
+        "[cool.a].[cool.n_dot]",
+        "[cool.a]_[cool.n]",
+        "the.[cool.a].[cool.n_dot]",
+        "[funny.thing]_[funny.role]",
+        "[funny.thing].[funny.role_dot]",
+        "[funny.whole]",
+        "[funny.whole]",
+        "[art.a]_[art.n]",
+        "[art.a].[art.n_dot]",
+        "[art.a][art.n]",
+        "[food.a]_[food.n]",
+        "[food.a].[food.n_dot]",
+        "[food.a][food.n]",
+        "[travel.a]_[travel.n]",
+        "[travel.a].[travel.n_dot]",
+        "the.[travel.a].[travel.n_dot]",
+        "[fitness.a]_[fitness.n]",
+        "[fitness.a].[fitness.n_dot]",
+        "[fitness.a][fitness.n]",
+        "my.[fitness.a].[fitness.n_dot]",
+        "[books.a]_[books.n]",
+        "[books.a].[books.n_dot]",
+        "[books.a][books.n]",
+        "the.[books.a].[books.n_dot]",
+        "[books.whole]"
+      ]
+    },
+    "aesthetic": {
+      "recipe": "template",
+      "template": [
+        "[aesthetic.a].[aesthetic.n_dot]",
+        "[aesthetic.a]_[aesthetic.n]",
+        "[aesthetic.a][aesthetic.n]",
+        "its.[aesthetic.a].[aesthetic.n_dot]"
+      ]
+    },
+    "cute": {
+      "recipe": "template",
+      "template": [
+        "[cute.a].[cute.n_dot]",
+        "[cute.a]_[cute.n]",
+        "lil.[cute.a].[cute.n_dot]"
+      ]
+    },
+    "cool": {
+      "recipe": "template",
+      "template": [
+        "[cool.a][cool.n]",
+        "[cool.a].[cool.n_dot]",
+        "[cool.a]_[cool.n]",
+        "the.[cool.a].[cool.n_dot]"
+      ]
+    },
+    "funny": {
+      "recipe": "template",
+      "template": [
+        "[funny.thing]_[funny.role]",
+        "[funny.thing].[funny.role_dot]",
+        "[funny.whole]",
+        "[funny.whole]"
+      ]
+    },
+    "art": {
+      "recipe": "template",
+      "template": [
+        "[art.a]_[art.n]",
+        "[art.a].[art.n_dot]",
+        "[art.a][art.n]"
+      ]
+    },
+    "food": {
+      "recipe": "template",
+      "template": [
+        "[food.a]_[food.n]",
+        "[food.a].[food.n_dot]",
+        "[food.a][food.n]"
+      ]
+    },
+    "travel": {
+      "recipe": "template",
+      "template": [
+        "[travel.a]_[travel.n]",
+        "[travel.a].[travel.n_dot]",
+        "the.[travel.a].[travel.n_dot]"
+      ]
+    },
+    "fitness": {
+      "recipe": "template",
+      "template": [
+        "[fitness.a]_[fitness.n]",
+        "[fitness.a].[fitness.n_dot]",
+        "[fitness.a][fitness.n]",
+        "my.[fitness.a].[fitness.n_dot]"
+      ]
+    },
+    "books": {
+      "recipe": "template",
+      "template": [
+        "[books.a]_[books.n]",
+        "[books.a].[books.n_dot]",
+        "[books.a][books.n]",
+        "the.[books.a].[books.n_dot]",
+        "[books.whole]"
+      ]
+    },
+    "name": {
+      "recipe": "template",
+      "template": [
+        "{name}[name.end]",
+        "{name}_[name.end]",
+        "{name}.[name.end_dot]",
+        "[name.pre]{name}",
+        "[name.pre]_{name}",
+        "its{name}[name.end]"
+      ]
+    }
+  },
+  "data": {
+    "aesthetic": {
+      "a": [
+        "soft",
+        "sunlit",
+        "peachy",
+        "mellow",
+        "dreamy",
+        "starry",
+        "silver",
+        "pastel",
+        "cherry",
+        "plum",
+        "olive",
+        "linen",
+        "cotton",
+        "satin",
+        "daisy",
+        "lemon",
+        "apricot",
+        "hazel",
+        "honey"
+      ],
+      "n": [
+        "hour",
+        "days",
+        "light",
+        "garden",
+        "season",
+        "era",
+        "mood",
+        "dreams",
+        "waves",
+        "sunday",
+        "cinema",
+        "tapes",
+        "letters",
+        "clouds",
+        "fields",
+        "meadow",
+        "vibes",
+        "tones",
+        "reverie",
+        "haze"
+      ],
+      "n_dot": [
+        "hour",
+        "days",
+        "light",
+        "season",
+        "era",
+        "mood",
+        "dreams",
+        "waves",
+        "sunday",
+        "cinema",
+        "tapes",
+        "letters",
+        "clouds",
+        "fields",
+        "meadow",
+        "vibes",
+        "tones",
+        "reverie",
+        "haze"
+      ]
+    },
+    "cute": {
+      "a": [
+        "peanut",
+        "teddy",
+        "smol",
+        "fluff",
+        "cuddle",
+        "snuggle",
+        "bean",
+        "jammy",
+        "wiggle",
+        "sprinkles",
+        "dimple",
+        "poppet",
+        "pip",
+        "comfy",
+        "puddle",
+        "cheeky",
+        "wobble",
+        "giggle",
+        "mallow"
+      ],
+      "n": [
+        "bun",
+        "bear",
+        "pup",
+        "kitten",
+        "duckling",
+        "cub",
+        "hamster",
+        "otter",
+        "koala",
+        "chick",
+        "lamb",
+        "puffin",
+        "boo",
+        "dumpling",
+        "noodle",
+        "bumblebee",
+        "froggy",
+        "toast",
+        "mochi",
+        "seal"
+      ],
+      "n_dot": [
+        "bun",
+        "bear",
+        "pup",
+        "kitten",
+        "duckling",
+        "cub",
+        "hamster",
+        "otter",
+        "koala",
+        "chick",
+        "lamb",
+        "puffin",
+        "dumpling",
+        "noodle",
+        "bumblebee",
+        "froggy",
+        "toast",
+        "mochi",
+        "seal"
+      ]
+    },
+    "cool": {
+      "a": [
+        "night",
+        "dark",
+        "low",
+        "zero",
+        "solo",
+        "static",
+        "retro",
+        "neon",
+        "velvet",
+        "midnight",
+        "lunar",
+        "chrome",
+        "mono",
+        "hyper",
+        "analog",
+        "silent"
+      ],
+      "n": [
+        "drive",
+        "signal",
+        "mode",
+        "wave",
+        "shift",
+        "loop",
+        "rush",
+        "motion",
+        "theory",
+        "radio",
+        "effect",
+        "tape",
+        "frequency",
+        "static",
+        "sequence",
+        "code",
+        "orbit",
+        "circuit"
+      ],
+      "n_dot": [
+        "signal",
+        "mode",
+        "wave",
+        "shift",
+        "loop",
+        "rush",
+        "motion",
+        "theory",
+        "effect",
+        "tape",
+        "frequency",
+        "static",
+        "sequence",
+        "code",
+        "orbit",
+        "circuit"
+      ]
+    },
+    "funny": {
+      "thing": [
+        "snack",
+        "nap",
+        "toast",
+        "crumpet",
+        "biscuit",
+        "sock",
+        "spoon",
+        "noodle",
+        "pigeon",
+        "goose",
+        "duck",
+        "kettle",
+        "pancake",
+        "waffle",
+        "cereal",
+        "sandwich",
+        "trolley",
+        "umbrella",
+        "cardigan",
+        "slipper",
+        "jam",
+        "teapot",
+        "houseplant",
+        "laundry",
+        "blanket",
+        "remote",
+        "crisp"
+      ],
+      "role": [
+        "enthusiast",
+        "collector",
+        "inspector",
+        "wrangler",
+        "whisperer",
+        "critic",
+        "specialist",
+        "department",
+        "appreciator",
+        "enjoyer",
+        "goblin",
+        "gremlin",
+        "professor",
+        "detective",
+        "champion",
+        "scientist",
+        "ambassador"
+      ],
+      "whole": [
+        "probably.napping",
+        "here.for.the.snacks",
+        "lost_my_charger",
+        "trying_my_best",
+        "five.more.minutes",
+        "brb.making.toast",
+        "not.a.morning.person",
+        "accidental.dancer",
+        "professional.napper",
+        "always.hungry",
+        "dancing.badly",
+        "loading.please.wait",
+        "zero.dance.skills",
+        "talks.to.pigeons",
+        "forgot.the.lyrics",
+        "sings_in_the_kitchen",
+        "terrible.at.trends",
+        "camera.shy.honestly",
+        "allergic.to.mornings",
+        "one.take.wonder",
+        "filmed.it.twice",
+        "still_learning_the_dance",
+        "wrong.way.round",
+        "late.to.every.trend",
+        "brb.snack.break"
+      ],
+      "role_dot": [
+        "enthusiast",
+        "collector",
+        "inspector",
+        "wrangler",
+        "whisperer",
+        "critic",
+        "specialist",
+        "department",
+        "appreciator",
+        "enjoyer",
+        "goblin",
+        "gremlin",
+        "professor",
+        "detective",
+        "champion",
+        "scientist",
+        "ambassador"
+      ]
+    },
+    "art": {
+      "a": [
+        "doodle",
+        "scribble",
+        "splatter",
+        "brush",
+        "crayon",
+        "marker",
+        "pencil",
+        "paint",
+        "clay",
+        "glitter",
+        "ink",
+        "sketch",
+        "chalk",
+        "stencil",
+        "collage"
+      ],
+      "n": [
+        "timelapses",
+        "speedpaints",
+        "process",
+        "strokes",
+        "scribbles",
+        "doodles",
+        "sketches",
+        "makes",
+        "clips",
+        "sessions",
+        "club",
+        "lab",
+        "tries",
+        "daily",
+        "corner"
+      ],
+      "n_dot": [
+        "timelapses",
+        "speedpaints",
+        "process",
+        "strokes",
+        "scribbles",
+        "doodles",
+        "sketches",
+        "makes",
+        "clips",
+        "sessions",
+        "lab",
+        "tries",
+        "daily",
+        "corner"
+      ]
+    },
+    "food": {
+      "a": [
+        "noodle",
+        "toastie",
+        "pancake",
+        "ramen",
+        "cookie",
+        "bagel",
+        "pasta",
+        "taco",
+        "curry",
+        "brownie",
+        "crumble",
+        "waffle",
+        "soup",
+        "garlic",
+        "cereal",
+        "dumpling",
+        "popcorn",
+        "sushi",
+        "chilli",
+        "porridge"
+      ],
+      "n": [
+        "hacks",
+        "tries",
+        "eats",
+        "bites",
+        "kitchen",
+        "dinners",
+        "recipes",
+        "cravings",
+        "club",
+        "lab",
+        "reviews",
+        "fridays",
+        "sundays",
+        "munchies"
+      ],
+      "n_dot": [
+        "hacks",
+        "tries",
+        "eats",
+        "bites",
+        "dinners",
+        "cravings",
+        "lab",
+        "fridays",
+        "sundays",
+        "munchies"
+      ]
+    },
+    "travel": {
+      "a": [
+        "passport",
+        "suitcase",
+        "backpack",
+        "roadtrip",
+        "jetlag",
+        "airport",
+        "ferry",
+        "layover",
+        "weekend",
+        "daytrip",
+        "sunrise",
+        "island",
+        "hostel"
+      ],
+      "n": [
+        "diaries",
+        "tales",
+        "vlogs",
+        "miles",
+        "days",
+        "adventures",
+        "escapes",
+        "hops",
+        "chapters",
+        "wanderings",
+        "detours"
+      ],
+      "n_dot": [
+        "diaries",
+        "tales",
+        "vlogs",
+        "miles",
+        "days",
+        "adventures",
+        "escapes",
+        "hops",
+        "chapters",
+        "wanderings",
+        "detours"
+      ]
+    },
+    "fitness": {
+      "a": [
+        "lift",
+        "squat",
+        "sprint",
+        "stretch",
+        "plank",
+        "cardio",
+        "rep",
+        "burpee",
+        "stride",
+        "step",
+        "pace",
+        "sweat"
+      ],
+      "n": [
+        "era",
+        "journey",
+        "daily",
+        "mode",
+        "goals",
+        "season",
+        "crew",
+        "club",
+        "challenge",
+        "diaries",
+        "sessions"
+      ],
+      "n_dot": [
+        "era",
+        "journey",
+        "daily",
+        "mode",
+        "goals",
+        "season",
+        "crew",
+        "challenge",
+        "diaries",
+        "sessions"
+      ]
+    },
+    "books": {
+      "a": [
+        "page",
+        "chapter",
+        "plot",
+        "bookmark",
+        "paperback",
+        "story",
+        "novel",
+        "spine",
+        "library",
+        "shelf",
+        "prose",
+        "fiction"
+      ],
+      "n": [
+        "chats",
+        "reviews",
+        "rants",
+        "recs",
+        "haul",
+        "club",
+        "talk",
+        "nook",
+        "nerd",
+        "goblin",
+        "stack",
+        "corner"
+      ],
+      "whole": [
+        "page.turner",
+        "plot.twist",
+        "just.one.more.chapter",
+        "reading.past.midnight",
+        "bookmark.hoarder",
+        "spoiler_free_zone",
+        "dog.eared.and.happy",
+        "annotating.everything",
+        "read.it.in.one.sitting"
+      ],
+      "n_dot": [
+        "chats",
+        "rants",
+        "recs",
+        "haul",
+        "nook",
+        "nerd",
+        "goblin",
+        "stack",
+        "corner"
+      ]
+    },
+    "name": {
+      "pre": [
+        "its",
+        "hey",
+        "just",
+        "simply",
+        "callme",
+        "not",
+        "real"
+      ],
+      "end": [
+        "Clips",
+        "Edits",
+        "Vlogs",
+        "Daily",
+        "Tries",
+        "Talks",
+        "Creates",
+        "Bakes",
+        "Draws",
+        "Reads",
+        "Plays",
+        "Sings",
+        "Lifts",
+        "Travels",
+        "Films",
+        "Online",
+        "Now",
+        "Today",
+        "Moments",
+        "World",
+        "Vibes",
+        "Era",
+        "Dances",
+        "Cooks",
+        "Eats",
+        "Laughs",
+        "Paints",
+        "Makes",
+        "Here",
+        "Unfiltered",
+        "Diaries",
+        "Sketches",
+        "Rambles",
+        "Explores",
+        "Show",
+        "Club",
+        "Corner",
+        "Files",
+        "Stories",
+        "Chats",
+        "Tapes",
+        "Bites",
+        "Snaps",
+        "Loops",
+        "Lab",
+        "Takes",
+        "Tunes",
+        "Hacks",
+        "Crafts",
+        "Skates",
+        "Gardens",
+        "Glows",
+        "Doodles",
+        "Sews"
+      ],
+      "end_dot": [
+        "Clips",
+        "Edits",
+        "Vlogs",
+        "Daily",
+        "Tries",
+        "Talks",
+        "Creates",
+        "Bakes",
+        "Draws",
+        "Reads",
+        "Plays",
+        "Sings",
+        "Lifts",
+        "Travels",
+        "Films",
+        "Moments",
+        "Vibes",
+        "Era",
+        "Dances",
+        "Cooks",
+        "Eats",
+        "Laughs",
+        "Paints",
+        "Makes",
+        "Unfiltered",
+        "Diaries",
+        "Sketches",
+        "Rambles",
+        "Explores",
+        "Corner",
+        "Files",
+        "Stories",
+        "Chats",
+        "Tapes",
+        "Bites",
+        "Snaps",
+        "Loops",
+        "Lab",
+        "Takes",
+        "Hacks",
+        "Crafts",
+        "Skates",
+        "Gardens",
+        "Glows",
+        "Doodles",
+        "Sews"
+      ]
+    }
+  },
+  "article": {
+    "hero": {
+      "title": "🎵 TikTok Username Generator",
+      "tagline": "Aesthetic, cute, cool and funny TikTok handles, names for niche accounts, and ideas from your own name."
+    },
+    "intro": "Your TikTok username is the @handle on every video, comment and duet, so it needs to be easy to read and easy to remember. This **TikTok username generator** makes aesthetic, cute, cool and funny handles, names for art, food, travel, fitness and book accounts, and ideas built from your name, using only letters, numbers, full stops and underscores. It's an independent site and has no connection to TikTok or its owner, ByteDance.",
+    "sections": [
+      {
+        "heading": "Eight good TikTok usernames",
+        "content": "<p>All eight came from the generator, one from each of eight styles:</p><ul><li><strong>linen.sunday</strong>: aesthetic, soft and slow, for a lifestyle or vlog account.</li><li><strong>peanut_hamster</strong>: cute and impossible to say crossly.</li><li><strong>static.signal</strong>: cool, a little retro, good for edits and music.</li><li><strong>sock_inspector</strong>: a funny job title nobody asked for.</li><li><strong>doodle_timelapses</strong>: an art account that tells you what the videos are.</li><li><strong>toastie_hacks</strong>: a food account with a promise in the name.</li><li><strong>passport_diaries</strong>: travel videos, one trip at a time.</li><li><strong>plot.twist</strong>: a book account with a phrase everyone knows.</li></ul>"
+      },
+      {
+        "heading": "What TikTok usernames can use",
+        "content": "<p>A TikTok username can only use letters, numbers, underscores and full stops, and it can't end with a full stop. There are no spaces, so the dot and the underscore do the work of keeping words apart: <em>linen.sunday</em> and <em>peanut_hamster</em> read at a glance, where <em>linensunday</em> takes a second look.</p><p>Every name here keeps to those characters, is 24 characters or fewer, and never starts or ends with a dot or an underscore. Your profile also has a separate <strong>name</strong>, shown above your bio, which can have spaces and capital letters, so the username doesn't have to say everything. TikTok lets you change your username once every 30 days, so you can try one out, but frequent changes make you harder to find.</p>"
+      },
+      {
+        "heading": "Aesthetic, cute, cool or funny?",
+        "content": "<ul><li><strong>Aesthetic</strong> handles are lowercase pairs of soft words, often a colour or fabric and a time or place: <em>soft.era</em>, <em>apricot.tones</em>, <em>cherry_waves</em>.</li><li><strong>Cute</strong> handles are small, round words and baby animals: <em>mallow_cub</em>, <em>lil.pip.duckling</em>.</li><li><strong>Cool</strong> handles borrow from night drives, old radios and synth music: <em>nightdrive</em>, <em>retro.wave</em>, <em>the.low.rush</em>.</li><li><strong>Funny</strong> handles give an ordinary thing a grand job, or admit something true: <em>pigeon.whisperer</em>, <em>talks.to.pigeons</em>, <em>lost_my_charger</em>.</li></ul><p>Say it out loud before you choose. If you'd have to spell it out to a friend, or explain where the dots go, try another.</p>"
+      },
+      {
+        "heading": "Naming a niche account",
+        "content": "<p>If your videos have one subject, put it in the handle so people know what they're following. Choose <strong>Art</strong>, <strong>Food</strong>, <strong>Travel</strong>, <strong>Fitness</strong> or <strong>Books</strong> for names like <em>clay.clips</em>, <em>ramen_lab</em>, <em>roadtrip.chapters</em>, <em>squat.season</em> and <em>page.turner</em>.</p><ul><li>Name the thing you make, not a brand you use. A handle with a product or app name in it can cause trouble with the brand, and it ties you to one company.</li><li>Leave other creators' names out. A handle that looks like someone else's can be reported as impersonation.</li><li>Think a year ahead. <em>squat.season</em> works for a fitness account that might widen out; a single exercise in the name might not.</li></ul><p>Making longer videos too? The <a href=\"youtube-channel-name-generator.html\">YouTube Channel Name Generator</a> has channel names by topic.</p>"
+      },
+      {
+        "heading": "Before you change your @",
+        "content": "<p>The names here are free to use, but someone may already have the one you like. Type it into the username box when you edit your profile and TikTok will tell you whether it's available. If you want the same handle everywhere, search for it on the other apps you use before you change it, and try the <a href=\"instagram-username-generator.html\">Instagram Username Generator</a> for a matching Instagram handle.</p><p>Keep personal details out of it too: no surname, birthday, year of birth or school. A handle is public, and it's the first thing strangers see.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is a good TikTok username?",
+        "answer": "One that's short, easy to say and hints at what you post, like toastie_hacks for food or linen.sunday for a soft lifestyle account. Choose the style or subject closest to your videos."
+      },
+      {
+        "question": "How do I make an aesthetic TikTok username?",
+        "answer": "Pair two soft words in lowercase and join them with a dot or an underscore, like soft.era or cherry_waves. Choose Aesthetic."
+      },
+      {
+        "question": "What are some cute TikTok usernames?",
+        "answer": "Small, round words and baby animals work best: peanut_hamster, mallow_cub, lil.pip.duckling. Choose Cute."
+      },
+      {
+        "question": "What are some funny TikTok usernames?",
+        "answer": "Give an everyday thing a job title, like sock_inspector, or admit something true, like lost_my_charger. Choose Funny."
+      },
+      {
+        "question": "Can a TikTok username have dots and underscores?",
+        "answer": "Yes. Letters, numbers, underscores and full stops are allowed, but the username can't end with a full stop. Every name here follows that rule."
+      },
+      {
+        "question": "How do I make a TikTok username from my name?",
+        "answer": "Choose From your name and type your name or nickname to get ideas like itssam, sambakes or Sam_Vlogs."
+      },
+      {
+        "question": "Is this an official TikTok tool?",
+        "answer": "No. It's an independent name generator and has no connection to TikTok or ByteDance."
+      }
+    ]
+  }
+}
