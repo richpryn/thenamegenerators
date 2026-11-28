@@ -33,7 +33,8 @@
     "biz_care": "pet-cottage",
     "biz_beauty": "salon-chair",
     "biz_food": "cafe-front",
-    "biz_shops": "gift-shop"
+    "biz_shops": "gift-shop",
+    "world": "globe"
   },
   "generators": {
     "ai": "robot",
@@ -469,6 +470,11 @@
     "psn_name": "joystick",
     "roblox_username": "block",
     "tiktok_username": "note",
-    "instagram_username": "film-reel"
+    "instagram_username": "film-reel",
+    "polish_name": "flag",
+    "irish_name": "clover",
+    "arabic_name": "quill",
+    "random_name": "name-tag",
+    "middle_name": "pencil"
   }
 }

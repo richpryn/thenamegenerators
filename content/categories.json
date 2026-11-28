@@ -1740,7 +1740,9 @@
       "last_name",
       "code_name",
       "clown",
-      "wrestling"
+      "wrestling",
+      "random_name",
+      "middle_name"
     ],
     "eyebrow": "Characters and personas",
     "approach": {
@@ -2535,6 +2537,98 @@
           "verdict": "A frontier name with a reputation in the middle.",
           "breakdown": "A nickname placed between first name and surname was common in Old West stories, and 'Mustang' suggests someone wild and hard to catch.",
           "motif": "cowboy-hat"
+        }
+      ]
+    }
+  },
+  {
+    "name": "World",
+    "slug": "world",
+    "icon": "🌍",
+    "navLabel": "Names from Around the World",
+    "heading": "Names from Around the World: Real Names by Country and Era",
+    "seoTitle": "Names from Around the World: Real Name Generators",
+    "description": "Real names from official records: Polish and Irish names today, and Viking, Roman, Greek, Anglo-Saxon and medieval names from history.",
+    "seoDescription": "Real names from around the world, from official records: Polish and Irish first names and surnames, plus Viking, Roman and medieval names.",
+    "intro": "<p>These generators use real names, taken from official records rather than made up. The <a href=\"../posts/polish-name-generator.html\">Polish</a> and <a href=\"../posts/irish-name-generator.html\">Irish</a> name generators draw on national registers of names people have today, with each country's surname rules built in. For names from the past, the <a href=\"../posts/viking-name-generator.html\">Viking</a>, <a href=\"../posts/roman-name-generator.html\">Roman</a> and <a href=\"../posts/anglo-saxon-name-generator.html\">Anglo-Saxon</a> generators use names recorded in sagas, inscriptions and charters, and explain how each culture put a name together.</p>",
+    "featured": [
+      {
+        "key": "polish_name",
+        "note": "first names and surnames from Poland's register, with -ski and -ska right."
+      },
+      {
+        "key": "irish_name",
+        "note": "first names registered in Ireland since 1964, by era, with Irish surnames."
+      },
+      {
+        "key": "viking",
+        "note": "Old Norse names with patronymics and saga bynames."
+      },
+      {
+        "key": "roman",
+        "note": "praenomen, nomen and cognomen, with what the cognomen meant."
+      }
+    ],
+    "generators": [
+      "polish_name",
+      "irish_name",
+      "arabic_name",
+      "viking",
+      "roman",
+      "ancient_greek",
+      "anglo_saxon",
+      "medieval",
+      "victorian",
+      "last_name",
+      "random_name"
+    ],
+    "eyebrow": "Real names, country by country",
+    "approach": {
+      "heading": "How to choose a name from another country",
+      "text": "<p>Start with where and when your character was born, because names follow both. Polish babies born in 2025 were most often called Zofia and Nikodem, but the commonest names among all Poles are Anna and Piotr. In Ireland, Mary and John led in the 1960s; in 2025 it was Lily and Rían. Then follow the country's surname rules: in Poland a woman's surname often ends in -ska where a man's ends in -ski. Keep the spelling and accents the country uses, and check a full name isn't a famous person's before you use it.</p>"
+    },
+    "tips": {
+      "heading": "Quick tips",
+      "items": [
+        "Choose the birth year before the name.",
+        "Follow the country's surname rules.",
+        "Keep the accents and special letters.",
+        "Check a full name isn't someone famous.",
+        "Mix eras across a family's generations."
+      ]
+    },
+    "startHeading": "Try these name generators",
+    "startIntro": "Use these tools to find a real name from the country and period you need.",
+    "examples": {
+      "heading": "Examples",
+      "items": [
+        {
+          "name": "Aleksandra Kamińska",
+          "type": "POLISH",
+          "verdict": "A real Polish first name with a surname in its feminine form.",
+          "breakdown": "Her brother would be Kamiński: surnames ending in -ski take -ska for a woman, because they work like adjectives.",
+          "motif": "flag"
+        },
+        {
+          "name": "Saoirse McGrath",
+          "type": "IRISH",
+          "verdict": "A modern Irish-language first name with a classic surname.",
+          "breakdown": "Saoirse is Irish for 'freedom' and a favourite for baby girls today; Mc means 'son', so McGrath began as 'son of' someone.",
+          "motif": "clover"
+        },
+        {
+          "name": "Herjolf Halfdansson",
+          "type": "VIKING",
+          "verdict": "An Old Norse name that says who your father was.",
+          "breakdown": "Halfdansson means 'son of Halfdan'. Norse surnames changed every generation, so his children would be named after Herjolf.",
+          "motif": "longship"
+        },
+        {
+          "name": "Gaius Hortensius Sabinus",
+          "type": "ROMAN",
+          "verdict": "A Roman citizen with all three names.",
+          "breakdown": "A personal name, a family name and a cognomen. Sabinus means 'Sabine', after a people who lived near Rome.",
+          "motif": "column"
         }
       ]
     }

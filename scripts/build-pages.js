@@ -359,7 +359,7 @@ function howItWorksHtml(generator) {
   // {"kind": "invented" | "historical" | "mixed", "note": "..."}
   const src = generator.nameSource;
   if (src && src.note) {
-    const lead = { invented: 'Every name is invented.', historical: 'These are real historical names.', mixed: 'Some names are real and some are invented.' }[src.kind] || '';
+    const lead = { invented: 'Every name is invented.', historical: 'These are real historical names.', recorded: 'These are real recorded names.', mixed: 'Some names are real and some are invented.' }[src.kind] || '';
     parts.push(`<p><strong>Where the names come from:</strong> ${escapeHtml(lead)} ${markdownBold(escapeHtml(src.note))}</p>`);
   }
   if (generator.provenance) {
