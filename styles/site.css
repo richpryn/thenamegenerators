@@ -950,3 +950,29 @@ a.go{text-decoration:none}
 .embed-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:var(--s1) var(--s3);margin:0;font:15px/1.3 var(--head)}
 .embed-head b{font-weight:700}
 .embed-head a{font-size:14px;color:var(--ink)}
+/* ---------- Baby names from parents' names (28 Nov) ---------- */
+.pn-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3) 20px;align-items:end}
+.pn-grid .group + .group{margin-top:0}
+.pn-grid .label{white-space:nowrap}
+.pn-sexgroup{margin-top:20px}
+.pn-blendgroup{padding-top:var(--s4);border-top:1px dashed rgba(30,28,24,.28)}
+.pn-key{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px;margin:var(--s4) 0 0;font-size:14px;line-height:1.4;color:var(--muted)}
+.pn-group{margin-top:var(--s5)}
+.pn-group + .pn-group{padding-top:var(--s4);border-top:1px dashed rgba(30,28,24,.28)}
+.pn-h{margin:0;font:700 19px/1.25 var(--head);letter-spacing:0;text-transform:none;color:var(--ink)}
+.pn-h .pn-count,.pn-h .prov{margin-left:6px}
+.pn-count{font:400 17px/1 var(--hand);color:var(--pen)}
+.pn-sub,.pn-none{margin:4px 0 0;font-size:15px;line-height:1.45;color:var(--muted);max-width:64ch}
+.pn-none{font-style:italic}
+.pn-list{list-style:none;margin:var(--s2) 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;column-gap:var(--s4)}
+@media (min-width:640px){.pn-list{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:1024px){.pn-list{grid-template-columns:repeat(4,1fr)}}
+.pn-item{display:flex;align-items:center;gap:var(--s2);min-height:56px;padding-block:6px;border-bottom:1px solid var(--rule);min-width:0}
+.pn-main{flex:1;min-width:0;display:flex;flex-direction:column;align-items:flex-start}
+.pn-item .n{min-height:30px;padding:0;font:500 17px/1.25 var(--body);text-align:left;cursor:copy;overflow-wrap:anywhere;max-width:100%}
+.pn-meta{font-size:13px;line-height:1.3;color:var(--muted);overflow-wrap:anywhere}
+.pn-why{display:block;font:400 14px/1.2 var(--hand);color:var(--pen)}
+.pn-more{margin-top:var(--s3)}
+.pn-blendgroup .prov{vertical-align:2px}
+.pn-exlist li{font-size:16px;line-height:1.5;margin-bottom:var(--s2)}
+.pn-exlabel{display:block;font:700 12px/1.3 var(--head);letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}

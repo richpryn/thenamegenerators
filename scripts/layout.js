@@ -28,7 +28,7 @@ function escapeHtml(text) {
 
 // Stylesheets and scripts get "?v=<hash of the file>" so browsers fetch the
 // new copy after every change instead of keeping a stale cached one.
-const ASSETS = ['styles/site.css', 'lib/page.js', 'lib/outline.js', 'lib/recipe-engine.js', 'lib/wheel.js', 'lib/nametools.js', 'lib/consent.js', 'lib/checker.js', 'lib/lists.js', 'lib/elements.js', 'lib/builder.js',
+const ASSETS = ['styles/site.css', 'lib/page.js', 'lib/outline.js', 'lib/recipe-engine.js', 'lib/wheel.js', 'lib/nametools.js', 'lib/consent.js', 'lib/checker.js', 'lib/lists.js', 'lib/elements.js', 'lib/builder.js', 'lib/parentnames.js',
   'favicon.svg', 'favicon.ico', 'apple-touch-icon.png'];
 const versions = {};
 function assetVersion(file) {
@@ -215,6 +215,7 @@ const MENU = [
     ['secret-santa-generator.html', 'Secret Santa'],
     ['team-generator.html', 'Team generator'],
     ['posts/name-combiner.html', 'Name combiner'],
+    ['baby-name-from-parents.html', 'Baby names from parents'],
   ], more: [['name-tools.html', 'Name tools']] },
 ];
 

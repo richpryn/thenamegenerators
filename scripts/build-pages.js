@@ -20,6 +20,7 @@ const RecipeEngine = require('../lib/recipe-engine.js');
 const layout = require('./layout');
 const Illustrations = require('../lib/illustrations.js');
 const { generateCheckerPage } = require('./checker-page');
+const Parents = require('./parents-page');
 const Reference = require('./reference-pages');
 const REFERENCE = Reference.loadReference();
 const REF_FOR = Reference.referenceFor(REFERENCE);
@@ -1023,6 +1024,9 @@ const NAME_TOOLS = [
     doodle: '<svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><rect x="8" y="18" width="32" height="24" rx="2" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.6"/><path d="M24 18 V42 M8 26 H40" stroke="#1e1c18" stroke-width="1.4"/><path d="M24 18 C18 8 12 12 18 17 M24 18 C30 8 36 12 30 17" fill="none" stroke="#1e1c18" stroke-width="1.5" stroke-linecap="round"/><path d="M12 34 H20" stroke="#efc84a" stroke-width="4" stroke-linecap="round"/></svg>' },
   { key: 'teams', page: 'team-generator.html', title: 'Team Generator', short: 'Splits a list into even, random teams.',
     doodle: '<svg class="doodle wob" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><rect x="5" y="10" width="17" height="28" rx="2" fill="#fffcf4" stroke="#1e1c18" stroke-width="1.6"/><rect x="26" y="10" width="17" height="28" rx="2" fill="#efc84a" stroke="#1e1c18" stroke-width="1.6"/><path d="M9 18 H18 M9 24 H16 M9 30 H18 M30 18 H39 M30 24 H37 M30 30 H39" stroke="#1e1c18" stroke-width="1.4" stroke-linecap="round"/></svg>' },
+  // Not a list tool: its own page and script (scripts/parents-page.js, lib/parentnames.js).
+  { key: 'parents', page: Parents.PAGE, title: Parents.TITLE, short: "Real baby names made from both parents' first names.", script: 'lib/parentnames.js',
+    doodle: Parents.DOODLE },
 ];
 
 /** Cards linking to the other name tools (and the Name Combiner). */
@@ -1602,7 +1606,7 @@ ${scriptJson({
                 <h1>Name <span class="hl">Tools</span></h1>
                 ${NAME_TOOLS[0].doodle}
             </div>
-            <p class="lede">Free tools for a list of names: spin it, draw from it, run a raffle, draw Secret Santa or split it into teams.</p>
+            <p class="lede">Free tools for a list of names: spin it, draw from it, run a raffle, draw Secret Santa or split it into teams. Or find baby names made from both parents' names.</p>
 
             <section class="section">
                 <div class="tools">
@@ -1613,6 +1617,7 @@ ${scriptJson({
             <div class="section intro">
                 <p>Every tool works the same way: type or paste names, one per line, or add 8 from one of our <a href="all-generators.html">name generators</a>. Your list is saved in your own browser, so it's there next time, and you can share it as a link. The names travel inside the link itself, so nothing is stored on our server.</p>
                 <p>Every pick uses your browser's secure random number generator, and duplicate names are removed automatically so everyone has the same chance.</p>
+                <p>The <a href="${Parents.PAGE}">baby name generator from parents' names</a> works differently: type two first names and it finds real baby names that link them, from the official lists for England and Wales.</p>
             </div>
         </main>
         <aside class="side" aria-label="Sidebar"></aside>
@@ -2173,6 +2178,10 @@ function build() {
     const page = NAME_TOOLS.find(t => t.key === key).page;
     fs.writeFileSync(path.join(ROOT, page), generateNameToolPage(key, site));
   }
+  const parentBytes = Parents.buildData();
+  if (parentBytes > 150 * 1024) throw new Error(`data/parent-names.json is ${parentBytes} bytes; keep it under 150 KB`);
+  fs.writeFileSync(path.join(ROOT, Parents.PAGE), Parents.generateParentsPage(site, { escapeHtml, scriptJson, ICON_LINKS, AUTHOR, toolCards: nameToolCards(site, 'parents') }));
+  console.log(`  ✅ Created: ${Parents.PAGE} (names: ${Math.round(parentBytes / 1024)} KB)`);
   fs.writeFileSync(path.join(ROOT, 'name-tools.html'), generateNameToolsHub(site));
   fs.writeFileSync(path.join(ROOT, 'business.html'), layout.stampAssets(generateBusinessHub(site)));
   console.log('  ✅ Created: business.html');
@@ -2263,7 +2272,7 @@ function generateSitemap(site) {
   </url>
 ${NAME_TOOLS.map(t => `  <url>
     <loc>${baseUrl}/${t.page}</loc>
-    <lastmod>${latest([lastChanged(t.key === 'wheel' ? 'lib/wheel.js' : 'lib/nametools.js')])}</lastmod>
+    <lastmod>${latest([lastChanged(t.script || (t.key === 'wheel' ? 'lib/wheel.js' : 'lib/nametools.js'))])}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>`).join('\n')}
