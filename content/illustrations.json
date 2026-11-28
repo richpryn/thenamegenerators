@@ -458,6 +458,10 @@
     "discord_server": "speech-bubble",
     "clown": "top-hat",
     "wrestling": "star",
-    "playlist": "headphones"
+    "playlist": "headphones",
+    "book_title": "storybook",
+    "movie_title": "film-reel",
+    "pen_name": "quill",
+    "newspaper": "typewriter"
   }
 }

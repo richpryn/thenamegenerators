@@ -1795,7 +1795,7 @@
     "seoTitle": "Name Generators for Writers: Stories, Characters and Titles",
     "description": "Story prompts, characters, villains, sidekicks, legends and titles: generators for writers stuck on the next name or idea.",
     "seoDescription": "Free name generators and story tools for writers: story prompts, local legends, villain, sidekick, superhero, NPC and fairy-tale names, epithets and titles.",
-    "intro": "<p>Every story needs names, and most writers have stalled on one: the villain who needs a title, the sidekick who needs a joke, the village whose legend everybody knows. These generators cover the people in your story, the places and stories around them, and the titles on the cover. For characters, try the <a href=\"../posts/villain-name-generator.html\">Villain</a>, <a href=\"../posts/sidekick-name-generator.html\">Sidekick</a>, <a href=\"../posts/superhero-name-generator.html\">Superhero</a> and <a href=\"../posts/fairy-tale-name-generator.html\">Fairy Tale</a> name generators, or the <a href=\"../posts/epithet-generator.html\">Epithet Generator</a> to give anyone a title they earned.</p><p>Stuck before the names? The <a href=\"../posts/story-prompt-generator.html\">Story Prompt Generator</a> gives you a character, a setting, a plot or a twist, and the <a href=\"../posts/local-legend-generator.html\">Local Legend Generator</a> makes up the kind of folk tale a village tells about itself. When it's finished, the <a href=\"../posts/horror-movie-title-generator.html\">Horror Movie Title</a> and <a href=\"../posts/song-title-generator.html\">Song Title</a> generators will help name it.</p>",
+    "intro": "<p>Every story needs names, and most writers have stalled on one: the villain who needs a title, the sidekick who needs a joke, the village whose legend everybody knows. These generators cover the people in your story, the places and stories around them, and the titles on the cover. For characters, try the <a href=\"../posts/villain-name-generator.html\">Villain</a>, <a href=\"../posts/sidekick-name-generator.html\">Sidekick</a>, <a href=\"../posts/superhero-name-generator.html\">Superhero</a> and <a href=\"../posts/fairy-tale-name-generator.html\">Fairy Tale</a> name generators, or the <a href=\"../posts/epithet-generator.html\">Epithet Generator</a> to give anyone a title they earned.</p><p>Stuck before the names? The <a href=\"../posts/story-prompt-generator.html\">Story Prompt Generator</a> gives you a character, a setting, a plot or a twist, and the <a href=\"../posts/local-legend-generator.html\">Local Legend Generator</a> makes up the kind of folk tale a village tells about itself. When it's finished, the <a href=\"../posts/book-title-generator.html\">Book Title</a>, <a href=\"../posts/movie-title-generator.html\">Movie Title</a>, <a href=\"../posts/horror-movie-title-generator.html\">Horror Movie Title</a> and <a href=\"../posts/song-title-generator.html\">Song Title</a> generators will help name it, and the <a href=\"../posts/pen-name-generator.html\">Pen Name Generator</a> will give it an author.</p>",
     "featured": [
       {
         "key": "story_prompt",
@@ -1822,7 +1822,11 @@
       "horror_movie",
       "song_title",
       "character_name",
-      "last_name"
+      "last_name",
+      "book_title",
+      "movie_title",
+      "pen_name",
+      "newspaper"
     ],
     "eyebrow": "Tools for writers",
     "approach": {

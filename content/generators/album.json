@@ -2,6 +2,7 @@
   "title": "Album Name Generator",
   "slug": "album-name-generator",
   "icon": "💿",
+  "capitalise": true,
   "category": "music",
   "published": "2026-10-20",
   "description": "Album titles in the shapes real albums use: a mood and an object, a place, a number, a dedication, with tips on choosing one that fits the record.",
