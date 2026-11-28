@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink &amp; Cocktail Name Generator | The Name Generators</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://thenamegenerators.com/posts/drink-name-generator.html">
+    <base target="_blank">
+    <link rel="icon" href="/favicon.ico?v=626227da" sizes="any">
+    <link rel="icon" href="/favicon.svg?v=727d2202" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
+</head>
+<body class="embed-page">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      
+    </defs></svg>
+    <main class="embed-wrap">
+        <p class="embed-head"><b>Drink &amp; Cocktail Name Generator</b> <a href="https://thenamegenerators.com/posts/drink-name-generator.html?utm_source=embed&amp;utm_medium=widget" rel="noopener">More at The Name Generators</a></p>
+        <section class="sheet hd simple-generator" id="generator" aria-label="Drink &amp; Cocktail Name Generator">
+                <div class="gen-grid">
+          <div class="group">
+            <label class="label" for="filter-type">Type of drink</label>
+            <div class="ctl sel hd">
+              <select id="filter-type" name="type" data-filter="type">
+                <option value="any">Any drink</option>
+                <option value="cocktail">Cocktail (Velvet Orchard)</option>
+                <option value="mocktail">Mocktail (Rhubarb Cooler)</option>
+                <option value="shot">Shot (Sherbet Rocket)</option>
+                <option value="wedding">Wedding (First Dance Fizz)</option>
+                <option value="christmas">Christmas (Gingerbread Nog)</option>
+                <option value="halloween">Halloween (Cauldron Punch)</option>
+                <option value="name">From a name (The Sam Sour)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="group">
+            <label class="label" for="filter-name">A name to use</label>
+            <div class="ctl hd"><input type="text" id="filter-name" name="name" data-filter="name" placeholder="e.g. Sam" class="name-input" autocomplete="off"></div>
+          </div></div>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="false">
+                    <p class="results-empty">Press Generate Names for 8 drink names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
+                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+    </main>
+    <script type="application/json" id="generator-config">{"title":"Drink & Cocktail Name Generator","seoTitle":"Drink & Cocktail Name Generator: Cocktail Name Ideas","slug":"drink-name-generator","noEcho":true,"nameSource":{"kind":"invented","note":"Names are built from fruits, herbs and spices, the real words for drink styles (fizz, sour, smash, cobbler, julep), and wedding, Christmas and Halloween words. Real classic cocktail names, drinks brands and anything about getting drunk were left out."},"filters":{"type":{"label":"Type of drink","options":["any","cocktail","mocktail","shot","wedding","christmas","halloween","name"],"optionLabels":{"any":"Any drink","cocktail":"Cocktail (Velvet Orchard)","mocktail":"Mocktail (Rhubarb Cooler)","shot":"Shot (Sherbet Rocket)","wedding":"Wedding (First Dance Fizz)","christmas":"Christmas (Gingerbread Nog)","halloween":"Halloween (Cauldron Punch)","name":"From a name (The Sam Sour)"}},"name":{"type":"text","label":"A name to use","placeholder":"e.g. Sam","default":"Sam","example":"Sam","firstName":true,"showWhen":{"type":["name"]}}},"recipe":"switch","on":"type","cases":{"any":{"recipe":"template","template":["[flavour] [cocktail.style]","[flavour] [cocktail.style]","[cocktail.adj] [cocktail.noun]","[cocktail.adj] [cocktail.noun]","[cocktail.place] [cocktail.style]","The [cocktail.adj] [cocktail.noun]","[flavour] [mocktail.style]","[flavour] [mocktail.style]","[flavour] [mocktail.style]","[mocktail.fun] [mocktail.style]","[mocktail.fun] [mocktail.style]","[mocktail.whole]","[shot.adj] [shot.noun]","[wedding.word] [wedding.style]","[wedding.word] [wedding.style]","[wedding.word] [wedding.style]","[flavour] [wedding.noun]","[flavour] [wedding.noun]","[christmas.word] [christmas.style]","[christmas.word] [christmas.style]","[christmas.word] [christmas.style]","[christmas.adj] [christmas.noun]","[christmas.adj] [christmas.noun]","[halloween.word] [halloween.style]","[halloween.word] [halloween.style]","[halloween.word] [halloween.style]","[halloween.adj] [halloween.noun]","[halloween.adj] [halloween.noun]"]},"cocktail":{"recipe":"template","template":["[flavour] [cocktail.style]","[flavour] [cocktail.style]","[cocktail.adj] [cocktail.noun]","[cocktail.adj] [cocktail.noun]","[cocktail.place] [cocktail.style]","The [cocktail.adj] [cocktail.noun]"]},"mocktail":{"recipe":"template","template":["[flavour] [mocktail.style]","[flavour] [mocktail.style]","[flavour] [mocktail.style]","[mocktail.fun] [mocktail.style]","[mocktail.fun] [mocktail.style]","[mocktail.whole]"]},"shot":{"recipe":"template","template":["[shot.adj] [shot.noun]"]},"wedding":{"recipe":"template","template":["[wedding.word] [wedding.style]","[wedding.word] [wedding.style]","[wedding.word] [wedding.style]","[flavour] [wedding.noun]","[flavour] [wedding.noun]"]},"christmas":{"recipe":"template","template":["[christmas.word] [christmas.style]","[christmas.word] [christmas.style]","[christmas.word] [christmas.style]","[christmas.adj] [christmas.noun]","[christmas.adj] [christmas.noun]"]},"halloween":{"recipe":"template","template":["[halloween.word] [halloween.style]","[halloween.word] [halloween.style]","[halloween.word] [halloween.style]","[halloween.adj] [halloween.noun]","[halloween.adj] [halloween.noun]"]},"name":{"recipe":"template","template":["The {name} [name.style]","The {name} [name.style]","{name}'s [flavour] [name.flavourStyle]","{name}'s [flavour] [name.flavourStyle]","{name}'s [flavour] [name.flavourStyle]"]}},"data":{"flavour":["Rhubarb","Blackberry","Elderflower","Ginger","Blood Orange","Hibiscus","Lavender","Passion Fruit","Raspberry","Cherry","Plum","Pear","Apricot","Honey","Basil","Cucumber","Grapefruit","Pomegranate","Damson","Gooseberry","Mango","Pineapple","Coconut","Fig","Quince","Strawberry","Rose","Cardamom","Earl Grey","Blackcurrant","Watermelon","Lemongrass","Yuzu","Rosemary","Thyme","Apple","Vanilla","Lychee","Hedgerow"],"cocktail":{"style":["Fizz","Sour","Spritz","Smash","Cooler","Punch","Swizzle","Highball","Daisy","Cobbler","Sling","Julep","Crush","Flip"],"adj":["Velvet","Copper","Golden","Midnight","Silver","Twilight","Painted","Crimson","Amber","Sunlit","Hidden","Gilded","Moonlit","Emerald","Garnet","Smoky","Sapphire","Dusky","Starlit"],"noun":["Orchard","Garden","Meadow","Harbour","Lantern","Sunset","Grove","Promenade","Pavilion","Veranda","Waltz","Postcard","Telegram","Carousel","Monocle","Serenade","Labyrinth","Feather","Gramophone","Masquerade","Rendezvous","Rumba","Foxtrot"],"place":["Harbour","Garden","Meadow","Orchard","Riviera","Seaside","Veranda","Terrace","Pavilion","Boathouse","Greenhouse","Library","Parlour","Promenade","Bandstand","Lido","Pier","Rooftop","Courtyard","Conservatory"]},"mocktail":{"style":["Fizz","Cooler","Spritz","Lemonade","Punch","Smash","Sparkler","Soda","Shrub","Tonic","Refresher","Iced Tea","Splash"],"fun":["Unicorn","Rainbow","Dinosaur","Mermaid","Pirate","Jungle","Sherbet","Candyfloss","Lollipop","Moonbeam","Sunshine","Dragon","Fairy","Seaside","Picnic","Garden Party","Sunny Day","Rock Pool"],"whole":["Zero Proof","Clear Skies","Garden Party Punch","Bright Side","Fresh Start","Sunny Disposition","Sparkling Water Lily","Alcohol-Free Sunshine","Just Juice and Joy","Free and Fizzy","Nought Percent","No Proof Needed","Clean Slate","All Fizz, No Fuss","Lemon Sherbet Cloud","Pink Lemonade Parade","Cucumber Calm","Apple Orchard Breeze","Mint Condition","Fizz Without the Fuss"]},"shot":{"adj":["Little","Tiny","Mini","Lucky","Spicy","Fiery","Electric","Golden","Neon","Sherbet","Toffee","Ginger","Cinnamon","Chilli","Cherry","Lemon","Liquorice","Peppermint","Sour Apple","Butterscotch","Raspberry","Espresso","Salted Caramel","Blue Raspberry"],"noun":["Spark","Firework","Rocket","Comet","Meteor","Flash","Jolt","Kick","Zinger","Thunderbolt","Shooting Star","Dart","Sparkler","Firecracker","Bolt","Lightning","Sprinter","Pip","Dash","Fizzbang","Whizz","Supernova"]},"wedding":{"word":["First Dance","Ever After","Confetti","Bouquet","Honeymoon","Something Blue","Sweetheart","Lovebird","Happy Couple","Just Married","Stardust","Rose Petal","Golden Ring","Wedding Bell","Two Hearts","Garden Party","Top Table","Best Man's","Bridesmaid's","Big Day","Happily Ever After","Forever","I Do","Mr & Mrs","Mrs & Mrs","Mr & Mr","Plus One","Love Letter","Buttonhole","Wedding Breakfast","Something Borrowed"],"style":["Fizz","Sour","Spritz","Smash","Cooler","Punch","Sparkler","Royale","Crush","Daisy"],"noun":["Promise","Vow","Kiss","Waltz","Toast","Romance","Sweetheart","Embrace","Serenade"]},"christmas":{"word":["Mistletoe","Snowflake","Winter","Gingerbread","Candy Cane","Cranberry","Clementine","Mince Pie","Sugarplum","Holly","Yule","Fireside","Reindeer","Sleigh Bell","Tinsel","Robin","Evergreen","Chestnut","Figgy","Spiced Pear","Cinnamon","Nutmeg","Star Anise","Snowman","Midwinter","Advent","Christmas Pudding","Satsuma","Frosty","Nutcracker","Christmas Eve","Boxing Day","Pine Needle","Polar Bear","Snow Globe"],"style":["Fizz","Sour","Spritz","Punch","Toddy","Nog","Cobbler","Smash","Crush","Flip","Cooler"],"adj":["Frosted","Snowy","Spiced","Sparkling","Midwinter","Candlelit","Fireside","Starlit","Twinkling","Jolly","Wintry","Gilded","Velvet","Glittering","Crackling","Snowbound"],"noun":["Orchard","Glow","Lantern","Sleigh","Star","Ember","Waltz","Carol","Parlour","Snowfall","Hearth","Bauble","Wreath","Sledge","Snow Angel"]},"halloween":{"word":["Cauldron","Pumpkin","Black Cat","Ghost","Phantom","Spider","Bat Wing","Haunted","Poison Apple","Midnight","Skeleton","Graveyard","Werewolf","Mummy's","Goblin","Eyeball","Cobweb","Spellbook","Broomstick","Vampire","Swamp","Raven","Toadstool","Full Moon","Jack-o'-Lantern","Bat","Ghoul","Wizard"],"style":["Brew","Punch","Potion","Fizz","Sour","Smash","Elixir","Cooler","Tonic","Spritz"],"adj":["Midnight","Moonlit","Haunted","Creeping","Howling","Shadowy","Eerie","Spooky","Ghostly","Cursed","Enchanted","Bubbling","Misty","Crooked"],"noun":["Cauldron","Lantern","Potion","Elixir","Hollow","Graveyard","Crypt","Cobweb","Broomstick","Moon","Pumpkin","Spell","Swamp","Mist","Tombstone","Raven","Hex","Shadow"]},"name":{"style":["Sour","Fizz","Spritz","Smash","Cooler","Punch","Swizzle","Highball","Special","Sling","Royale","Daisy","Crush","Signature"],"flavourStyle":["Fizz","Sour","Spritz","Smash","Cooler","Punch","Swizzle","Highball","Daisy","Crush","Cobbler"]}}}</script>
+    <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
+    <script src="../lib/outline.js?v=bb3e12d8"></script>
+    <script>(function(){if(window.parent===window)return;var last=0;function send(){var h=Math.ceil(document.documentElement.getBoundingClientRect().height);if(h!==last){last=h;window.parent.postMessage({tngEmbedHeight:h},'*');}}if('ResizeObserver' in window)new ResizeObserver(send).observe(document.body);window.addEventListener('load',send);send();})();</script>
+</body>
+</html>

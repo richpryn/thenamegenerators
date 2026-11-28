@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diner Name Generator | The Name Generators</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://thenamegenerators.com/posts/diner-name-generator.html">
+    <base target="_blank">
+    <link rel="icon" href="/favicon.ico?v=626227da" sizes="any">
+    <link rel="icon" href="/favicon.svg?v=727d2202" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=04ffc72e">
+    <link rel="preload" href="../fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../styles/site.css?v=20f37f85">
+</head>
+<body class="embed-page">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+      <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+      <symbol id="i-bookmark" viewBox="0 0 15 17"><path d="M2 1.5 H13 V15.5 L7.5 11.5 L2 15.5 Z"/></symbol>
+      <symbol id="i-wand" viewBox="0 0 22 22"><path d="M3 19 L15 7 M13 5 L17 9 M15 3 C17 1 21 5 19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19 l-1 2 l2 -1" fill="none" stroke="#efc84a" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 14 14"><rect x="4.5" y="4.5" width="8" height="8" rx="1.5"/><path d="M9.5 2.5 V2 a1 1 0 0 0 -1 -1 H2.5 a1 1 0 0 0 -1 1 V8 a1 1 0 0 0 1 1 H3"/></symbol>
+      <symbol id="i-clear" viewBox="0 0 14 14"><path d="M3 3 L11 11 M11 3 L3 11"/></symbol>
+      <symbol id="i-search" viewBox="0 0 22 22"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M14.5 14.5 L20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 16 20"><path d="M2 1.5 H10 L14 5.5 V18.5 H2 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 1.5 V5.5 H14 M5 10 h6 M5 13 h6 M5 16 h4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+      <symbol id="i-tick" viewBox="0 0 22 18"><path d="M2 10 C5 12 7 14 8 16 C11 10 15 5 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      
+    </defs></svg>
+    <main class="embed-wrap">
+        <p class="embed-head"><b>Diner Name Generator</b> <a href="https://thenamegenerators.com/posts/diner-name-generator.html?utm_source=embed&amp;utm_medium=widget" rel="noopener">More at The Name Generators</a></p>
+        <section class="sheet hd simple-generator" id="generator" aria-label="Diner Name Generator">
+                <div class="gen-grid">
+          <div class="group">
+            <label class="label" for="filter-style">Style</label>
+            <div class="ctl sel hd">
+              <select id="filter-style" name="style" data-filter="style">
+                <option value="any">Any style</option>
+                <option value="classic">50s retro (Jukebox Diner)</option>
+                <option value="roadside">Roadside (Crossroads Diner)</option>
+                <option value="breakfast">Breakfast (Short Stack Café)</option>
+                <option value="family">Family (Harper&#039;s Diner)</option>
+                <option value="modern">Modern (Griddle &amp; Rye)</option>
+                <option value="mine">Your name (Sarah&#039;s Diner)</option>
+                <option value="local">Your town (Hampton Diner)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="group">
+            <label class="label" for="filter-name">Your first name</label>
+            <div class="ctl hd"><input type="text" id="filter-name" name="name" data-filter="name" placeholder="e.g. Sarah" class="name-input" autocomplete="off"></div>
+          </div>
+
+          <div class="group">
+            <label class="label" for="filter-town">Your town or area</label>
+            <div class="ctl hd"><input type="text" id="filter-town" name="town" data-filter="town" placeholder="e.g. Hampton" class="name-input" autocomplete="off"></div>
+          </div></div>
+                <button id="generate-btn" class="go hd tap" type="button"><svg aria-hidden="true" focusable="false"><use href="#i-wand"/></svg>Generate Names</button>
+                <div id="results" class="results-area" data-long="true">
+                    <p class="results-empty">Press Generate Names for 8 diner names.</p>
+                </div>
+                <div class="after">
+                    <button id="more" class="more hd tap" type="button" hidden>+ Show 8 more</button>
+                    <p id="done" class="done-note" tabindex="-1" hidden><svg aria-hidden="true" focusable="false"><use href="#i-tick"/></svg><span data-done-text></span></p>
+                </div>
+                <div class="foot">
+                    <p class="sl" id="shortlist-line">Tap a name to copy it, or the bookmark to keep it.</p>
+                    <div class="acts">
+                        <button type="button" class="mini hd tap" data-action="copy-all" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span>Copy</span></button>
+                        <button type="button" class="mini hd tap" data-action="clear" disabled><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clear"/></svg><span>Clear</span></button>
+                    </div>
+                </div>
+                <div class="shortlist" id="shortlist" aria-label="Your shortlist" hidden></div>
+                <p class="key"><i aria-hidden="true"></i>black shadow = tap it</p>
+            </section>
+    </main>
+    <script type="application/json" id="generator-config">{"title":"Diner Name Generator","seoTitle":"Diner Name Generator: Retro and Breakfast Diner Names","slug":"diner-name-generator","noEcho":true,"fixArticles":true,"checkName":true,"filters":{"style":{"label":"Style","options":["any","classic","roadside","breakfast","family","modern","mine","local"],"optionLabels":{"any":"Any style","classic":"50s retro (Jukebox Diner)","roadside":"Roadside (Crossroads Diner)","breakfast":"Breakfast (Short Stack Café)","family":"Family (Harper's Diner)","modern":"Modern (Griddle & Rye)","mine":"Your name (Sarah's Diner)","local":"Your town (Hampton Diner)"}},"name":{"type":"text","label":"Your first name","placeholder":"e.g. Sarah","default":"Sarah","example":"Sarah","firstName":true,"showWhen":{"style":["mine"]}},"town":{"type":"text","label":"Your town or area","placeholder":"e.g. Hampton","default":"Hampton","example":"Hampton","showWhen":{"style":["local"]}}},"recipe":"switch","on":"style","cases":{"any":{"recipe":"template","template":["[classic.retro] [classic.trade]","The [classic.retro] Diner","[classic.whole]","[roadside.road] [roadside.trade]","[roadside.numbered] [roadside.num] Diner","[roadside.whole]","[breakfast.word] [breakfast.trade]","[breakfast.word] [breakfast.trade]","[breakfast.whole]","[family.surname]'s [family.trade]","[family.surname] [family.kin]","[family.whole]","[modern.word] [modern.ending]","[modern.left] & [modern.right]","[modern.bare]"]},"classic":{"recipe":"template","template":["[classic.retro] [classic.trade]","The [classic.retro] Diner","[classic.whole]"]},"roadside":{"recipe":"template","template":["[roadside.road] [roadside.trade]","[roadside.numbered] [roadside.num] Diner","[roadside.whole]"]},"breakfast":{"recipe":"template","template":["[breakfast.word] [breakfast.trade]","[breakfast.word] [breakfast.trade]","[breakfast.whole]"]},"family":{"recipe":"template","template":["[family.surname]'s [family.trade]","[family.surname] [family.kin]","[family.whole]"]},"modern":{"recipe":"template","template":["[modern.word] [modern.ending]","[modern.left] & [modern.right]","[modern.bare]"]},"mine":{"recipe":"template","template":["{name}'s [mine.trade]","{name}'s [mine.adjective] [mine.short]","{name}'s [mine.adjective] [mine.short]","[mine.phrase]"]},"local":{"recipe":"template","template":["{town} [local.place] [local.trade]","{town} [local.adjective] Diner","The {town} [local.the]","[local.phrase]"]}},"data":{"classic":{"retro":["Jukebox","Moonlite","Chrome Cherry","Rocket","Atomic","Neon","Checkerboard","Pinball","Cherry Pie","Sock Hop","Blue Plate","Bobby Pin","Hot Rod","Tail Fin","Silver Spoon","Hi-Fi","Cherry Red","Sundae","Rock-a-Billy","Diamond","Chrome","Comet","Satellite","Spinning Record","Red Booth","Coin-Op","Sweetheart","Doo-Wop","Polka Dot","Ruby","Saddle Shoe","Drive-In","Flamingo","Bubblegum","Rocket Ship"],"trade":["Diner","Diner","Grill","Diner & Grill","Malt Shop","Soda Fountain","Burger Bar","Milk Bar","Luncheonette","Shake Shop"],"whole":["Shake, Rattle & Roll","Rock Around the Clock Diner","Blue Suede Grill","At the Hop","Jukebox Jive","Back in Time Diner","Nifty Fifties Diner","Rewind Diner","Retro Rocket Diner","Pink Jukebox Grill","Malts & Melodies","Shakes & Records","Two Straws Diner","Root Beer & Records","Chrome & Cherry","Booths & Shakes","Vinyl & Fries","Fries & Records","Rock & Roll Grill","Fifties Flashback Diner"]},"roadside":{"road":["Crossroads","Milestone","Open Road","Long Haul","Night Owl","Two Lane","Blacktop","Big Rig","Rest Stop","Pit Stop","Wayside","Signpost","Turnpike","Tumbleweed","Desert Rose","Coyote","Dusty Road","Halfway","Mile Marker","Overpass","Fuel Stop","Lorry Stop","Highway","Headlight","Tailgate","Interstate","Back Roads","Junction","County Line","Last Exit","Road Trip","Truck Stop","Hard Shoulder","Milepost"],"trade":["Diner","Diner","Grill","Diner & Grill","Café","Burger Bar","All-Night Diner","Truck Stop Diner"],"num":["3","7","9","12","14","17","21","27","31","42","49","54","61","77","88","101"],"numbered":["Junction","Exit","Highway","Route","Mile"],"whole":["Miles & Pies","Pie in the Sky Diner","Pull Over Diner","Pedal to the Metal Grill","Fill Up Diner","Truckers' Rest","Coffee & Cruise","Wheels & Waffles","Stop & Stack","Burgers & Burnouts","Hub Cap Diner","Nowhere Near Diner","The Long Way Round","Halfway There Diner","Gas & Grub","Fuel & Fries","Detour Diner","Slow Lane Diner","Road Warrior Grill","Rubber & Road Diner"]},"breakfast":{"word":["Sunny Side","Sunny Side Up","Rise & Shine","Early Bird","Short Stack","Two Eggs","Hash Brown","Eggs & Bacon","First Light","Morning Glory","Toast & Jam","Daybreak","Sunrise","Rooster","Buttermilk","Maple","Golden Yolk","Egg & Soldiers","Bacon Butty","Full Plate","Bottomless Cup","Flapjack","Griddle Top","Hot Cakes","Brunch Box","Fry-Up","Wake Up","Pancake Stack","Bacon & Bean","Big Breakfast","Toast Rack","Cuppa & Crumpet","Bright & Early","Coffee Pot","Bacon & Eggs","Hot Toast"],"trade":["Diner","Diner","Café","Kitchen","Breakfast Bar","Brunch Bar","Pancake House","Breakfast Diner","All-Day Diner"],"whole":["Eggcellent Diner","The Yolk's on You","Bacon Me Hungry","Hash It Out","Brunch Munch","Waffle Wonderland","Rise & Dine","Shine & Dine","Eggs Over Everything","Up & At 'Em","Hello Sunshine Diner","The Breakfast Table","All-Day Brekkie","Pancakes & Pals","Crack of Dawn Diner","Fresh Brew Diner","Bacon & Bloom","Bean There Diner","Benedict & Brew","Stacks on Stacks","Morning Person","Brunch o'Clock"]},"family":{"surname":["Barlow","Bennett","Carver","Dawson","Ellery","Fletcher","Harper","Henley","Holloway","Kendall","Lawson","Maddox","Marsh","Mercer","Nash","Parker","Prescott","Quinn","Ainsworth","Sheridan","Sutton","Tate","Thornton","Walsh","Webb","Whitaker","Cole","Ashby","Bradley","Corbett","Dunmore","Fairley","Draper","Fenton","Kirby","Langley","Morley","Pickering","Radley","Shaw"],"trade":["Family Diner","Diner","Diner","Family Kitchen","Diner & Grill","Kitchen","Home Cooking","Corner Diner"],"kin":["& Sons Diner","& Daughters Diner","Family Diner","& Sons Grill","Family Grill"],"whole":["Home Plate Diner","Hometown Diner","Kitchen Table Diner","Sunday Table","Corner Booth","Front Porch Diner","Family Table Diner","The Big Table","Grandma's Kitchen","Nana's Kitchen","Grandpa's Grill","Seconds Please","Room for Pudding","Clean Plate Club","Come On In Diner","Pull Up a Chair","All Together Diner","Friendly Diner","Booth for Six","Highchair & High Tea","Happy Plates Diner","Second Helpings Diner","Open Door Diner","Welcome Table","Big Family Diner","Family Recipe Diner","Sunday Best Diner","Wholesome Plate"]},"modern":{"word":["Copper","Juniper","Counter","Linden","Ochre","Pressed","Griddle","Smash","Neon","Slate","Tin Can","Booth","Spoon","Stack","Cast Iron","Olive","Brick","Daylight","Corner","Chrome","Flat Top","Patty"],"ending":["Diner","Diner Co.","Diner & Bar","Counter"],"left":["Griddle","Booth","Chrome","Rocket","Neon","Malt","Maple","Flip","Stool","Patty","Hash","Short Order"],"right":["Shake","Fry","Toast","Pickle","Stack","Rye","Waffle","Relish","Syrup","Mustard","Hash Brown"],"bare":["Counterpart","Booth & Co.","The Griddle Room","All Day Long","Short Order","Short Order Club","Flat Top","Side Order","Plate Lunch","House Special","Daily Plate","Late Plate","Diner No. 9","Diner 24","Number 12 Diner","Seven Stools","Twelve Stools","Open Kitchen Diner","New Diner","Counter Culture","Booth & Barstool","Social Diner"]},"mine":{"trade":["Diner","Diner","Diner & Grill","Burger Bar","Breakfast Bar","Pancake House","Milkshake Bar","Malt Shop","All-Day Diner","Luncheonette","Brunch Bar","Roadside Diner","Burger Joint","Truck Stop","Soda Fountain","Pie Shop & Diner","Hash House"],"adjective":["Little","Famous","All-Day","Late-Night","Corner","Retro","Hometown","Midnight","Sunny","Classic","Roadside","Neon","Jukebox","Chrome","Blue Plate","Main Street","Fifties"],"short":["Diner","Diner & Grill","Burger Bar","Breakfast Bar","Pancake House","Milkshake Bar","Café","Malt Shop","Burger Joint","Luncheonette","Brunch Bar"],"phrase":["{name}'s Place","Meet Me at {name}'s","Breakfast at {name}'s","Brunch at {name}'s","{name}'s Corner Booth","{name}'s Blue Plate","{name}'s Short Stack","{name}'s Sunny Side","{name}'s Burgers & Shakes","{name}'s Eggs & Bacon","{name}'s Shakes & Fries","{name}'s Coffee & Pie","{name}'s Griddle","{name}'s Counter","Diner by {name}","Late Night at {name}'s","{name}'s Booth & Grill","{name}'s Stack & Grill","Pancakes at {name}'s","Shakes at {name}'s","{name}'s Waffles & Shakes"]},"local":{"place":["Station","High Street","Corner","Junction","Market","Bridge","Mill","Square","Crossroads","Parkway","Roadside","Main Street","Village","Riverside","Hill","Green","Bypass","Ring Road","Old Town","Depot","Quay","Lane","Common","Cross","Gate","High Road","Park","Arcade","Wharf","Bus Station","Retail Park","Canal","Pier"],"trade":["Diner","Diner","Grill","Diner & Grill","Café","Burger Bar"],"adjective":["All-Day","Late-Night","Retro","Classic","Jukebox","Neon","Moonlite","Sunny Side","Short Stack","Midnight","Blue Plate","Pancake","Fifties","Chrome","Milkshake","Rock & Roll","Roadside","Breakfast","All-Night"],"the":["Diner","Grill","Diner & Grill","Pancake House","Burger Bar","Milkshake Bar","Breakfast Bar","Luncheonette","Malt Shop"],"phrase":["{town} Diner","{town} Diner Co.","{town} Burgers & Shakes","{town} Eggs & Bacon","{town} Shakes & Fries","{town} Blue Plate","{town} Short Stack","{town} Pit Stop","{town} Truck Stop","Old {town} Diner","Downtown {town} Diner","Taste of {town}","{town} Hash House","{town} Coffee & Pie","{town} Breakfast Counter","{town} Griddle","{town} Booth & Grill","Best in {town} Diner","{town} Waffles & Shakes"]}},"nameSource":{"kind":"invented","note":"Names are built from everyday words, puns, road and place words, family names and the patterns real diners use. They aren't taken from real businesses, and the names of diner chains and of diners from films and TV were left out, but short names may already be in use, so press Check before you commit."}}</script>
+    <script src="../lib/recipe-engine.js?v=244e8c7a"></script>
+    <script src="../lib/page.js?v=f400c4f0"></script>
+    <script src="../lib/outline.js?v=bb3e12d8"></script>
+    <script>(function(){if(window.parent===window)return;var last=0;function send(){var h=Math.ceil(document.documentElement.getBoundingClientRect().height);if(h!==last){last=h;window.parent.postMessage({tngEmbedHeight:h},'*');}}if('ResizeObserver' in window)new ResizeObserver(send).observe(document.body);window.addEventListener('load',send);send();})();</script>
+</body>
+</html>

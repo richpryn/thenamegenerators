@@ -28,7 +28,7 @@ From 23 Nov, Rich runs ONE TNG session for generators, content and design. Read 
 
 
 ### Where things stand
-- About 410 generators, 33 hubs, 16 Naming Library pages (`/reference/`), 20 name lists (`/names/`), 10 guides, the Business Name Checker, Spin the Wheel and the name tools. All live and validating.
+- About 430 generators, 33 hubs, 16 Naming Library pages (`/reference/`), 20 name lists (`/names/`), 10 guides, the Business Name Checker, Spin the Wheel and the name tools. All live and validating.
 - **Business:** 96 trade generators in six hubs (biz_food, biz_beauty, biz_trades, biz_shops, biz_services, biz_care) plus business, company, brand and cafe, all with a Check button. The checker is at `business-name-checker.html`:
   - **live in the browser:** RDAP domain checks, and US state open-data lookups for CO/NY/OR/CT/TX
   - **links:** the UK Companies House name check, trade mark searches and social handles
@@ -49,6 +49,18 @@ The ten ideas approved on 9 and 16 Nov are live: book_club, running_club, ginger
 - **Embeds (live since 23 Nov):** `scripts/embed-pages.js` builds `embed/<slug>.html` for every generator (card only, noindex, canonical to the real page, no ads or analytics), a "Put this generator on your website" box under each byline, `embed-name-generators.html` (picker, preview, code, FAQs; in the sitemap) and `lib/embed.js` (optional host script that resizes the frame). The credit link sits outside the iframe because only that one counts as a backlink; its anchor is the site name.
 - **Embeds approved by Rich and live** (23 Nov). Mention them in outreach pitches ("you can embed it on your page").
 - **Dog and Cat articles** (23 Nov): five sections and seven FAQs each, examples checked against outputs. Facts used: Control of Dogs Order 1992 (owner's name and address on collar or tag), dog microchipping in England by 8 weeks, cat microchipping in England by 20 weeks from 10 June 2024 (gov.uk), tortoiseshell genetics. Cat intro softened to "among the UK's favourite" (lists disagree on order).
+
+### 28 Nov: 21 keyword quick wins (approved by Rich, `tng-ideas-2026-11-28`)
+From Rich's 700-keyword export (Semrush-style volumes and difficulty), checked against every page. Built with full articles, ban lists, 200+ per combination and in-text links from 1–2 related articles each:
+- D&D: goliath, aasimar, tabaxi, mage (dnd + fantasy hubs). Tabaxi has `noEcho: false` on purpose: the canon "Smoking Mirror (Smoke)" form repeats a word; the build script runs the echo check on each list instead. Goliath's format filter has no "any" (as dragonborn).
+- Elder Scrolls: breton, redguard, imperial. Canon ban list from about 20k fandom-wiki titles (UESP is blocked from the container).
+- Writing: book_title, movie_title, pen_name, newspaper (Writing hub intro now links them).
+- Others: boat (objects), drink (events), motorcycle_club and team_name (organizations), diner (biz_food, checkName), code_name, clown, wrestling (people), discord_server (concepts), playlist (music).
+- Build scripts and ban lists are outside the repo in the session scratchpad (lost when the container goes); the JSON is the source of truth now.
+- Album: `capitalise: true` added (some names started "the Attic").
+- Drawings are existing motifs as stand-ins; better fits would be new drawings (cocktail glass, sailing boat or narrowboat, motorcycle helmet, clown, luchador mask or belt, newspaper, scimitar for Redguard). On Site Jobs.
+- Older Elder Scrolls pages (nord, dunmer, altmer, khajiit) lack the fan-made line, nameSource, seoTitle and noEcho, and nord has two combinations under 200. On Site Jobs as an agent job.
+- Next from the same review (waiting for Rich's go): Middle Name and Baby Name from Parents (ONS data), platform username pages (Twitch, Xbox, PSN, Roblox, TikTok, Instagram), a Domain Name Generator with the RDAP check, a Names from Around the World hub, and a Random Name Generator.
 
 ### Backlog (approved by Rich; build one a week)
 - **Franchise and character pages:** WoW Dwarf, WoW Tauren, funny WoW names by class, FF14 Viera, Transformers-style, funny Marvel Rivals, Sims names. Write these "in the style of", with original names only.
