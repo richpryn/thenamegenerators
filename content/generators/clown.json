@@ -1,0 +1,629 @@
+{
+  "key": "clown",
+  "title": "Clown Name Generator",
+  "seoTitle": "Clown Name Generator: Funny, Party and Scary Clown Names",
+  "slug": "clown-name-generator",
+  "icon": "🤡",
+  "category": "people",
+  "published": "2026-11-28",
+  "description": "Clown names for the circus, children’s parties, silly characters, mild Halloween scares and French mimes, or a clown name made from your own name.",
+  "seoKeywords": "clown name generator, clown names, funny clown names, clown name ideas, scary clown names, creepy clown names, party clown names, kids party clown names, circus clown names, classic clown names, cute clown names, female clown names, mime names, mime name generator, halloween clown names, my clown name",
+  "isPopular": false,
+  "noun": "Clown Names",
+  "noEcho": true,
+  "nameSource": {
+    "kind": "invented",
+    "note": "Names are built from sweets, party words, silly compound surnames, old-fashioned first names and simple French words, in the patterns real clowns use. Famous clowns, real and fictional (Pennywise, Krusty, Bozo, Ronald McDonald, Coco and others), and the Mr Men and Little Miss names were left out."
+  },
+  "filters": {
+    "style": {
+      "label": "Style",
+      "options": [
+        "any",
+        "classic",
+        "party",
+        "silly",
+        "scary",
+        "mime",
+        "name"
+      ],
+      "optionLabels": {
+        "any": "Any style",
+        "classic": "Circus (Pipkin the Clown)",
+        "party": "Kids' party (Auntie Confetti)",
+        "silly": "Silly (Dizzy Wobblesocks)",
+        "scary": "Scary but mild (Mister Creak)",
+        "mime": "Mime (Monsieur Pomme)",
+        "name": "From a name (Sam Sprinkles)"
+      }
+    },
+    "name": {
+      "type": "text",
+      "label": "Your first name",
+      "placeholder": "e.g. Sam",
+      "default": "Sam",
+      "example": "Sam",
+      "firstName": true,
+      "showWhen": {
+        "style": [
+          "name"
+        ]
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "style",
+  "cases": {
+    "any": {
+      "recipe": "template",
+      "template": [
+        "[classic.name] the Clown",
+        "[classic.name] the Clown",
+        "[classic.title] [classic.name]",
+        "[classic.title] [classic.name]",
+        "[party.title] [party.word]",
+        "[party.title] [party.word]",
+        "[party.first] [party.word]",
+        "[party.first] [party.word]",
+        "[party.word] the Party Clown",
+        "[silly.first] [silly.a][silly.b]",
+        "[silly.first] [silly.a][silly.b]",
+        "[silly.a][silly.b] the Clown",
+        "Mister [scary.word]",
+        "[scary.word] the Clown",
+        "The [scary.thing] Clown",
+        "[scary.adj] [scary.first]",
+        "[scary.adj] [scary.first]",
+        "Old [scary.word]",
+        "[mime.title] [mime.fr]",
+        "[mime.title] [mime.fr]",
+        "[mime.title] [mime.fr]",
+        "[mime.first] the Mime",
+        "[mime.quiet] [mime.first]",
+        "[mime.fr] the Mime"
+      ]
+    },
+    "classic": {
+      "recipe": "template",
+      "template": [
+        "[classic.name] the Clown",
+        "[classic.name] the Clown",
+        "[classic.title] [classic.name]",
+        "[classic.title] [classic.name]"
+      ]
+    },
+    "party": {
+      "recipe": "template",
+      "template": [
+        "[party.title] [party.word]",
+        "[party.title] [party.word]",
+        "[party.first] [party.word]",
+        "[party.first] [party.word]",
+        "[party.word] the Party Clown"
+      ]
+    },
+    "silly": {
+      "recipe": "template",
+      "template": [
+        "[silly.first] [silly.a][silly.b]",
+        "[silly.first] [silly.a][silly.b]",
+        "[silly.a][silly.b] the Clown"
+      ]
+    },
+    "scary": {
+      "recipe": "template",
+      "template": [
+        "Mister [scary.word]",
+        "[scary.word] the Clown",
+        "The [scary.thing] Clown",
+        "[scary.adj] [scary.first]",
+        "[scary.adj] [scary.first]",
+        "Old [scary.word]"
+      ]
+    },
+    "mime": {
+      "recipe": "template",
+      "template": [
+        "[mime.title] [mime.fr]",
+        "[mime.title] [mime.fr]",
+        "[mime.title] [mime.fr]",
+        "[mime.first] the Mime",
+        "[mime.quiet] [mime.first]",
+        "[mime.fr] the Mime"
+      ]
+    },
+    "name": {
+      "recipe": "template",
+      "template": [
+        "{name} [party.word]",
+        "{name} [party.word]",
+        "{name} [silly.a][silly.b]",
+        "{name} [silly.a][silly.b]",
+        "[name.title] {name}",
+        "{name} the Clown",
+        "{name} the Party Clown",
+        "[name.title] {name} [classic.name]"
+      ]
+    }
+  },
+  "data": {
+    "classic": {
+      "name": [
+        "Pip",
+        "Dandy",
+        "Tiptop",
+        "Pipkin",
+        "Jollo",
+        "Bimble",
+        "Topsy",
+        "Flip",
+        "Dodo",
+        "Bingo",
+        "Jinks",
+        "Pompom",
+        "Noodle",
+        "Spangle",
+        "Twinkle",
+        "Doodle",
+        "Bobbin",
+        "Button",
+        "Fizz",
+        "Scamp",
+        "Wobble",
+        "Tinker",
+        "Topper",
+        "Bonbon",
+        "Lollo",
+        "Pippo",
+        "Zozo",
+        "Sprinkles",
+        "Squeaky",
+        "Jingles",
+        "Doodles",
+        "Noodles",
+        "Freckles",
+        "Pickles",
+        "Pockets",
+        "Squiggles",
+        "Twinkles",
+        "Dimples",
+        "Jellybean",
+        "Gumdrop",
+        "Lollipop",
+        "Custard",
+        "Toffee",
+        "Fudge",
+        "Popcorn",
+        "Candyfloss",
+        "Sherbet",
+        "Puddles",
+        "Flapjack",
+        "Dumpling",
+        "Waffles",
+        "Bounce",
+        "Skippy",
+        "Hoopla",
+        "Rumble",
+        "Tuppence",
+        "Ha'penny",
+        "Sixpence",
+        "Farthing",
+        "Peanut",
+        "Pretzel"
+      ],
+      "title": [
+        "Jolly",
+        "Little",
+        "Professor",
+        "Doctor",
+        "Captain",
+        "Uncle",
+        "Auntie"
+      ]
+    },
+    "party": {
+      "title": [
+        "Auntie",
+        "Uncle",
+        "Captain",
+        "Professor",
+        "Miss",
+        "Doctor",
+        "Granny",
+        "Grandad",
+        "Madame"
+      ],
+      "word": [
+        "Confetti",
+        "Balloon",
+        "Sprinkles",
+        "Cupcake",
+        "Bubbles",
+        "Jellybean",
+        "Lollipop",
+        "Candyfloss",
+        "Streamer",
+        "Bunting",
+        "Glitter",
+        "Kazoo",
+        "Sherbet",
+        "Wobble",
+        "Jelly",
+        "Custard",
+        "Trifle",
+        "Popcorn",
+        "Pompom",
+        "Marshmallow",
+        "Fizzpop",
+        "Pinwheel"
+      ],
+      "first": [
+        "Polly",
+        "Benny",
+        "Dotty",
+        "Penny",
+        "Molly",
+        "Tilly",
+        "Lottie",
+        "Freddie",
+        "Archie",
+        "Rosie",
+        "Ruby",
+        "Alfie",
+        "Daisy",
+        "Lenny",
+        "Maisie",
+        "Ollie",
+        "Poppy",
+        "Toby",
+        "Wilf",
+        "Hattie",
+        "Ziggy",
+        "Sunny",
+        "Teddy",
+        "Nellie",
+        "Bertie",
+        "Percy",
+        "Mabel",
+        "Elsie",
+        "Bobby",
+        "Kit"
+      ]
+    },
+    "silly": {
+      "first": [
+        "Dizzy",
+        "Loopy",
+        "Giddy",
+        "Barmy",
+        "Dotty",
+        "Wonky",
+        "Bonkers",
+        "Doolally",
+        "Wibbly",
+        "Zany",
+        "Silly",
+        "Sunny",
+        "Bonnie",
+        "Pip",
+        "Ollie",
+        "Lenny",
+        "Percy",
+        "Doris",
+        "Mavis",
+        "Gladys",
+        "Nigel",
+        "Clive",
+        "Trevor",
+        "Brenda",
+        "Maureen",
+        "Derek",
+        "Cyril",
+        "Ethel",
+        "Bertha",
+        "Norman",
+        "Professor",
+        "Captain",
+        "Little",
+        "Uncle",
+        "Auntie"
+      ],
+      "a": [
+        "Noodle",
+        "Pickle",
+        "Custard",
+        "Wobble",
+        "Puddle",
+        "Jelly",
+        "Muddle",
+        "Giggle",
+        "Wiggle",
+        "Jingle",
+        "Bobble",
+        "Doodle",
+        "Fizzle",
+        "Crumble",
+        "Squiggle",
+        "Bubble",
+        "Sprinkle",
+        "Waffle",
+        "Turnip",
+        "Banana",
+        "Kipper",
+        "Pudding",
+        "Teacup",
+        "Parsnip",
+        "Biscuit",
+        "Sherbet",
+        "Treacle",
+        "Dumpling",
+        "Muffin"
+      ],
+      "b": [
+        "pants",
+        "socks",
+        "boots",
+        "nose",
+        "toes",
+        "bonnet",
+        "whistle",
+        "kins",
+        "bucket",
+        "button",
+        "sprout",
+        "muffin",
+        "doodle",
+        "hat",
+        "pop",
+        "puff",
+        "shoes",
+        "wellies",
+        "wig",
+        "trousers",
+        "knees",
+        "chops",
+        "sneeze",
+        "honk"
+      ]
+    },
+    "scary": {
+      "word": [
+        "Creak",
+        "Rattles",
+        "Cobweb",
+        "Midnight",
+        "Whistle",
+        "Jitters",
+        "Shivers",
+        "Cackles",
+        "Snicker",
+        "Wisp",
+        "Gloom",
+        "Murk",
+        "Tatters",
+        "Hobble",
+        "Flicker",
+        "Sneer",
+        "Mumbles",
+        "Whisper",
+        "Wheeze",
+        "Dusty",
+        "Rusty",
+        "Squeak",
+        "Static",
+        "Cinders",
+        "Shadows"
+      ],
+      "thing": [
+        "Midnight",
+        "Clockwork",
+        "Porcelain",
+        "Paper",
+        "Carousel",
+        "Lantern",
+        "Funhouse",
+        "Cobweb",
+        "Whistling",
+        "Grinning",
+        "Ferris Wheel",
+        "Hall of Mirrors",
+        "Candlelit",
+        "Moonlit",
+        "Wind-Up",
+        "Music Box",
+        "Last",
+        "Upside-Down",
+        "Rainy Day",
+        "Back Row"
+      ],
+      "adj": [
+        "Grinning",
+        "Whispering",
+        "Creaking",
+        "Rattling",
+        "Shivering",
+        "Giggling",
+        "Smirking",
+        "Hollow",
+        "Crooked",
+        "Midnight",
+        "Tattered",
+        "Dusty",
+        "Rusty",
+        "Flickering",
+        "Silent",
+        "Wheezing",
+        "Cackling",
+        "Sniggering",
+        "Sleepless",
+        "Upside-Down"
+      ],
+      "first": [
+        "Gus",
+        "Wilf",
+        "Jasper",
+        "Silas",
+        "Otis",
+        "Mortimer",
+        "Cornelius",
+        "Ezra",
+        "Barnaby",
+        "Horace",
+        "Ambrose",
+        "Thaddeus",
+        "Percival",
+        "Edgar",
+        "Mabel",
+        "Agatha",
+        "Winnie",
+        "Prudence",
+        "Esme",
+        "Hester"
+      ]
+    },
+    "name": {
+      "title": [
+        "Captain",
+        "Professor",
+        "Doctor",
+        "Little",
+        "Jolly",
+        "Silly",
+        "Giddy",
+        "Dizzy"
+      ]
+    },
+    "mime": {
+      "title": [
+        "Monsieur",
+        "Madame",
+        "Mademoiselle"
+      ],
+      "fr": [
+        "Pomme",
+        "Bonbon",
+        "Plume",
+        "Chapeau",
+        "Escargot",
+        "Nuage",
+        "Lune",
+        "Étoile",
+        "Soleil",
+        "Fromage",
+        "Baguette",
+        "Croissant",
+        "Chaussette",
+        "Parapluie",
+        "Crayon",
+        "Bouton",
+        "Cerise",
+        "Citron",
+        "Framboise",
+        "Noisette",
+        "Fraise",
+        "Poisson",
+        "Lapin",
+        "Souris",
+        "Hibou",
+        "Grenouille",
+        "Moustache",
+        "Ballon",
+        "Silence",
+        "Macaron",
+        "Tartine",
+        "Brioche",
+        "Madeleine",
+        "Confiture"
+      ],
+      "first": [
+        "Pierre",
+        "Jacques",
+        "Margot",
+        "Odile",
+        "Lucien",
+        "Hugo",
+        "Léon",
+        "Félix",
+        "Basile",
+        "Clément",
+        "Mathilde",
+        "Juliette",
+        "Sylvie",
+        "Yvette",
+        "Bernadette",
+        "Ginette",
+        "Henri",
+        "Théo",
+        "Margaux",
+        "Lucille",
+        "Agnès",
+        "Fabien",
+        "Gilles",
+        "Solange"
+      ],
+      "quiet": [
+        "Silent",
+        "Quiet",
+        "Hushed",
+        "Shy",
+        "Still",
+        "Wordless"
+      ]
+    }
+  },
+  "article": {
+    "hero": {
+      "title": "🤡 Clown Name Generator",
+      "tagline": "Circus clowns, party clowns, silly clowns, spooky clowns and French mimes, or a clown name from your own name."
+    },
+    "intro": "Clown names are meant to be said with a grin: sweets, squeaks, old-fashioned titles and surnames that go on a bit too long. This **clown name generator** makes names for the circus ring, children's parties, silly characters, mild Halloween scares and French-style mimes, and can turn your own first name into a clown name too.",
+    "sections": [
+      {
+        "heading": "Eight good clown names",
+        "content": "<p>All eight came from the generator, at least one from each style:</p><ul><li><strong>Tuppence the Clown</strong>: an old British coin, which gives a circus clown a bit of history.</li><li><strong>Professor Twinkles</strong>: a grand title on a silly name is one of the oldest clown jokes.</li><li><strong>Polly Popcorn</strong>: easy for small children to shout at a birthday party.</li><li><strong>Auntie Bunting</strong>: friendly and festive, for a party clown who brings the decorations.</li><li><strong>Gladys Biscuitwellies</strong>: an old-fashioned first name and a ridiculous surname.</li><li><strong>Nigel Jellyboots</strong>: silly enough for a slapstick act with a lot of falling over.</li><li><strong>The Music Box Clown</strong>: spooky for a Halloween party without being gory.</li><li><strong>Madame Grenouille</strong>: a mime name that means Madam Frog in French.</li></ul>"
+      },
+      {
+        "heading": "How clown names work",
+        "content": "<p>Circus clowns traditionally come in three types. The <strong>whiteface</strong> wears a fully white face and is usually the clever one in charge. The <strong>auguste</strong> has a pink or red face, a big nose and baggy clothes, and is the one who gets the custard pie. The <strong>character clown</strong> plays a type, such as a tramp, a policeman or a fussy waiter. Names follow the type: neat and dainty for a whiteface (Pipkin the Clown, Jolly Tiptop), messy and loud for an auguste (Nigel Jellyboots).</p><p>Most clown names use one of a few patterns, and the generator follows them: one bouncy word and \"the Clown\" (Pipkin the Clown), a title on a silly word (Auntie Confetti, Professor Gumdrop), or an ordinary first name with a made-up surname (Dizzy Wobblesocks). The English clown Joseph Grimaldi (1778–1837) was so famous that clowns are still called \"Joeys\" after him.</p>"
+      },
+      {
+        "heading": "Party clowns, scary clowns and mimes",
+        "content": "<ul><li><strong>Children's parties:</strong> choose a name a four-year-old can say and remember. Sweets, balloons and party words work well, and a title like Auntie or Uncle makes the clown feel friendly rather than strange.</li><li><strong>Halloween:</strong> plenty of people find clowns a little unsettling, and that does the work for you. The Scary style keeps to creaks, whispers, music boxes and old carousels, so the names suit a family Halloween party.</li><li><strong>Mimes:</strong> mime grew out of French theatre, from the sad white-faced Pierrot to Marcel Marceau in the 20th century, so a French title and one simple French word fits: Monsieur Pomme is Mr Apple.</li></ul>"
+      },
+      {
+        "heading": "Using a clown name for work",
+        "content": "<p>If you perform as a clown, your name and face are your brand. Since the 1940s, members of Clowns International have recorded their make-up on painted eggs in the Clown Egg Register, so that no two clowns copy each other. Before you print business cards, search for the name with \"clown\" and your area to make sure nobody local is already using it. For a circus or a whole act, try the <a href=\"stage-name-generator.html\">Stage Name Generator</a> too.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is a good clown name?",
+        "answer": "Something bouncy and easy to say, like Pipkin the Clown, Professor Twinkles or Polly Popcorn. Choose a style to match your act."
+      },
+      {
+        "question": "What are some funny clown names?",
+        "answer": "An old-fashioned first name with a silly surname is hard to beat: Gladys Biscuitwellies or Nigel Jellyboots. Choose Silly for more."
+      },
+      {
+        "question": "What is a good name for a kids' party clown?",
+        "answer": "Something friendly and sweet, like Auntie Confetti, Polly Popcorn or Granny Trifle. Choose Kids' party."
+      },
+      {
+        "question": "What are some scary clown names for Halloween?",
+        "answer": "Spooky but not gory: Mister Creak, Old Tatters or The Music Box Clown. Choose Scary but mild."
+      },
+      {
+        "question": "What is a good mime name?",
+        "answer": "A French title and one French word, like Monsieur Pomme or Madame Grenouille, or a quiet French first name such as Hushed Solange. Choose Mime."
+      },
+      {
+        "question": "How do I make a clown name from my name?",
+        "answer": "Type your first name into the box and choose From a name. Sam becomes Sam Sprinkles, Sam Wigglesocks or Captain Sam Dimples."
+      },
+      {
+        "question": "Are famous clowns included?",
+        "answer": "No. Famous clowns, real and fictional, are left out, so every name here is new."
+      }
+    ]
+  }
+}

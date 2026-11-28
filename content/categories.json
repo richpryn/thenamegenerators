@@ -24,7 +24,9 @@
       "brand",
       "youtube",
       "podcast",
-      "gamertag"
+      "gamertag",
+      "code_name",
+      "discord_server"
     ],
     "eyebrow": "Names for online projects",
     "approach": {
@@ -208,7 +210,8 @@
       "spell",
       "vampire_clan",
       "werewolf_pack",
-      "gargoyle"
+      "gargoyle",
+      "clown"
     ],
     "eyebrow": "Spooky characters and places",
     "approach": {
@@ -1337,7 +1340,8 @@
       "artist_name",
       "wu_tang",
       "dj",
-      "podcast"
+      "podcast",
+      "playlist"
     ],
     "eyebrow": "Names for musicians",
     "approach": {
@@ -1726,7 +1730,10 @@
       "stage_name",
       "story_prompt",
       "character_name",
-      "last_name"
+      "last_name",
+      "code_name",
+      "clown",
+      "wrestling"
     ],
     "eyebrow": "Characters and personas",
     "approach": {
