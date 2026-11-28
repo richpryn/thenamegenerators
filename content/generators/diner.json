@@ -1,0 +1,796 @@
+{
+  "key": "diner",
+  "title": "Diner Name Generator",
+  "seoTitle": "Diner Name Generator: Retro and Breakfast Diner Names",
+  "slug": "diner-name-generator",
+  "icon": "🍔",
+  "category": "biz_food",
+  "published": "2026-11-28",
+  "description": "Diner name ideas in seven styles: 50s retro, roadside, breakfast and brunch, family, modern, your name or your town. Check any name is free.",
+  "seoKeywords": "diner name generator, diner names, diner name ideas, diner business names, diner restaurant names, retro diner names, 50s diner names, american diner names, catchy diner names, unique diner names, cute diner names, breakfast diner names, breakfast restaurant names, brunch cafe names, pancake house names, roadside diner names, truck stop names, family diner names, funny diner names",
+  "isPopular": false,
+  "noun": "Diner Names",
+  "noEcho": true,
+  "fixArticles": true,
+  "checkName": true,
+  "filters": {
+    "style": {
+      "label": "Style",
+      "options": [
+        "any",
+        "classic",
+        "roadside",
+        "breakfast",
+        "family",
+        "modern",
+        "mine",
+        "local"
+      ],
+      "optionLabels": {
+        "any": "Any style",
+        "classic": "50s retro (Jukebox Diner)",
+        "roadside": "Roadside (Crossroads Diner)",
+        "breakfast": "Breakfast (Short Stack Café)",
+        "family": "Family (Harper's Diner)",
+        "modern": "Modern (Griddle & Rye)",
+        "mine": "Your name (Sarah's Diner)",
+        "local": "Your town (Hampton Diner)"
+      }
+    },
+    "name": {
+      "type": "text",
+      "label": "Your first name",
+      "placeholder": "e.g. Sarah",
+      "default": "Sarah",
+      "example": "Sarah",
+      "firstName": true,
+      "showWhen": {
+        "style": [
+          "mine"
+        ]
+      }
+    },
+    "town": {
+      "type": "text",
+      "label": "Your town or area",
+      "placeholder": "e.g. Hampton",
+      "default": "Hampton",
+      "example": "Hampton",
+      "showWhen": {
+        "style": [
+          "local"
+        ]
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "style",
+  "cases": {
+    "any": {
+      "recipe": "template",
+      "template": [
+        "[classic.retro] [classic.trade]",
+        "The [classic.retro] Diner",
+        "[classic.whole]",
+        "[roadside.road] [roadside.trade]",
+        "[roadside.numbered] [roadside.num] Diner",
+        "[roadside.whole]",
+        "[breakfast.word] [breakfast.trade]",
+        "[breakfast.word] [breakfast.trade]",
+        "[breakfast.whole]",
+        "[family.surname]'s [family.trade]",
+        "[family.surname] [family.kin]",
+        "[family.whole]",
+        "[modern.word] [modern.ending]",
+        "[modern.left] & [modern.right]",
+        "[modern.bare]"
+      ]
+    },
+    "classic": {
+      "recipe": "template",
+      "template": [
+        "[classic.retro] [classic.trade]",
+        "The [classic.retro] Diner",
+        "[classic.whole]"
+      ]
+    },
+    "roadside": {
+      "recipe": "template",
+      "template": [
+        "[roadside.road] [roadside.trade]",
+        "[roadside.numbered] [roadside.num] Diner",
+        "[roadside.whole]"
+      ]
+    },
+    "breakfast": {
+      "recipe": "template",
+      "template": [
+        "[breakfast.word] [breakfast.trade]",
+        "[breakfast.word] [breakfast.trade]",
+        "[breakfast.whole]"
+      ]
+    },
+    "family": {
+      "recipe": "template",
+      "template": [
+        "[family.surname]'s [family.trade]",
+        "[family.surname] [family.kin]",
+        "[family.whole]"
+      ]
+    },
+    "modern": {
+      "recipe": "template",
+      "template": [
+        "[modern.word] [modern.ending]",
+        "[modern.left] & [modern.right]",
+        "[modern.bare]"
+      ]
+    },
+    "mine": {
+      "recipe": "template",
+      "template": [
+        "{name}'s [mine.trade]",
+        "{name}'s [mine.adjective] [mine.short]",
+        "{name}'s [mine.adjective] [mine.short]",
+        "[mine.phrase]"
+      ]
+    },
+    "local": {
+      "recipe": "template",
+      "template": [
+        "{town} [local.place] [local.trade]",
+        "{town} [local.adjective] Diner",
+        "The {town} [local.the]",
+        "[local.phrase]"
+      ]
+    }
+  },
+  "data": {
+    "classic": {
+      "retro": [
+        "Jukebox",
+        "Moonlite",
+        "Chrome Cherry",
+        "Rocket",
+        "Atomic",
+        "Neon",
+        "Checkerboard",
+        "Pinball",
+        "Cherry Pie",
+        "Sock Hop",
+        "Blue Plate",
+        "Bobby Pin",
+        "Hot Rod",
+        "Tail Fin",
+        "Silver Spoon",
+        "Hi-Fi",
+        "Cherry Red",
+        "Sundae",
+        "Rock-a-Billy",
+        "Diamond",
+        "Chrome",
+        "Comet",
+        "Satellite",
+        "Spinning Record",
+        "Red Booth",
+        "Coin-Op",
+        "Sweetheart",
+        "Doo-Wop",
+        "Polka Dot",
+        "Ruby",
+        "Saddle Shoe",
+        "Drive-In",
+        "Flamingo",
+        "Bubblegum",
+        "Rocket Ship"
+      ],
+      "trade": [
+        "Diner",
+        "Diner",
+        "Grill",
+        "Diner & Grill",
+        "Malt Shop",
+        "Soda Fountain",
+        "Burger Bar",
+        "Milk Bar",
+        "Luncheonette",
+        "Shake Shop"
+      ],
+      "whole": [
+        "Shake, Rattle & Roll",
+        "Rock Around the Clock Diner",
+        "Blue Suede Grill",
+        "At the Hop",
+        "Jukebox Jive",
+        "Back in Time Diner",
+        "Nifty Fifties Diner",
+        "Rewind Diner",
+        "Retro Rocket Diner",
+        "Pink Jukebox Grill",
+        "Malts & Melodies",
+        "Shakes & Records",
+        "Two Straws Diner",
+        "Root Beer & Records",
+        "Chrome & Cherry",
+        "Booths & Shakes",
+        "Vinyl & Fries",
+        "Fries & Records",
+        "Rock & Roll Grill",
+        "Fifties Flashback Diner"
+      ]
+    },
+    "roadside": {
+      "road": [
+        "Crossroads",
+        "Milestone",
+        "Open Road",
+        "Long Haul",
+        "Night Owl",
+        "Two Lane",
+        "Blacktop",
+        "Big Rig",
+        "Rest Stop",
+        "Pit Stop",
+        "Wayside",
+        "Signpost",
+        "Turnpike",
+        "Tumbleweed",
+        "Desert Rose",
+        "Coyote",
+        "Dusty Road",
+        "Halfway",
+        "Mile Marker",
+        "Overpass",
+        "Fuel Stop",
+        "Lorry Stop",
+        "Highway",
+        "Headlight",
+        "Tailgate",
+        "Interstate",
+        "Back Roads",
+        "Junction",
+        "County Line",
+        "Last Exit",
+        "Road Trip",
+        "Truck Stop",
+        "Hard Shoulder",
+        "Milepost"
+      ],
+      "trade": [
+        "Diner",
+        "Diner",
+        "Grill",
+        "Diner & Grill",
+        "Café",
+        "Burger Bar",
+        "All-Night Diner",
+        "Truck Stop Diner"
+      ],
+      "num": [
+        "3",
+        "7",
+        "9",
+        "12",
+        "14",
+        "17",
+        "21",
+        "27",
+        "31",
+        "42",
+        "49",
+        "54",
+        "61",
+        "77",
+        "88",
+        "101"
+      ],
+      "numbered": [
+        "Junction",
+        "Exit",
+        "Highway",
+        "Route",
+        "Mile"
+      ],
+      "whole": [
+        "Miles & Pies",
+        "Pie in the Sky Diner",
+        "Pull Over Diner",
+        "Pedal to the Metal Grill",
+        "Fill Up Diner",
+        "Truckers' Rest",
+        "Coffee & Cruise",
+        "Wheels & Waffles",
+        "Stop & Stack",
+        "Burgers & Burnouts",
+        "Hub Cap Diner",
+        "Nowhere Near Diner",
+        "The Long Way Round",
+        "Halfway There Diner",
+        "Gas & Grub",
+        "Fuel & Fries",
+        "Detour Diner",
+        "Slow Lane Diner",
+        "Road Warrior Grill",
+        "Rubber & Road Diner"
+      ]
+    },
+    "breakfast": {
+      "word": [
+        "Sunny Side",
+        "Sunny Side Up",
+        "Rise & Shine",
+        "Early Bird",
+        "Short Stack",
+        "Two Eggs",
+        "Hash Brown",
+        "Eggs & Bacon",
+        "First Light",
+        "Morning Glory",
+        "Toast & Jam",
+        "Daybreak",
+        "Sunrise",
+        "Rooster",
+        "Buttermilk",
+        "Maple",
+        "Golden Yolk",
+        "Egg & Soldiers",
+        "Bacon Butty",
+        "Full Plate",
+        "Bottomless Cup",
+        "Flapjack",
+        "Griddle Top",
+        "Hot Cakes",
+        "Brunch Box",
+        "Fry-Up",
+        "Wake Up",
+        "Pancake Stack",
+        "Bacon & Bean",
+        "Big Breakfast",
+        "Toast Rack",
+        "Cuppa & Crumpet",
+        "Bright & Early",
+        "Coffee Pot",
+        "Bacon & Eggs",
+        "Hot Toast"
+      ],
+      "trade": [
+        "Diner",
+        "Diner",
+        "Café",
+        "Kitchen",
+        "Breakfast Bar",
+        "Brunch Bar",
+        "Pancake House",
+        "Breakfast Diner",
+        "All-Day Diner"
+      ],
+      "whole": [
+        "Eggcellent Diner",
+        "The Yolk's on You",
+        "Bacon Me Hungry",
+        "Hash It Out",
+        "Brunch Munch",
+        "Waffle Wonderland",
+        "Rise & Dine",
+        "Shine & Dine",
+        "Eggs Over Everything",
+        "Up & At 'Em",
+        "Hello Sunshine Diner",
+        "The Breakfast Table",
+        "All-Day Brekkie",
+        "Pancakes & Pals",
+        "Crack of Dawn Diner",
+        "Fresh Brew Diner",
+        "Bacon & Bloom",
+        "Bean There Diner",
+        "Benedict & Brew",
+        "Stacks on Stacks",
+        "Morning Person",
+        "Brunch o'Clock"
+      ]
+    },
+    "family": {
+      "surname": [
+        "Barlow",
+        "Bennett",
+        "Carver",
+        "Dawson",
+        "Ellery",
+        "Fletcher",
+        "Harper",
+        "Henley",
+        "Holloway",
+        "Kendall",
+        "Lawson",
+        "Maddox",
+        "Marsh",
+        "Mercer",
+        "Nash",
+        "Parker",
+        "Prescott",
+        "Quinn",
+        "Ainsworth",
+        "Sheridan",
+        "Sutton",
+        "Tate",
+        "Thornton",
+        "Walsh",
+        "Webb",
+        "Whitaker",
+        "Cole",
+        "Ashby",
+        "Bradley",
+        "Corbett",
+        "Dunmore",
+        "Fairley",
+        "Draper",
+        "Fenton",
+        "Kirby",
+        "Langley",
+        "Morley",
+        "Pickering",
+        "Radley",
+        "Shaw"
+      ],
+      "trade": [
+        "Family Diner",
+        "Diner",
+        "Diner",
+        "Family Kitchen",
+        "Diner & Grill",
+        "Kitchen",
+        "Home Cooking",
+        "Corner Diner"
+      ],
+      "kin": [
+        "& Sons Diner",
+        "& Daughters Diner",
+        "Family Diner",
+        "& Sons Grill",
+        "Family Grill"
+      ],
+      "whole": [
+        "Home Plate Diner",
+        "Hometown Diner",
+        "Kitchen Table Diner",
+        "Sunday Table",
+        "Corner Booth",
+        "Front Porch Diner",
+        "Family Table Diner",
+        "The Big Table",
+        "Grandma's Kitchen",
+        "Nana's Kitchen",
+        "Grandpa's Grill",
+        "Seconds Please",
+        "Room for Pudding",
+        "Clean Plate Club",
+        "Come On In Diner",
+        "Pull Up a Chair",
+        "All Together Diner",
+        "Friendly Diner",
+        "Booth for Six",
+        "Highchair & High Tea",
+        "Happy Plates Diner",
+        "Second Helpings Diner",
+        "Open Door Diner",
+        "Welcome Table",
+        "Big Family Diner",
+        "Family Recipe Diner",
+        "Sunday Best Diner",
+        "Wholesome Plate"
+      ]
+    },
+    "modern": {
+      "word": [
+        "Copper",
+        "Juniper",
+        "Counter",
+        "Linden",
+        "Ochre",
+        "Pressed",
+        "Griddle",
+        "Smash",
+        "Neon",
+        "Slate",
+        "Tin Can",
+        "Booth",
+        "Spoon",
+        "Stack",
+        "Cast Iron",
+        "Olive",
+        "Brick",
+        "Daylight",
+        "Corner",
+        "Chrome",
+        "Flat Top",
+        "Patty"
+      ],
+      "ending": [
+        "Diner",
+        "Diner Co.",
+        "Diner & Bar",
+        "Counter"
+      ],
+      "left": [
+        "Griddle",
+        "Booth",
+        "Chrome",
+        "Rocket",
+        "Neon",
+        "Malt",
+        "Maple",
+        "Flip",
+        "Stool",
+        "Patty",
+        "Hash",
+        "Short Order"
+      ],
+      "right": [
+        "Shake",
+        "Fry",
+        "Toast",
+        "Pickle",
+        "Stack",
+        "Rye",
+        "Waffle",
+        "Relish",
+        "Syrup",
+        "Mustard",
+        "Hash Brown"
+      ],
+      "bare": [
+        "Counterpart",
+        "Booth & Co.",
+        "The Griddle Room",
+        "All Day Long",
+        "Short Order",
+        "Short Order Club",
+        "Flat Top",
+        "Side Order",
+        "Plate Lunch",
+        "House Special",
+        "Daily Plate",
+        "Late Plate",
+        "Diner No. 9",
+        "Diner 24",
+        "Number 12 Diner",
+        "Seven Stools",
+        "Twelve Stools",
+        "Open Kitchen Diner",
+        "New Diner",
+        "Counter Culture",
+        "Booth & Barstool",
+        "Social Diner"
+      ]
+    },
+    "mine": {
+      "trade": [
+        "Diner",
+        "Diner",
+        "Diner & Grill",
+        "Burger Bar",
+        "Breakfast Bar",
+        "Pancake House",
+        "Milkshake Bar",
+        "Malt Shop",
+        "All-Day Diner",
+        "Luncheonette",
+        "Brunch Bar",
+        "Roadside Diner",
+        "Burger Joint",
+        "Truck Stop",
+        "Soda Fountain",
+        "Pie Shop & Diner",
+        "Hash House"
+      ],
+      "adjective": [
+        "Little",
+        "Famous",
+        "All-Day",
+        "Late-Night",
+        "Corner",
+        "Retro",
+        "Hometown",
+        "Midnight",
+        "Sunny",
+        "Classic",
+        "Roadside",
+        "Neon",
+        "Jukebox",
+        "Chrome",
+        "Blue Plate",
+        "Main Street",
+        "Fifties"
+      ],
+      "short": [
+        "Diner",
+        "Diner & Grill",
+        "Burger Bar",
+        "Breakfast Bar",
+        "Pancake House",
+        "Milkshake Bar",
+        "Café",
+        "Malt Shop",
+        "Burger Joint",
+        "Luncheonette",
+        "Brunch Bar"
+      ],
+      "phrase": [
+        "{name}'s Place",
+        "Meet Me at {name}'s",
+        "Breakfast at {name}'s",
+        "Brunch at {name}'s",
+        "{name}'s Corner Booth",
+        "{name}'s Blue Plate",
+        "{name}'s Short Stack",
+        "{name}'s Sunny Side",
+        "{name}'s Burgers & Shakes",
+        "{name}'s Eggs & Bacon",
+        "{name}'s Shakes & Fries",
+        "{name}'s Coffee & Pie",
+        "{name}'s Griddle",
+        "{name}'s Counter",
+        "Diner by {name}",
+        "Late Night at {name}'s",
+        "{name}'s Booth & Grill",
+        "{name}'s Stack & Grill",
+        "Pancakes at {name}'s",
+        "Shakes at {name}'s",
+        "{name}'s Waffles & Shakes"
+      ]
+    },
+    "local": {
+      "place": [
+        "Station",
+        "High Street",
+        "Corner",
+        "Junction",
+        "Market",
+        "Bridge",
+        "Mill",
+        "Square",
+        "Crossroads",
+        "Parkway",
+        "Roadside",
+        "Main Street",
+        "Village",
+        "Riverside",
+        "Hill",
+        "Green",
+        "Bypass",
+        "Ring Road",
+        "Old Town",
+        "Depot",
+        "Quay",
+        "Lane",
+        "Common",
+        "Cross",
+        "Gate",
+        "High Road",
+        "Park",
+        "Arcade",
+        "Wharf",
+        "Bus Station",
+        "Retail Park",
+        "Canal",
+        "Pier"
+      ],
+      "trade": [
+        "Diner",
+        "Diner",
+        "Grill",
+        "Diner & Grill",
+        "Café",
+        "Burger Bar"
+      ],
+      "adjective": [
+        "All-Day",
+        "Late-Night",
+        "Retro",
+        "Classic",
+        "Jukebox",
+        "Neon",
+        "Moonlite",
+        "Sunny Side",
+        "Short Stack",
+        "Midnight",
+        "Blue Plate",
+        "Pancake",
+        "Fifties",
+        "Chrome",
+        "Milkshake",
+        "Rock & Roll",
+        "Roadside",
+        "Breakfast",
+        "All-Night"
+      ],
+      "the": [
+        "Diner",
+        "Grill",
+        "Diner & Grill",
+        "Pancake House",
+        "Burger Bar",
+        "Milkshake Bar",
+        "Breakfast Bar",
+        "Luncheonette",
+        "Malt Shop"
+      ],
+      "phrase": [
+        "{town} Diner",
+        "{town} Diner Co.",
+        "{town} Burgers & Shakes",
+        "{town} Eggs & Bacon",
+        "{town} Shakes & Fries",
+        "{town} Blue Plate",
+        "{town} Short Stack",
+        "{town} Pit Stop",
+        "{town} Truck Stop",
+        "Old {town} Diner",
+        "Downtown {town} Diner",
+        "Taste of {town}",
+        "{town} Hash House",
+        "{town} Coffee & Pie",
+        "{town} Breakfast Counter",
+        "{town} Griddle",
+        "{town} Booth & Grill",
+        "Best in {town} Diner",
+        "{town} Waffles & Shakes"
+      ]
+    }
+  },
+  "article": {
+    "hero": {
+      "title": "🍔 Diner Name Generator",
+      "tagline": "Names for an American-style diner, breakfast spot or roadside grill, from Chrome Cherry Diner to Miles & Pies."
+    },
+    "intro": "A diner name has to look good in neon and sound right when someone says \"meet you at…\": <em>Chrome Cherry Diner</em>, <em>Miles &amp; Pies</em>, <em>Short Stack Café</em>. This **diner name generator** gives you names in seven styles, from 50s retro and roadside to breakfast, family and modern, plus names built from your own name or your town.",
+    "sections": [
+      {
+        "heading": "Eight good diner names",
+        "content": "<p>All eight came from the generator:</p><ul><li><strong>Chrome Cherry Diner</strong>: two things every 50s diner had, the shiny counter and the cherry on the milkshake.</li><li><strong>Root Beer &amp; Records</strong>: promises floats and a jukebox before you walk in.</li><li><strong>Miles &amp; Pies</strong>: a rhyme for a roadside stop, and it tells drivers there's pie.</li><li><strong>Exit 14 Diner</strong>: named after the turn-off, so nobody gets lost finding it.</li><li><strong>Short Stack Café</strong>: diner slang for a small pile of pancakes, and a clear breakfast promise.</li><li><strong>Rise &amp; Dine</strong>: an easy pun for a place that opens early.</li><li><strong>Harper's Family Diner</strong>: a family name and \"family diner\" say \"bring the kids\" in three words.</li><li><strong>Griddle &amp; Rye</strong>: a modern pairing for a diner with a short, careful menu.</li></ul>"
+      },
+      {
+        "heading": "What makes a diner name work",
+        "content": "<p>Diners grew out of the night lunch wagons of Providence, Rhode Island, in the 1870s, which sold sandwiches, pie and coffee to night workers. Later, diners were built in factories and delivered by rail or road, long and narrow like a railway dining car, and the word <em>diner</em> is usually explained as short for dining car. That history is why so many diner names still sound like a place on the road.</p><ul><li><strong>Put \"Diner\" in it.</strong> The word tells people to expect booths, a counter, breakfast all day and burgers, so most styles keep it in the name.</li><li><strong>Pick an era or a promise.</strong> Choose <strong>50s retro</strong> for chrome, jukeboxes and milkshakes, <strong>Roadside</strong> for highway and truck stop names, or <strong>Breakfast</strong> if pancakes and fry-ups are the point.</li><li><strong>Say it in a sentence.</strong> \"Meet you at the Jukebox Diner\" works; a name you have to spell out loses customers.</li><li><strong>UK or US?</strong> In the UK a \"diner\" usually means the American style. The breakfast names include British ones, like <em>Bacon Butty Café</em>, for a place that serves a full English.</li></ul>"
+      },
+      {
+        "heading": "Check it's free before you print the sign",
+        "content": "<p>A name from a generator is a starting point, not permission to use it. Before you order the sign, menus or booking page:</p><ul><li><strong>Company register.</strong> In the UK, search Companies House; you can't register a limited company with the same name as an existing one. In the US, search your state's business register.</li><li><strong>Trade marks.</strong> Search the UK trade mark register (or the USPTO in the US) for the goods and services you'll sell.</li><li><strong>Domain and handles.</strong> Check the .co.uk or .com and the Instagram and TikTok handles you'll need.</li><li><strong>Your area.</strong> Search a map app and the delivery apps for businesses with the same or a similar name nearby.</li></ul><p>Press <strong>Check</strong> on any name, or use the <a href=\"../business-name-checker.html\">Business Name Checker</a>, to run most of these at once. For the full process, read our guide, <a href=\"../guides/business-naming-best-practices.html\">Business Naming Best Practices</a>. This is general guidance, not legal advice.</p><p>In the UK, any food business must register with the local council at least 28 days before it starts trading. Registration is free, and the council will inspect you and give you a food hygiene rating.</p>"
+      },
+      {
+        "heading": "Tips for diner names",
+        "content": "<ul><li><strong>Watch out for chain names.</strong> Some first names already belong to diner and burger chains, so if you choose <strong>Your name</strong>, press Check before you fall for one.</li><li><strong>Think about the sign.</strong> Diners are known for big neon and chrome lettering, and short names fit it best.</li><li><strong>Leave room on the menu.</strong> A name like <em>Hash Brown Diner</em> is fun, but it makes it hard to be known for anything else later.</li></ul><p>For a smarter place, try the <a href=\"restaurant-name-generator.html\">Restaurant Name Generator</a>; for coffee and cake, the <a href=\"cafe-name-generator.html\">Café Name Generator</a>; and for burgers on wheels, the <a href=\"food-truck-name-generator.html\">Food Truck Name Generator</a>.</p><p>For more, see all the <a href=\"../categories/biz_food-names.html\">food and drink business name generators</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are good diner names?",
+        "answer": "Short names that say \"diner\" and set the mood: Chrome Cherry Diner, Miles & Pies, Short Stack Café, Harper's Family Diner or Griddle & Rye. Choose a style, from 50s retro to roadside, breakfast, family or modern."
+      },
+      {
+        "question": "How do I check a diner name is free?",
+        "answer": "Press <strong>Check</strong> on any name to see whether it's free as a company name, a domain and a social media handle. Before you commit, search the official registers too: in the UK, Companies House and the UK trade mark register; in the US, your state's business register and the USPTO trade mark search. Look on a map app for businesses with the same name nearby."
+      },
+      {
+        "question": "What is a good name for a 50s diner?",
+        "answer": "Use the things people picture: jukeboxes, chrome, milkshakes and sock hops. The Jukebox Diner, Sock Hop Malt Shop or Hot Rod Diner & Grill all fit. Choose <strong>50s retro</strong> for more."
+      },
+      {
+        "question": "What should I call a breakfast diner?",
+        "answer": "Name the breakfast: Sunny Side Up Pancake House, Rise & Shine Brunch Bar or Early Bird Diner. Choose <strong>Breakfast</strong> for American pancake names and British fry-up names."
+      },
+      {
+        "question": "Can I name a diner after myself?",
+        "answer": "Yes, and it's a diner tradition. Choose <strong>Your name</strong> and type your first name for names like Sarah's Corner Diner or Sarah's Pancake House, then press Check in case a chain already uses your name."
+      },
+      {
+        "question": "What is a good name for a roadside diner or truck stop?",
+        "answer": "Something drivers can read at speed and find again: Crossroads Diner, Exit 14 Diner or Last Exit All-Night Diner. Choose <strong>Roadside</strong>, or <strong>Your town</strong> for names like Hampton Station Diner."
+      }
+    ]
+  },
+  "nameSource": {
+    "kind": "invented",
+    "note": "Names are built from everyday words, puns, road and place words, family names and the patterns real diners use. They aren't taken from real businesses, and the names of diner chains and of diners from films and TV were left out, but short names may already be in use, so press Check before you commit."
+  }
+}

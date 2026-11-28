@@ -1,0 +1,716 @@
+{
+  "key": "drink",
+  "title": "Drink & Cocktail Name Generator",
+  "seoTitle": "Drink & Cocktail Name Generator: Cocktail Name Ideas",
+  "slug": "drink-name-generator",
+  "icon": "🍹",
+  "category": "events",
+  "published": "2026-11-28",
+  "description": "Cocktail and drink names: cocktails, mocktails, shots, signature wedding drinks, Christmas and Halloween, or one named after you. Free ideas.",
+  "seoKeywords": "drink name generator, cocktail name generator, drinks name generator, cocktail names, drink names, mocktail names, mocktail name generator, signature cocktail names, wedding cocktail names, signature drink names, wedding signature drink names, christmas cocktail names, halloween cocktail names, halloween drink names, shot names, funny cocktail names, cocktail name ideas, cocktail names for parties, non alcoholic drink names, punch names",
+  "isPopular": false,
+  "noun": "Drink Names",
+  "noEcho": true,
+  "nameSource": {
+    "kind": "invented",
+    "note": "Names are built from fruits, herbs and spices, the real words for drink styles (fizz, sour, smash, cobbler, julep), and wedding, Christmas and Halloween words. Real classic cocktail names, drinks brands and anything about getting drunk were left out."
+  },
+  "filters": {
+    "type": {
+      "label": "Type of drink",
+      "options": [
+        "any",
+        "cocktail",
+        "mocktail",
+        "shot",
+        "wedding",
+        "christmas",
+        "halloween",
+        "name"
+      ],
+      "optionLabels": {
+        "any": "Any drink",
+        "cocktail": "Cocktail (Velvet Orchard)",
+        "mocktail": "Mocktail (Rhubarb Cooler)",
+        "shot": "Shot (Sherbet Rocket)",
+        "wedding": "Wedding (First Dance Fizz)",
+        "christmas": "Christmas (Gingerbread Nog)",
+        "halloween": "Halloween (Cauldron Punch)",
+        "name": "From a name (The Sam Sour)"
+      }
+    },
+    "name": {
+      "type": "text",
+      "label": "A name to use",
+      "placeholder": "e.g. Sam",
+      "default": "Sam",
+      "example": "Sam",
+      "firstName": true,
+      "showWhen": {
+        "type": [
+          "name"
+        ]
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "type",
+  "cases": {
+    "any": {
+      "recipe": "template",
+      "template": [
+        "[flavour] [cocktail.style]",
+        "[flavour] [cocktail.style]",
+        "[cocktail.adj] [cocktail.noun]",
+        "[cocktail.adj] [cocktail.noun]",
+        "[cocktail.place] [cocktail.style]",
+        "The [cocktail.adj] [cocktail.noun]",
+        "[flavour] [mocktail.style]",
+        "[flavour] [mocktail.style]",
+        "[flavour] [mocktail.style]",
+        "[mocktail.fun] [mocktail.style]",
+        "[mocktail.fun] [mocktail.style]",
+        "[mocktail.whole]",
+        "[shot.adj] [shot.noun]",
+        "[wedding.word] [wedding.style]",
+        "[wedding.word] [wedding.style]",
+        "[wedding.word] [wedding.style]",
+        "[flavour] [wedding.noun]",
+        "[flavour] [wedding.noun]",
+        "[christmas.word] [christmas.style]",
+        "[christmas.word] [christmas.style]",
+        "[christmas.word] [christmas.style]",
+        "[christmas.adj] [christmas.noun]",
+        "[christmas.adj] [christmas.noun]",
+        "[halloween.word] [halloween.style]",
+        "[halloween.word] [halloween.style]",
+        "[halloween.word] [halloween.style]",
+        "[halloween.adj] [halloween.noun]",
+        "[halloween.adj] [halloween.noun]"
+      ]
+    },
+    "cocktail": {
+      "recipe": "template",
+      "template": [
+        "[flavour] [cocktail.style]",
+        "[flavour] [cocktail.style]",
+        "[cocktail.adj] [cocktail.noun]",
+        "[cocktail.adj] [cocktail.noun]",
+        "[cocktail.place] [cocktail.style]",
+        "The [cocktail.adj] [cocktail.noun]"
+      ]
+    },
+    "mocktail": {
+      "recipe": "template",
+      "template": [
+        "[flavour] [mocktail.style]",
+        "[flavour] [mocktail.style]",
+        "[flavour] [mocktail.style]",
+        "[mocktail.fun] [mocktail.style]",
+        "[mocktail.fun] [mocktail.style]",
+        "[mocktail.whole]"
+      ]
+    },
+    "shot": {
+      "recipe": "template",
+      "template": [
+        "[shot.adj] [shot.noun]"
+      ]
+    },
+    "wedding": {
+      "recipe": "template",
+      "template": [
+        "[wedding.word] [wedding.style]",
+        "[wedding.word] [wedding.style]",
+        "[wedding.word] [wedding.style]",
+        "[flavour] [wedding.noun]",
+        "[flavour] [wedding.noun]"
+      ]
+    },
+    "christmas": {
+      "recipe": "template",
+      "template": [
+        "[christmas.word] [christmas.style]",
+        "[christmas.word] [christmas.style]",
+        "[christmas.word] [christmas.style]",
+        "[christmas.adj] [christmas.noun]",
+        "[christmas.adj] [christmas.noun]"
+      ]
+    },
+    "halloween": {
+      "recipe": "template",
+      "template": [
+        "[halloween.word] [halloween.style]",
+        "[halloween.word] [halloween.style]",
+        "[halloween.word] [halloween.style]",
+        "[halloween.adj] [halloween.noun]",
+        "[halloween.adj] [halloween.noun]"
+      ]
+    },
+    "name": {
+      "recipe": "template",
+      "template": [
+        "The {name} [name.style]",
+        "The {name} [name.style]",
+        "{name}'s [flavour] [name.flavourStyle]",
+        "{name}'s [flavour] [name.flavourStyle]",
+        "{name}'s [flavour] [name.flavourStyle]"
+      ]
+    }
+  },
+  "data": {
+    "flavour": [
+      "Rhubarb",
+      "Blackberry",
+      "Elderflower",
+      "Ginger",
+      "Blood Orange",
+      "Hibiscus",
+      "Lavender",
+      "Passion Fruit",
+      "Raspberry",
+      "Cherry",
+      "Plum",
+      "Pear",
+      "Apricot",
+      "Honey",
+      "Basil",
+      "Cucumber",
+      "Grapefruit",
+      "Pomegranate",
+      "Damson",
+      "Gooseberry",
+      "Mango",
+      "Pineapple",
+      "Coconut",
+      "Fig",
+      "Quince",
+      "Strawberry",
+      "Rose",
+      "Cardamom",
+      "Earl Grey",
+      "Blackcurrant",
+      "Watermelon",
+      "Lemongrass",
+      "Yuzu",
+      "Rosemary",
+      "Thyme",
+      "Apple",
+      "Vanilla",
+      "Lychee",
+      "Hedgerow"
+    ],
+    "cocktail": {
+      "style": [
+        "Fizz",
+        "Sour",
+        "Spritz",
+        "Smash",
+        "Cooler",
+        "Punch",
+        "Swizzle",
+        "Highball",
+        "Daisy",
+        "Cobbler",
+        "Sling",
+        "Julep",
+        "Crush",
+        "Flip"
+      ],
+      "adj": [
+        "Velvet",
+        "Copper",
+        "Golden",
+        "Midnight",
+        "Silver",
+        "Twilight",
+        "Painted",
+        "Crimson",
+        "Amber",
+        "Sunlit",
+        "Hidden",
+        "Gilded",
+        "Moonlit",
+        "Emerald",
+        "Garnet",
+        "Smoky",
+        "Sapphire",
+        "Dusky",
+        "Starlit"
+      ],
+      "noun": [
+        "Orchard",
+        "Garden",
+        "Meadow",
+        "Harbour",
+        "Lantern",
+        "Sunset",
+        "Grove",
+        "Promenade",
+        "Pavilion",
+        "Veranda",
+        "Waltz",
+        "Postcard",
+        "Telegram",
+        "Carousel",
+        "Monocle",
+        "Serenade",
+        "Labyrinth",
+        "Feather",
+        "Gramophone",
+        "Masquerade",
+        "Rendezvous",
+        "Rumba",
+        "Foxtrot"
+      ],
+      "place": [
+        "Harbour",
+        "Garden",
+        "Meadow",
+        "Orchard",
+        "Riviera",
+        "Seaside",
+        "Veranda",
+        "Terrace",
+        "Pavilion",
+        "Boathouse",
+        "Greenhouse",
+        "Library",
+        "Parlour",
+        "Promenade",
+        "Bandstand",
+        "Lido",
+        "Pier",
+        "Rooftop",
+        "Courtyard",
+        "Conservatory"
+      ]
+    },
+    "mocktail": {
+      "style": [
+        "Fizz",
+        "Cooler",
+        "Spritz",
+        "Lemonade",
+        "Punch",
+        "Smash",
+        "Sparkler",
+        "Soda",
+        "Shrub",
+        "Tonic",
+        "Refresher",
+        "Iced Tea",
+        "Splash"
+      ],
+      "fun": [
+        "Unicorn",
+        "Rainbow",
+        "Dinosaur",
+        "Mermaid",
+        "Pirate",
+        "Jungle",
+        "Sherbet",
+        "Candyfloss",
+        "Lollipop",
+        "Moonbeam",
+        "Sunshine",
+        "Dragon",
+        "Fairy",
+        "Seaside",
+        "Picnic",
+        "Garden Party",
+        "Sunny Day",
+        "Rock Pool"
+      ],
+      "whole": [
+        "Zero Proof",
+        "Clear Skies",
+        "Garden Party Punch",
+        "Bright Side",
+        "Fresh Start",
+        "Sunny Disposition",
+        "Sparkling Water Lily",
+        "Alcohol-Free Sunshine",
+        "Just Juice and Joy",
+        "Free and Fizzy",
+        "Nought Percent",
+        "No Proof Needed",
+        "Clean Slate",
+        "All Fizz, No Fuss",
+        "Lemon Sherbet Cloud",
+        "Pink Lemonade Parade",
+        "Cucumber Calm",
+        "Apple Orchard Breeze",
+        "Mint Condition",
+        "Fizz Without the Fuss"
+      ]
+    },
+    "shot": {
+      "adj": [
+        "Little",
+        "Tiny",
+        "Mini",
+        "Lucky",
+        "Spicy",
+        "Fiery",
+        "Electric",
+        "Golden",
+        "Neon",
+        "Sherbet",
+        "Toffee",
+        "Ginger",
+        "Cinnamon",
+        "Chilli",
+        "Cherry",
+        "Lemon",
+        "Liquorice",
+        "Peppermint",
+        "Sour Apple",
+        "Butterscotch",
+        "Raspberry",
+        "Espresso",
+        "Salted Caramel",
+        "Blue Raspberry"
+      ],
+      "noun": [
+        "Spark",
+        "Firework",
+        "Rocket",
+        "Comet",
+        "Meteor",
+        "Flash",
+        "Jolt",
+        "Kick",
+        "Zinger",
+        "Thunderbolt",
+        "Shooting Star",
+        "Dart",
+        "Sparkler",
+        "Firecracker",
+        "Bolt",
+        "Lightning",
+        "Sprinter",
+        "Pip",
+        "Dash",
+        "Fizzbang",
+        "Whizz",
+        "Supernova"
+      ]
+    },
+    "wedding": {
+      "word": [
+        "First Dance",
+        "Ever After",
+        "Confetti",
+        "Bouquet",
+        "Honeymoon",
+        "Something Blue",
+        "Sweetheart",
+        "Lovebird",
+        "Happy Couple",
+        "Just Married",
+        "Stardust",
+        "Rose Petal",
+        "Golden Ring",
+        "Wedding Bell",
+        "Two Hearts",
+        "Garden Party",
+        "Top Table",
+        "Best Man's",
+        "Bridesmaid's",
+        "Big Day",
+        "Happily Ever After",
+        "Forever",
+        "I Do",
+        "Mr & Mrs",
+        "Mrs & Mrs",
+        "Mr & Mr",
+        "Plus One",
+        "Love Letter",
+        "Buttonhole",
+        "Wedding Breakfast",
+        "Something Borrowed"
+      ],
+      "style": [
+        "Fizz",
+        "Sour",
+        "Spritz",
+        "Smash",
+        "Cooler",
+        "Punch",
+        "Sparkler",
+        "Royale",
+        "Crush",
+        "Daisy"
+      ],
+      "noun": [
+        "Promise",
+        "Vow",
+        "Kiss",
+        "Waltz",
+        "Toast",
+        "Romance",
+        "Sweetheart",
+        "Embrace",
+        "Serenade"
+      ]
+    },
+    "christmas": {
+      "word": [
+        "Mistletoe",
+        "Snowflake",
+        "Winter",
+        "Gingerbread",
+        "Candy Cane",
+        "Cranberry",
+        "Clementine",
+        "Mince Pie",
+        "Sugarplum",
+        "Holly",
+        "Yule",
+        "Fireside",
+        "Reindeer",
+        "Sleigh Bell",
+        "Tinsel",
+        "Robin",
+        "Evergreen",
+        "Chestnut",
+        "Figgy",
+        "Spiced Pear",
+        "Cinnamon",
+        "Nutmeg",
+        "Star Anise",
+        "Snowman",
+        "Midwinter",
+        "Advent",
+        "Christmas Pudding",
+        "Satsuma",
+        "Frosty",
+        "Nutcracker",
+        "Christmas Eve",
+        "Boxing Day",
+        "Pine Needle",
+        "Polar Bear",
+        "Snow Globe"
+      ],
+      "style": [
+        "Fizz",
+        "Sour",
+        "Spritz",
+        "Punch",
+        "Toddy",
+        "Nog",
+        "Cobbler",
+        "Smash",
+        "Crush",
+        "Flip",
+        "Cooler"
+      ],
+      "adj": [
+        "Frosted",
+        "Snowy",
+        "Spiced",
+        "Sparkling",
+        "Midwinter",
+        "Candlelit",
+        "Fireside",
+        "Starlit",
+        "Twinkling",
+        "Jolly",
+        "Wintry",
+        "Gilded",
+        "Velvet",
+        "Glittering",
+        "Crackling",
+        "Snowbound"
+      ],
+      "noun": [
+        "Orchard",
+        "Glow",
+        "Lantern",
+        "Sleigh",
+        "Star",
+        "Ember",
+        "Waltz",
+        "Carol",
+        "Parlour",
+        "Snowfall",
+        "Hearth",
+        "Bauble",
+        "Wreath",
+        "Sledge",
+        "Snow Angel"
+      ]
+    },
+    "halloween": {
+      "word": [
+        "Cauldron",
+        "Pumpkin",
+        "Black Cat",
+        "Ghost",
+        "Phantom",
+        "Spider",
+        "Bat Wing",
+        "Haunted",
+        "Poison Apple",
+        "Midnight",
+        "Skeleton",
+        "Graveyard",
+        "Werewolf",
+        "Mummy's",
+        "Goblin",
+        "Eyeball",
+        "Cobweb",
+        "Spellbook",
+        "Broomstick",
+        "Vampire",
+        "Swamp",
+        "Raven",
+        "Toadstool",
+        "Full Moon",
+        "Jack-o'-Lantern",
+        "Bat",
+        "Ghoul",
+        "Wizard"
+      ],
+      "style": [
+        "Brew",
+        "Punch",
+        "Potion",
+        "Fizz",
+        "Sour",
+        "Smash",
+        "Elixir",
+        "Cooler",
+        "Tonic",
+        "Spritz"
+      ],
+      "adj": [
+        "Midnight",
+        "Moonlit",
+        "Haunted",
+        "Creeping",
+        "Howling",
+        "Shadowy",
+        "Eerie",
+        "Spooky",
+        "Ghostly",
+        "Cursed",
+        "Enchanted",
+        "Bubbling",
+        "Misty",
+        "Crooked"
+      ],
+      "noun": [
+        "Cauldron",
+        "Lantern",
+        "Potion",
+        "Elixir",
+        "Hollow",
+        "Graveyard",
+        "Crypt",
+        "Cobweb",
+        "Broomstick",
+        "Moon",
+        "Pumpkin",
+        "Spell",
+        "Swamp",
+        "Mist",
+        "Tombstone",
+        "Raven",
+        "Hex",
+        "Shadow"
+      ]
+    },
+    "name": {
+      "style": [
+        "Sour",
+        "Fizz",
+        "Spritz",
+        "Smash",
+        "Cooler",
+        "Punch",
+        "Swizzle",
+        "Highball",
+        "Special",
+        "Sling",
+        "Royale",
+        "Daisy",
+        "Crush",
+        "Signature"
+      ],
+      "flavourStyle": [
+        "Fizz",
+        "Sour",
+        "Spritz",
+        "Smash",
+        "Cooler",
+        "Punch",
+        "Swizzle",
+        "Highball",
+        "Daisy",
+        "Crush",
+        "Cobbler"
+      ]
+    }
+  },
+  "article": {
+    "hero": {
+      "title": "🍹 Drink & Cocktail Name Generator",
+      "tagline": "Names for cocktails, mocktails, shots and signature drinks for weddings, Christmas, Halloween and parties."
+    },
+    "intro": "A good drink name does two jobs: it hints at what's in the glass and makes people want to order it. This **cocktail name generator** names cocktails, mocktails, shots, signature wedding drinks and Christmas and Halloween specials, and it can name a drink after you or a guest of honour.",
+    "sections": [
+      {
+        "heading": "Eight good drink names",
+        "content": "<p>All eight came from the generator, one or two from each type:</p><ul><li><strong>Velvet Orchard</strong>: a cocktail name with a mood rather than a recipe, good for a house special.</li><li><strong>Blood Orange Swizzle</strong>: flavour plus style, so people know it's citrusy and served over crushed ice.</li><li><strong>Rhubarb Cooler</strong>: a mocktail that sounds every bit as grown-up as the cocktails next to it.</li><li><strong>Sherbet Rocket</strong>: a shot name that's fun to shout at the bar.</li><li><strong>First Dance Fizz</strong>: a signature wedding drink named after a moment in the day.</li><li><strong>Gingerbread Nog</strong>: a Christmas drink that tells you it's creamy and spiced.</li><li><strong>Cauldron Punch</strong>: a Halloween bowl that works with or without alcohol.</li><li><strong>The Sam Sour</strong>: a drink named after someone, the easiest way to make a party feel personal.</li></ul>"
+      },
+      {
+        "heading": "How cocktail names work",
+        "content": "<p>Many drink names are a flavour plus a style word, and the style word is a promise about how the drink is made:</p><ul><li><strong>Sour</strong>: a spirit, citrus juice and sugar, sometimes with egg white for a foam.</li><li><strong>Fizz</strong>: a sour topped up with soda water, so it's longer and bubbly.</li><li><strong>Smash</strong>: fruit or herbs crushed in the glass with the spirit and ice.</li><li><strong>Julep</strong>, <strong>cobbler</strong> and <strong>swizzle</strong>: drinks served over crushed ice; a julep has mint, a cobbler has fruit.</li><li><strong>Highball</strong>: a spirit with plenty of mixer in a tall glass.</li><li><strong>Flip</strong> and <strong>nog</strong>: rich drinks made with egg or cream.</li><li><strong>Shrub</strong>: a fruit and vinegar syrup with a sharp taste, handy for mocktails.</li></ul><p>So a Damson Sour should be sharp and a Rhubarb Fizz long and fresh. Names like Velvet Orchard or Copper Masquerade skip the recipe and sell a feeling instead, which suits a house special. The famous classics (the Negroni, Margarita, Mojito and so on) are left out on purpose: those names are taken, and guests will expect the classic recipe.</p>"
+      },
+      {
+        "heading": "Signature drinks for weddings and parties",
+        "content": "<p>A signature drink gives guests something to talk about and keeps the bar simple. A few tips:</p><ul><li><strong>Name it after a moment or a person.</strong> First Dance Fizz, Something Blue Spritz or The Sam Sour feel more personal than a menu name.</li><li><strong>Make a matching alcohol-free one.</strong> Give drivers, children and anyone not drinking a mocktail with an equally good name, like Elderflower Sparkler.</li><li><strong>Put it on a sign.</strong> A short name with the main flavour in it (Rhubarb, Raspberry, Elderflower) helps guests choose quickly.</li></ul><p>If you're naming the bar rather than the drinks, try the <a href=\"mobile-bar-name-generator.html\">Mobile Bar Name Generator</a> for a bar that comes to the party, or the <a href=\"bar-name-generator.html\">Bar Name Generator</a> for one with a door.</p>"
+      },
+      {
+        "heading": "Christmas and Halloween drinks",
+        "content": "<p>Seasonal drinks borrow the flavours of the time of year. Christmas names lean on spice, fruit and fireside words: Clementine Spritz, Figgy Flip, Candlelit Carol. Halloween names do best with a spooky noun and a potion word: Broomstick Punch, Poison Apple Potion or Moonlit Cauldron.</p><p>Halloween punch is often made for children, so the Halloween names work just as well on an alcohol-free bowl.</p>"
+      },
+      {
+        "heading": "Using a name on a menu",
+        "content": "<p>The names here are free to use at home, at a party or at your wedding. If you're putting a drink on a bar menu or bottling something to sell, check the name first: drinks brands are often registered trade marks, so search the UK IPO or USPTO trade mark databases and look at local bars' menus. This isn't legal advice.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do you come up with a cocktail name?",
+        "answer": "Start with the main flavour and add a style word that says how it's made: Blackberry Smash, Rhubarb Fizz, Honey Sour. Choose Cocktail for those and for mood names like Velvet Orchard."
+      },
+      {
+        "question": "What is a good name for a signature wedding cocktail?",
+        "answer": "Name it after a moment in the day, like First Dance Fizz, Confetti Spritz or Something Blue Royale. Choose Wedding, or From a name for one named after the couple."
+      },
+      {
+        "question": "What are good mocktail names?",
+        "answer": "Fruity and fresh ones that sound as good as the cocktails: Rhubarb Cooler, Elderflower Sparkler or Mermaid Lemonade. Choose Mocktail."
+      },
+      {
+        "question": "What should I call a Christmas cocktail?",
+        "answer": "Use a festive flavour with a style word, like Gingerbread Nog, Clementine Spritz or Spiced Pear Smash. Choose Christmas."
+      },
+      {
+        "question": "What are good Halloween drink names?",
+        "answer": "Spooky nouns with potion words: Cauldron Punch, Broomstick Punch or Poison Apple Potion. Choose Halloween; the names suit alcohol-free drinks for children too."
+      },
+      {
+        "question": "How do I name a drink after someone?",
+        "answer": "Type their name in the box and choose From a name. You'll get names like The Sam Sour, The Sam Spritz or Sam's Rhubarb Cobbler."
+      },
+      {
+        "question": "Can I use these names on a bar menu?",
+        "answer": "Yes, they're free to use. If you'll sell the drink, check the name isn't a registered trade mark first."
+      }
+    ]
+  }
+}

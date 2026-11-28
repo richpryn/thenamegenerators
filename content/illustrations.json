@@ -441,6 +441,18 @@
     "horse": "pony",
     "ice_mage": "wizard-hat",
     "hamster": "hamster",
-    "guinea_pig": "guinea-pig"
+    "guinea_pig": "guinea-pig",
+    "diner": "jukebox",
+    "team_name": "flag",
+    "boat": "galleon",
+    "drink": "bottle",
+    "motorcycle_club": "signpost",
+    "goliath": "mountain",
+    "aasimar": "sun-amulet",
+    "tabaxi": "paw",
+    "mage": "staff",
+    "breton": "castle",
+    "redguard": "sword",
+    "imperial": "eagle-standard"
   }
 }

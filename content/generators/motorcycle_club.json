@@ -1,0 +1,688 @@
+{
+  "key": "motorcycle_club",
+  "title": "Motorcycle Club Name Generator",
+  "seoTitle": "Motorcycle Club Name Generator: Riding Club Names",
+  "slug": "motorcycle-club-name-generator",
+  "icon": "🏍️",
+  "category": "organizations",
+  "published": "2026-11-28",
+  "description": "Motorcycle club names: riding clubs, touring groups, women riders, charity ride-outs, vintage bike clubs, funny names or your town. Free ideas.",
+  "seoKeywords": "motorcycle club name generator, motorcycle club names, biker club names, riding club names, motorcycle riding club names, bike club names, biker group names, motorcycle group names, female motorcycle club names, womens motorcycle club names, ladies riding club names, funny motorcycle club names, motorbike club names, motorcycle touring club names, vintage motorcycle club names, classic bike club names, charity ride names, ride out names, biker name generator, motorcycle club name ideas",
+  "isPopular": false,
+  "noun": "Motorcycle Club Names",
+  "noEcho": true,
+  "nameSource": {
+    "kind": "invented",
+    "note": "Names are built from British birds and animals, road and landscape words, bike parts, touring words and café-stop jokes, for friendly riding clubs. Famous club names, outlaw-club words, bike makes and model names were left out."
+  },
+  "filters": {
+    "type": {
+      "label": "Kind of club",
+      "options": [
+        "any",
+        "riding",
+        "touring",
+        "women",
+        "charity",
+        "vintage",
+        "funny",
+        "town"
+      ],
+      "optionLabels": {
+        "any": "Any club",
+        "riding": "Riding club (Red Kite Riders)",
+        "touring": "Touring (Open Road Tourers)",
+        "women": "Women's (Throttle Belles)",
+        "charity": "Charity (Goodwill Ride-Out)",
+        "vintage": "Vintage (Flat Tank Club)",
+        "funny": "Funny (Pothole Dodgers)",
+        "town": "Your town (Hampton Riders)"
+      }
+    },
+    "town": {
+      "type": "text",
+      "label": "Your town or area",
+      "placeholder": "e.g. Hampton",
+      "default": "Hampton",
+      "example": "Hampton",
+      "showWhen": {
+        "type": [
+          "town"
+        ]
+      }
+    }
+  },
+  "recipe": "switch",
+  "on": "type",
+  "cases": {
+    "any": {
+      "recipe": "template",
+      "template": [
+        "[emblem] [riding.suffix]",
+        "[emblem] [riding.suffix]",
+        "[emblem] [riding.suffix]",
+        "[land] [riding.suffix]",
+        "[land] [riding.suffix]",
+        "The [land] Riding Club",
+        "[mech] Riders",
+        "[touring.tour] [touring.suffix]",
+        "[touring.tour] [touring.suffix]",
+        "[touring.tour] [touring.suffix]",
+        "The [touring.milers] Milers",
+        "[emblem] Touring Club",
+        "[women.a] [women.b]",
+        "[women.a] [women.b]",
+        "The [women.a] [women.b]",
+        "[emblem] Ladies Riding Club",
+        "Sisters of the [women.place]",
+        "Women of the [women.place]",
+        "[charity.virtue] [charity.noun]",
+        "[charity.virtue] [charity.noun]",
+        "[charity.virtue] [charity.noun]",
+        "Ride for [charity.cause]",
+        "Riding for [charity.cause]",
+        "Wheels for [charity.cause]",
+        "[vintage.v] [vintage.suffix]",
+        "[vintage.v] [vintage.suffix]",
+        "[vintage.v] [vintage.suffix]",
+        "The [vintage.v] Club",
+        "The [vintage.v] Society",
+        "[funny.whole]",
+        "[funny.whole]",
+        "[funny.f] [funny.suffix]",
+        "[funny.f] [funny.suffix]",
+        "The [funny.f] [funny.suffix]"
+      ]
+    },
+    "riding": {
+      "recipe": "template",
+      "template": [
+        "[emblem] [riding.suffix]",
+        "[emblem] [riding.suffix]",
+        "[emblem] [riding.suffix]",
+        "[land] [riding.suffix]",
+        "[land] [riding.suffix]",
+        "The [land] Riding Club",
+        "[mech] Riders"
+      ]
+    },
+    "touring": {
+      "recipe": "template",
+      "template": [
+        "[touring.tour] [touring.suffix]",
+        "[touring.tour] [touring.suffix]",
+        "[touring.tour] [touring.suffix]",
+        "The [touring.milers] Milers",
+        "[emblem] Touring Club"
+      ]
+    },
+    "women": {
+      "recipe": "template",
+      "template": [
+        "[women.a] [women.b]",
+        "[women.a] [women.b]",
+        "The [women.a] [women.b]",
+        "[emblem] Ladies Riding Club",
+        "Sisters of the [women.place]",
+        "Women of the [women.place]"
+      ]
+    },
+    "charity": {
+      "recipe": "template",
+      "template": [
+        "[charity.virtue] [charity.noun]",
+        "[charity.virtue] [charity.noun]",
+        "[charity.virtue] [charity.noun]",
+        "Ride for [charity.cause]",
+        "Riding for [charity.cause]",
+        "Wheels for [charity.cause]"
+      ]
+    },
+    "vintage": {
+      "recipe": "template",
+      "template": [
+        "[vintage.v] [vintage.suffix]",
+        "[vintage.v] [vintage.suffix]",
+        "[vintage.v] [vintage.suffix]",
+        "The [vintage.v] Club",
+        "The [vintage.v] Society"
+      ]
+    },
+    "funny": {
+      "recipe": "template",
+      "template": [
+        "[funny.whole]",
+        "[funny.whole]",
+        "[funny.f] [funny.suffix]",
+        "[funny.f] [funny.suffix]",
+        "The [funny.f] [funny.suffix]"
+      ]
+    },
+    "town": {
+      "recipe": "template",
+      "template": [
+        "{town} [town.fixed]",
+        "{town} [town.fixed]",
+        "{town} [town.kind] [town.suffix]",
+        "{town} [town.kind] [town.suffix]",
+        "{town} [emblem] [town.suffix]",
+        "{town} [emblem] [town.suffix]",
+        "[emblem] Riders of {town}",
+        "Riders of {town}"
+      ]
+    }
+  },
+  "data": {
+    "emblem": [
+      "Red Kite",
+      "Silver Fox",
+      "Grey Heron",
+      "Golden Hare",
+      "Kestrel",
+      "Falcon",
+      "Peregrine",
+      "Swift",
+      "Swallow",
+      "Barn Owl",
+      "Tawny Owl",
+      "Buzzard",
+      "Osprey",
+      "Curlew",
+      "Lapwing",
+      "Stag",
+      "Hare",
+      "Badger",
+      "Otter",
+      "Fox",
+      "Pine Marten",
+      "Red Deer",
+      "Stoat",
+      "Kingfisher",
+      "Golden Eagle",
+      "Sea Eagle",
+      "Wildcat",
+      "Red Squirrel",
+      "Skylark",
+      "Merlin",
+      "Hawk",
+      "Harrier",
+      "Goshawk",
+      "Mountain Hare",
+      "Fell Pony",
+      "Highland Stag",
+      "White Hart",
+      "Black Bull",
+      "Golden Lion"
+    ],
+    "land": [
+      "Ridgeway",
+      "Moorland",
+      "Fell",
+      "Dales",
+      "Valley",
+      "Coast Road",
+      "Crossroads",
+      "Milestone",
+      "Horizon",
+      "Open Road",
+      "Back Roads",
+      "Long Road",
+      "B-Road",
+      "Hairpin",
+      "High Ridge",
+      "Summit",
+      "Mountain Pass",
+      "Causeway",
+      "Headland",
+      "Green Lane",
+      "Twisty Roads",
+      "Hilltop",
+      "Borderlands",
+      "Riverside",
+      "Coastline",
+      "Old Turnpike",
+      "Toll Road"
+    ],
+    "mech": [
+      "Throttle",
+      "Kickstand",
+      "Chrome",
+      "Piston",
+      "Gearshift",
+      "Spokes",
+      "Sidestand",
+      "Clutch",
+      "Apex",
+      "Lean Angle",
+      "Redline",
+      "Rev Counter",
+      "Tickover",
+      "Countersteer",
+      "Fuel Cap",
+      "Chain Drive"
+    ],
+    "riding": {
+      "suffix": [
+        "Riders",
+        "Riding Club",
+        "Motorcycle Club",
+        "Motorcycle Riders",
+        "Bike Club"
+      ]
+    },
+    "touring": {
+      "tour": [
+        "Far Horizons",
+        "Long Miles",
+        "Open Road",
+        "Waypoint",
+        "Compass",
+        "Atlas",
+        "Milestone",
+        "Map and Compass",
+        "Coast to Coast",
+        "Northern Roads",
+        "Mountain Pass",
+        "High Passes",
+        "Wanderlust",
+        "Distant Hills",
+        "Westward",
+        "Northbound",
+        "Southbound",
+        "Border Roads",
+        "Thousand Mile",
+        "Continental",
+        "Alpine",
+        "Island Hopper",
+        "Ferry Port",
+        "Sunrise Road",
+        "Horizon Chasers",
+        "Roaming",
+        "Every Road",
+        "Next Horizon",
+        "Overland",
+        "Grand Loop",
+        "Long Weekend",
+        "Faraway",
+        "Signpost",
+        "Road Atlas",
+        "Hill and Coast",
+        "Four Nations",
+        "Lakes and Fells",
+        "Highland Road",
+        "Lighthouse",
+        "Ferry and Fells",
+        "Passport",
+        "Wide Horizon"
+      ],
+      "suffix": [
+        "Touring Club",
+        "Tourers",
+        "Adventure Riders",
+        "Motorcycle Touring Club",
+        "Touring Riders"
+      ],
+      "milers": [
+        "Long",
+        "Thousand",
+        "Extra",
+        "Hundred",
+        "Happy",
+        "Sunday",
+        "Weekend",
+        "Early",
+        "Steady"
+      ]
+    },
+    "women": {
+      "a": [
+        "Throttle",
+        "Kickstand",
+        "Chrome",
+        "Petrol",
+        "Open Road",
+        "Velvet",
+        "Bramble Rose",
+        "Highway",
+        "Apex",
+        "Redline",
+        "Tarmac",
+        "Fast Lane",
+        "Bright Spark",
+        "Sunday",
+        "Dawn Patrol",
+        "Hilltop",
+        "Coast Road",
+        "Starlight"
+      ],
+      "b": [
+        "Belles",
+        "Queens",
+        "Sisters",
+        "Ladies",
+        "Roses",
+        "Dames",
+        "Wildflowers",
+        "Girls",
+        "Lasses",
+        "Sirens"
+      ],
+      "place": [
+        "Open Road",
+        "Highway",
+        "Hills",
+        "Coast",
+        "Moors",
+        "Fells",
+        "Twisties",
+        "Dales",
+        "Valleys",
+        "Back Roads",
+        "Mountain Pass",
+        "Long Road"
+      ]
+    },
+    "charity": {
+      "virtue": [
+        "Goodwill",
+        "Kindness",
+        "Big Heart",
+        "Open Hearts",
+        "Helping Hand",
+        "Lifeline",
+        "Good Cause",
+        "Hope",
+        "Heart and Soul",
+        "Lionheart",
+        "Brighter Days",
+        "Silver Lining",
+        "Golden Heart",
+        "Warm Heart",
+        "Good Deed",
+        "Spare Change",
+        "Big Smile",
+        "Kind Hearts",
+        "Helping Wheels",
+        "Good Neighbour",
+        "Winter Warmer",
+        "Sunshine",
+        "Wishing Well"
+      ],
+      "noun": [
+        "Riders",
+        "Ride-Out",
+        "Run",
+        "Charity Riders",
+        "Toy Run",
+        "Egg Run",
+        "Motorcycle Club",
+        "Riding Club",
+        "Charity Ride"
+      ],
+      "cause": [
+        "Smiles",
+        "Hope",
+        "Kindness",
+        "Good Causes",
+        "Brighter Days",
+        "Better Days",
+        "Everyone",
+        "the Hospice",
+        "Local Heroes",
+        "Little Heroes",
+        "Big Hearts",
+        "the Food Bank",
+        "the Children",
+        "Tomorrow",
+        "a Cure",
+        "Our Town",
+        "the Animals",
+        "the Lifeboats",
+        "Each Other"
+      ]
+    },
+    "vintage": {
+      "v": [
+        "Brass and Chrome",
+        "Flat Tank",
+        "Girder Fork",
+        "Kickstart",
+        "Magneto",
+        "Twin Carb",
+        "Sidecar",
+        "Spoked Wheel",
+        "Pre-War",
+        "Post-War",
+        "Café Racer",
+        "Old School",
+        "Patina",
+        "Rocker Box",
+        "Tank Badge",
+        "Chrome Tank",
+        "Black and Chrome",
+        "Oily Rag",
+        "Pushrod",
+        "Long Stroke",
+        "Big Single",
+        "Parallel Twin",
+        "Flat Twin",
+        "V-Twin",
+        "Two-Stroke",
+        "Drip Tray",
+        "Points and Plugs",
+        "Dynamo",
+        "Rigid Frame",
+        "Spark Plug",
+        "Old Faithful",
+        "Running-In",
+        "Concours"
+      ],
+      "suffix": [
+        "Classic Motorcycle Club",
+        "Vintage Riders",
+        "Classic Bike Club",
+        "Club",
+        "Vintage Motorcycle Society",
+        "Classic Riders",
+        "Restorers"
+      ]
+    },
+    "funny": {
+      "whole": [
+        "Pothole Dodgers",
+        "Fair Weather Friends",
+        "Sat Nav Says No",
+        "Lost Again Touring Club",
+        "Are We There Yet Riders",
+        "The Slowpokes",
+        "Half Throttle Club",
+        "Still Running Riders",
+        "Rusty Spokes",
+        "Mid-Life Cruisers",
+        "Leaking Oil Club",
+        "Kickstand Down",
+        "Drizzle Dodgers",
+        "Tea Total Riders",
+        "Rain Stops Play",
+        "The Wobbly Wheelers",
+        "Mostly Upright",
+        "The Bacon Roll Patrol",
+        "Café Hoppers",
+        "The Overtrouser Society",
+        "The Last Bacon Butty",
+        "Pie Stop Patrol",
+        "The Long Way to the Café",
+        "Wrong Turn Again",
+        "U-Turn Specialists",
+        "The Roundabout Regulars",
+        "Breakdown Recovery Club",
+        "Two Wheels, One Brew",
+        "Mile Munchers",
+        "Never Mind the Weather",
+        "The Kettle Is On Riders",
+        "The Sunday Best Riders",
+        "Heated Grips Appreciation Society",
+        "Fuel Stop Fanatics",
+        "Bacon, Eggs and Exhausts",
+        "The Dry Socks Society",
+        "Biscuit Break Bikers",
+        "The Lay-by Lunch Club",
+        "Thermal Underwear Touring Club",
+        "The Fog Lights",
+        "The Wrong Way Round",
+        "Tea, Toast and Throttle",
+        "The Brew Crew Riders",
+        "Left at the Roundabout",
+        "Gone for a Brew",
+        "Back by Teatime"
+      ],
+      "f": [
+        "Bacon Butty",
+        "Tea Stop",
+        "Wrong Turn",
+        "Pothole",
+        "Fair Weather",
+        "Heated Grips",
+        "Sat Nav",
+        "Puncture",
+        "Tea Urn",
+        "Flapjack",
+        "Sunday Lunch",
+        "Lost Glove",
+        "Leaky Boots",
+        "Grey Beard",
+        "Slow Lane",
+        "Detour",
+        "Cake Stop",
+        "Café Stop",
+        "Bacon Roll",
+        "Brew Stop",
+        "Lay-by",
+        "Roundabout",
+        "Dry Socks",
+        "Soggy Sandwich",
+        "Tea and Toast",
+        "Fuel Stop",
+        "Puddle",
+        "Drizzle",
+        "Overtrousers",
+        "Teacake",
+        "Scenic Route",
+        "Long Way Home"
+      ],
+      "suffix": [
+        "Riders",
+        "Riding Club",
+        "Touring Club",
+        "Motorcycle Club",
+        "Society",
+        "Squadron",
+        "Appreciation Society",
+        "Crew"
+      ]
+    },
+    "town": {
+      "fixed": [
+        "Riders",
+        "Riding Club",
+        "Motorcycle Club",
+        "and District Motorcycle Club",
+        "Touring Club",
+        "Classic Bike Club",
+        "Ladies Riding Club",
+        "Ride-Out Crew",
+        "Bikers",
+        "Motorcycle Touring Club",
+        "Women Riders",
+        "Charity Riders",
+        "Toy Run",
+        "Vintage Motorcycle Society",
+        "Adventure Riders",
+        "Scooter Club"
+      ],
+      "kind": [
+        "Classic",
+        "Vintage",
+        "Ladies",
+        "Women's",
+        "Sunday",
+        "Weekend",
+        "Charity",
+        "Café Racer",
+        "Sidecar",
+        "Trail",
+        "Green Lane",
+        "Retro",
+        "Evening",
+        "Thursday Night",
+        "Early Bird",
+        "All Weather"
+      ],
+      "suffix": [
+        "Riders",
+        "Riding Club",
+        "Motorcycle Club",
+        "Bike Club"
+      ]
+    }
+  },
+  "article": {
+    "hero": {
+      "title": "🏍️ Motorcycle Club Name Generator",
+      "tagline": "Friendly names for riding clubs, touring groups, women riders, charity ride-outs and classic bike clubs."
+    },
+    "intro": "Most motorcycle clubs are groups of friends who like a good road with a café at the end of it. This **motorcycle club name generator** makes names for riding clubs, touring groups, women's riding groups, charity ride-outs and vintage bike clubs, plus funny names and names built from your town.",
+    "sections": [
+      {
+        "heading": "Eight good motorcycle club names",
+        "content": "<p>All eight came from the generator, one from each kind of club:</p><ul><li><strong>Red Kite Riders</strong>: a British bird that looks good on a badge and is easy to say.</li><li><strong>Far Horizons Tourers</strong>: tells people this club goes a long way, not just to the next café.</li><li><strong>Throttle Belles</strong>: a women's riding group name with a bit of swagger.</li><li><strong>Goodwill Ride-Out</strong>: a charity ride name that says what it's for.</li><li><strong>Flat Tank Club</strong>: a short, knowing name for a club of very old machines.</li><li><strong>Pothole Dodgers</strong>: a funny name every rider on British roads will understand.</li><li><strong>The Sunday Milers</strong>: a relaxed name for a weekend group.</li><li><strong>Hampton and District Motorcycle Club</strong>: your town plus the old club habit of \"and District\", which welcomes riders from the villages around.</li></ul>"
+      },
+      {
+        "heading": "How club names work",
+        "content": "<p>Good club names come from a few places:</p><ul><li><strong>An emblem.</strong> Birds and animals make easy badges: Kestrel, Golden Hare, Silver Fox, Barn Owl.</li><li><strong>The roads you ride.</strong> Ridgeway Riders, Coast Road Riders or B-Road Riders say where you'd rather be.</li><li><strong>The bikes.</strong> Throttle, kickstand, chrome and magneto turn up in plenty of names, and older parts suit classic clubs.</li><li><strong>A place.</strong> A town or county in the name makes the club easy to find for new riders nearby.</li><li><strong>A joke.</strong> Café stops, rain and getting lost are part of every club's story, so names like The Bacon Roll Patrol or Lost Again Touring Club land well.</li></ul><p>The generator keeps to friendly clubs. It leaves out famous club names and the skulls, devils and outlaw words that belong to a very different kind of club.</p>"
+      },
+      {
+        "heading": "Riding club, touring club or motorcycle club?",
+        "content": "<p>In parts of the biking world, \"MC\" and back patches carry a specific meaning. A three-piece patch (the club name on a curved top rocker, a centre logo and the area on a bottom rocker) is linked with traditional motorcycle clubs, and some of those clubs take it seriously when a new group wears one.</p><p>That's why many social groups call themselves a riding club, a touring club or simply \"Riders\", and use a single badge instead. Before you print back patches or call your group an MC, ask riders at local bike nights and clubs what's usual in your area. A friendly word first saves awkward moments later.</p>"
+      },
+      {
+        "heading": "Women's groups, charity rides and classic clubs",
+        "content": "<ul><li><strong>Women's riding groups</strong> often pick names with a bit of attitude and alliteration, like Throttle Belles or Kickstand Queens, or a place name, like Women of the Open Road.</li><li><strong>Charity rides</strong> do best with a name that says what they're for. Christmas toy runs, where riders take presents to children's hospitals and charities, are a big tradition in the UK, mostly on the first two weekends of December.</li><li><strong>Vintage and classic clubs</strong> can borrow the language of old bikes: girder forks, magnetos, flat tanks and big singles.</li></ul><p>If your club meets in running shoes instead, try the <a href=\"running-club-name-generator.html\">Running Club Name Generator</a>.</p>"
+      },
+      {
+        "heading": "Check the name before you print the patches",
+        "content": "<p>The names here are free to use. Before you order badges, shirts or a banner:</p><ul><li>Search Facebook, local listings and club directories to make sure a club near you doesn't already use the name.</li><li>Make sure your badge doesn't copy another club's logo or colours.</li><li>If you'll sell merchandise, check the UK IPO or USPTO trade mark databases too. This isn't legal advice.</li></ul>"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is a good name for a motorcycle club?",
+        "answer": "Something short with an emblem or a road in it, like Red Kite Riders, Golden Hare Riding Club or Ridgeway Riders. Choose Riding club for more."
+      },
+      {
+        "question": "What are good names for a women's motorcycle group?",
+        "answer": "Try Throttle Belles, Kickstand Queens or Women of the Open Road. Choose Women's for more, or Your town for names like Hampton Ladies Riding Club."
+      },
+      {
+        "question": "What are some funny motorcycle club names?",
+        "answer": "Jokes about café stops, rain and getting lost work best: Pothole Dodgers, The Bacon Roll Patrol or Sat Nav Says No. Choose Funny."
+      },
+      {
+        "question": "What should I call a charity ride-out?",
+        "answer": "Say what it's for: Goodwill Ride-Out, Ride for Smiles or Kind Hearts Toy Run. Choose Charity, then add the cause or your town to the poster."
+      },
+      {
+        "question": "What is a good name for a classic or vintage bike club?",
+        "answer": "Old bike words suit them: Flat Tank Club, Girder Fork Classic Riders or The Brass and Chrome Society. Choose Vintage."
+      },
+      {
+        "question": "Should my club call itself an MC?",
+        "answer": "Many friendly groups use Riding Club or Riders instead, because \"MC\" and back patches can mean something specific to other clubs. Ask locally before you print patches."
+      },
+      {
+        "question": "How do I make a motorcycle club name with my town in it?",
+        "answer": "Type your town in the box and choose Your town. You'll get names like Hampton Riders, Hampton Classic Bike Club or Kestrel Riders of Hampton."
+      }
+    ]
+  }
+}

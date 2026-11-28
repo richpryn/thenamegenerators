@@ -97,7 +97,9 @@
       "event",
       "christmas_team",
       "quiz_team",
-      "gritter"
+      "gritter",
+      "team_name",
+      "drink"
     ],
     "eyebrow": "Parties, quizzes and get-togethers",
     "approach": {
@@ -421,7 +423,11 @@
       "elden_ring",
       "monster",
       "spell",
-      "ice_mage"
+      "ice_mage",
+      "goliath",
+      "aasimar",
+      "tabaxi",
+      "mage"
     ],
     "eyebrow": "Fantasy characters and creatures",
     "approach": {
@@ -687,7 +693,11 @@
       "genie",
       "nymph",
       "satyr",
-      "kraken"
+      "kraken",
+      "goliath",
+      "aasimar",
+      "tabaxi",
+      "mage"
     ],
     "eyebrow": "Characters for your campaign",
     "approach": {
@@ -1534,7 +1544,8 @@
       "elven_sword",
       "japanese_sword",
       "game_of_thrones_sword",
-      "kawaii_food"
+      "kawaii_food",
+      "boat"
     ],
     "eyebrow": "Weapons, wands and treasures",
     "approach": {
@@ -1620,7 +1631,9 @@
       "cafe",
       "group_name",
       "book_club",
-      "running_club"
+      "running_club",
+      "team_name",
+      "motorcycle_club"
     ],
     "eyebrow": "Groups and businesses",
     "approach": {
@@ -2000,7 +2013,10 @@
       "khajiit",
       "dunmer",
       "altmer",
-      "argonian"
+      "argonian",
+      "breton",
+      "redguard",
+      "imperial"
     ],
     "eyebrow": "Names for Tamriel",
     "approach": {
@@ -3025,7 +3041,8 @@
       "bar",
       "brewery",
       "meal_prep_business",
-      "mobile_bar"
+      "mobile_bar",
+      "diner"
     ],
     "startHeading": "Try these name generators",
     "startIntro": "Use these tools to name a bakery, cake business, cookie shop, dessert bar or café.",
